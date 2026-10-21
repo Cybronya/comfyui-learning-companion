@@ -1,61 +1,59 @@
 ---
 name: unknown_workflow_lora_sampler_clip_73
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.838
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.9788
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, UNETLoader, VAELoader]
 problems: []
-missing: [CR String To Combo, Primitive string [Crystools], Text Multiline]
-members: [图片生成/文生图/1952911676233478146.json, 图片生成/文生图/1955200823770976258.json, 图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json]
+missing: []
+members: [视频生成/图生视频/2041411003677679618.json, 视频生成/图生视频/2076552090461229058.json, 视频生成/图生视频/2000831805769084930.json, 视频生成/图生视频/1968555612659437570.json, 视频生成/文生视频/1968491886845546497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_73
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1952911676233478146.json、图片生成/文生图/1955200823770976258.json、图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2041411003677679618.json、视频生成/图生视频/2076552090461229058.json、视频生成/图生视频/2000831805769084930.json、视频生成/图生视频/1968555612659437570.json、视频生成/文生视频/1968491886845546497.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `LoraLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `VAEDecode`
+- `CreateVideo`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SaveVideo`
+- `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxResolutionNode` —— 2/3 个有
-- `JjkText` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `TextCombinerTwo` —— 2/3 个有
-- `CR String To Combo` —— 1/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `Primitive string [Crystools]` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
+- `VAEDecode` —— 4/5 个有
+- `WanFirstLastFrameToVideo` —— 4/5 个有
+- `PathchSageAttentionKJ` —— 3/5 个有
+- `ModelPatchTorchSettings` —— 2/5 个有
+- `EmptyHunyuanLatentVideo` —— 1/5 个有
+- `ImpactFloat` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `VAEDecodeTiled` —— 1/5 个有
+- `孤海注释` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1280 | 1280 - 1536 | 3 | 91% |
-| LoRA 模型强度 | 1 | 0.45 - 1 | 3 | 68% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 5 | 80% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 5 | 100% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -63,8 +61,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，观测区间 1280 - 1536，3 个样本，取值集中（一致性 91%）
-- LoRA 模型强度 中位数 1，观测区间 0.45 - 1，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR String To Combo、Primitive string [Crystools]、Text Multiline
+- 采样步数 最常用 randomize，5 个样本，一致性 80%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

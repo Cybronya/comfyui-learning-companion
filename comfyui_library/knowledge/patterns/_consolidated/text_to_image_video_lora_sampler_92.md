@@ -3,39 +3,39 @@ name: text_to_image_video_lora_sampler_92
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.894
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8675
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3打戏T8流大改自用版｜战斗特效拳拳到肉｜图生视频武打场面拉满_2102254012815990786.json, 视频生成/图生视频/H3极速导演台8步双时钟-图生首尾帧多参一体化_2087375481896259586.json, 视频生成/图生视频/H3高保真图生视频 静止图像动态化运镜重构_2099924808850042881.json, 视频生成/图生视频/Lightx2v正式版8步去油双时钟参考生视频V2｜Minimax图生视频工作流_2088144409752850433.json, 视频生成/图生视频/Lightx2v正式版8步去油双时钟图生视频V1｜Minimax图生视频工作流_2088140753397702657.json, 视频生成/图生视频/MiniMax H3全能参考工作流｜文生视频单图生视频图生视频_2090446719375990786.json, 视频生成/图生视频/MiniMax H3全能参考生视频加速版 多重加速高清输出_2098827453300039682.json, 视频生成/图生视频/MiniMax H3打戏战斗特效图生视频处理工作流_2102501974091583489.json]
+members: [视频生成/图生视频/MiniMax H3 Ref2VA超级提速音频驱动数字人MV-不降质转场运镜图生视频_2087390946962001921.json, 视频生成/图生视频/MiniMax H3单人音频驱动数字人 最高15秒视频生成_2099176616411881474.json, 视频生成/图生视频/MiniMax H3双人音频驱动数字人视频生成处理工具_2100993902961577985.json, 视频生成/图生视频/MiniMax H3海螺Ref图片视频音频多模态原生视频生成工具_2101392045809164289.json, 视频生成/图生视频/MiniMax H3海螺Ref多模态原生视频生成20步｜动作迁移图生视频视频生视频_2089703443115106306.json, 视频生成/图生视频/Minimax H3音频驱动数字人对口型人物类特效图生视频_2088195742426030081.json, 视频生成/图生视频/多模态原生视频生成｜MiniMax H3海螺Ref 图片视频音频20步直出_2089426965655805953.json, 视频生成/文生视频/MiniMax H3双时钟采样Turbo LORA双采集多模态文生视频_2088198784831545345.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_92
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/H3打戏T8流大改自用版｜战斗特效拳拳到肉｜图生视频武打场面拉满_2102254012815990786.json、视频生成/图生视频/H3极速导演台8步双时钟-图生首尾帧多参一体化_2087375481896259586.json、视频生成/图生视频/H3高保真图生视频 静止图像动态化运镜重构_2099924808850042881.json、视频生成/图生视频/Lightx2v正式版8步去油双时钟参考生视频V2｜Minimax图生视频工作流_2088144409752850433.json、视频生成/图生视频/Lightx2v正式版8步去油双时钟图生视频V1｜Minimax图生视频工作流_2088140753397702657.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Ref2VA超级提速音频驱动数字人MV-不降质转场运镜图生视频_2087390946962001921.json、视频生成/图生视频/MiniMax H3单人音频驱动数字人 最高15秒视频生成_2099176616411881474.json、视频生成/图生视频/MiniMax H3双人音频驱动数字人视频生成处理工具_2100993902961577985.json、视频生成/图生视频/MiniMax H3海螺Ref图片视频音频多模态原生视频生成工具_2101392045809164289.json、视频生成/图生视频/MiniMax H3海螺Ref多模态原生视频生成20步｜动作迁移图生视频视频生视频_2089703443115106306.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
+- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
@@ -47,30 +47,39 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 7/8 个有
-- `MiniMaxH3DualClockSamplerT8` —— 6/8 个有
-- `CR Prompt Text` —— 5/8 个有
-- `ModelAttentionBackend` —— 4/8 个有
-- `ExtendIntermediateSigmas` —— 3/8 个有
+- `PrimitiveFloat` —— 7/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/8 个有
+- `AudioCrop` —— 5/8 个有
+- `MathExpression|pysssss` —— 5/8 个有
+- `ModelAttentionBackend` —— 5/8 个有
+- `PathchSageAttentionKJ` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `ImageResizeKJv2` —— 4/8 个有
+- `LoadVideoUI` —— 4/8 个有
+- `MiniMaxH3AVDecodeT8` —— 4/8 个有
+- `SoundFlow_GetLength` —— 4/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 4/8 个有
+- `easy showAnything` —— 4/8 个有
+- `AudioConcat` —— 3/8 个有
+- `CR Prompt Text` —— 3/8 个有
+- `ComfyMathExpression` —— 3/8 个有
+- `PreviewAudio` —— 3/8 个有
 - `SaveImage` —— 3/8 个有
-- `SolAttnMiniMax` —— 3/8 个有
-- `H3SigmaRefiner` —— 2/8 个有
-- `LoadAudio` —— 2/8 个有
+- `EmptyAudio` —— 2/8 个有
 - `MiniMaxChunkFeedForward` —— 2/8 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/8 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 2/8 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 2/8 个有
 - `MiniMaxLowVRAMAttention` —— 2/8 个有
-- `PreviewAny` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 2/8 个有
+- `ModelPreviewOverrideKJ` —— 2/8 个有
+- `PixaromaLabel` —— 2/8 个有
+- `TrimAudioDuration` —— 2/8 个有
 - `CR Text` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `IntToString` —— 1/8 个有
-- `PathchSageAttentionKJ` —— 1/8 个有
-- `RHLLMChatNode` —— 1/8 个有
-- `Seed_` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
-- `text-util-join-text` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `Float` —— 1/8 个有
+- `MelBandRoFormerModelLoader` —— 1/8 个有
+- `MelBandRoFormerSampler` —— 1/8 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/8 个有
+- `PT_H3ConcatAVLatent` —— 1/8 个有
+- `VAEEncode` —— 1/8 个有
+- `VAEEncodeAudio` —— 1/8 个有
 
 ## 典型参数
 

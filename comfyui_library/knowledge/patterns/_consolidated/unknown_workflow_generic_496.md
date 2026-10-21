@@ -3,32 +3,34 @@ name: unknown_workflow_generic_496
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.904667
-common_nodes: [AceMusicCaptionInput, AceMusicGenerator, AceMusicLyricsInput, AceMusicModelLoader, AceMusicSettings, SaveAudio]
+coverage: 0.819333
+common_nodes: [LoadAudio, LoadImage, RecordAudio, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/AceMusic 基础工作流_2020095556718170113.json, 音频生成/音频生成/AceMusic 基础工作流拆解_2027393917607485442.json, 音频生成/音频生成/AceMusic 文字生歌曲_2021001344487792641.json]
+members: [comfyui-workflow-templates-json/video_ltx2_3_ia2v.json, comfyui-workflow-templates-json/video_ltx2_3_id_lora.json, 视频生成/图生视频/2009223802286247937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_496
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AceMusic 基础工作流_2020095556718170113.json、音频生成/音频生成/AceMusic 基础工作流拆解_2027393917607485442.json、音频生成/音频生成/AceMusic 文字生歌曲_2021001344487792641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_ltx2_3_ia2v.json、comfyui-workflow-templates-json/video_ltx2_3_id_lora.json、视频生成/图生视频/2009223802286247937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AceMusicCaptionInput`
-- `AceMusicGenerator`
-- `AceMusicLyricsInput`
-- `AceMusicModelLoader`
-- `AceMusicSettings`
-- `SaveAudio`
+- `LoadAudio`
+- `LoadImage`
+- `RecordAudio`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `98ee9e5b-467b-40aa-a534-36033f27d0b4` —— 2/3 个有
+- `RH_Wan26_I2V` —— 1/3 个有
 
 ## 典型参数
 

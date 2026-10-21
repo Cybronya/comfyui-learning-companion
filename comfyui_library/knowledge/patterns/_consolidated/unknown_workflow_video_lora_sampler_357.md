@@ -2,78 +2,70 @@
 name: unknown_workflow_video_lora_sampler_357
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.766667
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.770833
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2007804749827022850.json, 视频生成/图生视频/1968672721771143169.json, 视频生成/图生视频/2069716627356217345.json, 视频生成/图生视频/2054541988237717506.json, 视频生成/图生视频/2050200100416311298.json, 音频生成/音频生成/Infinite Talk-对口型说话+唱歌无限时长+高动态_2021031552670507010.json]
+members: [视频生成/图生视频/2073309420112662529.json, 视频生成/图生视频/2064514546374631425.json, 视频生成/图生视频/2075412859504390145.json, 视频生成/图生视频/2078010993078263809.json, 音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json, 音频生成/音频生成/Digital Avatars Lip-Syncing数字人对口型_2097153340940574722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_357
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2007804749827022850.json、视频生成/图生视频/1968672721771143169.json、视频生成/图生视频/2069716627356217345.json、视频生成/图生视频/2054541988237717506.json、视频生成/图生视频/2050200100416311298.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2073309420112662529.json、视频生成/图生视频/2064514546374631425.json、视频生成/图生视频/2075412859504390145.json、视频生成/图生视频/2078010993078263809.json、音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
+- **可信度**：强结论
 - **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 - `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `ToInt`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `PainterAV2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 5/6 个有
-- `ImageResizeKJv2` —— 5/6 个有
-- `Int` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `GetNode` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `Display Int (rgthree)` —— 3/6 个有
-- `Float` —— 3/6 个有
-- `GetImageSizeAndCount` —— 3/6 个有
-- `PreviewAny` —— 3/6 个有
-- `RH_GetAudioDuration` —— 3/6 个有
-- `SoundFlow_GetLength` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `AddLabel` —— 2/6 个有
-- `GetImageRangeFromBatch` —— 1/6 个有
-- `Image Comparer (rgthree)` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SeedVR2` —— 1/6 个有
-- `SeedVR2BlockSwap` —— 1/6 个有
-- `TTResolutionSelector` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `MathExpression|pysssss` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `ColorMatch` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | dpmpp_sde | - | 6 | 83% |
+| 重绘幅度 | normal | - | 6 | 83% |
 
 ## 常见问题
 
@@ -81,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，6 个样本，一致性 83%
+- 重绘幅度 最常用 normal，6 个样本，一致性 83%

@@ -3,53 +3,54 @@ name: unknown_workflow_video_lora_sampler_665
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.447
-common_nodes: [FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageColorMatch+, ImageRepeat, ImageResizeKJv2, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.899
+common_nodes: [LoadImage, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946036968394289154.json, 视频生成/图生视频/1946043472392712193.json, 视频生成/图生视频/1943291621532463106.json]
+members: [视频生成/图生视频/2065244368470106114.json, 视频生成/图生视频/2065243346691510273.json, 视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 图生视频_2070775832578191361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_665
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1946036968394289154.json、视频生成/图生视频/1946043472392712193.json、视频生成/图生视频/1943291621532463106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2065244368470106114.json、视频生成/图生视频/2065243346691510273.json、视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 图生视频_2070775832578191361.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageColorMatch+`
-- `ImageRepeat`
-- `ImageResizeKJv2`
-- `Label (rgthree)`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
 - `PreviewImage`
-- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageSize+` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `MaskPreview+` —— 2/3 个有
+- `WanVideoVACEStartToEndFrame` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 

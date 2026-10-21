@@ -3,56 +3,39 @@ name: unknown_workflow_video_93
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.747
-common_nodes: [ACEStepGen, AudioSeparation, CR Text, Float, GenerationParameters, GetNode, ImageCASharpening+, ImpactSwitch, Int, LoadAudio, LoadImage, MultiLineLyrics, MultiLinePromptACES, PreviewAudio, RH_Translator, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, workflow>1]
+coverage: 0.526
+common_nodes: [Anything Everywhere, DownloadAndLoadFlorence2Model, Florence2Run, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, RunningHub_FramePack, Seed Everywhere, SetNode, StringFunction|pysssss, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1922477274111868929.json, 视频生成/图生视频/1919189623304818689.json]
+members: [视频生成/图生视频/1913943457507831810.json, 视频生成/图生视频/1913942332960403457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_93
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1922477274111868929.json、视频生成/图生视频/1919189623304818689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913943457507831810.json、视频生成/图生视频/1913942332960403457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ACEStepGen`
-- `AudioSeparation`
-- `CR Text`
-- `Float`
-- `GenerationParameters`
+- `Anything Everywhere`
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
 - `GetNode`
-- `ImageCASharpening+`
-- `ImpactSwitch`
 - `Int`
-- `LoadAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `PreviewAudio`
-- `RH_Translator`
-- `SaveAudio`
+- `RunningHub_FramePack`
+- `Seed Everywhere`
 - `SetNode`
-- `VHS_LoadVideo`
+- `StringFunction|pysssss`
 - `VHS_VideoCombine`
-- `workflow>1`
-
-**可变部分**（部分 workflow 才有）：
-- `FloatProcess` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LoadFloatModels` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `SONICSampler` —— 1/2 个有
-- `SONICTLoader` —— 1/2 个有
-- `SONIC_PreData` —— 1/2 个有
-- `unCLIPCheckpointLoader` —— 1/2 个有
 
 ## 典型参数
 

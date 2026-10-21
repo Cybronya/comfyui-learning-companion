@@ -1,67 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_vae_4
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.693
-common_nodes: [AddLabel, BasicGuider, BasicScheduler, Create Grid Image from Batch, ImpactMakeImageList, Int, JoinStrings, KSamplerSelect, Lora Loader, RandomNoise, ReActorImageDublicator, SamplerCustomAdvanced, SaveImage, String, VAEDecode, easy anythingIndexSwitch, easy convertAnything, easy imageListToImageBatch, easy rangeFloat, easy rangeInt]
+frequency: 5
+level: moderate
+coverage: 0.605
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetNode, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
-missing: [Create Grid Image from Batch, Efficient Loader, easy anythingIndexSwitch, easy convertAnything, easy imageListToImageBatch, easy rangeFloat, easy rangeInt, Lora Loader]
-members: [图片生成/文生图/1956993471274782722.json, 图片生成/文生图/1956993926366420994.json]
+missing: []
+members: [视频生成/文生视频/全能参考二次采样_MInimaxH3_2090972732266733570.json, 视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json, 视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json, 视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json, 视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1956993471274782722.json、图片生成/文生图/1956993926366420994.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/全能参考二次采样_MInimaxH3_2090972732266733570.json、视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json、视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json、视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json、视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AddLabel`
+全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `Create Grid Image from Batch`
-- `ImpactMakeImageList`
-- `Int`
-- `JoinStrings`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetNode`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `Lora Loader`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ReActorImageDublicator`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `String`
+- `SaveVideo`
+- `SetNode`
 - `VAEDecode`
-- `easy anythingIndexSwitch`
-- `easy convertAnything`
-- `easy imageListToImageBatch`
-- `easy rangeFloat`
-- `easy rangeInt`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 1/2 个有
-- `CFGGuider` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `Efficient Loader` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `ModelSamplingFlux` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
+- `MiniMaxH3SigmaShift` —— 4/5 个有
+- `ModelAttentionBackend` —— 4/5 个有
+- `ModelPreviewOverrideKJ` —— 4/5 个有
+- `SplitSigmas` —— 4/5 个有
+- `UNETLoader` —— 4/5 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/5 个有
+- `LoadAudio` —— 2/5 个有
+- `RHLLMChatNode` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `H3LatentUpscaleByJingchen573` —— 1/5 个有
+- `MiniMaxH3HybridLoader` —— 1/5 个有
+- `MiniMaxLowVRAMAttention` —— 1/5 个有
+- `MinimaxH3LatentUpscalerNode3D` —— 1/5 个有
+- `SolAttnMiniMax` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Create Grid Image from Batch、Efficient Loader、easy anythingIndexSwitch、easy convertAnything、easy imageListToImageBatch
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

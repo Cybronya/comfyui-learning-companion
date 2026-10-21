@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_129
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.787429
-common_nodes: [LoadImage, RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
+coverage: 0.7685
+common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM, LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2050787317543124993.json, 视频生成/图生视频/2048930844718407682.json, 视频生成/图生视频/2048761610067517441.json, 视频生成/文生视频/Happyhorse1.0 文生视频_2048769437599277058.json, 视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json, 视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json, 视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json]
+members: [图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json, 图片生成/文生图/LongCat-Image文生图_1997957400038662145.json, 图片生成/文生图/LongCat-Image文生图_1998224203377704961.json, 图片生成/文生图/LongCat-Image文生图_2001783199229440002.json, 图片生成/文生图/LongCat-Image文生图_2052768050700660737.json, 图片生成/文生图/LongCat-Image文生图（Plus才能运行）_1997925907765583874.json, 图片生成/文生图/LongCat文生图_1998335604532346881.json, 图片生成/文生图/龙猫模型LongCat-Image文生图_1998212875355348993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_129
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2050787317543124993.json、视频生成/图生视频/2048930844718407682.json、视频生成/图生视频/2048761610067517441.json、视频生成/文生视频/Happyhorse1.0 文生视频_2048769437599277058.json、视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json、图片生成/文生图/LongCat-Image文生图_1997957400038662145.json、图片生成/文生图/LongCat-Image文生图_1998224203377704961.json、图片生成/文生图/LongCat-Image文生图_2001783199229440002.json、图片生成/文生图/LongCat-Image文生图_2052768050700660737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
-- `RH_AlibabaHappyhorse10TextToVideo`
-- `SaveVideo`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `LayerUtility: PurgeVRAM`
+- `LongCatImageModelLoader`
+- `LongCatImageTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaHappyhorse10ImageToVideo` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `RH_AlibabaHappyhorse10ReferenceToVideo` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `PreviewAny` —— 1/7 个有
-- `RH_Captioner` —— 1/7 个有
+- `JWInteger` —— 7/8 个有
+- `LoadImage` —— 2/8 个有
 
 ## 典型参数
 

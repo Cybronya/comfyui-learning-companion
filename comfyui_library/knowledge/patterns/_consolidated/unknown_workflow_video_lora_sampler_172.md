@@ -3,59 +3,69 @@ name: unknown_workflow_video_lora_sampler_172
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.799727
-common_nodes: [SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+coverage: 0.602364
+common_nodes: [CLIPVisionLoader, DrawViTPose, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2063554868475944962.json, 视频生成/图生视频/2073836975819419649.json, 视频生成/图生视频/电商带货bernini 局部衣服修改_2068734338539286529.json, 视频生成/图生视频/电商带货替换主播手中产品_2068745697402380290.json, 视频生成/图生视频/电商带货替换主播手中产品_2099785685107568641.json, 视频生成/图生视频/2081685394093076482.json, 视频生成/图生视频/2067257061662089218.json, 视频生成/图生视频/2062833614240436226.json, 视频生成/图生视频/2065389966213079042.json, 视频生成/图生视频/2069297231349510145.json, 视频生成/图生视频/2064948143715864577.json]
+members: [视频生成/图生视频/动作迁移优化版_2087223386203312129.json, 视频生成/图生视频/1974720060226973697.json, 视频生成/图生视频/2051347806027296770.json, 视频生成/图生视频/2070541183562113025.json, 视频生成/图生视频/2070540177809952769.json, 视频生成/图生视频/2061344099260784641.json, 视频生成/图生视频/2060930629302312961.json, 视频生成/图生视频/2055559300801679362.json, 视频生成/图生视频/本地开源免费，巴西funk摇僵尸版_2055572704480243714.json, 视频生成/图生视频/2056626842236440577.json, 视频生成/图生视频/2069226848269201409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_172
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2063554868475944962.json、视频生成/图生视频/2073836975819419649.json、视频生成/图生视频/电商带货bernini 局部衣服修改_2068734338539286529.json、视频生成/图生视频/电商带货替换主播手中产品_2068745697402380290.json、视频生成/图生视频/电商带货替换主播手中产品_2099785685107568641.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/动作迁移优化版_2087223386203312129.json、视频生成/图生视频/1974720060226973697.json、视频生成/图生视频/2051347806027296770.json、视频生成/图生视频/2070541183562113025.json、视频生成/图生视频/2070540177809952769.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `SimpleMath+`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus Bernini`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ContextOptions`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SamplerExtraArgs`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 10/11 个有
-- `JjkText` —— 10/11 个有
-- `VHS_VideoInfoLoaded` —— 10/11 个有
-- `Seed` —— 9/11 个有
-- `ImageResizeKJv2` —— 8/11 个有
-- `GetNode` —— 7/11 个有
-- `SetNode` —— 7/11 个有
-- `TextCombinerSix` —— 7/11 个有
-- `LoadImage` —— 5/11 个有
-- `ImageConcanate` —— 4/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `MuyeTextEditOutput` —— 1/11 个有
-- `PrimitiveFloat` —— 1/11 个有
+- `CR Prompt Text` —— 10/11 个有
+- `GetNode` —— 10/11 个有
+- `ImageResizeKJv2` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `easy showAnything` —— 10/11 个有
+- `JWInteger` —— 9/11 个有
+- `PreviewImage` —— 9/11 个有
+- `WanVideoTorchCompileSettings` —— 9/11 个有
+- `VHS_VideoInfoSource` —— 8/11 个有
+- `GetImageSizeAndCount` —— 2/11 个有
+- `ImageScale` —— 2/11 个有
+- `Int` —— 2/11 个有
+- `MathExpression|pysssss` —— 2/11 个有
+- `Float` —— 1/11 个有
+- `GetImageRangeFromBatch` —— 1/11 个有
+- `LayerUtility: PurgeVRAM` —— 1/11 个有
+- `PoseRetargetPromptHelper` —— 1/11 个有
+- `String` —— 1/11 个有
+- `VHS_VideoInfoLoaded` —— 1/11 个有
+- `easy cleanGpuUsed` —— 1/11 个有
+- `easy imageCount` —— 1/11 个有
+- `easy indexAnything` —— 1/11 个有
+- `ttN float` —— 1/11 个有
 
 ## 典型参数
 

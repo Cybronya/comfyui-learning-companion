@@ -1,58 +1,72 @@
 ---
 name: unknown_workflow_video_upscale_lora_10
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8525
-common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ExtendIntermediateSigmas, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorRefine, MiniMaxH3DirectorSelfLift, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveStringMultiline, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.8356
+common_nodes: [Anything Everywhere, CLIPVisionLoader, CR Text, ColorMatch, DWPreprocessor, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, INTConstant, ImageResizeKJv2, ImageUpscaleWithModel, LoadImage, MathExpression|pysssss, PixelPerfectResolution, SetNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json, 视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json]
+members: [视频生成/图生视频/1987934084561350657.json, 视频生成/图生视频/1984675303345766402.json, 视频生成/图生视频/1984537427039633410.json, 视频生成/图生视频/2070675644220002306.json, 视频生成/图生视频/2015730877476642818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_10
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json、视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1987934084561350657.json、视频生成/图生视频/1984675303345766402.json、视频生成/图生视频/1984537427039633410.json、视频生成/图生视频/2070675644220002306.json、视频生成/图生视频/2015730877476642818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ExtendIntermediateSigmas`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorFaceRefine`
-- `MiniMaxH3DirectorRefine`
-- `MiniMaxH3DirectorSelfLift`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `UNETLoader`
+全部 5 个 workflow 都包含：
+- `Anything Everywhere`
+- `CLIPVisionLoader`
+- `CR Text`
+- `ColorMatch`
+- `DWPreprocessor`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImageUpscaleWithModel`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `PixelPerfectResolution`
+- `SetNode`
 - `UpscaleModelLoader`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `MiniMaxH3DirectorGroupsCombine` —— 3/4 个有
-- `CreateVideo` —— 2/4 个有
-- `MiniMaxH3DirectorGroupReferenceToVideo` —— 2/4 个有
-- `ModelPreviewOverrideKJ` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `Video Slice` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `MiniMaxH3DirectorGroupImageToVideo` —— 1/4 个有
+- `ACE_ImageFaceCrop` —— 4/5 个有
+- `OnnxDetectionModelLoader` —— 4/5 个有
+- `PoseAndFaceDetection` —— 4/5 个有
+- `VHS_VideoInfo` —— 3/5 个有
+- `BlockifyMask` —— 2/5 个有
+- `DF_Int_to_Float` —— 2/5 个有
+- `DrawMaskOnImage` —— 2/5 个有
+- `GrowMask` —— 2/5 个有
+- `MaskToImage` —— 2/5 个有
+- `SeCModelLoader` —— 2/5 个有
+- `SeCVideoSegmentation` —— 2/5 个有
+- `WanVideoContextOptions` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
 
 ## 典型参数
 

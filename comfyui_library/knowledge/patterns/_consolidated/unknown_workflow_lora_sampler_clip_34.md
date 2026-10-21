@@ -1,82 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_clip_34
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.97
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
-problems: []
-missing: []
-members: [视频生成/图生视频/2070392828198481921.json, 视频生成/图生视频/2066143110995992578.json, 视频生成/图生视频/2072573274269241345.json, 视频生成/图生视频/2072526155609104386.json, 视频生成/图生视频/2063485331059601410.json, 视频生成/图生视频/2063464652104884226.json, 视频生成/文生视频/（高帧率图生视频）Ltx2.3 Licon-MSR自动提示词版全能参考视频_2064880215909814273.json]
+frequency: 8
+level: strong
+coverage: 0.945875
+common_nodes: [CLIPLoader, CLIPTextEncode, EG_ZZ_TMTX, EmptySD3LatentImage, GrowMaskWithBlur, Int, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, RMBG, Sa2VANodeTpl, SaveImage, SimpleMath+, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageCropFromMask]
+problems: [Steps较低可能导致细节不足]
+missing: [CR Text, SimpleMath+, easy cleanGpuUsed, easy imageCropFromMask]
+members: [图片生成/文生图/1991047114425868289.json, 图片生成/文生图/Qwen 生成带透明通道的素材_2021953318397943810.json, 图片生成/文生图/z-image 透明素材生成_2018871198733574146.json, 图片生成/文生图/根据提示词生成素材或透明素材或实物物体 万物可生_1993132200847671298.json, 图片生成/文生图/透明素材生成仓库_2097876593392836610.json, 图片生成/文生图/透明素材生成器_2072535866597273602.json, 图片生成/文生图/透明素材生成器_2072536930167910402.json, 图片生成/文生图/透明素材生成器_2072537785935945730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_34
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2070392828198481921.json、视频生成/图生视频/2066143110995992578.json、视频生成/图生视频/2072573274269241345.json、视频生成/图生视频/2072526155609104386.json、视频生成/图生视频/2063485331059601410.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1991047114425868289.json、图片生成/文生图/Qwen 生成带透明通道的素材_2021953318397943810.json、图片生成/文生图/z-image 透明素材生成_2018871198733574146.json、图片生成/文生图/根据提示词生成素材或透明素材或实物物体 万物可生_1993132200847671298.json、图片生成/文生图/透明素材生成仓库_2097876593392836610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EG_ZZ_TMTX`
+- `EmptySD3LatentImage`
+- `GrowMaskWithBlur`
+- `Int`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `RMBG`
+- `Sa2VANodeTpl`
+- `SaveImage`
+- `SimpleMath+`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageCropFromMask`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAudioVAELoader` —— 6/7 个有
-- `CreateVideo` —— 4/7 个有
-- `SaveVideo` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `RH_LLMAPI_Pro_Node` —— 3/7 个有
-- `ShowText|pysssss` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RHHiddenNodes` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `CR Float To Integer` —— 1/7 个有
-- `LTXVAddGuideMulti` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `TT_img_enc` —— 1/7 个有
-- `VAELoaderKJ` —— 1/7 个有
-- `easy indexAnything` —— 1/7 个有
+- `CR Text` —— 7/8 个有
+- `Text` —— 1/8 个有
+- `TextConcatenate` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 145 - 241 | 7 | 85% |
-| 高度 | 50 | 24 - 50 | 7 | 80% |
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | beta57 | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 145 - 241，7 个样本，取值集中（一致性 85%）
-- 高度 中位数 50，观测区间 24 - 50，7 个样本，取值集中（一致性 80%）
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 beta57，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、SimpleMath+、easy cleanGpuUsed、easy imageCropFromMask

@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_162
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.895833
-common_nodes: [LoadImage, RH_GeminiOmniFlashImageToVideo, SaveVideo]
+coverage: 0.646429
+common_nodes: [GetRandomIntegerInRange, ImpactSwitch, JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text Load Line From File, easy mathInt]
 problems: []
-missing: [Multi Text Merge]
-members: [图片生成/图生图/2092836899630178305.json, 视频生成/图生视频/2064374320712994817.json, 视频生成/图生视频/2061328810875904001.json, 视频生成/图生视频/2066774204372045825.json, 视频生成/图生视频/2059980232874090498.json, 视频生成/图生视频/2058788615504883714.json]
+missing: []
+members: [视频生成/图生视频/2066092416477786114.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2016037375239004162.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2085781651526868994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_162
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/2092836899630178305.json、视频生成/图生视频/2064374320712994817.json、视频生成/图生视频/2061328810875904001.json、视频生成/图生视频/2066774204372045825.json、视频生成/图生视频/2059980232874090498.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2066092416477786114.json、音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json、音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json、音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json、音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `RH_GeminiOmniFlashImageToVideo`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `GetRandomIntegerInRange`
+- `ImpactSwitch`
+- `JjkText`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+- `Text Load Line From File`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `Multi Text Merge` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `RH_LLMAPI_NODE` —— 6/7 个有
+- `ShowText` —— 6/7 个有
 
 ## 典型参数
 
@@ -41,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Multi Text Merge
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

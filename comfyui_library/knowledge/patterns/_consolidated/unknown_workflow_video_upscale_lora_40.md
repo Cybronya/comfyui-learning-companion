@@ -3,49 +3,80 @@ name: unknown_workflow_video_upscale_lora_40
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9085
-common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, TextInput_, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy imageSize]
+coverage: 0.667
+common_nodes: [Any Switch (rgthree), CLIPVisionLoader, CM_IntToFloat, CR Integer To String, CR String To Number, CR Text, CropFace, DWPreprocessor, Display Any (rgthree), FaceMaskFromPoseKeypoints, Fast Groups Muter (rgthree), Float, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch+, ImageResizeKJ, ImageResizeKJv2, ImageScale, ImageUpscaleWithModelBatched, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewImage, RIFE VFI, ReActorFaceSwap, SetNode, ShowText|pysssss, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy imageIndexSwitch, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1909470636823949313.json, 视频生成/图生视频/1992837863268216833.json]
+members: [视频生成/图生视频/2027691887594835969.json, 视频生成/图生视频/2020368444805357570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_40
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1909470636823949313.json、视频生成/图生视频/1992837863268216833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2027691887594835969.json、视频生成/图生视频/2020368444805357570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageUpscaleWithModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Any Switch (rgthree)`
+- `CLIPVisionLoader`
+- `CM_IntToFloat`
+- `CR Integer To String`
+- `CR String To Number`
+- `CR Text`
+- `CropFace`
+- `DWPreprocessor`
+- `Display Any (rgthree)`
+- `FaceMaskFromPoseKeypoints`
+- `Fast Groups Muter (rgthree)`
+- `Float`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `ImageScale`
+- `ImageUpscaleWithModelBatched`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `TextInput_`
+- `MathExpression|pysssss`
+- `PixelPerfectResolution`
+- `PreviewImage`
+- `RIFE VFI`
+- `ReActorFaceSwap`
+- `SetNode`
+- `ShowText|pysssss`
 - `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy imageSize`
+- `easy anythingIndexSwitch`
+- `easy imageIndexSwitch`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `Select Image Indices` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageHistogramMatch+` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoLoraSelectMulti` —— 1/2 个有
 
 ## 典型参数
 

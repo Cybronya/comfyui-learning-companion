@@ -1,72 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_20
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.813111
-common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, GetVideoComponents, ImageFromBatch, JWInteger, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, RHLLMChatNode, SamplerCustom, SplitSigmas, StringReplace, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 11
+level: strong
+coverage: 0.950909
+common_nodes: [BasicScheduler, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SaveVideo, SimpleMath+, VAEDecodeTiled, VAELoaderKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/2063038125223538690.json, 视频生成/图生视频/2063144841558708225.json, 视频生成/图生视频/2065359403267739650.json, 视频生成/图生视频/2063267448056541186.json, 视频生成/图生视频/2062393408311873538.json, 视频生成/图生视频/2073466192983052289.json, 视频生成/图生视频/2061857100334194689.json, 视频生成/图生视频/2062007172694892545.json, 视频生成/图生视频/2062019836196249601.json]
+members: [视频生成/图生视频/2058253695313342465.json, 视频生成/图生视频/2060545124828016642.json, 视频生成/图生视频/2058345686520909825.json, 视频生成/图生视频/2053077492440809473.json, 视频生成/图生视频/2053390831737950210.json, 视频生成/图生视频/2066483566602702849.json, 视频生成/图生视频/2057441452547993601.json, 视频生成/图生视频/2057121441094651906.json, 视频生成/图生视频/2060978714996994050.json, 视频生成/图生视频/2051306841547788290.json, 视频生成/图生视频/2051306846396399618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2063038125223538690.json、视频生成/图生视频/2063144841558708225.json、视频生成/图生视频/2065359403267739650.json、视频生成/图生视频/2063267448056541186.json、视频生成/图生视频/2062393408311873538.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2058253695313342465.json、视频生成/图生视频/2060545124828016642.json、视频生成/图生视频/2058345686520909825.json、视频生成/图生视频/2053077492440809473.json、视频生成/图生视频/2053390831737950210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `BasicScheduler`
-- `BerniniConditioning`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `GetVideoComponents`
-- `ImageFromBatch`
-- `JWInteger`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
 - `KSamplerSelect`
-- `LoadImage`
-- `LoadVideo`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
-- `PreviewAny`
-- `RHLLMChatNode`
 - `SamplerCustom`
-- `SplitSigmas`
-- `StringReplace`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `easy showAnything`
+- `SaveVideo`
+- `SimpleMath+`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniPromptEnhancer` —— 8/9 个有
-- `CreateVideo` —— 8/9 个有
-- `ImageConcanate` —— 8/9 个有
-- `SaveVideo` —— 8/9 个有
-- `VHS_VideoCombine` —— 8/9 个有
-- `Float` —— 7/9 个有
-- `BatchImagesNode` —— 6/9 个有
-- `MathExpression|pysssss` —— 5/9 个有
-- `easy batchAnything` —— 5/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `SeedVR2LoadDiTModel` —— 1/9 个有
-- `SeedVR2LoadVAEModel` —— 1/9 个有
-- `SeedVR2VideoUpscaler` —— 1/9 个有
-- `WanContextWindowsManual` —— 1/9 个有
+- `LTXVPreprocess` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `VisualizeSigmasKJ` —— 10/11 个有
+- `UNETLoader` —— 8/11 个有
+- `DualCLIPLoaderGGUF` —— 7/11 个有
+- `PreviewImage` —— 7/11 个有
+- `DualCLIPLoader` —— 6/11 个有
+- `UnetLoaderGGUF` —— 5/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `StringConstantMultiline` —— 3/11 个有
+- `Label (rgthree)` —— 2/11 个有
+- `Power Lora Loader (rgthree)` —— 2/11 个有
+- `VHS_VideoCombine` —— 2/11 个有
+- `DuckHideNode` —— 1/11 个有
+- `MuyeTextEditOutput` —— 1/11 个有
+- `SaveImage` —— 1/11 个有
+- `VHS_SelectImages` —— 1/11 个有
+- `VRAM_Debug` —— 1/11 个有
+- `easy cleanGpuUsed` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 97 - 361 | 11 | 77% |
+| 高度 | 25 | 25 - 25 | 11 | 100% |
 
 ## 常见问题
 
@@ -74,4 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 361，观测区间 97 - 361，11 个样本
+- 高度 中位数 25，观测区间 25 - 25，11 个样本，取值集中（一致性 100%）

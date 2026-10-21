@@ -1,62 +1,63 @@
 ---
 name: unknown_workflow_lora_sampler_clip_67
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.717333
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, Lora Loader Stack (rgthree), PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.84
+common_nodes: [BetterFilmGrain, CLIPLoader, CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, EmptySD3LatentImage, EsesImageEffectBloom, FluxGuidance, ImageSharpen, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: []
-missing: [Note Plus (mtb), easy cleanGpuUsed, easy clearCacheAll, Lora Loader Stack (rgthree), CR Text Concatenate]
-members: [图片生成/文生图/1906942276495450113.json, 图片生成/文生图/1925114613338152962.json, 图片生成/文生图/Flux最强换脸_1894257044323500034.json]
+missing: [Text Multiline, easy cleanGpuUsed, Upscale Model Loader]
+members: [图片生成/文生图/1944988238810636290.json, 图片生成/文生图/1946091501262958594.json, 图片生成/文生图/1946275529144328193.json, 图片生成/文生图/1946514636020543490.json, 图片生成/文生图/1946757510213562369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_67
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1906942276495450113.json、图片生成/文生图/1925114613338152962.json、图片生成/文生图/Flux最强换脸_1894257044323500034.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1944988238810636290.json、图片生成/文生图/1946091501262958594.json、图片生成/文生图/1946275529144328193.json、图片生成/文生图/1946514636020543490.json、图片生成/文生图/1946757510213562369.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `BetterFilmGrain`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
 - `EmptySD3LatentImage`
+- `EsesImageEffectBloom`
 - `FluxGuidance`
-- `KSamplerSelect`
-- `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ImageSharpen`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PreviewImage`
 - `SaveImage`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `DualCLIPLoaderGGUF` —— 1/3 个有
-- `Florence2ModelLoader` —— 1/3 个有
-- `Florence2Run` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
+- `ImageConcanate` —— 4/5 个有
+- `ImageScaleToMegapixels` —— 3/5 个有
+- `Upscale Model Loader` —— 3/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | 10 - 20 | 5 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | uni_pc | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 0.25 | 0.2 - 1 | 5 | 25% |
 
 ## 常见问题
 
@@ -64,4 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Note Plus (mtb)、easy cleanGpuUsed、easy clearCacheAll、Lora Loader Stack (rgthree)、CR Text Concatenate
+- 采样步数 中位数 10，观测区间 10 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 0.25，观测区间 0.2 - 1，5 个样本，取值分散，一致性仅 25%
+- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline、easy cleanGpuUsed、Upscale Model Loader

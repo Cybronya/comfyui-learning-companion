@@ -1,43 +1,38 @@
 ---
 name: unknown_workflow_generic_177
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.8625
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_NODE, RH_Sora2_I2V, SaveImage, SaveVideo, Text Concatenate]
+coverage: 0.960571
+common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2009960530571694081.json, 视频生成/图生视频/2021401587549216769.json, 视频生成/图生视频/1993247545369493505.json, 视频生成/图生视频/1992865544131112962.json, 视频生成/图生视频/1993217506798223362.json, 视频生成/图生视频/1996601719746347010.json]
+members: [音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json, 音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json, 音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json, 音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json, 音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json, 音频生成/音频生成/文字控制 音色+情绪参考_2083374388392583169.json, 音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_177
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2009960530571694081.json、视频生成/图生视频/2021401587549216769.json、视频生成/图生视频/1993247545369493505.json、视频生成/图生视频/1992865544131112962.json、视频生成/图生视频/1993217506798223362.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json、音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json、音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json、音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json、音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Sora2_I2V`
-- `SaveImage`
-- `SaveVideo`
-- `Text Concatenate`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 5/6 个有
-- `easy showAnything` —— 5/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
-- `ShowText` —— 1/6 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `LoadVideo` —— 3/7 个有
+- `GetVideoComponents` —— 1/7 个有
+- `PreviewAudio` —— 1/7 个有
 
 ## 典型参数
 

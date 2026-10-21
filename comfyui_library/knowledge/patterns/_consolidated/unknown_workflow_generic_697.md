@@ -3,36 +3,34 @@ name: unknown_workflow_generic_697
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.854
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, LoadVideo, MuyeTextEditOutput, RH_RhartVideoSparkvideo20FastImageToVideo, RH_RhartVideoSparkvideo20FastMultimodalVideo, RH_RhartVideoSparkvideo20FastTextToVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
+coverage: 0.866
+common_nodes: [ByteDance2DraftToFinalVideoNode, LoadImage, SaveText, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2043696698463096834.json, 视频生成/图生视频/2043699626863239170.json]
+members: [comfyui-workflow-templates-json/api_seedance2_5_draft_i2v.json, comfyui-workflow-templates-json/api_seedance2_5_draft_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_697
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2043696698463096834.json、视频生成/图生视频/2043699626863239170.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_5_draft_i2v.json、comfyui-workflow-templates-json/api_seedance2_5_draft_r2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `ByteDance2DraftToFinalVideoNode`
 - `LoadImage`
-- `LoadVideo`
-- `MuyeTextEditOutput`
-- `RH_RhartVideoSparkvideo20FastImageToVideo`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `RH_RhartVideoSparkvideo20FastTextToVideo`
-- `RH_SparkVideoAssetCreate`
-- `RH_SparkVideoAssetIdsMerge`
+- `SaveText`
 - `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `ByteDance2FirstLastFrameNode` —— 1/2 个有
+- `ByteDance2ReferenceNodeV2` —— 1/2 个有
 
 ## 典型参数
 

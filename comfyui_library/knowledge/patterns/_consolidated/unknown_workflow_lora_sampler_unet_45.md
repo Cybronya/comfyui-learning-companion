@@ -1,95 +1,63 @@
 ---
 name: unknown_workflow_lora_sampler_unet_45
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.442
-common_nodes: [BasicScheduler, BatchCount+, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetNode, GetVideoComponents, H3AudioRefineSampler, H3FrozenVideoCache, ImageAddNoise, ImageBatchMulti, KSamplerSelect, LoadVideo, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SaveVideo, SetNode, StringReplace, Text Concatenate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VideoFrameSample, VideoTemporalCrop, easy batchAnything, easy float, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptLine, easy saveVideo, easy string]
+coverage: 0.797
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/MiniMax H3超灵活的导演台，SelfLift双采、无缝无色差超长视频 (2.0)_2106650378539458562.json, 图片生成/文生图/MiniMax H3超灵活的导演台，SelfLift双采、无缝衔接超长视频 (无缝双采1.5)_2100251279346987010.json, 视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json]
+members: [视频生成/图生视频/桌面女友_2110568224566890498.json, 视频生成/图生视频/桌面女友_2111091294834614273.json, 视频生成/图生视频/（首尾帧 2图）MINIMAX H3  图生视频_2111267377957658625.json, 视频生成/文生视频/全模態影音生成，畫面與聲音一次算出來；支援首尾幀控制、內建 8 步 Turbo 開關_2100568061072994305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_45
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3超灵活的导演台，SelfLift双采、无缝无色差超长视频 (2.0)_2106650378539458562.json、图片生成/文生图/MiniMax H3超灵活的导演台，SelfLift双采、无缝衔接超长视频 (无缝双采1.5)_2100251279346987010.json、视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/桌面女友_2110568224566890498.json、视频生成/图生视频/桌面女友_2111091294834614273.json、视频生成/图生视频/（首尾帧 2图）MINIMAX H3  图生视频_2111267377957658625.json、视频生成/文生视频/全模態影音生成，畫面與聲音一次算出來；支援首尾幀控制、內建 8 步 Turbo 開關_2100568061072994305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `BatchCount+`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
+- `ComfySwitchNode`
 - `CreateVideo`
-- `ExtendIntermediateSigmas`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GetVideoComponents`
-- `H3AudioRefineSampler`
-- `H3FrozenVideoCache`
-- `ImageAddNoise`
-- `ImageBatchMulti`
 - `KSamplerSelect`
-- `LoadVideo`
-- `LoraLoaderBypassModelOnly`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3AudioGuideFeather`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
+- `MiniMaxH3ImageToVideo`
 - `PrimitiveBoolean`
 - `PrimitiveFloat`
 - `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SetNode`
-- `StringReplace`
-- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `VideoFrameSample`
-- `VideoTemporalCrop`
-- `easy batchAnything`
-- `easy float`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy mergeVideosFromPaths`
-- `easy minimaxH3ToVideo`
-- `easy multiTrackEditor`
-- `easy multiTrackInfoOutput`
-- `easy multiTrackTaskOutput`
-- `easy promptLine`
-- `easy saveVideo`
-- `easy string`
 
 **可变部分**（部分 workflow 才有）：
-- `SelfLiftH3Sampler` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `ColorTransfer` —— 1/3 个有
-- `ComfySwitchNode` —— 1/3 个有
-- `LTXVConcatAVLatent` —— 1/3 个有
-- `LTXVSeparateAVLatent` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/3 个有
-- `RandomNoise` —— 1/3 个有
-- `SamplerCustomAdvanced` —— 1/3 个有
-- `SplitSigmas` —— 1/3 个有
+- `GetImageSize` —— 3/4 个有
+- `ImageCompositeMasked` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `ManualSigmas` —— 2/4 个有
+- `QwenImage21Cache` —— 2/4 个有
+- `SamplerCustom` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `TextEncodeQwenImage21` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `Wan_Organic_Skin` —— 1/4 个有
 
 ## 典型参数
 

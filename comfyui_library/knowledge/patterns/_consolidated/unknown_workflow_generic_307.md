@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_307
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.875
-common_nodes: [JjkText, LoadImage, SaveVideo]
+coverage: 0.9142
+common_nodes: [LoadImage, RH_Hailuo_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2015789801991049217.json, 视频生成/图生视频/2049294005959135233.json, 视频生成/图生视频/2047621014405779457.json, 视频生成/图生视频/2011346619601522690.json]
+members: [视频生成/图生视频/1987125607056257026.json, 视频生成/图生视频/2054441608346644481.json, 视频生成/图生视频/2021400714517417986.json, 视频生成/图生视频/1987019541161119746.json, 视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_307
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2015789801991049217.json、视频生成/图生视频/2049294005959135233.json、视频生成/图生视频/2047621014405779457.json、视频生成/图生视频/2011346619601522690.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1987125607056257026.json、视频生成/图生视频/2054441608346644481.json、视频生成/图生视频/2021400714517417986.json、视频生成/图生视频/1987019541161119746.json、视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `RH_Hailuo_Image2Video`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 2/4 个有
-- `RH_Higgsfield_I2V` —— 2/4 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,63 +1,55 @@
 ---
 name: text_to_image_sampler_clip_vae_3
 type: Text To Image
-frequency: 5
+frequency: 22
 level: moderate
-coverage: 0.7622
-common_nodes: [CLIPTextEncode, EmptyLatentImage, FluxGuidance, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage, VAEDecode, VAELoader]
+coverage: 0.933455
+common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode]
 problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1ExtraOptions]
-members: [图片生成/文生图/1940313410569682946.json, 图片生成/文生图/1942186080890204162.json, 图片生成/文生图/1944743997447524354.json, 图片生成/文生图/1951531387230826497.json, 图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json]
+missing: [Checkpoint Loader]
+members: [图片生成/文生图/1980554845319024641.json, 图片生成/文生图/小易第一课 工作流搭建【20260527】_2060680098830962690.json, 图片生成/文生图/少女漫特写镜头_2086340546775306242.json, 图片生成/文生图/少年热血漫画风_2099420731863031810.json, 图片生成/文生图/工作流基础篇-1-基础文生图工作流（SD1.5;SDXL）_2012411587696529410.json, 图片生成/文生图/文生图(服装)_2075602877925646338.json, 图片生成/文生图/文生图(服装)_2075854655590064129.json, 图片生成/文生图/文生图(服装)_2076115283038789633.json, 图片生成/文生图/文生图-极速-3D卡通_2101863055092178945.json, 图片生成/文生图/文生图_2046755529770405889.json, 图片生成/文生图/文生图基础款1_1851544019800313857.json, 图片生成/文生图/文生图基础款_1818200162132209665.json, 图片生成/文生图/文生图基础款_1830501484281688065.json, 图片生成/文生图/文生图基础款_1851451030012841985.json, 图片生成/文生图/文生图基础款_1990029770958229505.json, 图片生成/文生图/文生图基础款_1991402585596997633.json, 图片生成/文生图/文生图基础款_2007732871238258689.json, 图片生成/文生图/文生图基础款_2036017175181402114.json, 图片生成/文生图/文生图工作流_2090257194913718274.json, 图片生成/文生图/文生图最简版_1990400035454148610.json, 图片生成/文生图/文生图（SD1.5;SDXL）_2064679284408672257.json, 图片生成/文生图/森林岛大冒险1.0_1993881356163809282.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1940313410569682946.json、图片生成/文生图/1942186080890204162.json、图片生成/文生图/1944743997447524354.json、图片生成/文生图/1951531387230826497.json、图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/1980554845319024641.json、图片生成/文生图/小易第一课 工作流搭建【20260527】_2060680098830962690.json、图片生成/文生图/少女漫特写镜头_2086340546775306242.json、图片生成/文生图/少年热血漫画风_2099420731863031810.json、图片生成/文生图/工作流基础篇-1-基础文生图工作流（SD1.5;SDXL）_2012411587696529410.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 22 个 workflow 都包含：
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
 - `SaveImage`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `DualCLIPLoader` —— 4/5 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `UNETLoader` —— 4/5 个有
-- `DeepTranslatorTextNode` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `NunchakuFluxDiTLoader` —— 1/5 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/5 个有
+- `CheckpointLoaderSimple` —— 21/22 个有
+- `PreviewImage` —— 7/22 个有
+- `Checkpoint Loader` —— 1/22 个有
+- `ConditioningAverage` —— 1/22 个有
+- `LoraLoader` —— 1/22 个有
+- `RMBG` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 1024 | 5 | 77% |
-| 高度 | 1024 | 512 - 1536 | 5 | 68% |
-| 采样步数 | 20 | 20 - 30 | 5 | 82% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 5 | 0% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | normal | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 60 | 22 | 59% |
+| Prompt 约束强度(CFG) | 8 | 3.5 - 8 | 22 | 80% |
+| 采样算法 | euler | - | 22 | 50% |
+| 调度器 | karras | - | 22 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 768 | 512 - 1024 | 22 | 75% |
+| 高度 | 1024 | 512 - 1024 | 22 | 72% |
+| LoRA 模型强度 | 0.95 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -65,11 +57,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1024，5 个样本
-- 高度 中位数 1024，观测区间 512 - 1536，5 个样本
-- 采样步数 中位数 20，观测区间 20 - 30，5 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，5 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 normal，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: LoadJoyCaptionBeta1Model、LayerUtility: JoyCaptionBeta1ExtraOptions
+- 采样步数 中位数 20，观测区间 20 - 60，22 个样本
+- Prompt 约束强度(CFG) 中位数 8，观测区间 3.5 - 8，22 个样本
+- 采样算法 最常用 euler，22 个样本，一致性 50%
+- 调度器 最常用 karras，22 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 512 - 1024，22 个样本
+- 高度 中位数 1024，观测区间 512 - 1024，22 个样本
+- 这些节点还没有知识卡，系统对它们的理解有限：Checkpoint Loader

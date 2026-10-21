@@ -3,38 +3,32 @@ name: unknown_workflow_generic_782
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.733
-common_nodes: [AILab_QwenVL, Apply Whisper, CR Prompt Text, LayerUtility: PurgeVRAM, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, RunningHub SeedXPro Translator, SaveAudio, ShowText|pysssss, VHS_LoadVideo, easy saveText, easy showAnything]
+coverage: 0.455
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4_5, Comfly_api_set, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--洗声音--反推声音特质-声音设计-_2018578275949350914.json, 音频生成/音频生成/一键洗声音--反推声音特质-声音设计_2032371769327226882.json]
+members: [图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json, 图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_782
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--洗声音--反推声音特质-声音设计-_2018578275949350914.json、音频生成/音频生成/一键洗声音--反推声音特质-声音设计_2032371769327226882.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json、图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `Apply Whisper`
 - `CR Prompt Text`
-- `LayerUtility: PurgeVRAM`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `RunningHub SeedXPro Translator`
-- `SaveAudio`
+- `Comfly_Doubao_Seedream_4_5`
+- `Comfly_api_set`
+- `LoadImage`
+- `SaveImage`
 - `ShowText|pysssss`
-- `VHS_LoadVideo`
-- `easy saveText`
-- `easy showAnything`
 
 ## 典型参数
 

@@ -3,34 +3,34 @@ name: unknown_workflow_generic_355
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.975
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio]
+coverage: 0.89575
+common_nodes: [CR Text, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/FireRedTTS2单人语音克隆话V2_1968563779053203458.json, 音频生成/音频生成/FireRedTTS2双人对话_1968559570912202754.json, 音频生成/音频生成/FireRedTTS2双人对话_1968618171978665986.json, 音频生成/音频生成/FireRedTTS2电商数字人语音V1_1970430610412105730.json]
+members: [图片生成/文生图/-全能图片V1-多角色打起来自制动作_1963081650311761921.json, 图片生成/文生图/全能图片每日5次免费，促销价只要5分_次+全节点注释_2081548760219480066.json, 视频生成/图生视频/1977335560144605186.json, 视频生成/图生视频/2013796418384830465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_355
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FireRedTTS2单人语音克隆话V2_1968563779053203458.json、音频生成/音频生成/FireRedTTS2双人对话_1968559570912202754.json、音频生成/音频生成/FireRedTTS2双人对话_1968618171978665986.json、音频生成/音频生成/FireRedTTS2电商数字人语音V1_1970430610412105730.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/-全能图片V1-多角色打起来自制动作_1963081650311761921.json、图片生成/文生图/全能图片每日5次免费，促销价只要5分_次+全节点注释_2081548760219480066.json、视频生成/图生视频/1977335560144605186.json、视频生成/图生视频/2013796418384830465.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
+- `CR Text`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FireRedTTS2_Dialogue` —— 3/4 个有
-- `FireRedTTS2MonologueNode` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `ImageResize+` —— 3/4 个有
+- `ttN concat` —— 3/4 个有
 
 ## 典型参数
 

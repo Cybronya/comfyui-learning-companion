@@ -3,34 +3,34 @@ name: unknown_workflow_generic_833
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.626
-common_nodes: [PrimitiveStringMultiline, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.5225
+common_nodes: [LoadImage, SaveVideo, Seedance_Config, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-VoiceDesign（声音设计）_2014524194331037697.json, 音频生成/音频生成/Qwen3TTS声音设计工作流_2105216069802749954.json]
+members: [视频生成/图生视频/2078774311791452162.json, 视频生成/图生视频/2082025454453743617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_833
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-VoiceDesign（声音设计）_2014524194331037697.json、音频生成/音频生成/Qwen3TTS声音设计工作流_2105216069802749954.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2078774311791452162.json、视频生成/图生视频/2082025454453743617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `LoadImage`
+- `SaveVideo`
+- `Seedance_Config`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `HappyHorse_1_1_Video` —— 1/2 个有
+- `Zhenzhen_Video_GK_V15` —— 1/2 个有
 
 ## 典型参数
 

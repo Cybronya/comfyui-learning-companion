@@ -3,31 +3,32 @@ name: unknown_workflow_generic_494
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.916667
-common_nodes: [SaveAudioMP3, SparkTTS_VoiceCreator]
+coverage: 0.533333
+common_nodes: [CLIPLoader, PreviewAny, TextGenerate]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI声音创造（男女各25种声音）_1981387566542929921.json, 音频生成/音频生成/AI声音生成器_2014666051899891713.json, 音频生成/音频生成/声音_2018550234237902850.json]
+members: [comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json, comfyui-workflow-templates-json/llm_qwen3_text_gen.json, comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_494
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI声音创造（男女各25种声音）_1981387566542929921.json、音频生成/音频生成/AI声音生成器_2014666051899891713.json、音频生成/音频生成/声音_2018550234237902850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json、comfyui-workflow-templates-json/llm_qwen3_text_gen.json、comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `SaveAudioMP3`
-- `SparkTTS_VoiceCreator`
+- `CLIPLoader`
+- `PreviewAny`
+- `TextGenerate`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
 
 ## 典型参数
 

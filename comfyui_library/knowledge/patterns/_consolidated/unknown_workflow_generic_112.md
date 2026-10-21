@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_112
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.97225
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.707444
+common_nodes: [HeartMuLa_Generate, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/最新wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换_2092069398860357634.json, 视频生成/图生视频/2033748217984192513.json, 视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json, 视频生成/图生视频/Wan3.0 参考生视频_2091774461044412418.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-单图_首尾帧生视频_2093004641251454977.json, 视频生成/图生视频/Wan3多模态_全参工作流_2092187009434607617.json, 视频生成/图生视频/阿里最强视频模型wan3.0多模态生视频低至0.21元_秒_2092413729613893633.json]
+members: [音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json, 音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json, 音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013466293235621890.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013643901214658562.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015014154909786114.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015587368438341634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_112
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/最新wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换_2092069398860357634.json、视频生成/图生视频/2033748217984192513.json、视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json、视频生成/图生视频/Wan3.0 参考生视频_2091774461044412418.json、视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json、音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json、音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 9 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 7/8 个有
-- `LoadAudio` —— 6/8 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 6/8 个有
-- `Text` —— 4/8 个有
-- `RH_AlibabaWan30ImageToVideo` —— 1/8 个有
-- `RH_Kling26_MotionControl` —— 1/8 个有
-- `easy saveText` —— 1/8 个有
+- `PreviewAny` —— 7/9 个有
+- `RH_LLMAPI_Pro_Node` —— 7/9 个有
+- `Label (rgthree)` —— 5/9 个有
+- `CR Text` —— 4/9 个有
 
 ## 典型参数
 

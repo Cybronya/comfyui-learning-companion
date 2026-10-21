@@ -3,36 +3,35 @@ name: unknown_workflow_video_82
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.9165
+common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1913064575934132225.json, 视频生成/图生视频/1912931636185628674.json]
+members: [视频生成/图生视频/1913093088577843201.json, 视频生成/文生视频/1913067858023383042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_82
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913064575934132225.json、视频生成/图生视频/1912931636185628674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913093088577843201.json、视频生成/文生视频/1913067858023383042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
+- `ImageResizeKJ`
 - `LoadImage`
 - `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `Note _O` —— 1/2 个有
+- `LTXVPromptEnhancer` —— 1/2 个有
+- `LTXVPromptEnhancerLoader` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_625
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.571
-common_nodes: [Fast Groups Bypasser (rgthree), JjkText, LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenFlareEdit, RH_RhartImageG25OfficialTokenFlareTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.814
+common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/2090679203065851906.json, 数字人/数字人/全能图片G Image 2.5 全家桶 文生图 图像编辑_2097856587611332609.json]
+members: [音频生成/音频生成/IndexTTS2 配音 _ 音色克隆_1983772949016682498.json, 音频生成/音频生成/IndexTTS2 音色克隆 + 情绪克隆_2083536527476486145.json, 音频生成/音频生成/IndexTTS2 音色克隆 + 情绪克隆_2085463412989063169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_625
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2090679203065851906.json、数字人/数字人/全能图片G Image 2.5 全家桶 文生图 图像编辑_2097856587611332609.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2 配音 _ 音色克隆_1983772949016682498.json、音频生成/音频生成/IndexTTS2 音色克隆 + 情绪克隆_2083536527476486145.json、音频生成/音频生成/IndexTTS2 音色克隆 + 情绪克隆_2085463412989063169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `JjkText`
-- `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG25OfficialTokenFlareEdit`
-- `RH_RhartImageG25OfficialTokenFlareTextToImage`
-- `RH_RhartImageG25SunburstImageToImage`
-- `RH_RhartImageG25SunburstTextToImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
+
+**可变部分**（部分 workflow 才有）：
+- `XB_CanvasLabel` —— 2/3 个有
+- `NormalizeAudioLoudness` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

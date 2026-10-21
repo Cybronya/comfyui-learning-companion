@@ -3,37 +3,39 @@ name: unknown_workflow_video_80
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8845
-common_nodes: [CR Prompt Text, Float, ImageConcanate, JWImageResizeByLongerSide, JWInteger, LoadImage, RunningHub_FramePack_F1, VHS_VideoCombine]
+coverage: 0.829
+common_nodes: [CR Text, LoadImage, Primitive integer [Crystools], RHHiddenNodes, RunningHub_FramePack_F1, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1919298489241501697.json, 视频生成/图生视频/1932622744146092033.json]
+members: [视频生成/图生视频/1932965781720236033.json, 视频生成/图生视频/1920125027860287490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_80
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1919298489241501697.json、视频生成/图生视频/1932622744146092033.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1932965781720236033.json、视频生成/图生视频/1920125027860287490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `ImageConcanate`
-- `JWImageResizeByLongerSide`
-- `JWInteger`
+- `CR Text`
 - `LoadImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
 - `RunningHub_FramePack_F1`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
+- `ConcatTextOfUtils` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

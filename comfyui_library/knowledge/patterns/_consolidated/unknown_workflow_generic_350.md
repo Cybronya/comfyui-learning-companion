@@ -3,39 +3,35 @@ name: unknown_workflow_generic_350
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7985
-common_nodes: [CR Prompt Text, Float, LoadAudio, PreviewAudio, SaveAudioAdvanced, YuE2GenerateCover, YuE2ModelLoader, YuE2ReferenceVoiceCover, YuE2Transcribe]
+coverage: 0.75
+common_nodes: [LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage, 忽略多组孤海]
 problems: []
-missing: []
-members: [音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json]
+missing: [忽略多组孤海]
+members: [图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json, 图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json, 图片生成/图生图/2098218264106201090.json, 图片生成/图生图/2098237558626017281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_350
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json、音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json、图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json、图片生成/图生图/2098218264106201090.json、图片生成/图生图/2098237558626017281.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
-- `YuE2GenerateCover`
-- `YuE2ModelLoader`
-- `YuE2ReferenceVoiceCover`
-- `YuE2Transcribe`
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
+- `SaveImage`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
+- `RH_RhartImageG25OfficialTokenFlareEdit` —— 2/4 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 2/4 个有
 
 ## 典型参数
 
@@ -47,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：忽略多组孤海

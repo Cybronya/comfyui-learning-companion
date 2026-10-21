@@ -1,37 +1,47 @@
 ---
 name: unknown_workflow_generic_236
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.712667
+common_nodes: [CR Text, CR Text Replace, HeartMuLa_Generate, HeartMuLa_Transcribe, ImpactInt, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, easy convertAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034493211380551681.json, 视频生成/图生视频/2038487886651199489.json, 视频生成/图生视频/2034473261228101634.json, 视频生成/图生视频/2034471481182261250.json, 视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json]
+members: [音频生成/音频生成/HeartMuLa Music Generator音乐生成器_2014209189966516225.json, 音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2019404854623473665.json, 音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2046675069698576385.json, 音频生成/音频生成/自动生成音乐_2013941285295493122.json, 音频生成/音频生成/音乐自动生成神器heartmula！效果堪比闭源_2013795843362529281.json, 音频生成/音频生成/📢heartmula音乐自动生成+歌词提取_2014524994990116866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_236
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2034493211380551681.json、视频生成/图生视频/2038487886651199489.json、视频生成/图生视频/2034473261228101634.json、视频生成/图生视频/2034471481182261250.json、视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa Music Generator音乐生成器_2014209189966516225.json、音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2019404854623473665.json、音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2046675069698576385.json、音频生成/音频生成/自动生成音乐_2013941285295493122.json、音频生成/音频生成/音乐自动生成神器heartmula！效果堪比闭源_2013795843362529281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 6 个 workflow 都包含：
+- `CR Text`
+- `CR Text Replace`
+- `HeartMuLa_Generate`
+- `HeartMuLa_Transcribe`
+- `ImpactInt`
+- `LoadAudio`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
+- `easy convertAnything`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_CinematicVideoGenerator` —— 4/5 个有
-- `LoadVideo` —— 3/5 个有
-- `MuyeTextEditOutput` —— 3/5 个有
-- `RH_SeedanceVideoRefToVideo` —— 3/5 个有
-- `Make Image Batch` —— 1/5 个有
+- `SimpleMath+` —— 4/6 个有
+- `LoadImage` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `Save Text File` —— 1/6 个有
+- `easy ifElse` —— 1/6 个有
 
 ## 典型参数
 

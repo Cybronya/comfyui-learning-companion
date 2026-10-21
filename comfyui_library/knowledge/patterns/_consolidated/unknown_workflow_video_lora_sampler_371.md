@@ -2,60 +2,72 @@
 name: unknown_workflow_video_lora_sampler_371
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.941
-common_nodes: [CLIPLoader, CLIPTextEncode, JWInteger, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+level: moderate
+coverage: 0.632167
+common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2056552561905332226.json, 视频生成/图生视频/1996104036933910529.json, 视频生成/图生视频/1996401587960561665.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1949877835465932801.json, 视频生成/图生视频/1950344638181892097.json, 视频生成/图生视频/1982023168992919554.json]
+members: [视频生成/图生视频/1957318001500549121.json, 视频生成/图生视频/1957996750323822593.json, 视频生成/图生视频/1954008121176051713.json, 视频生成/图生视频/1955648318090067969.json, 视频生成/图生视频/1955903499915677697.json, 视频生成/文生视频/1957329600441413634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_371
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2056552561905332226.json、视频生成/图生视频/1996104036933910529.json、视频生成/图生视频/1996401587960561665.json、视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1949877835465932801.json、视频生成/图生视频/1950344638181892097.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1957318001500549121.json、视频生成/图生视频/1957996750323822593.json、视频生成/图生视频/1954008121176051713.json、视频生成/图生视频/1955648318090067969.json、视频生成/图生视频/1955903499915677697.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `JWInteger`
-- `KSamplerAdvanced`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 5/6 个有
-- `LayerUtility: PurgeVRAM` —— 4/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `ComfyMathExpression` —— 1/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
+- `DepthAnything_V2` —— 5/6 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 5/6 个有
+- `GetNode` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `AIO_Preprocessor` —— 4/6 个有
+- `WanVideoTorchCompileSettings` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `ImpactInt` —— 3/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `GetImageRangeFromBatch` —— 2/6 个有
+- `ImageBlend` —— 2/6 个有
+- `RHHiddenNodes` —— 2/6 个有
+- `easy anythingIndexSwitch` —— 2/6 个有
+- `ImageBlur` —— 1/6 个有
 - `Int` —— 1/6 个有
-- `LoadImagesFromURL` —— 1/6 个有
-- `Primitive integer [Crystools]` —— 1/6 个有
-- `Text` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `VHS_VideoInfoLoaded` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
+- `workflow>文本处理` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 83% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 6 | 88% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | lcm | - | 6 | 83% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 83%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 88%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，6 个样本，一致性 83%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

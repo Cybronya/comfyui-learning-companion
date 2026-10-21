@@ -3,33 +3,34 @@ name: unknown_workflow_generic_713
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.667
+common_nodes: [ImageScaleToMaxDimension, LoadImage, SaveImage, f754a936-daaf-4b6e-9658-41fdc54d301d]
 problems: []
 missing: []
-members: [视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json, 视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json]
+members: [comfyui-workflow-templates-json/image_qwen_image_layered.json, comfyui-workflow-templates-json/image_qwen_image_layered_control.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_713
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json、视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image_layered.json、comfyui-workflow-templates-json/image_qwen_image_layered_control.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
+- `ImageScaleToMaxDimension`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
+- `f754a936-daaf-4b6e-9658-41fdc54d301d`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30PrimeReferenceToVideo` —— 1/2 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/2 个有
+- `1ea4fa01-a81b-4420-a03c-f60019e69a92` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

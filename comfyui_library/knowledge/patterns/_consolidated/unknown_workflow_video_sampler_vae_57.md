@@ -3,69 +3,66 @@ name: unknown_workflow_video_sampler_vae_57
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.71825
-common_nodes: [GetNode, Int, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
+coverage: 0.797
+common_nodes: [DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, ImageFromBatch+, ImageMirror, ImageRepeat, ImageResizeKJ, ImpactSwitch, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, OpenposePreprocessor, VHS_LoadVideo, VHS_MergeImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1929028780692770818.json, 视频生成/图生视频/1929901376015601665.json, 视频生成/图生视频/1925152993048469505.json, 视频生成/图生视频/1938242650158071810.json, 视频生成/图生视频/1948012879831269378.json, 视频生成/图生视频/2041108387424899074.json, 视频生成/图生视频/1959825451453722625.json, 视频生成/图生视频/1957430449545080834.json]
+members: [视频生成/图生视频/1933785528938450945.json, 视频生成/图生视频/1933557560941395970.json, 视频生成/图生视频/1924678755254456322.json, 视频生成/图生视频/1922710757258006529.json, 视频生成/图生视频/1907443729060532226.json, 视频生成/图生视频/1933759507254435841.json, 视频生成/图生视频/1933708885247352833.json, 视频生成/图生视频/1937848032371064834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_57
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1929028780692770818.json、视频生成/图生视频/1929901376015601665.json、视频生成/图生视频/1925152993048469505.json、视频生成/图生视频/1938242650158071810.json、视频生成/图生视频/1948012879831269378.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1933785528938450945.json、视频生成/图生视频/1933557560941395970.json、视频生成/图生视频/1924678755254456322.json、视频生成/图生视频/1922710757258006529.json、视频生成/图生视频/1907443729060532226.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `GetNode`
-- `Int`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `ImageFromBatch+`
+- `ImageMirror`
+- `ImageRepeat`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `OpenposePreprocessor`
+- `VHS_LoadVideo`
+- `VHS_MergeImages`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 7/8 个有
-- `RHHiddenNodes` —— 7/8 个有
-- `JjkText` —— 6/8 个有
-- `ColorMatch` —— 5/8 个有
-- `GetImageSizeAndCount` —— 5/8 个有
-- `WanVideoLoraSelect` —— 5/8 个有
-- `WanVideoVACEStartToEndFrame` —— 5/8 个有
-- `AIO_Preprocessor` —— 4/8 个有
-- `VHS_LoadVideo` —— 4/8 个有
-- `DepthAnything_V2` —— 3/8 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/8 个有
-- `ImageBlur` —— 3/8 个有
-- `RH_Captioner` —— 3/8 个有
-- `RH_Prompter` —— 3/8 个有
-- `VHS_VideoInfoLoaded` —— 3/8 个有
-- `WanVideoExperimentalArgs` —— 3/8 个有
-- `WanVideoSLG` —— 3/8 个有
-- `CM_IntBinaryOperation` —— 2/8 个有
-- `Florence2ModelLoader` —— 2/8 个有
-- `Florence2Run` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `JWInteger` —— 2/8 个有
-- `LayerColor: ColorAdapter` —— 1/8 个有
-- `LoadAudio` —— 1/8 个有
-- `ZipNode` —— 1/8 个有
+- `PreviewImage` —— 7/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `WanVideoTeaCache` —— 6/8 个有
+- `DF_Integer` —— 5/8 个有
+- `CR Prompt Text` —— 4/8 个有
+- `Note Plus (mtb)` —— 4/8 个有
+- `WanVideoVACEModelSelect` —— 3/8 个有
+- `Blend` —— 2/8 个有
+- `Note _O` —— 2/8 个有
+- `WanVideoLoraSelect` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `ImageBlend` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

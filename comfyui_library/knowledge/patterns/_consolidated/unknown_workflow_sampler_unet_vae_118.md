@@ -1,66 +1,67 @@
 ---
 name: unknown_workflow_sampler_unet_vae_118
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.886833
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.780571
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3图生视频&首尾帧 量化加速版_2084545071873093633.json, 视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2101850161256423426.json, 视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2104052395767582721.json, 视频生成/图生视频/fastvideo_fasth3_图生视频-口播5秒_2101848980366913538.json, 视频生成/图生视频/fastvideo_fasth3_图生视频_2101837609382277121.json, 视频生成/图生视频/海螺H3八步极速生成文图首尾帧视频3合一工作流_2088515866974576641.json]
+members: [视频生成/文生视频/58.MiniMax H3 全能参考加速极简_2087136892977504257.json, 视频生成/文生视频/MiniMax H3+lightx2v 4步加速全能参考工作流_2086324132442107906.json, 视频生成/文生视频/MiniMax H3多参2倍速（开源版）_2084599726879629314.json, 视频生成/文生视频/Minimax_h3官方多参视频生成工作流_2084688064726781954.json, 视频生成/文生视频/minimaxH3多参考视频工作流（超级加速版）_2080928622717784066.json, 视频生成/文生视频/minimaxH3数字人唱歌_2095054420571676674.json, 视频生成/文生视频/minimaxH3数字人工作流（音频驱动）_2094755368487444482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_118
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3图生视频&首尾帧 量化加速版_2084545071873093633.json、视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2101850161256423426.json、视频生成/图生视频/fastvideo_fasth3_图生视频-口播10秒_2104052395767582721.json、视频生成/图生视频/fastvideo_fasth3_图生视频-口播5秒_2101848980366913538.json、视频生成/图生视频/fastvideo_fasth3_图生视频_2101837609382277121.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/58.MiniMax H3 全能参考加速极简_2087136892977504257.json、视频生成/文生视频/MiniMax H3+lightx2v 4步加速全能参考工作流_2086324132442107906.json、视频生成/文生视频/MiniMax H3多参2倍速（开源版）_2084599726879629314.json、视频生成/文生视频/Minimax_h3官方多参视频生成工作流_2084688064726781954.json、视频生成/文生视频/minimaxH3多参考视频工作流（超级加速版）_2080928622717784066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `CreateVideo`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockSparseAttention` —— 4/6 个有
-- `MiniMaxH3SigmaShift` —— 4/6 个有
-- `ModelAttentionBackend` —— 4/6 个有
-- `AnyBooleanSwitch` —— 2/6 个有
-- `EmptyImage` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `PrimitiveBoolean` —— 2/6 个有
-- `CM_BoolBinaryOperation` —— 1/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `ImageResizeKJv2` —— 1/6 个有
-- `ImpactConditionalBranch` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RTXVideoSuperResolution` —— 1/6 个有
-- `ResolutionSelector` —— 1/6 个有
-- `Switch image [Crystools]` —— 1/6 个有
-- `easy float` —— 1/6 个有
+- `BasicScheduler` —— 6/7 个有
+- `KSamplerSelect` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
+- `VAEDecodeAudio` —— 5/7 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `AudioCrop` —— 3/7 个有
+- `GetNode` —— 3/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `ModelPreviewOverrideKJ` —— 3/7 个有
+- `SetNode` —— 3/7 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/7 个有
+- `SoundFlow_GetLength` —— 2/7 个有
+- `SpectrumSDXL` —— 2/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `PreviewAudio` —— 1/7 个有
+- `TextInput` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

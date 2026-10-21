@@ -3,34 +3,33 @@ name: unknown_workflow_generic_510
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [CR Prompt Text, IndexTTSRun, LoadAudio, SaveAudio]
+coverage: 0.944333
+common_nodes: [RH_Midjourney, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index-TTS1.5新版语音克隆，急速体验_1924716212561825794.json, 音频生成/音频生成/Index-TTS双人对话新版语音克隆_1954819007321825282.json, 音频生成/音频生成/IndexTTS_V1.5语音迁移_1926946067093311490.json]
+members: [图片生成/文生图/1940837882426978306.json, 图片生成/文生图/1991833154164158466.json, 图片生成/文生图/MJ基础图生图工作流_2070334611179266050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_510
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Index-TTS1.5新版语音克隆，急速体验_1924716212561825794.json、音频生成/音频生成/Index-TTS双人对话新版语音克隆_1954819007321825282.json、音频生成/音频生成/IndexTTS_V1.5语音迁移_1926946067093311490.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1940837882426978306.json、图片生成/文生图/1991833154164158466.json、图片生成/文生图/MJ基础图生图工作流_2070334611179266050.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTSRun`
-- `LoadAudio`
-- `SaveAudio`
+- `RH_Midjourney`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
-- `Save_Audio` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `JjkText` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

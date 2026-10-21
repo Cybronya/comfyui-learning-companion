@@ -1,45 +1,53 @@
 ---
 name: unknown_workflow_sampler_unet_vae_174
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [BasicGuider, CLIPLoader, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
+coverage: 0.96325
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜首尾帧视频_2098317979074260993.json, 视频生成/文生视频/MiniMax H3｜PDD 8步｜参考生视频_2098326349755805698.json, 视频生成/文生视频/MiniMax H3｜PDD 8步｜首尾帧视频_2098317966491340801.json]
+members: [视频生成/图生视频/Minimax H3首尾帧视频生成_2085198810418077698.json, 视频生成/图生视频/Minimax+H3_Native_vs_DMAD文生视频_2106242276044394498.json, 视频生成/图生视频/四步极速文生视频stableyogi-h3-pdmd-4step_2108569415804608514.json, 视频生成/文生视频/Minimax+H3_Native_vs_DMAD文生视频_2106242276044394498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜首尾帧视频_2098317979074260993.json、视频生成/文生视频/MiniMax H3｜PDD 8步｜参考生视频_2098326349755805698.json、视频生成/文生视频/MiniMax H3｜PDD 8步｜首尾帧视频_2098317966491340801.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax H3首尾帧视频生成_2085198810418077698.json、视频生成/图生视频/Minimax+H3_Native_vs_DMAD文生视频_2106242276044394498.json、视频生成/图生视频/四步极速文生视频stableyogi-h3-pdmd-4step_2108569415804608514.json、视频生成/文生视频/Minimax+H3_Native_vs_DMAD文生视频_2106242276044394498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+- `CreateVideo`
+- `KSamplerSelect`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3SigmaShift`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3PDD8StepSetupT8Advanced` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `CreateVideo` —— 1/3 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/3 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `AddLabel` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `LTXVSeparateAVLatent` —— 2/4 个有
+- `VHS_VideoCombine` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
 
 ## 典型参数
 

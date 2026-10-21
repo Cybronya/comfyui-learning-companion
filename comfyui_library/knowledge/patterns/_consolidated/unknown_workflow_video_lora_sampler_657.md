@@ -3,86 +3,64 @@ name: unknown_workflow_video_lora_sampler_657
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.714667
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, INTConstant, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, PointsEditor, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.675667
+common_nodes: [CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, RH_Captioner, RH_Prompter, SetNode, TextCombinerTwo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969957827202719745.json, 视频生成/图生视频/2000210160024944641.json, 视频生成/图生视频/1976173547762647041.json]
+members: [视频生成/图生视频/1950019769790545922.json, 视频生成/图生视频/1950922029769891841.json, 视频生成/图生视频/1956166218438901761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_657
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1969957827202719745.json、视频生成/图生视频/2000210160024944641.json、视频生成/图生视频/1976173547762647041.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1950019769790545922.json、视频生成/图生视频/1950922029769891841.json、视频生成/图生视频/1956166218438901761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetImageSizeAndCount`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
 - `INTConstant`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
+- `Int`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `Sam2Segmentation`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `RH_Captioner`
+- `RH_Prompter`
+- `SetNode`
+- `TextCombinerTwo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCropProcessUTK` —— 2/3 个有
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `WanVideoContextOptions` —— 2/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `DilateErodeMask` —— 1/3 个有
-- `Fast Bypasser (rgthree)` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Float` —— 1/3 个有
-- `GrowMask` —— 1/3 个有
-- `GrowMaskWithBlur` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `Mask Invert` —— 1/3 个有
-- `MaskSmooth+` —— 1/3 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/3 个有
-- `OpenDWPose_JK` —— 1/3 个有
-- `OpenposePreprocessor` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `Seed_` —— 1/3 个有
-- `Switch any [Crystools]` —— 1/3 个有
-- `ToFloat` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `JjkText` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `LayerColor: Brightness & Contrast` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `Primitive integer [Crystools]` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `TextBox` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 

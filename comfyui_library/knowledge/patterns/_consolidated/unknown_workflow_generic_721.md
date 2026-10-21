@@ -3,36 +3,32 @@ name: unknown_workflow_generic_721
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4595
-common_nodes: [Comfly_Googel_Veo3, LoadImage, RH_Translator, SaveVideo, easy showAnything]
+coverage: 0.6335
+common_nodes: [4c314f31-ecda-4b08-ae98-faaba1bf613f, ResolutionSelector, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2000283848959291394.json, 视频生成/图生视频/2000853660760408065.json]
+members: [comfyui-workflow-templates-json/video_fastvideo_fasth3_t2v.json, comfyui-workflow-templates-json/video_minimax_h3_i2v_continuation.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_721
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2000283848959291394.json、视频生成/图生视频/2000853660760408065.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/video_fastvideo_fasth3_t2v.json、comfyui-workflow-templates-json/video_minimax_h3_i2v_continuation.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Comfly_Googel_Veo3`
-- `LoadImage`
-- `RH_Translator`
+- `4c314f31-ecda-4b08-ae98-faaba1bf613f`
+- `ResolutionSelector`
 - `SaveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `JjkText` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

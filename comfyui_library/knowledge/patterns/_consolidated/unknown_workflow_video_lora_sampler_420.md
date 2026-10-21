@@ -3,67 +3,72 @@ name: unknown_workflow_video_lora_sampler_420
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.3582
-common_nodes: [BOOLConstant, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyNumberConvert, GetNode, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, PrimitiveStringMultiline, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus TorchCompileSettings, WanAnimatePlus VAELoader]
+coverage: 0.8386
+common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, Display Int (rgthree), INTConstant, ImageConcanate, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewImage, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/2081964333583654914.json, 视频生成/图生视频/2078736579782340610.json, 视频生成/图生视频/2079575491580878850.json, 视频生成/图生视频/2075772380282187777.json, 视频生成/图生视频/2074416012107272194.json]
+members: [视频生成/图生视频/1961914192292986881.json, 视频生成/图生视频/1962093681132113922.json, 视频生成/图生视频/1963163594022170625.json, 视频生成/图生视频/1962043447869902849.json, 视频生成/图生视频/1964517302806921217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_420
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2081964333583654914.json、视频生成/图生视频/2078736579782340610.json、视频生成/图生视频/2079575491580878850.json、视频生成/图生视频/2075772380282187777.json、视频生成/图生视频/2074416012107272194.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1961914192292986881.json、视频生成/图生视频/1962093681132113922.json、视频生成/图生视频/1963163594022170625.json、视频生成/图生视频/1962043447869902849.json、视频生成/图生视频/1964517302806921217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：36%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BOOLConstant`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ComfyNumberConvert`
-- `GetNode`
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `DWPreprocessor`
+- `Display Int (rgthree)`
 - `INTConstant`
+- `ImageConcanate`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SetNode`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `ToInt`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus TorchCompileSettings`
-- `WanAnimatePlus VAELoader`
+- `WanVideoAddS2VEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `easy imageRemBg` —— 2/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `BiRefNet_Hugo` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `ImageBatchMulti` —— 1/5 个有
-- `RH_RhartImageG2ImageToImage` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
-- `VideoFrameSelector` —— 1/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/5 个有
+- `GIMMVFI_interpolate` —— 4/5 个有
+- `ImageFlip+` —— 4/5 个有
+- `DepthAnythingPreprocessor` —— 1/5 个有
+- `GetImageRangeFromBatch` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `ImageFromBatch+` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `WanVideoLoraSelect` —— 1/5 个有
 
 ## 典型参数
 

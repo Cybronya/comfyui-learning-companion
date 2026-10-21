@@ -3,44 +3,35 @@ name: unknown_workflow_sampler_22
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.78
-common_nodes: [Fast Groups Muter (rgthree), HeartMuLa_Generate, ImpactSwitch, Int, LoadAudio, MultiLineLyrics, MultiLinePromptACES, RHHiddenNodes, RH_Suno_Custom, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2, Text Find and Replace, TextBox, Textbox, WujiCleaner]
+coverage: 0.933333
+common_nodes: [LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json]
+members: [视频生成/图生视频/2018226394521673729.json, 视频生成/图生视频/2017069831840866305.json, 视频生成/图生视频/2017593075475947522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2018226394521673729.json、视频生成/图生视频/2017069831840866305.json、视频生成/图生视频/2017593075475947522.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `HeartMuLa_Generate`
-- `ImpactSwitch`
-- `Int`
-- `LoadAudio`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `RHHiddenNodes`
-- `RH_Suno_Custom`
-- `SaveAudio`
-- `SongGeneration_Loader`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
-- `Text Find and Replace`
-- `TextBox`
-- `Textbox`
-- `WujiCleaner`
+- `LoadImage`
+- `RunningHub_MOVA_Loader`
+- `RunningHub_MOVA_Sampler`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

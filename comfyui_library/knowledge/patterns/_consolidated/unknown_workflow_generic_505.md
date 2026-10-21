@@ -3,31 +3,33 @@ name: unknown_workflow_generic_505
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [HeartMuLa_Generate, SaveAudioMP3]
+coverage: 0.698667
+common_nodes: [LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HearMula_Generate_Music_2014354379901509633.json, 音频生成/音频生成/HeartMuLa Music音乐生成工作流_2015069556594712578.json, 音频生成/音频生成/HeartMula 超长音频生成_2014672277853442049.json]
+members: [图片生成/图生图/2102213958852767746.json, 图片生成/图生图/六种图像后期处理技能（G-2.5)_2107253830739128321.json, 图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_505
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HearMula_Generate_Music_2014354379901509633.json、音频生成/音频生成/HeartMuLa Music音乐生成工作流_2015069556594712578.json、音频生成/音频生成/HeartMula 超长音频生成_2014672277853442049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2102213958852767746.json、图片生成/图生图/六种图像后期处理技能（G-2.5)_2107253830739128321.json、图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudioMP3`
+- `LoadImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/3 个有
+- `JjkText` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

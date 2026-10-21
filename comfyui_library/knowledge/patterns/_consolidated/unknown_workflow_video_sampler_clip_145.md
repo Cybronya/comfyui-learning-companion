@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_clip_145
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.93175
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJ, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoEnhanceAVideoKJ, WanVideoTeaCacheKJ]
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler]
 problems: []
 missing: []
-members: [视频生成/图生视频/1902677106516733954.json, 视频生成/图生视频/1911728190891720705.json, 视频生成/图生视频/1912684310967611393.json, 视频生成/图生视频/1912114565579243521.json]
+members: [视频生成/图生视频/1997495774311288833.json, 视频生成/图生视频/2042064878357192705.json, 视频生成/图生视频/2044581787422171137.json, 视频生成/图生视频/1991489991482286081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_145
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1902677106516733954.json、视频生成/图生视频/1911728190891720705.json、视频生成/图生视频/1912684310967611393.json、视频生成/图生视频/1912114565579243521.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1997495774311288833.json、视频生成/图生视频/2042064878357192705.json、视频生成/图生视频/2044581787422171137.json、视频生成/图生视频/1991489991482286081.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
@@ -27,40 +27,39 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `ImageResizeKJ`
-- `KSampler`
 - `LoadImage`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoEnhanceAVideoKJ`
-- `WanVideoTeaCacheKJ`
+- `WanMoeKSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 3/4 个有
-- `SkipLayerGuidanceWanVideo` —— 3/4 个有
-- `TorchCompileModelWanVideo` —— 3/4 个有
-- `WanFunInpaintToVideo` —— 3/4 个有
-- `CFGZeroStarAndInit` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PatchModelPatcherOrder` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `StringConstantMultiline` —— 2/4 个有
-- `ImpactInt` —— 1/4 个有
-- `WanImageToVideo` —— 1/4 个有
+- `Int` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `WanFirstLastFrameToVideo` —— 2/4 个有
+- `WanImageToVideo` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `ImageResize+` —— 1/4 个有
+- `ModelSamplingSD3` —— 1/4 个有
+- `RIFE VFI` —— 1/4 个有
+- `easy getNode` —— 1/4 个有
+- `easy setNode` —— 1/4 个有
+- `wanBlockSwap` —— 1/4 个有
+- `wanBlock_Swap` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 30 | 4 | 80% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | fixed | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 4.5 | 3 - 8 | 4 | 58% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | 1 | 1 - 1 | 4 | 100% |
+| 重绘幅度 | euler_ancestral | - | 4 | 100% |
 
 ## 常见问题
 
@@ -68,8 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 30，4 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 3 - 8，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler_ancestral，4 个样本，一致性 100%

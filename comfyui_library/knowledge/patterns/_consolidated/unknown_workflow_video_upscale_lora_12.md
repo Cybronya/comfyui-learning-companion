@@ -3,59 +3,53 @@ name: unknown_workflow_video_upscale_lora_12
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.87975
-common_nodes: [GetImageRangeFromBatch, ImageResizeKJ, ImageUpscaleWithModel, ImpactFloat, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader, easy int]
+coverage: 1
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleImageWithModelIfNeed, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoSEDecode, WanVideoSEImageClipEncode, WanVideoSEModelLoader, WanVideoSESampler, WanVideoSLG, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1942175633449578497.json, 视频生成/图生视频/1933959648057675777.json, 视频生成/图生视频/1935194153187999746.json, 视频生成/图生视频/1934811553910693889.json]
+members: [视频生成/图生视频/1918858509570473986.json, 视频生成/图生视频/1914665456270278658.json, 视频生成/图生视频/1914595453097209857.json, 视频生成/图生视频/1918851032598642689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1942175633449578497.json、视频生成/图生视频/1933959648057675777.json、视频生成/图生视频/1935194153187999746.json、视频生成/图生视频/1934811553910693889.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1918858509570473986.json、视频生成/图生视频/1914665456270278658.json、视频生成/图生视频/1914595453097209857.json、视频生成/图生视频/1918851032598642689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `ImageResizeKJ`
-- `ImageUpscaleWithModel`
-- `ImpactFloat`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `RIFE VFI`
+- `UpscaleImageWithModelIfNeed`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoBlockSwap`
+- `WanVideoEnhanceAVideo`
 - `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSEDecode`
+- `WanVideoSEImageClipEncode`
+- `WanVideoSEModelLoader`
+- `WanVideoSESampler`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `WanVideoBlockSwap` —— 3/4 个有
-- `WanVideoApplyNAG` —— 2/4 个有
-- `WanVideoMagCache` —— 2/4 个有
-- `WanVideoTextEncode` —— 2/4 个有
-- `WanVideoTextEncodeSingle` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `Display Any (rgthree)` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `Text Find and Replace` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoExperimentalArgs` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
+- `DownloadAndLoadFlorence2Model` —— 3/4 个有
+- `Florence2Run` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `StringFunction|pysssss` —— 3/4 个有
+- `ImageResize+` —— 1/4 个有
 
 ## 典型参数
 

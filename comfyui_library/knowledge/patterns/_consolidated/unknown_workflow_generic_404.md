@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_404
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.778
-common_nodes: [GetImageSize, ImageCompare, LoadImage, ResizeImageMaskNode]
+coverage: 0.5585
+common_nodes: [LoadImage, LoadVideo, RH_AlibabaWan27VideoEdit, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_topaz_image_enhance.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json]
+members: [视频生成/图生视频/2046214657328816129.json, 视频生成/图生视频/2082280794994864129.json, 视频生成/图生视频/2061645895619407873.json, 视频生成/图生视频/视频换脸 Video Face Swap_2096415335573446658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_404
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_topaz_image_enhance.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2046214657328816129.json、视频生成/图生视频/2082280794994864129.json、视频生成/图生视频/2061645895619407873.json、视频生成/图生视频/视频换脸 Video Face Swap_2096415335573446658.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSize`
-- `ImageCompare`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `ResizeImageMaskNode`
+- `LoadVideo`
+- `RH_AlibabaWan27VideoEdit`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `fd5d0097-8a1d-4dc2-86f2-1d5869b3f0eb` —— 2/3 个有
-- `SaveImageAdvanced` —— 1/3 个有
-- `TopazImageEnhanceV2` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

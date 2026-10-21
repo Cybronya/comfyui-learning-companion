@@ -3,35 +3,32 @@ name: unknown_workflow_generic_497
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.622333
-common_nodes: [AudioOmni_LoadModel, CR Prompt Text, JWInteger, SaveAudioMP3]
+coverage: 0.644667
+common_nodes: [LoadImage, SaveVideo, b7c2d337-c38d-4c04-922b-2d638449d13e]
 problems: []
-missing: [AudioOmni_LoadModel, AudioOmni_TextToAudio, AudioOmni_TextToSpeech]
-members: [音频生成/音频生成/Audio-Omni文生纯音乐_2044266571333378050.json, 音频生成/音频生成/Audio-Omni文生语音TTS_2044270079424073729.json, 音频生成/音频生成/Audio-Omni纯音乐生成_2044351098529521665.json]
+missing: []
+members: [comfyui-workflow-templates-json/video_ltx2_i2v.json, comfyui-workflow-templates-json/video_ltx2_i2v_distilled.json, comfyui-workflow-templates-json/video_ltx2_i2v_lora.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_497
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Audio-Omni文生纯音乐_2044266571333378050.json、音频生成/音频生成/Audio-Omni文生语音TTS_2044270079424073729.json、音频生成/音频生成/Audio-Omni纯音乐生成_2044351098529521665.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_ltx2_i2v.json、comfyui-workflow-templates-json/video_ltx2_i2v_distilled.json、comfyui-workflow-templates-json/video_ltx2_i2v_lora.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioOmni_LoadModel`
-- `CR Prompt Text`
-- `JWInteger`
-- `SaveAudioMP3`
+- `LoadImage`
+- `SaveVideo`
+- `b7c2d337-c38d-4c04-922b-2d638449d13e`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioOmni_TextToAudio` —— 2/3 个有
-- `AudioOmni_TextToSpeech` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
 
 ## 典型参数
 
@@ -43,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：AudioOmni_LoadModel、AudioOmni_TextToAudio、AudioOmni_TextToSpeech
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_clip
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.377667
-common_nodes: [SaveImage, workflow>模型组, workflow>自定义采样器(高级)]
+coverage: 1
+common_nodes: [SaveImage, workflow>参数调整组, workflow>工作组（勿动）]
 problems: []
-missing: [workflow>模型组, workflow>自定义采样器(高级)]
-members: [图片生成/文生图/1913400012821463041.json, 图片生成/文生图/1913868017665568770.json, 图片生成/文生图/1915295742100180993.json]
+missing: []
+members: [图片生成/文生图/文生图-flux2_2089330922549235713.json, 图片生成/文生图/文生图-z_image_turbo_2089342247673360385.json, 图片生成/文生图/文生图-z_image_turbo_2098979784234721282.json, 数字人/数字人/文生图-z_image_turbo_2090930708234723330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1913400012821463041.json、图片生成/文生图/1913868017665568770.json、图片生成/文生图/1915295742100180993.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/文生图-flux2_2089330922549235713.json、图片生成/文生图/文生图-z_image_turbo_2089342247673360385.json、图片生成/文生图/文生图-z_image_turbo_2098979784234721282.json、数字人/数字人/文生图-z_image_turbo_2090930708234723330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `SaveImage`
-- `workflow>模型组`
-- `workflow>自定义采样器(高级)`
+- `workflow>参数调整组`
+- `workflow>工作组（勿动）`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
+- `CLIPTextEncode` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：workflow>模型组、workflow>自定义采样器(高级)
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

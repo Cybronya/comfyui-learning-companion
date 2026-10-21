@@ -3,36 +3,29 @@ name: unknown_workflow_generic_673
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.833
-common_nodes: [Fast Groups Muter (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 1
+common_nodes: [BriaRemoveVideoBackground, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json, 视频生成/图生视频/2060372799344173057.json]
+members: [comfyui-workflow-templates-json/api_bria_remove_video_background.json, comfyui-workflow-templates-json/utility-bria_remove_video_background.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_673
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json、视频生成/图生视频/2060372799344173057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_remove_video_background.json、comfyui-workflow-templates-json/utility-bria_remove_video_background.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_ViduImageToVideoQ3Pro` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `BriaRemoveVideoBackground`
+- `LoadVideo`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -3,68 +3,49 @@ name: unknown_workflow_video_upscale_lora_41
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4525
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, EmptyAudio, GetImage, If ANY execute A else B, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YuanAudioList, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextTrim, Yuan_H3Upscale3D, Yuan_MiniMaxH3Video, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy isNone, easy mathInt]
+coverage: 0.9085
+common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, TextInput_, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2089027291140681730.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.3（短剧版本直出1分钟）+全节点注释_2094057420535451650.json]
+members: [视频生成/图生视频/1909470636823949313.json, 视频生成/图生视频/1992837863268216833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_41
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2089027291140681730.json、视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.3（短剧版本直出1分钟）+全节点注释_2094057420535451650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1909470636823949313.json、视频生成/图生视频/1992837863268216833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
-- `ComfyMathExpression`
-- `EmptyAudio`
-- `GetImage`
-- `If ANY execute A else B`
-- `Int`
-- `KSamplerSelect`
+- `ImageUpscaleWithModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `TextInput_`
+- `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTJsonSwitch`
-- `YUAN_TXTPreviewContent`
-- `YuanAudioList`
-- `YuanAudioSplit`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_H3MotionContext`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_H3Upscale3D`
-- `Yuan_MiniMaxH3Video`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy isNone`
-- `easy mathInt`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy imageSize`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `Select Image Indices` —— 1/2 个有
 
 ## 典型参数
 

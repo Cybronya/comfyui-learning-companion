@@ -3,22 +3,22 @@ name: unknown_workflow_video_lora_sampler_860
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.795
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, Int, JjkText, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.765
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2014932478938587137.json, 视频生成/图生视频/2014737203347333121.json]
+members: [视频生成/图生视频/1986434223613636609.json, 视频生成/图生视频/2014737203347333121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_860
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2014932478938587137.json、视频生成/图生视频/2014737203347333121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1986434223613636609.json、视频生成/图生视频/2014737203347333121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
@@ -28,8 +28,6 @@ source: knowledge_consolidation
 - `GetNode`
 - `INTConstant`
 - `ImageResizeKJv2`
-- `Int`
-- `JjkText`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `SetNode`
@@ -47,19 +45,16 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
+- `CLIPLoader` —— 1/2 个有
+- `CLIPTextEncode` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `JWStringMultiline` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `Primitive integer [Crystools]` —— 1/2 个有
 - `RHHiddenNodes` —— 1/2 个有
-- `ThreeJSActionCombiner` —— 1/2 个有
-- `ThreeJSCameraAction` —— 1/2 个有
-- `ThreeJSCameraConfig` —— 1/2 个有
-- `ThreeJSEnvironment` —— 1/2 个有
-- `ThreeJSFigureAction` —— 1/2 个有
-- `ThreeJSFigureConfig` —— 1/2 个有
-- `ThreeJSRenderNode` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 - `VHS_LoadVideo` —— 1/2 个有
-- `WanVideoEncode` —— 1/2 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
-- `WanVideoUni3C_embeds` —— 1/2 个有
+- `WanVideoTextEmbedBridge` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,37 +3,33 @@ name: unknown_workflow_generic_865
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.843
-common_nodes: [LoadAudio, SaveAudioMP3, TDQwen3TTSCustomVoice, TDQwen3TTSModelLoader, TDQwen3TTSVoiceClone, TDQwen3TTSVoiceDesign]
+coverage: 1
+common_nodes: [LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【Supermate】 QWEN3 TTS TD节点工作流_2015819820255682561.json, 音频生成/音频生成/真人配音_Qwen3-TD-TTS_2036601489619161089.json]
+members: [视频生成/图生视频/1998962356308824066.json, 视频生成/文生视频/批量视频生成_2001610943249412097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_865
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【Supermate】 QWEN3 TTS TD节点工作流_2015819820255682561.json、音频生成/音频生成/真人配音_Qwen3-TD-TTS_2036601489619161089.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1998962356308824066.json、视频生成/文生视频/批量视频生成_2001610943249412097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudioMP3`
-- `TDQwen3TTSCustomVoice`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceClone`
-- `TDQwen3TTSVoiceDesign`
+- `LoadImage`
+- `RH_Sora2_I2V_Batch`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
+- `StringConstantMultiline` —— 1/2 个有
+- `TextBox3` —— 1/2 个有
 
 ## 典型参数
 

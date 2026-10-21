@@ -1,64 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_200
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.6288
-common_nodes: [BasicGuider, BasicScheduler, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEEncode, VAEEncodeAudio, VHS_VideoCombine]
+coverage: 0.811444
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/water-MiniMax H3 15S视频工作流_2094329733709385729.json, 视频生成/文生视频/MINImax h3_2091119331596922882.json, 视频生成/文生视频/MiniMax H3 Easy 极简工作台（多参）_2091444651705331713.json, 视频生成/文生视频/MinimaxH3 奇妙地图旅游 RH版本_2088645501947301889.json, 视频生成/文生视频/MinimaxH3 奇妙地图旅游_双人版 RH版本_2090144918969864194.json, 视频生成/文生视频/MinimaxH3 最优二采多合一工作流  林耀_2091937209892036609.json, 视频生成/文生视频/MinimaxH3 极简版风格_优化版_多合一工作流_2088650571120209921.json, 视频生成/文生视频/MinimaxH3 极简版风格_优化版_多合一工作流_2089082465007783937.json, 视频生成/文生视频/MinimaxH3全能参考V3极简版（人脸增强8步二次采样1080p）_2087773102355869698.json, 视频生成/文生视频/MinimaxH3全能参考V5电影画质去油版1_2089032793069277185.json]
+missing: [CR Prompt Text]
+members: [图片生成/文生图/1970453209825374209.json, 视频生成/图生视频/2047149486551605249.json, 视频生成/图生视频/2047141901102489601.json, 视频生成/图生视频/2051961839407386625.json, 视频生成/图生视频/2048682075724718081.json, 视频生成/图生视频/2054096337670557697.json, 视频生成/图生视频/2060540846868619266.json, 视频生成/图生视频/2062041921597562882.json, 视频生成/图生视频/2054799806060605442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_200
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/water-MiniMax H3 15S视频工作流_2094329733709385729.json、视频生成/文生视频/MINImax h3_2091119331596922882.json、视频生成/文生视频/MiniMax H3 Easy 极简工作台（多参）_2091444651705331713.json、视频生成/文生视频/MinimaxH3 奇妙地图旅游 RH版本_2088645501947301889.json、视频生成/文生视频/MinimaxH3 奇妙地图旅游_双人版 RH版本_2090144918969864194.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1970453209825374209.json、视频生成/图生视频/2047149486551605249.json、视频生成/图生视频/2047141901102489601.json、视频生成/图生视频/2051961839407386625.json、视频生成/图生视频/2048682075724718081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEEncode`
-- `VAEEncodeAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 9/10 个有
-- `ResolutionSelector` —— 9/10 个有
-- `SetNode` —— 9/10 个有
-- `LoadVideo` —— 8/10 个有
-- `VAEDecodeAudio` —— 8/10 个有
-- `easy cleanGpuUsed` —— 8/10 个有
-- `Text` —— 5/10 个有
-- `LoadVideoNode` —— 4/10 个有
-- `HAIGC_VideoLoader` —— 2/10 个有
-- `MiniMaxH3AVDecodeT8` —— 2/10 个有
-- `easy clearCacheAll` —— 2/10 个有
-- `忽略多组孤海` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `GetImageSize` —— 1/10 个有
-- `ModelPreviewOverrideKJ` —— 1/10 个有
-- `TTResolutionSelector` —— 1/10 个有
+- `FB_Qwen3TTSVoiceClone` —— 8/9 个有
+- `GetImageSize` —— 8/9 个有
+- `ResizeImagesByLongerEdge` —— 8/9 个有
+- `Text` —— 8/9 个有
+- `WanVideoPassImagesFromSamples` —— 8/9 个有
+- `GetNode` —— 5/9 个有
+- `PreviewAny` —— 5/9 个有
+- `SetNode` —— 5/9 个有
+- `WanVideoTorchCompileSettings` —— 5/9 个有
+- `Wav2VecModelLoader` —— 5/9 个有
+- `PreviewAudio` —— 4/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
+- `GIMMVFI_interpolate` —— 1/9 个有
+- `HAIGC_VideoSubtitleTimestampPro` —— 1/9 个有
+- `ImageUpscaleWithModel` —— 1/9 个有
+- `IndexTTS2Run` —— 1/9 个有
+- `SaveAudio` —— 1/9 个有
+- `UpscaleModelLoader` —— 1/9 个有
+- `WanVideoDecode` —— 1/9 个有
+- `ZML_TextInput` —— 1/9 个有
 
 ## 典型参数
 
@@ -70,4 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text

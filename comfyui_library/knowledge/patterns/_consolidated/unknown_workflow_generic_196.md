@@ -3,40 +3,31 @@ name: unknown_workflow_generic_196
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.887667
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.9445
+common_nodes: [RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 一键声音克隆_2067135176295145473.json, 音频生成/音频生成/Qwen3+TTS+声音克隆 KTN_2017793326098948097.json, 音频生成/音频生成/Qwen3+TTS+声音克隆 优化版本_2086006617899884546.json, 音频生成/音频生成/Qwen3+TTS+声音克隆_2016062956731113474.json, 音频生成/音频生成/Qwen3TTS（文本分为3段）_2033793004783276034.json, 音频生成/音频生成/千问语音合成（文本分段）_2032834024103743490.json]
+members: [图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json, 图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json, 图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json, 视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json, 视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json, 视频生成/文生视频/文生视频 Seedance2.0 Mini_2075568851261153282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_196
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Qwen3 一键声音克隆_2067135176295145473.json、音频生成/音频生成/Qwen3+TTS+声音克隆 KTN_2017793326098948097.json、音频生成/音频生成/Qwen3+TTS+声音克隆 优化版本_2086006617899884546.json、音频生成/音频生成/Qwen3+TTS+声音克隆_2016062956731113474.json、音频生成/音频生成/Qwen3TTS（文本分为3段）_2033793004783276034.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json、图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json、图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json、视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json、视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `RH_RhartVideoSparkvideo20MiniTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 5/6 个有
-- `CR Text` —— 3/6 个有
-- `PreviewAudio` —— 2/6 个有
-- `SoundFlow_Concatenator` —— 2/6 个有
-- `SynVowTextSplitter` —— 2/6 个有
-- `TextPreview` —— 2/6 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 

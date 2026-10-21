@@ -3,34 +3,32 @@ name: unknown_workflow_generic_482
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.65
-common_nodes: [RH_Wan26_T2V, SaveVideo]
+coverage: 0.85
+common_nodes: [Load3D, SaveGLB]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan 2.6 文生视频 15秒1080P_2000813490891784193.json, 视频生成/文生视频/Wan2.6- (文生视频10-15秒)，用嘴创作视频、TVC、电影，音画同步!_2000788643021193217.json, 视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json]
+members: [comfyui-workflow-templates-json/api_hunyuan3d_model2uv.json, comfyui-workflow-templates-json/api_hunyuan3d_retopo_uv.json, comfyui-workflow-templates-json/api_hunyuan3d_smart_topology.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_482
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan 2.6 文生视频 15秒1080P_2000813490891784193.json、视频生成/文生视频/Wan2.6- (文生视频10-15秒)，用嘴创作视频、TVC、电影，音画同步!_2000788643021193217.json、视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_hunyuan3d_model2uv.json、comfyui-workflow-templates-json/api_hunyuan3d_retopo_uv.json、comfyui-workflow-templates-json/api_hunyuan3d_smart_topology.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_Wan26_T2V`
-- `SaveVideo`
+- `Load3D`
+- `SaveGLB`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `RHHiddenNodes` —— 1/3 个有
+- `TencentModelTo3DUVNode` —— 2/3 个有
+- `TencentSmartTopologyNode` —— 2/3 个有
 
 ## 典型参数
 

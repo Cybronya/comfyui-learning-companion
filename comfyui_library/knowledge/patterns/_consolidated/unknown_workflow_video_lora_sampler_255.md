@@ -3,73 +3,78 @@ name: unknown_workflow_video_lora_sampler_255
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.678375
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, INTConstant, Int, LayerUtility: PurgeVRAM V2, LoadImage, SetNode, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.594875
+common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), GetNode, Int, JjkText, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RH_Utils, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/2030683109536043010.json, 视频生成/图生视频/2007757058510168066.json, 视频生成/图生视频/2000895108826398721.json, 视频生成/图生视频/1999108736645988353.json, 视频生成/图生视频/2013783129579851778.json, 视频生成/图生视频/2046453872159367169.json, 视频生成/图生视频/2032725036360011777.json, 视频生成/图生视频/1985123438920683522.json]
+members: [视频生成/图生视频/2071042945586909186.json, 视频生成/图生视频/2068617926189600770.json, 视频生成/图生视频/2067556103998763009.json, 视频生成/图生视频/2067570521318969346.json, 视频生成/图生视频/2067587703197224961.json, 视频生成/图生视频/2066087123450683394.json, 视频生成/图生视频/2072548210463301634.json, 视频生成/图生视频/2068587096239071233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_255
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2030683109536043010.json、视频生成/图生视频/2007757058510168066.json、视频生成/图生视频/2000895108826398721.json、视频生成/图生视频/1999108736645988353.json、视频生成/图生视频/2013783129579851778.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2071042945586909186.json、视频生成/图生视频/2068617926189600770.json、视频生成/图生视频/2067556103998763009.json、视频生成/图生视频/2067570521318969346.json、视频生成/图生视频/2067587703197224961.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageSizeAndCount`
+- `BasicScheduler`
+- `CFGGuider`
+- `CS-LTXGridDirector`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `INTConstant`
 - `Int`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `JjkText`
+- `KSamplerSelect`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Utils`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 7/8 个有
-- `WanVideoLoraSelectMulti` —— 7/8 个有
-- `DrawViTPose` —— 6/8 个有
-- `Florence2Run` —— 6/8 个有
-- `GroundingDinoModelLoader (segment anything2)` —— 6/8 个有
-- `OnnxDetectionModelLoader` —— 6/8 个有
-- `PoseAndFaceDetection` —— 6/8 个有
-- `RHHiddenNodes` —— 6/8 个有
-- `RH_Captioner` —— 6/8 个有
-- `SDPoseOODLoader` —— 6/8 个有
-- `SDPoseOODProcessor` —— 6/8 个有
-- `ShowText|pysssss` —— 6/8 个有
-- `Text Concatenate` —— 6/8 个有
-- `Wan_video_prompt_generator` —— 6/8 个有
-- `YOLOModelLoader` —— 6/8 个有
-- `ImageUpscaleWithModel` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
-- `UpscaleModelLoader` —— 4/8 个有
+- `LoadImage` —— 7/8 个有
+- `孤海注释` —— 7/8 个有
+- `MultiTextConcatenate` —— 4/8 个有
+- `TTResolutionSelector` —— 4/8 个有
+- `AILab_QwenVL_Advanced` —— 1/8 个有
+- `Bjornulf_TextToStringAndSeed` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `CR Text` —— 1/8 个有
+- `ConcatTextOfUtils` —— 1/8 个有
 - `FlashVSRNode` —— 1/8 个有
-- `easy anythingIndexSwitch` —— 1/8 个有
-- `easy rangeInt` —— 1/8 个有
+- `ImageLoader` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RH_RhartImageG2ImageToImage` —— 1/8 个有
+- `RegexReplace` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `SaveTextNode` —— 1/8 个有
+- `easy positive` —— 1/8 个有
+- `easy promptConcat` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
+- `kkRegexNode` —— 1/8 个有
 
 ## 典型参数
 

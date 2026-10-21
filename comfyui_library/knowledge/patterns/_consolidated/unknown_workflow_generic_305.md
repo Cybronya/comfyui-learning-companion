@@ -1,36 +1,43 @@
 ---
 name: unknown_workflow_generic_305
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8285
-common_nodes: [LoadImage, PrimitiveStringMultiline, RH_MinimaxHailuoH3ContextIrMultimodal, SaveVideo]
+coverage: 0.9076
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveImage, SaveVideo, ShowText|pysssss, StringFunction|pysssss]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100069057369300993.json, 视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100145638406184962.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100060414972350466.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100139807161798657.json]
+members: [视频生成/图生视频/2053026294388015105.json, 视频生成/图生视频/2053121416081485826.json, 视频生成/图生视频/2052944201704329218.json, 视频生成/图生视频/2052992780963729410.json, 视频生成/图生视频/2053679533211045889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_305
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100069057369300993.json、视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100145638406184962.json、视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100060414972350466.json、视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100139807161798657.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2053026294388015105.json、视频生成/图生视频/2053121416081485826.json、视频生成/图生视频/2052944201704329218.json、视频生成/图生视频/2052992780963729410.json、视频生成/图生视频/2053679533211045889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_MinimaxHailuoH3ContextIrMultimodal`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `SaveImage`
 - `SaveVideo`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3MaxImageToVideo` —— 2/4 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

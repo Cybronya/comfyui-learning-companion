@@ -3,35 +3,34 @@ name: unknown_workflow_generic_813
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3]
+coverage: 0.607
+common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2最强情感音色克隆配音生成_2072007287950102530.json, 音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆_2042450571629699074.json]
+members: [图片生成/文生图/（贞贞工坊API）全能图片2极速版文生图V1（同步转异步）_2028102546115534849.json, 视频生成/文生视频/（16宫格Kpop）全能图片G V2文生图（贞贞的AI工坊）_2049386903681638402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_813
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2最强情感音色克隆配音生成_2072007287950102530.json、音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆_2042450571629699074.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/（贞贞工坊API）全能图片2极速版文生图V1（同步转异步）_2028102546115534849.json、视频生成/文生视频/（16宫格Kpop）全能图片G V2文生图（贞贞的AI工坊）_2049386903681638402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
+- `Comfly_gemini_3_1_flash_image_edit_S2A` —— 1/2 个有
+- `Comfly_gpt_image_2_official_ratio` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,45 +1,51 @@
 ---
 name: unknown_workflow_video_lora_unet_2
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8285
-common_nodes: [CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3Director, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
+frequency: 6
+level: moderate
+coverage: 0.875667
+common_nodes: [CLIPLoader, LoraLoaderModelOnly, ModelAttentionBackend, ModelPreviewOverrideKJ, SaveVideo, UNETLoader, VAELoader, easy modelLoaderPack, easy multiTrackEditor, easy multitrackProject, easy multitrackProjectVideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 AIMixer DSW导演台_2094439901352775681.json, 视频生成/图生视频/MiniMax-H3导演台文生图生首尾帧多参多合一视频制作_2091539822958702594.json]
+members: [视频生成/图生视频/MiniMax H3 长视频导演台-EasyMedia - Motion Context V2_2107329550337265665.json, 视频生成/图生视频/MiniMax-H3开源-极简导演台_2097630312233783298.json, 视频生成/图生视频/MiniMaxH3-极简导演台_2095766324508184577.json, 视频生成/图生视频/Minmax H4多轨编辑器_2097344874348638209.json, 视频生成/图生视频/RH-MINIMAX+H3+Motion+Context_长视频生成工作流V2_2105583664313749506.json, 视频生成/文生视频/RH-MINIMAX+H3+Motion+Context 长视频生成工作流V2_2103474631964446722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 AIMixer DSW导演台_2094439901352775681.json、视频生成/图生视频/MiniMax-H3导演台文生图生首尾帧多参多合一视频制作_2091539822958702594.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 长视频导演台-EasyMedia - Motion Context V2_2107329550337265665.json、视频生成/图生视频/MiniMax-H3开源-极简导演台_2097630312233783298.json、视频生成/图生视频/MiniMaxH3-极简导演台_2095766324508184577.json、视频生成/图生视频/Minmax H4多轨编辑器_2097344874348638209.json、视频生成/图生视频/RH-MINIMAX+H3+Motion+Context_长视频生成工作流V2_2105583664313749506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `LoraLoaderModelOnly`
 - `ModelAttentionBackend`
-- `SolAttnMiniMax`
+- `ModelPreviewOverrideKJ`
+- `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
-- `VHS_VideoCombine`
+- `easy modelLoaderPack`
+- `easy multiTrackEditor`
+- `easy multitrackProject`
+- `easy multitrackProjectVideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `MiniMaxH3DirectorRefine` —— 1/2 个有
+- `BasicScheduler` —— 4/6 个有
+- `KSamplerSelect` —— 4/6 个有
+- `ManualSigmas` —— 3/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
+- `easy saveVideo` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `LoadImage` —— 2/6 个有
+- `CreateVideo` —— 1/6 个有
+- `GetVideoComponents` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
 
 ## 典型参数
 
@@ -51,4 +57,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

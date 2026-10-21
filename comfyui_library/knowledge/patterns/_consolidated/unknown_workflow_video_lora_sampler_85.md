@@ -3,90 +3,66 @@ name: unknown_workflow_video_lora_sampler_85
 type: Unknown Workflow
 frequency: 16
 level: moderate
-coverage: 0.767062
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ConditioningZeroOut, DF_Integer, Fast Groups Bypasser (rgthree), INTConstant, ImageResizeKJv2, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, RIFE VFI, SaveImage, SimpleMath+, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, easy promptLine, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, RIFE VFI, SimpleMath+, Text Multiline, easy cleanGpuUsed, easy clearCacheAll, CR Prompt Text, easy promptLine]
-members: [图片生成/图生图/2074200565537656834.json, 图片生成/文生图/1985901390851710978.json, 视频生成/图生视频/1978956982134673409.json, 视频生成/图生视频/1979224907714301953.json, 视频生成/图生视频/1979025771903750146.json, 视频生成/图生视频/2009447313822982146.json, 视频生成/图生视频/2049416361801158657.json, 视频生成/图生视频/2009894943287939073.json, 视频生成/图生视频/2064716899979718657.json, 视频生成/图生视频/1978804615628099585.json, 视频生成/图生视频/2009509747891904514.json, 视频生成/图生视频/图生图（自动分镜）电影级+视频生成_2074200565537656834.json, 视频生成/图生视频/2062483360198516737.json, 视频生成/图生视频/2056237842430480386.json, 视频生成/文生视频/1978956982134673409.json, 视频生成/文生视频/1979224907714301953.json]
+coverage: 0.924937
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+problems: []
+missing: []
+members: [视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json, 视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105262941045088257.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105264487803740162.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2092127662033686529.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2100150349800755202.json, 视频生成/图生视频/H3 极速导演台｜图生·首尾帧·多参一体化（8步双时钟）_2086807475478683649.json, 视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速 图生视频 -zip_2086179408511062017.json, 视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速+图生视频_2095722417233682433.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 4步极速版_2090795830067417090.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 8步加速版_2090756411985850369.json, 视频生成/图生视频/MiniMax H3开源 音频驱动数字人图生视频加速版_2092558393386033154.json, 视频生成/图生视频/指挥你的女朋友_2091798481236226050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_85
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/2074200565537656834.json、图片生成/文生图/1985901390851710978.json、视频生成/图生视频/1978956982134673409.json、视频生成/图生视频/1979224907714301953.json、视频生成/图生视频/1979025771903750146.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json、视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `DF_Integer`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `Int`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `RIFE VFI`
-- `SaveImage`
-- `SimpleMath+`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanImageToVideo`
-- `WanMoeKSampler`
-- `easy cleanGpuUsed`
-- `easy promptLine`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 10/16 个有
-- `DifferentialDiffusion` —— 10/16 个有
-- `JWStringConcat` —— 10/16 个有
-- `ProcessString` —— 10/16 个有
-- `Qwen3_VQA` —— 10/16 个有
-- `Text Multiline` —— 10/16 个有
-- `easy clearCacheAll` —— 10/16 个有
-- `easy showAnything` —— 10/16 个有
+- `LoadImage` —— 14/16 个有
+- `PrimitiveFloat` —— 14/16 个有
+- `ResolutionSelector` —— 12/16 个有
+- `ModelAttentionBackend` —— 6/16 个有
+- `Int` —— 4/16 个有
+- `SolAttnMiniMax` —— 4/16 个有
+- `DuckHideNode` —— 2/16 个有
+- `GetImageSize` —— 2/16 个有
+- `ImageScaleToTotalPixels` —— 2/16 个有
+- `SaveImage` —— 2/16 个有
+- `WujiCleaner` —— 2/16 个有
+- `WujiImageLoader` —— 2/16 个有
+- `LoadAudio` —— 1/16 个有
+- `RHMiniMaxH3PromptOptimizer` —— 1/16 个有
+- `solarL_SaveImagesToZip` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 15 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 16 | 8% |
-| 采样算法 | sa_solver | - | 16 | 94% |
-| 调度器 | beta | - | 16 | 94% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，16 个样本，取值分散，一致性仅 8%
-- 采样算法 最常用 sa_solver，16 个样本，一致性 94%
-- 调度器 最常用 beta，16 个样本，一致性 94%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（16/16 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、RIFE VFI、SimpleMath+、Text Multiline、easy cleanGpuUsed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

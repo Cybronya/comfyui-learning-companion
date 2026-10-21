@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_clip_173
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.944667
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetImageSizeAndCount, ImageFromBatch, ImpactInt, KSampler, LoadImage, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, TorchCompileModelWanVideo, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ]
+coverage: 0.686
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageScale, KSampler, LoadImage, PreviewImage, ShowText|pysssss, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1901121776833675266.json, 视频生成/图生视频/1899668266204221441.json, 视频生成/图生视频/1899809388968685570.json]
+members: [视频生成/图生视频/1900927379781337090.json, 视频生成/图生视频/1896189359580381186.json, 视频生成/图生视频/1900938287807086593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_173
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1901121776833675266.json、视频生成/图生视频/1899668266204221441.json、视频生成/图生视频/1899809388968685570.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1900927379781337090.json、视频生成/图生视频/1896189359580381186.json、视频生成/图生视频/1900938287807086593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
@@ -27,32 +27,33 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `GetImageSizeAndCount`
-- `ImageFromBatch`
-- `ImpactInt`
+- `ImageScale`
 - `KSampler`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `TorchCompileModelWanVideo`
-- `UNETLoader`
-- `UnetLoaderGGUF`
+- `PreviewImage`
+- `ShowText|pysssss`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
-- `WanVideoTeaCacheKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `String Literal` —— 1/3 个有
-- `Text Load Line From File` —— 1/3 个有
-- `easy batchAnything` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LTXVPromptEnhancer` —— 2/3 个有
+- `LTXVPromptEnhancerLoader` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `WanVideoTeaCacheKJ` —— 2/3 个有
+- `DownloadAndLoadFlorence2Model` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageFromBatch` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `String Replace (mtb)` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
 
 ## 典型参数
 

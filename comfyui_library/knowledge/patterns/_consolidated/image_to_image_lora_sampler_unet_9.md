@@ -1,78 +1,82 @@
 ---
 name: image_to_image_lora_sampler_unet_9
 type: Image To Image
-frequency: 4
+frequency: 6
 level: strong
-coverage: 0.8705
-common_nodes: [CLIPLoader, EmptySD3LatentImage, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.884
+common_nodes: [CFGNorm, CLIPLoader, CM_FloatToInt, CM_FloatUnaryOperation, CM_IntToFloat, CR Prompt Text, FL_ImageBatchToGrid, FluxKontextMultiReferenceLatentMethod, GetImageSizeAndCount, ImageListToBatch+, Int, JWIntegerToString, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveStringMultiline, ProcessString, Qwen3_VQA_Plus, RH_LLMAPI_NODE, SaveImage, StringFunction|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy saveText, easy seed, easy showAnything]
 problems: [Steps较低可能导致细节不足]
-missing: [easy loraStack, easy loraStackApply, String Literal, easy seed]
-members: [图片生成/图生图/2019387229856075777.json, 图片生成/图生图/2081382750556348418.json, 图片生成/图生图/2081650003457691649.json, 图片生成/文生图/1958888407248351234.json]
+missing: []
+members: [图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107418412778610689.json, 图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107433169149579266.json, 图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2082660755245195266.json, 图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2088143998782369794.json, 图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2092053482613338114.json, 视频生成/文生视频/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2068856792473493506.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2019387229856075777.json、图片生成/图生图/2081382750556348418.json、图片生成/图生图/2081650003457691649.json、图片生成/文生图/1958888407248351234.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107418412778610689.json、图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107433169149579266.json、图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2082660755245195266.json、图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2088143998782369794.json、图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2092053482613338114.json…）
 
 - **类型**：Image To Image
-- **样本数**：4
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `ImageResizeKJv2`
+- `CM_FloatToInt`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Prompt Text`
+- `FL_ImageBatchToGrid`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetImageSizeAndCount`
+- `ImageListToBatch+`
+- `Int`
+- `JWIntegerToString`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `Qwen3_VQA_Plus`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
+- `StringFunction|pysssss`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Krea2EditGroundedEncode` —— 3/4 个有
-- `Krea2EditModelPatch` —— 3/4 个有
-- `String Literal` —— 3/4 个有
-- `CLIPTextEncode` —— 2/4 个有
-- `ReferenceLatent` —— 2/4 个有
-- `AIO_Preprocessor` —— 1/4 个有
-- `ColorMatchV2` —— 1/4 个有
-- `ConditioningZeroOut` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
-- `easy loraStack` —— 1/4 个有
-- `easy loraStackApply` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `easy promptLine`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 4 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 8 | 8 - 8 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，4 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：easy loraStack、easy loraStackApply、String Literal、easy seed
+- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -2,66 +2,71 @@
 name: unknown_workflow_video_sampler_clip_71
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.47125
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Float, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression_UTK, ModelSamplingSD3, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
+level: moderate
+coverage: 0.87675
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2021958481347088386.json, 视频生成/图生视频/2046470504948703234.json, 视频生成/图生视频/2054012165388021762.json, 视频生成/图生视频/2046953828343353345.json, 视频生成/图生视频/2022333235971235842.json, 视频生成/图生视频/2034099796876726273.json, 视频生成/图生视频/2043578904195108866.json, 视频生成/图生视频/2046075077883600898.json]
+members: [视频生成/图生视频/1905999669091307522.json, 视频生成/图生视频/1985915775540178945.json, 视频生成/图生视频/1918543439799975938.json, 视频生成/图生视频/1919623628906758146.json, 视频生成/图生视频/1994010084806164482.json, 视频生成/图生视频/1907738859516342273.json, 视频生成/图生视频/1902281686166740993.json, 视频生成/文生视频/1937406270641225729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_71
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2021958481347088386.json、视频生成/图生视频/2046470504948703234.json、视频生成/图生视频/2054012165388021762.json、视频生成/图生视频/2046953828343353345.json、视频生成/图生视频/2022333235971235842.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1905999669091307522.json、视频生成/图生视频/1985915775540178945.json、视频生成/图生视频/1918543439799975938.json、视频生成/图生视频/1919623628906758146.json、视频生成/图生视频/1994010084806164482.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：47%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `Float`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression_UTK`
-- `ModelSamplingSD3`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `llama_cpp_instruct_adv` —— 7/8 个有
-- `llama_cpp_model_loader` —— 7/8 个有
-- `llama_cpp_parameters` —— 7/8 个有
-- `PainterI2V` —— 5/8 个有
-- `ImageConcatMulti` —— 3/8 个有
-- `WanFirstLastFrameToVideo` —— 3/8 个有
-- `Qwen3_VQA_Plus` —— 1/8 个有
+- `Int` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `WanVideoEnhanceAVideo` —— 7/8 个有
+- `WanVideoTorchCompileSettings` —— 7/8 个有
+- `easy cleanGpuUsed` —— 7/8 个有
+- `easy imageSize` —— 7/8 个有
+- `CR Text` —— 6/8 个有
+- `EmptyImage` —— 6/8 个有
+- `LayerUtility: PurgeVRAM` —— 6/8 个有
+- `easy imageConcat` —— 6/8 个有
+- `CR Simple Image Compare` —— 5/8 个有
+- `ImageBatchRepeatInterleaving` —— 5/8 个有
+- `ImageConcanate` —— 5/8 个有
+- `WanVideoExperimentalArgs` —— 3/8 个有
+- `ImageResizeKJ` —— 2/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `RH_Captioner` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `TextBox` —— 1/8 个有
+- `Textbox` —— 1/8 个有
+- `WanVideoFlowEdit` —— 1/8 个有
+- `WanVideoLoopArgs` —— 1/8 个有
+- `WanVideoVRAMManagement` —— 1/8 个有
+- `easy textSwitch` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,8 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

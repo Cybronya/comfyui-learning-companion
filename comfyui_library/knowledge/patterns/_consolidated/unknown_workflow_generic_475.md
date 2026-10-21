@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_475
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.839333
-common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.558
+common_nodes: [CR Text, JWString, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, parse_json_node]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json, 视频生成/文生视频/SeeDance 2.0 爆款脚本优化洗稿器V1_2020721759913254913.json, 视频生成/文生视频/SeeDance 2.0爆款视频分析高级版V1_2020740263819350017.json]
+members: [音频生成/音频生成/【只需上传小说】一键全自动有声小说生成-自动识别角色、声线、台词_2016046662497603586.json, 音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2015822417020592129.json, 音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2086833033843404801.json, 音频生成/音频生成/一键全自动有声小说生成_2033873863368511490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_475
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json、视频生成/文生视频/SeeDance 2.0 爆款脚本优化洗稿器V1_2020721759913254913.json、视频生成/文生视频/SeeDance 2.0爆款视频分析高级版V1_2020740263819350017.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/【只需上传小说】一键全自动有声小说生成-自动识别角色、声线、台词_2016046662497603586.json、音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2015822417020592129.json、音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2086833033843404801.json、音频生成/音频生成/一键全自动有声小说生成_2033873863368511490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadImage`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `JWString`
+- `PreviewAny`
 - `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Comfly_LLm_API` —— 2/3 个有
-- `LoadVideo` —— 1/3 个有
-- `RHMiniMaxH3T2VATextEncode` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
+- `SaveAudio`
+- `ShowText|pysssss`
+- `TDQwen3TTSBatchGenerateSpeaker`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSMultiDialog`
+- `parse_json_node`
 
 ## 典型参数
 

@@ -3,33 +3,33 @@ name: unknown_workflow_generic_67
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.850545
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json, 音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2015044112218595329.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015241695201333249.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015242726865903618.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2056310053703086082.json, 音频生成/音频生成/（RL强化版）HeartMuLa音乐歌曲生成3B版V1_2014941704297648129.json, 音频生成/音频生成/🦖HeartMuLa音乐歌曲文生歌_2013889867830267905.json]
+members: [图片生成/图生图/2095369520776048642.json, 视频生成/图生视频/2038867308285796354.json, 视频生成/图生视频/Seedance 1.5 Pro Fast 图生视频｜首尾帧视频｜支持1080P_2097537038789730305.json, 视频生成/图生视频/2046119417926389762.json, 视频生成/图生视频/2037036284312559617.json, 视频生成/图生视频/2039910706035822593.json, 视频生成/图生视频/2054421345009717250.json, 视频生成/图生视频/2038487770900992001.json, 视频生成/图生视频/2037443315422994434.json, 视频生成/图生视频/2042070638961102849.json, 视频生成/图生视频/2037432989239484418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_67
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json、音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json、音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/2095369520776048642.json、视频生成/图生视频/2038867308285796354.json、视频生成/图生视频/Seedance 1.5 Pro Fast 图生视频｜首尾帧视频｜支持1080P_2097537038789730305.json、视频生成/图生视频/2046119417926389762.json、视频生成/图生视频/2037036284312559617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/11 个有
-- `LoadImage` —— 2/11 个有
-- `Text` —— 2/11 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 9/11 个有
+- `MuyeTextEditOutput` —— 2/11 个有
+- `RH_SeedanceV15ProImageToVideoFast` —— 2/11 个有
 
 ## 典型参数
 

@@ -3,36 +3,34 @@ name: unknown_workflow_generic_146
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.753
-common_nodes: [DramaBoxLoader, DramaBoxTTS, JjkText, SaveAudio]
+coverage: 0.959143
+common_nodes: [LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2056283924774612993.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2057834156830322690.json]
+members: [comfyui-workflow-templates-json/video_wan_dancer.json, 视频生成/图生视频/1970775618499584001.json, 视频生成/图生视频/1978791620122447873.json, 视频生成/图生视频/1970790621206245377.json, 视频生成/图生视频/1976114306217545729.json, 视频生成/图生视频/1970643756695363586.json, 视频生成/图生视频/1971058917423882242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_146
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_dancer.json、视频生成/图生视频/1970775618499584001.json、视频生成/图生视频/1978791620122447873.json、视频生成/图生视频/1970790621206245377.json、视频生成/图生视频/1976114306217545729.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `DramaBoxLoader`
-- `DramaBoxTTS`
-- `JjkText`
-- `SaveAudio`
+- `LoadAudio`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DramaBoxAudioPreview` —— 6/7 个有
-- `DramaBoxVoiceClone` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `PrimitiveFloat` —— 2/7 个有
+- `RH_Wan25_I2V` —— 6/7 个有
+- `Text Multiline` —— 1/7 个有
+- `f7467834-35a6-42fe-b525-7f17383beb4f` —— 1/7 个有
 
 ## 典型参数
 

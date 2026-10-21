@@ -3,75 +3,52 @@ name: unknown_workflow_video_lora_sampler_769
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.796
-common_nodes: [> Text Replace, Any To Any, CFGGuider, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, JWInteger, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MultiplePathsInput, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecodeTiled, VHS_SelectFilename, VHS_VideoCombine, VRAMReserver, VisualizeSigmasKJ, easy showAnything]
+coverage: 0.9325
+common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2010552640517705729.json, 视频生成/图生视频/2010704583722536962.json]
+members: [视频生成/图生视频/1985890878952747009.json, 视频生成/图生视频/2067528007627141122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_769
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2010552640517705729.json、视频生成/图生视频/2010704583722536962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1985890878952747009.json、视频生成/图生视频/2067528007627141122.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `> Text Replace`
-- `Any To Any`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MultiplePathsInput`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `Qwen3_VQA`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `VAEDecodeTiled`
-- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `VRAMReserver`
-- `VisualizeSigmasKJ`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -79,6 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

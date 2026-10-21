@@ -3,50 +3,61 @@ name: unknown_workflow_sampler_26
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.939
-common_nodes: [Apply Whisper, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, Fast Groups Bypasser (rgthree), LayerUtility: PurgeVRAM V2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.481667
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), GenerateSRT, GetNode, IndexTTS2BaseNode, IndexTTS2CacheControlNode, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MergeAudioMW, RH_LLMAPI_NODE, ReplaceText, SRTToAudio, SaveAudio, SaveSRTFromString, SetNode, TrimAudioDuration, VoiceBridgeASRLoader, VoiceBridgeASRTranscribe, VoiceBridgeTTSLoader, VoiceClonePrompt, easy showAnything, easy string]
 problems: []
-missing: []
-members: [音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json, 音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json, 音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json]
+missing: [VoiceBridgeAudioListMergerBySRT, VoiceBridgeSRTSplitter]
+members: [音频生成/音频生成/AI翻译配音+字幕转音频+音频转字幕 多合一工作流 V3.1_2050059053363154946.json, 音频生成/音频生成/VoiceBridge workflow V2_2032102603814866945.json, 音频生成/音频生成/VoiceBridge 基础工作流 V2.1_2032633615116410882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_26
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json、音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json、音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI翻译配音+字幕转音频+音频转字幕 多合一工作流 V3.1_2050059053363154946.json、音频生成/音频生成/VoiceBridge workflow V2_2032102603814866945.json、音频生成/音频生成/VoiceBridge 基础工作流 V2.1_2032633615116410882.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
+- `CR Text`
 - `Fast Groups Bypasser (rgthree)`
-- `LayerUtility: PurgeVRAM V2`
+- `GenerateSRT`
+- `GetNode`
+- `IndexTTS2BaseNode`
+- `IndexTTS2CacheControlNode`
 - `LoadAudio`
 - `MelBandRoFormerModelLoader`
 - `MelBandRoFormerSampler`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
+- `MergeAudioMW`
+- `RH_LLMAPI_NODE`
+- `ReplaceText`
+- `SRTToAudio`
 - `SaveAudio`
+- `SaveSRTFromString`
+- `SetNode`
+- `TrimAudioDuration`
+- `VoiceBridgeASRLoader`
+- `VoiceBridgeASRTranscribe`
+- `VoiceBridgeTTSLoader`
+- `VoiceClonePrompt`
+- `easy showAnything`
+- `easy string`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `Qwen3TTSCustomVoice` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `VRAMReserver` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `FishS2VoiceCloneTTS` —— 1/3 个有
+- `LongCatVoiceCloneTTS` —— 1/3 个有
+- `PrimitiveString` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RunningHub_VoxCPM_Generate` —— 1/3 个有
+- `RunningHub_VoxCPM_LoadModel` —— 1/3 个有
+- `SaveAudioMP3` —— 1/3 个有
+- `VoiceBridgeAudioListMergerBySRT` —— 1/3 个有
+- `VoiceBridgeSRTSplitter` —— 1/3 个有
 
 ## 典型参数
 
@@ -58,4 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：VoiceBridgeAudioListMergerBySRT、VoiceBridgeSRTSplitter

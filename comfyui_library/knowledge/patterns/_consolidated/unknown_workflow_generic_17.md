@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_17
 type: Unknown Workflow
-frequency: 18
+frequency: 20
 level: moderate
-coverage: 0.898944
-common_nodes: [LoadAudio, LoadVideo, SaveVideo]
+coverage: 0.9857
+common_nodes: [LoadAudio, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json, 数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json, 数字人/数字人/zh（9.14）工作流1视频对口型_2099327179606806530.json, 数字人/数字人/数字人【视频】V1.0_2094769332847988737.json, 数字人/数字人/超快HEYGEN数字人_2095826350211944450.json, 视频生成/图生视频/2064694224074919938.json, 视频生成/图生视频/Mini Max H3多模态参考生视频_2083141810741923842.json, 视频生成/图生视频/Mini Max H3多模态参考生视频_2083152271352877058.json, 视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083400389453508610.json, 视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083404860132773889.json, 视频生成/图生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083416442275459073.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083422180163014658.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083425658755174402.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083429061518512129.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083069534579286018.json, 视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083133964038008833.json, 视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（支持9图3视频3音频）_2083411318568210433.json]
+members: [数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json, 数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json, 音频生成/音频生成/VoxCPM2-声音克隆 支持方言_2056356073002594306.json, 音频生成/音频生成/VoxCPM2-终极克隆-语音克隆-声音克隆-好用-速度快-支持方言_2049750876226637825.json, 音频生成/音频生成/VoxCPM2-语音克隆-极速克隆-支持方言_2084189235472592898.json, 音频生成/音频生成/VoxCPM2语音克隆(四川话)_2047577873472561153.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（天津话）V3_2041826223764021250.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（广东话）V3_2041823275411574786.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（河南话）V3_2041823297939185665.json, 音频生成/音频生成/VoxCPM2语音克隆（天津话）_2047581701450244098.json, 音频生成/音频生成/VoxCPM2语音克隆（广东话）_2047575508455530497.json, 音频生成/音频生成/VoxCPM2语音克隆（河南话）_2047580936384024578.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2041822737211072514.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2045487794499362817.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计V2_2041780714080833537.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计_2047580106213822465.json, 音频生成/音频生成/VoxCPM语音克隆_2043262047881793538.json, 音频生成/音频生成/VoxCPM：最强语音克隆+音频设计_2042490156510355457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_17
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json、数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json、数字人/数字人/zh（9.14）工作流1视频对口型_2099327179606806530.json、数字人/数字人/数字人【视频】V1.0_2094769332847988737.json、数字人/数字人/超快HEYGEN数字人_2095826350211944450.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json、数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json、音频生成/音频生成/VoxCPM2-声音克隆 支持方言_2056356073002594306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `LoadAudio`
-- `LoadVideo`
-- `SaveVideo`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 13/18 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 12/18 个有
-- `CR Text` —— 9/18 个有
-- `RH_HeyGemNode` —— 6/18 个有
-- `easy showAnything` —— 3/18 个有
-- `Label (rgthree)` —— 1/18 个有
+- `CR Prompt Text` —— 18/20 个有
+- `Text` —— 6/20 个有
+- `AudioSeparation` —— 4/20 个有
 
 ## 典型参数
 

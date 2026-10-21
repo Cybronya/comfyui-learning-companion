@@ -3,29 +3,32 @@ name: unknown_workflow_generic_485
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.971333
-common_nodes: [CR Text, RH_Sora2_T2V_Batch, SaveVideo]
+coverage: 1
+common_nodes: [MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextToModelNode, MeshyTextureNode, SaveGLB]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S 文生视频 并发4个 竖屏_2005859667999948802.json, 视频生成/文生视频/全能视频S文生视频__批量视频高速10个并发_2001175856133308417.json, 视频生成/文生视频/全能视频S文生视频批量视频生成漫剧生成高速10并发_1998999208256528385.json]
+members: [comfyui-workflow-templates-json/api_meshy7_1_text_to_model.json, comfyui-workflow-templates-json/api_meshy7_text_to_model.json, comfyui-workflow-templates-json/api_meshy_text_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_485
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/全能视频S 文生视频 并发4个 竖屏_2005859667999948802.json、视频生成/文生视频/全能视频S文生视频__批量视频高速10个并发_2001175856133308417.json、视频生成/文生视频/全能视频S文生视频批量视频生成漫剧生成高速10并发_1998999208256528385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_text_to_model.json、comfyui-workflow-templates-json/api_meshy7_text_to_model.json、comfyui-workflow-templates-json/api_meshy_text_to_model.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `RH_Sora2_T2V_Batch`
-- `SaveVideo`
+- `MeshyAnimateModelNode`
+- `MeshyRefineNode`
+- `MeshyRigModelNode`
+- `MeshyTextToModelNode`
+- `MeshyTextureNode`
+- `SaveGLB`
 
 ## 典型参数
 

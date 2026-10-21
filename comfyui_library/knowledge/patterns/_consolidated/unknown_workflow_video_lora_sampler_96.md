@@ -1,83 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_96
 type: Unknown Workflow
-frequency: 15
-level: strong
-coverage: 0.789067
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 16
+level: moderate
+coverage: 0.832375
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2046802828332634114.json, 视频生成/图生视频/2057262111021158401.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json, 视频生成/图生视频/2059827902316900354.json, 视频生成/图生视频/2063798363463704577.json, 视频生成/图生视频/2047485702841049089.json, 视频生成/图生视频/2050810161220071425.json, 视频生成/图生视频/2054823248579317761.json, 视频生成/图生视频/2050993375851106306.json, 视频生成/图生视频/2052745658586677250.json, 视频生成/图生视频/2050032331129405442.json, 视频生成/图生视频/2046957180640829441.json, 视频生成/图生视频/2050043137099350017.json, 视频生成/图生视频/2047122187932409857.json, 视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json]
+missing: [CR Prompt Text]
+members: [视频生成/文生视频/1950141714336014337.json, 视频生成/文生视频/1950148142277771266.json, 视频生成/文生视频/1950200316404916225.json, 视频生成/文生视频/1950154187399192578.json, 视频生成/文生视频/1950159020893061122.json, 视频生成/文生视频/1950180748268584962.json, 视频生成/文生视频/1950165203683033089.json, 视频生成/文生视频/1950205913674244097.json, 视频生成/文生视频/1950086334457274370.json, 视频生成/文生视频/1970702549865164802.json, 视频生成/文生视频/(Palingenesis版)Wan2.2 文生视频高动态加速版V1_1972111273070620674.json, 视频生成/文生视频/1972489940305113089.json, 视频生成/文生视频/1971180956935720962.json, 视频生成/文生视频/1969009834282655745.json, 视频生成/文生视频/1966009360197521409.json, 视频生成/文生视频/（自用）KJ版节点套件视频Latent 示范工作流V1_2007518843018678273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_96
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2046802828332634114.json、视频生成/图生视频/2057262111021158401.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json、视频生成/图生视频/2059827902316900354.json、视频生成/图生视频/2063798363463704577.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/文生视频/1950141714336014337.json、视频生成/文生视频/1950148142277771266.json、视频生成/文生视频/1950200316404916225.json、视频生成/文生视频/1950154187399192578.json、视频生成/文生视频/1950159020893061122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoaderKJ`
-- `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+全部 16 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `JWInteger`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 14/15 个有
-- `LTXVPreprocess` —— 14/15 个有
-- `LoadImage` —— 14/15 个有
-- `SetNode` —— 14/15 个有
-- `UNETLoader` —— 14/15 个有
-- `JWInteger` —— 13/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/15 个有
-- `PromptRelayEncode` —— 10/15 个有
-- `PreviewAny` —— 9/15 个有
-- `RH_LLMAPI_Pro_Node` —— 9/15 个有
-- `RegexExtract` —— 9/15 个有
-- `CM_IntToFloat` —— 8/15 个有
-- `SimpleMath+` —— 8/15 个有
-- `Text` —— 8/15 个有
-- `PreviewImage` —— 7/15 个有
-- `CR Prompt Text` —— 5/15 个有
-- `PromptRelayEncodeTimeline` —— 5/15 个有
-- `AudioCrop` —— 1/15 个有
-- `INTConstant` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `LTXVAudioVAEEncode` —— 1/15 个有
-- `LoadAudio` —— 1/15 个有
-- `SetLatentNoiseMask` —— 1/15 个有
-- `SolidMask` —— 1/15 个有
-- `UnetLoaderGGUF` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
-- `easy ifElse` —— 1/15 个有
+- `VHS_VideoCombine` —— 15/16 个有
+- `WanVideoTorchCompileSettings` —— 15/16 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/16 个有
+- `Float` —— 7/16 个有
+- `WanVideoScheduler` —— 7/16 个有
+- `WanVideoSigmaToStep` —— 7/16 个有
+- `SaveLatent` —— 3/16 个有
+- `VAEEncode` —— 3/16 个有
+- `VAELoader` —— 3/16 个有
+- `HunyuanVideoFoley` —— 2/16 个有
+- `LoadImage` —— 2/16 个有
+- `SaveImage` —— 2/16 个有
+- `easy showAnything` —— 2/16 个有
+- `text_mul_replace` —— 2/16 个有
+- `ImageFromBatch+` —— 1/16 个有
+- `TT_img_enc` —— 1/16 个有
+- `VAEDecode` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 409 - 489 | 15 | 96% |
-| 高度 | 25 | 25 - 25 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -85,5 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 409 - 489，15 个样本，取值集中（一致性 96%）
-- 高度 中位数 25，观测区间 25 - 25，15 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text

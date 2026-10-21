@@ -3,59 +3,59 @@ name: unknown_workflow_video_lora_sampler_185
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8404
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.8591
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json, 视频生成/图生视频/MiniMax H3 视频复刻：视频编辑、视频翻拍、二创与指定角色替换-长视频直出_2105605446362030081.json, 视频生成/图生视频/MiniMax H3-视频复刻-数字人-加速版-参考生视频-长视频直出_2102344546796523522.json, 视频生成/图生视频/MiniMax H3开源 音频驱动数字人图生视频加速版_2092558393386033154.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088208371999657986.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088234673238536194.json, 视频生成/图生视频/MiniMax H3数字人口播-图+音频生成口播视频工作流_2094979350235009025.json, 视频生成/图生视频/MiniMax H3数字人音乐MV加速版V1_2101835373805658113.json, 视频生成/图生视频/MiniMax H3音频驱动数字人-参考生视频-长视频直出【加速版】_2103404335605571585.json, 视频生成/图生视频/MiniMax H3音频驱动数字人-多人对话-一键实现语音+口型同步_2101937972219305986.json]
+members: [视频生成/图生视频/2070317114317164545.json, 视频生成/图生视频/2072165934445457410.json, 视频生成/图生视频/2072211393461448705.json, 视频生成/图生视频/2072215800739614722.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2083759017431756801.json, 视频生成/图生视频/2072151352708517889.json, 视频生成/图生视频/2069624919830384641.json, 视频生成/图生视频/2071482062011453441.json, 视频生成/图生视频/2072216679937036289.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2083763864499474433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_185
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json、视频生成/图生视频/MiniMax H3 视频复刻：视频编辑、视频翻拍、二创与指定角色替换-长视频直出_2105605446362030081.json、视频生成/图生视频/MiniMax H3-视频复刻-数字人-加速版-参考生视频-长视频直出_2102344546796523522.json、视频生成/图生视频/MiniMax H3开源 音频驱动数字人图生视频加速版_2092558393386033154.json、视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088208371999657986.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2070317114317164545.json、视频生成/图生视频/2072165934445457410.json、视频生成/图生视频/2072211393461448705.json、视频生成/图生视频/2072215800739614722.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2083759017431756801.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `SolAttnMiniMax` —— 8/10 个有
-- `LoadAudio` —— 7/10 个有
-- `孤海注释` —— 4/10 个有
-- `LoraLoaderModelOnly` —— 2/10 个有
-- `VHS_LoadVideo` —— 2/10 个有
-- `AudioCrop` —— 1/10 个有
-- `ExtendIntermediateSigmas` —— 1/10 个有
-- `H3SigmaRefiner` —— 1/10 个有
-- `LoadVideo` —— 1/10 个有
-- `MiniMaxChunkFeedForward` —— 1/10 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/10 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/10 个有
-- `MiniMaxLowVRAMAttention` —— 1/10 个有
+- `DiffusionModelLoaderKJ` —— 9/10 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `CR Text` —— 8/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `SetNode` —— 2/10 个有
+- `VHS_VideoInfo` —— 2/10 个有
+- `GetNode` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `ImageResize+` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PreviewAny` —— 1/10 个有
+- `Primitive integer [Crystools]` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `UNETLoader` —— 1/10 个有
+- `easy anythingIndexSwitch` —— 1/10 个有
 
 ## 典型参数
 

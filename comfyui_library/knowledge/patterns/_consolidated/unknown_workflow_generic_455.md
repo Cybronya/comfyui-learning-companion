@@ -1,38 +1,45 @@
 ---
 name: unknown_workflow_generic_455
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.692667
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
+coverage: 0.78475
+common_nodes: [LoadAudio, NormalizeAudioLoudness, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PrimitiveStringMultiline, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio, easy promptList]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019242695918620673.json, 视频生成/图生视频/1984059551941066753.json, 视频生成/图生视频/2032120133279293442.json]
+members: [音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json, 音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json, 音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json, 音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_455
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2019242695918620673.json、视频生成/图生视频/1984059551941066753.json、视频生成/图生视频/2032120133279293442.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json、音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json、音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json、音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceMultiSpeakerTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `PrimitiveStringMultiline`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudio`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 2/3 个有
-- `RH_Sora2_I2V_PRO` —— 2/3 个有
-- `easy string` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `忽略多组孤海` —— 2/4 个有
+- `JWStringToFloat` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
 
 ## 典型参数
 

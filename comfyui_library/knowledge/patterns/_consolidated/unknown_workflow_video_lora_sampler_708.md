@@ -1,63 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_708
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.743
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 孤海注释]
+frequency: 2
+level: weak
+coverage: 0.6125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, FastFilmGrain, KSampler, Label (rgthree), LoraLoader, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, VAEDecode, VAELoader, WanVideoNAG, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
-missing: []
-members: [视频生成/视频生视频/MiniMax H3 视频复刻 角色替换-二创翻拍_2106096378328993794.json, 视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）.json, 视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）.json]
+missing: [Label (rgthree), easy cleanGpuUsed, easy clearCacheAll, Text Multiline]
+members: [图片生成/文生图/1942908235353374722.json, 图片生成/文生图/1945020657232175106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_708
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/视频生视频/MiniMax H3 视频复刻 角色替换-二创翻拍_2106096378328993794.json、视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）.json、视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1942908235353374722.json、图片生成/文生图/1945020657232175106.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
-- `UNETLoader`
+- `CLIPTextEncode`
+- `EmptyHunyuanLatentVideo`
+- `FastFilmGrain`
+- `KSampler`
+- `Label (rgthree)`
+- `LoraLoader`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SaveImage`
+- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `孤海注释`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DA3Inference` —— 1/3 个有
-- `DA3Render` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LoadDA3Model` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `ShowAnything|Mie` —— 1/3 个有
-- `VHS_LoadVideoFFmpeg` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
+- `UnetLoaderGGUF` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -65,4 +64,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)、easy cleanGpuUsed、easy clearCacheAll、Text Multiline
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

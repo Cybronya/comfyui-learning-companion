@@ -3,38 +3,33 @@ name: unknown_workflow_generic_674
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8605
-common_nodes: [CR Text, LoadAudio, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, SaveAudioMP3, Text Multiline, easy seed]
+coverage: 1
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/音频-单人文本克隆配音-Index TTS 2.5_2090801620899680258.json, 音频生成/音频生成/音频-单人文本克隆配音(情绪)-Index TTS 2.5_2103750269099139073.json]
+members: [comfyui-workflow-templates-json/api_bria_video_replace_background.json, comfyui-workflow-templates-json/api_happyhorse1_0_video_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_674
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/音频-单人文本克隆配音-Index TTS 2.5_2090801620899680258.json、音频生成/音频生成/音频-单人文本克隆配音(情绪)-Index TTS 2.5_2103750269099139073.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_video_replace_background.json、comfyui-workflow-templates-json/api_happyhorse1_0_video_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
-- `SaveAudioMP3`
-- `Text Multiline`
-- `easy seed`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BriaVideoReplaceBackground` —— 1/2 个有
+- `HappyHorseVideoEditApi` —— 1/2 个有
 
 ## 典型参数
 

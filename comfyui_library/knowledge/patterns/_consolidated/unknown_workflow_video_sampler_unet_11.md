@@ -1,69 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_unet_11
 type: Unknown Workflow
-frequency: 21
+frequency: 23
 level: moderate
-coverage: 0.861381
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.762739
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1 minimax_h3_i2v_fastH3_raw_bigface_10s_2102562439794610177.json, 视频生成/图生视频/1图_multi_ref_minimax_h3_i2v_2094711687055241217.json, 视频生成/图生视频/2图_multi_ref_minimax_h3_i2v_2094710093471375361.json, 视频生成/图生视频/3图_multi_ref_minimax_h3_i2v_2092499319101415426.json, 视频生成/图生视频/8步加速官流_2108935132144037890.json, 视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json, 视频生成/图生视频/MiNiMaxH3_六图+三音频参考_2111108549219799042.json, 视频生成/图生视频/Minimax H3三图参考+2参考音_2089300447696871426.json, 视频生成/图生视频/Minimax H3三图参考+三参考音_2089302046485864449.json, 视频生成/图生视频/Minimax H3单图参考+1参考音_2089270431596507137.json, 视频生成/图生视频/Minimax H3双图参考+1参考音【口播用】_2090260648876920833.json, 视频生成/图生视频/Minimax H3双图参考+1参考音【批量管理系统api用】_2093664402544353282.json, 视频生成/图生视频/Minimax H3双图参考+2参考音_2089282022698213377.json, 视频生成/图生视频/api竖屏768pH3官流_2110570859592249346.json, 视频生成/图生视频/api竖屏768pH3官流_2111012386319724545.json, 视频生成/图生视频/【MINIMAX H3】高动态_单采高清_2109286224707022849.json, 视频生成/图生视频/【MiniMax H3】短剧工作流_2110380691388194818.json, 视频生成/图生视频/【MiniMax_H3】短剧工作流_2110893565873311745.json, 视频生成/图生视频/【疯了的动态】Dasiwa_单采样25步无加速lora_2096793272898383874.json, 视频生成/图生视频/【阿良绘】MiniMax H3加速版｜速度与质量均衡V2_2109543805493014529.json, 视频生成/图生视频/名画自动写脚本直出视频H-3_2108343061192466434.json]
+members: [视频生成/图生视频/MINIMAX-H3图生视频单图参考_2085995526268477441.json, 视频生成/图生视频/MINIMAX-H3工作流-8-20_2086750733025767426.json, 视频生成/图生视频/MINIMAX-H3工作流-自用_2086126941140242434.json, 视频生成/图生视频/MINIMAX-H3工作流合集_2086380256604282881.json, 视频生成/图生视频/MINIMAX-H3工作流合集（最新版）_2094331708098301954.json, 视频生成/图生视频/MINIMAX-H3工作流合集（注意开关）_2108385005096497153.json, 视频生成/图生视频/MINIMAX-H3工作流文生，图生，全能参考_2093745550528172034.json, 视频生成/图生视频/MiniMax H3 首尾帧_2096519661360869377.json, 视频生成/图生视频/MiniMax H3全能参考工作流_2084457467743920129.json, 视频生成/图生视频/MiniMax H3｜竖屏人像情绪特写_2111201860685230081.json, 视频生成/图生视频/MinimaxH3开源版-首_尾帧-加速版_2089597414054383618.json, 视频生成/图生视频/MinimaxH3开源版-首_尾帧-加速版_2109156809616486402.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2060992668020338689.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100475521611157506.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100747392579624962.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097216684217163777.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097636379042869250.json, 视频生成/图生视频/minimax h3_2089645770512359426.json, 视频生成/图生视频/一个普通的工作流_2094967354697535490.json, 视频生成/图生视频/全能参考 加速版_2086341513830817793.json, 视频生成/图生视频/多参考视频MINIMAX-H3工作流_2089733467306283009.json, 视频生成/图生视频/自动化高质量多参视频流_2087788893096734722.json, 视频生成/文生视频/MINIMAX-H3 开源加速版工作流4步lora加速合集h3文单图生多图参考_2087132475666550785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/1 minimax_h3_i2v_fastH3_raw_bigface_10s_2102562439794610177.json、视频生成/图生视频/1图_multi_ref_minimax_h3_i2v_2094711687055241217.json、视频生成/图生视频/2图_multi_ref_minimax_h3_i2v_2094710093471375361.json、视频生成/图生视频/3图_multi_ref_minimax_h3_i2v_2092499319101415426.json、视频生成/图生视频/8步加速官流_2108935132144037890.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/MINIMAX-H3图生视频单图参考_2085995526268477441.json、视频生成/图生视频/MINIMAX-H3工作流-8-20_2086750733025767426.json、视频生成/图生视频/MINIMAX-H3工作流-自用_2086126941140242434.json、视频生成/图生视频/MINIMAX-H3工作流合集_2086380256604282881.json、视频生成/图生视频/MINIMAX-H3工作流合集（最新版）_2094331708098301954.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `KSamplerSelect`
 - `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MultiRateSamplerEXPT8`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 20/21 个有
-- `BasicScheduler` —— 19/21 个有
-- `LoraLoaderModelOnly` —— 16/21 个有
-- `LoadAudio` —— 12/21 个有
-- `ModelAttentionBackend` —— 12/21 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/21 个有
-- `INTConstant` —— 10/21 个有
-- `MiniMaxH3SigmaShift` —— 8/21 个有
-- `ModelPreviewOverrideKJ` —— 8/21 个有
-- `BlockSparseAttention` —— 7/21 个有
-- `ManualSigmas` —— 6/21 个有
-- `LoraLoaderBypassModelOnly` —— 5/21 个有
-- `SolAttnMiniMax` —— 5/21 个有
-- `PainterVRAM` —— 3/21 个有
-- `PathchSageAttentionKJ` —— 3/21 个有
-- `VHS_LoadVideo` —— 3/21 个有
-- `YK_LoadImageFromURL` —— 3/21 个有
-- `忽略多组孤海` —— 3/21 个有
-- `EmptyImage` —— 1/21 个有
-- `JjkText` —— 1/21 个有
-- `MiniMaxH3ImageToVideo` —— 1/21 个有
-- `PreviewImage` —— 1/21 个有
-- `QWEN_TextDisplay` —— 1/21 个有
-- `RHLLMChatNode` —— 1/21 个有
+- `LoraLoaderBypassModelOnly` —— 22/23 个有
+- `PrimitiveStringMultiline` —— 22/23 个有
+- `ResolutionSelector` —— 21/23 个有
+- `LoadAudio` —— 16/23 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/23 个有
+- `UniBlockSwap` —— 10/23 个有
+- `PreviewAny` —— 4/23 个有
+- `RHLLMChatNode` —— 3/23 个有
+- `RH_LLMAPI_Pro_Node` —— 2/23 个有
+- `Int` —— 1/23 个有
+- `LoraLoaderModelOnly` —— 1/23 个有
+- `MemoryCleaner` —— 1/23 个有
+- `PrimitiveInt` —— 1/23 个有
+- `TTResolutionSelector` —— 1/23 个有
+- `Text` —— 1/23 个有
+- `VHS_LoadVideo` —— 1/23 个有
+- `WujiCleaner` —— 1/23 个有
+- `XB_ROCmMemCleaner` —— 1/23 个有
 
 ## 典型参数
 

@@ -3,72 +3,65 @@ name: unknown_workflow_video_lora_sampler_896
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.518
-common_nodes: [Any2ListNode, Audio Duration (mtb), AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, CreateVideo, GetNode, ImageFromBatch, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PreviewAny, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy int, easy lengthAnything, easy promptLine, easy showAnything]
+coverage: 0.636
+common_nodes: [CLIPLoader, CLIPTextEncode, FL_FILM, INTConstant, ImageScaleBy, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, PrimitiveInt, PrimitiveStringMultiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019320483916812289.json, 视频生成/文生视频/官方新版数字人，全自动循环长视频数字人生成！_2050144606511214593.json]
+members: [视频生成/图生视频/2034935535625576449.json, 视频生成/图生视频/2042291022843088898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_896
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2019320483916812289.json、视频生成/文生视频/官方新版数字人，全自动循环长视频数字人生成！_2050144606511214593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2034935535625576449.json、视频生成/图生视频/2042291022843088898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any2ListNode`
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `BasicScheduler`
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `CreateVideo`
-- `GetNode`
-- `ImageFromBatch`
+- `FL_FILM`
+- `INTConstant`
+- `ImageScaleBy`
 - `Int`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchLoader`
-- `PreviewAny`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
-- `Text`
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
-- `easy int`
-- `easy lengthAnything`
-- `easy promptLine`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `AILab_QwenVL` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `DuckHideNode` —— 1/2 个有
+- `HunyuanVideoFoley` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -76,4 +69,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

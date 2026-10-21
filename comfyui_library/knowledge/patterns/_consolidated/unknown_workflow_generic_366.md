@@ -3,32 +3,39 @@ name: unknown_workflow_generic_366
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.5835
-common_nodes: [OmniVoiceVoiceDesignTTS, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.9115
+common_nodes: [LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage, Text Concatenate, TextInput_, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2094594740925845505.json, 音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2109820538263789570.json, 音频生成/音频生成/OmniVoice声音设计（支持方言）_2041804410665308162.json, 音频生成/音频生成/豆包音频生成-文本转语音工作流_2094571254832525313.json]
+members: [图片生成/文生图/JY分镜拆分_2001853073293209602.json, 图片生成/文生图/Nano 全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2（by随风）_1994218812797026306.json, 图片生成/文生图/全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2_1999319726042083330.json, 图片生成/文生图/大山的漫剧剧本生成动漫分镜图工作流_1994635308102717442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_366
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2094594740925845505.json、音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2109820538263789570.json、音频生成/音频生成/OmniVoice声音设计（支持方言）_2041804410665308162.json、音频生成/音频生成/豆包音频生成-文本转语音工作流_2094571254832525313.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/JY分镜拆分_2001853073293209602.json、图片生成/文生图/Nano 全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2（by随风）_1994218812797026306.json、图片生成/文生图/全能图片V1 Pro+gemini3pro小说剧本生成动漫分镜图工作流V2_1999319726042083330.json、图片生成/文生图/大山的漫剧剧本生成动漫分镜图工作流_1994635308102717442.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `OmniVoiceVoiceDesignTTS`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text Concatenate`
+- `TextInput_`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/4 个有
+- `ImageBatchGet` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: TextJoin` —— 1/4 个有
+- `easy imageSplitGrid` —— 1/4 个有
 
 ## 典型参数
 

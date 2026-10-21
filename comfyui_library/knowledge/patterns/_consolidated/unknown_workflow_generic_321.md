@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_321
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.88325
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveVideo]
+coverage: 1
+common_nodes: [IndexTTSNode, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2069411071865217025.json, 视频生成/图生视频/2061797146860539906.json, 视频生成/图生视频/2062919579176882178.json, 视频生成/图生视频/2069401480947396610.json]
+members: [音频生成/音频生成/IndexTTS1.0_1931991655790870530.json, 音频生成/音频生成/IndexTTS语音克隆单人版_1959112087551291394.json, 音频生成/音频生成/IndexTTS语音克隆单人版_1999021043161387009.json, 音频生成/音频生成/IndexTTS高效快速克隆人声，支持长文本_1919167474494017538.json, 音频生成/音频生成/【小白可用】IndexTTS单人语音无线生成_1959970598460010498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_321
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2069411071865217025.json、视频生成/图生视频/2061797146860539906.json、视频生成/图生视频/2062919579176882178.json、视频生成/图生视频/2069401480947396610.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS1.0_1931991655790870530.json、音频生成/音频生成/IndexTTS语音克隆单人版_1959112087551291394.json、音频生成/音频生成/IndexTTS语音克隆单人版_1999021043161387009.json、音频生成/音频生成/IndexTTS高效快速克隆人声，支持长文本_1919167474494017538.json、音频生成/音频生成/【小白可用】IndexTTS单人语音无线生成_1959970598460010498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `IndexTTSNode`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
-- `RH_KlingVideoO3ProImageToVideo` —— 1/4 个有
+- `String Literal` —— 3/5 个有
+- `Primitive string [Crystools]` —— 2/5 个有
+- `PreviewAudio` —— 1/5 个有
 
 ## 典型参数
 

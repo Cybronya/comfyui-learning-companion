@@ -1,59 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_75
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.866176
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.811667
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(贞贞lora-双时钟-8步)Minimax参考生视频V1_2086638366224900098.json, 视频生成/图生视频/10Eros Beta+Lightx2v正式版Minimax双时钟参考生视频V1_2087368448614682625.json, 视频生成/图生视频/10Eros Beta+Lightx2v正式版Minimax双时钟图生视频V1_2087494589186920449.json, 视频生成/图生视频/10Eros Beta+Lightx2v正式版Minimax双时钟图生视频V1_2088288426880749570.json, 视频生成/图生视频/10Eros Beta版+Lightx2v正式版-Minimax双时钟-图音视频多参生视频-加速版_2087563282352791554.json, 视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json, 视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json, 视频生成/图生视频/1图 MINIMAX 单图视频生成_2111253442411974657.json, 视频生成/图生视频/720P双时钟高质量加速 0.8_2088677432479014914.json, 视频生成/图生视频/8步加速_2088996111943032833.json, 视频生成/图生视频/8步高质量极速Minimax H3开源版_2105680108311896065.json, 视频生成/图生视频/Dasiwa-MiniMax H3-动态最强-单采-参考生视频_2095105300293574657.json, 视频生成/图生视频/H3 极速导演台｜图生·首尾帧·多参一体化（8步双时钟）_2086807475478683649.json, 视频生成/图生视频/Lightx2v_8步_V1.0_768P-去油-Minimax双时钟-参考生视频_2093354886875406337.json, 视频生成/图生视频/Lightx2v_8步_V1.0_768P-去油-Minimax双时钟-图生视频_2093353862173384705.json, 视频生成/图生视频/Minimax H3-参考生视频-电商带货-创意视频_2107731728155627522.json, 视频生成/图生视频/指挥你的女朋友_2091798481236226050.json]
+members: [视频生成/文生视频/1951130910374699010.json, 视频生成/文生视频/1950408991886196738.json, 视频生成/文生视频/1950100642577694721.json, 视频生成/文生视频/Wan2.2 自动手动文生视频（UnifiedReward+VBVR逻辑增强）-二次元赛琳娜版_2029097055917969409.json, 视频生成/文生视频/1957481859263426562.json, 视频生成/文生视频/1951167781284851713.json, 视频生成/文生视频/1951179698393034754.json, 视频生成/文生视频/1953444312275144706.json, 视频生成/文生视频/1956721780875300866.json, 视频生成/文生视频/1968733813188829186.json, 视频生成/文生视频/（KJ版）Wan2.2 自动提示词引导文生视频（UnifiedReward+VBVR逻辑增强）_2028179220836388865.json, 视频生成/文生视频/（KJ版）Wan2.2 自动提示词引导文生视频（UnifiedReward运动增强）_2028179192646475777.json, 视频生成/文生视频/1961405033222967297.json, 视频生成/文生视频/1958885395293483009.json, 视频生成/文生视频/1963536083953995778.json, 视频生成/文生视频/1961307588656828418.json, 视频生成/文生视频/1960069815262195714.json, 视频生成/文生视频/1961399903941541890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_75
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/(贞贞lora-双时钟-8步)Minimax参考生视频V1_2086638366224900098.json、视频生成/图生视频/10Eros Beta+Lightx2v正式版Minimax双时钟参考生视频V1_2087368448614682625.json、视频生成/图生视频/10Eros Beta+Lightx2v正式版Minimax双时钟图生视频V1_2087494589186920449.json、视频生成/图生视频/10Eros Beta+Lightx2v正式版Minimax双时钟图生视频V1_2088288426880749570.json、视频生成/图生视频/10Eros Beta版+Lightx2v正式版-Minimax双时钟-图音视频多参生视频-加速版_2087563282352791554.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/文生视频/1951130910374699010.json、视频生成/文生视频/1950408991886196738.json、视频生成/文生视频/1950100642577694721.json、视频生成/文生视频/Wan2.2 自动手动文生视频（UnifiedReward+VBVR逻辑增强）-二次元赛琳娜版_2029097055917969409.json、视频生成/文生视频/1957481859263426562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 18 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3DualClockSamplerT8` —— 16/17 个有
-- `CR Prompt Text` —— 15/17 个有
-- `LoadImage` —— 15/17 个有
-- `PrimitiveFloat` —— 15/17 个有
-- `ResolutionSelector` —— 15/17 个有
-- `ModelAttentionBackend` —— 12/17 个有
-- `孤海注释` —— 6/17 个有
-- `LoraLoaderModelOnly` —— 3/17 个有
-- `Int` —— 2/17 个有
-- `SolAttnMiniMax` —— 2/17 个有
-- `WujiCleaner` —— 2/17 个有
-- `WujiImageLoader` —— 2/17 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/17 个有
-- `PrimitiveStringMultiline` —— 1/17 个有
-- `RHMiniMaxH3PromptOptimizer` —— 1/17 个有
-- `TimbreAudioLoader` —— 1/17 个有
-- `WujiAudioLoader` —— 1/17 个有
+- `JWStringConcat` —— 16/18 个有
+- `ShowText|pysssss` —— 16/18 个有
+- `Wan22PromptSelector` —— 16/18 个有
+- `easy showAnything` —— 16/18 个有
+- `INTConstant` —— 15/18 个有
+- `RH_LLMAPI_NODE` —— 15/18 个有
+- `TextConcat` —— 15/18 个有
+- `WanVideoTorchCompileSettings` —— 15/18 个有
+- `JWInteger` —— 14/18 个有
+- `Bjornulf_ShowInt` —— 1/18 个有
+- `CR Text` —— 1/18 个有
+- `Int` —— 1/18 个有
+- `JWFloat` —— 1/18 个有
+- `KepStringLiteral` —— 1/18 个有
+- `SimpleMath+` —— 1/18 个有
+- `TTResolutionSelector` —— 1/18 个有
 
 ## 典型参数
 

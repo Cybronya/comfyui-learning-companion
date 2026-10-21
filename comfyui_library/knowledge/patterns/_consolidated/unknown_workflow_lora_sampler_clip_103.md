@@ -1,75 +1,58 @@
 ---
 name: unknown_workflow_lora_sampler_clip_103
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.841
-common_nodes: [ArgosTranslateTextNode, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EG_TC_Node, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Int, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.835
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [Fast Bypasser (rgthree), LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerUtility: ImageBlendAdvance, LayerUtility: PurgeVRAM, ImageResize+]
-members: [图片生成/文生图/1924977832982999041.json, 图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json]
+missing: [ttN concat, easy seed]
+members: [图片生成/文生图/1920133263510142977.json, 图片生成/文生图/1936219766145323010.json, 图片生成/文生图/【一键运行】二次元性感美少女_2018845332670521345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_103
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1924977832982999041.json、图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1920133263510142977.json、图片生成/文生图/1936219766145323010.json、图片生成/文生图/【一键运行】二次元性感美少女_2018845332670521345.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：强结论
 - **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ArgosTranslateTextNode`
+全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
 - `DualCLIPLoader`
-- `EG_TC_Node`
 - `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `Int`
 - `KSamplerSelect`
-- `LoadImage`
-- `LoraLoader`
-- `ModelSamplingFlux`
+- `LoraLoaderModelOnly`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 1/2 个有
-- `DisableNoise` —— 1/2 个有
-- `Fast Bypasser (rgthree)` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `Joy_caption_two` —— 1/2 个有
-- `Joy_caption_two_load` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModel` —— 1/2 个有
-- `LayerUtility: ImageBlendAdvance` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `SplitSigmasDenoise` —— 1/2 个有
-- `TeaCache` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
+- `easy seed` —— 2/3 个有
+- `Bjornulf_ShowStringText` —— 1/3 个有
+- `EG_FX_BDAPI` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `Joy_caption` —— 1/3 个有
+- `Joy_caption_load` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `ttN concat` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| LoRA 模型强度 | 0.35 | - | 2 | 57% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 768 | 768 - 1024 | 3 | 86% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
 
 ## 常见问题
 
@@ -77,9 +60,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.35，样本不足，未给区间，2 个样本
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Fast Bypasser (rgthree)、LayerMask: BiRefNetUltraV2、LayerMask: LoadBiRefNetModel、LayerUtility: ImageBlendAdvance、LayerUtility: PurgeVRAM
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 768，观测区间 768 - 1024，3 个样本，取值集中（一致性 86%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：ttN concat、easy seed

@@ -1,79 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_36
 type: Unknown Workflow
-frequency: 23
-level: strong
-coverage: 0.892565
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BerniniS2VConditioning, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RIFEInterpolation, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 25
+level: moderate
+coverage: 0.70428
+common_nodes: [BasicGuider, CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2078320387280162818.json, 视频生成/图生视频/2081275038845726722.json, 视频生成/图生视频/2079327737751359489.json, 视频生成/图生视频/2077628506321805314.json, 视频生成/图生视频/2077569166571294722.json, 视频生成/图生视频/2079048469997772802.json, 视频生成/图生视频/2079366355974975489.json, 视频生成/图生视频/bernini人物自然动态 开口说话_2082333319848615938.json, 视频生成/图生视频/2081361413834108929.json, 视频生成/图生视频/2077701219740639233.json, 视频生成/图生视频/2077741026973937666.json, 视频生成/图生视频/bernini数字人开口说话视频图生视频_2088247090945286146.json, 视频生成/图生视频/2082400679599108097.json, 视频生成/图生视频/2082406303087022082.json, 视频生成/图生视频/2077570082494050305.json, 视频生成/图生视频/2081346958836461570.json, 视频生成/图生视频/2081307306670776321.json, 视频生成/图生视频/2080089032889036801.json, 视频生成/图生视频/2078383851998629890.json, 视频生成/图生视频/2079478844951715841.json, 视频生成/图生视频/2079504635626352642.json, 视频生成/图生视频/2079510043048890369.json, 视频生成/图生视频/（1图 1音频）WAN2.2  Bernini人物开口说话视频_2111395780270575618.json]
+members: [视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json, 视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json, 视频生成/文生视频/MiniMax H3-加速版-参考生视频-长视频直出-单采_2100882071358103553.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2086838165842780162.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2087878612149161985.json, 视频生成/文生视频/MiniMax H3双采全能参考视频｜真实电影质感｜文武双修均衡版_2096132560068894721.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096583694927622145.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-宫格图生视频_2099500409453891585.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-宫格图生视频_2099514636340121601.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-宫格图生视频_2100166099735240706.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-文生视频_2096561555252006913.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-文生视频_2101209510349201410.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-参考生视频_2097138677536354306.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-参考生视频_2097272057355653122.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-多人对话-二采_2100936331642888193.json, 视频生成/文生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-文生视频_2097144924377534466.json, 视频生成/文生视频/MiniMax H3双采参考生视频_2103091380615737346.json, 视频生成/文生视频/MiniMax H3双采多参V2（均衡版）_2096028522333696002.json, 视频生成/文生视频/MiniMax H3双采多图参考生成视频工作流V2-文戏不油，武戏动态强_2098769442292457473.json, 视频生成/文生视频/Minimax H3 音频驱动数字人对口型｜唱歌说话口播｜Remix文戏版_2094609192823906305.json, 视频生成/文生视频/去油-文武全能图音参考(10eros beta5版)MiniMax H3双采生视频_2100432792248213505.json, 视频生成/文生视频/文武双全全能(10eros beta5版)MiniMax H3双采多参考生视频_2100271114697142273.json, 音频生成/音频生成/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100058854255063042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_36
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/2078320387280162818.json、视频生成/图生视频/2081275038845726722.json、视频生成/图生视频/2079327737751359489.json、视频生成/图生视频/2077628506321805314.json、视频生成/图生视频/2077569166571294722.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json、视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json、视频生成/文生视频/MiniMax H3-加速版-参考生视频-长视频直出-单采_2100882071358103553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：25
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `BerniniS2VConditioning`
+全部 25 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `KSamplerAdvanced`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `RIFEInterpolation`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 22/23 个有
-- `Int` —— 22/23 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 22/23 个有
-- `Text` —— 22/23 个有
-- `RHHiddenNodes` —— 15/23 个有
-- `PreviewAny` —— 12/23 个有
-- `PreviewImage` —— 9/23 个有
-- `RH_Captioner` —— 7/23 个有
-- `TextConcatenate_UTK` —— 7/23 个有
-- `easy showAnything` —— 7/23 个有
-- `GoogleTranslateTextNode` —— 4/23 个有
-- `Float to Int` —— 3/23 个有
-- `ImageFromBatch` —— 3/23 个有
-- `RH_Translator` —— 3/23 个有
-- `easy mathFloat` —— 3/23 个有
-- `easy mathInt` —— 3/23 个有
-- `INTConstant` —— 1/23 个有
-- `PreviewAudio` —— 1/23 个有
-- `SaveImage` —— 1/23 个有
+- `ComfyMathExpression` —— 24/25 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 24/25 个有
+- `PrimitiveFloat` —— 24/25 个有
+- `ResolutionSelector` —— 24/25 个有
+- `CR Prompt Text` —— 23/25 个有
+- `LoadImage` —— 21/25 个有
+- `ModelAttentionBackend` —— 19/25 个有
+- `SolAttnMiniMax` —— 19/25 个有
+- `LoraLoaderModelOnly` —— 18/25 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 18/25 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 18/25 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 18/25 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 18/25 个有
+- `GetNode` —— 16/25 个有
+- `SetNode` —— 16/25 个有
+- `Float` —— 15/25 个有
+- `孤海注释` —— 15/25 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/25 个有
+- `LoadAudio` —— 11/25 个有
+- `ConcatTextOfUtils` —— 3/25 个有
+- `easy anythingIndexSwitch` —— 3/25 个有
+- `AudioCrop` —— 2/25 个有
+- `Int` —— 2/25 个有
+- `Audio Cut (mtb)` —— 1/25 个有
+- `CR Text Concatenate` —— 1/25 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/25 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/25 个有
+- `ModelPreviewOverrideKJ` —— 1/25 个有
+- `MuyeTextEditOutput` —— 1/25 个有
+- `PrimitiveStringMultiline` —— 1/25 个有
+- `VHS_LoadVideo` —— 1/25 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 23 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 23 | 100% |
-| 采样算法 | 1 | 1 - 1 | 23 | 100% |
-| 调度器 | dpmpp_2m_sde | - | 23 | 100% |
-| 重绘幅度 | sgm_uniform | - | 23 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,8 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，23 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，23 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m_sde，23 个样本，一致性 100%
-- 重绘幅度 最常用 sgm_uniform，23 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

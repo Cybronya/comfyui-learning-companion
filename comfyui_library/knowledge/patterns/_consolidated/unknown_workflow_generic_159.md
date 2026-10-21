@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_159
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.667
-common_nodes: [LoadImage, PreviewAny, PrimitiveStringMultiline, SaveText]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartVideoGImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_anthropic_claude_fable5.json, comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json, comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json, comfyui-workflow-templates-json/api_openai_gpt6_astra.json]
+members: [视频生成/图生视频/2069682233727864833.json, 视频生成/图生视频/2061350092275281922.json, 视频生成/图生视频/2068345116238106625.json, 视频生成/图生视频/2036344430654918658.json, 视频生成/图生视频/2037182236088340481.json, 视频生成/图生视频/2057784729117749250.json, 视频生成/图生视频/2059529541651091457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_159
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/api_anthropic_claude_fable5.json、comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json、comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2069682233727864833.json、视频生成/图生视频/2061350092275281922.json、视频生成/图生视频/2068345116238106625.json、视频生成/图生视频/2036344430654918658.json、视频生成/图生视频/2037182236088340481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveText`
+- `RH_RhartVideoGImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ClaudeNode` —— 5/6 个有
-- `70bc0003-66ee-48a5-bea3-7a0949fc30b5` —— 4/6 个有
-- `1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5` —— 2/6 个有
-- `OpenAIChatNode` —— 1/6 个有
+- `Text` —— 4/7 个有
+- `RH_RhartVideoV31ProImageToVideo` —— 1/7 个有
+- `RH_Sora2_I2V` —— 1/7 个有
 
 ## 典型参数
 

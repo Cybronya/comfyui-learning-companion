@@ -1,67 +1,83 @@
 ---
 name: unknown_workflow_video_clip_unet_5
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.987833
-common_nodes: [CLIPLoader, CLIPTextEncode, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: []
-missing: []
-members: [图片生成/文生图/1902941440509382658.json, 图片生成/文生图/1930295791557185537.json, 图片生成/文生图/1951273402428502018.json, 视频生成/图生视频/1951274276659867650.json, 视频生成/图生视频/1987307533339701250.json, 视频生成/图生视频/1951277844100009986.json, 视频生成/图生视频/1952539360614920193.json, 视频生成/文生视频/1930295791557185537.json, 视频生成/文生视频/1950378020252073986.json, 视频生成/文生视频/ComfyUI官方图生视频工作流搭建_2050410359365881858.json, 视频生成/文生视频/Remix_i2v_v2.1工作流_2050521770255495170.json, 视频生成/文生视频/Wan2.2官网14B图生视频&文生视频&5B文or图生视频_2072999658865336320.json]
+frequency: 10
+level: moderate
+coverage: 0.8598
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, DF_Integer, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingSD3, PrimitiveBoolean, RH_Captioner, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy ifElse, easy int, easy showAnything]
+problems: [Steps较低可能导致细节不足]
+missing: [CR Text Replace, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, easy int]
+members: [视频生成/图生视频/1950737220787458049.json, 视频生成/图生视频/1950763373552164866.json, 视频生成/图生视频/1950052256939950082.json, 视频生成/图生视频/1950373850129326082.json, 视频生成/图生视频/1950111733920784385.json, 视频生成/文生视频/1950878967190454273.json, 视频生成/文生视频/1951086042193571841.json, 视频生成/文生视频/wan2.2-14B+官方图生视频+自动提示词_1983353614280368130.json, 视频生成/文生视频/1950410149463769089.json, 视频生成/文生视频/1949867321068314625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet_5
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/1902941440509382658.json、图片生成/文生图/1930295791557185537.json、图片生成/文生图/1951273402428502018.json、视频生成/图生视频/1951274276659867650.json、视频生成/图生视频/1987307533339701250.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1950737220787458049.json、视频生成/图生视频/1950763373552164866.json、视频生成/图生视频/1950052256939950082.json、视频生成/图生视频/1950373850129326082.json、视频生成/图生视频/1950111733920784385.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text Replace`
+- `DF_Integer`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `ModelSamplingSD3`
+- `PrimitiveBoolean`
+- `RH_Captioner`
+- `SimpleMath+`
+- `TextBox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
+- `easy ifElse`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 10/12 个有
-- `LoadImage` —— 8/12 个有
-- `EmptyHunyuanLatentVideo` —— 7/12 个有
-- `Wan22ImageToVideoLatent` —— 7/12 个有
-- `KSamplerAdvanced` —— 4/12 个有
-- `WanImageToVideo` —— 4/12 个有
-- `LoraLoaderModelOnly` —— 3/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/12 个有
-- `SaveAnimatedWEBP` —— 2/12 个有
-- `SaveImage` —— 1/12 个有
-- `TeaCache` —— 1/12 个有
+- `CLIPVisionEncode` —— 8/10 个有
+- `CLIPVisionLoader` —— 8/10 个有
+- `KSamplerAdvanced` —— 8/10 个有
+- `easy cleanGpuUsed` —— 8/10 个有
+- `PatchModelPatcherOrder` —— 6/10 个有
+- `PathchSageAttentionKJ` —— 6/10 个有
+- `TorchCompileModelWanVideoV2` —— 6/10 个有
+- `KSampler` —— 2/10 个有
+- `Wan_video_prompt_generator` —— 2/10 个有
+- `easy promptLine` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 20 - 30 | 10 | 86% |
-| Prompt 约束强度(CFG) | 5 | 5 - 6 | 12 | 91% |
-| 采样算法 | uni_pc | - | 12 | 83% |
-| 调度器 | simple | - | 12 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | fixed | - | 10 | 60% |
+| Prompt 约束强度(CFG) | 20 | 1 - 20 | 10 | 53% |
+| 采样算法 | 3.5 | 3.5 - 3.5 | 8 | 100% |
+| 调度器 | euler | - | 10 | 80% |
+| 重绘幅度 | simple | - | 10 | 80% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 20 - 30，10 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 6，12 个样本，取值集中（一致性 91%）
-- 采样算法 最常用 uni_pc，12 个样本，一致性 83%
-- 调度器 最常用 simple，12 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，10 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 1 - 20，10 个样本
+- 采样算法 中位数 3.5，观测区间 3.5 - 3.5，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，10 个样本，一致性 80%
+- 重绘幅度 最常用 simple，10 个样本，一致性 80%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Replace、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: PurgeVRAM、SimpleMath+、easy cleanGpuUsed

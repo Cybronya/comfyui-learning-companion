@@ -1,78 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_236
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.815111
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.869
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017646230746173442.json, 视频生成/图生视频/1959143275817021441.json, 视频生成/图生视频/1994005595265105922.json, 视频生成/图生视频/1990334829420007425.json, 视频生成/图生视频/1978136142623203329.json, 视频生成/图生视频/1979895392475189249.json, 视频生成/图生视频/2039336418778030081.json, 视频生成/图生视频/1970560402209841153.json, 音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json]
+members: [数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json, 数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json, 数字人/数字人/Minimax H3 Selflift数字人_2104042672871796737.json, 数字人/数字人/Minimax H3 数字人_2109243580714938369.json, 数字人/数字人/Minimax H3 数字人唱歌MV_2104387863344410625.json, 数字人/数字人/Selflift数字人_2111026652217176065.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2101970168657309697.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2102304757191888898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_236
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2017646230746173442.json、视频生成/图生视频/1959143275817021441.json、视频生成/图生视频/1994005595265105922.json、视频生成/图生视频/1990334829420007425.json、视频生成/图生视频/1978136142623203329.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json、数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json、数字人/数字人/Minimax H3 Selflift数字人_2104042672871796737.json、数字人/数字人/Minimax H3 数字人_2109243580714938369.json、数字人/数字人/Minimax H3 数字人唱歌MV_2104387863344410625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 8 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 8/9 个有
-- `GetImageSizeAndCount` —— 8/9 个有
-- `PreviewAny` —— 8/9 个有
-- `CR Prompt Text` —— 7/9 个有
-- `JWInteger` —— 7/9 个有
-- `WanVideoBlockSwap` —— 7/9 个有
-- `GetNode` —— 4/9 个有
-- `SetNode` —— 4/9 个有
-- `JWFloat` —— 3/9 个有
-- `SaveAudio` —— 3/9 个有
-- `easy int` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `MaskPreview+` —— 2/9 个有
-- `MathExpression|pysssss` —— 2/9 个有
-- `MegaTTS3Run` —— 2/9 个有
-- `PreviewAudio` —— 2/9 个有
-- `SaveAudioMP3` —— 2/9 个有
-- `SeparateMasks` —— 2/9 个有
-- `VHS_LoadVideo` —— 2/9 个有
-- `VoxCPM_TTS` —— 2/9 个有
-- `WanVideoTorchCompileSettings` —— 2/9 个有
-- `easy downloadIndexTTSAndLoadModel` —— 2/9 个有
-- `easy indexTTSAudioMerge` —— 2/9 个有
-- `easy indexTTSGenerateSimple` —— 2/9 个有
-- `Float` —— 1/9 个有
-- `IndexTTS2Run` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `LayerUtility: TextBox` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `SeedVCRun` —— 1/9 个有
+- `ComfyNumberConvert` —— 7/8 个有
+- `PreviewAny` —— 7/8 个有
+- `SoundFlow_GetLength` —— 7/8 个有
+- `TrimAudioDuration` —— 6/8 个有
+- `ModelPreviewOverrideKJ` —— 5/8 个有
+- `QwenH3PromptLocal` —— 2/8 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Float` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/8 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/8 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `PreviewAudio` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy positive` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 

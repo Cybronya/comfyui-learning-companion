@@ -1,74 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_unet_66
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.529
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CS-MultiImageLoader, ComfyMathExpression, ComfySwitchNode, GetImage, GetNode, INTConstant, KSamplerSelect, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SetNode, ShowText|pysssss, StringConcatenate, StringReplace, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTAppearanceOrder, YUAN_TXTConvertAny, YUAN_TXTListNumber, YUAN_TXTParagraphSplitter, YUAN_TXTReplace, YuanTool, easy positive]
+coverage: 0.6828
+common_nodes: [BasicGuider, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json]
+members: [视频生成/文生视频/MiniMax-H3图生视频工作流.json, 视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json, 视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json, 视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json, 视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_66
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3图生视频工作流.json、视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json、视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json、视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json、视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CS-MultiImageLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `GetImage`
-- `GetNode`
-- `INTConstant`
-- `KSamplerSelect`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `MiniMaxH3AVDecodeT8GH`
+- `MiniMaxH3DualClockT8GH`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `RandomNoise`
-- `RegexExtract`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `StringConcatenate`
-- `StringReplace`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `YUAN_TXTAppearanceOrder`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTListNumber`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTReplace`
-- `YuanTool`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `YUAN_TXTLength` —— 2/3 个有
-- `Yuan_MiniMaxH3Video` —— 2/3 个有
-- `ComfyAndNode` —— 1/3 个有
-- `ComfyNotNode` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `StringLength` —— 1/3 个有
-- `easy imagesSplitImage` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
+- `GetNode` —— 4/5 个有
+- `LoraLoaderBypassModelOnly` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `easy ifElse` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `SaveAudioAdvanced` —— 2/5 个有
+- `孤海注释` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/5 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

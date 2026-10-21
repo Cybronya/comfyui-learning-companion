@@ -3,73 +3,60 @@ name: text_to_image_lora_sampler_clip_55
 type: Text To Image
 frequency: 14
 level: strong
-coverage: 0.709
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.8775
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: []
-members: [视频生成/图生视频/Minimax图生视频I2V工作流含首尾帧，图生视频高效创作工具_2106873837555113985.json, 视频生成/图生视频/Minimax图生视频I2V工作流含首尾帧，图生视频高效创作工具_2109810746019373058.json, 视频生成/图生视频/Minimax图生视频I2V工作流，图生视频官方图生视频处理工具_2107908610960486402.json, 视频生成/图生视频/Minimax图生视频I2V方案，图生视频高效直出_2111192151311872002.json, 视频生成/图生视频/Minimax图生视频I2V方案｜图片动起来就这么简单_2107697471907516418.json, 视频生成/图生视频/Minimax多参考生成视频R2V工作流，最多9张参考图3段参考视频方案_2106851933465169922.json, 视频生成/图生视频/Minimax多参考生成视频R2V工作流，最多9张参考图3段参考视频方案_2110209158552317953.json, 视频生成/图生视频/Minimax多参考生视频R2V，9张参考图3段视频方案_2110867933206503425.json, 视频生成/图生视频/Minmax R2V参考生视频｜多图参考图生视频一键出片｜视频创作利器_2102208736826847234.json, 视频生成/图生视频/Minmax多参考生成视频R2V 多模态输入视频生成方案_2108651204296400897.json, 视频生成/图生视频/Minmax多参考生视频R2V，视频生视频多图精准控制_2111190495966883841.json, 视频生成/图生视频/R2V参考生视频加速版｜5060Ti 16G本地极速跑_2103045635455938561.json, 视频生成/图生视频/h3参考生视频方案，图生视频多参考精准还原_2110861891965902849.json, 视频生成/文生视频/Minimax文生视频T2V工作流，文生视频官方文生视频处理工具_2107930345889943553.json]
+missing: [CR Prompt Text]
+members: [图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json, 图片生成/反推提示词/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json, 图片生成/图生图/2102216509333528578.json, 图片生成/图生图/2102227263780642818.json, 图片生成/图生图/2102489354336821249.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑工作流，人像写真图生图其它图片处理方案_2107212690769928193.json, 图片生成/文生图/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json, 图片生成/文生图/Qwen 2.1文生图4步加速版｜快节奏出图不影响质量_2103063918653558786.json, 图片生成/文生图/Qwen Image 2.1 PE多宫格生图｜一张出九宫排版素材_2103032143940243457.json, 图片生成/文生图/Qwen Image 2.1 PE文生图工作流，人像写真海报制作文本到图像方案_2107215861605031937.json, 图片生成/文生图/Qwen Image 2.1 PE文生图工作流，高质量文本到图像生成方案_2106466665084055554.json, 图片生成/文生图/Qwen Image 2.1 PE文生图，提示词增强高质量文本到图像生成工作流_2103222827108364290.json, 图片生成/文生图/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json, 图片生成/文生图/稳定加速Tao版 Qwen Image 2.1 PE文生图加图生图编辑_2104352509451137025.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_55
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Minimax图生视频I2V工作流含首尾帧，图生视频高效创作工具_2106873837555113985.json、视频生成/图生视频/Minimax图生视频I2V工作流含首尾帧，图生视频高效创作工具_2109810746019373058.json、视频生成/图生视频/Minimax图生视频I2V工作流，图生视频官方图生视频处理工具_2107908610960486402.json、视频生成/图生视频/Minimax图生视频I2V方案，图生视频高效直出_2111192151311872002.json、视频生成/图生视频/Minimax图生视频I2V方案｜图片动起来就这么简单_2107697471907516418.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json、图片生成/反推提示词/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json、图片生成/图生图/2102216509333528578.json、图片生成/图生图/2102227263780642818.json、图片生成/图生图/2102489354336821249.json…）
 
 - **类型**：Text To Image
 - **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 13/14 个有
-- `LoadImage` —— 13/14 个有
-- `GetNode` —— 12/14 个有
-- `SetNode` —— 12/14 个有
-- `孤海注释` —— 12/14 个有
-- `SaveImage` —— 11/14 个有
-- `AudioCrop` —— 8/14 个有
-- `MiniMaxH3ReferenceToVideo` —— 8/14 个有
-- `PrimitiveStringMultiline` —— 8/14 个有
-- `MiniMaxH3ImageToVideo` —— 6/14 个有
-- `VHS_LoadVideo` —— 6/14 个有
-- `easy minimaxH3AudioLock` —— 6/14 个有
-- `GetImageSize` —— 5/14 个有
-- `ImageScaleToTotalPixels` —— 5/14 个有
-- `EmptyImage` —— 3/14 个有
-- `PreviewImage` —— 3/14 个有
-- `MiniMaxH3AudioLock` —— 2/14 个有
-- `MiniMaxH3SaveLatent` —— 2/14 个有
-- `MiniMaxH3QwenReferencePrefixCacheT8Advanced` —— 1/14 个有
-- `ModelAttentionBackend` —— 1/14 个有
-- `XB_ReferenceAny` —— 1/14 个有
+- `CR Prompt Text` —— 12/14 个有
+- `ComfySwitchNode` —— 12/14 个有
+- `QwenImage21Cache` —— 12/14 个有
+- `easy showAnything` —— 11/14 个有
+- `QwenPERewriteT8` —— 9/14 个有
+- `easy cleanGpuUsed` —— 9/14 个有
+- `LoadImage` —— 5/14 个有
+- `QwenImage21BlockCacheT8` —— 4/14 个有
+- `QwenImage21SageAttentionT8` —— 4/14 个有
+- `QwenImage21SpectrumT8` —— 4/14 个有
+- `RHLLMChatNode` —— 3/14 个有
+- `PreviewAny` —— 2/14 个有
+- `ResizeLongestToNode` —— 2/14 个有
+- `ShowText|pysssss` —— 2/14 个有
+- `StringConstantMultiline` —— 2/14 个有
+- `StringFunction|pysssss` —— 2/14 个有
+- `StringReplace` —— 2/14 个有
+- `TextGenerate` —— 2/14 个有
 
 ## 典型参数
 
@@ -99,3 +86,4 @@ source: knowledge_consolidation
 - 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
 - 高发问题（15/14 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text

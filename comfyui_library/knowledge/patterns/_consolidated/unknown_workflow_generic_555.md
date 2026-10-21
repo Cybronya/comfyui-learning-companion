@@ -3,33 +3,31 @@ name: unknown_workflow_generic_555
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.842667
-common_nodes: [AuKGenerateEdit_Doc, AuKLlamaCppSettings_Doc, AuKModelsLoader_Doc, LoadAudio, PreviewAudio, SaveAudioAdvanced, llama_cpp_model_loader]
+coverage: 0.833333
+common_nodes: [RH_RhartVideoGTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/腾讯Auk秒级音色复刻 16项功能合一 支持提示词增强_2100129216896528386.json, 音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105110847554146305.json, 音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105488646286700545.json]
+members: [视频生成/图生视频/2054431332775800834.json, 视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json, 视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_555
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/腾讯Auk秒级音色复刻 16项功能合一 支持提示词增强_2100129216896528386.json、音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105110847554146305.json、音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105488646286700545.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2054431332775800834.json、视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json、视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AuKGenerateEdit_Doc`
-- `AuKLlamaCppSettings_Doc`
-- `AuKModelsLoader_Doc`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
-- `llama_cpp_model_loader`
+- `RH_RhartVideoGTextToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

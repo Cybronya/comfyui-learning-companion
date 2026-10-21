@@ -1,68 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_69
 type: Unknown Workflow
-frequency: 4
+frequency: 9
 level: moderate
-coverage: 0.59725
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImpactSwitch, JjkText, KSampler, LimitNumber, LoadImage, PrimitiveInt, RH_LLMAPI_NODE, SaveImage, TextCombinerSix, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader, easy seed, easy showAnything]
+coverage: 0.846889
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [easy seed, LayerUtility: PurgeVRAM V2]
-members: [图片生成/文生图/1958709959401881601.json, 图片生成/文生图/1970924112187138049.json, 图片生成/文生图/1970937254313107458.json, 图片生成/文生图/1970950894877609986.json]
+missing: []
+members: [图片生成/文生图/flux2文生图1.0_1998240533703196674.json, 图片生成/文生图/【GUGU】FLUX2.0文生图_1993486400035160066.json, 图片生成/文生图/【老金驿站】FLUX2-dev文生图工作流_1993506834367660033.json, 图片生成/文生图/【遇见AI】FLUX2-klein-4b，文生图_2012008988237373441.json, 图片生成/文生图/【遇见AI】FLUX2-klein-9b，文生图_2012015997716271105.json, 图片生成/文生图/【遇见AI】FLUX2-klein-base-4b，文生图_2012011674202546178.json, 图片生成/文生图/【遇见AI】FLUX2-klein-base-9b，文生图_2012019877464248321.json, 图片生成/文生图/【遇见AI】FLUX2基础文生图_1993593869338165249.json, 视频生成/图生视频/MiniMax_H3_通用导演台_图生配音视频_2086025061747748866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_69
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1958709959401881601.json、图片生成/文生图/1970924112187138049.json、图片生成/文生图/1970937254313107458.json、图片生成/文生图/1970950894877609986.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/flux2文生图1.0_1998240533703196674.json、图片生成/文生图/【GUGU】FLUX2.0文生图_1993486400035160066.json、图片生成/文生图/【老金驿站】FLUX2-dev文生图工作流_1993506834367660033.json、图片生成/文生图/【遇见AI】FLUX2-klein-4b，文生图_2012008988237373441.json、图片生成/文生图/【遇见AI】FLUX2-klein-9b，文生图_2012015997716271105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `ImpactSwitch`
-- `JjkText`
-- `KSampler`
-- `LimitNumber`
-- `LoadImage`
-- `PrimitiveInt`
-- `RH_LLMAPI_NODE`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextCombinerSix`
-- `TextCombinerTwo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `ModelSamplingSD3` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `PreviewImage` —— 2/9 个有
+- `CR Seed` —— 1/9 个有
+- `CR Text` —— 1/9 个有
+- `CreateVideo` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `LoadImage` —— 1/9 个有
+- `MiniMaxH3Director` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `SaveVideo` —— 1/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 20 - 40 | 4 | 70% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 4 | 61% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,9 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 40，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy seed、LayerUtility: PurgeVRAM V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

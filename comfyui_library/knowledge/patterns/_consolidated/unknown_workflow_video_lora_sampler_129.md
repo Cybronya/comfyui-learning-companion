@@ -3,90 +3,91 @@ name: unknown_workflow_video_lora_sampler_129
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.827308
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, PreviewAny, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.631615
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/1988227930037903361.json, 视频生成/图生视频/2002936132511907841.json, 视频生成/图生视频/2062720243771990018.json, 视频生成/图生视频/2047405386377990145.json, 视频生成/图生视频/2061287897743052801.json, 视频生成/图生视频/2061971483555098625.json, 视频生成/图生视频/对口型数字人Infinite+talk对口型动态加强高版V3_1981308646988611586.json, 视频生成/图生视频/2061625584001835010.json, 视频生成/图生视频/2062437444791918594.json, 视频生成/图生视频/2062801094731980801.json, 视频生成/图生视频/2064624284164771842.json, 视频生成/图生视频/2064954636120973313.json, 视频生成/图生视频/2079549546333560833.json]
+members: [视频生成/图生视频/1996042760450981890.json, 视频生成/图生视频/2069666439010807809.json, 视频生成/图生视频/1996065856805355521.json, 视频生成/图生视频/2051153118703955970.json, 视频生成/图生视频/2049307460728524802.json, 视频生成/图生视频/2049678404324208642.json, 视频生成/图生视频/1995844904171495425.json, 视频生成/图生视频/2061068385760399361.json, 视频生成/图生视频/2062090699058798593.json, 视频生成/图生视频/2068716358623391746.json, 视频生成/图生视频/2009099537780056065.json, 视频生成/图生视频/1999779350897717249.json, 视频生成/图生视频/1995725668220538882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_129
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1988227930037903361.json、视频生成/图生视频/2002936132511907841.json、视频生成/图生视频/2062720243771990018.json、视频生成/图生视频/2047405386377990145.json、视频生成/图生视频/2061287897743052801.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1996042760450981890.json、视频生成/图生视频/2069666439010807809.json、视频生成/图生视频/1996065856805355521.json、视频生成/图生视频/2051153118703955970.json、视频生成/图生视频/2049307460728524802.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `GetNode`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `PreviewAny`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTalkWav2VecEmbeds` —— 12/13 个有
-- `WanVideoModelLoader` —— 12/13 个有
-- `AudioToFPS` —— 11/13 个有
-- `JWFloat` —— 11/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 11/13 个有
-- `easy showAnything` —— 11/13 个有
-- `GetNode` —— 2/13 个有
-- `SetNode` —— 2/13 个有
-- `Apply Whisper` —— 1/13 个有
-- `CLIPTextEncode` —— 1/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
-- `ImageBatch` —— 1/13 个有
-- `ImageFromBatch` —— 1/13 个有
-- `KSampler` —— 1/13 个有
-- `OmniVoiceLongformTTS` —— 1/13 个有
-- `OmniVoiceMultiSpeakerTTS` —— 1/13 个有
-- `OmniVoiceVoiceDesignTTS` —— 1/13 个有
-- `OmniVoiceWhisperLoader` —— 1/13 个有
-- `RHHiddenNodes` —— 1/13 个有
-- `SaveAudio` —— 1/13 个有
-- `VAEDecode` —— 1/13 个有
-- `WanInfiniteTalkToVideo` —— 1/13 个有
-- `easy indexAnything` —— 1/13 个有
-- `workflow>2` —— 1/13 个有
+- `WanVideoScheduler` —— 12/13 个有
+- `Int` —— 11/13 个有
+- `WanVideoBlockSwap` —— 11/13 个有
+- `WanVideoSetLoRAs` —— 11/13 个有
+- `DrawViTPose` —— 9/13 个有
+- `PoseAndFaceDetection` —— 9/13 个有
+- `WanVideoSetBlockSwap` —— 9/13 个有
+- `WanVideoTorchCompileSettings` —— 8/13 个有
+- `SimpleMath+` —— 7/13 个有
+- `PoseDetectionOneToAllAnimation` —— 6/13 个有
+- `Anything Everywhere` —— 5/13 个有
+- `CR Text` —— 5/13 个有
+- `ImageUpscaleWithModelBatched` —— 5/13 个有
+- `RIFE VFI` —— 5/13 个有
+- `RunningHub Deepcleaner` —— 5/13 个有
+- `UpscaleModelLoader` —— 5/13 个有
+- `ImageConcatMulti` —— 4/13 个有
+- `PreviewImage` —— 4/13 个有
+- `CR Prompt Text` —— 3/13 个有
+- `easy cleanGpuUsed` —— 3/13 个有
+- `INTConstant` —— 2/13 个有
+- `TextInput_` —— 2/13 个有
+- `easy clearCacheAll` —— 2/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `PrimitiveFloat` —— 1/13 个有
+- `SDPoseOODLoader` —— 1/13 个有
+- `SDPoseOODProcessor` —— 1/13 个有
+- `VHS_VideoInfoSource` —— 1/13 个有
+- `WanVideoLoraSelectMulti` —— 1/13 个有
+- `YOLOModelLoader` —— 1/13 个有
+- `easy convertAnything` —— 1/13 个有
+- `ttN text` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | normal | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 

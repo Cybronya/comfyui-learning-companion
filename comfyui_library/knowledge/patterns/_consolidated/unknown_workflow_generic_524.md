@@ -3,41 +3,38 @@ name: unknown_workflow_generic_524
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.883333
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, ShowText|pysssss]
+coverage: 0.747333
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 声音设计_克隆_2014901954920583169.json, 音频生成/音频生成/Qwen3 TTS 最强声音开源工作流整合包_2015600681440256001.json, 音频生成/音频生成/Qwen3-TTS 音色设计+音色克隆+自定义情绪_2014604292602208258.json]
+members: [图片生成/文生图/TEMU跨境电商商品详情页生成(psd)_2009507733443190785.json, 图片生成/文生图/一键生成分镜图（适配短剧创作）_2047159465799061505.json, 图片生成/文生图/国内商品详情页生成(psd)_2008738737584345089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_524
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音设计_克隆_2014901954920583169.json、音频生成/音频生成/Qwen3 TTS 最强声音开源工作流整合包_2015600681440256001.json、音频生成/音频生成/Qwen3-TTS 音色设计+音色克隆+自定义情绪_2014604292602208258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/TEMU跨境电商商品详情页生成(psd)_2009507733443190785.json、图片生成/文生图/一键生成分镜图（适配短剧创作）_2047159465799061505.json、图片生成/文生图/国内商品详情页生成(psd)_2008738737584345089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `CR Text`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `ImageLoader` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `TextInputNode` —— 1/3 个有
+- `HAIGC_CombineUnits` —— 2/3 个有
+- `HAIGC_Layer` —— 2/3 个有
+- `HAIGC_SavePSD` —— 2/3 个有
+- `PromptBatchQueue` —— 2/3 个有
 
 ## 典型参数
 

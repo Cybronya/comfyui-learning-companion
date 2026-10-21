@@ -3,41 +3,35 @@ name: unknown_workflow_video_102
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.887
-common_nodes: [CR Text, CR Value, ImageConcanate, ImageResizeKJ, LoadImage, RIFE VFI, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.867
+common_nodes: [Int, LoadImage, PreviewImage, RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine, easy indexAnything, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1996420197084962817.json, 视频生成/图生视频/2041860257923735554.json]
+members: [视频生成/图生视频/2072948538811703298.json, 视频生成/图生视频/2072710252314845185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_102
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1996420197084962817.json、视频生成/图生视频/2041860257923735554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2072948538811703298.json、视频生成/图生视频/2072710252314845185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Value`
-- `ImageConcanate`
-- `ImageResizeKJ`
+- `Int`
 - `LoadImage`
-- `RIFE VFI`
-- `ReActorFaceSwap`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `easy indexAnything`
+- `easy mathInt`
+- `easy showAnything`
 
 ## 典型参数
 

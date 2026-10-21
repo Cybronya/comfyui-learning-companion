@@ -3,37 +3,32 @@ name: unknown_workflow_generic_544
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.678
-common_nodes: [CR Text, HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy saveText, easy showAnything]
+coverage: 0.654667
+common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/一键自动歌曲生成器-HeartMula_2079314737313181698.json, 音频生成/音频生成/一键自动歌曲生成器-HeartMula（更新0123）_2013592038847029250.json, 音频生成/音频生成/音频生成-一键自动歌曲生成器-HeartMula可用_2021983911781343233.json]
+members: [图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json, 图片生成/文生图/真实感｜全能图片G-Image2｜小红书_2091873794850906113.json, 图片生成/文生图/美食巨物冒险之旅_2081689057037471745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_544
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/一键自动歌曲生成器-HeartMula_2079314737313181698.json、音频生成/音频生成/一键自动歌曲生成器-HeartMula（更新0123）_2013592038847029250.json、音频生成/音频生成/音频生成-一键自动歌曲生成器-HeartMula可用_2021983911781343233.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json、图片生成/文生图/真实感｜全能图片G-Image2｜小红书_2091873794850906113.json、图片生成/文生图/美食巨物冒险之旅_2081689057037471745.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CR Text`
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
-- `easy saveText`
-- `easy showAnything`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `RegexExtract` —— 2/3 个有
+- `GenericAPILLMNode` —— 1/3 个有
 
 ## 典型参数
 

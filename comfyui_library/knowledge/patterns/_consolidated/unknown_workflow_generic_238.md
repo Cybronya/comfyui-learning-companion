@@ -1,38 +1,42 @@
 ---
 name: unknown_workflow_generic_238
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [GetVideoComponents, ImageBatchGet, LoadVideo, RH_Captioner, RunningHub ThinkSound, SaveVideo]
+coverage: 0.92
+common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
 problems: []
 missing: []
-members: [视频生成/图生视频/1944938315844079618.json, 音频生成/音频生成/ThinkSound为视频配音_1942795666395738113.json, 音频生成/音频生成/ThinkSound视频配音_1943341470965526529.json, 音频生成/音频生成/ThnikSound视频配音_1942744901547438082.json, 音频生成/音频生成/王炸！思维链版ThinkSound视频配音工作流_1942401903257128961.json]
+members: [音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json, 音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json, 音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json, 音频生成/音频生成/语音克隆TTS _ LongCat-AudioDiT _ 单人_双人_2039708141885071362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_238
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1944938315844079618.json、音频生成/音频生成/ThinkSound为视频配音_1942795666395738113.json、音频生成/音频生成/ThinkSound视频配音_1943341470965526529.json、音频生成/音频生成/ThnikSound视频配音_1942744901547438082.json、音频生成/音频生成/王炸！思维链版ThinkSound视频配音工作流_1942401903257128961.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json、音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json、音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GetVideoComponents`
-- `ImageBatchGet`
-- `LoadVideo`
-- `RH_Captioner`
-- `RunningHub ThinkSound`
-- `SaveVideo`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/5 个有
-- `Bjornulf_ShowStringText` —— 1/5 个有
+- `CR Prompt Text` —— 5/6 个有
+- `LongCatVoiceCloneTTS` —— 4/6 个有
+- `NormalizeAudioLoudness` —— 4/6 个有
+- `LongCatMultiSpeakerTTS` —— 3/6 个有
+- `PreviewAny` —— 2/6 个有
+- `SaveAudio` —— 2/6 个有
+- `CR Text` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

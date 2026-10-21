@@ -3,62 +3,80 @@ name: unknown_workflow_video_upscale_lora_26
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.926
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree), FluxGuidance, GetImageSize+, HunyuanVideoLoraLoader, ImageScale, ImageUpscaleWithModel, KSamplerSelect, MathExpression|pysssss, ModelSamplingSD3, RandomNoise, SaveAnimatedWEBP, TeaCacheHunyuanVideoSampler_FOK, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
-problems: []
-missing: []
-members: [图片生成/文生图/混元视频.适用于低 VRAM + 升频器_1897293180122157057.json, 视频生成/文生视频/1897293180122157057.json]
+coverage: 0.425
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetNode, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMask, GrowMaskWithBlur, ImageCompositeMasked, ImageCrop, ImageResizeKJv2, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, MaskBoundingBox+, MaskPreview, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, SAMLoader, SaveImage, SetLatentNoiseMask, SetNode, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG]
+problems: [Steps较低可能导致细节不足]
+missing: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), MaskBoundingBox+]
+members: [图片生成/文生图/1947192243175239681.json, 图片生成/文生图/1948383571122749441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_26
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/混元视频.适用于低 VRAM + 升频器_1897293180122157057.json、视频生成/文生视频/1897293180122157057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1947192243175239681.json、图片生成/文生图/1948383571122749441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyHunyuanLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `GetImageSize+`
-- `HunyuanVideoLoraLoader`
-- `ImageScale`
+- `EmptySD3LatentImage`
+- `GetNode`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `GrowMask`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageCrop`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
-- `KSamplerSelect`
-- `MathExpression|pysssss`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `MaskBoundingBox+`
+- `MaskPreview`
 - `ModelSamplingSD3`
-- `RandomNoise`
-- `SaveAnimatedWEBP`
-- `TeaCacheHunyuanVideoSampler_FOK`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `SAMLoader`
+- `SaveImage`
+- `SetLatentNoiseMask`
+- `SetNode`
 - `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_VideoCombine`
+- `WanVideoNAG`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | double_blocks | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.5 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 最常用 double_blocks，2 个样本，一致性 100%
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（6/2 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：GroundingDinoModelLoader (segment anything)、GroundingDinoSAMSegment (segment anything)、MaskBoundingBox+
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

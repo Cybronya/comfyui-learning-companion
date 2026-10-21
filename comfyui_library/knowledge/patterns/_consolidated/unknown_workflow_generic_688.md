@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadImage, RH_KlingO1_StartToEnd, SaveVideo]
+common_nodes: [GeminiNanoBanana2V2, SaveImageAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/2033795843916042241.json, 视频生成/图生视频/2027740927002943490.json]
+members: [comfyui-workflow-templates-json/api_nano_banana_2_1_t2i.json, comfyui-workflow-templates-json/api_nano_banana_2_lite_t2i.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_688
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2033795843916042241.json、视频生成/图生视频/2027740927002943490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_nano_banana_2_1_t2i.json、comfyui-workflow-templates-json/api_nano_banana_2_lite_t2i.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,9 +23,8 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_KlingO1_StartToEnd`
-- `SaveVideo`
+- `GeminiNanoBanana2V2`
+- `SaveImageAdvanced`
 
 ## 典型参数
 

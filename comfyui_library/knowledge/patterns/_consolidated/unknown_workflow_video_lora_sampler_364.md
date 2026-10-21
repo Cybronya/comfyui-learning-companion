@@ -3,59 +3,63 @@ name: unknown_workflow_video_lora_sampler_364
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.6625
-common_nodes: [BasicGuider, BasicScheduler, Fast Groups Bypasser (rgthree), FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, FeiHouEasyH3RHPromptPreview, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderBypassModelOnly, ModelAttentionBackend, ResolutionSelector, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VHS_VideoCombine]
+coverage: 0.513
+common_nodes: [BasicScheduler, CLIPLoader, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 Remix双采样多参_2092127971757879297.json, 视频生成/图生视频/极致简化 H3无限画布式_2095953999940898818.json, 视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2093210345958625282.json, 视频生成/图生视频/极致简化 MiniMax H3 全功能  自动提示词 工作流（已修复） (1)_2089935656989585409.json, 视频生成/图生视频/模特步汝窑-极致简化 MiniMax H3 全功能  自动提示词 工作流_2094828825057255426.json, 视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2092301452621467649.json]
+members: [视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json, 视频生成/图生视频/poster animation_2094321304538279938.json, 视频生成/图生视频/【傲雪AIGC】MiniMax+H3首尾帧生视频版_2093696527855341570.json, 视频生成/文生视频/MiniMax+H3文生视频_2089205361046810625.json, 视频生成/文生视频/MiniMax-H3开源 文生视频_2094359561212882945.json, 视频生成/文生视频/MiniMax-H3开源 文生视频_2094381288823287810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_364
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Remix双采样多参_2092127971757879297.json、视频生成/图生视频/极致简化 H3无限画布式_2095953999940898818.json、视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2093210345958625282.json、视频生成/图生视频/极致简化 MiniMax H3 全功能  自动提示词 工作流（已修复） (1)_2089935656989585409.json、视频生成/图生视频/模特步汝窑-极致简化 MiniMax H3 全功能  自动提示词 工作流_2094828825057255426.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json、视频生成/图生视频/poster animation_2094321304538279938.json、视频生成/图生视频/【傲雪AIGC】MiniMax+H3首尾帧生视频版_2093696527855341570.json、视频生成/文生视频/MiniMax+H3文生视频_2089205361046810625.json、视频生成/文生视频/MiniMax-H3开源 文生视频_2094359561212882945.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
-- `Fast Groups Bypasser (rgthree)`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `FeiHouEasyH3RHPromptPreview`
+- `CLIPLoader`
 - `GetNode`
-- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoraLoaderBypassModelOnly`
-- `ModelAttentionBackend`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 5/6 个有
-- `FeiHouEasyH3RHLoraStack` —— 4/6 个有
-- `ModelPreviewOverrideKJ` —— 4/6 个有
-- `RandomSeedNoise` —— 4/6 个有
-- `RandomNoise` —— 2/6 个有
-- `easy clearCacheAll` —— 2/6 个有
-- `CM_FloatToInt` —— 1/6 个有
-- `DuckHideNode` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
+- `BasicGuider` —— 5/6 个有
+- `ComfyMathExpression` —— 5/6 个有
+- `ModelAttentionBackend` —— 5/6 个有
+- `Text` —— 5/6 个有
+- `LoadImage` —— 4/6 个有
+- `MiniMaxH3ImageToVideo` —— 4/6 个有
+- `VHS_LoadVideoFFmpeg` —— 4/6 个有
+- `孤海注释` —— 4/6 个有
+- `JjkText` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/6 个有
+- `CFGGuider` —— 1/6 个有
+- `CLIPTextEncode` —— 1/6 个有
+- `H3SigmaRefiner` —— 1/6 个有
+- `LayerUtility: TextJoin` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `MiniMaxH3SigmaShift` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `QwenH3PromptLocal` —— 1/6 个有
 
 ## 典型参数
 

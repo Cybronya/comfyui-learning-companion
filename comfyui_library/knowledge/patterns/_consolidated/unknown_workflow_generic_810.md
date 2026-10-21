@@ -3,36 +3,34 @@ name: unknown_workflow_generic_810
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.894
-common_nodes: [AudioCrop, Fast Bypasser (rgthree), ImpactSwitch, IndexTTS2Run, Int, LoadAudio, Mute / Bypass Repeater (rgthree), PreviewAudio, SaveAudio, Text Multiline]
+coverage: 0.5835
+common_nodes: [LoadImage, PreviewAny, RHHiddenNodes, TextInput_, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2-音频克隆_1967880817051598849.json, 音频生成/音频生成/IndexTTS2-音频克隆_1972192405107765250.json]
+members: [图片生成/文生图/首尾帧视频提示词生成+全节点注释_2057462783775694850.json, 视频生成/图生视频/2018232190584229890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_810
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2-音频克隆_1967880817051598849.json、音频生成/音频生成/IndexTTS2-音频克隆_1972192405107765250.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/首尾帧视频提示词生成+全节点注释_2057462783775694850.json、视频生成/图生视频/2018232190584229890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `Fast Bypasser (rgthree)`
-- `ImpactSwitch`
-- `IndexTTS2Run`
-- `Int`
-- `LoadAudio`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewAudio`
-- `SaveAudio`
-- `Text Multiline`
+- `LoadImage`
+- `PreviewAny`
+- `RHHiddenNodes`
+- `TextInput_`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
 
 ## 典型参数
 

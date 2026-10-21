@@ -1,71 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_vae_8
 type: Unknown Workflow
-frequency: 7
-level: weak
-coverage: 0.810143
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [easy clearCacheAll, CR SDXL Aspect Ratio]
-members: [图片生成/文生图/1966414867236368386.json, 图片生成/文生图/1966426602882183170.json, 图片生成/文生图/1966447914094637058.json, 图片生成/文生图/1966547887809343490.json, 图片生成/文生图/1967367971867910145.json, 图片生成/文生图/1967372243183525890.json, 图片生成/文生图/1968001076735651842.json]
+frequency: 12
+level: moderate
+coverage: 0.822917
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, EmptyFlux2LatentImage, Flux2Scheduler, INTConstant, JWString, KSamplerSelect, LoadAudio, PreviewAny, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveAudio, SaveImage, ScriptJSONParser, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSDefineSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, VAEDecode, VAEEncode, parse_json_node]
+problems: []
+missing: []
+members: [图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2017634082175324161.json, 图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2018154162223058946.json, 图片生成/文生图/【100%全自动版】有声小说+分镜图一条龙直出 林耀_2017439134444429313.json, 图片生成/文生图/分镜头图片生成+AI漫剧+小说+短剧+自动配音_2018288054846361602.json, 图片生成/文生图/短剧自动配音+分镜_2018625997012213762.json, 视频生成/图生视频/2041960740780777474.json, 视频生成/文生视频/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2070634252647096321.json, 视频生成/文生视频/短剧+小说＋自动配音ai生成动画_2018483381134172161.json, 音频生成/音频生成/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2017966660707164161.json, 音频生成/音频生成/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2043573314668466178.json, 音频生成/音频生成/【真全自动版】全自动有声小说+分镜图一条龙_2016070253796659201.json, 音频生成/音频生成/原版解说类 -短剧自动配音+分镜_2049180878814846977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1966414867236368386.json、图片生成/文生图/1966426602882183170.json、图片生成/文生图/1966447914094637058.json、图片生成/文生图/1966547887809343490.json、图片生成/文生图/1967367971867910145.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2017634082175324161.json、图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2018154162223058946.json、图片生成/文生图/【100%全自动版】有声小说+分镜图一条龙直出 林耀_2017439134444429313.json、图片生成/文生图/分镜头图片生成+AI漫剧+小说+短剧+自动配音_2018288054846361602.json、图片生成/文生图/短剧自动配音+分镜_2018625997012213762.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `CR Text`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `INTConstant`
+- `JWString`
+- `KSamplerSelect`
+- `LoadAudio`
+- `PreviewAny`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveAudio`
 - `SaveImage`
+- `ScriptJSONParser`
+- `ShowText|pysssss`
+- `TDQwen3TTSBatchGenerateSpeaker`
+- `TDQwen3TTSDefineSpeaker`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSMultiDialog`
 - `VAEDecode`
-- `VAELoader`
+- `VAEEncode`
+- `parse_json_node`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 6/7 个有
-- `CFGNorm` —— 5/7 个有
-- `JjkText` —— 5/7 个有
-- `LoadImage` —— 5/7 个有
-- `NunchakuQwenImageDiTLoader` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 3/7 个有
-- `UNETLoader` —— 3/7 个有
-- `CR SDXL Aspect Ratio` —— 1/7 个有
-- `ConditioningZeroOut` —— 1/7 个有
-- `TextCombinerTwo` —— 1/7 个有
-- `easy clearCacheAll` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 10/12 个有
+- `RHHiddenNodes` —— 10/12 个有
+- `WujiCleaner` —— 10/12 个有
+- `easy promptConcat` —— 10/12 个有
+- `CLIPLoader` —— 8/12 个有
+- `UNETLoader` —— 8/12 个有
+- `VAELoader` —— 8/12 个有
+- `BatchImageSelector` —— 6/12 个有
+- `CheckpointLoaderSimple` —— 4/12 个有
+- `WujiBatchImageSelector` —— 4/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
+- `GetNode` —— 2/12 个有
+- `LayerUtility: BatchSelector` —— 2/12 个有
+- `RH_LLMAPI_Pro_Node` —— 2/12 个有
+- `SetNode` —— 2/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 30 | 7 | 19% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 7 | 36% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | normal | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 30，7 个样本，取值分散，一致性仅 19%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，7 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 normal，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（5/7 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：easy clearCacheAll、CR SDXL Aspect Ratio
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

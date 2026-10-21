@@ -1,67 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_31
 type: Unknown Workflow
-frequency: 8
+frequency: 13
 level: strong
-coverage: 0.912125
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.706615
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1980210462413459458.json, 视频生成/图生视频/1981669095458381825.json, 视频生成/图生视频/1985890821373341698.json, 视频生成/图生视频/1972577637715668993.json, 视频生成/图生视频/1975896909040758785.json, 视频生成/图生视频/2016122544050413569.json, 视频生成/图生视频/1976186558992793601.json, 视频生成/图生视频/1977433925884747777.json]
+members: [图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json, 图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json, 图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json, 图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json, 图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json, 图片生成/文生图/Ideogram4智能JSON格式文生图_2064134445258596354.json, 图片生成/文生图/Ideogram4美学设计全自动文生图_2063531342176014337.json, 图片生成/文生图/Ideogram4自定义文生图_超绝美感_2064900969019822082.json, 图片生成/文生图/Ideogram4（平替MJ）文生图美学大师_2067620647542542337.json, 图片生成/文生图/[Ideogram 4 系列 01] Ideogram 4 第一课：官方 ComfyUI 工作流解析_2084558233645174785.json, 图片生成/文生图/[Ideogram 4 系列 02] Prompt Builder 解析_2084481304804024321.json, 图片生成/文生图/文生图 布局可控 Ideogram4！_2063268058420039682.json, 图片生成/文生图/设计师福音 文生图精准编辑  ideogram4_2063246111061663745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_31
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1980210462413459458.json、视频生成/图生视频/1981669095458381825.json、视频生成/图生视频/1985890821373341698.json、视频生成/图生视频/1972577637715668993.json、视频生成/图生视频/1975896909040758785.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json、图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json、图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json、图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json、图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `ModelSamplingSD3`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `PrimitiveInt`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `PathchSageAttentionKJ` —— 7/8 个有
-- `WanImageToVideo` —— 7/8 个有
-- `CR Prompt Text` —— 6/8 个有
-- `ImageFromBatch+` —— 6/8 个有
-- `SaveImage` —— 5/8 个有
-- `TT_img_enc` —— 5/8 个有
-- `TorchCompileModel` —— 5/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `TT_img_enc_v2` —— 1/8 个有
-- `WanFirstLastFrameToVideo` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `EmptyFlux2LatentImage` —— 11/13 个有
+- `PreviewAny` —— 8/13 个有
+- `PrimitiveStringMultiline` —— 8/13 个有
+- `CR Text` —— 7/13 个有
+- `GetNode` —— 6/13 个有
+- `SetNode` —— 6/13 个有
+- `CustomCombo` —— 5/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/13 个有
+- `Ideogram4PromptBuilderKJ` —— 5/13 个有
+- `Int` —— 5/13 个有
+- `PreviewImage` —— 5/13 个有
+- `LoadImage` —— 4/13 个有
+- `easy showAnything` —— 4/13 个有
+- `RHLLMChatNode` —— 3/13 个有
+- `TextGenerate` —— 3/13 个有
+- `EmptyLatentImage` —— 2/13 个有
+- `Ideogram4OptimizationsKJ` —— 2/13 个有
+- `ImpactSwitch` —— 2/13 个有
+- `RH_LLMAPI_NODE` —— 2/13 个有
+- `easy promptLine` —— 2/13 个有
+- `DeepTranslatorTextNode` —— 1/13 个有
+- `StringConcatenate` —— 1/13 个有
+- `取色器_孤海` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 62% |
-| Prompt 约束强度(CFG) | 8 | 6 - 10 | 8 | 88% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 75% |
-| 重绘幅度 | simple | - | 8 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,8 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 62%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 10，8 个样本，取值集中（一致性 88%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 75%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

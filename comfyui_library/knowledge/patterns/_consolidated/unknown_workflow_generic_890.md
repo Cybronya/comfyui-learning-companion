@@ -3,33 +3,31 @@ name: unknown_workflow_generic_890
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.775
-common_nodes: [IndexTTSRun, LoadAudio, PrimitiveStringMultiline, SaveAudio]
+coverage: 0.7085
+common_nodes: [RH_Veo3_Text2Video, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/最新Index-TTS 1.5极速声音克隆_1924704564446941186.json, 音频生成/音频生成/（顶级音色）真实语气一比一克隆音色_1924839465355780098.json]
+members: [视频生成/文生视频/1979107697834496001.json, 视频生成/文生视频/谷歌文生视频_1987882590080315393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_890
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最新Index-TTS 1.5极速声音克隆_1924704564446941186.json、音频生成/音频生成/（顶级音色）真实语气一比一克隆音色_1924839465355780098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1979107697834496001.json、视频生成/文生视频/谷歌文生视频_1987882590080315393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTSRun`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
+- `RH_Veo3_Text2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
+- `Textbox` —— 1/2 个有
 
 ## 典型参数
 

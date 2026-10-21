@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_131
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.904857
-common_nodes: [RH_MinimaxHailuoH3TextToVideo, SaveVideo]
+coverage: 0.943375
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3满血版文生视频_2083612694288097281.json, 视频生成/文生视频/H3文生视频工作流｜MiniMax H3 2K 十五秒长镜头_2099348920269885442.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083029507518324737.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083070394210283521.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083540113329577985.json, 视频生成/文生视频/Minimax H3 文生视频工作流（2K视频直出）_2083093802167922689.json, 视频生成/文生视频/Minimax H3-文生图_2083243371103084546.json]
+members: [图片生成/文生图/【推荐】 🍌2 Pro单图编辑_2018272466895904769.json, 图片生成/文生图/【推荐】 🍌Pro多图编辑_2018276372711477249.json, 图片生成/文生图/全能图像 巴拿拿 pro_2010271126479446017.json, 图片生成/文生图/全能图像PRO生成编辑_2021620697671405569.json, 图片生成/文生图/全能图片 Pro-黄色椒蕉_2012152922833948674.json, 图片生成/文生图/全能图片 Pro1k每天5张_2017133816510423041.json, 图片生成/文生图/全能图片 Pro_2054750012004945922.json, 图片生成/文生图/全能图片PRO惊喜上线！_2073283385648312321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_131
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3满血版文生视频_2083612694288097281.json、视频生成/文生视频/H3文生视频工作流｜MiniMax H3 2K 十五秒长镜头_2099348920269885442.json、视频生成/文生视频/MiniMax-H3 文生视频_2083029507518324737.json、视频生成/文生视频/MiniMax-H3 文生视频_2083070394210283521.json、视频生成/文生视频/MiniMax-H3 文生视频_2083540113329577985.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/【推荐】 🍌2 Pro单图编辑_2018272466895904769.json、图片生成/文生图/【推荐】 🍌Pro多图编辑_2018276372711477249.json、图片生成/文生图/全能图像 巴拿拿 pro_2010271126479446017.json、图片生成/文生图/全能图像PRO生成编辑_2021620697671405569.json、图片生成/文生图/全能图片 Pro-黄色椒蕉_2012152922833948674.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/7 个有
+- `Text Input [Dream]` —— 2/8 个有
+- `Text Multiline` —— 1/8 个有
 
 ## 典型参数
 

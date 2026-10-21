@@ -3,72 +3,71 @@ name: unknown_workflow_video_lora_sampler_211
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.875556
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, easy promptLine]
+coverage: 0.87
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewImage, SamplerCustom, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/2005541494670983170.json, 视频生成/图生视频/2011030476026286081.json, 视频生成/图生视频/2010957164097052674.json, 视频生成/图生视频/2035643056212414465.json, 视频生成/图生视频/2011772862205534209.json, 视频生成/图生视频/2011765719033188353.json, 视频生成/图生视频/2011775856401715201.json, 视频生成/图生视频/2010976996687351810.json, 视频生成/图生视频/2012053341018263553.json]
+members: [视频生成/图生视频/2078887009887809537.json, 视频生成/图生视频/2063484969040834562.json, 视频生成/图生视频/2063953334742114305.json, 视频生成/图生视频/2063277846595981313.json, 视频生成/图生视频/2063095957193056258.json, 视频生成/图生视频/2064190064883757058.json, 视频生成/图生视频/2070140251913412610.json, 视频生成/图生视频/2063451462600052737.json, 视频生成/图生视频/2077620703326728194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_211
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2005541494670983170.json、视频生成/图生视频/2011030476026286081.json、视频生成/图生视频/2010957164097052674.json、视频生成/图生视频/2035643056212414465.json、视频生成/图生视频/2011772862205534209.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2078887009887809537.json、视频生成/图生视频/2063484969040834562.json、视频生成/图生视频/2063953334742114305.json、视频生成/图生视频/2063277846595981313.json、视频生成/图生视频/2063095957193056258.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Text`
-- `DiffusionModelLoaderKJ`
-- `ImageBatchExtendWithOverlap`
-- `Int`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `GuHaiAutoImageSplit`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SimpleMath+`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `PreviewImage`
+- `SamplerCustom`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptLine`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `> Text Replace` —— 4/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `CR Text Concatenate` —— 4/9 个有
-- `ProcessString` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `TextPreview` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `SomethingToString` —— 3/9 个有
-- `Split String` —— 3/9 个有
-- `DuckHideNode` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `TT_img_enc` —— 2/9 个有
-- `TT_img_enc_v2` —— 2/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `LTXDirectorGuide` —— 7/9 个有
+- `YusuLTXDirector` —— 6/9 个有
+- `CheckpointLoaderSimple` —— 5/9 个有
+- `CreateVideo` —— 5/9 个有
+- `GetVideoComponents` —— 5/9 个有
+- `UNETLoader` —— 4/9 个有
+- `孤海注释` —— 3/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `Yusu-LTXDirector` —— 2/9 个有
+- `YusuLTXDirectorGuide` —— 2/9 个有
+- `CS-LTXGridDirector` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 56% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
-| 采样算法 | 3.5 | 1 - 3.5 | 9 | 48% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 56%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

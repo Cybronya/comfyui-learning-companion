@@ -1,91 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_30
 type: Unknown Workflow
-frequency: 25
-level: moderate
-coverage: 0.91144
-common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DF_Int_to_Float, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 26
+level: strong
+coverage: 0.602692
+common_nodes: [CLIPVisionLoader, DrawViTPose, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3脱口秀一键制作_2087497245485780994.json, 视频生成/图生视频/2057094606336118785.json, 视频生成/图生视频/2081970099841495042.json, 视频生成/图生视频/2082088616767086594.json, 视频生成/图生视频/2070813395804319745.json, 视频生成/图生视频/2071195369723224066.json, 视频生成/图生视频/2076994911257317377.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2083129366271315970.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2083162929670737922.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2095825968475758593.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2095831915289993217.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2103436354901340161.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2103452178303250433.json, 视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2111305228783013889.json, 视频生成/图生视频/2050899507684098050.json, 视频生成/图生视频/2069653521200402433.json, 视频生成/图生视频/2070743071674945537.json, 视频生成/图生视频/2072940595001249794.json, 视频生成/图生视频/脱口秀爆款-LTX2.3极速文_图生视频工作流_2074485641030750209.json, 视频生成/文生视频/LTX2.3-OmniNFT-RL-Lora 文_图生视频_2057113427591647233.json, 视频生成/文生视频/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2083450669406711809.json, 视频生成/文生视频/LTX2.3极速-文_图生视频_2048020134731718657.json, 视频生成/文生视频/LTX2.3极速-文_图生视频_可选放大_2048719748099219457.json, 视频生成/文生视频/LTX2.3脱口秀一键制作_2043887479178141698.json, 视频生成/文生视频/LTX不出字幕单图参考_无压缩参考_2049840291389157378.json]
+members: [视频生成/图生视频/2003700640893288450.json, 视频生成/图生视频/2049893204031488002.json, 视频生成/图生视频/2042582047956410370.json, 视频生成/图生视频/2070049005316435969.json, 视频生成/图生视频/animate舞蹈迁移摇一摇_2061344115643736066.json, 视频生成/图生视频/animate舞蹈迁移摇一摇_2099776395709861890.json, 视频生成/图生视频/animate舞蹈迁移摇一摇_2100036331069075458.json, 视频生成/图生视频/2079228691137257473.json, 视频生成/图生视频/2081019730562998274.json, 视频生成/图生视频/2055133948241563650.json, 视频生成/图生视频/2072605420753084417.json, 视频生成/图生视频/2055152024093765633.json, 视频生成/图生视频/本地开源免费， tiktok dancing_2054138634953084930.json, 视频生成/图生视频/本地开源免费，4 minutes_2054476614616010753.json, 视频生成/图生视频/本地开源免费，bubblepop_2054151947208413186.json, 视频生成/图生视频/2054190698328535041.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2053700198567817217.json, 视频生成/图生视频/2053885364179357697.json, 视频生成/图生视频/2054085546393260034.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2054098992224579585.json, 视频生成/图生视频/2055285137239232514.json, 视频生成/图生视频/本地开源免费，动作迁移_2053895835615809538.json, 视频生成/图生视频/本地开源免费，我最红真人版_2055202834680950786.json, 视频生成/图生视频/本地开源免费，杀青梗_2054219479617425409.json, 视频生成/图生视频/2055312593698467841.json, 视频生成/图生视频/2054476626561388545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_30
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（数字人/数字人/LTX2.3脱口秀一键制作_2087497245485780994.json、视频生成/图生视频/2057094606336118785.json、视频生成/图生视频/2081970099841495042.json、视频生成/图生视频/2082088616767086594.json、视频生成/图生视频/2070813395804319745.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/2003700640893288450.json、视频生成/图生视频/2049893204031488002.json、视频生成/图生视频/2042582047956410370.json、视频生成/图生视频/2070049005316435969.json、视频生成/图生视频/animate舞蹈迁移摇一摇_2061344115643736066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：26
+- **可信度**：强结论
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DF_Int_to_Float`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+全部 26 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DrawViTPose`
 - `ImageResizeKJv2`
-- `Int`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `SamplerCustom`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VAELoaderKJ`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVImgToVideoConditionOnly` —— 23/25 个有
-- `LTXVPreprocess` —— 23/25 个有
-- `PrimitiveBoolean` —— 23/25 个有
-- `VRAMReserver` —— 23/25 个有
-- `easy getNode` —— 23/25 个有
-- `easy setNode` —— 23/25 个有
-- `CFGGuider` —— 22/25 个有
-- `LTXVLatentUpsampler` —— 22/25 个有
-- `LatentUpscaleModelLoader` —— 22/25 个有
-- `ManualSigmas` —— 22/25 个有
-- `RandomNoise` —— 22/25 个有
-- `SamplerCustomAdvanced` —— 22/25 个有
-- `LTXVImgToVideoInplace` —— 21/25 个有
-- `Fast Groups Bypasser (rgthree)` —— 20/25 个有
-- `LTXVCropGuides` —— 20/25 个有
-- `GetNode` —— 2/25 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/25 个有
-- `MathExpression|pysssss` —— 2/25 个有
-- `MuyeTextEditOutput` —— 2/25 个有
-- `PreviewAny` —— 2/25 个有
-- `SetNode` —— 2/25 个有
-- `CR Prompt Text` —— 1/25 个有
-- `PromptRelayEncodeTimeline` —— 1/25 个有
-- `Text` —— 1/25 个有
-- `easy positive` —— 1/25 个有
+- `GetNode` —— 25/26 个有
+- `PreviewImage` —— 25/26 个有
+- `SetNode` —— 25/26 个有
+- `WanVideoLoraSelectMulti` —— 25/26 个有
+- `CR Prompt Text` —— 24/26 个有
+- `JWInteger` —— 24/26 个有
+- `WanVideoTorchCompileSettings` —— 24/26 个有
+- `WanVideoBlockSwap` —— 23/26 个有
+- `easy showAnything` —— 23/26 个有
+- `VHS_VideoInfoSource` —— 22/26 个有
+- `LayerUtility: PurgeVRAM V2` —— 19/26 个有
+- `FlashVSR_SM_KSampler` —— 16/26 个有
+- `FlashVSR_SM_Model` —— 16/26 个有
+- `GetImageRangeFromBatch` —— 16/26 个有
+- `GetImageSize` —— 16/26 个有
+- `easy indexAnything` —— 7/26 个有
+- `GetImageSizeAndCount` —— 3/26 个有
+- `ImageConcatMulti` —— 3/26 个有
+- `ImageConcatenate_UTK` —— 3/26 个有
+- `easy mathInt` —— 3/26 个有
+- `INTConstant` —— 2/26 个有
+- `Bjornulf_ShowInt` —— 1/26 个有
+- `DWPreprocessor` —— 1/26 个有
+- `ImageFromBatch+` —— 1/26 个有
+- `ImageMirror` —— 1/26 个有
+- `ImagePadKJ` —— 1/26 个有
+- `RHHiddenNodes` —— 1/26 个有
+- `VHS_GetImageCount` —— 1/26 个有
+- `VHS_SelectImages` —— 1/26 个有
+- `WanVideoContextOptions` —— 1/26 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 305 | 25 | 50% |
-| 高度 | 25 | 24 - 25 | 25 | 99% |
+| 采样步数 | 1.35013e+09 | 1.27484e+08 - 2.14652e+09 | 16 | 54% |
+| Prompt 约束强度(CFG) | randomize | - | 16 | 100% |
+| 采样算法 | 2 | 2 - 2 | 16 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 16 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 16 | 100% |
 
 ## 常见问题
 
@@ -93,5 +89,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 305，25 个样本
-- 高度 中位数 25，观测区间 24 - 25，25 个样本，取值集中（一致性 99%）
+- 采样步数 中位数 1.35013e+09，观测区间 1.27484e+08 - 2.14652e+09，16 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，16 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，16 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，16 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，16 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.14652e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

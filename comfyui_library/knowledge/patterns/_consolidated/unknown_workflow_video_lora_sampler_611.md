@@ -3,56 +3,69 @@ name: unknown_workflow_video_lora_sampler_611
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.942667
-common_nodes: [ComfyNumberConvert, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.666667
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, GetNode, ImageScaleToMaxDimension, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3SigmaShift, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncodeTiled, VAELoader, VHS_VideoCombine, VisualizeSigmasKJ, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059078929838854146.json, 视频生成/图生视频/2059921141237641218.json, 视频生成/图生视频/longcatAvatar1.5 图片数字人v1_2106246745930944513.json]
+members: [视频生成/图生视频/MiniMax 4步 LoRa 加速 首尾帧视频 + Ltx 视频放大工作流_2085659057788121090.json, 视频生成/图生视频/MiniMax H3  ref-多参考注入 - 4步加速 视频生成+LTX放大工作流_2085936299189563393.json, 视频生成/文生视频/MiniMax H3+新4步LoRaV1.1+首尾帧视频 + LTX2.5 视频超分工作流_2092489232135839745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_611
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2059078929838854146.json、视频生成/图生视频/2059921141237641218.json、视频生成/图生视频/longcatAvatar1.5 图片数字人v1_2106246745930944513.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax 4步 LoRa 加速 首尾帧视频 + Ltx 视频放大工作流_2085659057788121090.json、视频生成/图生视频/MiniMax H3  ref-多参考注入 - 4步加速 视频生成+LTX放大工作流_2085936299189563393.json、视频生成/文生视频/MiniMax H3+新4步LoRaV1.1+首尾帧视频 + LTX2.5 视频超分工作流_2092489232135839745.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ComfyNumberConvert`
-- `LoadAudio`
+- `BasicGuider`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ComfyMathExpression`
+- `GetNode`
+- `ImageScaleToMaxDimension`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVConditioning`
+- `LTXVLoopingSampler`
+- `LTXVSpatioTemporalTiledVAEDecode`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `LongCatAvatarWhisperEmbeds`
-- `TrimAudioDuration`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MiniMaxH3SigmaShift`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `SolAttnPatch`
+- `SpectrumApplyMiniMaxH3`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `VisualizeSigmasKJ`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `ComfyMathExpression` —— 1/3 个有
-- `FloatConstant` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `MiniMaxH3ImageToVideo` —— 2/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `LTXVAudioVAELoader` —— 1/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
+- `VHS_LoadAudio` —— 1/3 个有
 
 ## 典型参数
 

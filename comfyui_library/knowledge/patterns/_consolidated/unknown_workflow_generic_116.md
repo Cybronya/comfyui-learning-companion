@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_116
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.946375
-common_nodes: [LoadImage, RH_RhartVideoV31FastStartEndToVideo, SaveVideo]
+coverage: 0.945444
+common_nodes: [IndexTTS2Run, LoadAudio, PreviewAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038487102777724929.json, 视频生成/图生视频/2033498737447804930.json, 视频生成/图生视频/2046112095577579522.json, 视频生成/图生视频/2046251858011889665.json, 视频生成/图生视频/2046878059822850050.json, 视频生成/图生视频/2049857854470934530.json, 视频生成/图生视频/2047202620065980418.json, 视频生成/文生视频/角色发现镜头，对镜头做互动动作，添加人群噪音、体育场灯光和动态摄像机角度。+全节点注释_2054074849928196098.json]
+members: [音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json, 音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_1965585853093396482.json, 音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_2103011735132262401.json, 音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json, 音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json, 音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json, 音频生成/音频生成/IndexTTS2声音克隆_音色_情感模仿_2066476662186930178.json, 音频生成/音频生成/IndexTTS2最强配音带感情模型-V2_1983545218752552962.json, 音频生成/音频生成/IndexTTS2音频克隆_1980212143188512770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_116
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2038487102777724929.json、视频生成/图生视频/2033498737447804930.json、视频生成/图生视频/2046112095577579522.json、视频生成/图生视频/2046251858011889665.json、视频生成/图生视频/2046878059822850050.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json、音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_1965585853093396482.json、音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_2103011735132262401.json、音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json、音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
 - **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoV31FastStartEndToVideo`
-- `SaveVideo`
+全部 9 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoV31ProStartEndToVideo` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `CR Text` —— 4/9 个有
+- `Fast Groups Muter (rgthree)` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `SaveAudioMP3` —— 1/9 个有
 
 ## 典型参数
 

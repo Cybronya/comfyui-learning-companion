@@ -2,76 +2,84 @@
 name: unknown_workflow_video_lora_sampler_257
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.87
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: weak
+coverage: 0.752
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, EmptyLTXVLatentVideo, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, RegexReplace, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2075633285170032642.json, 视频生成/图生视频/2075860093270323201.json, 视频生成/图生视频/2076950547332161538.json, 视频生成/图生视频/2075534910647005186.json, 视频生成/图生视频/2076643931248488450.json, 视频生成/图生视频/2077033010171568129.json, 视频生成/图生视频/2075515497583570946.json, 视频生成/图生视频/2076480633026727938.json]
+members: [视频生成/图生视频/2069279414692704257.json, 视频生成/图生视频/2068903513152909314.json, 视频生成/图生视频/2069328807546417154.json, 视频生成/图生视频/2064345849135722497.json, 视频生成/图生视频/2064359460616884226.json, 视频生成/图生视频/2064002512151212034.json, 视频生成/图生视频/2069219281786720258.json, 视频生成/图生视频/2069991614805798913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_257
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2075633285170032642.json、视频生成/图生视频/2075860093270323201.json、视频生成/图生视频/2076950547332161538.json、视频生成/图生视频/2075534910647005186.json、视频生成/图生视频/2076643931248488450.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2069279414692704257.json、视频生成/图生视频/2068903513152909314.json、视频生成/图生视频/2069328807546417154.json、视频生成/图生视频/2064345849135722497.json、视频生成/图生视频/2064359460616884226.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `KSamplerAdvanced`
-- `LoadAudio`
+- `CreateVideo`
+- `Dapao_LlamaCaption`
+- `Dapao_LlamaCaptionOptions`
+- `EmptyLTXVLatentVideo`
+- `GetVideoComponents`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
-- `UNETLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `RegexReplace`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniS2VConditioning` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
-- `INTConstant` —— 7/8 个有
-- `RIFEInterpolation` —— 7/8 个有
-- `AudioConcat` —— 5/8 个有
-- `Float` —— 2/8 个有
-- `IndexTTS2Run` —— 2/8 个有
-- `PreviewAudio` —— 2/8 个有
-- `RunningHub Deepcleaner` —— 2/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `BerniniS2VConditioningV2` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `ImpactFloat` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `RIFE VFI` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `VAELoaderKJ` —— 7/8 个有
+- `CheckpointLoaderSimple` —— 5/8 个有
+- `GuHaiAutoImageSplit` —— 5/8 个有
+- `MathExpression|pysssss` —— 5/8 个有
+- `PrimitiveInt` —— 5/8 个有
+- `PrimitiveStringMultiline` —— 5/8 个有
+- `SaveImage` —— 5/8 个有
+- `StringConcatenate` —— 5/8 个有
+- `CR Prompt Text` —— 3/8 个有
+- `Float` —— 3/8 个有
+- `GetNode` —— 3/8 个有
+- `Int` —— 3/8 个有
+- `LTXICLoRALoaderModelOnly` —— 3/8 个有
+- `LowVRAMCheckpointLoader` —— 3/8 个有
+- `MultiTextConcatenate` —— 3/8 个有
+- `RH_LLMAPI_Pro_Node` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `SimpleMath+` —— 3/8 个有
+- `孤海注释` —— 3/8 个有
+- `DualCLIPLoader` —— 2/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 88% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | dpmpp_2m_sde | - | 8 | 100% |
-| 重绘幅度 | sgm_uniform | - | 8 | 100% |
+| 宽度 | 97 | 97 - 241 | 8 | 54% |
+| 高度 | 25 | 25 - 50 | 8 | 65% |
 
 ## 常见问题
 
@@ -79,8 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 88%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m_sde，8 个样本，一致性 100%
-- 重绘幅度 最常用 sgm_uniform，8 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 241，8 个样本
+- 高度 中位数 25，观测区间 25 - 50，8 个样本

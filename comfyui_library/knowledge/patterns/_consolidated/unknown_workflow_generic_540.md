@@ -3,37 +3,33 @@ name: unknown_workflow_generic_540
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.863
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 1
+common_nodes: [ExecutionBlocker, ImpactNeg, MuyeTextEditOutput, PrimitiveBoolean, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/opsv-声音克隆_2061483328276090881.json, 音频生成/音频生成/声音克隆 Qwen3 TTS 真实复制音频   极速版 音色参考_2017868031271116802.json, 音频生成/音频生成/最新Qwen3 TTS 声音克隆_2018610702222626817.json]
+members: [图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_540
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/opsv-声音克隆_2061483328276090881.json、音频生成/音频生成/声音克隆 Qwen3 TTS 真实复制音频   极速版 音色参考_2017868031271116802.json、音频生成/音频生成/最新Qwen3 TTS 声音克隆_2018610702222626817.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `TextInputBasic` —— 1/3 个有
+- `ExecutionBlocker`
+- `ImpactNeg`
+- `MuyeTextEditOutput`
+- `PrimitiveBoolean`
+- `RH_RhartImageG25FlareTextToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

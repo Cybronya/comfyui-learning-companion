@@ -1,99 +1,65 @@
 ---
 name: unknown_workflow_sampler_unet_vae_146
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: strong
-coverage: 0.81375
-common_nodes: [ApplyTextureToMesh, BakeAmbientOcclusion, BakeNormalMapFromMesh, BakeTextureFromVoxel, CFGOverride, CLIPVisionLoader, DecimateMesh, EmptyTrellis2LatentStructure, GetMeshInfo, ImageCropToMask, KSampler, LoadBackgroundRemovalModel, LoadImage, MeshSmoothNormals, MeshToFile3D, ModelSamplingSD3, PaintMesh, Preview3DAdvanced, PreviewImage, PrimitiveInt, RemeshMesh, RemoveBackground, RenderUVAtlas, RescaleCFG, Save3DAdvanced, Trellis2ShapeStage, Trellis2TextureStage, Trellis2UpsampleStage, UNETLoader, UnwrapMesh, VAELoader, VaeDecodeShapeTrellis, VaeDecodeStructureTrellis2, VaeDecodeTextureTrellis, VoxelToMesh]
-problems: [发现KSampler但没有VAEDecode]
-missing: []
-members: [comfyui-workflow-templates-json/3d_pixal3d_multi_views.json, comfyui-workflow-templates-json/3d_pixal3d_trellis2_image_to_model.json, 数字人/数字人/3d_pixal3d_multi_views四视图生成模型_2108829641850056706.json, 数字人/数字人/3d模型生成_pixal3d_trellis2_image_to_model_2108827029666881538.json]
+coverage: 0.789
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptySD3LatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
+missing: [easy int]
+members: [图片生成/文生图/1923305531946299393.json, 图片生成/文生图/1932014239752323074.json, 图片生成/文生图/1965956635371941889.json, 图片生成/文生图/1977989588658651138.json, 图片生成/文生图/国漫美女生成器_2059552047061626882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_146
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/3d_pixal3d_multi_views.json、comfyui-workflow-templates-json/3d_pixal3d_trellis2_image_to_model.json、数字人/数字人/3d_pixal3d_multi_views四视图生成模型_2108829641850056706.json、数字人/数字人/3d模型生成_pixal3d_trellis2_image_to_model_2108827029666881538.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1923305531946299393.json、图片生成/文生图/1932014239752323074.json、图片生成/文生图/1965956635371941889.json、图片生成/文生图/1977989588658651138.json、图片生成/文生图/国漫美女生成器_2059552047061626882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyTextureToMesh`
-- `BakeAmbientOcclusion`
-- `BakeNormalMapFromMesh`
-- `BakeTextureFromVoxel`
-- `CFGOverride`
-- `CLIPVisionLoader`
-- `DecimateMesh`
-- `EmptyTrellis2LatentStructure`
-- `GetMeshInfo`
-- `ImageCropToMask`
-- `KSampler`
-- `LoadBackgroundRemovalModel`
-- `LoadImage`
-- `MeshSmoothNormals`
-- `MeshToFile3D`
-- `ModelSamplingSD3`
-- `PaintMesh`
-- `Preview3DAdvanced`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RemeshMesh`
-- `RemoveBackground`
-- `RenderUVAtlas`
-- `RescaleCFG`
-- `Save3DAdvanced`
-- `Trellis2ShapeStage`
-- `Trellis2TextureStage`
-- `Trellis2UpsampleStage`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `UnwrapMesh`
+- `VAEDecode`
 - `VAELoader`
-- `VaeDecodeShapeTrellis`
-- `VaeDecodeStructureTrellis2`
-- `VaeDecodeTextureTrellis`
-- `VoxelToMesh`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 2/4 个有
-- `LoadMoGeModel` —— 2/4 个有
-- `MaskPreview` —— 2/4 个有
-- `MoGeGeometryToFOV` —— 2/4 个有
-- `MoGeInference` —— 2/4 个有
-- `Pixal3DConditioning` —— 2/4 个有
-- `Pixal3DMultiViewConditioning` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `SaveImageAdvanced` —— 2/4 个有
-- `Trellis2Conditioning` —— 2/4 个有
-- `ImageCropV2` —— 1/4 个有
+- `CLIPTextEncodeFlux` —— 4/5 个有
+- `ModelSamplingFlux` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `LoraLoader` —— 3/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `easy int` —— 2/5 个有
+- `CLIPTextEncode` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `TextCombinerTwo` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12 | 12 - 20 | 4 | 75% |
-| Prompt 约束强度(CFG) | 7.5 | 7.5 - 7.5 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 模型强度 | 0.8 | 0.8 - 0.9 | 3 | 94% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 12 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 7.5，观测区间 7.5 - 7.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode
+- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 0.9，3 个样本，取值集中（一致性 94%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：easy int

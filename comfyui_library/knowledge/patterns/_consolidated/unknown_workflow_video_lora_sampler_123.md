@@ -3,80 +3,59 @@ name: unknown_workflow_video_lora_sampler_123
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.457231
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.938923
+common_nodes: [CreateCFGScheduleFloatList, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073324810372993026.json, 视频生成/图生视频/2064678206946496514.json, 视频生成/图生视频/2065273822449856514.json, 视频生成/图生视频/2067601389454454786.json, 视频生成/图生视频/2067602340542246914.json, 视频生成/图生视频/2065718753207349250.json, 视频生成/图生视频/2065006346432503810.json, 视频生成/图生视频/2066834222895161346.json, 视频生成/图生视频/2065258951524048898.json, 视频生成/图生视频/2067171226954584065.json, 视频生成/图生视频/2069078995290906625.json, 视频生成/图生视频/2066697586874085378.json, 视频生成/图生视频/2065406697937657858.json]
+members: [视频生成/图生视频/2053486047740350466.json, 视频生成/图生视频/1952003952139292673.json, 视频生成/图生视频/2061786208002465793.json, 视频生成/图生视频/2061806465001803778.json, 视频生成/图生视频/1950495596585144322.json, 视频生成/图生视频/1952283809247080449.json, 视频生成/图生视频/1968577373975261186.json, 视频生成/图生视频/2015424489110118402.json, 视频生成/图生视频/1949986819199909890.json, 视频生成/图生视频/1950060354116214786.json, 视频生成/图生视频/1955263438596423682.json, 视频生成/图生视频/1950132208273154049.json, 视频生成/文生视频/1950433801442910210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_123
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2073324810372993026.json、视频生成/图生视频/2064678206946496514.json、视频生成/图生视频/2065273822449856514.json、视频生成/图生视频/2067601389454454786.json、视频生成/图生视频/2067602340542246914.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2053486047740350466.json、视频生成/图生视频/1952003952139292673.json、视频生成/图生视频/2061786208002465793.json、视频生成/图生视频/2061806465001803778.json、视频生成/图生视频/1950495596585144322.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `CreateCFGScheduleFloatList`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorTransfer` —— 12/13 个有
-- `GetNode` —— 11/13 个有
-- `ImageConcatMulti` —— 11/13 个有
-- `ImageFromBatch` —— 11/13 个有
-- `PreviewAny` —— 11/13 个有
-- `SetNode` —— 11/13 个有
-- `SimpleMath+` —— 11/13 个有
-- `WanChunkFeedForward` —— 11/13 个有
-- `ttN int` —— 11/13 个有
-- `easy cleanGpuUsed` —— 10/13 个有
-- `PreviewImage` —— 9/13 个有
-- `JjkText` —— 8/13 个有
-- `Seed` —— 7/13 个有
-- `AILab_QwenVL` —— 6/13 个有
-- `PrimitiveBoolean` —— 4/13 个有
-- `easy imageRemBg` —— 4/13 个有
-- `InversionDemoLazySwitch` —— 3/13 个有
-- `ShowText|pysssss` —— 3/13 个有
-- `Label (rgthree)` —— 2/13 个有
-- `BOOLConstant` —— 1/13 个有
-- `ComfyMathExpression` —— 1/13 个有
-- `PrimitiveString` —— 1/13 个有
-- `PrimitiveStringMultiline` —— 1/13 个有
-- `SaveImage` —— 1/13 个有
-- `TT_img_enc` —— 1/13 个有
-- `easy batchAnything` —— 1/13 个有
-- `easy forLoopEnd` —— 1/13 个有
-- `easy forLoopStart` —— 1/13 个有
-- `easy showAnything` —— 1/13 个有
+- `GetImageSizeAndCount` —— 12/13 个有
+- `WanVideoImageToVideoEncode` —— 12/13 个有
+- `WanVideoTorchCompileSettings` —— 11/13 个有
+- `ImageResizeKJv2` —— 10/13 个有
+- `INTConstant` —— 9/13 个有
+- `MathExpression|pysssss` —— 4/13 个有
+- `Primitive integer [Crystools]` —— 4/13 个有
+- `Text Multiline` —— 4/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/13 个有
+- `CreateVideo` —— 1/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
+- `GetImageSize` —— 1/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `LayerUtility: PurgeVRAM` —— 1/13 个有
+- `PreViewVideo` —— 1/13 个有
+- `RIFE VFI` —— 1/13 个有
+- `Seed (rgthree)` —— 1/13 个有
+- `WanVideoEmptyEmbeds` —— 1/13 个有
 
 ## 典型参数
 

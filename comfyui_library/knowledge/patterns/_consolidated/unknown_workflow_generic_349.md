@@ -3,42 +3,30 @@ name: unknown_workflow_generic_349
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.86575
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.857
+common_nodes: [65c22b29-59aa-496b-89c6-55a603658670, 7b34ab90-36f9-45ba-a665-71d418f0df18, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI口播-配音_2027202958403833858.json, 音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json, 音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json, 音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json]
+members: [comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_349
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/AI口播-配音_2027202958403833858.json、音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json、音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json、音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 3/4 个有
-- `AudioCrop` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `PreviewAny` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `HeartMuLa_Transcribe` —— 1/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
+- `65c22b29-59aa-496b-89c6-55a603658670`
+- `7b34ab90-36f9-45ba-a665-71d418f0df18`
+- `LoadImage`
+- `SaveImage`
 
 ## 典型参数
 

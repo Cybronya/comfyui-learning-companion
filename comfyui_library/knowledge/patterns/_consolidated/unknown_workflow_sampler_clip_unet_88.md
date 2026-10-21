@@ -1,51 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_88
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.870333
-common_nodes: [CLIPTextEncode, CreateVideo, DualCLIPLoader, KSampler, Kandinsky5ImageToVideo, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.970714
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/1998835773153628161.json, 视频生成/文生视频/Kandinsky 5.0 文生视频_2039533298053029890.json, 视频生成/文生视频/Kandinsky 5.0文生视频_1999010879624634370.json]
+missing: [CR Text]
+members: [图片生成/图生图/2093623432524156930.json, 图片生成/图生图/2102605007383261185.json, 图片生成/文生图/AI一键生成12张绝美新年写真集_2024044240682098690.json, 图片生成/文生图/AI换脸丨Flux2-Klein丨参考图生成_2100837158843146242.json, 图片生成/文生图/FLUX.2 Klein 4B工作流，8G显存1秒生成1张图片！_2012164022556172289.json, 图片生成/文生图/Flux2 Klein 多图编辑&文生图 自由控制 平替全能图片 4B 极速 & 9B 质量_2012361850310107138.json, 图片生成/文生图/换装Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2035315458378833922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_88
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1998835773153628161.json、视频生成/文生视频/Kandinsky 5.0 文生视频_2039533298053029890.json、视频生成/文生视频/Kandinsky 5.0文生视频_1999010879624634370.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/2093623432524156930.json、图片生成/图生图/2102605007383261185.json、图片生成/文生图/AI一键生成12张绝美新年写真集_2024044240682098690.json、图片生成/文生图/AI换脸丨Flux2-Klein丨参考图生成_2100837158843146242.json、图片生成/文生图/FLUX.2 Klein 4B工作流，8G显存1秒生成1张图片！_2012164022556172289.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `KSampler`
-- `Kandinsky5ImageToVideo`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 1/3 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `EmptyFlux2LatentImage` —— 5/7 个有
+- `ImageScaleToTotalPixels` —— 5/7 个有
+- `CR Text` —— 4/7 个有
+- `GetImageSize` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `JWFloat` —— 2/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `AspectRatio` —— 1/7 个有
+- `HAIGC_LoadImagesFromZip` —— 1/7 个有
+- `ImageResize+` —— 1/7 个有
+- `InpaintCropImproved` —— 1/7 个有
+- `InpaintModelConditioning` —— 1/7 个有
+- `InpaintStitchImproved` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `easy imageSize` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 50 - 50 | 3 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 3 | 100% |
-| 采样算法 | euler_ancestral | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -53,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 50 - 50，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text

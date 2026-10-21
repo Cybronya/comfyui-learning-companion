@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_624
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.571
-common_nodes: [CR Prompt Text, CR Text Concatenate, KOOK_SaveJPGImage, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, 忽略多组孤海]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [CR Prompt Text, IndexTTSProNode, LoadAudio, SaveAudio]
 problems: []
-missing: [CR Text Concatenate, 忽略多组孤海, CR Prompt Text]
-members: [图片生成/图生图/2087051938029457409.json, 图片生成/图生图/2092922360243511297.json]
+missing: []
+members: [音频生成/音频生成/IndexTTS-Pro单角色有声小说语音克隆_1962841986283835393.json, 音频生成/音频生成/IndexTTS-Pro双角色有声小说语音克隆_1962846731278979074.json, 音频生成/音频生成/IndexTTS声音克隆增强版_1933344642262048769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_624
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2087051938029457409.json、图片生成/图生图/2092922360243511297.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-Pro单角色有声小说语音克隆_1962841986283835393.json、音频生成/音频生成/IndexTTS-Pro双角色有声小说语音克隆_1962846731278979074.json、音频生成/音频生成/IndexTTS声音克隆增强版_1933344642262048769.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CR Prompt Text`
-- `CR Text Concatenate`
-- `KOOK_SaveJPGImage`
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `忽略多组孤海`
+- `IndexTTSProNode`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNG31FlashImageToImage` —— 1/2 个有
+- `Save_Audio` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,5 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、忽略多组孤海、CR Prompt Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

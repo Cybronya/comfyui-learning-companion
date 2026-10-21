@@ -1,86 +1,102 @@
 ---
 name: text_to_image_lora_sampler_clip_193
 type: Text To Image
-frequency: 4
-level: strong
-coverage: 0.838
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, EmptySD3LatentImage, JjkText, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 6
+level: weak
+coverage: 0.467
+common_nodes: [Any Switch (rgthree), BatchImagesNode, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageScaleToMaxDimension, JsonExtractString, KSampler, LoadImage, LoraLoaderBypassModelOnly, PreviewAny, PrimitiveBoolean, QwenImage21Cache, ResolutionSelector, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
-missing: [GetImageSize+, Seed (rgthree)]
-members: [图片生成/图生图/2106100322811863041.json, 数字人/数字人/Krea2角色漫剧真人资产四视图一键生成4步加速版_2100267474842378242.json, 视频生成/图生视频/Krea2角色漫剧真人资产四视图一键生成4步加速版_2100661143726542849.json, 视频生成/文生视频/单图编辑完美一致性｜Krea2文生图图生视频生成_2090203681751912449.json]
+missing: [CR Prompt Text]
+members: [图片生成/图生图/2106086535849398274.json, 图片生成/文生图/Qwen Image 2.1文生与编辑加速工作流双自动提示词，文生图图生图方案_2106086535849398274.json, 图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json, 图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json, 图片生成/文生图/Qwen image 2.1文生与编辑加速工作流｜双自动提示词 文生图图生图全能_2104030500267577345.json, 图片生成/文生图/双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_193
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2106100322811863041.json、数字人/数字人/Krea2角色漫剧真人资产四视图一键生成4步加速版_2100267474842378242.json、视频生成/图生视频/Krea2角色漫剧真人资产四视图一键生成4步加速版_2100661143726542849.json、视频生成/文生视频/单图编辑完美一致性｜Krea2文生图图生视频生成_2090203681751912449.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/2106086535849398274.json、图片生成/文生图/Qwen Image 2.1文生与编辑加速工作流双自动提示词，文生图图生图方案_2106086535849398274.json、图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json、图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json、图片生成/文生图/Qwen image 2.1文生与编辑加速工作流｜双自动提示词 文生图图生图全能_2104030500267577345.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：6
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
-- `JjkText`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageScaleToMaxDimension`
+- `JsonExtractString`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoraLoaderBypassModelOnly`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
+- `SetNode`
+- `StringConcatenate`
+- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `GetImageSize+` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `Seed (rgthree)` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `DrawMaskOnImage` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `ResolutionSelector` —— 1/4 个有
+- `JjkText` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `solarL_SaveImagesToZip` —— 5/6 个有
+- `孤海注释` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `GoohaiAnyExists` —— 2/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `JWFloat` —— 2/6 个有
+- `KSamplerAdvanced` —— 2/6 个有
+- `LatentSwitch` —— 2/6 个有
+- `PDIMAGE_LongerSize` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `ReferenceLatent` —— 2/6 个有
+- `SeedNode` —— 2/6 个有
+- `VAEEncode` —— 2/6 个有
+- `忽略多组孤海` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
+| 宽度 | 80 | 80 - 1024 | 6 | 0% |
+| 高度 | 80 | 80 - 1024 | 6 | 0% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4 - 4.5 | 6 | 96% |
+| 采样算法 | er_sde | - | 6 | 83% |
+| 调度器 | beta | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：GetImageSize+、Seed (rgthree)
+- 宽度 中位数 80，观测区间 80 - 1024，6 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1024，6 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4 - 4.5，6 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 83%
+- 调度器 最常用 beta，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（17/6 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text

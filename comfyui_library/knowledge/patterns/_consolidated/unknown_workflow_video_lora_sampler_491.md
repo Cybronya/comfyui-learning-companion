@@ -3,84 +3,73 @@ name: unknown_workflow_video_lora_sampler_491
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8215
-common_nodes: [AudioCrop, BasicScheduler, CLIPTextEncode, CM_IntToFloat, CR Text, DapaoSmartMemoryOptimizerNode, Display Int (rgthree), DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, Get resolution [Crystools], KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveString, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, SoundFlow_GetLength, Switch any [Crystools], ToInt, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, ZML_ArithmeticComparison, easy cleanGpuUsed, easy int, easy seed, easy showAnything]
+coverage: 0.94825
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, INTConstant, Int, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, RHHiddenNodes, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2061422103609569282.json, 视频生成/图生视频/2061422054284554242.json, 视频生成/图生视频/2056299096574619650.json, 视频生成/图生视频/2051941097793966081.json]
+members: [视频生成/图生视频/1950062965963841538.json, 视频生成/图生视频/1952381797537648642.json, 视频生成/图生视频/1952389394525294594.json, 视频生成/图生视频/1950597048527704066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_491
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2061422103609569282.json、视频生成/图生视频/2061422054284554242.json、视频生成/图生视频/2056299096574619650.json、视频生成/图生视频/2051941097793966081.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1950062965963841538.json、视频生成/图生视频/1952381797537648642.json、视频生成/图生视频/1952389394525294594.json、视频生成/图生视频/1950597048527704066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CR Text`
-- `DapaoSmartMemoryOptimizerNode`
-- `Display Int (rgthree)`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `Get resolution [Crystools]`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `INTConstant`
+- `Int`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveString`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
+- `LoadWanVideoT5TextEncoder`
+- `RHHiddenNodes`
 - `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `Switch any [Crystools]`
-- `ToInt`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `ZML_ArithmeticComparison`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy seed`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `Display Any (rgthree)` —— 3/4 个有
-- `LTXVImgToVideoInplaceKJ` —— 3/4 个有
-- `RH_Captioner` —— 3/4 个有
-- `CrossFadeImages` —— 2/4 个有
-- `FrameSelector` —— 2/4 个有
-- `GetImageSizeAndCount` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageBatchMulti` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `LTXVAddGuideMultiDynamic` —— 2/4 个有
-- `LTXVCropGuides` —— 2/4 个有
-- `Make Image Batch` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `MelBandRoFormerModelLoader` —— 2/4 个有
-- `MelBandRoFormerSampler` —— 2/4 个有
-- `NormalizeAudioLoudness` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 3/4 个有
+- `PIP_StringConcatenation` —— 3/4 个有
+- `Wan22PromptSelector` —— 3/4 个有
+- `WanVideoSetRadialAttention` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `DownloadAndLoadWav2VecModel` —— 2/4 个有
+- `Float to Int` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `MultiTalkModelLoader` —— 2/4 个有
+- `MultiTalkWav2VecEmbeds` —— 2/4 个有
+- `RH_GetAudioDuration` —— 2/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `IndexTTSRun` —— 1/4 个有
+- `SeedVR2` —— 1/4 个有
+- `SeedVR2BlockSwap` —— 1/4 个有
+- `String Literal` —— 1/4 个有
+- `easy anythingIndexSwitch` —— 1/4 个有
 
 ## 典型参数
 

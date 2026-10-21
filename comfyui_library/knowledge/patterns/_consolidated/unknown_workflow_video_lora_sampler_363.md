@@ -3,74 +3,64 @@ name: unknown_workflow_video_lora_sampler_363
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.5815
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine]
+coverage: 0.862167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065971442394689538.json, 视频生成/图生视频/2067900124038254593.json, 视频生成/图生视频/2068177667341508609.json, 视频生成/图生视频/2067174173994213378.json, 视频生成/图生视频/2076230597940432898.json, 视频生成/文生视频/多参考图与高动态视频生成_ Ltx 2.3 Licon-MSR_2063854107001180161.json]
+members: [视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json, 视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json, 视频生成/图生视频/minimax H3巨物图生视频_2093886571169796098.json, 视频生成/图生视频/minimax H3巨物图生视频_2097867227113541634.json, 视频生成/图生视频/单图Minimax H3_2085688315197616129.json, 视频生成/图生视频/🦞海螺H3-QWEN3.8自动提示词+多参生视频_2101574205438521346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_363
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2065971442394689538.json、视频生成/图生视频/2067900124038254593.json、视频生成/图生视频/2068177667341508609.json、视频生成/图生视频/2067174173994213378.json、视频生成/图生视频/2076230597940432898.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json、视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json、视频生成/图生视频/minimax H3巨物图生视频_2093886571169796098.json、视频生成/图生视频/minimax H3巨物图生视频_2097867227113541634.json、视频生成/图生视频/单图Minimax H3_2085688315197616129.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
 - `LoadImage`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 4/6 个有
-- `GetNode` —— 4/6 个有
-- `LTXVAddGuideMulti` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `KenChenLLMGeminiBananaImageCollageNode` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `llama_cpp_instruct_adv` —— 2/6 个有
-- `llama_cpp_model_loader` —— 2/6 个有
-- `llama_cpp_parameters` —— 2/6 个有
-- `孤海注释` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
+- `Label (rgthree)` —— 3/6 个有
+- `MiniMaxH3ImageToVideo` —— 3/6 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/6 个有
+- `MuyeTextEditOutput` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `ManualSigmas` —— 2/6 个有
+- `RHLLMChatNode` —— 2/6 个有
+- `SplitSigmas` —— 2/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `ModelPreviewOverrideKJ` —— 1/6 个有
+- `PainterVRAM` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `QwenH3PromptLocal` —— 1/6 个有
+- `StariAI-MiniMaxH3-Skill` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 145 | 145 - 241 | 6 | 74% |
-| 高度 | 24 | 24 - 50 | 6 | 62% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,5 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 145，观测区间 145 - 241，6 个样本
-- 高度 中位数 24，观测区间 24 - 50，6 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

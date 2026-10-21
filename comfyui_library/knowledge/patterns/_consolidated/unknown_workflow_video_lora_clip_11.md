@@ -1,69 +1,66 @@
 ---
 name: unknown_workflow_video_lora_clip_11
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.787667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo]
+problems: []
 missing: []
-members: [视频生成/文生视频/03-01-01-WAN2.1-文生视频-原生_1989233803006709761.json, 视频生成/文生视频/04-01-01-WAN2.2-文生视频-原生_1990967339145437186.json, 视频生成/文生视频/1972827331947614209.json]
+members: [视频生成/图生视频/1964290181601873922.json, 视频生成/图生视频/2050542650729746434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_clip_11
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/03-01-01-WAN2.1-文生视频-原生_1989233803006709761.json、视频生成/文生视频/04-01-01-WAN2.2-文生视频-原生_1990967339145437186.json、视频生成/文生视频/1972827331947614209.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1964290181601873922.json、视频生成/图生视频/2050542650729746434.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerAdvanced` —— 2/3 个有
-- `RIFE VFI` —— 2/3 个有
-- `SaveWEBM` —— 2/3 个有
-- `CFGZeroStar` —— 1/3 个有
-- `KSampler` —— 1/3 个有
-- `SaveAnimatedWEBP` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
+- `ImageResize+` —— 1/2 个有
+- `KSamplerAdvanced` —— 1/2 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `WanMoeKSampler` —— 1/2 个有
+- `WanVideoNAG` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 4 | 1 - 6 | 3 | 44% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | simple | - | 3 | 33% |
-| 重绘幅度 | 1 | - | 3 | 33% |
+| 采样步数 | fixed | - | 2 | 50% |
+| Prompt 约束强度(CFG) | 8 | - | 2 | 75% |
+| 采样算法 | 2.5 | - | 2 | 40% |
+| 调度器 | 1 | - | 1 | 100% |
+| 重绘幅度 | euler | - | 2 | 50% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 6，3 个样本，取值分散，一致性仅 44%
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 simple，3 个样本，一致性 33%
-- 重绘幅度 最常用 1，3 个样本，一致性 33%
+- 采样步数 最常用 fixed，2 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本
+- 采样算法 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 重绘幅度 最常用 euler，2 个样本，一致性 50%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

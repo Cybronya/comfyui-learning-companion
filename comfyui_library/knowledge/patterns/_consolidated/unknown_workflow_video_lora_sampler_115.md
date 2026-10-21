@@ -1,70 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_115
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.796154
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, JWStringConcat, LoadWanVideoT5TextEncoder, ShowText|pysssss, TextConcat, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+coverage: 0.87
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [ImageFromBatch+, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, CR Prompt Text]
-members: [图片生成/文生图/1959964511526662146.json, 视频生成/图生视频/1950813995445977090.json, 视频生成/图生视频/1950934552208416770.json, 视频生成/图生视频/1950823826609348610.json, 视频生成/图生视频/1953756753928355841.json, 视频生成/图生视频/1954077934976061442.json, 视频生成/图生视频/1952585965787385858.json, 视频生成/图生视频/1958457023132286977.json, 视频生成/图生视频/1956010463471566849.json, 视频生成/图生视频/1970020251171758081.json, 视频生成/图生视频/1956567836586070018.json, 视频生成/图生视频/1963544329490092033.json, 视频生成/文生视频/1953756767052288002.json]
+missing: []
+members: [视频生成/图生视频/（自编排-Confucius4-R2T2）MiniMax H3数字人加速版V1_2104777855577186305.json, 视频生成/图生视频/（自编排数字人音频MV-Confucius4-R2T2）MiniMax H3数字人加速_2105353404636811266.json, 视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json, 视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json, 视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json, 视频生成/图生视频/（音频驱动-zs05）MiniMax H3数字人加速版V1_2092541557630136322.json, 视频生成/图生视频/（音频驱动-音乐MV-数字人）MiniMax H3加速_2105347148022894593.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099766391334330369.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099827196100694018.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099845520981323778.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2104909753217536002.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版_2099850720488017921.json, 视频生成/文生视频/MiniMax H3音频驱动数字人-参考生视频-长视频直出【加速版】_2100939860373762049.json, 视频生成/文生视频/MiniMax H3音频驱动数字人-多人对话-加速版-支持长视频直出-单采_2100933650757017601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_115
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/1959964511526662146.json、视频生成/图生视频/1950813995445977090.json、视频生成/图生视频/1950934552208416770.json、视频生成/图生视频/1950823826609348610.json、视频生成/图生视频/1953756753928355841.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/（自编排-Confucius4-R2T2）MiniMax H3数字人加速版V1_2104777855577186305.json、视频生成/图生视频/（自编排数字人音频MV-Confucius4-R2T2）MiniMax H3数字人加速_2105353404636811266.json、视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json、视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json、视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `JWStringConcat`
-- `LoadWanVideoT5TextEncoder`
-- `ShowText|pysssss`
-- `TextConcat`
+- `ComfyMathExpression`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SolAttnMiniMax`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 12/13 个有
-- `JWInteger` —— 12/13 个有
-- `RH_LLMAPI_NODE` —— 12/13 个有
-- `WanVideoTorchCompileSettings` —— 12/13 个有
-- `ImageFromBatch+` —— 9/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/13 个有
-- `LayerUtility: PurgeVRAM` —— 9/13 个有
-- `LoadImage` —— 9/13 个有
-- `RH_Captioner` —— 9/13 个有
-- `WanVideoImageToVideoEncode` —— 9/13 个有
-- `FloatToSigmas` —— 4/13 个有
-- `StringToFloatList` —— 4/13 个有
-- `WanVideoEmptyEmbeds` —— 4/13 个有
-- `LoadLatent` —— 2/13 个有
-- `SaveImage` —— 2/13 个有
-- `GLM_Text_Chat` —— 1/13 个有
-- `Int` —— 1/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
-- `LoadVideo` —— 1/13 个有
-- `MathExpression|pysssss` —— 1/13 个有
-- `SaveLatent` —— 1/13 个有
+- `Float to Int` —— 2/14 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/14 个有
+- `R2T2GGUFLoader` —— 2/14 个有
+- `R2T2Transcribe` —— 2/14 个有
+- `StringConcatenate` —— 2/14 个有
+- `T8PerformanceDirectorConfig` —— 2/14 个有
+- `easy cleanGpuUsed` —— 2/14 个有
+- `easy showAnything` —— 2/14 个有
+- `孤海注释` —— 2/14 个有
 
 ## 典型参数
 
@@ -76,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、LayerUtility: PurgeVRAM V2、MathExpression|pysssss、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

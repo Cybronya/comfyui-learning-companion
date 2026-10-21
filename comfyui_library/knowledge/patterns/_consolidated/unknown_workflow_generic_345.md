@@ -3,31 +3,38 @@ name: unknown_workflow_generic_345
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.91675
-common_nodes: [RH_Hailuo_Text2Video, SaveVideo]
+coverage: 0.889
+common_nodes: [LoadImage, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextureNode]
 problems: []
 missing: []
-members: [视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json, 视频生成/文生视频/海螺 Hailuo2.3 文生视频_2016535777877954561.json, 视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json, 视频生成/文生视频/海螺2.3文生视频Hailuo2.3_1987155775351099394.json]
+members: [comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json, comfyui-workflow-templates-json/api_meshy7_image_to_model.json, comfyui-workflow-templates-json/api_meshy_image_to_model.json, comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_345
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json、视频生成/文生视频/海螺 Hailuo2.3 文生视频_2016535777877954561.json、视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json、视频生成/文生视频/海螺2.3文生视频Hailuo2.3_1987155775351099394.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json、comfyui-workflow-templates-json/api_meshy7_image_to_model.json、comfyui-workflow-templates-json/api_meshy_image_to_model.json、comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `RH_Hailuo_Text2Video`
-- `SaveVideo`
+- `LoadImage`
+- `MeshyAnimateModelNode`
+- `MeshyRefineNode`
+- `MeshyRigModelNode`
+- `MeshyTextureNode`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `MeshyImageToModelNode` —— 3/4 个有
+- `SaveGLB` —— 3/4 个有
+- `MeshyMultiImageToModelNode` —— 1/4 个有
+- `Preview3D` —— 1/4 个有
+- `Save3DAdvanced` —— 1/4 个有
 
 ## 典型参数
 

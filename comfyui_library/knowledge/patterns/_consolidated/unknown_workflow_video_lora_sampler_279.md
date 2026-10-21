@@ -2,79 +2,79 @@
 name: unknown_workflow_video_lora_sampler_279
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.708
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, DiffusionModelSelector, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+level: moderate
+coverage: 0.5925
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946855361778184193.json, 视频生成/图生视频/1967883312465326081.json, 视频生成/图生视频/1967231938215940098.json, 视频生成/图生视频/1967234477657350146.json, 视频生成/图生视频/1967218674518122497.json, 视频生成/图生视频/1967612484775546881.json, 视频生成/图生视频/1969262637538308098.json, 视频生成/图生视频/1967609614747525122.json]
+members: [视频生成/图生视频/动态壁纸生成-Minimax_h3_2095801933113155586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json, 视频生成/文生视频/MinimaxH3+音频驱动多参_2092941359513694209.json, 视频生成/文生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_279
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1946855361778184193.json、视频生成/图生视频/1967883312465326081.json、视频生成/图生视频/1967231938215940098.json、视频生成/图生视频/1967234477657350146.json、视频生成/图生视频/1967218674518122497.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动态壁纸生成-Minimax_h3_2095801933113155586.json、视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **可信度**：中等可信
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `DiffusionModelSelector`
-- `KSamplerAdvanced`
+- `CreateVideo`
+- `GetNode`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `TrimVideoLatent`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 7/8 个有
 - `ImageResizeKJv2` —— 7/8 个有
-- `GetNode` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `RMBG` —— 5/8 个有
-- `SetNode` —— 5/8 个有
-- `Int` —— 4/8 个有
-- `AIO_Preprocessor` —— 3/8 个有
-- `Label (rgthree)` —— 3/8 个有
-- `SimpleMath+` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `WanVideoVACEStartToEndFrame` —— 3/8 个有
-- `CR Text Replace` —— 2/8 个有
-- `PrimitiveBoolean` —— 2/8 个有
-- `TextBox` —— 2/8 个有
-- `easy ifElse` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 1/8 个有
-- `CR Image Input Switch` —— 1/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `ImageResizeKJ` —— 1/8 个有
-- `ImpactSwitch` —— 1/8 个有
+- `PlaySound|pysssss` —— 7/8 个有
+- `PrimitiveInt` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `SaveVideo` —— 7/8 个有
+- `VHS_VideoInfo` —— 7/8 个有
+- `easy anythingIndexSwitch` —— 7/8 个有
+- `easy int` —— 7/8 个有
+- `Bookmark (rgthree)` —— 6/8 个有
+- `GetImageSizeAndCount` —— 6/8 个有
+- `Label (rgthree)` —— 6/8 个有
+- `EmptyImage` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `ComfyMathExpression` —— 1/8 个有
+- `Int` —— 1/8 个有
 - `JjkText` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `RH_Captioner` —— 1/8 个有
-- `RH_Translator` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `LoadAudio` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `MiniMaxH3PromptEnhancerT8` —— 1/8 个有
+- `PrimitiveFloat` —— 1/8 个有
+- `SoundFlow_GetLength` —— 1/8 个有
+- `T8LLMProviderConfig` —— 1/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 16 | 8 | 71% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,9 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 16，8 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 16，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,61 +3,60 @@ name: unknown_workflow_video_sampler_vae_62
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.98425
-common_nodes: [CLIPVisionLoader, Compare, DWPreprocessor, FaceMaskFromPoseKeypoints, INTConstant, If ANY execute A else B, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart]
+coverage: 0.9135
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json, 视频生成/图生视频/2039951088849260546.json, 视频生成/图生视频/2030568462560534529.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json, 视频生成/图生视频/2034480754176036865.json, 视频生成/图生视频/2046249922785189889.json, 视频生成/图生视频/2046394046041563138.json]
+members: [视频生成/图生视频/1979771248119025665.json, 视频生成/图生视频/1976854157967740929.json, 视频生成/图生视频/1977734210951729153.json, 视频生成/图生视频/2000380802502455298.json, 视频生成/图生视频/1999041056794628098.json, 视频生成/图生视频/1999430361350275074.json, 视频生成/图生视频/2007414676862279682.json, 视频生成/图生视频/1998599416028258305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_62
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json、视频生成/图生视频/2039951088849260546.json、视频生成/图生视频/2030568462560534529.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1979771248119025665.json、视频生成/图生视频/1976854157967740929.json、视频生成/图生视频/1977734210951729153.json、视频生成/图生视频/2000380802502455298.json、视频生成/图生视频/1999041056794628098.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `Compare`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `INTConstant`
-- `If ANY execute A else B`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoSLG`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPVisionLoader` —— 7/8 个有
+- `ImageResizeKJv2` —— 7/8 个有
+- `WanVideoClipVisionEncode` —— 7/8 个有
+- `WanVideoImageToVideoEncode` —— 7/8 个有
+- `WanVideoSetLoRAs` —— 7/8 个有
+- `WanVideoLoraSelect` —— 6/8 个有
+- `RepeatImageBatch` —— 5/8 个有
+- `SplineEditor` —— 5/8 个有
+- `WanVideoAddWanMoveTracks` —— 5/8 个有
+- `WanVideoTorchCompileSettings` —— 5/8 个有
+- `WanVideoWanDrawWanMoveTracks` —— 5/8 个有
+- `CR Text` —— 3/8 个有
+- `GetImageSizeAndCount` —— 3/8 个有
+- `INTConstant` —— 3/8 个有
+- `PrimitiveInt` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `ImageFromBatch+` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/8 个有
+- `LayerUtility: TextBox` —— 1/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `WanVideoEmptyEmbeds` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_476
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
 coverage: 1
-common_nodes: [RH_Kling30_Std_Video, SaveVideo]
+common_nodes: [CM_IntToFloat, IndexTTSRun, LoadAudio, Primitive integer [Crystools], SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/文生视频/Kling_30_Std_Video_v3.0_2033750702492749826.json, 视频生成/文生视频/可灵v3.0 Std (文生_图生视频)_2019737253731377153.json, 视频生成/文生视频/可灵v3.0 Std (文生_图生视频)（RH版）_2054437078699659265.json]
+members: [音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json, 音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json, 音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json, 音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_476
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Kling_30_Std_Video_v3.0_2033750702492749826.json、视频生成/文生视频/可灵v3.0 Std (文生_图生视频)_2019737253731377153.json、视频生成/文生视频/可灵v3.0 Std (文生_图生视频)（RH版）_2054437078699659265.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json、音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json、音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json、音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_Kling30_Std_Video`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `CM_IntToFloat`
+- `IndexTTSRun`
+- `LoadAudio`
+- `Primitive integer [Crystools]`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 

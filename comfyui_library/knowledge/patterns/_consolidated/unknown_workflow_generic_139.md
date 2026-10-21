@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_139
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, OmniVoiceLongformTTS, OmniVoiceWhisperLoader, PreviewAudio, SaveAudio]
+coverage: 0.766625
+common_nodes: [CR Prompt Text, RH_Sora2_T2V_PRO, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice长文本语音克隆_2041429765676077058.json, 音频生成/音频生成/OmniVoice TTS语音克隆长音频生成_2064778208435859457.json, 音频生成/音频生成/OmniVoice-tts 语音克隆_2041805989795602434.json, 音频生成/音频生成/OmniVoice-tts长文本语音克隆 小米开源非常强大 声音克隆 音色迁移_2041495026240327681.json, 音频生成/音频生成/OmniVoice-长文本语音克隆-支持600种语言-支持方言-速度快_2042259978056114177.json, 音频生成/音频生成/OmniVoice长文本语音克隆_2044609363121283074.json, 音频生成/音频生成/OmniVoice长文本语音克隆生成器：600种语言-支持方言_2041733700789997569.json]
+members: [视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json, 视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json, 视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json, 视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json, 视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json, 视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json, 视频生成/文生视频/全能视频SPRO文生视频25s（竖屏）_1984573281137278978.json, 视频生成/文生视频/梭罗2文生视频25s（竖屏）全能视频SPRO_1983038421939683330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_139
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice长文本语音克隆_2041429765676077058.json、音频生成/音频生成/OmniVoice TTS语音克隆长音频生成_2064778208435859457.json、音频生成/音频生成/OmniVoice-tts 语音克隆_2041805989795602434.json、音频生成/音频生成/OmniVoice-tts长文本语音克隆 小米开源非常强大 声音克隆 音色迁移_2041495026240327681.json、音频生成/音频生成/OmniVoice-长文本语音克隆-支持600种语言-支持方言-速度快_2042259978056114177.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json、视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json、视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json、视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json、视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceWhisperLoader`
-- `PreviewAudio`
-- `SaveAudio`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_Sora2_T2V_PRO`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 6/7 个有
-- `AudioSeparation` —— 2/7 个有
-- `AudioCrop` —— 1/7 个有
-- `CR Text` —— 1/7 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
 
 ## 典型参数
 

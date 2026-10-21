@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_sampler_unet_vae_173
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.763667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, EasyCache, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8415
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3・图生 _ 文生・四合一视频工作流_2084274079045083138.json, 视频生成/文生视频/MiniMax H3图生视频工作流_2084631760146620417.json, 视频生成/文生视频/MiniMaxH3文生・四合一视频工作流・图生ENGENG_2087094142475268097.json]
+members: [视频生成/图生视频/MImaxH3工作流超强开源视频加速ENGENG_2087086399177707522.json, 视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json, 视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json, 视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_173
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3・图生 _ 文生・四合一视频工作流_2084274079045083138.json、视频生成/文生视频/MiniMax H3图生视频工作流_2084631760146620417.json、视频生成/文生视频/MiniMaxH3文生・四合一视频工作流・图生ENGENG_2087094142475268097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MImaxH3工作流超强开源视频加速ENGENG_2087086399177707522.json、视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json、视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json、视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `CreateVideo`
-- `EasyCache`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
@@ -46,17 +42,23 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RegexReplace` —— 2/3 个有
-- `ResizeImagesByLongerEdge` —— 2/3 个有
-- `VRAM_Debug` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `easy string` —— 2/3 个有
-- `llama_cpp_instruct_adv` —— 2/3 个有
-- `llama_cpp_model_loader` —— 2/3 个有
-- `SpectrumSDXL` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `LoraLoaderBypassModelOnly` —— 3/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `ApplyFaceProcessor` —— 1/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `CompressImages` —— 1/4 个有
+- `FaceProcessorLoader` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `ModelPreviewOverrideKJ` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RTXVideoSuperResolution` —— 1/4 个有
+- `ResizeImagesByLongerEdge` —— 1/4 个有
+- `SaveMP4` —— 1/4 个有
+- `SeedVR2` —— 1/4 个有
+- `SeedVR2BlockSwap` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

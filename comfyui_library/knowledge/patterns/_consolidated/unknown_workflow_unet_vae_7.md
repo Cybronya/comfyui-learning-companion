@@ -1,41 +1,52 @@
 ---
 name: unknown_workflow_unet_vae_7
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7555
-common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3Director, PreviewAny, SaveVideo, UNETLoader, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.9406
+common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, SaveImage, SaveVideo, SolAttnMiniMax, UNETLoader, VAELoader, easy imageChooser, kkVideoFirstLastFrames]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax-H3 文本生视频turbo加速_2086689208969818114.json, 视频生成/文生视频/MiniMax导演台全能工作流_2098064353835700225.json]
+members: [视频生成/图生视频/MiniMax H3 导演台全能+二采样工作流_2091194471978463234.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流_2090482445757014017.json, 视频生成/图生视频/Reminx+Fast Minmax H3导演台-变身904_2095546990494044162.json, 视频生成/图生视频/导演台Sigmas设置-901_2094793386204160002.json, 视频生成/图生视频/导演台高质量产出903-40s 1200RH币_2094957121136840706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3 文本生视频turbo加速_2086689208969818114.json、视频生成/文生视频/MiniMax导演台全能工作流_2098064353835700225.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 导演台全能+二采样工作流_2091194471978463234.json、视频生成/图生视频/MiniMax H3 导演台全能工作流_2090482445757014017.json、视频生成/图生视频/Reminx+Fast Minmax H3导演台-变身904_2095546990494044162.json、视频生成/图生视频/导演台Sigmas设置-901_2094793386204160002.json、视频生成/图生视频/导演台高质量产出903-40s 1200RH币_2094957121136840706.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CreateVideo`
-- `MiniMaxH3Director`
-- `PreviewAny`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `SaveImage`
 - `SaveVideo`
+- `SolAttnMiniMax`
 - `UNETLoader`
 - `VAELoader`
+- `easy imageChooser`
+- `kkVideoFirstLastFrames`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `MiniMaxH3BlockCacheT8` —— 1/2 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `BasicScheduler` —— 4/5 个有
+- `MiniMaxH3Director` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `PlaySound|pysssss` —— 3/5 个有
+- `H3SigmaRefiner` —— 2/5 个有
+- `Lora Loader Stack (rgthree)` —— 2/5 个有
+- `SplitSigmas` —— 2/5 个有
+- `ComfyMiniMaxH3Director` —— 1/5 个有
+- `LoraLoaderBypassModelOnly` —— 1/5 个有
+- `UpscaleModelLoader` —— 1/5 个有
 
 ## 典型参数
 
@@ -47,4 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

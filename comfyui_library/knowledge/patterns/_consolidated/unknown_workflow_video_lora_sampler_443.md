@@ -3,66 +3,80 @@ name: unknown_workflow_video_lora_sampler_443
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.5796
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8728
+common_nodes: [BasicScheduler, CLIPTextEncode, CR Text, CS-LTXGridDirector, ComfySwitchNode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Preview from image [Crystools], PreviewAudio, PrimitiveBoolean, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorGuide, easy imageSave, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935629484227743745.json, 视频生成/图生视频/1935594856536264705.json, 视频生成/图生视频/1935606766069809154.json, 视频生成/图生视频/1945320019179839489.json, 视频生成/图生视频/1935270745905745921.json]
+members: [视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json, 视频生成/图生视频/2064410253088878594.json, 视频生成/图生视频/2082315667667243010.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json, 视频生成/图生视频/2069522054554148865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_443
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1935629484227743745.json、视频生成/图生视频/1935594856536264705.json、视频生成/图生视频/1935606766069809154.json、视频生成/图生视频/1945320019179839489.json、视频生成/图生视频/1935270745905745921.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json、视频生成/图生视频/2064410253088878594.json、视频生成/图生视频/2082315667667243010.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json、视频生成/图生视频/2069522054554148865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CR Text`
+- `CS-LTXGridDirector`
+- `ComfySwitchNode`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `Preview from image [Crystools]`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
+- `YusuLTXDirectorGuide`
+- `easy imageSave`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 4/5 个有
-- `ImageConcatFromBatch` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `RMBG` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `EmptyImage` —— 3/5 个有
-- `Label (rgthree)` —— 3/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `Primitive integer [Crystools]` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `Video_Upscale_With_Model` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoSLG` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `Fast Groups Muter (rgthree)` —— 4/5 个有
+- `GPTImage2PromptPreview` —— 4/5 个有
+- `RHHiddenNodes` —— 4/5 个有
+- `RH_RhartImageG2ImageToImage` —— 4/5 个有
+- `MuyeTextEditOutput` —— 3/5 个有
+- `PreviewAny` —— 2/5 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `ImageRGBChannel` —— 1/5 个有
+- `IndexTTS2Run` —— 1/5 个有
+- `LayerColor: Levels` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `LoadVideo` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
+- `SaveAudio` —— 1/5 个有
+- `SaveAudioMP3` —— 1/5 个有
+- `ShellAgentPluginOutputText` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

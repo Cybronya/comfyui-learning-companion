@@ -2,65 +2,165 @@
 name: unknown_workflow_video_upscale_latent_upscale_36
 type: Unknown Workflow
 frequency: 10
-level: moderate
-coverage: 0.795
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+level: strong
+coverage: 0.6186
+common_nodes: [Any To Any, AudioConcat, BasicScheduler, BatchImagesNode, BerniniConditioning, BerniniPromptEnhancer, Bool, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, ComfySwitchNode, CreateVideo, DualCLIPLoader, EmptyAudio, EmptyLTXVLatentVideo, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GetVideoComponents, INTConstant, ImageScaleToTotalPixels, KSamplerAdvanced, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXVAddLatentGuide, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSetAudioRefTokens, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MaxNode, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, Qwen3_VQA, RH_LLMAPI_NODE, RandomNoise, Remove Text, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetNode, StringConcatenate, StringReplace, TTP_text_mix, TextGenerateLTX2Prompt, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VAELoaderKJ, VHS_GetImageCount, VHS_SelectFilename, VHS_VideoCombine, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imagesSplitImage, easy showAnything, easy timelineInfoOutput, easy timelineSegmentCount, easy timelineSegmentOutput]
 problems: []
 missing: []
-members: [数字人/数字人/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2104547320967815169.json, 视频生成/图生视频/MinimaxH3 视频生成工作台可@图片_2096967852254392322.json, 视频生成/图生视频/MinimaxH3_极简版多合一工作流_2099786890349203458.json, 视频生成/图生视频/MinimaxH3_极简版多合一工作流_2100042754997964802.json, 视频生成/图生视频/MinimaxH3工作流多合一极简版精品_2105107966503505921.json, 视频生成/图生视频/MinimaxH3工作流多合一极简精品工作流_2105194557800538113.json, 视频生成/图生视频/YZ金鱼-MinimaxH3 极简版多合一工作流_2087545206135672833.json, 视频生成/文生视频/0916台词再也不乱说话MinimaxH3工作流多合一极简版_2100075667680481281.json, 视频生成/文生视频/0925H3提示词skillsV2.5优化台词再也不乱说话多合一极简版_2103345223605772290.json, 视频生成/文生视频/MinimaxH3 极简版多合一0830_2095028307212455937.json]
+members: [视频生成/图生视频/2067837770793570305.json, 视频生成/图生视频/2068568094041272321.json, 视频生成/图生视频/2067515281458688002.json, 视频生成/图生视频/Bernini+Ltx23+LoRA导演分镜JSON多参对话时序控制分镜扩展_2083885433636868098.json, 视频生成/图生视频/2073796369281806338.json, 视频生成/图生视频/2070562371348811777.json, 视频生成/文生视频/Bernini+LTX25+LoRA导演分镜JSON多参对话时序控制分镜扩展_2089347303902638081.json, 视频生成/文生视频/Bernini+Ltx2.3+PR导演短剧分镜台 多参考 对话时序控制 分镜扩展_2076389200764694530.json, 视频生成/文生视频/Bernini+Ltx23+LoRA导演分镜JSON多参对话时序控制分镜扩展_2083885433636868098.json, 视频生成/文生视频/Bernini+Ltx23+PR导演分镜JSON多参考对话时序控制分镜扩展_2076885173060325378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_36
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2104547320967815169.json、视频生成/图生视频/MinimaxH3 视频生成工作台可@图片_2096967852254392322.json、视频生成/图生视频/MinimaxH3_极简版多合一工作流_2099786890349203458.json、视频生成/图生视频/MinimaxH3_极简版多合一工作流_2100042754997964802.json、视频生成/图生视频/MinimaxH3工作流多合一极简版精品_2105107966503505921.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2067837770793570305.json、视频生成/图生视频/2068568094041272321.json、视频生成/图生视频/2067515281458688002.json、视频生成/图生视频/Bernini+Ltx23+LoRA导演分镜JSON多参对话时序控制分镜扩展_2083885433636868098.json、视频生成/图生视频/2073796369281806338.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
+- `Any To Any`
+- `AudioConcat`
 - `BasicScheduler`
+- `BatchImagesNode`
+- `BerniniConditioning`
+- `BerniniPromptEnhancer`
+- `Bool`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyAudio`
+- `EmptyLTXVLatentVideo`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetVideoComponents`
+- `INTConstant`
+- `ImageScaleToTotalPixels`
+- `KSamplerAdvanced`
 - `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAddVideoICLoRAGuide`
+- `LTXVAddLatentGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVideoMask`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LTXVSetAudioRefTokens`
+- `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `MinimaxH3LatentUpscaler3D`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `MaxNode`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `Qwen3_VQA`
+- `RH_LLMAPI_NODE`
 - `RandomNoise`
+- `Remove Text`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `SaveVideo`
+- `SetNode`
+- `StringConcatenate`
+- `StringReplace`
+- `TTP_text_mix`
+- `TextGenerateLTX2Prompt`
+- `TextInput_`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAELoader`
+- `VAELoaderKJ`
+- `VHS_GetImageCount`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imagesSplitImage`
+- `easy showAnything`
+- `easy timelineInfoOutput`
+- `easy timelineSegmentCount`
+- `easy timelineSegmentOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/10 个有
-- `LoadVideo` —— 8/10 个有
-- `ModelPreviewOverrideKJ` —— 6/10 个有
-- `GetNode` —— 5/10 个有
-- `LoadAudio` —— 5/10 个有
-- `MiniMaxH3EasyMediaLoader` —— 5/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
-- `ModelAttentionBackend` —— 5/10 个有
-- `SetNode` —— 5/10 个有
-- `忽略多组孤海` —— 5/10 个有
-- `Text` —— 4/10 个有
-- `EmptyImage` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `SaveImage` —— 1/10 个有
-- `workflow>声音` —— 1/10 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `EmptyHunyuanLatentVideo` —— 9/10 个有
+- `PromptRelayEncode` —— 9/10 个有
+- `GetImageSize` —— 7/10 个有
+- `ImageResizeKJv2` —— 7/10 个有
+- `LTXVPreprocess` —— 7/10 个有
+- `LazySwitchKJ` —— 7/10 个有
+- `SimpleCalculatorKJ` —— 7/10 个有
+- `easy timelineEditor` —— 7/10 个有
+- `PreviewAudio` —— 6/10 个有
+- `PreviewImage` —— 5/10 个有
+- `GetImagesFromBatchIndexed` —— 4/10 个有
+- `ImpactMakeImageBatch` —— 4/10 个有
+- `LoadImageReturnFilename` —— 4/10 个有
+- `ReplaceString` —— 4/10 个有
+- `TextBoxMira` —— 4/10 个有
+- `TextPreview` —— 4/10 个有
+- `AudioCrop` —— 3/10 个有
+- `Context (rgthree)` —— 3/10 个有
+- `Context Switch (rgthree)` —— 3/10 个有
+- `DF_Text_Box` —— 3/10 个有
+- `JWStringConcat` —— 3/10 个有
+- `JWStringGetLine` —— 3/10 个有
+- `JWStringSplit` —— 3/10 个有
+- `JWStringToInteger` —— 3/10 个有
+- `JjkShowText` —— 3/10 个有
+- `LTXVReferenceAudio` —— 3/10 个有
+- `LoadAudio` —— 3/10 个有
+- `SaveImage` —— 3/10 个有
+- `SeedGenerator` —— 3/10 个有
+- `StringConstant` —— 3/10 个有
+- `StringSubstring` —— 3/10 个有
+- `TextSplitByDelimiter` —— 3/10 个有
+- `VRAM_Debug` —— 3/10 个有
+- `easy imageConcat` —— 3/10 个有
+- `easy imageIndexSwitch` —— 3/10 个有
+- `easy indexAnything` —— 3/10 个有
+- `easy promptReplace` —— 3/10 个有
+- `Any To String (mtb)` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `LTXVAudioVAEEncode` —— 1/10 个有
+- `ModelSamplingSD3` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 10 | 100% |
+| Prompt 约束强度(CFG) | 10 | 10 - 10 | 10 | 100% |
+| 采样算法 | 1 | 1 - 1 | 10 | 100% |
+| 调度器 | euler | - | 10 | 100% |
+| 重绘幅度 | simple | - | 10 | 100% |
+| 宽度 | 97 | 97 - 97 | 10 | 100% |
+| 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
 
@@ -68,4 +168,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，10 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，10 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，10 个样本，一致性 100%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

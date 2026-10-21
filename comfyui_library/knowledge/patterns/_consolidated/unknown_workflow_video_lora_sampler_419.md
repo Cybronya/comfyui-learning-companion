@@ -3,72 +3,62 @@ name: unknown_workflow_video_lora_sampler_419
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8386
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, Display Int (rgthree), INTConstant, ImageConcanate, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewImage, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+coverage: 0.7036
+common_nodes: [GetImageSizeAndCount, GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1961914192292986881.json, 视频生成/图生视频/1962093681132113922.json, 视频生成/图生视频/1963163594022170625.json, 视频生成/图生视频/1962043447869902849.json, 视频生成/图生视频/1964517302806921217.json]
+members: [视频生成/图生视频/1998982182737694722.json, 视频生成/图生视频/1998661075665047553.json, 视频生成/图生视频/1998721650784919553.json, 视频生成/图生视频/1999765252109631490.json, 视频生成/图生视频/2000385748819902466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_419
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1961914192292986881.json、视频生成/图生视频/1962093681132113922.json、视频生成/图生视频/1963163594022170625.json、视频生成/图生视频/1962043447869902849.json、视频生成/图生视频/1964517302806921217.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1998982182737694722.json、视频生成/图生视频/1998661075665047553.json、视频生成/图生视频/1998721650784919553.json、视频生成/图生视频/1999765252109631490.json、视频生成/图生视频/2000385748819902466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `DWPreprocessor`
-- `Display Int (rgthree)`
-- `INTConstant`
-- `ImageConcanate`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PreviewImage`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 4/5 个有
-- `GIMMVFI_interpolate` —— 4/5 个有
-- `ImageFlip+` —— 4/5 个有
-- `DepthAnythingPreprocessor` —— 1/5 个有
-- `GetImageRangeFromBatch` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `WanVideoLoraSelect` —— 1/5 个有
+- `INTConstant` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `ImpactInt` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `DrawViTPose` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `PoseAndFaceDetection` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,72 +1,80 @@
 ---
 name: unknown_workflow_video_sampler_unet_17
 type: Unknown Workflow
-frequency: 16
+frequency: 19
 level: moderate
-coverage: 0.434875
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, Float, GetNode, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ResolutionSelector, SetNode, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.767421
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/AITUDOU-MiniMax H3 Skill2.0 全能参考版单采_2098354620342030337.json, 视频生成/图生视频/AITUDOU-MiniMax H3 打斗-单采_2095430334602113026.json, 视频生成/图生视频/AITUDOU-MiniMax H3 打斗-双采_2095430950619537409.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill短片自用-双采_2093313656774807553.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2093313597047918594.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2094575888913485825.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+SelfLift+影视级情绪表达+SKILL_2104111411025764354.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+SelfLift+影视级情绪表达+SKILL_2106320510052298754.json, 视频生成/图生视频/Fused-MiniMax H3 战斗增强-1280单采_2097598203356073986.json, 视频生成/图生视频/Fused-MiniMax H3-战斗增强-双采_2097606528458121218.json, 视频生成/图生视频/H3最强电影LORA+巅峰双采去油PRO版_2100507019949203458.json, 视频生成/图生视频/MiniMax H3 双采样 潜空间放大DSW（二次优化）_2095748408920330241.json, 视频生成/图生视频/MiniMax H3 双采样 潜空间放大_2090792067181137921.json, 视频生成/图生视频/MiniMax H3 双采样 潜空间放大（二次优化）_2091136885820313602.json, 视频生成/文生视频/H3最强电影LORA+巅峰双采去油PRO版_2094788799023894529.json, 视频生成/文生视频/MiniMax H3 8.29_2093713039521566722.json]
+members: [视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3参考生视频加速版v1_2092793444803629057.json, 视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3图生视频加速版v1_2092875854232768514.json, 视频生成/图生视频/（均衡版）Minimax H3 Zs05+双采+加速+Lantent Upscaler参考生视频_2091931030046466050.json, 视频生成/图生视频/（均衡版）Minimax H3 Zs05+双采+加速+Lantent Upscaler参考生视频_2092517840787169282.json, 视频生成/图生视频/（文戏武戏低显存适配版）MiniMax H3双采参考生视频V2_2098587613547556866.json, 视频生成/图生视频/（电影感Zs05）Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092882505149018113.json, 视频生成/图生视频/🦖MiniMax H3双采参考生视频_2098230851896168450.json, 视频生成/文生视频/(10eros v5版)MiniMax H3双采参考生视频_2099438471583719426.json, 视频生成/文生视频/(文武双修均衡版)MiniMax H3双采参考生视频V2_2103225875335565314.json, 视频生成/文生视频/(最佳动态-新版战斗V2)MiniMax H3文生视频_2095552521501757442.json, 视频生成/文生视频/(服装换衣省钱预览版)MiniMax H3双采参考生视频_2097920668905074689.json, 视频生成/文生视频/0905动漫短剧文武双修均衡版（MiniMax H3双采参考生视频）_2096049183974318082.json, 视频生成/文生视频/MINIMAX H3 双采全能参考_2094111351902924801.json, 视频生成/文生视频/MINIMAX-H3全能参考-高配文戏版_2095291262697033729.json, 视频生成/文生视频/MiniMax H3 全能参考生视频｜最佳动态V3极速高清版_2098184624500461569.json, 视频生成/文生视频/MiniMax H3 全能文武戏工作流全能工作流-文戏不油 武戏动态强_2104228828628475905.json, 视频生成/文生视频/MiniMax H3-动态最强-文生视频-V1_2094749351989043201.json, 视频生成/文生视频/OrbTv全能模型_优化版_2104845409087746049.json, 视频生成/文生视频/orb全能模型_2098320359996092418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_17
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/AITUDOU-MiniMax H3 Skill2.0 全能参考版单采_2098354620342030337.json、视频生成/图生视频/AITUDOU-MiniMax H3 打斗-单采_2095430334602113026.json、视频生成/图生视频/AITUDOU-MiniMax H3 打斗-双采_2095430950619537409.json、视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill短片自用-双采_2093313656774807553.json、视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2093313597047918594.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3参考生视频加速版v1_2092793444803629057.json、视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3图生视频加速版v1_2092875854232768514.json、视频生成/图生视频/（均衡版）Minimax H3 Zs05+双采+加速+Lantent Upscaler参考生视频_2091931030046466050.json、视频生成/图生视频/（均衡版）Minimax H3 Zs05+双采+加速+Lantent Upscaler参考生视频_2092517840787169282.json、视频生成/图生视频/（文戏武戏低显存适配版）MiniMax H3双采参考生视频V2_2098587613547556866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `BasicScheduler`
+全部 19 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `Float`
-- `GetNode`
-- `KSamplerSelect`
 - `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SetNode`
-- `Text`
+- `SamplerCustomAdvanced`
+- `SolAttnMiniMax`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 15/16 个有
-- `BasicGuider` —— 14/16 个有
-- `RandomNoise` —— 14/16 个有
-- `SamplerCustomAdvanced` —— 14/16 个有
-- `Fast Groups Bypasser (rgthree)` —— 13/16 个有
-- `Label (rgthree)` —— 13/16 个有
-- `SplitSigmas` —— 12/16 个有
-- `LTXVSeparateAVLatent` —— 9/16 个有
-- `H3SigmaRefiner` —— 8/16 个有
-- `MinimaxH3LatentUpscaler3D` —— 8/16 个有
-- `ModelAttentionBackend` —— 7/16 个有
-- `LTXVConcatAVLatent` —— 6/16 个有
-- `PT_H3ConcatAVLatent` —— 3/16 个有
-- `PrimitiveFloat` —— 3/16 个有
-- `SolAttnMiniMax` —— 3/16 个有
-- `easy cleanGpuUsed` —— 3/16 个有
-- `ConditioningZeroOut` —— 2/16 个有
-- `ExtendIntermediateSigmas` —— 2/16 个有
-- `LoadAudio` —— 2/16 个有
-- `SelfLiftH3Sampler` —— 2/16 个有
-- `AudioSeparation` —— 1/16 个有
-- `LoraLoaderBypassModelOnly` —— 1/16 个有
-- `MiniMaxH3BlockCacheT8` —— 1/16 个有
-- `MiniMaxH3VoiceLibraryLoadT8` —— 1/16 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/16 个有
+- `LoraLoaderBypassModelOnly` —— 17/19 个有
+- `MiniMaxH3DualClockSamplerT8` —— 17/19 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 17/19 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 17/19 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 17/19 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 17/19 个有
+- `LoraLoaderModelOnly` —— 12/19 个有
+- `Float` —— 9/19 个有
+- `GetNode` —— 6/19 个有
+- `SetNode` —— 6/19 个有
+- `ConcatTextOfUtils` —— 5/19 个有
+- `LoadAudio` —— 5/19 个有
+- `孤海注释` —— 4/19 个有
+- `VHS_LoadVideo` —— 3/19 个有
+- `easy anythingIndexSwitch` —— 3/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/19 个有
+- `ImpactInt` —— 2/19 个有
+- `ImpactSwitch` —— 2/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/19 个有
+- `MiniMaxH3PDD8StepSetupT8Advanced` —— 2/19 个有
+- `PreviewImage` —— 2/19 个有
+- `workflow><Picture 2>` —— 2/19 个有
+- `workflow><Picture 3>` —— 2/19 个有
+- `workflow><Picture 4>` —— 2/19 个有
+- `workflow><Picture 5>` —— 2/19 个有
+- `workflow><Picture 6>` —— 2/19 个有
+- `ImpactConditionalBranch` —— 1/19 个有
+- `SaveVideoNode` —— 1/19 个有
+- `workflow><Picture 7>` —— 1/19 个有
+- `workflow><Picture 8>` —— 1/19 个有
+- `workflow><Picture 9>` —— 1/19 个有
+- `布尔孤海` —— 1/19 个有
+- `忽略多组孤海` —— 1/19 个有
 
 ## 典型参数
 

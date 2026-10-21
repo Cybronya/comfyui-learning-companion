@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CR Text, LoadImage, RH_RhartVideoGOfficialImageToVideo, SaveVideo, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
+common_nodes: [ImageConcanate, ImageScaleToTotalPixels, LoadImage, ReActorBuildFaceModel, ReActorFaceBoost, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WujiCleaner]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062059083481567234.json, 视频生成/图生视频/2066345476372623360.json]
+members: [视频生成/图生视频/2077007977915174913.json, 视频生成/图生视频/1920378379508584450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_98
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2062059083481567234.json、视频生成/图生视频/2066345476372623360.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2077007977915174913.json、视频生成/图生视频/1920378379508584450.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,20 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_RhartVideoGOfficialImageToVideo`
-- `SaveVideo`
+- `ReActorBuildFaceModel`
+- `ReActorFaceBoost`
+- `ReActorFaceSwap`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
+- `VHS_VideoInfo`
+- `WujiCleaner`
+
+**可变部分**（部分 workflow 才有）：
+- `Int` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
 
 ## 典型参数
 

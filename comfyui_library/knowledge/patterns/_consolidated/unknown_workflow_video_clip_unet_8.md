@@ -2,88 +2,72 @@
 name: unknown_workflow_video_clip_unet_8
 type: Unknown Workflow
 frequency: 9
-level: weak
-coverage: 0.495667
-common_nodes: [Bookmark (rgthree), CLIPLoader, CLIPTextEncode, GetNode, LoadImage, ModelSamplingSD3, PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy int, easy seed]
-problems: []
-missing: [Bookmark (rgthree), Label (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), easy int, easy seed]
-members: [视频生成/图生视频/1950129189842280449.json, 视频生成/图生视频/1950129708211027969.json, 视频生成/图生视频/1950329172787904513.json, 视频生成/图生视频/1954176509042946049.json, 视频生成/文生视频/1950129708211027969.json, 视频生成/文生视频/1950329172787904513.json, 视频生成/文生视频/1954176509042946049.json, "视频生成/文生视频/smoothMixWan图生视频，首尾帧生视频，文生视频,效果好速度快_1985642136488091650.json", 视频生成/文生视频/smoothMixWan生视频官方版本_全功能_1980313348170539010.json]
+level: moderate
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ModelSamplingSD3, TrimVideoLatent, UNETLoader, VAEDecode, VHS_VideoCombine, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [视频生成/文生视频/1967578038525390850.json, 视频生成/文生视频/1967620116848545793.json, 视频生成/文生视频/1967630045374287873.json, 视频生成/文生视频/1967648604473233410.json, 视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-图生视频_1982048372632764418.json, 视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-姿态视频引导加参考_1982051642445045761.json, 视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-首尾帧_1982051197618135041.json, 视频生成/文生视频/Wan 2.2-Fun-VACE-图生视频_2072999574413025280.json, 视频生成/文生视频/Wan 2.2-Fun-VACE-姿态视频引导加参考无敌控_2072999574836649984.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet_8
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1950129189842280449.json、视频生成/图生视频/1950129708211027969.json、视频生成/图生视频/1950329172787904513.json、视频生成/图生视频/1954176509042946049.json、视频生成/文生视频/1950129708211027969.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/1967578038525390850.json、视频生成/文生视频/1967620116848545793.json、视频生成/文生视频/1967630045374287873.json、视频生成/文生视频/1967648604473233410.json、视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-图生视频_1982048372632764418.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Bookmark (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetNode`
-- `LoadImage`
+- `INTConstant`
 - `ModelSamplingSD3`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `SetNode`
-- `StringConcatenate`
+- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `easy int`
-- `easy seed`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 8/9 个有
-- `EmptyHunyuanLatentVideo` —— 8/9 个有
-- `KSamplerAdvanced` —— 8/9 个有
-- `Label (rgthree)` —— 8/9 个有
-- `Mute / Bypass Relay (rgthree)` —— 8/9 个有
-- `Mute / Bypass Repeater (rgthree)` —— 8/9 个有
-- `PathchSageAttentionKJ` —— 8/9 个有
-- `WanImageToVideo` —— 8/9 个有
-- `Fast Groups Muter (rgthree)` —— 4/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `LoraLoaderModelOnly` —— 4/9 个有
-- `VAEDecodeTiled` —— 4/9 个有
-- `WanFirstLastFrameToVideo` —— 4/9 个有
-- `ModelPatchTorchSettings` —— 2/9 个有
-- `PreviewAny` —— 2/9 个有
-- `PrimitiveFloat` —— 2/9 个有
-- `RH_LLMAPI_NODE` —— 2/9 个有
-- `TorchCompileModelWanVideoV2` —— 2/9 个有
-- `easy cleanGpuUsed` —— 2/9 个有
-- `wanBlockSwap` —— 2/9 个有
-- `KSampler` —— 1/9 个有
-- `Wan22ImageToVideoLatent` —— 1/9 个有
+- `GetImageSizeAndCount` —— 8/9 个有
+- `ImageResizeKJv2` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `KSamplerAdvanced` —— 6/9 个有
+- `LoraLoaderModelOnly` —— 6/9 个有
+- `VAELoader` —— 6/9 个有
+- `WanVideoVACEStartToEndFrame` —— 5/9 个有
+- `AIO_Preprocessor` —— 3/9 个有
+- `AV_VAELoader` —— 3/9 个有
+- `ImageRepeat` —— 3/9 个有
+- `KSampler` —— 3/9 个有
+- `Miaoshouai_Tagger` —— 3/9 个有
+- `VHS_LoadVideo` —— 3/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 67% |
-| Prompt 约束强度(CFG) | 9 | 5 - 20 | 9 | 49% |
-| 采样算法 | 3.5 | 1 - 3.5 | 8 | 62% |
-| 调度器 | euler | - | 9 | 89% |
+| 采样步数 | randomize | - | 9 | 33% |
+| Prompt 约束强度(CFG) | 6 | 1 - 6 | 9 | 46% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | sa_solver_pece | - | 9 | 33% |
 | 重绘幅度 | simple | - | 9 | 67% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 5 - 20，9 个样本，取值分散，一致性仅 49%
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，8 个样本
-- 调度器 最常用 euler，9 个样本，一致性 89%
+- 采样步数 最常用 randomize，9 个样本，一致性 33%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，9 个样本，取值分散，一致性仅 46%
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 sa_solver_pece，9 个样本，一致性 33%
 - 重绘幅度 最常用 simple，9 个样本，一致性 67%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：Bookmark (rgthree)、Label (rgthree)、Mute / Bypass Relay (rgthree)、Mute / Bypass Repeater (rgthree)、easy int

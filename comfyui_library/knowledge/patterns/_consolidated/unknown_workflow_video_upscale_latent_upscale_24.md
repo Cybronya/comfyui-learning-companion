@@ -2,86 +2,95 @@
 name: unknown_workflow_video_upscale_latent_upscale_24
 type: Unknown Workflow
 frequency: 13
-level: moderate
-coverage: 0.568769
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.505462
+common_nodes: [CLIPTextEncode, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, INTConstant, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ResizeImageMaskNode, SamplerCustom, Seed (rgthree), SetNode, SimpleMath+, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMax H3-多参考生视频-666_2106965266444935170.json, 数字人/数字人/H3二采_2111323289078550530.json, 数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json, 数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json, 数字人/数字人/MiniMaxH3  数字人视频带货  H3多图生视频_2099428215952596994.json, 数字人/数字人/【MINIMAX-H3】八月最强文戏-低配版_2100034371259555842.json, 数字人/数字人/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2098017732544524289.json, 数字人/数字人/视频带货+Images+into+Videos—Digital+Avatars+Drive_2111625660065206273.json, 视频生成/图生视频/-MiniMax H3-多参考生视频-优化版_2106660994788446209.json, 视频生成/图生视频/2采五段加速流_2104580181368336385.json, 视频生成/图生视频/H3短剧工作流-低配版9.12_2099422256219906050.json, 视频生成/图生视频/MINIMAX-H3-全自动打斗武戏-15秒8分钟_2097790484570796033.json, 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json]
+members: [数字人/数字人/LTX 2.3  单图数字人_2086755632165769217.json, 数字人/数字人/LTX2.3+（图+音频）数字人口播+高清优化版工作流_2083406138854428674.json, 视频生成/图生视频/2072957704288694274.json, 视频生成/图生视频/2050424425325056002.json, 视频生成/图生视频/2072578791876161538.json, 视频生成/图生视频/2058113991079190529.json, 视频生成/图生视频/2047852790181011458.json, 视频生成/图生视频/2046223171501694978.json, 视频生成/图生视频/2064957941442244609.json, 视频生成/图生视频/2048020600035221506.json, 视频生成/图生视频/2049132268295299073.json, 视频生成/图生视频/2046973175417802754.json, 视频生成/图生视频/2057514932127752193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_24
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/MiniMax H3-多参考生视频-666_2106965266444935170.json、数字人/数字人/H3二采_2111323289078550530.json、数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json、数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json、数字人/数字人/MiniMaxH3  数字人视频带货  H3多图生视频_2099428215952596994.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（数字人/数字人/LTX 2.3  单图数字人_2086755632165769217.json、数字人/数字人/LTX2.3+（图+音频）数字人口播+高清优化版工作流_2083406138854428674.json、视频生成/图生视频/2072957704288694274.json、视频生成/图生视频/2050424425325056002.json、视频生成/图生视频/2072578791876161538.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **可信度**：强结论
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPTextEncode`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ManualSigmas`
+- `ResizeImageMaskNode`
+- `SamplerCustom`
+- `Seed (rgthree)`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SimpleMath+`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 9/13 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/13 个有
-- `忽略多组孤海` —— 8/13 个有
-- `VHS_LoadVideo` —— 6/13 个有
-- `JjkText` —— 5/13 个有
-- `ManualSigmas` —— 5/13 个有
-- `SplitSigmas` —— 5/13 个有
-- `Text` —— 5/13 个有
-- `easy float` —— 5/13 个有
-- `ModelAttentionBackend` —— 4/13 个有
-- `CR Prompt Text` —— 3/13 个有
-- `ExtendIntermediateSigmas` —— 3/13 个有
-- `H3SigmaRefiner` —— 3/13 个有
-- `INTConstant` —— 3/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/13 个有
-- `PreviewImage` —— 3/13 个有
-- `AudioConcat` —— 2/13 个有
-- `GetImageRangeFromBatch` —— 2/13 个有
-- `ImageBatchMulti` —— 2/13 个有
-- `MiniMaxH3AddGuide` —— 2/13 个有
-- `SaveAudio` —— 2/13 个有
-- `TrimAudioDuration` —— 2/13 个有
-- `BlockSparseAttention` —— 1/13 个有
-- `LayerColor: ColorAdapter` —— 1/13 个有
-- `MiniMaxChunkFeedForward` —— 1/13 个有
-- `MiniMaxH3SigmaShift` —— 1/13 个有
-- `MiniMaxLowVRAMAttention` —— 1/13 个有
-- `PreviewAny` —— 1/13 个有
-- `PrimitiveInt` —— 1/13 个有
-- `PrimitiveStringMultiline` —— 1/13 个有
-- `RH_LLMAPI_Pro_Node` —— 1/13 个有
+- `ImageResizeKJv2` —— 12/13 个有
+- `AudioInfo` —— 11/13 个有
+- `ImageFlip` —— 11/13 个有
+- `LTXVAudioVAEEncode` —— 11/13 个有
+- `LoadAudio` —— 11/13 个有
+- `MelBandRoFormerModelLoader` —— 11/13 个有
+- `MelBandRoFormerSampler` —— 11/13 个有
+- `SetLatentNoiseMask` —— 11/13 个有
+- `SolidMask` —— 11/13 个有
+- `Display Any (rgthree)` —— 10/13 个有
+- `PreviewAudio` —— 10/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/13 个有
+- `RH_LLMAPI_Pro_Node` —— 9/13 个有
+- `ShowText|pysssss` —— 9/13 个有
+- `TextInput_` —— 9/13 个有
+- `AudioCrop` —— 8/13 个有
+- `LTX2SamplingPreviewOverride` —— 6/13 个有
+- `PreviewImage` —— 6/13 个有
+- `ImageConcanate` —— 5/13 个有
+- `LTXVAudioVAEDecode` —— 2/13 个有
+- `Label (rgthree)` —— 2/13 个有
+- `PrimitiveStringMultiline` —— 2/13 个有
+- `SimpleCalculatorKJ` —— 2/13 个有
+- `LayerUtility: PurgeVRAM` —— 1/13 个有
+- `MemoryCleaner` —— 1/13 个有
+- `PainterVRAM` —— 1/13 个有
+- `PromptRelayEncode` —— 1/13 个有
+- `ResizeImagesByLongerEdge` —— 1/13 个有
+- `TTResolutionSelector` —— 1/13 个有
+- `WanVideoBlockSwap` —— 1/13 个有
+- `WujiCleaner` —— 1/13 个有
+- `wanBlock_Swap` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 121 - 121 | 13 | 100% |
+| 高度 | 24 | 24 - 24 | 13 | 100% |
 
 ## 常见问题
 
@@ -89,4 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 121 - 121，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，13 个样本，取值集中（一致性 100%）

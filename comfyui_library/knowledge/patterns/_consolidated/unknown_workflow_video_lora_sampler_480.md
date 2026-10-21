@@ -2,67 +2,78 @@
 name: unknown_workflow_video_lora_sampler_480
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.70925
-common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy showAnything]
-problems: []
+level: strong
+coverage: 0.869
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, INTConstant, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, TrimVideoLatent, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json, 视频生成/图生视频/2064890559977840642.json, 视频生成/图生视频/2064510607130451970.json, 视频生成/图生视频/2062439280944963586.json]
+members: [视频生成/图生视频/2002231206848655361.json, 视频生成/图生视频/1972997136394661890.json, 视频生成/图生视频/2042244068767436801.json, 视频生成/图生视频/2030541873395273730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_480
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json、视频生成/图生视频/2064890559977840642.json、视频生成/图生视频/2064510607130451970.json、视频生成/图生视频/2062439280944963586.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2002231206848655361.json、视频生成/图生视频/1972997136394661890.json、视频生成/图生视频/2042244068767436801.json、视频生成/图生视频/2030541873395273730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `INTConstant`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SplitSigmas`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `TrimVideoLatent`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 3/4 个有
-- `TTResolutionSelector` —— 3/4 个有
-- `Text` —— 3/4 个有
-- `VAEDecode` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `BatchImagesNode` —— 1/4 个有
-- `ComfyMathExpression` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `VAEDecodeTiled` —— 1/4 个有
+- `UNETLoader` —— 3/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `UnetLoaderGGUF` —— 2/4 个有
+- `FloatConstant` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

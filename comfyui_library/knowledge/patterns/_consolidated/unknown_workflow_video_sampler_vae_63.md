@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_vae_63
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.88425
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.88125
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, Primitive integer [Crystools], Primitive string [Crystools], SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1924016884511854593.json, 视频生成/图生视频/1991857702083293186.json, 视频生成/图生视频/1928609349776654338.json, 视频生成/图生视频/1930066639159508993.json, 视频生成/图生视频/1946416276699013121.json, 视频生成/图生视频/1923373962599067649.json, 视频生成/图生视频/1925013790104952834.json, 视频生成/文生视频/1925755745747292161.json]
+members: [视频生成/图生视频/2011608046820134914.json, 视频生成/图生视频/2041428749719179265.json, 视频生成/图生视频/2048594505284198402.json, 视频生成/图生视频/2052561498752471042.json, 视频生成/图生视频/2054369620169117698.json, 视频生成/图生视频/1903462104978853889.json, 视频生成/图生视频/2067422675328389122.json, 视频生成/图生视频/1898335155923439618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_63
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1924016884511854593.json、视频生成/图生视频/1991857702083293186.json、视频生成/图生视频/1928609349776654338.json、视频生成/图生视频/1930066639159508993.json、视频生成/图生视频/1946416276699013121.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2011608046820134914.json、视频生成/图生视频/2041428749719179265.json、视频生成/图生视频/2048594505284198402.json、视频生成/图生视频/2052561498752471042.json、视频生成/图生视频/2054369620169117698.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
@@ -23,37 +23,38 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageSizeAndCount`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoGetClosestBucketSize`
+- `HyVideoI2VEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageScale`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `Primitive string [Crystools]`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageRepeat` —— 7/8 个有
-- `WanVideoVACEStartToEndFrame` —— 7/8 个有
-- `WanVideoLoraSelect` —— 5/8 个有
-- `ImageAndMaskPreview` —— 4/8 个有
-- `Int` —— 4/8 个有
-- `JjkText` —— 4/8 个有
-- `PreviewImage` —— 4/8 个有
-- `JWInteger` —— 3/8 个有
-- `TextInput_` —— 3/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `WanVideoFreeInitArgs` —— 1/8 个有
-- `WanVideoTeaCache` —— 1/8 个有
-- `easy imageConcat` —— 1/8 个有
+- `GroupExecutor` —— 5/8 个有
+- `ImageBatch` —— 5/8 个有
+- `ImageFromBatch` —— 5/8 个有
+- `LG_ImageReceiver` —— 5/8 个有
+- `LG_ImageSender` —— 5/8 个有
+- `MathExpression|pysssss` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `GetNode` —— 3/8 个有
+- `ImageConcatMulti` —— 3/8 个有
+- `SaveImage` —— 1/8 个有
+- `TT_img_enc` —— 1/8 个有
 
 ## 典型参数
 

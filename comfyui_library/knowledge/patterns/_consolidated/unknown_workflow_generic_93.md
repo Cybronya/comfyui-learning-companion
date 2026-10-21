@@ -3,34 +3,38 @@ name: unknown_workflow_generic_93
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.719222
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.587
+common_nodes: [1hew_ImageGridSplit, LoadImage, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
-missing: []
-members: [视频生成/图生视频/2075512794958622721.json, 视频生成/图生视频/2061309598879019009.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json, 视频生成/图生视频/2061070407112941570.json, 视频生成/图生视频/2061096383377141761.json, 视频生成/图生视频/2078659733879353345.json, 视频生成/图生视频/2049413181075890177.json, 视频生成/图生视频/2054445953876275202.json, 视频生成/文生视频/(支持真人)超能视频2.0多图参考R2V视频生成V2（1秒1元）_2033903081225723906.json]
+missing: [Multi Text Merge, easy saveText]
+members: [图片生成/图生图/2092532684630355970.json, 图片生成/图生图/2092540614477967361.json, 图片生成/图生图/2092558185495359490.json, 图片生成/图生图/2092798783959687170.json, 图片生成/图生图/2092801600623562754.json, 图片生成/图生图/2092858406091710466.json, 图片生成/图生图/2092866135829082113.json, 图片生成/图生图/2092866792426393602.json, 图片生成/图生图/2092870981521072130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_93
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2075512794958622721.json、视频生成/图生视频/2061309598879019009.json、视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json、视频生成/图生视频/2061070407112941570.json、视频生成/图生视频/2061096383377141761.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2092532684630355970.json、图片生成/图生图/2092540614477967361.json、图片生成/图生图/2092558185495359490.json、图片生成/图生图/2092798783959687170.json、图片生成/图生图/2092801600623562754.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `1hew_ImageGridSplit`
 - `LoadImage`
-- `SaveVideo`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `RHLLMChatNode`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGImageToVideo` —— 8/9 个有
-- `easy showAnything` —— 8/9 个有
-- `CR Prompt Text` —— 5/9 个有
-- `RH_CinematicVideoGenerator` —— 1/9 个有
+- `Multi Text Merge` —— 3/9 个有
+- `RMBG` —— 3/9 个有
+- `easy saveText` —— 2/9 个有
 
 ## 典型参数
 
@@ -42,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：Multi Text Merge、easy saveText

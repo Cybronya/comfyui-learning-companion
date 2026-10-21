@@ -3,81 +3,55 @@ name: unknown_workflow_video_lora_sampler_441
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.575
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
+coverage: 0.9622
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058362232681091073.json, 视频生成/图生视频/2027340250565054465.json, 视频生成/图生视频/2008938707402891265.json, 视频生成/图生视频/2018160297319604226.json, 视频生成/图生视频/1985641855952068610.json]
+members: [视频生成/图生视频/1980926100463337474.json, 视频生成/图生视频/1952803879810494466.json, 视频生成/图生视频/1963047092535136257.json, 视频生成/图生视频/1956285826319699969.json, 视频生成/图生视频/1978365294227906562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_441
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2058362232681091073.json、视频生成/图生视频/2027340250565054465.json、视频生成/图生视频/2008938707402891265.json、视频生成/图生视频/2018160297319604226.json、视频生成/图生视频/1985641855952068610.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1980926100463337474.json、视频生成/图生视频/1952803879810494466.json、视频生成/图生视频/1963047092535136257.json、视频生成/图生视频/1956285826319699969.json、视频生成/图生视频/1978365294227906562.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
+- `CreateCFGScheduleFloatList`
 - `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
 - `INTConstant`
-- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 4/5 个有
-- `PointsEditor` —— 3/5 个有
-- `ColorMatch` —— 2/5 个有
-- `DWPreprocessor` —— 2/5 个有
-- `PixelPerfectResolution` —— 2/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `Sa2VANodeTpl` —— 2/5 个有
 - `SimpleMath+` —— 2/5 个有
-- `easy mathInt` —— 2/5 个有
-- `GroundingDinoModelLoader_SDPose` —— 1/5 个有
-- `ImageCompositeMasked` —— 1/5 个有
-- `InvertMask` —— 1/5 个有
-- `LayerUtility: TextBox` —— 1/5 个有
-- `PlaySound|pysssss` —— 1/5 个有
-- `SDPoseOODLoader` —— 1/5 个有
-- `SDPoseOODProcessor` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `SaveText` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
-- `YOLOModelLoader` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `WanVideoContextOptions` —— 2/5 个有
+- `WanVideoEncodeLatentBatch` —— 2/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `WanVideoScheduler` —— 1/5 个有
+- `WanVideoSigmaToStep` —— 1/5 个有
+- `easy float` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 

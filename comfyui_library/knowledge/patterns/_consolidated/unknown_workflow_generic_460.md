@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_460
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveImage, SaveVideo]
+coverage: 0.875
+common_nodes: [FB_Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073403634406223873.json, 视频生成/图生视频/2034847827666411522.json, 视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json]
+members: [音频生成/音频生成/Qwen3 TTS声音设计_2065319108614385666.json, 音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json, 音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json, 音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_460
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2073403634406223873.json、视频生成/图生视频/2034847827666411522.json、视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS声音设计_2065319108614385666.json、音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json、音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json、音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_CinematicVideoGenerator`
-- `SaveImage`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `FB_Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

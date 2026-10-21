@@ -3,44 +3,56 @@ name: unknown_workflow_video_94
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.84
-common_nodes: [CR Integer To String, CR Text, CR Text Concatenate, Compare, FlashVSRNode, GetNode, ImageResize+, Int, Make Interpolation State List, MathExpression|pysssss, RHHiddenNodes, RIFE VFI, SetNode, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy ifElse]
+coverage: 0.747
+common_nodes: [ACEStepGen, AudioSeparation, CR Text, Float, GenerationParameters, GetNode, ImageCASharpening+, ImpactSwitch, Int, LoadAudio, LoadImage, MultiLineLyrics, MultiLinePromptACES, PreviewAudio, RH_Translator, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, workflow>1]
 problems: []
 missing: []
-members: [视频生成/图生视频/2056548182066290690.json, 视频生成/图生视频/2056903678707191809.json]
+members: [视频生成/图生视频/1922477274111868929.json, 视频生成/图生视频/1919189623304818689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_94
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2056548182066290690.json、视频生成/图生视频/2056903678707191809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1922477274111868929.json、视频生成/图生视频/1919189623304818689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Integer To String`
+- `ACEStepGen`
+- `AudioSeparation`
 - `CR Text`
-- `CR Text Concatenate`
-- `Compare`
-- `FlashVSRNode`
+- `Float`
+- `GenerationParameters`
 - `GetNode`
-- `ImageResize+`
+- `ImageCASharpening+`
+- `ImpactSwitch`
 - `Int`
-- `Make Interpolation State List`
-- `MathExpression|pysssss`
-- `RHHiddenNodes`
-- `RIFE VFI`
+- `LoadAudio`
+- `LoadImage`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `PreviewAudio`
+- `RH_Translator`
+- `SaveAudio`
 - `SetNode`
-- `StringConcatenate`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `easy ifElse`
+- `workflow>1`
+
+**可变部分**（部分 workflow 才有）：
+- `FloatProcess` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `LoadFloatModels` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `SONICSampler` —— 1/2 个有
+- `SONICTLoader` —— 1/2 个有
+- `SONIC_PreData` —— 1/2 个有
+- `unCLIPCheckpointLoader` —— 1/2 个有
 
 ## 典型参数
 

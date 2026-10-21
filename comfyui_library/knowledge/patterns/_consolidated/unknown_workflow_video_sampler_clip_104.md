@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_clip_104
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.5666
-common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), ImageLoader, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, wanBlockSwap]
+coverage: 0.7758
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), GetNode, INTConstant, KSamplerAdvanced, LoadImage, ModelSamplingSD3, Seed (rgthree), SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006627267346173953.json, 视频生成/图生视频/1986365562794213377.json, 视频生成/图生视频/2032355101955858434.json, 视频生成/图生视频/1982960242092834818.json, 视频生成/图生视频/2006524559020789762.json]
+members: [视频生成/图生视频/2029377016692219906.json, 视频生成/图生视频/2027033853302411266.json, 视频生成/图生视频/2036411517872119810.json, 视频生成/图生视频/2036279680805900289.json, 视频生成/图生视频/2036392422615293954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_104
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2006627267346173953.json、视频生成/图生视频/1986365562794213377.json、视频生成/图生视频/2032355101955858434.json、视频生成/图生视频/1982960242092834818.json、视频生成/图生视频/2006524559020789762.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2029377016692219906.json、视频生成/图生视频/2027033853302411266.json、视频生成/图生视频/2036411517872119810.json、视频生成/图生视频/2036279680805900289.json、视频生成/图生视频/2036392422615293954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
@@ -26,48 +26,47 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `Fast Groups Bypasser (rgthree)`
-- `ImageLoader`
+- `GetNode`
+- `INTConstant`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `ModelPatchTorchSettings`
+- `LoadImage`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RIFE VFI`
+- `Seed (rgthree)`
+- `SetNode`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `wanBlockSwap`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `Int` —— 4/5 个有
-- `WanFirstLastFrameToVideo` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `Qwen3_VQA` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `DuckHideNode` —— 1/5 个有
-- `Fast Bypasser (rgthree)` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `MultiplePathsInput` —— 1/5 个有
-- `MultiplePathsInputPlus` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `WanImageToVideo` —— 1/5 个有
-- `easy int` —— 1/5 个有
-- `easy saveText` —— 1/5 个有
+- `ImageResize+` —— 4/5 个有
+- `JjkText` —— 3/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `llama_cpp_instruct_adv` —— 3/5 个有
+- `llama_cpp_model_loader` —— 3/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `LayerUtility: TextJoin` —— 2/5 个有
+- `ModelPatchTorchSettings` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `RH_LLMAPI_NODE` —— 2/5 个有
+- `TextInput_` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `PainterVRAM` —— 1/5 个有
+- `Switch any [Crystools]` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 5 | 82% |
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 12 | 12 - 12 | 5 | 100% |
 | 采样算法 | 1 | 1 - 1 | 5 | 100% |
 | 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | normal | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 80% |
 
 ## 常见问题
 
@@ -75,8 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，5 个样本，取值集中（一致性 82%）
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，5 个样本，取值集中（一致性 100%）
 - 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 normal，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 80%

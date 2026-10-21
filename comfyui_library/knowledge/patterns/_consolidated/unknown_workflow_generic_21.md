@@ -1,49 +1,40 @@
 ---
 name: unknown_workflow_generic_21
 type: Unknown Workflow
-frequency: 17
+frequency: 19
 level: moderate
-coverage: 0.902529
+coverage: 0.831421
 common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json, 数字人/数字人/TTS2声音克隆+情感参考_2030147654373609474.json, 数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json, 音频生成/音频生成/AI漫剧人物配音_2012386146013159425.json, 音频生成/音频生成/Index-TTS 声音克隆+最强情感参考_2027294716693323778.json, 音频生成/音频生成/IndexTTS-2单人音色克隆_情感控制_2067098061402365954.json, 音频生成/音频生成/IndexTTS-2单人音色克隆（情感控制）整合版_2105324460952875009.json, 音频生成/音频生成/IndexTTS-2多人音色克隆（情感控制）_2067455760203862017.json, 音频生成/音频生成/IndexTTS2-有声书制作 多人声音克隆+情感参考_1998673212043055105.json, 音频生成/音频生成/indexTTS2- 单多人语音模仿 有声书制作_2036738111874535425.json, 音频生成/音频生成/indexTTS2-单人多人声音克隆_2050487352761565185.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_1980901258972282882.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_2014197303279624194.json, 音频生成/音频生成/indexTTS2-有声书制作 多人语音模仿_2046163060200574977.json, 音频生成/音频生成/赵老师傅的声音克隆_2065098685150752770.json, 音频生成/音频生成/超好用🔥TTS2-有声书制作-多人语音模仿-克隆_2047208745079410689.json, 音频生成/音频生成/（漫剧配音）全能语音大合集_2049541110682361857.json]
+members: [音频生成/音频生成/IndexTTS-2音色克隆基础版单人_2094008558311526401.json, 音频生成/音频生成/IndexTTS2_2080545181341937666.json, 音频生成/音频生成/IndexTTS2单人语音克隆 音色情感(EmotionVector)_2063189618245324802.json, 音频生成/音频生成/IndexTTS基础情感控制_2053641347223044097.json, 音频生成/音频生成/TTS2.0_2063267036876328962.json, 音频生成/音频生成/TTS2.0单人一色克隆工作流_2053908634282799106.json, 音频生成/音频生成/TTS2声音克隆+情感参考+多人对话_2087110040862941186.json, 音频生成/音频生成/TTS2声音克隆+情感参考+多人（整合）_2010915883769667586.json, 音频生成/音频生成/TTS2声音克隆+情感参考_1979452666856247297.json, 音频生成/音频生成/TTS2声音克隆+情感参考_1991491052590866434.json, 音频生成/音频生成/TTS2声音克隆+情感参考_2009978566582210561.json, 音频生成/音频生成/TTS2声音克隆+情感参考_2010683442534555649.json, 音频生成/音频生成/TTS2声音克隆+情感参考_2015784519533600770.json, 音频生成/音频生成/单人 双人 情绪级配音_2059366220385837057.json, 音频生成/音频生成/声音克隆（最强克隆音色，情感调节）_2083171538429366274.json, 音频生成/音频生成/对话人声模仿工作流_2045830581509955585.json, 音频生成/音频生成/工作流视频篇6-TTS2声音克隆+情感参考_2018236652564516865.json, 音频生成/音频生成/工作流视频篇7-多人声音克隆+情感参考_2018238669697589249.json, 音频生成/音频生成/情感参考声音克隆_2080548502798692353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_21
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json、数字人/数字人/TTS2声音克隆+情感参考_2030147654373609474.json、数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json、音频生成/音频生成/AI漫剧人物配音_2012386146013159425.json、音频生成/音频生成/Index-TTS 声音克隆+最强情感参考_2027294716693323778.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2音色克隆基础版单人_2094008558311526401.json、音频生成/音频生成/IndexTTS2_2080545181341937666.json、音频生成/音频生成/IndexTTS2单人语音克隆 音色情感(EmotionVector)_2063189618245324802.json、音频生成/音频生成/IndexTTS基础情感控制_2053641347223044097.json、音频生成/音频生成/TTS2.0_2063267036876328962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `LoadAudio`
 - `SaveAudio`
 - `easy downloadIndexTTSAndLoadModel`
 - `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionVector` —— 16/17 个有
-- `PreviewAudio` —— 15/17 个有
-- `easy indexTTSEmotionMerge` —— 14/17 个有
-- `easy indexTTSEmotionAudio` —— 12/17 个有
-- `easy indexTTSAudioMerge` —— 10/17 个有
-- `NovelTextStructureNode` —— 8/17 个有
-- `PreviewAny` —— 7/17 个有
-- `easy showAnything` —— 7/17 个有
-- `Fast Groups Muter (rgthree)` —— 5/17 个有
-- `CR Prompt Text` —— 3/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
-- `Qwen3TTSCustomVoice` —— 1/17 个有
-- `Qwen3TTSModelLoader` —— 1/17 个有
-- `Qwen3TTSVoiceDesign` —— 1/17 个有
-- `SaveImage` —— 1/17 个有
+- `PreviewAudio` —— 17/19 个有
+- `easy indexTTSEmotionVector` —— 15/19 个有
+- `easy indexTTSEmotionMerge` —— 8/19 个有
+- `Fast Groups Muter (rgthree)` —— 7/19 个有
+- `PrimitiveStringMultiline` —— 2/19 个有
+- `PrimitiveFloat` —— 1/19 个有
 
 ## 典型参数
 

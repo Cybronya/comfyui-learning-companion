@@ -3,63 +3,69 @@ name: unknown_workflow_video_lora_sampler_350
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.521833
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, JjkText, LoadImage, Primitive integer [Crystools], RHHiddenNodes, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
+coverage: 0.539833
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/1977983075667824642.json, 视频生成/图生视频/1979387280857141250.json, 视频生成/图生视频/1978090235722608641.json, 视频生成/图生视频/2066836510007185409.json, 视频生成/图生视频/1977322476579508225.json, 视频生成/图生视频/1977667406921367553.json]
+missing: [LayerUtility: PurgeVRAM, SimpleMath+, Text Concatenate, Text Multiline]
+members: [视频生成/图生视频/1977338466017136642.json, 视频生成/图生视频/1975057390238306306.json, 视频生成/图生视频/1961976886408757249.json, 视频生成/图生视频/1958125817404542978.json, 视频生成/图生视频/1958125770365423618.json, 视频生成/文生视频/1977338466017136642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_350
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1977983075667824642.json、视频生成/图生视频/1979387280857141250.json、视频生成/图生视频/1978090235722608641.json、视频生成/图生视频/2066836510007185409.json、视频生成/图生视频/1977322476579508225.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1977338466017136642.json、视频生成/图生视频/1975057390238306306.json、视频生成/图生视频/1961976886408757249.json、视频生成/图生视频/1958125817404542978.json、视频生成/图生视频/1958125770365423618.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
-- `JjkText`
+- `LoadAudio`
 - `LoadImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
 - `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PoseAndFaceDetection` —— 5/6 个有
-- `BlockifyMask` —— 3/6 个有
-- `DWPreprocessor` —— 3/6 个有
-- `DrawMaskOnImage` —— 3/6 个有
-- `DrawViTPose` —— 3/6 个有
+- `AudioCrop` —— 5/6 个有
+- `PrimitiveInt` —— 5/6 个有
+- `Text Multiline` —— 5/6 个有
+- `RH_Translator` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `INTConstant` —— 3/6 个有
+- `LayerUtility: PurgeVRAM` —— 3/6 个有
 - `PrimitiveString` —— 3/6 个有
-- `Sam2Segmentation` —— 3/6 个有
-- `easy cleanGpuUsed` —— 3/6 个有
-- `FaceMaskFromPoseKeypoints` —— 2/6 个有
-- `WanVideoBlockSwap` —— 1/6 个有
-- `WanVideoEncode` —— 1/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `Text Concatenate` —— 3/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `WanVideoEncode` —— 3/6 个有
+- `Blur` —— 2/6 个有
+- `PreviewAudio` —— 2/6 个有
+- `SeedVR2GGUF` —— 2/6 个有
+- `IndexTTSNode` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `JWIntegerToString` —— 1/6 个有
 
 ## 典型参数
 
@@ -71,4 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM、SimpleMath+、Text Concatenate、Text Multiline

@@ -1,81 +1,79 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_32
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.842111
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced]
+frequency: 10
+level: moderate
+coverage: 0.7038
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MinimaxH3LatentUpscaler3D, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/NVFP4非蒸馏高质量LXT2镜头控制文生视频_2009643822036291585.json, 视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json, 视频生成/文生视频/ltx2.3文生视频工作流-官方版_2055854688318304257.json, 视频生成/文生视频/ltx2文生视频（运行非常稳定，时长可调，运行速度很快）_2008912681826263041.json, 视频生成/文生视频/video_ltx2_3_t2v文生视频_2032300523310813186.json, 视频生成/文生视频/video_ltx2_t2v_unpack_2008579148603723778.json, 视频生成/文生视频/video_ltx2_t2v文生视频fp8_2011810389457117185.json, 视频生成/文生视频/大凯辰光-LTX-2_T2V_Full-拆分子图版-文生视频工作流_2009155872034922497.json, 视频生成/文生视频/非蒸馏高质量LXT2镜头控制文生视频_2009183975582994433.json]
+members: [视频生成/图生视频/MinimaxH3全能参考高清放大工作流_2110689506868424706.json, 视频生成/图生视频/MinimaxH3双模双采（hybird+remix）(双加速实验）工作流_2094784005777481730.json, 视频生成/图生视频/Singularity真实人物高质量双采工作流_2098389525570613249.json, 视频生成/图生视频/minimax h3_fi2va-dasiwa-zs05可选单图双采_2092267502540779521.json, 视频生成/图生视频/minimax_h3_i2v_Latent%20Upscaler_2090996016345608194.json, 视频生成/图生视频/同模双采 H3 动态修复_2096940486610219009.json, 视频生成/文生视频/(0823修复）海螺H3 sigma强化+潜空间放大+高清人脸工作流_2091505787058348034.json, 视频生成/文生视频/H3 高清优化版-小脸不崩-运动不模糊_2089690104179810306.json, 视频生成/文生视频/啊癫 minimaxh3极速版二采潜空间直接放大（去油版）_2093957991434379265.json, 视频生成/文生视频/收藏级！H3 加速+二采+打斗全能工作流拆解系列05集_2092970619469123586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_32
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/NVFP4非蒸馏高质量LXT2镜头控制文生视频_2009643822036291585.json、视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json、视频生成/文生视频/ltx2.3文生视频工作流-官方版_2055854688318304257.json、视频生成/文生视频/ltx2文生视频（运行非常稳定，时长可调，运行速度很快）_2008912681826263041.json、视频生成/文生视频/video_ltx2_3_t2v文生视频_2032300523310813186.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考高清放大工作流_2110689506868424706.json、视频生成/图生视频/MinimaxH3双模双采（hybird+remix）(双加速实验）工作流_2094784005777481730.json、视频生成/图生视频/Singularity真实人物高质量双采工作流_2098389525570613249.json、视频生成/图生视频/minimax h3_fi2va-dasiwa-zs05可选单图双采_2092267502540779521.json、视频生成/图生视频/minimax_h3_i2v_Latent%20Upscaler_2090996016345608194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `MinimaxH3LatentUpscaler3D`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 8/9 个有
-- `GetImageSize` —— 8/9 个有
-- `ImageScaleBy` —— 8/9 个有
-- `LTXVScheduler` —— 8/9 个有
-- `PrimitiveFloat` —— 8/9 个有
-- `CreateVideo` —— 7/9 个有
-- `SaveVideo` —— 7/9 个有
-- `LTXVCropGuides` —— 6/9 个有
-- `VAEDecodeTiled` —— 6/9 个有
-- `CM_FloatToInt` —— 3/9 个有
-- `LTXVSpatioTemporalTiledVAEDecode` —— 3/9 个有
-- `PrimitiveStringMultiline` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `VAEDecode` —— 2/9 个有
-- `VHS_VideoCombine` —— 2/9 个有
-- `ComfyMathExpression` —— 1/9 个有
-- `DeepTranslatorTextNode` —— 1/9 个有
-- `GetNode` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
-- `TextGenerateLTX2Prompt` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `easy clearCacheAll` —— 1/9 个有
+- `MiniMaxH3SigmaShift` —— 9/10 个有
+- `ModelAttentionBackend` —— 9/10 个有
+- `ModelPreviewOverrideKJ` —— 9/10 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `SplitSigmas` —— 9/10 个有
+- `H3SigmaRefiner` —— 8/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/10 个有
+- `VHS_VideoCombine` —— 6/10 个有
+- `GetNode` —— 5/10 个有
+- `LoadAudio` —— 5/10 个有
+- `SetNode` —— 5/10 个有
+- `CreateVideo` —— 4/10 个有
+- `SaveVideo` —— 4/10 个有
+- `SolAttnMiniMax` —— 4/10 个有
+- `Label (rgthree)` —— 3/10 个有
+- `ImageResizeKJv2` —— 2/10 个有
+- `ManualSigmas` —— 2/10 个有
+- `MiniMaxH3ImageToVideo` —— 2/10 个有
+- `MiniMaxH3TurboLoRA` —— 2/10 个有
+- `Seed (rgthree)` —— 2/10 个有
+- `ShellAgentPluginVideoCombineEncrypt` —— 2/10 个有
+- `easy cleanGpuUsed` —— 2/10 个有
+- `LoraLoaderBypassModelOnly` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
+- `easy int` —— 1/10 个有
+- `孤海注释` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 9 | 89% |
-| 高度 | 25 | 25 - 25 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,5 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，9 个样本，取值集中（一致性 89%）
-- 高度 中位数 25，观测区间 25 - 25，9 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

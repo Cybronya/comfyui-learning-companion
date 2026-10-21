@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_generic_421
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.916667
-common_nodes: [RH_Midjourney, SaveImage]
+coverage: 0.78675
+common_nodes: [LoadImage, PreviewAny, RH_Veo3_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/1940837882426978306.json, 图片生成/文生图/1991833154164158466.json, 图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json]
+members: [视频生成/图生视频/1980555612541112322.json, 视频生成/图生视频/1980089000780271618.json, 视频生成/文生视频/1902533703103361026.json, 视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_421
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1940837882426978306.json、图片生成/文生图/1991833154164158466.json、图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1980555612541112322.json、视频生成/图生视频/1980089000780271618.json、视频生成/文生视频/1902533703103361026.json、视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_Midjourney`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `PreviewAny`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `ShellAgentPluginOutputText` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

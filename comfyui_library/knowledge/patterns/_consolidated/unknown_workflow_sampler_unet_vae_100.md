@@ -1,65 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_100
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.846
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.6415
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3工作流_2088343591486840833.json, 视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json, 视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json, 视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json, 视频生成/图生视频/MiniMax H3 多参考生视频（本地版）_2084663749595721729.json, 视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json, 视频生成/图生视频/Minimax H3 多参 Lightx2v 加速_2087571144038764548.json]
+members: [视频生成/图生视频/MinimaxH3-「电商」-多参生视频_2091522221620686850.json, 视频生成/图生视频/MinimaxH3参考生成视频工作流_2084154580937564162.json, 视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json, 视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json, 视频生成/图生视频/minimax_h3_r2v完美视频工作流一_2084929898988269569.json, 视频生成/图生视频/minimax_h3_rawmodel_veta_attention_ref2va_2110547591858581506.json, 视频生成/图生视频/minimax_h3_rawmodel_veta_attention_ref2va快速参考生视频精品_2110562127370084354.json, 视频生成/图生视频/minimax_h3多图快速参考生视频_2110577324570796034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_100
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/H3工作流_2088343591486840833.json、视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json、视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json、视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json、视频生成/图生视频/MiniMax H3 多参考生视频（本地版）_2084663749595721729.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-「电商」-多参生视频_2091522221620686850.json、视频生成/图生视频/MinimaxH3参考生成视频工作流_2084154580937564162.json、视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json、视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json、视频生成/图生视频/minimax_h3_r2v完美视频工作流一_2084929898988269569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `CreateVideo`
 - `KSamplerSelect`
 - `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 5/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `LoraLoaderBypassModelOnly` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `RH_LLMAPI_Pro_Node` —— 2/7 个有
-- `RTXVideoSuperResolution` —— 2/7 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 2/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `ModelPreviewOverrideKJ` —— 1/7 个有
-- `RHLLMChatNode` —— 1/7 个有
-- `ResizeImagesByLongerEdge` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `ResolutionSelector` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/8 个有
+- `CreateVideo` —— 5/8 个有
+- `SaveVideo` —— 5/8 个有
+- `GetNode` —— 4/8 个有
+- `SetNode` —— 4/8 个有
+- `BlockSparseAttention` —— 3/8 个有
+- `VHS_VideoCombine` —— 3/8 个有
+- `VedaSparseAttention` —— 3/8 个有
+- `QwenH3PromptLocal` —— 2/8 个有
+- `LazySwitch1way` —— 1/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `easy boolean` —— 1/8 个有
+- `easy saveText` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

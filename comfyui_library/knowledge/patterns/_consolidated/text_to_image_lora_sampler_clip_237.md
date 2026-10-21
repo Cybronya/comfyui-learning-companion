@@ -1,74 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_237
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.979333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.9018
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z image_绝对美写实人像_2063211868080140290.json, 图片生成/文生图/【极速版】Krea2 Trubo美商极高文生图_V2版_2105216145447014402.json, 视频生成/图生视频/2070438497516875778.json]
+members: [图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json, 图片生成/文生图/全能图片V2_2087481707606929409.json, 图片生成/文生图/全自动电商出图工作流，文生图电商产品图像处理工具_2107249551341080578.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_237
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z image_绝对美写实人像_2063211868080140290.json、图片生成/文生图/【极速版】Krea2 Trubo美商极高文生图_V2版_2105216145447014402.json、视频生成/图生视频/2070438497516875778.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json、图片生成/文生图/全能图片V2_2087481707606929409.json、图片生成/文生图/全自动电商出图工作流，文生图电商产品图像处理工具_2107249551341080578.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `easy promptLine` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
+- `Text` —— 4/5 个有
+- `孤海注释` —— 4/5 个有
+- `Float` —— 3/5 个有
+- `RH_RhartImageG2TextToImage` —— 3/5 个有
+- `RTXVideoSuperResolution` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `AspectRatioSelect` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | res_2s | - | 3 | 33% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1080 | 512 - 1920 | 3 | 51% |
-| 高度 | 1080 | 512 - 1920 | 3 | 51% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，3 个样本，一致性 33%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 512 - 1920，3 个样本
-- 高度 中位数 1080，观测区间 512 - 1920，3 个样本
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

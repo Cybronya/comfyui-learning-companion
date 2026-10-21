@@ -3,49 +3,52 @@ name: unknown_workflow_video_sampler_vae_175
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7625
-common_nodes: [CLIPVisionLoader, CreateVideo, ImageResizeKJv2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveVideo, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.726
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, RMBG, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk数字人-照片语音口播工作流_2095011792023015426.json, 视频生成/文生视频/wan2_1_infinitetalk_music数字人+全节点注释_2055791893207887873.json]
+members: [视频生成/图生视频/2018210609103380482.json, 视频生成/图生视频/2017750442649853954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_175
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk数字人-照片语音口播工作流_2095011792023015426.json、视频生成/文生视频/wan2_1_infinitetalk_music数字人+全节点注释_2055791893207887873.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2018210609103380482.json、视频生成/图生视频/2017750442649853954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CreateVideo`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SaveVideo`
-- `WanVideoClipVisionEncode`
+- `LoadWanVideoT5TextEncoder`
+- `RMBG`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 1/2 个有
-- `DownloadAndLoadWav2VecModel` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `VHS_LoadAudioUpload` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `Wav2VecModelLoader` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `DF_Int_to_Float` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `intToFloat _O` —— 1/2 个有
 
 ## 典型参数
 

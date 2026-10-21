@@ -1,74 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_137
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8038
-common_nodes: [CLIPLoader, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 6
+level: moderate
+coverage: 0.703667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [数字人/数字人/MiniMax Music 3_2095916117280772098.json, 数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json, 数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json, 视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json, 音频生成/音频生成/Mini max  music生成音乐_2088925873197117441.json]
+members: [视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json, 视频生成/图生视频/1953694457269026818.json, 视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json, 视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json, 视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json, 视频生成/文生视频/MiniMaxH3满血无损加速1.0高清工作流ENGENG_2087108575725441026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_137
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/MiniMax Music 3_2095916117280772098.json、数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json、数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json、视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json、音频生成/音频生成/Mini max  music生成音乐_2088925873197117441.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json、视频生成/图生视频/1953694457269026818.json、视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json、视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json、视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEDecodeAudio`
-- `VAEDecodeAudioTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/5 个有
-- `PreviewAudio` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `ModelAttentionBackend` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `PixaromaLabel` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `easy boolean` —— 1/5 个有
+- `ComfyMathExpression` —— 5/6 个有
+- `EasyCache` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `ResolutionSelector` —— 5/6 个有
+- `VHS_VideoCombine` —— 5/6 个有
+- `ModelPatchTorchSettings` —— 4/6 个有
+- `PrimitiveStringMultiline` —— 4/6 个有
+- `UniBlockSwap` —— 4/6 个有
+- `GetNode` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `ImageConcatMulti` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
+- `easy mathInt` —— 1/6 个有
+- `easy seed` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

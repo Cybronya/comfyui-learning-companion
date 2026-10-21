@@ -3,62 +3,90 @@ name: unknown_workflow_video_lora_sampler_276
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.873375
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.6475
+common_nodes: [Anything Everywhere, CLIPVisionLoader, CR String To Number, CR Text, FluxResolutionNode, GetNode, ImageCASharpening+, ImageResize+, Int, InversionDemoLazyIndexSwitch, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956951152292192258.json, 视频生成/图生视频/1955673336359653378.json, 视频生成/图生视频/1956191796604882946.json, 视频生成/图生视频/2005304023580372993.json, 视频生成/图生视频/2005293429506670594.json, 视频生成/图生视频/1959331317118873601.json, 视频生成/文生视频/1959187908609650689.json, 视频生成/文生视频/Wan2.2Stand-in视频面部交换实战_2004807686212513794.json]
+members: [视频生成/图生视频/1958007892207185921.json, 视频生成/图生视频/2048675014282584066.json, 视频生成/图生视频/1979015207190171649.json, 视频生成/图生视频/1933812324643819521.json, 视频生成/图生视频/1951105819150589953.json, 视频生成/图生视频/1947118729710985217.json, 视频生成/图生视频/1931043397564608513.json, 视频生成/图生视频/1934553565845200897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_276
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1956951152292192258.json、视频生成/图生视频/1955673336359653378.json、视频生成/图生视频/1956191796604882946.json、视频生成/图生视频/2005304023580372993.json、视频生成/图生视频/2005293429506670594.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1958007892207185921.json、视频生成/图生视频/2048675014282584066.json、视频生成/图生视频/1979015207190171649.json、视频生成/图生视频/1933812324643819521.json、视频生成/图生视频/1951105819150589953.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `Anything Everywhere`
+- `CLIPVisionLoader`
+- `CR String To Number`
+- `CR Text`
+- `FluxResolutionNode`
+- `GetNode`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `Int`
+- `InversionDemoLazyIndexSwitch`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `MathExpression|pysssss`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFaceProcessor` —— 7/8 个有
-- `FaceProcessorLoader` —— 7/8 个有
-- `ImageConcatMulti` —— 7/8 个有
-- `WanVideoSetLoRAs` —— 5/8 个有
-- `WanVideoTorchCompileSettings` —— 5/8 个有
-- `CreateCFGScheduleFloatList` —— 3/8 个有
-- `GetImageSizeAndCount` —— 3/8 个有
-- `INTConstant` —— 3/8 个有
-- `Primitive integer [Crystools]` —— 3/8 个有
-- `DrawMaskOnImage` —— 1/8 个有
-- `FaceOnlyModeSwitch` —— 1/8 个有
-- `GetImageSize+` —— 1/8 个有
-- `ImagePadKJ` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `InvertMask` —— 1/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
-- `RMBG` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
-- `VideoInputPreprocessor` —— 1/8 个有
+- `RHHiddenNodes` —— 7/8 个有
+- `CogVideoEnhanceAVideo` —— 6/8 个有
+- `ColorCorrectOfUtils` —— 6/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/8 个有
+- `WanVideoExperimentalArgs` —— 6/8 个有
+- `WanVideoSLG` —— 6/8 个有
+- `WanVideoTextEncode` —— 6/8 个有
+- `CR Text Concatenate` —— 5/8 个有
+- `ShowText|pysssss` —— 5/8 个有
+- `AudioCrop` —— 4/8 个有
+- `CreateCFGScheduleFloatList` —— 4/8 个有
+- `LoadAudio` —— 4/8 个有
+- `PreviewAudio` —— 4/8 个有
+- `AudioCombine` —— 3/8 个有
+- `PreviewBridge` —— 3/8 个有
+- `VHS_LoadVideo` —— 3/8 个有
+- `easy anythingIndexSwitch` —— 3/8 个有
+- `Evaluate Integers` —— 2/8 个有
+- `LayerColor: Brightness & Contrast` —— 2/8 个有
+- `MMAudioFeatureUtilsLoader` —— 2/8 个有
+- `MMAudioModelLoader` —— 2/8 个有
+- `MMAudioSampler` —— 2/8 个有
+- `WanVideoApplyNAG` —— 2/8 个有
+- `WanVideoTeaCache` —— 2/8 个有
+- `WanVideoTextEncodeSingle` —— 2/8 个有
+- `WanVideoTorchCompileSettings` —— 2/8 个有
+- `AudioCleanupNode` —— 1/8 个有
+- `AudioSeparation` —— 1/8 个有
+- `DownloadAndLoadWav2VecModel` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `MultiTalkModelLoader` —— 1/8 个有
+- `MultiTalkWav2VecEmbeds` —— 1/8 个有
+- `RH_LLMAPI_NODE` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
 
 ## 典型参数
 

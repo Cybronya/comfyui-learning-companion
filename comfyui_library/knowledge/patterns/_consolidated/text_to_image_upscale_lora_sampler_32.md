@@ -1,84 +1,99 @@
 ---
 name: text_to_image_upscale_lora_sampler_32
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8975
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, FastCanvas, FastCanvasTool, FluxGuidance, Image Comparer (rgthree), Image Rembg (Remove Background), ImageCropper, ImageScaleToTotalPixels, ImageUpscaleWithModel, JjkText, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, SaveImageAdvanced, TTP_Expand_And_Mask, TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 3
+level: strong
+coverage: 0.936667
+common_nodes: [AIO_Preprocessor, BlockifyMask, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CropWithPadInfo, DrawMaskOnImage, EmptyLatentImage, GetImageSize+, ImageConcanate, ImageResize+, ImageResizeKJ, ImageScaleBy, ImageScaleToTotalPixels, JjkText, KOOK_ImageCompression, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageBlend, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveInt, QwenEditConfigPreparer, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [Image Rembg (Remove Background), CR Prompt Text]
-members: [视频生成/文生视频/2108053287957262337.json, 视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json]
+missing: []
+members: [图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2107248174195892226.json, 图片生成/图生图/QwenEdit图生图换背景 可同步调整姿势完成角色人物替换_2107250684616855554.json, 图片生成/图生图/图生图QwenEdit快速换背景 人物替换一步搞定_2107249399859605505.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/2108053287957262337.json、视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2107248174195892226.json、图片生成/图生图/QwenEdit图生图换背景 可同步调整姿势完成角色人物替换_2107250684616855554.json、图片生成/图生图/图生图QwenEdit快速换背景 人物替换一步搞定_2107249399859605505.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `BlockifyMask`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `CropWithPadInfo`
+- `DrawMaskOnImage`
 - `EmptyLatentImage`
-- `FastCanvas`
-- `FastCanvasTool`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `Image Rembg (Remove Background)`
-- `ImageCropper`
+- `GetImageSize+`
+- `ImageConcanate`
+- `ImageResize+`
+- `ImageResizeKJ`
+- `ImageScaleBy`
 - `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
 - `JjkText`
+- `KOOK_ImageCompression`
 - `KSampler`
-- `KSamplerAdvanced`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
+- `PrimitiveInt`
+- `QwenEditConfigPreparer`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `TTP_Expand_And_Mask`
-- `TextEncodeQwenImage21`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Rembg (Remove Background)、CR Prompt Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

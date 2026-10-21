@@ -1,30 +1,41 @@
 ---
 name: unknown_workflow_generic_287
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [ByteDance2TextToVideoNode, SaveVideo]
+coverage: 0.7754
+common_nodes: [LoadImage, Qwen3_VQA, RH_Translator, SaveVideo, Text Multiline, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_seedance2_0_mini_t2v.json, comfyui-workflow-templates-json/api_seedance2_0_t2v.json, comfyui-workflow-templates-json/api_seedance2_5_t2v.json, comfyui-workflow-templates-json/api_seedance2_5_t2v_1080p.json]
+members: [视频生成/图生视频/1998768118094778370.json, 视频生成/图生视频/1998768343349911554.json, 视频生成/图生视频/1998761612855140353.json, 视频生成/图生视频/1999153411486609410.json, 视频生成/图生视频/1999312879121821697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_287
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_t2v.json、comfyui-workflow-templates-json/api_seedance2_0_t2v.json、comfyui-workflow-templates-json/api_seedance2_5_t2v.json、comfyui-workflow-templates-json/api_seedance2_5_t2v_1080p.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1998768118094778370.json、视频生成/图生视频/1998768343349911554.json、视频生成/图生视频/1998761612855140353.json、视频生成/图生视频/1999153411486609410.json、视频生成/图生视频/1999312879121821697.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ByteDance2TextToVideoNode`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `Qwen3_VQA`
+- `RH_Translator`
 - `SaveVideo`
+- `Text Multiline`
+- `easy anythingIndexSwitch`
+
+**可变部分**（部分 workflow 才有）：
+- `ShowText|pysssss` —— 4/5 个有
+- `RH_Grok_Video3` —— 2/5 个有
+- `RH_Veo3_Image2Video` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `RH_RhartVideoGImageToVideo` —— 1/5 个有
 
 ## 典型参数
 

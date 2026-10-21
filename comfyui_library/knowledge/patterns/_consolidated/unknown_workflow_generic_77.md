@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_77
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9714
-common_nodes: [CR Text, LoadAudio, SaveAudio]
+coverage: 0.856909
+common_nodes: [Audio To Text (mtb), CR Prompt Text, Load Whisper (mtb), LoadAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json, 音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json, 音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json, 音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS（自研）_2042139833367269378.json, 音频生成/音频生成/VoxCPM2.0双人音色克隆对话_2045804851086499842.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2042135828993937409.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2043545957635198978.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2071261044680511489.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039309185434783746.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039694725573255170.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039215676392480769.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039696306108633089.json, 音频生成/音频生成/单人语音克隆TTS_2044697057641897985.json, 音频生成/音频生成/双人语音克隆对话_2044482244785475586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_77
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json、音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json、音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json、音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json、音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Text`
+全部 11 个 workflow 都包含：
+- `Audio To Text (mtb)`
+- `CR Prompt Text`
+- `Load Whisper (mtb)`
 - `LoadAudio`
-- `SaveAudio`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `WujiVoiceActorVoxCPM` —— 8/10 个有
-- `MegaTTS3Run` —— 2/10 个有
+- `SaveAudio` —— 10/11 个有
+- `NormalizeAudioLoudness` —— 9/11 个有
+- `LongCatVoiceCloneTTS` —— 8/11 个有
+- `LongCatMultiSpeakerTTS` —— 3/11 个有
+- `TrimAudioDuration` —— 2/11 个有
+- `TDQwen3TTSDefineSpeaker` —— 1/11 个有
 
 ## 典型参数
 

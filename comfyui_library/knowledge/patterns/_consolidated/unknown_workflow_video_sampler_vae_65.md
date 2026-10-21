@@ -3,60 +3,61 @@ name: unknown_workflow_video_sampler_vae_65
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.842
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.98425
+common_nodes: [CLIPVisionLoader, Compare, DWPreprocessor, FaceMaskFromPoseKeypoints, INTConstant, If ANY execute A else B, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax_H3文生视频V2_2088958815235559426.json, 视频生成/文生视频/MiniMax_H3文生视频自动提示词版_2084361115349372930.json, 视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json, 视频生成/文生视频/Minimax H3 文生视频_2084263974157242369.json, 视频生成/文生视频/Minimax-H3 文生视频_2084501246035185665.json, 视频生成/文生视频/Minimax_H3文生视频图生视频_2095439213532639234.json, 视频生成/文生视频/minimax_h3_turbo_lora_4步工作流_2085539352125464578.json, 视频生成/文生视频/【MinimaxH3】首尾帧视频-5倍急速版（25→5分钟）_2087187021684101121.json]
+members: [视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json, 视频生成/图生视频/2039951088849260546.json, 视频生成/图生视频/2030568462560534529.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json, 视频生成/图生视频/2034480754176036865.json, 视频生成/图生视频/2046249922785189889.json, 视频生成/图生视频/2046394046041563138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_65
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3文生视频V2_2088958815235559426.json、视频生成/文生视频/MiniMax_H3文生视频自动提示词版_2084361115349372930.json、视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json、视频生成/文生视频/Minimax H3 文生视频_2084263974157242369.json、视频生成/文生视频/Minimax-H3 文生视频_2084501246035185665.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json、视频生成/图生视频/2039951088849260546.json、视频生成/图生视频/2030568462560534529.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `CLIPVisionLoader`
+- `Compare`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `INTConstant`
+- `If ANY execute A else B`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 5/8 个有
-- `UNETLoader` —— 5/8 个有
-- `LoadImage` —— 4/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/8 个有
-- `PathchSageAttentionKJ` —— 4/8 个有
-- `DiffusionModelLoaderKJ` —— 3/8 个有
-- `MiniMaxH3SigmaShift` —— 3/8 个有
-- `SolAttnPatch` —— 3/8 个有
-- `ModelPreviewOverrideKJ` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `INTConstant` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `MiniMaxLowVRAMAttention` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `SpectrumApplyMiniMaxH3` —— 1/8 个有
-- `TextInput_` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 ## 典型参数
 

@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_generic_289
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.75
-common_nodes: [LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage, 忽略多组孤海]
+coverage: 0.98
+common_nodes: [CR Prompt Text, LoadAudio, LoadVideo, RH_HeyGemNode, SaveAudio, SaveVideo]
 problems: []
-missing: [忽略多组孤海]
-members: [图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json, 图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json, 图片生成/图生图/2098218264106201090.json, 图片生成/图生图/2098237558626017281.json]
+missing: []
+members: [视频生成/图生视频/1925941668778823682.json, 视频生成/图生视频/1927266147043856386.json, 视频生成/图生视频/1935685692900958209.json, 视频生成/图生视频/1925766535045156866.json, 音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_289
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json、图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json、图片生成/图生图/2098218264106201090.json、图片生成/图生图/2098237558626017281.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1925941668778823682.json、视频生成/图生视频/1927266147043856386.json、视频生成/图生视频/1935685692900958209.json、视频生成/图生视频/1925766535045156866.json、音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
-- `SaveImage`
-- `忽略多组孤海`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveAudio`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenFlareEdit` —— 2/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 2/4 个有
+- `IndexTTSRun` —— 3/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `IndexTTSNode` —— 2/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `JWStringReplace` —— 1/5 个有
 
 ## 典型参数
 
@@ -43,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：忽略多组孤海
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

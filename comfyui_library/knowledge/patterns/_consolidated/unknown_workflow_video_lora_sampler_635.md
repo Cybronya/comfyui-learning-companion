@@ -3,61 +3,92 @@ name: unknown_workflow_video_lora_sampler_635
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ImageScale, InstructPixToPixConditioning, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.641333
+common_nodes: [ApplyFaceProcessor, Bjornulf_ShowInt, Bjornulf_ShowStringText, ColorMatch, DWPreprocessor, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, FaceProcessorLoader, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetImagesFromBatchIndexed, GetNode, INTConstant, ImageBatchGet, ImageBatchRemove, ImageResizeKJv2, ImageToMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, MaskPreview, MaskToImage, MathExpression|pysssss, MultiImagesInput, PreviewImage, RH_Captioner, RH_LLMAPI_NODE, SetNode, ShowText, SimpleCondition+, Text Multiline, VHS_DuplicateImages, VHS_LoadVideoFFmpeg, VHS_LoadVideoPath, VHS_SelectFilename, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy clearCacheAll, easy forLoopEnd, easy forLoopStart, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1905283605348667393.json, 视频生成/图生视频/1903507443177918465.json, 视频生成/文生视频/1904420884050776066.json]
+members: [视频生成/图生视频/1957687752345186305.json, 视频生成/图生视频/1957021947792953346.json, 视频生成/图生视频/1958351001759727617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_635
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1905283605348667393.json、视频生成/图生视频/1903507443177918465.json、视频生成/文生视频/1904420884050776066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1957687752345186305.json、视频生成/图生视频/1957021947792953346.json、视频生成/图生视频/1958351001759727617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageScale`
-- `InstructPixToPixConditioning`
-- `KSamplerSelect`
+- `ApplyFaceProcessor`
+- `Bjornulf_ShowInt`
+- `Bjornulf_ShowStringText`
+- `ColorMatch`
+- `DWPreprocessor`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `FaceProcessorLoader`
+- `Fast Groups Muter (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchGet`
+- `ImageBatchRemove`
+- `ImageResizeKJv2`
+- `ImageToMask`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SamplerCustom`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MaskBatchMulti`
+- `MaskPreview`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `MultiImagesInput`
+- `PreviewImage`
+- `RH_Captioner`
+- `RH_LLMAPI_NODE`
+- `SetNode`
+- `ShowText`
+- `SimpleCondition+`
+- `Text Multiline`
+- `VHS_DuplicateImages`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_LoadVideoPath`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 2/3 个有
-- `ImageResizeKJ` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
-- `DepthAnythingV2Preprocessor` —— 1/3 个有
-- `DownloadAndLoadFlorence2Model` —— 1/3 个有
-- `Florence2Run` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `Primitive string [Crystools]` —— 1/3 个有
-- `ReActorFaceSwap` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `TeaCache` —— 1/3 个有
-- `Text Concatenate (JPS)` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `PreViewVideo` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoSetLoRAs` —— 1/3 个有
 
 ## 典型参数
 

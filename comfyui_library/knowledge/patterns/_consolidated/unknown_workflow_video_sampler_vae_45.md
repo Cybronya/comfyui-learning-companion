@@ -1,29 +1,31 @@
 ---
 name: unknown_workflow_video_sampler_vae_45
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.945222
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7104
+common_nodes: [GetImageSizeAndCount, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
-missing: [Text Multiline, Primitive integer [Crystools]]
-members: [图片生成/文生图/1924016938777759746.json, 图片生成/文生图/1933717889453350913.json, 图片生成/文生图/1935149861173927937.json, 视频生成/图生视频/1934805890510069762.json, 视频生成/图生视频/1935618594950807553.json, 视频生成/图生视频/1935624058308317186.json, 视频生成/图生视频/1937018239794974722.json, 视频生成/图生视频/1924274970828918785.json, 视频生成/图生视频/1928305949314793473.json]
+missing: []
+members: [视频生成/图生视频/1925382654517030913.json, 视频生成/图生视频/1925399301634109442.json, 视频生成/图生视频/1926507512189624322.json, 视频生成/图生视频/1926119230994018305.json, 视频生成/图生视频/1925182598413545473.json, 视频生成/图生视频/1924743024252022785.json, 视频生成/图生视频/1923359866998411265.json, 视频生成/图生视频/1928359146670964738.json, 视频生成/文生视频/1923433916261126146.json, 视频生成/文生视频/1934860931379699714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_45
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1924016938777759746.json、图片生成/文生图/1933717889453350913.json、图片生成/文生图/1935149861173927937.json、视频生成/图生视频/1934805890510069762.json、视频生成/图生视频/1935618594950807553.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1925382654517030913.json、视频生成/图生视频/1925399301634109442.json、视频生成/图生视频/1926507512189624322.json、视频生成/图生视频/1926119230994018305.json、视频生成/图生视频/1925182598413545473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `GetImageSizeAndCount`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
@@ -32,31 +34,41 @@ source: knowledge_consolidation
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTeaCache` —— 8/9 个有
-- `Text Multiline` —— 7/9 个有
-- `WanVideoEnhanceAVideo` —— 7/9 个有
-- `LoadImage` —— 6/9 个有
-- `Primitive integer [Crystools]` —— 6/9 个有
-- `WanVideoVACEEncode` —— 6/9 个有
-- `WanVideoVACEStartToEndFrame` —— 6/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `WanVideoLoraSelect` —— 4/9 个有
-- `WanVideoVACEModelSelect` —— 4/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/9 个有
-- `GIMMVFI_interpolate` —— 3/9 个有
-- `WanVideoEmptyEmbeds` —— 3/9 个有
-- `CR Upscale Image` —— 2/9 个有
-- `ImageResizeKJ` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `JWInteger` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
-- `Anything Everywhere3` —— 1/9 个有
-- `ImageRepeat` —— 1/9 个有
-- `SimpleMath+` —— 1/9 个有
-- `String Literal` —— 1/9 个有
+- `AddLabel` —— 9/10 个有
+- `EmptyImage` —— 9/10 个有
+- `ImageConcatMulti` —— 9/10 个有
+- `WanVideoTeaCache` —— 9/10 个有
+- `GetNode` —— 8/10 个有
+- `LoadImage` —— 8/10 个有
+- `SetNode` —— 8/10 个有
+- `VHS_LoadVideo` —— 8/10 个有
+- `WanVideoVACEStartToEndFrame` —— 8/10 个有
+- `ImageResizeKJv2` —— 7/10 个有
+- `MaskPreview` —— 7/10 个有
+- `DepthAnything_V2` —— 6/10 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 6/10 个有
+- `ImagePadKJ` —— 6/10 个有
+- `WanVideoTorchCompileSettings` —— 6/10 个有
+- `GetImageRangeFromBatch` —— 5/10 个有
+- `WanVideoLoraSelect` —— 4/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `ImageResizeKJ` —— 3/10 个有
+- `MaskPreview+` —— 3/10 个有
+- `WanVideoEnhanceAVideo` —— 3/10 个有
+- `ImageFromBatch+` —— 2/10 个有
+- `ImageResize+` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `MimicMotionGetPoses` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `WanVideoApplyNAG` —— 1/10 个有
+- `WanVideoMagCache` —— 1/10 个有
+- `WanVideoTextEncodeSingle` —— 1/10 个有
 
 ## 典型参数
 
@@ -68,4 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline、Primitive integer [Crystools]
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

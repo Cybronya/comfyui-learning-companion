@@ -3,43 +3,45 @@ name: unknown_workflow_video_sampler_vae_190
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7085
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.459
+common_nodes: [Float, GetNode, ImpactSwitch, JWStringSplit, LoadWanVideoT5TextEncoder, PrimitiveString, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy convertAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/1923309184865980418.json, 视频生成/文生视频/1894646862492905473.json]
+members: [视频生成/文生视频/1942908050997207041.json, 视频生成/文生视频/1967512356920156162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_190
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1923309184865980418.json、视频生成/文生视频/1894646862492905473.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1942908050997207041.json、视频生成/文生视频/1967512356920156162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Float`
+- `GetNode`
+- `ImpactSwitch`
+- `JWStringSplit`
 - `LoadWanVideoT5TextEncoder`
+- `PrimitiveString`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `CogVideoEnhanceAVideo` —— 1/2 个有
-- `ImageCASharpening+` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoSetBlockSwap` —— 1/2 个有
+- `easy convertAnything`
 
 ## 典型参数
 

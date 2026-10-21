@@ -3,78 +3,79 @@ name: text_to_image_video_lora_sampler_131
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.6462
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8958
+common_nodes: [BasicGuider, BasicScheduler, Bjornulf_ShowInt, CLIPLoader, CLIPTextEncode, CR Text, CR Text Replace, EmptyLatentImage, Int, IntToString, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LazySwitch1way, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveBoolean, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowAnything|Mie, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, floatToInt _O, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/多图参考生视频｜MiniMax R2V 768分辨率8步极速出片_2103022962520707074.json, 视频生成/图生视频/心然寻源MiniMax H3多模态参考数字人对口型｜图生视频_2100764134798352386.json, 视频生成/图生视频/打斗单采图生视频｜AITUDOU-MiniMax H3生成_2095847355185717249.json, 视频生成/图生视频/最强文戏低配版｜MINIMAX-H3开源角色一致性生成_2095074002149662722.json, 视频生成/图生视频/海螺480全能参考v2｜视频图生视频一键直出_2090200734355775489.json]
+members: [视频生成/图生视频/Minimax H3 MV制作｜开场间奏画面图生视频一键搞定_2089415390387589122.json, 视频生成/图生视频/Minimax H3唱歌跳舞换装｜数字人图生视频创意玩法_2089452113129725954.json, 视频生成/图生视频/Minimax H3数字人唱歌跳舞换装一体｜图生视频创意工作流_2089720756715483138.json, 视频生成/图生视频/唱歌跳舞换装数字人｜Minimax H3 图生视频_2089269821186863106.json, 视频生成/图生视频/数字人唱歌跳舞换装创意玩法 Minimax H3图生视频数字人应用方案_2093211398343057410.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_131
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/多图参考生视频｜MiniMax R2V 768分辨率8步极速出片_2103022962520707074.json、视频生成/图生视频/心然寻源MiniMax H3多模态参考数字人对口型｜图生视频_2100764134798352386.json、视频生成/图生视频/打斗单采图生视频｜AITUDOU-MiniMax H3生成_2095847355185717249.json、视频生成/图生视频/最强文戏低配版｜MINIMAX-H3开源角色一致性生成_2095074002149662722.json、视频生成/图生视频/海螺480全能参考v2｜视频图生视频一键直出_2090200734355775489.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 MV制作｜开场间奏画面图生视频一键搞定_2089415390387589122.json、视频生成/图生视频/Minimax H3唱歌跳舞换装｜数字人图生视频创意玩法_2089452113129725954.json、视频生成/图生视频/Minimax H3数字人唱歌跳舞换装一体｜图生视频创意工作流_2089720756715483138.json、视频生成/图生视频/唱歌跳舞换装数字人｜Minimax H3 图生视频_2089269821186863106.json、视频生成/图生视频/数字人唱歌跳舞换装创意玩法 Minimax H3图生视频数字人应用方案_2093211398343057410.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `Bjornulf_ShowInt`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CR Text`
+- `CR Text Replace`
 - `EmptyLatentImage`
-- `GetNode`
+- `Int`
+- `IntToString`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LazySwitch1way`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `RHLLMChatNode`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `ShowAnything|Mie`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `floatToInt _O`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `ModelAttentionBackend` —— 4/5 个有
-- `CR Prompt Text` —— 3/5 个有
-- `ExtendIntermediateSigmas` —— 3/5 个有
-- `CM_IntToFloat` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `Float` —— 2/5 个有
-- `H3SigmaRefiner` —— 2/5 个有
-- `INTConstant` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `MiniMaxH3SigmaShift` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `FloatConstant` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `ResizeShortestToNode` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
-- `SigmasGraph` —— 1/5 个有
-- `SolAttnMiniMax` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `ZNGB_AudioCrop` —— 1/5 个有
+- `AudioCrop` —— 4/5 个有
+- `Bjornulf_ShowFloat` —— 4/5 个有
+- `CR Text Concatenate` —— 4/5 个有
+- `MelBandRoFormerModelLoader` —— 4/5 个有
+- `MelBandRoFormerSampler` —— 4/5 个有
+- `PreviewAny` —— 4/5 个有
+- `PreviewAudio` —— 4/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `RH_GetAudioDuration` —— 4/5 个有
+- `RH_Translator` —— 4/5 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 4/5 个有
+- `MultiTextConcatenate` —— 1/5 个有
+- `VAEDecodeAudio` —— 1/5 个有
 - `easy showAnything` —— 1/5 个有
+- `sanmi Float` —— 1/5 个有
 
 ## 典型参数
 
@@ -92,7 +93,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -103,4 +104,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，5 个样本，一致性 100%
 - 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

@@ -1,35 +1,43 @@
 ---
 name: unknown_workflow_generic_282
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.816
-common_nodes: [GeminiVideoOmniV2, SaveVideo]
+coverage: 0.7712
+common_nodes: [JWStringReplace, LoadAudio, LoadVideo, RH_HeyGemNode, RH_LLMAPI_NODE, SaveAudio, SaveVideo, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json]
+members: [数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json, 视频生成/文生视频/1933349167462789122.json, 音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json, 音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_282
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json、数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json、视频生成/文生视频/1933349167462789122.json、音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json、音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GeminiVideoOmniV2`
+全部 5 个 workflow 都包含：
+- `JWStringReplace`
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `RH_LLMAPI_NODE`
+- `SaveAudio`
 - `SaveVideo`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `PreviewAny` —— 1/4 个有
-- `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` —— 1/4 个有
+- `IndexTTS2Run` —— 3/5 个有
+- `IndexTTSNode` —— 1/5 个有
+- `IndexTTSRun` —— 1/5 个有
+- `TextBox` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,50 +1,50 @@
 ---
 name: unknown_workflow_lora_unet_vae_5
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.837
-common_nodes: [CLIPLoader, CreateVideo, GetImageSize, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorSelfLift, ModelAttentionBackend, PlaySound|pysssss, PreviewAny, SaveImage, SaveVideo, UNETLoader, VAELoader, easy imageChooser, kkVideoFirstLastFrames]
+frequency: 3
+level: moderate
+coverage: 0.874667
+common_nodes: [BasicScheduler, CLIPLoader, CreateVideo, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, PreviewAny, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax+H3+SelfLift导演台+RH Upscale_2104255482696388609.json, 视频生成/图生视频/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2102745336082165762.json]
+members: [视频生成/图生视频/（加速）MiniMax H3 导演台全能工作流_2090880598213750786.json, 视频生成/文生视频/H3导演台_2103122205092700161.json, 视频生成/文生视频/MiniMax H3 导演台-双采-Latent Upscaler-SLA加速_2092859264619597825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3+SelfLift导演台+RH Upscale_2104255482696388609.json、视频生成/图生视频/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2102745336082165762.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/（加速）MiniMax H3 导演台全能工作流_2090880598213750786.json、视频生成/文生视频/H3导演台_2103122205092700161.json、视频生成/文生视频/MiniMax H3 导演台-双采-Latent Upscaler-SLA加速_2092859264619597825.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CreateVideo`
-- `GetImageSize`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3Director`
-- `MiniMaxH3DirectorFaceRefine`
-- `MiniMaxH3DirectorSelfLift`
-- `ModelAttentionBackend`
-- `PlaySound|pysssss`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PathchSageAttentionKJ`
 - `PreviewAny`
-- `SaveImage`
 - `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
-- `easy imageChooser`
-- `kkVideoFirstLastFrames`
 
 **可变部分**（部分 workflow 才有）：
-- `Astra` —— 1/2 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/2 个有
-- `RH_Upscale` —— 1/2 个有
+- `ModelAttentionBackend` —— 2/3 个有
+- `SolAttnMiniMax` —— 2/3 个有
+- `EasyCache` —— 1/3 个有
+- `LoraLoaderBypassModelOnly` —— 1/3 个有
+- `MiniMaxH3BlockCacheT8` —— 1/3 个有
+- `MiniMaxH3HybridLoader` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
 
 ## 典型参数
 
@@ -56,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

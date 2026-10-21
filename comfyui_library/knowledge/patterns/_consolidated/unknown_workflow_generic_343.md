@@ -3,34 +3,33 @@ name: unknown_workflow_generic_343
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.726
-common_nodes: [CR Prompt Text, SaveVideo, easy showAnything]
+coverage: 0.816
+common_nodes: [GeminiVideoOmniV2, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json, 视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json, 视频生成/文生视频/全能视频SPRO文生视频25s（竖屏）_1984573281137278978.json, 视频生成/文生视频/全能视频S文生视频+图生视频_1979842385687515137.json]
+members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_343
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json、视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json、视频生成/文生视频/全能视频SPRO文生视频25s（竖屏）_1984573281137278978.json、视频生成/文生视频/全能视频S文生视频+图生视频_1979842385687515137.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
+- `GeminiVideoOmniV2`
 - `SaveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_T2V_PRO` —— 3/4 个有
-- `LoadImage` —— 2/4 个有
-- `Comfly_sora2` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `PreviewAny` —— 1/4 个有
+- `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` —— 1/4 个有
 
 ## 典型参数
 

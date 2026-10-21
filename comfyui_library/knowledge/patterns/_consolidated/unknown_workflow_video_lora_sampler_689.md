@@ -3,71 +3,75 @@ name: unknown_workflow_video_lora_sampler_689
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.598667
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.401333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, DapaoH3LocalPromptNode, Fast Groups Bypasser (rgthree), GetNode, Int, Int2String, JjkShowText, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveString, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/2047836406218756098.json, 视频生成/图生视频/1999818280472899586.json, 视频生成/文生视频/SteadyDancer 跳舞 支持不同身形比例_2019123719372808193.json]
+members: [视频生成/文生视频/10Eros Max BETA5 workflow_2097951550932082690.json, 视频生成/文生视频/MiniMax H3多参全能整合工作流V2_2090358738145333250.json, 视频生成/文生视频/MiniMax+H3多参全能整合工作流_2090073717442441217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_689
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2047836406218756098.json、视频生成/图生视频/1999818280472899586.json、视频生成/文生视频/SteadyDancer 跳舞 支持不同身形比例_2019123719372808193.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/10Eros Max BETA5 workflow_2097951550932082690.json、视频生成/文生视频/MiniMax H3多参全能整合工作流V2_2090358738145333250.json、视频生成/文生视频/MiniMax+H3多参全能整合工作流_2090073717442441217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `DapaoH3LocalPromptNode`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `Int`
+- `Int2String`
+- `JjkShowText`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveString`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `Text`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `PrimitiveString` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `StringConcatenate` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `Bookmark (rgthree)` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Int` —— 1/3 个有
+- `AudioCrop` —— 2/3 个有
+- `H3SigmaRefiner` —— 2/3 个有
+- `MiniMaxH3SigmaShift` —— 2/3 个有
+- `MiniMaxLowVRAMAttention` —— 2/3 个有
+- `ModelPreviewOverrideKJ` —— 2/3 个有
+- `SplitSigmas` —— 2/3 个有
+- `VAEDecode` —— 2/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LTXVConcatAVLatent` —— 1/3 个有
+- `LTXVSeparateAVLatent` —— 1/3 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/3 个有
+- `PT_H3ConcatAVLatent` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 1/3 个有
+- `VAEDecodeAudio` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
+- `VAEEncodeAudio` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_663
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5
-common_nodes: [LoadAudio, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, YuE2CoverTranscribe, YuE2Generate, YuE2Loader, YuE2SamplingConfig, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.641333
+common_nodes: [Apply Whisper, CR Prompt Text, Fast Groups Bypasser (rgthree), FishS2MultiSpeakerTTS, FishS2TTS, FishS2VoiceCloneTTS, LoadAudio, SaveAudio, ShowText, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json, 音频生成/音频生成/YuE2-翻唱-音乐生成_2100065012445437953.json]
+members: [音频生成/音频生成/声音克隆 支持多人_单人 语气 情绪 FishAudio S2pro_2033522460468977665.json, 音频生成/音频生成/数字人语音克隆 语音生成 支持多人 单人 各种情感语气 超牛_2081400408932700161.json, 音频生成/音频生成/语音克隆 语音生成 支持多人 单人 各种语气 很厉害！ FishAudio S2pro_2033509565647560705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_663
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json、音频生成/音频生成/YuE2-翻唱-音乐生成_2100065012445437953.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/声音克隆 支持多人_单人 语气 情绪 FishAudio S2pro_2033522460468977665.json、音频生成/音频生成/数字人语音克隆 语音生成 支持多人 单人 各种情感语气 超牛_2081400408932700161.json、音频生成/音频生成/语音克隆 语音生成 支持多人 单人 各种语气 很厉害！ FishAudio S2pro_2033509565647560705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Apply Whisper`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `FishS2MultiSpeakerTTS`
+- `FishS2TTS`
+- `FishS2VoiceCloneTTS`
 - `LoadAudio`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
-- `YuE2CoverTranscribe`
-- `YuE2Generate`
-- `YuE2Loader`
-- `YuE2SamplingConfig`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `SaveAudio`
+- `ShowText`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
@@ -47,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,43 +1,34 @@
 ---
 name: unknown_workflow_generic_608
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.843
-common_nodes: [ByteDance2ReferenceNodeV2, GeminiNodeV3, LoadImage, OpenAIGPTImageNodeV2, PreviewAny, SaveImage, SaveVideo, StringConcatenate]
+frequency: 3
+level: moderate
+coverage: 0.904667
+common_nodes: [AceMusicCaptionInput, AceMusicGenerator, AceMusicLyricsInput, AceMusicModelLoader, AceMusicSettings, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json, comfyui-workflow-templates-json/template_seedance2_storyboard_to_video.json]
+members: [音频生成/音频生成/AceMusic 基础工作流_2020095556718170113.json, 音频生成/音频生成/AceMusic 基础工作流拆解_2027393917607485442.json, 音频生成/音频生成/AceMusic 文字生歌曲_2021001344487792641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_608
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json、comfyui-workflow-templates-json/template_seedance2_storyboard_to_video.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AceMusic 基础工作流_2020095556718170113.json、音频生成/音频生成/AceMusic 基础工作流拆解_2027393917607485442.json、音频生成/音频生成/AceMusic 文字生歌曲_2021001344487792641.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ByteDance2ReferenceNodeV2`
-- `GeminiNodeV3`
-- `LoadImage`
-- `OpenAIGPTImageNodeV2`
-- `PreviewAny`
-- `SaveImage`
-- `SaveVideo`
-- `StringConcatenate`
-
-**可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageStitch` —— 1/2 个有
-- `LoadVideo` —— 1/2 个有
-- `Video Slice` —— 1/2 个有
+全部 3 个 workflow 都包含：
+- `AceMusicCaptionInput`
+- `AceMusicGenerator`
+- `AceMusicLyricsInput`
+- `AceMusicModelLoader`
+- `AceMusicSettings`
+- `SaveAudio`
 
 ## 典型参数
 
@@ -49,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

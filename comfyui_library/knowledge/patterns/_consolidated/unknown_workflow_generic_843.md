@@ -3,34 +3,33 @@ name: unknown_workflow_generic_843
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.889
-common_nodes: [LoadAudio, SaveAudio, SparkTTS_AdvVoiceClone, SparkTTS_VoiceCreator]
+coverage: 1
+common_nodes: [LoadImage, RH_Doubao_Seedance_1_5_Pro_Fast, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/SparkTTS语音克隆_1955282964529778689.json, 音频生成/音频生成/🪂【大炮工具】声音克隆！语音生成 声音一键克隆！🪂_1952161569239191554.json]
+members: [视频生成/图生视频/2009151155724623873.json, 视频生成/文生视频/seedance1.0_2044609453537890306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_843
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SparkTTS语音克隆_1955282964529778689.json、音频生成/音频生成/🪂【大炮工具】声音克隆！语音生成 声音一键克隆！🪂_1952161569239191554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2009151155724623873.json、视频生成/文生视频/seedance1.0_2044609453537890306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SparkTTS_AdvVoiceClone`
-- `SparkTTS_VoiceCreator`
+- `LoadImage`
+- `RH_Doubao_Seedance_1_5_Pro_Fast`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
+- `RH_Jimeng_Image2Video_V2` —— 1/2 个有
+- `RH_SeedanceV15ProImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

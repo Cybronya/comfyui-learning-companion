@@ -1,43 +1,38 @@
 ---
 name: unknown_workflow_generic_169
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.960667
-common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+coverage: 0.793857
+common_nodes: [CR Prompt Text, YuE2Generate, YuE2Loader, YuE2SamplingConfig]
 problems: []
 missing: []
-members: [数字人/数字人/声音_2092902828380614658.json, 数字人/数字人/声音_2095745922595643394.json, 视频生成/图生视频/IndexTTS-2 音色克隆工作流合集  单人_多人_情感克隆_2085546895153385474.json, 音频生成/音频生成/AI语音配音：音色克隆 IndexTTS 2.0_2018681928492257281.json, 音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2059525905587982338.json, 音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2087223313654444034.json]
+members: [音频生成/音频生成/AI文生音乐工作流-YuE2_2098683841492897793.json, 音频生成/音频生成/YuE2 AI文生音乐工作流_2098372939333853185.json, 音频生成/音频生成/YuE2文生音乐 最强开源音乐模型_2099416240568754178.json, 音频生成/音频生成/YuE2文生音乐_2098272017664528385.json, 音频生成/音频生成/YuE2文生音乐_2098379881020219394.json, 音频生成/音频生成/YuE2文生音乐_2107651520257945602.json, 音频生成/音频生成/YuE2文生音乐_自用_2107115132097744897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_169
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/声音_2092902828380614658.json、数字人/数字人/声音_2095745922595643394.json、视频生成/图生视频/IndexTTS-2 音色克隆工作流合集  单人_多人_情感克隆_2085546895153385474.json、音频生成/音频生成/AI语音配音：音色克隆 IndexTTS 2.0_2018681928492257281.json、音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2059525905587982338.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/AI文生音乐工作流-YuE2_2098683841492897793.json、音频生成/音频生成/YuE2 AI文生音乐工作流_2098372939333853185.json、音频生成/音频生成/YuE2文生音乐 最强开源音乐模型_2099416240568754178.json、音频生成/音频生成/YuE2文生音乐_2098272017664528385.json、音频生成/音频生成/YuE2文生音乐_2098379881020219394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionAudio`
-- `easy indexTTSEmotionMerge`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `YuE2Generate`
+- `YuE2Loader`
+- `YuE2SamplingConfig`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `PreviewAudio` —— 5/6 个有
-- `SaveImage` —— 5/6 个有
-- `SaveAudio` —— 4/6 个有
-- `easy indexTTSAudioMerge` —— 4/6 个有
-- `Fast Groups Muter (rgthree)` —— 3/6 个有
-- `AudioSeparation` —— 1/6 个有
+- `SaveAudio` —— 6/7 个有
+- `PreviewAny` —— 5/7 个有
+- `MusicPlayerWithLyricsNode` —— 1/7 个有
+- `SaveAudioAdvanced` —— 1/7 个有
 
 ## 典型参数
 

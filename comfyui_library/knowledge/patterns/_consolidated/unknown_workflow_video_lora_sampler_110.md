@@ -3,88 +3,85 @@ name: unknown_workflow_video_lora_sampler_110
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.760786
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.659071
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1957667803581050882.json, 视频生成/图生视频/1958061014984118274.json, 视频生成/图生视频/1958075798320197633.json, 视频生成/图生视频/2014174614657703937.json, 视频生成/图生视频/1977385230757699586.json, 视频生成/图生视频/1948766276714934274.json, 视频生成/图生视频/2018299977335840769.json, 视频生成/图生视频/1989886464651612162.json, 视频生成/图生视频/1986797048806764545.json, 视频生成/图生视频/1962734249734483970.json, 视频生成/图生视频/1971581572791136257.json, 视频生成/图生视频/1942210266623053825.json, 视频生成/图生视频/1937733481621557249.json, 视频生成/图生视频/1958430229331132417.json]
+members: [视频生成/图生视频/2006028757395578881.json, 视频生成/图生视频/2006202937944576001.json, 视频生成/图生视频/2050494894682189826.json, 视频生成/图生视频/2006433739613675522.json, 视频生成/图生视频/2000760906177015810.json, 视频生成/图生视频/2000851201182793729.json, 视频生成/图生视频/2018306523847467009.json, 视频生成/图生视频/2023998769439711234.json, 视频生成/图生视频/2002405950176804865.json, 视频生成/图生视频/2002182497679077377.json, 视频生成/图生视频/1996588683803369474.json, 视频生成/图生视频/2058885569916264450.json, 视频生成/图生视频/2018335059614375937.json, 视频生成/图生视频/2066354482107207682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_110
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1957667803581050882.json、视频生成/图生视频/1958061014984118274.json、视频生成/图生视频/1958075798320197633.json、视频生成/图生视频/2014174614657703937.json、视频生成/图生视频/1977385230757699586.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2006028757395578881.json、视频生成/图生视频/2006202937944576001.json、视频生成/图生视频/2050494894682189826.json、视频生成/图生视频/2006433739613675522.json、视频生成/图生视频/2000760906177015810.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 13/14 个有
-- `LoadImage` —— 13/14 个有
-- `VHS_LoadVideo` —— 13/14 个有
-- `AudioCrop` —— 12/14 个有
-- `INTConstant` —— 12/14 个有
-- `MultiTalkWav2VecEmbeds` —— 12/14 个有
-- `WanVideoTextEncode` —— 12/14 个有
-- `CR Text` —— 11/14 个有
-- `JWIntegerToString` —— 11/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/14 个有
-- `SimpleMath+` —— 11/14 个有
-- `easy showAnything` —— 11/14 个有
-- `ImageResizeKJ` —— 10/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 10/14 个有
-- `VHS_DuplicateImages` —— 10/14 个有
-- `WanVideoImageToVideoEncode` —— 10/14 个有
-- `WanVideoUni3C_ControlnetLoader` —— 10/14 个有
-- `WanVideoUni3C_embeds` —— 10/14 个有
-- `easy anythingIndexSwitch` —— 10/14 个有
-- `WanVideoContextOptions` —— 8/14 个有
-- `ImpactInt` —— 7/14 个有
-- `WanVideoTorchCompileSettings` —— 7/14 个有
-- `easy int` —— 7/14 个有
-- `ImageFromBatch+` —— 6/14 个有
-- `WanVideoEncode` —— 6/14 个有
-- `PrimitiveInt` —— 4/14 个有
-- `RHHiddenNodes` —— 4/14 个有
-- `WanVideoImageToVideoMultiTalk` —— 4/14 个有
-- `GetNode` —— 3/14 个有
-- `ImageResizeKJv2` —— 3/14 个有
-- `SetNode` —— 3/14 个有
-- `Int` —— 2/14 个有
-- `CR Text Concatenate` —— 1/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `Note Plus (mtb)` —— 1/14 个有
-- `PrimitiveBoolean` —— 1/14 个有
-- `RH_Captioner` —— 1/14 个有
-- `RH_LLMAPI_NODE` —— 1/14 个有
-- `RH_Prompter` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
-- `SaveAudio` —— 1/14 个有
-- `ShowText|pysssss` —— 1/14 个有
-- `SongGeneration_Sampler` —— 1/14 个有
-- `SongGeneration_Stage1` —— 1/14 个有
-- `SongGeneration_Stage2` —— 1/14 个有
-- `Text Multiline` —— 1/14 个有
-- `easy ifElse` —— 1/14 个有
+- `GetImageSizeAndCount` —— 12/14 个有
+- `ImageConcatMulti` —— 12/14 个有
+- `WanVideoLoraSelect` —— 12/14 个有
+- `WanVideoEncode` —— 11/14 个有
+- `WanVideoUni3C_ControlnetLoader` —— 11/14 个有
+- `WanVideoUni3C_embeds` —— 11/14 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 8/14 个有
+- `DWPreprocessor` —— 8/14 个有
+- `LoadWanVideoT5TextEncoder` —— 8/14 个有
+- `SimpleMath+` —— 8/14 个有
+- `WanVideoTextEncode` —— 8/14 个有
+- `WanVideoTorchCompileSettings` —— 8/14 个有
+- `DownloadAndLoadNLFModel` —— 7/14 个有
+- `FloatConstant` —— 7/14 个有
+- `LoadNLFModel` —— 7/14 个有
+- `SimpleCalculatorKJ` —— 6/14 个有
+- `WanVideoTextEncodeCached` —— 6/14 个有
+- `Label (rgthree)` —— 5/14 个有
+- `easy cleanGpuUsed` —— 4/14 个有
+- `CustomAddLabel` —— 3/14 个有
+- `Int` —— 3/14 个有
+- `JjkText` —— 3/14 个有
+- `TwoWaySwitch` —— 3/14 个有
+- `intToFloat _O` —— 3/14 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/14 个有
+- `GIMMVFI_interpolate` —— 2/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/14 个有
+- `PreviewImage` —— 2/14 个有
+- `Text Multiline` —— 2/14 个有
+- `WanVideoLoraSelectMulti` —— 2/14 个有
+- `TTResolutionSelector` —— 1/14 个有
 
 ## 典型参数
 

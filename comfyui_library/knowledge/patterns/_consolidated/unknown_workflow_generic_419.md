@@ -1,36 +1,34 @@
 ---
 name: unknown_workflow_generic_419
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.467
-common_nodes: [FluxResolutionNode, ImpactSwitch, JjkText, RH_Jimeng_Image2Image, RH_Prompter, SaveImage, TextCombinerTwo, easy showAnything]
+coverage: 0.89275
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json, 图片生成/文生图/1947167565694676994.json, 图片生成/文生图/1987433422123675650.json]
+members: [视频生成/图生视频/2040261393017999362.json, 视频生成/文生视频/Seedance 2.0 多模态参考生成视频・多镜头・音画同步_2039923762027565057.json, 视频生成/文生视频/Seedance2.0全能参考_ 图_音_文_视频生视频_2045121809271496706.json, 视频生成/文生视频/Seedance图生视频+全节点注释_2055483674128338946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_419
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json、图片生成/文生图/1947167565694676994.json、图片生成/文生图/1987433422123675650.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2040261393017999362.json、视频生成/文生视频/Seedance 2.0 多模态参考生成视频・多镜头・音画同步_2039923762027565057.json、视频生成/文生视频/Seedance2.0全能参考_ 图_音_文_视频生视频_2045121809271496706.json、视频生成/文生视频/Seedance图生视频+全节点注释_2055483674128338946.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FluxResolutionNode`
-- `ImpactSwitch`
-- `JjkText`
-- `RH_Jimeng_Image2Image`
-- `RH_Prompter`
-- `SaveImage`
-- `TextCombinerTwo`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `Textbox` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,77 +1,66 @@
 ---
 name: unknown_workflow_lora_sampler_clip_21
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.854778
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
+frequency: 10
+level: strong
+coverage: 0.9051
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoaderModelOnly, RH_OneShot_Prompter, RH_Prompter, RandomNoise, SamplerCustomAdvanced, SaveImage, SeargePromptText, ShowText|pysssss, String Replace (mtb), Trim Text _O, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2063384595684483073.json, 视频生成/图生视频/2063553496401666050.json, 视频生成/图生视频/2065439100508921858.json, 视频生成/图生视频/2066036494720126978.json, 视频生成/图生视频/2067207518782316546.json, 视频生成/图生视频/2069617886041305089.json, 视频生成/图生视频/2067788916261998594.json, 视频生成/图生视频/2073325205451268097.json, 视频生成/文生视频/LTX2.3 Licon-MSR 多图参考正式版_2067553179402854402.json]
+members: [图片生成/文生图/MajicFlus 基础文生图_2071392066793459713.json, 图片生成/文生图/MajicFlus 基础文生图_2071498176409980929.json, 图片生成/文生图/MajicFlus 基础文生图_2071501043489394690.json, 图片生成/文生图/MajicFlus 基础文生图_2074740347225333762.json, 图片生成/文生图/MajicFlus 基础文生图_2075138903039893506.json, 图片生成/文生图/MajicFlus 文生图_极速版_2016027994061541378.json, 图片生成/文生图/MajicFlus 麦橘Flux模型 加速版 基础文生图_1884864959212568577.json, 图片生成/文生图/Shuttle Jaguar 4步快速出图_1883570549694808065.json, 图片生成/文生图/Text-to-Image-MajicFlus 麦橘Flux模型 基础文生图_2069321054610350082.json, 图片生成/文生图/基础文生图_2064962939718819841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_21
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2063384595684483073.json、视频生成/图生视频/2063553496401666050.json、视频生成/图生视频/2065439100508921858.json、视频生成/图生视频/2066036494720126978.json、视频生成/图生视频/2067207518782316546.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/MajicFlus 基础文生图_2071392066793459713.json、图片生成/文生图/MajicFlus 基础文生图_2071498176409980929.json、图片生成/文生图/MajicFlus 基础文生图_2071501043489394690.json、图片生成/文生图/MajicFlus 基础文生图_2074740347225333762.json、图片生成/文生图/MajicFlus 基础文生图_2075138903039893506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `ManualSigmas`
+- `LoraLoaderModelOnly`
+- `RH_OneShot_Prompter`
+- `RH_Prompter`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `SeargePromptText`
+- `ShowText|pysssss`
+- `String Replace (mtb)`
+- `Trim Text _O`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXAVTextEncoderLoader` —— 6/9 个有
-- `LTXVAudioVAELoader` —— 6/9 个有
-- `LowVRAMCheckpointLoader` —— 6/9 个有
-- `LTX2_NAG` —— 4/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `PromptRelayEncode` —— 4/9 个有
-- `DualCLIPLoader` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `UNETLoader` —— 3/9 个有
-- `VAELoader` —— 3/9 个有
-- `CM_IntToFloat` —— 2/9 个有
-- `ComfyMathExpression` —— 2/9 个有
-- `LTXVSetAudioRefTokens` —— 2/9 个有
-- `MuyeTextEditOutput` —— 2/9 个有
-- `SimpleCalculatorKJ` —— 2/9 个有
-- `AtSignCLIPTextEncode` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `MultiIntFormula` —— 1/9 个有
+- `AddLabel` —— 9/10 个有
+- `SDXLEmptyLatentSizePicker+` —— 9/10 个有
+- `Label (rgthree)` —— 3/10 个有
+- `ApplyFBCacheOnModel` —— 1/10 个有
+- `EnhancedCompileModel` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `ModelSamplingFlux` —— 1/10 个有
+- `ReroutePrimitive|pysssss` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 97 - 241 | 9 | 80% |
-| 高度 | 24 | 24 - 50 | 9 | 64% |
+| 宽度 | 1536 | 1080 - 1536 | 10 | 91% |
+| 高度 | 2048 | 1920 - 2048 | 10 | 98% |
 
 ## 常见问题
 
@@ -79,5 +68,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 97 - 241，9 个样本
-- 高度 中位数 24，观测区间 24 - 50，9 个样本
+- 宽度 中位数 1536，观测区间 1080 - 1536，10 个样本，取值集中（一致性 91%）
+- 高度 中位数 2048，观测区间 1920 - 2048，10 个样本，取值集中（一致性 98%）

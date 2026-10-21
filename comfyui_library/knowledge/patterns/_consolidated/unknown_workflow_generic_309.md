@@ -1,35 +1,49 @@
 ---
 name: unknown_workflow_generic_309
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.875
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.6568
+common_nodes: [CR Text Replace, ComfyMathExpression, JoinStrings, PrimitiveInt, SaveText, ShowText|pysssss, SomethingToString, Text Multiline, easy positive, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/2043712125037715457.json, 视频生成/图生视频/2042956717356486657.json, 视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json, 视频生成/图生视频/2082445109639081985.json]
+members: [视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_309
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2043712125037715457.json、视频生成/图生视频/2042956717356486657.json、视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json、视频生成/图生视频/2082445109639081985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `CR Text Replace`
+- `ComfyMathExpression`
+- `JoinStrings`
+- `PrimitiveInt`
+- `SaveText`
+- `ShowText|pysssss`
+- `SomethingToString`
+- `Text Multiline`
+- `easy positive`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_PixverseV6ImageToVideo` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/4 个有
+- `GetNode` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `LoadImagesFromFolderKJ` —— 2/5 个有
+- `Prompt_Edit` —— 1/5 个有
 
 ## 典型参数
 

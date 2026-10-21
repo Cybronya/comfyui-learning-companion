@@ -1,32 +1,34 @@
 ---
 name: unknown_workflow_generic_585
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [RecraftColorRGB, RecraftControls, RecraftV4TextToImageNode, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.866667
+common_nodes: [LoadImage, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json, comfyui-workflow-templates-json/api_recraft_v4_t2i.json]
+members: [视频生成/图生视频/海螺Hailuo H3参考生视频（RH版-可9图3视频3音频）_2083013247036383233.json, 视频生成/文生视频/MINIMAX-H3产品悬浮展示_2090157160918503426.json, 视频生成/文生视频/MiniMax-H3 多模态参考生视频_2083175595994861570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_585
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json、comfyui-workflow-templates-json/api_recraft_v4_t2i.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/海螺Hailuo H3参考生视频（RH版-可9图3视频3音频）_2083013247036383233.json、视频生成/文生视频/MINIMAX-H3产品悬浮展示_2090157160918503426.json、视频生成/文生视频/MiniMax-H3 多模态参考生视频_2083175595994861570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RecraftColorRGB`
-- `RecraftControls`
-- `RecraftV4TextToImageNode`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -38,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

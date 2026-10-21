@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_44
 type: Text To Image
 frequency: 16
 level: strong
-coverage: 0.888687
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.875625
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3视频生成 导演台 10.9 优化乱说对白方案_2100106257972678658.json, 视频生成/文生视频/MiniMax H3视频生成导演台｜文生视频视频生视频调度，镜头语言自己说了算_2100509465702387714.json, 视频生成/文生视频/Qwen2512领军模型｜完美中文文生图图生图生成_2090530166060707841.json, 视频生成/文生视频/Qwen2512领军模型｜完美中文文生图图生图生成_2094308048687951873.json, 视频生成/文生视频/Seedance 2.5图生视频处理生成工具_2102525837089263617.json, 视频生成/文生视频/Seedance 2.5文生视频处理生成工具_2102527398846754817.json, 视频生成/文生视频/Seedance2.5图生视频工作流，高质量图像到视频生成方案_2103542632843669506.json, 视频生成/文生视频/Seedance2.5图生视频工作流｜高质量图像驱动视频生成_2097761537908887554.json, 视频生成/文生视频/minimax H3导演台工作流｜文生图生视频一站式_2094560745752195073.json, 视频生成/文生视频/minmax生图工作流｜多人姿势迁移视频制作_2097811139928354818.json, 视频生成/文生视频/导演台全能工作流无水印版｜MiniMax H3三合一_2092367887234322434.json, 视频生成/文生视频/导演台工作流｜minimax H3三模视频一键生成_2094760059535450113.json, 视频生成/文生视频/导演台无限长视频玩法｜MiniMax H3文生图生视频直出_2091281323360079874.json, 视频生成/文生视频/无限长视频玩法｜MiniMax H3导演台文生视频_2092724076027662337.json, 视频生成/文生视频/无限长视频玩法｜MiniMax H3导演台文生视频_2092927901426601985.json, 视频生成/文生视频/电影级运镜导演台｜MiniMax H3二采精修分镜合成加速_2096303944883597313.json]
+members: [图片生成/文生图/G2.5 Sunburst文生图 4K画质经济型高效输出_2098290011564240898.json, 图片生成/文生图/GGPPTT-image2全能图片组件｜文生图图片编辑工作流_2097808293908541441.json, 图片生成/文生图/Image-2.5九图文生图版本 批量高质量生成_2098303034546806785.json, 图片生成/文生图/Image2.5文生图 顶级_2101616440351748097.json, 图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json, 图片生成/文生图/Image2.5文生图 高质量图片生成工具_2101592299229761537.json, 图片生成/文生图/Image2.5文生图顶级处理生成工作流工具_2102116515188400130.json, 图片生成/文生图/Image2.5文生图顶级工作流｜高质量图片生成｜文案配图一步到位_2101886755678015490.json, 图片生成/文生图/Image2.5文生图高质量图片生成工具｜高级感图像一键生成_2101936480737382401.json, 图片生成/文生图/Krea2写实4K直出｜文生图去ai感真实人像生成_2093105565953249281.json, 图片生成/文生图/aigc-image-2.5文生图九图连出｜太平风格批量出图_2106953497185972225.json, 图片生成/文生图/人像写真文生图｜Image 2图像模型图生图全能_2090822423569584129.json, 图片生成/文生图/人像写真文生图｜Image 2图像模型图生图直出_2090527437456236545.json, 图片生成/文生图/全能图片G-2.5低价版｜文生图局部重绘图片编辑_2101197387636236289.json, 图片生成/文生图/全能图片G-image-2.5 文生图与图生图双模图像处理_2098633491339636738.json, 图片生成/文生图/全能图片G-image-2.5｜文生图图生图一应俱全_2098719464136204289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_44
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3视频生成 导演台 10.9 优化乱说对白方案_2100106257972678658.json、视频生成/文生视频/MiniMax H3视频生成导演台｜文生视频视频生视频调度，镜头语言自己说了算_2100509465702387714.json、视频生成/文生视频/Qwen2512领军模型｜完美中文文生图图生图生成_2090530166060707841.json、视频生成/文生视频/Qwen2512领军模型｜完美中文文生图图生图生成_2094308048687951873.json、视频生成/文生视频/Seedance 2.5图生视频处理生成工具_2102525837089263617.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/G2.5 Sunburst文生图 4K画质经济型高效输出_2098290011564240898.json、图片生成/文生图/GGPPTT-image2全能图片组件｜文生图图片编辑工作流_2097808293908541441.json、图片生成/文生图/Image-2.5九图文生图版本 批量高质量生成_2098303034546806785.json、图片生成/文生图/Image2.5文生图 顶级_2101616440351748097.json、图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json…）
 
 - **类型**：Text To Image
 - **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -29,27 +29,28 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 15/16 个有
-- `MiniMaxH3Director` —— 9/16 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/16 个有
-- `VHS_VideoCombine` —— 8/16 个有
-- `PathchSageAttentionKJ` —— 6/16 个有
-- `SaveImage` —— 6/16 个有
-- `SaveVideo` —— 6/16 个有
-- `LoadImage` —— 4/16 个有
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 3/16 个有
-- `MiniMaxH3DirectorRefine` —— 2/16 个有
-- `ModelAttentionBackend` —— 2/16 个有
-- `RH_BytedanceSeedance25TokenTextToVideo` —— 2/16 个有
-- `UpscaleModelLoader` —— 2/16 个有
-- `CreateVideo` —— 1/16 个有
-- `PreviewAny` —— 1/16 个有
+- `孤海注释` —— 14/16 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 11/16 个有
+- `LoadImage` —— 7/16 个有
+- `PreviewImage` —— 4/16 个有
+- `RH_RhartImageG25FlareTextToImage` —— 4/16 个有
+- `RH_RhartImageG2ImageToImage` —— 4/16 个有
+- `Fast Groups Muter (rgthree)` —— 3/16 个有
+- `RH_RhartImageG25FlareImageToImage` —— 3/16 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 3/16 个有
+- `RH_RhartImageG2TextToImage` —— 3/16 个有
+- `CR Prompt Text` —— 2/16 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 2/16 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 2/16 个有
+- `LayerUtility: TextBox` —— 1/16 个有
+- `MuyeTextEditOutput` —— 1/16 个有
 
 ## 典型参数
 
@@ -67,7 +68,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -78,4 +79,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
-- 高发问题（17/16 个样本）：Steps较低可能导致细节不足
+- 高发问题（19/16 个样本）：Steps较低可能导致细节不足

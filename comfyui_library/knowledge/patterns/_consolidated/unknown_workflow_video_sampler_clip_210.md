@@ -3,71 +3,66 @@ name: unknown_workflow_video_sampler_clip_210
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8445
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.644
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLTXVLatentVideo, GetImageSize, LTXVAddGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SamplerEulerAncestral, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2030308264814059522.json, 视频生成/文生视频/LTX2.5- 图生+文生视频_2034499552383868929.json]
+members: [视频生成/图生视频/LTX2.5首尾帧图生视频_2087801270798217218.json, 视频生成/文生视频/LTX2.5 首尾帧图生视频+全节点注释_2087729834381373441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_210
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2030308264814059522.json、视频生成/文生视频/LTX2.5- 图生+文生视频_2034499552383868929.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.5首尾帧图生视频_2087801270798217218.json、视频生成/文生视频/LTX2.5 首尾帧图生视频+全节点注释_2087729834381373441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
 - `CR Text`
+- `ComfyMathExpression`
 - `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
+- `GetImageSize`
+- `LTXVAddGuide`
 - `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVDualCFGGuider`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LoadImage`
 - `ManualSigmas`
-- `PrimitiveFloat`
 - `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
+- `SamplerEulerAncestral`
+- `UNETLoader`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 1/2 个有
-- `DualCLIPLoaderGGUF` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `Int` —— 1/2 个有
+- `Dapao_LlamaCaption` —— 1/2 个有
+- `Dapao_LlamaCaptionOptions` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
 - `LTXVLatentUpsampler` —— 1/2 个有
 - `LatentUpscaleModelLoader` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `ResolutionSelector` —— 1/2 个有
+- `ReversalCaptionOptions` —— 1/2 个有
+- `ReversalLlamaCaption` —— 1/2 个有
+- `TrimVideoLatent` —— 1/2 个有
+- `easy promptConcat` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 

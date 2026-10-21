@@ -3,47 +3,36 @@ name: unknown_workflow_generic_866
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7455
-common_nodes: [AudioSeparation, ComfyMathExpression, GemmaxRun, GetNode, GetVideoComponents, GoogleTranslateTextNode, LoadAudio, LoadVideo, OmniVoiceVoiceCloneTTS, PreviewAudio, PrimitiveBoolean, Qwen3ASRLoader, Qwen3ASRTranscribe, RH_GetAudioDuration, RH_LLMAPI_Pro_Node, SaveAudioMP3, SetNode, SoundFlow_TrimAudio, Text, easy ifElse, easy showAnything]
+coverage: 0.808
+common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveStringMultiline, RH_Kling25_Image2Video, RH_Sora2_I2V_Realistic, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【定制专用，LLM大模型翻译可选】音色+音调同步克隆，支持自定义朗读文本_2072901391768702977.json, 音频生成/音频生成/【定制专用，日语版】音色+音调同步克隆，支持自定义朗读文本_2072712122575966209.json]
+members: [视频生成/图生视频/1988184484992475138.json, 视频生成/图生视频/2028293831325655042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_866
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【定制专用，LLM大模型翻译可选】音色+音调同步克隆，支持自定义朗读文本_2072901391768702977.json、音频生成/音频生成/【定制专用，日语版】音色+音调同步克隆，支持自定义朗读文本_2072712122575966209.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1988184484992475138.json、视频生成/图生视频/2028293831325655042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioSeparation`
-- `ComfyMathExpression`
-- `GemmaxRun`
-- `GetNode`
-- `GetVideoComponents`
-- `GoogleTranslateTextNode`
-- `LoadAudio`
-- `LoadVideo`
-- `OmniVoiceVoiceCloneTTS`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RH_GetAudioDuration`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudioMP3`
-- `SetNode`
-- `SoundFlow_TrimAudio`
-- `Text`
-- `easy ifElse`
-- `easy showAnything`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RH_Kling25_Image2Video`
+- `RH_Sora2_I2V_Realistic`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

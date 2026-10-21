@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_182
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.617
-common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
+coverage: 0.802857
+common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/1977697978410565633.json, 视频生成/图生视频/2028862368343658498.json, 视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版10秒15秒可选_1979415302779867137.json, 视频生成/图生视频/1979393173581631490.json, 视频生成/图生视频/全能视频S产品图+中英文描述=跨境tk短视频带货视tiktok频高清直出全能版10秒15秒高清可选_1982834651620356098.json, 视频生成/图生视频/1987484061469970434.json]
+members: [音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json, 音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json, 音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json, 音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1984116301922795522.json, 音频生成/音频生成/音频克隆 单双人SoulX_1984268792450662401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_182
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1977697978410565633.json、视频生成/图生视频/2028862368343658498.json、视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版10秒15秒可选_1979415302779867137.json、视频生成/图生视频/1979393173581631490.json、视频生成/图生视频/全能视频S产品图+中英文描述=跨境tk短视频带货视tiktok频高清直出全能版10秒15秒高清可选_1982834651620356098.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json、音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json、音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json、音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json、音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
-- `easy showAnything`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `ResizeLongestToNode` —— 1/6 个有
+- `PreviewAudio` —— 5/7 个有
+- `JjkText` —— 2/7 个有
+- `TextConcatenator` —— 2/7 个有
+- `Note _O` —— 1/7 个有
 
 ## 典型参数
 

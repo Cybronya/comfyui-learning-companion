@@ -1,110 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_17
 type: Unknown Workflow
-frequency: 33
+frequency: 36
 level: moderate
-coverage: 0.575394
-common_nodes: [BBoxYOLO, BatchCount+, CLIPVisionLoader, CR Text, CheckpointLoaderSimple, DrawViTPose, ImageBatch, ImageFromBatch, ImageResizeKJv2, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, LazySwitch1way, LazySwitch2way, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, RepeatImageBatch, SDPoseDrawKeypoints, SDPoseKeypointExtractor, VHS_LoadVideo, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader, easy anythingIndexSwitch, easy boolean, easy compare, easy float, easy imageSize, easy int, easy mathInt]
+coverage: 0.819556
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, DF_Int_to_Float, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2052262207102177281.json, 视频生成/图生视频/Action Transfer 视频动作迁移 Animate_2096773886733021185.json, 视频生成/图生视频/2071942874186477570.json, 视频生成/图生视频/Animate 动作迁移+表情+手部一致性 三种模式切换可多人_2092922363200495617.json, 视频生成/图生视频/2067865822789455873.json, 视频生成/图生视频/2067572288576376834.json, 视频生成/图生视频/2082104573845663745.json, 视频生成/图生视频/AnimateV9动作迁移人物动作模仿_2091532232967151618.json, 视频生成/图生视频/Animate动作迁移V9（plus)_2088492819714498561.json, 视频生成/图生视频/2067158640880078849.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）PLUS_2083515980403265537.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）_优化版V1_2087512134681980930.json, 视频生成/图生视频/Animate动作迁移V9（自动尺寸）优化版V2_2087495748442214401.json, 视频生成/图生视频/2063224518570758145.json, 视频生成/图生视频/2063576371754000385.json, 视频生成/图生视频/2065412383627112450.json, 视频生成/图生视频/2066779159443107841.json, 视频生成/图生视频/2066883170611585025.json, 视频生成/图生视频/2067591708271013889.json, 视频生成/图生视频/2067591863569309697.json, 视频生成/图生视频/Coze_Drive_动作迁移_V9_608x1088_固定版_2094292856751083522.json, 视频生成/图生视频/Wan2.2-Animate-Move&Mix-V1_2101929816374206466.json, 视频生成/图生视频/2054929094915174402.json, 视频生成/图生视频/1948362216455188482.json, 视频生成/图生视频/2056283340306735106.json, 视频生成/图生视频/2075410824641990657.json, 视频生成/图生视频/2051928447810846722.json, 视频生成/图生视频/2065796439602720769.json, 视频生成/图生视频/2045493013840928770.json, 视频生成/图生视频/2052770687701528577.json, 视频生成/图生视频/2060202203054432257.json, 视频生成/图生视频/2081637987401687042.json, 视频生成/图生视频/2080519359495237633.json]
+members: [视频生成/图生视频/MiniMax H3 动作迁移解决方案｜视频动作迁移一键生成工作流_2101538902334074882.json, 视频生成/图生视频/MiniMax H3 开源版 多图参考生视频 加速版_2086403186247688193.json, 视频生成/图生视频/MiniMaxH3 人物一致性动作模仿&动作迁移_2087460746010648577.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！B站艾橘溪_2085579704077217793.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2091762306387628033.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2095427085866192898.json, 视频生成/图生视频/MiniMaxH3 动作模仿动作迁移舞蹈复刻跳舞复刻动作复制h3_2092888483969978369.json, 视频生成/图生视频/MiniMaxH3 动作迁移_2088522212432236545.json, 视频生成/图生视频/MiniMaxH3 动作迁移_2092953394947383298.json, 视频生成/图生视频/MiniMaxH3 动作迁移｜雯雯的后宫_2088580995091095553.json, 视频生成/图生视频/MiniMaxH3+动作模仿&动作迁移！_2089515263380250626.json, 视频生成/图生视频/MiniMaxH3动作迁移h3一键复刻舞蹈复刻动作复刻跳舞动作模仿_2092947884135243778.json, 视频生成/图生视频/MiniMaxH3开源版 一键视频换人  视频编辑_2085681767104733186.json, 视频生成/图生视频/MiniMaxH3开源版 一键视频换装  视频编辑_2085669859953827842.json, 视频生成/图生视频/MiniMaxH3开源版 动作模仿&动作迁移 复刻动作_2085684165835579394.json, 视频生成/图生视频/MiniMaxH3开源版 动作迁移 自动尺寸动作模仿 复刻动作图生视频_2087163534437343233.json, 视频生成/图生视频/MiniMaxH3开源版 动作迁移 自动尺寸动作模仿 复刻动作图生视频_2092957698890489858.json, 视频生成/图生视频/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085705297708019714.json, 视频生成/图生视频/MiniMaxH3视频换装H3视频编辑人物视频换装带货视频穿衣展示_2108891090802798594.json, 视频生成/图生视频/MiniMaxH3视频换装H3视频编辑人物视频换装带货视频穿衣展示_2109223339603611649.json, 视频生成/图生视频/MiniMaxH3视频换装！H3视频编辑！B站艾橘溪_2085384491387932674.json, 视频生成/图生视频/Video+Costume+Changes!+H3+Video+EH3视频换装！H3视频编辑_2106912081130901505.json, 视频生成/图生视频/Video+Costume+Changes!+H3+Video+EH3视频换装！H3视频编辑_2107279122568404993.json, 视频生成/图生视频/interactive video1_2092856652662919169.json, 视频生成/图生视频/interactive video1_2095702510123184129.json, 视频生成/图生视频/interactive video2_2092852753038139394.json, 视频生成/图生视频/interactive video2_2095698520497020930.json, 视频生成/图生视频/interactive video_2092859366209839105.json, 视频生成/图生视频/一键视频换人！_2092289315203276801.json, 视频生成/图生视频/最新MiniMax-H3动作模仿&动作迁移！视频编辑！_2086283121443561473.json, 视频生成/图生视频/电商带货换装展示MiniMax H3视频换装_2110213185981730818.json, 视频生成/图生视频/视频换装 视频编辑 模特换装_2096403784904830977.json, 视频生成/图生视频/视频换装！MiniMaxH3+视频编辑_2094777730465361921.json, 视频生成/文生视频/MiniMax H3 开源版 多图参考生视频 加速版_2086403186247688193.json, 视频生成/文生视频/MiniMaxH3 视频编辑 一键视频换人 ！_2088252283988566018.json, 视频生成/视频生视频/MiniMaxH3 动作迁移_2088522212432236545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（视频生成/图生视频/2052262207102177281.json、视频生成/图生视频/Action Transfer 视频动作迁移 Animate_2096773886733021185.json、视频生成/图生视频/2071942874186477570.json、视频生成/图生视频/Animate 动作迁移+表情+手部一致性 三种模式切换可多人_2092922363200495617.json、视频生成/图生视频/2067865822789455873.json…）
+> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 动作迁移解决方案｜视频动作迁移一键生成工作流_2101538902334074882.json、视频生成/图生视频/MiniMax H3 开源版 多图参考生视频 加速版_2086403186247688193.json、视频生成/图生视频/MiniMaxH3 人物一致性动作模仿&动作迁移_2087460746010648577.json、视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！B站艾橘溪_2085579704077217793.json、视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2091762306387628033.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：33
+- **样本数**：36
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
-- `BBoxYOLO`
-- `BatchCount+`
-- `CLIPVisionLoader`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `DrawViTPose`
-- `ImageBatch`
-- `ImageFromBatch`
+全部 36 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `DF_Int_to_Float`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LazySwitch1way`
-- `LazySwitch2way`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RHHiddenNodes`
-- `RepeatImageBatch`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `YOLOModelLoader`
-- `easy anythingIndexSwitch`
-- `easy boolean`
-- `easy compare`
-- `easy float`
-- `easy imageSize`
-- `easy int`
-- `easy mathInt`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 32/33 个有
-- `GetNode` —— 31/33 个有
-- `SetNode` —— 31/33 个有
-- `WanVideoEncode` —— 31/33 个有
-- `WanVideoUni3C_ControlnetLoader` —— 31/33 个有
-- `WanVideoUni3C_embeds` —— 31/33 个有
-- `easy cleanGpuUsed` —— 31/33 个有
-- `CompressImages` —— 29/33 个有
-- `VideoCombineNode` —— 29/33 个有
-- `ZML_AnyTypeSwitchFiveBoolean` —— 28/33 个有
-- `BodyRatioMapperProportionTransfer` —— 26/33 个有
-- `BodyRatioMapperSDPoseRender` —— 26/33 个有
-- `ImageScaleToTotalPixels` —— 26/33 个有
-- `Bool` —— 22/33 个有
-- `PreviewImage` —— 17/33 个有
-- `LayerUtility: ColorImage V2` —— 15/33 个有
-- `孤海注释` —— 15/33 个有
-- `SimpleMath+` —— 10/33 个有
-- `easy showAnything` —— 8/33 个有
-- `DownloadAndLoadNLFModel` —— 7/33 个有
-- `NLFPredict` —— 7/33 个有
-- `PoseDetectionVitPoseToDWPose` —— 7/33 个有
-- `RenderNLFPoses` —— 7/33 个有
-- `SaveImage` —— 7/33 个有
-- `TT_img_enc` —— 7/33 个有
-- `Any Switch (rgthree)` —— 2/33 个有
-- `AnyBooleanSwitch` —— 2/33 个有
-- `BlockifyMask` —— 2/33 个有
-- `DownloadAndLoadSAM2Model` —— 2/33 个有
-- `DrawMaskOnImage` —— 2/33 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/33 个有
-- `GrowMaskWithBlur` —— 2/33 个有
-- `MemoryCleaner` —— 2/33 个有
-- `PrimitiveBoolean` —— 2/33 个有
-- `Sam2Segmentation` —— 2/33 个有
-- `CM_FloatToInt` —— 1/33 个有
-- `easy sam3ModelLoader` —— 1/33 个有
-- `easy sam3VideoSegmentation` —— 1/33 个有
+- `VAEDecodeAudio` —— 35/36 个有
+- `AILab_QwenVL` —— 34/36 个有
+- `JoinStrings` —— 34/36 个有
+- `VHS_LoadVideo` —— 34/36 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 30/36 个有
+- `ImageConcanate` —— 19/36 个有
+- `easy imageRemBg` —— 14/36 个有
+- `EasyCache` —— 6/36 个有
+- `孤海注释` —— 5/36 个有
+- `EmptyImage` —— 1/36 个有
+- `FlashVSRNode` —— 1/36 个有
+- `Int` —— 1/36 个有
+- `Label (rgthree)` —— 1/36 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/36 个有
+- `LoadAudio` —— 1/36 个有
+- `PreviewImage` —— 1/36 个有
 
 ## 典型参数
 

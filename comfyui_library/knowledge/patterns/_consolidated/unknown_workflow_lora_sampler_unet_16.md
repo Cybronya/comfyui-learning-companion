@@ -1,69 +1,95 @@
 ---
 name: unknown_workflow_lora_sampler_unet_16
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.974857
-common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.820625
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy promptConcat, easy saveVideo, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/1988774900942909442.json, 图片生成/文生图/1988927261430648834.json, 图片生成/文生图/1989171870014517249.json, 图片生成/文生图/1989311154684129281.json, 图片生成/文生图/1989695013087047682.json, 视频生成/图生视频/1982020667237384193.json, 视频生成/图生视频/1961983511181856769.json]
+members: [图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json, 数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json, 视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json, 视频生成/图生视频/ONE SHOT STORY｜MiniMax H3 一图生成15秒品牌短片_2087898553539710978.json, 视频生成/图生视频/一键MV_2095144928673357825.json, 视频生成/文生视频/Minimax H3 全自动短片（要配合提示词skill使用）林耀_2091930702962057218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_16
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1988774900942909442.json、图片生成/文生图/1988927261430648834.json、图片生成/文生图/1989171870014517249.json、图片生成/文生图/1989311154684129281.json、图片生成/文生图/1989695013087047682.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json、数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json、视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextTrim`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptConcat`
+- `easy saveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEditPlus` —— 6/7 个有
-- `LoadImage` —— 2/7 个有
-- `TextEncodeQwenImageEdit` —— 2/7 个有
+- `ExtractLinesByIndex` —— 7/8 个有
+- `Int Literal` —— 7/8 个有
+- `LoadAudio` —— 7/8 个有
+- `PreviewAny` —— 7/8 个有
+- `ShowText|pysssss` —— 7/8 个有
+- `Text To Image (mtb)` —— 7/8 个有
+- `easy batchAnything` —— 7/8 个有
+- `Text String Truncate` —— 5/8 个有
+- `DF_Float` —— 3/8 个有
+- `LTXVConcatAVLatent` —— 2/8 个有
+- `LTXVSeparateAVLatent` —— 2/8 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/8 个有
+- `SplitSigmas` —— 2/8 个有
+- `ACE_AudioCrop` —— 1/8 个有
+- `ASRMW` —— 1/8 个有
+- `CR Text Concatenate` —— 1/8 个有
+- `CreateVideo` —— 1/8 个有
+- `GetAudioDurationFromAudio` —— 1/8 个有
+- `ImageFromBatch` —— 1/8 个有
+- `PreviewAudio` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 1/8 个有
+- `SaveVideo` —— 1/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/8 个有
+- `easy MiniMaxH3MotionContextHard` —— 1/8 个有
+- `easy clearCacheAll` —— 1/8 个有
+- `ttN concat` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | 1024 - 1280 | 7 | 89% |
-| 高度 | 1024 | 720 - 1280 | 7 | 79% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1280，7 个样本，取值集中（一致性 89%）
-- 高度 中位数 1024，观测区间 720 - 1280，7 个样本
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

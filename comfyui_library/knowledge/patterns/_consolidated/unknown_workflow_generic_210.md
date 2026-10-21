@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_generic_210
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.815
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, RH_Veo3_Image2Video, SaveImage, SaveVideo]
+coverage: 0.889
+common_nodes: [ImageResize+, LoadImage, RH_Sora2_I2V_Realistic, SaveVideo, easy compare, easy imageSwitch]
 problems: []
 missing: []
-members: [图片生成/文生图/1939720000162992130.json, 视频生成/图生视频/1939720000162992130.json, 视频生成/图生视频/2031802829094002689.json, 视频生成/图生视频/2020032990960685058.json, 视频生成/图生视频/2013483702050889729.json]
+members: [视频生成/图生视频/1994395763994206210.json, 视频生成/图生视频/1973551516617412609.json, 视频生成/图生视频/2054431460349751298.json, 视频生成/图生视频/1997595577485561858.json, 视频生成/图生视频/2001547196065562625.json, 视频生成/图生视频/2017785280387878914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_210
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1939720000162992130.json、视频生成/图生视频/1939720000162992130.json、视频生成/图生视频/2031802829094002689.json、视频生成/图生视频/2020032990960685058.json、视频生成/图生视频/2013483702050889729.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1994395763994206210.json、视频生成/图生视频/1973551516617412609.json、视频生成/图生视频/2054431460349751298.json、视频生成/图生视频/1997595577485561858.json、视频生成/图生视频/2001547196065562625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `ImageResize+`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `RH_Veo3_Image2Video`
-- `SaveImage`
+- `RH_Sora2_I2V_Realistic`
 - `SaveVideo`
+- `easy compare`
+- `easy imageSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `DF_Text_Box` —— 1/5 个有
+- `CR Text` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `RH_LLMAPI_NODE` —— 2/6 个有
 
 ## 典型参数
 

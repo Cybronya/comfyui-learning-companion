@@ -3,62 +3,59 @@ name: unknown_workflow_video_lora_sampler_418
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7036
-common_nodes: [GetImageSizeAndCount, GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8952
+common_nodes: [CFGGuider, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1998982182737694722.json, 视频生成/图生视频/1998661075665047553.json, 视频生成/图生视频/1998721650784919553.json, 视频生成/图生视频/1999765252109631490.json, 视频生成/图生视频/2000385748819902466.json]
+members: [视频生成/图生视频/Minimax_H3 多图参考短剧制作，加速工作流_2088187262285729793.json, 视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099764393121771521.json, 视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099848729263169538.json, 视频生成/文生视频/H3全能参考工作流_2093000289442942977.json, 视频生成/文生视频/Minimax_H3 多图参考加速工作流_2085701590907969537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_418
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1998982182737694722.json、视频生成/图生视频/1998661075665047553.json、视频生成/图生视频/1998721650784919553.json、视频生成/图生视频/1999765252109631490.json、视频生成/图生视频/2000385748819902466.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Minimax_H3 多图参考短剧制作，加速工作流_2088187262285729793.json、视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099764393121771521.json、视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099848729263169538.json、视频生成/文生视频/H3全能参考工作流_2093000289442942977.json、视频生成/文生视频/Minimax_H3 多图参考加速工作流_2085701590907969537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CFGGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 4/5 个有
-- `ImageConcatMulti` —— 4/5 个有
-- `ImpactInt` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `DrawViTPose` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `PoseAndFaceDetection` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
+- `BasicScheduler` —— 4/5 个有
+- `KSamplerSelect` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `H3AudioRefineSampler` —— 3/5 个有
+- `H3FrozenVideoCache` —— 3/5 个有
+- `MiniMaxH3SigmaShift` —— 3/5 个有
+- `MiniMaxH3TurboSampler` —— 3/5 个有
+- `ModelAttentionBackend` —— 3/5 个有
+- `SolAttnPatch` —— 3/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

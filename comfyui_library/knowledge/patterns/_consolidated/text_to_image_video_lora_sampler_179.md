@@ -3,58 +3,71 @@ name: text_to_image_video_lora_sampler_179
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.89
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, FlashVSR_SM_KSampler, FlashVSR_SM_Model, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RHHiddenNodes, SelfLiftAvatarH3Sampler, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.855667
+common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, BiRefNetRMBG, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, CreateVideo, EasyCache, EmptyLatentImage, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetVideoComponents, ImageFromBatch+, JjkText, JoinStrings, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PreviewImage, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, RunningHub Deepcleaner, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, VideoFrameSelector, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2]
-members: [视频生成/图生视频/高清去油版MinimaxH3-T1_图生视频去油提质必备款_2106256459884486658.json, 视频生成/图生视频/高清去油版MinimaxH3-T2_去油腻感出片干净又有质感_2106253463087828994.json, 视频生成/图生视频/高清去油版MinimaxH3-T3_图生视频画质通透细节清晰_2106252001981067265.json]
+missing: []
+members: [视频生成/图生视频/爆款复刻三合一｜角色替换+动作迁移+面部表情图生视频_2092869821431115778.json, 视频生成/图生视频/爆款复刻组合流｜角色替换动作迁移面部表情图生视频_2092683380424003586.json, 视频生成/图生视频/角色替换加动作迁移加面部表情 爆款复刻视频工具_2099210840540016642.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_179
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/高清去油版MinimaxH3-T1_图生视频去油提质必备款_2106256459884486658.json、视频生成/图生视频/高清去油版MinimaxH3-T2_去油腻感出片干净又有质感_2106253463087828994.json、视频生成/图生视频/高清去油版MinimaxH3-T3_图生视频画质通透细节清晰_2106252001981067265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/爆款复刻三合一｜角色替换+动作迁移+面部表情图生视频_2092869821431115778.json、视频生成/图生视频/爆款复刻组合流｜角色替换动作迁移面部表情图生视频_2092683380424003586.json、视频生成/图生视频/角色替换加动作迁移加面部表情 爆款复刻视频工具_2099210840540016642.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `BasicGuider`
 - `BasicScheduler`
+- `BiRefNetRMBG`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
+- `CreateVideo`
+- `EasyCache`
 - `EmptyLatentImage`
 - `FlashVSR_SM_KSampler`
 - `FlashVSR_SM_Model`
-- `H3SigmaRefiner`
+- `GetVideoComponents`
+- `ImageFromBatch+`
 - `JjkText`
+- `JoinStrings`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVSeparateAVLatent`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
+- `PreviewAny`
 - `PreviewImage`
-- `PrimitiveFloat`
-- `RHHiddenNodes`
-- `SelfLiftAvatarH3Sampler`
-- `Text`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `RunningHub Deepcleaner`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `VideoFrameSelector`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -84,4 +97,3 @@ source: knowledge_consolidation
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: PurgeVRAM V2

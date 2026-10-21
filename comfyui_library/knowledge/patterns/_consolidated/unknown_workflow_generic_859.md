@@ -3,34 +3,33 @@ name: unknown_workflow_generic_859
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [CR Text, RH_Suno_Single, SaveAudio, SaveAudioMP3, String]
+coverage: 1
+common_nodes: [LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/suno音乐V5自动唱-手动歌词（一首0.5元）_1976205231614771201.json, 音频生成/音频生成/suno音乐V5（手动歌词版）_1973008055413641218.json]
+members: [视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json, 视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_859
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/suno音乐V5自动唱-手动歌词（一首0.5元）_1976205231614771201.json、音频生成/音频生成/suno音乐V5（手动歌词版）_1973008055413641218.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json、视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_Suno_Single`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `String`
+- `LoadAudio`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `RH_AlibabaWan30PrimeReferenceToVideo` —— 1/2 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/2 个有
 
 ## 典型参数
 

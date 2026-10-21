@@ -3,73 +3,79 @@ name: text_to_image_video_lora_sampler_102
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.918143
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.683571
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2106756389191372802.json, 数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2108613384685047809.json, 数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2109704350506508290.json, 数字人/数字人/MiniMax H3音频驱动数字人｜多人对话加速长视频处理_2108375930543624193.json, 视频生成/图生视频/MiniMax H3音频驱动数字人 语音口型同步多人对话一键实现_2110352465429352449.json, 视频生成/图生视频/MiniMax H3音频驱动数字人加速版｜参考图生长视频直出_2103697575655333890.json, 视频生成/图生视频/MiniMax H3音频驱动数字人参考生视频长视频直出加速版，图生视频方案_2103992154782789634.json]
+members: [视频生成/图生视频/MiniMax H3面部修复图生视频处理生成工具_2101749405769625602.json, 视频生成/图生视频/Minimax H3 Singularity中远景脸部精修 反油光质感图生视频_2098647053638393858.json, 视频生成/图生视频/Minimax H3图生视频脸部精修 80 优化版工作流_2098648439998476289.json, 视频生成/图生视频/Minimax H3多图参考生视频Singularity武斗专属模型加4步急速加放大加双重人脸精修工_2108324433835413505.json, 视频生成/图生视频/全能参考二采放大｜MiniMax H3视频图生视频_2092362550968147969.json, 视频生成/图生视频/全能参考二采放大｜MiniMax H3视频生视频图生视频_2092619898299179010.json, 视频生成/文生视频/MiniMax H3文生图生视频FastH3 8步急速加放大加人脸精修，FL2VA模型方案_2103575208023117825.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_102
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2106756389191372802.json、数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2108613384685047809.json、数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2109704350506508290.json、数字人/数字人/MiniMax H3音频驱动数字人｜多人对话加速长视频处理_2108375930543624193.json、视频生成/图生视频/MiniMax H3音频驱动数字人 语音口型同步多人对话一键实现_2110352465429352449.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3面部修复图生视频处理生成工具_2101749405769625602.json、视频生成/图生视频/Minimax H3 Singularity中远景脸部精修 反油光质感图生视频_2098647053638393858.json、视频生成/图生视频/Minimax H3图生视频脸部精修 80 优化版工作流_2098648439998476289.json、视频生成/图生视频/Minimax H3多图参考生视频Singularity武斗专属模型加4步急速加放大加双重人脸精修工_2108324433835413505.json、视频生成/图生视频/全能参考二采放大｜MiniMax H3视频图生视频_2092362550968147969.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 6/7 个有
-- `孤海注释` —— 6/7 个有
-- `AudioConcat` —— 4/7 个有
-- `BatchImagesNode` —— 4/7 个有
-- `ComfySwitchNode` —— 4/7 个有
-- `GetImageRangeFromBatch` —— 4/7 个有
-- `ImageBlur` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `RIFE VFI` —— 4/7 个有
-- `SoundFlow_GetLength` —— 4/7 个有
-- `TrimAudioDuration` —— 4/7 个有
-- `VAEEncode` —— 4/7 个有
-- `easy cleanGpuUsed` —— 4/7 个有
-- `easy compare` —— 4/7 个有
-- `easy forLoopEnd` —— 4/7 个有
-- `easy forLoopStart` —— 4/7 个有
-- `CR Combine Prompt` —— 3/7 个有
-- `ImageBatchRepeatInterleaving` —— 2/7 个有
+- `ComfyMathExpression` —— 6/7 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
+- `PrimitiveFloat` —— 6/7 个有
+- `ResolutionSelector` —— 6/7 个有
+- `GetNode` —— 5/7 个有
+- `H3FaceStitch` —— 5/7 个有
+- `H3FaceTrackCrop` —— 5/7 个有
+- `H3InjectVideoLatent` —— 5/7 个有
+- `H3PerFrameDenoise` —— 5/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
+- `MiniMaxH3SigmaShift` —— 5/7 个有
+- `ModelAttentionBackend` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `SaveImage` —— 5/7 个有
+- `VOSR2ModelLoader` —— 5/7 个有
+- `VOSR2Upscale` —— 5/7 个有
+- `LTXVConcatAVLatent` —— 4/7 个有
+- `LTXVSeparateAVLatent` —— 4/7 个有
+- `MiniMaxH3NativeAudioLock` —— 4/7 个有
+- `MinimaxH3LatentUpscaler3D` —— 4/7 个有
+- `SplitSigmas` —— 4/7 个有
+- `BlockSparseAttention` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `ModelPreviewOverrideKJ` —— 3/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `GetImageRangeFromBatch` —— 2/7 个有
+- `MiniMaxH3ImageToVideo` —— 2/7 个有
+- `PreviewAny` —— 2/7 个有
+- `ImageConcanate` —— 1/7 个有
+- `ManualSigmas` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 
@@ -87,7 +93,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -98,4 +104,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（10/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_clip_2
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [CLIPTextEncode, EmptyLatentImage, SaveImage, workflow>1]
+frequency: 3
+level: moderate
+coverage: 0.377667
+common_nodes: [SaveImage, workflow>模型组, workflow>自定义采样器(高级)]
 problems: []
-missing: [workflow>1]
-members: [图片生成/文生图/1955893393337581569.json, 图片生成/文生图/1956597003583193089.json]
+missing: [workflow>模型组, workflow>自定义采样器(高级)]
+members: [图片生成/文生图/1913400012821463041.json, 图片生成/文生图/1913868017665568770.json, 图片生成/文生图/1915295742100180993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1955893393337581569.json、图片生成/文生图/1956597003583193089.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1913400012821463041.json、图片生成/文生图/1913868017665568770.json、图片生成/文生图/1915295742100180993.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `EmptyLatentImage`
+全部 3 个 workflow 都包含：
 - `SaveImage`
-- `workflow>1`
+- `workflow>模型组`
+- `workflow>自定义采样器(高级)`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPTextEncode` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 960 | - | 2 | 100% |
-| 高度 | 1280 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -41,7 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 960，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：workflow>1
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 这些节点还没有知识卡，系统对它们的理解有限：workflow>模型组、workflow>自定义采样器(高级)

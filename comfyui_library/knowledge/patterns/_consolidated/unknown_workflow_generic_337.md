@@ -1,34 +1,42 @@
 ---
 name: unknown_workflow_generic_337
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8125
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioMP3]
+coverage: 0.6958
+common_nodes: [CR Prompt Text, LoadAudio, PreviewAudio, SaveAudio, ShowText|pysssss, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text Concatenate]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json, 音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json, 音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json, 音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json]
+members: [音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json, 音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json, 音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json, 音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json, 音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_337
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json、音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json、音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json、音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json、音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json、音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json、音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json、音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudioMP3`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text Concatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/4 个有
+- `Text` —— 4/5 个有
+- `PreviewAny` —— 1/5 个有
+- `StringReplace` —— 1/5 个有
 
 ## 典型参数
 

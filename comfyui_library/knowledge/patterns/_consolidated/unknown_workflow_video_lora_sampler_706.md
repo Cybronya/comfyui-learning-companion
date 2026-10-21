@@ -1,57 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_706
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.945667
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.5945
+common_nodes: [Any Switch (rgthree), AutoCropFaces, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImagesFromBatchIndexed, GetNode, GetVideoComponents, ImageConcatFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
-missing: []
-members: [视频生成/文生视频/1956285811346079746.json, 视频生成/文生视频/1951284821798670338.json, 视频生成/文生视频/【Supermate】重温Wan2.2 文生视频_2048801817592602625.json]
+missing: [Fast Muter (rgthree), LayerUtility: SaveImagePlus]
+members: [图片生成/图生图/2102282609287065601.json, 图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_706
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1956285811346079746.json、视频生成/文生视频/1951284821798670338.json、视频生成/文生视频/【Supermate】重温Wan2.2 文生视频_2048801817592602625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2102282609287065601.json、图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `LoadWanVideoT5TextEncoder`
+全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AutoCropFaces`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `GetVideoComponents`
+- `ImageConcatFromBatch`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `DF_Integer` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `ImageFromBatch+` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `LayerColor: Brightness & Contrast` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `RIFE VFI` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `LayerUtility: SaveImagePlus` —— 1/2 个有
+- `ResizeImageMaskNode` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `SaveImageAdvanced` —— 1/2 个有
+- `SeedVR2LoadDiTModel` —— 1/2 个有
+- `SeedVR2LoadVAEModel` —— 1/2 个有
+- `SeedVR2VideoUpscaler` —— 1/2 个有
+- `workflow>SeedVR放大节点` —— 1/2 个有
 
 ## 典型参数
 
@@ -63,4 +77,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：Fast Muter (rgthree)、LayerUtility: SaveImagePlus
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

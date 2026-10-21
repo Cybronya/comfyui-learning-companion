@@ -1,68 +1,91 @@
 ---
 name: unknown_workflow_sampler_unet_vae_37
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.841929
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 13
+level: strong
+coverage: 0.645692
+common_nodes: [Anything Everywhere3, CLIPLoader, CR Prompt Text, EmptyLatentImage, KSampler, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/minimax_h3图生视频_2084523818936262657.json, 视频生成/图生视频/minimax_h3图生视频（稳定）_2085014325353340930.json, 视频生成/图生视频/minimax_图生视频8步加速_2087371300875620353.json, 视频生成/图生视频/minimaxh3首尾帧视频_2109562727692849153.json, 视频生成/图生视频/minmaxh3图生视频_2109544409682497537.json, 视频生成/图生视频/video_minimax_h3_i2v 开源comfyui 官方版本_2084149773224992770.json, 视频生成/图生视频/video_minimax_h3_i2v_2084124570839240705.json, 视频生成/图生视频/video_minimax_h3_i2v_2084181095406456833.json, 视频生成/图生视频/video_minimax_h3_i2v_2087451619603603457.json, 视频生成/图生视频/video_minimax_h3_i2v_RH_2096548199573049346.json, 视频生成/图生视频/video_minimax_h3_i2v_first_last_frame_2092171283260862466.json, 视频生成/图生视频/【2】图生视频（首帧图生视频）video_minimax_h3_i2v_2087199971459289090.json, 视频生成/图生视频/【3】图生视频（尾帧图生视频）video_minimax_h3_i2v_2087202435805827073.json, 视频生成/图生视频/【4】图生视频（首尾帧模式）video_minimax_h3_i2v_2087205422599073793.json]
+missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, easy setNode, CR Prompt Text, Seed (rgthree)]
+members: [图片生成/图生图/2102355136613015554.json, 图片生成/图生图/2102363823524114434.json, 图片生成/图生图/2102369979093053442.json, 图片生成/图生图/2102470856244031490.json, 图片生成/图生图/2102573883814666241.json, 图片生成/图生图/2104466208149032961.json, 图片生成/图生图/【Qwen Image 2.1】万能输入工作流_2103013637228154881.json, 图片生成/文生图/Qwen Image 2.1 Character Reference Sheet (Four Views)_2102316050699345921.json, 图片生成/文生图/Qwen Image 2.1 Short Drama Asset Series – Environm_2102362481237782530.json, 图片生成/文生图/Qwen Image 2.1 全能工作流合集_2101841162679177218.json, 图片生成/文生图/Qwen Image 2.1文生编辑一锅端工作流详拆系列11集_2102948623549026306.json, 图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101781526932447234.json, 图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101831592514772993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/minimax_h3图生视频_2084523818936262657.json、视频生成/图生视频/minimax_h3图生视频（稳定）_2085014325353340930.json、视频生成/图生视频/minimax_图生视频8步加速_2087371300875620353.json、视频生成/图生视频/minimaxh3首尾帧视频_2109562727692849153.json、视频生成/图生视频/minmaxh3图生视频_2109544409682497537.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/2102355136613015554.json、图片生成/图生图/2102363823524114434.json、图片生成/图生图/2102369979093053442.json、图片生成/图生图/2102470856244031490.json、图片生成/图生图/2102573883814666241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 13 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR Prompt Text`
+- `EmptyLatentImage`
+- `KSampler`
+- `QwenImage21Cache`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 12/14 个有
-- `PrimitiveFloat` —— 12/14 个有
-- `CreateVideo` —— 11/14 个有
-- `SaveVideo` —— 11/14 个有
-- `ResolutionSelector` —— 10/14 个有
-- `GetImageSize` —— 9/14 个有
-- `ImageScaleToTotalPixels` —— 9/14 个有
-- `LoraLoaderModelOnly` —— 7/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/14 个有
-- `Label (rgthree)` —— 4/14 个有
-- `EasyCache` —— 3/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/14 个有
-- `PrimitiveStringMultiline` —— 3/14 个有
-- `VHS_VideoCombine` —— 3/14 个有
-- `YK_LoadImageFromURL` —— 2/14 个有
-- `easy int` —— 2/14 个有
-- `easy showAnything` —— 2/14 个有
-- `ImageScale` —— 1/14 个有
-- `JjkText` —— 1/14 个有
-- `PrimitiveInt` —— 1/14 个有
-- `easy positive` —— 1/14 个有
+- `Image Comparer (rgthree)` —— 12/13 个有
+- `PreviewImage` —— 12/13 个有
+- `ComfySwitchNode` —— 11/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
+- `LoadImage` —— 11/13 个有
+- `easy setNode` —— 11/13 个有
+- `LayerUtility: ImageReel` —— 10/13 个有
+- `LayerUtility: ImageReelComposit` —— 10/13 个有
+- `Seed (rgthree)` —— 10/13 个有
+- `ShowText|pysssss` —— 9/13 个有
+- `TextGenerateLTX2Prompt` —— 9/13 个有
+- `GetNode` —— 8/13 个有
+- `SetNode` —— 8/13 个有
+- `PreviewAny` —— 6/13 个有
+- `SeedVR2LoadDiTModel` —— 6/13 个有
+- `SeedVR2LoadVAEModel` —— 6/13 个有
+- `SeedVR2VideoUpscaler` —— 6/13 个有
+- `easy showAnything` —— 6/13 个有
+- `BatchImagesNode` —— 5/13 个有
+- `Any Switch (rgthree)` —— 4/13 个有
+- `LoraLoaderModelOnly` —— 4/13 个有
+- `RHLLMChatNode` —— 4/13 个有
+- `ResizeLongestToNode` —— 4/13 个有
+- `easy getNode` —— 4/13 个有
+- `Label (rgthree)` —— 3/13 个有
+- `INTConstant` —— 2/13 个有
+- `ImageScaleToTotalPixels` —— 2/13 个有
+- `LayerUtility: TextJoin` —— 2/13 个有
+- `Fast Bypasser (rgthree)` —— 1/13 个有
+- `ImageScaleBy` —— 1/13 个有
+- `PrimitiveBoolean` —— 1/13 个有
+- `SplitImageWithAlpha` —— 1/13 个有
+- `VOSR2ModelLoader` —— 1/13 个有
+- `VOSR2Upscale` —— 1/13 个有
+- `easy float` —— 1/13 个有
+- `easy int` —— 1/13 个有
+- `孤海注释` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 13 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 13 | 100% |
+| 采样步数 | 40 | 20 - 40 | 13 | 74% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
@@ -70,4 +93,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 20 - 40，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageReel、LayerUtility: ImageReelComposit、easy setNode、CR Prompt Text、Seed (rgthree)

@@ -3,46 +3,85 @@ name: unknown_workflow_video_lora_sampler_775
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.909
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, Lora Loader Stack (rgthree), MiniMaxH3HybridLoader, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.446
+common_nodes: [AddLabel, BasicScheduler, CFGGuider, CLIPLoader, ComfyMathExpression, ComfyNumberConvert, ComfySwitchNode, CreateVideo, EmptyAudio, EmptyMiniMaxH3LatentAV, GetImageSize, GetNode, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SolAttnPatch, SomethingToString, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3-参考视频-bf16模型_2104139382696534017.json, 视频生成/文生视频/MinimaxH3-参考视频_1944738387087511554.json]
+members: [视频生成/图生视频/MiniMax H3 风格参考视频风格迁移_2099000699609767937.json, 视频生成/图生视频/MinimaxH3视频角色替换+lms放大_2110649907953627137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_775
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-参考视频-bf16模型_2104139382696534017.json、视频生成/文生视频/MinimaxH3-参考视频_1944738387087511554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 风格参考视频风格迁移_2099000699609767937.json、视频生成/图生视频/MinimaxH3视频角色替换+lms放大_2110649907953627137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
+- `AddLabel`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
-- `Lora Loader Stack (rgthree)`
-- `MiniMaxH3HybridLoader`
-- `MiniMaxH3MediaLoaderFantastic`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceSplitter`
-- `MiniMaxH3ResolutionSelector`
-- `MiniMaxH3TurboLoRA`
-- `MiniMaxH3TurboSampler`
-- `MiniMaxH3UnifiedToVideo`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `EmptyAudio`
+- `EmptyMiniMaxH3LatentAV`
+- `GetImageSize`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
+- `SolAttnPatch`
+- `SomethingToString`
+- `StringConcatenate`
+- `TextGenerate`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+
+**可变部分**（部分 workflow 才有）：
+- `BasicGuider` —— 1/2 个有
+- `CLIPTextEncode` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GetImageSize+` —— 1/2 个有
+- `GetVideoComponents` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `LTXVConcatAVLatent` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `ResizeImageMaskNode` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
 
 ## 典型参数
 

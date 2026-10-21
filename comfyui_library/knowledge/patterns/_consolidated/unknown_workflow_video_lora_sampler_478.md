@@ -3,47 +3,40 @@ name: unknown_workflow_video_lora_sampler_478
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.531
-common_nodes: [CLIPVisionLoader, CM_FloatToInt, ComfyMathExpression, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, MinNode, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, 图像缩放V2_孤海]
+coverage: 0.93425
+common_nodes: [CLIPVisionLoader, CreateVideo, GetVideoComponents, ImageResizeKJv2, LoadImage, PrimitiveFloat, SaveVideo, VHS_GetImageCount, VHS_LoadVideo, Video Slice, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2067136692997414914.json, 视频生成/图生视频/2067232861400428545.json, 视频生成/图生视频/2067890192308072449.json, 视频生成/图生视频/2072250195357818881.json]
+members: [视频生成/图生视频/AI动作迁移-高精细10秒版｜单次10秒不糊_2106582395486035969.json, 视频生成/图生视频/AI动作迁移-高精细版｜5秒清晰不糊_2106570630329098242.json, 视频生成/图生视频/Animate动作迁移-自动尺寸工作流_2094980950672371713.json, 视频生成/图生视频/SCAIL2动作迁移-免骨架工作流_2095006151107760130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_478
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2067136692997414914.json、视频生成/图生视频/2067232861400428545.json、视频生成/图生视频/2067890192308072449.json、视频生成/图生视频/2072250195357818881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI动作迁移-高精细10秒版｜单次10秒不糊_2106582395486035969.json、视频生成/图生视频/AI动作迁移-高精细版｜5秒清晰不糊_2106570630329098242.json、视频生成/图生视频/Animate动作迁移-自动尺寸工作流_2094980950672371713.json、视频生成/图生视频/SCAIL2动作迁移-免骨架工作流_2095006151107760130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CM_FloatToInt`
-- `ComfyMathExpression`
-- `DrawViTPose`
-- `GetNode`
+- `CreateVideo`
+- `GetVideoComponents`
 - `ImageResizeKJv2`
-- `Int`
 - `LoadImage`
-- `MinNode`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
+- `PrimitiveFloat`
+- `SaveVideo`
+- `VHS_GetImageCount`
 - `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
+- `Video Slice`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoImageResizeToClosest`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
@@ -51,18 +44,20 @@ source: knowledge_consolidation
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `图像缩放V2_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `GIMMVFI_interpolate` —— 2/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `InversionDemoLazySwitch` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `easy anythingIndexSwitch` —— 2/4 个有
+- `BBOXToBoundingBoxKJ` —— 3/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `DrawViTPose` —— 3/4 个有
+- `OnnxDetectionModelLoader` —— 3/4 个有
+- `PoseAndFaceDetection` —— 3/4 个有
+- `SDPoseDrawKeypoints` —— 3/4 个有
+- `SDPoseKeypointExtractor` —— 3/4 个有
+- `WanVideoAnimateEmbeds` —— 3/4 个有
+- `WanVideoContextOptions` —— 3/4 个有
+- `WanVideoAddSCAILPoseEmbeds` —— 1/4 个有
+- `WanVideoAddSCAILReferenceEmbeds` —— 1/4 个有
+- `WanVideoEmptyEmbeds` —— 1/4 个有
 
 ## 典型参数
 

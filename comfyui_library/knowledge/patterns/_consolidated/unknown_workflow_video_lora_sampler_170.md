@@ -2,70 +2,78 @@
 name: unknown_workflow_video_lora_sampler_170
 type: Unknown Workflow
 frequency: 11
-level: moderate
-coverage: 0.515818
-common_nodes: [GetNode, ImpactSwitch, LoadWanVideoT5TextEncoder, PrimitiveInt, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy negative, easy positive]
+level: weak
+coverage: 0.517727
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), GetImagesFromBatchIndexed, INTConstant, Int, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, RIFE VFI, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969269601903276034.json, 视频生成/图生视频/1953403318607511553.json, 视频生成/图生视频/1952225607566438401.json, 视频生成/图生视频/1967507218427994113.json, 视频生成/图生视频/1953348116592427010.json, 视频生成/图生视频/1955836777492725762.json, 视频生成/图生视频/1967511175430803457.json, 视频生成/图生视频/1976833467906506754.json, 视频生成/图生视频/1955508156764864513.json, 视频生成/文生视频/1952262575440474114.json, 视频生成/文生视频/1966334312981442561.json]
+members: [视频生成/图生视频/2020365816381841410.json, 视频生成/图生视频/2033525595593773057.json, 视频生成/图生视频/2019556133358276609.json, 视频生成/图生视频/2028271741587431426.json, 视频生成/图生视频/2038255613351829505.json, 视频生成/图生视频/2019042589701316609.json, 视频生成/图生视频/2027704519647305729.json, 视频生成/图生视频/2021547239155437569.json, 视频生成/图生视频/2019677447897227266.json, 视频生成/图生视频/2002722598842691586.json, 视频生成/文生视频/万象+runninghub制作动漫短剧图生视频工作流（720P横屏）+V：50259731获取软件_2002624985527119873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_170
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1969269601903276034.json、视频生成/图生视频/1953403318607511553.json、视频生成/图生视频/1952225607566438401.json、视频生成/图生视频/1967507218427994113.json、视频生成/图生视频/1953348116592427010.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2020365816381841410.json、视频生成/图生视频/2033525595593773057.json、视频生成/图生视频/2019556133358276609.json、视频生成/图生视频/2028271741587431426.json、视频生成/图生视频/2038255613351829505.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
-- **可信度**：中等可信
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `GetNode`
-- `ImpactSwitch`
-- `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
-- `SetNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImagesFromBatchIndexed`
+- `INTConstant`
+- `Int`
+- `JoinStrings`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `RIFE VFI`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy negative`
-- `easy positive`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetBoolFromJson` —— 10/11 个有
-- `GetFloatFromJson` —— 10/11 个有
-- `GetIntFromJson` —— 10/11 个有
-- `LoadJsonFromText` —— 10/11 个有
-- `easy ifElse` —— 10/11 个有
-- `easy mathInt` —— 10/11 个有
-- `Int` —— 9/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
-- `LoadImage` —— 9/11 个有
-- `WanVideoImageToVideoEncode` —— 9/11 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 6/11 个有
-- `JWStringSplit` —— 2/11 个有
-- `PrimitiveString` —— 2/11 个有
-- `WanVideoEmptyEmbeds` —— 2/11 个有
-- `easy convertAnything` —— 2/11 个有
-- `LoadWanVideoClipTextEncoder` —— 1/11 个有
-- `WanVideoClipVisionEncode` —— 1/11 个有
+- `CR Integer To String` —— 10/11 个有
+- `CR Text Replace` —— 10/11 个有
+- `MathExpression|pysssss` —— 10/11 个有
+- `Text Concatenate` —— 10/11 个有
+- `Text Multiline` —— 10/11 个有
+- `TextInput_` —— 10/11 个有
+- `easy cleanGpuUsed` —— 10/11 个有
+- `wanBlockSwap` —— 10/11 个有
+- `GetAudioDurationFromAudio` —— 9/11 个有
+- `LoadAudio` —— 9/11 个有
+- `ImageOnlyCheckpointLoader` —— 1/11 个有
+- `JjkText` —— 1/11 个有
+- `SONICSampler` —— 1/11 个有
+- `SONICTLoader` —— 1/11 个有
+- `SONIC_PreData` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 11 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 11 | 16% |
+| 采样算法 | 1 | 1 - 1 | 11 | 100% |
+| 调度器 | euler | - | 11 | 100% |
+| 重绘幅度 | normal | - | 11 | 91% |
 
 ## 常见问题
 
@@ -73,4 +81,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，11 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，11 个样本，取值分散，一致性仅 16%
+- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，11 个样本，一致性 100%
+- 重绘幅度 最常用 normal，11 个样本，一致性 91%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

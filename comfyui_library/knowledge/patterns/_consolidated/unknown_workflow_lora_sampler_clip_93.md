@@ -1,74 +1,99 @@
 ---
 name: unknown_workflow_lora_sampler_clip_93
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.883667
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
+coverage: 0.7165
+common_nodes: [BasicScheduler, BerniniPromptEnhancer, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, CreateVideo, Display Any (rgthree), DualCLIPLoader, GetNode, GetVideoComponents, ImageScaleToMaxDimension, ImpactSwitch, JWInteger, KSamplerAdvanced, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchMemoryCleaner, PathchSageAttentionKJ, PrimitiveInt, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, StringReplace, Text, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VAELoaderKJ, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2078769207956819970.json, 视频生成/图生视频/2063444223206191106.json, 视频生成/文生视频/LTX 2.3_MSR（多参图生视频）_2080284714388246530.json]
+members: [视频生成/图生视频/2064635596194271233.json, 视频生成/图生视频/2065001018898870274.json, 视频生成/图生视频/2073281054196383744.json, 视频生成/图生视频/2076389088697085954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_93
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2078769207956819970.json、视频生成/图生视频/2063444223206191106.json、视频生成/文生视频/LTX 2.3_MSR（多参图生视频）_2080284714388246530.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2064635596194271233.json、视频生成/图生视频/2065001018898870274.json、视频生成/图生视频/2073281054196383744.json、视频生成/图生视频/2076389088697085954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniPromptEnhancer`
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `Display Any (rgthree)`
+- `DualCLIPLoader`
+- `GetNode`
+- `GetVideoComponents`
+- `ImageScaleToMaxDimension`
+- `ImpactSwitch`
+- `JWInteger`
+- `KSamplerAdvanced`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
+- `LTXVAudioVideoMask`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LiconMSR`
 - `LoadImage`
-- `LowVRAMCheckpointLoader`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `MathExpression|pysssss`
+- `ModelPatchMemoryCleaner`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
+- `StringReplace`
+- `Text`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `LTX2_NAG` —— 2/3 个有
-- `PromptRelayEncode` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `CreateVideo` —— 1/3 个有
-- `FloatConstant` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `BerniniConditioningReferenceSlots` —— 3/4 个有
+- `FrameInterpolate` —— 3/4 个有
+- `FrameInterpolationModelLoader` —— 3/4 个有
+- `HAIGC_VideoLastFrame` —— 3/4 个有
+- `RTXVideoSuperResolution` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `BatchImagesNode` —— 1/4 个有
+- `BerniniConditioning` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 97 - 241 | 3 | 65% |
-| 高度 | 50 | 25 - 50 | 3 | 72% |
+| 宽度 | 258 | 129 - 258 | 4 | 75% |
+| 高度 | 30 | 24 - 30 | 4 | 91% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 7 | 4 - 10 | 4 | 57% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -76,5 +101,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 97 - 241，3 个样本
-- 高度 中位数 50，观测区间 25 - 50，3 个样本
+- 宽度 中位数 258，观测区间 129 - 258，4 个样本
+- 高度 中位数 30，观测区间 24 - 30，4 个样本，取值集中（一致性 91%）
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 4 - 10，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

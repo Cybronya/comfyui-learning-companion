@@ -3,39 +3,35 @@ name: unknown_workflow_generic_68
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.856909
-common_nodes: [Audio To Text (mtb), CR Prompt Text, Load Whisper (mtb), LoadAudio, SaveAudioMP3]
+coverage: 0.687636
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
-missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039309185434783746.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039694725573255170.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039215676392480769.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039696306108633089.json, 音频生成/音频生成/单人语音克隆TTS_2044697057641897985.json, 音频生成/音频生成/双人语音克隆对话_2044482244785475586.json]
+missing: [CR Text]
+members: [图片生成/文生图/1991527043806478338.json, 图片生成/文生图/1991538118333513730.json, 图片生成/文生图/1991707945115267074.json, 图片生成/文生图/1991900059478585346.json, 图片生成/文生图/1992067815244976129.json, 图片生成/文生图/1992265412136030210.json, 图片生成/文生图/AI漫剧人物和场景生成-盯盯盯-V2.0_2026277521989308418.json, 图片生成/文生图/AI漫剧人物生成-盯盯盯_2020521196940431362.json, 图片生成/文生图/NB 2 Pro_2020841440162619394.json, 图片生成/文生图/Seedance2.0角色过审多视图_2027226931736879106.json, 图片生成/文生图/全能图片TG-2026-2支持文生图_图生图_2025879024190365698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_68
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/1991527043806478338.json、图片生成/文生图/1991538118333513730.json、图片生成/文生图/1991707945115267074.json、图片生成/文生图/1991900059478585346.json、图片生成/文生图/1992067815244976129.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `CR Prompt Text`
-- `Load Whisper (mtb)`
-- `LoadAudio`
-- `SaveAudioMP3`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 10/11 个有
-- `NormalizeAudioLoudness` —— 9/11 个有
-- `LongCatVoiceCloneTTS` —— 8/11 个有
-- `LongCatMultiSpeakerTTS` —— 3/11 个有
-- `TrimAudioDuration` —— 2/11 个有
-- `TDQwen3TTSDefineSpeaker` —— 1/11 个有
+- `CR Text` —— 8/11 个有
+- `LoadImage` —— 6/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/11 个有
+- `ImageResize+` —— 1/11 个有
+- `RH_Translator` —— 1/11 个有
 
 ## 典型参数
 
@@ -47,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text

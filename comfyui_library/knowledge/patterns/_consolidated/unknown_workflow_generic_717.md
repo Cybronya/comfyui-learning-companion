@@ -3,33 +3,33 @@ name: unknown_workflow_generic_717
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.613
-common_nodes: [CR Text, ComflyGrok3VideoApi, Comfly_api_set, LoadImage, SaveVideo, VHS_LoadVideo, easy showAnything]
+coverage: 0.875
+common_nodes: [010af74f-5a21-43f4-b520-14374608c312, GrokImageNode, ImageCompare, LoadImage, PreviewAny, SaveImage, c19ae9b8-d43c-40d3-8ae7-eea7d345a587]
 problems: []
 missing: []
-members: [视频生成/图生视频/2050484155934363649.json, 视频生成/图生视频/2050489401402249218.json]
+members: [comfyui-workflow-templates-json/template_rob_realistic_2k_images_quick_variations.json, comfyui-workflow-templates-json/templates_rob_realistic_2k_images_quick_variations.app.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_717
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2050484155934363649.json、视频生成/图生视频/2050489401402249218.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_rob_realistic_2k_images_quick_variations.json、comfyui-workflow-templates-json/templates_rob_realistic_2k_images_quick_variations.app.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `ComflyGrok3VideoApi`
-- `Comfly_api_set`
+- `010af74f-5a21-43f4-b520-14374608c312`
+- `GrokImageNode`
+- `ImageCompare`
 - `LoadImage`
-- `SaveVideo`
-- `VHS_LoadVideo`
-- `easy showAnything`
+- `PreviewAny`
+- `SaveImage`
+- `c19ae9b8-d43c-40d3-8ae7-eea7d345a587`
 
 ## 典型参数
 

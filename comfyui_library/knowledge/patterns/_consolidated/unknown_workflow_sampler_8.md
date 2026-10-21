@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 6
 level: moderate
 coverage: 1
-common_nodes: [LoadAudio, SaveAudio, Text Multiline]
+common_nodes: [LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json, 音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json, 音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json, 音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS极速版_1969791131460530178.json]
+members: [视频生成/图生视频/2057318257446711297.json, 视频生成/图生视频/2016719589106782209.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2093849191561916417.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2100049087256162305.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2100128526631530498.json, 视频生成/文生视频/FlashTalk 无限时长实时数字人工作流   高保真 直播数字人 超强_2057451172184809474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json、音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json、音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json、音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2057318257446711297.json、视频生成/图生视频/2016719589106782209.json、视频生成/图生视频/博主直播带货-照片开口卖货_2093849191561916417.json、视频生成/图生视频/博主直播带货-照片开口卖货_2100049087256162305.json、视频生成/图生视频/博主直播带货-照片开口卖货_2100128526631530498.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -24,13 +24,14 @@ source: knowledge_consolidation
 
 全部 6 个 workflow 都包含：
 - `LoadAudio`
-- `SaveAudio`
-- `Text Multiline`
+- `LoadImage`
+- `RunningHub FlashTalk Loader`
+- `RunningHub FlashTalk Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 3/6 个有
-- `NTCosyVoiceInstruct2Sampler` —— 3/6 个有
-- `PreviewAudio` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

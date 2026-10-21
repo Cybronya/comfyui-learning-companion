@@ -3,84 +3,70 @@ name: text_to_image_video_lora_sampler_117
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.877
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, Switch any [Crystools], UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip]
+coverage: 0.523
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, EmptyLatentImage, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), SamplerCustom, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimate2ContextOptions, WanAnimate2ToVideo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax_H3_Fl2va双时钟采样Turbo_LORA｜视频风格转换加速双引擎_2107470865632948225.json, 视频生成/文生视频/MiniMax H3 Fl2va双时钟采样Turbo LORA｜视频风格转换加速双引擎_2107295461982949378.json, 视频生成/文生视频/MiniMax H3 Fl2va双时钟采样Turbo LoRA工作流，文生视频图生视频方案_2107530132549357569.json, 视频生成/文生视频/MiniMax H3 Fl2va双时钟采样Turbo Lora图生视频工具_2101398805836025858.json, 视频生成/文生视频/MiniMax H3双时钟采样Turbo Lora双采多模态视频工具_2101400762055217154.json, 视频生成/文生视频/双时钟采样Turbo LORA加持 MiniMax H3双采多模态工作流_2104826155835682817.json]
+members: [视频生成/图生视频/WanAnimate2动作迁移工作流｜一张图让角色跳舞_2100890163294597121.json, 视频生成/图生视频/WanAnimate2动作迁移工作流｜丝滑长视频人物替换生成_2097768858282184705.json, 视频生成/图生视频/WanAnimate2动作迁移模型｜丝滑长视频生成工作流_2095948603918475266.json, 视频生成/图生视频/WanAnimate2动作迁移｜图生视频精准复刻人物动作姿态_2101507280977092610.json, 视频生成/图生视频/WanAnimate2最强动作迁移｜王者归来丝滑长视频_2097960146419937281.json, 视频生成/图生视频/王者级动作迁移长视频｜WanAnimate2 丝滑换脸出片_2096236030365097986.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_117
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_Fl2va双时钟采样Turbo_LORA｜视频风格转换加速双引擎_2107470865632948225.json、视频生成/文生视频/MiniMax H3 Fl2va双时钟采样Turbo LORA｜视频风格转换加速双引擎_2107295461982949378.json、视频生成/文生视频/MiniMax H3 Fl2va双时钟采样Turbo LoRA工作流，文生视频图生视频方案_2107530132549357569.json、视频生成/文生视频/MiniMax H3 Fl2va双时钟采样Turbo Lora图生视频工具_2101398805836025858.json、视频生成/文生视频/MiniMax H3双时钟采样Turbo Lora双采多模态视频工具_2101400762055217154.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WanAnimate2动作迁移工作流｜一张图让角色跳舞_2100890163294597121.json、视频生成/图生视频/WanAnimate2动作迁移工作流｜丝滑长视频人物替换生成_2097768858282184705.json、视频生成/图生视频/WanAnimate2动作迁移模型｜丝滑长视频生成工作流_2095948603918475266.json、视频生成/图生视频/WanAnimate2动作迁移｜图生视频精准复刻人物动作姿态_2101507280977092610.json、视频生成/图生视频/WanAnimate2最强动作迁移｜王者归来丝滑长视频_2097960146419937281.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `Switch any [Crystools]`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Power Lora Loader (rgthree)`
+- `SamplerCustom`
+- `SetNode`
+- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VHS_VideoInfoLoaded`
+- `WanAnimate2ContextOptions`
+- `WanAnimate2ToVideo`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: TextJoin` —— 5/6 个有
-- `孤海注释` —— 5/6 个有
-- `MiniMaxH3ImageToVideo` —— 4/6 个有
-- `Primitive boolean [Crystools]` —— 4/6 个有
-- `SaveImage` —— 3/6 个有
-- `AudioConcat` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `LoadVideoUI` —— 2/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/6 个有
-- `TrimAudioDuration` —— 2/6 个有
-- `VAEEncodeAudio` —— 2/6 个有
-- `easy boolean` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `easy seed` —— 2/6 个有
-- `EmptyImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
+- `FastGroupsBypassSwitch` —— 5/6 个有
+- `FeiHouWanAnimate2SeamColorMatch` —— 5/6 个有
+- `FeiHouWanAnimate2ToVideo` —— 5/6 个有
+- `Seed (rgthree)` —— 5/6 个有
+- `WanAnimate2Cache` —— 4/6 个有
+- `Int` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
 
 ## 典型参数
 

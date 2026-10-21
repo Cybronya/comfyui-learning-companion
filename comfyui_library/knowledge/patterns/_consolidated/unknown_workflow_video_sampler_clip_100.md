@@ -2,61 +2,58 @@
 name: unknown_workflow_video_sampler_clip_100
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.770333
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+level: weak
+coverage: 0.934333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1915835994845941761.json, 视频生成/图生视频/1895846905987596290.json, 视频生成/图生视频/1942427410207813634.json, 视频生成/图生视频/1942490603743555586.json, 视频生成/图生视频/1944753394462674945.json, 视频生成/图生视频/1942526282015911937.json]
+members: [视频生成/文生视频/QwenVL视频反推提示词_文生视频_Comfyui官方流_1983421247163932674.json, 视频生成/文生视频/1954184197437059073.json, 视频生成/文生视频/1950002171104419841.json, 视频生成/文生视频/1950043620181237761.json, 视频生成/文生视频/1949879786422362114.json, 视频生成/文生视频/1949911446906912770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1915835994845941761.json、视频生成/图生视频/1895846905987596290.json、视频生成/图生视频/1942427410207813634.json、视频生成/图生视频/1942490603743555586.json、视频生成/图生视频/1944753394462674945.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/QwenVL视频反推提示词_文生视频_Comfyui官方流_1983421247163932674.json、视频生成/文生视频/1954184197437059073.json、视频生成/文生视频/1950002171104419841.json、视频生成/文生视频/1950043620181237761.json、视频生成/文生视频/1949879786422362114.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 5/6 个有
-- `Int` —— 4/6 个有
-- `LayerUtility: PurgeVRAM` —— 4/6 个有
-- `WanVideoEnhanceAVideo` —— 4/6 个有
-- `WanVideoExperimentalArgs` —— 4/6 个有
-- `WanVideoTeaCache` —— 4/6 个有
-- `WanVideoTorchCompileSettings` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `GetNode` —— 3/6 个有
-- `SetNode` —— 3/6 个有
-- `Any Switch (rgthree)` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `easy float` —— 2/6 个有
-- `CropFace` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `String` —— 1/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `VAEDecode` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `JWInteger` —— 3/6 个有
+- `TeaCache` —— 2/6 个有
+- `JjkText` —— 1/6 个有
+- `MultiplePathsInput` —— 1/6 个有
+- `Qwen3_VQA` —— 1/6 个有
+- `VAEDecodeTiled` —— 1/6 个有
+- `VideoLoader` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 50% |
+| Prompt 约束强度(CFG) | 11 | 8 - 20 | 6 | 59% |
+| 采样算法 | 1 | 1 - 3.5 | 6 | 36% |
+| 调度器 | euler | - | 6 | 83% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
@@ -64,4 +61,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，6 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 11，观测区间 8 - 20，6 个样本
+- 采样算法 中位数 1，观测区间 1 - 3.5，6 个样本，取值分散，一致性仅 36%
+- 调度器 最常用 euler，6 个样本，一致性 83%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

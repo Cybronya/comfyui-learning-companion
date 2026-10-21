@@ -3,33 +3,30 @@ name: unknown_workflow_generic_808
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.727
-common_nodes: [AudioCleanupNode, CR Prompt Text, IndexTTSNode, JWInteger, LoadAudio, Note Plus (mtb), SaveAudio]
+coverage: 0.933
+common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
 problems: []
 missing: []
-members: ["音频生成/音频生成/INDEXTTS语音迁移v2（支持夹子音,新模型）_1915048868399251458.json", 音频生成/音频生成/INDEXTTS语音迁移v2（贞贞专用版）_1938234701721047041.json]
+members: [图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json, 图片生成/文生图/正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2101536463837024257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_808
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/INDEXTTS语音迁移v2（支持夹子音,新模型）_1915048868399251458.json、音频生成/音频生成/INDEXTTS语音迁移v2（贞贞专用版）_1938234701721047041.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json、图片生成/文生图/正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2101536463837024257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCleanupNode`
 - `CR Prompt Text`
-- `IndexTTSNode`
-- `JWInteger`
-- `LoadAudio`
-- `Note Plus (mtb)`
-- `SaveAudio`
+- `LoadImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `SaveImage`
 
 ## 典型参数
 

@@ -1,63 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_vae_31
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.973636
-common_nodes: [CLIPVisionLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.98575
+common_nodes: [CR Text, INTConstant, ImpactInt, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI数字人-动物_2084929827878031362.json, 视频生成/图生视频/1997484530254680066.json, 视频生成/图生视频/1987166609188040706.json, 视频生成/图生视频/2071856835908427777.json, 视频生成/图生视频/2072507975016738818.json, 视频生成/图生视频/2072619753109278721.json, 视频生成/图生视频/2074016139532918786.json, 视频生成/图生视频/2008048511492825090.json, 视频生成/图生视频/2073956730425401346.json, 视频生成/图生视频/1957839924697427969.json, 视频生成/图生视频/1957830385059164161.json]
+members: [视频生成/图生视频/1967630576679358465.json, 视频生成/图生视频/1991002919573102593.json, 视频生成/图生视频/1968580959744479233.json, 视频生成/图生视频/1955641756994846722.json, 视频生成/图生视频/1958079800877469697.json, 视频生成/图生视频/1958076393995251714.json, 视频生成/图生视频/1967120522687418370.json, 视频生成/图生视频/1967414406411849730.json, 视频生成/图生视频/1952313682334298114.json, 视频生成/图生视频/1955569910405632001.json, 视频生成/文生视频/1955636533911961602.json, 视频生成/文生视频/1955577936088895489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_31
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/AI数字人-动物_2084929827878031362.json、视频生成/图生视频/1997484530254680066.json、视频生成/图生视频/1987166609188040706.json、视频生成/图生视频/2071856835908427777.json、视频生成/图生视频/2072507975016738818.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1967630576679358465.json、视频生成/图生视频/1991002919573102593.json、视频生成/图生视频/1968580959744479233.json、视频生成/图生视频/1955641756994846722.json、视频生成/图生视频/1958079800877469697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 12 个 workflow 都包含：
+- `CR Text`
+- `INTConstant`
+- `ImpactInt`
+- `LoadWanVideoT5TextEncoder`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/11 个有
-- `WanVideoLoraSelect` —— 10/11 个有
-- `Audio Duration` —— 6/11 个有
-- `ComfyMathExpression` —— 6/11 个有
-- `Wav2VecModelLoader` —— 6/11 个有
-- `AudioCrop` —— 5/11 个有
-- `AudioSeparation` —— 5/11 个有
-- `DownloadAndLoadWav2VecModel` —— 5/11 个有
-- `LogicUtil_CeilNode` —— 4/11 个有
-- `CR Prompt Text` —— 3/11 个有
-- `JWInteger` —— 3/11 个有
-- `SimpleMath+` —— 2/11 个有
-- `INTConstant` —— 1/11 个有
-- `Int` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
-- `VHS_LoadVideo` —— 1/11 个有
-- `WanVideoLoraSelectMulti` —— 1/11 个有
-- `WanVideoTorchCompileSettings` —— 1/11 个有
-- `easy showAnything` —— 1/11 个有
+- `GetImageSizeAndCount` —— 10/12 个有
+- `ImageResizeKJv2` —— 10/12 个有
+- `LoadImage` —— 10/12 个有
+- `WanVideoImageToVideoEncode` —— 10/12 个有
+- `WanVideoLoraSelect` —— 7/12 个有
+- `WanVideoSetLoRAs` —— 7/12 个有
+- `WanVideoLoraSelectMulti` —— 5/12 个有
+- `easy cleanGpuUsed` —— 4/12 个有
+- `WanVideoContextOptions` —— 3/12 个有
+- `Note Plus (mtb)` —— 2/12 个有
+- `WanVideoEmptyEmbeds` —— 2/12 个有
+- `CreateCFGScheduleFloatList` —— 1/12 个有
+- `CreateVideo` —— 1/12 个有
+- `ImageConcanate` —— 1/12 个有
+- `ImageResizeKJ` —— 1/12 个有
+- `PreViewVideo` —— 1/12 个有
 
 ## 典型参数
 

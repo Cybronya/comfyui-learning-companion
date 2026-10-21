@@ -3,89 +3,53 @@ name: unknown_workflow_video_upscale_latent_upscale_142
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.513
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, Float, GetNode, ImageScaleBy, Int, Int to String, InversionDemoLazySwitch, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SetNode, StringFunction|pysssss, Text, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.694
+common_nodes: [BasicGuider, BasicScheduler, ExtendIntermediateSigmas, FlashVSRNode, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/图生视频/2054885295354589185.json, 视频生成/图生视频/2054112708936650753.json]
+members: [视频生成/图生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json, 视频生成/文生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_142
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2054885295354589185.json、视频生成/图生视频/2054112708936650753.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json、视频生成/文生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `Float`
+- `BasicGuider`
+- `BasicScheduler`
+- `ExtendIntermediateSigmas`
+- `FlashVSRNode`
 - `GetNode`
-- `ImageScaleBy`
-- `Int`
-- `Int to String`
-- `InversionDemoLazySwitch`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `Seed (rgthree)`
 - `SetNode`
-- `StringFunction|pysssss`
-- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `AudioInfo` —— 1/2 个有
-- `CM_FloatToInt` —— 1/2 个有
-- `LTXFloatToInt` —— 1/2 个有
-- `LTXVAudioVAEDecode` —— 1/2 个有
-- `LTXVAudioVAEEncode` —— 1/2 个有
-- `LTXVEmptyLatentAudio` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MathExpression_UTK` —— 1/2 个有
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `SolidMask` —— 1/2 个有
+- `easy anythingIndexSwitch`
+- `easy ifElse`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | - | 1 | 100% |
-| 高度 | 25 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

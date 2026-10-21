@@ -3,31 +3,33 @@ name: unknown_workflow_generic_765
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.833
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartVideoSImageToVideo, RH_RhartVideoSTextToVideo, SaveVideo]
+coverage: 0.714
+common_nodes: [CR Text, Dapao_LlamaChat, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage, easy showAnything, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能文＆图生视频S-0.08元_次_支持15s_横竖屏自选_2036612302702649346.json, 视频生成/文生视频/全能视频S-0.08元_次_2036269308032065538.json]
+members: [图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变_真香_的高清文生图海报设计多种风格_2066072969440485377.json, 图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变真香的高清文生图海报设计多种风格_2069038840697937921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_765
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能文＆图生视频S-0.08元_次_支持15s_横竖屏自选_2036612302702649346.json、视频生成/文生视频/全能视频S-0.08元_次_2036269308032065538.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变_真香_的高清文生图海报设计多种风格_2066072969440485377.json、图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变真香的高清文生图海报设计多种风格_2069038840697937921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `RH_RhartVideoSImageToVideo`
-- `RH_RhartVideoSTextToVideo`
-- `SaveVideo`
+- `CR Text`
+- `Dapao_LlamaChat`
+- `PrimitiveInt`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
+- `easy showAnything`
+- `easy textSwitch`
 
 ## 典型参数
 

@@ -2,70 +2,76 @@
 name: unknown_workflow_video_lora_sampler_520
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.703
-common_nodes: [ImpactSwitch, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveInt, PrimitiveStringMultiline, RH_LLMAPI_NODE, ShowText|pysssss, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.485
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, FL_RIFE, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPassThrough, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PlaySound|pysssss, PreviewAny, PreviewAudio, PreviewImage, SetNode, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, WujiAudioLoader, easy cleanGpuUsed, easy getNode, easy int, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model]
 problems: []
 missing: []
-members: [视频生成/图生视频/1954023918736855041.json, 视频生成/图生视频/1952256556761034753.json, 视频生成/图生视频/1972595555933302785.json, 视频生成/文生视频/1953992083726225410.json]
+members: [视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102709527157231617.json, 视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102729176808775681.json, 视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频_2103038735767138305.json, 视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频「9.19」_2050600975479648258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_520
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1954023918736855041.json、视频生成/图生视频/1952256556761034753.json、视频生成/图生视频/1972595555933302785.json、视频生成/文生视频/1953992083726225410.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102709527157231617.json、视频生成/图生视频/Wan2.2 自动反推 Remix3.0 图生视频_2102729176808775681.json、视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频_2103038735767138305.json、视频生成/图生视频/❽「Wan2.2」自动反推 Remix3.0 图生视频「9.19」_2050600975479648258.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **可信度**：强结论
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImpactSwitch`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `FL_RIFE`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `MathExpression|pysssss`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_NODE`
-- `ShowText|pysssss`
+- `ModelPassThrough`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `PathchSageAttentionKJ`
+- `PlaySound|pysssss`
+- `PreviewAny`
+- `PreviewAudio`
+- `PreviewImage`
+- `SetNode`
+- `SomethingToString`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `Text Concatenate` —— 3/4 个有
-- `WanVideoImageToVideoEncode` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `CreateCFGScheduleFloatList` —— 2/4 个有
-- `DF_Int_to_Float` —— 2/4 个有
-- `FloatToSigmas` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `StringToFloatList` —— 2/4 个有
-- `CLIPVisionLoader` —— 1/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `WanVideoClipVisionEncode` —— 1/4 个有
-- `WanVideoEmptyEmbeds` —— 1/4 个有
-- `WanVideoLoraSelectMulti` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `WanMoeKSampler`
+- `WujiAudioLoader`
+- `easy cleanGpuUsed`
+- `easy getNode`
+- `easy int`
+- `easy setNode`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_unload_model`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | 1 | 1 - 1 | 4 | 100% |
+| 重绘幅度 | res_multistep | - | 4 | 100% |
 
 ## 常见问题
 
@@ -73,4 +79,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 res_multistep，4 个样本，一致性 100%

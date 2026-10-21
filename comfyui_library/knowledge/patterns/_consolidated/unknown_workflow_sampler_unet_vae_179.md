@@ -2,72 +2,66 @@
 name: unknown_workflow_sampler_unet_vae_179
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.773333
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, RH_LLMAPI_NODE, SaveAudioMP3, Text Multiline, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
-missing: []
-members: [音频生成/音频生成/Ai音乐-评分超过Suno V5！-Acestep-xl-turbo音乐歌曲生成-输入主题-自动生成歌曲_2043176701164789761.json, 音频生成/音频生成/ace1.5音乐歌曲生成-自动生成歌词和风格-速度快_2019064388140933122.json, 音频生成/音频生成/ace1.5音乐歌曲生成-自动生成歌词和风格_2021322986116096002.json]
+level: moderate
+coverage: 0.807667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageFromBatch, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3BlockCacheT8, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy MiniMaxH3ReferenceToVideoBridge]
+problems: []
+missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, easy MiniMaxH3ReferenceToVideoBridge]
+members: [图片生成/图生图/2086058472554196994.json, 数字人/数字人/图像编辑+文生图 MiniMaxH3  更真实更好的一致性_2094792515420516353.json, 数字人/数字人/海螺 H3 图像编辑+文生图 高还原度_2094805922773295105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_179
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Ai音乐-评分超过Suno V5！-Acestep-xl-turbo音乐歌曲生成-输入主题-自动生成歌曲_2043176701164789761.json、音频生成/音频生成/ace1.5音乐歌曲生成-自动生成歌词和风格-速度快_2019064388140933122.json、音频生成/音频生成/ace1.5音乐歌曲生成-自动生成歌词和风格_2021322986116096002.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2086058472554196994.json、数字人/数字人/图像编辑+文生图 MiniMaxH3  更真实更好的一致性_2094792515420516353.json、数字人/数字人/海螺 H3 图像编辑+文生图 高还原度_2094805922773295105.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `RH_LLMAPI_NODE`
-- `SaveAudioMP3`
-- `Text Multiline`
-- `TextEncodeAceStepAudio1.5`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageFromBatch`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `MiniMaxH3BlockCacheT8`
+- `MiniMaxH3ImageToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `easy MiniMaxH3ReferenceToVideoBridge`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `MultiTextConcatenate` —— 1/3 个有
-- `RH_Utils` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `TextConcatenator` —— 1/3 个有
+- `CLIPTextEncode` —— 2/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `EmptyMiniMaxH3LatentAV` —— 2/3 个有
+- `FluxGuidance` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `ScheduledCFGGuidance` —— 2/3 个有
+- `easy imageColorMatch` —— 2/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: ImageScaleByAspectRatio V2、easy MiniMaxH3ReferenceToVideoBridge

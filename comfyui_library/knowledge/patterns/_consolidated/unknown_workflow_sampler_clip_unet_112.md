@@ -1,62 +1,54 @@
 ---
 name: unknown_workflow_sampler_clip_unet_112
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9175
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, INTConstant, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, PreviewAny, PreviewImage, RH_CinematicVideoGenerator, RH_Translator, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveVideo, Text Multiline, TextCombinerSix, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.933333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2034904305618132994.json, 视频生成/文生视频/提示词扩写+真人角色绕审核超能视频2.0测试版工作流_2034202086610575362.json]
+missing: [CR Multiline Text, easy seed, CR Prompt List]
+members: [图片生成/文生图/1950943932404400129.json, 图片生成/文生图/1950966820087988225.json, 图片生成/文生图/1951056396223754242.json, 图片生成/文生图/1951072076297908225.json, 图片生成/文生图/1951100464836321282.json, 图片生成/文生图/1951122744584904705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_112
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2034904305618132994.json、视频生成/文生视频/提示词扩写+真人角色绕审核超能视频2.0测试版工作流_2034202086610575362.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1950943932404400129.json、图片生成/文生图/1950966820087988225.json、图片生成/文生图/1951056396223754242.json、图片生成/文生图/1951072076297908225.json、图片生成/文生图/1951100464836321282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `INTConstant`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `RH_CinematicVideoGenerator`
-- `RH_Translator`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Text Multiline`
-- `TextCombinerSix`
-- `TextGenerateLTX2Prompt`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `MuyeTextEditOutput` —— 1/2 个有
-- `RH_SeedanceVideoRefToVideo` —— 1/2 个有
+- `CR Prompt List` —— 2/6 个有
+- `CFGZeroStarAndInit` —— 1/6 个有
+- `CR Multiline Text` —— 1/6 个有
+- `DifferentialDiffusion` —— 1/6 个有
+- `easy seed` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -64,4 +56,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Multiline Text、easy seed、CR Prompt List

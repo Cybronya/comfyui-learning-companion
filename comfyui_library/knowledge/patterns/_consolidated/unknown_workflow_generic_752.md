@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [RH_RhartVideoV31FastOfficialTextToVideo, SaveVideo]
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/RhartVideoV31FastOfficialTextToVideo_2038487029238992898.json, 视频生成/文生视频/全能视频V3.1-fast-文生视频-官方稳定版_2028701652261277697.json]
+members: [图片生成/文生图/1930264640733790209.json, 图片生成/文生图/1943139855897681921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_752
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RhartVideoV31FastOfficialTextToVideo_2038487029238992898.json、视频生成/文生视频/全能视频V3.1-fast-文生视频-官方稳定版_2028701652261277697.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1930264640733790209.json、图片生成/文生图/1943139855897681921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,8 +23,13 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartVideoV31FastOfficialTextToVideo`
-- `SaveVideo`
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `ACE_TextTranslate` —— 1/2 个有
+- `Comfly_Flux_Kontext` —— 1/2 个有
 
 ## 典型参数
 

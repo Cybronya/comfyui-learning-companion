@@ -1,33 +1,38 @@
 ---
 name: unknown_workflow_generic_426
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.889
-common_nodes: [RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.9475
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json, 图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json, 图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json]
+members: [视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json, 视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json, 视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_426
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json、图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json、图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json、视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json、视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_RhartImageG25SunburstTextToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/3 个有
+- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 3/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 1/4 个有
 
 ## 典型参数
 

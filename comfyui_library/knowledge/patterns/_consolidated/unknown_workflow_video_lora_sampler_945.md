@@ -3,56 +3,62 @@ name: unknown_workflow_video_lora_sampler_945
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8805
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.8505
+common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), ImageBatchConcatNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextLoadLatent, MiniMaxH3MotionContextSaveLatent, MiniMaxH3MotionContextTrim, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy int, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/文生视频/SteadyDancer视频风格化转绘_1998364456965038082.json, 视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json]
+members: [视频生成/文生视频/MiniMax+H3+多参上下文一镜到底_2087872879705808897.json, 视频生成/文生视频/MiniMax+H3+首帧上下文连续长镜头_2087561493293395970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_945
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/SteadyDancer视频风格化转绘_1998364456965038082.json、视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax+H3+多参上下文一镜到底_2087872879705808897.json、视频生成/文生视频/MiniMax+H3+首帧上下文连续长镜头_2087561493293395970.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `AudioConcat`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBatchConcatNode`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextLoadLatent`
+- `MiniMaxH3MotionContextSaveLatent`
+- `MiniMaxH3MotionContextTrim`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `ShowText|pysssss`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy int`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 1/2 个有
-- `OnnxDetectionModelLoader` —— 1/2 个有
-- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `MiniMaxH3ImageToVideo` —— 1/2 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
+- `ZML_AnyTypeSwitchFive` —— 1/2 个有
 
 ## 典型参数
 

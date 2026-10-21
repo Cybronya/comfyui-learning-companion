@@ -3,32 +3,29 @@ name: unknown_workflow_generic_675
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5
-common_nodes: [Comfly_api_set, LoadImage, OpenAI_Sora_API, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.9
+common_nodes: [ByteDanceFirstLastFrameNode, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1974926928673157122.json, 视频生成/文生视频/(API版-贞贞工坊)全能视频S 10秒版文_图生视频（支持横版_竖版_HD版）_1974926928673157122.json]
+members: [comfyui-workflow-templates-json/api_bytedance_flf2v.json, comfyui-workflow-templates-json/api_bytedance_seedance1_5_flf2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_675
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1974926928673157122.json、视频生成/文生视频/(API版-贞贞工坊)全能视频S 10秒版文_图生视频（支持横版_竖版_HD版）_1974926928673157122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_flf2v.json、comfyui-workflow-templates-json/api_bytedance_seedance1_5_flf2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Comfly_api_set`
+- `ByteDanceFirstLastFrameNode`
 - `LoadImage`
-- `OpenAI_Sora_API`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `SaveVideo`
 
 ## 典型参数
 

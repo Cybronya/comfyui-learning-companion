@@ -1,58 +1,49 @@
 ---
 name: unknown_workflow_upscale_sampler_unet_2
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.905
-common_nodes: [CLIPLoader, CR Text, CR Text Concatenate, EmptyLatentImage, ImageScale, KSampler, PreviewImage, QZ_ResolutionPreset, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMathDual+, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy seed]
+frequency: 7
+level: moderate
+coverage: 0.830714
+common_nodes: [SaveImage, UNETLoader, VAELoader, WujiSampler, WujiUpscaler]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen-Image-2.1_场景4K_2104846279191908354.json, 图片生成/文生图/Qwen-Image-2.1_场景4K_2104852149804036097.json, 图片生成/文生图/Qwen-Image-2.1_场景4K_2104856521967493121.json, 图片生成/文生图/Qwen-Image-2.1_场景4K_2105190125805334530.json, 图片生成/文生图/Qwen-Image-2.1_场景4K_2105192484572844034.json]
+members: [图片生成/文生图/SeeDance 2.0 AI短剧漫剧工具：超真实感资产角色库Z-image红潮ZIB模型_2027965293011668994.json, 图片生成/文生图/Z-image+SeedVR2.5.1去AI味文生图超真实的人像特写真实肤感_1993880352085180418.json, 图片生成/文生图/Z-imageZIB+SeedVR2.5.12超真实感定妆照文生图_2020713134440325121.json, 图片生成/文生图/搭配SeeDance 2.0AI短剧漫剧专用超真实感角色卡Z-image ZIB模型_2026489804094967809.json, 图片生成/文生图/角色生成Z-imageZIB模型_2027227031502594050.json, 图片生成/文生图/超真实感角色生成_2026421665776799746.json, 视频生成/图生视频/2031840551896621057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-2.1_场景4K_2104846279191908354.json、图片生成/文生图/Qwen-Image-2.1_场景4K_2104852149804036097.json、图片生成/文生图/Qwen-Image-2.1_场景4K_2104856521967493121.json、图片生成/文生图/Qwen-Image-2.1_场景4K_2105190125805334530.json、图片生成/文生图/Qwen-Image-2.1_场景4K_2105192484572844034.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/SeeDance 2.0 AI短剧漫剧工具：超真实感资产角色库Z-image红潮ZIB模型_2027965293011668994.json、图片生成/文生图/Z-image+SeedVR2.5.1去AI味文生图超真实的人像特写真实肤感_1993880352085180418.json、图片生成/文生图/Z-imageZIB+SeedVR2.5.12超真实感定妆照文生图_2020713134440325121.json、图片生成/文生图/搭配SeeDance 2.0AI短剧漫剧专用超真实感角色卡Z-image ZIB模型_2026489804094967809.json、图片生成/文生图/角色生成Z-imageZIB模型_2027227031502594050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CR Text`
-- `CR Text Concatenate`
-- `EmptyLatentImage`
-- `ImageScale`
-- `KSampler`
-- `PreviewImage`
-- `QZ_ResolutionPreset`
+全部 7 个 workflow 都包含：
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMathDual+`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `easy seed`
+- `WujiSampler`
+- `WujiUpscaler`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPLoader` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `RHHiddenNodes` —— 6/7 个有
+- `ShowText|pysssss` —— 6/7 个有
+- `WujiCleaner` —— 5/7 个有
+- `WujiEditor` —— 4/7 个有
+- `WujiQwenEditor` —— 3/7 个有
+- `Int` —— 2/7 个有
+- `CLIPLoaderGGUF` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 2048 | 2048 - 2048 | 5 | 100% |
-| 高度 | 1152 | 1152 - 1152 | 5 | 100% |
-| 采样步数 | 25 | 25 - 25 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,10 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 2048，观测区间 2048 - 2048，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1152，观测区间 1152 - 1152，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,35 +3,31 @@ name: unknown_workflow_generic_764
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [CreateVideo, Fast Groups Bypasser (rgthree), GetVideoComponents, LoadImage, LoadVideo, RH_RhartVideoGImageToVideo, RH_RhartVideoGTextToVideo, RTXVideoSuperResolution, SaveVideo]
+coverage: 0.9
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, TextInput_]
 problems: []
-missing: []
-members: [视频生成/文生视频/全能图生＆文生视频  可生成6~30秒 0.03元_秒_2045072922934513666.json, 视频生成/文生视频/全能视频X  图生视频+文生视频  价渠道版 可生成30秒_2036665170331701249.json]
+missing: [LayerUtility: ImageScaleByAspectRatio V2]
+members: [图片生成/文生图/1991696350530334722.json, 图片生成/文生图/全能图片V1 Pro双图编辑_1993152726519529474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_764
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能图生＆文生视频  可生成6~30秒 0.03元_秒_2045072922934513666.json、视频生成/文生视频/全能视频X  图生视频+文生视频  价渠道版 可生成30秒_2036665170331701249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1991696350530334722.json、图片生成/文生图/全能图片V1 Pro双图编辑_1993152726519529474.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoGImageToVideo`
-- `RH_RhartVideoGTextToVideo`
-- `RTXVideoSuperResolution`
-- `SaveVideo`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `TextInput_`
 
 ## 典型参数
 
@@ -43,4 +39,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

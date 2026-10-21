@@ -3,72 +3,74 @@ name: unknown_workflow_video_lora_sampler_503
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.86375
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, wanBlockSwap]
+coverage: 0.467
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042258477560631298.json, 视频生成/图生视频/2033421738389803009.json, 视频生成/图生视频/2009656283015684097.json, 视频生成/图生视频/2003358593732771842.json]
+members: [视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json, 视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json, 视频生成/图生视频/minimax_H3_文戏工作流急速版_2107639659634454529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_503
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2042258477560631298.json、视频生成/图生视频/2033421738389803009.json、视频生成/图生视频/2009656283015684097.json、视频生成/图生视频/2003358593732771842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json、视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json、视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json、视频生成/图生视频/minimax_H3_文戏工作流急速版_2107639659634454529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageLoader`
-- `ImageResizeKJv2`
-- `Int`
-- `KSamplerAdvanced`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `MultiplePathsInput` —— 3/4 个有
-- `Qwen3_VQA` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `CR Text Replace` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `Pick From Batch (mtb)` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ImageResize+` —— 1/4 个有
-- `LoadVideo` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ExtendIntermediateSigmas` —— 3/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `MiniMaxH3SigmaShift` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `BlockSparseAttention` —— 1/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `H3SigmaRefiner` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LoraLoaderBypassModelOnly` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
+- `ModelPreviewOverrideKJ` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 4 | 4 - 8 | 4 | 65% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | normal | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,8 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，4 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 normal，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

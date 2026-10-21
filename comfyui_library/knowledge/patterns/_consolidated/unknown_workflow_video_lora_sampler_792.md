@@ -3,58 +3,72 @@ name: unknown_workflow_video_lora_sampler_792
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9095
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.665
+common_nodes: [Anything Everywhere3, Bjornulf_AnythingToText, CLIPVisionLoader, CR Simple Text Watermark, Compare, FL_PromptSelector, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveInt, PrimitiveStringMultiline, RegexReplace, RepeatImageBatch, SetNode, ShowText|pysssss, TextSplitByDelimiterEnhanced, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy lengthAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail2 TTP迁移替换二合一_2073616652327018497.json, 视频生成/图生视频/2073067673981898754.json]
+members: [视频生成/图生视频/1986031148419743745.json, 视频生成/图生视频/1985646905449488386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_792
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Scail2 TTP迁移替换二合一_2073616652327018497.json、视频生成/图生视频/2073067673981898754.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1986031148419743745.json、视频生成/图生视频/1985646905449488386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
+- `Anything Everywhere3`
+- `Bjornulf_AnythingToText`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
+- `CR Simple Text Watermark`
+- `Compare`
+- `FL_PromptSelector`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RegexReplace`
+- `RepeatImageBatch`
+- `SetNode`
 - `ShowText|pysssss`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `TextSplitByDelimiterEnhanced`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy lengthAnything`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `SCAIL2AlignReferenceFaceToCrop` —— 1/2 个有
-- `SCAIL2ChunkKeyframeExtractor` —— 1/2 个有
-- `SCAIL2FaceCompositeBack` —— 1/2 个有
-- `SCAIL2HeadTrackCrop` —— 1/2 个有
-- `SCAIL2KeyframeMatrixViewer` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `InvertMask` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

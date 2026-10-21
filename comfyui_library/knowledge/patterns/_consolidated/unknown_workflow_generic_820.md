@@ -3,37 +3,31 @@ name: unknown_workflow_generic_820
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6485
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSTrain, FB_Qwen3TTSVoiceClone, PreviewAny, PreviewAudio, RHUploadZip_V2, SaveAudio]
+coverage: 1
+common_nodes: [CreateVideo, LatentSyncNode, LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen TTS音频训练及生成V1_2016917327547207682.json, 音频生成/音频生成/Qwen3-TTS 音色训练(微调)_2017147809501290497.json]
+members: [数字人/数字人/数字人口播-形象视频工作流_2094587946639908866.json, 数字人/数字人/数字人口播Pro-高清形象视频工作流_2094598286400380929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_820
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen TTS音频训练及生成V1_2016917327547207682.json、音频生成/音频生成/Qwen3-TTS 音色训练(微调)_2017147809501290497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/数字人口播-形象视频工作流_2094587946639908866.json、数字人/数字人/数字人口播Pro-高清形象视频工作流_2094598286400380929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSTrain`
-- `FB_Qwen3TTSVoiceClone`
-- `PreviewAny`
-- `PreviewAudio`
-- `RHUploadZip_V2`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CreateVideo`
+- `LatentSyncNode`
+- `LoadAudio`
+- `LoadImage`
+- `SaveVideo`
 
 ## 典型参数
 

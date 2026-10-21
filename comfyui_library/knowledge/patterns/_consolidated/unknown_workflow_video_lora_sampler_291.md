@@ -1,60 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_291
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.74725
-common_nodes: [GetNode, LoadWanVideoT5TextEncoder, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetRadialAttention, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy globalSeed, easy seed]
+coverage: 0.975
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [String Literal, easy globalSeed, easy seed]
-members: [视频生成/文生视频/1959889034724192257.json, 视频生成/文生视频/1963202515145822209.json, 视频生成/文生视频/1965038292615970818.json, 视频生成/文生视频/1965041345570197506.json, 视频生成/文生视频/MiniCPM反推+Wan2.2文生视频_2072999609892642816.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_2072999587365036032.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速V2_2072999587830603776.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速_2072999631145181184.json]
+missing: []
+members: [数字人/数字人/infinitetalk-数字人_2101888402827337730.json, 视频生成/图生视频/1957952304787898369.json, 视频生成/图生视频/1957826997610446849.json, 视频生成/图生视频/1971453748994359297.json, 视频生成/图生视频/1958085210749415426.json, 视频生成/图生视频/1940924821561884673.json, 视频生成/图生视频/1941378778566389761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_291
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/1959889034724192257.json、视频生成/文生视频/1963202515145822209.json、视频生成/文生视频/1965038292615970818.json、视频生成/文生视频/1965041345570197506.json、视频生成/文生视频/MiniCPM反推+Wan2.2文生视频_2072999609892642816.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/infinitetalk-数字人_2101888402827337730.json、视频生成/图生视频/1957952304787898369.json、视频生成/图生视频/1957826997610446849.json、视频生成/图生视频/1971453748994359297.json、视频生成/图生视频/1958085210749415426.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `GetNode`
+全部 7 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `String Literal`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSetRadialAttention`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy globalSeed`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEmptyEmbeds` —— 6/8 个有
-- `FloatToSigmas` —— 4/8 个有
-- `StringToFloatList` —— 4/8 个有
-- `WanVideoScheduler` —— 4/8 个有
-- `WanVideoSigmaToStep` —— 4/8 个有
-- `AILab_MiniCPM_4_V` —— 2/8 个有
-- `ImageResizeKJv2` —— 2/8 个有
-- `LoadImage` —— 2/8 个有
-- `LoadVideo` —— 2/8 个有
-- `ShowText` —— 2/8 个有
-- `WanVideoImageToVideoEncode` —— 2/8 个有
+- `AudioCrop` —— 6/7 个有
+- `AudioSeparation` —— 6/7 个有
+- `LoadAudio` —— 6/7 个有
+- `ImageResizeKJv2` —— 5/7 个有
+- `PreviewAudio` —— 5/7 个有
+- `SeparateMasks` —— 5/7 个有
+- `MathExpression|pysssss` —— 4/7 个有
+- `INTConstant` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `MaskPreview` —— 2/7 个有
+- `MaskPreview+` —— 2/7 个有
+- `StringToInt` —— 2/7 个有
+- `Bjornulf_ShowFloat` —— 1/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `CM_FloatToInt` —— 1/7 个有
+- `IndexTTSRun` —— 1/7 个有
+- `JWFloat` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `SaveAudio` —— 1/7 个有
+- `String Literal` —— 1/7 个有
+- `VHS_LoadAudioUpload` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 
@@ -66,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、easy globalSeed、easy seed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

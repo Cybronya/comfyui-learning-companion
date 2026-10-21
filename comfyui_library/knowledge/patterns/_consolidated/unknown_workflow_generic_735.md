@@ -3,43 +3,48 @@ name: unknown_workflow_generic_735
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.571
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, Comfly_sora2_character, Fast Groups Bypasser (rgthree), LoadImage, MuyeLoadImage, PreviewAny, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana_Image2Image, RH_Sora2_T2V, RH_Translator, SaveVideo, ShellAgentPluginOutputText, easy showAnything, preview_text]
+coverage: 0.8
+common_nodes: [Any To String (mtb), Bjornulf_CombineTexts, Bjornulf_ShowInt, ComfyMathExpression, ImageScaleToTotalPixels, Int, IntToText, PreviewAny, PreviewImage, PrimitiveBoolean, RHBatchImages:, RHExtractImage, RHLLMChatNode, RHUploadZip, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageCount]
 problems: []
-missing: []
-members: [视频生成/图生视频/1993577002150150146.json, 视频生成/文生视频/自动AI短剧工具合集V2(角色创建与生成分镜视频)_1993577002150150146.json]
+missing: [Any To String (mtb), RHBatchImages:, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageCount]
+members: [图片生成/图生图/2085349994269331457.json, 数字人/数字人/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_735
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1993577002150150146.json、视频生成/文生视频/自动AI短剧工具合集V2(角色创建与生成分镜视频)_1993577002150150146.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2085349994269331457.json、数字人/数字人/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_sora2`
-- `Comfly_sora2_character`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `MuyeLoadImage`
+- `Any To String (mtb)`
+- `Bjornulf_CombineTexts`
+- `Bjornulf_ShowInt`
+- `ComfyMathExpression`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `IntToText`
 - `PreviewAny`
 - `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Sora2_T2V`
-- `RH_Translator`
-- `SaveVideo`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
-- `preview_text`
+- `PrimitiveBoolean`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHLLMChatNode`
+- `RHUploadZip`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Text`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy imageCount`
 
 ## 典型参数
 
@@ -51,4 +56,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：Any To String (mtb)、RHBatchImages:、easy batchAnything、easy forLoopEnd、easy forLoopStart
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

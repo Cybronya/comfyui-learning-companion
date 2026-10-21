@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_215
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.5594
-common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V, SaveVideo, Text Concatenate, easy showAnything]
+coverage: 0.919
+common_nodes: [CR Text, LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
-missing: [Text Concatenate, CR Prompt Text]
-members: [图片生成/文生图/1973774958298009601.json, 视频生成/图生视频/1973570458102665218.json, 视频生成/图生视频/1973594617805451266.json, 视频生成/图生视频/1973774958298009601.json, 视频生成/文生视频/1973594617805451266.json]
+missing: []
+members: [视频生成/图生视频/1998655213177331713.json, 视频生成/图生视频/1978700922345902081.json, 视频生成/图生视频/1974997082266275841.json, 视频生成/图生视频/1996557884752281601.json, 视频生成/图生视频/1994710293764841473.json, 视频生成/图生视频/1983514033917763585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_215
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1973774958298009601.json、视频生成/图生视频/1973570458102665218.json、视频生成/图生视频/1973594617805451266.json、视频生成/图生视频/1973774958298009601.json、视频生成/文生视频/1973594617805451266.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1998655213177331713.json、视频生成/图生视频/1978700922345902081.json、视频生成/图生视频/1974997082266275841.json、视频生成/图生视频/1996557884752281601.json、视频生成/图生视频/1994710293764841473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
+全部 6 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
 - `RH_Sora2_I2V`
 - `SaveVideo`
-- `Text Concatenate`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_T2V` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `ImpactSwitch` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
+- `PreviewTextNode` —— 1/6 个有
+- `ttN concat` —— 1/6 个有
 
 ## 典型参数
 
@@ -46,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Concatenate、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

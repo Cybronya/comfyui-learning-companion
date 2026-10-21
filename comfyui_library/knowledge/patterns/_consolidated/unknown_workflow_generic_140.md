@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_140
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.969857
-common_nodes: [LoadAudio, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
+coverage: 0.977375
+common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/(600种语言-支持方言-支持跨语言)OmniVoice双人对话_2041435267776651265.json, 音频生成/音频生成/LongCat-AudioDiT语音克隆_2056284486660345857.json, 音频生成/音频生成/OmniVoice双人对话_2044613780373508098.json, 音频生成/音频生成/OmniVoice双人对话_2046456542991491074.json, 音频生成/音频生成/OmniVoice双人对话版语音克隆生成器：600种语言-支持方言-支持跨语言_2041740888291938306.json, 音频生成/音频生成/OmniVoice声音克隆(支持600种语言-支持方言)OmniVoice双人对话_2041478774998441985.json, 音频生成/音频生成/声音clone_2056654266353410050.json]
+members: [视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json, 视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json, 视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json, 视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json, 视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json, 视频生成/文生视频/Seedance2.0全能参考视频_2043901748414259202.json, 视频生成/文生视频/seedance2.0_2043171204051247105.json, 视频生成/文生视频/万象AI+RH地表最强超能视频2.0_全能参考 生真人视频_2038582212496461825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_140
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言-支持跨语言)OmniVoice双人对话_2041435267776651265.json、音频生成/音频生成/LongCat-AudioDiT语音克隆_2056284486660345857.json、音频生成/音频生成/OmniVoice双人对话_2044613780373508098.json、音频生成/音频生成/OmniVoice双人对话_2046456542991491074.json、音频生成/音频生成/OmniVoice双人对话版语音克隆生成器：600种语言-支持方言-支持跨语言_2041740888291938306.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json、视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json、视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json、视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json、视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `LoadAudio`
-- `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudio`
+- `LoadImage`
+- `LoadVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 6/7 个有
-- `OmniVoiceMultiSpeakerTTS` —— 5/7 个有
-- `AudioCrop` —— 2/7 个有
-- `LongCatVoiceCloneTTS` —— 2/7 个有
-- `NormalizeAudioLoudness` —— 2/7 个有
-- `easy showAnything` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `Primitive string multiline [Crystools]` —— 1/8 个有
 
 ## 典型参数
 

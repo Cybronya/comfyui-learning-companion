@@ -3,31 +3,35 @@ name: unknown_workflow_generic_873
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.798
-common_nodes: [LoadAudio, LoadImage, MegaTTS3Run, SaveAudioMP3, Text Multiline]
+coverage: 0.944
+common_nodes: [CR Text, LoadImage, PreviewTextNode, RH_LLMAPI_Pro_Node, ShellAgentPluginOutputText, Text Multiline, TextPreview, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/一句话2人说声音模仿+跨语言+修复音频）王改革_2001644951907758082.json, 音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）王改革_2001682249609297922.json]
+members: [视频生成/图生视频/2045054526599729153.json, 视频生成/图生视频/2043158105994829826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_873
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/一句话2人说声音模仿+跨语言+修复音频）王改革_2001644951907758082.json、音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）王改革_2001682249609297922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2045054526599729153.json、视频生成/图生视频/2043158105994829826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
+- `CR Text`
 - `LoadImage`
-- `MegaTTS3Run`
-- `SaveAudioMP3`
+- `PreviewTextNode`
+- `RH_LLMAPI_Pro_Node`
+- `ShellAgentPluginOutputText`
 - `Text Multiline`
+- `TextPreview`
+- `easy saveText`
+- `easy showAnything`
 
 ## 典型参数
 

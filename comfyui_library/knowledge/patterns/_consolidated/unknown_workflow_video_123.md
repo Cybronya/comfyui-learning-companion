@@ -3,35 +3,39 @@ name: unknown_workflow_video_123
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7065
-common_nodes: [AILab_MiniCPM_4_V_Advanced, HunyuanVideoFoley, MathExpression|pysssss, VHS_LoadVideo, VHS_VideoCombine, easy showAnything]
+coverage: 0.825
+common_nodes: [GetVideoComponents, HunyuanVideoFoley, LayerUtility: PurgeVRAM V2, LoadVideo, RHHiddenNodes, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/混元Foley 生成音效 配音_2049378866988322818.json, 音频生成/音频生成/混元视频配音 floey_1962050989266288641.json]
+members: [音频生成/音频生成/最强混元Foley视频自动音效+MiniCPM4.5视觉反推_1962885773810970625.json, 音频生成/音频生成/最强视频反推混元Foley视频自动音效+Qwen3VL+LLM自动扩词_1985906304566927362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_123
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/混元Foley 生成音效 配音_2049378866988322818.json、音频生成/音频生成/混元视频配音 floey_1962050989266288641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强混元Foley视频自动音效+MiniCPM4.5视觉反推_1962885773810970625.json、音频生成/音频生成/最强视频反推混元Foley视频自动音效+Qwen3VL+LLM自动扩词_1985906304566927362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_MiniCPM_4_V_Advanced`
+- `GetVideoComponents`
 - `HunyuanVideoFoley`
-- `MathExpression|pysssss`
-- `VHS_LoadVideo`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadVideo`
+- `RHHiddenNodes`
 - `VHS_VideoCombine`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveText` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 

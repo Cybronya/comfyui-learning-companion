@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_414
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.818
-common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Text, easy promptConcat, easy promptLine, easy showAnything]
+coverage: 0.82425
+common_nodes: [LoadImage, RH_Translator, RH_Veo3_Image2Video, SaveVideo, ShowText|pysssss]
 problems: []
-missing: [easy promptConcat, easy promptLine]
-members: [图片生成/反推提示词/全自动电商出详情只提示_2106391913095061506.json, 图片生成/图生图/2102301912535232513.json, 数字人/数字人/电商详情页生成直出10张_2102684851412492289.json]
+missing: []
+members: [视频生成/图生视频/2003989297176977410.json, 视频生成/图生视频/2003836300581060609.json, 视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json, 视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_414
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/全自动电商出详情只提示_2106391913095061506.json、图片生成/图生图/2102301912535232513.json、数字人/数字人/电商详情页生成直出10张_2102684851412492289.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2003989297176977410.json、视频生成/图生视频/2003836300581060609.json、视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json、视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
 - **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `Text`
-- `easy promptConcat`
-- `easy promptLine`
-- `easy showAnything`
+- `RH_Translator`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `ShowText` —— 2/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `SimplePromptBatcher` —— 1/3 个有
-- `easy saveText` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 
@@ -50,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：easy promptConcat、easy promptLine
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

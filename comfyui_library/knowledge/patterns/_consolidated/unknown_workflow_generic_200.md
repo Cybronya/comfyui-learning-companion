@@ -3,17 +3,17 @@ name: unknown_workflow_generic_200
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.942
-common_nodes: [Int, JjkText, LoadAudio, Note _O, SaveAudio, SparkTTSClone, SparkTTSRun, easy anythingIndexSwitch]
+coverage: 0.9445
+common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json, 音频生成/音频生成/文本转语音-克隆_1944291353318555649.json, 音频生成/音频生成/语音克隆_文本转语音工作流-两个功能_2040153394723168257.json]
+members: [图片生成/文生图/aidir-文生图-全能图片V2_2069345184462237697.json, 图片生成/文生图/全能图片V2-文生_2065069414512422913.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2082351116393738241.json, 图片生成/文生图/全能图片V2-文生图-低价渠道版_2061685025090924545.json, 图片生成/文生图/全能图片V2-文生图_2066896721665417218.json, 图片生成/文生图/文生图-全能图片V2_2067782403392888833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_200
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json、音频生成/音频生成/文本转语音-克隆_1944291353318555649.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/aidir-文生图-全能图片V2_2069345184462237697.json、图片生成/文生图/全能图片V2-文生_2065069414512422913.json、图片生成/文生图/全能图片V2-文生图-低价渠道版 API专用_2082351116393738241.json、图片生成/文生图/全能图片V2-文生图-低价渠道版_2061685025090924545.json、图片生成/文生图/全能图片V2-文生图_2066896721665417218.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -23,18 +23,11 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Int`
-- `JjkText`
-- `LoadAudio`
-- `Note _O`
-- `SaveAudio`
-- `SparkTTSClone`
-- `SparkTTSRun`
-- `easy anythingIndexSwitch`
+- `RH_RhartImageNG31FlashTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Preview from image [Crystools]` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `Text _O` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,51 +3,54 @@ name: unknown_workflow_video_sampler_vae_138
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7315
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadImage, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+coverage: 0.95475
+common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/54.MiniMax H3 Easy v2_2088141868772188161.json, 视频生成/文生视频/MinimaxH3 Easy多合一工作流+全节点注释_2088851369838071810.json, 视频生成/文生视频/MinimaxH3+极简版工作台_2090287273068818434.json, 视频生成/文生视频/MinimaxH3- 完美优化版_2092903917620387842.json]
+members: [视频生成/图生视频/1923636242792312834.json, 视频生成/图生视频/1924304259204960258.json, 视频生成/文生视频/1923351101066629121.json, 视频生成/文生视频/1922867883611930626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_138
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/54.MiniMax H3 Easy v2_2088141868772188161.json、视频生成/文生视频/MinimaxH3 Easy多合一工作流+全节点注释_2088851369838071810.json、视频生成/文生视频/MinimaxH3+极简版工作台_2090287273068818434.json、视频生成/文生视频/MinimaxH3- 完美优化版_2092903917620387842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1923636242792312834.json、视频生成/图生视频/1924304259204960258.json、视频生成/文生视频/1923351101066629121.json、视频生成/文生视频/1922867883611930626.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `KSamplerSelect`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `LoadWanVideoT5TextEncoder`
+- `TextInput_`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoadVideo` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `LoraLoaderBypassModelOnly` —— 1/4 个有
-- `PlaySound|pysssss` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `AIO_Preprocessor` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `Bjornulf_ShowJson` —— 2/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `WanVideoEmptyEmbeds` —— 1/4 个有
 
 ## 典型参数
 

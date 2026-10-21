@@ -3,67 +3,78 @@ name: text_to_image_video_lora_sampler_202
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.7985
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EasyCache, EmptyLatentImage, GetVideoComponents, ImageBatchExtendWithOverlap, ImageScaleToTotalPixelsX, JjkText, KSampler, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SolAttnMiniMax, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_SplitImages, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.578
+common_nodes: [AddLabel, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, ComfySwitchNode, CreateVideo, DualCLIPLoader, EmptyAudio, EmptyLatentImage, EmptyMiniMaxH3LatentAV, GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetNode, GetVideoComponents, ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SolAttnPatch, SomethingToString, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimax-h3首尾无缝循环视频｜图生视频循环生成工作流_2097787837155467266.json, 视频生成/图生视频/首尾无缝循环视频 minimax-h3 图生视频循环动画_2094252146664497154.json]
+members: [视频生成/图生视频/H3风格参考视频风格迁移 视频风格转换图生视频_2099216890567680001.json, 视频生成/图生视频/MiniMax H3风格参考迁移流｜视频风格一键对齐参考片，质感统一_2099551984859832321.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_202
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax-h3首尾无缝循环视频｜图生视频循环生成工作流_2097787837155467266.json、视频生成/图生视频/首尾无缝循环视频 minimax-h3 图生视频循环动画_2094252146664497154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3风格参考视频风格迁移 视频风格转换图生视频_2099216890567680001.json、视频生成/图生视频/MiniMax H3风格参考迁移流｜视频风格一键对齐参考片，质感统一_2099551984859832321.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
+- `AddLabel`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ComfySwitchNode`
 - `CreateVideo`
-- `EasyCache`
+- `DualCLIPLoader`
+- `EmptyAudio`
 - `EmptyLatentImage`
+- `EmptyMiniMaxH3LatentAV`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetNode`
 - `GetVideoComponents`
-- `ImageBatchExtendWithOverlap`
-- `ImageScaleToTotalPixelsX`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
+- `ModelPreviewOverrideKJ`
 - `PreviewAny`
-- `PreviewAudio`
-- `PreviewImage`
 - `PrimitiveFloat`
+- `PrimitiveInt`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SolAttnMiniMax`
+- `SetNode`
+- `SolAttnPatch`
+- `SomethingToString`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_SplitImages`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VHS_VideoInfo`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 

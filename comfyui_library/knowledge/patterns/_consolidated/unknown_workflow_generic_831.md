@@ -3,39 +3,34 @@ name: unknown_workflow_generic_831
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.792
-common_nodes: [Fast Groups Bypasser (rgthree), JWString, LoadAudio, PreviewAny, PreviewAudio, RH_LLMAPI_Pro_Node, SaveAudio, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSDefineSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, Text, parse_json_node]
+coverage: 0.6905
+common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, ShowText|pysssss, easy positive, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS 多人对话 全自动&半自动 有声小说_2015989914462064642.json, 音频生成/音频生成/Qwen3-TTS有声小说（自用）_多人对话 全自动&半自动_2043954103197376514.json]
+members: [视频生成/图生视频/2033510744607694850.json, 视频生成/图生视频/2030844856406384641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_831
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 多人对话 全自动&半自动 有声小说_2015989914462064642.json、音频生成/音频生成/Qwen3-TTS有声小说（自用）_多人对话 全自动&半自动_2043954103197376514.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2033510744607694850.json、视频生成/图生视频/2030844856406384641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `JWString`
-- `LoadAudio`
-- `PreviewAny`
-- `PreviewAudio`
+- `LoadVideo`
 - `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `TDQwen3TTSBatchGenerateSpeaker`
-- `TDQwen3TTSDefineSpeaker`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSMultiDialog`
-- `Text`
-- `parse_json_node`
+- `ShowText|pysssss`
+- `easy positive`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `MuyeLoadImage` —— 1/2 个有
 
 ## 典型参数
 

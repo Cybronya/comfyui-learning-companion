@@ -3,37 +3,33 @@ name: unknown_workflow_generic_743
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9445
-common_nodes: [InversionDemoLazySwitch, PrimitiveBoolean, RH_Prompter, RH_Translator, RH_Veo3_Text2Video, SaveVideo, ShowText]
+coverage: 1
+common_nodes: [LoadImage, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/文生视频/1945050682493714434.json, 视频生成/文生视频/1957059501363793922.json]
+members: [图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json, 图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_743
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1945050682493714434.json、视频生成/文生视频/1957059501363793922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json、图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InversionDemoLazySwitch`
-- `PrimitiveBoolean`
-- `RH_Prompter`
-- `RH_Translator`
-- `RH_Veo3_Text2Video`
-- `SaveVideo`
-- `ShowText`
+- `LoadImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
+- `RH_SeedreamV5ProImageToImage` —— 1/2 个有
 
 ## 典型参数
 

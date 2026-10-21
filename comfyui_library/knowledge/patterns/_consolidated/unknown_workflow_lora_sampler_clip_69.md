@@ -1,80 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_clip_69
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.716667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CR Aspect Ratio SDXL, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, LoraLoader, RandomNoise, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, StringFunction|pysssss, CR Aspect Ratio SDXL]
-members: [图片生成/文生图/1934549977387442177.json, 图片生成/文生图/FLUX-随机提示词-基础文生图-提示词反推_1901113562578984962.json, 图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json]
+frequency: 5
+level: moderate
+coverage: 0.7664
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: [LayerUtility: PurgeVRAM V2, LayerUtility: ImageReel, LayerUtility: ImageReelComposit]
+members: [图片生成/文生图/1959972997622870017.json, 图片生成/文生图/1964982995616677890.json, 图片生成/文生图/1966026218137096193.json, 图片生成/文生图/1970348297275777025.json, 图片生成/文生图/Qwen-image 文生图lora版-极致美感_1991719726550298625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_69
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1934549977387442177.json、图片生成/文生图/FLUX-随机提示词-基础文生图-提示词反推_1901113562578984962.json、图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1959972997622870017.json、图片生成/文生图/1964982995616677890.json、图片生成/文生图/1966026218137096193.json、图片生成/文生图/1970348297275777025.json、图片生成/文生图/Qwen-image 文生图lora版-极致美感_1991719726550298625.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：72%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `CR Aspect Ratio SDXL`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoader`
-- `RandomNoise`
-- `RepeatLatentBatch`
-- `SamplerCustomAdvanced`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
-- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Florence2Run` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `DownloadAndLoadFlorence2Model` —— 1/3 个有
-- `Fast Bypasser (rgthree)` —— 1/3 个有
-- `Florence2ModelLoader` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/3 个有
-- `Primitive string multiline [Crystools]` —— 1/3 个有
-- `SDXLPromptStyler` —— 1/3 个有
-- `Text Random Line` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `LayerUtility: ImageReel` —— 4/5 个有
+- `LayerUtility: ImageReelComposit` —— 4/5 个有
+- `UNETLoader` —— 4/5 个有
+- `JjkText` —— 2/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `NunchakuQwenImageDiTLoader` —— 2/5 个有
+- `EnhancedLoadDiffusionModel` —— 1/5 个有
+- `ImageCombine` —— 1/5 个有
+- `LoadImageMW` —— 1/5 个有
+- `Lora Loader Stack (rgthree)` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 800 | 800 - 800 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| LoRA 模型强度 | 0.8 | 0.4 - 0.8 | 3 | 72% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 30 | 8 - 30 | 5 | 63% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 5 | 61% |
+| 采样算法 | euler_ancestral | - | 5 | 60% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 800，观测区间 800 - 800，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.4 - 0.8，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions、LayerUtility: LoadJoyCaptionBeta1Model、StringFunction|pysssss、CR Aspect Ratio SDXL
+- 采样步数 中位数 30，观测区间 8 - 30，5 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，5 个样本
+- 采样算法 最常用 euler_ancestral，5 个样本，一致性 60%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（3/5 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、LayerUtility: ImageReel、LayerUtility: ImageReelComposit

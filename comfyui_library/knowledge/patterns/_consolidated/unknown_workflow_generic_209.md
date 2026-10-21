@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_209
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8638
-common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.976167
+common_nodes: [LoadImage, SaveVideo]
 problems: []
-missing: [Image Stitch]
-members: [图片生成/文生图/1930578598372233218.json, 图片生成/文生图/1931559252207579138.json, 图片生成/文生图/1933715424578330625.json, 图片生成/文生图/1933765756871954434.json, 图片生成/文生图/1936465282678558721.json]
+missing: []
+members: [视频生成/图生视频/Minimax H3 多模态参考生成视频｜R2V_2083099294751617025.json, 视频生成/图生视频/Minimax H3 首尾帧图生视频（2K高清）强在性价比_2083111267291717633.json, 视频生成/图生视频/Minimax H3_2083108762361098242.json, 视频生成/图生视频/minmax h3_2084101316028227586.json, 视频生成/文生视频/Minimax H3_2083108762361098242.json, 视频生成/文生视频/minmax h3_2084101316028227586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_209
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1930578598372233218.json、图片生成/文生图/1931559252207579138.json、图片生成/文生图/1933715424578330625.json、图片生成/文生图/1933765756871954434.json、图片生成/文生图/1936465282678558721.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 多模态参考生成视频｜R2V_2083099294751617025.json、视频生成/图生视频/Minimax H3 首尾帧图生视频（2K高清）强在性价比_2083111267291717633.json、视频生成/图生视频/Minimax H3_2083108762361098242.json、视频生成/图生视频/minmax h3_2084101316028227586.json、视频生成/文生视频/Minimax H3_2083108762361098242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ArgosTranslateTextNode` —— 4/5 个有
-- `Bjornulf_ShowStringText` —— 3/5 个有
-- `Image Stitch` —— 2/5 个有
-- `PreviewImage` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 5/6 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 5/6 个有
+- `RH_MinimaxHailuoH3TextToVideo` —— 4/6 个有
+- `Label (rgthree)` —— 2/6 个有
 
 ## 典型参数
 
@@ -44,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Stitch
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

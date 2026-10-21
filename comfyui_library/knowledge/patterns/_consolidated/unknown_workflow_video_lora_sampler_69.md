@@ -3,63 +3,75 @@ name: unknown_workflow_video_lora_sampler_69
 type: Unknown Workflow
 frequency: 18
 level: moderate
-coverage: 0.970444
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.906944
+common_nodes: [CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RH_Captioner, SimpleMath+, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1983525120713138178.json, 视频生成/图生视频/1983529460303601666.json, 视频生成/图生视频/1992060788846252034.json, 视频生成/图生视频/1963555388825358337.json, 视频生成/图生视频/2027622896310427649.json, 视频生成/图生视频/1981195312264110081.json, 视频生成/图生视频/1992174428303806466.json, 视频生成/图生视频/2019656861171060738.json, 视频生成/图生视频/1998010318326497281.json, 视频生成/图生视频/2000475113990520833.json, 视频生成/图生视频/2026893415455133697.json, 视频生成/图生视频/2018932205057216513.json, 视频生成/图生视频/2018481658378330113.json, 视频生成/图生视频/2025740661340774402.json, 视频生成/图生视频/1971037021902905346.json, 视频生成/图生视频/1976556715808264194.json, 视频生成/图生视频/2041413117292318723.json, 视频生成/图生视频/2065457354044436482.json]
+members: [视频生成/图生视频/1950075530189127682.json, 视频生成/图生视频/1952043105937731585.json, 视频生成/图生视频/2067129224686821377.json, 视频生成/图生视频/Wan2.2-14B-首尾帧视频工作流_2085669231730974721.json, 视频生成/图生视频/1954893685562359810.json, 视频生成/图生视频/1955443170857422849.json, 视频生成/图生视频/1953398457706971138.json, 视频生成/图生视频/1952550941541240833.json, 视频生成/图生视频/1951465254188429313.json, 视频生成/图生视频/1953648114819321858.json, 视频生成/图生视频/2011405192771674114.json, 视频生成/图生视频/2012117442817953793.json, 视频生成/图生视频/1956190750184755201.json, 视频生成/图生视频/2011413743489523713.json, 视频生成/图生视频/2009530449273561089.json, 视频生成/图生视频/1964548830723231746.json, 视频生成/图生视频/2018219380894601218.json, 视频生成/图生视频/1964562297249218562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_69
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/1983525120713138178.json、视频生成/图生视频/1983529460303601666.json、视频生成/图生视频/1992060788846252034.json、视频生成/图生视频/1963555388825358337.json、视频生成/图生视频/2027622896310427649.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/1950075530189127682.json、视频生成/图生视频/1952043105937731585.json、视频生成/图生视频/2067129224686821377.json、视频生成/图生视频/Wan2.2-14B-首尾帧视频工作流_2085669231730974721.json、视频生成/图生视频/1954893685562359810.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
+- `CogVideoEnhanceAVideo`
+- `CreateCFGScheduleFloatList`
+- `DF_Integer`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_VideoCombine`
+- `RH_Captioner`
+- `SimpleMath+`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 17/18 个有
-- `ImageResize+` —— 17/18 个有
-- `JWInteger` —— 17/18 个有
-- `LayerUtility: PurgeVRAM` —— 17/18 个有
-- `LoadWanVideoClipTextEncoder` —— 17/18 个有
-- `SimpleMath+` —— 17/18 个有
-- `WanVideoClipVisionEncode` —— 17/18 个有
-- `easy cleanGpuUsed` —— 17/18 个有
-- `CR Prompt Text` —— 16/18 个有
-- `CreateCFGScheduleFloatList` —— 16/18 个有
-- `LoadImage` —— 16/18 个有
-- `ColorMatch` —— 9/18 个有
-- `WanVideoSLG` —— 9/18 个有
-- `Float` —— 8/18 个有
-- `RIFE VFI` —— 6/18 个有
-- `DF_Int_to_Float` —— 3/18 个有
-- `ImageLoader` —— 2/18 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/18 个有
-- `MultiplePathsInput` —— 2/18 个有
-- `Qwen3_VQA` —— 2/18 个有
-- `easy showAnything` —— 2/18 个有
+- `PrimitiveBoolean` —— 17/18 个有
+- `VHS_VideoCombine` —— 17/18 个有
+- `WanVideoSetLoRAs` —— 17/18 个有
+- `easy ifElse` —— 17/18 个有
+- `easy int` —— 17/18 个有
+- `WanVideoClipVisionEncode` —— 13/18 个有
+- `WanVideoTorchCompileSettings` —— 13/18 个有
+- `ImageStitch` —— 12/18 个有
+- `LayerUtility: ImageMaskScaleAs` —— 12/18 个有
+- `LoadWanVideoClipTextEncoder` —— 12/18 个有
+- `RH_Translator` —— 12/18 个有
+- `Textbox` —— 11/18 个有
+- `CLIPVisionLoader` —— 8/18 个有
+- `CR Text Replace` —— 6/18 个有
+- `TextBox` —— 6/18 个有
+- `easy seed` —— 5/18 个有
+- `ColorCorrectOfUtils` —— 1/18 个有
+- `ColorMatchToReference` —— 1/18 个有
+- `CreateVideo` —— 1/18 个有
+- `EsesImageEffectLevels` —— 1/18 个有
+- `FloatToSigmas` —— 1/18 个有
+- `ImageCASharpening+` —— 1/18 个有
 - `Int` —— 1/18 个有
-- `Label (rgthree)` —— 1/18 个有
+- `LayerUtility: PurgeVRAM` —— 1/18 个有
+- `SaveVideo` —— 1/18 个有
+- `StringToFloatList` —— 1/18 个有
+- `WanVideoExperimentalArgs` —— 1/18 个有
 
 ## 典型参数
 

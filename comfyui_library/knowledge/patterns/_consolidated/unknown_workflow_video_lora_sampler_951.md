@@ -3,39 +3,32 @@ name: unknown_workflow_video_lora_sampler_951
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9745
-common_nodes: [CR Text, CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, INTConstant, ImageFromBatch+, LoadImage, LoadWanVideoT5TextEncoder, ShowText|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.901
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadWanVideoT5TextEncoder, ShowText|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1950563765865598978.json, 视频生成/文生视频/1951548166669807618.json]
+members: [视频生成/文生视频/Smooth_Mix文生图工作流KJ版_1979830318448414721.json, 视频生成/文生视频/1950237819014963201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_951
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1950563765865598978.json、视频生成/文生视频/1951548166669807618.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Smooth_Mix文生图工作流KJ版_1979830318448414721.json、视频生成/文生视频/1950237819014963201.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
 - `CreateCFGScheduleFloatList`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
 - `INTConstant`
-- `ImageFromBatch+`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `ShowText|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
@@ -46,13 +39,17 @@ source: knowledge_consolidation
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `MMAudioFeatureUtilsLoader` —— 1/2 个有
-- `MMAudioModelLoader` —— 1/2 个有
-- `MMAudioSampler` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
+- `GLM_Text_Chat` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `WanVideoEasyCache` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
 - `Wan_video_prompt_generator` —— 1/2 个有
 
 ## 典型参数

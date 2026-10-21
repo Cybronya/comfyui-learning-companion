@@ -1,31 +1,34 @@
 ---
 name: unknown_workflow_generic_290
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.556
-common_nodes: [LoadImage, RelayBanana2ImageGenerator, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_Kling25_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/2084612811342307330.json, 图片生成/图生图/2084617250769821698.json, 图片生成/图生图/2_全能图片2 单张低至1毛_2084612811342307330.json, 图片生成/图生图/Pro_全能图片Pro单张低至2毛_2084617250769821698.json]
+members: [视频生成/图生视频/2033747494940712961.json, 视频生成/图生视频/2015989000204460034.json, 视频生成/图生视频/2041082785955319810.json, 视频生成/图生视频/1988180318677024770.json, 视频生成/图生视频/2039889505292914690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_290
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2084612811342307330.json、图片生成/图生图/2084617250769821698.json、图片生成/图生图/2_全能图片2 单张低至1毛_2084612811342307330.json、图片生成/图生图/Pro_全能图片Pro单张低至2毛_2084617250769821698.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2033747494940712961.json、视频生成/图生视频/2015989000204460034.json、视频生成/图生视频/2041082785955319810.json、视频生成/图生视频/1988180318677024770.json、视频生成/图生视频/2039889505292914690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RelayBanana2ImageGenerator`
-- `SaveImage`
+- `RH_Kling25_Image2Video`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `GetRandomIntegerInRange` —— 1/5 个有
 
 ## 典型参数
 

@@ -2,99 +2,74 @@
 name: unknown_workflow_video_lora_sampler_581
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.814333
-common_nodes: [Bjornulf_IfElse, CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, ImageResizeKJv2, JWInteger, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch1way, LazySwitch2way, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PreviewAny, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy boolean, easy convertAnything, easy float, easy showAnything]
+level: moderate
+coverage: 0.670333
+common_nodes: [Anything Everywhere, CR Prompt Text, CreateCFGScheduleFloatList, Fast Groups Muter (rgthree), FloatConstant, GetNode, INTConstant, LayerUtility: PurgeVRAM V2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2044963252995629058.json, 视频生成/图生视频/2038430942880079873.json, 视频生成/图生视频/2038885933809930241.json]
+members: [视频生成/图生视频/1991509572473069569.json, 视频生成/图生视频/1990968837673787394.json, 视频生成/图生视频/1991503138804998145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_581
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2044963252995629058.json、视频生成/图生视频/2038430942880079873.json、视频生成/图生视频/2038885933809930241.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1991509572473069569.json、视频生成/图生视频/1990968837673787394.json、视频生成/图生视频/1991503138804998145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Bjornulf_IfElse`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Anything Everywhere`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `Fast Groups Muter (rgthree)`
+- `FloatConstant`
+- `GetNode`
+- `INTConstant`
 - `LayerUtility: PurgeVRAM V2`
-- `LazySwitch1way`
-- `LazySwitch2way`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveInt`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `SetNode`
 - `VHS_VideoCombine`
-- `easy boolean`
-- `easy convertAnything`
-- `easy float`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoGeminiInstructionZhenzhenNode` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `LTX2SamplingPreviewOverride` —— 2/3 个有
-- `LTXVAudioVAEDecode` —— 2/3 个有
-- `LTXVEmptyLatentAudio` —— 2/3 个有
-- `RTXVideoSuperResolution` —— 2/3 个有
-- `VAELoader` —— 2/3 个有
-- `AudioCropProcessUTK` —— 1/3 个有
-- `CFGNorm` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `LTX2_NAG` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `LTXVChunkFeedForward` —— 1/3 个有
-- `LTXVLatentUpsampler` —— 1/3 个有
-- `LatentUpscaleModelLoader` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `ModelPatchTorchSettings` —— 1/3 个有
-- `NormalizeAudioLoudness` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `SetLatentNoiseMask` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `SolidMask` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `ADE_CameraPoseCombo` —— 1/3 个有
+- `CameraPoseVisualizer` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageBlend` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `LoadWanVideoClipTextEncoder` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoClipVisionEncode` —— 1/3 个有
+- `WanVideoControlEmbeds` —— 1/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoFunCameraEmbeds` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 93 | - | 2 | 100% |
-| 高度 | 20 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -102,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 93，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

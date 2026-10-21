@@ -1,82 +1,75 @@
 ---
 name: text_to_image_lora_sampler_clip_143
 type: Text To Image
-frequency: 7
-level: strong
-coverage: 0.901857
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoadVideo, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+frequency: 8
+level: weak
+coverage: 0.98
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Mini多模态｜文生图生视频全都能跑_2106629854375534594.json, 视频生成/图生视频/Seedance2.0全参工作流支持留空支持真人视频生成_2100302038222598146.json, 视频生成/图生视频/Seedance2.0全参工作流支持留空真人，图生视频视频生视频全能力覆盖_2103230482023538689.json, 视频生成/图生视频/Seedance2.0全参工作流｜支持留空真人视频生视频生成_2097408085110386689.json, 视频生成/图生视频/Seedance_2.5多模态全能参考视频｜图生视频视频生视频双支持_2101899070481719297.json, 视频生成/图生视频/Wan3多模态全参工作流，视频生视频图生视频全覆盖方案_2110206029798662146.json, 视频生成/图生视频/动作迁移角色替换AI视频换人｜免改骨架直接换主角｜图生视频_2101892897812606978.json]
+members: [图片生成/文生图/Krea2_反推生图_自动尺寸_2087151855494328321.json, 图片生成/文生图/Krea2动漫人物写实复古风工作流_2073834007481110529.json, 图片生成/文生图/Krea2图图工作流_2072525906350006273.json, 图片生成/文生图/Krea2图图文生图工作流_2095107374737616898.json, 图片生成/文生图/Krea2文生图工作流_2089571875075747842.json, 图片生成/文生图/Qwen Image 2512 文生图_2011450632992989185.json, 图片生成/文生图/Qwen-Image-2.1_文生图+4步加速_2103505307195502594.json, 图片生成/文生图/Z-image建筑文生图工作流_1993985159852654594.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_143
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Mini多模态｜文生图生视频全都能跑_2106629854375534594.json、视频生成/图生视频/Seedance2.0全参工作流支持留空支持真人视频生成_2100302038222598146.json、视频生成/图生视频/Seedance2.0全参工作流支持留空真人，图生视频视频生视频全能力覆盖_2103230482023538689.json、视频生成/图生视频/Seedance2.0全参工作流｜支持留空真人视频生视频生成_2097408085110386689.json、视频生成/图生视频/Seedance_2.5多模态全能参考视频｜图生视频视频生视频双支持_2101899070481719297.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Krea2_反推生图_自动尺寸_2087151855494328321.json、图片生成/文生图/Krea2动漫人物写实复古风工作流_2073834007481110529.json、图片生成/文生图/Krea2图图工作流_2072525906350006273.json、图片生成/文生图/Krea2图图文生图工作流_2095107374737616898.json、图片生成/文生图/Krea2文生图工作流_2089571875075747842.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 6/7 个有
-- `LoadAudio` —— 5/7 个有
-- `SaveImage` —— 4/7 个有
-- `EmptyImage` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/7 个有
-- `MuyeTextEditOutput` —— 1/7 个有
-- `RHBerniniFullReferenceVideoToVideo` —— 1/7 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 1/7 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 1/7 个有
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `CR Text` —— 3/8 个有
+- `AILab_QwenVL` —— 2/8 个有
+- `LoadImage` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `GetImageSize+` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `ModelAttentionBackend` —— 1/8 个有
+- `SaveImageAdvanced` —— 1/8 个有
+- `Text Concatenate` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 10 | 6 - 30 | 8 | 38% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 28% |
+| 采样算法 | er_sde | - | 8 | 62% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 0.58 - 1 | 8 | 85% |
+| 宽度 | 1080 | 512 - 2048 | 8 | 53% |
+| 高度 | 1360 | 512 - 1920 | 8 | 59% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 6 - 30，8 个样本，取值分散，一致性仅 38%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 28%
+- 采样算法 最常用 er_sde，8 个样本，一致性 62%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 0.58 - 1，8 个样本，取值集中（一致性 85%）
+- 宽度 中位数 1080，观测区间 512 - 2048，8 个样本
+- 高度 中位数 1360，观测区间 512 - 1920，8 个样本
+- 高发问题（4/8 个样本）：Steps较低可能导致细节不足

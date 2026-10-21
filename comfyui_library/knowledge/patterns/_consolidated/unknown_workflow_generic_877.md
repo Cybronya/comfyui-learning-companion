@@ -3,31 +3,33 @@ name: unknown_workflow_generic_877
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [HeartMuLa_Generate, LayerUtility: PurgeVRAM V2, PreviewAudio, SaveAudio, Text]
+coverage: 0.9
+common_nodes: [LoadAudio, LoadImage, RH_KlingV2AiAvatarProImageAudioToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/免费生成音乐 开源版SUNO-HeartMuLa_2013583726898319361.json, 音频生成/音频生成/免费生成音乐+开源版SUNO-HeartMuLa_2022940231028187138.json]
+members: [视频生成/图生视频/数字人口播Pro工作流｜照片加音频生成口播视频_2099453337191141377.json, 视频生成/图生视频/数字人口播工作流｜Kling V2 Pro 照片+音频一键对口型_2098048976284110850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_877
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/免费生成音乐 开源版SUNO-HeartMuLa_2013583726898319361.json、音频生成/音频生成/免费生成音乐+开源版SUNO-HeartMuLa_2022940231028187138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/数字人口播Pro工作流｜照片加音频生成口播视频_2099453337191141377.json、视频生成/图生视频/数字人口播工作流｜Kling V2 Pro 照片+音频一键对口型_2098048976284110850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `LayerUtility: PurgeVRAM V2`
-- `PreviewAudio`
-- `SaveAudio`
-- `Text`
+- `LoadAudio`
+- `LoadImage`
+- `RH_KlingV2AiAvatarProImageAudioToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

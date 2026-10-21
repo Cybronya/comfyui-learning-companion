@@ -1,70 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_unet_51
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.478167
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 7
+level: strong
+coverage: 0.912429
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyHunyuanLatentVideo, ImageResizeKJv2, KSamplerAdvanced, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, PromptRelayEncodeTimeline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/官方 全能参考版单采_2104530172652380161.json, 视频生成/文生视频/工作流lin_2099078938155896833.json, 视频生成/文生视频/直播带货知识分享（混合模型+结构lora+二采潜空间放大）_2094570516450471938.json, 视频生成/文生视频/知识分享单人视频生成器_2103751628326260737.json, 视频生成/文生视频/视频生成API_2099703467815292929.json, 视频生成/视频生视频/-MiniMax H3-多参考生视频-优化版_2106660994788446209.json]
+members: [视频生成/图生视频/2064248756870139905.json, 视频生成/图生视频/2057114333976555522.json, 视频生成/图生视频/2053855379406245890.json, 视频生成/图生视频/2058829735278497793.json, 视频生成/图生视频/2054887639500763138.json, 视频生成/图生视频/2059203324586577922.json, 视频生成/图生视频/2054717028392546306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_51
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/官方 全能参考版单采_2104530172652380161.json、视频生成/文生视频/工作流lin_2099078938155896833.json、视频生成/文生视频/直播带货知识分享（混合模型+结构lora+二采潜空间放大）_2094570516450471938.json、视频生成/文生视频/知识分享单人视频生成器_2103751628326260737.json、视频生成/文生视频/视频生成API_2099703467815292929.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2064248756870139905.json、视频生成/图生视频/2057114333976555522.json、视频生成/图生视频/2053855379406245890.json、视频生成/图生视频/2058829735278497793.json、视频生成/图生视频/2054887639500763138.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
-- `KSamplerSelect`
-- `LoadAudio`
+- `ConditioningZeroOut`
+- `EmptyHunyuanLatentVideo`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SplitSigmas`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PromptRelayEncodeTimeline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVConcatAVLatent` —— 5/6 个有
-- `LTXVSeparateAVLatent` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `easy float` —— 5/6 个有
-- `Text` —— 4/6 个有
-- `VHS_LoadVideo` —— 3/6 个有
-- `忽略多组孤海` —— 3/6 个有
-- `Text Multiline` —— 2/6 个有
-- `AudioSeparation` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `Lora Loader Stack (rgthree)` —— 1/6 个有
-- `ModelAttentionBackend` —— 1/6 个有
-- `SolAttnMiniMax` —— 1/6 个有
+- `Int` —— 3/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `FlashVSRInitPipe` —— 1/7 个有
+- `FlashVSRNodeAdv` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `RIFE VFI` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 7 | 91% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | uni_pc | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -72,4 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，7 个样本，取值集中（一致性 91%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 uni_pc，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

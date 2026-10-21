@@ -1,74 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_clip_138
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8315
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ProcessString, SaveImage, SaveVideoRGBA, StringToFloatList, UNETLoader, VAEDecode, VAEEncode, VAELoader, WanImageToVideoSVIPro, WanMoeKSampler, easy blocker, easy compare, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy int, easy lengthAnything, easy mathInt, easy promptLine]
+frequency: 3
+level: moderate
+coverage: 0.883667
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006023297154158593.json, 视频生成/图生视频/2006938927231406082.json]
+members: [视频生成/图生视频/2078769207956819970.json, 视频生成/图生视频/2063444223206191106.json, 视频生成/文生视频/LTX 2.3_MSR（多参图生视频）_2080284714388246530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_138
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2006023297154158593.json、视频生成/图生视频/2006938927231406082.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2078769207956819970.json、视频生成/图生视频/2063444223206191106.json、视频生成/文生视频/LTX 2.3_MSR（多参图生视频）_2080284714388246530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `ProcessString`
-- `SaveImage`
-- `SaveVideoRGBA`
-- `StringToFloatList`
-- `UNETLoader`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `WanImageToVideoSVIPro`
-- `WanMoeKSampler`
-- `easy blocker`
-- `easy compare`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy int`
-- `easy lengthAnything`
-- `easy mathInt`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 1/2 个有
+- `INTConstant` —— 2/3 个有
+- `LTX2_NAG` —— 2/3 个有
+- `PromptRelayEncode` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `FloatConstant` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | euler | - | 2 | 100% |
+| 宽度 | 241 | 97 - 241 | 3 | 65% |
+| 高度 | 50 | 25 - 50 | 3 | 72% |
 
 ## 常见问题
 
@@ -76,9 +76,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 241，观测区间 97 - 241，3 个样本
+- 高度 中位数 50，观测区间 25 - 50，3 个样本

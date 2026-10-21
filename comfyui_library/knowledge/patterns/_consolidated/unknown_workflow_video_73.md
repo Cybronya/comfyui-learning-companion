@@ -3,34 +3,38 @@ name: unknown_workflow_video_73
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6965
-common_nodes: [LoadImage, RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.923
+common_nodes: [GetImageSizeAndCount, ImageResizeKJ, PreviewImage, RIFE VFI, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine, easy cleanGpuUsed, workflow/MimicMotion , workflow/florence, workflow/模型组, workflow/采样器]
 problems: []
 missing: []
-members: [图片生成/文生图/图生视频、文生视频、动作迁移、MiniMax H3、LTX、Wan - 去AI感、增强真实感_2100218352814874625.json, 视频生成/图生视频/1912153366883987457.json]
+members: [图片生成/文生图/图生舞蹈视频时长15秒_1893151777515061250.json, 视频生成/图生视频/1893151777515061250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_73
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图生视频、文生视频、动作迁移、MiniMax H3、LTX、Wan - 去AI感、增强真实感_2100218352814874625.json、视频生成/图生视频/1912153366883987457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图生舞蹈视频时长15秒_1893151777515061250.json、视频生成/图生视频/1893151777515061250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RHHiddenNodes`
+- `GetImageSizeAndCount`
+- `ImageResizeKJ`
+- `PreviewImage`
+- `RIFE VFI`
 - `VHS_LoadVideo`
+- `VHS_SplitImages`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `easy cleanGpuUsed`
+- `workflow/MimicMotion `
+- `workflow/florence`
+- `workflow/模型组`
+- `workflow/采样器`
 
 ## 典型参数
 

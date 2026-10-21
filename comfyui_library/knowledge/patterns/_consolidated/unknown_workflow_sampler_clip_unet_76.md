@@ -1,58 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_76
 type: Unknown Workflow
-frequency: 4
-level: weak
-coverage: 0.92025
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, WanImageToVideo]
+frequency: 8
+level: moderate
+coverage: 0.907375
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/1971438384981983234.json, 视频生成/图生视频/1950499114352103426.json, 视频生成/图生视频/1950096057801859073.json, 视频生成/图生视频/1950206253990592514.json]
+missing: [CR Text, ImageCrop+, SimpleMath+, easy imageSize]
+members: [图片生成/文生图/1981992176706035713.json, 图片生成/文生图/1981999558349725697.json, 图片生成/文生图/云朵精灵Zhiban，三视图_1880497654135418881.json, 图片生成/文生图/在线一键生成毛绒玩具卡通形象手稿丨含效果图_1901132060025856001.json, 图片生成/文生图/根据提示词生成图片_2058844453082845186.json, 图片生成/文生图/根据提示词生成图片_2058847096706519041.json, 图片生成/文生图/毛绒奇幻国·Zhiban_1880497829063061506.json, 图片生成/文生图/毛绒奇幻国·Zhiban_1880529226179964930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_76
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1971438384981983234.json、视频生成/图生视频/1950499114352103426.json、视频生成/图生视频/1950096057801859073.json、视频生成/图生视频/1950206253990592514.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1981992176706035713.json、图片生成/文生图/1981999558349725697.json、图片生成/文生图/云朵精灵Zhiban，三视图_1880497654135418881.json、图片生成/文生图/在线一键生成毛绒玩具卡通形象手稿丨含效果图_1901132060025856001.json、图片生成/文生图/根据提示词生成图片_2058844453082845186.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `ModelSamplingSD3`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `SaveAnimatedWEBP` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `SaveWEBM` —— 1/4 个有
-- `wanBlockSwap` —— 1/4 个有
+- `LoraLoader` —— 6/8 个有
+- `CR Text` —— 2/8 个有
+- `DetailDaemonSamplerNode` —— 2/8 个有
+- `ImageCrop+` —— 2/8 个有
+- `SimpleMath+` —— 2/8 个有
+- `easy imageSize` —— 2/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 9 | 4 - 20 | 4 | 35% |
-| 采样算法 | 2.25 | 1 - 3.5 | 4 | 44% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 宽度 | 1600 | 768 - 2000 | 8 | 69% |
+| 高度 | 1024 | 1024 - 1248 | 8 | 93% |
+| LoRA 模型强度 | 1 | 0.3 - 1 | 6 | 70% |
+| LoRA 文本强度 | 1 | 1 - 3.5 | 6 | 34% |
 
 ## 常见问题
 
@@ -60,9 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 4 - 20，4 个样本，取值分散，一致性仅 35%
-- 采样算法 中位数 2.25，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 44%
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 1600，观测区间 768 - 2000，8 个样本
+- 高度 中位数 1024，观测区间 1024 - 1248，8 个样本，取值集中（一致性 93%）
+- LoRA 模型强度 中位数 1，观测区间 0.3 - 1，6 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 3.5，6 个样本，取值分散，一致性仅 34%
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、ImageCrop+、SimpleMath+、easy imageSize

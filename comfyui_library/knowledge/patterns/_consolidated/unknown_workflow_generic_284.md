@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_284
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.889
-common_nodes: [LoadImage, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextureNode]
+coverage: 0.3806
+common_nodes: [Fast Groups Muter (rgthree), JjkText, LoadAudio, RH_RhartAudioSunoV55Custom, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json, comfyui-workflow-templates-json/api_meshy7_image_to_model.json, comfyui-workflow-templates-json/api_meshy_image_to_model.json, comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json]
+members: [数字人/数字人/最强的音乐模型  Suno V5.5音乐一键创作_2089369115181015041.json, 音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作628_2065434432718336002.json, 音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2059586066713239554.json, 音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2070703592020996098.json, 音频生成/音频生成/最强音乐Suno V5.5_2062113185355886593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_284
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json、comfyui-workflow-templates-json/api_meshy7_image_to_model.json、comfyui-workflow-templates-json/api_meshy_image_to_model.json、comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/最强的音乐模型  Suno V5.5音乐一键创作_2089369115181015041.json、音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作628_2065434432718336002.json、音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2059586066713239554.json、音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2070703592020996098.json、音频生成/音频生成/最强音乐Suno V5.5_2062113185355886593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `MeshyAnimateModelNode`
-- `MeshyRefineNode`
-- `MeshyRigModelNode`
-- `MeshyTextureNode`
+全部 5 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
+- `JjkText`
+- `LoadAudio`
+- `RH_RhartAudioSunoV55Custom`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `MeshyImageToModelNode` —— 3/4 个有
-- `SaveGLB` —— 3/4 个有
-- `MeshyMultiImageToModelNode` —— 1/4 个有
-- `Preview3D` —— 1/4 个有
-- `Save3DAdvanced` —— 1/4 个有
+- `RH_RhartAudioSunoV55Single` —— 4/5 个有
+- `PreviewAny` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,32 +3,40 @@ name: unknown_workflow_generic_747
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, CR Text, JWInteger, RunningHubHeliosModelLoader, RunningHubHeliosT2V, SaveVideo]
+coverage: 0.7415
+common_nodes: [BagelImageEdit, BagelModelLoader, Fast Groups Bypasser (rgthree), GetNode, ImageConcanate, ImageScaleDownToSize, LoadImage, SaveImage, SetNode, ShowText|pysssss]
 problems: []
 missing: []
-members: [视频生成/文生视频/Helios极速文生视频智能提示词超长版（最长2400帧）_2031217208579334145.json, 视频生成/文生视频/🦖Helios文生视频（最长2400帧）_2031567354924109825.json]
+members: [图片生成/文生图/1926939449228431361.json, 图片生成/文生图/1927165421621825538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_747
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Helios极速文生视频智能提示词超长版（最长2400帧）_2031217208579334145.json、视频生成/文生视频/🦖Helios文生视频（最长2400帧）_2031567354924109825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1926939449228431361.json、图片生成/文生图/1927165421621825538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `JWInteger`
-- `RunningHubHeliosModelLoader`
-- `RunningHubHeliosT2V`
-- `SaveVideo`
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `ImageConcanate`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
+
+**可变部分**（部分 workflow 才有）：
+- `BagelImageUnderstanding` —— 1/2 个有
+- `BagelTextToImage` —— 1/2 个有
 
 ## 典型参数
 

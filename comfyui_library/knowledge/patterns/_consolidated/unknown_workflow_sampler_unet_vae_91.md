@@ -2,61 +2,64 @@
 name: unknown_workflow_sampler_unet_vae_91
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.855625
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+level: strong
+coverage: 0.696
+common_nodes: [CLIPLoader, DF_Text_Box, GoohaiRatioAndResolution, GoohaiRouteBlocker, Image Comparer (rgthree), KSampler, LoadImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImagePromptOptimizer, RestoreQwenImage21GH, SaveImage, ShowText|pysssss, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader, 忽略多组孤海]
 problems: []
-missing: []
-members: [视频生成/文生视频/MiniMax H3 Ref2VA 多参考生视频极速超清 2K_2101695103294328834.json, 视频生成/文生视频/MiniMax H3全能参考_2084306466529439745.json, 视频生成/文生视频/minimaxH3满血版海螺H3_2085024933234692098.json, 视频生成/文生视频/minimax_h3 多参考图生视频+sage加速_2084551631911342082.json, 视频生成/文生视频/中式天宫，东方神话美学——第一幕_2090917033448927234.json, 视频生成/文生视频/中式天宫，东方神话美学——第二幕_2090890642951073793.json, 视频生成/文生视频/海螺H3多宫格图生视频场景图生成短视频角色卡片图生成短视频_2086510723475263490.json, 视频生成/文生视频/海螺minimax_h3_多参_中文版，适配comfyui（自用）_2077373534669721601.json]
+missing: [忽略多组孤海]
+members: [图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json, 图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json, 图片生成/图生图/2103270694288183297.json, 图片生成/图生图/2105870849386573825.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2108120997114245121.json, 图片生成/文生图/Qwen Image 2.1 文生+图像编辑一体化_2105178276711976962.json, 图片生成/文生图/Qwen Image 2.1 文生、多图像编辑一体化_2105870849386573825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_91
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Ref2VA 多参考生视频极速超清 2K_2101695103294328834.json、视频生成/文生视频/MiniMax H3全能参考_2084306466529439745.json、视频生成/文生视频/minimaxH3满血版海螺H3_2085024933234692098.json、视频生成/文生视频/minimax_h3 多参考图生视频+sage加速_2084551631911342082.json、视频生成/文生视频/中式天宫，东方神话美学——第一幕_2090917033448927234.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json、图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json、图片生成/图生图/2103270694288183297.json、图片生成/图生图/2105870849386573825.json、图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `DF_Text_Box`
+- `GoohaiRatioAndResolution`
+- `GoohaiRouteBlocker`
+- `Image Comparer (rgthree)`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `QwenImage21BlockCacheT8`
+- `QwenImage21SageAttentionT8`
+- `QwenImage21SpectrumT8`
+- `QwenImagePromptOptimizer`
+- `RestoreQwenImage21GH`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextEncodeQwenImage21GH`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 7/8 个有
-- `CreateVideo` —— 5/8 个有
-- `SaveVideo` —— 5/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `LoadAudio` —— 2/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `MiniMaxH3AVDecodeT8` —— 1/8 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/8 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 1/8 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 1/8 个有
-- `PathchSageAttentionKJ` —— 1/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/8 个有
+- `GetNode` —— 7/8 个有
+- `SetNode` —— 7/8 个有
+- `孤海注释` —— 7/8 个有
+- `LoadImageGoohai` —— 5/8 个有
+- `ComfySwitchNode` —— 1/8 个有
+- `PrimitiveBoolean` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 30 - 30 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -64,4 +67,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，观测区间 30 - 30，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：忽略多组孤海

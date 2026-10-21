@@ -3,77 +3,58 @@ name: unknown_workflow_video_lora_sampler_928
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8695
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CR Text Concatenate, CheckpointLoaderSimple, ColorMatch, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree), Int, KSampler, LayerUtility: PurgeVRAM, LoadImage, Lora Loader Stack (rgthree), LoraLoader, MathExpression_UTK, ModelSamplingSD3, RHHiddenNodes, SaveLatent, TorchCompileModelWanVideoV2, VAEDecode, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text, CR Text Concatenate, LayerUtility: PurgeVRAM, Lora Loader Stack (rgthree)]
-members: [视频生成/文生视频/1972941087142752257.json, 视频生成/文生视频/2074055258437074944.json]
+coverage: 0.806
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler]
+problems: []
+missing: []
+members: [视频生成/文生视频/1955923712228950018.json, 视频生成/文生视频/Wan2.2+MoeKSampler+lightx2v加速_2072999646450196480.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_928
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1972941087142752257.json、视频生成/文生视频/2074055258437074944.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1955923712228950018.json、视频生成/文生视频/Wan2.2+MoeKSampler+lightx2v加速_2072999646450196480.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `CR Text Concatenate`
-- `CheckpointLoaderSimple`
-- `ColorMatch`
 - `EmptyHunyuanLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `Int`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `LoraLoader`
-- `MathExpression_UTK`
-- `ModelSamplingSD3`
-- `RHHiddenNodes`
-- `SaveLatent`
-- `TorchCompileModelWanVideoV2`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
+- `WanMoeKSampler`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.8 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 6 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | sa_solver | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 12 | - | 2 | 100% |
+| 采样算法 | 4 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | uni_pc | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、LayerUtility: PurgeVRAM、Lora Loader Stack (rgthree)
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 uni_pc，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

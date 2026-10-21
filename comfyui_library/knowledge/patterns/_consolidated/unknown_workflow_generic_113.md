@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_113
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.49575
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.978778
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
 problems: []
 missing: []
-members: [视频生成/图生视频/2045803250208739330.json, 视频生成/图生视频/1995080238969368577.json, 视频生成/图生视频/1995090644366503938.json, 视频生成/图生视频/1994104892247785473.json, 视频生成/图生视频/1980566754525102082.json, 视频生成/图生视频/1980581515803447298.json, 视频生成/图生视频/2000505085736124418.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1 Pro文生视频特价版（基准1元_8S）_1980614790232064001.json]
+members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_113
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2045803250208739330.json、视频生成/图生视频/1995080238969368577.json、视频生成/图生视频/1995090644366503938.json、视频生成/图生视频/1994104892247785473.json、视频生成/图生视频/1980566754525102082.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_DialogueGenerate`
+- `T8_IndexTTS25_DialogueScript`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_RoleLibrary`
+- `T8_IndexTTS25_VoiceProfile`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Googel_Veo3` —— 6/8 个有
-- `Comfly_vidu_img2video` —— 2/8 个有
-- `Comfly_Googel_Veo3_Lite` —— 1/8 个有
-- `HfSaveImage` —— 1/8 个有
+- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
+- `Text` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 

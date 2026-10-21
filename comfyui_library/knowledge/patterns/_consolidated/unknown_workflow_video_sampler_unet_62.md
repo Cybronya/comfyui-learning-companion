@@ -1,62 +1,65 @@
 ---
 name: unknown_workflow_video_sampler_unet_62
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.91925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.9484
+common_nodes: [CFGGuider, DualCLIPLoader, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json]
+members: [视频生成/图生视频/2063841095607476225.json, 视频生成/图生视频/2063614975846993922.json, 视频生成/图生视频/2059242196313919490.json, 视频生成/文生视频/LTX2.3导演台2.0工作流_2081613434218700801.json, 视频生成/文生视频/Ltx2.3 导演流_2059463273585664002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_62
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2063841095607476225.json、视频生成/图生视频/2063614975846993922.json、视频生成/图生视频/2059242196313919490.json、视频生成/文生视频/LTX2.3导演台2.0工作流_2081613434218700801.json、视频生成/文生视频/Ltx2.3 导演流_2059463273585664002.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 3/4 个有
-- `MiniMaxChunkFeedForward` —— 2/4 个有
-- `MiniMaxLowVRAMAttention` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `ModelPreviewOverrideKJ` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `PixaromaLabel` —— 2/4 个有
-- `AudioConcat` —— 1/4 个有
-- `EmptyAudio` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
+- `BasicScheduler` —— 4/5 个有
+- `CLIPTextEncode` —— 4/5 个有
+- `LTX2SamplingPreviewOverride` —— 4/5 个有
+- `LTX2_NAG` —— 4/5 个有
+- `LTXDirector` —— 4/5 个有
+- `LTXVLatentUpsampler` —— 4/5 个有
+- `LatentUpscaleModelLoader` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `ManualSigmas` —— 4/5 个有
+- `ConditioningZeroOut` —— 3/5 个有
+- `VAEDecodeTiled` —— 3/5 个有
+- `ComfyMathExpression` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `TTResolutionSelector` —— 2/5 个有
+- `VAEDecode` —— 2/5 个有
+- `BatchCount+` —— 1/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `ImageFromBatch` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `Yusu-LTXDirector` —— 1/5 个有
 
 ## 典型参数
 

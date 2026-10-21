@@ -3,37 +3,28 @@ name: unknown_workflow_generic_897
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.765
-common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSVoiceClone, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, PreviewAny, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3, Text]
+coverage: 0.8335
+common_nodes: [RH_MinimaxH3MaxTurboTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频克隆 带语气情感_2076688971303833602.json, 音频生成/音频生成/音频克隆 音频生成Qwen3+TTS+ IndexTTS2+最新音色克隆带语气情感_2065299144884965377.json]
+members: [视频生成/文生视频/MiniMax-H3-Max-Turbo-文生视频_2099312761049272321.json, 视频生成/文生视频/文生视频-MiniMax-H3-Max-Turbo 增强极速版_2102304418111778818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_897
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/音频克隆 带语气情感_2076688971303833602.json、音频生成/音频生成/音频克隆 音频生成Qwen3+TTS+ IndexTTS2+最新音色克隆带语气情感_2065299144884965377.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3-Max-Turbo-文生视频_2099312761049272321.json、视频生成/文生视频/文生视频-MiniMax-H3-Max-Turbo 增强极速版_2102304418111778818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `FB_Qwen3TTSVoiceClone`
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `Text`
+- `RH_MinimaxH3MaxTurboTextToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

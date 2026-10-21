@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_448
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo, Text]
+coverage: 0.97725
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan3.0高速版-直出30秒-单图_首尾帧生视频_2093005951082262529.json, 视频生成/图生视频/阿里最强视频模型wan3.0 Prime多模态生视频低至0.43元_秒_2092420381729714178.json, 视频生成/文生视频/Wan3.0高速版-直出30秒-全能参考生视频_2093003268086652930.json]
+members: [音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json, 音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json, 音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json, 音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_448
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan3.0高速版-直出30秒-单图_首尾帧生视频_2093005951082262529.json、视频生成/图生视频/阿里最强视频模型wan3.0 Prime多模态生视频低至0.43元_秒_2092420381729714178.json、视频生成/文生视频/Wan3.0高速版-直出30秒-全能参考生视频_2093003268086652930.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json、音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json、音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json、音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
-- `Text`
+- `SaveAudio`
+- `T8_IndexTTS25_DialogueGenerate`
+- `T8_IndexTTS25_DialogueScript`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_RoleLibrary`
+- `T8_IndexTTS25_VoiceProfile`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30PrimeImageToVideo` —— 2/3 个有
-- `RH_AlibabaWan30PrimeReferenceToVideo` —— 2/3 个有
-- `easy saveText` —— 1/3 个有
+- `CR Prompt Text` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/4 个有
+- `easy indexTTSGenerateSimple` —— 1/4 个有
 
 ## 典型参数
 

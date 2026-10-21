@@ -1,66 +1,81 @@
 ---
 name: unknown_workflow_video_sampler_vae_8
 type: Unknown Workflow
-frequency: 27
+frequency: 26
 level: moderate
-coverage: 0.882481
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.760269
+common_nodes: [EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJ, ImpactSwitch, LayerUtility: ImageBlend, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
-missing: []
-members: [数字人/数字人/minimaxH3动态数字人1_2087111145051217921.json, 数字人/数字人/minimaxh3高动态数字人2_2087118803158257665.json, 数字人/数字人/一致性超强-H3数字人单人_2086308817486303234.json, 数字人/数字人/方格智联-MINI-H3数字人_2086681804894986242.json, 数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json, 视频生成/图生视频/H3_全能参考_2107892757984538626.json, 视频生成/图生视频/H3全能多参&音频驱动_2093425873709002754.json, 视频生成/图生视频/MiniMax H3-数字人 唱歌 口播_2089931741619380225.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2084906264412381186.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2100432995860697090.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2085324362105835522.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087570594790465537.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087800628679630849.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2089292719402348545.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090338216959373313.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090621488088047618.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2092061086244753409.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2097490216427810818.json, 视频生成/图生视频/Minimax H3开源 音频驱动数字人对口型 图生视频_2089311171798192129.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084955772458459137.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084990595327676418.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2084872893997076481.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2087072390349156353.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2089718644019388418.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人加速版_2088648115644620802.json, 视频生成/图生视频/数字人MV视频生成工作流_2094716000133537794.json, 视频生成/图生视频/音频数字人单人lightx2v加速版_2096834315270316033.json]
+missing: [LayerUtility: ImageBlend, LayerUtility: PurgeVRAM V2, Primitive float [Crystools], Primitive integer [Crystools], SimpleMath+, Text Concatenate, Text Multiline, easy cleanGpuUsed, easy imageRemBg]
+members: [图片生成/文生图/1970731121958920193.json, 数字人/数字人/视频自动人物替换-V2版本-循环版_1964248185155801090.json, 数字人/数字人/视频自动人物替换-纵_2089698980228849665.json, 数字人/数字人/跨境换装展示 自动人物替换-V2版本-循环版_2089735308039516162.json, 视频生成/图生视频/1961326580301762562.json, 视频生成/图生视频/2009156507505532930.json, 视频生成/图生视频/2041570599998328833.json, 视频生成/图生视频/1964703426166800385.json, 视频生成/图生视频/1964342957782482945.json, 视频生成/图生视频/1972870732168515586.json, 视频生成/图生视频/1965213821134622721.json, 视频生成/图生视频/1964883443333087234.json, 视频生成/图生视频/1967843353356283906.json, 视频生成/图生视频/2054089279747444738.json, 视频生成/图生视频/1978308100690173954.json, 视频生成/图生视频/1989248787958870017.json, 视频生成/图生视频/2017131658423570434.json, 视频生成/图生视频/2038239610723115009.json, 视频生成/图生视频/视频自动人物替换-V2版本_1955086878557048833.json, 视频生成/图生视频/2040327330937180162.json, 视频生成/图生视频/2041353977224241153.json, 视频生成/图生视频/2041775285426720769.json, 视频生成/图生视频/1970398580701884418.json, 视频生成/图生视频/2037789752887353346.json, 视频生成/文生视频/1966149260637106178.json, 视频生成/文生视频/视频替换背景-V2版本_1959794144917008385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（数字人/数字人/minimaxH3动态数字人1_2087111145051217921.json、数字人/数字人/minimaxh3高动态数字人2_2087118803158257665.json、数字人/数字人/一致性超强-H3数字人单人_2086308817486303234.json、数字人/数字人/方格智联-MINI-H3数字人_2086681804894986242.json、数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/文生图/1970731121958920193.json、数字人/数字人/视频自动人物替换-V2版本-循环版_1964248185155801090.json、数字人/数字人/视频自动人物替换-纵_2089698980228849665.json、数字人/数字人/跨境换装展示 自动人物替换-V2版本-循环版_2089735308039516162.json、视频生成/图生视频/1961326580301762562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadAudio`
+全部 26 个 workflow 都包含：
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `LayerUtility: ImageBlend`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 26/27 个有
-- `PreviewAudio` —— 26/27 个有
-- `AudioCrop` —— 25/27 个有
-- `UNETLoader` —— 25/27 个有
-- `PrimitiveStringMultiline` —— 24/27 个有
-- `PathchSageAttentionKJ` —— 21/27 个有
-- `AudioConcat` —— 15/27 个有
-- `EmptyAudio` —— 15/27 个有
-- `LoraLoaderModelOnly` —— 10/27 个有
-- `ModelAttentionBackend` —— 4/27 个有
-- `ModelPreviewOverrideKJ` —— 3/27 个有
-- `EnhancedLoadDiffusionModel` —— 2/27 个有
-- `RHHiddenNodes` —— 2/27 个有
-- `Text` —— 2/27 个有
-- `TrimAudioDuration` —— 2/27 个有
-- `Label (rgthree)` —— 1/27 个有
-- `RHLLMChatNode` —— 1/27 个有
-- `VHS_LoadVideo` —— 1/27 个有
-- `easy showAnything` —— 1/27 个有
+- `PreviewImage` —— 24/26 个有
+- `ColorMatch` —— 21/26 个有
+- `AIO_Preprocessor` —— 19/26 个有
+- `AddLabel` —— 19/26 个有
+- `DownloadAndLoadFlorence2Model` —— 19/26 个有
+- `DownloadAndLoadSAM2Model` —— 19/26 个有
+- `Florence2Run` —— 19/26 个有
+- `Florence2toCoordinates` —— 19/26 个有
+- `GrowMaskWithBlur` —— 19/26 个有
+- `InpaintPreprocessor` —— 19/26 个有
+- `LayerUtility: PurgeVRAM V2` —— 19/26 个有
+- `PrimitiveString` —— 19/26 个有
+- `RH_Translator` —— 19/26 个有
+- `Sam2Segmentation` —— 19/26 个有
+- `DepthAnything_V2` —— 18/26 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 18/26 个有
+- `ImageBlend` —— 18/26 个有
+- `Primitive float [Crystools]` —— 17/26 个有
+- `RMBG` —— 11/26 个有
+- `easy imageRemBg` —— 8/26 个有
+- `UnloadModel` —— 5/26 个有
+- `LayerUtility: ColorImage V2` —— 2/26 个有
 
 ## 典型参数
 
@@ -72,4 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageBlend、LayerUtility: PurgeVRAM V2、Primitive float [Crystools]、Primitive integer [Crystools]、SimpleMath+

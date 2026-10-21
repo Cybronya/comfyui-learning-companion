@@ -7,13 +7,13 @@ coverage: 0.898875
 common_nodes: [CLIPLoader, CLIPTextEncode, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2041766400284434433.json, 视频生成/图生视频/1987801301234987009.json, 视频生成/图生视频/2050537311854710785.json, 视频生成/文生视频/1949440813809467394.json, 视频生成/文生视频/1950385703961149441.json, 视频生成/文生视频/Running-Wan2.2图生视频_文生视频_2041761742291734530.json, 视频生成/文生视频/WAN2.2 文生视频、图生视频工作流_2018552915408982018.json, 视频生成/文生视频/Wan2.2&lightx2v加速_2072999665609777152.json]
+members: [视频生成/图生视频/2041766400284434433.json, 视频生成/图生视频/1987801301234987009.json, 视频生成/图生视频/2066459393683705858.json, 视频生成/文生视频/1949440813809467394.json, 视频生成/文生视频/1950385703961149441.json, 视频生成/文生视频/Running-Wan2.2图生视频_文生视频_2041761742291734530.json, 视频生成/文生视频/WAN2.2 文生视频、图生视频工作流_2018552915408982018.json, 视频生成/文生视频/Wan2.2&lightx2v加速_2072999665609777152.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2041766400284434433.json、视频生成/图生视频/1987801301234987009.json、视频生成/图生视频/2050537311854710785.json、视频生成/文生视频/1949440813809467394.json、视频生成/文生视频/1950385703961149441.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2041766400284434433.json、视频生成/图生视频/1987801301234987009.json、视频生成/图生视频/2066459393683705858.json、视频生成/文生视频/1949440813809467394.json、视频生成/文生视频/1950385703961149441.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

@@ -3,34 +3,33 @@ name: unknown_workflow_generic_796
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7335
-common_nodes: [IndexTTS2_ModelManager, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.857
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2情感克隆-高级语音工作流_2094736317346304002.json, 音频生成/音频生成/Easy IndexTTS2情感控制-情绪配音工作流_2094746968827457538.json]
+members: [图片生成/文生图/全能图片V1工作流_2000370551262674946.json, 图片生成/文生图/电商、摄影 _ 一致性编辑_2016375990590644226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_796
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2情感克隆-高级语音工作流_2094736317346304002.json、音频生成/音频生成/Easy IndexTTS2情感控制-情绪配音工作流_2094746968827457538.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片V1工作流_2000370551262674946.json、图片生成/文生图/电商、摄影 _ 一致性编辑_2016375990590644226.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2_ModelManager`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Advanced` —— 1/2 个有
-- `IndexTTS2_Emotion` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `JWImageResizeByLongerSide` —— 1/2 个有
 
 ## 典型参数
 

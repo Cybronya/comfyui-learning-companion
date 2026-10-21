@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_655
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6875
-common_nodes: [LoadImage, PreviewImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.675333
+common_nodes: [IndexTTS2Run, LoadAudio, LoadImage, MultiLinePromptIndex, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/文生图/1969685223988490242.json, 图片生成/文生图/年龄修改器Face Aging_1864266312905080833.json]
+members: [音频生成/音频生成/【遇见AI】indexTTS2语音模型，声音克隆，带情绪，多人对话_2052663528166834177.json, 音频生成/音频生成/单人说话不带情绪+全节点注释_2052264557875343361.json, 音频生成/音频生成/单人说话带情绪用向量（数字）控制+全节点注释_2052273736602136578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_655
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1969685223988490242.json、图片生成/文生图/年龄修改器Face Aging_1864266312905080833.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/【遇见AI】indexTTS2语音模型，声音克隆，带情绪，多人对话_2052663528166834177.json、音频生成/音频生成/单人说话不带情绪+全节点注释_2052264557875343361.json、音频生成/音频生成/单人说话带情绪用向量（数字）控制+全节点注释_2052273736602136578.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `MultiLinePromptIndex`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `AgeTransformationNode` —— 1/2 个有
-- `TutengGeminiAPI` —— 1/2 个有
+- `CR Prompt Text` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

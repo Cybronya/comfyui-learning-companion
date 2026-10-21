@@ -1,84 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_49
 type: Unknown Workflow
-frequency: 20
+frequency: 21
 level: moderate
-coverage: 0.61665
-common_nodes: [ControlNextGetPoses, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], SetNode, SimpleMath+, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.936333
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
-missing: [Primitive float [Crystools], Primitive integer [Crystools], SimpleMath+, Text Concatenate, Text Multiline]
-members: [视频生成/图生视频/1956657681140473857.json, 视频生成/图生视频/1955151856064499714.json, 视频生成/图生视频/1968333951213416449.json, 视频生成/图生视频/1958329470274977793.json, 视频生成/图生视频/1963046419189968898.json, 视频生成/图生视频/2053734676421988353.json, 视频生成/图生视频/2054742996398157826.json, 视频生成/图生视频/2052994688696762369.json, 视频生成/图生视频/单次复刻 30s 时长！Wan2.2 动作迁移：整条视频一键操作，真实度拉满_1957271440334712833.json, 视频生成/图生视频/2042038693006938114.json, 视频生成/图生视频/2042491077948612610.json, 视频生成/图生视频/2045027083465789442.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_1955251500776767489.json, 视频生成/图生视频/1955471370547335170.json, 视频生成/图生视频/2058912825199906818.json, 视频生成/图生视频/2060032983922470914.json, 视频生成/图生视频/2062871890934460417.json, 视频生成/图生视频/2080550651473514498.json, 视频生成/文生视频/1956657681140473857.json, 视频生成/文生视频/1956961863289245697.json]
+missing: []
+members: [视频生成/图生视频/1988149592183234562.json, 视频生成/图生视频/1990298374261927937.json, 视频生成/图生视频/2042473229025021954.json, 视频生成/图生视频/2038129720084140034.json, 视频生成/图生视频/2039686638024003585.json, 视频生成/图生视频/2038259769424744450.json, 视频生成/图生视频/2043221914818191361.json, 视频生成/图生视频/infinitetalk-workflow_2101559918137536513.json, 视频生成/图生视频/2054541988237717506.json, 视频生成/图生视频/1958721721454981121.json, 视频生成/图生视频/1993155666919571457.json, 视频生成/图生视频/infinitetalk单人_1957826962256658434.json, 视频生成/图生视频/2044669894783934465.json, 视频生成/图生视频/1983851965690056706.json, 视频生成/图生视频/1987800864440168449.json, 视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json, 视频生成/图生视频/1961786018880012290.json, 视频生成/图生视频/2080575708149145601.json, 视频生成/图生视频/1999412008917364738.json, 视频生成/图生视频/2054517632375771138.json, 视频生成/图生视频/2044453798432739329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_49
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/1956657681140473857.json、视频生成/图生视频/1955151856064499714.json、视频生成/图生视频/1968333951213416449.json、视频生成/图生视频/1958329470274977793.json、视频生成/图生视频/1963046419189968898.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/1988149592183234562.json、视频生成/图生视频/1990298374261927937.json、视频生成/图生视频/2042473229025021954.json、视频生成/图生视频/2038129720084140034.json、视频生成/图生视频/2039686638024003585.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `ControlNextGetPoses`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
+全部 21 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `SimpleMath+`
-- `Text Multiline`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoControlEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 19/20 个有
-- `ImageFromBatch` —— 19/20 个有
-- `ImpactSwitch` —— 19/20 个有
-- `Int` —— 19/20 个有
-- `Primitive float [Crystools]` —— 19/20 个有
-- `RHHiddenNodes` —— 19/20 个有
-- `ShowText|pysssss` —— 19/20 个有
-- `Text Concatenate` —— 19/20 个有
-- `WanVideoBlockSwap` —— 19/20 个有
-- `WanVideoSLG` —— 19/20 个有
-- `WanVideoSetBlockSwap` —— 18/20 个有
-- `RH_Captioner` —— 16/20 个有
-- `ImpactInt` —— 3/20 个有
-- `LayerUtility: JoyCaptionBeta1` —— 3/20 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 3/20 个有
-- `easy showAnything` —— 3/20 个有
-- `WanVideoLoraSelect` —— 2/20 个有
-- `WanVideoLoraSelectMulti` —— 2/20 个有
-- `WanVideoModelLoader` —— 2/20 个有
-- `GetImageRangeFromBatch` —— 1/20 个有
-- `ImageBatchMulti` —— 1/20 个有
-- `ImageUpscaleWithModel` —— 1/20 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/20 个有
-- `RepeatImageBatch` —— 1/20 个有
-- `UpscaleModelLoader` —— 1/20 个有
-- `WanVideoEmptyEmbeds` —— 1/20 个有
-- `easy forLoopEnd` —— 1/20 个有
-- `easy forLoopStart` —— 1/20 个有
+- `Int` —— 20/21 个有
+- `RH_GetAudioDuration` —— 20/21 个有
+- `ToInt` —— 20/21 个有
+- `WanVideoTorchCompileSettings` —— 20/21 个有
+- `ImageResizeKJv2` —— 19/21 个有
+- `AudioCrop` —— 17/21 个有
+- `Audio Duration (mtb)` —— 1/21 个有
+- `AudioCombine` —— 1/21 个有
+- `CR Prompt Text` —— 1/21 个有
+- `CR SDXL Aspect Ratio` —— 1/21 个有
+- `DF_Image_scale_to_side` —— 1/21 个有
+- `GetNode` —— 1/21 个有
+- `JWInteger` —— 1/21 个有
+- `JjkText` —— 1/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/21 个有
+- `PreviewImage` —— 1/21 个有
+- `SetNode` —— 1/21 个有
+- `SoundFlow_TrimAudio` —— 1/21 个有
+- `Text` —— 1/21 个有
+- `kkGetImage` —— 1/21 个有
 
 ## 典型参数
 
@@ -90,4 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Primitive float [Crystools]、Primitive integer [Crystools]、SimpleMath+、Text Concatenate、Text Multiline
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,49 +3,71 @@ name: unknown_workflow_video_upscale_latent_upscale_140
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.694
-common_nodes: [BasicGuider, BasicScheduler, ExtendIntermediateSigmas, FlashVSRNode, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse]
+coverage: 0.938
+common_nodes: [BasicGuider, CLIPLoader, CR Seed, ComfyMathExpression, ImpactConditionalBranch, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextSaveLatent, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine, Yuan_H3MotionContextLoadLatent, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json, 视频生成/文生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json]
+members: [视频生成/图生视频/t8大佬的文武双全工作流_2099453228814528513.json, 视频生成/文生视频/动态生成_2093350007784173570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_140
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json、视频生成/文生视频/【MINIMAX-H3】地表最强能文能武双采工作流_2102043265943031809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/t8大佬的文武双全工作流_2099453228814528513.json、视频生成/文生视频/动态生成_2093350007784173570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
-- `ExtendIntermediateSigmas`
-- `FlashVSRNode`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `CLIPLoader`
+- `CR Seed`
+- `ComfyMathExpression`
+- `ImpactConditionalBranch`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MinimaxH3LatentUpscaler3D`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextSaveLatent`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
 - `ModelAttentionBackend`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `SolAttnMiniMax`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy ifElse`
+- `Yuan_H3MotionContextLoadLatent`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `Float` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `MiniMaxChunkFeedForward` —— 1/2 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/2 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/2 个有
+- `MiniMaxLowVRAMAttention` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `Yuan_MiniMaxH3Video` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

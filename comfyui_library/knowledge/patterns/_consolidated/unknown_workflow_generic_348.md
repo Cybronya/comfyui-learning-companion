@@ -3,38 +3,28 @@ name: unknown_workflow_generic_348
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.951
-common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, IndexTTS2Run, LoadAudio, PreviewAudio]
+coverage: 1
+common_nodes: [ByteDance2TextToVideoNode, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json, 音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json, 音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json, 音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json]
+members: [comfyui-workflow-templates-json/api_seedance2_0_mini_t2v.json, comfyui-workflow-templates-json/api_seedance2_0_t2v.json, comfyui-workflow-templates-json/api_seedance2_5_t2v.json, comfyui-workflow-templates-json/api_seedance2_5_t2v_1080p.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_348
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json、音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json、音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json、音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_t2v.json、comfyui-workflow-templates-json/api_seedance2_0_t2v.json、comfyui-workflow-templates-json/api_seedance2_5_t2v.json、comfyui-workflow-templates-json/api_seedance2_5_t2v_1080p.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 3/4 个有
-- `CR Text` —— 2/4 个有
+- `ByteDance2TextToVideoNode`
+- `SaveVideo`
 
 ## 典型参数
 

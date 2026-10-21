@@ -3,62 +3,81 @@ name: unknown_workflow_video_lora_sampler_126
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.587462
-common_nodes: [CogVideoEnhanceAVideo, GetNode, ImageCASharpening+, ImageResize+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.833462
+common_nodes: [Float, Float to Int, GetNode, ImageConcanate, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Seed, SetNode, SimpleMath+, Text, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1926239959831769089.json, 视频生成/图生视频/1943217386050764801.json, 视频生成/图生视频/1930416683494621185.json, 视频生成/图生视频/1932144473588101122.json, 视频生成/图生视频/1932777687310372865.json, 视频生成/图生视频/1931512352187809794.json, 视频生成/图生视频/1931191683562536961.json, 视频生成/图生视频/1931298489089896450.json, 视频生成/图生视频/1931133040167157762.json, 视频生成/图生视频/1924501888635424769.json, 视频生成/图生视频/1934219687129735170.json, 视频生成/图生视频/1930913690252718081.json, 视频生成/图生视频/2050075485417295874.json]
+members: [视频生成/图生视频/BERNINI人物替换T1_2085417527483650049.json, 视频生成/图生视频/2079824868111110146.json, 视频生成/图生视频/2080574786954153986.json, 视频生成/图生视频/2076844242881826817.json, 视频生成/图生视频/2076683183000743938.json, 视频生成/图生视频/2079522047658643458.json, 视频生成/图生视频/2078756006259150849.json, 视频生成/图生视频/bernini实现双角色替换2_2079576982060363777.json, 视频生成/图生视频/2080460661460652034.json, 视频生成/图生视频/2080622772925063170.json, 视频生成/图生视频/2080823624159817729.json, 视频生成/图生视频/人物替换_2084868935287136257.json, 视频生成/图生视频/天啊辣条好辣_2085915330479742978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_126
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1926239959831769089.json、视频生成/图生视频/1943217386050764801.json、视频生成/图生视频/1930416683494621185.json、视频生成/图生视频/1932144473588101122.json、视频生成/图生视频/1932777687310372865.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/BERNINI人物替换T1_2085417527483650049.json、视频生成/图生视频/2079824868111110146.json、视频生成/图生视频/2080574786954153986.json、视频生成/图生视频/2076844242881826817.json、视频生成/图生视频/2076683183000743938.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `CogVideoEnhanceAVideo`
+- `Float`
+- `Float to Int`
 - `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `JWInteger`
+- `ImageConcanate`
+- `ImageFromBatch`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `Seed`
 - `SetNode`
+- `SimpleMath+`
+- `Text`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 12/13 个有
-- `RHHiddenNodes` —— 12/13 个有
-- `WanVideoTeaCache` —— 12/13 个有
-- `CLIPVisionLoader` —— 11/13 个有
-- `ShowText|pysssss` —— 11/13 个有
-- `WanVideoClipVisionEncode` —— 9/13 个有
-- `WanVideoImageToVideoEncode` —— 9/13 个有
-- `WanVideoVACEEncode` —— 4/13 个有
-- `WanVideoVACEModelSelect` —— 4/13 个有
-- `CR Text Concatenate` —— 3/13 个有
-- `RH_Translator` —— 2/13 个有
-- `WanVideoVACEStartToEndFrame` —— 2/13 个有
-- `Note _O` —— 1/13 个有
-- `Text Multiline` —— 1/13 个有
+- `PreviewImage` —— 11/13 个有
+- `ImageResizeKJv2` —— 8/13 个有
+- `RMBG` —— 8/13 个有
+- `easy indexAnything` —— 8/13 个有
+- `RH_Captioner` —— 7/13 个有
+- `TextConcatenate_UTK` —— 7/13 个有
+- `easy imageCount` —— 7/13 个有
+- `RHHiddenNodes` —— 6/13 个有
+- `RH_Translator` —— 6/13 个有
+- `StringReplace` —— 6/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/13 个有
+- `Bjornulf_ShowInt` —— 4/13 个有
+- `CR Image Grid Panel` —— 4/13 个有
+- `ExtractNFrames` —— 4/13 个有
+- `PreviewAny` —— 3/13 个有
+- `PurgeVRAM_UTK` —— 3/13 个有
+- `RTXVideoSuperResolution` —— 3/13 个有
+- `FillMaskWithColor` —— 2/13 个有
+- `GoogleTranslator` —— 2/13 个有
+- `PointsEditor` —— 2/13 个有
+- `PrimitiveInt` —— 2/13 个有
+- `SeCModelLoader` —— 2/13 个有
+- `SeCVideoSegmentation` —— 2/13 个有
 
 ## 典型参数
 

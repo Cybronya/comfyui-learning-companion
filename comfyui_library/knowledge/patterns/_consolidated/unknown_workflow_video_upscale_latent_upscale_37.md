@@ -3,162 +3,79 @@ name: unknown_workflow_video_upscale_latent_upscale_37
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.6186
-common_nodes: [Any To Any, AudioConcat, BasicScheduler, BatchImagesNode, BerniniConditioning, BerniniPromptEnhancer, Bool, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, ComfySwitchNode, CreateVideo, DualCLIPLoader, EmptyAudio, EmptyLTXVLatentVideo, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GetVideoComponents, INTConstant, ImageScaleToTotalPixels, KSamplerAdvanced, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXVAddLatentGuide, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSetAudioRefTokens, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MaxNode, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, Qwen3_VQA, RH_LLMAPI_NODE, RandomNoise, Remove Text, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetNode, StringConcatenate, StringReplace, TTP_text_mix, TextGenerateLTX2Prompt, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VAELoaderKJ, VHS_GetImageCount, VHS_SelectFilename, VHS_VideoCombine, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imagesSplitImage, easy showAnything, easy timelineInfoOutput, easy timelineSegmentCount, easy timelineSegmentOutput]
+coverage: 0.465
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2067837770793570305.json, 视频生成/图生视频/2068568094041272321.json, 视频生成/图生视频/2067515281458688002.json, 视频生成/图生视频/Bernini+Ltx23+LoRA导演分镜JSON多参对话时序控制分镜扩展_2083885433636868098.json, 视频生成/图生视频/2073796369281806338.json, 视频生成/图生视频/2070562371348811777.json, 视频生成/文生视频/Bernini+LTX25+LoRA导演分镜JSON多参对话时序控制分镜扩展_2089347303902638081.json, 视频生成/文生视频/Bernini+Ltx2.3+PR导演短剧分镜台 多参考 对话时序控制 分镜扩展_2076389200764694530.json, 视频生成/文生视频/Bernini+Ltx23+LoRA导演分镜JSON多参对话时序控制分镜扩展_2083885433636868098.json, 视频生成/文生视频/Bernini+Ltx23+PR导演分镜JSON多参考对话时序控制分镜扩展_2076885173060325378.json]
+members: [视频生成/图生视频/2082528336852635649.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json, 视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json, 视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json, 视频生成/图生视频/LTX2.3-best_faceid_charsheet-人脸高一致性_2083089483041427458.json, 视频生成/图生视频/LTX2.3-best_faceid_ganloss-人脸高一致性_2083196415471345666.json, 视频生成/图生视频/2080574328030191617.json, 视频生成/图生视频/2080581115986931714.json, 视频生成/图生视频/2080566370382729217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_37
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2067837770793570305.json、视频生成/图生视频/2068568094041272321.json、视频生成/图生视频/2067515281458688002.json、视频生成/图生视频/Bernini+Ltx23+LoRA导演分镜JSON多参对话时序控制分镜扩展_2083885433636868098.json、视频生成/图生视频/2073796369281806338.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2082528336852635649.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json、视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json、视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `Any To Any`
-- `AudioConcat`
-- `BasicScheduler`
-- `BatchImagesNode`
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
-- `Bool`
 - `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
-- `CreateVideo`
 - `DualCLIPLoader`
-- `EmptyAudio`
 - `EmptyLTXVLatentVideo`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
 - `GetNode`
-- `GetVideoComponents`
-- `INTConstant`
-- `ImageScaleToTotalPixels`
-- `KSamplerAdvanced`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXVAddLatentGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVideoMask`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LTXVSetAudioRefTokens`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `MaxNode`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `Qwen3_VQA`
-- `RH_LLMAPI_NODE`
 - `RandomNoise`
-- `Remove Text`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `SetNode`
-- `StringConcatenate`
-- `StringReplace`
-- `TTP_text_mix`
-- `TextGenerateLTX2Prompt`
-- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAELoader`
 - `VAELoaderKJ`
-- `VHS_GetImageCount`
-- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imagesSplitImage`
-- `easy showAnything`
-- `easy timelineInfoOutput`
-- `easy timelineSegmentCount`
-- `easy timelineSegmentOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 9/10 个有
-- `EmptyHunyuanLatentVideo` —— 9/10 个有
-- `PromptRelayEncode` —— 9/10 个有
-- `GetImageSize` —— 7/10 个有
-- `ImageResizeKJv2` —— 7/10 个有
-- `LTXVPreprocess` —— 7/10 个有
-- `LazySwitchKJ` —— 7/10 个有
-- `SimpleCalculatorKJ` —— 7/10 个有
-- `easy timelineEditor` —— 7/10 个有
-- `PreviewAudio` —— 6/10 个有
-- `PreviewImage` —— 5/10 个有
-- `GetImagesFromBatchIndexed` —— 4/10 个有
-- `ImpactMakeImageBatch` —— 4/10 个有
-- `LoadImageReturnFilename` —— 4/10 个有
-- `ReplaceString` —— 4/10 个有
-- `TextBoxMira` —— 4/10 个有
-- `TextPreview` —— 4/10 个有
-- `AudioCrop` —— 3/10 个有
-- `Context (rgthree)` —— 3/10 个有
-- `Context Switch (rgthree)` —— 3/10 个有
-- `DF_Text_Box` —— 3/10 个有
-- `JWStringConcat` —— 3/10 个有
-- `JWStringGetLine` —— 3/10 个有
-- `JWStringSplit` —— 3/10 个有
-- `JWStringToInteger` —— 3/10 个有
-- `JjkShowText` —— 3/10 个有
-- `LTXVReferenceAudio` —— 3/10 个有
-- `LoadAudio` —— 3/10 个有
-- `SaveImage` —— 3/10 个有
-- `SeedGenerator` —— 3/10 个有
-- `StringConstant` —— 3/10 个有
-- `StringSubstring` —— 3/10 个有
-- `TextSplitByDelimiter` —— 3/10 个有
-- `VRAM_Debug` —— 3/10 个有
-- `easy imageConcat` —— 3/10 个有
-- `easy imageIndexSwitch` —— 3/10 个有
-- `easy indexAnything` —— 3/10 个有
-- `easy promptReplace` —— 3/10 个有
-- `Any To String (mtb)` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `LTXVAudioVAEEncode` —— 1/10 个有
-- `ModelSamplingSD3` —— 1/10 个有
+- `LTXIdentityOverlapConditioning` —— 9/10 个有
+- `LoadImage` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `PrimitiveBoolean` —— 9/10 个有
+- `RMBG` —— 9/10 个有
+- `BasicScheduler` —— 8/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `LTXVAudioVAEDecode` —— 7/10 个有
+- `LTXVCropGuides` —— 7/10 个有
+- `VAEDecodeTiled` —— 7/10 个有
+- `LTXTiledSampler` —— 6/10 个有
+- `LTXVLatentUpsamplerTiled` —— 6/10 个有
+- `SimpleMath+` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `孤海注释` —— 2/10 个有
+- `GetImageRangeFromBatch` —— 1/10 个有
+- `ImageConcanate` —— 1/10 个有
+- `LTXVAddGuideMulti` —— 1/10 个有
+- `LTXVImgToVideoInplace` —— 1/10 个有
+- `LTXVLatentUpsampler` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `VAEEncode` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 10 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 10 | 100% |
-| 采样算法 | 1 | 1 - 1 | 10 | 100% |
-| 调度器 | euler | - | 10 | 100% |
-| 重绘幅度 | simple | - | 10 | 100% |
 | 宽度 | 97 | 97 - 97 | 10 | 100% |
 | 高度 | 25 | 25 - 25 | 10 | 100% |
 
@@ -168,10 +85,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，10 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，10 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，10 个样本，一致性 100%
-- 重绘幅度 最常用 simple，10 个样本，一致性 100%
 - 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
 - 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

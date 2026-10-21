@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_lora_sampler_checkpoint
 type: Unknown Workflow
-frequency: 12
+frequency: 19
 level: moderate
-coverage: 0.96125
-common_nodes: [BasicScheduler, CFGGuider, CheckpointLoaderSimple, ConditioningZeroOut, CreateVideo, KSamplerSelect, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled]
+coverage: 0.949211
+common_nodes: [BasicScheduler, CFGGuider, CheckpointLoaderSimple, ConditioningZeroOut, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059815779062865922.json, 视频生成/图生视频/2059858506483847169.json, 视频生成/图生视频/2057286566376202241.json, 视频生成/图生视频/2058019383724830722.json, 视频生成/图生视频/2055076989958139906.json, 视频生成/图生视频/2055639215265861633.json, 视频生成/图生视频/2059458319999397889.json, 视频生成/图生视频/2061429598319104001.json, 视频生成/图生视频/2056296631754117121.json, 视频生成/图生视频/2057419629450063874.json, 视频生成/图生视频/2055095279413669890.json, 视频生成/图生视频/2067766430577287169.json]
+members: [图片生成/文生图/LTX2.3导演分镜流_2073321199618314242.json, 视频生成/图生视频/2055655934248144898.json, 视频生成/图生视频/2059487866354495489.json, 视频生成/图生视频/2058028747135217666.json, 视频生成/图生视频/2055524487839404034.json, 视频生成/图生视频/2055900601728421889.json, 视频生成/图生视频/2059815779062865922.json, 视频生成/图生视频/2057726231881281537.json, 视频生成/图生视频/2055076989958139906.json, 视频生成/图生视频/2061429598319104001.json, 视频生成/图生视频/2056296631754117121.json, 视频生成/图生视频/2057419629450063874.json, 视频生成/图生视频/2058649918318923777.json, 视频生成/图生视频/2055635483195133953.json, 视频生成/图生视频/2061446032973713410.json, 视频生成/图生视频/2055531778017906689.json, 视频生成/图生视频/2056691705071620098.json, 视频生成/文生视频/LTX 2.3 Director 导演工作台 ComfyUI 在线工作流_2060986578205503489.json, 视频生成/文生视频/LTX Director 导演工作台 (2采)_2064170624049827841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_checkpoint
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2059815779062865922.json、视频生成/图生视频/2059858506483847169.json、视频生成/图生视频/2057286566376202241.json、视频生成/图生视频/2058019383724830722.json、视频生成/图生视频/2055076989958139906.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/文生图/LTX2.3导演分镜流_2073321199618314242.json、视频生成/图生视频/2055655934248144898.json、视频生成/图生视频/2059487866354495489.json、视频生成/图生视频/2058028747135217666.json、视频生成/图生视频/2055524487839404034.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `BasicScheduler`
 - `CFGGuider`
 - `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
-- `CreateVideo`
 - `KSamplerSelect`
 - `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
@@ -37,32 +37,30 @@ source: knowledge_consolidation
 - `LoraLoaderModelOnly`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 11/12 个有
-- `LTX2SamplingPreviewOverride` —— 11/12 个有
-- `LTXDirector` —— 11/12 个有
-- `LTXVLatentUpsampler` —— 11/12 个有
-- `LatentUpscaleModelLoader` —— 11/12 个有
-- `SaveVideo` —— 11/12 个有
-- `VAELoaderKJ` —— 11/12 个有
-- `LTXVAudioVAEDecode` —— 10/12 个有
-- `LoadImage` —— 2/12 个有
-- `CS-LTXGridDirector` —— 1/12 个有
-- `ComfySwitchNode` —— 1/12 个有
-- `GetVideoComponents` —— 1/12 个有
-- `Int` —— 1/12 个有
-- `LTXAVTextEncoderLoader` —— 1/12 个有
-- `LTXFloatToInt` —— 1/12 个有
-- `LTXVAudioVAELoader` —— 1/12 个有
-- `LayerUtility: ColorImage` —— 1/12 个有
-- `PrimitiveBoolean` —— 1/12 个有
-- `PrimitiveFloat` —— 1/12 个有
-- `SaveAudio` —— 1/12 个有
-- `UNETLoader` —— 1/12 个有
-- `VHS_VideoCombine` —— 1/12 个有
-- `easy imageSize` —— 1/12 个有
+- `CreateVideo` —— 18/19 个有
+- `LTXDirector` —— 18/19 个有
+- `SaveVideo` —— 18/19 个有
+- `LTX2SamplingPreviewOverride` —— 17/19 个有
+- `LTXVLatentUpsampler` —— 17/19 个有
+- `LatentUpscaleModelLoader` —— 17/19 个有
+- `DualCLIPLoader` —— 16/19 个有
+- `VAELoaderKJ` —— 16/19 个有
+- `VAEDecodeTiled` —— 15/19 个有
+- `LTXAVTextEncoderLoader` —— 4/19 个有
+- `VAEDecode` —— 4/19 个有
+- `ImpactSwitch` —— 3/19 个有
+- `Int` —— 3/19 个有
+- `LTXVAudioVAELoader` —— 3/19 个有
+- `LoadImage` —— 3/19 个有
+- `ComfySwitchNode` —— 2/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/19 个有
+- `PrimitiveBoolean` —— 2/19 个有
+- `VHS_VideoCombine` —— 2/19 个有
+- `CS-LTXGridDirector` —— 1/19 个有
+- `GetNode` —— 1/19 个有
+- `SetNode` —— 1/19 个有
 
 ## 典型参数
 

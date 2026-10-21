@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_443
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.677667
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, LoadImage, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.897
+common_nodes: [FishS2MultiSpeakerTTS, FishS2TTS, FishS2VoiceCloneTTS, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2082393915415683074.json, 视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json, 视频生成/文生视频/Seedance2.0全能参考（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051223810644430850.json]
+members: [音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json, 音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json, 音频生成/音频生成/【遇见AI】FishAudio S2 TTS ，文生声音，声音克隆，多人对话。情感控制超厉害_2039520700335132674.json, 音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_443
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2082393915415683074.json、视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json、视频生成/文生视频/Seedance2.0全能参考（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051223810644430850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json、音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json、音频生成/音频生成/【遇见AI】FishAudio S2 TTS ，文生声音，声音克隆，多人对话。情感控制超厉害_2039520700335132674.json、音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+全部 4 个 workflow 都包含：
+- `FishS2MultiSpeakerTTS`
+- `FishS2TTS`
+- `FishS2VoiceCloneTTS`
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `Apply Whisper` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `Audio To Text (mtb)` —— 1/4 个有
+- `Load Whisper (mtb)` —— 1/4 个有
 
 ## 典型参数
 

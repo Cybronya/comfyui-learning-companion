@@ -1,74 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_172
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.967
-common_nodes: [BasicGuider, CLIPLoader, CreateVideo, GetImageSizeAndCount, GrowMask, ImageBlur, ImageCompositeMasked, ImageScaleToTotalPixels, ImageToMask, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoadVideoDepthAnythingModel, MaskToImage, MiniMaxH3ReferenceToVideo, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, PointsEditor, RandomNoise, SamplerCustomAdvanced, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VideoDepthAnythingProcess]
+coverage: 0.69875
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json]
+members: [视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json, 视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json, 视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json, 视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json、视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json、视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json、视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
 - `CreateVideo`
-- `GetImageSizeAndCount`
-- `GrowMask`
-- `ImageBlur`
-- `ImageCompositeMasked`
-- `ImageScaleToTotalPixels`
-- `ImageToMask`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadVideoDepthAnythingModel`
-- `MaskToImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3VDNExecutionPlanT8Advanced`
-- `MiniMaxH3VDNModelComposerT8Advanced`
-- `PointsEditor`
+- `PreviewAny`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetLatentNoiseMask`
-- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VideoDepthAnythingProcess`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 2/3 个有
-- `VHS_VideoInfoLoaded` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `MiniMaxH3AVDecodeT8` —— 1/3 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
-- `MiniMaxH3AudioMixT8` —— 1/3 个有
-- `MiniMaxH3FaceRefineConditioningT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefinePlanT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefineSamplerT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefineStitchAuditT8Advanced` —— 1/3 个有
-- `MiniMaxH3OutputTrimT8` —— 1/3 个有
-- `MiniMaxH3SafeAVSaveT8Advanced` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `Any Switch (rgthree)` —— 2/4 个有
+- `CacheDiT_Model_Optimizer` —— 2/4 个有
+- `GetVideoComponents` —— 2/4 个有
+- `ImpactSwitch` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `LoadVideo` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `MiniMaxH3SigmaShift` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `SolAttnPatch` —— 2/4 个有
 
 ## 典型参数
 

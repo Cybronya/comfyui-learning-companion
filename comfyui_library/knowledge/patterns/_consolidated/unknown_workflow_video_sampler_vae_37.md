@@ -1,68 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_vae_37
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.7167
-common_nodes: [CR Text, GetNode, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.876364
+common_nodes: [INTConstant, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2009184858895028226.json, 视频生成/图生视频/1934118211120226306.json, 视频生成/图生视频/1951680460374134786.json, 视频生成/图生视频/1954815922643058689.json, 视频生成/图生视频/1954845153740546050.json, 视频生成/图生视频/1945842759951413249.json, 视频生成/图生视频/1946835698130251777.json, 视频生成/文生视频/AniWan图生视频1280高清_2069686480091570177.json, 视频生成/文生视频/AniWan图生视频1280高清_2072935689649483778.json, 视频生成/文生视频/1954108847948480514.json]
+members: [视频生成/图生视频/2017128536502439937.json, 视频生成/图生视频/2027315533716131841.json, 视频生成/图生视频/1933786059002007553.json, 视频生成/图生视频/1917399608392089601.json, 视频生成/图生视频/2019240301956702210.json, 视频生成/图生视频/1927581509937422337.json, 视频生成/图生视频/1971606625880567810.json, 视频生成/图生视频/1928697815218950145.json, 视频生成/图生视频/1935045733223735298.json, 视频生成/图生视频/1930083460306649089.json, 视频生成/文生视频/1937481435781447681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2009184858895028226.json、视频生成/图生视频/1934118211120226306.json、视频生成/图生视频/1951680460374134786.json、视频生成/图生视频/1954815922643058689.json、视频生成/图生视频/1954845153740546050.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2017128536502439937.json、视频生成/图生视频/2027315533716131841.json、视频生成/图生视频/1933786059002007553.json、视频生成/图生视频/1917399608392089601.json、视频生成/图生视频/2019240301956702210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `JWInteger`
+全部 11 个 workflow 都包含：
+- `INTConstant`
+- `ImagePadKJ`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/10 个有
-- `MathExpression|pysssss` —— 9/10 个有
-- `WanVideoLoraSelect` —— 9/10 个有
-- `WanVideoTorchCompileSettings` —— 9/10 个有
-- `ImpactSwitch` —— 8/10 个有
-- `RH_LLMAPI_NODE` —— 8/10 个有
-- `easy showAnything` —— 8/10 个有
-- `WanVideoApplyNAG` —— 7/10 个有
-- `WanVideoTextEncodeSingle` —— 7/10 个有
-- `WanVideoEnhanceAVideo` —— 6/10 个有
-- `WanVideoSLG` —— 6/10 个有
-- `WanVideoEasyCache` —— 5/10 个有
-- `WanVideoExperimentalArgs` —— 5/10 个有
-- `ImageConcanate` —— 4/10 个有
-- `ImageResizeKJ` —— 4/10 个有
-- `LoadWanVideoClipTextEncoder` —— 4/10 个有
-- `WanVideoClipVisionEncode` —— 4/10 个有
-- `Primitive integer [Crystools]` —— 3/10 个有
-- `WanVideoSetBlockSwap` —— 3/10 个有
-- `WanVideoSetLoRAs` —— 3/10 个有
-- `WanVideoTextEncode` —— 3/10 个有
-- `FloatToSigmas` —— 2/10 个有
-- `StringToFloatList` —— 2/10 个有
-- `CreateCFGScheduleFloatList` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `PreviewImage` —— 10/11 个有
+- `WanVideoTextEncode` —— 9/11 个有
+- `ImageConcatMulti` —— 8/11 个有
+- `WanVideoTorchCompileSettings` —— 8/11 个有
+- `WanVideoTeaCache` —— 7/11 个有
+- `easy imageRemBg` —— 6/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
+- `FlashVSRNode` —— 2/11 个有
+- `WanVideoApplyNAG` —— 2/11 个有
+- `WanVideoTextEncodeSingle` —— 2/11 个有
+- `Evaluate Integers` —— 1/11 个有
+- `JjkText` —— 1/11 个有
+- `Text _O` —— 1/11 个有
 
 ## 典型参数
 

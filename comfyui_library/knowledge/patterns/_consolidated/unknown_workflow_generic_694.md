@@ -3,33 +3,30 @@ name: unknown_workflow_generic_694
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, SaveVideo]
+coverage: 0.833
+common_nodes: [RecraftColorRGB, RecraftControls, RecraftV4TextToImageNode, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/SD mini 四参考图_2101864721564659714.json, 视频生成/图生视频/（自用）Seedance2.0多参Mini过场动画（RH版）_2088707198355599362.json]
+members: [comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json, comfyui-workflow-templates-json/api_recraft_v4_t2i.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_694
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SD mini 四参考图_2101864721564659714.json、视频生成/图生视频/（自用）Seedance2.0多参Mini过场动画（RH版）_2088707198355599362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_t2i.json、comfyui-workflow-templates-json/api_recraft_v4_t2i.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ConcatTextOfUtils` —— 1/2 个有
+- `RecraftColorRGB`
+- `RecraftControls`
+- `RecraftV4TextToImageNode`
+- `SaveImage`
 
 ## 典型参数
 

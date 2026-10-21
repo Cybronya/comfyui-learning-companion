@@ -3,52 +3,61 @@ name: unknown_workflow_video_lora_sampler_925
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7935
-common_nodes: [GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImageResizeKJv2, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy ifElse]
+coverage: 0.643
+common_nodes: [GetImageRangeFromBatch, GetNode, GrowMask, ImageConcanate, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PointsEditor, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
-missing: [Image Blank, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, String Literal]
-members: [视频生成/文生视频/1963899418183438337.json, 视频生成/文生视频/WAN2.2-AllInOne单图参考_2072999602976235520.json]
+missing: []
+members: [视频生成/图生视频/1980895212593659906.json, 视频生成/文生视频/MoCha_像viggle一样进行角色替换_1981408974144708609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_925
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1963899418183438337.json、视频生成/文生视频/WAN2.2-AllInOne单图参考_2072999602976235520.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1980895212593659906.json、视频生成/文生视频/MoCha_像viggle一样进行角色替换_1981408974144708609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSize`
-- `INTConstant`
-- `Image Blank`
-- `ImageCompositeMasked`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GrowMask`
+- `ImageConcanate`
 - `ImageResizeKJv2`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MaskPreview`
+- `MochaEmbeds`
+- `PointsEditor`
 - `PreviewImage`
-- `String Literal`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy ifElse`
+
+**可变部分**（部分 workflow 才有）：
+- `ACE_ImageFaceCrop` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `FlashVSRNode` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LynxInsightFaceCrop` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `SeCModelLoader` —— 1/2 个有
+- `SeCVideoSegmentation` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `VHS_VideoInfoLoaded` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 
@@ -60,5 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Blank、LayerMask: LoadFlorence2Model、LayerMask: ObjectDetectorFL2、LayerMask: SAM2Ultra、LayerUtility: PurgeVRAM
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

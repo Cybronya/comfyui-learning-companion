@@ -3,58 +3,83 @@ name: unknown_workflow_video_lora_sampler_128
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.770077
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.548769
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, FastGroupsBypassSwitch, Image Blank, ImageCompositeMasked, ImageResizeKJv2, LoadImage, PreviewImage, RepeatImageBatch, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMaskV2, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2060992668020338689.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100475521611157506.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100747392579624962.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097216684217163777.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097636379042869250.json, 视频生成/图生视频/minimax h3_2089645770512359426.json, 视频生成/图生视频/minimax h3单图生视频_2086525904381112321.json, 视频生成/图生视频/minimax h3电商带货视频。自动提示词 无忧做带货视频_2087554123494416385.json, 视频生成/图生视频/一个普通的工作流_2094967354697535490.json, 视频生成/图生视频/全能参考 加速版_2086341513830817793.json, 视频生成/文生视频/MINIMAX-H3 开源加速版工作流4步lora加速合集h3文单图生多图参考_2087132475666550785.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085737590669529090.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085738060221861890.json]
+members: [视频生成/图生视频/2076308191373254658.json, 视频生成/图生视频/2076932640346828801.json, 视频生成/图生视频/2076583160242065410.json, 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2096555365210083330.json, 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2100180765987401729.json, 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2100547577077911554.json, 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2101866496606695426.json, 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2105471008286273538.json, 视频生成/图生视频/2078094936641200130.json, 视频生成/图生视频/2074076654124752897.json, 视频生成/图生视频/2081659907098636289.json, 视频生成/图生视频/2075472358017687554.json, 视频生成/图生视频/2074344791734837250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_128
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2060992668020338689.json、视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100475521611157506.json、视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100747392579624962.json、视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097216684217163777.json、视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097636379042869250.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2076308191373254658.json、视频生成/图生视频/2076932640346828801.json、视频生成/图生视频/2076583160242065410.json、视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2096555365210083330.json、视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2100180765987401729.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `FastGroupsBypassSwitch`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `PreviewImage`
+- `RepeatImageBatch`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMaskV2`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 11/13 个有
-- `PrimitiveFloat` —— 11/13 个有
-- `PrimitiveStringMultiline` —— 11/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/13 个有
-- `LoadAudio` —— 7/13 个有
-- `PreviewAny` —— 5/13 个有
-- `RHLLMChatNode` —— 5/13 个有
-- `RHHiddenNodes` —— 4/13 个有
-- `UniBlockSwap` —— 4/13 个有
-- `Int` —— 2/13 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/13 个有
-- `CR Text` —— 1/13 个有
-- `PrimitiveInt` —— 1/13 个有
-- `ShowAnything|Mie` —— 1/13 个有
-- `TextInput_` —— 1/13 个有
-- `YC Text Index Switch` —— 1/13 个有
+- `GetNode` —— 10/13 个有
+- `INTConstant` —— 10/13 个有
+- `Int` —— 10/13 个有
+- `SetNode` —— 10/13 个有
+- `WanVideoTextEncodeCached` —— 10/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/13 个有
+- `Seed (rgthree)` —— 9/13 个有
+- `WanAnimatePlus ContextOptions` —— 9/13 个有
+- `WanAnimatePlus LoraSelect` —— 8/13 个有
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings` —— 8/13 个有
+- `PlaySound|pysssss` —— 7/13 个有
+- `Label (rgthree)` —— 5/13 个有
+- `CR Text` —— 3/13 个有
+- `EmptyImage` —— 3/13 个有
+- `ImageFromBatch` —— 3/13 个有
+- `PrimitiveBoolean` —— 3/13 个有
+- `WanAnimatePlus TextEncodeCached` —— 3/13 个有
+- `easy int` —— 3/13 个有
+- `AutoRefCollage` —— 2/13 个有
+- `BatchImagesNode` —— 2/13 个有
+- `InvertBoolean` —— 2/13 个有
+- `MaskAdd_UTK` —— 2/13 个有
+- `WanVideoTorchCompileSettings` —— 2/13 个有
+- `easy seed` —— 2/13 个有
+- `Any Switch (rgthree)` —— 1/13 个有
+- `ComfySwitchNodeV2` —— 1/13 个有
+- `LayerMask: MaskPreview` —— 1/13 个有
+- `RHSettingsNode` —— 1/13 个有
 
 ## 典型参数
 

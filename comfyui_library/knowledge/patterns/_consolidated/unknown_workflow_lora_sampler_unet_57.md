@@ -3,22 +3,22 @@ name: unknown_workflow_lora_sampler_unet_57
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.857
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelPreviewOverrideKJ, Note Plus (mtb), PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.870667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3视频参考生成视频-加速版-双时钟版-官流原版合集_2084683043503169538.json, 视频生成/图生视频/归档案例MinimaxH3视频参考加速生成视频-买家秀案例_2087087132132335617.json, 视频生成/文生视频/MinimaxH3-九宫图故事板案例-双采样-Upscale_2092187611841515522.json]
+members: [视频生成/图生视频/H3长视频MV_context_lightx2v_长视频_2089359079314644994.json, 视频生成/图生视频/minimax_h3_多人对话参考+lightx2v正式版_2086399612306415617.json, 视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3视频参考生成视频-加速版-双时钟版-官流原版合集_2084683043503169538.json、视频生成/图生视频/归档案例MinimaxH3视频参考加速生成视频-买家秀案例_2087087132132335617.json、视频生成/文生视频/MinimaxH3-九宫图故事板案例-双采样-Upscale_2092187611841515522.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/H3长视频MV_context_lightx2v_长视频_2089359079314644994.json、视频生成/图生视频/minimax_h3_多人对话参考+lightx2v正式版_2086399612306415617.json、视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -29,43 +29,38 @@ source: knowledge_consolidation
 - `ComfyMathExpression`
 - `CreateVideo`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `ModelPreviewOverrideKJ`
-- `Note Plus (mtb)`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `PurgeVRAM_UTK`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVConcatAVLatent` —— 2/3 个有
-- `LTXVSeparateAVLatent` —— 2/3 个有
-- `LatentUpscaleBy` —— 2/3 个有
-- `LoraLoaderBypassModelOnly` —— 2/3 个有
-- `MiniMaxH3AVDecodeT8` —— 2/3 个有
-- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
-- `SplitSigmas` —— 2/3 个有
-- `EasyCache` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `QRCode` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `UploadVideoToHost` —— 1/3 个有
+- `AudioInfoNode` —— 2/3 个有
+- `MiniMaxH3MotionContext` —— 2/3 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 2/3 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 2/3 个有
+- `MiniMaxH3MotionContextTrim` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `VAEDecodeAudio` —— 2/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `H3SigmaRefiner` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `MiniMaxH3SigmaShift` —— 1/3 个有
+- `MmuuaiGroupBypass` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
 - `VHS_LoadVideo` —— 1/3 个有
-- `Video Slice` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
 - `easy showAnything` —— 1/3 个有
 
 ## 典型参数

@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_sampler_unet_vae_89
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.808625
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.551667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2084154545424388098.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2087935494813478914.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2099783471219699713.json, 视频生成/图生视频/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）_2084260178744139778.json, 视频生成/图生视频/minimax H3巨物图生视频_2093886571169796098.json, 视频生成/图生视频/minimax H3巨物图生视频_2097867227113541634.json, 视频生成/文生视频/MINIMAX-H3 sage+sol att双加速低显存全功能工作流_2084920261798879233.json]
+members: [视频生成/文生视频/AITUDOU-MiniMax+H3+T2V（文生视频）加速流_2085602340672987137.json, 视频生成/文生视频/DG_H3 文生视频 BF16高质量_2085624042417123330.json, 视频生成/文生视频/Fastvideo H3 快速文生视频ComfyUI工作流_2095113472886534146.json, 视频生成/文生视频/MiniMax H3 I2V 图生视频 1280分辨率加速工作流_2085953821150367746.json, 视频生成/文生视频/MiniMax H3 T2V（文生视频）_2084242586428067841.json, 视频生成/文生视频/MiniMax H3 手机取物换装 文生视频_2106940320041750529.json, 视频生成/文生视频/MiniMax H3文生视频+首尾帧生视频_2084121630451789825.json, 视频生成/文生视频/MiniMax H3文生视频+首尾帧生视频（LightX2V加速LORA）_2087364613808672770.json, 视频生成/文生视频/minimax h3六宫生视频_2085919188304093186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_89
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json、视频生成/图生视频/MinimaxH3图生视频8步工作流_2084154545424388098.json、视频生成/图生视频/MinimaxH3图生视频8步工作流_2087935494813478914.json、视频生成/图生视频/MinimaxH3图生视频8步工作流_2099783471219699713.json、视频生成/图生视频/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）_2084260178744139778.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/AITUDOU-MiniMax+H3+T2V（文生视频）加速流_2085602340672987137.json、视频生成/文生视频/DG_H3 文生视频 BF16高质量_2085624042417123330.json、视频生成/文生视频/Fastvideo H3 快速文生视频ComfyUI工作流_2095113472886534146.json、视频生成/文生视频/MiniMax H3 I2V 图生视频 1280分辨率加速工作流_2085953821150367746.json、视频生成/文生视频/MiniMax H3 T2V（文生视频）_2084242586428067841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ImageToVideo`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
@@ -40,26 +38,27 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `CreateVideo` —— 5/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/8 个有
-- `SaveVideo` —— 5/8 个有
-- `SolAttnPatch` —— 4/8 个有
-- `Label (rgthree)` —— 3/8 个有
-- `ShowText|pysssss` —— 3/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `easy showAnything` —— 3/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ManualSigmas` —— 2/8 个有
-- `MuyeTextEditOutput` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 2/8 个有
-- `RHLLMChatNode` —— 2/8 个有
-- `SplitSigmas` —— 2/8 个有
-- `Any Switch (rgthree)` —— 1/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/8 个有
-- `StariAI-MiniMaxH3-Skill` —— 1/8 个有
-- `UniBlockSwap` —— 1/8 个有
-- `UniBlockSwapTE` —— 1/8 个有
+- `GetNode` —— 8/9 个有
+- `MiniMaxH3ImageToVideo` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/9 个有
+- `VHS_VideoCombine` —— 7/9 个有
+- `LoraLoaderModelOnly` —— 6/9 个有
+- `LoadImage` —— 5/9 个有
+- `CR Prompt Text` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `Text` —— 4/9 个有
+- `CreateVideo` —— 3/9 个有
+- `Label (rgthree)` —— 3/9 个有
+- `SaveVideo` —— 3/9 个有
+- `MiniMaxH3SigmaShift` —— 2/9 个有
+- `ModelAttentionBackend` —— 2/9 个有
+- `PathchSageAttentionKJ` —— 2/9 个有
+- `MiniMaxH3AVDecodeT8` —— 1/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/9 个有
+- `ModelPreviewOverrideKJ` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `StringConcatenate` —— 1/9 个有
 
 ## 典型参数
 

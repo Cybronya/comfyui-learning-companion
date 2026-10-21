@@ -1,47 +1,40 @@
 ---
 name: unknown_workflow_generic_452
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.582
-common_nodes: [Bookmark (rgthree), Fast Groups Bypasser (rgthree), GetNode, JWString, LoadImage, MultiLinePromptIndex, MultiLinePromptMG, MultiTextConcatenate, PreviewAny, RH_Hailuo_Image2Video, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_Sora2_I2V, RH_Veo3_Image2Video, SaveImage, SaveVideo, SetNode, Text, Text Multiline, easy showAnything]
+coverage: 0.733
+common_nodes: [GetVideoComponents, ImageFromBatch+, ImpactSwitch, JjkShowText, LoadVideo, PreviewImage, RH_LLMAPI_NODE, RH_Translator, RunningHub ThinkSound, SaveVideo, Text Multiline, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017334255008878594.json, 视频生成/图生视频/2018275721206046722.json, 视频生成/文生视频/人物分镜视频一套工作流_2018508990946217986.json]
+members: [音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json, 音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json, 音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json, 音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_452
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2017334255008878594.json、视频生成/图生视频/2018275721206046722.json、视频生成/文生视频/人物分镜视频一套工作流_2018508990946217986.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json、音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json、音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json、音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `JWString`
-- `LoadImage`
-- `MultiLinePromptIndex`
-- `MultiLinePromptMG`
-- `MultiTextConcatenate`
-- `PreviewAny`
-- `RH_Hailuo_Image2Video`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
-- `RH_Sora2_I2V`
-- `RH_Veo3_Image2Video`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageFromBatch+`
+- `ImpactSwitch`
+- `JjkShowText`
+- `LoadVideo`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `RunningHub ThinkSound`
 - `SaveVideo`
-- `SetNode`
-- `Text`
 - `Text Multiline`
+- `easy cleanGpuUsed`
 - `easy showAnything`
 
 ## 典型参数

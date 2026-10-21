@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_103
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.752
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.877286
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Minimax H3高一致性人物四视图快速处理V2.0 PLUS工作流，人物类特效图生图_2107980124158259202.json, 视频生成/图生视频/9图参考一次出片｜MiniMax H3图生视频多图玩法_2089030736761409538.json, 视频生成/图生视频/MiniMax H3 FastVideo极速多参 视频生成加速方案_2109013584503201793.json, 视频生成/图生视频/Minimax h3高一致性故事多分镜图处理 漫画分镜批量生成_2104667473604866050.json, 视频生成/图生视频/Minimax h3高一致性故事多分镜图处理 漫画分镜批量生成_2105069400066969601.json, 视频生成/图生视频/Minimax h3高一致性故事多分镜图处理 漫画分镜批量生成_2105401727510990850.json, 视频生成/图生视频/故事多分镜图处理工作流｜Minimax h3图生图分镜生成_2096719495321710593.json]
+members: [视频生成/图生视频/MinimaxH3超写实数字人｜真假难分_2089545869266866177.json, 视频生成/图生视频/Minimax开源版H3多宫格图生视频开源版加速版_2086425565711654914.json, 视频生成/图生视频/T6全参官方指南｜minimaxh3自动扩展提示词分镜出图_2094333256052334594.json, 视频生成/图生视频/T8全参官方指南｜minimaxh3扩展提示词角色一致性生视频_2094463893199482882.json, 视频生成/图生视频/minimaxH3 多参考视频PV工作流｜备用方案图生视频更稳妥_2097504953928605697.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词_2086537843907846146.json, 视频生成/图生视频/口播直出｜MinimaxH3数字人图生视频生成_2089809950645248002.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_103
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Minimax H3高一致性人物四视图快速处理V2.0 PLUS工作流，人物类特效图生图_2107980124158259202.json、视频生成/图生视频/9图参考一次出片｜MiniMax H3图生视频多图玩法_2089030736761409538.json、视频生成/图生视频/MiniMax H3 FastVideo极速多参 视频生成加速方案_2109013584503201793.json、视频生成/图生视频/Minimax h3高一致性故事多分镜图处理 漫画分镜批量生成_2104667473604866050.json、视频生成/图生视频/Minimax h3高一致性故事多分镜图处理 漫画分镜批量生成_2105069400066969601.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3超写实数字人｜真假难分_2089545869266866177.json、视频生成/图生视频/Minimax开源版H3多宫格图生视频开源版加速版_2086425565711654914.json、视频生成/图生视频/T6全参官方指南｜minimaxh3自动扩展提示词分镜出图_2094333256052334594.json、视频生成/图生视频/T8全参官方指南｜minimaxh3扩展提示词角色一致性生视频_2094463893199482882.json、视频生成/图生视频/minimaxH3 多参考视频PV工作流｜备用方案图生视频更稳妥_2097504953928605697.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -34,41 +34,41 @@ source: knowledge_consolidation
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `SaveImage` —— 6/7 个有
-- `CreateVideo` —— 5/7 个有
-- `GetImagesFromBatchIndexed` —— 5/7 个有
-- `GetVideoComponents` —— 5/7 个有
-- `ModelAttentionBackend` —— 5/7 个有
-- `GetNode` —— 3/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/7 个有
-- `SetNode` —— 3/7 个有
-- `Any Switch (rgthree)` —— 1/7 个有
-- `AutoCropFaces` —— 1/7 个有
-- `BlockSparseAttention` —— 1/7 个有
-- `Fast Muter (rgthree)` —— 1/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `ImageConcatFromBatch` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `ResizeImageMaskNode` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `easy float` —— 1/7 个有
-- `workflow>SeedVR放大节点` —— 1/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
+- `LoadAudio` —— 5/7 个有
+- `VAEDecodeAudio` —— 5/7 个有
+- `孤海注释` —— 5/7 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `ImageConcatenateMulti_UTK` —— 3/7 个有
+- `PathchSageAttentionKJ` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 3/7 个有
+- `RHHiddenNodes` —— 2/7 个有
+- `SaveAudio` —— 2/7 个有
+- `TrimAudioDuration` —— 2/7 个有
+- `VHS_LoadVideo` —— 2/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/7 个有
+- `easy showAnything` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `ModelAttentionBackend` —— 1/7 个有
+- `ModelPreviewOverrideKJ` —— 1/7 个有
+- `PainterVRAM` —— 1/7 个有
+- `RH_Captioner` —— 1/7 个有
+- `TextConcatenate_UTK` —— 1/7 个有
+- `VHS_SelectImages` —— 1/7 个有
 
 ## 典型参数
 
@@ -86,7 +86,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -97,4 +97,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（10/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/7 个样本）：Steps较低可能导致细节不足

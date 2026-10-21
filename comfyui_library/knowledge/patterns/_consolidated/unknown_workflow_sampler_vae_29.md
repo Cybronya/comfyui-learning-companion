@@ -1,60 +1,56 @@
 ---
 name: unknown_workflow_sampler_vae_29
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.849778
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.912375
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAFirstFrameCondition, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax-H3_插帧图生视频_2084843609874067458.json, 视频生成/文生视频/MiniMaxH3文生视频工作流 By 像素幻想Lab_2087128147237105666.json, 视频生成/文生视频/MiniMax_H3 多参考图生视频（可本地运行）_2084295736807739394.json, 视频生成/文生视频/MiniMax_H3_T2V_lora加速_2090640077063020545.json, 视频生成/文生视频/MiniMax_H3文生视频V1_2087411429900120065.json, 视频生成/文生视频/Minimax H3 - 多参视频生成_2084608321469898754.json, 视频生成/文生视频/Minimax H3 - 多参视频生成_2092164049516711938.json, 视频生成/文生视频/MinimaxH3参考8步生成视频工作流_2087040392687611906.json, 视频生成/文生视频/Minimax_h3_文生视频_2084506740581818369.json]
+members: [视频生成/图生视频/MiniMax H3 -首帧参考生视频-开源版-智能分镜助手-本地可运行_2084117187484282882.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首帧参考生视频_2084114585820422145.json, 视频生成/图生视频/MiniMax H3 单图参考生视频_2084187514818097153.json, 视频生成/图生视频/MiniMax H3 首尾帧参考生视频_2084138245323055105.json, 视频生成/图生视频/MiniMax H3-地图旅游_2085244875817177090.json, 视频生成/图生视频/MiniMax H3-地图旅游_2089683283566223362.json, 视频生成/图生视频/MiniMax H3-现实世界手绘特效_2085245279707688962.json, 视频生成/图生视频/MiniMax H3-现实世界手绘特效_2086663800769572866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_29
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3_插帧图生视频_2084843609874067458.json、视频生成/文生视频/MiniMaxH3文生视频工作流 By 像素幻想Lab_2087128147237105666.json、视频生成/文生视频/MiniMax_H3 多参考图生视频（可本地运行）_2084295736807739394.json、视频生成/文生视频/MiniMax_H3_T2V_lora加速_2090640077063020545.json、视频生成/文生视频/MiniMax_H3文生视频V1_2087411429900120065.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 -首帧参考生视频-开源版-智能分镜助手-本地可运行_2084117187484282882.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首帧参考生视频_2084114585820422145.json、视频生成/图生视频/MiniMax H3 单图参考生视频_2084187514818097153.json、视频生成/图生视频/MiniMax H3 首尾帧参考生视频_2084138245323055105.json、视频生成/图生视频/MiniMax H3-地图旅游_2085244875817177090.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 8 个 workflow 都包含：
+- `CreateVideo`
+- `LoadImage`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3FL2VAEncode`
+- `RHMiniMaxH3FL2VAFirstFrameCondition`
+- `RHMiniMaxH3FL2VAModelLoader`
+- `RHMiniMaxH3FL2VATarget`
+- `RHMiniMaxH3FL2VATextEncoderLoader`
+- `RHMiniMaxH3FL2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 8/9 个有
-- `ResolutionSelector` —— 7/9 个有
-- `CreateVideo` —— 6/9 个有
-- `PrimitiveStringMultiline` —— 6/9 个有
-- `SaveVideo` —— 6/9 个有
-- `LoadImage` —— 5/9 个有
-- `MiniMaxH3ImageToVideo` —— 5/9 个有
-- `VHS_VideoCombine` —— 5/9 个有
-- `LoraLoaderModelOnly` —— 4/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/9 个有
-- `MiniMaxChunkFeedForward` —— 2/9 个有
-- `MiniMaxLowVRAMAttention` —— 2/9 个有
-- `SolAttnPatch` —— 2/9 个有
-- `CR Text` —— 1/9 个有
-- `DiffusionModelLoaderKJ` —— 1/9 个有
-- `GetImageSize+` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `llama_cpp_instruct_adv` —— 5/8 个有
+- `llama_cpp_model_loader` —— 5/8 个有
+- `llama_cpp_parameters` —— 5/8 个有
+- `easy showAnything` —— 4/8 个有
+- `ImageResize+` —— 3/8 个有
+- `PreviewAny` —— 3/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `MultiplePathsInput` —— 2/8 个有
+- `Qwen3_VQA` —— 2/8 个有
+- `VideoLoaderPlus` —— 2/8 个有
+- `JjkText` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 

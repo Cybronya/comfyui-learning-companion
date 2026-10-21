@@ -3,35 +3,37 @@ name: unknown_workflow_generic_785
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.707
-common_nodes: [IndexTTSProNode, LoadAudio, NovelTextStructureNode, SaveAudio, String Literal, easy showAnything]
+coverage: 0.667
+common_nodes: [JjkText, LayerUtility: TextJoin, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowAnything|Mie, easy promptList]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI制作多人有声书_1938220553285337089.json, 音频生成/音频生成/IndexTTS Pro小说多角色+旁白自动配音（可搭配结构化文本工作流）_1933140077948379138.json]
+members: [图片生成/文生图/Share Widget_2086637164250619906.json, 图片生成/文生图/check-in share image_2095684493167390722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_785
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AI制作多人有声书_1938220553285337089.json、音频生成/音频生成/IndexTTS Pro小说多角色+旁白自动配音（可搭配结构化文本工作流）_1933140077948379138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Share Widget_2086637164250619906.json、图片生成/文生图/check-in share image_2095684493167390722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTSProNode`
-- `LoadAudio`
-- `NovelTextStructureNode`
-- `SaveAudio`
-- `String Literal`
-- `easy showAnything`
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `ShowAnything|Mie`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
 
 ## 典型参数
 

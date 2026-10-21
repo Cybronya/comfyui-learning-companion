@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_134
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.931143
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.49575
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042721470069088257.json, 视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json, 视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json, 视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json, 视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json, 视频生成/文生视频/Seedance2.5多模态视频_2095476090239275009.json]
+members: [视频生成/图生视频/2045803250208739330.json, 视频生成/图生视频/1995080238969368577.json, 视频生成/图生视频/1995090644366503938.json, 视频生成/图生视频/1994104892247785473.json, 视频生成/图生视频/1980566754525102082.json, 视频生成/图生视频/1980581515803447298.json, 视频生成/图生视频/2000505085736124418.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1 Pro文生视频特价版（基准1元_8S）_1980614790232064001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_134
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2042721470069088257.json、视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json、视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json、视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json、视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2045803250208739330.json、视频生成/图生视频/1995080238969368577.json、视频生成/图生视频/1995090644366503938.json、视频生成/图生视频/1994104892247785473.json、视频生成/图生视频/1980566754525102082.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
 - `LoadImage`
-- `LoadVideo`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 6/7 个有
-- `JjkText` —— 4/7 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 4/7 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/7 个有
-- `MuyeTextEditOutput` —— 1/7 个有
+- `Comfly_Googel_Veo3` —— 6/8 个有
+- `Comfly_vidu_img2video` —— 2/8 个有
+- `Comfly_Googel_Veo3_Lite` —— 1/8 个有
+- `HfSaveImage` —— 1/8 个有
 
 ## 典型参数
 

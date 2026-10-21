@@ -1,56 +1,71 @@
 ---
 name: unknown_workflow_video_sampler_clip_161
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.9815
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+coverage: 0.988
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSamplerAdvanced, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, LoadAudio, PainterAudioCut, PainterFrameExtractor, PainterLTX2Vomni, PathchSageAttentionKJ, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VHS_LoadVideoFFmpeg, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy seed]
 problems: []
 missing: []
-members: [视频生成/文生视频/1895473564030205954.json, 视频生成/文生视频/1938037576559431682.json, 视频生成/文生视频/1922130213654708226.json, 视频生成/文生视频/1933374904114786306.json]
+members: [数字人/数字人/9.11对口型_2098359939495448577.json, 音频生成/音频生成/LTX2.3 数字人配音工作流（给无声视频配音-文生语音）_2079759741563260931.json, 音频生成/音频生成/LTX2.3 数字人配音工作流（给无声视频配音-文生语音）_2080235822560931841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_161
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1895473564030205954.json、视频生成/文生视频/1938037576559431682.json、视频生成/文生视频/1922130213654708226.json、视频生成/文生视频/1933374904114786306.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/9.11对口型_2098359939495448577.json、音频生成/音频生成/LTX2.3 数字人配音工作流（给无声视频配音-文生语音）_2079759741563260931.json、音频生成/音频生成/LTX2.3 数字人配音工作流（给无声视频配音-文生语音）_2080235822560931841.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `CheckpointLoaderSimple`
+- `KSamplerAdvanced`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `PainterAudioCut`
+- `PainterFrameExtractor`
+- `PainterLTX2Vomni`
+- `PathchSageAttentionKJ`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `VHS_VideoInfoLoaded`
+- `easy cleanGpuUsed`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 1/4 个有
-- `Joy_caption_two_advanced` —— 1/4 个有
-- `Joy_caption_two_load` —— 1/4 个有
-- `Joy_extra_options` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
+- `CR Text` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `AudioToFPS` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 4 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 9 | 9 - 9 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | linear_quadratic | - | 3 | 100% |
 
 ## 常见问题
 
@@ -58,8 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 9，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 linear_quadratic，3 个样本，一致性 100%

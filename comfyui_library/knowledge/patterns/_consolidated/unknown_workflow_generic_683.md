@@ -3,32 +3,27 @@ name: unknown_workflow_generic_683
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.889
-common_nodes: [CR Prompt Text, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RH_Wan2GPNode, SaveVideo]
+coverage: 1
+common_nodes: [HappyHorseTextToVideoApi, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1932591437974532098.json, 视频生成/图生视频/1932144704442236930.json]
+members: [comfyui-workflow-templates-json/api_happyhorse1_0_t2v.json, comfyui-workflow-templates-json/api_happyhorse1_1_t2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_683
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1932591437974532098.json、视频生成/图生视频/1932144704442236930.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_happyhorse1_0_t2v.json、comfyui-workflow-templates-json/api_happyhorse1_1_t2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
-- `RH_Wan2GPNode`
+- `HappyHorseTextToVideoApi`
 - `SaveVideo`
 
 ## 典型参数

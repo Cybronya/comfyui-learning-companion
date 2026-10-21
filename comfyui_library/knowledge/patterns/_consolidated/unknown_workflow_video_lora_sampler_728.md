@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_728
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9655
-common_nodes: [CreateCFGScheduleFloatList, FloatConstant, GetImageSizeAndCount, INTConstant, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, ShowText|pysssss, TT_img_enc, Text Random Line, TextCombinerTwo, TextInput_, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.9705
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, EmptyHunyuanLatentVideo, FSampler, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, TorchCompileModelWanVideoV2, VAEDecode, VAELoader, VHS_VideoCombine, wanBlockSwap]
 problems: []
-missing: []
-members: [视频生成/图生视频/2007442248425807873.json, 视频生成/图生视频/2007441699622096897.json]
+missing: [Label (rgthree)]
+members: [视频生成/图生视频/1977282385228242946.json, 视频生成/文生视频/1977282385228242946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_728
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2007442248425807873.json、视频生成/图生视频/2007441699622096897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1977282385228242946.json、视频生成/文生视频/1977282385228242946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,36 +23,24 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `FloatConstant`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJ`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SaveImage`
-- `ShowText|pysssss`
-- `TT_img_enc`
-- `Text Random Line`
-- `TextCombinerTwo`
-- `TextInput_`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `WanVideoContextOptions` —— 1/2 个有
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DiffusionModelLoaderKJ`
+- `EmptyHunyuanLatentVideo`
+- `FSampler`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SplitSigmas`
+- `TorchCompileModelWanVideoV2`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_VideoCombine`
+- `wanBlockSwap`
 
 ## 典型参数
 
@@ -64,4 +52,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

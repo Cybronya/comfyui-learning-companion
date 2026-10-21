@@ -3,22 +3,22 @@ name: unknown_workflow_video_lora_sampler_282
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.6485
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.99275
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, INTConstant, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, Text Concatenate, UNETLoader, VAELoader, VHS_VideoCombine, Wan22PromptSelector, WanImageToVideo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2010362825717325826.json, 视频生成/图生视频/2038254959346589697.json, 视频生成/图生视频/2019552867903868930.json, 视频生成/图生视频/2074669211259072514.json, 视频生成/图生视频/2009346711700901890.json, 视频生成/图生视频/2013233044202721281.json, 视频生成/图生视频/2010920554626293761.json, 视频生成/文生视频/万象+runninghub制作动漫短剧图生视频工作流（480P横屏）+V：50259731获取软件_2002386569740861441.json]
+members: [视频生成/图生视频/2076940992846065665.json, 视频生成/图生视频/2080827285132898306.json, 视频生成/图生视频/2079587652592037890.json, 视频生成/图生视频/最强 Wan2.2 Remix V3 图生视频｜丝滑流畅升级版_2087862856862748674.json, 视频生成/图生视频/2064528658047520769.json, 视频生成/图生视频/2072282561220530178.json, 视频生成/文生视频/定制风景文生视频风景视频快速生成_2077718229480468482.json, 视频生成/文生视频/定制风景文生视频风景视频快速生成_2077733281923162113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_282
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2010362825717325826.json、视频生成/图生视频/2038254959346589697.json、视频生成/图生视频/2019552867903868930.json、视频生成/图生视频/2074669211259072514.json、视频生成/图生视频/2009346711700901890.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2076940992846065665.json、视频生成/图生视频/2080827285132898306.json、视频生成/图生视频/2079587652592037890.json、视频生成/图生视频/最强 Wan2.2 Remix V3 图生视频｜丝滑流畅升级版_2087862856862748674.json、视频生成/图生视频/2064528658047520769.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
@@ -27,54 +27,52 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `GetNode`
+- `CR Text`
+- `INTConstant`
 - `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `PainterI2V`
 - `PathchSageAttentionKJ`
-- `SetNode`
+- `SimpleMath+`
+- `Text Concatenate`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `Wan22PromptSelector`
+- `WanImageToVideo`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 7/8 个有
-- `Text Concatenate` —— 7/8 个有
-- `CR Text Replace` —— 6/8 个有
-- `PreviewAny` —— 6/8 个有
-- `AILab_QwenVL` —— 4/8 个有
-- `CFGZeroStar` —— 4/8 个有
-- `CR Integer To String` —— 4/8 个有
-- `CR Text` —— 4/8 个有
-- `ColorMatch` —— 4/8 个有
-- `GetAudioDurationFromAudio` —— 4/8 个有
-- `JWInteger` —— 4/8 个有
-- `LoadAudio` —— 4/8 个有
-- `ModelPatchTorchSettings` —— 4/8 个有
-- `Text Multiline` —— 4/8 个有
-- `WanVideoNAG` —— 4/8 个有
-- `wanBlockSwap` —— 4/8 个有
-- `Qwen3_VQA` —— 3/8 个有
-- `TextInput_` —— 3/8 个有
-- `LoadVideo` —— 2/8 个有
+- `ImageScaleBy` —— 7/8 个有
+- `RIFE VFI` —— 7/8 个有
+- `VAEDecode` —— 7/8 个有
+- `LoadImage` —— 5/8 个有
+- `ConditioningKrea2Rebalance` —— 3/8 个有
+- `ConditioningZeroOut` —— 3/8 个有
+- `EmptyLatentImage` —— 3/8 个有
+- `Int` —— 3/8 个有
+- `TTResolutionSelector` —— 3/8 个有
+- `easy promptLine` —— 3/8 个有
+- `JjkText` —— 1/8 个有
+- `LoadAudio` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
 - `RHHiddenNodes` —— 1/8 个有
-- `Text` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `VAEDecodeTiled` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 50% |
+| 采样步数 | randomize | - | 8 | 100% |
 | Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
 | 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 50% |
-| 重绘幅度 | simple | - | 8 | 88% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 3 | 100% |
 
 ## 常见问题
 
@@ -82,8 +80,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 50%
+- 采样步数 最常用 randomize，8 个样本，一致性 100%
 - Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
 - 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 50%
-- 重绘幅度 最常用 simple，8 个样本，一致性 88%
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，3 个样本，取值集中（一致性 100%）

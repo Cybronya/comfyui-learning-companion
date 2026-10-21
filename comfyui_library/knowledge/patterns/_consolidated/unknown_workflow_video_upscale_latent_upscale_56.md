@@ -3,96 +3,85 @@ name: unknown_workflow_video_upscale_latent_upscale_56
 type: Unknown Workflow
 frequency: 7
 level: strong
-coverage: 0.812143
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy int, easy showAnything]
+coverage: 0.585
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GuHaiAutoImageSplit, INTConstant, ImageFromBatch+, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PreviewImage, PrimitiveFloat, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2068875271280873474.json, 视频生成/图生视频/2069018499376312322.json, 视频生成/图生视频/2069213658181365761.json, 视频生成/图生视频/2068898654504706050.json, 视频生成/图生视频/2069966527956344833.json, 视频生成/图生视频/2075040945753640962.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2095739123867938818.json]
+members: [视频生成/图生视频/2045413538109329409.json, 视频生成/图生视频/2070309380381298690.json, 视频生成/图生视频/2052328089341964289.json, 视频生成/图生视频/2044445591786233858.json, 视频生成/文生视频/LTX-2.3+漫剧视频生成 四宫格情景剧本极速版_2064519449834770434.json, 视频生成/文生视频/LTX2.3_四宫格漫剧视频_2064675254458474498.json, 视频生成/文生视频/最强漫剧生成LTX-2.3（四宫格V2.0-单采光速版）_2041148096977047554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_56
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2068875271280873474.json、视频生成/图生视频/2069018499376312322.json、视频生成/图生视频/2069213658181365761.json、视频生成/图生视频/2068898654504706050.json、视频生成/图生视频/2069966527956344833.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2045413538109329409.json、视频生成/图生视频/2070309380381298690.json、视频生成/图生视频/2052328089341964289.json、视频生成/图生视频/2044445591786233858.json、视频生成/文生视频/LTX-2.3+漫剧视频生成 四宫格情景剧本极速版_2064519449834770434.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetNode`
+- `GuHaiAutoImageSplit`
+- `INTConstant`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
 - `UNETLoader`
-- `VAELoader`
+- `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy int`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntUnaryCondition` —— 6/7 个有
-- `CR Prompt Text` —— 6/7 个有
-- `CR String To Boolean` —— 6/7 个有
-- `ImpactConditionalBranch` —— 6/7 个有
-- `IndexTTS2Run` —— 6/7 个有
-- `JoinStrings` —— 6/7 个有
-- `LTXVTiledVAEDecode` —— 6/7 个有
-- `ModelSamplingSD3` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `easy anythingIndexSwitch` —— 6/7 个有
-- `ComfySwitchNode` —— 1/7 个有
-- `JoinStringMulti` —— 1/7 个有
-- `LTX2SamplingPreviewOverride` —— 1/7 个有
-- `ResolutionSelector` —— 1/7 个有
-- `VAEDecode` —— 1/7 个有
-- `easy float` —— 1/7 个有
+- `GetNode` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `CR Float To Integer` —— 4/7 个有
+- `SimpleMath+` —— 4/7 个有
+- `TTResolutionSelector` —— 4/7 个有
+- `Text` —— 4/7 个有
+- `VAELoader` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `CM_FloatToInt` —— 3/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `LoadAudio` —— 3/7 个有
+- `LoadVideo` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `PrimitiveStringMultiline` —— 3/7 个有
+- `RHHiddenNodes` —— 3/7 个有
+- `RecordAudio` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `SimpleCalculatorKJ` —— 3/7 个有
+- `llama_cpp_instruct_adv` —— 3/7 个有
+- `llama_cpp_model_loader` —— 3/7 个有
+- `llama_cpp_parameters` —— 3/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
 | 宽度 | 97 | 97 - 97 | 7 | 100% |
-| 高度 | 25 | 25 - 25 | 7 | 100% |
+| 高度 | 25 | 24 - 25 | 7 | 98% |
 
 ## 常见问题
 
@@ -101,4 +90,4 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，7 个样本，取值集中（一致性 98%）

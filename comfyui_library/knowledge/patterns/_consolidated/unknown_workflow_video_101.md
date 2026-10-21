@@ -3,35 +3,36 @@ name: unknown_workflow_video_101
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.867
-common_nodes: [Int, LoadImage, PreviewImage, RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine, easy indexAnything, easy mathInt, easy showAnything]
+coverage: 0.4585
+common_nodes: [ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveInt, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2072948538811703298.json, 视频生成/图生视频/2072710252314845185.json]
+members: [视频生成/图生视频/实用工具-视频转GIF图片_2089752563230011394.json, 视频生成/图生视频/1975224669374689281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_101
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2072948538811703298.json、视频生成/图生视频/2072710252314845185.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/实用工具-视频转GIF图片_2089752563230011394.json、视频生成/图生视频/1975224669374689281.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Int`
-- `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PrimitiveInt`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy indexAnything`
-- `easy mathInt`
+- `VHS_VideoInfo`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

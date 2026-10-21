@@ -1,64 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_47
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: moderate
-coverage: 0.81175
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.922455
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAELoader]
 problems: []
-missing: []
-members: [视频生成/文生视频/Minimax H3 文生视频_2084236059835195394.json, 视频生成/文生视频/Minimax H3 文生视频_2085256821585039362.json, 视频生成/文生视频/Minimax H3 文生视频_2089487806417694721.json, 视频生成/文生视频/Minimax H3 文生视频标准版_2094294196017524737.json, 视频生成/文生视频/Minimax H3 极速文生视频_2085290047233945602.json, 视频生成/文生视频/Minimax H3-t2v 官方提示词文生视频_2085182661756276737.json, 视频生成/文生视频/Minimax H3-t2v 官方版文生视频_2084192379581583362.json, 视频生成/文生视频/Minimax H3视频模型文生视频_2084169698551361537.json, 视频生成/文生视频/Minimax H3高质量融合模型10Eros-图生视频BF16加速_2086859043209039874.json, 视频生成/文生视频/VividMuse_MiniMax_H3_文生视频_2084269402014437378.json, 视频生成/文生视频/comfyui官方工作流-video_minimax_h3_t2v_2084148000615657474.json, 视频生成/文生视频/h3文生_首尾帧视频_2084566244484804610.json]
+missing: [CR Text Concatenate, Text Concatenate (JPS), Text Concatenate]
+members: [图片生成/文生图/08.flux-lora-快速文生图_1993297535381028865.json, 图片生成/文生图/1902172176840335361.json, 图片生成/文生图/1904904736871469057.json, 图片生成/文生图/1904906707053776898.json, 图片生成/文生图/1904907559919357954.json, 图片生成/文生图/1904908786933633026.json, 图片生成/文生图/1904909104412807170.json, 图片生成/文生图/1905062711074689026.json, 图片生成/文生图/1909546503734763521.json, 图片生成/文生图/1920491097255251969.json, 图片生成/文生图/In-Context-Lora字体设计_2018938772628443138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_47
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/Minimax H3 文生视频_2084236059835195394.json、视频生成/文生视频/Minimax H3 文生视频_2085256821585039362.json、视频生成/文生视频/Minimax H3 文生视频_2089487806417694721.json、视频生成/文生视频/Minimax H3 文生视频标准版_2094294196017524737.json、视频生成/文生视频/Minimax H3 极速文生视频_2085290047233945602.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/08.flux-lora-快速文生图_1993297535381028865.json、图片生成/文生图/1902172176840335361.json、图片生成/文生图/1904904736871469057.json、图片生成/文生图/1904906707053776898.json、图片生成/文生图/1904907559919357954.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/12 个有
-- `PathchSageAttentionKJ` —— 3/12 个有
-- `PrimitiveStringMultiline` —— 3/12 个有
-- `JjkText` —— 2/12 个有
-- `CacheDiT_Model_Optimizer` —— 1/12 个有
-- `ImageScaleToTotalPixels` —— 1/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `MiniMaxH3BlockCacheT8` —— 1/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/12 个有
-- `MiniMaxH3SigmaShift` —— 1/12 个有
-- `Seed (rgthree)` —— 1/12 个有
-- `SolAttnPatch` —— 1/12 个有
-- `孤海注释` —— 1/12 个有
-- `忽略多组孤海` —— 1/12 个有
+- `VAEDecode` —— 10/11 个有
+- `TextInput_` —— 9/11 个有
+- `CLIPTextEncode` —— 6/11 个有
+- `LoraLoaderModelOnly` —— 6/11 个有
+- `CLIPTextEncodeFlux` —— 5/11 个有
+- `LoraLoader` —— 5/11 个有
+- `CR Text Concatenate` —— 4/11 个有
+- `Int` —— 4/11 个有
+- `Text Concatenate (JPS)` —— 3/11 个有
+- `easy showAnything` —— 3/11 个有
+- `Anything Everywhere3` —— 1/11 个有
+- `Fast Bypasser (rgthree)` —— 1/11 个有
+- `ImageGenResolutionFromLatent` —— 1/11 个有
+- `ModelSamplingFlux` —— 1/11 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/11 个有
+- `Text Concatenate` —— 1/11 个有
+- `VAEDecodeTiled` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 720 - 1792 | 11 | 68% |
+| 高度 | 1216 | 1024 - 1920 | 11 | 77% |
+| LoRA 模型强度 | 0.8 | 0.6 - 1 | 5 | 79% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -66,4 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 720 - 1792，11 个样本
+- 高度 中位数 1216，观测区间 1024 - 1920，11 个样本
+- LoRA 模型强度 中位数 0.8，观测区间 0.6 - 1，5 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、Text Concatenate (JPS)、Text Concatenate

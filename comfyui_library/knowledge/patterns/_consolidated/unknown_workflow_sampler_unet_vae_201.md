@@ -1,75 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_201
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8305
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, MiniMaxChunkFeedForward, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAELoader, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 3
+level: moderate
+coverage: 0.771667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 开源版 文生视频 首尾帧视频 多模态视频生成 3合1集合工作流_2084939564103331841.json, 视频生成/文生视频/MiniMax H3 海螺模型 9种SKILL视频生成工作流_2087576840822157313.json]
+members: [视频生成/文生视频/MiniMax-H3_插帧图生视频_2084843609874067458.json, 视频生成/文生视频/MiniMax-H3首尾帧生视频 5秒视频只需要3分钟+全节点注释_2084503505364148226.json, 视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_201
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 开源版 文生视频 首尾帧视频 多模态视频生成 3合1集合工作流_2084939564103331841.json、视频生成/文生视频/MiniMax H3 海螺模型 9种SKILL视频生成工作流_2087576840822157313.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3_插帧图生视频_2084843609874067458.json、视频生成/文生视频/MiniMax-H3首尾帧生视频 5秒视频只需要3分钟+全节点注释_2084503505364148226.json、视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
-- `LoadImage`
-- `MiniMaxChunkFeedForward`
 - `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `ShowText|pysssss`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `ComfyMathExpression` —— 1/2 个有
-- `CreateVideo` —— 1/2 个有
-- `Fast Muter (rgthree)` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `PixaromaLabel` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `GetImageSize+` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `Seed (rgthree)` —— 1/3 个有
+- `Text Find and Replace` —— 1/3 个有
+- `TextOverlay` —— 1/3 个有
 
 ## 典型参数
 
@@ -81,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

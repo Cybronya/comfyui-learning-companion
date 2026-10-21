@@ -1,56 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_100
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.724
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, PrimitiveInt, QwenEditResolution, SaveImage, UnetLoaderGGUF, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.972571
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [CR Text]
-members: [图片生成/文生图/1963594349245452289.json, 图片生成/文生图/1975809153623003138.json]
+missing: []
+members: [图片生成/文生图/墨沫白皙质感Z -Image工作流_2067629087857926145.json, 图片生成/文生图/大洋IP形象的应用_2063092530673184769.json, 图片生成/文生图/文生图片_2061325270497456129.json, 图片生成/文生图/文生图片（Z-image)_2077687725708374017.json, 图片生成/文生图/文生图（解禁模型）：z-image-turbo_2057705249091178498.json, 图片生成/文生图/阿里Z-image，人像真实感拉满_1993853665350008834.json, 图片生成/文生图/🤖Z-image小钢炮来袭！[随机性增强]_1999663045167153154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_100
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1963594349245452289.json、图片生成/文生图/1975809153623003138.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/墨沫白皙质感Z -Image工作流_2067629087857926145.json、图片生成/文生图/大洋IP形象的应用_2063092530673184769.json、图片生成/文生图/文生图片_2061325270497456129.json、图片生成/文生图/文生图片（Z-image)_2077687725708374017.json、图片生成/文生图/文生图（解禁模型）：z-image-turbo_2057705249091178498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
-- `QwenEditResolution`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
 - `SaveImage`
-- `UnetLoaderGGUF`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 1/2 个有
-- `InversionDemoLazyIndexSwitch` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
+- `Any Switch (rgthree)` —— 2/7 个有
+- `CR Text` —— 2/7 个有
+- `ImpactInt` —— 2/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `Fast Bypasser (rgthree)` —— 1/7 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `RH_LLMAPI_NODE` —— 1/7 个有
+- `easy promptList` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 3.75 | - | 2 | 93% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1080 | 720 - 1920 | 7 | 65% |
+| 高度 | 1536 | 1080 - 1920 | 7 | 79% |
+| 采样步数 | randomize | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 9 | 9 - 10 | 7 | 95% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler_ancestral | - | 7 | 43% |
+| 重绘幅度 | sgm_uniform | - | 7 | 57% |
 
 ## 常见问题
 
@@ -58,10 +63,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.75，样本不足，未给区间，2 个样本，取值集中（一致性 93%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1080，观测区间 720 - 1920，7 个样本
+- 高度 中位数 1536，观测区间 1080 - 1920，7 个样本
+- 采样步数 最常用 randomize，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 10，7 个样本，取值集中（一致性 95%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，7 个样本，一致性 43%
+- 重绘幅度 最常用 sgm_uniform，7 个样本，一致性 57%

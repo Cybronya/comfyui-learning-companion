@@ -2,80 +2,70 @@
 name: unknown_workflow_video_lora_sampler_209
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.444333
-common_nodes: [Audio Duration (mtb), AudioCrop, CLIPTextEncode, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PreviewImage, PromptRelayEncode, SamplerCustom, SetLatentNoiseMask, SetNode, SolidMask, TTResolutionSelector, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy showAnything]
+level: strong
+coverage: 0.952333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ImageBatchExtendWithOverlap, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, VAEDecode, VAELoader, VHS_VideoCombine, easy forLoopEnd, easy forLoopStart, easy promptLine]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3-超自然口播数字人_2092630885337231361.json, 数字人/数字人/LTX2.3-超自然口播数字人_2092655473743982594.json, 视频生成/图生视频/LTX2.3-超自然电商口播数字人-自动版_2086680366970138625.json, 视频生成/图生视频/2054532786014433282.json, 视频生成/图生视频/2054541645990907905.json, 视频生成/图生视频/2049461897627443201.json, 视频生成/图生视频/2048640323944976386.json, 视频生成/图生视频/2049330125983981569.json, 音频生成/音频生成/LTX2.3高清超自然数字人-全自动版_2072579317611196418.json]
+members: [视频生成/图生视频/2022090916130988033.json, 视频生成/图生视频/2005998489748328449.json, 视频生成/图生视频/2011456654914621441.json, 视频生成/图生视频/2043277344625926145.json, 视频生成/图生视频/2016438828810117122.json, 视频生成/图生视频/2042934269093355522.json, 视频生成/图生视频/2035685146686394370.json, 视频生成/图生视频/2046827963190087682.json, 视频生成/文生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2047624351276601345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_209
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/LTX2.3-超自然口播数字人_2092630885337231361.json、数字人/数字人/LTX2.3-超自然口播数字人_2092655473743982594.json、视频生成/图生视频/LTX2.3-超自然电商口播数字人-自动版_2086680366970138625.json、视频生成/图生视频/2054532786014433282.json、视频生成/图生视频/2054541645990907905.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2022090916130988033.json、视频生成/图生视频/2005998489748328449.json、视频生成/图生视频/2011456654914621441.json、视频生成/图生视频/2043277344625926145.json、视频生成/图生视频/2016438828810117122.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CR Text`
+- `ImageBatchExtendWithOverlap`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `PromptRelayEncode`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TTResolutionSelector`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 8/9 个有
-- `Float` —— 7/9 个有
-- `Int` —— 7/9 个有
-- `MelBandRoFormerModelLoader` —— 7/9 个有
-- `MelBandRoFormerSampler` —— 7/9 个有
-- `Text` —— 7/9 个有
-- `1hew_StringJoinMulti` —— 5/9 个有
-- `IntToString` —— 5/9 个有
-- `JSON取值节点` —— 5/9 个有
-- `JoinStrings` —— 5/9 个有
-- `PreviewAny` —— 5/9 个有
-- `PrimitiveString` —— 5/9 个有
-- `RH_LLMAPI_Pro_Node` —— 5/9 个有
-- `JWFloat` —— 2/9 个有
-- `StringConstant` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `AudioSeparation` —— 1/9 个有
+- `DiffusionModelLoaderKJ` —— 8/9 个有
+- `VAEEncode` —— 8/9 个有
+- `WanImageToVideoSVIPro` —— 8/9 个有
+- `DF_Int_to_Float` —— 6/9 个有
+- `GODMT_ListGetByIndex` —— 6/9 个有
+- `GODMT_SplitString` —— 6/9 个有
+- `MathExpression|pysssss` —— 6/9 个有
+- `StringToInt` —— 6/9 个有
+- `WWAA-LineCount` —— 6/9 个有
+- `Int` —— 3/9 个有
+- `SimpleMath+` —— 3/9 个有
+- `ModelSamplingSD3` —— 1/9 个有
+- `RIFE VFI` —— 1/9 个有
+- `UNETLoader` —— 1/9 个有
+- `WanAdvancedI2V` —— 1/9 个有
+- `easy float` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 9 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 9 | 92% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -83,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，9 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，9 个样本，取值集中（一致性 92%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

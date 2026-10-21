@@ -3,56 +3,65 @@ name: unknown_workflow_video_sampler_clip_255
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.968
-common_nodes: [CLIPLoader, CLIPTextEncode, Int, KSamplerAdvanced, LoadImage, ModelSamplingSD3, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo]
+coverage: 0.887
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EmptyHunyuanLatentVideo, Florence2ModelLoader, Florence2Run, FluxGuidance, GetImageSizeAndCount, HunyuanImageToVideo, ImageBatch, ImageFromBatch, KSamplerSelect, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, String, Text Concatenate, Text Find and Replace, TextEncodeHunyuanVideo_ImageToVideo, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981920767082414081.json, 视频生成/图生视频/2070330634358312961.json]
+members: [视频生成/文生视频/1905235717641916417.json, 视频生成/文生视频/1905625750312259585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_255
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981920767082414081.json、视频生成/图生视频/2070330634358312961.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1905235717641916417.json、视频生成/文生视频/1905625750312259585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `Int`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `EmptyHunyuanLatentVideo`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `GetImageSizeAndCount`
+- `HunyuanImageToVideo`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSamplerSelect`
+- `MathExpression|pysssss`
 - `ModelSamplingSD3`
-- `SimpleMath+`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `ShowText|pysssss`
+- `String`
+- `Text Concatenate`
+- `Text Find and Replace`
+- `TextEncodeHunyuanVideo_ImageToVideo`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Get resolution [Crystools]` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `easy getNode` —— 1/2 个有
-- `easy setNode` —— 1/2 个有
+- `SaveAnimatedWEBP` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 6 | - | 2 | 67% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,9 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

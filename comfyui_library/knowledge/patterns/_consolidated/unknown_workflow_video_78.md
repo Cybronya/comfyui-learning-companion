@@ -3,34 +3,38 @@ name: unknown_workflow_video_78
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
+coverage: 0.9675
+common_nodes: [FloatProcess, ImageConcatMulti, LoadAudio, LoadFloatModels, LoadImage, PrimitiveFloat, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1914163211577323522.json, 视频生成/图生视频/1914609595644608513.json]
+members: [视频生成/图生视频/1921013177109385217.json, 视频生成/图生视频/1920712821791719425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_78
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1914163211577323522.json、视频生成/图生视频/1914609595644608513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1921013177109385217.json、视频生成/图生视频/1920712821791719425.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `FloatProcess`
+- `ImageConcatMulti`
+- `LoadAudio`
+- `LoadFloatModels`
 - `LoadImage`
-- `RunningHub_FramePack`
-- `SeargePromptText`
+- `PrimitiveFloat`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/2 个有
-- `Note _O` —— 1/2 个有
+- `AddLabel` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `SeargePromptText` —— 1/2 个有
 
 ## 典型参数
 

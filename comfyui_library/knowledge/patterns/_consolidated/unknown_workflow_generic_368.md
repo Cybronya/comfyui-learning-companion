@@ -3,43 +3,36 @@ name: unknown_workflow_generic_368
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.78475
-common_nodes: [LoadAudio, NormalizeAudioLoudness, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PrimitiveStringMultiline, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio, easy promptList]
+coverage: 0.96875
+common_nodes: [AFL:AudioMixStems, AudioSeparation, RunningHubRVCVoiceConversion, RunningHubRVCZipModelLoader, SaveAudio, VHS_LoadAudioUpload]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json, 音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json, 音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json, 音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json]
+members: [图片生成/文生图/RVC歌曲音色替换_2101876834106429441.json, 音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json, 音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json, 音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_368
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json、音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json、音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json、音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/RVC歌曲音色替换_2101876834106429441.json、音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json、音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json、音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceMultiSpeakerTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceVoiceDesignTTS`
-- `PrimitiveStringMultiline`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
+- `AFL:AudioMixStems`
+- `AudioSeparation`
+- `RunningHubRVCVoiceConversion`
+- `RunningHubRVCZipModelLoader`
 - `SaveAudio`
-- `easy promptList`
+- `VHS_LoadAudioUpload`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `忽略多组孤海` —— 2/4 个有
-- `JWStringToFloat` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

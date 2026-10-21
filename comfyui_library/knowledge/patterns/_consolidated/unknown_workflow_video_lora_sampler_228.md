@@ -2,65 +2,63 @@
 name: unknown_workflow_video_lora_sampler_228
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.563333
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, INTConstant, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SetNode, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+level: moderate
+coverage: 0.883222
+common_nodes: [BasicGuider, CLIPLoader, LoraLoaderModelOnly, MiniMaxH3Unified, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2005649937650118658.json, 视频生成/图生视频/2013437129388462081.json, 视频生成/图生视频/2007322836368625665.json, 视频生成/图生视频/2008463179042529282.json, 视频生成/图生视频/2005892831866744833.json, 视频生成/图生视频/2005667775693684738.json, 视频生成/图生视频/2007775909079683073.json, 视频生成/图生视频/2006221064216514562.json, 视频生成/图生视频/2005914209638645762.json]
+members: [视频生成/图生视频/minimaxH3数字人工作流 全能插件加速版_2085693921774104577.json, 视频生成/文生视频/H3生成视频_2095427697911615489.json, 视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3 一体化工作流_2099131023387881473.json, 视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json, 视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json, 视频生成/文生视频/MiniMax H3新版8步768p加速（单采高质量）_2094009829802205186.json, 视频生成/文生视频/MinimaxH3l全功能加速工作流（lightx2V版加速lora）_2086063010979864577.json, 视频生成/文生视频/MinimaxH3全功能加速工作流（lightx2V加速版）V3_2090441419977740290.json, 视频生成/文生视频/MinimaxH3全功能加速工作流（目前有bug等rh修复）_2085696451409170433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_228
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2005649937650118658.json、视频生成/图生视频/2013437129388462081.json、视频生成/图生视频/2007322836368625665.json、视频生成/图生视频/2008463179042529282.json、视频生成/图生视频/2005892831866744833.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/minimaxH3数字人工作流 全能插件加速版_2085693921774104577.json、视频生成/文生视频/H3生成视频_2095427697911615489.json、视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3 一体化工作流_2099131023387881473.json、视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json、视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：56%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `KSamplerAdvanced`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SetNode`
-- `VAEDecode`
-- `VAEEncode`
+- `MiniMaxH3Unified`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
-- `ShowText|pysssss` —— 5/9 个有
-- `easy indexAnything` —— 5/9 个有
-- `easy promptLine` —— 5/9 个有
-- `ImageResizeKJv2` —— 3/9 个有
-- `JWInteger` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `Text` —— 2/9 个有
-- `CM_IntToFloat` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `easy mathInt` —— 1/9 个有
+- `BasicScheduler` —— 8/9 个有
+- `KSamplerSelect` —— 8/9 个有
+- `Label (rgthree)` —— 8/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
+- `CR Text` —— 6/9 个有
+- `MiniMaxH3AVDecodeT8` —— 6/9 个有
+- `ModelPreviewOverrideKJ` —— 6/9 个有
+- `ModelAttentionBackend` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `MiniMaxH3SigmaShift` —— 4/9 个有
+- `PathchSageAttentionKJ` —— 4/9 个有
+- `VAEDecode` —— 4/9 个有
+- `VAEDecodeAudio` —— 4/9 个有
+- `PrimitiveFloat` —— 3/9 个有
+- `PrimitiveStringMultiline` —— 3/9 个有
+- `H3SigmaRefiner` —— 2/9 个有
+- `LoadImage` —— 2/9 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/9 个有
+- `SolAttnMiniMax` —— 1/9 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 89% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 89%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,69 +3,72 @@ name: unknown_workflow_video_lora_sampler_207
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.811444
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.652
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [CR Prompt Text]
-members: [图片生成/文生图/1970453209825374209.json, 视频生成/图生视频/2047149486551605249.json, 视频生成/图生视频/2047141901102489601.json, 视频生成/图生视频/2051961839407386625.json, 视频生成/图生视频/2048682075724718081.json, 视频生成/图生视频/2054096337670557697.json, 视频生成/图生视频/2060540846868619266.json, 视频生成/图生视频/2062041921597562882.json, 视频生成/图生视频/2054799806060605442.json]
+missing: []
+members: [视频生成/图生视频/1992627593610588161.json, 视频生成/图生视频/1985341047272316930.json, 视频生成/图生视频/1985248262460481537.json, 视频生成/图生视频/2057618532237664258.json, 视频生成/图生视频/1998600702769422338.json, 视频生成/图生视频/1983506887171842049.json, 视频生成/图生视频/1982104863096086530.json, 视频生成/图生视频/1981341961615474690.json, 视频生成/文生视频/6窗口-svi-film长视频生产_1983866504603172866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_207
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1970453209825374209.json、视频生成/图生视频/2047149486551605249.json、视频生成/图生视频/2047141901102489601.json、视频生成/图生视频/2051961839407386625.json、视频生成/图生视频/2048682075724718081.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1992627593610588161.json、视频生成/图生视频/1985341047272316930.json、视频生成/图生视频/1985248262460481537.json、视频生成/图生视频/2057618532237664258.json、视频生成/图生视频/1998600702769422338.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `ImageBatchMulti`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 8/9 个有
-- `GetImageSize` —— 8/9 个有
-- `ResizeImagesByLongerEdge` —— 8/9 个有
-- `Text` —— 8/9 个有
-- `WanVideoPassImagesFromSamples` —— 8/9 个有
-- `GetNode` —— 5/9 个有
-- `PreviewAny` —— 5/9 个有
-- `SetNode` —— 5/9 个有
-- `WanVideoTorchCompileSettings` —— 5/9 个有
-- `Wav2VecModelLoader` —— 5/9 个有
-- `PreviewAudio` —— 4/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
-- `GIMMVFI_interpolate` —— 1/9 个有
-- `HAIGC_VideoSubtitleTimestampPro` —— 1/9 个有
-- `ImageUpscaleWithModel` —— 1/9 个有
-- `IndexTTS2Run` —— 1/9 个有
-- `SaveAudio` —— 1/9 个有
-- `UpscaleModelLoader` —— 1/9 个有
-- `WanVideoDecode` —— 1/9 个有
-- `ZML_TextInput` —— 1/9 个有
+- `ImageResizeKJv2` —— 8/9 个有
+- `CLIPVisionLoader` —— 7/9 个有
+- `WanVideoClipVisionEncode` —— 7/9 个有
+- `InvertMask` —— 6/9 个有
+- `WanVideoVACEStartToEndFrame` —— 6/9 个有
+- `ColorMatch` —— 5/9 个有
+- `WanVideoSetLoRAs` —— 5/9 个有
+- `CLIPLoader` —— 2/9 个有
+- `CLIPTextEncode` —— 2/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `VRAM_Debug` —— 2/9 个有
+- `WanVideoTextEmbedBridge` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `String Literal` —— 1/9 个有
+- `Text Load Line From File` —— 1/9 个有
+- `easy forLoopEnd` —— 1/9 个有
+- `easy forLoopStart` —— 1/9 个有
+- `easy promptLine` —— 1/9 个有
 
 ## 典型参数
 
@@ -77,4 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

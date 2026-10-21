@@ -2,69 +2,75 @@
 name: unknown_workflow_sampler_unet_vae_109
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.787714
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+level: moderate
+coverage: 0.955143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/【开源】MiniMax_Music3 音乐生成_2088147284696584193.json, 音频生成/音频生成/【遇见AI】Minimax Music 3开源音乐模型，最长支持5分钟_2088855416225755138.json, 音频生成/音频生成/文字生歌曲 MiniMax Music_2090725556378750978.json, 音频生成/音频生成/海螺Minimax Music3_2088170981381730305.json, 音频生成/音频生成/真·最强开源音乐生成 minimaxmusic  suno之下第一人_2089988506549571586.json, 音频生成/音频生成/音乐生成 海螺 Music 3_2088110025138069505.json, 音频生成/音频生成/音乐生成 海螺 Music 3_2088981046997118977.json]
+members: [图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json, 图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成最新工作流_2093552366741180417.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成（多人）工作流_2095674532345499649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_109
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/【开源】MiniMax_Music3 音乐生成_2088147284696584193.json、音频生成/音频生成/【遇见AI】Minimax Music 3开源音乐模型，最长支持5分钟_2088855416225755138.json、音频生成/音频生成/文字生歌曲 MiniMax Music_2090725556378750978.json、音频生成/音频生成/海螺Minimax Music3_2088170981381730305.json、音频生成/音频生成/真·最强开源音乐生成 minimaxmusic  suno之下第一人_2089988506549571586.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json、图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 4/7 个有
-- `VAEDecodeAudioTiled` —— 4/7 个有
-- `Float` —— 3/7 个有
-- `PreviewAudio` —— 3/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `JjkText` —— 2/7 个有
-- `LoadImage` —— 2/7 个有
-- `Text` —— 2/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
+- `CR Text` —— 5/7 个有
+- `ImageUpscaleWithModel` —— 5/7 个有
+- `LazySwitchKJ_UTK` —— 5/7 个有
+- `PrimitiveFloat` —— 5/7 个有
+- `TextConcatenate_UTK` —— 5/7 个有
+- `UpscaleModelLoader` —— 5/7 个有
+- `easy boolean` —— 5/7 个有
+- `Apply Whisper` —— 4/7 个有
+- `AudioCrop` —— 4/7 个有
+- `DF_Int_to_Float` —— 4/7 个有
+- `FB_Qwen3TTSDialogueInference` —— 4/7 个有
+- `FB_Qwen3TTSRoleBank` —— 4/7 个有
+- `FB_Qwen3TTSVoiceClonePrompt` —— 4/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `CreateVideo` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `VAEDecodeAudio` —— 3/7 个有
+- `ImageScaleBy` —— 2/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 7/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

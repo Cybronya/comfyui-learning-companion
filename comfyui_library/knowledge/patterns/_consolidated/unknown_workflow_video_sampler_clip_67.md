@@ -1,75 +1,86 @@
 ---
 name: unknown_workflow_video_sampler_clip_67
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: strong
-coverage: 0.651333
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, GetNode, INTConstant, ImageLoader, ImageResizeKJ, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, MultiplePathsInput, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, SetNode, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanMoeKSampler, WanVideoNAG, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.553625
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1986710201665581058.json, 视频生成/图生视频/2003745744496541698.json, 视频生成/图生视频/1998710144752046081.json, 视频生成/图生视频/2009163344107806722.json, 视频生成/图生视频/2006637796416561154.json, 视频生成/图生视频/2018215388487618561.json, 视频生成/图生视频/1998783558367989762.json, 视频生成/图生视频/2004366389764915202.json, 视频生成/文生视频/首尾帧视频扩写-wan2.2-smoothMix-官方_2004136060017909761.json]
+members: [视频生成/图生视频/2068875713587007490.json, 视频生成/图生视频/2068905830182899714.json, 视频生成/图生视频/2069697861658435586.json, 视频生成/图生视频/2069688707870978050.json, 视频生成/图生视频/2067017376826216450.json, 视频生成/图生视频/2069616746276937729.json, 视频生成/图生视频/2043556476085604353.json, 视频生成/图生视频/2041885580006526978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_67
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1986710201665581058.json、视频生成/图生视频/2003745744496541698.json、视频生成/图生视频/1998710144752046081.json、视频生成/图生视频/2009163344107806722.json、视频生成/图生视频/2006637796416561154.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2068875713587007490.json、视频生成/图生视频/2068905830182899714.json、视频生成/图生视频/2069697861658435586.json、视频生成/图生视频/2069688707870978050.json、视频生成/图生视频/2067017376826216450.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `GetImageSizeAndCount`
+- `CR Float To Integer`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `INTConstant`
-- `ImageLoader`
-- `ImageResizeKJ`
-- `ImpactFloat`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `MultiplePathsInput`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `Qwen3_VQA`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `StringFunction|pysssss`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanMoeKSampler`
-- `WanVideoNAG`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 8/9 个有
-- `MathExpression|pysssss` —— 8/9 个有
-- `MemoryCleaner` —— 8/9 个有
-- `ModelBlockSwap` —— 8/9 个有
-- `PrimitiveFloat` —— 8/9 个有
-- `easy imageSize` —— 8/9 个有
-- `CLIPVisionEncode` —— 1/9 个有
-- `CLIPVisionLoader` —— 1/9 个有
+- `LatentUpscaleModelLoader` —— 7/8 个有
+- `TTResolutionSelector` —— 6/8 个有
+- `JWString` —— 5/8 个有
+- `ParseJsonNode` —— 5/8 个有
+- `ShowText|pysssss` —— 5/8 个有
+- `TD_LTXVAddGuideFromGrid` —— 5/8 个有
+- `INTConstant` —— 3/8 个有
+- `ImageFromBatch+` —— 3/8 个有
+- `LTXVAddGuideMulti` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `Text` —— 3/8 个有
+- `Any To Any` —— 2/8 个有
+- `BatchCount+` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `ImageResize+` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `LTXVImgToVideoInplace` —— 2/8 个有
+- `LTXVLatentUpsampler` —— 2/8 个有
+- `Make Image Batch` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `easy imageSize` —— 2/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `JWStringToInteger` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | 1 | 1 - 1 | 9 | 100% |
-| 重绘幅度 | sa_solver | - | 9 | 89% |
+| 宽度 | 97 | 97 - 97 | 8 | 100% |
+| 高度 | 25 | 25 - 25 | 8 | 100% |
 
 ## 常见问题
 
@@ -77,9 +88,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 sa_solver，9 个样本，一致性 89%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）

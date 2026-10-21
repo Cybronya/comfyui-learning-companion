@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_lora_sampler_clip_62
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.955
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
+frequency: 6
+level: strong
+coverage: 0.874833
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/2075527517234094082.json, 视频生成/图生视频/2074817349152235521.json, 视频生成/图生视频/2077979272010096641.json, 视频生成/图生视频/2061975400108093442.json]
+members: [视频生成/图生视频/2070832295954702337.json, 视频生成/图生视频/2070881520012849153.json, 视频生成/图生视频/2068532278657118210.json, 视频生成/图生视频/2067979933967802369.json, 视频生成/图生视频/2069345362887929858.json, 视频生成/文生视频/【完全不输 MSR】告别崩坏！LTX-2.3 ingredients角色_道具_场景绝对锁定_2070380617480622081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_62
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2075527517234094082.json、视频生成/图生视频/2074817349152235521.json、视频生成/图生视频/2077979272010096641.json、视频生成/图生视频/2061975400108093442.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2070832295954702337.json、视频生成/图生视频/2070881520012849153.json、视频生成/图生视频/2068532278657118210.json、视频生成/图生视频/2067979933967802369.json、视频生成/图生视频/2069345362887929858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `CreateVideo`
 - `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `GetImageSize`
+- `GetVideoComponents`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXAddVideoICLoRAGuide`
+- `LTXFloatToInt`
 - `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
@@ -38,38 +41,52 @@ source: knowledge_consolidation
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LiconMSR`
+- `LTXVTiledVAEDecode`
 - `LoadImage`
-- `LowVRAMCheckpointLoader`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CropFace` —— 3/4 个有
-- `LTXIdentityOverlapConditioning` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `RH_LLMAPI_NODE` —— 3/4 个有
-- `SplitStringByDelimiter` —— 3/4 个有
-- `StringConcatenate` —— 3/4 个有
-- `StringReplace` —— 3/4 个有
-- `TTP_text_mix` —— 3/4 个有
-- `TextGenerate` —— 3/4 个有
-- `TextInput_` —— 3/4 个有
-- `LTX2_NAG` —— 1/4 个有
-- `LTXVAddGuideMulti` —— 1/4 个有
-- `PromptRelayEncode` —— 1/4 个有
+- `PreviewImage` —— 5/6 个有
+- `SaveVideo` —— 5/6 个有
+- `PreviewAny` —— 4/6 个有
+- `JjkText` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `RH_LLMAPI_NODE` —— 2/6 个有
+- `VHS_VideoCombine` —— 2/6 个有
+- `llama_cpp_instruct_adv` —— 2/6 个有
+- `llama_cpp_model_loader` —— 2/6 个有
+- `llama_cpp_parameters` —— 2/6 个有
+- `ComfySwitchNode` —— 1/6 个有
+- `DualCLIPLoader` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `ImageConcatenateMulti_UTK` —— 1/6 个有
+- `LTXVImgToVideoInplace` —— 1/6 个有
+- `LTXVLatentUpsampler` —— 1/6 个有
+- `LatentUpscaleModelLoader` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringReplace` —— 1/6 个有
+- `TextGenerate` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
+- `VAEDecodeTiled` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 145 - 241 | 4 | 81% |
-| 高度 | 50 | 24 - 50 | 4 | 74% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 24 | 24 - 24 | 6 | 100% |
 
 ## 常见问题
 
@@ -77,5 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 145 - 241，4 个样本，取值集中（一致性 81%）
-- 高度 中位数 50，观测区间 24 - 50，4 个样本
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，6 个样本，取值集中（一致性 100%）

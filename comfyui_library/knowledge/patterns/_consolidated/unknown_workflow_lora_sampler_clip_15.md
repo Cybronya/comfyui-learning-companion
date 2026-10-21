@@ -1,104 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_15
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.8359
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, VAEDecodeTiled]
-problems: []
-missing: []
-members: [视频生成/图生视频/2058101725361430530.json, 视频生成/图生视频/2054789125802340354.json, 视频生成/图生视频/2054780723667718145.json, 视频生成/图生视频/2058082401418563586.json, 视频生成/图生视频/2058097242602557441.json, 视频生成/图生视频/2058053097523601410.json, 视频生成/图生视频/2058106663583969282.json, 视频生成/图生视频/2058106651525345282.json, 视频生成/图生视频/2057761252751003649.json, 视频生成/图生视频/2058134319910187009.json]
+frequency: 13
+level: weak
+coverage: 0.923308
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: [CR Text Concatenate, Text Multiline, SDXLEmptyLatentSizePicker+]
+members: [图片生成/文生图/1988478076659130370.json, 图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json, 图片生成/文生图/Qwen_Image_2512_文生图_bf16版本_2008392762101604354.json, 图片生成/文生图/Qwen_Image_2512文生图工作流_2063234247065948161.json, 图片生成/文生图/Qwen白丝长腿丝袜美腿_2019647690329559041.json, 图片生成/文生图/Z-I-B道具快乐美女_2040453074061369345.json, 图片生成/文生图/Z-I-B长腿肉腿刺客美女_2056916021260410881.json, 图片生成/文生图/Z-Image-Base文生图亮亮丝袜美女_2018164986979295233.json, 图片生成/文生图/Z-Image-Turbo 4K高清大图DyPE直出_2000758971898134529.json, 图片生成/文生图/千问Qwen_image文生图海报_fp8_官方版26125_2015389169786294274.json, 图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json, 图片生成/文生图/多风格绘本_2004518809287491586.json, 图片生成/文生图/沙雕动漫怪兽神兽多视图三视图（加速版）_2002568995201007617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_15
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2058101725361430530.json、视频生成/图生视频/2054789125802340354.json、视频生成/图生视频/2054780723667718145.json、视频生成/图生视频/2058082401418563586.json、视频生成/图生视频/2058097242602557441.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/1988478076659130370.json、图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json、图片生成/文生图/Qwen_Image_2512_文生图_bf16版本_2008392762101604354.json、图片生成/文生图/Qwen_Image_2512文生图工作流_2063234247065948161.json、图片生成/文生图/Qwen白丝长腿丝袜美腿_2019647690329559041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：13
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CFGGuider`
+全部 13 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 9/10 个有
-- `LTXVAudioVAEDecode` —— 9/10 个有
-- `LTXVLatentUpsampler` —— 9/10 个有
-- `LatentUpscaleModelLoader` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 9/10 个有
-- `CreateVideo` —— 8/10 个有
-- `LTXVImgToVideoInplace` —— 8/10 个有
-- `SaveVideo` —— 8/10 个有
-- `LTXVImgToVideoInplaceKJ` —— 7/10 个有
-- `PrimitiveBoolean` —— 7/10 个有
-- `ResizeImagesByLongerEdge` —— 7/10 个有
-- `FloatConstant` —— 4/10 个有
-- `LTXVEmptyLatentAudio` —— 4/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
-- `PreviewAny` —— 4/10 个有
-- `Qwen3ASRLoader_DFT` —— 4/10 个有
-- `Qwen3ASRTranscribe_DFT` —— 4/10 个有
-- `ResizeImageMaskNode` —— 4/10 个有
-- `SimpleMath+` —— 4/10 个有
-- `StringConcatenate` —— 4/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `ImageResizeKJv2` —— 2/10 个有
-- `LTXVChunkFeedForward` —— 2/10 个有
-- `ModelPatchTorchSettings` —— 2/10 个有
-- `PathchSageAttentionKJ` —— 2/10 个有
-- `RH_LLMAPI_Pro_Node` —— 2/10 个有
-- `TextCombinerTwo` —— 2/10 个有
-- `VHS_VideoCombine` —— 2/10 个有
-- `easy showAnything` —— 2/10 个有
-- `GetImageSize` —— 1/10 个有
-- `LTXVAddGuide` —— 1/10 个有
-- `SamplerEulerAncestral` —— 1/10 个有
+- `EmptySD3LatentImage` —— 10/13 个有
+- `Text Multiline` —— 5/13 个有
+- `ConditioningZeroOut` —— 4/13 个有
+- `CompressImages` —— 3/13 个有
+- `SDXLEmptyLatentSizePicker+` —— 3/13 个有
+- `CR Text Concatenate` —— 2/13 个有
+- `DyPE_FLUX` —— 2/13 个有
+- `RMBG` —— 2/13 个有
+- `Anything Everywhere3` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+| 采样步数 | 8 | 4 - 20 | 13 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 13 | 20% |
+| 采样算法 | euler | - | 13 | 85% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 1344x768 (1.75) | - | 3 | 67% |
+| 高度 | 1 | 1 - 4 | 3 | 29% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 20，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，13 个样本，取值分散，一致性仅 20%
+- 采样算法 最常用 euler，13 个样本，一致性 85%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 最常用 1344x768 (1.75)，3 个样本，一致性 67%
+- 高度 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
+- 高发问题（9/13 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、Text Multiline、SDXLEmptyLatentSizePicker+

@@ -3,67 +3,92 @@ name: text_to_image_video_lora_sampler_66
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.794727
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.751545
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, EmptyImage, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, ImpactSwitch, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3图生视频工作流｜一站式图生视频创作助手_2106919593049681922.json, 视频生成/图生视频/多图编辑多合一｜海螺H3文生图生视频换背景_2090937623283060738.json, 视频生成/图生视频/多图编辑海螺H3文生图生视频视频多合一_2090640704577040386.json, 视频生成/图生视频/智能一体化创作｜MiniMax H3图生视频生成_2091802297490829313.json, 视频生成/图生视频/智能一体化视频创作｜MiniMax H3图生视频直出_2091302697143201794.json, 视频生成/图生视频/智能一体化视频创作｜MiniMax H3图生视频直出_2091640143630393346.json, 视频生成/图生视频/海螺H3文生图生视频视频编辑多合一_2091424745895059457.json, 视频生成/图生视频/短剧漫剧真人剧多参输出｜MiniMax H3开源图生视频_2093087226048638977.json, 视频生成/文生视频/30S极简多合一｜图生文生视频编辑海螺H3孤海版_2093488975238483970.json, 视频生成/文生视频/30秒全能加速生成｜MinimaxH3开源免费GH版视频_2093487368002166786.json, 视频生成/文生视频/ComfyUI多轮对话Skill加载｜配合MiniMax-H3智能工作台_2092077272688844801.json]
+members: [视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json, 视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087470174856368129.json, 视频生成/图生视频/V2超高拟态舞蹈｜160帧直出1920高清动作迁移_2092184846041960450.json, 视频生成/图生视频/平行世界的我起号专用动作迁移图生视频_2087313287083020289.json, 视频生成/图生视频/平行世界的我风格转换｜动漫手办乐高多风格视频生成_2097806857049042945.json, 视频生成/图生视频/平行世界的我｜起号专用动作迁移图生视频一键生成_2092147311823638530.json, 视频生成/文生视频/V2视频换背景｜文生视频视频生视频替换生成_2092171934913097729.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_66
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3图生视频工作流｜一站式图生视频创作助手_2106919593049681922.json、视频生成/图生视频/多图编辑多合一｜海螺H3文生图生视频换背景_2090937623283060738.json、视频生成/图生视频/多图编辑海螺H3文生图生视频视频多合一_2090640704577040386.json、视频生成/图生视频/智能一体化创作｜MiniMax H3图生视频生成_2091802297490829313.json、视频生成/图生视频/智能一体化视频创作｜MiniMax H3图生视频直出_2091302697143201794.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json、视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json、视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ColorMatch`
+- `EmptyImage`
 - `EmptyLatentImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3DualClockT8GH`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SetNode`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 10/11 个有
-- `LoraLoaderBypassModelOnly` —— 10/11 个有
-- `MiniMaxH3AVDecodeT8GH` —— 10/11 个有
-- `SetNode` —— 10/11 个有
-- `easy anythingIndexSwitch` —— 10/11 个有
-- `easy ifElse` —— 10/11 个有
-- `孤海注释` —— 9/11 个有
-- `MiniMaxH3AVDecodeT8` —— 5/11 个有
-- `LoadImage` —— 4/11 个有
-- `DapaoAPIChatMaterialLibraryNode` —— 1/11 个有
-- `DapaoAPIChatSettingsNode` —— 1/11 个有
-- `DapaoAPILLMConfigNode` —— 1/11 个有
-- `DapaoAPIMultiTurnChatNode` —— 1/11 个有
-- `DapaoAPISkillLoaderNode` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `LoadAudio` —— 1/11 个有
-- `LoadVideo` —— 1/11 个有
-- `Note Plus (mtb)` —— 1/11 个有
-- `PrimitiveString` —— 1/11 个有
-- `SaveAudioAdvanced` —— 1/11 个有
-- `easy showAnything` —— 1/11 个有
+- `AIO_Preprocessor` —— 10/11 个有
+- `AddLabel` —— 10/11 个有
+- `WanVideoTeaCache` —— 10/11 个有
+- `ShowText|pysssss` —— 7/11 个有
+- `WanVideoBlockSwap` —— 4/11 个有
+- `WanVideoLoraSelect` —— 4/11 个有
+- `WanVideoModelLoader` —— 4/11 个有
+- `WanVideoTorchCompileSettings` —— 4/11 个有
+- `WanVideoVACEModelSelect` —— 4/11 个有
+- `ConditioningZeroOut` —— 3/11 个有
+- `DualCLIPLoader` —— 3/11 个有
+- `FluxGuidance` —— 3/11 个有
+- `FluxKontextImageScale` —— 3/11 个有
+- `ImageBlend` —— 3/11 个有
+- `NunchakuFluxDiTLoader` —— 3/11 个有
+- `RH_Translator` —— 3/11 个有
+- `ReferenceLatent` —— 3/11 个有
+- `SaveImage` —— 3/11 个有
+- `Seed_` —— 3/11 个有
+- `Text` —— 3/11 个有
+- `VAEEncode` —— 3/11 个有
+- `easy imageConcat` —— 3/11 个有
+- `easy seed` —— 3/11 个有
+- `ImageFromBatch` —— 1/11 个有
+- `LayerUtility: ImageBlend` —— 1/11 个有
+- `WanVideoEnhanceAVideo` —— 1/11 个有
 
 ## 典型参数
 
@@ -81,7 +106,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -92,4 +117,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，11 个样本，一致性 100%
 - 调度器 最常用 beta，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（12/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足

@@ -1,67 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_203
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9035
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.944778
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2064706601667358721.json, 视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json, 视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json, 视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json, 视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998839138951168.json, 视频生成/文生视频/SCAIL-2 Single-Reference Long Video Edit_2072998856218157056.json, 视频生成/文生视频/SCAIL-2 Triple Character Motion Drive_2072998837192794112.json, 视频生成/文生视频/SCAIL-2 双人生物长视频驱动_2064973862177173505.json]
+members: [数字人/数字人/超清数字人对口型音乐_2098282192836317186.json, 视频生成/图生视频/1957828185982599170.json, 视频生成/图生视频/1998698671518666753.json, 视频生成/图生视频/InfiniteTalk-图片唱歌 单人数字人工作流_2086309319305424897.json, 视频生成/图生视频/1978645327920173058.json, 视频生成/图生视频/1978307219957637121.json, 视频生成/图生视频/1982650082937978882.json, 视频生成/图生视频/1982712177004027905.json, 视频生成/图生视频/2019287708035719169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_203
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2064706601667358721.json、视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json、视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json、视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json、视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/超清数字人对口型音乐_2098282192836317186.json、视频生成/图生视频/1957828185982599170.json、视频生成/图生视频/1998698671518666753.json、视频生成/图生视频/InfiniteTalk-图片唱歌 单人数字人工作流_2086309319305424897.json、视频生成/图生视频/1978645327920173058.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 9 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `GetImageRangeFromBatch`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorTransfer` —— 9/10 个有
-- `Int` —— 9/10 个有
-- `UNETLoader` —— 9/10 个有
-- `easy compare` —— 9/10 个有
-- `easy forLoopEnd` —— 9/10 个有
-- `easy forLoopStart` —— 9/10 个有
-- `easy ifElse` —— 9/10 个有
-- `easy int` —— 9/10 个有
-- `easy mathInt` —— 9/10 个有
-- `EmptyImage` —— 4/10 个有
-- `ImageCompositeMasked` —— 4/10 个有
-- `SAM3_TrackToMask` —— 4/10 个有
-- `CLIPLoaderGGUF` —— 1/10 个有
-- `DiffusionModelLoaderKJ` —— 1/10 个有
-- `UnetLoaderGGUF` —— 1/10 个有
-- `easy imageRemBg` —— 1/10 个有
+- `WanVideoTorchCompileSettings` —— 8/9 个有
+- `AudioCrop` —— 7/9 个有
+- `LoadAudio` —— 7/9 个有
+- `SimpleMath+` —— 7/9 个有
+- `easy showAnything` —— 7/9 个有
+- `Int` —— 6/9 个有
+- `ToInt` —— 6/9 个有
+- `Audio Duration (mtb)` —— 3/9 个有
+- `RH_GetAudioDuration` —— 3/9 个有
+- `INTConstant` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `VHS_LoadVideo` —— 2/9 个有
+- `AudioCombine` —— 1/9 个有
+- `CR Float To Integer` —— 1/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `ImpactFloat` —— 1/9 个有
+- `JjkText` —— 1/9 个有
+- `LayerUtility: PurgeVRAM` —— 1/9 个有
+- `PreviewAudio` —— 1/9 个有
+- `Qwen3TTSModelLoader` —— 1/9 个有
+- `Qwen3TTSVoiceDesign` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 

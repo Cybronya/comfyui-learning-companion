@@ -1,66 +1,58 @@
 ---
 name: unknown_workflow_lora_sampler_clip_40
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.9865
-common_nodes: [BasicScheduler, CLIPTextEncode, CM_FloatToInt, CR Text, DualCLIPLoader, ImageConcanate, KSamplerSelect, LTXVAddGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecode, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoInfo]
+frequency: 7
+level: moderate
+coverage: 0.695429
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2052776354835386370.json, 视频生成/图生视频/2053463786572529666.json, 视频生成/图生视频/2053043034979356673.json, 视频生成/图生视频/2053027400342097921.json, 视频生成/图生视频/2053455525341343746.json, 视频生成/图生视频/2054000800241856513.json]
+members: [图片生成/文生图/bernini_宝藏模型_T2I 文生图_2066848208415969281.json, 视频生成/图生视频/2082419589669015553.json, 视频生成/图生视频/2082414642227404801.json, 视频生成/图生视频/2080281287134367745.json, 视频生成/图生视频/2066854228743778305.json, 视频生成/图生视频/2066854283353612289.json, 视频生成/文生视频/Bernini 文生视频_2082360670233911297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_40
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2052776354835386370.json、视频生成/图生视频/2053463786572529666.json、视频生成/图生视频/2053043034979356673.json、视频生成/图生视频/2053027400342097921.json、视频生成/图生视频/2053455525341343746.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/bernini_宝藏模型_T2I 文生图_2066848208415969281.json、视频生成/图生视频/2082419589669015553.json、视频生成/图生视频/2082414642227404801.json、视频生成/图生视频/2080281287134367745.json、视频生成/图生视频/2066854228743778305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicScheduler`
+- `BerniniConditioning`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
-- `DualCLIPLoader`
-- `ImageConcanate`
 - `KSamplerSelect`
-- `LTXVAddGuide`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `SamplerCustom`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 5/6 个有
-- `DuckHideNode` —— 1/6 个有
-- `Float to Int` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `TT_img_enc` —— 1/6 个有
-- `TT_img_enc_v2` —— 1/6 个有
+- `SimpleComparison+` —— 6/7 个有
+- `VHS_VideoCombine` —— 6/7 个有
+- `easy ifElse` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `ComfySwitchNode` —— 3/7 个有
+- `PrimitiveBoolean` —— 3/7 个有
+- `PrimitiveFloat` —— 3/7 个有
+- `BatchImagesNode` —— 2/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,5 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

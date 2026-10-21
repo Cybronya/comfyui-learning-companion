@@ -3,43 +3,40 @@ name: unknown_workflow_generic_527
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.577333
-common_nodes: [AudioCrop, CR Prompt Text, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.949
+common_nodes: [CR Prompt Text, CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, StringConcatenate, Text, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3TTS-声音克隆—剪辑后期补救小助手_2079779281244344321.json, 音频生成/音频生成/【阿良绘】LongCat语音克隆 _（适合短语音克隆）_2063169655795179521.json, 音频生成/音频生成/三七-（sanqi）语音克隆_2062100898129731586.json]
+members: [图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json, 图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json, 图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_527
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3TTS-声音克隆—剪辑后期补救小助手_2079779281244344321.json、音频生成/音频生成/【阿良绘】LongCat语音克隆 _（适合短语音克隆）_2063169655795179521.json、音频生成/音频生成/三七-（sanqi）语音克隆_2062100898129731586.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json、图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json、图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
 - `CR Prompt Text`
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+- `CR Text`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `StringConcatenate`
+- `Text`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `LongCatMultiSpeakerTTS` —— 1/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `JjkConcat` —— 1/3 个有
 
 ## 典型参数
 

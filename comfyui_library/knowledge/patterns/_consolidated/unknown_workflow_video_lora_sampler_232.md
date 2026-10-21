@@ -3,32 +3,42 @@ name: unknown_workflow_video_lora_sampler_232
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.891889
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+coverage: 0.785556
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2017911981818253314.json, 视频生成/图生视频/2046206194833952769.json, 视频生成/图生视频/1955263438596423682.json, 视频生成/图生视频/2014217620324618242.json, 视频生成/图生视频/1950145303941922817.json, 视频生成/图生视频/1963873192061521922.json, 视频生成/图生视频/1949391348926971905.json, 视频生成/图生视频/1958716775745667074.json, 视频生成/图生视频/1954808332802506754.json]
+members: [视频生成/图生视频/2047405386377990145.json, 视频生成/图生视频/1970454235139743746.json, 视频生成/图生视频/2039589897626984450.json, 视频生成/图生视频/2052766629263618049.json, 视频生成/图生视频/1987692626436665345.json, 视频生成/图生视频/2004160279342686209.json, 视频生成/图生视频/2029971317079937026.json, 视频生成/图生视频/1960792886629601281.json, 视频生成/图生视频/1980834296959291394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_232
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2017911981818253314.json、视频生成/图生视频/2046206194833952769.json、视频生成/图生视频/1955263438596423682.json、视频生成/图生视频/2014217620324618242.json、视频生成/图生视频/1950145303941922817.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2047405386377990145.json、视频生成/图生视频/1970454235139743746.json、视频生成/图生视频/2039589897626984450.json、视频生成/图生视频/2052766629263618049.json、视频生成/图生视频/1987692626436665345.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
@@ -36,38 +46,39 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 8/9 个有
-- `WanVideoTorchCompileSettings` —— 8/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `GetImageSizeAndCount` —— 6/9 个有
-- `WanVideoSetBlockSwap` —— 6/9 个有
-- `WanVideoSetLoRAs` —— 6/9 个有
-- `INTConstant` —— 5/9 个有
-- `LayerUtility: PurgeVRAM` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `ImageFromBatch+` —— 2/9 个有
-- `ImageResizeKJv2` —— 2/9 个有
-- `JWInteger` —— 2/9 个有
-- `MathExpression|pysssss` —— 2/9 个有
-- `PrimitiveStringMultiline` —— 2/9 个有
-- `GetImageSize` —— 1/9 个有
-- `ImageResize+` —— 1/9 个有
-- `ImpactInt` —— 1/9 个有
-- `InversionDemoLazyIndexSwitch` —— 1/9 个有
-- `LoadAudio` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `Random Number` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `LoadAudio` —— 8/9 个有
+- `PreviewAny` —— 8/9 个有
+- `GetNode` —— 2/9 个有
+- `CLIPTextEncode` —— 1/9 个有
+- `CM_FloatToInt` —— 1/9 个有
+- `ConcatTextOfUtils` —— 1/9 个有
+- `ImageBatch` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `KSampler` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `VAEDecode` —— 1/9 个有
+- `VHS_LoadAudioUpload` —— 1/9 个有
+- `VRGDG_AudioCropTime` —— 1/9 个有
+- `WanInfiniteTalkToVideo` —— 1/9 个有
+- `easy indexAnything` —— 1/9 个有
+- `easy mathInt` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | normal | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 

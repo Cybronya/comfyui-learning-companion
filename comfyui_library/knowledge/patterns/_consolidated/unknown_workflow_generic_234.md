@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_234
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.84
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3ImageToVideo, RH_MinimaxHailuoH3MultimodalToVideo, RH_MinimaxHailuoH3TextToVideo, SaveVideo]
+coverage: 0.722333
+common_nodes: [IndexTTSNode, JjkText, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json, 视频生成/图生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/图生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json, 视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json]
+members: [音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json, 音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json, 音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json, 音频生成/音频生成/TTS音频克隆_2056746978004000769.json, 音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json, 音频生成/音频生成/克隆声音 _ Index-TTS_1965784781864767490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_234
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json、视频生成/图生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/图生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json、视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json、音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json、音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json、音频生成/音频生成/TTS音频克隆_2056746978004000769.json、音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `IndexTTSNode`
+- `JjkText`
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3ImageToVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `Text` —— 2/5 个有
+- `AudioCrop` —— 5/6 个有
 
 ## 典型参数
 

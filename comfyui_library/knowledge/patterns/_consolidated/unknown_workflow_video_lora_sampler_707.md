@@ -1,64 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_707
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.782333
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.852
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConcatTextOfUtils, EmptyHunyuanLatentVideo, Int, KSampler, LatentCutToBatch, LatentFromBatch, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingAuraFlow, Qwen3_VQA, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/1951972629169295361.json, 视频生成/文生视频/1950555101742223362.json, 视频生成/文生视频/1950435690355015681.json]
+members: [图片生成/文生图/(10倍加速版)Qwen Layerd分层图像文生图_2002222103816466434.json, 图片生成/文生图/01-12-02-QwenImage-Qwen Layerd分层图像文生图_2004832012877918210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_707
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1951972629169295361.json、视频生成/文生视频/1950555101742223362.json、视频生成/文生视频/1950435690355015681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/(10倍加速版)Qwen Layerd分层图像文生图_2002222103816466434.json、图片生成/文生图/01-12-02-QwenImage-Qwen Layerd分层图像文生图_2004832012877918210.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConcatTextOfUtils`
+- `EmptyHunyuanLatentVideo`
+- `Int`
+- `KSampler`
+- `LatentCutToBatch`
+- `LatentFromBatch`
+- `LayerUtility: PurgeVRAM V2`
+- `LoraLoaderModelOnly`
 - `MathExpression|pysssss`
+- `ModelSamplingAuraFlow`
+- `Qwen3_VQA`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `Wan22PromptSelector` —— 2/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
+- `Float` —— 1/2 个有
+- `FloatConstant` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JWFloat` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 2 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

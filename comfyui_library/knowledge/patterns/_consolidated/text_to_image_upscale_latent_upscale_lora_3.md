@@ -1,35 +1,34 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_3
 type: Text To Image
-frequency: 10
+frequency: 14
 level: strong
-coverage: 0.612
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAELoader, easy float, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.74
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MINImax-H3单人音乐MV制作｜文生视频音乐生成_2094927265846091778.json, 视频生成/文生视频/MiniMax H3 二采加速｜多参考图生视频效率翻倍实用工作流_2097500273798369281.json, 视频生成/文生视频/MiniMax H3二采去油不爆音加速工作流，文生视频图生视频制作级方案_2103555034809192449.json, 视频生成/文生视频/MiniMax H3二采去油不爆音加速工作流｜视频生视频不糊脸，音画同步更高级_2100506185672781826.json, 视频生成/文生视频/Singularity模型双采放大 视频图片超分辨率增强_2098863700953362434.json, 视频生成/文生视频/minimaxH3混合模型sigma强化｜潜空间放大高清直出_2094545098968227842.json, 视频生成/文生视频/sigma强化不油腻混合模型｜minimaxH3潜空间放大高清直出_2094790731905986562.json, 视频生成/文生视频/单人音乐MV制作｜MINImax-H3三模视频生成工作流_2095106732040220673.json, 视频生成/文生视频/台词优化正反打镜头Singularity双采放大｜文生视频视频生视频对话戏更带感_2100457358244798465.json, 视频生成/文生视频/台词优化正反打镜头Singularity模型双采放大处理_2100644227557445634.json]
+members: [视频生成/图生视频/MinimaxH3全能参考高清放大｜9图12素材去噪加放大_2111315771795267585.json, 视频生成/图生视频/MinimaxH3动作迁移+人物替换二合一｜图生视频完美优化版_2110680462313218050.json, 视频生成/图生视频/MinimaxH3双模双采hybird+remix｜双加速实验工作流_2094864494676762625.json, 视频生成/图生视频/Ref2VA多参生视频进阶版 MiniMax H3服装展示图生视频_2104344870545608706.json, 视频生成/图生视频/Singularity最强一致性 Minimax H3多参考双采生视频多比例版_2104776734221627394.json, 视频生成/图生视频/Singularity最强一致性 Minimax H3多参考双采生视频标准版_2104646935444549633.json, 视频生成/图生视频/Singularity最强一致性 Minimax H3多参考双采视频生成_2098283807588839426.json, 视频生成/图生视频/Singularity最强一致性多参考双采生视频处理工具_2101743307100610561.json, 视频生成/图生视频/hybird+remix双模双采｜MinimaxH3双加速实验生成_2095055333248032769.json, 视频生成/图生视频/sigma强化超清放大1080P｜Minimax H3脸不崩打斗不糊_2095111117046640641.json, 视频生成/图生视频/全能多模态二采放大｜H3加速sigma强化工作流_2092350860545314817.json, 视频生成/图生视频/双模双采hybird+remix｜MinimaxH3图生视频双larry加速_2093078463535210498.json, 视频生成/图生视频/双模双采加速｜MinimaxH3 hybrid+remix双larry工作流_2093241754479845378.json, 视频生成/图生视频/同模双采动态修复工作流｜H3图生视频画质增强生成_2097104202756608002.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MINImax-H3单人音乐MV制作｜文生视频音乐生成_2094927265846091778.json、视频生成/文生视频/MiniMax H3 二采加速｜多参考图生视频效率翻倍实用工作流_2097500273798369281.json、视频生成/文生视频/MiniMax H3二采去油不爆音加速工作流，文生视频图生视频制作级方案_2103555034809192449.json、视频生成/文生视频/MiniMax H3二采去油不爆音加速工作流｜视频生视频不糊脸，音画同步更高级_2100506185672781826.json、视频生成/文生视频/Singularity模型双采放大 视频图片超分辨率增强_2098863700953362434.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考高清放大｜9图12素材去噪加放大_2111315771795267585.json、视频生成/图生视频/MinimaxH3动作迁移+人物替换二合一｜图生视频完美优化版_2110680462313218050.json、视频生成/图生视频/MinimaxH3双模双采hybird+remix｜双加速实验工作流_2094864494676762625.json、视频生成/图生视频/Ref2VA多参生视频进阶版 MiniMax H3服装展示图生视频_2104344870545608706.json、视频生成/图生视频/Singularity最强一致性 Minimax H3多参考双采生视频多比例版_2104776734221627394.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
@@ -37,79 +36,78 @@ source: knowledge_consolidation
 - `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
 - `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy float`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 8/10 个有
-- `VAEDecodeAudio` —— 8/10 个有
-- `CreateVideo` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `SaveVideo` —— 7/10 个有
-- `MiniMaxChunkFeedForward` —— 6/10 个有
-- `MiniMaxLowVRAMAttention` —— 6/10 个有
-- `VHS_LoadVideo` —— 6/10 个有
-- `H3SigmaRefiner` —— 4/10 个有
-- `INTConstant` —— 4/10 个有
-- `ModelPreviewOverrideKJ` —— 4/10 个有
-- `ResizeShortestToNode` —— 4/10 个有
-- `SolAttnMiniMax` —— 4/10 个有
-- `BlockSparseAttention` —— 3/10 个有
-- `DisableNoise` —— 3/10 个有
-- `ExtendIntermediateSigmas` —— 3/10 个有
-- `Lora Loader Stack (rgthree)` —— 3/10 个有
-- `MiniMaxH3TurboSampler` —— 3/10 个有
-- `SaveImage` —— 3/10 个有
-- `Text` —— 3/10 个有
-- `VHS_VideoCombine` —— 3/10 个有
-- `MuyeTextEditOutput` —— 2/10 个有
-- `PreviewAudio` —— 2/10 个有
-- `RHLLMChatNode` —— 2/10 个有
-- `SoundFlow_GetLength` —— 2/10 个有
-- `TrimAudioDuration` —— 2/10 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/10 个有
-- `easy showAnything` —— 2/10 个有
+- `PrimitiveFloat` —— 13/14 个有
+- `ResolutionSelector` —— 13/14 个有
+- `SplitSigmas` —— 13/14 个有
+- `VHS_VideoCombine` —— 12/14 个有
+- `LoadAudio` —— 11/14 个有
+- `ModelAttentionBackend` —— 11/14 个有
+- `GetNode` —— 9/14 个有
+- `SetNode` —— 9/14 个有
+- `H3SigmaRefiner` —— 8/14 个有
+- `MiniMaxH3SigmaShift` —— 7/14 个有
+- `ModelPreviewOverrideKJ` —— 7/14 个有
+- `PrimitiveStringMultiline` —— 7/14 个有
+- `SolAttnMiniMax` —— 7/14 个有
+- `SaveImage` —— 6/14 个有
+- `Text` —— 6/14 个有
+- `VHS_LoadVideo` —— 6/14 个有
+- `easy float` —— 6/14 个有
+- `MiniMaxH3TurboLoRA` —— 5/14 个有
+- `Seed (rgthree)` —— 5/14 个有
+- `ShellAgentPluginVideoCombineEncrypt` —— 5/14 个有
+- `easy cleanGpuUsed` —— 5/14 个有
+- `Lora Loader Stack (rgthree)` —— 4/14 个有
+- `CreateVideo` —— 2/14 个有
+- `LoraLoaderBypassModelOnly` —— 2/14 个有
+- `MiniMaxLowVRAMAttention` —— 2/14 个有
+- `SaveVideo` —— 2/14 个有
+- `easy int` —— 2/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
+- `Float` —— 1/14 个有
+- `GetVideoComponents` —— 1/14 个有
+- `Label (rgthree)` —— 1/14 个有
+- `LoadVideo` —— 1/14 个有
+- `MinimaxH3LatentUpscalerNode2D` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 10 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
-| 采样算法 | er_sde | - | 10 | 100% |
-| 调度器 | beta | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 80 | 80 - 80 | 10 | 100% |
-| 高度 | 80 | 80 - 80 | 10 | 100% |
+| 宽度 | 80 | 80 - 80 | 14 | 100% |
+| 高度 | 80 | 80 - 80 | 14 | 100% |
+| 采样步数 | 4 | 4 - 4 | 14 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
+| 采样算法 | er_sde | - | 14 | 100% |
+| 调度器 | beta | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 14/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，10 个样本，一致性 100%
-- 调度器 最常用 beta，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，14 个样本，一致性 100%
+- 调度器 最常用 beta，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（14/14 个样本）：Steps较低可能导致细节不足

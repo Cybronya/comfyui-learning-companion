@@ -3,85 +3,78 @@ name: unknown_workflow_video_lora_sampler_109
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.659071
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.549857
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006028757395578881.json, 视频生成/图生视频/2006202937944576001.json, 视频生成/图生视频/2050494894682189826.json, 视频生成/图生视频/2006433739613675522.json, 视频生成/图生视频/2000760906177015810.json, 视频生成/图生视频/2000851201182793729.json, 视频生成/图生视频/2018306523847467009.json, 视频生成/图生视频/2023998769439711234.json, 视频生成/图生视频/2002405950176804865.json, 视频生成/图生视频/2002182497679077377.json, 视频生成/图生视频/1996588683803369474.json, 视频生成/图生视频/2058885569916264450.json, 视频生成/图生视频/2018335059614375937.json, 视频生成/图生视频/2066354482107207682.json]
+members: [视频生成/图生视频/1998993890759860225.json, 视频生成/图生视频/1991192921735278594.json, 视频生成/图生视频/2043632215732523009.json, 视频生成/图生视频/2043636277030948866.json, 视频生成/图生视频/1997005381832478722.json, 视频生成/图生视频/1974719882828845058.json, 视频生成/图生视频/2008454973708832769.json, 视频生成/图生视频/2064595765720346625.json, 视频生成/图生视频/2016043271843225601.json, 视频生成/图生视频/2002155248145842178.json, 视频生成/图生视频/2034527249550020609.json, 视频生成/图生视频/1975882698759737345.json, 视频生成/图生视频/2030254367873441794.json, 视频生成/文生视频/1970355314094710785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_109
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2006028757395578881.json、视频生成/图生视频/2006202937944576001.json、视频生成/图生视频/2050494894682189826.json、视频生成/图生视频/2006433739613675522.json、视频生成/图生视频/2000760906177015810.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1998993890759860225.json、视频生成/图生视频/1991192921735278594.json、视频生成/图生视频/2043632215732523009.json、视频生成/图生视频/2043636277030948866.json、视频生成/图生视频/1997005381832478722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `GetNode`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GrowMask`
 - `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `NLFPredict`
 - `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `SetNode`
+- `PoseAndFaceDetection`
+- `Sam2Segmentation`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 12/14 个有
-- `ImageConcatMulti` —— 12/14 个有
-- `WanVideoLoraSelect` —— 12/14 个有
-- `WanVideoEncode` —— 11/14 个有
-- `WanVideoUni3C_ControlnetLoader` —— 11/14 个有
-- `WanVideoUni3C_embeds` —— 11/14 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 8/14 个有
-- `DWPreprocessor` —— 8/14 个有
-- `LoadWanVideoT5TextEncoder` —— 8/14 个有
-- `SimpleMath+` —— 8/14 个有
-- `WanVideoTextEncode` —— 8/14 个有
-- `WanVideoTorchCompileSettings` —— 8/14 个有
-- `DownloadAndLoadNLFModel` —— 7/14 个有
-- `FloatConstant` —— 7/14 个有
-- `LoadNLFModel` —— 7/14 个有
-- `SimpleCalculatorKJ` —— 6/14 个有
-- `WanVideoTextEncodeCached` —— 6/14 个有
-- `Label (rgthree)` —— 5/14 个有
-- `easy cleanGpuUsed` —— 4/14 个有
-- `CustomAddLabel` —— 3/14 个有
-- `Int` —— 3/14 个有
-- `JjkText` —— 3/14 个有
-- `TwoWaySwitch` —— 3/14 个有
-- `intToFloat _O` —— 3/14 个有
+- `DrawViTPose` —— 13/14 个有
+- `GetNode` —— 13/14 个有
+- `SetNode` —— 13/14 个有
+- `WanVideoLoraSelectMulti` —— 13/14 个有
+- `PointsEditor` —— 12/14 个有
+- `VHS_VideoInfoLoaded` —— 12/14 个有
+- `easy cleanGpuUsed` —— 12/14 个有
+- `easy showAnything` —— 12/14 个有
+- `GetImageSize` —— 11/14 个有
+- `ImageConcanate` —— 11/14 个有
+- `JjkText` —— 10/14 个有
+- `PreviewImage` —— 3/14 个有
 - `DownloadAndLoadGIMMVFIModel` —— 2/14 个有
 - `GIMMVFI_interpolate` —— 2/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/14 个有
-- `PreviewImage` —— 2/14 个有
-- `Text Multiline` —— 2/14 个有
-- `WanVideoLoraSelectMulti` —— 2/14 个有
-- `TTResolutionSelector` —— 1/14 个有
+- `ImageBlend` —— 2/14 个有
+- `MuyeLoadImage` —— 2/14 个有
+- `Primitive integer [Crystools]` —— 2/14 个有
+- `SimpleMath+` —— 2/14 个有
+- `CR Prompt Text` —— 1/14 个有
+- `Float to Int` —— 1/14 个有
+- `ImageConcatMulti` —— 1/14 个有
+- `PreviewAny` —— 1/14 个有
+- `VHS_LoadVideoPath` —— 1/14 个有
+- `WanVideoLoraSelect` —— 1/14 个有
+- `WanVideoTeaCache` —— 1/14 个有
 
 ## 典型参数
 

@@ -2,80 +2,67 @@
 name: unknown_workflow_video_lora_sampler_259
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.551625
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+level: moderate
+coverage: 0.926375
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Unified, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1997866783497486337.json, 视频生成/图生视频/1992287754939854849.json, 视频生成/图生视频/1993579286244294658.json, 视频生成/图生视频/1993311257635782657.json, 视频生成/图生视频/1996195758498004994.json, 视频生成/图生视频/2018679573021462530.json, 视频生成/图生视频/2030310808810430466.json, 视频生成/文生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_2050153435672129537.json]
+members: [视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2099771065894522882.json, 视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2100032213063659521.json, 视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json, 视频生成/文生视频/minimaxH3全能黑科技工作流（10s只需5分钟）_2098047284964585473.json, 视频生成/文生视频/minimaxH3单采_双采工作流_2100606405177856002.json, 视频生成/文生视频/【变态加速高清版】MinMaxH3 全能参考-推荐_2098434067468476417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_259
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1997866783497486337.json、视频生成/图生视频/1992287754939854849.json、视频生成/图生视频/1993579286244294658.json、视频生成/图生视频/1993311257635782657.json、视频生成/图生视频/1996195758498004994.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2099771065894522882.json、视频生成/图生视频/MiniMax_H3_All-in-One_Accelerated_V3_一体化工作流_2100032213063659521.json、视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json、视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json、视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：55%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGZeroStar`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `CR Text`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `SetNode`
+- `MiniMaxH3Unified`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `RMBG` —— 7/8 个有
-- `TrimVideoLatent` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `RIFE VFI` —— 2/8 个有
-- `AILab_ImageStitch` —— 1/8 个有
-- `AILab_QwenVL` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `ForLoopClose` —— 1/8 个有
-- `ForLoopOpen` —— 1/8 个有
-- `ImageRotate` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `WanImageToVideo` —— 1/8 个有
-- `easy batchAnything` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
-- `easy promptConcat` —— 1/8 个有
-- `llama_cpp_instruct_adv` —— 1/8 个有
-- `llama_cpp_model_loader` —— 1/8 个有
+- `Label (rgthree)` —— 7/8 个有
+- `MiniMaxChunkFeedForward` —— 6/8 个有
+- `MiniMaxLowVRAMAttention` —— 6/8 个有
+- `VAEDecode` —— 6/8 个有
+- `VAEDecodeAudio` —— 6/8 个有
+- `H3SigmaRefiner` —— 5/8 个有
+- `MiniMaxH3AVDecodeT8` —— 5/8 个有
+- `ConditioningZeroOut` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `PreviewImage` —— 3/8 个有
+- `SelfLiftH3Sampler` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `VHS_SelectImages` —— 3/8 个有
+- `MemoryCleaner` —— 2/8 个有
+- `BlockSparseAttention` —— 1/8 个有
+- `ComfyMathExpression` —— 1/8 个有
+- `Float` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `ManualSigmas` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 88% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,8 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 88%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

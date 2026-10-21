@@ -3,36 +3,36 @@ name: unknown_workflow_generic_389
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.558
-common_nodes: [CR Text, JWString, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, parse_json_node]
+coverage: 0.4425
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/【只需上传小说】一键全自动有声小说生成-自动识别角色、声线、台词_2016046662497603586.json, 音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2015822417020592129.json, 音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2086833033843404801.json, 音频生成/音频生成/一键全自动有声小说生成_2033873863368511490.json]
+members: [视频生成/图生视频/1995091218533113857.json, 视频生成/图生视频/2011374870608748546.json, 视频生成/图生视频/2011368468091772929.json, 视频生成/图生视频/1961751814309875714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_389
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/【只需上传小说】一键全自动有声小说生成-自动识别角色、声线、台词_2016046662497603586.json、音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2015822417020592129.json、音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2086833033843404801.json、音频生成/音频生成/一键全自动有声小说生成_2033873863368511490.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1995091218533113857.json、视频生成/图生视频/2011374870608748546.json、视频生成/图生视频/2011368468091772929.json、视频生成/图生视频/1961751814309875714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `JWString`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `TDQwen3TTSBatchGenerateSpeaker`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSMultiDialog`
-- `parse_json_node`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `LoadImage`
+- `SaveVideo`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Comfly_MiniMax_video` —— 2/4 个有
+- `Comfly_vidu_ref2video` —— 1/4 个有
+- `Comfly_vidu_start-end2video` —— 1/4 个有
 
 ## 典型参数
 

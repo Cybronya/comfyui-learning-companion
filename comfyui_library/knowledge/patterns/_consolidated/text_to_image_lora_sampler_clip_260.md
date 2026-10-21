@@ -1,78 +1,75 @@
 ---
 name: text_to_image_lora_sampler_clip_260
 type: Text To Image
-frequency: 3
-level: strong
-coverage: 0.905
-common_nodes: [AudioSeparation, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SeedVCRun, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 4
+level: weak
+coverage: 0.79225
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: []
-members: [音频生成/音频生成/视频人物音色替换工作流，音频生成人物声音处理工具_2106485060236038146.json, 音频生成/音频生成/视频人物音色替换｜音频生成给角色换声音毫无违和_2106279153908666370.json, 音频生成/音频生成/音色克隆歌曲翻唱｜Seed-VC数字人音频生成_2089483938376011778.json]
+missing: [CR Text, Switch any [Crystools]]
+members: [图片生成/文生图/1969762845573476353.json, 图片生成/文生图/1969885972878008322.json, 图片生成/文生图/1986279659136569345.json, 图片生成/文生图/1988431547948818433.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_260
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/视频人物音色替换工作流，音频生成人物声音处理工具_2106485060236038146.json、音频生成/音频生成/视频人物音色替换｜音频生成给角色换声音毫无违和_2106279153908666370.json、音频生成/音频生成/音色克隆歌曲翻唱｜Seed-VC数字人音频生成_2089483938376011778.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1969762845573476353.json、图片生成/文生图/1969885972878008322.json、图片生成/文生图/1986279659136569345.json、图片生成/文生图/1988431547948818433.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：4
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AudioSeparation`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SeedVCRun`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `AudioCombine` —— 1/3 个有
-- `AudioCrop` —— 1/3 个有
-- `SaveAudio` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `ConcatText_Zho` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `Switch any [Crystools]` —— 2/4 个有
+- `InversionDemoLazyIndexSwitch` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `QwenEditResolution` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 采样步数 | 16.5 | 8 - 25 | 4 | 48% |
+| Prompt 约束强度(CFG) | 2.25 | 1 - 3.5 | 4 | 44% |
+| 采样算法 | euler | - | 4 | 50% |
+| 调度器 | normal | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1004 | 16 - 1600 | 4 | 37% |
+| 高度 | 1188 | 16 - 1600 | 4 | 37% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 16.5，观测区间 8 - 25，4 个样本，取值分散，一致性仅 48%
+- Prompt 约束强度(CFG) 中位数 2.25，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 44%
+- 采样算法 最常用 euler，4 个样本，一致性 50%
+- 调度器 最常用 normal，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1004，观测区间 16 - 1600，4 个样本，取值分散，一致性仅 37%
+- 高度 中位数 1188，观测区间 16 - 1600，4 个样本，取值分散，一致性仅 37%
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Switch any [Crystools]

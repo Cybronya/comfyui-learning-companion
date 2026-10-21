@@ -1,44 +1,40 @@
 ---
 name: unknown_workflow_video_sampler_unet_70
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.836333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), KSamplerSelect, KepStringLiteral, Label (rgthree), LoadImage, MiniMaxH3GenerationTailLoader, MiniMaxH3PromptEnhancer, PrimitiveFloat, RTXVideoSuperResolution, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.431
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 全模态视频生成 I 提示词强化 I 超分_2084660524603764738.json, 视频生成/文生视频/MiniMax H3 混合架构 I 极致一致性 I 最新官流加速1.0版 I 提示词强化_2088794658804686850.json, 视频生成/文生视频/MiniMax H3 首尾帧视频生成 _ 提示词强化 _ 超分_2084660541540360193.json]
+members: [视频生成/图生视频/MiniMaxH3-ref2va超级加速版-仅支持1.0分辨率_2089629306782834690.json, 视频生成/图生视频/子悟-MiniMaxH3-ref2va多参考生视频_2085657515655782402.json, 视频生成/文生视频/AITUDOU-MiniMax H3(全能参考)_2084222366611234818.json, 视频生成/文生视频/承象-MiniMax H3(全能单图多图参考)真人短剧极速版_2084992442926981122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_70
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 全模态视频生成 I 提示词强化 I 超分_2084660524603764738.json、视频生成/文生视频/MiniMax H3 混合架构 I 极致一致性 I 最新官流加速1.0版 I 提示词强化_2088794658804686850.json、视频生成/文生视频/MiniMax H3 首尾帧视频生成 _ 提示词强化 _ 超分_2084660541540360193.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-ref2va超级加速版-仅支持1.0分辨率_2089629306782834690.json、视频生成/图生视频/子悟-MiniMaxH3-ref2va多参考生视频_2085657515655782402.json、视频生成/文生视频/AITUDOU-MiniMax H3(全能参考)_2084222366611234818.json、视频生成/文生视频/承象-MiniMax H3(全能单图多图参考)真人短剧极速版_2084992442926981122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect`
-- `KepStringLiteral`
-- `Label (rgthree)`
+- `GetNode`
 - `LoadImage`
-- `MiniMaxH3GenerationTailLoader`
-- `MiniMaxH3PromptEnhancer`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
-- `RTXVideoSuperResolution`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -46,21 +42,19 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `VHS_LoadAudioUpload` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MiniMaxChunkFeedForward` —— 1/3 个有
-- `MiniMaxH3HybridLoader` —— 1/3 个有
-- `MiniMaxH3ImageToVideo` —— 1/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
-- `MiniMaxLowVRAMAttention` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `SeedVR2` —— 1/3 个有
-- `SeedVR2BlockSwap` —— 1/3 个有
-- `SeedVR2ExtraArgs` —— 1/3 个有
+- `KSamplerSelect` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `EasyCache` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
+- `ModelPatchTorchSettings` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
+- `ImageScale` —— 1/4 个有
+- `MiniMaxH3TurboLoRA` —— 1/4 个有
+- `MiniMaxH3TurboSampler` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `easy compare` —— 1/4 个有
 
 ## 典型参数
 

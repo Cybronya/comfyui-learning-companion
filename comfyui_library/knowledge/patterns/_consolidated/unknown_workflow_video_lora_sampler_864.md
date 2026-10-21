@@ -3,57 +3,58 @@ name: unknown_workflow_video_lora_sampler_864
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.932
-common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8115
+common_nodes: [CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, INTConstant, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SetNode, ShowText, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy sleep]
 problems: []
-missing: []
-members: [视频生成/图生视频/1913868726649978882.json, 视频生成/图生视频/1935726272695689217.json]
+missing: [Primitive string multiline [Crystools], easy cleanGpuUsed, easy sleep]
+members: [视频生成/图生视频/1975470690600136706.json, 视频生成/文生视频/1975486726921695233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_864
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913868726649978882.json、视频生成/图生视频/1935726272695689217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1975470690600136706.json、视频生成/文生视频/1975486726921695233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJ`
-- `LoadImage`
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `RH_LLMAPI_NODE`
+- `SetNode`
+- `ShowText`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy sleep`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `FloatConstant` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `Primitive string multiline [Crystools]` —— 1/2 个有
+- `WanVideoEmptyEmbeds` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoScheduler` —— 1/2 个有
+- `WanVideoSigmaToStep` —— 1/2 个有
 
 ## 典型参数
 
@@ -65,4 +66,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：Primitive string multiline [Crystools]、easy cleanGpuUsed、easy sleep
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

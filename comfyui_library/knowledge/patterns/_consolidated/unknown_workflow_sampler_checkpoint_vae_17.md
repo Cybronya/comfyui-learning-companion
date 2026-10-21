@@ -1,74 +1,58 @@
 ---
 name: unknown_workflow_sampler_checkpoint_vae_17
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.406
-common_nodes: [Anything Everywhere3, Anything Everywhere?, CheckpointLoaderSimple, EmptyImage, EmptyLatentImage, Fast Bypasser (rgthree), KSampler, LoadImage, Mute / Bypass Repeater (rgthree), SaveImage, TT_img_enc, TextEncodeQwenImageEditPlus, VAEDecode, WujiCleaner, easy boolean, easy cleanGpuUsed, easy imageSwitch, easy int]
-problems: [Steps较低可能导致细节不足]
-missing: [Anything Everywhere?, Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), easy boolean, easy cleanGpuUsed, easy imageSwitch, easy int]
-members: [图片生成/图生图/1980527707945615361.json, 图片生成/图生图/2020842049825673218.json]
+frequency: 3
+level: strong
+coverage: 0.921333
+common_nodes: [ImageOnlyCheckpointLoader, KSampler, LoadImage, SVD_img2vid_Conditioning, VAEDecode, VideoLinearCFGGuidance]
+problems: []
+missing: []
+members: [视频生成/图生视频/1777958599344066561.json, 视频生成/图生视频/1791025738556755969.json, 视频生成/图生视频/1791027207213273090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/1980527707945615361.json、图片生成/图生图/2020842049825673218.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1777958599344066561.json、视频生成/图生视频/1791025738556755969.json、视频生成/图生视频/1791027207213273090.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：41%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `Anything Everywhere?`
-- `CheckpointLoaderSimple`
-- `EmptyImage`
-- `EmptyLatentImage`
-- `Fast Bypasser (rgthree)`
+全部 3 个 workflow 都包含：
+- `ImageOnlyCheckpointLoader`
 - `KSampler`
 - `LoadImage`
-- `Mute / Bypass Repeater (rgthree)`
-- `SaveImage`
-- `TT_img_enc`
-- `TextEncodeQwenImageEditPlus`
+- `SVD_img2vid_Conditioning`
 - `VAEDecode`
-- `WujiCleaner`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy imageSwitch`
-- `easy int`
+- `VideoLinearCFGGuidance`
+
+**可变部分**（部分 workflow 才有）：
+- `ADE_AnimateDiffCombine` —— 2/3 个有
+- `ImageResize+` —— 2/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | sa_solver | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1000 | - | 2 | 100% |
-| 高度 | 1000 | - | 2 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | karras | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1000，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1000，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Anything Everywhere?、Fast Bypasser (rgthree)、Mute / Bypass Repeater (rgthree)、easy boolean、easy cleanGpuUsed
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 karras，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

@@ -3,34 +3,41 @@ name: unknown_workflow_generic_795
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8165
-common_nodes: [IndexTTS2_ModelManager, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.749
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_nano_banana2_edit, JDCN_StringToList, ProcessString, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2基础语音合成-文本转语音工作流_2094755880007987201.json, 音频生成/音频生成/Easy IndexTTS2多角色情感对话-情绪配音工作流_2094753739939868673.json]
+members: [图片生成/文生图/全能图片V1 2 & Pro 浮云_1996796507632410625.json, 图片生成/文生图/全能图片V1 浮云 最新版自动化生图工作流_1996824683343486978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_795
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2基础语音合成-文本转语音工作流_2094755880007987201.json、音频生成/音频生成/Easy IndexTTS2多角色情感对话-情绪配音工作流_2094753739939868673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片V1 2 & Pro 浮云_1996796507632410625.json、图片生成/文生图/全能图片V1 浮云 最新版自动化生图工作流_1996824683343486978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2_ModelManager`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_nano_banana2_edit`
+- `JDCN_StringToList`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text Multiline`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 1/2 个有
-- `IndexTTS2_EmotionVoiceMultiTalk` —— 1/2 个有
+- `Comfly_nano_banana` —— 1/2 个有
+- `Comfly_nano_banana_edit` —— 1/2 个有
 
 ## 典型参数
 

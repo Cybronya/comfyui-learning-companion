@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_214
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.5822
-common_nodes: [ShowText|pysssss, StringFunction|pysssss, easy positive, easy saveText, easy seed]
+coverage: 0.714
+common_nodes: [JjkText, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo]
 problems: []
-missing: [StringFunction|pysssss, Text Multiline, easy positive, easy saveText, easy seed]
-members: [图片生成/文生图/1972595214646968321.json, 图片生成/文生图/1983729157060403201.json, 数字人/数字人/剧本与分镜脚本_2093149535890661378.json, 视频生成/图生视频/1972214627054645249.json, 视频生成/图生视频/1982736072637595650.json]
+missing: []
+members: [视频生成/图生视频/2039901911993815042.json, 视频生成/图生视频/2040446891929899010.json, 视频生成/图生视频/2040634061848322050.json, 视频生成/图生视频/2038700862385692673.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2043167196280524802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_214
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1972595214646968321.json、图片生成/文生图/1983729157060403201.json、数字人/数字人/剧本与分镜脚本_2093149535890661378.json、视频生成/图生视频/1972214627054645249.json、视频生成/图生视频/1982736072637595650.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2039901911993815042.json、视频生成/图生视频/2040446891929899010.json、视频生成/图生视频/2040634061848322050.json、视频生成/图生视频/2038700862385692673.json、视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 3/5 个有
-- `LoadImage` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `AILab_QwenVL` —— 1/5 个有
-- `Qwen3_VQA` —— 1/5 个有
+全部 6 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
 
 ## 典型参数
 
@@ -46,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：StringFunction|pysssss、Text Multiline、easy positive、easy saveText、easy seed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

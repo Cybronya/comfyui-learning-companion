@@ -3,34 +3,36 @@ name: unknown_workflow_generic_381
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.50825
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_description, SaveAudio]
+coverage: 0.46975
+common_nodes: [JjkText, LoadImage, RelayAPISettings, RelayImageGenerator, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json, 音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json]
+members: [图片生成/文生图/双图适合电商换装 image2 relay版本+生成质量更高+全节点注释_2059153551196250113.json, 图片生成/文生图/图生图image2 relay版本+最高质量+全节点注释_2059181858495229953.json, 图片生成/文生图/图生图image2 relay版本+生成质量更高+全节点注释_2059167597035343873.json, 图片生成/文生图/文生图image2 relay版本+最高质量+全节点注释_2059191844822667266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_381
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json、音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/双图适合电商换装 image2 relay版本+生成质量更高+全节点注释_2059153551196250113.json、图片生成/文生图/图生图image2 relay版本+最高质量+全节点注释_2059181858495229953.json、图片生成/文生图/图生图image2 relay版本+生成质量更高+全节点注释_2059167597035343873.json、图片生成/文生图/文生图image2 relay版本+最高质量+全节点注释_2059191844822667266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_description`
-- `SaveAudio`
+- `JjkText`
+- `LoadImage`
+- `RelayAPISettings`
+- `RelayImageGenerator`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
-- `LoadImage` —— 1/4 个有
+- `CR Text` —— 3/4 个有
+- `RHHiddenNodes` —— 1/4 个有
 
 ## 典型参数
 

@@ -2,95 +2,71 @@
 name: unknown_workflow_video_lora_sampler_490
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.71
-common_nodes: [AddLabel, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSizeAndCount, ImageConcanate, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine]
+level: moderate
+coverage: 0.7975
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, INTConstant, ImageBatchMulti, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2042074773987008513.json, 视频生成/图生视频/2046118754756595713.json, 视频生成/图生视频/2072521435817537538.json, 视频生成/图生视频/2072140620956790785.json]
+missing: [SimpleMath+, easy int]
+members: [视频生成/图生视频/1957726679996399618.json, 视频生成/文生视频/1968180863945027585.json, 视频生成/文生视频/1968279752563937282.json, 视频生成/文生视频/humo单图参考+配音_2072999564942286848.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_490
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2042074773987008513.json、视频生成/图生视频/2046118754756595713.json、视频生成/图生视频/2072521435817537538.json、视频生成/图生视频/2072140620956790785.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1957726679996399618.json、视频生成/文生视频/1968180863945027585.json、视频生成/文生视频/1968279752563937282.json、视频生成/文生视频/humo单图参考+配音_2072999564942286848.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AddLabel`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSizeAndCount`
-- `ImageConcanate`
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `INTConstant`
+- `ImageBatchMulti`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Seed (rgthree)`
-- `SimpleCalculatorKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FL_FloatToInt` —— 2/4 个有
-- `FloatConstant` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `MemoryCleaner` —— 2/4 个有
-- `PrimitiveFloat` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `ReverseImageBatch` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `TextBox1` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `LTXVContextWindows` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `easy convertAnything` —— 1/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `SaveImage` —— 2/4 个有
+- `SoundFlow_GetLength` —— 2/4 个有
+- `SoundFlow_TrimAudio` —— 2/4 个有
+- `ToInt` —— 2/4 个有
+- `easy int` —— 2/4 个有
+- `AudioToFPS` —— 1/4 个有
+- `IndexTTS2Run` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `PrimitiveString` —— 1/4 个有
+- `SaveAudio` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `ttN text` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -98,5 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+、easy int

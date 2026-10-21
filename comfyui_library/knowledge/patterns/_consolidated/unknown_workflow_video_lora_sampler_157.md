@@ -3,68 +3,82 @@ name: unknown_workflow_video_lora_sampler_157
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.731273
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.534
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3全能参考+二采放大_2086611990604238849.json, 视频生成/图生视频/H3全能参考+提示词全自动+二采+加速_2091371802969862145.json, 视频生成/图生视频/H3全能参考（二采高清放大）4步加速Lora_2087357939664379905.json, 视频生成/图生视频/H3极速二采高质量参考生视频_2086495362298236929.json, 视频生成/图生视频/H3极速高清文生视频_2089189623070281729.json, 视频生成/图生视频/MINIMAX H3 风扇三段变装展示-双采加速流_2107201355315240961.json, 视频生成/图生视频/MINIMAX-H3双采加速工作流_2088231306944663554.json, 视频生成/图生视频/MINIMAX-H3打斗专用全自动工作流_2088969218996924417.json, 视频生成/图生视频/MINIMAX-H3打斗视频专用全自动工作流_支持首帧、多图参考_2088902457060585473.json, 视频生成/图生视频/MINIMAX-H3打斗视频专用全自动模版_2088215513892737026.json, 视频生成/图生视频/MiniMax_H3反推提示词+极速二次采样高质量图_文生视频_2087448718474825729.json]
+members: [视频生成/图生视频/2065033315945631746.json, 视频生成/图生视频/2067092376300122114.json, 视频生成/图生视频/2065218467845988354.json, 视频生成/图生视频/2065273440239710209.json, 视频生成/图生视频/2065316694119510016.json, 视频生成/图生视频/2071761838928384001.json, 视频生成/图生视频/2065696343452110850.json, 视频生成/图生视频/2065580332925145090.json, 视频生成/图生视频/2064927798959104002.json, 视频生成/图生视频/2065259619429212162.json, 视频生成/文生视频/SCAIL2-动作迁移（二创、跳舞、动作）_2064755609194549249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_157
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/H3全能参考+二采放大_2086611990604238849.json、视频生成/图生视频/H3全能参考+提示词全自动+二采+加速_2091371802969862145.json、视频生成/图生视频/H3全能参考（二采高清放大）4步加速Lora_2087357939664379905.json、视频生成/图生视频/H3极速二采高质量参考生视频_2086495362298236929.json、视频生成/图生视频/H3极速高清文生视频_2089189623070281729.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2065033315945631746.json、视频生成/图生视频/2067092376300122114.json、视频生成/图生视频/2065218467845988354.json、视频生成/图生视频/2065273440239710209.json、视频生成/图生视频/2065316694119510016.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEEncode`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/11 个有
-- `MiniMaxH3AudioConditioningT8` —— 8/11 个有
-- `MiniMaxH3DualClockSamplerT8` —— 8/11 个有
-- `LoadAudio` —— 7/11 个有
-- `ImageResizeKJv2` —— 6/11 个有
-- `PrimitiveStringMultiline` —— 6/11 个有
-- `CR Text` —— 3/11 个有
-- `GetNode` —— 3/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/11 个有
-- `PreviewAny` —— 3/11 个有
-- `RH_LLMAPI_Pro_Node` —— 3/11 个有
-- `SetNode` —— 3/11 个有
-- `VHS_LoadVideo` —— 3/11 个有
-- `CR Prompt Text` —— 2/11 个有
-- `easy showAnything` —— 2/11 个有
-- `Dapao_LlamaCaption` —— 1/11 个有
-- `Dapao_LlamaCaptionOptions` —— 1/11 个有
-- `RHLLMChatNode` —— 1/11 个有
-- `RegexReplace` —— 1/11 个有
-- `StringFunction|pysssss` —— 1/11 个有
-- `easy promptConcat` —— 1/11 个有
-- `孤海注释` —— 1/11 个有
+- `GetNode` —— 10/11 个有
+- `Int` —— 10/11 个有
+- `MathExpression|pysssss` —— 10/11 个有
+- `ModelSamplingSD3` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `VHS_VideoInfoLoaded` —— 10/11 个有
+- `ImpactConditionalBranch` —— 9/11 个有
+- `PrimitiveBoolean` —— 9/11 个有
+- `Fast Groups Muter (rgthree)` —— 8/11 个有
+- `ImageConcatMulti` —— 8/11 个有
+- `Mute / Bypass Relay (rgthree)` —— 8/11 个有
+- `Mute / Bypass Repeater (rgthree)` —— 8/11 个有
+- `SimpleMath+` —— 3/11 个有
+- `TTResolutionSelector` —— 3/11 个有
+- `easy showAnything` —— 3/11 个有
+- `CR Text` —— 2/11 个有
+- `PathchSageAttentionKJ` —— 2/11 个有
+- `SaveImage` —— 2/11 个有
+- `TT_img_enc_v2` —— 2/11 个有
+- `ArchAi3D_HighPass_Blend` —— 1/11 个有
+- `ComfyMathExpression` —— 1/11 个有
+- `DF_Int_to_Float` —— 1/11 个有
+- `ImageBatchMulti` —— 1/11 个有
+- `LoadImageGoohai` —— 1/11 个有
+- `MuyeTextEditOutput` —— 1/11 个有
+- `Primitive integer [Crystools]` —— 1/11 个有
+- `VHS_VideoInfo` —— 1/11 个有
+- `easy boolean` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 

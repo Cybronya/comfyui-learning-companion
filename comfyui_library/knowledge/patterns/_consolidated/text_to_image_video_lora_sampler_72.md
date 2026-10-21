@@ -3,69 +3,71 @@ name: text_to_image_video_lora_sampler_72
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.7087
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelAttentionBackend, ModelPreviewOverrideKJ, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.7795
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3文戏工作流，视频运镜图生视频处理方案_2107531695498022913.json, 视频生成/图生视频/MiniMax H3武戏工作流，战斗特效视频运镜图生视频处理方案_2107555842454282241.json, 视频生成/图生视频/MinimaxH3文戏V1.0版 图生视频自然质感直出_2110365604116000770.json, 视频生成/图生视频/MinimaxH3文戏V1.0版｜图生视频对话运镜自然流畅，剧情党福音_2107298802309885953.json, 视频生成/图生视频/MinimaxH3武戏V1.3版｜战斗特效炸裂运镜带感，武打视频一步到位_2107303436646707202.json, 视频生成/文生视频/MiniMax H3全能参考极简多合一视频处理工作流_2101763281118650370.json, 视频生成/文生视频/MiniMax H3全能参考极简多合一，文生视频视频生视频图生视频三模融合_2102882092685283330.json, 视频生成/文生视频/MiniMax_H3全能参考极简多合一，文生视频视频生视频图生视频三模融合_2105117189677338626.json, 视频生成/文生视频/Minimax H3全能参考极简工作流 文生视频图生视频多合一_2098653013840850945.json, 视频生成/文生视频/minimax h3极简画布满血版｜多参工作流文生视频图生视频全能_2104556954260697090.json]
+members: [视频生成/图生视频/自动提示词MV_4步加速版MinimaxH3音频驱动数字人_2085453705423446017.json, 视频生成/图生视频/自动提示词全能参考生视频REF2VA开源版MiniMax_2086806647741177857.json, 视频生成/图生视频/自定义歌曲MV视频生成｜MiniMax音频驱动图生视频直出_2091736922677932033.json, 视频生成/图生视频/自定义歌曲一键出片｜MiniMax MV音乐视频音频生成_2091752275076272130.json, 视频生成/图生视频/自定义歌曲音乐MV｜MiniMax音频图生视频生成工作流_2090222178607386626.json, 视频生成/文生视频/MiniMax H3 新ref V1.0 Lora 阿里8步版｜多参考生视频工作流_2096839668997382146.json, 视频生成/文生视频/MiniMax H3多参考工作流｜全接口开放内部开发版_2095279663810695169.json, 视频生成/文生视频/minimaxH3数字人音色参考｜音色克隆口播视频生成_2094942909484322818.json, 视频生成/文生视频/minimaxH3访谈类数字人｜口播访谈视频生成_2097949263094439937.json, 视频生成/文生视频/refV1.2Lora多参考工作流｜MiniMax H3全接口开放开发版_2096716514572460034.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_72
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3文戏工作流，视频运镜图生视频处理方案_2107531695498022913.json、视频生成/图生视频/MiniMax H3武戏工作流，战斗特效视频运镜图生视频处理方案_2107555842454282241.json、视频生成/图生视频/MinimaxH3文戏V1.0版 图生视频自然质感直出_2110365604116000770.json、视频生成/图生视频/MinimaxH3文戏V1.0版｜图生视频对话运镜自然流畅，剧情党福音_2107298802309885953.json、视频生成/图生视频/MinimaxH3武戏V1.3版｜战斗特效炸裂运镜带感，武打视频一步到位_2107303436646707202.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/自动提示词MV_4步加速版MinimaxH3音频驱动数字人_2085453705423446017.json、视频生成/图生视频/自动提示词全能参考生视频REF2VA开源版MiniMax_2086806647741177857.json、视频生成/图生视频/自定义歌曲MV视频生成｜MiniMax音频驱动图生视频直出_2091736922677932033.json、视频生成/图生视频/自定义歌曲一键出片｜MiniMax MV音乐视频音频生成_2091752275076272130.json、视频生成/图生视频/自定义歌曲音乐MV｜MiniMax音频图生视频生成工作流_2090222178607386626.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `GetNode`
-- `H3SigmaRefiner`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `SetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 9/10 个有
-- `SaveImage` —— 7/10 个有
-- `CreateVideo` —— 5/10 个有
-- `MiniMaxChunkFeedForward` —— 5/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 5/10 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 5/10 个有
-- `MiniMaxH3SigmaShift` —— 5/10 个有
-- `MiniMaxLowVRAMAttention` —— 5/10 个有
-- `RunningHub Deepcleaner` —— 5/10 个有
-- `SelfLiftAvatarH3Sampler` —— 5/10 个有
-- `SelfLiftH3Sampler` —— 5/10 个有
-- `easy clearCacheAll` —— 5/10 个有
-- `VRAM_Debug` —— 3/10 个有
-- `LoraLoaderBypassModelOnly` —— 2/10 个有
-- `EmptyImage` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `ResolutionSelector` —— 1/10 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `VAEDecodeAudio` —— 9/10 个有
+- `GetNode` —— 8/10 个有
+- `LoadAudio` —— 8/10 个有
+- `SetNode` —— 8/10 个有
+- `MiniMaxH3SigmaShift` —— 7/10 个有
+- `ImageResizeKJv2` —— 3/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/10 个有
+- `TrimAudioDuration` —— 3/10 个有
+- `VHS_LoadVideo` —— 3/10 个有
+- `AudioCrop` —— 2/10 个有
+- `ModelPreviewOverrideKJ` —— 2/10 个有
+- `JWFloatToString` —— 1/10 个有
+- `LoadVideoUI` —— 1/10 个有
+- `PreviewAny` —— 1/10 个有
+- `RHLLMChatNode` —— 1/10 个有
+- `Text` —— 1/10 个有
+- `TextCombinerTwo` —— 1/10 个有
+- `VHS_LoadAudioUpload` —— 1/10 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/10 个有
 
 ## 典型参数
 

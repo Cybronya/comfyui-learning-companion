@@ -2,60 +2,62 @@
 name: unknown_workflow_video_sampler_clip_175
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.917333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.971
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CreateVideo, KSamplerAdvanced, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, SaveVideo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3单独放大工作流_2086693326912311298.json, 视频生成/文生视频/DG_H3 单采 高清放大_2087776547884331009.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流_2087124477195931649.json]
+members: [视频生成/图生视频/1952310686854656002.json, 视频生成/图生视频/1952290446611525634.json, 视频生成/图生视频/1952049916556292097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_175
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/H3单独放大工作流_2086693326912311298.json、视频生成/文生视频/DG_H3 单采 高清放大_2087776547884331009.json、视频生成/文生视频/MiniMax H3 导演台全能工作流_2087124477195931649.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1952310686854656002.json、视频生成/图生视频/1952290446611525634.json、视频生成/图生视频/1952049916556292097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `CreateVideo`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEEncode`
-- `VAEEncodeAudio`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 2/3 个有
-- `CreateVideo` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Getter` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `MiniMaxH3Director` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
-- `Setter` —— 1/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
+- `GIMMVFI_interpolate` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `ImageBatchMultiple+` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 3 | 100% |
+| 采样算法 | 4 | 4 - 4 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -63,4 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

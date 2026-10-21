@@ -1,81 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_117
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.773538
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ContextWindowsManual, GetImageRangeFromBatch, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SamplerCustom, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimate2Cache, WanAnimate2ToVideo]
+coverage: 0.775643
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json, 视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json, 视频生成/图生视频/Animate2-数字人唱歌_跳舞-动作迁移-不限时长-循环流_2086985804689268738.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移15秒内_2087549782628847618.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097276416403533826.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097297241835921409.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长V1_2086760732246499329.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长加速版_2087045861942579202.json, 视频生成/图生视频/wan-animate2动作姿势模仿_2087054631615680514.json, 视频生成/文生视频/Animate2动作迁移_2104741113713217538.json, 视频生成/文生视频/Wan animate2 视频编辑 循环流V1_2086206809366421506.json]
+members: [视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085737590669529090.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085738060221861890.json, 视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json, 视频生成/文生视频/Minimax H3 文生视频_2087105033031737345.json, 视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json, 视频生成/文生视频/Minimax4步lora+双时钟-超快速工作流_2085689486171787265.json, 视频生成/文生视频/MinimaxH3 全功能加速工作流_2086320789044944897.json, 视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json, 视频生成/文生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2087034230105792514.json, 视频生成/文生视频/【CommintAI】MINIMAX H3 工作流合集_2085882928617316354.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3工作流合集_2084259935344480258.json, 视频生成/文生视频/【南可nkss】MINIMAX-H3工作流合集_2108370588418002945.json, 视频生成/文生视频/极速版 MinimaxH3 文生视频 图生视频  T8版_2085912109149417474.json, 视频生成/文生视频/测试使用_2094631681096507394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_117
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json、视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json、视频生成/图生视频/Animate2-数字人唱歌_跳舞-动作迁移-不限时长-循环流_2086985804689268738.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085737590669529090.json、视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085738060221861890.json、视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json、视频生成/文生视频/Minimax H3 文生视频_2087105033031737345.json、视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
+全部 14 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
 - `ComfyMathExpression`
-- `ContextWindowsManual`
-- `GetImageRangeFromBatch`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `TrimVideoLatent`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimate2Cache`
-- `WanAnimate2ToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 12/13 个有
-- `ImageResizeKJv2` —— 12/13 个有
-- `ResizeImageMaskNode` —— 12/13 个有
-- `VHS_VideoInfo` —— 12/13 个有
-- `easy int` —— 12/13 个有
-- `GetImageSize` —— 11/13 个有
-- `PrimitiveStringMultiline` —— 11/13 个有
-- `TensorLoopClose` —— 11/13 个有
-- `TensorLoopOpen` —— 11/13 个有
-- `ComfySwitchNode` —— 10/13 个有
-- `GetNode` —— 10/13 个有
-- `JWInteger` —— 10/13 个有
-- `ImageConcatMulti` —— 9/13 个有
-- `PrimitiveBoolean` —— 9/13 个有
-- `easy showAnything` —— 8/13 个有
-- `SetNode` —— 3/13 个有
-- `easy forLoopEnd` —— 2/13 个有
-- `easy forLoopStart` —— 2/13 个有
-- `Bookmark (rgthree)` —— 1/13 个有
-- `DF_Int_to_Float` —— 1/13 个有
-- `Int` —— 1/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `MathExpression|pysssss` —— 1/13 个有
-- `Note Plus (mtb)` —— 1/13 个有
-- `PlaySound|pysssss` —— 1/13 个有
-- `ShowAnything|Mie` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
+- `LoadImage` —— 13/14 个有
+- `PrimitiveFloat` —— 12/14 个有
+- `LoadAudio` —— 10/14 个有
+- `PrimitiveStringMultiline` —— 10/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/14 个有
+- `MiniMaxH3DualClockSamplerT8` —— 7/14 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 7/14 个有
+- `UniBlockSwap` —— 5/14 个有
+- `CR Prompt Text` —— 4/14 个有
+- `Int` —— 2/14 个有
+- `PreviewAny` —— 2/14 个有
+- `RHHiddenNodes` —— 2/14 个有
+- `1hew_LoadVideoToImage` —— 1/14 个有
+- `RHLLMChatNode` —— 1/14 个有
+- `ShowText|fofo` —— 1/14 个有
+- `VHS_LoadVideo` —— 1/14 个有
 
 ## 典型参数
 

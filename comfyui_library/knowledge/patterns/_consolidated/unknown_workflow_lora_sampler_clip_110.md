@@ -1,55 +1,66 @@
 ---
 name: unknown_workflow_lora_sampler_clip_110
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.773
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImageMask, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, String Literal, Text, Text Load Line From File, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart]
+frequency: 3
+level: strong
+coverage: 0.679667
+common_nodes: [Anything Everywhere, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Color Panel, CR Text, ConditioningZeroOut, DenseDiffusionAddCondNode, DenseDiffusionApplyNode, EmptyLatentImage, FluxResolutionNode, GetImageSize, ImageCASharpening+, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingAuraFlow, PreviewBridge, RH_Captioner, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, SolidMask, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
-missing: [String Literal, Text Load Line From File, easy forLoopEnd, easy forLoopStart]
-members: [图片生成/文生图/1947936412476801026.json, 图片生成/文生图/1948523697077387265.json]
+missing: [CR Color Panel, CR Text, ImageCASharpening+, MathExpression|pysssss, easy cleanGpuUsed]
+members: [图片生成/文生图/1956634749448982530.json, 图片生成/文生图/1987714485324591105.json, 图片生成/文生图/【文创周边冰箱贴】Qwen文生图-分区控制_2023674711632252930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_110
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1947936412476801026.json、图片生成/文生图/1948523697077387265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1956634749448982530.json、图片生成/文生图/1987714485324591105.json、图片生成/文生图/【文创周边冰箱贴】Qwen文生图-分区控制_2023674711632252930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
 - `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DeepTranslatorTextNode`
-- `DualCLIPLoader`
+- `CR Color Panel`
+- `CR Text`
+- `ConditioningZeroOut`
+- `DenseDiffusionAddCondNode`
+- `DenseDiffusionApplyNode`
 - `EmptyLatentImage`
+- `FluxResolutionNode`
+- `GetImageSize`
+- `ImageCASharpening+`
 - `KSamplerSelect`
-- `LoadImageMask`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingAuraFlow`
+- `PreviewBridge`
+- `RH_Captioner`
+- `RH_Translator`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `String Literal`
-- `Text`
-- `Text Load Line From File`
+- `ShowText|pysssss`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1552 | - | 2 | 100% |
+| 宽度 | 784 | 784 - 784 | 3 | 100% |
+| 高度 | 672 | 672 - 672 | 3 | 100% |
 
 ## 常见问题
 
@@ -57,7 +68,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1552，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、Text Load Line From File、easy forLoopEnd、easy forLoopStart
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 784，观测区间 784 - 784，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 672，观测区间 672 - 672，3 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Color Panel、CR Text、ImageCASharpening+、MathExpression|pysssss、easy cleanGpuUsed

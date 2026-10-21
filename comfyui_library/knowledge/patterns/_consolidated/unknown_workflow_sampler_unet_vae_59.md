@@ -1,73 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_59
 type: Unknown Workflow
-frequency: 11
-level: weak
-coverage: 0.804364
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio]
-problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+frequency: 10
+level: strong
+coverage: 0.8967
+common_nodes: [EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/ACE-Step1.5 文生音乐双Clip_2018882325588742146.json, 音频生成/音频生成/ACE1.5音乐生成_2030182345428439042.json, 音频生成/音频生成/ACE_Step-Ai歌曲音乐一键生成工作流_2069067060977684481.json, 音频生成/音频生成/ACE_Step开源音乐生成器_2058059955965612033.json, 音频生成/音频生成/Ace-Step 1.5歌曲生成_2019070986049560578.json, 音频生成/音频生成/Ace-Step1.5X工作流(打造你的专属音乐)_2054411129350311938.json, 音频生成/音频生成/Acestep1.5音乐制作_2043518374143070209.json, 音频生成/音频生成/ace-step 1.5 _ 音乐生成最佳搭档_2075297299286286338.json, 音频生成/音频生成/多人合唱-音乐生成-ACE-STEP1.5XL_2045332746666516482.json, 音频生成/音频生成/方格智联-ACE-1.5音乐_2086670840938192898.json, 音频生成/音频生成/音乐生成-ACE-STEP1.5XL_2045321458674573313.json]
+members: [图片生成/文生图/Z-image文生图_2016708585073414145.json, 图片生成/文生图/qwen_image2.文生图_2101942968000278530.json, 图片生成/文生图/qwen_image_2.1 _ 文生图_2103128462868443138.json, 图片生成/文生图/qwen_image_2_1_t2i_2101938471274369025.json, 图片生成/文生图/qwen_image_2_1_文生图_2101842315596886018.json, 图片生成/文生图/qwen_image_2_1文生图_2101884688183947265.json, 图片生成/文生图/【开源】Qwen image 2.1 文生图_2102002816368857089.json, 图片生成/文生图/【遇见AI】qwen image 2.1文生图基础流_2101841432792363010.json, 图片生成/文生图/千问2.1文生图_2101907864641167362.json, 数字人/数字人/qwen_image_2_1_角色三视图生成(自定义服装)_2108073982967762946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_59
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/ACE-Step1.5 文生音乐双Clip_2018882325588742146.json、音频生成/音频生成/ACE1.5音乐生成_2030182345428439042.json、音频生成/音频生成/ACE_Step-Ai歌曲音乐一键生成工作流_2069067060977684481.json、音频生成/音频生成/ACE_Step开源音乐生成器_2058059955965612033.json、音频生成/音频生成/Ace-Step 1.5歌曲生成_2019070986049560578.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-image文生图_2016708585073414145.json、图片生成/文生图/qwen_image2.文生图_2101942968000278530.json、图片生成/文生图/qwen_image_2.1 _ 文生图_2103128462868443138.json、图片生成/文生图/qwen_image_2_1_t2i_2101938471274369025.json、图片生成/文生图/qwen_image_2_1_文生图_2101842315596886018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
+全部 10 个 workflow 都包含：
+- `EmptyLatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveAudioMP3`
-- `TextEncodeAceStepAudio1.5`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VAELoader` —— 10/11 个有
-- `PrimitiveInt` —— 7/11 个有
-- `Int` —— 6/11 个有
-- `Float` —— 5/11 个有
-- `CR Text` —— 4/11 个有
-- `JjkText` —— 2/11 个有
-- `PrimitiveFloat` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 2/11 个有
-- `Text` —— 2/11 个有
-- `AV_VAELoader` —— 1/11 个有
+- `CLIPLoader` —— 9/10 个有
+- `ResolutionSelector` —— 9/10 个有
+- `TextEncodeQwenImage21` —— 9/10 个有
+- `JjkText` —— 3/10 个有
+- `SaveImageAdvanced` —— 3/10 个有
+- `LoadImage` —— 2/10 个有
+- `Text` —— 2/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `easy promptList` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 11 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 7 | 11 | 0% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 1024 | 1024 - 1440 | 10 | 88% |
+| 高度 | 1024 | 1024 - 1920 | 10 | 76% |
+| 采样步数 | 25 | 10 - 40 | 10 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 11/11 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
-| Steps较低可能导致细节不足 | 10/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，11 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 7，11 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：发现KSampler但没有VAEDecode
-- 高发问题（10/11 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 1440，10 个样本，取值集中（一致性 88%）
+- 高度 中位数 1024，观测区间 1024 - 1920，10 个样本
+- 采样步数 中位数 25，观测区间 10 - 40，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

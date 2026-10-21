@@ -1,34 +1,34 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_29
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.899778
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+coverage: 0.843
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, FloatConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2052231209417232385.json, 视频生成/图生视频/2066087069847482370.json, 视频生成/图生视频/2044864850374955009.json, 视频生成/图生视频/2030820457208877058.json, 视频生成/图生视频/2039704492752510977.json, 视频生成/图生视频/2039914050452201474.json, 视频生成/图生视频/2035325472770367490.json, 视频生成/图生视频/2057749829224329218.json, 视频生成/图生视频/2049303254957297665.json]
+members: [视频生成/图生视频/2033197165668999170.json, 视频生成/图生视频/2033156764371263490.json, 视频生成/图生视频/2044341747362304001.json, 视频生成/图生视频/2049303254957297665.json, 视频生成/图生视频/2052949271544123393.json, 视频生成/图生视频/2047731840944967682.json, 视频生成/图生视频/2044586983204327425.json, 视频生成/图生视频/2052216878214467585.json, 视频生成/图生视频/2051164751694184449.json, 视频生成/图生视频/2038794251055669250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_29
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2052231209417232385.json、视频生成/图生视频/2066087069847482370.json、视频生成/图生视频/2044864850374955009.json、视频生成/图生视频/2030820457208877058.json、视频生成/图生视频/2039704492752510977.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2033197165668999170.json、视频生成/图生视频/2033156764371263490.json、视频生成/图生视频/2044341747362304001.json、视频生成/图生视频/2049303254957297665.json、视频生成/图生视频/2052949271544123393.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLTXVLatentVideo`
+- `FloatConstant`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
@@ -36,58 +36,53 @@ source: knowledge_consolidation
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
 - `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
 - `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `VAEDecodeTiled`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVPreprocess` —— 8/9 个有
-- `ResizeImagesByLongerEdge` —— 8/9 个有
-- `SimpleMath+` —— 7/9 个有
-- `FloatConstant` —— 5/9 个有
-- `LTXVChunkFeedForward` —— 5/9 个有
-- `LTXVImgToVideoInplaceKJ` —— 5/9 个有
-- `ModelPatchTorchSettings` —— 5/9 个有
-- `PathchSageAttentionKJ` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 5/9 个有
-- `RH_LLMAPI_Pro_Node` —— 5/9 个有
-- `easy showAnything` —— 5/9 个有
-- `PreviewAny` —— 4/9 个有
-- `PrimitiveBoolean` —— 4/9 个有
-- `llama_cpp_instruct_adv` —— 4/9 个有
-- `llama_cpp_model_loader` —— 4/9 个有
-- `llama_cpp_parameters` —— 4/9 个有
-- `ImageResizeKJv2` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `CR Text` —— 2/9 个有
-- `CustomAddLabel` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
-- `MultiTextConcatenate` —— 2/9 个有
-- `RH_Utils` —— 2/9 个有
-- `ResizeImageMaskNode` —— 2/9 个有
-- `TTResolutionSelector` —— 2/9 个有
-- `easy int` —— 2/9 个有
-- `ttN concat` —— 2/9 个有
-- `AILab_QwenVL` —— 1/9 个有
-- `CombineImagesForQwen3VL` —— 1/9 个有
-- `DualCLIPLoader` —— 1/9 个有
-- `Evaluate Integers` —— 1/9 个有
-- `Image Resize` —— 1/9 个有
-- `QZ_ResolutionPreset` —— 1/9 个有
-- `RHHiddenNodes` —— 1/9 个有
-- `SDVN Any Show` —— 1/9 个有
-- `TextGenerateLTX2Prompt` —— 1/9 个有
+- `CreateVideo` —— 9/10 个有
+- `LTXVChunkFeedForward` —— 9/10 个有
+- `LTXVEmptyLatentAudio` —— 9/10 个有
+- `ModelPatchTorchSettings` —— 9/10 个有
+- `PathchSageAttentionKJ` —— 9/10 个有
+- `SaveVideo` —— 9/10 个有
+- `SimpleMath+` —— 9/10 个有
+- `Resize` —— 3/10 个有
+- `ResizeImageMaskNode` —— 3/10 个有
+- `ImageResizeKJv2` —— 2/10 个有
+- `kkResize` —— 2/10 个有
+- `AILab_QwenVL` —— 1/10 个有
+- `Bjornulf_ShowInt` —— 1/10 个有
+- `CM_FloatToInt` —— 1/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `CombineImagesForQwen3VL` —— 1/10 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `ImageResize+` —— 1/10 个有
+- `LTXVAudioVAEEncode` —— 1/10 个有
+- `PainterAudioLength` —— 1/10 个有
+- `ResizeAndPadImage` —— 1/10 个有
+- `SaveAudio` —— 1/10 个有
+- `SetLatentNoiseMask` —— 1/10 个有
+- `SolidMask` —— 1/10 个有
+- `TextCombinerTwo` —— 1/10 个有
+- `VHS_VideoCombine` —— 1/10 个有
 
 ## 典型参数
 

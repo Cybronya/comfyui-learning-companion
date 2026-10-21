@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_27
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: strong
-coverage: 0.8656
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+coverage: 0.901364
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062522880226848770.json, 视频生成/图生视频/2062486746893471745.json, 视频生成/图生视频/2062515403225649154.json, 视频生成/图生视频/2053653678917206018.json, 视频生成/图生视频/2053653864032813058.json, 视频生成/图生视频/2057789192654123010.json, 视频生成/图生视频/2044766587655294977.json, 视频生成/图生视频/2070029372056231937.json, 视频生成/图生视频/2046184684832428034.json, 视频生成/文生视频/【LTX-2.3唱歌术】输入歌词就能生成MV？SongGeneration2+LTX2.3工作流实测_2033104945955741697.json]
+members: [视频生成/图生视频/2009253788510593026.json, 视频生成/图生视频/2009559520669863938.json, 视频生成/图生视频/2019655709050281986.json, 视频生成/图生视频/2019956098375094274.json, 视频生成/图生视频/2010957418854879234.json, 视频生成/图生视频/2020659052396683265.json, 视频生成/图生视频/2008723483076861954.json, 视频生成/图生视频/2009326383134150658.json, 视频生成/图生视频/2057293549762334721.json, 视频生成/图生视频/2012047557043687425.json, 视频生成/图生视频/2009604954146742273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_27
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2062522880226848770.json、视频生成/图生视频/2062486746893471745.json、视频生成/图生视频/2062515403225649154.json、视频生成/图生视频/2053653678917206018.json、视频生成/图生视频/2053653864032813058.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2009253788510593026.json、视频生成/图生视频/2009559520669863938.json、视频生成/图生视频/2019655709050281986.json、视频生成/图生视频/2019956098375094274.json、视频生成/图生视频/2010957418854879234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
@@ -36,64 +37,58 @@ source: knowledge_consolidation
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `VAEDecodeTiled`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVImgToVideoInplace` —— 8/10 个有
-- `ResizeImagesByLongerEdge` —— 8/10 个有
-- `PrimitiveBoolean` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `LTXVAudioVAEEncode` —— 5/10 个有
-- `LTXVEmptyLatentAudio` —— 5/10 个有
-- `LoadAudio` —— 5/10 个有
-- `PrimitiveFloat` —— 5/10 个有
-- `SetLatentNoiseMask` —— 5/10 个有
-- `SolidMask` —— 5/10 个有
-- `TrimAudioDuration` —— 5/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/10 个有
-- `Label (rgthree)` —— 4/10 个有
-- `SaveAudio` —— 4/10 个有
-- `RH_LLMAPI_Pro_Node` —— 3/10 个有
-- `HeartMuLa_Generate` —— 2/10 个有
-- `HeartMuLa_Transcribe` —— 2/10 个有
-- `LTXVAddGuide` —— 2/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
-- `PreviewAudio` —— 2/10 个有
-- `SamplerEulerAncestral` —— 2/10 个有
-- `ShowText|pysssss` —— 2/10 个有
-- `SongGeneration_Loader` —— 2/10 个有
-- `SongGeneration_Sampler` —— 2/10 个有
-- `SongGeneration_Stage1` —— 2/10 个有
-- `SongGeneration_Stage2` —— 2/10 个有
-- `Text _O` —— 2/10 个有
-- `ComfySwitchNode` —— 1/10 个有
-- `GetNode` —— 1/10 个有
-- `LoraLoader` —— 1/10 个有
-- `PreviewAny` —— 1/10 个有
-- `SetNode` —— 1/10 个有
-- `TextGenerateLTX2Prompt` —— 1/10 个有
-- `TextInput_` —— 1/10 个有
+- `LTXVPreprocess` —— 10/11 个有
+- `PrimitiveInt` —— 10/11 个有
+- `ResizeImagesByLongerEdge` —— 10/11 个有
+- `VHS_VideoCombine` —— 10/11 个有
+- `BetaSamplingScheduler` —— 9/11 个有
+- `LTXVFirstLastFrameControl_TTP` —— 9/11 个有
+- `MemoryCleaner` —— 8/11 个有
+- `ImageResizeKJv2` —— 4/11 个有
+- `CR Prompt Text` —— 2/11 个有
+- `CreateVideo` —— 2/11 个有
+- `INTConstant` —— 2/11 个有
+- `LTXVImgToVideoInplace` —— 2/11 个有
+- `Qwen3_VQA` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `> Text Replace` —— 1/11 个有
+- `Any To Any` —— 1/11 个有
+- `Any To String (mtb)` —— 1/11 个有
+- `ImageConcatMulti` —— 1/11 个有
+- `JWInteger` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `MultiplePathsInput` —— 1/11 个有
+- `Resize` —— 1/11 个有
+- `SaveVideo` —— 1/11 个有
+- `ShowText|pysssss` —— 1/11 个有
+- `SmartImageConcat` —— 1/11 个有
+- `Textbox` —— 1/11 个有
+- `VHS_LoadVideo` —— 1/11 个有
+- `VHS_SelectFilename` —— 1/11 个有
+- `easy promptConcat` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
+- `easy textSwitch` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 11 | 100% |
+| 高度 | 25 | 24 - 25 | 11 | 99% |
 
 ## 常见问题
 
@@ -101,5 +96,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，11 个样本，取值集中（一致性 99%）

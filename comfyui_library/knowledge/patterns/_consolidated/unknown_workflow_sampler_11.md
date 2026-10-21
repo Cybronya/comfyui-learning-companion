@@ -3,39 +3,37 @@ name: unknown_workflow_sampler_11
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7858
-common_nodes: [AudioCombine, HeartMuLa_Generate, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveAudioMP3, SeedVCRun]
+coverage: 0.8606
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json, 音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json, 音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json]
+members: [视频生成/图生视频/2017169836740190209.json, 视频生成/图生视频/SoulX-FlashTalk图片数字人v1_2104758449849589761.json, 视频生成/图生视频/2017427499575152641.json, 视频生成/图生视频/2017877096126750721.json, 音频生成/音频生成/FlashTalk数字人_2037417128906723329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json、音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json、音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2017169836740190209.json、视频生成/图生视频/SoulX-FlashTalk图片数字人v1_2104758449849589761.json、视频生成/图生视频/2017427499575152641.json、视频生成/图生视频/2017877096126750721.json、音频生成/音频生成/FlashTalk数字人_2037417128906723329.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioCombine`
-- `HeartMuLa_Generate`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudioMP3`
-- `SeedVCRun`
+- `LoadImage`
+- `RunningHub FlashTalk Loader`
+- `RunningHub FlashTalk Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/5 个有
+- `PreviewImage` —— 4/5 个有
+- `Int` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
 
 ## 典型参数
 

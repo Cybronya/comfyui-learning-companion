@@ -1,77 +1,74 @@
 ---
 name: image_to_image_lora_sampler_unet_20
 type: Image To Image
-frequency: 2
+frequency: 5
 level: weak
-coverage: 0.8515
-common_nodes: [CLIPLoader, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageConcat]
+coverage: 0.764
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, easy imageConcat, CR Prompt List]
-members: [图片生成/文生图/1959223893091364865.json, 视频生成/图生视频/2037441276806701058.json]
+missing: []
+members: [图片生成/文生图/2.最强编辑融合，单图，双图，三图编辑qwen_image_edit_2511_2066121923188322306.json, 图片生成/文生图/FireRed Image Edit 1.1 8步加速_2073313339664584705.json, 图片生成/文生图/FireRed Image Edit 1.1 阿凡达 Lora 测试流_2073314483048640514.json, 图片生成/文生图/Qwen_Image_Edit图像编辑模型_2105216109094981633.json, 图片生成/文生图/可视化多角度摄像头控制2511_2010974579350577153.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_20
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1959223893091364865.json、视频生成/图生视频/2037441276806701058.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/2.最强编辑融合，单图，双图，三图编辑qwen_image_edit_2511_2066121923188322306.json、图片生成/文生图/FireRed Image Edit 1.1 8步加速_2073313339664584705.json、图片生成/文生图/FireRed Image Edit 1.1 阿凡达 Lora 测试流_2073314483048640514.json、图片生成/文生图/Qwen_Image_Edit图像编辑模型_2105216109094981633.json、图片生成/文生图/可视化多角度摄像头控制2511_2010974579350577153.json）
 
 - **类型**：Image To Image
-- **样本数**：2
+- **样本数**：5
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `JjkText`
+- `FluxKontextImageScale`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `CR Prompt List` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `TextEncodeQwenImageEdit` —— 1/2 个有
-- `TextEncodeQwenImageEditPlus` —— 1/2 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
+- `PrimitiveBoolean` —— 4/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 3/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `Switch any [Crystools]` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `QwenMultiangleCameraNode` —— 1/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 928 | - | 1 | 100% |
-| 高度 | 1664 | - | 1 | 100% |
+| 采样步数 | 40 | 4 - 40 | 5 | 31% |
+| Prompt 约束强度(CFG) | 3 | 1 - 4 | 5 | 48% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、easy imageConcat、CR Prompt List
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 40，观测区间 4 - 40，5 个样本，取值分散，一致性仅 31%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 4，5 个样本，取值分散，一致性仅 48%
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

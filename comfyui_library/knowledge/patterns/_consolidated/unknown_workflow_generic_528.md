@@ -3,32 +3,38 @@ name: unknown_workflow_generic_528
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [AFL:AudioMixStems, AudioSeparation, RunningHubRVCVoiceConversion, RunningHubRVCZipModelLoader, SaveAudio, VHS_LoadAudioUpload]
+coverage: 0.558
+common_nodes: [ImageFromBatch+, ImageTile+, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json, 音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json, 音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json]
+members: [图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json, 图片生成/文生图/生图 拆图_2016143984715894786.json, 视频生成/图生视频/2003054796162605057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_528
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json、音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json、音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json、图片生成/文生图/生图 拆图_2016143984715894786.json、视频生成/图生视频/2003054796162605057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AFL:AudioMixStems`
-- `AudioSeparation`
-- `RunningHubRVCVoiceConversion`
-- `RunningHubRVCZipModelLoader`
-- `SaveAudio`
-- `VHS_LoadAudioUpload`
+- `ImageFromBatch+`
+- `ImageTile+`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `RH_Veo3_I2V_Batch` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
 
 ## 典型参数
 

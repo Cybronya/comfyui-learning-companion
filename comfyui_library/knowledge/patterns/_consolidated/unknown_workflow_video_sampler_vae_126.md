@@ -3,77 +3,53 @@ name: unknown_workflow_video_sampler_vae_126
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.49525
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9525
+common_nodes: [ImageConcanate, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/1950489721401167873.json, 视频生成/图生视频/1937349573826527233.json, 视频生成/图生视频/1943647883407360002.json, 视频生成/图生视频/1941456171754799106.json]
+members: [视频生成/图生视频/1922926453934145538.json, 视频生成/图生视频/1922811355408076801.json, 视频生成/图生视频/1923223943933849602.json, 视频生成/图生视频/1923648311860129794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_126
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1950489721401167873.json、视频生成/图生视频/1937349573826527233.json、视频生成/图生视频/1943647883407360002.json、视频生成/图生视频/1941456171754799106.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1922926453934145538.json、视频生成/图生视频/1922811355408076801.json、视频生成/图生视频/1923223943933849602.json、视频生成/图生视频/1923648311860129794.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `ImageConcanate`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SetNode`
-- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 3/4 个有
-- `VHS_DuplicateImages` —— 3/4 个有
-- `WanVideoEncode` —— 3/4 个有
-- `WanVideoEnhanceAVideo` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `WanVideoSLG` —— 3/4 个有
-- `WanVideoUni3C_ControlnetLoader` —— 3/4 个有
-- `WanVideoUni3C_embeds` —— 3/4 个有
-- `FloatConstant` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `RH_GetAudioDuration` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `Audio Duration (mtb)` —— 1/4 个有
-- `Bjornulf_ShowStringText` —— 1/4 个有
-- `CreateCFGScheduleFloatList` —— 1/4 个有
-- `Display Int (rgthree)` —— 1/4 个有
-- `DownloadAndLoadFlorence2Model` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `Florence2Run` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `JWFloatToString` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `WanVideoExperimentalArgs` —— 1/4 个有
-- `WanVideoTeaCache` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `ImageResizeKJ` —— 3/4 个有
+- `Primitive integer [Crystools]` —— 3/4 个有
+- `Text Multiline` —— 3/4 个有
+- `PreviewImage` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `StringToInt` —— 1/4 个有
+- `TextSwitchCase` —— 1/4 个有
+- `Trim Text _O` —— 1/4 个有
 
 ## 典型参数
 

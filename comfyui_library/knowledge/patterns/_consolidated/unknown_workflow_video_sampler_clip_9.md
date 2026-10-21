@@ -1,96 +1,74 @@
 ---
 name: unknown_workflow_video_sampler_clip_9
 type: Unknown Workflow
-frequency: 23
+frequency: 25
 level: strong
-coverage: 0.364739
-common_nodes: [Any2ListNode, AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageBatch, ImageFromBatch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, ModelPatchLoader, PreviewAny, PrimitiveFloat, SetNode, TextInput_, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy indexAnything, easy int, easy promptLine, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.99716
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json, 数字人/数字人/数字人对口型_2093326224767672322.json, 数字人/数字人/鼎子-InfiniteTalk数字人单人图像驱动-32秒版本_2049680487425290242.json, 视频生成/图生视频/2044648353442566146.json, 视频生成/图生视频/2032340272989872130.json, 视频生成/图生视频/2033825767792054274.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2016086037126189058.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2110324012046966785.json, 视频生成/图生视频/2058730777491369986.json, 视频生成/图生视频/2054726545402548226.json, 视频生成/图生视频/2056896899143262209.json, 视频生成/图生视频/2059550534989864961.json, 视频生成/图生视频/2071583964170641410.json, 视频生成/图生视频/2040337221068263426.json, 视频生成/图生视频/2074322051434901506.json, 视频生成/图生视频/2074419354204196865.json, 视频生成/图生视频/2066133635832565762.json, 视频生成/图生视频/数字人口播工作流最长25秒 生产力版_2096966156518248449.json, 视频生成/图生视频/2019751062122536962.json, 视频生成/图生视频/2052234366641815554.json, 视频生成/图生视频/2050130108794580993.json, 视频生成/图生视频/2039859675247677441.json, 视频生成/文生视频/直播搭建带货数字人，_2073822907255578625.json]
+members: [视频生成/图生视频/2007957873501937666.json, 视频生成/图生视频/2069319914443333634.json, 视频生成/图生视频/2043159910917087233.json, 视频生成/图生视频/2007811222472761345.json, 视频生成/图生视频/2011657248396808193.json, 视频生成/图生视频/2033890243190984706.json, 视频生成/图生视频/2021154094072733697.json, 视频生成/图生视频/2041753432205299714.json, 视频生成/图生视频/2008199309795266561.json, 视频生成/图生视频/2077269465192034306.json, 视频生成/图生视频/2077636142706552833.json, 视频生成/图生视频/2077677260378828801.json, 视频生成/图生视频/2078823475380318209.json, 视频生成/图生视频/2079016267759050753.json, 视频生成/图生视频/2071625785936539650.json, 视频生成/图生视频/2072403909544603649.json, 视频生成/图生视频/2074567411587702786.json, 视频生成/图生视频/2074915494896955394.json, 视频生成/图生视频/2075491112214679554.json, 视频生成/图生视频/2075510355111006210.json, 视频生成/图生视频/2075613549606563841.json, 视频生成/图生视频/2075960869892214786.json, 视频生成/图生视频/2076181570117005314.json, 视频生成/图生视频/2020867158913323009.json, 视频生成/图生视频/2046411920428769281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_9
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json、数字人/数字人/数字人对口型_2093326224767672322.json、数字人/数字人/鼎子-InfiniteTalk数字人单人图像驱动-32秒版本_2049680487425290242.json、视频生成/图生视频/2044648353442566146.json、视频生成/图生视频/2032340272989872130.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/2007957873501937666.json、视频生成/图生视频/2069319914443333634.json、视频生成/图生视频/2043159910917087233.json、视频生成/图生视频/2007811222472761345.json、视频生成/图生视频/2011657248396808193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：25
 - **可信度**：强结论
-- **平均知识覆盖**：36%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `Any2ListNode`
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+全部 25 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageBatch`
-- `ImageFromBatch`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `ModelPatchLoader`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `SetNode`
-- `TextInput_`
+- `PathchSageAttentionKJ`
+- `SimpleMath+`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy indexAnything`
-- `easy int`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 20/23 个有
-- `MathExpression|pysssss` —— 20/23 个有
-- `PreviewAudio` —— 20/23 个有
-- `PreviewImage` —— 20/23 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/23 个有
-- `Any To String (mtb)` —— 1/23 个有
-- `Apply Whisper` —— 1/23 个有
-- `IndexTTS2Run` —— 1/23 个有
-- `Label (rgthree)` —— 1/23 个有
-- `MelBandRoFormerModelLoader` —— 1/23 个有
-- `MelBandRoFormerSampler` —— 1/23 个有
-- `PrimitiveStringMultiline` —— 1/23 个有
-- `SaveAudio` —— 1/23 个有
-- `ZML_ImageEncryption` —— 1/23 个有
+- `ModelSamplingSD3` —— 24/25 个有
+- `WanFirstMiddleLastFrameToVideo` —— 24/25 个有
+- `ModelPatchTorchSettings` —— 22/25 个有
+- `LoraLoaderModelOnly` —— 21/25 个有
+- `YC Color Match` —— 4/25 个有
+- `ImageScaleBy` —— 2/25 个有
+- `RIFE VFI` —— 2/25 个有
+- `easy cleanGpuUsed` —— 2/25 个有
+- `BerniniConditioning` —— 1/25 个有
+- `ComfyMathExpression` —— 1/25 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/25 个有
+- `VHS_LoadVideo` —— 1/25 个有
+- `VHS_VideoInfoLoaded` —— 1/25 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 23 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 23 | 100% |
-| 采样算法 | euler | - | 23 | 100% |
-| 调度器 | normal | - | 23 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 23 | 100% |
+| 采样步数 | randomize | - | 25 | 96% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 25 | 100% |
+| 采样算法 | 1 | 1 - 1 | 25 | 100% |
+| 调度器 | euler | - | 25 | 96% |
+| 重绘幅度 | beta | - | 25 | 84% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 151/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，23 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，23 个样本，一致性 100%
-- 调度器 最常用 normal，23 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 高发问题（151/23 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，25 个样本，一致性 96%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，25 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，25 个样本，一致性 96%
+- 重绘幅度 最常用 beta，25 个样本，一致性 84%

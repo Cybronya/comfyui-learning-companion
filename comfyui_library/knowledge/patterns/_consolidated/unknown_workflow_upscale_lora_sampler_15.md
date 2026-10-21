@@ -1,87 +1,120 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_15
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.844333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, Text Concatenate, Text Multiline, CR SDXL Aspect Ratio]
-members: [图片生成/文生图/1973197627275784193.json, 图片生成/文生图/1988050506423668737.json, 图片生成/文生图/1988095557270937601.json]
+coverage: 0.81
+common_nodes: [CFGGuider, CLIPLoader, CLIPLoaderGGUF, CLIPTextEncode, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, GetNode, INTConstant, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageScaleToTotalPixels, KSamplerAdvanced, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTResolutionSelector, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageSize]
+problems: []
+missing: []
+members: [图片生成/文生图/Z-IMAGE 双采高质量出图 +CONTRALNET控制 +kelin复制修复+seedvr2放大_2077403190911393793.json, 图片生成/文生图/Zimage+Klein三采极致人像写真提示词扩写文生图工作流（4K高清出图）_2064280103672176641.json, 图片生成/文生图/Zimage+Klein三采极致人像写真文生图（4K高清出图）_2064248513470484481.json, 图片生成/文生图/Zimage双采+Flux2-Klein三采极致人像写真工作流，还原真实皮肤质感！_2060660673239150594.json, 图片生成/文生图/Zimage双采+Flux2-Klein三采极致人像写真工作流，还原真实皮肤质感！_2066864057151483906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1973197627275784193.json、图片生成/文生图/1988050506423668737.json、图片生成/文生图/1988095557270937601.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-IMAGE 双采高质量出图 +CONTRALNET控制 +kelin复制修复+seedvr2放大_2077403190911393793.json、图片生成/文生图/Zimage+Klein三采极致人像写真提示词扩写文生图工作流（4K高清出图）_2064280103672176641.json、图片生成/文生图/Zimage+Klein三采极致人像写真文生图（4K高清出图）_2064248513470484481.json、图片生成/文生图/Zimage双采+Flux2-Klein三采极致人像写真工作流，还原真实皮肤质感！_2060660673239150594.json、图片生成/文生图/Zimage双采+Flux2-Klein三采极致人像写真工作流，还原真实皮肤质感！_2066864057151483906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
+- `CLIPLoaderGGUF`
 - `CLIPTextEncode`
+- `ColorMatch`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
+- `EmptyFlux2LatentImage`
+- `EmptyLatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `INTConstant`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
 - `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `KSampler`
+- `ImageScaleToTotalPixels`
+- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SetNode`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TTResolutionSelector`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `LayerUtility: ImageReel` —— 2/3 个有
-- `LayerUtility: ImageReelComposit` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `Text Concatenate` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `TextInputBasic` —— 1/3 个有
+- `CR Text` —— 4/5 个有
+- `LCSColorAnchor` —— 4/5 个有
+- `LCSLoadData` —— 4/5 个有
+- `LCSSharpnessCalibrate` —— 4/5 个有
+- `LCSSharpnessIntervene` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `llama_cpp_instruct_adv` —— 4/5 个有
+- `llama_cpp_model_loader` —— 4/5 个有
+- `Any Switch (rgthree)` —— 3/5 个有
+- `LoadImage` —— 3/5 个有
+- `llama_cpp_parameters` —— 3/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `MemoryCleaner` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `CannyEdgePreprocessor` —— 1/5 个有
+- `DWPreprocessor` —— 1/5 个有
+- `DapaoImageCompressionNode` —— 1/5 个有
+- `HEDPreprocessor` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `LayerUtility: ImageReel` —— 1/5 个有
+- `LayerUtility: ImageReelComposit` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `ModelPatchLoader` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `QwenImageDiffsynthControlnet` —— 1/5 个有
+- `easy seed` —— 1/5 个有
+- `图像缩放范围孤海` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 3 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.35 - 1 | 3 | 61% |
-| LoRA 模型强度 | 0.7 | - | 2 | 100% |
-| LoRA 文本强度 | 0.7 | - | 2 | 100% |
+| 采样步数 | randomize | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 1.15 | 1.15 - 3 | 5 | 51% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler_ancestral | - | 5 | 80% |
+| 重绘幅度 | beta | - | 5 | 80% |
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，3 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.35 - 1，3 个样本
-- LoRA 模型强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（6/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageReel、LayerUtility: ImageReelComposit、Text Concatenate、Text Multiline、CR SDXL Aspect Ratio
+- 采样步数 最常用 randomize，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 1.15，观测区间 1.15 - 3，5 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，5 个样本，一致性 80%
+- 重绘幅度 最常用 beta，5 个样本，一致性 80%
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，5 个样本，取值集中（一致性 100%）

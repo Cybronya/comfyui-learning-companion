@@ -1,72 +1,87 @@
 ---
 name: unknown_workflow_sampler_clip_unet_56
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8694
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Prompt Text]
-members: [图片生成/文生图/1957313561636827138.json, 图片生成/文生图/1960181642029641729.json, 图片生成/文生图/1962501732217536513.json, 图片生成/文生图/1973970749973204993.json, 图片生成/文生图/小腰精_胸部_2103720016867848193.json]
+frequency: 10
+level: strong
+coverage: 0.8355
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, LTXVAddGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SamplerEulerAncestral, UNETLoader, VAEDecodeTiled, VAELoader]
+problems: []
+missing: []
+members: [视频生成/图生视频/LTX2.5-首尾帧(自动提示词)_2087515085420974081.json, 视频生成/图生视频/LTX2.5首尾帧-自动扩写提示词-高质量直出1K_2087739429011148802.json, 视频生成/图生视频/LTX2.5首尾帧_2087405087823060994.json, 视频生成/图生视频/LTX2.5首尾帧_2087756807111528449.json, 视频生成/图生视频/LTX2.5首尾帧生视频-高质量直出1K_2087559262871572481.json, 视频生成/图生视频/Ltx2.5首尾帧生视频-极速版_2090424622050275330.json, 视频生成/图生视频/video_ltx2_5_flf2v_2087422059310833666.json, 视频生成/图生视频/【开源】LTX2.5 首尾帧生视频_2087467308766814210.json, 视频生成/图生视频/首尾帧 极速 LTX2.5 音画同出_2087530951474765826.json, 视频生成/文生视频/LTX 2.5 首尾帧视频生成_2087469648844513282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_56
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1957313561636827138.json、图片生成/文生图/1960181642029641729.json、图片生成/文生图/1962501732217536513.json、图片生成/文生图/1973970749973204993.json、图片生成/文生图/小腰精_胸部_2103720016867848193.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/LTX2.5-首尾帧(自动提示词)_2087515085420974081.json、视频生成/图生视频/LTX2.5首尾帧-自动扩写提示词-高质量直出1K_2087739429011148802.json、视频生成/图生视频/LTX2.5首尾帧_2087405087823060994.json、视频生成/图生视频/LTX2.5首尾帧_2087756807111528449.json、视频生成/图生视频/LTX2.5首尾帧生视频-高质量直出1K_2087559262871572481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `LTXVAddGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVDualCFGGuider`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SamplerEulerAncestral`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `SeedVR2` —— 1/5 个有
-- `SeedVR2BlockSwap` —— 1/5 个有
-- `TextConcatenator` —— 1/5 个有
+- `LTXVPreprocess` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ResizeImageMaskNode` —— 7/10 个有
+- `CreateVideo` —— 5/10 个有
+- `PreviewAny` —— 5/10 个有
+- `SaveVideo` —— 5/10 个有
+- `TextGenerateLTX2Prompt` —— 5/10 个有
+- `VHS_VideoCombine` —— 5/10 个有
+- `ComfySwitchNode` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
+- `PrimitiveBoolean` —— 4/10 个有
+- `ResolutionSelector` —— 4/10 个有
+- `RH_LLMAPI_Pro_Node` —— 2/10 个有
+- `easy showAnything` —— 2/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `CR Text` —— 1/10 个有
+- `ImageConcanate` —— 1/10 个有
+- `ShellAgentPluginOutputText` —— 1/10 个有
+- `Text` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
+- `llama_cpp_instruct_adv` —— 1/10 个有
+- `llama_cpp_model_loader` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 25 | 5 | 48% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 7 | 5 | 26% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| LoRA 模型强度 | 1 | 0.8 - 1.5 | 4 | 76% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 97 | 97 - 97 | 10 | 100% |
+| 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 25，5 个样本，取值分散，一致性仅 48%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 7，5 个样本，取值分散，一致性仅 26%
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1.5，4 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
+- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

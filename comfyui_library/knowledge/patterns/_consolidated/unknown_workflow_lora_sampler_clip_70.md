@@ -1,79 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_clip_70
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.635
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, SimpleMath+, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy negative, easy positive, easy showAnything]
-problems: []
-missing: [SimpleMath+, easy bookmark, easy cleanGpuUsed, easy positive, easy negative, CR Text, PlaySound|pysssss, easy int, RunningHub SeedXPro Translator]
-members: [图片生成/文生图/1949359850576347138.json, 图片生成/文生图/1956342842593607682.json, 图片生成/文生图/1963968525272498177.json]
+frequency: 5
+level: strong
+coverage: 0.8734
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/Z-Image-Engineer-V6_2070131809500884994.json, 图片生成/文生图/Z-image-trubo-Engineer v6提示词扩展+Dopsd最高质量文生图V1_2064643788697591810.json, 图片生成/文生图/Z-image抖音小红书爆款涨粉美女_2010628888250032130.json, 图片生成/文生图/文生图提示词扩写_2063964617184997378.json, 图片生成/文生图/（墨幽版-高允贞）Krea2文生图加速版V1_2086004168828997634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_70
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1949359850576347138.json、图片生成/文生图/1956342842593607682.json、图片生成/文生图/1963968525272498177.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-Image-Engineer-V6_2070131809500884994.json、图片生成/文生图/Z-image-trubo-Engineer v6提示词扩展+Dopsd最高质量文生图V1_2064643788697591810.json、图片生成/文生图/Z-image抖音小红书爆款涨粉美女_2010628888250032130.json、图片生成/文生图/文生图提示词扩写_2063964617184997378.json、图片生成/文生图/（墨幽版-高允贞）Krea2文生图加速版V1_2086004168828997634.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `Int`
-- `KSamplerAdvanced`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
 - `SaveImage`
-- `SimpleMath+`
 - `UNETLoader`
-- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `easy negative`
-- `easy positive`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `Wan_video_prompt_generator` —— 2/3 个有
-- `easy bookmark` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `RunningHub SeedXPro Translator` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `CR Prompt Text` —— 4/5 个有
+- `ClipLoaderGGUF` —— 3/5 个有
+- `PreviewAny` —— 3/5 个有
+- `QwenImageEngineer` —— 3/5 个有
+- `CLIPLoader` —— 2/5 个有
+- `ResolutionSelector` —— 2/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 3 | 100% |
-| 采样算法 | 2.5 | 1 - 2.5 | 3 | 65% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | 8 | 8 - 10 | 5 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | res_multistep | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2.5，观测区间 1 - 2.5，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+、easy bookmark、easy cleanGpuUsed、easy positive、easy negative
+- 采样步数 中位数 8，观测区间 8 - 10，5 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

@@ -1,39 +1,35 @@
 ---
 name: text_to_image_lora_sampler_clip_109
 type: Text To Image
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.927778
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8884
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3 OpenVDN DMD8参考生视频 文生视频多模态处理_2099201183129886721.json, 视频生成/文生视频/H3 OpenVDN DMD8参考生视频 文生视频多模态处理_2099583443020636161.json, 视频生成/文生视频/H3 OpenVDN DMD8通用生视频768P多模态创作_2099554412699152386.json, 视频生成/文生视频/MINIMAX H3多参生视频工作流，文生视频图生视频处理方案_2108343271964635137.json, 视频生成/文生视频/MiniMax H3 Larry 8步参考生视频 文生图生视频多模态处理_2098733935315480577.json, 视频生成/文生视频/MiniMax H3 OpenVDN DMD8参考生视频 文生图生视频多模态_2098646912223244290.json, 视频生成/文生视频/MiniMax H3 OpenVDN DMD8参考生视频｜参考图喂进去，视频稳稳出_2099521321498669058.json, 视频生成/文生视频/MiniMax H3 OpenVDN DMD8方案｜2K画质通用视频生成｜三模输入_2099099444166873089.json, 视频生成/文生视频/MiniMax H3 OpenVDN DMD8通用生视频 2K高清输出_2098830839260999681.json]
+members: [视频生成/图生视频/4步加速5秒3分钟｜MiniMax H3图生视频工作流_2087213237464031233.json, 视频生成/图生视频/FL2VA图生视频V2优化版｜MiniMax H3人物场景特效_2089026447229931522.json, 视频生成/图生视频/FL2VA首帧生视频荒星远征｜MiniMax H3战斗特效场景特效图生视频_2089698966752546818.json, 视频生成/图生视频/Fast图生视频加速生成｜Seedance2.0快速出片_2095868810497708034.json, 视频生成/图生视频/Seedance 2.0 Fast 图生视频｜快速把静态图变成动态大片_2097508127116718081.json, 视频生成/图生视频/Seedance 2.0 Global Mini图生视频｜首尾帧4K角色一致性_2097902111764860929.json, 视频生成/图生视频/Seedance2.0 Fast图生视频 快速动态视频生成_2110362092581769218.json, 视频生成/图生视频/Seedance2.0 Fast图生视频｜一张图快速动起来 速度效果两不误_2105498105788583937.json, 视频生成/图生视频/Seedance2.0 Fast图生视频｜快速高质量生成_2095608915806482433.json, 视频生成/图生视频/图生视频Seedance2.0 RunningHub企业版 高质量动态生成_2109033444645883906.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_109
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/H3 OpenVDN DMD8参考生视频 文生视频多模态处理_2099201183129886721.json、视频生成/文生视频/H3 OpenVDN DMD8参考生视频 文生视频多模态处理_2099583443020636161.json、视频生成/文生视频/H3 OpenVDN DMD8通用生视频768P多模态创作_2099554412699152386.json、视频生成/文生视频/MINIMAX H3多参生视频工作流，文生视频图生视频处理方案_2108343271964635137.json、视频生成/文生视频/MiniMax H3 Larry 8步参考生视频 文生图生视频多模态处理_2098733935315480577.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/4步加速5秒3分钟｜MiniMax H3图生视频工作流_2087213237464031233.json、视频生成/图生视频/FL2VA图生视频V2优化版｜MiniMax H3人物场景特效_2089026447229931522.json、视频生成/图生视频/FL2VA首帧生视频荒星远征｜MiniMax H3战斗特效场景特效图生视频_2089698966752546818.json、视频生成/图生视频/Fast图生视频加速生成｜Seedance2.0快速出片_2095868810497708034.json、视频生成/图生视频/Seedance 2.0 Fast 图生视频｜快速把静态图变成动态大片_2097508127116718081.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
@@ -42,51 +38,41 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3AudioConditioningT8` —— 8/9 个有
-- `MiniMaxH3AVDecodeT8` —— 7/9 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 7/9 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 7/9 个有
-- `SaveImage` —— 7/9 个有
-- `RH_DLSS5FrameInterpolation` —— 3/9 个有
-- `BasicScheduler` —— 2/9 个有
-- `ImageResizeKJv2` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `SeedVR2` —— 2/9 个有
-- `SeedVR2BlockSwap` —— 2/9 个有
-- `VAEDecodeAudio` —— 2/9 个有
-- `KSamplerSelect` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/9 个有
-- `MiniMaxH3TurboLoRA` —— 1/9 个有
-- `MiniMaxH3TurboSampler` —— 1/9 个有
-- `ResolutionSelector` —— 1/9 个有
-- `easy float` —— 1/9 个有
+- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 6/10 个有
+- `ComfyMathExpression` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `workflow>参数调整组` —— 2/10 个有
+- `workflow>工作节点组` —— 2/10 个有
+- `DF_Text_Box` —— 1/10 个有
+- `Float` —— 1/10 个有
+- `RH_BytedanceSeedance20GlobalMiniImageToVideo` —— 1/10 个有
+- `workflow>H3-4S` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

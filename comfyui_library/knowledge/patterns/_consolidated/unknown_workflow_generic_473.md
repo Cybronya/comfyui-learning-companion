@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_473
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.454667
-common_nodes: [CR Prompt Text, Comfly_api_set, SaveVideo, easy showAnything]
+coverage: 0.85975
+common_nodes: [CR Text, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/文生视频/(贞贞AI工坊)Vidu Q2文生视频（基准约等于0.984元_5S-具体根据官方积分计算）_1995088415303643138.json, 视频生成/文生视频/全能视频G 文生视频(贞贞的AI工坊API版)V2_1998603254915325954.json, 视频生成/文生视频/（支持真人-图像参考）SeeDance2.0平替T2V 新版全能G视频15S(贞贞的工坊API版)_2028108211923980289.json]
+members: [音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json, 音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json, 音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json, 音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_473
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/(贞贞AI工坊)Vidu Q2文生视频（基准约等于0.984元_5S-具体根据官方积分计算）_1995088415303643138.json、视频生成/文生视频/全能视频G 文生视频(贞贞的AI工坊API版)V2_1998603254915325954.json、视频生成/文生视频/（支持真人-图像参考）SeeDance2.0平替T2V 新版全能G视频15S(贞贞的工坊API版)_2028108211923980289.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json、音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json、音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json、音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `SaveVideo`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ComflyGrok3VideoApi` —— 2/3 个有
-- `Comfly_vidu_text2video` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `SaveAudioMP3` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
+- `easy seed` —— 2/4 个有
+- `easy boolean` —— 1/4 个有
 
 ## 典型参数
 

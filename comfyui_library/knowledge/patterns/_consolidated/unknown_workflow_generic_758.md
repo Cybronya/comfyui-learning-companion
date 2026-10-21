@@ -3,31 +3,33 @@ name: unknown_workflow_generic_758
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [RH_ViduTextToVideo, SaveVideo]
+coverage: 0.6875
+common_nodes: [LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Vidu-q2-文生视频 8秒价格 540 0.53元_次 720p 1.09元_次  1080p 1.93元_次_2049306613512675330.json, 视频生成/文生视频/ViduTextToVideo_2038488990021591041.json]
+members: [图片生成/文生图/1969685223988490242.json, 图片生成/文生图/年龄修改器Face Aging_1864266312905080833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_758
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Vidu-q2-文生视频 8秒价格 540 0.53元_次 720p 1.09元_次  1080p 1.93元_次_2049306613512675330.json、视频生成/文生视频/ViduTextToVideo_2038488990021591041.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1969685223988490242.json、图片生成/文生图/年龄修改器Face Aging_1864266312905080833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_ViduTextToVideo`
-- `SaveVideo`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
+- `AgeTransformationNode` —— 1/2 个有
+- `TutengGeminiAPI` —— 1/2 个有
 
 ## 典型参数
 

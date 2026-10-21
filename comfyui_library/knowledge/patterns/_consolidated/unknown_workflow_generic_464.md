@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_464
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.85
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.948
+common_nodes: [HeartMuLa_Transcribe, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/商品视频工作流｜万相 2.6 Flash 商品图一键带货_2098786473423228929.json, 视频生成/图生视频/图生视频工作流｜Gemini Omni 1.1 Flash 稳定版 可上 4K_2100471517942468610.json, 视频生成/图生视频/图生视频工作流｜万相 2.6 Flash 极速生成 1080P 带音频_2098058762895577089.json]
+members: [音频生成/音频生成/Qwen3-TTS-声音克隆_2014679169786974209.json, 音频生成/音频生成/QwenTTS 语音克隆 音色设计_语音生成 御姐风（想要什么风格自己写）_2081266377532465154.json, 音频生成/音频生成/QwenTTS 语音克隆_2027637688173596674.json, 音频生成/音频生成/QwenTTS 语音生成+音色替换_2028043732737593346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_464
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/商品视频工作流｜万相 2.6 Flash 商品图一键带货_2098786473423228929.json、视频生成/图生视频/图生视频工作流｜Gemini Omni 1.1 Flash 稳定版 可上 4K_2100471517942468610.json、视频生成/图生视频/图生视频工作流｜万相 2.6 Flash 极速生成 1080P 带音频_2098058762895577089.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-声音克隆_2014679169786974209.json、音频生成/音频生成/QwenTTS 语音克隆 音色设计_语音生成 御姐风（想要什么风格自己写）_2081266377532465154.json、音频生成/音频生成/QwenTTS 语音克隆_2027637688173596674.json、音频生成/音频生成/QwenTTS 语音生成+音色替换_2028043732737593346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `HeartMuLa_Transcribe`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RH_AlibabaWan26ImageToVideoFlash` —— 2/3 个有
-- `RH_GoogleGeminiOmni11FlashImageToVideo` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `Qwen3TTSVoiceDesign` —— 2/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `SaveAudioMP3` —— 1/4 个有
+- `SeedVCRun` —— 1/4 个有
 
 ## 典型参数
 

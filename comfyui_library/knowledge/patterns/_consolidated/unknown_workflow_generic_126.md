@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_generic_126
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.959143
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.812125
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, easy imageConcat, easy showAnything]
 problems: []
-missing: []
-members: [comfyui-workflow-templates-json/video_wan_dancer.json, 视频生成/图生视频/1970775618499584001.json, 视频生成/图生视频/1978791620122447873.json, 视频生成/图生视频/1970790621206245377.json, 视频生成/图生视频/1976114306217545729.json, 视频生成/图生视频/1970643756695363586.json, 视频生成/图生视频/1971058917423882242.json]
+missing: [CR Text, easy imageConcat]
+members: [图片生成/文生图/1986465925241204738.json, 图片生成/文生图/视频-分镜头制作-图生分镜头_P2_2010196785133785089.json, 视频生成/图生视频/1998230592728760321.json, 视频生成/图生视频/1979888562357309441.json, 视频生成/图生视频/1992093432994918401.json, 视频生成/图生视频/1992815062568030210.json, 视频生成/图生视频/1988781276498890753.json, 视频生成/图生视频/2017177175027359745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_126
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_dancer.json、视频生成/图生视频/1970775618499584001.json、视频生成/图生视频/1978791620122447873.json、视频生成/图生视频/1970790621206245377.json、视频生成/图生视频/1976114306217545729.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1986465925241204738.json、图片生成/文生图/视频-分镜头制作-图生分镜头_P2_2010196785133785089.json、视频生成/图生视频/1998230592728760321.json、视频生成/图生视频/1979888562357309441.json、视频生成/图生视频/1992093432994918401.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadAudio`
+全部 8 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `SaveVideo`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `easy imageConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Wan25_I2V` —— 6/7 个有
-- `Text Multiline` —— 1/7 个有
-- `f7467834-35a6-42fe-b525-7f17383beb4f` —— 1/7 个有
+- `RHHiddenNodes` —— 7/8 个有
+- `RH_Sora2_I2V` —— 6/8 个有
+- `SaveVideo` —— 6/8 个有
+- `PreviewImage` —— 5/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/8 个有
 
 ## 典型参数
 
@@ -42,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、easy imageConcat

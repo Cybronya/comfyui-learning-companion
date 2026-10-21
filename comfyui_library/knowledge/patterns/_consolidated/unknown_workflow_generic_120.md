@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_120
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.977375
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.955556
+common_nodes: [LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json, 视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json, 视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json, 视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json, 视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json, 视频生成/文生视频/Seedance2.0全能参考视频_2043901748414259202.json, 视频生成/文生视频/seedance2.0_2043171204051247105.json, 视频生成/文生视频/万象AI+RH地表最强超能视频2.0_全能参考 生真人视频_2038582212496461825.json]
+members: [音频生成/音频生成/【单人版】语音克隆MegaTTS3_1963880696345497601.json, 音频生成/音频生成/单人语音克隆-FireRedTTS_1970352853627924482.json, 音频生成/音频生成/单人语音克隆-MegaTTS3_1963027304182157313.json, 音频生成/音频生成/单人语音克隆-MegaTTS3_1963507680839176193.json, 音频生成/音频生成/单人语音克隆，MegaTTS3，简单易用效果好_1963088853970161666.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1963033467900637185.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1963596081664970754.json, 音频生成/音频生成/双人语音克隆，MegaTTS3，简单易用效果好_1963192083320377346.json, 音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）_1976612486625533953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_120
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/Seedance+2.0+真人短片生成器（高速满血版）_2038240207052480514.json、视频生成/文生视频/Seedance2.0 全能参考 文生视频 图生视频_2044962280529465346.json、视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json、视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json、视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/【单人版】语音克隆MegaTTS3_1963880696345497601.json、音频生成/音频生成/单人语音克隆-FireRedTTS_1970352853627924482.json、音频生成/音频生成/单人语音克隆-MegaTTS3_1963027304182157313.json、音频生成/音频生成/单人语音克隆-MegaTTS3_1963507680839176193.json、音频生成/音频生成/单人语音克隆，MegaTTS3，简单易用效果好_1963088853970161666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/8 个有
-- `Primitive string multiline [Crystools]` —— 1/8 个有
+- `MegaTTS3Run` —— 8/9 个有
+- `PreviewAudio` —— 7/9 个有
+- `LoadImage` —— 3/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `FireRedTTS2MonologueNode` —— 1/9 个有
 
 ## 典型参数
 

@@ -3,47 +3,41 @@ name: unknown_workflow_video_103
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageBatchGet, ImageToMask, LayerUtility: LaMa, MaskToImage, PreviewImage, SAMModelLoader (segment anything), VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.887
+common_nodes: [CR Text, CR Value, ImageConcanate, ImageResizeKJ, LoadImage, RIFE VFI, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1982367593988276225.json, 视频生成/图生视频/1915249937083469825.json]
+members: [视频生成/图生视频/1996420197084962817.json, 视频生成/图生视频/2041860257923735554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_103
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1982367593988276225.json、视频生成/图生视频/1915249937083469825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1996420197084962817.json、视频生成/图生视频/2041860257923735554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `ImageBatchGet`
-- `ImageToMask`
-- `LayerUtility: LaMa`
-- `MaskToImage`
-- `PreviewImage`
-- `SAMModelLoader (segment anything)`
-- `VHS_DuplicateMasks`
+- `CR Text`
+- `CR Value`
+- `ImageConcanate`
+- `ImageResizeKJ`
+- `LoadImage`
+- `RIFE VFI`
+- `ReActorFaceSwap`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

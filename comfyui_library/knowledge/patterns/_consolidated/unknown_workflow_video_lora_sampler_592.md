@@ -3,54 +3,77 @@ name: unknown_workflow_video_lora_sampler_592
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.831
-common_nodes: [AILab_QwenVL, CLIPVisionLoader, GetImageRangeFromBatch, ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, Text Concatenate, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.513333
+common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, FloatConstant, GetImageSize, GetNode, INTConstant, ImageScaleToMaxDimension, InvertMask, JWStringMultiline, LoadImage, LoadWanVideoT5TextEncoder, PreviewAny, PreviewImage, SetNode, SomethingToString, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1989211681295306753.json, 视频生成/图生视频/1987441783527419906.json, 视频生成/图生视频/1986952330576900097.json]
+members: [视频生成/图生视频/1990334603498057730.json, 视频生成/图生视频/2028822051032666113.json, 视频生成/图生视频/2005583710823088129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_592
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1989211681295306753.json、视频生成/图生视频/1987441783527419906.json、视频生成/图生视频/1986952330576900097.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1990334603498057730.json、视频生成/图生视频/2028822051032666113.json、视频生成/图生视频/2005583710823088129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
+- `AILab_Preview`
+- `BiRefNetRMBG`
+- `CLIPLoader`
 - `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `FloatConstant`
+- `GetImageSize`
+- `GetNode`
+- `INTConstant`
+- `ImageScaleToMaxDimension`
+- `InvertMask`
+- `JWStringMultiline`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SaveImage`
-- `Text Concatenate`
-- `Text Multiline`
+- `PreviewAny`
+- `PreviewImage`
+- `SetNode`
+- `SomethingToString`
+- `TextImageEncodeQwenVL`
 - `VHS_VideoCombine`
+- `WanVideoAddBindweaveEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEncodeLatentBatch`
+- `WanVideoImageResizeToClosest`
 - `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `LoadVideo` —— 1/3 个有
+- `Create Grid Image from Batch` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
+- `GIMMVFI_interpolate` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `ImageScaleBy` —— 2/3 个有
+- `ImpactMinMax` —— 2/3 个有
+- `MaskToImage` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `SeedVR2LoadDiTModel` —— 2/3 个有
+- `SeedVR2LoadVAEModel` —— 2/3 个有
+- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `string_util_StrConcat` —— 2/3 个有
+- `ImageFromBatch+` —— 1/3 个有
 
 ## 典型参数
 

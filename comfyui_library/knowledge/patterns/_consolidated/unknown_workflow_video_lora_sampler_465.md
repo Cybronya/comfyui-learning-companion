@@ -3,72 +3,59 @@ name: unknown_workflow_video_lora_sampler_465
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.85925
-common_nodes: [BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAudio, ResolutionSelector, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.9045
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: []
-members: [数字人/数字人/Minimax H3  音频驱动数字人-神态口型自然-双采加速_2111647737732231170.json, 视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流 MiniMax H3新技术_2101122144590712834.json, 视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流+MiniMax+H3新技术_2111456170199310337.json, 视频生成/图生视频/高阶双采音色克隆台词驱动数字人- MiniMax H3视频工作流_2110580224256724993.json]
+missing: [LayerUtility: ImageScaleByAspectRatio V2, Text Multiline]
+members: [图片生成/文生图/1971322210470281217.json, 图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json, 视频生成/图生视频/1994305244540715009.json, 视频生成/图生视频/1993311574968434690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_465
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Minimax H3  音频驱动数字人-神态口型自然-双采加速_2111647737732231170.json、视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流 MiniMax H3新技术_2101122144590712834.json、视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流+MiniMax+H3新技术_2111456170199310337.json、视频生成/图生视频/高阶双采音色克隆台词驱动数字人- MiniMax H3视频工作流_2110580224256724993.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1971322210470281217.json、图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json、视频生成/图生视频/1994305244540715009.json、视频生成/图生视频/1993311574968434690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewAudio`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SelfLiftAvatarH3TST`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `MelBandRoFormerModelLoader` —— 3/4 个有
-- `MelBandRoFormerSampler` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `TrimAudioDuration` —— 3/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `Qwen3ASRLoader` —— 2/4 个有
-- `Qwen3ASRTranscribe` —— 2/4 个有
-- `RunningHub_VoxCPM_Generate` —— 2/4 个有
-- `RunningHub_VoxCPM_LoadModel` —— 2/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `Seed` —— 1/4 个有
-- `XB_CanvasLabel` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `AILab_ImageStitch` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `ImageFromBatch+` —— 3/4 个有
+- `ImageStitch` —— 3/4 个有
+- `RMBG` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_Nano_Banana_Image2Image` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -80,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、Text Multiline

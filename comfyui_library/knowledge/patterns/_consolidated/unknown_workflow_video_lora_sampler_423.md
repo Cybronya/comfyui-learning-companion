@@ -3,63 +3,64 @@ name: unknown_workflow_video_lora_sampler_423
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.744
-common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9596
+common_nodes: [CLIPVisionLoader, ImageConcanate, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoUniAnimateDWPoseDetector, WanVideoUniAnimatePoseInput, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1925407407495913474.json, 视频生成/图生视频/1922976069052526594.json, 视频生成/图生视频/1923351461173129217.json, 视频生成/图生视频/1927701391375253506.json, 视频生成/图生视频/1955521868151361537.json]
+members: [视频生成/图生视频/1913792299430572033.json, 视频生成/图生视频/1913638133471346689.json, 视频生成/图生视频/1913658373089492993.json, 视频生成/图生视频/1914528048430153729.json, 视频生成/图生视频/1914272039954280449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_423
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1925407407495913474.json、视频生成/图生视频/1922976069052526594.json、视频生成/图生视频/1923351461173129217.json、视频生成/图生视频/1927701391375253506.json、视频生成/图生视频/1955521868151361537.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1913792299430572033.json、视频生成/图生视频/1913638133471346689.json、视频生成/图生视频/1913658373089492993.json、视频生成/图生视频/1914528048430153729.json、视频生成/图生视频/1914272039954280449.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageConcanate`
 - `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
+- `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoUniAnimateDWPoseDetector`
+- `WanVideoUniAnimatePoseInput`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `WanVideoModelLoader` —— 4/5 个有
-- `WanVideoTeaCache` —— 4/5 个有
-- `AIO_Preprocessor` —— 3/5 个有
-- `VHS_LoadVideo` —— 3/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `ImageUpscaleWithModel` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `UpscaleModelLoader` —— 2/5 个有
-- `WanVideoVACEStartToEndFrame` —— 2/5 个有
-- `AddLabel` —— 1/5 个有
-- `ColorMatch` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `ImageBlend` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageScale` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `easy int` —— 1/5 个有
+- `Crop Face` —— 4/5 个有
+- `ImageListToImageBatch` —— 4/5 个有
+- `ImpactImageBatchToImageList` —— 4/5 个有
+- `JWInteger` —— 4/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
+- `Load RetinaFace` —— 4/5 个有
+- `ReActorFaceSwap` —— 4/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `GPENO Face Restoration` —— 3/5 个有
+- `JWImageResizeByLongerSide` —— 3/5 个有
+- `Note Plus (mtb)` —— 3/5 个有
+- `CR Text` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,52 +3,47 @@ name: unknown_workflow_video_lora_sampler_511
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.75475
-common_nodes: [BBoxesToSAM2, CLIPVisionLoader, CM_IntToFloat, CR Text, DownloadAndLoadQwenModel, DrawViTPose, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, Int, LayerMask: SAM2Ultra, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, MaskPreview+, OnnxDetectionModelLoader, PoseAndFaceDetection, QwenVLDetection, RHHiddenNodes, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.543
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, EmptyImage, FloatConstant, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, PreviewImage, SetNode, TextBox1, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/1989226857599995905.json, 视频生成/图生视频/2002723614807998465.json, 视频生成/图生视频/1988762483311652866.json, 视频生成/图生视频/2001920042348494850.json]
+members: [视频生成/图生视频/1979072764936097793.json, 视频生成/图生视频/1976916291078524930.json, 视频生成/图生视频/2016418267958616065.json, 视频生成/图生视频/1976905425356525570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_511
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1989226857599995905.json、视频生成/图生视频/2002723614807998465.json、视频生成/图生视频/1988762483311652866.json、视频生成/图生视频/2001920042348494850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1979072764936097793.json、视频生成/图生视频/1976916291078524930.json、视频生成/图生视频/2016418267958616065.json、视频生成/图生视频/1976905425356525570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BBoxesToSAM2`
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Text`
-- `DownloadAndLoadQwenModel`
-- `DrawViTPose`
+- `DrawMaskOnImage`
+- `EmptyImage`
+- `FloatConstant`
 - `GetImageSizeAndCount`
 - `GetNode`
+- `GrowMaskWithBlur`
+- `INTConstant`
 - `ImageConcatMulti`
-- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `Int`
-- `LayerMask: SAM2Ultra`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MaskPreview+`
+- `MaskToImage`
 - `OnnxDetectionModelLoader`
+- `PointsEditor`
 - `PoseAndFaceDetection`
-- `QwenVLDetection`
-- `RHHiddenNodes`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+- `PreviewImage`
 - `SetNode`
-- `SimpleMath+`
+- `TextBox1`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAnimateEmbeds`
@@ -58,15 +53,29 @@ source: knowledge_consolidation
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 3/4 个有
-- `DrawMaskOnImage` —— 3/4 个有
-- `GrowMask` —— 3/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `AnimalPosePreprocessor` —— 2/4 个有
+- `DWPreprocessor` —— 2/4 个有
+- `DrawViTPose` —— 2/4 个有
+- `FaceMaskFromPoseKeypoints` —— 2/4 个有
+- `ImageCropByMaskAndResize` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `PixelPerfectResolution` —— 2/4 个有
+- `DownloadAndLoadQwenModel` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `QwenVLDetection` —— 1/4 个有
+- `SeCModelLoader` —— 1/4 个有
+- `SeCVideoSegmentation` —— 1/4 个有
 - `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数

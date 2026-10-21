@@ -3,44 +3,38 @@ name: unknown_workflow_sampler_40
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8885
-common_nodes: [CR Prompt Text, CreateVideo, FrameInterpolate, FrameInterpolationModelLoader, JWInteger, LingBotSampler, LingBotTextEncode, PrimitiveInt, RH_Captioner_Pro, SaveVideo, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.95
+common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/文生视频/LingBot文生视频1.3B智能提示词_2082367995464208385.json, 视频生成/文生视频/LingBot文生视频30B智能提示词_2082368008017764354.json]
+members: [图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json, 音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_40
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LingBot文生视频1.3B智能提示词_2082367995464208385.json、视频生成/文生视频/LingBot文生视频30B智能提示词_2082368008017764354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json、音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Apply Whisper`
 - `CR Prompt Text`
-- `CreateVideo`
-- `FrameInterpolate`
-- `FrameInterpolationModelLoader`
-- `JWInteger`
-- `LingBotSampler`
-- `LingBotTextEncode`
-- `PrimitiveInt`
-- `RH_Captioner_Pro`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 1/2 个有
-- `LingBotLoader` —— 1/2 个有
-- `LingBotMoELoaderGGUF` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

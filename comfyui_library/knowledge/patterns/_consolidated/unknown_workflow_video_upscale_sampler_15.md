@@ -3,55 +3,54 @@ name: unknown_workflow_video_upscale_sampler_15
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [ConvertAny2Float, GetNode, ImageUpscaleWithModel, Int, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Note Plus (mtb), PlaySound|pysssss, RIFE VFI, SeargePromptText, SetNode, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.9415
+common_nodes: [FILM VFI, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1894733558555017217.json, 视频生成/文生视频/1895115553986183169.json]
+members: [视频生成/图生视频/1912762337353265153.json, 视频生成/图生视频/1914988219354574849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1894733558555017217.json、视频生成/文生视频/1895115553986183169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1912762337353265153.json、视频生成/图生视频/1914988219354574849.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ConvertAny2Float`
-- `GetNode`
+- `FILM VFI`
+- `ImageScale`
 - `ImageUpscaleWithModel`
-- `Int`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Note Plus (mtb)`
-- `PlaySound|pysssss`
-- `RIFE VFI`
-- `SeargePromptText`
-- `SetNode`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `LoadWanVideoClipTextEncoder` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoImageClipEncode` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `Image Aspect Ratio` —— 1/2 个有
+- `ImageFromBatch+` —— 1/2 个有
+- `ImageListToImageBatch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Logic Boolean` —— 1/2 个有
+- `Number to Float` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
 
 ## 典型参数
 

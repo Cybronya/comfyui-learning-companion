@@ -1,70 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_vae_34
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9695
-common_nodes: [BasicScheduler, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXSequencer, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, MultiImageLoader, PromptRelayEncodeTimeline, SamplerCustom, SaveVideo, SimpleMath+, VAEDecodeTiled, VAELoaderKJ, VisualizeSigmasKJ]
+frequency: 3
+level: strong
+coverage: 0.764
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptyLatentImage, KSamplerSelect, Note Plus (mtb), NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2052007179212861442.json, 视频生成/图生视频/2059804412331253761.json]
+missing: [LayerUtility: PurgeVRAM V2, Note Plus (mtb), CR Prompt Text, easy promptConcat, CR Combine Prompt]
+members: [图片生成/文生图/1910667121410437122.json, 图片生成/文生图/1915461235243159553.json, 图片生成/文生图/1922302399132684289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2052007179212861442.json、视频生成/图生视频/2059804412331253761.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1910667121410437122.json、图片生成/文生图/1915461235243159553.json、图片生成/文生图/1922302399132684289.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXSequencer`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `MultiImageLoader`
-- `PromptRelayEncodeTimeline`
-- `SamplerCustom`
-- `SaveVideo`
-- `SimpleMath+`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VisualizeSigmasKJ`
+- `Note Plus (mtb)`
+- `NunchakuFluxDiTLoader`
+- `NunchakuTextEncoderLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `DualCLIPLoaderGGUF` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `Power Lora Loader (rgthree)` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CR Prompt Text` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CR Combine Prompt` —— 1/3 个有
+- `HiDreamSampler` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `easy promptConcat` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 361 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
 
 ## 常见问题
 
@@ -72,6 +62,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 361，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、Note Plus (mtb)、CR Prompt Text、easy promptConcat、CR Combine Prompt

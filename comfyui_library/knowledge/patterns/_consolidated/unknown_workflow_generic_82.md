@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_82
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.587
-common_nodes: [1hew_ImageGridSplit, LoadImage, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.8208
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
-missing: [Multi Text Merge, easy saveText]
-members: [图片生成/图生图/2092532684630355970.json, 图片生成/图生图/2092540614477967361.json, 图片生成/图生图/2092558185495359490.json, 图片生成/图生图/2092798783959687170.json, 图片生成/图生图/2092801600623562754.json, 图片生成/图生图/2092858406091710466.json, 图片生成/图生图/2092866135829082113.json, 图片生成/图生图/2092866792426393602.json, 图片生成/图生图/2092870981521072130.json]
+missing: []
+members: [数字人/数字人/qwen3-voice-clone-v1-workflow_2079910944641212417.json, 视频生成/图生视频/2037007176320950273.json, 视频生成/图生视频/2026172216152428545.json, 音频生成/音频生成/Qwen3 TTS 一键声音克隆_2014695099287998466.json, 音频生成/音频生成/Qwen3 TTS 单声音克隆-老祺虾说_2029550073687838722.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014607135769894913.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014685779439652866.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014980105134678017.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2015035039628664833.json, 音频生成/音频生成/Qwen3 TTS声音克隆（音质俱佳）-B站UP主@好奇漫步_2037534639362940930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_82
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2092532684630355970.json、图片生成/图生图/2092540614477967361.json、图片生成/图生图/2092558185495359490.json、图片生成/图生图/2092798783959687170.json、图片生成/图生图/2092801600623562754.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/qwen3-voice-clone-v1-workflow_2079910944641212417.json、视频生成/图生视频/2037007176320950273.json、视频生成/图生视频/2026172216152428545.json、音频生成/音频生成/Qwen3 TTS 一键声音克隆_2014695099287998466.json、音频生成/音频生成/Qwen3 TTS 单声音克隆-老祺虾说_2029550073687838722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `1hew_ImageGridSplit`
-- `LoadImage`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `RHLLMChatNode`
-- `RH_RhartImageG2OfficialImageToImage`
-- `SaveImage`
+全部 10 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Multi Text Merge` —— 3/9 个有
-- `RMBG` —— 3/9 个有
-- `easy saveText` —— 2/9 个有
+- `LoadImage` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `RH_Doubao_Seedance_1_5_Pro` —— 1/10 个有
+- `SaveVideo` —— 1/10 个有
 
 ## 典型参数
 
@@ -46,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Multi Text Merge、easy saveText
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

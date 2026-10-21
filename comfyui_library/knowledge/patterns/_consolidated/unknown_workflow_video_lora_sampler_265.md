@@ -2,84 +2,80 @@
 name: unknown_workflow_video_lora_sampler_265
 type: Unknown Workflow
 frequency: 8
-level: weak
-coverage: 0.752
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, EmptyLTXVLatentVideo, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, RegexReplace, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+level: moderate
+coverage: 0.742
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2069279414692704257.json, 视频生成/图生视频/2068903513152909314.json, 视频生成/图生视频/2069328807546417154.json, 视频生成/图生视频/2064345849135722497.json, 视频生成/图生视频/2064359460616884226.json, 视频生成/图生视频/2064002512151212034.json, 视频生成/图生视频/2069219281786720258.json, 视频生成/图生视频/2069991614805798913.json]
+members: [视频生成/图生视频/1958065173116366849.json, 视频生成/图生视频/1959340354166272002.json, 视频生成/图生视频/1956763019890057217.json, 视频生成/图生视频/1957279872316010498.json, 视频生成/图生视频/1957324783199383553.json, 视频生成/图生视频/1958334806830551042.json, 视频生成/图生视频/1979202292152963074.json, 视频生成/图生视频/1958798691941445634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_265
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2069279414692704257.json、视频生成/图生视频/2068903513152909314.json、视频生成/图生视频/2069328807546417154.json、视频生成/图生视频/2064345849135722497.json、视频生成/图生视频/2064359460616884226.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1958065173116366849.json、视频生成/图生视频/1959340354166272002.json、视频生成/图生视频/1956763019890057217.json、视频生成/图生视频/1957279872316010498.json、视频生成/图生视频/1957324783199383553.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CreateVideo`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
-- `EmptyLTXVLatentVideo`
-- `GetVideoComponents`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `RegexReplace`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `VAELoaderKJ` —— 7/8 个有
-- `CheckpointLoaderSimple` —— 5/8 个有
-- `GuHaiAutoImageSplit` —— 5/8 个有
-- `MathExpression|pysssss` —— 5/8 个有
-- `PrimitiveInt` —— 5/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `SaveImage` —— 5/8 个有
-- `StringConcatenate` —— 5/8 个有
-- `CR Prompt Text` —— 3/8 个有
-- `Float` —— 3/8 个有
-- `GetNode` —— 3/8 个有
-- `Int` —— 3/8 个有
-- `LTXICLoRALoaderModelOnly` —— 3/8 个有
-- `LowVRAMCheckpointLoader` —— 3/8 个有
-- `MultiTextConcatenate` —— 3/8 个有
-- `RH_LLMAPI_Pro_Node` —— 3/8 个有
-- `SetNode` —— 3/8 个有
-- `SimpleMath+` —— 3/8 个有
-- `孤海注释` —— 3/8 个有
-- `DualCLIPLoader` —— 2/8 个有
+- `AIO_Preprocessor` —— 6/8 个有
+- `GetNode` —— 6/8 个有
+- `INTConstant` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `WanVideoTorchCompileSettings` —— 6/8 个有
+- `CR Text` —— 5/8 个有
+- `WanVideoVACEStartToEndFrame` —— 5/8 个有
+- `ImageFromBatch+` —— 4/8 个有
+- `ImpactInt` —— 4/8 个有
+- `SimpleMath+` —— 4/8 个有
+- `Anything Everywhere` —— 3/8 个有
+- `ImageConcanate` —— 2/8 个有
+- `ImageConcatMulti` —— 2/8 个有
+- `InspyrenetRembg` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `LayerUtility: ImageRemoveAlpha` —— 2/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `OpenposePreprocessor` —— 2/8 个有
+- `VHS_VideoInfo` —— 2/8 个有
+- `easy imageRemBg` —— 2/8 个有
+- `easy showAnything` —— 2/8 个有
+- `Evaluate Integers` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `PrimitiveFloat` —— 1/8 个有
+- `easy convertAnything` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 241 | 8 | 54% |
-| 高度 | 25 | 25 - 50 | 8 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,5 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 241，8 个样本
-- 高度 中位数 25，观测区间 25 - 50，8 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

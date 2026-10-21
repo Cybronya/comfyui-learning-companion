@@ -1,66 +1,67 @@
 ---
 name: unknown_workflow_sampler_unet_vae_117
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.747
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.880429
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PreviewAudio, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json, 视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json, 视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json, 视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json, 视频生成/图生视频/Minimax-H3-多参-长视频-原版-736p直出_2096509767048060930.json, 视频生成/文生视频/Minimax-H3-✅文生长视频-原版-736p直出_2101978013062746113.json]
+members: [视频生成/图生视频/制作音乐MV Minimax H3_2084282697115070466.json, 视频生成/图生视频/单人数字人 图片加音频生成视频 minimax H3_2085731885287825410.json, "视频生成/数字人/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json", 视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json, 视频生成/文生视频/DG_(音频+图片)音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2094359602430304258.json, 视频生成/文生视频/DG_h3+ref2va+最大1280无加速lora高质量_2087798268825792513.json, 视频生成/文生视频/DG_音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2085981571416416257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_117
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json、视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json、视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json、视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json、视频生成/图生视频/Minimax-H3-多参-长视频-原版-736p直出_2096509767048060930.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/制作音乐MV Minimax H3_2084282697115070466.json、视频生成/图生视频/单人数字人 图片加音频生成视频 minimax H3_2085731885287825410.json、视频生成/数字人/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json、视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json、视频生成/文生视频/DG_(音频+图片)音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2094359602430304258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `AudioCrop`
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `KSamplerSelect`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PreviewAudio`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `ModelAttentionBackend` —— 4/6 个有
-- `CreateVideo` —— 3/6 个有
-- `LoadAudio` —— 3/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
-- `GetImagesFromBatchIndexed` —— 2/6 个有
-- `GetVideoComponents` —— 2/6 个有
-- `LoadVideoUI` —— 2/6 个有
-- `MiniMaxH3ImageToVideo` —— 2/6 个有
-- `MiniMaxH3MotionContext` —— 2/6 个有
-- `MiniMaxH3MotionContextTrim` —— 2/6 个有
-- `MiniMaxH3SigmaShift` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `孤海注释` —— 2/6 个有
-- `BlockSparseAttention` —— 1/6 个有
-- `SaveVideo` —— 1/6 个有
-- `UniBlockSwap` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy int` —— 1/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
+- `ComfyMathExpression` —— 5/7 个有
+- `PrimitiveFloat` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `VHS_VideoCombine` —— 5/7 个有
+- `Getter` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `Setter` —— 3/7 个有
+- `CreateVideo` —— 2/7 个有
+- `JjkText` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `SaveVideo` —— 2/7 个有
+- `VHS_LoadVideo` —— 2/7 个有
+- `EasyCache` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `easy anythingIndexSwitch` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

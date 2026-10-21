@@ -1,72 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_7
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.796
-common_nodes: [ApplySageAttention, CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSampler, ModelSamplingSD3, VAEDecode, WanVaceToVideo]
-problems: [Steps较低可能导致细节不足]
-missing: [ImageFromBatch+, CR Prompt Text]
-members: [视频生成/文生视频/1973020564535250945.json, 视频生成/文生视频/1974823534423879681.json, 视频生成/文生视频/1975808111913119746.json, 视频生成/文生视频/1975830963999649793.json, 视频生成/文生视频/1977017622829125634.json, 视频生成/文生视频/1977742174395793409.json, 视频生成/文生视频/1967877695067533314.json, 视频生成/文生视频/wan2.2-aio-v7-文生视频_1982741566634762241.json]
+frequency: 9
+level: weak
+coverage: 0.965111
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentAudio, KSampler, SaveAudio, VAEDecodeAudio]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+missing: []
+members: [音频生成/音频生成/Stable Audio Open 文生音频音效声音生成_2041681190037491713.json, 音频生成/音频生成/Stable-audio纯音乐生成_1989534377547845633.json, 音频生成/音频生成/stable-audio -medium-长背景音乐生成_2058890267595460610.json, 音频生成/音频生成/stable-audio-效音生成_2058888194803982337.json, 音频生成/音频生成/stable-audio-背景音乐生成_2058396093842542593.json, 音频生成/音频生成/强大的文字生音频_音效 stable-audio-open_1911590798788624386.json, 音频生成/音频生成/强大的音效生成器 stable-audio_1937725826492469249.json, 音频生成/音频生成/文字生音频_音效 stable-audio-open_1834600696275693569.json, 音频生成/音频生成/文字生音频_音效_2007400748958617601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_7
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/1973020564535250945.json、视频生成/文生视频/1974823534423879681.json、视频生成/文生视频/1975808111913119746.json、视频生成/文生视频/1975830963999649793.json、视频生成/文生视频/1977017622829125634.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/Stable Audio Open 文生音频音效声音生成_2041681190037491713.json、音频生成/音频生成/Stable-audio纯音乐生成_1989534377547845633.json、音频生成/音频生成/stable-audio -medium-长背景音乐生成_2058890267595460610.json、音频生成/音频生成/stable-audio-效音生成_2058888194803982337.json、音频生成/音频生成/stable-audio-背景音乐生成_2058396093842542593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ApplySageAttention`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `JWInteger`
+- `EmptyLatentAudio`
 - `KSampler`
-- `ModelSamplingSD3`
-- `VAEDecode`
-- `WanVaceToVideo`
+- `SaveAudio`
+- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 6/8 个有
-- `ImageFromBatch+` —— 3/8 个有
-- `SaveImage` —— 3/8 个有
-- `LoadImage` —— 2/8 个有
-- `TT_img_enc` —— 2/8 个有
-- `TT_img_enc_v2` —— 2/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `DeepTranslatorTextNode` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `PreviewAudio` —— 5/9 个有
+- `DeepTranslatorTextNode` —— 4/9 个有
+- `PrimitiveFloat` —— 2/9 个有
+- `RH_Translator` —— 2/9 个有
+- `NumberClamp` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | ipndm | - | 8 | 50% |
-| 调度器 | sgm_uniform | - | 8 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 60 | 8 - 60 | 9 | 42% |
+| Prompt 约束强度(CFG) | 7 | 1 - 7 | 9 | 43% |
+| 采样算法 | dpmpp_3m_sde_gpu | - | 9 | 67% |
+| 调度器 | exponential | - | 9 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 40 | 10 - 380 | 8 | 0% |
+| 高度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 9/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 3/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，8 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，8 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、CR Prompt Text
+- 采样步数 中位数 60，观测区间 8 - 60，9 个样本，取值分散，一致性仅 42%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 1 - 7，9 个样本，取值分散，一致性仅 43%
+- 采样算法 最常用 dpmpp_3m_sde_gpu，9 个样本，一致性 67%
+- 调度器 最常用 exponential，9 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 40，观测区间 10 - 380，8 个样本，取值分散，一致性仅 0%
+- 高度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：发现KSampler但没有VAEDecode

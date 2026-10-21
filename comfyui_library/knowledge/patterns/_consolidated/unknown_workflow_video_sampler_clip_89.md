@@ -7,13 +7,13 @@ coverage: 1
 common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSampler, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2035333116356726786.json, 视频生成/图生视频/2035335136459362305.json, 视频生成/图生视频/1992982649104957441.json, 视频生成/图生视频/1997950428413353986.json, 视频生成/图生视频/1967057981361807361.json, 视频生成/图生视频/1962791442060062722.json]
+members: [视频生成/图生视频/2035333116356726786.json, 视频生成/图生视频/2035335136459362305.json, 视频生成/图生视频/1997950428413353986.json, 视频生成/图生视频/1967057981361807361.json, 视频生成/图生视频/1962791442060062722.json, 视频生成/图生视频/1965245831030915073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_89
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2035333116356726786.json、视频生成/图生视频/2035335136459362305.json、视频生成/图生视频/1992982649104957441.json、视频生成/图生视频/1997950428413353986.json、视频生成/图生视频/1967057981361807361.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2035333116356726786.json、视频生成/图生视频/2035335136459362305.json、视频生成/图生视频/1997950428413353986.json、视频生成/图生视频/1967057981361807361.json、视频生成/图生视频/1962791442060062722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -37,19 +37,20 @@ source: knowledge_consolidation
 - `CLIPVisionLoader` —— 5/6 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
 - `LoadImage` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
 - `WanImageToVideo` —— 5/6 个有
 - `CR Prompt Text` —— 4/6 个有
-- `CLIPLoader` —— 3/6 个有
-- `ImageFromBatch+` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `ImageFromBatch+` —— 3/6 个有
+- `wanBlockSwap` —— 3/6 个有
+- `CLIPLoader` —— 2/6 个有
 - `ModelPatchTorchSettings` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `wanBlockSwap` —— 2/6 个有
-- `DuckHideNode` —— 1/6 个有
+- `CreateVideo` —— 1/6 个有
 - `EmptyHunyuanLatentVideo` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `PreViewVideo` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 - `SaveLatent` —— 1/6 个有
 - `TT_img_enc` —— 1/6 个有
-- `TT_img_enc_v2` —— 1/6 个有
 
 ## 典型参数
 

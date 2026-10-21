@@ -3,54 +3,59 @@ name: unknown_workflow_video_upscale_latent_upscale_91
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.4715
-common_nodes: [BasicGuider, BasicScheduler, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHOutput, GetNode, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomSeedNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy cleanGpuUsed, easy float, 忽略多组孤海]
+coverage: 0.45225
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, JWFloat, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVLatentSeparateT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VRAM_Debug]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax_H3_全能参考漫剧工作流_2099768671395733506.json, 视频生成/图生视频/Minimax_H3_全能参考漫剧工作流_2100029946231083009.json, 视频生成/图生视频/minimax_h3_极简画布模式多参工作流_2099788558071582722.json, 视频生成/图生视频/minimax_h3_极简画布模式多参工作流_2100044087197003778.json]
+members: [视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_91
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax_H3_全能参考漫剧工作流_2099768671395733506.json、视频生成/图生视频/Minimax_H3_全能参考漫剧工作流_2100029946231083009.json、视频生成/图生视频/minimax_h3_极简画布模式多参工作流_2099788558071582722.json、视频生成/图生视频/minimax_h3_极简画布模式多参工作流_2100044087197003778.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json、视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json、视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json、视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHLoraStack`
-- `FeiHouEasyH3RHOutput`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
 - `GetNode`
-- `H3SigmaRefiner`
+- `JWFloat`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVLatentSeparateT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `RandomSeedNoise`
+- `PT_H3ConcatAVLatent`
+- `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
+- `VAELoader`
+- `VHS_LoadAudioUpload`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy float`
-- `忽略多组孤海`
+- `VRAM_Debug`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3SigmaShift` —— 2/4 个有
+- `MiniMaxChunkFeedForward` —— 3/4 个有
+- `MiniMaxLowVRAMAttention` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 

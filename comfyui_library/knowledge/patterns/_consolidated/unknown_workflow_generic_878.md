@@ -3,35 +3,34 @@ name: unknown_workflow_generic_878
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [AudioCrop, AudioSeparation, LoadAudio, SaveAudio, SaveAudioMP3]
+coverage: 0.7595
+common_nodes: [CR Text, LoadImage, RH_RhartVideoGImageToVideo, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/分离人声和背景音乐工作流_1990789087802109954.json, 音频生成/音频生成/分离背景音乐和人声工作流123_1988987680371388417.json]
+members: [视频生成/图生视频/2082292876633006081.json, 视频生成/文生视频/全能视频X—V1.5图生视频低价版_2061473253360754690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_878
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/分离人声和背景音乐工作流_1990789087802109954.json、音频生成/音频生成/分离背景音乐和人声工作流123_1988987680371388417.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2082292876633006081.json、视频生成/文生视频/全能视频X—V1.5图生视频低价版_2061473253360754690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `LoadAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `CR Text`
+- `LoadImage`
+- `RH_RhartVideoGImageToVideo`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/2 个有
-- `SoundFlow_SimpleCompressor` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

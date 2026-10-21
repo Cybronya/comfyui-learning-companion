@@ -3,39 +3,33 @@ name: unknown_workflow_generic_521
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.793333
-common_nodes: [CR Text, LoadAudio, MegaTTS3Run, SaveAudioMP3, VHS_LoadVideo]
+coverage: 1
+common_nodes: [LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json, 音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json, 音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json]
+members: [图片生成/文生图/LongCat-Image文生图_1999000295881461762.json, 图片生成/文生图/LongCat文生图ComfyUI工作流_1999382819262656513.json, 图片生成/文生图/longcat-image-generate_1998221329243471874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_521
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json、音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json、音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图_1999000295881461762.json、图片生成/文生图/LongCat文生图ComfyUI工作流_1999382819262656513.json、图片生成/文生图/longcat-image-generate_1998221329243471874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `MegaTTS3Run`
-- `SaveAudioMP3`
-- `VHS_LoadVideo`
+- `LongCatImageModelLoader`
+- `LongCatImageTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 2/3 个有
-- `SaveAudio` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `InversionDemoLazySwitch` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
 
 ## 典型参数
 

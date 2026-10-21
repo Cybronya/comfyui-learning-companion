@@ -3,49 +3,76 @@ name: text_to_image_video_lora_sampler_124
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.6798
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, RHHiddenNodes, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8658
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, GetNode, INTConstant, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, MuyeTextEditOutput, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json, 视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json, 视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json, 视频生成/文生视频/MiniMax H3 LTX Wan去AI感增强真实感视频处理工具_2102153536049082369.json, 视频生成/文生视频/MiniMax H3+LTX+Wan全家桶｜图生视频文生视频动作迁移三合一，去AI感增强真实感_2100439705560117249.json]
+members: [数字人/数字人/全行业广告制作加音频驱动加提示词生成器辅助扩写，数字人电商产品方案_2107226505611923457.json, 数字人/数字人/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2106927316462039041.json, 视频生成/图生视频/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2107981763464220673.json, 视频生成/图生视频/全行业广告制作｜提示词生成器辅助扩写图生视频_2092373596747419650.json, 视频生成/图生视频/提示词生成器辅助扩写｜全行业电商视频广告制作_2090833556611362817.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_124
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json、视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json、视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json、视频生成/文生视频/MiniMax H3 LTX Wan去AI感增强真实感视频处理工具_2102153536049082369.json、视频生成/文生视频/MiniMax H3+LTX+Wan全家桶｜图生视频文生视频动作迁移三合一，去AI感增强真实感_2100439705560117249.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/全行业广告制作加音频驱动加提示词生成器辅助扩写，数字人电商产品方案_2107226505611923457.json、数字人/数字人/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2106927316462039041.json、视频生成/图生视频/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2107981763464220673.json、视频生成/图生视频/全行业广告制作｜提示词生成器辅助扩写图生视频_2092373596747419650.json、视频生成/图生视频/提示词生成器辅助扩写｜全行业电商视频广告制作_2090833556611362817.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `EmptyLatentImage`
+- `GetNode`
+- `INTConstant`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RHHiddenNodes`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MultiTextConcatenate`
+- `MuyeTextEditOutput`
+- `RHLLMChatNode`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 4/5 个有
-- `GetNode` —— 3/5 个有
-- `MiniMaxH3Easy` —— 3/5 个有
-- `MiniMaxH3EasyMediaLoader` —— 3/5 个有
-- `ModelPreviewOverrideKJ` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `easy float` —— 3/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
+- `孤海注释` —— 4/5 个有
+- `ComfyMathExpression` —— 3/5 个有
+- `LTXVAudioVAEEncode` —— 3/5 个有
+- `LTXVConcatAVLatent` —— 3/5 个有
+- `LTXVSeparateAVLatent` —— 3/5 个有
+- `SetLatentNoiseMask` —— 3/5 个有
+- `SolidMask` —— 3/5 个有
+- `SoundFlow_GetLength` —— 3/5 个有
+- `MathExpression|pysssss` —— 2/5 个有
+- `VAEDecodeAudio` —— 2/5 个有
+- `easy int` —— 2/5 个有
+- `EasyCache` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `LoraLoaderBypassModelOnly` —— 1/5 个有
+- `ModelAttentionBackend` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `忽略多组孤海` —— 1/5 个有
 
 ## 典型参数
 

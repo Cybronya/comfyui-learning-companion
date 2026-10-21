@@ -2,64 +2,61 @@
 name: unknown_workflow_video_lora_sampler_562
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.78425
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyHunyuanLatentVideo, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, RH_LLMAPI_NODE, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+level: moderate
+coverage: 0.90125
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1949984328258379777.json, 视频生成/文生视频/1950202760701591554.json, 视频生成/文生视频/Worker T2V V1.1_1988451831963672577.json, 视频生成/文生视频/1953992275665801217.json]
+members: [视频生成/文生视频/1956922387473076226.json, 视频生成/文生视频/1957002960897236994.json, 视频生成/文生视频/StandIn人物一致性_2072999632508329984.json, 视频生成/文生视频/1956683255350005762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_562
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1949984328258379777.json、视频生成/文生视频/1950202760701591554.json、视频生成/文生视频/Worker T2V V1.1_1988451831963672577.json、视频生成/文生视频/1953992275665801217.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1956922387473076226.json、视频生成/文生视频/1957002960897236994.json、视频生成/文生视频/StandIn人物一致性_2072999632508329984.json、视频生成/文生视频/1956683255350005762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `EmptyHunyuanLatentVideo`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM V2`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `RH_LLMAPI_NODE`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/4 个有
-- `ImpactSwitch` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `FlashVSRNode` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `Primitive integer [Crystools]` —— 1/4 个有
+- `Int` —— 2/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `RH_Prompter` —— 1/4 个有
 - `RIFE VFI` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `TextBox` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 10 | 4 | 90% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | lcm | - | 4 | 50% |
-| 重绘幅度 | simple | - | 4 | 75% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,8 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 10，4 个样本，取值集中（一致性 90%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，4 个样本，一致性 50%
-- 重绘幅度 最常用 simple，4 个样本，一致性 75%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

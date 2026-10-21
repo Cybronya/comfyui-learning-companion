@@ -3,58 +3,61 @@ name: unknown_workflow_video_lora_sampler_785
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7955
-common_nodes: [CLIPVisionLoader, DrawViTPose, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.8335
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2003695576329953281.json, 视频生成/图生视频/2038176631273037826.json]
+members: [视频生成/图生视频/1981025809483829250.json, 视频生成/图生视频/1960662179517259778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_785
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2003695576329953281.json、视频生成/图生视频/2038176631273037826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981025809483829250.json、视频生成/图生视频/1960662179517259778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `INTConstant`
-- `ImageFromBatch`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddAudioEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorToMask` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageBlend V2` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `SDPoseOODLoader` —— 1/2 个有
-- `SDPoseOODProcessor` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `VHS_SplitImages` —— 1/2 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/2 个有
 
 ## 典型参数
 

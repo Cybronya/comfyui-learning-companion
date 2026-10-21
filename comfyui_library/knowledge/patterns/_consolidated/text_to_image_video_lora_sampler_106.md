@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_106
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.918857
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.883857
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, DF_Int_to_Float, EasyCache, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MinimaxH3参考生视频残影优化｜图生视频画质修复_2090455690967076865.json, 视频生成/图生视频/动漫转真人指定人物｜H3图生视频一键生成直出_2093465253832126465.json, 视频生成/图生视频/双图参考无音频｜Minimax H3图生视频一致性生成_2089443599820873730.json, 视频生成/图生视频/战斗特效图生视频｜MiniMax H3专用打斗镜头优化版_2089069191713353730.json, 视频生成/图生视频/战斗特效图生视频｜MiniMax H3战斗专用视频生成工作流_2088726129975840770.json, 视频生成/图生视频/残影优化｜MinimaxH3参考生视频画质修复直出_2090185681053245442.json, 视频生成/文生视频/Minimax H3文生视频残影优化｜文生视频画质修复_2090457027888898049.json]
+members: [视频生成/文生视频/AI Video Studio专用短剧生成工作流｜文生视频图生视频批量出片_2105516637515509762.json, 视频生成/文生视频/MiniMax H3开源版加速｜多图参考生视频快出成片_2107658518009565185.json, 视频生成/文生视频/MiniMax H3开源版多图参考生视频加速版工作流，文生视频图生视频方案_2107898153839190017.json, 视频生成/文生视频/MiniMax H3开源版多图参考｜加速版出片效率翻倍_2097172705530433537.json, 视频生成/文生视频/加速版MiniMax H3开源版多图参考生视频文生视频高效出片_2088382636501852162.json, 视频生成/文生视频/多图参考生视频加速版｜MiniMax H3 开源版 出片效率翻倍不等待_2105493183315660801.json, 视频生成/文生视频/开源版多图参考生视频加速版｜MiniMax H3文生视频处理图生视频_2088353942387388418.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_106
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3参考生视频残影优化｜图生视频画质修复_2090455690967076865.json、视频生成/图生视频/动漫转真人指定人物｜H3图生视频一键生成直出_2093465253832126465.json、视频生成/图生视频/双图参考无音频｜Minimax H3图生视频一致性生成_2089443599820873730.json、视频生成/图生视频/战斗特效图生视频｜MiniMax H3专用打斗镜头优化版_2089069191713353730.json、视频生成/图生视频/战斗特效图生视频｜MiniMax H3战斗专用视频生成工作流_2088726129975840770.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/AI Video Studio专用短剧生成工作流｜文生视频图生视频批量出片_2105516637515509762.json、视频生成/文生视频/MiniMax H3开源版加速｜多图参考生视频快出成片_2107658518009565185.json、视频生成/文生视频/MiniMax H3开源版多图参考生视频加速版工作流，文生视频图生视频方案_2107898153839190017.json、视频生成/文生视频/MiniMax H3开源版多图参考｜加速版出片效率翻倍_2097172705530433537.json、视频生成/文生视频/加速版MiniMax H3开源版多图参考生视频文生视频高效出片_2088382636501852162.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -28,14 +28,17 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `DF_Int_to_Float`
+- `EasyCache`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveFloat`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
@@ -46,29 +49,22 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 6/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
-- `CreateVideo` —— 5/7 个有
-- `H3ExactRecover` —— 5/7 个有
-- `H3InjectSchedule` —— 5/7 个有
-- `H3JerkHeatmap` —— 5/7 个有
-- `H3JerkOracle` —— 5/7 个有
-- `H3TimeSmear` —— 5/7 个有
-- `H3V2VInit` —— 5/7 个有
-- `Text Multiline` —— 5/7 个有
-- `VAEEncode` —— 5/7 个有
-- `ModelPreviewOverrideKJ` —— 4/7 个有
-- `ImageConcatMulti` —— 2/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `H3AudioRecover` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `MiniMaxH3ImageToVideo` —— 1/7 个有
-- `MiniMaxH3SigmaShift` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `PrimitiveFloat` —— 6/7 个有
+- `PrimitiveInt` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `LazySwitchKJ_UTK` —— 1/7 个有
+- `LoadAudio` —— 1/7 个有
+- `ResolutionSelector` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `TextConcatenate_UTK` —— 1/7 个有
+- `UpscaleModelLoader` —— 1/7 个有
+- `easy boolean` —— 1/7 个有
 
 ## 典型参数
 

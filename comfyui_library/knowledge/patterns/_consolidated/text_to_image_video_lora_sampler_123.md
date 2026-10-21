@@ -3,86 +3,48 @@ name: text_to_image_video_lora_sampler_123
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.6506
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), GetNode, HeartMuLa_Transcribe, ImpactSwitch, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PreviewImage, PrimitiveBoolean, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SoundFlow_GetLength, TTP_text_mix, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_AudioCrop, VRGDG_MiniMaxH3AudioDrive, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8754
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3三采数字人｜兼具质量速度场景特效图生视频_2089725152933277697.json, 视频生成/图生视频/兼具质量和速度的数字人｜场景特效图生视频生成_2094487993674461186.json, 视频生成/图生视频/质量与速度兼具的数字人｜口播视频高质量生成_2095938630001979394.json, 视频生成/图生视频/质量速度兼得的数字人｜图生视频场景特效一步到位_2096221676143992834.json, 视频生成/图生视频/速度质量双在线数字人｜场景类特效图生视频一键生成_2094711089618575362.json]
+members: [数字人/数字人/seedvr2超分工作流｜数字人视频提清｜低清素材秒变高清_2104833908113235969.json, 视频生成/图生视频/minimaxH3电影MV一键成片工作流｜图生视频直出大片质感_2099107946394378241.json, 视频生成/文生视频/MiniMax H3+LTX+Wan全家桶｜图生视频文生视频动作迁移三合一，去AI感增强真实感_2100439705560117249.json, 视频生成/文生视频/南风电影工作流｜文生图生视频生视频三模电影感大片生成_2092610385722564609.json, 视频生成/文生视频/去AI感增强真实感合集｜MiniMax H3与LTX、Wan全模式生视频_2103071760437571586.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_123
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3三采数字人｜兼具质量速度场景特效图生视频_2089725152933277697.json、视频生成/图生视频/兼具质量和速度的数字人｜场景特效图生视频生成_2094487993674461186.json、视频生成/图生视频/质量与速度兼具的数字人｜口播视频高质量生成_2095938630001979394.json、视频生成/图生视频/质量速度兼得的数字人｜图生视频场景特效一步到位_2096221676143992834.json、视频生成/图生视频/速度质量双在线数字人｜场景类特效图生视频一键生成_2094711089618575362.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/seedvr2超分工作流｜数字人视频提清｜低清素材秒变高清_2104833908113235969.json、视频生成/图生视频/minimaxH3电影MV一键成片工作流｜图生视频直出大片质感_2099107946394378241.json、视频生成/文生视频/MiniMax H3+LTX+Wan全家桶｜图生视频文生视频动作迁移三合一，去AI感增强真实感_2100439705560117249.json、视频生成/文生视频/南风电影工作流｜文生图生视频生视频三模电影感大片生成_2092610385722564609.json、视频生成/文生视频/去AI感增强真实感合集｜MiniMax H3与LTX、Wan全模式生视频_2103071760437571586.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `ExtendIntermediateSigmas`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `HeartMuLa_Transcribe`
-- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SoundFlow_GetLength`
-- `TTP_text_mix`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_AudioCrop`
-- `VRGDG_MiniMaxH3AudioDrive`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVConcatAVLatent` —— 4/5 个有
-- `LTXVSeparateAVLatent` —— 4/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/5 个有
-- `easy ab` —— 4/5 个有
-- `LoraLoaderBypassModelOnly` —— 2/5 个有
-- `MiniMaxH3SigmaShift` —— 2/5 个有
-- `ModelAttentionBackend` —— 2/5 个有
-- `ComfySwitchNode` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `MiniMaxH3BlockCacheT8` —— 1/5 个有
-- `PT_H3ConcatAVLatent` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `RunningHub Deepcleaner` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
-- `VAEEncodeAudio` —— 1/5 个有
+- `VHS_LoadVideo` —— 3/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `ImageScale` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `NanFengH3MultiReferenceGeneratorV10` —— 1/5 个有
+- `NanFengH3MultiReferenceGeneratorV81` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `SeedVR2BlockSwap` —— 1/5 个有
 
 ## 典型参数
 

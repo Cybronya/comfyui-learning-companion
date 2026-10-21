@@ -1,34 +1,49 @@
 ---
 name: unknown_workflow_generic_477
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.466667
-common_nodes: [RH_MinimaxHailuoH3TextToVideo, SaveVideo, easy showAnything]
+coverage: 0.88225
+common_nodes: [CR Text, CR Text Concatenate, FireRedTTS2_Dialogue, LoadAudio, MegaTTS3Run, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, String, WhisperSTT, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 文生视频（RH API 版）_2083829023389601793.json, 视频生成/文生视频/海螺H3(minimax H3)文生视频_2083372577329864705.json, 视频生成/文生视频/海螺Hailuo H3文生视频（RH版）_2083013266611204097.json]
+members: [音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1985310272321691649.json, 音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1987826683791257601.json, 音频生成/音频生成/声音克隆情绪音色MegaTTS3、Index TTS2、VibeVoice TTS、SparkTTS_2010681116528746497.json, 音频生成/音频生成/语音克隆大集合_1968191920210083842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_477
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 文生视频（RH API 版）_2083829023389601793.json、视频生成/文生视频/海螺H3(minimax H3)文生视频_2083372577329864705.json、视频生成/文生视频/海螺Hailuo H3文生视频（RH版）_2083013266611204097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1985310272321691649.json、音频生成/音频生成/四种语音克隆效果对比（一键出结果）_1987826683791257601.json、音频生成/音频生成/声音克隆情绪音色MegaTTS3、Index TTS2、VibeVoice TTS、SparkTTS_2010681116528746497.json、音频生成/音频生成/语音克隆大集合_1968191920210083842.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `CR Text Concatenate`
+- `FireRedTTS2_Dialogue`
+- `LoadAudio`
+- `MegaTTS3Run`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `String`
+- `WhisperSTT`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `IndexTTS2Run` —— 2/4 个有
+- `SaveAudioMP3` —— 2/4 个有
+- `VibeVoiceTTS` —— 2/4 个有
+- `easy indexTTSAudioMerge` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

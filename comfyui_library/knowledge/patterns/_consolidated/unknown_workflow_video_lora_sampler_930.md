@@ -3,72 +3,58 @@ name: unknown_workflow_video_lora_sampler_930
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9395
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageConcanate, JWInteger, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, PDIMAGE_LongerSize, PathchSageAttentionKJ, SavePNGZIP_and_Preview_RGBA_AnimatedWEBP, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [视频生成/文生视频/1974712309266427905.json, 视频生成/文生视频/1974722920842964994.json]
+coverage: 0.703
+common_nodes: [FantasyPortraitFaceDetector, FantasyPortraitModelLoader, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LandmarksToImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoVAELoader]
+problems: []
+missing: []
+members: [视频生成/文生视频/1958515950276526081.json, 视频生成/文生视频/Fantasy Portrait（文生视频）_2072999634521595904.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_930
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1974712309266427905.json、视频生成/文生视频/1974722920842964994.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1958515950276526081.json、视频生成/文生视频/Fantasy Portrait（文生视频）_2072999634521595904.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `ImageConcanate`
-- `JWInteger`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PDIMAGE_LongerSize`
-- `PathchSageAttentionKJ`
-- `SavePNGZIP_and_Preview_RGBA_AnimatedWEBP`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LandmarksToImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageCompositeMasked` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImageToMask` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `WanVideoAddFantasyPortrait`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | uni_pc | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

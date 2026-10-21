@@ -1,76 +1,84 @@
 ---
 name: text_to_image_sampler_clip_unet_20
 type: Text To Image
-frequency: 3
-level: strong
-coverage: 0.885
-common_nodes: [ApplyFBCacheOnModel, CLIPTextEncode, DF_Get_image_size, DualCLIPLoader, EmptyLatentImage, Flex2Conditioner, GroundingDinoModelLoader (segment anything2), ImageConcanate, ImageScaleToTotalPixels, JWImageResizeByLongerSide, KSampler, LoadImage, Note Plus (mtb), PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
-missing: [GroundingDinoModelLoader (segment anything2), Note Plus (mtb)]
-members: [图片生成/文生图/1916415071411703809.json, 图片生成/文生图/1916417413187829761.json, 图片生成/文生图/1916419825193648129.json]
+frequency: 13
+level: weak
+coverage: 0.815308
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/2021581695731900418.json, 图片生成/文生图/1.阿清的z-image工作流_2037804089450438658.json, 图片生成/文生图/1903742090277195777.json, 图片生成/文生图/1911034174755799042.json, 图片生成/文生图/5.Krea2 文生图_2083469098800996354.json, 图片生成/文生图/K2模特级生成_2089374387597307906.json, 图片生成/文生图/KREA2_LORA人像工作流_2078646318087630849.json, 图片生成/文生图/Krea-2_ 文生图_2095794360649601025.json, 图片生成/文生图/Krea-2文生图官方版｜高质量图像生成工作流_2095956990584512513.json, 图片生成/文生图/Krea-2文生图工作流｜写实质感出图效果稳定可靠_2107695970124386305.json, 图片生成/文生图/Krea2 Turbo极速文生图 API写实人像高质量生成_2099221894967947265.json, 图片生成/文生图/opsv-krea2_t2i_2074897972374097921.json, 图片生成/文生图/opsv-krea2_t2i_2086450223353778178.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_20
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1916415071411703809.json、图片生成/文生图/1916417413187829761.json、图片生成/文生图/1916419825193648129.json）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/2021581695731900418.json、图片生成/文生图/1.阿清的z-image工作流_2037804089450438658.json、图片生成/文生图/1903742090277195777.json、图片生成/文生图/1911034174755799042.json、图片生成/文生图/5.Krea2 文生图_2083469098800996354.json…）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：13
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ApplyFBCacheOnModel`
+全部 13 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Get_image_size`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Flex2Conditioner`
-- `GroundingDinoModelLoader (segment anything2)`
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
-- `JWImageResizeByLongerSide`
 - `KSampler`
-- `LoadImage`
-- `Note Plus (mtb)`
-- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AnyLineArtPreprocessor_aux` —— 1/3 个有
-- `DepthAnythingPreprocessor` —— 1/3 个有
-- `OpenposePreprocessor` —— 1/3 个有
+- `ConditioningZeroOut` —— 12/13 个有
+- `PreviewAny` —— 10/13 个有
+- `PrimitiveStringMultiline` —— 10/13 个有
+- `StringConcatenate` —— 10/13 个有
+- `TextGenerate` —— 10/13 个有
+- `ComfySwitchNode` —— 9/13 个有
+- `LoraLoaderModelOnly` —— 9/13 个有
+- `PrimitiveBoolean` —— 9/13 个有
+- `ResolutionSelector` —— 8/13 个有
+- `FaceDetailer` —— 3/13 个有
+- `JjkText` —— 3/13 个有
+- `RTXVideoSuperResolution` —— 3/13 个有
+- `SAMLoader` —— 3/13 个有
+- `UltralyticsDetectorProvider` —— 3/13 个有
+- `solarL_SaveImagesToZip` —— 3/13 个有
+- `孤海注释` —— 3/13 个有
+- `CR Prompt Text` —— 2/13 个有
+- `Int` —— 2/13 个有
+- `PlaySound|pysssss` —— 1/13 个有
+- `easy promptList` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 840 | 840 - 840 | 3 | 100% |
-| 高度 | 1256 | 1256 - 1256 | 3 | 100% |
-| 采样步数 | 30 | 30 - 30 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | deis | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | 2 - 25 | 13 | 11% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 13 | 23% |
+| 采样算法 | euler | - | 13 | 46% |
+| 调度器 | simple | - | 13 | 46% |
+| 重绘幅度 | 1 | 0.2 - 1 | 13 | 59% |
+| 宽度 | 1024 | 80 - 2048 | 13 | 28% |
+| 高度 | 1024 | 80 - 2048 | 13 | 39% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 17/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 840，观测区间 840 - 840，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1256，观测区间 1256 - 1256，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：GroundingDinoModelLoader (segment anything2)、Note Plus (mtb)
+- 采样步数 中位数 4，观测区间 2 - 25，13 个样本，取值分散，一致性仅 11%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，13 个样本，取值分散，一致性仅 23%
+- 采样算法 最常用 euler，13 个样本，一致性 46%
+- 调度器 最常用 simple，13 个样本，一致性 46%
+- 重绘幅度 中位数 1，观测区间 0.2 - 1，13 个样本
+- 宽度 中位数 1024，观测区间 80 - 2048，13 个样本，取值分散，一致性仅 28%
+- 高度 中位数 1024，观测区间 80 - 2048，13 个样本，取值分散，一致性仅 39%
+- 高发问题（17/13 个样本）：Steps较低可能导致细节不足

@@ -3,30 +3,35 @@ name: unknown_workflow_generic_847
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.55
-common_nodes: [PrimitiveStringMultiline, SaveAudioMP3, YuE2Generate, YuE2Loader]
+coverage: 0.606
+common_nodes: [Comfly_Googel_Veo3, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/SunoV5文生歌-描述生歌工作流_2094582451027931137.json, 音频生成/音频生成/SunoV5自定义歌词-歌词生歌工作流_2094584641507389442.json]
+members: [视频生成/图生视频/1944992490362691586.json, 视频生成/图生视频/1965819438404669441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_847
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SunoV5文生歌-描述生歌工作流_2094582451027931137.json、音频生成/音频生成/SunoV5自定义歌词-歌词生歌工作流_2094584641507389442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1944992490362691586.json、视频生成/图生视频/1965819438404669441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-- `YuE2Generate`
-- `YuE2Loader`
+- `Comfly_Googel_Veo3`
+- `LoadImage`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Comfly_kling_videoPreview` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_462
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.675
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.97225
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018215664321830914.json, 视频生成/图生视频/2054007288427499522.json, 视频生成/文生视频/全能视频X-编辑视频-官方稳定版+全节点注释_2061807221469704193.json]
+members: [音频生成/音频生成/Qwen3 TTS语音克隆V1_2014526902039486466.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2014714896633569282.json, 音频生成/音频生成/Qwen3+TTS+声音复刻_2014723999279878146.json, 音频生成/音频生成/通义qwen3 TTS语音克隆工作流_2015320768132947969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_462
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2018215664321830914.json、视频生成/图生视频/2054007288427499522.json、视频生成/文生视频/全能视频X-编辑视频-官方稳定版+全节点注释_2061807221469704193.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆V1_2014526902039486466.json、音频生成/音频生成/Qwen3 TTS语音克隆_2014714896633569282.json、音频生成/音频生成/Qwen3+TTS+声音复刻_2014723999279878146.json、音频生成/音频生成/通义qwen3 TTS语音克隆工作流_2015320768132947969.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `RH_Kling26_MotionControl` —— 2/3 个有
-- `RH_RhartVideoGOfficialEditVideo` —— 1/3 个有
+- `AudioSeparation` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `MuyeLoadImage` —— 1/4 个有
 
 ## 典型参数
 

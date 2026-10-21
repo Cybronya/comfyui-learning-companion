@@ -3,70 +3,66 @@ name: unknown_workflow_sampler_vae_19
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.743769
-common_nodes: [BasicGuider, BasicScheduler, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.817923
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
-missing: [CR Text, CR Text Concatenate, easy cleanGpuUsed, ImageCASharpening+, MathExpression|pysssss, easy textSwitch]
-members: [图片生成/文生图/1904904736871469057.json, 图片生成/文生图/1904906707053776898.json, 图片生成/文生图/1904907559919357954.json, 图片生成/文生图/1904908786933633026.json, 图片生成/文生图/1904909104412807170.json, 图片生成/文生图/1905565864324681729.json, 图片生成/文生图/1908181172109586433.json, 图片生成/文生图/1912944528943448065.json, 图片生成/文生图/1930841515361239042.json, 图片生成/文生图/1953735580985249793.json, 图片生成/文生图/1953815039516004354.json, 图片生成/文生图/1957731578933866497.json, 图片生成/文生图/1957999955816460290.json]
+missing: []
+members: [视频生成/图生视频/(二倍速！量化加速版)Minimax多参生视频_2084195676602331137.json, 视频生成/图生视频/(二倍速！量化加速版)Minimax多参生视频_2084745751497895937.json, 视频生成/图生视频/(量化加速版)Minimax多参生视频V1_2084238539549663234.json, 视频生成/图生视频/0812日Minimax H3 ref2va加速工作流_2087422773068128257.json, 视频生成/图生视频/1 minimax_h3_i2v_fastH3_raw_bigface_10s_2102562439794610177.json, 视频生成/图生视频/1图_multi_ref_minimax_h3_i2v_2094711687055241217.json, 视频生成/图生视频/2图_multi_ref_minimax_h3_i2v_2094710093471375361.json, 视频生成/图生视频/2张参考图_2110029532303552514.json, 视频生成/图生视频/3图_multi_ref_minimax_h3_i2v_2092499319101415426.json, 视频生成/图生视频/单图参考生视频 生产力版 MiniMax+H3+H25+Hybrid_2088526268315820034.json, 视频生成/图生视频/电商4图参考考生视频  minimax h3 加速版_2089612691093676034.json, 视频生成/图生视频/电商双图参考考生视频  minimax h3 加速版_2088445593055219714.json, 视频生成/图生视频/首尾帧参考生视频 无色差版 Minimax H3_2088976531933712385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/1904904736871469057.json、图片生成/文生图/1904906707053776898.json、图片生成/文生图/1904907559919357954.json、图片生成/文生图/1904908786933633026.json、图片生成/文生图/1904909104412807170.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/(二倍速！量化加速版)Minimax多参生视频_2084195676602331137.json、视频生成/图生视频/(二倍速！量化加速版)Minimax多参生视频_2084745751497895937.json、视频生成/图生视频/(量化加速版)Minimax多参生视频V1_2084238539549663234.json、视频生成/图生视频/0812日Minimax H3 ref2va加速工作流_2087422773068128257.json、视频生成/图生视频/1 minimax_h3_i2v_fastH3_raw_bigface_10s_2102562439794610177.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `EmptyLatentImage`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 12/13 个有
-- `DualCLIPLoader` —— 12/13 个有
-- `Anything Everywhere` —— 8/13 个有
-- `LoraLoaderModelOnly` —— 8/13 个有
-- `UNETLoader` —— 8/13 个有
-- `CR Text` —— 7/13 个有
-- `CR Text Concatenate` —— 7/13 个有
-- `RH_Prompter` —— 7/13 个有
-- `ShowText|pysssss` —— 7/13 个有
-- `TextInput_` —— 6/13 个有
-- `easy cleanGpuUsed` —— 6/13 个有
-- `EG_XZ_QH` —— 5/13 个有
-- `Int` —— 5/13 个有
-- `NunchakuFluxDiTLoader` —— 5/13 个有
-- `RH_Translator` —— 5/13 个有
-- `NunchakuFluxLoraLoader` —— 4/13 个有
-- `FluxResolutionNode` —— 2/13 个有
-- `ImageCASharpening+` —— 2/13 个有
-- `MathExpression|pysssss` —— 2/13 个有
-- `RHHiddenNodes` —— 2/13 个有
-- `CLIPLoader` —— 1/13 个有
-- `CLIPTextEncode` —— 1/13 个有
-- `Image Comparer (rgthree)` —— 1/13 个有
-- `LatentUpscaleBy` —— 1/13 个有
-- `ModelSamplingAuraFlow` —— 1/13 个有
-- `easy textSwitch` —— 1/13 个有
+- `LoadImage` —— 12/13 个有
+- `MiniMaxH3ReferenceToVideo` —— 11/13 个有
+- `CreateVideo` —— 9/13 个有
+- `PathchSageAttentionKJ` —— 9/13 个有
+- `SaveVideo` —— 9/13 个有
+- `UNETLoader` —— 9/13 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `MiniMaxH3SigmaShift` —— 6/13 个有
+- `MiniMaxH3HybridLoader` —— 4/13 个有
+- `VHS_VideoCombine` —— 4/13 个有
+- `PainterVRAM` —— 3/13 个有
+- `PreviewAny` —— 3/13 个有
+- `YK_LoadImageFromURL` —— 3/13 个有
+- `HAIGC_SaveImagesToZip` —— 2/13 个有
+- `MiniMaxH3ImageToVideo` —— 2/13 个有
+- `ModelAttentionBackend` —— 2/13 个有
+- `BlockSparseAttention` —— 1/13 个有
+- `H3AdaLNLoRAFix` —— 1/13 个有
+- `ImageResizeKJv2` —— 1/13 个有
+- `LoadImageFromUrl` —— 1/13 个有
+- `ModelPreviewOverrideKJ` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 768 | 512 - 1536 | 13 | 68% |
-| 高度 | 1024 | 768 - 1280 | 13 | 83% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,6 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1536，13 个样本
-- 高度 中位数 1024，观测区间 768 - 1280，13 个样本，取值集中（一致性 83%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、easy cleanGpuUsed、ImageCASharpening+、MathExpression|pysssss
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

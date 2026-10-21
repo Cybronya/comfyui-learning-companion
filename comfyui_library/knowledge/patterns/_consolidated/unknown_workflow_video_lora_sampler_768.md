@@ -3,47 +3,56 @@ name: unknown_workflow_video_lora_sampler_768
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9325
-common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.6275
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, FloatToSigmas, ImageResizeKJ, KSamplerSelect, LTXVConditioning, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVLoopingSampler, LTXVTiledVAEDecode, LoraLoaderModelOnly, MultiPromptProvider, PrimitiveInt, PrintSigmas, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, StringToFloatList, VAEEncode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1985890878952747009.json, 视频生成/图生视频/2067528007627141122.json]
+members: [视频生成/图生视频/1947704155776397313.json, 视频生成/图生视频/1947715360633040897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_768
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1985890878952747009.json、视频生成/图生视频/2067528007627141122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1947704155776397313.json、视频生成/图生视频/1947715360633040897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `LoadImage`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `FloatToSigmas`
+- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LTXVConditioning`
+- `LTXVLatentUpsampler`
+- `LTXVLatentUpsamplerModelLoader`
+- `LTXVLoopingSampler`
+- `LTXVTiledVAEDecode`
+- `LoraLoaderModelOnly`
+- `MultiPromptProvider`
+- `PrimitiveInt`
+- `PrintSigmas`
+- `RandomNoise`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
+- `StringToFloatList`
+- `VAEEncode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
 - `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数

@@ -3,33 +3,28 @@ name: unknown_workflow_generic_702
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadAudio, LoadVideo, SaveVideo]
+coverage: 0.5
+common_nodes: [8b66c757-fe2f-4184-91f3-479a19deb565, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/2041456018126807041.json, 音频生成/音频生成/HeyGem口播数字人_1940729868739047425.json]
+members: [comfyui-workflow-templates-json/audio_stable_audio_3_medium.json, comfyui-workflow-templates-json/audio_stable_audio_3_medium_base.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_702
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2041456018126807041.json、音频生成/音频生成/HeyGem口播数字人_1940729868739047425.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/audio_stable_audio_3_medium.json、comfyui-workflow-templates-json/audio_stable_audio_3_medium_base.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `LoadVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan27VideoExtend` —— 1/2 个有
-- `RH_HeyGemNode` —— 1/2 个有
+- `8b66c757-fe2f-4184-91f3-479a19deb565`
+- `SaveAudioAdvanced`
 
 ## 典型参数
 

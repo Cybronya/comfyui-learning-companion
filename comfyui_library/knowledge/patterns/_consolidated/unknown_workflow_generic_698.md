@@ -3,33 +3,34 @@ name: unknown_workflow_generic_698
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9585
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.857
+common_nodes: [LoadAudio, LoadImage, RecordAudio, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058897882304045058.json, 视频生成/图生视频/2039203508150341633.json]
+members: [comfyui-workflow-templates-json/api_sync_so_talking_image.json, comfyui-workflow-templates-json/api_wan_image_to_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_698
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2058897882304045058.json、视频生成/图生视频/2039203508150341633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_sync_so_talking_image.json、comfyui-workflow-templates-json/api_wan_image_to_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RecordAudio`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
-- `TextBoxMira` —— 1/2 个有
+- `SyncTalkingImageNode` —— 1/2 个有
+- `WanImageToVideoApi` —— 1/2 个有
 
 ## 典型参数
 

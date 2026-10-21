@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_889
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.678
-common_nodes: [Any To Any, Any To String (mtb), CR Prompt Text, CR Text, CR Text Concatenate, CreateCFGScheduleFloatList, Display Any (rgthree), DownloadAndLoadWav2VecModel, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, GODMT_SplitString, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, ImpactInt, Int, JjkText, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_GetAudioDuration, SDVM Image List Repeat, SaveAudio, SetNode, SimpleMath+, Text List, TextListSelelct, VHS_SelectImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WujiCleaner, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy showAnything, seed _O]
+coverage: 0.6795
+common_nodes: [BasicScheduler, CFGGuider, CS-LTXDirectorGuide, CS-LTXGridDirector, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, TTResolutionSelector, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017085757592182786.json, 视频生成/图生视频/2017275269727395842.json]
+members: [视频生成/图生视频/2068160315895934977.json, 视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_889
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2017085757592182786.json、视频生成/图生视频/2017275269727395842.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2068160315895934977.json、视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,57 +23,37 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any To Any`
-- `Any To String (mtb)`
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `DownloadAndLoadWav2VecModel`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `GODMT_SplitString`
-- `GetNode`
-- `INTConstant`
-- `ImageListToBatch+`
-- `ImageResizeKJv2`
-- `ImpactInt`
-- `Int`
-- `JjkText`
+- `BasicScheduler`
+- `CFGGuider`
+- `CS-LTXDirectorGuide`
+- `CS-LTXGridDirector`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `RH_GetAudioDuration`
-- `SDVM Image List Repeat`
-- `SaveAudio`
-- `SetNode`
-- `SimpleMath+`
-- `Text List`
-- `TextListSelelct`
-- `VHS_SelectImages`
+- `LoraLoaderModelOnly`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `TTResolutionSelector`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `WujiCleaner`
 - `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy lengthAnything`
-- `easy showAnything`
-- `seed _O`
+
+**可变部分**（部分 workflow 才有）：
+- `GetNode` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

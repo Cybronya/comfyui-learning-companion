@@ -1,39 +1,41 @@
 ---
 name: unknown_workflow_unet_vae_6
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.91
-common_nodes: [CLIPLoader, ComfyMiniMaxH3Director, CreateVideo, MiniMaxH3DirectorRefine, SaveVideo, UNETLoader, VAELoader]
+coverage: 0.685429
+common_nodes: [CLIPLoader, CreateVideo, PreviewAny, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Fast H3 4步极速版_2094688586812710914.json, 视频生成/文生视频/MiniMax H3 全能导演台_2091791862691618817.json, 视频生成/文生视频/MiniMax H3 全能导演台_2092150523830030338.json, 视频生成/文生视频/全能导演工作台_2092099189571407873.json]
+members: [视频生成/文生视频/ZDJ MINIMAXH3 导演台工作流_2102309224322781186.json, 视频生成/文生视频/minimax_h3_director_r2v_2084846314428391426.json, 视频生成/文生视频/minimax_h3_director_r2v_2098743527860690945.json, 视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084824519482634242.json, 视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084897567476895746.json, 视频生成/文生视频/全能参考MiniMax H3 导演台全能_2090450529842454530.json, 视频生成/文生视频/开源版MiniMax H3 导演台全能工作流加速优化_2085734107866296322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Fast H3 4步极速版_2094688586812710914.json、视频生成/文生视频/MiniMax H3 全能导演台_2091791862691618817.json、视频生成/文生视频/MiniMax H3 全能导演台_2092150523830030338.json、视频生成/文生视频/全能导演工作台_2092099189571407873.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/ZDJ MINIMAXH3 导演台工作流_2102309224322781186.json、视频生成/文生视频/minimax_h3_director_r2v_2084846314428391426.json、视频生成/文生视频/minimax_h3_director_r2v_2098743527860690945.json、视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084824519482634242.json、视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084897567476895746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMiniMaxH3Director`
 - `CreateVideo`
-- `MiniMaxH3DirectorRefine`
+- `PreviewAny`
 - `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
+- `MiniMaxH3Director` —— 6/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/7 个有
+- `LoadImage` —— 2/7 个有
+- `PathchSageAttentionKJ` —— 2/7 个有
+- `ComfyMiniMaxH3Director` —— 1/7 个有
 
 ## 典型参数
 

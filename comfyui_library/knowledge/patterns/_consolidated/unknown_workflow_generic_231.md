@@ -1,34 +1,33 @@
 ---
 name: unknown_workflow_generic_231
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, RH_Kling25_Image2Video, SaveVideo]
+common_nodes: [RH_BytedanceSeedance25TokenTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2033747494940712961.json, 视频生成/图生视频/2015989000204460034.json, 视频生成/图生视频/2041082785955319810.json, 视频生成/图生视频/1988180318677024770.json, 视频生成/图生视频/2039889505292914690.json]
+members: [视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json, 视频生成/文生视频/Seedance2.5文生视频_2085869860671807489.json, 视频生成/文生视频/Seedance2.5文生视频_2086086227874377729.json, 视频生成/文生视频/Seedance2.5文生视频_2095858068381851649.json, 视频生成/文生视频/Seedance2.5文生视频运镜版｜镜头语言丰富有电影感｜其它视频处理友好_2102298146926850050.json, 视频生成/文生视频/Seedance2.5文生视频｜视频运镜控制自如_2097929543557406721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_231
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2033747494940712961.json、视频生成/图生视频/2015989000204460034.json、视频生成/图生视频/2041082785955319810.json、视频生成/图生视频/1988180318677024770.json、视频生成/图生视频/2039889505292914690.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json、视频生成/文生视频/Seedance2.5文生视频_2085869860671807489.json、视频生成/文生视频/Seedance2.5文生视频_2086086227874377729.json、视频生成/文生视频/Seedance2.5文生视频_2095858068381851649.json、视频生成/文生视频/Seedance2.5文生视频运镜版｜镜头语言丰富有电影感｜其它视频处理友好_2102298146926850050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_Kling25_Image2Video`
+全部 6 个 workflow 都包含：
+- `RH_BytedanceSeedance25TokenTextToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetRandomIntegerInRange` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 

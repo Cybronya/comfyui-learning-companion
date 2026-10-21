@@ -3,68 +3,50 @@ name: unknown_workflow_video_lora_sampler_505
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.41325
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageRemBg]
+coverage: 0.4255
+common_nodes: [BasicScheduler, ConditioningZeroOut, CreateVideo, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, SelfLiftH3Sampler, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail2动作迁移_for循环（一键模仿）_2089320207121731586.json, 视频生成/图生视频/Scail2多参工作流_2090458654913941506.json, 视频生成/图生视频/Scail2多参工作流_2093511775273705474.json, 视频生成/图生视频/2065014891525795842.json]
+members: [视频生成/图生视频/Minimax_H3_全能参考极简多合一工作流_2104379722665906177.json, 视频生成/图生视频/Minimax_H3_全能参考极简多合一工作流_2104843640160997377.json, 视频生成/图生视频/minimax_h3_极简画布满血版多参工作流_2109822757625225218.json, 视频生成/图生视频/minimax_h3_极简画布满血版多参工作流_2110560690405732354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_505
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Scail2动作迁移_for循环（一键模仿）_2089320207121731586.json、视频生成/图生视频/Scail2多参工作流_2090458654913941506.json、视频生成/图生视频/Scail2多参工作流_2093511775273705474.json、视频生成/图生视频/2065014891525795842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax_H3_全能参考极简多合一工作流_2104379722665906177.json、视频生成/图生视频/Minimax_H3_全能参考极简多合一工作流_2104843640160997377.json、视频生成/图生视频/minimax_h3_极简画布满血版多参工作流_2109822757625225218.json、视频生成/图生视频/minimax_h3_极简画布满血版多参工作流_2110560690405732354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `GetImageRangeFromBatch`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `FeiHouEasyH3RH`
+- `FeiHouEasyH3RHLoader`
+- `FeiHouEasyH3RHOutput`
+- `GetNode`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `SelfLiftH3Sampler`
+- `SetNode`
 - `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `PrimitiveInt` —— 3/4 个有
-- `SingleBooleanTrigger` —— 3/4 个有
-- `ComfySwitchNode` —— 2/4 个有
-- `Float` —— 2/4 个有
-- `ImageBatchMultiple+` —— 2/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `ResolutionSelector` —— 2/4 个有
 
 ## 典型参数
 

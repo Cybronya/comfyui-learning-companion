@@ -1,61 +1,80 @@
 ---
 name: unknown_workflow_video_sampler_unet_50
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.77
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.889143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Video Duration Calculator, easy MiniMaxH3ReferenceToVideoBridge, easy imageCount, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/单图-MiniMaxH3-图生视频-BV2-模板_2090031132980109314.json, 视频生成/图生视频/（3图）MINIMAX短剧_2111253911762989057.json, 视频生成/图生视频/（自用）全能参考一站式短剧创作工作流 minimax h3多模态加速_2086378261021548546.json, 视频生成/文生视频/H3-文生视频（16：9）_2085696662042931202.json, 视频生成/文生视频/MINIMAX-H3 全能参考生成视频｜文生｜图生｜首尾帧｜尾帧｜首帧_2085961446109831169.json, 视频生成/文生视频/MiniMax+H3！加速版！提速480%！全能参考！_2085641752681213953.json]
+members: [视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2101623619452489730.json, 视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2104536932100435969.json, 视频生成/图生视频/开源版MinimaxH3视频编辑去除人物去除物品去除元素_2086518899704680449.json, 视频生成/图生视频/开源版MinimaxH3视频编辑视频参考编辑人物替换人物替换物品替换元素等_2086528754960125953.json, 视频生成/视频生视频/MinimaxH3去水印字幕图标+人物替换V1_2087705335275540481.json, 视频生成/视频生视频/MinimaxH3视频参考编辑人物替换T1_2086361427148886017.json, 视频生成/视频生视频/MinimaxH3视频编辑V1去除背景中的人物_2085963862112817154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_50
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/单图-MiniMaxH3-图生视频-BV2-模板_2090031132980109314.json、视频生成/图生视频/（3图）MINIMAX短剧_2111253911762989057.json、视频生成/图生视频/（自用）全能参考一站式短剧创作工作流 minimax h3多模态加速_2086378261021548546.json、视频生成/文生视频/H3-文生视频（16：9）_2085696662042931202.json、视频生成/文生视频/MINIMAX-H3 全能参考生成视频｜文生｜图生｜首尾帧｜尾帧｜首帧_2085961446109831169.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2101623619452489730.json、视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2104536932100435969.json、视频生成/图生视频/开源版MinimaxH3视频编辑去除人物去除物品去除元素_2086518899704680449.json、视频生成/图生视频/开源版MinimaxH3视频编辑视频参考编辑人物替换人物替换物品替换元素等_2086528754960125953.json、视频生成/视频生视频/MinimaxH3去水印字幕图标+人物替换V1_2087705335275540481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+- `Float to Int`
+- `GetVideoComponents`
+- `ImageConcatenate_UTK`
+- `ImageFromBatch`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadVideo`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
 - `PrimitiveFloat`
+- `RHHiddenNodes`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `Text`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `Video Duration Calculator`
+- `easy MiniMaxH3ReferenceToVideoBridge`
+- `easy imageCount`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `ResolutionSelector` —— 5/6 个有
-- `LoadAudio` —— 4/6 个有
-- `LoraLoaderBypassModelOnly` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `1hew_AnySwitchBool` —— 1/6 个有
-- `AudioCrop` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `JjkConcat` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `UniBlockSwap` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `VRAMReserver` —— 1/6 个有
+- `ExtractStoryboards_xuhuan1024` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `InspyrenetRembg` —— 4/7 个有
+- `easy indexAnything` —— 4/7 个有
+- `CR Image Grid Panel` —— 2/7 个有
+- `EmptyImage` —— 1/7 个有
+- `FlashVSR_SM_KSampler` —— 1/7 个有
+- `FlashVSR_SM_Model` —— 1/7 个有
+- `JWInteger` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4.24096e+08 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | randomize | - | 1 | 100% |
+| 采样算法 | 2 | - | 1 | 100% |
+| 调度器 | 3.5 | - | 1 | 100% |
+| 重绘幅度 | 11 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -63,4 +82,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 风险：采样步数 观测到 4.24096e+08，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

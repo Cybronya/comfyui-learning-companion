@@ -3,45 +3,35 @@ name: unknown_workflow_generic_741
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.68
-common_nodes: [DF_Text_Box, Fast Groups Muter (rgthree), LoadAudio, LoadImage, PreviewAny, PrimitiveBoolean, RH_LLMAPI_NODE, RH_Translator, SaveVideo, ShowText|pysssss, TextCombinerTwo, VHS_LoadVideoFFmpeg, WhisperSTT, easy ifElse, easy showAnything]
+coverage: 0.6905
+common_nodes: [LoadImage, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/1991792893413388289.json, 视频生成/图生视频/2000383536815370241.json]
+members: [图片生成/图生图/2106001411757666306.json, 图片生成/图生图/2106003062849630209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_741
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1991792893413388289.json、视频生成/图生视频/2000383536815370241.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2106001411757666306.json、图片生成/图生图/2106003062849630209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DF_Text_Box`
-- `Fast Groups Muter (rgthree)`
-- `LoadAudio`
 - `LoadImage`
 - `PreviewAny`
-- `PrimitiveBoolean`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `TextCombinerTwo`
-- `VHS_LoadVideoFFmpeg`
-- `WhisperSTT`
-- `easy ifElse`
-- `easy showAnything`
+- `PrimitiveStringMultiline`
+- `RHLLMChatNode`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_I2V` —— 1/2 个有
-- `RH_Sora2_I2V_Batch` —— 1/2 个有
+- `ResizeLongestToNode` —— 1/2 个有
 
 ## 典型参数
 

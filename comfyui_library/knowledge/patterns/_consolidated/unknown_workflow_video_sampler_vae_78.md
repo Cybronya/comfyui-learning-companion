@@ -3,60 +3,66 @@ name: unknown_workflow_video_sampler_vae_78
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.939286
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.533286
+common_nodes: [EmptyImage, GetImageSize, GetNode, ImageComposite+, ImageResizeKJv2, InspyrenetRembg, LoadImage, LoadWanVideoT5TextEncoder, MaskGenerator, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2044939873613783041.json, 视频生成/图生视频/2044647085147951105.json, 视频生成/图生视频/2073622937676115969.json, 视频生成/图生视频/2029363209500626945.json, 视频生成/图生视频/2051497728395489282.json, 视频生成/文生视频/图生视频 数字人 InfiniteTalk 多人对口型 动作模仿_2044640516272295938.json, 音频生成/音频生成/标准版图生单多人讲话工作流_2030914032869318658.json]
+members: [视频生成/图生视频/1926613325860474881.json, 视频生成/图生视频/1927603815992954882.json, 视频生成/图生视频/1928492165083639810.json, 视频生成/图生视频/1928759873897664514.json, 视频生成/图生视频/1928782340749737985.json, 视频生成/图生视频/1928806775427076098.json, 视频生成/图生视频/1928820592806412290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_78
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2044939873613783041.json、视频生成/图生视频/2044647085147951105.json、视频生成/图生视频/2073622937676115969.json、视频生成/图生视频/2029363209500626945.json、视频生成/图生视频/2051497728395489282.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1926613325860474881.json、视频生成/图生视频/1927603815992954882.json、视频生成/图生视频/1928492165083639810.json、视频生成/图生视频/1928759873897664514.json、视频生成/图生视频/1928782340749737985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `EmptyImage`
+- `GetImageSize`
+- `GetNode`
+- `ImageComposite+`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `MaskGenerator`
 - `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 6/7 个有
-- `WanVideoLoraSelectMulti` —— 6/7 个有
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `LayerMask: MaskPreview` —— 5/7 个有
-- `SeparateMasks` —— 5/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `SaveAudio` —— 1/7 个有
+- `INTConstant` —— 6/7 个有
+- `LoadAudio` —— 6/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `ImageBatchMulti` —— 1/7 个有
+- `ImageFromBatch` —— 1/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `IntMathOperation` —— 1/7 个有
+- `LayerColor: ColorAdapter` —— 1/7 个有
+- `MaskBatchMulti` —— 1/7 个有
 - `WanVideoLoraSelect` —— 1/7 个有
-- `WanVideoSetBlockSwap` —— 1/7 个有
-- `WanVideoSetLoRAs` —— 1/7 个有
-- `easy int` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,35 +1,46 @@
 ---
 name: unknown_workflow_generic_280
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.78025
-common_nodes: [ByteDanceSeedreamNodeV3, SaveImageAdvanced]
+coverage: 0.857
+common_nodes: [Any Switch (rgthree), AudioSeparation, CR Prompt Text, Fast Groups Bypasser (rgthree), Float, GetVideoComponents, LoadAudio, LoadVideo, NormalizeAudioLoudness, RH_HeyGemNode, SaveAudioMP3, SaveVideo, SoundFlow_TrimAudio, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, WujiCleaner, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json]
+members: [数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_280
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ByteDanceSeedreamNodeV3`
-- `SaveImageAdvanced`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `Painter` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AudioSeparation`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetVideoComponents`
+- `LoadAudio`
+- `LoadVideo`
+- `NormalizeAudioLoudness`
+- `RH_HeyGemNode`
+- `SaveAudioMP3`
+- `SaveVideo`
+- `SoundFlow_TrimAudio`
+- `T8_IndexTTS25_EmotionControl`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
+- `WujiCleaner`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

@@ -1,61 +1,62 @@
 ---
 name: unknown_workflow_sampler_unet_vae_121
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.779667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.821857
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json, 视频生成/文生视频/A-5 MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2084649315783503873.json, 视频生成/文生视频/API专用--MiniMax H3 多参生视频--基础工作流_2084516866738974722.json, 视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json, 视频生成/文生视频/MINIMAX-H3-多参考生视频_2084144392893452289.json, 视频生成/文生视频/minimax_h3 多参考图+视频参考+sage加速_2089945454745313281.json]
+members: [视频生成/文生视频/MiniMax_H3口型同步_2086253656294383617.json, 视频生成/文生视频/MinimaxH3数字人 音频驱动单人版_2095684640324538370.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2087735816637468673.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2090009910481342465.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-单图版_2090380497007501314.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-双图版_2090485095252709377.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-多图版_2090405026232619010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_121
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json、视频生成/文生视频/A-5 MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2084649315783503873.json、视频生成/文生视频/API专用--MiniMax H3 多参生视频--基础工作流_2084516866738974722.json、视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json、视频生成/文生视频/MINIMAX-H3-多参考生视频_2084144392893452289.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3口型同步_2086253656294383617.json、视频生成/文生视频/MinimaxH3数字人 音频驱动单人版_2095684640324538370.json、视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2087735816637468673.json、视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2090009910481342465.json、视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-单图版_2090380497007501314.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `SaveVideo` —— 5/6 个有
-- `VHS_LoadVideo` —— 5/6 个有
-- `PathchSageAttentionKJ` —— 3/6 个有
-- `MiniMaxH3ImageToVideo` —— 2/6 个有
-- `VHS_VideoCombine` —— 2/6 个有
-- `VideoInfoLoaded` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `EmptyImage` —— 1/6 个有
-- `Getter` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `MiniMaxH3AVDecodeT8` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Setter` —— 1/6 个有
+- `AudioCrop` —— 6/7 个有
+- `SoundFlow_GetLength` —— 6/7 个有
+- `VHS_VideoCombine` —— 6/7 个有
+- `PreviewAudio` —— 5/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `AudioConcat` —— 2/7 个有
+- `EmptyAudio` —— 2/7 个有
+- `CreateVideo` —— 1/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `GetAudioDurationFromAudio` —— 1/7 个有
+- `SDVN Any Show` —— 1/7 个有
+- `SaveVideo` —— 1/7 个有
 
 ## 典型参数
 

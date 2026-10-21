@@ -3,45 +3,36 @@ name: unknown_workflow_generic_353
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.65975
-common_nodes: [GetNode, Label (rgthree), LoadAudio, PrimitiveString, PrimitiveStringMultiline, SaveAudio, SetNode, StringConcatenate, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSGenerateSimple]
+coverage: 0.557
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Final-indexTTS2  短剧2人(旁白+台词)对话_2057670896361500674.json, 音频生成/音频生成/Final-indexTTS2 支持多人 10人对话_2052690741419356162.json, 音频生成/音频生成/indexTTS2 最强语音克隆支持多人 10人对话_1991505712654270465.json, 音频生成/音频生成/indexTTS2 最强语音克隆支持多人 10人对话_2088069492038524929.json]
+members: [图片生成/图生图/2093609074754674690.json, 图片生成/图生图/2093635908238139394.json, 图片生成/文生图/Image2  最强图像处理 全能图片 文生图 + 图像编辑 官方稳定版，多种参数可选_2047892224679092226.json, 图片生成/文生图/Image2 全能图2 全家桶 文生图 + 图生图 官方稳定版，多种参数可选_2047887102410493954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_353
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Final-indexTTS2  短剧2人(旁白+台词)对话_2057670896361500674.json、音频生成/音频生成/Final-indexTTS2 支持多人 10人对话_2052690741419356162.json、音频生成/音频生成/indexTTS2 最强语音克隆支持多人 10人对话_1991505712654270465.json、音频生成/音频生成/indexTTS2 最强语音克隆支持多人 10人对话_2088069492038524929.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2093609074754674690.json、图片生成/图生图/2093635908238139394.json、图片生成/文生图/Image2  最强图像处理 全能图片 文生图 + 图像编辑 官方稳定版，多种参数可选_2047892224679092226.json、图片生成/文生图/Image2 全能图2 全家桶 文生图 + 图生图 官方稳定版，多种参数可选_2047887102410493954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetNode`
-- `Label (rgthree)`
-- `LoadAudio`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SetNode`
-- `StringConcatenate`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSAudioMerge`
-- `easy indexTTSGenerateSimple`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `easy indexTTSEmotionAudio` —— 2/4 个有
-- `easy indexTTSEmotionMerge` —— 2/4 个有
-- `easy indexTTSEmotionVector` —— 2/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 3/4 个有
+- `JjkText` —— 2/4 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 2/4 个有
+- `RH_RhartImageG2ImageToImage` —— 1/4 个有
 
 ## 典型参数
 

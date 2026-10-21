@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_319
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.82825
-common_nodes: [LoadImage, LoadVideo, PreviewAny, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 1
+common_nodes: [CR Prompt Text, LoadAudio, NormalizeAudioLoudness, SaveAudioMP3, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034094211007516673.json, 视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0_2037730885918793729.json, 视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json]
+members: [音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_319
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2034094211007516673.json、视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0_2037730885918793729.json、视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json、音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `PreviewAny`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `SaveAudioMP3`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `JjkText` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
+- `Float` —— 3/5 个有
+- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
+- `T8_IndexTTS25_SamplingConfig` —— 1/5 个有
 
 ## 典型参数
 

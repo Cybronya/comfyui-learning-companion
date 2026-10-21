@@ -2,70 +2,69 @@
 name: unknown_workflow_sampler_clip_vae
 type: Unknown Workflow
 frequency: 15
-level: weak
-coverage: 0.9738
-common_nodes: [CLIPTextEncode, CreateVideo, KSamplerAdvanced, LoadImage, ModelSamplingSD3, SaveVideo, VAEDecode, VAELoader, WanImageToVideo]
-problems: []
-missing: []
-members: [视频生成/图生视频/1951683752307142657.json, 视频生成/图生视频/1967787388695097345.json, 视频生成/图生视频/1967772488862150657.json, 视频生成/图生视频/1994764866990878721.json, 视频生成/图生视频/1950181163430273026.json, 视频生成/图生视频/2053650114769637377.json, 视频生成/图生视频/2054459129242103809.json, 视频生成/图生视频/2046114491431133185.json, 视频生成/图生视频/2066869280796405762.json, 视频生成/图生视频/1984131896915492865.json, 视频生成/图生视频/1973739180855529474.json, 视频生成/图生视频/1950374828178104322.json, 视频生成/文生视频/Wan2.2 AI视频生成加速工作流_1954053840410857473.json, 视频生成/文生视频/wan2.2+GGUF+light4步加速lora图生视频工作流_1995845028314505218.json, 视频生成/文生视频/1950558909717204993.json]
+level: moderate
+coverage: 0.9328
+common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: [easy hiresFix]
+members: [图片生成/文生图/06.Z-Image-T-Lora文生图-NF_1996576652488491010.json, 图片生成/文生图/1953057914565103617.json, 图片生成/文生图/1953059659532988418.json, 图片生成/文生图/1953087441538322434.json, 图片生成/文生图/1953143788371906562.json, 图片生成/文生图/1953252280764141569.json, 图片生成/文生图/1953287044091023361.json, 图片生成/文生图/1953691322731429889.json, 图片生成/文生图/1953699331356459009.json, 图片生成/文生图/1953710081516994562.json, 图片生成/文生图/1954172979645181954.json, 图片生成/文生图/56.tonnie-zimage文生图_1993951157917777921.json, 图片生成/文生图/Z Image 小强模型极速出图_1993947409080401922.json, 图片生成/文生图/Z-Image 文生图_2016054204908965889.json, 图片生成/文生图/Z-Image 最强文生图，30秒出图，超高性价比_2011687215461572609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/1951683752307142657.json、视频生成/图生视频/1967787388695097345.json、视频生成/图生视频/1967772488862150657.json、视频生成/图生视频/1994764866990878721.json、视频生成/图生视频/1950181163430273026.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/06.Z-Image-T-Lora文生图-NF_1996576652488491010.json、图片生成/文生图/1953057914565103617.json、图片生成/文生图/1953059659532988418.json、图片生成/文生图/1953087441538322434.json、图片生成/文生图/1953143788371906562.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CreateVideo`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `VAEDecode`
 - `VAELoader`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
 - `CLIPLoader` —— 14/15 个有
-- `LoraLoaderModelOnly` —— 13/15 个有
 - `UNETLoader` —— 13/15 个有
 - `PathchSageAttentionKJ` —— 7/15 个有
-- `CFGZeroStar` —— 4/15 个有
-- `UnetLoaderGGUF` —— 4/15 个有
-- `CLIPLoaderGGUF` —— 1/15 个有
-- `ImageResizeKJv2` —— 1/15 个有
-- `LG_LoadImage` —— 1/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
-- `VHS_VideoCombine` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
+- `Text` —— 4/15 个有
+- `ConditioningZeroOut` —— 3/15 个有
+- `PreviewImage` —— 3/15 个有
+- `UnetLoaderGGUF` —— 2/15 个有
+- `ClipLoaderGGUF` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `Lora Loader Stack (rgthree)` —— 1/15 个有
+- `easy hiresFix` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 15 | 60% |
-| Prompt 约束强度(CFG) | 8 | 4 - 20 | 15 | 43% |
-| 采样算法 | 3.5 | 1 - 3.5 | 15 | 51% |
-| 调度器 | euler | - | 15 | 100% |
-| 重绘幅度 | simple | - | 15 | 100% |
+| 采样步数 | 20 | 9 - 20 | 15 | 69% |
+| Prompt 约束强度(CFG) | 2 | 1 - 4 | 15 | 46% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 93% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，15 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 20，15 个样本，取值分散，一致性仅 43%
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，15 个样本
-- 调度器 最常用 euler，15 个样本，一致性 100%
-- 重绘幅度 最常用 simple，15 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 20，观测区间 9 - 20，15 个样本
+- Prompt 约束强度(CFG) 中位数 2，观测区间 1 - 4，15 个样本，取值分散，一致性仅 46%
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 93%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：easy hiresFix

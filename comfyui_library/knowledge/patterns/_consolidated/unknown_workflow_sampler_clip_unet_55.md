@@ -1,73 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_55
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.943
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
-problems: []
-missing: [MathExpression|pysssss, easy cleanGpuUsed]
-members: [图片生成/文生图/1950957566572568577.json, 图片生成/文生图/1957777125837303810.json, 视频生成/图生视频/1950898146819899393.json, 视频生成/图生视频/1956152665396969474.json, 视频生成/文生视频/Wan2.2文生视频_2020007175808094210.json]
+frequency: 10
+level: strong
+coverage: 0.9147
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/Z-image单一模型多场景对比测试_2064696364189184002.json, 图片生成/文生图/Z_image文生图极速版_2064941900221734914.json, 图片生成/文生图/chris_export_image_z_image_turbo_02_2004521005383118850.json, 图片生成/文生图/chris_export_image_z_image_turbo_2002908032482852866.json, 图片生成/文生图/danotebook-z-image-turbo_2062428549738487809.json, 图片生成/文生图/image_z_image_turbo_2058123503169269762.json, 图片生成/文生图/z-image-turbo文生图_2081602813930594305.json, 图片生成/文生图/z-image-turbo文生图工作流_1997643407344513025.json, 图片生成/文生图/z_image_turbo文生图_2067946808487276545.json, 图片生成/文生图/z_image_turbo文生图透明_2067952553903611905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_55
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1950957566572568577.json、图片生成/文生图/1957777125837303810.json、视频生成/图生视频/1950898146819899393.json、视频生成/图生视频/1956152665396969474.json、视频生成/文生视频/Wan2.2文生视频_2020007175808094210.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-image单一模型多场景对比测试_2064696364189184002.json、图片生成/文生图/Z_image文生图极速版_2064941900221734914.json、图片生成/文生图/chris_export_image_z_image_turbo_02_2004521005383118850.json、图片生成/文生图/chris_export_image_z_image_turbo_2002908032482852866.json、图片生成/文生图/danotebook-z-image-turbo_2062428549738487809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 4/5 个有
-- `EmptyHunyuanLatentVideo` —— 4/5 个有
-- `SaveVideo` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `ModelPatchTorchSettings` —— 2/5 个有
-- `INTConstant` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `UnetLoaderGGUF` —— 1/5 个有
-- `VHS_VideoCombine` —— 1/5 个有
-- `WanFunInpaintToVideo` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `BiRefNetRMBG` —— 1/10 个有
+- `DF_Text` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `忽略多组孤海` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 20 | 6 - 20 | 5 | 60% |
-| 采样算法 | 3.5 | 1 - 3.5 | 5 | 51% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 80% |
+| 采样步数 | 8.5 | 4 - 9 | 10 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | res_multistep | - | 10 | 90% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 17/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 6 - 20，5 个样本
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，5 个样本
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 80%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、easy cleanGpuUsed
+- 采样步数 中位数 8.5，观测区间 4 - 9，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，10 个样本，一致性 90%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（17/10 个样本）：Steps较低可能导致细节不足

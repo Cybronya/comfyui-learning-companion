@@ -3,64 +3,55 @@ name: unknown_workflow_video_sampler_vae_99
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.941
-common_nodes: [AudioCrop, BasicScheduler, CFGGuider, CreateVideo, DiffusionModelLoaderKJ, Fast Groups Bypasser (rgthree), KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, Label (rgthree), LiconMSR, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SaveVideo, TTResolutionSelector, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, YusuLTXDirector, YusuLTXDirectorCropGuides, YusuLTXDirectorGuide]
+coverage: 0.9204
+common_nodes: [ImageResizeKJ, Int, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2069237416640208897.json, 视频生成/图生视频/2070050397007470594.json, 视频生成/文生视频/LTX2.3全新导演台2.0！支持多参、支持多种组合！_2074497295885881345.json, 视频生成/文生视频/LTX2.5导演台工作流_2087511201000546306.json, 视频生成/文生视频/LTX全新导演台工作流！支持多参、支持多种组合！（去字幕节点）_2073026519034851329.json]
+members: [视频生成/图生视频/1939674359478788097.json, 视频生成/图生视频/1939674066548920322.json, 视频生成/图生视频/1942491226299904002.json, 视频生成/图生视频/1942491188651831298.json, 视频生成/图生视频/1944595309169397761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_99
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2069237416640208897.json、视频生成/图生视频/2070050397007470594.json、视频生成/文生视频/LTX2.3全新导演台2.0！支持多参、支持多种组合！_2074497295885881345.json、视频生成/文生视频/LTX2.5导演台工作流_2087511201000546306.json、视频生成/文生视频/LTX全新导演台工作流！支持多参、支持多种组合！（去字幕节点）_2073026519034851329.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1939674359478788097.json、视频生成/图生视频/1939674066548920322.json、视频生成/图生视频/1942491226299904002.json、视频生成/图生视频/1942491188651831298.json、视频生成/图生视频/1944595309169397761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioCrop`
-- `BasicScheduler`
-- `CFGGuider`
-- `CreateVideo`
-- `DiffusionModelLoaderKJ`
-- `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `Label (rgthree)`
-- `LiconMSR`
-- `LoadAudio`
+- `ImageResizeKJ`
+- `Int`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `TTResolutionSelector`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `YusuLTXDirector`
-- `YusuLTXDirectorCropGuides`
-- `YusuLTXDirectorGuide`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `DualCLIPLoader` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `ModelPreviewOverrideKJ` —— 4/5 个有
-- `孤海注释` —— 3/5 个有
-- `CLIPLoader` —— 1/5 个有
-- `CLIPTextEncode` —— 1/5 个有
-- `LTX2_NAG` —— 1/5 个有
+- `CR Text` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `WanVideoLoraSelect` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `RH_Translator` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `ImageUpscaleWithModel` —— 2/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `UpscaleModelLoader` —— 2/5 个有
 
 ## 典型参数
 

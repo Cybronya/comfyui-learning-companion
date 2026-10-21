@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_unet_vae_15
 type: Unknown Workflow
 frequency: 19
 level: moderate
-coverage: 0.823316
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.854842
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json, 数字人/数字人/7度工作流改版1_2098964914600763393.json, 数字人/数字人/H3数字人_2092831814367924225.json, 数字人/数字人/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089709883632476162.json, 视频生成/图生视频/H3+音频驱动&图片跳舞！加速版_2099306860540162050.json, 视频生成/图生视频/MiniMax H3 长视频  音频驱动（数字人）唱歌30s_1分钟 切换_2099343389337673730.json, 视频生成/图生视频/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089304839850381314.json, 视频生成/图生视频/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089316746447638530.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2087489674502828034.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2087515631137681409.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2094741369498722306.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2094766113983913985.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2099456748556996609.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2099471044871548930.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2110317481368838145.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2110323066374025217.json, 视频生成/图生视频/MiniMaxH3 音频驱动&图片跳舞！加速版！B站艾橘溪_2087001018646220802.json, 视频生成/图生视频/MiniMaxH3数字人_音频驱动&图片跳舞！效果炸裂！_2087444061333581825.json, 视频生成/图生视频/音频驱动图片跳舞加速版｜MiniMax H3_2090000101321302017.json]
+members: [视频生成/图生视频/MiniMaxH3+ EasyCache提速_2084489591494631425.json, 视频生成/图生视频/MiniMaxH3_参考生_参考图_无加速_有LoRA_---(4)_2090348925667602434.json, 视频生成/图生视频/MiniMaxH3多图参考生视频！加速版！艾橘溪_2084254355036925953.json, 视频生成/图生视频/MiniMax_H3+多参考图生视频（可本地运行）_2089621418697904129.json, 视频生成/图生视频/MiniMax_H3_R2V_3参考图_LightX2V_4步_2090336616714956801.json, 视频生成/图生视频/Minimax H3 Full2k视频超分_2084940898219151362.json, 视频生成/图生视频/Minimax H3 I2v-首帧参考-横板15秒_2093106411722076162.json, 视频生成/图生视频/Minimax H3 I2v-首帧参考-横板5秒-图生视频_2103293623193399298.json, 视频生成/图生视频/Minimax H3 图生视频 高质量加速版_2085666960783794177.json, 视频生成/图生视频/Minimax H3 多参生视频_2084365914140659713.json, 视频生成/图生视频/Minimax H3开源版参考图生视频高质量加速版_2086456184978108417.json, 视频生成/图生视频/Minimax H3高质量融合模型10Eros-多参生视频BF16加速_2086859051593457665.json, 视频生成/图生视频/Minimax-H3-多参生视频BF16高质量768P-双重加速（T8-cache）_2085387583219126274.json, 视频生成/图生视频/Minimax-H3-多模态参考生视频-sage+cache双重提速_2084572409679671298.json, 视频生成/图生视频/Minimax_H3多图参考视频生成+全节点注释_2099778923717550082.json, 视频生成/图生视频/Minimax_H3多图参考视频生成+全节点注释_2100038725966319618.json, 视频生成/图生视频/minMax H3 多参考生视频+加速_2090270612068585473.json, 视频生成/文生视频/MiniMax H3参考生视频6倍加速24GB通用版_2086411688710066177.json, 视频生成/文生视频/MiniMax H3参考生视频6倍加速80GB满配版_2086411609148313601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_15
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json、数字人/数字人/7度工作流改版1_2098964914600763393.json、数字人/数字人/H3数字人_2092831814367924225.json、数字人/数字人/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089709883632476162.json、视频生成/图生视频/H3+音频驱动&图片跳舞！加速版_2099306860540162050.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3+ EasyCache提速_2084489591494631425.json、视频生成/图生视频/MiniMaxH3_参考生_参考图_无加速_有LoRA_---(4)_2090348925667602434.json、视频生成/图生视频/MiniMaxH3多图参考生视频！加速版！艾橘溪_2084254355036925953.json、视频生成/图生视频/MiniMax_H3+多参考图生视频（可本地运行）_2089621418697904129.json、视频生成/图生视频/MiniMax_H3_R2V_3参考图_LightX2V_4步_2090336616714956801.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -30,10 +30,9 @@ source: knowledge_consolidation
 - `CreateVideo`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
@@ -42,29 +41,24 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 18/19 个有
-- `LoraLoaderModelOnly` —— 18/19 个有
-- `ResolutionSelector` —— 18/19 个有
-- `GetNode` —— 17/19 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 17/19 个有
-- `SetNode` —— 17/19 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 17/19 个有
-- `LayerUtility: PurgeVRAM V2` —— 16/19 个有
+- `PrimitiveStringMultiline` —— 18/19 个有
 - `PathchSageAttentionKJ` —— 16/19 个有
-- `PainterVRAM` —— 15/19 个有
-- `VRAM_Debug` —— 15/19 个有
-- `MiniMaxH3SigmaShift` —— 2/19 个有
-- `忽略多组孤海` —— 2/19 个有
-- `AudioConcat` —— 1/19 个有
-- `DF_Int_to_Float` —— 1/19 个有
-- `ImageBatch` —— 1/19 个有
-- `Int` —— 1/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/19 个有
-- `MiniMaxH3AddGuide` —— 1/19 个有
-- `MiniMaxH3SLAPrecisionV2T8Advanced` —— 1/19 个有
-- `PreviewImage` —— 1/19 个有
-- `SelectImages` —— 1/19 个有
-- `TrimAudioDuration` —— 1/19 个有
+- `MiniMaxH3ReferenceToVideo` —— 14/19 个有
+- `EasyCache` —— 9/19 个有
+- `LoadAudio` —— 7/19 个有
+- `MiniMaxH3ImageToVideo` —— 5/19 个有
+- `LoraLoaderModelOnly` —— 4/19 个有
+- `MiniMaxH3BlockCacheT8` —— 4/19 个有
+- `ImageScaleToTotalPixels` —— 3/19 个有
+- `LoadVideo` —— 3/19 个有
+- `GetVideoComponents` —— 2/19 个有
+- `ImageResizeKJv2` —— 2/19 个有
+- `LoraLoaderBypassModelOnly` —— 2/19 个有
+- `Bjornulf_ShowInt` —— 1/19 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 1/19 个有
+- `RH_Captioner` —— 1/19 个有
+- `StringConcatenate` —— 1/19 个有
+- `easy imageRemBg` —— 1/19 个有
 
 ## 典型参数
 

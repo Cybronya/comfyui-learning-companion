@@ -3,57 +3,60 @@ name: unknown_workflow_video_lora_sampler_845
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.921
-common_nodes: [CLIPVisionLoader, CR Text Concatenate, ImageCASharpening+, ImageResize+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.627
+common_nodes: [Any Switch (rgthree), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Float, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, PrimitiveStringMultiline, Qwen3_VQA, SaveAudio, SetNode, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2070674585263108098.json, 视频生成/图生视频/1931730238252711938.json]
+members: [视频生成/图生视频/1985626915035914241.json, 音频生成/音频生成/你的数字人能说河南话，稳定的输出_1987756118204198914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_845
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2070674585263108098.json、视频生成/图生视频/1931730238252711938.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1985626915035914241.json、音频生成/音频生成/你的数字人能说河南话，稳定的输出_1987756118204198914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Text Concatenate`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `JWInteger`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Text Multiline`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `PrimitiveStringMultiline`
+- `Qwen3_VQA`
+- `SaveAudio`
+- `SetNode`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `StringConcatenate`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Florence2ModelLoader` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoTeaCache` —— 1/2 个有
+- `easy int`
+- `easy showAnything`
 
 ## 典型参数
 

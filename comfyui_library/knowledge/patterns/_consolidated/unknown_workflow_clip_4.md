@@ -3,32 +3,34 @@ name: unknown_workflow_clip_4
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [CLIPTextEncode, EmptyImage, LoadImage, PrimitiveInt, SaveVideo, workflow>重要]
+coverage: 0.8
+common_nodes: [PreviewImage, SaveImage, workflow/模型组, workflow/采样器]
 problems: []
 missing: []
-members: [视频生成/图生视频/2044418941187006466.json, 视频生成/图生视频/2044136977624207362.json]
+members: [图片生成/文生图/一键批量人物一致性_1900917256862187522.json, 图片生成/文生图/文生图油画风格_1901150306908913665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2044418941187006466.json、视频生成/图生视频/2044136977624207362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键批量人物一致性_1900917256862187522.json、图片生成/文生图/文生图油画风格_1901150306908913665.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `EmptyImage`
-- `LoadImage`
-- `PrimitiveInt`
-- `SaveVideo`
-- `workflow>重要`
+- `PreviewImage`
+- `SaveImage`
+- `workflow/模型组`
+- `workflow/采样器`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPTextEncodeFlux` —— 1/2 个有
+- `String Literal` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,59 +3,71 @@ name: unknown_workflow_video_lora_sampler_848
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6705
-common_nodes: [Bjornulf_AnythingToText, Bjornulf_ShowInt, Bjornulf_ShowStringText, CLIPTextEncode, CR String To Boolean, CR String To Number, CR Text Input Switch (4 way), GetNode, ImpactSwitch, Int, JjkText, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Note _O, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement]
+coverage: 0.52
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CreateCFGScheduleFloatList, DF_Int_to_Float, DownloadAndLoadWav2VecModel, GetNode, INTConstant, JWImageResize, LayerUtility: ImageScaleByAspectRatio, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, PreviewAudio, PreviewImage, RH_GetAudioDuration, SetNode, ShowAnything|Mie, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1902736464273158146.json, 视频生成/图生视频/1902985509671440385.json]
+members: [视频生成/图生视频/2044768518683500546.json, 视频生成/图生视频/2045415712142925826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_848
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1902736464273158146.json、视频生成/图生视频/1902985509671440385.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2044768518683500546.json、视频生成/图生视频/2045415712142925826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_AnythingToText`
-- `Bjornulf_ShowInt`
-- `Bjornulf_ShowStringText`
-- `CLIPTextEncode`
-- `CR String To Boolean`
-- `CR String To Number`
-- `CR Text Input Switch (4 way)`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CreateCFGScheduleFloatList`
+- `DF_Int_to_Float`
+- `DownloadAndLoadWav2VecModel`
 - `GetNode`
-- `ImpactSwitch`
-- `Int`
-- `JjkText`
+- `INTConstant`
+- `JWImageResize`
+- `LayerUtility: ImageScaleByAspectRatio`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `Note _O`
+- `PreviewAudio`
+- `PreviewImage`
+- `RH_GetAudioDuration`
 - `SetNode`
+- `ShowAnything|Mie`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
+- `WanVideoExtraModelSelect`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `FantasyTalkingModelLoader` —— 1/2 个有
+- `FantasyTalkingWav2VecEmbeds` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `MultiTalkModelLoader` —— 1/2 个有
+- `MultiTalkWav2VecEmbeds` —— 1/2 个有
+- `VHS_DuplicateImages` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
+- `WanVideoUni3C_embeds` —— 1/2 个有
 
 ## 典型参数
 

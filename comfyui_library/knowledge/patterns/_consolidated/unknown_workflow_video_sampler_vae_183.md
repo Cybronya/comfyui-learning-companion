@@ -3,50 +3,51 @@ name: unknown_workflow_video_sampler_vae_183
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9275
-common_nodes: [CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEmbedBridge, HyVideoVAELoader, ImageConcatMulti, LoadImage, PreviewImage, TextEncodeHunyuanVideo_ImageToVideo, VHS_VideoCombine]
+coverage: 0.755
+common_nodes: [ColorMatch, DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoCFG, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoModelLoader, HyVideoSampler, HyVideoTextEncode, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageResizeKJ, Int, LoadImage, MathExpression|pysssss, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946557222581362690.json, 视频生成/文生视频/1922219217268178946.json]
+members: [视频生成/图生视频/图生视频，SkyReels_1892222949557243905.json, 视频生成/图生视频/1892126522352820225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_183
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1946557222581362690.json、视频生成/文生视频/1922219217268178946.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频，SkyReels_1892222949557243905.json、视频生成/图生视频/1892126522352820225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
+- `ColorMatch`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `HyVideoBlockSwap`
+- `HyVideoCFG`
 - `HyVideoDecode`
 - `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
 - `HyVideoModelLoader`
 - `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTextEmbedBridge`
+- `HyVideoTextEncode`
+- `HyVideoTorchCompileSettings`
 - `HyVideoVAELoader`
-- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `Int`
 - `LoadImage`
-- `PreviewImage`
-- `TextEncodeHunyuanVideo_ImageToVideo`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `HyVideoBlockSwap` —— 1/2 个有
-- `HyVideoLoraSelect` —— 1/2 个有
-- `HyVideoTorchCompileSettings` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `RMBG` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,46 +1,54 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_14
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.663333
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSamplerAdvanced, SaveImage, VAEDecode]
+coverage: 0.901
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTXVConditioning, LTXVScheduler, SamplerCustom, VAEDecode]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/sdxl_refiner_prompt_example.json, comfyui-workflow-templates-json/sdxl_simple_example.json, 图片生成/文生图/1946739229718405122.json]
+members: [comfyui-workflow-templates-json/ltxv_image_to_video.json, comfyui-workflow-templates-json/ltxv_text_to_video.json, 视频生成/图生视频/1897315393487196161.json, 视频生成/图生视频/1898011763626201090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_14
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/sdxl_refiner_prompt_example.json、comfyui-workflow-templates-json/sdxl_simple_example.json、图片生成/文生图/1946739229718405122.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/ltxv_image_to_video.json、comfyui-workflow-templates-json/ltxv_text_to_video.json、视频生成/图生视频/1897315393487196161.json、视频生成/图生视频/1898011763626201090.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
-- `SaveImage`
+- `KSamplerSelect`
+- `LTXVConditioning`
+- `LTXVScheduler`
+- `SamplerCustom`
 - `VAEDecode`
+
+**可变部分**（部分 workflow 才有）：
+- `LTXVImgToVideo` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `CreateVideo` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `TextInput_` —— 2/4 个有
+- `VHS_VideoCombine` —— 2/4 个有
+- `ApplyFBCacheOnModel` —— 1/4 个有
+- `Bjornulf_ShowStringText` —— 1/4 个有
+- `EmptyLTXVLatentVideo` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `PatchModelPatcherOrder` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 3 | 72% |
-| 高度 | 1024 | 512 - 1024 | 3 | 72% |
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 25 | 20 - 25 | 3 | 90% |
-| 采样算法 | 8 | 8 - 8 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | normal | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -48,11 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，3 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，3 个样本
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 25，观测区间 20 - 25，3 个样本，取值集中（一致性 90%）
-- 采样算法 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 normal，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 25，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

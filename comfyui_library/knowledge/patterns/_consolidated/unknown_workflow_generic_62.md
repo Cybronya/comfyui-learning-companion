@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_62
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.871727
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
+coverage: 0.870333
+common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveVideo, ShowText]
 problems: []
-missing: []
-members: [视频生成/图生视频/2038072662395723777.json, 视频生成/图生视频/2066557394326474754.json, 视频生成/图生视频/2042079284008853506.json, 视频生成/图生视频/2037519797197479937.json, 视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json, 视频生成/文生视频/Seedance 2.0：解锁人脸特效自由，无需审核即享_2040003975717593089.json, 视频生成/文生视频/Seedance2.0全能参考视频(创建ID)+全节点注释+添加巨型图片展示_2045794036518232066.json, 视频生成/文生视频/Seedance2.0全能参考视频(创建ID)+全节点注释_2054837299153776642.json, 视频生成/文生视频/Seedance2.0全能参考视频_2074461074593767426.json, 视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json, 视频生成/文生视频/视频生成seedance 2.0满血版_2058854158081552385.json]
+missing: [CR Prompt Text, Text Concatenate, SaveText|pysssss]
+members: [视频生成/图生视频/1985877663703281666.json, 视频生成/文生视频/1973456775582191617.json, 视频生成/文生视频/1973992409312923649.json, 视频生成/文生视频/1976181162492215297.json, 视频生成/文生视频/1976842092368609281.json, 视频生成/文生视频/[众馨]全能视频S文生视频_1981644784269959169.json, 视频生成/文生视频/全能视频S文生视频 (支持横版竖版1080p、支持10s和15s）_1985957787626811393.json, 视频生成/文生视频/全能视频S文生视频 支持15s_1991163256226054145.json, 视频生成/文生视频/全能视频S文生视频 每日5次免费_2073213996060209153.json, 视频生成/文生视频/全能视频S文生视频（15s）_1986863698721574914.json, 视频生成/文生视频/全能视频S文生视频（支持横版竖版1080p）支持15s_1996581085431603202.json, 视频生成/文生视频/抖音巨火的漫剧—全能视频S文生视频（15s）_1986077275487686658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_62
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2038072662395723777.json、视频生成/图生视频/2066557394326474754.json、视频生成/图生视频/2042079284008853506.json、视频生成/图生视频/2037519797197479937.json、视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1985877663703281666.json、视频生成/文生视频/1973456775582191617.json、视频生成/文生视频/1973992409312923649.json、视频生成/文生视频/1976181162492215297.json、视频生成/文生视频/1976842092368609281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `RH_SparkVideoAssetCreate`
-- `RH_SparkVideoAssetIdsMerge`
+全部 12 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_Sora2_T2V`
 - `SaveVideo`
+- `ShowText`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 10/11 个有
-- `LoadVideo` —— 8/11 个有
-- `CR Prompt Text` —— 1/11 个有
-- `CR Text` —— 1/11 个有
-- `RH_SparkVideoAssetQuery` —— 1/11 个有
-- `TextInputNode` —— 1/11 个有
+- `SaveText|pysssss` —— 11/12 个有
+- `RH_LLMAPI_NODE` —— 2/12 个有
+- `LoadImage` —— 1/12 个有
+- `Text Concatenate` —— 1/12 个有
 
 ## 典型参数
 
@@ -47,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text、Text Concatenate、SaveText|pysssss

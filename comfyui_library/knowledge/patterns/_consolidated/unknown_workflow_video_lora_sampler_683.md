@@ -3,57 +3,74 @@ name: unknown_workflow_video_lora_sampler_683
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.798667
-common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SaveLatent, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.579
+common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, EmptyImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1944651399730745345.json, 视频生成/图生视频/1944662370163544065.json, 视频生成/图生视频/1937513401944051713.json]
+members: [视频生成/图生视频/1975554150689845250.json, 视频生成/图生视频/1975078914978656258.json, 视频生成/图生视频/1969652122914594818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_683
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1944651399730745345.json、视频生成/图生视频/1944662370163544065.json、视频生成/图生视频/1937513401944051713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1975554150689845250.json、视频生成/图生视频/1975078914978656258.json、视频生成/图生视频/1969652122914594818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `CR Text`
+- `DrawMaskOnImage`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `SaveLatent`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_TextConcatenate` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `LoadLatent` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `DrawViTPose` —— 2/3 个有
+- `Note Plus (mtb)` —— 2/3 个有
+- `OnnxDetectionModelLoader` —— 2/3 个有
+- `PoseAndFaceDetection` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DownloadAndLoadWav2VecModel` —— 1/3 个有
+- `FaceMaskFromPoseKeypoints` —— 1/3 个有
+- `ImageCropByMaskAndResize` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `PixelPerfectResolution` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

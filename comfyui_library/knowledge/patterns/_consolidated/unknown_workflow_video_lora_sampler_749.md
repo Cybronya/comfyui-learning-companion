@@ -3,63 +3,68 @@ name: unknown_workflow_video_lora_sampler_749
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9455
-common_nodes: [AIO_Preprocessor, CR Text Concatenate, ColorMatch, GetImageSizeAndCount, ImageResizeKJ, JWInteger, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Translator, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy textSwitch]
+coverage: 0.55
+common_nodes: [DWPreprocessor, DepthAnythingV2Preprocessor, GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResize+, ImageResizeKJ, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LayerMask: LoadFlorence2Model, LayerMask: LoadSegmentAnythingModels, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, Mix Color By Mask, RH_Captioner, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1938243040110903297.json, 视频生成/图生视频/1937759191832662018.json]
+members: [视频生成/图生视频/1938493424595042306.json, 视频生成/图生视频/1934648294230695938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_749
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1938243040110903297.json、视频生成/图生视频/1937759191832662018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1938493424595042306.json、视频生成/图生视频/1934648294230695938.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CR Text Concatenate`
-- `ColorMatch`
-- `GetImageSizeAndCount`
+- `DWPreprocessor`
+- `DepthAnythingV2Preprocessor`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResize+`
 - `ImageResizeKJ`
-- `JWInteger`
+- `Int`
+- `JjkConcat`
+- `LTXVPromptEnhancer`
+- `LTXVPromptEnhancerLoader`
 - `LayerMask: LoadFlorence2Model`
-- `LayerUtility: Florence2Image2Prompt`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: ObjectDetectorFL2`
+- `LayerMask: SAM2Ultra`
+- `LayerMask: SegmentAnythingUltra V3`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_Translator`
-- `ShowText|pysssss`
+- `MaskToImage`
+- `Mix Color By Mask`
+- `RH_Captioner`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoEnhanceAVideo`
 - `WanVideoLoraSelect`
-- `WanVideoMagCache`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy textSwitch`
-
-**可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageScaleToMegapixels` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `WanVideoVRAMManagement`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -3,75 +3,77 @@ name: unknown_workflow_lora_sampler_unet_91
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6905
-common_nodes: [AudioCrop, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, FlashVSRNode, KSampler, LoadAudio, LoraLoaderBypassModelOnly, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, PrimitiveStringMultiline, ProcessString, SaveAudioAdvanced, SaveImage, SimpleMath+, Sleep, UNETLoader, VAEDecodeAudio, VAELoader, easy showAnything]
-problems: [发现KSampler但没有VAEDecode]
+coverage: 0.5925
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo]
+problems: []
 missing: []
-members: [音频生成/音频生成/H3 声音克隆-批量版本_2107388128666415105.json, 音频生成/音频生成/H3 声音克隆_2084616540028231681.json]
+members: [视频生成/图生视频/H3 mask替换人物_2099484034475847682.json, 视频生成/图生视频/minimax   h3 最强动作迁移_2089285244263424001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_91
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/H3 声音克隆-批量版本_2107388128666415105.json、音频生成/音频生成/H3 声音克隆_2084616540028231681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3 mask替换人物_2099484034475847682.json、视频生成/图生视频/minimax   h3 最强动作迁移_2089285244263424001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `FlashVSRNode`
-- `KSampler`
-- `LoadAudio`
-- `LoraLoaderBypassModelOnly`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `MultiTextConcatenate`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `ProcessString`
-- `SaveAudioAdvanced`
-- `SaveImage`
-- `SimpleMath+`
-- `Sleep`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `CLIPTextEncode` —— 1/2 个有
+- `CheckpointLoaderSimple` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageAndMaskPreview` —— 1/2 个有
+- `MiniMaxH3AddGuide` —— 1/2 个有
+- `RTXVideoSuperResolution` —— 1/2 个有
+- `SAM3_TrackPreview` —— 1/2 个有
+- `SAM3_TrackToMask` —— 1/2 个有
+- `SAM3_VideoTrack` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `SolAttnMiniMax` —— 1/2 个有
+- `UniBlockSwapTE` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `取色器_孤海` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

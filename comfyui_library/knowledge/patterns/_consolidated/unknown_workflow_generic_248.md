@@ -3,40 +3,29 @@ name: unknown_workflow_generic_248
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.579
-common_nodes: [DownloadVideo, LoadImage, LoadVideoFromUrl_RH, PreviewAny, PrimitiveString, SaveVideo, UploadToImageHost, VeoImage2Video, VeoQueryTask]
+coverage: 0.86
+common_nodes: [ByteDance2ReferenceNodeV2, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058489407870685185.json, 视频生成/图生视频/2016414667429646338.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1991711088752553986.json, 视频生成/图生视频/1993215378560057346.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1996515625558228994.json]
+members: [comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json, comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json, comfyui-workflow-templates-json/api_seedance2_5_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_248
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2058489407870685185.json、视频生成/图生视频/2016414667429646338.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1991711088752553986.json、视频生成/图生视频/1993215378560057346.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1996515625558228994.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json、comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json、comfyui-workflow-templates-json/api_seedance2_5_r2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `DownloadVideo`
+- `ByteDance2ReferenceNodeV2`
 - `LoadImage`
-- `LoadVideoFromUrl_RH`
-- `PreviewAny`
-- `PrimitiveString`
 - `SaveVideo`
-- `UploadToImageHost`
-- `VeoImage2Video`
-- `VeoQueryTask`
-
-**可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/5 个有
-- `ShowAnything|Mie` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 

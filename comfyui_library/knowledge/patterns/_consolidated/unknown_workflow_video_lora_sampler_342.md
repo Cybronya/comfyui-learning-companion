@@ -3,66 +3,82 @@ name: unknown_workflow_video_lora_sampler_342
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.786833
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.452
+common_nodes: [CLIPVisionLoader, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, ReplaceVideoLatentFrames, SetNode, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [数字人/数字人/Wan2.1单人对口型_2096760991131455490.json, 视频生成/图生视频/1983435435332575234.json, 视频生成/图生视频/1988813564645355522.json, 视频生成/图生视频/2064352779824623618.json, 视频生成/图生视频/1958125817404542978.json, 视频生成/图生视频/1958125770365423618.json]
+members: [图片生成/文生图/内部测试0001_2006740333874384898.json, 视频生成/图生视频/2002585439628345345.json, 视频生成/图生视频/2002677838857793538.json, 视频生成/图生视频/2059649854489583618.json, 视频生成/图生视频/2059162387521032194.json, 视频生成/图生视频/2006916502057918465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_342
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/Wan2.1单人对口型_2096760991131455490.json、视频生成/图生视频/1983435435332575234.json、视频生成/图生视频/1988813564645355522.json、视频生成/图生视频/2064352779824623618.json、视频生成/图生视频/1958125817404542978.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/内部测试0001_2006740333874384898.json、视频生成/图生视频/2002585439628345345.json、视频生成/图生视频/2002677838857793538.json、视频生成/图生视频/2059649854489583618.json、视频生成/图生视频/2059162387521032194.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPVisionLoader`
+- `FloatConstant`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
 - `PreviewAny`
+- `ReplaceVideoLatentFrames`
+- `SetNode`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 5/6 个有
-- `DownloadAndLoadWav2VecModel` —— 5/6 个有
-- `LoadAudio` —— 5/6 个有
-- `WanVideoDecode` —— 3/6 个有
-- `WanVideoPassImagesFromSamples` —— 3/6 个有
-- `Wav2VecModelLoader` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `FancyTimerNode` —— 2/6 个有
-- `GetNode` —— 2/6 个有
-- `ImageScale` —— 2/6 个有
-- `IndexTTSNode` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
-- `easy getNode` —— 2/6 个有
-- `easy setNode` —— 2/6 个有
-- `AudioCrop` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `JWIntegerToString` —— 1/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `VHS_LoadAudioUpload` —— 1/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `DownloadAndLoadWav2VecModel` —— 4/6 个有
+- `Float` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `MultiTalkWav2VecEmbeds` —— 4/6 个有
+- `PreviewAudio` —— 4/6 个有
+- `CR Prompt Text` —— 3/6 个有
+- `ForLoopClose` —— 2/6 个有
+- `ForLoopOpen` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `LongCatAvatarWhisperEmbeds` —— 2/6 个有
+- `MathExpression|pysssss` —— 2/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/6 个有
+- `SaveAudio` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `Text Load Line From File` —— 2/6 个有
+- `WhisperModelLoader` —— 2/6 个有
+- `ZML_ImageSelectorNode` —— 2/6 个有
+- `easy convertAnything` —— 2/6 个有
+- `easy downloadIndexTTSAndLoadModel` —— 2/6 个有
+- `easy indexTTSGenerateSimple` —— 2/6 个有
+- `ImageBatchMulti` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_LLMAPI_NODE` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
+- `VHS_GetImageCount` —— 1/6 个有
 
 ## 典型参数
 

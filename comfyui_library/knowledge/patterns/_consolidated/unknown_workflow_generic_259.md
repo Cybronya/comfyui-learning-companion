@@ -3,37 +3,41 @@ name: unknown_workflow_generic_259
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, LoadAudio, NormalizeAudioLoudness, SaveAudioMP3, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.6164
+common_nodes: [CR Text Concatenate, PrimitiveInt, RH_Jimeng4_Image2Image, SaveImage, String, easy anythingIndexSwitch]
 problems: []
-missing: []
-members: [音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json]
+missing: [CR Text, CR Text Concatenate, easy anythingIndexSwitch, easy imageConcat, easy saveText]
+members: [图片生成/文生图/1970103362941296641.json, 图片生成/文生图/1970112247827734529.json, 图片生成/文生图/1971146446642782209.json, 图片生成/文生图/1977420326877437954.json, 图片生成/文生图/1980262999250415617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_259
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆（基础）_2088944283293405185.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）_2088943720514281474.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感向量）_2088950167646072833.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本）_2088943120275824642.json、音频生成/音频生成/IndexTTS 2.5语音克隆（长文本）_2088942789395574786.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1970103362941296641.json、图片生成/文生图/1970112247827734529.json、图片生成/文生图/1971146446642782209.json、图片生成/文生图/1977420326877437954.json、图片生成/文生图/1980262999250415617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `SaveAudioMP3`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+- `CR Text Concatenate`
+- `PrimitiveInt`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
+- `String`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/5 个有
-- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
-- `T8_IndexTTS25_SamplingConfig` —— 1/5 个有
+- `CR Text` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `RH_Captioner_Pro` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
+- `easy imageConcat` —— 1/5 个有
+- `easy saveText` —— 1/5 个有
 
 ## 典型参数
 
@@ -45,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、easy anythingIndexSwitch、easy imageConcat、easy saveText

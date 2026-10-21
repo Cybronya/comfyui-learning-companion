@@ -2,90 +2,69 @@
 name: unknown_workflow_video_lora_sampler_548
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.9495
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GemmaAPITextEncode, GetImageSize, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveString, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_LoadVideo, VHS_VideoCombine]
+level: moderate
+coverage: 0.50425
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/文生视频/01_v2v_Video_Edit_视频编辑_RH_APP_2053497184217247746.json, 视频生成/文生视频/LTX 2.3 IC-LoRA 视频上色工作流（手动提示）_2035643489333022722.json, 视频生成/文生视频/LTX2.3 电影级全向外扩视频工作流_2053375516647931906.json, 视频生成/文生视频/视频扩展3.0｜OmniNFT+Relay+蒸馏1.1｜竖屏扩宽_2058327114209910786.json]
+missing: [LayerMask: LoadFlorence2Model, LayerUtility: PurgeVRAM, LayerUtility: Florence2Image2Prompt]
+members: [视频生成/图生视频/2055512810020458497.json, 视频生成/图生视频/1994241547038375938.json, 视频生成/文生视频/1969434671211814914.json, 视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_2072999562958381056.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_548
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/01_v2v_Video_Edit_视频编辑_RH_APP_2053497184217247746.json、视频生成/文生视频/LTX 2.3 IC-LoRA 视频上色工作流（手动提示）_2035643489333022722.json、视频生成/文生视频/LTX2.3 电影级全向外扩视频工作流_2053375516647931906.json、视频生成/文生视频/视频扩展3.0｜OmniNFT+Relay+蒸馏1.1｜竖屏扩宽_2058327114209910786.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2055512810020458497.json、视频生成/图生视频/1994241547038375938.json、视频生成/文生视频/1969434671211814914.json、视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_2072999562958381056.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `GemmaAPITextEncode`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveString`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `PixelPerfectResolution`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Color Correct (mtb)` —— 3/4 个有
-- `GetImageSize+` —— 3/4 个有
-- `ImageConcanate` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `Switch image [Crystools]` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `ResizeAndPadImage` —— 2/4 个有
-- `image_scale_pixel_v2` —— 2/4 个有
-- `CannyEdgePreprocessor` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `DWPreprocessor` —— 1/4 个有
-- `DepthCrafter` —— 1/4 个有
-- `DownloadAndLoadDepthCrafterModel` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `FluxResolutionNode` —— 1/4 个有
-- `ImagePadKJ` —— 1/4 个有
-- `Image_Resize_longsize` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `ResizeImageMaskNode` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `GetNode` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `WanVideoLoraSelectMulti` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `JWInteger` —— 2/4 个有
+- `LayerMask: LoadFlorence2Model` —— 2/4 个有
+- `LayerUtility: Florence2Image2Prompt` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 2/4 个有
+- `WanVideoContextOptions` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `WanVideoLoraSelect` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -93,5 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: LoadFlorence2Model、LayerUtility: PurgeVRAM、LayerUtility: Florence2Image2Prompt

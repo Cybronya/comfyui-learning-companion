@@ -1,46 +1,38 @@
 ---
 name: unknown_workflow_generic_27
 type: Unknown Workflow
-frequency: 16
+frequency: 17
 level: moderate
-coverage: 0.56425
-common_nodes: [DownloadVideo, LoadImage, LoadVideoFromUrl_RH, PreviewAny, PrimitiveString, SaveVideo, UploadToImageHost, easy showAnything]
+coverage: 0.906412
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频主页不断更新案例附去除rh水印独家秘诀！_1988647929932111873.json, 视频生成/图生视频/1987413449342914561.json, 视频生成/图生视频/2019985817179000833.json, 视频生成/图生视频/2013820039870287873.json, 视频生成/图生视频/2008485538071846913.json, 视频生成/图生视频/2016363121190899713.json, 视频生成/图生视频/2000191170644934657.json, 视频生成/图生视频/2004436071788277762.json, 视频生成/图生视频/全能视频S图生视频全能视频S分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家分享_1995142612589928449.json, 视频生成/图生视频/全能视频S图生视频全能视频S电商短视频带货无水印高清主页不断更新案例免会员去rh水印独家分享_1993194159827779586.json, 视频生成/图生视频/全能视频S高清无水印5分钱一次请求电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1990473001458176001.json, 视频生成/图生视频/全能视频S高清无水印deepseek分镜提示词电商分镜真人直出视频10秒15秒含免会员去rh水印大法_1990478640083329026.json, 视频生成/图生视频/1994986824512811010.json, 视频生成/图生视频/2058489344364732417.json, 视频生成/文生视频/so视频so图生视频ra分镜漫画视频无水印高清主页不断更新案例免会员去rh水印独家s0ra_2008485538071846913.json, 视频生成/文生视频/全能视频Ss0ra图生视频ai漫剧ai短剧s0ra分镜漫画视频无水印高清免会员去rh水印10-15秒_2036314099788816386.json]
+members: [视频生成/图生视频/2034225183669620738.json, 视频生成/图生视频/2039546707423272961.json, 视频生成/图生视频/2046129845834354689.json, 视频生成/图生视频/2041416684765974530.json, 视频生成/图生视频/2054421039081369601.json, 视频生成/图生视频/Seedance2.0_Fast_API版-全能参考视频_2111086762943672321.json, 视频生成/图生视频/2039340026965794817.json, 视频生成/图生视频/2037507739894685697.json, 视频生成/图生视频/2037337961548746754.json, 视频生成/图生视频/2038496435926208514.json, 视频生成/图生视频/2037433035041280001.json, 视频生成/文生视频/HPSeedance2.0_2080565115467948033.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频_2040085661084028929.json, 视频生成/文生视频/Seedance2.0+Fast全能参考视频+全节点注释_2055561360163000321.json, 视频生成/文生视频/Seedance2.0-全能参考+生真人视频_2037830636290973698.json, 视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json, 视频生成/文生视频/全能视频生成 图像+视频参考+语音驱动 支持真人 地表最强超能视频2.0 全能参考_2038435414712782850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_27
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/5分钱一次全能视频S图生视频全能视频S图生视频主页不断更新案例附去除rh水印独家秘诀！_1988647929932111873.json、视频生成/图生视频/1987413449342914561.json、视频生成/图生视频/2019985817179000833.json、视频生成/图生视频/2013820039870287873.json、视频生成/图生视频/2008485538071846913.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/2034225183669620738.json、视频生成/图生视频/2039546707423272961.json、视频生成/图生视频/2046129845834354689.json、视频生成/图生视频/2041416684765974530.json、视频生成/图生视频/2054421039081369601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `DownloadVideo`
+全部 17 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideoFromUrl_RH`
-- `PreviewAny`
-- `PrimitiveString`
 - `SaveVideo`
-- `UploadToImageHost`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SoraCreateVideo` —— 12/16 个有
-- `SoraQueryTask` —— 12/16 个有
-- `Text Multiline` —— 12/16 个有
-- `VeoImage2Video` —— 4/16 个有
-- `VeoQueryTask` —— 4/16 个有
-- `SoraPromptFromProduct` —— 2/16 个有
-- `String to Text` —— 2/16 个有
-- `MultiLinePromptIndex` —— 1/16 个有
+- `LoadVideo` —— 16/17 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 15/17 个有
+- `CR Prompt Text` —— 4/17 个有
+- `easy showAnything` —— 3/17 个有
+- `LoadAudio` —— 2/17 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/17 个有
 
 ## 典型参数
 

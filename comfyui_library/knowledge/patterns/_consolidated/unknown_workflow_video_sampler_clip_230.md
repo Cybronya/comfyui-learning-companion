@@ -3,78 +3,63 @@ name: unknown_workflow_video_sampler_clip_230
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.791
-common_nodes: [AIO_Preprocessor, GetImageSizeAndCount, GetNode, ImageBlend, ImageConcatMulti, ImageResizeKJ, JjkShowText, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, SetNode, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy clearCacheAll]
+coverage: 0.7345
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVScheduler, LTXVSeparateAVLatent, LoadAudio, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1912373863278411778.json, 视频生成/图生视频/1990585465176809474.json]
+members: [视频生成/图生视频/2011018464567234562.json, 视频生成/文生视频/ltx2_i2v_gguf-t2v生产力速度起飞_2011349638749622274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_230
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1912373863278411778.json、视频生成/图生视频/1990585465176809474.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2011018464567234562.json、视频生成/文生视频/ltx2_i2v_gguf-t2v生产力速度起飞_2011349638749622274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `GetImageSizeAndCount`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `ImageBlend`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
-- `JjkShowText`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `PreviewAudio`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `SolidMask`
+- `TrimAudioDuration`
+- `VAEDecode`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoControlEmbeds`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `LTXVPromptEnhancer` —— 1/2 个有
-- `LTXVPromptEnhancerLoader` —— 1/2 个有
-- `LayerMask: LoadFlorence2Model` —— 1/2 个有
-- `LayerUtility: Florence2Image2Prompt` —— 1/2 个有
-- `MeshGraphormer-DepthMapPreprocessor` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `DualCLIPLoaderGGUF` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LTXVImgToVideoInplace` —— 1/2 个有
+- `LTXVPreprocess` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
+- `UnetLoaderGGUF` —— 1/2 个有
 
 ## 典型参数
 

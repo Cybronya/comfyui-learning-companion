@@ -2,70 +2,81 @@
 name: unknown_workflow_video_lora_sampler_358
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.770833
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+level: moderate
+coverage: 0.7225
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_GetAudioDuration, SaveAudio, SetNode, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073309420112662529.json, 视频生成/图生视频/2064514546374631425.json, 视频生成/图生视频/2075412859504390145.json, 视频生成/图生视频/2078010993078263809.json, 音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json, 音频生成/音频生成/Digital Avatars Lip-Syncing数字人对口型_2097153340940574722.json]
+members: [视频生成/图生视频/1959861917236015105.json, 视频生成/图生视频/1959926509467283458.json, 视频生成/图生视频/1995653735567261698.json, 视频生成/图生视频/1983895730928713729.json, 视频生成/图生视频/1964183198169186306.json, 视频生成/图生视频/1966856780053614593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_358
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2073309420112662529.json、视频生成/图生视频/2064514546374631425.json、视频生成/图生视频/2075412859504390145.json、视频生成/图生视频/2078010993078263809.json、音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1959861917236015105.json、视频生成/图生视频/1959926509467283458.json、视频生成/图生视频/1995653735567261698.json、视频生成/图生视频/1983895730928713729.json、视频生成/图生视频/1964183198169186306.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PainterAV2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `RH_GetAudioDuration`
+- `SaveAudio`
+- `SetNode`
+- `SimpleMath+`
+- `ToInt`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `ImageConcatMulti` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `ColorMatch` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `ImpactSwitch` —— 1/6 个有
-- `JWInteger` —— 1/6 个有
-- `SetNode` —— 1/6 个有
+- `LoadImage` —— 5/6 个有
+- `INTConstant` —— 4/6 个有
+- `LoadAudio` —— 4/6 个有
+- `Anything Everywhere` —— 3/6 个有
+- `Int` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `Primitive string multiline [Crystools]` —— 3/6 个有
+- `SeargeIntegerConstant` —— 3/6 个有
+- `SimpleCondition+` —— 3/6 个有
+- `VHS_LoadVideoFFmpeg` —— 3/6 个有
+- `WanVideoTorchCompileSettings` —— 3/6 个有
+- `easy clearCacheAll` —— 3/6 个有
+- `CM_IntToFloat` —— 1/6 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/6 个有
+- `FantasyPortraitFaceDetector` —— 1/6 个有
+- `FantasyPortraitModelLoader` —— 1/6 个有
+- `GIMMVFI_interpolate` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `WanVideoAddFantasyPortrait` —— 1/6 个有
+- `WanVideoEncode` —— 1/6 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/6 个有
+- `WanVideoUni3C_embeds` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 3 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | dpmpp_sde | - | 6 | 83% |
-| 重绘幅度 | normal | - | 6 | 83% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,8 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_sde，6 个样本，一致性 83%
-- 重绘幅度 最常用 normal，6 个样本，一致性 83%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

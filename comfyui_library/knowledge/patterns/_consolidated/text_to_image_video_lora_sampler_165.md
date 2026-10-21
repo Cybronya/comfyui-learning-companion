@@ -3,76 +3,107 @@ name: text_to_image_video_lora_sampler_165
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.806667
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, GetNode, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PreviewAny, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.742333
+common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, EmptyLatentImage, GetImagesFromBatchIndexed, GetNode, INTConstant, ImageBatchMulti, KSampler, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, ModelSamplingAuraFlow, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy positive, easy promptConcat, easy promptLine, easy promptList, easy promptReplace]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MinimaxH3加速全能开源免费版｜文生视频图生视频通吃_2111306895595237378.json, 视频生成/文生视频/MiniMax H3加速版全能版开源SelfLift双采视频处理工具_2101757446099390466.json, 视频生成/文生视频/海螺H3加速版全能版SelfLift双采高清放大视频处理工具_2101781913726967810.json]
+members: [视频生成/图生视频/2034616876847861762.json, 视频生成/图生视频/2035986971947962370.json, 视频生成/图生视频/2037414383898337282.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_165
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3加速全能开源免费版｜文生视频图生视频通吃_2111306895595237378.json、视频生成/文生视频/MiniMax H3加速版全能版开源SelfLift双采视频处理工具_2101757446099390466.json、视频生成/文生视频/海螺H3加速版全能版SelfLift双采高清放大视频处理工具_2101781913726967810.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2034616876847861762.json、视频生成/图生视频/2035986971947962370.json、视频生成/图生视频/2037414383898337282.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
+- `CFGGuider`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetLatentSizeAndCount`
+- `GetImagesFromBatchIndexed`
 - `GetNode`
-- `H3SigmaRefiner`
-- `JjkText`
+- `INTConstant`
+- `ImageBatchMulti`
 - `KSampler`
 - `KSamplerSelect`
-- `LoraLoaderBypassModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `SelfLiftH3Sampler`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `RegexExtract`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `SetNode`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy indexAnything`
+- `easy positive`
+- `easy promptConcat`
+- `easy promptLine`
+- `easy promptList`
+- `easy promptReplace`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `GH_AudioVideoMerger` —— 1/3 个有
-- `GH_ImageVideoComparer` —— 1/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
-- `RH_DLSS5Enhance` —— 1/3 个有
-- `VOSR2ModelLoader` —— 1/3 个有
-- `VOSR2Upscale` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `LTXVCropGuides` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `LTXAddVideoICLoRAGuideAdvanced` —— 1/3 个有
+- `LTXICLoRALoaderModelOnly` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
+- `easy lengthAnything` —— 1/3 个有
+- `easy mathString` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 宽度 | 1280 | 1280 - 1280 | 3 | 100% |
+| 高度 | 720 | 720 - 720 | 3 | 100% |
 | 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 1.2 | 1.2 - 1.2 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
@@ -83,11 +114,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1280，观测区间 1280 - 1280，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 720，观测区间 720 - 720，3 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 1.2，观测区间 1.2 - 1.2，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

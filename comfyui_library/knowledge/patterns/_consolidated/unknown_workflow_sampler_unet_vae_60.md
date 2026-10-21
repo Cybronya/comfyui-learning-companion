@@ -2,85 +2,83 @@
 name: unknown_workflow_sampler_unet_vae_60
 type: Unknown Workflow
 frequency: 10
-level: strong
-coverage: 0.7838
-common_nodes: [CLIPLoader, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, KSampler, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenPERewriteT8, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: RestoreCropBox, easy cleanGpuUsed, CR Prompt Text]
-members: [图片生成/图生图/2102719060134940673.json, 图片生成/图生图/2102935036923310081.json, 图片生成/图生图/2102952588135194626.json, 图片生成/图生图/2103026012618584066.json, 图片生成/图生图/2103518802859352065.json, 图片生成/图生图/2105844300620853250.json, 图片生成/图生图/2106042591421747201.json, 图片生成/文生图/Qwen Image 2.1 PE 文生图2609_2106042102424629249.json, 图片生成/文生图/Qwen Image 2.1 PE 文生图_2102653627042189314.json, 数字人/数字人/（稳定加速版）Qwen Image 2.1 PE 图像编辑_2103878968540745729.json]
+level: moderate
+coverage: 0.7041
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAELoader]
+problems: []
+missing: []
+members: [视频生成/图生视频/4步MiniMax-H3首帧生视频-LynnReal-Omni_2099804258936901633.json, 视频生成/图生视频/8步加速-Minimax参考生视频Sage Attention Patch+4步lora_2085390372628422658.json, 视频生成/图生视频/A-4 MiniMax H3 图生视频 _ 首尾帧控制 _ 原生音频 _ 两张图变一段电影_2084559447325757441.json, 视频生成/图生视频/BUNNY_H3_单采_er_sde_手动Sigma_2109936169202049026.json, 视频生成/图生视频/H3-官方长视频续接_2095155400160141314.json, 视频生成/图生视频/（2320）H3-最优官流_2089001915131711490.json, 视频生成/文生视频/H3-官方长视频_2092501348708343810.json, 视频生成/文生视频/影视级minimax h3，无限长视频接续-手动版_2096601875046027266.json, 视频生成/文生视频/长视频续接+去油+高质量minimax-H3-官方版-无限延长视频-手动版_2092974453855703041.json, 视频生成/文生视频/🔪🔪H3突破15秒！长视频不劣化！工作流拆解系列06集_2093951850499366914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_60
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/2102719060134940673.json、图片生成/图生图/2102935036923310081.json、图片生成/图生图/2102952588135194626.json、图片生成/图生图/2103026012618584066.json、图片生成/图生图/2103518802859352065.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/4步MiniMax-H3首帧生视频-LynnReal-Omni_2099804258936901633.json、视频生成/图生视频/8步加速-Minimax参考生视频Sage Attention Patch+4步lora_2085390372628422658.json、视频生成/图生视频/A-4 MiniMax H3 图生视频 _ 首尾帧控制 _ 原生音频 _ 两张图变一段电影_2084559447325757441.json、视频生成/图生视频/BUNNY_H3_单采_er_sde_手动Sigma_2109936169202049026.json、视频生成/图生视频/H3-官方长视频续接_2095155400160141314.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `KSampler`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenPERewriteT8`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 9/10 个有
-- `LoadImage` —— 8/10 个有
-- `QwenImage21Cache` —— 8/10 个有
-- `ResolutionSelector` —— 8/10 个有
-- `ColorMatch` —— 2/10 个有
-- `GrowMaskWithBlur` —— 2/10 个有
-- `Image Comparer (rgthree)` —— 2/10 个有
-- `LayerUtility: CropByMask V2` —— 2/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
-- `LayerUtility: ImageScaleRestore V2` —— 2/10 个有
-- `LayerUtility: RestoreCropBox` —— 2/10 个有
-- `AIO_Preprocessor` —— 1/10 个有
-- `ConcatTextOfUtils` —— 1/10 个有
-- `Lora Loader Stack (rgthree)` —— 1/10 个有
-- `LoraLoaderModelOnly` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `VAEDecode` —— 9/10 个有
+- `VAEDecodeAudio` —— 9/10 个有
+- `BasicScheduler` —— 8/10 个有
+- `LoraLoaderModelOnly` —— 8/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/10 个有
+- `LoadAudio` —— 7/10 个有
+- `ModelPreviewOverrideKJ` —— 7/10 个有
+- `ComfySwitchNode` —— 6/10 个有
+- `PrimitiveBoolean` —— 6/10 个有
+- `VHS_LoadVideo` —— 6/10 个有
+- `ExtendIntermediateSigmas` —— 5/10 个有
+- `GetImageRangeFromBatch` —— 5/10 个有
+- `MiniMaxH3AddGuide` —— 5/10 个有
+- `easy showAnything` —— 5/10 个有
+- `ImageAddNoise` —— 4/10 个有
+- `孤海注释` —— 4/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `GetNode` —— 3/10 个有
+- `SetNode` —— 3/10 个有
+- `ManualSigmas` —— 2/10 个有
+- `MiniMaxH3ImageToVideo` —— 2/10 个有
+- `ModelAttentionBackend` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `TrimAudioDuration` —— 2/10 个有
+- `忽略多组孤海` —— 2/10 个有
+- `CLIPTextEncode` —— 1/10 个有
+- `H3SigmaRefiner` —— 1/10 个有
+- `MiniMaxH3AVDecodeT8` —— 1/10 个有
+- `MiniMaxH3SigmaShift` —— 1/10 个有
+- `SolAttnMiniMax` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 10 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 10 | 100% |
-| 采样步数 | 40 | 4 - 40 | 10 | 70% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 4 - 40，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: CropByMask V2、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: ImageScaleRestore V2、LayerUtility: RestoreCropBox、easy cleanGpuUsed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

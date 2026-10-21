@@ -3,34 +3,30 @@ name: unknown_workflow_generic_380
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8
-common_nodes: [LoadAudio, RunningHub SongPrep, SaveAudio, easy showAnything]
+coverage: 0.5
+common_nodes: [CR Text, PrimitiveInt, RH_SeedreamV5ProTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/SongPrep自动读取歌曲歌词，结构，时间戳_1971634425463304194.json, 音频生成/音频生成/歌曲时间戳_1985895084761722882.json, 音频生成/音频生成/歌曲自动识别（歌词，结构，时间戳）SongPrep_1971843850652348418.json, 音频生成/音频生成/陆老师_歌词识别_1973720388846923777.json]
+members: [图片生成/文生图/即梦5.0Pro文生图_2075419122514620418.json, 图片生成/文生图/即梦5.0Pro文生图_2075429466570051585.json, 图片生成/文生图/即梦seedream5.0Pro文生图_2075411140364034050.json, 图片生成/文生图/即梦seedream5.0Pro文生图_2083458068712611842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_380
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/SongPrep自动读取歌曲歌词，结构，时间戳_1971634425463304194.json、音频生成/音频生成/歌曲时间戳_1985895084761722882.json、音频生成/音频生成/歌曲自动识别（歌词，结构，时间戳）SongPrep_1971843850652348418.json、音频生成/音频生成/陆老师_歌词识别_1973720388846923777.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/即梦5.0Pro文生图_2075419122514620418.json、图片生成/文生图/即梦5.0Pro文生图_2075429466570051585.json、图片生成/文生图/即梦seedream5.0Pro文生图_2075411140364034050.json、图片生成/文生图/即梦seedream5.0Pro文生图_2083458068712611842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub SongPrep`
-- `SaveAudio`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 3/4 个有
-- `SoundFlow_TrimAudio` —— 1/4 个有
+- `CR Text`
+- `PrimitiveInt`
+- `RH_SeedreamV5ProTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

@@ -3,90 +3,92 @@ name: unknown_workflow_video_lora_sampler_106
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.643571
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, GetNode, GrowMask, ImageResizeKJv2, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat]
+coverage: 0.5045
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetNode, ImageCompositeMasked, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
-missing: []
-members: [视频生成/图生视频/1970083557895008257.json, 视频生成/图生视频/1978476869785899009.json, 视频生成/图生视频/1980483253431877633.json, 视频生成/图生视频/1979152858195070977.json, 视频生成/图生视频/1971412866429599745.json, 视频生成/图生视频/2032500996332593153.json, 视频生成/图生视频/1975168158174679041.json, 视频生成/图生视频/1975168163258175490.json, 视频生成/图生视频/1977316291763675138.json, 视频生成/图生视频/2037208657041035265.json, 视频生成/图生视频/2039247939687686145.json, 视频生成/图生视频/1977681903191056385.json, 视频生成/图生视频/1975168167381217282.json, 视频生成/图生视频/1973741910089142274.json]
+missing: [Bookmark (rgthree), LayerUtility: CropByMask V2, Mask Fill Holes, PlaySound|pysssss, Switch any [Crystools], easy int, easy isMaskEmpty]
+members: [图片生成/图生图/2092576578264977410.json, 数字人/数字人/多人 动作迁移 Scail2循环 长视频 插帧_2097249659348672514.json, 数字人/数字人/数字人舞蹈动作+服装展示Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100056881053126657.json, 数字人/数字人/数字人舞蹈动作Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100047823772409858.json, 视频生成/图生视频/2070766031924191234.json, 视频生成/图生视频/Scail-2.5_2094612201767268354.json, 视频生成/图生视频/Scail2 人物角色替换 超长视频  动作迁移 循环动作迁移 高清长视频_2082827837156970498.json, 视频生成/图生视频/2077364440512688130.json, 视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频_2086402055798870018.json, 视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频！—转载阿硕_2092973975054934018.json, 视频生成/图生视频/2074789088183537665.json, 视频生成/图生视频/2081699626717114369.json, 视频生成/图生视频/长视频循环Scail-2最终完成版_2093359415452852225.json, 视频生成/文生视频/Wan 视频编辑-Scail2 V1-支持长视频_2095009418013405186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_106
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1970083557895008257.json、视频生成/图生视频/1978476869785899009.json、视频生成/图生视频/1980483253431877633.json、视频生成/图生视频/1979152858195070977.json、视频生成/图生视频/1971412866429599745.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/2092576578264977410.json、数字人/数字人/多人 动作迁移 Scail2循环 长视频 插帧_2097249659348672514.json、数字人/数字人/数字人舞蹈动作+服装展示Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100056881053126657.json、数字人/数字人/数字人舞蹈动作Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100047823772409858.json、视频生成/图生视频/2070766031924191234.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `BlockifyMask`
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `EmptyImage`
+- `GIMMVFI_interpolate`
+- `GetImageRangeFromBatch`
 - `GetNode`
-- `GrowMask`
+- `ImageCompositeMasked`
 - `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
 - `SetNode`
-- `SimpleMath+`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy promptConcat`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 13/14 个有
-- `AudioSeparation` —— 11/14 个有
-- `DownloadAndLoadWav2VecModel` —— 11/14 个有
-- `MultiTalkModelLoader` —— 11/14 个有
-- `MultiTalkWav2VecEmbeds` —— 11/14 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 10/14 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 10/14 个有
-- `RH_Captioner` —— 10/14 个有
-- `easy cleanGpuUsed` —— 10/14 个有
-- `DWPreprocessor` —— 8/14 个有
-- `FaceMaskFromPoseKeypoints` —— 8/14 个有
-- `GetImageSizeAndCount` —— 8/14 个有
-- `ImageCropByMaskAndResize` —— 8/14 个有
-- `PixelPerfectResolution` —— 8/14 个有
-- `Anything Everywhere` —— 7/14 个有
+- `PreviewImage` —— 13/14 个有
+- `ComfyMathExpression` —— 12/14 个有
+- `ImageConcatMulti` —— 12/14 个有
+- `PreviewAny` —— 12/14 个有
+- `TensorLoopClose` —— 12/14 个有
+- `TensorLoopOpen` —— 12/14 个有
+- `GetImageSize` —— 9/14 个有
+- `Bjornulf_ShowInt` —— 7/14 个有
 - `CR Text` —— 7/14 个有
-- `EmptyImage` —— 7/14 个有
-- `INTConstant` —— 7/14 个有
-- `ImageConcatMulti` —— 7/14 个有
-- `ImpactInt` —— 7/14 个有
-- `MaskToImage` —— 7/14 个有
-- `SaveAudio` —— 7/14 个有
-- `Text` —— 7/14 个有
-- `DrawViTPose` —— 6/14 个有
-- `OnnxDetectionModelLoader` —— 6/14 个有
-- `PoseAndFaceDetection` —— 6/14 个有
-- `DownloadAndLoadSAM2Model` —— 4/14 个有
-- `RH_LLMAPI_NODE` —— 4/14 个有
-- `Sam2Segmentation` —— 4/14 个有
-- `WanVideoEncode` —— 3/14 个有
-- `WanVideoUni3C_ControlnetLoader` —— 3/14 个有
-- `WanVideoUni3C_embeds` —— 3/14 个有
-- `ImageFromBatch` —— 2/14 个有
-- `PointsEditor` —— 2/14 个有
-- `SeCModelLoader` —— 2/14 个有
-- `SeCVideoSegmentation` —— 2/14 个有
-- `ClothesSegment` —— 1/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
-- `SaveAudioMP3` —— 1/14 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 7/14 个有
+- `MathExpression|pysssss` —— 7/14 个有
+- `ResizeImageMaskNode` —— 7/14 个有
+- `Bookmark (rgthree)` —— 5/14 个有
+- `GetImageSizeAndCount` —— 5/14 个有
+- `ImageStitch` —— 5/14 个有
+- `LayerUtility: CropByMask V2` —— 5/14 个有
+- `Mask Fill Holes` —— 5/14 个有
+- `PlaySound|pysssss` —— 5/14 个有
+- `PrimitiveBoolean` —— 5/14 个有
+- `PrimitiveStringMultiline` —— 5/14 个有
+- `Switch any [Crystools]` —— 5/14 个有
+- `ToBinaryMask` —— 5/14 个有
+- `VHS_VideoInfo` —— 5/14 个有
+- `easy ifElse` —— 5/14 个有
+- `easy int` —— 5/14 个有
+- `easy isMaskEmpty` —— 5/14 个有
+- `Label (rgthree)` —— 3/14 个有
+- `AutoCropFaces` —— 2/14 个有
+- `easy forLoopEnd` —— 2/14 个有
+- `easy forLoopStart` —— 2/14 个有
+- `Note Plus (mtb)` —— 1/14 个有
+- `PrimitiveFloat` —— 1/14 个有
+- `Wav2Lip` —— 1/14 个有
 
 ## 典型参数
 
@@ -98,4 +100,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：Bookmark (rgthree)、LayerUtility: CropByMask V2、Mask Fill Holes、PlaySound|pysssss、Switch any [Crystools]

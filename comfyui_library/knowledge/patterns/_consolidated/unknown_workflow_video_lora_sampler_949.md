@@ -3,78 +3,47 @@ name: unknown_workflow_video_lora_sampler_949
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5125
-common_nodes: [AutoCropFaces, BiRefNetRMBG, Display Int (rgthree), FloatConstant, GetNode, INTConstant, ImageListToImageBatch, ImageScaleToMaxDimension, ImpactMakeImageList, LoadImage, LoadLynxResampler, LoadWanVideoT5TextEncoder, LynxEncodeFaceIP, MaskToImage, PreviewAny, PreviewImage, SetNode, SomethingToString, StringConstantMultiline, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy mathInt, easy promptLine, easy seed]
+coverage: 0.949
+common_nodes: [Int, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.1_Vace_Lynx_无限时长_超高一致性和身份保持_1984167281481678850.json, 视频生成/文生视频/Wan2.2_Vace_Lynx_无限时长_超高一致性和人物高保真_1987615235005681665.json]
+members: [视频生成/文生视频/QwenVL图片反推提示词-图生视频KJ工作流_1983484440976531458.json, 视频生成/文生视频/1950891815438327809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_949
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.1_Vace_Lynx_无限时长_超高一致性和身份保持_1984167281481678850.json、视频生成/文生视频/Wan2.2_Vace_Lynx_无限时长_超高一致性和人物高保真_1987615235005681665.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/QwenVL图片反推提示词-图生视频KJ工作流_1983484440976531458.json、视频生成/文生视频/1950891815438327809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AutoCropFaces`
-- `BiRefNetRMBG`
-- `Display Int (rgthree)`
-- `FloatConstant`
-- `GetNode`
-- `INTConstant`
-- `ImageListToImageBatch`
-- `ImageScaleToMaxDimension`
-- `ImpactMakeImageList`
-- `LoadImage`
-- `LoadLynxResampler`
+- `Int`
 - `LoadWanVideoT5TextEncoder`
-- `LynxEncodeFaceIP`
-- `MaskToImage`
-- `PreviewAny`
-- `PreviewImage`
-- `SetNode`
-- `SomethingToString`
-- `StringConstantMultiline`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExtraModelSelect`
-- `WanVideoImageResizeToClosest`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy mathInt`
-- `easy promptLine`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCrop` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactMakeAnyList` —— 1/2 个有
-- `ImpactSelectNthItemOfAnyList` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `easy imageCount` —— 1/2 个有
+- `MultiplePathsInput` —— 1/2 个有
+- `Qwen3_VQA` —— 1/2 个有
+- `VideoLoader` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

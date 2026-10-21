@@ -3,52 +3,68 @@ name: unknown_workflow_video_lora_sampler_901
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.658
-common_nodes: [AudioSeparation, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, LongCatVoiceCloneTTS, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PreviewAudio, ReplaceVideoLatentFrames, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader, easy cleanGpuUsed]
+coverage: 0.518
+common_nodes: [Any2ListNode, Audio Duration (mtb), AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, CreateVideo, GetNode, ImageFromBatch, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PreviewAny, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy int, easy lengthAnything, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2054160233651548161.json, 视频生成/图生视频/2076667831231533057.json]
+members: [视频生成/图生视频/2019320483916812289.json, 视频生成/文生视频/官方新版数字人，全自动循环长视频数字人生成！_2050144606511214593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_901
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2054160233651548161.json、视频生成/图生视频/2076667831231533057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2019320483916812289.json、视频生成/文生视频/官方新版数字人，全自动循环长视频数字人生成！_2050144606511214593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any2ListNode`
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
 - `AudioSeparation`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ColorMatch`
+- `CreateVideo`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
+- `ImageFromBatch`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `LongCatVoiceCloneTTS`
-- `MultiTalkWav2VecEmbeds`
-- `NormalizeAudioLoudness`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchLoader`
+- `PreviewAny`
 - `PreviewAudio`
-- `ReplaceVideoLatentFrames`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `SetNode`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
-- `easy cleanGpuUsed`
+- `WanInfiniteTalkToVideo`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy indexAnything`
+- `easy int`
+- `easy lengthAnything`
+- `easy promptLine`
+- `easy showAnything`
 
 ## 典型参数
 

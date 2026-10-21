@@ -3,70 +3,74 @@ name: unknown_workflow_video_lora_sampler_361
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.652
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.5815
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2040053495893598209.json, 视频生成/图生视频/2056919116946173954.json, 视频生成/图生视频/2080550056238862337.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2083097564500549633.json, 视频生成/文生视频/LTX 2.3+PromptRelay 三图参考_2054192199897755650.json, 视频生成/文生视频/LTX2.3+PromptRelay+四图参考_2056629366276321282.json]
+members: [视频生成/图生视频/2065971442394689538.json, 视频生成/图生视频/2067900124038254593.json, 视频生成/图生视频/2068177667341508609.json, 视频生成/图生视频/2067174173994213378.json, 视频生成/图生视频/2076230597940432898.json, 视频生成/文生视频/多参考图与高动态视频生成_ Ltx 2.3 Licon-MSR_2063854107001180161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_361
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2040053495893598209.json、视频生成/图生视频/2056919116946173954.json、视频生成/图生视频/2080550056238862337.json、视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_2083097564500549633.json、视频生成/文生视频/LTX 2.3+PromptRelay 三图参考_2054192199897755650.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2065971442394689538.json、视频生成/图生视频/2067900124038254593.json、视频生成/图生视频/2068177667341508609.json、视频生成/图生视频/2067174173994213378.json、视频生成/图生视频/2076230597940432898.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImageResizeKJv2`
+- `INTConstant`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LowVRAMCheckpointLoader`
 - `ManualSigmas`
-- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 4/6 个有
-- `LTX2_NAG` —— 4/6 个有
+- `ComfyMathExpression` —— 4/6 个有
+- `GetNode` —— 4/6 个有
 - `LTXVAddGuideMulti` —— 4/6 个有
-- `LTXVAudioVAEDecode` —— 4/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `PathchSageAttentionKJ` —— 4/6 个有
-- `PromptRelayEncodeTimeline` —— 4/6 个有
-- `ComfyMathExpression` —— 2/6 个有
-- `LTXIdentityOverlapConditioning` —— 2/6 个有
-- `LatentUpscaleModelLoader` —— 2/6 个有
+- `SetNode` —— 4/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `KenChenLLMGeminiBananaImageCollageNode` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
 - `PreviewImage` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `RMBG` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `ShowText|pysssss` —— 2/6 个有
+- `llama_cpp_instruct_adv` —— 2/6 个有
+- `llama_cpp_model_loader` —— 2/6 个有
+- `llama_cpp_parameters` —— 2/6 个有
+- `孤海注释` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 361 | 97 - 465 | 6 | 51% |
-| 高度 | 24 | 24 - 25 | 6 | 98% |
+| 宽度 | 145 | 145 - 241 | 6 | 74% |
+| 高度 | 24 | 24 - 50 | 6 | 62% |
 
 ## 常见问题
 
@@ -74,5 +78,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 97 - 465，6 个样本
-- 高度 中位数 24，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）
+- 宽度 中位数 145，观测区间 145 - 241，6 个样本
+- 高度 中位数 24，观测区间 24 - 50，6 个样本

@@ -3,59 +3,63 @@ name: text_to_image_video_lora_sampler_203
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.7005
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, ImageColorMatch+, ImageResizeKJv2, Int, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, SAM3_VideoTrack, SCAIL2SimpleVideo, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, solarL_SaveImagesToZip]
+coverage: 0.925
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, UNETLoader, VAEDecode, VAELoader, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2082286551828094977.json, 视频生成/图生视频/超快超长视频生成｜pipiai-SCAIL2动作迁移视频_2095576706932367361.json]
+members: [视频生成/图生视频/InfiniteTalk照片开口说话｜数字人口播视频生成_2106564287643869186.json, 视频生成/图生视频/写实数字人｜高清数字人生成图生视频一键直出_2089843547364225026.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_203
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2082286551828094977.json、视频生成/图生视频/超快超长视频生成｜pipiai-SCAIL2动作迁移视频_2095576706932367361.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk照片开口说话｜数字人口播视频生成_2106564287643869186.json、视频生成/图生视频/写实数字人｜高清数字人生成图生视频一键直出_2089843547364225026.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImageColorMatch+`
-- `ImageResizeKJv2`
-- `Int`
+- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `SAM3_VideoTrack`
-- `SCAIL2SimpleVideo`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `Audio Duration` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `LogicUtil_CeilNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VHS_LoadAudioUpload` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,74 +3,73 @@ name: text_to_image_video_lora_sampler_142
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.748
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, ImageScaleToMaxDimension, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncodeTiled, VAELoader, VHS_VideoCombine, VisualizeSigmasKJ, easy cleanGpuUsed, easy clearCacheAll, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.92475
+common_nodes: [AudioConcat, BasicGuider, BatchImagesNode, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, GetImageRangeFromBatch, ImageBlur, Int, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RIFE VFI, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SolAttnMiniMax, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/4步加速多参考注入｜MiniMax H3视频生成+LTX放大_2093843847783739394.json, 视频生成/图生视频/LTX放大工作流视频生成4步加速ref-多参考注入MiniMax_2086205211500175361.json, 视频生成/图生视频/ref多参考注入4步加速｜MiniMax H3战斗特效+LTX放大_2094049739330375681.json, 视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json]
+members: [数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2106756389191372802.json, 数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2108613384685047809.json, 数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2109704350506508290.json, 数字人/数字人/MiniMax H3音频驱动数字人｜多人对话加速长视频处理_2108375930543624193.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_142
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/4步加速多参考注入｜MiniMax H3视频生成+LTX放大_2093843847783739394.json、视频生成/图生视频/LTX放大工作流视频生成4步加速ref-多参考注入MiniMax_2086205211500175361.json、视频生成/图生视频/ref多参考注入4步加速｜MiniMax H3战斗特效+LTX放大_2094049739330375681.json、视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2106756389191372802.json、数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2108613384685047809.json、数字人/数字人/MiniMax H3音频驱动数字人多人对话加速版长视频处理工具_2109704350506508290.json、数字人/数字人/MiniMax H3音频驱动数字人｜多人对话加速长视频处理_2108375930543624193.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AudioConcat`
 - `BasicGuider`
-- `BasicScheduler`
-- `CFGGuider`
+- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `ComfyMathExpression`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImageScaleToMaxDimension`
+- `GetImageRangeFromBatch`
+- `ImageBlur`
+- `Int`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVConditioning`
-- `LTXVLoopingSampler`
-- `LTXVSpatioTemporalTiledVAEDecode`
+- `LoadAudio`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `RIFE VFI`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SolAttnPatch`
-- `SpectrumApplyMiniMaxH3`
+- `SaveImage`
+- `SolAttnMiniMax`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncodeTiled`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 - `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 3/4 个有
-- `LTXVAudioVAELoader` —— 3/4 个有
-- `ManualSigmas` —— 3/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
-- `VHS_LoadAudio` —— 3/4 个有
-- `MiniMaxH3ImageToVideo` —— 1/4 个有
-- `ResizeImageMaskNode` —— 1/4 个有
+- `CR Combine Prompt` —— 3/4 个有
+- `孤海注释` —— 3/4 个有
+- `ImageBatchRepeatInterleaving` —— 2/4 个有
 
 ## 典型参数
 
@@ -88,7 +87,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -99,4 +98,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/4 个样本）：Steps较低可能导致细节不足

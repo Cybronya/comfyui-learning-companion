@@ -1,76 +1,54 @@
 ---
 name: unknown_workflow_video_sampler_vae_27
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.91275
-common_nodes: [GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImageResizeKJ, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.966154
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
-missing: [Image Blank, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, String Literal, GetImageSize+]
-members: [视频生成/图生视频/1923407399171125249.json, 视频生成/图生视频/1923698037238263809.json, 视频生成/图生视频/1909082788321239041.json, 视频生成/图生视频/1909078127585468418.json, 视频生成/图生视频/1933797677106946049.json, 视频生成/图生视频/1923226071490359297.json, 视频生成/图生视频/1923186184321683457.json, 视频生成/图生视频/1927603788339634178.json, 视频生成/文生视频/1933086733389139969.json, 视频生成/文生视频/1945819044681576449.json, 视频生成/文生视频/Self Forcing-VACE-七组实践_2072999742382317568.json, 视频生成/文生视频/lightx2v-V2-VACE-七组实践_2072999693577396224.json]
+missing: [String Literal]
+members: [视频生成/文生视频/1934538720651747329.json, 视频生成/文生视频/1934893611441922049.json, 视频生成/文生视频/1946373102530125826.json, 视频生成/文生视频/1947181441907732481.json, 视频生成/文生视频/1947180692524019713.json, 视频生成/文生视频/1943829823070539777.json, 视频生成/文生视频/1940968493145866242.json, 视频生成/文生视频/1945637043122917377.json, 视频生成/文生视频/1947907852955463682.json, 视频生成/文生视频/1934584295552163842.json, 视频生成/文生视频/1933775109922709506.json, 视频生成/文生视频/1947915676540383234.json, 视频生成/文生视频/1935006868597350401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_27
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1923407399171125249.json、视频生成/图生视频/1923698037238263809.json、视频生成/图生视频/1909082788321239041.json、视频生成/图生视频/1909078127585468418.json、视频生成/图生视频/1933797677106946049.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/文生视频/1934538720651747329.json、视频生成/文生视频/1934893611441922049.json、视频生成/文生视频/1946373102530125826.json、视频生成/文生视频/1947181441907732481.json、视频生成/文生视频/1947180692524019713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `GetImageSize`
-- `INTConstant`
-- `Image Blank`
-- `ImageCompositeMasked`
-- `ImageResizeKJ`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
-- `LoadImage`
+全部 13 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 11/12 个有
-- `String Literal` —— 10/12 个有
-- `WanVideoSLG` —— 10/12 个有
-- `WanVideoTeaCache` —— 10/12 个有
-- `WanVideoVACEEncode` —— 10/12 个有
-- `ImageConcanate` —— 7/12 个有
-- `ImagePadKJ` —— 6/12 个有
-- `LayerUtility: PurgeVRAM` —— 6/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/12 个有
-- `RH_Captioner` —— 6/12 个有
-- `WanVideoVACEModelSelect` —— 6/12 个有
-- `easy ifElse` —— 6/12 个有
-- `easy showAnything` —— 6/12 个有
-- `AIO_Preprocessor` —— 4/12 个有
-- `GetImageSize+` —— 4/12 个有
-- `GetImageSizeAndCount` —— 4/12 个有
-- `GrowMaskWithBlur` —— 4/12 个有
-- `InpaintPreprocessor` —— 4/12 个有
-- `MaskToImage` —— 4/12 个有
-- `VHS_LoadVideo` —— 4/12 个有
-- `WanVideoLoraSelect` —— 4/12 个有
-- `WanVideoVACEStartToEndFrame` —— 4/12 个有
-- `KepStringLiteral` —— 2/12 个有
-- `WanVideoEncode` —— 2/12 个有
-- `WanVideoFreeInitArgs` —— 2/12 个有
-- `WanVideoPhantomEmbeds` —— 2/12 个有
+- `DownloadAndLoadGIMMVFIModel` —— 12/13 个有
+- `GIMMVFI_interpolate` —— 12/13 个有
+- `WanVideoApplyNAG` —— 12/13 个有
+- `WanVideoTextEncodeSingle` —— 12/13 个有
+- `ImageScaleToMegapixels` —— 11/13 个有
+- `UpscaleModelLoader` —— 11/13 个有
+- `WanVideoSLG` —— 11/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/13 个有
+- `WanVideoLoraSelect` —— 5/13 个有
+- `LoadImageFromUrl` —— 2/13 个有
+- `Note Plus (mtb)` —— 2/13 个有
+- `WanVideoTorchCompileSettings` —— 2/13 个有
+- `String Literal` —— 1/13 个有
+- `WanVideoTeaCache` —— 1/13 个有
+- `WanVideoTextEncode` —— 1/13 个有
 
 ## 典型参数
 
@@ -82,4 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Blank、LayerMask: LoadFlorence2Model、LayerMask: ObjectDetectorFL2、LayerMask: SAM2Ultra、LayerUtility: PurgeVRAM
+- 这些节点还没有知识卡，系统对它们的理解有限：String Literal

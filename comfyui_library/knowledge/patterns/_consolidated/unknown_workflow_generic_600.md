@@ -1,35 +1,49 @@
 ---
 name: unknown_workflow_generic_600
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [ImageCompare, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.718
+common_nodes: [BreezeTTS2LoadModel, BreezeTTS2MultiSpeaker, BreezeTTS2Speaker, BreezeTTS2VoiceClone, BreezeTTS2VoiceDesign, BreezeTTS2VoiceDirection, Fast Groups Bypasser (rgthree), GetNode, LoadAudio, PreviewAudio, SaveAudioAdvanced, SetNode, ShowText|pysssss, Text Multiline, WhisperSTT, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_longcat_image_edit.json, comfyui-workflow-templates-json/utility_bria_remove_image_background.json]
+members: [音频生成/音频生成/001-brezze-tts2-智能创作助手_2095422714638069762.json, 音频生成/音频生成/001-brezze-tts2-智能创作助手v3.2_2096507341595299841.json, 音频生成/音频生成/001-brezze-tts2-智能创作助手v3.4_2097607239157768193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_600
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_longcat_image_edit.json、comfyui-workflow-templates-json/utility_bria_remove_image_background.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/001-brezze-tts2-智能创作助手_2095422714638069762.json、音频生成/音频生成/001-brezze-tts2-智能创作助手v3.2_2096507341595299841.json、音频生成/音频生成/001-brezze-tts2-智能创作助手v3.4_2097607239157768193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageCompare`
-- `LoadImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `BreezeTTS2LoadModel`
+- `BreezeTTS2MultiSpeaker`
+- `BreezeTTS2Speaker`
+- `BreezeTTS2VoiceClone`
+- `BreezeTTS2VoiceDesign`
+- `BreezeTTS2VoiceDirection`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudioAdvanced`
+- `SetNode`
+- `ShowText|pysssss`
+- `Text Multiline`
+- `WhisperSTT`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `338a94d3-1c81-48c8-9edd-9907114ba7e7` —— 1/2 个有
-- `BriaRemoveImageBackground` —— 1/2 个有
+- `Any Switch (rgthree)` —— 2/3 个有
 
 ## 典型参数
 
@@ -41,4 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_47
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.927917
-common_nodes: [CR Prompt Text, SaveAudio, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.869615
+common_nodes: [LoadImage, SaveImage]
 problems: []
-missing: []
-members: [数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json, 数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json, 音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json, 音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json, 音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json, 音频生成/音频生成/Breeze TTS 2 声音再设计_2096223350476599297.json, 音频生成/音频生成/Breeze TTS 2 声音再设计（非常好高保真还原原声 读取文字）_2109829100578885633.json, 音频生成/音频生成/Breeze TTS 2 声音导演2608_2096515625681244161.json, 音频生成/音频生成/Breeze TTS 2 声音导演_2095397305070473217.json, 音频生成/音频生成/Breeze TTS 2 声音设计 （自用）_2108146608234909698.json, 音频生成/音频生成/Breeze TTS2_自动情绪_音频克隆_设计_2098331150149308417.json, 音频生成/音频生成/【aide】Breeze TTS2_自动情绪_音频克隆_设计_2099749651778985986.json]
+missing: [CR Text]
+members: [图片生成/图生图/2051210945074081793.json, 图片生成/图生图/2063185430509608961.json, 图片生成/图生图/2063196272881922050.json, 图片生成/图生图/2080574005882482689.json, 图片生成/图生图/2099407411814690818.json, 图片生成/文生图/Gemini 3.1 API调用-文生图+图生图_2027300959487008770.json, 图片生成/文生图/东哥-大蕉2-4K单次0.08_2027369777357922306.json, 图片生成/文生图/全新大蕉2-4K单次0.08_2027333499585302529.json, 图片生成/文生图/全能图像G image2.0单图编辑低价渠道版_2059134711229931521.json, 图片生成/文生图/全能图像V2整合-文生图-单图-双图-多图编辑_2027198764309549058.json, 图片生成/文生图/全能图像王V2-单次0.08_2027118980514713601.json, 图片生成/文生图/全能图片 2.0 API 调用-文生图+图生图_2028057754023239682.json, 图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_47
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json、数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json、音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json、音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json、音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/2051210945074081793.json、图片生成/图生图/2063185430509608961.json、图片生成/图生图/2063196272881922050.json、图片生成/图生图/2080574005882482689.json、图片生成/图生图/2099407411814690818.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveAudio`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+全部 13 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 10/12 个有
-- `LoadAudio` —— 10/12 个有
-- `PreviewAudio` —— 10/12 个有
-- `T8_BreezeTTS_DirectionRequest` —— 7/12 个有
-- `T8_BreezeTTS_DesignRequest` —— 4/12 个有
-- `T8_BreezeTTS_CloneRequest` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `RHLLMChatNode` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
+- `CR Text` —— 11/13 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 8/13 个有
+- `RH_RhartImageG2ImageToImage` —— 7/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
+- `RH_RhartImageG2TextToImage` —— 1/13 个有
+- `孤海注释` —— 1/13 个有
 
 ## 典型参数
 
@@ -50,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text

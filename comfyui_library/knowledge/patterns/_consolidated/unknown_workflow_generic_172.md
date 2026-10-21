@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_172
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.889
-common_nodes: [ImageResize+, LoadImage, RH_Sora2_I2V_Realistic, SaveVideo, easy compare, easy imageSwitch]
+coverage: 0.753
+common_nodes: [DramaBoxLoader, DramaBoxTTS, JjkText, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/1994395763994206210.json, 视频生成/图生视频/1973551516617412609.json, 视频生成/图生视频/2054431460349751298.json, 视频生成/图生视频/1997595577485561858.json, 视频生成/图生视频/2001547196065562625.json, 视频生成/图生视频/2017785280387878914.json]
+members: [音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2056283924774612993.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2057834156830322690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_172
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1994395763994206210.json、视频生成/图生视频/1973551516617412609.json、视频生成/图生视频/2054431460349751298.json、视频生成/图生视频/1997595577485561858.json、视频生成/图生视频/2001547196065562625.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageResize+`
-- `LoadImage`
-- `RH_Sora2_I2V_Realistic`
-- `SaveVideo`
-- `easy compare`
-- `easy imageSwitch`
+全部 7 个 workflow 都包含：
+- `DramaBoxLoader`
+- `DramaBoxTTS`
+- `JjkText`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/6 个有
-- `PreviewAny` —— 2/6 个有
-- `RH_LLMAPI_NODE` —— 2/6 个有
+- `DramaBoxAudioPreview` —— 6/7 个有
+- `DramaBoxVoiceClone` —— 4/7 个有
+- `LoadAudio` —— 4/7 个有
+- `PrimitiveFloat` —— 2/7 个有
 
 ## 典型参数
 

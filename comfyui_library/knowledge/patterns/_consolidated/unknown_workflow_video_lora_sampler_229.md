@@ -3,85 +3,66 @@ name: unknown_workflow_video_lora_sampler_229
 type: Unknown Workflow
 frequency: 9
 level: strong
-coverage: 0.776222
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.460222
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/2071860174570221570.json, 视频生成/图生视频/2072501093262774273.json, 视频生成/图生视频/2071400172424351746.json, 视频生成/图生视频/2072215231262191617.json, 视频生成/图生视频/2072162271043870721.json, 视频生成/图生视频/2072986209936297986.json, 视频生成/图生视频/2073313220749967360.json, 视频生成/图生视频/2073299453481668610.json, 视频生成/图生视频/2071800002871123969.json]
+members: [视频生成/图生视频/2064247414655115266.json, 视频生成/图生视频/2064232122084319234.json, 视频生成/图生视频/2013644132241121282.json, 视频生成/图生视频/2068809925526118401.json, 视频生成/文生视频/video_wan2_2_bernini_i2i_2064270918700060673.json, 视频生成/文生视频/video_wan2_2_bernini_multi_r2v_2064268091416207362.json, 视频生成/文生视频/video_wan2_2_bernini_r2v_2064265816681570306.json, 视频生成/文生视频/video_wan2_2_bernini_rv2v_change_style_2064258770699636737.json, 视频生成/文生视频/video_wan2_2_bernini_rv2v_changebg_2064251615900688385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_229
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2071860174570221570.json、视频生成/图生视频/2072501093262774273.json、视频生成/图生视频/2071400172424351746.json、视频生成/图生视频/2072215231262191617.json、视频生成/图生视频/2072162271043870721.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2064247414655115266.json、视频生成/图生视频/2064232122084319234.json、视频生成/图生视频/2013644132241121282.json、视频生成/图生视频/2068809925526118401.json、视频生成/文生视频/video_wan2_2_bernini_i2i_2064270918700060673.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicScheduler`
+- `CFGZeroStar`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
+- `GetNode`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `ShowText|pysssss`
+- `PathchSageAttentionKJ`
+- `SetNode`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `SCAIL2ChunkKeyframeExtractor` —— 8/9 个有
-- `SCAIL2KeyframeMatrixViewer` —— 8/9 个有
-- `GetImageSize` —— 7/9 个有
-- `ImageConcatMulti` —— 7/9 个有
-- `MaskToImage` —— 7/9 个有
-- `PreviewImage` —— 7/9 个有
-- `SCAIL2AlignReferenceFaceToCrop` —— 7/9 个有
-- `SCAIL2FaceCompositeBack` —— 7/9 个有
-- `SCAIL2HeadTrackCrop` —— 7/9 个有
-- `CR Text` —— 5/9 个有
-- `Int` —— 5/9 个有
-- `SimpleMath+` —— 5/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/9 个有
-- `RH_RhartImageG2ImageToImage` —— 3/9 个有
-- `SaveImage` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `TTResolutionSelector` —— 3/9 个有
-- `CreateVideo` —— 2/9 个有
-- `FlashVSR_SM_KSampler` —— 2/9 个有
-- `FlashVSR_SM_Model` —— 2/9 个有
-- `SaveVideo` —— 2/9 个有
-- `easy int` —— 2/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `WanAnimatePlus LoraSelectMulti` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `BatchImagesNode` —— 7/9 个有
+- `BerniniConditioning` —— 7/9 个有
+- `VHS_LoadVideo` —— 7/9 个有
+- `CLIPVisionEncode` —— 2/9 个有
+- `CM_IntToFloat` —— 1/9 个有
+- `CR Seed` —— 1/9 个有
+- `ComfyMathExpression` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `WanFirstMiddleLastFrameToVideo` —— 1/9 个有
+- `WanImageToVideo` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1.34378e+09 | - | 2 | 82% |
-| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
-| 采样算法 | 2 | - | 2 | 100% |
-| 调度器 | 3.5 | - | 2 | 100% |
-| 重绘幅度 | 11 | - | 2 | 100% |
+| 采样步数 | fixed | - | 9 | 78% |
+| Prompt 约束强度(CFG) | 6 | 6 - 8 | 9 | 90% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | lcm | - | 9 | 89% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -89,10 +70,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.34378e+09，样本不足，未给区间，2 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
-- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.59208e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样步数 最常用 fixed，9 个样本，一致性 78%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，9 个样本，取值集中（一致性 90%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，9 个样本，一致性 89%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

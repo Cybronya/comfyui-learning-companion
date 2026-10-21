@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_471
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.909
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.90175
+common_nodes: [CR Text, LoadAudio, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/谷歌3系列视频模型_2100405352658456578.json, 视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json, 视频生成/文生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json]
+members: [音频生成/音频生成/VoxCPM2  声音克隆 音色迁移 方言 韵律更自然、VoxCPM2细节更丰富_2041826724777824258.json, 音频生成/音频生成/VoxCPM2-音频合成-v5.0_2049766179509678081.json, 音频生成/音频生成/VoxCPM2声音克隆--角色声音-续写西部克苏鲁_2043940742078406657.json, 音频生成/音频生成/VoxCPM2声音克隆-用提示词控制：情绪、语气、声调_2060738565843275777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_471
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/谷歌3系列视频模型_2100405352658456578.json、视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json、视频生成/文生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2  声音克隆 音色迁移 方言 韵律更自然、VoxCPM2细节更丰富_2041826724777824258.json、音频生成/音频生成/VoxCPM2-音频合成-v5.0_2049766179509678081.json、音频生成/音频生成/VoxCPM2声音克隆--角色声音-续写西部克苏鲁_2043940742078406657.json、音频生成/音频生成/VoxCPM2声音克隆-用提示词控制：情绪、语气、声调_2060738565843275777.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 2/3 个有
-- `LLVeo31` —— 1/3 个有
+- `AudioCrop` —— 2/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,117 +1,74 @@
 ---
 name: text_to_image_sampler_clip_unet_2
 type: Text To Image
-frequency: 11
-level: weak
-coverage: 0.695182
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 62
+level: strong
+coverage: 0.987048
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, easy getNode, easy setNode, CR Prompt Text, Seed (rgthree)]
-members: [图片生成/图生图/2102094333674614786.json, 图片生成/图生图/2102238523955965954.json, 图片生成/图生图/2102391245615230977.json, 图片生成/图生图/2102495775229046786.json, 图片生成/图生图/2102543389462982657.json, 图片生成/图生图/2102555854674419713.json, 图片生成/图生图/2102585557531578370.json, 图片生成/图生图/2102628402149806081.json, 图片生成/图生图/Qwen Image 2.1人物换姿势｜服装模特姿势复刻，摆拍角度随心控_2107360567005634561.json, 图片生成/文生图/Qwen Image 2.1文生编辑一锅端工作流详拆系列，局部重绘文生图图生图_2103952709224325121.json, 图片生成/文生图/Qwen Image 2.1文生编辑一锅端详拆第11集｜新手逐节点拆解_2103728447376936962.json]
+missing: []
+members: [图片生成/文生图/Krea2 文生图工作流_2082528592348663809.json, 图片生成/文生图/Krea2 风格LoRA测试—rm_style_2073326106110939137.json, 图片生成/文生图/Krea2+雯雯的后宫女体Lora女体｜极致身材_2077364146932375554.json, 图片生成/文生图/Krea2+雯雯的后宫极致女体LoRA｜极致美图_2077343716477591553.json, 图片生成/文生图/Krea2-Turbo-bf16高精度真实文生图_2084862986652573697.json, 图片生成/文生图/Krea2-Turbo_CG半写实_2102648900237746178.json, 图片生成/文生图/Krea2-Turbo写实黑白线条漫画_2073375993842192385.json, 图片生成/文生图/Krea2-Turbo文生图_2093140387652268034.json, 图片生成/文生图/Krea2-Turbo真实文生图_2073286653266972674.json, 图片生成/文生图/Krea2-bf16文生美图_手机壁纸_性感美女_2096811520628969473.json, 图片生成/文生图/Krea2-bf16蜂腰大雷甜妹_2097197796184125442.json, 图片生成/文生图/Krea2_大雷美女高清写真_2091755442543353857.json, 图片生成/文生图/Krea2一键生成长腿美女_2094094903658762241.json, 图片生成/文生图/Krea2云璃cos_2095826353621921794.json, 图片生成/文生图/Krea2亮丝肉腿微胖美女_2091803718739120129.json, 图片生成/文生图/Krea2人像艺术写真_2097527135668891650.json, 图片生成/文生图/Krea2佩丽卡cos_2094812055621693441.json, 图片生成/文生图/Krea2古装汉服肚兜美女_2100887170465751041.json, 图片生成/文生图/Krea2吊袜带裤袜_2100951802479996930.json, 图片生成/文生图/Krea2娜娜莉cos_2095026871787409409.json, 图片生成/文生图/Krea2安魂曲cos_2095031801826861058.json, 图片生成/文生图/Krea2小吱cos_2095024950821343234.json, 图片生成/文生图/Krea2小昔涟cos_2095878485515522050.json, 图片生成/文生图/Krea2微胖丰满女孩_2097203219230453762.json, 图片生成/文生图/Krea2性感长腿美女_2094651824216297473.json, 图片生成/文生图/Krea2文生图+雯雯的后宫姿态LoRA｜极致体态_2077373256029532161.json, 图片生成/文生图/Krea2文生图_2070027143425380354.json, 图片生成/文生图/Krea2文生图工作流高质量图像生成工作流_2084108725983469570.json, 图片生成/文生图/Krea2文生图工作流高质量图像生成工作流_2084121290994180098.json, 图片生成/文生图/Krea2文生图｜极致美女｜女体LoRA｜姿态LoRA_2078650153858322433.json, 图片生成/文生图/Krea2文生图｜流量密码｜美女姿态｜极致身材_2078669475582406657.json, 图片生成/文生图/Krea2文生图｜流量捕手｜姿势LoRA｜美女工作流_2078284038577672194.json, 图片生成/文生图/Krea2文生图｜流量美女｜姿态｜雯雯的后宫_2078290246277619713.json, 图片生成/文生图/Krea2星cos_2095877212032557058.json, 图片生成/文生图/Krea2更多姿势和动作_2093698643550367746.json, 图片生成/文生图/Krea2最强N版文生图_2074471679039991809.json, 图片生成/文生图/Krea2洛茜cos_2094811391113908226.json, 图片生成/文生图/Krea2清纯甜妹写真_2096454548469669889.json, 图片生成/文生图/Krea2清纯甜妹小萝莉_2093155301771014146.json, 图片生成/文生图/Krea2满血版+雯雯的后宫Lora女体+雯雯的后宫Lora姿势_2077240258856579073.json, 图片生成/文生图/Krea2满血版+雯雯的后宫女体Lora=极致人体_2075846942990618625.json, 图片生成/文生图/Krea2满血版文生图无水印_2071835370945335298.json, 图片生成/文生图/Krea2火辣性感美女_2092075467779166209.json, 图片生成/文生图/Krea2火辣甜妹美女_2092447944023822337.json, 图片生成/文生图/Krea2爻光cos_2095875906177949697.json, 图片生成/文生图/Krea2电影艺术_光影滤镜_人像写真_2092460865395187713.json, 图片生成/文生图/Krea2知更鸟cos_2095819716760788993.json, 图片生成/文生图/Krea2祀cos_2094813381483126786.json, 图片生成/文生图/Krea2管理员cos_2094809500573331458.json, 图片生成/文生图/Krea2美女真实感写真_2094788022050050049.json, 图片生成/文生图/Krea2美少女真实文生图_2073352051769303042.json, 图片生成/文生图/Krea2薄荷cos_2095030060561551361.json, 图片生成/文生图/Krea2远坂凛cos_2095832259373912065.json, 图片生成/文生图/Krea2逼真美女人像写真_2093976269892440065.json, 图片生成/文生图/Krea2遐蝶cos_2095881582455386114.json, 图片生成/文生图/Krea2遐蝶皮肤cos_2095880236570337281.json, 图片生成/文生图/Krea2长腿模特美女_2093983985759248385.json, 图片生成/文生图/Krea2长腿白丝甜妹_2094364015505002498.json, 图片生成/文生图/Krea2长腿白丝甜妹_2097314616442445826.json, 图片生成/文生图/Krea2长腿空姐制服诱惑_2094397008974012417.json, 图片生成/文生图/Krea2长腿美女模特_2093162367407448066.json, 图片生成/文生图/Krea2零cos_2095028440440336385.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/2102094333674614786.json、图片生成/图生图/2102238523955965954.json、图片生成/图生图/2102391245615230977.json、图片生成/图生图/2102495775229046786.json、图片生成/图生图/2102543389462982657.json…）
+> 由 `engine/knowledge_consolidation` 从 62 个 workflow 归纳得出（图片生成/文生图/Krea2 文生图工作流_2082528592348663809.json、图片生成/文生图/Krea2 风格LoRA测试—rm_style_2073326106110939137.json、图片生成/文生图/Krea2+雯雯的后宫女体Lora女体｜极致身材_2077364146932375554.json、图片生成/文生图/Krea2+雯雯的后宫极致女体LoRA｜极致美图_2077343716477591553.json、图片生成/文生图/Krea2-Turbo-bf16高精度真实文生图_2084862986652573697.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：62
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 62 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LoadImage`
-- `PreviewImage`
-- `QwenImage21Cache`
 - `ResolutionSelector`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 10/11 个有
-- `LoraLoaderModelOnly` —— 10/11 个有
-- `Seed (rgthree)` —— 10/11 个有
-- `ShowText|pysssss` —— 10/11 个有
-- `easy setNode` —— 10/11 个有
-- `solarL_SaveImagesToZip` —— 10/11 个有
-- `孤海注释` —— 10/11 个有
-- `BatchImagesNode` —— 8/11 个有
-- `GetNode` —— 8/11 个有
-- `PreviewAny` —— 8/11 个有
-- `SetNode` —— 8/11 个有
-- `TextGenerateLTX2Prompt` —— 8/11 个有
-- `easy showAnything` —— 7/11 个有
-- `SeedVR2LoadDiTModel` —— 4/11 个有
-- `SeedVR2LoadVAEModel` —— 4/11 个有
-- `SeedVR2VideoUpscaler` —— 4/11 个有
-- `Any Switch (rgthree)` —— 3/11 个有
-- `ImageScaleBy` —— 3/11 个有
-- `RHLLMChatNode` —— 3/11 个有
-- `ResizeLongestToNode` —— 3/11 个有
-- `easy getNode` —— 3/11 个有
-- `EmptyFlux2LatentImage` —— 2/11 个有
-- `Fast Bypasser (rgthree)` —— 2/11 个有
-- `LoraLoader` —— 2/11 个有
-- `PrimitiveBoolean` —— 2/11 个有
-- `SplitImageWithAlpha` —— 2/11 个有
-- `VOSR2ModelLoader` —— 2/11 个有
-- `VOSR2Upscale` —— 2/11 个有
-- `easy float` —— 2/11 个有
-- `easy int` —— 2/11 个有
-- `ImageResize+` —— 1/11 个有
-- `LayerUtility: PurgeVRAM` —— 1/11 个有
-- `TTP_Image_Assy` —— 1/11 个有
-- `TTP_Image_Tile_Batch` —— 1/11 个有
-- `TTP_Tile_image_size` —— 1/11 个有
-- `easy imageSize` —— 1/11 个有
+- `ModelSamplingAuraFlow` —— 59/62 个有
+- `CompressImages` —— 56/62 个有
+- `LoraLoaderModelOnly` —— 51/62 个有
+- `ConditioningZeroOut` —— 5/62 个有
+- `ComfySwitchNode` —— 3/62 个有
+- `CustomAddLabel` —— 3/62 个有
+- `Lora Loader Stack (rgthree)` —— 3/62 个有
+- `easy boolean` —— 3/62 个有
+- `ConditioningKrea2Rebalance` —— 1/62 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 11 | 0% |
-| 高度 | 80 | 80 - 1024 | 11 | 0% |
-| 采样步数 | 4 | 4 - 20 | 11 | 16% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 11 | 76% |
-| 采样算法 | er_sde | - | 11 | 91% |
-| 调度器 | beta | - | 11 | 91% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| LoRA 模型强度 | 0.4 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | 512 - 1024 | 62 | 77% |
+| 高度 | 1024 | 512 - 2048 | 62 | 53% |
+| 采样步数 | 8 | 8 - 8 | 62 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 62 | 100% |
+| 采样算法 | er_sde | - | 62 | 97% |
+| 调度器 | simple | - | 62 | 84% |
+| 重绘幅度 | 1 | 1 - 1 | 62 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 62/62 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，11 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，11 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 20，11 个样本，取值分散，一致性仅 16%
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，11 个样本
-- 采样算法 最常用 er_sde，11 个样本，一致性 91%
-- 调度器 最常用 beta，11 个样本，一致性 91%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（12/11 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageReel、LayerUtility: ImageReelComposit、easy getNode、easy setNode、CR Prompt Text
+- 宽度 中位数 1024，观测区间 512 - 1024，62 个样本
+- 高度 中位数 1024，观测区间 512 - 2048，62 个样本
+- 采样步数 中位数 8，观测区间 8 - 8，62 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，62 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，62 个样本，一致性 97%
+- 调度器 最常用 simple，62 个样本，一致性 84%
+- 重绘幅度 中位数 1，观测区间 1 - 1，62 个样本，取值集中（一致性 100%）
+- 高发问题（62/62 个样本）：Steps较低可能导致细节不足

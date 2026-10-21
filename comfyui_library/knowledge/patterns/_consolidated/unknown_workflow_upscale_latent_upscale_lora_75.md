@@ -3,94 +3,74 @@ name: unknown_workflow_upscale_latent_upscale_lora_75
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7775
-common_nodes: [Any Switch (rgthree), Audio Duration (mtb), CFGGuider, CLIPTextEncode, CR Float To Integer, CreateVideo, Display Int (rgthree), DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, INTConstant, ImageScaleBy, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LTXVTiledVAEDecode, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveFloat, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader]
+coverage: 0.8345
+common_nodes: [BlockifyMask, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, FaceSegment, GetImageRangeFromBatch, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXVAddLatentGuide, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocessMasks, LTXVSeparateAVLatent, LTXVSetVideoLatentNoiseMasks, LatentUpscaleModelLoader, LoadAudio, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeMask, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VAEEncode, VHS_LoadVideoFFmpeg, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3-IC-LORA-Dual-Character超强一致性（20s）_2049456418725568514.json, 视频生成/文生视频/Sulphur_bf16无限制极速版（10s 2min））_2054475235839234050.json]
+members: [视频生成/图生视频/2073317542965366785.json, 音频生成/音频生成/LTX2.3 V2V 视频对口型_2039622711588167681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_75
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LTX2.3-IC-LORA-Dual-Character超强一致性（20s）_2049456418725568514.json、视频生成/文生视频/Sulphur_bf16无限制极速版（10s 2min））_2054475235839234050.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2073317542965366785.json、音频生成/音频生成/LTX2.3 V2V 视频对口型_2039622711588167681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Duration (mtb)`
+- `BlockifyMask`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Float To Integer`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `CreateVideo`
-- `Display Int (rgthree)`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
+- `FaceSegment`
+- `GetImageRangeFromBatch`
 - `GetImageSize`
-- `INTConstant`
-- `ImageScaleBy`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
+- `LTXVAddLatentGuide`
 - `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVAudioVideoMask`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
+- `LTXVPreprocessMasks`
 - `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LTXVTiledVAEDecode`
+- `LTXVSetVideoLatentNoiseMasks`
 - `LatentUpscaleModelLoader`
 - `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ResizeMask`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `SetLatentNoiseMask`
-- `SimpleCalculatorKJ`
 - `SolidMask`
 - `TrimAudioDuration`
-- `UNETLoader`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `DuckHideNode` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LTX2_NAG` —— 1/2 个有
-- `LTXVAddGuide` —— 1/2 个有
-- `LTXVAudioVAELoader` —— 1/2 个有
-- `LTXVImgToVideoInplace` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `ResizeImageMaskNode` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `VisionLLMNode` —— 1/2 个有
+- `DualCLIPLoaderGGUF` —— 1/2 个有
+- `LTXAVTextEncoderLoader` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -98,6 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

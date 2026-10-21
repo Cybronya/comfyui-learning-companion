@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_165
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.9165
-common_nodes: [DeepTranslatorTextNode, ImageConcanate, LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 1
+common_nodes: [LoadAudio, OmniVoiceLongformTTS, OmniVoiceWhisperLoader, PreviewAudio, SaveAudio]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1931273202180227074.json, 图片生成/文生图/1931550667134185473.json, 图片生成/文生图/1931553605239943170.json, 图片生成/文生图/1931555932394684418.json, 图片生成/文生图/1931560252347756545.json, 图片生成/文生图/1931563283378319361.json]
+missing: []
+members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice长文本语音克隆_2041429765676077058.json, 音频生成/音频生成/OmniVoice TTS语音克隆长音频生成_2064778208435859457.json, 音频生成/音频生成/OmniVoice-tts 语音克隆_2041805989795602434.json, 音频生成/音频生成/OmniVoice-tts长文本语音克隆 小米开源非常强大 声音克隆 音色迁移_2041495026240327681.json, 音频生成/音频生成/OmniVoice-长文本语音克隆-支持600种语言-支持方言-速度快_2042259978056114177.json, 音频生成/音频生成/OmniVoice长文本语音克隆_2044609363121283074.json, 音频生成/音频生成/OmniVoice长文本语音克隆生成器：600种语言-支持方言_2041733700789997569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_165
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1931273202180227074.json、图片生成/文生图/1931550667134185473.json、图片生成/文生图/1931553605239943170.json、图片生成/文生图/1931555932394684418.json、图片生成/文生图/1931560252347756545.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice长文本语音克隆_2041429765676077058.json、音频生成/音频生成/OmniVoice TTS语音克隆长音频生成_2064778208435859457.json、音频生成/音频生成/OmniVoice-tts 语音克隆_2041805989795602434.json、音频生成/音频生成/OmniVoice-tts长文本语音克隆 小米开源非常强大 声音克隆 音色迁移_2041495026240327681.json、音频生成/音频生成/OmniVoice-长文本语音克隆-支持600种语言-支持方言-速度快_2042259978056114177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `DeepTranslatorTextNode`
-- `ImageConcanate`
-- `LoadImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceWhisperLoader`
+- `PreviewAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `BFL_ComfyFluxKontext` —— 2/6 个有
-- `Comfly_Flux_Kontext` —— 2/6 个有
+- `CR Prompt Text` —— 6/7 个有
+- `AudioSeparation` —— 2/7 个有
+- `AudioCrop` —— 1/7 个有
+- `CR Text` —— 1/7 个有
 
 ## 典型参数
 
@@ -44,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

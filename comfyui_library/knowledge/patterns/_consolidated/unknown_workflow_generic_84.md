@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_84
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.717444
-common_nodes: [LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, easy saveText]
+coverage: 0.8624
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, PreviewAny, SaveAudio, Text]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json, 音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json, 音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json, 音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json, 音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json, 音频生成/音频生成/TwistCanvas · Qwen3-ASR 对白转写_2102731254377570305.json, 音频生成/音频生成/推理-音频提取字幕-Qwen3-ASR_2052619440117821442.json, 音频生成/音频生成/音频转文本Qwen3-ASR（支持多国语言）_2033520975840550914.json, 音频生成/音频生成/音频转文本字幕识别Qwen3-ASR（支持多国语言）_2018919931047317505.json]
+members: [视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json, 音频生成/音频生成/Qwen3 TTS 语音参考克隆+情感语气（单人）_2086710651883442178.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2061738767072980994.json, 音频生成/音频生成/Qwen3+TTS+音频克隆_2082332163504168962.json, 音频生成/音频生成/Qwen3音频克隆 Qwen3+TTS+音频克隆_2074007340663267330.json, 音频生成/音频生成/保存自己用-Qwen3 TTS 音频克隆_2067157702194851841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_84
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json、音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json、音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json、音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json、音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
 - `LoadAudio`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `easy saveText`
+- `PreviewAny`
+- `SaveAudio`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 8/9 个有
-- `easy showAnything` —— 1/9 个有
+- `FB_Qwen3TTSVoiceClone` —— 7/10 个有
+- `FishS2VoiceCloneTTS` —— 3/10 个有
 
 ## 典型参数
 

@@ -3,56 +3,65 @@ name: unknown_workflow_video_lora_sampler_892
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.91
-common_nodes: [ImageResizeKJv2, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.883
+common_nodes: [AILab_QwenVL_Advanced, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, HunyuanVideoFoley, ImageBatch, ImageResizeKJv2, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuideMulti, LTXVChunkFeedForward, LTXVConditioning, LTXVPreprocess, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VRAMReserver, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1948023695982899201.json, 视频生成/图生视频/1945823469433221121.json]
+members: [视频生成/图生视频/2081421017964171266.json, 视频生成/文生视频/三关键帧图生视频_自动提示词_2059173762448314370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_892
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1948023695982899201.json、视频生成/图生视频/1945823469433221121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2081421017964171266.json、视频生成/文生视频/三关键帧图生视频_自动提示词_2059173762448314370.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AILab_QwenVL_Advanced`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageRangeFromBatch`
+- `HunyuanVideoFoley`
+- `ImageBatch`
 - `ImageResizeKJv2`
-- `JWInteger`
+- `JjkText`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAddGuideMulti`
+- `LTXVChunkFeedForward`
+- `LTXVConditioning`
+- `LTXVPreprocess`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoMagCache`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `VRAMReserver`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoSetRadialAttention` —— 1/2 个有
-- `WanVideoVACEEncode` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `LTXVAddGuide` —— 1/2 个有
 
 ## 典型参数
 

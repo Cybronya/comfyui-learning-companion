@@ -1,55 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_unet_45
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.807143
-common_nodes: [BasicGuider, CLIPLoader, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.882
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, ManualSigmas, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json, 视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json, 视频生成/文生视频/开源版Minimax H3 多合一T8版本+全节点注释_2086677614869172225.json, 视频生成/文生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086660578432610305.json, 视频生成/文生视频/文生视频-MiniMaxH3-BV2-模板_2090726527729233921.json, 视频生成/文生视频/首帧&首尾帧&关键帧&文生视频_2089598221407580161.json, 视频生成/文生视频/（本地加速版）Minimax H3 文生视频_2086449507176378369.json]
+members: [视频生成/文生视频/minimax h3文生视频双采高清流_2093374091788115970.json, 视频生成/文生视频/minimax_h3_r2v_video_edit视频编辑_2094267455395950594.json, 视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json, 视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json, 视频生成/文生视频/（0825）二采放大1080P12秒-提示词未自动优化_2092123279141195777.json, 视频生成/文生视频/（0826）万象二采放大1080P横屏12秒-提示词未自动优化（增加动态lora）_2092578809114619905.json, 视频生成/文生视频/（0826）万象二采放大1080P竖屏12秒-提示词未自动优化（增加动态lora）_2092617053390856194.json, 视频生成/视频生视频/Minimax+H3+多参角色替换Lora，二采放大_2106244704005345281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_45
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json、视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json、视频生成/文生视频/开源版Minimax H3 多合一T8版本+全节点注释_2086677614869172225.json、视频生成/文生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086660578432610305.json、视频生成/文生视频/文生视频-MiniMaxH3-BV2-模板_2090726527729233921.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/minimax h3文生视频双采高清流_2093374091788115970.json、视频生成/文生视频/minimax_h3_r2v_video_edit视频编辑_2094267455395950594.json、视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json、视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json、视频生成/文生视频/（0825）二采放大1080P12秒-提示词未自动优化_2092123279141195777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `ManualSigmas`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SplitSigmas`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 6/7 个有
-- `LoadImage` —— 5/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `LoraLoaderBypassModelOnly` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/7 个有
-- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/7 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/7 个有
-- `PainterVRAM` —— 1/7 个有
-- `UniBlockSwap` —— 1/7 个有
+- `LoadImage` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 7/8 个有
+- `MinimaxH3LatentUpscaler3D` —— 7/8 个有
+- `ModelPreviewOverrideKJ` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 4/8 个有
+- `CreateVideo` —— 2/8 个有
+- `SaveVideo` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `MiniMaxH3ImageToVideo` —— 1/8 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 1/8 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 

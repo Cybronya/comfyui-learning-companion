@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_20
 type: Unknown Workflow
-frequency: 18
+frequency: 19
 level: moderate
-coverage: 0.775556
-common_nodes: [LoadImage, RH_MinimaxHailuoH3ImageToVideo, SaveVideo]
+coverage: 0.958421
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 图生视频-首尾帧（RH API 版）_2083836913689128962.json, 视频生成/图生视频/MiniMax H3 图生视频-首帧（RH API 版）_2083836901408198657.json, 视频生成/图生视频/MiniMax-H3 图生视频（首尾帧）_2083061418978537473.json, 视频生成/图生视频/MiniMax-H3+图生视频 首尾帧_2083881087964639233.json, 视频生成/图生视频/MiniMax-H3满血版首位帧图生视频_2083612666005901314.json, 视频生成/图生视频/Minimax  H3首尾帧视频（RH版）_2083098097055526914.json, 视频生成/图生视频/Minimax  H3首尾帧视频（RH版）_2084164670793015297.json, 视频生成/图生视频/Minimax H3 2K高清图生视频_2083058899288150018.json, 视频生成/图生视频/Minimax H3 图生视频_2083234101368283138.json, 视频生成/图生视频/Minimax H3 首尾帧图生视频-2K高清_2083210322210545665.json, 视频生成/图生视频/Minimax+H3+2K高清图生视频 首尾帧_2083106036126408706.json, 视频生成/图生视频/最新Minimax+H3+2K高清图生视频_2083117394410696705.json, 视频生成/图生视频/海螺H3 minimax H3图生视频（图生视频&首尾帧）_2083367918850625537.json, 视频生成/图生视频/海螺H3 minimax H3首尾帧生视频_2084883356260593665.json, 视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2083017600380002305.json, 视频生成/图生视频/海螺Hailuo H3图生视频（图生视频&首尾帧）_2083158457552818178.json, 视频生成/图生视频/海螺Hailuo H3首尾帧视频（RH版）_2083013257543110657.json, 视频生成/图生视频/海螺Hailuo H3首尾帧视频（RH版）_2083071534855450625.json]
+members: [视频生成/图生视频/2037490181506338818.json, 视频生成/图生视频/2037079726090625025.json, 视频生成/图生视频/2038582456567205889.json, 视频生成/图生视频/2038100605071265794.json, 视频生成/图生视频/2038870799821578241.json, 视频生成/图生视频/2046131661640830977.json, 视频生成/图生视频/Seedance2.0_API版-全能参考视频_2111086748641087490.json, 视频生成/图生视频/2069257945623388162.json, 视频生成/图生视频/2042556695511048193.json, 视频生成/图生视频/2054429466671230977.json, 视频生成/图生视频/2074327543133593602.json, 视频生成/图生视频/2045034837869858818.json, 视频生成/图生视频/2037777093508997122.json, 视频生成/图生视频/2039398080948211714.json, 视频生成/图生视频/地表最强Seedance2.0支持留空 支持真人 全参工作流_2040017059366576130.json, 视频生成/图生视频/2043566585083863041.json, 视频生成/图生视频/2046135545486647297.json, 视频生成/图生视频/2060303603629387777.json, 视频生成/文生视频/Seedance2.0 Fast 全素材+ID工作流_2059887943552167937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_20
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生视频-首尾帧（RH API 版）_2083836913689128962.json、视频生成/图生视频/MiniMax H3 图生视频-首帧（RH API 版）_2083836901408198657.json、视频生成/图生视频/MiniMax-H3 图生视频（首尾帧）_2083061418978537473.json、视频生成/图生视频/MiniMax-H3+图生视频 首尾帧_2083881087964639233.json、视频生成/图生视频/MiniMax-H3满血版首位帧图生视频_2083612666005901314.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/2037490181506338818.json、视频生成/图生视频/2037079726090625025.json、视频生成/图生视频/2038582456567205889.json、视频生成/图生视频/2038100605071265794.json、视频生成/图生视频/2038870799821578241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `LoadImage`
-- `RH_MinimaxHailuoH3ImageToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 10/18 个有
-- `Label (rgthree)` —— 2/18 个有
-- `孤海注释` —— 1/18 个有
+- `LoadAudio` —— 18/19 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 18/19 个有
+- `LoadVideo` —— 17/19 个有
+- `PreviewAny` —— 4/19 个有
+- `JjkText` —— 2/19 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/19 个有
+- `RH_SparkVideoAssetIdsMerge` —— 1/19 个有
+- `StringConcatenate` —— 1/19 个有
 
 ## 典型参数
 

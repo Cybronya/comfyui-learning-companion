@@ -3,31 +3,34 @@ name: unknown_workflow_generic_671
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CreateVideo, LatentSyncNode, LoadAudio, LoadImage, SaveVideo]
+coverage: 0.833
+common_nodes: [ImageCompare, LoadImage, Painter, SaveImageAdvanced]
 problems: []
 missing: []
-members: [数字人/数字人/数字人口播-形象视频工作流_2094587946639908866.json, 数字人/数字人/数字人口播Pro-高清形象视频工作流_2094598286400380929.json]
+members: [comfyui-workflow-templates-json/api_bria_eraser.json, comfyui-workflow-templates-json/api_bria_genfill.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_671
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/数字人口播-形象视频工作流_2094587946639908866.json、数字人/数字人/数字人口播Pro-高清形象视频工作流_2094598286400380929.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_eraser.json、comfyui-workflow-templates-json/api_bria_genfill.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateVideo`
-- `LatentSyncNode`
-- `LoadAudio`
+- `ImageCompare`
 - `LoadImage`
-- `SaveVideo`
+- `Painter`
+- `SaveImageAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `BriaEraser` —— 1/2 个有
+- `BriaGenFill` —— 1/2 个有
 
 ## 典型参数
 

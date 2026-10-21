@@ -3,30 +3,29 @@ name: unknown_workflow_video_lora_sampler_701
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.676667
-common_nodes: [CreateCFGScheduleFloatList, Float, Int, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.865667
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/WAN2.2-文生视频_2018966000456175618.json, 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2055563749574103041.json, 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json]
+members: [视频生成/文生视频/1950128875525332993.json, 视频生成/文生视频/1950206171439390721.json, 视频生成/文生视频/1950379943495647234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_701
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/WAN2.2-文生视频_2018966000456175618.json、视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2055563749574103041.json、视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1950128875525332993.json、视频生成/文生视频/1950206171439390721.json、视频生成/文生视频/1950379943495647234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CreateCFGScheduleFloatList`
-- `Float`
-- `Int`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
@@ -41,16 +40,14 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactInt` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `WanVideoScheduler` —— 2/3 个有
-- `WanVideoSigmaToStep` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `Float to Int` —— 1/3 个有
-- `MathExpression_UTK` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
+- `CreateVideo` —— 2/3 个有
+- `PreViewVideo` —— 2/3 个有
+- `Primitive integer [Crystools]` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
+- `DF_Integer` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 

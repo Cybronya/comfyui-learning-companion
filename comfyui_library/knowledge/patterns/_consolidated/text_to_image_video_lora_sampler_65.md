@@ -3,93 +3,93 @@ name: text_to_image_video_lora_sampler_65
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.938727
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ImageToVideo, MiniMaxH3MotionContextSaveLatent, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PlaySound|pysssss, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VRAM_Debug, easy seed, solarL_SaveImagesToZip]
+coverage: 0.517091
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, GetImage, GetNode, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_MiniMaxH3Video, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2106876832036515842.json, 视频生成/图生视频/MiniMax_H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2109444477218807809.json, 视频生成/文生视频/MiniMax H3单采全功能，视频延长与残影修复及双重去油远景优化合一_2102830394193301506.json, 视频生成/文生视频/MiniMax H3单采全功能｜细节残影修复视频延长｜双重去油远景优化_2102617056968531970.json, 视频生成/文生视频/MiniMax H3双采全功能再上线｜残影细节修复双重去油｜远景优化一步到位_2102602330863661057.json, 视频生成/文生视频/MiniMax H3双采全功能工作流，细节残影修复与双重去油及远景优化_2102825546802618370.json, 视频生成/文生视频/MiniMax H3双采全功能｜细节残影修复加双重去油｜远景画质再进化_2102576207878512642.json, 视频生成/文生视频/九宫格四视图视频全能编辑｜H3长视频文生图生视频_2091606897832054785.json, 视频生成/文生视频/长视频九宫格四视图｜MiniMax H3文生视频全能编辑_2091778572640940033.json, 视频生成/视频生视频/MiniMax_H3单采全功能_视频延长与残影修复及双重去油远景优化合一_2106175322394816514.json, 视频生成/视频生视频/MiniMax_H3双采全功能工作流_细节残影修复与双重去油及远景优化_2106182433518481409.json]
+members: [视频生成/图生视频/MiniMax H3全栈式短剧生成V12_1宫格版_图生视频短剧制作工具_2106106643212750849.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作_2098294284297527297.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作工具_2098655909403783169.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版 图生视频CG幻想风格多场景产出_2105443312898498561.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2102902512931135489.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频短剧制作工具_2107181508682407938.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成短剧版，图生视频一站式短剧制作工作流_2102904045089411073.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1宫格版｜图生视频短剧利器_2106989222166097922.json, 视频生成/图生视频/MiniMax_H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2104734396803796994.json, 视频生成/图生视频/MiniMax_H3全栈式短剧生成宫格版，图生视频短剧制作工具_2109442367852994561.json, 视频生成/文生视频/MiniMax_H3全栈式短剧生成短剧版，图生视频一站式短剧制作工作流_2104732928919031809.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_65
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2106876832036515842.json、视频生成/图生视频/MiniMax_H3双采全功能工作流细节残影修复与双重去油及远景优化，图生视频_2109444477218807809.json、视频生成/文生视频/MiniMax H3单采全功能，视频延长与残影修复及双重去油远景优化合一_2102830394193301506.json、视频生成/文生视频/MiniMax H3单采全功能｜细节残影修复视频延长｜双重去油远景优化_2102617056968531970.json、视频生成/文生视频/MiniMax H3双采全功能再上线｜残影细节修复双重去油｜远景优化一步到位_2102602330863661057.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3全栈式短剧生成V12_1宫格版_图生视频短剧制作工具_2106106643212750849.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作_2098294284297527297.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作工具_2098655909403783169.json、视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版 图生视频CG幻想风格多场景产出_2105443312898498561.json、视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2102902512931135489.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ComfyMathExpression`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJv2`
+- `GetImage`
+- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxChunkFeedForward`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MotionContextSaveLatent`
-- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PlaySound|pysssss`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveBoolean`
 - `PrimitiveFloat`
-- `RandomNoise`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SetNode`
+- `StringConcatenate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadAudioUpload`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `easy seed`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTJsonSwitch`
+- `YUAN_TXTPreviewContent`
+- `YUAN_TXTShotDurations`
+- `YuanAudioList`
+- `YuanAudioLoad`
+- `YuanAudioSplit`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_MiniMaxH3Video`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `H3DistanceAttentionPatcher` —— 9/11 个有
-- `H3ExactRecover` —— 9/11 个有
-- `H3InjectSchedule` —— 9/11 个有
-- `H3JerkHeatmap` —— 9/11 个有
-- `H3JerkOracle` —— 9/11 个有
-- `H3SigmaRefiner` —— 9/11 个有
-- `H3TimeSmear` —— 9/11 个有
-- `H3V2VInit` —— 9/11 个有
-- `VAEEncode` —— 9/11 个有
-- `easy int` —— 9/11 个有
-- `孤海注释` —— 8/11 个有
-- `LTXVConcatAVLatent` —— 6/11 个有
-- `LTXVSeparateAVLatent` —— 6/11 个有
-- `ManualSigmas` —— 6/11 个有
-- `MinimaxH3LatentUpscaler3D` —— 6/11 个有
-- `SaveImage` —— 6/11 个有
-- `SplitSigmas` —— 6/11 个有
-- `easy float` —— 6/11 个有
-- `AudioConcat` —— 5/11 个有
-- `MiniMaxH3MotionContext` —— 5/11 个有
-- `MiniMaxH3MotionContextLoadLatent` —— 5/11 个有
-- `MiniMaxH3MotionContextTrim` —— 5/11 个有
-- `VHS_MergeImages` —— 5/11 个有
+- `SaveImage` —— 10/11 个有
+- `孤海注释` —— 9/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
+- `LoadImage` —— 7/11 个有
+- `ResizeImageMaskNode` —— 7/11 个有
+- `VOSR2ModelLoader` —— 7/11 个有
+- `VOSR2Upscale` —— 7/11 个有
+- `YuanImageGridComposite` —— 7/11 个有
+- `YuanLoadImageOutput` —— 7/11 个有
+- `YuanPrimitive` —— 7/11 个有
+- `Yuan_H3MotionContextTrim` —— 7/11 个有
+- `Yuan_H3ProgressiveSampler` —— 7/11 个有
+- `BasicGuider` —— 4/11 个有
 - `EmptyImage` —— 4/11 个有
-- `PreviewImage` —— 4/11 个有
-- `Display Any (rgthree)` —— 2/11 个有
-- `ImageScaleToMaxDimension` —— 2/11 个有
-- `SpectrumApplyMiniMaxH3` —— 2/11 个有
-- `Label (rgthree)` —— 1/11 个有
+- `ImageFromBatch` —— 4/11 个有
+- `Lora Loader Stack (rgthree)` —— 4/11 个有
+- `ManualSigmas` —— 4/11 个有
+- `MiniMaxH3AddGuide` —— 4/11 个有
+- `RandomNoise` —— 4/11 个有
+- `SamplerCustomAdvanced` —— 4/11 个有
+- `SplitSigmas` —— 4/11 个有
+- `StringReplace` —— 4/11 个有
+- `VAEDecodeAudio` —— 4/11 个有
+- `Yuan_H3Upscale3D` —— 4/11 个有
+- `Yuan_VideoUI` —— 4/11 个有
+- `easy clearCacheAll` —— 3/11 个有
 
 ## 典型参数
 

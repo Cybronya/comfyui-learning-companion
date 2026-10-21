@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_291
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9375
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.885
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/2093374955097509890.json, 图片生成/图生图/2093499799487209473.json, 图片生成/图生图/2093616466229813250.json, 图片生成/图生图/2093628384592093185.json]
+members: [视频生成/图生视频/2033748217984192513.json, 视频生成/图生视频/2033799658945908737.json, 视频生成/图生视频/2033804143860649986.json, 视频生成/图生视频/2018215664321830914.json, 视频生成/图生视频/2054007288427499522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_291
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2093374955097509890.json、图片生成/图生图/2093499799487209473.json、图片生成/图生图/2093616466229813250.json、图片生成/图生图/2093628384592093185.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2033748217984192513.json、视频生成/图生视频/2033799658945908737.json、视频生成/图生视频/2033804143860649986.json、视频生成/图生视频/2018215664321830914.json、视频生成/图生视频/2054007288427499522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/4 个有
+- `RH_Kling26_MotionControl` —— 3/5 个有
+- `RH_KlingO1_VideoEdit` —— 2/5 个有
+- `CR Text` —— 1/5 个有
 
 ## 典型参数
 

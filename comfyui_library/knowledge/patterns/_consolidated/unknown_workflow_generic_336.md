@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_336
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.80625
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.7794
+common_nodes: [LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3-图生视频+全节点注释_2083440038376984578.json, 视频生成/文生视频/MiniMax-H3+图生视频 首尾帧_2083881087964639233.json, 视频生成/文生视频/MiniMax-H3图生视频首尾帧控制AI生成工作流_2102172531703767041.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频 +全节点注释_2061058565992968194.json]
+members: [音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json, 音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json, 音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_336
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3-图生视频+全节点注释_2083440038376984578.json、视频生成/文生视频/MiniMax-H3+图生视频 首尾帧_2083881087964639233.json、视频生成/文生视频/MiniMax-H3图生视频首尾帧控制AI生成工作流_2102172531703767041.json、视频生成/文生视频/全能视频 Omni Flash 文生视频 +全节点注释_2061058565992968194.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json、音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json、音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `RH_GeminiOmniFlashTextToVideo` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `SaveAudio` —— 4/5 个有
+- `Apply Whisper` —— 3/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `SaveAudioMP3` —— 1/5 个有
 
 ## 典型参数
 

@@ -2,80 +2,80 @@
 name: unknown_workflow_video_lora_sampler_298
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.700143
-common_nodes: [CLIPVisionLoader, CR Prompt Text, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.975286
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateCFGScheduleFloatList, EmptySD3LatentImage, ImageResize+, Int, KSampler, LoadWanVideoT5TextEncoder, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2006714011445895170.json, 视频生成/图生视频/1967041274844995586.json, 视频生成/图生视频/1968534429834588161.json, 视频生成/图生视频/1967057695654207489.json, 视频生成/图生视频/1986427607413620737.json, 视频生成/图生视频/2008032708106133505.json, 视频生成/图生视频/1979836579130806274.json]
+members: [视频生成/图生视频/2066868599926644737.json, 视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json, 视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json, 视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json, 视频生成/文生视频/竖屏1111_2063507047836119042.json, 视频生成/文生视频/竖屏1111_2064656978898669569.json, 视频生成/文生视频/竖屏高清_2063068057895002114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_298
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2006714011445895170.json、视频生成/图生视频/1967041274844995586.json、视频生成/图生视频/1968534429834588161.json、视频生成/图生视频/1967057695654207489.json、视频生成/图生视频/1986427607413620737.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2066868599926644737.json、视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json、视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json、视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json、视频生成/文生视频/竖屏1111_2063507047836119042.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CreateCFGScheduleFloatList`
+- `EmptySD3LatentImage`
+- `ImageResize+`
+- `Int`
+- `KSampler`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 6/7 个有
-- `AudioSeparation` —— 4/7 个有
-- `DownloadAndLoadWav2VecModel` —— 4/7 个有
-- `GetNode` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `MultiTalkSilentEmbeds` —— 4/7 个有
-- `MultiTalkWav2VecEmbeds` —— 4/7 个有
-- `SetNode` —— 4/7 个有
-- `SimpleMath+` —— 4/7 个有
-- `AudioCrop` —— 3/7 个有
-- `GetAudioDurationFromAudio` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `easy showAnything` —— 3/7 个有
-- `MelBandRoFormerModelLoader` —— 2/7 个有
-- `MelBandRoFormerSampler` —— 2/7 个有
-- `PreviewAudio` —— 2/7 个有
-- `SoundFlow_TrimAudio` —— 2/7 个有
-- `easy clearCacheAll` —— 2/7 个有
-- `Any Switch (rgthree)` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `RIFE VFI` —— 1/7 个有
+- `easy cleanGpuUsed` —— 6/7 个有
+- `LoraLoader` —— 1/7 个有
+- `ModelSamplingAuraFlow` —— 1/7 个有
+- `Text _O` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 8 - 9 | 7 | 96% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 8 - 9，7 个样本，取值集中（一致性 96%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

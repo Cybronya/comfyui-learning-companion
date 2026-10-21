@@ -3,69 +3,73 @@ name: unknown_workflow_video_lora_sampler_247
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.94325
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.678375
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, INTConstant, Int, LayerUtility: PurgeVRAM V2, LoadImage, SetNode, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/超清数字人对口型音乐_2098282192836317186.json, 视频生成/图生视频/1957828185982599170.json, 视频生成/图生视频/1998698671518666753.json, 视频生成/图生视频/1978645327920173058.json, 视频生成/图生视频/1978307219957637121.json, 视频生成/图生视频/1982650082937978882.json, 视频生成/图生视频/1982712177004027905.json, 视频生成/图生视频/2019287708035719169.json]
+members: [视频生成/图生视频/2030683109536043010.json, 视频生成/图生视频/2007757058510168066.json, 视频生成/图生视频/2000895108826398721.json, 视频生成/图生视频/1999108736645988353.json, 视频生成/图生视频/2013783129579851778.json, 视频生成/图生视频/2046453872159367169.json, 视频生成/图生视频/2032725036360011777.json, 视频生成/图生视频/1985123438920683522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_247
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/超清数字人对口型音乐_2098282192836317186.json、视频生成/图生视频/1957828185982599170.json、视频生成/图生视频/1998698671518666753.json、视频生成/图生视频/1978645327920173058.json、视频生成/图生视频/1978307219957637121.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2030683109536043010.json、视频生成/图生视频/2007757058510168066.json、视频生成/图生视频/2000895108826398721.json、视频生成/图生视频/1999108736645988353.json、视频生成/图生视频/2013783129579851778.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `Int`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `SetNode`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 7/8 个有
-- `WanVideoTorchCompileSettings` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `AudioCrop` —— 6/8 个有
-- `Int` —— 6/8 个有
-- `LoadAudio` —— 6/8 个有
-- `ToInt` —— 6/8 个有
-- `Audio Duration (mtb)` —— 3/8 个有
-- `RH_GetAudioDuration` —— 3/8 个有
-- `PreviewImage` —— 2/8 个有
-- `VHS_LoadVideo` —— 2/8 个有
-- `AudioCombine` —— 1/8 个有
-- `CR Float To Integer` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `INTConstant` —— 1/8 个有
-- `ImpactFloat` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `PreviewAudio` —— 1/8 个有
-- `Qwen3TTSModelLoader` —— 1/8 个有
-- `Qwen3TTSVoiceDesign` —— 1/8 个有
-- `Text Multiline` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `ImageResizeKJ` —— 7/8 个有
+- `WanVideoLoraSelectMulti` —— 7/8 个有
+- `DrawViTPose` —— 6/8 个有
+- `Florence2Run` —— 6/8 个有
+- `GroundingDinoModelLoader (segment anything2)` —— 6/8 个有
+- `OnnxDetectionModelLoader` —— 6/8 个有
+- `PoseAndFaceDetection` —— 6/8 个有
+- `RHHiddenNodes` —— 6/8 个有
+- `RH_Captioner` —— 6/8 个有
+- `SDPoseOODLoader` —— 6/8 个有
+- `SDPoseOODProcessor` —— 6/8 个有
+- `ShowText|pysssss` —— 6/8 个有
+- `Text Concatenate` —— 6/8 个有
+- `Wan_video_prompt_generator` —— 6/8 个有
+- `YOLOModelLoader` —— 6/8 个有
+- `ImageUpscaleWithModel` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `UpscaleModelLoader` —— 4/8 个有
+- `FlashVSRNode` —— 1/8 个有
+- `easy anythingIndexSwitch` —— 1/8 个有
+- `easy rangeInt` —— 1/8 个有
 
 ## 典型参数
 

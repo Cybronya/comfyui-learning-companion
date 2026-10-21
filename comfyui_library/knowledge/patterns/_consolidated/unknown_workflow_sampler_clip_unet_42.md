@@ -1,88 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_42
 type: Unknown Workflow
-frequency: 6
+frequency: 12
 level: moderate
-coverage: 0.785667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
-missing: [LayerUtility: PurgeVRAM V2, String Literal, SDXLEmptyLatentSizePicker+, CR SDXL Aspect Ratio, Note Plus (mtb), easy seed]
-members: [图片生成/文生图/1910919824812507138.json, 图片生成/文生图/1914942831851466753.json, 图片生成/文生图/1939209223630725122.json, 图片生成/文生图/1951256026706333697.json, 图片生成/文生图/1952909781780598785.json, 图片生成/文生图/1952978061257076737.json]
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [视频生成/文生视频/1951460131294883841.json, 视频生成/文生视频/Wan2.1+文生视频高清动态视频_2010596616985649154.json, 视频生成/文生视频/1934444729025327105.json, 视频生成/文生视频/1935893378293035010.json, 视频生成/文生视频/Wan2.2文生视频工作流_2011439259349159938.json, 视频生成/文生视频/Wan2.2文生视频工作流_2012090867787501569.json, 视频生成/文生视频/1909164954489135106.json, 视频生成/文生视频/wan2.2_t2v 文生视频_2058371729084469249.json, 视频生成/文生视频/1901967053463379970.json, 视频生成/文生视频/1937731773860352001.json, 视频生成/文生视频/1913407302773239810.json, 视频生成/文生视频/1923315554449281025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1910919824812507138.json、图片生成/文生图/1914942831851466753.json、图片生成/文生图/1939209223630725122.json、图片生成/文生图/1951256026706333697.json、图片生成/文生图/1952909781780598785.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/1951460131294883841.json、视频生成/文生视频/Wan2.1+文生视频高清动态视频_2010596616985649154.json、视频生成/文生视频/1934444729025327105.json、视频生成/文生视频/1935893378293035010.json、视频生成/文生视频/Wan2.2文生视频工作流_2011439259349159938.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `EmptyHunyuanLatentVideo`
+- `KSampler`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 4/6 个有
-- `SDXLEmptyLatentSizePicker+` —— 4/6 个有
-- `String Literal` —— 4/6 个有
-- `AddLabel` —— 3/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `KSampler` —— 3/6 个有
-- `easy seed` —— 3/6 个有
-- `CLIPLoader` —— 2/6 个有
-- `CR SDXL Aspect Ratio` —— 2/6 个有
-- `QwenImageModelLoader` —— 2/6 个有
-- `RH_QwenImageGenerator` —— 2/6 个有
-- `ConditioningZeroOut` —— 1/6 个有
-- `HiDreamSampler` —— 1/6 个有
-- `ImageScaleBy` —— 1/6 个有
-- `LoadImageFromUrl` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `ModelSamplingAuraFlow` —— 1/6 个有
-- `ModelSamplingSD3` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `VAEEncode` —— 1/6 个有
+- `VHS_VideoCombine` —— 11/12 个有
+- `ModelSamplingSD3` —— 5/12 个有
+- `WanVideoTeaCacheKJ` —— 4/12 个有
+- `WanVideoEnhanceAVideoKJ` —— 3/12 个有
+- `SaveWEBM` —— 2/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `LoraLoader` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
+- `VideoCombine_Adv` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1280x768 (1.67) | - | 4 | 75% |
-| 高度 | 1 | 1 - 1 | 4 | 100% |
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 3 | 54% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
+| 采样步数 | 30 | 4 - 45 | 12 | 47% |
+| Prompt 约束强度(CFG) | 6 | 1 - 6 | 12 | 54% |
+| 采样算法 | uni_pc | - | 12 | 67% |
+| 调度器 | simple | - | 12 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 最常用 1280x768 (1.67)，4 个样本，一致性 75%
-- 高度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、String Literal、SDXLEmptyLatentSizePicker+、CR SDXL Aspect Ratio、Note Plus (mtb)
+- 采样步数 中位数 30，观测区间 4 - 45，12 个样本，取值分散，一致性仅 47%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，12 个样本
+- 采样算法 最常用 uni_pc，12 个样本，一致性 67%
+- 调度器 最常用 simple，12 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

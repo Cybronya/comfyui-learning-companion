@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_416
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.835667
-common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
+coverage: 0.88975
+common_nodes: [LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
+members: [视频生成/图生视频/2037525750772928513.json, 视频生成/图生视频/2037761306891128833.json, 视频生成/图生视频/2037733253083303937.json, 视频生成/图生视频/2037721979842732034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_416
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json、视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2037525750772928513.json、视频生成/图生视频/2037761306891128833.json、视频生成/图生视频/2037733253083303937.json、视频生成/图生视频/2037721979842732034.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `MiniMaxH3PromptEnhancerT8`
 - `PreviewAny`
-- `RH_Translator`
-- `easy saveText`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `easy imageSave` —— 1/3 个有
+- `CR Prompt Text` —— 2/4 个有
+- `JWInteger` —— 2/4 个有
+- `LoadAudio` —— 1/4 个有
 
 ## 典型参数
 

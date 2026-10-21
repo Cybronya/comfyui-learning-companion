@@ -3,62 +3,71 @@ name: unknown_workflow_video_lora_sampler_741
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.822
-common_nodes: [AddLabel, AudioSeparation, DWPreprocessor, DownloadAndLoadWav2VecModel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImagePadKJ, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.907
+common_nodes: [Bjornulf_ShowStringText, GetImageSizeAndCount, INTConstant, ImageResizeKJ, ImageResizeKJv2, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, TTP_text_mix, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949185140044570626.json, 视频生成/图生视频/1949385467585822721.json]
+members: [视频生成/图生视频/1954097242955235330.json, 视频生成/图生视频/1980666931474776066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_741
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949185140044570626.json、视频生成/图生视频/1949385467585822721.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1954097242955235330.json、视频生成/图生视频/1980666931474776066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AddLabel`
-- `AudioSeparation`
-- `DWPreprocessor`
-- `DownloadAndLoadWav2VecModel`
-- `EmptyImage`
+- `Bjornulf_ShowStringText`
 - `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImagePadKJ`
+- `INTConstant`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
+- `Int`
+- `JjkConcat`
+- `LTXVPromptEnhancer`
+- `LTXVPromptEnhancerLoader`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskPreview`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `TTP_text_mix`
+- `TextInput_`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `CreateCFGScheduleFloatList` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ForLoopClose` —— 1/2 个有
+- `ForLoopOpen` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GridStrings` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `Int2String` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `easy batchAnything` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,56 +1,67 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_6
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.841
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, ImageUpscaleWithModel, KSampler, LayerUtility: PurgeVRAM, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.845
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImageScaleBy, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [LayerUtility: PurgeVRAM, CR SDXL Aspect Ratio]
-members: [图片生成/文生图/1959104160971042818.json, 图片生成/文生图/1989654532122660866.json]
+missing: []
+members: [图片生成/文生图/Qwen-2512文生图(Yihan AIGC)_2018677340422807553.json, 图片生成/文生图/Z-Image-Base 文生图+高清放大 开源基础版_2016384209975255041.json, 图片生成/文生图/Z-Image-Base 新模型懂你，文生图 直出4K_2016563209741799426.json, 图片生成/文生图/Z-image-base 文生图_2016300269142806530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1959104160971042818.json、图片生成/文生图/1989654532122660866.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen-2512文生图(Yihan AIGC)_2018677340422807553.json、图片生成/文生图/Z-Image-Base 文生图+高清放大 开源基础版_2016384209975255041.json、图片生成/文生图/Z-Image-Base 新模型懂你，文生图 直出4K_2016563209741799426.json、图片生成/文生图/Z-image-base 文生图_2016300269142806530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：4
+- **可信度**：中等可信
 - **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `ImageUpscaleWithModel`
+- `EmptySD3LatentImage`
+- `ImageScaleBy`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `CR Text` —— 3/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 2/4 个有
+- `DapaoImageRatioLimitNode` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `Image Filter Adjustments` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
+- `RH_Captioner_Pro` —— 1/4 个有
+- `SDXL Resolutions (JPS)` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 27.5 | 21 - 50 | 4 | 65% |
+| Prompt 约束强度(CFG) | 4 | 3 - 4 | 4 | 88% |
+| 采样算法 | euler | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -58,10 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM、CR SDXL Aspect Ratio
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 27.5，观测区间 21 - 50，4 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 3 - 4，4 个样本，取值集中（一致性 88%）
+- 采样算法 最常用 euler，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

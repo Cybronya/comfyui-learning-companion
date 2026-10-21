@@ -3,74 +3,71 @@ name: unknown_workflow_video_lora_sampler_686
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.579
-common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, EmptyImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat, easy showAnything]
+coverage: 0.598667
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1975554150689845250.json, 视频生成/图生视频/1975078914978656258.json, 视频生成/图生视频/1969652122914594818.json]
+members: [视频生成/图生视频/2047836406218756098.json, 视频生成/图生视频/1999818280472899586.json, 视频生成/文生视频/SteadyDancer 跳舞 支持不同身形比例_2019123719372808193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_686
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1975554150689845250.json、视频生成/图生视频/1975078914978656258.json、视频生成/图生视频/1969652122914594818.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2047836406218756098.json、视频生成/图生视频/1999818280472899586.json、视频生成/文生视频/SteadyDancer 跳舞 支持不同身形比例_2019123719372808193.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
 - `CLIPVisionLoader`
-- `CR Text`
-- `DrawMaskOnImage`
-- `EmptyImage`
+- `DrawViTPose`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMask`
 - `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `ImpactInt`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: SegmentAnythingUltra V3`
 - `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `SetNode`
-- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy promptConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `OnnxDetectionModelLoader` —— 2/3 个有
-- `PoseAndFaceDetection` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `FaceMaskFromPoseKeypoints` —— 1/3 个有
-- `ImageCropByMaskAndResize` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `PixelPerfectResolution` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `AddLabel` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `PlaySound|pysssss` —— 2/3 个有
+- `PrimitiveString` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `StringConcatenate` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `Bookmark (rgthree)` —— 1/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `Int` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,33 +3,41 @@ name: unknown_workflow_generic_718
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
+coverage: 0.843
+common_nodes: [ByteDance2ReferenceNodeV2, GeminiNodeV3, LoadImage, OpenAIGPTImageNodeV2, PreviewAny, SaveImage, SaveVideo, StringConcatenate]
 problems: []
 missing: []
-members: [视频生成/图生视频/1998962356308824066.json, 视频生成/文生视频/批量视频生成_2001610943249412097.json]
+members: [comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json, comfyui-workflow-templates-json/template_seedance2_storyboard_to_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_718
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1998962356308824066.json、视频生成/文生视频/批量视频生成_2001610943249412097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json、comfyui-workflow-templates-json/template_seedance2_storyboard_to_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ByteDance2ReferenceNodeV2`
+- `GeminiNodeV3`
 - `LoadImage`
-- `RH_Sora2_I2V_Batch`
+- `OpenAIGPTImageNodeV2`
+- `PreviewAny`
+- `SaveImage`
 - `SaveVideo`
+- `StringConcatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `StringConstantMultiline` —— 1/2 个有
-- `TextBox3` —— 1/2 个有
+- `GetVideoComponents` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `Video Slice` —— 1/2 个有
 
 ## 典型参数
 

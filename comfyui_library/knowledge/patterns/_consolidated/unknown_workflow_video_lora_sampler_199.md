@@ -1,79 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_199
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.7882
-common_nodes: [Anything Everywhere, CLIPVisionLoader, Compare, CreateCFGScheduleFloatList, GetImageSize, ImageCASharpening+, ImageResize+, Int, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RHHiddenNodes, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeSingle, WanVideoVAELoader, easy anythingIndexSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy ifElse]
+coverage: 0.592222
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
 problems: []
-missing: []
-members: [视频生成/图生视频/2002612444591734786.json, 视频生成/图生视频/2025325353673166850.json, 视频生成/图生视频/1992480102802059265.json, 视频生成/图生视频/2052226517211598849.json, 视频生成/图生视频/2021477807292944386.json, 视频生成/图生视频/2068082288738529281.json, 视频生成/图生视频/2001973649991168002.json, 视频生成/图生视频/1994338708423901186.json, 视频生成/图生视频/1999372976141238274.json, 视频生成/文生视频/首尾五帧联动 wan2.4首尾帧-for循环（全自动）_1999335210405724162.json]
+missing: [Label (rgthree)]
+members: [图片生成/文生图/1953391990853521409.json, 图片生成/文生图/1961428825634750466.json, 图片生成/文生图/1970462683160080385.json, 图片生成/文生图/1989283451264225282.json, 视频生成/图生视频/1981180403119808514.json, 视频生成/文生视频/1961428825634750466.json, 视频生成/文生视频/1970462683160080385.json, 视频生成/文生视频/Supermate 推荐Qwen3vl视频反推提示+Video_wan2_2_14B视频生成_1982073877964693505.json, 视频生成/文生视频/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_199
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2002612444591734786.json、视频生成/图生视频/2025325353673166850.json、视频生成/图生视频/1992480102802059265.json、视频生成/图生视频/2052226517211598849.json、视频生成/图生视频/2021477807292944386.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1953391990853521409.json、图片生成/文生图/1961428825634750466.json、图片生成/文生图/1970462683160080385.json、图片生成/文生图/1989283451264225282.json、视频生成/图生视频/1981180403119808514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPVisionLoader`
-- `Compare`
-- `CreateCFGScheduleFloatList`
-- `GetImageSize`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `RHHiddenNodes`
+全部 9 个 workflow 都包含：
+- `CFGZeroStar`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptyHunyuanLatentVideo`
+- `GetNode`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `AdjustAudio` —— 1/10 个有
-- `AudioCombine` —— 1/10 个有
-- `AudioCrop` —— 1/10 个有
-- `CR Text` —— 1/10 个有
-- `Float` —— 1/10 个有
-- `HunyuanVideoFoley` —— 1/10 个有
-- `LoadAudio` —— 1/10 个有
-- `PreviewAudio` —— 1/10 个有
-- `RH_Captioner` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `JWStringMultiline` —— 6/9 个有
+- `JoinStringMulti` —— 6/9 个有
+- `String` —— 6/9 个有
+- `PreviewImage` —— 4/9 个有
+- `AILab_QwenVL` —— 2/9 个有
+- `PreviewAny` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `LoadImage` —— 1/9 个有
+- `VHS_LoadVideo` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 9 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
+| 采样算法 | 2.5 | 1 - 2.5 | 9 | 65% |
+| 调度器 | ddim | - | 9 | 67% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -81,4 +67,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，9 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 2.5，观测区间 1 - 2.5，9 个样本
+- 调度器 最常用 ddim，9 个样本，一致性 67%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)

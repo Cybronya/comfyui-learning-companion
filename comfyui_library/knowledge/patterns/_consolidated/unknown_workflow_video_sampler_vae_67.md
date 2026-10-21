@@ -1,65 +1,39 @@
 ---
 name: unknown_workflow_video_sampler_vae_67
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.988429
-common_nodes: [INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.714
+common_nodes: [CR Text, PrimitiveInt, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1965428165915103234.json, 视频生成/图生视频/1966850900927057922.json, 视频生成/图生视频/1952803879810494466.json, 视频生成/图生视频/1963047092535136257.json, 视频生成/图生视频/1966739330226139137.json, 视频生成/图生视频/1967834051866406914.json, 视频生成/图生视频/1967815071856472066.json]
+members: [视频生成/文生视频/MiniMax H3文生视频RH开源版_2084162728914145281.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084169315095498753.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084170223623692289.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084171053793890305.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084171728577720321.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084172299443458049.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084173052044201985.json, 视频生成/文生视频/MiniMax H3文生视频RH开源版_2084173675061932034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_67
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1965428165915103234.json、视频生成/图生视频/1966850900927057922.json、视频生成/图生视频/1952803879810494466.json、视频生成/图生视频/1963047092535136257.json、视频生成/图生视频/1966739330226139137.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3文生视频RH开源版_2084162728914145281.json、视频生成/文生视频/MiniMax H3文生视频RH开源版_2084169315095498753.json、视频生成/文生视频/MiniMax H3文生视频RH开源版_2084170223623692289.json、视频生成/文生视频/MiniMax H3文生视频RH开源版_2084171053793890305.json、视频生成/文生视频/MiniMax H3文生视频RH开源版_2084171728577720321.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `PrimitiveInt`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoSetBlockSwap` —— 6/7 个有
-- `WanVideoSetLoRAs` —— 6/7 个有
-- `WanVideoVACEEncode` —— 5/7 个有
-- `WanVideoVACEModelSelect` —— 5/7 个有
-- `VHS_LoadVideo` —— 4/7 个有
-- `DWPreprocessor` —— 3/7 个有
-- `GetImageSizeAndCount` —— 3/7 个有
-- `ImageConcatMulti` —— 3/7 个有
-- `VHS_VideoInfo` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `Note Plus (mtb)` —— 2/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `WanVideoImageToVideoEncode` —— 2/7 个有
-- `AIO_Preprocessor` —— 1/7 个有
-- `ColorMatch` —— 1/7 个有
-- `ImpactInt` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `WanVideoContextOptions` —— 1/7 个有
-- `WanVideoEncodeLatentBatch` —— 1/7 个有
-- `WanVideoVACEStartToEndFrame` —— 1/7 个有
-- `easy int` —— 1/7 个有
 
 ## 典型参数
 

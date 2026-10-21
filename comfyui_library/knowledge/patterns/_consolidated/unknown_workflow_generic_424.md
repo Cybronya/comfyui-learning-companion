@@ -1,32 +1,35 @@
 ---
 name: unknown_workflow_generic_424
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.75
-common_nodes: [ImageResizeKJ, LoadImage, RH_GPT-Image1, SaveImage]
+coverage: 0.807
+common_nodes: [CR Text, SaveAudio]
 problems: []
-missing: [RH_GPT-Image1]
-members: [图片生成/文生图/1983359677536870402.json, 图片生成/文生图/1983478195829809154.json, 图片生成/文生图/1983728499519332353.json]
+missing: []
+members: [视频生成/文生视频/Qwen3-TTS 语音生成_2020653760749510657.json, 音频生成/音频生成/OmniVoice TTS语音设计_2064780678176264194.json, 音频生成/音频生成/OmniVoice 声音设计--中文方言--英文口音_2041470953061879809.json, 音频生成/音频生成/Qwen3-TTS 语音合成-自定义语音_2015153956795715586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_424
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1983359677536870402.json、图片生成/文生图/1983478195829809154.json、图片生成/文生图/1983728499519332353.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 语音生成_2020653760749510657.json、音频生成/音频生成/OmniVoice TTS语音设计_2064780678176264194.json、音频生成/音频生成/OmniVoice 声音设计--中文方言--英文口音_2041470953061879809.json、音频生成/音频生成/Qwen3-TTS 语音合成-自定义语音_2015153956795715586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageResizeKJ`
-- `LoadImage`
-- `RH_GPT-Image1`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `PreviewAudio` —— 3/4 个有
+- `FB_Qwen3TTSCustomVoice` —— 2/4 个有
+- `OmniVoiceVoiceDesignTTS` —— 2/4 个有
 
 ## 典型参数
 
@@ -38,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：RH_GPT-Image1
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

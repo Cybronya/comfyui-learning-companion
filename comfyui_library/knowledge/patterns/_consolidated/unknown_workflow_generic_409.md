@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_409
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.802333
-common_nodes: [ImageCompare, ImageScaleBy, LoadImage, SaveImage]
+coverage: 0.88325
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/utility-topaz_landscape_upscaler.json, comfyui-workflow-templates-json/utility_interpolation_image_upscale.json, comfyui-workflow-templates-json/utility_topaz_illustration_upscale.json]
+members: [视频生成/图生视频/2069411071865217025.json, 视频生成/图生视频/2061797146860539906.json, 视频生成/图生视频/2062919579176882178.json, 视频生成/图生视频/2069401480947396610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_409
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/utility-topaz_landscape_upscaler.json、comfyui-workflow-templates-json/utility_interpolation_image_upscale.json、comfyui-workflow-templates-json/utility_topaz_illustration_upscale.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2069411071865217025.json、视频生成/图生视频/2061797146860539906.json、视频生成/图生视频/2062919579176882178.json、视频生成/图生视频/2069401480947396610.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageCompare`
-- `ImageScaleBy`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `TopazImageEnhance` —— 1/3 个有
-- `TopazImageEnhanceV2` —— 1/3 个有
+- `PreviewImage` —— 3/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
+- `RH_KlingVideoO3ProImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

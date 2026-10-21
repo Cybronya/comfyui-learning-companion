@@ -1,60 +1,90 @@
 ---
 name: unknown_workflow_video_sampler_unet_64
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.431
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.8066
+common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Prompt Text, CR Text, CR Text Concatenate, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadAudio, LoadImage, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaLabel, PrimitiveFloat, ResolutionSelector, ShowText|pysssss, UNETLoader, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMaxH3-ref2va超级加速版-仅支持1.0分辨率_2089629306782834690.json, 视频生成/图生视频/子悟-MiniMaxH3-ref2va多参考生视频_2085657515655782402.json, 视频生成/文生视频/AITUDOU-MiniMax H3(全能参考)_2084222366611234818.json, 视频生成/文生视频/承象-MiniMax H3(全能单图多图参考)真人短剧极速版_2084992442926981122.json]
+members: [视频生成/图生视频/MiniMax H3  Ref多模态SelfLift节点采样 低显存超高2K分辨率生成工作流_2098521007643521026.json, 视频生成/图生视频/MiniMax H3 海螺Ref 图片 视频 音频多模态原生视频生成工作流（20步）_2089317433478828034.json, 视频生成/图生视频/MiniMax-H3 单人音频驱动数字人+SelfLite 超高分2K高清工作流_2101010348101955585.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人 + SelfLite超分高清工作流_2101010365365702658.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2108767431442395138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_64
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-ref2va超级加速版-仅支持1.0分辨率_2089629306782834690.json、视频生成/图生视频/子悟-MiniMaxH3-ref2va多参考生视频_2085657515655782402.json、视频生成/文生视频/AITUDOU-MiniMax H3(全能参考)_2084222366611234818.json、视频生成/文生视频/承象-MiniMax H3(全能单图多图参考)真人短剧极速版_2084992442926981122.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3  Ref多模态SelfLift节点采样 低显存超高2K分辨率生成工作流_2098521007643521026.json、视频生成/图生视频/MiniMax H3 海螺Ref 图片 视频 音频多模态原生视频生成工作流（20步）_2089317433478828034.json、视频生成/图生视频/MiniMax-H3 单人音频驱动数字人+SelfLite 超高分2K高清工作流_2101010348101955585.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人 + SelfLite超分高清工作流_2101010365365702658.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2108767431442395138.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PixaromaLabel`
 - `PrimitiveFloat`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `ShowText|pysssss`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `EasyCache` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
-- `ModelPatchTorchSettings` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `ImageScale` —— 1/4 个有
-- `MiniMaxH3TurboLoRA` —— 1/4 个有
-- `MiniMaxH3TurboSampler` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `easy compare` —— 1/4 个有
+- `AudioCrop` —— 4/5 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `ExtendIntermediateSigmas` —— 4/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `PlaySound|pysssss` —— 4/5 个有
+- `RHLLMChatNode` —— 4/5 个有
+- `RHSettingsNode` —— 4/5 个有
+- `VAEDecode` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `Fast Groups Muter (rgthree)` —— 3/5 个有
+- `SelfLiftAvatarH3Sampler` —— 3/5 个有
+- `SoundFlow_GetLength` —— 3/5 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 3/5 个有
+- `AudioSeparation` —— 2/5 个有
+- `CreateVideo` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `LoadVideoUI` —— 2/5 个有
+- `AudioConcat` —— 1/5 个有
+- `BasicGuider` —— 1/5 个有
+- `ComfyMathExpression` —— 1/5 个有
+- `EmptyAudio` —— 1/5 个有
+- `ImageBatchMulti` —— 1/5 个有
+- `MiniMaxH3AVDecodeT8` —— 1/5 个有
+- `PixaromaGroupSwitch` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `RandomNoise` —— 1/5 个有
+- `SamplerCustomAdvanced` —— 1/5 个有
+- `SelfLiftH3Sampler` —— 1/5 个有
+- `VAEDecodeAudio` —— 1/5 个有
+- `VRGDG_AudioCrop` —— 1/5 个有
+- `easy imageConcat` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

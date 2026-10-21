@@ -1,89 +1,100 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_11
 type: Text To Image
-frequency: 3
-level: weak
-coverage: 0.854333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSize+, INTConstant, KSampler, LatentUpscaleBy, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SaveImage, SimpleMathDual+, TTResolutionSelector, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 5
+level: moderate
+coverage: 0.926
+common_nodes: [CLIPLoader, CLIPTextEncode, CustomAddLabel, EmptyLatentImage, GetImageSize, GetNode, ImageConcatMulti, ImageScale, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LatentUpscaleBy, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, easy clearCacheAll, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/K2双采文生图批量出图 自动SD放大风格强化开源追MJ_2104761502413713409.json, 图片生成/文生图/【K2-双采V2】图生图_洗图专用_可批量_自动2K放大_风格强化_2104659775685488641.json, 图片生成/文生图/【K2-双采】文生图_可批量_自动SD放大_风格强化_开源也想追上MJ！_2104243273622708225.json]
+members: [图片生成/文生图/T002.Zimage文生图（反推+超清放大）_2069595515695755265.json, 视频生成/图生视频/2082452451457847298.json, 视频生成/图生视频/2068224869619294210.json, 视频生成/图生视频/2070632429588668417.json, 视频生成/图生视频/2067416151377924097.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_11
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/K2双采文生图批量出图 自动SD放大风格强化开源追MJ_2104761502413713409.json、图片生成/文生图/【K2-双采V2】图生图_洗图专用_可批量_自动2K放大_风格强化_2104659775685488641.json、图片生成/文生图/【K2-双采】文生图_可批量_自动SD放大_风格强化_开源也想追上MJ！_2104243273622708225.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/T002.Zimage文生图（反推+超清放大）_2069595515695755265.json、视频生成/图生视频/2082452451457847298.json、视频生成/图生视频/2068224869619294210.json、视频生成/图生视频/2070632429588668417.json、视频生成/图生视频/2067416151377924097.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CustomAddLabel`
 - `EmptyLatentImage`
-- `GetImageSize+`
-- `INTConstant`
+- `GetImageSize`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageScale`
+- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
 - `KSampler`
 - `LatentUpscaleBy`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
 - `SaveImage`
-- `SimpleMathDual+`
-- `TTResolutionSelector`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SetNode`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `UltimateSDUpscale`
 - `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
+- `easy clearCacheAll`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `MemoryCleaner` —— 2/3 个有
-- `ImageSmartSharpen+` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `RunningHub Deepcleaner` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `easy positive` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
-- `llama_cpp_parameters` —— 1/3 个有
-- `solarL_SaveImagesToZip` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `FlashVSRInitPipe` —— 4/5 个有
+- `FlashVSRNodeAdv` —— 4/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `KSamplerAdvanced` —— 4/5 个有
+- `ModelPatchTorchSettings` —— 4/5 个有
+- `ModelSamplingSD3` —— 4/5 个有
+- `PathchSageAttentionKJ` —— 4/5 个有
+- `RIFE VFI` —— 4/5 个有
+- `VHS_VideoCombine` —— 4/5 个有
+- `WanImageToVideo` —— 4/5 个有
+- `easy int` —— 4/5 个有
+- `Power Prompt (rgthree)` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 11 | 3 | 63% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 3 | 24% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.58 - 1 | 3 | 77% |
-| 宽度 | 1024 | 80 - 1024 | 3 | 37% |
-| 高度 | 1024 | 80 - 1024 | 3 | 37% |
+| 采样步数 | fixed | - | 5 | 80% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 5 | 65% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 5 | 80% |
+| 重绘幅度 | simple | - | 5 | 80% |
+| 宽度 | 1536 | 1080 - 1536 | 5 | 87% |
+| 高度 | 864 | 864 - 1920 | 5 | 61% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 10/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 11，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，3 个样本，取值分散，一致性仅 24%
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.58 - 1，3 个样本
-- 宽度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/3 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 最常用 fixed，5 个样本，一致性 80%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，5 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 80%
+- 重绘幅度 最常用 simple，5 个样本，一致性 80%
+- 宽度 中位数 1536，观测区间 1080 - 1536，5 个样本，取值集中（一致性 87%）
+- 高度 中位数 864，观测区间 864 - 1920，5 个样本
+- 高发问题（10/5 个样本）：Steps较低可能导致细节不足

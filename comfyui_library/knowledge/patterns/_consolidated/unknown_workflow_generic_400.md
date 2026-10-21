@@ -1,31 +1,37 @@
 ---
 name: unknown_workflow_generic_400
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.833333
-common_nodes: [LoadImage, OpenAIGPTImageNodeV2, SaveImageAdvanced]
+coverage: 0.88375
+common_nodes: [LoadAudio, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_openai_gpt_image_25_flare_image_edit.json, comfyui-workflow-templates-json/api_openai_gpt_image_25_sunburst_image_edit.json, comfyui-workflow-templates-json/api_openai_image_1_multi_inputs.json]
+members: [视频生成/图生视频/2023023039541153794.json, 音频生成/音频生成/SoulX-Singer 歌曲音色语种转换_2024649973459062785.json, 音频生成/音频生成/SoulX-Singer歌曲音色语种转换-用你的音色唱歌_2023764122608865282.json, 音频生成/音频生成/SoulX-Singer音乐翻唱大模型：一键复刻“良子”声音去唱歌！_2026575087943553025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_400
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_openai_gpt_image_25_flare_image_edit.json、comfyui-workflow-templates-json/api_openai_gpt_image_25_sunburst_image_edit.json、comfyui-workflow-templates-json/api_openai_image_1_multi_inputs.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2023023039541153794.json、音频生成/音频生成/SoulX-Singer 歌曲音色语种转换_2024649973459062785.json、音频生成/音频生成/SoulX-Singer歌曲音色语种转换-用你的音色唱歌_2023764122608865282.json、音频生成/音频生成/SoulX-Singer音乐翻唱大模型：一键复刻“良子”声音去唱歌！_2026575087943553025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `OpenAIGPTImageNodeV2`
-- `SaveImageAdvanced`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `RunningHub SoulX-Singer Preprocess Pipeline`
+- `RunningHub SoulX-Singer Preprocessor`
+- `RunningHub SoulX-Singer SVS Loader`
+- `RunningHub SoulX-Singer SVS Processor`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

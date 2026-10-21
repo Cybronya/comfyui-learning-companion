@@ -3,62 +3,64 @@ name: unknown_workflow_video_sampler_vae_100
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.696
-common_nodes: [CR Text, GetImageSizeAndCount, GetNode, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.941
+common_nodes: [AudioCrop, BasicScheduler, CFGGuider, CreateVideo, DiffusionModelLoaderKJ, Fast Groups Bypasser (rgthree), KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, Label (rgthree), LiconMSR, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SaveVideo, TTResolutionSelector, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, YusuLTXDirector, YusuLTXDirectorCropGuides, YusuLTXDirectorGuide]
 problems: []
 missing: []
-members: [视频生成/图生视频/1925121936324501506.json, 视频生成/图生视频/1933702527525244929.json, 视频生成/图生视频/1923563610159968258.json, 视频生成/图生视频/1923713594662244354.json, 视频生成/图生视频/1923650703401603074.json]
+members: [视频生成/图生视频/2069237416640208897.json, 视频生成/图生视频/2070050397007470594.json, 视频生成/文生视频/LTX2.3全新导演台2.0！支持多参、支持多种组合！_2074497295885881345.json, 视频生成/文生视频/LTX2.5导演台工作流_2087511201000546306.json, 视频生成/文生视频/LTX全新导演台工作流！支持多参、支持多种组合！（去字幕节点）_2073026519034851329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_100
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1925121936324501506.json、视频生成/图生视频/1933702527525244929.json、视频生成/图生视频/1923563610159968258.json、视频生成/图生视频/1923713594662244354.json、视频生成/图生视频/1923650703401603074.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2069237416640208897.json、视频生成/图生视频/2070050397007470594.json、视频生成/文生视频/LTX2.3全新导演台2.0！支持多参、支持多种组合！_2074497295885881345.json、视频生成/文生视频/LTX2.5导演台工作流_2087511201000546306.json、视频生成/文生视频/LTX全新导演台工作流！支持多参、支持多种组合！（去字幕节点）_2073026519034851329.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImpactSwitch`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `AudioCrop`
+- `BasicScheduler`
+- `CFGGuider`
+- `CreateVideo`
+- `DiffusionModelLoaderKJ`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `Label (rgthree)`
+- `LiconMSR`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAudio`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `TTResolutionSelector`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `YusuLTXDirector`
+- `YusuLTXDirectorCropGuides`
+- `YusuLTXDirectorGuide`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 4/5 个有
-- `WanVideoVACEModelSelect` —— 4/5 个有
-- `RHHiddenNodes` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `ColorMatch` —— 2/5 个有
-- `RH_LLMAPI_NODE` —— 2/5 个有
-- `ImageRepeat` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `DualCLIPLoader` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `ModelPreviewOverrideKJ` —— 4/5 个有
+- `孤海注释` —— 3/5 个有
+- `CLIPLoader` —— 1/5 个有
+- `CLIPTextEncode` —— 1/5 个有
+- `LTX2_NAG` —— 1/5 个有
 
 ## 典型参数
 

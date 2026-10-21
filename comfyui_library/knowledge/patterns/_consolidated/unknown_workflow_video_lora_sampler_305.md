@@ -3,68 +3,70 @@ name: unknown_workflow_video_lora_sampler_305
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.805857
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetNode, HuMoEmbeds, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.952571
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1968594582734811138.json, 视频生成/图生视频/1966929028462600194.json, 视频生成/图生视频/1966942457197891585.json, 视频生成/图生视频/1968587211782410241.json, 视频生成/图生视频/1975795002448195586.json, 视频生成/图生视频/2037863999005532162.json, 视频生成/图生视频/1969237169846034433.json]
+members: [视频生成/图生视频/1992127690593595394.json, 视频生成/图生视频/1962034287111553026.json, 视频生成/图生视频/1966880247608172545.json, 视频生成/图生视频/1977653780160368641.json, 视频生成/图生视频/2066404192645898242.json, 视频生成/图生视频/Infinitetalk单人数字人无限时长自循环_2084891209599897602.json, 视频生成/图生视频/1989166244014198786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_305
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1968594582734811138.json、视频生成/图生视频/1966929028462600194.json、视频生成/图生视频/1966942457197891585.json、视频生成/图生视频/1968587211782410241.json、视频生成/图生视频/1975795002448195586.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1992127690593595394.json、视频生成/图生视频/1962034287111553026.json、视频生成/图生视频/1966880247608172545.json、视频生成/图生视频/1977653780160368641.json、视频生成/图生视频/2066404192645898242.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `GetNode`
-- `HuMoEmbeds`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
+- `Int`
 - `LoadAudio`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
+- `ToInt`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `ImageConcatMulti` —— 5/7 个有
-- `RMBG` —— 5/7 个有
-- `JWInteger` —— 3/7 个有
-- `MultiTalkModelLoader` —— 3/7 个有
-- `MultiTalkWav2VecEmbeds` —— 3/7 个有
-- `WanVideoCombineEmbeds` —— 3/7 个有
-- `WanVideoImageToVideoMultiTalk` —— 3/7 个有
-- `Wav2VecModelLoader` —— 3/7 个有
-- `INTConstant` —— 2/7 个有
-- `PDIMAGE_LongerSize` —— 2/7 个有
-- `ImpactInt` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `easy imageRemBg` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 3/7 个有
+- `ImpactInt` —— 3/7 个有
+- `Upscale Model Loader` —— 3/7 个有
+- `Audio Duration (mtb)` —— 2/7 个有
+- `RH_GetAudioDuration` —— 2/7 个有
+- `CR Text` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `GetNode` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `SaveAudio` —— 1/7 个有
+- `SetNode` —— 1/7 个有
+- `Text` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `WanVideoEncode` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 

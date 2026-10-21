@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_222
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6364
-common_nodes: [LoadAudio, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize]
+coverage: 0.5575
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json, 数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json, 音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json, 音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json, 音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json]
+members: [视频生成/图生视频/1990003672761421825.json, 视频生成/图生视频/2036087236680228865.json, 视频生成/图生视频/1992457552340512770.json, 视频生成/图生视频/1992457015104696321.json, 视频生成/图生视频/1993837517334134785.json, 视频生成/文生视频/DG(已整理)：全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1993916589173047298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_222
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json、数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json、音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json、音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json、音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1990003672761421825.json、视频生成/图生视频/2036087236680228865.json、视频生成/图生视频/1992457552340512770.json、视频生成/图生视频/1992457015104696321.json、视频生成/图生视频/1993837517334134785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_sora2`
+- `LoadImage`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 3/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
+- `Text Concatenate` —— 3/6 个有
+- `Comfly_sora2_character` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `CR Text` —— 1/6 个有
 
 ## 典型参数
 

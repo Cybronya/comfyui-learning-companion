@@ -3,32 +3,35 @@ name: unknown_workflow_generic_792
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, FL_CosyVoice3_CrossLingual, FL_CosyVoice3_ModelLoader, LoadAudio, PreviewAudio, SaveAudio]
+coverage: 0.8635
+common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage, 忽略多组孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice 3跨语种语音克隆TTS V1_2015859372018110465.json, 音频生成/音频生成/CosyVoice3 跨语种语音克隆TTS（支持方言）_2059860204505882626.json]
+members: [图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图极速高品质_2098299159580332033.json, 图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图，经济版_2098944959855554561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_792
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/CosyVoice 3跨语种语音克隆TTS V1_2015859372018110465.json、音频生成/音频生成/CosyVoice3 跨语种语音克隆TTS（支持方言）_2059860204505882626.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图极速高品质_2098299159580332033.json、图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图，经济版_2098944959855554561.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `FL_CosyVoice3_CrossLingual`
-- `FL_CosyVoice3_ModelLoader`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
+- `LoadImage`
+- `RH_RhartImageG25FlareImageToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

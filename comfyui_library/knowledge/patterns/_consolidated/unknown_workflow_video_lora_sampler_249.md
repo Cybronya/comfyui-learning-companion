@@ -3,77 +3,65 @@ name: unknown_workflow_video_lora_sampler_249
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.900125
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, PreviewAny, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.87
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018664165719674881.json, 视频生成/图生视频/2017294835589324802.json, 视频生成/图生视频/2017509213773238274.json, 视频生成/图生视频/2016740203737653250.json, 视频生成/图生视频/2017231057254354945.json, 视频生成/图生视频/2017276416928260097.json, 音频生成/音频生成/自动生成数字人V2-OmniVoice声音设计（方言支持！）-Infinite Talk动态数字人_2041718633499467778.json, 音频生成/音频生成/自动生成数字人V3-VoxCPM2声音设计（方言文本翻译）-Infinite Talk数字人_2042769722399268866.json]
+members: [视频生成/图生视频/2075633285170032642.json, 视频生成/图生视频/2075860093270323201.json, 视频生成/图生视频/2076950547332161538.json, 视频生成/图生视频/2075534910647005186.json, 视频生成/图生视频/2076643931248488450.json, 视频生成/图生视频/2077033010171568129.json, 视频生成/图生视频/2075515497583570946.json, 视频生成/图生视频/2076480633026727938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_249
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2018664165719674881.json、视频生成/图生视频/2017294835589324802.json、视频生成/图生视频/2017509213773238274.json、视频生成/图生视频/2016740203737653250.json、视频生成/图生视频/2017231057254354945.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2075633285170032642.json、视频生成/图生视频/2075860093270323201.json、视频生成/图生视频/2076950547332161538.json、视频生成/图生视频/2075534910647005186.json、视频生成/图生视频/2076643931248488450.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `AudioEncoderEncode`
 - `AudioEncoderLoader`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ColorMatch`
-- `JWInteger`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelSamplingSD3`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 7/8 个有
-- `RIFE VFI` —— 7/8 个有
-- `easy cleanGpuUsed` —— 7/8 个有
-- `easy seed` —— 7/8 个有
-- `MathExpression|pysssss` —— 6/8 个有
-- `easy showAnything` —— 6/8 个有
-- `CastAnyToIntStringFloat` —— 5/8 个有
-- `LoadAudio` —— 5/8 个有
-- `RH_GetAudioDuration` —— 5/8 个有
-- `SaveAudio` —— 5/8 个有
-- `ImageScaleToTotalPixels` —— 3/8 个有
-- `Qwen3_VQA` —— 3/8 个有
-- `easy saveText` —— 3/8 个有
-- `CR Text` —— 2/8 个有
-- `FB_Qwen3TTSVoiceClone` —— 2/8 个有
-- `WhisperSTT` —— 2/8 个有
-- `AudioInfo` —— 1/8 个有
-- `GetImageSizeAndCount` —— 1/8 个有
-- `ImageConcanate` —— 1/8 个有
-- `ImageFromBatch` —— 1/8 个有
-- `LayerUtility: TextJoin` —— 1/8 个有
-- `OmniVoiceVoiceDesignTTS` —— 1/8 个有
-- `Qwen3TTSModelLoader` —— 1/8 个有
-- `Qwen3TTSVoiceDesign` —— 1/8 个有
-- `RH_LLMAPI_Pro_Node` —— 1/8 个有
-- `RunningHub_VoxCPM_Generate` —— 1/8 个有
-- `RunningHub_VoxCPM_LoadModel` —— 1/8 个有
-- `ShowAnything|Mie` —— 1/8 个有
+- `BerniniS2VConditioning` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `RIFEInterpolation` —— 7/8 个有
+- `AudioConcat` —— 5/8 个有
+- `Float` —— 2/8 个有
+- `IndexTTS2Run` —— 2/8 个有
+- `PreviewAudio` —— 2/8 个有
+- `RunningHub Deepcleaner` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `BerniniS2VConditioningV2` —— 1/8 个有
+- `CR Text` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `ImpactFloat` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `RIFE VFI` —— 1/8 个有
+- `easy int` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 
@@ -82,8 +70,8 @@ source: knowledge_consolidation
 | 采样步数 | fixed | - | 8 | 88% |
 | Prompt 约束强度(CFG) | 4 | 4 - 4 | 8 | 100% |
 | 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 50% |
-| 重绘幅度 | normal | - | 8 | 88% |
+| 调度器 | dpmpp_2m_sde | - | 8 | 100% |
+| 重绘幅度 | sgm_uniform | - | 8 | 100% |
 
 ## 常见问题
 
@@ -94,5 +82,5 @@ source: knowledge_consolidation
 - 采样步数 最常用 fixed，8 个样本，一致性 88%
 - Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
 - 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 50%
-- 重绘幅度 最常用 normal，8 个样本，一致性 88%
+- 调度器 最常用 dpmpp_2m_sde，8 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，8 个样本，一致性 100%

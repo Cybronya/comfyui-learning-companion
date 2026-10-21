@@ -1,89 +1,74 @@
 ---
 name: unknown_workflow_sampler_unet_vae_36
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.846143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 13
+level: strong
+coverage: 0.843615
+common_nodes: [CLIPLoader, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MinimaxH3全能参考高清放大工作流_2110689506868424706.json, 视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json, 视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json, 视频生成/图生视频/Singularity真实人物高质量双采工作流_2098389525570613249.json, 视频生成/图生视频/minMax+H3+二采放大_2091513919167885314.json, 视频生成/图生视频/minimax h3_fi2va-dasiwa-zs05可选单图双采_2092267502540779521.json, 视频生成/图生视频/minimax h3_ref2va-dasiwa-zs05可选双采_2092257046572920834.json, 视频生成/图生视频/minimax_h3_i2v_Latent%20Upscaler_2090996016345608194.json, 视频生成/图生视频/【合理动态版】Hybrid_4+5步双采样_2096530913504088066.json, 视频生成/图生视频/【疯了的动态】Dasiwa_4+5步双采样_2096866880698015746.json, 视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json, 视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json, 视频生成/文生视频/Minimax_h3_i2v_latent+upscale+去油光Lora工作流_2093179059550380034.json, 视频生成/文生视频/海螺H3-高效4步-脸部护持_2091172705780461570.json]
+members: [图片生成/图生图/2102217964954152961.json, 图片生成/图生图/2102232455502716929.json, 图片生成/图生图/2102236996667265025.json, 图片生成/图生图/2102319407006572545.json, 图片生成/图生图/2102322312635834369.json, 图片生成/图生图/2102343043620888578.json, 图片生成/图生图/2102572577544818689.json, 图片生成/图生图/2102593163918667778.json, 图片生成/图生图/2102599002511462402.json, 图片生成/文生图/OWEN IMAGE 2.1 文生图_2103073574478245890.json, 图片生成/文生图/Qwen-Image-2.1-图生图_2101854452645978114.json, 图片生成/文生图/Qwen_Image_2.1_文生图_6步加速无PE_2107979311847399426.json, 图片生成/文生图/Qwen_Image_2.1_文生图_纯净官流40步无PE_2107976735823323137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_36
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考高清放大工作流_2110689506868424706.json、视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json、视频生成/图生视频/Minimax_h3_超级加速多图参考生视频_2084162807137918977.json、视频生成/图生视频/Singularity真实人物高质量双采工作流_2098389525570613249.json、视频生成/图生视频/minMax+H3+二采放大_2091513919167885314.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/2102217964954152961.json、图片生成/图生图/2102232455502716929.json、图片生成/图生图/2102236996667265025.json、图片生成/图生图/2102319407006572545.json、图片生成/图生图/2102322312635834369.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 13/14 个有
-- `LoraLoaderModelOnly` —— 13/14 个有
-- `PrimitiveFloat` —— 13/14 个有
-- `PrimitiveStringMultiline` —— 13/14 个有
-- `LTXVConcatAVLatent` —— 12/14 个有
-- `LTXVSeparateAVLatent` —— 12/14 个有
-- `MinimaxH3LatentUpscaler3D` —— 12/14 个有
-- `VHS_VideoCombine` —— 12/14 个有
-- `MiniMaxH3ReferenceToVideo` —— 10/14 个有
-- `MiniMaxH3SigmaShift` —— 10/14 个有
-- `ModelPreviewOverrideKJ` —— 10/14 个有
-- `SplitSigmas` —— 10/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/14 个有
-- `ModelAttentionBackend` —— 7/14 个有
-- `ManualSigmas` —— 6/14 个有
-- `CreateVideo` —— 5/14 个有
-- `H3SigmaRefiner` —— 5/14 个有
-- `LoadAudio` —— 5/14 个有
-- `Label (rgthree)` —— 4/14 个有
-- `MiniMaxH3ImageToVideo` —— 4/14 个有
-- `SaveVideo` —— 4/14 个有
-- `ImageResizeKJv2` —— 3/14 个有
-- `LoraLoaderBypassModelOnly` —— 3/14 个有
-- `easy showAnything` —— 3/14 个有
-- `AudioCrop` —— 2/14 个有
-- `StringFunction|pysssss` —— 2/14 个有
-- `VHS_LoadVideo` —— 2/14 个有
-- `FloatConstant` —— 1/14 个有
-- `INTConstant` —— 1/14 个有
-- `Int` —— 1/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
-- `MiniMaxChunkFeedForward` —— 1/14 个有
-- `PainterVRAM` —— 1/14 个有
-- `PathchSageAttentionKJ` —— 1/14 个有
-- `RHLLMChatNode` —— 1/14 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 1/14 个有
-- `easy int` —— 1/14 个有
-- `忽略多组孤海` —— 1/14 个有
+- `LoadImage` —— 10/13 个有
+- `EmptyLatentImage` —— 9/13 个有
+- `QwenImage21Cache` —— 9/13 个有
+- `ResolutionSelector` —— 8/13 个有
+- `ComfySwitchNode` —— 6/13 个有
+- `SaveImageAdvanced` —— 6/13 个有
+- `PrimitiveStringMultiline` —— 5/13 个有
+- `PreviewImage` —— 4/13 个有
+- `EmptyImage` —— 3/13 个有
+- `YK_LoadImageFromURL` —— 2/13 个有
+- `AIO_Preprocessor` —— 1/13 个有
+- `LoraLoaderModelOnly` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 6 - 40 | 13 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 9 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 6 - 40，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）

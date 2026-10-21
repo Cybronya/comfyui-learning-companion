@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_136
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.908
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, LoadVideo, RH_RhartVideoSparkvideo20ImageToVideo, RH_RhartVideoSparkvideo20MultimodalVideo, RH_RhartVideoSparkvideo20TextToVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
+coverage: 0.946375
+common_nodes: [LoadImage, RH_RhartVideoV31FastStartEndToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037450416761344001.json, 视频生成/图生视频/2038797547417903106.json, 视频生成/文生视频/Seedance2.0全系列 _ 视频生成+编辑_2045837253611622401.json, 视频生成/文生视频/地表最强超能视频2.0-全家桶-多图参考_首尾帧_文生视频_视频编辑-支持真人_2037702362420224001.json, 视频生成/文生视频/最强视频模型功能全家桶（图_文生视频_真人角色参考_视频编辑）_2037338680179822593.json, 视频生成/文生视频/目前地表最强视频模型功能全家桶（图生视频_文生视频_真人角色参考_视频编辑）_2037304818225651713.json, 视频生成/文生视频/超能视频模型全家桶（图生视频_文生视频_真人角色参考_视频编辑）_2037357732663140354.json]
+members: [视频生成/图生视频/2038487102777724929.json, 视频生成/图生视频/2033498737447804930.json, 视频生成/图生视频/2046112095577579522.json, 视频生成/图生视频/2046251858011889665.json, 视频生成/图生视频/2046878059822850050.json, 视频生成/图生视频/2049857854470934530.json, 视频生成/图生视频/2047202620065980418.json, 视频生成/文生视频/角色发现镜头，对镜头做互动动作，添加人群噪音、体育场灯光和动态摄像机角度。+全节点注释_2054074849928196098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_136
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2037450416761344001.json、视频生成/图生视频/2038797547417903106.json、视频生成/文生视频/Seedance2.0全系列 _ 视频生成+编辑_2045837253611622401.json、视频生成/文生视频/地表最强超能视频2.0-全家桶-多图参考_首尾帧_文生视频_视频编辑-支持真人_2037702362420224001.json、视频生成/文生视频/最强视频模型功能全家桶（图_文生视频_真人角色参考_视频编辑）_2037338680179822593.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2038487102777724929.json、视频生成/图生视频/2033498737447804930.json、视频生成/图生视频/2046112095577579522.json、视频生成/图生视频/2046251858011889665.json、视频生成/图生视频/2046878059822850050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoSparkvideo20ImageToVideo`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `RH_RhartVideoSparkvideo20TextToVideo`
-- `RH_SparkVideoAssetCreate`
-- `RH_SparkVideoAssetIdsMerge`
+- `RH_RhartVideoV31FastStartEndToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/7 个有
+- `RH_RhartVideoV31ProStartEndToVideo` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 

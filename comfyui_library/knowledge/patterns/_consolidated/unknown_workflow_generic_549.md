@@ -3,36 +3,38 @@ name: unknown_workflow_generic_549
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, IndexTTS2EmotionVectorNode, LoadAudio, SaveAudio, SaveAudioMP3]
+coverage: 0.330667
+common_nodes: [AILab_QwenVL, ConstrainImage|pysssss, JWStringGetLine, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/单人声音克隆_2042997567839014913.json, 音频生成/音频生成/声音克隆-Index-TTS2_2013603529667121154.json, 音频生成/音频生成/声音克隆-Index-TTS2（含1和1.5版本）_1980577292449660930.json]
+members: [图片生成/文生图/男装女装电商带货+全能图片2 & 10并发+模特姿势裂变+全节点注释_2059132311383400450.json, 图片生成/文生图/男装女装电商带货+全能图片G 2 &10并发+模特姿势裂变+全节点注释_2059132701772439553.json, 图片生成/文生图/男装女装电商带货+全能图片十并发+模特姿势裂变+全节点注释_2058917673177800706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_549
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/单人声音克隆_2042997567839014913.json、音频生成/音频生成/声音克隆-Index-TTS2_2013603529667121154.json、音频生成/音频生成/声音克隆-Index-TTS2（含1和1.5版本）_1980577292449660930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/男装女装电商带货+全能图片2 & 10并发+模特姿势裂变+全节点注释_2059132311383400450.json、图片生成/文生图/男装女装电商带货+全能图片G 2 &10并发+模特姿势裂变+全节点注释_2059132701772439553.json、图片生成/文生图/男装女装电商带货+全能图片十并发+模特姿势裂变+全节点注释_2058917673177800706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：33%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2EmotionVectorNode`
-- `LoadAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `AILab_QwenVL`
+- `ConstrainImage|pysssss`
+- `JWStringGetLine`
+- `LoadImage`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 2/3 个有
-- `IndexTTSNode` —— 2/3 个有
-- `IndexTTS2BaseNode` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash_Batch` —— 1/3 个有
+- `RH_Nano_Banana_Image2Image_Batch` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage_Batch` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_generic_128
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.959143
-common_nodes: [CreateVideo, LoadAudio, RH_HeyGemNode, SaveVideo, VHS_LoadVideo]
+coverage: 0.625
+common_nodes: [CR Text, RH_LLMAPI_Pro_Node, RH_RhartImageG2TextToImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [数字人/数字人/HeyGem口播_2089232511313465346.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json, 视频生成/图生视频/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2090756294016856066.json, 视频生成/图生视频/1927204893608804354.json]
+members: [图片生成/文生图/B站封面生成全能图像G image2.0_2059819232501784577.json, 图片生成/文生图/全能图像G image2.0B站封面生成_2070707709644722177.json, 图片生成/文生图/全能图像G image2.0B站封面生成_2071065904363954178.json, 图片生成/文生图/全能图像G image2.0B站封面生成_2071081676318535682.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2059820340053893122.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2070711928586072066.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2071062218250215426.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2071077447948394497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_128
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/HeyGem口播_2089232511313465346.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/B站封面生成全能图像G image2.0_2059819232501784577.json、图片生成/文生图/全能图像G image2.0B站封面生成_2070707709644722177.json、图片生成/文生图/全能图像G image2.0B站封面生成_2071065904363954178.json、图片生成/文生图/全能图像G image2.0B站封面生成_2071081676318535682.json、图片生成/文生图/小红书封面生成全能图像G image2.0_2059820340053893122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CreateVideo`
-- `LoadAudio`
-- `RH_HeyGemNode`
-- `SaveVideo`
-- `VHS_LoadVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/7 个有
-- `PreviewVideoNode` —— 1/7 个有
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
+- `ShowText|pysssss`
 
 ## 典型参数
 

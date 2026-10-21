@@ -1,33 +1,40 @@
 ---
 name: unknown_workflow_generic_38
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 1
-common_nodes: [RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
+coverage: 0.557
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
-missing: []
-members: [视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json, 视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json, 视频生成/文生视频/SK_txt2vid_2038875282374922242.json, 视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json, 视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json, 视频生成/文生视频/Seedance2.0_文生视频_2037138846156066817.json, 视频生成/文生视频/Seedance2.0文生视频_2037013695364079618.json, 视频生成/文生视频/Seedance2.0文生视频_2037442624088449026.json, 视频生成/文生视频/Seedance2.0文生视频_2047295644854915074.json, 视频生成/文生视频/Seedance2.0文生视频测试_2089267259809296385.json, 视频生成/文生视频/Seedance2.0文生视频（RH版）_2054421287983951873.json, 视频生成/文生视频/Seedance2.0文生视频｜一句话生成大片 描述越细效果越惊艳_2105496532777787394.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051209250336198657.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051248121287593985.json]
+missing: [CR Prompt Text]
+members: [视频生成/图生视频/2034670975614193666.json, 视频生成/图生视频/1974925677256380418.json, 视频生成/图生视频/1977807207951728641.json, 视频生成/图生视频/1979417427316477953.json, 视频生成/图生视频/2036008151446724610.json, 视频生成/图生视频/2045808720227082242.json, 视频生成/图生视频/1980575345395060738.json, 视频生成/图生视频/1980581502599741442.json, 视频生成/图生视频/1980566479743664129.json, 视频生成/图生视频/1942436897685712898.json, 视频生成/图生视频/1942486518382661633.json, 视频生成/图生视频/1946030532021153794.json, 视频生成/图生视频/1944929553569730561.json, 视频生成/文生视频/1942436897685712898.json, 视频生成/文生视频/1942486518382661633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_38
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json、视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json、视频生成/文生视频/SK_txt2vid_2038875282374922242.json、视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json、视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2034670975614193666.json、视频生成/图生视频/1974925677256380418.json、视频生成/图生视频/1977807207951728641.json、视频生成/图生视频/1979417427316477953.json、视频生成/图生视频/2036008151446724610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20TextToVideo`
+全部 15 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `LoadImage`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/14 个有
+- `SaveImage` —— 12/15 个有
+- `Comfly_Googel_Veo3` —— 9/15 个有
+- `Comfly_sora2` —— 6/15 个有
+- `ShellAgentPluginOutputText` —— 6/15 个有
+- `ImageConcatMulti` —— 1/15 个有
 
 ## 典型参数
 
@@ -39,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text

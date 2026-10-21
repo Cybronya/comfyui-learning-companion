@@ -1,87 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_27
 type: Unknown Workflow
-frequency: 26
-level: strong
-coverage: 0.602692
-common_nodes: [CLIPVisionLoader, DrawViTPose, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 27
+level: moderate
+coverage: 0.753148
+common_nodes: [CreateCFGScheduleFloatList, Int, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2003700640893288450.json, 视频生成/图生视频/2049893204031488002.json, 视频生成/图生视频/2042582047956410370.json, 视频生成/图生视频/2070049005316435969.json, 视频生成/图生视频/animate舞蹈迁移摇一摇_2061344115643736066.json, 视频生成/图生视频/animate舞蹈迁移摇一摇_2099776395709861890.json, 视频生成/图生视频/animate舞蹈迁移摇一摇_2100036331069075458.json, 视频生成/图生视频/2079228691137257473.json, 视频生成/图生视频/2081019730562998274.json, 视频生成/图生视频/2055133948241563650.json, 视频生成/图生视频/2072605420753084417.json, 视频生成/图生视频/2055152024093765633.json, 视频生成/图生视频/本地开源免费， tiktok dancing_2054138634953084930.json, 视频生成/图生视频/本地开源免费，4 minutes_2054476614616010753.json, 视频生成/图生视频/本地开源免费，bubblepop_2054151947208413186.json, 视频生成/图生视频/2054190698328535041.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2053700198567817217.json, 视频生成/图生视频/2053885364179357697.json, 视频生成/图生视频/2054085546393260034.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2054098992224579585.json, 视频生成/图生视频/2055285137239232514.json, 视频生成/图生视频/本地开源免费，动作迁移_2053895835615809538.json, 视频生成/图生视频/本地开源免费，我最红真人版_2055202834680950786.json, 视频生成/图生视频/本地开源免费，杀青梗_2054219479617425409.json, 视频生成/图生视频/2055312593698467841.json, 视频生成/图生视频/2054476626561388545.json]
+members: [视频生成/图生视频/1955939150006550529.json, 视频生成/图生视频/1955946689876119554.json, 视频生成/图生视频/1959887723270189057.json, 视频生成/图生视频/1958725154522165249.json, 视频生成/图生视频/1959809531566043137.json, 视频生成/图生视频/1976918780821573633.json, 视频生成/图生视频/1950424438283091970.json, 视频生成/图生视频/1957628788819554305.json, 视频生成/图生视频/1950150331004010497.json, 视频生成/图生视频/1956368575927910401.json, 视频生成/图生视频/2004200391954886657.json, 视频生成/图生视频/2009154616046395394.json, 视频生成/图生视频/2014625691811192833.json, 视频生成/图生视频/2037457877417332737.json, 视频生成/图生视频/2044320478889775106.json, 视频生成/图生视频/2054086706290282498.json, 视频生成/图生视频/2054117320213180418.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2110660986368774146.json, 视频生成/图生视频/1999781370018791426.json, 视频生成/图生视频/2021553233977679873.json, 视频生成/图生视频/2014248417769295873.json, 视频生成/图生视频/2080914609724284930.json, 视频生成/图生视频/2003625393506689026.json, 视频生成/文生视频/Wan2.2-14B 图生视频RH平台示例工作流_2049013071271694337.json, 视频生成/文生视频/1950150304220274689.json, 视频生成/文生视频/Wan2.2图生视频_2010913412934537218.json, 视频生成/文生视频/千问2.5图生视频，极速版_2016217069779427330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_27
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/2003700640893288450.json、视频生成/图生视频/2049893204031488002.json、视频生成/图生视频/2042582047956410370.json、视频生成/图生视频/2070049005316435969.json、视频生成/图生视频/animate舞蹈迁移摇一摇_2061344115643736066.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（视频生成/图生视频/1955939150006550529.json、视频生成/图生视频/1955946689876119554.json、视频生成/图生视频/1959887723270189057.json、视频生成/图生视频/1958725154522165249.json、视频生成/图生视频/1959809531566043137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：26
-- **可信度**：强结论
-- **平均知识覆盖**：60%
+- **样本数**：27
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `VHS_LoadVideo`
+全部 27 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `Int`
+- `JWInteger`
+- `JjkText`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 25/26 个有
-- `PreviewImage` —— 25/26 个有
-- `SetNode` —— 25/26 个有
-- `WanVideoLoraSelectMulti` —— 25/26 个有
-- `CR Prompt Text` —— 24/26 个有
-- `JWInteger` —— 24/26 个有
-- `WanVideoTorchCompileSettings` —— 24/26 个有
-- `WanVideoBlockSwap` —— 23/26 个有
-- `easy showAnything` —— 23/26 个有
-- `VHS_VideoInfoSource` —— 22/26 个有
-- `LayerUtility: PurgeVRAM V2` —— 19/26 个有
-- `FlashVSR_SM_KSampler` —— 16/26 个有
-- `FlashVSR_SM_Model` —— 16/26 个有
-- `GetImageRangeFromBatch` —— 16/26 个有
-- `GetImageSize` —— 16/26 个有
-- `easy indexAnything` —— 7/26 个有
-- `GetImageSizeAndCount` —— 3/26 个有
-- `ImageConcatMulti` —— 3/26 个有
-- `ImageConcatenate_UTK` —— 3/26 个有
-- `easy mathInt` —— 3/26 个有
-- `INTConstant` —— 2/26 个有
-- `Bjornulf_ShowInt` —— 1/26 个有
-- `DWPreprocessor` —— 1/26 个有
-- `ImageFromBatch+` —— 1/26 个有
-- `ImageMirror` —— 1/26 个有
-- `ImagePadKJ` —— 1/26 个有
-- `RHHiddenNodes` —— 1/26 个有
-- `VHS_GetImageCount` —— 1/26 个有
-- `VHS_SelectImages` —— 1/26 个有
-- `WanVideoContextOptions` —— 1/26 个有
+- `ImageResize+` —— 26/27 个有
+- `PreviewImage` —— 26/27 个有
+- `WanVideoImageToVideoEncode` —— 26/27 个有
+- `ImpactSwitch` —— 25/27 个有
+- `LoadImage` —— 25/27 个有
+- `RH_Prompter` —— 25/27 个有
+- `TextCombinerTwo` —— 25/27 个有
+- `easy showAnything` —— 25/27 个有
+- `RH_Captioner` —— 24/27 个有
+- `RH_Translator` —— 24/27 个有
+- `easy anythingIndexSwitch` —— 24/27 个有
+- `easy cleanGpuUsed` —— 21/27 个有
+- `Bjornulf_ShowInt` —— 20/27 个有
+- `CR Text Concatenate` —— 20/27 个有
+- `CreateVideo` —— 20/27 个有
+- `ImageFromBatch+` —— 20/27 个有
+- `JjkShowText` —— 20/27 个有
+- `RH_LLMAPI_NODE` —— 20/27 个有
+- `RunningHub ThinkSound` —— 20/27 个有
+- `SaveVideo` —— 20/27 个有
+- `ShowText` —— 20/27 个有
+- `ImageResizeKJv2` —— 19/27 个有
+- `Fast Groups Muter (rgthree)` —— 17/27 个有
+- `WanVideoBlockSwap` —— 7/27 个有
+- `WanVideoSetBlockSwap` —— 6/27 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/27 个有
+- `String` —— 2/27 个有
+- `LayerColor: Brightness & Contrast` —— 1/27 个有
+- `Load Image From Url (mtb)` —— 1/27 个有
+- `WanVideoEmptyEmbeds` —— 1/27 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 1.35013e+09 | 1.27484e+08 - 2.14652e+09 | 16 | 54% |
-| Prompt 约束强度(CFG) | randomize | - | 16 | 100% |
-| 采样算法 | 2 | 2 - 2 | 16 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 16 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,10 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.35013e+09，观测区间 1.27484e+08 - 2.14652e+09，16 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，16 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，16 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，16 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，16 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 2.14652e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

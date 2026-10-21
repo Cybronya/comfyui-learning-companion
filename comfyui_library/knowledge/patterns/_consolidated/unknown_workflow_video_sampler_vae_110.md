@@ -3,69 +3,65 @@ name: unknown_workflow_video_sampler_vae_110
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6198
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImpactFloat, MathExpression|pysssss, PrimitiveFloat, SetNode, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.6978
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
-missing: [MathExpression|pysssss, StringFunction|pysssss, easy anythingIndexSwitch, easy int, easy positive, easy imageSize, easy seed]
-members: [视频生成/图生视频/1973048740976136194.json, 视频生成/图生视频/1983039998909906946.json, 视频生成/文生视频/1972719438250332161.json, 视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-KJ_1982718916021624834.json, 视频生成/文生视频/2066055962227961856.json]
+missing: []
+members: [视频生成/图生视频/1913228889936855042.json, 视频生成/图生视频/1912169450282647553.json, 视频生成/图生视频/1926293882655457281.json, 视频生成/图生视频/1945694756720582658.json, 视频生成/图生视频/1908024334332342274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_110
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1973048740976136194.json、视频生成/图生视频/1983039998909906946.json、视频生成/文生视频/1972719438250332161.json、视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-KJ_1982718916021624834.json、视频生成/文生视频/2066055962227961856.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1913228889936855042.json、视频生成/图生视频/1912169450282647553.json、视频生成/图生视频/1926293882655457281.json、视频生成/图生视频/1945694756720582658.json、视频生成/图生视频/1908024334332342274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
-- `ImpactFloat`
-- `MathExpression|pysssss`
-- `PrimitiveFloat`
-- `SetNode`
-- `StringFunction|pysssss`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy imageSize`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelectMulti` —— 4/5 个有
-- `EmptyImage` —— 3/5 个有
-- `QwenLoader` —— 3/5 个有
-- `WanVideoEmptyEmbeds` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `WanVideoPromptExtender` —— 3/5 个有
-- `ImageFromBatch` —— 2/5 个有
-- `ImageLoader` —— 2/5 个有
-- `ImageResizeKJ` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `MemoryCleaner` —— 2/5 个有
-- `MultiplePathsInput` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `Qwen3_VQA` —— 2/5 个有
-- `WanVideoImageToVideoEncode` —— 2/5 个有
-- `WanVideoSetLoRAs` —— 2/5 个有
+- `MaskPreview+` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `WanVideoVACEStartToEndFrame` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `WanVideoVACEModelSelect` —— 3/5 个有
+- `Note Plus (mtb)` —— 2/5 个有
+- `ImageBatchMulti` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `ImageFromBatch+` —— 1/5 个有
+- `InspyrenetRembg` —— 1/5 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `Note _O` —— 1/5 个有
+- `WanVideoLoraSelect` —— 1/5 个有
+- `WanVideoVRAMManagement` —— 1/5 个有
+- `easy imageScaleDownToSize` —— 1/5 个有
 
 ## 典型参数
 
@@ -77,4 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、StringFunction|pysssss、easy anythingIndexSwitch、easy int、easy positive
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

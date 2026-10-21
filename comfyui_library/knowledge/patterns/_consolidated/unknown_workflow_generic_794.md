@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 0.8335
-common_nodes: [AudioCrop, LoadAudio, LoadImage, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3]
+common_nodes: [RH_RhartImageNProTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/DMOSpeech2声音极速克隆_1955416782771294210.json, 音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆带语气_2074293742135242753.json]
+members: [图片生成/文生图/全能图片PRO-文生图-低价渠道版 API专用_2081657458845642754.json, 图片生成/文生图/全能图片PRO-文生图-低价渠道版_2105332221723889666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_794
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/DMOSpeech2声音极速克隆_1955416782771294210.json、音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆带语气_2074293742135242753.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片PRO-文生图-低价渠道版 API专用_2081657458845642754.json、图片生成/文生图/全能图片PRO-文生图-低价渠道版_2105332221723889666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,16 +23,8 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `LoadAudio`
-- `LoadImage`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `RunningHub DMOSpeech2` —— 1/2 个有
+- `RH_RhartImageNProTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

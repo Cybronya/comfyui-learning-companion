@@ -3,35 +3,37 @@ name: unknown_workflow_generic_388
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, PreviewAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.89725
+common_nodes: [Apply Whisper, BreezeTTS2LoadModel, CR Text, LoadAudio, NormalizeAudioLoudness, PreviewAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [音频生成/音频生成/indextts基础款_2014667772751515650.json, 音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json, 音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/空白工作流_2063266975324921857.json]
+members: [数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json, 数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json, 音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json, 音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_388
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/indextts基础款_2014667772751515650.json、音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json、音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/空白工作流_2063266975324921857.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json、数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json、音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json、音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `Apply Whisper`
+- `BreezeTTS2LoadModel`
+- `CR Text`
 - `LoadAudio`
+- `NormalizeAudioLoudness`
 - `PreviewAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `BreezeTTS2VoiceDirection` —— 3/4 个有
+- `BreezeTTS2VoiceClone` —— 1/4 个有
 
 ## 典型参数
 

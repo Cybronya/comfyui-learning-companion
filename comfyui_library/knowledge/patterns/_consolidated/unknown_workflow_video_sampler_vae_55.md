@@ -1,68 +1,50 @@
 ---
 name: unknown_workflow_video_sampler_vae_55
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.797
-common_nodes: [DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, ImageFromBatch+, ImageMirror, ImageRepeat, ImageResizeKJ, ImpactSwitch, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, OpenposePreprocessor, VHS_LoadVideo, VHS_MergeImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.967667
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/1933785528938450945.json, 视频生成/图生视频/1933557560941395970.json, 视频生成/图生视频/1924678755254456322.json, 视频生成/图生视频/1922710757258006529.json, 视频生成/图生视频/1907443729060532226.json, 视频生成/图生视频/1933759507254435841.json, 视频生成/图生视频/1933708885247352833.json, 视频生成/图生视频/1937848032371064834.json]
+missing: [String Literal]
+members: [视频生成/文生视频/1949779565657899010.json, 视频生成/文生视频/1959895753969840129.json, 视频生成/文生视频/1895790178705473538.json, 视频生成/文生视频/1927915549706338305.json, 视频生成/文生视频/CineScale-wan2.1-至高2k文生视频测试_2072999630763499520.json, 视频生成/文生视频/1949888424809553922.json, 视频生成/文生视频/EchoShot-跨镜头一致性_2072999661792960512.json, 视频生成/文生视频/1927926350613463041.json, 视频生成/文生视频/1924372992019918849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_55
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1933785528938450945.json、视频生成/图生视频/1933557560941395970.json、视频生成/图生视频/1924678755254456322.json、视频生成/图生视频/1922710757258006529.json、视频生成/图生视频/1907443729060532226.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/1949779565657899010.json、视频生成/文生视频/1959895753969840129.json、视频生成/文生视频/1895790178705473538.json、视频生成/文生视频/1927915549706338305.json、视频生成/文生视频/CineScale-wan2.1-至高2k文生视频测试_2072999630763499520.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `DepthAnything_V2`
-- `DownloadAndLoadDepthAnythingV2Model`
-- `ImageFromBatch+`
-- `ImageMirror`
-- `ImageRepeat`
-- `ImageResizeKJ`
-- `ImpactSwitch`
-- `JWInteger`
-- `LoadImage`
+全部 9 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
-- `OpenposePreprocessor`
-- `VHS_LoadVideo`
-- `VHS_MergeImages`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 7/8 个有
-- `ImageConcatMulti` —— 6/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
-- `WanVideoTeaCache` —— 6/8 个有
-- `DF_Integer` —— 5/8 个有
-- `CR Prompt Text` —— 4/8 个有
-- `Note Plus (mtb)` —— 4/8 个有
-- `WanVideoVACEModelSelect` —— 3/8 个有
-- `Blend` —— 2/8 个有
-- `Note _O` —— 2/8 个有
-- `WanVideoLoraSelect` —— 2/8 个有
-- `GetNode` —— 1/8 个有
-- `ImageBlend` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `WanVideoLoraSelect` —— 7/9 个有
+- `WanVideoBlockSwap` —— 6/9 个有
+- `String Literal` —— 5/9 个有
+- `WanVideoEnhanceAVideo` —— 4/9 个有
+- `DF_Integer` —— 3/9 个有
+- `WanVideoSetRadialAttention` —— 2/9 个有
+- `WanVideoTorchCompileSettings` —— 2/9 个有
+- `WanVideoVACEModelSelect` —— 2/9 个有
+- `DeepTranslatorTextNode` —— 1/9 个有
+- `Note _O` —— 1/9 个有
+- `SimpleMath+` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 
@@ -74,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：String Literal

@@ -3,82 +3,69 @@ name: text_to_image_video_lora_sampler_98
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.69025
-common_nodes: [Any Switch (rgthree), Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, EmptyLatentImage, Fast Groups Muter (rgthree), FlashVSRNode, Float to Int, GetNode, INTConstant, ImageResizeKJv2, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, MultiTalkWav2VecEmbeds, RHHiddenNodes, RH_Captioner, RH_GetAudioDuration, RH_LLMAPI_Pro_Node, RIFEInterpolation, SaveAudio, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoContextOptions, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy cleanGpuUsed, easy clearCacheAll, easy ifElse, easy imageSize, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9275
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan 2.2提示词丝滑运镜高动态MV图生视频处理工具_2101374439895162882.json, 视频生成/图生视频/Wan2.2丝滑运镜MV工作流｜高动态提示词视频生成_2097804026267131906.json, 视频生成/图生视频/wan 2.2提示词丝滑运镜｜高动态MV数字人图生视频_2092003605388808194.json, 视频生成/图生视频/wan 2.2高动态MV工作流，提示词精准控制丝滑运镜_2110437128181215233.json, 视频生成/图生视频/丝滑运镜高动态MV｜wan 2.2提示词驱动图生视频直出_2089548883880923138.json, 视频生成/图生视频/提示词丝滑运镜高动态｜wan 2.2数字人MV制作_2101203802224418818.json, 视频生成/图生视频/高动态MV运镜｜wan 2.2自动提示词丝滑图生视频数字人_2092134052450095105.json, 视频生成/图生视频/高动态提示词丝滑运镜2.2wan数字人图生视频新奇创意_2087306443576930306.json]
+members: [视频生成/文生视频/2K多参考精修｜MiniMax H3 Ref2VA三阶极致重绘视频_2089479421605539841.json, 视频生成/文生视频/2K生成式精修超分｜FL2VA三阶极致放大 MiniMax H3视频增强_2089474848572661761.json, 视频生成/文生视频/FL2VA 三阶极致放大｜MiniMax H3 2K生成式精修超分_2089246007983951873.json, 视频生成/文生视频/MiniMax H3 FL2VA三阶放大｜图生视频2K生成式精修_2089401431915851778.json, 视频生成/文生视频/MiniMax H3 Ref2VA二阶超清重绘｜视频生视频多参考精修_2089402927868899330.json, 视频生成/文生视频/Minimax_H3文生视频图生视频｜双模式生成_2095590812737425410.json, 视频生成/文生视频/Ref2VA 二阶超清重绘｜MiniMax H3 多参考图像精修_2089247666336256002.json, 视频生成/文生视频/首尾帧精修4K｜MiniMax H3 FL2VA二阶超清放大视频生成_2089476377941729282.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_98
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2提示词丝滑运镜高动态MV图生视频处理工具_2101374439895162882.json、视频生成/图生视频/Wan2.2丝滑运镜MV工作流｜高动态提示词视频生成_2097804026267131906.json、视频生成/图生视频/wan 2.2提示词丝滑运镜｜高动态MV数字人图生视频_2092003605388808194.json、视频生成/图生视频/wan 2.2高动态MV工作流，提示词精准控制丝滑运镜_2110437128181215233.json、视频生成/图生视频/丝滑运镜高动态MV｜wan 2.2提示词驱动图生视频直出_2089548883880923138.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/2K多参考精修｜MiniMax H3 Ref2VA三阶极致重绘视频_2089479421605539841.json、视频生成/文生视频/2K生成式精修超分｜FL2VA三阶极致放大 MiniMax H3视频增强_2089474848572661761.json、视频生成/文生视频/FL2VA 三阶极致放大｜MiniMax H3 2K生成式精修超分_2089246007983951873.json、视频生成/文生视频/MiniMax H3 FL2VA三阶放大｜图生视频2K生成式精修_2089401431915851778.json、视频生成/文生视频/MiniMax H3 Ref2VA二阶超清重绘｜视频生视频多参考精修_2089402927868899330.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `CreateCFGScheduleFloatList`
-- `DownloadAndLoadWav2VecModel`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Muter (rgthree)`
-- `FlashVSRNode`
-- `Float to Int`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MultiTalkWav2VecEmbeds`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `RH_GetAudioDuration`
-- `RH_LLMAPI_Pro_Node`
-- `RIFEInterpolation`
-- `SaveAudio`
-- `SetNode`
-- `ShowText|pysssss`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy ifElse`
-- `easy imageSize`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 3/8 个有
+- `GetImageSizeAndCount` —— 7/8 个有
+- `H3SigmaRefiner` —— 7/8 个有
+- `LTXVConcatAVLatent` —— 7/8 个有
+- `LTXVSeparateAVLatent` —— 7/8 个有
+- `MiniMaxChunkFeedForward` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `ModelAttentionBackend` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `Yuan_RTXVideoUpscaleH3` —— 7/8 个有
+- `easy int` —— 7/8 个有
+- `MiniMaxH3ImageToVideo` —— 5/8 个有
+- `PathchSageAttentionKJ` —— 4/8 个有
+- `VAEEncode` —— 4/8 个有
+- `MiniMaxH3HybridLoader` —— 3/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
+- `ImagePadForOutpaint` —— 1/8 个有
+- `SolAttnPatch` —— 1/8 个有
 
 ## 典型参数
 
@@ -96,7 +83,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -107,4 +94,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（9/8 个样本）：Steps较低可能导致细节不足

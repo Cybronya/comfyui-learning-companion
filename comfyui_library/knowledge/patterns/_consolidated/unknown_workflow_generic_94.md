@@ -3,45 +3,34 @@ name: unknown_workflow_generic_94
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.789444
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, ShowText|pysssss]
+coverage: 0.944444
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json, 视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json, 视频生成/图生视频/2077355218928492546.json, 视频生成/图生视频/2082343833567846402.json, 视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json, 视频生成/图生视频/服装带货—街拍服装带货短视频（全自动生成）_2095749153849700354.json, 视频生成/图生视频/2081954189047066625.json, 视频生成/图生视频/2079176863691399170.json, 视频生成/文生视频/导演分镜故事板+SD2全自动短剧视频工作流_2076975761147383810.json]
+members: [图片生成/图生图/2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_94
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json、视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json、视频生成/图生视频/2077355218928492546.json、视频生成/图生视频/2082343833567846402.json、视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveVideo`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 8/9 个有
-- `SaveImage` —— 8/9 个有
-- `PD_JoinStringMultiLine` —— 6/9 个有
-- `PreviewAny` —— 5/9 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 3/9 个有
+- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
+- `CR Text` —— 3/9 个有
+- `JjkText` —— 1/9 个有
+- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,71 +1,77 @@
 ---
 name: unknown_workflow_lora_sampler_unet_63
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.3195
-common_nodes: [CLIPLoader, CR Prompt Text, CR Text, ComfySwitchNode, Context (rgthree), EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, ImpactSwitch, JoinStringMulti, JoinStrings, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21BlockCacheT8, QwenImage21Cache, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenPERewriteT8, ResolutionSelector, SaveImage, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy boolean, easy float, easy ifElse, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.597667
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, GetNode, GetVideoComponents, KSamplerSelect, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
-missing: [CR Text, Context (rgthree), easy anythingIndexSwitch, easy boolean, easy float, CR Prompt Text]
-members: [图片生成/反推提示词/qwen 2.1小岚整合版_2105981670468972546.json, 图片生成/图生图/2105981670468972546.json]
+missing: []
+members: [视频生成/文生视频/minimax-h3 单采_2100560974238535682.json, 视频生成/文生视频/minimax-h3单采-v2_2093197455679643650.json, 视频生成/文生视频/minimax-h3双采_2103278801034760193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_63
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/qwen 2.1小岚整合版_2105981670468972546.json、图片生成/图生图/2105981670468972546.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/minimax-h3 单采_2100560974238535682.json、视频生成/文生视频/minimax-h3单采-v2_2093197455679643650.json、视频生成/文生视频/minimax-h3双采_2103278801034760193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：32%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `CR Text`
-- `ComfySwitchNode`
-- `Context (rgthree)`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `GetNode`
-- `ImpactSwitch`
-- `JoinStringMulti`
-- `JoinStrings`
-- `KSampler`
+- `GetVideoComponents`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21Cache`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenPERewriteT8`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `Seed (rgthree)`
 - `SetNode`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy boolean`
-- `easy float`
-- `easy ifElse`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `BasicScheduler` —— 2/3 个有
+- `BlockSparseAttention` —— 2/3 个有
+- `ExtendIntermediateSigmas` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `ManualSigmas` —— 2/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
+- `MiniMaxH3SigmaShift` —— 2/3 个有
+- `ModelPreviewOverrideKJ` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `LTXVConcatAVLatent` —— 1/3 个有
+- `LTXVSeparateAVLatent` —— 1/3 个有
+- `MiniMaxChunkFeedForward` —— 1/3 个有
+- `MiniMaxLowVRAMAttention` —— 1/3 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
+- `SplitSigmas` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 40 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,12 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Context (rgthree)、easy anythingIndexSwitch、easy boolean、easy float
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

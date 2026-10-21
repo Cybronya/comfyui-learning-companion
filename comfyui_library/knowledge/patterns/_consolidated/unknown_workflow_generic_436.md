@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_436
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.951
+common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, IndexTTS2Run, LoadAudio, PreviewAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038487586699747330.json, 视频生成/图生视频/2050237655522258945.json, 视频生成/图生视频/2037495235391000577.json]
+members: [音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json, 音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json, 音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json, 音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_436
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2038487586699747330.json、视频生成/图生视频/2050237655522258945.json、视频生成/图生视频/2037495235391000577.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json、音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json、音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json、音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PreviewAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `RH_RhartVideoV31ProStartEndToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `SaveAudioMP3` —— 3/4 个有
+- `CR Text` —— 2/4 个有
 
 ## 典型参数
 

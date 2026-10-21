@@ -1,91 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_83
 type: Unknown Workflow
-frequency: 17
+frequency: 16
 level: moderate
-coverage: 0.67
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
-missing: []
-members: [视频生成/图生视频/1983091241221038082.json, 视频生成/图生视频/2018250280189562881.json, 视频生成/图生视频/1970522090514358273.json, 视频生成/图生视频/1970493244759044098.json, 视频生成/图生视频/2038207099926224898.json, 视频生成/图生视频/2081656460194443265.json, 视频生成/图生视频/2082449087105953793.json, 视频生成/图生视频/2001911262554537986.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移支持10s以上_2101868247393062913.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_1988497741976395777.json, 视频生成/图生视频/2048642449622441986.json, 视频生成/图生视频/2059815304972292098.json, 视频生成/图生视频/2064155930153021442.json, 视频生成/图生视频/2064600210499784705.json, 视频生成/图生视频/2065330125998219265.json, 视频生成/图生视频/2068858062965927938.json, 视频生成/图生视频/2001967162547924993.json]
+coverage: 0.767062
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ConditioningZeroOut, DF_Integer, Fast Groups Bypasser (rgthree), INTConstant, ImageResizeKJv2, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, RIFE VFI, SaveImage, SimpleMath+, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, easy promptLine, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
+missing: [LayerUtility: ImageScaleByAspectRatio V2, RIFE VFI, SimpleMath+, Text Multiline, easy cleanGpuUsed, easy clearCacheAll, CR Prompt Text, easy promptLine]
+members: [图片生成/图生图/2074200565537656834.json, 图片生成/文生图/1985901390851710978.json, 视频生成/图生视频/1978956982134673409.json, 视频生成/图生视频/1979224907714301953.json, 视频生成/图生视频/1979025771903750146.json, 视频生成/图生视频/2009447313822982146.json, 视频生成/图生视频/2049416361801158657.json, 视频生成/图生视频/2009894943287939073.json, 视频生成/图生视频/2064716899979718657.json, 视频生成/图生视频/1978804615628099585.json, 视频生成/图生视频/2009509747891904514.json, 视频生成/图生视频/图生图（自动分镜）电影级+视频生成_2074200565537656834.json, 视频生成/图生视频/2062483360198516737.json, 视频生成/图生视频/2056237842430480386.json, 视频生成/文生视频/1978956982134673409.json, 视频生成/文生视频/1979224907714301953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_83
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/1983091241221038082.json、视频生成/图生视频/2018250280189562881.json、视频生成/图生视频/1970522090514358273.json、视频生成/图生视频/1970493244759044098.json、视频生成/图生视频/2038207099926224898.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/2074200565537656834.json、图片生成/文生图/1985901390851710978.json、视频生成/图生视频/1978956982134673409.json、视频生成/图生视频/1979224907714301953.json、视频生成/图生视频/1979025771903750146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `DF_Integer`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM`
+- `Int`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `RIFE VFI`
+- `SaveImage`
+- `SimpleMath+`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanFirstLastFrameToVideo`
+- `WanImageToVideo`
+- `WanMoeKSampler`
+- `easy cleanGpuUsed`
+- `easy promptLine`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 16/17 个有
-- `JWInteger` —— 16/17 个有
-- `SetNode` —— 16/17 个有
-- `easy cleanGpuUsed` —— 16/17 个有
-- `BlockifyMask` —— 14/17 个有
-- `DrawMaskOnImage` —— 14/17 个有
-- `GrowMask` —— 14/17 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 14/17 个有
-- `Int` —— 13/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/17 个有
-- `CR Text` —— 11/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 11/17 个有
-- `MathExpression|pysssss` —— 11/17 个有
-- `PreviewImage` —— 11/17 个有
-- `LoadSAM3Model` —— 2/17 个有
-- `MaskListToMaskBatch` —— 2/17 个有
-- `MaskToImage` —— 2/17 个有
-- `RH_Translator` —— 2/17 个有
-- `SAM3Segmentation` —— 2/17 个有
-- `SimpleMath+` —— 2/17 个有
-- `Text` —— 2/17 个有
-- `easy imageBatchToImageList` —— 2/17 个有
-- `easy imageListToImageBatch` —— 2/17 个有
-- `easy sam3ModelLoader` —— 2/17 个有
-- `easy sam3VideoSegmentation` —— 2/17 个有
-- `CR Prompt Text` —— 1/17 个有
-- `EmptyImage` —— 1/17 个有
-- `FirstFrameSelector` —— 1/17 个有
-- `SaveImage` —— 1/17 个有
+- `CR Prompt Text` —— 10/16 个有
+- `DifferentialDiffusion` —— 10/16 个有
+- `JWStringConcat` —— 10/16 个有
+- `ProcessString` —— 10/16 个有
+- `Qwen3_VQA` —— 10/16 个有
+- `Text Multiline` —— 10/16 个有
+- `easy clearCacheAll` —— 10/16 个有
+- `easy showAnything` —— 10/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 15 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 6 | 16 | 8% |
+| 采样算法 | sa_solver | - | 16 | 94% |
+| 调度器 | beta | - | 16 | 94% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，16 个样本，取值分散，一致性仅 8%
+- 采样算法 最常用 sa_solver，16 个样本，一致性 94%
+- 调度器 最常用 beta，16 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（16/16 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、RIFE VFI、SimpleMath+、Text Multiline、easy cleanGpuUsed

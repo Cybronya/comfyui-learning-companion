@@ -3,30 +3,33 @@ name: unknown_workflow_generic_819
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [OmniVoiceVoiceDesignTTS, PreviewAudio, SaveAudio, Textbox]
+coverage: 0.675
+common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [音频生成/音频生成/Omnivoice-TTS 语音设计 ComfyUI工作流_2047570104958853122.json, 音频生成/音频生成/Omnivoice-TTS 语音设计_2092504342405402625.json]
+members: [数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json, 音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_819
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Omnivoice-TTS 语音设计 ComfyUI工作流_2047570104958853122.json、音频生成/音频生成/Omnivoice-TTS 语音设计_2092504342405402625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json、音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `OmniVoiceVoiceDesignTTS`
-- `PreviewAudio`
-- `SaveAudio`
-- `Textbox`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioCrop` —— 1/2 个有
 
 ## 典型参数
 

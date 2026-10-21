@@ -3,43 +3,29 @@ name: unknown_workflow_sampler_35
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.824
-common_nodes: [Fast Groups Bypasser (rgthree), Image Batch, ImageResize+, Int, JjkText, LoadAudio, LoadImage, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo, SoundFlow_TrimAudio, easy getNode, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.667
+common_nodes: [HiDreamSampler, JjkText, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2036330038517305345.json, 视频生成/图生视频/2036269847654440962.json]
+members: [图片生成/文生图/1912467243102367745.json, 图片生成/文生图/1914140004744949761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2036330038517305345.json、视频生成/图生视频/2036269847654440962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1912467243102367745.json、图片生成/文生图/1914140004744949761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Image Batch`
-- `ImageResize+`
-- `Int`
+- `HiDreamSampler`
 - `JjkText`
-- `LoadAudio`
-- `LoadImage`
-- `RunningHub DreamID-Omni Loader`
-- `RunningHub DreamID-Omni Sampler`
-- `SaveVideo`
-- `SoundFlow_TrimAudio`
-- `easy getNode`
-- `easy setNode`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `SaveImage`
 
 ## 典型参数
 

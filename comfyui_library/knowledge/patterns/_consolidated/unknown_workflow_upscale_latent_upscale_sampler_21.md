@@ -1,63 +1,69 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_21
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7645
-common_nodes: [BasicGuider, CLIPLoader, ComfySwitchNode, GetVideoComponents, LoadImage, LoadVideo, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DurationPlannerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3OutputTrimT8, MiniMaxH3SafeAVSaveT8Advanced, MiniMaxH3TwoPassAudioAuditT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, MiniMaxH3VDNRefinePlanT8Advanced, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAELoader, Video Slice]
+frequency: 4
+level: strong
+coverage: 0.824
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatchV2, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, LatentUpscaleBy, PreviewImage, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3｜VDN 12NFE高质量二采｜商品展示 Hero Shot_2107777467430817794.json, 视频生成/文生视频/MiniMax H3｜通用视频生成｜VDN 12步高清版_2108578118234632193.json]
+members: [图片生成/文生图/krea2 muse 二采高清生图_2096540586579939330.json, 图片生成/文生图/▶▷Krea2-高清生图优化流_2077777851994165250.json, 图片生成/文生图/梦中情人-Krea2Turbo  固定角色 自用流_2081083885131223041.json, 图片生成/文生图/泠月luna-Krea2Turbo  固定角色 自用流_2080837616429260802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_21
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/H3｜VDN 12NFE高质量二采｜商品展示 Hero Shot_2107777467430817794.json、视频生成/文生视频/MiniMax H3｜通用视频生成｜VDN 12步高清版_2108578118234632193.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/krea2 muse 二采高清生图_2096540586579939330.json、图片生成/文生图/▶▷Krea2-高清生图优化流_2077777851994165250.json、图片生成/文生图/梦中情人-Krea2Turbo  固定角色 自用流_2081083885131223041.json、图片生成/文生图/泠月luna-Krea2Turbo  固定角色 自用流_2080837616429260802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `GetVideoComponents`
-- `LoadImage`
-- `LoadVideo`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DurationPlannerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3OutputTrimT8`
-- `MiniMaxH3SafeAVSaveT8Advanced`
-- `MiniMaxH3TwoPassAudioAuditT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `MiniMaxH3VDNExecutionPlanT8Advanced`
-- `MiniMaxH3VDNModelComposerT8Advanced`
-- `MiniMaxH3VDNRefinePlanT8Advanced`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CLIPTextEncode`
+- `ColorMatchV2`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `LatentUpscaleBy`
+- `PreviewImage`
 - `SaveImage`
+- `Seed (rgthree)`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `Video Slice`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetImageSize+` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SimpleMathDual+` —— 3/4 个有
+- `UltimateSDUpscale` —— 3/4 个有
+- `UpscaleModelLoader` —— 3/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `ResolutionStdSelector` —— 2/4 个有
+- `孤海注释` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `CompressImages` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 7 | 7 - 10 | 4 | 83% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
+| 宽度 | 720 | 720 - 1152 | 4 | 77% |
+| 高度 | 1280 | 1280 - 1536 | 4 | 92% |
 
 ## 常见问题
 
@@ -65,4 +71,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 10，4 个样本，取值集中（一致性 83%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 宽度 中位数 720，观测区间 720 - 1152，4 个样本
+- 高度 中位数 1280，观测区间 1280 - 1536，4 个样本，取值集中（一致性 92%）

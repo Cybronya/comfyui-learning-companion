@@ -3,77 +3,56 @@ name: unknown_workflow_video_lora_sampler_729
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6485
-common_nodes: [AIO_Preprocessor, AddLabel, ColorMatch, DWPreprocessor, EmptyImage, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBlend, ImageConcatMulti, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], RH_Captioner, SetNode, ShowText|pysssss, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9655
+common_nodes: [CreateCFGScheduleFloatList, FloatConstant, GetImageSizeAndCount, INTConstant, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, ShowText|pysssss, TT_img_enc, Text Random Line, TextCombinerTwo, TextInput_, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1929256563398316034.json, 视频生成/图生视频/1925046681505886210.json]
+members: [视频生成/图生视频/2007442248425807873.json, 视频生成/图生视频/2007441699622096897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_729
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1929256563398316034.json、视频生成/图生视频/1925046681505886210.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2007442248425807873.json、视频生成/图生视频/2007441699622096897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `AddLabel`
-- `ColorMatch`
-- `DWPreprocessor`
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
+- `CreateCFGScheduleFloatList`
+- `FloatConstant`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBlend`
-- `ImageConcatMulti`
-- `ImagePadKJ`
+- `INTConstant`
 - `ImageResizeKJ`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RH_Captioner`
-- `SetNode`
+- `SaveImage`
 - `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
+- `TT_img_enc`
+- `Text Random Line`
+- `TextCombinerTwo`
+- `TextInput_`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Compare` —— 1/2 个有
-- `EasyControlGenerate` —— 1/2 个有
-- `EasyControlLoadFlux` —— 1/2 个有
-- `EasyControlLoadLora` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageResizeTo8x` —— 1/2 个有
-- `ImpactStringSelector` —— 1/2 个有
-- `RH_ComfyFluxKontext` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `RandomInt` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `String Replace (mtb)` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
 
 ## 典型参数
 

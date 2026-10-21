@@ -2,71 +2,68 @@
 name: unknown_workflow_video_sampler_clip_195
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.912333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.852333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyHunyuanLatentVideo, ImageFromBatch+, KSamplerAdvanced, ModelSamplingSD3, PrimitiveInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/2012067791884521474.json, 视频生成/图生视频/1906949243003707394.json, 视频生成/图生视频/1900090706587967489.json]
+members: [视频生成/文生视频/Qwen3 VL视频反推+Wan2.2 SmoothMix文生视频 无需输入提示词_1981207594238992386.json, 视频生成/文生视频/Wan2.2 SmoothMixV2文生视频高动态（官方版）_1980635563638345729.json, 视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_195
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2012067791884521474.json、视频生成/图生视频/1906949243003707394.json、视频生成/图生视频/1900090706587967489.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Qwen3 VL视频反推+Wan2.2 SmoothMix文生视频 无需输入提示词_1981207594238992386.json、视频生成/文生视频/Wan2.2 SmoothMixV2文生视频高动态（官方版）_1980635563638345729.json、视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
+- `CR Text`
+- `EmptyHunyuanLatentVideo`
+- `ImageFromBatch+`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `WanImageToVideo` —— 2/3 个有
-- `ImageResizeAdvanced` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LoraLoader` —— 1/3 个有
-- `ModelSamplingSD3` —— 1/3 个有
-- `Seed Everywhere` —— 1/3 个有
-- `WanFirstLastFrameToVideo` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `AILab_QwenVL` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `String` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 30 | 3 | 41% |
-| Prompt 约束强度(CFG) | 5 | 1 - 6 | 3 | 46% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1.1 | 3 | 95% |
+| 调度器 | uni_pc | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 30，3 个样本，取值分散，一致性仅 41%
-- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 6，3 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.1，3 个样本，取值集中（一致性 95%）
+- 调度器 最常用 uni_pc，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

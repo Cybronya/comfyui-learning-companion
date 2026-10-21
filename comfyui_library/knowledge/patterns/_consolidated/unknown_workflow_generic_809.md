@@ -3,33 +3,38 @@ name: unknown_workflow_generic_809
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [IndexTTSProNode, LoadAudio, SaveAudio]
+coverage: 0.7905
+common_nodes: [JjkText, LoadImage, PreviewAny, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS Pro多人配音_1935877646087876610.json, 音频生成/音频生成/IndexTTS多人对话(文本转语音小说)_1935637718502408193.json]
+members: [图片生成/文生图/艾希数字人一键分镜生成工作流 V1.0_2017882380161257474.json, 图片生成/文生图/🍌 全能图片Pro_1991775266802446337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_809
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS Pro多人配音_1935877646087876610.json、音频生成/音频生成/IndexTTS多人对话(文本转语音小说)_1935637718502408193.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/艾希数字人一键分镜生成工作流 V1.0_2017882380161257474.json、图片生成/文生图/🍌 全能图片Pro_1991775266802446337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTSProNode`
-- `LoadAudio`
-- `SaveAudio`
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `String Literal` —— 1/2 个有
-- `TimbreAudioLoader` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `TTP_text_mix` —— 1/2 个有
+- `easy imageScaleDownToSize` —— 1/2 个有
 
 ## 典型参数
 

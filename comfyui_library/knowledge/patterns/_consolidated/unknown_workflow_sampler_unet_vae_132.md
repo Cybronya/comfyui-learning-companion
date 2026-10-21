@@ -1,72 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_132
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9834
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: strong
+coverage: 0.9185
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/1942182398836764674.json, 图片生成/文生图/1942817552894464001.json, 图片生成/文生图/1943252121083146241.json, 图片生成/文生图/1944714736133132290.json, 图片生成/文生图/1952603918469672962.json]
+members: [图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json, 图片生成/文生图/Qwen Image 文生图_2102936313539416066.json, 图片生成/文生图/Qwen image 2.1 文生图_2101857655588474882.json, 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json, 图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json, 图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_132
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1942182398836764674.json、图片生成/文生图/1942817552894464001.json、图片生成/文生图/1943252121083146241.json、图片生成/文生图/1944714736133132290.json、图片生成/文生图/1952603918469672962.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json、图片生成/文生图/Qwen Image 文生图_2102936313539416066.json、图片生成/文生图/Qwen image 2.1 文生图_2101857655588474882.json、图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json、图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
+- `ResolutionSelector`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ArgosTranslateCLIPTextEncodeNode` —— 2/5 个有
-- `CLIPTextEncodeFlux` —— 2/5 个有
-- `DeepTranslatorCLIPTextEncodeNode` —— 1/5 个有
-- `LoraLoader` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `TeaCache` —— 1/5 个有
+- `QwenImage21Cache` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `CompressImages` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `SaveImageAdvanced` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1200 | 5 | 83% |
-| 高度 | 1024 | 768 - 1600 | 5 | 75% |
-| 采样步数 | 20 | 4 - 38 | 5 | 47% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | normal | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| LoRA 模型强度 | 0.35 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 30 | 25 - 50 | 6 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 864 - 1024 | 6 | 94% |
+| 高度 | 1024 | 1024 - 1536 | 6 | 83% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1200，5 个样本，取值集中（一致性 83%）
-- 高度 中位数 1024，观测区间 768 - 1600，5 个样本
-- 采样步数 中位数 20，观测区间 4 - 38，5 个样本，取值分散，一致性仅 47%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 normal，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 25 - 50，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 864 - 1024，6 个样本，取值集中（一致性 94%）
+- 高度 中位数 1024，观测区间 1024 - 1536，6 个样本，取值集中（一致性 83%）

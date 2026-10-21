@@ -3,41 +3,41 @@ name: unknown_workflow_generic_881
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [Apply Whisper, AudioCrop, CR Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.796
+common_nodes: [CR Text, LoadAudio, LoadImage, RHLLMChatNode, RH_RhartImageNG31FlashImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/四角色千问TTS_2082497969068265473.json, 音频生成/音频生成/📻Qwen3 TTS多角色配音及克隆音色 📻_2018613919941660673.json]
+members: [视频生成/图生视频/2078737060462161921.json, 视频生成/图生视频/2074036972875763714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_881
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/四角色千问TTS_2082497969068265473.json、音频生成/音频生成/📻Qwen3 TTS多角色配音及克隆音色 📻_2018613919941660673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2078737060462161921.json、视频生成/图生视频/2074036972875763714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
 - `CR Text`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadAudio`
-- `SaveAudio`
+- `LoadImage`
+- `RHLLMChatNode`
+- `RH_RhartImageNG31FlashImageToImage`
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
+- `SaveVideo`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `DapaoSafeSaveImage` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
 - `Note Plus (mtb)` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

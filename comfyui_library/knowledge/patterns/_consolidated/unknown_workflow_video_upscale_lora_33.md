@@ -3,79 +3,99 @@ name: unknown_workflow_video_upscale_lora_33
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6545
-common_nodes: [Batch Make (mtb), CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageUpscaleWithModelBatched, KEEP_ModelLoader, KEEP_ProcessImageSequence, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, PreviewAny, RH_LLMAPI_NODE, RIFE VFI, SetNode, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
-problems: []
-missing: [Batch Make (mtb), CR Text, KEEP_ModelLoader, KEEP_ProcessImageSequence, LayerUtility: PurgeVRAM V2, RIFE VFI, easy cleanGpuUsed, easy clearCacheAll]
-members: [视频生成/图生视频/1977031736406233089.json, 视频生成/文生视频/1977028133595553793.json]
+coverage: 0.6625
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, ContextWindowsManual, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), Free_Video_Memory, GIMMVFI_interpolate, GetNode, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingSD3, Primitive string multiline [Crystools], SeargeIntegerConstant, SeedVR2, SeedVR2BlockSwap, SetNode, UNETLoader, UnloadAllModels, VAEDecode, VAELoader, VHS_LoadVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, VHS_VideoInfoLoaded, Video_Upscale_With_Model, WanSoundImageToVideo, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [视频生成/图生视频/1962460220972732417.json, 视频生成/图生视频/1962404930713686018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_33
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1977031736406233089.json、视频生成/文生视频/1977028133595553793.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1962460220972732417.json、视频生成/图生视频/1962404930713686018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Batch Make (mtb)`
-- `CR Text`
-- `CreateCFGScheduleFloatList`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ContextWindowsManual`
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Free_Video_Memory`
+- `GIMMVFI_interpolate`
 - `GetNode`
-- `INTConstant`
-- `ImageUpscaleWithModelBatched`
-- `KEEP_ModelLoader`
-- `KEEP_ProcessImageSequence`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
-- `RIFE VFI`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelSamplingSD3`
+- `Primitive string multiline [Crystools]`
+- `SeargeIntegerConstant`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 - `SetNode`
-- `UpscaleModelLoader`
+- `UNETLoader`
+- `UnloadAllModels`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `VHS_VideoInfoLoaded`
+- `Video_Upscale_With_Model`
+- `WanSoundImageToVideo`
+- `WanVideoAddS2VEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
 - `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PDImageResizeV3` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `RMBG` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoImageToVideoEncode` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Batch Make (mtb)、CR Text、KEEP_ModelLoader、KEEP_ProcessImageSequence、LayerUtility: PurgeVRAM V2
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

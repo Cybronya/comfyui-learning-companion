@@ -1,0 +1,73 @@
+---
+name: unknown_workflow_video_inpaint_lora_12
+type: Unknown Workflow
+frequency: 2
+level: weak
+coverage: 0.9405
+common_nodes: [DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, GetImageSize+, GrowMaskWithBlur, INTConstant, ImageBatchToList, ImageCompositeMasked, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchToList, MaskToImage, PreviewImage, QwenVLDetection, RH_Captioner, Sam2Segmentation, SolidMask, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+problems: []
+missing: [LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM V2, GetImageSize+]
+members: [视频生成/文生视频/1963894519111700482.json, 视频生成/文生视频/WAN2.2-AllInOne参考编辑_2072999600325435392.json]
+source: knowledge_consolidation
+---
+
+# unknown_workflow_video_inpaint_lora_12
+
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1963894519111700482.json、视频生成/文生视频/WAN2.2-AllInOne参考编辑_2072999600325435392.json）
+
+- **类型**：Unknown Workflow
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
+
+## 共有节点
+
+全部 2 个 workflow 都包含：
+- `DownloadAndLoadQwenModel`
+- `DownloadAndLoadSAM2Model`
+- `GetImageSize+`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageBatchToList`
+- `ImageCompositeMasked`
+- `ImageResizeKJ`
+- `InpaintPreprocessor`
+- `LayerMask: LoadFlorence2Model`
+- `LayerMask: ObjectDetectorFL2`
+- `LayerMask: SAM2Ultra`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MaskBatchToList`
+- `MaskToImage`
+- `PreviewImage`
+- `QwenVLDetection`
+- `RH_Captioner`
+- `Sam2Segmentation`
+- `SolidMask`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+
+## 典型参数
+
+无可统计的参数。
+
+## 常见问题
+
+参数体检未发现问题。
+
+## 建议与风险
+
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: LoadFlorence2Model、LayerMask: ObjectDetectorFL2、LayerMask: SAM2Ultra、LayerUtility: PurgeVRAM V2、GetImageSize+
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

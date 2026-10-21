@@ -1,43 +1,67 @@
 ---
 name: unknown_workflow_video_upscale_lora_4
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.884375
-common_nodes: [CLIPLoader, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.947714
+common_nodes: [ImageUpscaleWithModel, LoadImage, LoadWanVideoT5TextEncoder, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2109971094978523137.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流无水印版_2094988974698876930.json, 视频生成/图生视频/MiniMax H3开源 导演台全能工作流无水印版_2092549957147521025.json, 视频生成/文生视频/H3图生视频-高清版_2099038143218536450.json, 视频生成/文生视频/MiniMax H3 Director 全能参考视频导演台｜无水印版_2097926685592219649.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流无水印版_2091949246240092162.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流无水印版_2093187899088003073.json, 视频生成/文生视频/MiniMax H3图生视频-高清版无水印_2095386761659772929.json]
+members: [视频生成/图生视频/1922551848883077121.json, 视频生成/图生视频/1938448782306508802.json, 视频生成/图生视频/1935685282568003585.json, 视频生成/图生视频/1947245269056376834.json, 视频生成/图生视频/1955296499754307586.json, 视频生成/图生视频/1955172399558770689.json, 视频生成/图生视频/1950107460180860930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_4
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2109971094978523137.json、视频生成/图生视频/MiniMax H3 导演台全能工作流无水印版_2094988974698876930.json、视频生成/图生视频/MiniMax H3开源 导演台全能工作流无水印版_2092549957147521025.json、视频生成/文生视频/H3图生视频-高清版_2099038143218536450.json、视频生成/文生视频/MiniMax H3 Director 全能参考视频导演台｜无水印版_2097926685592219649.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1922551848883077121.json、视频生成/图生视频/1938448782306508802.json、视频生成/图生视频/1935685282568003585.json、视频生成/图生视频/1947245269056376834.json、视频生成/图生视频/1955296499754307586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorRefine`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `UNETLoader`
+全部 7 个 workflow 都包含：
+- `ImageUpscaleWithModel`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `RIFE VFI`
 - `UpscaleModelLoader`
-- `VAELoader`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/8 个有
-- `DapaoImageSplitNode` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `JWInteger` —— 6/7 个有
+- `Primitive integer [Crystools]` —— 6/7 个有
+- `SimpleMath+` —— 6/7 个有
+- `CLIPVisionLoader` —— 4/7 个有
+- `Text Multiline` —— 4/7 个有
+- `WanVideoClipVisionEncode` —— 4/7 个有
+- `WanVideoEnhanceAVideo` —— 4/7 个有
+- `easy cleanGpuUsed` —— 4/7 个有
+- `CreateCFGScheduleFloatList` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
+- `RH_Captioner` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `WanVideoSLG` —— 3/7 个有
+- `WanVideoSetBlockSwap` —— 3/7 个有
+- `WanVideoSetLoRAs` —— 3/7 个有
+- `ImageResize+` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `WanVideoMagCache` —— 1/7 个有
+- `WanVideoSetRadialAttention` —— 1/7 个有
+- `WanVideoTeaCache` —— 1/7 个有
 
 ## 典型参数
 

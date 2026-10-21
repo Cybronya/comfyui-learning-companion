@@ -3,35 +3,29 @@ name: unknown_workflow_generic_480
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.75
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_ViduImageToVideoQ3Pro, RH_ViduImageToVideoQ3ProFast, RH_ViduStartEndToVideoQ3Pro, RH_ViduStartEndToVideoQ3ProFast, RH_ViduTextToVideoQ3Pro, RH_ViduTextToVideoQ3ProFast, SaveVideo]
+coverage: 0.904
+common_nodes: [GrokImageEditNodeV2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/ViduQ3-Pro 图生视频_2075743420638916609.json, 视频生成/文生视频/ViduQ3-Pro 文生视频_2075776671424274433.json, 视频生成/文生视频/ViduQ3-Pro 首尾帧视频_2075787715265785858.json]
+members: [comfyui-workflow-templates-json/api_grok_image_edit.json, comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json, comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_480
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/ViduQ3-Pro 图生视频_2075743420638916609.json、视频生成/文生视频/ViduQ3-Pro 文生视频_2075776671424274433.json、视频生成/文生视频/ViduQ3-Pro 首尾帧视频_2075787715265785858.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_grok_image_edit.json、comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json、comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `GrokImageEditNodeV2`
 - `LoadImage`
-- `RH_ViduImageToVideoQ3Pro`
-- `RH_ViduImageToVideoQ3ProFast`
-- `RH_ViduStartEndToVideoQ3Pro`
-- `RH_ViduStartEndToVideoQ3ProFast`
-- `RH_ViduTextToVideoQ3Pro`
-- `RH_ViduTextToVideoQ3ProFast`
-- `SaveVideo`
+- `SaveImage`
 
 ## 典型参数
 

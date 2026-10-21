@@ -1,53 +1,62 @@
 ---
 name: unknown_workflow_sampler_clip_unet_113
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.817
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyHunyuanVideo15Latent, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.6755
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/文生视频/Image_capybara_v0_1_text_to_video_fast_2027049393966292993.json, 视频生成/文生视频/video_hunyuan_video_1.5_720p_t2v-混元Video1.5大模型——文生视频工作流_1994019108255629313.json]
+missing: [Text Multiline, CR SDXL Aspect Ratio, Text Concatenate, Primitive string [Crystools], easy anythingIndexSwitch]
+members: [图片生成/文生图/1953302071052333057.json, 图片生成/文生图/1954116380738109441.json, 图片生成/文生图/1954145034784391169.json, 图片生成/文生图/1954879569934237698.json, 图片生成/文生图/1954935231889510402.json, 图片生成/文生图/1955541581090754561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_113
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Image_capybara_v0_1_text_to_video_fast_2027049393966292993.json、视频生成/文生视频/video_hunyuan_video_1.5_720p_t2v-混元Video1.5大模型——文生视频工作流_1994019108255629313.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1953302071052333057.json、图片生成/文生图/1954116380738109441.json、图片生成/文生图/1954145034784391169.json、图片生成/文生图/1954879569934237698.json、图片生成/文生图/1954935231889510402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `EmptyHunyuanVideo15Latent`
-- `KSamplerSelect`
-- `ModelSamplingSD3`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `EasyCache` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
+- `CR SDXL Aspect Ratio` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `RH_LLMAPI_NODE` —— 4/6 个有
+- `StringReplace` —— 4/6 个有
+- `EmptySD3LatentImage` —— 2/6 个有
+- `ImpactInt` —— 1/6 个有
+- `Primitive string [Crystools]` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringListToCombo` —— 1/6 个有
+- `Text Concatenate` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
+- `easy anythingIndexSwitch` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 25 | 6 | 91% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 5 | 6 | 69% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -55,4 +64,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 25，6 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 5，6 个样本
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline、CR SDXL Aspect Ratio、Text Concatenate、Primitive string [Crystools]、easy anythingIndexSwitch

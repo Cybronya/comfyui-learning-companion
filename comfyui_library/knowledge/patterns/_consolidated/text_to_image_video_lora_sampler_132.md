@@ -3,27 +3,28 @@ name: text_to_image_video_lora_sampler_132
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.5788
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.5662
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/8步二次采样1088p多参视频｜MinimaxH3文生图生视频生视频工作流_2088128342645104641.json, 视频生成/文生视频/H3全能参考工作流-文生视频生视频图生视频_2087365023227277313.json, 视频生成/文生视频/MinimaxH3全能参考二采高清放大｜4步加速生成_2094517725417787393.json, 视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090141978154590210.json, 视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090345152245223426.json]
+members: [视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json, 视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频生成_2093790080652627970.json, 视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频直出_2093456500986568705.json, 视频生成/文生视频/图MiniMax文生视频视频生视频图生视频_2085849570684260354.json, 视频生成/文生视频/官方全能参考版单采｜文生视频视频生视频图生视频｜三模式任选_2104778746879369218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_132
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/8步二次采样1088p多参视频｜MinimaxH3文生图生视频生视频工作流_2088128342645104641.json、视频生成/文生视频/H3全能参考工作流-文生视频生视频图生视频_2087365023227277313.json、视频生成/文生视频/MinimaxH3全能参考二采高清放大｜4步加速生成_2094517725417787393.json、视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090141978154590210.json、视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090345152245223426.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json、视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频生成_2093790080652627970.json、视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频直出_2093456500986568705.json、视频生成/文生视频/图MiniMax文生视频视频生视频图生视频_2085849570684260354.json、视频生成/文生视频/官方全能参考版单采｜文生视频视频生视频图生视频｜三模式任选_2104778746879369218.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
@@ -31,14 +32,10 @@ source: knowledge_consolidation
 - `GetNode`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
 - `UNETLoader`
@@ -49,34 +46,27 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `KSamplerSelect` —— 4/5 个有
-- `VAEEncode` —— 4/5 个有
-- `PT_H3ConcatAVLatent` —— 3/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `MiniMaxH3SigmaShift` —— 3/5 个有
+- `ModelAttentionBackend` —— 3/5 个有
+- `ModelPreviewOverrideKJ` —— 3/5 个有
 - `PrimitiveFloat` —— 3/5 个有
-- `VAEEncodeAudio` —— 3/5 个有
-- `VHS_LoadVideo` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `JjkShowText` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PrimitiveString` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `RunningHub Deepcleaner` —— 2/5 个有
+- `CR Prompt Text` —— 2/5 个有
 - `Text` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `Dapao_LlamaH3Prompt` —— 1/5 个有
-- `HAIGC_VideoLoader` —— 1/5 个有
-- `LTXVConcatAVLatent` —— 1/5 个有
-- `LoraLoaderBypassModelOnly` —— 1/5 个有
-- `MiniMaxH3BlockCacheT8` —— 1/5 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/5 个有
-- `UniBlockSwap` —— 1/5 个有
-- `VRAM_Debug` —— 1/5 个有
-- `easy ifElse` —— 1/5 个有
-- `忽略多组孤海` —— 1/5 个有
+- `AudioSeparation` —— 1/5 个有
+- `CR Value` —— 1/5 个有
+- `Float` —— 1/5 个有
+- `JWImageResizeToMegapixels` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `SplitSigmas` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `ViggleAnimateConditioning` —— 1/5 个有
+- `ViggleTextCondLoader` —— 1/5 个有
 
 ## 典型参数
 

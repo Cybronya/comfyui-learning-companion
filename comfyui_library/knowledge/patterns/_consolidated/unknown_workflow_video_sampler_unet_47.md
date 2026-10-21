@@ -1,61 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_unet_47
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.774167
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.842
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/360°环绕视角-子弹时间_2111145426987606018.json, 视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-图生视频_2086095379162025986.json, 视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-文生视频_2111345897249533954.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图生视频-自动提示词_2084469087677276162.json, 视频生成/图生视频/MiniMax-H3 首尾帧图生视频_2084637924326465538.json, 视频生成/图生视频/MiniMax_H3图生视频自动提示词版_2084335214544908289.json]
+members: [视频生成/图生视频/H3 参考图像-视频-音频生成视频_2084427820587114497.json, 视频生成/图生视频/H3 数字人和声音克隆。_2084429432323928065.json, 视频生成/图生视频/H3音频驱动数字人单人版_2084863843855060993.json, 视频生成/图生视频/Mini max H3数字人对口型_2084517715892592641.json, 视频生成/图生视频/MiniMax_ref2v_imgvideoaudio_2092306138221072386.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人加速版_2088648115644620802.json, 视频生成/图生视频/h3-参考生成视频-加速版_2085877996057088001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_47
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/360°环绕视角-子弹时间_2111145426987606018.json、视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-图生视频_2086095379162025986.json、视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-文生视频_2111345897249533954.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-图生视频-自动提示词_2084469087677276162.json、视频生成/图生视频/MiniMax-H3 首尾帧图生视频_2084637924326465538.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/H3 参考图像-视频-音频生成视频_2084427820587114497.json、视频生成/图生视频/H3 数字人和声音克隆。_2084429432323928065.json、视频生成/图生视频/H3音频驱动数字人单人版_2084863843855060993.json、视频生成/图生视频/Mini max H3数字人对口型_2084517715892592641.json、视频生成/图生视频/MiniMax_ref2v_imgvideoaudio_2092306138221072386.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
 - `PathchSageAttentionKJ`
-- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `ResolutionSelector` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 3/6 个有
-- `孤海注释` —— 3/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `EasyCache` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `PainterVRAM` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `RHMiniMaxH3PromptOptimizerCompact` —— 1/6 个有
-- `ShowAnything|Mie` —— 1/6 个有
-- `StringFunction|pysssss` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `ComfyMathExpression` —— 6/7 个有
+- `PrimitiveFloat` —— 6/7 个有
+- `VAEDecodeAudio` —— 5/7 个有
+- `AudioCrop` —— 4/7 个有
+- `FlashVSRNode` —— 4/7 个有
+- `LoraLoaderBypassModelOnly` —— 4/7 个有
+- `PainterVRAM` —— 4/7 个有
+- `SaveImage` —— 4/7 个有
+- `Sleep` —— 4/7 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `Audio Duration (mtb)` —— 2/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/7 个有
+- `PreviewAudio` —— 2/7 个有
+- `SaveAudioAdvanced` —— 2/7 个有
+- `SoundFlow_GetLength` —— 2/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/7 个有
+- `EasyCache` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `SolAttnPatch` —— 1/7 个有
 
 ## 典型参数
 

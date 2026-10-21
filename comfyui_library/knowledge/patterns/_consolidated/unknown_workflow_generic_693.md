@@ -3,35 +3,32 @@ name: unknown_workflow_generic_693
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SaveVideo, Text]
+coverage: 0.7425
+common_nodes: [LoadImage, PreviewAny, RecraftCreateStyleNode, RecraftStyleV3InfiniteStyleLibrary, RecraftTextToImageNode, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2050920019273502722.json, 视频生成/图生视频/2050934091385720833.json]
+members: [comfyui-workflow-templates-json/api_recraft_style_reference.json, comfyui-workflow-templates-json/template-recraft_create_style.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_693
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2050920019273502722.json、视频生成/图生视频/2050934091385720833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_style_reference.json、comfyui-workflow-templates-json/template-recraft_create_style.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
-- `SaveVideo`
-- `Text`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_AlibabaHappyhorse10ImageToVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/2 个有
+- `PreviewAny`
+- `RecraftCreateStyleNode`
+- `RecraftStyleV3InfiniteStyleLibrary`
+- `RecraftTextToImageNode`
+- `SaveImage`
 
 ## 典型参数
 

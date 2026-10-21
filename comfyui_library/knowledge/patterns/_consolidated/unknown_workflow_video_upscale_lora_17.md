@@ -3,67 +3,69 @@ name: unknown_workflow_video_upscale_lora_17
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.492667
-common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageScaleToMegapixels, ImpactControlBridge, ImpactInt, ImpactSwitch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadJsonFromText, LoadWanVideoT5TextEncoder, RHHiddenNodes, RH_Captioner, RH_LLMAPI_NODE, Seed (rgthree), SetNode, StringFunction|pysssss, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoVAELoader, easy ifElse, easy mathInt, easy negative, easy showAnything]
+coverage: 0.657667
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), FlashVSRInitPipe, FlashVSRNodeAdv, GetNode, H3SigmaRefiner, INTConstant, KSamplerSelect, LTXVSeparateAVLatent, Label (rgthree), LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3Unified, MiniMaxH3VAEDecodeFast, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, RH_DLSS5Enhance, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_SelectImages, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale]
 problems: []
 missing: []
-members: [视频生成/图生视频/1971101417341652994.json, 视频生成/图生视频/1981765455167791105.json, 视频生成/图生视频/1973100539745538049.json]
+members: [视频生成/图生视频/MinimaxH3超快数字人_2109085639286280194.json, 视频生成/文生视频/1002海螺H3三采极致高分辨率工作流（最长20秒放大到4K）_2105901782873493506.json, 视频生成/文生视频/文戏不油—三采极致高分辨率工作流_2104527536003833858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_17
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1971101417341652994.json、视频生成/图生视频/1981765455167791105.json、视频生成/图生视频/1973100539745538049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3超快数字人_2109085639286280194.json、视频生成/文生视频/1002海螺H3三采极致高分辨率工作流（最长20秒放大到4K）_2105901782873493506.json、视频生成/文生视频/文戏不油—三采极致高分辨率工作流_2104527536003833858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `CR Text`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `FlashVSRInitPipe`
+- `FlashVSRNodeAdv`
 - `GetNode`
-- `ImageScaleToMegapixels`
-- `ImpactControlBridge`
-- `ImpactInt`
-- `ImpactSwitch`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadJsonFromText`
-- `LoadWanVideoT5TextEncoder`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `RH_LLMAPI_NODE`
-- `Seed (rgthree)`
+- `H3SigmaRefiner`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MemoryCleaner`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3Unified`
+- `MiniMaxH3VAEDecodeFast`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewImage`
+- `RH_DLSS5Enhance`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `StringFunction|pysssss`
-- `UpscaleModelLoader`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVAELoader`
-- `easy ifElse`
-- `easy mathInt`
-- `easy negative`
-- `easy showAnything`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
 
 **可变部分**（部分 workflow 才有）：
-- `GLM_Vision_ImageToPrompt` —— 2/3 个有
-- `ImageCASharpening+` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `SelfLiftH3Sampler` —— 2/3 个有
+- `VAEDecodeAudio` —— 2/3 个有
+- `SelfLiftAvatarH3Sampler` —— 1/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
 
 ## 典型参数
 

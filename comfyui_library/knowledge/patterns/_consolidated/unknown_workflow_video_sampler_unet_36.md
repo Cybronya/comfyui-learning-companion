@@ -1,55 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_unet_36
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.96725
-common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TextEncodeHunyuanVideo_ImageToVideo, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
+coverage: 0.817889
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1897656263986073602.json, 视频生成/图生视频/2030823409466220546.json, 视频生成/图生视频/2046840508722454530.json, 视频生成/图生视频/2031906239327772674.json, 视频生成/图生视频/1897633108676530177.json, 视频生成/图生视频/混元视频 I2V 图生视频 Comfyorg 官方工作流_1897641777338208257.json, 视频生成/图生视频/2041316621637128193.json, 视频生成/图生视频/2052192560470339585.json]
+members: [视频生成/图生视频/MiniMax H3超长视频流 一次直出2分15秒视频 （135S）_2101639116063600641.json, 视频生成/图生视频/MiniMaxH3参考加速版自用_2092230388805619714.json, 视频生成/图生视频/Minimax_H3_强化锁定镜头_音色绑定_2109202394990075906.json, 视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json, 视频生成/图生视频/无限长视频流_2105728965766897665.json, 视频生成/图生视频/高尚无限长视频流_2098617968786763777.json, 视频生成/文生视频/MINIMAX-H3 多参工作流_2084509251074093057.json, 视频生成/文生视频/MINIMAX-H3多参_2086757864504385537.json, 视频生成/文生视频/MiniMax H3超长视频流 一次直出2分15秒视频 （135S）_2101639116063600641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_36
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1897656263986073602.json、视频生成/图生视频/2030823409466220546.json、视频生成/图生视频/2046840508722454530.json、视频生成/图生视频/2031906239327772674.json、视频生成/图生视频/1897633108676530177.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3超长视频流 一次直出2分15秒视频 （135S）_2101639116063600641.json、视频生成/图生视频/MiniMaxH3参考加速版自用_2092230388805619714.json、视频生成/图生视频/Minimax_H3_强化锁定镜头_音色绑定_2109202394990075906.json、视频生成/图生视频/Minimax_H3_首帧锁定_固定全景_音色配对修正版_2108927308747857922.json、视频生成/图生视频/无限长视频流_2105728965766897665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `HunyuanImageToVideo`
+- `CLIPLoader`
 - `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingSD3`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `TextEncodeHunyuanVideo_ImageToVideo`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 5/8 个有
-- `TextInput_` —— 5/8 个有
-- `JjkText` —— 2/8 个有
-- `ColorMatch` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `PatchModelPatcherOrder` —— 1/8 个有
-- `PathchSageAttentionKJ` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 8/9 个有
+- `ComfyMathExpression` —— 7/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/9 个有
+- `LoadAudio` —— 5/9 个有
+- `MiniMaxH3AddGuide` —— 5/9 个有
+- `AudioConcat` —— 4/9 个有
+- `GetImageRangeFromBatch` —— 4/9 个有
+- `ImageBatchMulti` —— 4/9 个有
+- `LayerColor: ColorAdapter` —— 4/9 个有
+- `SaveAudio` —— 4/9 个有
+- `VHS_LoadVideo` —— 3/9 个有
+- `Int` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `MiniMaxH3BlockCacheT8` —— 1/9 个有
+- `ModelPreviewOverrideKJ` —— 1/9 个有
+- `StringMergeNode` —— 1/9 个有
 
 ## 典型参数
 

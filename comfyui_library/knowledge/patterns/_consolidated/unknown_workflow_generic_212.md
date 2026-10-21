@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_212
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8122
-common_nodes: [ImageScaleDownToSize, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.919667
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
-missing: [CR Text, Text Multiline, easy batchAnything]
-members: [图片生成/文生图/1961119103400480770.json, 图片生成/文生图/1962727003998797826.json, 图片生成/文生图/1964284032529874946.json, 图片生成/文生图/1964288162107412482.json, 图片生成/文生图/1981511127022608385.json]
+missing: []
+members: [视频生成/图生视频/2042721470069088257.json, 视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json, 视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json, 视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json, 视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json, 视频生成/文生视频/Seedance2.5多模态视频_2095476090239275009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_212
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1961119103400480770.json、图片生成/文生图/1962727003998797826.json、图片生成/文生图/1964284032529874946.json、图片生成/文生图/1964288162107412482.json、图片生成/文生图/1981511127022608385.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2042721470069088257.json、视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json、视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json、视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json、视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageScaleDownToSize`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `easy batchAnything` —— 4/5 个有
-- `CR Text` —— 1/5 个有
+- `LoadAudio` —— 5/6 个有
+- `JjkText` —— 4/6 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 4/6 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/6 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 
@@ -44,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Text Multiline、easy batchAnything
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

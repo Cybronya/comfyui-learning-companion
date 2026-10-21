@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_244
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8916
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.7085
+common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, VoxCPM_TTS]
 problems: []
 missing: []
-members: [视频生成/图生视频/2041500454491791362.json, 视频生成/图生视频/2041779553500143618.json, 视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json, 视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json, 视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json]
+members: [音频生成/音频生成/VoxCPM 1.5模型 TTS V3_2016022810824544258.json, 音频生成/音频生成/VoxCPM 1.5模型 TTS_2004529592717246465.json, 音频生成/音频生成/VoxCPM TTS 生成多地方方言-附免费生方言网站_1976570613458407426.json, 音频生成/音频生成/VoxCPM TTS_1982760850182291457.json, 音频生成/音频生成/VoxCPM TTS声音克隆上海话_1970685580105445377.json, 音频生成/音频生成/方言克隆_2043707239667601410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_244
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2041500454491791362.json、视频生成/图生视频/2041779553500143618.json、视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json、视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json、视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM 1.5模型 TTS V3_2016022810824544258.json、音频生成/音频生成/VoxCPM 1.5模型 TTS_2004529592717246465.json、音频生成/音频生成/VoxCPM TTS 生成多地方方言-附免费生方言网站_1976570613458407426.json、音频生成/音频生成/VoxCPM TTS_1982760850182291457.json、音频生成/音频生成/VoxCPM TTS声音克隆上海话_1970685580105445377.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `SaveAudio`
+- `VoxCPM_TTS`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `LoadAudio` —— 2/5 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 2/5 个有
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 2/5 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/5 个有
+- `Apply Whisper` —— 3/6 个有
+- `SaveAudioMP3` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `PreviewTextNode` —— 1/6 个有
 
 ## 典型参数
 

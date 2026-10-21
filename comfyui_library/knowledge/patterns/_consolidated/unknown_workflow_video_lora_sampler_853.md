@@ -3,65 +3,43 @@ name: unknown_workflow_video_lora_sampler_853
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.518
-common_nodes: [BlockifyMask, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJv2, JWInteger, LayerMask: MaskPreview, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.889
+common_nodes: [Fast Groups Bypasser (rgthree), ImageBlur, Int, LoadWanVideoT5TextEncoder, RHHiddenNodes, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969420590102814722.json, 视频生成/图生视频/1969490471846354945.json]
+members: [视频生成/图生视频/1908011903803600898.json, 视频生成/文生视频/1932643616856625153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_853
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1969420590102814722.json、视频生成/图生视频/1969490471846354945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1908011903803600898.json、视频生成/文生视频/1932643616856625153.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DrawMaskOnImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `JWInteger`
-- `LayerMask: MaskPreview`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SAM3_Detect`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
-- `SetNode`
-- `SimpleMath+`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBlur`
+- `Int`
+- `LoadWanVideoT5TextEncoder`
+- `RHHiddenNodes`
+- `ShowText|pysssss`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
+- `WanVideoControlEmbeds`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 ## 典型参数
 

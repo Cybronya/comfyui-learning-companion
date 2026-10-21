@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_638
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [ImageConcanate, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.767667
+common_nodes: [FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, WhisperSTT]
 problems: []
 missing: []
-members: [图片生成/文生图/-全能图片V1 基础双图私用_1983735210313457666.json, 图片生成/文生图/1960889176243802113.json]
+members: [音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json, 音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json, 音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_638
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/-全能图片V1 基础双图私用_1983735210313457666.json、图片生成/文生图/1960889176243802113.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json、音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json、音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageConcanate`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `FB_Qwen3TTSVoiceClone`
+- `FB_Qwen3TTSVoiceDesign`
+- `LoadAudio`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
+- `WhisperSTT`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

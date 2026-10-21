@@ -1,76 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_40
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.962
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, INTConstant, JWInteger, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, TT_img_enc, UNETLoader, VAEDecode, VAELoader]
-problems: []
-missing: [ImageFromBatch+, LayerUtility: PurgeVRAM, Text Concatenate, CR Prompt Text]
-members: [视频生成/文生视频/1974785719120080898.json, 视频生成/文生视频/1974792612945244161.json, 视频生成/文生视频/1975846179902722050.json, 视频生成/文生视频/1975847969142517762.json, 视频生成/文生视频/1976134044670889985.json, 视频生成/文生视频/1978740895153541121.json, 视频生成/文生视频/Wan2.2 lightx2v 1217文生视频V1_2001672195485122562.json]
+frequency: 12
+level: weak
+coverage: 0.956583
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/Z-Image最新千问文生图_1993894546499108866.json, 图片生成/文生图/Z-image 来袭，这才是真正的降维打击！_1994248474698989570.json, 图片生成/文生图/Z_image_turbo_文生图_1998723273162641410.json, 图片生成/文生图/Z_image_turbo即梦生图免费版_1998032212584988673.json, 图片生成/文生图/Z_image_turbo工作流_1994234495897452546.json, 图片生成/文生图/Z_image文生图标准版_2064278139861299201.json, 图片生成/文生图/image_ovis_文生图_1998947182181015554.json, 图片生成/文生图/qwen_image_2512_bf16_2006410696564674562.json, 图片生成/文生图/turbo蒸馏版Z_IMAGE文生图工作流_2068265351833546753.json, 图片生成/文生图/z-image工作流原始_1998312568252981249.json, 图片生成/文生图/z-image测试_2014249552764739586.json, 图片生成/文生图/z-image测试_2014252003039387649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_40
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/1974785719120080898.json、视频生成/文生视频/1974792612945244161.json、视频生成/文生视频/1975846179902722050.json、视频生成/文生视频/1975847969142517762.json、视频生成/文生视频/1976134044670889985.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Z-Image最新千问文生图_1993894546499108866.json、图片生成/文生图/Z-image 来袭，这才是真正的降维打击！_1994248474698989570.json、图片生成/文生图/Z_image_turbo_文生图_1998723273162641410.json、图片生成/文生图/Z_image_turbo即梦生图免费版_1998032212584988673.json、图片生成/文生图/Z_image_turbo工作流_1994234495897452546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
+- **样本数**：12
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `INTConstant`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
-- `TT_img_enc`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `ImageFromBatch+` —— 3/7 个有
-- `LoadImage` —— 3/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `LayerUtility: PurgeVRAM` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `Joy_caption_two_advanced` —— 1/7 个有
-- `Joy_caption_two_load` —— 1/7 个有
-- `Joy_extra_options` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `Text Concatenate` —— 1/7 个有
-- `easy seed` —— 1/7 个有
+- `ModelSamplingAuraFlow` —— 11/12 个有
+- `Int` —— 2/12 个有
+- `TextInputBasic` —— 2/12 个有
+- `CR Value` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `easy getNode` —— 1/12 个有
+- `easy setNode` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 57% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 86% |
-| 重绘幅度 | simple | - | 7 | 86% |
+| 采样步数 | 9 | 8 - 50 | 12 | 17% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 12 | 20% |
+| 采样算法 | euler | - | 12 | 67% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 57%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 86%
-- 重绘幅度 最常用 simple，7 个样本，一致性 86%
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、LayerUtility: PurgeVRAM、Text Concatenate、CR Prompt Text
+- 采样步数 中位数 9，观测区间 8 - 50，12 个样本，取值分散，一致性仅 17%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，12 个样本，取值分散，一致性仅 20%
+- 采样算法 最常用 euler，12 个样本，一致性 67%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（9/12 个样本）：Steps较低可能导致细节不足

@@ -1,49 +1,36 @@
 ---
 name: text_to_image_upscale_lora_sampler_22
 type: Text To Image
-frequency: 2
+frequency: 5
 level: weak
-coverage: 0.6865
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyLatentImage, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), Flux2KleinEditTextEncode_EditUtils, ImageFromBatch, KSampler, LayerColor: BrightnessContrastV2, LayerFilter: AddGrain, LayerFilter: GaussianBlurV2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: NumberCalculator, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingAuraFlow, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, easy imageSize]
+coverage: 0.8542
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageResize+, ImageScaleBy, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy imageSize]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, Fast Bypasser (rgthree), Label (rgthree), LayerColor: BrightnessContrastV2, LayerFilter: AddGrain, LayerFilter: GaussianBlurV2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: NumberCalculator, MathExpression|pysssss, easy cleanGpuUsed, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, CR Prompt List, CR Prompt Text, easy imageSize]
-members: [图片生成/图生图/2079086291660136450.json, 图片生成/文生图/Instagram休闲风格-运动达人_2083385582033657858.json]
+missing: []
+members: [图片生成/文生图/Krea2 图生图无限裂变（3采样）4K高清_2074851653878112257.json, 图片生成/文生图/Qwen2512 文生图工作流_2071432588077654017.json, 图片生成/文生图/Z-Image文生图+TTP高清放大_2059978387187388417.json, 图片生成/文生图/ZImage文生图（TTP高清4K）_2096553840748355585.json, 图片生成/文生图/人像写真 美图生成洗图 虚拟美女模特 Z-Image文生图_提示词反推+SeedVR2TTP高清放大_2060190994372579329.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2079086291660136450.json、图片生成/文生图/Instagram休闲风格-运动达人_2083385582033657858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Krea2 图生图无限裂变（3采样）4K高清_2074851653878112257.json、图片生成/文生图/Qwen2512 文生图工作流_2071432588077654017.json、图片生成/文生图/Z-Image文生图+TTP高清放大_2059978387187388417.json、图片生成/文生图/ZImage文生图（TTP高清4K）_2096553840748355585.json、图片生成/文生图/人像写真 美图生成洗图 虚拟美女模特 Z-Image文生图_提示词反推+SeedVR2TTP高清放大_2060190994372579329.json）
 
 - **类型**：Text To Image
-- **样本数**：2
+- **样本数**：5
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
-- `Flux2KleinEditTextEncode_EditUtils`
-- `ImageFromBatch`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `LayerColor: BrightnessContrastV2`
-- `LayerFilter: AddGrain`
-- `LayerFilter: GaussianBlurV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: ImageScaleRestore V2`
-- `LayerUtility: NumberCalculator`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
@@ -54,60 +41,52 @@ source: knowledge_consolidation
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageColorMatch`
-- `easy imageListToImageBatch`
 - `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoaderGGUF` —— 1/2 个有
-- `CR Prompt List` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `ResolutionSelector` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `TTResolutionSelector` —— 1/2 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `ConstrainImage|pysssss` —— 4/5 个有
+- `Get Image Size` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `PurgeVRAM_UTK` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `RMBG` —— 1/5 个有
+- `RTXVideoSuperResolution` —— 1/5 个有
+- `TTResolutionSelector` —— 1/5 个有
+- `TextEncodeQwenImageEditPlus` —— 1/5 个有
+- `VAEEncode` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4.5 | - | 2 | 22% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_2s | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1280 | - | 2 | 80% |
+| 宽度 | 1024 | 512 - 1080 | 5 | 77% |
+| 高度 | 1536 | 512 - 1920 | 5 | 66% |
+| 采样步数 | 10 | 2 - 25 | 5 | 34% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 5 | 25% |
+| 采样算法 | dpmpp_2m_sde | - | 5 | 60% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 0.3 - 1 | 5 | 67% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 22%
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 高发问题（7/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Fast Bypasser (rgthree)、Label (rgthree)、LayerColor: BrightnessContrastV2、LayerFilter: AddGrain
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 512 - 1080，5 个样本
+- 高度 中位数 1536，观测区间 512 - 1920，5 个样本
+- 采样步数 中位数 10，观测区间 2 - 25，5 个样本，取值分散，一致性仅 34%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
+- 采样算法 最常用 dpmpp_2m_sde，5 个样本，一致性 60%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，5 个样本
+- 高发问题（3/5 个样本）：Steps较低可能导致细节不足

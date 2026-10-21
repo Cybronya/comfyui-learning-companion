@@ -1,132 +1,110 @@
 ---
 name: text_to_image_upscale_lora_sampler_10
 type: Text To Image
-frequency: 4
-level: strong
-coverage: 0.88625
-common_nodes: [AILab_QwenVL, BasicScheduler, CFGGuider, CLIPLoader, CLIPLoaderGGUF, CLIPTextEncode, CR Text, ConditioningZeroOut, DisableNoise, EditTextEncode_EditUtils, EmptyLatentImage, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, GetImageSize+, GoogleTranslateTextNode, Image Comparer (rgthree), Image Filter Adjustments, ImageCASharpening+, ImageListToImageBatch, ImageResize+, ImageScaleBy, ImageUpscaleWithModel, ImpactImageBatchToImageList, Int, JjkText, KSampler, KSamplerAdvanced, KSamplerSelect, LayerColor: Levels, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, PainterFluxImageEdit, PreviewImage, PrimitiveFloat, PrimitiveInt, QwenImageIntegratedKSampler, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, SimpleMath+, SplitSigmas, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy getNode, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, easy setNode, solarL_SaveImagesToZip, 孤海注释]
+frequency: 8
+level: weak
+coverage: 0.861625
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/设计编辑工作流 图片设计修改优化一站搞定_2105143285072351234.json, 图片生成/反推提示词/通用设计编辑助理，文生图反推提示词图生图多合一工作流_2103193262772285441.json, 图片生成/文生图/全能设计编辑工作流｜文生图反推提示词图生图三合一_2103080101171785730.json, 图片生成/文生图/通用设计编辑助理，文生图反推提示词图生图多合一工作流_2103193262772285441.json]
+members: [图片生成/文生图/✅《极致美学》-Zimage_MJ风格_2079739133559398402.json, 图片生成/文生图/三采样Krea2 + Z-Image Turbo + Flux2-Klein_2073232335872544769.json, 图片生成/文生图/三采样高质量邪修-Krea2 + Z-Image Turbo + Flux2-Klein-提示词扩写版_2071872383069286402.json, 图片生成/文生图/三采样高质量邪修-Krea2 + Z-Image Turbo + Flux2-Klein_2071613444608057345.json, 图片生成/文生图/图像模仿洗图-高质量三采样-krea2+Klein+zimage_2072250385414311938.json, 图片生成/文生图/极致美学-Zimage_mj风格版-高清_2079533122739331073.json, 图片生成/文生图/极致美学-Zimage_mj风格版-高清_2096071482471436290.json, 图片生成/文生图/极致美学高清生成｜Z-Image MJ风格版文生图制作_2096334353323347969.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/设计编辑工作流 图片设计修改优化一站搞定_2105143285072351234.json、图片生成/反推提示词/通用设计编辑助理，文生图反推提示词图生图多合一工作流_2103193262772285441.json、图片生成/文生图/全能设计编辑工作流｜文生图反推提示词图生图三合一_2103080101171785730.json、图片生成/文生图/通用设计编辑助理，文生图反推提示词图生图多合一工作流_2103193262772285441.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/✅《极致美学》-Zimage_MJ风格_2079739133559398402.json、图片生成/文生图/三采样Krea2 + Z-Image Turbo + Flux2-Klein_2073232335872544769.json、图片生成/文生图/三采样高质量邪修-Krea2 + Z-Image Turbo + Flux2-Klein-提示词扩写版_2071872383069286402.json、图片生成/文生图/三采样高质量邪修-Krea2 + Z-Image Turbo + Flux2-Klein_2071613444608057345.json、图片生成/文生图/图像模仿洗图-高质量三采样-krea2+Klein+zimage_2072250385414311938.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
-- `CLIPLoaderGGUF`
 - `CLIPTextEncode`
 - `CR Text`
+- `ColorMatch`
 - `ConditioningZeroOut`
-- `DisableNoise`
-- `EditTextEncode_EditUtils`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `GetImageSize+`
-- `GoogleTranslateTextNode`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `Image Comparer (rgthree)`
-- `Image Filter Adjustments`
-- `ImageCASharpening+`
-- `ImageListToImageBatch`
 - `ImageResize+`
 - `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `ImpactImageBatchToImageList`
-- `Int`
-- `JjkText`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `KSamplerAdvanced`
 - `KSamplerSelect`
-- `LayerColor: Levels`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LCSSharpnessCalibrate`
+- `LCSSharpnessIntervene`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ModelSamplingSD3`
-- `PainterFluxImageEdit`
 - `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `QwenImageIntegratedKSampler`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `SplitSigmas`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `easy getNode`
-- `easy imageBatchToImageList`
-- `easy imageColorMatch`
-- `easy imageListToImageBatch`
-- `easy setNode`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Set Value On Boolean` —— 1/4 个有
-- `DetailDaemonSamplerNode` —— 1/4 个有
-- `WanVideoNAG` —— 1/4 个有
-- `XB_CanvasLabel` —— 1/4 个有
-- `easy boolean` —— 1/4 个有
-- `easy textSwitch` —— 1/4 个有
+- `GetNode` —— 7/8 个有
+- `SetNode` —— 7/8 个有
+- `CLIPLoaderGGUF` —— 4/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `GetImageSize+` —— 4/8 个有
+- `ImageCASharpening+` —— 4/8 个有
+- `PhotoShakeNode` —— 4/8 个有
+- `RunningHub Deepcleaner` —— 4/8 个有
+- `TTResolutionSelector` —— 4/8 个有
+- `easy cleanGpuUsed` —— 4/8 个有
+- `easy imageSize` —— 4/8 个有
+- `RH_LLMAPI_Pro_Node` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `孤海注释` —— 2/8 个有
+- `JjkText` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
+- `ResolutionSelector` —— 1/8 个有
+- `solarL_SaveImagesToZip` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
+| 采样步数 | 7 | 4 - 10 | 8 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 8 | 19% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 0.25 - 1 | 8 | 49% |
+| 宽度 | 1024 | 80 - 1080 | 8 | 65% |
+| 高度 | 1024 | 80 - 1480 | 8 | 60% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（16/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 7，观测区间 4 - 10，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，8 个样本，取值分散，一致性仅 19%
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 0.25 - 1，8 个样本，取值分散，一致性仅 49%
+- 宽度 中位数 1024，观测区间 80 - 1080，8 个样本
+- 高度 中位数 1024，观测区间 80 - 1480，8 个样本
+- 高发问题（9/8 个样本）：Steps较低可能导致细节不足

@@ -3,63 +3,51 @@ name: unknown_workflow_video_lora_sampler_777
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.85
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageResizeKJv2, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.6985
+common_nodes: [BasicScheduler, ConditioningZeroOut, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, H3SigmaRefiner, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, ModelPreviewOverrideKJ, RunningHub Deepcleaner, SelfLiftAvatarH3Sampler, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json, 视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json]
+members: [视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json, 视频生成/图生视频/MinimaxH3-武戏V1.3版_2107062415434280962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_777
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json、视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json、视频生成/图生视频/MinimaxH3-武戏V1.3版_2107062415434280962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ImageResizeKJv2`
+- `ConditioningZeroOut`
+- `FeiHouEasyH3RH`
+- `FeiHouEasyH3RHLoader`
+- `FeiHouEasyH3RHOutput`
+- `GetNode`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEEncode`
-- `VAELoader`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RunningHub Deepcleaner`
+- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `CreateVideo` —— 1/2 个有
-- `ImpactConditionalBranch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `MathExpression_UTK` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `ResizeShortestToNode` —— 1/2 个有
-- `VAEEncodeAudio` —— 1/2 个有
-- `VAEEncodeTiled` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `获取视频信息` —— 1/2 个有
+- `LoraLoaderBypassModelOnly` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
 
 ## 典型参数
 

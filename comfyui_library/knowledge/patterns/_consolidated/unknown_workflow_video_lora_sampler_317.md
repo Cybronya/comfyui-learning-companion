@@ -3,82 +3,63 @@ name: unknown_workflow_video_lora_sampler_317
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.606286
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.791714
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1976670695512068097.json, 视频生成/图生视频/1977205841587773441.json, 视频生成/图生视频/1977282428031115265.json, 视频生成/图生视频/1977738504492961794.json, 视频生成/图生视频/1970425229413654530.json, 视频生成/图生视频/2062169414258221058.json, 视频生成/图生视频/2010634733373366273.json]
+members: [视频生成/图生视频/1959896744446341122.json, 视频生成/图生视频/1995404196142833665.json, 视频生成/文生视频/1022对比测试_1981324716671664130.json, 视频生成/文生视频/Wan2.2 V5-MoE Fast I2V for Characters_2072999497279774720.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_2072999534260953088.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1022版_1981325230595629057.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_317
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1976670695512068097.json、视频生成/图生视频/1977205841587773441.json、视频生成/图生视频/1977282428031115265.json、视频生成/图生视频/1977738504492961794.json、视频生成/图生视频/1970425229413654530.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1959896744446341122.json、视频生成/图生视频/1995404196142833665.json、视频生成/文生视频/1022对比测试_1981324716671664130.json、视频生成/文生视频/Wan2.2 V5-MoE Fast I2V for Characters_2072999497279774720.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_2072999534260953088.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `Sam2Segmentation`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 6/7 个有
 - `GetNode` —— 6/7 个有
-- `ImageConcatMulti` —— 6/7 个有
-- `GetImageSizeAndCount` —— 5/7 个有
-- `GrowMask` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 5/7 个有
-- `INTConstant` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `MathExpression|pysssss` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `PrimitiveInt` —— 3/7 个有
-- `WanVideoEncode` —— 3/7 个有
-- `Anything Everywhere3` —— 2/7 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `GIMMVFI_interpolate` —— 2/7 个有
-- `GetImageSize+` —— 2/7 个有
-- `GrowMaskWithBlur` —— 2/7 个有
-- `ImageBlend` —— 2/7 个有
-- `ImageFromBatch` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `ToFloat` —— 2/7 个有
-- `WanVideoContextOptions` —— 2/7 个有
-- `WanVideoUni3C_ControlnetLoader` —— 2/7 个有
-- `WanVideoUni3C_embeds` —— 2/7 个有
-- `Int` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `SaveLatent` —— 1/7 个有
-- `TT_img_enc_v2` —— 1/7 个有
+- `SetNode` —— 6/7 个有
+- `String Literal` —— 6/7 个有
+- `WanVideoSetRadialAttention` —— 6/7 个有
+- `easy globalSeed` —— 6/7 个有
+- `easy seed` —— 6/7 个有
+- `Int` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `WanVideoScheduler` —— 5/7 个有
+- `WanVideoSigmaToStep` —— 5/7 个有
+- `easy showAnything` —— 5/7 个有
+- `FloatToSigmas` —— 3/7 个有
+- `StringToFloatList` —— 3/7 个有
+- `INTConstant` —— 2/7 个有
+- `AddLabel` —— 1/7 个有
+- `CLIPVisionLoader` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `WanVideoClipVisionEncode` —— 1/7 个有
+- `WanVideoContextOptions` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

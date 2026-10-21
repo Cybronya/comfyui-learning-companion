@@ -3,34 +3,35 @@ name: unknown_workflow_video_124
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [AILab_MiniCPM_4_V_Advanced, GetVideoComponents, HunyuanVideoFoley, LoadVideo, Text Multiline, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
+coverage: 0.7065
+common_nodes: [AILab_MiniCPM_4_V_Advanced, HunyuanVideoFoley, MathExpression|pysssss, VHS_LoadVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/混元Foley视频配音_1973296901665763329.json, 音频生成/音频生成/混元Foley视频音效工作流_1964156752734339073.json]
+members: [音频生成/音频生成/混元Foley 生成音效 配音_2049378866988322818.json, 音频生成/音频生成/混元视频配音 floey_1962050989266288641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_124
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/混元Foley视频配音_1973296901665763329.json、音频生成/音频生成/混元Foley视频音效工作流_1964156752734339073.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/混元Foley 生成音效 配音_2049378866988322818.json、音频生成/音频生成/混元视频配音 floey_1962050989266288641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `AILab_MiniCPM_4_V_Advanced`
-- `GetVideoComponents`
 - `HunyuanVideoFoley`
-- `LoadVideo`
-- `Text Multiline`
+- `MathExpression|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveText` —— 1/2 个有
 
 ## 典型参数
 

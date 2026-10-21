@@ -3,73 +3,67 @@ name: unknown_workflow_lora_sampler_unet_8
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.736333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.878833
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Minimax_文生视频_8步加速_2077975666892558338.json, 视频生成/文生视频/Minimxa-lightx2v-SLA加速文生图_2091334717189746689.json, 视频生成/文生视频/Minmax H3参考加速工作流_2086695240752263170.json, 视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json, 视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json, 视频生成/文生视频/人物真实低动态H3+sigma强化+潜空间放大工作流 双采_2096114490512330753.json, 视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json, 视频生成/文生视频/啊癫 minimaxh3极速版二采潜空间直接放大（去油版）_2093957991434379265.json, 视频生成/文生视频/收藏级！H3 加速+二采+打斗全能工作流拆解系列05集_2092970619469123586.json, 视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json, 视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json, 视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json]
+members: [视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100787039317876737.json, 视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100884384172830721.json, 视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100928696604520449.json, 视频生成/图生视频/MiniMax H3双采参考生视频-低显存版本_2104091652603338754.json, 视频生成/图生视频/Minimax H3 参考生视频 ｜不油、不崩脸、真实感强｜Hybird V1 + Sla 4步加速_2091946357614534657.json, 视频生成/图生视频/尾帧生视频_2099041242926632962.json, 视频生成/图生视频/银河系小王参考生视频-自用_2094346923468738561.json, 视频生成/图生视频/银河系小王图生视频-自用_2094273549614800897.json, 视频生成/图生视频/首帧生视频_2099038054504812545.json, 视频生成/图生视频/（Minimax H3）Remix版文戏工作流_2096586271111081985.json, 视频生成/文生视频/(最佳动态)MiniMax H3参考生视频（dasiwa的模型和加速lora）_2093873787371606017.json, 视频生成/文生视频/10Eros Beta5 + FL2VA_Ref2VA小脸去油二采精修流_2101605881900261377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_8
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/Minimax_文生视频_8步加速_2077975666892558338.json、视频生成/文生视频/Minimxa-lightx2v-SLA加速文生图_2091334717189746689.json、视频生成/文生视频/Minmax H3参考加速工作流_2086695240752263170.json、视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json、视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100787039317876737.json、视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100884384172830721.json、视频生成/图生视频/(低显存-时间分块+前馈分块)MiniMax H3双采参考生视频_2100928696604520449.json、视频生成/图生视频/MiniMax H3双采参考生视频-低显存版本_2104091652603338754.json、视频生成/图生视频/Minimax H3 参考生视频 ｜不油、不崩脸、真实感强｜Hybird V1 + Sla 4步加速_2091946357614534657.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `PrimitiveFloat`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SolAttnMiniMax`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelAttentionBackend` —— 11/12 个有
-- `CreateVideo` —— 10/12 个有
-- `LoadImage` —— 10/12 个有
-- `MiniMaxH3SigmaShift` —— 10/12 个有
-- `SaveVideo` —— 10/12 个有
-- `LTXVConcatAVLatent` —— 9/12 个有
-- `LTXVSeparateAVLatent` —— 9/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/12 个有
-- `MiniMaxH3ReferenceToVideo` —— 9/12 个有
-- `PrimitiveStringMultiline` —— 9/12 个有
-- `SplitSigmas` —— 9/12 个有
-- `H3SigmaRefiner` —— 8/12 个有
-- `MinimaxH3LatentUpscaler3D` —— 8/12 个有
-- `ModelPreviewOverrideKJ` —— 6/12 个有
-- `GetNode` —— 5/12 个有
-- `SetNode` —— 5/12 个有
-- `LoadAudio` —— 4/12 个有
-- `MiniMaxH3ImageToVideo` —— 3/12 个有
-- `SolAttnMiniMax` —— 3/12 个有
-- `VHS_VideoCombine` —— 3/12 个有
-- `ManualSigmas` —— 2/12 个有
-- `RHLLMChatNode` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `Int` —— 1/12 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/12 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/12 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/12 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/12 个有
-- `SigmasPreview` —— 1/12 个有
-- `VHS_LoadVideo` —— 1/12 个有
-- `孤海注释` —— 1/12 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 11/12 个有
+- `PrimitiveFloat` —— 8/12 个有
+- `VHS_VideoCombine` —— 8/12 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 7/12 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 7/12 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 7/12 个有
+- `CreateVideo` —— 5/12 个有
+- `SaveVideo` —— 5/12 个有
+- `easy cleanGpuUsed` —— 5/12 个有
+- `JWFloat` —— 4/12 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 4/12 个有
+- `MiniMaxH3ChunkedTwoPassPlanT8Advanced` —— 4/12 个有
+- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced` —— 4/12 个有
+- `PreviewAny` —— 4/12 个有
+- `LoadAudio` —— 3/12 个有
+- `AudioCrop` —— 1/12 个有
+- `ConcatTextOfUtils` —— 1/12 个有
+- `GetVideoComponents` —— 1/12 个有
+- `LoadVideo` —— 1/12 个有
+- `LoraLoaderModelOnly` —— 1/12 个有
+- `Video Slice` —— 1/12 个有
+- `easy clearCacheAll` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_66
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.956091
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.939417
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json, 音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json, 音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json, 音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json, 音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json, 音频生成/音频生成/Index TTS2 声音克隆_2070816843719331841.json, 音频生成/音频生成/Index TTS2 声音克隆工作流_2051515883343888385.json, 音频生成/音频生成/indexTTS2-有声书制作 多角色声音_2064251607080071169.json, 音频生成/音频生成/乱神版-Easy IndexTTS2情感控制（单人）_2073213371335405569.json, 音频生成/音频生成/乱神版-超好用Easy IndexTTS2无限组合版(双人)_1970148854437998593.json, 音频生成/音频生成/声音克隆超好用Easy IndexTTS2无限组合版(双人)_1970161118201212929.json]
+members: [音频生成/音频生成/IndexTTS 2.5多国语言多人对话语音克隆_2092496159205052418.json, 音频生成/音频生成/IndexTTS 2.5语音克隆2608_2094635934229815298.json, 音频生成/音频生成/IndexTTS 2.5语音克隆V3_2094792849782042625.json, 音频生成/音频生成/IndexTTS 2.5语音克隆V3_2098246921596002306.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2087829131324116993.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2088205542249558017.json, 音频生成/音频生成/IndexTTS 2.5语音克隆_2088241722756259842.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2094792952475377666.json, 音频生成/音频生成/index tts2.5语音克隆_2090296819464105986.json, 音频生成/音频生成/啊癫 IndexTTS2.5语音克隆音频克隆_2092610497064558594.json, 音频生成/音频生成/让孩子随时都能听到你讲故事（AI语音克隆2.5）_2090440396223639553.json, 音频生成/音频生成/语音克隆IndexTTS 2.5-参考音频_2106028450975932418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_66
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json、音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json、音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json、音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json、音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多国语言多人对话语音克隆_2092496159205052418.json、音频生成/音频生成/IndexTTS 2.5语音克隆2608_2094635934229815298.json、音频生成/音频生成/IndexTTS 2.5语音克隆V3_2094792849782042625.json、音频生成/音频生成/IndexTTS 2.5语音克隆V3_2098246921596002306.json、音频生成/音频生成/IndexTTS 2.5语音克隆_2087829131324116993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `LoadAudio`
 - `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/11 个有
-- `PreviewAudio` —— 6/11 个有
-- `easy indexTTSAudioMerge` —— 5/11 个有
-- `easy indexTTSEmotionVector` —— 5/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 1/11 个有
+- `CR Prompt Text` —— 11/12 个有
+- `T8_IndexTTS25_SamplingConfig` —— 3/12 个有
+- `孤海注释` —— 3/12 个有
 
 ## 典型参数
 

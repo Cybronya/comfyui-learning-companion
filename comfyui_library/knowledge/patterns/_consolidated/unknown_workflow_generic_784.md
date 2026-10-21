@@ -3,41 +3,37 @@ name: unknown_workflow_generic_784
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.946
-common_nodes: [ACEStepEdit, ACEStepExtend, ACEStepGen, ACEStepRepainting, GenerationParameters, LoadAudio, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
+coverage: 0.73
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, RH_SeedreamV5LiteImageToImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json, 音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json]
+members: [图片生成/文生图/Seedream 5.0 全家图桶 Pro+Lite 图生图+文生图_2076303899585236993.json, 图片生成/文生图/多图编辑 Seedance5_2076327076877135873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_784
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json、音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream 5.0 全家图桶 Pro+Lite 图生图+文生图_2076303899585236993.json、图片生成/文生图/多图编辑 Seedance5_2076327076877135873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ACEStepEdit`
-- `ACEStepExtend`
-- `ACEStepGen`
-- `ACEStepRepainting`
-- `GenerationParameters`
-- `LoadAudio`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `SaveAudio`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `PreviewImage`
+- `RH_SeedreamV5LiteImageToImage`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `RH_SeedreamV5ProTextToImage` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,81 +1,78 @@
 ---
 name: text_to_image_lora_sampler_clip_200
 type: Text To Image
-frequency: 4
+frequency: 6
 level: strong
-coverage: 0.8865
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, GetImageSize, ImageResizeKJv2, ImageScaleBy, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenImage21Cache, QwenImage21UnionApply, QwenImage21UnionLoader, ResizeImageMaskNode, ResolutionSelector, SaveImage, SeedNode, TextEncodeQwenImage21, Textbox, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.904833
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, RHLLMChatNode, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1 CONTROLNET图像编辑工作流 精准控制改图_2105045185263661057.json, 图片生成/文生图/Qwen Image 2.1 CONTROLNET图像编辑工作流 精准控制改图_2105141762074431490.json, 图片生成/文生图/Qwen Image 2.1 ControlNet图像编辑工作流，精准控制改图图生图工具_2105806539499069442.json, 图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json]
+members: [图片生成/文生图/Krea2 双图风格融合（创意洗图）_2078736945521455106.json, 图片生成/文生图/Krea2 文生图多风格优化+双图风格迁移智能优化版_2073044999301844994.json, 图片生成/文生图/Krea2 文生图多风格优化+双图风格迁移智能优化版_2078759570259927041.json, 图片生成/文生图/krea2 文生图多风格优化+双图风格智能迁移_2073314611042017281.json, 图片生成/文生图/krea2 文生图多风格优化+双图风格迁移智能优化版_2072983737209548802.json, 图片生成/文生图/krea2 文生图多风格优化+双图风格迁移智能优化版_2080467909574488065.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_200
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 CONTROLNET图像编辑工作流 精准控制改图_2105045185263661057.json、图片生成/文生图/Qwen Image 2.1 CONTROLNET图像编辑工作流 精准控制改图_2105141762074431490.json、图片生成/文生图/Qwen Image 2.1 ControlNet图像编辑工作流，精准控制改图图生图工具_2105806539499069442.json、图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Krea2 双图风格融合（创意洗图）_2078736945521455106.json、图片生成/文生图/Krea2 文生图多风格优化+双图风格迁移智能优化版_2073044999301844994.json、图片生成/文生图/Krea2 文生图多风格优化+双图风格迁移智能优化版_2078759570259927041.json、图片生成/文生图/krea2 文生图多风格优化+双图风格智能迁移_2073314611042017281.json、图片生成/文生图/krea2 文生图多风格优化+双图风格迁移智能优化版_2072983737209548802.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `CR Text`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImageSize`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `QwenImage21UnionApply`
-- `QwenImage21UnionLoader`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
+- `RHLLMChatNode`
 - `SaveImage`
-- `SeedNode`
-- `TextEncodeQwenImage21`
-- `Textbox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `DapaoImageRatioLimitNode` —— 5/6 个有
+- `easy anythingIndexSwitch` —— 5/6 个有
+- `easy int` —— 5/6 个有
+- `孤海注释` —— 3/6 个有
+- `AspectRatio` —— 2/6 个有
+- `SizeSelector` —— 2/6 个有
+- `DF_Latent_Scale_to_side` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `TTResolutionSelector` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 采样步数 | 10 | 10 - 10 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（5/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

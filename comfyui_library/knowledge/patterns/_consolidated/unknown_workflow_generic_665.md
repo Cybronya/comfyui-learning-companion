@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_665
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.715
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/G 2.0参考图像，角色定妆照_2094843073481240577.json, 视频生成/图生视频/全能图片G image 2.0多宫格故事板_2098620081646424066.json]
+members: [音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json, 音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json, 音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【单人版】🪂_1966003776991694849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_665
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/G 2.0参考图像，角色定妆照_2094843073481240577.json、视频生成/图生视频/全能图片G image 2.0多宫格故事板_2098620081646424066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json、音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json、音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【单人版】🪂_1966003776991694849.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
+- `FL_Audio_Separation` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

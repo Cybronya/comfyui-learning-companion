@@ -1,79 +1,93 @@
 ---
 name: unknown_workflow_video_lora_sampler_5
 type: Unknown Workflow
-frequency: 75
+frequency: 77
 level: moderate
-coverage: 0.608547
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.476416
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, GetImageRangeFromBatch, GetImageSize, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, ResizeImageMaskNode, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2077823494326415362.json, 视频生成/图生视频/2078124326972383233.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2087040327587815426.json, 视频生成/图生视频/2021045146128748546.json, 视频生成/图生视频/2021050493052657665.json, 视频生成/图生视频/2037367887756795905.json, 视频生成/图生视频/2012744356666544130.json, 视频生成/图生视频/1999132133182631937.json, 视频生成/图生视频/2006750635965812737.json, 视频生成/图生视频/2010972602436685825.json, 视频生成/图生视频/2037770591301804034.json, 视频生成/图生视频/2046393095314477058.json, 视频生成/图生视频/2055193205628514306.json, 视频生成/图生视频/2057001718025641986.json, 视频生成/图生视频/2064279641464066050.json, 视频生成/图生视频/2065426639923802113.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2104169238754844673.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2104188287391977474.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2107018826129960962.json, 视频生成/图生视频/2007586660388708354.json, 视频生成/图生视频/1999147645648109569.json, 视频生成/图生视频/2013157114394447873.json, 视频生成/图生视频/2034010993549910018.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2095327962378887170.json, 视频生成/图生视频/2051166636400496641.json, 视频生成/图生视频/2069752465066643458.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2082818312530124802.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2096551354021015553.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2096582434203725826.json, 视频生成/图生视频/2002599529096572930.json, 视频生成/图生视频/2057305596684234753.json, 视频生成/图生视频/2079929209409069057.json, 视频生成/图生视频/2058381995545284610.json, 视频生成/图生视频/2058471840317788161.json, 视频生成/图生视频/2060364466436534274.json, 视频生成/图生视频/2060774599557738498.json, 视频生成/图生视频/2066792796987682818.json, 视频生成/图生视频/2066799489494638593.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2013945228213882882.json, 视频生成/图生视频/2014180561027342337.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2105653555704188930.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2105658223234740225.json, 视频生成/图生视频/2013887886935990273.json, 视频生成/图生视频/2014591625648939009.json, 视频生成/图生视频/2061977258608381954.json, 视频生成/图生视频/2073292515553402882.json, 视频生成/图生视频/2082290282867023873.json, 视频生成/图生视频/1999406405557907458.json, 视频生成/图生视频/2045041013768589313.json, 视频生成/图生视频/2014994165557370881.json, 视频生成/图生视频/2020680054753206273.json, 视频生成/图生视频/2022143730123280386.json, 视频生成/图生视频/1999018425617932289.json, 视频生成/图生视频/1995693634018217985.json, 视频生成/图生视频/1995735712467128322.json, 视频生成/图生视频/1998614255215763457.json, 视频生成/图生视频/1995720940271054850.json, 视频生成/图生视频/1995709694230532098.json, 视频生成/图生视频/1995712878860701698.json, 视频生成/图生视频/1997197731166883841.json, 视频生成/图生视频/1998741214134423553.json, 视频生成/图生视频/2025728943478808578.json, 视频生成/图生视频/2037135094128844802.json, 视频生成/图生视频/2037136001059000321.json, 视频生成/图生视频/2037136442165563394.json, 视频生成/图生视频/2043176583862689794.json, 视频生成/图生视频/2074671640511868929.json, 视频生成/图生视频/2080329957112377345.json, 视频生成/图生视频/2080680922562781186.json, 视频生成/图生视频/SteadyDancer动作迁移_2084530681153146881.json, 视频生成/图生视频/1999419556877791233.json, 视频生成/图生视频/2081535585252110337.json, 视频生成/图生视频/2019289437926068225.json, 视频生成/图生视频/2020035033687396353.json, 视频生成/文生视频/SteadyDancer动作表情迁移：一键生成动物小猫小狗人物单人跳舞_2017476660358025217.json]
+members: [视频生成/图生视频/2077721960137707521.json, 视频生成/图生视频/2077728210632134658.json, 视频生成/图生视频/Scail2动作迁移 复刻动作（无限时长）_2098356016508391426.json, 视频生成/图生视频/Scail2动作迁移 复刻动作（无限时长）_2098383871367798785.json, 视频生成/图生视频/2078427819096494082.json, 视频生成/图生视频/2071186712600072193.json, 视频生成/图生视频/2068526463132979202.json, 视频生成/图生视频/2068583873969217538.json, 视频生成/图生视频/2069607269846839298.json, 视频生成/图生视频/2077427459980615681.json, 视频生成/图生视频/2065395616729092097.json, 视频生成/图生视频/Scail2动作迁移-低配置长续航-单人+多人-优化版 动作复刻_2087840913052749825.json, 视频生成/图生视频/Scail2动作迁移-低配置长续航-单人+多人-优化版 动作复刻_2087876866836361217.json, 视频生成/图生视频/Scail2动作迁移-低配置长续航-单人+多人-优化版 动作复刻_2089604882058792961.json, 视频生成/图生视频/2067883918371672065.json, 视频生成/图生视频/2067461524444246018.json, 视频生成/图生视频/2065339228430622721.json, 视频生成/图生视频/2068878899030876162.json, 视频生成/图生视频/2079094214356463618.json, 视频生成/图生视频/Scail2动作迁移Loop+Action+Transfer+Extra-Long+Videos_2109441341435502594.json, 视频生成/图生视频/2067281473379594242.json, 视频生成/图生视频/2067646819181613058.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制动作跳舞动作复刻视频lite无限时长版加长版低显存_2065751202444439554.json, 视频生成/图生视频/2065794113265557506.json, 视频生成/图生视频/2082077049837154306.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制动作跳舞动作复刻视频lite无限时长版加长版低显存_2093651797322850305.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制动作跳舞动作复刻视频lite无限时长版加长版低显存_2093670473912643585.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制动作跳舞动作复刻视频lite无限时长版加长版低显存_2106312804864188417.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制动作跳舞动作复刻视频lite无限时长版加长版低显存_2106368801909592066.json, 视频生成/图生视频/2077720581142827010.json, 视频生成/图生视频/2065708864888205314.json, 视频生成/图生视频/2082059745363578882.json, 视频生成/图生视频/2065724202988163074.json, 视频生成/图生视频/2080335335199961089.json, 视频生成/图生视频/2074667046234841090.json, 视频生成/图生视频/2075017832982736898.json, 视频生成/图生视频/2075392289438003201.json, 视频生成/图生视频/2079032135004016641.json, 视频生成/图生视频/2079490377291231234.json, 视频生成/图生视频/2079770687295811586.json, 视频生成/图生视频/2080487158971981826.json, 视频生成/图生视频/2082372434866556929.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2084528676057731073.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2099781395848720385.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100186647945105410.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100194173927387138.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100396811381985281.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2100502408022544386.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2108796626113486849.json, 视频生成/图生视频/Scail2循环动作迁移 超长视频 人物角色替换 动作迁移 高清长视频_2109839509943836674.json, 视频生成/图生视频/2064442825521061890.json, 视频生成/图生视频/2065054252736794626.json, 视频生成/图生视频/2079918971205279746.json, 视频生成/图生视频/Scail2循环动作迁移_超长视频_人物角色替换_动作迁移_高清长视频_2100925069580136450.json, 视频生成/图生视频/2064906216765218818.json, 视频生成/图生视频/2064684111977082882.json, 视频生成/图生视频/2064613578572910593.json, 视频生成/图生视频/2065062837441089538.json, 视频生成/图生视频/2066111362484498434.json, 视频生成/图生视频/2064673674170560513.json, 视频生成/图生视频/2069261444784418817.json, 视频生成/图生视频/2065395597909250050.json, 视频生成/图生视频/2082068440801701890.json, 视频生成/图生视频/2065338076536328193.json, 视频生成/图生视频/2065747971517534209.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2086427105323212801.json, 视频生成/图生视频/2067281458544332801.json, 视频生成/图生视频/2074063549172903938.json, 视频生成/图生视频/2065766773110165506.json, 视频生成/图生视频/2081281164979032066.json, 视频生成/图生视频/Scail2长视频动作迁移(长视频低显存版) Motion Transfer (Long‑Video_2101561671167860738.json, 视频生成/图生视频/scail2大模型sam抠人像动作迁移长视频动作迁移舞蹈复刻性感网红扭臀复刻动作复制快速版_2092834091065503746.json, 视频生成/图生视频/【AI军火商】Scail2动作迁移-低配置长续航版_2107311096993505281.json, 视频生成/图生视频/2065469164902510594.json, 视频生成/图生视频/人物角色替换 Scail2循环动作迁移+超长视频 动作迁移+高清长视频_2091754034624552962.json, 视频生成/图生视频/2081373222892822529.json, 视频生成/图生视频/虚拟IP打造专用工作流_2087539753280434177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 75 个 workflow 归纳得出（视频生成/图生视频/2077823494326415362.json、视频生成/图生视频/2078124326972383233.json、视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2087040327587815426.json、视频生成/图生视频/2021045146128748546.json、视频生成/图生视频/2021050493052657665.json…）
+> 由 `engine/knowledge_consolidation` 从 77 个 workflow 归纳得出（视频生成/图生视频/2077721960137707521.json、视频生成/图生视频/2077728210632134658.json、视频生成/图生视频/Scail2动作迁移 复刻动作（无限时长）_2098356016508391426.json、视频生成/图生视频/Scail2动作迁移 复刻动作（无限时长）_2098383871367798785.json、视频生成/图生视频/2078427819096494082.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：75
+- **样本数**：77
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 75 个 workflow 都包含：
+全部 77 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `ComfyMathExpression`
 - `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `GetImageSize`
 - `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `ResizeImageMaskNode`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `TensorLoopClose`
+- `TensorLoopOpen`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 74/75 个有
-- `OnnxDetectionModelLoader` —— 74/75 个有
-- `SetNode` —— 74/75 个有
-- `WanVideoDecode` —— 74/75 个有
-- `WanVideoLoraSelect` —— 74/75 个有
-- `WanVideoScheduler` —— 74/75 个有
-- `Int` —— 70/75 个有
-- `PoseDetectionOneToAllAnimation` —— 68/75 个有
-- `ImageConcatMulti` —— 66/75 个有
-- `PreviewImage` —— 65/75 个有
-- `WanVideoBlockSwap` —— 39/75 个有
-- `WanVideoSetBlockSwap` —— 39/75 个有
-- `TextInput_` —— 36/75 个有
-- `CR Prompt Text` —— 33/75 个有
-- `WanVideoTorchCompileSettings` —— 28/75 个有
-- `SimpleMath+` —— 24/75 个有
-- `PrimitiveFloat` —— 18/75 个有
-- `easy convertAnything` —— 18/75 个有
-- `DrawViTPose` —— 16/75 个有
-- `PoseAndFaceDetection` —— 16/75 个有
-- `AILab_QwenVL` —— 1/75 个有
-- `CR Combine Prompt` —— 1/75 个有
-- `DeepTranslatorTextNode` —— 1/75 个有
-- `LayerUtility: TextBox` —— 1/75 个有
-- `PreviewAny` —— 1/75 个有
-- `RunningHub Deepcleaner` —— 1/75 个有
-- `SaveImage` —— 1/75 个有
-- `SaveLatent` —— 1/75 个有
-- `TT_img_enc` —— 1/75 个有
-- `WanVideoLoraSelectMulti` —— 1/75 个有
-- `easy showAnything` —— 1/75 个有
+- `ImageConcatMulti` —— 76/77 个有
+- `PreviewAny` —— 76/77 个有
+- `EmptyImage` —— 75/77 个有
+- `ImageCompositeMasked` —— 75/77 个有
+- `SAM3_TrackToMask` —— 75/77 个有
+- `PreviewImage` —— 72/77 个有
+- `GetNode` —— 71/77 个有
+- `SetNode` —— 71/77 个有
+- `DownloadAndLoadGIMMVFIModel` —— 68/77 个有
+- `GIMMVFI_interpolate` —— 68/77 个有
+- `CR Text` —— 66/77 个有
+- `UNETLoader` —— 43/77 个有
+- `DiffusionModelLoaderKJ` —— 34/77 个有
+- `JWInteger` —— 32/77 个有
+- `ImageStitch` —— 25/77 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 25/77 个有
+- `MathExpression|pysssss` —— 25/77 个有
+- `Bjornulf_ShowInt` —— 23/77 个有
+- `Label (rgthree)` —— 11/77 个有
+- `RIFE VFI` —— 9/77 个有
+- `DapaoImageAspectRatioResizeNode` —— 8/77 个有
+- `ImpactInt` —— 8/77 个有
+- `SimpleMath+` —— 8/77 个有
+- `easy int` —— 8/77 个有
+- `Int` —— 7/77 个有
+- `孤海注释` —— 7/77 个有
+- `FlashVSRNode` —— 3/77 个有
+- `SaveImage` —— 3/77 个有
+- `Sleep` —— 3/77 个有
+- `CM_IntToFloat` —— 1/77 个有
+- `VideoInfoLoaded` —— 1/77 个有
+- `easy clearCacheAll` —— 1/77 个有
+- `easy positive` —— 1/77 个有
+- `llama_cpp_instruct_adv` —— 1/77 个有
+- `llama_cpp_parameters` —— 1/77 个有
 
 ## 典型参数
 

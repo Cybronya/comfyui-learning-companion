@@ -2,71 +2,105 @@
 name: unknown_workflow_video_sampler_vae_120
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.679
-common_nodes: [AddLabel, DownloadAndLoadFlorence2Model, Florence2Run, GetImageRangeFromBatch, LoadWanVideoT5TextEncoder, PreviewImage, ReCamMasterPoseVisualizer, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoReCamMasterCameraEmbed, WanVideoReCamMasterDefaultCamera, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WidgetToString]
+level: strong
+coverage: 0.52875
+common_nodes: [BasicScheduler, CR Float To Integer, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, MathExpression|pysssss, PathchSageAttentionKJ, PreviewImage, PrimitiveFloat, PrimitiveInt, ResizeImageMaskNode, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_VideoCombine, VisualizeSigmasKJ, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/1915621811168677889.json, 视频生成/图生视频/1911342097738465281.json, 视频生成/图生视频/1911957387463356417.json, 视频生成/图生视频/1912793596637184001.json]
+members: [视频生成/图生视频/2059201415213568002.json, 视频生成/文生视频/LTX2.3 Product Commercial LoRA 商业广告视频生成_2074728813149380610.json, 视频生成/文生视频/LTX2.3 PromptRelay Timeline 动漫视频生成工作流_2052005691182858242.json, 视频生成/文生视频/LTX2.3_PromptRelay+DramaBoxTTS 音画同步视频生成工作流_2056252444816003074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_120
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1915621811168677889.json、视频生成/图生视频/1911342097738465281.json、视频生成/图生视频/1911957387463356417.json、视频生成/图生视频/1912793596637184001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2059201415213568002.json、视频生成/文生视频/LTX2.3 Product Commercial LoRA 商业广告视频生成_2074728813149380610.json、视频生成/文生视频/LTX2.3 PromptRelay Timeline 动漫视频生成工作流_2052005691182858242.json、视频生成/文生视频/LTX2.3_PromptRelay+DramaBoxTTS 音画同步视频生成工作流_2056252444816003074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **可信度**：强结论
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AddLabel`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetImageRangeFromBatch`
-- `LoadWanVideoT5TextEncoder`
+- `BasicScheduler`
+- `CR Float To Integer`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `GetNode`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `ReCamMasterPoseVisualizer`
-- `VHS_LoadVideo`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `ResizeImageMaskNode`
+- `SamplerCustom`
+- `SetNode`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoReCamMasterCameraEmbed`
-- `WanVideoReCamMasterDefaultCamera`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `WidgetToString`
+- `VisualizeSigmasKJ`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/4 个有
-- `ImageResizeKJ` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `WanVideoVRAMManagement` —— 3/4 个有
-- `GetImageSizeAndCount` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `CLIPTextEncode` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
-- `WanVideoTextEmbedBridge` —— 1/4 个有
+- `Any Switch (rgthree)` —— 3/4 个有
+- `LTXVAudioVAEEncode` —— 3/4 个有
+- `LTXVAudioVAELoader` —— 3/4 个有
+- `LTXVEmptyLatentAudio` —— 3/4 个有
+- `PromptRelayEncode` —— 3/4 个有
+- `SetLatentNoiseMask` —— 3/4 个有
+- `SolidMask` —— 3/4 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `CLIPTextEncode` —— 2/4 个有
+- `CheckpointLoaderSimple` —— 2/4 个有
+- `LTX2SamplingPreviewOverride` —— 2/4 个有
+- `LoadImageFromPath` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `UNETLoader` —— 2/4 个有
+- `VHS_LoadAudio` —— 2/4 个有
+- `AILab_QwenVL_Advanced` —— 1/4 个有
+- `Any To Any` —— 1/4 个有
+- `Audio Duration (mtb)` —— 1/4 个有
+- `CFGGuider` —— 1/4 个有
+- `DramaBoxLoader` —— 1/4 个有
+- `DramaBoxTTS` —— 1/4 个有
+- `DramaBoxVoiceClone` —— 1/4 个有
+- `ImageScaleToMaxDimension` —— 1/4 个有
+- `LTX2_NAG` —— 1/4 个有
+- `LTXVLoopingSampler` —— 1/4 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 1/4 个有
+- `Load Lora` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `LoraLoader` —— 1/4 个有
+- `ManualSigmas` —— 1/4 个有
+- `Power Lora Loader (rgthree)` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `PromptRelayEncodeTimeline` —— 1/4 个有
+- `RandomNoise` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `StringReplace` —— 1/4 个有
+- `VAEEncodeTiled` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 505 | 505 - 505 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
+| LoRA 模型强度 | 0.9 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -74,4 +108,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 505，观测区间 505 - 505，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

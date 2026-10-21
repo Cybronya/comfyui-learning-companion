@@ -2,63 +2,67 @@
 name: unknown_workflow_sampler_unet_vae_80
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.841778
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+level: strong
+coverage: 0.783556
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/mini_max文生视频_2084531376707166209.json, 视频生成/文生视频/minimaxH3开源版文生视频(20step)_2092291766404870146.json, 视频生成/文生视频/minimaxH3开源版文生视频(8step加速)_2090102856362840065.json, 视频生成/文生视频/minimaxH3文生视频工作流（超级加速版V2）_2093311593462456321.json, 视频生成/文生视频/minimaxH3文生视频工作流（超级加速版）_2084925338584436737.json, 视频生成/文生视频/minimax_h3 4steps加速_2085757759953399809.json, 视频生成/文生视频/minimax_h3_lightx2v正式版 文生、图生、首尾帧加速_2085755880041181185.json, 视频生成/文生视频/一键工作流_2088139639545749506.json, 视频生成/文生视频/海螺H3 文生视频-提示词自动优化扩写_2086430630488924162.json]
+members: [图片生成/反推提示词/Qwen Image2.1文生图_2103745897376079874.json, 图片生成/文生图/(V2)-qwen-image2.1-文生图_2102577741005676545.json, 图片生成/文生图/QWEN IMAGE 2.1 文生图，带提示词增强_2103073606212341761.json, 图片生成/文生图/Qwen Image2.1 全能_2101873993291751425.json, 图片生成/文生图/Qwen Image2.1文生图_2101668523557875714.json, 图片生成/文生图/Qwen Image2.1文生图_2101858341764034561.json, 图片生成/文生图/Qwen Image2.1文生图_2103745897376079874.json, 图片生成/文生图/Qwen Image2.1文生图_2107782937193308162.json, 数字人/数字人/Qwen Image2.1 全能_2102320159447937026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_80
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/mini_max文生视频_2084531376707166209.json、视频生成/文生视频/minimaxH3开源版文生视频(20step)_2092291766404870146.json、视频生成/文生视频/minimaxH3开源版文生视频(8step加速)_2090102856362840065.json、视频生成/文生视频/minimaxH3文生视频工作流（超级加速版V2）_2093311593462456321.json、视频生成/文生视频/minimaxH3文生视频工作流（超级加速版）_2084925338584436737.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image2.1文生图_2103745897376079874.json、图片生成/文生图/(V2)-qwen-image2.1-文生图_2102577741005676545.json、图片生成/文生图/QWEN IMAGE 2.1 文生图，带提示词增强_2103073606212341761.json、图片生成/文生图/Qwen Image2.1 全能_2101873993291751425.json、图片生成/文生图/Qwen Image2.1文生图_2101668523557875714.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `EmptyLatentImage`
+- `KSampler`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 7/9 个有
-- `SaveVideo` —— 7/9 个有
-- `LoraLoaderModelOnly` —— 6/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/9 个有
-- `PathchSageAttentionKJ` —— 4/9 个有
-- `CR Text` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
-- `EasyCache` —— 2/9 个有
-- `Label (rgthree)` —— 2/9 个有
+- `ComfySwitchNode` —— 8/9 个有
+- `RegexExtract` —— 8/9 个有
+- `ResolutionSelector` —— 8/9 个有
+- `SaveImageAdvanced` —— 8/9 个有
+- `TextGenerate` —— 8/9 个有
+- `JsonExtractString` —— 7/9 个有
+- `PreviewAny` —— 7/9 个有
+- `StringCompare` —— 7/9 个有
+- `Text` —— 5/9 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `StringConcatenate` —— 3/9 个有
 - `LoadImage` —— 2/9 个有
-- `VHS_VideoCombine` —— 2/9 个有
-- `CLIPTextEncode` —— 1/9 个有
-- `ModelPatchTorchSettings` —— 1/9 个有
-- `RH_LLMAPI_Pro_Node` —— 1/9 个有
-- `SetReserveVRAM` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `PreviewImage` —— 2/9 个有
+- `PrimitiveBoolean` —— 2/9 个有
+- `RegexMatch` —— 2/9 个有
+- `ComfyMathExpression` —— 1/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `TextGenerateLTX2Prompt` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1088 | 9 | 98% |
+| 高度 | 1024 | 1024 - 1920 | 9 | 75% |
+| 采样步数 | 40 | 25 - 40 | 9 | 83% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
@@ -66,4 +70,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1088，9 个样本，取值集中（一致性 98%）
+- 高度 中位数 1024，观测区间 1024 - 1920，9 个样本
+- 采样步数 中位数 40，观测区间 25 - 40，9 个样本，取值集中（一致性 83%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

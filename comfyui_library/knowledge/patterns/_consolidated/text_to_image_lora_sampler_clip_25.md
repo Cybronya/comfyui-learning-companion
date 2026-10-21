@@ -1,90 +1,80 @@
 ---
 name: text_to_image_lora_sampler_clip_25
 type: Text To Image
-frequency: 17
+frequency: 20
 level: strong
-coverage: 0.875706
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.89655
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, YuE2Generate, YuE2Loader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/反推提示词/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json, 图片生成/反推提示词/Qwen Image 2.1参考生图标准版 参考图输入高质量出图_2105030116769353730.json, 图片生成/图生图/2102088091476512769.json, 图片生成/图生图/2102095974146596866.json, 图片生成/图生图/2102100461598892034.json, 图片生成/图生图/2102101983669866498.json, 图片生成/图生图/2102105087035400194.json, 图片生成/图生图/2102192876569583617.json, 图片生成/图生图/2102210466104832001.json, 图片生成/图生图/2102211983704678402.json, 图片生成/图生图/2102224257387425794.json, 图片生成/图生图/2102232264989036546.json, 图片生成/图生图/2102252322154962946.json, 图片生成/图生图/2102257321794695170.json, 图片生成/图生图/2102480198032781314.json, 图片生成/图生图/2102505314745667586.json, 图片生成/文生图/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json]
+missing: []
+members: [图片生成/文生图/YuE2改词翻唱_AI音乐改编_自定义歌词翻唱生成_2107324972157988866.json, 图片生成/文生图/YuE2改词翻唱_AI音乐改编_自定义歌词翻唱生成_2107438753290739713.json, 图片生成/文生图/YuE2翻唱原音改词_音频翻唱创作处理工具_2100745866029129730.json, 图片生成/文生图/YuE2翻唱原音改词_音频翻唱创作处理工具_2101457073044279297.json, 图片生成/文生图/YuE2翻唱原音改词_音频翻唱创作处理工具_2102593195208175617.json, 音频生成/音频生成/(自用品质)YuE2改词翻唱 AI音乐改编 自定义歌词翻唱生成_2107275656441712641.json, 音频生成/音频生成/YuE2 AI文生音乐流｜一句话生成专属背景音乐_2098738092327923714.json, 音频生成/音频生成/YuE2 AI翻唱工作流｜音频生成一键换声翻唱_2098736905457332225.json, 音频生成/音频生成/YuE2 AI翻唱工作流｜音频生成一键翻唱音色媲美原唱_2106255040204861441.json, 音频生成/音频生成/YuE2改词翻唱 AI音乐改编 自定义歌词翻唱生成_2098858058809171969.json, 音频生成/音频生成/YuE2改词翻唱不改曲 AI音乐改编音频生成_2110362171585683458.json, 音频生成/音频生成/YuE2文本生成音乐｜AI作曲一键出完整歌曲_2106572307480272898.json, 音频生成/音频生成/YuE2文生音乐 AI音频生成工作流音乐创作_2098714587007905793.json, 音频生成/音频生成/YuE2文生音乐 AI音频生成工作流音乐创作_2099031790064328705.json, 音频生成/音频生成/YuE2文生音乐工作流，音频生成文本到音乐创作工具_2107590188829601793.json, 音频生成/音频生成/YuE2文生音乐工作流｜文字描述直接生成歌曲_2098704608779657217.json, 音频生成/音频生成/YuE2文生音乐生成流｜一句话歌词直出完整歌曲_2108096959977451522.json, 音频生成/音频生成/YuE2文生音乐自用版｜输入文字一键生成原创音频，音乐创作好帮手_2107286323588587521.json, 音频生成/音频生成/YuE2翻唱原音改词 音频翻唱创作处理工具_2099953122658570241.json, 音频生成/音频生成/音频生成｜YUE2智能翻唱，原曲保留改歌词超简单_2099857335714926594.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json、图片生成/反推提示词/Qwen Image 2.1参考生图标准版 参考图输入高质量出图_2105030116769353730.json、图片生成/图生图/2102088091476512769.json、图片生成/图生图/2102095974146596866.json、图片生成/图生图/2102100461598892034.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/YuE2改词翻唱_AI音乐改编_自定义歌词翻唱生成_2107324972157988866.json、图片生成/文生图/YuE2改词翻唱_AI音乐改编_自定义歌词翻唱生成_2107438753290739713.json、图片生成/文生图/YuE2翻唱原音改词_音频翻唱创作处理工具_2100745866029129730.json、图片生成/文生图/YuE2翻唱原音改词_音频翻唱创作处理工具_2101457073044279297.json、图片生成/文生图/YuE2翻唱原音改词_音频翻唱创作处理工具_2102593195208175617.json…）
 
 - **类型**：Text To Image
-- **样本数**：17
+- **样本数**：20
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `YuE2Generate`
+- `YuE2Loader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 15/17 个有
-- `ComfySwitchNode` —— 14/17 个有
-- `ResolutionSelector` —— 14/17 个有
-- `PrimitiveStringMultiline` —— 9/17 个有
-- `SaveImageAdvanced` —— 9/17 个有
-- `BatchImagesNode` —— 8/17 个有
-- `TextGenerateLTX2Prompt` —— 8/17 个有
-- `CR Text` —— 5/17 个有
-- `easy showAnything` —— 5/17 个有
-- `PrimitiveBoolean` —— 4/17 个有
-- `PreviewAny` —— 3/17 个有
-- `TextGenerate` —— 3/17 个有
-- `JDCN_StringToList` —— 2/17 个有
-- `SeedNode` —— 2/17 个有
-- `StringConcatenate` —— 2/17 个有
-- `Textbox` —— 2/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/17 个有
-- `ImageConcatMulti` —— 1/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/17 个有
+- `YuE2SamplingConfig` —— 18/20 个有
+- `SaveAudio` —— 16/20 个有
+- `CR Prompt Text` —— 15/20 个有
+- `孤海注释` —— 15/20 个有
+- `YuE2CoverTranscribe` —— 12/20 个有
+- `LoadAudio` —— 11/20 个有
+- `PreviewAny` —— 11/20 个有
+- `EmptyImage` —— 5/20 个有
+- `PreviewImage` —— 5/20 个有
+- `SaveAudioAdvanced` —— 4/20 个有
+- `MusicPlayerWithLyricsNode` —— 3/20 个有
+- `VHS_LoadAudioUpload` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 17 | 100% |
-| 高度 | 80 | 80 - 80 | 17 | 100% |
-| 采样步数 | 4 | 4 - 4 | 17 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 17 | 100% |
-| 采样算法 | er_sde | - | 17 | 100% |
-| 调度器 | beta | - | 17 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| 采样步数 | 4 | 4 - 4 | 20 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 20 | 100% |
+| 采样算法 | er_sde | - | 20 | 100% |
+| 调度器 | beta | - | 20 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 宽度 | 80 | 80 - 80 | 20 | 100% |
+| 高度 | 80 | 80 - 80 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 21/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，17 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，17 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，17 个样本，一致性 100%
-- 调度器 最常用 beta，17 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 高发问题（17/17 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: ImageScaleByAspectRatio V2
+- 采样步数 中位数 4，观测区间 4 - 4，20 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，20 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，20 个样本，一致性 100%
+- 调度器 最常用 beta，20 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，20 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，20 个样本，取值集中（一致性 100%）
+- 高发问题（21/20 个样本）：Steps较低可能导致细节不足

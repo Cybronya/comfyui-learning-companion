@@ -2,70 +2,65 @@
 name: unknown_workflow_video_lora_sampler_220
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.869
-common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.563333
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, INTConstant, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SetNode, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
 problems: []
 missing: []
-members: [视频生成/图生视频/1990595971572785153.json, 视频生成/图生视频/1990339469129732098.json, 视频生成/图生视频/2037816256153264129.json, 视频生成/图生视频/1957825819450208257.json, 视频生成/图生视频/1988918406697070593.json, 视频生成/图生视频/2026180704601645057.json, 视频生成/文生视频/对口型数字人Infinite talk_2013508435370840066.json, 音频生成/音频生成/对口型数字人Infinite+Talk_1977882176555470849.json, 音频生成/音频生成/数字人对口型数字人最新Infinite Talk_1975402889982119938.json]
+members: [视频生成/图生视频/2005649937650118658.json, 视频生成/图生视频/2013437129388462081.json, 视频生成/图生视频/2007322836368625665.json, 视频生成/图生视频/2008463179042529282.json, 视频生成/图生视频/2005892831866744833.json, 视频生成/图生视频/2005667775693684738.json, 视频生成/图生视频/2007775909079683073.json, 视频生成/图生视频/2006221064216514562.json, 视频生成/图生视频/2005914209638645762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_220
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1990595971572785153.json、视频生成/图生视频/1990339469129732098.json、视频生成/图生视频/2037816256153264129.json、视频生成/图生视频/1957825819450208257.json、视频生成/图生视频/1988918406697070593.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2005649937650118658.json、视频生成/图生视频/2013437129388462081.json、视频生成/图生视频/2007322836368625665.json、视频生成/图生视频/2008463179042529282.json、视频生成/图生视频/2005892831866744833.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `SetNode`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 7/9 个有
-- `WanVideoBlockSwap` —— 7/9 个有
-- `GetImageSizeAndCount` —— 5/9 个有
-- `PreviewAny` —— 5/9 个有
-- `JWFloat` —— 4/9 个有
-- `MathExpression|pysssss` —— 4/9 个有
-- `Frames Slice` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `SoundFlow_GetLength` —— 2/9 个有
-- `AudioToFPS` —— 1/9 个有
-- `Bjornulf_ShowInt` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `LoadLynxResampler` —— 1/9 个有
-- `LynxEncodeFaceIP` —— 1/9 个有
-- `LynxInsightFaceCrop` —— 1/9 个有
-- `WanVideoAddLynxEmbeds` —— 1/9 个有
-- `WanVideoExtraModelSelect` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `ShowText|pysssss` —— 5/9 个有
+- `easy indexAnything` —— 5/9 个有
+- `easy promptLine` —— 5/9 个有
+- `ImageResizeKJv2` —— 3/9 个有
+- `JWInteger` —— 3/9 个有
+- `CR Prompt Text` —— 2/9 个有
+- `Text` —— 2/9 个有
+- `CM_IntToFloat` —— 1/9 个有
+- `CR Text` —— 1/9 个有
+- `easy mathInt` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 9 | 89% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -73,4 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，9 个样本，一致性 89%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

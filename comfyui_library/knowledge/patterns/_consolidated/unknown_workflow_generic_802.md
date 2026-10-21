@@ -3,35 +3,36 @@ name: unknown_workflow_generic_802
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5835
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_custom, SaveAudio, easy showAnything]
+coverage: 0.812
+common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Gemini3+Suno5.5自定义音色生成音乐(配合suno.md手册使用)_2058500139739860994.json, 音频生成/音频生成/Suno 4.5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1968716288388419585.json]
+members: [图片生成/文生图/图片拼接对比_2081672606285131777.json, 视频生成/图生视频/2003992526103191553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_802
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Gemini3+Suno5.5自定义音色生成音乐(配合suno.md手册使用)_2058500139739860994.json、音频生成/音频生成/Suno 4.5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1968716288388419585.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图片拼接对比_2081672606285131777.json、视频生成/图生视频/2003992526103191553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_custom`
-- `SaveAudio`
-- `easy showAnything`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_LLm_API` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

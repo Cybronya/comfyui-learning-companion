@@ -1,96 +1,93 @@
 ---
 name: text_to_image_lora_sampler_clip_102
 type: Text To Image
-frequency: 9
-level: strong
-coverage: 0.883111
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 10
+level: weak
+coverage: 0.8745
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMaxH3参考图生视频｜角色一致性视频生成_2095091404421820417.json, 视频生成/图生视频/Minimax H3冻结时间360环绕｜首尾画面循环闭环｜HyperFlow 8步LoRA加持_2104830891699822594.json, 视频生成/图生视频/Minimax-H3-图生视频（Lightx2v加速）_2086209989152174082.json, 视频生成/图生视频/MinimaxH3lightx2vlora图生视频工作流多重提速ENG加速ENG4步海螺ENG_2087126062730924033.json, 视频生成/图生视频/MinimaxH3故事板九宫格分镜-4步加速多参考图人物场景特效_2087363609331589121.json, 视频生成/图生视频/MinimaxH3海螺4步lightx2v加速lora-多重提速转场运镜图生视频_2087374035620556802.json, 视频生成/图生视频/lightx2v不同版加速Lora测试｜Minimax H3图生视频对比_2096727729675788289.json, 视频生成/图生视频/参考图生视频生成｜MiniMaxH3高质量出片工作流_2095049456667414529.json, 视频生成/文生视频/MiniMax h3 4步lora2加速版｜文生图生视频直出_2092366496205987842.json]
+members: [图片生成/文生图/Krea2-双采样latent放大直出4K超清-自动扩写提示词_2075861775614038018.json, 图片生成/文生图/Krea2-双采样latent放大直出4K超清_2075937369521475586.json, 图片生成/文生图/Krea2-手动提示词+seedVr2超清8K放大_2071971991279718401.json, 图片生成/文生图/Krea2-提示词自动扩写（汉服电影）+seedVr2超清8K放大_2072005157788930050.json, 图片生成/文生图/Krea2-提示词自动扩写（通用）+seedVr2超清8K放大_2071983007401074690.json, 图片生成/文生图/Krea2-深度控制洗图+二次采样极致细节-controlnet图生图-二采直出4K_2075582967837192194.json, 图片生成/文生图/Krea2深度控制+双重调节细节加强文生图2K版V2_2074865088221237249.json, 图片生成/文生图/Krea2深度控制人物+节点51和70自定义人物lora+全节点注释_2082965427004723202.json, 图片生成/文生图/krea2-深度控制洗图-图生图-动作迁移-controlnet-画风互转_2075498402560954369.json, 图片生成/文生图/（贞贞版）Krea2深度控制+双重调节细节加强文生图2K版V2_2074766270821654529.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_102
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3参考图生视频｜角色一致性视频生成_2095091404421820417.json、视频生成/图生视频/Minimax H3冻结时间360环绕｜首尾画面循环闭环｜HyperFlow 8步LoRA加持_2104830891699822594.json、视频生成/图生视频/Minimax-H3-图生视频（Lightx2v加速）_2086209989152174082.json、视频生成/图生视频/MinimaxH3lightx2vlora图生视频工作流多重提速ENG加速ENG4步海螺ENG_2087126062730924033.json、视频生成/图生视频/MinimaxH3故事板九宫格分镜-4步加速多参考图人物场景特效_2087363609331589121.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Krea2-双采样latent放大直出4K超清-自动扩写提示词_2075861775614038018.json、图片生成/文生图/Krea2-双采样latent放大直出4K超清_2075937369521475586.json、图片生成/文生图/Krea2-手动提示词+seedVr2超清8K放大_2071971991279718401.json、图片生成/文生图/Krea2-提示词自动扩写（汉服电影）+seedVr2超清8K放大_2072005157788930050.json、图片生成/文生图/Krea2-提示词自动扩写（通用）+seedVr2超清8K放大_2071983007401074690.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：10
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 7/9 个有
-- `PrimitiveFloat` —— 7/9 个有
-- `ResolutionSelector` —— 7/9 个有
-- `CreateVideo` —— 6/9 个有
-- `SaveVideo` —— 6/9 个有
-- `MiniMaxH3ImageToVideo` —— 5/9 个有
-- `ModelAttentionBackend` —— 5/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
-- `VHS_VideoCombine` —— 4/9 个有
-- `MiniMaxH3Easy` —— 2/9 个有
-- `MiniMaxH3EasyLoader` —— 2/9 个有
-- `MiniMaxH3EasyOutput` —— 2/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/9 个有
-- `PrimitiveInt` —— 2/9 个有
-- `RTXVideoSuperResolution` —— 2/9 个有
-- `TextInput_` —— 2/9 个有
-- `AddLabel` —— 1/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `ImageConcatMulti` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `RH_LLMAPI_NODE` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `easy showAnything` —— 8/10 个有
+- `SeedVR2LoadDiTModel` —— 7/10 个有
+- `SeedVR2LoadVAEModel` —— 7/10 个有
+- `SeedVR2VideoUpscaler` —— 7/10 个有
+- `easy int` —— 7/10 个有
+- `CR Text` —— 6/10 个有
+- `ConditioningKrea2Rebalance` —— 6/10 个有
+- `LatentUpscaleBy` —— 6/10 个有
+- `CR Prompt Text` —— 5/10 个有
+- `Krea2ControlApply` —— 5/10 个有
+- `Krea2ControlImageEncode` —— 5/10 个有
+- `Krea2ControlLoRALoader` —— 5/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
+- `LoadImage` —— 5/10 个有
+- `PreviewImage` —— 5/10 个有
+- `Qwen3_VQA` —— 5/10 个有
+- `AIO_Preprocessor` —— 3/10 个有
+- `DisTorchPurgeVRAMV2` —— 3/10 个有
+- `Float` —— 3/10 个有
+- `ImageConcanate` —— 3/10 个有
+- `RHLLMChatNode` —— 3/10 个有
+- `TTResolutionSelector` —— 3/10 个有
+- `TextConcat` —— 3/10 个有
+- `DepthAnythingV2Preprocessor` —— 2/10 个有
+- `DuckHideNode` —— 2/10 个有
+- `JjkText` —— 1/10 个有
+- `solarL_SaveImagesToZip` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 8 | 4 - 8 | 10 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 10 | 22% |
+| 采样算法 | er_sde | - | 10 | 70% |
+| 调度器 | simple | - | 10 | 90% |
+| 重绘幅度 | 1 | 0.3 - 1 | 10 | 62% |
+| 宽度 | 1024 | 80 - 1080 | 10 | 57% |
+| 高度 | 1536 | 80 - 1920 | 10 | 44% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，10 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，10 个样本，取值分散，一致性仅 22%
+- 采样算法 最常用 er_sde，10 个样本，一致性 70%
+- 调度器 最常用 simple，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，10 个样本
+- 宽度 中位数 1024，观测区间 80 - 1080，10 个样本
+- 高度 中位数 1536，观测区间 80 - 1920，10 个样本，取值分散，一致性仅 44%
+- 高发问题（17/10 个样本）：Steps较低可能导致细节不足

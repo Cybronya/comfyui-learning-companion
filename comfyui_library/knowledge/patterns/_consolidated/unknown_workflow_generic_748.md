@@ -3,33 +3,37 @@ name: unknown_workflow_generic_748
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.732
-common_nodes: [JjkText, RH_Veo3_Text2Video, SaveVideo]
+coverage: 0.679
+common_nodes: [BagelImageEdit, BagelModelLoader, BagelTextToImage, Fast Groups Muter (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json, 视频生成/文生视频/全能视频+V3.1文生视频_2036423809758142465.json]
+members: [图片生成/文生图/1927010906134237186.json, 图片生成/文生图/1927255252204998657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_748
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json、视频生成/文生视频/全能视频+V3.1文生视频_2036423809758142465.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1927010906134237186.json、图片生成/文生图/1927255252204998657.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `RH_Veo3_Text2Video`
-- `SaveVideo`
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `BagelTextToImage`
+- `Fast Groups Muter (rgthree)`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `TextCombinerTwo` —— 1/2 个有
+- `BagelImageUnderstanding` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `TextBox` —— 1/2 个有
 
 ## 典型参数
 

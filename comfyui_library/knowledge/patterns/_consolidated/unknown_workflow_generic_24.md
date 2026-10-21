@@ -1,42 +1,33 @@
 ---
 name: unknown_workflow_generic_24
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.928529
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.926
+common_nodes: [RH_Sora2_T2V, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TS 2.5 多音字语音克隆 - 多音字精准克隆 - 自然语音合成_2090680568408272898.json, 音频生成/音频生成/IndexTTS 2.5 声音克隆_2088126566806151169.json, 音频生成/音频生成/IndexTTS 2.5-多音字语音克隆_2094747190412529666.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（单素材）_2088833537683312641.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089775704459276290.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089967983820099585.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(日文版)_2089788413020037121.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(英文版)_2089775716555640834.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆多发音支持(中文版)_2090016341951598594.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆多发音支持(中文版)_2090064407945629698.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2087829142862651394.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2087829153625231362.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2089188391467438081.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2089196373471227906.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2094792884804476930.json, 音频生成/音频生成/IndexTTS2.5音频向量克隆语音克隆_2089230919512186882.json, 音频生成/音频生成/语音克隆IndexTTS 2.5情感文本控制_2106003808852729858.json]
+members: [视频生成/文生视频/1974241273257267201.json, 视频生成/文生视频/1977225512030478337.json, 视频生成/文生视频/1977617170953850882.json, 视频生成/文生视频/1977633451811721218.json, 视频生成/文生视频/1978017467010351105.json, 视频生成/文生视频/RH+全能视频S+Text+to+Video_1983480637065764866.json, 视频生成/文生视频/RH+全能视频S+Text+to+Video_1983729493338726402.json, 视频生成/文生视频/RH+全能视频S文生视频_1983346767116824578.json, 视频生成/文生视频/Soro2 文生视频_1990248192983879682.json, 视频生成/文生视频/Soro2 文生视频_1990443744925290498.json, 视频生成/文生视频/Soro2 文生视频（创意表达）_1989594097897885697.json, 视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json, 视频生成/文生视频/全能视频S文生视频_1987477979272032258.json, 视频生成/文生视频/全能视频S文生视频_2001107406144892930.json, 视频生成/文生视频/全能视频S文生视频（横版_竖版），无水印，速度快_1986026989498892290.json, 视频生成/文生视频/全能视频S梭罗2文生视频_2002992476006805505.json, 视频生成/文生视频/全能视频S视频生成（新版）_1983079288096366594.json, 视频生成/文生视频/最简单的文生视频_1988203879588347906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_24
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（音频生成/音频生成/Index TS 2.5 多音字语音克隆 - 多音字精准克隆 - 自然语音合成_2090680568408272898.json、音频生成/音频生成/IndexTTS 2.5 声音克隆_2088126566806151169.json、音频生成/音频生成/IndexTTS 2.5-多音字语音克隆_2094747190412529666.json、音频生成/音频生成/IndexTTS 2.5声音克隆（单素材）_2088833537683312641.json、音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089775704459276290.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/文生视频/1974241273257267201.json、视频生成/文生视频/1977225512030478337.json、视频生成/文生视频/1977617170953850882.json、视频生成/文生视频/1977633451811721218.json、视频生成/文生视频/1978017467010351105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+全部 18 个 workflow 都包含：
+- `RH_Sora2_T2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_Pronunciation` —— 9/17 个有
-- `T8_IndexTTS25_EmotionControl` —— 8/17 个有
-- `孤海注释` —— 6/17 个有
-- `Float` —— 5/17 个有
-- `T8_IndexTTS25_SamplingConfig` —— 5/17 个有
-- `AppParams` —— 1/17 个有
-- `easy showAnything` —— 1/17 个有
+- `RH_Translator` —— 3/18 个有
 
 ## 典型参数
 

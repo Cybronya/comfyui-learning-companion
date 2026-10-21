@@ -2,52 +2,52 @@
 name: unknown_workflow_sampler_vae_35
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.9
-common_nodes: [CLIPLoader, CreateVideo, LoadImage, Lynx_Encode, Lynx_KSampler, Lynx_Model, SaveVideo, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.8904
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
 problems: []
-missing: [CR Prompt Text]
-members: [视频生成/图生视频/1972855654023143425.json, 视频生成/图生视频/1975547820323246081.json, 视频生成/图生视频/1972500268996882433.json, 视频生成/文生视频/1972855654023143425.json, 视频生成/文生视频/1975547820323246081.json]
+missing: []
+members: [视频生成/图生视频/MiniMax H3-TVC成片_2085258608484376578.json, 视频生成/图生视频/MiniMax H3-TVC电商视频短片（自动写提示词）_2085616604645253121.json, 视频生成/图生视频/MiniMax H3-拼贴画_2085258588230086657.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-多图参考生视频_2084476749886353409.json, 视频生成/图生视频/MiniMax-H3-多图参考生视频_2084575868277575681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_35
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1972855654023143425.json、视频生成/图生视频/1975547820323246081.json、视频生成/图生视频/1972500268996882433.json、视频生成/文生视频/1972855654023143425.json、视频生成/文生视频/1975547820323246081.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3-TVC成片_2085258608484376578.json、视频生成/图生视频/MiniMax H3-TVC电商视频短片（自动写提示词）_2085616604645253121.json、视频生成/图生视频/MiniMax H3-拼贴画_2085258588230086657.json、视频生成/图生视频/MiniMax+H3+FL2VA开源版-多图参考生视频_2084476749886353409.json、视频生成/图生视频/MiniMax-H3-多图参考生视频_2084575868277575681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
 - `CreateVideo`
 - `LoadImage`
-- `Lynx_Encode`
-- `Lynx_KSampler`
-- `Lynx_Model`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3Ref2VAEncode`
+- `RHMiniMaxH3Ref2VAImageReference`
+- `RHMiniMaxH3Ref2VAModelLoader`
+- `RHMiniMaxH3Ref2VATarget`
+- `RHMiniMaxH3Ref2VATextEncoderLoader`
+- `RHMiniMaxH3Ref2VAVAELoader`
 - `SaveVideo`
-- `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/5 个有
-- `ImageConcanate` —— 4/5 个有
-- `JWInteger` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `llama_cpp_instruct_adv` —— 3/5 个有
+- `llama_cpp_model_loader` —— 3/5 个有
+- `llama_cpp_parameters` —— 3/5 个有
+- `CR Prompt Text` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 5 | 100% |
-| 采样算法 | 121 | 81 - 121 | 5 | 86% |
-| 调度器 | 1 | 1 - 1 | 5 | 100% |
-| 重绘幅度 | 2 | 2 - 2 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -55,10 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 121，观测区间 81 - 121，5 个样本，取值集中（一致性 86%）
-- 调度器 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 2，观测区间 2 - 2，5 个样本，取值集中（一致性 100%）
-- 风险：重绘幅度 观测到 2，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

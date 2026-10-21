@@ -1,72 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_124
 type: Unknown Workflow
-frequency: 6
-level: weak
-coverage: 0.758
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+frequency: 7
+level: strong
+coverage: 0.787714
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/Ace Step 1.5xl turbo文生音乐工作流_2090785357209100290.json, 音频生成/音频生成/acestep_v1.5_xl_BASE_音乐生成_2042893593232285698.json, 音频生成/音频生成/acestep_v1.5_xl_SFT_音乐生成_2042899033756274690.json, 音频生成/音频生成/acestep_v1.5_xl_turbo 音乐生成_2016715807329361921.json, 音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成工作流_2042845013394067458.json, 音频生成/音频生成/歌曲创作_2042845860060471298.json]
+members: [音频生成/音频生成/【开源】MiniMax_Music3 音乐生成_2088147284696584193.json, 音频生成/音频生成/【遇见AI】Minimax Music 3开源音乐模型，最长支持5分钟_2088855416225755138.json, 音频生成/音频生成/文字生歌曲 MiniMax Music_2090725556378750978.json, 音频生成/音频生成/海螺Minimax Music3_2088170981381730305.json, 音频生成/音频生成/真·最强开源音乐生成 minimaxmusic  suno之下第一人_2089988506549571586.json, 音频生成/音频生成/音乐生成 海螺 Music 3_2088110025138069505.json, 音频生成/音频生成/音乐生成 海螺 Music 3_2088981046997118977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_124
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Ace Step 1.5xl turbo文生音乐工作流_2090785357209100290.json、音频生成/音频生成/acestep_v1.5_xl_BASE_音乐生成_2042893593232285698.json、音频生成/音频生成/acestep_v1.5_xl_SFT_音乐生成_2042899033756274690.json、音频生成/音频生成/acestep_v1.5_xl_turbo 音乐生成_2016715807329361921.json、音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成工作流_2042845013394067458.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/【开源】MiniMax_Music3 音乐生成_2088147284696584193.json、音频生成/音频生成/【遇见AI】Minimax Music 3开源音乐模型，最长支持5分钟_2088855416225755138.json、音频生成/音频生成/文字生歌曲 MiniMax Music_2090725556378750978.json、音频生成/音频生成/海螺Minimax Music3_2088170981381730305.json、音频生成/音频生成/真·最强开源音乐生成 minimaxmusic  suno之下第一人_2089988506549571586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
+- `EmptyMiniMaxMusic3LatentAudio`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `TextEncodeAceStepAudio1.5`
+- `MiniMaxMusic3TextEncode`
+- `SaveAudioAdvanced`
+- `SeedNode`
 - `UNETLoader`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 5/6 个有
-- `LoadImage` —— 4/6 个有
-- `PrimitiveFloat` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `SaveAudioAdvanced` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `ComfySwitchNode` —— 4/7 个有
+- `VAEDecodeAudioTiled` —— 4/7 个有
+- `Float` —— 3/7 个有
+- `PreviewAudio` —— 3/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `JjkText` —— 2/7 个有
+- `LoadImage` —— 2/7 个有
+- `Text` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 6 | 10% |
-| Prompt 约束强度(CFG) | 1 | 1 - 7 | 6 | 8% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 30 | 30 - 30 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
-| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 7/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，6 个样本，取值分散，一致性仅 10%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 7，6 个样本，取值分散，一致性仅 8%
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode
-- 高发问题（4/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 30，观测区间 30 - 30，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：发现KSampler但没有VAEDecode

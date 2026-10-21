@@ -1,72 +1,104 @@
 ---
 name: unknown_workflow_lora_sampler_clip_25
 type: Unknown Workflow
-frequency: 7
-level: weak
-coverage: 0.985
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: strong
+coverage: 0.8359
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, VAEDecodeTiled]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan2.1_alpha_t2v_14B.json, 视频生成/文生视频/1973317342270722050.json, 视频生成/文生视频/1973643031427551234.json, 视频生成/文生视频/1973778662703108098.json, 视频生成/文生视频/1978258359084310529.json, 视频生成/文生视频/1978705872639692801.json, 视频生成/文生视频/小工具 wan-alpha透明图层_2066720353575251968.json]
+members: [视频生成/图生视频/2058101725361430530.json, 视频生成/图生视频/2054789125802340354.json, 视频生成/图生视频/2054780723667718145.json, 视频生成/图生视频/2058082401418563586.json, 视频生成/图生视频/2058097242602557441.json, 视频生成/图生视频/2058053097523601410.json, 视频生成/图生视频/2058106663583969282.json, 视频生成/图生视频/2058106651525345282.json, 视频生成/图生视频/2057761252751003649.json, 视频生成/图生视频/2058134319910187009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan2.1_alpha_t2v_14B.json、视频生成/文生视频/1973317342270722050.json、视频生成/文生视频/1973643031427551234.json、视频生成/文生视频/1973778662703108098.json、视频生成/文生视频/1978258359084310529.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2058101725361430530.json、视频生成/图生视频/2054789125802340354.json、视频生成/图生视频/2054780723667718145.json、视频生成/图生视频/2058082401418563586.json、视频生成/图生视频/2058097242602557441.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSampler`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RandomNoise`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageToMask` —— 6/7 个有
-- `InvertMask` —— 5/7 个有
-- `JoinImageWithAlpha` —— 5/7 个有
-- `SaveVideoRGBA` —— 4/7 个有
-- `SaveImage` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `SavePNGZIP_and_Preview_RGBA_AnimatedWEBP` —— 2/7 个有
-- `INTConstant` —— 1/7 个有
-- `ImageCompositeMasked` —— 1/7 个有
-- `SaveAnimatedWEBP` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
+- `KSamplerSelect` —— 9/10 个有
+- `LTXVAudioVAEDecode` —— 9/10 个有
+- `LTXVLatentUpsampler` —— 9/10 个有
+- `LatentUpscaleModelLoader` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `LTXVImgToVideoInplace` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `LTXVImgToVideoInplaceKJ` —— 7/10 个有
+- `PrimitiveBoolean` —— 7/10 个有
+- `ResizeImagesByLongerEdge` —— 7/10 个有
+- `FloatConstant` —— 4/10 个有
+- `LTXVEmptyLatentAudio` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
+- `PreviewAny` —— 4/10 个有
+- `Qwen3ASRLoader_DFT` —— 4/10 个有
+- `Qwen3ASRTranscribe_DFT` —— 4/10 个有
+- `ResizeImageMaskNode` —— 4/10 个有
+- `SimpleMath+` —— 4/10 个有
+- `StringConcatenate` —— 4/10 个有
+- `easy cleanGpuUsed` —— 3/10 个有
+- `ImageResizeKJv2` —— 2/10 个有
+- `LTXVChunkFeedForward` —— 2/10 个有
+- `ModelPatchTorchSettings` —— 2/10 个有
+- `PathchSageAttentionKJ` —— 2/10 个有
+- `RH_LLMAPI_Pro_Node` —— 2/10 个有
+- `TextCombinerTwo` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `easy showAnything` —— 2/10 个有
+- `GetImageSize` —— 1/10 个有
+- `LTXVAddGuide` —— 1/10 个有
+- `SamplerEulerAncestral` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 20 | 7 | 19% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 7 | 0% |
-| 采样算法 | uni_pc | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 97 | 97 - 97 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 20，7 个样本，取值分散，一致性仅 19%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，7 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 uni_pc，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（6/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

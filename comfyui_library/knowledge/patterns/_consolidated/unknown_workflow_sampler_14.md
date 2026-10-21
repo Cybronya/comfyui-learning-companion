@@ -3,38 +3,39 @@ name: unknown_workflow_sampler_14
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.667
-common_nodes: [GetImageSizeAndCount, ImageScaleDownToSize, ImageStitch, LoadImage, PreviewImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.6875
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, PDIMAGE_LongerSize, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
-missing: [RunningHub USO Loader, RunningHub USO Sampler, Text Multiline]
-members: [图片生成/文生图/1962876203176800258.json, 图片生成/文生图/1962897927087828994.json, 图片生成/文生图/1986739065456422913.json, 图片生成/文生图/1986739671420104706.json]
+missing: [RunningHub USO Loader, RunningHub USO Sampler, CR Prompt Text]
+members: [图片生成/文生图/1962486590113202178.json, 图片生成/文生图/1962487178385338370.json, 图片生成/文生图/1962782611250757633.json, 图片生成/文生图/1962802231387009026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1962876203176800258.json、图片生成/文生图/1962897927087828994.json、图片生成/文生图/1986739065456422913.json、图片生成/文生图/1986739671420104706.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1962486590113202178.json、图片生成/文生图/1962487178385338370.json、图片生成/文生图/1962782611250757633.json、图片生成/文生图/1962802231387009026.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageScaleDownToSize`
-- `ImageStitch`
+- `CR Prompt Text`
+- `ImageConcanate`
 - `LoadImage`
-- `PreviewImage`
+- `PDIMAGE_LongerSize`
 - `RunningHub USO Loader`
 - `RunningHub USO Sampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
+- `JWInteger` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `ImageGetSize` —— 1/4 个有
+- `ResizeLongestToNode` —— 1/4 个有
 
 ## 典型参数
 
@@ -46,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub USO Loader、RunningHub USO Sampler、Text Multiline
+- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub USO Loader、RunningHub USO Sampler、CR Prompt Text

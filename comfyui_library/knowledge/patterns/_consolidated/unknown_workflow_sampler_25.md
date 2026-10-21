@@ -3,41 +3,34 @@ name: unknown_workflow_sampler_25
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.886
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio]
+coverage: 0.833333
+common_nodes: [SaveAudio, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2长文本音频-克隆音色带情感_2052017251003445249.json, 音频生成/音频生成/Qwen3-tts声音克隆_2051922867775918081.json, 音频生成/音频生成/韩老魔来当配音员辣-声音克隆_2012083044638789633.json]
+members: [音频生成/音频生成/AI歌曲生成_1950367419039662082.json, 音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json, 音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2长文本音频-克隆音色带情感_2052017251003445249.json、音频生成/音频生成/Qwen3-tts声音克隆_2051922867775918081.json、音频生成/音频生成/韩老魔来当配音员辣-声音克隆_2012083044638789633.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI歌曲生成_1950367419039662082.json、音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json、音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
 - `SaveAudio`
+- `SongGeneration_Sampler`
+- `SongGeneration_Stage1`
+- `SongGeneration_Stage2`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `Qwen3TTSModelLoader` —— 2/3 个有
-- `Qwen3TTSVoiceClone` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `IndexTTS2Run` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

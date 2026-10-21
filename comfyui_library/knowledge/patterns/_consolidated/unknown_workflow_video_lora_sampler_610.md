@@ -3,63 +3,56 @@ name: unknown_workflow_video_lora_sampler_610
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.460667
-common_nodes: [Any Switch (rgthree), AssembleLoopFrames, BatchCount+, BatchResizeWithLanczos, ColorMatch, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrepareLoopFrames, PrimitiveStringMultiline, RH_Captioner, RIFE VFI, RIFE_FPS_Resample, RollFrames, SetNode, StringConcatenate, TrimBatchEnds, UnrollFrames, VHS_VideoCombine, WanVideoAddExtraLatent, WanVideoDecode, WanVideoEasyCache, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, mxSlider]
+coverage: 0.942667
+common_nodes: [ComfyNumberConvert, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Live Wallpaper Loop 动态壁纸循环_2102556512743944193.json, 视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2008809599616421889.json, 视频生成/图生视频/2012455177055379458.json]
+members: [视频生成/图生视频/2059078929838854146.json, 视频生成/图生视频/2059921141237641218.json, 视频生成/图生视频/longcatAvatar1.5 图片数字人v1_2106246745930944513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_610
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Live Wallpaper Loop 动态壁纸循环_2102556512743944193.json、视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2008809599616421889.json、视频生成/图生视频/2012455177055379458.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2059078929838854146.json、视频生成/图生视频/2059921141237641218.json、视频生成/图生视频/longcatAvatar1.5 图片数字人v1_2106246745930944513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AssembleLoopFrames`
-- `BatchCount+`
-- `BatchResizeWithLanczos`
-- `ColorMatch`
-- `GetNode`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyNumberConvert`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PrepareLoopFrames`
-- `PrimitiveStringMultiline`
-- `RH_Captioner`
-- `RIFE VFI`
-- `RIFE_FPS_Resample`
-- `RollFrames`
-- `SetNode`
-- `StringConcatenate`
-- `TrimBatchEnds`
-- `UnrollFrames`
+- `LongCatAvatarWhisperEmbeds`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
-- `WanVideoAddExtraLatent`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoExperimentalArgs`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `mxSlider`
+- `WhisperModelLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Float` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `FloatConstant` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 

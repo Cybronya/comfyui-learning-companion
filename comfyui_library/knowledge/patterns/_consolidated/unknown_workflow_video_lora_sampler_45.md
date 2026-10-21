@@ -1,74 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_45
 type: Unknown Workflow
-frequency: 21
-level: moderate
-coverage: 0.957286
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 22
+level: strong
+coverage: 0.734227
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text Concatenate, Florence2ModelLoader, Florence2Run, INTConstant, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1988149592183234562.json, 视频生成/图生视频/1990298374261927937.json, 视频生成/图生视频/2042473229025021954.json, 视频生成/图生视频/2038129720084140034.json, 视频生成/图生视频/2039686638024003585.json, 视频生成/图生视频/2038259769424744450.json, 视频生成/图生视频/2043221914818191361.json, 视频生成/图生视频/infinitetalk-workflow_2101559918137536513.json, 视频生成/图生视频/1958721721454981121.json, 视频生成/图生视频/1993155666919571457.json, 视频生成/图生视频/infinitetalk单人_1957826962256658434.json, 视频生成/图生视频/2044669894783934465.json, 视频生成/图生视频/1983851965690056706.json, 视频生成/图生视频/1987800864440168449.json, 视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json, 视频生成/图生视频/1961786018880012290.json, 视频生成/图生视频/2080575708149145601.json, 视频生成/图生视频/1968146725170982914.json, 视频生成/图生视频/1999412008917364738.json, 视频生成/图生视频/2054517632375771138.json, 视频生成/图生视频/2044453798432739329.json]
+members: [视频生成/图生视频/1930497096028426242.json, 视频生成/图生视频/1931553417045409794.json, 视频生成/图生视频/1927308974876692481.json, 视频生成/图生视频/1929861352612073473.json, 视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json, 视频生成/图生视频/2043240803773980674.json, 视频生成/图生视频/2043244111414697986.json, 视频生成/图生视频/1929565877887471617.json, 视频生成/图生视频/2007615510288011266.json, 视频生成/图生视频/2048597647006633986.json, 视频生成/图生视频/2048657356048834561.json, 视频生成/图生视频/1978647980314136577.json, 视频生成/图生视频/1929869489117237249.json, 视频生成/图生视频/1996871652937977858.json, 视频生成/图生视频/1929847163700854786.json, 视频生成/图生视频/1930122679813095426.json, 视频生成/图生视频/电影级别运镜图生视频合集_1930199609451384834.json, 视频生成/图生视频/1937550595018375170.json, 视频生成/图生视频/1980239592316186626.json, 视频生成/图生视频/1989638202606669825.json, 视频生成/图生视频/1934983961166684161.json, 视频生成/文生视频/1951765085700214786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_45
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/1988149592183234562.json、视频生成/图生视频/1990298374261927937.json、视频生成/图生视频/2042473229025021954.json、视频生成/图生视频/2038129720084140034.json、视频生成/图生视频/2039686638024003585.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/1930497096028426242.json、视频生成/图生视频/1931553417045409794.json、视频生成/图生视频/1927308974876692481.json、视频生成/图生视频/1929861352612073473.json、视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `AudioSeparation`
+全部 22 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `CR Text Concatenate`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
+- `WanVideoTeaCacheKJ`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 20/21 个有
-- `RH_GetAudioDuration` —— 20/21 个有
-- `WanVideoTorchCompileSettings` —— 20/21 个有
-- `easy showAnything` —— 20/21 个有
-- `Int` —— 19/21 个有
-- `ToInt` —— 19/21 个有
-- `AudioCrop` —— 17/21 个有
-- `PreviewImage` —— 2/21 个有
-- `SoundFlow_TrimAudio` —— 2/21 个有
-- `Audio Duration (mtb)` —— 1/21 个有
-- `AudioCombine` —— 1/21 个有
-- `CR SDXL Aspect Ratio` —— 1/21 个有
-- `DF_Image_scale_to_side` —— 1/21 个有
-- `Display Int (rgthree)` —— 1/21 个有
-- `ImageBatchMulti` —— 1/21 个有
-- `ImageFromBatch` —— 1/21 个有
-- `JWInteger` —— 1/21 个有
-- `JjkText` —— 1/21 个有
-- `PreviewAudio` —— 1/21 个有
-- `Text` —— 1/21 个有
-- `kkGetImage` —— 1/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 19/22 个有
+- `PrimitiveString` —— 19/22 个有
+- `VHS_LoadVideo` —— 19/22 个有
+- `CR Prompt Text` —— 13/22 个有
+- `ShowText|pysssss` —— 10/22 个有
+- `easy getNode` —— 9/22 个有
+- `easy setNode` —— 9/22 个有
+- `CR Text` —— 6/22 个有
+- `Primitive integer [Crystools]` —— 1/22 个有
+- `easy anythingIndexSwitch` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 22 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 22 | 100% |
+| 采样算法 | uni_pc | - | 22 | 100% |
+| 调度器 | simple | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
 
 ## 常见问题
 
@@ -76,4 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，22 个样本，一致性 100%
+- 调度器 最常用 simple，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）

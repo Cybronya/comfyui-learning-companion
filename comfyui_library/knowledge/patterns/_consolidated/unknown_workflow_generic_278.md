@@ -3,38 +3,33 @@ name: unknown_workflow_generic_278
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8172
-common_nodes: [CR Text, SaveAudio, Text Multiline]
+coverage: 0.96
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json, 音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json, 音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json]
+members: [图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json, 音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_278
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json、音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json、音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json、音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
 - `SaveAudio`
-- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `Qwen3TTSModelLoader` —— 4/5 个有
-- `Qwen3TTSVoiceClone` —— 3/5 个有
-- `Qwen3TTSVoiceDesign` —— 3/5 个有
-- `easy seed` —— 3/5 个有
-- `SaveAudioMP3` —— 2/5 个有
-- `FishS2VoiceCloneTTS` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,53 +3,60 @@ name: unknown_workflow_video_sampler_unet_60
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6828
-common_nodes: [BasicGuider, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VHS_VideoCombine]
+coverage: 0.5048
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, GetNode, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax-H3图生视频工作流.json, 视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json, 视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json, 视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json, 视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json]
+members: [视频生成/图生视频/12号特工：minimaxH3四步加速双时钟+T8节点+图生视频+多参_2086057128527224833.json, 视频生成/图生视频/MiniMax H3全能参考（t8加速LORA）_2086006748221108225.json, 视频生成/图生视频/MiniMax H3文生视频+首尾帧生视频（t8加速LORA）_2086007059350380546.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_60
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3图生视频工作流.json、视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json、视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json、视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json、视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/12号特工：minimaxH3四步加速双时钟+T8节点+图生视频+多参_2086057128527224833.json、视频生成/图生视频/MiniMax H3全能参考（t8加速LORA）_2086006748221108225.json、视频生成/图生视频/MiniMax H3文生视频+首尾帧生视频（t8加速LORA）_2086007059350380546.json、视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json、视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `MiniMaxH3AVDecodeT8GH`
-- `MiniMaxH3DualClockT8GH`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `GetNode`
+- `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 4/5 个有
+- `ComfyMathExpression` —— 4/5 个有
 - `LoraLoaderBypassModelOnly` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `easy ifElse` —— 4/5 个有
-- `easy anythingIndexSwitch` —— 3/5 个有
-- `LoadImage` —— 2/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
-- `孤海注释` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `PlaySound|pysssss` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/5 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `VHS_LoadVideo` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `LoadAudio` —— 2/5 个有
+- `Float` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `MiniMaxH3SigmaShift` —— 1/5 个有
+- `ModelAttentionBackend` —— 1/5 个有
+- `ModelPreviewOverrideKJ` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `TrimAudioDuration` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
+- `ttN int` —— 1/5 个有
 
 ## 典型参数
 

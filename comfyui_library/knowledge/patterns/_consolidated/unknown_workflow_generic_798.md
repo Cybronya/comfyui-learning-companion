@@ -3,33 +3,40 @@ name: unknown_workflow_generic_798
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [LoadAudio, RH_FireRedAudioEdit, RH_FireRedAudioLoader, SaveAudioMP3]
+coverage: 0.3885
+common_nodes: [CR Text, DapaoGPTImage2AllroundNode, LoadImage, Note Plus (mtb), PrimitiveString, SaveImage, Seed (rgthree), easy showAnything, 孤海注释]
 problems: []
 missing: []
-members: [音频生成/音频生成/FireRed声学编辑-音高语速调整工作流_2094342675284717570.json, 音频生成/音频生成/FireRed语义编辑-AI改写音频工作流_2094342618711941121.json]
+members: [图片生成/文生图/全能图片视觉提示词深度优化 图生图 图像编辑 锁人物 换衣服 换场景 无所不能 26-08-11_2087421058231132161.json, 图片生成/文生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2087015625993576449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_798
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/FireRed声学编辑-音高语速调整工作流_2094342675284717570.json、音频生成/音频生成/FireRed语义编辑-AI改写音频工作流_2094342618711941121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片视觉提示词深度优化 图生图 图像编辑 锁人物 换衣服 换场景 无所不能 26-08-11_2087421058231132161.json、图片生成/文生图/超赞绝伦电商详情页一键直出，多风格多语言多适配！_2087015625993576449.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RH_FireRedAudioEdit`
-- `RH_FireRedAudioLoader`
-- `SaveAudioMP3`
+- `CR Text`
+- `DapaoGPTImage2AllroundNode`
+- `LoadImage`
+- `Note Plus (mtb)`
+- `PrimitiveString`
+- `SaveImage`
+- `Seed (rgthree)`
+- `easy showAnything`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `DapaoBatchImageGrid` —— 1/2 个有
+- `DapaoDetailFlowPromptNode` —— 1/2 个有
+- `DapaoVisualStylePromptNode` —— 1/2 个有
 
 ## 典型参数
 

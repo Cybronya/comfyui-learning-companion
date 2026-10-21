@@ -3,39 +3,31 @@ name: unknown_workflow_generic_801
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.912
-common_nodes: [CR Text, FishS2MultiSpeakerTTS, LazySwitch1way, LoadAudio, PreviewAny, RH_LLMAPI_NODE, SaveAudio, WhisperSTT, easy boolean, ttN concat]
+coverage: 0.667
+common_nodes: [PreviewAny, RHHiddenNodes, RH_LLMAPI_NODE, ShellAgentPluginInputText, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudioS2-多人声音克隆【small-JJ小健健】_2040976378308337665.json, 音频生成/音频生成/声音克隆-FishAudioS2-单人_双人【small-JJ小健健】_2040287687734726658.json]
+members: [图片生成/文生图/可乐-小说提取角色和场景_2008133911955644418.json, 图片生成/文生图/可乐-小说改成漫剧剧本_2007883717229944833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_801
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/FishAudioS2-多人声音克隆【small-JJ小健健】_2040976378308337665.json、音频生成/音频生成/声音克隆-FishAudioS2-单人_双人【small-JJ小健健】_2040287687734726658.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/可乐-小说提取角色和场景_2008133911955644418.json、图片生成/文生图/可乐-小说改成漫剧剧本_2007883717229944833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `FishS2MultiSpeakerTTS`
-- `LazySwitch1way`
-- `LoadAudio`
 - `PreviewAny`
+- `RHHiddenNodes`
 - `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `WhisperSTT`
-- `easy boolean`
-- `ttN concat`
-
-**可变部分**（部分 workflow 才有）：
-- `FishS2VoiceCloneTTS` —— 1/2 个有
+- `ShellAgentPluginInputText`
+- `easy saveText`
 
 ## 典型参数
 

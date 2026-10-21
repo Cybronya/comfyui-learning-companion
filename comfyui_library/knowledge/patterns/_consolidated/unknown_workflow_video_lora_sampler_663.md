@@ -2,68 +2,63 @@
 name: unknown_workflow_video_lora_sampler_663
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.537667
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, DiffusionModelSelector, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, MaskPreview, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, SetNode, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy forLoopEnd, easy forLoopStart, easy showAnything]
+level: moderate
+coverage: 0.455
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1983372948306337793.json, 视频生成/图生视频/1990992913704394754.json, 视频生成/图生视频/1989490999061827585.json]
+members: [视频生成/图生视频/【官模】H3风格测试 _ 案例2：各国早餐（风格）_2093549585775026177.json, 视频生成/图生视频/【官模】首尾帧 _ H3案例：科普小视频（一颗土豆的故事🥔）_2091398589313544193.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人_2100778688936759297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_663
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1983372948306337793.json、视频生成/图生视频/1990992913704394754.json、视频生成/图生视频/1989490999061827585.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【官模】H3风格测试 _ 案例2：各国早餐（风格）_2093549585775026177.json、视频生成/图生视频/【官模】首尾帧 _ H3案例：科普小视频（一颗土豆的故事🥔）_2091398589313544193.json、视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人_2100778688936759297.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：54%
+- **可信度**：中等可信
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `DiffusionModelSelector`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `CR Prompt Text`
+- `ComfyMathExpression`
 - `GetNode`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MaskPreview`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PreviewImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `TrimVideoLatent`
-- `VAEDecode`
+- `SolAttnMiniMax`
+- `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `Int` —— 1/3 个有
+- `BasicScheduler` —— 2/3 个有
+- `ComfySwitchNodeV2` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `KSamplerSelect` —— 2/3 个有
+- `VAEDecode` —— 2/3 个有
+- `VAEDecodeAudio` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `LoadAudio` —— 1/3 个有
+- `MiniMaxH3AVDecodeT8` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | lcm | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -71,8 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

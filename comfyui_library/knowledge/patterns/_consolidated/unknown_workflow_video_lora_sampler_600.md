@@ -3,61 +3,86 @@ name: unknown_workflow_video_lora_sampler_600
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.775333
-common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, INTConstant, ImageBatchMulti, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.705667
+common_nodes: [CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatch, ImageListToImageBatch, ImageResizeKJv2, ImpactExecutionOrderController, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LayerUtility: BooleanOperatorV2, LoadImage, LoadImageListFromDir //Inspire, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, PrimitiveBoolean, PrimitiveFloat, SaveAudio, SetNode, ShowText|pysssss, SimpleMath+, String Replace (mtb), StringReplace, Text Concatenate (JPS), TextInput_, VHS_DuplicateImages, VHS_LoadAudioUpload, VHS_VideoCombine, VideoFromPathsAndAudio, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy boolean, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1957726679996399618.json, 视频生成/文生视频/1968180863945027585.json, 视频生成/文生视频/humo双图参考_2072999565739204608.json]
+members: [视频生成/图生视频/2000967114590650369.json, 视频生成/图生视频/1999117473494560769.json, 视频生成/图生视频/1999823638662610945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_600
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1957726679996399618.json、视频生成/文生视频/1968180863945027585.json、视频生成/文生视频/humo双图参考_2072999565739204608.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2000967114590650369.json、视频生成/图生视频/1999117473494560769.json、视频生成/图生视频/1999823638662610945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `HuMoEmbeds`
+- `CLIPVisionLoader`
+- `CR Batch Images From List`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
+- `ImageBatch`
+- `ImageListToImageBatch`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `ImpactExecutionOrderController`
+- `InfiniteTalkEmbedsSlice`
+- `InfiniteTalkMultiImage`
+- `LayerUtility: BooleanOperatorV2`
 - `LoadImage`
+- `LoadImageListFromDir //Inspire`
 - `MelBandRoFormerModelLoader`
 - `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
 - `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `SaveAudio`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `String Replace (mtb)`
+- `StringReplace`
+- `Text Concatenate (JPS)`
+- `TextInput_`
+- `VHS_DuplicateImages`
+- `VHS_LoadAudioUpload`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
+- `VideoFromPathsAndAudio`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `easy batchAnything`
+- `easy boolean`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy indexAnything`
+- `easy lengthAnything`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SetNode` —— 2/3 个有
-- `AudioToFPS` —— 1/3 个有
-- `IndexTTS2Run` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `SaveAudio` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `ttN text` —— 1/3 个有
+- `ListCustomString` —— 2/3 个有
+- `Note Plus (mtb)` —— 2/3 个有
+- `1hew_ListCustomString` —— 1/3 个有
+- `WanVideoBlockSwap` —— 1/3 个有
 
 ## 典型参数
 

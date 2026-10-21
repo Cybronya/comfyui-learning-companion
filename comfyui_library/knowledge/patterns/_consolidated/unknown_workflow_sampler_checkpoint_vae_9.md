@@ -2,68 +2,52 @@
 name: unknown_workflow_sampler_checkpoint_vae_9
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.5852
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyYuE2LatentAudio, KSampler, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, VAEDecodeAudio, YuE2GenerateMusic]
-problems: [发现KSampler但没有VAEDecode]
+level: moderate
+coverage: 0.9834
+common_nodes: [CFGGuider, EmptyFlux2LatentImage, RandomNoise, SamplerCustomAdvanced, SaveImage, T8LLaDAImageCheckpointLoader, T8LLaDAImageScheduler, VAEDecode]
+problems: []
 missing: []
-members: [音频生成/音频生成/YuE2音乐模型文生音乐基础工作流_2100397111375384577.json, 音频生成/音频生成/Yue 2 文生成音乐标准版_2108072659945877506.json, 音频生成/音频生成/堪比闭源模型的Yue2_文生音乐最强开源工作流_2107213236771840002.json, 音频生成/音频生成/文本转音乐_YuE2_2107035173647904769.json, 音频生成/音频生成/（写歌 音质非常好）-YuE2-文生音乐_2109775294411399170.json]
+members: [图片生成/文生图/Llada Image Base VQ文生图_2096898925117657089.json, 图片生成/文生图/Llada Image Base文生图_2096898914665451522.json, 图片生成/文生图/Llada Image Turbo VQ文生图_2096898952783294465.json, 图片生成/文生图/Llada Image Turbo 文生图_2097314140187615233.json, 图片生成/文生图/Llada Image Turbo文生图_2096898945132879874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/YuE2音乐模型文生音乐基础工作流_2100397111375384577.json、音频生成/音频生成/Yue 2 文生成音乐标准版_2108072659945877506.json、音频生成/音频生成/堪比闭源模型的Yue2_文生音乐最强开源工作流_2107213236771840002.json、音频生成/音频生成/文本转音乐_YuE2_2107035173647904769.json、音频生成/音频生成/（写歌 音质非常好）-YuE2-文生音乐_2109775294411399170.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Llada Image Base VQ文生图_2096898925117657089.json、图片生成/文生图/Llada Image Base文生图_2096898914665451522.json、图片生成/文生图/Llada Image Turbo VQ文生图_2096898952783294465.json、图片生成/文生图/Llada Image Turbo 文生图_2097314140187615233.json、图片生成/文生图/Llada Image Turbo文生图_2096898945132879874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：59%
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `EmptyYuE2LatentAudio`
-- `KSampler`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
-- `VAEDecodeAudio`
-- `YuE2GenerateMusic`
+- `CFGGuider`
+- `EmptyFlux2LatentImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `T8LLaDAImageCheckpointLoader`
+- `T8LLaDAImageScheduler`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 4/5 个有
-- `PrimitiveBoolean` —— 4/5 个有
-- `PrimitiveString` —— 4/5 个有
-- `SeedNode` —— 4/5 个有
-- `YuE2GenerateABC` —— 4/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `easy float` —— 1/5 个有
-- `孤海注释` —— 1/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `T8SamplerLLaDAImageTurbo` —— 3/5 个有
+- `KSamplerSelect` —— 2/5 个有
+- `T8LLaDAImageVQConditioning` —— 2/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 32 | 32 - 32 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | dpm_2 | - | 5 | 100% |
-| 调度器 | sgm_uniform | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 32，观测区间 32 - 32，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpm_2，5 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

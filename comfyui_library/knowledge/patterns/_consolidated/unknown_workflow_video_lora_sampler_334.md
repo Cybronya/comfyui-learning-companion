@@ -3,69 +3,61 @@ name: unknown_workflow_video_lora_sampler_334
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.586571
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PlaySound|pysssss, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy anythingIndexSwitch, easy int]
+coverage: 0.727714
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json, 视频生成/文生视频/MinimaxH3+音频驱动多参_2092941359513694209.json, 视频生成/文生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json]
+members: [视频生成/文生视频/MiniMax H3文生视频T8加速版_2085917106452910082.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086006814721798145.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086021919471656961.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086316557814292482.json, 视频生成/文生视频/MiniMax H3最新双涡轮增压4步Lora8步效果超极速工作流合集_2085545670534066177.json, 视频生成/文生视频/MiniMax-H3 文生视频！ 加速版！_2085652281692876802.json, 视频生成/文生视频/Minimax H3 数字人 - 音频驱动生视频_2085940391668441089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_334
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json、视频生成/图生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3文生视频T8加速版_2085917106452910082.json、视频生成/文生视频/MiniMax H3文生视频T8加速版_2086006814721798145.json、视频生成/文生视频/MiniMax H3文生视频T8加速版_2086021919471656961.json、视频生成/文生视频/MiniMax H3文生视频T8加速版_2086316557814292482.json、视频生成/文生视频/MiniMax H3最新双涡轮增压4步Lora8步效果超极速工作流合集_2085545670534066177.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `CreateVideo`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PlaySound|pysssss`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy anythingIndexSwitch`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 6/7 个有
-- `GetImageSizeAndCount` —— 6/7 个有
-- `Label (rgthree)` —— 6/7 个有
-- `EmptyImage` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `ComfyMathExpression` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
+- `easy showAnything` —— 5/7 个有
+- `CR Text` —— 4/7 个有
+- `JjkText` —— 3/7 个有
+- `LoadImage` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `GetNode` —— 2/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `LoadAudio` —— 2/7 个有
+- `LoadVideo` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `CeilNode` —— 1/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `GetAudioDurationFromAudio` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
 - `SoundFlow_GetLength` —— 1/7 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `Text` —— 1/7 个有
 
 ## 典型参数
 

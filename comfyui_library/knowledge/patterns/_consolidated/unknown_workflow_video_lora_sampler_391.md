@@ -2,86 +2,63 @@
 name: unknown_workflow_video_lora_sampler_391
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.837167
-common_nodes: [DWPreprocessor, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatch, ImageResizeKJv2, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, SimpleMath+, VHS_BatchManager, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy seed]
+level: strong
+coverage: 0.933
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, FlashVSR_SM_KSampler, FlashVSR_SM_Model, H3SigmaRefiner, KSamplerSelect, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveFloat, RHHiddenNodes, SelfLiftAvatarH3Sampler, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [MathExpression|pysssss, SimpleMath+, String Literal, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy globalSeed, easy seed]
-members: [视频生成/图生视频/1942816632961961986.json, 视频生成/文生视频/1967140300189786113.json, 视频生成/文生视频/1967169915356581890.json, 视频生成/文生视频/Wan 2.2 姿态引导下的 SVI 2.0 视频到视频无限循环延长与高一致性生成工作流_1998603727122653185.json, 视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环姿态引导控制+参考_2072999578611523584.json, 视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环深度引导控制+参考_2072999578032709632.json]
+missing: []
+members: [视频生成/图生视频/高清去油版MinimaxH3-T1_2105922330722660354.json, 视频生成/图生视频/高清去油版MinimaxH3-T2_2105926309791752193.json, 视频生成/图生视频/高清去油版MinimaxH3-T3_2105926378402181122.json, 视频生成/图生视频/高画质minimaxH3-T1_2105599117824192514.json, 视频生成/图生视频/高画质minimaxH3-T2_2105603655398420481.json, 视频生成/图生视频/高画质minimaxH3-T3_2105610995262648321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_391
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1942816632961961986.json、视频生成/文生视频/1967140300189786113.json、视频生成/文生视频/1967169915356581890.json、视频生成/文生视频/Wan 2.2 姿态引导下的 SVI 2.0 视频到视频无限循环延长与高一致性生成工作流_1998603727122653185.json、视频生成/文生视频/Wan 2.2-Fun-VACE转绘8帧重叠循环姿态引导控制+参考_2072999578611523584.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/高清去油版MinimaxH3-T1_2105922330722660354.json、视频生成/图生视频/高清去油版MinimaxH3-T2_2105926309791752193.json、视频生成/图生视频/高清去油版MinimaxH3-T3_2105926378402181122.json、视频生成/图生视频/高画质minimaxH3-T1_2105599117824192514.json、视频生成/图生视频/高画质minimaxH3-T2_2105603655398420481.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `DWPreprocessor`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatch`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_BatchManager`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `RHHiddenNodes`
+- `SelfLiftAvatarH3Sampler`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `String Literal` —— 5/6 个有
-- `WanVideoScheduler` —— 5/6 个有
-- `WanVideoSetBlockSwap` —— 5/6 个有
-- `WanVideoSetLoRAs` —— 5/6 个有
-- `WanVideoSigmaToStep` —— 5/6 个有
-- `easy globalSeed` —— 5/6 个有
-- `DepthCrafter` —— 2/6 个有
-- `DownloadAndLoadDepthCrafterModel` —— 2/6 个有
-- `AIO_Preprocessor` —— 1/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
-- `LoadLynxResampler` —— 1/6 个有
-- `LynxEncodeFaceIP` —— 1/6 个有
-- `LynxInsightFaceCrop` —— 1/6 个有
-- `MultiTalkModelLoader` —— 1/6 个有
-- `RH_Captioner` —— 1/6 个有
-- `WanVideoAddLynxEmbeds` —— 1/6 个有
-- `WanVideoEnhanceAVideo` —— 1/6 个有
-- `WanVideoExperimentalArgs` —— 1/6 个有
-- `WanVideoExtraModelSelect` —— 1/6 个有
-- `WanVideoSLG` —— 1/6 个有
-- `WanVideoTeaCache` —— 1/6 个有
-- `WanVideoTorchCompileSettings` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.22651e+09 | 3.47579e+08 - 2.0952e+09 | 6 | 56% |
+| Prompt 约束强度(CFG) | randomize | - | 6 | 100% |
+| 采样算法 | 2 | 2 - 2 | 6 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 6 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 6 | 100% |
 
 ## 常见问题
 
@@ -89,4 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、SimpleMath+、String Literal、easy batchAnything、easy forLoopEnd
+- 采样步数 中位数 1.22651e+09，观测区间 3.47579e+08 - 2.0952e+09，6 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，6 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，6 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，6 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，6 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.0952e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

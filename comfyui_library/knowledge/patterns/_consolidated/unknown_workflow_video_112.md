@@ -3,33 +3,33 @@ name: unknown_workflow_video_112
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [GetVideoComponents, JjkText, VHS_VideoCombine]
+coverage: 1
+common_nodes: [CR Prompt Text, GetVideoComponents, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json, 视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json]
+members: [视频生成/文生视频/RH 全能视频V3.1-fast-文生视频-低价渠道版-1.5元_次_2062199739701096449.json, 视频生成/文生视频/RH 全能视频V3.1-pro-文生视频-低价渠道版-0.9元_次_2062206475921092609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_112
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json、视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频V3.1-fast-文生视频-低价渠道版-1.5元_次_2062199739701096449.json、视频生成/文生视频/RH 全能视频V3.1-pro-文生视频-低价渠道版-0.9元_次_2062206475921092609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
 - `GetVideoComponents`
-- `JjkText`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGOfficialTextToVideo` —— 1/2 个有
-- `RH_RhartVideoGTextToVideo` —— 1/2 个有
+- `RH_RhartVideoV31FastTextToVideo` —— 1/2 个有
+- `RH_RhartVideoV31ProTextToVideo` —— 1/2 个有
 
 ## 典型参数
 

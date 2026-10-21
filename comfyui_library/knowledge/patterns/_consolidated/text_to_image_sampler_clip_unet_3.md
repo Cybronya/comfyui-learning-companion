@@ -1,30 +1,31 @@
 ---
 name: text_to_image_sampler_clip_unet_3
 type: Text To Image
-frequency: 11
+frequency: 32
 level: weak
-coverage: 0.814727
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.908031
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/1903742090277195777.json, 图片生成/文生图/1911034174755799042.json, 图片生成/文生图/1988965178039480322.json, 图片生成/文生图/Krea-2_ 文生图_2095794360649601025.json, 图片生成/文生图/QWen2.1文生图工作流｜千问模型文字生图轻松创作_2106996835603800065.json, 图片生成/文生图/Qwen 2.1文生图4步加速版｜快节奏出图不影响质量_2103063918653558786.json, 图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json, 图片生成/文生图/Qwen Image 2.1 PE多宫格生图｜一张出九宫排版素材_2103032143940243457.json, 图片生成/文生图/Qwen Image 2.1 PE文生图，提示词增强高质量文本到图像生成工作流_2103222827108364290.json, 图片生成/文生图/Qwen Image 2.1 V2文生图，文本到图像生成升级版本工作流_2103243206614937601.json, 图片生成/文生图/image_krea2_turbo_t2i_2099207878002429953.json]
+members: [图片生成/文生图/Z-image头像生成器_1993848457626664961.json, 图片生成/文生图/Z-image文生图V2（Lora）_2026213692454477825.json, 图片生成/文生图/Z_image文生图-宫崎骏风格｜吉卜力风格｜卡通动漫｜二次元｜_2088507302923034626.json, 图片生成/文生图/Zimage头像生成器_2057990922343899138.json, 图片生成/文生图/Zimage头像生成器_2061075705567473666.json, 图片生成/文生图/Zimage头像生成器_2072198363075923969.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2072869610650689537.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084176385911902210.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084180097455710209.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084184981282312193.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084188539746611201.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084191590809165826.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084543653397221377.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084547006332231681.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084566111013662721.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084568266718142466.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2086317060350631938.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2086324082525696001.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2089597886714699778.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2089606694295924738.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2093221605420916737.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2093225496157970434.json, 图片生成/文生图/krea2全自动反推工作流_2099842463920902146.json, 图片生成/文生图/krea2田园风格MJ感工作流_2100583054992568322.json, 图片生成/文生图/krea2田园风格MJ感工作流_2102923019374125057.json, 图片生成/文生图/krea2田园风格MJ感工作流_2104384123690373122.json, 图片生成/文生图/krea2田园风格MJ感工作流_2104754840189624322.json, 图片生成/文生图/全自动krea2万物迁移_万物复刻_2070712730314694658.json, 图片生成/文生图/多风格文生图｜krea2+Qwen3.5自动生成_2089836661319487489.json, 图片生成/文生图/多风格自动文生图｜Qwen3.5+krea2风格轮换生成_2093467909044658177.json, 图片生成/文生图/自动多风格文生图｜krea2+Qwen3.5一键直出_2093466592263888897.json, 视频生成/图生视频/krea2+Qwen3.5-自动多风格文生图 (1)_2085254333008007169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_3
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/1903742090277195777.json、图片生成/文生图/1911034174755799042.json、图片生成/文生图/1988965178039480322.json、图片生成/文生图/Krea-2_ 文生图_2095794360649601025.json、图片生成/文生图/QWen2.1文生图工作流｜千问模型文字生图轻松创作_2106996835603800065.json…）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/文生图/Z-image头像生成器_1993848457626664961.json、图片生成/文生图/Z-image文生图V2（Lora）_2026213692454477825.json、图片生成/文生图/Z_image文生图-宫崎骏风格｜吉卜力风格｜卡通动漫｜二次元｜_2088507302923034626.json、图片生成/文生图/Zimage头像生成器_2057990922343899138.json、图片生成/文生图/Zimage头像生成器_2061075705567473666.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：32
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 32 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
@@ -33,53 +34,50 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 9/11 个有
-- `LoraLoaderModelOnly` —— 8/11 个有
-- `ComfySwitchNode` —— 7/11 个有
-- `PrimitiveStringMultiline` —— 7/11 个有
-- `JjkText` —— 6/11 个有
-- `PreviewAny` —— 6/11 个有
-- `TextEncodeQwenImage21` —— 6/11 个有
-- `TextGenerate` —— 6/11 个有
-- `solarL_SaveImagesToZip` —— 6/11 个有
-- `孤海注释` —— 6/11 个有
-- `CR Prompt Text` —— 5/11 个有
-- `ConditioningZeroOut` —— 5/11 个有
-- `QwenImage21Cache` —— 5/11 个有
-- `PrimitiveBoolean` —— 4/11 个有
-- `PrimitiveInt` —— 4/11 个有
-- `StringConcatenate` —— 4/11 个有
-- `QwenPERewriteT8` —— 3/11 个有
-- `easy cleanGpuUsed` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `RegexExtract` —— 1/11 个有
-- `SaveImageAdvanced` —— 1/11 个有
+- `LoraLoaderModelOnly` —— 30/32 个有
+- `llama_cpp_instruct_adv` —— 30/32 个有
+- `llama_cpp_model_loader` —— 30/32 个有
+- `llama_cpp_parameters` —— 30/32 个有
+- `CR Prompt Text` —— 26/32 个有
+- `TTResolutionSelector` —— 26/32 个有
+- `Fast Groups Bypasser (rgthree)` —— 25/32 个有
+- `Label (rgthree)` —— 21/32 个有
+- `ShowText|pysssss` —— 20/32 个有
+- `PreviewImage` —— 6/32 个有
+- `ConditioningKrea2Rebalance` —— 5/32 个有
+- `SetNode` —— 5/32 个有
+- `Latent Noise Injection` —— 4/32 个有
+- `孤海注释` —— 4/32 个有
+- `JjkText` —— 3/32 个有
+- `LoadImage` —— 3/32 个有
+- `solarL_SaveImagesToZip` —— 3/32 个有
+- `Seed (rgthree)` —— 1/32 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 11 | 5% |
-| 高度 | 80 | 80 - 1536 | 11 | 0% |
-| 采样步数 | 4 | 4 - 9 | 11 | 61% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 11 | 40% |
-| 采样算法 | er_sde | - | 11 | 55% |
-| 调度器 | beta | - | 11 | 55% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 8 | 4 - 10 | 32 | 82% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 32 | 23% |
+| 采样算法 | euler | - | 32 | 91% |
+| 调度器 | simple | - | 32 | 78% |
+| 重绘幅度 | 1 | 0.3 - 1 | 32 | 75% |
+| 宽度 | 512 | 80 - 1200 | 32 | 53% |
+| 高度 | 512 | 80 - 1600 | 32 | 40% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 30/32 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，11 个样本，取值分散，一致性仅 5%
-- 高度 中位数 80，观测区间 80 - 1536，11 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 9，11 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，11 个样本，取值分散，一致性仅 40%
-- 采样算法 最常用 er_sde，11 个样本，一致性 55%
-- 调度器 最常用 beta，11 个样本，一致性 55%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（12/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 10，32 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，32 个样本，取值分散，一致性仅 23%
+- 采样算法 最常用 euler，32 个样本，一致性 91%
+- 调度器 最常用 simple，32 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，32 个样本
+- 宽度 中位数 512，观测区间 80 - 1200，32 个样本
+- 高度 中位数 512，观测区间 80 - 1600，32 个样本，取值分散，一致性仅 40%
+- 高发问题（30/32 个样本）：Steps较低可能导致细节不足

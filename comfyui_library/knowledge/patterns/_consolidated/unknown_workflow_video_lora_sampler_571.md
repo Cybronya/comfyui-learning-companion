@@ -3,78 +3,62 @@ name: unknown_workflow_video_lora_sampler_571
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.829667
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), INTConstant, KSamplerSelect, LoadAudio, LoadImage, LongCatVoiceCloneTTS, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, MultiTextConcatenate, NormalizeAudioLoudness, PreviewAudio, PrimitiveFloat, Qwen3ASRLoader, Qwen3ASRTranscribe, RH_LLMAPI_Pro_Node, RH_Utils, RandomNoise, SamplerCustomAdvanced, SaveAudio, SaveAudioMP3, ShowAnything|Mie, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, easy saveText, easy showAnything]
+coverage: 0.497
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, JoinStringMulti, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewAudio, RH_GetAudioDuration, RH_VideoMerge, SaveVideo, SetNode, SoundFlow_TrimAudio, Text, VHS_SelectFilename, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy float, easy int]
 problems: []
 missing: []
-members: [数字人/数字人/explanation_2091092008151638018.json, 视频生成/图生视频/MiniMax-H3 心灵鸡汤口播数字人全流程方案落地分享分享-V2  【专属音色版】_2089084464377982978.json, 视频生成/图生视频/meinvjianghuodong_2096516861621002241.json]
+members: [图片生成/文生图/mulBL_stable_1999825490863063041.json, 图片生成/文生图/mul_only_720_1995744614046896130.json, 视频生成/图生视频/1994360577734610945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_571
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/explanation_2091092008151638018.json、视频生成/图生视频/MiniMax-H3 心灵鸡汤口播数字人全流程方案落地分享分享-V2  【专属音色版】_2089084464377982978.json、视频生成/图生视频/meinvjianghuodong_2096516861621002241.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/mulBL_stable_1999825490863063041.json、图片生成/文生图/mul_only_720_1995744614046896130.json、视频生成/图生视频/1994360577734610945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `KSamplerSelect`
+- `GetNode`
+- `ImageResizeKJv2`
+- `JoinStringMulti`
 - `LoadAudio`
 - `LoadImage`
-- `LongCatVoiceCloneTTS`
-- `LoraLoaderModelOnly`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `MultiTextConcatenate`
-- `NormalizeAudioLoudness`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
 - `PreviewAudio`
-- `PrimitiveFloat`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Utils`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `ShowAnything|Mie`
+- `RH_GetAudioDuration`
+- `RH_VideoMerge`
+- `SaveVideo`
+- `SetNode`
+- `SoundFlow_TrimAudio`
 - `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `easy saveText`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy float`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `HAIGC_TimestampTextReplace` —— 2/3 个有
-- `HAIGC_VideoSubtitleTimestampPro` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `SubtitleOptimizer` —— 2/3 个有
-- `TranscribeConfig` —— 2/3 个有
-- `VideoTranscribe` —— 2/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
 
 ## 典型参数
 

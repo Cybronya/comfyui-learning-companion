@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_652
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6945
-common_nodes: [ImageScaleDownToSize, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline]
+frequency: 3
+level: moderate
+coverage: 0.863
+common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
-missing: [PIP_图像联结, Text Multiline, easy imageConcat]
-members: [图片生成/文生图/1962390591537549313.json, 图片生成/文生图/1962455723336667137.json]
+missing: []
+members: [音频生成/音频生成/opsv-声音克隆_2061483328276090881.json, 音频生成/音频生成/声音克隆 Qwen3 TTS 真实复制音频   极速版 音色参考_2017868031271116802.json, 音频生成/音频生成/最新Qwen3 TTS 声音克隆_2018610702222626817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_652
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1962390591537549313.json、图片生成/文生图/1962455723336667137.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/opsv-声音克隆_2061483328276090881.json、音频生成/音频生成/声音克隆 Qwen3 TTS 真实复制音频   极速版 音色参考_2017868031271116802.json、音频生成/音频生成/最新Qwen3 TTS 声音克隆_2018610702222626817.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageScaleDownToSize`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `Text Multiline`
+全部 3 个 workflow 都包含：
+- `Apply Whisper`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `PIP_图像联结` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `AudioCrop` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `TextInputBasic` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,5 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：PIP_图像联结、Text Multiline、easy imageConcat
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

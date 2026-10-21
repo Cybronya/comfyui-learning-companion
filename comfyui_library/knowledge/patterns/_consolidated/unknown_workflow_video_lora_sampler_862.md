@@ -3,76 +3,68 @@ name: unknown_workflow_video_lora_sampler_862
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5135
-common_nodes: [CLIPVisionLoader, DWPreprocessor, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int]
+coverage: 0.8455
+common_nodes: [CreateCFGScheduleFloatList, DF_Integer, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveBoolean, RH_LLMAPI_NODE, RH_Translator, ShowText|pysssss, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy ifElse, easy int, string_util_StrReplace]
 problems: []
 missing: []
-members: [视频生成/图生视频/1970700408228376577.json, 视频生成/图生视频/1970265248752148481.json]
+members: [视频生成/图生视频/1964312846312067074.json, 视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_862
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1970700408228376577.json、视频生成/图生视频/1970265248752148481.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1964312846312067074.json、视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
+- `CreateCFGScheduleFloatList`
+- `DF_Integer`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
+- `INTConstant`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `PixelPerfectResolution`
-- `PreviewAny`
-- `SetNode`
-- `VHS_LoadVideo`
+- `PrimitiveBoolean`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
 - `easy ifElse`
 - `easy int`
+- `string_util_StrReplace`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 1/2 个有
-- `ConvertAny2Int` —— 1/2 个有
-- `Display Int (rgthree)` —— 1/2 个有
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `FaceMaskFromPoseKeypoints` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `Florence2toCoordinates` —— 1/2 个有
-- `GrowMask` —— 1/2 个有
-- `ImageCropByMaskAndResize` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `Switch any [Crystools]` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/2 个有
+- `GetVideoComponents` —— 1/2 个有
+- `HunyuanVideoFoley` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

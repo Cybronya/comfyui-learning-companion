@@ -3,17 +3,17 @@ name: unknown_workflow_generic_122
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.901125
-common_nodes: [CR Text, LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, RunningHubAudio8ModelLoader, RunningHubAudio8Prompt, RunningHubAudio8Sampling, RunningHubAudio8TTS, SaveAudio]
+coverage: 0.895875
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083863614699687937.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864179072659457.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864678345826305.json]
+members: [图片生成/图生图/2093374955097509890.json, 图片生成/图生图/2093499799487209473.json, 图片生成/图生图/2093616466229813250.json, 图片生成/图生图/2093628384592093185.json, 图片生成/文生图/G-image-2-优质_2063818884070854658.json, 图片生成/文生图/IMAGE2高配生图_2074394447709818882.json, 图片生成/文生图/全能图像G2.0三视图_2070685916527677442.json, 图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_122
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json、音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json、音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/2093374955097509890.json、图片生成/图生图/2093499799487209473.json、图片生成/图生图/2093616466229813250.json、图片生成/图生图/2093628384592093185.json、图片生成/文生图/G-image-2-优质_2063818884070854658.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
@@ -23,18 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `RunningHubAudio8ModelLoader`
-- `RunningHubAudio8Prompt`
-- `RunningHubAudio8Sampling`
-- `RunningHubAudio8TTS`
-- `SaveAudio`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/8 个有
+- `RH_RhartImageG2ImageToImage` —— 6/8 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 3/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,60 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_94
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.754
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text Concatenate, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), ImageColorMatch+, JjkText, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PlaySound|pysssss, PreviewAny, PreviewImage, Qwen3VL_Chat, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageConcat]
+frequency: 7
+level: moderate
+coverage: 0.900429
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107037189610762241.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107090731931361281.json]
+missing: [CR SDXL Aspect Ratio, easy cleanGpuUsed, Seed (rgthree)]
+members: [图片生成/文生图/1955199580277280770.json, 图片生成/文生图/1955933159051460609.json, 图片生成/文生图/1957737610612670465.json, 图片生成/文生图/1960223327673593857.json, 图片生成/文生图/1985963732088041473.json, 图片生成/文生图/FLUX + LORA 基础工作流_1830939420676771841.json, 图片生成/文生图/人物一致性6宫格小红书风格_1894278785376890882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_94
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107037189610762241.json、图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107090731931361281.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1955199580277280770.json、图片生成/文生图/1955933159051460609.json、图片生成/文生图/1957737610612670465.json、图片生成/文生图/1960223327673593857.json、图片生成/文生图/1985963732088041473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `ImageColorMatch+`
-- `JjkText`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewAny`
-- `PreviewImage`
-- `Qwen3VL_Chat`
+- `ModelSamplingFlux`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageConcat`
+
+**可变部分**（部分 workflow 才有）：
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `EmptySD3LatentImage` —— 4/7 个有
+- `CR SDXL Aspect Ratio` —— 3/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `ApplyFBCacheOnModel` —— 1/7 个有
+- `ImageUpscaleWithModelBatched` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `LoraLoader` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `Seed (rgthree)` —— 1/7 个有
+- `UpscaleModelLoader` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.8 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -62,4 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 这些节点还没有知识卡，系统对它们的理解有限：CR SDXL Aspect Ratio、easy cleanGpuUsed、Seed (rgthree)

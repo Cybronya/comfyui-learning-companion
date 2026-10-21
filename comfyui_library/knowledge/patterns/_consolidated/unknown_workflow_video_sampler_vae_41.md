@@ -3,80 +3,66 @@ name: unknown_workflow_video_sampler_vae_41
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.7123
-common_nodes: [AddLabel, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.7167
+common_nodes: [CR Text, GetNode, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1927072484653223937.json, 视频生成/图生视频/1927172015592210434.json, 视频生成/图生视频/1922883836873510914.json, 视频生成/图生视频/1972511577779990529.json, 视频生成/图生视频/1922695812248387585.json, 视频生成/图生视频/1922711009637842946.json, 视频生成/图生视频/1988044304205680642.json, 视频生成/图生视频/1928697950808215553.json, 视频生成/图生视频/1934990691049086977.json, 视频生成/文生视频/1937481495915466754.json]
+members: [视频生成/图生视频/2009184858895028226.json, 视频生成/图生视频/1934118211120226306.json, 视频生成/图生视频/1951680460374134786.json, 视频生成/图生视频/1954815922643058689.json, 视频生成/图生视频/1954845153740546050.json, 视频生成/图生视频/1945842759951413249.json, 视频生成/图生视频/1946835698130251777.json, 视频生成/文生视频/AniWan图生视频1280高清_2069686480091570177.json, 视频生成/文生视频/AniWan图生视频1280高清_2072935689649483778.json, 视频生成/文生视频/1954108847948480514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_41
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1927072484653223937.json、视频生成/图生视频/1927172015592210434.json、视频生成/图生视频/1922883836873510914.json、视频生成/图生视频/1972511577779990529.json、视频生成/图生视频/1922695812248387585.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2009184858895028226.json、视频生成/图生视频/1934118211120226306.json、视频生成/图生视频/1951680460374134786.json、视频生成/图生视频/1954815922643058689.json、视频生成/图生视频/1954845153740546050.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `CR Text`
 - `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 9/10 个有
-- `ImageConcanate` —— 9/10 个有
-- `ImagePadKJ` —— 9/10 个有
-- `InpaintPreprocessor` —— 9/10 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 9/10 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 9/10 个有
-- `MaskToImage` —— 9/10 个有
-- `WanVideoVACEModelSelect` —— 9/10 个有
-- `WanVideoVACEStartToEndFrame` —— 9/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/10 个有
-- `WanVideoTeaCache` —— 8/10 个有
-- `WanVideoTextEncode` —— 8/10 个有
-- `MaskPreview+` —— 7/10 个有
-- `ImageResizeKJv2` —— 6/10 个有
-- `ImageBlend` —— 5/10 个有
-- `DownloadAndLoadSAM2Model` —— 4/10 个有
-- `PointsEditor` —— 4/10 个有
-- `Sam2Segmentation` —— 4/10 个有
-- `WanVideoTorchCompileSettings` —— 4/10 个有
-- `ImageCompositeMasked` —— 3/10 个有
-- `PreviewAnimation` —— 3/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `MaskPreview` —— 2/10 个有
-- `VHS_VideoInfo` —— 2/10 个有
-- `WanVideoApplyNAG` —— 2/10 个有
-- `WanVideoTextEncodeSingle` —— 2/10 个有
-- `ImageResize+` —— 1/10 个有
-- `InvertMask` —— 1/10 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/10 个有
+- `MathExpression|pysssss` —— 9/10 个有
+- `WanVideoLoraSelect` —— 9/10 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `ImpactSwitch` —— 8/10 个有
+- `RH_LLMAPI_NODE` —— 8/10 个有
+- `easy showAnything` —— 8/10 个有
+- `WanVideoApplyNAG` —— 7/10 个有
+- `WanVideoTextEncodeSingle` —— 7/10 个有
+- `WanVideoEnhanceAVideo` —— 6/10 个有
+- `WanVideoSLG` —— 6/10 个有
+- `WanVideoEasyCache` —— 5/10 个有
+- `WanVideoExperimentalArgs` —— 5/10 个有
+- `ImageConcanate` —— 4/10 个有
+- `ImageResizeKJ` —— 4/10 个有
+- `LoadWanVideoClipTextEncoder` —— 4/10 个有
+- `WanVideoClipVisionEncode` —— 4/10 个有
+- `Primitive integer [Crystools]` —— 3/10 个有
+- `WanVideoSetBlockSwap` —— 3/10 个有
+- `WanVideoSetLoRAs` —— 3/10 个有
+- `WanVideoTextEncode` —— 3/10 个有
+- `FloatToSigmas` —— 2/10 个有
+- `StringToFloatList` —— 2/10 个有
+- `CreateCFGScheduleFloatList` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
 
 ## 典型参数
 

@@ -3,78 +3,106 @@ name: unknown_workflow_video_lora_sampler_182
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.6027
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.8434
+common_nodes: [AudioCrop, AudioCropProcessUTK, CLIPVisionLoader, CM_FloatUnaryOperation, CM_IntToFloat, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, HuMoEmbeds, INTConstant, ImageFromBatch+, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PrimitiveString, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2032112165968154626.json, 视频生成/图生视频/1996519049599270913.json, 视频生成/图生视频/1996568841872351234.json, 视频生成/图生视频/2017466618615439361.json, 视频生成/图生视频/2011405479620124674.json, 视频生成/图生视频/2011517668532162561.json, 视频生成/图生视频/1995783729840787458.json, 视频生成/图生视频/2039879176072732673.json, 视频生成/图生视频/2046114909657763841.json, 视频生成/图生视频/1996528847946399745.json]
+members: [视频生成/图生视频/2031633089117560834.json, 视频生成/图生视频/1999689343231029250.json, 视频生成/图生视频/2048943364548071425.json, 视频生成/图生视频/2049741218380300290.json, 视频生成/图生视频/2053646758080720898.json, 视频生成/图生视频/1980829225919926273.json, 视频生成/图生视频/1973235123128807426.json, 视频生成/图生视频/1991795582006145025.json, 视频生成/图生视频/1995394218111774721.json, 视频生成/图生视频/1956547537161388033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_182
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2032112165968154626.json、视频生成/图生视频/1996519049599270913.json、视频生成/图生视频/1996568841872351234.json、视频生成/图生视频/2017466618615439361.json、视频生成/图生视频/2011405479620124674.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2031633089117560834.json、视频生成/图生视频/1999689343231029250.json、视频生成/图生视频/2048943364548071425.json、视频生成/图生视频/2049741218380300290.json、视频生成/图生视频/2053646758080720898.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `AudioCrop`
+- `AudioCropProcessUTK`
 - `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetNode`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `HuMoEmbeds`
+- `INTConstant`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `NormalizeAudioLoudness`
+- `PrimitiveString`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
+- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoBlockSwap` —— 9/10 个有
-- `GetImageSizeAndCount` —— 8/10 个有
-- `ImageConcatMulti` —— 8/10 个有
-- `WanVideoTorchCompileSettings` —— 8/10 个有
-- `DrawViTPose` —— 7/10 个有
-- `PoseAndFaceDetection` —— 7/10 个有
-- `WanVideoSetBlockSwap` —— 7/10 个有
-- `INTConstant` —— 5/10 个有
-- `PrimitiveInt` —— 4/10 个有
-- `Int` —— 3/10 个有
-- `PoseDetectionOneToAllAnimation` —— 3/10 个有
-- `SimpleMath+` —— 3/10 个有
-- `CR Text` —— 2/10 个有
+- `ColorMatch` —— 9/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 9/10 个有
+- `ImageBatch` —— 7/10 个有
+- `LazySwitch1way` —— 7/10 个有
+- `SoundFlow_Concatenator` —— 7/10 个有
+- `easy boolean` —— 7/10 个有
+- `ImpactSwitch` —— 6/10 个有
+- `easy compare` —— 6/10 个有
+- `ControlNextGetPoses` —— 3/10 个有
+- `LayerUtility: Seed` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `Primitive integer [Crystools]` —— 3/10 个有
+- `RHHiddenNodes` —— 3/10 个有
+- `RH_Captioner` —— 3/10 个有
+- `VHS_LoadVideo` —— 3/10 个有
+- `WanVideoApplyNAG` —— 3/10 个有
+- `WanVideoControlEmbeds` —— 3/10 个有
+- `WanVideoEncode` —— 3/10 个有
+- `WanVideoImageToVideoEncode` —— 3/10 个有
+- `WanVideoSLG` —— 3/10 个有
+- `WanVideoTextEncodeSingle` —— 3/10 个有
+- `WanVideoVACEModelSelect` —— 3/10 个有
+- `easy cleanGpuUsed` —— 3/10 个有
+- `easy clearCacheAll` —— 3/10 个有
+- `ttN concat` —— 3/10 个有
+- `Anything Everywhere` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
 - `Fast Groups Muter (rgthree)` —— 2/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `Anything Everywhere3` —— 1/10 个有
-- `ImageConcanate` —— 1/10 个有
-- `ImpactInt` —— 1/10 个有
-- `JWInteger` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `LayerUtility: PurgeVRAM` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `PrimitiveFloat` —— 1/10 个有
-- `TextInput_` —— 1/10 个有
-- `ToFloat` —— 1/10 个有
-- `ttN float` —— 1/10 个有
+- `FlashVSRNode` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `SeedVR2BlockSwap` —— 2/10 个有
+- `SeedVR2ExtraArgs` —— 2/10 个有
+- `SeedVR2GGUF` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `VideoTransitionNode` —— 2/10 个有
+- `MuterSwitcher` —— 1/10 个有
+- `🎈GroupDetector` —— 1/10 个有
+- `🎈StateTransfer` —— 1/10 个有
 
 ## 典型参数
 

@@ -3,47 +3,33 @@ name: unknown_workflow_generic_250
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6568
-common_nodes: [CR Text Replace, ComfyMathExpression, JoinStrings, PrimitiveInt, SaveText, ShowText|pysssss, SomethingToString, Text Multiline, easy positive, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.7384
+common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
 problems: []
 missing: []
-members: [视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json]
+members: [comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json, comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json, comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_250
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json、comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json、comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text Replace`
-- `ComfyMathExpression`
-- `JoinStrings`
-- `PrimitiveInt`
-- `SaveText`
-- `ShowText|pysssss`
-- `SomethingToString`
-- `Text Multiline`
-- `easy positive`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `ImageCompare`
+- `LoadImage`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `LoadImagesFromFolderKJ` —— 2/5 个有
-- `Prompt_Edit` —— 1/5 个有
+- `790255fa-100b-4dda-9ab5-e5e1731951db` —— 3/5 个有
+- `bc1c967a-7f6a-4be9-a372-dad16e4f28e3` —— 2/5 个有
 
 ## 典型参数
 

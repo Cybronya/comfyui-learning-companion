@@ -1,81 +1,82 @@
 ---
 name: unknown_workflow_lora_sampler_clip_132
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8295
-common_nodes: [Audio Duration (mtb), AudioCrop, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, UNETLoader, VAELoaderKJ]
+frequency: 3
+level: strong
+coverage: 0.73
+common_nodes: [BasicScheduler, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, INTConstant, ImageFromBatch, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXSequencer, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, MultiImageLoader, PathchSageAttentionKJ, PromptRelayEncodeTimeline, SamplerCustom, SimpleMath+, VAEDecodeTiled, VAELoaderKJ, VisualizeSigmasKJ, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2032276814873235457.json, 视频生成/图生视频/2051620785973936130.json]
+members: [视频生成/图生视频/2055789826540097537.json, 视频生成/图生视频/2056272692512387073.json, 视频生成/图生视频/2058414222178086914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_132
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2032276814873235457.json、视频生成/图生视频/2051620785973936130.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2055789826540097537.json、视频生成/图生视频/2056272692512387073.json、视频生成/图生视频/2058414222178086914.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
+- `ComfyMathExpression`
 - `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `ImageFromBatch`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
 - `LTX2_NAG`
+- `LTXSequencer`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVImgToVideoInplace`
+- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UNETLoader`
+- `MultiImageLoader`
+- `PathchSageAttentionKJ`
+- `PromptRelayEncodeTimeline`
+- `SamplerCustom`
+- `SimpleMath+`
+- `VAEDecodeTiled`
 - `VAELoaderKJ`
+- `VisualizeSigmasKJ`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWIntegerToString` —— 1/2 个有
-- `LTX2SamplingPreviewOverride` —— 1/2 个有
-- `LTXVChunkFeedForward` —— 1/2 个有
-- `LTXVImgToVideoConditionOnly` —— 1/2 个有
-- `LTXVLatentUpsampler` —— 1/2 个有
-- `LTXVPreprocess` —— 1/2 个有
-- `LTXVSpatioTemporalTiledVAEDecode` —— 1/2 个有
-- `LatentUpscaleModelLoader` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
-- `intToFloat _O` —— 1/2 个有
+- `ComfySwitchNode` —— 2/3 个有
+- `CreateVideo` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LTXVAudioVAEEncode` —— 2/3 个有
+- `LoadAudioUI` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `MelBandRoFormerModelLoader` —— 2/3 个有
+- `MelBandRoFormerSampler` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `SetLatentNoiseMask` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `SolidMask` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `DualCLIPLoaderGGUF` —— 1/3 个有
+- `Power Lora Loader (rgthree)` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 361 - 361 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -83,4 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 361，观测区间 361 - 361，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

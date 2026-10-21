@@ -3,41 +3,39 @@ name: unknown_workflow_generic_777
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.825
-common_nodes: [AudioAdjustVolume, AudioMerge, AudioSeparation, LoadAudio, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor]
+coverage: 0.535
+common_nodes: [1hew_ImageGridSplit, EmptyImage, LoadImage, PreviewAny, PreviewImage, PrimitiveStringMultiline, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/44号特工：五音不全式+搞怪恶搞式翻唱+SoulX-Singer_2096129900108410882.json, 音频生成/音频生成/soulx singer 翻唱_2036984451858702338.json]
+members: [图片生成/文生图/NPC生成器，九宫格，支持纯文本或带参考图两种模式_2092490650733334529.json, 图片生成/文生图/敌人生成器，九宫格，支持纯文本或带参考图两种模式_2092507233866309633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_777
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/44号特工：五音不全式+搞怪恶搞式翻唱+SoulX-Singer_2096129900108410882.json、音频生成/音频生成/soulx singer 翻唱_2036984451858702338.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/NPC生成器，九宫格，支持纯文本或带参考图两种模式_2092490650733334529.json、图片生成/文生图/敌人生成器，九宫格，支持纯文本或带参考图两种模式_2092507233866309633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioAdjustVolume`
-- `AudioMerge`
-- `AudioSeparation`
-- `LoadAudio`
-- `RunningHub SoulX-Singer Preprocess Pipeline`
-- `RunningHub SoulX-Singer Preprocessor`
-- `RunningHub SoulX-Singer SVS Loader`
-- `RunningHub SoulX-Singer SVS Processor`
+- `1hew_ImageGridSplit`
+- `EmptyImage`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RHLLMChatNode`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `SaveAudioAdvanced` —— 1/2 个有
-- `SaveAudioNode` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/2 个有
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
 
 ## 典型参数
 

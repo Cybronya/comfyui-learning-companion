@@ -3,59 +3,70 @@ name: unknown_workflow_video_lora_sampler_456
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8384
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.643
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956266863963590657.json, 视频生成/文生视频/03-12-01-WAN2.1-脸部参考文生视频-Standin_1989933889823100930.json, 视频生成/文生视频/1956789708207394817.json, 视频生成/文生视频/1956768845814796289.json, 视频生成/文生视频/1957446441918722049.json]
+members: [视频生成/图生视频/视频对口型数字人_InfiniteTalk_V2V_2083750945984442370.json, 音频生成/音频生成/Infinitetalk视频添加语音视频对口型_1979388744887341058.json, 音频生成/音频生成/Wan2.1-InfiniteTalk--视频对口型_2042411569077821442.json, 音频生成/音频生成/infinitetalk对口型工作流_1995386268756402178.json, 音频生成/音频生成/视频对口型 音频驱动生视频   数字人 视频重绘 二次编辑_2063855129274707970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_456
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1956266863963590657.json、视频生成/文生视频/03-12-01-WAN2.1-脸部参考文生视频-Standin_1989933889823100930.json、视频生成/文生视频/1956789708207394817.json、视频生成/文生视频/1956768845814796289.json、视频生成/文生视频/1957446441918722049.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/视频对口型数字人_InfiniteTalk_V2V_2083750945984442370.json、音频生成/音频生成/Infinitetalk视频添加语音视频对口型_1979388744887341058.json、音频生成/音频生成/Wan2.1-InfiniteTalk--视频对口型_2042411569077821442.json、音频生成/音频生成/infinitetalk对口型工作流_1995386268756402178.json、音频生成/音频生成/视频对口型 音频驱动生视频   数字人 视频重绘 二次编辑_2063855129274707970.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `ImageConcanate` —— 4/5 个有
-- `ImpactInt` —— 4/5 个有
-- `INTConstant` —— 3/5 个有
-- `JWInteger` —— 2/5 个有
-- `SimpleMath+` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `GetNode` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `SetNode` —— 1/5 个有
+- `AudioCrop` —— 4/5 个有
+- `AudioSeparation` —— 4/5 个有
+- `Display Int (rgthree)` —— 4/5 个有
+- `DownloadAndLoadWav2VecModel` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `SoundFlow_GetLength` —— 4/5 个有
+- `ToInt` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `easy int` —— 3/5 个有
+- `CR Text` —— 2/5 个有
+- `ImageBatchMulti` —— 2/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `ReverseImageBatch` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Float` —— 1/5 个有
+- `ImageResize+` —— 1/5 个有
+- `ImpactInt` —— 1/5 个有
+- `JWIntegerToString` —— 1/5 个有
+- `Wav2VecModelLoader` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,32 +1,31 @@
 ---
 name: text_to_image_upscale_lora_sampler
 type: Text To Image
-frequency: 14
+frequency: 20
 level: weak
-coverage: 0.736286
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, INTConstant, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.80025
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VAEDecode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea-2 美学视觉文生图+SeedVR2高清出图_2101317926048587777.json, 图片生成/文生图/Krea-2_美学视觉文生图+SeedVR2高清出图_2107464959214055425.json, 图片生成/文生图/Z-image文生图批量工作流直出4K（动漫短剧资产生图抽卡专用）_2102674578551164929.json, 图片生成/文生图/【短剧最佳拍档】支持场景 _ 角色【AI创客训练营】画布功能 _ 角色_2103873978132688897.json, 图片生成/文生图/短剧最佳拍档AI创客训练营｜画布功能支持场景角色创作_2106237793725931522.json, 数字人/数字人/Krea2熟颜世绘Lora模型 写实美少女文生图风格化生成_2099181814492524545.json, 数字人/数字人/krea2熟颜世绘｜尺素数字人文生图美少女生成_2091288163825311745.json, 数字人/数字人/ziamge-【短剧最佳拍档】支持场景 _ 角色_2088664389393145858.json, 数字人/数字人/【尺素】krea2 熟颜世绘_2078697317879865345.json, 数字人/数字人/尺素出品krea2熟颜世绘｜美少女文生图有味道，质感细腻很出片_2099462000886771713.json, 视频生成/图生视频/【最佳短剧生成】支持场景 _ 角色_2098744968851578881.json, 视频生成/图生视频/2067180332339785729.json, 视频生成/图生视频/【短剧最佳拍档】支持场景 _ 角色【AI创客训练营】画布功能 _ 角色_2103873978132688897.json, 视频生成/图生视频/短剧最佳拍档AI创客训练营｜画布功能支持场景角色创作_2106237793725931522.json]
+members: [图片生成/文生图/Krea2⭐玉京仙宫玄幻风（注释内有模型、提示词下载链接）_2096061187103485953.json, 图片生成/文生图/Krea2文生图-天宫中式巨构_2097024511869804546.json, 图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099205852929548289.json, 图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099579173265301506.json, 图片生成/文生图/Krea2白玉AIO文生图自用工作流，文生图高质量文本到图像生成方案_2107955833001832449.json, 图片生成/文生图/krea2-白玉AIO-文生图(自用)_2107455409173913602.json, 图片生成/文生图/krea2墨玉PRO版文生图_2088252923926114306.json, 图片生成/文生图/krea2文生图｜美少女人像写真生成_2095239847958106114.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2082446128871727105.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2098927912908058625.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2098985661717114882.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2099661599010287617.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2101522285130768385.json, 图片生成/文生图/krea2🔺墨玉PRO版🔺文生图_2075228124945666049.json, 图片生成/文生图/krea2🔺墨玉焚诀🔺文生图_无角标导出_2079555165958533121.json, 图片生成/文生图/krea2🔺墨玉焚诀🔺文生图_高清放大 无角标导出_2080176285283872770.json, 图片生成/文生图/中国风玄幻大作｜Krea2玉京仙宫场景文生图_2096621224637063170.json, 图片生成/文生图/玉京仙宫玄幻风场景｜Krea2中国风文生图生成_2096302133913145346.json, 图片生成/文生图/白玉AIO人像写真｜krea2美少女文生图_2095512968669782018.json, 图片生成/文生图/高清放大｜Krea2 lora动漫角色文生图基础工作流_2089832493032763394.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Krea-2 美学视觉文生图+SeedVR2高清出图_2101317926048587777.json、图片生成/文生图/Krea-2_美学视觉文生图+SeedVR2高清出图_2107464959214055425.json、图片生成/文生图/Z-image文生图批量工作流直出4K（动漫短剧资产生图抽卡专用）_2102674578551164929.json、图片生成/文生图/【短剧最佳拍档】支持场景 _ 角色【AI创客训练营】画布功能 _ 角色_2103873978132688897.json、图片生成/文生图/短剧最佳拍档AI创客训练营｜画布功能支持场景角色创作_2106237793725931522.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Krea2⭐玉京仙宫玄幻风（注释内有模型、提示词下载链接）_2096061187103485953.json、图片生成/文生图/Krea2文生图-天宫中式巨构_2097024511869804546.json、图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099205852929548289.json、图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099579173265301506.json、图片生成/文生图/Krea2白玉AIO文生图自用工作流，文生图高质量文本到图像生成方案_2107955833001832449.json…）
 
 - **类型**：Text To Image
-- **样本数**：14
+- **样本数**：20
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CLIPLoader`
+全部 20 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `INTConstant`
 - `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoraLoaderModelOnly`
@@ -34,50 +33,52 @@ source: knowledge_consolidation
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 9/14 个有
-- `CR Text` —— 8/14 个有
-- `Image Comparer (rgthree)` —— 8/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/14 个有
-- `ConditioningZeroOut` —— 6/14 个有
-- `GetNode` —— 6/14 个有
-- `SetNode` —— 6/14 个有
-- `JjkText` —— 5/14 个有
-- `solarL_SaveImagesToZip` —— 5/14 个有
-- `孤海注释` —— 5/14 个有
-- `EmptyImage` —— 1/14 个有
-- `PromptBatchQueue` —— 1/14 个有
-- `ResolutionSelector` —— 1/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 19/20 个有
+- `Image Comparer (rgthree)` —— 19/20 个有
+- `PathchSageAttentionKJ` —— 19/20 个有
+- `PreviewImage` —— 19/20 个有
+- `Seed (rgthree)` —— 19/20 个有
+- `CheckpointLoaderSimple` —— 18/20 个有
+- `TTResolutionSelector` —— 16/20 个有
+- `LayerColor: Brightness & Contrast` —— 15/20 个有
+- `LayerFilter: AddGrain` —— 15/20 个有
+- `CLIPLoader` —— 9/20 个有
+- `UNETLoader` —— 9/20 个有
+- `VAELoader` —— 9/20 个有
+- `JjkText` —— 8/20 个有
+- `solarL_SaveImagesToZip` —— 8/20 个有
+- `孤海注释` —— 8/20 个有
+- `EmptyImage` —— 5/20 个有
+- `QZ_ResolutionPreset` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 80 - 1080 | 14 | 34% |
-| 高度 | 1920 | 80 - 1920 | 14 | 30% |
-| 采样步数 | 8 | 4 - 8 | 14 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 14 | 25% |
-| 采样算法 | er_sde | - | 14 | 57% |
-| 调度器 | kl_optimal | - | 14 | 43% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 1088 | 80 - 2560 | 20 | 13% |
+| 高度 | 1500 | 80 - 1920 | 20 | 18% |
+| 采样步数 | 8 | 4 - 8 | 20 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 20 | 29% |
+| 采样算法 | euler | - | 20 | 55% |
+| 调度器 | simple | - | 20 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 19/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 30/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 80 - 1080，14 个样本，取值分散，一致性仅 34%
-- 高度 中位数 1920，观测区间 80 - 1920，14 个样本，取值分散，一致性仅 30%
-- 采样步数 中位数 8，观测区间 4 - 8，14 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，14 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 er_sde，14 个样本，一致性 57%
-- 调度器 最常用 kl_optimal，14 个样本，一致性 43%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（19/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1088，观测区间 80 - 2560，20 个样本，取值分散，一致性仅 13%
+- 高度 中位数 1500，观测区间 80 - 1920，20 个样本，取值分散，一致性仅 18%
+- 采样步数 中位数 8，观测区间 4 - 8，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，20 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，20 个样本，一致性 55%
+- 调度器 最常用 simple，20 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（30/20 个样本）：Steps较低可能导致细节不足

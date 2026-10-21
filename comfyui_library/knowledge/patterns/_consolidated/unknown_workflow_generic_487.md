@@ -3,29 +3,33 @@ name: unknown_workflow_generic_487
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.667
-common_nodes: [PrimitiveStringMultiline, RH_RhartVideoFlux3TextToVideo, SaveVideo]
+coverage: 0.847
+common_nodes: [RecraftColorRGB, RecraftControls, SaveSVGNode]
 problems: []
 missing: []
-members: [视频生成/文生视频/文生视频工作流｜Flux 3 最长二十秒 带音频_2099690007215828993.json, 视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100393450754633729.json, 视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100425069351751681.json]
+members: [comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_vector_gen.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_487
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/文生视频工作流｜Flux 3 最长二十秒 带音频_2099690007215828993.json、视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100393450754633729.json、视频生成/文生视频/文生视频工作流｜Flux_3_最长二十秒_带音频_2100425069351751681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_vector_gen.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `RH_RhartVideoFlux3TextToVideo`
-- `SaveVideo`
+- `RecraftColorRGB`
+- `RecraftControls`
+- `SaveSVGNode`
+
+**可变部分**（部分 workflow 才有）：
+- `RecraftV4TextToVectorNode` —— 2/3 个有
+- `RecraftTextToVectorNode` —— 1/3 个有
 
 ## 典型参数
 

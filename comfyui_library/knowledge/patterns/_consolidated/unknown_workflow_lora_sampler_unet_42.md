@@ -3,63 +3,58 @@ name: unknown_workflow_lora_sampler_unet_42
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8285
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.534
+common_nodes: [CLIPLoader, CR Prompt Text, CreateVideo, GetNode, H3AutoContextSampler, H3Parameter, H3SeamCorrection, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, MiniMaxLowVRAMAttention, ResolutionSelector, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/🦞海螺H3-QWEN3.8自动提示词+多参生视频_2101574205438521346.json, 视频生成/文生视频/8步加速Mini Max H3图生视频_2084136196300697601.json, 视频生成/文生视频/Dasiwa+H3 taomate 3步加速 中远距离不崩脸_2101450830070247426.json, 视频生成/文生视频/🔪🔪阶段总结版！MiniMax H3全功能加速工作流拆解系列04集_2091383371724316673.json]
+members: [视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采武戏直出_2101160593582546945.json, 视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采直出_2099477874922315778.json, 视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大1080P直出_2101166794710011905.json, 视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大武戏1080P直出_2101178415406731265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/🦞海螺H3-QWEN3.8自动提示词+多参生视频_2101574205438521346.json、视频生成/文生视频/8步加速Mini Max H3图生视频_2084136196300697601.json、视频生成/文生视频/Dasiwa+H3 taomate 3步加速 中远距离不崩脸_2101450830070247426.json、视频生成/文生视频/🔪🔪阶段总结版！MiniMax H3全功能加速工作流拆解系列04集_2091383371724316673.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采武戏直出_2101160593582546945.json、视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频单采直出_2099477874922315778.json、视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大1080P直出_2101166794710011905.json、视频生成/图生视频/MiniMax_H3_AutoContext_无限时长视频双采放大武戏1080P直出_2101178415406731265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `CR Prompt Text`
+- `CreateVideo`
+- `GetNode`
+- `H3AutoContextSampler`
+- `H3Parameter`
+- `H3SeamCorrection`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `MiniMaxLowVRAMAttention`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 3/4 个有
-- `ModelPreviewOverrideKJ` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
+- `BasicScheduler` —— 2/4 个有
+- `H3SigmaRefiner` —— 2/4 个有
+- `LTXVConcatAVLatent` —— 2/4 个有
+- `LTXVSeparateAVLatent` —— 2/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
 - `MiniMaxH3SigmaShift` —— 2/4 个有
-- `H3SigmaRefiner` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `MiniMaxChunkFeedForward` —— 1/4 个有
-- `MiniMaxLowVRAMAttention` —— 1/4 个有
-- `ModelAttentionBackend` —— 1/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `QwenH3PromptLocal` —— 1/4 个有
-- `SolAttnMiniMax` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `SolAttnPatch` —— 2/4 个有
+- `SplitSigmas` —— 2/4 个有
 
 ## 典型参数
 

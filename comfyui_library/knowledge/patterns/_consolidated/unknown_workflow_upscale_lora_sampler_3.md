@@ -1,86 +1,88 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_3
 type: Unknown Workflow
-frequency: 7
-level: weak
-coverage: 0.753571
-common_nodes: [CLIPTextEncode, DualCLIPLoader, Image Comparer (rgthree), ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+frequency: 20
+level: moderate
+coverage: 0.73965
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [ImageSmartSharpen+, easy imageBatchToImageList, easy imageListToImageBatch, ImageCASharpening+, LayerUtility: PurgeVRAM V2]
-members: [图片生成/文生图/1951946483614560258.json, 图片生成/文生图/1951953561489977345.json, 图片生成/文生图/1951977232698953729.json, 图片生成/文生图/1951982323178917889.json, 图片生成/文生图/1967396109779865602.json, 图片生成/文生图/1976498417276985345.json, 图片生成/文生图/1977247385053208578.json]
+missing: [PlaySound|pysssss, easy cleanGpuUsed]
+members: [图片生成/文生图/1949750428735070210.json, 图片生成/文生图/AA--8步加速-Zimage-base-蒸馏加速lora+超清放大_2026691270235660289.json, 图片生成/文生图/Z-Image_Base+SeedVR2 （BF16版模型）高清放大RH在线工作流_2017118139036737537.json, 图片生成/文生图/image_z_image_文生图+高清修复工作流_2059558030781534210.json, 图片生成/文生图/image_z_image_文生图+高清修复工作流_2060289625578627073.json, 图片生成/文生图/qwen-image-2512-文生图-袜子设计稿_2009892327812239362.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2071433989394620417.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2082363616162045954.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2082367656837079041.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2082757941278625794.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2082760082005250049.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2084542000178749441.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2084997582266388481.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2089256377515593729.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2089267305149722625.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2089509829680386049.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2089524938330951681.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2090257712734097410.json, 图片生成/文生图/文生图krea2_turbo+SeedVR2放大+极致4K画质_2092091186575134721.json, 视频生成/文生视频/文生图krea2_turbo+SeedVR2放大+极致4K画质_2084528488534601730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_3
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1951946483614560258.json、图片生成/文生图/1951953561489977345.json、图片生成/文生图/1951977232698953729.json、图片生成/文生图/1951982323178917889.json、图片生成/文生图/1967396109779865602.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/1949750428735070210.json、图片生成/文生图/AA--8步加速-Zimage-base-蒸馏加速lora+超清放大_2026691270235660289.json、图片生成/文生图/Z-Image_Base+SeedVR2 （BF16版模型）高清放大RH在线工作流_2017118139036737537.json、图片生成/文生图/image_z_image_文生图+高清修复工作流_2059558030781534210.json、图片生成/文生图/image_z_image_文生图+高清修复工作流_2060289625578627073.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：20
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 20 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `Image Comparer (rgthree)`
-- `ImageUpscaleWithModel`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 6/7 个有
-- `EmptySD3LatentImage` —— 5/7 个有
-- `ImageResizeKJ` —— 5/7 个有
-- `ImageSmartSharpen+` —— 5/7 个有
-- `Fast Groups Muter (rgthree)` —— 4/7 个有
-- `Anything Everywhere3` —— 3/7 个有
-- `EmptyHunyuanImageLatent` —— 2/7 个有
-- `FluxResolutionNode` —— 2/7 个有
-- `HunyuanRefinerLatent` —— 2/7 个有
-- `ImageCASharpening+` —— 2/7 个有
-- `ImageScaleBy` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `RH_Translator` —— 2/7 个有
-- `VAEEncodeTiled` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 19/20 个有
+- `ConditioningZeroOut` —— 18/20 个有
+- `GetNode` —— 18/20 个有
+- `ModelSamplingAuraFlow` —— 18/20 个有
+- `SetNode` —— 18/20 个有
+- `easy cleanGpuUsed` —— 18/20 个有
+- `PreviewImage` —— 17/20 个有
+- `ImageScaleToTotalPixels` —— 15/20 个有
+- `LayerUtility: PurgeVRAM V2` —— 15/20 个有
+- `CR Text Concatenate` —— 14/20 个有
+- `Float` —— 14/20 个有
+- `KSamplerAdvanced` —— 14/20 个有
+- `Seed (rgthree)` —— 14/20 个有
+- `Text` —— 14/20 个有
+- `VAEEncode` —— 14/20 个有
+- `PlaySound|pysssss` —— 4/20 个有
+- `ImageScaleBy` —— 3/20 个有
+- `INTConstant` —— 2/20 个有
+- `CR Text` —— 1/20 个有
+- `LayerColor: Brightness & Contrast` —— 1/20 个有
+- `ModelSamplingZImage` —— 1/20 个有
+- `easy clearCacheAll` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 2 - 30 | 7 | 8% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 7 | 67% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | sgm_uniform | - | 7 | 43% |
-| 重绘幅度 | 0.3 | 0.3 - 1 | 7 | 37% |
+| 采样步数 | 8 | 6 - 20 | 20 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 20 | 31% |
+| 采样算法 | euler_ancestral | - | 20 | 70% |
+| 调度器 | beta57 | - | 20 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 2 - 30，7 个样本，取值分散，一致性仅 8%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，7 个样本
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，7 个样本，一致性 43%
-- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，7 个样本，取值分散，一致性仅 37%
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageSmartSharpen+、easy imageBatchToImageList、easy imageListToImageBatch、ImageCASharpening+、LayerUtility: PurgeVRAM V2
+- 采样步数 中位数 8，观测区间 6 - 20，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，20 个样本，取值分散，一致性仅 31%
+- 采样算法 最常用 euler_ancestral，20 个样本，一致性 70%
+- 调度器 最常用 beta57，20 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（19/20 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：PlaySound|pysssss、easy cleanGpuUsed

@@ -3,43 +3,34 @@ name: unknown_workflow_generic_375
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [AudioSeparation, CR Prompt Text, HeartMuLa_Transcribe, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText]
+coverage: 0.6335
+common_nodes: [CR Text, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json]
+members: [图片生成/文生图/全能图像G image2.0证件照生成_2070716298870476802.json, 图片生成/文生图/全能图像G image2.0证件照生成_2071058363613532162.json, 图片生成/文生图/可爱的韩国春季美学剪贴簿海报+全节点注释_2061413240135049217.json, 图片生成/文生图/肖像艺术海报，伦勃朗光线，横向拖影效果，营造速度感和压迫感，光影强烈对比_2061432592502706177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_375
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图像G image2.0证件照生成_2070716298870476802.json、图片生成/文生图/全能图像G image2.0证件照生成_2071058363613532162.json、图片生成/文生图/可爱的韩国春季美学剪贴簿海报+全节点注释_2061413240135049217.json、图片生成/文生图/肖像艺术海报，伦勃朗光线，横向拖影效果，营造速度感和压迫感，光影强烈对比_2061432592502706177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioSeparation`
-- `CR Prompt Text`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText`
+- `CR Text`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `AudioCrop` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `ShowAnything|Mie` —— 1/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `取色器_孤海` —— 2/4 个有
 
 ## 典型参数
 

@@ -1,41 +1,42 @@
 ---
 name: unknown_workflow_generic_114
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.76125
-common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
+coverage: 0.933222
+common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [视频生成/图生视频/2004804181263351810.json, 视频生成/图生视频/1973736551656108033.json, 视频生成/图生视频/2073213892439928834.json, 视频生成/图生视频/1973502975085817858.json, 视频生成/图生视频/1976197006022574081.json, 视频生成/图生视频/1978398824693698561.json, 视频生成/图生视频/1998406614531080193.json, 视频生成/图生视频/1973712515601403905.json]
+members: [音频生成/音频生成/IndexTTS2 多人对话_2042951687509385218.json, 音频生成/音频生成/TTS2声音克隆+情感参考-老祺_2028309428746850306.json, 音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json, 音频生成/音频生成/indexTTS2-单（多）人语音模仿+多情绪+情感音色_2009276978364424193.json, 音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json, 音频生成/音频生成/indextts2-单双人+音色情感 多种自由组合控制多合一工作流_1973292870658560001.json, 音频生成/音频生成/三笔成书——indexTTS2-多人语音模仿_2000009916209299458.json, 音频生成/音频生成/声音克隆+情感参考（转跳爷）_2046777867777875970.json, 音频生成/音频生成/声音克隆（单人_双人克隆音色，情感调节）_2051295398525972481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_114
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2004804181263351810.json、视频生成/图生视频/1973736551656108033.json、视频生成/图生视频/2073213892439928834.json、视频生成/图生视频/1973502975085817858.json、视频生成/图生视频/1976197006022574081.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2 多人对话_2042951687509385218.json、音频生成/音频生成/TTS2声音克隆+情感参考-老祺_2028309428746850306.json、音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json、音频生成/音频生成/indexTTS2-单（多）人语音模仿+多情绪+情感音色_2009276978364424193.json、音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
-- `easy showAnything`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSEmotionVector`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 7/8 个有
-- `Text Concatenate` —— 7/8 个有
-- `ShowText` —— 5/8 个有
-- `SaveText|pysssss` —— 4/8 个有
-- `PrimitiveString` —— 1/8 个有
-- `easy int` —— 1/8 个有
+- `PreviewAudio` —— 8/9 个有
+- `easy indexTTSAudioMerge` —— 7/9 个有
+- `easy indexTTSEmotionMerge` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `easy indexTTSEmotionAudio` —— 5/9 个有
+- `LoadImage` —— 2/9 个有
+- `Textbox` —— 1/9 个有
 
 ## 典型参数
 

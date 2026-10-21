@@ -3,54 +3,93 @@ name: text_to_image_video_lora_sampler_141
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.87175
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetVideoComponents, JjkText, KSampler, LoadVideo, LoraLoaderModelOnly, SaveImage, SaveVideo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.90275
+common_nodes: [AudioCrop, BasicGuider, Bjornulf_ShowFloat, CLIPLoader, CLIPTextEncode, CR Float To String, CR Text, CR Text Concatenate, CR Text Replace, EmptyLatentImage, GetNode, ImageBatchMultiV2, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, PreviewAudio, PrimitiveFloat, RH_GetAudioDuration, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, ShowAnything|Mie, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Topaz Iris版视频极速高清放大处理工具_2100310421151510530.json, 数字人/数字人/TopazLabs视频放大超清处理工作流_2101016263261777921.json, 数字人/数字人/Topaz极速高清放大Iris版 人像视频超分处理_2099947042050232322.json, 视频生成/图生视频/Topaz极速高清放大Iris版_人像视频超分处理_2101220952645390337.json]
+members: [数字人/数字人/MiniMax H3数字歌手字节4步，最高质量完美版_2111279715519655937.json, 数字人/数字人/动漫MV人物唱歌专用 视频生成处理工具_2100645683492638722.json, 数字人/数字人/动漫MV人物唱歌专用For anime MV｜数字人角色表演一条龙，视频成片直接发布_2100462340885012481.json, 数字人/数字人/极速数字人MV制作 小白友好高清多模态视频生成_2098859053823905793.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_141
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Topaz Iris版视频极速高清放大处理工具_2100310421151510530.json、数字人/数字人/TopazLabs视频放大超清处理工作流_2101016263261777921.json、数字人/数字人/Topaz极速高清放大Iris版 人像视频超分处理_2099947042050232322.json、视频生成/图生视频/Topaz极速高清放大Iris版_人像视频超分处理_2101220952645390337.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/MiniMax H3数字歌手字节4步，最高质量完美版_2111279715519655937.json、数字人/数字人/动漫MV人物唱歌专用 视频生成处理工具_2100645683492638722.json、数字人/数字人/动漫MV人物唱歌专用For anime MV｜数字人角色表演一条龙，视频成片直接发布_2100462340885012481.json、数字人/数字人/极速数字人MV制作 小白友好高清多模态视频生成_2098859053823905793.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `BasicGuider`
+- `Bjornulf_ShowFloat`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Float To String`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
 - `EmptyLatentImage`
-- `GetVideoComponents`
+- `GetNode`
+- `ImageBatchMultiV2`
 - `JjkText`
 - `KSampler`
-- `LoadVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `SaveVideo`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveFloat`
+- `RH_GetAudioDuration`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `ShowAnything|Mie`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `RH_Astra` —— 3/4 个有
-- `孤海注释` —— 3/4 个有
-- `ImageConcatMulti` —— 2/4 个有
-- `EmptyImage` —— 1/4 个有
-- `GH_ImageVideoComparer` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RH_TopazLabs_VideoUpscale` —— 1/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `ConcatTextOfUtils` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `LoraLoaderBypassModelOnly` —— 3/4 个有
+- `MiniMaxH3AVDecodeT8` —— 3/4 个有
+- `MiniMaxH3AudioConditioningT8` —— 3/4 个有
+- `MiniMaxH3DualClockSamplerT8` —— 3/4 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 3/4 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 3/4 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 3/4 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 3/4 个有
+- `PurgeVRAM_UTK` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `SolAttnMiniMax` —— 3/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 3/4 个有
+- `easy anythingIndexSwitch` —— 3/4 个有
+- `LoadVideo` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `BasicScheduler` —— 1/4 个有
+- `Bjornulf_ShowInt` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `KSamplerSelect` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
 
 ## 典型参数
 

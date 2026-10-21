@@ -1,40 +1,42 @@
 ---
 name: unknown_workflow_generic_181
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.5575
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.939714
+common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/1990003672761421825.json, 视频生成/图生视频/2036087236680228865.json, 视频生成/图生视频/1992457552340512770.json, 视频生成/图生视频/1992457015104696321.json, 视频生成/图生视频/1993837517334134785.json, 视频生成/文生视频/DG(已整理)：全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1993916589173047298.json]
+members: [音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json, 音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json, 音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json, 音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json, 音频生成/音频生成/🦖多角色对话配音（自定义音色）_2018213546974253057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_181
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1990003672761421825.json、视频生成/图生视频/2036087236680228865.json、视频生成/图生视频/1992457552340512770.json、视频生成/图生视频/1992457015104696321.json、视频生成/图生视频/1993837517334134785.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json、音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json、音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json、音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_sora2`
-- `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+全部 7 个 workflow 都包含：
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `FB_Qwen3TTSVoiceDesign`
+- `LayerUtility: PurgeVRAM V2`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Concatenate` —— 3/6 个有
-- `Comfly_sora2_character` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `CR Text` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `VRAMReserver` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `LoadAudio` —— 2/7 个有
+- `Text` —— 2/7 个有
+- `WhisperSTT` —— 2/7 个有
 
 ## 典型参数
 

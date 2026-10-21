@@ -1,71 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_148
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.718727
-common_nodes: [GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+frequency: 12
+level: strong
+coverage: 0.56125
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SimpleMath+, TTResolutionSelector, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
-missing: [Text Multiline]
-members: [图片生成/文生图/1967859229505761281.json, 视频生成/图生视频/1968454947522138113.json, 视频生成/图生视频/1967866937906724865.json, 视频生成/图生视频/1967847816360001537.json, 视频生成/图生视频/1967823701351739393.json, 视频生成/图生视频/1967789727392890881.json, 视频生成/图生视频/1968381285397868546.json, 视频生成/图生视频/1968419088865349633.json, 视频生成/图生视频/1967232757493534722.json, 视频生成/图生视频/1967220964087959554.json, 视频生成/图生视频/1967848289393606658.json]
+missing: []
+members: [视频生成/图生视频/2032479656754028546.json, 视频生成/图生视频/图生视频High-Definition Zoom Convert Images to Video_2094247562952925185.json, 视频生成/图生视频/2051999667881295873.json, 视频生成/图生视频/2051983699100614658.json, 视频生成/文生视频/LTX-2.3 图生视频（四宫格剧情版）_2037078723727466498.json, 视频生成/文生视频/LTX-2.3 文&图生视频（高清放大版）_2029905437574828033.json, 视频生成/文生视频/LTX-2.3+图生视频（四宫格剧情版）_2039691601596911617.json, 视频生成/文生视频/LTX-2.3_文&图生视频（单采极速版）_2042119919898202114.json, 视频生成/文生视频/LTX-2.3_文&图生视频（精简版）_2029879882641055746.json, 视频生成/文生视频/LTX2.3+全节点注释_2052022977276989442.json, 视频生成/文生视频/LTX2.3分镜视频生成+节点注释（自学版）_2052036301666439170.json, 视频生成/文生视频/【超强】LTX-2.3首尾帧_2032085446586535937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_148
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/1967859229505761281.json、视频生成/图生视频/1968454947522138113.json、视频生成/图生视频/1967866937906724865.json、视频生成/图生视频/1967847816360001537.json、视频生成/图生视频/1967823701351739393.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2032479656754028546.json、视频生成/图生视频/图生视频High-Definition Zoom Convert Images to Video_2094247562952925185.json、视频生成/图生视频/2051999667881295873.json、视频生成/图生视频/2051983699100614658.json、视频生成/文生视频/LTX-2.3 图生视频（四宫格剧情版）_2037078723727466498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
+全部 12 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
 - `ImageResizeKJv2`
+- `Int`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleMath+`
+- `TTResolutionSelector`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoScheduler` —— 9/11 个有
-- `CreateCFGScheduleFloatList` —— 7/11 个有
-- `LayerUtility: TextJoin` —— 7/11 个有
-- `RH_Captioner` —— 7/11 个有
-- `DWPreprocessor` —— 6/11 个有
-- `GetImageSizeAndCount` —— 6/11 个有
-- `ImageBlend` —— 6/11 个有
-- `VHS_LoadVideo` —— 6/11 个有
-- `Zoe-DepthMapPreprocessor` —— 6/11 个有
-- `WanVideoVACEStartToEndFrame` —— 5/11 个有
-- `Text Multiline` —— 4/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
-- `PrimitiveFloat` —— 2/11 个有
-- `RH_Translator` —— 2/11 个有
-- `easy cleanGpuUsed` —— 2/11 个有
-- `ImageStitch` —— 1/11 个有
-- `LayerUtility: TextJoinV2` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
+- `GetNode` —— 10/12 个有
+- `LTXVImgToVideoConditionOnly` —— 10/12 个有
+- `LTXVLatentUpsampler` —— 10/12 个有
+- `LatentUpscaleModelLoader` —— 10/12 个有
+- `RH_LLMAPI_Pro_Node` —— 10/12 个有
+- `SetNode` —— 10/12 个有
+- `Text` —— 10/12 个有
+- `easy showAnything` —— 10/12 个有
+- `ImageScaleBy` —— 8/12 个有
+- `LTXVImgToVideoInplaceKJ` —— 8/12 个有
+- `GuHaiAutoImageSplit` —— 6/12 个有
+- `ImageFromBatch+` —— 6/12 个有
+- `LTXVPreprocess` —— 6/12 个有
+- `DualCLIPLoader` —— 5/12 个有
+- `PreviewAny` —— 5/12 个有
+- `TextGenerateLTX2Prompt` —— 5/12 个有
+- `ComfyMathExpression` —— 4/12 个有
+- `FloatConstant` —— 4/12 个有
+- `PreviewImage` —— 4/12 个有
+- `PrimitiveBoolean` —— 4/12 个有
+- `easy cleanGpuUsed` —— 4/12 个有
+- `CR Text Replace` —— 2/12 个有
+- `ImageConcatMulti` —— 2/12 个有
+- `RH_Utils` —— 2/12 个有
+- `MultiTextConcatenate` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 12 | 100% |
+| 高度 | 25 | 25 - 25 | 12 | 100% |
 
 ## 常见问题
 
@@ -73,4 +89,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline
+- 宽度 中位数 97，观测区间 97 - 97，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）

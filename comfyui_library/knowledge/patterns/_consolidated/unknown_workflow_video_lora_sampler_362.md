@@ -2,81 +2,64 @@
 name: unknown_workflow_video_lora_sampler_362
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.932333
-common_nodes: [BasicScheduler, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImpactInt, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+level: moderate
+coverage: 0.6625
+common_nodes: [BasicGuider, BasicScheduler, Fast Groups Bypasser (rgthree), FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, FeiHouEasyH3RHPromptPreview, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderBypassModelOnly, ModelAttentionBackend, ResolutionSelector, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059081258998784002.json, 视频生成/图生视频/2080902822853435394.json, 视频生成/图生视频/2077018841644888066.json, 视频生成/图生视频/2067970994802872322.json, 视频生成/图生视频/2078005941840207873.json, 视频生成/图生视频/2059322431231324161.json]
+members: [视频生成/图生视频/MiniMax H3 Remix双采样多参_2092127971757879297.json, 视频生成/图生视频/极致简化 H3无限画布式_2095953999940898818.json, 视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2093210345958625282.json, 视频生成/图生视频/极致简化 MiniMax H3 全功能  自动提示词 工作流（已修复） (1)_2089935656989585409.json, 视频生成/图生视频/模特步汝窑-极致简化 MiniMax H3 全功能  自动提示词 工作流_2094828825057255426.json, 视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2092301452621467649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_362
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2059081258998784002.json、视频生成/图生视频/2080902822853435394.json、视频生成/图生视频/2077018841644888066.json、视频生成/图生视频/2067970994802872322.json、视频生成/图生视频/2078005941840207873.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Remix双采样多参_2092127971757879297.json、视频生成/图生视频/极致简化 H3无限画布式_2095953999940898818.json、视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2093210345958625282.json、视频生成/图生视频/极致简化 MiniMax H3 全功能  自动提示词 工作流（已修复） (1)_2089935656989585409.json、视频生成/图生视频/模特步汝窑-极致简化 MiniMax H3 全功能  自动提示词 工作流_2094828825057255426.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImpactInt`
+- `Fast Groups Bypasser (rgthree)`
+- `FeiHouEasyH3RH`
+- `FeiHouEasyH3RHLoader`
+- `FeiHouEasyH3RHOutput`
+- `FeiHouEasyH3RHPromptPreview`
+- `GetNode`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SimpleMath+`
-- `UNETLoader`
+- `LoraLoaderBypassModelOnly`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptRelaySmartEncode` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `Dapao_LlamaChat` —— 4/6 个有
-- `孤海注释` —— 4/6 个有
-- `LoaderGGUF` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `CR Text Replace` —— 1/6 个有
-- `Fast Bypasser (rgthree)` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/6 个有
+- `Label (rgthree)` —— 5/6 个有
+- `FeiHouEasyH3RHLoraStack` —— 4/6 个有
+- `ModelPreviewOverrideKJ` —— 4/6 个有
+- `RandomSeedNoise` —— 4/6 个有
+- `RandomNoise` —— 2/6 个有
+- `easy clearCacheAll` —— 2/6 个有
+- `CM_FloatToInt` —— 1/6 个有
+- `DuckHideNode` —— 1/6 个有
+- `Int` —— 1/6 个有
 - `SaveImage` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy convertAnything` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 489 - 489 | 6 | 100% |
-| 高度 | 25 | 24 - 25 | 6 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 489 - 489，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

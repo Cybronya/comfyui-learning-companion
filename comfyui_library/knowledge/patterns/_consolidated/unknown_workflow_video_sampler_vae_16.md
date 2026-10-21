@@ -3,68 +3,55 @@ name: unknown_workflow_video_sampler_vae_16
 type: Unknown Workflow
 frequency: 15
 level: moderate
-coverage: 0.893667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.9282
+common_nodes: [ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json, 视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json, 视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json, 视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json, 视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词_2086276081564344321.json, 视频生成/图生视频/minimaxh3吉卜力风格_2086267947819028481.json, 视频生成/图生视频/minimaxh3多参官方指南自动扩展提示词T1_2085348535347802114.json, 视频生成/图生视频/人物微表情变化_2097294907064012801.json, 视频生成/图生视频/人物表情变化动作_2097300292181258241.json, 视频生成/图生视频/人物表情语言变化_2098063808349696001.json, 视频生成/图生视频/双姝_2098043624184434690.json, 视频生成/图生视频/古装美女扮相_2098413882426609665.json, 视频生成/图生视频/快乐的小猫咪_2092480218379411457.json, 视频生成/图生视频/摘松果的松鼠_2091046140023234562.json]
+members: [视频生成/图生视频/2019437337008148481.json, 视频生成/图生视频/1927590039822438402.json, 视频生成/图生视频/1917815570186567682.json, 视频生成/图生视频/1925799442136666113.json, 视频生成/图生视频/1927551955353374722.json, 视频生成/图生视频/1916395426835005442.json, 视频生成/图生视频/1927541511028903938.json, 视频生成/图生视频/1927944176032464897.json, 视频生成/图生视频/1915051981709242369.json, 视频生成/图生视频/2039636071985713154.json, 视频生成/图生视频/2064931253647929346.json, 视频生成/图生视频/1934089550950260738.json, 视频生成/图生视频/电商带货FusionX-Phantom加速版14B_2108761890527735810.json, 视频生成/图生视频/1934241189509951489.json, 视频生成/文生视频/1935520036046176257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_16
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json、视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json、视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json、视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json、视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2019437337008148481.json、视频生成/图生视频/1927590039822438402.json、视频生成/图生视频/1917815570186567682.json、视频生成/图生视频/1925799442136666113.json、视频生成/图生视频/1927551955353374722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ImagePadKJ`
+- `ImageResizeKJ`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Text`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 12/15 个有
-- `MiniMaxH3ImageToVideo` —— 11/15 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/15 个有
-- `RH_Captioner` —— 11/15 个有
-- `TextConcatenate_UTK` —— 11/15 个有
-- `UNETLoader` —— 10/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/15 个有
-- `ResolutionSelector` —— 7/15 个有
-- `EnhancedLoadDiffusionModel` —— 5/15 个有
-- `LoraLoaderBypassModelOnly` —— 5/15 个有
-- `MiniMaxH3BlockCacheT8` —— 5/15 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 4/15 个有
-- `ImageConcatenateMulti_UTK` —— 3/15 个有
-- `LoadAudio` —— 3/15 个有
-- `PreviewImage` —— 3/15 个有
-- `RHHiddenNodes` —— 3/15 个有
-- `ExtractSubstring` —— 2/15 个有
-- `ImageResizeKJv2` —— 2/15 个有
-- `JWStringToFloat` —— 2/15 个有
-- `CreateVideo` —— 1/15 个有
-- `ImageFromBatch` —— 1/15 个有
-- `LoadVideoUI` —— 1/15 个有
-- `ModelAttentionBackend` —— 1/15 个有
-- `PD_Extract_Image` —— 1/15 个有
-- `SaveVideo` —— 1/15 个有
-- `easy indexAnything` —— 1/15 个有
+- `WanVideoTorchCompileSettings` —— 14/15 个有
+- `Primitive integer [Crystools]` —— 12/15 个有
+- `ImageConcatMulti` —— 10/15 个有
+- `PreviewImage` —— 10/15 个有
+- `Text Multiline` —— 10/15 个有
+- `WanVideoTeaCache` —— 8/15 个有
+- `easy clearCacheAll` —— 5/15 个有
+- `INTConstant` —— 3/15 个有
+- `CR Prompt Text` —— 2/15 个有
+- `SetNode` —— 2/15 个有
+- `ImageResizeKJv2` —— 1/15 个有
+- `RH_Translator` —— 1/15 个有
+- `WanVideoVRAMManagement` —— 1/15 个有
+- `easy cleanGpuUsed` —— 1/15 个有
 
 ## 典型参数
 

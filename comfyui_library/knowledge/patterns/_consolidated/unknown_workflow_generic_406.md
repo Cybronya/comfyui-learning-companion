@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_406
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.611
-common_nodes: [ResolutionSelector, SaveImage, b0e5ca93-2731-42b9-8e0a-d28ea851ff81]
+coverage: 0.68475
+common_nodes: [ImpactSwitch, LoadImage, RH_Captioner, SaveVideo, Textbox]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json]
+members: [视频生成/图生视频/2008349449990447106.json, 视频生成/图生视频/1977608241607778306.json, 视频生成/图生视频/1989509567753187329.json, 视频生成/图生视频/1998930755323580417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_406
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2008349449990447106.json、视频生成/图生视频/1977608241607778306.json、视频生成/图生视频/1989509567753187329.json、视频生成/图生视频/1998930755323580417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ResolutionSelector`
-- `SaveImage`
-- `b0e5ca93-2731-42b9-8e0a-d28ea851ff81`
+全部 4 个 workflow 都包含：
+- `ImpactSwitch`
+- `LoadImage`
+- `RH_Captioner`
+- `SaveVideo`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
+- `RH_Sora2_I2V` —— 3/4 个有
+- `easy showAnything` —— 2/4 个有
+- `ImageStitch` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RH_Grok_Video3` —— 1/4 个有
 
 ## 典型参数
 

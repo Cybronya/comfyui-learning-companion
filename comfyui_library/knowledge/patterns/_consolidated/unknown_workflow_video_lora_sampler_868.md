@@ -3,53 +3,33 @@ name: unknown_workflow_video_lora_sampler_868
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7135
-common_nodes: [Anything Everywhere, BatchCount+, CLIPVisionLoader, CR Text, CR Text Concatenate, ColorCorrectOfUtils, CreateCFGScheduleFloatList, Float, GetNode, ImageCASharpening+, ImageResize+, Int, JWInteger, JjkText, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, PreviewImage, PrimitiveBoolean, RHHiddenNodes, RH_Nano_Banana_Image2Image, SetNode, Text Load Line From File, VHS_LoadAudioUpload, VHS_Unbatch, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageListToImageBatch]
+coverage: 0.932
+common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1978583926098776065.json, 视频生成/图生视频/1983855696577990658.json]
+members: [视频生成/图生视频/1913868726649978882.json, 视频生成/图生视频/1935726272695689217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_868
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1978583926098776065.json、视频生成/图生视频/1983855696577990658.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913868726649978882.json、视频生成/图生视频/1935726272695689217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BatchCount+`
 - `CLIPVisionLoader`
-- `CR Text`
-- `CR Text Concatenate`
-- `ColorCorrectOfUtils`
-- `CreateCFGScheduleFloatList`
-- `Float`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `JWInteger`
-- `JjkText`
-- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `PreviewAudio`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `RH_Nano_Banana_Image2Image`
-- `SetNode`
-- `Text Load Line From File`
-- `VHS_LoadAudioUpload`
-- `VHS_Unbatch`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -58,18 +38,22 @@ source: knowledge_consolidation
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
 - `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
+- `easy int` —— 1/2 个有
 
 ## 典型参数
 

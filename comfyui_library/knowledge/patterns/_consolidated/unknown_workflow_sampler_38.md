@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub OmniWeaving Loader, SaveVideo]
+common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncode, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042119081003847682.json, 视频生成/图生视频/2042124474220290049.json]
+members: [图片生成/文生图/BitDance-14B-64x_2026611465637072898.json, 图片生成/文生图/BitDance字节-文生图_2026930242924843010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_38
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2042119081003847682.json、视频生成/图生视频/2042124474220290049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/BitDance-14B-64x_2026611465637072898.json、图片生成/文生图/BitDance字节-文生图_2026930242924843010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,15 +23,16 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LoadImage`
-- `RunningHub OmniWeaving Loader`
-- `SaveVideo`
+- `BitDanceDecode`
+- `BitDanceLoader`
+- `BitDanceResolution`
+- `BitDanceSampler`
+- `BitDanceTextEncode`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub OmniWeaving Sampler(Interpolation)` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(Ref2V)` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

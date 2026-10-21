@@ -3,68 +3,69 @@ name: unknown_workflow_video_sampler_vae_40
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8039
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.7136
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json, 视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json, 视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json, 视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json, 视频生成/图生视频/Minimax H3 图生视频｜冻结时间 360 环绕、首尾画面循环闭环｜+ HyperFlow 8 步 LoRA_2104492606691569665.json, 视频生成/图生视频/minimax_ref_fl_低显存真实感工作流_2097518131697766402.json, 视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json, 视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json, 视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json, 视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json]
+members: [视频生成/图生视频/1957474365233360898.json, 视频生成/图生视频/1956293638198362114.json, 视频生成/图生视频/1973164651716415490.json, 视频生成/文生视频/03-12-02-WAN2.1-参考人物视频转绘-Standin+Vace_1989933948379820033.json, 视频生成/文生视频/1957474365233360898.json, 视频生成/文生视频/1955702074303397890.json, 视频生成/文生视频/1955698165593751554.json, 视频生成/文生视频/1956763443317628929.json, 视频生成/文生视频/1957506592558215169.json, 视频生成/文生视频/1956266838781034498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_40
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json、视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json、视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json、视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json、视频生成/图生视频/Minimax H3 图生视频｜冻结时间 360 环绕、首尾画面循环闭环｜+ HyperFlow 8 步 LoRA_2104492606691569665.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1957474365233360898.json、视频生成/图生视频/1956293638198362114.json、视频生成/图生视频/1973164651716415490.json、视频生成/文生视频/03-12-02-WAN2.1-参考人物视频转绘-Standin+Vace_1989933948379820033.json、视频生成/文生视频/1957474365233360898.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
 - `VHS_VideoCombine`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `UNETLoader` —— 9/10 个有
-- `ResolutionSelector` —— 8/10 个有
-- `MiniMaxH3ImageToVideo` —— 7/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `MiniMaxChunkFeedForward` —— 6/10 个有
-- `MiniMaxLowVRAMAttention` —— 6/10 个有
-- `ModelAttentionBackend` —— 6/10 个有
-- `H3SigmaRefiner` —— 5/10 个有
-- `MiniMaxH3SigmaShift` —— 5/10 个有
-- `GetImageSizeAndCount` —— 4/10 个有
-- `LTXVConcatAVLatent` —— 4/10 个有
-- `LTXVSeparateAVLatent` —— 4/10 个有
-- `Yuan_RTXVideoUpscaleH3` —— 4/10 个有
-- `easy int` —— 4/10 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/10 个有
-- `ImageResizeKJv2` —— 2/10 个有
-- `MiniMaxH3HybridLoader` —— 2/10 个有
-- `PathchSageAttentionKJ` —— 2/10 个有
-- `VAEEncode` —— 2/10 个有
-- `DiffusionModelLoaderKJ` —— 1/10 个有
-- `ImagePadForOutpaint` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `SolAttnPatch` —— 1/10 个有
-- `ZNGB_ResizeImage` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `LoadWanVideoT5TextEncoder` —— 8/10 个有
+- `PreviewImage` —— 8/10 个有
+- `WanVideoLoraSelect` —— 8/10 个有
+- `WanVideoSetBlockSwap` —— 8/10 个有
+- `WanVideoSetLoRAs` —— 8/10 个有
+- `WanVideoTextEncode` —— 8/10 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `INTConstant` —— 7/10 个有
+- `WanVideoEmptyEmbeds` —— 7/10 个有
+- `GetNode` —— 6/10 个有
+- `ImageResizeKJv2` —— 6/10 个有
+- `SetNode` —— 6/10 个有
+- `VHS_LoadVideo` —— 6/10 个有
+- `WanVideoVACEEncode` —— 6/10 个有
+- `OpenposePreprocessor` —— 5/10 个有
+- `WanVideoVACEModelSelect` —— 5/10 个有
+- `WanVideoVACEStartToEndFrame` —— 5/10 个有
+- `easy imageRemBg` —— 5/10 个有
+- `ImageConcanate` —— 4/10 个有
+- `ImageConcatMulti` —— 4/10 个有
+- `CR Text` —— 3/10 个有
+- `ImpactInt` —— 2/10 个有
+- `Label (rgthree)` —— 2/10 个有
+- `WanVideoLoraSelectMulti` —— 2/10 个有
+- `WanVideoTextEncodeCached` —— 2/10 个有
+- `AIO_Preprocessor` —— 1/10 个有
+- `ImpactSwitch` —— 1/10 个有
+- `JWInteger` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
 
 ## 典型参数
 

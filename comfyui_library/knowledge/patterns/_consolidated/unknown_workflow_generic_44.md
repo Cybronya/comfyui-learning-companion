@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_generic_44
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.804
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.920286
+common_nodes: [LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036271751755210754.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2043547032144584705.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2045295642133667842.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2105586117281140738.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2108372556238639105.json, 音频生成/音频生成/全新声音模仿&语音克隆Qwen3 TTS_2015006488967778306.json, 音频生成/音频生成/声音克隆 Qwen3 TTS_2109114164743598082.json]
+members: [视频生成/图生视频/2040713981702180865.json, 视频生成/图生视频/2067073738482470914.json, 视频生成/图生视频/2048096626652225537.json, 视频生成/图生视频/Seedance2.0_API版-全能参考(创建ID)生视频_2111086775916646401.json, 视频生成/图生视频/2052710149265084417.json, 视频生成/图生视频/2058897517445734401.json, 视频生成/图生视频/2067543410566848514.json, 视频生成/图生视频/2054420948320825346.json, 视频生成/图生视频/2066951039068229633.json, 视频生成/图生视频/2067070454556348417.json, 视频生成/图生视频/2045869563652345857.json, 视频生成/图生视频/2042939919613562882.json, 视频生成/图生视频/2038355966122528769.json, 视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_44
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2040713981702180865.json、视频生成/图生视频/2067073738482470914.json、视频生成/图生视频/2048096626652225537.json、视频生成/图生视频/Seedance2.0_API版-全能参考(创建ID)生视频_2111086775916646401.json、视频生成/图生视频/2052710149265084417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
+全部 14 个 workflow 都包含：
 - `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 5/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `PrimitiveFloat` —— 1/13 个有
-- `Text Multiline` —— 1/13 个有
+- `LoadVideo` —— 13/14 个有
+- `RH_SparkVideoAssetCreate` —— 13/14 个有
+- `RH_SparkVideoAssetIdsMerge` —— 13/14 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 11/14 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/14 个有
+- `PreviewAny` —— 1/14 个有
+- `RH_SparkVideoAssetQuery` —— 1/14 个有
+- `SoundFlow_TrimAudio` —— 1/14 个有
 
 ## 典型参数
 

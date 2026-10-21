@@ -3,56 +3,73 @@ name: unknown_workflow_video_sampler_vae_22
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.969769
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.755538
+common_nodes: [FluxResolutionNode, ImpactSwitch, Int, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Translator, VHS_VideoCombine, WanVideoApplyNAG, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
-missing: [String Literal]
-members: [视频生成/图生视频/1909172301974089729.json, 视频生成/图生视频/1907301627349622785.json, 视频生成/图生视频/2043935340162981889.json, 视频生成/图生视频/1926800707893010433.json, 视频生成/图生视频/2044216380353945602.json, 视频生成/图生视频/2044595167281291265.json, 视频生成/图生视频/1923033044188319745.json, 视频生成/图生视频/2044749490703310849.json, 视频生成/文生视频/1922920161509261314.json, 视频生成/文生视频/1923393888814624770.json, 视频生成/文生视频/1933051482759630849.json, 视频生成/文生视频/CausVid-3步720文生视频(Wan2.1&MoviiGen&Skyreels)_2072999770106667008.json, 视频生成/文生视频/Self Forcing-文生图&图生视频_2072999743447670784.json]
+missing: []
+members: [视频生成/图生视频/1936210660181315586.json, 视频生成/图生视频/1946269796986183681.json, 视频生成/图生视频/FusionX-图生视频_1934581158267002882.json, 视频生成/图生视频/1941082569058447361.json, 视频生成/图生视频/1942499469692964865.json, 视频生成/图生视频/1942894175224553474.json, 视频生成/图生视频/1949145105173815297.json, 视频生成/图生视频/1948235553522221057.json, 视频生成/图生视频/1945681927221465089.json, 视频生成/图生视频/1987841983572021250.json, 视频生成/文生视频/1934812520991662082.json, 视频生成/文生视频/1940565961189781506.json, 视频生成/文生视频/1940978313181741057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_22
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1909172301974089729.json、视频生成/图生视频/1907301627349622785.json、视频生成/图生视频/2043935340162981889.json、视频生成/图生视频/1926800707893010433.json、视频生成/图生视频/2044216380353945602.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1936210660181315586.json、视频生成/图生视频/1946269796986183681.json、视频生成/图生视频/FusionX-图生视频_1934581158267002882.json、视频生成/图生视频/1941082569058447361.json、视频生成/图生视频/1942499469692964865.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
+- `FluxResolutionNode`
+- `ImpactSwitch`
+- `Int`
+- `JWInteger`
+- `JjkText`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RH_Translator`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoApplyNAG`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 12/13 个有
-- `INTConstant` —— 11/13 个有
-- `String Literal` —— 11/13 个有
-- `ImageResizeKJ` —— 10/13 个有
-- `LoadImage` —— 10/13 个有
-- `GetImageSizeAndCount` —— 8/13 个有
-- `WanVideoVACEStartToEndFrame` —— 8/13 个有
-- `WanVideoSLG` —— 7/13 个有
-- `WanVideoTeaCache` —— 7/13 个有
-- `WanVideoVACEModelSelect` —— 7/13 个有
-- `PreviewImage` —— 6/13 个有
-- `MaskPreview+` —— 5/13 个有
-- `AIO_Preprocessor` —— 2/13 个有
-- `RH_Captioner` —— 2/13 个有
-- `VHS_LoadVideo` —— 2/13 个有
-- `WanVideoLoraSelect` —— 2/13 个有
-- `TextInput_` —— 1/13 个有
+- `ColorMatch` —— 12/13 个有
+- `Evaluate Integers` —— 12/13 个有
+- `ImageResize+` —— 12/13 个有
+- `LoadImage` —— 12/13 个有
+- `MMAudioFeatureUtilsLoader` —— 12/13 个有
+- `MMAudioModelLoader` —— 12/13 个有
+- `MMAudioSampler` —— 12/13 个有
+- `PreviewAudio` —— 12/13 个有
+- `RH_Captioner` —— 12/13 个有
+- `RH_Prompter` —— 12/13 个有
+- `SDVN Any Show` —— 12/13 个有
+- `TextCombinerTwo` —— 12/13 个有
+- `easy showAnything` —— 12/13 个有
+- `InversionDemoLazyIndexSwitch` —— 11/13 个有
+- `WanVideoBlockSwap` —— 11/13 个有
+- `PreviewImage` —— 8/13 个有
+- `InversionDemoLazySwitch` —— 7/13 个有
+- `LoadAudio` —— 7/13 个有
+- `PrimitiveBoolean` —— 7/13 个有
+- `CR Upscale Image` —— 1/13 个有
+- `ImageFromBatch+` —— 1/13 个有
+- `LayerColor: Brightness & Contrast` —— 1/13 个有
+- `LoadImagesFromURL` —— 1/13 个有
+- `WanVideoLoraSelect` —— 1/13 个有
+- `WanVideoTeaCache` —— 1/13 个有
+- `easy cleanGpuUsed` —— 1/13 个有
 
 ## 典型参数
 
@@ -64,4 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

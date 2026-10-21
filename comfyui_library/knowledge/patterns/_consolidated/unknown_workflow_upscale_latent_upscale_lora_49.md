@@ -1,86 +1,114 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_49
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.9538
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSizeAndCount, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSetAudioRefTokens, LTXVTiledVAEDecode, LatentUpscaleModelLoader, LoadVideoUI, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced]
+coverage: 0.8455
+common_nodes: [Any Switch (rgthree), Audio Duration (mtb), AudioCrop, CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PreviewAny, PrimitiveBoolean, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, Sigmas Rescale, SimpleMathDual+, SolidMask, VAEDecodeTiled, easy convertAnything, easy ifElse, easy positive]
 problems: []
 missing: []
-members: [数字人/数字人/真人对口型 Ltx2.3 lipdub_2054752281408614401.json, 视频生成/图生视频/LTX2.3翻译+重新对口型_2111401362473963522.json, 视频生成/文生视频/LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522.json, 视频生成/文生视频/视频重说话3.0｜OmniNFT+Relay+蒸馏1.1｜换词对口型_2057730271897800705.json, 音频生成/音频生成/LTX2.3--视频对口型_2054004846319161346.json]
+members: [视频生成/图生视频/2030925818993582082.json, 视频生成/图生视频/2031738492585254914.json, 视频生成/图生视频/2031034066862084097.json, 视频生成/图生视频/2045119325643743233.json, 视频生成/图生视频/2045304246991593473.json, 视频生成/文生视频/LTX2.3 文_图_音_生视频 1080P 多合一_2030698400957603841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_49
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/真人对口型 Ltx2.3 lipdub_2054752281408614401.json、视频生成/图生视频/LTX2.3翻译+重新对口型_2111401362473963522.json、视频生成/文生视频/LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522.json、视频生成/文生视频/视频重说话3.0｜OmniNFT+Relay+蒸馏1.1｜换词对口型_2057730271897800705.json、音频生成/音频生成/LTX2.3--视频对口型_2054004846319161346.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2030925818993582082.json、视频生成/图生视频/2031738492585254914.json、视频生成/图生视频/2031034066862084097.json、视频生成/图生视频/2045119325643743233.json、视频生成/图生视频/2045304246991593473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Audio Duration (mtb)`
+- `AudioCrop`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CreateVideo`
 - `EmptyLTXVLatentVideo`
-- `GetImageSizeAndCount`
+- `GetImageSize`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
 - `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LTXVSetAudioRefTokens`
-- `LTXVTiledVAEDecode`
 - `LatentUpscaleModelLoader`
-- `LoadVideoUI`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `MathExpression|pysssss`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `Sigmas Rescale`
+- `SimpleMathDual+`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `easy convertAnything`
+- `easy ifElse`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `ResizeImageMaskNode` —— 3/5 个有
-- `Text Multiline` —— 3/5 个有
-- `VHS_VideoCombine` —— 3/5 个有
-- `Apply Whisper` —— 2/5 个有
-- `CreateVideo` —— 2/5 个有
-- `DeepTranslatorTextNode` —— 2/5 个有
-- `Image_Resize_longsize` —— 2/5 个有
-- `JWImageSequenceExtractFromBatch` —— 2/5 个有
-- `LTX2_NAG` —— 2/5 个有
-- `PromptRelaySmartEncode` —— 2/5 个有
-- `SaveVideo` —— 2/5 个有
-- `VAELoader` —— 2/5 个有
-- `easy promptConcat` —— 2/5 个有
-- `image_scale_pixel_v2` —— 2/5 个有
-- `CM_FloatToInt` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `VHS_VideoInfo` —— 1/5 个有
+- `CheckpointLoaderSimple` —— 5/6 个有
+- `LTXVAudioVAELoader` —— 5/6 个有
+- `LTXVEnhanceAVideoKJ` —— 5/6 个有
+- `easy float` —— 5/6 个有
+- `ImageBatchMulti` —— 3/6 个有
+- `ImageScaleToTotalPixels` —— 3/6 个有
+- `LTXVAddGuideMulti` —— 3/6 个有
+- `PrimitiveString` —— 3/6 个有
+- `ResizeImagesByShorterEdge` —— 3/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `TextSplitByDelimiter` —— 3/6 个有
+- `easy batchAnything` —— 3/6 个有
+- `easy forLoopEnd` —— 3/6 个有
+- `easy forLoopStart` —— 3/6 个有
+- `easy imagesSplitImage` —— 3/6 个有
+- `easy indexAnything` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `easy lengthAnything` —— 3/6 个有
+- `CM_IntToFloat` —— 2/6 个有
+- `GetNode` —— 2/6 个有
+- `LTX2SamplingPreviewOverride` —— 2/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `VHS_VideoCombine` —— 2/6 个有
+- `图像缩放V2_孤海` —— 2/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `UNETLoader` —— 1/6 个有
+- `VAELoader` —— 1/6 个有
+- `easy anythingIndexSwitch` —— 1/6 个有
+- `easy blocker` —— 1/6 个有
+- `easy compare` —— 1/6 个有
+- `easy mathInt` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 5 | 100% |
-| 高度 | 24 | 24 - 24 | 5 | 100% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -88,5 +116,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

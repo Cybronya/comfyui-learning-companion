@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_generic_408
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.533333
-common_nodes: [CLIPLoader, PreviewAny, TextGenerate]
+coverage: 0.8775
+common_nodes: [GetImageSizeAndCount, ImageScaleDownToSize, LoadAudio, LoadImage, RH_Wan2GPNode, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json, comfyui-workflow-templates-json/llm_qwen3_text_gen.json, comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json]
+members: [视频生成/图生视频/1933692868194426881.json, 视频生成/图生视频/1933127868404932610.json, 视频生成/图生视频/1933153542792486914.json, 音频生成/音频生成/数字人Avatar非真人角色加速工作流_1933377923841699841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_408
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json、comfyui-workflow-templates-json/llm_qwen3_text_gen.json、comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1933692868194426881.json、视频生成/图生视频/1933127868404932610.json、视频生成/图生视频/1933153542792486914.json、音频生成/音频生成/数字人Avatar非真人角色加速工作流_1933377923841699841.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `PreviewAny`
-- `TextGenerate`
+全部 4 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageScaleDownToSize`
+- `LoadAudio`
+- `LoadImage`
+- `RH_Wan2GPNode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
+- `CR Prompt Text` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 

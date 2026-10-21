@@ -3,38 +3,34 @@ name: unknown_workflow_generic_99
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.978778
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.939333
+common_nodes: [LoadImage, RH_Sora2_I2V, RH_Translator, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
+members: [视频生成/图生视频/1995670412317097986.json, 视频生成/图生视频/1976172660042416130.json, 视频生成/图生视频/1982391701874589698.json, 视频生成/图生视频/1986398507370246145.json, 视频生成/图生视频/1988885458224549890.json, 视频生成/图生视频/1983409112073576449.json, 视频生成/图生视频/1977231674360635394.json, 视频生成/文生视频/1976172660042416130.json, 视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_2027277300596744193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_99
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1995670412317097986.json、视频生成/图生视频/1976172660042416130.json、视频生成/图生视频/1982391701874589698.json、视频生成/图生视频/1986398507370246145.json、视频生成/图生视频/1988885458224549890.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `RH_Translator`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
-- `Text` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `RH_Sora2_T2V` —— 3/9 个有
+- `Text Concatenate` —— 1/9 个有
 
 ## 典型参数
 

@@ -3,34 +3,31 @@ name: unknown_workflow_video_109
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4925
-common_nodes: [GetVideoComponents, JjkText, RH_AlibabaHappyhorse10TextToVideo, VHS_VideoCombine]
+coverage: 0.75
+common_nodes: [AudioCrop, CR Prompt Text, DottedWaveformVisualizer, LoadAudio, VHS_VideoCombine]
 problems: []
-missing: []
-members: [视频生成/文生视频/Happyhorse 1.0快乐小马 文生视频_2050856357435330561.json, 视频生成/文生视频/Happyhorse1.0-快乐马-视频新王-文生视频_2048744014261788674.json]
+missing: [CR Prompt Text]
+members: [视频生成/文生视频/1962785393705922562.json, 音频生成/音频生成/DotWaveform动态点状波形音频转视频V1_1963134970149711874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_109
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Happyhorse 1.0快乐小马 文生视频_2050856357435330561.json、视频生成/文生视频/Happyhorse1.0-快乐马-视频新王-文生视频_2048744014261788674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1962785393705922562.json、音频生成/音频生成/DotWaveform动态点状波形音频转视频V1_1963134970149711874.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetVideoComponents`
-- `JjkText`
-- `RH_AlibabaHappyhorse10TextToVideo`
+- `AudioCrop`
+- `CR Prompt Text`
+- `DottedWaveformVisualizer`
+- `LoadAudio`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
 
 ## 典型参数
 
@@ -42,4 +39,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

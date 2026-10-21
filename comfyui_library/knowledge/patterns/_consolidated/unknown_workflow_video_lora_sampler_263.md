@@ -2,88 +2,98 @@
 name: unknown_workflow_video_lora_sampler_263
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.594875
-common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), GetNode, Int, JjkText, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RH_Utils, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, ttN concat]
-problems: []
+level: strong
+coverage: 0.83625
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Apply LoRA Stack, CR Seed, CR Text, CheckpointLoaderSimple, ComfySwitchNode, ConditioningZeroOut, Convert Masks to Images, DiffusionModelLoaderKJ, INTConstant, Image Batch, ImageCompositeMasked, ImageScale, InvertMask, KSampler, LoadImage, ModelSamplingSD3, PrimitiveBoolean, SAM3_TrackPreview, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy loraStack]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2071042945586909186.json, 视频生成/图生视频/2068617926189600770.json, 视频生成/图生视频/2067556103998763009.json, 视频生成/图生视频/2067570521318969346.json, 视频生成/图生视频/2067587703197224961.json, 视频生成/图生视频/2066087123450683394.json, 视频生成/图生视频/2072548210463301634.json, 视频生成/图生视频/2068587096239071233.json]
+members: [视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json, 视频生成/图生视频/2077936004870266882.json, 视频生成/图生视频/Scail2-长视频动作迁移_2093937361074872322.json, 视频生成/图生视频/Scail2-长视频角色替换_2093940597882179585.json, 视频生成/图生视频/🔪🔪终极效率版！SCAIL-2动作迁移&角色替换拆解工作流03集_2089247269597048834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_263
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2071042945586909186.json、视频生成/图生视频/2068617926189600770.json、视频生成/图生视频/2067556103998763009.json、视频生成/图生视频/2067570521318969346.json、视频生成/图生视频/2067587703197224961.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json、视频生成/图生视频/2077936004870266882.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `CS-LTXGridDirector`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Apply LoRA Stack`
+- `CR Seed`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ComfySwitchNode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `Int`
-- `JjkText`
-- `KSamplerSelect`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Utils`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `Convert Masks to Images`
+- `DiffusionModelLoaderKJ`
+- `INTConstant`
+- `Image Batch`
+- `ImageCompositeMasked`
+- `ImageScale`
+- `InvertMask`
+- `KSampler`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `PrimitiveBoolean`
+- `SAM3_TrackPreview`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `ttN concat`
+- `VHS_VideoInfoLoaded`
+- `WanContextWindowsManual`
+- `WanSCAILToVideo`
+- `easy loraStack`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 7/8 个有
-- `孤海注释` —— 7/8 个有
-- `MultiTextConcatenate` —— 4/8 个有
-- `TTResolutionSelector` —— 4/8 个有
-- `AILab_QwenVL_Advanced` —— 1/8 个有
-- `Bjornulf_TextToStringAndSeed` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `ConcatTextOfUtils` —— 1/8 个有
-- `FlashVSRNode` —— 1/8 个有
-- `ImageLoader` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `RH_RhartImageG2ImageToImage` —— 1/8 个有
-- `RegexReplace` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `SaveTextNode` —— 1/8 个有
-- `easy positive` —— 1/8 个有
-- `easy promptConcat` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
-- `kkRegexNode` —— 1/8 个有
+- `FastGroupsBypassSwitch` —— 7/8 个有
+- `GetNode` —— 7/8 个有
+- `SetNode` —— 7/8 个有
+- `Text` —— 2/8 个有
+- `Any Switch (rgthree)` —— 1/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `Fast Muter (rgthree)` —— 1/8 个有
+- `GIMMVFI_interpolate` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LazySwitch2way` —— 1/8 个有
+- `Seed (rgthree)` —— 1/8 个有
+- `easy convertAnything` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 8 | 8 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 8，8 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

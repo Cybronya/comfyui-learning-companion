@@ -3,32 +3,36 @@ name: unknown_workflow_generic_763
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8055
-common_nodes: [LoadImage, SaveImage, ShowText|pysssss, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.7945
+common_nodes: [ImageLoader, MultiplePathsInput, Qwen3_VQA, SaveImage, VideoLoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json, 音频生成/音频生成/qwen3.5工作流+歌词创作_2042814512310521857.json]
+members: [图片生成/文生图/1986329254659051521.json, 视频生成/图生视频/1999384812546818049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_763
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json、音频生成/音频生成/qwen3.5工作流+歌词创作_2042814512310521857.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1986329254659051521.json、视频生成/图生视频/1999384812546818049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
+- `ImageLoader`
+- `MultiplePathsInput`
+- `Qwen3_VQA`
 - `SaveImage`
-- `ShowText|pysssss`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VideoLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_644
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.538
-common_nodes: [Bjornulf_ShowStringText, Comfly_Flux_Kontext, GetNode, LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage, SetNode, ShowText|pysssss]
+frequency: 3
+level: moderate
+coverage: 0.301667
+common_nodes: [JjkText, RH_RhartAudioSunoV55Custom, SaveAudio, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/1928512876661841921.json, 图片生成/文生图/黑森林- Flux kontext 一句话图像编辑 _ RunningHub专用节点工作流_1928512876661841921.json]
+members: [音频生成/音频生成/Suno V5.5 音频生成_2080104006726275074.json, 音频生成/音频生成/Suno_Custom自定义音乐生成（RH版）_2054438474958295041.json, 音频生成/音频生成/suno音乐生成_2057015174275624962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_644
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1928512876661841921.json、图片生成/文生图/黑森林- Flux kontext 一句话图像编辑 _ RunningHub专用节点工作流_1928512876661841921.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Suno V5.5 音频生成_2080104006726275074.json、音频生成/音频生成/Suno_Custom自定义音乐生成（RH版）_2054438474958295041.json、音频生成/音频生成/suno音乐生成_2057015174275624962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：30%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Bjornulf_ShowStringText`
-- `Comfly_Flux_Kontext`
-- `GetNode`
-- `LoadImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
+全部 3 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartAudioSunoV55Custom`
+- `SaveAudio`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

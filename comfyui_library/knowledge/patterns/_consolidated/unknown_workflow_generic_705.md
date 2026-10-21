@@ -3,38 +3,28 @@ name: unknown_workflow_generic_705
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.917
-common_nodes: [CR Prompt Text, LoadAudio, LoadImage, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, easy clearCacheAll, easy int, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.5835
+common_nodes: [03921aea-a70e-44b4-bc77-f6bda10f2120, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037850701509959682.json, 视频生成/图生视频/2037822164128239618.json]
+members: [comfyui-workflow-templates-json/image_ernie_image.json, comfyui-workflow-templates-json/image_ernie_image_turbo.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_705
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2037850701509959682.json、视频生成/图生视频/2037822164128239618.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_ernie_image.json、comfyui-workflow-templates-json/image_ernie_image_turbo.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `LoadImage`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy int`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `03921aea-a70e-44b4-bc77-f6bda10f2120`
+- `SaveImage`
 
 ## 典型参数
 

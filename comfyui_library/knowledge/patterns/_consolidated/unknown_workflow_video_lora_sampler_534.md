@@ -3,95 +3,78 @@ name: unknown_workflow_video_lora_sampler_534
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.90075
-common_nodes: [1hew_StringJoinMulti, AnyBooleanSwitch, CFGGuider, CLIPLoader, CLIPTextEncode, DownloadAndLoadGIMMVFIModel, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GIMMVFI_interpolate, GetImageSize, INTConstant, ImageConcatMulti, ImageScaleToTotalPixels, ImpactControlBridge, ImpactNeg, Int, KSamplerAdvanced, KSamplerSelect, Logic Comparison AND, LoraLoaderModelOnly, ModelSamplingSD3, PainterVRAM, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SimpleMath+, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideo, ZML_AnyTypeSwitchFive, easy ifElse, workflow>load image01, workflow>load image02, workflow>load image03]
-problems: []
+coverage: 0.875
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR String To Combo, ImageResizeKJ, ImpactInt, ImpactStringSelector, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RH_LLMAPI_NODE, SimpleMath+, SplitStringByDelimiter, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2027331216810184706.json, 视频生成/图生视频/2039915994931531777.json, 视频生成/图生视频/2040088399033405441.json, 视频生成/文生视频/AI换装丨Flux2-Klein＋Wan2.2丨换装试穿·转身视频_2099769122765758466.json]
+members: [视频生成/图生视频/1964309918603988994.json, 视频生成/图生视频/2018166622560718849.json, 视频生成/图生视频/1940692152370311170.json, 视频生成/文生视频/1931150479697620994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_534
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2027331216810184706.json、视频生成/图生视频/2039915994931531777.json、视频生成/图生视频/2040088399033405441.json、视频生成/文生视频/AI换装丨Flux2-Klein＋Wan2.2丨换装试穿·转身视频_2099769122765758466.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1964309918603988994.json、视频生成/图生视频/2018166622560718849.json、视频生成/图生视频/1940692152370311170.json、视频生成/文生视频/1931150479697620994.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `1hew_StringJoinMulti`
-- `AnyBooleanSwitch`
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DownloadAndLoadGIMMVFIModel`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GIMMVFI_interpolate`
-- `GetImageSize`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageScaleToTotalPixels`
-- `ImpactControlBridge`
-- `ImpactNeg`
-- `Int`
-- `KSamplerAdvanced`
-- `KSamplerSelect`
-- `Logic Comparison AND`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR String To Combo`
+- `ImageResizeKJ`
+- `ImpactInt`
+- `ImpactStringSelector`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `PainterVRAM`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `RH_Captioner`
+- `RH_LLMAPI_NODE`
 - `SimpleMath+`
-- `Text Multiline`
+- `SplitStringByDelimiter`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
-- `ZML_AnyTypeSwitchFive`
-- `easy ifElse`
-- `workflow>load image01`
-- `workflow>load image02`
-- `workflow>load image03`
 
 **可变部分**（部分 workflow 才有）：
-- `TT_img_enc_v2` —— 1/4 个有
-- `TextBox` —— 1/4 个有
-- `Textbox` —— 1/4 个有
-- `ZML_SwitchOutput` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `JoinStringMulti` —— 2/4 个有
+- `JoinStrings` —— 2/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 12 | 4 - 12 | 4 | 65% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | 14 | 8 - 20 | 4 | 57% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
+| 采样算法 | uni_pc | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 4 - 12，4 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 采样步数 中位数 14，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_654
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [CR Prompt Text, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.95
+common_nodes: [LoadAudio, SaveAudio, SaveAudioMP3, Text Multiline, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSGenerateSimple]
 problems: []
-missing: [CR Prompt Text]
-members: [图片生成/文生图/1967592096012132354.json, 图片生成/文生图/1991528296819204097.json]
+missing: []
+members: [音频生成/音频生成/「10人AI群口相声_Pia戏」生成器_2009961723846991874.json, 音频生成/音频生成/多角色有声书生成器1.0_2010153884097978369.json, 音频生成/音频生成/相声生成器（双人对话）tts2_2010375033650155521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_654
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1967592096012132354.json、图片生成/文生图/1991528296819204097.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/「10人AI群口相声_Pia戏」生成器_2009961723846991874.json、音频生成/音频生成/多角色有声书生成器1.0_2010153884097978369.json、音频生成/音频生成/相声生成器（双人对话）tts2_2010375033650155521.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SaveAudioMP3`
+- `Text Multiline`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSAudioMerge`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng4_Image2Image` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `ProcessString` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,5 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,36 +3,33 @@ name: unknown_workflow_generic_829
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.727
-common_nodes: [LoadAudio, PrimitiveBoolean, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, TranscribeSrt, VHS_LoadVideo, easy boolean, easy ifElse, easy saveText, easy showAnything]
+coverage: 0.889
+common_nodes: [CR Prompt Text, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RH_Wan2GPNode, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2071425658730930178.json, 音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2075846413833035777.json]
+members: [视频生成/图生视频/1932591437974532098.json, 视频生成/图生视频/1932144704442236930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_829
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2071425658730930178.json、音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2075846413833035777.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1932591437974532098.json、视频生成/图生视频/1932144704442236930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
-- `PrimitiveBoolean`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `TranscribeSrt`
-- `VHS_LoadVideo`
-- `easy boolean`
-- `easy ifElse`
-- `easy saveText`
-- `easy showAnything`
+- `LoadImage`
+- `RH_Wan2GPNode`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_125
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.7868
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.8668
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, H3SigmaRefiner, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, PrimitiveFloat, RH_Screenwriter, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner, WujiH3PromptEnhancer, ZML_IntegerFloatConverter, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3视频复刻角色替换二创翻拍工作流，视频生视频图生视频方案_2106616300503134209.json, 视频生成/图生视频/MiniMax H3超强商品视频展示｜电商产品图生视频带货神器_2108008108562931714.json, 视频生成/图生视频/MiniMax H3音频驱动数字人对口型唱歌说话口播Remix文戏版方案_2105744989383913473.json, 视频生成/图生视频/MiniMax_H3九图三音多参二采工作流，文生视频图生视频多参考方案_2109441522717515777.json, 视频生成/图生视频/Minima H3武戏工作流 动作场景视频生成_2109003959313719297.json]
+members: [视频生成/图生视频/MV创作音频驱动对口型｜MiniMax-H3开源数字人生成_2094794949479981057.json, 视频生成/图生视频/MiniMax-H3音频驱动对口型数字人｜MV创作专用开源版_2094550723869626370.json, 视频生成/图生视频/MiniMax-H3音频驱动数字人｜MV创作专用生成_2095582163516350466.json, 视频生成/图生视频/音频驱动对口型数字人｜MiniMax-H3 MV创作专用_2092395157151895554.json, 视频生成/文生视频/多参首尾帧多合一分镜｜MiniMax-H3文生图生视频制作_2092895660407353345.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_125
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3视频复刻角色替换二创翻拍工作流，视频生视频图生视频方案_2106616300503134209.json、视频生成/图生视频/MiniMax H3超强商品视频展示｜电商产品图生视频带货神器_2108008108562931714.json、视频生成/图生视频/MiniMax H3音频驱动数字人对口型唱歌说话口播Remix文戏版方案_2105744989383913473.json、视频生成/图生视频/MiniMax_H3九图三音多参二采工作流，文生视频图生视频多参考方案_2109441522717515777.json、视频生成/图生视频/Minima H3武戏工作流 动作场景视频生成_2109003959313719297.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MV创作音频驱动对口型｜MiniMax-H3开源数字人生成_2094794949479981057.json、视频生成/图生视频/MiniMax-H3音频驱动对口型数字人｜MV创作专用开源版_2094550723869626370.json、视频生成/图生视频/MiniMax-H3音频驱动数字人｜MV创作专用生成_2095582163516350466.json、视频生成/图生视频/音频驱动对口型数字人｜MiniMax-H3 MV创作专用_2092395157151895554.json、视频生成/文生视频/多参首尾帧多合一分镜｜MiniMax-H3文生图生视频制作_2092895660407353345.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -26,73 +26,61 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
+- `H3SigmaRefiner`
 - `JjkText`
 - `KSampler`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
 - `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `ModelAttentionBackend`
+- `PreviewAny`
 - `PrimitiveFloat`
+- `RH_Screenwriter`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SolAttnMiniMax`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WujiCleaner`
+- `WujiH3PromptEnhancer`
+- `ZML_IntegerFloatConverter`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 4/5 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 4/5 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 4/5 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `孤海注释` —— 4/5 个有
-- `GetNode` —— 3/5 个有
-- `LoadAudio` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `ConcatTextOfUtils` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `CR Text Concatenate` —— 1/5 个有
-- `DA3Inference` —— 1/5 个有
-- `DA3Render` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Any Switch (rgthree)` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `WujiAudioLoader` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `AudioSeparation` —— 1/5 个有
 - `Int` —— 1/5 个有
-- `LoadDA3Model` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `MiniMaxChunkFeedForward` —— 1/5 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/5 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/5 个有
-- `MiniMaxLowVRAMAttention` —— 1/5 个有
-- `MuyeTextEditOutput` —— 1/5 个有
-- `ShowAnything|Mie` —— 1/5 个有
-- `VAEDecodeAudio` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `VHS_LoadVideoFFmpeg` —— 1/5 个有
-- `VHS_VideoInfo` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 | 采样步数 | 4 | 4 - 4 | 5 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
 | 采样算法 | er_sde | - | 5 | 100% |
 | 调度器 | beta | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
@@ -102,11 +90,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，5 个样本，一致性 100%
 - 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -3,59 +3,90 @@ name: unknown_workflow_video_upscale_latent_upscale_66
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.954167
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyHunyuanVideo15Latent, HunyuanVideo15LatentUpscaleWithModel, HunyuanVideo15SuperResolution, KSamplerSelect, LatentUpscaleModelLoader, ModelSamplingSD3, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.672
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006663001679597569.json, 视频生成/文生视频/HUNYUAN 1.5 T2V 4步极速版_2073281127351144450.json, 视频生成/文生视频/HUNYUAN 1.5 T2V SR_2073280317422661634.json, 视频生成/文生视频/混元1.5T2V+超分-Aiwood_1992023623716368385.json, 视频生成/文生视频/混元1.5文生视频加速版720P_2005971109587668993.json, 视频生成/文生视频/混元1.5文生视频加速版720P_2016675572935565313.json]
+members: [视频生成/图生视频/2075062217422229506.json, 视频生成/图生视频/2075055600450494465.json, 视频生成/图生视频/2058811131501830146.json, 视频生成/图生视频/2058206526581600258.json, 视频生成/图生视频/2058353151778058241.json, 视频生成/文生视频/LTX2.3 Sulphur TI2V 文生图生视频_2075062888326324225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_66
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2006663001679597569.json、视频生成/文生视频/HUNYUAN 1.5 T2V 4步极速版_2073281127351144450.json、视频生成/文生视频/HUNYUAN 1.5 T2V SR_2073280317422661634.json、视频生成/文生视频/混元1.5T2V+超分-Aiwood_1992023623716368385.json、视频生成/文生视频/混元1.5文生视频加速版720P_2005971109587668993.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2075062217422229506.json、视频生成/图生视频/2075055600450494465.json、视频生成/图生视频/2058811131501830146.json、视频生成/图生视频/2058206526581600258.json、视频生成/图生视频/2058353151778058241.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyHunyuanVideo15Latent`
-- `HunyuanVideo15LatentUpscaleWithModel`
-- `HunyuanVideo15SuperResolution`
+- `CheckpointLoaderSimple`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `ModelSamplingSD3`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecodeTiled` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `DF_Int_to_Float` —— 3/6 个有
-- `JWInteger` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `ImpactSwitch` —— 2/6 个有
-- `VAEDecode` —— 2/6 个有
-- `LoraLoader` —— 1/6 个有
+- `EmptyLTXVLatentVideo` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `LTXVEmptyLatentAudio` —— 5/6 个有
+- `PromptRelayEncodeTimeline` —— 5/6 个有
+- `GetImageSize` —— 4/6 个有
+- `GetNode` —— 4/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `ImageScaleBy` —— 4/6 个有
+- `LTXVChunkFeedForward` —— 4/6 个有
+- `LTXVImgToVideoInplace` —— 4/6 个有
+- `LTXVScheduler` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `SimpleMath+` —— 4/6 个有
+- `LTXVPreprocess` —— 3/6 个有
+- `SaveImage` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `PrimitiveFloat` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `AudioCrop` —— 1/6 个有
+- `LTXDirector` —— 1/6 个有
+- `LTXDirectorGuide` —— 1/6 个有
+- `LTXVAddGuideMulti` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `LoadAudio` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `PreviewAudio` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 481 | 5 | 25% |
+| 高度 | 24 | 24 - 24 | 5 | 100% |
 
 ## 常见问题
 
@@ -63,4 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 481，5 个样本，取值分散，一致性仅 25%
+- 高度 中位数 24，观测区间 24 - 24，5 个样本，取值集中（一致性 100%）

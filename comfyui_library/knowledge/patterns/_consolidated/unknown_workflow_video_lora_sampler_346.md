@@ -3,62 +3,64 @@ name: unknown_workflow_video_lora_sampler_346
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.957
-common_nodes: [ApplyFaceProcessor, CR Prompt Text, FaceProcessorLoader, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VideoInputPreprocessor, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.432
+common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), GetNode, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy seed]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text]
-members: [视频生成/图生视频/1956898077279969282.json, 视频生成/图生视频/1960243766210801666.json, 视频生成/图生视频/1956781749314228225.json, 视频生成/图生视频/1959190374550024194.json, 视频生成/图生视频/1958204271017791490.json, 视频生成/文生视频/1956898077279969282.json]
+missing: [Bookmark (rgthree), Label (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), Note Plus (mtb), easy int, easy seed]
+members: [视频生成/图生视频/1936095695604715522.json, 视频生成/图生视频/1936129945431101441.json, 视频生成/文生视频/1936095695604715522.json, 视频生成/文生视频/1936129945431101441.json, 视频生成/文生视频/1943222604020793345.json, 视频生成/文生视频/1936768190418685954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_346
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1956898077279969282.json、视频生成/图生视频/1960243766210801666.json、视频生成/图生视频/1956781749314228225.json、视频生成/图生视频/1959190374550024194.json、视频生成/图生视频/1958204271017791490.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1936095695604715522.json、视频生成/图生视频/1936129945431101441.json、视频生成/文生视频/1936095695604715522.json、视频生成/文生视频/1936129945431101441.json、视频生成/文生视频/1943222604020793345.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `CR Prompt Text`
-- `FaceProcessorLoader`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Any Switch (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
-- `VideoInputPreprocessor`
-- `WanVideoAddStandInLatent`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `SetNode`
+- `StringConcatenate`
+- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTeaCache`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `VHS_VideoInfo` —— 5/6 个有
-- `VHS_VideoCombine` —— 4/6 个有
-- `LatentLoaderAdvanced` —— 3/6 个有
-- `SaveImage` —— 3/6 个有
-- `SaveLatent` —— 3/6 个有
-- `ImageConcatMulti` —— 2/6 个有
-- `FaceOnlyModeSwitch` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `ReActorFaceSwap` —— 1/6 个有
-- `SeedVR2` —— 1/6 个有
-- `VHS_VideoInfoLoaded` —— 1/6 个有
-- `VideoBackgroundRestorer` —— 1/6 个有
+- `Bookmark (rgthree)` —— 5/6 个有
+- `Label (rgthree)` —— 5/6 个有
+- `WanVideoTextEncode` —— 5/6 个有
+- `WanVideoVRAMManagement` —— 5/6 个有
+- `Note Plus (mtb)` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `WanVideoApplyNAG` —— 1/6 个有
+- `WanVideoTextEncodeSingle` —— 1/6 个有
 
 ## 典型参数
 
@@ -70,4 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、CR Prompt Text
+- 这些节点还没有知识卡，系统对它们的理解有限：Bookmark (rgthree)、Label (rgthree)、Mute / Bypass Relay (rgthree)、Mute / Bypass Repeater (rgthree)、Note Plus (mtb)

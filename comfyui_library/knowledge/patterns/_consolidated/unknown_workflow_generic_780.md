@@ -3,37 +3,36 @@ name: unknown_workflow_generic_780
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8215
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, RunningHub SeedXPro Translator, SaveAudio, easy showAnything]
+coverage: 0.866
+common_nodes: [CR Prompt Text, HAIGC_LoadImagesFromZip, Int, RunningHubRVCOneClickTrain, ShellAgentPluginOutputText, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--QWEN3 TTS声音设计-多语言翻译--translate-角色配音_有声书_2015767841215090689.json, "音频生成/音频生成/qwen3 tts,qwentts声音克隆，海外，亚马逊_2021500422707482626.json"]
+members: [图片生成/文生图/RVC模型训练器_2101876081258229762.json, 音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_780
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--QWEN3 TTS声音设计-多语言翻译--translate-角色配音_有声书_2015767841215090689.json、音频生成/音频生成/qwen3 tts,qwentts声音克隆，海外，亚马逊_2021500422707482626.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RVC模型训练器_2101876081258229762.json、音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `RunningHub SeedXPro Translator`
-- `SaveAudio`
-- `easy showAnything`
+- `HAIGC_LoadImagesFromZip`
+- `Int`
+- `RunningHubRVCOneClickTrain`
+- `ShellAgentPluginOutputText`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

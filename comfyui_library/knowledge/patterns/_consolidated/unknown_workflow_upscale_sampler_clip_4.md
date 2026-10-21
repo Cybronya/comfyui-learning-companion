@@ -1,67 +1,72 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_4
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8415
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Upscale Image, DeepTranslatorTextNode, DualCLIPLoader, EmptyLatentImage, Fast Groups Muter (rgthree), KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy int]
+frequency: 6
+level: strong
+coverage: 0.899667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageBlend, ImageScale, ImageScaleBy, ImageUpscaleWithModel, KSamplerAdvanced, PreviewImage, ResolutionSelector, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader]
 problems: []
-missing: [easy int, CR Upscale Image]
-members: [图片生成/文生图/1948911760146345986.json, 图片生成/文生图/1948919650907238402.json]
+missing: []
+members: [图片生成/文生图/Krea2_文生图直出4K高清工作流_2086439888332873729.json, 图片生成/文生图/Krea2_文生图直出4K高清工作流_2087386381529210881.json, 图片生成/文生图/krea2-UE5法相_2095537231166529537.json, 图片生成/文生图/krea2-中秋_2101322859917438977.json, 图片生成/文生图/敦煌Krea2_2098303929271545858.json, 数字人/数字人/krea2-UE5角色定妆照_2090840952448573441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1948911760146345986.json、图片生成/文生图/1948919650907238402.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Krea2_文生图直出4K高清工作流_2086439888332873729.json、图片生成/文生图/Krea2_文生图直出4K高清工作流_2087386381529210881.json、图片生成/文生图/krea2-UE5法相_2095537231166529537.json、图片生成/文生图/krea2-中秋_2101322859917438977.json、图片生成/文生图/敦煌Krea2_2098303929271545858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Upscale Image`
-- `DeepTranslatorTextNode`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Fast Groups Muter (rgthree)`
-- `KSamplerSelect`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ImageBlend`
+- `ImageScale`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `KSamplerAdvanced`
+- `PreviewImage`
+- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
-- `UltimateSDUpscale`
 - `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ACN_AdvancedControlNetApplySingle_v2` —— 1/2 个有
-- `AIO_Preprocessor` —— 1/2 个有
-- `ApplyPulidFlux` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `InstantIDFaceAnalysis` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PulidFluxEvaClipLoader` —— 1/2 个有
-- `PulidFluxModelLoader` —— 1/2 个有
-- `SetUnionControlNetType` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `ConditioningZeroOut` —— 4/6 个有
+- `easy mathInt` —— 4/6 个有
+- `Lora Loader Stack (rgthree)` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `llama_cpp_instruct_adv` —— 3/6 个有
+- `llama_cpp_model_loader` —— 3/6 个有
+- `ConditioningKrea2Rebalance` —— 1/6 个有
+- `ModelSamplingAuraFlow` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `Seed (rgthree)` —— 1/6 个有
+- `easy promptList` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| ControlNet 权重 | 0.8 | - | 1 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 6 | 100% |
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 50% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
@@ -69,7 +74,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy int、CR Upscale Image
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，6 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 50%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%

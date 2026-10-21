@@ -3,53 +3,56 @@ name: unknown_workflow_video_upscale_lora_11
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleImageWithModelIfNeed, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoSEDecode, WanVideoSEImageClipEncode, WanVideoSEModelLoader, WanVideoSESampler, WanVideoSLG, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8525
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ExtendIntermediateSigmas, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorRefine, MiniMaxH3DirectorSelfLift, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveStringMultiline, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1918858509570473986.json, 视频生成/图生视频/1914665456270278658.json, 视频生成/图生视频/1914595453097209857.json, 视频生成/图生视频/1918851032598642689.json]
+members: [视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json, 视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_11
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1918858509570473986.json、视频生成/图生视频/1914665456270278658.json、视频生成/图生视频/1914595453097209857.json、视频生成/图生视频/1918851032598642689.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json、视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `UpscaleImageWithModelIfNeed`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ExtendIntermediateSigmas`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3DirectorSelfLift`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `UNETLoader`
 - `UpscaleModelLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoEnhanceAVideo`
-- `WanVideoLoraSelect`
-- `WanVideoSEDecode`
-- `WanVideoSEImageClipEncode`
-- `WanVideoSEModelLoader`
-- `WanVideoSESampler`
-- `WanVideoSLG`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 3/4 个有
-- `Florence2Run` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `StringFunction|pysssss` —— 3/4 个有
-- `ImageResize+` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `MiniMaxH3DirectorGroupsCombine` —— 3/4 个有
+- `CreateVideo` —— 2/4 个有
+- `MiniMaxH3DirectorGroupReferenceToVideo` —— 2/4 个有
+- `ModelPreviewOverrideKJ` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `Video Slice` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `MiniMaxH3DirectorGroupImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

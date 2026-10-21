@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_72
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8624
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, PreviewAny, SaveAudio, Text]
+coverage: 0.871727
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json, 音频生成/音频生成/Qwen3 TTS 语音参考克隆+情感语气（单人）_2086710651883442178.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2061738767072980994.json, 音频生成/音频生成/Qwen3+TTS+音频克隆_2082332163504168962.json, 音频生成/音频生成/Qwen3音频克隆 Qwen3+TTS+音频克隆_2074007340663267330.json, 音频生成/音频生成/保存自己用-Qwen3 TTS 音频克隆_2067157702194851841.json]
+members: [视频生成/图生视频/2038072662395723777.json, 视频生成/图生视频/2066557394326474754.json, 视频生成/图生视频/2042079284008853506.json, 视频生成/图生视频/2037519797197479937.json, 视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json, 视频生成/文生视频/Seedance 2.0：解锁人脸特效自由，无需审核即享_2040003975717593089.json, 视频生成/文生视频/Seedance2.0全能参考视频(创建ID)+全节点注释+添加巨型图片展示_2045794036518232066.json, 视频生成/文生视频/Seedance2.0全能参考视频(创建ID)+全节点注释_2054837299153776642.json, 视频生成/文生视频/Seedance2.0全能参考视频_2074461074593767426.json, 视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json, 视频生成/文生视频/视频生成seedance 2.0满血版_2058854158081552385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_72
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2038072662395723777.json、视频生成/图生视频/2066557394326474754.json、视频生成/图生视频/2042079284008853506.json、视频生成/图生视频/2037519797197479937.json、视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `LoadAudio`
-- `PreviewAny`
-- `SaveAudio`
-- `Text`
+全部 11 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 7/10 个有
-- `FishS2VoiceCloneTTS` —— 3/10 个有
+- `LoadAudio` —— 10/11 个有
+- `LoadVideo` —— 8/11 个有
+- `CR Prompt Text` —— 1/11 个有
+- `CR Text` —— 1/11 个有
+- `RH_SparkVideoAssetQuery` —— 1/11 个有
+- `TextInputNode` —— 1/11 个有
 
 ## 典型参数
 

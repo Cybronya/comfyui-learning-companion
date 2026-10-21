@@ -3,81 +3,70 @@ name: unknown_workflow_video_lora_sampler_214
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.544222
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.868
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/1971474322126782465.json, 视频生成/图生视频/1975351604679413761.json, 视频生成/图生视频/2030543201047678977.json, 视频生成/图生视频/4V商用版本 支持 运镜，切镜头，武术，跳舞，侧面迁移，_2093353108847030274.json, 视频生成/图生视频/1976931314983161857.json, 视频生成/图生视频/1975030930718986242.json, 视频生成/图生视频/1980113724029702145.json, 视频生成/图生视频/2013906240371429377.json, 视频生成/文生视频/图生视频 极速版 动作模仿 动作迁移 人物替换 Wan 2.2_2044310101514788865.json]
+members: [视频生成/图生视频/2058444254300696577.json, 视频生成/图生视频/2070137230106124289.json, 视频生成/图生视频/2060633763377410049.json, 视频生成/图生视频/2055882037822795778.json, 视频生成/图生视频/2069942311760523265.json, 视频生成/图生视频/2057812163363950593.json, 视频生成/图生视频/2069309703959695362.json, 视频生成/图生视频/2073463668316323840.json, 视频生成/图生视频/2076823460927598594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_214
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1971474322126782465.json、视频生成/图生视频/1975351604679413761.json、视频生成/图生视频/2030543201047678977.json、视频生成/图生视频/4V商用版本 支持 运镜，切镜头，武术，跳舞，侧面迁移，_2093353108847030274.json、视频生成/图生视频/1976931314983161857.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2058444254300696577.json、视频生成/图生视频/2070137230106124289.json、视频生成/图生视频/2060633763377410049.json、视频生成/图生视频/2055882037822795778.json、视频生成/图生视频/2069942311760523265.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
-- `VHS_LoadVideo`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `SamplerCustom`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 8/9 个有
-- `DrawMaskOnImage` —— 8/9 个有
-- `ImageConcatMulti` —— 8/9 个有
-- `PreviewImage` —— 8/9 个有
-- `WanVideoTorchCompileSettings` —— 8/9 个有
-- `DownloadAndLoadSAM2Model` —— 7/9 个有
-- `Int` —— 7/9 个有
-- `Sam2Segmentation` —— 7/9 个有
-- `GetImageSizeAndCount` —— 6/9 个有
-- `GrowMask` —— 6/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
-- `MathExpression|pysssss` —— 5/9 个有
-- `INTConstant` —— 4/9 个有
-- `ImageBlend` —— 4/9 个有
-- `ImpactInt` —— 4/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/9 个有
-- `GIMMVFI_interpolate` —— 3/9 个有
-- `ImageFromBatch` —— 3/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `GrowMaskWithBlur` —— 2/9 个有
-- `GemmaAPITextEncode` —— 1/9 个有
-- `ImageRemoveBackground+` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `RemBGSession+` —— 1/9 个有
-- `ShellAgentPluginSaveAudios` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `Textbox` —— 1/9 个有
-- `WanVideoContextOptions` —— 1/9 个有
-- `easy positive` —— 1/9 个有
-- `int _O` —— 1/9 个有
+- `ComfySwitchNode` —— 8/9 个有
+- `PrimitiveBoolean` —— 8/9 个有
+- `LTXDirectorGuide` —— 7/9 个有
+- `LTXVAudioVAEEncode` —— 7/9 个有
+- `LoadImage` —— 7/9 个有
+- `MelBandRoFormerModelLoader` —— 7/9 个有
+- `MelBandRoFormerSampler` —— 7/9 个有
+- `PreviewAudio` —— 7/9 个有
+- `SetLatentNoiseMask` —— 7/9 个有
+- `SolidMask` —— 7/9 个有
+- `LTXDirector` —— 6/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `GuHaiAutoImageSplit` —— 4/9 个有
+- `PreviewImage` —— 4/9 个有
+- `CR Text` —— 3/9 个有
+- `CS-LTXGridDirector` —— 3/9 个有
+- `Label (rgthree)` —— 3/9 个有
+- `PreviewAny` —— 3/9 个有
+- `RHHiddenNodes` —— 3/9 个有
+- `RH_LLMAPI_Pro_Node` —— 3/9 个有
+- `YusuLTXDirectorGuide` —— 2/9 个有
+- `孤海注释` —— 2/9 个有
+- `LTXVChunkFeedForward` —— 1/9 个有
+- `PathchSageAttentionKJ` —— 1/9 个有
 
 ## 典型参数
 

@@ -2,73 +2,82 @@
 name: unknown_workflow_video_lora_sampler_494
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.94775
-common_nodes: [CLIPVisionLoader, GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, InspyrenetRembg, KepStringLiteral, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.45775
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, VAEDecode, VHS_VideoCombine, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/1937836880912105473.json, 视频生成/图生视频/1936376393980874754.json, 视频生成/图生视频/1936333084193361922.json, 视频生成/图生视频/1937839794074619905.json]
+members: [视频生成/图生视频/2079011118076481538.json, 视频生成/图生视频/2079026510954057729.json, 视频生成/图生视频/2082504671247298561.json, 视频生成/文生视频/LTX2.3全能参考_2066712542273163265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_494
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1937836880912105473.json、视频生成/图生视频/1936376393980874754.json、视频生成/图生视频/1936333084193361922.json、视频生成/图生视频/1937839794074619905.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2079011118076481538.json、视频生成/图生视频/2079026510954057729.json、视频生成/图生视频/2082504671247298561.json、视频生成/文生视频/LTX2.3全能参考_2066712542273163265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageSize`
-- `INTConstant`
-- `Image Blank`
-- `ImageCompositeMasked`
-- `ImagePadKJ`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
-- `InspyrenetRembg`
-- `KepStringLiteral`
-- `LayerUtility: PurgeVRAM V2`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `SimpleMath+`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 3/4 个有
-- `Seed Everywhere` —— 3/4 个有
-- `CreateVideo` —— 2/4 个有
-- `D_VideoLengthAdjuster` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
+- `CR Text` —— 3/4 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `PromptRelayEncode` —— 3/4 个有
+- `ShowAnything|Mie` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `VAELoaderKJ` —— 3/4 个有
+- `LTXVAudioVAEEncode` —— 2/4 个有
+- `LTXVEmptyLatentAudio` —— 2/4 个有
 - `LoadAudio` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `RH_HeyGemNode` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `String Literal` —— 2/4 个有
-- `ImageConcanate` —— 1/4 个有
+- `SetLatentNoiseMask` —— 2/4 个有
+- `SolidMask` —— 2/4 个有
+- `Float` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LTXVAudioVAELoader` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LowVRAMCheckpointLoader` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `TTResolutionSelector` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `TrimAudioDuration` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 145 | - | 2 | 100% |
+| 高度 | 24 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -76,4 +85,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 145，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

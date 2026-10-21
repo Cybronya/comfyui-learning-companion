@@ -1,59 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_84
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.785667
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, InstructPixToPixConditioning, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.955875
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [CR Latent Batch Size, CR Prompt Text, Zoe-DepthMapPreprocessor]
-members: [图片生成/文生图/1965644174517223426.json, 图片生成/文生图/1988873413324312577.json, 图片生成/文生图/1988875432810393601.json]
+missing: []
+members: [视频生成/图生视频/2036098308422242306.json, 视频生成/图生视频/2036097978263412738.json, 视频生成/图生视频/2031653989615411202.json, 视频生成/图生视频/2019023279008260098.json, 视频生成/图生视频/2036071693340385282.json, 视频生成/图生视频/2036017252914434050.json, 视频生成/图生视频/2031673957350379522.json, 视频生成/图生视频/2030866059493904385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_84
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1965644174517223426.json、图片生成/文生图/1988873413324312577.json、图片生成/文生图/1988875432810393601.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2036098308422242306.json、视频生成/图生视频/2036097978263412738.json、视频生成/图生视频/2031653989615411202.json、视频生成/图生视频/2019023279008260098.json、视频生成/图生视频/2036071693340385282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `InstructPixToPixConditioning`
-- `KSampler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CreateVideo`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `ModelSamplingSD3`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 2/3 个有
-- `CR Latent Batch Size` —— 2/3 个有
-- `CR Prompt Text` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `Zoe-DepthMapPreprocessor` —— 2/3 个有
-- `Canny` —— 1/3 个有
+- `CM_IntToFloat` —— 7/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
+- `SimpleMath+` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
+- `FloatConstant` —— 6/8 个有
+- `INTConstant` —— 6/8 个有
+- `ModelPatchTorchSettings` —— 6/8 个有
+- `PathchSageAttentionKJ` —— 6/8 个有
+- `WanImageToVideo` —— 5/8 个有
+- `LoraLoaderModelOnly` —— 4/8 个有
+- `WanFirstLastFrameToVideo` —— 4/8 个有
+- `Int` —— 2/8 个有
+- `ApplySageAttention` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `UnetLoaderGGUF` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 20 - 30 | 3 | 82% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 8 | 88% |
+| Prompt 约束强度(CFG) | 4 | 4 - 14 | 8 | 37% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler_ancestral | - | 8 | 75% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -61,11 +70,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 20 - 30，3 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Latent Batch Size、CR Prompt Text、Zoe-DepthMapPreprocessor
+- 采样步数 最常用 fixed，8 个样本，一致性 88%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 14，8 个样本，取值分散，一致性仅 37%
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，8 个样本，一致性 75%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -3,58 +3,44 @@ name: unknown_workflow_video_upscale_lora_2
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.947583
-common_nodes: [ImageUpscaleWithModel, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.67875
+common_nodes: [CLIPLoader, LoraLoaderModelOnly, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, PreviewAny, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1896816638631550978.json, 视频生成/图生视频/1903839569089826817.json, 视频生成/图生视频/1899415692570181634.json, 视频生成/图生视频/1899312280767516673.json, 视频生成/图生视频/1900467836874301442.json, 视频生成/图生视频/1899699069881860097.json, 视频生成/图生视频/2005178859836370946.json, 视频生成/图生视频/1899713009114107905.json, 视频生成/图生视频/1894935249389039617.json, 视频生成/图生视频/1932255495774437378.json, 视频生成/图生视频/1930816773925306370.json, 视频生成/文生视频/1904728293755813889.json]
+members: [视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-参考生视频_2095363717016932353.json, 视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频-人物去油_2110344332875231233.json, 视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频_2095485189106528257.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091439273353502722.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091560395537469442.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2092514631167336450.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2090764338553516034.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2091278066034241538.json, 视频生成/文生视频/Dasiwa-MiniMax H3 导演台全能工作流-文生视频_2095312937933164545.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v-文生视频_2092254280576225281.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-人物去油_2096232593627897857.json, 视频生成/文生视频/MiniMax H3 漫剧导演台_2097478155698262018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_2
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1896816638631550978.json、视频生成/图生视频/1903839569089826817.json、视频生成/图生视频/1899415692570181634.json、视频生成/图生视频/1899312280767516673.json、视频生成/图生视频/1900467836874301442.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-参考生视频_2095363717016932353.json、视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频-人物去油_2110344332875231233.json、视频生成/图生视频/Dasiwa-MiniMax H3 导演台全能工作流-图生视频_2095485189106528257.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091439273353502722.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091560395537469442.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `ImageUpscaleWithModel`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPLoader`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PreviewAny`
+- `UNETLoader`
 - `UpscaleModelLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 9/12 个有
-- `Int` —— 7/12 个有
-- `RIFE VFI` —— 7/12 个有
-- `ImageResizeAdvanced` —— 5/12 个有
-- `Note Plus (mtb)` —— 4/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `Text Multiline` —— 2/12 个有
-- `TextInput_` —— 2/12 个有
-- `WanVideoEmptyEmbeds` —— 2/12 个有
-- `WanVideoSLG` —— 2/12 个有
-- `ImageResizeKJ` —— 1/12 个有
-- `ResizeLongestToNode` —— 1/12 个有
-- `SaveLatent` —— 1/12 个有
+- `MiniMaxH3Director` —— 11/12 个有
+- `孤海注释` —— 11/12 个有
+- `CreateVideo` —— 6/12 个有
+- `LoraLoaderBypassModelOnly` —— 5/12 个有
+- `ModelAttentionBackend` —— 5/12 个有
+- `SaveVideo` —— 5/12 个有
+- `ComfyMiniMaxH3Director` —— 1/12 个有
 
 ## 典型参数
 

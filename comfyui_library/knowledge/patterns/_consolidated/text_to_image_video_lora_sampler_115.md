@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_115
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.7055
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedNode, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.9
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2107178414863118337.json, 视频生成/图生视频/MiniMax_H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2109458240017879041.json, 视频生成/图生视频/MinimaxH3 R2V 2Stage VEDA加速视频生成工作流 视频生成加速_2109759397407846402.json, 视频生成/图生视频/Minimax_H3_Character_Swap角色替换｜参考到视频工作流_2106983200139599874.json, 视频生成/文生视频/H3面部精修图生视频工作流 人物面部细节优化_2099910439055482882.json, 视频生成/文生视频/图生视频｜MinimaxH3 R2V面部精修版，人像细节更自然_2099873159469158401.json]
+members: [视频生成/图生视频/Minimax H3 多模态导演台 加速版_2087009734493827074.json, 视频生成/图生视频/Minimax H3图生视频｜高清视频一键生成直出_2092041097458569217.json, 视频生成/图生视频/超级加速图生视频｜Minimax_h3角色一致性角色表演工作流_2087207226397253634.json, 视频生成/图生视频/超级加速首尾帧图生视频｜Minimax_h3角色一致性角色表演工作流_2087204875179479041.json, 视频生成/文生视频/3步加速Lora｜MiniMaxH3地表最强阿里版，效果炸裂出片快_2099885685254742017.json, 视频生成/文生视频/H3阿里3步加速Lora 效果炸裂视频生成工具_2099913503615311874.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_115
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2107178414863118337.json、视频生成/图生视频/MiniMax_H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2109458240017879041.json、视频生成/图生视频/MinimaxH3 R2V 2Stage VEDA加速视频生成工作流 视频生成加速_2109759397407846402.json、视频生成/图生视频/Minimax_H3_Character_Swap角色替换｜参考到视频工作流_2106983200139599874.json、视频生成/文生视频/H3面部精修图生视频工作流 人物面部细节优化_2099910439055482882.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 多模态导演台 加速版_2087009734493827074.json、视频生成/图生视频/Minimax H3图生视频｜高清视频一键生成直出_2092041097458569217.json、视频生成/图生视频/超级加速图生视频｜Minimax_h3角色一致性角色表演工作流_2087207226397253634.json、视频生成/图生视频/超级加速首尾帧图生视频｜Minimax_h3角色一致性角色表演工作流_2087204875179479041.json、视频生成/文生视频/3步加速Lora｜MiniMaxH3地表最强阿里版，效果炸裂出片快_2099885685254742017.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -27,57 +27,46 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SeedNode`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `孤海注释` —— 5/6 个有
-- `MMH3LatentUpscaleWithModelParams` —— 4/6 个有
-- `MMH3SpatialSplitParams` —— 4/6 个有
-- `MMH3TemporalSplitParams` —— 4/6 个有
-- `MMH3UltimateUpscale` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `VAEDecodeTiled` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `easy clearCacheAll` —— 4/6 个有
-- `ImageConcatMulti` —— 3/6 个有
-- `StringConcatenate` —— 3/6 个有
-- `VHS_LoadVideo` —— 3/6 个有
-- `H3FaceStitch` —— 2/6 个有
-- `H3FaceTrackCrop` —— 2/6 个有
-- `H3InjectVideoLatent` —— 2/6 个有
-- `H3PerFrameDenoise` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `EmptyImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Textbox` —— 1/6 个有
-- `VedaSparseAttention` —— 1/6 个有
+- `GetImageSize` —— 5/6 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `MiniMaxH3ImageToVideo` —— 5/6 个有
+- `ResolutionSelector` —— 5/6 个有
+- `EasyCache` —— 4/6 个有
+- `PathchSageAttentionKJ` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `CreateVideo` —— 3/6 个有
+- `INTConstant` —— 3/6 个有
+- `PainterVRAM` —— 3/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `ComfyMathExpression` —— 2/6 个有
+- `DiffusionModelLoaderKJ` —— 2/6 个有
+- `Fast Groups Muter (rgthree)` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `PrimitiveFloat` —— 2/6 个有
+- `RTXVideoSuperResolution` —— 2/6 个有
+- `SpectrumApplyMiniMaxH3` —— 2/6 个有
+- `GetVideoComponents` —— 1/6 个有
+- `SFH3MultimodalDirector` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 
 ## 典型参数
 

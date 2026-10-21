@@ -3,72 +3,58 @@ name: unknown_workflow_video_sampler_vae_186
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.696
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, PixelPerfectResolution, PointsEditor, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, RMBG, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UnloadModel, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.7705
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, MaskPreview, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2064955834492342273.json, 视频生成/图生视频/2043943018939551745.json]
+members: [视频生成/图生视频/1958478405673107458.json, 视频生成/图生视频/1933898213298757633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_186
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2064955834492342273.json、视频生成/图生视频/2043943018939551745.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1958478405673107458.json、视频生成/图生视频/1933898213298757633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageResizeKJ`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PointsEditor`
+- `LoadWanVideoT5TextEncoder`
+- `MaskBatchMulti`
+- `MaskPreview`
 - `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `RMBG`
 - `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
-- `UnloadModel`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SeCModelLoader` —— 1/2 个有
-- `SeCVideoSegmentation` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoSetLoRAs` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

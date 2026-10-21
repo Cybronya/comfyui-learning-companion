@@ -3,41 +3,39 @@ name: unknown_workflow_sampler_12
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8448
-common_nodes: [HeartMuLa_Transcribe, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio, ShowText|pysssss, easy saveText]
+coverage: 0.7858
+common_nodes: [AudioCombine, HeartMuLa_Generate, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveAudioMP3, SeedVCRun]
 problems: []
 missing: []
-members: [音频生成/音频生成/Mel-Band RoFormer歌曲人声分离，伴奏提取_2033376555807805442.json, 音频生成/音频生成/MelBandRoFormer 音乐歌音色翻唱_2110357146150985730.json, 音频生成/音频生成/歌曲音色替换翻唱_2041502168951300097.json, 音频生成/音频生成/歌曲音色翻唱MelBandRoFormer_2109892669165096962.json, 音频生成/音频生成/歌曲音色翻唱_2041437118723006465.json]
+members: [音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json, 音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json, 音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Mel-Band RoFormer歌曲人声分离，伴奏提取_2033376555807805442.json、音频生成/音频生成/MelBandRoFormer 音乐歌音色翻唱_2110357146150985730.json、音频生成/音频生成/歌曲音色替换翻唱_2041502168951300097.json、音频生成/音频生成/歌曲音色翻唱MelBandRoFormer_2109892669165096962.json、音频生成/音频生成/歌曲音色翻唱_2041437118723006465.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json、音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json、音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `HeartMuLa_Transcribe`
+- `AudioCombine`
+- `HeartMuLa_Generate`
 - `LoadAudio`
 - `MelBandRoFormerModelLoader`
 - `MelBandRoFormerSampler`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `easy saveText`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudioMP3`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCombine` —— 4/5 个有
-- `SaveAudioMP3` —— 4/5 个有
-- `SeedVCRun` —— 4/5 个有
-- `AdjustAudio` —— 1/5 个有
-- `AudioAdjustVolume` —— 1/5 个有
-- `Int` —— 1/5 个有
+- `Label (rgthree)` —— 2/5 个有
 
 ## 典型参数
 

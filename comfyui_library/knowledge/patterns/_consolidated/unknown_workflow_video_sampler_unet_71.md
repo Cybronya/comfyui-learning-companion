@@ -1,67 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_unet_71
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.869333
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, EasyCache, ImageResizeKJv2, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, StringFunction|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
+coverage: 0.8035
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/Minimax_h3_多参生视频+自动提示词优化+light2V加速lora0.1版本_2085875294937903106.json, 视频生成/文生视频/Minimax_h3_多参生视频+自动提示词优化+light2V加速lora0.1版本_2085894326038650882.json, 视频生成/文生视频/【MiniMax H3】数字人 多图参考 提示词自动反推工作流_2084586291085275138.json]
+members: [视频生成/图生视频/VOSR2图像高清化_快速H3-04-i2v_一条龙_2099518036637208578.json, 视频生成/图生视频/h3-图生视频-加速版_2086591917021810690.json, 视频生成/图生视频/h3-文生视频-加速版_2089908211922067457.json, 视频生成/图生视频/h3-首尾帧-加速版_2086593854702182401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_71
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Minimax_h3_多参生视频+自动提示词优化+light2V加速lora0.1版本_2085875294937903106.json、视频生成/文生视频/Minimax_h3_多参生视频+自动提示词优化+light2V加速lora0.1版本_2085894326038650882.json、视频生成/文生视频/【MiniMax H3】数字人 多图参考 提示词自动反推工作流_2084586291085275138.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/VOSR2图像高清化_快速H3-04-i2v_一条龙_2099518036637208578.json、视频生成/图生视频/h3-图生视频-加速版_2086591917021810690.json、视频生成/图生视频/h3-文生视频-加速版_2089908211922067457.json、视频生成/图生视频/h3-首尾帧-加速版_2086593854702182401.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `CreateVideo`
-- `EasyCache`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ImageToVideo`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `RHLLMChatNode`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `StringFunction|pysssss`
+- `SaveImage`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `LoraLoaderBypassModelOnly` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `MiniMaxH3AVDecodeT8` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `BasicScheduler` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `KSamplerSelect` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `VAEDecodeAudio` —— 1/3 个有
-- `VHS_VideoInfoLoaded` —— 1/3 个有
+- `FlashVSRNode` —— 3/4 个有
+- `LoraLoaderBypassModelOnly` —— 3/4 个有
+- `Sleep` —— 3/4 个有
+- `EasyCache` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `SLAAttention` —— 1/4 个有
+- `SolAttnPatch` —— 1/4 个有
+- `VOSR2ModelLoader` —— 1/4 个有
+- `VOSR2Upscale` —— 1/4 个有
 
 ## 典型参数
 

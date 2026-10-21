@@ -3,64 +3,84 @@ name: unknown_workflow_video_lora_sampler_496
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.49275
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Divide [DVB], FlashVSRNode, Float, GetNode, ImageResizeKJv2, Int, JWInteger, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SigmasGraph, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.8215
+common_nodes: [AudioCrop, BasicScheduler, CLIPTextEncode, CM_IntToFloat, CR Text, DapaoSmartMemoryOptimizerNode, Display Int (rgthree), DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, Get resolution [Crystools], KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveString, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, SoundFlow_GetLength, Switch any [Crystools], ToInt, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, ZML_ArithmeticComparison, easy cleanGpuUsed, easy int, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json, 视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json, 视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json]
+members: [视频生成/图生视频/2061422103609569282.json, 视频生成/图生视频/2061422054284554242.json, 视频生成/图生视频/2056299096574619650.json, 视频生成/图生视频/2051941097793966081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_496
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json、视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json、视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json、视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2061422103609569282.json、视频生成/图生视频/2061422054284554242.json、视频生成/图生视频/2056299096574619650.json、视频生成/图生视频/2051941097793966081.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
+- `AudioCrop`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Divide [DVB]`
-- `FlashVSRNode`
-- `Float`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
+- `CLIPTextEncode`
+- `CM_IntToFloat`
+- `CR Text`
+- `DapaoSmartMemoryOptimizerNode`
+- `Display Int (rgthree)`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `Get resolution [Crystools]`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SigmasGraph`
-- `Text`
+- `PrimitiveString`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `Switch any [Crystools]`
+- `ToInt`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `ZML_ArithmeticComparison`
 - `easy cleanGpuUsed`
+- `easy int`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `MiniMaxH3ImageToVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `RH_LLMAPI_Pro_Node` —— 1/4 个有
-- `SDVN Fast Groups Bypasser` —— 1/4 个有
-- `SoundFlow_GetLength` —— 1/4 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/4 个有
-- `ZNGB_AudioCrop` —— 1/4 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `Display Any (rgthree)` —— 3/4 个有
+- `LTXVImgToVideoInplaceKJ` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `CrossFadeImages` —— 2/4 个有
+- `FrameSelector` —— 2/4 个有
+- `GetImageSizeAndCount` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `LTXVAddGuideMultiDynamic` —— 2/4 个有
+- `LTXVCropGuides` —— 2/4 个有
+- `Make Image Batch` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `MelBandRoFormerModelLoader` —— 2/4 个有
+- `MelBandRoFormerSampler` —— 2/4 个有
+- `NormalizeAudioLoudness` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
 
 ## 典型参数
 

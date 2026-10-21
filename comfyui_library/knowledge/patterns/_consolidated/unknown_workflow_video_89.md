@@ -3,41 +3,37 @@ name: unknown_workflow_video_89
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [Audio Duration (mtb), JWIntegerToFloat, LoadAudio, LoadImage, MathExpression|pysssss, Primitive integer [Crystools], RepeatImageBatch, RunningHub SongPrep, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline, VHS_VideoCombine, easy showAnything]
+coverage: 0.778
+common_nodes: [GetVideoComponents, JjkText, LoadImage, SaveVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1995818841752186881.json, 音频生成/音频生成/SongBloom自回归音乐模型_1938795870470987778.json]
+members: [视频生成/图生视频/2074319853363752961.json, 视频生成/图生视频/Seedance2.5min多图生视频_2083009273801564162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_89
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1995818841752186881.json、音频生成/音频生成/SongBloom自回归音乐模型_1938795870470987778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2074319853363752961.json、视频生成/图生视频/Seedance2.5min多图生视频_2083009273801564162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `JWIntegerToFloat`
-- `LoadAudio`
+- `GetVideoComponents`
+- `JjkText`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `RepeatImageBatch`
-- `RunningHub SongPrep`
-- `SaveAudio`
-- `SongBloomDecoder`
-- `SongBloomGenerate`
-- `SongBloomModelLoader`
-- `Text Multiline`
+- `SaveVideo`
 - `VHS_VideoCombine`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `RHLLMChatNode` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 1/2 个有
 
 ## 典型参数
 

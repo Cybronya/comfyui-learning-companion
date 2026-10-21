@@ -1,77 +1,71 @@
 ---
 name: unknown_workflow_lora_sampler_clip_84
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.523667
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SaveAudio, SaveImage, SetNode, StringConcatenate, StringReplace, UNETLoader, VAEDecode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.8495
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PIP_StringConcatenation, PanoramaViewerNode, PrimitiveStringMultiline, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/短剧声音和场景_道具_角色V10(美国建模)_2090815289637298178.json, 音频生成/音频生成/短剧拍档支持场景和角色V12.2(V11继承版)_2087664915262824449.json, 音频生成/音频生成/资产生成-短剧拍档V13.1（预览编辑版）_2091445990522974210.json]
+members: [图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089246702053191682.json, 图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089266154190753794.json, 图片生成/文生图/360图片生成_2069983275870937089.json, 图片生成/文生图/文生360°全景图_qwen-Image2512_2063599512366702593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_84
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/短剧声音和场景_道具_角色V10(美国建模)_2090815289637298178.json、音频生成/音频生成/短剧拍档支持场景和角色V12.2(V11继承版)_2087664915262824449.json、音频生成/音频生成/资产生成-短剧拍档V13.1（预览编辑版）_2091445990522974210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089246702053191682.json、图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089266154190753794.json、图片生成/文生图/360图片生成_2069983275870937089.json、图片生成/文生图/文生360°全景图_qwen-Image2512_2063599512366702593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `FB_Qwen3TTSVoiceDesign`
+- `EmptySD3LatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `KSamplerSelect`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `ModelSamplingAuraFlow`
+- `PIP_StringConcatenation`
+- `PanoramaViewerNode`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `RegexExtract`
-- `SamplerCustomAdvanced`
-- `SaveAudio`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `SetNode`
-- `StringConcatenate`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `YUAN_TXTPreviewContent` —— 1/3 个有
-- `YUAN_TXTReplace` —— 1/3 个有
+- `Wuji360Panorama` —— 2/4 个有
+- `WujiUpscaler` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1088 | 1080 - 1920 | 3 | 71% |
-| 高度 | 1920 | 1088 - 1920 | 3 | 76% |
+| 采样步数 | 9 | 9 - 9 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1088，观测区间 1080 - 1920，3 个样本
-- 高度 中位数 1920，观测区间 1088 - 1920，3 个样本
+- 采样步数 中位数 9，观测区间 9 - 9，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

@@ -1,64 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_147
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.796636
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.76025
+common_nodes: [GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetRadialAttention, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy globalSeed, easy seed]
 problems: []
-missing: [CR Prompt Text]
-members: [图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json, 图片生成/文生图/1950229173782667265.json, 视频生成/图生视频/1950186803727876098.json, 视频生成/图生视频/1950195066095714306.json, 视频生成/图生视频/1951706628657721345.json, 视频生成/图生视频/1968577373975261186.json, 视频生成/图生视频/2015424489110118402.json, 视频生成/图生视频/1949986819199909890.json, 视频生成/图生视频/1950060354116214786.json, 视频生成/图生视频/1950560356596961282.json, 视频生成/图生视频/1976954244421046273.json]
+missing: [String Literal, easy globalSeed, easy seed, easy float, easy int]
+members: [视频生成/图生视频/2001919692862308354.json, 视频生成/图生视频/1979417916649148417.json, 视频生成/图生视频/2019227457009750018.json, 视频生成/图生视频/1981374201879773186.json, 视频生成/文生视频/1973043672696623106.json, 视频生成/文生视频/1978022050193362945.json, 视频生成/文生视频/1978390766324224001.json, 视频生成/文生视频/1978408031887233025.json, 视频生成/文生视频/1978411441667592194.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V4_2072999500995928064.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5+lynx_2072999497908920320.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速V5+lynx_2072999499213348864.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_147
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json、图片生成/文生图/1950229173782667265.json、视频生成/图生视频/1950186803727876098.json、视频生成/图生视频/1950195066095714306.json、视频生成/图生视频/1951706628657721345.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2001919692862308354.json、视频生成/图生视频/1979417916649148417.json、视频生成/图生视频/2019227457009750018.json、视频生成/图生视频/1981374201879773186.json、视频生成/文生视频/1973043672696623106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+全部 12 个 workflow 都包含：
+- `GetNode`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `String Literal`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoSetRadialAttention`
+- `WanVideoSigmaToStep`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy globalSeed`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 10/11 个有
-- `INTConstant` —— 9/11 个有
-- `GetImageSizeAndCount` —— 8/11 个有
-- `LoadImage` —— 7/11 个有
-- `CR Prompt Text` —— 6/11 个有
-- `ImageResizeKJv2` —— 6/11 个有
-- `JWInteger` —— 6/11 个有
-- `WanVideoImageToVideoEncode` —— 6/11 个有
-- `WanVideoEmptyEmbeds` —— 5/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `GetNode` —— 4/11 个有
-- `SetNode` —— 4/11 个有
-- `MathExpression|pysssss` —— 3/11 个有
-- `WanVideoEasyCache` —— 3/11 个有
-- `Int` —— 2/11 个有
-- `Primitive integer [Crystools]` —— 2/11 个有
-- `Text Multiline` —— 2/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `Seed_` —— 1/11 个有
-- `easy bookmark` —— 1/11 个有
-- `easy imageSize` —— 1/11 个有
-- `easy positive` —— 1/11 个有
+- `WanVideoTorchCompileSettings` —— 11/12 个有
+- `ImageResizeKJv2` —— 10/12 个有
+- `Int` —— 10/12 个有
+- `PreviewImage` —— 10/12 个有
+- `WanVideoImageToVideoEncode` —— 10/12 个有
+- `easy showAnything` —— 10/12 个有
+- `LoadLynxResampler` —— 9/12 个有
+- `LynxEncodeFaceIP` —— 9/12 个有
+- `LynxInsightFaceCrop` —— 9/12 个有
+- `RH_Captioner` —— 9/12 个有
+- `WanVideoAddLynxEmbeds` —— 9/12 个有
+- `WanVideoExtraModelSelect` —— 9/12 个有
+- `WanVideoTextEncodeCached` —— 9/12 个有
+- `WanVideoEmptyEmbeds` —— 2/12 个有
+- `WanVideoVACEEncode` —— 2/12 个有
+- `WanVideoVACEModelSelect` —— 2/12 个有
+- `easy float` —— 2/12 个有
+- `easy int` —— 2/12 个有
 
 ## 典型参数
 
@@ -70,4 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
+- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、easy globalSeed、easy seed、easy float、easy int

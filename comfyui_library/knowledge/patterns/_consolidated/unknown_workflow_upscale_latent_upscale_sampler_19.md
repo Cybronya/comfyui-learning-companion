@@ -1,78 +1,74 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_19
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.946
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
+coverage: 0.85325
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatchV2, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, LatentUpscaleBy, PreviewImage, PrimitiveFloat, SaveImage, Seed (rgthree), UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3-多宫格生视频-画质感人-v2_2038941376720674817.json, 视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json, 视频生成/文生视频/LTX2.3-首尾帧_2031929637428793346.json]
+members: [图片生成/文生图/KREA2+3次采样+高清放大_2074736937302315010.json, 图片生成/文生图/Krea2二采文生图工作流_2076089896476954626.json, 图片生成/文生图/krea2 muse 二采高清生图、USD放大_2096529113921183746.json, 图片生成/文生图/▶▶Krea2-高清生图-人像_2078282360008826881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_19
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX2.3-多宫格生视频-画质感人-v2_2038941376720674817.json、视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json、视频生成/文生视频/LTX2.3-首尾帧_2031929637428793346.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/KREA2+3次采样+高清放大_2074736937302315010.json、图片生成/文生图/Krea2二采文生图工作流_2076089896476954626.json、图片生成/文生图/krea2 muse 二采高清生图、USD放大_2096529113921183746.json、图片生成/文生图/▶▶Krea2-高清生图-人像_2078282360008826881.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LoadImage`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ColorMatchV2`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `LatentUpscaleBy`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `SaveImage`
-- `SimpleMath+`
+- `Seed (rgthree)`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 2/3 个有
-- `GuHaiAutoImageSplit` —— 2/3 个有
-- `ImageFromBatch` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `LTXVAddGuideMulti` —— 2/3 个有
-- `QZ_ResolutionPreset` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `1hew_SaveVideo` —— 1/3 个有
-- `ConcatTextOfUtils` —— 1/3 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `Primitive float [Crystools]` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetImageSize+` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `SimpleMathDual+` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `CompressImages` —— 1/4 个有
+- `ConditioningKrea2Rebalance` —— 1/4 个有
+- `DuckHideNode` —— 1/4 个有
+- `HAIGC_SaveImagesToZip` —— 1/4 个有
+- `LoaderGGUF` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `llama_cpp_instruct_adv` —— 1/4 个有
+- `llama_cpp_model_loader` —— 1/4 个有
+- `llama_cpp_parameters` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 3 | 89% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+| 宽度 | 768 | 720 - 1152 | 4 | 80% |
+| 高度 | 1280 | 1080 - 1536 | 4 | 87% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 8.5 | 7 - 10 | 4 | 82% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -80,5 +76,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，3 个样本，取值集中（一致性 89%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 720 - 1152，4 个样本
+- 高度 中位数 1280，观测区间 1080 - 1536，4 个样本，取值集中（一致性 87%）
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8.5，观测区间 7 - 10，4 个样本，取值集中（一致性 82%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

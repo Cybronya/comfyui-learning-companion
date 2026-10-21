@@ -2,51 +2,70 @@
 name: unknown_workflow_video_lora_sampler_395
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.900833
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.946333
+common_nodes: [CLIPTextEncode, CM_FloatToInt, DualCLIPLoader, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/1949454368652308481.json, 视频生成/文生视频/KJ工作流_2066489946755657729.json, 视频生成/文生视频/LSP足komg专用，白丝，WAN2.2文生图_2018061075089985538.json, 视频生成/文生视频/WAN2.2-4步极速版_文生视频-KJ版工作流_2017851048295145474.json, 视频生成/文生视频/WAN2.2-4步极速版_文生视频-KJ版工作流_2050481503284539394.json, 视频生成/文生视频/1936093650231152641.json]
+members: [视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json, 视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json, 视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json, 视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json, 视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json, 视频生成/文生视频/ltx-2.3文生视频蒸馏二阶段放大_2030336856772059137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_395
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/1949454368652308481.json、视频生成/文生视频/KJ工作流_2066489946755657729.json、视频生成/文生视频/LSP足komg专用，白丝，WAN2.2文生图_2018061075089985538.json、视频生成/文生视频/WAN2.2-4步极速版_文生视频-KJ版工作流_2017851048295145474.json、视频生成/文生视频/WAN2.2-4步极速版_文生视频-KJ版工作流_2050481503284539394.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json、视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json、视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json、视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json、视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RandomNoise`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `UnetLoaderGGUF`
+- `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 4/6 个有
-- `WanVideoBlockSwap` —— 3/6 个有
-- `CreateCFGScheduleFloatList` —— 2/6 个有
-- `WanVideoEnhanceAVideo` —— 2/6 个有
-- `ImpactInt` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
+- `CFGGuider` —— 5/6 个有
+- `KSamplerSelect` —— 5/6 个有
+- `ManualSigmas` —— 5/6 个有
+- `ClownSampler_Beta` —— 4/6 个有
+- `GuiderParameters` —— 4/6 个有
+- `LTXVScheduler` —— 4/6 个有
+- `MultimodalGuider` —— 4/6 个有
+- `LTXVLatentUpsampler` —— 2/6 个有
+- `LatentUpscaleModelLoader` —— 2/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -54,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

@@ -1,75 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_77
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.282333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, CR Text, ConditioningZeroOut, GetNode, KSampler, Lora Loader Stack (rgthree), ModelSamplingAuraFlow, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAELoader, easy promptConcat]
-problems: []
-missing: [CR Text, CR SDXL Aspect Ratio, Lora Loader Stack (rgthree), Seed (rgthree), easy promptConcat, LayerUtility: PurgeVRAM]
-members: [图片生成/文生图/1972192446874578945.json, 图片生成/文生图/1984095755768102914.json, 图片生成/文生图/1988231309522812930.json]
+coverage: 0.60925
+common_nodes: [CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, EmptyHunyuanLatentVideo, ImpactInt, KSampler, LoraLoader, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
+missing: [CR Text, CR Text Concatenate, Text Find and Replace, Text Load Line From File, Text Multiline, easy forLoopEnd, easy forLoopStart]
+members: [图片生成/文生图/1948706172485414914.json, 图片生成/文生图/1949336324483031041.json, 图片生成/文生图/1949349633655545857.json, 图片生成/文生图/1950729804771430402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_77
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1972192446874578945.json、图片生成/文生图/1984095755768102914.json、图片生成/文生图/1988231309522812930.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1948706172485414914.json、图片生成/文生图/1949336324483031041.json、图片生成/文生图/1949349633655545857.json、图片生成/文生图/1950729804771430402.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：28%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CFGZeroStarAndInit`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
 - `CR Text`
-- `ConditioningZeroOut`
-- `GetNode`
+- `CR Text Concatenate`
+- `EmptyHunyuanLatentVideo`
+- `ImpactInt`
 - `KSampler`
-- `Lora Loader Stack (rgthree)`
-- `ModelSamplingAuraFlow`
+- `LoraLoader`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `UpscaleModelLoader` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `ImageUpscaleWithModel` —— 1/3 个有
-- `LatentUpscaleBy` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `UltimateSDUpscale` —— 1/3 个有
-- `UltimateSDUpscaleNoUpscale` —— 1/3 个有
+- `ImpactSwitch` —— 2/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `Text Find and Replace` —— 2/4 个有
+- `Text Load Line From File` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
+- `easy forLoopEnd` —— 2/4 个有
+- `easy forLoopStart` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 20 - 30 | 3 | 82% |
-| Prompt 约束强度(CFG) | 4 | 4 - 8 | 3 | 65% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 0.4 | 0.4 - 1 | 4 | 53% |
+| LoRA 文本强度 | 0.4 | 0.4 - 1 | 4 | 53% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | res_2s | - | 4 | 100% |
+| 调度器 | bong_tangent | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 20 - 30，3 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR SDXL Aspect Ratio、Lora Loader Stack (rgthree)、Seed (rgthree)、easy promptConcat
+- LoRA 模型强度 中位数 0.4，观测区间 0.4 - 1，4 个样本
+- LoRA 文本强度 中位数 0.4，观测区间 0.4 - 1，4 个样本
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，4 个样本，一致性 100%
+- 调度器 最常用 bong_tangent，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、Text Find and Replace、Text Load Line From File、Text Multiline

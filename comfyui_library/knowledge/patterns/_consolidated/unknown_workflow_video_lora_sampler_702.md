@@ -3,53 +3,53 @@ name: unknown_workflow_video_lora_sampler_702
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.975667
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.961667
+common_nodes: [CR Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, QwenLoader, ShowText|pysssss, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPromptExtender, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json, 视频生成/文生视频/1958062823505088514.json, 视频生成/文生视频/1952990439869714434.json]
+members: [视频生成/文生视频/Wan2.2文生视频_1994337581800292354.json, 视频生成/文生视频/1951121604451442689.json, 视频生成/文生视频/1955825453995999233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_702
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json、视频生成/文生视频/1958062823505088514.json、视频生成/文生视频/1952990439869714434.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生视频_1994337581800292354.json、视频生成/文生视频/1951121604451442689.json、视频生成/文生视频/1955825453995999233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Text`
 - `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM`
 - `LoadWanVideoT5TextEncoder`
+- `QwenLoader`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoPromptExtender`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `ImageToMask` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `WanVideoAddTTMLatents` —— 1/3 个有
-- `WanVideoEncode` —— 1/3 个有
-- `easy globalSeed` —— 1/3 个有
+- `Float` —— 2/3 个有
+- `WanVideoScheduler` —— 2/3 个有
+- `WanVideoSigmaToStep` —— 2/3 个有
 
 ## 典型参数
 

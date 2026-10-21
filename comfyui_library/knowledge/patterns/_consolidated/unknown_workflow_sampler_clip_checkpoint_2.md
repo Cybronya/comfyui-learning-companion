@@ -1,61 +1,55 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_2
 type: Unknown Workflow
-frequency: 9
+frequency: 16
 level: moderate
-coverage: 0.839778
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, SaveImage, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.913937
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyFlux2LatentImage, RandomNoise, SamplerCustomAdvanced, SaveImage, T8LLaDAImageCheckpointLoader, T8LLaDAImageScheduler, VAEDecode]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/sd3.5_simple_example.json, 图片生成/文生图/11111_1943236511586271234.json, 图片生成/文生图/1905175007570350082.json, 图片生成/文生图/1930157809210441730.json, 图片生成/文生图/1930158858272980993.json, 图片生成/文生图/1930264243235405826.json, 图片生成/文生图/1951277492470493185.json, 图片生成/文生图/Lumina Image 2.0 官方工作流_1894345126246809602.json, 图片生成/文生图/简单易用的 FP8 版本_1898159424081448962.json]
+members: [图片生成/文生图/AI一句话出二次元少女工作流_2099688939119534082.json, 图片生成/文生图/AI一句话出像素画工作流_2099689128639156225.json, 图片生成/文生图/AI一句话出图工作流_2099483718917382145.json, 图片生成/文生图/AI一句话出宠物写真工作流_2099673253303373825.json, 图片生成/文生图/AI一句话出服装模特图工作流_2099661996517056513.json, 图片生成/文生图/AI一句话出标志设计工作流_2099662212171390978.json, 图片生成/文生图/AI一句话出油画水彩工作流_2099689510945779714.json, 图片生成/文生图/AI一句话出竖版封面工作流_2099496937639727106.json, 图片生成/文生图/AI一句话出素描线稿工作流_2099689319828115458.json, 图片生成/文生图/AI一句话出角色立绘工作流_2099497044703531010.json, 图片生成/文生图/AI一句话出风景壁纸工作流_2099662102616166402.json, 图片生成/文生图/LLaDA-Image Base文生图·高保真图像生成_2097527015002955777.json, 图片生成/文生图/LLaDA-Image Turbo极速文生图·4步出图_2097527440242466817.json, 图片生成/文生图/LLaDA-Image-Turbo-4步-文生图_2098231001439887361.json, 图片生成/文生图/LLaDA-Image-文生图-全扩散架构_2098224508950896642.json, 图片生成/文生图/LLaDA-Image文字海报工作流_2099392086859673602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_2
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（comfyui-workflow-templates-json/sd3.5_simple_example.json、图片生成/文生图/11111_1943236511586271234.json、图片生成/文生图/1905175007570350082.json、图片生成/文生图/1930157809210441730.json、图片生成/文生图/1930158858272980993.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/AI一句话出二次元少女工作流_2099688939119534082.json、图片生成/文生图/AI一句话出像素画工作流_2099689128639156225.json、图片生成/文生图/AI一句话出图工作流_2099483718917382145.json、图片生成/文生图/AI一句话出宠物写真工作流_2099673253303373825.json、图片生成/文生图/AI一句话出服装模特图工作流_2099661996517056513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `T8LLaDAImageCheckpointLoader`
+- `T8LLaDAImageScheduler`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 8/9 个有
-- `ModelSamplingAuraFlow` —— 4/9 个有
-- `FluxGuidance` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `Bjornulf_LatentResolutionSelector` —— 1/9 个有
+- `KSamplerSelect` —— 14/16 个有
+- `CR Prompt Text` —— 12/16 个有
+- `CLIPLoader` —— 11/16 个有
+- `TextGenerate` —— 11/16 个有
+- `PrimitiveInt` —— 2/16 个有
+- `PrimitiveStringMultiline` —— 2/16 个有
+- `T8SamplerLLaDAImageTurbo` —— 2/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 4 - 25 | 9 | 69% |
-| Prompt 约束强度(CFG) | 4 | 1 - 8 | 9 | 39% |
-| 采样算法 | euler | - | 9 | 56% |
-| 调度器 | simple | - | 9 | 78% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 25，9 个样本
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 8，9 个样本，取值分散，一致性仅 39%
-- 采样算法 最常用 euler，9 个样本，一致性 56%
-- 调度器 最常用 simple，9 个样本，一致性 78%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

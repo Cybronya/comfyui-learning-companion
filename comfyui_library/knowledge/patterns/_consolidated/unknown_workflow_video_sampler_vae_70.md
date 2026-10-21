@@ -3,27 +3,28 @@ name: unknown_workflow_video_sampler_vae_70
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.969
-common_nodes: [GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.690429
+common_nodes: [GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934640445391872001.json, 视频生成/图生视频/1934644328725684226.json, 视频生成/图生视频/1943227565869842433.json, 视频生成/图生视频/1925111334327754753.json, 视频生成/图生视频/1922724321020579841.json, 视频生成/图生视频/1923332542534250497.json, 视频生成/图生视频/1934807918095343617.json]
+members: [视频生成/图生视频/1923394290066575361.json, 视频生成/图生视频/1923694325656711169.json, 视频生成/图生视频/1934473934488162306.json, 视频生成/图生视频/1925467982229590018.json, 视频生成/图生视频/1932748571013697538.json, 视频生成/图生视频/1923563550629875714.json, 视频生成/图生视频/1936291028129206274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_70
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1934640445391872001.json、视频生成/图生视频/1934644328725684226.json、视频生成/图生视频/1943227565869842433.json、视频生成/图生视频/1925111334327754753.json、视频生成/图生视频/1922724321020579841.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1923394290066575361.json、视频生成/图生视频/1923694325656711169.json、视频生成/图生视频/1934473934488162306.json、视频生成/图生视频/1925467982229590018.json、视频生成/图生视频/1932748571013697538.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `GetImageSizeAndCount`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
@@ -32,33 +33,38 @@ source: knowledge_consolidation
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 6/7 个有
-- `WanVideoTextEncode` —— 6/7 个有
-- `AddLabel` —— 4/7 个有
-- `EmptyImage` —— 4/7 个有
-- `ImageConcatMulti` —— 4/7 个有
-- `LoadImage` —— 4/7 个有
-- `MaskPreview+` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `WanVideoTeaCache` —— 4/7 个有
-- `WanVideoVACEStartToEndFrame` —— 4/7 个有
-- `GetImageRangeFromBatch` —— 3/7 个有
-- `ImagePadKJ` —— 3/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
-- `VHS_LoadVideo` —— 3/7 个有
-- `WanVideoMagCache` —— 3/7 个有
-- `WanVideoVACEModelSelect` —— 3/7 个有
-- `easy int` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `RH_Translator` —— 2/7 个有
-- `Text` —— 1/7 个有
-- `WanVideoApplyNAG` —— 1/7 个有
-- `WanVideoTextEncodeSingle` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `GetNode` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `WanVideoLoraSelect` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `WanVideoVACEStartToEndFrame` —— 6/7 个有
+- `AddLabel` —— 5/7 个有
+- `EmptyImage` —— 5/7 个有
+- `ImageConcatMulti` —— 5/7 个有
+- `VHS_LoadVideo` —— 5/7 个有
+- `ImageResizeKJv2` —— 4/7 个有
+- `Bookmark (rgthree)` —— 3/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `ImageResizeKJ` —— 2/7 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 2/7 个有
+- `INTConstant` —— 1/7 个有
+- `ImagePadKJ` —— 1/7 个有
+- `ImageResize+` —— 1/7 个有
+- `MimicMotionGetPoses` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `String Literal` —— 1/7 个有
+- `TextInput_` —— 1/7 个有
+- `VHS_VideoInfo` —— 1/7 个有
+- `WanVideoEnhanceAVideo` —— 1/7 个有
+- `WanVideoVRAMManagement` —— 1/7 个有
 
 ## 典型参数
 

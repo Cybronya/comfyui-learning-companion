@@ -3,70 +3,59 @@ name: unknown_workflow_video_lora_sampler_528
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.67325
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.391
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), SamplerCustom, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimate2ContextOptions, WanAnimate2ToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1958336218591334402.json, 视频生成/图生视频/2010602329619304450.json, 视频生成/图生视频/2010621857124323330.json, 视频生成/图生视频/1969815681778786306.json]
+members: [视频生成/图生视频/WanAnimate2 动作迁移（效果最好的动作迁移）_2100492099857768449.json, 视频生成/图生视频/WanAnimate2-动作迁移双模式无限长视频【多人】_2098646467857698818.json, 视频生成/图生视频/WanAnimate2动作迁移_2096817694862565378.json, 视频生成/图生视频/王者归来！【WanAnimate2】最强动作迁移模型 丝滑长视频工作流_2095800669994311682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_528
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1958336218591334402.json、视频生成/图生视频/2010602329619304450.json、视频生成/图生视频/2010621857124323330.json、视频生成/图生视频/1969815681778786306.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/WanAnimate2 动作迁移（效果最好的动作迁移）_2100492099857768449.json、视频生成/图生视频/WanAnimate2-动作迁移双模式无限长视频【多人】_2098646467857698818.json、视频生成/图生视频/WanAnimate2动作迁移_2096817694862565378.json、视频生成/图生视频/王者归来！【WanAnimate2】最强动作迁移模型 丝滑长视频工作流_2095800669994311682.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioSeparation`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
 - `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Power Lora Loader (rgthree)`
+- `SamplerCustom`
 - `SetNode`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VHS_VideoInfoLoaded`
+- `WanAnimate2ContextOptions`
+- `WanAnimate2ToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `AudioCropProcessUTK` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `ImageConcatMulti` —— 2/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `JWInteger` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `LayerUtility: TextBox` —— 2/4 个有
-- `PDIMAGE_LongerSize` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `ImageScaleByAspectRatio_UTK` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
+- `FastGroupsBypassSwitch` —— 3/4 个有
+- `FeiHouWanAnimate2SeamColorMatch` —— 3/4 个有
+- `FeiHouWanAnimate2ToVideo` —— 3/4 个有
+- `Seed (rgthree)` —— 3/4 个有
+- `WanAnimate2Cache` —— 3/4 个有
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,54 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_unet_22
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.619667
-common_nodes: [BasicGuider, GetNode, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy ifElse]
+coverage: 0.834625
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, ManualSigmas, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/30S 极简版 图生视频 文生视频 视频编辑多合一 海螺-H3 孤海大佬版_2088234804713185281.json, 视频生成/文生视频/30s 生成 加速版全能版！MinimaxH3！开源免费版！GH版_2088252312514031618.json, 视频生成/文生视频/FZ-MiniMaxH3-智能一体化视频创作（显存优化）_2100213011712667650.json, 视频生成/文生视频/FZ-MinimaxH3-智能一体化视频生成_2096847617182486529.json, 视频生成/文生视频/H3 极简视频工作台_2091386301621825537.json, 视频生成/文生视频/Lingke - H3 智能一体化视频创作_2094241756031315970.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2086579374731649025.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2093143247815266305.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2094320306113564674.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2094322556294746113.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090444935400083457.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090445520996233218.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090455986980089857.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作工作流_2091420444334313474.json, 视频生成/文生视频/MiniMax - H3 视频智能创作台_2088681824125014018.json]
+members: [视频生成/图生视频/室内空间装修生长动画_2111460963353448449.json, 视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json, 视频生成/图生视频/最强单采V2【10步加特林版】_2110594969235968002.json, 视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json, 视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json, 视频生成/图生视频/街舞表演视频制作_2106024930591731713.json, 视频生成/图生视频/（api）横屏640p坤坤H3官流无lora12步_2110413455923699713.json, 视频生成/图生视频/（api）竖屏608p坤坤H3官流无lora_2108200300300554241.json, 视频生成/图生视频/（api）竖屏768p坤坤H3官流_2108103067618070530.json, 视频生成/文生视频/H3-氛围感短视频_2096431562895220737.json, 视频生成/文生视频/H3-氛围感网红打卡点短视频制作_2096832540542857218.json, 视频生成/文生视频/H3官流全能参考9图1音频1视频_2105563203647393793.json, 视频生成/文生视频/H3官流（mpov版）-不用加速lora_2107126428574773249.json, 视频生成/文生视频/H3官流（最强武戏）_2108377903393239042.json, 视频生成/文生视频/H3官流（终极版）_2104734128657756162.json, 视频生成/文生视频/H3无损融合单采【官方满血API画布级本地流】_2108739345095155713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_22
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/30S 极简版 图生视频 文生视频 视频编辑多合一 海螺-H3 孤海大佬版_2088234804713185281.json、视频生成/文生视频/30s 生成 加速版全能版！MinimaxH3！开源免费版！GH版_2088252312514031618.json、视频生成/文生视频/FZ-MiniMaxH3-智能一体化视频创作（显存优化）_2100213011712667650.json、视频生成/文生视频/FZ-MinimaxH3-智能一体化视频生成_2096847617182486529.json、视频生成/文生视频/H3 极简视频工作台_2091386301621825537.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/室内空间装修生长动画_2111460963353448449.json、视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json、视频生成/图生视频/最强单采V2【10步加特林版】_2110594969235968002.json、视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json、视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `BasicGuider`
-- `GetNode`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LoadImage`
+- `ManualSigmas`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 14/15 个有
-- `MiniMaxH3DualClockT8GH` —— 14/15 个有
-- `easy anythingIndexSwitch` —— 14/15 个有
-- `MiniMaxH3AVDecodeT8GH` —— 13/15 个有
-- `孤海注释` —— 13/15 个有
-- `ImpactSleep` —— 3/15 个有
-- `LoadVideoNode` —— 3/15 个有
-- `MiniMaxH3AVDecodeT8` —— 3/15 个有
-- `SaveVideo` —— 3/15 个有
-- `LoadImage` —— 2/15 个有
-- `Label (rgthree)` —— 1/15 个有
-- `LoraLoaderModelOnly` —— 1/15 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/15 个有
+- `BasicScheduler` —— 15/16 个有
+- `PrimitiveStringMultiline` —— 15/16 个有
+- `BlockSparseAttention` —— 14/16 个有
+- `LoraLoaderModelOnly` —— 13/16 个有
+- `LoadAudio` —— 12/16 个有
+- `VHS_LoadVideo` —— 10/16 个有
+- `GetNode` —— 2/16 个有
+- `SetNode` —— 2/16 个有
+- `忽略多组孤海` —— 2/16 个有
+- `GoohaiDisplayAny` —— 1/16 个有
+- `JjkText` —— 1/16 个有
+- `LayerUtility: TextJoin` —— 1/16 个有
+- `RHLLMChatNode` —— 1/16 个有
+- `RH_RhartImageG2ImageToImage` —— 1/16 个有
+- `SaveImage` —— 1/16 个有
 
 ## 典型参数
 

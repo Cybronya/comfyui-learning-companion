@@ -3,31 +3,34 @@ name: unknown_workflow_generic_374
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.875
-common_nodes: [FB_Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.769
+common_nodes: [Image Comparer (rgthree), ImageConcanate, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS声音设计_2065319108614385666.json, 音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json, 音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json, 音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json]
+members: [图片生成/文生图/全新new ! 全能图像编辑2 - 支持文生图 单图 双图 多图_2027221940829691906.json, 图片生成/文生图/全能图像编辑-人物服装拆解_2011796473960210434.json, 图片生成/文生图/最新版全能图像编辑+2+-+支持文生图+单图+双图+多图++_2027287092555943938.json, 图片生成/文生图/海报设计+P图+高清放大+替换产品（全能图像编辑）_2010883571279466497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_374
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS声音设计_2065319108614385666.json、音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json、音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json、音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全新new ! 全能图像编辑2 - 支持文生图 单图 双图 多图_2027221940829691906.json、图片生成/文生图/全能图像编辑-人物服装拆解_2011796473960210434.json、图片生成/文生图/最新版全能图像编辑+2+-+支持文生图+单图+双图+多图++_2027287092555943938.json、图片生成/文生图/海报设计+P图+高清放大+替换产品（全能图像编辑）_2010883571279466497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
 
 ## 典型参数
 

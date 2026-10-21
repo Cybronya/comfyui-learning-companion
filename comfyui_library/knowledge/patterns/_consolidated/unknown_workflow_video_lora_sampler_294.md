@@ -3,79 +3,70 @@ name: unknown_workflow_video_lora_sampler_294
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.732857
-common_nodes: [BasicScheduler, CLIPLoader, CR Float To String, CR Text, CR Text Concatenate, CR Text Replace, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, ImageBatchMultiV2, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PreviewAudio, PrimitiveStringMultiline, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.809286
+common_nodes: [CLIPVisionLoader, CR Prompt Text, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/MV 数字人 最高质量+中等质量1分钟MV_数字人(selflift)_2102990042653356034.json, 数字人/数字人/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104865906382958594.json, 视频生成/图生视频/MV 数字人 最高质量版+中等质量1分钟MV_数字人_2102990042653356034.json, 视频生成/图生视频/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104938995259109378.json, 视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2105590721473507329.json, 视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2108379925534298113.json, 视频生成/图生视频/全新 Selflift+商用MV工作流+12种组合可选。完美数字人20260916版_2099750134669201409.json]
+members: [视频生成/图生视频/2006714011445895170.json, 视频生成/图生视频/1967041274844995586.json, 视频生成/图生视频/1968534429834588161.json, 视频生成/图生视频/1967057695654207489.json, 视频生成/图生视频/2065824497244135425.json, 视频生成/图生视频/1980902275004678145.json, 音频生成/音频生成/Infinite Talk-对口型说话+唱歌无限时长+高动态_2021031552670507010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_294
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MV 数字人 最高质量+中等质量1分钟MV_数字人(selflift)_2102990042653356034.json、数字人/数字人/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104865906382958594.json、视频生成/图生视频/MV 数字人 最高质量版+中等质量1分钟MV_数字人_2102990042653356034.json、视频生成/图生视频/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104938995259109378.json、视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2105590721473507329.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2006714011445895170.json、视频生成/图生视频/1967041274844995586.json、视频生成/图生视频/1968534429834588161.json、视频生成/图生视频/1967057695654207489.json、视频生成/图生视频/2065824497244135425.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Float To String`
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `ConditioningZeroOut`
-- `ImageBatchMultiV2`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `GetImageSizeAndCount`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `PreviewAudio`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `ShowAnything|Mie`
-- `SolidMask`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
 - `VHS_VideoCombine`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 6/7 个有
-- `SoundFlow_GetLength` —— 6/7 个有
-- `JWStringToFloat` —— 5/7 个有
-- `TrimAudioDuration` —— 5/7 个有
-- `AudioCrop` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
+- `JWInteger` —— 5/7 个有
+- `AudioSeparation` —— 4/7 个有
+- `DownloadAndLoadWav2VecModel` —— 4/7 个有
+- `LoadAudio` —— 4/7 个有
+- `MultiTalkSilentEmbeds` —— 4/7 个有
+- `MultiTalkWav2VecEmbeds` —— 4/7 个有
+- `GetNode` —— 3/7 个有
+- `PreviewAny` —— 3/7 个有
+- `SetNode` —— 3/7 个有
+- `SimpleMath+` —— 3/7 个有
+- `AudioCrop` —— 2/7 个有
+- `Display Int (rgthree)` —— 2/7 个有
+- `SoundFlow_GetLength` —— 2/7 个有
+- `ToInt` —— 2/7 个有
+- `AddLabel` —— 1/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `Float` —— 1/7 个有
+- `INTConstant` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
 - `Int` —— 1/7 个有
-- `LoadAudioUI` —— 1/7 个有
-- `PurgeVRAM_UTK` —— 1/7 个有
-- `RH_Translator` —— 1/7 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/7 个有
-- `忽略多组孤海` —— 1/7 个有
+- `JWFloat` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 

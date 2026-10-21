@@ -1,106 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_105
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.447929
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.874267
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2077357335839854594.json, 视频生成/图生视频/2077460288709947393.json, 视频生成/图生视频/2077288214603329538.json, 视频生成/图生视频/2077324573078548481.json, 视频生成/图生视频/2070484357101473794.json, 视频生成/图生视频/2079863299176484866.json, 视频生成/图生视频/2071782259115511810.json, 视频生成/图生视频/2071786306396573698.json, 视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json, 视频生成/图生视频/2067529633486168065.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换_2067503598057123841.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换自动版_2067564547317264386.json, 视频生成/图生视频/2067087693439397890.json, 视频生成/图生视频/2067282833252634625.json]
+missing: [SimpleMath+, easy positive, easy seed, ImageFromBatch+, CR Prompt Text]
+members: [视频生成/文生视频/1951636109178646529.json, 视频生成/文生视频/1960686158676189186.json, 视频生成/文生视频/1974801904645574658.json, 视频生成/文生视频/1978813759940628482.json, 视频生成/文生视频/1978818783190093825.json, 视频生成/文生视频/1979020058171183105.json, 视频生成/文生视频/1979736664522264578.json, 视频生成/文生视频/Wan2.2 Smooth Mix高动态文生视频V2（KJ版）_2073985473007337472.json, 视频生成/文生视频/1952329679653023745.json, 视频生成/文生视频/1950109522175115265.json, 视频生成/文生视频/（4+4步）Wan2.2 HoloCine电影多镜头文生视频（KJ版-目前效果不佳）_1982404928775831554.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979736672185257985.json, 视频生成/文生视频/（4+4步）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737052461830146.json, 视频生成/文生视频/（6+4步贞贞版）Wan2.2 Smooth Mix V2高动态差异模型文生视频V1（KJ版）_1979737045063077889.json, 视频生成/文生视频/（灰度本地N版）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979878092309172225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_105
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2077357335839854594.json、视频生成/图生视频/2077460288709947393.json、视频生成/图生视频/2077288214603329538.json、视频生成/图生视频/2077324573078548481.json、视频生成/图生视频/2070484357101473794.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/1951636109178646529.json、视频生成/文生视频/1960686158676189186.json、视频生成/文生视频/1974801904645574658.json、视频生成/文生视频/1978813759940628482.json、视频生成/文生视频/1978818783190093825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `SetNode`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `WanSCAILToVideo`
+全部 15 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 13/14 个有
-- `DiffusionModelLoaderKJ` —— 13/14 个有
-- `PrimitiveInt` —— 13/14 个有
-- `EmptyImage` —— 10/14 个有
-- `GetImageSize` —— 10/14 个有
-- `ImageCompositeMasked` —— 10/14 个有
-- `PreviewAny` —— 10/14 个有
-- `SAM3_TrackToMask` —— 10/14 个有
-- `TensorLoopClose` —— 10/14 个有
-- `TensorLoopOpen` —— 10/14 个有
-- `DownloadAndLoadGIMMVFIModel` —— 9/14 个有
-- `GIMMVFI_interpolate` —— 9/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/14 个有
-- `Text` —— 7/14 个有
-- `VHS_VideoInfoSource` —— 7/14 个有
-- `easy imageCount` —— 7/14 个有
-- `easy showAnything` —— 7/14 个有
-- `JWInteger` —— 6/14 个有
-- `RH_Captioner` —— 6/14 个有
-- `easy indexAnything` —— 5/14 个有
-- `DrawMaskOnImage` —— 4/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/14 个有
-- `ImageConcatMulti` —— 4/14 个有
-- `Int` —— 4/14 个有
-- `InvertMask` —— 4/14 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 4/14 个有
-- `ResizeImageMaskNode` —— 4/14 个有
-- `TextConcatenate_UTK` —— 4/14 个有
-- `WanChunkFeedForward` —— 4/14 个有
-- `1hew_MaskMathOps` —— 2/14 个有
-- `ColorPickerMW` —— 2/14 个有
-- `FillMaskWithColor` —— 2/14 个有
-- `JjkText` —— 2/14 个有
-- `Switch` —— 2/14 个有
-- `Text Multiline` —— 2/14 个有
-- `easy mathInt` —— 2/14 个有
-- `Bjornulf_ShowInt` —— 1/14 个有
-- `CR Text` —— 1/14 个有
-- `FL_RIFE` —— 1/14 个有
-- `ImageFromBatch` —— 1/14 个有
-- `Label (rgthree)` —— 1/14 个有
-- `PointsEditor` —— 1/14 个有
-- `RH_LLMAPI_NODE` —— 1/14 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
-- `SeCModelLoader` —— 1/14 个有
-- `SeCVideoSegmentation` —— 1/14 个有
-- `ShowAnything|Mie` —— 1/14 个有
-- `SimpleMath+` —— 1/14 个有
-- `UNETLoader` —— 1/14 个有
-- `VHS_VideoInfo` —— 1/14 个有
+- `INTConstant` —— 14/15 个有
+- `VHS_VideoCombine` —— 14/15 个有
+- `WanVideoTorchCompileSettings` —— 14/15 个有
+- `CR Prompt Text` —— 13/15 个有
+- `GetImageSizeAndCount` —— 13/15 个有
+- `JWInteger` —— 13/15 个有
+- `ImageFromBatch+` —— 10/15 个有
+- `SaveImage` —— 3/15 个有
+- `TT_img_enc` —— 3/15 个有
+- `easy seed` —— 2/15 个有
+- `LoadImage` —— 1/15 个有
+- `MuyeTextEditOutput` —— 1/15 个有
+- `SimpleMath+` —— 1/15 个有
+- `TT_img_enc_v2` —— 1/15 个有
+- `WanVideoContextOptions` —— 1/15 个有
+- `WanVideoEasyCache` —— 1/15 个有
+- `easy positive` —— 1/15 个有
 
 ## 典型参数
 
@@ -112,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+、easy positive、easy seed、ImageFromBatch+、CR Prompt Text

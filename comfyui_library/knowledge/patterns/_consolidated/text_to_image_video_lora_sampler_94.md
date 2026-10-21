@@ -3,72 +3,55 @@ name: text_to_image_video_lora_sampler_94
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.890625
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.916875
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, ModelAttentionBackend, ModelPreviewOverrideKJ, UNETLoader, VAEDecode, VAELoader, easy modelLoaderPack, easy multiTrackEditor, easy multitrackProject, easy multitrackProjectVideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [RunningHub Deepcleaner]
-members: [视频生成/图生视频/MiniMax H3 360度环绕视频加Selflift专用高分辨率生成工作流，图生视频_2106477153318686722.json, 视频生成/图生视频/MiniMax H3 360度环绕视频_Selflift专用高分辨率转场运镜出片_2106207397177024513.json, 视频生成/图生视频/MiniMax H3图生视频高清2K工作流_人像写真音频生成图生视频方案_2106616277656752130.json, 视频生成/图生视频/MiniMax H3锐化高清放大采样工作流_文生视频高清增强方案_2105784930222559233.json, 视频生成/图生视频/MiniMax H3锐化高清放大采样工作流_文生视频高清增强方案_2106131115126910978.json, 视频生成/图生视频/MinimaxH3图生视频高清2K版_人像写真质感细腻出片_2106247039381233666.json, 视频生成/图生视频/Selflift加2xVAE锐化放大模型，图生视频画质增强_2111212774469758978.json, 视频生成/图生视频/selflift加2xVAE锐化放大｜图生视频画质增强方案_2105241932820738050.json]
+missing: []
+members: [视频生成/图生视频/MiniMax H3长视频导演台EasyMedia Motion Context V2工作流，图生视_2107931825766232065.json, 视频生成/图生视频/MiniMax H3长视频导演台EasyMedia Motion Context V2工作流，图生视_2108256036271509506.json, 视频生成/图生视频/MiniMax-H3开源极简导演台｜战斗特效角色设计直出_2097966957537611777.json, 视频生成/图生视频/图像风格迁移转换工作流｜图片处理效果快速生成_2097813987210645506.json, 视频生成/文生视频/H3长视频自动化生成｜上下文分镜自由配置工作流_2095930333345701889.json, 视频生成/文生视频/MiniMax H3 Motion Context长视频生成工作流V2，文生视频图生视频方案_2103897957832683522.json, 视频生成/文生视频/RH-MINIMAX+H3+Motion+Context长视频V2｜连续剧情一键直出_2103664845823500290.json, 视频生成/文生视频/上下文分镜自由配置｜H3长视频自动化项目流三合一_2096213647822508034.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_94
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 360度环绕视频加Selflift专用高分辨率生成工作流，图生视频_2106477153318686722.json、视频生成/图生视频/MiniMax H3 360度环绕视频_Selflift专用高分辨率转场运镜出片_2106207397177024513.json、视频生成/图生视频/MiniMax H3图生视频高清2K工作流_人像写真音频生成图生视频方案_2106616277656752130.json、视频生成/图生视频/MiniMax H3锐化高清放大采样工作流_文生视频高清增强方案_2105784930222559233.json、视频生成/图生视频/MiniMax H3锐化高清放大采样工作流_文生视频高清增强方案_2106131115126910978.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3长视频导演台EasyMedia Motion Context V2工作流，图生视_2107931825766232065.json、视频生成/图生视频/MiniMax H3长视频导演台EasyMedia Motion Context V2工作流，图生视_2108256036271509506.json、视频生成/图生视频/MiniMax-H3开源极简导演台｜战斗特效角色设计直出_2097966957537611777.json、视频生成/图生视频/图像风格迁移转换工作流｜图片处理效果快速生成_2097813987210645506.json、视频生成/文生视频/H3长视频自动化生成｜上下文分镜自由配置工作流_2095930333345701889.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
 - `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_VideoCombine`
+- `easy modelLoaderPack`
+- `easy multiTrackEditor`
+- `easy multitrackProject`
+- `easy multitrackProjectVideoCombine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `H3SigmaRefiner` —— 6/8 个有
-- `LTXVSeparateAVLatent` —— 6/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
-- `MiniMaxH3VAEDecodeFast` —— 6/8 个有
-- `PreviewAny` —— 6/8 个有
-- `QwenH3PromptLocal` —— 6/8 个有
-- `RunningHub Deepcleaner` —— 6/8 个有
-- `Fast Groups Muter (rgthree)` —— 5/8 个有
-- `SaveImage` —— 5/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `ImageFromBatch` —— 3/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `ExtendIntermediateSigmas` —— 2/8 个有
+- `BasicScheduler` —— 6/8 个有
+- `KSamplerSelect` —— 6/8 个有
+- `SaveImage` —— 6/8 个有
+- `SaveVideo` —— 6/8 个有
+- `easy saveVideo` —— 6/8 个有
+- `ManualSigmas` —— 4/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/8 个有
 - `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `MiniMaxH3ImageToVideo` —— 2/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/8 个有
-- `PlaySound|pysssss` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
+- `PathchSageAttentionKJ` —— 2/8 个有
+- `easy blocker` —— 2/8 个有
 
 ## 典型参数
 
@@ -98,4 +81,3 @@ source: knowledge_consolidation
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高发问题（9/8 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub Deepcleaner

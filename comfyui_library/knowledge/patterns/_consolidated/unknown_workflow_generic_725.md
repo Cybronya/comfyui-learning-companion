@@ -3,38 +3,43 @@ name: unknown_workflow_generic_725
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9365
-common_nodes: [ImageScaleDownToSize, IndexTTSNode, LoadAudio, LoadImage, PreviewAudio, Primitive integer [Crystools], RH_Captioner, RunningHub MultiTalk AllInOne, RunningHub MultiTalk Pipeline, SaveVideo, ShowText, Text Multiline]
+coverage: 0.676
+common_nodes: [Fast Groups Muter (rgthree), LayerUtility: JoyCaption2ExtraOptions, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewAny, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RH_Translator, SaveImage, ShowText|pysssss, VHS_LoadVideo, WD14Tagger|pysssss, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934770111813197826.json, 视频生成/图生视频/1934678039760707586.json]
+members: [图片生成/反推提示词/提示词反推工作流合集_2105922119401041922.json, 图片生成/文生图/图片、视频提示词反推合集_2089248784986501121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_725
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1934770111813197826.json、视频生成/图生视频/1934678039760707586.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/提示词反推工作流合集_2105922119401041922.json、图片生成/文生图/图片、视频提示词反推合集_2089248784986501121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScaleDownToSize`
-- `IndexTTSNode`
-- `LoadAudio`
+- `Fast Groups Muter (rgthree)`
+- `LayerUtility: JoyCaption2ExtraOptions`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `PreviewAudio`
-- `Primitive integer [Crystools]`
-- `RH_Captioner`
-- `RunningHub MultiTalk AllInOne`
-- `RunningHub MultiTalk Pipeline`
-- `SaveVideo`
-- `ShowText`
-- `Text Multiline`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Translator`
+- `SaveImage`
+- `ShowText|pysssss`
+- `VHS_LoadVideo`
+- `WD14Tagger|pysssss`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

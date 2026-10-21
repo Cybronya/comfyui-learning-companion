@@ -3,43 +3,34 @@ name: unknown_workflow_generic_271
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.3938
-common_nodes: [AudioCrop, CR Prompt Text, Comfly_api_set, Comfly_suno_upload, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.7612
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno V5.5歌曲翻唱V1(贞贞的AI工坊版）_2054018535248146434.json, 音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_1988566168644534274.json, 音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_2054018548460204033.json, 音频生成/音频生成/Suno V5歌曲翻唱V1(贞贞的AI工坊版-基准0.5元2首)_1988549589743616001.json, 音频生成/音频生成/Suno音乐生成合集   贞贞工坊api调用  翻唱+续写、歌词提取 教学指引版_2011742414955876353.json]
+members: [图片生成/文生图/全能图像V2 版本  文生图，图像编辑， 4K画质，单次0.08_2012878017806209026.json, 图片生成/文生图/全能图像王V2版本   - 4K画质，单次0.08_2027243536512454658.json, 图片生成/文生图/全能图片2多合一【文生图_编辑】_2027217102628724738.json, 图片生成/文生图/全能图片2多合一【文生图_编辑】_2073281144692686848.json, 图片生成/文生图/性价比生图工作流！ RH全能图片2 gemini-3.1-flash-image_2048071421775056897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_271
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Suno V5.5歌曲翻唱V1(贞贞的AI工坊版）_2054018535248146434.json、音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_1988566168644534274.json、音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_2054018548460204033.json、音频生成/音频生成/Suno V5歌曲翻唱V1(贞贞的AI工坊版-基准0.5元2首)_1988549589743616001.json、音频生成/音频生成/Suno音乐生成合集   贞贞工坊api调用  翻唱+续写、歌词提取 教学指引版_2011742414955876353.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图像V2 版本  文生图，图像编辑， 4K画质，单次0.08_2012878017806209026.json、图片生成/文生图/全能图像王V2版本   - 4K画质，单次0.08_2027243536512454658.json、图片生成/文生图/全能图片2多合一【文生图_编辑】_2027217102628724738.json、图片生成/文生图/全能图片2多合一【文生图_编辑】_2073281144692686848.json、图片生成/文生图/性价比生图工作流！ RH全能图片2 gemini-3.1-flash-image_2048071421775056897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：39%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioCrop`
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_upload`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_suno_cover` —— 3/5 个有
-- `Comfly_suno_upload_extend` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `easy anythingIndexSwitch` —— 3/5 个有
-- `CR Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ShellAgentPluginOutputText` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `PreviewImage` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,86 +3,101 @@ name: text_to_image_video_upscale_latent_upscale_22
 type: Text To Image
 frequency: 3
 level: weak
-coverage: 0.519
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Float, GetNode, H3SigmaRefiner, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.738
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/AITUDOU-MiniMax H3 双采样 潜空间放大_2089754898287124481.json, 视频生成/图生视频/双采样潜空间放大DSW｜MiniMax H3二次优化生成_2095951614468251650.json, 视频生成/图生视频/潜空间放大二次优化｜MiniMax H3 双采样DSW图生视频_2096239277662363650.json]
+members: [视频生成/图生视频/LTX2.3 Edit Anything编辑万物｜视频任意元素替换修改，还能动作迁移_2099539066382540802.json, 视频生成/图生视频/LTX2.3-MSR-V2多图生视频_2083001091343601666.json, 视频生成/图生视频/2070813435004284929.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AITUDOU-MiniMax H3 双采样 潜空间放大_2089754898287124481.json、视频生成/图生视频/双采样潜空间放大DSW｜MiniMax H3二次优化生成_2095951614468251650.json、视频生成/图生视频/潜空间放大二次优化｜MiniMax H3 双采样DSW图生视频_2096239277662363650.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 Edit Anything编辑万物｜视频任意元素替换修改，还能动作迁移_2099539066382540802.json、视频生成/图生视频/LTX2.3-MSR-V2多图生视频_2083001091343601666.json、视频生成/图生视频/2070813435004284929.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `Float`
-- `GetNode`
-- `H3SigmaRefiner`
+- `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LoadImage`
+- `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SplitSigmas`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `LoraLoaderBypassModelOnly` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `SolAttnMiniMax` —— 2/3 个有
+- `FrameInterpolate` —— 2/3 个有
+- `FrameInterpolationModelLoader` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LTX2_NAG` —— 2/3 个有
+- `LTXAddVideoICLoRAGuide` —— 2/3 个有
+- `LTXICLoRALoaderModelOnly` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `LiconMSR` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `RTXVideoSuperResolution` —— 2/3 个有
+- `SetNode` —— 2/3 个有
 - `solarL_SaveImagesToZip` —— 2/3 个有
 - `孤海注释` —— 2/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `Qwen3_VQA` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `GPTImage2PromptPreview` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LTXVImgToVideoInplace` —— 1/3 个有
+- `Preview from image [Crystools]` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `RHLLMChatNode` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 1/3 个有
+- `ResizeImagesByLongerEdge` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 1/3 个有
 - `SaveImage` —— 1/3 个有
-- `SeedVR2LoadDiTModel` —— 1/3 个有
-- `SeedVR2LoadVAEModel` —— 1/3 个有
-- `SeedVR2VideoUpscaler` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `WujiCleaner` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `SeedVR2` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `TextEncodeQwenImageEditPlus` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `easy imageSave` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 512 | 3 | 9% |
-| 高度 | 80 | 80 - 512 | 3 | 9% |
+| 宽度 | 80 | 80 - 1920 | 3 | 0% |
+| 高度 | 80 | 80 - 1080 | 3 | 0% |
 | 采样步数 | 4 | 4 - 8 | 3 | 65% |
 | Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
 | 采样算法 | er_sde | - | 3 | 67% |
@@ -97,8 +112,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 512，3 个样本，取值分散，一致性仅 9%
-- 高度 中位数 80，观测区间 80 - 512，3 个样本，取值分散，一致性仅 9%
+- 宽度 中位数 80，观测区间 80 - 1920，3 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1080，3 个样本，取值分散，一致性仅 0%
 - 采样步数 中位数 4，观测区间 4 - 8，3 个样本
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
 - 采样算法 最常用 er_sde，3 个样本，一致性 67%

@@ -3,36 +3,33 @@ name: unknown_workflow_generic_719
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.808
-common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveStringMultiline, RH_Kling25_Image2Video, RH_Sora2_I2V_Realistic, SaveVideo]
+coverage: 0.5145
+common_nodes: [LoadImage, MaskPreview, PreviewImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/1988184484992475138.json, 视频生成/图生视频/2028293831325655042.json]
+members: [comfyui-workflow-templates-json/utility_birefnet_remove_background.json, comfyui-workflow-templates-json/utility_moge_depth_estimation.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_719
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1988184484992475138.json、视频生成/图生视频/2028293831325655042.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/utility_birefnet_remove_background.json、comfyui-workflow-templates-json/utility_moge_depth_estimation.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_Kling25_Image2Video`
-- `RH_Sora2_I2V_Realistic`
-- `SaveVideo`
+- `MaskPreview`
+- `PreviewImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `5b40ca21-ba1a-41d5-b403-4d2d7acdc195` —— 1/2 个有
+- `ca1fac5f-abe5-4729-b7fe-2299f6630a65` —— 1/2 个有
 
 ## 典型参数
 

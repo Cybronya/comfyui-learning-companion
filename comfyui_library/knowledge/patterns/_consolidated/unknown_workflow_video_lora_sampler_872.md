@@ -3,83 +3,73 @@ name: unknown_workflow_video_lora_sampler_872
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7625
-common_nodes: [Anything Everywhere, Audio Duration (mtb), Audio Remixer, AudioCombine, AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CR Text, ColorCorrectOfUtils, GetNode, ImageCASharpening+, ImageResize+, ImpactSwitch, Int, LayerUtility: PurgeVRAM V2, Load Audio Separation Model, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, PreviewImage, RH_Translator, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.7135
+common_nodes: [Anything Everywhere, BatchCount+, CLIPVisionLoader, CR Text, CR Text Concatenate, ColorCorrectOfUtils, CreateCFGScheduleFloatList, Float, GetNode, ImageCASharpening+, ImageResize+, Int, JWInteger, JjkText, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, PreviewImage, PrimitiveBoolean, RHHiddenNodes, RH_Nano_Banana_Image2Image, SetNode, Text Load Line From File, VHS_LoadAudioUpload, VHS_Unbatch, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [视频生成/图生视频/1962038882978172929.json, 视频生成/图生视频/1978783026970824706.json]
+members: [视频生成/图生视频/1978583926098776065.json, 视频生成/图生视频/1983855696577990658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_872
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1962038882978172929.json、视频生成/图生视频/1978783026970824706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1978583926098776065.json、视频生成/图生视频/1983855696577990658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `Anything Everywhere`
-- `Audio Duration (mtb)`
-- `Audio Remixer`
-- `AudioCombine`
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+- `BatchCount+`
+- `CLIPVisionLoader`
 - `CR Text`
+- `CR Text Concatenate`
 - `ColorCorrectOfUtils`
+- `CreateCFGScheduleFloatList`
+- `Float`
 - `GetNode`
 - `ImageCASharpening+`
 - `ImageResize+`
-- `ImpactSwitch`
 - `Int`
+- `JWInteger`
+- `JjkText`
 - `LayerUtility: PurgeVRAM V2`
-- `Load Audio Separation Model`
-- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
 - `PreviewAudio`
 - `PreviewImage`
-- `RH_Translator`
+- `PrimitiveBoolean`
+- `RHHiddenNodes`
+- `RH_Nano_Banana_Image2Image`
 - `SetNode`
-- `VHS_LoadVideo`
+- `Text Load Line From File`
+- `VHS_LoadAudioUpload`
+- `VHS_Unbatch`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy batchAnything`
 - `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `IndexTTSRun` —— 1/2 个有
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `OpenposePreprocessor` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SeedVCRun` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoTextEncodeCached` —— 1/2 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_113
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.662667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7055
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedNode, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3 Mask替换人物 视频人物替换进阶工具_2099906937986048002.json, 视频生成/图生视频/H3+Viggle动作迁移强化版｜免提示词 数字人动作跟随超自然_2105512132791066626.json, 视频生成/图生视频/H3加Viggle免提示词动作迁移 人物视频动态强化版_2110357557851287554.json, 视频生成/图生视频/H3加Viggle免提示词动作迁移强化版，数字人视频生视频图生视频工具_2105724742098571266.json, 视频生成/图生视频/H3加Viggle免提示词动作迁移画质强化版，视频生视频图生视频工具_2105771049332858882.json, 视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json]
+members: [视频生成/图生视频/MiniMax H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2107178414863118337.json, 视频生成/图生视频/MiniMax_H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2109458240017879041.json, 视频生成/图生视频/MinimaxH3 R2V 2Stage VEDA加速视频生成工作流 视频生成加速_2109759397407846402.json, 视频生成/图生视频/Minimax_H3_Character_Swap角色替换｜参考到视频工作流_2106983200139599874.json, 视频生成/文生视频/H3面部精修图生视频工作流 人物面部细节优化_2099910439055482882.json, 视频生成/文生视频/图生视频｜MinimaxH3 R2V面部精修版，人像细节更自然_2099873159469158401.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_113
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/H3 Mask替换人物 视频人物替换进阶工具_2099906937986048002.json、视频生成/图生视频/H3+Viggle动作迁移强化版｜免提示词 数字人动作跟随超自然_2105512132791066626.json、视频生成/图生视频/H3加Viggle免提示词动作迁移 人物视频动态强化版_2110357557851287554.json、视频生成/图生视频/H3加Viggle免提示词动作迁移强化版，数字人视频生视频图生视频工具_2105724742098571266.json、视频生成/图生视频/H3加Viggle免提示词动作迁移画质强化版，视频生视频图生视频工具_2105771049332858882.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2107178414863118337.json、视频生成/图生视频/MiniMax_H3角色替换参考到视频工作流，视频生视频图生视频处理方案_2109458240017879041.json、视频生成/图生视频/MinimaxH3 R2V 2Stage VEDA加速视频生成工作流 视频生成加速_2109759397407846402.json、视频生成/图生视频/Minimax_H3_Character_Swap角色替换｜参考到视频工作流_2106983200139599874.json、视频生成/文生视频/H3面部精修图生视频工作流 人物面部细节优化_2099910439055482882.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
@@ -30,45 +30,54 @@ source: knowledge_consolidation
 - `ComfyMathExpression`
 - `EmptyLatentImage`
 - `GetNode`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SeedNode`
 - `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `JWImageResizeToMegapixels` —— 5/6 个有
-- `SaveImage` —— 5/6 个有
-- `ViggleAnimateConditioning` —— 5/6 个有
-- `ViggleTextCondLoader` —— 5/6 个有
-- `CR Value` —— 3/6 个有
-- `PrimitiveFloat` —— 3/6 个有
-- `CheckpointLoaderSimple` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `ImageAndMaskPreview` —— 1/6 个有
-- `ImageResizeKJv2` —— 1/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `ResolutionSelector` —— 1/6 个有
-- `SAM3_TrackPreview` —— 1/6 个有
-- `SAM3_TrackToMask` —— 1/6 个有
-- `SAM3_VideoTrack` —— 1/6 个有
-- `VAEDecodeAudio` —— 1/6 个有
-- `取色器_孤海` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `孤海注释` —— 5/6 个有
+- `MMH3LatentUpscaleWithModelParams` —— 4/6 个有
+- `MMH3SpatialSplitParams` —— 4/6 个有
+- `MMH3TemporalSplitParams` —— 4/6 个有
+- `MMH3UltimateUpscale` —— 4/6 个有
+- `SaveImage` —— 4/6 个有
+- `VAEDecodeTiled` —— 4/6 个有
+- `easy cleanGpuUsed` —— 4/6 个有
+- `easy clearCacheAll` —— 4/6 个有
+- `ImageConcatMulti` —— 3/6 个有
+- `StringConcatenate` —— 3/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `H3FaceStitch` —— 2/6 个有
+- `H3FaceTrackCrop` —— 2/6 个有
+- `H3InjectVideoLatent` —— 2/6 个有
+- `H3PerFrameDenoise` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `EmptyImage` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `Textbox` —— 1/6 个有
+- `VedaSparseAttention` —— 1/6 个有
 
 ## 典型参数
 

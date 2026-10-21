@@ -3,34 +3,43 @@ name: unknown_workflow_video_lora_unet_3
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7735
-common_nodes: [CLIPLoader, ComfyBerniniDirector, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.8285
+common_nodes: [CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3Director, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/Bernini导演台全能工作流_2079374352503631873.json, 视频生成/文生视频/爆款百变_2101968748646330370.json]
+members: [视频生成/图生视频/MiniMax H3 AIMixer DSW导演台_2094439901352775681.json, 视频生成/图生视频/MiniMax-H3导演台文生图生首尾帧多参多合一视频制作_2091539822958702594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_unet_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Bernini导演台全能工作流_2079374352503631873.json、视频生成/文生视频/爆款百变_2101968748646330370.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 AIMixer DSW导演台_2094439901352775681.json、视频生成/图生视频/MiniMax-H3导演台文生图生首尾帧多参多合一视频制作_2091539822958702594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyBerniniDirector`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `SolAttnMiniMax`
 - `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `Any Switch (rgthree)` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `MiniMaxH3DirectorRefine` —— 1/2 个有
 
 ## 典型参数
 

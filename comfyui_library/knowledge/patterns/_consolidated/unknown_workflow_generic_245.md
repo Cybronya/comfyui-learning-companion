@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_generic_245
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9076
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveImage, SaveVideo, ShowText|pysssss, StringFunction|pysssss]
+coverage: 0.909
+common_nodes: [LoadAudio, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2053026294388015105.json, 视频生成/图生视频/2053121416081485826.json, 视频生成/图生视频/2052944201704329218.json, 视频生成/图生视频/2052992780963729410.json, 视频生成/图生视频/2053679533211045889.json]
+members: [音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json, 音频生成/音频生成/「Supermate」VoxCPM2 粤语基础工作流_2041927640814194690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_245
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2053026294388015105.json、视频生成/图生视频/2053121416081485826.json、视频生成/图生视频/2052944201704329218.json、视频生成/图生视频/2052992780963729410.json、视频生成/图生视频/2053679533211045889.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json、音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json、音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `SaveImage`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `RunningHub_VoxCPM_LoadModel`
+- `RunningHub_VoxCPM_MultiSpeaker`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `CR Text` —— 3/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 

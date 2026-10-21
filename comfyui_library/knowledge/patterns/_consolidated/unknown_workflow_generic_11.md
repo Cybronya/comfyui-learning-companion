@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_11
 type: Unknown Workflow
-frequency: 20
+frequency: 26
 level: moderate
-coverage: 0.9857
-common_nodes: [LoadAudio, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.954885
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json, 数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json, 音频生成/音频生成/VoxCPM2-声音克隆 支持方言_2056356073002594306.json, 音频生成/音频生成/VoxCPM2-终极克隆-语音克隆-声音克隆-好用-速度快-支持方言_2049750876226637825.json, 音频生成/音频生成/VoxCPM2-语音克隆-极速克隆-支持方言_2084189235472592898.json, 音频生成/音频生成/VoxCPM2语音克隆(四川话)_2047577873472561153.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（天津话）V3_2041826223764021250.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（广东话）V3_2041823275411574786.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计（河南话）V3_2041823297939185665.json, 音频生成/音频生成/VoxCPM2语音克隆（天津话）_2047581701450244098.json, 音频生成/音频生成/VoxCPM2语音克隆（广东话）_2047575508455530497.json, 音频生成/音频生成/VoxCPM2语音克隆（河南话）_2047580936384024578.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2041822737211072514.json, 音频生成/音频生成/VoxCPM2语音极限克隆V2_2045487794499362817.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计V2_2041780714080833537.json, 音频生成/音频生成/VoxCPM语音克隆+音频设计_2047580106213822465.json, 音频生成/音频生成/VoxCPM语音克隆_2043262047881793538.json, 音频生成/音频生成/VoxCPM：最强语音克隆+音频设计_2042490156510355457.json]
+members: [音频生成/音频生成/IndexTTS 2.5 可控情感声音克隆_2088298059091496961.json, 音频生成/音频生成/IndexTTS 2.5 情感文本控制配音｜语气一句话控制 · 声音克隆 · 稳定采样_2087838493203582977.json, 音频生成/音频生成/IndexTTS 2.5 情感迁移 声音克隆（indextts2.5）_2087900181642694657.json, 音频生成/音频生成/IndexTTS 2.5 长文本语音克隆｜剧本旁白不限长度 · 自动分段 · 音色稳定v1_2087829803192901634.json, 音频生成/音频生成/IndexTTS 2.5_2088155807824302081.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（情感向量控制）_2088841224718479361.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（情感文本控制）_2088834886940581890.json, 音频生成/音频生成/IndexTTS 2.5多情绪控制语音克隆_2108107374111313922.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2087748014218764290.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2088207276824944641.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2087748029699940353.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2087748042819723266.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2087829165579005954.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2088886816916201473.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）2608_2094636138370789378.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本控制）2608_2094635675235737601.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2087748051929755649.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2087829180565250050.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2088321991706243073.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2088888567782273026.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2089397547700936705.json, 音频生成/音频生成/IndexTTS+2.5长文本声音克隆语音克隆_2088188024717930498.json, 音频生成/音频生成/IndexTTS_2.5多情绪控制语音克隆_2110903160003981313.json, 音频生成/音频生成/index tts2.5情绪参考语音克隆_2090278284390133761.json, 音频生成/音频生成/声音克隆IndexTTS2.5情感参考_2088183384949485570.json, 音频生成/音频生成/声音克隆IndexTTS2.5情感文本控制声音克隆_2088186229090242561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_11
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json、数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043883897112498178.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043898556578275329.json、音频生成/音频生成/VoxCPM2-声音克隆 支持方言_2056356073002594306.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5 可控情感声音克隆_2088298059091496961.json、音频生成/音频生成/IndexTTS 2.5 情感文本控制配音｜语气一句话控制 · 声音克隆 · 稳定采样_2087838493203582977.json、音频生成/音频生成/IndexTTS 2.5 情感迁移 声音克隆（indextts2.5）_2087900181642694657.json、音频生成/音频生成/IndexTTS 2.5 长文本语音克隆｜剧本旁白不限长度 · 自动分段 · 音色稳定v1_2087829803192901634.json、音频生成/音频生成/IndexTTS 2.5_2088155807824302081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 26 个 workflow 都包含：
 - `LoadAudio`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
 - `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 18/20 个有
-- `Text` —— 6/20 个有
-- `AudioSeparation` —— 4/20 个有
+- `CR Prompt Text` —— 25/26 个有
+- `T8_IndexTTS25_EmotionControl` —— 20/26 个有
+- `Float` —— 17/26 个有
+- `T8_IndexTTS25_SamplingConfig` —— 11/26 个有
+- `SaveAudioNode` —— 3/26 个有
+- `JjkText` —— 1/26 个有
 
 ## 典型参数
 

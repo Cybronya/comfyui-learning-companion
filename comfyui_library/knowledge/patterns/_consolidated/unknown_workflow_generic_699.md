@@ -3,33 +3,37 @@ name: unknown_workflow_generic_699
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_ViduReferenceToVideoQ2, SaveVideo]
+coverage: 0.9375
+common_nodes: [LoadImage, SaveGLB, TripoImageToModelNode, TripoRetargetNode, TripoRigNode, TripoTextureNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038488597191462913.json, 视频生成/图生视频/2044681213067141122.json]
+members: [comfyui-workflow-templates-json/api_tripo3_0_image_to_model.json, comfyui-workflow-templates-json/api_tripo_image_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_699
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2038488597191462913.json、视频生成/图生视频/2044681213067141122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo3_0_image_to_model.json、comfyui-workflow-templates-json/api_tripo_image_to_model.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_ViduReferenceToVideoQ2`
-- `SaveVideo`
+- `SaveGLB`
+- `TripoImageToModelNode`
+- `TripoRetargetNode`
+- `TripoRigNode`
+- `TripoTextureNode`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `ShowText` —— 1/2 个有
+- `BatchImagesNode` —— 1/2 个有
+- `Preview3D` —— 1/2 个有
+- `TripoConversionNode` —— 1/2 个有
 
 ## 典型参数
 

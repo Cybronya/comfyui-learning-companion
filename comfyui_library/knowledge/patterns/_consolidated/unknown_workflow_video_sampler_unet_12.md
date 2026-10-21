@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_video_sampler_unet_12
 type: Unknown Workflow
-frequency: 21
+frequency: 23
 level: moderate
-coverage: 0.492762
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.664739
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-文生视频_2086089679518134274.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频-自动提示词_2084463867618488321.json, 视频生成/文生视频/MiniMax H3 I2V 图生视频 1280分辨率加速工作流_2085953821150367746.json, 视频生成/文生视频/MiniMax H3 T2V（文生视频）_2084242586428067841.json, 视频生成/文生视频/MiniMax H3 T2V（文生视频）_2084535052926545922.json, 视频生成/文生视频/MiniMax H3 T2V（文生视频）_2092541585006354433.json, 视频生成/文生视频/MiniMax H3 手机取物换装 文生视频_2106940320041750529.json, 视频生成/文生视频/MiniMax H3 文生视频_2090311300034424833.json, 视频生成/文生视频/MiniMax H3(全能多图参考生视频)4步Lora超级加速版_2085360950907064321.json, 视频生成/文生视频/MiniMax H3+lightx2v 高动态8步加速流+全节点注释_2087717153515597826.json, 视频生成/文生视频/MiniMax H34步Lora超级加速版全能多图参考生视频_2085458700025815041.json, 视频生成/文生视频/MiniMax H3文生视频-电商带货-手机取物换装_2107724379915374594.json, 视频生成/文生视频/MiniMax+H3  9 图_2085645558315831298.json, 视频生成/文生视频/MiniMax+H3文生视频_2089205361046810625.json, 视频生成/文生视频/MiniMax-H3开源 文生视频_2094359561212882945.json, 视频生成/文生视频/MiniMax-H3开源 文生视频_2094381288823287810.json, 视频生成/文生视频/MiniMax_H3_手机取物换装_文生视频_2107269860387545089.json, 视频生成/文生视频/MiniMax_H3_手机取物换装_文生视频_2107472060179107841.json, 视频生成/文生视频/【中近景特写使用】MiniMax H3单采去油腻_2094069348838232066.json, 视频生成/文生视频/【中远景使用】MiniMax H3 双采去油腻_2094069310686846977.json, 视频生成/文生视频/动漫短剧文戏最佳组合（混合模型+结构lora+二采潜空间放大）_2094308569922498562.json]
+members: [视频生成/图生视频/Minimax H3 参考生视频 + 4步加速_2093367813456089090.json, 视频生成/图生视频/minimax h3 参考生视频_2085558159850172417.json, 视频生成/图生视频/【MiniMax H3】短剧工作流_2110380691388194818.json, 视频生成/图生视频/【MiniMax_H3】短剧工作流_2110893565873311745.json, 视频生成/图生视频/【疯了的动态】Dasiwa_单采样25步无加速lora_2096793272898383874.json, 视频生成/图生视频/单图Minimax H3_2084901814679461889.json, 视频生成/图生视频/文戏_2095407932757331970.json, 视频生成/图生视频/海螺1080全能参考生视频v2-带视频_2089977803579150337.json, 视频生成/图生视频/海螺1080全能参考生视频v2-带音频_2089977775015948289.json, 视频生成/图生视频/海螺1080全能参考生视频v2_2088548493907550210.json, 视频生成/图生视频/海螺480全能参考生视频v2_2088511013770584066.json, 视频生成/图生视频/海螺720全能参考生视频v2-带视频_2089977416050630658.json, 视频生成/图生视频/海螺720全能参考生视频v2-带音频_2089977064664424450.json, 视频生成/图生视频/海螺720全能参考生视频v2_2088533399135932418.json, 视频生成/文生视频/MINIMAX-H3全能参考-低配文戏版_2095278454672543745.json, 视频生成/文生视频/MINIMAX-H3原本fl2va分布高低解码二采_2104191255403122689.json, 视频生成/文生视频/MiniMax H3全能参考-武戏版｜可选提示词（手动输入 & 自动生成）_2095318851016806402.json, 视频生成/文生视频/MiniMax H3全能参考-武戏版｜可选提示词（手动输入 & 自动生成）_2095913508104916993.json, 视频生成/文生视频/Minimax-H3剧情片工作台_2096851323793797122.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏-低配版_2100800495819517953.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏-高配版_2100787794460372994.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏_2098355739667554306.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-低配版_2094683715619348482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_12
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-文生视频_2086089679518134274.json、视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频-自动提示词_2084463867618488321.json、视频生成/文生视频/MiniMax H3 I2V 图生视频 1280分辨率加速工作流_2085953821150367746.json、视频生成/文生视频/MiniMax H3 T2V（文生视频）_2084242586428067841.json、视频生成/文生视频/MiniMax H3 T2V（文生视频）_2084535052926545922.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 参考生视频 + 4步加速_2093367813456089090.json、视频生成/图生视频/minimax h3 参考生视频_2085558159850172417.json、视频生成/图生视频/【MiniMax H3】短剧工作流_2110380691388194818.json、视频生成/图生视频/【MiniMax_H3】短剧工作流_2110893565873311745.json、视频生成/图生视频/【疯了的动态】Dasiwa_单采样25步无加速lora_2096793272898383874.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
@@ -38,32 +41,40 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 20/21 个有
-- `GetNode` —— 18/21 个有
-- `SetNode` —— 18/21 个有
-- `LoraLoaderModelOnly` —— 17/21 个有
-- `PrimitiveFloat` —— 17/21 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 16/21 个有
-- `MiniMaxH3ImageToVideo` —— 14/21 个有
-- `LoadImage` —— 10/21 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/21 个有
-- `ModelAttentionBackend` —— 7/21 个有
-- `孤海注释` —— 5/21 个有
-- `Float` —— 4/21 个有
-- `Label (rgthree)` —— 4/21 个有
-- `SigmasGraph` —— 3/21 个有
-- `SplitSigmas` —— 3/21 个有
-- `VHS_LoadVideoFFmpeg` —— 3/21 个有
-- `EmptyImage` —— 2/21 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/21 个有
-- `LTXVConcatAVLatent` —— 2/21 个有
-- `LTXVSeparateAVLatent` —— 2/21 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/21 个有
-- `PathchSageAttentionKJ` —— 2/21 个有
-- `PreviewImage` —— 2/21 个有
-- `CR Text` —— 1/21 个有
-- `Text Multiline` —— 1/21 个有
-- `easy float` —— 1/21 个有
+- `ModelAttentionBackend` —— 22/23 个有
+- `LoraLoaderModelOnly` —— 21/23 个有
+- `INTConstant` —— 19/23 个有
+- `LoadAudio` —— 19/23 个有
+- `CR Prompt Text` —— 18/23 个有
+- `H3SigmaRefiner` —— 18/23 个有
+- `GetNode` —— 17/23 个有
+- `LTXVConcatAVLatent` —— 17/23 个有
+- `LTXVSeparateAVLatent` —— 17/23 个有
+- `MinimaxH3LatentUpscaler3D` —— 17/23 个有
+- `SetNode` —— 17/23 个有
+- `PrimitiveFloat` —— 16/23 个有
+- `SolAttnMiniMax` —— 12/23 个有
+- `忽略多组孤海` —— 12/23 个有
+- `ExtendIntermediateSigmas` —— 11/23 个有
+- `LoraLoaderBypassModelOnly` —— 11/23 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/23 个有
+- `MiniMaxH3SigmaShift` —— 8/23 个有
+- `PreviewImage` —— 8/23 个有
+- `CM_IntToFloat` —— 7/23 个有
+- `FloatConstant` —— 7/23 个有
+- `ManualSigmas` —— 7/23 个有
+- `ResizeShortestToNode` —— 7/23 个有
+- `SplitSigmas` —— 7/23 个有
+- `VHS_LoadVideo` —— 7/23 个有
+- `easy showAnything` —— 7/23 个有
+- `PrimitiveStringMultiline` —— 6/23 个有
+- `ModelPreviewOverrideKJ` —— 3/23 个有
+- `Any Switch (rgthree)` —— 2/23 个有
+- `MuyeTextEditOutput` —— 2/23 个有
+- `RH_LLMAPI_Pro_Node` —— 2/23 个有
+- `EmptyImage` —— 1/23 个有
+- `MiniMaxH3BlockCacheT8` —— 1/23 个有
+- `PlaySound|pysssss` —— 1/23 个有
 
 ## 典型参数
 

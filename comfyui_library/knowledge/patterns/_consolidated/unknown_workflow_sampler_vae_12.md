@@ -1,53 +1,53 @@
 ---
 name: unknown_workflow_sampler_vae_12
 type: Unknown Workflow
-frequency: 19
+frequency: 20
 level: moderate
-coverage: 0.943895
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
+coverage: 0.85455
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAFirstFrameCondition, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098932120847732737.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098989849817731073.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2099665472349364225.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2098933038003613698.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2098990768466776065.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2099666343804096513.json, 视频生成/图生视频/Minimax H3 6图 全能参考_2084613636659695617.json, 视频生成/图生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2086773074040545281.json, 视频生成/图生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2089300474951462913.json, 视频生成/图生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2089710451344101377.json, 视频生成/图生视频/minimax_h3_视频创作-初版_2084810099176071169.json, 视频生成/图生视频/【MiniMax H3】 FL2VA开源版-多图参考生视频_2099311045549584385.json, 视频生成/图生视频/图生视频 -开源海螺minimax-H3_2084084479559290881.json, 视频生成/图生视频/图生视频 -开源海螺minimax-H3_2084119366114832386.json, 视频生成/图生视频/老孙AI   MiniMax H3 FL2VA开源版-图像 音频参考生视频_2085947928476217346.json, 视频生成/文生视频/A-5 MiniMax-H3 参考生视频 RH版 _ 文字图片音频视频_2085243506225930242.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-全能参考生视频-多图多音频_2084449187541905410.json, 视频生成/文生视频/MiniMax+H3+ref2va(图片+音频)开源版-多图参考生视频_2084185747296444417.json, 视频生成/文生视频/biaozhun3_2085258271216201729.json]
+members: [图片生成/文生图/MiniMax H3 FL2VA开源版-首尾帧参考生视频_2084644436205727746.json, 数字人/数字人/MiniMax H3 -首帧参考生视频 (1)_2084123367581507586.json, 数字人/数字人/MiniMax H3 FL2VA开源版-首帧参考生视频_2102269100943822850.json, 视频生成/图生视频/A-4 MiniMax-H3 图生视频 RH版 _ 首帧驱动_2085040525719195649.json, 视频生成/图生视频/MINI max首位帧工作流_2084157900280389634.json, 视频生成/图生视频/MiniMax H3 FL2VA-图生视频-口播10秒_2095680024237137922.json, 视频生成/图生视频/MiniMax H3 FL2VA-图生视频_2093100115979489282.json, 视频生成/图生视频/MiniMax H3 FL2VA_2084272351662927873.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版 - 首尾帧参考生视频_2084449894806409218.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-单图参考生视频_2084124320309272578.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-单图参考生视频_2084137001363787778.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-单图参考生视频_2084163168024223746.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-非API 首帧参考生视频_2084116326469169153.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频_2084070256573767682.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频_2084110735633903618.json, 视频生成/图生视频/首尾帧图生视频MiniMax+H3+FL2VA开源版-首尾帧参考生视频_2084125402418733057.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-首尾帧10秒视频_2084170874189598722.json, 视频生成/文生视频/MiniMax H3 开源版-首帧参考生视频_2084478495324987394.json, 视频生成/文生视频/MiniMax+H3+FL2VA开源版-首尾帧参考生视频_2084175487978524673.json, 视频生成/文生视频/MiniMax+H3+FL2VA开源版-首帧参考生视频_2084171293531922434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_12
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098932120847732737.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098989849817731073.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2099665472349364225.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2098933038003613698.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-多图参考生视频_2098990768466776065.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 FL2VA开源版-首尾帧参考生视频_2084644436205727746.json、数字人/数字人/MiniMax H3 -首帧参考生视频 (1)_2084123367581507586.json、数字人/数字人/MiniMax H3 FL2VA开源版-首帧参考生视频_2102269100943822850.json、视频生成/图生视频/A-4 MiniMax-H3 图生视频 RH版 _ 首帧驱动_2085040525719195649.json、视频生成/图生视频/MINI max首位帧工作流_2084157900280389634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `CreateVideo`
 - `LoadImage`
 - `RHMiniMaxH3DecodeAV`
 - `RHMiniMaxH3DualSigmaSampler`
 - `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3Ref2VAEncode`
-- `RHMiniMaxH3Ref2VAImageReference`
-- `RHMiniMaxH3Ref2VAModelLoader`
-- `RHMiniMaxH3Ref2VATarget`
-- `RHMiniMaxH3Ref2VATextEncoderLoader`
-- `RHMiniMaxH3Ref2VAVAELoader`
+- `RHMiniMaxH3FL2VAEncode`
+- `RHMiniMaxH3FL2VAFirstFrameCondition`
+- `RHMiniMaxH3FL2VAModelLoader`
+- `RHMiniMaxH3FL2VATarget`
+- `RHMiniMaxH3FL2VATextEncoderLoader`
+- `RHMiniMaxH3FL2VAVAELoader`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 13/19 个有
-- `RHMiniMaxH3Ref2VAAudioReference` —— 13/19 个有
-- `PreviewImage` —— 6/19 个有
-- `EmptyImage` —— 5/19 个有
-- `easy cleanGpuUsed` —— 3/19 个有
-- `LoadVideo` —— 2/19 个有
-- `RHMiniMaxH3Ref2VAVideoReference` —— 2/19 个有
-- `Audio Duration (mtb)` —— 1/19 个有
-- `JjkText` —— 1/19 个有
-- `MathExpression|pysssss` —— 1/19 个有
-- `ResolutionSelector` —— 1/19 个有
+- `Int` —— 17/20 个有
+- `ImageResize+` —— 15/20 个有
+- `ImpactSwitch` —— 15/20 个有
+- `PreviewImage` —— 14/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/20 个有
+- `Text` —— 3/20 个有
+- `easy convertAnything` —— 3/20 个有
+- `孤海注释` —— 3/20 个有
+- `Reroute (rgthree)` —— 1/20 个有
+- `ResizeImagesByLongerEdge` —— 1/20 个有
+- `ZNGB_ResizeImage` —— 1/20 个有
 
 ## 典型参数
 

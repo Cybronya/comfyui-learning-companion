@@ -1,60 +1,44 @@
 ---
 name: unknown_workflow_video_upscale_lora_7
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.932143
-common_nodes: [ImageUpscaleWithModel, Int, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.836167
+common_nodes: [CLIPLoader, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1937513955088580610.json, 视频生成/图生视频/1899332733573746689.json, 视频生成/图生视频/1899672945285877762.json, 视频生成/图生视频/1899288956402356225.json, 视频生成/图生视频/1900773672473501697.json, 视频生成/文生视频/1915649803047604225.json, 视频生成/文生视频/1916330952719798273.json]
+members: [视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2109971094978523137.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流无水印版_2094988974698876930.json, 视频生成/图生视频/MiniMax H3 导演台工作流-ref2va_2091323053144887297.json, 视频生成/文生视频/MiniMax H3 Director 全能参考视频导演台｜无水印版_2097926685592219649.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v_2090357634460372993.json, 视频生成/文生视频/MiniMax H3图生视频-高清版无水印_2095386761659772929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_7
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1937513955088580610.json、视频生成/图生视频/1899332733573746689.json、视频生成/图生视频/1899672945285877762.json、视频生成/图生视频/1899288956402356225.json、视频生成/图生视频/1900773672473501697.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2109971094978523137.json、视频生成/图生视频/MiniMax H3 导演台全能工作流无水印版_2094988974698876930.json、视频生成/图生视频/MiniMax H3 导演台工作流-ref2va_2091323053144887297.json、视频生成/文生视频/MiniMax H3 Director 全能参考视频导演台｜无水印版_2097926685592219649.json、视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v_2090357634460372993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ImageUpscaleWithModel`
-- `Int`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `UNETLoader`
 - `UpscaleModelLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 5/7 个有
-- `LayerUtility: PurgeVRAM` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `Note Plus (mtb)` —— 3/7 个有
-- `WanVideoTeaCache` —— 3/7 个有
-- `FILM VFI` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `StringConstantMultiline` —— 2/7 个有
-- `Fast Bypasser (rgthree)` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `ReActorFaceSwap` —— 1/7 个有
-- `Seed Everywhere` —— 1/7 个有
-- `Textbox` —— 1/7 个有
+- `LoadImage` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `孤海注释` —— 2/6 个有
+- `DapaoImageSplitNode` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 
 ## 典型参数
 

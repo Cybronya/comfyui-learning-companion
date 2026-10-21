@@ -1,68 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_vae_5
 type: Unknown Workflow
-frequency: 8
+frequency: 13
 level: moderate
-coverage: 0.896875
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [SDXLEmptyLatentSizePicker+, LayerUtility: PurgeVRAM]
-members: [图片生成/文生图/1960187196420599809.json, 图片生成/文生图/1960520624663949314.json, 图片生成/文生图/1961312747210346498.json, 图片生成/文生图/1963054435381522434.json, 图片生成/文生图/1963114884189884418.json, 图片生成/文生图/1964600749260947457.json, 图片生成/文生图/1964993982478602241.json, 图片生成/文生图/1968150332159197185.json]
+coverage: 0.893154
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json, 图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json, 图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json, 图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json, 图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json, 图片生成/文生图/FLUX2 Dev FP8 8步加速 文生图_图片编辑_2073296125880262657.json, 图片生成/文生图/FLUX2 Dev FP8 文生图_图片编辑_2073281827388874753.json, 图片生成/文生图/FLUX2 混合模型_1993521841442586625.json, 图片生成/文生图/Flux2 官方文_图生视频_1993512866739322882.json, 图片生成/文生图/Flux2 文生图_图生图_图像修改_多图参考工作流_1993868752053796866.json, 图片生成/文生图/flux.2图像编辑测试（单图）_1995053515309506561.json, 图片生成/文生图/flux.2量化+SageAttention加速图像编辑（单图）_1994854140247465985.json, 图片生成/文生图/【AI小兵哥】Flux.2-多图编辑工作流_1994221492407828481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1960187196420599809.json、图片生成/文生图/1960520624663949314.json、图片生成/文生图/1961312747210346498.json、图片生成/文生图/1963054435381522434.json、图片生成/文生图/1963114884189884418.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json、图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json、图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json、图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json、图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 7/8 个有
-- `NunchakuQwenImageDiTLoader` —— 7/8 个有
-- `UNETLoader` —— 2/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `NunchakuQwenImageLoraLoader1` —— 1/8 个有
-- `ResizeAndPadImage` —— 1/8 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 11/13 个有
+- `LoadImage` —— 11/13 个有
+- `ReferenceLatent` —— 11/13 个有
+- `UNETLoader` —— 11/13 个有
+- `VAEEncode` —— 11/13 个有
+- `ModelPatchTorchSettings` —— 5/13 个有
+- `PathchSageAttentionKJ` —— 4/13 个有
+- `UnetLoaderGGUF` —— 4/13 个有
+- `PreviewImage` —— 3/13 个有
+- `Int Literal` —— 2/13 个有
+- `Label (rgthree)` —— 2/13 个有
+- `LoraLoaderModelOnly` —— 2/13 个有
+- `easy int` —— 2/13 个有
+- `ApplySageAttention` —— 1/13 个有
+- `CR Text` —— 1/13 个有
+- `EasyCache` —— 1/13 个有
+- `ImageConcanate` —— 1/13 个有
+- `PreviewAny` —— 1/13 个有
+- `RH_Captioner` —— 1/13 个有
+- `RH_Translator` —— 1/13 个有
+- `easy promptLine` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 17.5 | 8 - 20 | 8 | 63% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 3.5 | 8 | 64% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 1344x768 (1.75) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 17.5，观测区间 8 - 20，8 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 3.5，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：SDXLEmptyLatentSizePicker+、LayerUtility: PurgeVRAM
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

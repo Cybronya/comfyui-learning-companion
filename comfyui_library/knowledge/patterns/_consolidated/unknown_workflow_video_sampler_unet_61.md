@@ -1,59 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_unet_61
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.89875
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.9324
+common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TextEncodeHunyuanVideo_ImageToVideo, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json, 视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json, 视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json, 视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json]
+members: [视频生成/图生视频/1900545895807754241.json, 视频生成/图生视频/1935338474637545473.json, 视频生成/图生视频/1897910255437991938.json, 视频生成/图生视频/1897851566873858049.json, 视频生成/图生视频/1897700159466491905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_61
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json、视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json、视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json、视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1900545895807754241.json、视频生成/图生视频/1935338474637545473.json、视频生成/图生视频/1897910255437991938.json、视频生成/图生视频/1897851566873858049.json、视频生成/图生视频/1897700159466491905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `BasicScheduler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `HunyuanImageToVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
+- `ModelSamplingSD3`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `TextEncodeHunyuanVideo_ImageToVideo`
 - `UNETLoader`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `SolAttnMiniMax` —— 3/4 个有
-- `ExtendIntermediateSigmas` —— 2/4 个有
-- `IntToString` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoraLoaderBypassModelOnly` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `Seed_` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `text-util-join-text` —— 2/4 个有
-- `Text` —— 1/4 个有
+- `ImageFromBatch` —— 3/5 个有
+- `Primitive integer [Crystools]` —— 2/5 个有
+- `SaveWEBM` —— 2/5 个有
+- `VAEDecode` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `Primitive string [Crystools]` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy imageSize` —— 1/5 个有
 
 ## 典型参数
 

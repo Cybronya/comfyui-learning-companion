@@ -3,36 +3,35 @@ name: unknown_workflow_generic_803
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.727
-common_nodes: [HeartMuLa_Generate, Int, MultiTextConcatenate, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, TextInput_]
+coverage: 0.875
+common_nodes: [Float, RH_RhartImageG2TextToImage, RTXVideoSuperResolution, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa 歌词变歌曲_2015603368001019905.json, 音频生成/音频生成/HeartMuLa 输入主题变歌曲_2016362622899195905.json]
+members: [图片生成/文生图/地表最强-全能图片G-Image-2-文生图-高清直出-0.1元_次_2066174217036582914.json, 图片生成/文生图/地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047337678131175426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_803
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 歌词变歌曲_2015603368001019905.json、音频生成/音频生成/HeartMuLa 输入主题变歌曲_2016362622899195905.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/地表最强-全能图片G-Image-2-文生图-高清直出-0.1元_次_2066174217036582914.json、图片生成/文生图/地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047337678131175426.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `Int`
-- `MultiTextConcatenate`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `TextInput_`
+- `Float`
+- `RH_RhartImageG2TextToImage`
+- `RTXVideoSuperResolution`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveText` —— 1/2 个有
+- `FlashVSRNode` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

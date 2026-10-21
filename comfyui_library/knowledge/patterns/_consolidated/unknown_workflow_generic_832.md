@@ -3,34 +3,37 @@ name: unknown_workflow_generic_832
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.619
-common_nodes: [AudioAdjustVolume, PrimitiveStringMultiline, Qwen3TTSModelLoader, SaveAudioMP3]
+coverage: 0.707
+common_nodes: [EmptyImage, LoadImage, PreviewImage, PrimitiveStringMultiline, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-Custom_Voice_2077982969565896705.json, 音频生成/音频生成/Qwen3-TTS-Voice_Design_2077982978361352193.json]
+members: [视频生成/图生视频/H3官方多模态换品-仅大于15秒双段_2102316839295606786.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2101304865048846337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_832
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-Custom_Voice_2077982969565896705.json、音频生成/音频生成/Qwen3-TTS-Voice_Design_2077982978361352193.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3官方多模态换品-仅大于15秒双段_2102316839295606786.json、视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2101304865048846337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioAdjustVolume`
+- `EmptyImage`
+- `LoadImage`
+- `PreviewImage`
 - `PrimitiveStringMultiline`
-- `Qwen3TTSModelLoader`
-- `SaveAudioMP3`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3TTSCustomVoice` —— 1/2 个有
-- `Qwen3TTSVoiceDesign` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/2 个有
+- `VideoConcatenate` —— 1/2 个有
 
 ## 典型参数
 

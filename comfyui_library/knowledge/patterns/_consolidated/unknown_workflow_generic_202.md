@@ -3,35 +3,34 @@ name: unknown_workflow_generic_202
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.909
-common_nodes: [LoadAudio, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio]
+coverage: 0.683667
+common_nodes: [CR Prompt Text, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json, 音频生成/音频生成/「Supermate」VoxCPM2 粤语基础工作流_2041927640814194690.json]
+members: [图片生成/文生图/全能图片 2（极速版）- 文生图V1_2027205163810824194.json, 图片生成/文生图/全能图片2  图像编辑V1_2097225644391358466.json, 图片生成/文生图/全能图片2 文生图_2027577479132618754.json, 图片生成/文生图/全能图片2--文生图_2027189055745695745.json, 图片生成/文生图/全能图片2多图编辑版_2027578044856143874.json, 图片生成/文生图/全能图片制作分镜_2027212222014951426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_202
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json、音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json、音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/全能图片 2（极速版）- 文生图V1_2027205163810824194.json、图片生成/文生图/全能图片2  图像编辑V1_2097225644391358466.json、图片生成/文生图/全能图片2 文生图_2027577479132618754.json、图片生成/文生图/全能图片2--文生图_2027189055745695745.json、图片生成/文生图/全能图片2多图编辑版_2027578044856143874.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `SaveAudio`
+- `CR Prompt Text`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `Text` —— 1/6 个有
+- `LoadImage` —— 3/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
 
 ## 典型参数
 

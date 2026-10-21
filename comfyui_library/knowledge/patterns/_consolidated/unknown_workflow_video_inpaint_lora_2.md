@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_video_inpaint_lora_2
 type: Unknown Workflow
-frequency: 10
+frequency: 8
 level: strong
-coverage: 0.9696
-common_nodes: [CFGGuider, CLIPTextEncode, GetImageRangeFromBatch, Image To Mask, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ColorImage, ManualSigmas, PathchSageAttentionKJ, RandomNoise, RepeatImageBatch, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VAEEncodeForInpaint, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.977375
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, GetImageRangeFromBatch, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VAEEncodeForInpaint, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/2053854443006898178.json, 视频生成/图生视频/2042927263661957121.json, 视频生成/图生视频/2054757647898955778.json, 视频生成/图生视频/视频去水印，去字幕LTX2.3 iclora insight工作流_2054762008184147969.json, 视频生成/图生视频/2054733348798509058.json, 视频生成/图生视频/2054767077927473153.json, 视频生成/文生视频/IC Edit去水印字幕_2054546081706463234.json, 视频生成/文生视频/IC Edit高清修复_2054546073984749570.json, 视频生成/文生视频/豆包视频去水印_2060846914807091201.json, 视频生成/文生视频/豆包视频去水印_全屏去水印_2091189802585649154.json]
+members: [视频生成/图生视频/LTX-2.3-IClora_视频去水印_字幕_2107466125268312066.json, 视频生成/图生视频/2053760267812646913.json, 视频生成/图生视频/2077034706784309250.json, 视频生成/图生视频/2058077944274317314.json, 视频生成/图生视频/2069702802959589378.json, 视频生成/图生视频/2061290081482264578.json, 视频生成/图生视频/2054757647898955778.json, 视频生成/图生视频/2068856868998565889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_2
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2053854443006898178.json、视频生成/图生视频/2042927263661957121.json、视频生成/图生视频/2054757647898955778.json、视频生成/图生视频/视频去水印，去字幕LTX2.3 iclora insight工作流_2054762008184147969.json、视频生成/图生视频/2054733348798509058.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-IClora_视频去水印_字幕_2107466125268312066.json、视频生成/图生视频/2053760267812646913.json、视频生成/图生视频/2077034706784309250.json、视频生成/图生视频/2058077944274317314.json、视频生成/图生视频/2069702802959589378.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `GetImageRangeFromBatch`
-- `Image To Mask`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXAVTextEncoderLoader`
 - `LTXAddVideoICLoRAGuide`
 - `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
@@ -38,49 +41,49 @@ source: knowledge_consolidation
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LayerUtility: ColorImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
 - `PathchSageAttentionKJ`
 - `RandomNoise`
 - `RepeatImageBatch`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
 - `SimpleMath+`
 - `VAEDecodeTiled`
 - `VAEEncodeForInpaint`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 8/10 个有
-- `LTX2SamplingPreviewOverride` —— 8/10 个有
-- `LTXAVTextEncoderLoader` —— 8/10 个有
-- `LTXVAudioVAELoader` —— 8/10 个有
-- `ResizeImageMaskNode` —— 8/10 个有
-- `VHS_VideoInfoLoaded` —— 8/10 个有
-- `easy imageSize` —— 8/10 个有
-- `ImageConcatMulti` —— 6/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/10 个有
-- `LoraLoaderModelOnly` —— 6/10 个有
-- `Seed (rgthree)` —— 5/10 个有
-- `Text Multiline` —— 3/10 个有
-- `ComfyMathExpression` —— 2/10 个有
-- `DualCLIPLoader` —— 2/10 个有
-- `GetImageSize` —— 2/10 个有
-- `ImageResizeKJv2` —— 2/10 个有
-- `PrimitiveFloat` —— 2/10 个有
-- `PrimitiveInt` —— 2/10 个有
-- `UNETLoader` —— 2/10 个有
-- `VAELoaderKJ` —— 2/10 个有
-- `easy imageCount` —— 2/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `image_scale_pixel_v2` —— 1/10 个有
+- `Image To Mask` —— 7/8 个有
+- `Seed (rgthree)` —— 7/8 个有
+- `ImageConcatMulti` —— 4/8 个有
+- `Int` —— 3/8 个有
+- `MathExpression|pysssss` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `CR Text` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `ImageBatchMulti` —— 1/8 个有
+- `ImageFromBatch+` —— 1/8 个有
+- `ImageToMask` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `List of strings [Crystools]` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `ToInt` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 10 | 100% |
-| 高度 | 25 | 25 - 25 | 10 | 100% |
+| 宽度 | 97 | 97 - 97 | 8 | 100% |
+| 高度 | 25 | 25 - 25 | 8 | 100% |
 
 ## 常见问题
 
@@ -88,5 +91,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）

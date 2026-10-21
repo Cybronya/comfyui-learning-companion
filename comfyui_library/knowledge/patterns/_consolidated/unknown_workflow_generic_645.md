@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_645
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.732
-common_nodes: [JanusImageGeneration, JanusImageUnderstanding, JanusModelLoader, LoadImage, PreviewImage, SaveImage, ShowText|pysssss]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [Fast Groups Muter (rgthree), IndexTTSNode, IndexTTSRun, LoadAudio, PreviewAudio, SaveAudio, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/1930262386970673154.json, 图片生成/文生图/DeepSeek  Janus-Pro生图与反推_1884522183304138753.json]
+members: [音频生成/音频生成/TTS-声音模仿，音色模仿，语音生成。（快速版+稳定版）_1958135163765084162.json, 音频生成/音频生成/情感语音克隆tts_2037712113489158146.json, 音频生成/音频生成/朱老师-情感语音克隆tts_2058102409112674306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_645
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1930262386970673154.json、图片生成/文生图/DeepSeek  Janus-Pro生图与反推_1884522183304138753.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/TTS-声音模仿，音色模仿，语音生成。（快速版+稳定版）_1958135163765084162.json、音频生成/音频生成/情感语音克隆tts_2037712113489158146.json、音频生成/音频生成/朱老师-情感语音克隆tts_2058102409112674306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JanusImageGeneration`
-- `JanusImageUnderstanding`
-- `JanusModelLoader`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `ShowText|pysssss`
+全部 3 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
+- `IndexTTSNode`
+- `IndexTTSRun`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `Text`
 
 ## 典型参数
 
@@ -41,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

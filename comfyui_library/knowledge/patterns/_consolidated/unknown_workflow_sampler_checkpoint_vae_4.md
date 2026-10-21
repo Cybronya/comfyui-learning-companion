@@ -3,52 +3,42 @@ name: unknown_workflow_sampler_checkpoint_vae_4
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.613
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyYuE2LatentAudio, KSampler, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, SeedNode, VAEDecodeAudio, YuE2GenerateMusic]
+coverage: 0.887
+common_nodes: [Bjornulf_FreeVRAM, CM_IntToFloat, CheckpointLoaderSimple, EmptyYuE2LatentAudio, KSampler, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveStringMultiline, SaveAudio, SaveAudioAdvanced, VAEDecodeAudio, YuE2GenerateMusic]
 problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本(非常好 好听)_2109834100810018818.json, 音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2100799504231526401.json, 音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2101632211412938753.json, 音频生成/音频生成/YuE2-音乐翻唱-ComfyUI官方版本_2100774608726216705.json, 音频生成/音频生成/YuE2文生音乐官方_2103060900860223490.json, 音频生成/音频生成/audio_yue2_music_cover_2104470509722365954.json]
+members: [图片生成/文生图/YuE2纯音乐bgm生成无人声)_2100745568250327042.json, 图片生成/文生图/YuE2纯音乐bgm生成无人声)_2101456369428819970.json, 图片生成/文生图/YuE2纯音乐bgm生成（无人声)_2102589555961585665.json, 音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2101851412895461377.json, 音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2102663661012738050.json, 音频生成/音频生成/YuE2纯音乐bgm生成（无人声)_2099828546146492417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本(非常好 好听)_2109834100810018818.json、音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2100799504231526401.json、音频生成/音频生成/YuE2-文生音乐-ComfyUI官方版本_2101632211412938753.json、音频生成/音频生成/YuE2-音乐翻唱-ComfyUI官方版本_2100774608726216705.json、音频生成/音频生成/YuE2文生音乐官方_2103060900860223490.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/YuE2纯音乐bgm生成无人声)_2100745568250327042.json、图片生成/文生图/YuE2纯音乐bgm生成无人声)_2101456369428819970.json、图片生成/文生图/YuE2纯音乐bgm生成（无人声)_2102589555961585665.json、音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2101851412895461377.json、音频生成/音频生成/YuE2纯音乐bgm生成无人声)_2102663661012738050.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `Bjornulf_FreeVRAM`
+- `CM_IntToFloat`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
 - `EmptyYuE2LatentAudio`
 - `KSampler`
-- `PreviewAny`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
 - `PrimitiveStringMultiline`
+- `SaveAudio`
 - `SaveAudioAdvanced`
-- `SeedNode`
 - `VAEDecodeAudio`
 - `YuE2GenerateMusic`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 5/6 个有
-- `PrimitiveBoolean` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `PrimitiveString` —— 4/6 个有
-- `YuE2GenerateABC` —— 4/6 个有
-- `Audio Duration (mtb)` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `RepeatImageBatch` —— 3/6 个有
-- `VHS_VideoCombine` —— 3/6 个有
-- `AudioEncoderLoader` —— 2/6 个有
-- `LoadAudio` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `SheetSage2AudioToABC` —— 2/6 个有
+- `EmptyImage` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
 
 ## 典型参数
 

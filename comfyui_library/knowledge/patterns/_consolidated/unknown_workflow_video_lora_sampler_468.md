@@ -3,60 +3,72 @@ name: unknown_workflow_video_lora_sampler_468
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.91925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, H3InjectVideoLatent, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3NativeAudioLock, MiniMaxH3SigmaShift, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.85925
+common_nodes: [BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAudio, ResolutionSelector, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/无限长视频生成 3 高清f放大 1080P MiniMax H3_2090714008914587649.json, 视频生成/图生视频/MiniMax H3｜通用视频二阶高清重绘_2090290098544930818.json, 视频生成/文生视频/MiniMax H3｜通用视频二阶高清重绘_2089986546912030722.json, 视频生成/文生视频/MiniMax+H3+万能视频高清重绘｜一键生成式放大_2088992117300482049.json]
+members: [数字人/数字人/Minimax H3  音频驱动数字人-神态口型自然-双采加速_2111647737732231170.json, 视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流 MiniMax H3新技术_2101122144590712834.json, 视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流+MiniMax+H3新技术_2111456170199310337.json, 视频生成/图生视频/高阶双采音色克隆台词驱动数字人- MiniMax H3视频工作流_2110580224256724993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_468
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/无限长视频生成 3 高清f放大 1080P MiniMax H3_2090714008914587649.json、视频生成/图生视频/MiniMax H3｜通用视频二阶高清重绘_2090290098544930818.json、视频生成/文生视频/MiniMax H3｜通用视频二阶高清重绘_2089986546912030722.json、视频生成/文生视频/MiniMax+H3+万能视频高清重绘｜一键生成式放大_2088992117300482049.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Minimax H3  音频驱动数字人-神态口型自然-双采加速_2111647737732231170.json、视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流 MiniMax H3新技术_2101122144590712834.json、视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流+MiniMax+H3新技术_2111456170199310337.json、视频生成/图生视频/高阶双采音色克隆台词驱动数字人- MiniMax H3视频工作流_2110580224256724993.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `H3InjectVideoLatent`
-- `H3SigmaRefiner`
+- `ConditioningZeroOut`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3NativeAudioLock`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewAudio`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SelfLiftAvatarH3TST`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/4 个有
-- `LTXVConcatAVLatent` —— 3/4 个有
-- `LTXVSeparateAVLatent` —— 3/4 个有
-- `LoadVideoUI` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/4 个有
-- `DiffusionModelLoaderKJ` —— 1/4 个有
-- `ImageFromBatch` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
-- `Yuan_RTXVideoUpscaleH3` —— 1/4 个有
-- `easy imageSize` —— 1/4 个有
+- `Float` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `MelBandRoFormerModelLoader` —— 3/4 个有
+- `MelBandRoFormerSampler` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `TrimAudioDuration` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `Qwen3ASRLoader` —— 2/4 个有
+- `Qwen3ASRTranscribe` —— 2/4 个有
+- `RunningHub_VoxCPM_Generate` —— 2/4 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/4 个有
+- `SaveAudioMP3` —— 1/4 个有
+- `Seed` —— 1/4 个有
+- `XB_CanvasLabel` —— 1/4 个有
+- `孤海注释` —— 1/4 个有
 
 ## 典型参数
 

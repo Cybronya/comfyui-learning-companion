@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_281
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.8895
-common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.887125
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1959544112867389442.json, 视频生成/图生视频/1975197329210871809.json, 视频生成/图生视频/1950013972280950785.json, 视频生成/图生视频/1973774773308231682.json, 视频生成/图生视频/2072884554280562690.json, 视频生成/图生视频/2072885775900958721.json, 视频生成/图生视频/1963509971877072897.json, 视频生成/图生视频/1975958977194405889.json]
+members: [视频生成/图生视频/2073033317150187521.json, 视频生成/图生视频/1997179060881133570.json, 视频生成/图生视频/1959215164312727553.json, 视频生成/图生视频/1957833676750159874.json, 视频生成/图生视频/1957824248537776130.json, 视频生成/图生视频/1979579693227741185.json, 视频生成/图生视频/1958894026126733314.json, 视频生成/图生视频/1972314410939248641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_281
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1959544112867389442.json、视频生成/图生视频/1975197329210871809.json、视频生成/图生视频/1950013972280950785.json、视频生成/图生视频/1973774773308231682.json、视频生成/图生视频/2072884554280562690.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2073033317150187521.json、视频生成/图生视频/1997179060881133570.json、视频生成/图生视频/1959215164312727553.json、视频生成/图生视频/1957833676750159874.json、视频生成/图生视频/1957824248537776130.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
@@ -23,8 +23,12 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
@@ -40,23 +44,21 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 7/8 个有
-- `PrimitiveInt` —— 7/8 个有
-- `WanVideoClipVisionEncode` —— 7/8 个有
+- `CR Text Concatenate` —— 7/8 个有
 - `WanVideoTorchCompileSettings` —— 7/8 个有
-- `easy cleanGpuUsed` —— 7/8 个有
-- `CR Text` —— 5/8 个有
-- `SimpleMath+` —— 5/8 个有
-- `ShowText|pysssss` —— 3/8 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 2/8 个有
-- `AudioCrop` —— 1/8 个有
-- `INTConstant` —— 1/8 个有
-- `ImageBatchMultiple+` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `LoadAudio` —— 1/8 个有
-- `PrimitiveString` —— 1/8 个有
-- `easy promptReplace` —— 1/8 个有
-- `ttN text` —— 1/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 6/8 个有
+- `GIMMVFI_interpolate` —— 6/8 个有
+- `RHHiddenNodes` —— 6/8 个有
+- `GetImageSizeAndCount` —— 5/8 个有
+- `ImageUpscaleWithModel` —— 4/8 个有
+- `UpscaleModelLoader` —— 4/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `RH_Captioner` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `ShowText` —— 1/8 个有
+- `StringReplace` —— 1/8 个有
+- `WanVideoContextOptions` —— 1/8 个有
 
 ## 典型参数
 

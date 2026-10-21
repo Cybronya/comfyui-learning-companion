@@ -1,62 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_81
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.952
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, ModelSamplingSD3, SkipLayerGuidanceDiT, UNETLoader, UNetTemporalAttentionMultiply, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.840125
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, PrimitiveInt, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/wan2.1_fun_control.json, comfyui-workflow-templates-json/wan2.1_fun_inp.json, 视频生成/图生视频/1951294089633452033.json]
+members: [图片生成/文生图/Krea2 巨构文生图_2091510907372396546.json, 图片生成/文生图/Krea2文生图-美感画质V2_2100973649820999682.json, 图片生成/文生图/Krea2美感画质双提升V2_2097626860837494785.json, 图片生成/文生图/Krea2美感画质双提升V2_2098923708609032194.json, 图片生成/文生图/Krea2美感画质双提升_2093345673189089282.json, 图片生成/文生图/krea2横_2091833320878469121.json, 图片生成/文生图/krea2竖_2092094811011641346.json, 图片生成/文生图/东方美学制作流_2100541472004198401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_81
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/wan2.1_fun_control.json、comfyui-workflow-templates-json/wan2.1_fun_inp.json、视频生成/图生视频/1951294089633452033.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Krea2 巨构文生图_2091510907372396546.json、图片生成/文生图/Krea2文生图-美感画质V2_2100973649820999682.json、图片生成/文生图/Krea2美感画质双提升V2_2097626860837494785.json、图片生成/文生图/Krea2美感画质双提升V2_2098923708609032194.json、图片生成/文生图/Krea2美感画质双提升_2093345673189089282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGZeroStar`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `SkipLayerGuidanceDiT`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `PrimitiveInt`
+- `SaveImage`
 - `UNETLoader`
-- `UNetTemporalAttentionMultiply`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `WanFunInpaintToVideo` —— 2/3 个有
-- `Canny` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `WanFunControlToVideo` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `ConditioningKrea2Rebalance` —— 6/8 个有
+- `Lora Loader Stack (rgthree)` —— 6/8 个有
+- `LatentUpscaleBy` —— 3/8 个有
+- `PrimitiveFloat` —— 3/8 个有
+- `EmptyImage` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `ResolutionSelector` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1088 | 1024 - 1920 | 8 | 73% |
+| 高度 | 1920 | 736 - 1920 | 8 | 69% |
+| 采样步数 | fixed | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 9 | 9 - 10 | 8 | 95% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -64,8 +63,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1088，观测区间 1024 - 1920，8 个样本
+- 高度 中位数 1920，观测区间 736 - 1920，8 个样本
+- 采样步数 最常用 fixed，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 10，8 个样本，取值集中（一致性 95%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

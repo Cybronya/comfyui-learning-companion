@@ -1,92 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_clip_32
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.671857
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LazySwitchKJ, LoraLoaderModelOnly, MultiImageLoader, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeTiled, VAELoaderKJ]
+frequency: 8
+level: moderate
+coverage: 0.814625
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2059948094514618369.json, 视频生成/图生视频/2059920310899662850.json, 视频生成/图生视频/2059193500587094017.json, 视频生成/图生视频/2063202881095954433.json, 视频生成/图生视频/2059401786028544001.json, 视频生成/图生视频/2075878057012977666.json, 视频生成/文生视频/LTX I2V 多图生视频_2059954460599865345.json]
+missing: [CR Text, Image Overlay, CR Text Concatenate, CR Overlay Text, easy cleanGpuUsed]
+members: [图片生成/文生图/1912452601420677122.json, 图片生成/文生图/1912840766295867394.json, 图片生成/文生图/1914304383847231490.json, 图片生成/文生图/1915672810759589889.json, 图片生成/文生图/1915753087057723394.json, 图片生成/文生图/1918127402818404354.json, 图片生成/文生图/1942467291403464705.json, 图片生成/文生图/1954518475970625537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_32
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2059948094514618369.json、视频生成/图生视频/2059920310899662850.json、视频生成/图生视频/2059193500587094017.json、视频生成/图生视频/2063202881095954433.json、视频生成/图生视频/2059401786028544001.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1912452601420677122.json、图片生成/文生图/1912840766295867394.json、图片生成/文生图/1914304383847231490.json、图片生成/文生图/1915672810759589889.json、图片生成/文生图/1915753087057723394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXAVTextEncoderLoader`
-- `LTXSequencer`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LazySwitchKJ`
-- `LoraLoaderModelOnly`
-- `MultiImageLoader`
-- `PrimitiveBoolean`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `ImageScaleBy` —— 6/7 个有
-- `Int` —— 6/7 个有
-- `LTXVLatentUpsampler` —— 6/7 个有
-- `LatentUpscaleModelLoader` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `PrimitiveInt` —— 5/7 个有
-- `CM_IntToFloat` —— 4/7 个有
-- `ConditioningZeroOut` —— 4/7 个有
-- `LTXVAudioVAEEncode` —— 4/7 个有
-- `LoadAudioUI` —— 4/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `SetLatentNoiseMask` —— 4/7 个有
-- `SolidMask` —— 4/7 个有
-- `easy mathInt` —— 4/7 个有
-- `MathExpression|pysssss` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `Float to Int` —— 2/7 个有
-- `PrimitiveFloat` —— 2/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `LTXVChunkFeedForward` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
-- `ModelPatchTorchSettings` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `easy getNode` —— 1/7 个有
-- `easy imageInsetCrop` —— 1/7 个有
-- `easy setNode` —— 1/7 个有
+- `ModelSamplingFlux` —— 7/8 个有
+- `CR Text` —— 3/8 个有
+- `RH_Translator` —— 3/8 个有
+- `ShowText|pysssss` —— 3/8 个有
+- `LoadImage` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `RH_LLMAPI_NODE` —— 2/8 个有
+- `RH_Prompter` —— 2/8 个有
+- `Bjornulf_ShowStringText` —— 1/8 个有
+- `CR Overlay Text` —— 1/8 个有
+- `CR Text Concatenate` —— 1/8 个有
+- `Image Overlay` —— 1/8 个有
+- `ImageConcanate` —— 1/8 个有
+- `ImageToMask` —— 1/8 个有
+- `InvertMask` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1 | 1 - 1 | 7 | 100% |
-| 高度 | 24 | 24 - 24 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -94,5 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，7 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Image Overlay、CR Text Concatenate、CR Overlay Text、easy cleanGpuUsed

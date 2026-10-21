@@ -3,61 +3,73 @@ name: unknown_workflow_lora_sampler_unet_41
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.797
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.68075
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetVideoComponents, ImageAddNoise, ImageBatchMulti, KSamplerSelect, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VideoFrameSample, VideoTemporalCrop]
 problems: []
 missing: []
-members: [视频生成/图生视频/桌面女友_2110568224566890498.json, 视频生成/图生视频/桌面女友_2111091294834614273.json, 视频生成/图生视频/（首尾帧 2图）MINIMAX H3  图生视频_2111267377957658625.json, 视频生成/文生视频/全模態影音生成，畫面與聲音一次算出來；支援首尾幀控制、內建 8 步 Turbo 開關_2100568061072994305.json]
+members: [视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采(简易版)_2105615690806939649.json, 视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采，无放大模型(简易整理版)_2108935950406610946.json, 视频生成/文生视频/MiniMax H3 SelfLift双采_2100249506242711553.json, 视频生成/视频生视频/MiniMax-H3-真·上下文无缝无色差长视频，SelfLift双采-简易版-.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_41
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/桌面女友_2110568224566890498.json、视频生成/图生视频/桌面女友_2111091294834614273.json、视频生成/图生视频/（首尾帧 2图）MINIMAX H3  图生视频_2111267377957658625.json、视频生成/文生视频/全模態影音生成，畫面與聲音一次算出來；支援首尾幀控制、內建 8 步 Turbo 開關_2100568061072994305.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采(简易版)_2105615690806939649.json、视频生成/图生视频/MiniMax H3 真·上下文无缝无色差长视频，SelfLift双采，无放大模型(简易整理版)_2108935950406610946.json、视频生成/文生视频/MiniMax H3 SelfLift双采_2100249506242711553.json、视频生成/视频生视频/MiniMax-H3-真·上下文无缝无色差长视频，SelfLift双采-简易版-.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
+- `ConditioningZeroOut`
 - `CreateVideo`
+- `ExtendIntermediateSigmas`
+- `GetImageRangeFromBatch`
+- `GetVideoComponents`
+- `ImageAddNoise`
+- `ImageBatchMulti`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveBoolean`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AudioGuideFeather`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
 - `PrimitiveInt`
-- `RandomNoise`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
 - `SaveVideo`
+- `SelfLiftH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `VideoFrameSample`
+- `VideoTemporalCrop`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 3/4 个有
-- `ImageCompositeMasked` —— 2/4 个有
-- `ImageScale` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `ManualSigmas` —— 2/4 个有
-- `QwenImage21Cache` —— 2/4 个有
-- `SamplerCustom` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `TextEncodeQwenImage21` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
-- `Wan_Organic_Skin` —— 1/4 个有
+- `ColorTransfer` —— 3/4 个有
+- `ComfySwitchNode` —— 3/4 个有
+- `PrimitiveBoolean` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `easy float` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `VideoConcatenate` —— 1/4 个有
+- `忽略多组孤海` —— 1/4 个有
 
 ## 典型参数
 

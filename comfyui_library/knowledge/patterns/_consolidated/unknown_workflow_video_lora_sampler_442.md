@@ -3,80 +3,81 @@ name: unknown_workflow_video_lora_sampler_442
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8728
-common_nodes: [BasicScheduler, CLIPTextEncode, CR Text, CS-LTXGridDirector, ComfySwitchNode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Preview from image [Crystools], PreviewAudio, PrimitiveBoolean, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorGuide, easy imageSave, 孤海注释]
+coverage: 0.575
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json, 视频生成/图生视频/2064410253088878594.json, 视频生成/图生视频/2082315667667243010.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json, 视频生成/图生视频/2069522054554148865.json]
+members: [视频生成/图生视频/2058362232681091073.json, 视频生成/图生视频/2027340250565054465.json, 视频生成/图生视频/2008938707402891265.json, 视频生成/图生视频/2018160297319604226.json, 视频生成/图生视频/1985641855952068610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_442
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ltx2.3  音频驱动 导演台带货 手动版本  无字幕_2083480997940785154.json、视频生成/图生视频/2064410253088878594.json、视频生成/图生视频/2082315667667243010.json、视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json、视频生成/图生视频/2069522054554148865.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2058362232681091073.json、视频生成/图生视频/2027340250565054465.json、视频生成/图生视频/2008938707402891265.json、视频生成/图生视频/2018160297319604226.json、视频生成/图生视频/1985641855952068610.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CR Text`
-- `CS-LTXGridDirector`
-- `ComfySwitchNode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSizeAndCount`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `Preview from image [Crystools]`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `PrimitiveInt`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `YusuLTXDirectorGuide`
-- `easy imageSave`
-- `孤海注释`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 4/5 个有
-- `GPTImage2PromptPreview` —— 4/5 个有
-- `RHHiddenNodes` —— 4/5 个有
-- `RH_RhartImageG2ImageToImage` —— 4/5 个有
-- `MuyeTextEditOutput` —— 3/5 个有
-- `PreviewAny` —— 2/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `AudioCrop` —— 1/5 个有
-- `ImageRGBChannel` —— 1/5 个有
-- `IndexTTS2Run` —— 1/5 个有
-- `LayerColor: Levels` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
-- `SaveAudio` —— 1/5 个有
-- `SaveAudioMP3` —— 1/5 个有
-- `ShellAgentPluginOutputText` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `DrawViTPose` —— 4/5 个有
+- `PointsEditor` —— 3/5 个有
+- `ColorMatch` —— 2/5 个有
+- `DWPreprocessor` —— 2/5 个有
+- `PixelPerfectResolution` —— 2/5 个有
+- `PrimitiveFloat` —— 2/5 个有
+- `Sa2VANodeTpl` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `easy mathInt` —— 2/5 个有
+- `GroundingDinoModelLoader_SDPose` —— 1/5 个有
+- `ImageCompositeMasked` —— 1/5 个有
+- `InvertMask` —— 1/5 个有
+- `LayerUtility: TextBox` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `SDPoseOODLoader` —— 1/5 个有
+- `SDPoseOODProcessor` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `SaveText` —— 1/5 个有
+- `WanVideoContextOptions` —— 1/5 个有
+- `YOLOModelLoader` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_69
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.7375
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.744545
+common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudio]
 problems: []
-missing: [CR Text]
-members: [图片生成/图生图/2070424978759180289.json, 图片生成/文生图/Seedance2.0 mini图生视频_2070424978759180289.json, 视频生成/图生视频/1988066277900136449.json, 视频生成/图生视频/2070036008581812226.json, 视频生成/图生视频/2070040969587806209.json, 视频生成/图生视频/2069669860082274305.json, 视频生成/图生视频/2070071367327903745.json, 视频生成/文生视频/Seedance Mini-图生视频+全节点注释_2069737627246485505.json, 视频生成/文生视频/seedance2.0 mini图生视频_2070010907375259649.json, 视频生成/文生视频/seedance2.0 mini图生视频_2070038289159118850.json]
+missing: []
+members: [数字人/数字人/配音声音克隆IndexTTS2最强音色克隆_2110933697322110978.json, 音频生成/音频生成/31. IndexTTS2双人对话+情绪工作流_1966462003676164098.json, 音频生成/音频生成/32号特工：最强声音克隆 IndexTTS-2+情感控制+简单易用_2045034990160842753.json, 音频生成/音频生成/AIDir-配音声音克隆IndexTTS2史上最强音色克隆_2075050449190871042.json, 音频生成/音频生成/IndexTTS2文生声音+情感控制_2003136156327903234.json, 音频生成/音频生成/IndexTTS2最强音色克隆_1965570620937392129.json, 音频生成/音频生成/空白工作流_2052346805639237634.json, 音频生成/音频生成/艾希音色克隆 IndexTTS2文生声音+情感控制工作流 V1.0_2016426570805682178.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_1965610012699709441.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_2105125124012859394.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_2105504027202117633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_69
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/2070424978759180289.json、图片生成/文生图/Seedance2.0 mini图生视频_2070424978759180289.json、视频生成/图生视频/1988066277900136449.json、视频生成/图生视频/2070036008581812226.json、视频生成/图生视频/2070040969587806209.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/配音声音克隆IndexTTS2最强音色克隆_2110933697322110978.json、音频生成/音频生成/31. IndexTTS2双人对话+情绪工作流_1966462003676164098.json、音频生成/音频生成/32号特工：最强声音克隆 IndexTTS-2+情感控制+简单易用_2045034990160842753.json、音频生成/音频生成/AIDir-配音声音克隆IndexTTS2史上最强音色克隆_2075050449190871042.json、音频生成/音频生成/IndexTTS2文生声音+情感控制_2003136156327903234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
 - **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 11 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 9/10 个有
-- `CR Text` —— 8/10 个有
-- `RH_MJ_Video` —— 1/10 个有
+- `SaveAudioMP3` —— 9/11 个有
+- `PreviewAudio` —— 7/11 个有
+- `AudioSeparation` —— 6/11 个有
+- `PrimitiveString` —— 4/11 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

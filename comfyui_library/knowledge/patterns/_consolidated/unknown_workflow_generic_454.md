@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_generic_454
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoV31ProOfficialImageToVideo, SaveVideo]
+coverage: 0.95825
+common_nodes: [LoadAudio, MossTTSGenerate, MossTTSModelLoader, SaveAudioMP3, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/2045420917798473729.json, 视频生成/图生视频/2028677120590876674.json, 视频生成/图生视频/2037419095750090753.json]
+members: [音频生成/音频生成/Moss TTS语音克隆1.5模型_2076263094506057730.json, 音频生成/音频生成/Moss TTS语音克隆_2071776437790658562.json, 音频生成/音频生成/Moss TTS语音克隆_2076486767691255809.json, 音频生成/音频生成/moss语音克隆_2076565397675003905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_454
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2045420917798473729.json、视频生成/图生视频/2028677120590876674.json、视频生成/图生视频/2037419095750090753.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Moss TTS语音克隆1.5模型_2076263094506057730.json、音频生成/音频生成/Moss TTS语音克隆_2071776437790658562.json、音频生成/音频生成/Moss TTS语音克隆_2076486767691255809.json、音频生成/音频生成/moss语音克隆_2076565397675003905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoV31ProOfficialImageToVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/3 个有
-- `TextBox` —— 1/3 个有
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `MossTTSGenerate`
+- `MossTTSModelLoader`
+- `SaveAudioMP3`
+- `Text`
 
 ## 典型参数
 

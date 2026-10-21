@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_467
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.741
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+coverage: 0.50825
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_description, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2063452594969858049.json, 视频生成/文生视频/Relay 剧情 + 双人 LoRA 格式提示词导演_2048717560673214466.json, 音频生成/音频生成/山东职业学生作业1_2073979029476171777.json]
+members: [音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json, 音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_467
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2063452594969858049.json、视频生成/文生视频/Relay 剧情 + 双人 LoRA 格式提示词导演_2048717560673214466.json、音频生成/音频生成/山东职业学生作业1_2073979029476171777.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json、音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_suno_description`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
-- `easy string` —— 1/3 个有
+- `easy showAnything` —— 3/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,72 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_unet_14
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.8705
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, DisableNoise, ExtendIntermediateSigmas, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, Lora Loader Stack (rgthree), MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PixaromaSaveMp4, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SigmasToFloat, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy boolean]
+coverage: 0.902222
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxH3TurboLoRA, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SpectrumApplyMiniMaxH3, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全参考模式（多参专用）_2089144368086208514.json, 视频生成/图生视频/MiniMax H3 全参考模式（多参专用）_2095002353236795393.json, 视频生成/图生视频/MiniMax H3 双图参考生视频_2090580862466347010.json, 视频生成/图生视频/MiniMaxH3全参考模式+三采+sigma强化+潜空间放大_2089928928285773826.json, 视频生成/图生视频/Minimax H3 Latent采样放大8_18_2089383455539941377.json, 视频生成/图生视频/双4步 H3采样 8.17_2085295391691591682.json, 视频生成/文生视频/(ref)Minimax-H3全面优化模型工作流（动作_表情_动态模糊修复_特效）_2093928908566646786.json, 视频生成/文生视频/(ref)Minimax-H3官方4步究极高画质双采工作流（新模型）_2090053764232335361.json]
+members: [图片生成/文生图/Minimax H3 文生图工作流（带放大、提示词模版）_2090801005020672001.json, 视频生成/图生视频/Minima H3 多图参考生视频工作流（极速15秒1080P）_2090769195763068930.json, 视频生成/图生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2096442093140008962.json, 视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2098632894154633217.json, 视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2102648250376482817.json, 视频生成/图生视频/Minimax H3 单图生视频工作流加速版_2106591527647662081.json, 视频生成/图生视频/Minimax H3 单图生视频工作流（极速15秒1080P）_2090716594468118530.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2090749193135681538.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2101259585813311489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_14
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全参考模式（多参专用）_2089144368086208514.json、视频生成/图生视频/MiniMax H3 全参考模式（多参专用）_2095002353236795393.json、视频生成/图生视频/MiniMax H3 双图参考生视频_2090580862466347010.json、视频生成/图生视频/MiniMaxH3全参考模式+三采+sigma强化+潜空间放大_2089928928285773826.json、视频生成/图生视频/Minimax H3 Latent采样放大8_18_2089383455539941377.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Minimax H3 文生图工作流（带放大、提示词模版）_2090801005020672001.json、视频生成/图生视频/Minima H3 多图参考生视频工作流（极速15秒1080P）_2090769195763068930.json、视频生成/图生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2096442093140008962.json、视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2098632894154633217.json、视频生成/图生视频/Minimax H3 单图参考AI图生视频工作流（极速10秒1080P）_2102648250376482817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `DisableNoise`
-- `ExtendIntermediateSigmas`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PixaromaSaveMp4`
-- `PrimitiveFloat`
-- `PrimitiveInt`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyModelAdapter`
+- `MiniMaxH3EasyOutput`
+- `MiniMaxH3TurboLoRA`
+- `ModelAttentionBackend`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SigmasToFloat`
-- `SplitSigmas`
+- `SpectrumApplyMiniMaxH3`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `easy boolean`
 
 **可变部分**（部分 workflow 才有）：
-- `LatentUpscaleBy` —— 7/8 个有
-- `LoadAudio` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 7/8 个有
-- `GetImageRangeFromBatch` —— 6/8 个有
-- `ImageResizeKJv2` —— 6/8 个有
-- `VHS_LoadVideo` —— 6/8 个有
-- `UniBlockSwap` —— 3/8 个有
-- `VRAMReserver` —— 3/8 个有
-- `ModelAttentionBackend` —— 2/8 个有
-- `SolAttnMiniMax` —— 2/8 个有
-- `H3SigmaRefiner` —— 1/8 个有
-- `MiniMaxH3AVDecodeT8` —— 1/8 个有
-- `MiniMaxH3SigmaShift` —— 1/8 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/8 个有
-- `ModelPreviewOverrideKJ` —— 1/8 个有
+- `CreateVideo` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `ExtendIntermediateSigmas` —— 3/9 个有
+- `LoadAudio` —— 2/9 个有
+- `LoadVideo` —— 2/9 个有
+- `GetImagesFromBatchIndexed` —— 1/9 个有
+- `ImageUpscaleWithModel` —— 1/9 个有
+- `PreviewAudio` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `PrimitiveFloat` —— 1/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `UpscaleModelLoader` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,44 +1,36 @@
 ---
 name: text_to_image_lora_sampler_clip_52
 type: Text To Image
-frequency: 14
+frequency: 15
 level: strong
-coverage: 0.669214
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9372
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/9图3音频3视频全能参考2倍速量化加速｜MiniMax-H3数字人口播带货AI漫剧图生视频_2087231453745737730.json, 视频生成/图生视频/Dasiwa V1 SLA加速｜MiniMax H3角色一致图生视频_2092080079957483522.json, 视频生成/图生视频/MiniMax H3动作迁移图生视频 自定义背景人物全能参考_2095811312990375938.json, 视频生成/图生视频/MiniMax H3动作迁移图生视频 自定义背景人物全能参考_2100008105735184386.json, 视频生成/图生视频/MiniMax H3智能反推提示词免手写｜角色一致性人物替换图生视频_2089722342904778753.json, 视频生成/图生视频/Minimax H3人物替换角色一致性图生视频 智能反推提示词免手写方案_2093214087969853442.json, 视频生成/图生视频/Minimax H3人物替换｜智能反推提示词动作迁移_2095295954445496321.json, 视频生成/图生视频/Minimax H3智能反推提示词｜人物替换动作迁移角色一致_2089448022911569922.json, 视频生成/图生视频/Minimax H3角色一致动作迁移图生视频 人物替换智能反推提示词方案_2090070222895144961.json, 视频生成/图生视频/Minimax H3角色一致动作迁移图生视频 人物替换智能反推提示词方案_2090822999573356546.json, 视频生成/图生视频/人物替换免手写提示词｜MiniMax H3角色一致性图生视频_2093478631329849345.json, 视频生成/图生视频/极速sigma强化二采｜H3九图三音频全能参考小脸不崩_2091020677938765825.json, 视频生成/图生视频/音频驱动多图多分镜数字人MV MinimaxH3 lightx2v量化加速单人版_2094230825721229314.json, 视频生成/图生视频/音频驱动数字人MV｜MinimaxH3多图分镜lightx2v量化加速_2094352514467586049.json]
+members: [视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json, 视频生成/图生视频/MiniMax H3全能参考｜图音视频多素材再生工作流_2095255547141509121.json, 视频生成/图生视频/SD2.5全能参考全参数版｜图生视频自由调控_2098757736740769793.json, 视频生成/图生视频/Seedance 2.5全参可调｜图生视频视频生视频一步到位_2099871193108140034.json, 视频生成/图生视频/Seedance 2.5全参工作流全参数输入视频生成，视频生视频图生视频方案_2105808093924909057.json, 视频生成/图生视频/Seedance 2.5全参工作流，视频生视频图生视频全覆盖方案_2106570538192822274.json, 视频生成/图生视频/Seedance 2.5动作迁移，人物场景特效图生视频_2111225027298414593.json, 视频生成/图生视频/Seedance2.5全参图生视频工作流｜视频生视频稳定出新_2108014164991102978.json, 视频生成/图生视频/Seedance2.5全参工作流｜视频生视频图生视频一网打尽_2100757319570247682.json, 视频生成/图生视频/Seedance2.5全参工作流｜视频生视频图生视频全能_2089422276826583041.json, 视频生成/图生视频/Seedance2.5全参工作流｜视频生视频图生视频全能生成_2097053723100008450.json, 视频生成/图生视频/Seedance2.5全参数视频工作流 图生视频与视频生视频_2098285496450510850.json, 视频生成/图生视频/全参工作流｜Seedance2.5视频生视频图生视频_2090599945182212098.json, 视频生成/图生视频/全参视频工作流｜Seedance2.5图生视频生视频直出_2093483002692198401.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频 图片音频视频三参考输入_2104694435845070849.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_52
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/9图3音频3视频全能参考2倍速量化加速｜MiniMax-H3数字人口播带货AI漫剧图生视频_2087231453745737730.json、视频生成/图生视频/Dasiwa V1 SLA加速｜MiniMax H3角色一致图生视频_2092080079957483522.json、视频生成/图生视频/MiniMax H3动作迁移图生视频 自定义背景人物全能参考_2095811312990375938.json、视频生成/图生视频/MiniMax H3动作迁移图生视频 自定义背景人物全能参考_2100008105735184386.json、视频生成/图生视频/MiniMax H3智能反推提示词免手写｜角色一致性人物替换图生视频_2089722342904778753.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json、视频生成/图生视频/MiniMax H3全能参考｜图音视频多素材再生工作流_2095255547141509121.json、视频生成/图生视频/SD2.5全能参考全参数版｜图生视频自由调控_2098757736740769793.json、视频生成/图生视频/Seedance 2.5全参可调｜图生视频视频生视频一步到位_2099871193108140034.json、视频生成/图生视频/Seedance 2.5全参工作流全参数输入视频生成，视频生视频图生视频方案_2105808093924909057.json…）
 
 - **类型**：Text To Image
-- **样本数**：14
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -46,80 +38,43 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 13/14 个有
-- `PrimitiveFloat` —— 13/14 个有
-- `ResolutionSelector` —— 13/14 个有
-- `CreateVideo` —— 12/14 个有
-- `SaveVideo` —— 12/14 个有
-- `VAEDecodeAudio` —— 12/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/14 个有
-- `VHS_LoadVideo` —— 11/14 个有
-- `RHHiddenNodes` —— 10/14 个有
-- `PrimitiveInt` —— 9/14 个有
-- `EasyCache` —— 7/14 个有
-- `easy showAnything` —— 7/14 个有
-- `LoadAudio` —— 6/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/14 个有
-- `ModelAttentionBackend` —— 4/14 个有
-- `PreviewAudio` —— 4/14 个有
-- `SolAttnMiniMax` —— 4/14 个有
-- `easy seed` —— 4/14 个有
-- `Any Switch (rgthree)` —— 3/14 个有
-- `ImageResizeKJv2` —— 3/14 个有
-- `LayerUtility: PurgeVRAM` —— 3/14 个有
-- `MiniMaxH3SigmaShift` —— 3/14 个有
-- `ModelPreviewOverrideKJ` —— 3/14 个有
-- `PreviewAny` —— 3/14 个有
-- `PreviewImage` —— 3/14 个有
-- `ZNGB_ImageBatchMulti` —— 3/14 个有
-- `easy int` —— 3/14 个有
-- `llama_cpp_instruct_adv` —— 3/14 个有
-- `llama_cpp_model_loader` —— 3/14 个有
-- `llama_cpp_parameters` —— 3/14 个有
-- `llama_cpp_unload_model` —— 3/14 个有
-- `Any To String (mtb)` —— 2/14 个有
-- `AudioCrop` —— 2/14 个有
-- `CR Prompt Text` —— 2/14 个有
-- `MathExpression|pysssss` —— 2/14 个有
-- `SoundFlow_GetLength` —— 2/14 个有
-- `TrimAudioDuration` —— 2/14 个有
-- `VHS_VideoCombine` —— 2/14 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/14 个有
-- `easy clearCacheAll` —— 2/14 个有
-- `easy float` —— 2/14 个有
-- `H3SigmaRefiner` —— 1/14 个有
-- `LTXVConcatAVLatent` —— 1/14 个有
-- `LTXVSeparateAVLatent` —— 1/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
-- `LoadVideo` —— 1/14 个有
-- `LoraLoaderBypassModelOnly` —— 1/14 个有
-- `SplitSigmas` —— 1/14 个有
+- `LoadVideo` —— 14/15 个有
+- `LoadAudio` —— 13/15 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 12/15 个有
+- `ttN text` —— 11/15 个有
+- `SaveImage` —— 7/15 个有
+- `PrimitiveStringMultiline` —— 1/15 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 1/15 个有
+- `RH_MinimaxHailuoH3RegenerationMultimodalToVideo` —— 1/15 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/15 个有
+- `RH_TopazLabs_VideoUpscale` —— 1/15 个有
+- `T8ShowText` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 14 | 100% |
-| 高度 | 80 | 80 - 80 | 14 | 100% |
-| 采样步数 | 4 | 4 - 4 | 14 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
-| 采样算法 | er_sde | - | 14 | 100% |
-| 调度器 | beta | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 80 | 80 - 80 | 15 | 100% |
+| 高度 | 80 | 80 - 80 | 15 | 100% |
+| 采样步数 | 4 | 4 - 4 | 15 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 15 | 100% |
+| 采样算法 | er_sde | - | 15 | 100% |
+| 调度器 | beta | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，14 个样本，一致性 100%
-- 调度器 最常用 beta，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（16/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，15 个样本，一致性 100%
+- 调度器 最常用 beta，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（16/15 个样本）：Steps较低可能导致细节不足

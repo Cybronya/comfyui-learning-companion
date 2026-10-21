@@ -3,65 +3,55 @@ name: unknown_workflow_video_lora_sampler_871
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5425
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ColorMatch, GetNode, ImageFromBatch, ImageResizeKJv2, Int, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAI2V, PainterAudioCut, PreviewAudio, SetNode, SimpleMath+, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy promptLine]
+coverage: 0.948
+common_nodes: [BasicMath, CLIPLoader, CLIPTextEncode, FloatConstant, INTConstant, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, StringConcatenate, ToFloat, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018019225536831490.json, 视频生成/图生视频/2045963626250506242.json]
+members: [视频生成/图生视频/2031354841515171842.json, 视频生成/图生视频/2031004369734344706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_871
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2018019225536831490.json、视频生成/图生视频/2045963626250506242.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2031354841515171842.json、视频生成/图生视频/2031004369734344706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+- `BasicMath`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `GetNode`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `Int`
+- `FloatConstant`
+- `INTConstant`
 - `KSamplerAdvanced`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PreviewAudio`
-- `SetNode`
-- `SimpleMath+`
-- `TTResolutionSelector`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `StringConcatenate`
+- `ToFloat`
+- `ToInt`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `WanFirstLastFrameToVideo` —— 1/2 个有
+- `WanImageToVideo` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
+| 采样步数 | fixed | - | 2 | 50% |
 | Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
 | 采样算法 | 1 | - | 2 | 100% |
 | 调度器 | euler | - | 2 | 100% |
@@ -73,7 +63,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- 采样步数 最常用 fixed，2 个样本，一致性 50%
 - Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 调度器 最常用 euler，2 个样本，一致性 100%

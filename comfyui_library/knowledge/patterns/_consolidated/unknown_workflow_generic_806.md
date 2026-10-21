@@ -3,36 +3,31 @@ name: unknown_workflow_generic_806
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8635
-common_nodes: [CR Prompt Text, IndexTTSRun, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
+coverage: 0.818
+common_nodes: [AILab_QwenVL, CR Text, CR Text Concatenate, QWEN_TextDisplay, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeyGem数字人+语音克隆_1925738543635992577.json, 音频生成/音频生成/HeyGem数字人+语音克隆（极速生成）_1926023691921231874.json]
+members: [图片生成/文生图/提示词润色工作流_2100519921724780546.json, 图片生成/文生图/提示词润色工作流｜简单描述自动润色绝佳提示词_2100846135970713601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_806
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeyGem数字人+语音克隆_1925738543635992577.json、音频生成/音频生成/HeyGem数字人+语音克隆（极速生成）_1926023691921231874.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/提示词润色工作流_2100519921724780546.json、图片生成/文生图/提示词润色工作流｜简单描述自动润色绝佳提示词_2100846135970713601.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTSRun`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
+- `AILab_QwenVL`
+- `CR Text`
+- `CR Text Concatenate`
+- `QWEN_TextDisplay`
+- `SaveImage`
 
 ## 典型参数
 

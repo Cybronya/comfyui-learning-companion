@@ -3,36 +3,31 @@ name: unknown_workflow_video_lora_sampler_176
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8567
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, ImageResize+, JWInteger, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8869
+common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, WanVideoWanDrawWanMoveTracks]
 problems: []
-missing: [LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, CR Prompt Text, ImageResize+]
-members: [图片生成/文生图/1980937502708158465.json, 视频生成/图生视频/1952002049745563650.json, 视频生成/图生视频/1956601025757151233.json, 视频生成/图生视频/1956583088841261058.json, 视频生成/图生视频/1952012888850509826.json, 视频生成/图生视频/1996851492734869506.json, 视频生成/图生视频/1981935370910744577.json, 视频生成/图生视频/1952320153679794177.json, 视频生成/图生视频/1978297110992969730.json, 视频生成/图生视频/1963913944572248066.json]
+missing: []
+members: [视频生成/图生视频/2000440766998736897.json, 视频生成/图生视频/1999398013804179457.json, 视频生成/图生视频/2015351351290630146.json, 视频生成/图生视频/1999379075955294209.json, 视频生成/图生视频/1999823566369587201.json, 视频生成/图生视频/2000407963032485890.json, 视频生成/图生视频/1999283559233974273.json, 视频生成/图生视频/1999719285188685825.json, 视频生成/图生视频/2000263694896558082.json, 视频生成/图生视频/1999310460828647425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_176
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/1980937502708158465.json、视频生成/图生视频/1952002049745563650.json、视频生成/图生视频/1956601025757151233.json、视频生成/图生视频/1956583088841261058.json、视频生成/图生视频/1952012888850509826.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2000440766998736897.json、视频生成/图生视频/1999398013804179457.json、视频生成/图生视频/2015351351290630146.json、视频生成/图生视频/1999379075955294209.json、视频生成/图生视频/1999823566369587201.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `ImageResize+`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM`
+- `CLIPVisionLoader`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
@@ -44,22 +39,30 @@ source: knowledge_consolidation
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `WanVideoWanDrawWanMoveTracks`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 6/10 个有
-- `EmptyImage` —— 6/10 个有
-- `GetImageSizeAndCount` —— 6/10 个有
-- `ImageConcatMulti` —— 6/10 个有
-- `SimpleMath+` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
+- `SplineEditor` —— 8/10 个有
+- `ImageConcanate` —— 7/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `RepeatImageBatch` —— 7/10 个有
+- `INTConstant` —— 6/10 个有
+- `FL_PathAnimator` —— 5/10 个有
+- `CR Prompt Text` —— 4/10 个有
+- `ImageResizeKJv2` —— 3/10 个有
+- `WanVideoTorchCompileSettings` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
 - `GetNode` —— 2/10 个有
 - `SetNode` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
-- `easy ifElse` —— 1/10 个有
-- `easy int` —— 1/10 个有
+- `Getter` —— 1/10 个有
+- `HAIGC_VideoLoader` —— 1/10 个有
+- `ImpactSwitch` —— 1/10 个有
+- `LazySwitchKJ` —— 1/10 个有
+- `Primitive integer [Crystools]` —— 1/10 个有
+- `Setter` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `Text` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
 
 ## 典型参数
 
@@ -71,4 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM、SimpleMath+、easy cleanGpuUsed、CR Prompt Text、ImageResize+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

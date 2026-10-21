@@ -3,33 +3,36 @@ name: unknown_workflow_generic_185
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.847167
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.667
+common_nodes: [LoadImage, PreviewAny, PrimitiveStringMultiline, SaveText]
 problems: []
 missing: []
-members: [视频生成/图生视频/1984096040829812737.json, 视频生成/图生视频/1986435365529677826.json, 视频生成/图生视频/参考生视频工作流｜Vidu Q3 多图参考 角色一致_2100471510862483458.json, 视频生成/图生视频/1991867400045875201.json, 视频生成/图生视频/1998420316537913346.json, 视频生成/图生视频/1994588476685361153.json]
+members: [comfyui-workflow-templates-json/api_anthropic_claude_fable5.json, comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json, comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json, comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json, comfyui-workflow-templates-json/api_openai_gpt6_astra.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_185
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1984096040829812737.json、视频生成/图生视频/1986435365529677826.json、视频生成/图生视频/参考生视频工作流｜Vidu Q3 多图参考 角色一致_2100471510862483458.json、视频生成/图生视频/1991867400045875201.json、视频生成/图生视频/1998420316537913346.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/api_anthropic_claude_fable5.json、comfyui-workflow-templates-json/api_anthropic_claude_fable5_1.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5.json、comfyui-workflow-templates-json/api_anthropic_claude_opus_5_5.json、comfyui-workflow-templates-json/api_anthropic_claude_sonnet5.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `SaveText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng_Image2Video_V2` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `RH_ViduReferenceToVideoQ3Drama` —— 1/6 个有
+- `ClaudeNode` —— 5/6 个有
+- `70bc0003-66ee-48a5-bea3-7a0949fc30b5` —— 4/6 个有
+- `1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5` —— 2/6 个有
+- `OpenAIChatNode` —— 1/6 个有
 
 ## 典型参数
 

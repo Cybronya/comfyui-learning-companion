@@ -3,62 +3,77 @@ name: unknown_workflow_video_lora_sampler_806
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8665
-common_nodes: [CLIPVisionLoader, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SaveImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int]
+coverage: 0.508
+common_nodes: [BBoxesToSAM2, BlockifyMask, CLIPVisionLoader, CR String To Number, DWPreprocessor, DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImagesFromBatchIndexed, GetNode, GrowMask, ImageConcatMulti, ImageCropByMaskAndResize, ImageFromBatch, ImageResizeKJv2, ImpactInt, ImpactSwitch, Int, LayerMask: SAM2VideoUltra, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, QwenVLDetection, Sam2Segmentation, SetNode, TextBoxNode_UTK, Textbox, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935274607635267585.json, 视频生成/图生视频/1935260517701177345.json]
+members: [视频生成/图生视频/1969938728464621569.json, 视频生成/图生视频/1980181283542306818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_806
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1935274607635267585.json、视频生成/图生视频/1935260517701177345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1969938728464621569.json、视频生成/图生视频/1980181283542306818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BBoxesToSAM2`
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `Fast Bypasser (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
+- `CR String To Number`
+- `DWPreprocessor`
+- `DownloadAndLoadQwenModel`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `ImpactSwitch`
+- `Int`
+- `LayerMask: SAM2VideoUltra`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `SaveImage`
+- `QwenVLDetection`
+- `Sam2Segmentation`
+- `SetNode`
+- `TextBoxNode_UTK`
+- `Textbox`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FILM VFI` —— 1/2 个有
-- `Image Aspect Ratio` —— 1/2 个有
-- `ImageFromBatch+` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Logic Boolean` —— 1/2 个有
-- `Number to Float` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `Image Stitch` —— 1/2 个有
 
 ## 典型参数
 

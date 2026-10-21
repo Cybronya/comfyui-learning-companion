@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_sampler_clip_unet_36
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.962143
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 12
+level: moderate
+coverage: 0.92025
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [InjectLatentNoise+, Upscale Model Loader]
-members: [图片生成/文生图/1916028810548936705.json, 图片生成/文生图/人猫合影_1891781898589384705.json, 图片生成/文生图/抖音美女跳舞图片环节_1867930205196271617.json, 图片生成/文生图/炉鼎之家-文生图_1889684383299788802.json, 图片生成/文生图/颜值网红美女工作流_1896063182081490945.json, 视频生成/图生视频/1932281057691729921.json, 视频生成/文生视频/1930226449242865665.json]
+missing: [LayerUtility: PurgeVRAM]
+members: [图片生成/文生图/1926661482686353410.json, 图片生成/文生图/1933332658841628674.json, 图片生成/文生图/1986239618842578945.json, 图片生成/文生图/3D人物编辑器应用系列之二——FLUX-2-klein-9B文生图_2020299327251423234.json, 图片生成/文生图/F.2klein9b自动溶图打光一致性_2058899052313530370.json, 图片生成/文生图/FLUX-2-klein-9B_动作精准设计之二工作流_2016865671568691202.json, 图片生成/文生图/FLUX-2-klein-9b_动作精准设计之一工作流_2013405319954702338.json, 图片生成/文生图/FLUX.2 Turbo_2006076343817084929.json, 图片生成/文生图/FLUX2 混合模型_1993527380123860994.json, 图片生成/文生图/FLUX2-多参考一致性创意场景合成_2090769208387923969.json, 图片生成/文生图/FLux2-用嘴改图_2081949979949748226.json, 图片生成/文生图/Flux.2双图编辑_1993607256262508545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_36
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1916028810548936705.json、图片生成/文生图/人猫合影_1891781898589384705.json、图片生成/文生图/抖音美女跳舞图片环节_1867930205196271617.json、图片生成/文生图/炉鼎之家-文生图_1889684383299788802.json、图片生成/文生图/颜值网红美女工作流_1896063182081490945.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/1926661482686353410.json、图片生成/文生图/1933332658841628674.json、图片生成/文生图/1986239618842578945.json、图片生成/文生图/3D人物编辑器应用系列之二——FLUX-2-klein-9B文生图_2020299327251423234.json、图片生成/文生图/F.2klein9b自动溶图打光一致性_2058899052313530370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `Flux2Scheduler`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -38,31 +36,28 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DisableNoise` —— 6/7 个有
-- `InjectLatentNoise+` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `SplitSigmasDenoise` —— 6/7 个有
-- `CR Aspect Ratio` —— 4/7 个有
-- `LatentUpscaleBy` —— 4/7 个有
-- `EmptySD3LatentImage` —— 3/7 个有
-- `LoadImage` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `UltimateSDUpscale` —— 2/7 个有
-- `Upscale Model Loader` —— 2/7 个有
-- `BetterFilmGrain` —— 1/7 个有
-- `CheckpointLoaderSimple` —— 1/7 个有
-- `ExpressionEditor` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `Seed (rgthree)` —— 1/7 个有
-- `Simple String` —— 1/7 个有
+- `EmptyFlux2LatentImage` —— 11/12 个有
+- `FluxGuidance` —— 11/12 个有
+- `ReferenceLatent` —— 11/12 个有
+- `LoadImage` —— 10/12 个有
+- `VAEEncode` —— 10/12 个有
+- `ImageScaleToTotalPixels` —— 8/12 个有
+- `Image Comparer (rgthree)` —— 2/12 个有
+- `ImpactInt` —— 2/12 个有
+- `Int` —— 2/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/12 个有
+- `LoraLoaderModelOnly` —— 2/12 个有
+- `GetImageSize` —— 1/12 个有
+- `LayerUtility: PurgeVRAM` —— 1/12 个有
+- `PrimitiveInt` —— 1/12 个有
+- `RH_Translator` —— 1/12 个有
+- `TTResolutionSelector` —— 1/12 个有
+- `TextInput_` —— 1/12 个有
+- `easy positive` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.9 | - | 2 | 100% |
-| LoRA 文本强度 | 0.9 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,6 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：InjectLatentNoise+、Upscale Model Loader
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM

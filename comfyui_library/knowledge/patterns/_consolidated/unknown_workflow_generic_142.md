@@ -1,44 +1,40 @@
 ---
 name: unknown_workflow_generic_142
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.747571
-common_nodes: [Apply Whisper, Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.901125
+common_nodes: [CR Text, LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, RunningHubAudio8ModelLoader, RunningHubAudio8Prompt, RunningHubAudio8Sampling, RunningHubAudio8TTS, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--Qwen3 TTS 声音克隆--多语言翻译translate-漫剧_推文_有声书_2015767132360937474.json, 音频生成/音频生成/Qwen3-TTS 语音克隆 语音设计 效果逆天qwen3-tts_2014594693308358657.json, 音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2069787707148161026.json, 音频生成/音频生成/声音设计，声音克隆，Qwen3-TTS全家桶_2014550098763583489.json]
+members: [音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083863614699687937.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864179072659457.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864678345826305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_142
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/AA--Qwen3 TTS 声音克隆--多语言翻译translate-漫剧_推文_有声书_2015767132360937474.json、音频生成/音频生成/Qwen3-TTS 语音克隆 语音设计 效果逆天qwen3-tts_2014594693308358657.json、音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json、音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json、音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json、音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json、音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Apply Whisper`
-- `Fast Groups Bypasser (rgthree)`
+全部 8 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
+- `Qwen3ASRLoader_DFT`
+- `Qwen3ASRTranscribe_DFT`
+- `RunningHubAudio8ModelLoader`
+- `RunningHubAudio8Prompt`
+- `RunningHubAudio8Sampling`
+- `RunningHubAudio8TTS`
 - `SaveAudio`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3TTSVoiceDesign` —— 6/7 个有
-- `Qwen3TTSCustomVoice` —— 5/7 个有
-- `TextInputBasic` —— 3/7 个有
-- `easy seed` —— 3/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `RunningHub SeedXPro Translator` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `PreviewAudio` —— 1/8 个有
 
 ## 典型参数
 

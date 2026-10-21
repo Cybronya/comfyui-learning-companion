@@ -3,55 +3,56 @@ name: unknown_workflow_video_lora_clip_12
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo]
+coverage: 0.9365
+common_nodes: [CLIPLoader, CLIPTextEncode, Float, INTConstant, ImageResizeKJv2, JjkText, LayerUtility: ImageScaleRestore V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PathchSageAttentionKJ, RHHiddenNodes, UNETLoader, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1964290181601873922.json, 视频生成/图生视频/2050542650729746434.json]
+members: [视频生成/图生视频/1962143850557063170.json, 视频生成/图生视频/1927213525364592641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1964290181601873922.json、视频生成/图生视频/2050542650729746434.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1962143850557063170.json、视频生成/图生视频/1927213525364592641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Float`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `JjkText`
+- `LayerUtility: ImageScaleRestore V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelPatchLoader`
 - `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `RHHiddenNodes`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
+- `easy cleanGpuUsed`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `WanMoeKSampler` —— 1/2 个有
-- `WanVideoNAG` —— 1/2 个有
+- `AudioEncoderLoader` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `IndexTTS2Run` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 8 | - | 2 | 75% |
-| 采样算法 | 2.5 | - | 2 | 40% |
-| 调度器 | 1 | - | 1 | 100% |
-| 重绘幅度 | euler | - | 2 | 50% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,8 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本
-- 采样算法 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
-- 重绘幅度 最常用 euler，2 个样本，一致性 50%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

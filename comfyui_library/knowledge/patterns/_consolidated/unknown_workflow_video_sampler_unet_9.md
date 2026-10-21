@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_unet_9
 type: Unknown Workflow
 frequency: 24
 level: moderate
-coverage: 0.885792
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.561583
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json, 视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2084592731342594049.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2099779886431952898.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2100039671811235841.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T4_2084592720953303042.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T5_2084645120611278849.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084645112528859137.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084670389682270209.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T7_2084693256843128834.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T8_2084703777696866306.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085923821353263105.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085945362610741250.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085968737643098113.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2086378020520153090.json, 视频生成/图生视频/MInimaxH3首尾帧生成视频_2085616709708378113.json, 视频生成/图生视频/MInimaxH3首尾帧电商广告图_2086285454638411777.json, 视频生成/图生视频/MinimaxH3图生视频可指定音乐_2086761878126157826.json, 视频生成/图生视频/minimaxH3人物变化转场_2085374527827169281.json, 视频生成/图生视频/来一杯可乐_2097322293583241217.json, 视频生成/图生视频/首尾帧图生视频_2086841278280589314.json]
+members: [图片生成/文生图/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2097993945132388353.json, 视频生成/图生视频/4-9宫图+Minimaxh3导演台（批量短剧专用）_2099703771608735745.json, 视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json, 视频生成/图生视频/H3 动漫转真人+ 指定人物_2093180746625273857.json, 视频生成/图生视频/H3_动作迁移 + 深度视频参考_2090034137221648385.json, 视频生成/图生视频/MiNiMaxH3_六图+三音频参考_2111108549219799042.json, 视频生成/图生视频/MiniMax+H3-二采优化版_2102312716324130817.json, 视频生成/图生视频/MiniMax+H3-多参考生视频-优化版0909_2097580929232498689.json, 视频生成/图生视频/MiniMax+H3-多参考生视频（9图片+3视频+3音频）二采_2109901185510629378.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-_4步加速-一采二采双输出 工作流_2095689178364334082.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-_4步加速-优化版_工作流_2095515551366991874.json, 视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2107829656270499842.json, 视频生成/图生视频/Minimax+H3 Turbo V4 + Realism peole 参考生视频超写实工作流_2109548068579397633.json, 视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102702993295630338.json, 视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102731516450263042.json, 视频生成/图生视频/Minimax-H3多参考双采放大生成视频（Singularity）_2096792911970136066.json, 视频生成/图生视频/MinimaxH3动作迁移-人物替换！完美优化_2110384977471954946.json, 视频生成/图生视频/YZ金鱼-MiniMax H3-多参考生视频-优化版-9图全开_2099011685452439553.json, 视频生成/图生视频/（最强一致性Singularity）Minimax H3多参考双采生视频_2097875587942666242.json, 视频生成/图生视频/（最强一致性Singularity）Minimax H3多参考双采生视频多比例版本_2104119164674859010.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒横屏960分辨率）_2096460541328973825.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒横屏960分辨率）_2097340280092581890.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒竖屏960分辨率）_2096477149321580546.json, 视频生成/文生视频/AIGC特异点-Minimax-H3多参考双采放大生成视频（Singularity）_2096091492187205633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json、视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/文生图/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2097993945132388353.json、视频生成/图生视频/4-9宫图+Minimaxh3导演台（批量短剧专用）_2099703771608735745.json、视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json、视频生成/图生视频/H3 动漫转真人+ 指定人物_2093180746625273857.json、视频生成/图生视频/H3_动作迁移 + 深度视频参考_2090034137221648385.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
@@ -26,15 +26,10 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -42,20 +37,37 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 22/24 个有
-- `RHHiddenNodes` —— 19/24 个有
-- `easy showAnything` —— 17/24 个有
-- `RH_Captioner` —— 7/24 个有
-- `TextConcatenate_UTK` —— 5/24 个有
-- `1hew_AudioDuration` —— 3/24 个有
-- `AudioMerge` —— 3/24 个有
-- `Bjornulf_ShowFloat` —— 3/24 个有
-- `LoadVideoUI` —— 3/24 个有
-- `SaveVideoRGBA` —— 3/24 个有
-- `MiniMaxH3BlockCacheT8` —— 2/24 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/24 个有
-- `PreviewAudio` —— 2/24 个有
-- `RH_Translator` —— 1/24 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 23/24 个有
+- `ComfyMathExpression` —— 22/24 个有
+- `MiniMaxH3ReferenceToVideo` —— 22/24 个有
+- `PrimitiveFloat` —— 22/24 个有
+- `ResolutionSelector` —— 21/24 个有
+- `Text` —— 20/24 个有
+- `LoadAudio` —— 19/24 个有
+- `VHS_LoadVideo` —— 19/24 个有
+- `GetNode` —— 18/24 个有
+- `LTXVConcatAVLatent` —— 18/24 个有
+- `LTXVSeparateAVLatent` —— 18/24 个有
+- `MinimaxH3LatentUpscaler3D` —— 18/24 个有
+- `SetNode` —— 18/24 个有
+- `SplitSigmas` —— 17/24 个有
+- `忽略多组孤海` —— 16/24 个有
+- `easy float` —— 15/24 个有
+- `LoraLoaderModelOnly` —— 14/24 个有
+- `ModelAttentionBackend` —— 10/24 个有
+- `SolAttnMiniMax` —— 9/24 个有
+- `Lora Loader Stack (rgthree)` —— 7/24 个有
+- `Label (rgthree)` —— 4/24 个有
+- `LoraLoaderBypassModelOnly` —— 4/24 个有
+- `PrimitiveStringMultiline` —— 4/24 个有
+- `孤海注释` —— 3/24 个有
+- `INTConstant` —— 2/24 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/24 个有
+- `PlaySound|pysssss` —— 2/24 个有
+- `PrimitiveBoolean` —— 2/24 个有
+- `SFH3MultimodalDirector` —— 2/24 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/24 个有
+- `easy int` —— 1/24 个有
 
 ## 典型参数
 

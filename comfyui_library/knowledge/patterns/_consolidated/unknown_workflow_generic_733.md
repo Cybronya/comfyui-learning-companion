@@ -3,37 +3,38 @@ name: unknown_workflow_generic_733
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.925
-common_nodes: [GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, StringFunction|pysssss, easy imageConcat, easy int, easy positive, easy seed]
+coverage: 0.857
+common_nodes: [AIO_Preprocessor, Gemini3ImageNode, Gemini_Image_API, ImageBatchConcatNode, LoadImage, NanoBananaAIO, NanoBananaBatchProcessor, PreviewImage, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/1980898924502368257.json, 视频生成/图生视频/1980903173223268353.json]
+members: [图片生成/图生图/2067507301606576129.json, 图片生成/图生图/Gemini-全能图片2-Preprocessor_2067507301606576129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_733
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1980898924502368257.json、视频生成/图生视频/1980903173223268353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2067507301606576129.json、图片生成/图生图/Gemini-全能图片2-Preprocessor_2067507301606576129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `AIO_Preprocessor`
+- `Gemini3ImageNode`
+- `Gemini_Image_API`
+- `ImageBatchConcatNode`
 - `LoadImage`
+- `NanoBananaAIO`
+- `NanoBananaBatchProcessor`
 - `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_Nano_Banana2_Gemini31Flash_Batch`
 - `SaveImage`
-- `StringFunction|pysssss`
-- `easy imageConcat`
-- `easy int`
-- `easy positive`
-- `easy seed`
+- `Text`
 
 ## 典型参数
 

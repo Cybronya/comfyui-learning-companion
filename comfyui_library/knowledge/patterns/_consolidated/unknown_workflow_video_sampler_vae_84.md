@@ -3,77 +3,67 @@ name: unknown_workflow_video_sampler_vae_84
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.726833
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, PreviewImage, SamplerCustom, SetNode, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.8365
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2055227152429273089.json, 视频生成/图生视频/2047475119030800385.json, 视频生成/图生视频/2046925023830614018.json, 视频生成/图生视频/2050454214081556481.json, 视频生成/图生视频/2050514926795538434.json, 视频生成/文生视频/LTX2.3_PromptRelay_VLM 高级工作流_2047601506693685249.json]
+members: [视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json, 视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json, 视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json, 视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json, 视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json, 视频生成/图生视频/角色PV动画制作_2096613890909102081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_84
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2055227152429273089.json、视频生成/图生视频/2047475119030800385.json、视频生成/图生视频/2046925023830614018.json、视频生成/图生视频/2050454214081556481.json、视频生成/图生视频/2050514926795538434.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json、视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json、视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json、视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json、视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `PreviewImage`
-- `SamplerCustom`
-- `SetNode`
+- `LoadImage`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVPreprocess` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
 - `LoraLoaderModelOnly` —— 5/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `PathchSageAttentionKJ` —— 4/6 个有
-- `PrimitiveInt` —— 4/6 个有
-- `PromptRelayEncode` —— 4/6 个有
-- `UNETLoader` —— 4/6 个有
-- `CR Float To Integer` —— 2/6 个有
-- `CheckpointLoaderSimple` —— 2/6 个有
-- `INTConstant` —— 2/6 个有
+- `MiniMaxH3ImageToVideo` —— 5/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
+- `UNETLoader` —— 5/6 个有
+- `MiniMaxH3SigmaShift` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `ResolutionSelector` —— 3/6 个有
+- `H3SigmaRefiner` —— 2/6 个有
 - `ImageResizeKJv2` —— 2/6 个有
-- `PrimitiveFloat` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `PromptRelayEncodeTimeline` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `StringReplace` —— 2/6 个有
-- `ttN float` —— 2/6 个有
-- `AILab_QwenVL` —— 1/6 个有
-- `AILab_QwenVL_Advanced` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `MultiImageLoader` —— 1/6 个有
+- `SolAttnPatch` —— 2/6 个有
+- `DiffusionModelLoaderKJ` —— 1/6 个有
+- `JsonExtractString` —— 1/6 个有
+- `MiniMaxChunkFeedForward` —— 1/6 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/6 个有
+- `MiniMaxLowVRAMAttention` —— 1/6 个有
+- `RegexReplace` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `TextGenerate` —— 1/6 个有
+- `ZNGB_ResizeImage` —— 1/6 个有
+- `easy convertAnything` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 377 | 305 - 505 | 6 | 77% |
-| 高度 | 25 | 25 - 50 | 6 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,5 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 377，观测区间 305 - 505，6 个样本
-- 高度 中位数 25，观测区间 25 - 50，6 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

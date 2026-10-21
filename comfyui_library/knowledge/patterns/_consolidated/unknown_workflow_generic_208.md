@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_208
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8644
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.7
+common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
 problems: []
-missing: [CR Text]
-members: [图片生成/图生图/2051210945074081793.json, 图片生成/图生图/2063185430509608961.json, 图片生成/图生图/2063196272881922050.json, 图片生成/图生图/2080574005882482689.json, 图片生成/图生图/2099407411814690818.json]
+missing: []
+members: [视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json, 视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json, 视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json, 视频生成/图生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json, 视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json, 视频生成/文生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_208
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2051210945074081793.json、图片生成/图生图/2063185430509608961.json、图片生成/图生图/2063196272881922050.json、图片生成/图生图/2080574005882482689.json、图片生成/图生图/2099407411814690818.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json、视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json、视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json、视频生成/图生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json、视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `LoadVideo`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `孤海注释` —— 4/6 个有
+- `JjkText` —— 3/6 个有
+- `PlaySound|pysssss` —— 3/6 个有
+- `Text` —— 1/6 个有
+- `easy saveText` —— 1/6 个有
 
 ## 典型参数
 
@@ -42,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

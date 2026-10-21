@@ -3,40 +3,35 @@ name: unknown_workflow_generic_155
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.939714
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 0.959143
+common_nodes: [CreateVideo, LoadAudio, RH_HeyGemNode, SaveVideo, VHS_LoadVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json, 音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json, 音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json, 音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json, 音频生成/音频生成/🦖多角色对话配音（自定义音色）_2018213546974253057.json]
+members: [数字人/数字人/HeyGem口播_2089232511313465346.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json, 视频生成/图生视频/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2090756294016856066.json, 视频生成/图生视频/1927204893608804354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_155
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json、音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json、音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json、音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/HeyGem口播_2089232511313465346.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
+- `CreateVideo`
+- `LoadAudio`
+- `RH_HeyGemNode`
+- `SaveVideo`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `VRAMReserver` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `LoadAudio` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `WhisperSTT` —— 2/7 个有
+- `AudioCrop` —— 4/7 个有
+- `PreviewVideoNode` —— 1/7 个有
 
 ## 典型参数
 

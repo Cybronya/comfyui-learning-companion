@@ -3,34 +3,33 @@ name: unknown_workflow_generic_779
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [IndexTTS2_MultiTalk, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 1
+common_nodes: [RHSettingsNode, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/A-19 IndexTTS2 文生音频 多人配音 最多4人 各自音色_2107503689714978817.json, 音频生成/音频生成/Easy IndexTTS2多角色对话-双人配音工作流_2094746795925659650.json]
+members: [图片生成/文生图/RH 全能图片G-2.0-文生图-低价渠道版_2068881078068269058.json, 图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_779
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/A-19 IndexTTS2 文生音频 多人配音 最多4人 各自音色_2107503689714978817.json、音频生成/音频生成/Easy IndexTTS2多角色对话-双人配音工作流_2094746795925659650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RH 全能图片G-2.0-文生图-低价渠道版_2068881078068269058.json、图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2_MultiTalk`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `RHSettingsNode`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_ModelManager` —— 1/2 个有
-- `IndexTTS2_SpeakerEmotionConfig` —— 1/2 个有
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `RH_RhartImageNG31FlashTextToImage` —— 1/2 个有
 
 ## 典型参数
 

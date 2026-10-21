@@ -1,81 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_43
 type: Unknown Workflow
-frequency: 21
+frequency: 22
 level: moderate
-coverage: 0.466905
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.926818
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, RunningHub Deepcleaner]
-members: [图片生成/图生图/2087902401587138562.json, 数字人/数字人/minimax-h3-多参考口播-z_2102289509139439617.json, 数字人/数字人/video3 自用_2089588273210544130.json, 数字人/数字人/优化版本新版口播_2108152027493785602.json, 数字人/数字人/新版本口播_2107771154403520513.json, 视频生成/图生视频/720P-MiniMax H3超级多合一工作流-官方版_2094765092280819714.json, 视频生成/图生视频/API用-多参考-MiniMax H3工作流_2087940945802252290.json, 视频生成/图生视频/H3全能参考+二采放大8898_2089605189635502082.json, 视频生成/图生视频/MINIMAX-H3 全能参考去油防脸崩工作流_2086816639672213505.json, 视频生成/图生视频/MiniMax H3 多参2采8步加速_2091503467927007234.json, 视频生成/图生视频/MiniMax H3-TVC成片（15秒视频5毛成本吊打官方版本）_2087056799617863682.json, 视频生成/图生视频/MiniMax H3多图参考视频生成工作流双采去水印版_2093297157603414018.json, 视频生成/图生视频/MiniMax H3超级多合一工作流-官方版_2086606573383806978.json, 视频生成/图生视频/MiniMax H3超级多合一工作流-官方版james003_4K###_2110535182506872833.json, 视频生成/图生视频/MiniMax_H3超级多合一工作流-官方版_2099787630182486018.json, 视频生成/图生视频/MiniMax_H3超级多合一工作流-官方版_2100043265570590722.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2094423512034402306.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2094432563254358018.json, 视频生成/图生视频/YZ金鱼大佬改自用_2092658999987621890.json, 视频生成/文生视频/GS高尚-MiniMax H3多参二次采样放大工作流_2086726756911898625.json, 视频生成/文生视频/MiniMax H3 多图参考双采短剧视频生成工作流_2104589979459612673.json]
+missing: []
+members: [图片生成/文生图/图生视频，可编辑提示词_2058044967960010754.json, 视频生成/图生视频/1985933619749367810.json, 视频生成/图生视频/1958522667143950337.json, 视频生成/图生视频/1958523149342162945.json, 视频生成/图生视频/2053339197372674049.json, 视频生成/图生视频/2052258401169752065.json, 视频生成/图生视频/2070131687614406658.json, 视频生成/图生视频/2075910446967779329.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2083148321954291714.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2093644198363881473.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2093676510929575938.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2101617649074659330.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2101629864922140674.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2105246871684993026.json, 视频生成/图生视频/2052185338583498754.json, 视频生成/图生视频/2057694453565054977.json, 视频生成/图生视频/2045576012469112833.json, 视频生成/图生视频/2056262316534091777.json, 视频生成/图生视频/2056538120484638722.json, 视频生成/图生视频/电商服装展示_模特演示视频-wan2.2_2096031121212530690.json, 视频生成/图生视频/2052610922312679426.json, 视频生成/文生视频/电商服装展示_模特演示视频-wan2.2_2051570109155688449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_43
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/2087902401587138562.json、数字人/数字人/minimax-h3-多参考口播-z_2102289509139439617.json、数字人/数字人/video3 自用_2089588273210544130.json、数字人/数字人/优化版本新版口播_2108152027493785602.json、数字人/数字人/新版本口播_2107771154403520513.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/图生视频，可编辑提示词_2058044967960010754.json、视频生成/图生视频/1985933619749367810.json、视频生成/图生视频/1958522667143950337.json、视频生成/图生视频/1958523149342162945.json、视频生成/图生视频/2053339197372674049.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 22 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
-- `KSamplerSelect`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `Text`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 20/21 个有
-- `VHS_LoadVideo` —— 20/21 个有
-- `Fast Groups Bypasser (rgthree)` —— 19/21 个有
-- `PreviewImage` —— 19/21 个有
-- `ImageResizeKJv2` —— 18/21 个有
-- `VAEEncode` —— 18/21 个有
-- `VAEEncodeAudio` —— 18/21 个有
-- `VAEDecodeAudio` —— 17/21 个有
-- `ModelAttentionBackend` —— 14/21 个有
-- `MiniMaxH3ImageToVideo` —— 12/21 个有
-- `LTXVConcatAVLatent` —— 11/21 个有
-- `easy cleanGpuUsed` —— 11/21 个有
-- `PT_H3ConcatAVLatent` —— 7/21 个有
-- `RunningHub Deepcleaner` —— 7/21 个有
-- `孤海注释` —— 5/21 个有
-- `MiniMaxH3AVDecodeT8` —— 4/21 个有
-- `EmptyImage` —— 3/21 个有
-- `MiniMaxH3AddGuide` —— 3/21 个有
-- `SaveVideo` —— 2/21 个有
-- `Any Switch (rgthree)` —— 1/21 个有
-- `CRTFirstLastFrameSelector` —— 1/21 个有
-- `Fast Groups Muter (rgthree)` —— 1/21 个有
-- `FlashVSRNode` —— 1/21 个有
-- `PathchSageAttentionKJ` —— 1/21 个有
-- `TrimAudioDuration` —— 1/21 个有
-- `XB_VideoLoader` —— 1/21 个有
+- `Int` —— 21/22 个有
+- `PrimitiveInt` —— 21/22 个有
+- `WanImageToVideo` —— 21/22 个有
+- `INTConstant` —— 20/22 个有
+- `DownloadAndLoadGIMMVFIModel` —— 19/22 个有
+- `GIMMVFI_interpolate` —— 19/22 个有
+- `ImageConcatMulti` —— 19/22 个有
+- `PainterVRAM` —— 19/22 个有
+- `SimpleMath+` —— 19/22 个有
+- `ModelPatchTorchSettings` —— 3/22 个有
+- `easy cleanGpuUsed` —— 3/22 个有
+- `JWFloat` —— 2/22 个有
+- `JWInteger` —— 2/22 个有
+- `RIFE VFI` —— 2/22 个有
+- `UnetLoaderGGUF` —— 2/22 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/22 个有
+- `MathExpression|pysssss` —— 1/22 个有
+- `WanFirstLastFrameToVideo` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 22 | 82% |
+| Prompt 约束强度(CFG) | 12 | 4 - 20 | 22 | 70% |
+| 采样算法 | 1 | 0 - 1 | 22 | 78% |
+| 调度器 | euler | - | 22 | 100% |
+| 重绘幅度 | simple | - | 22 | 95% |
 
 ## 常见问题
 
@@ -83,4 +72,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、RunningHub Deepcleaner
+- 采样步数 最常用 fixed，22 个样本，一致性 82%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 4 - 20，22 个样本
+- 采样算法 中位数 1，观测区间 0 - 1，22 个样本
+- 调度器 最常用 euler，22 个样本，一致性 100%
+- 重绘幅度 最常用 simple，22 个样本，一致性 95%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

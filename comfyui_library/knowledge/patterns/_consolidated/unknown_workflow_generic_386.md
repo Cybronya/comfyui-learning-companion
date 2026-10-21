@@ -3,36 +3,34 @@ name: unknown_workflow_generic_386
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8855
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, RunningHub_VoxCPM_MultiSpeaker_ListReference, SaveAudio]
+coverage: 0.5845
+common_nodes: [JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 音色生成加克隆_2062446997575127041.json, 音频生成/音频生成/VoxCPM2_2046154672154611714.json, 音频生成/音频生成/VoxCPM2_声音复刻、多人对话_2046544038047784961.json, 音频生成/音频生成/VoxCPM2语音克隆音色设计全能新王者_2046583137286758402.json]
+members: [数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json, 音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json, 音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json, 音频生成/音频生成/电商定制声音风格_2014869455171489794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_386
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 音色生成加克隆_2062446997575127041.json、音频生成/音频生成/VoxCPM2_2046154672154611714.json、音频生成/音频生成/VoxCPM2_声音复刻、多人对话_2046544038047784961.json、音频生成/音频生成/VoxCPM2语音克隆音色设计全能新王者_2046583137286758402.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json、音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json、音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json、音频生成/音频生成/电商定制声音风格_2014869455171489794.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference`
+- `JjkText`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/4 个有
-- `Text Multiline` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

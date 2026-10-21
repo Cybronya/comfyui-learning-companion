@@ -3,38 +3,33 @@ name: unknown_workflow_video_99
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6145
-common_nodes: [CubeRotationNode, Int, LoadImage, PrimitiveFloat, Reroute (rgthree), VHS_VideoCombine, 孤海-取色器]
+coverage: 1
+common_nodes: [CR Text, LoadImage, RH_RhartVideoGOfficialImageToVideo, SaveVideo, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
 problems: []
 missing: []
-members: [视频生成/图生视频/1978743150502105089.json, 视频生成/图生视频/1979076576564383745.json]
+members: [视频生成/图生视频/2062059083481567234.json, 视频生成/图生视频/2066345476372623360.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_99
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1978743150502105089.json、视频生成/图生视频/1979076576564383745.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2062059083481567234.json、视频生成/图生视频/2066345476372623360.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CubeRotationNode`
-- `Int`
+- `CR Text`
 - `LoadImage`
-- `PrimitiveFloat`
-- `Reroute (rgthree)`
+- `RH_RhartVideoGOfficialImageToVideo`
+- `SaveVideo`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `孤海-取色器`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Image Size` —— 1/2 个有
-- `ImageCombine` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
+- `VHS_VideoInfoSource`
 
 ## 典型参数
 

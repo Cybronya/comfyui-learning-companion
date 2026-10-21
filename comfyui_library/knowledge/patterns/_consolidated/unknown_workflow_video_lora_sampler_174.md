@@ -1,57 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_174
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.746273
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.8567
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, ImageResize+, JWInteger, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json, 视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json, 视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json, 视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json, 视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json, 视频生成/文生视频/MinimaxH3 全功能加速工作流_2086320789044944897.json, 视频生成/文生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2087034230105792514.json, 视频生成/文生视频/【CommintAI】MINIMAX H3 工作流合集_2085882928617316354.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3工作流合集_2084259935344480258.json, 视频生成/文生视频/【南可nkss】MINIMAX-H3工作流合集_2108370588418002945.json, 视频生成/文生视频/测试使用_2094631681096507394.json]
+missing: [LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, CR Prompt Text, ImageResize+]
+members: [图片生成/文生图/1980937502708158465.json, 视频生成/图生视频/1952002049745563650.json, 视频生成/图生视频/1956601025757151233.json, 视频生成/图生视频/1956583088841261058.json, 视频生成/图生视频/1952012888850509826.json, 视频生成/图生视频/1996851492734869506.json, 视频生成/图生视频/1981935370910744577.json, 视频生成/图生视频/1952320153679794177.json, 视频生成/图生视频/1978297110992969730.json, 视频生成/图生视频/1963913944572248066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_174
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json、视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json、视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json、视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json、视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/1980937502708158465.json、视频生成/图生视频/1952002049745563650.json、视频生成/图生视频/1956601025757151233.json、视频生成/图生视频/1956583088841261058.json、视频生成/图生视频/1952012888850509826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 10 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `ImageResize+`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 10/11 个有
-- `LoadImage` —— 8/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
-- `LoadAudio` —— 6/11 个有
-- `UniBlockSwap` —— 6/11 个有
-- `RHLLMChatNode` —— 2/11 个有
-- `1hew_LoadVideoToImage` —— 1/11 个有
-- `JjkText` —— 1/11 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/11 个有
-- `ShowText|fofo` —— 1/11 个有
-- `easy showAnything` —— 1/11 个有
-- `孤海注释` —— 1/11 个有
+- `AddLabel` —— 6/10 个有
+- `EmptyImage` —— 6/10 个有
+- `GetImageSizeAndCount` —— 6/10 个有
+- `ImageConcatMulti` —— 6/10 个有
+- `SimpleMath+` —— 3/10 个有
+- `easy cleanGpuUsed` —— 3/10 个有
+- `GetNode` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `PrimitiveBoolean` —— 1/10 个有
+- `easy ifElse` —— 1/10 个有
+- `easy int` —— 1/10 个有
 
 ## 典型参数
 
@@ -63,4 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM、SimpleMath+、easy cleanGpuUsed、CR Prompt Text、ImageResize+

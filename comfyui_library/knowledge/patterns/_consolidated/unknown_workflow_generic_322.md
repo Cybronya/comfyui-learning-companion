@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_322
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.72925
-common_nodes: [JjkText, SaveVideo]
+coverage: 0.9692
+common_nodes: [IndexTTS2Run, LoadAudio, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/低价版seedance2.5图生视频_2085952821035356161.json, 视频生成/图生视频/低价版seedance2.5图生视频_2087376823624757250.json, 视频生成/图生视频/2036325097518145537.json, 视频生成/文生视频/即梦视频2.0全能视频-文生视频超能视频2.0_2036329132295987202.json]
+members: [音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json, 音频生成/音频生成/双人对话语音克隆_2063192858802343937.json, 音频生成/音频生成/声音克隆_1993713525206040578.json, 音频生成/音频生成/生成配音-情绪_2039538988712726529.json, 音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_322
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/低价版seedance2.5图生视频_2085952821035356161.json、视频生成/图生视频/低价版seedance2.5图生视频_2087376823624757250.json、视频生成/图生视频/2036325097518145537.json、视频生成/文生视频/即梦视频2.0全能视频-文生视频超能视频2.0_2036329132295987202.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json、音频生成/音频生成/双人对话语音克隆_2063192858802343937.json、音频生成/音频生成/声音克隆_1993713525206040578.json、音频生成/音频生成/生成配音-情绪_2039538988712726529.json、音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 2/4 个有
-- `RH_CinematicVideoGenerator` —— 2/4 个有
+- `PreviewAudio` —— 4/5 个有
+- `SaveAudio` —— 3/5 个有
+- `SaveAudioMP3` —— 2/5 个有
 
 ## 典型参数
 

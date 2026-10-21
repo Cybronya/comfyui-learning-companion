@@ -3,71 +3,85 @@ name: unknown_workflow_video_lora_sampler_62
 type: Unknown Workflow
 frequency: 18
 level: moderate
-coverage: 0.664111
-common_nodes: [AudioSeparation, BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, DF_Int_to_Float, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_LoadAudioUpload, VHS_VideoCombine]
+coverage: 0.973444
+common_nodes: [AudioSeparation, HuMoEmbeds, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104530829451026433.json, 数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104531808976199681.json, 数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）艾橘溪_2100947063335899137.json, 数字人/数字人/kplei_scail.json_2109885347109883905.json, 视频生成/图生视频/H3 音频驱动 音乐数字人H3 Audio-Driven Music Avatars_2101838568909004801.json, 视频生成/图生视频/H3无限分段长视频 Music+Digital+Avatars+_2110904034117906434.json, 视频生成/图生视频/Minimax H3单图数字人（selflift无限分段长视频）2609_2106034159591444481.json, 视频生成/图生视频/Minimax-H3音乐数字人（无限分段长视频）_2101606771327594497.json, 视频生成/图生视频/Minimax-H3音乐数字人（无限分段长视频）_2101634155602866178.json, 视频生成/图生视频/MinimaxH3-音乐数字人【无限分段长视频】_2108721750065369089.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频_2110651688527941633.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频_2111370884236791810.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）-修复报错_2108876273467617281.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）_2102314156711038978.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）_2105100377552150529.json, 视频生成/图生视频/MinimaxH3音乐数字人（无限分段长视频）艾橘溪_2100947063335899137.json, 视频生成/图生视频/无限分段长视频 H3 Music Digital Avatars_2108376326993432578.json, 视频生成/文生视频/MinimaxH3音乐数字人（无限分段长视频）-修复报错_2108758135392530433.json]
+members: [图片生成/文生图/ai MV应用版（30S福音）_2000822453771399170.json, 视频生成/图生视频/2030181913666785281.json, 视频生成/图生视频/2031536388583202818.json, 视频生成/图生视频/1973740275090763777.json, 视频生成/图生视频/1969802648167849986.json, 视频生成/图生视频/1968324192087232514.json, 视频生成/图生视频/1968112609591459841.json, 视频生成/图生视频/1966919494457233409.json, 视频生成/图生视频/1973059244465500161.json, 视频生成/图生视频/2033171510558461953.json, 视频生成/图生视频/2031295926127566850.json, 视频生成/图生视频/2026262067400941570.json, 视频生成/图生视频/2022664705512316929.json, 视频生成/图生视频/2034600586854801410.json, 视频生成/图生视频/2041512808247988226.json, 视频生成/图生视频/2027669520621510658.json, 视频生成/图生视频/2046569919550066689.json, 视频生成/文生视频/双图参考生MTV三分镜视频 Humo+Infinite talk_2048690659820838913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_62
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104530829451026433.json、数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）_2104531808976199681.json、数字人/数字人/MinimaxH3音乐数字人（无限分段长视频）艾橘溪_2100947063335899137.json、数字人/数字人/kplei_scail.json_2109885347109883905.json、视频生成/图生视频/H3 音频驱动 音乐数字人H3 Audio-Driven Music Avatars_2101838568909004801.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/ai MV应用版（30S福音）_2000822453771399170.json、视频生成/图生视频/2030181913666785281.json、视频生成/图生视频/2031536388583202818.json、视频生成/图生视频/1973740275090763777.json、视频生成/图生视频/1969802648167849986.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
 - `AudioSeparation`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `DF_Int_to_Float`
-- `GetNode`
+- `HuMoEmbeds`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadAudioUpload`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Compare` —— 15/18 个有
-- `Int` —— 15/18 个有
-- `InversionDemoLazySwitch` —— 15/18 个有
-- `ModelPreviewOverrideKJ` —— 15/18 个有
-- `PreviewImage` —— 15/18 个有
-- `PreviewAudio` —— 14/18 个有
-- `LoadAudio` —— 3/18 个有
-- `PreviewAny` —— 3/18 个有
-- `孤海注释` —— 2/18 个有
-- `FlashVSRNode` —— 1/18 个有
-- `JjkText` —— 1/18 个有
-- `LayerUtility: TextJoin` —— 1/18 个有
+- `Display Int (rgthree)` —— 17/18 个有
+- `ImageBatchMulti` —— 17/18 个有
+- `MultiTalkModelLoader` —— 17/18 个有
+- `SimpleMath+` —— 17/18 个有
+- `SoundFlow_GetLength` —— 17/18 个有
+- `SoundFlow_TrimAudio` —— 17/18 个有
+- `ToInt` —— 17/18 个有
+- `easy int` —— 17/18 个有
+- `ImageFromBatch` —— 16/18 个有
+- `MultiTalkWav2VecEmbeds` —— 16/18 个有
+- `WanVideoCombineEmbeds` —— 16/18 个有
+- `WanVideoImageToVideoMultiTalk` —— 16/18 个有
+- `Wav2VecModelLoader` —— 16/18 个有
+- `easy imageRemBg` —— 16/18 个有
+- `PreviewAudio` —— 15/18 个有
+- `PreviewImage` —— 13/18 个有
+- `RecordAudio` —— 13/18 个有
+- `ImageAddMulti` —— 10/18 个有
+- `ImageConcanate` —— 9/18 个有
+- `AudioConcat` —— 8/18 个有
+- `CR Prompt Text` —— 2/18 个有
+- `CR Text` —— 2/18 个有
+- `CreateCFGScheduleFloatList` —— 2/18 个有
+- `PrimitiveFloat` —— 2/18 个有
+- `Qwen3TTSModelLoader` —— 2/18 个有
+- `Qwen3TTSVoiceDesign` —— 2/18 个有
+- `SaveAudio` —— 2/18 个有
+- `TextInput_` —— 2/18 个有
+- `AudioCrop` —— 1/18 个有
+- `AudioCropProcessUTK` —— 1/18 个有
+- `CM_FloatUnaryOperation` —— 1/18 个有
+- `JWStringGetLine` —— 1/18 个有
+- `JWStringSplit` —— 1/18 个有
+- `JWStringToFloat` —— 1/18 个有
+- `MathExpression|pysssss` —— 1/18 个有
+- `PrimitiveString` —— 1/18 个有
+- `StringSubstring` —— 1/18 个有
+- `TextBoxMira` —— 1/18 个有
+- `TextBoxNode_UTK` —— 1/18 个有
+- `easy showAnything` —— 1/18 个有
 
 ## 典型参数
 

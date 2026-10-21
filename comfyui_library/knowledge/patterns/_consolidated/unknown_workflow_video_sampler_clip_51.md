@@ -3,80 +3,66 @@ name: unknown_workflow_video_sampler_clip_51
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.7998
-common_nodes: [CLIPLoader, CLIPTextEncode, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
-problems: []
-missing: []
-members: [视频生成/图生视频/2010412985205923842.json, 视频生成/图生视频/2010413439973330946.json, 视频生成/图生视频/2010348801411780609.json, 视频生成/图生视频/2010386931812667393.json, 视频生成/图生视频/2013251284761059330.json, 视频生成/图生视频/2023419797345669121.json, 视频生成/图生视频/2023632584692994049.json, 视频生成/图生视频/2080553179648978945.json, 视频生成/图生视频/2025278485094211586.json, 视频生成/图生视频/2008918546440523778.json]
+coverage: 0.8262
+common_nodes: [CLIPTextEncode, INTConstant, KSampler, LoadImage, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+problems: [Steps较低可能导致细节不足]
+missing: [SimpleMath+]
+members: [视频生成/文生视频/1979091835861766145.json, 视频生成/文生视频/2074055249905860608.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046504485811396609.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046752274625597441.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046762436140736513.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2044790035236528130.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2048651987276800002.json, 视频生成/文生视频/文生视频-AIO-MegaV7_2041408782072287234.json, 视频生成/文生视频/1968902178624741378.json, 视频生成/文生视频/文生视频千里江山图_2048964410516967425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_51
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2010412985205923842.json、视频生成/图生视频/2010413439973330946.json、视频生成/图生视频/2010348801411780609.json、视频生成/图生视频/2010386931812667393.json、视频生成/图生视频/2013251284761059330.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/1979091835861766145.json、视频生成/文生视频/2074055249905860608.json、视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046504485811396609.json、视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046752274625597441.json、视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046762436140736513.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `INTConstant`
+- `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchTorchSettings` —— 9/10 个有
-- `PathchSageAttentionKJ` —— 9/10 个有
-- `SimpleMath+` —— 8/10 个有
-- `PainterI2V` —— 7/10 个有
-- `INTConstant` —— 6/10 个有
-- `JoinStrings` —— 6/10 个有
-- `Qwen3_VQA` —— 6/10 个有
-- `RIFE VFI` —— 6/10 个有
-- `ShowText|pysssss` —— 6/10 个有
-- `TextInput_` —— 6/10 个有
-- `ImageConcatMulti` —— 5/10 个有
-- `CR Text` —— 4/10 个有
-- `PrimitiveString` —— 4/10 个有
-- `RHHiddenNodes` —— 4/10 个有
-- `WanFirstLastFrameToVideo` —— 3/10 个有
-- `CustomAddLabel` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `GetImagesFromBatchIndexed` —— 1/10 个有
-- `LoraLoaderModelOnly` —— 1/10 个有
+- `CheckpointLoaderSimple` —— 8/10 个有
+- `ModelSamplingSD3` —— 8/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `SimpleMath+` —— 7/10 个有
+- `CM_IntToFloat` —— 5/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
+- `RHHiddenNodes` —— 2/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 10 | 80% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 10 | 80% |
-| 采样算法 | 1 | 1 - 1 | 10 | 100% |
-| 调度器 | euler | - | 10 | 100% |
-| 重绘幅度 | simple | - | 10 | 70% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | ipndm | - | 10 | 60% |
+| 调度器 | beta | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，10 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，10 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，10 个样本，一致性 100%
-- 重绘幅度 最常用 simple，10 个样本，一致性 70%
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 ipndm，10 个样本，一致性 60%
+- 调度器 最常用 beta，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+

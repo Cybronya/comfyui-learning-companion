@@ -3,32 +3,31 @@ name: unknown_workflow_generic_677
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [JWFloat, LoadImage, SaveImage, TT_img_dec, TT_img_enc, VHS_LoadVideo]
+coverage: 0.7085
+common_nodes: [ByteDanceSeedAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/1963945824503873537.json, 视频生成/文生视频/1963945824503873537.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_t2a.json, comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_ta2a.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_677
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1963945824503873537.json、视频生成/文生视频/1963945824503873537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_t2a.json、comfyui-workflow-templates-json/api_bytedance_seed_audio1_0_ta2a.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JWFloat`
-- `LoadImage`
-- `SaveImage`
-- `TT_img_dec`
-- `TT_img_enc`
-- `VHS_LoadVideo`
+- `ByteDanceSeedAudio`
+- `SaveAudioAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,49 +3,50 @@ name: unknown_workflow_video_lora_sampler_833
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.901
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.9145
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, FL_KsamplerPlus, FL_PathAnimator, GetImageSizeAndCount, ImageResizeKJ, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, TorchCompileModelWanVideo, UNETLoader, VAELoader, VHS_DuplicateImages, VHS_VideoCombine, WanTrackToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949733818894295041.json, 视频生成/图生视频/1949706641991192577.json]
+members: [视频生成/图生视频/1929052305113432066.json, 视频生成/图生视频/2039588649964150785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_833
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949733818894295041.json、视频生成/图生视频/1949706641991192577.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1929052305113432066.json、视频生成/图生视频/2039588649964150785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `FL_KsamplerPlus`
+- `FL_PathAnimator`
+- `GetImageSizeAndCount`
+- `ImageResizeKJ`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `TorchCompileModelWanVideo`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_DuplicateImages`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVAELoader`
+- `WanTrackToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `AudioEncoderEncode` —— 1/2 个有
+- `AudioEncoderLoader` —— 1/2 个有
+- `WanSoundImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

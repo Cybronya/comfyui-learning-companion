@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_checkpoint_4
 type: Text To Image
-frequency: 11
+frequency: 19
 level: moderate
-coverage: 0.748909
+coverage: 0.988158
 common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, SaveImage, VAEDecode]
-problems: [Steps较低可能导致细节不足]
-missing: []
-members: [comfyui-workflow-templates-json/image_sdxl_simple.json, comfyui-workflow-templates-json/sdxl_revision_text_prompts.json, sd1.5/basic.json, 图片生成/文生图/1951180182470242305.json, 图片生成/文生图/1958497485645836289.json, 图片生成/文生图/1961283334359990274.json, 图片生成/文生图/1962370527010623489.json, 图片生成/文生图/1979111789180915714.json, 图片生成/文生图/1979377865538048002.json, 图片生成/文生图/1979390293403406337.json, 图片生成/文生图/1979445307241041922.json]
+problems: []
+missing: [easy cleanGpuUsed, easy positive]
+members: [图片生成/文生图/1955202232166727682.json, 图片生成/文生图/1955947044106108930.json, 图片生成/文生图/black_2069832138584842241.json, 图片生成/文生图/cat_2069832508115607553.json, 图片生成/文生图/girl_2069831968304488450.json, 图片生成/文生图/grass_2069806965517283330.json, 图片生成/文生图/ground_2069833349966942209.json, 图片生成/文生图/ip形象_2064388541148385281.json, 图片生成/文生图/创新艺术_2064382794180161538.json, 图片生成/文生图/创新艺术_2069077816934748161.json, 图片生成/文生图/文生图2_2001532648583491585.json, 图片生成/文生图/星河_2064389839939792898.json, 图片生成/文生图/水墨_2064375871598845954.json, 图片生成/文生图/白绿插画_2064386951142268930.json, 图片生成/文生图/白色新式水墨_2064384907228573697.json, 图片生成/文生图/白金炫彩_2064380939660259329.json, 图片生成/文生图/红色_2064377423529074690.json, 图片生成/文生图/绿色_2064378897935978498.json, 视频生成/文生视频/幽蓝_2064370709702467586.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_checkpoint_4
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（comfyui-workflow-templates-json/image_sdxl_simple.json、comfyui-workflow-templates-json/sdxl_revision_text_prompts.json、sd1.5/basic.json、图片生成/文生图/1951180182470242305.json、图片生成/文生图/1958497485645836289.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/文生图/1955202232166727682.json、图片生成/文生图/1955947044106108930.json、图片生成/文生图/black_2069832138584842241.json、图片生成/文生图/cat_2069832508115607553.json、图片生成/文生图/girl_2069831968304488450.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `EmptyLatentImage`
@@ -31,35 +31,40 @@ source: knowledge_consolidation
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/11 个有
-- `CLIPVisionEncode` —— 1/11 个有
-- `CLIPVisionLoader` —— 1/11 个有
-- `unCLIPConditioning` —— 1/11 个有
+- `LoraLoader` —— 18/19 个有
+- `LoraLoader|pysssss` —— 11/19 个有
+- `easy cleanGpuUsed` —— 2/19 个有
+- `ImpactWildcardProcessor` —— 1/19 个有
+- `TT_img_enc` —— 1/19 个有
+- `easy positive` —— 1/19 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 4 - 35 | 11 | 67% |
-| Prompt 约束强度(CFG) | 7 | 1.5 - 8 | 11 | 66% |
-| 采样算法 | dpmpp_2m_sde | - | 11 | 36% |
-| 调度器 | karras | - | 11 | 55% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 768 | 512 - 1024 | 11 | 73% |
-| 高度 | 768 | 512 - 1216 | 11 | 70% |
+| 采样步数 | 20 | 20 - 25 | 19 | 94% |
+| Prompt 约束强度(CFG) | 8 | 7 - 8 | 19 | 97% |
+| 采样算法 | dpmpp_2m | - | 19 | 84% |
+| 调度器 | karras | - | 19 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
+| LoRA 模型强度 | 0.155 | 0.09 - 0.9 | 18 | 13% |
+| LoRA 文本强度 | 0.155 | 0.07 - 0.9 | 18 | 3% |
+| 宽度 | 1288 | 512 - 1288 | 19 | 83% |
+| 高度 | 720 | 720 - 1024 | 19 | 88% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 4 - 35，11 个样本
-- Prompt 约束强度(CFG) 中位数 7，观测区间 1.5 - 8，11 个样本
-- 采样算法 最常用 dpmpp_2m_sde，11 个样本，一致性 36%
-- 调度器 最常用 karras，11 个样本，一致性 55%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 512 - 1024，11 个样本
-- 高度 中位数 768，观测区间 512 - 1216，11 个样本
+- 采样步数 中位数 20，观测区间 20 - 25，19 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 8，观测区间 7 - 8，19 个样本，取值集中（一致性 97%）
+- 采样算法 最常用 dpmpp_2m，19 个样本，一致性 84%
+- 调度器 最常用 karras，19 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.155，观测区间 0.09 - 0.9，18 个样本，取值分散，一致性仅 13%
+- LoRA 文本强度 中位数 0.155，观测区间 0.07 - 0.9，18 个样本，取值分散，一致性仅 3%
+- 宽度 中位数 1288，观测区间 512 - 1288，19 个样本，取值集中（一致性 83%）
+- 高度 中位数 720，观测区间 720 - 1024，19 个样本，取值集中（一致性 88%）
+- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed、easy positive

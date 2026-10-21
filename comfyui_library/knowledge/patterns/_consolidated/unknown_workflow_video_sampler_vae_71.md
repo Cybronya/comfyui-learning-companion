@@ -3,68 +3,68 @@ name: unknown_workflow_video_sampler_vae_71
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.777143
-common_nodes: [ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.679
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935507618146484226.json, 视频生成/图生视频/1935607588300193793.json, 视频生成/图生视频/1935586332242530306.json, 视频生成/图生视频/2055192187125682177.json, 视频生成/图生视频/1935509475614707714.json, 视频生成/图生视频/1934523459177250818.json, 视频生成/文生视频/1938855885659627522.json]
+members: [视频生成/图生视频/1919743926129852417.json, 视频生成/图生视频/1916922893887016961.json, 视频生成/图生视频/1917000103838547969.json, 视频生成/图生视频/1948590349152321538.json, 视频生成/图生视频/1927647202212986882.json, 视频生成/图生视频/1920720222377152514.json, 视频生成/文生视频/阿里巴巴最新免费数字人 Fantasy Talking for comfyUI工作流_1917812826264502273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_71
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1935507618146484226.json、视频生成/图生视频/1935607588300193793.json、视频生成/图生视频/1935586332242530306.json、视频生成/图生视频/2055192187125682177.json、视频生成/图生视频/1935509475614707714.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1919743926129852417.json、视频生成/图生视频/1916922893887016961.json、视频生成/图生视频/1917000103838547969.json、视频生成/图生视频/1948590349152321538.json、视频生成/图生视频/1927647202212986882.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `ImageConcatMulti`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `FantasyTalkingModelLoader`
+- `FantasyTalkingWav2VecEmbeds`
+- `INTConstant`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 6/7 个有
-- `CR Text` —— 6/7 个有
-- `GetNode` —— 6/7 个有
-- `ImageResizeKJv2` —— 6/7 个有
-- `JWInteger` —— 6/7 个有
-- `MathExpression|pysssss` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `WanVideoClipVisionEncode` —— 6/7 个有
-- `WanVideoExperimentalArgs` —— 6/7 个有
-- `WanVideoImageToVideoEncode` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoSLG` —— 6/7 个有
+- `ImageResizeKJ` —— 6/7 个有
 - `WanVideoTorchCompileSettings` —— 6/7 个有
-- `easy imageRemBg` —— 6/7 个有
-- `GetImageSizeAndCount` —— 4/7 个有
-- `ImageConcanate` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `AddLabel` —— 2/7 个有
-- `EmptyImage` —— 2/7 个有
-- `ImageResizeKJ` —— 2/7 个有
-- `easy imageScaleDownToSize` —— 2/7 个有
-- `ImageBatchMulti` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `InspyrenetRembg` —— 1/7 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/7 个有
-- `PDIMAGE_LongerSize` —— 1/7 个有
+- `WanVideoVRAMManagement` —— 6/7 个有
+- `CreateCFGScheduleFloatList` —— 5/7 个有
+- `GetNode` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `SetNode` —— 5/7 个有
+- `WanVideoContextOptions` —— 2/7 个有
+- `easy clearCacheAll` —— 2/7 个有
+- `AudioCrop` —— 1/7 个有
+- `CLIPLoader` —— 1/7 个有
+- `CLIPTextEncode` —— 1/7 个有
+- `CR Integer To String` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `LoadImageFromUrl` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `PreviewAudio` —— 1/7 个有
+- `SaveAudio` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 - `WanVideoEnhanceAVideo` —— 1/7 个有
-- `WanVideoVACEEncode` —— 1/7 个有
+- `WanVideoTextEmbedBridge` —— 1/7 个有
 
 ## 典型参数
 

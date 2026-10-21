@@ -3,32 +3,35 @@ name: unknown_workflow_generic_767
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, RH_Sora2_T2V_PRO, SaveVideo]
+coverage: 0.7445
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S文生视频丨Pro版最新模型丨10秒高清直出丨无水印！！！！_1982697386898276354.json, 视频生成/文生视频/高清无水印25秒文生嗦罗2pro_2014333182442737666.json]
+members: [图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-官方稳定版G2_2070142049076211713.json, 图片生成/文生图/全能图片G-2.0官方版_2098380300295430145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_767
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频S文生视频丨Pro版最新模型丨10秒高清直出丨无水印！！！！_1982697386898276354.json、视频生成/文生视频/高清无水印25秒文生嗦罗2pro_2014333182442737666.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-官方稳定版G2_2070142049076211713.json、图片生成/文生图/全能图片G-2.0官方版_2098380300295430145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_Sora2_T2V_PRO`
-- `SaveVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

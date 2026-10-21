@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_86
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.939333
-common_nodes: [LoadImage, RH_Sora2_I2V, RH_Translator, SaveVideo]
+coverage: 1
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/1995670412317097986.json, 视频生成/图生视频/1976172660042416130.json, 视频生成/图生视频/1982391701874589698.json, 视频生成/图生视频/1986398507370246145.json, 视频生成/图生视频/1988885458224549890.json, 视频生成/图生视频/1983409112073576449.json, 视频生成/图生视频/1977231674360635394.json, 视频生成/文生视频/1976172660042416130.json, 视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_2027277300596744193.json]
+members: [音频生成/音频生成/40.tonnie-Index TTS2音频克隆（刘禹锡有诗云）_2004254864559538177.json, 音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json, 音频生成/音频生成/indexTTS 2 语音克隆_1981291888504463361.json, 音频生成/音频生成/indexTTS2复刻语音生成_1981185714140381185.json, 音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json, 音频生成/音频生成/双人对话tts_2070409633616982018.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_1932106715766882305.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_2004380097404698625.json, 音频生成/音频生成/视频生成-生成配音-情绪_2014166227136028673.json, 音频生成/音频生成/视频生成-生成配音_2012397133353193473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_86
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1995670412317097986.json、视频生成/图生视频/1976172660042416130.json、视频生成/图生视频/1982391701874589698.json、视频生成/图生视频/1986398507370246145.json、视频生成/图生视频/1988885458224549890.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/40.tonnie-Index TTS2音频克隆（刘禹锡有诗云）_2004254864559538177.json、音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json、音频生成/音频生成/indexTTS 2 语音克隆_1981291888504463361.json、音频生成/音频生成/indexTTS2复刻语音生成_1981185714140381185.json、音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `RH_Translator`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_T2V` —— 3/9 个有
-- `Text Concatenate` —— 1/9 个有
+- `Text Multiline` —— 9/10 个有
+- `AudioSeparation` —— 1/10 个有
+- `MultiLinePrompt` —— 1/10 个有
 
 ## 典型参数
 

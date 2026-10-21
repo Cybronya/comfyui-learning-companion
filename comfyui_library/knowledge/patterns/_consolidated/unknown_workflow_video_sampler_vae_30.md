@@ -1,58 +1,94 @@
 ---
 name: unknown_workflow_video_sampler_vae_30
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.867455
-common_nodes: [LoadWanVideoT5TextEncoder, Primitive integer [Crystools], ShowText, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.945917
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: [Primitive integer [Crystools], Text Multiline, easy cleanGpuUsed, Text Concatenate]
-members: [图片生成/文生图/1923249753776451586.json, 图片生成/文生图/1932599018294013953.json, 图片生成/文生图/1934653525920292866.json, 视频生成/文生视频/1933556886325346305.json, 视频生成/文生视频/1945801674319601665.json, 视频生成/文生视频/1923635839874551809.json, 视频生成/文生视频/1923291518734356481.json, 视频生成/文生视频/1927750568260059137.json, 视频生成/文生视频/极速万相文生视频-Self-Forcing+LLM_2071395063619477505.json, 视频生成/文生视频/极速万相文生视频_2029388586482667522.json, 视频生成/文生视频/1932781703125422081.json]
+missing: []
+members: [视频生成/图生视频/1958754013288296450.json, 视频生成/图生视频/1957818036982050817.json, 视频生成/图生视频/1957827307850530818.json, 视频生成/图生视频/1957977430084481025.json, 视频生成/图生视频/2070420975967100929.json, 视频生成/图生视频/1969944110868164610.json, 视频生成/图生视频/1958082253886803970.json, 视频生成/图生视频/1936573145107304450.json, 视频生成/图生视频/1936694256662908929.json, 视频生成/图生视频/1936454016199200770.json, 视频生成/图生视频/1939669350049878017.json, 视频生成/图生视频/1948575951367090178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_30
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/1923249753776451586.json、图片生成/文生图/1932599018294013953.json、图片生成/文生图/1934653525920292866.json、视频生成/文生视频/1933556886325346305.json、视频生成/文生视频/1945801674319601665.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1958754013288296450.json、视频生成/图生视频/1957818036982050817.json、视频生成/图生视频/1957827307850530818.json、视频生成/图生视频/1957977430084481025.json、视频生成/图生视频/2070420975967100929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `ShowText`
-- `Text Multiline`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 10/11 个有
-- `WanVideoEnhanceAVideo` —— 9/11 个有
-- `RHHiddenNodes` —— 8/11 个有
-- `Text Concatenate` —— 7/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/11 个有
-- `WanVideoTeaCache` —— 5/11 个有
-- `ShowText|pysssss` —— 4/11 个有
-- `easy cleanGpuUsed` —— 4/11 个有
-- `RH_LLMAPI_NODE` —— 3/11 个有
-- `CM_IntToFloat` —— 2/11 个有
-- `ColorMatch` —— 2/11 个有
-- `JWStringReplace` —— 2/11 个有
-- `WanVideoVACEModelSelect` —— 2/11 个有
-- `WanVideoExperimentalArgs` —— 1/11 个有
-- `WanVideoFreeInitArgs` —— 1/11 个有
+- `WanVideoLoraSelect` —— 11/12 个有
+- `ImageResizeKJv2` —— 10/12 个有
+- `LoadImage` —— 10/12 个有
+- `WanVideoTorchCompileSettings` —— 10/12 个有
+- `AudioCrop` —— 9/12 个有
+- `VHS_LoadVideo` —— 7/12 个有
+- `WanVideoImageToVideoMultiTalk` —— 7/12 个有
+- `WanVideoEncode` —— 6/12 个有
+- `WanVideoUni3C_ControlnetLoader` —— 6/12 个有
+- `WanVideoUni3C_embeds` —— 6/12 个有
+- `INTConstant` —— 5/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/12 个有
+- `Text Multiline` —— 5/12 个有
+- `WanVideoContextOptions` —— 5/12 个有
+- `WanVideoImageToVideoEncode` —— 5/12 个有
+- `MathExpression|pysssss` —— 4/12 个有
+- `RH_Captioner` —— 4/12 个有
+- `Text Concatenate` —— 4/12 个有
+- `easy showAnything` —— 4/12 个有
+- `Int` —— 3/12 个有
+- `Note Plus (mtb)` —— 3/12 个有
+- `VHS_DuplicateImages` —— 3/12 个有
+- `Audio Duration (mtb)` —— 2/12 个有
+- `CreateCFGScheduleFloatList` —— 2/12 个有
+- `LayerUtility: PurgeVRAM` —— 2/12 个有
+- `PreviewAudio` —— 2/12 个有
+- `PreviewImage` —— 2/12 个有
+- `Primitive integer [Crystools]` —— 2/12 个有
+- `PrimitiveInt` —— 2/12 个有
+- `WanVideoSLG` —— 2/12 个有
+- `easy anythingIndexSwitch` —— 2/12 个有
+- `CR Text` —— 1/12 个有
+- `GetImageSizeAndCount` —— 1/12 个有
+- `GroundingDinoModelLoader (segment anything)` —— 1/12 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 1/12 个有
+- `GrowMaskWithBlur` —— 1/12 个有
+- `Image To Mask` —— 1/12 个有
+- `ImpactSwitch` —— 1/12 个有
+- `JWInteger` —— 1/12 个有
+- `JWIntegerToString` —— 1/12 个有
+- `MaskPreview+` —— 1/12 个有
+- `MaskToImage` —— 1/12 个有
+- `SAMLoader` —— 1/12 个有
+- `SaveAudio` —— 1/12 个有
+- `Separate Mask Components` —— 1/12 个有
+- `SeparateMasks` —— 1/12 个有
+- `WanVideoLoraSelectMulti` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
+- `easy clearCacheAll` —— 1/12 个有
 
 ## 典型参数
 
@@ -64,4 +100,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Primitive integer [Crystools]、Text Multiline、easy cleanGpuUsed、Text Concatenate
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

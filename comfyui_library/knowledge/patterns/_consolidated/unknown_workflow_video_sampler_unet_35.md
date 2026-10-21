@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_unet_35
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.798875
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.832778
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax-H3-i2v_2084853035779584002.json, 视频生成/图生视频/video_minimax_h3_r2v_fast_2085276513448054785.json, 视频生成/图生视频/海螺H3全能多参音视频生成（9图3视频3音频）开源加速版_2086595985899347970.json, 视频生成/文生视频/MiniMaxH3三合一简易稳定生产力Pro_2087108217645133826.json, 视频生成/文生视频/海螺H3(minimaxH3)全能参考生视频2K开源版（9图3视频3音频）_2084577541385445377.json, 视频生成/文生视频/海螺H3【多参视频工作流】【万能提示词模板】_2084446461143638017.json, 视频生成/文生视频/海螺H3全能多参音视频生成开源版（9图3视频3音频）_2084825306258558977.json, 视频生成/文生视频/海螺H3全能多参音视频生成（9图3视频3音频）开源加速版_2085264471232180225.json]
+members: [数字人/数字人/Minimax H3 数字人 支持单人&双人_2084819750131163138.json, 数字人/数字人/Minimax H3全能参考数字人双人_多人_2085721182447427585.json, 数字人/数字人/Minimax H3数字人三人_2093592345018195970.json, 数字人/数字人/Minimax H3数字人双人_多人（Lightx2v加速）_2084818471610839041.json, 数字人/数字人/MinimaxH3-数字人MV制作_2085594233104322561.json, 数字人/数字人/MinimaxH3音频驱动+语音克隆_2086995655117070338.json, 视频生成/图生视频/MinimaxH3音频+图片=口播数字人+全节点注释_2095797295269892098.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2094236523871952898.json, 视频生成/图生视频/数字人MV视频生成工作流_2094716000133537794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_35
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/minimax-H3-i2v_2084853035779584002.json、视频生成/图生视频/video_minimax_h3_r2v_fast_2085276513448054785.json、视频生成/图生视频/海螺H3全能多参音视频生成（9图3视频3音频）开源加速版_2086595985899347970.json、视频生成/文生视频/MiniMaxH3三合一简易稳定生产力Pro_2087108217645133826.json、视频生成/文生视频/海螺H3(minimaxH3)全能参考生视频2K开源版（9图3视频3音频）_2084577541385445377.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Minimax H3 数字人 支持单人&双人_2084819750131163138.json、数字人/数字人/Minimax H3全能参考数字人双人_多人_2085721182447427585.json、数字人/数字人/Minimax H3数字人三人_2093592345018195970.json、数字人/数字人/Minimax H3数字人双人_多人（Lightx2v加速）_2084818471610839041.json、数字人/数字人/MinimaxH3-数字人MV制作_2085594233104322561.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadImage`
 - `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 7/8 个有
-- `VHS_LoadVideo` —— 7/8 个有
-- `LoadAudio` —— 6/8 个有
-- `EasyCache` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
-- `SolAttnPatch` —— 4/8 个有
-- `PainterVRAM` —— 2/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `Any Switch (rgthree)` —— 1/8 个有
-- `LoadAudioUI` —— 1/8 个有
-- `MiniMaxH3ImageToVideo` —— 1/8 个有
-- `RIFEInterpolation` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `LoadAudio` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
+- `PreviewAudio` —— 8/9 个有
+- `PrimitiveFloat` —— 8/9 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 8/9 个有
+- `AudioCrop` —— 6/9 个有
+- `LoraLoaderModelOnly` —— 6/9 个有
+- `ModelAttentionBackend` —— 5/9 个有
+- `ModelPreviewOverrideKJ` —— 5/9 个有
+- `AudioConcat` —— 4/9 个有
+- `EmptyAudio` —— 4/9 个有
+- `TrimAudioDuration` —— 3/9 个有
+- `CR Text` —— 2/9 个有
+- `PathchSageAttentionKJ` —— 2/9 个有
+- `AudioBeforeAfterSilence` —— 1/9 个有
+- `HeartMuLa_Transcribe` —— 1/9 个有
+- `MiniMaxH3SigmaShift` —— 1/9 个有
+- `Qwen3TTSModelLoader` —— 1/9 个有
+- `Qwen3TTSVoiceClone` —— 1/9 个有
+- `SDVN Load Image Url` —— 1/9 个有
+- `VHS_LoadAudio` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,98 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_clip_31
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.862857
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled]
+frequency: 9
+level: weak
+coverage: 0.735111
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038201954467323905.json, 视频生成/图生视频/2051636070026096642.json, 视频生成/图生视频/LTX2_3_image_and_audio_to_video_ia2v_2083484804493955073.json, 视频生成/图生视频/2081391586033889281.json, 视频生成/图生视频/2044558768721108993.json, 视频生成/图生视频/2049792632808853506.json, 视频生成/图生视频/2040420049630007297.json]
+members: [视频生成/图生视频/2053342015286460418.json, 视频生成/图生视频/2044755508602605570.json, 视频生成/图生视频/1978304878063804418.json, 视频生成/图生视频/1983147421196820482.json, 视频生成/图生视频/1983855179189620738.json, 视频生成/图生视频/2067963714497765378.json, 视频生成/图生视频/2060327159524323330.json, 视频生成/文生视频/Wan2.2 14B文生视频_2053351928163258369.json, 视频生成/文生视频/wan2.2图生视频工作流_2034905327635795970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_31
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2038201954467323905.json、视频生成/图生视频/2051636070026096642.json、视频生成/图生视频/LTX2_3_image_and_audio_to_video_ia2v_2083484804493955073.json、视频生成/图生视频/2081391586033889281.json、视频生成/图生视频/2044558768721108993.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2053342015286460418.json、视频生成/图生视频/2044755508602605570.json、视频生成/图生视频/1978304878063804418.json、视频生成/图生视频/1983147421196820482.json、视频生成/图生视频/1983855179189620738.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
+- `CreateVideo`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `ModelSamplingSD3`
+- `SaveVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 6/7 个有
-- `CreateVideo` —— 6/7 个有
-- `LTXAVTextEncoderLoader` —— 6/7 个有
-- `LTXVAudioVAEEncode` —— 6/7 个有
-- `LTXVLatentUpsampler` —— 6/7 个有
-- `LatentUpscaleModelLoader` —— 6/7 个有
-- `LoadAudio` —— 6/7 个有
-- `PrimitiveBoolean` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `SaveVideo` —— 6/7 个有
-- `SetLatentNoiseMask` —— 6/7 个有
-- `SolidMask` —— 6/7 个有
-- `TrimAudioDuration` —— 6/7 个有
-- `RecordAudio` —— 3/7 个有
-- `SoundFlow_GetLength` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `Apply Whisper` —— 2/7 个有
-- `ComfySwitchNode` —— 2/7 个有
-- `LongCatVoiceCloneTTS` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `MelBandRoFormerModelLoader` —— 2/7 个有
-- `MelBandRoFormerSampler` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `TextGenerateLTX2Prompt` —— 2/7 个有
-- `Anything Everywhere` —— 1/7 个有
-- `DiffusionModelLoaderKJ` —— 1/7 个有
-- `DualCLIPLoaderGGUF` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `IAMCCS_VRAMCleanup` —— 1/7 个有
-- `LTXVEmptyLatentAudio` —— 1/7 个有
-- `NormalizeAudioLoudness` —— 1/7 个有
-- `Text Concatenate` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `VAELoaderKJ` —— 1/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
+- `LoadImage` —— 8/9 个有
+- `WanImageToVideo` —— 8/9 个有
+- `ComfySwitchNode` —— 5/9 个有
+- `PrimitiveBoolean` —— 5/9 个有
+- `PrimitiveFloat` —— 5/9 个有
+- `PrimitiveInt` —— 5/9 个有
+- `ComfyMathExpression` —— 4/9 个有
+- `EmptyHunyuanLatentVideo` —— 1/9 个有
+- `GetImageSize` —— 1/9 个有
+- `GetNode` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `ResizeImagesByLongerEdge` —— 1/9 个有
+- `SetNode` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 97 | - | 1 | 100% |
-| 高度 | 25 | - | 1 | 100% |
+| 采样步数 | fixed | - | 9 | 89% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 9 | 19% |
+| 采样算法 | 1 | 1 - 3.5 | 9 | 39% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -100,5 +66,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，9 个样本，一致性 89%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，9 个样本，取值分散，一致性仅 19%
+- 采样算法 中位数 1，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 39%
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

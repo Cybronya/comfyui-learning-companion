@@ -3,33 +3,36 @@ name: unknown_workflow_generic_357
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.4575
+common_nodes: [ImpactSwitch, JjkText, RH_Jimeng_Image2Image, RH_Prompter, SaveImage, TextCombinerTwo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json, 音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json, 音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json, 音频生成/音频生成/生成双人对话声音_2035281634374717442.json]
+members: [图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json, 图片生成/文生图/1947167565694676994.json, 图片生成/文生图/1987433422123675650.json, 图片生成/文生图/漫剧   场景_1991475620517519362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_357
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json、音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json、音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json、音频生成/音频生成/生成双人对话声音_2035281634374717442.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json、图片生成/文生图/1947167565694676994.json、图片生成/文生图/1987433422123675650.json、图片生成/文生图/漫剧   场景_1991475620517519362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
+- `ImpactSwitch`
+- `JjkText`
+- `RH_Jimeng_Image2Image`
+- `RH_Prompter`
+- `SaveImage`
+- `TextCombinerTwo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 3/4 个有
-- `FishS2MultiSpeakerTTS` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
+- `FluxResolutionNode` —— 3/4 个有
 
 ## 典型参数
 

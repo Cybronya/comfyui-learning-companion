@@ -3,43 +3,45 @@ name: unknown_workflow_video_sampler_vae_177
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6315
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageFromBatch+, ImageResizeKJ, ImageToMask, LayerUtility: ColorImage, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview+, PreviewImage, RepeatImageBatch, ReplaceImagesInBatch, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, WanVideoVRAMManagement, easy int, easy showAnything]
+coverage: 0.8
+common_nodes: [Any Switch (rgthree), Anything Everywhere, Anything Everywhere3, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageBatchMulti, ImageResizeKJv2, ImageToMask, LayerUtility: ColorImage, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, ReplaceImagesInBatch, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1907868005584220162.json, 视频生成/图生视频/1909565444448288770.json]
+members: [视频生成/图生视频/1925372312076623873.json, 视频生成/图生视频/1923136785528836098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_177
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1907868005584220162.json、视频生成/图生视频/1909565444448288770.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1925372312076623873.json、视频生成/图生视频/1923136785528836098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Anything Everywhere`
+- `Anything Everywhere3`
+- `Fast Groups Muter (rgthree)`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `INTConstant`
 - `ImageBatchMulti`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
+- `ImageResizeKJv2`
 - `ImageToMask`
 - `LayerUtility: ColorImage`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskPreview+`
-- `PreviewImage`
 - `RepeatImageBatch`
 - `ReplaceImagesInBatch`
-- `SetNode`
 - `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoExperimentalArgs`
@@ -48,28 +50,13 @@ source: knowledge_consolidation
 - `WanVideoSampler`
 - `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
+- `easy imageRemBg`
 - `easy int`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Text Load Line From File` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
 
 ## 典型参数
 

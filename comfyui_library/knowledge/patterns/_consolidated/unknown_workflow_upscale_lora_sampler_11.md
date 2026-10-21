@@ -1,70 +1,72 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_11
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: strong
-coverage: 0.778
-common_nodes: [ConditioningZeroOut, DiptychCreate, DualCLIPLoader, FluxGuidance, ICEFConditioning, ImageConcanate, ImageCrop, ImageScaleDownToSize, ImageUpscaleWithModel, InContextEditInstruction, KSamplerAdvanced, LoraLoaderModelOnly, MaskPreview, PreviewImage, SaveImage, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
-problems: []
-missing: [Text Multiline, easy cleanGpuUsed]
-members: [图片生成/文生图/1920517668280143874.json, 图片生成/文生图/1932629301877424130.json, 视频生成/图生视频/1932629301877424130.json]
+coverage: 0.8695
+common_nodes: [CR Prompt Text, CheckpointLoaderSimple, ConditioningKrea2Rebalance, KSampler, LoraLoaderModelOnly, RHHiddenNodes, SaveImage, ShowText|pysssss, VAEDecode, WujiCleaner, WujiSuperEditor, WujiUpscaler]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/双重曝光艺术Krea2，名人、小说、影视、节日、地名均可_2085180691586830337.json, 图片生成/文生图/双重曝光艺术Krea2，名人、小说、影视、节日、地名均可_2088511028723277825.json, 图片生成/文生图/双重曝光艺术照Krea2，虚实构图艺术感拉满_2090251305397870594.json, 图片生成/文生图/最强图像反推Krea2-Turbo-HD双采样深度反推_2087805499344506881.json, 图片生成/文生图/最强图像反推Krea2-Turbo-HD双采样深度反推_2087812584857751553.json, 图片生成/文生图/最强图像反推Krea2-Turbo-HD双采样深度反推_2088189215996727297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1920517668280143874.json、图片生成/文生图/1932629301877424130.json、视频生成/图生视频/1932629301877424130.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/双重曝光艺术Krea2，名人、小说、影视、节日、地名均可_2085180691586830337.json、图片生成/文生图/双重曝光艺术Krea2，名人、小说、影视、节日、地名均可_2088511028723277825.json、图片生成/文生图/双重曝光艺术照Krea2，虚实构图艺术感拉满_2090251305397870594.json、图片生成/文生图/最强图像反推Krea2-Turbo-HD双采样深度反推_2087805499344506881.json、图片生成/文生图/最强图像反推Krea2-Turbo-HD双采样深度反推_2087812584857751553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DiptychCreate`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ICEFConditioning`
-- `ImageConcanate`
-- `ImageCrop`
-- `ImageScaleDownToSize`
-- `ImageUpscaleWithModel`
-- `InContextEditInstruction`
-- `KSamplerAdvanced`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
+- `ConditioningKrea2Rebalance`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `MaskPreview`
-- `PreviewImage`
+- `RHHiddenNodes`
 - `SaveImage`
-- `Text Multiline`
-- `UNETLoader`
-- `UpscaleModelLoader`
+- `ShowText|pysssss`
 - `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
+- `WujiCleaner`
+- `WujiSuperEditor`
+- `WujiUpscaler`
+
+**可变部分**（部分 workflow 才有）：
+- `DepthAnythingV2Preprocessor` —— 3/6 个有
+- `Int` —— 3/6 个有
+- `Krea2ControlApply` —— 3/6 个有
+- `Krea2ControlImageEncode` —— 3/6 个有
+- `Krea2ControlLoRALoader` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 3/6 个有
+- `LoadImage` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 28 | 28 - 28 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | 6 | 6 - 6 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler_ancestral | - | 6 | 50% |
+| 调度器 | sgm_uniform | - | 6 | 100% |
+| 重绘幅度 | 0.4 | 0.4 - 0.4 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 28，观测区间 28 - 28，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 28，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline、easy cleanGpuUsed
+- 采样步数 中位数 6，观测区间 6 - 6，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，6 个样本，一致性 50%
+- 调度器 最常用 sgm_uniform，6 个样本，一致性 100%
+- 重绘幅度 中位数 0.4，观测区间 0.4 - 0.4，6 个样本，取值集中（一致性 100%）
+- 高发问题（12/6 个样本）：Steps较低可能导致细节不足

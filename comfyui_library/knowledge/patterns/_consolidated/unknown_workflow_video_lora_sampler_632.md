@@ -2,67 +2,66 @@
 name: unknown_workflow_video_lora_sampler_632
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.978333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanVideoNAG]
+level: moderate
+coverage: 0.889
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ImageScale, InstructPixToPixConditioning, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2022215823229718529.json, 视频生成/图生视频/1955942871625027585.json, 视频生成/图生视频/1957122488750759938.json]
+members: [视频生成/图生视频/1905283605348667393.json, 视频生成/图生视频/1903507443177918465.json, 视频生成/文生视频/1904420884050776066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_632
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2022215823229718529.json、视频生成/图生视频/1955942871625027585.json、视频生成/图生视频/1957122488750759938.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1905283605348667393.json、视频生成/图生视频/1903507443177918465.json、视频生成/文生视频/1904420884050776066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `KSamplerAdvanced`
+- `ImageScale`
+- `InstructPixToPixConditioning`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `GetImageSizeAndCount` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `ImageColorMatch+` —— 1/3 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `DownloadAndLoadFlorence2Model` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
 - `ImageConcanate` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `ImageSmartSharpen+` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `easy imageRemBg` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `Primitive string [Crystools]` —— 1/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `TeaCache` —— 1/3 个有
+- `Text Concatenate (JPS)` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | lcm | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,71 +3,79 @@ name: unknown_workflow_sampler_unet_vae_125
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.840667
-common_nodes: [CLIPLoader, CR Prompt Text, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, Float, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
-missing: []
-members: [音频生成/音频生成/MiniMax Music音乐生成-自动提示词_2088510242186416129.json, 音频生成/音频生成/MiniMax Music音乐生成_2088133517992620034.json, 音频生成/音频生成/MiniMax Music音乐生成_2088219988443357186.json, 音频生成/音频生成/MiniMax Music音乐生成_2088243433164075009.json, 音频生成/音频生成/MiniMax Music音乐生成_2088329185046654978.json, 音频生成/音频生成/MiniMax Music音乐生成_2088620802592825345.json]
+coverage: 0.8315
+common_nodes: [BatchImagesNode, CLIPLoader, ComfySwitchNode, EmptyLatentImage, JoinStrings, KSampler, LoadImage, PrimitiveBoolean, QwenImage21Cache, ResolutionSelector, SaveImage, ShowText|pysssss, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, easy positive, 孤海注释]
+problems: []
+missing: [LayerUtility: ImageScaleByAspectRatio V2, easy positive, 忽略多组孤海]
+members: [图片生成/反推提示词/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json, 图片生成/图生图/2105932118147817473.json, 图片生成/图生图/2105934523547602945.json, 图片生成/图生图/千问2.1图片编辑测试工作流！_2107274754737664002.json, 图片生成/文生图/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json, 图片生成/文生图/千问2.1图片编辑测试工作流！_2106938314304610306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_125
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music音乐生成-自动提示词_2088510242186416129.json、音频生成/音频生成/MiniMax Music音乐生成_2088133517992620034.json、音频生成/音频生成/MiniMax Music音乐生成_2088219988443357186.json、音频生成/音频生成/MiniMax Music音乐生成_2088243433164075009.json、音频生成/音频生成/MiniMax Music音乐生成_2088329185046654978.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json、图片生成/图生图/2105932118147817473.json、图片生成/图生图/2105934523547602945.json、图片生成/图生图/千问2.1图片编辑测试工作流！_2107274754737664002.json、图片生成/文生图/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BatchImagesNode`
 - `CLIPLoader`
-- `CR Prompt Text`
 - `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `Float`
+- `EmptyLatentImage`
+- `JoinStrings`
 - `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `LoadImage`
+- `PrimitiveBoolean`
+- `QwenImage21Cache`
+- `ResolutionSelector`
+- `SaveImage`
+- `ShowText|pysssss`
+- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
-- `VAEDecodeAudio`
-- `VAEDecodeAudioTiled`
+- `VAEDecode`
 - `VAELoader`
+- `easy positive`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTextConcatenate` —— 1/6 个有
-- `RH_LLMAPI_NODE` —— 1/6 个有
-- `RH_Utils` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
-- `TextConcatenator` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `忽略多组孤海` —— 5/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `ModelPreviewOverrideKJ` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `EmptyImage` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 30 - 32 | 6 | 98% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
+| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
+| 采样步数 | 25 | 25 - 25 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
 | 调度器 | simple | - | 6 | 83% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 32，6 个样本，取值集中（一致性 98%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
 - 调度器 最常用 simple，6 个样本，一致性 83%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、easy positive、忽略多组孤海

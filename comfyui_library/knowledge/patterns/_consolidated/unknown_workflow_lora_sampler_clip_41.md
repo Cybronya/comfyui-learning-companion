@@ -1,59 +1,59 @@
 ---
 name: unknown_workflow_lora_sampler_clip_41
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 1
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2FitVideo, SCAIL2SimpleVideo, VAELoader, VHS_LoadVideo, WanChunkFeedForward]
+frequency: 7
+level: strong
+coverage: 0.845286
+common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ColorMatch, Fast Groups Muter (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, Int, KSamplerAdvanced, LatentSwitch, LoraLoaderModelOnly, PreviewImage, QwenImageLatentAspectRatio, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Ai 数字人_2086011335233589249.json, 视频生成/图生视频/2064999318582546433.json, 视频生成/图生视频/SCAIL2动作模型跳舞模仿带货视频人物替换短剧视频角色替换_2083912499828715522.json, 视频生成/图生视频/SCAIL2超强一致性动作迁移_2085596899859582977.json, 视频生成/图生视频/SCAIL2超强一致性动作迁移_2086658199561789442.json, 视频生成/图生视频/SCAIL2超强一致性动作迁移_2087087255763644418.json]
+members: [图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085256281174138881.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085257479918804993.json, 图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085259061586653186.json, 图片生成/文生图/超强文生图，极致细节：Zimage系列底图，Klein高清修复_2018129430551465986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_41
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Ai 数字人_2086011335233589249.json、视频生成/图生视频/2064999318582546433.json、视频生成/图生视频/SCAIL2动作模型跳舞模仿带货视频人物替换短剧视频角色替换_2083912499828715522.json、视频生成/图生视频/SCAIL2超强一致性动作迁移_2085596899859582977.json、视频生成/图生视频/SCAIL2超强一致性动作迁移_2086658199561789442.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/文生图强强联合：Zimage构图+Klein高清修复_2019576100757704705.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084922710471299074.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2084926999600128001.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085256281174138881.json、图片生成/文生图/文生图：Zimage构图+Klein高清修复_2085257479918804993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `CR Prompt Text`
 - `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `KSamplerSelect`
-- `LoadImage`
+- `ColorMatch`
+- `Fast Groups Muter (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `KSamplerAdvanced`
+- `LatentSwitch`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2FitVideo`
-- `SCAIL2SimpleVideo`
+- `PreviewImage`
+- `QwenImageLatentAspectRatio`
+- `ReferenceLatent`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `WanChunkFeedForward`
-
-**可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 5/6 个有
-- `Int` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `ComfySwitchNodeV2` —— 1/6 个有
-- `CreateVideo` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `RH_HeyGemNode` —— 1/6 个有
-- `SaveVideo` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -61,4 +61,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%

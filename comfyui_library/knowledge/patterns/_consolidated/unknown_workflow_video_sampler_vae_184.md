@@ -3,51 +3,55 @@ name: unknown_workflow_video_sampler_vae_184
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.755
-common_nodes: [ColorMatch, DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoCFG, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoModelLoader, HyVideoSampler, HyVideoTextEncode, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageResizeKJ, Int, LoadImage, MathExpression|pysssss, VHS_VideoCombine]
+coverage: 0.5655
+common_nodes: [GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextBox, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频，SkyReels_1892222949557243905.json, 视频生成/图生视频/1892126522352820225.json]
+members: [视频生成/图生视频/1934287864869908481.json, 视频生成/图生视频/1934982902193004545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_184
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频，SkyReels_1892222949557243905.json、视频生成/图生视频/1892126522352820225.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1934287864869908481.json、视频生成/图生视频/1934982902193004545.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ColorMatch`
-- `DownloadAndLoadHyVideoTextEncoder`
-- `HyVideoBlockSwap`
-- `HyVideoCFG`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoEnhanceAVideo`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTextEncode`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
-- `ImageResizeKJ`
-- `Int`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: TextBox`
 - `LoadImage`
-- `MathExpression|pysssss`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `AddLabel` —— 1/2 个有
+- `DepthAnythingV2Preprocessor` —— 1/2 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `GIMMVFI_interpolate` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `LayerUtility: Integer` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
 
 ## 典型参数
 

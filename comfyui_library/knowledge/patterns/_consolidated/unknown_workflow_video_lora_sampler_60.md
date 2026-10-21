@@ -3,57 +3,76 @@ name: unknown_workflow_video_lora_sampler_60
 type: Unknown Workflow
 frequency: 19
 level: moderate
-coverage: 0.825947
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.873474
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速 图生视频 -zip_2086179408511062017.json, 视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速+图生视频_2095722417233682433.json, 视频生成/图生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091730279948963841.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 4步极速版_2090795830067417090.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 8步加速版_2090756411985850369.json, 视频生成/图生视频/1896972443683069953.json, 视频生成/图生视频/MiniMax H3-4步加速-图生视频_2090916306450210818.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2086823760027545602.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087059347460411394.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087069140904407041.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087886342087860226.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速_2085708995028938754.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速-step600_2086814507325808641.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速-step600_2087891422266609666.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速_2085709043984855041.json, 视频生成/图生视频/MiniMax H3-首尾帧视频V1-双时钟-8步高质量极速-step600_2087895091745738753.json, 视频生成/图生视频/MiniMax-H3 单图换装工作流_2097684790219726850.json, 视频生成/图生视频/minimax三图工作流_2092594675935956993.json, 视频生成/图生视频/双时钟采样4步无损加速｜MiniMAX-H3-T8图生视频_2096460092848828418.json]
+members: [视频生成/图生视频/2070755239396990978.json, 视频生成/图生视频/2071595025368182786.json, 视频生成/图生视频/2016109597077020673.json, 视频生成/图生视频/2082392926398799873.json, 视频生成/图生视频/1996720816832270337.json, 视频生成/图生视频/1988227930037903361.json, 视频生成/图生视频/2062720243771990018.json, 视频生成/图生视频/2061287897743052801.json, 视频生成/图生视频/2061971483555098625.json, 视频生成/图生视频/对口型数字人Infinite+talk对口型动态加强高版V3_1981308646988611586.json, 视频生成/图生视频/2061625584001835010.json, 视频生成/图生视频/2062437444791918594.json, 视频生成/图生视频/2062801094731980801.json, 视频生成/图生视频/2064624284164771842.json, 视频生成/图生视频/2064954636120973313.json, 视频生成/图生视频/2029081632229036033.json, 视频生成/图生视频/2079549546333560833.json, 视频生成/图生视频/2074655018262814722.json, 视频生成/图生视频/2079398249361920002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_60
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速 图生视频 -zip_2086179408511062017.json、视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速+图生视频_2095722417233682433.json、视频生成/图生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091730279948963841.json、视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 4步极速版_2090795830067417090.json、视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 8步加速版_2090756411985850369.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/2070755239396990978.json、视频生成/图生视频/2071595025368182786.json、视频生成/图生视频/2016109597077020673.json、视频生成/图生视频/2082392926398799873.json、视频生成/图生视频/1996720816832270337.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 19 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 18/19 个有
-- `PrimitiveFloat` —— 18/19 个有
-- `MiniMaxH3AVDecodeT8` —— 17/19 个有
-- `ResolutionSelector` —— 16/19 个有
-- `孤海注释` —— 10/19 个有
-- `GetImageSize` —— 3/19 个有
-- `ImageScaleToTotalPixels` —— 3/19 个有
-- `Int` —— 2/19 个有
-- `VAEDecode` —— 2/19 个有
-- `VAEDecodeAudio` —— 2/19 个有
-- `CM_IntToFloat` —— 1/19 个有
-- `Float` —— 1/19 个有
-- `GoohaiUniversalSlider` —— 1/19 个有
-- `easy int` —— 1/19 个有
-- `solarL_SaveImagesToZip` —— 1/19 个有
-- `忽略多组孤海` —— 1/19 个有
+- `JWFloat` —— 18/19 个有
+- `MultiTalkWav2VecEmbeds` —— 18/19 个有
+- `WanVideoModelLoader` —— 18/19 个有
+- `WanVideoBlockSwap` —— 17/19 个有
+- `GetImageSizeAndCount` —— 15/19 个有
+- `PreviewAny` —— 14/19 个有
+- `easy showAnything` —— 14/19 个有
+- `LayerUtility: PurgeVRAM V2` —— 12/19 个有
+- `AudioToFPS` —— 10/19 个有
+- `1hew_AudioDuration` —— 4/19 个有
+- `PreviewAudio` —— 4/19 个有
+- `PreviewImage` —— 4/19 个有
+- `easy mathInt` —— 4/19 个有
+- `Number to Int` —— 2/19 个有
+- `SaveAudio` —— 2/19 个有
+- `Text to Number` —— 2/19 个有
+- `WanVideoTorchCompileSettings` —— 2/19 个有
+- `Apply Whisper` —— 1/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/19 个有
+- `ImageConcatenate_UTK` —— 1/19 个有
+- `Label (rgthree)` —— 1/19 个有
+- `OmniVoiceLongformTTS` —— 1/19 个有
+- `OmniVoiceMultiSpeakerTTS` —— 1/19 个有
+- `OmniVoiceVoiceDesignTTS` —— 1/19 个有
+- `OmniVoiceWhisperLoader` —— 1/19 个有
+- `PrimitiveFloat` —— 1/19 个有
+- `RHHiddenNodes` —— 1/19 个有
+- `SetNode` —— 1/19 个有
+- `workflow>2` —— 1/19 个有
 
 ## 典型参数
 

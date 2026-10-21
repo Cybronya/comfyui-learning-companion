@@ -2,70 +2,69 @@
 name: unknown_workflow_video_lora_sampler_268
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.8745
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.92275
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, EmptyHunyuanLatentVideo, ImageFromBatch+, JWInteger, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, ShellAgentPluginOutputText, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3角色替换（单人_指定角色+视频编辑）_2109856895799480322.json, 视频生成/图生视频/Minimax H3 高动态打斗模型，优化步数，减少等待时间_2098343857598582785.json, 视频生成/图生视频/Minimax H3 高动态打斗模型，更稳更有冲击力！_2096240918440529922.json, 视频生成/图生视频/Minimax H3三图参考(无参考音)_2089300406496219138.json, 视频生成/图生视频/Minimax H3单图参考(无参考音)_2084264457093607425.json, 视频生成/图生视频/Minimax H3双图参考(无参考音)_2089281585597210625.json, 视频生成/图生视频/Minimax 参考图模式_2109199755543924737.json, 视频生成/图生视频/minimaxH3多参考视频工作流pv（备用方案）_2097327651475247106.json]
+members: [视频生成/图生视频/2035656316517093377.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035358127658377218.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2035617864299843586.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2036029728359976962.json, 视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频工作流_2035941912657534978.json, 视频生成/文生视频/（N sfw版）Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035617850320228353.json, 视频生成/文生视频/（自用）N版Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035392938565443585.json, 视频生成/文生视频/（贞贞lora-自用）N版Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035397258946027521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_268
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3角色替换（单人_指定角色+视频编辑）_2109856895799480322.json、视频生成/图生视频/Minimax H3 高动态打斗模型，优化步数，减少等待时间_2098343857598582785.json、视频生成/图生视频/Minimax H3 高动态打斗模型，更稳更有冲击力！_2096240918440529922.json、视频生成/图生视频/Minimax H3三图参考(无参考音)_2089300406496219138.json、视频生成/图生视频/Minimax H3单图参考(无参考音)_2084264457093607425.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2035656316517093377.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频V1_2035358127658377218.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2035617864299843586.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频_2036029728359976962.json、视频生成/文生视频/Wan2.2 Smooth V3+Qwen3.5自动提示词文生视频工作流_2035941912657534978.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadImage`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text`
+- `EmptyHunyuanLatentVideo`
+- `ImageFromBatch+`
+- `JWInteger`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ShellAgentPluginOutputText`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 7/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 7/8 个有
-- `MiniMaxH3SigmaShift` —— 6/8 个有
-- `ModelAttentionBackend` —— 5/8 个有
-- `ModelPreviewOverrideKJ` —— 5/8 个有
-- `INTConstant` —— 3/8 个有
-- `Label (rgthree)` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `LoadAudio` —— 2/8 个有
-- `BlockSparseAttention` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `H3SigmaRefiner` —— 1/8 个有
-- `ManualSigmas` —— 1/8 个有
-- `MiniMaxH3Unified` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SelfLiftH3Sampler` —— 1/8 个有
-- `VHS_SelectImages` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `Seed (rgthree)` —— 7/8 个有
+- `DuckHideNode` —— 3/8 个有
+- `LoadImage` —— 3/8 个有
+- `SaveImage` —— 3/8 个有
+- `TT_img_enc` —— 3/8 个有
+- `TT_img_enc_v2` —— 3/8 个有
+- `ConcatTextOfUtils` —— 1/8 个有
+- `Int` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -73,4 +72,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

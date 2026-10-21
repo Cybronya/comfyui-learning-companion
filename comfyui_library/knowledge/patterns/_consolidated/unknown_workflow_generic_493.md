@@ -3,39 +3,28 @@ name: unknown_workflow_generic_493
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.946
-common_nodes: [AudioCrop, AudioSeparation, LoadAudio, PreviewAudio, SaveAudio, SaveAudioMP3, SparkTTS_AudioRecorder, SparkTTS_VoiceCreator, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+coverage: 0.522333
+common_nodes: [SaveImage, e5cfe5ba-2ae0-4bc4-869f-ab2228cb44d3]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI声音+声音克隆（SparkTTS+IndexTTS-2）_2064242992818511874.json, 音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_1988937576591527937.json, 音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_2006924053776441346.json]
+members: [comfyui-workflow-templates-json/image_qwen_image.json, comfyui-workflow-templates-json/template_qwen_image_illustration_lora.json, comfyui-workflow-templates-json/template_sugar_coated_gummy_style_qwen.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_493
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI声音+声音克隆（SparkTTS+IndexTTS-2）_2064242992818511874.json、音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_1988937576591527937.json、音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_2006924053776441346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image.json、comfyui-workflow-templates-json/template_qwen_image_illustration_lora.json、comfyui-workflow-templates-json/template_sugar_coated_gummy_style_qwen.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `SparkTTS_AudioRecorder`
-- `SparkTTS_VoiceCreator`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionAudio`
-- `easy indexTTSEmotionMerge`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
+- `SaveImage`
+- `e5cfe5ba-2ae0-4bc4-869f-ab2228cb44d3`
 
 ## 典型参数
 

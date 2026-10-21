@@ -3,40 +3,33 @@ name: unknown_workflow_generic_277
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6958
-common_nodes: [CR Prompt Text, LoadAudio, PreviewAudio, SaveAudio, ShowText|pysssss, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text Concatenate]
+coverage: 0.9082
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json, 音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json, 音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json, 音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json, 音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json]
+members: [图片生成/文生图/全能图片V1progenerate_1995684120686628865.json, 图片生成/文生图/全能图片模型_1999049685178384385.json, 图片生成/文生图/全能图片编辑_2020709163151663106.json, 图片生成/文生图/无限猴子-AI漫剧分镜工作流_2009260337815625729.json, 视频生成/图生视频/2029979002751950850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_277
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json、音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json、音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json、音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json、音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片V1progenerate_1995684120686628865.json、图片生成/文生图/全能图片模型_1999049685178384385.json、图片生成/文生图/全能图片编辑_2020709163151663106.json、图片生成/文生图/无限猴子-AI漫剧分镜工作流_2009260337815625729.json、视频生成/图生视频/2029979002751950850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
-- `Text Concatenate`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 4/5 个有
-- `PreviewAny` —— 1/5 个有
-- `StringReplace` —— 1/5 个有
+- `LoadImage` —— 4/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
 
 ## 典型参数
 

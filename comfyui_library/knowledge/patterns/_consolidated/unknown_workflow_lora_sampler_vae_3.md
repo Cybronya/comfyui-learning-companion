@@ -1,55 +1,54 @@
 ---
 name: unknown_workflow_lora_sampler_vae_3
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.9788
+common_nodes: [BasicGuider, CreateVideo, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/1911779747029024769.json, 图片生成/文生图/1914962492102012929.json]
+members: [视频生成/文生视频/Minimax-H3加速一站式工作流_2086720729625743361.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版_2088792747246444545.json, 视频生成/文生视频/minimax加速一站式工作流（文生视频图生视频首尾帧全能参考加速lora）_2086651785254621186.json, 视频生成/文生视频/minimax加速一站式工作流（文生视频图生视频首尾帧全能参考加速lora）_2086696294881513474.json, 视频生成/文生视频/minimax加速一站式工作流（文生视频图生视频首尾帧多图参考加速lora）_2088157268767494145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1911779747029024769.json、图片生成/文生图/1914962492102012929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Minimax-H3加速一站式工作流_2086720729625743361.json、视频生成/文生视频/MinimaxH3工作流多合一极简版_2088792747246444545.json、视频生成/文生视频/minimax加速一站式工作流（文生视频图生视频首尾帧全能参考加速lora）_2086651785254621186.json、视频生成/文生视频/minimax加速一站式工作流（文生视频图生视频首尾帧全能参考加速lora）_2086696294881513474.json、视频生成/文生视频/minimax加速一站式工作流（文生视频图生视频首尾帧多图参考加速lora）_2088157268767494145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
+- `CreateVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `CLIPTextEncodeFlux` —— 1/2 个有
-- `JjkShowText` —— 1/2 个有
-- `Joy_caption` —— 1/2 个有
-- `Joy_caption_load` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 4/5 个有
+- `PathchSageAttentionKJ` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `SpectrumSDXL` —— 3/5 个有
+- `BasicScheduler` —— 1/5 个有
+- `KSamplerSelect` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `SpectrumApplyMiniMaxH3` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 872 | - | 2 | 83% |
-| 高度 | 1408 | - | 2 | 91% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -57,6 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 872，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高度 中位数 1408，样本不足，未给区间，2 个样本，取值集中（一致性 91%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

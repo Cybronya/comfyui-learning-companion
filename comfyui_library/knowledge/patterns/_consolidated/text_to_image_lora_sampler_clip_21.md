@@ -1,115 +1,84 @@
 ---
 name: text_to_image_lora_sampler_clip_21
 type: Text To Image
-frequency: 19
+frequency: 22
 level: strong
-coverage: 0.901105
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.902
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, TTResolutionSelector, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy int]
+problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3图生视频首尾帧控制｜原生音频自带，两张图变一段电影感短片_2100451183075880961.json, 视频生成/图生视频/MiniMax H3图生视频首尾帧视频二采加速版 高质量动态生成_2105373937122242561.json, 视频生成/图生视频/MiniMax H3多图参考生成视频图生视频与视频生视频全能参考方案_2107257293007052802.json, 视频生成/图生视频/MiniMax H3多图参考生成视频，图生视频与视频生视频全能参考方案_2102813018273968130.json, 视频生成/图生视频/MiniMax H3多图参考生视频图生视频处理生成工具_2101745060818808833.json, 视频生成/图生视频/MiniMax H3多图参考生视频工作流_视频生视频图生视频多素材融合方案_2105760424162586626.json, 视频生成/图生视频/MiniMax H3多图参考生视频｜几张图一起喂｜人物场景一致性拉满_2102579245317967874.json, 视频生成/图生视频/MiniMax H3多图参考生视频｜多素材参考一致性视频生成_2108015949080260609.json, 视频生成/图生视频/MiniMax H3开源版首尾帧8步加速工作流_数字人图生视频处理工具_2106532091839205378.json, 视频生成/图生视频/MiniMax H3开源版首尾帧8步加速工作流，数字人图生视频处理工具_2106532091839205378.json, 视频生成/图生视频/MiniMax H3开源版首尾帧8步加速工作流，数字人图生视频处理工具_2106879845912371201.json, 视频生成/图生视频/MiniMax H3首尾帧3步快速生成图生视频处理工具_2101395032807923714.json, 视频生成/图生视频/MiniMax H3首尾帧二采加速版｜图生视频稳定出片_2105267559749734401.json, 视频生成/图生视频/MiniMax_H3单模双采放大工作流8G显存版，低显存笔记本也能跑方案_2109819079400968194.json, 视频生成/图生视频/MiniMax_H3多参角色替换LoRA二采放大工作流，文生视频视频生视频图生视频_2109816691227185154.json, 视频生成/图生视频/MiniMax_H3多参角色替换LoRA二采放大，三种生视频模式_2110541129706987521.json, 视频生成/图生视频/MiniMax_H3多参角色替换LoRA二采放大，三种生视频模式_2110888174443655170.json, 视频生成/图生视频/h3 二阶+sigma+latent 采样组合｜数字人图生视频_2096896924396900353.json, 视频生成/文生视频/MiniMax H3单模双采放大工作流8G显存版，低显存笔记本也能跑方案_2106866016801345537.json]
+members: [图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json, 图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫阙-第一套【syqiangk】_2078147529719504897.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-星幻王-第一套【syqiangk】_2041908781411471361.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-溟莲之主-第一套【syqiangk】_2080260967069478914.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-清衍静-第一套【syqiangk】_2074899453416394754.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-灵溪-第一套【syqiangk】_2079577200193523713.json, 图片生成/文生图/Krea2+Klein双采-国漫-师兄啊师兄-云霄-黑化版【syqiangk】_2085398499084038145.json, 图片生成/文生图/Krea2+Klein双采-国漫-择日飞升-青壁-第一套【syqiangk】_2086873516091203586.json, 图片生成/文生图/Krea2+Klein双采-国漫-斗破苍穹-药灵-第一套【syqiangk】_2082101399822888961.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏千荷-第一套【syqiangk】_2084295242433519617.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏梦瑶-第一套【syqiangk】_2081412397172084737.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第一套【syqiangk】_2076711849927729154.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第二套【syqiangk】_2080276212844421121.json, 图片生成/文生图/Krea2+Klein双采-国漫-深空彼岸-燕清妍-第一套【syqiangk】_2085035661463220225.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-楚月婵-年番第一套【syqiangk】_2083403282608910338.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-苍月公主-年番第二套【syqiangk】_2083178016846467074.json, 图片生成/文生图/Krea2+Klein双采-游戏-永劫无间-甘璇-第一套【syqiangk】_2075979084965957634.json, 图片生成/文生图/Krea2+Klein双采-韩漫-美丽新世界-金美庭-第一套【syqiangk】_2083572001037443074.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_21
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3图生视频首尾帧控制｜原生音频自带，两张图变一段电影感短片_2100451183075880961.json、视频生成/图生视频/MiniMax H3图生视频首尾帧视频二采加速版 高质量动态生成_2105373937122242561.json、视频生成/图生视频/MiniMax H3多图参考生成视频图生视频与视频生视频全能参考方案_2107257293007052802.json、视频生成/图生视频/MiniMax H3多图参考生成视频，图生视频与视频生视频全能参考方案_2102813018273968130.json、视频生成/图生视频/MiniMax H3多图参考生视频图生视频处理生成工具_2101745060818808833.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json、图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json、图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json…）
 
 - **类型**：Text To Image
-- **样本数**：19
+- **样本数**：22
 - **可信度**：强结论
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 22 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `JjkText`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveFloat`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-
-**可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 16/19 个有
-- `SaveImage` —— 14/19 个有
-- `MiniMaxH3ReferenceToVideo` —— 12/19 个有
-- `PrimitiveStringMultiline` —— 11/19 个有
-- `LTXVConcatAVLatent` —— 9/19 个有
-- `LTXVSeparateAVLatent` —— 9/19 个有
-- `MinimaxH3LatentUpscaler3D` —— 9/19 个有
-- `SplitSigmas` —— 9/19 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/19 个有
-- `MiniMaxH3ImageToVideo` —— 7/19 个有
-- `MiniMaxH3SigmaShift` —— 7/19 个有
-- `ModelAttentionBackend` —— 7/19 个有
-- `ModelPreviewOverrideKJ` —— 7/19 个有
-- `EmptyImage` —— 6/19 个有
-- `LoadAudio` —— 6/19 个有
-- `PreviewImage` —— 6/19 个有
-- `VHS_VideoCombine` —— 5/19 个有
-- `ImageResizeKJv2` —— 4/19 个有
-- `ManualSigmas` —— 4/19 个有
-- `ExtendIntermediateSigmas` —— 3/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/19 个有
-- `Text` —— 3/19 个有
-- `VHS_LoadVideo` —— 3/19 个有
-- `easy showAnything` —— 3/19 个有
-- `PathchSageAttentionKJ` —— 2/19 个有
-- `easy getNode` —— 2/19 个有
-- `easy int` —— 2/19 个有
-- `easy loraStack` —— 2/19 个有
-- `easy loraStackApply` —— 2/19 个有
-- `easy setNode` —— 2/19 个有
-- `CR Text` —— 1/19 个有
-- `Fast Groups Muter (rgthree)` —— 1/19 个有
-- `GetImageSize` —— 1/19 个有
-- `ImageConcatMulti` —— 1/19 个有
-- `RH_LLMAPI_Pro_Node` —— 1/19 个有
-- `SolAttnMiniMax` —— 1/19 个有
-- `TextOverlay` —— 1/19 个有
+- `easy anythingIndexSwitch`
+- `easy int`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 19 | 100% |
-| 高度 | 80 | 80 - 80 | 19 | 100% |
-| 采样步数 | 4 | 4 - 4 | 19 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 19 | 100% |
-| 采样算法 | er_sde | - | 19 | 100% |
-| 调度器 | beta | - | 19 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
+| 采样步数 | 16 | 16 - 16 | 22 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
+| 采样算法 | euler_ancestral | - | 22 | 100% |
+| 调度器 | simple | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 512 | 512 - 512 | 22 | 100% |
+| 高度 | 512 | 512 - 512 | 22 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 23/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，19 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，19 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，19 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，19 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，19 个样本，一致性 100%
-- 调度器 最常用 beta，19 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 高发问题（23/19 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 16，观测区间 16 - 16，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，22 个样本，一致性 100%
+- 调度器 最常用 simple，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）

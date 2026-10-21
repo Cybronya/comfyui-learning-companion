@@ -1,33 +1,43 @@
 ---
 name: unknown_workflow_generic_52
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.880583
-common_nodes: [RH_RhartVideoSparkvideo20FastTextToVideo, SaveVideo]
+coverage: 0.866077
+common_nodes: [AudioCrop, CR Text, LoadAudio, PreviewAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json, 视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json, 视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json, 视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频｜打字就出片 速度快不等待_2097529188193488898.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037034972783058946.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037444767545561089.json, 视频生成/文生视频/Seedance2.0 Fast文生视频（RH版）_2054421311123927041.json, 视频生成/文生视频/seeddance2.0 文生视频_2040952630356217857.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-纯文本生视频】工作流_2037776749177610242.json, 视频生成/文生视频/地表最强超能视频2.0-Fast_文生视频_2037432927675490306.json]
+members: [音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json, 音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json, 音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2015458205643575298.json, 音频生成/音频生成/qwentts-声音设计 声音克隆_2033750797955112961.json, 音频生成/音频生成/千问3TSS声音克隆_2069320475846725633.json, 音频生成/音频生成/千问3TTS声音设计语音克隆_2069311488371814401.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2014536001888198657.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2069313800293142530.json, 音频生成/音频生成/千问3TTS语音克隆-老祺-单克隆版_2097158002439704578.json, 音频生成/音频生成/千问3TTS语音克隆-音色设计-老祺_2028309603213123586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_52
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json、视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json、视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json、视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json、视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json、音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json、音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20FastTextToVideo`
-- `SaveVideo`
+全部 13 个 workflow 都包含：
+- `AudioCrop`
+- `CR Text`
+- `LoadAudio`
+- `PreviewAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
+- `Qwen3TTSVoiceDesign` —— 11/13 个有
+- `WhisperSTT` —— 8/13 个有
+- `Label (rgthree)` —— 4/13 个有
+- `Qwen3TTSCustomVoice` —— 4/13 个有
+- `PreviewTextNode` —— 1/13 个有
 
 ## 典型参数
 

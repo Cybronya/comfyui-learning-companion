@@ -3,35 +3,37 @@ name: unknown_workflow_generic_390
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [CM_IntToFloat, IndexTTSRun, LoadAudio, Primitive integer [Crystools], SaveAudio, Text Multiline]
+coverage: 0.58175
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, RunningHub Ovi Image to Video, RunningHub Ovi Model Loader, RunningHub Ovi Text to Video, SaveVideo]
 problems: []
-missing: []
-members: [音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json, 音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json, 音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json, 音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json]
+missing: [RunningHub Ovi Image to Video, RunningHub Ovi Model Loader, RunningHub Ovi Text to Video, CR Prompt Text]
+members: [视频生成/图生视频/1974990263888293889.json, 视频生成/图生视频/1976508685440651266.json, 视频生成/文生视频/1974990263888293889.json, 视频生成/文生视频/1976508685440651266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_390
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json、音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json、音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json、音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1974990263888293889.json、视频生成/图生视频/1976508685440651266.json、视频生成/文生视频/1974990263888293889.json、视频生成/文生视频/1976508685440651266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CM_IntToFloat`
-- `IndexTTSRun`
-- `LoadAudio`
-- `Primitive integer [Crystools]`
-- `SaveAudio`
-- `Text Multiline`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `RunningHub Ovi Image to Video`
+- `RunningHub Ovi Model Loader`
+- `RunningHub Ovi Text to Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/4 个有
+- `FluxResolutionNode` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
 
 ## 典型参数
 
@@ -43,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub Ovi Image to Video、RunningHub Ovi Model Loader、RunningHub Ovi Text to Video、CR Prompt Text

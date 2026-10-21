@@ -3,34 +3,35 @@ name: unknown_workflow_generic_815
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [LoadAudio, LongCatVoiceCloneTTS, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.875
+common_nodes: [CR Prompt Text, LoadAudio, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT：生成《喵窖2026》广告配音_2040123889803595778.json, 音频生成/音频生成/LongCat声音克隆-语音克隆工作流_2094720111306432513.json]
+members: [数字人/数字人/T8修复官版IndexTTS 2.5多音字语音克隆(中文版)_2091740726399954945.json, 音频生成/音频生成/声音克隆-TTS-index-2.5_2087910558707306497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_815
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT：生成《喵窖2026》广告配音_2040123889803595778.json、音频生成/音频生成/LongCat声音克隆-语音克隆工作流_2094720111306432513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/T8修复官版IndexTTS 2.5多音字语音克隆(中文版)_2091740726399954945.json、音频生成/音频生成/声音克隆-TTS-index-2.5_2087910558707306497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `RH_IndexTTS25_Loader`
+- `RH_IndexTTS25_Synthesize`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `NormalizeAudioLoudness` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `T8_IndexTTS25_Pronunciation` —— 1/2 个有
 
 ## 典型参数
 

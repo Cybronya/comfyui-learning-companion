@@ -1,58 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_clip_29
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.884571
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.813111
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, GetVideoComponents, ImageFromBatch, JWInteger, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, RHLLMChatNode, SamplerCustom, SplitSigmas, StringReplace, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
-missing: [CR Text, ImageCrop+, SimpleMath+, easy imageSize]
-members: [图片生成/文生图/1981992176706035713.json, 图片生成/文生图/1981999558349725697.json, 图片生成/文生图/FLIX文生图｜产品写实 超逼真_1896248747091427329.json, 图片生成/文生图/云朵精灵Zhiban，三视图_1880497654135418881.json, 图片生成/文生图/在线一键生成毛绒玩具卡通形象手稿丨含效果图_1901132060025856001.json, 图片生成/文生图/毛绒奇幻国·Zhiban_1880497829063061506.json, 图片生成/文生图/毛绒奇幻国·Zhiban_1880529226179964930.json]
+missing: []
+members: [视频生成/图生视频/2063038125223538690.json, 视频生成/图生视频/2063144841558708225.json, 视频生成/图生视频/2065359403267739650.json, 视频生成/图生视频/2063267448056541186.json, 视频生成/图生视频/2062393408311873538.json, 视频生成/图生视频/2073466192983052289.json, 视频生成/图生视频/2061857100334194689.json, 视频生成/图生视频/2062007172694892545.json, 视频生成/图生视频/2062019836196249601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_29
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1981992176706035713.json、图片生成/文生图/1981999558349725697.json、图片生成/文生图/FLIX文生图｜产品写实 超逼真_1896248747091427329.json、图片生成/文生图/云朵精灵Zhiban，三视图_1880497654135418881.json、图片生成/文生图/在线一键生成毛绒玩具卡通形象手稿丨含效果图_1901132060025856001.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2063038125223538690.json、视频生成/图生视频/2063144841558708225.json、视频生成/图生视频/2065359403267739650.json、视频生成/图生视频/2063267448056541186.json、视频生成/图生视频/2062393408311873538.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 9 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `BerniniConditioning`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `ImageFromBatch`
+- `JWInteger`
 - `KSamplerSelect`
-- `LoraLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `LoadImage`
+- `LoadVideo`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `RHLLMChatNode`
+- `SamplerCustom`
+- `SplitSigmas`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/7 个有
-- `DetailDaemonSamplerNode` —— 2/7 个有
-- `ImageCrop+` —— 2/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `easy imageSize` —— 2/7 个有
-- `SeargePromptCombiner` —— 1/7 个有
+- `BerniniPromptEnhancer` —— 8/9 个有
+- `CreateVideo` —— 8/9 个有
+- `ImageConcanate` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `Float` —— 7/9 个有
+- `BatchImagesNode` —— 6/9 个有
+- `MathExpression|pysssss` —— 5/9 个有
+- `easy batchAnything` —— 5/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `SeedVR2LoadDiTModel` —— 1/9 个有
+- `SeedVR2LoadVAEModel` —— 1/9 个有
+- `SeedVR2VideoUpscaler` —— 1/9 个有
+- `WanContextWindowsManual` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1664 | 768 - 2000 | 7 | 67% |
-| 高度 | 1024 | 1024 - 1280 | 7 | 90% |
-| LoRA 模型强度 | 1 | 0.3 - 1 | 7 | 70% |
-| LoRA 文本强度 | 1 | 0.65 - 3.5 | 7 | 31% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,8 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1664，观测区间 768 - 2000，7 个样本
-- 高度 中位数 1024，观测区间 1024 - 1280，7 个样本，取值集中（一致性 90%）
-- LoRA 模型强度 中位数 1，观测区间 0.3 - 1，7 个样本
-- LoRA 文本强度 中位数 1，观测区间 0.65 - 3.5，7 个样本，取值分散，一致性仅 31%
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、ImageCrop+、SimpleMath+、easy imageSize
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

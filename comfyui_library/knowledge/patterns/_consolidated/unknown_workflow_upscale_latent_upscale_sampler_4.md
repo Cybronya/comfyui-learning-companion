@@ -2,69 +2,81 @@
 name: unknown_workflow_upscale_latent_upscale_sampler_4
 type: Unknown Workflow
 frequency: 12
-level: moderate
-coverage: 0.90525
-common_nodes: [BasicScheduler, CFGGuider, DualCLIPLoader, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoaderKJ]
+level: strong
+coverage: 0.845167
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3导演台V2+图生视频工作流_2072015806417956866.json, 视频生成/文生视频/LTX2.3导演台V2.0_2077936049308917761.json, 视频生成/文生视频/LTX2.3导演台_原生音视频_修复版_2073961723706560514.json, 视频生成/文生视频/LTX_2.3_Director_2.0_多功能导演台7.11优化版工作流_2075912339274162178.json, 视频生成/文生视频/LTX_Director_2_Workflow_FL_frame1_2072131735323758594.json, 视频生成/文生视频/LTX_Director_2_Workflow_extend_video_2070694601605861377.json, 视频生成/文生视频/LTX_Director_2_Workflow_iclora_edit_video_2070699701174890498.json, 视频生成/文生视频/LTX_Director_2_Workflow_retake_mode_2070703453340524545.json, 视频生成/文生视频/LTX导演台2.0【Director】优化工作流已修复_2060326139540885505.json, 视频生成/文生视频/LTX导演台2.0【Director】视频延长+编辑_2069229270215516161.json, 视频生成/文生视频/【3D白模转真实】LTX-2.3 真实物理渲染与驱动_2073385860002832386.json, 视频生成/文生视频/工作流基础系列29-LTX 2.3+Director导演台_2064315632790892545.json]
+members: [视频生成/文生视频/LTX2.3 t2v 2.5D 奶油风格文生视频_2055255391927324673.json, 视频生成/文生视频/LTX2.3 t2v 丝滑过度转场+变身效果_2037115919574507522.json, 视频生成/文生视频/LTX2.3 t2v 优化版 提升画面质量 减少卡顿 减少崩坏_2042604394591559682.json, 视频生成/文生视频/LTX2.3 t2v 优化版 提升画面质量 减少卡顿 减少崩坏_2048010064992145409.json, 视频生成/文生视频/LTX2.3 t2v 优化版_2030584532939841538.json, 视频生成/文生视频/LTX2.3 图生视频ComfyUI工作流【非导演工作台】_2066741149947219969.json, 视频生成/文生视频/LTX2.3 文生_图生视频 官方版_2030578306432634882.json, 视频生成/文生视频/LTX2.3-GGUF-手动提示词版_2034561004020961282.json, 视频生成/文生视频/LTX2.3图生&文生视频_2031683201361518593.json, 视频生成/文生视频/LTX2.3文生视频_2065692334708314114.json, 视频生成/文生视频/video_ltx2_3_i2v_GGUF_2030688003991015426.json, 视频生成/文生视频/video_ltx2_3_i2v图生视频，音画同步视频生成，qwen3.5文本反推，_2042515888879968257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/LTX2.3导演台V2+图生视频工作流_2072015806417956866.json、视频生成/文生视频/LTX2.3导演台V2.0_2077936049308917761.json、视频生成/文生视频/LTX2.3导演台_原生音视频_修复版_2073961723706560514.json、视频生成/文生视频/LTX_2.3_Director_2.0_多功能导演台7.11优化版工作流_2075912339274162178.json、视频生成/文生视频/LTX_Director_2_Workflow_FL_frame1_2072131735323758594.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/LTX2.3 t2v 2.5D 奶油风格文生视频_2055255391927324673.json、视频生成/文生视频/LTX2.3 t2v 丝滑过度转场+变身效果_2037115919574507522.json、视频生成/文生视频/LTX2.3 t2v 优化版 提升画面质量 减少卡顿 减少崩坏_2042604394591559682.json、视频生成/文生视频/LTX2.3 t2v 优化版 提升画面质量 减少卡顿 减少崩坏_2048010064992145409.json、视频生成/文生视频/LTX2.3 t2v 优化版_2030584532939841538.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `BasicScheduler`
 - `CFGGuider`
-- `DualCLIPLoader`
+- `CLIPTextEncode`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LTXDirector`
-- `LTXDirectorGuide`
 - `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXDirectorCropGuides` —— 11/12 个有
-- `LTXVConditioning` —— 11/12 个有
-- `ModelPreviewOverrideKJ` —— 11/12 个有
-- `ConditioningZeroOut` —— 10/12 个有
-- `VAELoader` —— 10/12 个有
-- `CreateVideo` —— 8/12 个有
-- `SaveVideo` —— 8/12 个有
-- `LoraLoaderModelOnly` —— 6/12 个有
-- `CLIPTextEncode` —— 5/12 个有
-- `LTX2_NAG` —— 4/12 个有
-- `VHS_VideoCombine` —— 4/12 个有
-- `LoadImage` —— 3/12 个有
-- `GetNode` —— 2/12 个有
-- `Label (rgthree)` —— 2/12 个有
-- `SetNode` —— 2/12 个有
-- `LTXVCropGuides` —— 1/12 个有
-- `Mesh2MotionExplore` —— 1/12 个有
-- `Power Lora Loader (rgthree)` —— 1/12 个有
-- `PreviewAudio` —— 1/12 个有
-- `Text Multiline` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 11/12 个有
+- `VAEDecodeTiled` —— 11/12 个有
+- `CheckpointLoaderSimple` —— 10/12 个有
+- `LTXAVTextEncoderLoader` —— 10/12 个有
+- `LTXVAudioVAELoader` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 10/12 个有
+- `LTXVImgToVideoInplace` —— 7/12 个有
+- `LTXVPreprocess` —— 7/12 个有
+- `LoadImage` —— 7/12 个有
+- `ResizeImageMaskNode` —— 7/12 个有
+- `ResizeImagesByLongerEdge` —— 7/12 个有
+- `llama_cpp_instruct_adv` —— 7/12 个有
+- `llama_cpp_model_loader` —— 7/12 个有
+- `llama_cpp_parameters` —— 7/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
+- `LTX2_NAG` —— 5/12 个有
+- `DualCLIPLoaderGGUF` —— 2/12 个有
+- `ShowText|pysssss` —— 2/12 个有
+- `UnetLoaderGGUF` —— 2/12 个有
+- `VAELoaderKJ` —— 2/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/12 个有
+- `TTResolutionSelector` —— 1/12 个有
+- `VAEDecode` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
+- `ttN text` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 12 | 100% |
+| 高度 | 25 | 25 - 25 | 12 | 100% |
 
 ## 常见问题
 
@@ -72,4 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）

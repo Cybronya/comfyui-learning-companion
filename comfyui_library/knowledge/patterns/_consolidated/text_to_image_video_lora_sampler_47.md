@@ -1,116 +1,108 @@
 ---
 name: text_to_image_video_lora_sampler_47
 type: Text To Image
-frequency: 14
+frequency: 13
 level: strong
-coverage: 0.838286
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, DrawViTPose, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewAny, PreviewImage, PromptRelayEncode, RH_Captioner, RegexExtract, SamplerCustom, SetNode, StringReplace, Text, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy mathInt, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.881
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX+Animate画质提升版图生视频处理工作流_2101352132011188225.json, 视频生成/图生视频/LTX+animate 画质增强版｜图生视频清晰度直线提升_2096820591998365697.json, 视频生成/图生视频/LTX+animate画质提升｜图生视频高清处理_2093237772462149633.json, 视频生成/图生视频/LTX+animate视频增强画质提升｜图生视频高清化_2089741659234988033.json, 视频生成/图生视频/LTX与animate画质提升｜图生视频清晰度增强处理_2096646919664783361.json, 视频生成/图生视频/带货视频制作｜电商服装展示图生视频一键搞定_2101123800619372545.json, 视频生成/图生视频/服装模特图生视频工作流｜商品展示动态视频生成_2097760030060793857.json, 视频生成/图生视频/电商服装带货专用｜图生视频一键批量生成制作_2093236473716895745.json, 视频生成/图生视频/电商服装带货展示视频图生视频处理生成工具包_2101354114839040002.json, 视频生成/图生视频/电商服装带货视频制作利器｜图生视频轻松出片_2096819064780967937.json, 视频生成/图生视频/电商服装带货视频制作｜图生视频商品展示生成_2096645546810372098.json, 视频生成/图生视频/电商服装带货视频生成｜图生视频一键直出成片_2089287871336370177.json, 视频生成/图生视频/画质提升实战｜LTX+animate动画增强图生视频一号_2101122305043812354.json, 视频生成/图生视频/画质提升｜LTX+animate 视频增强_2089289390064488449.json]
+members: [图片生成/图生图/MiniMax H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2107176958315552769.json, 视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2098819339918073857.json, 视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2098820909527293953.json, 视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2099181667595407361.json, 视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2099549898831126529.json, 视频生成/图生视频/MiniMax H3全参官方指南自动扩展提示词T6工作流_角色一致性图生视频_2106097208906043393.json, 视频生成/图生视频/MiniMax H3全参官方指南自动扩展提示词，角色表演图生视频工作流_2103588976929099778.json, 视频生成/图生视频/MiniMax H3全参连续帧提示词自动优化工作流_图生视频高效创作方案_2106094286554099714.json, 视频生成/图生视频/MiniMax_H3去水印字幕图标加人物替换工作流，去水印其它视频处理方案_2109444784137003010.json, 视频生成/图生视频/MiniMax_H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2109455488231497729.json, 视频生成/图生视频/MinimaxH3 参考编辑人物替换 角色一致性更强_2104987281709953025.json, 视频生成/图生视频/MinimaxH3视频参考编辑T1版｜动作迁移人物替换一键搞定｜视频风格随心换_2104744951228755970.json, 视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1｜视频图生视频换主角_2101905285496524802.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_47
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/LTX+Animate画质提升版图生视频处理工作流_2101352132011188225.json、视频生成/图生视频/LTX+animate 画质增强版｜图生视频清晰度直线提升_2096820591998365697.json、视频生成/图生视频/LTX+animate画质提升｜图生视频高清处理_2093237772462149633.json、视频生成/图生视频/LTX+animate视频增强画质提升｜图生视频高清化_2089741659234988033.json、视频生成/图生视频/LTX与animate画质提升｜图生视频清晰度增强处理_2096646919664783361.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/MiniMax H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2107176958315552769.json、视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2098819339918073857.json、视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2098820909527293953.json、视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2099181667595407361.json、视频生成/图生视频/H3首尾帧官方提示词指南自动扩写 角色一致性分镜生成_2099549898831126529.json…）
 
 - **类型**：Text To Image
-- **样本数**：14
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DrawViTPose`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `PreviewAny`
-- `PreviewImage`
-- `PromptRelayEncode`
-- `RH_Captioner`
-- `RegexExtract`
-- `SamplerCustom`
-- `SetNode`
-- `StringReplace`
+- `PrimitiveFloat`
+- `RHHiddenNodes`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy mathInt`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 3/14 个有
-- `Int` —— 1/14 个有
-- `LoadAudio` —— 1/14 个有
+- `孤海注释` —— 12/13 个有
+- `SaveImage` —— 11/13 个有
+- `easy showAnything` —— 11/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/13 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/13 个有
+- `PreviewImage` —— 9/13 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 9/13 个有
+- `Float to Int` —— 6/13 个有
+- `GetVideoComponents` —— 6/13 个有
+- `ImageConcatenate_UTK` —— 6/13 个有
+- `ImageFromBatch` —— 6/13 个有
+- `Int` —— 6/13 个有
+- `LoadVideo` —— 6/13 个有
+- `Video Duration Calculator` —— 6/13 个有
+- `easy imageCount` —— 6/13 个有
+- `easy indexAnything` —— 6/13 个有
+- `easy mathInt` —— 6/13 个有
+- `ExtractStoryboards_xuhuan1024` —— 5/13 个有
+- `InspyrenetRembg` —— 5/13 个有
+- `ImageResizeKJv2` —— 4/13 个有
+- `MiniMaxH3ImageToVideo` —— 4/13 个有
+- `EmptyImage` —— 3/13 个有
+- `ResolutionSelector` —— 3/13 个有
+- `ImageConcatenateMulti_UTK` —— 2/13 个有
+- `FlashVSR_SM_KSampler` —— 1/13 个有
+- `FlashVSR_SM_Model` —— 1/13 个有
+- `JWInteger` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `LoadAudio` —— 1/13 个有
+- `easy imageSplitGrid` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 14 | 100% |
-| 高度 | 80 | 80 - 80 | 14 | 100% |
-| 采样步数 | 4 | 4 - 4 | 14 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
-| 采样算法 | er_sde | - | 14 | 100% |
-| 调度器 | beta | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | 4 | 4 - 4 | 13 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 13 | 100% |
+| 采样算法 | er_sde | - | 13 | 100% |
+| 调度器 | beta | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 80 | 80 - 80 | 13 | 100% |
+| 高度 | 80 | 80 - 80 | 13 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，14 个样本，一致性 100%
-- 调度器 最常用 beta，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（15/14 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，13 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，13 个样本，一致性 100%
+- 调度器 最常用 beta，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

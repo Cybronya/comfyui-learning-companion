@@ -2,101 +2,75 @@
 name: unknown_workflow_video_sampler_clip_74
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.681143
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, INTConstant, ImageLoader, ImageResizeKJ, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanMoeKSampler, WanVideoNAG, easy int, easy positive, easy seed, easy showAnything]
-problems: []
-missing: []
-members: [视频生成/图生视频/2003823135168339969.json, 视频生成/图生视频/2008209726496051201.json, 视频生成/图生视频/视频-首尾帧视频扩写(动漫-真人)_2091124043847127042.json, 视频生成/图生视频/1986618366645465090.json, 视频生成/图生视频/1983005590224011265.json, 视频生成/图生视频/1973043040770199553.json, 视频生成/图生视频/2011383850940764161.json]
+level: weak
+coverage: 0.886714
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
+missing: [LayerUtility: ImageScaleByAspectRatio V2, Note Plus (mtb), easy imageSize]
+members: [图片生成/文生图/1903369844585041921.json, 视频生成/图生视频/2021960428812771330.json, 视频生成/图生视频/1924384393446477826.json, 视频生成/图生视频/1940719231082328066.json, 视频生成/图生视频/2001218246663602177.json, 视频生成/图生视频/2000392269180137473.json, 视频生成/文生视频/1903369844585041921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_74
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2003823135168339969.json、视频生成/图生视频/2008209726496051201.json、视频生成/图生视频/视频-首尾帧视频扩写(动漫-真人)_2091124043847127042.json、视频生成/图生视频/1986618366645465090.json、视频生成/图生视频/1983005590224011265.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1903369844585041921.json、视频生成/图生视频/2021960428812771330.json、视频生成/图生视频/1924384393446477826.json、视频生成/图生视频/1940719231082328066.json、视频生成/图生视频/2001218246663602177.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：68%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageLoader`
-- `ImageResizeKJ`
-- `ImpactFloat`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSampler`
+- `LoadImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanMoeKSampler`
-- `WanVideoNAG`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `ImageFromBatch` —— 6/7 个有
-- `MemoryCleaner` —— 6/7 个有
-- `ModelBlockSwap` —— 6/7 个有
 - `PreviewImage` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `StringFunction|pysssss` —— 6/7 个有
-- `easy anythingIndexSwitch` —— 6/7 个有
-- `easy imageSize` —— 6/7 个有
-- `MultiplePathsInput` —— 5/7 个有
-- `Qwen3_VQA` —— 5/7 个有
-- `RH_LLMAPI_NODE` —— 4/7 个有
-- `ImageConcanate` —— 3/7 个有
-- `CLIPVisionEncode` —— 1/7 个有
-- `CLIPVisionLoader` —— 1/7 个有
-- `CM_IntUnaryOperation` —— 1/7 个有
-- `Florence2ModelLoader` —— 1/7 个有
-- `Florence2Run` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `ImageListToBatch+` —— 1/7 个有
-- `ImageToDevice+` —— 1/7 个有
-- `JoinStrings` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `RHUploadZip_V2` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
-- `easy batchAnything` —— 1/7 个有
-- `easy forLoopEnd` —— 1/7 个有
-- `easy forLoopStart` —— 1/7 个有
-- `easy string` —— 1/7 个有
+- `WanImageToVideo` —— 6/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
+- `ModelSamplingSD3` —— 5/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `ApplySageAttention` —— 2/7 个有
+- `ImageResize+` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `Note Plus (mtb)` —— 2/7 个有
+- `SaveWEBM` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `WanVideoTeaCacheKJ` —— 2/7 个有
+- `easy imageSize` —— 2/7 个有
+- `WanFirstLastFrameToVideo` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | 1 | 1 - 1 | 7 | 100% |
-| 重绘幅度 | sa_solver | - | 7 | 86% |
+| 采样步数 | 20 | 5 - 30 | 7 | 41% |
+| Prompt 约束强度(CFG) | 4 | 1 - 6 | 7 | 35% |
+| 采样算法 | uni_pc | - | 7 | 57% |
+| 调度器 | simple | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 sa_solver，7 个样本，一致性 86%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 20，观测区间 5 - 30，7 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 6，7 个样本，取值分散，一致性仅 35%
+- 采样算法 最常用 uni_pc，7 个样本，一致性 57%
+- 调度器 最常用 simple，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、Note Plus (mtb)、easy imageSize

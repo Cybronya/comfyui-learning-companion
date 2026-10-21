@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_10
 type: Unknown Workflow
-frequency: 20
+frequency: 26
 level: moderate
-coverage: 0.994
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio, Text Multiline]
+coverage: 0.718115
+common_nodes: [LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS2_语音_音色_克隆_情绪自定义-老王_2097582552168099842.json, 视频生成/文生视频/tts2双人对话，单人对话带音色_2019382320083509250.json, 音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1965465752209866754.json, 音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1994617289439842306.json, 音频生成/音频生成/IndexTTS2 Run 单人音频+音频情绪控制_2109809705345445890.json, 音频生成/音频生成/IndexTTS2 亚迪AI涂经理工作流_2036633584773107713.json, 音频生成/音频生成/IndexTTS2 声音克隆-单人音频(情绪控制)-双人音频_1988073614257926145.json, 音频生成/音频生成/IndexTTS2-单人-情感-声音克隆_2058593812238389250.json, 音频生成/音频生成/IndexTTS2-声音克隆_1968934120409686018.json, 音频生成/音频生成/IndexTTS2-声音克隆_1979001378074955778.json, 音频生成/音频生成/IndexTTS2-声音克隆_1980084459066265601.json, 音频生成/音频生成/IndexTTS2-声音克隆_2003281991577559041.json, 音频生成/音频生成/IndexTTS2-有温度的声音克隆-单人音频_1982442452768440321.json, 音频生成/音频生成/IndexTTS2-有温度的声音克隆-双人音频_1982448686699552770.json, 音频生成/音频生成/IndexTTS2_1998361145272623105.json, 音频生成/音频生成/IndexTTS2_2015293179448266754.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2039948812336242690.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2043572634868256769.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2064259148337995778.json, 音频生成/音频生成/IndexTTS2_更专业的情感向量控制_语音_音色克隆_2012710824451772417.json]
+members: [音频生成/音频生成/Fish S2 TTS工作流-多角色配音_2034503029533184001.json, 音频生成/音频生成/FishAudio S2 TTS--双人语音克隆_2033213861117038593.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033118239160537090.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033384864254271489.json, 音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033513380333494274.json, 音频生成/音频生成/FishAudio S2 TTS多人语音克隆【对话版】_2034897039745622017.json, 音频生成/音频生成/FishAudio S2 双人对话配音工作流（克隆与情感对话）_2083510070012366849.json, 音频生成/音频生成/FishAudio S2多人对话配音模仿音色生成器_2035736179924013057.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆-支持粤语-上海话-成都话等等）_1983796918008651777.json, 音频生成/音频生成/【3月】FishAudio S2TTS双人对话音色克隆_2033545964560060418.json, 音频生成/音频生成/上海话克隆方案_2019290074126487554.json, 音频生成/音频生成/声音克隆-王也-TTS_1970759411755065345.json, 音频生成/音频生成/声音克隆方言版VoxCPM TTS_1970700878623764482.json, 音频生成/音频生成/支持方言克隆VoxCPM TTS_2033823161522855937.json, 音频生成/音频生成/方言克隆VoxCPM TTS V1.5_1970710435227987969.json, 音频生成/音频生成/方言克隆VoxCPM TTS V1.5_2034104742531567617.json, 音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS V2_1970517276229332994.json, 音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS新版_2015809776566935553.json, 音频生成/音频生成/（四川话冯宝宝版）VoxCPM 1.5模型新版 TTS V6_1970503768104181762.json, 音频生成/音频生成/（天津话）VoxCPM 1.5模型 TTS V3_1970510709371117570.json, 音频生成/音频生成/（天津话）VoxCPM 1.5模型TTS语音克隆新版_2015817229698342914.json, 音频生成/音频生成/（广东话）VoxCPM 1.5模型 TTS V3_1970515445252038658.json, 音频生成/音频生成/（广东话）VoxCPM TTS V2_1993570822308773890.json, 音频生成/音频生成/（广西话）VoxCPM 1.5模型TTS语音克隆新版_2015820758781534209.json, 音频生成/音频生成/（河南话）VoxCPM 1.5模型TTS语音克隆新版_2015815964285214722.json, 音频生成/音频生成/（粤语）VoxCPM 1.5模型TTS语音克隆新版_2015812620049190914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_10
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（数字人/数字人/IndexTTS2_语音_音色_克隆_情绪自定义-老王_2097582552168099842.json、视频生成/文生视频/tts2双人对话，单人对话带音色_2019382320083509250.json、音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1965465752209866754.json、音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1994617289439842306.json、音频生成/音频生成/IndexTTS2 Run 单人音频+音频情绪控制_2109809705345445890.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（音频生成/音频生成/Fish S2 TTS工作流-多角色配音_2034503029533184001.json、音频生成/音频生成/FishAudio S2 TTS--双人语音克隆_2033213861117038593.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033118239160537090.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033384864254271489.json、音频生成/音频生成/FishAudio S2 TTS双人语音克隆对话版V1_2033513380333494274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `IndexTTS2Run`
+全部 26 个 workflow 都包含：
 - `LoadAudio`
 - `SaveAudio`
-- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 19/20 个有
-- `CR Text` —— 17/20 个有
-- `CR Prompt Text` —— 4/20 个有
-- `AudioSeparation` —— 3/20 个有
-- `LoadImage` —— 1/20 个有
+- `CR Prompt Text` —— 23/26 个有
+- `VoxCPM_TTS` —— 17/26 个有
+- `FishS2MultiSpeakerTTS` —— 9/26 个有
+- `LoadImage` —— 2/26 个有
 
 ## 典型参数
 

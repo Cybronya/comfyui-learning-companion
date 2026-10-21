@@ -3,105 +3,91 @@ name: unknown_workflow_video_lora_sampler_162
 type: Unknown Workflow
 frequency: 11
 level: strong
-coverage: 0.620545
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, ImageResizeKJv2, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.761818
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, ImageScaleBy, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelSamplingSD3, Pick From Batch (mtb), Qwen3_VQA, SaveImage, Seed (rgthree), Text Concatenate, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/2064169491482894338.json, 视频生成/图生视频/1996396266479296514.json, 视频生成/图生视频/1995679581803778050.json, 视频生成/图生视频/2073284965781032961.json, 视频生成/图生视频/1997949647484256258.json, 视频生成/图生视频/1996237432284651521.json, 视频生成/图生视频/2068694345024360450.json, 视频生成/图生视频/1996110517959868418.json, 视频生成/图生视频/2037499475232559105.json, 视频生成/图生视频/2049292828706086913.json, 视频生成/图生视频/1996562415049383938.json]
+members: [视频生成/图生视频/1983048736781795330.json, 视频生成/图生视频/2033462929286242305.json, 视频生成/图生视频/1982721428191625217.json, 视频生成/图生视频/1998585239263961090.json, 视频生成/图生视频/1986359267705946114.json, 视频生成/图生视频/1986359186177093633.json, 视频生成/图生视频/1986492572971528194.json, 视频生成/图生视频/1987523064843931649.json, 视频生成/图生视频/2010958375034556418.json, 视频生成/图生视频/1986492511554334721.json, 视频生成/文生视频/Wan2.2 Smooth + Qwen3 VL反推扩写图生视频V2_1982707054148231169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_162
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2064169491482894338.json、视频生成/图生视频/1996396266479296514.json、视频生成/图生视频/1995679581803778050.json、视频生成/图生视频/2073284965781032961.json、视频生成/图生视频/1997949647484256258.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1983048736781795330.json、视频生成/图生视频/2033462929286242305.json、视频生成/图生视频/1982721428191625217.json、视频生成/图生视频/1998585239263961090.json、视频生成/图生视频/1986359267705946114.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `ImageScaleBy`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `Pick From Batch (mtb)`
+- `Qwen3_VQA`
+- `SaveImage`
+- `Seed (rgthree)`
+- `Text Concatenate`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 10/11 个有
-- `GetNode` —— 10/11 个有
-- `SetNode` —— 10/11 个有
-- `WanVideoTorchCompileSettings` —— 9/11 个有
-- `ImageConcatMulti` —— 8/11 个有
-- `JWInteger` —— 8/11 个有
-- `CheckpointLoaderSimple` —— 7/11 个有
-- `EmptyLatentImage` —— 7/11 个有
-- `KSampler` —— 7/11 个有
-- `LayerUtility: PurgeVRAM` —— 7/11 个有
-- `PrimitiveInt` —— 7/11 个有
-- `SimpleMath+` —— 7/11 个有
-- `TextEncodeQwenImageEditPlus` —— 7/11 个有
-- `VAEDecode` —— 7/11 个有
-- `ttN float` —— 7/11 个有
-- `ImageFromBatch+` —— 6/11 个有
-- `JjkText` —— 6/11 个有
-- `LoraLoaderModelOnly` —— 6/11 个有
-- `SaveImage` —— 6/11 个有
-- `LoadImage` —— 5/11 个有
-- `Text` —— 4/11 个有
-- `Text Concatenate` —— 4/11 个有
-- `Text Multiline` —— 4/11 个有
-- `easy anythingIndexSwitch` —— 4/11 个有
-- `DF_Int_to_Float` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
-- `TT_img_enc` —— 1/11 个有
+- `ImageResizeKJv2` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `WanImageToVideo` —— 10/11 个有
+- `easy cleanGpuUsed` —— 10/11 个有
+- `Any To Any` —— 8/11 个有
+- `TT_img_enc` —— 8/11 个有
+- `VHS_SelectFilename` —— 8/11 个有
+- `TT_img_enc_v2` —— 7/11 个有
+- `UnetLoaderGGUF` —— 6/11 个有
+- `ColorMatch` —— 5/11 个有
+- `PathchSageAttentionKJ` —— 5/11 个有
+- `PreviewImage` —— 5/11 个有
+- `LayerUtility: PurgeVRAM` —— 4/11 个有
+- `wanBlockSwap` —— 4/11 个有
+- `AILab_QwenVL` —— 3/11 个有
+- `RH_LLMAPI_NODE` —— 3/11 个有
+- `ImageLoader` —— 2/11 个有
+- `MultiplePathsInput` —— 2/11 个有
+- `DuckHideNode` —— 1/11 个有
+- `GetImageSizeAndCount` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
+- `PainterI2V` —— 1/11 个有
+- `WanFirstLastFrameToVideo` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 720 | 720 - 768 | 7 | 98% |
-| 高度 | 1280 | 768 - 1280 | 7 | 85% |
+| 采样步数 | fixed | - | 11 | 91% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 11 | 100% |
+| 采样算法 | 1 | 1 - 1 | 11 | 100% |
+| 调度器 | euler_ancestral | - | 11 | 100% |
+| 重绘幅度 | simple | - | 11 | 91% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 720，观测区间 720 - 768，7 个样本，取值集中（一致性 98%）
-- 高度 中位数 1280，观测区间 768 - 1280，7 个样本，取值集中（一致性 85%）
-- 高发问题（7/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，11 个样本，一致性 91%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，11 个样本，一致性 100%
+- 重绘幅度 最常用 simple，11 个样本，一致性 91%

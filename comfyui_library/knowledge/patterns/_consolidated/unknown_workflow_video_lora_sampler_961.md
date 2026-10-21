@@ -3,64 +3,70 @@ name: unknown_workflow_video_lora_sampler_961
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, GetImageRangeFromBatch, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.625
+common_nodes: [1hew_AnySwitchSelect, Any Switch (rgthree), Bookmark (rgthree), CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, Int, KSamplerAdvanced, Label (rgthree), LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveString, PrimitiveStringMultiline, SaveImage, SetNode, SimpleMath+, StringConcatenate, TT_img_enc_v2, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy int, easy seed, text_mul_Join]
 problems: []
 missing: []
-members: [音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2030312017944383489.json, 音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2076279979465330690.json]
+members: [视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051901085580840962.json, 视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051927696871051266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_961
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2030312017944383489.json、音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2076279979465330690.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051901085580840962.json、视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051927696871051266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
+- `1hew_AnySwitchSelect`
+- `Any Switch (rgthree)`
+- `Bookmark (rgthree)`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `GetImageRangeFromBatch`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVideoMask`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `EmptyHunyuanLatentVideo`
+- `GetNode`
+- `Int`
+- `KSamplerAdvanced`
+- `Label (rgthree)`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
 - `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `SaveImage`
+- `SetNode`
+- `SimpleMath+`
+- `StringConcatenate`
+- `TT_img_enc_v2`
 - `UNETLoader`
-- `VAEEncode`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `WanImageToVideo`
+- `easy int`
+- `easy seed`
+- `text_mul_Join`
+
+**可变部分**（部分 workflow 才有）：
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 20 | - | 2 | 100% |
+| 采样算法 | 3.5 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -68,6 +74,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

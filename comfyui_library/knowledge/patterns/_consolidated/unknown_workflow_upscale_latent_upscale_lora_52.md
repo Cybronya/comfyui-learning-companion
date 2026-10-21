@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_52
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.8772
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled]
-problems: []
+coverage: 0.896167
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2041020461265457154.json, 视频生成/图生视频/2052201685388406786.json, 视频生成/图生视频/2067639353119174658.json, 视频生成/文生视频/LTX-Video (2.3) IC-LoRA_ 双人分镜头对话_2038235232167534593.json, 视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json]
+members: [视频生成/图生视频/2039914785319424002.json, 视频生成/图生视频/2013531899406323713.json, 视频生成/图生视频/2021998636346904578.json, 视频生成/图生视频/2015590078243938306.json, 视频生成/图生视频/2008822192066269185.json, 视频生成/文生视频/LTX2.0 图生视频工作流（48G）_2008873261282627585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_52
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2041020461265457154.json、视频生成/图生视频/2052201685388406786.json、视频生成/图生视频/2067639353119174658.json、视频生成/文生视频/LTX-Video (2.3) IC-LoRA_ 双人分镜头对话_2038235232167534593.json、视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2039914785319424002.json、视频生成/图生视频/2013531899406323713.json、视频生成/图生视频/2021998636346904578.json、视频生成/图生视频/2015590078243938306.json、视频生成/图生视频/2008822192066269185.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
@@ -36,60 +38,61 @@ source: knowledge_consolidation
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveBoolean`
 - `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImageMaskNode`
 - `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `CreateVideo` —— 3/5 个有
-- `SaveVideo` —— 3/5 个有
-- `ImageSharpen` —— 2/5 个有
-- `LTX2SamplingPreviewOverride` —— 2/5 个有
-- `LTXVEnhanceAVideoKJ` —— 2/5 个有
-- `LTXVScheduler` —— 2/5 个有
-- `PathchSageAttentionKJ` —— 2/5 个有
-- `VAEDecode` —— 2/5 个有
-- `VHS_VideoCombine` —— 2/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `FastFilmGrain` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `ImageScaleDownBy` —— 1/5 个有
-- `LTX2_NAG` —— 1/5 个有
-- `LTXVReferenceAudio` —— 1/5 个有
-- `LoraLoader` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PromptRelayEncode` —— 1/5 个有
-- `TextGenerateLTX2Prompt` —— 1/5 个有
-- `VHS_LoadAudioUpload` —— 1/5 个有
+- `ImageResizeKJv2` —— 5/6 个有
+- `LTXVImgToVideoInplace` —— 5/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `CreateVideo` —— 2/6 个有
+- `ImpactInt` —— 2/6 个有
+- `SaveVideo` —— 2/6 个有
+- `SimpleMath+` —— 2/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `BetaSamplingScheduler` —— 1/6 个有
+- `CLIPLoader` —— 1/6 个有
+- `ConditioningZeroOut` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `KSampler` —— 1/6 个有
+- `LTXVFirstLastFrameControl_TTP` —— 1/6 个有
+- `MemoryCleaner` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/6 个有
+- `UNETLoader` —— 1/6 个有
+- `VAELoader` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

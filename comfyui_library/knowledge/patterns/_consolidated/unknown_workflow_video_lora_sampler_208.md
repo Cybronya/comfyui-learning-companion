@@ -3,81 +3,81 @@ name: unknown_workflow_video_lora_sampler_208
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.755889
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.544222
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/AI Video Studio PR插件VIP专用数字人口播(视频)工作流_2094295481898856450.json, 数字人/数字人/Infinitetalk_2099404964316663810.json, 视频生成/图生视频/1986688355087937537.json, 视频生成/图生视频/2073213335511846913.json, 视频生成/图生视频/1958763017179721730.json, 视频生成/图生视频/2013150744169422849.json, 视频生成/图生视频/1958413596264972289.json, 视频生成/文生视频/Aiwood-改进版KJ-Infinitetalk视频对口型工作流_1963994200775737346.json, 音频生成/音频生成/InfiniteTalk视频转视频音频【AI小王子】_1962038038358593538.json]
+members: [视频生成/图生视频/1971474322126782465.json, 视频生成/图生视频/1975351604679413761.json, 视频生成/图生视频/2030543201047678977.json, 视频生成/图生视频/4V商用版本 支持 运镜，切镜头，武术，跳舞，侧面迁移，_2093353108847030274.json, 视频生成/图生视频/1976931314983161857.json, 视频生成/图生视频/1975030930718986242.json, 视频生成/图生视频/1980113724029702145.json, 视频生成/图生视频/2013906240371429377.json, 视频生成/文生视频/图生视频 极速版 动作模仿 动作迁移 人物替换 Wan 2.2_2044310101514788865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_208
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/AI Video Studio PR插件VIP专用数字人口播(视频)工作流_2094295481898856450.json、数字人/数字人/Infinitetalk_2099404964316663810.json、视频生成/图生视频/1986688355087937537.json、视频生成/图生视频/2073213335511846913.json、视频生成/图生视频/1958763017179721730.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1971474322126782465.json、视频生成/图生视频/1975351604679413761.json、视频生成/图生视频/2030543201047678977.json、视频生成/图生视频/4V商用版本 支持 运镜，切镜头，武术，跳舞，侧面迁移，_2093353108847030274.json、视频生成/图生视频/1976931314983161857.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `DrawViTPose`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 8/9 个有
-- `ImageResizeKJv2` —— 8/9 个有
-- `LoadAudio` —— 8/9 个有
-- `PreviewAny` —— 8/9 个有
+- `BlockifyMask` —— 8/9 个有
+- `DrawMaskOnImage` —— 8/9 个有
+- `ImageConcatMulti` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
 - `WanVideoTorchCompileSettings` —— 8/9 个有
-- `easy int` —— 8/9 个有
-- `Display Int (rgthree)` —— 7/9 个有
-- `INTConstant` —— 7/9 个有
-- `ImageConcatMulti` —— 7/9 个有
-- `SetNode` —— 7/9 个有
-- `SimpleMath+` —— 7/9 个有
-- `SoundFlow_GetLength` —— 7/9 个有
-- `ToInt` —— 7/9 个有
-- `GetNode` —— 6/9 个有
-- `ImageBatchMulti` —— 5/9 个有
-- `ReverseImageBatch` —— 5/9 个有
-- `Anything Everywhere` —— 1/9 个有
-- `BatchThief` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
-- `FlashVSRNode` —— 1/9 个有
-- `GIMMVFI_interpolate` —— 1/9 个有
-- `GetImageSize` —— 1/9 个有
-- `ImpactInt` —— 1/9 个有
-- `IndexTTS2Run` —— 1/9 个有
-- `JWIntegerToString` —— 1/9 个有
-- `MegaTTS3` —— 1/9 个有
-- `MultiLinePromptIndex` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `PreviewAudio` —— 1/9 个有
-- `SDVN Any Show` —— 1/9 个有
-- `SaveAudioMP3` —— 1/9 个有
+- `DownloadAndLoadSAM2Model` —— 7/9 个有
+- `Int` —— 7/9 个有
+- `Sam2Segmentation` —— 7/9 个有
+- `GetImageSizeAndCount` —— 6/9 个有
+- `GrowMask` —— 6/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `MathExpression|pysssss` —— 5/9 个有
+- `INTConstant` —— 4/9 个有
+- `ImageBlend` —— 4/9 个有
+- `ImpactInt` —— 4/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 3/9 个有
+- `GIMMVFI_interpolate` —— 3/9 个有
+- `ImageFromBatch` —— 3/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/9 个有
+- `CR Text` —— 2/9 个有
+- `GrowMaskWithBlur` —— 2/9 个有
+- `GemmaAPITextEncode` —— 1/9 个有
+- `ImageRemoveBackground+` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `RIFE VFI` —— 1/9 个有
+- `RemBGSession+` —— 1/9 个有
+- `ShellAgentPluginSaveAudios` —— 1/9 个有
 - `Text` —— 1/9 个有
-- `scale` —— 1/9 个有
+- `Textbox` —— 1/9 个有
+- `WanVideoContextOptions` —— 1/9 个有
+- `easy positive` —— 1/9 个有
+- `int _O` —— 1/9 个有
 
 ## 典型参数
 

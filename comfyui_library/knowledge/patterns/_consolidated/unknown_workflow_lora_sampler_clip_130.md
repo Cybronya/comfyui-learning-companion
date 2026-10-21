@@ -1,59 +1,53 @@
 ---
 name: unknown_workflow_lora_sampler_clip_130
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.743
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateVideo, DF_Int_to_Float, EmptyHunyuanLatentVideo, Int, JWStringConcat, KSamplerAdvanced, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, RH_LLMAPI_NODE, SaveVideo, ShowText|pysssss, TextConcat, UNETLoader, VAEDecode, VAELoader, Wan22PromptSelector, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.983333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptyLatentImage, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: [MathExpression|pysssss, CR Prompt Text]
-members: [视频生成/图生视频/1973571337966981122.json, 视频生成/文生视频/1973571337966981122.json]
+missing: []
+members: [图片生成/文生图/低显存Flux文生图工作流_1900451456095498241.json, 图片生成/文生图/生成系列性服装设计_1884234765942538241.json, 图片生成/文生图/风后文生图_1878760414459932673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_130
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1973571337966981122.json、视频生成/文生视频/1973571337966981122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/低显存Flux文生图工作流_1900451456095498241.json、图片生成/文生图/生成系列性服装设计_1884234765942538241.json、图片生成/文生图/风后文生图_1878760414459932673.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CreateVideo`
-- `DF_Int_to_Float`
-- `EmptyHunyuanLatentVideo`
-- `Int`
-- `JWStringConcat`
-- `KSamplerAdvanced`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `RH_LLMAPI_NODE`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `TextConcat`
-- `UNETLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `VAEDecode`
 - `VAELoader`
-- `Wan22PromptSelector`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `DualCLIPLoader` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `DualCLIPLoaderGGUF` —— 1/3 个有
+- `LatentUpscaleBy` —— 1/3 个有
+- `UnetLoaderGGUF` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+| 宽度 | 1024 | 768 - 1080 | 3 | 86% |
+| 高度 | 1280 | 1024 - 1920 | 3 | 73% |
 
 ## 常见问题
 
@@ -61,10 +55,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、CR Prompt Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 768 - 1080，3 个样本，取值集中（一致性 86%）
+- 高度 中位数 1280，观测区间 1024 - 1920，3 个样本

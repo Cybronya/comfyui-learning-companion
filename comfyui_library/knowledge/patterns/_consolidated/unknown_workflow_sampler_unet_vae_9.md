@@ -3,64 +3,68 @@ name: unknown_workflow_sampler_unet_vae_9
 type: Unknown Workflow
 frequency: 21
 level: moderate
-coverage: 0.914286
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader]
+coverage: 0.729
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(Singularity+Vdn+Lightx2v)MiniMax H3单采极速参考生视频V2_2096501713606889473.json, 视频生成/图生视频/(Singularity+Vdn文戏版)MiniMax H3单采极速参考生视频V2_2096495207192809474.json, 视频生成/图生视频/Minimax-H3-图生视频(双时钟+8步极速)_2085725669090217986.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2091862483253420033.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2094377324660748290.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2094389923125227522.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2107425978141204482.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2107430235129077762.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频短剧漫剧_2091841380472676354.json, 视频生成/图生视频/Minimax-H3极速2分钟出5秒-图生_多参生视频(双时钟-8步lora)_2085608744465035265.json, 视频生成/图生视频/Minimax图生视频_2088591493631135746.json, 视频生成/图生视频/Minimax图生视频（Lightx2v正式版8步lora+双时钟）_2087718729126862850.json, 视频生成/图生视频/Minimax海螺h3开源版 8步高质量极速图生视频加速优化版_2085679906003968001.json, 视频生成/图生视频/Minmax h3-10Eros-max-Sigmas值调度_2088833172883722242.json, 视频生成/图生视频/QHDMinimax-H3加速版_2086351325427748866.json, 视频生成/图生视频/Vdn MiniMax H3极速参考生视频_2096241438156742657.json, 视频生成/图生视频/minimax H3 8.23_2091335794387673090.json, 视频生成/图生视频/minimax参考生视频-4张图官方案例（light2v8步lora正式版+双时钟）_2087937856227602434.json, 视频生成/图生视频/minimax图生视频（light2v8步lora正式版+双时钟）_2087533230470811649.json, 视频生成/图生视频/v3 minimax h3超级加强！清晰度天花板_2088502342512631810.json, 视频生成/图生视频/v4 minimax h3-Sigmas 区间控制_2089033224172425217.json]
+members: [视频生成/图生视频/MiniMax H3 FL2VA开源版-单图生成视频-工作流_2093578786934710274.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-尾帧视频-工作流_2093527771631931393.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧生成视频-工作流-v2版本_2092500053683433474.json, 视频生成/图生视频/MiniMax H3 图生视频（开源版）_2084993401539358721.json, 视频生成/图生视频/MiniMax H3 首尾帧_图生视频_2085645887220568065.json, 视频生成/图生视频/MiniMax H3-全能参考  三图版+一视频_2094421879401574401.json, 视频生成/图生视频/MiniMax H3-全能参考-三图版_2094413856083898369.json, 视频生成/图生视频/MiniMax H3-全能参考-双图版_2089995459833192449.json, 视频生成/图生视频/MiniMax H3-全能参考-四图版_2094418452898476034.json, 视频生成/图生视频/MiniMax H3-全能参考一图版_2094433073793421313.json, 视频生成/图生视频/MiniMax H3全能参考（图片、音频、视频皆可参考）_2084166446040567809.json, 视频生成/图生视频/MiniMax H3：参考生视频_2095783894242127874.json, 视频生成/图生视频/MiniMax H3：参考生视频（加速）_2096113080844513282.json, 视频生成/图生视频/MiniMax H3：图生视频_2095788026013249538.json, 视频生成/图生视频/MiniMax H3｜武打导演工作流 9组预设_2109867240077217794.json, 视频生成/图生视频/MiniMax_H3_七套服装连续换装_2094786595428847617.json, 视频生成/图生视频/Minimax H3 单张参考图生视频标准版_2102224374689517569.json, 视频生成/图生视频/Minimax H3 首尾帧图生视频标准版_2102237236300435457.json, 视频生成/图生视频/Minimax_H3_单张参考图生视频标准版_2102317605854990338.json, 视频生成/图生视频/Minimax_H3_首尾帧图生视频标准版_2104053564233568257.json, 视频生成/图生视频/Minimax图生视频I2V_2099170083997315073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/(Singularity+Vdn+Lightx2v)MiniMax H3单采极速参考生视频V2_2096501713606889473.json、视频生成/图生视频/(Singularity+Vdn文戏版)MiniMax H3单采极速参考生视频V2_2096495207192809474.json、视频生成/图生视频/Minimax-H3-图生视频(双时钟+8步极速)_2085725669090217986.json、视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2091862483253420033.json、视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2094377324660748290.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA开源版-单图生成视频-工作流_2093578786934710274.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-尾帧视频-工作流_2093527771631931393.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧生成视频-工作流-v2版本_2092500053683433474.json、视频生成/图生视频/MiniMax H3 图生视频（开源版）_2084993401539358721.json、视频生成/图生视频/MiniMax H3 首尾帧_图生视频_2085645887220568065.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 21 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
 - `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 19/21 个有
-- `MiniMaxH3DualClockSamplerT8` —— 18/21 个有
-- `VHS_VideoCombine` —— 18/21 个有
-- `LoraLoaderBypassModelOnly` —— 17/21 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 17/21 个有
-- `ModelAttentionBackend` —— 14/21 个有
-- `SolAttnMiniMax` —— 10/21 个有
-- `LoraLoaderModelOnly` —— 4/21 个有
-- `CreateVideo` —— 3/21 个有
-- `ExtendIntermediateSigmas` —— 3/21 个有
-- `H3SigmaRefiner` —— 3/21 个有
-- `LoadAudio` —— 3/21 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 3/21 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 3/21 个有
-- `SaveVideo` —— 3/21 个有
-- `BasicScheduler` —— 2/21 个有
-- `ImageResizeKJv2` —— 2/21 个有
-- `KSamplerSelect` —— 2/21 个有
-- `PT_H3ConcatAVLatent` —— 2/21 个有
-- `VAEEncodeTiled` —— 2/21 个有
-- `ModelPreviewOverrideKJ` —— 1/21 个有
-- `SaveImage` —— 1/21 个有
-- `easy cleanGpuUsed` —— 1/21 个有
-- `solarL_VideoFrameRelay` —— 1/21 个有
+- `LoraLoaderModelOnly` —— 19/21 个有
+- `ComfySwitchNode` —— 18/21 个有
+- `PrimitiveBoolean` —— 18/21 个有
+- `PrimitiveInt` —— 18/21 个有
+- `ResolutionSelector` —— 14/21 个有
+- `MiniMaxH3ImageToVideo` —— 12/21 个有
+- `PrimitiveStringMultiline` —— 11/21 个有
+- `MiniMaxH3ReferenceToVideo` —— 10/21 个有
+- `GetImageSize` —— 9/21 个有
+- `ImageScaleToTotalPixels` —— 6/21 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/21 个有
+- `LoadAudio` —— 4/21 个有
+- `CR Text` —— 3/21 个有
+- `ImageScale` —— 3/21 个有
+- `EmptyImage` —— 2/21 个有
+- `MiniMaxH3SigmaShift` —— 2/21 个有
+- `PreviewImage` —— 2/21 个有
+- `AudioCrop` —— 1/21 个有
+- `BlockSparseAttention` —— 1/21 个有
+- `GetNode` —— 1/21 个有
+- `MinimaxH3LatentUpscaler3DRefineHandoff` —— 1/21 个有
+- `ModelAttentionBackend` —— 1/21 个有
+- `SetNode` —— 1/21 个有
+- `VHS_LoadVideo` —— 1/21 个有
+- `easy minimaxH3AudioLock` —— 1/21 个有
 
 ## 典型参数
 

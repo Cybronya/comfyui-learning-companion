@@ -3,54 +3,78 @@ name: unknown_workflow_video_sampler_vae_137
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95475
-common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.6455
+common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageFromBatch+, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, PrimitiveFloat, Qwen3_VQA, SetNode, ShowText|pysssss, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1923636242792312834.json, 视频生成/图生视频/1924304259204960258.json, 视频生成/文生视频/1923351101066629121.json, 视频生成/文生视频/1922867883611930626.json]
+members: [视频生成/图生视频/1982743157039349761.json, 视频生成/图生视频/1972739991178792962.json, 视频生成/图生视频/1985620607834501122.json, 视频生成/图生视频/1985638903862439938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_137
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1923636242792312834.json、视频生成/图生视频/1924304259204960258.json、视频生成/文生视频/1923351101066629121.json、视频生成/文生视频/1922867883611930626.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1982743157039349761.json、视频生成/图生视频/1972739991178792962.json、视频生成/图生视频/1985620607834501122.json、视频生成/图生视频/1985638903862439938.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `JWInteger`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImpactFloat`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `TextInput_`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `Qwen3_VQA`
+- `SetNode`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoSetBlockSwap`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy imageSize`
+- `easy int`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `Bjornulf_ShowJson` —— 2/4 个有
-- `RHHiddenNodes` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
-- `WanVideoLoraSelect` —— 2/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
-- `WanVideoEmptyEmbeds` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `WanVideoLoraSelect` —— 3/4 个有
+- `CLIPVisionLoader` —— 2/4 个有
+- `CM_FloatToInt` —— 2/4 个有
+- `CreateCFGScheduleFloatList` —— 2/4 个有
+- `GetImageRangeFromBatch` —— 2/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `LoadWanVideoT5TextEncoder` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `WanVideoClipVisionEncode` —— 2/4 个有
+- `WanVideoScheduler` —— 2/4 个有
+- `WanVideoSigmaToStep` —— 2/4 个有
+- `WanVideoTextEncode` —— 2/4 个有
+- `WanVideoTextEncodeCached` —— 2/4 个有
+- `easy mathFloat` —— 2/4 个有
+- `easy mathInt` —— 2/4 个有
+- `LoadLynxResampler` —— 1/4 个有
+- `LynxEncodeFaceIP` —— 1/4 个有
+- `LynxInsightFaceCrop` —— 1/4 个有
+- `WanVideoAddLynxEmbeds` —— 1/4 个有
+- `WanVideoExtraModelSelect` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,68 +3,82 @@ name: text_to_image_video_lora_sampler_181
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.819333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.836333
+common_nodes: [CLIPLoader, CLIPTextEncode, DrawMaskOnImage, EmptyLatentImage, FillMaskWithColor, GetImageSizeAndCount, GetNode, GrowMask, ImageFromBatch, ImageFromBatch+, ImageResizeKJv2, InspyrenetRembg, Int, InvertMask, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PointsEditor, PreviewImage, PrimitiveInt, RH_Captioner, RunningHub Deepcleaner, SeCModelLoader, SeCVideoSegmentation, SetNode, ShowText, Text, TextConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/minimax_h3_i2vw4a8-0810超低显存ENGENG_2087115217783316482.json, 视频生成/文生视频/minimax阿里8步加速三合一｜文生视频图生视频全能参考_2095568310212587522.json, 视频生成/文生视频/多合一加速修复｜MiniMax H3热门IP模糊视频高清处理_2090232166843240449.json]
+members: [视频生成/图生视频/视频换衣换模特 图生视频参考图驱动服装替换_2094200204772859906.json, 视频生成/图生视频/视频换衣换模特工作流，图生视频电商模特服装替换工具_2105751386288910338.json, 视频生成/图生视频/视频换衣换模特｜服装替换模特更换一键处理_2097921487956176897.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_181
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/minimax_h3_i2vw4a8-0810超低显存ENGENG_2087115217783316482.json、视频生成/文生视频/minimax阿里8步加速三合一｜文生视频图生视频全能参考_2095568310212587522.json、视频生成/文生视频/多合一加速修复｜MiniMax H3热门IP模糊视频高清处理_2090232166843240449.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频换衣换模特 图生视频参考图驱动服装替换_2094200204772859906.json、视频生成/图生视频/视频换衣换模特工作流，图生视频电商模特服装替换工具_2105751386288910338.json、视频生成/图生视频/视频换衣换模特｜服装替换模特更换一键处理_2097921487956176897.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `DrawMaskOnImage`
 - `EmptyLatentImage`
+- `FillMaskWithColor`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `Int`
+- `InvertMask`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PointsEditor`
+- `PreviewImage`
+- `PrimitiveInt`
+- `RH_Captioner`
+- `RunningHub Deepcleaner`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
+- `ShowText`
+- `Text`
+- `TextConcatenate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `Display Any (rgthree)` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `ImpactConditionalBranch` —— 1/3 个有
-- `LoraLoaderBypassModelOnly` —— 1/3 个有
-- `MiniMaxH3BlockCacheT8` —— 1/3 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `SolAttnPatch` —— 1/3 个有
-- `easy boolean` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,115 +1,71 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_55
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.6805
-common_nodes: [ASRMW, Any To String (mtb), AudioToFPS, CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, ImpactSwitch, Int, InversionDemoLazySwitch, JWInteger, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ProcessString, Qwen3_VQA, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, ShowText|pysssss, SolidMask, SomethingToString, Switch any [Crystools], VAEDecodeTiled, VAELoaderKJ, VRAMReserver, easy boolean, easy cleanGpuUsed, easy compare]
+coverage: 0.927
+common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ComfyMathExpression, ConditioningZeroOut, CreateVideo, DualCLIPLoader, GetImageRangeFromBatch, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/2039639579086561281.json, 视频生成/图生视频/2034072615744180226.json, 视频生成/图生视频/2017601157362884610.json, 视频生成/图生视频/2019964726540771330.json]
+members: [视频生成/图生视频/2066915488357249026.json, 视频生成/图生视频/2066375964539572225.json, 视频生成/图生视频/2064568765139996673.json, 视频生成/图生视频/2067435786764644353.json, 视频生成/图生视频/2071153016027303937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_55
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2039639579086561281.json、视频生成/图生视频/2034072615744180226.json、视频生成/图生视频/2017601157362884610.json、视频生成/图生视频/2019964726540771330.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2066915488357249026.json、视频生成/图生视频/2066375964539572225.json、视频生成/图生视频/2064568765139996673.json、视频生成/图生视频/2067435786764644353.json、视频生成/图生视频/2071153016027303937.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ASRMW`
-- `Any To String (mtb)`
-- `AudioToFPS`
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
+- `CS-LTXGridDirector`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CreateVideo`
 - `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
-- `ImpactSwitch`
-- `Int`
-- `InversionDemoLazySwitch`
-- `JWInteger`
+- `GetImageRangeFromBatch`
+- `INTConstant`
 - `KSamplerSelect`
-- `LTXVAudioVAEEncode`
+- `LTX2SamplingPreviewOverride`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ProcessString`
-- `Qwen3_VQA`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `ShowText|pysssss`
-- `SolidMask`
-- `SomethingToString`
-- `Switch any [Crystools]`
-- `VAEDecodeTiled`
+- `SaveVideo`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoaderKJ`
-- `VRAMReserver`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy compare`
 
 **可变部分**（部分 workflow 才有）：
-- `CR String To Combo` —— 3/4 个有
-- `CheckpointLoaderSimple` —— 3/4 个有
-- `Display Any (rgthree)` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `JoinStrings` —— 3/4 个有
-- `LTXVAudioVAEDecode` —— 3/4 个有
-- `LTXVImgToVideoInplace` —— 3/4 个有
-- `PreviewAudio` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `ttN concat` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `AudioDither` —— 2/4 个有
-- `AudioPad` —— 2/4 个有
-- `AudioResample` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `CreateVideo` —— 2/4 个有
-- `LTX2_NAG` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `SaveAudio` —— 2/4 个有
-- `SaveVideo` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `WhisperSTT` —— 2/4 个有
-- `AudioSeparation` —— 1/4 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/4 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LTXVFirstLastFrameControl_TTP` —— 1/4 个有
-- `PIP_IntegerCalculator` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `Label (rgthree)` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GuHaiAutoImageSplit` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RHLLMChatNode` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `SeedVR2BlockSwap` —— 1/5 个有
+- `SeedVR2ExtraArgs` —— 1/5 个有
 
 ## 典型参数
 

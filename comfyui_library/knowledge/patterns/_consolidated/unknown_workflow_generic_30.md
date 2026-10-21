@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_30
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.7964
-common_nodes: [RH_Sora2_T2V, SaveVideo]
+coverage: 0.611187
+common_nodes: [CR Text, PrimitiveFloat, RH_Screenwriter, SaveAudio, ShowText|pysssss, WujiLyricistNode, WujiMusicianACEStep15XL]
 problems: []
-missing: [CR Text]
-members: [视频生成/图生视频/1975796073170079746.json, 视频生成/文生视频/1974008114766811138.json, 视频生成/文生视频/1974243774320783362.json, 视频生成/文生视频/1974305393570656258.json, 视频生成/文生视频/1974653948734869506.json, 视频生成/文生视频/1974991117479489537.json, 视频生成/文生视频/1975599765641629698.json, 视频生成/文生视频/1976137032307224577.json, 视频生成/文生视频/1976562597690515457.json, 视频生成/文生视频/1977414332113920001.json, 视频生成/文生视频/RH 全能视频S Text to Video文生视频_1988598374855262209.json, 视频生成/文生视频/文生视频+全能视频S_1993691780673634306.json, 视频生成/文生视频/文生视频-RH 全能视频S Text to Video_1993696214761799682.json, 视频生成/文生视频/最简洁的全能视频S 文生视频工作流 支持横_竖屏_2005119650105098242.json, 视频生成/文生视频/梭罗2稳定版全能视频S文生视频0.08元每次_2036026472900599809.json]
+missing: []
+members: [图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json, 视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json, 音频生成/音频生成/ACE-Step1.5XL一句话写一首歌工作流_2046499811930677249.json, 音频生成/音频生成/ACE-Step1.5XL一键AI音乐_2044544358233415681.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2044346549555175426.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2046218158251450370.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2044244684310056962.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓最强AI音乐创作_2044246957450858497.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2044642777891344385.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2045401793181519874.json, 音频生成/音频生成/ACE-Step1.5XL生成AI音乐工作流_2061315627834503169.json, 音频生成/音频生成/ACE-Step1.5XL音乐创作_2058748276169601026.json, 音频生成/音频生成/AI 原创音乐生成_2047620955584860161.json, 音频生成/音频生成/超好用🔥一键手搓AI音乐 ACE-Step1.5XL及Suno V5可自行选择_2046796175285686274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_30
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/1975796073170079746.json、视频生成/文生视频/1974008114766811138.json、视频生成/文生视频/1974243774320783362.json、视频生成/文生视频/1974305393570656258.json、视频生成/文生视频/1974653948734869506.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json、视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json、音频生成/音频生成/ACE-Step1.5XL一句话写一首歌工作流_2046499811930677249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `RH_Sora2_T2V`
-- `SaveVideo`
+全部 16 个 workflow 都包含：
+- `CR Text`
+- `PrimitiveFloat`
+- `RH_Screenwriter`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `WujiLyricistNode`
+- `WujiMusicianACEStep15XL`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 10/15 个有
-- `LoadImage` —— 5/15 个有
-- `TextInput_` —— 1/15 个有
+- `Fast Groups Muter (rgthree)` —— 13/16 个有
+- `RH_Suno_Custom` —— 8/16 个有
+- `RH_RhartAudioSunoV55Single` —— 5/16 个有
+- `LoadImage` —— 1/16 个有
 
 ## 典型参数
 
@@ -41,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

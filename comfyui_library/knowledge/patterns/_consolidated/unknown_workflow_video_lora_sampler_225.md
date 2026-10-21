@@ -3,71 +3,72 @@ name: unknown_workflow_video_lora_sampler_225
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.924
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.600333
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/1948391193374797826.json, 视频生成/图生视频/2072520035003879425.json, 视频生成/图生视频/2075913669199884290.json, 视频生成/图生视频/2073671180170645506.json, 视频生成/图生视频/2074322783164788738.json, 视频生成/图生视频/2054887667418050562.json, 视频生成/图生视频/2056187222017224706.json, 视频生成/图生视频/2056198886519263233.json, 视频生成/文生视频/AI演唱数字人对口型RCM+Infinite+Talk+VoxCPM+TTS1.5 (1)_2034196163921977346.json]
+missing: [int _O]
+members: [视频生成/图生视频/2004522934133817346.json, 视频生成/图生视频/2029116870359519233.json, 视频生成/图生视频/2020345629322518529.json, 视频生成/图生视频/2046604886866927617.json, 视频生成/图生视频/2059509696591122433.json, 视频生成/图生视频/1980236223493136385.json, 视频生成/图生视频/1983085978363568129.json, 视频生成/图生视频/1974839339156901889.json, 视频生成/文生视频/1975351604679413761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_225
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1948391193374797826.json、视频生成/图生视频/2072520035003879425.json、视频生成/图生视频/2075913669199884290.json、视频生成/图生视频/2073671180170645506.json、视频生成/图生视频/2074322783164788738.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2004522934133817346.json、视频生成/图生视频/2029116870359519233.json、视频生成/图生视频/2020345629322518529.json、视频生成/图生视频/2046604886866927617.json、视频生成/图生视频/2059509696591122433.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `DrawViTPose`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float to Int` —— 8/9 个有
-- `RH_GetAudioDuration` —— 8/9 个有
-- `WanVideoImageToVideoMultiTalk` —— 8/9 个有
-- `WanVideoTextEncodeCached` —— 8/9 个有
-- `AudioSeparation` —— 5/9 个有
-- `Int` —— 5/9 个有
-- `easy anythingIndexSwitch` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `SoundFlow_TrimAudio` —— 4/9 个有
-- `Fast Groups Muter (rgthree)` —— 3/9 个有
-- `FlashVSRNode` —— 3/9 个有
-- `String Literal` —— 2/9 个有
-- `Apply Whisper` —— 1/9 个有
-- `GetNode` —— 1/9 个有
-- `IndexTTSRun` —— 1/9 个有
-- `LoadWanVideoT5TextEncoder` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `VoxCPM_TTS` —— 1/9 个有
-- `WanVideoFreeInitArgs` —— 1/9 个有
-- `WanVideoImageToVideoEncode` —— 1/9 个有
-- `WanVideoSetRadialAttention` —— 1/9 个有
-- `WanVideoTextEncode` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `MathExpression|pysssss` —— 8/9 个有
+- `ImageConcatMulti` —— 7/9 个有
+- `PreviewImage` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `ImageFromBatch` —— 6/9 个有
+- `ImpactInt` —— 6/9 个有
+- `BlockifyMask` —— 5/9 个有
+- `DownloadAndLoadSAM2Model` —— 5/9 个有
+- `DrawMaskOnImage` —— 5/9 个有
+- `GrowMask` —— 5/9 个有
+- `Sam2Segmentation` —— 5/9 个有
+- `Textbox` —— 5/9 个有
+- `GetImageSizeAndCount` —— 3/9 个有
+- `CM_IntToFloat` —— 2/9 个有
+- `CR Text` —— 2/9 个有
+- `ImageFromBatch+` —— 2/9 个有
+- `LayerUtility: PurgeVRAM` —— 2/9 个有
+- `SimpleMath+` —— 2/9 个有
+- `WanVideoLoraSelect` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `int _O` —— 1/9 个有
 
 ## 典型参数
 
@@ -79,4 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：int _O

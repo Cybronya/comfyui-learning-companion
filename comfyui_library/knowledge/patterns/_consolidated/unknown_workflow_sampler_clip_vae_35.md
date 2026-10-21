@@ -1,80 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_vae_35
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7955
-common_nodes: [CR Prompt Text, CR Text, FluxResolutionNode, ImageConcanate, ImageResize+, ImageResizeKJv2, ImpactSwitch, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, PreviewImage, RH_Jimeng_Image2Image, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Prompter, RH_Sora2_I2V, RH_Translator, SaveImage, SaveVideo, TextCombinerTwo, easy showAnything]
-problems: []
-missing: []
-members: [视频生成/图生视频/1987861383444369409.json, 视频生成/文生视频/向南漫剧场创作_1989943868923760641.json]
+frequency: 3
+level: strong
+coverage: 0.863333
+common_nodes: [CLIPTextEncodeFlux, EmptyLatentImage, KSampler, PreviewImage, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: [CR Text Concatenate]
+members: [图片生成/文生图/1930149940532559873.json, 图片生成/文生图/1937011516359217154.json, 图片生成/文生图/FLUx-gguf_1830883788774666242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1987861383444369409.json、视频生成/文生视频/向南漫剧场创作_1989943868923760641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1930149940532559873.json、图片生成/文生图/1937011516359217154.json、图片生成/文生图/FLUx-gguf_1830883788774666242.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `FluxResolutionNode`
-- `ImageConcanate`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `JjkText`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PreviewAny`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncodeFlux`
+- `EmptyLatentImage`
+- `KSampler`
 - `PreviewImage`
-- `RH_Jimeng_Image2Image`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Prompter`
-- `RH_Sora2_I2V`
-- `RH_Translator`
 - `SaveImage`
-- `SaveVideo`
-- `TextCombinerTwo`
-- `easy showAnything`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `NunchakuQwenImageDiTLoader` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
-- `easy promptConcat` —— 1/2 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `DualCLIPLoaderGGUF` —— 2/3 个有
+- `UnetLoaderGGUF` —— 2/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | 20 | 4 - 20 | 3 | 49% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | normal | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 896 | 768 - 1024 | 3 | 88% |
+| 高度 | 1024 | 1024 - 1152 | 3 | 94% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 4 - 20，3 个样本，取值分散，一致性仅 49%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 normal，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 896，观测区间 768 - 1024，3 个样本，取值集中（一致性 88%）
+- 高度 中位数 1024，观测区间 1024 - 1152，3 个样本，取值集中（一致性 94%）
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate

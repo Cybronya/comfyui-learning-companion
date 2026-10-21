@@ -1,44 +1,60 @@
 ---
 name: unknown_workflow_video_upscale_lora_3
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.634
-common_nodes: [CLIPLoader, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.947583
+common_nodes: [ImageUpscaleWithModel, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 max 转场爆款导演台_全能参考+首尾帧+全节点注释_2107720944176418818.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091439273353502722.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091560395537469442.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2092514631167336450.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2090764338553516034.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2091278066034241538.json, 视频生成/图生视频/MiniMax_H3_max_转场爆款导演台_全能参考+首尾帧_2110653959206694914.json, 视频生成/文生视频/MiniMax H3 max 转场爆款导演台全能 全能参考 首尾帧+全节点注释_2101582619145232385.json, 视频生成/文生视频/MiniMax H3 max 转场爆款导演台全能 全能参考 首尾帧+全节点注释_2101636357511798785.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v_2090357634460372993.json, 视频生成/文生视频/MiniMax H3 导演台工作流-fl2va_2091328355697250305.json]
+members: [视频生成/图生视频/1896816638631550978.json, 视频生成/图生视频/1903839569089826817.json, 视频生成/图生视频/1899415692570181634.json, 视频生成/图生视频/1899312280767516673.json, 视频生成/图生视频/1900467836874301442.json, 视频生成/图生视频/1899699069881860097.json, 视频生成/图生视频/2005178859836370946.json, 视频生成/图生视频/1899713009114107905.json, 视频生成/图生视频/1894935249389039617.json, 视频生成/图生视频/1932255495774437378.json, 视频生成/图生视频/1930816773925306370.json, 视频生成/文生视频/1904728293755813889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 max 转场爆款导演台_全能参考+首尾帧+全节点注释_2107720944176418818.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091439273353502722.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2091560395537469442.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2092514631167336450.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2090764338553516034.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1896816638631550978.json、视频生成/图生视频/1903839569089826817.json、视频生成/图生视频/1899415692570181634.json、视频生成/图生视频/1899312280767516673.json、视频生成/图生视频/1900467836874301442.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPLoader`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorRefine`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `UNETLoader`
+全部 12 个 workflow 都包含：
+- `ImageUpscaleWithModel`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `UpscaleModelLoader`
-- `VAELoader`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 10/11 个有
-- `PreviewAny` —— 7/11 个有
-- `CR Text` —— 4/11 个有
-- `Switch` —— 4/11 个有
-- `LoadImage` —— 1/11 个有
+- `WanVideoTorchCompileSettings` —— 9/12 个有
+- `Int` —— 7/12 个有
+- `RIFE VFI` —— 7/12 个有
+- `ImageResizeAdvanced` —— 5/12 个有
+- `Note Plus (mtb)` —— 4/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
+- `Text Multiline` —— 2/12 个有
+- `TextInput_` —— 2/12 个有
+- `WanVideoEmptyEmbeds` —— 2/12 个有
+- `WanVideoSLG` —— 2/12 个有
+- `ImageResizeKJ` —— 1/12 个有
+- `ResizeLongestToNode` —— 1/12 个有
+- `SaveLatent` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_447
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.914
-common_nodes: [CR Text, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, LoadImage, RegexReplace, SaveVideo, easy promptConcat, easy showAnything]
+coverage: 0.73175
+common_nodes: [HeartMuLa_Generate, RH_LLMAPI_NODE, SaveAudio, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Vidu Q4 Preview 参考生主图视频_2108792411643277314.json, 视频生成/图生视频/Vidu Q4 Preview 图生主图视频_2108786096690782210.json, 视频生成/图生视频/万相3.0视频首尾帧生视频_2091815742936276993.json]
+members: [音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json, 音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json, 音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json, 音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_447
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Vidu Q4 Preview 参考生主图视频_2108792411643277314.json、视频生成/图生视频/Vidu Q4 Preview 图生主图视频_2108786096690782210.json、视频生成/图生视频/万相3.0视频首尾帧生视频_2091815742936276993.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json、音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json、音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json、音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
-- `LoadImage`
-- `RegexReplace`
-- `SaveVideo`
-- `easy promptConcat`
+全部 4 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `RH_LLMAPI_NODE`
+- `SaveAudio`
+- `Text Multiline`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30ImageToVideo` —— 1/3 个有
-- `RH_ViduQ4PreviewImageToVideo` —— 1/3 个有
-- `RH_ViduQ4PreviewReferenceToVideo` —— 1/3 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

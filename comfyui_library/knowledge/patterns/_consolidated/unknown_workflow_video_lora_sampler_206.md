@@ -3,70 +3,72 @@ name: unknown_workflow_video_lora_sampler_206
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.596111
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.875556
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Minimax_H3_Best_Fast_2097990442091638786.json, 图片生成/图生图/Minimax_H3_Best_Fast_2097990442091638786.json, 视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json, 视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json, 视频生成/图生视频/MICAS西游_Camera_3_2107469660680708097.json, 视频生成/图生视频/MICAS西游：Camera 3_2103441968356483073.json, 视频生成/图生视频/MiniMax H3 黑科技加速双采-self-lift工作流_2098836942896062465.json, 视频生成/图生视频/Minimax H3 + Self-lift双采快速超长工作流_2104549240100970498.json, 视频生成/文生视频/短剧助手：加速双采-self-lift_2097990357018570753.json]
+members: [视频生成/图生视频/2005541494670983170.json, 视频生成/图生视频/2011030476026286081.json, 视频生成/图生视频/2010957164097052674.json, 视频生成/图生视频/2035643056212414465.json, 视频生成/图生视频/2011772862205534209.json, 视频生成/图生视频/2011765719033188353.json, 视频生成/图生视频/2011775856401715201.json, 视频生成/图生视频/2010976996687351810.json, 视频生成/图生视频/2012053341018263553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_206
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/Minimax_H3_Best_Fast_2097990442091638786.json、图片生成/图生图/Minimax_H3_Best_Fast_2097990442091638786.json、视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json、视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json、视频生成/图生视频/MICAS西游_Camera_3_2107469660680708097.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2005541494670983170.json、视频生成/图生视频/2011030476026286081.json、视频生成/图生视频/2010957164097052674.json、视频生成/图生视频/2035643056212414465.json、视频生成/图生视频/2011772862205534209.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
+- `CLIPTextEncode`
+- `CR Text`
+- `DiffusionModelLoaderKJ`
+- `ImageBatchExtendWithOverlap`
+- `Int`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `UNETLoader`
+- `SimpleMath+`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideoSVIPro`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 7/9 个有
-- `LoadImage` —— 6/9 个有
-- `SetNode` —— 5/9 个有
-- `GetNode` —— 4/9 个有
-- `Anything Everywhere3` —— 3/9 个有
-- `CreateVideo` —— 3/9 个有
-- `MiniMaxH3MediaLoaderFantastic` —— 3/9 个有
-- `MiniMaxH3ReferenceSplitter` —— 3/9 个有
-- `Prompts Everywhere` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `ComfySwitchNode` —— 2/9 个有
-- `PathchSageAttentionKJ` —— 2/9 个有
-- `EmptyImage` —— 1/9 个有
-- `LoadAudio` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `QwenH3PromptLocal` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
-- `忽略多组孤海` —— 1/9 个有
+- `> Text Replace` —— 4/9 个有
+- `CR Prompt Text` —— 4/9 个有
+- `CR Text Concatenate` —— 4/9 个有
+- `ProcessString` —— 4/9 个有
+- `Qwen3_VQA` —— 4/9 个有
+- `TextPreview` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `SomethingToString` —— 3/9 个有
+- `Split String` —— 3/9 个有
+- `DuckHideNode` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `TT_img_enc` —— 2/9 个有
+- `TT_img_enc_v2` —— 2/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 9 | 56% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
+| 采样算法 | 3.5 | 1 - 3.5 | 9 | 48% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -74,4 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，9 个样本，一致性 56%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

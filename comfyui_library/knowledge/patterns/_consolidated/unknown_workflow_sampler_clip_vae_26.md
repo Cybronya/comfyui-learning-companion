@@ -1,68 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_vae_26
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.81
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, KSampler, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, SaveImage, VAEDecode, VAELoader]
-problems: []
-missing: [easy positive, CR SDXL Aspect Ratio, CR Text, CR Text Concatenate, Evaluate Strings]
-members: [图片生成/文生图/1967803688263778306.json, 图片生成/文生图/1968509624422944769.json, 图片生成/文生图/1970701866311053313.json]
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, VAELoader, WanImageToVideo]
+problems: [发现KSampler但没有VAEDecode]
+missing: []
+members: [视频生成/图生视频/1920615619392110593.json, 视频生成/图生视频/1937276822209896450.json, 视频生成/图生视频/1895293426588385281.json, 视频生成/图生视频/1934136795636355074.json, 视频生成/图生视频/1901974657921081346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_26
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1967803688263778306.json、图片生成/文生图/1968509624422944769.json、图片生成/文生图/1970701866311053313.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1920615619392110593.json、视频生成/图生视频/1937276822209896450.json、视频生成/图生视频/1895293426588385281.json、视频生成/图生视频/1934136795636355074.json、视频生成/图生视频/1901974657921081346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGNorm`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `NunchakuQwenImageDiTLoader`
-- `SaveImage`
-- `VAEDecode`
+- `LoadImage`
 - `VAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `Evaluate Strings` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `easy positive` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `VAEDecode` —— 4/5 个有
+- `VHS_VideoCombine` —— 4/5 个有
+- `UNETLoader` —— 3/5 个有
+- `ModelSamplingSD3` —— 2/5 个有
+- `UnetLoaderGGUF` —— 2/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `MagCache` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `SaveLatent` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 20 | 20 - 25 | 5 | 89% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
+| 采样算法 | uni_pc | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 1/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy positive、CR SDXL Aspect Ratio、CR Text、CR Text Concatenate、Evaluate Strings
+- 采样步数 中位数 20，观测区间 20 - 25，5 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

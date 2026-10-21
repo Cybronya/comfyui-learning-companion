@@ -3,76 +3,72 @@ name: text_to_image_video_lora_sampler_53
 type: Text To Image
 frequency: 13
 level: strong
-coverage: 0.754385
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.878923
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MinimaxH3自定义sigma参数工作流，文生视频视频生视频全能_2110448826346729474.json, 视频生成/图生视频/Seedance2.5图生视频工作流｜首尾帧4K长视频生成_2097830170391572482.json, 视频生成/图生视频/TaoMate MiniMax H3加速3步采样视频生成处理工具_2101045862658043905.json, 视频生成/图生视频/api竖屏540p坤坤H3官流｜图生视频轻量出片工作流_2108371168330866690.json, 视频生成/图生视频/api竖屏768p坤坤H3官流｜高清图生视频出片工作流_2108380600238428161.json, 视频生成/图生视频/lightx2v 8step加速｜MiniMax H3图生视频快速出片_2088748531585736705.json, 视频生成/图生视频/minimax h3 i2v fastH3 图生视频快速生成方案_2108665137354862594.json, 视频生成/图生视频/minimax_h3_i2v_fastH3_v2_veda，图生视频极速版_2111247286016761857.json, 视频生成/图生视频/minimax_h3_rawmodel_veta注意力参考，图生视频方案_2111248740865634306.json, 视频生成/图生视频/minimax_h3_rawmodel参考生视频精品，数字人动作迁移_2111244078024323074.json, 视频生成/图生视频/minimax_h3多图快速参考生视频，文生图图生视频_2111236219102384130.json, 视频生成/图生视频/全能参考数字人｜AITUDOU MiniMax H3 人物音频一致性_2089296635812737025.json, 视频生成/图生视频/开源版minimax h3 i2v fastH3快速图生视频精品 高质量动态生成_2108709377132818433.json]
+members: [视频生成/图生视频/图生视频Minimax_H3_ENG海螺_2087149189619863554.json, 视频生成/图生视频/图生视频基础版｜海螺Minimax_H3一键生成_2092175596649537537.json, 视频生成/图生视频/图生视频工作流｜MINIMAX-H3多功能视频生成_2090564776375185409.json, 视频生成/图生视频/多主体生视Minimax_H3频ENG海螺_2087146580276244481.json, 视频生成/图生视频/多主体生视频｜海螺Minimax_H3图生视频生成_2092178321030336513.json, 视频生成/图生视频/多参工作流｜minimax h3图生视频一键生成_2095085442826850306.json, 视频生成/图生视频/开源参考生视频｜Minimax-H3短剧漫剧创意视频_2092025540294303746.json, 视频生成/图生视频/开源参考生视频｜Minimax-H3短剧漫剧角色设计生成_2094785389037965314.json, 视频生成/图生视频/开源版Minimax H3视频全功能加速-turbo4步图片参考短视频生成_2087388416773283842.json, 视频生成/图生视频/极速高清直出｜H3文生视频角色一致性视频超分_2089486697900888065.json, 视频生成/图生视频/清晰度天花板超级加强v3｜minimax h3数字人图生视频_2089034956130570241.json, 视频生成/文生视频/MINIMAX-H3导演台工作流｜文生图生视频三合一_2092335889228853249.json, 视频生成/文生视频/MiniMax-H3全自动工作流｜文生图文生视频图生视频三合一_2089689168518664193.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_53
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3自定义sigma参数工作流，文生视频视频生视频全能_2110448826346729474.json、视频生成/图生视频/Seedance2.5图生视频工作流｜首尾帧4K长视频生成_2097830170391572482.json、视频生成/图生视频/TaoMate MiniMax H3加速3步采样视频生成处理工具_2101045862658043905.json、视频生成/图生视频/api竖屏540p坤坤H3官流｜图生视频轻量出片工作流_2108371168330866690.json、视频生成/图生视频/api竖屏768p坤坤H3官流｜高清图生视频出片工作流_2108380600238428161.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/图生视频Minimax_H3_ENG海螺_2087149189619863554.json、视频生成/图生视频/图生视频基础版｜海螺Minimax_H3一键生成_2092175596649537537.json、视频生成/图生视频/图生视频工作流｜MINIMAX-H3多功能视频生成_2090564776375185409.json、视频生成/图生视频/多主体生视Minimax_H3频ENG海螺_2087146580276244481.json、视频生成/图生视频/多主体生视频｜海螺Minimax_H3图生视频生成_2092178321030336513.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 12/13 个有
 - `LoadImage` —— 12/13 个有
-- `BlockSparseAttention` —— 10/13 个有
-- `PrimitiveFloat` —— 10/13 个有
-- `PrimitiveStringMultiline` —— 10/13 个有
-- `MiniMaxH3ReferenceToVideo` —— 9/13 个有
-- `SaveImage` —— 9/13 个有
-- `SetNode` —— 9/13 个有
-- `GetNode` —— 8/13 个有
-- `ModelAttentionBackend` —— 7/13 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/13 个有
-- `LoadAudio` —— 4/13 个有
-- `VedaSparseAttention` —— 4/13 个有
-- `ManualSigmas` —— 3/13 个有
-- `MiniMaxH3ImageToVideo` —— 3/13 个有
-- `MiniMaxH3SigmaShift` —— 3/13 个有
-- `ModelPreviewOverrideKJ` —— 3/13 个有
-- `QwenH3PromptLocal` —— 3/13 个有
-- `Float` —— 2/13 个有
-- `MiniMaxChunkFeedForward` —— 2/13 个有
-- `MiniMaxLowVRAMAttention` —— 2/13 个有
-- `PreviewAny` —— 2/13 个有
-- `SigmasGraph` —— 2/13 个有
-- `Text` —— 2/13 个有
-- `CR Text` —— 1/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `MiniMaxH3Unified` —— 1/13 个有
-- `RH_LLMAPI_Pro_Node` —— 1/13 个有
-- `ZNGB_AudioCrop` —— 1/13 个有
+- `MiniMaxH3DualClockSamplerT8` —— 11/13 个有
+- `ModelAttentionBackend` —— 6/13 个有
+- `PrimitiveStringMultiline` —— 5/13 个有
+- `BasicScheduler` —— 3/13 个有
+- `ImageResizeKJv2` —— 3/13 个有
+- `KSamplerSelect` —— 3/13 个有
+- `PT_H3ConcatAVLatent` —— 3/13 个有
+- `Text` —— 3/13 个有
+- `CR Prompt Text` —— 2/13 个有
+- `CR Text` —— 2/13 个有
+- `H3SigmaRefiner` —— 2/13 个有
+- `LoadAudio` —— 2/13 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/13 个有
+- `RH_LLMAPI_Pro_Node` —— 2/13 个有
+- `SolAttnMiniMax` —— 2/13 个有
+- `VAEEncode` —— 2/13 个有
+- `ExtendIntermediateSigmas` —— 1/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
+- `GetImageSize` —— 1/13 个有
+- `PreviewAny` —— 1/13 个有
+- `VAEEncodeTiled` —— 1/13 个有
 
 ## 典型参数
 

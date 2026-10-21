@@ -3,53 +3,62 @@ name: unknown_workflow_video_lora_sampler_958
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8515
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.706
+common_nodes: [Bounded Image Crop, Bounded Image Crop with Mask, GetImageSizeAndCount, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageResizeKJv2, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, SAMModelLoader (segment anything), SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/文生分镜脚本直出短视频H3_2107358424408350721.json, 视频生成/文生视频/超好用🔥Minimax文生视频V2（双时钟-高质量加速LORA）_2090308200510869505.json]
+members: [视频生成/文生视频/Wan_T2V_14B_lynx(Wrapper) - 使用参考图保持视频角色一致性！_1976302200433545218.json, 视频生成/文生视频/Wan_T2V_lynx+VACE (Wrapper) 面部参考+服装参考+视频动作驱动_1976330086129471490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_958
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/文生分镜脚本直出短视频H3_2107358424408350721.json、视频生成/文生视频/超好用🔥Minimax文生视频V2（双时钟-高质量加速LORA）_2090308200510869505.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan_T2V_14B_lynx(Wrapper) - 使用参考图保持视频角色一致性！_1976302200433545218.json、视频生成/文生视频/Wan_T2V_lynx+VACE (Wrapper) 面部参考+服装参考+视频动作驱动_1976330086129471490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `Bounded Image Crop`
+- `Bounded Image Crop with Mask`
+- `GetImageSizeAndCount`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
+- `SAMModelLoader (segment anything)`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_FloatToInt` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `easy saveText` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `AIO_Preprocessor` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoVACEEncode` —— 1/2 个有
 
 ## 典型参数
 

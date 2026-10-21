@@ -1,31 +1,35 @@
 ---
 name: unknown_workflow_generic_240
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_Vidu_Reference2Video, SaveVideo]
+coverage: 0.938833
+common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006996903858282497.json, 视频生成/图生视频/1983565386849427457.json, 视频生成/图生视频/1988300971249942530.json, 视频生成/图生视频/1986365685037232129.json, 视频生成/图生视频/1984531859684081665.json]
+members: [音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json, 音频生成/音频生成/SeedVc V2 语音、歌曲克隆_1932590444712763393.json, 音频生成/音频生成/【海皮】保姆级音色迁移_2041723481255055362.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json, 音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json, 音频生成/音频生成/音色迁移 SeedVC_2079778782298329090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_240
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2006996903858282497.json、视频生成/图生视频/1983565386849427457.json、视频生成/图生视频/1988300971249942530.json、视频生成/图生视频/1986365685037232129.json、视频生成/图生视频/1984531859684081665.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json、音频生成/音频生成/SeedVc V2 语音、歌曲克隆_1932590444712763393.json、音频生成/音频生成/【海皮】保姆级音色迁移_2041723481255055362.json、音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json、音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_Vidu_Reference2Video`
-- `SaveVideo`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SeedVCRun`
+
+**可变部分**（部分 workflow 才有）：
+- `Label (rgthree)` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
 
 ## 典型参数
 

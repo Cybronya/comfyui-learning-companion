@@ -1,82 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_5
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.795875
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSize, LTXAVTextEncoderLoader, LTXVAddGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SamplerEulerAncestral, VAEDecodeTiled]
-problems: []
+frequency: 12
+level: strong
+coverage: 1
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, WanImageToVideo]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/2070029598238269442.json, 视频生成/图生视频/2053338009554169857.json, 视频生成/图生视频/2064734105044082689.json, 视频生成/图生视频/2070025882282061825.json, 视频生成/图生视频/2064635916139982850.json, 视频生成/图生视频/2064603463413223426.json, 视频生成/文生视频/四步引导+首尾帧ltx2_3_style_transition+全节点注释_2057837235214577666.json, 视频生成/文生视频/首尾帧ltx2_3_style_transition+全节点注释_2055806950063001602.json]
+members: [视频生成/图生视频/1956025616472702978.json, 视频生成/图生视频/1955969682358632450.json, 视频生成/图生视频/1958143493149511681.json, 视频生成/图生视频/1958905954660200450.json, 视频生成/图生视频/1962517255911288834.json, 视频生成/图生视频/1960545575466917890.json, 视频生成/图生视频/1958145251049353218.json, 视频生成/图生视频/2013897396320739330.json, 视频生成/图生视频/1962792289108115457.json, 视频生成/图生视频/1963949307806273538.json, 视频生成/图生视频/1959492715388022786.json, 视频生成/图生视频/1961655579871789057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_5
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2070029598238269442.json、视频生成/图生视频/2053338009554169857.json、视频生成/图生视频/2064734105044082689.json、视频生成/图生视频/2070025882282061825.json、视频生成/图生视频/2064635916139982850.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1956025616472702978.json、视频生成/图生视频/1955969682358632450.json、视频生成/图生视频/1958143493149511681.json、视频生成/图生视频/1958905954660200450.json、视频生成/图生视频/1962517255911288834.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `KSampler`
 - `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
-- `SamplerEulerAncestral`
-- `VAEDecodeTiled`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `PrimitiveInt` —— 7/8 个有
-- `CreateVideo` —— 5/8 个有
-- `ModelPatchTorchSettings` —— 5/8 个有
-- `PathchSageAttentionKJ` —— 5/8 个有
-- `SaveVideo` —— 5/8 个有
-- `CR Text` —— 3/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `ConcatTextOfUtils` —— 2/8 个有
-- `LTXVChunkFeedForward` —— 2/8 个有
-- `RH_LLMAPI_Pro_Node` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `孤海注释` —— 2/8 个有
-- `FlashVSRInitPipe` —— 1/8 个有
-- `FlashVSRNodeAdv` —— 1/8 个有
-- `LoadVideo` —— 1/8 个有
+- `JWInteger` —— 11/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
+- `VAEDecode` —— 11/12 个有
+- `VHS_VideoCombine` —— 11/12 个有
+- `SaveImage` —— 8/12 个有
+- `CLIPLoader` —— 7/12 个有
+- `LoadLatent` —— 6/12 个有
+- `LoraLoaderModelOnly` —— 6/12 个有
+- `VAELoader` —— 6/12 个有
+- `CR Prompt Text` —— 5/12 个有
+- `SaveLatent` —— 5/12 个有
+- `ImageFromBatch+` —— 4/12 个有
+- `TT_img_enc` —— 3/12 个有
+- `JWFloat` —— 2/12 个有
+- `ImageResizeKJv2` —— 1/12 个有
+- `RandomInt` —— 1/12 个有
+- `TT_img_enc_v2` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 201 | 8 | 69% |
-| 高度 | 25 | 25 - 25 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | sa_solver | - | 12 | 83% |
+| 调度器 | beta | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 1/12 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 201，8 个样本
-- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，12 个样本，一致性 83%
+- 调度器 最常用 beta，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

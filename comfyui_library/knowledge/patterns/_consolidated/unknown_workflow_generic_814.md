@@ -3,38 +3,33 @@ name: unknown_workflow_generic_814
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.976
-common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, LongCatMultiSpeakerTTS, NormalizeAudioLoudness, SaveAudioMP3]
+coverage: 1
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT双人对话_2039911756067250178.json, 音频生成/音频生成/Longcat Audio DIT 三合一_2041930449106247682.json]
+members: [数字人/数字人/Qwen3音色生成_2090373649973997570.json, 音频生成/音频生成/声音设计专用流_2016157124283342849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_814
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT双人对话_2039911756067250178.json、音频生成/音频生成/Longcat Audio DIT 三合一_2041930449106247682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Qwen3音色生成_2090373649973997570.json、音频生成/音频生成/声音设计专用流_2016157124283342849.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `LoadAudio`
-- `LongCatMultiSpeakerTTS`
-- `NormalizeAudioLoudness`
-- `SaveAudioMP3`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `LongCatTTS` —— 1/2 个有
-- `LongCatVoiceCloneTTS` —— 1/2 个有
-- `SaveAudioOpus` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `TextInput` —— 1/2 个有
 
 ## 典型参数
 

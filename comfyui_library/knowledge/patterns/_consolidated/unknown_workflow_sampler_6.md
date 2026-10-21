@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_sampler_6
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.972167
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
+coverage: 0.898286
+common_nodes: [AudioPad, Get Size JK, ImageResizeKJv2, IndexTTSRun, LoadAudio, LoadImage, PrimitiveStringMultiline, ResizeImagesByShorterEdge, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveAudio, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2016222816277893122.json, 视频生成/图生视频/2029234704314011649.json, 视频生成/图生视频/2029404488372592642.json, 视频生成/图生视频/2057455596126953474.json, 视频生成/图生视频/2018669346142294017.json, 视频生成/图生视频/2019693859390885889.json]
+members: [视频生成/图生视频/2066412555228246018.json, 视频生成/图生视频/2062698269251301377.json, 视频生成/图生视频/2027296503793983490.json, 视频生成/图生视频/2039584123534184449.json, 视频生成/图生视频/2034440610702172162.json, 视频生成/图生视频/2032303580274761729.json, 视频生成/文生视频/FlashHead极速数字人生成，只需图片+文字就好_2033804221602074625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2016222816277893122.json、视频生成/图生视频/2029234704314011649.json、视频生成/图生视频/2029404488372592642.json、视频生成/图生视频/2057455596126953474.json、视频生成/图生视频/2018669346142294017.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2066412555228246018.json、视频生成/图生视频/2062698269251301377.json、视频生成/图生视频/2027296503793983490.json、视频生成/图生视频/2039584123534184449.json、视频生成/图生视频/2034440610702172162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 7 个 workflow 都包含：
+- `AudioPad`
+- `Get Size JK`
+- `ImageResizeKJv2`
+- `IndexTTSRun`
 - `LoadAudio`
 - `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
+- `PrimitiveStringMultiline`
+- `ResizeImagesByShorterEdge`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveAudio`
 - `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 2/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `TrimAudioDuration` —— 1/6 个有
-- `WujiCleaner` —— 1/6 个有
 
 ## 典型参数
 

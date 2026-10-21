@@ -3,42 +3,48 @@ name: unknown_workflow_generic_856
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.833
-common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, ImpactLogger, IndexTTS2Run, IndexTTS2_Advanced, IndexTTS2_ModelManager, LoadAudio, LoadImage, PreviewAudio, PreviewTextNode, SaveAudio, Switch any [Crystools], VHS_LoadVideo, VHS_VideoInfo, easy boolean]
+coverage: 0.667
+common_nodes: [ImageRGBChannel, Int, LayerColor: Levels, LoadImage, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_Utils, SaveImage, SaveVideo, TextInput_, ttN concat]
 problems: []
 missing: []
-members: [音频生成/音频生成/indexTTS2语音克隆高级控制_2022214134766510081.json, 音频生成/音频生成/indexTTS2语音情绪克隆高级控制_2035909904673808386.json]
+members: [视频生成/图生视频/2076951260879745026.json, 视频生成/图生视频/2071176299367981057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_856
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/indexTTS2语音克隆高级控制_2022214134766510081.json、音频生成/音频生成/indexTTS2语音情绪克隆高级控制_2035909904673808386.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2076951260879745026.json、视频生成/图生视频/2071176299367981057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CR Prompt Text`
-- `ImpactLogger`
-- `IndexTTS2Run`
-- `IndexTTS2_Advanced`
-- `IndexTTS2_ModelManager`
-- `LoadAudio`
+- `ImageRGBChannel`
+- `Int`
+- `LayerColor: Levels`
 - `LoadImage`
-- `PreviewAudio`
-- `PreviewTextNode`
-- `SaveAudio`
-- `Switch any [Crystools]`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
-- `easy boolean`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
+- `RH_Utils`
+- `SaveImage`
+- `SaveVideo`
+- `TextInput_`
+- `ttN concat`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_RhartVideoGImageToVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

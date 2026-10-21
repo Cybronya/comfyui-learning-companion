@@ -3,37 +3,41 @@ name: unknown_workflow_generic_506
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.5
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.762
+common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, RH_RhartImageNG31FlashOfficialImageToImage, SaveImage, ShowText|pysssss, Text, easy promptConcat, easy promptLine, easy showAnything]
 problems: []
-missing: [TextBox|fofo]
-members: [音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json, 音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json]
+missing: [easy promptConcat, easy promptLine]
+members: [图片生成/图生图/2102223135935385602.json, 图片生成/文生图/官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2091082751796666369.json, 图片生成/文生图/最新G image2电商主图工作流 V1.0_2092240232010829826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_506
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json、音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json、音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2102223135935385602.json、图片生成/文生图/官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2091082751796666369.json、图片生成/文生图/最新G image2电商主图工作流 V1.0_2092240232010829826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
+- `LoadImage`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageNG31FlashOfficialImageToImage`
+- `SaveImage`
+- `ShowText|pysssss`
+- `Text`
+- `easy promptConcat`
+- `easy promptLine`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `TextBox|fofo` —— 1/3 个有
+- `HAIGC_CombineUnits` —— 2/3 个有
+- `HAIGC_Layer` —— 2/3 个有
+- `HAIGC_SavePSD` —— 2/3 个有
 
 ## 典型参数
 
@@ -45,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：TextBox|fofo
+- 这些节点还没有知识卡，系统对它们的理解有限：easy promptConcat、easy promptLine

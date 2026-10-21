@@ -1,90 +1,86 @@
 ---
 name: unknown_workflow_video_sampler_unet_55
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8066
-common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Prompt Text, CR Text, CR Text Concatenate, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadAudio, LoadImage, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaLabel, PrimitiveFloat, ResolutionSelector, ShowText|pysssss, UNETLoader, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.430667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, KSamplerSelect, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YuanAudioList, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_MiniMaxH3Video]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3  Ref多模态SelfLift节点采样 低显存超高2K分辨率生成工作流_2098521007643521026.json, 视频生成/图生视频/MiniMax H3 海螺Ref 图片 视频 音频多模态原生视频生成工作流（20步）_2089317433478828034.json, 视频生成/图生视频/MiniMax-H3 单人音频驱动数字人+SelfLite 超高分2K高清工作流_2101010348101955585.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人 + SelfLite超分高清工作流_2101010365365702658.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2108767431442395138.json]
+members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105117440979066882.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105494942570344449.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版）_2087449866099314689.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1自用Dasiwa_2095041265858605058.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V9.2（短剧版）_2093649983697412097.json, 视频生成/图生视频/MiniMax-H3导演台_2097884970437144578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_55
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3  Ref多模态SelfLift节点采样 低显存超高2K分辨率生成工作流_2098521007643521026.json、视频生成/图生视频/MiniMax H3 海螺Ref 图片 视频 音频多模态原生视频生成工作流（20步）_2089317433478828034.json、视频生成/图生视频/MiniMax-H3 单人音频驱动数字人+SelfLite 超高分2K高清工作流_2101010348101955585.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人 + SelfLite超分高清工作流_2101010365365702658.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2108767431442395138.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105117440979066882.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版_2105494942570344449.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1原始版）_2087449866099314689.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V7.1自用Dasiwa_2095041265858605058.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V9.2（短剧版）_2093649983697412097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
-- `Fast Groups Bypasser (rgthree)`
+- `ComfyMathExpression`
+- `GetImage`
+- `GetNode`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
+- `ManualSigmas`
 - `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PixaromaLabel`
+- `PreviewImage`
 - `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
 - `ResolutionSelector`
-- `ShowText|pysssss`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `YUAN_TXTJsonExtractor`
+- `YuanAudioList`
+- `YuanAudioSplit`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_MiniMaxH3Video`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `ConditioningZeroOut` —— 4/5 个有
-- `ExtendIntermediateSigmas` —— 4/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `PlaySound|pysssss` —— 4/5 个有
-- `RHLLMChatNode` —— 4/5 个有
-- `RHSettingsNode` —— 4/5 个有
-- `VAEDecode` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `Fast Groups Muter (rgthree)` —— 3/5 个有
-- `SelfLiftAvatarH3Sampler` —— 3/5 个有
-- `SoundFlow_GetLength` —— 3/5 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 3/5 个有
-- `AudioSeparation` —— 2/5 个有
-- `CreateVideo` —— 2/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `LoadVideoUI` —— 2/5 个有
-- `AudioConcat` —— 1/5 个有
-- `BasicGuider` —— 1/5 个有
-- `ComfyMathExpression` —— 1/5 个有
-- `EmptyAudio` —— 1/5 个有
-- `ImageBatchMulti` —— 1/5 个有
-- `MiniMaxH3AVDecodeT8` —— 1/5 个有
-- `PixaromaGroupSwitch` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `RandomNoise` —— 1/5 个有
-- `SamplerCustomAdvanced` —— 1/5 个有
-- `SelfLiftH3Sampler` —— 1/5 个有
-- `VAEDecodeAudio` —— 1/5 个有
-- `VRGDG_AudioCrop` —— 1/5 个有
-- `easy imageConcat` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `LoraLoaderBypassModelOnly` —— 5/6 个有
+- `YUAN_TXTJsonSwitch` —— 5/6 个有
+- `YUAN_TXTPreviewContent` —— 5/6 个有
+- `Yuan_H3MotionContext` —— 5/6 个有
+- `Yuan_H3MotionContextTrim` —— 5/6 个有
+- `Yuan_H3Upscale3D` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
+- `TextGenerate` —— 4/6 个有
+- `VAEDecode` —— 3/6 个有
+- `VAEDecodeAudio` —— 3/6 个有
+- `ComfySwitchNode` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `Lora Loader Stack (rgthree)` —— 1/6 个有
+- `MiniMaxH3AddGuide` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `PreviewAudio` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `SplitSigmas` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `StringReplace` —— 1/6 个有
+- `YUAN_TXTParagraphSplitter` —— 1/6 个有
+- `YUAN_TXTShotDurations` —— 1/6 个有
+- `YUAN_TXTShotReplace` —— 1/6 个有
+- `YuanAudioLoad` —— 1/6 个有
+- `Yuan_H3MotionContextLoadLatent` —— 1/6 个有
+- `Yuan_VideoUI` —— 1/6 个有
 
 ## 典型参数
 

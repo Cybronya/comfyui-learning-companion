@@ -3,58 +3,55 @@ name: unknown_workflow_video_sampler_vae_187
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7705
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, MaskPreview, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.963
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1958478405673107458.json, 视频生成/图生视频/1933898213298757633.json]
+members: [视频生成/图生视频/1932721199510081537.json, 视频生成/文生视频/1922107883666997249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_187
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1958478405673107458.json、视频生成/图生视频/1933898213298757633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1932721199510081537.json、视频生成/文生视频/1922107883666997249.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageRangeFromBatch`
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
+- `ImageConcatMulti`
 - `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskBatchMulti`
-- `MaskPreview`
-- `PreviewImage`
-- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVACEEncode`
 - `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `MaskPreview+` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ResizeLongestToNode` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
 - `WanVideoLoraSelect` —— 1/2 个有
 - `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 

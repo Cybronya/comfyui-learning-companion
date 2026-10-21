@@ -2,79 +2,66 @@
 name: unknown_workflow_video_lora_sampler_523
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.911
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.91175
+common_nodes: [CreateCFGScheduleFloatList, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [视频生成/图生视频/2026256930167066626.json, 视频生成/图生视频/1961064930017525761.json, 视频生成/图生视频/1961361515834183681.json, 音频生成/音频生成/Wan2.2-S2V 音频到视频数字人对口型_1961331106094235649.json]
+members: [视频生成/图生视频/1968572252335812609.json, 视频生成/图生视频/2071155047878193153.json, 视频生成/图生视频/1979152204013670402.json, 视频生成/文生视频/Wan2.2-14B 图生视频360度后空翻123_2001304184546881538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_523
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2026256930167066626.json、视频生成/图生视频/1961064930017525761.json、视频生成/图生视频/1961361515834183681.json、音频生成/音频生成/Wan2.2-S2V 音频到视频数字人对口型_1961331106094235649.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1968572252335812609.json、视频生成/图生视频/2071155047878193153.json、视频生成/图生视频/1979152204013670402.json、视频生成/文生视频/Wan2.2-14B 图生视频360度后空翻123_2001304184546881538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
+- **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSampler`
-- `LoadAudio`
+- `CreateCFGScheduleFloatList`
+- `JWInteger`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `AudioCombine` —— 2/4 个有
-- `AudioCrop` —— 2/4 个有
-- `CR SDXL Aspect Ratio` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `PrimitiveString` —— 2/4 个有
-- `RH_GetAudioDuration` —— 2/4 个有
-- `TrimAudio` —— 2/4 个有
-- `INTConstant` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ImageFromBatch+` —— 3/4 个有
+- `ImageResize+` —— 3/4 个有
+- `Bjornulf_ShowInt` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `ShowText` —— 2/4 个有
+- `DF_Int_to_Float` —— 1/4 个有
+- `DF_Integer` —— 1/4 个有
+- `DF_Text_Box` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 8 | 4 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 4 | 81% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，4 个样本，取值集中（一致性 81%）
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

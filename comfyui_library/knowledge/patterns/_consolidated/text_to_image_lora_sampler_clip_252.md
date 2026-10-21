@@ -1,136 +1,87 @@
 ---
 name: text_to_image_lora_sampler_clip_252
 type: Text To Image
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.542333
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CM_IntUnaryOperation, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyImage, EmptyLatentImage, GetImageSizeAndCount, GetNode, H3SigmaRefiner, ImageLoader, ImageResizeKJv2, ImpactFloat, JWFloatToString, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, PreviewAudio, PrimitiveFloat, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, ResolutionSelector, SaveVideo, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, StringFunction|pysssss, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VRGDG_MiniMaxH3AudioDrive, easy anythingIndexSwitch, easy anythingInversedSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.844
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, EmptyYuE2LatentAudio, JjkText, KSampler, LoraLoaderModelOnly, SaveAudioAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YuE2GenerateMusic, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/音频歌曲MV参考生视频官方版｜任意数量参考Minnimax-H3_2101154129300254722.json, 视频生成/图生视频/音频歌曲MV多参考生视频MiniMax H3处理生成工具_2101361082567843841.json, 视频生成/图生视频/音频歌曲MV生视频官方版｜任意数量参考图加上一镜头Minnimax-H3_2101175084877705218.json]
+members: [音频生成/音频生成/YuE2纯音乐BGM生成无人声 音频创作处理工具_2100675544827387905.json, 音频生成/音频生成/YuE2音乐模型文生音乐基础工作流处理工具_2100663229725896706.json, 音频生成/音频生成/YuE2音乐生成工作流 音频创作处理工具_2099925588751507457.json, 音频生成/音频生成/文本转音乐YuE2工作流，音频生成文本到音乐创作工具_2107596310319816705.json, 音频生成/音频生成/音乐生成｜yue2一句话作曲，原创BGM轻松拿捏_2099907950302294018.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_252
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/音频歌曲MV参考生视频官方版｜任意数量参考Minnimax-H3_2101154129300254722.json、视频生成/图生视频/音频歌曲MV多参考生视频MiniMax H3处理生成工具_2101361082567843841.json、视频生成/图生视频/音频歌曲MV生视频官方版｜任意数量参考图加上一镜头Minnimax-H3_2101175084877705218.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/YuE2纯音乐BGM生成无人声 音频创作处理工具_2100675544827387905.json、音频生成/音频生成/YuE2音乐模型文生音乐基础工作流处理工具_2100663229725896706.json、音频生成/音频生成/YuE2音乐生成工作流 音频创作处理工具_2099925588751507457.json、音频生成/音频生成/文本转音乐YuE2工作流，音频生成文本到音乐创作工具_2107596310319816705.json、音频生成/音频生成/音乐生成｜yue2一句话作曲，原创BGM轻松拿捏_2099907950302294018.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_IntUnaryOperation`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `EmptyImage`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `H3SigmaRefiner`
-- `ImageLoader`
-- `ImageResizeKJv2`
-- `ImpactFloat`
-- `JWFloatToString`
+- `EmptyYuE2LatentAudio`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MemoryCleaner`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `PreviewAudio`
-- `PrimitiveFloat`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `StringFunction|pysssss`
-- `TrimAudioDuration`
+- `SaveAudioAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `easy anythingIndexSwitch`
-- `easy anythingInversedSwitch`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `YuE2GenerateMusic`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Make Image Batch` —— 2/3 个有
-- `FL_ImageBatchToGrid` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `ImageFromBatch+` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RunningHub OmniShotCut Detector` —— 1/3 个有
-- `RunningHub OmniShotCut Loader` —— 1/3 个有
-- `RunningHub OmniShotCut SaveJson` —— 1/3 个有
-- `RunningHub OmniShotCut ShotCount` —— 1/3 个有
-- `RunningHub OmniShotCut VideoSplitter` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `easy batchAnything` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
+- `PreviewAny` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `YuE2GenerateABC` —— 3/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `Bjornulf_FreeVRAM` —— 1/5 个有
+- `CM_IntToFloat` —— 1/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `MelBandRoFormerModelLoader` —— 1/5 个有
+- `MelBandRoFormerSampler` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `PrimitiveString` —— 1/5 个有
+- `SaveAudio` —— 1/5 个有
+- `SeedNode` —— 1/5 个有
+- `easy positive` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

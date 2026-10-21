@@ -1,76 +1,87 @@
 ---
 name: unknown_workflow_sampler_clip_unet_10
 type: Unknown Workflow
-frequency: 15
+frequency: 25
 level: moderate
-coverage: 0.769533
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: PurgeVRAM V2]
-members: [图片生成/文生图/1954314194239811586.json, 图片生成/文生图/1954423623698280449.json, 图片生成/文生图/1954461836424953858.json, 图片生成/文生图/1954743795998965761.json, 图片生成/文生图/1954768333373620226.json, 图片生成/文生图/1954773431147479041.json, 图片生成/文生图/1954817663203721218.json, 图片生成/文生图/1955342392250417153.json, 图片生成/文生图/1955920019513376770.json, 图片生成/文生图/1959887822478061569.json, 图片生成/文生图/1961062588018835457.json, 图片生成/文生图/1961085397939982338.json, 图片生成/文生图/1964982995616677890.json, 图片生成/文生图/1966026218137096193.json, 图片生成/文生图/1970348297275777025.json]
+coverage: 0.77028
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/文生图/Ideogram 4 自审查生图_2062902826669535233.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2065735487565946881.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085242360778280962.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085249483184627714.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2087796460128661505.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2087800722841759746.json, 图片生成/文生图/Ideogram 4_2064161496220917762.json, 图片生成/文生图/Ideogram 开源支持语言简洁文生图_2064255815862800385.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2062741988264468482.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2063812523903770625.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2063818019272486913.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2080566085367197698.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2080569000928571394.json, 图片生成/文生图/Ideogram 强势开源文生图支持自然语言极简输入_2063901268447416321.json, 图片生成/文生图/Ideogram+Qwen35支持语言简洁文生图_2076442947637309441.json, 图片生成/文生图/Ideogram+_AI 版专业排版软件_的文生图方案_2067596044078247938.json, 图片生成/文生图/Ideogram4-文生图_2063913322784841730.json, 图片生成/文生图/Ideogram4-美学大师-自动提示词-文生图-MJ风格_2063245808631377922.json, 图片生成/文生图/Ideogram4全自动文生图_2063089442067410946.json, 图片生成/文生图/Ideogram4全自动文生图_2063247772672937985.json, 图片生成/文生图/MJ最佳平替Ideogram4美学大师全自动文生图工作流 V1.0_2063172563454488577.json, 图片生成/文生图/ideogram4精准图像控制，轻松制作宏大场景、游戏概念画、多文字海报_2074142490516606978.json, 图片生成/文生图/【MJ最佳替代品】Ideogram4美学大师全自动文生图_2062820590976847873.json, 图片生成/文生图/【MJ最佳替代品】Ideogram4美学大师全自动文生图_2063183559854223361.json, 图片生成/文生图/心然·寻源-Ideogram4文生图（对标MJ）_2091164270091399170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_10
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/1954314194239811586.json、图片生成/文生图/1954423623698280449.json、图片生成/文生图/1954461836424953858.json、图片生成/文生图/1954743795998965761.json、图片生成/文生图/1954768333373620226.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/Ideogram 4 自审查生图_2062902826669535233.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2065735487565946881.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085242360778280962.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085249483184627714.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2087796460128661505.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：25
 - **可信度**：中等可信
 - **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 25 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 9/15 个有
-- `LoraLoaderModelOnly` —— 7/15 个有
-- `LayerUtility: ImageReel` —— 6/15 个有
-- `LayerUtility: ImageReelComposit` —— 6/15 个有
-- `PrimitiveInt` —— 6/15 个有
-- `PrimitiveStringMultiline` —— 6/15 个有
-- `LoraLoader` —— 4/15 个有
-- `AV_LoraLoader` —— 2/15 个有
-- `ImpactInt` —— 1/15 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/15 个有
-- `NunchakuQwenImageDiTLoader` —— 1/15 个有
+- `PreviewAny` —— 24/25 个有
+- `PrimitiveStringMultiline` —— 24/25 个有
+- `CustomCombo` —— 20/25 个有
+- `ComfyMathExpression` —— 16/25 个有
+- `ResolutionSelector` —— 16/25 个有
+- `llama_cpp_instruct_adv` —— 16/25 个有
+- `llama_cpp_model_loader` —— 16/25 个有
+- `llama_cpp_parameters` —— 16/25 个有
+- `JjkText` —— 10/25 个有
+- `easy cleanGpuUsed` —— 9/25 个有
+- `PreviewImage` —— 8/25 个有
+- `SeedVR2LoadDiTModel` —— 8/25 个有
+- `SeedVR2LoadVAEModel` —— 8/25 个有
+- `SeedVR2VideoUpscaler` —— 8/25 个有
+- `INTConstant` —— 7/25 个有
+- `Image Comparer (rgthree)` —— 7/25 个有
+- `ImageScaleToTotalPixels` —— 7/25 个有
+- `easy saveText` —— 7/25 个有
+- `easy showAnything` —— 7/25 个有
+- `RHLLMChatNode` —— 6/25 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/25 个有
+- `Ideogram4PromptBuilderKJ` —— 2/25 个有
+- `LoadImage` —— 2/25 个有
+- `AddLabel` —— 1/25 个有
+- `DeepTranslatorTextNode` —— 1/25 个有
+- `ShowText|pysssss` —— 1/25 个有
+- `StringConcatenate` —— 1/25 个有
+- `TextGenerate` —— 1/25 个有
+- `UnloadAllModels` —— 1/25 个有
+- `孤海注释` —— 1/25 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
-| 采样步数 | 10 | 4 - 30 | 15 | 45% |
-| Prompt 约束强度(CFG) | 1 | 1 - 7 | 15 | 29% |
-| 采样算法 | euler | - | 15 | 47% |
-| 调度器 | simple | - | 15 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 10，观测区间 4 - 30，15 个样本，取值分散，一致性仅 45%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 7，15 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，15 个样本，一致性 47%
-- 调度器 最常用 simple，15 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageReel、LayerUtility: ImageReelComposit、LayerUtility: PurgeVRAM V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

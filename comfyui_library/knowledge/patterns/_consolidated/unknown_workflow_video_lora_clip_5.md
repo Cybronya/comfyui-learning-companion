@@ -1,81 +1,70 @@
 ---
 name: unknown_workflow_video_lora_clip_5
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.542214
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanChunkFeedForward]
+frequency: 6
+level: weak
+coverage: 0.961667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065073781403643906.json, 视频生成/图生视频/2068015030934786049.json, 视频生成/图生视频/2067983408994807810.json, 视频生成/图生视频/2065050887139188738.json, 视频生成/图生视频/2067976240774074369.json, 视频生成/图生视频/2068006607816060929.json, 视频生成/图生视频/2069809845880049665.json, 视频生成/图生视频/2068608241436815362.json, 视频生成/图生视频/2068592068020228097.json, 视频生成/图生视频/Scail2人物替换工作流_2102813959735832577.json, 视频生成/图生视频/Scail2人物替换工作流_2106538167158530050.json, 视频生成/图生视频/2068613671097552898.json, 视频生成/图生视频/2064423977212272642.json, 视频生成/图生视频/2068394809362051074.json]
+members: [视频生成/图生视频/1952189425302360065.json, 视频生成/图生视频/2010691930170068994.json, 视频生成/图生视频/1950720072086147074.json, 视频生成/图生视频/1995400759510544385.json, 视频生成/图生视频/1953403463789150209.json, 视频生成/图生视频/1955867522656555010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_clip_5
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2065073781403643906.json、视频生成/图生视频/2068015030934786049.json、视频生成/图生视频/2067983408994807810.json、视频生成/图生视频/2065050887139188738.json、视频生成/图生视频/2067976240774074369.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1952189425302360065.json、视频生成/图生视频/2010691930170068994.json、视频生成/图生视频/1950720072086147074.json、视频生成/图生视频/1995400759510544385.json、视频生成/图生视频/1953403463789150209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **样本数**：6
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageResizeKJv2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanChunkFeedForward`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 12/14 个有
-- `BatchImagesNode` —— 12/14 个有
-- `CheckpointLoaderSimple` —— 11/14 个有
-- `KSamplerSelect` —— 11/14 个有
-- `SAM3_VideoTrack` —— 11/14 个有
-- `SCAIL2ColoredMask` —— 11/14 个有
-- `SamplerCustom` —— 11/14 个有
-- `WanSCAILToVideo` —— 11/14 个有
-- `PreviewImage` —— 10/14 个有
-- `VAEDecode` —— 10/14 个有
-- `INTConstant` —— 7/14 个有
-- `ImageConcatMulti` —— 7/14 个有
-- `ColorTransfer` —— 6/14 个有
-- `GetImageRangeFromBatch` —— 6/14 个有
-- `VideoInfoLoaded` —— 6/14 个有
-- `WanContextWindowsManual` —— 4/14 个有
-- `RMBG` —— 3/14 个有
-- `SaveVideoNode` —— 3/14 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/14 个有
-- `GIMMVFI_interpolate` —— 2/14 个有
-- `LayerMask: RemBgUltra` —— 2/14 个有
-- `SAM3_Detect` —— 2/14 个有
-- `VAEDecodeTiled` —— 2/14 个有
-- `WanSCAILInfinity` —— 2/14 个有
-- `WanSCAILMultirefInfinity` —— 2/14 个有
-- `WanVideoMemoryEfficientSageAttentionPatch` —— 2/14 个有
-- `easy imageRemBg` —— 2/14 个有
-- `CR Text` —— 1/14 个有
-- `ComfySwitchNode` —— 1/14 个有
-- `EmptyImage` —— 1/14 个有
-- `GetImageSizeAndCount` —— 1/14 个有
-- `Int` —— 1/14 个有
+- `KSamplerAdvanced` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `WanFirstLastFrameToVideo` —— 5/6 个有
+- `WanVideoNAG` —— 4/6 个有
+- `ImageResizeKJ` —— 3/6 个有
+- `ImageResizeKJv2` —— 3/6 个有
+- `ImpactInt` —— 3/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
+- `ImageListToBatch+` —— 1/6 个有
+- `Joy_caption_two` —— 1/6 个有
+- `Joy_caption_two_load` —— 1/6 个有
+- `LayerUtility: TextJoin` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `RH_LLMAPI_NODE` —— 1/6 个有
+- `WanImageToVideo` —— 1/6 个有
+- `WanMoeKSampler` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 10 | 6 | 86% |
+| 采样算法 | 1 | 1 - 3.5 | 6 | 34% |
+| 调度器 | lcm | - | 6 | 67% |
+| 重绘幅度 | simple | - | 6 | 83% |
 
 ## 常见问题
 
@@ -83,4 +72,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 10，6 个样本，取值集中（一致性 86%）
+- 采样算法 中位数 1，观测区间 1 - 3.5，6 个样本，取值分散，一致性仅 34%
+- 调度器 最常用 lcm，6 个样本，一致性 67%
+- 重绘幅度 最常用 simple，6 个样本，一致性 83%

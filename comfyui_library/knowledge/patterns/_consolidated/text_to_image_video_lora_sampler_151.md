@@ -3,78 +3,71 @@ name: text_to_image_video_lora_sampler_151
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.8855
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.58475
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, DiffusionModelLoaderKJ, EmptyLatentImage, FastGroupsBypassSwitch, GetNode, ImageCompositeMasked, ImageConcatMulti, ImageResizeKJv2, Int, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MmuuaiGroupBypass, PreviewImage, RIFE VFI, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SCAILAutoExtend, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VideoInfoLoaded, easy ab, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/加速版双时钟版官流原版合集｜MinimaxH3视频参考生成视频生视频_2088138270730444801.json, 视频生成/图生视频/换装加动作迁移视频编辑｜MiniMaxH3全节点注释视频生视频_2088735225936441345.json, 视频生成/图生视频/视频编辑换装动作迁移｜MiniMaxH3全节点注释版_2090911739268390914.json, 视频生成/文生视频/Turbo加速优化文生视频九宫格四视图｜MiniMax H3视频全能编辑工作流_2087164070075133953.json]
+members: [视频生成/图生视频/Xgc四合一流｜自定义背景动作模仿人物替换全都有_2097193944114352130.json, 视频生成/图生视频/Xgc工作流四合一｜自定义背景动作模仿人物替换多人数自由选｜视频生视频_2099095513466490882.json, 视频生成/图生视频/自定义背景动作模仿人物替换 多人数选择图生视频_2098827389802467329.json, 视频生成/图生视频/自定义背景动作模仿人物替换｜多图多人选择视频生成_2097102720611213314.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_151
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/加速版双时钟版官流原版合集｜MinimaxH3视频参考生成视频生视频_2088138270730444801.json、视频生成/图生视频/换装加动作迁移视频编辑｜MiniMaxH3全节点注释视频生视频_2088735225936441345.json、视频生成/图生视频/视频编辑换装动作迁移｜MiniMaxH3全节点注释版_2090911739268390914.json、视频生成/文生视频/Turbo加速优化文生视频九宫格四视图｜MiniMax H3视频全能编辑工作流_2087164070075133953.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Xgc四合一流｜自定义背景动作模仿人物替换全都有_2097193944114352130.json、视频生成/图生视频/Xgc工作流四合一｜自定义背景动作模仿人物替换多人数自由选｜视频生视频_2099095513466490882.json、视频生成/图生视频/自定义背景动作模仿人物替换 多人数选择图生视频_2098827389802467329.json、视频生成/图生视频/自定义背景动作模仿人物替换｜多图多人选择视频生成_2097102720611213314.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
+- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
+- `FastGroupsBypassSwitch`
+- `GetNode`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `Int`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `MmuuaiGroupBypass`
+- `PreviewImage`
+- `RIFE VFI`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SCAILAutoExtend`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VideoInfoLoaded`
+- `easy ab`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `VRAM_Debug` —— 3/4 个有
-- `EasyCache` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `ModelPreviewOverrideKJ` —— 2/4 个有
-- `VAEDecodeAudio` —— 2/4 个有
-- `AddLabel` —— 1/4 个有
-- `Display Any (rgthree)` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetCurrentTimeNode` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `ImageScaleToMaxDimension` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `LazySwitch1way` —— 1/4 个有
-- `MiniMaxH3ImageToVideo` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
-- `PurgeVRAM_UTK` —— 1/4 个有
-- `SomethingToString` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
-- `easy seed` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `ComfySwitchNodeV2` —— 2/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `MaskCompositeRef` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
 
 ## 典型参数
 

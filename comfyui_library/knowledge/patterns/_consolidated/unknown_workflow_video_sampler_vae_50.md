@@ -3,66 +3,66 @@ name: unknown_workflow_video_sampler_vae_50
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.713
-common_nodes: [GetNode, INTConstant, ImageResizeKJv2, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.687889
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1922913039635419137.json, 视频生成/图生视频/1927920381506797569.json, 视频生成/图生视频/1922904256758648834.json, 视频生成/图生视频/1930513841942118401.json, 视频生成/图生视频/1924699214469918722.json, 视频生成/图生视频/1922890736801386498.json, 视频生成/图生视频/1931161804242923521.json, 视频生成/图生视频/1922918753066172418.json, 视频生成/图生视频/1929011681165262850.json]
+members: [视频生成/图生视频/1945374427557318658.json, 视频生成/图生视频/1934239339964493825.json, 视频生成/图生视频/1933577534904651778.json, 视频生成/图生视频/1939625951204655105.json, 视频生成/图生视频/1912685633197015041.json, 视频生成/图生视频/1924821785194524673.json, 视频生成/图生视频/1922710943292166146.json, 视频生成/图生视频/1933853840162607105.json, 视频生成/图生视频/1934905346538283010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_50
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1922913039635419137.json、视频生成/图生视频/1927920381506797569.json、视频生成/图生视频/1922904256758648834.json、视频生成/图生视频/1930513841942118401.json、视频生成/图生视频/1924699214469918722.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1945374427557318658.json、视频生成/图生视频/1934239339964493825.json、视频生成/图生视频/1933577534904651778.json、视频生成/图生视频/1939625951204655105.json、视频生成/图生视频/1912685633197015041.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/9 个有
-- `WanVideoEnhanceAVideo` —— 8/9 个有
-- `WanVideoExperimentalArgs` —— 8/9 个有
-- `WanVideoSLG` —— 8/9 个有
-- `Label (rgthree)` —— 7/9 个有
-- `RMBG` —— 6/9 个有
-- `VHS_LoadVideo` —— 6/9 个有
-- `WanVideoTeaCache` —— 4/9 个有
-- `ImageResizeKJ` —— 3/9 个有
-- `MaskToImage` —— 3/9 个有
-- `Mix Color By Mask` —— 3/9 个有
-- `DownloadAndLoadSAM2Model` —— 2/9 个有
-- `GrowMaskWithBlur` —— 2/9 个有
-- `OpenposePreprocessor` —— 2/9 个有
-- `PointsEditor` —— 2/9 个有
-- `Sam2Segmentation` —— 2/9 个有
-- `WanVideoLoraSelect` —— 2/9 个有
-- `DWPreprocessor` —— 1/9 个有
-- `DepthAnythingV2Preprocessor` —— 1/9 个有
-- `ImageBatchGet` —— 1/9 个有
-- `InvertMask` —— 1/9 个有
-- `SAMLoader` —— 1/9 个有
+- `JWInteger` —— 6/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/9 个有
+- `Note Plus (mtb)` —— 5/9 个有
+- `WanVideoTeaCache` —— 5/9 个有
+- `MathExpression|pysssss` —— 4/9 个有
+- `CR Prompt Text` —— 3/9 个有
+- `CR Text` —— 3/9 个有
+- `PDIMAGE_LongerSize` —— 3/9 个有
+- `WanVideoEnhanceAVideo` —— 3/9 个有
+- `WanVideoTorchCompileSettings` —— 3/9 个有
+- `WanVideoVACEModelSelect` —— 2/9 个有
+- `Image Blank` —— 1/9 个有
+- `LayerMask: MaskPreview` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `WanVideoLoraSelect` —— 1/9 个有
+- `easy batchAnything` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 

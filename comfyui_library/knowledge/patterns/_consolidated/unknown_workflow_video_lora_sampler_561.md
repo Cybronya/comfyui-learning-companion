@@ -3,56 +3,61 @@ name: unknown_workflow_video_lora_sampler_561
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.90125
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.678
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, LoadImage, SetNode, SimpleComparison+, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader, easy ifElse, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/1956922387473076226.json, 视频生成/文生视频/1957002960897236994.json, 视频生成/文生视频/StandIn人物一致性_2072999632508329984.json, 视频生成/文生视频/1956683255350005762.json]
+members: [视频生成/文生视频/SVI FILM 循环长视频_1984166711169581057.json, 视频生成/文生视频/SVI SHOT 长视频 循环_1984161219709992962.json, 视频生成/文生视频/SVI-SHOT 长视频 非循环_1984156029606920194.json, 视频生成/文生视频/SVI_FILM长视频生成_非循环_1984138847112069121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_561
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1956922387473076226.json、视频生成/文生视频/1957002960897236994.json、视频生成/文生视频/StandIn人物一致性_2072999632508329984.json、视频生成/文生视频/1956683255350005762.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/SVI FILM 循环长视频_1984166711169581057.json、视频生成/文生视频/SVI SHOT 长视频 循环_1984161219709992962.json、视频生成/文生视频/SVI-SHOT 长视频 非循环_1984156029606920194.json、视频生成/文生视频/SVI_FILM长视频生成_非循环_1984138847112069121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `SetNode`
+- `SimpleComparison+`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEmbedBridge`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy ifElse`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/4 个有
-- `CR Text Replace` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `RH_Prompter` —— 1/4 个有
-- `RIFE VFI` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `TextBox` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `List of any [Crystools]` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `easy forLoopEnd` —— 2/4 个有
+- `easy forLoopStart` —— 2/4 个有
+- `easy indexAnything` —— 2/4 个有
+- `easy lengthAnything` —— 2/4 个有
 
 ## 典型参数
 

@@ -3,54 +3,73 @@ name: unknown_workflow_video_lora_sampler_841
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.834
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.9665
+common_nodes: [AudioCropProcessUTK, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, ImageSharpen, JWInteger, KSamplerSelect, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy float]
 problems: []
 missing: []
-members: [视频生成/图生视频/scail-2视频动作迁移【small-JJ小健健】_2077275327600095233.json, 视频生成/图生视频/2071865157709557762.json]
+members: [视频生成/图生视频/2019699591033131009.json, 视频生成/图生视频/2033035717600878594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_841
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/scail-2视频动作迁移【small-JJ小健健】_2077275327600095233.json、视频生成/图生视频/2071865157709557762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2019699591033131009.json、视频生成/图生视频/2033035717600878594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
+- `AudioCropProcessUTK`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
-- `ImageResizeKJv2`
+- `EmptyLTXVLatentVideo`
+- `ImageSharpen`
+- `JWInteger`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudioDuration`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy float`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `DiffusionModelLoaderKJ` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `LTXAVTextEncoderLoader` —— 1/2 个有
+- `LTXVScheduler` —— 1/2 个有
+- `LayerFilter: GaussianBlur` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
 
 ## 典型参数
 

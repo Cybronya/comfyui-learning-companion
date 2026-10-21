@@ -1,53 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_8
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.839286
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptySD3LatentImage, KSampler, SaveImage, TripleCLIPLoader, VAEDecode]
+frequency: 8
+level: moderate
+coverage: 0.99225
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTXVConditioning, LTXVImgToVideo, LTXVPreprocess, LTXVScheduler, LoadImage, SamplerCustom, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/文生图/1930199196047982593.json, 图片生成/文生图/1955937848417550338.json, 图片生成/文生图/sd3.5_Large 模型的基础工作流_1891736065517203458.json, 图片生成/文生图/sd3.5_large 满血版 官方文生图示例_1848750522676416513.json, 图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json, 图片生成/文生图/sd3.5_medium_1852341200979206145.json, 视频生成/图生视频/1930207326282878978.json]
+members: [视频生成/图生视频/2061352248059453441.json, 视频生成/图生视频/1922115762343854081.json, 视频生成/图生视频/1922122988903399425.json, 视频生成/图生视频/1920704880137142273.json, 视频生成/图生视频/1920714358920249345.json, 视频生成/图生视频/1922236648937996290.json, 视频生成/图生视频/1948228738078126081.json, 视频生成/图生视频/1947951942166294530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_8
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1930199196047982593.json、图片生成/文生图/1955937848417550338.json、图片生成/文生图/sd3.5_Large 模型的基础工作流_1891736065517203458.json、图片生成/文生图/sd3.5_large 满血版 官方文生图示例_1848750522676416513.json、图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2061352248059453441.json、视频生成/图生视频/1922115762343854081.json、视频生成/图生视频/1922122988903399425.json、视频生成/图生视频/1920704880137142273.json、视频生成/图生视频/1920714358920249345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `SaveImage`
-- `TripleCLIPLoader`
+- `KSamplerSelect`
+- `LTXVConditioning`
+- `LTXVImgToVideo`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LoadImage`
+- `SamplerCustom`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 6/7 个有
-- `DualCLIPLoader` —— 6/7 个有
-- `SeargePromptText` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RH_Prompter` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
+- `ImageResizeKJ` —— 7/8 个有
+- `Int` —— 7/8 个有
+- `VHS_VideoCombine` —— 7/8 个有
+- `Florence2` —— 2/8 个有
+- `LayerMask: LoadFlorence2Model` —— 2/8 个有
+- `ImageUpscaleWithModel` —— 1/8 个有
+- `Primitive integer [Crystools]` —— 1/8 个有
+- `RIFE VFI` —— 1/8 个有
+- `SaveAnimatedWEBP` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `SaveWEBM` —— 1/8 个有
+- `UpscaleModelLoader` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 7 | 81% |
-| Prompt 约束强度(CFG) | 5.45 | 5.45 - 5.45 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | sgm_uniform | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -55,8 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，7 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 5.45，观测区间 5.45 - 5.45，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

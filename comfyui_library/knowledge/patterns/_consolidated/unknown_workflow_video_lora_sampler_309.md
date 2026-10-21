@@ -3,61 +3,66 @@ name: unknown_workflow_video_lora_sampler_309
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.922857
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, ImageConcanate, ImageConcatMulti, ImageResizeKJ, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PDIMAGE_LongerSize, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.722429
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, CR Text Replace, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1947482709851525122.json, 视频生成/图生视频/1935281267648954369.json, 视频生成/图生视频/1942037582668840961.json, 视频生成/图生视频/1935538353750069250.json, 视频生成/图生视频/1935677358408200194.json, 视频生成/图生视频/1935239165498032130.json, 视频生成/图生视频/1935550198397730818.json]
+members: [视频生成/图生视频/MiniMaxH3 双人 完美数字人_2089941203092590593.json, 视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092253052395941889.json, 视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092436981681844226.json, 视频生成/图生视频/MiniMaxH3 完美数字人_2086312040032989186.json, 视频生成/图生视频/MiniMaxH3 数字人走路说话 维吾尔族语_2089970449554956290.json, 视频生成/图生视频/Minimax_H3 Mv 开场和间奏画面制作_2088633195758702594.json, 视频生成/文生视频/开源版MinimaxH3完美口播带货数字人参考音频数字人短视频带货_2086540418640076801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_309
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1947482709851525122.json、视频生成/图生视频/1935281267648954369.json、视频生成/图生视频/1942037582668840961.json、视频生成/图生视频/1935538353750069250.json、视频生成/图生视频/1935677358408200194.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 双人 完美数字人_2089941203092590593.json、视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092253052395941889.json、视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092436981681844226.json、视频生成/图生视频/MiniMaxH3 完美数字人_2086312040032989186.json、视频生成/图生视频/MiniMaxH3 数字人走路说话 维吾尔族语_2089970449554956290.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageSizeAndCount`
-- `ImageConcanate`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text`
+- `CR Text Replace`
+- `Int`
+- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PDIMAGE_LongerSize`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `RHLLMChatNode`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 6/7 个有
-- `Primitive integer [Crystools]` —— 6/7 个有
-- `Text Multiline` —— 4/7 个有
-- `RH_Translator` —— 3/7 个有
-- `Note Plus (mtb)` —— 2/7 个有
-- `easy cleanGpuUsed` —— 2/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
-- `ImageUpscaleWithModel` —— 1/7 个有
-- `RIFE VFI` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
+- `CR Text Concatenate` —— 6/7 个有
+- `PreviewAny` —— 6/7 个有
+- `StringToInt` —— 6/7 个有
+- `ttN concat` —— 6/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `IntToString` —— 1/7 个有
+- `LazySwitch1way` —— 1/7 个有
+- `ModelAttentionBackend` —— 1/7 个有
+- `MultiTextConcatenate` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PrimitiveBoolean` —— 1/7 个有
+- `ShowAnything|Mie` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
+- `floatToInt _O` —— 1/7 个有
+- `sanmi Float` —— 1/7 个有
 
 ## 典型参数
 

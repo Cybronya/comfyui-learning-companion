@@ -3,37 +3,34 @@ name: unknown_workflow_video_lora_sampler_382
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.723667
-common_nodes: [CreateCFGScheduleFloatList, GetNode, HuMoEmbeds, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.7465
+common_nodes: [CR Text Replace, CreateCFGScheduleFloatList, INTConstant, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SimpleMath+, Text Multiline, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
-missing: []
-members: [视频生成/图生视频/1967466923598417921.json, 视频生成/图生视频/1967487607431159809.json, 视频生成/图生视频/1968378350089719809.json, 视频生成/图生视频/1968155104769617921.json, 音频生成/音频生成/单图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967050326144638978.json, 音频生成/音频生成/数字人HuMo单人参考数字人V1_1967105592944943105.json]
+missing: [CR Text Replace, MathExpression|pysssss, SimpleMath+, Text Multiline, easy int, easy imageSize]
+members: [视频生成/图生视频/1956657065885143042.json, 视频生成/图生视频/1956615670723170306.json, 视频生成/图生视频/1959880278208622594.json, 视频生成/文生视频/1962918424819240961.json, 视频生成/文生视频/1957701596052385794.json, 视频生成/文生视频/1957729616544854018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_382
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1967466923598417921.json、视频生成/图生视频/1967487607431159809.json、视频生成/图生视频/1968378350089719809.json、视频生成/图生视频/1968155104769617921.json、音频生成/音频生成/单图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967050326144638978.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1956657065885143042.json、视频生成/图生视频/1956615670723170306.json、视频生成/图生视频/1959880278208622594.json、视频生成/文生视频/1962918424819240961.json、视频生成/文生视频/1957701596052385794.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CR Text Replace`
 - `CreateCFGScheduleFloatList`
-- `GetNode`
-- `HuMoEmbeds`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `PreviewImage`
-- `SetNode`
+- `INTConstant`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `SimpleMath+`
+- `Text Multiline`
+- `Textbox`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
@@ -41,35 +38,23 @@ source: knowledge_consolidation
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 5/6 个有
-- `ImageBatchMulti` —— 5/6 个有
-- `WanVideoSetLoRAs` —— 5/6 个有
-- `ImageConcatMulti` —— 4/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `WanVideoTorchCompileSettings` —— 4/6 个有
-- `Audio Duration (mtb)` —— 3/6 个有
-- `IndexTTS2Run` —— 3/6 个有
-- `PreviewAudio` —— 3/6 个有
-- `PrimitiveInt` —— 3/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `RMBG` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
-- `EmptyImage` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `WanVideoContextOptions` —— 1/6 个有
-- `easy imageRemBg` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `PrimitiveBoolean` —— 5/6 个有
+- `RH_LLMAPI_NODE` —— 5/6 个有
+- `easy ifElse` —— 5/6 个有
+- `EmptyImage` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `LoadImage` —— 3/6 个有
+- `RHHiddenNodes` —— 3/6 个有
+- `WanVideoEmptyEmbeds` —— 3/6 个有
+- `WanVideoImageToVideoEncode` —— 3/6 个有
+- `easy imageSize` —— 3/6 个有
 
 ## 典型参数
 
@@ -81,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Replace、MathExpression|pysssss、SimpleMath+、Text Multiline、easy int

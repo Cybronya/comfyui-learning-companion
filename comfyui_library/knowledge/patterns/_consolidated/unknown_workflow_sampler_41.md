@@ -3,38 +3,34 @@ name: unknown_workflow_sampler_41
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9545
-common_nodes: [AILab_QwenVL, CR Text, JWInteger, JjkConcat, LoadAudio, LoadImage, RH_LLMAPI_NODE, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo, ShowText|pysssss, string_util_StrConcat]
+coverage: 1
+common_nodes: [Kimodo_ExportBVH, Kimodo_LoadModel, Kimodo_Preview, Kimodo_Preview3D, Kimodo_Sampler, Kimodo_SaveNPZ, Kimodo_TextEncode, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/【3月】DreamId-Omni单参考+音色生视频(RA2V)_2034293740906483713.json, 视频生成/文生视频/【3月】DreamId-Omni双参考+音色生视频(RA2V)_2034437992688918530.json]
+members: [图片生成/文生图/kimodo-basic_2067452656217579521.json, 视频生成/文生视频/kimodo-basic_2065975919554162690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_41
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【3月】DreamId-Omni单参考+音色生视频(RA2V)_2034293740906483713.json、视频生成/文生视频/【3月】DreamId-Omni双参考+音色生视频(RA2V)_2034437992688918530.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/kimodo-basic_2067452656217579521.json、视频生成/文生视频/kimodo-basic_2065975919554162690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CR Text`
-- `JWInteger`
-- `JjkConcat`
-- `LoadAudio`
-- `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RunningHub DreamID-Omni Loader`
-- `RunningHub DreamID-Omni Sampler`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `string_util_StrConcat`
+- `Kimodo_ExportBVH`
+- `Kimodo_LoadModel`
+- `Kimodo_Preview`
+- `Kimodo_Preview3D`
+- `Kimodo_Sampler`
+- `Kimodo_SaveNPZ`
+- `Kimodo_TextEncode`
+- `SaveImage`
 
 ## 典型参数
 

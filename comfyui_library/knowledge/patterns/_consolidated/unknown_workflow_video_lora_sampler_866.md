@@ -3,66 +3,76 @@ name: unknown_workflow_video_lora_sampler_866
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5605
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageSmartSharpen+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy promptConcat, easy seed]
+coverage: 0.5135
+common_nodes: [CLIPVisionLoader, DWPreprocessor, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1950727376542044161.json, 视频生成/图生视频/1952041927531245569.json]
+members: [视频生成/图生视频/1970700408228376577.json, 视频生成/图生视频/1970265248752148481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_866
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1950727376542044161.json、视频生成/图生视频/1952041927531245569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1970700408228376577.json、视频生成/图生视频/1970265248752148481.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `Float`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `EmptyImage`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
 - `GetNode`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `ImageSmartSharpen+`
-- `JWInteger`
+- `ImpactSwitch`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
+- `MathExpression|pysssss`
+- `PixelPerfectResolution`
+- `PreviewAny`
 - `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy promptConcat`
-- `easy seed`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `LayerFilter: FilmV2` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BlockifyMask` —— 1/2 个有
+- `ConvertAny2Int` —— 1/2 个有
+- `Display Int (rgthree)` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `DrawMaskOnImage` —— 1/2 个有
+- `FaceMaskFromPoseKeypoints` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `Florence2toCoordinates` —— 1/2 个有
+- `GrowMask` —— 1/2 个有
+- `ImageCropByMaskAndResize` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `Switch any [Crystools]` —— 1/2 个有
+- `easy float` —— 1/2 个有
 
 ## 典型参数
 

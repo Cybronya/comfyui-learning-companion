@@ -3,29 +3,29 @@ name: unknown_workflow_generic_710
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.65
-common_nodes: [Comfly_sora2, LoadImage, SaveVideo]
+coverage: 0.6
+common_nodes: [LoadImage, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
 problems: []
-missing: [Comfly_sora2]
-members: [视频生成/图生视频/1976510159512051713.json, 视频生成/文生视频/1976488773498310657.json]
+missing: []
+members: [comfyui-workflow-templates-json/image_mage_flow_edit_int8.json, comfyui-workflow-templates-json/image_mage_flow_edit_turbo_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_710
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1976510159512051713.json、视频生成/文生视频/1976488773498310657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_mage_flow_edit_int8.json、comfyui-workflow-templates-json/image_mage_flow_edit_turbo_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Comfly_sora2`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImageAdvanced`
+- `d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
 
 ## 典型参数
 
@@ -37,5 +37,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Comfly_sora2
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,61 +3,59 @@ name: unknown_workflow_video_sampler_vae_151
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.931333
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CM_FloatToInt, CR Prompt Text, ImageResize+, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PlaySound|pysssss, PreviewAudio, SoundFlow_GetLength, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
+coverage: 0.936
+common_nodes: [DWPreprocessor, ImageBlend, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1983508119022149633.json, 视频生成/图生视频/1984410578229870594.json, 视频生成/图生视频/1981551177856892929.json]
+members: [视频生成/图生视频/1935150460091179009.json, 视频生成/图生视频/1948012807525662721.json, 视频生成/图生视频/1935591885543243777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_151
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1983508119022149633.json、视频生成/图生视频/1984410578229870594.json、视频生成/图生视频/1981551177856892929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1935150460091179009.json、视频生成/图生视频/1948012807525662721.json、视频生成/图生视频/1935591885543243777.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CM_FloatToInt`
-- `CR Prompt Text`
-- `ImageResize+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `DWPreprocessor`
+- `ImageBlend`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `PlaySound|pysssss`
-- `PreviewAudio`
-- `SoundFlow_GetLength`
+- `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddAudioEmbeds`
-- `WanVideoContextOptions`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 2/3 个有
-- `PreviewImage` —— 1/3 个有
-- `WanVideoBlockSwap` —— 1/3 个有
-- `WanVideoLoraSelectMulti` —— 1/3 个有
-- `WanVideoModelLoader` —— 1/3 个有
-- `WanVideoSetBlockSwap` —— 1/3 个有
-- `WanVideoSetLoRAs` —— 1/3 个有
-- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `GetImageSize+` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy imageConcat` —— 2/3 个有
+- `DepthAnythingPreprocessor` —— 1/3 个有
+- `Evaluate Integers` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
+- `WanVideoMagCache` —— 1/3 个有
+- `WanVideoTeaCache` —— 1/3 个有
 
 ## 典型参数
 

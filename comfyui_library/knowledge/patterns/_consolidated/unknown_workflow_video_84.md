@@ -3,34 +3,37 @@ name: unknown_workflow_video_84
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
+coverage: 0.875
+common_nodes: [Florence2ModelLoader, Florence2Run, ImageResizeKJ, Int, LoadImage, ShowText|pysssss, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062201896533839874.json, 视频生成/图生视频/2062197611167309826.json]
+members: [视频生成/图生视频/1919225782781018113.json, 视频生成/图生视频/1913104906453221377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_84
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2062201896533839874.json、视频生成/图生视频/2062197611167309826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1919225782781018113.json、视频生成/图生视频/1913104906453221377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetVideoComponents`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `ImageResizeKJ`
+- `Int`
 - `LoadImage`
+- `ShowText|pysssss`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoV31FastImageToVideo` —— 1/2 个有
-- `RH_RhartVideoV31FastStartEndToVideo` —— 1/2 个有
+- `RunningHub_FramePack` —— 1/2 个有
+- `RunningHub_FramePack_F1` —— 1/2 个有
 
 ## 典型参数
 

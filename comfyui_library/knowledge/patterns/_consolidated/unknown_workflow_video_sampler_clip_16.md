@@ -1,85 +1,75 @@
 ---
 name: unknown_workflow_video_sampler_clip_16
 type: Unknown Workflow
-frequency: 18
+frequency: 19
 level: strong
-coverage: 0.767778
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, Float, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.535842
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1993272567492444161.json, 视频生成/图生视频/2010957966706479106.json, 视频生成/图生视频/2020428290829328386.json, 视频生成/图生视频/2028397486544527362.json, 视频生成/图生视频/2028678704204881921.json, 视频生成/图生视频/2028683653529735169.json, 视频生成/图生视频/2028399847149146114.json, 视频生成/图生视频/1991085974646272001.json, 视频生成/图生视频/1987947024861564930.json, 视频生成/图生视频/2036976880821215234.json, 视频生成/图生视频/2062141489110667266.json, 视频生成/图生视频/2025914003163189250.json, 视频生成/图生视频/2041400574976991233.json, 视频生成/图生视频/2041128581908140034.json, 视频生成/图生视频/2041143697240231938.json, 视频生成/图生视频/2037015059473371137.json, 视频生成/图生视频/2040996963277082626.json, 视频生成/图生视频/2035642903317454849.json]
+members: [视频生成/图生视频/1981244475731337218.json, 视频生成/图生视频/1982712132548599809.json, 视频生成/图生视频/2038972688689008641.json, 视频生成/图生视频/2038989882521030658.json, 视频生成/图生视频/2009543545169907714.json, 视频生成/图生视频/2047592882332241922.json, 视频生成/图生视频/2051628991756419074.json, 视频生成/图生视频/2070382789744218114.json, 视频生成/图生视频/1987169484022681602.json, 视频生成/图生视频/2000107947743211522.json, 视频生成/图生视频/2014511689311461377.json, 视频生成/图生视频/1999730211526766594.json, 视频生成/图生视频/WAN2.2图生视频终极版_2083953699881316354.json, 视频生成/图生视频/1981254959582928897.json, 视频生成/图生视频/2001486989629288450.json, 视频生成/图生视频/1982359421470810113.json, 视频生成/图生视频/2001317113182777346.json, 视频生成/图生视频/2001269970967330818.json, 视频生成/图生视频/2022797713682735106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_16
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/1993272567492444161.json、视频生成/图生视频/2010957966706479106.json、视频生成/图生视频/2020428290829328386.json、视频生成/图生视频/2028397486544527362.json、视频生成/图生视频/2028678704204881921.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/1981244475731337218.json、视频生成/图生视频/1982712132548599809.json、视频生成/图生视频/2038972688689008641.json、视频生成/图生视频/2038989882521030658.json、视频生成/图生视频/2009543545169907714.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：19
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `Float`
-- `ImageResizeKJv2`
-- `JWInteger`
+- `INTConstant`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `Seed (rgthree)`
+- `PreviewImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1` —— 17/18 个有
-- `easy anythingIndexSwitch` —— 17/18 个有
-- `easy showAnything` —— 17/18 个有
-- `ColorMatch` —— 16/18 个有
-- `ImageFromBatch+` —— 16/18 个有
-- `ImageScaleBy` —— 16/18 个有
-- `MathExpression|pysssss` —— 16/18 个有
-- `RunningHub Deepcleaner` —— 16/18 个有
-- `SaveImage` —— 16/18 个有
-- `Pick From Batch (mtb)` —— 15/18 个有
-- `PreviewImage` —— 15/18 个有
-- `PainterI2V` —— 11/18 个有
-- `AILab_QwenVL` —— 9/18 个有
-- `RH_LLMAPI_NODE` —— 9/18 个有
-- `CR Text` —— 8/18 个有
-- `ShellAgentPluginOutputText` —— 8/18 个有
-- `llama_cpp_instruct_adv` —— 8/18 个有
-- `llama_cpp_model_loader` —— 8/18 个有
-- `llama_cpp_parameters` —— 8/18 个有
-- `LoraLoaderModelOnly` —— 7/18 个有
-- `DuckHideNode` —— 5/18 个有
-- `TT_img_enc` —— 5/18 个有
-- `TT_img_enc_v2` —— 5/18 个有
-- `Int` —— 3/18 个有
-- `Anything Everywhere` —— 1/18 个有
+- `Int` —— 18/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 18/19 个有
+- `easy cleanGpuUsed` —— 18/19 个有
+- `RIFE VFI` —— 17/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 15/19 个有
+- `wanBlockSwap` —— 14/19 个有
+- `ImageLoader` —— 12/19 个有
+- `WanImageToVideo` —— 11/19 个有
+- `LoraLoaderModelOnly` —— 10/19 个有
+- `ImageResizeKJv2` —— 9/19 个有
+- `WanFirstLastFrameToVideo` —— 8/19 个有
+- `LoadImage` —— 7/19 个有
+- `Qwen3_VQA` —— 4/19 个有
+- `easy showAnything` —— 4/19 个有
+- `MultiplePathsInput` —— 3/19 个有
+- `SetNode` —— 3/19 个有
+- `CR Text` —— 2/19 个有
+- `GetNode` —— 2/19 个有
+- `easy seed` —— 2/19 个有
+- `CompressImages` —— 1/19 个有
+- `CreateVideo` —— 1/19 个有
+- `MathExpression|pysssss` —— 1/19 个有
+- `RHHiddenNodes` —— 1/19 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 18 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 18 | 100% |
-| 采样算法 | 1 | 1 - 1 | 18 | 100% |
-| 调度器 | euler_ancestral | - | 18 | 100% |
-| 重绘幅度 | simple | - | 18 | 100% |
+| 采样步数 | randomize | - | 19 | 63% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 19 | 100% |
+| 采样算法 | 1 | 1 - 1 | 19 | 100% |
+| 调度器 | euler | - | 19 | 100% |
+| 重绘幅度 | normal | - | 19 | 100% |
 
 ## 常见问题
 
@@ -87,8 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，18 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，18 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，18 个样本，一致性 100%
-- 重绘幅度 最常用 simple，18 个样本，一致性 100%
+- 采样步数 最常用 randomize，19 个样本，一致性 63%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，19 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，19 个样本，一致性 100%
+- 重绘幅度 最常用 normal，19 个样本，一致性 100%

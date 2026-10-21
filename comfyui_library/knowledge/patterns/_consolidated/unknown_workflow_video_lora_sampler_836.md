@@ -3,50 +3,49 @@ name: unknown_workflow_video_lora_sampler_836
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7235
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.901
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1980897835057106945.json, 视频生成/图生视频/1984179008936050689.json]
+members: [视频生成/图生视频/1949733818894295041.json, 视频生成/图生视频/1949706641991192577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_836
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1980897835057106945.json、视频生成/图生视频/1984179008936050689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949733818894295041.json、视频生成/图生视频/1949706641991192577.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `Anything Everywhere` —— 1/2 个有
 - `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,91 +1,110 @@
 ---
 name: unknown_workflow_lora_sampler_unet_30
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.83
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImageRangeFromBatch, GetVideoComponents, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SpectrumApplyMiniMaxH3, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy batchAnything]
+coverage: 0.571
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyImage, GetImageSizeAndCount, GetNode, H3SigmaRefiner, JWFloatToString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, PrimitiveFloat, ResolutionSelector, SaveVideo, SelfLiftAvatarH3Sampler, SetNode, StringFunction|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy anythingIndexSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 fl2v无限长视频_2087006461363843073.json, 视频生成/图生视频/MiniMax-H3 fl2v视频扩展_2086765853382627330.json, 视频生成/图生视频/MiniMax-H3 ref2v无限长视频_2090036967839981569.json, 视频生成/图生视频/MiniMax-H3 无限长视频 提示词优化_2087038665250922498.json, 视频生成/图生视频/MiniMax-H3 无限长视频生成+二采放大_2094089704038821890.json]
+members: [视频生成/图生视频/视频-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599809924231170.json, 视频生成/图生视频/视频-任意数量参考生视频-Minnimax-H3-官方_2084309352525164546.json, 视频生成/图生视频/视频-参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599796091416577.json, 视频生成/图生视频/视频-图生视频(+参考上一镜头)-Minnimax-H3-官方_2100602414704447490.json, 视频生成/图生视频/视频-音频歌曲MV-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599836948127746.json, 视频生成/图生视频/视频-音频歌曲MV-任意数量参考生视频-Minnimax-H3-官方_2093231781377040385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_30
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 fl2v无限长视频_2087006461363843073.json、视频生成/图生视频/MiniMax-H3 fl2v视频扩展_2086765853382627330.json、视频生成/图生视频/MiniMax-H3 ref2v无限长视频_2090036967839981569.json、视频生成/图生视频/MiniMax-H3 无限长视频 提示词优化_2087038665250922498.json、视频生成/图生视频/MiniMax-H3 无限长视频生成+二采放大_2094089704038821890.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/视频-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599809924231170.json、视频生成/图生视频/视频-任意数量参考生视频-Minnimax-H3-官方_2084309352525164546.json、视频生成/图生视频/视频-参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599796091416577.json、视频生成/图生视频/视频-图生视频(+参考上一镜头)-Minnimax-H3-官方_2100602414704447490.json、视频生成/图生视频/视频-音频歌曲MV-任意数量参考图(+上一镜头)生视频-Minnimax-H3-官方_2100599836948127746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
+全部 6 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `CreateVideo`
-- `GetImageRangeFromBatch`
-- `GetVideoComponents`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `H3SigmaRefiner`
+- `JWFloatToString`
 - `KSamplerSelect`
-- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3BlockCacheT8`
-- `MiniMaxH3ImageToVideo`
+- `MemoryCleaner`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextTrim`
 - `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
 - `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SpectrumApplyMiniMaxH3`
-- `Text Multiline`
+- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `easy batchAnything`
+- `easy anythingIndexSwitch`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `LongTextToList` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `PreviewAny` —— 4/5 个有
-- `SDVN Any Show` —— 4/5 个有
-- `String Replace (mtb)` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
-- `easy forLoopEnd` —— 4/5 个有
-- `easy forLoopStart` —— 4/5 个有
-- `string_util_StrLen` —— 4/5 个有
-- `AnySwitch` —— 3/5 个有
-- `Fast Bypasser (rgthree)` —— 3/5 个有
-- `JjkText` —— 3/5 个有
-- `Multi Text Merge` —— 3/5 个有
-- `TTP_text_mix` —— 3/5 个有
-- `AILab_QwenVL` —— 2/5 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `LTXVConcatAVLatent` —— 1/5 个有
-- `LTXVSeparateAVLatent` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `LoadVideo` —— 1/5 个有
-- `ManualSigmas` —— 1/5 个有
-- `MiniMaxH3ChainContext` —— 1/5 个有
-- `MiniMaxH3ChainExternalVideo` —— 1/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/5 个有
-- `Qwen3VL_Advanced` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `TrimAudioDuration` —— 1/5 个有
-- `Video Slice` —— 1/5 个有
-- `Yuan_H3MotionContext` —— 1/5 个有
+- `CM_IntUnaryOperation` —— 4/6 个有
+- `FL_ImageBatchToGrid` —— 4/6 个有
+- `GetVideoComponents` —— 4/6 个有
+- `ImageBatchMulti` —— 4/6 个有
+- `ImageFromBatch+` —— 4/6 个有
+- `ImageLoader` —— 4/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `ImpactFloat` —— 4/6 个有
+- `LoadVideo` —— 4/6 个有
+- `PreviewAny` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `RunningHub OmniShotCut Detector` —— 4/6 个有
+- `RunningHub OmniShotCut Loader` —— 4/6 个有
+- `RunningHub OmniShotCut SaveJson` —— 4/6 个有
+- `RunningHub OmniShotCut ShotCount` —— 4/6 个有
+- `RunningHub OmniShotCut VideoSplitter` —— 4/6 个有
+- `SimpleMath+` —— 4/6 个有
+- `Text` —— 4/6 个有
+- `easy anythingInversedSwitch` —— 4/6 个有
+- `easy batchAnything` —— 4/6 个有
+- `easy forLoopEnd` —— 4/6 个有
+- `easy forLoopStart` —— 4/6 个有
+- `LTXVAudioVAEEncode` —— 2/6 个有
+- `LTXVConcatAVLatent` —— 2/6 个有
+- `LTXVSeparateAVLatent` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `LoadImage` —— 2/6 个有
+- `Make Image Batch` —— 2/6 个有
+- `PreviewAudio` —— 2/6 个有
+- `Qwen3ASRLoader_DFT` —— 2/6 个有
+- `Qwen3ASRTranscribe_DFT` —— 2/6 个有
+- `Seed Everywhere` —— 2/6 个有
+- `SetLatentNoiseMask` —— 2/6 个有
+- `SolidMask` —— 2/6 个有
+- `SoundFlow_GetLength` —— 2/6 个有
+- `TrimAudioDuration` —— 2/6 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/6 个有
+- `Int` —— 1/6 个有
+- `MiniMaxH3ImageToVideo` —— 1/6 个有
+- `RH_LLMAPI_NODE` —— 1/6 个有
+- `Text Contains` —— 1/6 个有
+- `Text Input Switch` —— 1/6 个有
 
 ## 典型参数
 

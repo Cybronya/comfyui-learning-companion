@@ -3,69 +3,63 @@ name: unknown_workflow_video_lora_sampler_424
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9482
-common_nodes: [AudioSeparation, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, ImageResizeKJv2, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.744
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1958191030833201153.json, 视频生成/图生视频/1942474167965126658.json, 视频生成/图生视频/1955552816828858370.json, 视频生成/图生视频/1951123683320471554.json, 视频生成/图生视频/1949260320406216705.json]
+members: [视频生成/图生视频/1925407407495913474.json, 视频生成/图生视频/1922976069052526594.json, 视频生成/图生视频/1923351461173129217.json, 视频生成/图生视频/1927701391375253506.json, 视频生成/图生视频/1955521868151361537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_424
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1958191030833201153.json、视频生成/图生视频/1942474167965126658.json、视频生成/图生视频/1955552816828858370.json、视频生成/图生视频/1951123683320471554.json、视频生成/图生视频/1949260320406216705.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1925407407495913474.json、视频生成/图生视频/1922976069052526594.json、视频生成/图生视频/1923351461173129217.json、视频生成/图生视频/1927701391375253506.json、视频生成/图生视频/1955521868151361537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioSeparation`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadAudio`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
-- `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 3/5 个有
-- `AudioCrop` —— 2/5 个有
-- `FaceRestoreCFWithModel` —— 2/5 个有
-- `FaceRestoreModelLoader` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `ImageResize+` —— 2/5 个有
-- `ReActorFaceSwap` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `StringToInt` —— 2/5 个有
-- `AudioCombine` —— 1/5 个有
-- `MimicMotionGetPoses` —— 1/5 个有
-- `SeedVCRun` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `WanVideoModelLoader` —— 4/5 个有
+- `WanVideoTeaCache` —— 4/5 个有
+- `AIO_Preprocessor` —— 3/5 个有
+- `VHS_LoadVideo` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `ImageUpscaleWithModel` —— 2/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `UpscaleModelLoader` —— 2/5 个有
+- `WanVideoVACEStartToEndFrame` —— 2/5 个有
+- `AddLabel` —— 1/5 个有
+- `ColorMatch` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `ImageBlend` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 

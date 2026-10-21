@@ -3,37 +3,38 @@ name: unknown_workflow_generic_892
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.926
-common_nodes: [AdjustAudio, AudioCombine, AudioConcatenate, AudioSeparation, LoadAudio, PrimitiveInt, SaveAudio, SeedVCRun]
+coverage: 0.9
+common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/歌曲音色克隆_1934522698573774849.json, 音频生成/音频生成/歌曲音色克隆｜AI唱歌·你的音色唱任何歌（SeedVC）_2111250006731739138.json]
+members: [视频生成/文生视频/AI图生剧本_2039001758223044609.json, 视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_892
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/歌曲音色克隆_1934522698573774849.json、音频生成/音频生成/歌曲音色克隆｜AI唱歌·你的音色唱任何歌（SeedVC）_2111250006731739138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/AI图生剧本_2039001758223044609.json、视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AdjustAudio`
-- `AudioCombine`
-- `AudioConcatenate`
-- `AudioSeparation`
-- `LoadAudio`
-- `PrimitiveInt`
-- `SaveAudio`
-- `SeedVCRun`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `TrimAudio` —— 1/2 个有
+- `ProcessString` —— 1/2 个有
+- `RHMiniMaxH3T2VATextEncode` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `easy promptLine` —— 1/2 个有
 
 ## 典型参数
 

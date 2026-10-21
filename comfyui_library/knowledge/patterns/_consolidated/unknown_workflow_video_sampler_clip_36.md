@@ -1,67 +1,73 @@
 ---
 name: unknown_workflow_video_sampler_clip_36
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.939
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+frequency: 13
+level: strong
+coverage: 0.978692
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, KSampler, LoadImage, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VHS_VideoCombine, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1899625950118629378.json, 视频生成/图生视频/1894528926553911297.json, 视频生成/图生视频/1941226969910689794.json, 视频生成/图生视频/1941218870319595522.json, 视频生成/图生视频/1901443764307509249.json, 视频生成/图生视频/1941220218918301698.json, 视频生成/图生视频/1941765347643125762.json, 视频生成/图生视频/1899678523555008513.json, 视频生成/图生视频/1899620141431439362.json, 视频生成/图生视频/1896568283456528386.json, 视频生成/图生视频/1941194683714584578.json, 视频生成/文生视频/1894584540348743681.json]
+members: [视频生成/图生视频/1968870212063907841.json, 视频生成/图生视频/1969999111397253122.json, 视频生成/图生视频/1968839523046236161.json, 视频生成/图生视频/1969992617129897986.json, 视频生成/图生视频/1968865825916690433.json, 视频生成/图生视频/1969995701813977090.json, 视频生成/文生视频/1968251354269536257.json, 视频生成/文生视频/1968252013240832002.json, 视频生成/文生视频/1968252973186994178.json, 视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-图生视频_2072999568805240832.json, 视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-姿态视频引导加参考_2072999569325334528.json, 视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-首尾帧_2072999567903465472.json, 视频生成/文生视频/mega-aio-v11+qwenvl姿态引导_1985633536239644673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_36
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1899625950118629378.json、视频生成/图生视频/1894528926553911297.json、视频生成/图生视频/1941226969910689794.json、视频生成/图生视频/1941218870319595522.json、视频生成/图生视频/1901443764307509249.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1968870212063907841.json、视频生成/图生视频/1969999111397253122.json、视频生成/图生视频/1968839523046236161.json、视频生成/图生视频/1969992617129897986.json、视频生成/图生视频/1968865825916690433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+全部 13 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 9/12 个有
-- `LayerUtility: PurgeVRAM` —— 8/12 个有
-- `Primitive integer [Crystools]` —— 7/12 个有
-- `Primitive string [Crystools]` —— 7/12 个有
-- `WanVideoExperimentalArgs` —— 7/12 个有
-- `easy cleanGpuUsed` —— 7/12 个有
-- `Note _O` —— 5/12 个有
-- `CR Text Concatenate` —— 4/12 个有
-- `RH_Captioner` —— 4/12 个有
-- `String Replace (mtb)` —— 4/12 个有
-- `CM_IntToFloat` —— 3/12 个有
-- `ImageScaleDownToSize` —— 3/12 个有
-- `WanVideoEmptyEmbeds` —— 2/12 个有
+- `WanVideoVACEStartToEndFrame` —— 8/13 个有
+- `AIO_Preprocessor` —— 5/13 个有
+- `VHS_LoadVideo` —— 5/13 个有
+- `Miaoshouai_Tagger` —— 4/13 个有
+- `PrimitiveStringMultiline` —— 4/13 个有
+- `ImageRepeat` —— 2/13 个有
+- `AILab_QwenVL` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `easy showAnything` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 4 - 6 | 13 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 92% |
+| 调度器 | beta | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 4 - 6，13 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 92%
+- 调度器 最常用 beta，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

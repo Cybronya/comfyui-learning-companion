@@ -3,34 +3,38 @@ name: unknown_workflow_generic_262
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9692
-common_nodes: [IndexTTS2Run, LoadAudio, Text Multiline]
+coverage: 0.5594
+common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V, SaveVideo, Text Concatenate, easy showAnything]
 problems: []
-missing: []
-members: [音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json, 音频生成/音频生成/双人对话语音克隆_2063192858802343937.json, 音频生成/音频生成/声音克隆_1993713525206040578.json, 音频生成/音频生成/生成配音-情绪_2039538988712726529.json, 音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json]
+missing: [Text Concatenate, CR Prompt Text]
+members: [图片生成/文生图/1973774958298009601.json, 视频生成/图生视频/1973570458102665218.json, 视频生成/图生视频/1973594617805451266.json, 视频生成/图生视频/1973774958298009601.json, 视频生成/文生视频/1973594617805451266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_262
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json、音频生成/音频生成/双人对话语音克隆_2063192858802343937.json、音频生成/音频生成/声音克隆_1993713525206040578.json、音频生成/音频生成/生成配音-情绪_2039538988712726529.json、音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1973774958298009601.json、视频生成/图生视频/1973570458102665218.json、视频生成/图生视频/1973594617805451266.json、视频生成/图生视频/1973774958298009601.json、视频生成/文生视频/1973594617805451266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `Text Multiline`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
+- `Text Concatenate`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 4/5 个有
-- `SaveAudio` —— 3/5 个有
-- `SaveAudioMP3` —— 2/5 个有
+- `RH_Sora2_T2V` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `ImpactSwitch` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
 
 ## 典型参数
 
@@ -42,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：Text Concatenate、CR Prompt Text

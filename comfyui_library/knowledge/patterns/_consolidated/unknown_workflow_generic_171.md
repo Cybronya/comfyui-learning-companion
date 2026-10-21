@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_171
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.976167
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.961714
+common_nodes: [AudioCrop, AudioSeparation, FL_CosyVoice3_ModelLoader, FL_CosyVoice3_ZeroShot, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax H3 多模态参考生成视频｜R2V_2083099294751617025.json, 视频生成/图生视频/Minimax H3 首尾帧图生视频（2K高清）强在性价比_2083111267291717633.json, 视频生成/图生视频/Minimax H3_2083108762361098242.json, 视频生成/图生视频/minmax h3_2084101316028227586.json, 视频生成/文生视频/Minimax H3_2083108762361098242.json, 视频生成/文生视频/minmax h3_2084101316028227586.json]
+members: [音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json, 音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json, 音频生成/音频生成/CosyVoice3_2085675869581963265.json, 音频生成/音频生成/高精度声音克隆：支持外语、老外普通话_2079952082660052993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_171
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 多模态参考生成视频｜R2V_2083099294751617025.json、视频生成/图生视频/Minimax H3 首尾帧图生视频（2K高清）强在性价比_2083111267291717633.json、视频生成/图生视频/Minimax H3_2083108762361098242.json、视频生成/图生视频/minmax h3_2084101316028227586.json、视频生成/文生视频/Minimax H3_2083108762361098242.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json、音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json、音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `FL_CosyVoice3_ModelLoader`
+- `FL_CosyVoice3_ZeroShot`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 5/6 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 5/6 个有
-- `RH_MinimaxHailuoH3TextToVideo` —— 4/6 个有
-- `Label (rgthree)` —— 2/6 个有
+- `MuyeTextEditOutput` —— 3/7 个有
+- `JjkText` —— 2/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

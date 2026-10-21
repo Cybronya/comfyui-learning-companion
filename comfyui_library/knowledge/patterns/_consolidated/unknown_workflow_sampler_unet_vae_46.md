@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_unet_vae_46
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.808917
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.936083
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/动作迁MINIMAX-H3移ENG角色一致性动作迁移图生视频_2087087046383984642.json, 视频生成/图生视频/多参图生视频-开源版MIniMAXH3_2084494818100731905.json, 视频生成/图生视频/故事板九宫格分镜多参MinimaxH3考图视频工作流ENG_2087092363469611009.json, 视频生成/图生视频/海螺H3多图生视频（低价高清）_2084274860859150337.json, 视频生成/图生视频/海螺H3多宫格图生视频场景图生成短视频角色卡片图生成短视频_2086761370988662785.json, 视频生成/图生视频/海螺H3多宫格图生视频场景图生成短视频角色卡片图生成短视频_2088873597015252993.json, 视频生成/图生视频/高尚-MINIMAX-H3-多参_2084287046587342849.json, 视频生成/文生视频/39.MiniMax H3 多参考图生视频_2085360251456548866.json, 视频生成/文生视频/MINIMAX H3 全能参考图生视频 官方工作流 seedance平替 多参考_2084157424512102401.json, 视频生成/文生视频/MINIMAX-H3工作流_2091759961062862849.json, 视频生成/文生视频/MiniMax H3 全模态多参考视频生成器_2090715767955345410.json, 视频生成/文生视频/MiniMax H3 多模态参考生视频（开源版）_2084993447697674241.json]
+members: [视频生成/图生视频/Minimax H3 文生视频工作流（4步加速、支持15秒1080P）_2090647966460768258.json, 视频生成/图生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json, 视频生成/图生视频/minimax h3图生视频_2092555129097641986.json, 视频生成/文生视频/AI视频生成v2_2089671693664083970.json, 视频生成/文生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2092564221451132930.json, 视频生成/文生视频/Minimax H3 文生视频写实加速工作流（含提示词模版10秒1080P）_2095431233298853890.json, 视频生成/文生视频/Minimax H3 文生视频工作流（4步加速、支持15秒1080P）_2090647966460768258.json, 视频生成/文生视频/Minimax 多图参考生视频，超级好用！_2089722417114607617.json, 视频生成/文生视频/Minimax+H3+文生视频写实加速工作流（含提示词模版10秒1080P）_2092135642640769026.json, 音频生成/音频生成/AI视频模型转音频模型_2089669249060134913.json, 音频生成/音频生成/MINIMAX视频模型转音频模型_2090695139621695490.json, 音频生成/音频生成/Minimax H3-AI音乐+声音克隆工作流（超长生成、多音频参考）_2090786847566946305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_46
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/动作迁MINIMAX-H3移ENG角色一致性动作迁移图生视频_2087087046383984642.json、视频生成/图生视频/多参图生视频-开源版MIniMAXH3_2084494818100731905.json、视频生成/图生视频/故事板九宫格分镜多参MinimaxH3考图视频工作流ENG_2087092363469611009.json、视频生成/图生视频/海螺H3多图生视频（低价高清）_2084274860859150337.json、视频生成/图生视频/海螺H3多宫格图生视频场景图生成短视频角色卡片图生成短视频_2086761370988662785.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 文生视频工作流（4步加速、支持15秒1080P）_2090647966460768258.json、视频生成/图生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json、视频生成/图生视频/minimax h3图生视频_2092555129097641986.json、视频生成/文生视频/AI视频生成v2_2089671693664083970.json、视频生成/文生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2092564221451132930.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
@@ -26,14 +26,13 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `CreateVideo`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyModelAdapter`
+- `MiniMaxH3EasyOutput`
+- `ModelAttentionBackend`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
@@ -42,20 +41,18 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 11/12 个有
-- `GetVideoComponents` —— 5/12 个有
-- `LoadAudio` —— 4/12 个有
-- `LoadVideo` —— 4/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `AILab_ImageStitch` —— 1/12 个有
-- `CM_IntToFloat` —— 1/12 个有
-- `Image Compare (mtb)` —— 1/12 个有
-- `JoinStrings` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `RHHiddenNodes` —— 1/12 个有
-- `RH_LLMAPI_NODE` —— 1/12 个有
-- `easy int` —— 1/12 个有
+- `LoraLoaderModelOnly` —— 10/12 个有
+- `MiniMaxH3TurboLoRA` —— 10/12 个有
+- `LoadImage` —— 8/12 个有
+- `SpectrumApplyMiniMaxH3` —— 8/12 个有
+- `ExtendIntermediateSigmas` —— 3/12 个有
+- `LoadAudio` —— 2/12 个有
+- `LoadVideo` —— 2/12 个有
+- `SaveAudioAdvanced` —— 2/12 个有
+- `easy promptList` —— 2/12 个有
+- `PDGeminiAPIKey` —— 1/12 个有
+- `PreviewAudio` —— 1/12 个有
+- `PreviewTextNode` —— 1/12 个有
 
 ## 典型参数
 

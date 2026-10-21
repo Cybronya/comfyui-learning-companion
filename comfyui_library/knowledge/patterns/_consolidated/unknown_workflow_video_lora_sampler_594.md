@@ -3,79 +3,68 @@ name: unknown_workflow_video_lora_sampler_594
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.448
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, Qwen3_VQA, SetNode, ShowText|pysssss, SomethingToString, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+coverage: 0.829
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, DualCLIPLoader, EmptySD3LatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageResizeKJ, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RIFE VFI, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VideoCombine_Adv, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2029945689748283393.json, 视频生成/图生视频/2029614979116175361.json, 视频生成/图生视频/2006611754909962242.json]
+members: [视频生成/图生视频/1861784913958862850.json, 视频生成/图生视频/1867168400106569730.json, 视频生成/图生视频/1862018692308729857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_594
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2029945689748283393.json、视频生成/图生视频/2029614979116175361.json、视频生成/图生视频/2006611754909962242.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1861784913958862850.json、视频生成/图生视频/1867168400106569730.json、视频生成/图生视频/1862018692308729857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text Concatenate`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `DownloadAndLoadCogVideoModel`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `Fast Groups Muter (rgthree)`
+- `FluxGuidance`
+- `ImageResizeKJ`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `SetNode`
+- `ModelSamplingFlux`
+- `RIFE VFI`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `ShowText|pysssss`
-- `SomethingToString`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `VideoCombine_Adv`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `Split String` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `CR Text Replace` —— 1/3 个有
-- `ConvertAny2String` —— 1/3 个有
-- `Evaluate Integers` —— 1/3 个有
-- `GODMT_SplitString` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `MemoryCleaner` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `easy clearCacheAll` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
-- `easy string` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy imageChooser` —— 2/3 个有
+- `Joy_caption` —— 1/3 个有
+- `Joy_caption_load` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 3 | 86% |
-| 采样算法 | 1 | 1 - 2.5 | 3 | 53% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,8 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，3 个样本，取值集中（一致性 86%）
-- 采样算法 中位数 1，观测区间 1 - 2.5，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

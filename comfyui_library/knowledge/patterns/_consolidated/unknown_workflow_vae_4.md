@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_vae_4
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.931667
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.8
+common_nodes: [FluxKontextImageScale, ImageConcatMulti, ImageStitch, LoadImage, PreviewImage, SaveImage, VAEEncode, VAELoader, workflow>Edit]
 problems: []
-missing: []
-members: [视频生成/图生视频/MiniMax H3 H3 Ref2VA 多图综合参考 2 - 87_2093509823949266946.json, 视频生成/图生视频/MiniMax H3 首尾帧02 - 87_2093630705233387521.json, 视频生成/图生视频/MiniMax H3多图混剪-多素材合成视频工作流_2094330259897405442.json, 视频生成/图生视频/Seedance2.0过场动画-多参考转场视频工作流_2094425486511398914.json, 视频生成/图生视频/Wan3.0多参考图生视频-角色一致性工作流_2094330373395271682.json, 视频生成/文生视频/H3 MAX智能运镜工作流｜AI看图自动运镜_2095448966111522817.json]
+missing: [workflow>Edit]
+members: [图片生成/文生图/1942769069844008962.json, 图片生成/文生图/1942769843042979841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 H3 Ref2VA 多图综合参考 2 - 87_2093509823949266946.json、视频生成/图生视频/MiniMax H3 首尾帧02 - 87_2093630705233387521.json、视频生成/图生视频/MiniMax H3多图混剪-多素材合成视频工作流_2094330259897405442.json、视频生成/图生视频/Seedance2.0过场动画-多参考转场视频工作流_2094425486511398914.json、视频生成/图生视频/Wan3.0多参考图生视频-角色一致性工作流_2094330373395271682.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1942769069844008962.json、图片生成/文生图/1942769843042979841.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CreateVideo`
+全部 2 个 workflow 都包含：
+- `FluxKontextImageScale`
+- `ImageConcatMulti`
+- `ImageStitch`
 - `LoadImage`
-- `RHMiniMaxH3ModelLoader`
-- `RHMiniMaxH3TextEncoderLoader`
-- `RHMiniMaxH3VAELoader`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RHMiniMaxH3RefGen` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `MiniMaxH3EasyModelAdapter` —— 2/6 个有
-- `RHMiniMaxH3VideoGen` —— 2/6 个有
-- `Text` —— 2/6 个有
+- `PreviewImage`
+- `SaveImage`
+- `VAEEncode`
+- `VAELoader`
+- `workflow>Edit`
 
 ## 典型参数
 
@@ -47,4 +43,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：workflow>Edit
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

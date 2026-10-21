@@ -1,71 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_vae_35
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.7136
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.916455
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1957474365233360898.json, 视频生成/图生视频/1956293638198362114.json, 视频生成/图生视频/1973164651716415490.json, 视频生成/文生视频/03-12-02-WAN2.1-参考人物视频转绘-Standin+Vace_1989933948379820033.json, 视频生成/文生视频/1957474365233360898.json, 视频生成/文生视频/1955702074303397890.json, 视频生成/文生视频/1955698165593751554.json, 视频生成/文生视频/1956763443317628929.json, 视频生成/文生视频/1957506592558215169.json, 视频生成/文生视频/1956266838781034498.json]
+members: [视频生成/图生视频/1934317213807505410.json, 视频生成/图生视频/1933551686864781313.json, 视频生成/图生视频/1933552260817534978.json, 视频生成/图生视频/1933824175960449025.json, 视频生成/图生视频/1934857703757914114.json, 视频生成/图生视频/1933852620643852289.json, 视频生成/图生视频/2034885482387083266.json, 视频生成/图生视频/1933192428583038978.json, 视频生成/图生视频/1941330850711814145.json, 视频生成/图生视频/1934449439467794433.json, 视频生成/图生视频/1940976707774136321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_35
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1957474365233360898.json、视频生成/图生视频/1956293638198362114.json、视频生成/图生视频/1973164651716415490.json、视频生成/文生视频/03-12-02-WAN2.1-参考人物视频转绘-Standin+Vace_1989933948379820033.json、视频生成/文生视频/1957474365233360898.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1934317213807505410.json、视频生成/图生视频/1933551686864781313.json、视频生成/图生视频/1933552260817534978.json、视频生成/图生视频/1933824175960449025.json、视频生成/图生视频/1934857703757914114.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
+全部 11 个 workflow 都包含：
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 8/10 个有
-- `PreviewImage` —— 8/10 个有
-- `WanVideoLoraSelect` —— 8/10 个有
-- `WanVideoSetBlockSwap` —— 8/10 个有
-- `WanVideoSetLoRAs` —— 8/10 个有
-- `WanVideoTextEncode` —— 8/10 个有
-- `WanVideoTorchCompileSettings` —— 8/10 个有
-- `INTConstant` —— 7/10 个有
-- `WanVideoEmptyEmbeds` —— 7/10 个有
-- `GetNode` —— 6/10 个有
-- `ImageResizeKJv2` —— 6/10 个有
-- `SetNode` —— 6/10 个有
-- `VHS_LoadVideo` —— 6/10 个有
-- `WanVideoVACEEncode` —— 6/10 个有
-- `OpenposePreprocessor` —— 5/10 个有
-- `WanVideoVACEModelSelect` —— 5/10 个有
-- `WanVideoVACEStartToEndFrame` —— 5/10 个有
-- `easy imageRemBg` —— 5/10 个有
-- `ImageConcanate` —— 4/10 个有
-- `ImageConcatMulti` —— 4/10 个有
-- `CR Text` —— 3/10 个有
-- `ImpactInt` —— 2/10 个有
-- `Label (rgthree)` —— 2/10 个有
-- `WanVideoLoraSelectMulti` —— 2/10 个有
-- `WanVideoTextEncodeCached` —— 2/10 个有
-- `AIO_Preprocessor` —— 1/10 个有
-- `ImpactSwitch` —— 1/10 个有
-- `JWInteger` —— 1/10 个有
-- `Note Plus (mtb)` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
+- `Primitive integer [Crystools]` —— 10/11 个有
+- `Text Multiline` —— 10/11 个有
+- `WanVideoEnhanceAVideo` —— 10/11 个有
+- `WanVideoTeaCache` —— 9/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
+- `WanVideoExperimentalArgs` —— 8/11 个有
+- `WanVideoSLG` —— 8/11 个有
+- `ColorMatch` —— 7/11 个有
+- `JWInteger` —— 7/11 个有
+- `CLIPVisionLoader` —— 6/11 个有
+- `WanVideoClipVisionEncode` —— 6/11 个有
+- `WanVideoImageToVideoEncode` —— 6/11 个有
+- `ImageConcanate` —— 5/11 个有
+- `WanVideoLoraSelect` —— 5/11 个有
+- `WanVideoVACEEncode` —— 5/11 个有
+- `WanVideoVACEStartToEndFrame` —— 5/11 个有
+- `WanVideoTorchCompileSettings` —— 4/11 个有
+- `ImageResizeKJ` —— 3/11 个有
+- `WanVideoMagCache` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `DF_Integer` —— 1/11 个有
+- `GetImageSize` —— 1/11 个有
+- `SimpleMath+` —— 1/11 个有
 
 ## 典型参数
 

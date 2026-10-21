@@ -1,73 +1,84 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_7
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: strong
-coverage: 0.7996
-common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, Image Remove Alpha JK, KSampler, Lora Loader Stack (rgthree), PlaySound|pysssss, PreviewImage, PrimitiveStringMultiline, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
+coverage: 0.770286
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, DapaoImageAspectRatioResizeNode, DapaoImageCompressionNode, DapaoImageRatioLimitNode, Dapao_LlamaChat, EmptyLatentImage, GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, ImpactSwitch, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, easy cleanGpuUsed, easy int, easy positive, easy showAnything, 孤海注释, 忽略多组孤海]
 problems: []
-missing: []
-members: ["图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json", "图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102616610388406274.json", "图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102657150928642049.json", "图片生成/文生图/Qwen Image 2.1 加速1分35秒出2K,4K_2103662823787286529.json", "图片生成/文生图/Qwen Image 2.1-mxlz- skills文生图+放大2K,4K_2102952303706857474.json"]
+missing: [ImageCASharpening+, LayerUtility: ImageScaleByAspectRatio V2, Note Plus (mtb), easy cleanGpuUsed, easy int, easy positive, 忽略多组孤海, GetImageSize+, ImageResize+, Seed (rgthree)]
+members: [图片生成/图生图/2061281616344997890.json, 图片生成/文生图/260816001.自动优化提示词文生图+洗图_2089003471939923969.json, 图片生成/文生图/4K大炮V5CCD氛围感增强_2064895128690577409.json, 图片生成/文生图/大炮V5CCD一次四张横屏_2065332767617015810.json, 图片生成/文生图/大炮V5CCD一次四张竖屏_2065319074950893570.json, 图片生成/文生图/大炮v5-CCD-V2.0_2066696865017581570.json, 图片生成/文生图/大炮v5-CCD-V4.1_2066779112580149250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json、图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102616610388406274.json、图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102657150928642049.json、图片生成/文生图/Qwen Image 2.1 加速1分35秒出2K,4K_2103662823787286529.json、图片生成/文生图/Qwen Image 2.1-mxlz- skills文生图+放大2K,4K_2102952303706857474.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/2061281616344997890.json、图片生成/文生图/260816001.自动优化提示词文生图+洗图_2089003471939923969.json、图片生成/文生图/4K大炮V5CCD氛围感增强_2064895128690577409.json、图片生成/文生图/大炮V5CCD一次四张横屏_2065332767617015810.json、图片生成/文生图/大炮V5CCD一次四张竖屏_2065319074950893570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `ComfySwitchNode`
+全部 7 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `DapaoImageAspectRatioResizeNode`
+- `DapaoImageCompressionNode`
+- `DapaoImageRatioLimitNode`
+- `Dapao_LlamaChat`
 - `EmptyLatentImage`
-- `Image Remove Alpha JK`
-- `KSampler`
-- `Lora Loader Stack (rgthree)`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+- `GetImageSize+`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageScaleBy`
+- `ImpactSwitch`
+- `Int`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
 - `easy cleanGpuUsed`
+- `easy int`
+- `easy positive`
+- `easy showAnything`
+- `孤海注释`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageApplyLUT+` —— 4/5 个有
-- `easy imageChooser` —— 4/5 个有
-- `GetItemFromList` —— 1/5 个有
-- `QwenImage21BlockCacheT8` —— 1/5 个有
-- `QwenImage21SageAttentionT8` —— 1/5 个有
-- `QwenImage21SpectrumT8` —— 1/5 个有
-- `easy batchAnything` —— 1/5 个有
-- `easy forLoopEnd` —— 1/5 个有
-- `easy forLoopStart` —— 1/5 个有
-- `easy lengthAnything` —— 1/5 个有
-- `easy promptList` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `Note Plus (mtb)` —— 6/7 个有
+- `easy saveText` —— 5/7 个有
+- `RepeatLatentBatch` —— 4/7 个有
+- `CR Prompt List` —— 2/7 个有
+- `String Literal` —— 2/7 个有
+- `Text Concatenate (JPS)` —— 2/7 个有
+- `DapaoSafeSaveImage` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 采样步数 | 40 | 40 - 40 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 7 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 7 | 100% |
+| 采样步数 | fixed | - | 7 | 71% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -75,10 +86,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 40 - 40，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，7 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，7 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 这些节点还没有知识卡，系统对它们的理解有限：ImageCASharpening+、LayerUtility: ImageScaleByAspectRatio V2、Note Plus (mtb)、easy cleanGpuUsed、easy int

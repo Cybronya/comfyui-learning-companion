@@ -3,37 +3,33 @@ name: unknown_workflow_generic_826
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.65
-common_nodes: [JjkText, PreviewAudio, Qwen3TTSModelLoader, Qwen3VL_Chat, SaveAudio, TDQwen3TTSVoiceDesign, easy cleanGpuUsed, easy showAnything]
+coverage: 0.625
+common_nodes: [CR Prompt Text, CR Text, Fast Groups Bypasser (rgthree), LoadImage, RH_Sora2_I2V, RH_Sora2_T2V, SaveVideo]
 problems: []
-missing: []
-members: [音频生成/音频生成/Qwen3 TTS自定义音色-润色版_2018574837786087426.json, 音频生成/音频生成/Qwen3 TTS自定义音色_2037140781361799169.json]
+missing: [CR Text, CR Prompt Text]
+members: [视频生成/图生视频/1975008811217981442.json, 视频生成/文生视频/1975008811217981442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_826
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS自定义音色-润色版_2018574837786087426.json、音频生成/音频生成/Qwen3 TTS自定义音色_2037140781361799169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1975008811217981442.json、视频生成/文生视频/1975008811217981442.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `PreviewAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3VL_Chat`
-- `SaveAudio`
-- `TDQwen3TTSVoiceDesign`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `MuyeLoadImage` —— 1/2 个有
+- `CR Prompt Text`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `RH_Sora2_T2V`
+- `SaveVideo`
 
 ## 典型参数
 
@@ -45,4 +41,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Prompt Text
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

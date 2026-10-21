@@ -2,62 +2,91 @@
 name: unknown_workflow_video_sampler_clip_76
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.870286
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.681143
+common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, INTConstant, ImageLoader, ImageResizeKJ, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanMoeKSampler, WanVideoNAG, easy int, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2003814653497122818.json, 视频生成/图生视频/1950190982249799682.json, 视频生成/图生视频/2025568584335892482.json, 视频生成/图生视频/1955196269809602562.json, 视频生成/图生视频/1949992607571206146.json, 视频生成/图生视频/2077340089688088578.json, 视频生成/文生视频/wan 2.2 图生视频 工作流+全节点注释_2077715652751745025.json]
+members: [视频生成/图生视频/2003823135168339969.json, 视频生成/图生视频/2008209726496051201.json, 视频生成/图生视频/视频-首尾帧视频扩写(动漫-真人)_2091124043847127042.json, 视频生成/图生视频/1986618366645465090.json, 视频生成/图生视频/1983005590224011265.json, 视频生成/图生视频/1973043040770199553.json, 视频生成/图生视频/2011383850940764161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_76
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2003814653497122818.json、视频生成/图生视频/1950190982249799682.json、视频生成/图生视频/2025568584335892482.json、视频生成/图生视频/1955196269809602562.json、视频生成/图生视频/1949992607571206146.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2003823135168339969.json、视频生成/图生视频/2008209726496051201.json、视频生成/图生视频/视频-首尾帧视频扩写(动漫-真人)_2091124043847127042.json、视频生成/图生视频/1986618366645465090.json、视频生成/图生视频/1983005590224011265.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `ModelSamplingSD3`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageLoader`
+- `ImageResizeKJ`
+- `ImpactFloat`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
 - `PathchSageAttentionKJ`
-- `VAEDecode`
+- `PrimitiveFloat`
+- `UNETLoader`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
+- `WanMoeKSampler`
+- `WanVideoNAG`
+- `easy int`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `UNETLoader` —— 6/7 个有
-- `WanImageToVideo` —— 6/7 个有
-- `LayerUtility: PurgeVRAM` —— 5/7 个有
-- `ImageResize+` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `wanBlockSwap` —— 4/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `EmptyHunyuanLatentVideo` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `WanFirstLastFrameToVideo` —— 1/7 个有
+- `GetNode` —— 6/7 个有
+- `ImageFromBatch` —— 6/7 个有
+- `MemoryCleaner` —— 6/7 个有
+- `ModelBlockSwap` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `StringFunction|pysssss` —— 6/7 个有
+- `easy anythingIndexSwitch` —— 6/7 个有
+- `easy imageSize` —— 6/7 个有
+- `MultiplePathsInput` —— 5/7 个有
+- `Qwen3_VQA` —— 5/7 个有
+- `RH_LLMAPI_NODE` —— 4/7 个有
+- `ImageConcanate` —— 3/7 个有
+- `CLIPVisionEncode` —— 1/7 个有
+- `CLIPVisionLoader` —— 1/7 个有
+- `CM_IntUnaryOperation` —— 1/7 个有
+- `Florence2ModelLoader` —— 1/7 个有
+- `Florence2Run` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `ImageListToBatch+` —— 1/7 个有
+- `ImageToDevice+` —— 1/7 个有
+- `JoinStrings` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `RHUploadZip_V2` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
+- `easy batchAnything` —— 1/7 个有
+- `easy forLoopEnd` —— 1/7 个有
+- `easy forLoopStart` —— 1/7 个有
+- `easy string` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | increment | - | 7 | 57% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 7 | 88% |
-| 采样算法 | 1 | 1 - 3.5 | 7 | 36% |
-| 调度器 | uni_pc | - | 7 | 57% |
-| 重绘幅度 | simple | - | 7 | 100% |
+| 采样步数 | randomize | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | 1 | 1 - 1 | 7 | 100% |
+| 重绘幅度 | sa_solver | - | 7 | 86% |
 
 ## 常见问题
 
@@ -65,8 +94,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 increment，7 个样本，一致性 57%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，7 个样本，取值集中（一致性 88%）
-- 采样算法 中位数 1，观测区间 1 - 3.5，7 个样本，取值分散，一致性仅 36%
-- 调度器 最常用 uni_pc，7 个样本，一致性 57%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 采样步数 最常用 randomize，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 sa_solver，7 个样本，一致性 86%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

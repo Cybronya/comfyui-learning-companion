@@ -1,31 +1,32 @@
 ---
 name: unknown_workflow_sampler_clip_vae_11
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.830167
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.6075
+common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: [easy seed, CR Text, ImageSmartSharpen+, Note Plus (mtb)]
-members: [图片生成/文生图/1928999965027155970.json, 图片生成/文生图/1936219766145323010.json, 图片生成/文生图/1940292234132766721.json, 图片生成/文生图/1941002485245100033.json, 图片生成/文生图/1951074575276814337.json, 图片生成/文生图/1951091883130953729.json]
+missing: [CR Text, CR Text Concatenate, easy cleanGpuUsed, ImageCASharpening+, MathExpression|pysssss]
+members: [图片生成/文生图/1905565864324681729.json, 图片生成/文生图/1908181172109586433.json, 图片生成/文生图/1912944528943448065.json, 图片生成/文生图/1930841515361239042.json, 图片生成/文生图/1953735580985249793.json, 图片生成/文生图/1957731578933866497.json, 图片生成/文生图/1957999955816460290.json, 图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_2061101576210698241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1928999965027155970.json、图片生成/文生图/1936219766145323010.json、图片生成/文生图/1940292234132766721.json、图片生成/文生图/1941002485245100033.json、图片生成/文生图/1951074575276814337.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1905565864324681729.json、图片生成/文生图/1908181172109586433.json、图片生成/文生图/1912944528943448065.json、图片生成/文生图/1930841515361239042.json、图片生成/文生图/1953735580985249793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `Anything Everywhere`
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPTextEncode`
+- `CLIPTextEncodeFlux`
 - `DualCLIPLoader`
 - `EmptyLatentImage`
 - `KSamplerSelect`
@@ -36,30 +37,31 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `UNETLoader` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `FluxGuidance` —— 3/6 个有
-- `Int` —— 3/6 个有
-- `Any Switch (rgthree)` —— 2/6 个有
-- `DeepTranslatorTextNode` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `ModelSamplingFlux` —— 2/6 个有
-- `Note Plus (mtb)` —— 2/6 个有
-- `RH_LLMAPI_NODE` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `UnetLoaderGGUF` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `CFGZeroStar` —— 1/6 个有
-- `ImageSmartSharpen+` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `CR Text` —— 7/8 个有
+- `CR Text Concatenate` —— 7/8 个有
+- `RH_Prompter` —— 7/8 个有
+- `ShowText|pysssss` —— 7/8 个有
+- `EG_XZ_QH` —— 6/8 个有
+- `NunchakuFluxDiTLoader` —— 6/8 个有
+- `RH_Translator` —— 6/8 个有
+- `easy cleanGpuUsed` —— 6/8 个有
+- `NunchakuFluxLoraLoader` —— 5/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `UNETLoader` —— 2/8 个有
+- `FluxResolutionNode` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 1/8 个有
+- `ImageCASharpening+` —— 1/8 个有
+- `LatentUpscaleBy` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `TextInput_` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | 512 - 1440 | 6 | 63% |
-| 高度 | 768 | 512 - 1024 | 6 | 73% |
+| 宽度 | 600 | 512 - 840 | 8 | 85% |
+| 高度 | 800 | 768 - 1280 | 8 | 78% |
 
 ## 常见问题
 
@@ -67,6 +69,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 512 - 1440，6 个样本
-- 高度 中位数 768，观测区间 512 - 1024，6 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：easy seed、CR Text、ImageSmartSharpen+、Note Plus (mtb)
+- 宽度 中位数 600，观测区间 512 - 840，8 个样本，取值集中（一致性 85%）
+- 高度 中位数 800，观测区间 768 - 1280，8 个样本
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、easy cleanGpuUsed、ImageCASharpening+、MathExpression|pysssss

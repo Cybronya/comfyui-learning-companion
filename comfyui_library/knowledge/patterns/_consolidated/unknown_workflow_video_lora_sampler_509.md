@@ -2,74 +2,72 @@
 name: unknown_workflow_video_lora_sampler_509
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.95475
-common_nodes: [CR Prompt Text, Float, INTConstant, ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, StringToFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.54225
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, SetNode, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
 problems: []
 missing: []
-members: [视频生成/图生视频/1966542129269026818.json, 视频生成/图生视频/1966523015905357825.json, 视频生成/图生视频/1966560072405037057.json, 视频生成/图生视频/1968976369134755842.json]
+members: [视频生成/图生视频/2006716994556530690.json, 视频生成/图生视频/2006246427911000065.json, 视频生成/图生视频/2005886076633968641.json, 视频生成/文生视频/SVI 2 Pro 自动提示词-视频延长_2007103219394158593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_509
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1966542129269026818.json、视频生成/图生视频/1966523015905357825.json、视频生成/图生视频/1966560072405037057.json、视频生成/图生视频/1968976369134755842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2006716994556530690.json、视频生成/图生视频/2006246427911000065.json、视频生成/图生视频/2005886076633968641.json、视频生成/文生视频/SVI 2 Pro 自动提示词-视频延长_2007103219394158593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
 - `INTConstant`
-- `ImageConcatMulti`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadWanVideoT5TextEncoder`
-- `StringToFloatList`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `SetNode`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
 - `LoadImage` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `WanVideoVACEModelSelect` —— 3/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `PreviewAny` —— 3/4 个有
+- `AILab_QwenVL` —— 2/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `CR Text Replace` —— 2/4 个有
+- `JWStringGetLine` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `CRT_StringSplitter` —— 1/4 个有
+- `Float` —— 1/4 个有
 - `GetImageRangeFromBatch` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `GrowMaskWithBlur` —— 1/4 个有
-- `ImageAndMaskPreview` —— 1/4 个有
-- `ImagePadKJ` —— 1/4 个有
-- `ImageResize` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
 - `SimpleMath+` —— 1/4 个有
-- `WanVideoExtraModelSelect` —— 1/4 个有
-- `WanVideoVACEStartToEndFrame` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 14 | 8 - 14 | 4 | 79% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -77,4 +75,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 14，观测区间 8 - 14，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

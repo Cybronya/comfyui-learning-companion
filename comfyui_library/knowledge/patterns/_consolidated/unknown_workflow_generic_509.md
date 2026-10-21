@@ -3,36 +3,33 @@ name: unknown_workflow_generic_509
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.794667
-common_nodes: [AudioSeparation, IndexTTS2Run, LoadAudio, SaveAudio, String, Text Multiline]
+coverage: 0.676
+common_nodes: [LoadImage, PreviewImage, SaveImage]
 problems: []
-missing: []
-members: [音频生成/音频生成/Index TTS2 声音克隆-单人_1988542814399193089.json, 音频生成/音频生成/Index TTS2 声音克隆-单人_2029806000722681858.json, 音频生成/音频生成/Index-tts2-single or two person_1994221045150400514.json]
+missing: [Google-Gemini-PL]
+members: [图片生成/文生图/1912139284466597890.json, 图片生成/文生图/1948238063767027714.json, 图片生成/文生图/谷歌Gemini生图_1912139284466597890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_509
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Index TTS2 声音克隆-单人_1988542814399193089.json、音频生成/音频生成/Index TTS2 声音克隆-单人_2029806000722681858.json、音频生成/音频生成/Index-tts2-single or two person_1994221045150400514.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1912139284466597890.json、图片生成/文生图/1948238063767027714.json、图片生成/文生图/谷歌Gemini生图_1912139284466597890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioSeparation`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
-- `String`
-- `Text Multiline`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Google-Gemini-PL` —— 2/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：Google-Gemini-PL

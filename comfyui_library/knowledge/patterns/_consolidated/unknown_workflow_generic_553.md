@@ -3,30 +3,32 @@ name: unknown_workflow_generic_553
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.714
-common_nodes: [BreezeTTS2LoadModel, BreezeTTS2VoiceDesign, CR Prompt Text, SaveAudio]
+coverage: 0.615
+common_nodes: [ImageBatchMulti, JjkText, LoadImage, PrimitiveInt, RHBerniniFullReferenceToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/声音设计 方言设计_2100192848959332353.json, 音频生成/音频生成/声音设计_方言设计_2105120675768913921.json, 音频生成/音频生成/声音设计_方言设计_2105498022892363778.json]
+members: [视频生成/图生视频/2066766775840239618.json, 视频生成/图生视频/2067114379052675073.json, 视频生成/图生视频/2066950055558467586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_553
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/声音设计 方言设计_2100192848959332353.json、音频生成/音频生成/声音设计_方言设计_2105120675768913921.json、音频生成/音频生成/声音设计_方言设计_2105498022892363778.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2066766775840239618.json、视频生成/图生视频/2067114379052675073.json、视频生成/图生视频/2066950055558467586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BreezeTTS2LoadModel`
-- `BreezeTTS2VoiceDesign`
-- `CR Prompt Text`
-- `SaveAudio`
+- `ImageBatchMulti`
+- `JjkText`
+- `LoadImage`
+- `PrimitiveInt`
+- `RHBerniniFullReferenceToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -1,52 +1,43 @@
 ---
 name: unknown_workflow_generic_615
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4425
-common_nodes: [ConstrainImage|pysssss, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImageScaleBy, LoadImage, PreviewImage, RHHiddenNodes, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy forLoopEnd, easy forLoopStart, easy joinImageBatch]
+frequency: 3
+level: moderate
+coverage: 0.811
+common_nodes: [Apply Whisper, CR Prompt Text, Fast Groups Bypasser (rgthree), LoadAudio, PreviewAny, RH_FireRedAudioASR, RH_FireRedAudioLoader, RH_FireRedAudioTTS, RH_FireRedAudioVoiceDesign, SaveAudio, ShowAnything|Mie]
 problems: []
-missing: [CR Image Grid Panel, ConstrainImage|pysssss, ImageListToBatch+, easy forLoopEnd, easy forLoopStart, easy joinImageBatch, Get Image Size, ImageResize+, easy anythingIndexSwitch]
-members: [图片生成/图生图/2008082317960552450.json, 图片生成/图生图/2010150238945808385.json]
+missing: []
+members: [音频生成/音频生成/Firered Audio TTS语音克隆_声音设计_语音转文本_2094238948309688321.json, 音频生成/音频生成/声音编辑全功能！声音删减 声音设计 声音克隆 声音 转文字 FireRed Audio_2094025390112206849.json, 音频生成/音频生成/语音编辑全家桶！语音修改！语音设计！ 语音克隆！ 语音转文字！ FireRed Audio_2094039981890297857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_615
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2008082317960552450.json、图片生成/图生图/2010150238945808385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Firered Audio TTS语音克隆_声音设计_语音转文本_2094238948309688321.json、音频生成/音频生成/声音编辑全功能！声音删减 声音设计 声音克隆 声音 转文字 FireRed Audio_2094025390112206849.json、音频生成/音频生成/语音编辑全家桶！语音修改！语音设计！ 语音克隆！ 语音转文字！ FireRed Audio_2094039981890297857.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：44%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageScaleBy`
-- `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy joinImageBatch`
+全部 3 个 workflow 都包含：
+- `Apply Whisper`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `PreviewAny`
+- `RH_FireRedAudioASR`
+- `RH_FireRedAudioLoader`
+- `RH_FireRedAudioTTS`
+- `RH_FireRedAudioVoiceDesign`
+- `SaveAudio`
+- `ShowAnything|Mie`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Image Grid Panel` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageListToBatch+` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
+- `RH_FireRedAudioEdit` —— 2/3 个有
+- `ShellAgentPluginOutputText` —— 2/3 个有
 
 ## 典型参数
 
@@ -58,5 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Image Grid Panel、ConstrainImage|pysssss、ImageListToBatch+、easy forLoopEnd、easy forLoopStart
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

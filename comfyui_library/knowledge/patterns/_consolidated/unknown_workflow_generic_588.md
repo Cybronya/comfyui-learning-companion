@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_588
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.866
-common_nodes: [ByteDance2DraftToFinalVideoNode, LoadImage, SaveText, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.493667
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_seedance2_5_draft_i2v.json, comfyui-workflow-templates-json/api_seedance2_5_draft_r2v.json]
+members: [视频生成/图生视频/2045803295423336449.json, 视频生成/图生视频/1981428442048675842.json, 视频生成/文生视频/（贞贞AI工坊）全能视频S Chat模式文生视频V1_1981428238834638850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_588
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_5_draft_i2v.json、comfyui-workflow-templates-json/api_seedance2_5_draft_r2v.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2045803295423336449.json、视频生成/图生视频/1981428442048675842.json、视频生成/文生视频/（贞贞AI工坊）全能视频S Chat模式文生视频V1_1981428238834638850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ByteDance2DraftToFinalVideoNode`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
 - `LoadImage`
-- `SaveText`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ByteDance2FirstLastFrameNode` —— 1/2 个有
-- `ByteDance2ReferenceNodeV2` —— 1/2 个有
+- `Comfly_sora2_chat` —— 2/3 个有
+- `ComflyGrok3VideoApi30S` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

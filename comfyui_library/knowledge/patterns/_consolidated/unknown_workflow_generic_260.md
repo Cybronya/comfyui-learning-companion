@@ -3,36 +3,38 @@ name: unknown_workflow_generic_260
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9556
-common_nodes: [LoadAudio, MultiLinePromptIndex]
+coverage: 0.5822
+common_nodes: [ShowText|pysssss, StringFunction|pysssss, easy positive, easy saveText, easy seed]
 problems: []
-missing: []
-members: [音频生成/音频生成/IndexTTS 单人语音克隆_1954805801275801602.json, 音频生成/音频生成/IndexTTS声音克隆_1956254605715886082.json, 音频生成/音频生成/Index双人会话_1961897925611864065.json, 音频生成/音频生成/index-TTS2.0-双人会话_1967134000714223618.json, 音频生成/音频生成/提取音频+文案配音_1978984944171126785.json]
+missing: [StringFunction|pysssss, Text Multiline, easy positive, easy saveText, easy seed]
+members: [图片生成/文生图/1972595214646968321.json, 图片生成/文生图/1983729157060403201.json, 数字人/数字人/剧本与分镜脚本_2093149535890661378.json, 视频生成/图生视频/1972214627054645249.json, 视频生成/图生视频/1982736072637595650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_260
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 单人语音克隆_1954805801275801602.json、音频生成/音频生成/IndexTTS声音克隆_1956254605715886082.json、音频生成/音频生成/Index双人会话_1961897925611864065.json、音频生成/音频生成/index-TTS2.0-双人会话_1967134000714223618.json、音频生成/音频生成/提取音频+文案配音_1978984944171126785.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1972595214646968321.json、图片生成/文生图/1983729157060403201.json、数字人/数字人/剧本与分镜脚本_2093149535890661378.json、视频生成/图生视频/1972214627054645249.json、视频生成/图生视频/1982736072637595650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `MultiLinePromptIndex`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 4/5 个有
-- `SaveAudio` —— 4/5 个有
-- `SaveAudioMP3` —— 4/5 个有
-- `PreviewAudio` —— 2/5 个有
-- `IndexTTS2Run` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `AILab_QwenVL` —— 1/5 个有
+- `Qwen3_VQA` —— 1/5 个有
 
 ## 典型参数
 
@@ -44,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：StringFunction|pysssss、Text Multiline、easy positive、easy saveText、easy seed

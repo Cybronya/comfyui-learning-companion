@@ -3,79 +3,86 @@ name: unknown_workflow_video_lora_sampler_654
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.933333
-common_nodes: [CLIPVisionLoader, FloatConstant, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewAnimation, PreviewImage, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.714667
+common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, INTConstant, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, PointsEditor, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2050481432279175169.json, 视频生成/图生视频/2011070292294111234.json, 视频生成/图生视频/2031330145717456898.json]
+members: [视频生成/图生视频/1969957827202719745.json, 视频生成/图生视频/2000210160024944641.json, 视频生成/图生视频/1976173547762647041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_654
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2050481432279175169.json、视频生成/图生视频/2011070292294111234.json、视频生成/图生视频/2031330145717456898.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1969957827202719745.json、视频生成/图生视频/2000210160024944641.json、视频生成/图生视频/1976173547762647041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `FloatConstant`
+- `DWPreprocessor`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GetImageSizeAndCount`
 - `INTConstant`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewAnimation`
-- `PreviewImage`
-- `RenderNLFPoses`
-- `SimpleMath+`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `Sam2Segmentation`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadNLFModel` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `Display Int (rgthree)` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `ImageBatchExtendWithOverlap` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
+- `AudioCropProcessUTK` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `CM_IntToFloat` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `DilateErodeMask` —— 1/3 个有
+- `Fast Bypasser (rgthree)` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `GrowMask` —— 1/3 个有
+- `GrowMaskWithBlur` —— 1/3 个有
 - `ImageFromBatch` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
-- `ImpactCompare` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `LoadNLFModel` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `WanVideoLoraSelectMulti` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `Mask Invert` —— 1/3 个有
+- `MaskSmooth+` —— 1/3 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/3 个有
+- `OpenDWPose_JK` —— 1/3 个有
+- `OpenposePreprocessor` —— 1/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `Seed_` —— 1/3 个有
+- `Switch any [Crystools]` —— 1/3 个有
+- `ToFloat` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

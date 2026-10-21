@@ -3,35 +3,32 @@ name: unknown_workflow_generic_824
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceClone, LoadAudio, SaveAudio, WhisperSTT]
+coverage: 1
+common_nodes: [JWFloat, LoadImage, SaveImage, TT_img_dec, TT_img_enc, VHS_LoadVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS声音克隆-smile版_2017123397238530050.json, 音频生成/音频生成/（smile版）Qwen3 TTS语音克隆V2_2015076620398239746.json]
+members: [视频生成/图生视频/1963945824503873537.json, 视频生成/文生视频/1963945824503873537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_824
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS声音克隆-smile版_2017123397238530050.json、音频生成/音频生成/（smile版）Qwen3 TTS语音克隆V2_2015076620398239746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1963945824503873537.json、视频生成/文生视频/1963945824503873537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `FB_Qwen3TTSVoiceClone`
-- `LoadAudio`
-- `SaveAudio`
-- `WhisperSTT`
-
-**可变部分**（部分 workflow 才有）：
-- `TrimAudioDuration` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `JWFloat`
+- `LoadImage`
+- `SaveImage`
+- `TT_img_dec`
+- `TT_img_enc`
+- `VHS_LoadVideo`
 
 ## 典型参数
 

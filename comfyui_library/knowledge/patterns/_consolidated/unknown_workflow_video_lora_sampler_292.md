@@ -3,67 +3,99 @@ name: unknown_workflow_video_lora_sampler_292
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.905571
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.808429
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/反推提示词/H3单采_2106693127930212353.json, 图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json, 图片生成/文生图/H3官流（终极版）_2106339812679708674.json, 视频生成/图生视频/H3_单采极速文戏_2106860537857527810.json, 视频生成/图生视频/H3_单采极速文戏_2109821779844886530.json, 视频生成/图生视频/H3官流（单采极速文戏）_2106642679642812418.json, 视频生成/文生视频/H3官流（终极版）_2105121771757334530.json]
+members: [视频生成/图生视频/1975430744082395137.json, 视频生成/图生视频/1975181120914460673.json, 视频生成/图生视频/1989714955807150082.json, 视频生成/图生视频/1989717889194315777.json, 视频生成/图生视频/1990279000503275522.json, 视频生成/图生视频/2029535256906309633.json, 视频生成/文生视频/多重参考生视频（WAN_BindWeave+TTS+MULTITALK）_1990350029464498177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_292
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/H3单采_2106693127930212353.json、图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json、图片生成/文生图/H3官流（终极版）_2106339812679708674.json、视频生成/图生视频/H3_单采极速文戏_2106860537857527810.json、视频生成/图生视频/H3_单采极速文戏_2109821779844886530.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1975430744082395137.json、视频生成/图生视频/1975181120914460673.json、视频生成/图生视频/1989714955807150082.json、视频生成/图生视频/1989717889194315777.json、视频生成/图生视频/1990279000503275522.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPreviewOverrideKJ` —— 5/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `CLIPLoader` —— 5/7 个有
+- `CR Prompt Text` —— 5/7 个有
+- `DrawMaskOnImage` —— 5/7 个有
+- `ImageBatchMulti` —— 5/7 个有
+- `InvertMask` —— 5/7 个有
+- `MaskBatchMulti` —— 5/7 个有
+- `MathExpression|pysssss` —— 5/7 个有
 - `PreviewAny` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `ManualSigmas` —— 4/7 个有
-- `ExtendIntermediateSigmas` —— 3/7 个有
-- `MiniMaxH3SigmaShift` —— 3/7 个有
-- `BatchImagesNode` —— 2/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `CreateVideo` —— 2/7 个有
-- `LTXVConcatAVLatent` —— 2/7 个有
-- `LTXVSeparateAVLatent` —— 2/7 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `llama_cpp_instruct_adv` —— 2/7 个有
-- `llama_cpp_model_loader` —— 2/7 个有
-- `llama_cpp_parameters` —— 2/7 个有
-- `EmptyImage` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `PreviewImage` —— 5/7 个有
+- `SaveAudio` —— 5/7 个有
+- `SolidMask` —— 5/7 个有
+- `TextImageEncodeQwenVL` —— 5/7 个有
+- `WanVideoAddBindweaveEmbeds` —— 5/7 个有
+- `WanVideoEncodeLatentBatch` —— 5/7 个有
+- `WanVideoTextEncodeCached` —— 5/7 个有
+- `easy imageRemBg` —— 5/7 个有
+- `LayerUtility: PurgeVRAM` —— 4/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `ImageRemoveBackground+` —— 3/7 个有
+- `Int` —— 3/7 个有
+- `PrimitiveFloat` —— 3/7 个有
+- `TextInput_` —— 3/7 个有
+- `TransparentBGSession+` —— 3/7 个有
+- `easy cleanGpuUsed` —— 3/7 个有
+- `CreateCFGScheduleFloatList` —— 2/7 个有
+- `Float` —— 2/7 个有
+- `INTConstant` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `ImagePadKJ` —— 2/7 个有
+- `JjkText` —— 2/7 个有
+- `MaskPreview+` —— 2/7 个有
+- `Primitive integer [Crystools]` —— 2/7 个有
+- `RMBG` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `WanVideoScheduler` —— 2/7 个有
+- `WanVideoSigmaToStep` —— 2/7 个有
+- `WanVideoContextOptions` —— 1/7 个有
 
 ## 典型参数
 

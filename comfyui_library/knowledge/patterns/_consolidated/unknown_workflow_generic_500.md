@@ -3,36 +3,38 @@ name: unknown_workflow_generic_500
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.926667
-common_nodes: [CR Prompt Text, FL_CosyVoice3_ModelLoader, FL_CosyVoice3_ZeroShot, LoadAudio, SaveAudio]
+coverage: 0.835667
+common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice3 27种语言克隆_2015752927113121794.json, 音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2016067577495162882.json, 音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2021765327427735553.json]
+members: [图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_500
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/CosyVoice3 27种语言克隆_2015752927113121794.json、音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2016067577495162882.json、音频生成/音频生成/CosyVoice3 多语言克隆（6语种语音包提供）_2021765327427735553.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json、视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CR Prompt Text`
-- `FL_CosyVoice3_ModelLoader`
-- `FL_CosyVoice3_ZeroShot`
-- `LoadAudio`
-- `SaveAudio`
+- `LoadImage`
+- `MiniMaxH3PromptEnhancerT8`
+- `PreviewAny`
+- `RH_Translator`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `SaveImage` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `easy imageSave` —— 1/3 个有
 
 ## 典型参数
 

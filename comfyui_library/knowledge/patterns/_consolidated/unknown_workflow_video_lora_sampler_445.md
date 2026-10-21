@@ -2,75 +2,60 @@
 name: unknown_workflow_video_lora_sampler_445
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.491
-common_nodes: [AILab_QwenVL, CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DuckHideNode, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG, easy saveText]
+level: moderate
+coverage: 0.8098
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1995688996271435777.json, 视频生成/图生视频/1994587413886476290.json, 视频生成/图生视频/2012485583641255937.json, 视频生成/图生视频/2013095948842438657.json, 视频生成/图生视频/2005138908902031361.json]
+members: [视频生成/图生视频/minimax h3单图生视频_2086525904381112321.json, 视频生成/图生视频/minimax h3电商带货视频。自动提示词 无忧做带货视频_2087554123494416385.json, 视频生成/图生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086780909889613825.json, 视频生成/图生视频/（3图）MINIMAX短剧_2111253911762989057.json, 视频生成/图生视频/（自用）全能参考一站式短剧创作工作流 minimax h3多模态加速_2086378261021548546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_445
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1995688996271435777.json、视频生成/图生视频/1994587413886476290.json、视频生成/图生视频/2012485583641255937.json、视频生成/图生视频/2013095948842438657.json、视频生成/图生视频/2005138908902031361.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/minimax h3单图生视频_2086525904381112321.json、视频生成/图生视频/minimax h3电商带货视频。自动提示词 无忧做带货视频_2087554123494416385.json、视频生成/图生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086780909889613825.json、视频生成/图生视频/（3图）MINIMAX短剧_2111253911762989057.json、视频生成/图生视频/（自用）全能参考一站式短剧创作工作流 minimax h3多模态加速_2086378261021548546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：49%
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGZeroStar`
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DuckHideNode`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM V2`
+- `ComfyMathExpression`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `SaveImage`
-- `SetNode`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MultiRateSamplerEXPT8`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
-- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `PainterI2V` —— 3/5 个有
-- `RunningHub Deepcleaner` —— 3/5 个有
-- `Textbox` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `MultiLinePromptMG` —— 2/5 个有
-- `TT_img_enc_v2` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `WanFirstLastFrameToVideo` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `RHLLMChatNode` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `JjkConcat` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `ShowAnything|Mie` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
+- `YC Text Index Switch` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | lcm | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,8 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

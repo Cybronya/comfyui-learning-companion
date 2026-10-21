@@ -1,66 +1,66 @@
 ---
 name: unknown_workflow_video_sampler_unet_48
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.823667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.675286
+common_nodes: [BasicScheduler, CFGGuider, DualCLIPLoader, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SetNode, TTResolutionSelector, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/CG迷-MiniMax H3_MV音乐对口型_2085601628832493570.json, 视频生成/图生视频/H3 参考图像-视频-音频生成视频_2084427820587114497.json, 视频生成/图生视频/H3 数字人和声音克隆。_2084429432323928065.json, 视频生成/图生视频/H3音频驱动数字人单人版_2084863843855060993.json, 视频生成/图生视频/Mini max H3数字人对口型_2084517715892592641.json, 视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json]
+members: [视频生成/图生视频/2078873049419571202.json, 视频生成/图生视频/2061378483611328514.json, 视频生成/图生视频/2062509553996091394.json, 视频生成/图生视频/2062715570117758978.json, 视频生成/图生视频/2071479057736355841.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定18秒）_2067903674852134913.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2069405147431792641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_48
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/CG迷-MiniMax H3_MV音乐对口型_2085601628832493570.json、视频生成/图生视频/H3 参考图像-视频-音频生成视频_2084427820587114497.json、视频生成/图生视频/H3 数字人和声音克隆。_2084429432323928065.json、视频生成/图生视频/H3音频驱动数字人单人版_2084863843855060993.json、视频生成/图生视频/Mini max H3数字人对口型_2084517715892592641.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2078873049419571202.json、视频生成/图生视频/2061378483611328514.json、视频生成/图生视频/2062509553996091394.json、视频生成/图生视频/2062715570117758978.json、视频生成/图生视频/2071479057736355841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
+全部 7 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
+- `CFGGuider`
+- `DualCLIPLoader`
+- `GetNode`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
+- `TTResolutionSelector`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `AudioCrop` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `VAEDecodeAudio` —— 4/6 个有
-- `FlashVSRNode` —— 3/6 个有
-- `LoraLoaderBypassModelOnly` —— 3/6 个有
-- `PainterVRAM` —— 3/6 个有
-- `PreviewAudio` —— 3/6 个有
-- `Sleep` —— 3/6 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 3/6 个有
-- `Audio Duration (mtb)` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
-- `SaveAudioAdvanced` —— 2/6 个有
-- `SoundFlow_GetLength` —— 2/6 个有
-- `VHS_LoadVideo` —— 2/6 个有
-- `MelBandRoFormerModelLoader` —— 1/6 个有
-- `MelBandRoFormerSampler` —— 1/6 个有
-- `TrimAudioDuration` —— 1/6 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `LTXDirectorGuide` —— 6/7 个有
+- `LTXVCropGuides` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PreviewAny` —— 5/7 个有
+- `RH_LLMAPI_Pro_Node` —— 5/7 个有
+- `CS-LTXGridDirector` —— 3/7 个有
+- `CS-LTXSixGridDirector` —— 2/7 个有
+- `LTXDirector` —— 2/7 个有
+- `LoadVideo` —— 2/7 个有
+- `Text Multiline` —— 2/7 个有
+- `CLIPTextEncode` —— 1/7 个有
+- `CS-LTXDirectorGuide` —— 1/7 个有
+- `DiffusionModelLoaderKJ` —— 1/7 个有
+- `LTXDirectorCropGuides` —— 1/7 个有
+- `LTXVLatentUpsampler` —— 1/7 个有
+- `LatentUpscaleModelLoader` —— 1/7 个有
 
 ## 典型参数
 

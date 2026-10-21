@@ -3,36 +3,34 @@ name: unknown_workflow_generic_828
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.8255
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_Sora2_I2V, RH_Sora2_I2V_PRO, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json, 音频生成/音频生成/Qwen3TTS 终极声音克隆_2018636171651321857.json]
+members: [视频生成/图生视频/2027720489086492673.json, 视频生成/图生视频/2030902147759476737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_828
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json、音频生成/音频生成/Qwen3TTS 终极声音克隆_2018636171651321857.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2027720489086492673.json、视频生成/图生视频/2030902147759476737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `RH_Sora2_I2V_PRO`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `LayerUtility: TextBox` —— 1/2 个有
-- `ShowAnything|Mie` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,57 +1,61 @@
 ---
 name: unknown_workflow_sampler_unet_vae_164
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.711333
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.921
+common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, SDXL Empty Latent Image (rgthree)]
-members: [图片生成/文生图/1938602282357284865.json, 图片生成/文生图/1948653855824326658.json, 图片生成/文生图/1951269472583798786.json]
+missing: []
+members: [图片生成/文生图/Krea2 Multi-Image Reference Editing_2073788017583673345.json, 图片生成/文生图/Krea2文生图标准工作流_2091191129374019586.json, 图片生成/文生图/pipi-anima高级采样器工作流_2078243608947412994.json, 图片生成/文生图/z-image-turbo-union2.1控制_2011994282508423170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_164
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1938602282357284865.json、图片生成/文生图/1948653855824326658.json、图片生成/文生图/1951269472583798786.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2 Multi-Image Reference Editing_2073788017583673345.json、图片生成/文生图/Krea2文生图标准工作流_2091191129374019586.json、图片生成/文生图/pipi-anima高级采样器工作流_2078243608947412994.json、图片生成/文生图/z-image-turbo-union2.1控制_2011994282508423170.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSampler`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `ArgosTranslateTextNode` —— 1/3 个有
-- `CLIPTextEncodeFlux` —— 1/3 个有
-- `FluxGuidance` —— 1/3 个有
-- `SDXL Empty Latent Image (rgthree)` —— 1/3 个有
+- `BasicGuider` —— 3/4 个有
+- `CLIPTextEncode` —— 3/4 个有
+- `LoadImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `ResolutionSelector` —— 2/4 个有
+- `AIO_Preprocessor` —— 1/4 个有
+- `CFGGuider` —— 1/4 个有
+- `FluxGuidance` —— 1/4 个有
+- `Krea2EditRebalance` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `LazyCache` —— 1/4 个有
+- `ModelPatchLoader` —— 1/4 个有
+- `QwenImageDiffsynthControlnet` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 28 | 3 | 62% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1024 | 864 - 2048 | 4 | 62% |
+| 高度 | 1232 | 1024 - 2048 | 4 | 70% |
 
 ## 常见问题
 
@@ -59,9 +63,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 28，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: LoadJoyCaptionBeta1Model、SDXL Empty Latent Image (rgthree)
+- 宽度 中位数 1024，观测区间 864 - 2048，4 个样本
+- 高度 中位数 1232，观测区间 1024 - 2048，4 个样本

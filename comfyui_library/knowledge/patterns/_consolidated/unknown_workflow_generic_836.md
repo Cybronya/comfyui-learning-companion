@@ -3,31 +3,33 @@ name: unknown_workflow_generic_836
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [FB_Qwen3TTSVoiceDesign, SaveAudioMP3]
+coverage: 1
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: ["音频生成/音频生成/Qwen3-TTS音色克隆,设计音色_2040138978837401602.json", 音频生成/音频生成/Qwen3TTS声音设计-文本转语音工作流_2094559282082705410.json]
+members: [视频生成/图生视频/2033808723172397057.json, 视频生成/图生视频/2033808851971088386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_836
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS音色克隆,设计音色_2040138978837401602.json、音频生成/音频生成/Qwen3TTS声音设计-文本转语音工作流_2094559282082705410.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2033808723172397057.json、视频生成/图生视频/2033808851971088386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceDesign`
-- `SaveAudioMP3`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `RH_KlingV26ProMotionControl` —— 1/2 个有
+- `RH_KlingV26StdMotionControl` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,75 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_clip_107
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7745
-common_nodes: [BasicScheduler, BetterFilmGrain, CLIPLoader, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, EsesImageEffectBloom, FluxGuidance, ImageSharpen, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.635
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, SimpleMath+, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy negative, easy positive, easy showAnything]
 problems: []
-missing: [CR Text, easy cleanGpuUsed, easy clearCacheAll]
-members: [图片生成/文生图/1945509087822139393.json, 图片生成/文生图/1966814186120601602.json]
+missing: [SimpleMath+, easy bookmark, easy cleanGpuUsed, easy positive, easy negative, CR Text, PlaySound|pysssss, easy int, RunningHub SeedXPro Translator]
+members: [图片生成/文生图/1949359850576347138.json, 图片生成/文生图/1956342842593607682.json, 图片生成/文生图/1963968525272498177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_107
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1945509087822139393.json、图片生成/文生图/1966814186120601602.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1949359850576347138.json、图片生成/文生图/1956342842593607682.json、图片生成/文生图/1963968525272498177.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `BetterFilmGrain`
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `EsesImageEffectBloom`
-- `FluxGuidance`
-- `ImageSharpen`
-- `KSampler`
-- `KSamplerSelect`
+- `EmptyHunyuanLatentVideo`
+- `Int`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PathchSageAttentionKJ`
 - `SaveImage`
+- `SimpleMath+`
 - `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+- `easy negative`
+- `easy positive`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 1/2 个有
-- `CFGGuider` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `GeminiFLUXResolutions` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageScaleToMegapixels` —— 1/2 个有
-- `ImageStitch` —— 1/2 个有
-- `ModelSamplingFlux` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `PlaySound|pysssss` —— 2/3 个有
+- `Wan_video_prompt_generator` —— 2/3 个有
+- `easy bookmark` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `RunningHub SeedXPro Translator` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | uni_pc | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.15 | - | 2 | 67% |
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 12 | 12 - 12 | 3 | 100% |
+| 采样算法 | 2.5 | 1 - 2.5 | 3 | 65% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -77,10 +71,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.15，样本不足，未给区间，2 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、easy cleanGpuUsed、easy clearCacheAll
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 2.5，观测区间 1 - 2.5，3 个样本
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+、easy bookmark、easy cleanGpuUsed、easy positive、easy negative

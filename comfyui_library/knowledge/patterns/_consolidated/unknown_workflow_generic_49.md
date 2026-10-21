@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_49
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.754167
-common_nodes: [PreviewAny, RH_Veo3_Text2Video, SaveVideo, ShellAgentPluginOutputText]
+coverage: 0.763154
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1979110570475556865.json, 视频生成/文生视频/1979082743093039105.json, 视频生成/文生视频/1979110570475556865.json, 视频生成/文生视频/1979517313265340417.json, 视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json, 视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json, 视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json, 视频生成/文生视频/全能视频V3.1 文生视频_1986725934520807426.json, 视频生成/文生视频/全能视频V3.1+文生视频_2064894587893796865.json, 视频生成/文生视频/全能视频V3.1文生视频工作流（爆炸纸箱）_1985212711497777153.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_1986963975978029057.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2047738309706784769.json]
+members: [视频生成/图生视频/2048023728835006465.json, 视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json, 视频生成/图生视频/2037347862715043842.json, 视频生成/图生视频/2038779750277193729.json, 视频生成/图生视频/2060157052013600769.json, 视频生成/图生视频/2076931692736106497.json, 视频生成/图生视频/2039312431591198722.json, 视频生成/图生视频/2046555653115744258.json, 视频生成/图生视频/2046648278296567810.json, 视频生成/图生视频/2039220191824973826.json, 视频生成/图生视频/2039512964276948994.json, 视频生成/图生视频/2044295602602778625.json, 视频生成/文生视频/seedance2.0超强多模态全能参考_2039735724001464321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_49
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1979110570475556865.json、视频生成/文生视频/1979082743093039105.json、视频生成/文生视频/1979110570475556865.json、视频生成/文生视频/1979517313265340417.json、视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2048023728835006465.json、视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json、视频生成/图生视频/2037347862715043842.json、视频生成/图生视频/2038779750277193729.json、视频生成/图生视频/2060157052013600769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `PreviewAny`
-- `RH_Veo3_Text2Video`
+全部 13 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
 - `SaveVideo`
-- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `Text _O` —— 1/12 个有
+- `PreviewAny` —— 6/13 个有
+- `LoadVideo` —— 3/13 个有
+- `easy seed` —— 3/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
 
 ## 典型参数
 

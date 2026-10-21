@@ -1,86 +1,83 @@
 ---
 name: unknown_workflow_lora_sampler_clip_30
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.617429
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CreateVideo, ImageBatch, ImageFromBatch, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PrimitiveInt, SaveVideo, UNETLoader, VAEDecode, VAELoader, WanInfiniteTalkToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.854778
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
+problems: []
 missing: []
-members: [视频生成/图生视频/2019310713029791745.json, 视频生成/图生视频/2019342958109134850.json, 视频生成/图生视频/2073310072448577538.json, 视频生成/图生视频/2073309678620209153.json, 视频生成/图生视频/2073309877631541249.json, 视频生成/图生视频/2019770784713023490.json, 视频生成/图生视频/2021071474643177473.json]
+members: [视频生成/图生视频/2063384595684483073.json, 视频生成/图生视频/2063553496401666050.json, 视频生成/图生视频/2065439100508921858.json, 视频生成/图生视频/2066036494720126978.json, 视频生成/图生视频/2067207518782316546.json, 视频生成/图生视频/2069617886041305089.json, 视频生成/图生视频/2067788916261998594.json, 视频生成/图生视频/2073325205451268097.json, 视频生成/文生视频/LTX2.3 Licon-MSR 多图参考正式版_2067553179402854402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_30
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2019310713029791745.json、视频生成/图生视频/2019342958109134850.json、视频生成/图生视频/2073310072448577538.json、视频生成/图生视频/2073309678620209153.json、视频生成/图生视频/2073309877631541249.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2063384595684483073.json、视频生成/图生视频/2063553496401666050.json、视频生成/图生视频/2065439100508921858.json、视频生成/图生视频/2066036494720126978.json、视频生成/图生视频/2067207518782316546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `CreateVideo`
-- `ImageBatch`
-- `ImageFromBatch`
-- `KSampler`
-- `LoadAudio`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PrimitiveInt`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveVideo`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
-- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 5/7 个有
-- `AudioConcat` —— 5/7 个有
-- `SimpleCalculatorKJ` —— 5/7 个有
-- `VHS_VideoCombine` —— 5/7 个有
-- `easy forLoopEnd` —— 5/7 个有
-- `easy forLoopStart` —— 5/7 个有
-- `MaskPreview` —— 3/7 个有
-- `SegmentV2` —— 3/7 个有
-- `ShowAnything|Mie` —— 3/7 个有
-- `ZML_MaskSeparateDistance` —— 3/7 个有
-- `GetNode` —— 2/7 个有
-- `JWInteger` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `PreviewAudio` —— 2/7 个有
-- `SetNode` —— 2/7 个有
+- `LTXAVTextEncoderLoader` —— 6/9 个有
+- `LTXVAudioVAELoader` —— 6/9 个有
+- `LowVRAMCheckpointLoader` —— 6/9 个有
+- `LTX2_NAG` —— 4/9 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `PromptRelayEncode` —— 4/9 个有
+- `DualCLIPLoader` —— 3/9 个有
+- `GetNode` —— 3/9 个有
+- `SetNode` —— 3/9 个有
+- `UNETLoader` —— 3/9 个有
+- `VAELoader` —— 3/9 个有
+- `CM_IntToFloat` —— 2/9 个有
+- `ComfyMathExpression` —— 2/9 个有
+- `LTXVSetAudioRefTokens` —— 2/9 个有
+- `MuyeTextEditOutput` —— 2/9 个有
+- `SimpleCalculatorKJ` —— 2/9 个有
+- `AtSignCLIPTextEncode` —— 1/9 个有
+- `CR Text` —— 1/9 个有
+- `MultiIntFormula` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | normal | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 241 | 97 - 241 | 9 | 80% |
+| 高度 | 24 | 24 - 50 | 9 | 64% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 19/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 normal，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（19/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 241，观测区间 97 - 241，9 个样本
+- 高度 中位数 24，观测区间 24 - 50，9 个样本

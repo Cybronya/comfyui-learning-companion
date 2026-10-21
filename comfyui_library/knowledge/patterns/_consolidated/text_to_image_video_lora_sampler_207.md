@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_207
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.94
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, EmptySD3LatentImage, ImageFromBatch, ImageScale, JjkText, KSampler, KSamplerSelect, LoadAudio, LoraLoader, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelSamplingAuraFlow, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8965
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, Lora Loader Stack (rgthree), LoraLoaderModelOnly, MiniMaxH3HybridLoader, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/动态头像生成工作流｜文生图图生视频头像会动_2098733273718550529.json, 视频生成/文生视频/Z-Image角色MiniMaxH3原生MV｜LoRA版1分钟_2095598959543808001.json]
+members: [视频生成/图生视频/MinimaxH3参考视频bf16模型 视频生成参考输入方案_2104678853527564289.json, 视频生成/图生视频/MinimaxH3参考视频驱动｜bf16模型图生视频，动作表情高保真_2104519554876661762.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_207
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动态头像生成工作流｜文生图图生视频头像会动_2098733273718550529.json、视频生成/文生视频/Z-Image角色MiniMaxH3原生MV｜LoRA版1分钟_2095598959543808001.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3参考视频bf16模型 视频生成参考输入方案_2104678853527564289.json、视频生成/图生视频/MinimaxH3参考视频驱动｜bf16模型图生视频，动作表情高保真_2104519554876661762.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -27,40 +27,33 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
-- `ImageFromBatch`
-- `ImageScale`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoraLoader`
+- `Lora Loader Stack (rgthree)`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
+- `MiniMaxH3HybridLoader`
+- `MiniMaxH3MediaLoaderFantastic`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceSplitter`
+- `MiniMaxH3ResolutionSelector`
+- `MiniMaxH3TurboLoRA`
+- `MiniMaxH3TurboSampler`
+- `MiniMaxH3UnifiedToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `SeedVR2` —— 1/2 个有
-- `SeedVR2BlockSwap` —— 1/2 个有
-- `SeedVR2ExtraArgs` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -71,8 +64,6 @@ source: knowledge_consolidation
 | 采样算法 | er_sde | - | 2 | 100% |
 | 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| LoRA 模型强度 | 0.6 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
 | 宽度 | 80 | - | 2 | 100% |
 | 高度 | 80 | - | 2 | 100% |
 
@@ -80,7 +71,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -89,9 +80,7 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%
 - 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（5/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

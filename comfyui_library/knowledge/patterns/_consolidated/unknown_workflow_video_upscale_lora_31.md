@@ -3,59 +3,72 @@ name: unknown_workflow_video_upscale_lora_31
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.606
-common_nodes: [ControlNextGetPoses, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResize+, ImageUpscaleWithModel, ImpactInt, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy positive, easy seed]
+coverage: 0.383
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, Fast Groups Bypasser (rgthree), GetImage, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResizeImageMaskNode, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanImageGridComposite, YuanLoadImageOutput, YuanMultiImage, YuanPrimitive, YuanTool, Yuan_H3MotionContextTrim, Yuan_H3ProgressiveSampler, Yuan_MiniMaxH3Video]
 problems: []
 missing: []
-members: [视频生成/图生视频/1971091047734484993.json, 视频生成/图生视频/1975040693611663361.json]
+members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_31
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1971091047734484993.json、视频生成/图生视频/1975040693611663361.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ControlNextGetPoses`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImage`
 - `GetNode`
-- `INTConstant`
-- `ImageResize+`
-- `ImageUpscaleWithModel`
-- `ImpactInt`
-- `JWInteger`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RIFE VFI`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
 - `SetNode`
-- `UpscaleModelLoader`
-- `VHS_LoadVideo`
+- `StringConcatenate`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `WanVideoBlockSwap`
-- `WanVideoControlEmbeds`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy positive`
-- `easy seed`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTJsonSwitch`
+- `YUAN_TXTPreviewContent`
+- `YUAN_TXTShotDurations`
+- `YuanAudioList`
+- `YuanAudioLoad`
+- `YuanAudioSplit`
+- `YuanImageGridComposite`
+- `YuanLoadImageOutput`
+- `YuanMultiImage`
+- `YuanPrimitive`
+- `YuanTool`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_H3ProgressiveSampler`
+- `Yuan_MiniMaxH3Video`
+
+**可变部分**（部分 workflow 才有）：
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,71 +1,77 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_51
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.927
-common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ComfyMathExpression, ConditioningZeroOut, CreateVideo, DualCLIPLoader, GetImageRangeFromBatch, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoaderKJ]
+coverage: 0.874333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2066915488357249026.json, 视频生成/图生视频/2066375964539572225.json, 视频生成/图生视频/2064568765139996673.json, 视频生成/图生视频/2067435786764644353.json, 视频生成/图生视频/2071153016027303937.json]
+members: [视频生成/图生视频/h3-二阶+sigma+latent_2096577454994448385.json, 视频生成/图生视频/minimaxh3-多参+latent二采_2098875416437157889.json, 视频生成/图生视频/【合理动态版】Hybrid_4+5步双采样_2096530913504088066.json, 视频生成/图生视频/【疯了的动态】Dasiwa_4+5步双采样_2096866880698015746.json, 视频生成/图生视频/黄色的大宝剑武打流放大二采_2109571702479998978.json, 视频生成/文生视频/h3-二阶采样（sigma插值+latent放大）_2090487702180417538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_51
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2066915488357249026.json、视频生成/图生视频/2066375964539572225.json、视频生成/图生视频/2064568765139996673.json、视频生成/图生视频/2067435786764644353.json、视频生成/图生视频/2071153016027303937.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/h3-二阶+sigma+latent_2096577454994448385.json、视频生成/图生视频/minimaxh3-多参+latent二采_2098875416437157889.json、视频生成/图生视频/【合理动态版】Hybrid_4+5步双采样_2096530913504088066.json、视频生成/图生视频/【疯了的动态】Dasiwa_4+5步双采样_2096866880698015746.json、视频生成/图生视频/黄色的大宝剑武打流放大二采_2109571702479998978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CS-LTXGridDirector`
+- `CLIPLoader`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
 - `CreateVideo`
-- `DualCLIPLoader`
-- `GetImageRangeFromBatch`
-- `INTConstant`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `GuHaiAutoImageSplit` —— 1/5 个有
-- `ImageScaleToTotalPixels` —— 1/5 个有
-- `MuyeTextEditOutput` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RHLLMChatNode` —— 1/5 个有
-- `RH_RhartImageG2ImageToImage` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `SeedVR2` —— 1/5 个有
-- `SeedVR2BlockSwap` —— 1/5 个有
-- `SeedVR2ExtraArgs` —— 1/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
+- `MiniMaxH3SigmaShift` —— 5/6 个有
+- `SplitSigmas` —— 5/6 个有
+- `ExtendIntermediateSigmas` —— 4/6 个有
+- `PrimitiveStringMultiline` —— 4/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `CR Text` —— 2/6 个有
+- `GetImageSize` —— 2/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `LoraLoaderBypassModelOnly` —— 2/6 个有
+- `ManualSigmas` —— 2/6 个有
+- `RH_LLMAPI_Pro_Node` —— 2/6 个有
+- `SolAttnMiniMax` —— 2/6 个有
+- `TextOverlay` —— 2/6 个有
+- `BlockSparseAttention` —— 1/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `MiniMaxH3HybridLoader` —— 1/6 个有
+- `Text Concatenate` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
+- `easy int` —— 1/6 个有
 
 ## 典型参数
 

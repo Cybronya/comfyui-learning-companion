@@ -3,38 +3,33 @@ name: unknown_workflow_generic_256
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6558
-common_nodes: [CR Text, CR Text Concatenate, HeartMuLa_Generate, RH_LLMAPI_Pro_Node, SaveAudio, ShowText|pysssss]
+coverage: 0.7834
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa模型音乐生成手动填歌词版本ai智能创作生成流行摇滚古典民谣爵士乡村蓝调说唱等音乐_2015025303659220994.json, 音频生成/音频生成/HeartMuLa音乐生成手动歌词版（开源最强）_2013520887751905281.json, 音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2013470680741842946.json, 音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2014250098347220993.json, 音频生成/音频生成/HeartMuLa音乐自动歌词（小suno）_2014027397196156930.json]
+members: [图片生成/文生图/02豆包_SeedreamV5Lite_文生图+全节点注释_2058541341457608706.json, 图片生成/文生图/RH seedream-v5-lite-文生图_2075097620980256770.json, 图片生成/文生图/RH seedream-v5-lite-文生图_2075182440150290434.json, 图片生成/文生图/Seedream-V5-Lite-文生图 工作流+全节点注释_2076249045282156546.json, 图片生成/文生图/image-2.5文生图 极速版image2.5_全能图片G2.5_全能图片G image2.5+全节点注释_2097918475661561858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_256
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa模型音乐生成手动填歌词版本ai智能创作生成流行摇滚古典民谣爵士乡村蓝调说唱等音乐_2015025303659220994.json、音频生成/音频生成/HeartMuLa音乐生成手动歌词版（开源最强）_2013520887751905281.json、音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2013470680741842946.json、音频生成/音频生成/HeartMuLa音乐生成自动歌词版（开源最强）_2014250098347220993.json、音频生成/音频生成/HeartMuLa音乐自动歌词（小suno）_2014027397196156930.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/02豆包_SeedreamV5Lite_文生图+全节点注释_2058541341457608706.json、图片生成/文生图/RH seedream-v5-lite-文生图_2075097620980256770.json、图片生成/文生图/RH seedream-v5-lite-文生图_2075182440150290434.json、图片生成/文生图/Seedream-V5-Lite-文生图 工作流+全节点注释_2076249045282156546.json、图片生成/文生图/image-2.5文生图 极速版image2.5_全能图片G2.5_全能图片G image2.5+全节点注释_2097918475661561858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `HeartMuLa_Generate`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `RH_LLMAPI_NODE` —— 3/5 个有
-- `easy saveText` —— 3/5 个有
-- `Any Switch (rgthree)` —— 1/5 个有
+- `RH_SeedreamV5LiteTextToImage` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `CR Text` —— 2/5 个有
+- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 1/5 个有
 
 ## 典型参数
 

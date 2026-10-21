@@ -1,73 +1,93 @@
 ---
 name: unknown_workflow_video_lora_sampler_41
 type: Unknown Workflow
-frequency: 22
+frequency: 23
 level: strong
-coverage: 0.446227
-common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed]
+coverage: 0.825696
+common_nodes: [BasicScheduler, CLIPVisionLoader, ConditioningZeroOut, DrawViTPose, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewAny, PreviewImage, PromptRelayEncode, RegexExtract, SamplerCustom, SetNode, Text, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034182397939421186.json, 视频生成/图生视频/2028858830699892737.json, 视频生成/图生视频/2001486989629288450.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流_2037840738377015297.json, 视频生成/图生视频/2038834532652163073.json, 视频生成/图生视频/2038927668770512898.json, 视频生成/图生视频/2033802610926428162.json, 视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作工作流_2033833847380516865.json, 视频生成/图生视频/2057106642839359489.json, 视频生成/图生视频/2001317113182777346.json, 视频生成/图生视频/2032814460473188353.json, 视频生成/图生视频/2029755512052523009.json, 视频生成/图生视频/2031051792376668162.json, 视频生成/图生视频/2046398368800317441.json, 视频生成/图生视频/2030287506285010945.json, 视频生成/图生视频/2037447795740774401.json, 视频生成/图生视频/2043261466400268290.json, 视频生成/图生视频/2028729107403513858.json, 视频生成/图生视频/2031903395463827458.json, 视频生成/图生视频/2037037456683442177.json, 视频生成/文生视频/WAN2.2全自动-万能视频生成器_2038992828327530498.json, 视频生成/文生视频/WAN2.2细节精细 万能图生视频 优化加速版_2029755034107383809.json]
+members: [视频生成/图生视频/2059924358973444098.json, 视频生成/图生视频/LTX+animate画质提升.图生视频_2102924118780895233.json, 视频生成/图生视频/LTX+animate画质提升1_2059941259988525057.json, 视频生成/图生视频/LTX+animate画质提升1_2104383276361281538.json, 视频生成/图生视频/LTX+animate画质提升1_2104756378995879937.json, 视频生成/图生视频/2070320545694052354.json, 视频生成/图生视频/服装模特图生视频_2064706422297944066.json, 视频生成/图生视频/2065030289491062785.json, 视频生成/图生视频/2061684800922144769.json, 视频生成/图生视频/2061696818274201601.json, 视频生成/图生视频/2061750723561480193.json, 视频生成/图生视频/2061756832443621377.json, 视频生成/图生视频/2061684766914727937.json, 视频生成/图生视频/2060377595157499905.json, 视频生成/图生视频/2060378166706921473.json, 视频生成/图生视频/2060476263445393409.json, 视频生成/图生视频/2061765735965356034.json, 视频生成/图生视频/2068868335923712001.json, 视频生成/图生视频/2068991926904377346.json, 视频生成/图生视频/2069004536680898562.json, 视频生成/图生视频/电商服装带货视频_2059941210411851777.json, 视频生成/图生视频/电商服装带货视频_2103296732867158018.json, 视频生成/文生视频/服装店带货视频生成【图生视频】_2064728584866066434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_41
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/2034182397939421186.json、视频生成/图生视频/2028858830699892737.json、视频生成/图生视频/2001486989629288450.json、视频生成/图生视频/Wan2.2优化版全自动视频生成器：万能视频制作图生视频工作流_2037840738377015297.json、视频生成/图生视频/2038834532652163073.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/2059924358973444098.json、视频生成/图生视频/LTX+animate画质提升.图生视频_2102924118780895233.json、视频生成/图生视频/LTX+animate画质提升1_2059941259988525057.json、视频生成/图生视频/LTX+animate画质提升1_2104383276361281538.json、视频生成/图生视频/LTX+animate画质提升1_2104756378995879937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：23
 - **可信度**：强结论
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `KSamplerAdvanced`
+全部 23 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPVisionLoader`
+- `ConditioningZeroOut`
+- `DrawViTPose`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
+- `OnnxDetectionModelLoader`
 - `PathchSageAttentionKJ`
+- `PoseAndFaceDetection`
+- `PreviewAny`
 - `PreviewImage`
+- `PromptRelayEncode`
+- `RegexExtract`
+- `SamplerCustom`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy cleanGpuUsed`
+- `VisualizeSigmasKJ`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 20/22 个有
-- `FL_RIFE` —— 20/22 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 19/22 个有
-- `Int` —— 18/22 个有
-- `RH_LLMAPI_Pro_Node` —— 17/22 个有
-- `PreviewAny` —— 16/22 个有
-- `GetImageSizeRatio` —— 3/22 个有
-- `Resize` —— 3/22 个有
-- `RIFE VFI` —— 2/22 个有
-- `easy seed` —— 2/22 个有
-- `DWPreprocessor` —— 1/22 个有
-- `GetImageRangeFromBatch` —— 1/22 个有
-- `MathExpression|pysssss` —— 1/22 个有
-- `SaveImage` —— 1/22 个有
-- `ShowText|pysssss` —— 1/22 个有
-- `VHS_LoadVideo` —— 1/22 个有
+- `RH_Captioner` —— 16/23 个有
+- `StringReplace` —— 16/23 个有
+- `Int` —— 14/23 个有
+- `EnhancedLoadDiffusionModel` —— 3/23 个有
+- `ImagePadKJ` —— 3/23 个有
+- `LoadAudio` —— 2/23 个有
+- `CR Prompt Text` —— 1/23 个有
+- `SaveImage` —— 1/23 个有
+- `TT_img_enc` —— 1/23 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 22 | 91% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 22 | 100% |
-| 采样算法 | 1 | 1 - 1 | 22 | 100% |
-| 调度器 | euler | - | 22 | 100% |
-| 重绘幅度 | normal | - | 22 | 95% |
+| 宽度 | 489 | 489 - 489 | 23 | 100% |
+| 高度 | 24 | 24 - 24 | 23 | 100% |
 
 ## 常见问题
 
@@ -75,8 +95,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，22 个样本，一致性 91%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，22 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，22 个样本，一致性 100%
-- 重绘幅度 最常用 normal，22 个样本，一致性 95%
+- 宽度 中位数 489，观测区间 489 - 489，23 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，23 个样本，取值集中（一致性 100%）

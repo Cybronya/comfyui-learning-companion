@@ -3,40 +3,31 @@ name: unknown_workflow_generic_377
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9625
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 0.571
+common_nodes: [CR Text, LayerUtility: RoundedRectangle, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: ["音频生成/音频生成/Qwen3-TTS,支持8种角色+音色设计_2015765564215529474.json", 音频生成/音频生成/Qwen3-TTS多人对话控制_2017150035233873921.json, 音频生成/音频生成/Qwen3-TTS生成多人对话：再现良子高铁点焖子名场面！_2015643221497487361.json, 音频生成/音频生成/支持8种角色+音色设计_2050145140706160641.json]
+members: [图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_377
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS,支持8种角色+音色设计_2015765564215529474.json、音频生成/音频生成/Qwen3-TTS多人对话控制_2017150035233873921.json、音频生成/音频生成/Qwen3-TTS生成多人对话：再现良子高铁点焖子名场面！_2015643221497487361.json、音频生成/音频生成/支持8种角色+音色设计_2050145140706160641.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json、图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `FB_Qwen3TTSLoadSpeaker` —— 1/4 个有
-- `LoadAudio` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
+- `CR Text`
+- `LayerUtility: RoundedRectangle`
+- `PrimitiveInt`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 ## 典型参数
 

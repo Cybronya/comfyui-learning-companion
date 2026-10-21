@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_204
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.667
-common_nodes: [LoadImage, OpenRouterLLMNode, PreviewAny, PrimitiveStringMultiline, SaveText]
+coverage: 0.729167
+common_nodes: [JjkText, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_openrouter_gpt5_6_luna.json, comfyui-workflow-templates-json/api_openrouter_gpt5_6_sol.json, comfyui-workflow-templates-json/api_openrouter_gpt5_6_terra.json, comfyui-workflow-templates-json/api_openrouter_grok4_5.json, comfyui-workflow-templates-json/api_openrouter_kimi_k3.json]
+members: [图片生成/文生图/最强漫剧_游戏_电影角色设计分稿_模板_2052927383690330113.json, 图片生成/文生图/电商详情高端产品9宫格分镜展示_2054017211852967938.json, 图片生成/文生图/自用_2060639086016286721.json, 视频生成/图生视频/1983842988977721346.json, 视频生成/图生视频/2038626834245488641.json, 视频生成/图生视频/2039257773019504641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_204
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_openrouter_gpt5_6_luna.json、comfyui-workflow-templates-json/api_openrouter_gpt5_6_sol.json、comfyui-workflow-templates-json/api_openrouter_gpt5_6_terra.json、comfyui-workflow-templates-json/api_openrouter_grok4_5.json、comfyui-workflow-templates-json/api_openrouter_kimi_k3.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/最强漫剧_游戏_电影角色设计分稿_模板_2052927383690330113.json、图片生成/文生图/电商详情高端产品9宫格分镜展示_2054017211852967938.json、图片生成/文生图/自用_2060639086016286721.json、视频生成/图生视频/1983842988977721346.json、视频生成/图生视频/2038626834245488641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `OpenRouterLLMNode`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveText`
+全部 6 个 workflow 都包含：
+- `JjkText`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5` —— 4/5 个有
-- `70bc0003-66ee-48a5-bea3-7a0949fc30b5` —— 1/5 个有
+- `LoadImage` —— 5/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 5/6 个有
+- `workflow>process` —— 1/6 个有
 
 ## 典型参数
 

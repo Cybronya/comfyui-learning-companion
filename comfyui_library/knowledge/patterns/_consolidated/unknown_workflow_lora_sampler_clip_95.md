@@ -1,56 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_95
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9285
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.955
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
 problems: []
-missing: [CR Text]
-members: [图片生成/图生图/2070875464536776706.json, 视频生成/图生视频/2034914535194238977.json]
+missing: []
+members: [视频生成/图生视频/2075527517234094082.json, 视频生成/图生视频/2074817349152235521.json, 视频生成/图生视频/2077979272010096641.json, 视频生成/图生视频/2061975400108093442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_95
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2070875464536776706.json、视频生成/图生视频/2034914535194238977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2075527517234094082.json、视频生成/图生视频/2074817349152235521.json、视频生成/图生视频/2077979272010096641.json、视频生成/图生视频/2061975400108093442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `SaveImage`
-- `UNETLoader`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `TextEncodeQwenImageEditPlus` —— 1/2 个有
+- `CropFace` —— 3/4 个有
+- `LTXIdentityOverlapConditioning` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `RH_LLMAPI_NODE` —— 3/4 个有
+- `SplitStringByDelimiter` —— 3/4 个有
+- `StringConcatenate` —— 3/4 个有
+- `StringReplace` —— 3/4 个有
+- `TTP_text_mix` —— 3/4 个有
+- `TextGenerate` —— 3/4 个有
+- `TextInput_` —— 3/4 个有
+- `LTX2_NAG` —— 1/4 个有
+- `LTXVAddGuideMulti` —— 1/4 个有
+- `PromptRelayEncode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 6.5 | - | 2 | 77% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 50% |
-| 重绘幅度 | sgm_uniform | - | 2 | 50% |
+| 宽度 | 241 | 145 - 241 | 4 | 81% |
+| 高度 | 50 | 24 - 50 | 4 | 74% |
 
 ## 常见问题
 
@@ -58,10 +77,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6.5，样本不足，未给区间，2 个样本
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 50%
-- 重绘幅度 最常用 sgm_uniform，2 个样本，一致性 50%
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 241，观测区间 145 - 241，4 个样本，取值集中（一致性 81%）
+- 高度 中位数 50，观测区间 24 - 50，4 个样本

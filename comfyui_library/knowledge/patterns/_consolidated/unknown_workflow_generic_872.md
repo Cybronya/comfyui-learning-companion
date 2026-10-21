@@ -3,36 +3,38 @@ name: unknown_workflow_generic_872
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.333
-common_nodes: [CR Text, GetNode, PrimitiveBoolean, RH_Suno_Custom, RH_Suno_Lyrics, SaveAudio, SetNode, ShowText|pysssss, Text Multiline, easy ifElse]
+coverage: 0.9365
+common_nodes: [ImageScaleDownToSize, IndexTTSNode, LoadAudio, LoadImage, PreviewAudio, Primitive integer [Crystools], RH_Captioner, RunningHub MultiTalk AllInOne, RunningHub MultiTalk Pipeline, SaveVideo, ShowText, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/【音乐生成】SunoV5文生音乐（自动歌词）_2020660119901577218.json, 音频生成/音频生成/【音乐生成】SunoV5文音乐工作流 V1.0_2040530620706721793.json]
+members: [视频生成/图生视频/1934770111813197826.json, 视频生成/图生视频/1934678039760707586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_872
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【音乐生成】SunoV5文生音乐（自动歌词）_2020660119901577218.json、音频生成/音频生成/【音乐生成】SunoV5文音乐工作流 V1.0_2040530620706721793.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1934770111813197826.json、视频生成/图生视频/1934678039760707586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：33%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `PrimitiveBoolean`
-- `RH_Suno_Custom`
-- `RH_Suno_Lyrics`
-- `SaveAudio`
-- `SetNode`
-- `ShowText|pysssss`
+- `ImageScaleDownToSize`
+- `IndexTTSNode`
+- `LoadAudio`
+- `LoadImage`
+- `PreviewAudio`
+- `Primitive integer [Crystools]`
+- `RH_Captioner`
+- `RunningHub MultiTalk AllInOne`
+- `RunningHub MultiTalk Pipeline`
+- `SaveVideo`
+- `ShowText`
 - `Text Multiline`
-- `easy ifElse`
 
 ## 典型参数
 

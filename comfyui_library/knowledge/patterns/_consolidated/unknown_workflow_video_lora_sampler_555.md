@@ -3,54 +3,59 @@ name: unknown_workflow_video_lora_sampler_555
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.52025
-common_nodes: [FloatConstant, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.6975
+common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json, 视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json, 视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json, 视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json]
+missing: [Image Crop Face, CR Text, CR Text Concatenate, MathExpression|pysssss, easy int]
+members: [视频生成/文生视频/1976007633784147970.json, 视频生成/文生视频/1976487534681300993.json, 视频生成/文生视频/2073283173435588608.json, 视频生成/文生视频/lynx基础流程ID一致性文生视频_2072999523280265216.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_555
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json、视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json、视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json、视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1976007633784147970.json、视频生成/文生视频/1976487534681300993.json、视频生成/文生视频/2073283173435588608.json、视频生成/文生视频/lynx基础流程ID一致性文生视频_2072999523280265216.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
 - `LoadImage`
-- `SetNode`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `CR SDXL Aspect Ratio` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `Image Crop Face` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RMBG` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
@@ -62,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：Image Crop Face、CR Text、CR Text Concatenate、MathExpression|pysssss、easy int

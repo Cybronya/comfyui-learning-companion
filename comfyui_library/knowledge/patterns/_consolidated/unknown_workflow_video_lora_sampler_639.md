@@ -3,64 +3,67 @@ name: unknown_workflow_video_lora_sampler_639
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.933667
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.909
+common_nodes: [CR Prompt Text, Float, INTConstant, ImageCompositeMasked, ImageConcatMulti, ImageRemoveBackground+, InvertMask, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskPreview, MaskToImage, PreviewImage, SolidMask, StringToFloatList, TransparentBGSession+, VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1951180458820313090.json, 视频生成/图生视频/1956285883156758529.json, 视频生成/图生视频/1957437861178044418.json]
+members: [视频生成/图生视频/1967228508000935938.json, 视频生成/图生视频/1966519907141791746.json, 视频生成/图生视频/1966548561380978690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_639
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1951180458820313090.json、视频生成/图生视频/1956285883156758529.json、视频生成/图生视频/1957437861178044418.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1967228508000935938.json、视频生成/图生视频/1966519907141791746.json、视频生成/图生视频/1966548561380978690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
+- `CR Prompt Text`
+- `Float`
+- `INTConstant`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImageRemoveBackground+`
+- `InvertMask`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `MaskPreview`
+- `MaskToImage`
+- `PreviewImage`
+- `SolidMask`
+- `StringToFloatList`
+- `TransparentBGSession+`
+- `VHS_DuplicateMasks`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExtraModelSelect`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 2/3 个有
-- `AudioSeparation` —— 2/3 个有
-- `CreateCFGScheduleFloatList` —— 2/3 个有
-- `FloatConstant` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `WanVideoSetBlockSwap` —— 2/3 个有
-- `WanVideoSetLoRAs` —— 2/3 个有
-- `WanVideoTextEncode` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `PDIMAGE_LongerSize` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
 - `GetImageSizeAndCount` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `WanVideoApplyNAG` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `WanVideoEnhanceAVideo` —— 1/3 个有
-- `WanVideoExperimentalArgs` —— 1/3 个有
-- `WanVideoTextEncodeSingle` —— 1/3 个有
-- `easy int` —— 1/3 个有
 
 ## 典型参数
 

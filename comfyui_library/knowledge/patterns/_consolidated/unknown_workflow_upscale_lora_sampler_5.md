@@ -1,86 +1,91 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_5
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8416
-common_nodes: [BetterFilmGrain, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImageScaleToMegapixels, ImageSharpen, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 11
+level: strong
+coverage: 0.799727
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, EmptyLatentImage, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, PathchSageAttentionKJ, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text Load Line From File, Text Multiline, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader, easy anythingIndexSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: [Steps较低可能导致细节不足]
-missing: [Text Multiline, easy promptConcat, LayerUtility: PurgeVRAM, CR Prompt Text]
-members: [图片生成/文生图/1956048542387326978.json, 图片生成/文生图/1956895648390811649.json, 图片生成/文生图/1961790773043904514.json, 图片生成/文生图/1965055612562362369.json, 图片生成/文生图/1968189243870838785.json]
+missing: [MathExpression|pysssss, Text Load Line From File, Text Multiline, easy anythingIndexSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageBatchToImageList, easy imageListToImageBatch]
+members: [图片生成/图生图/2102071673460711426.json, 图片生成/图生图/2102078912699392002.json, 图片生成/图生图/2102080371482513410.json, 图片生成/图生图/2102100907671511041.json, 图片生成/图生图/2102247918542614530.json, 图片生成/图生图/2102286556152295426.json, 图片生成/图生图/2102438785630953473.json, 图片生成/图生图/2102442855301214209.json, 图片生成/图生图/三视图_多视图_角色三视图_角色多视角_Qwen_2107026065003728897.json, 图片生成/文生图/三视图_多视图_角色三视图_角色多视角_Qwen_2086649054892744706.json, 视频生成/文生视频/三视图_多视图_角色三视图_角色多视角_Qwen_2045155129598418945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1956048542387326978.json、图片生成/文生图/1956895648390811649.json、图片生成/文生图/1961790773043904514.json、图片生成/文生图/1965055612562362369.json、图片生成/文生图/1968189243870838785.json）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/2102071673460711426.json、图片生成/图生图/2102078912699392002.json、图片生成/图生图/2102080371482513410.json、图片生成/图生图/2102100907671511041.json、图片生成/图生图/2102247918542614530.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BetterFilmGrain`
+全部 11 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGNorm`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `ImageScaleToMegapixels`
-- `ImageSharpen`
+- `EmptyLatentImage`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingAuraFlow`
-- `ModelSamplingSD3`
+- `NunchakuQwenImageDiTLoader`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
 - `SaveImage`
-- `UNETLoader`
-- `UpscaleModelLoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `Text Load Line From File`
+- `Text Multiline`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy anythingIndexSwitch`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `EsesImageEffectBloom` —— 4/5 个有
-- `easy showAnything` —— 3/5 个有
-- `CFGNorm` —— 2/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `NunchakuQwenImageDiTLoader` —— 2/5 个有
-- `PathchSageAttentionKJ` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `Text Multiline` —— 2/5 个有
-- `easy promptConcat` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `LazySwitch2way` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
+- `Fast Bypasser (rgthree)` —— 1/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 10 | 5 | 62% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 0.15 - 1 | 5 | 37% |
+| 宽度 | 720 | 720 - 720 | 11 | 100% |
+| 高度 | 1440 | 1440 - 1440 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 10，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.15 - 1，5 个样本，取值分散，一致性仅 37%
-- 高发问题（4/5 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline、easy promptConcat、LayerUtility: PurgeVRAM、CR Prompt Text
+- 宽度 中位数 720，观测区间 720 - 720，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 1440，观测区间 1440 - 1440，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、Text Load Line From File、Text Multiline、easy anythingIndexSwitch、easy batchAnything

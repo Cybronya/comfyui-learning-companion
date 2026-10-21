@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_71
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9667
-common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.623636
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/音色克隆-v1_2094769389882142721.json, 数字人/数字人/音色设计_2094769410778165249.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json, 音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json, 音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json, 音频生成/音频生成/VoxCPM2 基础工作流_2042504143272681474.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054212924264206337.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054582646944092162.json, 音频生成/音频生成/VoxCPM2 语音克隆_2056949209022164994.json, 音频生成/音频生成/音色设计_2111054904671424513.json]
+members: [视频生成/图生视频/2006756552966934530.json, 视频生成/图生视频/2013870474350039041.json, 视频生成/图生视频/1973542685552283650.json, 视频生成/图生视频/1996576897733640194.json, 视频生成/图生视频/1974244784342700033.json, 视频生成/图生视频/1984540951081271297.json, 视频生成/图生视频/1985726193741770753.json, 视频生成/图生视频/1976486505747226626.json, 视频生成/图生视频/1976563649210880001.json, 视频生成/图生视频/1980452258129338369.json, 视频生成/图生视频/1985573465543651330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_71
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/音色克隆-v1_2094769389882142721.json、数字人/数字人/音色设计_2094769410778165249.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json、音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json、音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2006756552966934530.json、视频生成/图生视频/2013870474350039041.json、视频生成/图生视频/1973542685552283650.json、视频生成/图生视频/1996576897733640194.json、视频生成/图生视频/1974244784342700033.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+全部 11 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 8/10 个有
-- `StringInput` —— 3/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
+- `RH_Translator` —— 5/11 个有
+- `JjkText` —— 2/11 个有
+- `CR Seed` —— 1/11 个有
+- `easy imageScaleDownToSize` —— 1/11 个有
 
 ## 典型参数
 

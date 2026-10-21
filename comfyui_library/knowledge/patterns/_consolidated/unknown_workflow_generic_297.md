@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_297
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.5845
-common_nodes: [JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json, 音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json, 音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json, 音频生成/音频生成/电商定制声音风格_2014869455171489794.json]
+members: [视频生成/图生视频/2034493211380551681.json, 视频生成/图生视频/2038487886651199489.json, 视频生成/图生视频/2034473261228101634.json, 视频生成/图生视频/2034471481182261250.json, 视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_297
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json、音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json、音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json、音频生成/音频生成/电商定制声音风格_2014869455171489794.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2034493211380551681.json、视频生成/图生视频/2038487886651199489.json、视频生成/图生视频/2034473261228101634.json、视频生成/图生视频/2034471481182261250.json、视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `RH_CinematicVideoGenerator` —— 4/5 个有
+- `LoadVideo` —— 3/5 个有
+- `MuyeTextEditOutput` —— 3/5 个有
+- `RH_SeedanceVideoRefToVideo` —— 3/5 个有
+- `Make Image Batch` —— 1/5 个有
 
 ## 典型参数
 

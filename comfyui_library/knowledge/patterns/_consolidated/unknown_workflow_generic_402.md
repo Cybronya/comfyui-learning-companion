@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_402
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.820667
-common_nodes: [ByteDance2FirstLastFrameNode, LoadImage, SaveVideo]
+coverage: 0.96875
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_seedance2_0_flf2v.json, comfyui-workflow-templates-json/api_seedance2_0_flf2v_real_human.json, comfyui-workflow-templates-json/api_seedance2_5_flf2v.json]
+members: [视频生成/图生视频/2038488616279740418.json, 视频生成/图生视频/2041457272768958466.json, 视频生成/图生视频/2041500454491791362.json, 视频生成/图生视频/2041779553500143618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_402
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_flf2v.json、comfyui-workflow-templates-json/api_seedance2_0_flf2v_real_human.json、comfyui-workflow-templates-json/api_seedance2_5_flf2v.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2038488616279740418.json、视频生成/图生视频/2041457272768958466.json、视频生成/图生视频/2041500454491791362.json、视频生成/图生视频/2041779553500143618.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ByteDance2FirstLastFrameNode`
+全部 4 个 workflow 都包含：
 - `LoadImage`
+- `LoadVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ByteDanceCreateImageAsset` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
+- `RH_AlibabaWan27ReferenceToVideo` —— 3/4 个有
+- `CR Text` —— 1/4 个有
+- `RH_ViduReferenceToVideoQ2Pro` —— 1/4 个有
 
 ## 典型参数
 

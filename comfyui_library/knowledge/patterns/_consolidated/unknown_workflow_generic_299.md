@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_299
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.89725
-common_nodes: [Apply Whisper, BreezeTTS2LoadModel, CR Text, LoadAudio, NormalizeAudioLoudness, PreviewAudio, SaveAudioAdvanced]
+coverage: 1
+common_nodes: [GetVideoComponents, ImageBatchGet, LoadVideo, RH_Captioner, RunningHub ThinkSound, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json, 数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json, 音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json, 音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json]
+members: [视频生成/图生视频/1944938315844079618.json, 音频生成/音频生成/ThinkSound为视频配音_1942795666395738113.json, 音频生成/音频生成/ThinkSound视频配音_1943341470965526529.json, 音频生成/音频生成/ThnikSound视频配音_1942744901547438082.json, 音频生成/音频生成/王炸！思维链版ThinkSound视频配音工作流_1942401903257128961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_299
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/魔术剪辑--声音克隆生成配音_2105981685094510593.json、数字人/数字人/魔术剪辑--声音克隆生成配音_2106339607586631681.json、音频生成/音频生成/9月最强音色克隆 Breeze TTS 2（语气控制）_2095861149500788738.json、音频生成/音频生成/9月最强音色克隆（情景控制） Breeze TTS 2_2095868835978113025.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1944938315844079618.json、音频生成/音频生成/ThinkSound为视频配音_1942795666395738113.json、音频生成/音频生成/ThinkSound视频配音_1943341470965526529.json、音频生成/音频生成/ThnikSound视频配音_1942744901547438082.json、音频生成/音频生成/王炸！思维链版ThinkSound视频配音工作流_1942401903257128961.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Apply Whisper`
-- `BreezeTTS2LoadModel`
-- `CR Text`
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
+全部 5 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageBatchGet`
+- `LoadVideo`
+- `RH_Captioner`
+- `RunningHub ThinkSound`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `BreezeTTS2VoiceDirection` —— 3/4 个有
-- `BreezeTTS2VoiceClone` —— 1/4 个有
+- `RH_Translator` —— 4/5 个有
+- `Bjornulf_ShowStringText` —— 1/5 个有
 
 ## 典型参数
 

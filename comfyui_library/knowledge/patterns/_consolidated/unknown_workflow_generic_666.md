@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_666
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioAdvanced]
+frequency: 3
+level: moderate
+coverage: 0.771333
+common_nodes: [Fast Groups Bypasser (rgthree), SaveAudioMP3, SaveImage, VHS_LoadVideoFFmpeg, VideoFrameSelector]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3音色生成_2090373649973997570.json, 音频生成/音频生成/声音设计专用流_2016157124283342849.json]
+members: [音频生成/音频生成/视频提取音频MP3 南音：nanyindd688_2046590072463564801.json, 音频生成/音频生成/视频提取音频MP3_1982637752204312577.json, 音频生成/音频生成/视频提取音频工作流_2063676152174174210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_666
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Qwen3音色生成_2090373649973997570.json、音频生成/音频生成/声音设计专用流_2016157124283342849.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/视频提取音频MP3 南音：nanyindd688_2046590072463564801.json、音频生成/音频生成/视频提取音频MP3_1982637752204312577.json、音频生成/音频生成/视频提取音频工作流_2063676152174174210.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudioAdvanced`
+全部 3 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `SaveAudioMP3`
+- `SaveImage`
+- `VHS_LoadVideoFFmpeg`
+- `VideoFrameSelector`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `TextInput` —— 1/2 个有
+- `SoundFlow_TrimAudio` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

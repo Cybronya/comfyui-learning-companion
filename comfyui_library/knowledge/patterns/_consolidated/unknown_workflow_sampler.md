@@ -3,37 +3,38 @@ name: unknown_workflow_sampler
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.9857
-common_nodes: [LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler]
+coverage: 1
+common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073312517513900034.json, 视频生成/图生视频/2027574914521239554.json, 视频生成/图生视频/2029805052180828161.json, 视频生成/图生视频/2027219359206219778.json, 视频生成/图生视频/2027301910834843650.json, 视频生成/图生视频/2027324926671200258.json, 视频生成/图生视频/2058750724892352513.json, 视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json, 视频生成/图生视频/2029198735569326082.json, 视频生成/图生视频/2027641211296681986.json]
+members: [图片生成/文生图/BitDance 文生图_2026539870499377153.json, 图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json, 图片生成/文生图/BitDance文生图V1_2026616770223677442.json, 图片生成/文生图/BitDance文生图_2026827350784086018.json, 图片生成/文生图/BitDance文生图_2027273573546594306.json, 图片生成/文生图/BitDance文生图大模型：真人照片生成能力实测！_2027013975447183361.json, 图片生成/文生图/Comfyui-bitdance 基础工作流_2026597170824093698.json, 图片生成/文生图/Comfyui-bitdance 基础工作流_2027274705597636610.json, 图片生成/文生图/Comfyui-bitdance 文生图_2027213134947160065.json, 图片生成/文生图/字节跳动 BitDance 文生图_2028002596664905730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2073312517513900034.json、视频生成/图生视频/2027574914521239554.json、视频生成/图生视频/2029805052180828161.json、视频生成/图生视频/2027219359206219778.json、视频生成/图生视频/2027301910834843650.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/BitDance 文生图_2026539870499377153.json、图片生成/文生图/BitDance文生图-20260226_2026710169190670338.json、图片生成/文生图/BitDance文生图V1_2026616770223677442.json、图片生成/文生图/BitDance文生图_2026827350784086018.json、图片生成/文生图/BitDance文生图_2027273573546594306.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
+- `BitDanceDecode`
+- `BitDanceLoader`
+- `BitDanceResolution`
+- `BitDanceSampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveVideo` —— 9/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
-- `GetVideoComponents` —— 1/10 个有
-- `Int` —— 1/10 个有
-- `VHS_VideoCombine` —— 1/10 个有
+- `BitDanceTextEncode` —— 5/10 个有
+- `BitDanceTextEncodeCached` —— 5/10 个有
+- `CR Prompt Text` —— 5/10 个有
+- `CR Text` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
 
 ## 典型参数
 

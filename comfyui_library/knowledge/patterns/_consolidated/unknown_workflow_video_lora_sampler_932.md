@@ -3,62 +3,52 @@ name: unknown_workflow_video_lora_sampler_932
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8685
-common_nodes: [BasicScheduler, CLIPLoader, ComfySwitchNode, Fast Groups Bypasser (rgthree), KSamplerSelect, LayerUtility: NumberCalculatorV2, LoraLoaderModelOnly, MiniMaxH3AudioLock, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MultimodalChat, MiniMaxH3ReferenceSplitter, MiniMaxH3SigmaShift, MiniMaxH3UnifiedToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.7935
+common_nodes: [GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImageResizeKJv2, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy ifElse]
 problems: []
-missing: []
-members: [视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V4-latent分块二采_2087412509618823169.json, 视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V4-单采2K直出-RH版_2098811422074556417.json]
+missing: [Image Blank, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, String Literal]
+members: [视频生成/文生视频/1963899418183438337.json, 视频生成/文生视频/WAN2.2-AllInOne单图参考_2072999602976235520.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_932
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V4-latent分块二采_2087412509618823169.json、视频生成/文生视频/4-MiniMaxh-H3-全能生视频工作流-V4-单采2K直出-RH版_2098811422074556417.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1963899418183438337.json、视频生成/文生视频/WAN2.2-AllInOne单图参考_2072999602976235520.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfySwitchNode`
-- `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect`
-- `LayerUtility: NumberCalculatorV2`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AudioLock`
-- `MiniMaxH3MediaLoaderFantastic`
-- `MiniMaxH3MultimodalChat`
-- `MiniMaxH3ReferenceSplitter`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxH3UnifiedToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `GetImageSize`
+- `INTConstant`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `ImageResizeKJv2`
+- `LayerMask: LoadFlorence2Model`
+- `LayerMask: ObjectDetectorFL2`
+- `LayerMask: SAM2Ultra`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `String Literal`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 1/2 个有
-- `BlockSparseAttention` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `H3SigmaRefiner` —— 1/2 个有
-- `LTXVConcatAVLatent` —— 1/2 个有
-- `LTXVSeparateAVLatent` —— 1/2 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
-- `MiniMaxH3TiledSampler` —— 1/2 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SelfLiftH3Sampler` —— 1/2 个有
-- `VRAM_Debug` —— 1/2 个有
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy ifElse`
 
 ## 典型参数
 
@@ -70,4 +60,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：Image Blank、LayerMask: LoadFlorence2Model、LayerMask: ObjectDetectorFL2、LayerMask: SAM2Ultra、LayerUtility: PurgeVRAM
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

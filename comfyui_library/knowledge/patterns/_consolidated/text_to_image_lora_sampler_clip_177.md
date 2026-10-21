@@ -1,39 +1,36 @@
 ---
 name: text_to_image_lora_sampler_clip_177
 type: Text To Image
-frequency: 5
+frequency: 7
 level: strong
-coverage: 0.8688
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.869143
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1文生图与图像编辑综合工作流，一站式创作新方案_2106507657149509633.json, 图片生成/文生图/Qwen Image 2.1文生图图像编辑综合工作流，效果出色多场景覆盖方案_2105734182998728706.json, 图片生成/文生图/Qwen Image2.1综合工作流｜文生图图像编辑换背景 AI小王子出品_2105552519928836097.json, 图片生成/文生图/Qwen Image2.1重磅综合工作流｜文生图与图像编辑高效创作新纪元_2106201754592436226.json, 视频生成/文生视频/AI角色姿态导演台Character Pose Director，文生视频图生视频姿势精准控制_2103202510185000962.json]
+members: [图片生成/文生图/小红书抖音种草唯美照片 AI创意摄影集成升级_2098111917645713410.json, 图片生成/文生图/抖音小红书种草专用｜唯美照片文生图V2.0_2090528858159271937.json, 图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片创作_2090823875012685825.json, 图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片生成_2094309486575050753.json, 图片生成/文生图/生图模型天花板｜谷歌🍌2文生图图生图双修_2096619590288756738.json, 图片生成/文生图/谷歌最强生图模型2｜文生图图生图双模式生成_2096366087892979714.json, 数字人/数字人/图像高清放大工作流｜Vosr2数字人图片画质增强_2097525104493293570.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_177
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图与图像编辑综合工作流，一站式创作新方案_2106507657149509633.json、图片生成/文生图/Qwen Image 2.1文生图图像编辑综合工作流，效果出色多场景覆盖方案_2105734182998728706.json、图片生成/文生图/Qwen Image2.1综合工作流｜文生图图像编辑换背景 AI小王子出品_2105552519928836097.json、图片生成/文生图/Qwen Image2.1重磅综合工作流｜文生图与图像编辑高效创作新纪元_2106201754592436226.json、视频生成/文生视频/AI角色姿态导演台Character Pose Director，文生视频图生视频姿势精准控制_2103202510185000962.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/小红书抖音种草唯美照片 AI创意摄影集成升级_2098111917645713410.json、图片生成/文生图/抖音小红书种草专用｜唯美照片文生图V2.0_2090528858159271937.json、图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片创作_2090823875012685825.json、图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片生成_2094309486575050753.json、图片生成/文生图/生图模型天花板｜谷歌🍌2文生图图生图双修_2096619590288756738.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：7
 - **可信度**：强结论
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -41,42 +38,42 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AnySwitch` —— 4/5 个有
-- `Anything Everywhere` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `VAEEncode` —— 4/5 个有
-- `GetImageSize` —— 1/5 个有
-- `VNCCS_PoseStudio` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `DF_Text_Box` —— 4/7 个有
+- `workflow>儿童AI摄影` —— 4/7 个有
+- `workflow>创意图片处理` —— 4/7 个有
+- `workflow>宠物守护神AI摄影` —— 4/7 个有
+- `workflow>真实照片处理` —— 4/7 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/7 个有
+- `PreviewImage` —— 1/7 个有
+- `VOSR2ModelLoader` —— 1/7 个有
+- `VOSR2Upscale` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

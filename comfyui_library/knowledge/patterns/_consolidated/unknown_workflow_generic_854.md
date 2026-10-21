@@ -3,36 +3,47 @@ name: unknown_workflow_generic_854
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.775
-common_nodes: [CR Prompt Text, PreviewAny, SaveAudio, YuE2Loader, YuE2Plan, YuE2Render, YuE2SamplingConfig]
+coverage: 0.9575
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, LoadImage, LoadVideo, RH_AlibabaWan27ImageEdit, RH_AlibabaWan27ImageEditPro, RH_AlibabaWan27ImageToVideo, RH_AlibabaWan27ReferenceToVideo, RH_AlibabaWan27TextToImage, RH_AlibabaWan27TextToImagePro, RH_AlibabaWan27TextToVideo, RH_AlibabaWan27VideoEdit, RH_AlibabaWan27VideoExtend, RH_Wan25_I2V, RH_Wan25_T2V, RH_Wan26_I2V, RH_Wan26_I2V_Flash, RH_Wan26_I2V_Flash_Custom, RH_Wan26_T2V, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/YuE2转谱改音乐工作流_2099421704312410113.json, 音频生成/音频生成/Yue2转谱修改音乐_2098277049503928321.json]
+members: [视频生成/图生视频/2042082712198062082.json, 视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_854
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/YuE2转谱改音乐工作流_2099421704312410113.json、音频生成/音频生成/Yue2转谱修改音乐_2098277049503928321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2042082712198062082.json、视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `PreviewAny`
-- `SaveAudio`
-- `YuE2Loader`
-- `YuE2Plan`
-- `YuE2Render`
-- `YuE2SamplingConfig`
-
-**可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
+- `RH_AlibabaWan27ImageEdit`
+- `RH_AlibabaWan27ImageEditPro`
+- `RH_AlibabaWan27ImageToVideo`
+- `RH_AlibabaWan27ReferenceToVideo`
+- `RH_AlibabaWan27TextToImage`
+- `RH_AlibabaWan27TextToImagePro`
+- `RH_AlibabaWan27TextToVideo`
+- `RH_AlibabaWan27VideoEdit`
+- `RH_AlibabaWan27VideoExtend`
+- `RH_Wan25_I2V`
+- `RH_Wan25_T2V`
+- `RH_Wan26_I2V`
+- `RH_Wan26_I2V_Flash`
+- `RH_Wan26_I2V_Flash_Custom`
+- `RH_Wan26_T2V`
+- `SaveImage`
+- `SaveVideo`
 
 ## 典型参数
 

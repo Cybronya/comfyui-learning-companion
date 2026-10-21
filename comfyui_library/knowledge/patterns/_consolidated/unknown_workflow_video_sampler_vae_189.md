@@ -3,55 +3,43 @@ name: unknown_workflow_video_sampler_vae_189
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7925
-common_nodes: [CLIPVisionLoader, Fast Groups Bypasser (rgthree), LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7085
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1943843153860497410.json, 视频生成/文生视频/1918878513657479170.json]
+members: [视频生成/文生视频/1923309184865980418.json, 视频生成/文生视频/1894646862492905473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_189
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1943843153860497410.json、视频生成/文生视频/1918878513657479170.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1923309184865980418.json、视频生成/文生视频/1894646862492905473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
+- `Anything Everywhere` —— 1/2 个有
+- `CogVideoEnhanceAVideo` —— 1/2 个有
+- `ImageCASharpening+` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
 - `WanVideoSLG` —— 1/2 个有
+- `WanVideoSetBlockSwap` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,60 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_54
 type: Unknown Workflow
-frequency: 5
+frequency: 10
 level: moderate
-coverage: 0.9556
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8782
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [CR Text]
-members: [图片生成/文生图/1950509671901810689.json, 图片生成/文生图/1953829480836026370.json, 图片生成/文生图/1958551825752420353.json, 视频生成/文生视频/1949853875865042945.json, 视频生成/文生视频/1949831170026594305.json]
+missing: []
+members: [图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json, 图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json, 图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json, 图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json, 图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json, 图片生成/文生图/VividMuse CyberRealistic VS GonzaLomo ZPop VS Z-Image-Turbo_2062871268139028481.json, 图片生成/文生图/VividMuse GonzaLomo ZPop VS Z-Image-Turbo_2061802154381369345.json, 图片生成/文生图/VividMuse Krea2真实人像V1_2071177424569720833.json, 图片生成/文生图/VividMuse Z-Image MJ风格_2096074367687024642.json, 图片生成/文生图/VividMuse Z-Image-Turbo-全能图片G2-Style_2057436016042139650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_54
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1950509671901810689.json、图片生成/文生图/1953829480836026370.json、图片生成/文生图/1958551825752420353.json、视频生成/文生视频/1949853875865042945.json、视频生成/文生视频/1949831170026594305.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json、图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json、图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json、图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json、图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
 - `KSamplerAdvanced`
-- `ModelSamplingSD3`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `CR Text` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `VHS_VideoCombine` —— 2/5 个有
-- `EmptyLatentImage` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `LoraLoader` —— 1/5 个有
+- `Seed (rgthree)` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `PrimitiveStringMultiline` —— 6/10 个有
+- `easy promptList` —— 6/10 个有
+- `LoraLoaderModelOnly` —— 5/10 个有
+- `LayerUtility: ImageReel` —— 4/10 个有
+- `LayerUtility: ImageReelComposit` —— 4/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `ResolutionSelector` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `BasicScheduler` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `SigmasPreview` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 20 | 14 - 20 | 5 | 87% |
-| 采样算法 | 3.5 | 1 - 3.5 | 5 | 67% |
-| 调度器 | euler | - | 5 | 60% |
-| 重绘幅度 | simple | - | 5 | 60% |
-| 宽度 | 1280 | - | 1 | 100% |
-| 高度 | 720 | - | 1 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 宽度 | 1116 | 512 - 1536 | 10 | 63% |
+| 高度 | 1800 | 512 - 2048 | 10 | 61% |
+| 采样步数 | fixed | - | 10 | 60% |
+| Prompt 约束强度(CFG) | 8 | 8 - 15 | 10 | 71% |
+| 采样算法 | 1 | 1 - 2 | 10 | 67% |
+| 调度器 | euler | - | 10 | 60% |
+| 重绘幅度 | simple | - | 10 | 30% |
 
 ## 常见问题
 
@@ -62,10 +67,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 14 - 20，5 个样本，取值集中（一致性 87%）
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，5 个样本
-- 调度器 最常用 euler，5 个样本，一致性 60%
-- 重绘幅度 最常用 simple，5 个样本，一致性 60%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
+- 宽度 中位数 1116，观测区间 512 - 1536，10 个样本
+- 高度 中位数 1800，观测区间 512 - 2048，10 个样本
+- 采样步数 最常用 fixed，10 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 15，10 个样本
+- 采样算法 中位数 1，观测区间 1 - 2，10 个样本
+- 调度器 最常用 euler，10 个样本，一致性 60%
+- 重绘幅度 最常用 simple，10 个样本，一致性 30%
+- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

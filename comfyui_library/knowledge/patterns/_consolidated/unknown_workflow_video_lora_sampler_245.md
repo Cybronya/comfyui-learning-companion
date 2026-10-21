@@ -3,74 +3,51 @@ name: unknown_workflow_video_lora_sampler_245
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.869
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.99075
+common_nodes: [CLIPVisionLoader, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json, 数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json, 数字人/数字人/Minimax H3 Selflift数字人_2104042672871796737.json, 数字人/数字人/Minimax H3 数字人_2109243580714938369.json, 数字人/数字人/Minimax H3 数字人唱歌MV_2104387863344410625.json, 数字人/数字人/Selflift数字人_2111026652217176065.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2101970168657309697.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2102304757191888898.json]
+members: [视频生成/图生视频/AI数字人-动物_2084929827878031362.json, 视频生成/图生视频/2071856835908427777.json, 视频生成/图生视频/2072507975016738818.json, 视频生成/图生视频/2072619753109278721.json, 视频生成/图生视频/2074016139532918786.json, 视频生成/图生视频/2073956730425401346.json, 视频生成/图生视频/2011076540066439169.json, 视频生成/文生视频/卡通数字人_2086779135497687042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_245
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json、数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json、数字人/数字人/Minimax H3 Selflift数字人_2104042672871796737.json、数字人/数字人/Minimax H3 数字人_2109243580714938369.json、数字人/数字人/Minimax H3 数字人唱歌MV_2104387863344410625.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/AI数字人-动物_2084929827878031362.json、视频生成/图生视频/2071856835908427777.json、视频生成/图生视频/2072507975016738818.json、视频生成/图生视频/2072619753109278721.json、视频生成/图生视频/2074016139532918786.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `CLIPVisionLoader`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyNumberConvert` —— 7/8 个有
-- `PreviewAny` —— 7/8 个有
-- `SoundFlow_GetLength` —— 7/8 个有
-- `TrimAudioDuration` —— 6/8 个有
-- `ModelPreviewOverrideKJ` —— 5/8 个有
-- `QwenH3PromptLocal` —— 2/8 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 2/8 个有
-- `Text Multiline` —— 2/8 个有
-- `EmptyImage` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `Float` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/8 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/8 个有
-- `MuyeTextEditOutput` —— 1/8 个有
-- `PreviewAudio` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `Text` —— 1/8 个有
-- `easy positive` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `Audio Duration` —— 7/8 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `LogicUtil_CeilNode` —— 5/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageScale` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
 
 ## 典型参数
 

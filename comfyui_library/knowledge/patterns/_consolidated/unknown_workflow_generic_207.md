@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_207
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7384
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json, comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json, comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json]
+members: [视频生成/图生视频/2033808877589897217.json, 视频生成/图生视频/2071488575727824898.json, 视频生成/图生视频/2071615448948494337.json, 视频生成/图生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json, 视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json, 视频生成/文生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_207
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json、comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json、comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2033808877589897217.json、视频生成/图生视频/2071488575727824898.json、视频生成/图生视频/2071615448948494337.json、视频生成/图生视频/Seedance2.0-Mini_多模态视频_2072212523230781442.json、视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageCompare`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveImageAdvanced`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `790255fa-100b-4dda-9ab5-e5e1731951db` —— 3/5 个有
-- `bc1c967a-7f6a-4be9-a372-dad16e4f28e3` —— 2/5 个有
+- `LoadVideo` —— 5/6 个有
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 5/6 个有
+- `RH_KlingV30ProMotionControl` —— 1/6 个有
 
 ## 典型参数
 

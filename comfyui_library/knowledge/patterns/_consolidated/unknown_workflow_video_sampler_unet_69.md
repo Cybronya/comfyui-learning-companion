@@ -1,75 +1,66 @@
 ---
 name: unknown_workflow_video_sampler_unet_69
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.716333
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, PathchSageAttentionKJ, PreviewImage, PromptRelayEncode, SamplerCustom, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.91925
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [视频生成/图生视频/2045841411437760514.json, 视频生成/图生视频/2046880656696807426.json, 视频生成/文生视频/prompt_relay_ltx23_2046846063507677186.json]
+members: [视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_69
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2045841411437760514.json、视频生成/图生视频/2046880656696807426.json、视频生成/文生视频/prompt_relay_ltx23_2046846063507677186.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `CLIPLoader`
+- `CR Prompt Text`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PromptRelayEncode`
-- `SamplerCustom`
+- `MathExpression|pysssss`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `GetImageSize` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `ResizeImagesByLongerEdge` —— 1/3 个有
-- `SimpleCalculatorKJ` —— 1/3 个有
-- `StringReplace` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `AudioCrop` —— 3/4 个有
+- `MiniMaxChunkFeedForward` —— 2/4 个有
+- `MiniMaxLowVRAMAttention` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
+- `ModelPreviewOverrideKJ` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `PixaromaLabel` —— 2/4 个有
+- `AudioConcat` —— 1/4 个有
+- `EmptyAudio` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 241 | 241 - 489 | 3 | 64% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,5 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 241 - 489，3 个样本
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

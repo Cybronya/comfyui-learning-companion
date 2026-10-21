@@ -2,64 +2,86 @@
 name: unknown_workflow_video_lora_sampler_221
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.702889
-common_nodes: [AddLabel, DownloadAndLoadHyVideoTextEncoder, EmptyImage, GetImageSizeAndCount, GetNode, HyVideoBlockSwap, HyVideoDecode, HyVideoEncodeKeyframes, HyVideoLoraSelect, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEncode, HyVideoVAELoader, INTConstant, ImageConcatMulti, ImageScale, LoadImage, SetNode, VHS_VideoCombine]
+level: strong
+coverage: 0.776222
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1898786623557947394.json, 视频生成/图生视频/1901229353970057217.json, 视频生成/图生视频/1912693250090594306.json, 视频生成/图生视频/1912569135262330881.json, 视频生成/图生视频/2042055349607337985.json, 视频生成/图生视频/1898632329806434306.json, 视频生成/图生视频/1898873358178537473.json, 视频生成/图生视频/1898536833251233794.json, 视频生成/文生视频/1898757029459382273.json]
+members: [视频生成/图生视频/2071860174570221570.json, 视频生成/图生视频/2072501093262774273.json, 视频生成/图生视频/2071400172424351746.json, 视频生成/图生视频/2072215231262191617.json, 视频生成/图生视频/2072162271043870721.json, 视频生成/图生视频/2072986209936297986.json, 视频生成/图生视频/2073313220749967360.json, 视频生成/图生视频/2073299453481668610.json, 视频生成/图生视频/2071800002871123969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_221
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1898786623557947394.json、视频生成/图生视频/1901229353970057217.json、视频生成/图生视频/1912693250090594306.json、视频生成/图生视频/1912569135262330881.json、视频生成/图生视频/2042055349607337985.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2071860174570221570.json、视频生成/图生视频/2072501093262774273.json、视频生成/图生视频/2071400172424351746.json、视频生成/图生视频/2072215231262191617.json、视频生成/图生视频/2072162271043870721.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AddLabel`
-- `DownloadAndLoadHyVideoTextEncoder`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncodeKeyframes`
-- `HyVideoLoraSelect`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTextEncode`
-- `HyVideoVAELoader`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageScale`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `HyVideoEnhanceAVideo` —— 8/9 个有
-- `HyVideoTorchCompileSettings` —— 8/9 个有
-- `LayerUtility: PurgeVRAM` —— 7/9 个有
-- `ColorMatch` —— 6/9 个有
-- `Note Plus (mtb)` —— 5/9 个有
-- `PreviewImage` —— 5/9 个有
-- `Note _O` —— 4/9 个有
-- `easy cleanGpuUsed` —— 4/9 个有
-- `PMRF` —— 3/9 个有
-- `Primitive string [Crystools]` —— 1/9 个有
-- `TextInput_` —— 1/9 个有
+- `SCAIL2ChunkKeyframeExtractor` —— 8/9 个有
+- `SCAIL2KeyframeMatrixViewer` —— 8/9 个有
+- `GetImageSize` —— 7/9 个有
+- `ImageConcatMulti` —— 7/9 个有
+- `MaskToImage` —— 7/9 个有
+- `PreviewImage` —— 7/9 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 7/9 个有
+- `SCAIL2FaceCompositeBack` —— 7/9 个有
+- `SCAIL2HeadTrackCrop` —— 7/9 个有
+- `CR Text` —— 5/9 个有
+- `Int` —— 5/9 个有
+- `SimpleMath+` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
+- `GetNode` —— 3/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/9 个有
+- `RH_RhartImageG2ImageToImage` —— 3/9 个有
+- `SaveImage` —— 3/9 个有
+- `SetNode` —— 3/9 个有
+- `TTResolutionSelector` —— 3/9 个有
+- `CreateVideo` —— 2/9 个有
+- `FlashVSR_SM_KSampler` —— 2/9 个有
+- `FlashVSR_SM_Model` —— 2/9 个有
+- `SaveVideo` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `WanAnimatePlus LoraSelectMulti` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.34378e+09 | - | 2 | 82% |
+| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
+| 采样算法 | 2 | - | 2 | 100% |
+| 调度器 | 3.5 | - | 2 | 100% |
+| 重绘幅度 | 11 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -67,4 +89,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.34378e+09，样本不足，未给区间，2 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.59208e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

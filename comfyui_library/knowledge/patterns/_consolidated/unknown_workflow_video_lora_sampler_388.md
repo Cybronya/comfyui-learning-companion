@@ -3,56 +3,63 @@ name: unknown_workflow_video_lora_sampler_388
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.658833
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.712
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CFGGuider, CLIPTextEncode, ComfySwitchNodeV2, EmptyMiniMaxH3LatentAV, Fast Groups Bypasser (rgthree), FeiHouEasyH3RH, FeiHouEasyH3RHDurationCrop, FeiHouEasyH3RHFaceRefine, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHOutput, FeiHouEasyH3RHPromptPreview, FeiHouEasyH3RHRemixLoader, FeiHouEasyH3RHResolution, GetNode, ImageResizeKJv2, ImpactImageInfo, KSamplerSelect, LoadImage, MiniMaxH3AddGuide, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RHSettingsNode, RandomSeedNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/基础 H3工作流-参考图逻辑判断版_2101186866648276994.json, 视频生成/图生视频/多参考视频MINIMAX-H3工作流_2089733467306283009.json, 视频生成/图生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086780909889613825.json, 视频生成/图生视频/智能体专用版MinimaxH3开源版-全能多参支持视频参考-加速版_2095034413850644482.json, 视频生成/图生视频/自动化高质量多参视频流_2087788893096734722.json, 视频生成/文生视频/H3基础文生视频工作流_2101289589221715969.json]
+members: [视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json, 视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2101863503865929729.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2101223899563380737.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2110561566671331329.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2111005524354490369.json, 视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_388
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/基础 H3工作流-参考图逻辑判断版_2101186866648276994.json、视频生成/图生视频/多参考视频MINIMAX-H3工作流_2089733467306283009.json、视频生成/图生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086780909889613825.json、视频生成/图生视频/智能体专用版MinimaxH3开源版-全能多参支持视频参考-加速版_2095034413850644482.json、视频生成/图生视频/自动化高质量多参视频流_2087788893096734722.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json、视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2101863503865929729.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2101223899563380737.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2110561566671331329.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2111005524354490369.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `ComfySwitchNodeV2`
+- `EmptyMiniMaxH3LatentAV`
+- `Fast Groups Bypasser (rgthree)`
+- `FeiHouEasyH3RH`
+- `FeiHouEasyH3RHDurationCrop`
+- `FeiHouEasyH3RHFaceRefine`
+- `FeiHouEasyH3RHLoraStack`
+- `FeiHouEasyH3RHOutput`
+- `FeiHouEasyH3RHPromptPreview`
+- `FeiHouEasyH3RHRemixLoader`
+- `FeiHouEasyH3RHResolution`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImpactImageInfo`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RHSettingsNode`
+- `RandomSeedNoise`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `SetNode`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `LoadAudio` —— 4/6 个有
-- `VHS_LoadVideo` —— 3/6 个有
-- `GetNode` —— 2/6 个有
-- `ModelPreviewOverrideKJ` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `ComfySwitchNode` —— 1/6 个有
-- `MemoryCleaner` —— 1/6 个有
-- `PreviewAny` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `WujiCleaner` —— 1/6 个有
-- `XB_ROCmMemCleaner` —— 1/6 个有
+- `Label (rgthree)` —— 4/6 个有
+- `EmptyImage` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,64 +3,83 @@ name: unknown_workflow_video_lora_sampler_682
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.823333
-common_nodes: [BerniniStudio, CLIPLoader, CLIPTextEncode, GetNode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, RH_Captioner, SetNode, Text, TextConcatenate_UTK, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.889667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CreateCFGScheduleFloatList, Fast Bypasser (rgthree), GetNode, ImageResizeKJv2, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, Primitive integer [Crystools], RHHiddenNodes, RIFE VFI, SetNode, SimpleMath+, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy getNode, easy setNode, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/2074655037963460609.json, 视频生成/图生视频/2074532825533075457.json, 视频生成/图生视频/2074550169936420866.json]
+members: [视频生成/图生视频/2028753060067020801.json, 视频生成/图生视频/1997167105533480961.json, 视频生成/图生视频/1990714282465779714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_682
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2074655037963460609.json、视频生成/图生视频/2074532825533075457.json、视频生成/图生视频/2074550169936420866.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2028753060067020801.json、视频生成/图生视频/1997167105533480961.json、视频生成/图生视频/1990714282465779714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BerniniStudio`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `Fast Bypasser (rgthree)`
 - `GetNode`
-- `KSamplerAdvanced`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `Mute / Bypass Repeater (rgthree)`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RH_Captioner`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RIFE VFI`
 - `SetNode`
-- `Text`
-- `TextConcatenate_UTK`
+- `SimpleMath+`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanImageToVideo`
+- `WanMoeKSampler`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy getNode`
+- `easy setNode`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `FlashVSR_SM_KSampler` —— 2/3 个有
-- `FlashVSR_SM_Model` —— 2/3 个有
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `GoogleTranslator` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `GoogleTranslateTextNode` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1.05822e+09 | - | 2 | 92% |
-| Prompt 约束强度(CFG) | randomize | - | 3 | 67% |
-| 采样算法 | 2 | 1 - 2 | 3 | 72% |
-| 调度器 | 3.5 | - | 2 | 100% |
-| 重绘幅度 | 11 | - | 2 | 100% |
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | 1 | 1 - 1 | 3 | 100% |
+| 重绘幅度 | euler_ancestral | - | 3 | 100% |
 
 ## 常见问题
 
@@ -68,10 +87,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.05822e+09，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 67%
-- 采样算法 中位数 2，观测区间 1 - 2，3 个样本
-- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.14318e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler_ancestral，3 个样本，一致性 100%

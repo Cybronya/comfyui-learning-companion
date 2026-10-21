@@ -2,64 +2,71 @@
 name: unknown_workflow_video_lora_sampler_376
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.817833
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.473
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [MathExpression|pysssss, Primitive integer [Crystools], Text Multiline, easy anythingIndexSwitch]
-members: [视频生成/图生视频/1989534940729626625.json, 视频生成/图生视频/1989309256367304706.json, 视频生成/图生视频/1950590406721490945.json, 视频生成/文生视频/1971495513445089282.json, 视频生成/文生视频/1950544574634708994.json, 视频生成/文生视频/1950433801442910210.json]
+missing: []
+members: [视频生成/图生视频/1988481610276323329.json, 视频生成/图生视频/1987819748182396929.json, 视频生成/图生视频/1988567771254579202.json, 视频生成/图生视频/1987191585169453057.json, 视频生成/图生视频/2011733044515835905.json, 视频生成/图生视频/2014746421920014337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_376
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1989534940729626625.json、视频生成/图生视频/1989309256367304706.json、视频生成/图生视频/1950590406721490945.json、视频生成/文生视频/1971495513445089282.json、视频生成/文生视频/1950544574634708994.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1988481610276323329.json、视频生成/图生视频/1987819748182396929.json、视频生成/图生视频/1988567771254579202.json、视频生成/图生视频/1987191585169453057.json、视频生成/图生视频/2011733044515835905.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **可信度**：强结论
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `Text Multiline`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 5/6 个有
-- `StringReplace` —— 5/6 个有
-- `easy anythingIndexSwitch` —— 5/6 个有
-- `easy showAnything` —— 5/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `WanVideoImageToVideoEncode` —— 4/6 个有
-- `GetNode` —— 2/6 个有
-- `ImageConcatMulti` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `WanVideoEmptyEmbeds` —— 2/6 个有
-- `CR Upscale Image` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `CFGZeroStar` —— 4/6 个有
+- `WanFirstMiddleLastFrameToVideo` —— 4/6 个有
+- `WanVideoNAG` —— 4/6 个有
+- `INTConstant` —— 3/6 个有
+- `FloatConstant` —— 2/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `WanImageToVideo` —— 2/6 个有
+- `Int` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `WanFirstLastFrameToVideo` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
+- `wanBlockSwap` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 6 | 87% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 67% |
+| 重绘幅度 | simple | - | 6 | 67% |
 
 ## 常见问题
 
@@ -67,4 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、Primitive integer [Crystools]、Text Multiline、easy anythingIndexSwitch
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，6 个样本，取值集中（一致性 87%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 67%
+- 重绘幅度 最常用 simple，6 个样本，一致性 67%

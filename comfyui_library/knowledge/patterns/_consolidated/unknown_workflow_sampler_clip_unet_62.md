@@ -1,70 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_62
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.8785
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
-missing: [StringFunction|pysssss, ttN concat, LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1912174132275150850.json, 图片生成/文生图/1913620524503891969.json, 图片生成/文生图/1920133263510142977.json, 图片生成/文生图/1967227108663627778.json]
+frequency: 9
+level: weak
+coverage: 0.812556
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: [SDXL Resolutions (JPS)]
+members: [图片生成/文生图/1971904444222926850.json, 图片生成/文生图/Z-IMAGE文生图_2017069432048193538.json, 图片生成/文生图/Z-Image Turbo 文生图_2012561031096176642.json, 图片生成/文生图/Z-Image Turbo 文生图_2013174546978836481.json, 图片生成/文生图/Z-Image-BEYOND REALITY SUPER Z IMAGE 3.0 淡妆浓抹_2018826875602214914.json, 图片生成/文生图/Z-Image-Base - 文生图 官方基础版_2016349336380121090.json, 图片生成/文生图/Z-Image-Base-Text to Image_2016308651929116673.json, 图片生成/文生图/Z-Image-Base文生图-自然美学v260128_2016358691083128834.json, 图片生成/文生图/文生图对比Z-Image-bf16 res vs bf16 euler vs turbo_2016748618899787777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_62
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1912174132275150850.json、图片生成/文生图/1913620524503891969.json、图片生成/文生图/1920133263510142977.json、图片生成/文生图/1967227108663627778.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1971904444222926850.json、图片生成/文生图/Z-IMAGE文生图_2017069432048193538.json、图片生成/文生图/Z-Image Turbo 文生图_2012561031096176642.json、图片生成/文生图/Z-Image Turbo 文生图_2013174546978836481.json、图片生成/文生图/Z-Image-BEYOND REALITY SUPER Z IMAGE 3.0 淡妆浓抹_2018826875602214914.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 3/4 个有
-- `EmptyLatentImage` —— 2/4 个有
-- `EmptySD3LatentImage` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `Joy_caption` —— 2/4 个有
-- `Joy_caption_load` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `Bjornulf_FreeVRAM` —— 1/4 个有
-- `Bjornulf_ShowStringText` —— 1/4 个有
-- `EG_FX_BDAPI` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `ModelSamplingFlux` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `ttN concat` —— 1/4 个有
+- `EmptySD3LatentImage` —— 8/9 个有
+- `SDXL Resolutions (JPS)` —— 4/9 个有
+- `ConditioningZeroOut` —— 3/9 个有
+- `easy cleanGpuUsed` —— 3/9 个有
+- `LayerUtility: ImageReel` —— 2/9 个有
+- `LayerUtility: ImageReelComposit` —— 2/9 个有
+- `EmptyChromaRadianceLatentImage` —— 1/9 个有
+- `LoadImage` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `T5TokenizerOptions` —— 1/9 个有
+- `easy seed` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 924 | - | 2 | 83% |
-| 高度 | 1472 | - | 2 | 70% |
+| 采样步数 | 10 | 4 - 50 | 9 | 19% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 9 | 36% |
+| 采样算法 | euler | - | 9 | 78% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 924，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高度 中位数 1472，样本不足，未给区间，2 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：StringFunction|pysssss、ttN concat、LayerUtility: ImageScaleByAspectRatio V2
+- 采样步数 中位数 10，观测区间 4 - 50，9 个样本，取值分散，一致性仅 19%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，9 个样本，取值分散，一致性仅 36%
+- 采样算法 最常用 euler，9 个样本，一致性 78%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：SDXL Resolutions (JPS)

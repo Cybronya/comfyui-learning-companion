@@ -3,54 +3,53 @@ name: unknown_workflow_video_sampler_clip_171
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.529333
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJv2, KSamplerSelect, LoadImage, ModelSamplingSD3, SamplerCustom, SetNode, TrimVideoLatent, VAEDecodeTiled, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimate2ToVideo, WanContextWindowsManual]
+coverage: 0.880667
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DualCLIPLoader, FramePackFindNearestBucket, FramePackSampler, ImageResize+, LoadFramePackModel, LoadImage, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/CG迷-Wan-Animate-2工作流_2086749147369136130.json, 视频生成/图生视频/Wan Antimate 2动作迁移+全节点注释_2086650842647711746.json, 视频生成/图生视频/Wan-Antimate-2 动作迁移 长视频_2085941636684664834.json]
+members: [视频生成/图生视频/2005639077577846785.json, 视频生成/图生视频/1952976283438411778.json, 视频生成/图生视频/1933133286371958785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_171
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/CG迷-Wan-Animate-2工作流_2086749147369136130.json、视频生成/图生视频/Wan Antimate 2动作迁移+全节点注释_2086650842647711746.json、视频生成/图生视频/Wan-Antimate-2 动作迁移 长视频_2085941636684664834.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2005639077577846785.json、视频生成/图生视频/1952976283438411778.json、视频生成/图生视频/1933133286371958785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FramePackFindNearestBucket`
+- `FramePackSampler`
+- `ImageResize+`
+- `LoadFramePackModel`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `SamplerCustom`
-- `SetNode`
-- `TrimVideoLatent`
 - `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimate2ToVideo`
-- `WanContextWindowsManual`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `VideoInfoLoaded` —— 2/3 个有
-- `CR Value` —— 1/3 个有
-- `ComfyMathExpression` —— 1/3 个有
-- `DiffusionModelLoaderKJ` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `FramePackTorchCompileSettings` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageUpscaleWithModelBatched` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `StringConstantMultiline` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 

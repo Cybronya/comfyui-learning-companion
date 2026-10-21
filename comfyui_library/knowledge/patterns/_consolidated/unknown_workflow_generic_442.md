@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_442
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.916667
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.975
+common_nodes: [CR Prompt Text, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 全能视频_2085637559983628290.json, 视频生成/图生视频/2038488616279740418.json, 视频生成/文生视频/Seedance2.0多参视频生成（满血版）_2062052858404630530.json]
+members: [音频生成/音频生成/FireRedTTS2单人语音克隆话V2_1968563779053203458.json, 音频生成/音频生成/FireRedTTS2双人对话_1968559570912202754.json, 音频生成/音频生成/FireRedTTS2双人对话_1968618171978665986.json, 音频生成/音频生成/FireRedTTS2电商数字人语音V1_1970430610412105730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_442
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 全能视频_2085637559983628290.json、视频生成/图生视频/2038488616279740418.json、视频生成/文生视频/Seedance2.0多参视频生成（满血版）_2062052858404630530.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FireRedTTS2单人语音克隆话V2_1968563779053203458.json、音频生成/音频生成/FireRedTTS2双人对话_1968559570912202754.json、音频生成/音频生成/FireRedTTS2双人对话_1968618171978665986.json、音频生成/音频生成/FireRedTTS2电商数字人语音V1_1970430610412105730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `RH_ViduReferenceToVideoQ2Pro` —— 1/3 个有
+- `FireRedTTS2_Dialogue` —— 3/4 个有
+- `FireRedTTS2MonologueNode` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

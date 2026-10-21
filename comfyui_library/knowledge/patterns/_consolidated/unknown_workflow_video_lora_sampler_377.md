@@ -3,70 +3,86 @@ name: unknown_workflow_video_lora_sampler_377
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.473
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.944667
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1988481610276323329.json, 视频生成/图生视频/1987819748182396929.json, 视频生成/图生视频/1988567771254579202.json, 视频生成/图生视频/1987191585169453057.json, 视频生成/图生视频/2011733044515835905.json, 视频生成/图生视频/2014746421920014337.json]
+members: [视频生成/图生视频/2034652282570153986.json, 视频生成/图生视频/2031229701166993409.json, 视频生成/图生视频/2036741088412700673.json, 视频生成/图生视频/2075032295114895362.json, 视频生成/图生视频/2032494068420317186.json, 视频生成/图生视频/2030439938361135105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_377
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1988481610276323329.json、视频生成/图生视频/1987819748182396929.json、视频生成/图生视频/1988567771254579202.json、视频生成/图生视频/1987191585169453057.json、视频生成/图生视频/2011733044515835905.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2034652282570153986.json、视频生成/图生视频/2031229701166993409.json、视频生成/图生视频/2036741088412700673.json、视频生成/图生视频/2075032295114895362.json、视频生成/图生视频/2032494068420317186.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PrimitiveBoolean`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGZeroStar` —— 4/6 个有
-- `WanFirstMiddleLastFrameToVideo` —— 4/6 个有
-- `WanVideoNAG` —— 4/6 个有
-- `INTConstant` —— 3/6 个有
-- `FloatConstant` —— 2/6 个有
-- `Label (rgthree)` —— 2/6 个有
-- `LayerUtility: PurgeVRAM` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `WanImageToVideo` —— 2/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `Seed (rgthree)` —— 4/6 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/6 个有
+- `RH_LLMAPI_Pro_Node` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `JWInteger` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `DF_Int_to_Float` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImpactInt` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
 - `Int` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `WanFirstLastFrameToVideo` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
-- `wanBlockSwap` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LatentUpscaleModelLoader` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
+- `ResizeImageMaskNode` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `ShowText` —— 1/6 个有
+- `TextBox` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 67% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 6 | 87% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 67% |
-| 重绘幅度 | simple | - | 6 | 67% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -74,8 +90,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，6 个样本，取值集中（一致性 87%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 67%
-- 重绘幅度 最常用 simple，6 个样本，一致性 67%
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

@@ -2,104 +2,72 @@
 name: unknown_workflow_video_upscale_latent_upscale_50
 type: Unknown Workflow
 frequency: 8
-level: weak
-coverage: 0.492625
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+level: strong
+coverage: 0.948
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CR Text, CreateVideo, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, Int, KSamplerSelect, LTX2_NAG, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PIP_IntegerCalculator, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VRAMReserver, easy cleanGpuUsed, easy convertAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059165088854138882.json, 视频生成/图生视频/2055514596210946049.json, 视频生成/图生视频/2055556105299873793.json, 视频生成/图生视频/2050871854566518786.json, 视频生成/图生视频/2036654957595725826.json, 视频生成/图生视频/LTX-2一键稳定生成数字人制作表情口型同步视频对口型对嘴型音频图片生成数字人视频_2014350317235736578.json, 视频生成/图生视频/2013887364019527681.json, 视频生成/文生视频/Ltx-2蒸馏对口型_2018224320958439425.json]
+members: [视频生成/图生视频/2072859139281342465.json, 视频生成/文生视频/LTX2.3文生视频_2072522403787399169.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2065674485692461057.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2066698425961369602.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2071506679061106690.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2071853403160014850.json, 视频生成/文生视频/LTX2.3文生视频【切镜头优化版】_2066428134618124289.json, 视频生成/文生视频/LTX2.3文生视频【根据时间写剧情】_2067564577201672194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_50
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2059165088854138882.json、视频生成/图生视频/2055514596210946049.json、视频生成/图生视频/2055556105299873793.json、视频生成/图生视频/2050871854566518786.json、视频生成/图生视频/2036654957595725826.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2072859139281342465.json、视频生成/文生视频/LTX2.3文生视频_2072522403787399169.json、视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2065674485692461057.json、视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2066698425961369602.json、视频生成/文生视频/LTX2.3文生视频【切镜头优化版4】_2071506679061106690.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CR Text`
+- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
-- `GetNode`
-- `INTConstant`
+- `GetImageSize`
+- `ImageScaleBy`
+- `Int`
 - `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadImage`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `PIP_IntegerCalculator`
 - `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecodeTiled`
-- `VAELoader`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 7/8 个有
-- `ImageResizeKJv2` —— 7/8 个有
-- `LTXVImgToVideoInplace` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `DualCLIPLoader` —— 6/8 个有
-- `SimpleCalculatorKJ` —— 6/8 个有
-- `LTX2_NAG` —— 5/8 个有
-- `ImageScaleBy` —— 4/8 个有
-- `LTX2SamplingPreviewOverride` —— 4/8 个有
-- `LTXVAudioVAEEncode` —— 4/8 个有
-- `LoadAudio` —— 4/8 个有
-- `MelBandRoFormerModelLoader` —— 4/8 个有
-- `MelBandRoFormerSampler` —— 4/8 个有
-- `PathchSageAttentionKJ` —— 4/8 个有
-- `ResizeImageMaskNode` —— 4/8 个有
-- `SetLatentNoiseMask` —— 4/8 个有
-- `SimpleMath+` —— 4/8 个有
-- `SolidMask` —— 4/8 个有
-- `TrimAudioDuration` —— 4/8 个有
-- `ComfySwitchNode` —— 3/8 个有
-- `DualCLIPLoaderGGUF` —— 3/8 个有
-- `UnetLoaderGGUF` —— 3/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `LTX2AudioLatentNormalizingSampling` —— 2/8 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/8 个有
-- `PromptRelayEncodeTimeline` —— 2/8 个有
-- `Audio Duration (mtb)` —— 1/8 个有
-- `AudioInfo` —— 1/8 个有
-- `ComfyMathExpression` —— 1/8 个有
-- `Context (rgthree)` —— 1/8 个有
-- `Context Switch (rgthree)` —— 1/8 个有
-- `JWFloatToInteger` —— 1/8 个有
-- `LTX2AttentionTunerPatch` —— 1/8 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 1/8 个有
-- `LTXVAddGuideMulti` —— 1/8 个有
-- `LTXVCropGuides` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `ModelPatchTorchSettings` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `VRAMReserver`
+- `easy cleanGpuUsed`
+- `easy convertAnything`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | 97 - 721 | 8 | 4% |
-| 高度 | 25 | 24 - 25 | 8 | 99% |
+| 宽度 | 121 | 121 - 121 | 8 | 100% |
+| 高度 | 25 | 25 - 25 | 8 | 100% |
 
 ## 常见问题
 
@@ -107,5 +75,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 97 - 721，8 个样本，取值分散，一致性仅 4%
-- 高度 中位数 25，观测区间 24 - 25，8 个样本，取值集中（一致性 99%）
+- 宽度 中位数 121，观测区间 121 - 121，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）

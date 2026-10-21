@@ -3,66 +3,69 @@ name: unknown_workflow_video_lora_sampler_916
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.452
-common_nodes: [AIO_Preprocessor, ApplyFaceProcessor, FaceProcessorLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImpactSwitch, Int, LoadImage, LoadWanVideoT5TextEncoder, Manual XY Entry Info, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.652
+common_nodes: [Any Switch (rgthree), AudioSeparation, CLIPVisionLoader, CR String To Number, CR Text, DownloadAndLoadWav2VecModel, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SetNode, SparkTTSClone, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949622272819646465.json, 视频生成/图生视频/1967303690803666945.json]
+members: [视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json, 音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_916
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949622272819646465.json、视频生成/图生视频/1967303690803666945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json、音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
+- `Any Switch (rgthree)`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR String To Number`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Muter (rgthree)`
 - `GetImageSizeAndCount`
 - `GetNode`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
 - `Int`
+- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Manual XY Entry Info`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SaveAudio`
 - `SetNode`
-- `VHS_LoadVideo`
+- `SparkTTSClone`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
 - `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `CreateCFGScheduleFloatList` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `VHS_DuplicateImages` —— 1/2 个有
-- `WanVideoTextEncode` —— 1/2 个有
-- `WanVideoTextEncodeSingle` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CR Integer To String` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `IndexTTS2Run` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `Random Number` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

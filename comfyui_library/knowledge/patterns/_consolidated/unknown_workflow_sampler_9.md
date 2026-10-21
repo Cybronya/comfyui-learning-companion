@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_sampler_9
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9118
-common_nodes: [AudioConcat, EmptyAudio, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
+coverage: 1
+common_nodes: [LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/2027554481096892418.json, 视频生成/图生视频/2027090582182567937.json, 视频生成/图生视频/2027563123820994562.json, 视频生成/图生视频/2029234850993016833.json, 视频生成/图生视频/2029413413356572674.json]
+members: [音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json, 音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json, 音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json, 音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS极速版_1969791131460530178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2027554481096892418.json、视频生成/图生视频/2027090582182567937.json、视频生成/图生视频/2027563123820994562.json、视频生成/图生视频/2029234850993016833.json、视频生成/图生视频/2029413413356572674.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json、音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json、音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json、音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioConcat`
-- `EmptyAudio`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 6 个 workflow 都包含：
 - `LoadAudio`
-- `LoadImage`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
-- `SaveVideo`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 3/5 个有
-- `SaveAudio` —— 2/5 个有
+- `IndexTTSRun` —— 3/6 个有
+- `NTCosyVoiceInstruct2Sampler` —— 3/6 个有
+- `PreviewAudio` —— 1/6 个有
 
 ## 典型参数
 

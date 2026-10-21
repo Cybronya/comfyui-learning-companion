@@ -3,31 +3,29 @@ name: unknown_workflow_generic_896
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [LoadAudio, RHHiddenNodes, SaveAudioMP3, Text, easy showAnything]
+coverage: 0.75
+common_nodes: [SaveVideo, workflow>参数设置组, workflow>工作组]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2059684746359300097.json, 音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2086629513726877698.json]
+members: [视频生成/文生视频/MiniMax H3 -文生视频-封装版-专业打斗_2089390108935020546.json, 视频生成/文生视频/MiniMax H3 -文生视频-封装版-驯龙骑士_2089375960251592706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_896
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2059684746359300097.json、音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2086629513726877698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 -文生视频-封装版-专业打斗_2089390108935020546.json、视频生成/文生视频/MiniMax H3 -文生视频-封装版-驯龙骑士_2089375960251592706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RHHiddenNodes`
-- `SaveAudioMP3`
-- `Text`
-- `easy showAnything`
+- `SaveVideo`
+- `workflow>参数设置组`
+- `workflow>工作组`
 
 ## 典型参数
 

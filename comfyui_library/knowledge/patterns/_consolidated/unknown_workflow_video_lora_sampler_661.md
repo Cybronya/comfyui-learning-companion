@@ -2,89 +2,72 @@
 name: unknown_workflow_video_lora_sampler_661
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.535667
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, DisableNoise, Fast Groups Bypasser (rgthree), ForLoopClose, ForLoopOpen, GetNode, ImageBatchExtendWithOverlap, ImpactInt, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RIFEInterpolation, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, SetNode, SomethingToString, SplitSigmas, String Replace (mtb), UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_GetImageCount, VHS_VideoCombine, WanImageToVideoSVIPro, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
+level: strong
+coverage: 0.781667
+common_nodes: [CLIPLoader, CLIPTextEncode, Compare, GetImageSize, GetNode, ImageResize+, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RHHiddenNodes, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_Unbatch, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, easy batchAnything, easy cleanGpuUsed, easy ifElse, easy imageListToImageBatch, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/2048784808272207873.json, 视频生成/图生视频/2041333413067628545.json, 视频生成/文生视频/wan2.2无限文视频工作流_2042218145586356225.json]
+members: [视频生成/图生视频/1989325404936826881.json, 视频生成/图生视频/1989305168229486593.json, 视频生成/图生视频/1988497511591665666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_661
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2048784808272207873.json、视频生成/图生视频/2041333413067628545.json、视频生成/文生视频/wan2.2无限文视频工作流_2042218145586356225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1989325404936826881.json、视频生成/图生视频/1989305168229486593.json、视频生成/图生视频/1988497511591665666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DisableNoise`
-- `Fast Groups Bypasser (rgthree)`
-- `ForLoopClose`
-- `ForLoopOpen`
+- `Compare`
+- `GetImageSize`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImpactInt`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResize+`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RIFEInterpolation`
-- `RTXVideoSuperResolution`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `ScheduledCFGGuidance`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `SetNode`
-- `SomethingToString`
-- `SplitSigmas`
-- `String Replace (mtb)`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `VHS_GetImageCount`
+- `VHS_Unbatch`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `easy promptLine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `WanFirstMiddleLastFrameToVideo`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy imageListToImageBatch`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `PainterVRAM` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `UnloadModel` —— 2/3 个有
-- `DuckHideNode` —— 1/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `KSampler` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `ColorMatch` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `RH_Nano_Banana_Image2Image` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -92,4 +75,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

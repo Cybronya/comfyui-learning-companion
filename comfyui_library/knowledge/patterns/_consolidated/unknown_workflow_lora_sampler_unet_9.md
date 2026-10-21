@@ -1,68 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_unet_9
 type: Unknown Workflow
-frequency: 11
-level: strong
-coverage: 0.871545
-common_nodes: [CFGNorm, CLIPLoader, CR Text, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, ProcessString, RH_LLMAPI_NODE, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text]
-members: [图片生成/图生图/2100881020475240450.json, 图片生成/图生图/2102079328715628545.json, 图片生成/图生图/2102095048337879041.json, 图片生成/图生图/2102284370366259202.json, 图片生成/图生图/2102291103130152961.json, 图片生成/图生图/2102301014081753090.json, 图片生成/图生图/2102436707214909442.json, 图片生成/图生图/2102445394839031809.json, 数字人/数字人/分镜 自动分镜  短剧分镜 漫剧分镜_优化版本_2095891748332597250.json, 视频生成/图生视频/2067686821718482945.json, 视频生成/图生视频/2065728809785188353.json]
+frequency: 12
+level: moderate
+coverage: 0.847667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
+missing: []
+members: [视频生成/图生视频/10Eros-Max 8步极速4视图生视频 v2.0_2087352692522962945.json, 视频生成/图生视频/260813001.Minimax-H3多图参考生视频_2088059548048379905.json, 视频生成/图生视频/MiniMax H3 REF2VA-全能参考生视频-(8步加速-768P)-V1_2085290521219649538.json, 视频生成/图生视频/MiniMax H3 多参输入生视频_2085272663802605570.json, 视频生成/图生视频/MiniMax-图生视频-8步加速_2086020257013133313.json, 视频生成/图生视频/MiniMaxH3 图生视频！加速版！_2092799565484351490.json, 视频生成/图生视频/Minimax H3参考生视频-电商带货-8步加速版_2107686836549279745.json, 视频生成/图生视频/Minimax H3参考生视频-电商带货-8步加速版_2109966408665878530.json, 视频生成/图生视频/Minimax-H3-8步加速-多参考生视频（平均3.5分钟出5秒）_2085387387793928194.json, 视频生成/图生视频/多图参考生成视频_2093669173456105473.json, 视频生成/文生视频/🍲Minimax-H3多模态参考4步加速极限双优版🍲_2086661468988198913.json, 视频生成/文生视频/🍲Minimax-H3提示词自动优化+4步加速极限双优版🍲_2086652281939914753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/2100881020475240450.json、图片生成/图生图/2102079328715628545.json、图片生成/图生图/2102095048337879041.json、图片生成/图生图/2102284370366259202.json、图片生成/图生图/2102291103130152961.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/10Eros-Max 8步极速4视图生视频 v2.0_2087352692522962945.json、视频生成/图生视频/260813001.Minimax-H3多图参考生视频_2088059548048379905.json、视频生成/图生视频/MiniMax H3 REF2VA-全能参考生视频-(8步加速-768P)-V1_2085290521219649538.json、视频生成/图生视频/MiniMax H3 多参输入生视频_2085272663802605570.json、视频生成/图生视频/MiniMax-图生视频-8步加速_2086020257013133313.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CFGNorm`
+全部 12 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `JDCN_StringToList`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `ProcessString`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/12 个有
+- `ResolutionSelector` —— 11/12 个有
+- `PathchSageAttentionKJ` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 7/12 个有
+- `孤海注释` —— 5/12 个有
+- `easy int` —— 4/12 个有
+- `Seed (rgthree)` —— 3/12 个有
+- `Text` —— 3/12 个有
+- `easy convertAnything` —— 3/12 个有
+- `Note Plus (mtb)` —— 2/12 个有
+- `DapaoH3PromptBoxNode` —— 1/12 个有
+- `DapaoH3VideoPromptNode` —— 1/12 个有
+- `ImageScaleToTotalPixels` —— 1/12 个有
+- `JjkText` —— 1/12 个有
+- `LoadAudio` —— 1/12 个有
+- `MiniMaxH3AVDecodeT8` —— 1/12 个有
+- `MmuuaiGroupBypass` —— 1/12 个有
+- `PrimitiveInt` —— 1/12 个有
+- `PrimitiveString` —— 1/12 个有
+- `SaveLatent` —— 1/12 个有
+- `VHS_LoadVideo` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 11 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | er_sde | - | 11 | 100% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，11 个样本，一致性 100%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

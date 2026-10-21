@@ -3,39 +3,33 @@ name: unknown_workflow_video_113
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.941
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Int, MathExpression_UTK, RH_Sora2_T2V_Batch, RIFE VFI, SaveVideo, SeedVR2, SeedVR2BlockSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
+coverage: 0.8
+common_nodes: [GetVideoComponents, JjkText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能S2文生视频合集 批量视频高速10个合并生成超长视频 视频高清放大+补帧 SeedVR2.5.1_2022934225044905986.json, 视频生成/文生视频/批量视频生成  全能S2文生视频合集 高速10个合并生成超长视频 SeedVR2.5.1 视频高清放_2022937587438067714.json]
+members: [视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json, 视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_113
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能S2文生视频合集 批量视频高速10个合并生成超长视频 视频高清放大+补帧 SeedVR2.5.1_2022934225044905986.json、视频生成/文生视频/批量视频生成  全能S2文生视频合集 高速10个合并生成超长视频 SeedVR2.5.1 视频高清放_2022937587438067714.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json、视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Int`
-- `MathExpression_UTK`
-- `RH_Sora2_T2V_Batch`
-- `RIFE VFI`
-- `SaveVideo`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `VHS_LoadVideo`
+- `GetVideoComponents`
+- `JjkText`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartVideoGOfficialTextToVideo` —— 1/2 个有
+- `RH_RhartVideoGTextToVideo` —— 1/2 个有
 
 ## 典型参数
 

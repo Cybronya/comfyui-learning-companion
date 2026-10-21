@@ -3,44 +3,33 @@ name: unknown_workflow_generic_265
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9866
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, HeartMuLa_Transcribe, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, SaveAudioMP3]
+coverage: 0.7034
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 多功能配音工具_2017199745453789186.json, 音频生成/音频生成/Qwen3 TTS配音自由，一键实现剧情对话、多人对话+声音克隆+声音设计_1953194744458506242.json, 音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2053368851294896130.json, 音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2068528520090963969.json, 音频生成/音频生成/👾怪獸-Qwen3 TTS多人对话+声音克隆+声音设计👾_2058092957093416961.json]
+members: [图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json, 图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json, 图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json, 图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json, 图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_265
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 多功能配音工具_2017199745453789186.json、音频生成/音频生成/Qwen3 TTS配音自由，一键实现剧情对话、多人对话+声音克隆+声音设计_1953194744458506242.json、音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2053368851294896130.json、音频生成/音频生成/Qwen3 TTS配音自由，多人对话+声音克隆+声音设计_2068528520090963969.json、音频生成/音频生成/👾怪獸-Qwen3 TTS多人对话+声音克隆+声音设计👾_2058092957093416961.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json、图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json、图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json、图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json、图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `TextBox` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `JjkText` —— 4/5 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/5 个有
+- `RHLLMChatNode` —— 3/5 个有
+- `RH_RhartImageG2TextToImage` —— 2/5 个有
 
 ## 典型参数
 

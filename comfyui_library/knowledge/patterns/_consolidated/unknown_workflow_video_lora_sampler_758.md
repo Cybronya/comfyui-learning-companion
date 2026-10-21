@@ -3,75 +3,57 @@ name: unknown_workflow_video_lora_sampler_758
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5
-common_nodes: [Any Switch (rgthree), Anything Everywhere, AudioSeparation, CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LoadImage, LoadImageListFromDir //Inspire, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Mute / Bypass Repeater (rgthree), PreviewAudio, PreviewImage, PrimitiveFloat, SetNode, TextInput_, TrimAudioDuration, VHS_LoadAudioUpload, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy isNone, easy seed, easy showAnything]
+coverage: 0.9695
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, Frames Slice, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SoundFlow_GetLength, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2028492446719545346.json, 视频生成/图生视频/2000716682731679746.json]
+members: [视频生成/图生视频/1990595971572785153.json, 视频生成/图生视频/1990339469129732098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_758
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2028492446719545346.json、视频生成/图生视频/2000716682731679746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1990595971572785153.json、视频生成/图生视频/1990339469129732098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Anything Everywhere`
 - `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Batch Images From List`
+- `CR Prompt Text`
 - `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageListToBatch+`
-- `ImageResizeKJv2`
-- `InfiniteTalkEmbedsSlice`
-- `InfiniteTalkMultiImage`
+- `Frames Slice`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadImageListFromDir //Inspire`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `TextInput_`
-- `TrimAudioDuration`
-- `VHS_LoadAudioUpload`
+- `SoundFlow_GetLength`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoDecode`
 - `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy isNone`
-- `easy seed`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadLynxResampler` —— 1/2 个有
+- `LynxEncodeFaceIP` —— 1/2 个有
+- `LynxInsightFaceCrop` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `WanVideoAddLynxEmbeds` —— 1/2 个有
+- `WanVideoExtraModelSelect` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_137
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.646429
-common_nodes: [GetRandomIntegerInRange, ImpactSwitch, JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text Load Line From File, easy mathInt]
+coverage: 0.868375
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2066092416477786114.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2016037375239004162.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2085781651526868994.json]
+members: [视频生成/图生视频/2080856590562979842.json, 视频生成/图生视频/2059046294068482049.json, 视频生成/图生视频/2069253062396571649.json, 视频生成/图生视频/2046370126743740417.json, 视频生成/图生视频/2037485213277757442.json, 视频生成/图生视频/2041695254943899649.json, 视频生成/图生视频/2037155597010870274.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频生视频】工作流_2037776632408186881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_137
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2066092416477786114.json、音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json、音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json、音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json、音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2080856590562979842.json、视频生成/图生视频/2059046294068482049.json、视频生成/图生视频/2069253062396571649.json、视频生成/图生视频/2046370126743740417.json、视频生成/图生视频/2037485213277757442.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `GetRandomIntegerInRange`
-- `ImpactSwitch`
-- `JjkText`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `Text Load Line From File`
-- `easy mathInt`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 6/7 个有
-- `ShowText` —— 6/7 个有
+- `CR Text` —— 5/8 个有
+- `LoadVideo` —— 5/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

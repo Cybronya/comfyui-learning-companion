@@ -3,86 +3,87 @@ name: unknown_workflow_video_lora_sampler_876
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7165
-common_nodes: [ADE_AnimateDiffSamplingSettings, ADE_ApplyAnimateDiffModelSimple, ADE_LoadAnimateDiffModel, ADE_StandardStaticContextOptions, ADE_UseEvolvedSampling, CLIPSetLastLayer, CM_FloatToInt, CM_IntToFloat, CheckpointLoaderSimpleWithNoiseSelect, ControlNextDiffusersScheduler, DownloadAndLoadMimicMotionModel, GetImageSizeAndCount, GetNode, ImageScale, ImageSharpen, KSamplerPipe //Inspire, LoadImage, LoraLoaderModelOnly, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, RIFE VFI, ReActorFaceSwap, SetNode, ToBasicPipe, VAEDecode, VAEEncode, VHS_LoadVideo, VHS_VideoCombine, easy cleanGpuUsed, smZ CLIPTextEncode]
+coverage: 0.7625
+common_nodes: [Anything Everywhere, Audio Duration (mtb), Audio Remixer, AudioCombine, AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CR Text, ColorCorrectOfUtils, GetNode, ImageCASharpening+, ImageResize+, ImpactSwitch, Int, LayerUtility: PurgeVRAM V2, Load Audio Separation Model, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, PreviewImage, RH_Translator, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1894249128619323393.json, 视频生成/图生视频/1905666716616019969.json]
+members: [视频生成/图生视频/1962038882978172929.json, 视频生成/图生视频/1978783026970824706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_876
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1894249128619323393.json、视频生成/图生视频/1905666716616019969.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1962038882978172929.json、视频生成/图生视频/1978783026970824706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ADE_AnimateDiffSamplingSettings`
-- `ADE_ApplyAnimateDiffModelSimple`
-- `ADE_LoadAnimateDiffModel`
-- `ADE_StandardStaticContextOptions`
-- `ADE_UseEvolvedSampling`
-- `CLIPSetLastLayer`
-- `CM_FloatToInt`
-- `CM_IntToFloat`
-- `CheckpointLoaderSimpleWithNoiseSelect`
-- `ControlNextDiffusersScheduler`
-- `DownloadAndLoadMimicMotionModel`
-- `GetImageSizeAndCount`
+- `Anything Everywhere`
+- `Audio Duration (mtb)`
+- `Audio Remixer`
+- `AudioCombine`
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `CR Text`
+- `ColorCorrectOfUtils`
 - `GetNode`
-- `ImageScale`
-- `ImageSharpen`
-- `KSamplerPipe //Inspire`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImpactSwitch`
+- `Int`
+- `LayerUtility: PurgeVRAM V2`
+- `Load Audio Separation Model`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MimicMotionDecode`
-- `MimicMotionGetPoses`
-- `MimicMotionSampler`
-- `RIFE VFI`
-- `ReActorFaceSwap`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PreviewAudio`
+- `PreviewImage`
+- `RH_Translator`
 - `SetNode`
-- `ToBasicPipe`
-- `VAEDecode`
-- `VAEEncode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddS2VEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `smZ CLIPTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `Any To String (mtb)` —— 1/2 个有
-- `Anything Everywhere` —— 1/2 个有
-- `Anything Everywhere3` —— 1/2 个有
-- `DiffusersScheduler` —— 1/2 个有
-- `FaceAnalysisModels` —— 1/2 个有
-- `FaceSegmentation` —— 1/2 个有
-- `GetImageSize+` —— 1/2 个有
-- `ImageCrop+` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReActorBuildFaceModel` —— 1/2 个有
-- `ReActorLoadFaceModel` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
+- `CLIPVisionLoader` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `IndexTTSRun` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `OpenposePreprocessor` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `SeedVCRun` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `WanVideoTextEncodeCached` —— 1/2 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 5 | - | 2 | 80% |
-| Prompt 约束强度(CFG) | 3 | - | 2 | 33% |
-| 采样算法 | ddim | - | 2 | 50% |
-| 调度器 | sgm_uniform | - | 2 | 100% |
-| 重绘幅度 | 0.23 | - | 2 | 87% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -90,9 +91,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 ddim，2 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.23，样本不足，未给区间，2 个样本，取值集中（一致性 87%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

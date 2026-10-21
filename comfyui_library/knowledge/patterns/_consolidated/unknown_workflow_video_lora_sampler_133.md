@@ -3,70 +3,64 @@ name: unknown_workflow_video_lora_sampler_133
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.642083
-common_nodes: [GetNode, ImageConcatMulti, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.797333
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: [CR Text, ImageFromBatch+, MathExpression|pysssss, Text Concatenate]
-members: [视频生成/图生视频/1975446783209902081.json, 视频生成/图生视频/1976624751336660994.json, 视频生成/图生视频/1977298137419272194.json, 视频生成/图生视频/1975848455060983809.json, 视频生成/图生视频/1977061045816709121.json, 视频生成/图生视频/1980064272694808577.json, 视频生成/图生视频/1978799084448419842.json, 视频生成/文生视频/1976486490379296769.json, 视频生成/文生视频/1976851496895758338.json, 视频生成/文生视频/1977715877644750849.json, 视频生成/文生视频/Wan2.1_T2V_lynx文生视频人物一致性_2070426739108564994.json, 视频生成/文生视频/文加图生视频人物一致性（超还原）Wan2.1_T2V_2032378252462919682.json]
+missing: [CR Prompt Text]
+members: [图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json, 图片生成/文生图/1950229173782667265.json, 视频生成/图生视频/1950186803727876098.json, 视频生成/图生视频/1950195066095714306.json, 视频生成/图生视频/1951706628657721345.json, 视频生成/图生视频/1952379981454356482.json, 视频生成/图生视频/1958329812857327618.json, 视频生成/图生视频/1950822532939186177.json, 视频生成/图生视频/1950805737444417537.json, 视频生成/图生视频/1950560356596961282.json, 视频生成/图生视频/1958716775745667074.json, 视频生成/图生视频/1976954244421046273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_133
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1975446783209902081.json、视频生成/图生视频/1976624751336660994.json、视频生成/图生视频/1977298137419272194.json、视频生成/图生视频/1975848455060983809.json、视频生成/图生视频/1977061045816709121.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json、图片生成/文生图/1950229173782667265.json、视频生成/图生视频/1950186803727876098.json、视频生成/图生视频/1950195066095714306.json、视频生成/图生视频/1951706628657721345.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `GetNode`
-- `ImageConcatMulti`
-- `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `SetNode`
+- `CreateCFGScheduleFloatList`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 11/12 个有
-- `ImageFromBatch+` —— 8/12 个有
-- `WanVideoTorchCompileSettings` —— 8/12 个有
-- `ImpactSwitch` —— 7/12 个有
-- `JWInteger` —— 7/12 个有
-- `RH_LLMAPI_NODE` —— 7/12 个有
-- `Text Concatenate` —— 7/12 个有
-- `Wan22PromptSelector` —— 7/12 个有
-- `CR Text` —— 6/12 个有
-- `MathExpression|pysssss` —— 6/12 个有
-- `easy showAnything` —— 6/12 个有
-- `CR Prompt Text` —— 2/12 个有
-- `GetImageSizeAndCount` —— 1/12 个有
-- `JjkText` —— 1/12 个有
-- `Joy_caption` —— 1/12 个有
-- `Joy_caption_load` —— 1/12 个有
-- `Primitive integer [Crystools]` —— 1/12 个有
-- `RHHiddenNodes` —— 1/12 个有
-- `SeedVR2` —— 1/12 个有
-- `SeedVR2BlockSwap` —— 1/12 个有
-- `ShowText|pysssss` —— 1/12 个有
-- `SimpleMath+` —— 1/12 个有
+- `CR Prompt Text` —— 11/12 个有
+- `INTConstant` —— 10/12 个有
+- `WanVideoTorchCompileSettings` —— 10/12 个有
+- `GetImageSizeAndCount` —— 9/12 个有
+- `JWInteger` —— 9/12 个有
+- `LoadImage` —— 8/12 个有
+- `WanVideoImageToVideoEncode` —— 8/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/12 个有
+- `ImageFromBatch+` —— 5/12 个有
+- `LayerUtility: PurgeVRAM` —— 5/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/12 个有
+- `GetNode` —— 4/12 个有
+- `SetNode` —— 4/12 个有
+- `WanVideoEmptyEmbeds` —— 4/12 个有
+- `ImageResizeKJv2` —— 3/12 个有
+- `WanVideoEasyCache` —— 3/12 个有
+- `Int` —— 2/12 个有
+- `MathExpression|pysssss` —— 2/12 个有
+- `PreviewImage` —— 1/12 个有
+- `PrimitiveInt` —— 1/12 个有
+- `Seed_` —— 1/12 个有
+- `easy bookmark` —— 1/12 个有
+- `easy imageSize` —— 1/12 个有
+- `easy positive` —— 1/12 个有
 
 ## 典型参数
 
@@ -78,4 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、ImageFromBatch+、MathExpression|pysssss、Text Concatenate
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text

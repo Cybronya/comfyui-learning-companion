@@ -3,34 +3,38 @@ name: unknown_workflow_generic_668
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [AudioCrop, CR Prompt Text, LoadAudio, SaveAudioAdvanced, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, 孤海注释]
+coverage: 0.7335
+common_nodes: [GetImageSize, GetVideoComponents, LoadImage, LoadVideo, PreviewAny, SaveVideo, Video Slice]
 problems: []
 missing: []
-members: [数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json, 音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json]
+members: [comfyui-workflow-templates-json/api_beeble_switchx_video_edit.json, comfyui-workflow-templates-json/video_bernini_r_video_editing.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_668
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json、音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_beeble_switchx_video_edit.json、comfyui-workflow-templates-json/video_bernini_r_video_editing.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudioAdvanced`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_SamplingConfig`
-- `孤海注释`
+- `GetImageSize`
+- `GetVideoComponents`
+- `LoadImage`
+- `LoadVideo`
+- `PreviewAny`
+- `SaveVideo`
+- `Video Slice`
+
+**可变部分**（部分 workflow 才有）：
+- `69c3c422-bcfe-4955-bc23-8bac307287a8` —— 1/2 个有
+- `BatchImagesNode` —— 1/2 个有
+- `BeebleSwitchXVideoEdit` —— 1/2 个有
 
 ## 典型参数
 

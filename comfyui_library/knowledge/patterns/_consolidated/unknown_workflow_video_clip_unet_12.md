@@ -1,57 +1,78 @@
 ---
 name: unknown_workflow_video_clip_unet_12
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.96575
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 7
+level: strong
+coverage: 0.439286
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, Int, ModelPatchTorchSettings, PathchSageAttentionKJ, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, wanBlockSwap]
 problems: []
-missing: []
-members: [视频生成/文生视频/1902680529605668865.json, 视频生成/文生视频/Wan2.1+文生视频高清动态视频_2010596616985649154.json, 视频生成/文生视频/Wan2.1-720P-SLG-文生视频_2072999848967970816.json, 视频生成/文生视频/Wan2.2 文生视频工作流_1991800430478962690.json, 视频生成/文生视频/Wan2.2-RemixV2-comfy-文生视频在线运行工作流_1988239107312762882.json, 视频生成/文生视频/Wan2.2Remix高质量文生视频_1988716572640423937.json, 视频生成/文生视频/Wan2.2文生视频_2002368127193235457.json, 视频生成/文生视频/1937731773860352001.json]
+missing: [RIFE VFI, easy cleanGpuUsed]
+members: [图片生成/文生图/1979072068958457857.json, 图片生成/文生图/Wan2.2（t2v）+千问VL反推+音效_2002494004426076161.json, 图片生成/文生图/文生视频Smootht2v+Qwen3VL反推+_2002512116349300738.json, 视频生成/图生视频/2076490092809637889.json, 视频生成/图生视频/1987069561856004097.json, 视频生成/图生视频/1987091319136956418.json, 视频生成/文生视频/Wan2.2+Qwen3VL+Foley模拟多模态全自动-文字-视频-声音_1987092853765640193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet_12
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/1902680529605668865.json、视频生成/文生视频/Wan2.1+文生视频高清动态视频_2010596616985649154.json、视频生成/文生视频/Wan2.1-720P-SLG-文生视频_2072999848967970816.json、视频生成/文生视频/Wan2.2 文生视频工作流_1991800430478962690.json、视频生成/文生视频/Wan2.2-RemixV2-comfy-文生视频在线运行工作流_1988239107312762882.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1979072068958457857.json、图片生成/文生图/Wan2.2（t2v）+千问VL反推+音效_2002494004426076161.json、图片生成/文生图/文生视频Smootht2v+Qwen3VL反推+_2002512116349300738.json、视频生成/图生视频/2076490092809637889.json、视频生成/图生视频/1987069561856004097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `Int`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `RIFE VFI`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 7/8 个有
-- `PathchSageAttentionKJ` —— 6/8 个有
-- `KSampler` —— 4/8 个有
-- `KSamplerAdvanced` —— 4/8 个有
-- `WanVideoTeaCacheKJ` —— 4/8 个有
-- `INTConstant` —— 3/8 个有
-- `WanVideoEnhanceAVideoKJ` —— 3/8 个有
-- `SkipLayerGuidanceWanVideo` —— 2/8 个有
-- `TorchCompileModelWanVideo` —— 2/8 个有
-- `Int` —— 1/8 个有
+- `WanImageToVideo` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `Any To Any` —— 5/7 个有
+- `HunyuanVideoFoley` —— 5/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/7 个有
+- `MultiplePathsInput` —— 5/7 个有
+- `Qwen3_VQA` —— 5/7 个有
+- `VHS_SelectFilename` —— 5/7 个有
+- `easy float` —— 5/7 个有
+- `WanMoeKSampler` —— 4/7 个有
+- `ImageResizeKJv2` —— 3/7 个有
+- `KSamplerAdvanced` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `ModelSamplingSD3` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `UnetLoaderGGUF` —— 3/7 个有
+- `LoadImage` —— 2/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `AILab_QwenVL` —— 1/7 个有
+- `ImageLoader` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `RH_LLMAPI_Pro_Node` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `WanFirstLastFrameToVideo` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 4 | 100% |
-| Prompt 约束强度(CFG) | 9 | 6 - 30 | 8 | 32% |
-| 采样算法 | 1 | 1 - 3.5 | 4 | 33% |
-| 调度器 | euler | - | 8 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | fixed | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 6 | 4 - 6 | 7 | 81% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | 1 | 1 - 1 | 4 | 100% |
+| 重绘幅度 | euler_ancestral | - | 7 | 57% |
 
 ## 常见问题
 
@@ -59,9 +80,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 9，观测区间 6 - 30，8 个样本，取值分散，一致性仅 32%
-- 采样算法 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
-- 调度器 最常用 euler，8 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 最常用 fixed，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 6，7 个样本，取值集中（一致性 81%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler_ancestral，7 个样本，一致性 57%
+- 这些节点还没有知识卡，系统对它们的理解有限：RIFE VFI、easy cleanGpuUsed

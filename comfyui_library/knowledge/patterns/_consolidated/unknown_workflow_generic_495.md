@@ -3,17 +3,17 @@ name: unknown_workflow_generic_495
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.8
-common_nodes: [IndexTTS2BaseNode, SaveAudioMP3, Text _O, easy showAnything]
+coverage: 0.802333
+common_nodes: [ImageCompare, ImageScaleBy, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/API - Index TTS_2066918383110680578.json, 音频生成/音频生成/CustomerKing IndexTTS2 中文配音_2080243195295911937.json, 音频生成/音频生成/声音克隆- Index TTS_2052593407645757442.json]
+members: [comfyui-workflow-templates-json/utility-topaz_landscape_upscaler.json, comfyui-workflow-templates-json/utility_interpolation_image_upscale.json, comfyui-workflow-templates-json/utility_topaz_illustration_upscale.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_495
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/API - Index TTS_2066918383110680578.json、音频生成/音频生成/CustomerKing IndexTTS2 中文配音_2080243195295911937.json、音频生成/音频生成/声音克隆- Index TTS_2052593407645757442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/utility-topaz_landscape_upscaler.json、comfyui-workflow-templates-json/utility_interpolation_image_upscale.json、comfyui-workflow-templates-json/utility_topaz_illustration_upscale.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,14 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `IndexTTS2BaseNode`
-- `SaveAudioMP3`
-- `Text _O`
-- `easy showAnything`
+- `ImageCompare`
+- `ImageScaleBy`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadAudioUpload` —— 2/3 个有
-- `LoadAudio` —— 1/3 个有
+- `GetImageSize` —— 2/3 个有
+- `TopazImageEnhance` —— 1/3 个有
+- `TopazImageEnhanceV2` —— 1/3 个有
 
 ## 典型参数
 

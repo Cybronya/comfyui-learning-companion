@@ -3,54 +3,58 @@ name: unknown_workflow_video_sampler_vae_181
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.971
-common_nodes: [BasicMath, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, StringConcatenate, ToFloat, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.627
+common_nodes: [Anything Everywhere, AudioCombine, CogVideoEnhanceAVideo, GetNode, ImageCASharpening+, ImageResize+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, PreviewImage, RHHiddenNodes, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2033528799509352449.json, 视频生成/图生视频/2033775049777352706.json]
+members: [视频生成/图生视频/1923649885118058498.json, 视频生成/图生视频/1939870298747346946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_181
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2033528799509352449.json、视频生成/图生视频/2033775049777352706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1923649885118058498.json、视频生成/图生视频/1939870298747346946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicMath`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `FloatConstant`
-- `INTConstant`
-- `LoadAudio`
+- `Anything Everywhere`
+- `AudioCombine`
+- `CogVideoEnhanceAVideo`
+- `GetNode`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `StringConcatenate`
-- `ToFloat`
-- `ToInt`
+- `MMAudioFeatureUtilsLoader`
+- `MMAudioModelLoader`
+- `MMAudioSampler`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SaveAudio`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
+- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

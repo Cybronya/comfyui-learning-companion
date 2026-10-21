@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_107
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.97225
-common_nodes: [GeminiImage2Node, LoadImage, SaveImage]
+coverage: 0.719222
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/templates-assemble_dieline.json, comfyui-workflow-templates-json/templates-character_sheet.json, comfyui-workflow-templates-json/templates-color_illustration.json, comfyui-workflow-templates-json/templates-subject_holding_product.app.json, comfyui-workflow-templates-json/templates-subject_product_swap.app.json, comfyui-workflow-templates-json/utility_nanobanana_pro_ai_image_fix.json, comfyui-workflow-templates-json/utility_nanobanana_pro_illustration_upscale.json, comfyui-workflow-templates-json/utility_nanobanana_pro_product_upscale.json]
+members: [视频生成/图生视频/2075512794958622721.json, 视频生成/图生视频/2061309598879019009.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json, 视频生成/图生视频/2061070407112941570.json, 视频生成/图生视频/2061096383377141761.json, 视频生成/图生视频/2078659733879353345.json, 视频生成/图生视频/2049413181075890177.json, 视频生成/图生视频/2054445953876275202.json, 视频生成/文生视频/(支持真人)超能视频2.0多图参考R2V视频生成V2（1秒1元）_2033903081225723906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_107
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/templates-assemble_dieline.json、comfyui-workflow-templates-json/templates-character_sheet.json、comfyui-workflow-templates-json/templates-color_illustration.json、comfyui-workflow-templates-json/templates-subject_holding_product.app.json、comfyui-workflow-templates-json/templates-subject_product_swap.app.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2075512794958622721.json、视频生成/图生视频/2061309598879019009.json、视频生成/图生视频/全能视频X V1.5图生视频新版（RH低价版）_2083078074656186370.json、视频生成/图生视频/2061070407112941570.json、视频生成/图生视频/2061096383377141761.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `GeminiImage2Node`
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` —— 2/8 个有
-- `ImageStitch` —— 1/8 个有
+- `RH_RhartVideoGImageToVideo` —— 8/9 个有
+- `easy showAnything` —— 8/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `RH_CinematicVideoGenerator` —— 1/9 个有
 
 ## 典型参数
 

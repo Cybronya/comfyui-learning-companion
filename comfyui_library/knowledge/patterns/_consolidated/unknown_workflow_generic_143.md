@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_143
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.793857
-common_nodes: [CR Prompt Text, YuE2Generate, YuE2Loader, YuE2SamplingConfig]
+coverage: 0.59125
+common_nodes: [IndexTTS2Run, LoadAudio, LoadImage, MultiLinePromptIndex]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI文生音乐工作流-YuE2_2098683841492897793.json, 音频生成/音频生成/YuE2 AI文生音乐工作流_2098372939333853185.json, 音频生成/音频生成/YuE2文生音乐 最强开源音乐模型_2099416240568754178.json, 音频生成/音频生成/YuE2文生音乐_2098272017664528385.json, 音频生成/音频生成/YuE2文生音乐_2098379881020219394.json, 音频生成/音频生成/YuE2文生音乐_2107651520257945602.json, 音频生成/音频生成/YuE2文生音乐_自用_2107115132097744897.json]
+members: [音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json, 音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json, 音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json, 音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json, 音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json, 音频生成/音频生成/双人说话带情绪用情绪音频控制+全节点注释_2052273666066526209.json, 音频生成/音频生成/双人说话带情绪用文本控制+全节点注释_2052273712635883522.json, 音频生成/音频生成/双人说话带情绪随机情绪+全节点注释_2052273819569664001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_143
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/AI文生音乐工作流-YuE2_2098683841492897793.json、音频生成/音频生成/YuE2 AI文生音乐工作流_2098372939333853185.json、音频生成/音频生成/YuE2文生音乐 最强开源音乐模型_2099416240568754178.json、音频生成/音频生成/YuE2文生音乐_2098272017664528385.json、音频生成/音频生成/YuE2文生音乐_2098379881020219394.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json、音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json、音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json、音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json、音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `YuE2Generate`
-- `YuE2Loader`
-- `YuE2SamplingConfig`
+全部 8 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `LoadImage`
+- `MultiLinePromptIndex`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 6/7 个有
-- `PreviewAny` —— 5/7 个有
-- `MusicPlayerWithLyricsNode` —— 1/7 个有
-- `SaveAudioAdvanced` —— 1/7 个有
+- `SaveAudioMP3` —— 7/8 个有
+- `SaveAudio` —— 2/8 个有
+- `easy imageSave` —— 1/8 个有
 
 ## 典型参数
 

@@ -3,113 +3,84 @@ name: image_to_image_upscale_lora_sampler_12
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.4175
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningAverage, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetNode, Image Comparer (rgthree), ImageResizeAndCropNode, ImageResizeKJ, ImageScaleBy, ImageSmartSharpen+, ImageUpscaleWithModel, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LazySwitch1way, LoadImage, LoraLoader, Manual XY Entry Info, ModelSamplingAuraFlow, PMRF, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, SaveImage, SetNode, ShowText|pysssss, TTP_CoordinateSplitter, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTP_condsetarea_merge, TTP_condtobatch, Text Concatenate, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageChooser, easy imageListToImageBatch]
+coverage: 0.7005
+common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Float, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, Label (rgthree), LoadImage, PixaromaLoraLoader, PixaromaTextJoinTwo, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, YC Color Match]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, CR Text Concatenate, ImageSmartSharpen+, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, Manual XY Entry Info, Text Concatenate, Text Multiline, easy cleanGpuUsed, easy imageBatchToImageList, easy imageChooser, easy imageListToImageBatch]
-members: [图片生成/文生图/1953631561495269378.json, 图片生成/文生图/1954937738723147777.json]
+missing: [CR Text, Label (rgthree), YC Color Match, LayerUtility: ImageScaleByAspectRatio V2, Text Multiline, Kontext Inpainting Conditioning]
+members: [图片生成/图生图/2097156300693135361.json, 图片生成/图生图/2101612616186687489.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1953631561495269378.json、图片生成/文生图/1954937738723147777.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2097156300693135361.json、图片生成/图生图/2101612616186687489.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：42%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
 - `CR Text`
-- `CR Text Concatenate`
-- `ConditioningAverage`
-- `EmptySD3LatentImage`
+- `ConditioningZeroOut`
 - `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
+- `Float`
 - `Image Comparer (rgthree)`
-- `ImageResizeAndCropNode`
-- `ImageResizeKJ`
-- `ImageScaleBy`
-- `ImageSmartSharpen+`
-- `ImageUpscaleWithModel`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LazySwitch1way`
+- `Label (rgthree)`
 - `LoadImage`
-- `LoraLoader`
-- `Manual XY Entry Info`
-- `ModelSamplingAuraFlow`
-- `PMRF`
+- `PixaromaLoraLoader`
+- `PixaromaTextJoinTwo`
 - `PreviewImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `ReferenceLatent`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_CoordinateSplitter`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TTP_condsetarea_merge`
-- `TTP_condtobatch`
-- `Text Concatenate`
-- `Text Multiline`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
-- `easy imageChooser`
-- `easy imageListToImageBatch`
+- `YC Color Match`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelSamplingSD3` —— 1/2 个有
-- `NAGGuider` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
+- `FloatConstant` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `Kontext Inpainting Conditioning` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 7 | - | 2 | 86% |
+| 采样步数 | 8 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.65 | - | 2 | 46% |
+| 重绘幅度 | 0.52 | - | 2 | 8% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、ImageSmartSharpen+、LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions
+- 重绘幅度 中位数 0.52，样本不足，未给区间，2 个样本，取值分散，一致性仅 8%
+- 风险：重绘幅度 观测到 0.04，低于常用下限 0.1（）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Label (rgthree)、YC Color Match、LayerUtility: ImageScaleByAspectRatio V2、Text Multiline
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,60 +3,61 @@ name: unknown_workflow_video_lora_sampler_53
 type: Unknown Workflow
 frequency: 20
 level: moderate
-coverage: 0.6134
-common_nodes: [BasicGuider, GetNode, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse, 孤海注释]
+coverage: 0.8392
+common_nodes: [BerniniStudio, CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2093237034637946882.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作工作台_2091808450006315009.json, 视频生成/图生视频/MiniMax - H3开源 短剧+漫剧+真人剧 多参视频输出 图生视频_2092936969365057538.json, 视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2102927651173396481.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104381990047932417.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104842146724532225.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2099775303945121794.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2100034930007953410.json, 视频生成/图生视频/MiniMax-H3_孤海 V3_2104490856966348801.json, 视频生成/图生视频/平面图生效果图 minimax h3_2095379110083252226.json, 视频生成/文生视频/MiniMax-H3   4K直出_2098005527233126402.json, 视频生成/文生视频/MiniMax-H3  二采分块 2K 4K直出_2100785082779918337.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出 改进_2098968521681235969.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2096756610927517697.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2097566364851597314.json, 视频生成/文生视频/MiniMax-H3 智能创作平台+二采+分块 4K直出_2097563335922376706.json, 视频生成/文生视频/啊癫 MiniMax-H3  二采分块 4K直出_2097351601014001665.json, 视频生成/文生视频/孤海 - MiniMax - H3 智能一体化视频创作 V3_2097904013336473601.json]
+members: [图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json, 视频生成/图生视频/2078439441877790721.json, 视频生成/图生视频/2073592310989942786.json, 视频生成/图生视频/2073584193665331202.json, 视频生成/图生视频/2065400514141048833.json, 视频生成/图生视频/2081577097444810753.json, 视频生成/图生视频/2075050205141094402.json, 视频生成/图生视频/2074045202817437698.json, 视频生成/图生视频/2073577575993139202.json, 视频生成/图生视频/2063147705244930049.json, 视频生成/图生视频/2064931292038385665.json, 视频生成/图生视频/调试Bernini Studio工作流-4步lora_rv2v_2102665904747270146.json, 视频生成/图生视频/2073745061728313345.json, 视频生成/图生视频/2073682935554854913.json, 视频生成/图生视频/2082366639907102721.json, 视频生成/图生视频/2082437380983844866.json, 视频生成/图生视频/2082454463452893186.json, 视频生成/图生视频/2082456967376883713.json, 视频生成/图生视频/2074035799124955138.json, 视频生成/图生视频/2064238678511280130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_53
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2093237034637946882.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作工作台_2091808450006315009.json、视频生成/图生视频/MiniMax - H3开源 短剧+漫剧+真人剧 多参视频输出 图生视频_2092936969365057538.json、视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json、视频生成/图生视频/2078439441877790721.json、视频生成/图生视频/2073592310989942786.json、视频生成/图生视频/2073584193665331202.json、视频生成/图生视频/2065400514141048833.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 20 个 workflow 都包含：
-- `BasicGuider`
-- `GetNode`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8GH`
-- `MiniMaxH3DualClockT8GH`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `BerniniStudio`
+- `CLIPLoader`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy ifElse`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorCorrect` —— 15/20 个有
-- `GoohaiAnyExists` —— 15/20 个有
-- `GoohaiMinimaxH3LatentUpscalerGH` —— 15/20 个有
-- `GoohaiMinimaxH3TiledSampler` —— 15/20 个有
-- `GoohaiUniversalSlider` —— 15/20 个有
-- `SplitSigmas` —— 15/20 个有
-- `忽略多组孤海` —— 15/20 个有
-- `CM_FloatToInt` —— 1/20 个有
-- `ImpactSleep` —— 1/20 个有
-- `PrimitiveFloat` —— 1/20 个有
-- `SaveVideo` —— 1/20 个有
-- `easy int` —— 1/20 个有
+- `GetNode` —— 18/20 个有
+- `SetNode` —— 18/20 个有
+- `VHS_LoadVideo` —— 17/20 个有
+- `RTXVideoSuperResolution` —— 16/20 个有
+- `ImageConcatMulti` —— 15/20 个有
+- `Int` —— 12/20 个有
+- `SimpleMath+` —— 10/20 个有
+- `ComfyNumberConvert` —— 2/20 个有
+- `VHS_VideoInfo` —— 2/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/20 个有
+- `ShowAnything|Mie` —— 1/20 个有
+- `Text` —— 1/20 个有
+- `easy showAnything` —— 1/20 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 20 | 75% |
+| Prompt 约束强度(CFG) | 4 | 4 - 8 | 20 | 72% |
+| 采样算法 | 1 | 1 - 1.5 | 20 | 89% |
+| 调度器 | euler | - | 20 | 100% |
+| 重绘幅度 | simple | - | 20 | 100% |
 
 ## 常见问题
 
@@ -64,4 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，20 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，20 个样本
+- 采样算法 中位数 1，观测区间 1 - 1.5，20 个样本，取值集中（一致性 89%）
+- 调度器 最常用 euler，20 个样本，一致性 100%
+- 重绘幅度 最常用 simple，20 个样本，一致性 100%

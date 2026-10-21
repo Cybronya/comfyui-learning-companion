@@ -3,62 +3,77 @@ name: unknown_workflow_lora_sampler_unet_43
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.627
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.95075
+common_nodes: [AudioConcat, BasicScheduler, BatchImagesNode, CLIPLoader, ComfyMathExpression, ComfySwitchNode, ConditioningZeroOut, CreateVideo, Float, GetImageRangeFromBatch, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SaveVideo, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMaxH3-SelfLift工作流V1_2103487158542749698.json, 视频生成/文生视频/self-lift双采工作流（全能参考）_2058746014022066178.json, 视频生成/文生视频/self-lift双采工作流（文生图生视频）_2097961269025402882.json, 视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json]
+members: [视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1013_2109675064579936258.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1015_2110201843593867266.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json, 视频生成/数字人/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_43
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMaxH3-SelfLift工作流V1_2103487158542749698.json、视频生成/文生视频/self-lift双采工作流（全能参考）_2058746014022066178.json、视频生成/文生视频/self-lift双采工作流（文生图生视频）_2097961269025402882.json、视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1013_2109675064579936258.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1015_2110201843593867266.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json、视频生成/数字人/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AudioConcat`
 - `BasicScheduler`
+- `BatchImagesNode`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `ComfySwitchNode`
 - `ConditioningZeroOut`
-- `H3SigmaRefiner`
+- `CreateVideo`
+- `Float`
+- `GetImageRangeFromBatch`
+- `Int`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
 - `ResolutionSelector`
-- `SelfLiftH3Sampler`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `ModelPreviewOverrideKJ` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `CreateVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
+- `MiniMaxH3BlockCacheT8` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `RIFE VFI` —— 3/4 个有
+- `BasicGuider` —— 2/4 个有
+- `BlockSparseAttention` —— 2/4 个有
+- `ExtendIntermediateSigmas` —— 2/4 个有
 - `MiniMaxH3SigmaShift` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
 - `PrimitiveStringMultiline` —— 2/4 个有
-- `Float` —— 1/4 个有
-- `LTXVSeparateAVLatent` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/4 个有
-- `MiniMaxH3ImageToVideo` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
+- `RandomNoise` —— 2/4 个有
+- `SamplerCustomAdvanced` —— 2/4 个有
+- `SelfLiftAvatarH3Sampler` —— 2/4 个有
+- `AudioCrop` —— 1/4 个有
+- `MiniMaxH3Unified` —— 1/4 个有
+- `ModelPreviewOverrideKJ` —— 1/4 个有
+- `PlaySound|pysssss` —— 1/4 个有
+- `SaveAudioAdvanced` —— 1/4 个有
 
 ## 典型参数
 

@@ -2,63 +2,82 @@
 name: unknown_workflow_video_sampler_clip_115
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.9358
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.6248
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1894957699035693057.json, 视频生成/图生视频/1894765402319159298.json, 视频生成/图生视频/1899884316468600834.json, 视频生成/图生视频/1900639314223448065.json, 视频生成/图生视频/1955654165034930178.json]
+members: [视频生成/图生视频/2013893086845341698.json, 视频生成/图生视频/2055902519104163842.json, 视频生成/图生视频/1986333709685194753.json, 视频生成/图生视频/1986747295184138242.json, 视频生成/图生视频/2079816909545107457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_115
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1894957699035693057.json、视频生成/图生视频/1894765402319159298.json、视频生成/图生视频/1899884316468600834.json、视频生成/图生视频/1900639314223448065.json、视频生成/图生视频/1955654165034930178.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2013893086845341698.json、视频生成/图生视频/2055902519104163842.json、视频生成/图生视频/1986333709685194753.json、视频生成/图生视频/1986747295184138242.json、视频生成/图生视频/2079816909545107457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RIFE VFI`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
+- `easy cleanGpuUsed`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `WanVideoLoraSelect` —— 3/5 个有
-- `WanVideoTeaCache` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `INTConstant` —— 4/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `Int` —— 4/5 个有
 - `CR Text` —— 2/5 个有
-- `CR Text Replace` —— 2/5 个有
-- `Primitive integer [Crystools]` —— 2/5 个有
-- `Primitive string [Crystools]` —— 2/5 个有
-- `easy imageSize` —— 2/5 个有
-- `GetImageSizeAndCount` —— 1/5 个有
-- `HyVideoEnhanceAVideo` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `WanVideoFreeInitArgs` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `ImpactInt` —— 1/5 个有
+- `KSampler` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `ModelSamplingAuraFlow` —— 1/5 个有
+- `QwenImageLatentAspectRatio` —— 1/5 个有
+- `RHLLMChatNode` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `easy promptReplace` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 5 | 80% |
+| Prompt 约束强度(CFG) | 4 | 4 - 6 | 5 | 82% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler | - | 5 | 100% |
+| 重绘幅度 | normal | - | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，5 个样本，一致性 80%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，5 个样本，取值集中（一致性 82%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 100%
+- 重绘幅度 最常用 normal，5 个样本，一致性 100%

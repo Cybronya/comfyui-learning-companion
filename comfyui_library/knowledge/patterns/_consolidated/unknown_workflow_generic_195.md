@@ -3,40 +3,34 @@ name: unknown_workflow_generic_195
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.92
-common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.552333
+common_nodes: [PIP_StringConcatenation, RH_RhartImageG2TextToImage, SaveImage, easy positive]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json, 音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json, 音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json, 音频生成/音频生成/语音克隆TTS _ LongCat-AudioDiT _ 单人_双人_2039708141885071362.json]
+members: [图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json, 图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101139696062648322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_195
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json、音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json、音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json、图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json、图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+- `PIP_StringConcatenation`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `LongCatVoiceCloneTTS` —— 4/6 个有
-- `NormalizeAudioLoudness` —— 4/6 个有
-- `LongCatMultiSpeakerTTS` —— 3/6 个有
-- `PreviewAny` —— 2/6 个有
-- `SaveAudio` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `EmptyImage` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
 
 ## 典型参数
 

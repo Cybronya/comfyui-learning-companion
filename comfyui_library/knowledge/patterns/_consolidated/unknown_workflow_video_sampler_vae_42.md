@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_vae_42
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8614
-common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8268
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935000181781766145.json, 视频生成/图生视频/1894640699545944065.json, 视频生成/图生视频/1930311338440998914.json, 视频生成/图生视频/1930415960338108418.json, 视频生成/图生视频/1896450417918345217.json, 视频生成/图生视频/1917932584058425345.json, 视频生成/图生视频/1917823045400985602.json, 视频生成/图生视频/1917833994954539009.json, 视频生成/图生视频/1914283396808306690.json, 视频生成/图生视频/1913412975162552322.json]
+members: [视频生成/图生视频/1934577756585795586.json, 视频生成/图生视频/1934068571276533761.json, 视频生成/图生视频/1934656036613595137.json, 视频生成/图生视频/1943184080722944001.json, 视频生成/图生视频/1943311960978956289.json, 视频生成/图生视频/1934272711260856322.json, 视频生成/图生视频/1981344492861169666.json, 视频生成/图生视频/1943209482220691457.json, 视频生成/图生视频/1943184983563657218.json, 视频生成/图生视频/1934978229164023809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1935000181781766145.json、视频生成/图生视频/1894640699545944065.json、视频生成/图生视频/1930311338440998914.json、视频生成/图生视频/1930415960338108418.json、视频生成/图生视频/1896450417918345217.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1934577756585795586.json、视频生成/图生视频/1934068571276533761.json、视频生成/图生视频/1934656036613595137.json、视频生成/图生视频/1943184080722944001.json、视频生成/图生视频/1943311960978956289.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
@@ -27,29 +27,50 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 8/10 个有
-- `WanVideoClipVisionEncode` —— 8/10 个有
-- `WanVideoImageToVideoEncode` —— 8/10 个有
-- `WanVideoLoraSelect` —— 8/10 个有
-- `WanVideoBlockSwap` —— 7/10 个有
-- `PreviewImage` —— 6/10 个有
-- `WanVideoTorchCompileSettings` —— 6/10 个有
-- `LoadWanVideoClipTextEncoder` —— 2/10 个有
-- `SaveAnimatedWEBP` —— 2/10 个有
-- `WanVideoImageClipEncode` —— 2/10 个有
-- `WanVideoVRAMManagement` —— 2/10 个有
-- `ColorMatch` —— 1/10 个有
-- `INTConstant` —— 1/10 个有
-- `ImageScaleToTotalPixels` —— 1/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 7/10 个有
+- `GIMMVFI_interpolate` —— 7/10 个有
+- `GetImageSizeAndCount` —— 7/10 个有
+- `PreviewImage` —— 7/10 个有
+- `WanVideoVACEEncode` —— 7/10 个有
+- `WanVideoVACEStartToEndFrame` —— 7/10 个有
+- `GetImageRangeFromBatch` —— 6/10 个有
+- `Int` —— 6/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/10 个有
+- `PrimitiveStringMultiline` —— 6/10 个有
+- `WanVideoExperimentalArgs` —— 6/10 个有
+- `WanVideoMagCache` —— 6/10 个有
+- `WanVideoLoraSelect` —— 5/10 个有
+- `WanVideoVACEModelSelect` —— 5/10 个有
+- `GetNode` —— 3/10 个有
+- `ImageBatchMulti` —— 3/10 个有
+- `ImageSmartSharpen+` —— 3/10 个有
+- `MaskBatchMulti` —— 3/10 个有
+- `SetNode` —— 3/10 个有
+- `WanVideoImageToVideoEncode` —— 3/10 个有
+- `CR Upscale Image` —— 2/10 个有
+- `WanVideoEasyCache` —— 2/10 个有
+- `WanVideoFreeInitArgs` —— 2/10 个有
+- `WanVideoSetRadialAttention` —— 2/10 个有
+- `FlashVSRNode` —— 1/10 个有
+- `Manual XY Entry Info` —— 1/10 个有
+- `PMRF` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `SeedVR2` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `Video_Upscale_With_Model` —— 1/10 个有
+- `WanVideoExtraModelSelect` —— 1/10 个有
+- `WanVideoTeaCache` —— 1/10 个有
 - `easy imageSize` —— 1/10 个有
 
 ## 典型参数

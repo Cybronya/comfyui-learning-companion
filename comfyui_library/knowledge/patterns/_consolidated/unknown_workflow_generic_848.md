@@ -3,37 +3,41 @@ name: unknown_workflow_generic_848
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.916
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, OmniVoiceLongformTTS, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, SaveAudio]
+coverage: 0.871
+common_nodes: [AudioCrop, Bjornulf_AnythingToText, LoadAudio, MathExpression|pysssss, PreviewImage, SaveImage, SaveVideo, VHS_LoadVideoPath, VHS_SelectImages]
 problems: []
-missing: []
-members: [音频生成/音频生成/TTS_2073064988377436162.json, 音频生成/音频生成/omnivoice-tts 语音克隆_2041461507283755010.json]
+missing: [MathExpression|pysssss]
+members: [视频生成/图生视频/1971449141417164802.json, 视频生成/文生视频/1971617651434909698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_848
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/TTS_2073064988377436162.json、音频生成/音频生成/omnivoice-tts 语音克隆_2041461507283755010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1971449141417164802.json、视频生成/文生视频/1971617651434909698.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `AudioCrop`
+- `Bjornulf_AnythingToText`
 - `LoadAudio`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `SaveAudio`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `SaveImage`
+- `SaveVideo`
+- `VHS_LoadVideoPath`
+- `VHS_SelectImages`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `SaveAudioMP3` —— 1/2 个有
-- `TrimAudio` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RH_Wan25_I2V` —— 1/2 个有
+- `RH_Wan25_T2V` —— 1/2 个有
+- `ShellAgentPluginInputText` —— 1/2 个有
 
 ## 典型参数
 
@@ -45,4 +49,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,88 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_7
 type: Unknown Workflow
-frequency: 17
+frequency: 28
 level: strong
-coverage: 0.844176
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, RandomNoise, SamplerCustomAdvanced, TextGenerateLTX2Prompt, UNETLoader, VAEDecodeTiled, VAELoader]
-problems: []
+coverage: 0.893286
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX25单图生视频二_2101996495485624321.json, 视频生成/图生视频/LTX25单图生视频第一版_2101966214657564674.json, 视频生成/图生视频/LTX_2.5_图生视频_2090673250572521473.json, 视频生成/图生视频/Ltx2.5图生视频-极速版-高质量-自动扩写提示词_2089690744842969089.json, 视频生成/图生视频/ltx2.5图文生视频_2111289590802903041.json, 视频生成/图生视频/ltx2.5图生视频_2087607964956979202.json, 视频生成/图生视频/video_ltx2_5_i2v-comfyui_2087443808706457602.json, 视频生成/图生视频/video_ltx2_5_i2v_2087366084356820993.json, 视频生成/图生视频/【开源】LTX2.5 图生视频_2087455802314547201.json, 视频生成/图生视频/图生视频  极速  LTX2.5 音画同出_2087530924060798978.json, 视频生成/图生视频/极速图生视频音画同出   LTX2.5_2095738668177780738.json, 视频生成/文生视频/LTX 2.5 文生视频版_2094317793788383233.json, 视频生成/文生视频/LTX2.5  图生视频 二采高清_2100577700896399362.json, 视频生成/文生视频/LTX2.5 二采高清（图生+文生视频）_2087733249475956738.json, 视频生成/文生视频/LTX2.5 图生视频 视频生成  二次采样_2092076309282381825.json, 视频生成/文生视频/LTX2.5 图生视频 视频生成  二次采样_2092080533667926017.json, 视频生成/文生视频/LTX2.5 视频生成 I 提示词强化_2087468290628214785.json]
+members: [图片生成/文生图/Flux2-Klein-9B _ 4B 极速文生图，胶片质感_2012177114430181377.json, 图片生成/文生图/Flux2-Klein-9B 高性能文生图生成模型_2084850465476538369.json, 图片生成/文生图/Flux2-Klein-9B文生图2K直出_2013150879507030017.json, 图片生成/文生图/Flux2-Klein-9B文生图2k直出_2012016993716670466.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059114128396079105.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059269453438869505.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059314653993463810.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059319556044320770.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059522181494820865.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059536142109859842.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059536321953226754.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059539945018187778.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059540088224313345.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059879281945305089.json, 图片生成/文生图/Flux2-Klein-9B文生图_2063136844673536001.json, 图片生成/文生图/Flux2-Klein-9B文生图_2063148799211687937.json, 图片生成/文生图/Flux2-Klein-9B文生图_2066364752095432705.json, 图片生成/文生图/Flux2-Klein-9B文生图_2067979935930732545.json, 图片生成/文生图/Flux2-Klein-9B文生图_2067980166210609154.json, 图片生成/文生图/Flux2-Klein-9B文生图_2069735520573419522.json, 图片生成/文生图/Flux2-Klein-9B文生图_2078486441843322881.json, 图片生成/文生图/Flux2-Klein-9B文生图_2078522055611478017.json, 图片生成/文生图/Flux2-Klein-9B文生图_2084671748380905474.json, 图片生成/文生图/Flux2-Klein-文生图-9B版本-2k直出_2012182227475501058.json, 图片生成/文生图/Flux2-Klein反推图片提示词生图_2012302540993466370.json, 图片生成/文生图/Klein-9B 大模型 AI 文生图_2086324161999364098.json, 图片生成/文生图/Klein-9B 大模型文生图_2085747367650877442.json, 图片生成/文生图/转绘_2026876025988194306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/LTX25单图生视频二_2101996495485624321.json、视频生成/图生视频/LTX25单图生视频第一版_2101966214657564674.json、视频生成/图生视频/LTX_2.5_图生视频_2090673250572521473.json、视频生成/图生视频/Ltx2.5图生视频-极速版-高质量-自动扩写提示词_2089690744842969089.json、视频生成/图生视频/ltx2.5图文生视频_2111289590802903041.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein-9B _ 4B 极速文生图，胶片质感_2012177114430181377.json、图片生成/文生图/Flux2-Klein-9B 高性能文生图生成模型_2084850465476538369.json、图片生成/文生图/Flux2-Klein-9B文生图2K直出_2013150879507030017.json、图片生成/文生图/Flux2-Klein-9B文生图2k直出_2012016993716670466.json、图片生成/文生图/Flux2-Klein-9B文生图_2059114128396079105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：28
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 28 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVDualCFGGuider`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `TextGenerateLTX2Prompt`
+- `ConditioningZeroOut`
+- `KSampler`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 16/17 个有
-- `LTXVImgToVideoInplace` —— 16/17 个有
-- `LoadImage` —— 16/17 个有
-- `PrimitiveBoolean` —— 16/17 个有
-- `PrimitiveInt` —— 16/17 个有
-- `PrimitiveStringMultiline` —— 16/17 个有
-- `ResizeImageMaskNode` —— 16/17 个有
-- `LTXVLatentUpsampler` —— 15/17 个有
-- `LTXVPreprocess` —— 15/17 个有
-- `LatentUpscaleModelLoader` —— 15/17 个有
-- `ResolutionSelector` —— 15/17 个有
-- `CreateVideo` —— 13/17 个有
-- `SaveVideo` —— 13/17 个有
-- `PreviewAny` —— 12/17 个有
-- `PurgeVRAM_UTK` —— 5/17 个有
-- `VHS_VideoCombine` —— 4/17 个有
-- `ImageResizeKJv2` —— 2/17 个有
-- `StringConcatenate` —— 2/17 个有
-- `孤海注释` —— 2/17 个有
-- `GetImageSize` —— 1/17 个有
-- `Int` —— 1/17 个有
-- `JjkText` —— 1/17 个有
-- `LTX2AttentionTunerPatch` —— 1/17 个有
-- `PathchSageAttentionKJ` —— 1/17 个有
-- `Text` —— 1/17 个有
-- `easy cleanGpuUsed` —— 1/17 个有
-- `easy showAnything` —— 1/17 个有
+- `EmptyFlux2LatentImage` —— 27/28 个有
+- `PrimitiveStringMultiline` —— 26/28 个有
+- `LoadImage` —— 3/28 个有
+- `RH_Captioner` —— 2/28 个有
+- `Anything Everywhere` —— 1/28 个有
+- `ImageScaleDownToSize` —— 1/28 个有
+- `PreviewAny` —— 1/28 个有
+- `QwenImageLatentAspectRatio` —— 1/28 个有
+- `ShowText` —— 1/28 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 17 | 100% |
-| 高度 | 25 | 24 - 25 | 17 | 99% |
+| 采样步数 | 6 | 4 - 6 | 28 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 28 | 100% |
+| 采样算法 | euler | - | 28 | 100% |
+| 调度器 | simple | - | 28 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 28 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 28/28 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，17 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，17 个样本，取值集中（一致性 99%）
+- 采样步数 中位数 6，观测区间 4 - 6，28 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，28 个样本，一致性 100%
+- 调度器 最常用 simple，28 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
+- 高发问题（28/28 个样本）：Steps较低可能导致细节不足

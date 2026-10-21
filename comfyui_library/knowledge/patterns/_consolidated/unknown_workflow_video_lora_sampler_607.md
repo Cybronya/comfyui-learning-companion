@@ -3,75 +3,62 @@ name: unknown_workflow_video_lora_sampler_607
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.954667
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CFGGuider, CLIPTextEncode, DF_Int_to_Float, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, JWIntegerToString, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PreviewAudio, RandomNoise, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SamplerCustomAdvanced, SamplerEulerAncestral, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy getNode, easy int, easy setNode, easy showAnything]
+coverage: 0.996333
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float, easy getNode, easy int, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2051564460493557762.json, 视频生成/图生视频/2051946649047576577.json, 视频生成/图生视频/2051952349974937602.json]
+members: [视频生成/图生视频/2046138080263938050.json, 视频生成/图生视频/2048930807976300546.json, 视频生成/图生视频/2044379140505214978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_607
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2051564460493557762.json、视频生成/图生视频/2051946649047576577.json、视频生成/图生视频/2051952349974937602.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2046138080263938050.json、视频生成/图生视频/2048930807976300546.json、视频生成/图生视频/2044379140505214978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `DF_Int_to_Float`
+- `CR Float To Integer`
 - `DiffusionModelLoaderKJ`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
 - `ImageResizeKJv2`
-- `Int`
-- `JWIntegerToString`
 - `KSamplerSelect`
 - `LTX2_NAG`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplaceKJ`
 - `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
 - `MathExpression|pysssss`
-- `PreviewAudio`
 - `RandomNoise`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
 - `SamplerCustomAdvanced`
-- `SamplerEulerAncestral`
-- `SetLatentNoiseMask`
-- `ShowAnything|Mie`
-- `SolidMask`
 - `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy float`
 - `easy getNode`
 - `easy int`
 - `easy setNode`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `JjkText` —— 1/3 个有
+- `JWFloat` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LTXVScheduler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
 
 ## 典型参数
 

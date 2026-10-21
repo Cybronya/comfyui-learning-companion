@@ -3,29 +3,35 @@ name: unknown_workflow_generic_750
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [SaveVideo, workflow>参数设置组, workflow>工作组]
+coverage: 0.538
+common_nodes: [Bjornulf_ShowStringText, Comfly_Flux_Kontext, GetNode, LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage, SetNode, ShowText|pysssss]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 -文生视频-封装版-专业打斗_2089390108935020546.json, 视频生成/文生视频/MiniMax H3 -文生视频-封装版-驯龙骑士_2089375960251592706.json]
+members: [图片生成/文生图/1928512876661841921.json, 图片生成/文生图/黑森林- Flux kontext 一句话图像编辑 _ RunningHub专用节点工作流_1928512876661841921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_750
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 -文生视频-封装版-专业打斗_2089390108935020546.json、视频生成/文生视频/MiniMax H3 -文生视频-封装版-驯龙骑士_2089375960251592706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1928512876661841921.json、图片生成/文生图/黑森林- Flux kontext 一句话图像编辑 _ RunningHub专用节点工作流_1928512876661841921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `SaveVideo`
-- `workflow>参数设置组`
-- `workflow>工作组`
+- `Bjornulf_ShowStringText`
+- `Comfly_Flux_Kontext`
+- `GetNode`
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
+- `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
 
 ## 典型参数
 

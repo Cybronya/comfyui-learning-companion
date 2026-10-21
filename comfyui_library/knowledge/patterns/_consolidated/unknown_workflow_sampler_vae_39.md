@@ -1,50 +1,47 @@
 ---
 name: unknown_workflow_sampler_vae_39
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.53
-common_nodes: [CreateVideo, EmptyImage, GetImageSize, GetNode, ImageResize+, ImageResizeKJv2, ImpactSwitch, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAFirstFrameCondition, RHMiniMaxH3FL2VALastFrameCondition, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo, SetNode, easy anythingIndexSwitch, easy int]
+coverage: 0.671
+common_nodes: [DualCLIPLoader, DyPE_Condition, DyPE_Encode, DyPE_KSampler, DyPE_Model, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091123170408493058.json, 视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091159734362660866.json, 视频生成/图生视频/MiniMax H3 FL2VA-首尾帧生视频-最新_2085282069546094594.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频-首尾帧可选_2084449947558170626.json]
+missing: [CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2]
+members: [图片生成/文生图/1984246530523742209.json, 图片生成/文生图/1984409596913664002.json, 图片生成/文生图/1984816251937636354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_39
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091123170408493058.json、视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091159734362660866.json、视频生成/图生视频/MiniMax H3 FL2VA-首尾帧生视频-最新_2085282069546094594.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频-首尾帧可选_2084449947558170626.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1984246530523742209.json、图片生成/文生图/1984409596913664002.json、图片生成/文生图/1984816251937636354.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CreateVideo`
-- `EmptyImage`
-- `GetImageSize`
-- `GetNode`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `LoadImage`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3FL2VAEncode`
-- `RHMiniMaxH3FL2VAFirstFrameCondition`
-- `RHMiniMaxH3FL2VALastFrameCondition`
-- `RHMiniMaxH3FL2VAModelLoader`
-- `RHMiniMaxH3FL2VATarget`
-- `RHMiniMaxH3FL2VATextEncoderLoader`
-- `RHMiniMaxH3FL2VAVAELoader`
-- `SaveVideo`
-- `SetNode`
-- `easy anythingIndexSwitch`
-- `easy int`
+全部 3 个 workflow 都包含：
+- `DualCLIPLoader`
+- `DyPE_Condition`
+- `DyPE_Encode`
+- `DyPE_KSampler`
+- `DyPE_Model`
+- `SaveImage`
+- `VAEDecode`
+- `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -56,4 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text、LayerUtility: ImageScaleByAspectRatio V2

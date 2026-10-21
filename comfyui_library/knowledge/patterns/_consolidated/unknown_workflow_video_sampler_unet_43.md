@@ -1,80 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_unet_43
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.889143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Video Duration Calculator, easy MiniMaxH3ReferenceToVideoBridge, easy imageCount, easy mathInt, easy showAnything]
+coverage: 0.96725
+common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TextEncodeHunyuanVideo_ImageToVideo, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2101623619452489730.json, 视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2104536932100435969.json, 视频生成/图生视频/开源版MinimaxH3视频编辑去除人物去除物品去除元素_2086518899704680449.json, 视频生成/图生视频/开源版MinimaxH3视频编辑视频参考编辑人物替换人物替换物品替换元素等_2086528754960125953.json, 视频生成/视频生视频/MinimaxH3去水印字幕图标+人物替换V1_2087705335275540481.json, 视频生成/视频生视频/MinimaxH3视频参考编辑人物替换T1_2086361427148886017.json, 视频生成/视频生视频/MinimaxH3视频编辑V1去除背景中的人物_2085963862112817154.json]
+members: [视频生成/图生视频/1897656263986073602.json, 视频生成/图生视频/2030823409466220546.json, 视频生成/图生视频/2046840508722454530.json, 视频生成/图生视频/2031906239327772674.json, 视频生成/图生视频/1897633108676530177.json, 视频生成/图生视频/混元视频 I2V 图生视频 Comfyorg 官方工作流_1897641777338208257.json, 视频生成/图生视频/2041316621637128193.json, 视频生成/图生视频/2052192560470339585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_43
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2101623619452489730.json、视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1_2104536932100435969.json、视频生成/图生视频/开源版MinimaxH3视频编辑去除人物去除物品去除元素_2086518899704680449.json、视频生成/图生视频/开源版MinimaxH3视频编辑视频参考编辑人物替换人物替换物品替换元素等_2086528754960125953.json、视频生成/视频生视频/MinimaxH3去水印字幕图标+人物替换V1_2087705335275540481.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1897656263986073602.json、视频生成/图生视频/2030823409466220546.json、视频生成/图生视频/2046840508722454530.json、视频生成/图生视频/2031906239327772674.json、视频生成/图生视频/1897633108676530177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Float to Int`
-- `GetVideoComponents`
-- `ImageConcatenate_UTK`
-- `ImageFromBatch`
-- `Int`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `HunyuanImageToVideo`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RHHiddenNodes`
+- `LoadImage`
+- `ModelSamplingSD3`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `Text`
+- `TextEncodeHunyuanVideo_ImageToVideo`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `Video Duration Calculator`
-- `easy MiniMaxH3ReferenceToVideoBridge`
-- `easy imageCount`
-- `easy mathInt`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ExtractStoryboards_xuhuan1024` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `LoadImage` —— 5/7 个有
-- `InspyrenetRembg` —— 4/7 个有
-- `easy indexAnything` —— 4/7 个有
-- `CR Image Grid Panel` —— 2/7 个有
-- `EmptyImage` —— 1/7 个有
-- `FlashVSR_SM_KSampler` —— 1/7 个有
-- `FlashVSR_SM_Model` —— 1/7 个有
-- `JWInteger` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
+- `Int` —— 5/8 个有
+- `TextInput_` —— 5/8 个有
+- `JjkText` —— 2/8 个有
+- `ColorMatch` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `PatchModelPatcherOrder` —— 1/8 个有
+- `PathchSageAttentionKJ` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4.24096e+08 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | randomize | - | 1 | 100% |
-| 采样算法 | 2 | - | 1 | 100% |
-| 调度器 | 3.5 | - | 1 | 100% |
-| 重绘幅度 | 11 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,5 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 风险：采样步数 观测到 4.24096e+08，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

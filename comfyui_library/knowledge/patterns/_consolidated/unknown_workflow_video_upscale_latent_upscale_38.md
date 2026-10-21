@@ -3,74 +3,100 @@ name: unknown_workflow_video_upscale_latent_upscale_38
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.465
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.7248
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SolidMask, Text Multiline, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2082528336852635649.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json, 视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json, 视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json, 视频生成/图生视频/LTX2.3-best_faceid_charsheet-人脸高一致性_2083089483041427458.json, 视频生成/图生视频/LTX2.3-best_faceid_ganloss-人脸高一致性_2083196415471345666.json, 视频生成/图生视频/2080574328030191617.json, 视频生成/图生视频/2080581115986931714.json, 视频生成/图生视频/2080566370382729217.json]
+members: [视频生成/图生视频/2037924916380573698.json, 视频生成/图生视频/2035021083685953537.json, 视频生成/图生视频/2031678223054016514.json, 视频生成/图生视频/2033338918136975362.json, 视频生成/图生视频/2031935763281092609.json, 视频生成/文生视频/LTX2.3-AIO-Lite版视频工作流_2034809834549288962.json, 视频生成/文生视频/LTX2.3-AIO-低显存版视频工作流_2037429372935737346.json, 视频生成/文生视频/LTX2.3-AIO视频工作流_2032019073520902145.json, 视频生成/文生视频/LTX2.3-AIO视频工作流_V2（无字幕版）_2050758511885332481.json, 视频生成/文生视频/LTX2.3长视频生成（PromptRelay增强）_2049157702005297154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_38
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2082528336852635649.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json、视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json、视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2037924916380573698.json、视频生成/图生视频/2035021083685953537.json、视频生成/图生视频/2031678223054016514.json、视频生成/图生视频/2033338918136975362.json、视频生成/图生视频/2031935763281092609.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImageResizeKJv2`
+- `INTConstant`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoraLoaderModelOnly`
+- `LoadImage`
 - `ManualSigmas`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
+- `SolidMask`
+- `Text Multiline`
+- `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXIdentityOverlapConditioning` —— 9/10 个有
-- `LoadImage` —— 9/10 个有
-- `PreviewImage` —— 9/10 个有
+- `DualCLIPLoader` —— 9/10 个有
+- `GetNode` —— 9/10 个有
+- `LTXVAudioVAEEncode` —— 9/10 个有
+- `LTXVPreprocess` —— 9/10 个有
+- `LoadAudio` —— 9/10 个有
 - `PrimitiveBoolean` —— 9/10 个有
-- `RMBG` —— 9/10 个有
-- `BasicScheduler` —— 8/10 个有
+- `ResizeImageMaskNode` —— 9/10 个有
+- `ResizeImagesByLongerEdge` —— 9/10 个有
+- `SetLatentNoiseMask` —— 9/10 个有
+- `SetNode` —— 9/10 个有
+- `TrimAudioDuration` —— 9/10 个有
+- `UNETLoader` —— 9/10 个有
+- `easy showAnything` —— 9/10 个有
 - `PrimitiveInt` —— 8/10 个有
-- `LTXVAudioVAEDecode` —— 7/10 个有
-- `LTXVCropGuides` —— 7/10 个有
-- `VAEDecodeTiled` —— 7/10 个有
-- `LTXTiledSampler` —— 6/10 个有
-- `LTXVLatentUpsamplerTiled` —— 6/10 个有
-- `SimpleMath+` —— 3/10 个有
-- `Int` —— 2/10 个有
-- `孤海注释` —— 2/10 个有
-- `GetImageRangeFromBatch` —— 1/10 个有
-- `ImageConcanate` —— 1/10 个有
+- `ComfyMathExpression` —— 7/10 个有
+- `LTXVImgToVideoInplaceKJ` —— 7/10 个有
+- `PathchSageAttentionKJ` —— 7/10 个有
+- `Switch any [Crystools]` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `LoraLoaderModelOnly` —— 6/10 个有
+- `PreviewAny` —— 6/10 个有
+- `CM_IntToFloat` —— 4/10 个有
+- `llama_cpp_instruct_adv` —— 4/10 个有
+- `llama_cpp_model_loader` —— 4/10 个有
+- `LTXVImgToVideoConditionOnly` —— 3/10 个有
+- `LTXVImgToVideoInplace` —— 3/10 个有
+- `Lora Loader Stack (rgthree)` —— 3/10 个有
+- `RIFEInterpolation` —— 3/10 个有
+- `RTXVideoSuperResolution` —— 3/10 个有
+- `TextGenerateLTX2Prompt` —— 3/10 个有
+- `math_calculate` —— 3/10 个有
+- `CM_FloatToInt` —— 2/10 个有
+- `LTX2_NAG` —— 2/10 个有
+- `PlaySound|pysssss` —— 2/10 个有
+- `PrimitiveFloat` —— 2/10 个有
+- `PromptRelayEncodeTimeline` —— 2/10 个有
+- `VAEDecode` —— 2/10 个有
+- `easy anythingIndexSwitch` —— 2/10 个有
+- `1hew_AnySwitchSelect` —— 1/10 个有
+- `DualCLIPLoaderGGUF` —— 1/10 个有
+- `FrameSelector` —— 1/10 个有
+- `ImageResizeKJv2` —— 1/10 个有
+- `ImpactFloat` —— 1/10 个有
 - `LTXVAddGuideMulti` —— 1/10 个有
-- `LTXVImgToVideoInplace` —— 1/10 个有
-- `LTXVLatentUpsampler` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `VAEEncode` —— 1/10 个有
-- `VHS_LoadVideo` —— 1/10 个有
+- `LTXVChunkFeedForward` —— 1/10 个有
+- `LTXVScheduler` —— 1/10 个有
+- `PainterVRAM` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `UnetLoaderGGUF` —— 1/10 个有
+- `VRAM_Debug` —— 1/10 个有
 
 ## 典型参数
 

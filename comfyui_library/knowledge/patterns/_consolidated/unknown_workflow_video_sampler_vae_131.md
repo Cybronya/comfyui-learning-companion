@@ -3,51 +3,64 @@ name: unknown_workflow_video_sampler_vae_131
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.548
-common_nodes: [Float, GetNode, ImpactSwitch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.88125
+common_nodes: [CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTextEmbedBridge, HyVideoVAELoader, ImageConcatMulti, ImageResizeKJv2, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, PreviewImage, TTP_Expand_And_Mask, TextEncodeHunyuanVideo_ImageToVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1940962816096681985.json, 视频生成/图生视频/1967535082640642050.json, 视频生成/图生视频/1943253779137372162.json, 视频生成/图生视频/1967512042116616194.json]
+members: [视频生成/图生视频/1920816931887321089.json, 视频生成/图生视频/双主体加速HuyuanCustom强一致性高稳定性视频编辑V3_1921095971592159233.json, 视频生成/图生视频/1923619819957252098.json, 视频生成/图生视频/1920773732279980033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_131
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1940962816096681985.json、视频生成/图生视频/1967535082640642050.json、视频生成/图生视频/1943253779137372162.json、视频生成/图生视频/1967512042116616194.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1920816931887321089.json、视频生成/图生视频/双主体加速HuyuanCustom强一致性高稳定性视频编辑V3_1921095971592159233.json、视频生成/图生视频/1923619819957252098.json、视频生成/图生视频/1920773732279980033.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Float`
-- `GetNode`
-- `ImpactSwitch`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTextEmbedBridge`
+- `HyVideoVAELoader`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `PreviewImage`
+- `TTP_Expand_And_Mask`
+- `TextEncodeHunyuanVideo_ImageToVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageMaskScaleAsV2` —— 2/4 个有
-- `LoadWanVideoClipTextEncoder` —— 2/4 个有
-- `WanVideoClipVisionEncode` —— 2/4 个有
-- `WanVideoImageToVideoEncode` —— 2/4 个有
-- `WanVideoVACEEncode` —— 2/4 个有
-- `WanVideoVACEStartToEndFrame` —— 2/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `HyVideoLoraSelect` —— 3/4 个有
+- `HyVideoTeaCache` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `JWImageResizeByLongerSide` —— 3/4 个有
+- `HunyuanVideoFresca` —— 2/4 个有
+- `HunyuanVideoSLG` —— 2/4 个有
+- `HyVideoTorchCompileSettings` —— 2/4 个有
+- `Bjornulf_ShowJson` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `UpscaleModelLoader` —— 1/4 个有
 
 ## 典型参数
 

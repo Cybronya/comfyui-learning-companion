@@ -3,65 +3,70 @@ name: unknown_workflow_video_sampler_vae_23
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.907
-common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.878077
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019998989524934657.json, 视频生成/图生视频/1950137059535183873.json, 视频生成/图生视频/1951966233606434817.json, 视频生成/图生视频/1979786128704311297.json, 视频生成/图生视频/1981252954491617282.json, 视频生成/图生视频/1979812385382895618.json, 视频生成/图生视频/1979805991325831170.json, 视频生成/图生视频/1974477475709366273.json, 视频生成/图生视频/1975403680918843394.json, 视频生成/图生视频/1976126127594975233.json, 视频生成/图生视频/1974460906073665538.json, 视频生成/图生视频/1953401583553925122.json, 视频生成/图生视频/1982464473032212482.json]
+members: [视频生成/图生视频/1987166609188040706.json, 视频生成/图生视频/1958063092703907841.json, 视频生成/图生视频/2014497648656523265.json, 视频生成/图生视频/1988439303661469698.json, 视频生成/图生视频/2003092894418370562.json, 视频生成/图生视频/2018702863702167554.json, 视频生成/图生视频/2018674445128310785.json, 视频生成/图生视频/1985744717117890562.json, 视频生成/图生视频/2014949900475174914.json, 视频生成/图生视频/2061786776032866305.json, 视频生成/图生视频/2081267787426787330.json, 视频生成/图生视频/Infinite数字人对口型（音频驱动 表情自然 可编辑动作）_2110374253521625090.json, 视频生成/图生视频/2011801795986722818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_23
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2019998989524934657.json、视频生成/图生视频/1950137059535183873.json、视频生成/图生视频/1951966233606434817.json、视频生成/图生视频/1979786128704311297.json、视频生成/图生视频/1981252954491617282.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1987166609188040706.json、视频生成/图生视频/1958063092703907841.json、视频生成/图生视频/2014497648656523265.json、视频生成/图生视频/1988439303661469698.json、视频生成/图生视频/2003092894418370562.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoSetLoRAs` —— 12/13 个有
-- `WanVideoTorchCompileSettings` —— 12/13 个有
-- `PrimitiveInt` —— 10/13 个有
-- `CR Text` —— 9/13 个有
-- `SimpleMath+` —— 9/13 个有
-- `WanVideoLoraSelect` —— 8/13 个有
-- `CLIPVisionLoader` —— 6/13 个有
-- `ShowText|pysssss` —— 6/13 个有
-- `WanVideoClipVisionEncode` —— 6/13 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 5/13 个有
-- `ImageBatchMultiple+` —— 5/13 个有
-- `WanVideoContextOptions` —— 4/13 个有
-- `WanVideoEncodeLatentBatch` —— 4/13 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/13 个有
-- `GIMMVFI_interpolate` —— 3/13 个有
-- `ImageFromBatch+` —— 3/13 个有
-- `PreviewImage` —— 3/13 个有
-- `VHS_LoadVideo` —— 2/13 个有
-- `VHS_VideoInfo` —— 2/13 个有
-- `AILab_QwenVL` —— 1/13 个有
-- `Note Plus (mtb)` —— 1/13 个有
-- `RH_Nano_Banana_Image2Image` —— 1/13 个有
-- `SaveImage` —— 1/13 个有
+- `AudioCrop` —— 12/13 个有
+- `LoadWanVideoT5TextEncoder` —— 12/13 个有
+- `WanVideoLoraSelect` —— 12/13 个有
+- `WanVideoTextEncode` —— 12/13 个有
+- `AudioSeparation` —— 11/13 个有
+- `GetImageSizeAndCount` —— 11/13 个有
+- `JWInteger` —— 11/13 个有
+- `PreviewAny` —— 11/13 个有
+- `CR Prompt Text` —— 10/13 个有
+- `JWFloat` —— 9/13 个有
+- `easy showAnything` —— 5/13 个有
+- `AudioToFPS` —— 4/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/13 个有
+- `SimpleMath+` —— 3/13 个有
+- `INTConstant` —— 2/13 个有
+- `Audio Duration (mtb)` —— 1/13 个有
+- `Float` —— 1/13 个有
+- `GrowMaskWithBlur` —— 1/13 个有
+- `MaskPreview+` —— 1/13 个有
+- `PrimitiveFloat` —— 1/13 个有
+- `RH_GetAudioDuration` —— 1/13 个有
+- `Sa2VANodeTpl` —— 1/13 个有
+- `ToInt` —— 1/13 个有
+- `WanVideoLoraSelectMulti` —— 1/13 个有
+- `WanVideoTextEncodeCached` —— 1/13 个有
+- `easy cleanGpuUsed` —— 1/13 个有
+- `easy int` —— 1/13 个有
 
 ## 典型参数
 

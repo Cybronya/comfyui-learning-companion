@@ -1,57 +1,81 @@
 ---
 name: unknown_workflow_video_sampler_vae_17
 type: Unknown Workflow
-frequency: 15
+frequency: 14
 level: moderate
-coverage: 0.9282
-common_nodes: [ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.622429
+common_nodes: [Anything Everywhere, GetNode, ImageResize+, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/2019437337008148481.json, 视频生成/图生视频/1927590039822438402.json, 视频生成/图生视频/1917815570186567682.json, 视频生成/图生视频/1925799442136666113.json, 视频生成/图生视频/1927551955353374722.json, 视频生成/图生视频/1916395426835005442.json, 视频生成/图生视频/1927541511028903938.json, 视频生成/图生视频/1927944176032464897.json, 视频生成/图生视频/1915051981709242369.json, 视频生成/图生视频/2039636071985713154.json, 视频生成/图生视频/2064931253647929346.json, 视频生成/图生视频/1934089550950260738.json, 视频生成/图生视频/电商带货FusionX-Phantom加速版14B_2108761890527735810.json, 视频生成/图生视频/1934241189509951489.json, 视频生成/文生视频/1935520036046176257.json]
+missing: [CR String To Number, CR Text, CR Text Concatenate, ImageCASharpening+, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, easy cleanGpuUsed, easy int, ImageResize+]
+members: [视频生成/图生视频/1989163247343382530.json, 视频生成/图生视频/1941491329644052481.json, 视频生成/图生视频/1935089059322896386.json, 视频生成/图生视频/1935147311754321921.json, 视频生成/图生视频/2039609556543741954.json, 视频生成/图生视频/1952905614798295042.json, 视频生成/图生视频/1952534346064441346.json, 视频生成/图生视频/1951088586961694722.json, 视频生成/图生视频/2029075141904306178.json, 视频生成/图生视频/2030461301822070785.json, 视频生成/图生视频/2041390268406046721.json, 视频生成/图生视频/2012093297564585986.json, 视频生成/文生视频/1978980050555015169.json, 视频生成/文生视频/1958341618350899202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2019437337008148481.json、视频生成/图生视频/1927590039822438402.json、视频生成/图生视频/1917815570186567682.json、视频生成/图生视频/1925799442136666113.json、视频生成/图生视频/1927551955353374722.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1989163247343382530.json、视频生成/图生视频/1941491329644052481.json、视频生成/图生视频/1935089059322896386.json、视频生成/图生视频/1935147311754321921.json、视频生成/图生视频/2039609556543741954.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `ImagePadKJ`
-- `ImageResizeKJ`
+全部 14 个 workflow 都包含：
+- `Anything Everywhere`
+- `GetNode`
+- `ImageResize+`
+- `Int`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 14/15 个有
-- `Primitive integer [Crystools]` —— 12/15 个有
-- `ImageConcatMulti` —— 10/15 个有
-- `PreviewImage` —— 10/15 个有
-- `Text Multiline` —— 10/15 个有
-- `WanVideoTeaCache` —— 8/15 个有
-- `easy clearCacheAll` —— 5/15 个有
-- `INTConstant` —— 3/15 个有
-- `CR Prompt Text` —— 2/15 个有
-- `SetNode` —— 2/15 个有
-- `ImageResizeKJv2` —— 1/15 个有
-- `RH_Translator` —— 1/15 个有
-- `WanVideoVRAMManagement` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
+- `CLIPVisionLoader` —— 12/14 个有
+- `RHHiddenNodes` —— 12/14 个有
+- `WanVideoClipVisionEncode` —— 12/14 个有
+- `WanVideoImageToVideoEncode` —— 12/14 个有
+- `WanVideoLoraSelect` —— 12/14 个有
+- `CogVideoEnhanceAVideo` —— 11/14 个有
+- `WanVideoExperimentalArgs` —— 11/14 个有
+- `WanVideoSLG` —— 11/14 个有
+- `CR Text` —— 9/14 个有
+- `ColorCorrectOfUtils` —— 9/14 个有
+- `CreateCFGScheduleFloatList` —— 9/14 个有
+- `ImageCASharpening+` —— 9/14 个有
+- `JWInteger` —— 9/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 9/14 个有
+- `easy cleanGpuUsed` —— 9/14 个有
+- `PreviewImage` —— 8/14 个有
+- `CR String To Number` —— 7/14 个有
+- `FluxResolutionNode` —— 7/14 个有
+- `InversionDemoLazyIndexSwitch` —— 7/14 个有
+- `WanVideoApplyNAG` —— 7/14 个有
+- `WanVideoTextEncode` —— 7/14 个有
+- `WanVideoTextEncodeSingle` —— 7/14 个有
+- `easy int` —— 7/14 个有
+- `easy showAnything` —— 7/14 个有
+- `CR Text Concatenate` —— 5/14 个有
+- `WanVideoTorchCompileSettings` —— 5/14 个有
+- `ShowText|pysssss` —— 4/14 个有
+- `ImageConcanate` —— 3/14 个有
+- `easy textSwitch` —— 3/14 个有
+- `GetImageSizeAndCount` —— 2/14 个有
+- `WanVideoVACEEncode` —— 2/14 个有
+- `WanVideoVACEStartToEndFrame` —— 2/14 个有
+- `easy imageConcat` —— 2/14 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/14 个有
+- `SaveImage` —— 1/14 个有
+- `WanVideoSetLoRAs` —— 1/14 个有
 
 ## 典型参数
 
@@ -63,4 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR String To Number、CR Text、CR Text Concatenate、ImageCASharpening+、LayerUtility: PurgeVRAM V2

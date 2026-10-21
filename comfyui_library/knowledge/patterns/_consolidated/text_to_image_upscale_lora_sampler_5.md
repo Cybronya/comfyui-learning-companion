@@ -1,116 +1,75 @@
 ---
 name: text_to_image_upscale_lora_sampler_5
 type: Text To Image
-frequency: 6
-level: strong
-coverage: 0.871667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImage, If ANY execute A else B, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTShotReplace, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextLoadLatent, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, Yuan_RTXVideoUpscaleH3, solarL_SaveImagesToZip, 孤海注释]
+frequency: 12
+level: moderate
+coverage: 0.943333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/全栈式短剧生成V4.2.2｜MiniMax-H3图生视频制作_2092600480978530306.json, 视频生成/图生视频/全栈式短剧生成｜MiniMax-H3一分钟直出图生视频_2091615876062736386.json, 视频生成/图生视频/短剧直出1分钟｜MiniMax-H3全栈式生成V4.2.2图生视频_2092602046498299905.json, 视频生成/文生视频/全栈式短剧生成 MiniMax-H3 V4.2.3直出一分钟全节点注释_2094181672697810945.json, 视频生成/文生视频/全栈式短剧生成V4.2.2｜MiniMax-H3一分钟直出全节点注释_2091311737495707649.json, 视频生成/文生视频/短剧版本直出1分钟｜MiniMax-H3全栈式生成V4.2.3注释版_2096271170562772993.json]
+members: [图片生成/文生图/二次元人物生成_2088191460100362241.json, 图片生成/文生图/二次元真人(男生）_2088399659025911810.json, 图片生成/文生图/二次元真人_2088197741246767105.json, 图片生成/文生图/千问-文生图-高配精细_2097549428528869378.json, 图片生成/文生图/千问文生图 高质量 高清晰_2097963267984543745.json, 图片生成/文生图/千问文生图-电商专用_2108042168052043777.json, 图片生成/文生图/千问文生图_高质量_高清晰_2098219987013033986.json, 图片生成/文生图/千问文生图电商产品_2090229875432050689.json, 图片生成/文生图/千问超写实文生图（AI仿真人漫剧资产制作）_2021440026743148546.json, 图片生成/文生图/文生图-人像生成写实风格_2087860545537011714.json, 图片生成/文生图/文生图-人像生成写实风格_2088186685191450626.json, 图片生成/文生图/文生图-人像生成写实风格_2091172485961175041.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全栈式短剧生成V4.2.2｜MiniMax-H3图生视频制作_2092600480978530306.json、视频生成/图生视频/全栈式短剧生成｜MiniMax-H3一分钟直出图生视频_2091615876062736386.json、视频生成/图生视频/短剧直出1分钟｜MiniMax-H3全栈式生成V4.2.2图生视频_2092602046498299905.json、视频生成/文生视频/全栈式短剧生成 MiniMax-H3 V4.2.3直出一分钟全节点注释_2094181672697810945.json、视频生成/文生视频/全栈式短剧生成V4.2.2｜MiniMax-H3一分钟直出全节点注释_2091311737495707649.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/二次元人物生成_2088191460100362241.json、图片生成/文生图/二次元真人(男生）_2088399659025911810.json、图片生成/文生图/二次元真人_2088197741246767105.json、图片生成/文生图/千问-文生图-高配精细_2097549428528869378.json、图片生成/文生图/千问文生图 高质量 高清晰_2097963267984543745.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImage`
-- `If ANY execute A else B`
-- `JjkText`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTShotReplace`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_H3MotionContext`
-- `Yuan_H3MotionContextLoadLatent`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_MiniMaxH3Video`
-- `Yuan_RTXVideoUpscaleH3`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 5/6 个有
-- `EmptyAudio` —— 5/6 个有
-- `Int` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `easy batchAnything` —— 5/6 个有
-- `easy forLoopEnd` —— 5/6 个有
-- `easy forLoopStart` —— 5/6 个有
-- `easy isNone` —— 5/6 个有
-- `ComfyMathExpression` —— 3/6 个有
-- `CreateVideo` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `PrimitiveFloat` —— 3/6 个有
-- `SaveVideo` —— 3/6 个有
-- `ShowText|pysssss` —— 3/6 个有
-- `YuanPrimitive` —— 3/6 个有
-- `easy mathInt` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `LoadImage` —— 2/6 个有
-- `PrimitiveBoolean` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `RH_LLMAPI_Pro_Node` —— 2/6 个有
-- `CM_IntUnaryOperation` —— 1/6 个有
-- `DisTorchPurgeVRAMV2` —— 1/6 个有
-- `MultiMergeVideos` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `PreviewImage` —— 10/12 个有
+- `CFGNorm` —— 6/12 个有
+- `CLIPLoader` —— 6/12 个有
+- `CLIPLoaderGGUF` —— 6/12 个有
+- `KOOK_ImageCompression` —— 6/12 个有
+- `TextInputBasic` —— 5/12 个有
+- `Image Comparer (rgthree)` —— 1/12 个有
+- `MuyeTextEditOutput` —— 1/12 个有
+- `QwenImageLatentAspectRatio` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
-| 采样算法 | er_sde | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 896 | 768 - 2304 | 12 | 57% |
+| 高度 | 1024 | 904 - 1728 | 12 | 76% |
+| 采样步数 | 11.5 | 6 - 12 | 12 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 12 | 87% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 896，观测区间 768 - 2304，12 个样本
+- 高度 中位数 1024，观测区间 904 - 1728，12 个样本
+- 采样步数 中位数 11.5，观测区间 6 - 12，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，12 个样本，取值集中（一致性 87%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

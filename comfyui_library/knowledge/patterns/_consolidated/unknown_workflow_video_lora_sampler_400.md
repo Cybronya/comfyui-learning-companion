@@ -3,38 +3,35 @@ name: unknown_workflow_video_lora_sampler_400
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9342
-common_nodes: [CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.6726
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/高动态口播数字人 InfiniteTalk+IndexTTS2 （Lightx2v+Rcm）_2090261460101459969.json, 视频生成/图生视频/1970484627771170817.json, 视频生成/图生视频/1969431253688721410.json, 视频生成/图生视频/1980902275004678145.json, "音频生成/音频生成/MV,音乐达人，高动态音乐数字人_2046930658349555714.json"]
+members: [数字人/数字人/音频趋动 infinite talk wan2.1_2015430092859645953.json, 视频生成/图生视频/1972120402749222914.json, 视频生成/图生视频/1958218756659036162.json, 视频生成/图生视频/1971064636227391489.json, 视频生成/图生视频/2004504763003793409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_400
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/高动态口播数字人 InfiniteTalk+IndexTTS2 （Lightx2v+Rcm）_2090261460101459969.json、视频生成/图生视频/1970484627771170817.json、视频生成/图生视频/1969431253688721410.json、视频生成/图生视频/1980902275004678145.json、音频生成/音频生成/MV,音乐达人，高动态音乐数字人_2046930658349555714.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/音频趋动 infinite talk wan2.1_2015430092859645953.json、视频生成/图生视频/1972120402749222914.json、视频生成/图生视频/1958218756659036162.json、视频生成/图生视频/1971064636227391489.json、视频生成/图生视频/2004504763003793409.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
 - `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `PreviewAny`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -43,32 +40,31 @@ source: knowledge_consolidation
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
 - `AudioCrop` —— 4/5 个有
-- `AudioSeparation` —— 4/5 个有
-- `GetImageSizeAndCount` —— 4/5 个有
-- `JWInteger` —— 4/5 个有
-- `easy int` —— 4/5 个有
-- `Bjornulf_ShowInt` —— 3/5 个有
-- `Display Int (rgthree)` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `Bjornulf_ShowFloat` —— 1/5 个有
+- `GetImageRangeFromBatch` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `VHS_LoadVideo` —— 4/5 个有
+- `WanVideoEncode` —— 4/5 个有
+- `JWIntegerToString` —— 3/5 个有
+- `MathExpression|pysssss` —— 3/5 个有
+- `PrimitiveInt` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `easy int` —— 2/5 个有
+- `Audio Duration (mtb)` —— 1/5 个有
+- `CR Text` —— 1/5 个有
 - `ColorMatch` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `IndexTTS2Run` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `Pick From Batch (mtb)` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
+- `ImageFromBatch` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
 - `PrimitiveStringMultiline` —— 1/5 个有
-- `SaveAudio` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
+- `TrimAudioDuration` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
 
 ## 典型参数
 

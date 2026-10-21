@@ -3,57 +3,56 @@ name: unknown_workflow_video_sampler_vae_162
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.971
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.812333
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065613874346418178.json, 视频生成/文生视频/1958330393214783490.json, 视频生成/文生视频/数字人对口型深情歌唱_1989702067088486402.json]
+members: [视频生成/图生视频/1930918811107524610.json, 视频生成/图生视频/1929529009221091330.json, 视频生成/图生视频/1933299852677947393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_162
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2065613874346418178.json、视频生成/文生视频/1958330393214783490.json、视频生成/文生视频/数字人对口型深情歌唱_1989702067088486402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1930918811107524610.json、视频生成/图生视频/1929529009221091330.json、视频生成/图生视频/1933299852677947393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkWav2VecEmbeds`
+- `MaskPreview`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `MultiTalkModelLoader` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `ImpactMakeImageBatch` —— 2/3 个有
+- `ImpactMakeMaskBatch` —— 2/3 个有
 - `WanVideoLoraSelect` —— 2/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `AudioCrop` —— 1/3 个有
-- `AudioCropProcessUTK` —— 1/3 个有
-- `AudioPlay` —— 1/3 个有
-- `MelBandRoFormerModelLoader` —— 1/3 个有
-- `MelBandRoFormerSampler` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `孤海图像缩放按像素` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
 
 ## 典型参数
 

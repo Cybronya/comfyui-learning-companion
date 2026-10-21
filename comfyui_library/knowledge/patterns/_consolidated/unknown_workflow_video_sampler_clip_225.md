@@ -3,66 +3,87 @@ name: unknown_workflow_video_sampler_clip_225
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.912
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.791
+common_nodes: [AIO_Preprocessor, GetImageSizeAndCount, GetNode, ImageBlend, ImageConcatMulti, ImageResizeKJ, JjkShowText, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, SetNode, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy clearCacheAll]
+problems: []
 missing: []
-members: [视频生成/图生视频/1962495712468549634.json, 视频生成/图生视频/1982022298729365506.json]
+members: [视频生成/图生视频/1912373863278411778.json, 视频生成/图生视频/1990585465176809474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_225
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1962495712468549634.json、视频生成/图生视频/1982022298729365506.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1912373863278411778.json、视频生成/图生视频/1990585465176809474.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `KSampler`
+- `AIO_Preprocessor`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageBlend`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `JjkShowText`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `VAEDecode`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `Primitive integer [Crystools]` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GIMMVFI_interpolate` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `LTXVPromptEnhancer` —— 1/2 个有
+- `LTXVPromptEnhancerLoader` —— 1/2 个有
+- `LayerMask: LoadFlorence2Model` —— 1/2 个有
+- `LayerUtility: Florence2Image2Prompt` —— 1/2 个有
+- `MeshGraphormer-DepthMapPreprocessor` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | sa_solver | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| LoRA 模型强度 | 1.2 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

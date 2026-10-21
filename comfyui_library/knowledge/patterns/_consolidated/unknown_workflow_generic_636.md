@@ -1,35 +1,43 @@
 ---
 name: unknown_workflow_generic_636
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LoadImage, SaveImage, Text]
+frequency: 3
+level: moderate
+coverage: 0.883333
+common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json, 图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json]
+members: [音频生成/音频生成/Qwen3 TTS 声音设计_克隆_2014901954920583169.json, 音频生成/音频生成/Qwen3 TTS 最强声音开源工作流整合包_2015600681440256001.json, 音频生成/音频生成/Qwen3-TTS 音色设计+音色克隆+自定义情绪_2014604292602208258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_636
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json、图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音设计_克隆_2014901954920583169.json、音频生成/音频生成/Qwen3 TTS 最强声音开源工作流整合包_2015600681440256001.json、音频生成/音频生成/Qwen3-TTS 音色设计+音色克隆+自定义情绪_2014604292602208258.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
-- `Text`
+全部 3 个 workflow 都包含：
+- `Apply Whisper`
+- `LoadAudio`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
-- `RH_SeedreamV5ProImageToImage` —— 1/2 个有
+- `AudioCrop` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `ImageLoader` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `TextInputNode` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

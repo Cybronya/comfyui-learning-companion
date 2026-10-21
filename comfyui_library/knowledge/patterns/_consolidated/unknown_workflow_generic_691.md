@@ -3,37 +3,28 @@ name: unknown_workflow_generic_691
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.915
-common_nodes: [Fast Groups Muter (rgthree), LoadImage, LoadVideo, RH_RhartVideoSparkvideo20ImageToVideo, RH_RhartVideoSparkvideo20MultimodalVideo, RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
+coverage: 1
+common_nodes: [QuiverTextToSVGNode, SaveSVGNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037504187344363522.json, 视频生成/图生视频/2038078670346133505.json]
+members: [comfyui-workflow-templates-json/api_quiver_arrow2_text_to_svg.json, comfyui-workflow-templates-json/api_quiver_text_to_svg.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_691
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2037504187344363522.json、视频生成/图生视频/2038078670346133505.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_quiver_arrow2_text_to_svg.json、comfyui-workflow-templates-json/api_quiver_text_to_svg.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoSparkvideo20ImageToVideo`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `RH_RhartVideoSparkvideo20TextToVideo`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_SparkVideoAssetCreate` —— 1/2 个有
-- `RH_SparkVideoAssetIdsMerge` —— 1/2 个有
+- `QuiverTextToSVGNode`
+- `SaveSVGNode`
 
 ## 典型参数
 

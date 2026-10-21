@@ -2,70 +2,66 @@
 name: unknown_workflow_video_lora_sampler_215
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.952333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ImageBatchExtendWithOverlap, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, VAEDecode, VAELoader, VHS_VideoCombine, easy forLoopEnd, easy forLoopStart, easy promptLine]
+level: moderate
+coverage: 0.684
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Model Input Switch, ComfyMathExpression, GetImageSizeAndCount, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PreviewAny, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2022090916130988033.json, 视频生成/图生视频/2005998489748328449.json, 视频生成/图生视频/2011456654914621441.json, 视频生成/图生视频/2043277344625926145.json, 视频生成/图生视频/2016438828810117122.json, 视频生成/图生视频/2042934269093355522.json, 视频生成/图生视频/2035685146686394370.json, 视频生成/图生视频/2046827963190087682.json, 视频生成/文生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2047624351276601345.json]
+members: [视频生成/图生视频/MiniMax H3 导演台-图生视频-手机端也能用_2091264120371892225.json, 视频生成/图生视频/MiniMax H3 导演台-手机端也可用_2090733228578656258.json, 视频生成/图生视频/MiniMax H3 导演台-首尾帧生视频-加速+二采+段间引导+手机端可用_2091271684509749249.json, 视频生成/文生视频/MiniMax H3 导演台-加速+二踩+段间引导-手机端也可用_2085217914751381506.json, 视频生成/文生视频/MiniMax H3 导演台-加速+二踩+段间引导-手机端也可用_2091070876266614786.json, 视频生成/文生视频/MiniMax H3 导演台-多参主图生视频_r2v_2091574959578632194.json, 视频生成/文生视频/MiniMax H3 导演台-多参主图生视频_r2v_2095126971830325249.json, 视频生成/文生视频/MinimaxH3 导演台 rv2v_参考素材改视频_优化版本_2092192766062321665.json, 视频生成/文生视频/阿清的minimaxh3导演台+2次采样工作流_2093210441047695362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_215
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2022090916130988033.json、视频生成/图生视频/2005998489748328449.json、视频生成/图生视频/2011456654914621441.json、视频生成/图生视频/2043277344625926145.json、视频生成/图生视频/2016438828810117122.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 导演台-图生视频-手机端也能用_2091264120371892225.json、视频生成/图生视频/MiniMax H3 导演台-手机端也可用_2090733228578656258.json、视频生成/图生视频/MiniMax H3 导演台-首尾帧生视频-加速+二采+段间引导+手机端可用_2091271684509749249.json、视频生成/文生视频/MiniMax H3 导演台-加速+二踩+段间引导-手机端也可用_2085217914751381506.json、视频生成/文生视频/MiniMax H3 导演台-加速+二踩+段间引导-手机端也可用_2091070876266614786.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `ImageBatchExtendWithOverlap`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `CR Model Input Switch`
+- `ComfyMathExpression`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 8/9 个有
-- `VAEEncode` —— 8/9 个有
-- `WanImageToVideoSVIPro` —— 8/9 个有
-- `DF_Int_to_Float` —— 6/9 个有
-- `GODMT_ListGetByIndex` —— 6/9 个有
-- `GODMT_SplitString` —— 6/9 个有
-- `MathExpression|pysssss` —— 6/9 个有
-- `StringToInt` —— 6/9 个有
-- `WWAA-LineCount` —— 6/9 个有
-- `Int` —— 3/9 个有
-- `SimpleMath+` —— 3/9 个有
-- `ModelSamplingSD3` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `UNETLoader` —— 1/9 个有
-- `WanAdvancedI2V` —— 1/9 个有
-- `easy float` —— 1/9 个有
+- `CreateVideo` —— 8/9 个有
+- `LayerUtility: PurgeVRAM` —— 8/9 个有
+- `LazySwitch1way` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `easy boolean` —— 8/9 个有
+- `MuyeLoadImage` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 67% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 9 | 92% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，9 个样本，取值集中（一致性 92%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

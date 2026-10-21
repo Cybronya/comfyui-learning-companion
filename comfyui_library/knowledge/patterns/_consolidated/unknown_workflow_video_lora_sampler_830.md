@@ -3,50 +3,77 @@ name: unknown_workflow_video_lora_sampler_830
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9145
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, FL_KsamplerPlus, FL_PathAnimator, GetImageSizeAndCount, ImageResizeKJ, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, TorchCompileModelWanVideo, UNETLoader, VAELoader, VHS_DuplicateImages, VHS_VideoCombine, WanTrackToVideo]
+coverage: 0.546
+common_nodes: [Anything Everywhere, BlockifyMask, CLIPVisionLoader, CR Prompt Text, Display Any (rgthree), DrawMaskOnImage, DrawViTPose, Evaluate Integers, GetImageSize, GetNode, ImageBatch, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, Int, JWImageExtractFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveFloat, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation, easy sam3Visualization]
 problems: []
 missing: []
-members: [视频生成/图生视频/1929052305113432066.json, 视频生成/图生视频/2039588649964150785.json]
+members: [视频生成/图生视频/1996398131812114433.json, 视频生成/图生视频/2011830823506419713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_830
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1929052305113432066.json、视频生成/图生视频/2039588649964150785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1996398131812114433.json、视频生成/图生视频/2011830823506419713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+- `Anything Everywhere`
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `FL_KsamplerPlus`
-- `FL_PathAnimator`
-- `GetImageSizeAndCount`
-- `ImageResizeKJ`
+- `CR Prompt Text`
+- `Display Any (rgthree)`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `Evaluate Integers`
+- `GetImageSize`
+- `GetNode`
+- `ImageBatch`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `Int`
+- `JWImageExtractFromBatch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `TorchCompileModelWanVideo`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_DuplicateImages`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `RepeatImageBatch`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanTrackToVideo`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `easy sam3Visualization`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioEncoderEncode` —— 1/2 个有
-- `AudioEncoderLoader` —— 1/2 个有
-- `WanSoundImageToVideo` —— 1/2 个有
+- `Manual XY Entry Info` —— 1/2 个有
+- `MathExpressionNode` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ZML_IntegerFloatConverter` —— 1/2 个有
 
 ## 典型参数
 

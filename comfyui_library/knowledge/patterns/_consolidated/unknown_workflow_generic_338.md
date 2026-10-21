@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_338
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.807
-common_nodes: [CR Text, SaveAudio]
+coverage: 0.8172
+common_nodes: [CR Text, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-TTS 语音生成_2020653760749510657.json, 音频生成/音频生成/OmniVoice TTS语音设计_2064780678176264194.json, 音频生成/音频生成/OmniVoice 声音设计--中文方言--英文口音_2041470953061879809.json, 音频生成/音频生成/Qwen3-TTS 语音合成-自定义语音_2015153956795715586.json]
+members: [音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json, 音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json, 音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_338
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 语音生成_2020653760749510657.json、音频生成/音频生成/OmniVoice TTS语音设计_2064780678176264194.json、音频生成/音频生成/OmniVoice 声音设计--中文方言--英文口音_2041470953061879809.json、音频生成/音频生成/Qwen3-TTS 语音合成-自定义语音_2015153956795715586.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json、音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json、音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CR Text`
 - `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 3/4 个有
-- `FB_Qwen3TTSCustomVoice` —— 2/4 个有
-- `OmniVoiceVoiceDesignTTS` —— 2/4 个有
+- `LoadAudio` —— 4/5 个有
+- `Qwen3TTSModelLoader` —— 4/5 个有
+- `Qwen3TTSVoiceClone` —— 3/5 个有
+- `Qwen3TTSVoiceDesign` —— 3/5 个有
+- `easy seed` —— 3/5 个有
+- `SaveAudioMP3` —— 2/5 个有
+- `FishS2VoiceCloneTTS` —— 1/5 个有
 
 ## 典型参数
 

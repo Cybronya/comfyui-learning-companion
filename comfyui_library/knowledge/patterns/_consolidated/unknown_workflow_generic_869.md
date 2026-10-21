@@ -3,37 +3,28 @@ name: unknown_workflow_generic_869
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8095
-common_nodes: [Audio To Text (mtb), FB_Qwen3TTSVoiceClone, Load Whisper (mtb), LoadAudio, SaveAudio, ShowText|pysssss]
+coverage: 1
+common_nodes: [RH_RhartVideoV31ProOfficialTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【遇见AI】Qwen3-TTS 语音克隆，预设声音，声音设计_2056175763291951105.json, 音频生成/音频生成/【遇见AI】Qwen3-TTS声音克隆_2015650426556784641.json]
+members: [视频生成/图生视频/2028673252347875330.json, 视频生成/文生视频/RhartVideoV31ProOfficialTextToVideo_2038487361960546305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_869
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【遇见AI】Qwen3-TTS 语音克隆，预设声音，声音设计_2056175763291951105.json、音频生成/音频生成/【遇见AI】Qwen3-TTS声音克隆_2015650426556784641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2028673252347875330.json、视频生成/文生视频/RhartVideoV31ProOfficialTextToVideo_2038487361960546305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `FB_Qwen3TTSVoiceClone`
-- `Load Whisper (mtb)`
-- `LoadAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSCustomVoice` —— 1/2 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `RH_RhartVideoV31ProOfficialTextToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

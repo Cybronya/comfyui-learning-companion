@@ -3,66 +3,84 @@ name: unknown_workflow_video_lora_sampler_312
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.722429
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, CR Text Replace, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.597143
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/MiniMaxH3 双人 完美数字人_2089941203092590593.json, 视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092253052395941889.json, 视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092436981681844226.json, 视频生成/图生视频/MiniMaxH3 完美数字人_2086312040032989186.json, 视频生成/图生视频/MiniMaxH3 数字人走路说话 维吾尔族语_2089970449554956290.json, 视频生成/图生视频/Minimax_H3 Mv 开场和间奏画面制作_2088633195758702594.json, 视频生成/文生视频/开源版MinimaxH3完美口播带货数字人参考音频数字人短视频带货_2086540418640076801.json]
+missing: [LayerMask: MaskInvert]
+members: [视频生成/图生视频/1970452175312875521.json, 视频生成/图生视频/1971495725483933698.json, 视频生成/文生视频/1974519641752080386.json, 视频生成/文生视频/1977718983715606530.json, 视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json, 视频生成/文生视频/Wan-Animate-SecNodes角色替换_2072999489906188288.json, 视频生成/文生视频/Wan-Animate多人场景角色替换_2072999526493102080.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_312
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 双人 完美数字人_2089941203092590593.json、视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092253052395941889.json、视频生成/图生视频/MiniMaxH3 双人 完美数字人_2092436981681844226.json、视频生成/图生视频/MiniMaxH3 完美数字人_2086312040032989186.json、视频生成/图生视频/MiniMaxH3 数字人走路说话 维吾尔族语_2089970449554956290.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1970452175312875521.json、视频生成/图生视频/1971495725483933698.json、视频生成/文生视频/1974519641752080386.json、视频生成/文生视频/1977718983715606530.json、视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
-- `CR Text Replace`
-- `Int`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `RHLLMChatNode`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 6/7 个有
-- `PreviewAny` —— 6/7 个有
-- `StringToInt` —— 6/7 个有
-- `ttN concat` —— 6/7 个有
-- `Bjornulf_ShowInt` —— 1/7 个有
-- `IntToString` —— 1/7 个有
-- `LazySwitch1way` —— 1/7 个有
-- `ModelAttentionBackend` —— 1/7 个有
-- `MultiTextConcatenate` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PrimitiveBoolean` —— 1/7 个有
-- `ShowAnything|Mie` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
-- `floatToInt _O` —— 1/7 个有
-- `sanmi Float` —— 1/7 个有
+- `OnnxDetectionModelLoader` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `DrawViTPose` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `Float` —— 5/7 个有
+- `LayerMask: MaskInvert` —— 5/7 个有
+- `PointsEditor` —— 5/7 个有
+- `Setter` —— 5/7 个有
+- `easy ifElse` —— 5/7 个有
+- `DownloadAndLoadSAM2Model` —— 4/7 个有
+- `Sam2Segmentation` —— 4/7 个有
+- `ImageConcatMulti` —— 2/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
+- `SeCModelLoader` —— 2/7 个有
+- `SeCVideoSegmentation` —— 2/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `FloatConstant` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `ImageBlend` —— 1/7 个有
+- `JWImageExtractFromBatch` —— 1/7 个有
+- `LayerMask: SAM2VideoUltra` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `Sa2VANodeTpl` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `WanVideoExperimentalArgs` —— 1/7 个有
+- `WanVideoSLG` —— 1/7 个有
+- `WanVideoScheduler` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 
@@ -74,4 +92,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: MaskInvert

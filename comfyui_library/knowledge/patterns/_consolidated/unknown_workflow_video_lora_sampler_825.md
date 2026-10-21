@@ -3,62 +3,62 @@ name: unknown_workflow_video_lora_sampler_825
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.678
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.627
+common_nodes: [Bjornulf_ShowStringText, CLIPLoader, CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int2Any_AS, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SetNode, ShowText, SimpleCondition+, SimpleMath+, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969999696024510466.json, 视频生成/图生视频/2033057095406329858.json]
+members: [视频生成/图生视频/1952150601243283457.json, 视频生成/图生视频/1950148993163640833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_825
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1969999696024510466.json、视频生成/图生视频/2033057095406329858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1952150601243283457.json、视频生成/图生视频/1950148993163640833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
+- `Bjornulf_ShowStringText`
+- `CLIPLoader`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
 - `GetNode`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
+- `INTConstant`
 - `ImageResizeKJv2`
+- `Int2Any_AS`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `RH_LLMAPI_NODE`
 - `SetNode`
-- `VHS_LoadVideo`
+- `ShowText`
+- `SimpleCondition+`
+- `SimpleMath+`
+- `String`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `PixelPerfectResolution` —— 1/2 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `LoadWanVideoClipTextEncoder` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `WanVideoSetLoRAs` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,70 +1,50 @@
 ---
 name: unknown_workflow_video_sampler_vae_93
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8442
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.966667
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1917005137418850305.json, 视频生成/图生视频/1917980090234241025.json, 视频生成/图生视频/1916975987429408770.json, 视频生成/图生视频/1917158732864884738.json, 视频生成/图生视频/1917403331021438977.json]
+members: [视频生成/文生视频/1894738475621482497.json, 视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json, 视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json, 视频生成/文生视频/1935600068689068033.json, 视频生成/文生视频/1934871279478448130.json, 视频生成/文生视频/1935156530729951234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_93
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1917005137418850305.json、视频生成/图生视频/1917980090234241025.json、视频生成/图生视频/1916975987429408770.json、视频生成/图生视频/1917158732864884738.json、视频生成/图生视频/1917403331021438977.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/1894738475621482497.json、视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json、视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json、视频生成/文生视频/1935600068689068033.json、视频生成/文生视频/1934871279478448130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `FantasyTalkingModelLoader`
-- `FantasyTalkingWav2VecEmbeds`
-- `INTConstant`
-- `LoadAudio`
-- `LoadImage`
+全部 6 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 4/5 个有
-- `ImageResizeKJ` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `ImageConcanate` —— 3/5 个有
-- `Primitive integer [Crystools]` —— 3/5 个有
-- `Text Multiline` —— 3/5 个有
-- `GetNode` —— 2/5 个有
-- `Note Plus (mtb)` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `WanVideoContextOptions` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `ImageUpscaleWithModel` —— 1/5 个有
-- `ImpactInt` —— 1/5 个有
-- `IndexTTSNode` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `UpscaleModelLoader` —— 1/5 个有
-- `WanVideoVRAMManagement` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `RIFE VFI` —— 5/6 个有
+- `ImageUpscaleWithModel` —— 3/6 个有
+- `SeargePromptText` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
+- `WanVideoLoraSelect` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `Video_Upscale_With_Model` —— 2/6 个有
+- `WanVideoEnhanceAVideo` —— 2/6 个有
+- `WanVideoVRAMManagement` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

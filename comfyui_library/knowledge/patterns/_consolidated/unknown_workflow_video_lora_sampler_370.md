@@ -2,76 +2,97 @@
 name: unknown_workflow_video_lora_sampler_370
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.803
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
-problems: []
-missing: []
-members: [视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json, 视频生成/图生视频/2054610077646114818.json, 视频生成/图生视频/1993501240730599426.json, 视频生成/图生视频/1960547168962641921.json, 视频生成/图生视频/1977757445852463106.json, 视频生成/图生视频/2012499953494528001.json]
+level: strong
+coverage: 0.451167
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, GetNode, GrowMask, ImageBatch, ImageFromBatch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PreviewImage, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy forLoopEnd, easy forLoopStart]
+problems: [Steps较低可能导致细节不足]
+missing: [easy forLoopEnd, easy forLoopStart, SimpleMath+]
+members: [视频生成/图生视频/1976471239042666497.json, 视频生成/图生视频/1973951383147819010.json, 视频生成/文生视频/1971749907403108354.json, 视频生成/文生视频/1975828769351012354.json, 视频生成/文生视频/Wan-Animate原生无限流（修正）_2072999547389124608.json, 视频生成/文生视频/角色参考-原生无限流-补帧_2072999523758415872.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_370
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json、视频生成/图生视频/2054610077646114818.json、视频生成/图生视频/1993501240730599426.json、视频生成/图生视频/1960547168962641921.json、视频生成/图生视频/1977757445852463106.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1976471239042666497.json、视频生成/图生视频/1973951383147819010.json、视频生成/文生视频/1971749907403108354.json、视频生成/文生视频/1975828769351012354.json、视频生成/文生视频/Wan-Animate原生无限流（修正）_2072999547389124608.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **可信度**：强结论
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+- `BlockifyMask`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `GetNode`
+- `GrowMask`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSampler`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `PreviewImage`
+- `SetNode`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 5/6 个有
-- `INTConstant` —— 5/6 个有
-- `WanVideoTorchCompileSettings` —— 5/6 个有
-- `GetNode` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `WanVideoTextEncodeCached` —— 4/6 个有
-- `JWInteger` —— 2/6 个有
-- `LoadWanVideoT5TextEncoder` —— 2/6 个有
-- `WanVideoTextEncode` —— 2/6 个有
-- `Audio Duration (mtb)` —— 1/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `PixaromaLabel` —— 1/6 个有
-- `PixaromaResolution` —— 1/6 个有
-- `PlaySound|pysssss` —— 1/6 个有
-- `easy compare` —— 1/6 个有
-- `easy ifElse` —— 1/6 个有
-- `easy imageSize` —— 1/6 个有
+- `DownloadAndLoadSAM2Model` —— 4/6 个有
+- `Float` —— 4/6 个有
+- `GetImageSizeAndCount` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `Int` —— 4/6 个有
+- `MaskPreview` —— 4/6 个有
+- `PointsEditor` —— 4/6 个有
+- `Sam2Segmentation` —— 4/6 个有
+- `SimpleMath+` —— 4/6 个有
+- `AILab_MaskPreview` —— 2/6 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/6 个有
+- `GIMMVFI_interpolate` —— 2/6 个有
+- `ImageScale` —— 2/6 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 2/6 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 2/6 个有
+- `Setter` —— 2/6 个有
+- `VHS_VideoInfo` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（12/6 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：easy forLoopEnd、easy forLoopStart、SimpleMath+

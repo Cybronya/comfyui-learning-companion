@@ -3,61 +3,62 @@ name: unknown_workflow_video_lora_sampler_499
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.80475
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, JWFloatToString, KSamplerSelect, LoadImage, LoadVideoUI, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.88825
+common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速_自动提示词优化版_2085576185500753922.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词8步加速_2085317728252022785.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词_2085205357147803649.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词优化版_2085311036525211650.json]
+members: [视频生成/图生视频/1935517982800150530.json, 视频生成/图生视频/1944781306624397314.json, 视频生成/图生视频/1941396132272750594.json, 视频生成/图生视频/1914987342183002113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_499
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速_自动提示词优化版_2085576185500753922.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词8步加速_2085317728252022785.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词_2085205357147803649.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词优化版_2085311036525211650.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1935517982800150530.json、视频生成/图生视频/1944781306624397314.json、视频生成/图生视频/1941396132272750594.json、视频生成/图生视频/1914987342183002113.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `JWFloatToString`
-- `KSamplerSelect`
+- `CLIPVisionLoader`
 - `LoadImage`
-- `LoadVideoUI`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `RHLLMChatNode`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Text`
-- `TextCombinerTwo`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudioUI` —— 3/4 个有
-- `MiniMaxH3SigmaShift` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `Audio To Text (mtb)` —— 1/4 个有
-- `FL_Audio_BPM_Analyzer` —— 1/4 个有
-- `FL_Audio_Drum_Detector` —— 1/4 个有
-- `Load Whisper (mtb)` —— 1/4 个有
-- `TextCombinerSix` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `DF_Integer` —— 2/4 个有
+- `EmptyImage` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `WanVideoSLG` —— 2/4 个有
+- `WanVideoTeaCache` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/4 个有
+- `WanVideoUniAnimatePoseInput` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
+- `easy imageRemBg` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

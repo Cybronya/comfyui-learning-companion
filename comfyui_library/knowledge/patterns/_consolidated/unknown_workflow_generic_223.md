@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_generic_223
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7712
-common_nodes: [JWStringReplace, LoadAudio, LoadVideo, RH_HeyGemNode, RH_LLMAPI_NODE, SaveAudio, SaveVideo, Text Multiline, easy showAnything]
+coverage: 0.617
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json, 视频生成/文生视频/1933349167462789122.json, 音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json, 音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json]
+members: [视频生成/图生视频/1977697978410565633.json, 视频生成/图生视频/2028862368343658498.json, 视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版10秒15秒可选_1979415302779867137.json, 视频生成/图生视频/1979393173581631490.json, 视频生成/图生视频/全能视频S产品图+中英文描述=跨境tk短视频带货视tiktok频高清直出全能版10秒15秒高清可选_1982834651620356098.json, 视频生成/图生视频/1987484061469970434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_223
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json、数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json、视频生成/文生视频/1933349167462789122.json、音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json、音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1977697978410565633.json、视频生成/图生视频/2028862368343658498.json、视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版10秒15秒可选_1979415302779867137.json、视频生成/图生视频/1979393173581631490.json、视频生成/图生视频/全能视频S产品图+中英文描述=跨境tk短视频带货视tiktok频高清直出全能版10秒15秒高清可选_1982834651620356098.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JWStringReplace`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
 - `SaveVideo`
-- `Text Multiline`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 3/5 个有
-- `IndexTTSNode` —— 1/5 个有
-- `IndexTTSRun` —— 1/5 个有
-- `TextBox` —— 1/5 个有
+- `RH_Translator` —— 4/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `ResizeLongestToNode` —— 1/6 个有
 
 ## 典型参数
 

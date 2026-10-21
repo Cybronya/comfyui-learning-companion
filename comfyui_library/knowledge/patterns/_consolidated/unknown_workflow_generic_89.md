@@ -1,47 +1,35 @@
 ---
 name: unknown_workflow_generic_89
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.849778
-common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.9714
+common_nodes: [CR Text, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017880998905651202.json, 音频生成/音频生成/Qwen3 TTS 多角色对话配音-音色上传-支持8人对话_2015616273350139906.json, 音频生成/音频生成/Qwen3 TTS 多角色配音_2015822660667707394.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色上传版_2015614586254270466.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015603796998623233.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015609592415260673.json, 音频生成/音频生成/Qwen3 TTS多角色配音及克隆音色_2023064336373129217.json, 音频生成/音频生成/Qwen3 TTS最新多角色配音_2015427448355164161.json, 音频生成/音频生成/Qwen3-TTS支持8种角色+音色克隆_2015772753458106369.json]
+members: [音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json, 音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json, 音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json, 音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS（自研）_2042139833367269378.json, 音频生成/音频生成/VoxCPM2.0双人音色克隆对话_2045804851086499842.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2042135828993937409.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2043545957635198978.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2071261044680511489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_89
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2017880998905651202.json、音频生成/音频生成/Qwen3 TTS 多角色对话配音-音色上传-支持8人对话_2015616273350139906.json、音频生成/音频生成/Qwen3 TTS 多角色配音_2015822660667707394.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色上传版_2015614586254270466.json、音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015603796998623233.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json、音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json、音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json、音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json、音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
+全部 10 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
 - `SaveAudio`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 5/9 个有
-- `FB_Qwen3TTSVoiceDesign` —— 4/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
-- `Text` —— 4/9 个有
-- `CR Text` —— 2/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
+- `WujiVoiceActorVoxCPM` —— 8/10 个有
+- `MegaTTS3Run` —— 2/10 个有
 
 ## 典型参数
 

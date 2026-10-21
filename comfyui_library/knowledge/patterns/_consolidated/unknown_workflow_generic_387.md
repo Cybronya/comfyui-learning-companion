@@ -3,37 +3,35 @@ name: unknown_workflow_generic_387
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.85975
-common_nodes: [CR Text, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.5495
+common_nodes: [PrimitiveStringMultiline, SaveText, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json, 音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json, 音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json, 音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json]
+members: [数字人/数字人/推理-生成歌词-Minimax Music3-Qwen3.8_2093069481596772353.json, 视频生成/文生视频/LTX2.5-智能内容创作分镜助手-JSON输出版V3.4.0_2087546653434802178.json, 音频生成/音频生成/MiniMax Music 3-Ai音乐提示词助手_2088315709393817602.json, 音频生成/音频生成/Minimax Music3智能提示词V1.22版助手_2092498891991244801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_387
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json、音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json、音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json、音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/推理-生成歌词-Minimax Music3-Qwen3.8_2093069481596772353.json、视频生成/文生视频/LTX2.5-智能内容创作分镜助手-JSON输出版V3.4.0_2087546653434802178.json、音频生成/音频生成/MiniMax Music 3-Ai音乐提示词助手_2088315709393817602.json、音频生成/音频生成/Minimax Music3智能提示词V1.22版助手_2092498891991244801.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+- `PrimitiveStringMultiline`
+- `SaveText`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `easy seed` —— 2/4 个有
-- `easy boolean` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 

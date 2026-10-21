@@ -3,65 +3,61 @@ name: unknown_workflow_video_lora_sampler_485
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.73875
-common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, GetNode, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3PromptEnhancerT8, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetNode, T8LLMProviderConfig, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.81375
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Daiswa_双图参考（API调用）_2108442503518179330.json, 视频生成/图生视频/Dasiwa-V2-参考生视频（API调用）_2108746479836950529.json, 视频生成/图生视频/Minimax-h3_图生视频（API调用版本）_2108740302222741506.json, 视频生成/图生视频/Minimax-h3_图生视频（二采放大）_2100102538916880386.json]
+members: [视频生成/图生视频/1991707483274309634.json, 视频生成/图生视频/1989700145870721025.json, 视频生成/图生视频/1935525367807672321.json, 视频生成/图生视频/1990058072469106689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_485
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Daiswa_双图参考（API调用）_2108442503518179330.json、视频生成/图生视频/Dasiwa-V2-参考生视频（API调用）_2108746479836950529.json、视频生成/图生视频/Minimax-h3_图生视频（API调用版本）_2108740302222741506.json、视频生成/图生视频/Minimax-h3_图生视频（二采放大）_2100102538916880386.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1991707483274309634.json、视频生成/图生视频/1989700145870721025.json、视频生成/图生视频/1935525367807672321.json、视频生成/图生视频/1990058072469106689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3PromptEnhancerT8`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SetNode`
-- `T8LLMProviderConfig`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SaveLatent` —— 3/4 个有
-- `VAEDecodeAudio` —— 3/4 个有
-- `Any To String (mtb)` —— 2/4 个有
-- `AudioCrop` —— 2/4 个有
-- `LTXVAudioVAEEncode` —— 2/4 个有
-- `LTXVConcatAVLatent` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `SaveAudioAdvanced` —— 2/4 个有
-- `SetLatentNoiseMask` —— 2/4 个有
-- `SolidMask` —— 2/4 个有
-- `SoundFlow_GetLength` —— 2/4 个有
-- `Int` —— 1/4 个有
-- `SaveAudio` —— 1/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `InvertMask` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `WanVideoAddBindweaveEmbeds` —— 3/4 个有
+- `WanVideoEncodeLatentBatch` —— 3/4 个有
+- `WanVideoSetBlockSwap` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `JWInteger` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `GetImageSize+` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImagePadKJ` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,72 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_149
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.902273
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.837417
+common_nodes: [GetNode, ImageConcanate, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, Seed, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/Infinitetalk单人数字人无限时长自循环_2088948708812611585.json, 数字人/数字人/Infinitetalk单人数字人无限时长自循环_2108715715753766913.json, 数字人/数字人/数字人-口播_2088243121611173889.json, 视频生成/图生视频/1957952304787898369.json, 视频生成/图生视频/1962411738001969154.json, 视频生成/图生视频/1979004243053023234.json, 视频生成/图生视频/2051682079896809474.json, 视频生成/图生视频/2026963272511000578.json, 视频生成/图生视频/1983563401169444866.json, 视频生成/图生视频/1985498577474625538.json, 视频生成/图生视频/2080617453847138306.json]
+members: [视频生成/图生视频/2080697137448443906.json, 视频生成/图生视频/2078455563666677762.json, 视频生成/图生视频/2075884144709689346.json, 视频生成/图生视频/2076558631444770818.json, 视频生成/图生视频/2080945536378687490.json, 视频生成/图生视频/2074502633741705218.json, 视频生成/图生视频/2078408351960100866.json, 视频生成/图生视频/2078429040989528065.json, 视频生成/图生视频/2078697075843362818.json, 视频生成/图生视频/来财蛙呱呱呱_2085649794168610818.json, 视频生成/图生视频/真人换卡通人物_2085656573984198657.json, 视频生成/图生视频/2080234302566125570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_149
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/Infinitetalk单人数字人无限时长自循环_2088948708812611585.json、数字人/数字人/Infinitetalk单人数字人无限时长自循环_2108715715753766913.json、数字人/数字人/数字人-口播_2088243121611173889.json、视频生成/图生视频/1957952304787898369.json、视频生成/图生视频/1962411738001969154.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2080697137448443906.json、视频生成/图生视频/2078455563666677762.json、视频生成/图生视频/2075884144709689346.json、视频生成/图生视频/2076558631444770818.json、视频生成/图生视频/2080945536378687490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 12 个 workflow 都包含：
+- `GetNode`
+- `ImageConcanate`
+- `ImageFromBatch`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Seed`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 10/11 个有
-- `Int` —— 9/11 个有
-- `ToInt` —— 9/11 个有
-- `easy showAnything` —— 8/11 个有
-- `RH_GetAudioDuration` —— 6/11 个有
-- `Audio Duration (mtb)` —— 4/11 个有
-- `PrimitiveStringMultiline` —— 4/11 个有
-- `CR Text` —— 3/11 个有
-- `IndexTTS2_Emotion` —— 3/11 个有
-- `PrimitiveFloat` —— 3/11 个有
-- `SaveAudio` —— 2/11 个有
-- `easy anythingIndexSwitch` —— 2/11 个有
-- `Float to Int` —— 1/11 个有
-- `INTConstant` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `OmniVoiceVoiceCloneTTS` —— 1/11 个有
-- `OmniVoiceWhisperLoader` —— 1/11 个有
-- `SaveAudioMP3` —— 1/11 个有
-- `VHS_LoadAudioUpload` —— 1/11 个有
-- `easy cleanGpuUsed` —— 1/11 个有
-- `easy int` —— 1/11 个有
+- `LoadImage` —— 11/12 个有
+- `Text` —— 11/12 个有
+- `PreviewImage` —— 10/12 个有
+- `easy imageCount` —— 10/12 个有
+- `Float` —— 9/12 个有
+- `Float to Int` —— 9/12 个有
+- `ImageResizeKJv2` —— 6/12 个有
+- `RHHiddenNodes` —— 6/12 个有
+- `RH_Captioner` —— 6/12 个有
+- `RMBG` —— 6/12 个有
+- `TextConcatenate_UTK` —— 6/12 个有
+- `easy indexAnything` —— 6/12 个有
+- `Bjornulf_ShowInt` —— 5/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/12 个有
+- `StringReplace` —— 4/12 个有
+- `ExtractNFrames` —— 3/12 个有
+- `ImageConcatMulti` —— 3/12 个有
+- `RTXVideoSuperResolution` —— 3/12 个有
+- `GoogleTranslateTextNode` —— 2/12 个有
+- `PurgeVRAM_UTK` —— 2/12 个有
+- `RH_Translator` —— 2/12 个有
+- `CR Image Grid Panel` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
 
 ## 典型参数
 

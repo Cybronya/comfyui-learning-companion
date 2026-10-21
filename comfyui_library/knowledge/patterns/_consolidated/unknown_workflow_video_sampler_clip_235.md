@@ -3,63 +3,58 @@ name: unknown_workflow_video_sampler_clip_235
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7345
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVScheduler, LTXVSeparateAVLatent, LoadAudio, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.9735
+common_nodes: [AspectRatioSelector, Bjornulf_ShowInt, CR Text, DF_Integer, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2011018464567234562.json, 视频生成/文生视频/ltx2_i2v_gguf-t2v生产力速度起飞_2011349638749622274.json]
+members: [视频生成/图生视频/1905436018324213761.json, 视频生成/图生视频/1909569087507263490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_235
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2011018464567234562.json、视频生成/文生视频/ltx2_i2v_gguf-t2v生产力速度起飞_2011349638749622274.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1905436018324213761.json、视频生成/图生视频/1909569087507263490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecode`
-- `VAELoader`
-- `VAELoaderKJ`
+- `AspectRatioSelector`
+- `Bjornulf_ShowInt`
+- `CR Text`
+- `DF_Integer`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 1/2 个有
-- `DualCLIPLoaderGGUF` —— 1/2 个有
+- `CM_IntBinaryOperation` —— 1/2 个有
+- `DF_Int_to_Float` —— 1/2 个有
 - `GetImageSize` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LTXVImgToVideoInplace` —— 1/2 个有
-- `LTXVPreprocess` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `IntMathOperation` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `Text _O` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `int _O` —— 1/2 个有
 
 ## 典型参数
 

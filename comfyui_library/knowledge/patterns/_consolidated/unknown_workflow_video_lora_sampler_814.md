@@ -3,64 +3,58 @@ name: unknown_workflow_video_lora_sampler_814
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8305
-common_nodes: [CR Text Concatenate, CR Text Replace, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch+, ImageResizeKJ, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], PrimitiveBoolean, RHHiddenNodes, RH_Captioner, SetNode, SimpleMath+, TextBox, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy ifElse, easy showAnything]
+coverage: 0.95
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1952617990284087298.json, 视频生成/图生视频/1952604203145474049.json]
+members: [视频生成/图生视频/2013475462466510849.json, 视频生成/图生视频/1949865527068024834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_814
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1952617990284087298.json、视频生成/图生视频/1952604203145474049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2013475462466510849.json、视频生成/图生视频/1949865527068024834.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
-- `ImpactSwitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `SimpleMath+`
-- `TextBox`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy ifElse`
-- `easy showAnything`
+- `WanImageToVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `Any Switch (rgthree)` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `ImageFromBatch+` —— 1/2 个有
+- `JWImageResizeByLongerSide` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `easy imageSize` —— 1/2 个有
+- `easy positive` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
+| 采样算法 | 2.25 | - | 2 | 44% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
@@ -68,4 +62,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 2.25，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

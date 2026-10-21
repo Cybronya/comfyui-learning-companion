@@ -3,32 +3,32 @@ name: unknown_workflow_generic_742
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.407
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2_chat, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.9
+common_nodes: [DF_Text_Box, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981428442048675842.json, 视频生成/文生视频/（贞贞AI工坊）全能视频S Chat模式文生视频V1_1981428238834638850.json]
+members: [图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json, 数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_742
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981428442048675842.json、视频生成/文生视频/（贞贞AI工坊）全能视频S Chat模式文生视频V1_1981428238834638850.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json、数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_sora2_chat`
+- `DF_Text_Box`
 - `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `忽略多组孤海`
 
 ## 典型参数
 

@@ -3,39 +3,32 @@ name: unknown_workflow_generic_804
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.669
-common_nodes: [Fast Groups Bypasser (rgthree), HeartMuLa_Generate, HeartMuLa_Transcribe, Label (rgthree), LoadAudio, SaveAudio, ShowText|pysssss]
+coverage: 1
+common_nodes: [LoadImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa：AI音乐生成大模型，配合ComfyUI直接产出中文歌曲！_2013590554742886402.json, 音频生成/音频生成/【Supermate】HeartMula自动刷歌工作流_2013952115286216705.json]
+members: [图片生成/文生图/多姿多角度多场景_2010969412634939394.json, 图片生成/文生图/空白工作流_2000896983772561410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_804
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa：AI音乐生成大模型，配合ComfyUI直接产出中文歌曲！_2013590554742886402.json、音频生成/音频生成/【Supermate】HeartMula自动刷歌工作流_2013952115286216705.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/多姿多角度多场景_2010969412634939394.json、图片生成/文生图/空白工作流_2000896983772561410.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `Label (rgthree)`
-- `LoadAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `LoadImage`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MemoryCleaner` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `Qwen3_VQA_Plus` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `DF_Text_Box` —— 1/2 个有
 
 ## 典型参数
 

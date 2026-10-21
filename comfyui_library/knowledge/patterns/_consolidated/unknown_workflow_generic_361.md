@@ -3,39 +3,34 @@ name: unknown_workflow_generic_361
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.97725
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.6585
+common_nodes: [CR Text, PreviewImage, SaveImage]
 problems: []
-missing: []
-members: [音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json, 音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json, 音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json, 音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json]
+missing: [CR Text]
+members: [图片生成/文生图/1962387003432112130.json, 图片生成/文生图/1980472653670735874.json, 图片生成/文生图/全能图像G2+官方版【文生图】_2057444514612207617.json, 图片生成/文生图/大全能生图-每天免米使用5次_2055661754121768962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_361
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json、音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json、音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json、音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1962387003432112130.json、图片生成/文生图/1980472653670735874.json、图片生成/文生图/全能图像G2+官方版【文生图】_2057444514612207617.json、图片生成/文生图/大全能生图-每天免米使用5次_2055661754121768962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `CR Text`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/4 个有
-- `easy indexTTSGenerateSimple` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `RH_Nano_Banana_Image2Image` —— 3/4 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -47,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text

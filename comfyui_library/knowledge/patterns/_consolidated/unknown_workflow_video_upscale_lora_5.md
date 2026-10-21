@@ -3,65 +3,80 @@ name: unknown_workflow_video_upscale_lora_5
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.947714
-common_nodes: [ImageUpscaleWithModel, LoadImage, LoadWanVideoT5TextEncoder, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.464
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextLoadLatent, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, Yuan_RTXVideoUpscaleH3]
 problems: []
 missing: []
-members: [视频生成/图生视频/1922551848883077121.json, 视频生成/图生视频/1938448782306508802.json, 视频生成/图生视频/1935685282568003585.json, 视频生成/图生视频/1947245269056376834.json, 视频生成/图生视频/1955296499754307586.json, 视频生成/图生视频/1955172399558770689.json, 视频生成/图生视频/1950107460180860930.json]
+members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2（自用）_2087925049180381186.json, 视频生成/图生视频/MiniMax-H3全站式短剧生成_2088905630026387458.json, 视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088595935659118594.json, 视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088632375063433217.json, 视频生成/图生视频/云信H3自动式式短剧生成V9声音参考版_2090969350172925954.json, 视频生成/图生视频/全栈式短剧生成MiniMax-H3V4.2_2088427778122280962.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成16.10修复_2089992232983162882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_5
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1922551848883077121.json、视频生成/图生视频/1938448782306508802.json、视频生成/图生视频/1935685282568003585.json、视频生成/图生视频/1947245269056376834.json、视频生成/图生视频/1955296499754307586.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2（自用）_2087925049180381186.json、视频生成/图生视频/MiniMax-H3全站式短剧生成_2088905630026387458.json、视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088595935659118594.json、视频生成/图生视频/MiniMax-H3开源版 全栈式短剧生成图生视频_2088632375063433217.json、视频生成/图生视频/云信H3自动式式短剧生成V9声音参考版_2090969350172925954.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `ImageUpscaleWithModel`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RIFE VFI`
-- `UpscaleModelLoader`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `GetImage`
+- `GetNode`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_H3MotionContext`
+- `Yuan_H3MotionContextLoadLatent`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_MiniMaxH3Video`
+- `Yuan_RTXVideoUpscaleH3`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 6/7 个有
-- `JWInteger` —— 6/7 个有
-- `Primitive integer [Crystools]` —— 6/7 个有
-- `SimpleMath+` —— 6/7 个有
-- `CLIPVisionLoader` —— 4/7 个有
-- `Text Multiline` —— 4/7 个有
-- `WanVideoClipVisionEncode` —— 4/7 个有
-- `WanVideoEnhanceAVideo` —— 4/7 个有
-- `easy cleanGpuUsed` —— 4/7 个有
-- `CreateCFGScheduleFloatList` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `RH_Captioner` —— 3/7 个有
-- `ShowText|pysssss` —— 3/7 个有
-- `WanVideoSLG` —— 3/7 个有
-- `WanVideoSetBlockSwap` —— 3/7 个有
-- `WanVideoSetLoRAs` —— 3/7 个有
-- `ImageResize+` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `WanVideoMagCache` —— 1/7 个有
-- `WanVideoSetRadialAttention` —— 1/7 个有
-- `WanVideoTeaCache` —— 1/7 个有
+- `ComfySwitchNode` —— 6/7 个有
+- `INTConstant` —— 6/7 个有
+- `PrimitiveBoolean` —— 6/7 个有
+- `RegexExtract` —— 6/7 个有
+- `StringConcatenate` —— 6/7 个有
+- `StringReplace` —— 6/7 个有
+- `YUAN_TXTAppearanceOrder` —— 6/7 个有
+- `YUAN_TXTListNumber` —— 6/7 个有
+- `YUAN_TXTReplace` —— 6/7 个有
+- `LoadImage` —— 1/7 个有
+- `MemoryCleaner` —— 1/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/7 个有
+- `ResolutionSelector` —— 1/7 个有
+- `YUAN_TXTShotReplace` —— 1/7 个有
+- `YuanAudioList` —— 1/7 个有
+- `YuanAudioSplit` —— 1/7 个有
+- `YuanPrimitive` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
 
 ## 典型参数
 

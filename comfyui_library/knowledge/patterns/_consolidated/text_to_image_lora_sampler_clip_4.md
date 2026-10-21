@@ -1,115 +1,103 @@
 ---
 name: text_to_image_lora_sampler_clip_4
 type: Text To Image
-frequency: 34
+frequency: 44
 level: strong
-coverage: 0.8565
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, EmptyLatentImage, JjkText, KSampler, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.92625
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: []
-members: [视频生成/图生视频/I2V首帧图直出片｜LTX-2.5图生视频音画同步_2093777187555074049.json, 视频生成/图生视频/LTX 2.5图生视频｜高清视频一键直出_2091307834997825538.json, 视频生成/图生视频/LTX-2.5图生视频I2V｜首帧图直接出片音画同步_2089408509157924866.json, 视频生成/图生视频/LTX-2.5首尾帧FLF2V｜图生视频开源世界模型_2089407159401537537.json, 视频生成/图生视频/LTX2.5图生视频速度快像素高生成工作流_2088276656308969473.json, 视频生成/图生视频/LTX2.5图生视频｜首帧驱动出片开源模型_2089419538248060930.json, 视频生成/图生视频/LTX2.5极速图生视频音画同出数字人生成_2088256741459980289.json, 视频生成/图生视频/LTX2.5首尾帧极速音画同出图生视频数字人_2088222321759842306.json, 视频生成/图生视频/LTX2.5首尾帧生视频｜高质量图生视频生成_2095603376045248514.json, 视频生成/图生视频/ltx2.5图生视频转场特效视频运镜生成工作流_2088188857928994818.json, 视频生成/图生视频/一致性加强版V1图生视频｜LTX2.5视频生成工作流_2088127153224380418.json, 视频生成/图生视频/二次采样视频生成｜LTX2.5图生视频人物运镜直出_2089489478942547970.json, 视频生成/图生视频/图生视频 I2V｜LTX-2.5 首帧直接出片 音画同步_2089252485310541825.json, 视频生成/图生视频/图生视频2608版｜LTX2.5数字人视频处理生成_2095878295459028994.json, 视频生成/图生视频/图生视频｜LTX2.5图片转视频工作流_2088139545815642113.json, 视频生成/图生视频/图生视频｜LTX2.5图片转视频工作流_2088213692046471170.json, 视频生成/图生视频/极速图生视频音画同出｜LTX2.5数字人工作流_2088124635899580418.json, 视频生成/图生视频/极速首尾帧音画同出｜LTX2.5数字人图生视频工作流_2088120921931472898.json, 视频生成/图生视频/标准版图生视频工作流｜LTX2.5图片转视频工作流_2088108490068946945.json, 视频生成/图生视频/首尾帧FLF2V生视频｜LTX-2.5图生视频生成_2093775816420323330.json, 视频生成/图生视频/首尾帧图生视频提示词全自动｜LTX2.5视频生成工作流_2088146840704339970.json, 视频生成/图生视频/首尾帧生视频 FLF2V｜LTX-2.5 图生视频直出_2089250976606801921.json, 视频生成/图生视频/首尾帧生视频2608｜LTX2.5数字人视频处理_2095863271810224130.json, 视频生成/图生视频/首尾帧生视频FLF2V｜LTX-2.5图生视频直出_2093445121831424002.json, 视频生成/图生视频/首帧图直接出片音画同步｜LTX-2.5 I2V图生视频_2093446502072016898.json, 视频生成/文生视频/LTX-2.5文生视频音画同步生成处理工具_2101378961912721410.json, 视频生成/文生视频/LTX2.5全家桶图生视频文生视频首尾帧极速音画同出_2088214319694704642.json, 视频生成/文生视频/LTX2.5图生视频｜首帧驱动出片开源模型_2092080557885841410.json, 视频生成/文生视频/LTX2.5文生视频生成工作流极速版_2088212902586179585.json, 视频生成/文生视频/LTX2.5极速文生视频音画同出｜数字人工作流_2088125910498238465.json, 视频生成/文生视频/LTX2.5经典文生视频生成工作流_2088200476587286529.json, 视频生成/文生视频/双采文生图生视频｜ltx2.5视频生成工作流_2088134700161396737.json, 视频生成/文生视频/提示词强化视频生成｜LTX2.5文生图生视频工作流_2088158159612502018.json, 视频生成/文生视频/文生视频T2V｜LTX-2.5 音画同步生成_2089340324639498241.json]
+missing: [ShowAnything|Mie, intToFloat _O, CR Prompt Text]
+members: [视频生成/图生视频/首尾帧图文一键生视频｜MiniMax H3加速版数字人_2095958370124656641.json, 视频生成/图生视频/首尾帧生视频！加速版MiniMaxH3转场特效数字人图生视频_2085455030794145794.json, 视频生成/文生视频/2108028586644041729.json, 视频生成/文生视频/5秒1080p仅8分钟｜MiniMax-H3图生视频全节点注释版_2093768843360563202.json, 视频生成/文生视频/5秒1080p只要8分钟｜MiniMax-H3图生视频全节点注释_2094005447392063489.json, 视频生成/文生视频/5秒1080p文生视频8分钟出片 MiniMax-H3 全节点注释_2094187651468455937.json, 视频生成/文生视频/H3多图参考音频参考极速生视频优化版 多模态创作_2099928699171860482.json, 视频生成/文生视频/MiniMax H3加速版首尾帧图生视频处理工具_2101022392209461249.json, 视频生成/文生视频/MiniMax H3图生视频加速版｜首尾帧衔接流畅运镜_2107650568532619266.json, 视频生成/文生视频/MiniMax H3图生视频首尾帧加速版 高效视频生成工具_2098651353672404993.json, 视频生成/文生视频/MiniMax H3图生视频首尾帧加速版｜文生视频图生视频 过渡更丝滑_2104044437436456962.json, 视频生成/文生视频/MiniMax H3图生视频首尾帧视频加速版 高质量动态生成_2105359652836962306.json, 视频生成/文生视频/MiniMax H3图生视频首尾帧视频加速版工作流，文生视频图生视频处理方案_2108271446815494146.json, 视频生成/文生视频/MiniMax H3图生视频首尾帧视频加速版，文生视频图生视频高效方案_2106824742857691137.json, 视频生成/文生视频/MiniMax H3多图加音频参考｜加速优化出片更快_2097164515363352577.json, 视频生成/文生视频/MiniMax H3多图加音频参考｜生视频加速版效率翻倍_2107653791804903426.json, 视频生成/文生视频/MiniMax H3多图参考音频参考加速优化版工作流，文生视频图生视频方案_2107895013450534914.json, 视频生成/文生视频/MiniMax H3多图参考音频参考加速版工作流，文生视频图生视频处理方案_2107893442566254594.json, 视频生成/文生视频/MiniMax H3多图参考音频参考极速生视频优化版 多模态输入_2105361187130142721.json, 视频生成/文生视频/MiniMax H3多图参考音频参考极速生视频优化版工作流，文生视频图生视频方案_2108272979615510530.json, 视频生成/文生视频/MiniMax H3多图参考音频参考极速生视频优化版，文生视频图生视频_2106826270205108225.json, 视频生成/文生视频/MiniMax H3多图参考音频参考｜加速优化版生成_2094524838961565698.json, 视频生成/文生视频/MiniMax H3多图音频参考极速生视频 优化版多模态创作_2098652804280832001.json, 视频生成/文生视频/MiniMax H3多图音频双参考｜加速优化版视频更稳定_2107655293843890177.json, 视频生成/文生视频/MiniMax H3极速生视频优化版｜多图参考加音频参考双加持_2105120322000347138.json, 视频生成/文生视频/MiniMax H3首尾帧视频加速版｜图生视频快速过运镜_2108027039709229058.json, 视频生成/文生视频/MiniMax H3首尾帧视频加速版｜图生视频高效出片方案_2105118748511399938.json, 视频生成/文生视频/加速版MiniMax H3图生视频首尾帧视频工作流，文生视频视频运镜图生视频_2107890229058297858.json, 视频生成/文生视频/加速版首尾帧视频生成｜MiniMax H3图生视频运镜控制_2097043511534243841.json, 视频生成/文生视频/多图+音频参考加速｜MiniMax H3优化版生视频_2094745022984974337.json, 视频生成/文生视频/多图加音频双参考输入 MiniMax H3极速生视频优化版_2104268127499542529.json, 视频生成/文生视频/多图参考加音频参考｜MiniMax H3 加速优化版 参考生视频更听话_2105490121989648386.json, 视频生成/文生视频/多图参考音频参考加速优化版｜MiniMax H3文生视频生成_2097027445839978498.json, 视频生成/文生视频/多图参考音频参考加速优化｜MiniMax H3文生图生视频_2091270580233400322.json, 视频生成/文生视频/多图参考音频参考加速版｜MiniMax H3图生视频生成_2097046537246433282.json, 视频生成/文生视频/多图参考音频参考加速版｜MiniMax H3文生视频_2092342768986320898.json, 视频生成/文生视频/多图参考音频参考极速生视频｜MiniMax H3优化版_2092070354985508866.json, 视频生成/文生视频/多图参考音频参考｜MiniMax H3加速版图生视频_2090895313207910402.json, 视频生成/文生视频/多图参考音频参考｜MiniMax H3极速生视频优化版_2090662418232991745.json, 视频生成/文生视频/多图音频参考加速版｜MiniMax H3图生视频_2091193733667704834.json, 视频生成/文生视频/极速生视频优化版｜MiniMax H3多图音频参考生成_2094750958134841346.json, 视频生成/文生视频/音频参考极速生视频｜MiniMax H3多图参考优化版_2090836383433842690.json, 视频生成/文生视频/首尾帧精准控制 MiniMax H3图生视频加速版流畅出片_2104266521487958017.json, 视频生成/文生视频/首尾帧视频加速版｜MiniMax H3图生视频生成_2094749515961163777.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（视频生成/图生视频/I2V首帧图直出片｜LTX-2.5图生视频音画同步_2093777187555074049.json、视频生成/图生视频/LTX 2.5图生视频｜高清视频一键直出_2091307834997825538.json、视频生成/图生视频/LTX-2.5图生视频I2V｜首帧图直接出片音画同步_2089408509157924866.json、视频生成/图生视频/LTX-2.5首尾帧FLF2V｜图生视频开源世界模型_2089407159401537537.json、视频生成/图生视频/LTX2.5图生视频速度快像素高生成工作流_2088276656308969473.json…）
+> 由 `engine/knowledge_consolidation` 从 44 个 workflow 归纳得出（视频生成/图生视频/首尾帧图文一键生视频｜MiniMax H3加速版数字人_2095958370124656641.json、视频生成/图生视频/首尾帧生视频！加速版MiniMaxH3转场特效数字人图生视频_2085455030794145794.json、视频生成/文生视频/2108028586644041729.json、视频生成/文生视频/5秒1080p仅8分钟｜MiniMax-H3图生视频全节点注释版_2093768843360563202.json、视频生成/文生视频/5秒1080p只要8分钟｜MiniMax-H3图生视频全节点注释_2094005447392063489.json…）
 
 - **类型**：Text To Image
-- **样本数**：34
+- **样本数**：44
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 34 个 workflow 都包含：
+全部 44 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
+- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVDualCFGGuider` —— 33/34 个有
-- `PrimitiveBoolean` —— 33/34 个有
-- `PreviewAny` —— 32/34 个有
-- `PrimitiveStringMultiline` —— 32/34 个有
-- `ComfySwitchNode` —— 31/34 个有
-- `TextGenerateLTX2Prompt` —— 31/34 个有
-- `LTXVPreprocess` —— 29/34 个有
-- `LoadImage` —— 29/34 个有
-- `KSamplerSelect` —— 25/34 个有
-- `LTXVLatentUpsampler` —— 25/34 个有
-- `LatentUpscaleModelLoader` —— 25/34 个有
-- `VHS_VideoCombine` —— 24/34 个有
-- `ResolutionSelector` —— 23/34 个有
-- `ResizeImageMaskNode` —— 21/34 个有
-- `CreateVideo` —— 20/34 个有
-- `LTXVImgToVideoInplace` —— 20/34 个有
-- `SaveVideo` —— 20/34 个有
-- `GetImageSize` —— 10/34 个有
-- `ImageFromBatch` —— 10/34 个有
-- `LTXVAddGuide` —— 10/34 个有
-- `LTXVCropGuides` —— 10/34 个有
-- `SamplerEulerAncestral` —— 10/34 个有
-- `SaveAudio` —— 10/34 个有
-- `SaveImage` —— 10/34 个有
-- `ImageScale` —— 4/34 个有
-- `CR Text` —— 3/34 个有
-- `FlashVSRNode` —— 3/34 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/34 个有
-- `RH_LLMAPI_Pro_Node` —— 3/34 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/34 个有
-- `CFGGuider` —— 1/34 个有
-- `ComfyNotNode` —— 1/34 个有
-- `LTXFloatToInt` —— 1/34 个有
-- `Label (rgthree)` —— 1/34 个有
-- `PrimitiveFloat` —— 1/34 个有
-- `PurgeVRAM_UTK` —— 1/34 个有
+- `EasyCache` —— 43/44 个有
+- `Int` —— 42/44 个有
+- `ImageResizeKJv2` —— 40/44 个有
+- `ShowAnything|Mie` —— 40/44 个有
+- `CR Prompt Text` —— 32/44 个有
+- `LoadAudio` —— 26/44 个有
+- `MiniMaxH3ReferenceToVideo` —— 26/44 个有
+- `intToFloat _O` —— 25/44 个有
+- `SaveImage` —— 19/44 个有
+- `MiniMaxH3ImageToVideo` —— 18/44 个有
+- `CM_IntToFloat` —— 13/44 个有
+- `PrimitiveStringMultiline` —— 8/44 个有
+- `ResolutionSelector` —— 5/44 个有
+- `CR Text` —— 3/44 个有
+- `GetNode` —— 2/44 个有
+- `PrimitiveFloat` —— 2/44 个有
+- `SetNode` —— 2/44 个有
+- `AILab_QwenVL_Advanced` —— 1/44 个有
+- `DF_Int_to_Float` —— 1/44 个有
+- `Image Stitch` —— 1/44 个有
+- `ImageScaleDownToSize` —— 1/44 个有
+- `LayerUtility: PurgeVRAM` —— 1/44 个有
+- `easy imageScaleDownToSize` —— 1/44 个有
+- `easy positive` —— 1/44 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 34 | 100% |
-| 高度 | 80 | 80 - 80 | 34 | 100% |
-| 采样步数 | 4 | 4 - 4 | 34 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 34 | 100% |
-| 采样算法 | er_sde | - | 34 | 100% |
-| 调度器 | beta | - | 34 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 34 | 100% |
+| 采样步数 | 4 | 4 - 4 | 44 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 44 | 100% |
+| 采样算法 | er_sde | - | 44 | 100% |
+| 调度器 | beta | - | 44 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 44 | 100% |
+| 宽度 | 80 | 80 - 80 | 44 | 100% |
+| 高度 | 80 | 80 - 80 | 44 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 34/34 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 44/44 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，34 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，34 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，34 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，34 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，34 个样本，一致性 100%
-- 调度器 最常用 beta，34 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
-- 高发问题（34/34 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，44 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，44 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，44 个样本，一致性 100%
+- 调度器 最常用 beta，44 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，44 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，44 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，44 个样本，取值集中（一致性 100%）
+- 高发问题（44/44 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：ShowAnything|Mie、intToFloat _O、CR Prompt Text

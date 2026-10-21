@@ -3,34 +3,34 @@ name: unknown_workflow_generic_686
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5225
-common_nodes: [LoadImage, SaveVideo, Seedance_Config, easy showAnything]
+coverage: 0.845
+common_nodes: [BatchImagesNode, KlingOmniProEditVideoNode, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2078774311791452162.json, 视频生成/图生视频/2082025454453743617.json]
+members: [comfyui-workflow-templates-json/api_kling_o3_video_edit.json, comfyui-workflow-templates-json/api_kling_omni_edit_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_686
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2078774311791452162.json、视频生成/图生视频/2082025454453743617.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_o3_video_edit.json、comfyui-workflow-templates-json/api_kling_omni_edit_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BatchImagesNode`
+- `KlingOmniProEditVideoNode`
 - `LoadImage`
+- `LoadVideo`
 - `SaveVideo`
-- `Seedance_Config`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `HappyHorse_1_1_Video` —— 1/2 个有
-- `Zhenzhen_Video_GK_V15` —— 1/2 个有
+- `Video Slice` —— 1/2 个有
 
 ## 典型参数
 

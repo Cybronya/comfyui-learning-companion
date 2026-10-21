@@ -3,32 +3,29 @@ name: unknown_workflow_video_lora_sampler_250
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.6115
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GrowMask, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.672625
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2055549996304478210.json, 视频生成/图生视频/1981708744444780545.json, 视频生成/图生视频/1981690387544842241.json, 视频生成/图生视频/1992566625708691457.json, 视频生成/图生视频/1969765016436154369.json, 视频生成/图生视频/1971382393225592834.json, 视频生成/图生视频/1971226836661420034.json, 视频生成/图生视频/1969270955216412673.json]
+members: [视频生成/图生视频/1973849425091104769.json, 视频生成/图生视频/1969386195249733634.json, 视频生成/图生视频/1970147620683476994.json, 视频生成/图生视频/1971382412112510978.json, 视频生成/图生视频/1969195120677580801.json, 视频生成/图生视频/1985660962449629185.json, 视频生成/图生视频/1976261739643838466.json, 视频生成/文生视频/1970644180198453250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_250
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2055549996304478210.json、视频生成/图生视频/1981708744444780545.json、视频生成/图生视频/1981690387544842241.json、视频生成/图生视频/1992566625708691457.json、视频生成/图生视频/1969765016436154369.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1973849425091104769.json、视频生成/图生视频/1969386195249733634.json、视频生成/图生视频/1970147620683476994.json、视频生成/图生视频/1971382412112510978.json、视频生成/图生视频/1969195120677580801.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BlockifyMask`
 - `CLIPVisionLoader`
 - `DWPreprocessor`
-- `DrawMaskOnImage`
 - `FaceMaskFromPoseKeypoints`
-- `GrowMask`
 - `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
 - `JWInteger`
@@ -40,6 +37,7 @@ source: knowledge_consolidation
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
@@ -48,34 +46,29 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `WanVideoLoraSelectMulti` —— 7/8 个有
-- `easy cleanGpuUsed` —— 7/8 个有
-- `DownloadAndLoadSAM2Model` —— 6/8 个有
-- `GetImageSizeAndCount` —— 6/8 个有
+- `GetNode` —— 6/8 个有
 - `ImageConcatMulti` —— 6/8 个有
-- `PointsEditor` —— 6/8 个有
-- `Sam2Segmentation` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `VHS_VideoInfo` —— 5/8 个有
+- `easy cleanGpuUsed` —— 5/8 个有
+- `BlockifyMask` —— 4/8 个有
+- `DrawMaskOnImage` —— 4/8 个有
+- `GrowMask` —— 4/8 个有
 - `LayerUtility: PurgeVRAM` —— 4/8 个有
-- `VHS_VideoInfo` —— 4/8 个有
-- `INTConstant` —— 3/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `PrimitiveStringMultiline` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `WanVideoEncode` —— 3/8 个有
-- `WanVideoUni3C_ControlnetLoader` —— 3/8 个有
-- `WanVideoUni3C_embeds` —— 3/8 个有
-- `easy int` —— 3/8 个有
-- `easy showAnything` —— 3/8 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 2/8 个有
-- `ImageBatchGet` —— 1/8 个有
-- `ImitationHueNode` —— 1/8 个有
-- `LoadRembgByBiRefNetModel` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `RembgByBiRefNet` —— 1/8 个有
-- `WanVideoLoraSelect` —— 1/8 个有
+- `GetImageSizeAndCount` —— 3/8 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 3/8 个有
+- `ImageFromBatch` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `Note Plus (mtb)` —— 2/8 个有
+- `PlaySound|pysssss` —— 2/8 个有
+- `Text` —— 2/8 个有
+- `WanVideoTorchCompileSettings` —— 2/8 个有
+- `easy convertAnything` —— 2/8 个有
+- `easy positive` —— 2/8 个有
+- `Anything Everywhere` —— 1/8 个有
+- `LayerMask: SegformerClothesPipelineLoader` —— 1/8 个有
+- `LayerMask: SegformerUltraV2` —— 1/8 个有
 
 ## 典型参数
 

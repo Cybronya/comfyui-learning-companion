@@ -1,60 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_17
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.838333
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, FluxGuidance, KSamplerSelect, ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 12
+level: strong
+coverage: 0.843333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, PathchSageAttentionKJ, PreviewImage, ProcessString, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
 problems: []
-missing: [Text Concatenate, Text Multiline, CR SDXL Aspect Ratio, easy cleanGpuUsed, Upscale Model Loader]
-members: [图片生成/文生图/1913094526456557570.json, 图片生成/文生图/1914304383847231490.json, 图片生成/文生图/1915672810759589889.json, 图片生成/文生图/1915753087057723394.json, 图片生成/文生图/1920069563512459265.json, 图片生成/文生图/1923351389630885890.json, 图片生成/文生图/1927931879364935681.json, 图片生成/文生图/1929809956793434113.json, 图片生成/文生图/1947113386972327938.json]
+missing: []
+members: [图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流_2009588663545503746.json, 图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流自用_2014134484735627265.json, 图片生成/文生图/大凯辰光-极致美学文生图-（9宫格直出）提升构图及真实性工作流_2009552798479814658.json, 图片生成/文生图/极致真实人像V2.0（提升美学）_2008839119325110273.json, 图片生成/文生图/极致真实人像摄影V1.0_2009073989850767361.json, 图片生成/文生图/极致美学 文生图（提升构图+真实性）_2008535816078888962.json, 图片生成/文生图/极致美学文生图-提升构图+真实性_2007814565563736066.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V4.0_1993873613419905026.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V5.0_1993948868719165441.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V5.0_2001899008475951105.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V6.0_1994216495739846658.json, 图片生成/文生图/电影质感真实人像V1.0_2009482138478977026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_17
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1913094526456557570.json、图片生成/文生图/1914304383847231490.json、图片生成/文生图/1915672810759589889.json、图片生成/文生图/1915753087057723394.json、图片生成/文生图/1920069563512459265.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流_2009588663545503746.json、图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流自用_2014134484735627265.json、图片生成/文生图/大凯辰光-极致美学文生图-（9宫格直出）提升构图及真实性工作流_2009552798479814658.json、图片生成/文生图/极致真实人像V2.0（提升美学）_2008839119325110273.json、图片生成/文生图/极致真实人像摄影V1.0_2009073989850767361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
+- **样本数**：12
+- **可信度**：强结论
 - **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `ModelSamplingFlux`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR Text`
+- `CR Text Replace`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `JDCN_StringToList`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `ProcessString`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 8/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `LoadImage` —— 2/9 个有
-- `CR SDXL Aspect Ratio` —— 1/9 个有
-- `ImageUpscaleWithModel` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `RH_Captioner` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
-- `Text Concatenate` —— 1/9 个有
-- `Text Multiline` —— 1/9 个有
-- `Upscale Model Loader` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `GetNode` —— 3/12 个有
+- `SetNode` —— 3/12 个有
+- `AILab_QwenVL` —— 2/12 个有
+- `Display Any (rgthree)` —— 2/12 个有
+- `LoadImage` —— 2/12 个有
+- `PreviewAny` —— 2/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 12 | 100% |
+| Prompt 约束强度(CFG) | 10 | 4 - 10 | 12 | 69% |
+| 采样算法 | 1 | 1 - 1 | 12 | 100% |
+| 调度器 | dpmpp_2m | - | 12 | 67% |
+| 重绘幅度 | simple | - | 12 | 75% |
+| 宽度 | 1080 | 1080 - 1080 | 12 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 12 | 100% |
 
 ## 常见问题
 
@@ -62,4 +70,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Concatenate、Text Multiline、CR SDXL Aspect Ratio、easy cleanGpuUsed、Upscale Model Loader
+- 采样步数 最常用 randomize，12 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 10，12 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m，12 个样本，一致性 67%
+- 重绘幅度 最常用 simple，12 个样本，一致性 75%
+- 宽度 中位数 1080，观测区间 1080 - 1080，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，12 个样本，取值集中（一致性 100%）

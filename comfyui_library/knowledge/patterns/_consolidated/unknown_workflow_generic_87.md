@@ -1,44 +1,40 @@
 ---
 name: unknown_workflow_generic_87
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.872444
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.8512
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037449795937243137.json, 视频生成/图生视频/2037446558546927617.json, 视频生成/图生视频/2037748338019278849.json, 视频生成/图生视频/2038532869190062082.json, 视频生成/图生视频/2038925657266196481.json, 视频生成/图生视频/2059211762397966338.json, 视频生成/图生视频/2038096687511638017.json, 视频生成/图生视频/2038078503165366274.json, 视频生成/图生视频/2037758920298602497.json]
+members: [音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968590572208435201.json, 音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968860316438339585.json, 音频生成/音频生成/Index+TTS2（情绪）语音克隆_1985969734783049729.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1966753591564382209.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1990120142594035714.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_2044700131739574273.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_2097613887163166722.json, 音频生成/音频生成/TTS2声音克隆，语音模仿，可以调情绪_1965792450579206146.json, 音频生成/音频生成/TTS2声音克隆，语音模仿，可以调情绪_2041905513490812929.json, 音频生成/音频生成/indextts2_2003659335702069249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_87
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2037449795937243137.json、视频生成/图生视频/2037446558546927617.json、视频生成/图生视频/2037748338019278849.json、视频生成/图生视频/2038532869190062082.json、视频生成/图生视频/2038925657266196481.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968590572208435201.json、音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968860316438339585.json、音频生成/音频生成/Index+TTS2（情绪）语音克隆_1985969734783049729.json、音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1966753591564382209.json、音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1990120142594035714.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CR Prompt Text`
-- `JWInteger`
-- `LoadImage`
-- `PreviewAny`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `Fast Groups Bypasser (rgthree)`
+- `IndexTTS2Run`
+- `LoadAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/9 个有
-- `ImageResize+` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
+- `Note _O` —— 9/10 个有
+- `SaveAudio` —— 9/10 个有
+- `NumberClamp` —— 2/10 个有
+- `SaveAudioMP3` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
+- `VHS_LoadAudio` —— 1/10 个有
 
 ## 典型参数
 

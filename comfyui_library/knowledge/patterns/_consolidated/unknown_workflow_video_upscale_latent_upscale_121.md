@@ -1,109 +1,96 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_121
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.564
-common_nodes: [AudioAdjustVolume, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTX2LoraLoaderAdvanced, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXLatentAnchorAware, LTXTextAttentionAmplifier, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVLatentUpsamplerTiled, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, STGGuiderAdvanced, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, Sigmas Easing, SolidMask, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy float, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.422333
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PreviewAny, PrimitiveBoolean, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SetNode, StringConcatenate, TextGenerateLTX2Prompt, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_LoadVideoFFmpeg, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3 Eros 口播数字人-首尾帧相同-V1.3_2082491190057988097.json, 视频生成/图生视频/2075060521405083649.json]
+members: [音频生成/音频生成/LTX-2.3视频扩展（增亮色彩版）_2045866940337491969.json, 音频生成/音频生成/LTX-2.3视频扩展（完美扩展版）_2045860108604805122.json, 音频生成/音频生成/LTX2.3 视频配音角色对口型_2062400772872167426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_121
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/LTX2.3 Eros 口播数字人-首尾帧相同-V1.3_2082491190057988097.json、视频生成/图生视频/2075060521405083649.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LTX-2.3视频扩展（增亮色彩版）_2045866940337491969.json、音频生成/音频生成/LTX-2.3视频扩展（完美扩展版）_2045860108604805122.json、音频生成/音频生成/LTX2.3 视频配音角色对口型_2062400772872167426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioAdjustVolume`
+全部 3 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
+- `ComfySwitchNode`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
+- `INTConstant`
 - `KSamplerSelect`
-- `LTX2LoraLoaderAdvanced`
+- `LTX2AttentionTunerPatch`
 - `LTX2SamplingPreviewOverride`
-- `LTXAVTextEncoderLoader`
-- `LTXLatentAnchorAware`
-- `LTXTextAttentionAmplifier`
+- `LTX2_NAG`
+- `LTXAddVideoICLoRAGuide`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVLatentUpsamplerTiled`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveInt`
+- `PreviewAny`
+- `PrimitiveBoolean`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
-- `STGGuiderAdvanced`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `Sigmas Easing`
-- `SolidMask`
-- `VAEDecode`
+- `StringConcatenate`
+- `TextGenerateLTX2Prompt`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VAELoaderKJ`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `easy float`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `Apply Whisper` —— 1/2 个有
-- `AudioCrop` —— 1/2 个有
-- `GroupSwitcher` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `JWStringToFloat` —— 1/2 个有
-- `LTXVAddGuide` —— 1/2 个有
-- `LTXVAudioVideoMask` —— 1/2 个有
-- `LTXVLatentUpsampler` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `PainterAudioLength` —— 1/2 个有
-- `Qwen3TTSModelLoader` —— 1/2 个有
-- `Qwen3TTSVoiceClone` —— 1/2 个有
-- `RTXVideoSuperResolution` —— 1/2 个有
-- `SaveAudioAdvanced` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `SoundFlow_GetLength` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
+- `ImagePadKJ` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LTXICLoRALoaderModelOnly` —— 2/3 个有
+- `LazySwitchKJ` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `BasicScheduler` —— 1/3 个有
+- `Color Correct (mtb)` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `GetVideoComponents` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/3 个有
+- `LTXVChunkFeedForward` —— 1/3 个有
+- `LTXVLatentUpsampler` —— 1/3 个有
+- `LTXVSetAudioRefTokens` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `SimpleCalculatorKJ` —— 1/3 个有
+- `easy convertAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1 | - | 2 | 100% |
-| 高度 | 24 | - | 2 | 100% |
-| LoRA 模型强度 | 0.79 | - | 2 | 73% |
-| LoRA 文本强度 | 0.5 | - | 2 | 0% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 24 - 25 | 3 | 98% |
 
 ## 常见问题
 
@@ -111,8 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.79，样本不足，未给区间，2 个样本
-- LoRA 文本强度 中位数 0.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 0%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，3 个样本，取值集中（一致性 98%）

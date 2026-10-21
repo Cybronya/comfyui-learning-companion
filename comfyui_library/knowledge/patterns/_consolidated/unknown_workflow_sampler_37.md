@@ -3,36 +3,34 @@ name: unknown_workflow_sampler_37
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub OmniWeaving Loader, SaveVideo]
+coverage: 0.3665
+common_nodes: [CR Text, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage, easy int]
 problems: []
-missing: []
-members: [视频生成/图生视频/2042127554609422338.json, 视频生成/图生视频/2042119826201649153.json]
+missing: [CR Text, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, RunningHub USO Loader, easy int, RunningHub USO Sampler]
+members: [图片生成/文生图/1968119490942763009.json, 图片生成/文生图/1968132053638217730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_37
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2042127554609422338.json、视频生成/图生视频/2042119826201649153.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1968119490942763009.json、图片生成/文生图/1968132053638217730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：37%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
+- `CR Text`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RunningHub OmniWeaving Loader`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(I2V)` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(TIV2V)` —— 1/2 个有
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
+- `easy int`
 
 ## 典型参数
 
@@ -44,4 +42,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: ColorImage、LayerUtility: ImageScaleByAspectRatio V2、RunningHub USO Loader、easy int
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

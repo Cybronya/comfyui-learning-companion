@@ -1,39 +1,41 @@
 ---
 name: unknown_workflow_generic_633
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5385
-common_nodes: [ImageLoader, JjkText, MultiTextConcatenate, RH_LLMAPI_Pro_Node, RH_RhartImageG25SunburstImageToImage, SaveImage, Text, easy cleanGpuUsed, easy saveText, easy showAnything, ttN concat]
+frequency: 3
+level: moderate
+coverage: 0.793333
+common_nodes: [CR Text, LoadAudio, MegaTTS3Run, SaveAudioMP3, VHS_LoadVideo]
 problems: []
-missing: [easy cleanGpuUsed, ttN concat, easy saveText]
-members: [图片生成/图生图/2102576863053963265.json, 视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json]
+missing: []
+members: [音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json, 音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json, 音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_633
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2102576863053963265.json、视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json、音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json、音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG25SunburstImageToImage`
-- `SaveImage`
-- `Text`
-- `easy cleanGpuUsed`
-- `easy saveText`
-- `easy showAnything`
-- `ttN concat`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `MegaTTS3Run`
+- `SaveAudioMP3`
+- `VHS_LoadVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveInt` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `easy anythingIndexSwitch` —— 2/3 个有
+- `InversionDemoLazySwitch` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -45,5 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed、ttN concat、easy saveText
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

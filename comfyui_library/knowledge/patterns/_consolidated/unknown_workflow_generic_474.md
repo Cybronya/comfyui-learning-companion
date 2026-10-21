@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_474
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.861
-common_nodes: [LoadAudio, RH_Wan25_T2V, SaveVideo]
+coverage: 0.95825
+common_nodes: [LoadAudio, PreviewAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [视频生成/文生视频/1978792977684434945.json, 视频生成/文生视频/1971189254913200130.json, 视频生成/文生视频/Wan2.5 文生视频_1984991216800600065.json]
+members: [音频生成/音频生成/indextts基础款_2014667772751515650.json, 音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json, 音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/空白工作流_2063266975324921857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_474
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1978792977684434945.json、视频生成/文生视频/1971189254913200130.json、视频生成/文生视频/Wan2.5 文生视频_1984991216800600065.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/indextts基础款_2014667772751515650.json、音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json、音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/空白工作流_2063266975324921857.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadAudio`
-- `RH_Wan25_T2V`
-- `SaveVideo`
+- `PreviewAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
+- `SaveAudio` —— 3/4 个有
+- `SaveAudioMP3` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
 
 ## 典型参数
 

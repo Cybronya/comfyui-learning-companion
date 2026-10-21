@@ -3,39 +3,33 @@ name: unknown_workflow_generic_383
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.80525
-common_nodes: [Apply Whisper, AudioSeparation, LoadAudio, PreviewAudio, SaveAudio, ShowText|pysssss, SoundFlow_TrimAudio, VoxCPM_TTS]
+coverage: 0.79275
+common_nodes: [workflow>人物, workflow>场景, workflow>道具]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json, 音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json, 音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json]
+members: [图片生成/文生图/快速漫剧资产生成_2053459705233723393.json, 图片生成/文生图/快速漫剧资产生成_2062008664554295297.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062074929415278594.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062349288679759873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_383
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json、音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json、音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json、音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/快速漫剧资产生成_2053459705233723393.json、图片生成/文生图/快速漫剧资产生成_2062008664554295297.json、图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062074929415278594.json、图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062349288679759873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioSeparation`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `SoundFlow_TrimAudio`
-- `VoxCPM_TTS`
+- `workflow>人物`
+- `workflow>场景`
+- `workflow>道具`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `LayerUtility: TextBox` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

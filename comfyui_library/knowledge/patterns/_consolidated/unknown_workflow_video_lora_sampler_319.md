@@ -3,63 +3,63 @@ name: unknown_workflow_video_lora_sampler_319
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.791714
-common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.926857
+common_nodes: [CLIPVisionLoader, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1959896744446341122.json, 视频生成/图生视频/1995404196142833665.json, 视频生成/文生视频/1022对比测试_1981324716671664130.json, 视频生成/文生视频/Wan2.2 V5-MoE Fast I2V for Characters_2072999497279774720.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_2072999534260953088.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1022版_1981325230595629057.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json]
+members: [视频生成/图生视频/1999827613361242114.json, 视频生成/图生视频/1999117506138828801.json, 视频生成/图生视频/1999165322026418177.json, 视频生成/图生视频/1999179098159185922.json, 视频生成/图生视频/1999117926080933890.json, 视频生成/图生视频/1999366459300212737.json, 视频生成/图生视频/1999110831537258497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_319
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1959896744446341122.json、视频生成/图生视频/1995404196142833665.json、视频生成/文生视频/1022对比测试_1981324716671664130.json、视频生成/文生视频/Wan2.2 V5-MoE Fast I2V for Characters_2072999497279774720.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_2072999534260953088.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1999827613361242114.json、视频生成/图生视频/1999117506138828801.json、视频生成/图生视频/1999165322026418177.json、视频生成/图生视频/1999179098159185922.json、视频生成/图生视频/1999117926080933890.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `ImageResizeKJv2`
+- `CLIPVisionLoader`
+- `INTConstant`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `String Literal` —— 6/7 个有
-- `WanVideoSetRadialAttention` —— 6/7 个有
-- `easy globalSeed` —— 6/7 个有
-- `easy seed` —— 6/7 个有
-- `Int` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `WanVideoScheduler` —— 5/7 个有
-- `WanVideoSigmaToStep` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `FloatToSigmas` —— 3/7 个有
-- `StringToFloatList` —— 3/7 个有
-- `INTConstant` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `CLIPVisionLoader` —— 1/7 个有
-- `ImageConcatMulti` —— 1/7 个有
-- `WanVideoClipVisionEncode` —— 1/7 个有
-- `WanVideoContextOptions` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `RepeatImageBatch` —— 6/7 个有
+- `SplineEditor` —— 6/7 个有
+- `WanVideoSetBlockSwap` —— 6/7 个有
+- `WanVideoSetLoRAs` —— 6/7 个有
+- `WanVideoTextEncode` —— 6/7 个有
+- `WanVideoWanDrawWanMoveTracks` —— 6/7 个有
+- `ImageConcanate` —— 5/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `easy showAnything` —— 3/7 个有
+- `FL_PathAnimator` —— 2/7 个有
+- `GetNode` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `Text Multiline` —— 2/7 个有
+- `WanVideoTorchCompileSettings` —— 2/7 个有
+- `Anything Everywhere3` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 1/7 个有
+- `SeedVR2` —— 1/7 个有
+- `SeedVR2BlockSwap` —— 1/7 个有
+- `SeedVR2ExtraArgs` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
 
 ## 典型参数
 

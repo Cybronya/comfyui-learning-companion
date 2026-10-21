@@ -3,22 +3,22 @@ name: unknown_workflow_video_lora_sampler_274
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.83625
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Apply LoRA Stack, CR Seed, CR Text, CheckpointLoaderSimple, ComfySwitchNode, ConditioningZeroOut, Convert Masks to Images, DiffusionModelLoaderKJ, INTConstant, Image Batch, ImageCompositeMasked, ImageScale, InvertMask, KSampler, LoadImage, ModelSamplingSD3, PrimitiveBoolean, SAM3_TrackPreview, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy loraStack]
+coverage: 0.97475
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, JWFloat, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanImageToVideo]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json, 视频生成/图生视频/2077936004870266882.json, 视频生成/图生视频/Scail2-长视频动作迁移_2093937361074872322.json, 视频生成/图生视频/Scail2-长视频角色替换_2093940597882179585.json, 视频生成/图生视频/🔪🔪终极效率版！SCAIL-2动作迁移&角色替换拆解工作流03集_2089247269597048834.json]
+members: [视频生成/图生视频/live动图-图生视频_wan2.2_2095005372602994689.json, 视频生成/图生视频/2039525725417508865.json, 视频生成/图生视频/2046422966447116289.json, 视频生成/图生视频/2045034745590980609.json, 视频生成/图生视频/2039532814231670785.json, 视频生成/文生视频/Wan2.2+All-in-one 极速版 图生视频_2069595721451528193.json, 视频生成/文生视频/Wan2.2+All-in-one 极速版 图生视频_2070390350711189506.json, 视频生成/文生视频/极速版 图生视频Wan2.2+All-in-one_2044241810842718210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_274
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json、视频生成/图生视频/2077936004870266882.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/live动图-图生视频_wan2.2_2095005372602994689.json、视频生成/图生视频/2039525725417508865.json、视频生成/图生视频/2046422966447116289.json、视频生成/图生视频/2045034745590980609.json、视频生成/图生视频/2039532814231670785.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
@@ -27,60 +27,38 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Apply LoRA Stack`
-- `CR Seed`
-- `CR Text`
+- `CR Prompt Text`
 - `CheckpointLoaderSimple`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `Convert Masks to Images`
-- `DiffusionModelLoaderKJ`
-- `INTConstant`
-- `Image Batch`
-- `ImageCompositeMasked`
-- `ImageScale`
-- `InvertMask`
+- `JWFloat`
+- `JWInteger`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
 - `ModelSamplingSD3`
-- `PrimitiveBoolean`
-- `SAM3_TrackPreview`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
+- `PathchSageAttentionKJ`
 - `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanContextWindowsManual`
-- `WanSCAILToVideo`
-- `easy loraStack`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `FastGroupsBypassSwitch` —— 7/8 个有
-- `GetNode` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `Text` —— 2/8 个有
-- `Any Switch (rgthree)` —— 1/8 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
-- `Fast Groups Muter (rgthree)` —— 1/8 个有
-- `Fast Muter (rgthree)` —— 1/8 个有
-- `GIMMVFI_interpolate` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `LazySwitch2way` —— 1/8 个有
-- `Seed (rgthree)` —— 1/8 个有
-- `easy convertAnything` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `JoinStrings` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `Qwen3_VQA` —— 1/8 个有
+- `RH_Captioner` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `TextInput_` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 8 | 89% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | dpmpp_2m_sde_gpu | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 100% |
+| 采样算法 | sa_solver | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
@@ -91,9 +69,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，8 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m_sde_gpu，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 100%
+- 采样算法 最常用 sa_solver，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 高发问题（8/8 个样本）：Steps较低可能导致细节不足

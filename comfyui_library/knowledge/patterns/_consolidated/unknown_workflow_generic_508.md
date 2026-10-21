@@ -3,36 +3,34 @@ name: unknown_workflow_generic_508
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.938
-common_nodes: [Fast Groups Bypasser (rgthree), IndexTTS2Run, IndexTTS2_Emotion, LoadAudio, SaveAudio, SeedVCRun, TextBox1]
+coverage: 1
+common_nodes: [ImageConcanate, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2006904223438479362.json, 音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2043878575400558594.json, 音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制_2004082424306909186.json]
+members: [图片生成/文生图/-全能图片V1 基础双图私用_1983735210313457666.json, 图片生成/文生图/1960889176243802113.json, 图片生成/文生图/图片生成_2018542793328697346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_508
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2006904223438479362.json、音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2043878575400558594.json、音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制_2004082424306909186.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/-全能图片V1 基础双图私用_1983735210313457666.json、图片生成/文生图/1960889176243802113.json、图片生成/文生图/图片生成_2018542793328697346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `IndexTTS2_Emotion`
-- `LoadAudio`
-- `SaveAudio`
-- `SeedVCRun`
-- `TextBox1`
+- `ImageConcanate`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
 
 ## 典型参数
 

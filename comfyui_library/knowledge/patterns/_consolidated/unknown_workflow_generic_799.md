@@ -3,34 +3,29 @@ name: unknown_workflow_generic_799
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [CR Prompt Text, LoadAudio, RH_FireRedAudioEdit, RH_FireRedAudioLoader, SaveAudio]
+coverage: 1
+common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/Firered Audio声学编辑_2093563422519676930.json, 音频生成/音频生成/Firered Audio语义编辑_2093563429712908289.json]
+members: [图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json, 图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_799
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Firered Audio声学编辑_2093563422519676930.json、音频生成/音频生成/Firered Audio语义编辑_2093563429712908289.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json、图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `RH_FireRedAudioEdit`
-- `RH_FireRedAudioLoader`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
+- `RH_SeedreamV5ProTextToImage`
+- `SaveImage`
+- `Text`
 
 ## 典型参数
 

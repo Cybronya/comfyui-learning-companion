@@ -3,81 +3,64 @@ name: unknown_workflow_video_lora_sampler_155
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.534
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageRemBg]
+coverage: 0.717727
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065033315945631746.json, 视频生成/图生视频/2067092376300122114.json, 视频生成/图生视频/2065218467845988354.json, 视频生成/图生视频/2065273440239710209.json, 视频生成/图生视频/2065316694119510016.json, 视频生成/图生视频/2071761838928384001.json, 视频生成/图生视频/2065696343452110850.json, 视频生成/图生视频/2065580332925145090.json, 视频生成/图生视频/2064927798959104002.json, 视频生成/图生视频/2065259619429212162.json, 视频生成/文生视频/SCAIL2-动作迁移（二创、跳舞、动作）_2064755609194549249.json]
+members: [视频生成/图生视频/2043873863750127617.json, 视频生成/图生视频/1963961319592480770.json, 视频生成/图生视频/1960951492805103618.json, 视频生成/图生视频/2065438787911639042.json, 视频生成/图生视频/1989024069318217729.json, 视频生成/图生视频/2006172526635917314.json, 视频生成/图生视频/2005908579766988801.json, 视频生成/图生视频/2046155816666927106.json, 视频生成/图生视频/1980220668019171330.json, 视频生成/图生视频/2065443186113339394.json, 视频生成/文生视频/1970041990975025153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_155
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2065033315945631746.json、视频生成/图生视频/2067092376300122114.json、视频生成/图生视频/2065218467845988354.json、视频生成/图生视频/2065273440239710209.json、视频生成/图生视频/2065316694119510016.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2043873863750127617.json、视频生成/图生视频/1963961319592480770.json、视频生成/图生视频/1960951492805103618.json、视频生成/图生视频/2065438787911639042.json、视频生成/图生视频/1989024069318217729.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `GetImageRangeFromBatch`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageRemBg`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 10/11 个有
-- `Int` —— 10/11 个有
-- `MathExpression|pysssss` —— 10/11 个有
-- `ModelSamplingSD3` —— 10/11 个有
-- `SetNode` —— 10/11 个有
-- `VHS_VideoInfoLoaded` —— 10/11 个有
-- `ImpactConditionalBranch` —— 9/11 个有
-- `PrimitiveBoolean` —— 9/11 个有
-- `Fast Groups Muter (rgthree)` —— 8/11 个有
-- `ImageConcatMulti` —— 8/11 个有
-- `Mute / Bypass Relay (rgthree)` —— 8/11 个有
-- `Mute / Bypass Repeater (rgthree)` —— 8/11 个有
-- `SimpleMath+` —— 3/11 个有
-- `TTResolutionSelector` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `CR Text` —— 2/11 个有
-- `PathchSageAttentionKJ` —— 2/11 个有
-- `SaveImage` —— 2/11 个有
-- `TT_img_enc_v2` —— 2/11 个有
-- `ArchAi3D_HighPass_Blend` —— 1/11 个有
-- `ComfyMathExpression` —— 1/11 个有
-- `DF_Int_to_Float` —— 1/11 个有
-- `ImageBatchMulti` —— 1/11 个有
-- `LoadImageGoohai` —— 1/11 个有
-- `MuyeTextEditOutput` —— 1/11 个有
-- `Primitive integer [Crystools]` —— 1/11 个有
-- `VHS_VideoInfo` —— 1/11 个有
-- `easy boolean` —— 1/11 个有
+- `GetImageSizeAndCount` —— 9/11 个有
+- `LayerUtility: PurgeVRAM` —— 9/11 个有
+- `Text Multiline` —— 9/11 个有
+- `AudioCrop` —— 6/11 个有
+- `PrimitiveString` —— 6/11 个有
+- `SimpleMath+` —— 5/11 个有
+- `easy cleanGpuUsed` —— 5/11 个有
+- `If ANY execute A else B` —— 4/11 个有
+- `Int2Any_AS` —— 4/11 个有
+- `PrimitiveInt` —— 4/11 个有
+- `SaveAudio` —— 4/11 个有
+- `SparkTTSClone` —— 4/11 个有
+- `ImageConcatMulti` —— 2/11 个有
+- `PreviewImage` —— 1/11 个有
 - `easy int` —— 1/11 个有
 
 ## 典型参数

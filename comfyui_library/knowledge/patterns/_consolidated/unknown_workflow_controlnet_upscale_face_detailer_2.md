@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_controlnet_upscale_face_detailer_2
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8685
+frequency: 4
+level: strong
+coverage: 0.87175
 common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, ControlNetApplySD3, ControlNetLoader, DetailDaemonSamplerNode, DualCLIPLoader, EmptySD3LatentImage, FaceDetailer, FluxGuidance, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, MultiplySigmas, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscale, UltralyticsDetectorProvider, Upscale Model Loader, VAEDecode, VAELoader]
 problems: []
 missing: [Upscale Model Loader]
-members: [图片生成/文生图/1920679986523471873.json, 图片生成/文生图/1924796362821726210.json]
+members: [图片生成/文生图/1920679986523471873.json, 图片生成/文生图/1924796362821726210.json, 图片生成/文生图/一键生成年代感动画风格角色_2067508971266732034.json, 图片生成/文生图/一键生成年代感动画风格角色_2069234470397497346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_face_detailer_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1920679986523471873.json、图片生成/文生图/1924796362821726210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1920679986523471873.json、图片生成/文生图/1924796362821726210.json、图片生成/文生图/一键生成年代感动画风格角色_2067508971266732034.json、图片生成/文生图/一键生成年代感动画风格角色_2069234470397497346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：4
+- **可信度**：强结论
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
@@ -50,14 +50,14 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Get_image_size` —— 1/2 个有
-- `SetUnionControlNetType` —— 1/2 个有
+- `SetUnionControlNetType` —— 3/4 个有
+- `DF_Get_image_size` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.7 | - | 2 | 86% |
+| ControlNet 权重 | 0.6 | 0.6 - 0.8 | 4 | 87% |
 
 ## 常见问题
 
@@ -65,6 +65,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- ControlNet 权重 中位数 0.6，观测区间 0.6 - 0.8，4 个样本，取值集中（一致性 87%）
 - 这些节点还没有知识卡，系统对它们的理解有限：Upscale Model Loader
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

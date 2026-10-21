@@ -1,101 +1,85 @@
 ---
 name: unknown_workflow_lora_sampler_clip_12
 type: Unknown Workflow
-frequency: 11
-level: strong
-coverage: 0.862273
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+frequency: 16
+level: moderate
+coverage: 0.745938
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042083663428460545.json, 视频生成/图生视频/2030927886542180353.json, 视频生成/图生视频/2037366573874290689.json, 视频生成/图生视频/2058356490804752385.json, 视频生成/图生视频/2043593704170070018.json, 视频生成/图生视频/2043581288925372417.json, 视频生成/图生视频/2031297244112101377.json, 视频生成/图生视频/2031346405217935361.json, 视频生成/图生视频/2054790441681342465.json, 视频生成/图生视频/2054484478025838593.json, 视频生成/图生视频/2039165345923080193.json]
+members: [视频生成/图生视频/2064287550000422914.json, 视频生成/图生视频/2064563859888885761.json, 视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json, 视频生成/图生视频/2079038691699412993.json, 视频生成/图生视频/2066734260651913217.json, 视频生成/图生视频/2077298487875694594.json, 视频生成/图生视频/2079024443669696513.json, 视频生成/图生视频/2078737111863353346.json, 视频生成/图生视频/2081916685078061057.json, 视频生成/图生视频/LTX2.3 MSR V2 (多主体参考) 图生视频_2083493730379722754.json, 视频生成/图生视频/2066907383061901313.json, 视频生成/图生视频/2072516302538887169.json, 视频生成/图生视频/2063611075953778689.json, 视频生成/图生视频/2072510726874427393.json, 视频生成/图生视频/2073281065932046336.json, 视频生成/图生视频/2064168475052036098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2042083663428460545.json、视频生成/图生视频/2030927886542180353.json、视频生成/图生视频/2037366573874290689.json、视频生成/图生视频/2058356490804752385.json、视频生成/图生视频/2043593704170070018.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/2064287550000422914.json、视频生成/图生视频/2064563859888885761.json、视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json、视频生成/图生视频/2079038691699412993.json、视频生成/图生视频/2066734260651913217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `CreateVideo`
 - `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVPreprocess`
+- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LowVRAMCheckpointLoader`
 - `ManualSigmas`
-- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `VAEDecodeTiled`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 10/11 个有
-- `KSamplerSelect` —— 10/11 个有
-- `LTXVLatentUpsampler` —— 10/11 个有
-- `LatentUpscaleModelLoader` —— 10/11 个有
-- `LTXVImgToVideoInplace` —— 9/11 个有
-- `ResizeImagesByLongerEdge` —— 9/11 个有
-- `PrimitiveStringMultiline` —— 8/11 个有
-- `ResizeImageMaskNode` —— 8/11 个有
-- `LTXVAudioVAEEncode` —— 7/11 个有
-- `LoadAudio` —— 7/11 个有
-- `PrimitiveBoolean` —— 7/11 个有
-- `SetLatentNoiseMask` —— 7/11 个有
-- `SolidMask` —— 7/11 个有
-- `PrimitiveFloat` —— 6/11 个有
-- `TrimAudioDuration` —— 6/11 个有
-- `LTXVEmptyLatentAudio` —— 4/11 个有
-- `PreviewAny` —— 4/11 个有
-- `GetImageSize` —— 2/11 个有
-- `LoraLoader` —— 2/11 个有
-- `SimpleMath+` —— 2/11 个有
-- `SoundFlow_GetLength` —— 2/11 个有
-- `StringReplace` —— 2/11 个有
-- `TextGenerateLTX2Prompt` —— 2/11 个有
-- `easy cleanGpuUsed` —— 2/11 个有
-- `AudioCrop` —— 1/11 个有
-- `AudioInfo` —— 1/11 个有
-- `Bjornulf_ShowInt` —— 1/11 个有
-- `FishS2VoiceCloneTTS` —— 1/11 个有
-- `ImageResize+` —— 1/11 个有
-- `ImageResizeKJv2` —— 1/11 个有
-- `LTXVAddGuide` —— 1/11 个有
-- `LTXVFirstLastFrameControl_TTP` —— 1/11 个有
-- `Label (rgthree)` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `MathExpression|pysssss` —— 1/11 个有
-- `PreviewAudio` —— 1/11 个有
-- `Qwen3ASRLoader_DFT` —— 1/11 个有
-- `Qwen3ASRTranscribe_DFT` —— 1/11 个有
-- `SamplerEulerAncestral` —— 1/11 个有
-- `StringConcatenate` —— 1/11 个有
-- `string_util_StrConcat` —— 1/11 个有
+- `CreateVideo` —— 12/16 个有
+- `SaveVideo` —— 12/16 个有
+- `GetNode` —— 8/16 个有
+- `LTX2_NAG` —— 8/16 个有
+- `PromptRelayEncode` —— 8/16 个有
+- `SetNode` —— 8/16 个有
+- `LoraLoaderModelOnly` —— 7/16 个有
+- `CR Text` —— 6/16 个有
+- `MathExpression|pysssss` —— 6/16 个有
+- `CR Float To Integer` —— 5/16 个有
+- `CR Text Concatenate` —— 5/16 个有
+- `CR Value` —— 5/16 个有
+- `FloatConstant` —— 5/16 个有
+- `PreviewAny` —— 5/16 个有
+- `RH_LLMAPI_NODE` —— 5/16 个有
+- `SimpleMath+` —— 5/16 个有
+- `VHS_VideoCombine` —— 5/16 个有
+- `easy boolean` —— 5/16 个有
+- `easy convertAnything` —— 5/16 个有
+- `LTXVSetAudioRefTokens` —— 4/16 个有
+- `CR Prompt Text` —— 3/16 个有
+- `ComfyMathExpression` —— 3/16 个有
+- `LTXVAddGuideMulti` —— 1/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
+- `LoadVideo` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 24 - 25 | 4 | 98% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 241 | 145 - 241 | 16 | 83% |
+| 高度 | 24 | 24 - 50 | 16 | 64% |
 
 ## 常见问题
 
@@ -103,7 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，4 个样本，取值集中（一致性 98%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 241，观测区间 145 - 241，16 个样本，取值集中（一致性 83%）
+- 高度 中位数 24，观测区间 24 - 50，16 个样本

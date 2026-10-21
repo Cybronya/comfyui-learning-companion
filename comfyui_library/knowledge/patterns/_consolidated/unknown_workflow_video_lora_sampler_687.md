@@ -3,77 +3,62 @@ name: unknown_workflow_video_lora_sampler_687
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.683667
-common_nodes: [Audio Duration (mtb), BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DownloadAndLoadWav2VecModel, DrawMaskOnImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PointsEditor, PreviewAny, ReverseImageBatch, Sam2Segmentation, SetNode, SimpleMath+, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.964667
+common_nodes: [AudioCrop, AudioSeparation, CR Text, HuMoEmbeds, ImpactInt, JWIntegerToString, LoadAudio, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018290540470607873.json, 视频生成/图生视频/2027669191704186881.json, 视频生成/图生视频/2007293154239713282.json]
+members: [视频生成/图生视频/1969293960176934913.json, 视频生成/图生视频/1968957972288323586.json, 音频生成/音频生成/👽HuMo音频直接生成视频👽_1969277777063145473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_687
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2018290540470607873.json、视频生成/图生视频/2027669191704186881.json、视频生成/图生视频/2007293154239713282.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1969293960176934913.json、视频生成/图生视频/1968957972288323586.json、音频生成/音频生成/👽HuMo音频直接生成视频👽_1969277777063145473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DownloadAndLoadWav2VecModel`
-- `DrawMaskOnImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `AudioCrop`
+- `AudioSeparation`
+- `CR Text`
+- `HuMoEmbeds`
+- `ImpactInt`
+- `JWIntegerToString`
 - `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PointsEditor`
-- `PreviewAny`
-- `ReverseImageBatch`
-- `Sam2Segmentation`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
 - `SimpleMath+`
-- `ToInt`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GrowMask` —— 2/3 个有
-- `LayerMask: MaskGrow` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy sam3ModelLoader` —— 2/3 个有
-- `easy sam3VideoSegmentation` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `ACE_TextGoogleTranslate` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `RunningHub Deepcleaner` —— 1/3 个有
+- `CreateCFGScheduleFloatList` —— 2/3 个有
+- `ImageBatchMulti` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `Note Plus (mtb)` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy imageRemBg` —— 2/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageFromBatch` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `Seed (rgthree)` —— 1/3 个有
+- `WanVideoCombineEmbeds` —— 1/3 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/3 个有
+- `Wav2VecModelLoader` —— 1/3 个有
 
 ## 典型参数
 

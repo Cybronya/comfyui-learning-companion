@@ -1,42 +1,41 @@
 ---
 name: unknown_workflow_generic_224
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8712
-common_nodes: [Apply Whisper, LoadAudio, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.830833
+common_nodes: [CR Prompt Text, LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/声音克隆（上传参考音频生成任何语音）_2100911017046925313.json, 音频生成/音频生成/Breeze TTS 2 声音克隆工作流-免打标一键复刻_2095712501966135298.json, 音频生成/音频生成/Breeze TTS 2 声音导演工作流-音色不变控情绪_2095712606765015042.json, 音频生成/音频生成/Breeze-TTS2-Clone_2105912504613425153.json, 音频生成/音频生成/TTS Breeze 2 高质量声音克隆｜世界第一开源｜情感控制_2096105647677984769.json]
+members: [视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json, 视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json, 视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json, 视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0(已支持原生1080p！可真人，审核宽松！_2048398173965651969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_224
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/声音克隆（上传参考音频生成任何语音）_2100911017046925313.json、音频生成/音频生成/Breeze TTS 2 声音克隆工作流-免打标一键复刻_2095712501966135298.json、音频生成/音频生成/Breeze TTS 2 声音导演工作流-音色不变控情绪_2095712606765015042.json、音频生成/音频生成/Breeze-TTS2-Clone_2105912504613425153.json、音频生成/音频生成/TTS Breeze 2 高质量声音克隆｜世界第一开源｜情感控制_2096105647677984769.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json、视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json、视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json、视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json、视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Apply Whisper`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadAudio`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_BreezeTTS_CloneRequest` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `SaveAudioMP3` —— 3/5 个有
-- `MuyeTextEditOutput` —— 2/5 个有
-- `SaveAudio` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `T8_BreezeTTS_DirectionRequest` —— 1/5 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `ShowAnything|Mie` —— 4/6 个有
+- `PreviewAny` —— 1/6 个有
+- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 1/6 个有
+- `忽略多组孤海` —— 1/6 个有
 
 ## 典型参数
 

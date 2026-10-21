@@ -3,38 +3,39 @@ name: unknown_workflow_generic_199
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.837333
-common_nodes: [LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.5
+common_nodes: [PrimitiveStringMultiline, SaveAudioAdvanced, YuE2Generate, YuE2Loader, YuE2SamplingConfig, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json, 音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json, 音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json, 音频生成/音频生成/【遇见AI】SoulX-Podcast语音模型，支持方言_2052998915368210433.json]
+members: [图片生成/文生图/YuE2-文生音乐-音乐生成_2100745018242850817.json, 图片生成/文生图/YuE2-文生音乐-音乐生成_2101454877619744770.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2100745326792634369.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2101455654618746882.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json, 音频生成/音频生成/YuE2-翻唱-音乐生成_2100065012445437953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_199
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json、音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json、音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/YuE2-文生音乐-音乐生成_2100745018242850817.json、图片生成/文生图/YuE2-文生音乐-音乐生成_2101454877619744770.json、图片生成/文生图/YuE2-翻唱-音乐生成_2100745326792634369.json、图片生成/文生图/YuE2-翻唱-音乐生成_2101455654618746882.json、图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+- `PrimitiveStringMultiline`
+- `SaveAudioAdvanced`
+- `YuE2Generate`
+- `YuE2Loader`
+- `YuE2SamplingConfig`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `Text Multiline` —— 4/6 个有
-- `LoadImage` —— 3/6 个有
-- `SaveAudio` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `EmptyImage` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `LoadAudio` —— 4/6 个有
+- `PreviewAny` —— 4/6 个有
+- `YuE2CoverTranscribe` —— 4/6 个有
 
 ## 典型参数
 

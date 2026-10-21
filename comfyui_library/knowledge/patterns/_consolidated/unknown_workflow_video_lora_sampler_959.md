@@ -3,51 +3,58 @@ name: unknown_workflow_video_lora_sampler_959
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.732
-common_nodes: [BasicGuider, CLIPLoader, CR Text, LoraLoaderModelOnly, MiniMaxH3Unified, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.818
+common_nodes: [Anything Everywhere, FantasyPortraitModelLoader, FantasyTalkingModelLoader, MultiTalkModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/简单用_2096538181641527298.json, 视频生成/文生视频/鱼酥大佬的工作流，借用一下_2097157731659632641.json]
+members: [视频生成/文生视频/wan 2.1 文生视频 （综合拆分）_2001587510151114753.json, 视频生成/文生视频/wan2.1+2.2 基础综合版_2001569276173664257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_959
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/简单用_2096538181641527298.json、视频生成/文生视频/鱼酥大佬的工作流，借用一下_2097157731659632641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/wan 2.1 文生视频 （综合拆分）_2001587510151114753.json、视频生成/文生视频/wan2.1+2.2 基础综合版_2001569276173664257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Text`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Unified`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `Anything Everywhere`
+- `FantasyPortraitModelLoader`
+- `FantasyTalkingModelLoader`
+- `MultiTalkModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/2 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VideoCombineV2` —— 1/2 个有
+- `CLIPVisionLoader` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `CreateCFGScheduleFloatList` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
 
 ## 典型参数
 

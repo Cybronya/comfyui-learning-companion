@@ -1,57 +1,71 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_5
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5995
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler (Efficient), ModelSamplingAuraFlow, PreviewImage, Prompts Everywhere, SaveImage, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.814
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler (Efficient), LayerFilter: HDREffects, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, StringFunction|pysssss, easy imageChooser, easy stylesSelector]
 problems: []
-missing: [LayerFilter: HDREffects, KSampler (Efficient), Prompts Everywhere]
-members: [图片生成/文生图/1954720212358709250.json, 图片生成/文生图/1954739193664684033.json]
+missing: []
+members: [图片生成/文生图/一键运行：White_Marble-AIO 白玉工作流 反推、风格切换 、高清放大_2063094142267379714.json, 图片生成/文生图/一键运行：Z-IMAGE 文生图 图像反推，文案优化，高清放大，图像选择_1997560990004887553.json, 图片生成/文生图/一键运行：red-z-image 融合模型 反推 高清放大 文生图_1999794771981893634.json, 图片生成/文生图/一键运行：z-imgae 最简文生图 洗图  高清放大_1997558973375135745.json, 图片生成/文生图/一键运行：红潮 Pruned-Red-Z-image bf16 文生图 QWEN3 反推 放大_1999790696926150657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1954720212358709250.json、图片生成/文生图/1954739193664684033.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/一键运行：White_Marble-AIO 白玉工作流 反推、风格切换 、高清放大_2063094142267379714.json、图片生成/文生图/一键运行：Z-IMAGE 文生图 图像反推，文案优化，高清放大，图像选择_1997560990004887553.json、图片生成/文生图/一键运行：red-z-image 融合模型 反推 高清放大 文生图_1999794771981893634.json、图片生成/文生图/一键运行：z-imgae 最简文生图 洗图  高清放大_1997558973375135745.json、图片生成/文生图/一键运行：红潮 Pruned-Red-Z-image bf16 文生图 QWEN3 反推 放大_1999790696926150657.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
 - `KSampler (Efficient)`
-- `ModelSamplingAuraFlow`
+- `LayerFilter: HDREffects`
 - `PreviewImage`
-- `Prompts Everywhere`
 - `SaveImage`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
-- `VAELoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `StringFunction|pysssss`
+- `easy imageChooser`
+- `easy stylesSelector`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 1/2 个有
-- `CLIPLoaderGGUF` —— 1/2 个有
-- `LayerFilter: HDREffects` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `LoadImage` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `Text Multiline` —— 4/5 个有
+- `easy textSwitch` —— 4/5 个有
+- `AILab_QwenVL` —— 3/5 个有
+- `CLIPLoader` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `Text Concatenate` —— 3/5 个有
+- `UNETLoader` —— 3/5 个有
+- `VAELoader` —— 3/5 个有
+- `CheckpointLoaderSimple` —— 2/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `CR Seed` —— 1/5 个有
+- `ConditioningSetTimestepRange` —— 1/5 个有
+- `Qwen3_VQA` —— 1/5 个有
+- `SeedVarianceEnhancer` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 9 | 6 - 10 | 5 | 79% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | dpmpp_2m | - | 5 | 40% |
+| 调度器 | sgm_uniform | - | 5 | 40% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 768 | 768 - 1080 | 5 | 85% |
+| 高度 | 1024 | 1024 - 1920 | 5 | 70% |
 
 ## 常见问题
 
@@ -59,10 +73,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerFilter: HDREffects、KSampler (Efficient)、Prompts Everywhere
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 9，观测区间 6 - 10，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m，5 个样本，一致性 40%
+- 调度器 最常用 sgm_uniform，5 个样本，一致性 40%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 1080，5 个样本，取值集中（一致性 85%）
+- 高度 中位数 1024，观测区间 1024 - 1920，5 个样本

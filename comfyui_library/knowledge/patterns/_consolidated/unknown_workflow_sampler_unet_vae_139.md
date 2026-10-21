@@ -1,75 +1,52 @@
 ---
 name: unknown_workflow_sampler_unet_vae_139
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7678
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainPlan, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3SigmaShift, PixaromaSizes, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy mergeVideosFromPaths]
+coverage: 0.980167
+common_nodes: [BasicGuider, CLIPLoader, CreateVideo, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速_2094642674493116417.json, 视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速v2_2094707715150012419.json, 视频生成/图生视频/MiniMax H3 多图参考无限长视频满血+加速_2096191515784732673.json, 视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2095862167072493569.json, 视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2096076568014704641.json]
+members: [视频生成/文生视频/02_MiniMax H3｜OpenVDN DMD8｜通用生视频 768P_2099156575138177025.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8 深度视频引导视频生成｜动作·运镜·结构迁移_2103416786740924418.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2098317972656971777.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2099120747452129282.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜通用生视频 2K_2098414505846992898.json, 视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜通用生视频 4K_2098414520787103746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_139
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速_2094642674493116417.json、视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速v2_2094707715150012419.json、视频生成/图生视频/MiniMax H3 多图参考无限长视频满血+加速_2096191515784732673.json、视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2095862167072493569.json、视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2096076568014704641.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/02_MiniMax H3｜OpenVDN DMD8｜通用生视频 768P_2099156575138177025.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8 深度视频引导视频生成｜动作·运镜·结构迁移_2103416786740924418.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2098317972656971777.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜参考生视频_2099120747452129282.json、视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜通用生视频 2K_2098414505846992898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `KSamplerSelect`
+- `CreateVideo`
 - `LoadImage`
-- `MiniMaxH3ChainAssemble`
-- `MiniMaxH3ChainContext`
-- `MiniMaxH3ChainCurrent`
-- `MiniMaxH3ChainLoopEnd`
-- `MiniMaxH3ChainLoopStart`
-- `MiniMaxH3ChainPlan`
-- `MiniMaxH3ChainSegmentSave`
-- `MiniMaxH3LoopTrim`
-- `MiniMaxH3SigmaShift`
-- `PixaromaSizes`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3VDNExecutionPlanT8Advanced`
+- `MiniMaxH3VDNModelComposerT8Advanced`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy mergeVideosFromPaths`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ChainReview` —— 4/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `MiniMaxH3ChainScenePromptEditor` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `SolAttnPatch` —— 3/5 个有
-- `ComfySwitchNode` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `LoadAudio` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `MiniMaxH3ImageToVideo` —— 2/5 个有
-- `MiniMaxH3ScheduledPictureReference` —— 2/5 个有
-- `MiniMaxH3ScheduledReferenceToVideo` —— 2/5 个有
-- `ModelAttentionBackend` —— 2/5 个有
-- `PrimitiveBoolean` —— 2/5 个有
-- `LoadVideo` —— 1/5 个有
-- `MiniMaxH3ChainPlanStudio` —— 1/5 个有
-- `MiniMaxH3ChainRichScenePromptEditor` —— 1/5 个有
-- `MiniMaxH3ChainRunManager` —— 1/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
-- `MiniMaxH3ReferenceVideoPrepare` —— 1/5 个有
-- `MiniMaxH3ScheduledAudioReference` —— 1/5 个有
-- `MiniMaxH3ScheduledVideoReference` —— 1/5 个有
+- `RH_DLSS5FrameInterpolation` —— 3/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `SeedVR2` —— 2/6 个有
+- `SeedVR2BlockSwap` —— 2/6 个有
+- `GetVideoComponents` —— 1/6 个有
+- `LoadVideo` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `Video Slice` —— 1/6 个有
 
 ## 典型参数
 

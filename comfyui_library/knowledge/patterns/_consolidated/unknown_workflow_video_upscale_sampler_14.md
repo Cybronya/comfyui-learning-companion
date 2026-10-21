@@ -3,54 +3,59 @@ name: unknown_workflow_video_upscale_sampler_14
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9415
-common_nodes: [FILM VFI, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.78
+common_nodes: [CLIPVisionLoader, CR Text Concatenate, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, JWInteger, JjkText, LoadImage, LoadWanVideoT5TextEncoder, PlaySound|pysssss, PreviewImage, RH_Captioner, RH_Prompter, RH_Translator, RIFE VFI, SimpleMath+, TextBox, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader, easy showAnything, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/1912762337353265153.json, 视频生成/图生视频/1914988219354574849.json]
+members: [视频生成/图生视频/1943848971993485314.json, 视频生成/图生视频/1936709639767511041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1912762337353265153.json、视频生成/图生视频/1914988219354574849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1943848971993485314.json、视频生成/图生视频/1936709639767511041.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FILM VFI`
+- `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `ImageResizeKJv2`
 - `ImageScale`
 - `ImageUpscaleWithModel`
+- `JWInteger`
+- `JjkText`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `RH_Captioner`
+- `RH_Prompter`
+- `RH_Translator`
+- `RIFE VFI`
+- `SimpleMath+`
+- `TextBox`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Aspect Ratio` —— 1/2 个有
-- `ImageFromBatch+` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Logic Boolean` —— 1/2 个有
-- `Number to Float` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `easy showAnything`
+- `ttN concat`
 
 ## 典型参数
 

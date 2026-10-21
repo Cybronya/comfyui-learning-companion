@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_sampler_unet_vae_116
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.714
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.780857
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax+H3单图生视频版_2093705769144373249.json, 视频生成/图生视频/MiniMax-H3开源 单图生视频版_2094011380541247489.json, 视频生成/图生视频/Minimax-h3图生视频版_2084511817468039169.json, 视频生成/图生视频/minimax H3 开源版图生视频_2084165222453039105.json, 视频生成/图生视频/minimax h3 竖屏版_2084459891346993153.json, 视频生成/图生视频/【傲雪AIGC】MiniMax+H3首尾帧生视频版_2093696527855341570.json]
+members: [视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json, 视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json, 视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json, 视频生成/图生视频/Minimax-H3-R2V 开源版本 多参考生视频_2084285644305682434.json, 视频生成/图生视频/Minimax-H3-图生视频（Lightx2v正式版）_2087553566264356865.json, 视频生成/图生视频/Minimax-H3-多参-长视频-原版-736p直出_2096509767048060930.json, 视频生成/图生视频/h3-角色人物场景生成视频_2094058724343246849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_116
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3单图生视频版_2093705769144373249.json、视频生成/图生视频/MiniMax-H3开源 单图生视频版_2094011380541247489.json、视频生成/图生视频/Minimax-h3图生视频版_2084511817468039169.json、视频生成/图生视频/minimax H3 开源版图生视频_2084165222453039105.json、视频生成/图生视频/minimax h3 竖屏版_2084459891346993153.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json、视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json、视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json、视频生成/图生视频/Minimax-H3-R2V 开源版本 多参考生视频_2084285644305682434.json、视频生成/图生视频/Minimax-H3-图生视频（Lightx2v正式版）_2087553566264356865.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
@@ -40,25 +40,28 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `孤海注释` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `CreateVideo` —— 3/6 个有
-- `GetNode` —— 3/6 个有
-- `ImageCrop+` —— 3/6 个有
-- `SaveVideo` —— 3/6 个有
-- `SetNode` —— 3/6 个有
-- `VHS_LoadVideoFFmpeg` —— 3/6 个有
-- `VHS_VideoCombine` —— 3/6 个有
-- `Text` —— 2/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageResizeKJv2` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/6 个有
-- `ModelAttentionBackend` —— 1/6 个有
-- `TeaCache` —— 1/6 个有
+- `CreateVideo` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `ModelAttentionBackend` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `GetImagesFromBatchIndexed` —— 3/7 个有
+- `GetVideoComponents` —— 3/7 个有
+- `SaveImage` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `LoadAudio` —— 2/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/7 个有
+- `FlashVSRNode` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `LoadVideoUI` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `MiniMaxH3MotionContext` —— 1/7 个有
+- `MiniMaxH3MotionContextTrim` —— 1/7 个有
+- `MiniMaxH3SigmaShift` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `RH_LLMAPI_Pro_Node` —— 1/7 个有
+- `Sleep` —— 1/7 个有
+- `孤海注释` —— 1/7 个有
 
 ## 典型参数
 

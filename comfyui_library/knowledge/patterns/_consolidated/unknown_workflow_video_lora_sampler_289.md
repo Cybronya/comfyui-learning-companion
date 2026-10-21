@@ -1,68 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_289
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.759625
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.732857
+common_nodes: [BasicScheduler, CLIPLoader, CR Float To String, CR Text, CR Text Concatenate, CR Text Replace, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, ImageBatchMultiV2, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PreviewAudio, PrimitiveStringMultiline, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/1983713271683457025.json, 视频生成/图生视频/2067576219452919809.json, 视频生成/图生视频/1975800896795881473.json, 视频生成/图生视频/1975790920316620801.json, 视频生成/图生视频/2002002967475699713.json, 视频生成/图生视频/1991126725268471809.json, 视频生成/文生视频/1969619629620555777.json, 视频生成/文生视频/1970282441866964994.json]
+members: [数字人/数字人/MV 数字人 最高质量+中等质量1分钟MV_数字人(selflift)_2102990042653356034.json, 数字人/数字人/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104865906382958594.json, 视频生成/图生视频/MV 数字人 最高质量版+中等质量1分钟MV_数字人_2102990042653356034.json, 视频生成/图生视频/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104938995259109378.json, 视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2105590721473507329.json, 视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2108379925534298113.json, 视频生成/图生视频/全新 Selflift+商用MV工作流+12种组合可选。完美数字人20260916版_2099750134669201409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_289
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1983713271683457025.json、视频生成/图生视频/2067576219452919809.json、视频生成/图生视频/1975800896795881473.json、视频生成/图生视频/1975790920316620801.json、视频生成/图生视频/2002002967475699713.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MV 数字人 最高质量+中等质量1分钟MV_数字人(selflift)_2102990042653356034.json、数字人/数字人/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104865906382958594.json、视频生成/图生视频/MV 数字人 最高质量版+中等质量1分钟MV_数字人_2102990042653356034.json、视频生成/图生视频/MV-数字人-高质量版+中等质量1分钟MV_数字人-最新版_2104938995259109378.json、视频生成/图生视频/MV_数字人_最高质量版_-MMH3_Selflift_2105590721473507329.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `JWInteger`
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Float To String`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `ImageBatchMultiV2`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `ShowAnything|Mie`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `WanVideoAnimateEmbeds` —— 6/8 个有
-- `Text` —— 5/8 个有
-- `GetImageSizeAndCount` —— 4/8 个有
-- `ImageConcatMulti` —— 4/8 个有
-- `CR Prompt Text` —— 3/8 个有
-- `LayerUtility: PurgeVRAM` —— 3/8 个有
-- `VHS_VideoInfo` —— 3/8 个有
-- `easy cleanGpuUsed` —— 3/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `RHHiddenNodes` —— 2/8 个有
-- `VHS_VideoInfoLoaded` —— 2/8 个有
-- `easy seed` —— 2/8 个有
-- `Int` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `TT_img_enc` —— 1/8 个有
+- `LoadAudio` —— 6/7 个有
+- `SoundFlow_GetLength` —— 6/7 个有
+- `JWStringToFloat` —— 5/7 个有
+- `TrimAudioDuration` —— 5/7 个有
+- `AudioCrop` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `LoadAudioUI` —— 1/7 个有
+- `PurgeVRAM_UTK` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/7 个有
+- `忽略多组孤海` —— 1/7 个有
 
 ## 典型参数
 

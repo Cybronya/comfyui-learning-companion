@@ -1,76 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_11
 type: Unknown Workflow
-frequency: 45
-level: strong
-coverage: 0.874556
-common_nodes: [Any To Any, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, Float, HunyuanVideoFoley, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, Text, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy mathInt, easy showAnything]
+frequency: 49
+level: moderate
+coverage: 0.726388
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085579405052698626.json, 视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085605535533068290.json, 视频生成/图生视频/2079216311300878337.json, 视频生成/图生视频/2076678007443509249.json, 视频生成/图生视频/2079559170201837570.json, 视频生成/图生视频/2076486473653776385.json, 视频生成/图生视频/2077297515594076162.json, 视频生成/图生视频/2076302783288008706.json, 视频生成/图生视频/2081017151829397505.json, 视频生成/图生视频/2081212413805940737.json, 视频生成/图生视频/2080456381441859585.json, 视频生成/图生视频/2080483813427343362.json, 视频生成/图生视频/2080457429132857345.json, 视频生成/图生视频/2080516332377952258.json, 视频生成/图生视频/叮叮的飞吻_2083468110757187585.json, 视频生成/图生视频/周末愉快_2083807638411894785.json, 视频生成/图生视频/哈哈，好看的裙子，哈哈，很有曲线美_2083501855832895490.json, 视频生成/图生视频/2081230151186210817.json, 视频生成/图生视频/2080522658558595074.json, 视频生成/图生视频/2081243950228267010.json, 视频生成/图生视频/2080891153406316545.json, 视频生成/图生视频/2080857100208664577.json, 视频生成/图生视频/2080244665965699073.json, 视频生成/图生视频/2079557430773637122.json, 视频生成/图生视频/2077431585602891778.json, 视频生成/图生视频/2077420333774237698.json, 视频生成/图生视频/2077430810310955010.json, 视频生成/图生视频/漫剧俯拍长镜头_2083497022388269057.json, 视频生成/图生视频/2081693338629140481.json, 视频生成/图生视频/2077710494714130434.json, 视频生成/图生视频/2079571585241014274.json, 视频生成/图生视频/2079963275604877314.json, 视频生成/图生视频/2080167337260568577.json, 视频生成/图生视频/2080203702916444161.json, 视频生成/图生视频/2080262167093399553.json, 视频生成/图生视频/2080279967212064769.json, 视频生成/图生视频/漫剧长镜头图书馆场景_2083527540001566722.json, 视频生成/图生视频/漫剧风格化图像转视频_2083521242224750594.json, 视频生成/图生视频/电商商品拍摄TEST1_2083809381015187458.json, 视频生成/图生视频/电商商品拍摄TEST2_2083816642307514369.json, 视频生成/图生视频/电商商品拍摄TEST3_2083816654127067138.json, 视频生成/图生视频/2077445647162236930.json, 视频生成/图生视频/高动态漫剧图生视频1_2082704275330920450.json, 视频生成/图生视频/高动态漫剧图生视频_2082719576378400770.json, 视频生成/图生视频/高动态漫剧图生视频_2082730576058081281.json]
+members: [视频生成/图生视频/2072526167571263489.json, 视频生成/图生视频/2080951206196899842.json, 视频生成/图生视频/2081641783875952641.json, 视频生成/图生视频/2046492973260611586.json, 视频生成/图生视频/2046851592153993217.json, 视频生成/图生视频/2046910304046551041.json, 视频生成/图生视频/2047145459982012417.json, 视频生成/图生视频/2047160236468867073.json, 视频生成/图生视频/2047231351606222849.json, 视频生成/图生视频/2047249835761344514.json, 视频生成/图生视频/2047904280446771201.json, 视频生成/图生视频/2052439073482129409.json, 视频生成/图生视频/2052755424847384578.json, 视频生成/图生视频/2052818320541396994.json, 视频生成/图生视频/2053175665918267393.json, 视频生成/图生视频/2053496869547982849.json, 视频生成/图生视频/2053511681703198721.json, 视频生成/图生视频/2054254654485221377.json, 视频生成/图生视频/2054257054595993602.json, 视频生成/图生视频/2057737815768784897.json, 视频生成/图生视频/2058284247890350082.json, 视频生成/图生视频/2058284795267997698.json, 视频生成/图生视频/2058286374553473025.json, 视频生成/图生视频/2058444480587583489.json, 视频生成/图生视频/2058481096018452482.json, 视频生成/图生视频/2058639989411500034.json, 视频生成/图生视频/2058649283943026689.json, 视频生成/图生视频/2058772271212359682.json, 视频生成/图生视频/2059550701113659394.json, 视频生成/图生视频/2064427874249166849.json, 视频生成/图生视频/2064996546147602434.json, 视频生成/图生视频/2047497091395624961.json, 视频生成/图生视频/2047889744532606978.json, 视频生成/图生视频/2042172500133548033.json, 视频生成/图生视频/2039232054755332098.json, 视频生成/图生视频/2042121574215589889.json, 视频生成/图生视频/2043974994291593217.json, 视频生成/图生视频/2020736841799962625.json, 视频生成/图生视频/2078749088413212673.json, 视频生成/图生视频/2079073056659689473.json, 视频生成/图生视频/2004423126941401089.json, 视频生成/图生视频/2047269838766215170.json, 视频生成/图生视频/2033430407915511809.json, 视频生成/图生视频/2013167617183326209.json, 视频生成/图生视频/2064360573986492418.json, 视频生成/图生视频/2039288865713823746.json, 视频生成/图生视频/2077308268699021313.json, 视频生成/图生视频/2057722585600843777.json, 视频生成/图生视频/2021769557274271746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 45 个 workflow 归纳得出（视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085579405052698626.json、视频生成/图生视频/bernini上传多参分镜自动扩展提示词_2085605535533068290.json、视频生成/图生视频/2079216311300878337.json、视频生成/图生视频/2076678007443509249.json、视频生成/图生视频/2079559170201837570.json…）
+> 由 `engine/knowledge_consolidation` 从 49 个 workflow 归纳得出（视频生成/图生视频/2072526167571263489.json、视频生成/图生视频/2080951206196899842.json、视频生成/图生视频/2081641783875952641.json、视频生成/图生视频/2046492973260611586.json、视频生成/图生视频/2046851592153993217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：45
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：49
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 45 个 workflow 都包含：
-- `Any To Any`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `Float`
-- `HunyuanVideoFoley`
-- `Int`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 49 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_SelectFilename`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy mathInt`
-- `easy showAnything`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 39/45 个有
-- `TextConcatenate_UTK` —— 39/45 个有
-- `PreviewImage` —— 33/45 个有
-- `RH_Translator` —— 26/45 个有
-- `GoogleTranslateTextNode` —— 13/45 个有
-- `ImageResizeKJv2` —— 12/45 个有
-- `ImageConcatMulti` —— 11/45 个有
-- `ImageConcatenate_UTK` —— 9/45 个有
-- `JDCN_StringToList` —— 9/45 个有
-- `StringReplace` —— 9/45 个有
-- `easy indexAnything` —— 9/45 个有
-- `RHHiddenNodes` —— 6/45 个有
+- `PreviewImage` —— 48/49 个有
+- `ImageConcatMulti` —— 47/49 个有
+- `ImageResizeKJv2` —— 47/49 个有
+- `OnnxDetectionModelLoader` —— 47/49 个有
+- `PoseDetectionOneToAllAnimation` —— 47/49 个有
+- `WanVideoBlockSwap` —— 43/49 个有
+- `WanVideoSetBlockSwap` —— 42/49 个有
+- `CR Prompt Text` —— 36/49 个有
+- `Int` —— 9/49 个有
+- `TextInput_` —— 7/49 个有
+- `easy showAnything` —— 3/49 个有
+- `DF_Int_to_Float` —— 2/49 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/49 个有
+- `PrimitiveStringMultiline` —— 2/49 个有
+- `SDPoseOODLoader` —— 2/49 个有
+- `SDPoseOODProcessor` —— 2/49 个有
+- `WanVideoTorchCompileSettings` —— 2/49 个有
+- `YOLOModelLoader` —— 2/49 个有
+- `easy cleanGpuUsed` —— 2/49 个有
+- `easy indexAnything` —— 2/49 个有
+- `easy mathInt` —— 2/49 个有
+- `ShowAnything|Mie` —— 1/49 个有
+- `VHS_VideoInfoLoaded` —— 1/49 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 45 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 45 | 100% |
-| 采样算法 | 1 | 1 - 1 | 45 | 100% |
-| 调度器 | euler | - | 45 | 100% |
-| 重绘幅度 | simple | - | 45 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,8 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，45 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，45 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，45 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，45 个样本，一致性 100%
-- 重绘幅度 最常用 simple，45 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

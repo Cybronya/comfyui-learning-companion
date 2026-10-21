@@ -3,62 +3,70 @@ name: unknown_workflow_video_lora_sampler_267
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.9085
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3ExactRecover, H3InjectSchedule, H3JerkHeatmap, H3JerkOracle, H3TimeSmear, H3V2VInit, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.492
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: []
-members: [视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json, 视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json, 视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json, 视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json, 视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088568398233038849.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088607540094521346.json, 视频生成/文生视频/Minimax H3拖影强化文生视频工作流_2088291098631434242.json]
+missing: [MathExpression|pysssss, easy forLoopEnd, easy forLoopStart]
+members: [视频生成/图生视频/2062171748241596417.json, 视频生成/图生视频/1998679386968743937.json, 视频生成/图生视频/1998642568097357826.json, 视频生成/图生视频/2054099257644331010.json, 视频生成/图生视频/2006242992251740162.json, 视频生成/图生视频/2000904519246639105.json, 视频生成/文生视频/1999868233400414209.json, 视频生成/文生视频/One-to-All Animation角色动画与图像姿态迁移延长流_1999029619397382145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_267
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json、视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json、视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json、视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json、视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2062171748241596417.json、视频生成/图生视频/1998679386968743937.json、视频生成/图生视频/1998642568097357826.json、视频生成/图生视频/2054099257644331010.json、视频生成/图生视频/2006242992251740162.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `H3ExactRecover`
-- `H3InjectSchedule`
-- `H3JerkHeatmap`
-- `H3JerkOracle`
-- `H3TimeSmear`
-- `H3V2VInit`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Text Multiline`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAELoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
+- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 6/8 个有
-- `SaveVideo` —— 6/8 个有
-- `H3AudioRecover` —— 4/8 个有
-- `LoadImage` —— 4/8 个有
-- `MiniMaxH3ImageToVideo` —— 4/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
-- `ModelPreviewOverrideKJ` —— 4/8 个有
-- `孤海注释` —— 2/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `MemoryCleaner` —— 1/8 个有
+- `FloatConstant` —— 7/8 个有
+- `WanVideoScheduler` —— 7/8 个有
+- `MathExpression|pysssss` —— 3/8 个有
+- `WanVideoTorchCompileSettings` —— 3/8 个有
+- `easy forLoopEnd` —— 3/8 个有
+- `easy forLoopStart` —— 3/8 个有
+- `MaskPreview+` —— 2/8 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
+- `GIMMVFI_interpolate` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
 
 ## 典型参数
 
@@ -70,4 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、easy forLoopEnd、easy forLoopStart

@@ -3,37 +3,39 @@ name: unknown_workflow_generic_268
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8984
-common_nodes: [FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, SaveAudio]
+coverage: 0.7832
+common_nodes: [CR Prompt Text, Float, LoadAudio, PreviewAudio, SaveAudioAdvanced, YuE2GenerateCover, YuE2ModelLoader, YuE2ReferenceVoiceCover, YuE2Transcribe]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS 语音合成 全能工作流 声音克隆+语音设计+自定义语音_2015126708516556801.json, 音频生成/音频生成/Qwen3-TTS_2017648745889927170.json, "音频生成/音频生成/Qwen3-TTS音色克隆,设计音色_2038656384841031682.json", 音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018651821329354753.json, 音频生成/音频生成/Qwen3-TTS音色推理设计，预设，克隆多合一_2017567768417148929.json]
+members: [图片生成/文生图/Yue2音色参考歌词重写音乐生成_2101875297305063426.json, 音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_268
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 语音合成 全能工作流 声音克隆+语音设计+自定义语音_2015126708516556801.json、音频生成/音频生成/Qwen3-TTS_2017648745889927170.json、音频生成/音频生成/Qwen3-TTS音色克隆,设计音色_2038656384841031682.json、音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018651821329354753.json、音频生成/音频生成/Qwen3-TTS音色推理设计，预设，克隆多合一_2017567768417148929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Yue2音色参考歌词重写音乐生成_2101875297305063426.json、音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json、音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceDesign`
+- `CR Prompt Text`
+- `Float`
 - `LoadAudio`
-- `SaveAudio`
+- `PreviewAudio`
+- `SaveAudioAdvanced`
+- `YuE2GenerateCover`
+- `YuE2ModelLoader`
+- `YuE2ReferenceVoiceCover`
+- `YuE2Transcribe`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSCustomVoice` —— 4/5 个有
-- `PreviewAudio` —— 4/5 个有
-- `WhisperSTT` —— 3/5 个有
-- `RH_LLMAPI_Pro_Node` —— 2/5 个有
-- `SaveImage` —— 1/5 个有
+- `EmptyImage` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
 
 ## 典型参数
 

@@ -3,80 +3,62 @@ name: unknown_workflow_video_lora_sampler_506
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.543
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, EmptyImage, FloatConstant, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, PreviewImage, SetNode, TextBox1, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy imageRemBg]
+coverage: 0.92125
+common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1979072764936097793.json, 视频生成/图生视频/1976916291078524930.json, 视频生成/图生视频/2016418267958616065.json, 视频生成/图生视频/1976905425356525570.json]
+members: [视频生成/图生视频/1998602211204718594.json, 视频生成/图生视频/1998598682582900738.json, 视频生成/图生视频/1998516871580278785.json, 视频生成/图生视频/1998992837641392130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_506
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1979072764936097793.json、视频生成/图生视频/1976916291078524930.json、视频生成/图生视频/2016418267958616065.json、视频生成/图生视频/1976905425356525570.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1998602211204718594.json、视频生成/图生视频/1998598682582900738.json、视频生成/图生视频/1998516871580278785.json、视频生成/图生视频/1998992837641392130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `EmptyImage`
-- `FloatConstant`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `INTConstant`
 - `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskToImage`
+- `LoadWanVideoT5TextEncoder`
 - `OnnxDetectionModelLoader`
-- `PointsEditor`
-- `PoseAndFaceDetection`
+- `PoseDetectionOneToAllAnimation`
 - `PreviewImage`
-- `SetNode`
-- `TextBox1`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadSAM2Model` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `Sam2Segmentation` —— 3/4 个有
-- `AnimalPosePreprocessor` —— 2/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `DrawViTPose` —— 2/4 个有
-- `FaceMaskFromPoseKeypoints` —— 2/4 个有
-- `ImageCropByMaskAndResize` —— 2/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `PixelPerfectResolution` —— 2/4 个有
-- `DownloadAndLoadQwenModel` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `QwenVLDetection` —— 1/4 个有
-- `SeCModelLoader` —— 1/4 个有
-- `SeCVideoSegmentation` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `Qwen3_VQA` —— 1/4 个有
+- `WanVideoContextOptions` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

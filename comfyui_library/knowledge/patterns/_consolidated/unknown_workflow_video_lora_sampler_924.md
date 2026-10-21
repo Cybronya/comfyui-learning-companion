@@ -3,49 +3,61 @@ name: unknown_workflow_video_lora_sampler_924
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.703
-common_nodes: [FantasyPortraitFaceDetector, FantasyPortraitModelLoader, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LandmarksToImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.912
+common_nodes: [ACE_ImageGetSize, CreateCFGScheduleFloatList, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], ResizeLongestToNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1958515950276526081.json, 视频生成/文生视频/Fantasy Portrait（文生视频）_2072999634521595904.json]
+members: [视频生成/图生视频/1950095043170361345.json, 视频生成/图生视频/1950059888082903042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_924
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1958515950276526081.json、视频生成/文生视频/Fantasy Portrait（文生视频）_2072999634521595904.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1950095043170361345.json、视频生成/图生视频/1950059888082903042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
+- `ACE_ImageGetSize`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
-- `LandmarksToImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `Primitive integer [Crystools]`
+- `ResizeLongestToNode`
 - `VHS_VideoCombine`
-- `WanVideoAddFantasyPortrait`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `AddLabel` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `JWStringConcat` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `TextConcat` —— 1/2 个有
+- `Wan22PromptSelector` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

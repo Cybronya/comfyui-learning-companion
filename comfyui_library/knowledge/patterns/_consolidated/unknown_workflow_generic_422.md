@@ -1,38 +1,33 @@
 ---
 name: unknown_workflow_generic_422
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.677667
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
+coverage: 0.91675
+common_nodes: [RH_Grok_Video3, SaveVideo]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1961121059854553089.json, 图片生成/文生图/1962730235911356417.json, 图片生成/文生图/1985955538850721794.json]
+missing: []
+members: [视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json, 视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json, 视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json, 视频生成/文生视频/全能视频X文生视频_1998220916691755010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_422
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1961121059854553089.json、图片生成/文生图/1962730235911356417.json、图片生成/文生图/1985955538850721794.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json、视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json、视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json、视频生成/文生视频/全能视频X文生视频_1998220916691755010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Translator`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `RH_Grok_Video3`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -44,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

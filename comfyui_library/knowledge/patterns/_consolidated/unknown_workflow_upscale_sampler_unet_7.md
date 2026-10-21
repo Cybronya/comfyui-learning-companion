@@ -3,60 +3,83 @@ name: unknown_workflow_upscale_sampler_unet_7
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5385
-common_nodes: [GoohaiUniversalSlider, KSamplerAdvanced, LayerFilter: GaussianBlur, LoadImage, PreviewImage, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy imageSizeByLongerSide, 图像缩放V2_孤海, 孤海注释, 忽略多组孤海, 数学运算_孤海]
+coverage: 0.6105
+common_nodes: [AIO_Preprocessor, Anything Everywhere3, CLIPLoader, ComfySwitchNode, EmptyLatentImage, FloatConstant, GetImageSize, GetImageSize+, Image Comparer (rgthree), ImageConcatMulti, ImageResize+, ImageScaleBy, JsonExtractString, KOOK_SaveJPGImage, KSamplerAdvanced, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, QwenImage21Cache, QwenMultiangleCameraNode, ResolutionSelector, RunningHub Deepcleaner, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImage21, TextGenerate, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy positive, 忽略多组孤海]
 problems: []
-missing: [LayerFilter: GaussianBlur, 图像缩放V2_孤海, 忽略多组孤海, 数学运算_孤海, easy imageSizeByLongerSide]
-members: [图片生成/图生图/2099087328559067138.json, 图片生成/图生图/2102331563605323778.json]
+missing: [Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, RunningHub Deepcleaner, SimpleMath+, easy positive, 忽略多组孤海, GetImageSize+, ImageResize+, Seed (rgthree)]
+members: [图片生成/图生图/2105998336317804545.json, 图片生成/文生图/Q2.1-全能工作流_2105998336317804545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2099087328559067138.json、图片生成/图生图/2102331563605323778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2105998336317804545.json、图片生成/文生图/Q2.1-全能工作流_2105998336317804545.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GoohaiUniversalSlider`
+- `AIO_Preprocessor`
+- `Anything Everywhere3`
+- `CLIPLoader`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `FloatConstant`
+- `GetImageSize`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
+- `ImageConcatMulti`
+- `ImageResize+`
+- `ImageScaleBy`
+- `JsonExtractString`
+- `KOOK_SaveJPGImage`
 - `KSamplerAdvanced`
-- `LayerFilter: GaussianBlur`
+- `Label (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PreviewAny`
 - `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `QwenImage21Cache`
+- `QwenMultiangleCameraNode`
+- `ResolutionSelector`
+- `RunningHub Deepcleaner`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
+- `VAEDecode`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `easy imageSizeByLongerSide`
-- `图像缩放V2_孤海`
-- `孤海注释`
+- `easy positive`
 - `忽略多组孤海`
-- `数学运算_孤海`
-
-**可变部分**（部分 workflow 才有）：
-- `GH_ImageVideoComparer` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 25 | - | 2 | 100% |
 | 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | sa_solver | - | 2 | 100% |
-| 重绘幅度 | beta57 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
+| 宽度 | 1080 | - | 2 | 100% |
+| 高度 | 1920 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,10 +87,13 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver，2 个样本，一致性 100%
-- 重绘幅度 最常用 beta57，2 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerFilter: GaussianBlur、图像缩放V2_孤海、忽略多组孤海、数学运算_孤海、easy imageSizeByLongerSide
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 25，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)、LayerUtility: ImageScaleByAspectRatio V2、RunningHub Deepcleaner、SimpleMath+、easy positive
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

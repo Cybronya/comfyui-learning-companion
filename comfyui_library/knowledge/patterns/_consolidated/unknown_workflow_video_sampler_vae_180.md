@@ -3,50 +3,54 @@ name: unknown_workflow_video_sampler_vae_180
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [ImageConcatMulti, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Primitive string [Crystools], VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.971
+common_nodes: [BasicMath, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, StringConcatenate, ToFloat, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1899280548576055298.json, 视频生成/图生视频/1895658256604266497.json]
+members: [视频生成/图生视频/2033528799509352449.json, 视频生成/图生视频/2033775049777352706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_180
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1899280548576055298.json、视频生成/图生视频/1895658256604266497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2033528799509352449.json、视频生成/图生视频/2033775049777352706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcatMulti`
+- `BasicMath`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
+- `INTConstant`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `Primitive string [Crystools]`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `StringConcatenate`
+- `ToFloat`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBlur` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `ImageScaleDownToSize` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `WanVideoControlEmbeds` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

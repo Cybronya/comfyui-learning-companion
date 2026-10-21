@@ -3,80 +3,74 @@ name: unknown_workflow_video_lora_sampler_572
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.633
-common_nodes: [AudioCrop, AudioInfo, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+coverage: 0.766
+common_nodes: [Anything Everywhere, AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SetNode, SimpleMath+, ToInt, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json, 视频生成/图生视频/2034445280996761602.json, 视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json]
+members: [数字人/数字人/Infinite+talk视频对口型无限时长_2076627487957798913.json, 数字人/数字人/zh9.15infinitetalk_2099697333901549570.json, 音频生成/音频生成/多模型 视频对口型 上传音频和文案_1986725050764226562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_572
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json、视频生成/图生视频/2034445280996761602.json、视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Infinite+talk视频对口型无限时长_2076627487957798913.json、数字人/数字人/zh9.15infinitetalk_2099697333901549570.json、音频生成/音频生成/多模型 视频对口型 上传音频和文案_1986725050764226562.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Anything Everywhere`
 - `AudioCrop`
-- `AudioInfo`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `Float`
-- `Int`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SaveAudio`
+- `SetNode`
 - `SimpleMath+`
-- `SolidMask`
-- `Text`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
+- `ToInt`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 - `easy cleanGpuUsed`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `InversionDemoLazySwitch` —— 2/3 个有
-- `LTXVLatentUpsampler` —— 2/3 个有
-- `LatentUpscaleModelLoader` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `Qwen3TTSModelLoader` —— 2/3 个有
-- `Qwen3TTSVoiceClone` —— 2/3 个有
-- `Qwen3TTSVoiceDesign` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `ShowText` —— 2/3 个有
-- `StringSubstring` —— 2/3 个有
-- `llama_cpp_instruct_adv` —— 2/3 个有
-- `llama_cpp_model_loader` —— 2/3 个有
-- `llama_cpp_parameters` —— 2/3 个有
-- `MelBandRoFormerModelLoader` —— 1/3 个有
-- `MelBandRoFormerSampler` —— 1/3 个有
-- `Qwen3_VQA_Plus` —— 1/3 个有
+- `Audio Duration (mtb)` —— 2/3 个有
+- `BasicMath` —— 2/3 个有
+- `CreateVideo` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `ToFloat` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `CR Index` —— 1/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `IndexTTS2Run` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `RH_GetAudioDuration` —— 1/3 个有
+- `Switch` —— 1/3 个有
+- `intToFloat _O` —— 1/3 个有
 
 ## 典型参数
 

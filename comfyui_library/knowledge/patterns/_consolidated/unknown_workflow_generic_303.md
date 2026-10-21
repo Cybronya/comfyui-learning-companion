@@ -1,37 +1,34 @@
 ---
 name: unknown_workflow_generic_303
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.77475
-common_nodes: [CR Text, LoadImage, SaveVideo]
+coverage: 0.6478
+common_nodes: [JjkText, LoadImage, PreviewAny, RHHiddenNodes, RH_Wan26_I2V, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2016202557592440833.json, 视频生成/图生视频/1999016663511093249.json, 视频生成/图生视频/2037356383514923009.json, 视频生成/图生视频/2037557543173627905.json]
+members: [视频生成/图生视频/2000772205925498882.json, 视频生成/图生视频/2003370501382807554.json, 视频生成/图生视频/2020021077941952513.json, 视频生成/图生视频/2000889067585892353.json, 视频生成/图生视频/2000500127985004545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_303
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2016202557592440833.json、视频生成/图生视频/1999016663511093249.json、视频生成/图生视频/2037356383514923009.json、视频生成/图生视频/2037557543173627905.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2000772205925498882.json、视频生成/图生视频/2003370501382807554.json、视频生成/图生视频/2020021077941952513.json、视频生成/图生视频/2000889067585892353.json、视频生成/图生视频/2000500127985004545.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
+全部 5 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
+- `PreviewAny`
+- `RHHiddenNodes`
+- `RH_Wan26_I2V`
 - `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/4 个有
-- `RH_Sora2_I2V_Batch` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
 
 ## 典型参数
 

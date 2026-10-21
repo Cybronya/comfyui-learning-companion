@@ -1,34 +1,40 @@
 ---
 name: unknown_workflow_generic_242
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6478
-common_nodes: [JjkText, LoadImage, PreviewAny, RHHiddenNodes, RH_Wan26_I2V, SaveVideo]
+coverage: 0.837333
+common_nodes: [LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2000772205925498882.json, 视频生成/图生视频/2003370501382807554.json, 视频生成/图生视频/2020021077941952513.json, 视频生成/图生视频/2000889067585892353.json, 视频生成/图生视频/2000500127985004545.json]
+members: [音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json, 音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json, 音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json, 音频生成/音频生成/【遇见AI】SoulX-Podcast语音模型，支持方言_2052998915368210433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_242
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2000772205925498882.json、视频生成/图生视频/2003370501382807554.json、视频生成/图生视频/2020021077941952513.json、视频生成/图生视频/2000889067585892353.json、视频生成/图生视频/2000500127985004545.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json、音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json、音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `PreviewAny`
-- `RHHiddenNodes`
-- `RH_Wan26_I2V`
-- `SaveVideo`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveAudioMP3` —— 4/6 个有
+- `SaveImage` —— 4/6 个有
+- `Text Multiline` —— 4/6 个有
+- `LoadImage` —— 3/6 个有
+- `SaveAudio` —— 2/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
 
 ## 典型参数
 

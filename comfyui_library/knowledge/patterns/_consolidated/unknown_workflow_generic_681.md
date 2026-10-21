@@ -3,37 +3,29 @@ name: unknown_workflow_generic_681
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.849
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
+coverage: 1
+common_nodes: [HappyHorseImageToVideoApi, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038856574608871426.json, 视频生成/图生视频/2034535724053172225.json]
+members: [comfyui-workflow-templates-json/api_happyhorse1_0_i2v.json, comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_681
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2038856574608871426.json、视频生成/图生视频/2034535724053172225.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_happyhorse1_0_i2v.json、comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `HappyHorseImageToVideoApi`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
+- `SaveVideo`
 
 ## 典型参数
 

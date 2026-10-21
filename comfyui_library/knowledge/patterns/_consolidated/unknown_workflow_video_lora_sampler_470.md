@@ -2,59 +2,67 @@
 name: unknown_workflow_video_lora_sampler_470
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageConcatMulti, ImageScaleBy, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo]
+level: moderate
+coverage: 0.585
+common_nodes: [GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, ImageConcanate, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1990969601058086914.json, 视频生成/图生视频/1997905673037971457.json, 视频生成/图生视频/1986208144172994561.json, 视频生成/图生视频/1982334863921561601.json]
+members: [数字人/数字人/mocha视频角色替换人物替换更换人物更换任意角色工作流_2003477047525711873.json, 视频生成/图生视频/1990430709800198145.json, 视频生成/图生视频/1983354803063562242.json, 视频生成/图生视频/2055888329194917889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_470
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1990969601058086914.json、视频生成/图生视频/1997905673037971457.json、视频生成/图生视频/1986208144172994561.json、视频生成/图生视频/1982334863921561601.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/mocha视频角色替换人物替换更换人物更换任意角色工作流_2003477047525711873.json、视频生成/图生视频/1990430709800198145.json、视频生成/图生视频/1983354803063562242.json、视频生成/图生视频/2055888329194917889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `ImageConcanate`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MaskPreview`
+- `MochaEmbeds`
+- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `CLIPVisionEncode` —— 2/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `WanFourFrameReferenceUltimate` —— 2/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `Anything Everywhere` —— 2/4 个有
+- `CM_FloatToInt` —— 2/4 个有
+- `OnnxDetectionModelLoader` —— 2/4 个有
+- `PointsEditor` —— 2/4 个有
+- `PoseAndFaceDetection` —— 2/4 个有
+- `RMBG` —— 2/4 个有
+- `easy float` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `Sa2VANodeTpl` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

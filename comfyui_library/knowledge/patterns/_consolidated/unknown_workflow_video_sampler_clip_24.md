@@ -1,71 +1,88 @@
 ---
 name: unknown_workflow_video_sampler_clip_24
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: strong
-coverage: 0.953
-common_nodes: [CLIPLoader, CLIPTextEncode, Fast Bypasser (rgthree), ImageScaleBy, ImpactInt, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveStringMultiline, Seed (rgthree), SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, wanBlockSwap]
+coverage: 0.665125
+common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PathchSageAttentionKJ, PreviewImage, SetNode, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanMoeKSampler, WanVideoVACEStartToEndFrame, easy anythingIndexSwitch, easy int, easy positive, easy seed]
 problems: []
-missing: [Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Note Plus (mtb), RIFE VFI, SimpleMath+, easy cleanGpuUsed, Seed (rgthree)]
-members: [视频生成/图生视频/2053671434622386177.json, 视频生成/文生视频/1979382260715655170.json, 视频生成/文生视频/Wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2036248908665462786.json, 视频生成/文生视频/Wan2.2 Smoothmix全自动提示词4步加速渲染工作流_2043337939740004354.json, 视频生成/文生视频/wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2041684980501323777.json, 视频生成/文生视频/wan2.2文生视频_2005367694092365826.json, 视频生成/文生视频/文生视频Wan2.2 GGUF 4步采样生成1k视频_2050852999907557378.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2038233332701470721.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2045817559047475201.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981303771013742594.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix_2051648863991279617.json, 视频生成/文生视频/文生视频_2008897153195839489.json, 视频生成/文生视频/文生视频_2011579787898261505.json, 视频生成/文生视频/极速渲染优化！Wan2.2 SmoothMix+RTX+Qwen3.5提示词优化_2048029118243020801.json, 视频生成/文生视频/🌈老许Gary：文生视频Wan2.2-Smooth Mix_2045834738073604098.json]
+missing: []
+members: [视频生成/图生视频/1975438275764686849.json, 视频生成/图生视频/wan2.2-Remix-ns-fw-官方视频-图生视频丝滑版_1986645790850510849.json, 视频生成/图生视频/2021413610848784385.json, 视频生成/图生视频/2043579993401335809.json, 视频生成/图生视频/2051204649931296770.json, 视频生成/图生视频/2051549317508411394.json, 视频生成/图生视频/2003774639149096961.json, 视频生成/图生视频/2003256917193555969.json, 视频生成/图生视频/2003260788590673922.json, 视频生成/图生视频/1996774154579976194.json, 视频生成/图生视频/1988562888287805442.json, 视频生成/图生视频/1996837849146302466.json, 视频生成/文生视频/Wan2.2官方：图生视频扩写长视频_2018279365133471745.json, 视频生成/文生视频/Wan2.2官方：视频扩写及图生视频工作流_2018624255843377154.json, 视频生成/文生视频/Wan2.2官方：视频扩写及图生视频工作流_2032046393744957441.json, 视频生成/文生视频/wan2.2-图生视频扩写--官方_2056643995220140034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_24
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2053671434622386177.json、视频生成/文生视频/1979382260715655170.json、视频生成/文生视频/Wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2036248908665462786.json、视频生成/文生视频/Wan2.2 Smoothmix全自动提示词4步加速渲染工作流_2043337939740004354.json、视频生成/文生视频/wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2041684980501323777.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/1975438275764686849.json、视频生成/图生视频/wan2.2-Remix-ns-fw-官方视频-图生视频丝滑版_1986645790850510849.json、视频生成/图生视频/2021413610848784385.json、视频生成/图生视频/2043579993401335809.json、视频生成/图生视频/2051204649931296770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Fast Bypasser (rgthree)`
-- `ImageScaleBy`
-- `ImpactInt`
-- `KSamplerAdvanced`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `VAEDecode`
+- `PreviewImage`
+- `SetNode`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `UNETLoader`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `wanBlockSwap`
+- `WanMoeKSampler`
+- `WanVideoVACEStartToEndFrame`
+- `easy anythingIndexSwitch`
+- `easy int`
+- `easy positive`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 14/15 个有
-- `UNETLoader` —— 14/15 个有
-- `LoraLoaderModelOnly` —— 8/15 个有
-- `RTXVideoSuperResolution` —— 8/15 个有
-- `easy cleanGpuUsed` —— 7/15 个有
-- `ShowText` —— 6/15 个有
-- `llama_cpp_instruct_adv` —— 6/15 个有
-- `llama_cpp_model_loader` —— 6/15 个有
-- `Wan22PromptSelector` —— 2/15 个有
-- `easy promptConcat` —— 2/15 个有
-- `Note Plus (mtb)` —— 1/15 个有
-- `SaveImage` —— 1/15 个有
-- `UnetLoaderGGUF` —— 1/15 个有
+- `ImpactFloat` —— 15/16 个有
+- `Qwen3_VQA` —— 15/16 个有
+- `WanImageToVideo` —— 15/16 个有
+- `easy showAnything` —— 15/16 个有
+- `LoraLoaderModelOnly` —— 14/16 个有
+- `MathExpression|pysssss` —— 14/16 个有
+- `MemoryCleaner` —— 14/16 个有
+- `ModelBlockSwap` —— 14/16 个有
+- `PrimitiveFloat` —— 14/16 个有
+- `easy imageSize` —— 13/16 个有
+- `CLIPVisionEncode` —— 3/16 个有
+- `CLIPVisionLoader` —— 3/16 个有
+- `ImageStitch` —— 2/16 个有
+- `easy imageRemBg` —— 2/16 个有
+- `CR Upscale Image` —— 1/16 个有
+- `Float` —— 1/16 个有
+- `Florence2ModelLoader` —— 1/16 个有
+- `Florence2Run` —— 1/16 个有
+- `PainterI2V` —— 1/16 个有
+- `QwenLoader` —— 1/16 个有
+- `SaveImage` —— 1/16 个有
+- `SaveLatent` —— 1/16 个有
+- `WanVideoPromptExtender` —— 1/16 个有
+- `easy cleanGpuUsed` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 15 | 67% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 15 | 80% |
-| 采样算法 | 1 | 1 - 1 | 15 | 100% |
-| 调度器 | euler_ancestral | - | 15 | 100% |
-| 重绘幅度 | simple | - | 15 | 100% |
+| 采样步数 | randomize | - | 16 | 100% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 16 | 100% |
+| 采样算法 | 1.5 | 1.5 - 1.5 | 16 | 100% |
+| 调度器 | 1 | 1 - 1 | 16 | 100% |
+| 重绘幅度 | sa_solver | - | 16 | 94% |
 
 ## 常见问题
 
@@ -73,9 +90,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，15 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，15 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，15 个样本，一致性 100%
-- 重绘幅度 最常用 simple，15 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：Fast Bypasser (rgthree)、Mute / Bypass Repeater (rgthree)、Note Plus (mtb)、RIFE VFI、SimpleMath+
+- 采样步数 最常用 randomize，16 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，16 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1.5，观测区间 1.5 - 1.5，16 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 sa_solver，16 个样本，一致性 94%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

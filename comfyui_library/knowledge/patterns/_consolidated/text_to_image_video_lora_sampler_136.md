@@ -1,90 +1,83 @@
 ---
 name: text_to_image_video_lora_sampler_136
 type: Text To Image
-frequency: 4
+frequency: 5
 level: strong
-coverage: 0.44375
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveStringMultiline, SaveImage, SetNode, SimpleMath+, TextEncodeQwenImageEditPlus, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy convertAnything, easy int]
+coverage: 0.9176
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [SimpleMath+, easy convertAnything, easy int, CR Integer To String, CR String To Number, Evaluate Strings, Text Multiline, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy mathInt]
-members: [图片生成/文生图/1978029679443595266.json, 视频生成/图生视频/1978029679443595266.json, 视频生成/图生视频/1978029698238263298.json, 视频生成/文生视频/1978029698238263298.json]
+missing: []
+members: [视频生成/文生视频/MiniMax H3全能导演台手动版视频生成处理工具V3.1_2101004935784648706.json, 视频生成/文生视频/MiniMax_H3全能导演台手动版V3.1｜文生视频图生视频_2100762286452461569.json, 视频生成/文生视频/全能导演台V2工作台｜MiniMax_H3文生图生视频_2093839210410242049.json, 视频生成/文生视频/全能导演台V2｜MiniMax_H3工作台数字人视频生成_2094044953394638850.json, 视频生成/文生视频/文圣单图多图生视频｜MiniMax h3工作台三合一_2092572110836289537.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_136
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1978029679443595266.json、视频生成/图生视频/1978029679443595266.json、视频生成/图生视频/1978029698238263298.json、视频生成/文生视频/1978029698238263298.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3全能导演台手动版视频生成处理工具V3.1_2101004935784648706.json、视频生成/文生视频/MiniMax_H3全能导演台手动版V3.1｜文生视频图生视频_2100762286452461569.json、视频生成/文生视频/全能导演台V2工作台｜MiniMax_H3文生图生视频_2093839210410242049.json、视频生成/文生视频/全能导演台V2｜MiniMax_H3工作台数字人视频生成_2094044953394638850.json、视频生成/文生视频/文圣单图多图生视频｜MiniMax h3工作台三合一_2092572110836289537.json）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `ImageScale`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveStringMultiline`
-- `SaveImage`
-- `SetNode`
-- `SimpleMath+`
-- `TextEncodeQwenImageEditPlus`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MultiRateSamplerEXPT8`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
-- `easy convertAnything`
-- `easy int`
+- `easy minimaxH3ToVideo`
+- `easy multiTrackEditor`
+- `easy multiTrackInfoOutput`
+- `easy multiTrackTaskOutput`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Integer To String` —— 2/4 个有
-- `CR String To Number` —— 2/4 个有
-- `Evaluate Strings` —— 2/4 个有
-- `ImpactStringSelector` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `VHS_SelectImages` —— 2/4 个有
-- `easy batchAnything` —— 2/4 个有
-- `easy forLoopEnd` —— 2/4 个有
-- `easy forLoopStart` —— 2/4 个有
-- `easy mathInt` —— 2/4 个有
+- `easy matchLine` —— 2/5 个有
+- `easy promptLine` —— 2/5 个有
+- `SaveImage` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler_ancestral | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1080 | 1080 - 1080 | 4 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 1080 - 1080，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+、easy convertAnything、easy int、CR Integer To String、CR String To Number
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

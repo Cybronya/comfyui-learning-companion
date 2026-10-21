@@ -3,38 +3,34 @@ name: unknown_workflow_generic_514
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.478
-common_nodes: [GetNode, IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3, SetNode]
+coverage: 0.648
+common_nodes: [CR Text, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
-missing: []
-members: [音频生成/音频生成/IndexTTS2语音克隆-声音克隆-音色克隆文本转语音，情绪克隆-单人语气克隆无杂音情绪配音_2088097963410280449.json, 音频生成/音频生成/格调_声音克隆20250302_1991401007521333250.json, 音频生成/音频生成/老杨_IndexTTS2声音克隆_1971258334726832130.json]
+missing: [CR Text]
+members: [图片生成/文生图/1983126405074591746.json, 图片生成/文生图/Seedream5Lite生图_2094624133287075841.json, 图片生成/文生图/即梦图像编辑文生图最多10图编辑4K出图0.15元一次_1990737692809961473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_514
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2语音克隆-声音克隆-音色克隆文本转语音，情绪克隆-单人语气克隆无杂音情绪配音_2088097963410280449.json、音频生成/音频生成/格调_声音克隆20250302_1991401007521333250.json、音频生成/音频生成/老杨_IndexTTS2声音克隆_1971258334726832130.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1983126405074591746.json、图片生成/文生图/Seedream5Lite生图_2094624133287075841.json、图片生成/文生图/即梦图像编辑文生图最多10图编辑4K出图0.15元一次_1990737692809961473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `GetNode`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-- `SetNode`
+- `CR Text`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `AudioPlay` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -46,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：CR Text

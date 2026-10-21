@@ -3,79 +3,60 @@ name: unknown_workflow_video_lora_sampler_271
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.509125
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, ExtendIntermediateSigmas, GetNode, KSamplerSelect, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, QwenH3PromptLocal, RIFE VFI, ResolutionSelector, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.8895
+common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2108366750462078978.json, 视频生成/图生视频/Minimax H3 selflift 速度质量完美平衡，内置自动提示词skill、光流补帧_2108809515079659522.json, 视频生成/图生视频/Minimax H3 创作终极工作流 ，内置闭源顶级生图模型、转深度视频、自动skill、光流补帧_2111078107561152513.json, 视频生成/图生视频/Minimax_H3_selflift_速度质量完美平衡，内置自动提示词skill、光流补帧_2110650291694686210.json, 视频生成/图生视频/Minimax_H3_selflift_速度质量完美平衡，内置自动提示词skill、光流补帧_2111369135853760513.json, 视频生成/图生视频/开源版Minimax H3 selflift 精品工作流VOSR_2108074638948528129.json, 视频生成/文生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2107077000434380802.json, 视频生成/文生视频/Minimax H3 selflift 速度质量完美平衡，内置自动提示词skill、光流补帧_2108105415606226946.json]
+members: [视频生成/图生视频/1959544112867389442.json, 视频生成/图生视频/1975197329210871809.json, 视频生成/图生视频/1950013972280950785.json, 视频生成/图生视频/1973774773308231682.json, 视频生成/图生视频/2072884554280562690.json, 视频生成/图生视频/2072885775900958721.json, 视频生成/图生视频/1963509971877072897.json, 视频生成/图生视频/1975958977194405889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_271
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 selflift 全能流V3 VOSR，兼顾速度&质量_2108366750462078978.json、视频生成/图生视频/Minimax H3 selflift 速度质量完美平衡，内置自动提示词skill、光流补帧_2108809515079659522.json、视频生成/图生视频/Minimax H3 创作终极工作流 ，内置闭源顶级生图模型、转深度视频、自动skill、光流补帧_2111078107561152513.json、视频生成/图生视频/Minimax_H3_selflift_速度质量完美平衡，内置自动提示词skill、光流补帧_2110650291694686210.json、视频生成/图生视频/Minimax_H3_selflift_速度质量完美平衡，内置自动提示词skill、光流补帧_2111369135853760513.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1959544112867389442.json、视频生成/图生视频/1975197329210871809.json、视频生成/图生视频/1950013972280950785.json、视频生成/图生视频/1973774773308231682.json、视频生成/图生视频/2072884554280562690.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `ExtendIntermediateSigmas`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `QwenH3PromptLocal`
-- `RIFE VFI`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3AudioConditioningT8` —— 5/8 个有
-- `MuyeTextEditOutput` —— 5/8 个有
-- `PrimitiveFloat` —— 5/8 个有
-- `VHS_LoadVideo` —— 5/8 个有
-- `easy textSwitch` —— 5/8 个有
-- `忽略多组孤海` —— 5/8 个有
-- `JjkText` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `Float` —— 3/8 个有
-- `JWImageResizeByLongerSide` —— 3/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
-- `RTXVideoSuperResolution` —— 3/8 个有
-- `VOSR2ModelLoader` —— 3/8 个有
-- `VOSR2Upscale` —— 3/8 个有
-- `easy imageSize` —— 3/8 个有
-- `LoadVideoDepthAnythingModel` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 1/8 个有
-- `RH_RhartImageNNb21TextToImage` —— 1/8 个有
-- `RH_YouchuanTextToImageV82Fast` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `VHS_VideoInfo` —— 1/8 个有
-- `VideoDepthAnythingProcess` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `CLIPVisionLoader` —— 7/8 个有
+- `PrimitiveInt` —— 7/8 个有
+- `WanVideoClipVisionEncode` —— 7/8 个有
+- `WanVideoTorchCompileSettings` —— 7/8 个有
+- `easy cleanGpuUsed` —— 7/8 个有
+- `CR Text` —— 5/8 个有
+- `SimpleMath+` —— 5/8 个有
+- `ShowText|pysssss` —— 3/8 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 2/8 个有
+- `AudioCrop` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `ImageBatchMultiple+` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `LoadAudio` —— 1/8 个有
+- `PrimitiveString` —— 1/8 个有
+- `easy promptReplace` —— 1/8 个有
+- `ttN text` —— 1/8 个有
 
 ## 典型参数
 

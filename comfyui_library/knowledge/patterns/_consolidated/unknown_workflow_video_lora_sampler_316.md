@@ -3,74 +3,61 @@ name: unknown_workflow_video_lora_sampler_316
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.547714
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.995857
+common_nodes: [CreateCFGScheduleFloatList, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1971146513277689858.json, 视频生成/图生视频/1969930159883231234.json, 视频生成/图生视频/2018529838486790146.json, 视频生成/图生视频/2037140996198240257.json, 视频生成/图生视频/1969240711893839873.json, 视频生成/图生视频/1969526770116554754.json, 视频生成/图生视频/1971057186338152449.json]
+members: [视频生成/图生视频/1963239484815028226.json, 视频生成/图生视频/1950010533321859074.json, 视频生成/图生视频/1981177939989499906.json, 视频生成/图生视频/1950432359721123842.json, 视频生成/图生视频/1979902570766438402.json, 视频生成/图生视频/1953038544099020801.json, 视频生成/图生视频/1964951415749791746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_316
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1971146513277689858.json、视频生成/图生视频/1969930159883231234.json、视频生成/图生视频/2018529838486790146.json、视频生成/图生视频/2037140996198240257.json、视频生成/图生视频/1969240711893839873.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1963239484815028226.json、视频生成/图生视频/1950010533321859074.json、视频生成/图生视频/1981177939989499906.json、视频生成/图生视频/1950432359721123842.json、视频生成/图生视频/1979902570766438402.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
+- `CreateCFGScheduleFloatList`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 6/7 个有
-- `Int` —— 5/7 个有
-- `BlockifyMask` —— 4/7 个有
-- `DrawMaskOnImage` —— 4/7 个有
-- `GetImageSizeAndCount` —— 4/7 个有
-- `GrowMask` —— 4/7 个有
-- `LayerUtility: PurgeVRAM` —— 4/7 个有
-- `VHS_VideoInfo` —— 4/7 个有
-- `CR Text` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 2/7 个有
-- `WanVideoTorchCompileSettings` —— 2/7 个有
-- `AILab_MiniCPM_4_V` —— 1/7 个有
-- `DownloadAndLoadSAM2Model` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LayerMask: LoadFlorence2Model` —— 1/7 个有
-- `LayerMask: ObjectDetectorFL2` —— 1/7 个有
-- `LayerMask: SAM2VideoUltra` —— 1/7 个有
-- `PointsEditor` —— 1/7 个有
-- `Sam2Segmentation` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `MathExpression|pysssss` —— 5/7 个有
+- `ImageListToImageBatch` —— 4/7 个有
+- `ImpactInt` —— 4/7 个有
+- `Primitive integer [Crystools]` —— 4/7 个有
+- `easy imageBatchToImageList` —— 4/7 个有
+- `GetImageSizeAndCount` —— 3/7 个有
+- `INTConstant` —— 3/7 个有
+- `RH_Captioner` —— 3/7 个有
+- `RH_LLMAPI_NODE` —— 3/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `JWInteger` —— 2/7 个有
+- `Text Multiline` —— 2/7 个有
+- `easy int` —— 2/7 个有
+- `easy seed` —— 2/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `LayerUtility: TextJoinV2` —— 1/7 个有
 
 ## 典型参数
 

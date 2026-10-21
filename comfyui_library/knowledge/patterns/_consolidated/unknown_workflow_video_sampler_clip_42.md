@@ -1,58 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_clip_42
 type: Unknown Workflow
-frequency: 12
-level: weak
-coverage: 0.970667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 11
+level: moderate
+coverage: 0.879818
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1950503507558387713.json, 视频生成/文生视频/wan2.2工作流_2034980882162917377.json, 视频生成/文生视频/1950456441427693570.json, 视频生成/文生视频/wan2.2文生视频_2087718119883235330.json, 视频生成/文生视频/wan2.2文生视频工作流_1992207253564444674.json, 视频生成/文生视频/wan文生视频_2009970396799442946.json, 视频生成/文生视频/【橘子AI】Wan 2.2 T2V 精简版_1989254188234321922.json, 视频生成/文生视频/工作流视频篇1-阿里万相Wan2.2Al视频创作实战_2016870256769245185.json, 视频生成/文生视频/惊艳文生视频 Remix最新万相 Wan2.2-Remix-Comfy-T2V-文生视频_1998211525884174338.json, 视频生成/文生视频/文生视频Holocine电影分镜工作流（自己测试吧）_1985283263507873793.json, 视频生成/文生视频/电影分镜创作test_1982334497687519233.json, "视频生成/文生视频/纯净万相 Wan2.2-Remix-Comfy-T2V-文生视频 不带lora,带插帧丝滑_2042646743598243841.json"]
+members: [视频生成/图生视频/1907807736166232066.json, 视频生成/图生视频/1895074790560956417.json, 视频生成/图生视频/1932067236700127234.json, 视频生成/图生视频/1914225072540741633.json, 视频生成/图生视频/1914706731866255362.json, 视频生成/图生视频/1926816500064358401.json, 视频生成/图生视频/1905280453560176642.json, 视频生成/图生视频/1903813340349501441.json, 视频生成/图生视频/1913242706372456449.json, 视频生成/图生视频/1911248941428736001.json, 视频生成/图生视频/1914494071358877697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_42
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/1950503507558387713.json、视频生成/文生视频/wan2.2工作流_2034980882162917377.json、视频生成/文生视频/1950456441427693570.json、视频生成/文生视频/wan2.2文生视频_2087718119883235330.json、视频生成/文生视频/wan2.2文生视频工作流_1992207253564444674.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1907807736166232066.json、视频生成/图生视频/1895074790560956417.json、视频生成/图生视频/1932067236700127234.json、视频生成/图生视频/1914225072540741633.json、视频生成/图生视频/1914706731866255362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `VAEDecode`
-- `VAELoader`
+全部 11 个 workflow 都包含：
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 10/12 个有
-- `PathchSageAttentionKJ` —— 9/12 个有
-- `LoraLoaderModelOnly` —— 8/12 个有
-- `INTConstant` —— 4/12 个有
-- `RIFE VFI` —— 2/12 个有
-- `UnetLoaderGGUF` —— 2/12 个有
-- `easy cleanGpuUsed` —— 2/12 个有
-- `Int` —— 1/12 个有
-- `MuyeMathCalculator` —— 1/12 个有
-- `WanVideoNAG` —— 1/12 个有
+- `WanVideoSLG` —— 10/11 个有
+- `WanVideoTeaCache` —— 10/11 个有
+- `WanVideoExperimentalArgs` —— 9/11 个有
+- `JWInteger` —— 8/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
+- `LayerUtility: PurgeVRAM` —— 8/11 个有
+- `WanVideoEnhanceAVideo` —— 8/11 个有
+- `CR Prompt Text` —— 7/11 个有
+- `Note Plus (mtb)` —— 3/11 个有
+- `HyVideoEnhanceAVideo` —— 2/11 个有
+- `LTXVPromptEnhancer` —— 2/11 个有
+- `LTXVPromptEnhancerLoader` —— 2/11 个有
+- `LoadLatent` —— 2/11 个有
+- `SaveImage` —— 2/11 个有
+- `SaveLatent` —— 2/11 个有
+- `PrimitiveInt` —— 1/11 个有
+- `String Literal` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 12 | 58% |
-| Prompt 约束强度(CFG) | 12 | 4 - 20 | 12 | 50% |
-| 采样算法 | 1.75 | 1 - 3.5 | 12 | 45% |
-| 调度器 | euler | - | 12 | 92% |
-| 重绘幅度 | simple | - | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,9 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，12 个样本，一致性 58%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 4 - 20，12 个样本，取值分散，一致性仅 50%
-- 采样算法 中位数 1.75，观测区间 1 - 3.5，12 个样本，取值分散，一致性仅 45%
-- 调度器 最常用 euler，12 个样本，一致性 92%
-- 重绘幅度 最常用 simple，12 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

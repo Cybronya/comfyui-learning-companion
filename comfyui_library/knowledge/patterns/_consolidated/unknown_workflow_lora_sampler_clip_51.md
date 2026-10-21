@@ -1,66 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_51
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.8808
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, CreateVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 7
+level: strong
+coverage: 0.842143
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
 problems: []
-missing: [CR Text Replace, SimpleMath+, easy cleanGpuUsed]
-members: [图片生成/文生图/1956317420480856065.json, 视频生成/图生视频/1956316164643323905.json, 视频生成/文生视频/1955139127446573057.json, 视频生成/文生视频/1955297362048684033.json, 视频生成/文生视频/1950557928396935169.json]
+missing: []
+members: [视频生成/文生视频/LTX2.3文生视频工作流_2077424982275219458.json, 视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json, 视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json, 视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json, 视频生成/文生视频/video_ltx2_3_i2v_comfyUI_native_2030681922401214465.json, 视频生成/文生视频/【LTX2.3官方工作流优化】文生视频+图生视频_含提示词扩写模板_2033142799469649922.json, 视频生成/文生视频/咕咕嘎嘎？_2042845410145869826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_51
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1956317420480856065.json、视频生成/图生视频/1956316164643323905.json、视频生成/文生视频/1955139127446573057.json、视频生成/文生视频/1955297362048684033.json、视频生成/文生视频/1950557928396935169.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/LTX2.3文生视频工作流_2077424982275219458.json、视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json、视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json、视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json、视频生成/文生视频/video_ltx2_3_i2v_comfyUI_native_2030681922401214465.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text Replace`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `CreateVideo`
-- `KSamplerAdvanced`
+- `EmptyLTXVLatentVideo`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SimpleMath+`
-- `TextBox`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `easy showAnything`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 4/5 个有
-- `RH_Prompter` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `ImpactInt` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `WanImageToVideo` —— 1/5 个有
-- `easy ifElse` —— 1/5 个有
+- `KSamplerSelect` —— 6/7 个有
+- `LTXAVTextEncoderLoader` —— 6/7 个有
+- `LTXVCropGuides` —— 6/7 个有
+- `LTXVLatentUpsampler` —— 6/7 个有
+- `LatentUpscaleModelLoader` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `LTXVImgToVideoInplace` —— 4/7 个有
+- `LTXVPreprocess` —— 4/7 个有
+- `PrimitiveBoolean` —— 4/7 个有
+- `ResizeImageMaskNode` —— 4/7 个有
+- `ResizeImagesByLongerEdge` —— 4/7 个有
+- `LoadImage` —— 3/7 个有
+- `DualCLIPLoader` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `LTXVScheduler` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `RH_LLMAPI_Pro_Node` —— 1/7 个有
+- `SamplerEulerAncestral` —— 1/7 个有
+- `Text` —— 1/7 个有
+- `VAEDecode` —— 1/7 个有
+- `easy getNode` —— 1/7 个有
+- `easy setNode` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 10 | 4 - 20 | 5 | 39% |
-| 采样算法 | 3.5 | 1 - 3.5 | 5 | 51% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 宽度 | 97 | 97 - 121 | 7 | 92% |
+| 高度 | 25 | 25 - 25 | 7 | 100% |
 
 ## 常见问题
 
@@ -68,10 +82,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 20，5 个样本，取值分散，一致性仅 39%
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，5 个样本
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Replace、SimpleMath+、easy cleanGpuUsed
+- 宽度 中位数 97，观测区间 97 - 121，7 个样本，取值集中（一致性 92%）
+- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）

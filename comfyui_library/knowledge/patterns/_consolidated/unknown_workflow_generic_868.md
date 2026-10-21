@@ -3,36 +3,36 @@ name: unknown_workflow_generic_868
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+coverage: 0.4595
+common_nodes: [Comfly_Googel_Veo3, LoadImage, RH_Translator, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/【精准控制声音情绪】IndexTTS2声音克隆【参考声音音色+参考声音情绪+文本】→【克隆声音】_2067141515532656642.json, 音频生成/音频生成/智造ai克隆音频_2079214947183185922.json]
+members: [视频生成/图生视频/2000283848959291394.json, 视频生成/图生视频/2000853660760408065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_868
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【精准控制声音情绪】IndexTTS2声音克隆【参考声音音色+参考声音情绪+文本】→【克隆声音】_2067141515532656642.json、音频生成/音频生成/智造ai克隆音频_2079214947183185922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2000283848959291394.json、视频生成/图生视频/2000853660760408065.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
+- `Comfly_Googel_Veo3`
+- `LoadImage`
+- `RH_Translator`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
+- `Comfly_api_set` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,38 +3,31 @@ name: unknown_workflow_generic_157
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.966286
-common_nodes: [CR Prompt Text, RunningHub Deepcleaner, SaveAudio, WooshLoadFlow, WooshSample, WooshTextEncode]
+coverage: 0.833
+common_nodes: [ComfyMathExpression, LoadImage, SaveVideo, workflow>参数调整组, workflow>工作节点组]
 problems: []
 missing: []
-members: [音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json, 音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json, 音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json, 音频生成/音频生成/Woosh音效生成_2044055803182714882.json, 音频生成/音频生成/文生音频音效（自用）_2067232351951867905.json]
+members: [视频生成/图生视频/MiniMax H3 -角色设定图生视频-封装版_2091265732331003906.json, 视频生成/图生视频/MiniMax H3 FL2VA-图生视频-优化版V2_2088597720071237633.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频-荒星远征_2089325717719965697.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频_2089363087576100865.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频《星空遗迹》_2090107308679454721.json, 视频生成/图生视频/MiniMax H3 图生视频-操作简单_2089018608247721985.json, 视频生成/图生视频/MiniMax H3 图生视频-操作简单_2089537873346392066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_157
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json、音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json、音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json、音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json、音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 -角色设定图生视频-封装版_2091265732331003906.json、视频生成/图生视频/MiniMax H3 FL2VA-图生视频-优化版V2_2088597720071237633.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频-荒星远征_2089325717719965697.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频_2089363087576100865.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频《星空遗迹》_2090107308679454721.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `RunningHub Deepcleaner`
-- `SaveAudio`
-- `WooshLoadFlow`
-- `WooshSample`
-- `WooshTextEncode`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/7 个有
-- `DeepTranslatorTextNode` —— 1/7 个有
-- `PreviewAny` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `ComfyMathExpression`
+- `LoadImage`
+- `SaveVideo`
+- `workflow>参数调整组`
+- `workflow>工作节点组`
 
 ## 典型参数
 

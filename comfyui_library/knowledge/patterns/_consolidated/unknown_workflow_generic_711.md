@@ -3,33 +3,29 @@ name: unknown_workflow_generic_711
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8285
-common_nodes: [LoadImage, RH_Veo3_Image2Video, SaveVideo]
+coverage: 0.6
+common_nodes: [ResolutionSelector, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
 problems: []
 missing: []
-members: [视频生成/图生视频/1978841402350145537.json, 视频生成/图生视频/1979104385529712641.json]
+members: [comfyui-workflow-templates-json/image_mage_flow_t2i_int8.json, comfyui-workflow-templates-json/image_mage_flow_turbo_t2i_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_711
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1978841402350145537.json、视频生成/图生视频/1979104385529712641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_mage_flow_t2i_int8.json、comfyui-workflow-templates-json/image_mage_flow_turbo_t2i_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_Veo3_Image2Video`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `ResolutionSelector`
+- `SaveImageAdvanced`
+- `d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
 
 ## 典型参数
 

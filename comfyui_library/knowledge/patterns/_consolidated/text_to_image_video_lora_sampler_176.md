@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_176
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.874667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.887333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleBy, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, Lora Loader Stack (rgthree), LoraLoaderModelOnly, MiniMaxH3ConcatAVLatent, MiniMaxH3ContextIR, MiniMaxH3HybridLoader, MiniMaxH3ImageToVideo, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ReferenceToVideo, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, Minimax_H3_Context_IR, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/自动提示词MV_4步加速版MinimaxH3音频驱动数字人_2085453705423446017.json, 视频生成/图生视频/视频模仿动作迁移数字人｜MiniMax H3图生视频工作流_2088372422662770689.json, 视频生成/视频生视频/MiniMax H3视频参考生视频加速版开源工作流_视频生视频方案_2106143392806821889.json]
+members: [视频生成/图生视频/开源MiniMax H3全能工作流，文生视频图生视频首尾帧参考生视频极速兼容_2103178748689477634.json, 视频生成/图生视频/开源版MiniMaxH3全能精品工作流｜文生图生参考极速生视频_2101930241441755137.json, 视频生成/图生视频/开源版MiniMaxH3全能精品｜文生图到参考视频极速一条龙_2103044074793160706.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_176
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自动提示词MV_4步加速版MinimaxH3音频驱动数字人_2085453705423446017.json、视频生成/图生视频/视频模仿动作迁移数字人｜MiniMax H3图生视频工作流_2088372422662770689.json、视频生成/视频生视频/MiniMax H3视频参考生视频加速版开源工作流_视频生视频方案_2106143392806821889.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/开源MiniMax H3全能工作流，文生视频图生视频首尾帧参考生视频极速兼容_2103178748689477634.json、视频生成/图生视频/开源版MiniMaxH3全能精品工作流｜文生图生参考极速生视频_2101930241441755137.json、视频生成/图生视频/开源版MiniMaxH3全能精品｜文生图到参考视频极速一条龙_2103044074793160706.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -27,47 +27,59 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `Lora Loader Stack (rgthree)`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3ConcatAVLatent`
+- `MiniMaxH3ContextIR`
+- `MiniMaxH3HybridLoader`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MediaLoaderFantastic`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceSplitter`
 - `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ResolutionSelector`
+- `MiniMaxH3TurboLoRA`
+- `MiniMaxH3TurboSampler`
+- `MiniMaxH3UnifiedToVideo`
+- `Minimax_H3_Context_IR`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `Text`
+- `SaveVideo`
+- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `EasyCache` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `VAEDecodeAudio` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `JWFloatToString` —— 1/3 个有
-- `LoadVideoUI` —— 1/3 个有
-- `MiniMaxH3SigmaShift` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `NotifyPixaroma` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `RHLLMChatNode` —— 1/3 个有
 - `SaveImage` —— 1/3 个有
-- `SolAttnPatch` —— 1/3 个有
-- `TextCombinerTwo` —— 1/3 个有
-- `VHS_LoadAudioUpload` —— 1/3 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
-- `easy getNode` —— 1/3 个有
-- `easy setNode` —— 1/3 个有
 
 ## 典型参数
 

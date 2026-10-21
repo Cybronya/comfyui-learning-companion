@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_53
 type: Unknown Workflow
-frequency: 12
+frequency: 13
 level: moderate
-coverage: 0.958333
-common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
+coverage: 0.804
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json, 音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json, 音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json, 音频生成/音频生成/Seed VC 音频换音色_2033059587288469506.json, 音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json, 音频生成/音频生成/亿薪AI-声线迁移_2020449982645538818.json, 音频生成/音频生成/语音音色克隆(音频到音频STS)_1932367217512345602.json, 音频生成/音频生成/语音音色克隆_2010759017274023937.json, 音频生成/音频生成/语音音色克隆（音频生音频）_1990429307434655745.json, 音频生成/音频生成/音频换音色_2029048391027658753.json, 音频生成/音频生成/音频转音色_1979826267300204545.json, 音频生成/音频生成/音频音色克隆-阿浩_2026923898918408193.json]
+members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036271751755210754.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2043547032144584705.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2045295642133667842.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2105586117281140738.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2108372556238639105.json, 音频生成/音频生成/全新声音模仿&语音克隆Qwen3 TTS_2015006488967778306.json, 音频生成/音频生成/声音克隆 Qwen3 TTS_2109114164743598082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_53
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json、音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json、音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json、音频生成/音频生成/Seed VC 音频换音色_2033059587288469506.json、音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
 - `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
 - `SaveAudio`
-- `SeedVCRun`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 7/12 个有
-- `Label (rgthree)` —— 2/12 个有
-- `Note Plus (mtb)` —— 1/12 个有
+- `JjkText` —— 5/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `PrimitiveFloat` —— 1/13 个有
+- `Text Multiline` —— 1/13 个有
 
 ## 典型参数
 

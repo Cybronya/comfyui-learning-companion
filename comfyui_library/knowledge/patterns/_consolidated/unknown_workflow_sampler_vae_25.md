@@ -3,63 +3,58 @@ name: unknown_workflow_sampler_vae_25
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.836
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8346
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
-missing: [Seed (rgthree)]
-members: [视频生成/图生视频/新手短剧_MiniMax H3 多参考视频生成工作流 v1_0_2106283115156172802.json, 视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json, 视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json, 视频生成/图生视频/海螺H3八步极速生成全能参考生视频_2087529254698446850.json, 视频生成/图生视频/海螺Minimax H3_r2v 官方加速版_2091451868676452353.json, 视频生成/图生视频/自用版 Minimax H3 全能多参生视频_2085256791130202114.json, 视频生成/图生视频/（2320）H3-最优官流_2089001915131711490.json, 视频生成/文生视频/H3-最优官流_2088982134630469634.json, 视频生成/文生视频/azheng_2095047905232121858.json, 视频生成/文生视频/minimaxH3多参考视频工作流（超级加速版）_2080928622717784066.json]
+missing: []
+members: [视频生成/文生视频/MiniMax_H3_T2V_lora加速_2090640077063020545.json, 视频生成/文生视频/MiniMax_H3文生视频V1_2087411429900120065.json, 视频生成/文生视频/MiniMax_H3文生视频V2_2088958815235559426.json, 视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json, 视频生成/文生视频/Minimax H3 文生视频 8步加速Lora+sage双重加速工作流_2089325283299119105.json, 视频生成/文生视频/Minimax H3 文生视频_2084236059835195394.json, 视频生成/文生视频/Minimax H3 文生视频_2084263974157242369.json, 视频生成/文生视频/MinimaxH3LORA加速工作流ENG文生视频4步ENG_2087097542533279745.json, 视频生成/文生视频/MinimaxH3文生视频4步LORA加速工作流_2084217093255421954.json, 视频生成/文生视频/Minimax_h3_文生视频_2084506740581818369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_25
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/新手短剧_MiniMax H3 多参考视频生成工作流 v1_0_2106283115156172802.json、视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json、视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json、视频生成/图生视频/海螺H3八步极速生成全能参考生视频_2087529254698446850.json、视频生成/图生视频/海螺Minimax H3_r2v 官方加速版_2091451868676452353.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3_T2V_lora加速_2090640077063020545.json、视频生成/文生视频/MiniMax_H3文生视频V1_2087411429900120065.json、视频生成/文生视频/MiniMax_H3文生视频V2_2088958815235559426.json、视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json、视频生成/文生视频/Minimax H3 文生视频 8步加速Lora+sage双重加速工作流_2089325283299119105.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `CreateVideo`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
+- `MiniMaxH3ImageToVideo`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 9/10 个有
-- `UNETLoader` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 8/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
-- `PrimitiveBoolean` —— 5/10 个有
-- `ComfySwitchNode` —— 4/10 个有
-- `ModelPreviewOverrideKJ` —— 4/10 个有
-- `PathchSageAttentionKJ` —— 4/10 个有
-- `LoadAudio` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `ManualSigmas` —— 2/10 个有
-- `PrimitiveInt` —— 2/10 个有
-- `AnyBooleanSwitch` —— 1/10 个有
-- `DiffusionModelLoaderKJ` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `Load Lora` —— 1/10 个有
-- `MiniMaxH3BlockCacheT8` —— 1/10 个有
-- `Seed (rgthree)` —— 1/10 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
+- `ResolutionSelector` —— 8/10 个有
+- `UNETLoader` —— 8/10 个有
+- `LoraLoaderModelOnly` —— 7/10 个有
+- `VHS_VideoCombine` —— 6/10 个有
+- `CreateVideo` —— 5/10 个有
+- `SaveVideo` —— 5/10 个有
+- `PrimitiveStringMultiline` —— 3/10 个有
+- `easy int` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
+- `DiffusionModelLoaderKJ` —— 2/10 个有
+- `MiniMaxChunkFeedForward` —— 2/10 个有
+- `MiniMaxLowVRAMAttention` —— 2/10 个有
+- `MuyeTextEditOutput` —— 2/10 个有
+- `CR Text` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `MiniMaxH3SigmaShift` —— 1/10 个有
+- `SolAttnPatch` —— 1/10 个有
 
 ## 典型参数
 
@@ -71,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Seed (rgthree)
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

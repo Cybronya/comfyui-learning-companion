@@ -3,31 +3,34 @@ name: unknown_workflow_generic_851
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.904
-common_nodes: [LayerUtility: TextBox, LoadAudio, SaveAudio, SaveAudioMP3, VoxCPM_TTS]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo, Text, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM-TTS：粤语、上海话、天津话、四川话方言克隆_1989895308291305473.json, 音频生成/音频生成/超强精准语音克隆VoxCPM-TTS_1970724638970048513.json]
+members: [视频生成/图生视频/b-Minimax H3图生视频(首尾帧生视频)_2083156918285197313.json, 视频生成/图生视频/阿里最强视频模型wan3.0 Prime图生视频低至0.43元_秒_2092426731033554946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_851
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/VoxCPM-TTS：粤语、上海话、天津话、四川话方言克隆_1989895308291305473.json、音频生成/音频生成/超强精准语音克隆VoxCPM-TTS_1970724638970048513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/b-Minimax H3图生视频(首尾帧生视频)_2083156918285197313.json、视频生成/图生视频/阿里最强视频模型wan3.0 Prime图生视频低至0.43元_秒_2092426731033554946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: TextBox`
-- `LoadAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `VoxCPM_TTS`
+- `LoadImage`
+- `SaveVideo`
+- `Text`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_AlibabaWan30PrimeImageToVideo` —— 1/2 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

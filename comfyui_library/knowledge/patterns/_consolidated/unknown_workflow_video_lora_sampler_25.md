@@ -1,77 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_25
 type: Unknown Workflow
-frequency: 26
+frequency: 27
 level: moderate
-coverage: 0.788962
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.867222
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [SimpleMath+]
-members: [图片生成/文生图/1956947526549999617.json, 图片生成/文生图/1958496258287681537.json, 数字人/数字人/5分钟图片生视频对口型+情感口播++数字人+InfiniTetalk+超自然数字人对口型_2093607637110837250.json, 数字人/数字人/InfiniteTalk超自然数字人对口型单人视频驱动_2089373497083650049.json, 数字人/数字人/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2092517680044658690.json, 数字人/数字人/图片数字人-z_2103458494379814913.json, 数字人/数字人/对口型 mv唱歌  数字人 InfiniTetalk 超自然数字人对口型_2089756106502529026.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2089916243682877441.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2092260355593560065.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2100264026080104449.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2103048752205488130.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2103743133040332802.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2103806861056241665.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2108852311643746305.json, 数字人/数字人/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2111016982731644929.json, 数字人/数字人/对口型_情感口播_数字人_InfiniTetalk_超自然数字人对口型_2100930385105473538.json, 数字人/数字人/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2085410347422408705.json, 视频生成/图生视频/2059562023511482369.json, 视频生成/图生视频/2059627314367000578.json, 视频生成/图生视频/对口型_情感口播_数字人_InfiniTetalk_超自然数字人对口型_2100789211803766786.json, 视频生成/图生视频/对口型_情感口播_数字人_InfiniTetalk_超自然数字人对口型_2_2100790214015934465.json, 视频生成/图生视频/对口型_情感口播_数字人_InfiniTetalk_超自然数字人对口型_3_2100791112670736385.json, 视频生成/图生视频/2067590324024864769.json, 音频生成/音频生成/InfiniTetalk 音频+视频转数字人 配音必备神器_1998731179878666242.json, 音频生成/音频生成/InfiniteTalk单人视频对口型_2048286460733820930.json, 音频生成/音频生成/InfiniteTalk超自然视频对口型-单人_2015602473221758978.json]
+missing: []
+members: [数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json, 视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟图生视频_2086887876364685314.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087127116713390081.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087159355169918977.json, 视频生成/图生视频/(Dasiwa V1+SLA加速)Minimax参考生视频V1_2091348806297284610.json, 视频生成/图生视频/(Dasiwa V1+老版加速)Minimax参考生视频V1_2091360487035465729.json, 视频生成/图生视频/(Dasiwa+10Eros新版混合加速)MiniMax H3参考生视频_2095731331148894209.json, 视频生成/图生视频/(Dasiwa+Lightx2v 1.0 768P新)MiniMax H3参考生视频V1_2093206224304173058.json, 视频生成/图生视频/(Dasiwa-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092167836453138433.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094319326210912258.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094336188525146114.json, 视频生成/图生视频/(Dasiwa新版turbo)Minimax H3+双采参考生视频_2094320071555502081.json, 视频生成/图生视频/(Dasiwa新版turbo混合模式)Minimax H3+双采参考生视频_2094328299777515522.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速)MiniMax H3参考生视频_2095810700424859650.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速+Combat)MiniMax H3参考生视频_2095823591769202689.json, 视频生成/图生视频/(Lightx2v 新版768P 1.0 ref2va加速)MiniMax H3参考生视频_2095730955548971009.json, 视频生成/图生视频/(Ref-Face Swap换脸)MiniMax H3双采参考生视频_2100230235559120897.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2103008837287636994.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2104212842185580546.json, 视频生成/图生视频/(Vfx-Edit)MiniMax H3双采参考生视频_2103012226415284225.json, 视频生成/图生视频/(WallPaper)MiniMax H3双采参考生视频_2103039132627980290.json, 视频生成/图生视频/(极速高清新版-文武双修均衡版)MiniMax H3双采参考生视频V3_2097927936006508545.json, 视频生成/图生视频/(风格参考)MiniMax H3双采参考生视频_2103022364463288322.json, 视频生成/图生视频/MiniMax_H3双采参考生视频V3_2098961081237594114.json, 视频生成/图生视频/MiniMax_H3双采参考生视频_2098902604083449857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/文生图/1956947526549999617.json、图片生成/文生图/1958496258287681537.json、数字人/数字人/5分钟图片生视频对口型+情感口播++数字人+InfiniTetalk+超自然数字人对口型_2093607637110837250.json、数字人/数字人/InfiniteTalk超自然数字人对口型单人视频驱动_2089373497083650049.json、数字人/数字人/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2092517680044658690.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json、视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json、视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json、视频生成/图生视频/(8步极速)10Eros Test4双时钟图生视频_2086887876364685314.json、视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087127116713390081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：26
+- **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 27 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 25/26 个有
-- `GetNode` —— 25/26 个有
-- `LoadWanVideoT5TextEncoder` —— 25/26 个有
-- `SetNode` —— 25/26 个有
-- `WanVideoImageToVideoMultiTalk` —— 25/26 个有
-- `WanVideoTextEncode` —— 25/26 个有
-- `Audio Duration (mtb)` —— 24/26 个有
-- `AudioSeparation` —— 24/26 个有
-- `GetImageRangeFromBatch` —— 24/26 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 24/26 个有
-- `MathExpression|pysssss` —— 24/26 个有
-- `PlaySound|pysssss` —— 24/26 个有
-- `LoadImage` —— 22/26 个有
-- `PreviewAudio` —— 8/26 个有
-- `WanVideoTorchCompileSettings` —— 8/26 个有
-- `easy int` —— 8/26 个有
-- `easy showAnything` —— 8/26 个有
-- `Anything Everywhere` —— 6/26 个有
-- `PreviewImage` —— 5/26 个有
-- `EmptyImage` —— 4/26 个有
-- `VHS_LoadVideo` —— 4/26 个有
-- `WanVideoEncode` —— 4/26 个有
-- `ColorCorrectOfUtils` —— 2/26 个有
-- `ImageCASharpening+` —— 2/26 个有
-- `ImageResizeKJv2` —— 2/26 个有
-- `RH_GetAudioDuration` —— 2/26 个有
-- `SimpleMath+` —— 2/26 个有
-- `VHS_VideoInfoLoaded` —— 2/26 个有
-- `Getter` —— 1/26 个有
-- `Int` —— 1/26 个有
-- `LogicUtil_SleepNodeAny` —— 1/26 个有
-- `Setter` —— 1/26 个有
-- `WanVideoImageToVideoEncode` —— 1/26 个有
-- `WanVideoTextEncodeCached` —— 1/26 个有
+- `CR Prompt Text` —— 26/27 个有
+- `LoadImage` —— 26/27 个有
+- `ModelAttentionBackend` —— 21/27 个有
+- `SolAttnMiniMax` —— 21/27 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 19/27 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 19/27 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 19/27 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 19/27 个有
+- `LoraLoaderModelOnly` —— 13/27 个有
+- `ConcatTextOfUtils` —— 9/27 个有
+- `Float` —— 9/27 个有
+- `easy anythingIndexSwitch` —— 9/27 个有
+- `easy showAnything` —— 7/27 个有
+- `MiniMaxH3ActivationChunkT8Advanced` —— 6/27 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 6/27 个有
+- `RHLLMChatNode` —— 5/27 个有
+- `VHS_LoadVideo` —— 5/27 个有
+- `VHS_VideoInfo` —— 5/27 个有
+- `MiniMaxH3ChunkedTwoPassPlanT8Advanced` —— 3/27 个有
+- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced` —— 3/27 个有
+- `CreateVideo` —— 2/27 个有
+- `BatchImagesNode` —— 1/27 个有
+- `CR Text` —— 1/27 个有
+- `PromptBatchQueue` —— 1/27 个有
 
 ## 典型参数
 
@@ -83,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

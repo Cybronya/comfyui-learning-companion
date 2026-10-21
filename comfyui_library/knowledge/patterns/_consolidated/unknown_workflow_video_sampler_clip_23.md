@@ -3,86 +3,55 @@ name: unknown_workflow_video_sampler_clip_23
 type: Unknown Workflow
 frequency: 16
 level: strong
-coverage: 0.665125
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PathchSageAttentionKJ, PreviewImage, SetNode, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanMoeKSampler, WanVideoVACEStartToEndFrame, easy anythingIndexSwitch, easy int, easy positive, easy seed]
+coverage: 0.880563
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LucyConditionConcatNode, ModelSamplingSD3, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
-missing: []
-members: [视频生成/图生视频/1975438275764686849.json, 视频生成/图生视频/wan2.2-Remix-ns-fw-官方视频-图生视频丝滑版_1986645790850510849.json, 视频生成/图生视频/2021413610848784385.json, 视频生成/图生视频/2043579993401335809.json, 视频生成/图生视频/2051204649931296770.json, 视频生成/图生视频/2051549317508411394.json, 视频生成/图生视频/2003774639149096961.json, 视频生成/图生视频/2003256917193555969.json, 视频生成/图生视频/2003260788590673922.json, 视频生成/图生视频/1996774154579976194.json, 视频生成/图生视频/1988562888287805442.json, 视频生成/图生视频/1996837849146302466.json, 视频生成/文生视频/Wan2.2官方：图生视频扩写长视频_2018279365133471745.json, 视频生成/文生视频/Wan2.2官方：视频扩写及图生视频工作流_2018624255843377154.json, 视频生成/文生视频/Wan2.2官方：视频扩写及图生视频工作流_2032046393744957441.json, 视频生成/文生视频/wan2.2-图生视频扩写--官方_2056643995220140034.json]
+missing: [LayerUtility: ImageScaleByAspectRatio V2]
+members: [视频生成/图生视频/1969945935545573378.json, 视频生成/图生视频/1969947895673856001.json, 视频生成/图生视频/1969948275333865474.json, 视频生成/图生视频/1969954015096283137.json, 视频生成/图生视频/2013153772620488705.json, 视频生成/图生视频/2064156316251283458.json, 视频生成/图生视频/2080106360926199809.json, 视频生成/文生视频/1969845849503264769.json, 视频生成/文生视频/1969945935545573378.json, 视频生成/文生视频/1969947895673856001.json, 视频生成/文生视频/1969948275333865474.json, 视频生成/文生视频/1969954015096283137.json, 视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_2051828457667088386.json, 视频生成/文生视频/Lucy Edit视频换装（文本控制）V1.1_2051846229662937090.json, 视频生成/文生视频/1970021776442990594.json, 音频生成/音频生成/一句话编辑你的视频，放弃vace吧_1970462951100608514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_23
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/1975438275764686849.json、视频生成/图生视频/wan2.2-Remix-ns-fw-官方视频-图生视频丝滑版_1986645790850510849.json、视频生成/图生视频/2021413610848784385.json、视频生成/图生视频/2043579993401335809.json、视频生成/图生视频/2051204649931296770.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/1969945935545573378.json、视频生成/图生视频/1969947895673856001.json、视频生成/图生视频/1969948275333865474.json、视频生成/图生视频/1969954015096283137.json、视频生成/图生视频/2013153772620488705.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
+- `KSampler`
+- `LucyConditionConcatNode`
+- `ModelSamplingSD3`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `WanVideoVACEStartToEndFrame`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactFloat` —— 15/16 个有
-- `Qwen3_VQA` —— 15/16 个有
-- `WanImageToVideo` —— 15/16 个有
-- `easy showAnything` —— 15/16 个有
-- `LoraLoaderModelOnly` —— 14/16 个有
-- `MathExpression|pysssss` —— 14/16 个有
-- `MemoryCleaner` —— 14/16 个有
-- `ModelBlockSwap` —— 14/16 个有
+- `ImageConcanate` —— 15/16 个有
+- `JWInteger` —— 15/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 15/16 个有
+- `PrimitiveInt` —— 15/16 个有
 - `PrimitiveFloat` —— 14/16 个有
-- `easy imageSize` —— 13/16 个有
-- `CLIPVisionEncode` —— 3/16 个有
-- `CLIPVisionLoader` —— 3/16 个有
-- `ImageStitch` —— 2/16 个有
-- `easy imageRemBg` —— 2/16 个有
-- `CR Upscale Image` —— 1/16 个有
-- `Float` —— 1/16 个有
-- `Florence2ModelLoader` —— 1/16 个有
-- `Florence2Run` —— 1/16 个有
-- `PainterI2V` —— 1/16 个有
-- `QwenLoader` —— 1/16 个有
-- `SaveImage` —— 1/16 个有
-- `SaveLatent` —— 1/16 个有
-- `WanVideoPromptExtender` —— 1/16 个有
-- `easy cleanGpuUsed` —— 1/16 个有
+- `VHS_VideoInfo` —— 2/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 16 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 16 | 100% |
-| 采样算法 | 1.5 | 1.5 - 1.5 | 16 | 100% |
-| 调度器 | 1 | 1 - 1 | 16 | 100% |
-| 重绘幅度 | sa_solver | - | 16 | 94% |
+| 采样步数 | 50 | 50 - 50 | 16 | 100% |
+| Prompt 约束强度(CFG) | 5 | 5 - 5 | 16 | 100% |
+| 采样算法 | euler | - | 16 | 100% |
+| 调度器 | simple | - | 16 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
@@ -90,9 +59,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，16 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，16 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1.5，观测区间 1.5 - 1.5，16 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 sa_solver，16 个样本，一致性 94%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 50，观测区间 50 - 50，16 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，16 个样本，一致性 100%
+- 调度器 最常用 simple，16 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2

@@ -3,36 +3,31 @@ name: unknown_workflow_generic_761
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.95
-common_nodes: [CR Text, LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 1
+common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/seedance2.5(支持30秒长视频)_多模态生视频_2086018514942517249.json, 视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json]
+members: [图片生成/文生图/1977656222168113154.json, 图片生成/文生图/2文生图_2088542035031715841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_761
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/seedance2.5(支持30秒长视频)_多模态生视频_2086018514942517249.json、视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1977656222168113154.json、图片生成/文生图/2文生图_2088542035031715841.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
 
 ## 典型参数
 

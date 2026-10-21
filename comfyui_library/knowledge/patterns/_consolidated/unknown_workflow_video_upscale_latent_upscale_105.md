@@ -2,92 +2,74 @@
 name: unknown_workflow_video_upscale_latent_upscale_105
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.618333
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VHS_VideoCombine, easy int, easy showAnything]
+level: moderate
+coverage: 0.767333
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2050734311749505025.json, 视频生成/图生视频/2044724693445382146.json, 视频生成/图生视频/2082418673716912130.json]
+members: [视频生成/图生视频/2021873842758619137.json, 视频生成/图生视频/2010630264770269185.json, 视频生成/图生视频/2034521088973082625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_105
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2050734311749505025.json、视频生成/图生视频/2044724693445382146.json、视频生成/图生视频/2082418673716912130.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2021873842758619137.json、视频生成/图生视频/2010630264770269185.json、视频生成/图生视频/2034521088973082625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SimpleMath+`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `TrimAudioDuration`
 - `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `easy int`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `llama_cpp_instruct_adv` —— 2/3 个有
-- `llama_cpp_model_loader` —— 2/3 个有
-- `llama_cpp_parameters` —— 2/3 个有
-- `BatchImagesNode` —— 1/3 个有
-- `BerniniPromptEnhancer` —— 1/3 个有
-- `CustomAddLabel` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `ImpactFloat` —— 1/3 个有
+- `INTConstant` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `Float` —— 1/3 个有
 - `ImpactInt` —— 1/3 个有
-- `LTX2_NAG` —— 1/3 个有
-- `LTXVAddGuide` —— 1/3 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/3 个有
-- `PurgeVRAM_UTK` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
-- `VAELoaderKJ` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy float` —— 1/3 个有
-- `string_util_StrConcat` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -95,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

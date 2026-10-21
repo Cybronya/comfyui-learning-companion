@@ -3,34 +3,33 @@ name: unknown_workflow_generic_341
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.89725
-common_nodes: [LoadImage, RH_BytedanceSeedance25TokenMultimodalVideo, SaveVideo]
+coverage: 0.78025
+common_nodes: [ByteDanceSeedreamNodeV3, SaveImageAdvanced]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json, 视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_341
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json、视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_BytedanceSeedance25TokenMultimodalVideo`
-- `SaveVideo`
+- `ByteDanceSeedreamNodeV3`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 3/4 个有
-- `Text` —— 2/4 个有
-- `孤海注释` —— 2/4 个有
+- `LoadImage` —— 3/4 个有
+- `Painter` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

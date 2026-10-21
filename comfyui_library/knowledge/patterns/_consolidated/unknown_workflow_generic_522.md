@@ -3,36 +3,33 @@ name: unknown_workflow_generic_522
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.216
-common_nodes: [CR Text Concatenate, ImpactSwitch, JjkText, RH_LLMAPI_NODE, RH_MiniMax_Music25, SaveAudio, ShowAnything|Mie, ShowText, TextCombinerTwo, easy saveText]
+coverage: 0.916667
+common_nodes: [LoadImage, RH_Midjourney, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/MiniMax Music 2_2021051238950899714.json, 音频生成/音频生成/MiniMax Music v1_2088280079196577794.json, 音频生成/音频生成/音乐制作生成-MiniMax_Music_2_2021391274598735873.json]
+members: [图片生成/文生图/MJ生图（昆昆）_2020704610586988546.json, 图片生成/文生图/MJ生图（老程）_2019660837929095169.json, 图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_522
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music 2_2021051238950899714.json、音频生成/音频生成/MiniMax Music v1_2088280079196577794.json、音频生成/音频生成/音乐制作生成-MiniMax_Music_2_2021391274598735873.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/MJ生图（昆昆）_2020704610586988546.json、图片生成/文生图/MJ生图（老程）_2019660837929095169.json、图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：22%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text Concatenate`
-- `ImpactSwitch`
-- `JjkText`
-- `RH_LLMAPI_NODE`
-- `RH_MiniMax_Music25`
-- `SaveAudio`
-- `ShowAnything|Mie`
-- `ShowText`
-- `TextCombinerTwo`
-- `easy saveText`
+- `LoadImage`
+- `RH_Midjourney`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `1hew_ImageGridSplit` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

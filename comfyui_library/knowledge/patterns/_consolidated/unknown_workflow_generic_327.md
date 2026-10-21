@@ -1,48 +1,47 @@
 ---
 name: unknown_workflow_generic_327
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.81325
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveImage, ShowText|pysssss]
+coverage: 0.8938
+common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2080979650620256257.json, 视频生成/图生视频/2081231925099978753.json, 视频生成/图生视频/2078772405257990146.json, 视频生成/文生视频/女鞋口播带货15秒短视频（全自动制作）_2079931868077711362.json]
+members: [音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json, 音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json, 音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json, 音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json, 音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_327
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2080979650620256257.json、视频生成/图生视频/2081231925099978753.json、视频生成/图生视频/2078772405257990146.json、视频生成/文生视频/女鞋口播带货15秒短视频（全自动制作）_2079931868077711362.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json、音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json、音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json、音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json、音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `SaveImage`
-- `ShowText|pysssss`
+全部 5 个 workflow 都包含：
+- `FB_Qwen3TTSCustomVoice`
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `FB_Qwen3TTSVoiceDesign`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `Text Concatenate` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
-- `RH_SeedreamV5ProImageToImage` —— 1/4 个有
-- `RH_SeedreamV5ProTextToImage` —— 1/4 个有
-- `SaveVideoNode` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `TwoWaySwitch` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClone` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `WhisperSTT` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

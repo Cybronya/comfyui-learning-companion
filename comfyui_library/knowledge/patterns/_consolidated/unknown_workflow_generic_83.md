@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_83
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.944444
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.9667
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
+members: [数字人/数字人/音色克隆-v1_2094769389882142721.json, 数字人/数字人/音色设计_2094769410778165249.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json, 音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json, 音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json, 音频生成/音频生成/VoxCPM2 基础工作流_2042504143272681474.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054212924264206337.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054582646944092162.json, 音频生成/音频生成/VoxCPM2 语音克隆_2056949209022164994.json, 音频生成/音频生成/音色设计_2111054904671424513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_83
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/音色克隆-v1_2094769389882142721.json、数字人/数字人/音色设计_2094769410778165249.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json、音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json、音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
-- `CR Text` —— 3/9 个有
-- `JjkText` —— 1/9 个有
-- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
+- `LoadAudio` —— 8/10 个有
+- `StringInput` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,66 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_vae_30
 type: Unknown Workflow
-frequency: 2
+frequency: 4
 level: weak
-coverage: 0.833
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptyLatentImage, KSamplerSelect, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
-problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model]
-members: [图片生成/文生图/1927591797424283649.json, 图片生成/文生图/1952670790871396354.json]
+coverage: 0.91225
+common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, KSampler, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: [CR SDXL Aspect Ratio]
+members: [图片生成/文生图/1959763361783296002.json, 图片生成/文生图/1964286433756332033.json, 图片生成/文生图/Qwen-image + LoRA 文生图工作流_2091479119539298306.json, 图片生成/文生图/文生图 拼好模 BOOGU!_2067835110157799425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_30
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1927591797424283649.json、图片生成/文生图/1952670790871396354.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1959763361783296002.json、图片生成/文生图/1964286433756332033.json、图片生成/文生图/Qwen-image + LoRA 文生图工作流_2091479119539298306.json、图片生成/文生图/文生图 拼好模 BOOGU!_2067835110157799425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
+- **样本数**：4
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR SDXL Aspect Ratio`
+- `KSampler`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowStringText` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `DualCLIPLoaderGGUF` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `ConditioningZeroOut` —— 3/4 个有
+- `ModelSamplingAuraFlow` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `Text` —— 2/4 个有
+- `CFGNorm` —— 1/4 个有
+- `EG_FSFT` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `NunchakuQwenImageDiTLoader` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | - | 2 | 57% |
-| 高度 | 768 | - | 2 | 67% |
+| 采样步数 | 9 | 4 - 20 | 4 | 44% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.1 | 4 | 24% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 896，样本不足，未给区间，2 个样本
-- 高度 中位数 768，样本不足，未给区间，2 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions、LayerUtility: LoadJoyCaptionBeta1Model
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 9，观测区间 4 - 20，4 个样本，取值分散，一致性仅 44%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.1，4 个样本，取值分散，一致性仅 24%
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
+- 这些节点还没有知识卡，系统对它们的理解有限：CR SDXL Aspect Ratio

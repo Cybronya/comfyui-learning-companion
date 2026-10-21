@@ -3,42 +3,34 @@ name: unknown_workflow_video_86
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.552
-common_nodes: [ImageScaleToTotalPixels, Int, PreviewImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
+coverage: 1
+common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2007103726170939394.json, 视频生成/文生视频/视频高清放大合集(RTX+SeedVR2)_2100222072508211201.json]
+members: [视频生成/图生视频/2062203681218584577.json, 视频生成/图生视频/2062187495382667265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_86
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2007103726170939394.json、视频生成/文生视频/视频高清放大合集(RTX+SeedVR2)_2100222072508211201.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2062203681218584577.json、视频生成/图生视频/2062187495382667265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
-- `Int`
-- `PreviewImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `LoadImage`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `RTXVideoSuperResolution` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `RH_RhartVideoV31ProImageToVideo` —— 1/2 个有
+- `RH_RhartVideoV31ProStartEndToVideo` —— 1/2 个有
 
 ## 典型参数
 

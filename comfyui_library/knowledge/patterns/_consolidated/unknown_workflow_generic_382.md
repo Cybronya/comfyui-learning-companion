@@ -3,33 +3,34 @@ name: unknown_workflow_generic_382
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.48675
-common_nodes: [CR Prompt Text, Comfly_suno_custom, SaveAudio, easy showAnything]
+coverage: 0.70225
+common_nodes: [BreezeTTS2LoadModel, BreezeTTS2VoiceDesign, CR Prompt Text, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno AI 音乐创作（根叔）_1977766329824464897.json, 音频生成/音频生成/Suno V5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1971612827184197633.json, 音频生成/音频生成/Suno V5.5音乐自定义生成顶级版（贞贞的AI工坊）_2044991724270915585.json, 音频生成/音频生成/Suno V5.5顶级音乐生成（贞贞的AI工坊）_2045176196102627330.json]
+members: [图片生成/文生图/声音设计_方言设计_2101869105568641025.json, 音频生成/音频生成/声音设计 方言设计_2100192848959332353.json, 音频生成/音频生成/声音设计_方言设计_2105120675768913921.json, 音频生成/音频生成/声音设计_方言设计_2105498022892363778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_382
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno AI 音乐创作（根叔）_1977766329824464897.json、音频生成/音频生成/Suno V5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1971612827184197633.json、音频生成/音频生成/Suno V5.5音乐自定义生成顶级版（贞贞的AI工坊）_2044991724270915585.json、音频生成/音频生成/Suno V5.5顶级音乐生成（贞贞的AI工坊）_2045176196102627330.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/声音设计_方言设计_2101869105568641025.json、音频生成/音频生成/声音设计 方言设计_2100192848959332353.json、音频生成/音频生成/声音设计_方言设计_2105120675768913921.json、音频生成/音频生成/声音设计_方言设计_2105498022892363778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BreezeTTS2LoadModel`
+- `BreezeTTS2VoiceDesign`
 - `CR Prompt Text`
-- `Comfly_suno_custom`
 - `SaveAudio`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 3/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,60 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_142
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.933
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 1
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/极速版-数字人_个人IP_2110421173111705601.json, 视频生成/图生视频/1991134809961398273.json, 音频生成/音频生成/InfiniteTalk-多人数字人_1991115212053131266.json]
+members: [视频生成/文生视频/1923688009151991809.json, 视频生成/文生视频/1923941763244093441.json, 视频生成/文生视频/1923955106968948737.json, 视频生成/文生视频/文生视频(Wan2.1-VACE-14B)_2072999779808092160.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_142
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/极速版-数字人_个人IP_2110421173111705601.json、视频生成/图生视频/1991134809961398273.json、音频生成/音频生成/InfiniteTalk-多人数字人_1991115212053131266.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1923688009151991809.json、视频生成/文生视频/1923941763244093441.json、视频生成/文生视频/1923955106968948737.json、视频生成/文生视频/文生视频(Wan2.1-VACE-14B)_2072999779808092160.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 4 个 workflow 都包含：
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 2/3 个有
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `WanVideoEncode` —— 2/3 个有
-- `WanVideoLoraSelectMulti` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `AudioDuration_wan` —— 1/3 个有
-- `H3ModeSwitch` —— 1/3 个有
-- `IndexTTS2Run` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `ImagePadKJ` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `GetImageSize+` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 

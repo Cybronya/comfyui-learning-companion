@@ -3,66 +3,80 @@ name: unknown_workflow_video_lora_sampler_575
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.648667
-common_nodes: [DWPreprocessor, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddControlEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.633
+common_nodes: [AudioCrop, AudioInfo, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956358490119962626.json, 视频生成/图生视频/1956361346596130818.json, 视频生成/图生视频/1960740371133345793.json]
+members: [数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json, 视频生成/图生视频/2034445280996761602.json, 视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_575
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1956358490119962626.json、视频生成/图生视频/1956361346596130818.json、视频生成/图生视频/1960740371133345793.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json、视频生成/图生视频/2034445280996761602.json、视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DWPreprocessor`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `AudioCrop`
+- `AudioInfo`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `Int`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `Text`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAddControlEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `CLIPTextEncode` —— 2/3 个有
-- `CR Prompt Text` —— 2/3 个有
-- `DepthAnything_V2` —— 2/3 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `PDIMAGE_LongerSize` —— 2/3 个有
-- `WanVideoTextEmbedBridge` —— 2/3 个有
-- `CreateShapeImageOnPath` —— 1/3 个有
-- `GetMaskSizeAndCount` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `SplineEditor` —— 1/3 个有
-- `Zoe-DepthMapPreprocessor` —— 1/3 个有
+- `Apply Whisper` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `InversionDemoLazySwitch` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `Qwen3TTSModelLoader` —— 2/3 个有
+- `Qwen3TTSVoiceClone` —— 2/3 个有
+- `Qwen3TTSVoiceDesign` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `ShowText` —— 2/3 个有
+- `StringSubstring` —— 2/3 个有
+- `llama_cpp_instruct_adv` —— 2/3 个有
+- `llama_cpp_model_loader` —— 2/3 个有
+- `llama_cpp_parameters` —— 2/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `Qwen3_VQA_Plus` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,34 +3,38 @@ name: unknown_workflow_video_76
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.259
-common_nodes: [GetNode, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, ModelPreviewOverrideKJ, RHHiddenNodes, SetNode, VHS_VideoCombine, easy float]
+coverage: 0.7
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, Int, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI电影级工作流（优化版）Minimax H3 （影视专用）_2109554088999481345.json, 视频生成/文生视频/跃崎影业AI电影工作流（优化版）Minimax H3 电影级_2108315651088674818.json]
+members: [视频生成/图生视频/2012124857437265922.json, 视频生成/图生视频/2050850045557264386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_76
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI电影级工作流（优化版）Minimax H3 （影视专用）_2109554088999481345.json、视频生成/文生视频/跃崎影业AI电影工作流（优化版）Minimax H3 电影级_2108315651088674818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2012124857437265922.json、视频生成/图生视频/2050850045557264386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：26%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetNode`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `ModelPreviewOverrideKJ`
-- `RHHiddenNodes`
-- `SetNode`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `Int`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy float`
+- `VHS_VideoInfo`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CM_IntToFloat` —— 1/2 个有
+- `Float` —— 1/2 个有
 
 ## 典型参数
 

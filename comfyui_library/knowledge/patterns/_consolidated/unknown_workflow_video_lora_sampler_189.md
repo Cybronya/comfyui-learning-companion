@@ -3,66 +3,71 @@ name: unknown_workflow_video_lora_sampler_189
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8357
-common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, SelfLiftAvatarH3Sampler, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.5725
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json, 视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104877137932148737.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104929413359030273.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104933693600129025.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2110566290069999618.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2111010022284161026.json, 视频生成/图生视频/【变态加速高清版2.0】MinMaxH3 全能参考-推荐_2106435863944196098.json, 视频生成/文生视频/MimaxH3锐化高清放大采样工作流_2105086382539624449.json, 视频生成/文生视频/【变态加速高清版2.0】MinMaxH3 全能参考-推荐_2106435863944196098.json]
+members: [视频生成/图生视频/1978123000795029506.json, 视频生成/图生视频/叮叮的鼓点咚咚咚_2083830136331399170.json, 视频生成/图生视频/女生舞蹈复刻_2098325811605622786.json, 视频生成/图生视频/2071997191392157697.json, 视频生成/图生视频/2073410541107896321.json, 视频生成/图生视频/舞蹈动作复刻_2086688476229095425.json, 视频生成/图生视频/舞蹈动作模仿2_2101567862912671746.json, 视频生成/图生视频/舞蹈动作模仿_2084254634042023937.json, 视频生成/图生视频/2080278150566735874.json, 视频生成/图生视频/2079046607487725569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_189
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json、视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json、视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104877137932148737.json、视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104929413359030273.json、视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104933693600129025.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1978123000795029506.json、视频生成/图生视频/叮叮的鼓点咚咚咚_2083830136331399170.json、视频生成/图生视频/女生舞蹈复刻_2098325811605622786.json、视频生成/图生视频/2071997191392157697.json、视频生成/图生视频/2073410541107896321.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `UNETLoader`
-- `VAELoader`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `GetNode`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 9/10 个有
-- `LTXVSeparateAVLatent` —— 8/10 个有
-- `MiniMaxH3VAEDecodeFast` —— 8/10 个有
-- `RunningHub Deepcleaner` —— 8/10 个有
-- `VAEDecode` —— 8/10 个有
-- `VAEDecodeAudio` —— 8/10 个有
-- `LoadImage` —— 7/10 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/10 个有
-- `PrimitiveFloat` —— 7/10 个有
-- `Fast Groups Muter (rgthree)` —— 6/10 个有
-- `PreviewAny` —— 6/10 个有
-- `QwenH3PromptLocal` —— 6/10 个有
-- `Image Comparer (rgthree)` —— 3/10 个有
-- `ImageFromBatch` —— 3/10 个有
-- `MiniMaxH3Unified` —— 3/10 个有
-- `CR Text` —— 2/10 个有
-- `Float` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `JjkText` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/10 个有
-- `LoadAudio` —— 1/10 个有
-- `TrimAudioDuration` —— 1/10 个有
+- `CR Prompt Text` —— 9/10 个有
+- `VHS_VideoInfoSource` —— 9/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 8/10 个有
+- `ImageConcatenate_UTK` —— 6/10 个有
+- `WanAnimatePlus BlockSwap` —— 5/10 个有
+- `WanVideoTorchCompileSettings` —— 4/10 个有
+- `BatchCount+` —— 1/10 个有
+- `CM_IntToFloat` —— 1/10 个有
+- `GradientImage` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `LazySwitch1way` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `WanVideoBlockSwap` —— 1/10 个有
+- `easy batchAnything` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
+- `easy compare` —— 1/10 个有
+- `easy forLoopEnd` —— 1/10 个有
+- `easy forLoopStart` —— 1/10 个有
 
 ## 典型参数
 

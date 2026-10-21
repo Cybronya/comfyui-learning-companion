@@ -3,42 +3,43 @@ name: unknown_workflow_sampler_42
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.793
-common_nodes: [1hew_AudioDuration, CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo, easy showAnything]
+coverage: 0.824
+common_nodes: [Fast Groups Bypasser (rgthree), Image Batch, ImageResize+, Int, JjkText, LoadAudio, LoadImage, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo, SoundFlow_TrimAudio, easy getNode, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--FlashTalk数字人+Qwen TTS声音预设-一张图生成数字主播_2029760205487087617.json, 音频生成/音频生成/AA--FlashTalk数字人+声音克隆（情感控制）_2029525701015117826.json]
+members: [视频生成/图生视频/2036330038517305345.json, 视频生成/图生视频/2036269847654440962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_42
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--FlashTalk数字人+Qwen TTS声音预设-一张图生成数字主播_2029760205487087617.json、音频生成/音频生成/AA--FlashTalk数字人+声音克隆（情感控制）_2029525701015117826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2036330038517305345.json、视频生成/图生视频/2036269847654440962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `1hew_AudioDuration`
-- `CR Prompt Text`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Batch`
+- `ImageResize+`
+- `Int`
+- `JjkText`
+- `LoadAudio`
 - `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
+- `RunningHub DreamID-Omni Loader`
+- `RunningHub DreamID-Omni Sampler`
 - `SaveVideo`
+- `SoundFlow_TrimAudio`
+- `easy getNode`
+- `easy setNode`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `Qwen3TTSCustomVoice` —— 1/2 个有
-- `Qwen3TTSModelLoader` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

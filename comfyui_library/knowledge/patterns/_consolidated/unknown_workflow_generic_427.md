@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_427
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.969667
-common_nodes: [CR Prompt Text, Float, LoadAudio, SaveAudio, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.895
+common_nodes: [LoadAudio, LoadImage, LoadVideo, PreviewAny, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/声音克隆IndexTTS2.5情感参考_2102959457717276673.json, 数字人/数字人/IndexTTS 2.5情感文本控制语音克隆_2105621844203233282.json, 视频生成/文生视频/IndexTTS 2.5情感文本控制语音克隆_2100454570265767937.json]
+members: [视频生成/文生视频/Seedance2.0 Global Fast  全参工作流_2073409651194032129.json, 视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json, 视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global Fast_2056289282322685953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_427
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/声音克隆IndexTTS2.5情感参考_2102959457717276673.json、数字人/数字人/IndexTTS 2.5情感文本控制语音克隆_2105621844203233282.json、视频生成/文生视频/IndexTTS 2.5情感文本控制语音克隆_2100454570265767937.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Global Fast  全参工作流_2073409651194032129.json、视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json、视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global Fast_2056289282322685953.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
+全部 4 个 workflow 都包含：
 - `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+- `LoadImage`
+- `LoadVideo`
+- `PreviewAny`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_SamplingConfig` —— 2/3 个有
-- `EmptyImage` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SaveAudioNode` —— 1/3 个有
+- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 2/4 个有
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 2/4 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: unknown_workflow_video_lora_sampler_251
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.90675
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Seed, DiffusionModelLoaderKJ, DuckHideNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, Power Lora Loader (rgthree), PrimitiveFloat, SaveImage, VAEDecode, VAELoader, WanVideoNAG]
+coverage: 0.551625
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/2047258270540238850.json, 视频生成/图生视频/2047514506162610178.json, 视频生成/图生视频/2033451412193021953.json, 视频生成/图生视频/2045866121294778369.json, 视频生成/图生视频/2048270187077570561.json, 视频生成/图生视频/2038854972158255106.json, 视频生成/图生视频/2047132331764355074.json, 视频生成/图生视频/2048665602092441601.json]
+members: [视频生成/图生视频/1997866783497486337.json, 视频生成/图生视频/1992287754939854849.json, 视频生成/图生视频/1993579286244294658.json, 视频生成/图生视频/1993311257635782657.json, 视频生成/图生视频/1996195758498004994.json, 视频生成/图生视频/2018679573021462530.json, 视频生成/图生视频/2030310808810430466.json, 视频生成/文生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_2050153435672129537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_251
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2047258270540238850.json、视频生成/图生视频/2047514506162610178.json、视频生成/图生视频/2033451412193021953.json、视频生成/图生视频/2045866121294778369.json、视频生成/图生视频/2048270187077570561.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1997866783497486337.json、视频生成/图生视频/1992287754939854849.json、视频生成/图生视频/1993579286244294658.json、视频生成/图生视频/1993311257635782657.json、视频生成/图生视频/1996195758498004994.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
@@ -26,47 +26,55 @@ source: knowledge_consolidation
 - `CFGZeroStar`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Seed`
-- `DiffusionModelLoaderKJ`
-- `DuckHideNode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetNode`
 - `INTConstant`
 - `ImageResizeKJv2`
 - `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
 - `ModelSamplingSD3`
-- `Power Lora Loader (rgthree)`
-- `PrimitiveFloat`
-- `SaveImage`
+- `PainterI2V`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_VideoCombine`
 - `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactWildcardProcessor` —— 7/8 个有
-- `GetNode` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `easy cleanGpuUsed` —— 6/8 个有
-- `CLIPVisionEncode` —— 4/8 个有
-- `CLIPVisionLoader` —— 4/8 个有
-- `ImageBatchMulti` —— 4/8 个有
-- `PainterI2VAdvanced` —— 4/8 个有
-- `RIFE VFI` —— 4/8 个有
-- `VHS_SplitImages` —— 4/8 个有
-- `WanAdvancedI2V` —— 4/8 个有
-- `ColorMatch` —— 2/8 个有
-- `ImageBatchExtendWithOverlap` —— 2/8 个有
-- `ImageFromBatch` —— 1/8 个有
+- `ImageStitch` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `RMBG` —— 7/8 个有
+- `TrimVideoLatent` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `RIFE VFI` —— 2/8 个有
+- `AILab_ImageStitch` —— 1/8 个有
+- `AILab_QwenVL` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `ForLoopClose` —— 1/8 个有
+- `ForLoopOpen` —— 1/8 个有
+- `ImageRotate` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `WanImageToVideo` —— 1/8 个有
+- `easy batchAnything` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy promptConcat` —— 1/8 个有
+- `llama_cpp_instruct_adv` —— 1/8 个有
+- `llama_cpp_model_loader` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1.1 | 8 | 96% |
-| 调度器 | euler | - | 8 | 88% |
+| 采样步数 | fixed | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | lcm | - | 8 | 88% |
 | 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
@@ -75,9 +83,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1.1，8 个样本，取值集中（一致性 96%）
-- 调度器 最常用 euler，8 个样本，一致性 88%
+- 采样步数 最常用 fixed，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，8 个样本，一致性 88%
 - 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
