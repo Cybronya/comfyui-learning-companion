@@ -158,14 +158,16 @@ class ExperienceLoader:
         dict，是主库 MemoryError 的消费端路径。改用 iter_items 逐条取用
         + 生成器喂 dedupe —— 去重算法仍只在 dedupe.py 一处，
         物化的只有去重后的列表。
-        """
-        from ..workflow_learning.dedupe import dedupe_by_content_hash
 
-        # 与 Markdown 路径同一口径：内容相同的拷贝只归纳一次
-        datas, _ = dedupe_by_content_hash(self._completed_datas())
+        去重也改流式（2026-10-20）：库涨到 4.8 万条后，去重结果列表
+        把全部载荷 dict 物化（约 7GB）再度触发 MemoryError。
+        改用 iter_dedupe_by_content_hash 边去重边建行，载荷 dict
+        用完即弃 —— 峰值从「全部载荷 + 全部行」降到「只有行」。
+        """
+        from ..workflow_learning.dedupe import iter_dedupe_by_content_hash
 
         rows = []
-        for data in datas:
+        for data in iter_dedupe_by_content_hash(self._completed_datas()):
             nodes = list(data.get("nodes") or [])
             if not nodes:
                 continue

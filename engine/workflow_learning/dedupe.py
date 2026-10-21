@@ -47,3 +47,30 @@ def dedupe_by_content_hash(records: Iterable) -> Tuple[List, int]:
         unique.append(record)
 
     return unique, dropped
+
+
+def iter_dedupe_by_content_hash(records: Iterable):
+    """
+    惰性版去重：逐条产出未重复记录，不做全量物化
+
+    语义与 dedupe_by_content_hash 完全一致（首次出现保留、
+    空指纹全保留），差别只在不把结果攒成列表 —— 去重决策
+    只需要一个 seen 指纹集合，调用方可边消费边把上游 dict
+    丢给 GC。
+
+    背景（2026-10-20）：4.8 万条经验经 dedupe_by_content_hash
+    全量物化成 payload dict 列表约 7GB，是归纳加载阶段
+    MemoryError 的直接成因；本函数供 ExperienceLoader 等
+    大库消费方流式使用。两处逻辑必须保持一致。
+    """
+    seen = set()
+    for record in records:
+        if isinstance(record, dict):
+            h = record.get("content_hash", "")
+        else:
+            h = getattr(record, "content_hash", "")
+        if h and h in seen:
+            continue
+        if h:
+            seen.add(h)
+        yield record
