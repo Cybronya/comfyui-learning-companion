@@ -3,75 +3,69 @@ name: unknown_workflow_video_lora_sampler_202
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.444333
-common_nodes: [Audio Duration (mtb), AudioCrop, CLIPTextEncode, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PreviewImage, PromptRelayEncode, SamplerCustom, SetLatentNoiseMask, SetNode, SolidMask, TTResolutionSelector, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy showAnything]
+coverage: 0.813667
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3-超自然口播数字人_2092630885337231361.json, 数字人/数字人/LTX2.3-超自然口播数字人_2092655473743982594.json, 视频生成/图生视频/LTX2.3-超自然电商口播数字人-自动版_2086680366970138625.json, 视频生成/图生视频/2054532786014433282.json, 视频生成/图生视频/2054541645990907905.json, 视频生成/图生视频/2049461897627443201.json, 视频生成/图生视频/2048640323944976386.json, 视频生成/图生视频/2049330125983981569.json, 音频生成/音频生成/LTX2.3高清超自然数字人-全自动版_2072579317611196418.json]
+members: [图片生成/文生图/文字转音频+对口型+图生视频+标准1080P_1970453209825374209.json, 视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json, 视频生成/图生视频/I2V-林小茶_2047141901102489601.json, 视频生成/图生视频/V4.1（demo2）_2051961839407386625.json, 视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json, 视频生成/图生视频/手串替换_2054096337670557697.json, 视频生成/图生视频/手串生活方式短视频不露脸稳定版_2060540846868619266.json, 视频生成/图生视频/手串生活版_v5.2_原稿精准字幕版_2062041921597562882.json, 视频生成/图生视频/鸿茅药酒志_2054799806060605442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_202
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/LTX2.3-超自然口播数字人_2092630885337231361.json、数字人/数字人/LTX2.3-超自然口播数字人_2092655473743982594.json、视频生成/图生视频/LTX2.3-超自然电商口播数字人-自动版_2086680366970138625.json、视频生成/图生视频/2054532786014433282.json、视频生成/图生视频/2054541645990907905.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/文字转音频+对口型+图生视频+标准1080P_1970453209825374209.json、视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json、视频生成/图生视频/I2V-林小茶_2047141901102489601.json、视频生成/图生视频/V4.1（demo2）_2051961839407386625.json、视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `PromptRelayEncode`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TTResolutionSelector`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 8/9 个有
-- `Float` —— 7/9 个有
-- `Int` —— 7/9 个有
-- `MelBandRoFormerModelLoader` —— 7/9 个有
-- `MelBandRoFormerSampler` —— 7/9 个有
-- `Text` —— 7/9 个有
-- `1hew_StringJoinMulti` —— 5/9 个有
-- `IntToString` —— 5/9 个有
-- `JSON取值节点` —— 5/9 个有
-- `JoinStrings` —— 5/9 个有
+- `FB_Qwen3TTSVoiceClone` —— 8/9 个有
+- `GetImageSize` —— 8/9 个有
+- `ResizeImagesByLongerEdge` —— 8/9 个有
+- `Text` —— 8/9 个有
+- `WanVideoPassImagesFromSamples` —— 8/9 个有
+- `GetNode` —— 5/9 个有
 - `PreviewAny` —— 5/9 个有
-- `PrimitiveString` —— 5/9 个有
-- `RH_LLMAPI_Pro_Node` —— 5/9 个有
-- `JWFloat` —— 2/9 个有
-- `StringConstant` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `AudioSeparation` —— 1/9 个有
+- `SetNode` —— 5/9 个有
+- `WanVideoTorchCompileSettings` —— 5/9 个有
+- `Wav2VecModelLoader` —— 5/9 个有
+- `PreviewAudio` —— 4/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
+- `GIMMVFI_interpolate` —— 1/9 个有
+- `HAIGC_VideoSubtitleTimestampPro` —— 1/9 个有
+- `ImageUpscaleWithModel` —— 1/9 个有
+- `IndexTTS2Run` —— 1/9 个有
+- `SaveAudio` —— 1/9 个有
+- `UpscaleModelLoader` —— 1/9 个有
+- `WanVideoDecode` —— 1/9 个有
+- `ZML_TextInput` —— 1/9 个有
 
 ## 典型参数
 

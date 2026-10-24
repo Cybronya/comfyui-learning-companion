@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_219
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.676167
-common_nodes: [JjkText, LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
+coverage: 0.944444
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1999903042818502658.json, 视频生成/图生视频/1999004397331959810.json, 视频生成/图生视频/2005854349324681217.json, 视频生成/图生视频/2005853627422048257.json, 视频生成/图生视频/1987816944705409026.json, 视频生成/图生视频/2001204449873887233.json]
+members: [图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/wan2.7首尾帧图生视频万相2.7-图生视频-首尾帧生视频_2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_219
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1999903042818502658.json、视频生成/图生视频/1999004397331959810.json、视频生成/图生视频/2005854349324681217.json、视频生成/图生视频/2005853627422048257.json、视频生成/图生视频/1987816944705409026.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JjkText`
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `RH_Sora2_I2V_Batch`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy saveText` —— 3/6 个有
-- `Label (rgthree)` —— 1/6 个有
+- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
+- `CR Text` —— 3/9 个有
+- `JjkText` —— 1/9 个有
+- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
 
 ## 典型参数
 

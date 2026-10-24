@@ -3,88 +3,73 @@ name: unknown_workflow_video_lora_sampler_111
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.760786
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.460571
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1957667803581050882.json, 视频生成/图生视频/1958061014984118274.json, 视频生成/图生视频/1958075798320197633.json, 视频生成/图生视频/2014174614657703937.json, 视频生成/图生视频/1977385230757699586.json, 视频生成/图生视频/1948766276714934274.json, 视频生成/图生视频/2018299977335840769.json, 视频生成/图生视频/1989886464651612162.json, 视频生成/图生视频/1986797048806764545.json, 视频生成/图生视频/1962734249734483970.json, 视频生成/图生视频/1971581572791136257.json, 视频生成/图生视频/1942210266623053825.json, 视频生成/图生视频/1937733481621557249.json, 视频生成/图生视频/1958430229331132417.json]
+members: [视频生成/文生视频/MiniMax H3官方工作流 _ 文生视频_2090001932441178113.json, 视频生成/文生视频/MiniMax H3官方工作流_多参考生成视频_2090004683493560321.json, 视频生成/文生视频/MiniMax H3开源 超级多合一 文生图生多参合一工作流-官方版_2086415506692722689.json, 视频生成/文生视频/MiniMax H3超级多合一工作流_2089374116016119810.json, 视频生成/文生视频/MiniMax H3超级多合一工作流（加速rola+二采）_2087353258498158593.json, 视频生成/文生视频/MiniMax H3首尾帧（单图）工作流_2096917787607396353.json, 视频生成/文生视频/MiniMax+H3多参全能整合工作流_2090073717442441217.json, 视频生成/文生视频/MiniMax+H3超级多合_2086713203135967234.json, 视频生成/文生视频/MiniMax+H3超级多合一工作流-官方版V2_2088289193456922626.json, 视频生成/文生视频/MiniMaxH3官方版超级多合一工作流ENG+ENG_2087111558542479361.json, 视频生成/文生视频/李哈哈自用3_2087402730037014530.json, 视频生成/文生视频/自用测试-超级多合一_2092461754998673409.json, 视频生成/文生视频/🐳【傲雪AIGC】MiniMax+H3短剧双采工作流_2093005569190875138.json, 视频生成/文生视频/🐳【傲雪AIGC】MiniMax+H3短剧双采工作流_2108512240256249857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_111
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1957667803581050882.json、视频生成/图生视频/1958061014984118274.json、视频生成/图生视频/1958075798320197633.json、视频生成/图生视频/2014174614657703937.json、视频生成/图生视频/1977385230757699586.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3官方工作流 _ 文生视频_2090001932441178113.json、视频生成/文生视频/MiniMax H3官方工作流_多参考生成视频_2090004683493560321.json、视频生成/文生视频/MiniMax H3开源 超级多合一 文生图生多参合一工作流-官方版_2086415506692722689.json、视频生成/文生视频/MiniMax H3超级多合一工作流_2089374116016119810.json、视频生成/文生视频/MiniMax H3超级多合一工作流（加速rola+二采）_2087353258498158593.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `GetNode`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `Text`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 13/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 13/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/14 个有
 - `LoadImage` —— 13/14 个有
-- `VHS_LoadVideo` —— 13/14 个有
-- `AudioCrop` —— 12/14 个有
-- `INTConstant` —— 12/14 个有
-- `MultiTalkWav2VecEmbeds` —— 12/14 个有
-- `WanVideoTextEncode` —— 12/14 个有
-- `CR Text` —— 11/14 个有
-- `JWIntegerToString` —— 11/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/14 个有
-- `SimpleMath+` —— 11/14 个有
-- `easy showAnything` —— 11/14 个有
-- `ImageResizeKJ` —— 10/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 10/14 个有
-- `VHS_DuplicateImages` —— 10/14 个有
-- `WanVideoImageToVideoEncode` —— 10/14 个有
-- `WanVideoUni3C_ControlnetLoader` —— 10/14 个有
-- `WanVideoUni3C_embeds` —— 10/14 个有
-- `easy anythingIndexSwitch` —— 10/14 个有
-- `WanVideoContextOptions` —— 8/14 个有
-- `ImpactInt` —— 7/14 个有
-- `WanVideoTorchCompileSettings` —— 7/14 个有
-- `easy int` —— 7/14 个有
-- `ImageFromBatch+` —— 6/14 个有
-- `WanVideoEncode` —— 6/14 个有
-- `PrimitiveInt` —— 4/14 个有
-- `RHHiddenNodes` —— 4/14 个有
-- `WanVideoImageToVideoMultiTalk` —— 4/14 个有
-- `GetNode` —— 3/14 个有
-- `ImageResizeKJv2` —— 3/14 个有
-- `SetNode` —— 3/14 个有
-- `Int` —— 2/14 个有
-- `CR Text Concatenate` —— 1/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `Note Plus (mtb)` —— 1/14 个有
-- `PrimitiveBoolean` —— 1/14 个有
-- `RH_Captioner` —— 1/14 个有
-- `RH_LLMAPI_NODE` —— 1/14 个有
-- `RH_Prompter` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
-- `SaveAudio` —— 1/14 个有
-- `ShowText|pysssss` —— 1/14 个有
-- `SongGeneration_Sampler` —— 1/14 个有
-- `SongGeneration_Stage1` —— 1/14 个有
-- `SongGeneration_Stage2` —— 1/14 个有
-- `Text Multiline` —— 1/14 个有
-- `easy ifElse` —— 1/14 个有
+- `MiniMaxH3ReferenceToVideo` —— 13/14 个有
+- `PrimitiveFloat` —— 13/14 个有
+- `LoadAudio` —— 12/14 个有
+- `PreviewImage` —— 12/14 个有
+- `VHS_LoadVideo` —— 12/14 个有
+- `ImageResizeKJv2` —— 11/14 个有
+- `VAEDecode` —— 11/14 个有
+- `VAEEncode` —— 11/14 个有
+- `VAEEncodeAudio` —— 11/14 个有
+- `RunningHub Deepcleaner` —— 9/14 个有
+- `孤海注释` —— 9/14 个有
+- `MiniMaxH3AVDecodeT8` —— 8/14 个有
+- `MiniMaxH3ImageToVideo` —— 8/14 个有
+- `PT_H3ConcatAVLatent` —— 7/14 个有
+- `VAEDecodeAudio` —— 6/14 个有
+- `LTXVConcatAVLatent` —— 4/14 个有
+- `ModelAttentionBackend` —— 4/14 个有
+- `easy cleanGpuUsed` —— 4/14 个有
+- `PlaySound|pysssss` —— 2/14 个有
+- `CreateVideo` —— 1/14 个有
+- `DapaoH3LocalPromptNode` —— 1/14 个有
+- `Int` —— 1/14 个有
+- `Int2String` —— 1/14 个有
+- `JjkShowText` —— 1/14 个有
+- `MuyeLoadImage` —— 1/14 个有
+- `PrimitiveString` —— 1/14 个有
 
 ## 典型参数
 

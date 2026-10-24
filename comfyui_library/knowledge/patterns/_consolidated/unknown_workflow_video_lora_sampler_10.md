@@ -1,90 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_10
 type: Unknown Workflow
-frequency: 55
+frequency: 46
 level: moderate
-coverage: 0.562873
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.893217
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2015018676868616194.json, 视频生成/图生视频/2042132086164819970.json, 视频生成/图生视频/2042131699907170305.json, 视频生成/图生视频/2042176153171009537.json, 视频生成/图生视频/2042932527039516674.json, 视频生成/图生视频/2041872588984557569.json, 视频生成/图生视频/2039518740357844993.json, 视频生成/图生视频/2039615736561274882.json, 视频生成/图生视频/2021541718369247233.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选工作流_2088990764796825602.json, 视频生成/图生视频/2039613263704494081.json, 视频生成/图生视频/2039620407292076033.json, 视频生成/图生视频/kitten practicing kung fu_2084182943492300802.json, 视频生成/图生视频/kitten practicing kung fu_2091771507398762498.json, 视频生成/图生视频/2061909733405188097.json, 视频生成/图生视频/2061714173691785218.json, 视频生成/图生视频/2045436584266309633.json, 视频生成/图生视频/2045756399656898561.json, 视频生成/图生视频/2047879824609386498.json, 视频生成/图生视频/2048374565356707842.json, 视频生成/图生视频/2052077583671541761.json, 视频生成/图生视频/2052089396547072002.json, 视频生成/图生视频/2053480599746293761.json, 视频生成/图生视频/2061717483219931137.json, 视频生成/图生视频/2061732736808873986.json, 视频生成/图生视频/2046064441040572417.json, 视频生成/图生视频/2046446441639448578.json, 视频生成/图生视频/2061517996736208897.json, 视频生成/图生视频/2061703653236502530.json, 视频生成/图生视频/2025383055673794562.json, 视频生成/图生视频/2046490215514120193.json, 视频生成/图生视频/2054545413268615170.json, 视频生成/图生视频/1984107698880970753.json, 视频生成/图生视频/2077919550741499905.json, 视频生成/图生视频/2041820466159034370.json, 视频生成/图生视频/2044048099055771650.json, 视频生成/图生视频/2061522776120446978.json, 视频生成/图生视频/2061720298134786049.json, 视频生成/图生视频/2067493148099698690.json, 视频生成/图生视频/2061525825463341057.json, 视频生成/图生视频/2061706268229857282.json, 视频生成/图生视频/2039303290109825025.json, 视频生成/图生视频/2039983104382734337.json, 视频生成/图生视频/2047944109041651714.json, 视频生成/图生视频/2047960672364929025.json, 视频生成/图生视频/2048361532148420610.json, 视频生成/图生视频/2039898768174223362.json, 视频生成/图生视频/2042073520565391361.json, 视频生成/图生视频/2047907869110050818.json, 视频生成/图生视频/2053516783939801089.json, 视频生成/图生视频/2043513913018421250.json, 视频生成/图生视频/2044060077488873474.json, 视频生成/图生视频/2052436872852459521.json, 视频生成/图生视频/2052759183916843010.json, 视频生成/图生视频/2053154685997068289.json]
+members: [视频生成/图生视频/MiniMax H3 首尾帧_2096519661360869377.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2085940724373221377.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086013015077511170.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086013779103539202.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086018249560510465.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086023230229405697.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086031564546330625.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086035279961481217.json, 视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086039459849662465.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2085935519493611522.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086012399806672897.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086014568505102338.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086018949241724929.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086026598444265473.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086032223354056705.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086035926014316546.json, 视频生成/图生视频/MiniMax H3双图参考视频T8加速版_2086040116975464450.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2085926983283855362.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086011038381731842.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086015842201985026.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086021309468860418.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086029020457693186.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086029588613918722.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086033907010592769.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086037500170166273.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086041260804108290.json, 视频生成/图生视频/MiniMax H3图生视频T8加速版_2086316886383480834.json, 视频生成/图生视频/MiniMax H3文生视频T8加速版_2086017341279789057.json, 视频生成/图生视频/MiniMax H3文生视频T8加速版_2086030772032598018.json, 视频生成/图生视频/MiniMax H3文生视频T8加速版_2086034587939069954.json, 视频生成/图生视频/MiniMax H3文生视频T8加速版_2086038395855396866.json, 视频生成/图生视频/MiniMax H3文生视频T8加速版_2086041811486859265.json, 视频生成/图生视频/MiniMax H3极速二采高质量图_文生视频_2086658165340463105.json, 视频生成/图生视频/MiniMax H3视频首尾帧视频加速版_2099705256597868545.json, 视频生成/图生视频/MiniMax H3首尾帧视频 加速版_2091840858357325825.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2085932762489507842.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086011786754613249.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086015185537560577.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086020397614583809.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086028312467558402.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086033307304808450.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086036806813966338.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086040651405291521.json, 视频生成/图生视频/MiniMax H3首尾帧视频T8加速版_2086316208009338881.json, 视频生成/图生视频/MiniMax_H3反推提示词+极速二次采样高质量图_文生视频_2087448718474825729.json, 视频生成/文生视频/minimaxH3二采高清放大工作流_2086773185634197505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 55 个 workflow 归纳得出（视频生成/图生视频/2015018676868616194.json、视频生成/图生视频/2042132086164819970.json、视频生成/图生视频/2042131699907170305.json、视频生成/图生视频/2042176153171009537.json、视频生成/图生视频/2042932527039516674.json…）
+> 由 `engine/knowledge_consolidation` 从 46 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 首尾帧_2096519661360869377.json、视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2085940724373221377.json、视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086013015077511170.json、视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086013779103539202.json、视频生成/图生视频/MiniMax H3三图参考视频T8加速版_2086018249560510465.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：55
+- **样本数**：46
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 55 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `VHS_LoadVideo`
+全部 46 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 54/55 个有
-- `GetImageSizeAndCount` —— 54/55 个有
-- `GrowMask` —— 54/55 个有
-- `INTConstant` —— 54/55 个有
-- `ImageConcanate` —— 54/55 个有
-- `InvertMask` —— 54/55 个有
-- `LayerUtility: ImageBlend` —— 54/55 个有
-- `MaskToImage` —— 54/55 个有
-- `VHS_VideoInfo` —— 54/55 个有
-- `PointsEditor` —— 53/55 个有
-- `ImageFromBatch+` —— 52/55 个有
-- `PreviewImage` —— 52/55 个有
-- `easy cleanGpuUsed` —— 51/55 个有
-- `JWInteger` —— 45/55 个有
-- `ImageFromBatch` —— 3/55 个有
-- `ImageScaleToTotalPixels` —— 2/55 个有
-- `IndexTTSNode` —— 2/55 个有
-- `MemoryCleaner` —— 2/55 个有
-- `SeedVR2LoadDiTModel` —— 2/55 个有
-- `SeedVR2LoadVAEModel` —— 2/55 个有
-- `SeedVR2VideoUpscaler` —— 2/55 个有
-- `Text Multiline` —— 2/55 个有
-- `WanVideoTorchCompileSettings` —— 2/55 个有
-- `easy framesEditor` —— 2/55 个有
-- `GetImageSize` —— 1/55 个有
-- `GrowMaskWithBlur` —— 1/55 个有
-- `ImpactConditionalBranch` —— 1/55 个有
-- `Int` —— 1/55 个有
-- `LayerMask: MaskPreview` —— 1/55 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/55 个有
-- `PrimitiveInt` —— 1/55 个有
-- `PrimitiveStringMultiline` —— 1/55 个有
-- `WanVideoContextOptions` —— 1/55 个有
-- `easy compare` —— 1/55 个有
-- `easy int` —— 1/55 个有
+- `MiniMaxH3DualClockSamplerT8` —— 45/46 个有
+- `CR Text` —— 43/46 个有
+- `LoadImage` —— 41/46 个有
+- `Int` —— 38/46 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 37/46 个有
+- `ResolutionSelector` —— 8/46 个有
+- `easy showAnything` —— 6/46 个有
+- `BasicScheduler` —— 3/46 个有
+- `ImageResizeKJv2` —— 3/46 个有
+- `KSamplerSelect` —— 3/46 个有
+- `PT_H3ConcatAVLatent` —— 3/46 个有
+- `VAEEncode` —— 3/46 个有
+- `Text` —— 2/46 个有
+- `Dapao_LlamaCaption` —— 1/46 个有
+- `Dapao_LlamaCaptionOptions` —— 1/46 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/46 个有
+- `Label (rgthree)` —— 1/46 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/46 个有
+- `RegexReplace` —— 1/46 个有
+- `Text Multiline` —— 1/46 个有
+- `easy promptConcat` —— 1/46 个有
 
 ## 典型参数
 

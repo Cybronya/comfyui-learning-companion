@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_748
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.679
-common_nodes: [BagelImageEdit, BagelModelLoader, BagelTextToImage, Fast Groups Muter (rgthree), LoadImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.77475
+common_nodes: [CR Text, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/1927010906134237186.json, 图片生成/文生图/1927255252204998657.json]
+members: [视频生成/图生视频/AI漫剧（批量分镜图生成视频）_2016202557592440833.json, 视频生成/图生视频/全能视频S图生视频批量视频生成漫剧生成高速10并发0.05元一个_1999016663511093249.json, 视频生成/图生视频/最强AI视频（都懂的模型 多模态）_2037356383514923009.json, 视频生成/图生视频/最强超能视频2.0_全能参考 真人视频_2037557543173627905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_748
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1927010906134237186.json、图片生成/文生图/1927255252204998657.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI漫剧（批量分镜图生成视频）_2016202557592440833.json、视频生成/图生视频/全能视频S图生视频批量视频生成漫剧生成高速10并发0.05元一个_1999016663511093249.json、视频生成/图生视频/最强AI视频（都懂的模型 多模态）_2037356383514923009.json、视频生成/图生视频/最强超能视频2.0_全能参考 真人视频_2037557543173627905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BagelImageEdit`
-- `BagelModelLoader`
-- `BagelTextToImage`
-- `Fast Groups Muter (rgthree)`
+全部 4 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `BagelImageUnderstanding` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `TextBox` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/4 个有
+- `RH_Sora2_I2V_Batch` —— 2/4 个有
+- `LoadAudio` —— 1/4 个有
 
 ## 典型参数
 
@@ -45,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

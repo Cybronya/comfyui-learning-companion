@@ -1,76 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_clip_20
 type: Unknown Workflow
-frequency: 17
-level: strong
-coverage: 0.836235
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Int, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy cleanGpuUsed]
+frequency: 19
+level: moderate
+coverage: 0.992368
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2049387851611119618.json, 视频生成/图生视频/2009138591993171970.json, 视频生成/图生视频/2049389424517058561.json, 视频生成/图生视频/2011360351337586690.json, 视频生成/图生视频/2014967936171118594.json, 视频生成/图生视频/2003656092246786049.json, 视频生成/图生视频/2012356718814040065.json, 视频生成/图生视频/2012366284465377282.json, 视频生成/图生视频/2008710367467278338.json, 视频生成/图生视频/1998270569793617921.json, 视频生成/图生视频/1978100410332372994.json, 视频生成/图生视频/1977733586520526849.json, 视频生成/图生视频/1991393474855677954.json, 视频生成/图生视频/2041940547862011906.json, 视频生成/图生视频/1989202915321589761.json, 视频生成/图生视频/1992859603580899330.json, 视频生成/图生视频/1978131739417665538.json]
+members: [视频生成/图生视频/Afro 爆炸头 (wan 2.1 lora)_1906002583012429826.json, 视频生成/图生视频/WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json, 视频生成/图生视频/WAN2.1图生视频-变老特效_1900096506861608962.json, 视频生成/图生视频/Wan2.1 图生视频  低配无压力_1905875361152815105.json, 视频生成/图生视频/Wan图生视频-动态壁纸_1899859453431406594.json, 视频生成/图生视频/Wan图生视频-原地旋转_1899879062079430658.json, 视频生成/图生视频/Wan图生视频-大摆锤舞蹈_1901478845646520322.json, 视频生成/图生视频/Wan图生视频-大雷弹跳效果_1899855104164651009.json, 视频生成/图生视频/Wan图生视频-放气效果_1899813339864915970.json, 视频生成/图生视频/Wan图生视频-走秀_1901473819838529538.json, 视频生成/图生视频/hoooo_1919259091414220801.json, 视频生成/图生视频/wan2.1图生视频-飞行特效_1900041453022621698.json, 视频生成/图生视频/【女团跳舞】摇摆舞｜图生视频 超级高清_1913149294990557186.json, 视频生成/图生视频/一刀切特效｜图生视频_1912782209357676546.json, 视频生成/图生视频/万相旋转图生视频_1903953843259088897.json, 视频生成/图生视频/图生视频  吻屏_1927273170703908865.json, 视频生成/图生视频/通义万相WAN2.1图生视频美女大摆锤_1907747905766367234.json, 视频生成/图生视频/通义万相Wan2.1图生视频teacache加速_1896860763158650881.json, 视频生成/图生视频/通义万相Wan2.1图生视频高清补帧放大_1896064173954695170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/2049387851611119618.json、视频生成/图生视频/2009138591993171970.json、视频生成/图生视频/2049389424517058561.json、视频生成/图生视频/2011360351337586690.json、视频生成/图生视频/2014967936171118594.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/Afro 爆炸头 (wan 2.1 lora)_1906002583012429826.json、视频生成/图生视频/WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json、视频生成/图生视频/WAN2.1图生视频-变老特效_1900096506861608962.json、视频生成/图生视频/Wan2.1 图生视频  低配无压力_1905875361152815105.json、视频生成/图生视频/Wan图生视频-动态壁纸_1899859453431406594.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：19
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `Int`
+全部 19 个 workflow 都包含：
 - `LoadImage`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 16/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 15/17 个有
-- `INTConstant` —— 15/17 个有
-- `RIFE VFI` —— 15/17 个有
-- `wanBlockSwap` —— 15/17 个有
-- `DF_Integer` —— 13/17 个有
-- `SimpleMath+` —— 13/17 个有
-- `WanImageToVideo` —— 12/17 个有
-- `WanFirstLastFrameToVideo` —— 11/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/17 个有
-- `FL_RIFE` —— 2/17 个有
-- `KSamplerAdvanced` —— 2/17 个有
-- `LoraLoaderModelOnly` —— 2/17 个有
-- `ModelSamplingSD3` —— 2/17 个有
-- `PreviewImage` —— 2/17 个有
-- `ImageLoader` —— 1/17 个有
-- `PainterI2V` —— 1/17 个有
-- `PlaySound|pysssss` —— 1/17 个有
-- `PrimitiveStringMultiline` —— 1/17 个有
-- `Text` —— 1/17 个有
-- `Textbox` —— 1/17 个有
-- `easy int` —— 1/17 个有
+- `WanVideoLoraSelect` —— 16/19 个有
+- `WanVideoTeaCache` —— 16/19 个有
+- `ImageResizeKJ` —— 12/19 个有
+- `Int` —— 12/19 个有
+- `WanVideoEnhanceAVideo` —— 12/19 个有
+- `RIFE VFI` —— 10/19 个有
+- `TextInput_` —— 9/19 个有
+- `ImageScaleToTotalPixels` —— 7/19 个有
+- `easy imageSize` —— 7/19 个有
+- `Replace Text _O` —— 3/19 个有
+- `WanVideoContextOptions` —— 3/19 个有
+- `CR Upscale Image` —— 2/19 个有
+- `WanVideoSLG` —— 2/19 个有
+- `easy int` —— 2/19 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 17 | 65% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 17 | 80% |
-| 采样算法 | 1 | 1 - 1 | 17 | 100% |
-| 调度器 | 1 | 1 - 1 | 15 | 100% |
-| 重绘幅度 | euler_ancestral | - | 17 | 88% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,8 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，17 个样本，一致性 65%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，17 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，17 个样本，一致性 88%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,74 +3,68 @@ name: unknown_workflow_upscale_latent_upscale_lora_79
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.927
-common_nodes: [CFGGuider, CLIPTextEncode, CM_IntToFloat, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetLatentSizeAndCount, ImageFromBatch, Image_Resize_longsize, Int, JjkText, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveBoolean, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed Everywhere, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VRAMReserver, easy cleanGpuUsed, image_scale_pixel_v2]
+coverage: 0.861
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, GetVideoComponents, ImageFromBatch, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveAudio, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2053030948815548417.json, 视频生成/图生视频/2049061989212758018.json]
+members: [视频生成/图生视频/MiniMaxH3_LTX2.5二次采样放大V0.1版_2092438276169879553.json, 视频生成/文生视频/MiniMaxH3_LTX2.5放大_2096200687985192962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_79
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2053030948815548417.json、视频生成/图生视频/2049061989212758018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3_LTX2.5二次采样放大V0.1版_2092438276169879553.json、视频生成/文生视频/MiniMaxH3_LTX2.5放大_2096200687985192962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `CreateVideo`
 - `EmptyLTXVLatentVideo`
-- `GetLatentSizeAndCount`
+- `GetVideoComponents`
 - `ImageFromBatch`
-- `Image_Resize_longsize`
-- `Int`
-- `JjkText`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
 - `LTXVConditioning`
-- `LTXVImgToVideoConditionOnly`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PromptRelayEncode`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveAudio`
 - `SaveVideo`
-- `Seed Everywhere`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAEDecodeTiled`
-- `VRAMReserver`
-- `easy cleanGpuUsed`
-- `image_scale_pixel_v2`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `ComfySwitchNode` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `PerturbedAttention` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
 
 ## 典型参数
 

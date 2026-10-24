@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_994
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.904
-common_nodes: [LayerUtility: TextBox, LoadAudio, SaveAudio, SaveAudioMP3, VoxCPM_TTS]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [ExecutionBlocker, ImpactNeg, MuyeTextEditOutput, PrimitiveBoolean, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM-TTS：粤语、上海话、天津话、四川话方言克隆_1989895308291305473.json, 音频生成/音频生成/超强精准语音克隆VoxCPM-TTS_1970724638970048513.json]
+members: [图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_994
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/VoxCPM-TTS：粤语、上海话、天津话、四川话方言克隆_1989895308291305473.json、音频生成/音频生成/超强精准语音克隆VoxCPM-TTS_1970724638970048513.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LayerUtility: TextBox`
-- `LoadAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `VoxCPM_TTS`
+全部 3 个 workflow 都包含：
+- `ExecutionBlocker`
+- `ImpactNeg`
+- `MuyeTextEditOutput`
+- `PrimitiveBoolean`
+- `RH_RhartImageG25FlareTextToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
 
 ## 典型参数
 
@@ -39,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

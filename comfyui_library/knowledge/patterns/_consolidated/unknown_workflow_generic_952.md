@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_952
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.727
-common_nodes: [AudioCleanupNode, CR Prompt Text, IndexTTSNode, JWInteger, LoadAudio, Note Plus (mtb), SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.698333
+common_nodes: [BagelImageEdit, BagelModelLoader, BagelTextToImage, Fast Groups Muter (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: ["音频生成/音频生成/INDEXTTS语音迁移v2（支持夹子音,新模型）_1915048868399251458.json", 音频生成/音频生成/INDEXTTS语音迁移v2（贞贞专用版）_1938234701721047041.json]
+members: [图片生成/图生图/文改图 _ Bagel（字节豆包开源模型）_1927260628178862081.json, 图片生成/文生图/Bagel多模态理解生成模型 全能图像编辑_1927010906134237186.json, 图片生成/文生图/文生图 _ Bagel（字节豆包开源模型）_1927255252204998657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_952
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/INDEXTTS语音迁移v2（支持夹子音,新模型）_1915048868399251458.json、音频生成/音频生成/INDEXTTS语音迁移v2（贞贞专用版）_1938234701721047041.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/文改图 _ Bagel（字节豆包开源模型）_1927260628178862081.json、图片生成/文生图/Bagel多模态理解生成模型 全能图像编辑_1927010906134237186.json、图片生成/文生图/文生图 _ Bagel（字节豆包开源模型）_1927255252204998657.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCleanupNode`
-- `CR Prompt Text`
-- `IndexTTSNode`
-- `JWInteger`
-- `LoadAudio`
-- `Note Plus (mtb)`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `BagelTextToImage`
+- `Fast Groups Muter (rgthree)`
+- `LoadImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `TextBox` —— 2/3 个有
+- `BagelImageUnderstanding` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,57 +3,61 @@ name: unknown_workflow_video_lora_sampler_483
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.70925
-common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy showAnything]
+coverage: 0.81375
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json, 视频生成/图生视频/2064890559977840642.json, 视频生成/图生视频/2064510607130451970.json, 视频生成/图生视频/2062439280944963586.json]
+members: [视频生成/图生视频/BindWeave_Single-单图参考生成视频_1991707483274309634.json, 视频生成/图生视频/BindWeave单图参考图生视频V1(FPS24)_1989700145870721025.json, 视频生成/图生视频/MAGREF+LIGHTX2V三图参考图生视频_1935525367807672321.json, 视频生成/图生视频/图生视频5.0 BindWeave 单图控制_1990058072469106689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_483
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json、视频生成/图生视频/2064890559977840642.json、视频生成/图生视频/2064510607130451970.json、视频生成/图生视频/2062439280944963586.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/BindWeave_Single-单图参考生成视频_1991707483274309634.json、视频生成/图生视频/BindWeave单图参考图生视频V1(FPS24)_1989700145870721025.json、视频生成/图生视频/MAGREF+LIGHTX2V三图参考图生视频_1935525367807672321.json、视频生成/图生视频/图生视频5.0 BindWeave 单图控制_1990058072469106689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
+- `CLIPVisionLoader`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 3/4 个有
-- `TTResolutionSelector` —— 3/4 个有
-- `Text` —— 3/4 个有
-- `VAEDecode` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `BatchImagesNode` —— 1/4 个有
-- `ComfyMathExpression` —— 1/4 个有
-- `Int` —— 1/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `InvertMask` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `WanVideoAddBindweaveEmbeds` —— 3/4 个有
+- `WanVideoEncodeLatentBatch` —— 3/4 个有
+- `WanVideoSetBlockSwap` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `JWInteger` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `GetImageSize+` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImagePadKJ` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 - `SimpleMath+` —— 1/4 个有
-- `VAEDecodeTiled` —— 1/4 个有
 
 ## 典型参数
 

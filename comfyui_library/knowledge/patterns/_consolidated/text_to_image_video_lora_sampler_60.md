@@ -3,73 +3,68 @@ name: text_to_image_video_lora_sampler_60
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.860818
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.838818
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, INTConstant, JjkText, KSampler, LoraLoaderModelOnly, Seed, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/int8文生视频4步加速｜MiniMax H3提示词优化工作流_2090868519985565697.json, 图片生成/文生图/int8文生视频4步加速｜MiniMax H3提示词优化流_2090563536077545474.json, 视频生成/图生视频/H3单图生视频｜MINIMAX工作流8-20新版_2090869883713179650.json, 视频生成/图生视频/H3高保真图生视频 静止图像动态化运镜重构_2099924808850042881.json, 视频生成/图生视频/MiniMax H3全能参考工作流｜文生视频单图生视频图生视频_2090446719375990786.json, 视频生成/图生视频/MiniMax h3开源版H3图生视频短剧广告片创意视频口播MV跳舞视频生成数字人加速四倍_2087143209582546946.json, 视频生成/图生视频/MiniMax h3开源版H3图生视频短剧广告片创意视频口播MV跳舞视频生成数字人加速四倍_2087154037660672001.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3合集｜单图生多图参考4步lora加速_2097965293799825409.json, 视频生成/图生视频/全能参考工作流｜MiniMax H3图生视频一键生成_2090270213274165249.json, 视频生成/图生视频/多参考图生视频4步加速｜MiniMax H3提示词自动优化美少女_2091298868020473857.json, 视频生成/图生视频/高质量自动化多参视频流｜动漫人物特效图生视频_2092738709815906306.json]
+members: [视频生成/图生视频/Bernini视频去水印天花板｜无痕去字幕logo画质如初_2107670519372935170.json, 视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107328479384653825.json, 视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107441049831559170.json, 视频生成/图生视频/bernini局部衣服修改｜电商带货视频编辑图生视频处理_2094718463712518146.json, 视频生成/图生视频/带货主播手中产品替换｜电商视频生视频一键搞定_2095545842093617153.json, 视频生成/图生视频/电商带货bernini局部衣服修改｜视频生视频换装更自由_2106265187983646722.json, 视频生成/图生视频/电商带货产品替换｜视频图生视频主播手持商品更换_2091243839599239169.json, 视频生成/图生视频/电商带货替换主播手中产品工作流，视频生视频图生视频处理工具_2106844793283371009.json, 视频生成/图生视频/电商带货替换主播手中产品工作流，视频生视频图生视频处理工具_2110530638565699586.json, 视频生成/图生视频/电商带货替换主播手中产品视频生视频图生视频_2087331268609527809.json, 视频生成/图生视频/电商带货视频换产品神器｜主播手中商品随意替换，不用重新拍片_2099515530515402753.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_60
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/int8文生视频4步加速｜MiniMax H3提示词优化工作流_2090868519985565697.json、图片生成/文生图/int8文生视频4步加速｜MiniMax H3提示词优化流_2090563536077545474.json、视频生成/图生视频/H3单图生视频｜MINIMAX工作流8-20新版_2090869883713179650.json、视频生成/图生视频/H3高保真图生视频 静止图像动态化运镜重构_2099924808850042881.json、视频生成/图生视频/MiniMax H3全能参考工作流｜文生视频单图生视频图生视频_2090446719375990786.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Bernini视频去水印天花板｜无痕去字幕logo画质如初_2107670519372935170.json、视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107328479384653825.json、视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107441049831559170.json、视频生成/图生视频/bernini局部衣服修改｜电商带货视频编辑图生视频处理_2094718463712518146.json、视频生成/图生视频/带货主播手中产品替换｜电商视频生视频一键搞定_2095545842093617153.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `INTConstant`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `Seed`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 9/11 个有
-- `孤海注释` —— 9/11 个有
-- `LoraLoaderBypassModelOnly` —— 8/11 个有
-- `LoadAudio` —— 6/11 个有
-- `UniBlockSwap` —— 4/11 个有
-- `Any To String (mtb)` —— 3/11 个有
-- `BatchImagesNode` —— 3/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
-- `JoinStringMulti` —— 3/11 个有
-- `StringConcatenate` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `llama_cpp_instruct_adv` —— 3/11 个有
-- `llama_cpp_model_loader` —— 3/11 个有
-- `llama_cpp_parameters` —— 3/11 个有
-- `PreviewAny` —— 2/11 个有
-- `RH_LLMAPI_Pro_Node` —— 2/11 个有
-- `MemoryCleaner` —— 1/11 个有
-- `MiniMaxH3SigmaShift` —— 1/11 个有
-- `RHLLMChatNode` —— 1/11 个有
-- `SaveImage` —— 1/11 个有
-- `VHS_LoadVideo` —— 1/11 个有
-- `WujiCleaner` —— 1/11 个有
-- `XB_ROCmMemCleaner` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
+- `VHS_VideoInfoLoaded` —— 8/11 个有
+- `easy showAnything` —— 8/11 个有
+- `孤海注释` —— 8/11 个有
+- `EmptyImage` —— 4/11 个有
+- `PreviewImage` —— 4/11 个有
+- `GetNode` —— 3/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `SetNode` —— 3/11 个有
+- `TextCombinerSix` —— 3/11 个有
+- `VHS_VideoInfoSource` —— 3/11 个有
+- `SaveImage` —— 2/11 个有
 
 ## 典型参数
 
@@ -87,7 +82,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -98,4 +93,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，11 个样本，一致性 100%
 - 调度器 最常用 beta，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

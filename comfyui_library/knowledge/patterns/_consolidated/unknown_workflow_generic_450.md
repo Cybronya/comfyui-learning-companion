@@ -1,43 +1,35 @@
 ---
 name: unknown_workflow_generic_450
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.82875
-common_nodes: [LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, easy showAnything]
+coverage: 0.916667
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat AudioDIT TTS 单人双人 高相似度语音克隆_2100480847823589378.json, 音频生成/音频生成/LongCat-AudioDiT 语音克隆_2041738987102019586.json, 音频生成/音频生成/LongCat-AudioDiT单_双人语音克隆TTS_2039290948785545217.json, 音频生成/音频生成/影视真人台词感-单人语音克隆--LongCat-AudioDiT（翻译）_2039728236652924929.json]
+members: [视频生成/图生视频/Kling O3 Pro图生视频工作流｜可灵 O3 旗舰图生视频_2099453238016831489.json, 视频生成/图生视频/Kling_VideoO3ProImageToVideo_v3.0_2033816740311863297.json, 视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json, 视频生成/图生视频/世界杯现场_2060746296159465473.json, 视频生成/图生视频/可灵O3PRO首尾帧视频_2058854588261953537.json, 视频生成/图生视频/棒球现场_2060739578461515777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_450
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/LongCat AudioDIT TTS 单人双人 高相似度语音克隆_2100480847823589378.json、音频生成/音频生成/LongCat-AudioDiT 语音克隆_2041738987102019586.json、音频生成/音频生成/LongCat-AudioDiT单_双人语音克隆TTS_2039290948785545217.json、音频生成/音频生成/影视真人台词感-单人语音克隆--LongCat-AudioDiT（翻译）_2039728236652924929.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Kling O3 Pro图生视频工作流｜可灵 O3 旗舰图生视频_2099453238016831489.json、视频生成/图生视频/Kling_VideoO3ProImageToVideo_v3.0_2033816740311863297.json、视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json、视频生成/图生视频/世界杯现场_2060746296159465473.json、视频生成/图生视频/可灵O3PRO首尾帧视频_2058854588261953537.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
-- `easy showAnything`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `LongCatMultiSpeakerTTS` —— 2/4 个有
-- `SaveAudio` —— 2/4 个有
-- `RunningHub SeedXPro Translator` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
-- `忽略多组孤海` —— 1/4 个有
+- `RH_KlingVideoO3ProImageToVideo` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `RH_PixverseV6ImageToVideo` —— 1/6 个有
 
 ## 典型参数
 

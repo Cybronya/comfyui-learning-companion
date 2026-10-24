@@ -1,58 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_560
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8865
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.782333
+common_nodes: [CR Text, CreateCFGScheduleFloatList, GetNode, ImageConcanate, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-VL反推视频提示词WAN22生成视频_1988333023324233729.json, 视频生成/文生视频/Qwen3VL_视频分镜反推提示词_文生视频_Comfyui官方流_1983729190623223809.json, 视频生成/文生视频/1966437512258498562.json, 视频生成/文生视频/wan2_2_t2v_Qwen3VL 参考视频识别 + 文生视频流程_1981031658872770562.json]
+members: [图片生成/图生图/Wan2.2 Fun VACE 多图融合_1966783248779128833.json, 图片生成/图生图/Wan2.2 Fun VACE 首尾帧_1966773011640692738.json, 视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_560
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-VL反推视频提示词WAN22生成视频_1988333023324233729.json、视频生成/文生视频/Qwen3VL_视频分镜反推提示词_文生视频_Comfyui官方流_1983729190623223809.json、视频生成/文生视频/1966437512258498562.json、视频生成/文生视频/wan2_2_t2v_Qwen3VL 参考视频识别 + 文生视频流程_1981031658872770562.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Fun VACE 多图融合_1966783248779128833.json、图片生成/图生图/Wan2.2 Fun VACE 首尾帧_1966773011640692738.json、视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `ImageConcanate`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL_Advanced` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `easy clearCacheAll` —— 2/4 个有
-- `Image_Upscaletile` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `WanVideoVACEStartToEndFrame` —— 2/3 个有
+- `AddLabel` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `InspyrenetRembg` —— 1/3 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 4 | 4 - 8 | 4 | 65% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，4 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

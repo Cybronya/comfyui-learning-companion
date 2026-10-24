@@ -1,0 +1,72 @@
+---
+name: unknown_workflow_upscale_face_detailer_lora_3
+type: Unknown Workflow
+frequency: 2
+level: weak
+coverage: 0.8005
+common_nodes: [BasicGuider, BasicScheduler, CFGZeroStarAndInit, CLIPTextEncode, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FaceDetailer, FluxGuidance, GetNode, ImpactInt, KSamplerSelect, ModelSamplingFlux, PatchModelPatcherOrder, Power Lora Loader (rgthree), RH_LLMAPI_NODE, RandomNoise, SAMLoader, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, UNETLoader, UltimateSDUpscale, UltralyticsDetectorProvider, Upscale Model Loader, VAEDecode, VAELoader, easy showAnything]
+problems: []
+missing: []
+members: [图片生成/文生图/多个少女团生成流（可动态）_1944334469094625282.json, 图片生成/文生图/🤡【大炮擦边】女团_名yuan一键生成器🤡_1944235914703015938.json]
+source: knowledge_consolidation
+---
+
+# unknown_workflow_upscale_face_detailer_lora_3
+
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/多个少女团生成流（可动态）_1944334469094625282.json、图片生成/文生图/🤡【大炮擦边】女团_名yuan一键生成器🤡_1944235914703015938.json）
+
+- **类型**：Unknown Workflow
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：80%
+
+## 共有节点
+
+全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CFGZeroStarAndInit`
+- `CLIPTextEncode`
+- `CR Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FaceDetailer`
+- `FluxGuidance`
+- `GetNode`
+- `ImpactInt`
+- `KSamplerSelect`
+- `ModelSamplingFlux`
+- `PatchModelPatcherOrder`
+- `Power Lora Loader (rgthree)`
+- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `SAMLoader`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
+- `UNETLoader`
+- `UltimateSDUpscale`
+- `UltralyticsDetectorProvider`
+- `Upscale Model Loader`
+- `VAEDecode`
+- `VAELoader`
+- `easy showAnything`
+
+## 典型参数
+
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+
+## 常见问题
+
+参数体检未发现问题。
+
+## 建议与风险
+
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

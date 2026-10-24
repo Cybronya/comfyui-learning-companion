@@ -1,94 +1,86 @@
 ---
 name: text_to_image_lora_sampler_clip_258
 type: Text To Image
-frequency: 4
+frequency: 7
 level: strong
-coverage: 0.524
-common_nodes: [Anything Everywhere, CLIPTextEncode, Display Any (rgthree), EmptyImage, EmptyLatentImage, GODMT_SplitString, GetNode, ImageBatch, Int, KSampler, LoraLoader, Manual XY Entry Info, PreviewImage, PrimitiveStringMultiline, SaveImage, SetNode, Text Load Line From File, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart, easy seed]
+coverage: 0.856429
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
-missing: [Display Any (rgthree), Manual XY Entry Info, Text Load Line From File, easy forLoopEnd, easy forLoopStart, easy seed, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1945128839305678849.json, 图片生成/文生图/1963602782727147522.json, 图片生成/文生图/1964237525097267201.json, 图片生成/文生图/批量文生图(Z-image版)_1997631900376346625.json]
+missing: []
+members: [图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json, 图片生成/图生图/Qwen Image 2.1最强开源图像编辑多图模特换装图生图处理工具_2102088091476512769.json, 图片生成/图生图/Qwen Image 2.1纯净官流编辑｜40步无PE稳定出图_2103104435521155074.json, 图片生成/图生图/Qwen Image 2.1编辑纯净官流40步无PE，搭配技能使用效果更佳_2103199505092014082.json, 图片生成/图生图/Qwen image2.1抠图去背景，图生图去水印一步到位_2110505250099646465.json, 图片生成/图生图/QwenImage2.1角色三视图生成｜bf16展开版图生图精准出图_2106197248026697729.json, 图片生成/图生图/Qwen_image2.1抠图去背景，图生图去水印一步到位_2112349116150935553.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_258
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1945128839305678849.json、图片生成/文生图/1963602782727147522.json、图片生成/文生图/1964237525097267201.json、图片生成/文生图/批量文生图(Z-image版)_1997631900376346625.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json、图片生成/图生图/Qwen Image 2.1最强开源图像编辑多图模特换装图生图处理工具_2102088091476512769.json、图片生成/图生图/Qwen Image 2.1纯净官流编辑｜40步无PE稳定出图_2103104435521155074.json、图片生成/图生图/Qwen Image 2.1编辑纯净官流40步无PE，搭配技能使用效果更佳_2103199505092014082.json、图片生成/图生图/Qwen image2.1抠图去背景，图生图去水印一步到位_2110505250099646465.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Anything Everywhere`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `Display Any (rgthree)`
-- `EmptyImage`
 - `EmptyLatentImage`
-- `GODMT_SplitString`
-- `GetNode`
-- `ImageBatch`
-- `Int`
+- `JjkText`
 - `KSampler`
-- `LoraLoader`
-- `Manual XY Entry Info`
-- `PreviewImage`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `PrimitiveStringMultiline`
 - `SaveImage`
-- `SetNode`
-- `Text Load Line From File`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `DualCLIPLoader` —— 2/4 个有
-- `FluxGuidance` —— 2/4 个有
-- `InvertMask` —— 1/4 个有
-- `JoinImageWithAlpha` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
-- `ResizeMask` —— 1/4 个有
+- `QwenImage21Cache` —— 6/7 个有
+- `孤海注释` —— 6/7 个有
+- `ComfySwitchNode` —— 5/7 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `PrimitiveBoolean` —— 4/7 个有
+- `GetImageSize` —— 3/7 个有
+- `ResolutionSelector` —— 3/7 个有
+- `Fast Bypasser (rgthree)` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `PixaromaSeed` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `EmptyImage` —— 1/7 个有
+- `GroupSwitcher` —— 1/7 个有
+- `NuiKr.OpenPoseEditor` —— 1/7 个有
+- `OpenposePreprocessor` —— 1/7 个有
+- `PixaromaRunTimer` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.93 - 1 | 4 | 97% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
-| 采样步数 | 20 | 9 - 20 | 4 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 4 | 53% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1280 | 1280 - 1280 | 4 | 100% |
-| 高度 | 720 | 720 - 720 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.93 - 1，4 个样本，取值集中（一致性 97%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 9 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1280，观测区间 1280 - 1280，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 720，观测区间 720 - 720，4 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Display Any (rgthree)、Manual XY Entry Info、Text Load Line From File、easy forLoopEnd、easy forLoopStart
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（9/7 个样本）：Steps较低可能导致细节不足

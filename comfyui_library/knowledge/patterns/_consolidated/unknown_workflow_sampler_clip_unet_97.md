@@ -1,69 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_97
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.949857
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.9556
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Flux2_2091139981032116226.json, 图片生成/文生图/Flux2_klein_2066878263074582530.json, 图片生成/文生图/Flux2_加速版文生图_1994696388929785858.json, 图片生成/文生图/Flux2‑Klein‑9B 文生图优化版_2086811458842750977.json, 图片生成/文生图/Flux2加速版文生图_1994007368916811777.json, 图片生成/文生图/Flux2文生图加速版V2(加强版)_1993501337226772482.json, 图片生成/文生图/嘟嘟-Flux2文生图加速版_1994338243791486978.json]
+members: [图片生成/图生图/FLUX3 PE提示词强化加速版图像编辑_2111364166001971202.json, 图片生成/图生图/FLUX3+PE提示词强化加速版图像编辑_2111477045355180034.json, 图片生成/图生图/FLUX3加速版图像编辑_2110845040582025217.json, 图片生成/图生图/FLUX3加速版图像编辑_2111037244042727426.json, 图片生成/图生图/Flux3 PE提示词强化加速版多图编辑V1_2111364159416922114.json, 图片生成/图生图/单图编辑-FLUX3-Klein-int8加速版_2110936341600104450.json, 图片生成/图生图/单图编辑-FLUX3-Klein-int8加速版pe提示词优化版_2111502270784434177.json, 图片生成/图生图/多图编辑Flux3 PE提示词强化加速版_2111482509593763842.json, 图片生成/文生图/FLUX3 PE提示词强化加速版文生图v1_2111364151871365122.json, 图片生成/文生图/FLUX3+PE提示词强化加速版文生图_2111485679510319106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_97
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux2_2091139981032116226.json、图片生成/文生图/Flux2_klein_2066878263074582530.json、图片生成/文生图/Flux2_加速版文生图_1994696388929785858.json、图片生成/文生图/Flux2‑Klein‑9B 文生图优化版_2086811458842750977.json、图片生成/文生图/Flux2加速版文生图_1994007368916811777.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX3 PE提示词强化加速版图像编辑_2111364166001971202.json、图片生成/图生图/FLUX3+PE提示词强化加速版图像编辑_2111477045355180034.json、图片生成/图生图/FLUX3加速版图像编辑_2110845040582025217.json、图片生成/图生图/FLUX3加速版图像编辑_2111037244042727426.json、图片生成/图生图/Flux3 PE提示词强化加速版多图编辑V1_2111364159416922114.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
-- `KSampler`
+- `KSamplerSelect`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchTorchSettings` —— 6/7 个有
-- `PathchSageAttentionKJ` —— 6/7 个有
-- `EasyCache` —— 3/7 个有
-- `LayerUtility: PurgeVRAM` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `FluxGuidance` —— 2/7 个有
-- `Text _O` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
+- `LoadImage` —— 8/10 个有
+- `Flux3PELoader` —— 7/10 个有
+- `Flux3PromptEnhance` —— 7/10 个有
+- `GetLatentSize` —— 7/10 个有
+- `CR Prompt Text` —— 6/10 个有
+- `PDIMAGE_LongerSize` —— 6/10 个有
+- `ReferenceLatent` —— 6/10 个有
+- `VAEEncode` —— 6/10 个有
+- `孤海注释` —— 3/10 个有
+- `ImageConcanate` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `ReferenceMultiLatent` —— 2/10 个有
+- `Text` —— 2/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 6 - 20 | 7 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 6 - 20，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

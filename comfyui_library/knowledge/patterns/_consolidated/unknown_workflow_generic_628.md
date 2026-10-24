@@ -1,45 +1,36 @@
 ---
 name: unknown_workflow_generic_628
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.877667
-common_nodes: [Audio To Text (mtb), Load Whisper (mtb), LoadAudio, LongCatMultiSpeakerTTS, LongCatTTS, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PreviewAudio]
+coverage: 0.9285
+common_nodes: [LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat AudioDiT全家桶_2039978667698298881.json, 音频生成/音频生成/LongCat-AudioDIT-TTS_语音生成克隆工作流_2039341424558219265.json, 音频生成/音频生成/【遇见AI】LongCat-AudioDIT 语音模型，文生音频，语音克隆，多人对话_2057752095251582978.json]
+members: [comfyui-workflow-templates-json/video_wan_dancer.json, 图片生成/图生图/2.0_全能参考生真人视频正式_2037474868786110466.json, 视频生成/图生视频/SD2.0满血_2038582456567205889.json, 视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_628
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat AudioDiT全家桶_2039978667698298881.json、音频生成/音频生成/LongCat-AudioDIT-TTS_语音生成克隆工作流_2039341424558219265.json、音频生成/音频生成/【遇见AI】LongCat-AudioDIT 语音模型，文生音频，语音克隆，多人对话_2057752095251582978.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_dancer.json、图片生成/图生图/2.0_全能参考生真人视频正式_2037474868786110466.json、视频生成/图生视频/SD2.0满血_2038582456567205889.json、视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `Load Whisper (mtb)`
+全部 4 个 workflow 都包含：
 - `LoadAudio`
-- `LongCatMultiSpeakerTTS`
-- `LongCatTTS`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `PreviewAudio`
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 2/3 个有
-- `SaveAudioMP3` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
+- `StringConcatenate` —— 1/4 个有
+- `f7467834-35a6-42fe-b525-7f17383beb4f` —— 1/4 个有
 
 ## 典型参数
 

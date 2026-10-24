@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_342
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.80175
-common_nodes: [LoadVideo, SaveVideo]
+coverage: 0.740143
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json, comfyui-workflow-templates-json/api_seedance2_5_video_editing.json, comfyui-workflow-templates-json/api_seedance2_5_video_extend.json]
+members: [图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json, 图片生成/图生图/个人号洗4.0_2055233377527189506.json, 图片生成/图生图/个人号洗_2052376260571090945.json, 图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json, 图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json, 图片生成/图生图/简单的动作更改，不改变原图风格_1978322603704246273.json, 图片生成/文生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1977798578682953729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_342
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json、comfyui-workflow-templates-json/api_seedance2_5_video_editing.json、comfyui-workflow-templates-json/api_seedance2_5_video_extend.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json、图片生成/图生图/个人号洗4.0_2055233377527189506.json、图片生成/图生图/个人号洗_2052376260571090945.json、图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json、图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadVideo`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Video Slice` —— 3/4 个有
-- `ByteDance2ReferenceNodeV2` —— 2/4 个有
-- `GeminiVideoOmniV2` —— 2/4 个有
-- `d9aa59a4-3784-4796-9f1b-5b467fb41fa1` —— 1/4 个有
+- `CR Text` —— 6/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `ResizeLongestToNode` —— 1/7 个有
 
 ## 典型参数
 

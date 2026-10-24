@@ -7,13 +7,13 @@ coverage: 0.907333
 common_nodes: [CFGNorm, CLIPLoader, GetImageSizeAndCount, ImageResizeKJv2, ImageScaleToTotalPixels, KSampler, LoadImage, LoadWanVideoT5TextEncoder, ModelSamplingAuraFlow, PrimitiveInt, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1987004381801418754.json, 视频生成/图生视频/1977963460321497090.json, 视频生成/图生视频/1971550971262398465.json]
+members: [视频生成/图生视频/千问edit三分镜图+Wan2.2图生三分镜视频_1987004381801418754.json, 视频生成/图生视频/千问生成尾帧+Wan2.2首尾帧视频生成可自动提示词_1977963460321497090.json, 视频生成/图生视频/同一场景自定义姿势首尾帧视频_1971550971262398465.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1987004381801418754.json、视频生成/图生视频/1977963460321497090.json、视频生成/图生视频/1971550971262398465.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/千问edit三分镜图+Wan2.2图生三分镜视频_1987004381801418754.json、视频生成/图生视频/千问生成尾帧+Wan2.2首尾帧视频生成可自动提示词_1977963460321497090.json、视频生成/图生视频/同一场景自定义姿势首尾帧视频_1971550971262398465.json）
 
 - **类型**：Image To Image
 - **样本数**：3

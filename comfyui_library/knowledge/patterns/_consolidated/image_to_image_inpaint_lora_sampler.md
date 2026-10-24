@@ -1,107 +1,93 @@
 ---
 name: image_to_image_inpaint_lora_sampler
 type: Image To Image
-frequency: 3
+frequency: 8
 level: strong
-coverage: 0.891667
-common_nodes: [AILab_QwenVL, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DrawMaskOnImage, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImagePadForOutpaint, ImageScaleToTotalPixels, InpaintModelConditioning, KSampler, KSamplerSelect, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskBlur+, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, Text, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+coverage: 0.813375
+common_nodes: [CLIPLoader, ConditioningZeroOut, CreateShapeMask, GrowMaskWithBlur, ImageBlend, ImageConcanate, ImagePadForOutpaint, ImageResizeKJv2, ImageScaleToTotalPixels, InpaintModelConditioning, KSampler, LoadImage, LoraLoaderModelOnly, MaskToImage, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Klein模型+Krea2模型工作流集合-养老院级解说_2096611076698890242.json, 图片生成/文生图/Klein模型工作流集合_2092442362462167041.json, 图片生成/文生图/工作流系列22-Klein模型工作流集合_2082269935987941378.json]
+members: [图片生成/图生图/360_2031667084123443202.json, 图片生成/图生图/360全景图生成+TTP放大+全自动接缝_2018589222394929154.json, 图片生成/图生图/一键 图片 转 360全景图_2059073213757485058.json, 图片生成/图生图/一键+图片+转+360全景图_2096562014134030337.json, 图片生成/图生图/一键+图片+转+360全景图_2104866199501893634.json, 图片生成/图生图/一键+图片+转+360全景图_2110206285751869442.json, 图片生成/图生图/图片转360全景图，效果完美，无瑕疵_2052271703472001026.json, 图片生成/图生图/图生图 一键 图片 转 360全景图_2063870262696824833.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_inpaint_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Klein模型+Krea2模型工作流集合-养老院级解说_2096611076698890242.json、图片生成/文生图/Klein模型工作流集合_2092442362462167041.json、图片生成/文生图/工作流系列22-Klein模型工作流集合_2082269935987941378.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/360_2031667084123443202.json、图片生成/图生图/360全景图生成+TTP放大+全自动接缝_2018589222394929154.json、图片生成/图生图/一键 图片 转 360全景图_2059073213757485058.json、图片生成/图生图/一键+图片+转+360全景图_2096562014134030337.json、图片生成/图生图/一键+图片+转+360全景图_2104866199501893634.json…）
 
 - **类型**：Image To Image
-- **样本数**：3
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGGuider`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DrawMaskOnImage`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
+- `CreateShapeMask`
+- `GrowMaskWithBlur`
+- `ImageBlend`
+- `ImageConcanate`
 - `ImagePadForOutpaint`
+- `ImageResizeKJv2`
 - `ImageScaleToTotalPixels`
 - `InpaintModelConditioning`
 - `KSampler`
-- `KSamplerSelect`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskBlur+`
+- `MaskToImage`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ReferenceLatent`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `Text`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `FastCanvas` —— 2/3 个有
-- `GetImageSize+` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `INPAINT_ExpandMask` —— 2/3 个有
-- `ImageAndMaskPreview` —— 2/3 个有
-- `ImageCompositeMasked` —— 2/3 个有
-- `MaskPreview` —— 2/3 个有
-- `SAM3_Detect` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy imageColorMatch` —— 2/3 个有
-- `easy positive` —— 2/3 个有
-- `easy promptLine` —— 2/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `Krea2EditGroundedEncode` —— 1/3 个有
-- `Krea2EditModelPatch` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `easy anythingIndexSwitch` —— 1/3 个有
-- `easy bookmark` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 5/8 个有
+- `LayerUtility: If ` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `SeedVR2LoadDiTModel` —— 5/8 个有
+- `SeedVR2LoadVAEModel` —— 5/8 个有
+- `SeedVR2VideoUpscaler` —— 5/8 个有
+- `SimpleComparison+` —— 5/8 个有
+- `CLIPTextEncode` —— 3/8 个有
+- `ConstrainImage|pysssss` —— 3/8 个有
+- `EmptySD3LatentImage` —— 3/8 个有
+- `ImageUpscaleWithModel` —— 3/8 个有
+- `PanoramaViewerNode` —— 3/8 个有
+- `PrimitiveFloat` —— 3/8 个有
+- `PrimitiveInt` —— 3/8 个有
+- `UpscaleModelLoader` —— 3/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 10 | 3 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | 4 - 8 | 8 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 24/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 22/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 10，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（24/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（22/8 个样本）：Steps较低可能导致细节不足

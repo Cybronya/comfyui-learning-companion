@@ -3,54 +3,61 @@ name: unknown_workflow_video_sampler_clip_254
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.876
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.887
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ImageResizeKJ, KSamplerSelect, LTXVAdainLatent, LTXVConditioning, LTXVFilmGrain, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVTiledSampler, LoadImage, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, SplitSigmas, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/DG_H3 单采 高清放大_2087776547884331009.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流_2087124477195931649.json]
+members: [视频生成/图生视频/【老金驿站】LTXvideo-13b高清放大工作流_1921818761756622849.json, 视频生成/图生视频/最新LTXViedo-13B IV2 极速图生视频模型动态增强稳定高清放大-StarAI_1921808405055356929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_254
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/DG_H3 单采 高清放大_2087776547884331009.json、视频生成/文生视频/MiniMax H3 导演台全能工作流_2087124477195931649.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【老金驿站】LTXvideo-13b高清放大工作流_1921818761756622849.json、视频生成/图生视频/最新LTXViedo-13B IV2 极速图生视频模型动态增强稳定高清放大-StarAI_1921808405055356929.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ImageResizeKJv2`
+- `CheckpointLoaderSimple`
+- `ImageResizeKJ`
 - `KSamplerSelect`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
+- `LTXVAdainLatent`
+- `LTXVConditioning`
+- `LTXVFilmGrain`
+- `LTXVLatentUpsampler`
+- `LTXVLatentUpsamplerModelLoader`
+- `LTXVTiledSampler`
+- `LoadImage`
 - `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEEncode`
-- `VAEEncodeAudio`
-- `VAELoader`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
+- `SplitSigmas`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `Getter` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `MiniMaxH3Director` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `Setter` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LTXVBaseSampler` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
+- `VAEEncode` —— 1/2 个有
 - `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数

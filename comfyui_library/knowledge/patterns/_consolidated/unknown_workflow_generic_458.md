@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_458
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.97375
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text]
+coverage: 0.5575
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 设计音色_2026212800921604098.json, 音频生成/音频生成/Qwen3 TTS语音生成_2015055128176369665.json, 音频生成/音频生成/Qwen3 TTS音色设计（可自定义）_2014978319221002241.json, 音频生成/音频生成/opsv-Qwen3 TTS 设计音色_2061476772725747713.json]
+members: [视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json, 视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json, 视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json, 视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json, 视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json, 视频生成/文生视频/DG(已整理)：全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1993916589173047298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_458
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 设计音色_2026212800921604098.json、音频生成/音频生成/Qwen3 TTS语音生成_2015055128176369665.json、音频生成/音频生成/Qwen3 TTS音色设计（可自定义）_2014978319221002241.json、音频生成/音频生成/opsv-Qwen3 TTS 设计音色_2061476772725747713.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json、视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json、视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json、视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json、视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `Text`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_sora2`
+- `LoadImage`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Seed` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `Text Concatenate` —— 3/6 个有
+- `Comfly_sora2_character` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `CR Text` —— 1/6 个有
 
 ## 典型参数
 

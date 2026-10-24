@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_169
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.806667
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, GetNode, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PreviewAny, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.659
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, EmptyLTXVLatentVideo, EmptyLatentImage, INTConstant, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MinimaxH3加速全能开源免费版｜文生视频图生视频通吃_2111306895595237378.json, 视频生成/文生视频/MiniMax H3加速版全能版开源SelfLift双采视频处理工具_2101757446099390466.json, 视频生成/文生视频/海螺H3加速版全能版SelfLift双采高清放大视频处理工具_2101781913726967810.json]
+members: [视频生成/图生视频/LTX2.3+MSR多主体生视频｜图生视频一键直出_2092011625753698306.json, 视频生成/图生视频/LTX2.5多参视频生成MSR2BFS图生视频工作流_2088203562252853249.json, 视频生成/图生视频/多主体生视频｜LTX2.3+MSR图生视频生成_2092155116446117890.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_169
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3加速全能开源免费版｜文生视频图生视频通吃_2111306895595237378.json、视频生成/文生视频/MiniMax H3加速版全能版开源SelfLift双采视频处理工具_2101757446099390466.json、视频生成/文生视频/海螺H3加速版全能版SelfLift双采高清放大视频处理工具_2101781913726967810.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3+MSR多主体生视频｜图生视频一键直出_2092011625753698306.json、视频生成/图生视频/LTX2.5多参视频生成MSR2BFS图生视频工作流_2088203562252853249.json、视频生成/图生视频/多主体生视频｜LTX2.3+MSR图生视频生成_2092155116446117890.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
@@ -26,42 +26,59 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `ComfyNumberConvert`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetLatentSizeAndCount`
-- `GetNode`
-- `H3SigmaRefiner`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LoraLoaderBypassModelOnly`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `SelfLiftH3Sampler`
-- `SetNode`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PromptRelayEncode`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleCalculatorKJ`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `GH_AudioVideoMerger` —— 1/3 个有
-- `GH_ImageVideoComparer` —— 1/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
-- `RH_DLSS5Enhance` —— 1/3 个有
-- `VOSR2ModelLoader` —— 1/3 个有
-- `VOSR2Upscale` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `CFGGuider` —— 2/3 个有
+- `ComfyMathExpression` —— 2/3 个有
+- `ComfySwitchNode` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LTX2MemoryEfficientSageAttentionPatch` —— 2/3 个有
+- `LTX2_NAG` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
+- `ManualSigmas` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `LTXVDualCFGGuider` —— 1/3 个有
+- `LTXVImgToVideoInplace` —— 1/3 个有
 
 ## 典型参数
 

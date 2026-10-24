@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_923
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [IndexTTS2_MultiTalk, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+frequency: 3
+level: moderate
+coverage: 0.737
+common_nodes: [EmptyImage, JjkText, LoadImage, MultiTextConcatenate, PreviewImage, PreviewTextNode, RH_RhartImageG2ImageToImage, SaveImage, Text, Text Multiline, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [音频生成/音频生成/A-19 IndexTTS2 文生音频 多人配音 最多4人 各自音色_2107503689714978817.json, 音频生成/音频生成/Easy IndexTTS2多角色对话-双人配音工作流_2094746795925659650.json]
+members: [图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_923
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/A-19 IndexTTS2 文生音频 多人配音 最多4人 各自音色_2107503689714978817.json、音频生成/音频生成/Easy IndexTTS2多角色对话-双人配音工作流_2094746795925659650.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `IndexTTS2_MultiTalk`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2_ModelManager` —— 1/2 个有
-- `IndexTTS2_SpeakerEmotionConfig` —— 1/2 个有
+全部 3 个 workflow 都包含：
+- `EmptyImage`
+- `JjkText`
+- `LoadImage`
+- `MultiTextConcatenate`
+- `PreviewImage`
+- `PreviewTextNode`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `Text`
+- `Text Multiline`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 
@@ -42,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

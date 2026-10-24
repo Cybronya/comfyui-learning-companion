@@ -3,22 +3,22 @@ name: unknown_workflow_video_16
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.846833
-common_nodes: [Any To Any, CR Prompt Text, GetVideoComponents, HunyuanVideoFoley, LayerUtility: PurgeVRAM V2, LoadVideo, MultiplePathsInput, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, easy showAnything]
+coverage: 0.8965
+common_nodes: [Any To Any, CR Prompt Text, GetVideoComponents, HunyuanVideoFoley, LoadVideo, Qwen3_VQA, VHS_SelectFilename, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Floley 音效生成_1988103459142541314.json, 音频生成/音频生成/Foley + Qwen3VL视频音效生成_2004930904340525058.json, 音频生成/音频生成/Foley-全自动-视频-音效生成-工作流-务必使用PLus模式_2002372537730383873.json, 音频生成/音频生成/Foley-全自动-视频-音效生成_1987095971106631681.json, 音频生成/音频生成/Qwen3-VL+Foley-全自动-视频音效生成_1987470194266279938.json, 音频生成/音频生成/Z-Foley-全自动-视频-音效生成_1992057230069657602.json]
+members: [音频生成/音频生成/【橘子AI】视频音效生成  Foley-Qwen 反推_1988964595618418689.json, 音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效优化版V1_2043505374543749121.json, 音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效工作流V1_1985680738127360002.json, 音频生成/音频生成/混元Foley视频自动配音效（提示增强）_2054739137890144258.json, 音频生成/音频生成/视频添加音效 混元Foley_2092948660618354689.json, 音频生成/音频生成/视频音效生成  Foley-Qwen_1988180765982769154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_16
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Floley 音效生成_1988103459142541314.json、音频生成/音频生成/Foley + Qwen3VL视频音效生成_2004930904340525058.json、音频生成/音频生成/Foley-全自动-视频-音效生成-工作流-务必使用PLus模式_2002372537730383873.json、音频生成/音频生成/Foley-全自动-视频-音效生成_1987095971106631681.json、音频生成/音频生成/Qwen3-VL+Foley-全自动-视频音效生成_1987470194266279938.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/【橘子AI】视频音效生成  Foley-Qwen 反推_1988964595618418689.json、音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效优化版V1_2043505374543749121.json、音频生成/音频生成/混元Foley+Qwen3 VL自动视频音效工作流V1_1985680738127360002.json、音频生成/音频生成/混元Foley视频自动配音效（提示增强）_2054739137890144258.json、音频生成/音频生成/视频添加音效 混元Foley_2092948660618354689.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -27,24 +27,21 @@ source: knowledge_consolidation
 - `CR Prompt Text`
 - `GetVideoComponents`
 - `HunyuanVideoFoley`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadVideo`
-- `MultiplePathsInput`
 - `Qwen3_VQA`
 - `VHS_SelectFilename`
 - `VHS_VideoCombine`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy float` —— 5/6 个有
-- `Any Switch (rgthree)` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `PreviewAny` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy textSwitch` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/6 个有
+- `MultiplePathsInput` —— 2/6 个有
+- `Int` —— 1/6 个有
+- `SaveLatent` —— 1/6 个有
+- `VAEEncode` —— 1/6 个有
+- `VAELoader` —— 1/6 个有
+- `easy anythingIndexSwitch` —— 1/6 个有
+- `easy float` —— 1/6 个有
 
 ## 典型参数
 

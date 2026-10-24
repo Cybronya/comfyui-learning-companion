@@ -3,54 +3,59 @@ name: unknown_workflow_video_sampler_vae_113
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9412
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.4654
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1932675120529821697.json, 视频生成/文生视频/1932781560670081026.json, 视频生成/文生视频/1922872818927812610.json, 视频生成/文生视频/1925183972802764801.json, 视频生成/文生视频/1924303085684838402.json]
+members: [视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json, 视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json, 视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json, 视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json, 视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_113
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/1932675120529821697.json、视频生成/文生视频/1932781560670081026.json、视频生成/文生视频/1922872818927812610.json、视频生成/文生视频/1925183972802764801.json、视频生成/文生视频/1924303085684838402.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json、视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json、视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json、视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json、视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageResizeKJ`
+- `LoadImage`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoDiffusionForcingSampler`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTeaCache`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 4/5 个有
-- `WanVideoTeaCache` —— 3/5 个有
-- `WanVideoVACEEncode` —— 3/5 个有
-- `WanVideoVACEModelSelect` —— 3/5 个有
-- `JjkText` —— 2/5 个有
-- `WanVideoEmptyEmbeds` —— 2/5 个有
-- `WanVideoLoraSelect` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `FluxResolutionNode` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `RH_Prompter` —— 1/5 个有
-- `TextCombinerTwo` —— 1/5 个有
-- `TextInput_` —— 1/5 个有
-- `easy int` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `CLIPLoader` —— 4/5 个有
+- `CLIPTextEncode` —— 4/5 个有
+- `WanVideoBlockSwap` —— 4/5 个有
+- `WanVideoTextEmbedBridge` —— 4/5 个有
+- `LoadWanVideoT5TextEncoder` —— 3/5 个有
+- `WanVideoTextEncode` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `WanVideoVRAMManagement` —— 3/5 个有
+- `LoadImageFromUrl` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

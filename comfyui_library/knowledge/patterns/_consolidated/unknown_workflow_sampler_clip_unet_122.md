@@ -1,73 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_unet_122
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.7762
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.815556
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4PromptBuilderKJ, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [LayerUtility: PurgeVRAM V2, String Literal, SDXLEmptyLatentSizePicker+, CR SDXL Aspect Ratio, easy seed]
-members: [图片生成/文生图/1910919824812507138.json, 图片生成/文生图/1914942831851466753.json, 图片生成/文生图/1951256026706333697.json, 图片生成/文生图/1952909781780598785.json, 图片生成/文生图/1952978061257076737.json]
+missing: []
+members: [图片生成/图生图/Ideogram4一键图生图_2066102111875719170.json, 图片生成/文生图/Ideogram 4 + KJ Prompt Builder可视化构图导演_2062786765001412609.json, 图片生成/文生图/Ideogram 4 内部使用版本_2071291697438478337.json, 图片生成/文生图/Ideogram 4 文生图最优实现_2070104029690159105.json, 图片生成/文生图/Ideogram 4文生图8步加速最优实现_2070104035256000514.json, 图片生成/文生图/Ideogram4 文生图-写实摄影专用工作流_2066088865739399169.json, 图片生成/文生图/Ideogram4自定义文生图_超绝美感_2064900969019822082.json, 图片生成/文生图/ideogram4 文生图 精准写实摄影 数字人_2065236680147296257.json, 图片生成/文生图/ideogram4 文生图_1943017003487543298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_122
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1910919824812507138.json、图片生成/文生图/1914942831851466753.json、图片生成/文生图/1951256026706333697.json、图片生成/文生图/1952909781780598785.json、图片生成/文生图/1952978061257076737.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Ideogram4一键图生图_2066102111875719170.json、图片生成/文生图/Ideogram 4 + KJ Prompt Builder可视化构图导演_2062786765001412609.json、图片生成/文生图/Ideogram 4 内部使用版本_2071291697438478337.json、图片生成/文生图/Ideogram 4 文生图最优实现_2070104029690159105.json、图片生成/文生图/Ideogram 4文生图8步加速最优实现_2070104035256000514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CFGOverride`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4PromptBuilderKJ`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
-- `SDXLEmptyLatentSizePicker+` —— 4/5 个有
-- `String Literal` —— 4/5 个有
-- `AddLabel` —— 3/5 个有
-- `ImageConcanate` —— 3/5 个有
-- `KSampler` —— 3/5 个有
-- `easy seed` —— 3/5 个有
-- `CLIPLoader` —— 2/5 个有
-- `QwenImageModelLoader` —— 2/5 个有
-- `RH_QwenImageGenerator` —— 2/5 个有
-- `CR SDXL Aspect Ratio` —— 1/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `HiDreamSampler` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `ModelSamplingAuraFlow` —— 1/5 个有
-- `ModelSamplingSD3` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
+- `CustomCombo` —— 5/9 个有
+- `CR Text` —— 4/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `BasicScheduler` —— 3/9 个有
+- `ModelSamplingAuraFlow` —— 3/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `GetObjectFromJson` —— 1/9 个有
+- `GetTextFromJson` —— 1/9 个有
+- `LayerColor: BrightnessContrastV2` —— 1/9 个有
+- `Light-Tool: DeserializeJsonString` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_Translator` —— 1/9 个有
+- `StringConstantMultiline` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1280x768 (1.67) | - | 4 | 75% |
-| 高度 | 1 | 1 - 1 | 4 | 100% |
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 3 | 54% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,11 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 最常用 1280x768 (1.67)，4 个样本，一致性 75%
-- 高度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、String Literal、SDXLEmptyLatentSizePicker+、CR SDXL Aspect Ratio、easy seed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

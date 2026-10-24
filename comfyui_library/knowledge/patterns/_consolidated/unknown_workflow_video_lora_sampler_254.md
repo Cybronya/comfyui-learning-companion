@@ -3,80 +3,62 @@ name: unknown_workflow_video_lora_sampler_254
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.596375
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetNode, GrowMask, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, Int, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9085
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3ExactRecover, H3InjectSchedule, H3JerkHeatmap, H3JerkOracle, H3TimeSmear, H3V2VInit, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1970037279043579906.json, 视频生成/图生视频/1969961202665332737.json, 视频生成/图生视频/2034955430325129218.json, 视频生成/图生视频/1969228156349673474.json, 视频生成/图生视频/1969558465037410306.json, 视频生成/图生视频/1969378063396073473.json, 视频生成/图生视频/1969410370047799298.json, 视频生成/图生视频/1970135564894826498.json]
+members: [视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json, 视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json, 视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json, 视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json, 视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088568398233038849.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088607540094521346.json, 视频生成/文生视频/Minimax H3拖影强化文生视频工作流_2088291098631434242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_254
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1970037279043579906.json、视频生成/图生视频/1969961202665332737.json、视频生成/图生视频/2034955430325129218.json、视频生成/图生视频/1969228156349673474.json、视频生成/图生视频/1969558465037410306.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json、视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json、视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json、视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json、视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `H3ExactRecover`
+- `H3InjectSchedule`
+- `H3JerkHeatmap`
+- `H3JerkOracle`
+- `H3TimeSmear`
+- `H3V2VInit`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `Text Multiline`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 7/8 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 7/8 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 7/8 个有
-- `MathExpression|pysssss` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `ImpactInt` —— 6/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
-- `Textbox` —— 6/8 个有
-- `WanVideoContextOptions` —— 5/8 个有
-- `easy showAnything` —— 2/8 个有
-- `Anything Everywhere` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GetImageSizeAndCount` —— 1/8 个有
-- `MaskToImage` —— 1/8 个有
-- `PixelPerfectResolution` —— 1/8 个有
-- `PointsEditor` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `VHS_VideoInfo` —— 1/8 个有
-- `VHS_VideoInfoLoaded` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
-- `easy sam3GetObjectMask` —— 1/8 个有
-- `easy sam3ModelLoader` —— 1/8 个有
-- `easy sam3VideoSegmentation` —— 1/8 个有
-- `easy sam3Visualization` —— 1/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `SaveVideo` —— 6/8 个有
+- `H3AudioRecover` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `MiniMaxH3ImageToVideo` —— 4/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `孤海注释` —— 2/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `MemoryCleaner` —— 1/8 个有
 
 ## 典型参数
 

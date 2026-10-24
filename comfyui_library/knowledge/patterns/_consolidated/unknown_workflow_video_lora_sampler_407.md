@@ -3,54 +3,59 @@ name: unknown_workflow_video_lora_sampler_407
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7508
-common_nodes: [BasicScheduler, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, ImageConcanate, JjkText, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, PrimitiveInt, SamplerCustom, SplitSigmas, TextConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8952
+common_nodes: [CFGGuider, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062860702452375553.json, 视频生成/图生视频/2062040034672467969.json, 视频生成/图生视频/Bernini多模态视频生成与编辑动作迁移动作模仿视频模仿动作复刻跳舞模仿_2062941002897387522.json, 视频生成/图生视频/2063167262584041473.json, 视频生成/图生视频/2078377798263197698.json]
+members: [视频生成/图生视频/Minimax_H3 多图参考短剧制作，加速工作流_2088187262285729793.json, 视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099764393121771521.json, 视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099848729263169538.json, 视频生成/文生视频/H3全能参考工作流_2093000289442942977.json, 视频生成/文生视频/Minimax_H3 多图参考加速工作流_2085701590907969537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_407
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2062860702452375553.json、视频生成/图生视频/2062040034672467969.json、视频生成/图生视频/Bernini多模态视频生成与编辑动作迁移动作模仿视频模仿动作复刻跳舞模仿_2062941002897387522.json、视频生成/图生视频/2063167262584041473.json、视频生成/图生视频/2078377798263197698.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Minimax_H3 多图参考短剧制作，加速工作流_2088187262285729793.json、视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099764393121771521.json、视频生成/图生视频/Minimax_H3_多图参考加速工作流_2099848729263169538.json、视频生成/文生视频/H3全能参考工作流_2093000289442942977.json、视频生成/文生视频/Minimax_H3 多图参考加速工作流_2085701590907969537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
+- `CFGGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageConcanate`
-- `JjkText`
-- `KSamplerSelect`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveInt`
-- `SamplerCustom`
-- `SplitSigmas`
-- `TextConcatenate`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 4/5 个有
+- `BasicScheduler` —— 4/5 个有
+- `KSamplerSelect` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `H3AudioRefineSampler` —— 3/5 个有
+- `H3FrozenVideoCache` —— 3/5 个有
+- `MiniMaxH3SigmaShift` —— 3/5 个有
+- `MiniMaxH3TurboSampler` —— 3/5 个有
+- `ModelAttentionBackend` —— 3/5 个有
+- `SolAttnPatch` —— 3/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

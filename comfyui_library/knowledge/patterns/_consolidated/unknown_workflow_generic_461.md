@@ -1,45 +1,41 @@
 ---
 name: unknown_workflow_generic_461
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [AudioSeparation, CR Prompt Text, HeartMuLa_Transcribe, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText]
+coverage: 0.878
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, MultiLinePromptIndex, SaveAudioMP3, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json]
+members: [视频生成/图生视频/👿IndexTTS 单-双 语音克隆 效果稳定 极速出效果👿_1954714957638201345.json, 音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json, 音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json, 音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json, 音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json, 音频生成/音频生成/🐲 IndexTTS 单_双 语音克隆 效果稳定 极速出效果🐲_1963526521779736578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_461
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/👿IndexTTS 单-双 语音克隆 效果稳定 极速出效果👿_1954714957638201345.json、音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json、音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json、音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json、音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioSeparation`
-- `CR Prompt Text`
-- `HeartMuLa_Transcribe`
+全部 6 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
 - `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText`
+- `MultiLinePromptIndex`
+- `SaveAudioMP3`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `AudioCrop` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `ShowAnything|Mie` —— 1/4 个有
+- `IndexTTS2Run` —— 4/6 个有
+- `PreviewAudio` —— 4/6 个有
+- `IndexTTSRun` —— 3/6 个有
+- `JjkText` —— 3/6 个有
+- `LoadImage` —— 3/6 个有
+- `SaveAudio` —— 3/6 个有
 
 ## 典型参数
 

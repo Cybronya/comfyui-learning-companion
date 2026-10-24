@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_542
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.8
-common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.9778
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/文生图/四宫格_分镜设计_场景设计—提示词生成_2040759095799586818.json, 视频生成/图生视频/2022496407428538369.json, 视频生成/图生视频/2039897126431363073.json]
+members: [图片生成/图生图/换脸-换装-人物替换-换头-全能图片2.0_2027966723378388993.json, 图片生成/图生图/提取线稿_2046098084769304578.json, 图片生成/图生图/白底-单图v2-4K_2048953873766817794.json, 图片生成/图生图/衣物生成3D镂空图，智能识别正反面，全能图片2.0_2020426864099074050.json, 图片生成/图生图/裤子背面平铺3D图_2026123015536250881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_542
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/四宫格_分镜设计_场景设计—提示词生成_2040759095799586818.json、视频生成/图生视频/2022496407428538369.json、视频生成/图生视频/2039897126431363073.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/换脸-换装-人物替换-换头-全能图片2.0_2027966723378388993.json、图片生成/图生图/提取线稿_2046098084769304578.json、图片生成/图生图/白底-单图v2-4K_2048953873766817794.json、图片生成/图生图/衣物生成3D镂空图，智能识别正反面，全能图片2.0_2020426864099074050.json、图片生成/图生图/裤子背面平铺3D图_2026123015536250881.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `LayerUtility: TextJoin` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `ImpactSwitch` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,59 +3,55 @@ name: unknown_workflow_video_lora_sampler_296
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.823857
-common_nodes: [CR Text, CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImpactInt, LoadWanVideoT5TextEncoder, Seed (rgthree), SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.923
+common_nodes: [CR Text, CogVideoEnhanceAVideo, CombinationText, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RH_LLMAPI_NODE, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, easy string, easy textSwitch]
 problems: []
-missing: [CR Text, Note Plus (mtb), SimpleMath+, Seed (rgthree), LayerUtility: ImageScaleByAspectRatio V2]
-members: [视频生成/图生视频/1972199974152957954.json, 视频生成/图生视频/1972673116709298177.json, 视频生成/图生视频/1972843772218396673.json, 视频生成/文生视频/1972186550123556865.json, 视频生成/文生视频/1972199974152957954.json, 视频生成/文生视频/1972673116709298177.json, 视频生成/文生视频/1972686604550774785.json]
+missing: []
+members: [视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json, 视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json, 视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json, 视频生成/图生视频/万物360度旋转_1994253220916690946.json, 视频生成/图生视频/图生视频_2000816719373496322.json, 视频生成/文生视频/360度旋转 细节保留 真实光影 超强一致 Wan2.2万物旋转 - 360度轨道镜头   万相任意_2000731719860879361.json, 视频生成/文生视频/【wan2.2】360度旋转特效+图生视频  万物旋转360度 KJ加速版_1972165939687059457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_296
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1972199974152957954.json、视频生成/图生视频/1972673116709298177.json、视频生成/图生视频/1972843772218396673.json、视频生成/文生视频/1972186550123556865.json、视频生成/文生视频/1972199974152957954.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json、视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json、视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json、视频生成/图生视频/万物360度旋转_1994253220916690946.json、视频生成/图生视频/图生视频_2000816719373496322.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CR Text`
+- `CogVideoEnhanceAVideo`
+- `CombinationText`
 - `CreateCFGScheduleFloatList`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `ImpactInt`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `Int`
+- `JWInteger`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Seed (rgthree)`
-- `SimpleMath+`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `UpscaleModelLoader` —— 6/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
-- `WanVideoImageToVideoEncode` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `Note Plus (mtb)` —— 4/7 个有
-- `INTConstant` —— 3/7 个有
-- `ImageScaleToMegapixels` —— 3/7 个有
-- `ImageUpscaleWithModel` —— 3/7 个有
-- `Anything Everywhere` —— 2/7 个有
-- `WanVideoEmptyEmbeds` —— 2/7 个有
-- `LayerUtility: PurgeVRAM` —— 1/7 个有
+- `easy showAnything`
+- `easy string`
+- `easy textSwitch`
 
 ## 典型参数
 
@@ -67,4 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Note Plus (mtb)、SimpleMath+、Seed (rgthree)、LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_controlnet_video_lora_2
 type: Unknown Workflow
-frequency: 19
+frequency: 23
 level: moderate
-coverage: 0.671684
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, NLFPredict, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.725565
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, FloatConstant, GetImageSizeAndCount, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2012926675255828482.json, 视频生成/图生视频/2000549729010319361.json, 视频生成/图生视频/2000605226488954881.json, 视频生成/图生视频/2000601327501705218.json, 视频生成/图生视频/2001380320773537793.json, 视频生成/图生视频/2001114629822705666.json, 视频生成/图生视频/2002634251973607426.json, 视频生成/图生视频/2001969039012446209.json, 视频生成/图生视频/2002968528913350658.json, 视频生成/图生视频/2001265311133429761.json, 视频生成/图生视频/2000519506155929601.json, 视频生成/图生视频/2000804833005367297.json, 视频生成/图生视频/2001144706195222530.json, 视频生成/图生视频/2001092437491712001.json, 视频生成/图生视频/2000796264725872641.json, 视频生成/图生视频/2001142236438032385.json, 视频生成/图生视频/2001090043416543233.json, 视频生成/图生视频/2000521244929818626.json, 视频生成/图生视频/2002394851083730946.json]
+members: [视频生成/文生视频/SCAIL+ 全能图片V1 Pro伪背景替换_2001645245022498817.json, 视频生成/文生视频/SCAIL单人三维姿态驱动+图像参考的长时序稳定生成_2000259341699739649.json, 视频生成/文生视频/SCAIL双人三维姿态驱动+图像参考的长时序稳定生成_2000476624699224066.json, 视频生成/文生视频/SCAIL多人三维姿态驱动+图像参考的长时序稳定生成_2001536477941121026.json, 视频生成/文生视频/SCAIL大模型一键生成小猫小狗人物跳舞视频，支持多人多动物同步舞蹈动作模仿多人跳舞_2016384929545850882.json, 视频生成/文生视频/SCAIL大模型：一键创作多人多动物（小猫小狗）跳舞视频，完成多人舞蹈动作模仿scail动作舞蹈模_2016051481216028673.json, 视频生成/文生视频/SCAIL大模型：一键创作小猫小狗人物跳舞视频，实现多动物多人跳舞动作同步模仿scail动作舞蹈模_2017441537285689346.json, 视频生成/文生视频/SCAIL大模型：一键制作小猫小狗人物跳舞视频，支持多人多动物同步动作舞蹈scail多人跳舞_2016821707603972097.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿_2017804248033009666.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2013088798573338625.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2013088815593820162.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿图生视频动作舞蹈2_2011778622335488001.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿图生视频动作舞蹈b_2012367387777044481.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人跳蹈动物跳舞_2041069353596100610.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物跳舞多人舞蹈模仿scail动作舞蹈模_2017532628030726145.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物跳舞多人舞蹈模仿scail动作舞蹈模仿_2017081200401190913.json, 视频生成/文生视频/SCAIL大模型：一键生成动物小猫小狗小马人物跳舞视频多人多动物同时跳舞多人舞蹈模仿图生视频动作舞蹈_2012072968834256897.json, 视频生成/文生视频/SCAIL大模型：一键生成多人多动物（小猫小狗人物）舞蹈模仿视频，打造同步跳舞效果，多人跳舞模仿_2015377623165177857.json, 视频生成/文生视频/SCAIL大模型：一键生成小猫小狗人物多人跳舞共舞视频，支持多人多动物舞蹈动作模仿_2016471262524084225.json, 视频生成/文生视频/SCAIL大模型：一键生成小猫小狗人物多人跳舞视频，支持多人多动物同步舞蹈动作scail舞蹈模仿_2016718585699246081.json, 视频生成/文生视频/SCAIL大模型：一键生成猫咪小狗人物多人跳舞视频，支持多动物同步动作模仿与舞蹈生成_2015620648856457217.json, 视频生成/文生视频/SCAIL大模型：生成多人多动物跳舞视频，涵盖小猫小狗人物舞蹈动作模仿scail多人跳舞_2015700081403502593.json, 视频生成/文生视频/SCAIL舞蹈视频生成工具：一键制作人物与宠物（猫狗）跳舞，实现多人多动物跳舞动作模仿_2015656406040453122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_2
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/2012926675255828482.json、视频生成/图生视频/2000549729010319361.json、视频生成/图生视频/2000605226488954881.json、视频生成/图生视频/2000601327501705218.json、视频生成/图生视频/2001380320773537793.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/文生视频/SCAIL+ 全能图片V1 Pro伪背景替换_2001645245022498817.json、视频生成/文生视频/SCAIL单人三维姿态驱动+图像参考的长时序稳定生成_2000259341699739649.json、视频生成/文生视频/SCAIL双人三维姿态驱动+图像参考的长时序稳定生成_2000476624699224066.json、视频生成/文生视频/SCAIL多人三维姿态驱动+图像参考的长时序稳定生成_2001536477941121026.json、视频生成/文生视频/SCAIL大模型一键生成小猫小狗人物跳舞视频，支持多人多动物同步舞蹈动作模仿多人跳舞_2016384929545850882.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `DownloadAndLoadNLFModel`
+- `FloatConstant`
 - `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
 - `RenderNLFPoses`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAddSCAILPoseEmbeds`
@@ -42,46 +49,30 @@ source: knowledge_consolidation
 - `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoSetLoRAs` —— 18/19 个有
-- `GetNode` —— 17/19 个有
-- `SetNode` —— 17/19 个有
-- `SimpleMath+` —— 17/19 个有
-- `WanVideoTorchCompileSettings` —— 17/19 个有
-- `ImageConcatMulti` —— 16/19 个有
-- `LoadWanVideoT5TextEncoder` —— 16/19 个有
-- `OnnxDetectionModelLoader` —— 16/19 个有
-- `PoseDetectionVitPoseToDWPose` —— 16/19 个有
-- `WanVideoSetBlockSwap` —— 16/19 个有
-- `WanVideoTextEncode` —— 16/19 个有
-- `INTConstant` —— 13/19 个有
-- `FloatConstant` —— 10/19 个有
-- `Int` —— 10/19 个有
-- `PreviewImage` —— 9/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/19 个有
-- `CR Text` —— 7/19 个有
-- `MathExpression|pysssss` —— 6/19 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 5/19 个有
-- `DWPreprocessor` —— 5/19 个有
-- `Fast Groups Muter (rgthree)` —— 3/19 个有
-- `WanVideoTextEncodeCached` —— 3/19 个有
-- `easy showAnything` —— 3/19 个有
-- `ImageFromBatch` —— 2/19 个有
-- `JjkText` —— 2/19 个有
-- `Primitive integer [Crystools]` —— 2/19 个有
-- `SimpleCalculatorKJ` —— 2/19 个有
-- `GetImage` —— 1/19 个有
-- `ImageFromBatch+` —— 1/19 个有
-- `JWInteger` —— 1/19 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/19 个有
-- `PixelPerfectResolution` —— 1/19 个有
+- `Bookmark (rgthree)` —— 19/23 个有
+- `GetNode` —— 19/23 个有
+- `MemoryCleaner` —— 19/23 个有
+- `SetNode` —— 19/23 个有
+- `WanVideoSamplerExtraArgs` —— 19/23 个有
+- `WanVideoSamplerv2` —— 19/23 个有
+- `WanVideoSchedulerv2` —— 19/23 个有
+- `WanVideoSampler` —— 4/23 个有
+- `WanVideoScheduler` —— 4/23 个有
+- `JWImageExtractFromBatch` —— 2/23 个有
+- `PreviewImage` —— 2/23 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/23 个有
+- `SaveImage` —— 2/23 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 1/23 个有
+- `DWPreprocessor` —— 1/23 个有
 
 ## 典型参数
 

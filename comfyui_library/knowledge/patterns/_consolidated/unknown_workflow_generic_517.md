@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_517
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.83
-common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_NODE, SaveImage, TextConcat, easy showAnything]
+coverage: 0.8936
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/2 旅行手账生成器_2000243378887458818.json, 图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json, 图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json]
+members: [图片生成/图生图/【换人+换装】产品自动搭配手表项链高跟鞋短裤_2039963937009049602.json, 图片生成/图生图/一键打造九宫格3D拼贴时尚海报_2040228443211698177.json, 图片生成/图生图/服装白底正面平铺图_2016688322634059777.json, 图片生成/图生图/电商白底背面平铺图_2016688297812168706.json, 图片生成/图生图/鞋子风格设计流_2062096186802266113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_517
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/2 旅行手账生成器_2000243378887458818.json、图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json、图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【换人+换装】产品自动搭配手表项链高跟鞋短裤_2039963937009049602.json、图片生成/图生图/一键打造九宫格3D拼贴时尚海报_2040228443211698177.json、图片生成/图生图/服装白底正面平铺图_2016688322634059777.json、图片生成/图生图/电商白底背面平铺图_2016688297812168706.json、图片生成/图生图/鞋子风格设计流_2062096186802266113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `TextConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `Text` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 1/5 个有
+- `ttN concat` —— 1/5 个有
 
 ## 典型参数
 

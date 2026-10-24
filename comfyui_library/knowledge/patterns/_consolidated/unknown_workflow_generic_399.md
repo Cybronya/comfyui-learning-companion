@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_399
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.865833
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2039887389845364738.json, 视频生成/图生视频/2065639949671686145.json, 视频生成/图生视频/2041786158845267970.json, 视频生成/文生视频/WAN2.7 多参考生视频_2041482681619320833.json]
+members: [图片生成/图生图/DreamFit Flux_1923377996378329090.json, 图片生成/图生图/G批T-2低价4k版图生图_2049156050623930370.json, 图片生成/图生图/NG31Flash_ImageToImage_v3.1_2033838449861599233.json, 图片生成/图生图/全能图片V2 图生图｜低价渠道版｜超强一致性_2093835944704167937.json, 图片生成/文生图/DreamFit 虚拟换装_1924656825503764482.json, 图片生成/文生图/超强生图2.0_2049852572097363970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_399
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2039887389845364738.json、视频生成/图生视频/2065639949671686145.json、视频生成/图生视频/2041786158845267970.json、视频生成/文生视频/WAN2.7 多参考生视频_2041482681619320833.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DreamFit Flux_1923377996378329090.json、图片生成/图生图/G批T-2低价4k版图生图_2049156050623930370.json、图片生成/图生图/NG31Flash_ImageToImage_v3.1_2033838449861599233.json、图片生成/图生图/全能图片V2 图生图｜低价渠道版｜超强一致性_2093835944704167937.json、图片生成/文生图/DreamFit 虚拟换装_1924656825503764482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan27ReferenceToVideo` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/4 个有
-- `Textbox` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 4/6 个有
+- `PreviewImage` —— 2/6 个有
+- `RunningHub_DreamFit_Flux` —— 2/6 个有
 
 ## 典型参数
 

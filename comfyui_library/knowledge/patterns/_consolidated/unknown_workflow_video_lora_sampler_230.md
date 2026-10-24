@@ -3,55 +3,63 @@ name: unknown_workflow_video_lora_sampler_230
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.972556
-common_nodes: [CreateCFGScheduleFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.946556
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/1962439638365376514.json, 视频生成/图生视频/1978004936166363137.json, 视频生成/图生视频/2044685944468541441.json, 视频生成/图生视频/2053674429732929538.json, 视频生成/图生视频/1965310259709493249.json, 视频生成/图生视频/1965415363951382530.json, 视频生成/图生视频/1955902508302520321.json, 视频生成/图生视频/1952744719957880834.json, 视频生成/文生视频/1950553795895939073.json]
+members: [视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json, 视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json, 视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json, 视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998839138951168.json, 视频生成/文生视频/SCAIL-2 Single-Reference Long Video Edit_2072998856218157056.json, 视频生成/文生视频/SCAIL-2 Triple Character Motion Drive_2072998837192794112.json, 视频生成/文生视频/SCAIL-2 双人生物长视频驱动_2064973862177173505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_230
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1962439638365376514.json、视频生成/图生视频/1978004936166363137.json、视频生成/图生视频/2044685944468541441.json、视频生成/图生视频/2053674429732929538.json、视频生成/图生视频/1965310259709493249.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json、视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json、视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json、视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json、视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
+- `Int`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoVAELoader`
+- `WanSCAILToVideo`
+- `easy compare`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy int`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 8/9 个有
-- `INTConstant` —— 8/9 个有
-- `LoadImage` —— 8/9 个有
-- `LoadWanVideoT5TextEncoder` —— 8/9 个有
-- `WanVideoImageToVideoEncode` —— 8/9 个有
-- `WanVideoTextEncode` —— 8/9 个有
-- `WanVideoTorchCompileSettings` —— 8/9 个有
-- `ImageResizeKJv2` —— 7/9 个有
-- `CLIPLoader` —— 3/9 个有
-- `CLIPTextEncode` —— 3/9 个有
-- `WanVideoTextEmbedBridge` —— 3/9 个有
-- `easy cleanGpuUsed` —— 2/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `SimpleMath+` —— 1/9 个有
-- `WanVideoEmptyEmbeds` —— 1/9 个有
-- `easy clearCacheAll` —— 1/9 个有
-- `easy int` —— 1/9 个有
+- `EmptyImage` —— 4/9 个有
+- `ImageCompositeMasked` —— 4/9 个有
+- `SAM3_TrackToMask` —— 4/9 个有
+- `CLIPLoaderGGUF` —— 1/9 个有
+- `UnetLoaderGGUF` —— 1/9 个有
 
 ## 典型参数
 

@@ -3,57 +3,61 @@ name: unknown_workflow_video_lora_sampler_237
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.636875
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetNode, ImageColorMatch+, ImageResizeKJv2, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2SimpleVideo, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
+coverage: 0.920375
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/S2动作迁移-20秒视频不用plus背景不会动_2097242408995082241.json, 视频生成/图生视频/2071423701639323649.json, 视频生成/图生视频/2069615585679462402.json, 视频生成/图生视频/2069666503523389441.json, 视频生成/图生视频/2070043341298954242.json, 视频生成/图生视频/Scail-2.0_2095776718383575042.json, 视频生成/图生视频/Scail-2_2095778171303059458.json, 视频生成/图生视频/pipiai-SCAIL2-超快超长视频_2071797776257732609.json]
+members: [数字人/数字人/Wan2.1单人对口型_2096760991131455490.json, 视频生成/图生视频/IndexTTS 1.5 +InfiniteTalk数字人_1983435435332575234.json, 视频生成/图生视频/Wan2.1+InfiniteTalk_单人_图片转数字人_1988813564645355522.json, 视频生成/图生视频/Wan2.1单人对口型_2064352779824623618.json, "视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json", 视频生成/图生视频/图加音频生视频_2016326225295314946.json, 视频生成/图生视频/图加音频生视频——V1_2018257190561255426.json, 视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_237
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/S2动作迁移-20秒视频不用plus背景不会动_2097242408995082241.json、视频生成/图生视频/2071423701639323649.json、视频生成/图生视频/2069615585679462402.json、视频生成/图生视频/2069666503523389441.json、视频生成/图生视频/2070043341298954242.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Wan2.1单人对口型_2096760991131455490.json、视频生成/图生视频/IndexTTS 1.5 +InfiniteTalk数字人_1983435435332575234.json、视频生成/图生视频/Wan2.1+InfiniteTalk_单人_图片转数字人_1988813564645355522.json、视频生成/图生视频/Wan2.1单人对口型_2064352779824623618.json、视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageColorMatch+`
 - `ImageResizeKJv2`
-- `Int`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2SimpleVideo`
-- `SetNode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 7/8 个有
-- `WanChunkFeedForward` —— 5/8 个有
-- `AILab_QwenVL` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `ZML_MergeText` —— 2/8 个有
-- `Float to Int` —— 1/8 个有
-- `easy mathInt` —— 1/8 个有
+- `AudioSeparation` —— 7/8 个有
+- `DownloadAndLoadWav2VecModel` —— 7/8 个有
+- `LoadAudio` —— 7/8 个有
+- `INTConstant` —— 5/8 个有
+- `WanVideoDecode` —— 5/8 个有
+- `Anything Everywhere` —— 4/8 个有
+- `AudioCrop` —— 4/8 个有
+- `GetImageSizeAndCount` —— 4/8 个有
+- `PreviewAny` —— 4/8 个有
+- `WanVideoPassImagesFromSamples` —— 3/8 个有
+- `Wav2VecModelLoader` —— 3/8 个有
+- `CR Text` —— 2/8 个有
+- `FancyTimerNode` —— 2/8 个有
+- `ImageScale` —— 2/8 个有
+- `easy getNode` —— 2/8 个有
+- `easy setNode` —— 2/8 个有
+- `IndexTTSNode` —— 1/8 个有
+- `VHS_LoadAudioUpload` —— 1/8 个有
 
 ## 典型参数
 

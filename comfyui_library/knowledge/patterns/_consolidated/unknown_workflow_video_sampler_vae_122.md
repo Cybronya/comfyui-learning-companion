@@ -1,58 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_122
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.88025
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageResizeKJ, LoadImage, VHS_VideoCombine]
+coverage: 0.9096
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1891816391639740418.json, 视频生成/图生视频/1892941621485580289.json, 视频生成/图生视频/1892483487939923969.json, 视频生成/图生视频/1900195867180281858.json]
+members: [视频生成/文生视频/Self Forcing 30秒81帧文生视频_1932675120529821697.json, 视频生成/文生视频/Self Forcing 超快文生视频_1932781560670081026.json, 视频生成/文生视频/Wan2.1 FusionX文生视频工作流_1961757456491810818.json, 视频生成/文生视频/Wan2.1(KJ)文本到视频基础工作流_1946120056569774081.json, 视频生成/文生视频/Wan21 FusionX 文生图-极速版本_1940772323597434882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_122
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1891816391639740418.json、视频生成/图生视频/1892941621485580289.json、视频生成/图生视频/1892483487939923969.json、视频生成/图生视频/1900195867180281858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Self Forcing 30秒81帧文生视频_1932675120529821697.json、视频生成/文生视频/Self Forcing 超快文生视频_1932781560670081026.json、视频生成/文生视频/Wan2.1 FusionX文生视频工作流_1961757456491810818.json、视频生成/文生视频/Wan2.1(KJ)文本到视频基础工作流_1946120056569774081.json、视频生成/文生视频/Wan21 FusionX 文生图-极速版本_1940772323597434882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
-- `ImageResizeKJ`
-- `LoadImage`
+全部 5 个 workflow 都包含：
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 3/4 个有
-- `HyVideoCFG` —— 3/4 个有
-- `HyVideoEnhanceAVideo` —— 3/4 个有
-- `HyVideoTextEncode` —— 3/4 个有
-- `DownloadAndLoadFlorence2Model` —— 2/4 个有
-- `Florence2Run` —— 2/4 个有
-- `HyVideoLoraSelect` —— 2/4 个有
-- `HyVideoTeaCache` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `StringFunction|pysssss` —— 2/4 个有
-- `HyVideoI2VEncode` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
-- `String Replace (mtb)` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `WanVideoTextEncode` —— 4/5 个有
+- `Int` —— 3/5 个有
+- `WanVideoExperimentalArgs` —— 3/5 个有
+- `WanVideoTeaCache` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `DualCLIPLoader` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `WanVideoApplyNAG` —— 1/5 个有
+- `WanVideoLoraSelectMulti` —— 1/5 个有
+- `WanVideoTextEncodeSingle` —— 1/5 个有
 
 ## 典型参数
 

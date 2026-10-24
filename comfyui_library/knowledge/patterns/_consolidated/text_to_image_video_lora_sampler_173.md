@@ -3,68 +3,46 @@ name: text_to_image_video_lora_sampler_173
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.823667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PreviewImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.589
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, ModelPreviewOverrideKJ, RHHiddenNodes, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy float, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimax首尾帧视频加速生成｜图生视频快速出片工作流_2097079966373601282.json, 视频生成/图生视频/单图生视频 MiniMax H3 图片驱动角色表演_2094228080427622401.json, 视频生成/图生视频/单图生视频版本｜MiniMax+H3角色设计表演生成_2094589153349554177.json]
+members: [视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json, 视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json, 视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_173
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax首尾帧视频加速生成｜图生视频快速出片工作流_2097079966373601282.json、视频生成/图生视频/单图生视频 MiniMax H3 图片驱动角色表演_2094228080427622401.json、视频生成/图生视频/单图生视频版本｜MiniMax+H3角色设计表演生成_2094589153349554177.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json、视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json、视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyMediaLoader`
+- `ModelPreviewOverrideKJ`
+- `RHHiddenNodes`
+- `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy float`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `ImageCrop+` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `VHS_LoadVideoFFmpeg` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `DF_Int_to_Float` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `H3SigmaRefiner` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `SolAttnPatch` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

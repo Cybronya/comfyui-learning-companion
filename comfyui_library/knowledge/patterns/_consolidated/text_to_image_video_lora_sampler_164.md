@@ -3,108 +3,166 @@ name: text_to_image_video_lora_sampler_164
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.659
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, EmptyLTXVLatentVideo, EmptyLatentImage, INTConstant, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.939667
+common_nodes: [AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CR Text, CheckpointLoaderSimple, ConditioningZeroOut, DownloadAndLoadWav2VecModel, EmptyAudio, EmptyLatentImage, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), FlashVSRNode, FluxKontextImageScale, GetImageRangeFromBatch, GetImageSizeAndCount, ImageConcanate, ImageConcatMulti, ImageFromBatch+, ImageResizeKJ, ImageResizeKJv2, ImpactInt, IndexTTS2Run, Int, KSampler, KSamplerAdvanced, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MaskPreview+, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Mute / Bypass Repeater (rgthree), PainterI2V, PathchSageAttentionKJ, PlaySound|pysssss, PreviewAny, PreviewAudio, PreviewImage, PrimitiveInt, Qwen3_VQA, QwenMultiangleCameraNode, RIFE VFI, RandomNoise, SamplerCustomAdvanced, SaveImage, SeparateMasks, ShowText|pysssss, SimpleMath+, Text, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, TwoWaySwitch, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanFirstLastFrameToVideo, WanMoeKSampler, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoNAG, WanVideoSampler, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, ZML_TextInput, easy cleanGpuUsed, easy imageConcat, easy imageRemBg, easy promptConcat, easy showAnything, wanBlockSwap]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX2.3+MSR多主体生视频｜图生视频一键直出_2092011625753698306.json, 视频生成/图生视频/LTX2.5多参视频生成MSR2BFS图生视频工作流_2088203562252853249.json, 视频生成/图生视频/多主体生视频｜LTX2.3+MSR图生视频生成_2092155116446117890.json]
+members: [图片生成/文生图/文生图高清运镜_2042074029347053569.json, 视频生成/图生视频/WH-AI-Studio新短剧生产一条龙工作流（文生图、分镜、运镜、图生视频、视频生视频、数字人等）_2027381590065680386.json, 视频生成/图生视频/WH-AI-Studio短剧生产一条龙工作流（文生图、分镜、运镜、图生视频、视频生视频、数字人等）_2025518081585451009.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_164
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3+MSR多主体生视频｜图生视频一键直出_2092011625753698306.json、视频生成/图生视频/LTX2.5多参视频生成MSR2BFS图生视频工作流_2088203562252853249.json、视频生成/图生视频/多主体生视频｜LTX2.3+MSR图生视频生成_2092155116446117890.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/文生图高清运镜_2042074029347053569.json、视频生成/图生视频/WH-AI-Studio新短剧生产一条龙工作流（文生图、分镜、运镜、图生视频、视频生视频、数字人等）_2027381590065680386.json、视频生成/图生视频/WH-AI-Studio短剧生产一条龙工作流（文生图、分镜、运镜、图生视频、视频生视频、数字人等）_2025518081585451009.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `EmptyLTXVLatentVideo`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `DownloadAndLoadWav2VecModel`
+- `EmptyAudio`
 - `EmptyLatentImage`
-- `INTConstant`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `FlashVSRNode`
+- `FluxKontextImageScale`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
-- `JjkText`
+- `ImpactInt`
+- `IndexTTS2Run`
+- `Int`
 - `KSampler`
+- `KSamplerAdvanced`
 - `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
-- `LTX2SamplingPreviewOverride`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
+- `MaskPreview+`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Mute / Bypass Repeater (rgthree)`
+- `PainterI2V`
 - `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PromptRelayEncode`
+- `PlaySound|pysssss`
+- `PreviewAny`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveInt`
+- `Qwen3_VQA`
+- `QwenMultiangleCameraNode`
+- `RIFE VFI`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SimpleCalculatorKJ`
+- `SaveImage`
+- `SeparateMasks`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TwoWaySwitch`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `VHS_VideoInfo`
+- `WanFirstLastFrameToVideo`
+- `WanMoeKSampler`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoNAG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `ZML_TextInput`
+- `easy cleanGpuUsed`
+- `easy imageConcat`
+- `easy imageRemBg`
+- `easy promptConcat`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
 - `CFGGuider` —— 2/3 个有
-- `ComfyMathExpression` —— 2/3 个有
-- `ComfySwitchNode` —— 2/3 个有
-- `DualCLIPLoader` —— 2/3 个有
-- `GetImageSizeAndCount` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `LTX2_NAG` —— 2/3 个有
-- `LTXVLatentUpsampler` —— 2/3 个有
-- `LatentUpscaleModelLoader` —— 2/3 个有
-- `ManualSigmas` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `LTXVDualCFGGuider` —— 1/3 个有
-- `LTXVImgToVideoInplace` —— 1/3 个有
+- `EmptyFlux2LatentImage` —— 2/3 个有
+- `Flux2Scheduler` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `JWStringConcat` —— 2/3 个有
+- `RMBG` —— 2/3 个有
+- `ReferenceLatent` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
+- `UpscaleImageByUsingModel` —— 2/3 个有
+- `UpscaleModelLoader` —— 2/3 个有
+- `easy promptLine` —— 2/3 个有
+- `BasicGuider` —— 1/3 个有
+- `BasicScheduler` —— 1/3 个有
+- `CR Prompt List` —— 1/3 个有
+- `DualCLIPLoader` —— 1/3 个有
+- `EG_FX_BDAPI` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `JoinStrings` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 3 | 33% |
+| Prompt 约束强度(CFG) | 6 | 1 - 8 | 3 | 41% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | 1 | - | 3 | 33% |
+| 重绘幅度 | euler_ancestral | - | 3 | 33% |
+| 宽度 | 1080 | 1080 - 1080 | 3 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，3 个样本，一致性 33%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 8，3 个样本，取值分散，一致性仅 41%
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 1，3 个样本，一致性 33%
+- 重绘幅度 最常用 euler_ancestral，3 个样本，一致性 33%
+- 宽度 中位数 1080，观测区间 1080 - 1080，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
+- 高发问题（7/3 个样本）：Steps较低可能导致细节不足

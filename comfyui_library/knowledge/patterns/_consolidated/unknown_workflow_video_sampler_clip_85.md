@@ -2,71 +2,73 @@
 name: unknown_workflow_video_sampler_clip_85
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.618429
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.501571
+common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2012914151470927874.json, 视频生成/图生视频/2012826950003331074.json, 视频生成/图生视频/2042865188126334978.json, 视频生成/图生视频/2011676327186796545.json, 视频生成/图生视频/2016912682649128961.json, 视频生成/图生视频/2001566408855154689.json, 视频生成/图生视频/1991786549960601602.json]
+members: [图片生成/图生图/AI电影一镜到底无限时长——skyreels_DF_1914826098448789506.json, 视频生成/图生视频/25-04-25 skyreels_df_生成超长视频_1915096994971586561.json, 视频生成/图生视频/For循环无限长度视频生成-SkyReels-V2_1915667745395118081.json, 视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成V1_1914710497503997953.json, 视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成_1914972676837048321.json, 视频生成/图生视频/SkyReels V2突破AI视频5秒魔咒-无限时长电影级视频_1914635301778616321.json, 视频生成/图生视频/SkyReels V2视频生成_1914863994480357378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_85
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2012914151470927874.json、视频生成/图生视频/2012826950003331074.json、视频生成/图生视频/2042865188126334978.json、视频生成/图生视频/2011676327186796545.json、视频生成/图生视频/2016912682649128961.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI电影一镜到底无限时长——skyreels_DF_1914826098448789506.json、视频生成/图生视频/25-04-25 skyreels_df_生成超长视频_1915096994971586561.json、视频生成/图生视频/For循环无限长度视频生成-SkyReels-V2_1915667745395118081.json、视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成V1_1914710497503997953.json、视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成_1914972676837048321.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJ`
+- `LoadImage`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoDiffusionForcingSampler`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoTextEmbedBridge`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 6/7 个有
-- `ModelSamplingSD3` —— 6/7 个有
-- `RIFE VFI` —— 6/7 个有
-- `ImageResizeKJv2` —— 5/7 个有
-- `LoadImage` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `WanFirstLastFrameToVideo` —— 5/7 个有
-- `ImageBatchMulti` —— 3/7 个有
-- `Int` —— 3/7 个有
+- `ImageBatchMulti` —— 6/7 个有
+- `VHS_LoadVideo` —— 6/7 个有
+- `LoadWanVideoT5TextEncoder` —— 5/7 个有
+- `WanVideoTextEncode` —— 5/7 个有
+- `WanVideoVRAMManagement` —— 4/7 个有
 - `PreviewImage` —— 3/7 个有
-- `WanMultiFrameRefToVideo` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `GetImagesFromBatchIndexed` —— 2/7 个有
-- `ImageConcatMulti` —— 2/7 个有
-- `LoadImageFromURL` —— 2/7 个有
-- `PainterI2V` —— 2/7 个有
-- `PrimitiveInt` —— 2/7 个有
-- `easy cleanGpuUsed` —— 2/7 个有
-- `FL_RIFE` —— 1/7 个有
-- `PainterI2V_Wan2_2` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `ttN seed` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 2/7 个有
+- `easy clearCacheAll` —— 2/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `String Literal` —— 1/7 个有
+- `Text Load Line From File` —— 1/7 个有
+- `easy batchAnything` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy forLoopEnd` —— 1/7 个有
+- `easy forLoopStart` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 57% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 7 | 80% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | normal | - | 7 | 71% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,8 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 57%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，7 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 normal，7 个样本，一致性 71%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

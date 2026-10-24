@@ -3,61 +3,68 @@ name: unknown_workflow_video_lora_sampler_478
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.93425
-common_nodes: [CLIPVisionLoader, CreateVideo, GetVideoComponents, ImageResizeKJv2, LoadImage, PrimitiveFloat, SaveVideo, VHS_GetImageCount, VHS_LoadVideo, Video Slice, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.938
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI动作迁移-高精细10秒版｜单次10秒不糊_2106582395486035969.json, 视频生成/图生视频/AI动作迁移-高精细版｜5秒清晰不糊_2106570630329098242.json, 视频生成/图生视频/Animate动作迁移-自动尺寸工作流_2094980950672371713.json, 视频生成/图生视频/SCAIL2动作迁移-免骨架工作流_2095006151107760130.json]
+members: [视频生成/图生视频/Aiwood全网首发2.2Fun-VACE+Controlnet+视频角色替换+首尾帧_1966481669362495490.json, 视频生成/图生视频/WAN2.2Fun-VACE+Controlnet+首尾帧_1967843382921953282.json, 视频生成/图生视频/Wan2.2-VACE首尾帧视频+动态参考+角色替换_1988214470772178945.json, 视频生成/图生视频/Wan2.2_Fun-VACE_首尾帧+动作控制+视频角色替换_1967688435714711553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_478
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI动作迁移-高精细10秒版｜单次10秒不糊_2106582395486035969.json、视频生成/图生视频/AI动作迁移-高精细版｜5秒清晰不糊_2106570630329098242.json、视频生成/图生视频/Animate动作迁移-自动尺寸工作流_2094980950672371713.json、视频生成/图生视频/SCAIL2动作迁移-免骨架工作流_2095006151107760130.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Aiwood全网首发2.2Fun-VACE+Controlnet+视频角色替换+首尾帧_1966481669362495490.json、视频生成/图生视频/WAN2.2Fun-VACE+Controlnet+首尾帧_1967843382921953282.json、视频生成/图生视频/Wan2.2-VACE首尾帧视频+动态参考+角色替换_1988214470772178945.json、视频生成/图生视频/Wan2.2_Fun-VACE_首尾帧+动作控制+视频角色替换_1967688435714711553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CreateVideo`
-- `GetVideoComponents`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `PrimitiveFloat`
-- `SaveVideo`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
-- `Video Slice`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveInt`
+- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageResizeToClosest`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BBOXToBoundingBoxKJ` —— 3/4 个有
-- `CheckpointLoaderSimple` —— 3/4 个有
-- `DrawViTPose` —— 3/4 个有
-- `OnnxDetectionModelLoader` —— 3/4 个有
-- `PoseAndFaceDetection` —— 3/4 个有
-- `SDPoseDrawKeypoints` —— 3/4 个有
-- `SDPoseKeypointExtractor` —— 3/4 个有
-- `WanVideoAnimateEmbeds` —— 3/4 个有
-- `WanVideoContextOptions` —— 3/4 个有
-- `WanVideoAddSCAILPoseEmbeds` —— 1/4 个有
-- `WanVideoAddSCAILReferenceEmbeds` —— 1/4 个有
-- `WanVideoEmptyEmbeds` —— 1/4 个有
+- `DWPreprocessor` —— 3/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `ImageCompositeMasked` —— 3/4 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `MaskToImage` —— 3/4 个有
+- `PointsEditor` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `SolidMask` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `VHS_VideoInfo` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 
 ## 典型参数
 

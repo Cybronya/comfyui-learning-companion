@@ -3,61 +3,50 @@ name: unknown_workflow_video_sampler_vae_32
 type: Unknown Workflow
 frequency: 12
 level: moderate
-coverage: 0.9125
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.968917
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json, 视频生成/图生视频/漫剧图生视频_2085003263367278593.json, 视频生成/图生视频/空中起舞_2097526794093158402.json, 视频生成/图生视频/空白工作流MinimaxH3首尾帧创意视频T1_2086623709909053442.json, 视频生成/图生视频/美好的夏天_2097286565499330561.json, 视频生成/图生视频/跳肚皮舞的女孩_2098689343039819778.json, 视频生成/图生视频/首尾帧创意电商广告_2087187752570933249.json, 视频生成/图生视频/首尾帧欢乐小狗_2087363013287432194.json, 视频生成/图生视频/首尾帧生成广告视频_2087173880573157377.json, 视频生成/图生视频/首尾帧视频生成_2086728278747996161.json, 视频生成/图生视频/香水广告_2098035698040397826.json, 视频生成/文生视频/minimax_h3_i2v w4a8-超低显存-0810_2086689468593041410.json]
+members: [视频生成/文生视频/FusionX文生视频0629_1934893611441922049.json, 视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json, 视频生成/文生视频/Wan2.1 Fusion X  文生视频NAG_1947181441907732481.json, 视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json, 视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json, 视频生成/文生视频/Wan2.1 FusionX文生视频极速版_1940968493145866242.json, 视频生成/文生视频/Wan2.1 日本美女主播直播带货视频讲解_1945637043122917377.json, 视频生成/文生视频/Wan2.1 美丽的日本歌舞表演风格的女人_1947907852955463682.json, 视频生成/文生视频/Wan2.1FusionX-超高清文生视频_1934584295552163842.json, 视频生成/文生视频/Wan2.1文生视频fusionX+NAG_1933775109922709506.json, 视频生成/文生视频/[最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json, 视频生成/文生视频/龙明Wan2.1文生视频fusionX+NAG_1935006868597350401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json、视频生成/图生视频/漫剧图生视频_2085003263367278593.json、视频生成/图生视频/空中起舞_2097526794093158402.json、视频生成/图生视频/空白工作流MinimaxH3首尾帧创意视频T1_2086623709909053442.json、视频生成/图生视频/美好的夏天_2097286565499330561.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/FusionX文生视频0629_1934893611441922049.json、视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json、视频生成/文生视频/Wan2.1 Fusion X  文生视频NAG_1947181441907732481.json、视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json、视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 10/12 个有
-- `UNETLoader` —— 10/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/12 个有
-- `ImageResizeKJv2` —— 7/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/12 个有
-- `RHHiddenNodes` —— 5/12 个有
-- `RH_Captioner` —— 5/12 个有
-- `TextConcatenate_UTK` —— 5/12 个有
-- `easy showAnything` —— 5/12 个有
-- `LoraLoaderBypassModelOnly` —— 3/12 个有
-- `MiniMaxH3BlockCacheT8` —— 3/12 个有
-- `ResolutionSelector` —— 3/12 个有
-- `Display Any (rgthree)` —— 2/12 个有
-- `EnhancedLoadDiffusionModel` —— 2/12 个有
-- `PreviewImage` —— 2/12 个有
-- `ImageScaleToTotalPixels` —— 1/12 个有
-- `PathchSageAttentionKJ` —— 1/12 个有
-- `PlaySound|pysssss` —— 1/12 个有
-- `SolAttnPatch` —— 1/12 个有
+- `ImageScaleToMegapixels` —— 11/12 个有
+- `UpscaleModelLoader` —— 11/12 个有
+- `WanVideoApplyNAG` —— 11/12 个有
+- `WanVideoSLG` —— 11/12 个有
+- `WanVideoTextEncodeSingle` —— 11/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
+- `WanVideoLoraSelect` —— 5/12 个有
+- `LoadImageFromUrl` —— 2/12 个有
+- `Note Plus (mtb)` —— 2/12 个有
+- `WanVideoTextEncode` —— 1/12 个有
+- `WanVideoTorchCompileSettings` —— 1/12 个有
 
 ## 典型参数
 

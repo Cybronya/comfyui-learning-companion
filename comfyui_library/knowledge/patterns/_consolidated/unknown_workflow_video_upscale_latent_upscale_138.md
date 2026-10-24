@@ -3,101 +3,83 @@ name: unknown_workflow_video_upscale_latent_upscale_138
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.795
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, ComfyMathExpression, Float, GetImageSize, GetNode, ImageConcatMulti, ImageResize+, JoinStrings, KSamplerSelect, LTX2MemoryEfficientSageAttentionPatch, LTX2_NAG, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PreviewAny, PreviewImage, PrimitiveFloat, ProcessString, RandomNoise, ResolutionSelector, SLASageAttention, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SomethingToString, TextInput_, UNETLoader, VAEDecode, VAEDecodeAudio, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, 孤海注释]
+coverage: 0.77
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVEnhanceAVideoKJ, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax-h3 fl2va 首尾帧 2K 二采 Qwen3.8 27B反推版V1_2085988831085551618.json, 视频生成/图生视频/Minimaxh3-ltx2.5  fl2va首尾帧4K  Qwen3.8反推 V2_2087829357170610177.json]
+members: [视频生成/图生视频/LTX2.3 三阶段采样（分辨率除4三采）_2036795915394093058.json, 视频生成/图生视频/ltx2.3 三采（测试版）_2035619730907734018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_138
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax-h3 fl2va 首尾帧 2K 二采 Qwen3.8 27B反推版V1_2085988831085551618.json、视频生成/图生视频/Minimaxh3-ltx2.5  fl2va首尾帧4K  Qwen3.8反推 V2_2087829357170610177.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 三阶段采样（分辨率除4三采）_2036795915394093058.json、视频生成/图生视频/ltx2.3 三采（测试版）_2035619730907734018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text`
-- `ComfyMathExpression`
-- `Float`
-- `GetImageSize`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResize+`
-- `JoinStrings`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LTX2MemoryEfficientSageAttentionPatch`
+- `LTX2SamplingPreviewOverride`
 - `LTX2_NAG`
-- `LTXVAddGuideMulti`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVEnhanceAVideoKJ`
+- `LTXVImgToVideoConditionOnly`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `PreviewAny`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
+- `PrimitiveBoolean`
 - `PrimitiveFloat`
-- `ProcessString`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
-- `SLASageAttention`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `SomethingToString`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `SimpleMath+`
 - `VAEDecodeTiled`
-- `VAEEncode`
-- `VAELoader`
 - `VHS_VideoCombine`
 - `easy cleanGpuUsed`
+- `easy clearCacheAll`
 - `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `InjectLatentNoise+` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LTXAVTextEncoderLoader` —— 1/2 个有
-- `LTXVAudioVAELoader` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `MiniMaxH3LatentUpscaleCombined` —— 1/2 个有
+- `CFGNorm` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `FastFilmGrain` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageSharpen` —— 1/2 个有
+- `LTXVAddGuideMulti` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVImgToVideoInplace` —— 1/2 个有
+- `LTXVScheduler` —— 1/2 个有
 - `PrimitiveStringMultiline` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `RTXVideoSuperResolution` —— 1/2 个有
+- `ResizeImageMaskNode` —— 1/2 个有
+- `ResizeImagesByLongerEdge` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VHS_PruneOutputs` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

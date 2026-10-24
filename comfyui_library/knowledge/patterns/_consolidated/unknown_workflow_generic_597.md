@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_597
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.889
-common_nodes: [RH_Wan26_T2V, SaveVideo]
+coverage: 0.94
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json, 视频生成/文生视频/wan2.6 t2v_2000818374349385729.json, 视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json]
+members: [音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json, 音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json, 音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json, 音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json, 音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_597
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json、视频生成/文生视频/wan2.6 t2v_2000818374349385729.json、视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json、音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json、音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json、音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json、音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_Wan26_T2V`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
+- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

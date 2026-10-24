@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_363
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.8545
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartVideoGImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/ComfyUI家具设计展板工作流｜草图+材质+四视图+渲染一步到位+全节点注释_2059542098587770882.json, 图片生成/文生图/pro图生图_文生图_2000852529531453442.json, 图片生成/文生图/全能图片2.0双图 2毛版_2091809107366989826.json, 视频生成/文生视频/3.2.提取（人_场）+ 分镜组_2031746525692436481.json]
+members: [视频生成/图生视频/RH 全能视频X-图生视频-低价渠道版-v1.5_2069682233727864833.json, 视频生成/图生视频/X V1.5图生视频_2061350092275281922.json, 视频生成/图生视频/全能视频X 低价图生30秒_2068345116238106625.json, 视频生成/图生视频/全能视频X 图生视频 RH低价渠道版 0.03_s_2036344430654918658.json, 视频生成/图生视频/全能视频X 图生视频0.03元_秒_2037182236088340481.json, 视频生成/图生视频/多图生视频-真人版_2057784729117749250.json, 视频生成/图生视频/多图生视频测试_2059529541651091457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_363
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/ComfyUI家具设计展板工作流｜草图+材质+四视图+渲染一步到位+全节点注释_2059542098587770882.json、图片生成/文生图/pro图生图_文生图_2000852529531453442.json、图片生成/文生图/全能图片2.0双图 2毛版_2091809107366989826.json、视频生成/文生视频/3.2.提取（人_场）+ 分镜组_2031746525692436481.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频X-图生视频-低价渠道版-v1.5_2069682233727864833.json、视频生成/图生视频/X V1.5图生视频_2061350092275281922.json、视频生成/图生视频/全能视频X 低价图生30秒_2068345116238106625.json、视频生成/图生视频/全能视频X 图生视频 RH低价渠道版 0.03_s_2036344430654918658.json、视频生成/图生视频/全能视频X 图生视频0.03元_秒_2037182236088340481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `RH_RhartVideoGImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 2/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
+- `Text` —— 4/7 个有
+- `RH_RhartVideoV31ProImageToVideo` —— 1/7 个有
+- `RH_Sora2_I2V` —— 1/7 个有
 
 ## 典型参数
 

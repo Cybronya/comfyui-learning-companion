@@ -1,36 +1,46 @@
 ---
 name: unknown_workflow_sampler_55
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8175
-common_nodes: [CR Prompt Text, LoadAudio, RunningHub StepAudioEditX ModelLoader, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.78
+common_nodes: [Fast Groups Muter (rgthree), HeartMuLa_Generate, ImpactSwitch, Int, LoadAudio, MultiLineLyrics, MultiLinePromptACES, RHHiddenNodes, RH_Suno_Custom, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2, Text Find and Replace, TextBox, Textbox, WujiCleaner]
 problems: []
 missing: []
-members: [音频生成/音频生成/Step-Audio-EditX副语言音频编辑V1_1989397962512060417.json, 音频生成/音频生成/Step-Audio-EditX语音克隆V1_1989361991288582146.json]
+members: [音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_55
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Step-Audio-EditX副语言音频编辑V1_1989397962512060417.json、音频生成/音频生成/Step-Audio-EditX语音克隆V1_1989361991288582146.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
+全部 3 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
+- `HeartMuLa_Generate`
+- `ImpactSwitch`
+- `Int`
 - `LoadAudio`
-- `RunningHub StepAudioEditX ModelLoader`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `RHHiddenNodes`
+- `RH_Suno_Custom`
 - `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `RunningHub StepAudioEditX Sampler(Clone)` —— 1/2 个有
-- `RunningHub StepAudioEditX Sampler(Paralinguistic)` —— 1/2 个有
+- `SongGeneration_Loader`
+- `SongGeneration_Sampler`
+- `SongGeneration_Stage1`
+- `SongGeneration_Stage2`
+- `Text Find and Replace`
+- `TextBox`
+- `Textbox`
+- `WujiCleaner`
 
 ## 典型参数
 
@@ -42,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

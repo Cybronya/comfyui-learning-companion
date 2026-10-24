@@ -1,68 +1,97 @@
 ---
 name: unknown_workflow_sampler_clip_unet_118
 type: Unknown Workflow
-frequency: 6
-level: weak
-coverage: 0.885667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: strong
+coverage: 0.862111
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LoadImage, MaskToSEGS, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SEGSPreview, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z image 直出高清基础流 v1_2002028004870111233.json, 图片生成/文生图/Z image 直出高清基础流 v2_2003053873344462850.json, 图片生成/文生图/Z-Image-Turbo 文生图 _ 9 节点极简模板_2086642662031060994.json, 图片生成/文生图/Z-Image-Turbo 文生图_2104866138722230274.json, 图片生成/文生图/Z-Image-Turbo基础文生图-工作流_2011542094619353089.json, 图片生成/文生图/Zimage base fp8一键出模特大片_2016314793744932866.json]
+members: [图片生成/图生图/CK-卡通3D盲盒手办玩具摆件_1919664617679949825.json, 图片生成/图生图/全能图片G-4o风格丨全网爆火人物转拍立得_1915015916936200193.json, 图片生成/图生图/卡通3D手办玩具摆件_1921883212824395777.json, 图片生成/图生图/卡通3D收藏娃娃_1937704786118774785.json, 图片生成/图生图/卡通可爱四格漫画生成工作流｜一键生图系列_1909904998782959617.json, 图片生成/图生图/参考图生成卡通可爱四宫格漫画_1918124542395617281.json, 图片生成/图生图/拍立得照片卡通形象_1912392096207306754.json, 图片生成/图生图/拍立得照片卡通形象_1913231363498278913.json, 图片生成/图生图/真人转剪纸艺术工作流_1895381354098065410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_118
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z image 直出高清基础流 v1_2002028004870111233.json、图片生成/文生图/Z image 直出高清基础流 v2_2003053873344462850.json、图片生成/文生图/Z-Image-Turbo 文生图 _ 9 节点极简模板_2086642662031060994.json、图片生成/文生图/Z-Image-Turbo 文生图_2104866138722230274.json、图片生成/文生图/Z-Image-Turbo基础文生图-工作流_2011542094619353089.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/CK-卡通3D盲盒手办玩具摆件_1919664617679949825.json、图片生成/图生图/全能图片G-4o风格丨全网爆火人物转拍立得_1915015916936200193.json、图片生成/图生图/卡通3D手办玩具摆件_1921883212824395777.json、图片生成/图生图/卡通3D收藏娃娃_1937704786118774785.json、图片生成/图生图/卡通可爱四格漫画生成工作流｜一键生图系列_1909904998782959617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LoadImage`
+- `MaskToSEGS`
+- `PreviewImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SEGSPreview`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 5/6 个有
-- `ModelSamplingAuraFlow` —— 5/6 个有
-- `Text Multiline` —— 3/6 个有
-- `CFGNorm` —— 2/6 个有
-- `Display Any (rgthree)` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `QwenImageEngineer` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
+- `RH_Captioner` —— 8/9 个有
+- `ShowText|pysssss` —— 8/9 个有
+- `easy cleanGpuUsed` —— 8/9 个有
+- `FluxResolutionNode` —— 7/9 个有
+- `JjkText` —— 7/9 个有
+- `LoraLoader` —— 7/9 个有
+- `TextCombinerTwo` —— 7/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `ApplyFBCacheOnModel` —— 2/9 个有
+- `ImageResizeKJ` —— 2/9 个有
+- `ApplyFluxControlNet` —— 1/9 个有
+- `BaiduTranslateNode` —— 1/9 个有
+- `CR Text Concatenate` —— 1/9 个有
+- `ConditioningZeroOut` —— 1/9 个有
+- `ETN_Translate` —— 1/9 个有
+- `HEDPreprocessor` —— 1/9 个有
+- `HfImageToRGB` —— 1/9 个有
+- `Image Levels Adjustment` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `LoadFluxControlNet` —— 1/9 个有
+- `MaskPreview+` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
+- `PMRF` —— 1/9 个有
+- `VAEEncode` —— 1/9 个有
+- `XlabsSampler` —— 1/9 个有
+- `easy imageRemBg` —— 1/9 个有
+- `easy positive` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 30 | 6 | 31% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 6 | 25% |
-| 采样算法 | euler | - | 6 | 67% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 768 | 768 - 1024 | 9 | 87% |
+| 高度 | 1024 | 1024 - 1024 | 9 | 100% |
+| LoRA 模型强度 | 0.85 | 0.7 - 1 | 7 | 86% |
+| LoRA 文本强度 | 0.8 | 0.7 - 1 | 7 | 85% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 30，6 个样本，取值分散，一致性仅 31%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，6 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 euler，6 个样本，一致性 67%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（5/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 768，观测区间 768 - 1024，9 个样本，取值集中（一致性 87%）
+- 高度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.85，观测区间 0.7 - 1，7 个样本，取值集中（一致性 86%）
+- LoRA 文本强度 中位数 0.8，观测区间 0.7 - 1，7 个样本，取值集中（一致性 85%）

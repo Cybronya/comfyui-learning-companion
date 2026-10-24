@@ -1,71 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_40
 type: Unknown Workflow
-frequency: 23
+frequency: 24
 level: moderate
-coverage: 0.845087
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.88725
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1995765952610447361.json, 视频生成/图生视频/1981723961920757761.json, 视频生成/图生视频/2073246385209700353.json, 视频生成/图生视频/2073246674415349762.json, 视频生成/图生视频/1960989551487594497.json, 视频生成/图生视频/1958729195713097730.json, 视频生成/图生视频/2016014882017120257.json, 视频生成/图生视频/1983918698648010754.json, 视频生成/图生视频/2026172210423013377.json, 视频生成/图生视频/2017268323733479425.json, 视频生成/图生视频/1997484530254680066.json, 视频生成/图生视频/1981983249872371714.json, 视频生成/图生视频/2015681612746330114.json, 视频生成/图生视频/1998792511760031746.json, 视频生成/图生视频/1999018182650290177.json, 视频生成/图生视频/2005664941799600130.json, 视频生成/图生视频/1980212523465084929.json, 视频生成/图生视频/2015232276317081602.json, 视频生成/图生视频/1981699993402785793.json, 视频生成/图生视频/2036305163903836161.json, 视频生成/图生视频/2046423290310303746.json, 视频生成/图生视频/2016403173090533378.json, 视频生成/图生视频/1995303342127689730.json]
+members: [视频生成/图生视频/(Insight版)Wan2.2 Lightx2v权重差异调度图生视频加速版V1_1972516468346777602.json, 视频生成/图生视频/(Insight版)Wan2.2 图生视频加速版V1_1972495972968361985.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS低噪加速版V1_1964938797580472321.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS高噪MPS低噪加速版V1_1964944086870446082.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度MPS低噪加速版V1_1964938910965055490.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度MPS高噪HPS低噪加速版V1_1964939637061992450.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度加速版V1_1964922517129449473.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度双HPS加速版V1_1964962466272825346.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度双MPS加速版V1_1964938181672095745.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频breast弹弹V2_1966515358914031618.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_2004808833312714753.json, 视频生成/图生视频/(KJ版)Wan2.2+Pusa图生视频加速版V1_1963292040106840066.json, 视频生成/图生视频/(KJ版)Wan2.2图生视频精准调度加速_1976470630323326977.json, 视频生成/图生视频/(KJ版)Wan2.2图生视频精准调度加速版V5（加速及质量提高）_1950024658970173442.json, 视频生成/图生视频/(Palingenesis版)Wan2.2 图生视频加速版V1_1972111264942059521.json, 视频生成/图生视频/(insight+ani全能视频Sv3新版)wan2.2高动态卡通动漫图生视频加速版v1_1972564669351260162.json, 视频生成/图生视频/001-(KJ版)Wan2.2高质量图生视频-优调版_1958374851545350145.json, 视频生成/图生视频/KJ流+KJ新版Lightx2v图生视频_1952379981454356482.json, 视频生成/图生视频/KJ流+图生视频 -恶灵骑士_1958329812857327618.json, 视频生成/图生视频/Lightx2v 1030 差异模型高低噪图生视频V1(手动提示词)_1984649451941806082.json, 视频生成/图生视频/Wan 图生视频breast弹弹_1968517306395570177.json, 视频生成/图生视频/Wan2.2图生视频-老照片动起来V2_1988928364830404610.json, 视频生成/图生视频/wan2.2老照片动起来复活版-图生美女视频_1989169406058049538.json, 视频生成/图生视频/【导演版】AI 短剧视频生成器——图到视频一键生成_1984149436848865282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_40
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/1995765952610447361.json、视频生成/图生视频/1981723961920757761.json、视频生成/图生视频/2073246385209700353.json、视频生成/图生视频/2073246674415349762.json、视频生成/图生视频/1960989551487594497.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（视频生成/图生视频/(Insight版)Wan2.2 Lightx2v权重差异调度图生视频加速版V1_1972516468346777602.json、视频生成/图生视频/(Insight版)Wan2.2 图生视频加速版V1_1972495972968361985.json、视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS低噪加速版V1_1964938797580472321.json、视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS高噪MPS低噪加速版V1_1964944086870446082.json、视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度MPS低噪加速版V1_1964938910965055490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 24 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 22/23 个有
-- `JWInteger` —— 22/23 个有
-- `LoadAudio` —— 21/23 个有
-- `WanVideoBlockSwap` —— 21/23 个有
-- `CR Prompt Text` —— 20/23 个有
-- `GetImageSizeAndCount` —— 20/23 个有
-- `LoadWanVideoT5TextEncoder` —— 20/23 个有
-- `PreviewAny` —— 20/23 个有
-- `WanVideoTextEncode` —— 20/23 个有
-- `JWFloat` —— 14/23 个有
-- `PreviewImage` —— 4/23 个有
-- `WanVideoTextEncodeCached` —— 3/23 个有
-- `ImageResize+` —— 2/23 个有
-- `RH_Nano_Banana_Image2Image` —— 2/23 个有
-- `RH_Translator` —— 2/23 个有
-- `VHS_LoadVideoFFmpeg` —— 2/23 个有
-- `VHS_VideoInfoLoaded` —— 2/23 个有
-- `WanVideoTorchCompileSettings` —— 2/23 个有
-- `Anything Everywhere` —— 1/23 个有
-- `Audio Duration (mtb)` —— 1/23 个有
-- `IndexTTS2Run` —— 1/23 个有
-- `JjkText` —— 1/23 个有
-- `MathExpression|pysssss` —— 1/23 个有
-- `PreviewAudio` —— 1/23 个有
-- `Text Multiline` —— 1/23 个有
-- `VHS_LoadVideo` —— 1/23 个有
+- `WanVideoBlockSwap` —— 23/24 个有
+- `WanVideoSetBlockSwap` —— 22/24 个有
+- `WanVideoSetLoRAs` —— 22/24 个有
+- `WanVideoTorchCompileSettings` —— 22/24 个有
+- `Float` —— 20/24 个有
+- `WanVideoScheduler` —— 20/24 个有
+- `WanVideoSigmaToStep` —— 20/24 个有
+- `LayerUtility: PurgeVRAM` —— 4/24 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/24 个有
+- `ImageFromBatch+` —— 3/24 个有
+- `MathExpression|pysssss` —— 3/24 个有
+- `StringToFloatList` —— 2/24 个有
+- `CR Seed` —— 1/24 个有
+- `ConditioningSetArea` —— 1/24 个有
+- `FloatToSigmas` —— 1/24 个有
+- `GetNode` —— 1/24 个有
+- `ImageScaleBy` —— 1/24 个有
+- `Int` —— 1/24 个有
+- `MuyeTextEditOutput` —— 1/24 个有
+- `RHHiddenNodes` —— 1/24 个有
+- `RIFE VFI` —— 1/24 个有
+- `SetNode` —— 1/24 个有
 
 ## 典型参数
 

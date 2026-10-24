@@ -1,85 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_31
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.706615
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 22
+level: moderate
+coverage: 0.895409
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json, 图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json, 图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json, 图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json, 图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json, 图片生成/文生图/Ideogram4智能JSON格式文生图_2064134445258596354.json, 图片生成/文生图/Ideogram4美学设计全自动文生图_2063531342176014337.json, 图片生成/文生图/Ideogram4自定义文生图_超绝美感_2064900969019822082.json, 图片生成/文生图/Ideogram4（平替MJ）文生图美学大师_2067620647542542337.json, 图片生成/文生图/[Ideogram 4 系列 01] Ideogram 4 第一课：官方 ComfyUI 工作流解析_2084558233645174785.json, 图片生成/文生图/[Ideogram 4 系列 02] Prompt Builder 解析_2084481304804024321.json, 图片生成/文生图/文生图 布局可控 Ideogram4！_2063268058420039682.json, 图片生成/文生图/设计师福音 文生图精准编辑  ideogram4_2063246111061663745.json]
+members: [图片生成/图生图/【Qwen 爆款神器】朋友圈_商业海报一键生成！_2104408211523719170.json, 图片生成/图生图/丝绸珠宝陈列LoRA-穿戴甲产品图工作流_2094452152767963138.json, 图片生成/图生图/大理石美甲摆拍-穿戴甲产品图工作流_2094401063536386049.json, 图片生成/文生图/001.Z-image生图巅峰002.文生图.json_2033717053093318658.json, 图片生成/文生图/002.Qwen编辑之王012.文生图Q版3D人物_2034643730707255297.json, 图片生成/文生图/1-图像生成 (T2I) Z-Image Turbo_ Fast Image 工作流_2053392780503859202.json, 图片生成/文生图/2029714470322315266.json, 图片生成/文生图/251207-02.Z_image_turbo文生图_1997679556008022018.json, 图片生成/文生图/3D盲盒潮玩手办-文生图_2094262553378648065.json, 图片生成/文生图/4步极速文生图Qwen-image！艾橘溪_1952538030328492034.json, 图片生成/文生图/56.tonnie-zimage文生图_1993951157917777921.json, 图片生成/文生图/Qwen 朋友圈日签海报设计 V1.0_1955900129352011777.json, 图片生成/文生图/Qwen 电商小票创意海报 工作流 V1.0_1959790560150237186.json, 图片生成/文生图/Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json, 图片生成/文生图/Qwen+朋友圈、海报设计+V1.0文生图_2100404141968412674.json, 图片生成/文生图/Qwen+朋友圈、海报设计+V1.0文生图_2100492455136288770.json, 图片生成/文生图/Qwen+朋友圈日签海报封面设计+V1.0_1999336951855579137.json, 图片生成/文生图/Qwen-image-lora-文生图工作流_1961062588018835457.json, 图片生成/文生图/Qwen-image-lora-文生图工作流_1973970749973204993.json, 图片生成/文生图/Ultimate SD 图像升频放大 Z-Image Turbo_2036815909616099329.json, 图片生成/文生图/Z Image 文生图_1993906798906327041.json, 图片生成/文生图/工作流基础系列8-QwenImage2512文生图工作流-基础向讲解此工作流_2044339209980354561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_31
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json、图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json、图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json、图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json、图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/【Qwen 爆款神器】朋友圈_商业海报一键生成！_2104408211523719170.json、图片生成/图生图/丝绸珠宝陈列LoRA-穿戴甲产品图工作流_2094452152767963138.json、图片生成/图生图/大理石美甲摆拍-穿戴甲产品图工作流_2094401063536386049.json、图片生成/文生图/001.Z-image生图巅峰002.文生图.json_2033717053093318658.json、图片生成/文生图/002.Qwen编辑之王012.文生图Q版3D人物_2034643730707255297.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **样本数**：22
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGOverride`
+全部 22 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `ConditioningZeroOut`
-- `DualModelGuider`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
-- `KSamplerSelect`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 11/13 个有
-- `PreviewAny` —— 8/13 个有
-- `PrimitiveStringMultiline` —— 8/13 个有
-- `CR Text` —— 7/13 个有
-- `GetNode` —— 6/13 个有
-- `SetNode` —— 6/13 个有
-- `CustomCombo` —— 5/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/13 个有
-- `Ideogram4PromptBuilderKJ` —— 5/13 个有
-- `Int` —— 5/13 个有
-- `PreviewImage` —— 5/13 个有
-- `LoadImage` —— 4/13 个有
-- `easy showAnything` —— 4/13 个有
-- `RHLLMChatNode` —— 3/13 个有
-- `TextGenerate` —— 3/13 个有
-- `EmptyLatentImage` —— 2/13 个有
-- `Ideogram4OptimizationsKJ` —— 2/13 个有
-- `ImpactSwitch` —— 2/13 个有
-- `RH_LLMAPI_NODE` —— 2/13 个有
-- `easy promptLine` —— 2/13 个有
-- `DeepTranslatorTextNode` —— 1/13 个有
-- `StringConcatenate` —— 1/13 个有
-- `取色器_孤海` —— 1/13 个有
+- `ModelSamplingAuraFlow` —— 19/22 个有
+- `LoraLoader` —— 14/22 个有
+- `PreviewImage` —— 12/22 个有
+- `UpscaleModelLoader` —— 10/22 个有
+- `UltimateSDUpscale` —— 8/22 个有
+- `Image Comparer (rgthree)` —— 3/22 个有
+- `ImageScaleBy` —— 2/22 个有
+- `ImageUpscaleWithModel` —— 2/22 个有
+- `LoraLoaderModelOnly` —— 2/22 个有
+- `PathchSageAttentionKJ` —— 2/22 个有
+- `Text` —— 2/22 个有
+- `VAEEncode` —— 2/22 个有
+- `Seed (rgthree)` —— 1/22 个有
+- `easy cleanGpuUsed` —— 1/22 个有
+- `easy promptList` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+| LoRA 模型强度 | 0.9 | 0.8 - 1 | 14 | 89% |
+| LoRA 文本强度 | 1 | 0.8 - 1 | 14 | 89% |
+| 采样步数 | 25 | 4 - 50 | 21 | 43% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 7 | 21 | 34% |
+| 采样算法 | euler | - | 21 | 86% |
+| 调度器 | simple | - | 21 | 81% |
+| 重绘幅度 | 1 | 0.15 - 1 | 21 | 81% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 14/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.9，观测区间 0.8 - 1，14 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 1，观测区间 0.8 - 1，14 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 25，观测区间 4 - 50，21 个样本，取值分散，一致性仅 43%
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 7，21 个样本，取值分散，一致性仅 34%
+- 采样算法 最常用 euler，21 个样本，一致性 86%
+- 调度器 最常用 simple，21 个样本，一致性 81%
+- 重绘幅度 中位数 1，观测区间 0.15 - 1，21 个样本，取值集中（一致性 81%）
+- 高发问题（14/22 个样本）：Steps较低可能导致细节不足

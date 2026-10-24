@@ -3,77 +3,70 @@ name: unknown_workflow_controlnet_video_lora_35
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6165
-common_nodes: [Bjornulf_ShowInt, CLIPVisionLoader, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewImage, Primitive string [Crystools], RHBatchImages:, RHExtractImage, RHUploadZip, RenderNLFPoses, SaveImage, SetNode, SimpleCalculatorKJ, TT_img_enc, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.896
+common_nodes: [Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DF_Int_to_Float, DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, DownloadAndLoadWav2VecModel, Florence2Run, Florence2toCoordinates, GrowMaskWithBlur, INTConstant, ImageResizeKJv2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, MaskPreview+, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Sam2Segmentation, Text, VHS_DuplicateImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2011633491498246146.json, 视频生成/图生视频/2027971895844413441.json]
+members: [视频生成/图生视频/图生视频 _ 多角色对话_交替对话__1995300923469705218.json, 视频生成/图生视频/图生视频 _ 多角色对话_单人说话__1995137111139528706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2011633491498246146.json、视频生成/图生视频/2027971895844413441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频 _ 多角色对话_交替对话__1995300923469705218.json、视频生成/图生视频/图生视频 _ 多角色对话_单人说话__1995137111139528706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
+- `Audio Duration (mtb)`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `GetImageSizeAndCount`
-- `GetNode`
+- `DF_Int_to_Float`
+- `DownloadAndLoadFlorence2Model`
+- `DownloadAndLoadSAM2Model`
+- `DownloadAndLoadWav2VecModel`
+- `Florence2Run`
+- `Florence2toCoordinates`
+- `GrowMaskWithBlur`
 - `INTConstant`
-- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewImage`
-- `Primitive string [Crystools]`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RenderNLFPoses`
-- `SaveImage`
-- `SetNode`
-- `SimpleCalculatorKJ`
-- `TT_img_enc`
-- `VHS_LoadVideo`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MaskBatchMulti`
+- `MaskPreview+`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Sam2Segmentation`
+- `Text`
+- `VHS_DuplicateImages`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadNLFModel` —— 1/2 个有
-- `LoadNLFModel` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `EmptyAudio` —— 1/2 个有
 
 ## 典型参数
 

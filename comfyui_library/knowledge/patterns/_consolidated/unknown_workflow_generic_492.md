@@ -1,35 +1,44 @@
 ---
 name: unknown_workflow_generic_492
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.611
-common_nodes: [ResolutionSelector, SaveImage, b0e5ca93-2731-42b9-8e0a-d28ea851ff81]
+coverage: 0.719
+common_nodes: [JjkText, LayerUtility: ColorImage V2, LayerUtility: ImageBlendAdvance V3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json]
+members: [图片生成/图生图/1125_450的18个国家_2054428186565464065.json, 图片生成/图生图/1125_450的18个国际_2054401236731998209.json, 图片生成/图生图/image-2-生图_2049454954556956674.json, 图片生成/图生图/image-2-生图_2052309530624700417.json, 图片生成/图生图/image-2-生图_2052312920909983746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_492
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/1125_450的18个国家_2054428186565464065.json、图片生成/图生图/1125_450的18个国际_2054401236731998209.json、图片生成/图生图/image-2-生图_2049454954556956674.json、图片生成/图生图/image-2-生图_2052309530624700417.json、图片生成/图生图/image-2-生图_2052312920909983746.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ResolutionSelector`
+全部 5 个 workflow 都包含：
+- `JjkText`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageBlendAdvance V3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `b0e5ca93-2731-42b9-8e0a-d28ea851ff81`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
+- `BatchTextReplace` —— 3/5 个有
+- `GetImageSize` —— 3/5 个有
+- `CR Text` —— 2/5 个有
+- `CR Text Replace` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

@@ -7,13 +7,13 @@ coverage: 0.598
 common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, FloatToSigmas, GetNode, INTConstant, ImageResizeKJv2, ImageScaleBy, KSampler, KSamplerSelect, LTXVConditioning, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVLoopingSampler, LTXVTiledVAEDecode, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MultiPromptProvider, PathchSageAttentionKJ, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, SetNode, StringToFloatList, UNETLoader, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/1947851096858472450.json, 视频生成/图生视频/1950513192411844609.json, 视频生成/图生视频/1948658851380887554.json]
+members: [视频生成/图生视频/ltxv-13b-i2v高速生成+独家放大工作流_1947851096858472450.json, 视频生成/图生视频/ltxv-13b-i2v高速生成+独家放大工作流_1950513192411844609.json, 视频生成/图生视频/ltxv图生视频+wan2.1视频放大_1948658851380887554.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1947851096858472450.json、视频生成/图生视频/1950513192411844609.json、视频生成/图生视频/1948658851380887554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/ltxv-13b-i2v高速生成+独家放大工作流_1947851096858472450.json、视频生成/图生视频/ltxv-13b-i2v高速生成+独家放大工作流_1950513192411844609.json、视频生成/图生视频/ltxv图生视频+wan2.1视频放大_1948658851380887554.json）
 
 - **类型**：Image To Image
 - **样本数**：3

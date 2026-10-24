@@ -1,66 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_121
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.444
-common_nodes: [Anything Everywhere, BasicScheduler, CLIPLoader, CLIPTextEncode, ClownOptions_ExtraOptions_Beta, ClownsharKSampler_Beta, ClownsharkChainsampler_Beta, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageStitch, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, ResizeImageMaskNode, ResolutionSelector, SaveImage, Seed (rgthree), SetNode, SharkOptions_Beta, SigmasPreview, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
+coverage: 0.9725
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Text Replace, DisableNoise, DualCLIPLoader, EG_TC_Node, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Int, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, SplitSigmasDenoise, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Krea 2 深度探索：从控制结果，到控制过程 _ Controlling the Generati_2078072383788896258.json, 图片生成/文生图/Krea_2_深度探索_从控制结果，到控制过程_Controlling_the_Generati_2080936885467312130.json, 视频生成/图生视频/Krea+2+深度探索：从控制结果，到控制过程+_+Controlling+the+Generati_2088072723561009153.json]
+members: [图片生成/图生图/F1.极度真实日常生活照小红书超写实生活照3.0_1906155298510540801.json, 图片生成/图生图/小红书网感美女 双图融合  模特套图_2037782440806191106.json, 图片生成/文生图/小红书高质量美女图 网感美女 轻松涨粉_2034169411594100738.json, 图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_121
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea 2 深度探索：从控制结果，到控制过程 _ Controlling the Generati_2078072383788896258.json、图片生成/文生图/Krea_2_深度探索_从控制结果，到控制过程_Controlling_the_Generati_2080936885467312130.json、视频生成/图生视频/Krea+2+深度探索：从控制结果，到控制过程+_+Controlling+the+Generati_2088072723561009153.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/F1.极度真实日常生活照小红书超写实生活照3.0_1906155298510540801.json、图片生成/图生图/小红书网感美女 双图融合  模特套图_2037782440806191106.json、图片生成/文生图/小红书高质量美女图 网感美女 轻松涨粉_2034169411594100738.json、图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ClownOptions_ExtraOptions_Beta`
-- `ClownsharKSampler_Beta`
-- `ClownsharkChainsampler_Beta`
+- `CR Text Replace`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `EG_TC_Node`
 - `EmptyLatentImage`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageStitch`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `Int`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoader`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `SharkOptions_Beta`
-- `SigmasPreview`
+- `ShowText|pysssss`
+- `SplitSigmasDenoise`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
+
+**可变部分**（部分 workflow 才有）：
+- `ArgosTranslateTextNode` —— 3/4 个有
+- `ApplyPulidFlux` —— 1/4 个有
+- `FloatSlider` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `PortraitMaster_中文版` —— 1/4 个有
+- `PulidFluxEvaClipLoader` —— 1/4 个有
+- `PulidFluxInsightFaceLoader` —— 1/4 个有
+- `PulidFluxModelLoader` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
-| 采样步数 | bong_tangent | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 2 | 2 - 2 | 3 | 100% |
-| 采样算法 | -1 | -1 - -1 | 3 | 100% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 512 | 512 - 512 | 4 | 100% |
+| 高度 | 512 | 512 - 512 | 4 | 100% |
+| LoRA 模型强度 | 0.2 | 0.2 - 0.5 | 4 | 53% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -68,10 +77,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 bong_tangent，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 -1，观测区间 -1 - -1，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.2，观测区间 0.2 - 0.5，4 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

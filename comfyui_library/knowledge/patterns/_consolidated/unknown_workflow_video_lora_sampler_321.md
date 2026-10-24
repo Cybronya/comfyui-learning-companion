@@ -2,63 +2,59 @@
 name: unknown_workflow_video_lora_sampler_321
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.965
-common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, SimpleMath+, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, wanBlockSwap]
+level: moderate
+coverage: 0.964714
+common_nodes: [CreateCFGScheduleFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1967569328524664834.json, 视频生成/图生视频/2017158132522295297.json, 视频生成/图生视频/2047219095740878849.json, 视频生成/图生视频/2021611971048640514.json, 视频生成/图生视频/2046770688064753666.json, 视频生成/图生视频/2052569740140392450.json, 视频生成/文生视频/WAN2.2GGUF终极加速_1982992575873331201.json]
+members: [视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json, 视频生成/图生视频/【橘子AI】Wan 图生视频工作流 -KJ_1978004936166363137.json, 视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2044685944468541441.json, 视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2053674429732929538.json, 视频生成/图生视频/图转视频-Wan2.2首尾帧Kijai版好用_1965310259709493249.json, 视频生成/图生视频/自己用：Wan2.2首尾帧_1955902508302520321.json, 视频生成/文生视频/Wan2.2文生视频-告别PPT式电视剧_1950553795895939073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_321
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1967569328524664834.json、视频生成/图生视频/2017158132522295297.json、视频生成/图生视频/2047219095740878849.json、视频生成/图生视频/2021611971048640514.json、视频生成/图生视频/2046770688064753666.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json、视频生成/图生视频/【橘子AI】Wan 图生视频工作流 -KJ_1978004936166363137.json、视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2044685944468541441.json、视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2053674429732929538.json、视频生成/图生视频/图转视频-Wan2.2首尾帧Kijai版好用_1965310259709493249.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
+- **可信度**：中等可信
 - **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DF_Integer`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `SimpleMath+`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAELoader`
+- `CreateCFGScheduleFloatList`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanMoeKSampler`
-- `wanBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FILM VFI` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `Float` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `WanFirstLastFrameToVideo` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `GetImageSizeAndCount` —— 6/7 个有
+- `INTConstant` —— 6/7 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `WanVideoImageToVideoEncode` —— 6/7 个有
+- `WanVideoTextEncode` —— 6/7 个有
+- `CLIPLoader` —— 3/7 个有
+- `CLIPTextEncode` —— 3/7 个有
+- `WanVideoTextEmbedBridge` —— 3/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `WanVideoEmptyEmbeds` —— 1/7 个有
 - `easy clearCacheAll` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 71% |
-| Prompt 约束强度(CFG) | 4 | 4 - 5 | 7 | 92% |
-| 采样算法 | 1 | 1 - 1.5 | 7 | 84% |
-| 调度器 | 1 | 1 - 1 | 7 | 100% |
-| 重绘幅度 | euler | - | 7 | 86% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 71%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 5，7 个样本，取值集中（一致性 92%）
-- 采样算法 中位数 1，观测区间 1 - 1.5，7 个样本，取值集中（一致性 84%）
-- 调度器 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler，7 个样本，一致性 86%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

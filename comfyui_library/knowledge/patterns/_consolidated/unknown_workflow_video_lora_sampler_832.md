@@ -3,73 +3,60 @@ name: unknown_workflow_video_lora_sampler_832
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5325
-common_nodes: [ApplyFaceProcessor, BlockifyMask, CLIPVisionLoader, ConvertAny2Float, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, FaceProcessorLoader, FrameSelector, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewAudio, Sam2Segmentation, SetNode, SoundFlow_SetLength, Textbox, VHS_LoadVideo, VHS_VideoCombine, VideoInputPreprocessor, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, ttN float]
+coverage: 0.627
+common_nodes: [Any Switch (rgthree), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Float, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, PrimitiveStringMultiline, Qwen3_VQA, SaveAudio, SetNode, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1999863444146974722.json, 视频生成/图生视频/1970903768109850626.json]
+members: [视频生成/图生视频/soulx合成语音+infintetalk合成数字人_1985626915035914241.json, 音频生成/音频生成/你的数字人能说河南话，稳定的输出_1987756118204198914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_832
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1999863444146974722.json、视频生成/图生视频/1970903768109850626.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/soulx合成语音+infintetalk合成数字人_1985626915035914241.json、音频生成/音频生成/你的数字人能说河南话，稳定的输出_1987756118204198914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `BlockifyMask`
+- `Any Switch (rgthree)`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `ConvertAny2Float`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `FaceProcessorLoader`
-- `FrameSelector`
-- `GetImageSizeAndCount`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
 - `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `Int`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `PreviewAudio`
-- `Sam2Segmentation`
+- `PrimitiveStringMultiline`
+- `Qwen3_VQA`
+- `SaveAudio`
 - `SetNode`
-- `SoundFlow_SetLength`
-- `Textbox`
-- `VHS_LoadVideo`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `StringConcatenate`
 - `VHS_VideoCombine`
-- `VideoInputPreprocessor`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy int`
 - `easy showAnything`
-- `ttN float`
-
-**可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `PoseDetectionOneToAllAnimation` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
 
 ## 典型参数
 

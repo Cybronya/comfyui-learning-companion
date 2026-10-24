@@ -3,77 +3,74 @@ name: unknown_workflow_video_lora_sampler_684
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.683667
-common_nodes: [Audio Duration (mtb), BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DownloadAndLoadWav2VecModel, DrawMaskOnImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PointsEditor, PreviewAny, ReverseImageBatch, Sam2Segmentation, SetNode, SimpleMath+, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.579
+common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, EmptyImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018290540470607873.json, 视频生成/图生视频/2027669191704186881.json, 视频生成/图生视频/2007293154239713282.json]
+members: [视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换V2版🤩_1975078914978656258.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换🤩_1969652122914594818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_684
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2018290540470607873.json、视频生成/图生视频/2027669191704186881.json、视频生成/图生视频/2007293154239713282.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json、视频生成/图生视频/🤩Animate最强王炸—人物角色替换V2版🤩_1975078914978656258.json、视频生成/图生视频/🤩Animate最强王炸—人物角色替换🤩_1969652122914594818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
 - `BlockifyMask`
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DownloadAndLoadWav2VecModel`
+- `CR Text`
 - `DrawMaskOnImage`
-- `GetImageRangeFromBatch`
+- `EmptyImage`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
+- `GrowMask`
 - `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PointsEditor`
-- `PreviewAny`
-- `ReverseImageBatch`
-- `Sam2Segmentation`
+- `ImpactInt`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LoadImage`
 - `SetNode`
 - `SimpleMath+`
-- `ToInt`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GrowMask` —— 2/3 个有
-- `LayerMask: MaskGrow` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy sam3ModelLoader` —— 2/3 个有
-- `easy sam3VideoSegmentation` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `ACE_TextGoogleTranslate` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `RunningHub Deepcleaner` —— 1/3 个有
+- `DrawViTPose` —— 2/3 个有
+- `Note Plus (mtb)` —— 2/3 个有
+- `OnnxDetectionModelLoader` —— 2/3 个有
+- `PoseAndFaceDetection` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DownloadAndLoadWav2VecModel` —— 1/3 个有
+- `FaceMaskFromPoseKeypoints` —— 1/3 个有
+- `ImageCropByMaskAndResize` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `PixelPerfectResolution` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

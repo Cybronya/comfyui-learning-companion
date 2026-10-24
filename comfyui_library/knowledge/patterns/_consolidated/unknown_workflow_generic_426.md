@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_426
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.9475
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.861
+common_nodes: [LoadImage, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json, 视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json, 视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json]
+members: [图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json, 图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json, 图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json, 图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json, 图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json, 图片生成/文生图/竖屏九宫格直接出图（老程）_2016304604631277570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_426
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Global Mini 全能参考多模态视频｜支持4K｜文生视频｜图生视频｜视频参考_2097681275908870146.json、视频生成/文生视频/Seedance 2.0 Global 多模态全能参考视频｜图生视频｜视频生视频_2097613593104699394.json、视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图像pro：图像编辑，指令驱动，像素级掌控你的创意！_1991539971305717761.json、图片生成/文生图/25宫格分镜工作流（老程）_2019672862499540993.json、图片生成/文生图/为所欲为 全能图像2.0 pro 万能图像编辑  指令驱动 像素级放大_2035916836281257985.json、图片生成/文生图/九宫格分镜-横（老程）_2019669394183426049.json、图片生成/文生图/九宫格竖版分镜（老程）_2019671241895976961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `PreviewAny`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 3/4 个有
-- `MuyeTextEditOutput` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 4/6 个有
+- `Qwen3VL_Chat` —— 2/6 个有
 
 ## 典型参数
 

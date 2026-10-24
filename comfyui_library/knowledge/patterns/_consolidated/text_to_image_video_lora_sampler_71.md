@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_71
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.7135
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8315
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/多图参考带货视频｜MiniMax-H3数字人倾情出镜_2096572891126124546.json, 视频生成/图生视频/多图参考生视频｜MiniMax H3图生视频_2090451614204252162.json, 视频生成/图生视频/多图参考生视频｜MiniMax H3图生视频一键直出_2090274287373611010.json, 视频生成/图生视频/开源多参考优化版｜MiniMax H3角色一致性生视频_2094474289755021314.json, 视频生成/图生视频/数字人视频带货｜MiniMax-H3多图参考生视频制作_2096314183389372417.json, 视频生成/图生视频/深度视频参考动作迁移｜H3视频图生视频直出_2091029816312156162.json, 视频生成/图生视频/深度视频参考动作迁移｜H3视频生视频生成_2091213094801465345.json, 视频生成/图生视频/满血FP16+剪枝int8二采｜MinimaxH3浅空间放大v4_2093250532080185346.json, 视频生成/图生视频/满血FP16剪枝int8加速｜MinimaxH3浅空间放大二采v4_2093092897481650178.json, 视频生成/图生视频/音频驱动数字人｜MiniMax H3图生视频口播直出_2090205102572400642.json]
+members: [视频生成/图生视频/MinimaxH3图生视频指定音乐-高清视频生成工作流_2087398733066625026.json, 视频生成/图生视频/T2V文生视频加速流AITUDOU MiniMax H3图生视频工作流_2088399160956510209.json, 视频生成/图生视频/T2V文生视频加速流｜AITUDOU-MiniMax H3图生视频工作流_2088378615552634882.json, 视频生成/图生视频/T2首尾帧官方指南｜MInimaxH3提示词自动扩写生成_2094777866826371074.json, 视频生成/图生视频/T3官方指南首尾帧｜MInimaxH3提示词自动扩写分镜_2095062492773961730.json, 视频生成/图生视频/T7官方指南首尾帧｜MInimaxH3提示词自动扩写分镜出图_2094772557869309953.json, 视频生成/图生视频/T8全参官方指南｜minimaxh3扩展提示词角色一致性生视频_2094463893199482882.json, 视频生成/图生视频/官方提示词指南自动扩写T1｜MInimaxH3首尾帧图生视频_2095791903588569089.json, 视频生成/图生视频/提示词指南自动扩写T7｜MinimaxH3首尾帧分镜出图_2091166611460939778.json, 视频生成/图生视频/美好的夏天｜图生视频把夏日照片变成会动的回忆短片_2097543142554820609.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_71
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/多图参考带货视频｜MiniMax-H3数字人倾情出镜_2096572891126124546.json、视频生成/图生视频/多图参考生视频｜MiniMax H3图生视频_2090451614204252162.json、视频生成/图生视频/多图参考生视频｜MiniMax H3图生视频一键直出_2090274287373611010.json、视频生成/图生视频/开源多参考优化版｜MiniMax H3角色一致性生视频_2094474289755021314.json、视频生成/图生视频/数字人视频带货｜MiniMax-H3多图参考生视频制作_2096314183389372417.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3图生视频指定音乐-高清视频生成工作流_2087398733066625026.json、视频生成/图生视频/T2V文生视频加速流AITUDOU MiniMax H3图生视频工作流_2088399160956510209.json、视频生成/图生视频/T2V文生视频加速流｜AITUDOU-MiniMax H3图生视频工作流_2088378615552634882.json、视频生成/图生视频/T2首尾帧官方指南｜MInimaxH3提示词自动扩写生成_2094777866826371074.json、视频生成/图生视频/T3官方指南首尾帧｜MInimaxH3提示词自动扩写分镜_2095062492773961730.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
@@ -32,12 +32,11 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -47,39 +46,27 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 8/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `SetNode` —— 8/10 个有
-- `LTXVConcatAVLatent` —— 7/10 个有
-- `LTXVSeparateAVLatent` —— 7/10 个有
-- `PrimitiveFloat` —— 7/10 个有
-- `MinimaxH3LatentUpscaler3D` —— 6/10 个有
-- `Text` —— 6/10 个有
-- `VHS_LoadVideo` —— 5/10 个有
-- `easy cleanGpuUsed` —— 5/10 个有
-- `LoadAudio` —— 4/10 个有
-- `Divide [DVB]` —— 3/10 个有
-- `FlashVSRNode` —— 3/10 个有
-- `Float` —— 3/10 个有
-- `ImageResizeKJv2` —— 3/10 个有
-- `Int` —— 3/10 个有
-- `JWInteger` —— 3/10 个有
-- `SigmasGraph` —— 3/10 个有
-- `SplitSigmas` —— 3/10 个有
-- `H3SigmaRefiner` —— 2/10 个有
-- `ManualSigmas` —— 2/10 个有
-- `ModelAttentionBackend` —— 2/10 个有
-- `ModelPreviewOverrideKJ` —— 2/10 个有
-- `PathchSageAttentionKJ` —— 2/10 个有
-- `Text Multiline` —— 2/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `PlaySound|pysssss` —— 1/10 个有
-- `PreviewAny` —— 1/10 个有
-- `RH_LLMAPI_Pro_Node` —— 1/10 个有
-- `SoundFlow_GetLength` —— 1/10 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/10 个有
-- `ZNGB_AudioCrop` —— 1/10 个有
-- `easy float` —— 1/10 个有
+- `MiniMaxH3ImageToVideo` —— 9/10 个有
+- `LoadImage` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `RHHiddenNodes` —— 7/10 个有
+- `easy showAnything` —— 6/10 个有
+- `ImageResizeKJv2` —— 5/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
+- `ResolutionSelector` —— 3/10 个有
+- `GetNode` —— 2/10 个有
+- `MiniMaxH3BlockCacheT8` —— 2/10 个有
+- `RH_Captioner` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `1hew_AudioDuration` —— 1/10 个有
+- `AudioMerge` —— 1/10 个有
+- `Bjornulf_ShowFloat` —— 1/10 个有
+- `ImageConcatenateMulti_UTK` —— 1/10 个有
+- `LoadVideoUI` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `SaveVideoRGBA` —— 1/10 个有
+- `TextConcatenate_UTK` —— 1/10 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,64 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_219
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.81
-common_nodes: [ApplyPulidFlux, ApplyTeaCachePatch, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxForwardOverrider, FluxGuidance, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SDXLEmptyLatentSizePicker+, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.926167
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR Simple Image Compare, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, SDXLEmptyLatentSizePicker+]
-members: [图片生成/文生图/1954387597353205762.json, 图片生成/文生图/1965464010881646594.json]
+missing: []
+members: [图片生成/图生图/角色四视图-klein9b_2083577051046567937.json, 图片生成/图生图/角色正视图和三视图_2100255300451397633.json, 图片生成/图生图/（Supermate收藏）Klein9B深度+线稿+法线+硬边缘控制图片编辑_2082068130804887553.json, 图片生成/图生图/👾怪獸-Flux2Klein 去水印马赛克👾_2047809913426022401.json, 图片生成/图生图/🦄Klein9B姿态变换🎯天下无腰_2092246348958617602.json, 图片生成/文生图/Flux2-Klein 多图编辑工作流_2012031209374748673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_219
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1954387597353205762.json、图片生成/文生图/1965464010881646594.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/角色四视图-klein9b_2083577051046567937.json、图片生成/图生图/角色正视图和三视图_2100255300451397633.json、图片生成/图生图/（Supermate收藏）Klein9B深度+线稿+法线+硬边缘控制图片编辑_2082068130804887553.json、图片生成/图生图/👾怪獸-Flux2Klein 去水印马赛克👾_2047809913426022401.json、图片生成/图生图/🦄Klein9B姿态变换🎯天下无腰_2092246348958617602.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `ApplyTeaCachePatch`
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxForwardOverrider`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
 - `RandomNoise`
-- `SDXLEmptyLatentSizePicker+`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Simple Image Compare` —— 1/2 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
-- `LoadImageAsMaskFromUrl` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `GetImageSize` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `Flux2Scheduler` —— 4/6 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `ImageScaleToTotalPixels` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `AIO_Preprocessor` —— 2/6 个有
+- `BasicScheduler` —— 2/6 个有
+- `ConditioningZeroOut` —— 2/6 个有
+- `AddLabel` —— 1/6 个有
+- `ImagePadForOutpaint` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `JWImageResizeByLongerSide` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `ResolutionSelector` —— 1/6 个有
+- `TextBox` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 832x1152 (0.72) | - | 2 | 100% |
-| 高度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,7 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 最常用 832x1152 (0.72)，2 个样本，一致性 100%
-- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Simple Image Compare、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: JoyCaptionBeta1、LayerUtility: LoadJoyCaptionBeta1Model、SDXLEmptyLatentSizePicker+
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

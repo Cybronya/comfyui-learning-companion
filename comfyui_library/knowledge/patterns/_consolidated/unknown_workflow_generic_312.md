@@ -1,37 +1,44 @@
 ---
 name: unknown_workflow_generic_312
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8054
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.363571
+common_nodes: [CR Text Replace, ImpactSwitch, JjkText, LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage, TextInput_]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json, 视频生成/文生视频/Wan 3.0多参视频生成+全节点注释_2091887688264802306.json, 视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json]
+members: [图片生成/图生图/10自定义动作_2043685173253906434.json, 图片生成/图生图/【进阶版】人物模特自定义换姿势 人脸保持一致性 电商卖家首选 适合服装 鞋帽 箱包 内衣等电商带货_2043976555403157506.json, 图片生成/图生图/图生图  套图 预设动作选择 自定义动作_2043658319826526210.json, 图片生成/图生图/图生图 洗图 角色表演 模特表演 模特拍摄姿势_2043705080125333506.json, 图片生成/图生图/图生图 短剧分镜 人物动作 自定义动作_2043677794185519105.json, 图片生成/图生图/洗图 重绘 图生图 人物动作 自定义动作_2043619127062958081.json, 图片生成/图生图/预设动作选择 自定义动作_2038442415832440834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_312
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json、视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json、视频生成/文生视频/Wan 3.0多参视频生成+全节点注释_2091887688264802306.json、视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/10自定义动作_2043685173253906434.json、图片生成/图生图/【进阶版】人物模特自定义换姿势 人脸保持一致性 电商卖家首选 适合服装 鞋帽 箱包 内衣等电商带货_2043976555403157506.json、图片生成/图生图/图生图  套图 预设动作选择 自定义动作_2043658319826526210.json、图片生成/图生图/图生图 洗图 角色表演 模特表演 模特拍摄姿势_2043705080125333506.json、图片生成/图生图/图生图 短剧分镜 人物动作 自定义动作_2043677794185519105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：36%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
+全部 7 个 workflow 都包含：
+- `CR Text Replace`
+- `ImpactSwitch`
+- `JjkText`
 - `LoadImage`
-- `SaveVideo`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `TextInput_`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 4/5 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 3/5 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/5 个有
-- `Text` —— 1/5 个有
+- `INTConstant` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `GetNode` —— 4/7 个有
+- `SetNode` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `RH_Nano_Banana2_Image2Image_Batch` —— 2/7 个有
 
 ## 典型参数
 

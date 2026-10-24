@@ -7,13 +7,13 @@ coverage: 0.9115
 common_nodes: [ADE_AnimateDiffLoaderGen1, ADE_StandardUniformContextOptions, AIO_Preprocessor, Anything Everywhere3, CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, ControlNetApplyAdvanced, ControlNetLoaderAdvanced, IPAdapterAdvanced, IPAdapterUnifiedLoader, ImageScale, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1866016887959142402.json, 视频生成/图生视频/1915250665046872066.json]
+members: [视频生成/图生视频/Vid2Vid 风格迁移 _ Style Transfer + IPA & Hotshot XL_1866016887959142402.json, 视频生成/图生视频/视频风格转绘_1915250665046872066.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_ipadapter_video
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1866016887959142402.json、视频生成/图生视频/1915250665046872066.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Vid2Vid 风格迁移 _ Style Transfer + IPA & Hotshot XL_1866016887959142402.json、视频生成/图生视频/视频风格转绘_1915250665046872066.json）
 
 - **类型**：Image To Image
 - **样本数**：2

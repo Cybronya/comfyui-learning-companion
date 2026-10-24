@@ -1,62 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_233
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9425
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader]
+frequency: 5
+level: strong
+coverage: 0.6374
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FlipSigmas, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image turbo 图片生成 🔥v2_2015076364591828994.json, 图片生成/文生图/角色图片-反推-rh-Qwen3VL-模板_2014161890011779073.json]
+members: [图片生成/图生图/10_产品精修_2074323611346882561.json, 图片生成/图生图/23.tonnie-flux万物精修、重塑_1997964839077208065.json, 图片生成/图生图/Flux逆采样修图_1926603675945570306.json, 图片生成/图生图/一键精修，图片精修_1961613590690205697.json, 图片生成/图生图/反差修图_2071109475523719169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_233
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-image turbo 图片生成 🔥v2_2015076364591828994.json、图片生成/文生图/角色图片-反推-rh-Qwen3VL-模板_2014161890011779073.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/10_产品精修_2074323611346882561.json、图片生成/图生图/23.tonnie-flux万物精修、重塑_1997964839077208065.json、图片生成/图生图/Flux逆采样修图_1926603675945570306.json、图片生成/图生图/一键精修，图片精修_1961613590690205697.json、图片生成/图生图/反差修图_2071109475523719169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `KSamplerSelect`
-- `RandomNoise`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FlipSigmas`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `InFluxModelSamplingPred`
+- `LoadImage`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `FlowMatchEulerDiscreteScheduler (Custom)` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `FluxDeGuidance` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `Joy_caption_two` —— 4/5 个有
+- `Joy_caption_two_load` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `ImageBlend` —— 3/5 个有
+- `LayerColor: Brightness & Contrast` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `easy hiresFix` —— 3/5 个有
+- `easy imageSize` —— 3/5 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/5 个有
+- `LayerMask: LoadBiRefNetModel` —— 2/5 个有
+- `LoraLoader` —— 2/5 个有
+- `PreviewBridge` —— 2/5 个有
+- `ColorMatch` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `FluxGuidance` —— 1/5 个有
+- `Get Image Size` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 20 | - | 1 | 100% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | dpmpp_3m_sde | - | 1 | 100% |
-| 重绘幅度 | ddim_uniform | - | 1 | 100% |
-| 宽度 | 1280 | - | 1 | 100% |
-| 高度 | 768 | - | 1 | 100% |
+| LoRA 模型强度 | 0.95 | - | 2 | 95% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,5 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- LoRA 模型强度 中位数 0.95，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

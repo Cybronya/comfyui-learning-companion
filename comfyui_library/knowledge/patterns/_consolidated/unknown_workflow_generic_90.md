@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_90
 type: Unknown Workflow
-frequency: 10
+frequency: 15
 level: moderate
-coverage: 0.8438
-common_nodes: [Apply Whisper, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.7866
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2048279794969743362.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json, 音频生成/音频生成/Qwen3 TTS 声音完美克隆_2014978379094695938.json, 音频生成/音频生成/Qwen3 TTS 最强语音合成_2103005053178179586.json, 音频生成/音频生成/Qwen3 TTS 语音克隆_2018696714370158594.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2014828028999766018.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2026220914022555650.json, 音频生成/音频生成/Qwen3-TTS-声音克隆_2014528546932269058.json]
+members: [图片生成/图生图/AI漫剧人物 影视场景生成_2055578950419656706.json, 图片生成/图生图/AI漫剧分镜制作-盯盯盯-V2.0六宫格制图_2012916558271619074.json, 图片生成/图生图/AI漫剧角色三视图（全能图片）盯盯盯_2011273263103610881.json, 图片生成/图生图/Ban-Pro全能改图模型_2040612004368490497.json, 图片生成/图生图/Banan2+一键换脸+首饰穿戴_1992055719101001730.json, 图片生成/图生图/YZ金鱼-全能图片Pro 角色创造、多视角、人物替换_2024633204963024898.json, 图片生成/图生图/YZ金鱼-全能图片Pro+角色创造、多视角、人物替换_2099883694013108226.json, 图片生成/图生图/人脸提取与擦除_2033496913143668737.json, 图片生成/图生图/全能2编辑图片_2016813742671007746.json, 图片生成/图生图/全能图像pro+分镜切割_2034992594631008257.json, 图片生成/图生图/全能图像pro_2031180505365876737.json, 图片生成/图生图/全能图片V1 Pro 角色创造、多视图、人物完美替换_2006997740621926401.json, 图片生成/图生图/全能图片V1 Pro-角色多视角、人物替换、角色创造_1998736974582308866.json, 图片生成/图生图/全能图片V1+Pro+角色创造、多视角、人物替换_2005176789980905474.json, 图片生成/图生图/全面模型 角色创造、多视角、人物替换_1996047673721569281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_90
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2048279794969743362.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json、音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json、音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json、音频生成/音频生成/Qwen3 TTS 声音完美克隆_2014978379094695938.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/AI漫剧人物 影视场景生成_2055578950419656706.json、图片生成/图生图/AI漫剧分镜制作-盯盯盯-V2.0六宫格制图_2012916558271619074.json、图片生成/图生图/AI漫剧角色三视图（全能图片）盯盯盯_2011273263103610881.json、图片生成/图生图/Ban-Pro全能改图模型_2040612004368490497.json、图片生成/图生图/Banan2+一键换脸+首饰穿戴_1992055719101001730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Apply Whisper`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+全部 15 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 9/10 个有
-- `LoadAudio` —— 9/10 个有
-- `ShowText|pysssss` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `LoadImage` —— 1/10 个有
-- `Text _O` —— 1/10 个有
-- `VHS_LoadAudioUpload` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 11/15 个有
+- `Text Input [DVB]` —— 1/15 个有
+- `easy imageSplitGrid` —— 1/15 个有
 
 ## 典型参数
 

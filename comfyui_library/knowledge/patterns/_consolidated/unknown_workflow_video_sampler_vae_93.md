@@ -3,48 +3,44 @@ name: unknown_workflow_video_sampler_vae_93
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.966667
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9005
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1894738475621482497.json, 视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json, 视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json, 视频生成/文生视频/1935600068689068033.json, 视频生成/文生视频/1934871279478448130.json, 视频生成/文生视频/1935156530729951234.json]
+members: [视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json, 视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json, 视频生成/文生视频/wanvideo_T2V_文生视频kijai版_1894655158603677697.json, 视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json, 视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json, 视频生成/文生视频/阿里万象文生视频_1894633919931920385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_93
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/1894738475621482497.json、视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json、视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json、视频生成/文生视频/1935600068689068033.json、视频生成/文生视频/1934871279478448130.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json、视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json、视频生成/文生视频/wanvideo_T2V_文生视频kijai版_1894655158603677697.json、视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json、视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 5/6 个有
-- `ImageUpscaleWithModel` —— 3/6 个有
-- `SeargePromptText` —— 3/6 个有
-- `UpscaleModelLoader` —— 3/6 个有
-- `WanVideoLoraSelect` —— 3/6 个有
-- `easy cleanGpuUsed` —— 3/6 个有
-- `Video_Upscale_With_Model` —— 2/6 个有
-- `WanVideoEnhanceAVideo` —— 2/6 个有
-- `WanVideoVRAMManagement` —— 2/6 个有
-- `Label (rgthree)` —— 1/6 个有
+- `WanVideoBlockSwap` —— 5/6 个有
+- `LayerUtility: PurgeVRAM` —— 3/6 个有
+- `WanVideoTeaCache` —— 3/6 个有
+- `JjkText` —— 2/6 个有
+- `WanVideoTorchCompileSettings` —— 2/6 个有
+- `LayerUtility: DeepSeekAPI` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

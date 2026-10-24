@@ -1,65 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_388
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.712
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CFGGuider, CLIPTextEncode, ComfySwitchNodeV2, EmptyMiniMaxH3LatentAV, Fast Groups Bypasser (rgthree), FeiHouEasyH3RH, FeiHouEasyH3RHDurationCrop, FeiHouEasyH3RHFaceRefine, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHOutput, FeiHouEasyH3RHPromptPreview, FeiHouEasyH3RHRemixLoader, FeiHouEasyH3RHResolution, GetNode, ImageResizeKJv2, ImpactImageInfo, KSamplerSelect, LoadImage, MiniMaxH3AddGuide, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RHSettingsNode, RandomSeedNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+coverage: 0.6864
+common_nodes: [CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageFromBatch+, Int, JWStringConcat, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json, 视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2101863503865929729.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2101223899563380737.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2110561566671331329.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2111005524354490369.json, 视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json]
+members: [图片生成/文生图/Wan+2.2创意开箱视频广告_2058721201614319618.json, 视频生成/文生视频/Wan 2.2 文本到视频广告_1950092714999201793.json, 视频生成/文生视频/Wan+2.2+文本到视频广告_1951940652722540546.json, 视频生成/文生视频/Wan+2.2创意开箱视频广告_1951952632132874241.json, 视频生成/文生视频/Wan2.2创意开箱视频广告_1960890103814139905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_388
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json、视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2101863503865929729.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2101223899563380737.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2110561566671331329.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2111005524354490369.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Wan+2.2创意开箱视频广告_2058721201614319618.json、视频生成/文生视频/Wan 2.2 文本到视频广告_1950092714999201793.json、视频生成/文生视频/Wan+2.2+文本到视频广告_1951940652722540546.json、视频生成/文生视频/Wan+2.2创意开箱视频广告_1951952632132874241.json、视频生成/文生视频/Wan2.2创意开箱视频广告_1960890103814139905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfySwitchNodeV2`
-- `EmptyMiniMaxH3LatentAV`
-- `Fast Groups Bypasser (rgthree)`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHDurationCrop`
-- `FeiHouEasyH3RHFaceRefine`
-- `FeiHouEasyH3RHLoraStack`
-- `FeiHouEasyH3RHOutput`
-- `FeiHouEasyH3RHPromptPreview`
-- `FeiHouEasyH3RHRemixLoader`
-- `FeiHouEasyH3RHResolution`
-- `GetNode`
-- `ImageResizeKJv2`
-- `ImpactImageInfo`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RHSettingsNode`
-- `RandomSeedNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `VAEDecode`
-- `VAEDecodeAudio`
+全部 5 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `ImageFromBatch+`
+- `Int`
+- `JWStringConcat`
+- `JjkText`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
 - `VHS_VideoCombine`
+- `Wan22PromptSelector`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 4/6 个有
-- `EmptyImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
+- `JsonToText` —— 4/5 个有
+- `LoadImage` —— 1/5 个有
 
 ## 典型参数
 

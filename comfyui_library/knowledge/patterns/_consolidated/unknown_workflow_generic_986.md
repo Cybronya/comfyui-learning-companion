@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_986
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.889
-common_nodes: [LoadAudio, SaveAudio, SparkTTS_AdvVoiceClone, SparkTTS_VoiceCreator]
+frequency: 3
+level: moderate
+coverage: 0.691333
+common_nodes: [CR Text, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/SparkTTS语音克隆_1955282964529778689.json, 音频生成/音频生成/🪂【大炮工具】声音克隆！语音生成 声音一键克隆！🪂_1952161569239191554.json]
+members: [图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json, 图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json, 图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_986
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SparkTTS语音克隆_1955282964529778689.json、音频生成/音频生成/🪂【大炮工具】声音克隆！语音生成 声音一键克隆！🪂_1952161569239191554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json、图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json、图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SparkTTS_AdvVoiceClone`
-- `SparkTTS_VoiceCreator`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `RH_Translator` —— 2/3 个有
+- `TextBox` —— 2/3 个有
 
 ## 典型参数
 
@@ -42,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

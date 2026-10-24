@@ -3,22 +3,22 @@ name: unknown_workflow_video_sampler_checkpoint_2
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.916
+coverage: 0.902375
 common_nodes: [ImageOnlyCheckpointLoader, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1915064259728834561.json, 视频生成/图生视频/1905890438115692545.json, 视频生成/图生视频/人物照片说话唱歌_音频感知_2085780849454305281.json, 视频生成/图生视频/1891734244585287681.json, 视频生成/图生视频/1924353663471374338.json, 视频生成/文生视频/1930267877079728130.json, 音频生成/音频生成/Sonic真人_卡通数字人_1916670312954396674.json, 音频生成/音频生成/sonic_ai数字人口播对口型工作流_2068716274812801026.json]
+members: [视频生成/图生视频/Sonic图片数字人_1918866017932476417.json, 视频生成/图生视频/Sonic图片数字人_1999009654929772545.json, 视频生成/图生视频/Sonic对口型数字人_1922467727339094018.json, 视频生成/图生视频/Sonic数字人V1_1892161116607520769.json, 视频生成/图生视频/Sonic数字人_1943493647671173122.json, 视频生成/图生视频/Sonic无限制数字人_1915064259728834561.json, 视频生成/图生视频/Sonic真人_卡通数字人工作流_1905890438115692545.json, 视频生成/图生视频/啊癫 sonic数字人带货_1907741322999177217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_2
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1915064259728834561.json、视频生成/图生视频/1905890438115692545.json、视频生成/图生视频/人物照片说话唱歌_音频感知_2085780849454305281.json、视频生成/图生视频/1891734244585287681.json、视频生成/图生视频/1924353663471374338.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Sonic图片数字人_1918866017932476417.json、视频生成/图生视频/Sonic图片数字人_1999009654929772545.json、视频生成/图生视频/Sonic对口型数字人_1922467727339094018.json、视频生成/图生视频/Sonic数字人V1_1892161116607520769.json、视频生成/图生视频/Sonic数字人_1943493647671173122.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -32,10 +32,12 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `ImageScale` —— 1/8 个有
 - `PrimitiveFloat` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `easy imageSize` —— 1/8 个有
 
 ## 典型参数
 

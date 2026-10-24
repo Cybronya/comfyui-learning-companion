@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_sampler_48
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9545
-common_nodes: [AILab_QwenVL, CR Text, JWInteger, JjkConcat, LoadAudio, LoadImage, RH_LLMAPI_NODE, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, SaveVideo, ShowText|pysssss, string_util_StrConcat]
+frequency: 3
+level: moderate
+coverage: 0.891667
+common_nodes: [CR Prompt Text, HiDreamSampler, LayerUtility: PurgeVRAM V2, LoadImage, RH_Captioner, SaveImage, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/【3月】DreamId-Omni单参考+音色生视频(RA2V)_2034293740906483713.json, 视频生成/文生视频/【3月】DreamId-Omni双参考+音色生视频(RA2V)_2034437992688918530.json]
+members: [图片生成/图生图/【最新】HiDream洗图Fast模式_1912883187176144897.json, 图片生成/图生图/🦖HiDream洗图Fast模式_1912678873383825409.json, 图片生成/文生图/HiDream工作流，媲美flux_1911595429279035393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_48
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【3月】DreamId-Omni单参考+音色生视频(RA2V)_2034293740906483713.json、视频生成/文生视频/【3月】DreamId-Omni双参考+音色生视频(RA2V)_2034437992688918530.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【最新】HiDream洗图Fast模式_1912883187176144897.json、图片生成/图生图/🦖HiDream洗图Fast模式_1912678873383825409.json、图片生成/文生图/HiDream工作流，媲美flux_1911595429279035393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CR Text`
-- `JWInteger`
-- `JjkConcat`
-- `LoadAudio`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `HiDreamSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RunningHub DreamID-Omni Loader`
-- `RunningHub DreamID-Omni Sampler`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `string_util_StrConcat`
+- `RH_Captioner`
+- `SaveImage`
+- `easy promptConcat`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPTextEncode` —— 2/3 个有
+- `NunchakuTextEncoderLoader` —— 2/3 个有
 
 ## 典型参数
 
@@ -46,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

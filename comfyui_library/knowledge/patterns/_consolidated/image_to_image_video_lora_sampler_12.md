@@ -7,13 +7,13 @@ coverage: 0.827
 common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text Replace, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageFromBatch, ImageFromBatch+, JWInteger, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingAuraFlow, ModelSamplingSD3, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveStringMultiline, ProcessString, Qwen3_VQA, QwenVisionNode, SaveImage, SetNode, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy batchAnything, easy imageBatchToImageList, easy imageListToImageBatch, easy promptLine, easy showAnything, wanBlockSwap]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1984872507406761986.json, 视频生成/图生视频/1984890760073986049.json, 视频生成/图生视频/1983727908047003650.json]
+members: [视频生成/图生视频/一键直出，美女写真套图视频_1984872507406761986.json, 视频生成/图生视频/写真套图视频一键生成_1984890760073986049.json, 视频生成/图生视频/美女写真套图视频一键直出_1983727908047003650.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1984872507406761986.json、视频生成/图生视频/1984890760073986049.json、视频生成/图生视频/1983727908047003650.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/一键直出，美女写真套图视频_1984872507406761986.json、视频生成/图生视频/写真套图视频一键生成_1984890760073986049.json、视频生成/图生视频/美女写真套图视频一键直出_1983727908047003650.json）
 
 - **类型**：Image To Image
 - **样本数**：3

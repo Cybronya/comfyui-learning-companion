@@ -1,80 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_unet_89
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9185
-common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, CreateVideo, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, H3SigmaRefiner, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PlaySound|pysssss, SaveImage, SaveVideo, Seed (rgthree), SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy imageChooser, kkVideoFirstLastFrames]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.994571
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: ["视频生成/图生视频/Amumu-数字人15s直出1080P,16分钟左右，新用户绑定  rh-v1571体验_2100601806509395970.json", "视频生成/图生视频/Amumu-数字人自动提示词，15s直出1080P,16分钟左右，新用户绑定  rh-v1571体验_2101011759321669634.json"]
+members: [图片生成/图生图/AI漫剧角色三视图-盯盯盯-V2.0云端+本地三个版本_2026321552664432641.json, 图片生成/图生图/seedance2.0真人过审核方法（适用于豆包、即梦、小云雀）_2037113635297828866.json, 图片生成/图生图/seedance2.0真人过审脸部拆解（适用于即梦）fast_2037525850534453249.json, 图片生成/图生图/三视图-Qwen2511-高度一致性_2071975841445269506.json, 图片生成/图生图/三视图-三视图一键生成-Qwen-Edit-2511-保持高度一致性_2023398149548675073.json, 图片生成/图生图/即梦、小云雀、豆包、seedance2.0真人过审核方法-Qwen-2511_2036336291356352513.json, 图片生成/图生图/即梦、小云雀、豆包、超能视频2.0真人过审核方法-Qwen-2511_2034590390044598273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_89
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Amumu-数字人15s直出1080P,16分钟左右，新用户绑定  rh-v1571体验_2100601806509395970.json、视频生成/图生视频/Amumu-数字人自动提示词，15s直出1080P,16分钟左右，新用户绑定  rh-v1571体验_2101011759321669634.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI漫剧角色三视图-盯盯盯-V2.0云端+本地三个版本_2026321552664432641.json、图片生成/图生图/seedance2.0真人过审核方法（适用于豆包、即梦、小云雀）_2037113635297828866.json、图片生成/图生图/seedance2.0真人过审脸部拆解（适用于即梦）fast_2037525850534453249.json、图片生成/图生图/三视图-Qwen2511-高度一致性_2071975841445269506.json、图片生成/图生图/三视图-三视图一键生成-Qwen-Edit-2511-保持高度一致性_2023398149548675073.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetLatentSizeAndCount`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PlaySound|pysssss`
 - `SaveImage`
-- `SaveVideo`
-- `Seed (rgthree)`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy imageChooser`
-- `kkVideoFirstLastFrames`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ComfyNumberConvert` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `MiniMaxH3EasyMediaLoader` —— 1/2 个有
-- `MiniMaxH3EasyMediaSplitter` —— 1/2 个有
-- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
-- `SoundFlow_GetLength` —— 1/2 个有
+- `CustomAddLabel` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `PainterFluxImageEdit` —— 1/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | sa_solver | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（12/7 个样本）：Steps较低可能导致细节不足

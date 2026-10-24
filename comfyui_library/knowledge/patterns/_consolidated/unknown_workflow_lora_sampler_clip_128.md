@@ -1,70 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_128
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.853333
-common_nodes: [CLIPLoaderGGUF, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Int, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.73325
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CR SDXL Aspect Ratio, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadImage, LoraLoader, LyingSigmaSampler, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StringFunction|pysssss, Text Concatenate (JPS), UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Zimage随机美少女抽卡机【无限出图模式】_2059903175817252865.json, 图片生成/文生图/z-image真实人像（带反推和扩写）_2064352102926868481.json, 图片生成/文生图/美女孵蛋器 V3升级版【无限模式】_2073460891844177921.json]
+members: [图片生成/图生图/Flux万物精灵-自然造物_1904844822627143681.json, 图片生成/文生图/Flux万物精灵-自然造物_1902223229052985346.json, 图片生成/文生图/Joy Beta1继Joy2新一代打标神器_1922306279304286210.json, 图片生成/文生图/最强joy3-Joy Beta1开源打标反推神器_1928392034858745858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_128
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Zimage随机美少女抽卡机【无限出图模式】_2059903175817252865.json、图片生成/文生图/z-image真实人像（带反推和扩写）_2064352102926868481.json、图片生成/文生图/美女孵蛋器 V3升级版【无限模式】_2073460891844177921.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux万物精灵-自然造物_1904844822627143681.json、图片生成/文生图/Flux万物精灵-自然造物_1902223229052985346.json、图片生成/文生图/Joy Beta1继Joy2新一代打标神器_1922306279304286210.json、图片生成/文生图/最强joy3-Joy Beta1开源打标反推神器_1928392034858745858.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoaderGGUF`
-- `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `CR SDXL Aspect Ratio`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Int`
-- `KSamplerAdvanced`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `LoraLoader`
+- `LyingSigmaSampler`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `Text Concatenate (JPS)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoImageAspectRatioResizeNode` —— 2/3 个有
-- `DapaoImageRatioLimitNode` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `llama_cpp_parameters` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `DapaoImageWatermarkNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `RunningHub Deepcleaner` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `ApplyFBCacheOnModel` —— 2/4 个有
+- `Joy_caption` —— 2/4 个有
+- `Joy_caption_load` —— 2/4 个有
+- `easy imageScaleDownBy` —— 2/4 个有
+- `easy stylesSelector` —— 2/4 个有
+- `JJC_JoyCaption` —— 1/4 个有
+- `JJC_JoyCaption_Custom` —— 1/4 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/4 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/4 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 864 | 864 - 1024 | 3 | 92% |
-| 高度 | 1536 | 1536 - 1536 | 3 | 100% |
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 12 | 3 | 29% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 宽度 | 800 | 800 - 800 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| LoRA 模型强度 | 2.4 | 0.4 - 4 | 4 | 26% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -72,10 +72,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 864，观测区间 864 - 1024，3 个样本，取值集中（一致性 92%）
-- 高度 中位数 1536，观测区间 1536 - 1536，3 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 12，3 个样本，取值分散，一致性仅 29%
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 宽度 中位数 800，观测区间 800 - 800，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 2.4，观测区间 0.4 - 4，4 个样本，取值分散，一致性仅 26%
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

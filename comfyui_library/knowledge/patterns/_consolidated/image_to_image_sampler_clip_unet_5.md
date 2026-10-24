@@ -1,78 +1,70 @@
 ---
 name: image_to_image_sampler_clip_unet_5
 type: Image To Image
-frequency: 5
-level: strong
-coverage: 0.8696
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
-missing: [Text Multiline, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2]
-members: [图片生成/文生图/1940687352694206465.json, 图片生成/文生图/1942547476778037249.json, 图片生成/文生图/1953728095478009857.json, 图片生成/文生图/1953730285512916993.json, 图片生成/文生图/1954452296111407106.json]
+frequency: 27
+level: moderate
+coverage: 0.992
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/Z-image-controlne Union2.0局部重绘_2002990674276433922.json, 图片生成/图生图/zimag图生图_2019339994762059777.json, 图片生成/图生图/东方阳台美女Qwen2512真实人像质感御姐美女_2040720553853591554.json, 图片生成/图生图/俯视户外Qwen2512真实人像质感御姐美女_2040701228971200514.json, 图片生成/图生图/古风美女Qwen2512真实人像质感御姐美女_2040756043898163202.json, 图片生成/图生图/吊带睡衣Qwen2512真实人像质感御姐美女_2040694310089265154.json, 图片生成/图生图/城市夜景Qwen2512真实人像质感御姐美女_2040747964653641729.json, 图片生成/图生图/婚纱美女Qwen2512真实人像质感御姐美女_2040750860522758145.json, 图片生成/图生图/学生妹Qwen2512真实人像质感御姐美女_2040753602402197506.json, 图片生成/图生图/居家美女Qwen2512真实人像质感御姐美女_2040768961993773057.json, 图片生成/图生图/巷子印花少女Qwen2512真实人像质感御姐美女_2040771081161674754.json, 图片生成/图生图/异域风情雪山Qwen2512真实人像质感御姐美女_2040745153714982913.json, 图片生成/图生图/性感女讲师Qwen2512真实人像质感御姐美女_2040762674857910273.json, 图片生成/图生图/性感有韵味Qwen2512真实人像质感御姐美女_2040758880275275777.json, 图片生成/图生图/成熟有气质Qwen2512真实人像质感御姐美女_2040713629946880002.json, 图片生成/图生图/旗袍美女qwen2512_2033779880537624578.json, 图片生成/图生图/日常穿搭Qwen2512真实人像质感御姐美女_2040711683684962306.json, 图片生成/图生图/昏暗灯光Qwen2512真实人像质感御姐美女_2040742192599277569.json, 图片生成/图生图/晚礼服Qwen2512真实人像质感御姐美女_2040739616071880706.json, 图片生成/图生图/欧式美女Qwen2512真实人像质感御姐美女_2040716624658960385.json, 图片生成/图生图/现代客厅美女Qwen2512真实人像质感御姐美女_2040726673531871234.json, 图片生成/图生图/睡衣系列Qwen2512真实人像质感御姐美女_2040663406696472578.json, 图片生成/图生图/短裤Qwen2512真实人像质感御姐美女_2040678187201470465.json, 图片生成/图生图/立体立绘Qwen2512真实人像质感御姐美女_2040764555873226753.json, 图片生成/图生图/粉色长发Qwen2512真实人像质感御姐美女_2040766504697860098.json, 图片生成/图生图/美女写真图Qwen2512真实人像质感御姐美女_2040708454158962689.json, 图片生成/图生图/蕾丝内衣Qwen2512真实人像质感御姐美女_2040698349422125057.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_5
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1940687352694206465.json、图片生成/文生图/1942547476778037249.json、图片生成/文生图/1953728095478009857.json、图片生成/文生图/1953730285512916993.json、图片生成/文生图/1954452296111407106.json）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/Z-image-controlne Union2.0局部重绘_2002990674276433922.json、图片生成/图生图/zimag图生图_2019339994762059777.json、图片生成/图生图/东方阳台美女Qwen2512真实人像质感御姐美女_2040720553853591554.json、图片生成/图生图/俯视户外Qwen2512真实人像质感御姐美女_2040701228971200514.json、图片生成/图生图/古风美女Qwen2512真实人像质感御姐美女_2040756043898163202.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：27
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 27 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GoogleTranslateTextNode` —— 4/5 个有
-- `ImageStitch` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `FastCanvas` —— 3/5 个有
-- `FastCanvasTool` —— 3/5 个有
-- `ImageScaleDownToSize` —— 3/5 个有
-- `RMBG` —— 3/5 个有
-- `RepeatLatentBatch` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/5 个有
-- `LayerUtility: CropByMask V2` —— 1/5 个有
-- `PMRF` —— 1/5 个有
+- `ModelSamplingAuraFlow` —— 26/27 个有
+- `scale` —— 26/27 个有
+- `LoraLoaderModelOnly` —— 25/27 个有
+- `Note _O` —— 25/27 个有
+- `Image Comparer (rgthree)` —— 2/27 个有
+- `CR Text` —— 1/27 个有
+- `ModelPatchLoader` —— 1/27 个有
+- `ZImageFunControlnet` —— 1/27 个有
+- `图像缩放V2_孤海` —— 1/27 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 4 | 4 - 10 | 27 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 27 | 91% |
+| 采样算法 | euler | - | 27 | 100% |
+| 调度器 | beta | - | 27 | 93% |
+| 重绘幅度 | 0.5 | 0.3 - 1 | 27 | 80% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 26/27 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline、LayerMask: PersonMaskUltra V2、LayerUtility: CropByMask V2
+- 采样步数 中位数 4，观测区间 4 - 10，27 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，27 个样本，取值集中（一致性 91%）
+- 采样算法 最常用 euler，27 个样本，一致性 100%
+- 调度器 最常用 beta，27 个样本，一致性 93%
+- 重绘幅度 中位数 0.5，观测区间 0.3 - 1，27 个样本
+- 高发问题（26/27 个样本）：Steps较低可能导致细节不足

@@ -1,62 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_199
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.763667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, EasyCache, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.7348
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3・图生 _ 文生・四合一视频工作流_2084274079045083138.json, 视频生成/文生视频/MiniMax H3图生视频工作流_2084631760146620417.json, 视频生成/文生视频/MiniMaxH3文生・四合一视频工作流・图生ENGENG_2087094142475268097.json]
+members: [图片生成/图生图/VividMuse_MiniMax_H3_多参生视频_2084280381586628609.json, 图片生成/图生图/fastH3_ref2va_2112720537771397122.json, 图片生成/图生图/trim fast minimax_2107875369050267650.json, 图片生成/文生图/H3fast-v2全参加速_2110710299581046785.json, 数字人/数字人/7度工作流改版1_2098964914600763393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_199
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3・图生 _ 文生・四合一视频工作流_2084274079045083138.json、视频生成/文生视频/MiniMax H3图生视频工作流_2084631760146620417.json、视频生成/文生视频/MiniMaxH3文生・四合一视频工作流・图生ENGENG_2087094142475268097.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/VividMuse_MiniMax_H3_多参生视频_2084280381586628609.json、图片生成/图生图/fastH3_ref2va_2112720537771397122.json、图片生成/图生图/trim fast minimax_2107875369050267650.json、图片生成/文生图/H3fast-v2全参加速_2110710299581046785.json、数字人/数字人/7度工作流改版1_2098964914600763393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `CreateVideo`
-- `EasyCache`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RegexReplace` —— 2/3 个有
-- `ResizeImagesByLongerEdge` —— 2/3 个有
-- `VRAM_Debug` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `easy string` —— 2/3 个有
-- `llama_cpp_instruct_adv` —— 2/3 个有
-- `llama_cpp_model_loader` —— 2/3 个有
-- `SpectrumSDXL` —— 1/3 个有
+- `CreateVideo` —— 4/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `SaveVideo` —— 4/5 个有
+- `BlockSparseAttention` —— 3/5 个有
+- `MiniMaxH3SigmaShift` —— 3/5 个有
+- `ModelAttentionBackend` —— 3/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `GetImageSize` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `MiniMaxH3ImageToVideo` —— 1/5 个有
+- `MiniMaxH3SLAPrecisionV2T8Advanced` —— 1/5 个有
+- `PainterVRAM` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `Seed (rgthree)` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
+- `easy positive` —— 1/5 个有
+- `忽略多组孤海` —— 1/5 个有
 
 ## 典型参数
 

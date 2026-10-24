@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_generic_848
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.871
-common_nodes: [AudioCrop, Bjornulf_AnythingToText, LoadAudio, MathExpression|pysssss, PreviewImage, SaveImage, SaveVideo, VHS_LoadVideoPath, VHS_SelectImages]
+frequency: 3
+level: moderate
+coverage: 0.85
+common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
-missing: [MathExpression|pysssss]
-members: [视频生成/图生视频/1971449141417164802.json, 视频生成/文生视频/1971617651434909698.json]
+missing: []
+members: [图片生成/图生图/33.tonnie-图像、文字高清修复放大（seedvr2）_2003200741047173121.json, 图片生成/图生图/SeedVR2 Upscaler高清图片放大seedvr2模型高清图片模糊图片处理扩大放大图片高清图_2016451842145787905.json, 图片生成/文生图/放大到2048_1983527423545417730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_848
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1971449141417164802.json、视频生成/文生视频/1971617651434909698.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/33.tonnie-图像、文字高清修复放大（seedvr2）_2003200741047173121.json、图片生成/图生图/SeedVR2 Upscaler高清图片放大seedvr2模型高清图片模糊图片处理扩大放大图片高清图_2016451842145787905.json、图片生成/文生图/放大到2048_1983527423545417730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_AnythingToText`
-- `LoadAudio`
-- `MathExpression|pysssss`
-- `PreviewImage`
+全部 3 个 workflow 都包含：
+- `LoadImage`
 - `SaveImage`
-- `SaveVideo`
-- `VHS_LoadVideoPath`
-- `VHS_SelectImages`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_Wan25_I2V` —— 1/2 个有
-- `RH_Wan25_T2V` —— 1/2 个有
-- `ShellAgentPluginInputText` —— 1/2 个有
+- `HYPIRAdvancedRestoration` —— 1/3 个有
+- `HYPIRImageRestoration` —— 1/3 个有
 
 ## 典型参数
 
@@ -49,5 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

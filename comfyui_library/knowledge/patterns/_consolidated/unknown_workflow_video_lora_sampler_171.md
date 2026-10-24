@@ -3,65 +3,58 @@ name: unknown_workflow_video_lora_sampler_171
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.515818
-common_nodes: [GetNode, ImpactSwitch, LoadWanVideoT5TextEncoder, PrimitiveInt, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy negative, easy positive]
+coverage: 0.946
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969269601903276034.json, 视频生成/图生视频/1953403318607511553.json, 视频生成/图生视频/1952225607566438401.json, 视频生成/图生视频/1967507218427994113.json, 视频生成/图生视频/1953348116592427010.json, 视频生成/图生视频/1955836777492725762.json, 视频生成/图生视频/1967511175430803457.json, 视频生成/图生视频/1976833467906506754.json, 视频生成/图生视频/1955508156764864513.json, 视频生成/文生视频/1952262575440474114.json, 视频生成/文生视频/1966334312981442561.json]
+members: [视频生成/图生视频/Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json, 视频生成/图生视频/gen全能视频Si-wan2.2首尾帧kijai版_1952803879810494466.json, 视频生成/图生视频/kijai-Wan2.2首尾帧+过渡帧_1963047092535136257.json, 视频生成/图生视频/wan 2.2 冰冻视频特效_1953012198424702978.json, 视频生成/图生视频/wan2.2图生视频(KJ版)_1951528284905525250.json, 视频生成/图生视频/wan2.2图生视频首尾帧（KJ版）_1955148796940488705.json, 视频生成/图生视频/wan2.2图生视频（KJ流）加速_1950178102964084737.json, 视频生成/图生视频/冰天雪地视频特效_2004446571733417986.json, 视频生成/图生视频/视频-Wan2.2首尾帧+过渡帧_1978365294227906562.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高低噪声双lora在线本地通用_补帧_1952913426868858882.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高噪声lora在线本地通用_补帧_1952709897437777921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_171
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1969269601903276034.json、视频生成/图生视频/1953403318607511553.json、视频生成/图生视频/1952225607566438401.json、视频生成/图生视频/1967507218427994113.json、视频生成/图生视频/1953348116592427010.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json、视频生成/图生视频/gen全能视频Si-wan2.2首尾帧kijai版_1952803879810494466.json、视频生成/图生视频/kijai-Wan2.2首尾帧+过渡帧_1963047092535136257.json、视频生成/图生视频/wan 2.2 冰冻视频特效_1953012198424702978.json、视频生成/图生视频/wan2.2图生视频(KJ版)_1951528284905525250.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `GetNode`
-- `ImpactSwitch`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
-- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy negative`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `GetBoolFromJson` —— 10/11 个有
-- `GetFloatFromJson` —— 10/11 个有
-- `GetIntFromJson` —— 10/11 个有
-- `LoadJsonFromText` —— 10/11 个有
-- `easy ifElse` —— 10/11 个有
-- `easy mathInt` —— 10/11 个有
-- `Int` —— 9/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
-- `LoadImage` —— 9/11 个有
-- `WanVideoImageToVideoEncode` —— 9/11 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 6/11 个有
-- `JWStringSplit` —— 2/11 个有
-- `PrimitiveString` —— 2/11 个有
-- `WanVideoEmptyEmbeds` —— 2/11 个有
-- `easy convertAnything` —— 2/11 个有
-- `LoadWanVideoClipTextEncoder` —— 1/11 个有
-- `WanVideoClipVisionEncode` —— 1/11 个有
+- `GetImageSizeAndCount` —— 10/11 个有
+- `ImageResizeKJv2` —— 10/11 个有
+- `WanVideoSetBlockSwap` —— 10/11 个有
+- `WanVideoSetLoRAs` —— 10/11 个有
+- `WanVideoTorchCompileSettings` —— 9/11 个有
+- `Int` —— 4/11 个有
+- `RIFE VFI` —— 4/11 个有
+- `CLIPVisionLoader` —— 2/11 个有
+- `Fast Groups Muter (rgthree)` —— 2/11 个有
+- `RH_Translator` —— 2/11 个有
+- `ShowText|pysssss` —— 2/11 个有
+- `WanVideoClipVisionEncode` —— 2/11 个有
+- `WanVideoContextOptions` —— 2/11 个有
+- `WanVideoEncodeLatentBatch` —— 2/11 个有
+- `WanVideoTeaCache` —— 2/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
 
 ## 典型参数
 

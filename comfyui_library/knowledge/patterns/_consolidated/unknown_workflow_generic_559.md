@@ -1,35 +1,46 @@
 ---
 name: unknown_workflow_generic_559
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.857
+common_nodes: [Any Switch (rgthree), AudioSeparation, CR Prompt Text, Fast Groups Bypasser (rgthree), Float, GetVideoComponents, LoadAudio, LoadVideo, NormalizeAudioLoudness, RH_HeyGemNode, SaveAudioMP3, SaveVideo, SoundFlow_TrimAudio, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, WujiCleaner, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance 1.5 Pro 图生视频｜首尾帧视频｜支持1080P_2097528846127034369.json, 视频生成/图生视频/Seedance 2.0 Mini 图生视频｜首尾帧视频｜支持4K_2097599856180289537.json, 视频生成/图生视频/2038487746444009474.json]
+members: [数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_559
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance 1.5 Pro 图生视频｜首尾帧视频｜支持1080P_2097528846127034369.json、视频生成/图生视频/Seedance 2.0 Mini 图生视频｜首尾帧视频｜支持4K_2097599856180289537.json、视频生成/图生视频/2038487746444009474.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
+全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AudioSeparation`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetVideoComponents`
+- `LoadAudio`
+- `LoadVideo`
+- `NormalizeAudioLoudness`
+- `RH_HeyGemNode`
+- `SaveAudioMP3`
 - `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 2/3 个有
-- `RH_SeedanceV15ProImageToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/3 个有
+- `SoundFlow_TrimAudio`
+- `T8_IndexTTS25_EmotionControl`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
+- `WujiCleaner`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

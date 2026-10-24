@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_121
 type: Unknown Workflow
-frequency: 8
+frequency: 13
 level: moderate
-coverage: 0.97225
-common_nodes: [GeminiImage2Node, LoadImage, SaveImage]
+coverage: 0.974308
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/templates-assemble_dieline.json, comfyui-workflow-templates-json/templates-character_sheet.json, comfyui-workflow-templates-json/templates-color_illustration.json, comfyui-workflow-templates-json/templates-subject_holding_product.app.json, comfyui-workflow-templates-json/templates-subject_product_swap.app.json, comfyui-workflow-templates-json/utility_nanobanana_pro_ai_image_fix.json, comfyui-workflow-templates-json/utility_nanobanana_pro_illustration_upscale.json, comfyui-workflow-templates-json/utility_nanobanana_pro_product_upscale.json]
+members: [图片生成/图生图/单图编辑 _  全能图片V1 🍌_1961313555331137537.json, 图片生成/图生图/双人人物合影 +全能图片V1_1985625396215459841.json, 图片生成/图生图/大峰漫剧角色🍌（四视图）_1979539906361987074.json, 图片生成/图生图/漫剧角色（四视图）_1991472082315911169.json, 图片生成/图生图/香蕉多图融合_1998288180698865666.json, 图片生成/文生图/全能图片 V1_2014603891056320513.json, 图片生成/文生图/全能图片V1图像编辑_1984997799391612929.json, 图片生成/文生图/全能图片V1多图参考_1987857807712129026.json, 图片生成/文生图/可乐-单图扩展成四视图_2009154735978323969.json, 图片生成/文生图/情侣求婚场景-图生图_1983723273634684929.json, 图片生成/文生图/情侣求婚场景_1983453022506426369.json, 图片生成/文生图/求婚场景_1983357701608644610.json, 图片生成/文生图/经典电影探班，5分钱一张_1999813413306068993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_121
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/templates-assemble_dieline.json、comfyui-workflow-templates-json/templates-character_sheet.json、comfyui-workflow-templates-json/templates-color_illustration.json、comfyui-workflow-templates-json/templates-subject_holding_product.app.json、comfyui-workflow-templates-json/templates-subject_product_swap.app.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/单图编辑 _  全能图片V1 🍌_1961313555331137537.json、图片生成/图生图/双人人物合影 +全能图片V1_1985625396215459841.json、图片生成/图生图/大峰漫剧角色🍌（四视图）_1979539906361987074.json、图片生成/图生图/漫剧角色（四视图）_1991472082315911169.json、图片生成/图生图/香蕉多图融合_1998288180698865666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：13
 - **可信度**：中等可信
 - **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `GeminiImage2Node`
+全部 13 个 workflow 都包含：
 - `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` —— 2/8 个有
-- `ImageStitch` —— 1/8 个有
+- `RH_Translator` —— 11/13 个有
+- `ImageResize+` —— 10/13 个有
+- `Textbox` —— 3/13 个有
 
 ## 典型参数
 

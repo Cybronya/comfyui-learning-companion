@@ -1,43 +1,40 @@
 ---
 name: unknown_workflow_generic_615
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.811
-common_nodes: [Apply Whisper, CR Prompt Text, Fast Groups Bypasser (rgthree), LoadAudio, PreviewAny, RH_FireRedAudioASR, RH_FireRedAudioLoader, RH_FireRedAudioTTS, RH_FireRedAudioVoiceDesign, SaveAudio, ShowAnything|Mie]
+coverage: 0.7794
+common_nodes: [LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [音频生成/音频生成/Firered Audio TTS语音克隆_声音设计_语音转文本_2094238948309688321.json, 音频生成/音频生成/声音编辑全功能！声音删减 声音设计 声音克隆 声音 转文字 FireRed Audio_2094025390112206849.json, 音频生成/音频生成/语音编辑全家桶！语音修改！语音设计！ 语音克隆！ 语音转文字！ FireRed Audio_2094039981890297857.json]
+members: [音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json, 音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json, 音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_615
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Firered Audio TTS语音克隆_声音设计_语音转文本_2094238948309688321.json、音频生成/音频生成/声音编辑全功能！声音删减 声音设计 声音克隆 声音 转文字 FireRed Audio_2094025390112206849.json、音频生成/音频生成/语音编辑全家桶！语音修改！语音设计！ 语音克隆！ 语音转文字！ FireRed Audio_2094039981890297857.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json、音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json、音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
+全部 5 个 workflow 都包含：
 - `LoadAudio`
-- `PreviewAny`
-- `RH_FireRedAudioASR`
-- `RH_FireRedAudioLoader`
-- `RH_FireRedAudioTTS`
-- `RH_FireRedAudioVoiceDesign`
-- `SaveAudio`
-- `ShowAnything|Mie`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_FireRedAudioEdit` —— 2/3 个有
-- `ShellAgentPluginOutputText` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `SaveAudio` —— 4/5 个有
+- `Apply Whisper` —— 3/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `SaveAudioMP3` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_474
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, PreviewAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 1
+common_nodes: [Float, LoadAudio, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/indextts基础款_2014667772751515650.json, 音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json, 音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/空白工作流_2063266975324921857.json]
+members: [音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json, 音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json, 音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json, 音频生成/音频生成/音乐生成（支持歌曲模仿）_2008964386093797378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_474
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/indextts基础款_2014667772751515650.json、音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json、音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/空白工作流_2063266975324921857.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json、音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json、音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `Float`
 - `LoadAudio`
-- `PreviewAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `SaveAudio`
+- `SongBloomDecoder`
+- `SongBloomGenerate`
+- `SongBloomModelLoader`
+- `Text Multiline`
 
 ## 典型参数
 

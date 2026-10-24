@@ -1,67 +1,68 @@
 ---
 name: unknown_workflow_sampler_unet_vae_205
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.729
-common_nodes: [Anything Everywhere3, CLIPLoader, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, PreviewAny, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader]
+frequency: 5
+level: strong
+coverage: 0.981
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, DualCLIPLoader, KSamplerSelect, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen-image2.1 文生图+VOSR2放大_2105647237308174337.json, 图片生成/文生图/Qwen Image 2.1文生图（提示词扩写）2609_2106250224862846978.json]
+members: [图片生成/图生图/极简——FLUX pulid换脸_1943683612560723970.json, 图片生成/图生图/直播汉服写真_1913521276361633794.json, 图片生成/图生图/角色一致性_1938427878101155842.json, 图片生成/文生图/Flux  dev fp8  PuLID 文生图换脸工作流_2002388093422432257.json, 图片生成/文生图/极简——FLUX pulid换脸_1940416147244167169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_205
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen-image2.1 文生图+VOSR2放大_2105647237308174337.json、图片生成/文生图/Qwen Image 2.1文生图（提示词扩写）2609_2106250224862846978.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/极简——FLUX pulid换脸_1943683612560723970.json、图片生成/图生图/直播汉服写真_1913521276361633794.json、图片生成/图生图/角色一致性_1938427878101155842.json、图片生成/文生图/Flux  dev fp8  PuLID 文生图换脸工作流_2002388093422432257.json、图片生成/文生图/极简——FLUX pulid换脸_1940416147244167169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CLIPLoader`
-- `CR Text`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `KSampler`
-- `PreviewAny`
-- `ResolutionSelector`
+全部 5 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LoadImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `SeedVR2LoadDiTModel` —— 1/2 个有
-- `SeedVR2LoadVAEModel` —— 1/2 个有
-- `SeedVR2VideoUpscaler` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `SplitImageWithAlpha` —— 1/2 个有
-- `VOSR2ModelLoader` —— 1/2 个有
-- `VOSR2Upscale` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `EmptySD3LatentImage` —— 4/5 个有
+- `CLIPTextEncodeFlux` —— 3/5 个有
+- `CLIPLoaderGGUF` —— 2/5 个有
+- `CLIPTextEncode` —— 2/5 个有
+- `FluxGuidance` —— 2/5 个有
+- `LoraLoader` —— 2/5 个有
+- `UnetLoaderGGUF` —— 2/5 个有
+- `VAEEncode` —— 2/5 个有
+- `CR SDXL Aspect Ratio` —— 1/5 个有
+- `EmptyLatentImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `PulidFluxFaceDetector` —— 1/5 个有
+- `PulidFluxOptions` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 40 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1576 | - | 1 | 100% |
+| LoRA 模型强度 | 0.9 | - | 2 | 89% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,11 +70,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

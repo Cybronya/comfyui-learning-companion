@@ -7,13 +7,13 @@ coverage: 0.879667
 common_nodes: [AILab_ColorInput, CFGNorm, CLIPLoader, CreateCFGScheduleFloatList, CutAndDragOnPath, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, ImageToMask, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask To Image (mtb), ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, PreviewImage, RMBG, RunningHub Deepcleaner, SplineEditor, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoAddTTMLatents, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1991323289348059137.json, 视频生成/图生视频/1991106081629798401.json, 视频生成/图生视频/1990629553938849794.json]
+members: [视频生成/图生视频/TTM图生视频轨迹控制（无需额外工具）_1991323289348059137.json, 视频生成/图生视频/TTM轨迹控制视频Wan2.2 Smooth w. SplineEdit（Trajectory control video）_1991106081629798401.json, 视频生成/图生视频/TTM轨迹控制视频（无需额外工具）_1990629553938849794.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1991323289348059137.json、视频生成/图生视频/1991106081629798401.json、视频生成/图生视频/1990629553938849794.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/TTM图生视频轨迹控制（无需额外工具）_1991323289348059137.json、视频生成/图生视频/TTM轨迹控制视频Wan2.2 Smooth w. SplineEdit（Trajectory control video）_1991106081629798401.json、视频生成/图生视频/TTM轨迹控制视频（无需额外工具）_1990629553938849794.json）
 
 - **类型**：Image To Image
 - **样本数**：3

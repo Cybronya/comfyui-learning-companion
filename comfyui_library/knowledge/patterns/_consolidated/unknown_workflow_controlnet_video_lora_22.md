@@ -7,13 +7,13 @@ coverage: 0.582
 common_nodes: [BBoxYOLO, BatchCount+, CLIPVisionLoader, CR Text, CheckpointLoaderSimple, GetNode, ImageBatch, ImageFromBatch, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LazySwitch1way, LazySwitch2way, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, RepeatImageBatch, SDPoseDrawKeypoints, SDPoseKeypointExtractor, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus AnimateEmbeds, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus Encode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus Sampler, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus Uni3C ControlnetLoader, WanAnimatePlus Uni3C Embeds, WanAnimatePlus VAELoader, YOLOModelLoader, easy boolean, easy cleanGpuUsed, easy compare, easy float, easy int, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/2064969947528388610.json, 视频生成/图生视频/2072698338717294593.json, 视频生成/图生视频/2075957594660888578.json]
+members: [视频生成/图生视频/Wan2.2-Animate动作迁移_2064969947528388610.json, 视频生成/图生视频/仔仔动作迁移V9（多参考图）工作流_2072698338717294593.json, 视频生成/图生视频/小陆动作迁移V9（多参考图）工作流_2075957594660888578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2064969947528388610.json、视频生成/图生视频/2072698338717294593.json、视频生成/图生视频/2075957594660888578.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-Animate动作迁移_2064969947528388610.json、视频生成/图生视频/仔仔动作迁移V9（多参考图）工作流_2072698338717294593.json、视频生成/图生视频/小陆动作迁移V9（多参考图）工作流_2075957594660888578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

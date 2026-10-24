@@ -1,46 +1,34 @@
 ---
 name: unknown_workflow_sampler_47
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8885
-common_nodes: [CR Prompt Text, CreateVideo, FrameInterpolate, FrameInterpolationModelLoader, JWInteger, LingBotSampler, LingBotTextEncode, PrimitiveInt, RH_Captioner_Pro, SaveVideo, easy cleanGpuUsed, easy clearCacheAll]
+frequency: 3
+level: moderate
+coverage: 0.857
+common_nodes: [ImageConcanate, LoadImage, PrimitiveStringMultiline, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/LingBot文生视频1.3B智能提示词_2082367995464208385.json, 视频生成/文生视频/LingBot文生视频30B智能提示词_2082368008017764354.json]
+members: [图片生成/图生图/UniWord一句话移除人物_1931206886530723841.json, 图片生成/图生图/UniWord图像编辑_1932787965162573826.json, 图片生成/图生图/Uniworld转吉普力风格_1931458785959981058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_47
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LingBot文生视频1.3B智能提示词_2082367995464208385.json、视频生成/文生视频/LingBot文生视频30B智能提示词_2082368008017764354.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/UniWord一句话移除人物_1931206886530723841.json、图片生成/图生图/UniWord图像编辑_1932787965162573826.json、图片生成/图生图/Uniworld转吉普力风格_1931458785959981058.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateVideo`
-- `FrameInterpolate`
-- `FrameInterpolationModelLoader`
-- `JWInteger`
-- `LingBotSampler`
-- `LingBotTextEncode`
-- `PrimitiveInt`
-- `RH_Captioner_Pro`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 1/2 个有
-- `LingBotLoader` —— 1/2 个有
-- `LingBotMoELoaderGGUF` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+全部 3 个 workflow 都包含：
+- `ImageConcanate`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
+- `SaveImage`
 
 ## 典型参数
 
@@ -52,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

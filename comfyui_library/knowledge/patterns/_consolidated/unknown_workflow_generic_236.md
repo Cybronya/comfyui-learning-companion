@@ -1,47 +1,35 @@
 ---
 name: unknown_workflow_generic_236
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.712667
-common_nodes: [CR Text, CR Text Replace, HeartMuLa_Generate, HeartMuLa_Transcribe, ImpactInt, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, easy convertAnything, easy showAnything]
+coverage: 0.972222
+common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa Music Generator音乐生成器_2014209189966516225.json, 音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2019404854623473665.json, 音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2046675069698576385.json, 音频生成/音频生成/自动生成音乐_2013941285295493122.json, 音频生成/音频生成/音乐自动生成神器heartmula！效果堪比闭源_2013795843362529281.json, 音频生成/音频生成/📢heartmula音乐自动生成+歌词提取_2014524994990116866.json]
+members: [视频生成/图生视频/(支持真人)超能视频2.0多图参考（1秒1元）_2034958305579241473.json, 视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json, 视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json, 视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json, 视频生成/图生视频/全能视频超能视频2.0—Ai漫剧—Ai短剧_2034157040687390722.json, 视频生成/图生视频/支持多图生视频全能视频SD2.0 (体验版)_2035937654084214786.json, 视频生成/图生视频/豆包seedance2.0_2036359930034262018.json, 视频生成/图生视频/超能视频2.0，不排队_2035380351849209858.json, 视频生成/文生视频/(支持真人)超能视频2.0视频生成_2034258331358994434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_236
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa Music Generator音乐生成器_2014209189966516225.json、音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2019404854623473665.json、音频生成/音频生成/一键全自动创作歌曲（HeartMuLa开源音乐模型）_2046675069698576385.json、音频生成/音频生成/自动生成音乐_2013941285295493122.json、音频生成/音频生成/音乐自动生成神器heartmula！效果堪比闭源_2013795843362529281.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(支持真人)超能视频2.0多图参考（1秒1元）_2034958305579241473.json、视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json、视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json、视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json、视频生成/图生视频/全能视频超能视频2.0—Ai漫剧—Ai短剧_2034157040687390722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
-- `CR Text Replace`
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `ImpactInt`
-- `LoadAudio`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `easy convertAnything`
-- `easy showAnything`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_CinematicVideoGenerator`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 4/6 个有
-- `LoadImage` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PrimitiveBoolean` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `Save Text File` —— 1/6 个有
-- `easy ifElse` —— 1/6 个有
+- `CR Text` —— 2/9 个有
+- `easy seed` —— 1/9 个有
 
 ## 典型参数
 

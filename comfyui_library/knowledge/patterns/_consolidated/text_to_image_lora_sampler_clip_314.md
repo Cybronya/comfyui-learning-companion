@@ -1,86 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_314
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.916667
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, FastGroupsBypassSwitch, ImageScaleToTotalPixels, JWFloat, KSampler, KSamplerAdvanced, LatentSwitch, LoraLoaderModelOnly, PreviewAny, PreviewImage, PrimitiveStringMultiline, RH_LLMAPI_NODE, ReferenceLatent, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.781667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/巨构Krea2+Klein组合｜高清急速数字人文生图双开_2103060942782296065.json, 图片生成/文生图/巨构！ Krea2+Klein高清！ 急速！_2102715333214818306.json, 图片生成/文生图/巨物构图 Krea2+Klein高清_2102610143589523457.json]
+members: [图片生成/图生图/人物换脸1.0.1版｜高质量图生图脸部替换生成_2095935921358204930.json, 图片生成/图生图/全能图片 G-Image-2.0｜人物面部三视图高清直出｜图生图_2096889065525309441.json, 图片生成/图生图/全能图片2.0_2k高清版｜图生图画质细节双在线_2105254608422658050.json, 图片生成/图生图/全能图片2.0工作流，图生图高质量图像处理方案_2107521089378283521.json, 图片生成/图生图/全能图片G-2.0图生图低价渠道高性价比出图方案_2104821488074444802.json, 图片生成/图生图/美女换装1.0.1版｜RH2服装替换图生图生成_2096334228534419457.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_314
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/巨构Krea2+Klein组合｜高清急速数字人文生图双开_2103060942782296065.json、图片生成/文生图/巨构！ Krea2+Klein高清！ 急速！_2102715333214818306.json、图片生成/文生图/巨物构图 Krea2+Klein高清_2102610143589523457.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/人物换脸1.0.1版｜高质量图生图脸部替换生成_2095935921358204930.json、图片生成/图生图/全能图片 G-Image-2.0｜人物面部三视图高清直出｜图生图_2096889065525309441.json、图片生成/图生图/全能图片2.0_2k高清版｜图生图画质细节双在线_2105254608422658050.json、图片生成/图生图/全能图片2.0工作流，图生图高质量图像处理方案_2107521089378283521.json、图片生成/图生图/全能图片G-2.0图生图低价渠道高性价比出图方案_2104821488074444802.json…）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BatchImagesNode`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FastGroupsBypassSwitch`
-- `ImageScaleToTotalPixels`
-- `JWFloat`
+- `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LatentSwitch`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_NODE`
-- `ReferenceLatent`
-- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
-- `SeedVR2LoadDiTModel` —— 1/3 个有
-- `SeedVR2LoadVAEModel` —— 1/3 个有
-- `SeedVR2VideoUpscaler` —— 1/3 个有
-- `solarL_SaveImagesToZip` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `PreviewImage` —— 4/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 4/6 个有
+- `RH_RhartImageG2ImageToImage` —— 4/6 个有
+- `Any Switch (rgthree)` —— 2/6 个有
+- `DF_Text_Box` —— 2/6 个有
+- `GetNode` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `忽略多组孤海` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `ttN text` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 80 - 1024 | 3 | 37% |
-| 高度 | 1024 | 80 - 1024 | 3 | 37% |
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4.5 | 3 | 94% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 67% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4.5，3 个样本，取值集中（一致性 94%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
-- 高发问题（10/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -7,13 +7,13 @@ coverage: 0.88125
 common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, Primitive integer [Crystools], Primitive string [Crystools], SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2011608046820134914.json, 视频生成/图生视频/2041428749719179265.json, 视频生成/图生视频/2048594505284198402.json, 视频生成/图生视频/2052561498752471042.json, 视频生成/图生视频/2054369620169117698.json, 视频生成/图生视频/1903462104978853889.json, 视频生成/图生视频/2067422675328389122.json, 视频生成/图生视频/1898335155923439618.json]
+members: [视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json, 视频生成/图生视频/图生视频 混元版_2041428749719179265.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版)_1903462104978853889.json, 视频生成/图生视频/屏幕伸手牵手3D互动抖音热点视频图生视频_2067422675328389122.json, 视频生成/图生视频/最新混元图生视频fixed版(KJ版)_1898335155923439618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_63
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2011608046820134914.json、视频生成/图生视频/2041428749719179265.json、视频生成/图生视频/2048594505284198402.json、视频生成/图生视频/2052561498752471042.json、视频生成/图生视频/2054369620169117698.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json、视频生成/图生视频/图生视频 混元版_2041428749719179265.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json、视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

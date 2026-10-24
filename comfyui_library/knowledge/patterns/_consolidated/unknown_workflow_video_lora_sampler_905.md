@@ -3,147 +3,73 @@ name: unknown_workflow_video_lora_sampler_905
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [Anything Everywhere, AudioCrop, AudioSeparation, BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, ClothesSegment, DownloadAndLoadWav2VecModel, DrawMaskOnImage, DrawViTPose, Evaluate Integers, Fast Groups Bypasser (rgthree), GetImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageBlend, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, Int, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, ModelPatchTorchSettings, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewImage, PrimitiveStringMultiline, RH_GetAudioDuration, RIFE VFI, RunningHub StepAudioEditX ModelLoader, RunningHub StepAudioEditX Sampler(Emotion), RunningHub StepAudioEditX Sampler(Paralinguistic), RunningHub StepAudioEditX Sampler(Style), SaveAudio, SaveImage, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VHS_VideoInfoLoaded, VideoCombine_Adv, WanFirstLastFrameToVideo, WanImageToVideo, WanMoeKSampler, WanVideoAddSteadyDancerEmbeds, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple, easy int, easy showAnything, intToFloat _O, wanBlock_Swap]
+coverage: 0.652
+common_nodes: [Any Switch (rgthree), AudioSeparation, CLIPVisionLoader, CR String To Number, CR Text, DownloadAndLoadWav2VecModel, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SetNode, SparkTTSClone, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1996141035090821122.json, 视频生成/图生视频/1997585497004392450.json]
+members: [视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json, 音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_905
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1996141035090821122.json、视频生成/图生视频/1997585497004392450.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json、音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `AudioCrop`
+- `Any Switch (rgthree)`
 - `AudioSeparation`
-- `BlockifyMask`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `ClothesSegment`
+- `CR String To Number`
+- `CR Text`
 - `DownloadAndLoadWav2VecModel`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Evaluate Integers`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImage`
-- `GetImageRangeFromBatch`
+- `Fast Groups Muter (rgthree)`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMask`
-- `INTConstant`
-- `ImageBlend`
 - `ImageConcatMulti`
-- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `Int`
-- `LayerUtility: ImageMaskScaleAsV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `ModelPatchTorchSettings`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RH_GetAudioDuration`
-- `RIFE VFI`
-- `RunningHub StepAudioEditX ModelLoader`
-- `RunningHub StepAudioEditX Sampler(Emotion)`
-- `RunningHub StepAudioEditX Sampler(Paralinguistic)`
-- `RunningHub StepAudioEditX Sampler(Style)`
 - `SaveAudio`
-- `SaveImage`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
 - `SetNode`
-- `SimpleMath+`
-- `ToInt`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `SparkTTSClone`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `VHS_VideoInfoLoaded`
-- `VideoCombine_Adv`
-- `WanFirstLastFrameToVideo`
-- `WanImageToVideo`
-- `WanMoeKSampler`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
-- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
 - `easy cleanGpuUsed`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSAudioMerge`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
-- `easy int`
-- `easy showAnything`
-- `intToFloat _O`
-- `wanBlock_Swap`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `FaceMaskFromPoseKeypoints` —— 1/2 个有
-- `ImageCropByMaskAndResize` —— 1/2 个有
-- `IntToText` —— 1/2 个有
+- `CR Integer To String` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `IndexTTS2Run` —— 1/2 个有
 - `JWInteger` —— 1/2 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
 - `MathExpression|pysssss` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `PixelPerfectResolution` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `PoseDetectionOneToAllAnimation` —— 1/2 个有
-- `preview_mask` —— 1/2 个有
+- `Random Number` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | euler_ancestral | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -151,9 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

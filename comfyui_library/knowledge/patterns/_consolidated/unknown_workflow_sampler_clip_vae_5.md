@@ -1,63 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_vae_5
 type: Unknown Workflow
-frequency: 13
+frequency: 17
 level: moderate
-coverage: 0.893154
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.915176
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json, 图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json, 图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json, 图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json, 图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json, 图片生成/文生图/FLUX2 Dev FP8 8步加速 文生图_图片编辑_2073296125880262657.json, 图片生成/文生图/FLUX2 Dev FP8 文生图_图片编辑_2073281827388874753.json, 图片生成/文生图/FLUX2 混合模型_1993521841442586625.json, 图片生成/文生图/Flux2 官方文_图生视频_1993512866739322882.json, 图片生成/文生图/Flux2 文生图_图生图_图像修改_多图参考工作流_1993868752053796866.json, 图片生成/文生图/flux.2图像编辑测试（单图）_1995053515309506561.json, 图片生成/文生图/flux.2量化+SageAttention加速图像编辑（单图）_1994854140247465985.json, 图片生成/文生图/【AI小兵哥】Flux.2-多图编辑工作流_1994221492407828481.json]
+members: [图片生成/图生图/3D模型材质贴图渲染_2047283420904034306.json, 图片生成/图生图/4.【Flux.2】 Klein_单图像编辑_2014321298746380290.json, 图片生成/图生图/9-12-亚克力金属-有钱包LORA优化质感，纹路，光感，清晰度_2098815251805458433.json, 图片生成/图生图/9-12-亚克力金属-有钱包LORA优化质感，纹路，光感，清晰度_2098820008020373506.json, 图片生成/图生图/9_9-皮带纹路优化-有钱包LORA优化质感，纹路，光感，清晰度_2097358992443006978.json, 图片生成/图生图/FLUX2-Klein图像放大_2044694517214879745.json, "图片生成/图生图/Flux-2 Klein：秒换新生,_2013256781648109570.json", 图片生成/图生图/Flux2 Klein-产品精修_2016028233266892801.json, 图片生成/图生图/Klein 9B Ture商业级光影融合工作流 零偏移_2047233928045531137.json, 图片生成/图生图/Klein 产品精修2.0_2036776123027169281.json, 图片生成/图生图/Klein-模糊变清晰 + 一致性图像细化+编辑_2054578992128241666.json, 图片生成/图生图/Klein_动漫高清放大_超分放大_2052188511582867458.json, 图片生成/图生图/Klein动漫高清放大到4k分辨率保留细节_2060294265787469825.json, 图片生成/图生图/flux2 klein 超实用高清放大_2075145254583488513.json, 图片生成/图生图/▶▶F2K-一致性图像细化+编辑_2055291592189202434.json, 图片生成/图生图/图片0色差0偏移高清放大_2080959572566700034.json, 图片生成/图生图/照片修复F2K-一致性图像细化+编辑1_2043974556662108162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json、图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json、图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json、图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json、图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/3D模型材质贴图渲染_2047283420904034306.json、图片生成/图生图/4.【Flux.2】 Klein_单图像编辑_2014321298746380290.json、图片生成/图生图/9-12-亚克力金属-有钱包LORA优化质感，纹路，光感，清晰度_2098815251805458433.json、图片生成/图生图/9-12-亚克力金属-有钱包LORA优化质感，纹路，光感，清晰度_2098820008020373506.json、图片生成/图生图/9_9-皮带纹路优化-有钱包LORA优化质感，纹路，光感，清晰度_2097358992443006978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicGuider`
+全部 17 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `FluxGuidance`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 11/13 个有
-- `LoadImage` —— 11/13 个有
-- `ReferenceLatent` —— 11/13 个有
-- `UNETLoader` —— 11/13 个有
-- `VAEEncode` —— 11/13 个有
-- `ModelPatchTorchSettings` —— 5/13 个有
-- `PathchSageAttentionKJ` —— 4/13 个有
-- `UnetLoaderGGUF` —— 4/13 个有
-- `PreviewImage` —— 3/13 个有
-- `Int Literal` —— 2/13 个有
-- `Label (rgthree)` —— 2/13 个有
-- `LoraLoaderModelOnly` —— 2/13 个有
-- `easy int` —— 2/13 个有
-- `ApplySageAttention` —— 1/13 个有
-- `CR Text` —— 1/13 个有
-- `EasyCache` —— 1/13 个有
-- `ImageConcanate` —— 1/13 个有
-- `PreviewAny` —— 1/13 个有
-- `RH_Captioner` —— 1/13 个有
-- `RH_Translator` —— 1/13 个有
-- `easy promptLine` —— 1/13 个有
+- `ConditioningZeroOut` —— 16/17 个有
+- `UNETLoader` —— 16/17 个有
+- `Image Comparer (rgthree)` —— 15/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 15/17 个有
+- `LoraLoaderModelOnly` —— 13/17 个有
+- `LayerUtility: PurgeVRAM V2` —— 12/17 个有
+- `Seed (rgthree)` —— 11/17 个有
+- `easy imageColorMatch` —— 11/17 个有
+- `easy int` —— 11/17 个有
+- `ImageSmartSharpen+` —— 10/17 个有
+- `ImageScaleToTotalPixels` —— 8/17 个有
+- `CR Text` —— 7/17 个有
+- `ImpactSwitch` —— 6/17 个有
+- `ShowText` —— 6/17 个有
+- `Text` —— 6/17 个有
+- `TextCombinerTwo` —— 6/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/17 个有
+- `GetImageSize` —— 3/17 个有
+- `CR Text Input Switch (4 way)` —— 1/17 个有
+- `DuckHideNode` —— 1/17 个有
+- `Get resolution [Crystools]` —— 1/17 个有
+- `HAIGC_SaveImagesToZip` —— 1/17 个有
+- `PreviewImage` —— 1/17 个有
+- `PrimitiveString` —— 1/17 个有
+- `StringConcatenate` —— 1/17 个有
+- `UnetLoaderGGUF` —— 1/17 个有
+- `easy seed` —— 1/17 个有
 
 ## 典型参数
 

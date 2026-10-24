@@ -1,62 +1,49 @@
 ---
 name: unknown_workflow_video_sampler_checkpoint_9
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7155
-common_nodes: [Anything Everywhere, Anything Everywhere3, AudioSeparation, CM_IntToFloat, CR Float To Integer, GetNode, ImageCASharpening+, ImageResize+, LoadAudio, LoadImage, PreviewAudio, RH_GetAudioDuration, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SeedVCRun, SetNode, VHS_LoadVideo, VHS_VideoCombine, easy mathInt, easy showAnything, unCLIPCheckpointLoader, workflow>1]
+frequency: 3
+level: moderate
+coverage: 0.767
+common_nodes: [Anything Everywhere, Anything Everywhere3, CM_IntToFloat, CR Float To Integer, ImageCASharpening+, ImageResize+, JjkText, LoadAudio, LoadImage, RH_GetAudioDuration, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SparkTTSClone, VHS_VideoCombine, easy anythingIndexSwitch, easy int, easy mathInt, easy showAnything, unCLIPCheckpointLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1932668328915996674.json, 音频生成/音频生成/说话唱歌无所不能数字人_1936674596454060033.json]
+members: [视频生成/图生视频/图片开口说话_1935006990957486081.json, 视频生成/图生视频/图片开口说话——数字人项目——sonic_1931548408556007426.json, 视频生成/图生视频/爆改动画侍女图_1930578408680640513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_9
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1932668328915996674.json、音频生成/音频生成/说话唱歌无所不能数字人_1936674596454060033.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图片开口说话_1935006990957486081.json、视频生成/图生视频/图片开口说话——数字人项目——sonic_1931548408556007426.json、视频生成/图生视频/爆改动画侍女图_1930578408680640513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `Anything Everywhere`
 - `Anything Everywhere3`
-- `AudioSeparation`
 - `CM_IntToFloat`
 - `CR Float To Integer`
-- `GetNode`
 - `ImageCASharpening+`
 - `ImageResize+`
+- `JjkText`
 - `LoadAudio`
 - `LoadImage`
-- `PreviewAudio`
 - `RH_GetAudioDuration`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
 - `SaveAudio`
-- `SeedVCRun`
-- `SetNode`
-- `VHS_LoadVideo`
+- `SparkTTSClone`
 - `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `easy int`
 - `easy mathInt`
 - `easy showAnything`
 - `unCLIPCheckpointLoader`
-- `workflow>1`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `RH_Wan2GPNode` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -68,4 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

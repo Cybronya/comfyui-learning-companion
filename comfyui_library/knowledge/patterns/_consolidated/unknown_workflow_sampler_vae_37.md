@@ -1,50 +1,45 @@
 ---
 name: unknown_workflow_sampler_vae_37
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.53
-common_nodes: [CreateVideo, EmptyImage, GetImageSize, GetNode, ImageResize+, ImageResizeKJv2, ImpactSwitch, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAFirstFrameCondition, RHMiniMaxH3FL2VALastFrameCondition, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo, SetNode, easy anythingIndexSwitch, easy int]
+coverage: 0.878167
+common_nodes: [JoyAI_Image_ENCODER, JoyAI_Image_LATENTS, JoyAI_Image_SM_Clip, JoyAI_Image_SM_KSampler, JoyAI_Image_SM_Model, JoyAI_Image_SM_VAE, JoyAI_Vae_Decoder, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091123170408493058.json, 视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091159734362660866.json, 视频生成/图生视频/MiniMax H3 FL2VA-首尾帧生视频-最新_2085282069546094594.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频-首尾帧可选_2084449947558170626.json]
+members: [图片生成/图生图/JoyAI Image Edit 单图编辑 专攻镜头控制-视角旋转_2043521558035042306.json, 图片生成/图生图/JoyAI图像编辑_2042256669849165826.json, 图片生成/图生图/JoyAI图像编辑_2042953747986391041.json, 图片生成/图生图/JoyAi-image-edit单图编辑_2042230181556916225.json, 图片生成/图生图/京东模型JoyAi-edit-image-图片编辑_2042255778484064257.json, 图片生成/图生图/京东模型JoyAi-edit-image-图片编辑_2043621059412365313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091123170408493058.json、视频生成/图生视频/MiniMax H3 FL2VA-首尾帧扩写视频_2091159734362660866.json、视频生成/图生视频/MiniMax H3 FL2VA-首尾帧生视频-最新_2085282069546094594.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首尾帧参考生视频-首尾帧可选_2084449947558170626.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/JoyAI Image Edit 单图编辑 专攻镜头控制-视角旋转_2043521558035042306.json、图片生成/图生图/JoyAI图像编辑_2042256669849165826.json、图片生成/图生图/JoyAI图像编辑_2042953747986391041.json、图片生成/图生图/JoyAi-image-edit单图编辑_2042230181556916225.json、图片生成/图生图/京东模型JoyAi-edit-image-图片编辑_2042255778484064257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CreateVideo`
-- `EmptyImage`
-- `GetImageSize`
-- `GetNode`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
+全部 6 个 workflow 都包含：
+- `JoyAI_Image_ENCODER`
+- `JoyAI_Image_LATENTS`
+- `JoyAI_Image_SM_Clip`
+- `JoyAI_Image_SM_KSampler`
+- `JoyAI_Image_SM_Model`
+- `JoyAI_Image_SM_VAE`
+- `JoyAI_Vae_Decoder`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3FL2VAEncode`
-- `RHMiniMaxH3FL2VAFirstFrameCondition`
-- `RHMiniMaxH3FL2VALastFrameCondition`
-- `RHMiniMaxH3FL2VAModelLoader`
-- `RHMiniMaxH3FL2VATarget`
-- `RHMiniMaxH3FL2VATextEncoderLoader`
-- `RHMiniMaxH3FL2VAVAELoader`
-- `SaveVideo`
-- `SetNode`
-- `easy anythingIndexSwitch`
-- `easy int`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 4/6 个有
+- `PreviewImage` —— 3/6 个有
+- `RH_Translator` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `Int` —— 1/6 个有
 
 ## 典型参数
 

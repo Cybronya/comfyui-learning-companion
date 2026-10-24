@@ -3,78 +3,87 @@ name: unknown_workflow_video_lora_sampler_492
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.85925
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, ImpactConditionalBranch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UnetLoaderGGUF, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.71
+common_nodes: [AddLabel, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSizeAndCount, ImageConcanate, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2056632746793070593.json, 视频生成/图生视频/2053296155462782978.json, 视频生成/文生视频/LTX2.3 PromptRelay 四合一全能音视频工作流_2054463722072092674.json, 视频生成/文生视频/LTX2.3 四合一全能音视频工作流_2047235485235417089.json]
+members: [视频生成/图生视频/LTX2.3 图生视频｜+参考视频运镜（仅参考运镜）  IC LoRA_2042074773987008513.json, 视频生成/图生视频/LTX2.3 图生视频｜+参考视频运镜（仅参考运镜）  IC LoRA_2046118754756595713.json, 视频生成/图生视频/LTX2.3运镜参考不限时长_2072521435817537538.json, 视频生成/图生视频/ltx2.3-ic-lora-cameraman_2072140620956790785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_492
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2056632746793070593.json、视频生成/图生视频/2053296155462782978.json、视频生成/文生视频/LTX2.3 PromptRelay 四合一全能音视频工作流_2054463722072092674.json、视频生成/文生视频/LTX2.3 四合一全能音视频工作流_2047235485235417089.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 图生视频｜+参考视频运镜（仅参考运镜）  IC LoRA_2042074773987008513.json、视频生成/图生视频/LTX2.3 图生视频｜+参考视频运镜（仅参考运镜）  IC LoRA_2046118754756595713.json、视频生成/图生视频/LTX2.3运镜参考不限时长_2072521435817537538.json、视频生成/图生视频/ltx2.3-ic-lora-cameraman_2072140620956790785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AddLabel`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoaderGGUF`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `ImpactConditionalBranch`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LTX2SamplingPreviewOverride`
 - `LTX2_NAG`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoraLoaderModelOnly`
 - `ManualSigmas`
 - `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
+- `Seed (rgthree)`
+- `SimpleCalculatorKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVEnhanceAVideoKJ` —— 3/4 个有
-- `PreviewAudio` —— 3/4 个有
-- `GetImageSize` —— 2/4 个有
-- `KSamplerSelect` —— 2/4 个有
-- `LTXVAddGuide` —— 2/4 个有
-- `LTXVImgToVideoInplace` —— 2/4 个有
+- `FL_FloatToInt` —— 2/4 个有
+- `FloatConstant` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `LTX2MemoryEfficientSageAttentionPatch` —— 2/4 个有
 - `LTXVLatentUpsampler` —— 2/4 个有
-- `LTXVReferenceAudio` —— 2/4 个有
 - `LatentUpscaleModelLoader` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `PromptRelayEncodeTimeline` —— 2/4 个有
-- `ResizeImagesByLongerEdge` —— 2/4 个有
-- `SamplerEulerAncestral` —— 2/4 个有
-- `VHS_LoadAudioUpload` —— 2/4 个有
-- `Label (rgthree)` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `MemoryCleaner` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `ReverseImageBatch` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `TextBox1` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `LTXVContextWindows` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 - `PrimitiveStringMultiline` —— 1/4 个有
-- `TrimAudioDuration` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `easy convertAnything` —— 1/4 个有
 
 ## 典型参数
 

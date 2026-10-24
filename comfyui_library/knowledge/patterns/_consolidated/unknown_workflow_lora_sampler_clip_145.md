@@ -1,71 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_clip_145
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9385
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.8515
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, GetImageSize, Image Comparer (rgthree), KSampler, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, PanoramaViewerNode, PreviewImage, SaveImage, UNETLoader, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader, ZNGB_Equirect360ToViews, easy positive, easy showAnything, llama_cpp_clean_states, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/1913513255921250305.json, 图片生成/文生图/1954772987443503106.json]
+members: [图片生成/文生图/1-Aiden-360全景生成_2080345693348261890.json, 图片生成/文生图/1-Aiden-360全景生成_2096836824219086850.json, 图片生成/文生图/360度全景场景生成  Qwen2512 文生图_2081679129409310722.json, 图片生成/文生图/全景图生成 360度 生图_2082880184562307074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_145
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1913513255921250305.json、图片生成/文生图/1954772987443503106.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1-Aiden-360全景生成_2080345693348261890.json、图片生成/文生图/1-Aiden-360全景生成_2096836824219086850.json、图片生成/文生图/360度全景场景生成  Qwen2512 文生图_2081679129409310722.json、图片生成/文生图/全景图生成 360度 生图_2082880184562307074.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LoadImage`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoraLoaderModelOnly`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `PanoramaViewerNode`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `ZNGB_Equirect360ToViews`
+- `easy positive`
+- `easy showAnything`
+- `llama_cpp_clean_states`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_unload_model`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `ControlNetApplySD3` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `LineArtPreprocessor` —— 1/2 个有
-- `PoseNode` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SetUnionControlNetType` —— 1/2 个有
+- `孤海注释` —— 3/4 个有
+- `忽略多组孤海` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
-| 宽度 | 940 | - | 2 | 95% |
-| 高度 | 1240 | - | 2 | 93% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.45 | 0.45 - 0.45 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 940，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
-- 高度 中位数 1240，样本不足，未给区间，2 个样本，取值集中（一致性 93%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.45，观测区间 0.45 - 0.45，4 个样本，取值集中（一致性 100%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

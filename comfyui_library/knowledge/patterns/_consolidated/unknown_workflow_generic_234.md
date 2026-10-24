@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_234
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.722333
-common_nodes: [IndexTTSNode, JjkText, LoadAudio, SaveAudio]
+coverage: 0.883778
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json, 音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json, 音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json, 音频生成/音频生成/TTS音频克隆_2056746978004000769.json, 音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json, 音频生成/音频生成/克隆声音 _ Index-TTS_1965784781864767490.json]
+members: [图片生成/文生图/全能图片Pro 文生图_1991707945115267074.json, 图片生成/文生图/全能图片Pro图生图_2031907838896906241.json, 图片生成/文生图/全能图片Pro批量生图替换物品_2037795451444924418.json, 图片生成/文生图/全能图片TG-2026-2支持文生图_图生图_2025879024190365698.json, 图片生成/文生图/全能图片V1 2 & Pro 最强图片生成（支持文生图_图生图）_1992280946389086209.json, 图片生成/文生图/全能图片V1 2 & Pro文生图_图生图_1993262441970810881.json, 图片生成/文生图/全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json, 图片生成/文生图/全能图片V1 2单图编辑标准版，每日前5次免费，只扣RH点数_1994259087814836225.json, 图片生成/文生图/全能图片V12单图编辑_1992468217274716161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_234
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json、音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json、音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json、音频生成/音频生成/TTS音频克隆_2056746978004000769.json、音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/全能图片Pro 文生图_1991707945115267074.json、图片生成/文生图/全能图片Pro图生图_2031907838896906241.json、图片生成/文生图/全能图片Pro批量生图替换物品_2037795451444924418.json、图片生成/文生图/全能图片TG-2026-2支持文生图_图生图_2025879024190365698.json、图片生成/文生图/全能图片V1 2 & Pro 最强图片生成（支持文生图_图生图）_1992280946389086209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `IndexTTSNode`
-- `JjkText`
-- `LoadAudio`
-- `SaveAudio`
+全部 9 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 5/6 个有
+- `LoadImage` —— 8/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `CR Text` —— 5/9 个有
 
 ## 典型参数
 

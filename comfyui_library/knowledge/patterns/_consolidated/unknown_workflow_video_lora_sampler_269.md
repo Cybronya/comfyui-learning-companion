@@ -2,79 +2,71 @@
 name: unknown_workflow_video_lora_sampler_269
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.708
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, DiffusionModelSelector, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+level: moderate
+coverage: 0.88425
+common_nodes: [CR Prompt Text, Float, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, SaveLatent, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946855361778184193.json, 视频生成/图生视频/1967883312465326081.json, 视频生成/图生视频/1967231938215940098.json, 视频生成/图生视频/1967234477657350146.json, 视频生成/图生视频/1967218674518122497.json, 视频生成/图生视频/1967612484775546881.json, 视频生成/图生视频/1969262637538308098.json, 视频生成/图生视频/1967609614747525122.json]
+members: [视频生成/图生视频/wan2.2 control控制_1966742439342059521.json, 视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json, 视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json, 视频生成/图生视频/（4+4）KJ版Wan2.2优调版图生视频实验版V2（LightX2v+Rcm）_1980273017576185857.json, 视频生成/文生视频/(KJ版)Wan2.2+Foley精调版文生视频V1_1970702549865164802.json, 视频生成/文生视频/Comfy挑战赛6（心跳）Wan2.2文生视频+音频_1971180956935720962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_269
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1946855361778184193.json、视频生成/图生视频/1967883312465326081.json、视频生成/图生视频/1967231938215940098.json、视频生成/图生视频/1967234477657350146.json、视频生成/图生视频/1967218674518122497.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2 control控制_1966742439342059521.json、视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json、视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `DiffusionModelSelector`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `TrimVideoLatent`
-- `VAEDecode`
+- `CR Prompt Text`
+- `Float`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `JWInteger`
+- `LoadWanVideoT5TextEncoder`
+- `SaveLatent`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 7/8 个有
-- `ImageResizeKJv2` —— 7/8 个有
-- `GetNode` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `RMBG` —— 5/8 个有
-- `SetNode` —— 5/8 个有
-- `Int` —— 4/8 个有
-- `AIO_Preprocessor` —— 3/8 个有
-- `Label (rgthree)` —— 3/8 个有
-- `SimpleMath+` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `WanVideoVACEStartToEndFrame` —— 3/8 个有
-- `CR Text Replace` —— 2/8 个有
-- `PrimitiveBoolean` —— 2/8 个有
-- `TextBox` —— 2/8 个有
-- `easy ifElse` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 1/8 个有
-- `CR Image Input Switch` —— 1/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `ImageResizeKJ` —— 1/8 个有
-- `ImpactSwitch` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `RH_Captioner` —— 1/8 个有
-- `RH_Translator` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `CreateCFGScheduleFloatList` —— 7/8 个有
+- `HunyuanVideoFoley` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `text_mul_replace` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `LoadImage` —— 6/8 个有
+- `WanVideoImageToVideoEncode` —— 6/8 个有
+- `WanVideoEmptyEmbeds` —— 2/8 个有
+- `PreviewImage` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `StringToFloatList` —— 1/8 个有
+- `VHS_LoadVideo` —— 1/8 个有
+- `WanVideoContextOptions` —— 1/8 个有
+- `WanVideoControlEmbeds` —— 1/8 个有
+- `WanVideoEncode` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 16 | 8 | 71% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,9 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 16，8 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 16，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

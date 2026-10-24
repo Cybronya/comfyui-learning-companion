@@ -1,66 +1,73 @@
 ---
 name: unknown_workflow_sampler_unet_vae_47
 type: Unknown Workflow
-frequency: 11
+frequency: 15
 level: moderate
-coverage: 0.922455
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAELoader]
+coverage: 0.841867
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
-missing: [CR Text Concatenate, Text Concatenate (JPS), Text Concatenate]
-members: [图片生成/文生图/08.flux-lora-快速文生图_1993297535381028865.json, 图片生成/文生图/1902172176840335361.json, 图片生成/文生图/1904904736871469057.json, 图片生成/文生图/1904906707053776898.json, 图片生成/文生图/1904907559919357954.json, 图片生成/文生图/1904908786933633026.json, 图片生成/文生图/1904909104412807170.json, 图片生成/文生图/1905062711074689026.json, 图片生成/文生图/1909546503734763521.json, 图片生成/文生图/1920491097255251969.json, 图片生成/文生图/In-Context-Lora字体设计_2018938772628443138.json]
+missing: []
+members: [视频生成/文生视频/Minimax H3-t2v 官方提示词文生视频_2085182661756276737.json, 视频生成/文生视频/Minimax H3-t2v 官方版文生视频_2084192379581583362.json, 视频生成/文生视频/Minimax H3-文生视频（高动态去噪点）_2089345292486402050.json, 视频生成/文生视频/Minimax H3视频模型文生视频_2084169698551361537.json, 视频生成/文生视频/Minimax h3 4 步 lora2 加速版_2092076952441151490.json, 视频生成/文生视频/Minimax+H3+Multi-parameter+Reference+Raw+Video_2084191041938345986.json, 视频生成/文生视频/Minimax-H3-T2V 开源版本+文生视频_2084249084893945858.json, 视频生成/文生视频/Minimax-H3-文生视频（Lightx2v加速）_2085988885787660289.json, 视频生成/文生视频/Minimax-H3-文生视频（Lightx2v正式版）_2087549637837283330.json, 视频生成/文生视频/Minimax-H3_T2V（文生视频_本地可用）_2084287507390353409.json, 视频生成/文生视频/MinimaxH3-全能参考生视频-夏_2093873460580802561.json, 视频生成/文生视频/MinimaxH3参考生成视频工作流_2088693526279319553.json, 视频生成/文生视频/MinimaxH3开源版 9-3-3参考生视频_2095459758181535745.json, 视频生成/文生视频/Minmax H3参考加速工作流_2086695240752263170.json, 视频生成/文生视频/minimax-h3 单采_2100560974238535682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_47
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/08.flux-lora-快速文生图_1993297535381028865.json、图片生成/文生图/1902172176840335361.json、图片生成/文生图/1904904736871469057.json、图片生成/文生图/1904906707053776898.json、图片生成/文生图/1904907559919357954.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/Minimax H3-t2v 官方提示词文生视频_2085182661756276737.json、视频生成/文生视频/Minimax H3-t2v 官方版文生视频_2084192379581583362.json、视频生成/文生视频/Minimax H3-文生视频（高动态去噪点）_2089345292486402050.json、视频生成/文生视频/Minimax H3视频模型文生视频_2084169698551361537.json、视频生成/文生视频/Minimax h3 4 步 lora2 加速版_2092076952441151490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 10/11 个有
-- `TextInput_` —— 9/11 个有
-- `CLIPTextEncode` —— 6/11 个有
-- `LoraLoaderModelOnly` —— 6/11 个有
-- `CLIPTextEncodeFlux` —— 5/11 个有
-- `LoraLoader` —— 5/11 个有
-- `CR Text Concatenate` —— 4/11 个有
-- `Int` —— 4/11 个有
-- `Text Concatenate (JPS)` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `Anything Everywhere3` —— 1/11 个有
-- `Fast Bypasser (rgthree)` —— 1/11 个有
-- `ImageGenResolutionFromLatent` —— 1/11 个有
-- `ModelSamplingFlux` —— 1/11 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/11 个有
-- `Text Concatenate` —— 1/11 个有
-- `VAEDecodeTiled` —— 1/11 个有
+- `MiniMaxH3ImageToVideo` —— 9/15 个有
+- `LoraLoaderModelOnly` —— 8/15 个有
+- `LoadImage` —— 7/15 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/15 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/15 个有
+- `ModelAttentionBackend` —— 5/15 个有
+- `PrimitiveStringMultiline` —— 5/15 个有
+- `LoadAudio` —— 4/15 个有
+- `LoadVideo` —— 4/15 个有
+- `GetVideoComponents` —— 3/15 个有
+- `CR Prompt Text` —— 2/15 个有
+- `ExtendIntermediateSigmas` —— 2/15 个有
+- `H3SigmaRefiner` —— 2/15 个有
+- `GetNode` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `ManualSigmas` —— 1/15 个有
+- `MiniMaxChunkFeedForward` —— 1/15 个有
+- `MiniMaxH3SigmaShift` —— 1/15 个有
+- `MiniMaxLowVRAMAttention` —— 1/15 个有
+- `Seed (rgthree)` —— 1/15 个有
+- `SetNode` —— 1/15 个有
+- `SigmasPreview` —— 1/15 个有
+- `VHS_LoadVideo` —— 1/15 个有
+- `easy showAnything` —— 1/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 720 - 1792 | 11 | 68% |
-| 高度 | 1216 | 1024 - 1920 | 11 | 77% |
-| LoRA 模型强度 | 0.8 | 0.6 - 1 | 5 | 79% |
-| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 720 - 1792，11 个样本
-- 高度 中位数 1216，观测区间 1024 - 1920，11 个样本
-- LoRA 模型强度 中位数 0.8，观测区间 0.6 - 1，5 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、Text Concatenate (JPS)、Text Concatenate
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

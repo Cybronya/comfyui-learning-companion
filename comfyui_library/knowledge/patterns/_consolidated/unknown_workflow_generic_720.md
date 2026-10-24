@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_720
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6905
-common_nodes: [4c314f31-ecda-4b08-ae98-faaba1bf613f, GetImageSize, ImageScaleToTotalPixels, LoadImage, SaveVideo]
+frequency: 4
+level: moderate
+coverage: 0.4575
+common_nodes: [ImpactSwitch, JjkText, RH_Jimeng_Image2Image, RH_Prompter, SaveImage, TextCombinerTwo, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_fastvideo_fasth3_i2v.json, comfyui-workflow-templates-json/video_minimax_h3_i2v.json]
+members: [图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json, 图片生成/文生图/即梦AI-文生图（手动提示词+扩写提示词+随机提示词）_1947167565694676994.json, 图片生成/文生图/漫剧   场景_1991475620517519362.json, 图片生成/文生图/漫剧   角色 设计_1987433422123675650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_720
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/video_fastvideo_fasth3_i2v.json、comfyui-workflow-templates-json/video_minimax_h3_i2v.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/11.1全能视频S 漫剧   角色 场景_1984198706054447106.json、图片生成/文生图/即梦AI-文生图（手动提示词+扩写提示词+随机提示词）_1947167565694676994.json、图片生成/文生图/漫剧   场景_1991475620517519362.json、图片生成/文生图/漫剧   角色 设计_1987433422123675650.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `4c314f31-ecda-4b08-ae98-faaba1bf613f`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `ImpactSwitch`
+- `JjkText`
+- `RH_Jimeng_Image2Image`
+- `RH_Prompter`
+- `SaveImage`
+- `TextCombinerTwo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 1/2 个有
+- `FluxResolutionNode` —— 3/4 个有
 
 ## 典型参数
 
@@ -42,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

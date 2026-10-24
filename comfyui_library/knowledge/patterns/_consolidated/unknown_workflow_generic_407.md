@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_407
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.82825
-common_nodes: [LoadImage, LoadVideo, PreviewAny, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, LoadOmniGen2Model, OmniGen2, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034094211007516673.json, 视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0_2037730885918793729.json, 视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json]
+members: [图片生成/图生图/OmniGen2 图生图风格转换_1947862771910197250.json, 图片生成/图生图/OmniGen2_1936534944283807746.json, 图片生成/图生图/OmniGen2图像编辑加速版_1937462767471509506.json, 图片生成/图生图/OmniGen2图片编辑（超越豆包一众模型）_2000834317058273282.json, 图片生成/图生图/haiilo-Gen2图生图修改_1947757539401314306.json, 图片生成/文生图/OmniGen2-万能改图_1956247216224698370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_407
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2034094211007516673.json、视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0_2037730885918793729.json、视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/OmniGen2 图生图风格转换_1947862771910197250.json、图片生成/图生图/OmniGen2_1936534944283807746.json、图片生成/图生图/OmniGen2图像编辑加速版_1937462767471509506.json、图片生成/图生图/OmniGen2图片编辑（超越豆包一众模型）_2000834317058273282.json、图片生成/图生图/haiilo-Gen2图生图修改_1947757539401314306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `PreviewAny`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `LoadOmniGen2Model`
+- `OmniGen2`
+- `RH_Translator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `JjkText` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
+- `easy cleanGpuUsed` —— 5/6 个有
 
 ## 典型参数
 

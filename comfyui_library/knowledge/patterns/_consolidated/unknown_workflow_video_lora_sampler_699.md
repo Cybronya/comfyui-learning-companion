@@ -2,62 +2,58 @@
 name: unknown_workflow_video_lora_sampler_699
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+level: moderate
+coverage: 0.782333
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan 2.2-Fun-VACE-文生视频_2072999543329038336.json, 视频生成/文生视频/Wan 2.2-Fun-VACE-首尾帧_2072999573054070784.json, 视频生成/文生视频/Wan2.2-VACE-首尾帧_2072999665202929664.json]
+members: [视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视+提示词智能扩写_1951972629169295361.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_699
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan 2.2-Fun-VACE-文生视频_2072999543329038336.json、视频生成/文生视频/Wan 2.2-Fun-VACE-首尾帧_2072999573054070784.json、视频生成/文生视频/Wan2.2-VACE-首尾帧_2072999665202929664.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视+提示词智能扩写_1951972629169295361.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `INTConstant`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `TrimVideoLatent`
-- `VAEDecode`
-- `VAELoader`
+- `CreateCFGScheduleFloatList`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
 - `GetImageSizeAndCount` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `WanVideoVACEStartToEndFrame` —— 2/3 个有
-- `CFGZeroStarAndInit` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
-- `WanVideoEnhanceAVideoKJ` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `Primitive integer [Crystools]` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
+- `Wan22PromptSelector` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 6 | 6 - 10 | 3 | 74% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | sa_solver_pece | - | 3 | 33% |
-| 重绘幅度 | simple | - | 3 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,8 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 10，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver_pece，3 个样本，一致性 33%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

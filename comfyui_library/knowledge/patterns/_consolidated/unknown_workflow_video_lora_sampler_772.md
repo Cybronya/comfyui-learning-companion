@@ -3,67 +3,64 @@ name: unknown_workflow_video_lora_sampler_772
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5565
-common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, GetNode, JjkText, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.964
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Groups Bypasser (rgthree), ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, Qwen3_VQA, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanImageToVideo, WanMoeKSampler, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MV_长视频生成_Minimax-H3（二采）_2101970637429493762.json, 视频生成/图生视频/短视频复刻-v3_2109928843170631681.json]
+members: [视频生成/图生视频/Remix2.1图生视频+首尾帧_2010736776633131010.json, 视频生成/图生视频/wan2.2-图生视频+首尾帧GGUF极速版_1998605766904963074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_772
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MV_长视频生成_Minimax-H3（二采）_2101970637429493762.json、视频生成/图生视频/短视频复刻-v3_2109928843170631681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Remix2.1图生视频+首尾帧_2010736776633131010.json、视频生成/图生视频/wan2.2-图生视频+首尾帧GGUF极速版_1998605766904963074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `GetNode`
-- `JjkText`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `UNETLoader`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `Qwen3_VQA`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
+- `WanImageToVideo`
+- `WanMoeKSampler`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MiniMaxH3MotionContext` —— 1/2 个有
-- `MiniMaxH3MotionContextLoadLatent` —— 1/2 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 1/2 个有
-- `MiniMaxH3MotionContextTrim` —— 1/2 个有
-- `SoundFlow_GetLength` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
+- `UnetLoaderGGUF` —— 1/2 个有
+- `easy getNode` —— 1/2 个有
+- `easy setNode` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | euler | - | 2 | 100% |
 
 ## 常见问题
 
@@ -71,4 +68,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

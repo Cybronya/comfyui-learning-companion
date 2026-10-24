@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_1011
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.857
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+frequency: 3
+level: moderate
+coverage: 0.861
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【精准控制声音情绪】IndexTTS2声音克隆【参考声音音色+参考声音情绪+文本】→【克隆声音】_2067141515532656642.json, 音频生成/音频生成/智造ai克隆音频_2079214947183185922.json]
+members: [视频生成/图生视频/Kling 2.6 Pro图生视频工作流｜可灵 2.6 带声效_2099402185208582146.json, 视频生成/图生视频/Kling O3 Pro参考生视频工作流｜角色一致性参考生视频_2099453250490691586.json, 视频生成/图生视频/Kling_V26ProImageToVideo_v2.6_2033808678465310721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1011
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【精准控制声音情绪】IndexTTS2声音克隆【参考声音音色+参考声音情绪+文本】→【克隆声音】_2067141515532656642.json、音频生成/音频生成/智造ai克隆音频_2079214947183185922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Kling 2.6 Pro图生视频工作流｜可灵 2.6 带声效_2099402185208582146.json、视频生成/图生视频/Kling O3 Pro参考生视频工作流｜角色一致性参考生视频_2099453250490691586.json、视频生成/图生视频/Kling_V26ProImageToVideo_v2.6_2033808678465310721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `RH_KlingV26ProImageToVideo` —— 2/3 个有
+- `RH_KlingVideoO3ProReferenceToVideo` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

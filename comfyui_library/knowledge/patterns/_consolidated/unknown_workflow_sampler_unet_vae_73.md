@@ -1,66 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_73
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.8116
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 12
+level: strong
+coverage: 0.898
+common_nodes: [CLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax-H3 fl2v_turbo加速_2088880527356026881.json, 视频生成/文生视频/MiniMaxH3_Larryvrh版加速_2085706255410225153.json, 视频生成/文生视频/MiniMaxh3双重加速文生视频_2087002916589756417.json, 视频生成/文生视频/Minimax H3 FL2VA 图片首尾帧视频_2095354444597784577.json, 视频生成/文生视频/Minimax H3 图生视频 最新8步增速工作流+全节点注释_2088628478857015297.json, 视频生成/文生视频/Minimax H3 文生视频 最新8步增速工作流_2087823188460920833.json, 视频生成/文生视频/Minimax H3 文生视频_2089487806417694721.json, 视频生成/文生视频/comfyui官方工作流-video_minimax_h3_t2v_2084148000615657474.json, 视频生成/文生视频/minimaxH3开源版文生视频(20step)_2092291766404870146.json, 视频生成/文生视频/【遇见AI】Minimax H3，文生图基础流_2084511826766811137.json]
+members: [图片生成/图生图/Qwen-image2.1-人像多角度生成_2101942834889838593.json, 图片生成/图生图/Qwen-image2.1-人像多角度生成_2108744184894148609.json, 图片生成/图生图/Qwen-image2.1-人像多角度生成_2110187888993456130.json, 图片生成/图生图/Qwen-image2.1-人物转白模_2107713734658584577.json, 图片生成/图生图/Qwen-image2.1-动作迁移2_2107475110847401986.json, 图片生成/图生图/Qwen-image2.1-单图编辑（4步加速）_2102723958306066433.json, 图片生成/图生图/Qwen-image2.1-图像人像+角度操控（AnyAngl-lora）_2105204359549243394.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2105644895645032449.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2105682659937705986.json, 图片生成/图生图/Qwen-image2.1-角色四视图及三视图生成_2103034276039188481.json, 图片生成/图生图/Qwen-image2.1-透明图层抠图_2102747243479658497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_73
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3 fl2v_turbo加速_2088880527356026881.json、视频生成/文生视频/MiniMaxH3_Larryvrh版加速_2085706255410225153.json、视频生成/文生视频/MiniMaxh3双重加速文生视频_2087002916589756417.json、视频生成/文生视频/Minimax H3 FL2VA 图片首尾帧视频_2095354444597784577.json、视频生成/文生视频/Minimax H3 图生视频 最新8步增速工作流+全节点注释_2088628478857015297.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1-人像多角度生成_2101942834889838593.json、图片生成/图生图/Qwen-image2.1-人像多角度生成_2108744184894148609.json、图片生成/图生图/Qwen-image2.1-人像多角度生成_2110187888993456130.json、图片生成/图生图/Qwen-image2.1-人物转白模_2107713734658584577.json、图片生成/图生图/Qwen-image2.1-动作迁移2_2107475110847401986.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `MiniMaxH3ImageToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `KSampler`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 9/10 个有
-- `ResolutionSelector` —— 9/10 个有
-- `BasicScheduler` —— 8/10 个有
-- `KSamplerSelect` —— 6/10 个有
-- `LoadImage` —— 6/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
-- `JjkText` —— 3/10 个有
-- `LoraLoaderBypassModelOnly` —— 3/10 个有
-- `CR Text` —— 2/10 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/10 个有
-- `MiniMaxH3TurboLoRA` —— 2/10 个有
-- `MiniMaxH3TurboSampler` —— 2/10 个有
-- `PixaromaDuration` —— 1/10 个有
-- `PixaromaSizes` —— 1/10 个有
-- `Text` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/12 个有
+- `LoraLoaderModelOnly` —— 9/12 个有
+- `CR Prompt Text` —— 4/12 个有
+- `QwenMultiangleCameraNode` —— 4/12 个有
+- `easy promptList` —— 4/12 个有
+- `easy showAnything` —— 4/12 个有
+- `EmptyLatentImage` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 6 - 25 | 12 | 59% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 1560 | - | 1 | 100% |
+| 高度 | 904 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 6 - 25，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

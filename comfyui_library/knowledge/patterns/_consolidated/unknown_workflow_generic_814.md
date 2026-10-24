@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_814
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioAdvanced]
+frequency: 4
+level: moderate
+coverage: 0.68425
+common_nodes: [RunningHub_VoxCPM_LoadModel, SaveAudioMP3]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3音色生成_2090373649973997570.json, 音频生成/音频生成/声音设计专用流_2016157124283342849.json]
+members: [音频生成/音频生成/VoxCPM1.5方言配音-方言语音工作流_2094701801990868994.json, 音频生成/音频生成/VoxCPM2声音极限克隆-音色复刻工作流_2094709776147107841.json, 音频生成/音频生成/VoxCPM双人对话-多说话人工作流_2094714662456741890.json, 音频生成/音频生成/【AI音频】 - VoxCPM2语音克隆设计_2043155950047076353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_814
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Qwen3音色生成_2090373649973997570.json、音频生成/音频生成/声音设计专用流_2016157124283342849.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM1.5方言配音-方言语音工作流_2094701801990868994.json、音频生成/音频生成/VoxCPM2声音极限克隆-音色复刻工作流_2094709776147107841.json、音频生成/音频生成/VoxCPM双人对话-多说话人工作流_2094714662456741890.json、音频生成/音频生成/【AI音频】 - VoxCPM2语音克隆设计_2043155950047076353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudioAdvanced`
+全部 4 个 workflow 都包含：
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `TextInput` —— 1/2 个有
+- `LoadAudio` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `RunningHub_VoxCPM_Generate` —— 3/4 个有
+- `RunningHub_VoxCPM_MultiSpeaker` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `SaveAudio` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

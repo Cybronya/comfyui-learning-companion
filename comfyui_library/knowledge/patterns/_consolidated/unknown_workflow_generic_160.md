@@ -1,45 +1,39 @@
 ---
 name: unknown_workflow_generic_160
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.877143
-common_nodes: [LoadImage]
+coverage: 0.694727
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2061625263947079681.json, 视频生成/图生视频/2037893339223171074.json, 视频生成/图生视频/2049369386825293826.json, 视频生成/图生视频/2034535724053172225.json, 视频生成/图生视频/2063452594969858049.json, 视频生成/文生视频/RH LLM+seedance剧本反推15秒视频短剧生成方案_2051153837792219138.json, 视频生成/文生视频/seedance2.0超能视频生成全流程发布_2043566549600047105.json]
+members: [图片生成/图生图/人物角色图_2088438846102007810.json, 图片生成/图生图/全套品牌 VI 工装视觉提案应用_2070347956980637697.json, 图片生成/图生图/全能图像G 2.0 全能图片G Image 2.0_2046779640945053698.json, 图片生成/图生图/全能图像G Image 2.0 ：从语言到视觉的生成引擎_图生图全能图片G2.0_2046587291623235586.json, 图片生成/图生图/全能图像G Image 2.0单图编辑_2046770393905635330.json, 图片生成/图生图/全能图像G Image 2.0双图编辑_2046784881849536513.json, 图片生成/图生图/全能图像G Image 2.0多图编辑（目前最强双图编辑）_2046805508866183169.json, 图片生成/图生图/全能图片2.5 鸡皮提新模型_2097894328864694274.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2098956670054522882.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2099068203778535426.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2100023234648436738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_160
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2061625263947079681.json、视频生成/图生视频/2037893339223171074.json、视频生成/图生视频/2049369386825293826.json、视频生成/图生视频/2034535724053172225.json、视频生成/图生视频/2063452594969858049.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/人物角色图_2088438846102007810.json、图片生成/图生图/全套品牌 VI 工装视觉提案应用_2070347956980637697.json、图片生成/图生图/全能图像G 2.0 全能图片G Image 2.0_2046779640945053698.json、图片生成/图生图/全能图像G Image 2.0 ：从语言到视觉的生成引擎_图生图全能图片G2.0_2046587291623235586.json、图片生成/图生图/全能图像G Image 2.0单图编辑_2046770393905635330.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 6/7 个有
-- `SaveVideo` —— 6/7 个有
-- `SaveImage` —— 5/7 个有
-- `RH_LLMAPI_Pro_Node` —— 4/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 4/7 个有
-- `easy showAnything` —— 4/7 个有
-- `CR Text` —— 3/7 个有
-- `LoadAudio` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `IndexTTS2Run` —— 1/7 个有
-- `LoadVideo` —— 1/7 个有
-- `MuyeTextEditOutput` —— 1/7 个有
-- `RH_RhartImageG2ImageToImage` —— 1/7 个有
-- `SaveAudio` —— 1/7 个有
+- `PreviewImage` —— 5/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/11 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 4/11 个有
+- `EmptyImage` —— 3/11 个有
 
 ## 典型参数
 

@@ -1,66 +1,62 @@
 ---
 name: unknown_workflow_sampler_clip_vae_28
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.93325
-common_nodes: [CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, ModelSamplingSD3, SaveImage, VAEDecode]
-problems: [Steps较低可能导致细节不足]
-missing: [String Literal, easy seed]
-members: [图片生成/文生图/04.WAN2.2-文生图-nf_1991131479682166785.json, 图片生成/文生图/09.Wan2.2文生图_1993297565200351233.json, 图片生成/文生图/1950527410125066242.json, 图片生成/文生图/1950849465034940417.json]
+coverage: 0.892857
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/文生图/FLUX2-dev文生图_1993862047901433857.json, 图片生成/文生图/FLUX2-dev文生图工作流_1993549884353609730.json, 图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2003736045457973250.json, 图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2041331289025945602.json, 图片生成/文生图/FLUX2文生图_1994284131244851202.json, 图片生成/文生图/FLUX2文生图基础工作流_1993578946742730753.json, 图片生成/文生图/FLUX2文生图基础工作流_1993609903375843329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_28
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/04.WAN2.2-文生图-nf_1991131479682166785.json、图片生成/文生图/09.Wan2.2文生图_1993297565200351233.json、图片生成/文生图/1950527410125066242.json、图片生成/文生图/1950849465034940417.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/FLUX2-dev文生图_1993862047901433857.json、图片生成/文生图/FLUX2-dev文生图工作流_1993549884353609730.json、图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2003736045457973250.json、图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2041331289025945602.json、图片生成/文生图/FLUX2文生图_1994284131244851202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSampler`
-- `ModelSamplingSD3`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `VAELoader` —— 3/4 个有
-- `UNETLoader` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `String Literal` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `UNETLoader` —— 6/7 个有
+- `Text Multiline` —— 3/7 个有
+- `Int` —— 2/7 个有
+- `RH_LLMAPI_NODE` —— 2/7 个有
+- `easy showAnything` —— 2/7 个有
+- `CR SDXL Aspect Ratio` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `RH_Translator` —— 1/7 个有
+- `UnetLoaderGGUF` —— 1/7 个有
+- `easy getNode` —— 1/7 个有
+- `easy setNode` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 4 | 69% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 4 | 62% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 0.75 | 0.5 - 1 | 4 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 0.75，观测区间 0.5 - 1，4 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、easy seed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

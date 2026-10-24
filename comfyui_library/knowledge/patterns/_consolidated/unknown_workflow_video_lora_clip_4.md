@@ -1,81 +1,86 @@
 ---
 name: unknown_workflow_video_lora_clip_4
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.542214
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanChunkFeedForward]
+frequency: 12
+level: strong
+coverage: 0.807167
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, GetNode, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, RIFE VFI, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065073781403643906.json, 视频生成/图生视频/2068015030934786049.json, 视频生成/图生视频/2067983408994807810.json, 视频生成/图生视频/2065050887139188738.json, 视频生成/图生视频/2067976240774074369.json, 视频生成/图生视频/2068006607816060929.json, 视频生成/图生视频/2069809845880049665.json, 视频生成/图生视频/2068608241436815362.json, 视频生成/图生视频/2068592068020228097.json, 视频生成/图生视频/Scail2人物替换工作流_2102813959735832577.json, 视频生成/图生视频/Scail2人物替换工作流_2106538167158530050.json, 视频生成/图生视频/2068613671097552898.json, 视频生成/图生视频/2064423977212272642.json, 视频生成/图生视频/2068394809362051074.json]
+members: [视频生成/图生视频/EMIX 首-中-尾三帧生成视频 Wan2.2 反推提示词 Remix 图生视频 REMIX_1996391603323412482.json, 视频生成/图生视频/EMIX++首-中-尾三帧视频  Wan2.2反推提示词-Remix图生视频 REMIX 提示词全自_1991311451711209474.json, 视频生成/图生视频/EMIX++首-中-尾三帧视频  Wan2.2反推提示词-Remix图生视频 REMIX 提示词全自_1997224219001950210.json, 视频生成/图生视频/EMIX++首-中-尾三帧视频++Wan2.2反推提示词-Remix图生视频+REMIX+提示词全自_2056912993627238401.json, 视频生成/图生视频/EMIX++首-中-尾三帧视频_2063808011449233410.json, 视频生成/图生视频/REMIX V2  首-中-尾三帧视频【可】_1991461571396321281.json, 视频生成/图生视频/REMIX V2 -图生视频+ QwenVL图片反推自动提示词_1991460751665741826.json, 视频生成/图生视频/REMIX V2 -最强首尾帧视频-插帧补帧_1991461490997862402.json, 视频生成/图生视频/视频首尾帧_1999869962674204673.json, 视频生成/图生视频/🕵🏻REMIX V2 最强首尾帧视频_1991285079978672130.json, 视频生成/图生视频/🕵🏻大丝袜 动漫专属模型 Dasiwa 图生视频🕵🏻_2007995692123426818.json, 视频生成/图生视频/🕵🏻大丝袜 动漫专属模型 Dasiwa 首尾帧视频🕵🏻_2008006375305125889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2065073781403643906.json、视频生成/图生视频/2068015030934786049.json、视频生成/图生视频/2067983408994807810.json、视频生成/图生视频/2065050887139188738.json、视频生成/图生视频/2067976240774074369.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/EMIX 首-中-尾三帧生成视频 Wan2.2 反推提示词 Remix 图生视频 REMIX_1996391603323412482.json、视频生成/图生视频/EMIX++首-中-尾三帧视频  Wan2.2反推提示词-Remix图生视频 REMIX 提示词全自_1991311451711209474.json、视频生成/图生视频/EMIX++首-中-尾三帧视频  Wan2.2反推提示词-Remix图生视频 REMIX 提示词全自_1997224219001950210.json、视频生成/图生视频/EMIX++首-中-尾三帧视频++Wan2.2反推提示词-Remix图生视频+REMIX+提示词全自_2056912993627238401.json、视频生成/图生视频/EMIX++首-中-尾三帧视频_2063808011449233410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DiffusionModelLoaderKJ`
+- `CR Text`
 - `GetNode`
-- `ImageResizeKJv2`
+- `ImpactInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `RIFE VFI`
 - `SetNode`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanChunkFeedForward`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 12/14 个有
-- `BatchImagesNode` —— 12/14 个有
-- `CheckpointLoaderSimple` —— 11/14 个有
-- `KSamplerSelect` —— 11/14 个有
-- `SAM3_VideoTrack` —— 11/14 个有
-- `SCAIL2ColoredMask` —— 11/14 个有
-- `SamplerCustom` —— 11/14 个有
-- `WanSCAILToVideo` —— 11/14 个有
-- `PreviewImage` —— 10/14 个有
-- `VAEDecode` —— 10/14 个有
-- `INTConstant` —— 7/14 个有
-- `ImageConcatMulti` —— 7/14 个有
-- `ColorTransfer` —— 6/14 个有
-- `GetImageRangeFromBatch` —— 6/14 个有
-- `VideoInfoLoaded` —— 6/14 个有
-- `WanContextWindowsManual` —— 4/14 个有
-- `RMBG` —— 3/14 个有
-- `SaveVideoNode` —— 3/14 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/14 个有
-- `GIMMVFI_interpolate` —— 2/14 个有
-- `LayerMask: RemBgUltra` —— 2/14 个有
-- `SAM3_Detect` —— 2/14 个有
-- `VAEDecodeTiled` —— 2/14 个有
-- `WanSCAILInfinity` —— 2/14 个有
-- `WanSCAILMultirefInfinity` —— 2/14 个有
-- `WanVideoMemoryEfficientSageAttentionPatch` —— 2/14 个有
-- `easy imageRemBg` —— 2/14 个有
-- `CR Text` —— 1/14 个有
-- `ComfySwitchNode` —— 1/14 个有
-- `EmptyImage` —— 1/14 个有
-- `GetImageSizeAndCount` —— 1/14 个有
-- `Int` —— 1/14 个有
+- `ImageResizeKJ` —— 10/12 个有
+- `easy getNode` —— 10/12 个有
+- `easy setNode` —— 10/12 个有
+- `wanBlockSwap` —— 10/12 个有
+- `Fast Muter (rgthree)` —— 9/12 个有
+- `KSamplerAdvanced` —— 6/12 个有
+- `WanFirstMiddleLastFrameToVideo` —— 6/12 个有
+- `WanMoeKSampler` —— 6/12 个有
+- `WanFirstLastFrameToVideo` —— 4/12 个有
+- `Fast Bypasser (rgthree)` —— 3/12 个有
+- `CR Text Replace` —— 2/12 个有
+- `Note Plus (mtb)` —— 2/12 个有
+- `PainterI2V` —— 2/12 个有
+- `ShowText|pysssss` —— 2/12 个有
+- `easy anythingIndexSwitch` —— 2/12 个有
+- `AILab_QwenVL` —— 1/12 个有
+- `JjkText` —— 1/12 个有
+- `PreviewAny` —— 1/12 个有
+- `PrimitiveBoolean` —— 1/12 个有
+- `RH_Captioner` —— 1/12 个有
+- `RH_Captioner_Pro` —— 1/12 个有
+- `TextBox` —— 1/12 个有
+- `easy convertAnything` —— 1/12 个有
+- `easy ifElse` —— 1/12 个有
+- `孤海注释` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 12 | 100% |
+| Prompt 约束强度(CFG) | 5.5 | 5 - 6 | 12 | 91% |
+| 采样算法 | 1 | 1 - 1 | 12 | 100% |
+| 调度器 | 1 | 1 - 1 | 6 | 100% |
+| 重绘幅度 | simple | - | 12 | 50% |
 
 ## 常见问题
 
@@ -83,4 +88,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，12 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 5.5，观测区间 5 - 6，12 个样本，取值集中（一致性 91%）
+- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 simple，12 个样本，一致性 50%

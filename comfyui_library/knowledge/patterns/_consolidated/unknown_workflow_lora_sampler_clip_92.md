@@ -1,77 +1,92 @@
 ---
 name: unknown_workflow_lora_sampler_clip_92
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: strong
-coverage: 0.767
-common_nodes: [BatchImagesNode, BerniniConditioning, BerniniPromptEnhancer, Bool, CLIPLoader, CLIPTextEncode, ComfySwitchNode, CreateVideo, Fast Groups Bypasser (rgthree), ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, PrimitiveInt, RH_LLMAPI_NODE, SaveVideo, StringReplace, TTP_text_mix, TextInput_, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.874833
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/2067931552071376897.json, 视频生成/图生视频/2068343750555955202.json, 视频生成/图生视频/2067557998221946881.json, 视频生成/图生视频/2073236445627772930.json]
+members: [视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色_2070832295954702337.json, 视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色低配_2070881520012849153.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Distilled_2068532278657118210.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Moded_2067979933967802369.json, 视频生成/图生视频/LTX-2.3_Ingredients多参考自动提示词twoStage_2069345362887929858.json, 视频生成/文生视频/【完全不输 MSR】告别崩坏！LTX-2.3 ingredients角色_道具_场景绝对锁定_2070380617480622081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_92
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2067931552071376897.json、视频生成/图生视频/2068343750555955202.json、视频生成/图生视频/2067557998221946881.json、视频生成/图生视频/2073236445627772930.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色_2070832295954702337.json、视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色低配_2070881520012849153.json、视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Distilled_2068532278657118210.json、视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Moded_2067979933967802369.json、视频生成/图生视频/LTX-2.3_Ingredients多参考自动提示词twoStage_2069345362887929858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BatchImagesNode`
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
-- `Bool`
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `CheckpointLoaderSimple`
 - `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `GetVideoComponents`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXFloatToInt`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LTXVTiledVAEDecode`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
 - `PrimitiveInt`
-- `RH_LLMAPI_NODE`
-- `SaveVideo`
-- `StringReplace`
-- `TTP_text_mix`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/4 个有
-- `EmptyHunyuanLatentVideo` —— 3/4 个有
-- `BasicScheduler` —— 2/4 个有
-- `KSamplerSelect` —— 2/4 个有
-- `MaxNode` —— 2/4 个有
-- `PromptRelayEncodeTimeline` —— 2/4 个有
-- `SplitSigmas` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `VRAM_Debug` —— 2/4 个有
-- `easy convertAnything` —— 2/4 个有
-- `BerniniPromptResultParser` —— 1/4 个有
-- `PromptRelayEncode` —— 1/4 个有
-- `WanContextWindowsManual` —— 1/4 个有
+- `PreviewImage` —— 5/6 个有
+- `SaveVideo` —— 5/6 个有
+- `PreviewAny` —— 4/6 个有
+- `JjkText` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `RH_LLMAPI_NODE` —— 2/6 个有
+- `VHS_VideoCombine` —— 2/6 个有
+- `llama_cpp_instruct_adv` —— 2/6 个有
+- `llama_cpp_model_loader` —— 2/6 个有
+- `llama_cpp_parameters` —— 2/6 个有
+- `ComfySwitchNode` —— 1/6 个有
+- `DualCLIPLoader` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `ImageConcatenateMulti_UTK` —— 1/6 个有
+- `LTXVImgToVideoInplace` —— 1/6 个有
+- `LTXVLatentUpsampler` —— 1/6 个有
+- `LatentUpscaleModelLoader` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringReplace` —— 1/6 个有
+- `TextGenerate` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
+- `VAEDecodeTiled` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 24 | 24 - 24 | 6 | 100% |
 
 ## 常见问题
 
@@ -79,8 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，6 个样本，取值集中（一致性 100%）

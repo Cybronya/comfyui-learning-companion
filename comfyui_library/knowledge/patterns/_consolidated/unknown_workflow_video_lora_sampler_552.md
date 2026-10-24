@@ -3,64 +3,53 @@ name: unknown_workflow_video_lora_sampler_552
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.68
-common_nodes: [AILab_MiniCPM_4_V, CLIPLoader, CLIPTextEncode, CreateScheduleFloatList, GetImageRangeFromBatch, GetLatentSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, PreviewAny, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddExtraLatent, WanVideoAddPusaNoise, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEmbedBridge, WanVideoTextEncodeCached, WanVideoTinyVAELoader, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.94
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [LayerUtility: PurgeVRAM V2, SimpleMath+]
-members: [视频生成/文生视频/1964993314611187714.json, 视频生成/文生视频/1967482692935749633.json, 视频生成/文生视频/PUSA+VACE视频延长_2072999575281246208.json, 视频生成/文生视频/Pusa视频延长_2072999589491548160.json]
+missing: []
+members: [视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json, 视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json, 视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json, 视频生成/文生视频/万相Wan2.2图生视频2025KJ加速版工作流_1975384215250448386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_552
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1964993314611187714.json、视频生成/文生视频/1967482692935749633.json、视频生成/文生视频/PUSA+VACE视频延长_2072999575281246208.json、视频生成/文生视频/Pusa视频延长_2072999589491548160.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Wan2.2-TTM-1030×PainterI2V可控大动态图到视频_1991785174904172546.json、视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json、视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json、视频生成/文生视频/万相Wan2.2图生视频2025KJ加速版工作流_1975384215250448386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AILab_MiniCPM_4_V`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CreateScheduleFloatList`
-- `GetImageRangeFromBatch`
-- `GetLatentSizeAndCount`
-- `GetNode`
+- `CreateCFGScheduleFloatList`
 - `INTConstant`
-- `ImageBatchMulti`
-- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
-- `PreviewAny`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddExtraLatent`
-- `WanVideoAddPusaNoise`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEmbedBridge`
-- `WanVideoTextEncodeCached`
-- `WanVideoTinyVAELoader`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoVACEModelSelect` —— 2/4 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `easy seed` —— 3/4 个有
+- `ImageToMask` —— 1/4 个有
+- `String Literal` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `WanVideoAddTTMLatents` —— 1/4 个有
+- `WanVideoEncode` —— 1/4 个有
+- `easy globalSeed` —— 1/4 个有
 
 ## 典型参数
 
@@ -72,4 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、SimpleMath+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

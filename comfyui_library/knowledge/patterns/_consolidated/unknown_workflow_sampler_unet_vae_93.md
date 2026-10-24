@@ -1,63 +1,64 @@
 ---
 name: unknown_workflow_sampler_unet_vae_93
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.892375
-common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 10
+level: strong
+coverage: 0.7136
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, PrimitiveStringMultiline, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [LayerUtility: PurgeVRAM, Lora Loader Stack (rgthree), Upscale Model Loader, CR Text Concatenate]
-members: [图片生成/文生图/1911385397333585922.json, 图片生成/文生图/1911723649815015426.json, 图片生成/文生图/1911771666933055489.json, 图片生成/文生图/1915288629995048961.json, 图片生成/文生图/1938572723696099330.json, 图片生成/文生图/1945170907587596289.json, 图片生成/文生图/1946922717151158273.json, 图片生成/文生图/1949732974748672001.json]
+missing: []
+members: [图片生成/图生图/Qwen Image 2.1图像编辑_2101559779452866561.json, 图片生成/图生图/Qwen Image 2.1自动分镜 短剧分镜_2102191085471752193.json, 图片生成/图生图/Qwen Image 2.1：图像编辑_2101759280482447361.json, 图片生成/图生图/Qwen Image 2.1：图像编辑_2107755188273635330.json, 图片生成/图生图/Qwen Image 2.1：图像编辑_2107781008266452993.json, 图片生成/图生图/Qwen_Image_2.1图像编辑_2108748975942750210.json, 图片生成/图生图/Qwen_Image_2.1图像编辑_2110553190163902466.json, 图片生成/文生图/AI换装丨Qwen-Image 2.1丨双图试穿·智能提示词_2108075858605993985.json, 图片生成/文生图/Qwen Image 2.1：文生图_2101751274873122818.json, 图片生成/文生图/image_qwen_image_2_1_t2i_2111477762887348225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_93
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1911385397333585922.json、图片生成/文生图/1911723649815015426.json、图片生成/文生图/1911771666933055489.json、图片生成/文生图/1915288629995048961.json、图片生成/文生图/1938572723696099330.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1图像编辑_2101559779452866561.json、图片生成/图生图/Qwen Image 2.1自动分镜 短剧分镜_2102191085471752193.json、图片生成/图生图/Qwen Image 2.1：图像编辑_2101759280482447361.json、图片生成/图生图/Qwen Image 2.1：图像编辑_2107755188273635330.json、图片生成/图生图/Qwen Image 2.1：图像编辑_2107781008266452993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `DualCLIPLoader`
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `PrimitiveStringMultiline`
+- `QwenImage21Cache`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 6/8 个有
-- `CLIPTextEncodeFlux` —— 5/8 个有
-- `SeargePromptCombiner` —— 4/8 个有
-- `CLIPTextEncode` —— 3/8 个有
-- `ImageUpscaleWithModel` —— 2/8 个有
-- `LayerUtility: PurgeVRAM` —— 2/8 个有
-- `Lora Loader Stack (rgthree)` —— 2/8 个有
-- `TeaCache` —— 2/8 个有
-- `Upscale Model Loader` —— 2/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `RH_Translator` —— 1/8 个有
-- `TextInput_` —— 1/8 个有
+- `SaveImageAdvanced` —— 9/10 个有
+- `LoadImage` —— 8/10 个有
+- `ResolutionSelector` —— 7/10 个有
+- `ImageCompare` —— 6/10 个有
+- `TextGenerate` —— 6/10 个有
+- `JjkText` —— 5/10 个有
+- `PreviewAny` —— 5/10 个有
+- `BatchImagesNode` —— 4/10 个有
+- `GetImageSize` —— 3/10 个有
+- `ModelAttentionBackend` —— 3/10 个有
+- `ResizeImageMaskNode` —— 3/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 720 - 1024 | 8 | 89% |
-| 高度 | 1024 | 1024 - 1536 | 8 | 84% |
-| LoRA 模型强度 | 0.8 | 0.8 - 1 | 6 | 89% |
-| LoRA 文本强度 | 1 | 0 - 1 | 6 | 55% |
+| 宽度 | 1024 | 1024 - 1088 | 10 | 98% |
+| 高度 | 1024 | 1024 - 1920 | 10 | 76% |
+| 采样步数 | 25 | 25 - 50 | 10 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
@@ -65,8 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 720 - 1024，8 个样本，取值集中（一致性 89%）
-- 高度 中位数 1024，观测区间 1024 - 1536，8 个样本，取值集中（一致性 84%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，6 个样本，取值集中（一致性 89%）
-- LoRA 文本强度 中位数 1，观测区间 0 - 1，6 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM、Lora Loader Stack (rgthree)、Upscale Model Loader、CR Text Concatenate
+- 宽度 中位数 1024，观测区间 1024 - 1088，10 个样本，取值集中（一致性 98%）
+- 高度 中位数 1024，观测区间 1024 - 1920，10 个样本
+- 采样步数 中位数 25，观测区间 25 - 50，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

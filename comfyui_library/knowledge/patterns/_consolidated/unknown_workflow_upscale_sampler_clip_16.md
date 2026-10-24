@@ -1,57 +1,78 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_16
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5995
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler (Efficient), ModelSamplingAuraFlow, PreviewImage, Prompts Everywhere, SaveImage, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.797571
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader_Any, CLIPTextEncode, Image Comparer (rgthree), ImageScaleBy, ImageScaleToTotalPixels, ImageScaleToTotalPixelsX, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader_Any, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader_Any, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, easy imageSize]
 problems: []
-missing: [LayerFilter: HDREffects, KSampler (Efficient), Prompts Everywhere]
-members: [图片生成/文生图/1954720212358709250.json, 图片生成/文生图/1954739193664684033.json]
+missing: []
+members: [图片生成/图生图/4K高清放大 修复ttp+_+block+zoom+_+Noise_realism_2092779877316513793.json, 图片生成/图生图/flux2-klein-TTP分块放大+_+轻量版_2085538612657086465.json, 图片生成/图生图/flux2-klein-TTP分块放大_四视图放大专用_2096880958858416130.json, 图片生成/图生图/flux2-klein-TTP分块放大_四视图放大专用_2097172513771048962.json, 图片生成/图生图/flux2-klein-ttp高清放大_去噪真实感还原_2093238016969109506.json, 图片生成/图生图/flux2-klein-ttp高清放大_去噪真实感还原_2093509996926562305.json, 图片生成/图生图/klein+ttp block+zoom Noise_realism 极致高清放大_2101482763407941633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_16
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1954720212358709250.json、图片生成/文生图/1954739193664684033.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/4K高清放大 修复ttp+_+block+zoom+_+Noise_realism_2092779877316513793.json、图片生成/图生图/flux2-klein-TTP分块放大+_+轻量版_2085538612657086465.json、图片生成/图生图/flux2-klein-TTP分块放大_四视图放大专用_2096880958858416130.json、图片生成/图生图/flux2-klein-TTP分块放大_四视图放大专用_2097172513771048962.json、图片生成/图生图/flux2-klein-ttp高清放大_去噪真实感还原_2093238016969109506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader_Any`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler (Efficient)`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `Prompts Everywhere`
-- `SaveImage`
-- `UltimateSDUpscale`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixelsX`
+- `ImageUpscaleWithModel`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `UNETLoader_Any`
 - `UpscaleModelLoader`
-- `VAELoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader_Any`
+- `easy imageBatchToImageList`
+- `easy imageColorMatch`
+- `easy imageListToImageBatch`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 1/2 个有
-- `CLIPLoaderGGUF` —— 1/2 个有
-- `LayerFilter: HDREffects` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `GetNode` —— 6/7 个有
+- `Image Overlay` —— 6/7 个有
+- `ImageNoiseAugmentation` —— 6/7 个有
+- `KuwaharaBlur` —— 6/7 个有
+- `LayerMask: BiRefNetUltraV2` —— 6/7 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `SaveImage` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `MaskPreview+` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `SaveImageJPG_GH` —— 5/7 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 4/7 个有
+- `Mask Invert` —— 4/7 个有
+- `AddMask` —— 2/7 个有
+- `GoohaiUniversalSlider` —— 2/7 个有
+- `GrowMaskWithBlur` —— 2/7 个有
+- `easy sam3ImageSegmentation` —— 2/7 个有
+- `easy sam3ModelLoader` —— 2/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,10 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerFilter: HDREffects、KSampler (Efficient)、Prompts Everywhere
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

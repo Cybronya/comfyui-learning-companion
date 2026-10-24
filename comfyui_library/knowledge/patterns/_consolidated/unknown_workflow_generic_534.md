@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_534
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.563333
-common_nodes: [Comfly_api_set, Comfly_gpt_image_1, LoadImage, RH_Translator, SaveImage]
+coverage: 0.7148
+common_nodes: [JjkText, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G+Image+1.5文生图+0.35每张 10s极速出图_2001559017518428162.json, 图片生成/文生图/全能图片g image 1 mini & 文生图 全能图片G-image-1-mini 0.15每张_2000835546555576321.json, 图片生成/文生图/全能图片g image 1.5 & 文生图 全能图片G-image-1.5 0.03每张_2001208565605990402.json]
+members: [图片生成/图生图/全能视频S 并发4个_2005681568708521986.json, 图片生成/图生图/全能视频X-图生视频-官方稳定版_2041841814168145921.json, 视频生成/图生视频/三笔成书——全能视频S多线程视频_1999903042818502658.json, 视频生成/图生视频/全能视频S Image to Video Batch 多程线并发 闪电生成_1999004397331959810.json, 视频生成/图生视频/全能视频S图生视频__批量视频高速7个并发_2001204449873887233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_534
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G+Image+1.5文生图+0.35每张 10s极速出图_2001559017518428162.json、图片生成/文生图/全能图片g image 1 mini & 文生图 全能图片G-image-1-mini 0.15每张_2000835546555576321.json、图片生成/文生图/全能图片g image 1.5 & 文生图 全能图片G-image-1.5 0.03每张_2001208565605990402.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能视频S 并发4个_2005681568708521986.json、图片生成/图生图/全能视频X-图生视频-官方稳定版_2041841814168145921.json、视频生成/图生视频/三笔成书——全能视频S多线程视频_1999903042818502658.json、视频生成/图生视频/全能视频S Image to Video Batch 多程线并发 闪电生成_1999004397331959810.json、视频生成/图生视频/全能视频S图生视频__批量视频高速7个并发_2001204449873887233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Comfly_api_set`
-- `Comfly_gpt_image_1`
+全部 5 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `RH_Translator`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 2/3 个有
-- `RH_GPT_Image15` —— 1/3 个有
+- `RH_Sora2_I2V_Batch` —— 4/5 个有
+- `easy saveText` —— 3/5 个有
+- `RH_RhartVideoGOfficialImageToVideo` —— 1/5 个有
 
 ## 典型参数
 

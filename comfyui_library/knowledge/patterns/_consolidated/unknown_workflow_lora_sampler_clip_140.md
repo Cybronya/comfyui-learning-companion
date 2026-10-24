@@ -1,82 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_clip_140
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.516667
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ComfyNumberConvert, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXIdentityOverlapConditioning, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAny, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoaderKJ]
+frequency: 4
+level: moderate
+coverage: 0.83425
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CheckpointLoaderSimple, DualCLIPLoader, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3-R2V人物参考图-图生视频_2081338352216924161.json, 视频生成/文生视频/LTX2.3_Best-FaceID_文生视频_人物脸部参考_2081784355512471553.json, 视频生成/文生视频/ltx2.3-BFI_2079731636958224385.json]
+members: [图片生成/图生图/去AI感图像质感优化 加强脸部纹理_1954441094429863937.json, 图片生成/图生图/增加人物皮肤细节去AI感｜Flux krea_1986777700302057473.json, 图片生成/图生图/提升皮肤质感（精修人物皮肤去除AI味）_1990766340678033410.json, 图片生成/图生图/消除 AI 感人像皮肤 细腻皮肤｜一键生成_1933848354814087170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_140
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX2.3-R2V人物参考图-图生视频_2081338352216924161.json、视频生成/文生视频/LTX2.3_Best-FaceID_文生视频_人物脸部参考_2081784355512471553.json、视频生成/文生视频/ltx2.3-BFI_2079731636958224385.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/去AI感图像质感优化 加强脸部纹理_1954441094429863937.json、图片生成/图生图/增加人物皮肤细节去AI感｜Flux krea_1986777700302057473.json、图片生成/图生图/提升皮肤质感（精修人物皮肤去除AI味）_1990766340678033410.json、图片生成/图生图/消除 AI 感人像皮肤 细腻皮肤｜一键生成_1933848354814087170.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：52%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyNumberConvert`
+- `CLIPTextEncodeFlux`
+- `CheckpointLoaderSimple`
 - `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
-- `LTXIdentityOverlapConditioning`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
 - `SamplerCustomAdvanced`
-- `SimpleCalculatorKJ`
-- `StringConcatenate`
-- `TextGenerate`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LTX2SamplingPreviewOverride` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `VAELoader` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `AddLabel` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `LatentUpscaleModelLoader` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `RecordAudio` —— 1/3 个有
-- `SetReserveVRAM` —— 1/3 个有
+- `UpscaleModelLoader` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `UltimateSDUpscale` —— 2/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageResize+` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `LayerUtility: ImageReel` —— 1/4 个有
+- `LayerUtility: ImageReelComposit` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `LoraLoader` —— 1/4 个有
+- `SUPIR_tiles` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+| LoRA 模型强度 | 0.8 | - | 1 | 100% |
+| LoRA 文本强度 | 0.8 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -84,5 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

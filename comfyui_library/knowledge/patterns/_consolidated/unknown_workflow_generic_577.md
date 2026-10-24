@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_577
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveImage, SaveVideo]
+common_nodes: [GetVideoComponents, ImageBatchGet, LoadVideo, RH_Captioner, RunningHub ThinkSound, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073403634406223873.json, 视频生成/图生视频/2034847827666411522.json, 视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json]
+members: [视频生成/图生视频/ThinkSound视频配音_1944938315844079618.json, 音频生成/音频生成/ThinkSound为视频配音_1942795666395738113.json, 音频生成/音频生成/ThinkSound视频配音_1943341470965526529.json, 音频生成/音频生成/ThnikSound视频配音_1942744901547438082.json, 音频生成/音频生成/王炸！思维链版ThinkSound视频配音工作流_1942401903257128961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_577
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2073403634406223873.json、视频生成/图生视频/2034847827666411522.json、视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ThinkSound视频配音_1944938315844079618.json、音频生成/音频生成/ThinkSound为视频配音_1942795666395738113.json、音频生成/音频生成/ThinkSound视频配音_1943341470965526529.json、音频生成/音频生成/ThnikSound视频配音_1942744901547438082.json、音频生成/音频生成/王炸！思维链版ThinkSound视频配音工作流_1942401903257128961.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_CinematicVideoGenerator`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageBatchGet`
+- `LoadVideo`
+- `RH_Captioner`
+- `RunningHub ThinkSound`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
+- `RH_Translator` —— 4/5 个有
+- `Bjornulf_ShowStringText` —— 1/5 个有
 
 ## 典型参数
 

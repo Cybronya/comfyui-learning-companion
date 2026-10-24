@@ -3,39 +3,36 @@ name: unknown_workflow_video_80
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.829
-common_nodes: [CR Text, LoadImage, Primitive integer [Crystools], RHHiddenNodes, RunningHub_FramePack_F1, VHS_VideoCombine, easy showAnything]
+coverage: 1
+common_nodes: [Bjornulf_ShowInt, GetImageSizeAndCount, ImageCompositeMasked, ImageRemoveBackground+, ImageResizeKJv2, RepeatImageBatch, TransparentBGSession+, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1932965781720236033.json, 视频生成/图生视频/1920125027860287490.json]
+members: [图片生成/图生图/晴空碧野白云飞特效_2044281157335912450.json, 视频生成/图生视频/火山爆发特效_2043002610755571714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_80
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1932965781720236033.json、视频生成/图生视频/1920125027860287490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/晴空碧野白云飞特效_2044281157335912450.json、视频生成/图生视频/火山爆发特效_2043002610755571714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RunningHub_FramePack_F1`
+- `Bjornulf_ShowInt`
+- `GetImageSizeAndCount`
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `RepeatImageBatch`
+- `TransparentBGSession+`
+- `VHS_LoadVideo`
+- `VHS_SplitImages`
 - `VHS_VideoCombine`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

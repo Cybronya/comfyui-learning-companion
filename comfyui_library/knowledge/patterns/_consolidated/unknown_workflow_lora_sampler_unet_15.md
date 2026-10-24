@@ -1,79 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_15
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.727889
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VRGDG_MiniMaxH3AudioDrive]
-problems: []
+frequency: 21
+level: strong
+coverage: 0.914286
+common_nodes: [CLIPLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/H3数字人对口型_2094236378186993665.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2084814218431385601.json, 数字人/数字人/minimax H3 数字人(音频驱动)_2092695013871407105.json, 数字人/数字人/minimax H3图片+音频驱动数字人加速版_2085532607906934785.json, 数字人/数字人/minimaxH3音频数字人工作流_2094820044269252610.json, 数字人/数字人/（终版）MiniMax H3  数字人_单人版_2089032061117100034.json, 视频生成/图生视频/H3数字人对口型_2092500387885576193.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2095193353284575233.json, 视频生成/图生视频/MinimaxH3音频驱动视频生成_2091411487955972097.json]
+members: [图片生成/图生图/AIGC特异点-最强抠图王_2045408571206148098.json, 图片生成/图生图/FLUX.2-klein 溶图打光（不偏移）_2046538388777476098.json, 图片生成/图生图/Flux-Klein-2 简约产品线稿图_2078260005668745217.json, 图片生成/图生图/Flux-Klein-2_简约产品线稿图_2079018113915506690.json, 图片生成/图生图/Flux-Klein-2_简约产品线稿图_2079401194891603969.json, 图片生成/图生图/Klein 9B一键光影重塑 专用LoRA_2043929620445143042.json, 图片生成/图生图/Klein 9B一键生成光影重塑 专用LoRA图生图_2053428960138145794.json, 图片生成/图生图/Klein 9B一键生成光影重塑 专用LoRA图生图_2054154663674564610.json, 图片生成/图生图/Klein 9B一键生成光影重塑 专用LoRA图生图_2101259024669962242.json, 图片生成/图生图/Klein 9B一键生成光影重塑 专用LoRA图生图_2101302359610712065.json, 图片生成/图生图/Klein 9B一键生成光影重塑 专用LoRA图生图_2107761228495024130.json, 图片生成/图生图/Klein 9B一键生成光影重塑 专用LoRA图生图_2107778250016641025.json, 图片生成/图生图/Klein 9B一键细节修复加笔触废土LoRA图生图-高级灰_2067887283566637058.json, 图片生成/图生图/Klein_9B一键光影重塑_专用LoRA_2062420907284590594.json, 图片生成/图生图/Klein_9B一键光影重塑_专用LoRA_2090074598116257793.json, 图片生成/图生图/Klein_9B一键光影重塑_专用LoRA_2096805023417196545.json, 图片生成/图生图/Klein_9B一键光影重塑_专用LoRA_2097150277370605569.json, 图片生成/图生图/Klein_9B一键溶图测试_2099506244464758785.json, 图片生成/图生图/Klein_光影重塑_2087365058488791041.json, 图片生成/图生图/Qwen_抠图王中王_2025655984181485569.json, 图片生成/图生图/抠图1_2044610260324847617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_15
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/H3数字人对口型_2094236378186993665.json、数字人/数字人/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2084814218431385601.json、数字人/数字人/minimax H3 数字人(音频驱动)_2092695013871407105.json、数字人/数字人/minimax H3图片+音频驱动数字人加速版_2085532607906934785.json、数字人/数字人/minimaxH3音频数字人工作流_2094820044269252610.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/AIGC特异点-最强抠图王_2045408571206148098.json、图片生成/图生图/FLUX.2-klein 溶图打光（不偏移）_2046538388777476098.json、图片生成/图生图/Flux-Klein-2 简约产品线稿图_2078260005668745217.json、图片生成/图生图/Flux-Klein-2_简约产品线稿图_2079018113915506690.json、图片生成/图生图/Flux-Klein-2_简约产品线稿图_2079401194891603969.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **样本数**：21
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 21 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadAudio`
+- `Image Comparer (rgthree)`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/9 个有
-- `PrimitiveFloat` —— 7/9 个有
-- `ModelAttentionBackend` —— 6/9 个有
-- `ModelPreviewOverrideKJ` —— 6/9 个有
-- `PrimitiveStringMultiline` —— 6/9 个有
-- `VHS_VideoCombine` —— 6/9 个有
-- `PreviewAudio` —— 5/9 个有
-- `TrimAudioDuration` —— 5/9 个有
-- `AudioCrop` —— 4/9 个有
-- `CreateVideo` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `PathchSageAttentionKJ` —— 3/9 个有
-- `SaveVideo` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `MiniMaxH3SigmaShift` —— 2/9 个有
-- `ShowAnything|Mie` —— 2/9 个有
-- `ImageFromBatch` —— 1/9 个有
-- `MiniMaxH3BlockCacheT8` —— 1/9 个有
-- `SaveImageAdvanced` —— 1/9 个有
-- `SolAttnMiniMax` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `PainterFluxImageEdit` —— 19/21 个有
+- `GetImageSize+` —— 16/21 个有
+- `ResizeImagesByLongerEdge` —— 16/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/21 个有
+- `GrowMask` —— 3/21 个有
+- `ImageToMask` —— 3/21 个有
+- `LayerUtility: ImageCombineAlpha` —— 3/21 个有
+- `easy int` —— 3/21 个有
+- `ConditioningZeroOut` —— 2/21 个有
+- `Easy_QwenEdit2509` —— 2/21 个有
+- `Seed (rgthree)` —— 2/21 个有
+- `TextInputNode` —— 1/21 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 5 | 4 - 8 | 21 | 86% |
+| Prompt 约束强度(CFG) | 0.7 | 0.5 - 1 | 21 | 82% |
+| 采样算法 | euler | - | 21 | 95% |
+| 调度器 | simple | - | 21 | 76% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 21/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 5，观测区间 4 - 8，21 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 0.7，观测区间 0.5 - 1，21 个样本，取值集中（一致性 82%）
+- 采样算法 最常用 euler，21 个样本，一致性 95%
+- 调度器 最常用 simple，21 个样本，一致性 76%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.5，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 高发问题（21/21 个样本）：Steps较低可能导致细节不足

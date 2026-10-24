@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_447
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.73175
-common_nodes: [HeartMuLa_Generate, RH_LLMAPI_NODE, SaveAudio, Text Multiline, easy showAnything]
+coverage: 0.6495
+common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3ForcedAlign, Qwen3ForcedAlignerLoader, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json, 音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json, 音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json, 音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json]
+members: [图片生成/文生图/SynVow_Qwen3ASR 多语言音频转文本_2018970445520838658.json, 数字人/数字人/Index-TTS1.5新版语音克隆，急速体验_2088229438382239745.json, 音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2019658132808536065.json, 音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2041507271208869889.json, 音频生成/音频生成/SynVow_Qwen3ASR 语音转文字_2022325449564622850.json, 音频生成/音频生成/SynVow_Qwen3ASR 语音转文字基础工作流_2020676844198039553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_447
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json、音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json、音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json、音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/SynVow_Qwen3ASR 多语言音频转文本_2018970445520838658.json、数字人/数字人/Index-TTS1.5新版语音克隆，急速体验_2088229438382239745.json、音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2019658132808536065.json、音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2041507271208869889.json、音频生成/音频生成/SynVow_Qwen3ASR 语音转文字_2022325449564622850.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `Text Multiline`
-- `easy showAnything`
+全部 6 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `Qwen3ForcedAlign`
+- `Qwen3ForcedAlignerLoader`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
+- `CR Prompt Text` —— 1/6 个有
+- `IndexTTSRun` —— 1/6 个有
+- `SaveAudio` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,94 +1,50 @@
 ---
 name: unknown_workflow_video_sampler_5
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.64175
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, INTConstant, ImageCropByMaskAndResize, ImageResizeKJ, LoadImage, PixelPerfectResolution, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoTextEncodeCached, easy anythingIndexSwitch, easy cleanGpuUsed]
+coverage: 0.928333
+common_nodes: [DownloadAndLoadMimicMotionModel, GetImageSizeAndCount, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/CHARM-动作迁移+面部表情-WanAnimate_1970806141703909377.json, 视频生成/图生视频/CHARM-角色替换+动作迁移+面部表情-WanAnimate_1969347581694406657.json, 视频生成/图生视频/1999709871861792770.json, 视频生成/图生视频/2011786789937221634.json, 视频生成/图生视频/1976525741590450177.json, 视频生成/图生视频/1971065537902059521.json, 视频生成/图生视频/1975054171986595841.json, 视频生成/图生视频/1983153039076958210.json]
+members: [视频生成/图生视频/MimicMotion 上传图片生成跳舞 图生视频跳舞_1953091916986519553.json, 视频生成/图生视频/MimicMotion 动作迁移（带教学）_2036712403487956993.json, 视频生成/图生视频/MimicMotion一张照片转跳舞视频_1909639467118882818.json, 视频生成/图生视频/MimicMotion万能舞蹈视频_1909815248260427777.json, 视频生成/图生视频/一键生成美女跳舞视频_1897884391828312065.json, 视频生成/图生视频/图生视频转绘-动作迁移_1896079729521262594.json, 视频生成/图生视频/基于mimicmotion的图片跳舞工作流_1898671504601894913.json, 视频生成/图生视频/美女一键跳舞_1899399710896209921.json, 视频生成/图生视频/美女网红舞蹈AI视频生成器 一键图像参考视频风格转换工作流-StarAI_1898791557779410945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/CHARM-动作迁移+面部表情-WanAnimate_1970806141703909377.json、视频生成/图生视频/CHARM-角色替换+动作迁移+面部表情-WanAnimate_1969347581694406657.json、视频生成/图生视频/1999709871861792770.json、视频生成/图生视频/2011786789937221634.json、视频生成/图生视频/1976525741590450177.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MimicMotion 上传图片生成跳舞 图生视频跳舞_1953091916986519553.json、视频生成/图生视频/MimicMotion 动作迁移（带教学）_2036712403487956993.json、视频生成/图生视频/MimicMotion一张照片转跳舞视频_1909639467118882818.json、视频生成/图生视频/MimicMotion万能舞蹈视频_1909815248260427777.json、视频生成/图生视频/一键生成美女跳舞视频_1897884391828312065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `INTConstant`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJ`
+全部 9 个 workflow 都包含：
+- `DownloadAndLoadMimicMotionModel`
+- `GetImageSizeAndCount`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
+- `MimicMotionDecode`
+- `MimicMotionGetPoses`
+- `MimicMotionSampler`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 7/8 个有
-- `DownloadAndLoadFlorence2Model` —— 7/8 个有
-- `DownloadAndLoadSAM2Model` —— 7/8 个有
-- `DrawMaskOnImage` —— 7/8 个有
-- `Florence2Run` —— 7/8 个有
-- `Florence2toCoordinates` —— 7/8 个有
-- `GrowMask` —— 7/8 个有
-- `ImageResizeKJv2` —— 7/8 个有
-- `ImpactSwitch` —— 7/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
-- `PrimitiveString` —— 7/8 个有
-- `RH_Translator` —— 7/8 个有
-- `RMBG` —— 7/8 个有
-- `Sam2Segmentation` —— 7/8 个有
-- `SimpleMath+` —— 7/8 个有
-- `WanVideoSetBlockSwap` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `GetImageSizeAndCount` —— 6/8 个有
-- `ImageConcatMulti` —— 6/8 个有
-- `WanVideoContextOptions` —— 6/8 个有
-- `PreviewImage` —— 5/8 个有
-- `PointsEditor` —— 4/8 个有
-- `ImageFromBatch` —— 2/8 个有
-- `WanVideoSLG` —— 2/8 个有
-- `WanVideoTeaCache` —— 2/8 个有
-- `BatchCount+` —— 1/8 个有
-- `If ANY execute A else B` —— 1/8 个有
-- `IfInnerExecute` —— 1/8 个有
-- `ImageBatchMulti` —— 1/8 个有
-- `OnnxDetectionModelLoader` —— 1/8 个有
-- `PoseAndFaceDetection` —— 1/8 个有
-- `RepeatImageBatch` —— 1/8 个有
-- `easy batchAnything` —— 1/8 个有
-- `easy compare` —— 1/8 个有
-- `easy forLoopEnd` —— 1/8 个有
-- `easy forLoopStart` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `easy mathInt` —— 1/8 个有
+- `ImageResizeKJ` —— 8/9 个有
+- `RIFE VFI` —— 7/9 个有
+- `ImageScale` —— 6/9 个有
+- `ImageCASharpening+` —— 5/9 个有
+- `DiffusersScheduler` —— 4/9 个有
+- `PreviewImage` —— 2/9 个有
+- `EmptyImage` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
+- `ReActorFaceSwap` —— 1/9 个有
+- `easy imageSize` —— 1/9 个有
 
 ## 典型参数
 

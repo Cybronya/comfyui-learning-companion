@@ -3,71 +3,78 @@ name: unknown_workflow_video_lora_sampler_686
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.598667
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.652
+common_nodes: [BlockifyMask, BodyRatioMapperSDPoseRender, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DrawMaskOnImage, GrowMaskWithBlur, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SAM3_Detect, SDPoseKeypointExtractor, Seed (rgthree), VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2047836406218756098.json, 视频生成/图生视频/1999818280472899586.json, 视频生成/文生视频/SteadyDancer 跳舞 支持不同身形比例_2019123719372808193.json]
+members: [视频生成/图生视频/🔥角色替换+动作迁移+面部表情=爆款复刻  无加密节点_2109231949574402050.json, 视频生成/图生视频/🔥角色替换+动作迁移+面部表情=爆款复刻 9月15日 无加密节点_2099712198623981570.json, 视频生成/文生视频/【丝滑变装】&【动作迁移】&【人物替换】_2100616978972102658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_686
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2047836406218756098.json、视频生成/图生视频/1999818280472899586.json、视频生成/文生视频/SteadyDancer 跳舞 支持不同身形比例_2019123719372808193.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/🔥角色替换+动作迁移+面部表情=爆款复刻  无加密节点_2109231949574402050.json、视频生成/图生视频/🔥角色替换+动作迁移+面部表情=爆款复刻 9月15日 无加密节点_2099712198623981570.json、视频生成/文生视频/【丝滑变装】&【动作迁移】&【人物替换】_2100616978972102658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BlockifyMask`
+- `BodyRatioMapperSDPoseRender`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
+- `CheckpointLoaderSimple`
+- `DrawMaskOnImage`
+- `GrowMaskWithBlur`
+- `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
 - `OnnxDetectionModelLoader`
 - `PoseAndFaceDetection`
-- `SetNode`
+- `SAM3_Detect`
+- `SDPoseKeypointExtractor`
+- `Seed (rgthree)`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSamplerFromSettings`
 - `WanVideoSamplerSettings`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `PrimitiveString` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `StringConcatenate` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `Bookmark (rgthree)` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Int` —— 1/3 个有
+- `Primitive integer [Crystools]` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `BBoxYOLO` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageBlend` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `MaskToImage` —— 1/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SegmentQueueRunner` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
+- `YOLOModelLoader` —— 1/3 个有
 
 ## 典型参数
 

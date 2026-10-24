@@ -1,33 +1,33 @@
 ---
 name: unknown_workflow_sampler_unet_vae_10
 type: Unknown Workflow
-frequency: 20
+frequency: 23
 level: moderate
-coverage: 0.8425
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.783739
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Minimax_H3_图生视频_2088655826771861505.json, 数字人/数字人/海螺H3(minimax H3)图生视频（图生视频&首尾帧）加速开源版_2084181324272852993.json, 视频生成/图生视频/Minimax H3 -图生视频工作流_2084907599123804162.json, 视频生成/图生视频/Minimax H3 I2V图生视频_首尾帧_2084485077328814081.json, 视频生成/图生视频/Minimax H3 I2v_尾帧参考_2085634658221510658.json, 视频生成/图生视频/Minimax H3 I2v_尾帧参考_竖屏_2090355202326097921.json, 视频生成/图生视频/Minimax H3 I2v_首尾帧_2084148989418622977.json, 视频生成/图生视频/Minimax H3 I2v_首尾帧_both_2085634176757362689.json, 视频生成/图生视频/Minimax H3 I2v_首尾帧_both_竖屏_2090357898231767042.json, 视频生成/图生视频/Minimax H3 I2v_首帧参考_2084900505624600577.json, 视频生成/图生视频/Minimax H3 I2v_首帧参考_竖屏_2090353004041031682.json, 视频生成/图生视频/Minimax H3 单图视频_2084186710258315266.json, 视频生成/图生视频/Minimax H3 图生视频_2084260606722527233.json, 视频生成/图生视频/Minimax H3 图生视频_2084647272570245121.json, 视频生成/图生视频/Minimax H3 首尾帧图生视频_2084915506569633793.json, 视频生成/图生视频/Minimax H3视频模型图生视频_2084132239176192002.json, 视频生成/图生视频/Minimax-H3+图生视频-官流_2095734200711340034.json, 视频生成/图生视频/Minimax-H3-单_双图生视频-sage+cache双重提速-平均3分半钟出5秒！_2084572403178500098.json, 视频生成/图生视频/MinimaxH3图生视频&首尾帧 量化加速版_2084545071873093633.json, 视频生成/图生视频/Minimax_H3_图生视频_2084193867901005825.json]
+members: [视频生成/图生视频/MINIMAX-H3图生视频工作流_2102372635475791873.json, 视频生成/图生视频/MINIMAX-H3首尾帧视频_2085192239885668354.json, 视频生成/图生视频/Mini max  H3开源啦(加速版）_2085639639234338818.json, 视频生成/图生视频/Mini max  H3开源啦(效果惊艳）_2084172305701367810.json, 视频生成/图生视频/Mini max  H3开源啦(效果惊艳）_2084193937832632322.json, 视频生成/图生视频/MiniMax H3  动画与风格化影像_2084557369203322882.json, 视频生成/图生视频/MiniMax H3 -全能参考生视频-情景剧_2085386101346365442.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜BF16 20步高质量基线版_2090727907718164481.json, 视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-文生视频_2111345897249533954.json, 视频生成/图生视频/MiniMax H3 Ref2VA多图参考生视频-导演级官方提示词标准化模板_2084942982297505793.json, 视频生成/图生视频/MiniMax H3 Start-and-End Frame Video Workflow_2090702379476930562.json, 视频生成/图生视频/MiniMax H3 全能参考｜图生视频工作流（优化版）_2090248587761512450.json, 视频生成/图生视频/MiniMax H3 多图参考+官方提示词模板+提速40%无劣化 真人短剧剧情演绎_2084620840548786177.json, 视频生成/图生视频/MiniMax H3 多图参考+官方提示词模板+提速40%无劣化_2083480380576976897.json, 视频生成/图生视频/MiniMax H3 极速首尾帧图生视频_2087539459008057345.json, 视频生成/图生视频/MiniMax H3_图生视频工作流_2084485598643048450.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2084154545424388098.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2087935494813478914.json, 视频生成/图生视频/MinimaxH3图生视频8步工作流_2099783471219699713.json, 视频生成/图生视频/海螺H3-全自动图生视频-自动撰写提示词_2086431051328614402.json, 视频生成/文生视频/极速版-MiniMax H3全能单图&多图&首尾&宫格图-动态去高躁_2088657311995879425.json, 视频生成/文生视频/极速版-MiniMax H3全能单图&多图&首尾&宫格图_2085050902129504257.json, 视频生成/文生视频/极速版-MiniMax H3全能单图&多图&首尾&宫格图_2087936662021173250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Minimax_H3_图生视频_2088655826771861505.json、数字人/数字人/海螺H3(minimax H3)图生视频（图生视频&首尾帧）加速开源版_2084181324272852993.json、视频生成/图生视频/Minimax H3 -图生视频工作流_2084907599123804162.json、视频生成/图生视频/Minimax H3 I2V图生视频_首尾帧_2084485077328814081.json、视频生成/图生视频/Minimax H3 I2v_尾帧参考_2085634658221510658.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/MINIMAX-H3图生视频工作流_2102372635475791873.json、视频生成/图生视频/MINIMAX-H3首尾帧视频_2085192239885668354.json、视频生成/图生视频/Mini max  H3开源啦(加速版）_2085639639234338818.json、视频生成/图生视频/Mini max  H3开源啦(效果惊艳）_2084172305701367810.json、视频生成/图生视频/Mini max  H3开源啦(效果惊艳）_2084193937832632322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
@@ -36,30 +36,35 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 18/20 个有
-- `ComfyMathExpression` —— 17/20 个有
-- `GetImageSize` —— 17/20 个有
-- `PathchSageAttentionKJ` —— 17/20 个有
-- `PrimitiveFloat` —— 17/20 个有
-- `ResolutionSelector` —— 15/20 个有
-- `CreateVideo` —— 14/20 个有
-- `LoadImage` —— 14/20 个有
-- `SaveVideo` —— 14/20 个有
-- `EasyCache` —— 12/20 个有
-- `PrimitiveStringMultiline` —— 8/20 个有
-- `SDVN Load Image Url` —— 6/20 个有
-- `VHS_VideoCombine` —— 6/20 个有
-- `CR Text` —— 4/20 个有
-- `PainterVRAM` —— 4/20 个有
-- `INTConstant` —— 3/20 个有
-- `SimpleMath+` —— 3/20 个有
-- `CR Prompt Text` —— 2/20 个有
-- `ImageResizeKJv2` —— 2/20 个有
-- `Label (rgthree)` —— 2/20 个有
-- `AnyBooleanSwitch` —— 1/20 个有
-- `Float` —— 1/20 个有
-- `PrimitiveBoolean` —— 1/20 个有
-- `RTXVideoSuperResolution` —— 1/20 个有
+- `LoadImage` —— 22/23 个有
+- `PrimitiveFloat` —— 22/23 个有
+- `ResolutionSelector` —— 22/23 个有
+- `CreateVideo` —— 18/23 个有
+- `SaveVideo` —— 18/23 个有
+- `MiniMaxH3ImageToVideo` —— 15/23 个有
+- `PathchSageAttentionKJ` —— 15/23 个有
+- `LoraLoaderModelOnly` —— 11/23 个有
+- `easy showAnything` —— 11/23 个有
+- `EasyCache` —— 9/23 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/23 个有
+- `SolAttnPatch` —— 8/23 个有
+- `VHS_VideoCombine` —— 8/23 个有
+- `MiniMaxH3BlockCacheT8` —— 7/23 个有
+- `Int` —— 5/23 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/23 个有
+- `PrimitiveStringMultiline` —— 4/23 个有
+- `Text` —— 4/23 个有
+- `GetNode` —— 3/23 个有
+- `ModelPatchTorchSettings` —— 3/23 个有
+- `SetNode` —— 3/23 个有
+- `ImageResizeKJv2` —— 2/23 个有
+- `ExtendIntermediateSigmas` —— 1/23 个有
+- `H3SigmaRefiner` —— 1/23 个有
+- `Label (rgthree)` —— 1/23 个有
+- `RHMiniMaxH3PromptOptimizerCompact` —— 1/23 个有
+- `RH_LLMAPI_Pro_Node` —— 1/23 个有
+- `StringFunction|pysssss` —— 1/23 个有
+- `孤海注释` —— 1/23 个有
 
 ## 典型参数
 

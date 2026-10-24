@@ -2,69 +2,70 @@
 name: unknown_workflow_video_lora_sampler_346
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.432
-common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), GetNode, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy seed]
+level: strong
+coverage: 0.770833
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
-missing: [Bookmark (rgthree), Label (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), Note Plus (mtb), easy int, easy seed]
-members: [视频生成/图生视频/1936095695604715522.json, 视频生成/图生视频/1936129945431101441.json, 视频生成/文生视频/1936095695604715522.json, 视频生成/文生视频/1936129945431101441.json, 视频生成/文生视频/1943222604020793345.json, 视频生成/文生视频/1936768190418685954.json]
+missing: []
+members: [视频生成/图生视频/Infinite Talk视频对口型_2073309420112662529.json, 视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2064514546374631425.json, 视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2075412859504390145.json, 视频生成/图生视频/视频换脸 图生视频+脸部参考替换+InfiniteTalk+视频+数字人对口型_2078010993078263809.json, 音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json, 音频生成/音频生成/Digital Avatars Lip-Syncing数字人对口型_2097153340940574722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_346
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1936095695604715522.json、视频生成/图生视频/1936129945431101441.json、视频生成/文生视频/1936095695604715522.json、视频生成/文生视频/1936129945431101441.json、视频生成/文生视频/1943222604020793345.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk视频对口型_2073309420112662529.json、视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2064514546374631425.json、视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2075412859504390145.json、视频生成/图生视频/视频换脸 图生视频+脸部参考替换+InfiniteTalk+视频+数字人对口型_2078010993078263809.json、音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `SetNode`
-- `StringConcatenate`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `PainterAV2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy int`
-- `easy seed`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 5/6 个有
-- `Label (rgthree)` —— 5/6 个有
-- `WanVideoTextEncode` —— 5/6 个有
-- `WanVideoVRAMManagement` —— 5/6 个有
-- `Note Plus (mtb)` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `WanVideoApplyNAG` —— 1/6 个有
-- `WanVideoTextEncodeSingle` —— 1/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `MathExpression|pysssss` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `ColorMatch` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | dpmpp_sde | - | 6 | 83% |
+| 重绘幅度 | normal | - | 6 | 83% |
 
 ## 常见问题
 
@@ -72,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Bookmark (rgthree)、Label (rgthree)、Mute / Bypass Relay (rgthree)、Mute / Bypass Repeater (rgthree)、Note Plus (mtb)
+- 采样步数 最常用 randomize，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，6 个样本，一致性 83%
+- 重绘幅度 最常用 normal，6 个样本，一致性 83%

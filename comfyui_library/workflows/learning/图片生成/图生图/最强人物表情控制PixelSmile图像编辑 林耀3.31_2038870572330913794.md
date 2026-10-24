@@ -1,0 +1,82 @@
+---
+key: 图片生成/图生图/最强人物表情控制PixelSmile图像编辑 林耀3.31_2038870572330913794.json
+name: 最强人物表情控制PixelSmile图像编辑 林耀3.31_2038870572330913794
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/最强人物表情控制PixelSmile图像编辑 林耀3.31_2038870572330913794.json
+hash: 1a081df1b8dd6523
+coverage: 0.851852
+learned_at: 2026-10-23 13:05:46
+nodes: [ModelSamplingAuraFlow, EmptySD3LatentImage, TextEncodeQwenImageEditPlus, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, VAELoader, VAEEncode, KSampler, ConditioningZeroOut, VAEDecode, TextEncodeQwenImageEditPlus, ImageConcanate, SaveImage, AddLabel, ReplaceText, easy showAnything, PreviewImage, PixelSmileConditioning, Note, Note, CR Prompt Text, SaveImage, Float, LoadImage, CR Prompt Text]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_multistep", "scheduler": "simple", "seed": 1068936855013490, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/最强人物表情控制PixelSmile图像编辑 林耀3.31_2038870572330913794.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/最强人物表情控制PixelSmile图像编辑 林耀3.31_2038870572330913794.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（27 个）：
+- `ModelSamplingAuraFlow`
+- `EmptySD3LatentImage`
+- `TextEncodeQwenImageEditPlus`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `VAEEncode` ★核心
+- `KSampler` ★核心
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `TextEncodeQwenImageEditPlus`
+- `ImageConcanate`
+- `SaveImage`
+- `AddLabel`
+- `ReplaceText`
+- `easy showAnything`
+- `PreviewImage`
+- `PixelSmileConditioning`
+- `Note`
+- `Note`
+- `CR Prompt Text`
+- `SaveImage`
+- `Float`
+- `LoadImage`
+- `CR Prompt Text`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `1068936855013490`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_multistep`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **85%**（23/27）
+
+**有卡**：`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`TextEncodeQwenImageEditPlus`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`VAEEncode`、`KSampler`、`ConditioningZeroOut`、`VAEDecode`、`ImageConcanate`、`SaveImage`、`AddLabel`、`ReplaceText`、`PixelSmileConditioning`、`CR Prompt Text`、`Float`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

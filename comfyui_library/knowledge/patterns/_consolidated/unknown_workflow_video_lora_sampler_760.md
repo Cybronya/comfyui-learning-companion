@@ -3,66 +3,82 @@ name: unknown_workflow_video_lora_sampler_760
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.574
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, IndexTTS2Run, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.6925
+common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Text Concatenate, ComfyMathExpression, ExtractAndCombineLines, Fast Groups Bypasser (rgthree), ImageBatchMulti, JWFloatToString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaGetNode, PixaromaLabel, PixaromaSetNode, PreviewAny, PreviewImage, PrimitiveFloat, ProcessString, RHHiddenNodes, RHLLMChatNode, RHSettingsNode, ResolutionSelector, ShowText|pysssss, Text, UNETLoader, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/1993149833712254977.json, 视频生成/图生视频/2072325525946851330.json]
+members: [视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json, 视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_760
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1993149833712254977.json、视频生成/图生视频/2072325525946851330.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json、视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `IndexTTS2Run`
-- `LoadAudio`
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text Concatenate`
+- `ComfyMathExpression`
+- `ExtractAndCombineLines`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBatchMulti`
+- `JWFloatToString`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `PixaromaLabel`
+- `PixaromaSetNode`
 - `PreviewAny`
-- `SetNode`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `ProcessString`
+- `RHHiddenNodes`
+- `RHLLMChatNode`
+- `RHSettingsNode`
+- `ResolutionSelector`
+- `ShowText|pysssss`
+- `Text`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `AudioToFPS` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImpactConditionalBranch` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BasicGuider` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ExtendIntermediateSigmas` —— 1/2 个有
+- `MiniMaxH3AVDecodeT8` —— 1/2 个有
+- `MiniMaxH3SigmaShift` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `RandomNoise` —— 1/2 个有
+- `SamplerCustomAdvanced` —— 1/2 个有
+- `SelfLiftAvatarH3Sampler` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

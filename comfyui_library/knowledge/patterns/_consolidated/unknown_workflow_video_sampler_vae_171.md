@@ -1,54 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_171
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.828
-common_nodes: [JWInteger, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.863667
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: [CR Text, LayerUtility: PurgeVRAM V2, Primitive integer [Crystools]]
-members: [图片生成/文生图/1933801723888586754.json, 视频生成/文生视频/1933931993669525506.json]
+missing: []
+members: [视频生成/图生视频/电商商品展示图生视频Phantom_1928763054312341505.json, 视频生成/图生视频/🔥Phantom初体验！AI带货视频制作指南 + ComfyUI保姆级教程_1930083460306649089.json, 视频生成/文生视频/Wan2.1 最新 FusionX 电商模特主播讲解产品视频 风格一致性_1943186431659425794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_171
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1933801723888586754.json、视频生成/文生视频/1933931993669525506.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/电商商品展示图生视频Phantom_1928763054312341505.json、视频生成/图生视频/🔥Phantom初体验！AI带货视频制作指南 + ComfyUI保姆级教程_1930083460306649089.json、视频生成/文生视频/Wan2.1 最新 FusionX 电商模特主播讲解产品视频 风格一致性_1943186431659425794.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JWInteger`
+全部 3 个 workflow 都包含：
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoMagCache`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `RH_OneShot_Prompter` —— 1/2 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `ImagePadKJ` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
@@ -60,5 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: PurgeVRAM V2、Primitive integer [Crystools]
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

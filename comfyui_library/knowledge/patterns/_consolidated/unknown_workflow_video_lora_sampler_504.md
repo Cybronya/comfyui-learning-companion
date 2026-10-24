@@ -3,61 +3,80 @@ name: unknown_workflow_video_lora_sampler_504
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.80475
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, JWFloatToString, KSamplerSelect, LoadImage, LoadVideoUI, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.543
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, EmptyImage, FloatConstant, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, PreviewImage, SetNode, TextBox1, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速_自动提示词优化版_2085576185500753922.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词8步加速_2085317728252022785.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词_2085205357147803649.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词优化版_2085311036525211650.json]
+members: [视频生成/图生视频/Sec对象分割，实现视频换装换脸(Wan-animate)_1979072764936097793.json, 视频生成/图生视频/wan2.2 animate动物替换+姿态迁移_1976916291078524930.json, 视频生成/图生视频/wan2.2 animate动物替换实验成功_2016418267958616065.json, 视频生成/图生视频/wan2.2 animate多人物指定角色替换，保留原场景_1976905425356525570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_504
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速_自动提示词优化版_2085576185500753922.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词8步加速_2085317728252022785.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词_2085205357147803649.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词优化版_2085311036525211650.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Sec对象分割，实现视频换装换脸(Wan-animate)_1979072764936097793.json、视频生成/图生视频/wan2.2 animate动物替换+姿态迁移_1976916291078524930.json、视频生成/图生视频/wan2.2 animate动物替换实验成功_2016418267958616065.json、视频生成/图生视频/wan2.2 animate多人物指定角色替换，保留原场景_1976905425356525570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `JWFloatToString`
-- `KSamplerSelect`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `EmptyImage`
+- `FloatConstant`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideoUI`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `RHLLMChatNode`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Text`
-- `TextCombinerTwo`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MaskToImage`
+- `OnnxDetectionModelLoader`
+- `PointsEditor`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SetNode`
+- `TextBox1`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudioUI` —— 3/4 个有
-- `MiniMaxH3SigmaShift` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `Audio To Text (mtb)` —— 1/4 个有
-- `FL_Audio_BPM_Analyzer` —— 1/4 个有
-- `FL_Audio_Drum_Detector` —— 1/4 个有
-- `Load Whisper (mtb)` —— 1/4 个有
-- `TextCombinerSix` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `AnimalPosePreprocessor` —— 2/4 个有
+- `DWPreprocessor` —— 2/4 个有
+- `DrawViTPose` —— 2/4 个有
+- `FaceMaskFromPoseKeypoints` —— 2/4 个有
+- `ImageCropByMaskAndResize` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `PixelPerfectResolution` —— 2/4 个有
+- `DownloadAndLoadQwenModel` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `QwenVLDetection` —— 1/4 个有
+- `SeCModelLoader` —— 1/4 个有
+- `SeCVideoSegmentation` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

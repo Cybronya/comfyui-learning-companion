@@ -1,46 +1,50 @@
 ---
 name: unknown_workflow_sampler_24
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.78
-common_nodes: [Fast Groups Muter (rgthree), HeartMuLa_Generate, ImpactSwitch, Int, LoadAudio, MultiLineLyrics, MultiLinePromptACES, RHHiddenNodes, RH_Suno_Custom, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2, Text Find and Replace, TextBox, Textbox, WujiCleaner]
+coverage: 0.6862
+common_nodes: [ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadQwenImageDiffSynthiPipe, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, RH_Captioner, SaveImage, SetControlArgs]
 problems: []
 missing: []
-members: [音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json]
+members: [图片生成/图生图/Qwen image Canny深度控制洗图_1956309859379675137.json, 图片生成/图生图/Qwen image Canny深度控制洗图工作流V1_1956163824573448193.json, 图片生成/图生图/Qwen image Canny线稿控制洗图_1956268870371823617.json, 图片生成/图生图/Qwen image Canny线稿控制洗图工作流V1_1956163852192894977.json, 图片生成/文生图/Qwen (千问) canny+depth 洗图_1956246979544272898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_24
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen image Canny深度控制洗图_1956309859379675137.json、图片生成/图生图/Qwen image Canny深度控制洗图工作流V1_1956163824573448193.json、图片生成/图生图/Qwen image Canny线稿控制洗图_1956268870371823617.json、图片生成/图生图/Qwen image Canny线稿控制洗图工作流V1_1956163852192894977.json、图片生成/文生图/Qwen (千问) canny+depth 洗图_1956246979544272898.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `HeartMuLa_Generate`
-- `ImpactSwitch`
-- `Int`
-- `LoadAudio`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `RHHiddenNodes`
-- `RH_Suno_Custom`
-- `SaveAudio`
-- `SongGeneration_Loader`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
-- `Text Find and Replace`
-- `TextBox`
-- `Textbox`
-- `WujiCleaner`
+全部 5 个 workflow 都包含：
+- `ImageConcatMulti`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadQwenImageDiffSynthiPipe`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenImageDiffSynthSampler`
+- `RH_Captioner`
+- `SaveImage`
+- `SetControlArgs`
+
+**可变部分**（部分 workflow 才有）：
+- `ImpactSwitch` —— 4/5 个有
+- `JWInteger` —— 4/5 个有
+- `PDIMAGE_LongerSize` —— 4/5 个有
+- `DepthAnythingV2Preprocessor` —— 3/5 个有
+- `Canny` —— 2/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `CannyEdgePreprocessor` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
 
 ## 典型参数
 

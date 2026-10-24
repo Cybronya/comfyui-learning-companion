@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_953
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [IndexTTSProNode, LoadAudio, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.630667
+common_nodes: [DF_Integer, Image Comparer (rgthree), Int, LG_Color_Match_V2, LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS Pro多人配音_1935877646087876610.json, 音频生成/音频生成/IndexTTS多人对话(文本转语音小说)_1935637718502408193.json]
+members: [图片生成/图生图/无损放大（人像专用暂用）_2110275584310992897.json, 图片生成/图生图/无损无偏移去ai感商业放大2.0_2039682982021173250.json, 图片生成/图生图/逆采样洗图无偏移2.0_2062473207210401793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_953
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS Pro多人配音_1935877646087876610.json、音频生成/音频生成/IndexTTS多人对话(文本转语音小说)_1935637718502408193.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/无损放大（人像专用暂用）_2110275584310992897.json、图片生成/图生图/无损无偏移去ai感商业放大2.0_2039682982021173250.json、图片生成/图生图/逆采样洗图无偏移2.0_2062473207210401793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `IndexTTSProNode`
-- `LoadAudio`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `DF_Integer`
+- `Image Comparer (rgthree)`
+- `Int`
+- `LG_Color_Match_V2`
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `String Literal` —— 1/2 个有
-- `TimbreAudioLoader` —— 1/2 个有
+- `JWFloat` —— 2/3 个有
 
 ## 典型参数
 
@@ -41,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

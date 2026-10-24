@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_unet_vae_10
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.767667
-common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3Director, SaveVideo, UNETLoader, VAELoader]
+coverage: 0.693667
+common_nodes: [CLIPLoader, CreateVideo, PreviewAny, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/【开源】Minimax_H3 导演台参考生长视频_2089264892179206146.json, 视频生成/文生视频/夜樱馆_导演台6合1_加速版_2099536983994486785.json, 视频生成/文生视频/方格智联-MINIH3-工作台_2086704664422207489.json]
+members: [视频生成/文生视频/ZDJ MINIMAXH3 导演台工作流_2102309224322781186.json, 视频生成/文生视频/minimax_h3_director_r2v_2084846314428391426.json, 视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084824519482634242.json, 视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084897567476895746.json, 视频生成/文生视频/全能参考MiniMax H3 导演台全能_2090450529842454530.json, 视频生成/文生视频/开源版MiniMax H3 导演台全能工作流加速优化_2085734107866296322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/【开源】Minimax_H3 导演台参考生长视频_2089264892179206146.json、视频生成/文生视频/夜樱馆_导演台6合1_加速版_2099536983994486785.json、视频生成/文生视频/方格智联-MINIH3-工作台_2086704664422207489.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/ZDJ MINIMAXH3 导演台工作流_2102309224322781186.json、视频生成/文生视频/minimax_h3_director_r2v_2084846314428391426.json、视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084824519482634242.json、视频生成/文生视频/minimax_h3_director_t2v 文生音视频_2084897567476895746.json、视频生成/文生视频/全能参考MiniMax H3 导演台全能_2090450529842454530.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CreateVideo`
-- `MiniMaxH3Director`
+- `PreviewAny`
 - `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MiniMaxH3SLADynamicLoRABypassV2T8Advanced` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
+- `MiniMaxH3Director` —— 5/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
+- `LoadImage` —— 2/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `ComfyMiniMaxH3Director` —— 1/6 个有
 
 ## 典型参数
 

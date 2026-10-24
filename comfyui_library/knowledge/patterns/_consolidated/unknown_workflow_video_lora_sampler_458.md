@@ -1,66 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_458
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7164
-common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.51725
+common_nodes: [CLIPVisionLoader, DF_Int_to_Float, GetNode, ImageFromBatch, ImageResizeKJv2, LoadImage, MemoryCleaner, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, SimpleMath+, Text, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy boolean, easy float, easy int]
 problems: []
-missing: [CR Prompt Text]
-members: [视频生成/文生视频/1968587379978186753.json, 视频生成/文生视频/1966946187645476866.json, 视频生成/文生视频/humo双图参考_2072999565739204608.json, 视频生成/文生视频/1967497065762840577.json, 音频生成/音频生成/数字人HuMo单人参考数字人V1_1967105592944943105.json]
+missing: []
+members: [图片生成/图生图/YJ-APP-animate-v2-动作迁移_2039956611556450306.json, 图片生成/图生图/YJ-APP-animate-v4-视频替换元素_2053682581748629505.json, 视频生成/图生视频/YJ-APP-WanAnimate-v2-动作迁移_2044639396833529858.json, 视频生成/图生视频/YJ-APP-animate-v3-视频替换元素_2044639687251337217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_458
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/1968587379978186753.json、视频生成/文生视频/1966946187645476866.json、视频生成/文生视频/humo双图参考_2072999565739204608.json、视频生成/文生视频/1967497065762840577.json、音频生成/音频生成/数字人HuMo单人参考数字人V1_1967105592944943105.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-animate-v2-动作迁移_2039956611556450306.json、图片生成/图生图/YJ-APP-animate-v4-视频替换元素_2053682581748629505.json、视频生成/图生视频/YJ-APP-WanAnimate-v2-动作迁移_2044639396833529858.json、视频生成/图生视频/YJ-APP-animate-v3-视频替换元素_2044639687251337217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `HuMoEmbeds`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
+全部 4 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DF_Int_to_Float`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `MemoryCleaner`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `SetNode`
+- `SimpleMath+`
+- `Text`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `easy boolean`
+- `easy float`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `CR Prompt Text` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `ImageBatchMulti` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `DF_Int_to_Float` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `RMBG` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
+- `BBoxYOLO` —— 3/4 个有
+- `BlockifyMask` —— 3/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `DrawMaskOnImage` —— 3/4 个有
+- `LayerMask: MaskGrow` —— 3/4 个有
+- `SDPoseDrawKeypoints` —— 3/4 个有
+- `SDPoseKeypointExtractor` —— 3/4 个有
+- `YOLOModelLoader` —— 3/4 个有
+- `easy sam3ModelLoader` —— 3/4 个有
+- `easy sam3VideoSegmentation` —— 3/4 个有
+- `VHS_VideoInfoLoaded` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `DrawViTPose` —— 1/4 个有
+- `If ANY execute A else B` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `Masks Combine Regions` —— 1/4 个有
+- `RunningHub Deepcleaner` —— 1/4 个有
+- `easy compare` —— 1/4 个有
 
 ## 典型参数
 
@@ -72,4 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

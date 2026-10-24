@@ -1,58 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_vae_19
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.9296
-common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSampler, SaveImage, VAEDecode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.860778
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/07.Flux_文生图_1993297490357190657.json, 图片生成/文生图/1938503902566506497.json, 图片生成/文生图/1952701907708088321.json, 图片生成/文生图/1954834253982908418.json, 图片生成/文生图/Flux+LoRA的文生图基础工作流_2001894494809276417.json]
+members: [图片生成/图生图/【晨晨的AI应用包005】随机风格生成-通过FLUX2-Klein_2012057296452460546.json, 图片生成/图生图/工作流基础系列2-Klein双（多）图编辑工作流-基础向讲解此工作流_2012071492288258050.json, 图片生成/图生图/工作流基础系列3-Klein局部编辑工作流-基础向讲解此工作流_2044322503283187713.json, 图片生成/图生图/精修Flux-2 Klein_2036724091914293250.json, 图片生成/图生图/精修白底（产品需要调整提示词）_2037844081199550466.json, 图片生成/图生图/精修白底（产品需要调整提示词）_2053018735723724802.json, 图片生成/图生图/组件系列8-FLUX.2-Klein单图编辑_2058753653384765441.json, 图片生成/图生图/自用瓶子修图工作流_2045810602009960450.json, 图片生成/图生图/节点系列06-Text Random Multiline节点多条随机提示词_2029173085181583362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/07.Flux_文生图_1993297490357190657.json、图片生成/文生图/1938503902566506497.json、图片生成/文生图/1952701907708088321.json、图片生成/文生图/1954834253982908418.json、图片生成/文生图/Flux+LoRA的文生图基础工作流_2001894494809276417.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/【晨晨的AI应用包005】随机风格生成-通过FLUX2-Klein_2012057296452460546.json、图片生成/图生图/工作流基础系列2-Klein双（多）图编辑工作流-基础向讲解此工作流_2012071492288258050.json、图片生成/图生图/工作流基础系列3-Klein局部编辑工作流-基础向讲解此工作流_2044322503283187713.json、图片生成/图生图/精修Flux-2 Klein_2036724091914293250.json、图片生成/图生图/精修白底（产品需要调整提示词）_2037844081199550466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `KSampler`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `UNETLoader` —— 4/5 个有
-- `CheckpointLoaderSimple` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `DualCLIPLoaderGGUF` —— 1/5 个有
-- `LoraLoader` —— 1/5 个有
-- `TeaCache` —— 1/5 个有
-- `UnetLoaderGGUF` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `Text` —— 7/9 个有
+- `CR Text` —— 5/9 个有
+- `EmptyFlux2LatentImage` —— 5/9 个有
+- `GetNode` —— 5/9 个有
+- `SetNode` —— 5/9 个有
+- `ShowText` —— 5/9 个有
+- `GetImageSize` —— 4/9 个有
+- `ImpactSwitch` —— 4/9 个有
+- `Seed (rgthree)` —— 4/9 个有
+- `TextCombinerTwo` —— 4/9 个有
+- `PreviewImage` —— 2/9 个有
+- `DrawMaskOnImage` —— 1/9 个有
+- `RandomPrompt` —— 1/9 个有
+- `TextRandomMultiline` —— 1/9 个有
+- `UnetLoaderGGUF` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 10 - 20 | 5 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 20，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

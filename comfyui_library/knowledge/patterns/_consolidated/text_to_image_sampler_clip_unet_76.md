@@ -1,78 +1,80 @@
 ---
 name: text_to_image_sampler_clip_unet_76
 type: Text To Image
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.872833
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.888125
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/1959919853350105089.json, 图片生成/文生图/1969671833953988610.json, 图片生成/文生图/1970727639172476929.json, 图片生成/文生图/1988965178039480322.json, 图片生成/文生图/9 个 Krea 2 LoRA 测试_2069657247956946945.json, 图片生成/文生图/Krea2-二次元模型总控-云端版_2095727543704965121.json]
+members: [图片生成/图生图/Qwen-image广告海报设计_1956984376598913026.json, 图片生成/图生图/Qwen-image洗图模仿海报_1982385126329982978.json, 图片生成/图生图/Qwen-image海报洗图_2034524062973698049.json, 图片生成/图生图/Qwen图生图（仿图）V1.0_1971583463797223426.json, 图片生成/图生图/qwen-洗图仿图海报模仿-8步快速出图_1962417242996609026.json, 图片生成/图生图/【电商仿图】Qwen海报设计图生图 电商产品平面设计编辑图片_1979055932632109058.json, 图片生成/图生图/洗图模仿海报风格，效果稳定_1992790546683064322.json, 图片生成/文生图/奶茶产品宣传图_1975922379924877314.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_76
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1959919853350105089.json、图片生成/文生图/1969671833953988610.json、图片生成/文生图/1970727639172476929.json、图片生成/文生图/1988965178039480322.json、图片生成/文生图/9 个 Krea 2 LoRA 测试_2069657247956946945.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen-image广告海报设计_1956984376598913026.json、图片生成/图生图/Qwen-image洗图模仿海报_1982385126329982978.json、图片生成/图生图/Qwen-image海报洗图_2034524062973698049.json、图片生成/图生图/Qwen图生图（仿图）V1.0_1971583463797223426.json、图片生成/图生图/qwen-洗图仿图海报模仿-8步快速出图_1962417242996609026.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `FluxResolutionNode` —— 3/6 个有
-- `ModelSamplingSD3` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Image Comparer (rgthree)` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `LoraLoader` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
+- `PreviewImage` —— 7/8 个有
+- `JanusImageUnderstanding` —— 6/8 个有
+- `JanusModelLoader` —— 6/8 个有
+- `ShowText|pysssss` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `FluxResolutionNode` —— 2/8 个有
+- `RH_LLMAPI_NODE` —— 2/8 个有
+- `easy imageConcat` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `ImageUpscaleWithModel` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `UpscaleModelLoader` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | 512 - 1280 | 6 | 70% |
-| 高度 | 1072 | 512 - 1984 | 6 | 55% |
-| 采样步数 | 19.5 | 8 - 35 | 6 | 41% |
-| Prompt 约束强度(CFG) | 2 | 1 - 4 | 6 | 44% |
-| 采样算法 | euler | - | 6 | 50% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 宽度 | 768 | 512 - 768 | 8 | 84% |
+| 高度 | 1024 | 512 - 1024 | 8 | 75% |
+| 采样步数 | 35 | 8 - 35 | 8 | 72% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 8 | 73% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 512 - 1280，6 个样本
-- 高度 中位数 1072，观测区间 512 - 1984，6 个样本
-- 采样步数 中位数 19.5，观测区间 8 - 35，6 个样本，取值分散，一致性仅 41%
-- Prompt 约束强度(CFG) 中位数 2，观测区间 1 - 4，6 个样本，取值分散，一致性仅 44%
-- 采样算法 最常用 euler，6 个样本，一致性 50%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（14/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 768，观测区间 512 - 768，8 个样本，取值集中（一致性 84%）
+- 高度 中位数 1024，观测区间 512 - 1024，8 个样本
+- 采样步数 中位数 35，观测区间 8 - 35，8 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，8 个样本
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

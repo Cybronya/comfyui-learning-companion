@@ -1,73 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_clip_139
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.646667
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSize, LTXAVTextEncoderLoader, LTXVAddGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SamplerEulerAncestral, VAEDecodeTiled]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.8505
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2064603463413223426.json, 视频生成/文生视频/四步引导+首尾帧ltx2_3_style_transition+全节点注释_2057837235214577666.json, 视频生成/文生视频/首尾帧ltx2_3_style_transition+全节点注释_2055806950063001602.json]
+members: [图片生成/图生图/加背景  产品换背景  产品展示   电商图制作_2067167781539373058.json, 图片生成/图生图/加背景  电商图制作   产品展示   产品图换背景_2067118048594718722.json, 图片生成/图生图/千问编辑模型--漫画转真人快速实现_1959596505768341506.json, 图片生成/图生图/换背景-产品白底图自动匹配背景_1977027027687612418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_139
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2064603463413223426.json、视频生成/文生视频/四步引导+首尾帧ltx2_3_style_transition+全节点注释_2057837235214577666.json、视频生成/文生视频/首尾帧ltx2_3_style_transition+全节点注释_2055806950063001602.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/加背景  产品换背景  产品展示   电商图制作_2067167781539373058.json、图片生成/图生图/加背景  电商图制作   产品展示   产品图换背景_2067118048594718722.json、图片生成/图生图/千问编辑模型--漫画转真人快速实现_1959596505768341506.json、图片生成/图生图/换背景-产品白底图自动匹配背景_1977027027687612418.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+- `EmptySD3LatentImage`
 - `GetImageSize`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
-- `SamplerEulerAncestral`
-- `VAEDecodeTiled`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEdit`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 2/3 个有
-- `CreateVideo` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `ModelPatchTorchSettings` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
+- `AILab_MiniCPM_4_V` —— 3/4 个有
+- `CR Latent Input Switch` —— 3/4 个有
+- `CR Text` —— 3/4 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `FluxKontextImageScale` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `PreviewAny` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 201 | 3 | 63% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 201，3 个样本
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

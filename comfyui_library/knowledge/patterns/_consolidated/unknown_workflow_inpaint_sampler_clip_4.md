@@ -1,79 +1,75 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_4
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.836
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), ImageScaleToTotalPixels, InpaintModelConditioning, KSampler, LoadImage, LoadSAM3Model, MaskToImage, ModelSamplingAuraFlow, PreviewImage, SAM3Segmentation, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+frequency: 14
+level: moderate
+coverage: 0.9315
+common_nodes: [CLIPTextEncode, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/z-image CN2.0+自动遮罩重绘_2073291532668596225.json, 图片生成/文生图/z-image遮罩重绘_2073290166688641026.json]
+members: [图片生成/图生图/Z image-局部重绘_1996406494566432770.json, 图片生成/图生图/Z-image_局部重绘_1998016560675586050.json, 图片生成/图生图/Z-image局部重绘_1994770932847849474.json, 图片生成/图生图/Z-image局部重绘_1995667925262598145.json, 图片生成/图生图/Z-image局部重绘_1998549428036337666.json, 图片生成/图生图/Z-image局部重绘_2008078929575284737.json, 图片生成/图生图/Z-image局部重绘_2044248370755149826.json, 图片生成/图生图/Z-image局部重绘_2046509363543678977.json, 图片生成/图生图/Z-image开源-局部重绘【非edit模型】_1994233157631279106.json, 图片生成/图生图/[FLUX] 改变发型_1921732538652377090.json, 图片生成/图生图/flux fill 移除、局部重绘_2083238672299814914.json, 图片生成/图生图/一键移除工作流_2020033286864637954.json, 图片生成/图生图/完美遮罩移除功能 Removal 升级版_1983888624603332610.json, 图片生成/图生图/局部重绘 支持4K_1991035247468945410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/z-image CN2.0+自动遮罩重绘_2073291532668596225.json、图片生成/文生图/z-image遮罩重绘_2073290166688641026.json）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Z image-局部重绘_1996406494566432770.json、图片生成/图生图/Z-image_局部重绘_1998016560675586050.json、图片生成/图生图/Z-image局部重绘_1994770932847849474.json、图片生成/图生图/Z-image局部重绘_1995667925262598145.json、图片生成/图生图/Z-image局部重绘_1998549428036337666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 14 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `InpaintModelConditioning`
 - `KSampler`
 - `LoadImage`
-- `LoadSAM3Model`
-- `MaskToImage`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `SAM3Segmentation`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `DifferentialDiffusion` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `InpaintCropImproved` —— 1/2 个有
-- `InpaintStitchImproved` —— 1/2 个有
-- `ModelPatchLoader` —— 1/2 个有
-- `QwenImageDiffsynthControlnet` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
+- `ConditioningZeroOut` —— 13/14 个有
+- `DifferentialDiffusion` —— 13/14 个有
+- `FluxGuidance` —— 12/14 个有
+- `MaskBlur+` —— 10/14 个有
+- `CLIPLoader` —— 9/14 个有
+- `Image Comparer (rgthree)` —— 6/14 个有
+- `DualCLIPLoader` —— 5/14 个有
+- `LoraLoaderModelOnly` —— 4/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/14 个有
+- `Mask Fill Holes` —— 3/14 个有
+- `GrowMaskWithBlur` —— 2/14 个有
+- `ImageResize+` —— 2/14 个有
+- `ImpactInt` —— 2/14 个有
+- `CR Text` —— 1/14 个有
+- `ColorCorrect` —— 1/14 个有
+- `ImageAndMaskPreview` —— 1/14 个有
+- `MaskPreview+` —— 1/14 个有
+- `easy ifElse` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | sgm_uniform | - | 2 | 50% |
-| 重绘幅度 | 0.825 | - | 2 | 79% |
+| 采样步数 | 10 | 10 - 25 | 14 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 86% |
+| 调度器 | simple | - | 14 | 64% |
+| 重绘幅度 | 0.85 | 0.75 - 1 | 14 | 91% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.825，样本不足，未给区间，2 个样本
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 10，观测区间 10 - 25，14 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 86%
+- 调度器 最常用 simple，14 个样本，一致性 64%
+- 重绘幅度 中位数 0.85，观测区间 0.75 - 1，14 个样本，取值集中（一致性 91%）

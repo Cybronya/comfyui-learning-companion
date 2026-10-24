@@ -2,62 +2,99 @@
 name: unknown_workflow_video_lora_sampler_404
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.8624
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.7014
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2000837178416656386.json, 视频生成/图生视频/2000842508747800577.json, 视频生成/图生视频/2026846377501790209.json, 视频生成/图生视频/2038172701340213249.json, 视频生成/图生视频/2021954787742326786.json]
+members: [视频生成/图生视频/LTX2.3-数字人-自定义音频图像(抖音复现)_2044784831422275586.json, 视频生成/图生视频/LTX2.3-音频数字人(双采样高清版)_2050231422836846593.json, 视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2043896242345877506.json, 视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2046132388467580929.json, 视频生成/图生视频/LTX2.3稳定版数字人（最新版模型）_2044579812215361538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_404
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2000837178416656386.json、视频生成/图生视频/2000842508747800577.json、视频生成/图生视频/2026846377501790209.json、视频生成/图生视频/2038172701340213249.json、视频生成/图生视频/2021954787742326786.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-数字人-自定义音频图像(抖音复现)_2044784831422275586.json、视频生成/图生视频/LTX2.3-音频数字人(双采样高清版)_2050231422836846593.json、视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2043896242345877506.json、视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2046132388467580929.json、视频生成/图生视频/LTX2.3稳定版数字人（最新版模型）_2044579812215361538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `CR Text`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LTXVSpatioTemporalTiledVAEDecode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `ManualSigmas`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleCalculatorKJ`
+- `SolidMask`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `WanFirstLastFrameToVideo` —— 4/5 个有
-- `ImageResize+` —— 3/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/5 个有
-- `RH_LLMAPI_NODE` —— 2/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `ImpactInt` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
-- `WanImageToVideo` —— 1/5 个有
-- `WanVideoNAG` —— 1/5 个有
-- `easy convertAnything` —— 1/5 个有
-- `easy imageConcat` —— 1/5 个有
+- `ComfySwitchNode` —— 4/5 个有
+- `TrimAudioDuration` —— 4/5 个有
+- `GetImageSize` —— 3/5 个有
+- `LTXVEmptyLatentAudio` —— 3/5 个有
+- `SaveAudio` —— 3/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `PreviewAudio` —— 2/5 个有
+- `SigmasPreview` —— 2/5 个有
+- `llama_cpp_instruct_adv` —— 2/5 个有
+- `llama_cpp_model_loader` —— 2/5 个有
+- `llama_cpp_parameters` —— 2/5 个有
+- `AudioCrop` —— 1/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `Display Any (rgthree)` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Float` —— 1/5 个有
+- `LTXVImgToVideoConditionOnly` —— 1/5 个有
+- `LTXVLatentUpsampler` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `LatentUpscaleModelLoader` —— 1/5 个有
+- `Mute / Bypass Relay (rgthree)` —— 1/5 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/5 个有
+- `PreviewTextNode` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 8 | 4 - 10 | 5 | 62% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 宽度 | 121 | 121 - 121 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -65,8 +102,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 10，5 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

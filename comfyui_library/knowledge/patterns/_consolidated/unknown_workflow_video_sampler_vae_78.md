@@ -3,66 +3,60 @@ name: unknown_workflow_video_sampler_vae_78
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.533286
-common_nodes: [EmptyImage, GetImageSize, GetNode, ImageComposite+, ImageResizeKJv2, InspyrenetRembg, LoadImage, LoadWanVideoT5TextEncoder, MaskGenerator, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.884286
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1926613325860474881.json, 视频生成/图生视频/1927603815992954882.json, 视频生成/图生视频/1928492165083639810.json, 视频生成/图生视频/1928759873897664514.json, 视频生成/图生视频/1928782340749737985.json, 视频生成/图生视频/1928806775427076098.json, 视频生成/图生视频/1928820592806412290.json]
+members: [视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json, 视频生成/图生视频/漫剧图生视频_2085003263367278593.json, 视频生成/图生视频/空中起舞_2097526794093158402.json, 视频生成/图生视频/美好的夏天_2097286565499330561.json, 视频生成/图生视频/跳肚皮舞的女孩_2098689343039819778.json, 视频生成/图生视频/香水广告_2098035698040397826.json, 视频生成/文生视频/minimax_h3_i2v w4a8-超低显存-0810_2086689468593041410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_78
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1926613325860474881.json、视频生成/图生视频/1927603815992954882.json、视频生成/图生视频/1928492165083639810.json、视频生成/图生视频/1928759873897664514.json、视频生成/图生视频/1928782340749737985.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/海螺H3图生视频官方工作流_2084309077278150657.json、视频生成/图生视频/漫剧图生视频_2085003263367278593.json、视频生成/图生视频/空中起舞_2097526794093158402.json、视频生成/图生视频/美好的夏天_2097286565499330561.json、视频生成/图生视频/跳肚皮舞的女孩_2098689343039819778.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `EmptyImage`
-- `GetImageSize`
-- `GetNode`
-- `ImageComposite+`
-- `ImageResizeKJv2`
-- `InspyrenetRembg`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskGenerator`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 6/7 个有
-- `LoadAudio` —— 6/7 个有
-- `Bjornulf_ShowInt` —— 1/7 个有
-- `DWPreprocessor` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `GetImageSizeAndCount` —— 1/7 个有
-- `ImageBatchMulti` —— 1/7 个有
-- `ImageFromBatch` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `IntMathOperation` —— 1/7 个有
-- `LayerColor: ColorAdapter` —— 1/7 个有
-- `MaskBatchMulti` —— 1/7 个有
-- `WanVideoLoraSelect` —— 1/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
+- `RH_Captioner` —— 5/7 个有
+- `Text` —— 5/7 个有
+- `TextConcatenate_UTK` —— 5/7 个有
+- `UNETLoader` —— 5/7 个有
+- `easy showAnything` —— 5/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `LoraLoaderBypassModelOnly` —— 3/7 个有
+- `MiniMaxH3BlockCacheT8` —— 3/7 个有
+- `ResolutionSelector` —— 3/7 个有
+- `Display Any (rgthree)` —— 2/7 个有
+- `EnhancedLoadDiffusionModel` —— 2/7 个有
+- `ImageResizeKJv2` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `ImageScaleToTotalPixels` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `SolAttnPatch` —— 1/7 个有
 
 ## 典型参数
 

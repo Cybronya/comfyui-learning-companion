@@ -7,13 +7,13 @@ coverage: 0.964
 common_nodes: [ADE_AnimateDiffLoaderWithContext, ADE_StandardStaticContextOptions, AIO_Preprocessor, BNK_CLIPTextEncodeAdvanced, CLIPLoader, CLIPSetLastLayer, CheckpointLoaderSimple, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, ControlNetApplyAdvanced, ControlNetLoader, ControlNetLoaderAdvanced, DWPreprocessor, DownloadAndLoadCogVideoModel, FreeU_V2, GetImageSizeAndCount, ImageConcanate, ImageConcatMulti, ImageResizeKJ, ImageScale, KSamplerAdvanced //Inspire, LoadWanVideoT5TextEncoder, LoraLoader, PreviewImage, RIFE VFI, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1986260724970389505.json, 视频生成/文生视频/文生视频  wan2.2真人转动漫_2041329650097463297.json, 视频生成/文生视频/真人转动漫 文生视频_2046502279716544514.json]
+members: [视频生成/图生视频/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_1986260724970389505.json, 视频生成/文生视频/文生视频  wan2.2真人转动漫_2041329650097463297.json, 视频生成/文生视频/真人转动漫 文生视频_2046502279716544514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1986260724970389505.json、视频生成/文生视频/文生视频  wan2.2真人转动漫_2041329650097463297.json、视频生成/文生视频/真人转动漫 文生视频_2046502279716544514.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_1986260724970389505.json、视频生成/文生视频/文生视频  wan2.2真人转动漫_2041329650097463297.json、视频生成/文生视频/真人转动漫 文生视频_2046502279716544514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

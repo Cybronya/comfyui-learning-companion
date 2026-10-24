@@ -1,70 +1,69 @@
 ---
 name: unknown_workflow_video_sampler_clip_165
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.851667
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Model Input Switch, EmptyImage, FluxGuidance, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RH_Captioner, RIFE VFI, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy cleanGpuUsed, easy imageSize]
+frequency: 4
+level: moderate
+coverage: 0.70275
+common_nodes: [Anything Everywhere, GetNode, Int, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Seed Everywhere, SetNode, VHS_VideoCombine, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1899002700120412161.json, 视频生成/图生视频/1895292289549991937.json, 视频生成/图生视频/1925092768857976834.json]
+members: [视频生成/图生视频/变婴儿 0730 版本_1950411115459207170.json, 视频生成/图生视频/惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json, 视频生成/图生视频/自动提示词_WAN2.1-CanAI_1932714999003369473.json, 视频生成/图生视频/超炫酷动态壁纸 WAN VACE 720p_1928694139590754306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_165
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1899002700120412161.json、视频生成/图生视频/1895292289549991937.json、视频生成/图生视频/1925092768857976834.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/变婴儿 0730 版本_1950411115459207170.json、视频生成/图生视频/惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json、视频生成/图生视频/自动提示词_WAN2.1-CanAI_1932714999003369473.json、视频生成/图生视频/超炫酷动态壁纸 WAN VACE 720p_1928694139590754306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Model Input Switch`
-- `EmptyImage`
-- `FluxGuidance`
+全部 4 个 workflow 都包含：
+- `Anything Everywhere`
+- `GetNode`
 - `Int`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `RH_Captioner`
-- `RIFE VFI`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `Seed Everywhere`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoTeaCacheKJ`
-- `easy cleanGpuUsed`
-- `easy imageSize`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `UpscaleModelLoader` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Textbox` —— 1/3 个有
-- `easy textSwitch` —— 1/3 个有
+- `Florence2Run` —— 3/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
+- `StringFunction|pysssss` —— 3/4 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoLoraSelect` —— 3/4 个有
+- `WanVideoSLG` —— 3/4 个有
+- `Florence2ModelLoader` —— 2/4 个有
+- `ImageResize+` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `ConcatTextOfUtils` —— 1/4 个有
+- `DisplayAny` —— 1/4 个有
+- `DownloadAndLoadFlorence2Model` —— 1/4 个有
+- `LoadImageFromUrl` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `SaveLatent` —— 1/4 个有
+- `WanVideoBlockSwap` —— 1/4 个有
+- `WanVideoExperimentalArgs` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,8 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

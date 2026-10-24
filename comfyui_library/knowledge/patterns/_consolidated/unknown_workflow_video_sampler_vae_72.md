@@ -7,13 +7,13 @@ coverage: 0.969
 common_nodes: [GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934640445391872001.json, 视频生成/图生视频/1934644328725684226.json, 视频生成/图生视频/1943227565869842433.json, 视频生成/图生视频/1925111334327754753.json, 视频生成/图生视频/1922724321020579841.json, 视频生成/图生视频/1923332542534250497.json, 视频生成/图生视频/1934807918095343617.json]
+members: [视频生成/图生视频/FusionX-VACE加速高细节最强首尾帧_1934640445391872001.json, 视频生成/图生视频/FusionX-VACE首尾帧_1934644328725684226.json, 视频生成/图生视频/FusionX高细节双图首尾帧视频生成_1943227565869842433.json, 视频生成/图生视频/VACE 14B-首尾帧图生视频_1925111334327754753.json, 视频生成/图生视频/VACE 14B视频扩图稳定版V1_1922724321020579841.json, 视频生成/图生视频/VACE-视频扩图工作流_1923332542534250497.json, 视频生成/图生视频/WAN2.1-VACE+FusionX+NAG扩展视频_1934807918095343617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_72
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1934640445391872001.json、视频生成/图生视频/1934644328725684226.json、视频生成/图生视频/1943227565869842433.json、视频生成/图生视频/1925111334327754753.json、视频生成/图生视频/1922724321020579841.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE加速高细节最强首尾帧_1934640445391872001.json、视频生成/图生视频/FusionX-VACE首尾帧_1934644328725684226.json、视频生成/图生视频/FusionX高细节双图首尾帧视频生成_1943227565869842433.json、视频生成/图生视频/VACE 14B-首尾帧图生视频_1925111334327754753.json、视频生成/图生视频/VACE 14B视频扩图稳定版V1_1922724321020579841.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

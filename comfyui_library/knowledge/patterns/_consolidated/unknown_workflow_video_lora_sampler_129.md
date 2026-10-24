@@ -1,85 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_129
 type: Unknown Workflow
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.631615
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.937667
+common_nodes: [INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1996042760450981890.json, 视频生成/图生视频/2069666439010807809.json, 视频生成/图生视频/1996065856805355521.json, 视频生成/图生视频/2051153118703955970.json, 视频生成/图生视频/2049307460728524802.json, 视频生成/图生视频/2049678404324208642.json, 视频生成/图生视频/1995844904171495425.json, 视频生成/图生视频/2061068385760399361.json, 视频生成/图生视频/2062090699058798593.json, 视频生成/图生视频/2068716358623391746.json, 视频生成/图生视频/2009099537780056065.json, 视频生成/图生视频/1999779350897717249.json, 视频生成/图生视频/1995725668220538882.json]
+members: [图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json, 视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json, 视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json, 视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json, 视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json, 视频生成/图生视频/WAN2.2最新图生视频_1960986981260038145.json, 视频生成/图生视频/Wan2.2 图生视频工作流_1991827663358849025.json, 视频生成/图生视频/Wan2.2 洒水 [泼水动画]  万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1993179574894788609.json, 视频生成/图生视频/Wan2.2-图生视频_2064953118089113601.json, 视频生成/图生视频/Wan2.2图生视频_1986361069599916033.json, 视频生成/图生视频/Wan2.2图生视频_2007643731159162882.json, 视频生成/图生视频/[泼水特效] WAN2.2 美女真实泼水换装 画风真实 运行流畅 可更换lora_1980795448254484481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_129
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1996042760450981890.json、视频生成/图生视频/2069666439010807809.json、视频生成/图生视频/1996065856805355521.json、视频生成/图生视频/2051153118703955970.json、视频生成/图生视频/2049307460728524802.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json、视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json、视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json、视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json、视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
+全部 12 个 workflow 都包含：
+- `INTConstant`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoTextEncodeCached`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoScheduler` —— 12/13 个有
-- `Int` —— 11/13 个有
-- `WanVideoBlockSwap` —— 11/13 个有
-- `WanVideoSetLoRAs` —— 11/13 个有
-- `DrawViTPose` —— 9/13 个有
-- `PoseAndFaceDetection` —— 9/13 个有
-- `WanVideoSetBlockSwap` —— 9/13 个有
-- `WanVideoTorchCompileSettings` —— 8/13 个有
-- `SimpleMath+` —— 7/13 个有
-- `PoseDetectionOneToAllAnimation` —— 6/13 个有
-- `Anything Everywhere` —— 5/13 个有
-- `CR Text` —— 5/13 个有
-- `ImageUpscaleWithModelBatched` —— 5/13 个有
-- `RIFE VFI` —— 5/13 个有
-- `RunningHub Deepcleaner` —— 5/13 个有
-- `UpscaleModelLoader` —— 5/13 个有
-- `ImageConcatMulti` —— 4/13 个有
-- `PreviewImage` —— 4/13 个有
-- `CR Prompt Text` —— 3/13 个有
-- `easy cleanGpuUsed` —— 3/13 个有
-- `INTConstant` —— 2/13 个有
-- `TextInput_` —— 2/13 个有
-- `easy clearCacheAll` —— 2/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
-- `PrimitiveFloat` —— 1/13 个有
-- `SDPoseOODLoader` —— 1/13 个有
-- `SDPoseOODProcessor` —— 1/13 个有
-- `VHS_VideoInfoSource` —— 1/13 个有
-- `WanVideoLoraSelectMulti` —— 1/13 个有
-- `YOLOModelLoader` —— 1/13 个有
-- `easy convertAnything` —— 1/13 个有
-- `ttN text` —— 1/13 个有
+- `CreateCFGScheduleFloatList` —— 11/12 个有
+- `GetImageSizeAndCount` —— 11/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/12 个有
+- `MathExpression|pysssss` —— 10/12 个有
+- `easy int` —— 10/12 个有
+- `DF_Integer` —— 9/12 个有
+- `JWInteger` —— 9/12 个有
+- `JjkText` —— 9/12 个有
+- `SimpleMath+` —— 9/12 个有
+- `WanVideoTorchCompileSettings` —— 3/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
+- `ImageScaleByAspectRatio_UTK` —— 1/12 个有
+- `ImpactInt` —— 1/12 个有
+- `PurgeVRAM_UTK` —— 1/12 个有
+- `RH_Captioner` —— 1/12 个有
+- `ShowText` —— 1/12 个有
+- `WanVideoTeaCache` —— 1/12 个有
+- `easy seed` —— 1/12 个有
 
 ## 典型参数
 

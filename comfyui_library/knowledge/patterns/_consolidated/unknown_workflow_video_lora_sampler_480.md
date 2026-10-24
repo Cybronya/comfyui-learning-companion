@@ -2,78 +2,76 @@
 name: unknown_workflow_video_lora_sampler_480
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.869
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, INTConstant, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, TrimVideoLatent, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.531
+common_nodes: [CLIPVisionLoader, CM_FloatToInt, ComfyMathExpression, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, MinNode, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, 图像缩放V2_孤海]
+problems: []
 missing: []
-members: [视频生成/图生视频/2002231206848655361.json, 视频生成/图生视频/1972997136394661890.json, 视频生成/图生视频/2042244068767436801.json, 视频生成/图生视频/2030541873395273730.json]
+members: [视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json, 视频生成/图生视频/动作迁移_2072250195357818881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_480
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2002231206848655361.json、视频生成/图生视频/1972997136394661890.json、视频生成/图生视频/2042244068767436801.json、视频生成/图生视频/2030541873395273730.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json、视频生成/图生视频/动作迁移_2072250195357818881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `INTConstant`
-- `KSampler`
+- `CM_FloatToInt`
+- `ComfyMathExpression`
+- `DrawViTPose`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PixelPerfectResolution`
-- `TrimVideoLatent`
-- `VAEDecode`
-- `VAELoader`
+- `MinNode`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `图像缩放V2_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 3/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `SimpleMath+` —— 2/4 个有
-- `UnetLoaderGGUF` —— 2/4 个有
-- `FloatConstant` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `SetNode` —— 1/4 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `GIMMVFI_interpolate` —— 2/4 个有
+- `ImpactSwitch` —— 2/4 个有
+- `InversionDemoLazySwitch` —— 2/4 个有
+- `PrimitiveBoolean` —— 2/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（5/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

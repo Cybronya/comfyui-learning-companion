@@ -1,0 +1,546 @@
+---
+key: 图片生成/图生图/Qwen-image双节棍+SeedVR2.5高清15视图角色IP人物一致性多视图_1980999914962423810.json
+name: Qwen-image双节棍+SeedVR2.5高清15视图角色IP人物一致性多视图_1980999914962423810
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Qwen-image双节棍+SeedVR2.5高清15视图角色IP人物一致性多视图_1980999914962423810.json
+hash: 0835020d28e5ce52
+coverage: 0.480435
+learned_at: 2026-10-23 11:18:38
+nodes: [SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, ImageScaleToTotalPixels, SetNode, SaveImage, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, KSampler, CFGNorm, PrimitiveStringMultiline, StringConcatenate, GetNode, TextEncodeQwenImageEditPlus, Any Switch (rgthree), VAEEncode, Mute / Bypass Repeater (rgthree), GetNode, GetNode, SetNode, SetNode, GetNode, Any Switch (rgthree), KSampler, CFGNorm, StringConcatenate, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, GetNode, TextEncodeQwenImageEditPlus, Any Switch (rgthree), VAEEncode, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), SetNode, GetNode, PrimitiveStringMultiline, KSampler, CFGNorm, StringConcatenate, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, GetNode, TextEncodeQwenImageEditPlus, Any Switch (rgthree), VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), PrimitiveStringMultiline, GetNode, KSampler, CFGNorm, StringConcatenate, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, GetNode, TextEncodeQwenImageEditPlus, Any Switch (rgthree), VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), SetNode, GetNode, PrimitiveStringMultiline, SaveImage, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), GetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), GetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), GetNode, SetNode, SetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), SetNode, GetNode, SetNode, GetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), Mute / Bypass Repeater (rgthree), GetNode, SetNode, LoadImage, LoadImage, SetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), LoadImage, GetNode, SetNode, GetNode, SaveImage, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), SetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), GetNode, GetNode, SetNode, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), PrimitiveStringMultiline, KSampler, CFGNorm, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, TextEncodeQwenImageEditPlus, VAEEncode, LoadImage, Mute / Bypass Repeater (rgthree), GetNode, GetNode, GetNode, ModelSamplingAuraFlow, GetNode, Any Switch (rgthree), SaveImage, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, LoadImage, StringConcatenate, PrimitiveStringMultiline, PrimitiveStringMultiline, StringConcatenate, PrimitiveStringMultiline, StringConcatenate, PrimitiveStringMultiline, StringConcatenate, SaveImage, LoadImage, StringConcatenate, PrimitiveStringMultiline, PrimitiveStringMultiline, Any Switch (rgthree), StringConcatenate, PrimitiveStringMultiline, PrimitiveStringMultiline, Any Switch (rgthree), StringConcatenate, PrimitiveStringMultiline, PrimitiveStringMultiline, Any Switch (rgthree), StringConcatenate, Any Switch (rgthree), PrimitiveStringMultiline, PrimitiveStringMultiline, ImageScaleToTotalPixels, StringConcatenate, PrimitiveStringMultiline, Any Switch (rgthree), PrimitiveStringMultiline, StringConcatenate, PrimitiveStringMultiline, Any Switch (rgthree), PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, Any Switch (rgthree), PrimitiveStringMultiline, PrimitiveStringMultiline, Any Switch (rgthree), PrimitiveStringMultiline, Any Switch (rgthree), PrimitiveStringMultiline, StringConcatenate, PrimitiveStringMultiline, PrimitiveStringMultiline, Any Switch (rgthree), StringConcatenate, StringConcatenate, StringConcatenate, StringConcatenate, SaveImage, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, Any Switch (rgthree), PrimitiveStringMultiline, LoadImage, SetNode, GetNode, SaveImage, PrimitiveInt, TextEncodeQwenImageEditPlus, GetNode, ImageScaleToTotalPixels, GetNode, GetNode, ModelSamplingAuraFlow, LoadImage, Mute / Bypass Relay (rgthree), LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, EmptyLatentImage, Fast Groups Bypasser (rgthree), LayerUtility: PurgeVRAM V2, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, VAEDecode, VAEDecode, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, VAEDecode, VAEDecode, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPLoader, SetNode, VAELoader, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, LoraLoaderModelOnly, LoraLoaderModelOnly, SeedVR2VideoUpscaler, easy imageBatchToImageList, CreateVideo, easy imageListToImageBatch, ImageBatchMulti, SaveVideo, NunchakuQwenImageDiTLoader, SetNode, SetNode, ModelPatchTorchSettings, PrimitiveInt, ModelSamplingAuraFlow, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGNorm, PreviewImage, SaveImage]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1296, "sampler_name": "euler", "scheduler": "simple", "seed": 1095877904493907, "steps": 8, "width": 960}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/Qwen-image双节棍+SeedVR2.5高清15视图角色IP人物一致性多视图_1980999914962423810.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-image双节棍+SeedVR2.5高清15视图角色IP人物一致性多视图_1980999914962423810.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（460 个）：
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `SaveImage`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `PrimitiveStringMultiline`
+- `StringConcatenate`
+- `GetNode`
+- `TextEncodeQwenImageEditPlus`
+- `Any Switch (rgthree)`
+- `VAEEncode` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `KSampler` ★核心
+- `CFGNorm`
+- `StringConcatenate`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `TextEncodeQwenImageEditPlus`
+- `Any Switch (rgthree)`
+- `VAEEncode` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `GetNode`
+- `PrimitiveStringMultiline`
+- `KSampler` ★核心
+- `CFGNorm`
+- `StringConcatenate`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `TextEncodeQwenImageEditPlus`
+- `Any Switch (rgthree)`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `GetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `StringConcatenate`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `TextEncodeQwenImageEditPlus`
+- `Any Switch (rgthree)`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `GetNode`
+- `PrimitiveStringMultiline`
+- `SaveImage`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `SetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `LoadImage`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SaveImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `KSampler` ★核心
+- `CFGNorm`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LoadImage`
+- `Mute / Bypass Repeater (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SaveImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `StringConcatenate`
+- `SaveImage`
+- `LoadImage`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `StringConcatenate`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `ImageScaleToTotalPixels`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `StringConcatenate`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Any Switch (rgthree)`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `SaveImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `Any Switch (rgthree)`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `SetNode`
+- `GetNode`
+- `SaveImage`
+- `PrimitiveInt`
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingAuraFlow`
+- `LoadImage`
+- `Mute / Bypass Relay (rgthree)`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `EmptyLatentImage` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPLoader`
+- `SetNode`
+- `VAELoader`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2LoadDiTModel`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SeedVR2VideoUpscaler`
+- `easy imageBatchToImageList`
+- `CreateVideo`
+- `easy imageListToImageBatch`
+- `ImageBatchMulti`
+- `SaveVideo`
+- `NunchakuQwenImageDiTLoader`
+- `SetNode`
+- `SetNode`
+- `ModelPatchTorchSettings`
+- `PrimitiveInt`
+- `ModelSamplingAuraFlow`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CFGNorm`
+- `PreviewImage`
+- `SaveImage`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `1095877904493907`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `960`
+- `height` = `1296`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **48%**（221/460）
+
+**有卡**：`ImageScaleToTotalPixels`、`SaveImage`、`KSampler`、`CFGNorm`、`StringConcatenate`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`Mute / Bypass Repeater (rgthree)`、`ModelSamplingAuraFlow`、`LoadImage`、`Mute / Bypass Relay (rgthree)`、`LayerUtility: PurgeVRAM V2`、`EmptyLatentImage`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`LoraLoaderModelOnly`、`SeedVR2VideoUpscaler`、`easy imageBatchToImageList`、`CreateVideo`、`easy imageListToImageBatch`、`ImageBatchMulti`、`SaveVideo`、`NunchakuQwenImageDiTLoader`、`ModelPatchTorchSettings`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、LoadImage、CFGNorm
+
+## 参数体检
+
+发现 15 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_42
 type: Text To Image
-frequency: 10
+frequency: 13
 level: moderate
-coverage: 0.8874
+coverage: 0.982231
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-Image-Base文生图批量生图_2018255513896624130.json, 图片生成/文生图/Z-Image-Base高质量多细节文生图_2015636535781101570.json, 图片生成/文生图/Z-Image-De-Turbo去蒸馏文生图（CFG3 25步）_1997621234118668290.json, 图片生成/文生图/Z-Image-SuperV3-文生图_2018341790440493058.json, 图片生成/文生图/Z-Image-Turbo 浮云2.3_2018528654661263361.json, 图片生成/文生图/Z-image text-to-image-文生图-超自然人像-20秒快速出图_1993970117180669953.json, 图片生成/文生图/Z-image text-to-image-文生图-超自然人像-20秒快速出图_2074311721812062209.json, 图片生成/文生图/Z-image text-to-image-文生图（完美支持中文字+超自然）​【Agent必备】_2088917231601278978.json, 图片生成/文生图/Z-image-神级文生图-20秒超快速出图TEXT TO IMAGE_1993958594863366145.json, 图片生成/文生图/（Z-image）dpmpp-2m-sde对比euler-文生图_1995128750184574977.json]
+members: [图片生成/文生图/boogu_turbo工作流含提示词_2067780518917271554.json, 图片生成/文生图/boogu_turbo文生图_2068941150962147330.json, 图片生成/文生图/boogu_turbo文生图_2068959350126891010.json, 图片生成/文生图/boogu_turbo文生图工作流_2069287215741624322.json, 图片生成/文生图/boogu文生图_2069052782014984193.json, 图片生成/文生图/boogu文生图满血版工作流_2067862555661520898.json, 图片生成/文生图/boogu文生图满血版工作流_2067880773423816705.json, 图片生成/文生图/boogu模型快速出图_2069078655669727234.json, 图片生成/文生图/boogu满血版文生图V1_2067838674468958210.json, 图片生成/文生图/boogu满血版文生图V1_2068275477441236993.json, 图片生成/文生图/flux 2文生图 丨电商场景图_1997117365974405121.json, 图片生成/文生图/krea-2文生图_2070065443259375617.json, 图片生成/文生图/krea2-turbo_2070710904806789122.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-Image-Base文生图批量生图_2018255513896624130.json、图片生成/文生图/Z-Image-Base高质量多细节文生图_2015636535781101570.json、图片生成/文生图/Z-Image-De-Turbo去蒸馏文生图（CFG3 25步）_1997621234118668290.json、图片生成/文生图/Z-Image-SuperV3-文生图_2018341790440493058.json、图片生成/文生图/Z-Image-Turbo 浮云2.3_2018528654661263361.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/boogu_turbo工作流含提示词_2067780518917271554.json、图片生成/文生图/boogu_turbo文生图_2068941150962147330.json、图片生成/文生图/boogu_turbo文生图_2068959350126891010.json、图片生成/文生图/boogu_turbo文生图工作流_2069287215741624322.json、图片生成/文生图/boogu文生图_2069052782014984193.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -33,42 +33,40 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 8/10 个有
-- `ConditioningZeroOut` —— 7/10 个有
-- `easy promptLine` —— 7/10 个有
-- `GetNode` —— 5/10 个有
-- `SetNode` —— 5/10 个有
-- `LayerUtility: PurgeVRAM` —— 4/10 个有
-- `LoadImage` —— 2/10 个有
-- `ModelSamplingAuraFlow` —— 2/10 个有
-- `Load Lora` —— 1/10 个有
-- `PrimitiveInt` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
+- `ConditioningZeroOut` —— 12/13 个有
+- `CR Prompt Text` —— 4/13 个有
+- `JjkText` —— 3/13 个有
+- `RH_Translator` —— 3/13 个有
+- `Int` —— 2/13 个有
+- `FluxGuidance` —— 1/13 个有
+- `ImageSizeCalculator` —— 1/13 个有
+- `ResolutionSelector` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 30 | 10 | 46% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 10 | 43% |
-| 采样算法 | euler | - | 10 | 70% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 1080 | 1024 - 1920 | 10 | 73% |
-| 高度 | 1480 | 1080 - 1920 | 10 | 81% |
+| 采样步数 | 8 | 4 - 50 | 13 | 11% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 13 | 32% |
+| 采样算法 | lcm | - | 13 | 38% |
+| 调度器 | sgm_uniform | - | 13 | 38% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 1024 | 720 - 1024 | 13 | 90% |
+| 高度 | 1200 | 1024 - 1536 | 13 | 82% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 30，10 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，10 个样本，取值分散，一致性仅 43%
-- 采样算法 最常用 euler，10 个样本，一致性 70%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 1024 - 1920，10 个样本
-- 高度 中位数 1480，观测区间 1080 - 1920，10 个样本，取值集中（一致性 81%）
+- 采样步数 中位数 8，观测区间 4 - 50，13 个样本，取值分散，一致性仅 11%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，13 个样本，取值分散，一致性仅 32%
+- 采样算法 最常用 lcm，13 个样本，一致性 38%
+- 调度器 最常用 sgm_uniform，13 个样本，一致性 38%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 720 - 1024，13 个样本，取值集中（一致性 90%）
+- 高度 中位数 1200，观测区间 1024 - 1536，13 个样本，取值集中（一致性 82%）
+- 高发问题（7/13 个样本）：Steps较低可能导致细节不足

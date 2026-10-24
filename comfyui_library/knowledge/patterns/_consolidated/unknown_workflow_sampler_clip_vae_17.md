@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_sampler_clip_vae_17
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.910167
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.922556
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX2-dev文生图_1993862047901433857.json, 图片生成/文生图/FLUX2-dev文生图工作流_1993549884353609730.json, 图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2003736045457973250.json, 图片生成/文生图/FLUX2文生图_1994284131244851202.json, 图片生成/文生图/FLUX2文生图基础工作流_1993578946742730753.json, 图片生成/文生图/FLUX2文生图基础工作流_1993609903375843329.json]
+members: [图片生成/图生图/Flux2图像编辑上线_1994235957700476930.json, 图片生成/图生图/Flux2图生图工作流_1954841342910316546.json, 图片生成/图生图/Flux2最新图像多图编辑（支持中文的flux）_1993556016021389313.json, 图片生成/图生图/Y-FLUX.2 Klein 9B 单图编辑_2012793735624527873.json, 图片生成/图生图/flux2-dev-fp8-mixed 双图编辑_2008366363550687234.json, 图片生成/图生图/flux2-dev-fp8-mixed 多图编辑_2008381017370923010.json, 图片生成/图生图/【GUGU】FLUX2.0单图编辑_多图编辑_1993506477314949121.json, 图片生成/文生图/Flux2 官方文_图生视频_1993512866739322882.json, 图片生成/文生图/Flux2-TurboV2加速_2007448172402057217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/FLUX2-dev文生图_1993862047901433857.json、图片生成/文生图/FLUX2-dev文生图工作流_1993549884353609730.json、图片生成/文生图/FLUX2文生图-大图【LLM辅助】_2003736045457973250.json、图片生成/文生图/FLUX2文生图_1994284131244851202.json、图片生成/文生图/FLUX2文生图基础工作流_1993578946742730753.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2图像编辑上线_1994235957700476930.json、图片生成/图生图/Flux2图生图工作流_1954841342910316546.json、图片生成/图生图/Flux2最新图像多图编辑（支持中文的flux）_1993556016021389313.json、图片生成/图生图/Y-FLUX.2 Klein 9B 单图编辑_2012793735624527873.json、图片生成/图生图/flux2-dev-fp8-mixed 双图编辑_2008366363550687234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
@@ -30,24 +30,29 @@ source: knowledge_consolidation
 - `Flux2Scheduler`
 - `FluxGuidance`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 5/6 个有
-- `Int` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
-- `CR SDXL Aspect Ratio` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `RH_LLMAPI_NODE` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `UnetLoaderGGUF` —— 1/6 个有
-- `easy getNode` —— 1/6 个有
-- `easy setNode` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `LoraLoaderModelOnly` —— 3/9 个有
+- `easy int` —— 3/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `PrimitiveStringMultiline` —— 2/9 个有
+- `EmptySD3LatentImage` —— 1/9 个有
+- `GetImageSize+` —— 1/9 个有
+- `ImageConcanate` —— 1/9 个有
+- `Int Literal` —— 1/9 个有
+- `PathchSageAttentionKJ` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
+- `UnetLoaderGGUF` —— 1/9 个有
 
 ## 典型参数
 

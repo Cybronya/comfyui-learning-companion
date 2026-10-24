@@ -3,58 +3,74 @@ name: text_to_image_video_lora_sampler_189
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.834
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.551667
+common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, GetNode, ImageResizeKJv2, ImpactConditionalBranch, Int, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxChunkFeedForward, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, solarL_SaveImagesToZip, 孤海注释, 布尔孤海]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/简单易用全能生成｜文生视频图生视频一站式工作流_2096713688211345409.json, 视频生成/文生视频/超级加速文生视频｜Minimax_h3角色一致性表演生成_2093781650823012354.json, 视频生成/文生视频/超级加速文生视频｜Minimax_h3角色表演一致性_2093447912754860034.json]
+members: [视频生成/文生视频/MiniMax H3文生首尾图参多合一二采高清放大视频工具_2101039738512822274.json, 视频生成/文生视频/Minimax H3多合一生视频V6.0｜文生首尾图参二采放大_2098765941927665665.json, 视频生成/文生视频/Minimax H3文生首尾图参多合一 二采高清放大工作流V6.0自用版_2098645500403736577.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_189
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/简单易用全能生成｜文生视频图生视频一站式工作流_2096713688211345409.json、视频生成/文生视频/超级加速文生视频｜Minimax_h3角色一致性表演生成_2093781650823012354.json、视频生成/文生视频/超级加速文生视频｜Minimax_h3角色表演一致性_2093447912754860034.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3文生首尾图参多合一二采高清放大视频工具_2101039738512822274.json、视频生成/文生视频/Minimax H3多合一生视频V6.0｜文生首尾图参二采放大_2098765941927665665.json、视频生成/文生视频/Minimax H3文生首尾图参多合一 二采高清放大工作流V6.0自用版_2098645500403736577.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
+- `Any Switch (rgthree)`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImpactConditionalBranch`
+- `Int`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
+- `MathExpression|pysssss`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SelfLiftH3Sampler`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VRGDG_MiniMaxH3AudioDrive`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+- `布尔孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 2/3 个有
-- `MiniMaxH3ImageToVideo` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `PainterVRAM` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `GetNode` —— 1/3 个有
-- `MiniMaxH3Unified` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `VideoCombineV2` —— 1/3 个有
+- `H3SigmaRefiner` —— 2/3 个有
+- `ModelAttentionBackend` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `RandomNoise` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `SolAttnPatch` —— 2/3 个有
 
 ## 典型参数
 

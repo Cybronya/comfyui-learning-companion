@@ -1,77 +1,117 @@
 ---
 name: text_to_image_lora_sampler_clip_116
 type: Text To Image
-frequency: 9
-level: moderate
-coverage: 0.779
-common_nodes: [CLIPTextEncode, CR Aspect Ratio, CR Text, DualCLIPLoader, EmptyLatentImage, KSampler, LoraLoader, SaveImage, Text Load Line From File, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart]
-problems: []
-missing: [CR Aspect Ratio, CR Text, Text Load Line From File, easy forLoopEnd, easy forLoopStart]
-members: [图片生成/文生图/1962501033920446466.json, 图片生成/文生图/1971808932454985729.json, 图片生成/文生图/1981980642160320514.json, 图片生成/文生图/1985473405493329922.json, 图片生成/文生图/1986280122842054657.json, 图片生成/文生图/Flux文生图批量提示词载入生成工作流_1999783577959137282.json, 图片生成/文生图/Flux文生图电商模特生成_2003068281999302658.json, 图片生成/文生图/flux文生图工作流（可批量）_2016353965889294337.json, 图片生成/文生图/文生图_2092885896050855937.json]
+frequency: 12
+level: strong
+coverage: 0.67725
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/MiniMax H3终极篇文武双全｜战斗特效打斗场面一步到位_2111056774492147714.json, 图片生成/图生图/MiniMax H3终极篇，文武双全战斗特效_2111257793977217026.json, 图片生成/文生图/H3官流终极版工作流，文生视频图生视频全覆盖方案_2106884457763532802.json, 图片生成/文生图/MINIMAX H3全功能加速短剧神器工作流，文生图图生图高效创作方案_2106896826518560769.json, 图片生成/文生图/MINIMax H3短剧神器｜全功能加速文生图图生图_2106595105699360770.json, 视频生成/图生视频/H3 SelfLift参考生视频，双采单采加速任选模式_2110850789378977793.json, 视频生成/图生视频/MINIMAX_H3全功能加速短剧神器工作流，文生图图生图高效创作方案_2108736968589926402.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采加单采参考生视频 视频生成加速_2109348613032861697.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采单采，参考生视频提速版_2110810539428499457.json, 视频生成/文生视频/H3全功能多重加速V2短剧神器 视频生成处理工具_2100689948386091009.json, 视频生成/文生视频/海螺H3全功能多重加速V2短剧神器｜minimax h3文生视频图生视频数字人通吃_2100444550102872066.json, 视频生成/文生视频/海螺H3全功能文生视频工作流h3多重加速V2短剧神器minimax_2087334573154856962.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_116
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1962501033920446466.json、图片生成/文生图/1971808932454985729.json、图片生成/文生图/1981980642160320514.json、图片生成/文生图/1985473405493329922.json、图片生成/文生图/1986280122842054657.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/MiniMax H3终极篇文武双全｜战斗特效打斗场面一步到位_2111056774492147714.json、图片生成/图生图/MiniMax H3终极篇，文武双全战斗特效_2111257793977217026.json、图片生成/文生图/H3官流终极版工作流，文生视频图生视频全覆盖方案_2106884457763532802.json、图片生成/文生图/MINIMAX H3全功能加速短剧神器工作流，文生图图生图高效创作方案_2106896826518560769.json、图片生成/文生图/MINIMax H3短剧神器｜全功能加速文生图图生图_2106595105699360770.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Aspect Ratio`
-- `CR Text`
-- `DualCLIPLoader`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
-- `LoraLoader`
-- `SaveImage`
-- `Text Load Line From File`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `ResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `VHS_LoadVideo`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/9 个有
-- `CLIPLoader` —— 1/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `UltimateSDUpscale` —— 1/9 个有
-- `UpscaleModelLoader` —— 1/9 个有
+- `孤海注释` —— 11/12 个有
+- `BasicGuider` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `RandomNoise` —— 10/12 个有
+- `SamplerCustomAdvanced` —— 10/12 个有
+- `Any Switch (rgthree)` —— 9/12 个有
+- `CreateVideo` —— 9/12 个有
+- `Fast Groups Muter (rgthree)` —— 9/12 个有
+- `LoadAudio` —— 9/12 个有
+- `ModelAttentionBackend` —— 9/12 个有
+- `SaveVideo` —— 9/12 个有
+- `BlockSparseAttention` —— 8/12 个有
+- `GetNode` —— 8/12 个有
+- `SaveImage` —— 8/12 个有
+- `SetNode` —— 8/12 个有
+- `Bookmark (rgthree)` —— 6/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
+- `MiniMaxH3ImageToVideo` —— 6/12 个有
+- `ModelPreviewOverrideKJ` —— 6/12 个有
+- `Mute / Bypass Relay (rgthree)` —— 6/12 个有
+- `Mute / Bypass Repeater (rgthree)` —— 6/12 个有
+- `PlaySound|pysssss` —— 6/12 个有
+- `SetReserveVRAM` —— 6/12 个有
+- `easy int` —— 6/12 个有
+- `ConditioningZeroOut` —— 5/12 个有
+- `SelfLiftH3Sampler` —— 5/12 个有
+- `ManualSigmas` —— 4/12 个有
+- `EasyCache` —— 3/12 个有
+- `ExtendIntermediateSigmas` —— 3/12 个有
+- `MiniMaxChunkFeedForward` —— 3/12 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/12 个有
+- `MiniMaxLowVRAMAttention` —— 3/12 个有
+- `VHS_VideoCombine` —— 3/12 个有
+- `GoohaiUniversalSlider` —— 2/12 个有
+- `ImageScale` —— 2/12 个有
+- `MiniMaxH3SigmaShift` —— 2/12 个有
+- `Text` —— 2/12 个有
+- `EmptyImage` —— 1/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `LoraLoaderBypassModelOnly` —— 1/12 个有
+- `PreviewImage` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 9 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 9 | 48% |
-| 采样算法 | dpmpp_2m | - | 9 | 89% |
-| 调度器 | sgm_uniform | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 896 | 512 - 896 | 9 | 80% |
-| 高度 | 1152 | 512 - 1152 | 9 | 74% |
-| LoRA 模型强度 | 0.6 | 0.6 - 1 | 9 | 80% |
-| LoRA 文本强度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 12 | 100% |
+| 高度 | 80 | 80 - 80 | 12 | 100% |
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
+| 采样算法 | er_sde | - | 12 | 100% |
+| 调度器 | beta | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
-- 采样算法 最常用 dpmpp_2m，9 个样本，一致性 89%
-- 调度器 最常用 sgm_uniform，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，观测区间 512 - 896，9 个样本，取值集中（一致性 80%）
-- 高度 中位数 1152，观测区间 512 - 1152，9 个样本
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 1，9 个样本，取值集中（一致性 80%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Aspect Ratio、CR Text、Text Load Line From File、easy forLoopEnd、easy forLoopStart
+- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，12 个样本，一致性 100%
+- 调度器 最常用 beta，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（13/12 个样本）：Steps较低可能导致细节不足

@@ -3,28 +3,29 @@ name: unknown_workflow_video_inpaint_sampler_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.743
-common_nodes: [GetNode, GrowMaskWithBlur, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.8175
+common_nodes: [Fast Groups Bypasser (rgthree), GrowMaskWithBlur, ImageConcanate, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949674343244144641.json, 视频生成/图生视频/1934214235734106114.json]
+members: [视频生成/图生视频/VACE14B自动遮罩局部视频修改_1922808096656343042.json, 视频生成/图生视频/VACE普通控制+双图可控构图参考+局部编辑_1909233072066469889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949674343244144641.json、视频生成/图生视频/1934214235734106114.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE14B自动遮罩局部视频修改_1922808096656343042.json、视频生成/图生视频/VACE普通控制+双图可控构图参考+局部编辑_1909233072066469889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
 - `GrowMaskWithBlur`
+- `ImageConcanate`
 - `ImageResizeKJ`
 - `InpaintPreprocessor`
 - `LayerMask: LoadSegmentAnythingModels`
@@ -33,33 +34,29 @@ source: knowledge_consolidation
 - `LoadWanVideoT5TextEncoder`
 - `MaskToImage`
 - `PreviewImage`
-- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 - `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
 - `AIO_Preprocessor` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageBlend` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LoadImageFromUrl` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `Compositor3` —— 1/2 个有
+- `CompositorConfig3` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `Images to RGB` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 - `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数

@@ -1,81 +1,85 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_41
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.822
-common_nodes: [AILab_ImagePreview, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DetailDaemonGraphSigmasNode, DetailDaemonSamplerNode, EmptyLatentImage, Image Comparer (rgthree), KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, VRAMReserver, easy int]
-problems: []
+frequency: 5
+level: moderate
+coverage: 0.8892
+common_nodes: [BetterFilmGrain, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImageScaleToMegapixels, ImageSharpen, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Lora训练_Z-Image-i2L_2019993856825102337.json, 图片生成/文生图/图片生成_Z-Image-Turbo_Detail-Daemon_增加细节_去除竖纹_2013923317299810306.json]
+members: [图片生成/文生图/Aiwood-qwen+wan2.1洗图流_1956048542387326978.json, 图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json, 图片生成/文生图/[T2I] 极速出图Nunchaku R128高质量（Nunchaku-Qwen）_1965055612562362369.json, 图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json, 图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_41
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Lora训练_Z-Image-i2L_2019993856825102337.json、图片生成/文生图/图片生成_Z-Image-Turbo_Detail-Daemon_增加细节_去除竖纹_2013923317299810306.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Aiwood-qwen+wan2.1洗图流_1956048542387326978.json、图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json、图片生成/文生图/[T2I] 极速出图Nunchaku R128高质量（Nunchaku-Qwen）_1965055612562362369.json、图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json、图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_ImagePreview`
-- `BasicScheduler`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
+- `BetterFilmGrain`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DetailDaemonGraphSigmasNode`
-- `DetailDaemonSamplerNode`
-- `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
+- `EmptySD3LatentImage`
+- `ImageScaleToMegapixels`
+- `ImageSharpen`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `ModelSamplingSD3`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VRAMReserver`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `BiRefNetRMBG` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageBatchMulti` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RunningHub_ZImageI2L_Loader` —— 1/2 个有
-- `RunningHub_ZImageI2L_LoraGenerator` —— 1/2 个有
-- `RunningHub_ZImageI2L_Saver` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `WD14Tagger|pysssss` —— 1/2 个有
+- `EsesImageEffectBloom` —— 4/5 个有
+- `easy showAnything` —— 3/5 个有
+- `CFGNorm` —— 2/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `JWInteger` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `NunchakuQwenImageDiTLoader` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `easy promptConcat` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `LazySwitch2way` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | 8 | 4 - 10 | 5 | 62% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 60% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 0.15 - 1 | 5 | 37% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 4 - 10，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 60%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.15 - 1，5 个样本，取值分散，一致性仅 37%
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

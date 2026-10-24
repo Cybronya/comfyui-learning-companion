@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_322
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.9692
-common_nodes: [IndexTTS2Run, LoadAudio, Text Multiline]
+coverage: 0.876571
+common_nodes: [DF_Image_scale_to_side, ImageConcanate, JjkText, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LoadImage, PreviewBridge, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json, 音频生成/音频生成/双人对话语音克隆_2063192858802343937.json, 音频生成/音频生成/声音克隆_1993713525206040578.json, 音频生成/音频生成/生成配音-情绪_2039538988712726529.json, 音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json]
+members: [图片生成/图生图/Flux Kontext  电商模特海报设计  手拿产品工作流 V1.0_1986739083588349953.json, 图片生成/图生图/Flux Kontext 多图融合｜电商海报_1929718057047068673.json, 图片生成/图生图/Flux Kontext 明星产品展示_1930438743898099714.json, 图片生成/图生图/Flux Kontext 明星代言｜手持产品替换_1931890647865995266.json, 图片生成/图生图/Flux Kontext 材质替换_1930568437767262209.json, 图片生成/图生图/Flux Kontext 模特眼镜大全｜产品展示_1935147224680865794.json, 图片生成/图生图/Flux Kontext 电商手持产品替换_1931909340028928001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_322
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json、音频生成/音频生成/双人对话语音克隆_2063192858802343937.json、音频生成/音频生成/声音克隆_1993713525206040578.json、音频生成/音频生成/生成配音-情绪_2039538988712726529.json、音频生成/音频生成/音频-IndexTTS2双人对话+单人+情绪迁移工作流_1976290429291335681.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux Kontext  电商模特海报设计  手拿产品工作流 V1.0_1986739083588349953.json、图片生成/图生图/Flux Kontext 多图融合｜电商海报_1929718057047068673.json、图片生成/图生图/Flux Kontext 明星产品展示_1930438743898099714.json、图片生成/图生图/Flux Kontext 明星代言｜手持产品替换_1931890647865995266.json、图片生成/图生图/Flux Kontext 材质替换_1930568437767262209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `Text Multiline`
+全部 7 个 workflow 都包含：
+- `DF_Image_scale_to_side`
+- `ImageConcanate`
+- `JjkText`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LoadImage`
+- `PreviewBridge`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 4/5 个有
-- `SaveAudio` —— 3/5 个有
-- `SaveAudioMP3` —— 2/5 个有
+- `PreviewImage` —— 2/7 个有
 
 ## 典型参数
 

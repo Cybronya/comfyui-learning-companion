@@ -3,73 +3,57 @@ name: text_to_image_video_upscale_lora_12
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.7825
-common_nodes: [AuKAudioTrim, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, ConditioningZeroOut, CreateVideo, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, H3FaceStitch, H3FaceTrackCrop, H3InjectVideoLatent, H3PerFrameDenoise, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3NativeAudioLock, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PrimitiveBoolean, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, easy getNode, easy setNode, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9615
+common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, INTConstant, ImageBatchMulti, ImageFromBatch, JjkText, KSampler, KSamplerSelect, LoadVideoUI, LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3Unified, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, ReverseImageBatch, SamplerCustomAdvanced, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, easy getNode, easy setNode, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3数字人渐进式二阶段采样工作流拆解系列12集，数字人图生视频方案_2107165808068743170.json, 视频生成/文生视频/H3数字人渐进式二阶段采样｜工作流拆解系列全12集_2106949295625818113.json]
+members: [视频生成/图生视频/完美长视频拼接工作流，视频生视频图生视频处理方案_2108282545954709505.json, 视频生成/图生视频/完美长视频拼接工作流｜多段素材无缝合并成片_2108083435968491522.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/H3数字人渐进式二阶段采样工作流拆解系列12集，数字人图生视频方案_2107165808068743170.json、视频生成/文生视频/H3数字人渐进式二阶段采样｜工作流拆解系列全12集_2106949295625818113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/完美长视频拼接工作流，视频生视频图生视频处理方案_2108282545954709505.json、视频生成/图生视频/完美长视频拼接工作流｜多段素材无缝合并成片_2108083435968491522.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AuKAudioTrim`
+- `AudioConcat`
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `CreateVideo`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `H3FaceStitch`
-- `H3FaceTrackCrop`
-- `H3InjectVideoLatent`
-- `H3PerFrameDenoise`
-- `H3SigmaRefiner`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageFromBatch`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadImage`
+- `LoadVideoUI`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3BlockCacheT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3NativeAudioLock`
-- `MiniMaxH3ReferenceToVideo`
+- `MemoryCleaner`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3Unified`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
 - `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
+- `ReverseImageBatch`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Seed (rgthree)`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `VOSR2ModelLoader`

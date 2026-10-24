@@ -1,55 +1,50 @@
 ---
 name: unknown_workflow_video_lora_sampler_705
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.782333
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.909
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1951972629169295361.json, 视频生成/文生视频/1950555101742223362.json, 视频生成/文生视频/1950435690355015681.json]
+members: [图片生成/图生图/电商多图参考生成视频 skyreel V3_2017384271350075393.json, 视频生成/图生视频/SkyReels V3多图参考大模型：上传两张人物照生成合拍视频！_2017184716553719810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_705
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1951972629169295361.json、视频生成/文生视频/1950555101742223362.json、视频生成/文生视频/1950435690355015681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商多图参考生成视频 skyreel V3_2017384271350075393.json、视频生成/图生视频/SkyReels V3多图参考大模型：上传两张人物照生成合拍视频！_2017184716553719810.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+全部 2 个 workflow 都包含：
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `Wan22PromptSelector` —— 2/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
+- `Int` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
 
 ## 典型参数
 
@@ -61,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

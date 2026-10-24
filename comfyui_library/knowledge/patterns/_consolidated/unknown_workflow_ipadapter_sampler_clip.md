@@ -3,22 +3,22 @@ name: unknown_workflow_ipadapter_sampler_clip
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.5788
+coverage: 0.5858
 common_nodes: [CLIPTextEncodeSDXL, CheckpointLoaderSimple, DF_Text_Box, EmptyLatentImage, FluxResolutionNode, IPAdapterMS, IPAdapterUnifiedLoader, JjkText, KSamplerAdvanced, LoadImage, PrepImageForClipVision, PreviewImage, RH_Prompter, SaveImage, ShowText|pysssss, TextCombinerTwo, VAEDecode]
 problems: []
-missing: [HD UltimateSDUpscale]
-members: [图片生成/文生图/1913109580585598977.json, 图片生成/文生图/1983362425695182849.json, 图片生成/文生图/1983464540010684418.json, 图片生成/文生图/1983727590538158082.json, 图片生成/文生图/文生风格图像_1877291536911429634.json]
+missing: []
+members: [图片生成/文生图/文生图_风格—简笔_1913109580585598977.json, 图片生成/文生图/文生风格图像_1877291536911429634.json, 图片生成/文生图/文生风格图像_1983362425695182849.json, 图片生成/文生图/文生风格图像_1983464540010684418.json, 图片生成/文生图/文生风格图像_1983727590538158082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_ipadapter_sampler_clip
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1913109580585598977.json、图片生成/文生图/1983362425695182849.json、图片生成/文生图/1983464540010684418.json、图片生成/文生图/1983727590538158082.json、图片生成/文生图/文生风格图像_1877291536911429634.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/文生图_风格—简笔_1913109580585598977.json、图片生成/文生图/文生风格图像_1877291536911429634.json、图片生成/文生图/文生风格图像_1983362425695182849.json、图片生成/文生图/文生风格图像_1983464540010684418.json、图片生成/文生图/文生风格图像_1983727590538158082.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
@@ -72,4 +72,3 @@ source: knowledge_consolidation
 - 调度器 最常用 dpmpp_3m_sde_gpu，5 个样本，一致性 80%
 - 重绘幅度 最常用 karras，5 个样本，一致性 100%
 - 风险：Prompt 约束强度(CFG) 观测到 50，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：HD UltimateSDUpscale

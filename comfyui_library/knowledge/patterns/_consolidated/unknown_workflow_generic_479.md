@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_479
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.91475
-common_nodes: [DF_Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, JjkText, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 0.7172
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/多人物声音克隆 Qwen3 TTS_2015264650748760065.json, 音频生成/音频生成/多人物配音 可编辑角色声音 Qwen3TTS_2015257162548776961.json, 音频生成/音频生成/多角色声音克隆配音 Qwen3 TTS_2015260825090527234.json, 音频生成/音频生成/多角色编辑配音 Qwen3TTS_2015252252562300930.json]
+members: [comfyui-workflow-templates-json/api_bfl_flux_1_kontext_multiple_images_input.json, comfyui-workflow-templates-json/api_bfl_flux_1_kontext_pro_image.json, 图片生成/图生图/一键全能模特换一切（换装换包换鞋换首饰换背景）_2043763459510243330.json, 图片生成/图生图/一键换装_最终版_2036091675310825473.json, 图片生成/图生图/写实渲染_2046840548773859330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_479
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/多人物声音克隆 Qwen3 TTS_2015264650748760065.json、音频生成/音频生成/多人物配音 可编辑角色声音 Qwen3TTS_2015257162548776961.json、音频生成/音频生成/多角色声音克隆配音 Qwen3 TTS_2015260825090527234.json、音频生成/音频生成/多角色编辑配音 Qwen3TTS_2015252252562300930.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux_1_kontext_multiple_images_input.json、comfyui-workflow-templates-json/api_bfl_flux_1_kontext_pro_image.json、图片生成/图生图/一键全能模特换一切（换装换包换鞋换首饰换背景）_2043763459510243330.json、图片生成/图生图/一键换装_最终版_2036091675310825473.json、图片生成/图生图/写实渲染_2046840548773859330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DF_Text`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `JjkText`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `WhisperSTT` —— 3/4 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/4 个有
+- `ImageStitch` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/5 个有
+- `FluxKontextProImageNode` —— 2/5 个有
+- `JjkText` —— 2/5 个有
+- `ImageSharpen` —— 1/5 个有
 
 ## 典型参数
 

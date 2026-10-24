@@ -1,64 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_46
 type: Unknown Workflow
-frequency: 4
+frequency: 11
 level: moderate
-coverage: 0.627
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.845
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMaxH3-SelfLift工作流V1_2103487158542749698.json, 视频生成/文生视频/self-lift双采工作流（全能参考）_2058746014022066178.json, 视频生成/文生视频/self-lift双采工作流（文生图生视频）_2097961269025402882.json, 视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json]
+members: [图片生成/图生图/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2095826055666950145.json, 图片生成/文生图/【遇见AI】Minimax H3二采提速，高分辨率生成，细节修复，修脸去伪影_2088472535468953602.json, 数字人/数字人/MINIMAX-H3 8参考_2086224463867236354.json, 数字人/数字人/MINIMAX-H3 9参考_2086239769545232385.json, 数字人/数字人/MINIMAX-H3 9参考_2086338746995265538.json, 视频生成/图生视频/H3+LightX2V+二采高清参考生视频_2087551828098633730.json, 视频生成/文生视频/H3 LightX2V 二采高清图_文生视频_2087548123051806721.json, 视频生成/文生视频/MiniMax H3多合一｜Turbo4 + Sage + T8 Stable｜R2V Turbo6 EXP + 二采增强版｜B站UP主@好奇漫步_2086836147753410562.json, 视频生成/文生视频/MiniMax_H3三合一_V2｜ComfyUI0.33_Core｜10Eros+LightX2V__2088301741266788353.json, 视频生成/文生视频/MiniMax_H3三合一_V2｜ComfyUI0.33_Core｜LightX2V_v1_4Ste_2088301834657157121.json, 视频生成/文生视频/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2087029485995642882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_46
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMaxH3-SelfLift工作流V1_2103487158542749698.json、视频生成/文生视频/self-lift双采工作流（全能参考）_2058746014022066178.json、视频生成/文生视频/self-lift双采工作流（文生图生视频）_2097961269025402882.json、视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/【0813】MiniMax H3文 图 参考生视频三合一｜组合加速｜全模式二采增强版 B站@好奇漫步_2095826055666950145.json、图片生成/文生图/【遇见AI】Minimax H3二采提速，高分辨率生成，细节修复，修脸去伪影_2088472535468953602.json、数字人/数字人/MINIMAX-H3 8参考_2086224463867236354.json、数字人/数字人/MINIMAX-H3 9参考_2086239769545232385.json、数字人/数字人/MINIMAX-H3 9参考_2086338746995265538.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
+- `CreateVideo`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SelfLiftH3Sampler`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `ModelPreviewOverrideKJ` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `VHS_VideoCombine` —— 3/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `CreateVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `Float` —— 1/4 个有
-- `LTXVSeparateAVLatent` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/4 个有
-- `MiniMaxH3ImageToVideo` —— 1/4 个有
-- `SaveVideo` —— 1/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/11 个有
+- `LoadAudio` —— 9/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 9/11 个有
+- `PrimitiveStringMultiline` —— 9/11 个有
+- `ImageResizeKJv2` —— 8/11 个有
+- `LoraLoaderBypassModelOnly` —— 8/11 个有
+- `PT_H3ConcatAVLatent` —— 8/11 个有
+- `VAEEncode` —— 8/11 个有
+- `VAEEncodeAudio` —— 8/11 个有
+- `LoadVideo` —— 7/11 个有
+- `MiniMaxH3ImageToVideo` —— 7/11 个有
+- `ComfySwitchNode` —— 5/11 个有
+- `GetVideoComponents` —— 5/11 个有
+- `PrimitiveInt` —— 5/11 个有
+- `JWString` —— 3/11 个有
+- `JoinStrings` —— 3/11 个有
+- `MiniMaxH3DualClockSamplerT8` —— 3/11 个有
+- `EasyCache` —— 2/11 个有
+- `Get Date Time String (JPS)` —— 2/11 个有
+- `MiniMaxH3SigmaShift` —— 2/11 个有
+- `SaveText|pysssss` —— 2/11 个有
+- `ShowText|pysssss` —— 2/11 个有
+- `StringFunction|pysssss` —— 2/11 个有
+- `WidgetToString` —— 2/11 个有
+- `ModelAttentionBackend` —— 1/11 个有
+- `PathchSageAttentionKJ` —— 1/11 个有
+- `VHS_LoadVideo` —— 1/11 个有
 
 ## 典型参数
 

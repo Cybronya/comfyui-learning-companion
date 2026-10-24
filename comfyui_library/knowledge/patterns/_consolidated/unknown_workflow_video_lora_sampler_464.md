@@ -2,64 +2,84 @@
 name: unknown_workflow_video_lora_sampler_464
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.69775
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, DF_Integer, EmptyHunyuanLatentVideo, INTConstant, KSamplerAdvanced, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, RH_Prompter, RH_Translator, ShowText|pysssss, SimpleMath+, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy ifElse]
+level: moderate
+coverage: 0.6885
+common_nodes: [Audio Duration (mtb), BlockifyMask, CLIPVisionLoader, DownloadAndLoadWav2VecModel, DrawMaskOnImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PointsEditor, PreviewAny, ReverseImageBatch, SetNode, SimpleMath+, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
-missing: [CR Text, CR Text Concatenate, MathExpression|pysssss, SimpleMath+, Text Multiline]
-members: [图片生成/文生图/1957131741351829505.json, 图片生成/文生图/1960634788682096642.json, 视频生成/文生视频/1950000551498006530.json, 视频生成/文生视频/1957131741351829505.json]
+missing: []
+members: [图片生成/图生图/视频对口型-多人选一人+老八v3_2028080510215397377.json, 视频生成/图生视频/视频对口型-多人选一人 老八_2018290540470607873.json, 视频生成/图生视频/视频对口型-多人选一人+老八v2_2027669191704186881.json, 视频生成/图生视频/视频对口型-多人选一人_2007293154239713282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_464
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1957131741351829505.json、图片生成/文生图/1960634788682096642.json、视频生成/文生视频/1950000551498006530.json、视频生成/文生视频/1957131741351829505.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/视频对口型-多人选一人+老八v3_2028080510215397377.json、视频生成/图生视频/视频对口型-多人选一人 老八_2018290540470607873.json、视频生成/图生视频/视频对口型-多人选一人+老八v2_2027669191704186881.json、视频生成/图生视频/视频对口型-多人选一人_2007293154239713282.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：70%
+- **可信度**：中等可信
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `DF_Integer`
-- `EmptyHunyuanLatentVideo`
+- `Audio Duration (mtb)`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `DrawMaskOnImage`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `RH_Prompter`
-- `RH_Translator`
-- `ShowText|pysssss`
+- `ImageBatchMulti`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PointsEditor`
+- `PreviewAny`
+- `ReverseImageBatch`
+- `SetNode`
 - `SimpleMath+`
-- `Text Multiline`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ToInt`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy ifElse`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginInputText` —— 2/4 个有
-- `ShellAgentPluginSaveVideoVHS` —— 2/4 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `LayerMask: MaskGrow` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `easy sam3ModelLoader` —— 3/4 个有
+- `easy sam3VideoSegmentation` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `ACE_TextGoogleTranslate` —— 2/4 个有
+- `CR Text` —— 2/4 个有
+- `GrowMask` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RunningHub Deepcleaner` —— 2/4 个有
+- `RH_Translator` —— 1/4 个有
+- `SeCModelLoader` —— 1/4 个有
+- `SeCVideoSegmentation` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 4 | 100% |
-| 采样算法 | 3.5 | 3.5 - 3.5 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,9 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3.5，观测区间 3.5 - 3.5，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、MathExpression|pysssss、SimpleMath+、Text Multiline
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

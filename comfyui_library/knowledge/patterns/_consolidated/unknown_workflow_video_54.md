@@ -3,34 +3,35 @@ name: unknown_workflow_video_54
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.809667
-common_nodes: [LoadImage, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.902667
+common_nodes: [Int, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1914673923576004610.json, 视频生成/图生视频/1928761802551889921.json, 视频生成/图生视频/1960645585621647362.json]
+members: [视频生成/图生视频/FramePack 60s视频生成工作流【AI小王子】_1913162055489388545.json, 视频生成/图生视频/FramePack混元首尾帧图生视频_1915426980001681410.json, 视频生成/图生视频/framepack首尾帧图生视频_1914240027012886529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_54
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1914673923576004610.json、视频生成/图生视频/1928761802551889921.json、视频生成/图生视频/1960645585621647362.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack 60s视频生成工作流【AI小王子】_1913162055489388545.json、视频生成/图生视频/FramePack混元首尾帧图生视频_1915426980001681410.json、视频生成/图生视频/framepack首尾帧图生视频_1914240027012886529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `Int`
 - `LoadImage`
-- `ReActorFaceSwap`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `SUPIR_Upscale` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `JjkText` —— 1/3 个有
 
 ## 典型参数
 

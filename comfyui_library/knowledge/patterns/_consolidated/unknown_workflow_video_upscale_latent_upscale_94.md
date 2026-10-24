@@ -2,87 +2,64 @@
 name: unknown_workflow_video_upscale_latent_upscale_94
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.91175
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine]
+level: moderate
+coverage: 0.45225
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, JWFloat, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVLatentSeparateT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VRAM_Debug]
 problems: []
 missing: []
-members: [视频生成/图生视频/2044674035950297090.json, 视频生成/图生视频/2046040872004886529.json, 视频生成/图生视频/2045162483312234497.json, 视频生成/文生视频/LTX2.3 - 多功能可独立音频数字人_2047017723305140225.json]
+members: [视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_94
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2044674035950297090.json、视频生成/图生视频/2046040872004886529.json、视频生成/图生视频/2045162483312234497.json、视频生成/文生视频/LTX2.3 - 多功能可独立音频数字人_2047017723305140225.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json、视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json、视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json、视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `JWFloat`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `MiniMaxH3AVLatentSeparateT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `PT_H3ConcatAVLatent`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `SetNode`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
+- `VHS_LoadAudioUpload`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VRAM_Debug`
 
 **可变部分**（部分 workflow 才有）：
-- `LTX2_NAG` —— 3/4 个有
-- `LTXVChunkFeedForward` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `Switch any [Crystools]` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `Any Switch (rgthree)` —— 1/4 个有
-- `AudioCrop` —— 1/4 个有
-- `CM_IntToFloat` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `LTXVPreprocess` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `QWEN_TextDisplay` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `ResizeImagesByLongerEdge` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `Text Find and Replace` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `MiniMaxChunkFeedForward` —— 3/4 个有
+- `MiniMaxLowVRAMAttention` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -90,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

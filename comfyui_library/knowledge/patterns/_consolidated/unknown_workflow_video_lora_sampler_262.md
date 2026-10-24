@@ -3,62 +3,83 @@ name: unknown_workflow_video_lora_sampler_262
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.9955
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.55725
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1948369611300438017.json, 视频生成/图生视频/1941678134205038593.json, 视频生成/图生视频/1960923370206498818.json, 视频生成/图生视频/1941298719130337281.json, 视频生成/图生视频/1940894901888512001.json, 视频生成/图生视频/1994221474806513665.json, 视频生成/图生视频/1978726455507095554.json, 视频生成/图生视频/2009633003546353665.json]
+members: [视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json, 视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json, 视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2018529838486790146.json, 视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2037140996198240257.json, 视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json, 视频生成/图生视频/Wan2.2 Animate 角色替换视频动作迁移 KJ加速版-StarAI_1969526770116554754.json, 视频生成/图生视频/Wan2.2 Animate人物迁移 单_多人舞蹈影视替换 （点编辑器遮罩）_1971057186338152449.json, 视频生成/文生视频/🦖Wan Animate2.2换主体_1970311265270853633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_262
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1948369611300438017.json、视频生成/图生视频/1941678134205038593.json、视频生成/图生视频/1960923370206498818.json、视频生成/图生视频/1941298719130337281.json、视频生成/图生视频/1940894901888512001.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json、视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json、视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2018529838486790146.json、视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2037140996198240257.json、视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
-- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `PixelPerfectResolution`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 7/8 个有
-- `SeparateMasks` —— 7/8 个有
-- `PreviewAudio` —— 6/8 个有
-- `WanVideoApplyNAG` —— 4/8 个有
-- `WanVideoTextEncode` —— 4/8 个有
-- `WanVideoTextEncodeSingle` —— 4/8 个有
-- `AudioCrop` —— 3/8 个有
-- `AudioSeparation` —— 3/8 个有
-- `INTConstant` —— 3/8 个有
-- `EsesImageEffectBloom` —— 2/8 个有
-- `SaveAudioMP3` —— 2/8 个有
-- `WanVideoExperimentalArgs` —— 2/8 个有
-- `WanVideoSLG` —— 2/8 个有
-- `AudioCropProcessUTK` —— 1/8 个有
-- `Manual XY Entry Info` —— 1/8 个有
-- `WanVideoSetRadialAttention` —— 1/8 个有
+- `JWInteger` —— 7/8 个有
+- `BlockifyMask` —— 5/8 个有
+- `DrawMaskOnImage` —— 5/8 个有
+- `GetImageSizeAndCount` —— 5/8 个有
+- `GrowMask` —— 5/8 个有
+- `Int` —— 5/8 个有
+- `LayerUtility: PurgeVRAM` —— 4/8 个有
+- `VHS_VideoInfo` —— 4/8 个有
+- `CR Text` —— 3/8 个有
+- `WanVideoTorchCompileSettings` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `DownloadAndLoadSAM2Model` —— 2/8 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 2/8 个有
+- `PointsEditor` —— 2/8 个有
+- `Sam2Segmentation` —— 2/8 个有
+- `SimpleMath+` —— 2/8 个有
+- `AILab_MiniCPM_4_V` —— 1/8 个有
+- `Bjornulf_ShowInt` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `ImageGetSize` —— 1/8 个有
+- `ImageResize` —— 1/8 个有
+- `LayerMask: LoadFlorence2Model` —— 1/8 个有
+- `LayerMask: ObjectDetectorFL2` —— 1/8 个有
+- `LayerMask: SAM2VideoUltra` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `ResizeLongestToNode` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `WanVideoEncode` —— 1/8 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/8 个有
+- `WanVideoUni3C_embeds` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

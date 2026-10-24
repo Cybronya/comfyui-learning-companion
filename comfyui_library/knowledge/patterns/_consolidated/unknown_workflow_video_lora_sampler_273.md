@@ -3,76 +3,54 @@ name: unknown_workflow_video_lora_sampler_273
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.797
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.86175
+common_nodes: [LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017646230746173442.json, 视频生成/图生视频/1959143275817021441.json, 视频生成/图生视频/1994005595265105922.json, 视频生成/图生视频/1990334829420007425.json, 视频生成/图生视频/1979895392475189249.json, 视频生成/图生视频/2039336418778030081.json, 视频生成/图生视频/1970560402209841153.json, 音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json]
+members: [视频生成/图生视频/万能通用测试万相lora_1942490603743555586.json, 视频生成/图生视频/双人2对打wan2.1万相图生视频120_1941226969910689794.json, 视频生成/图生视频/改进版360旋转万相图生视48_1941218870319595522.json, 视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941220218918301698.json, 视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941765347643125762.json, 视频生成/图生视频/补036_1944753394462674945.json, 视频生成/图生视频/通用测试lors万相_1942526282015911937.json, 视频生成/图生视频/高清版：拉近眼睛镜头万相图生视48工作流_1941194683714584578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_273
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2017646230746173442.json、视频生成/图生视频/1959143275817021441.json、视频生成/图生视频/1994005595265105922.json、视频生成/图生视频/1990334829420007425.json、视频生成/图生视频/1979895392475189249.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/万能通用测试万相lora_1942490603743555586.json、视频生成/图生视频/双人2对打wan2.1万相图生视频120_1941226969910689794.json、视频生成/图生视频/改进版360旋转万相图生视48_1941218870319595522.json、视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941220218918301698.json、视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941765347643125762.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 7/8 个有
-- `GetImageSizeAndCount` —— 7/8 个有
-- `PreviewAny` —— 7/8 个有
-- `WanVideoBlockSwap` —— 7/8 个有
-- `CR Prompt Text` —— 6/8 个有
-- `JWInteger` —— 6/8 个有
-- `GetNode` —— 4/8 个有
-- `SetNode` —— 4/8 个有
-- `JWFloat` —— 3/8 个有
-- `SaveAudio` —— 3/8 个有
-- `easy int` —— 3/8 个有
-- `CR Text` —— 2/8 个有
-- `MaskPreview+` —— 2/8 个有
-- `MathExpression|pysssss` —— 2/8 个有
-- `MegaTTS3Run` —— 2/8 个有
-- `PreviewAudio` —— 2/8 个有
-- `SaveAudioMP3` —— 2/8 个有
-- `SeparateMasks` —— 2/8 个有
-- `VHS_LoadVideo` —— 2/8 个有
-- `VoxCPM_TTS` —— 2/8 个有
-- `WanVideoTorchCompileSettings` —— 2/8 个有
-- `easy downloadIndexTTSAndLoadModel` —— 2/8 个有
-- `easy indexTTSAudioMerge` —— 2/8 个有
-- `easy indexTTSGenerateSimple` —— 2/8 个有
-- `Float` —— 1/8 个有
-- `IndexTTS2Run` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `LayerUtility: TextBox` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `SeedVCRun` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `WanVideoTorchCompileSettings` —— 6/8 个有
+- `easy cleanGpuUsed` —— 5/8 个有
+- `Int` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `Any Switch (rgthree)` —— 2/8 个有
+- `easy float` —— 2/8 个有
+- `GetNode` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 

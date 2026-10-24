@@ -7,13 +7,13 @@ coverage: 0.82775
 common_nodes: [GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJ, InpaintPreprocessor, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PDIMAGE_LongerSize, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1933564125639266306.json, 视频生成/图生视频/1924715150803128321.json, 视频生成/图生视频/1922710502047367170.json, 视频生成/图生视频/1933854710413578242.json]
+members: [视频生成/图生视频/FusionX视频换脸双倍加速V1.0_1933564125639266306.json, 视频生成/图生视频/VACE 14B SAM2稳定分割主体参考替换（非强控）V1_1924715150803128321.json, 视频生成/图生视频/VACE 14B注意力蒙版视频生视频V2_1922710502047367170.json, 视频生成/图生视频/【视频换脸】FusionX 图生视频一键换脸_1933854710413578242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1933564125639266306.json、视频生成/图生视频/1924715150803128321.json、视频生成/图生视频/1922710502047367170.json、视频生成/图生视频/1933854710413578242.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/FusionX视频换脸双倍加速V1.0_1933564125639266306.json、视频生成/图生视频/VACE 14B SAM2稳定分割主体参考替换（非强控）V1_1924715150803128321.json、视频生成/图生视频/VACE 14B注意力蒙版视频生视频V2_1922710502047367170.json、视频生成/图生视频/【视频换脸】FusionX 图生视频一键换脸_1933854710413578242.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4

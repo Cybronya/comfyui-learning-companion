@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_252
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.6942
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.707444
+common_nodes: [HeartMuLa_Generate, SaveAudio]
 problems: []
-missing: [LayerUtility: TextBox]
-members: [图片生成/图生图/2058728879455563777.json, 图片生成/文生图/image2文生图节点_2080482425800577025.json, 图片生成/文生图/全能图2 全家桶  Image2 文生图 + 图生图_2046939440123224066.json, 图片生成/文生图/全能图片GGPPTT-image2.5-文生图+图片编辑_2097495837743075330.json, 数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json]
+missing: []
+members: [音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json, 音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json, 音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013466293235621890.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013643901214658562.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015014154909786114.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015587368438341634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_252
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2058728879455563777.json、图片生成/文生图/image2文生图节点_2080482425800577025.json、图片生成/文生图/全能图2 全家桶  Image2 文生图 + 图生图_2046939440123224066.json、图片生成/文生图/全能图片GGPPTT-image2.5-文生图+图片编辑_2097495837743075330.json、数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json、音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json、音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 4/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `LayerUtility: TextBox` —— 2/5 个有
-- `Text` —— 2/5 个有
+- `PreviewAny` —— 7/9 个有
+- `RH_LLMAPI_Pro_Node` —— 7/9 个有
+- `Label (rgthree)` —— 5/9 个有
+- `CR Text` —— 4/9 个有
 
 ## 典型参数
 
@@ -44,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: TextBox
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

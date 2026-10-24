@@ -3,81 +3,56 @@ name: unknown_workflow_video_lora_sampler_440
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.668
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, INTConstant, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9536
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1970492700644548609.json, 视频生成/图生视频/1970100224154890241.json, 视频生成/图生视频/1970797508848984065.json, 视频生成/图生视频/1969039434375176194.json, 视频生成/图生视频/1969648359260758017.json]
+members: [视频生成/图生视频/【遇见AI】wan2.1 Uni3c视频运镜模型_2071441193522778114.json, 视频生成/图生视频/【遇见AI】wan2.1 UniAnimate视频转绘 动作参考_2062803456766861313.json, 视频生成/图生视频/【遇见AI】wan2.1图生视频不同加速lora对比_2062116414055608321.json, 视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，带加速_2061019045620699138.json, 视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_440
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1970492700644548609.json、视频生成/图生视频/1970100224154890241.json、视频生成/图生视频/1970797508848984065.json、视频生成/图生视频/1969039434375176194.json、视频生成/图生视频/1969648359260758017.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1 Uni3c视频运镜模型_2071441193522778114.json、视频生成/图生视频/【遇见AI】wan2.1 UniAnimate视频转绘 动作参考_2062803456766861313.json、视频生成/图生视频/【遇见AI】wan2.1图生视频不同加速lora对比_2062116414055608321.json、视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，带加速_2061019045620699138.json、视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 4/5 个有
-- `DownloadAndLoadSAM2Model` —— 4/5 个有
-- `DrawMaskOnImage` —— 4/5 个有
-- `GrowMask` —— 4/5 个有
-- `PointsEditor` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `Sam2Segmentation` —— 4/5 个有
-- `GetImageRangeFromBatch` —— 3/5 个有
-- `GetNode` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `SimpleMath+` —— 3/5 个有
-- `AudioCropProcessUTK` —— 2/5 个有
-- `CM_FloatToInt` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `VHS_VideoInfo` —— 2/5 个有
-- `WanVideoContextOptions` —— 2/5 个有
-- `easy float` —— 2/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `Fast Muter (rgthree)` —— 1/5 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/5 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/5 个有
-- `LayerUtility: CropByMask V2` —— 1/5 个有
-- `MaskToImage` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `WanVideoImageResizeToClosest` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `WanVideoVRAMManagement` —— 2/5 个有
+- `PreviewImage` —— 1/5 个有
+- `WanVideoEncode` —— 1/5 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
+- `WanVideoUni3C_embeds` —— 1/5 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/5 个有
+- `WanVideoUniAnimatePoseInput` —— 1/5 个有
 
 ## 典型参数
 

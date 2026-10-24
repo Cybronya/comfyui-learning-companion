@@ -3,41 +3,36 @@ name: text_to_image_video_lora_sampler_43
 type: Text To Image
 frequency: 15
 level: strong
-coverage: 0.883333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.8666
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/h3开源版H3数字人单人版MiniMax图生视频口播数字人参考音频_2086449565611413505.json, 视频生成/图生视频/数字人单人极速版｜Minimax H3角色一致图生视频_2092026882165403650.json, 视频生成/图生视频/数字人唱歌口播｜MiniMax H3图生视频一键直出_2090220837587742722.json, 视频生成/图生视频/数字人生成｜minimaxh3图生视频口播直出_2089485343300083713.json, 视频生成/图生视频/让效果图动起来_2102598028669579265.json, 视频生成/图生视频/超级加速多图参考生视频｜Minimax_h3角色一致性角色表演工作流_2087208437443809281.json, 视频生成/图生视频/音频驱动对口型｜Minimax H3数字人人物特效图生视频_2089446222766624769.json, 视频生成/文生视频/3视频)3音频全能参考(9图H3加速优化版MiniMax_2086537090464047105.json, 视频生成/文生视频/MiniMax H3开源版数字人说话唱歌音频驱动图生视频处理工具_2102519299419230209.json, 视频生成/文生视频/MiniMax H3开源版数字人｜音频驱动说话唱歌全能出镜_2108025468082540546.json, 视频生成/文生视频/Minimax H3开源数字人说话唱歌｜文生视频生成_2094523338252181506.json, 视频生成/文生视频/Minimax H3开源版数字人说话唱歌工作流，文生视频数字人图生视频方案_2108269811766751233.json, 视频生成/文生视频/Minimax H3开源版数字人｜说话唱歌口型同步｜文生视频图生视频都行_2102288689492746241.json, 视频生成/文生视频/MinimaxH3数字人说话唱歌开源版ENGENG_2087131139222892545.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版｜文生视频数字人图生视频_2090448002296147970.json]
+members: [数字人/数字人/动态数字人口播生成｜MiniMax H3音频驱动制作_2096471857250791426.json, 视频生成/图生视频/4步lora加速版Minimax_h3_音乐MV_2085452422591377409.json, 视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2089308419999223810.json, 视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2090728184093437953.json, 视频生成/图生视频/9图3视频3音频多参考｜Minimax H3开源版音视频生成_2089469135704117249.json, 视频生成/图生视频/9图3视频3音频｜海螺H3全能多参开源版音视频生成_2090229409646202881.json, 视频生成/图生视频/H3全能参考工作流，图生视频多参考视频生成方案_2108432045293793282.json, 视频生成/图生视频/H3单图生视频_2102656768471031809.json, 视频生成/图生视频/H3单采极速文戏工作流，图生视频高效创作方案_2107218917725917186.json, 视频生成/图生视频/H3单采极速文戏工作流，图生视频高效创作方案_2107335317010345985.json, 视频生成/图生视频/H3单采极速文戏工作流，图生视频高效创作方案_2107445931183534081.json, 视频生成/图生视频/H3单采极速文戏工作流，图生视频高效创作方案_2107957288756666370.json, 视频生成/图生视频/H3单采极速文戏工作流｜图生视频高效创作首选方案_2107667535738007554.json, 视频生成/图生视频/H3单采极速文戏流程，图生视频快速产出高质量片段_2110496089349640194.json, 视频生成/图生视频/H3单采极速文戏，图生视频快速产出高质量片段_2110827618437255169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_43
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/h3开源版H3数字人单人版MiniMax图生视频口播数字人参考音频_2086449565611413505.json、视频生成/图生视频/数字人单人极速版｜Minimax H3角色一致图生视频_2092026882165403650.json、视频生成/图生视频/数字人唱歌口播｜MiniMax H3图生视频一键直出_2090220837587742722.json、视频生成/图生视频/数字人生成｜minimaxh3图生视频口播直出_2089485343300083713.json、视频生成/图生视频/让效果图动起来_2102598028669579265.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（数字人/数字人/动态数字人口播生成｜MiniMax H3音频驱动制作_2096471857250791426.json、视频生成/图生视频/4步lora加速版Minimax_h3_音乐MV_2085452422591377409.json、视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2089308419999223810.json、视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2090728184093437953.json、视频生成/图生视频/9图3视频3音频多参考｜Minimax H3开源版音视频生成_2089469135704117249.json…）
 
 - **类型**：Text To Image
 - **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -45,32 +40,37 @@ source: knowledge_consolidation
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 14/15 个有
+- `BasicGuider` —— 14/15 个有
+- `BasicScheduler` —— 14/15 个有
+- `KSamplerSelect` —— 14/15 个有
 - `PrimitiveFloat` —— 14/15 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 13/15 个有
-- `孤海注释` —— 13/15 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 12/15 个有
-- `AudioCrop` —— 11/15 个有
-- `PathchSageAttentionKJ` —— 11/15 个有
-- `PreviewAudio` —— 10/15 个有
-- `SoundFlow_GetLength` —— 10/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/15 个有
-- `ResolutionSelector` —— 8/15 个有
-- `Int` —— 7/15 个有
-- `VAEDecodeAudio` —— 3/15 个有
-- `PainterVRAM` —— 2/15 个有
-- `SaveImage` —— 2/15 个有
-- `VHS_LoadVideo` —— 2/15 个有
-- `AudioConcat` —— 1/15 个有
-- `EmptyAudio` —— 1/15 个有
-- `Fast Groups Muter (rgthree)` —— 1/15 个有
-- `JWIntegerToString` —— 1/15 个有
-- `LoadVideo` —— 1/15 个有
-- `RTXVideoSuperResolution` —— 1/15 个有
-- `SaveAudio` —— 1/15 个有
-- `SimpleMath+` —— 1/15 个有
-- `TrimAudioDuration` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
+- `PrimitiveStringMultiline` —— 14/15 个有
+- `RandomNoise` —— 14/15 个有
+- `SamplerCustomAdvanced` —— 14/15 个有
+- `LoadAudio` —— 13/15 个有
+- `VAEDecodeAudio` —— 12/15 个有
+- `孤海注释` —— 11/15 个有
+- `VHS_LoadVideo` —— 10/15 个有
+- `SaveImage` —— 9/15 个有
+- `MiniMaxH3SigmaShift` —— 8/15 个有
+- `ModelAttentionBackend` —— 8/15 个有
+- `BlockSparseAttention` —— 7/15 个有
+- `ExtendIntermediateSigmas` —— 7/15 个有
+- `PreviewAny` —— 7/15 个有
+- `EmptyImage` —— 6/15 个有
+- `PreviewImage` —— 6/15 个有
+- `PathchSageAttentionKJ` —— 5/15 个有
+- `AudioCrop` —— 3/15 个有
+- `PainterVRAM` —— 3/15 个有
+- `SoundFlow_GetLength` —— 3/15 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 3/15 个有
+- `easy showAnything` —— 3/15 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/15 个有
+- `EnhancedLoadDiffusionModel` —— 1/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
+- `PreviewAudio` —— 1/15 个有
+- `RHHiddenNodes` —— 1/15 个有
+- `Text` —— 1/15 个有
 
 ## 典型参数
 
@@ -88,7 +88,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -99,4 +99,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
-- 高发问题（15/15 个样本）：Steps较低可能导致细节不足
+- 高发问题（19/15 个样本）：Steps较低可能导致细节不足

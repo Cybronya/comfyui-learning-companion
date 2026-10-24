@@ -1,96 +1,95 @@
 ---
 name: text_to_image_lora_sampler_clip_227
 type: Text To Image
-frequency: 5
-level: moderate
-coverage: 0.4868
-common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, Create Grid Image from Batch, EmptyLatentImage, GetNode, ImpactMakeImageList, Int, JoinStrings, KSampler, Lora Loader, PreviewImage, PrimitiveInt, SaveImage, Seed_, SetNode, UNETLoader, VAEDecode, VAELoader, easy convertAnything, easy imageListToImageBatch, easy rangeFloat]
+frequency: 8
+level: strong
+coverage: 0.812
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ComfySwitchNode, EmptyLatentImage, InvertMask, JjkText, KSampler, LoadBackgroundRemovalModel, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, RemoveBackground, SaveImage, TextEncodeQwenImage21, TripoSplatConditioning, TripoSplatPreprocessImage, UNETLoader, VAEDecode, VAEDecodeTripoSplat, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [ConstrainImage|pysssss, Create Grid Image from Batch, easy convertAnything, easy imageListToImageBatch, easy rangeFloat, Lora Loader]
-members: [图片生成/文生图/1960228137802084354.json, 图片生成/文生图/1970132982562496514.json, 图片生成/文生图/Qwen Lora-xy测试工作流_2073237872278335489.json, 图片生成/文生图/Qwen_Lora测试工作流(V-Zion)_1997514435805790210.json, 图片生成/文生图/Z-image Base Lora-xy测试工作流_2073313146638520322.json]
+missing: []
+members: [图片生成/图生图/Qwen2.1 Triposplat+AnyAngles-T｜角色任意角度图像生成_2108391517315485697.json, 图片生成/图生图/Qwen2.1 Triposplat加AnyAngles T角色任意角度图像生成工作流_2108622833558581250.json, 图片生成/图生图/Qwen2.1 Triposplat加AnyAngles-T，角色任意角度分镜出图_2111898485028118529.json, 图片生成/图生图/Qwen2.1加Triposplat AnyAngles-T｜角色任意角度出图_2111146451723177985.json, 图片生成/文生图/Qwen Image 2.1图生图任意角度转换加载3D版，图生图多视角处理工具_2105729449948966913.json, 图片生成/文生图/Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178.json, 图片生成/文生图/任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json, 图片生成/文生图/图生图任意角度转换｜Qwen Image2.1 多角度视图一键生成_2105565075879845889.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_227
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1960228137802084354.json、图片生成/文生图/1970132982562496514.json、图片生成/文生图/Qwen Lora-xy测试工作流_2073237872278335489.json、图片生成/文生图/Qwen_Lora测试工作流(V-Zion)_1997514435805790210.json、图片生成/文生图/Z-image Base Lora-xy测试工作流_2073313146638520322.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen2.1 Triposplat+AnyAngles-T｜角色任意角度图像生成_2108391517315485697.json、图片生成/图生图/Qwen2.1 Triposplat加AnyAngles T角色任意角度图像生成工作流_2108622833558581250.json、图片生成/图生图/Qwen2.1 Triposplat加AnyAngles-T，角色任意角度分镜出图_2111898485028118529.json、图片生成/图生图/Qwen2.1加Triposplat AnyAngles-T｜角色任意角度出图_2111146451723177985.json、图片生成/文生图/Qwen Image 2.1图生图任意角度转换加载3D版，图生图多视角处理工具_2105729449948966913.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AddLabel`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Create Grid Image from Batch`
+- `CLIPVisionLoader`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImpactMakeImageList`
-- `Int`
-- `JoinStrings`
+- `InvertMask`
+- `JjkText`
 - `KSampler`
-- `Lora Loader`
-- `PreviewImage`
-- `PrimitiveInt`
+- `LoadBackgroundRemovalModel`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `QwenImage21Cache`
+- `RemoveBackground`
 - `SaveImage`
-- `Seed_`
-- `SetNode`
+- `TextEncodeQwenImage21`
+- `TripoSplatConditioning`
+- `TripoSplatPreprocessImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTripoSplat`
 - `VAELoader`
-- `easy convertAnything`
-- `easy imageListToImageBatch`
-- `easy rangeFloat`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `ModelSamplingAuraFlow` —— 4/5 个有
-- `ReActorImageDublicator` —— 4/5 个有
-- `TextInput_` —— 3/5 个有
-- `ConstrainImage|pysssss` —— 2/5 个有
-- `GetImageSize` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `JjkText` —— 2/5 个有
-- `PrimitiveString` —— 2/5 个有
-- `RH_Captioner` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `ModelSamplingSD3` —— 1/5 个有
-- `PMRF` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
+- `CreateCameraInfo` —— 6/8 个有
+- `GetImageSize` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `SplatToFile3D` —— 6/8 个有
+- `GetNode` —— 4/8 个有
+- `JoinImageWithAlpha` —— 4/8 个有
+- `PreviewGaussianSplat` —— 4/8 个有
+- `RenderMesh` —— 4/8 个有
+- `SetNode` —— 4/8 个有
+- `SplatToMesh` —— 4/8 个有
+- `TripoSplatSamplingPreview` —— 4/8 个有
+- `ImageConcanate` —— 2/8 个有
+- `ImageScaleToMaxDimension` —— 2/8 个有
+- `Load3D` —— 2/8 个有
+- `RenderSplat` —— 2/8 个有
+- `SaveGLB` —— 2/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 5 | 69% |
-| 高度 | 1024 | 512 - 1024 | 5 | 69% |
-| 采样步数 | 8 | 8 - 25 | 5 | 44% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 5 | 25% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 40% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，5 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，5 个样本
-- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 44%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 40%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（16/5 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：ConstrainImage|pysssss、Create Grid Image from Batch、easy convertAnything、easy imageListToImageBatch、easy rangeFloat
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

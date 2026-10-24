@@ -1,38 +1,48 @@
 ---
 name: unknown_workflow_generic_868
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4595
-common_nodes: [Comfly_Googel_Veo3, LoadImage, RH_Translator, SaveVideo, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.745667
+common_nodes: [Bjornulf_ShowInt, CR Overlay Text, CR Text, FLUXTextGenerate, FLUXTextLoad, Float, GetImageSize, ImageCropMerge, ImageScale, ImageScaleBy, Int, LayerColor: Brightness & Contrast, LayerMask: MaskBoxDetect, LayerUtility: ColorImage V2, LoadImage, MaskToImage, PreviewImage, SaveImage, SimpleMath+, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2000283848959291394.json, 视频生成/图生视频/2000853660760408065.json]
+members: [图片生成/图生图/Flux TExt 文字修改 支持中文、英文_1945386726137450498.json, 图片生成/图生图/FluxText改字（支持中文）_1942630895235084289.json, 图片生成/图生图/海报修改文字｜Flux Text_1948239404558102530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_868
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2000283848959291394.json、视频生成/图生视频/2000853660760408065.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux TExt 文字修改 支持中文、英文_1945386726137450498.json、图片生成/图生图/FluxText改字（支持中文）_1942630895235084289.json、图片生成/图生图/海报修改文字｜Flux Text_1948239404558102530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Comfly_Googel_Veo3`
+全部 3 个 workflow 都包含：
+- `Bjornulf_ShowInt`
+- `CR Overlay Text`
+- `CR Text`
+- `FLUXTextGenerate`
+- `FLUXTextLoad`
+- `Float`
+- `GetImageSize`
+- `ImageCropMerge`
+- `ImageScale`
+- `ImageScaleBy`
+- `Int`
+- `LayerColor: Brightness & Contrast`
+- `LayerMask: MaskBoxDetect`
+- `LayerUtility: ColorImage V2`
 - `LoadImage`
-- `RH_Translator`
-- `SaveVideo`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Comfly_api_set` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `JjkText` —— 1/2 个有
+- `MaskToImage`
+- `PreviewImage`
+- `SaveImage`
+- `SimpleMath+`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
@@ -44,4 +54,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

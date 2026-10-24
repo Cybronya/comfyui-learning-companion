@@ -1,66 +1,62 @@
 ---
 name: unknown_workflow_sampler_unet_vae_13
 type: Unknown Workflow
-frequency: 20
+frequency: 21
 level: moderate
-coverage: 0.8217
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.956905
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 双图15秒原生有声视频 12G低显存增强版_2085579097249505282.json, 视频生成/图生视频/MiniMax H3 咕嘎FC_2085282461919039490.json, 视频生成/图生视频/MiniMax H3 图生视频 升级版_2085717836827287553.json, 视频生成/图生视频/MiniMax H3 图生视频｜一采生成 + 二采精修｜音画同步高清工作流_2086606849025073153.json, 视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json, 视频生成/图生视频/MiniMax H3 多图生视频+音频接入_2090182586948734978.json, 视频生成/图生视频/MiniMax H3全模态参考生视频工作流｜多图+多视频+多音频统一控制_2084111328754618369.json, 视频生成/图生视频/MiniMax-H3 Fl2va 首尾帧生视频标准版_2095499784147791873.json, 视频生成/图生视频/MiniMax-H3开源版 图生视频 加速版_2084237228296986625.json, 视频生成/图生视频/MiniMax-H3开源版 图生视频 加速版_2084248036343115777.json, 视频生成/图生视频/MiniMax-H3开源版 图生视频 加速版_2093286738599960577.json, 视频生成/图生视频/MiniMax-H3开源版 多图参考生视频 短剧生成_2084629247259406338.json, 视频生成/图生视频/MiniMax-H3开源版 多图参考生视频_2084595722531459073.json, 视频生成/图生视频/Minimax H3 数字人带货视频_2084925025257353218.json, 视频生成/图生视频/Minimax-h3 多模态全能参考_2084472101880287234.json, 视频生成/图生视频/电商产品展示 MiniMax H3 图生视频_2086081191966498817.json, 视频生成/图生视频/电商产品视频 图生视频增强版_2095009978229813249.json, 视频生成/文生视频/MINIMAX-H3工作流合集_2084536680941441025.json, 视频生成/文生视频/MINIMAX-H3工作流合集_2084552719951556609.json, 视频生成/文生视频/Minimax H3 多图参考_2084836386481463298.json]
+members: [图片生成/文生图/F.1+流浪汉_1945170907587596289.json, 图片生成/文生图/F.1+皮克斯_1946922717151158273.json, 图片生成/文生图/F.1+纪实摄影_1938572723696099330.json, 图片生成/文生图/F.1-FLUX文生图工作流+LORA（一键运行）_1911723649815015426.json, 图片生成/文生图/F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json, 图片生成/文生图/F.1-文生图+LORA_2041721521340682242.json, 图片生成/文生图/F.1生图工作流加速版_2054191053686747138.json, 图片生成/文生图/FLIX文生图｜产品写实 超逼真_1896248747091427329.json, 图片生成/文生图/FLUX+LORA一键生成可爱卡通形象_1948753188301221890.json, 图片生成/文生图/FLUX插画动物_1904908786933633026.json, 图片生成/文生图/FLUX毛绒数字_1904904736871469057.json, 图片生成/文生图/FLUX磨砂玻璃图标_1904907559919357954.json, 图片生成/文生图/FLUX膨胀气球字母_1904906707053776898.json, 图片生成/文生图/Flux-DEV-Schnell文生图工作流_1942877686643798017.json, 图片生成/文生图/Flux-lora快速出图_1920279185280143362.json, 图片生成/文生图/Flux1微胖性感美女生成大胸美女图123_2002414890683908097.json, 图片生成/文生图/Flux文生图-中文提示词_2078378003817656321.json, 图片生成/文生图/【FLUX】IP设计三视图_1904909104412807170.json, 图片生成/文生图/一键生成古装表情包丨角色一致性_1915288629995048961.json, 图片生成/文生图/微胖性感美女生成+大胸美女-抖音、小红书美女写真_2039975468539060225.json, 图片生成/文生图/微胖性感美女生成+大胸美女-抖音、小红书美女写真_2040333322827599873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 双图15秒原生有声视频 12G低显存增强版_2085579097249505282.json、视频生成/图生视频/MiniMax H3 咕嘎FC_2085282461919039490.json、视频生成/图生视频/MiniMax H3 图生视频 升级版_2085717836827287553.json、视频生成/图生视频/MiniMax H3 图生视频｜一采生成 + 二采精修｜音画同步高清工作流_2086606849025073153.json、视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/F.1+流浪汉_1945170907587596289.json、图片生成/文生图/F.1+皮克斯_1946922717151158273.json、图片生成/文生图/F.1+纪实摄影_1938572723696099330.json、图片生成/文生图/F.1-FLUX文生图工作流+LORA（一键运行）_1911723649815015426.json、图片生成/文生图/F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 21 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 19/20 个有
-- `MiniMaxH3ReferenceToVideo` —— 19/20 个有
-- `PrimitiveFloat` —— 19/20 个有
-- `PrimitiveStringMultiline` —— 19/20 个有
-- `ResolutionSelector` —— 19/20 个有
-- `LoadAudio` —— 8/20 个有
-- `JjkText` —— 6/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/20 个有
-- `MiniMaxH3ImageToVideo` —— 3/20 个有
-- `CR Text` —— 2/20 个有
-- `LTXVConcatAVLatent` —— 1/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/20 个有
-- `RTXVideoSuperResolution` —— 1/20 个有
-- `SeedVR2LoadDiTModel` —— 1/20 个有
-- `SeedVR2LoadVAEModel` —— 1/20 个有
-- `SeedVR2VideoUpscaler` —— 1/20 个有
-- `VAEEncode` —— 1/20 个有
-- `VAEEncodeAudio` —— 1/20 个有
-- `ttN int` —— 1/20 个有
+- `CLIPTextEncodeFlux` —— 16/21 个有
+- `LoraLoaderModelOnly` —— 13/21 个有
+- `LoraLoader` —— 8/21 个有
+- `TextInput_` —— 6/21 个有
+- `CLIPTextEncode` —— 5/21 个有
+- `Int` —— 5/21 个有
+- `RH_Translator` —— 4/21 个有
+- `SeargePromptCombiner` —— 4/21 个有
+- `JjkText` —— 3/21 个有
+- `ChinesePrompt_Mix` —— 1/21 个有
+- `FluxGuidance` —— 1/21 个有
+- `RescaleCFG` —— 1/21 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768 | 512 - 1536 | 21 | 76% |
+| 高度 | 1024 | 512 - 1960 | 21 | 68% |
+| LoRA 模型强度 | 0.8 | 0.6 - 1 | 8 | 83% |
+| LoRA 文本强度 | 1 | 0 - 1 | 8 | 60% |
 
 ## 常见问题
 
@@ -68,4 +64,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 768，观测区间 512 - 1536，21 个样本
+- 高度 中位数 1024，观测区间 512 - 1960，21 个样本
+- LoRA 模型强度 中位数 0.8，观测区间 0.6 - 1，8 个样本，取值集中（一致性 83%）
+- LoRA 文本强度 中位数 1，观测区间 0 - 1，8 个样本

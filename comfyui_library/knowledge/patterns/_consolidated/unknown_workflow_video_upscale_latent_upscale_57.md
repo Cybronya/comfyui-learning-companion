@@ -1,104 +1,125 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_57
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.704
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
-problems: []
+coverage: 0.820667
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CM_FloatToInt, EmptyLTXVLatentVideo, GetNode, INTConstant, KSampler, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, PathchSageAttentionKJ, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/2041388395624140802.json, 视频生成/图生视频/2040449259794866177.json, 视频生成/图生视频/2041694294079184898.json, 视频生成/图生视频/2037153504921391105.json, 视频生成/图生视频/2041110942255161346.json, 视频生成/图生视频/2051128498395336706.json, 视频生成/图生视频/2063264536383287297.json]
+members: [图片生成/文生图/LTX2.3数字人=首尾帧+台本+参考音频_2050868438406582274.json, 图片生成/文生图/LTX2.3数字人（唱歌）_2046955390981644289.json, 数字人/数字人/A-6 最佳口播数字人 LTX2.3 _ 音频驱动 _ 嘴型精准 _ 高清输出_2083957412322701313.json, 数字人/数字人/数字人ltx2.5_2087564554460024834.json, 数字人/数字人/数字人稳定版LTX_2089442379878195202.json, 视频生成/图生视频/LTX 2.3真人数字人口播｜LongCat声音克隆_2080250787086819330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_57
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2041388395624140802.json、视频生成/图生视频/2040449259794866177.json、视频生成/图生视频/2041694294079184898.json、视频生成/图生视频/2037153504921391105.json、视频生成/图生视频/2041110942255161346.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/LTX2.3数字人=首尾帧+台本+参考音频_2050868438406582274.json、图片生成/文生图/LTX2.3数字人（唱歌）_2046955390981644289.json、数字人/数字人/A-6 最佳口播数字人 LTX2.3 _ 音频驱动 _ 嘴型精准 _ 高清输出_2083957412322701313.json、数字人/数字人/数字人ltx2.5_2087564554460024834.json、数字人/数字人/数字人稳定版LTX_2089442379878195202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
+- `CM_FloatToInt`
 - `EmptyLTXVLatentVideo`
-- `ImageResizeKJv2`
+- `GetNode`
+- `INTConstant`
+- `KSampler`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadImage`
-- `ManualSigmas`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
 - `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleMath+`
+- `SolidMask`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `SimpleMath+` —— 5/7 个有
-- `CustomAddLabel` —— 4/7 个有
-- `GetNode` —— 4/7 个有
-- `LoraLoader` —— 4/7 个有
-- `SetNode` —— 4/7 个有
-- `easy showAnything` —— 4/7 个有
-- `CreateVideo` —— 3/7 个有
-- `LTXVAddGuideMulti` —— 3/7 个有
-- `LoraLoaderModelOnly` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `RH_LLMAPI_Pro_Node` —— 3/7 个有
-- `TTResolutionSelector` —— 3/7 个有
-- `JWFloat` —— 2/7 个有
-- `JjkText` —— 2/7 个有
-- `PrimitiveBoolean` —— 2/7 个有
-- `ResizeImageMaskNode` —— 2/7 个有
-- `llama_cpp_instruct_adv` —— 2/7 个有
-- `llama_cpp_model_loader` —— 2/7 个有
-- `llama_cpp_parameters` —— 2/7 个有
-- `Dapao_LlamaCaption` —— 1/7 个有
-- `Dapao_LlamaCaptionOptions` —— 1/7 个有
-- `GetVideoComponents` —— 1/7 个有
-- `MultiTextConcatenate` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `RH_Utils` —— 1/7 个有
-- `RegexReplace` —— 1/7 个有
-- `ShowText` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `ttN concat` —— 1/7 个有
+- `CheckpointLoaderSimple` —— 5/6 个有
+- `LTXAVTextEncoderLoader` —— 5/6 个有
+- `LTXVAudioVAELoader` —— 5/6 个有
+- `LoadAudio` —— 5/6 个有
+- `PreviewAudio` —— 5/6 个有
+- `PrimitiveBoolean` —— 5/6 个有
+- `GetImageSize` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `RTXVideoSuperResolution` —— 3/6 个有
+- `ResizeImageMaskNode` —— 3/6 个有
+- `1hew_AudioDuration` —— 2/6 个有
+- `ImageSharpen` —— 2/6 个有
+- `RH_GetAudioDuration` —— 2/6 个有
+- `AudioConcat` —— 1/6 个有
+- `AudioCrop` —— 1/6 个有
+- `AudioDuration_wan` —— 1/6 个有
+- `AudioPad` —— 1/6 个有
+- `CLIPLoader` —— 1/6 个有
+- `GetImageSizeAndCount` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `IndexTTS2Run` —— 1/6 个有
+- `LTXVFirstLastFrameControl_TTP` —— 1/6 个有
+- `LongCatVoiceCloneTTS` —— 1/6 个有
+- `NormalizeAudioLoudness` —— 1/6 个有
+- `PIP_StringConcatenation` —— 1/6 个有
+- `PlaySound|pysssss` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `Qwen3ASRLoader` —— 1/6 个有
+- `Qwen3ASRTranscribe` —— 1/6 个有
+- `RegexReplace` —— 1/6 个有
+- `ReroutePrimitive|pysssss` —— 1/6 个有
+- `SaveAudio` —— 1/6 个有
+- `SaveAudioMP3` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
+- `UNETLoader` —— 1/6 个有
+- `VAELoader` —— 1/6 个有
+- `VHS_LoadAudioUpload` —— 1/6 个有
+- `WhisperSTT` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 7 | 100% |
-| 高度 | 25 | 25 - 25 | 7 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 0.4 | 0.4 - 0.6 | 6 | 83% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 0.4，观测区间 0.4 - 0.6，6 个样本，取值集中（一致性 83%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode

@@ -2,55 +2,76 @@
 name: unknown_workflow_video_lora_sampler_590
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.939
-common_nodes: [BerniniStudio, CLIPLoader, DapaoSmartMemoryOptimizerNode, ImageSharpen, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy int, 孤海注释]
+level: moderate
+coverage: 0.712
+common_nodes: [ApplyFaceProcessor, FaceOnlyModeSwitch, FaceProcessorLoader, GetNode, HfImageToRGB, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VideoFramePreprocessor, VideoInputPreprocessor, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2076959623524995074.json, 视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json, 视频生成/图生视频/2078379268756828161.json]
+members: [视频生成/图生视频/AI变身术：把主角换成你：Stand-In+VACE组合_1966014870305017857.json, 视频生成/图生视频/AI替身术：把视频的主角换成另外一个人-视频 换人方案：Stand-In + VACE组合_1963979940653842434.json, 视频生成/图生视频/【gen全能视频Si】🔥ai易容术stand-in一键换人_1961411519911280642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_590
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2076959623524995074.json、视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json、视频生成/图生视频/2078379268756828161.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AI变身术：把主角换成你：Stand-In+VACE组合_1966014870305017857.json、视频生成/图生视频/AI替身术：把视频的主角换成另外一个人-视频 换人方案：Stand-In + VACE组合_1963979940653842434.json、视频生成/图生视频/【gen全能视频Si】🔥ai易容术stand-in一键换人_1961411519911280642.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BerniniStudio`
-- `CLIPLoader`
-- `DapaoSmartMemoryOptimizerNode`
-- `ImageSharpen`
-- `KSamplerAdvanced`
+- `ApplyFaceProcessor`
+- `FaceOnlyModeSwitch`
+- `FaceProcessorLoader`
+- `GetNode`
+- `HfImageToRGB`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `RIFE VFI`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy int`
-- `孤海注释`
+- `VideoFramePreprocessor`
+- `VideoInputPreprocessor`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/3 个有
+- `DWPreprocessor` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `ImageCombine` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `RepeatImageBatch` —— 2/3 个有
+- `WanVideoVACEEncode` —— 2/3 个有
+- `WanVideoVACEModelSelect` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `DownloadAndLoadWav2VecModel` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `PreViewVideo` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | uni_pc | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -58,8 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 uni_pc，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

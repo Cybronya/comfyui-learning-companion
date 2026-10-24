@@ -3,70 +3,57 @@ name: text_to_image_video_lora_sampler_205
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.92
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Float, JjkText, JoinStringMulti, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainManifestLoad, MiniMaxH3ChainPlan, MiniMaxH3ChainReview, MiniMaxH3ChainScenePromptEditor, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, RH_LLMAPI_Pro_Node, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SomethingToString, StringFunction|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.871
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Concatenate, CR Text Replace, EmptyLatentImage, ImageResizeKJ, ImpactSwitch, JWInteger, JjkText, KSampler, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Primitive integer [Crystools], PrimitiveBoolean, RHHiddenNodes, RH_Captioner, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy ifElse, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3无限时长分镜版 长视频多段编排视频生成_2108627474866327554.json, 视频生成/图生视频/MiniMax-H3无限时长分镜版｜图生视频长片分镜出片_2108402992331444225.json]
+members: [视频生成/图生视频/720p直出高速生成｜Wan2.2自动提示词CG幻想图生视频_2092138531375378434.json, 视频生成/图生视频/自动提示词直出720pWan2.2-高速版_2087413367249133570.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_205
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3无限时长分镜版 长视频多段编排视频生成_2108627474866327554.json、视频生成/图生视频/MiniMax-H3无限时长分镜版｜图生视频长片分镜出片_2108402992331444225.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/720p直出高速生成｜Wan2.2自动提示词CG幻想图生视频_2092138531375378434.json、视频生成/图生视频/自动提示词直出720pWan2.2-高速版_2087413367249133570.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text Concatenate`
+- `CR Text Replace`
 - `EmptyLatentImage`
-- `Float`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
 - `JjkText`
-- `JoinStringMulti`
 - `KSampler`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ChainAssemble`
-- `MiniMaxH3ChainContext`
-- `MiniMaxH3ChainCurrent`
-- `MiniMaxH3ChainLoopEnd`
-- `MiniMaxH3ChainLoopStart`
-- `MiniMaxH3ChainManifestLoad`
-- `MiniMaxH3ChainPlan`
-- `MiniMaxH3ChainReview`
-- `MiniMaxH3ChainScenePromptEditor`
-- `MiniMaxH3ChainSegmentSave`
-- `MiniMaxH3LoopTrim`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SomethingToString`
-- `StringFunction|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Primitive integer [Crystools]`
+- `PrimitiveBoolean`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SimpleMath+`
+- `TextBox`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanImageToVideo`
+- `easy ifElse`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

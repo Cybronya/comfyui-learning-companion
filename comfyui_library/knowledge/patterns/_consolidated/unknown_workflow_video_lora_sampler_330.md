@@ -3,71 +3,59 @@ name: unknown_workflow_video_lora_sampler_330
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.873714
-common_nodes: [CLIPVisionLoader, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.747571
+common_nodes: [CR Text, GetNode, JWInteger, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [SimpleMath+]
-members: [视频生成/图生视频/1964652057074520065.json, 视频生成/图生视频/2045009566550724610.json, 视频生成/图生视频/2075038609807339522.json, 视频生成/文生视频/1962411738001969154.json, 视频生成/文生视频/1979004243053023234.json, 视频生成/文生视频/infinitetalk单人-100%对口型_1986675627816349697.json, 视频生成/文生视频/最强的数字人，声音克隆+文本驱动+图生视频_2078774161115275266.json]
+missing: []
+members: [视频生成/文生视频/wan2.2文生视频V3.0（4步加速lora+kj版本）_1954108894912114689.json, 视频生成/文生视频/wan2.2文生视频超级加速——飞翔荷兰人_1971154804091326465.json, 视频生成/文生视频/wan2.2文生视频超级加速（4步加速lora+kj版本）_2020056477867708417.json, 视频生成/文生视频/【2倍提速】Wan2.2+14B Seko 4步加速文生视频v1_1954103661171503106.json, 视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视频-智能扩写提示词_1950844539659550722.json, 视频生成/文生视频/【KJ版】Wan2.2+14B 4步加速文生视频-智能扩写版_1953642911277744130.json, 视频生成/文生视频/【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1954106485791977474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_330
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1964652057074520065.json、视频生成/图生视频/2045009566550724610.json、视频生成/图生视频/2075038609807339522.json、视频生成/文生视频/1962411738001969154.json、视频生成/文生视频/1979004243053023234.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/wan2.2文生视频V3.0（4步加速lora+kj版本）_1954108894912114689.json、视频生成/文生视频/wan2.2文生视频超级加速——飞翔荷兰人_1971154804091326465.json、视频生成/文生视频/wan2.2文生视频超级加速（4步加速lora+kj版本）_2020056477867708417.json、视频生成/文生视频/【2倍提速】Wan2.2+14B Seko 4步加速文生视频v1_1954103661171503106.json、视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视频-智能扩写提示词_1950844539659550722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `Int`
-- `LoadAudio`
-- `LoadImage`
+- `CR Text`
+- `GetNode`
+- `JWInteger`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `ToInt`
+- `MathExpression|pysssss`
+- `Primitive integer [Crystools]`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/7 个有
-- `AudioSeparation` —— 6/7 个有
-- `DownloadAndLoadWav2VecModel` —— 6/7 个有
-- `ImageResizeKJv2` —— 6/7 个有
-- `RH_GetAudioDuration` —— 6/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `SetNode` —— 2/7 个有
-- `Apply Whisper` —— 1/7 个有
-- `AudioGetTempo` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `GetCurrentTimeNode` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `OmniVoiceLongformTTS` —— 1/7 个有
-- `OmniVoiceMultiSpeakerTTS` —— 1/7 个有
-- `OmniVoiceVoiceDesignTTS` —— 1/7 个有
-- `OmniVoiceWhisperLoader` —— 1/7 个有
-- `SaveAudio` —— 1/7 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/7 个有
-- `WanVideoUni3C_embeds` —— 1/7 个有
-- `Wav2VecModelLoader` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `FloatToSigmas` —— 6/7 个有
+- `StringToFloatList` —— 6/7 个有
+- `RH_LLMAPI_NODE` —— 5/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `Text Concatenate` —— 4/7 个有
+- `Wan22PromptSelector` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `WanVideoContextOptions` —— 2/7 个有
+- `CreateCFGScheduleFloatList` —— 1/7 个有
+- `CreateVideo` —— 1/7 个有
+- `PreViewVideo` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
 
 ## 典型参数
 
@@ -79,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：SimpleMath+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

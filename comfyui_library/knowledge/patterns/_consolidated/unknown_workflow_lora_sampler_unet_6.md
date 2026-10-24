@@ -1,78 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_unet_6
 type: Unknown Workflow
-frequency: 13
+frequency: 52
 level: strong
-coverage: 0.803692
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.988096
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json, 视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json, 视频生成/图生视频/【开源】MiniMax-H3 加速双采-self-lift_2099618432286281730.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2100021900394192897.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2100184323868680193.json, 视频生成/图生视频/全能参考加速双采-self-lift工作流_2101869698915856385.json, 视频生成/图生视频/参考图生视频｜Self-Lift 双采·5秒预检_2098678648126664705.json, 视频生成/图生视频/常规万能流直出1080p 最高质量版 -MMH3 Selflift_2103534009916674049.json, 视频生成/图生视频/整合音频修复的双采-self-lift工作流_2100028907868213250.json, 视频生成/图生视频/整合音频修复的双采-self-lift工作流_2101556853078585345.json, 视频生成/图生视频/短剧制作 直出1080p 最高质量版 -MMH3 Selflift_2106389437042221057.json, 视频生成/文生视频/MiniMax H3｜TaoMate 3步加速 lora_2099873466462855169.json, 视频生成/文生视频/Minimax H3 加速双采 Self-Lift 工作流_2099332965401710594.json]
+members: [图片生成/图生图/11.Qwen2511 多视角生图_2083566178223607809.json, 图片生成/图生图/IP角色多视图 _ 多视角 _ Qwen_Edit_2511_2038860947560865794.json, 图片生成/图生图/Qwen Edit 2511角色多视图_多角度_多视角_2022042046818689026.json, 图片生成/图生图/Qwen Edit2509多角度分镜直出_1984970567369572353.json, 图片生成/图生图/写真  人物多角度 扩展   ltx 导演台选择素材 做 视频引流_2070936640125755393.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2059612650966962178.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2059732236584443906.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2060095127082848257.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2060456913875333122.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2060796619452403713.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2060804831203389442.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2060811336535334914.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2060831096937467905.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2061070151017132034.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2061089907921219585.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2061899467548352514.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062069669212803073.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062096617603428353.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062167066706272257.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062252303830306818.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062258819492835330.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062785227369574402.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062805765714432002.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2062901390988627969.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2063176573959884801.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2063185788594118657.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2063552368800780290.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2063604486014332930.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2063966600268697601.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064063721084907522.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064231307827310593.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064239510094962689.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064256426142420994.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064256591381225473.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064594657161596929.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064657782166614018.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064666925178908674.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064791255275622401.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2064974853752578049.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2065150834912092161.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2065341757075845122.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2065362398063714305.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2065525490240286721.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2065756146253778946.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2066242828354809857.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2066871954161889281.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2067699295289176065.json, 图片生成/图生图/分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2068980464773320705.json, 图片生成/图生图/分镜图生图 多视图 多角度 多视角  真人和动漫都能用（ai短剧的好帮手）_2065422410685435905.json, 图片生成/图生图/超好用🔥分镜图生图-多视图-多角度完美呈现_2066450990760550401.json, 图片生成/图生图/超好用🔥漫剧分镜图生图-多视图-多角度-多视角_2060309969953714177.json, 图片生成/文生图/ComfyUI分镜工作流：多角度多视角一次出完，附全节点注释_2060961151034417153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_6
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json、视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json、视频生成/图生视频/【开源】MiniMax-H3 加速双采-self-lift_2099618432286281730.json、视频生成/图生视频/全能参考加速双采-self-lift工作流_2100021900394192897.json、视频生成/图生视频/全能参考加速双采-self-lift工作流_2100184323868680193.json…）
+> 由 `engine/knowledge_consolidation` 从 52 个 workflow 归纳得出（图片生成/图生图/11.Qwen2511 多视角生图_2083566178223607809.json、图片生成/图生图/IP角色多视图 _ 多视角 _ Qwen_Edit_2511_2038860947560865794.json、图片生成/图生图/Qwen Edit 2511角色多视图_多角度_多视角_2022042046818689026.json、图片生成/图生图/Qwen Edit2509多角度分镜直出_1984970567369572353.json、图片生成/图生图/写真  人物多角度 扩展   ltx 导演台选择素材 做 视频引流_2070936640125755393.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：52
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicScheduler`
+全部 52 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `ConditioningZeroOut`
-- `KSamplerSelect`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 12/13 个有
-- `CreateVideo` —— 11/13 个有
-- `PrimitiveFloat` —— 11/13 个有
-- `SelfLiftH3Sampler` —— 11/13 个有
-- `MiniMaxH3ReferenceToVideo` —— 10/13 个有
-- `ModelPreviewOverrideKJ` —— 10/13 个有
-- `LoadAudio` —— 9/13 个有
-- `MiniMaxChunkFeedForward` —— 9/13 个有
-- `MiniMaxLowVRAMAttention` —— 9/13 个有
-- `VHS_VideoCombine` —— 9/13 个有
-- `H3SigmaRefiner` —— 8/13 个有
-- `LTXVSeparateAVLatent` —— 5/13 个有
-- `MiniMaxH3AudioConditioningT8` —— 5/13 个有
-- `SaveVideo` —— 4/13 个有
-- `LoraLoader` —— 3/13 个有
-- `PreviewImage` —— 3/13 个有
-- `EmptyImage` —— 2/13 个有
-- `JWStringToFloat` —— 2/13 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/13 个有
-- `PreviewAny` —— 2/13 个有
-- `SelfLiftAvatarH3Sampler` —— 2/13 个有
-- `Text` —— 1/13 个有
+- `SeedVR2LoadDiTModel` —— 49/52 个有
+- `SeedVR2LoadVAEModel` —— 49/52 个有
+- `SeedVR2VideoUpscaler` —— 49/52 个有
+- `easy imageBatchToImageList` —— 48/52 个有
+- `easy imageListToImageBatch` —— 48/52 个有
+- `CR String To Combo` —— 1/52 个有
+- `CR Text` —— 1/52 个有
+- `Label (rgthree)` —— 1/52 个有
+- `MultiTextConcatenate` —— 1/52 个有
+- `PlaySound|pysssss` —— 1/52 个有
+- `ProcessString` —— 1/52 个有
+- `TextInput_` —— 1/52 个有
+- `easy clearCacheAll` —— 1/52 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.75 | 0.75 - 0.75 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | 4 - 8 | 52 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 52 | 100% |
+| 采样算法 | euler | - | 52 | 98% |
+| 调度器 | simple | - | 52 | 98% |
+| 重绘幅度 | 1 | 1 - 1 | 52 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 53/52 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.75，观测区间 0.75 - 0.75，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，52 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，52 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，52 个样本，一致性 98%
+- 调度器 最常用 simple，52 个样本，一致性 98%
+- 重绘幅度 中位数 1，观测区间 1 - 1，52 个样本，取值集中（一致性 100%）
+- 高发问题（53/52 个样本）：Steps较低可能导致细节不足

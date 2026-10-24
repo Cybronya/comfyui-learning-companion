@@ -3,34 +3,46 @@ name: unknown_workflow_video_51
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.958333
-common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.441
+common_nodes: [Fast Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageScaleToTotalPixels, Int, MathExpression_UTK, Mute / Bypass Repeater (rgthree), PreviewImage, RIFE VFI, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1915426980001681410.json, 视频生成/图生视频/1914526532704923650.json, 视频生成/图生视频/1914240027012886529.json]
+members: [数字人/数字人/图片放大自用_2085968508910919682.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_51
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1915426980001681410.json、视频生成/图生视频/1914526532704923650.json、视频生成/图生视频/1914240027012886529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/图片放大自用_2085968508910919682.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageResizeKJ`
-- `LoadImage`
-- `RunningHub_FramePack`
+- `Fast Bypasser (rgthree)`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `MathExpression_UTK`
+- `Mute / Bypass Repeater (rgthree)`
+- `PreviewImage`
+- `RIFE VFI`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoSource`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `JjkText` —— 1/3 个有
+- `EmptyImage` —— 2/3 个有
 
 ## 典型参数
 

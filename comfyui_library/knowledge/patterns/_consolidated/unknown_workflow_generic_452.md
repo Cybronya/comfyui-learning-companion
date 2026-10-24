@@ -1,41 +1,39 @@
 ---
 name: unknown_workflow_generic_452
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.733
-common_nodes: [GetVideoComponents, ImageFromBatch+, ImpactSwitch, JjkShowText, LoadVideo, PreviewImage, RH_LLMAPI_NODE, RH_Translator, RunningHub ThinkSound, SaveVideo, Text Multiline, easy cleanGpuUsed, easy showAnything]
+coverage: 0.889
+common_nodes: [ImageResize+, LoadImage, RH_Sora2_I2V_Realistic, SaveVideo, easy compare, easy imageSwitch]
 problems: []
 missing: []
-members: [音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json, 音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json, 音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json, 音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json]
+members: [视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json, 视频生成/图生视频/全能视频S 2：图生视频，世界模拟器，静态图片的新纪元！_1973551516617412609.json, 视频生成/图生视频/全能视频S Image to Video (RH-官方渠道)_2054431460349751298.json, 视频生成/图生视频/全能视频S 真人图生视频_1997595577485561858.json, 视频生成/图生视频/全能视频S 真人图生视频_2001547196065562625.json, 视频生成/图生视频/图生视频 写实风格动态视频_2017785280387878914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_452
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json、音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json、音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json、音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json、视频生成/图生视频/全能视频S 2：图生视频，世界模拟器，静态图片的新纪元！_1973551516617412609.json、视频生成/图生视频/全能视频S Image to Video (RH-官方渠道)_2054431460349751298.json、视频生成/图生视频/全能视频S 真人图生视频_1997595577485561858.json、视频生成/图生视频/全能视频S 真人图生视频_2001547196065562625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetVideoComponents`
-- `ImageFromBatch+`
-- `ImpactSwitch`
-- `JjkShowText`
-- `LoadVideo`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
-- `RunningHub ThinkSound`
+全部 6 个 workflow 都包含：
+- `ImageResize+`
+- `LoadImage`
+- `RH_Sora2_I2V_Realistic`
 - `SaveVideo`
-- `Text Multiline`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy compare`
+- `easy imageSwitch`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `RH_LLMAPI_NODE` —— 2/6 个有
 
 ## 典型参数
 

@@ -3,90 +3,60 @@ name: unknown_workflow_video_lora_sampler_276
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.6475
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR String To Number, CR Text, FluxResolutionNode, GetNode, ImageCASharpening+, ImageResize+, Int, InversionDemoLazyIndexSwitch, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
+coverage: 0.989375
+common_nodes: [CLIPVisionLoader, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1958007892207185921.json, 视频生成/图生视频/2048675014282584066.json, 视频生成/图生视频/1979015207190171649.json, 视频生成/图生视频/1933812324643819521.json, 视频生成/图生视频/1951105819150589953.json, 视频生成/图生视频/1947118729710985217.json, 视频生成/图生视频/1931043397564608513.json, 视频生成/图生视频/1934553565845200897.json]
+members: [视频生成/图生视频/最强逼真版图生视频lightx2_1935209763875508226.json, 视频生成/图生视频/角色_物品360度旋转_1946542261884870657.json, 视频生成/图生视频/🦖AniWan 变成方块人_1945368042832371714.json, 视频生成/图生视频/🦖AniWan版首尾帧_1945027007760752641.json, 视频生成/图生视频/🦖AniWan版高质量高动态图生视频_1945016400298827777.json, 视频生成/图生视频/🦖极速展翅_1943493844422062081.json, 视频生成/图生视频/🦖极速展翅_1977981192005976065.json, 视频生成/图生视频/🦖极速版万物消散_1946134674865614850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_276
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1958007892207185921.json、视频生成/图生视频/2048675014282584066.json、视频生成/图生视频/1979015207190171649.json、视频生成/图生视频/1933812324643819521.json、视频生成/图生视频/1951105819150589953.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/最强逼真版图生视频lightx2_1935209763875508226.json、视频生成/图生视频/角色_物品360度旋转_1946542261884870657.json、视频生成/图生视频/🦖AniWan 变成方块人_1945368042832371714.json、视频生成/图生视频/🦖AniWan版首尾帧_1945027007760752641.json、视频生成/图生视频/🦖AniWan版高质量高动态图生视频_1945016400298827777.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `Anything Everywhere`
 - `CLIPVisionLoader`
-- `CR String To Number`
-- `CR Text`
-- `FluxResolutionNode`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `InversionDemoLazyIndexSwitch`
 - `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `SetNode`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 7/8 个有
-- `CogVideoEnhanceAVideo` —— 6/8 个有
-- `ColorCorrectOfUtils` —— 6/8 个有
+- `WanVideoExperimentalArgs` —— 7/8 个有
+- `WanVideoFreeInitArgs` —— 7/8 个有
+- `WanVideoSLG` —— 7/8 个有
 - `LayerUtility: PurgeVRAM V2` —— 6/8 个有
-- `WanVideoExperimentalArgs` —— 6/8 个有
-- `WanVideoSLG` —— 6/8 个有
-- `WanVideoTextEncode` —— 6/8 个有
-- `CR Text Concatenate` —— 5/8 个有
-- `ShowText|pysssss` —— 5/8 个有
-- `AudioCrop` —— 4/8 个有
-- `CreateCFGScheduleFloatList` —— 4/8 个有
-- `LoadAudio` —— 4/8 个有
-- `PreviewAudio` —— 4/8 个有
-- `AudioCombine` —— 3/8 个有
-- `PreviewBridge` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `easy anythingIndexSwitch` —— 3/8 个有
-- `Evaluate Integers` —— 2/8 个有
-- `LayerColor: Brightness & Contrast` —— 2/8 个有
-- `MMAudioFeatureUtilsLoader` —— 2/8 个有
-- `MMAudioModelLoader` —— 2/8 个有
-- `MMAudioSampler` —— 2/8 个有
-- `WanVideoApplyNAG` —— 2/8 个有
-- `WanVideoTeaCache` —— 2/8 个有
-- `WanVideoTextEncodeSingle` —— 2/8 个有
-- `WanVideoTorchCompileSettings` —— 2/8 个有
-- `AudioCleanupNode` —— 1/8 个有
-- `AudioSeparation` —— 1/8 个有
-- `DownloadAndLoadWav2VecModel` —— 1/8 个有
-- `ImpactSwitch` —— 1/8 个有
-- `MultiTalkModelLoader` —— 1/8 个有
-- `MultiTalkWav2VecEmbeds` —— 1/8 个有
-- `RH_LLMAPI_NODE` —— 1/8 个有
+- `ImageResize+` —— 4/8 个有
+- `MathExpression|pysssss` —— 4/8 个有
+- `WanVideoTeaCache` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `WanVideoVRAMManagement` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `ImageResizeKJ` —— 1/8 个有
 - `RH_Translator` —— 1/8 个有
+- `WanVideoEasyCache` —— 1/8 个有
+- `WanVideoLoraSelectMulti` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 

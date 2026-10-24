@@ -3,65 +3,62 @@ name: unknown_workflow_video_lora_sampler_921
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.452
-common_nodes: [AIO_Preprocessor, ApplyFaceProcessor, FaceProcessorLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImpactSwitch, Int, LoadImage, LoadWanVideoT5TextEncoder, Manual XY Entry Info, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.487
+common_nodes: [AudioCrop, AudioDuration_wan, CR Prompt Text, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, MathExpression_UTK, ReplaceVideoLatentFrames, ShowAnything|Mie, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, easy anythingIndexSwitch, easy forLoopEnd, easy forLoopStart, easy imageIndexSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949622272819646465.json, 视频生成/图生视频/1967303690803666945.json]
+members: [视频生成/文生视频/LongCat Avatar 单图循环数字人_2059633182730973185.json, 视频生成/文生视频/LongCat Avatar 多图切镜数字人_2059604643877056514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_921
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949622272819646465.json、视频生成/图生视频/1967303690803666945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LongCat Avatar 单图循环数字人_2059633182730973185.json、视频生成/文生视频/LongCat Avatar 多图切镜数字人_2059604643877056514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
+- `AudioCrop`
+- `AudioDuration_wan`
+- `CR Prompt Text`
+- `FloatConstant`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
-- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Manual XY Entry Info`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LongCatAvatarWhisperEmbeds`
+- `MathExpression_UTK`
+- `ReplaceVideoLatentFrames`
+- `ShowAnything|Mie`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVACEEncode`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `WhisperModelLoader`
+- `easy anythingIndexSwitch`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `CreateCFGScheduleFloatList` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `VHS_DuplicateImages` —— 1/2 个有
-- `WanVideoTextEncode` —— 1/2 个有
-- `WanVideoTextEncodeSingle` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
+- `ProcessString` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
 
 ## 典型参数

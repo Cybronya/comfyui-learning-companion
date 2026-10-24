@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_336
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.7794
-common_nodes: [LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign]
+coverage: 0.679714
+common_nodes: [JjkText, LoadImage, PrimitiveInt, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json, 音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json, 音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json]
+members: [图片生成/图生图/YJ-APP-全能图片2-官方-多图编辑_2041355240607322113.json, 图片生成/图生图/YJ-FAST-全能2-grand-模板2-步骤1_2038858256566722562.json, 图片生成/图生图/图片侵权处理_2055135171652931586.json, 图片生成/图生图/图片侵权处理_2061649370055004162.json, 图片生成/图生图/图片侵权处理_2065286080911462402.json, 图片生成/文生图/YJ-FAST-全能-生成分镜图片-jianan-tmp2-step1_2034543395112226818.json, 图片生成/文生图/YJ-FAST-全能2-Jianan-模板2-步骤1_2033493511571513346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_336
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json、音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json、音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片2-官方-多图编辑_2041355240607322113.json、图片生成/图生图/YJ-FAST-全能2-grand-模板2-步骤1_2038858256566722562.json、图片生成/图生图/图片侵权处理_2055135171652931586.json、图片生成/图生图/图片侵权处理_2061649370055004162.json、图片生成/图生图/图片侵权处理_2065286080911462402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
+全部 7 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `PrimitiveInt`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `SaveAudio` —— 4/5 个有
-- `Apply Whisper` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `SaveAudioMP3` —— 1/5 个有
+- `Switch` —— 4/7 个有
+- `easy ifElse` —— 3/7 个有
+- `easy promptLine` —— 3/7 个有
 
 ## 典型参数
 

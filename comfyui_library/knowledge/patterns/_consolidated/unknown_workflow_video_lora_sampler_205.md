@@ -2,86 +2,78 @@
 name: unknown_workflow_video_lora_sampler_205
 type: Unknown Workflow
 frequency: 9
-level: strong
-coverage: 0.905556
-common_nodes: [AudioCropProcessUTK, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Float To Integer, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.943333
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/1961096934272471041.json, 视频生成/图生视频/1961064649582120962.json, 视频生成/图生视频/1961096971735994369.json, 视频生成/图生视频/1961257200578707457.json, 视频生成/图生视频/1962687799453462530.json, 视频生成/图生视频/1962685286419415042.json, 视频生成/图生视频/1960895773552644098.json, 视频生成/图生视频/1961341007348568066.json, 视频生成/图生视频/1965758281866219521.json]
+members: [数字人/数字人/超清数字人对口型音乐_2098282192836317186.json, 视频生成/图生视频/Wan Video InfiniteTalk  双人对话_1988149592183234562.json, 视频生成/图生视频/infinitetalk单人图像对口型_1983851965690056706.json, 视频生成/图生视频/infinitetalk单人图像数字人_1987800864440168449.json, 视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json, 视频生成/图生视频/infinitetalk单人数字人_1961786018880012290.json, 视频生成/图生视频/infinitetalk双人对话（自动识别人物）_2035945836609277954.json, 视频生成/图生视频/infinitetalk图生视频数字人口播_2080575708149145601.json, 视频生成/图生视频/infinitetalk多段mv生成_1968146725170982914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_205
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1961096934272471041.json、视频生成/图生视频/1961064649582120962.json、视频生成/图生视频/1961096971735994369.json、视频生成/图生视频/1961257200578707457.json、视频生成/图生视频/1962687799453462530.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/超清数字人对口型音乐_2098282192836317186.json、视频生成/图生视频/Wan Video InfiniteTalk  双人对话_1988149592183234562.json、视频生成/图生视频/infinitetalk单人图像对口型_1983851965690056706.json、视频生成/图生视频/infinitetalk单人图像数字人_1987800864440168449.json、视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Float To Integer`
-- `KSampler`
-- `LoadAudio`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SimpleMath+`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
-- `wanBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `VHS_LoadVideo` —— 8/9 个有
-- `PreviewImage` —— 7/9 个有
-- `ContextWindowsManual` —— 5/9 个有
-- `ImageFromBatch+` —— 5/9 个有
-- `JWFloat` —— 5/9 个有
-- `JWInteger` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `Display Any (rgthree)` —— 3/9 个有
-- `SaveLatent` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `OpenposePreprocessor` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `LoadAudio` —— 8/9 个有
+- `RH_GetAudioDuration` —— 8/9 个有
+- `SimpleMath+` —— 8/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `easy showAnything` —— 7/9 个有
+- `Int` —— 5/9 个有
+- `ToInt` —— 5/9 个有
+- `AudioCrop` —— 4/9 个有
+- `PreviewAudio` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `SoundFlow_TrimAudio` —— 2/9 个有
+- `CR Float To Integer` —— 1/9 个有
+- `CR SDXL Aspect Ratio` —— 1/9 个有
+- `Display Int (rgthree)` —— 1/9 个有
+- `ImageBatchMulti` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `ImpactFloat` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `PrimitiveFloat` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
+- `VHS_LoadVideo` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | uni_pc | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

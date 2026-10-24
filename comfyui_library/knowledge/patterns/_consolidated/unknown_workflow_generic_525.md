@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_525
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.869
-common_nodes: [EmptyImage, JWInteger, LoadVideo, PreviewImage, RH_Astra, SaveVideo]
+coverage: 1
+common_nodes: [JWStringConcat, KOOK_SaveJPGImage, LoadImage, Text Input [DVB]]
 problems: []
 missing: []
-members: [图片生成/文生图/Topaz_Video_高清放大（5分钟完成30s4k超分）_2101300464980680706.json, 视频生成/图生视频/Topaz_Video_高清放大V1非星光_2104379567917064194.json, 视频生成/图生视频/Topaz_Video星光放大V1_2104376622597099522.json]
+members: [图片生成/图生图/上衣-模特换衣_2059828259168284674.json, 图片生成/图生图/参考图调色_2059823068498980865.json, 图片生成/图生图/改指定平铺图_2059824813119721474.json, 图片生成/图生图/自由转平铺_3D_2059824800905912321.json, 图片生成/图生图/裤子-换其他_2059827651996639233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_525
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Topaz_Video_高清放大（5分钟完成30s4k超分）_2101300464980680706.json、视频生成/图生视频/Topaz_Video_高清放大V1非星光_2104379567917064194.json、视频生成/图生视频/Topaz_Video星光放大V1_2104376622597099522.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/上衣-模特换衣_2059828259168284674.json、图片生成/图生图/参考图调色_2059823068498980865.json、图片生成/图生图/改指定平铺图_2059824813119721474.json、图片生成/图生图/自由转平铺_3D_2059824800905912321.json、图片生成/图生图/裤子-换其他_2059827651996639233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `EmptyImage`
-- `JWInteger`
-- `LoadVideo`
-- `PreviewImage`
-- `RH_Astra`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `JWStringConcat`
+- `KOOK_SaveJPGImage`
+- `LoadImage`
+- `Text Input [DVB]`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub Deepcleaner` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/5 个有
 
 ## 典型参数
 

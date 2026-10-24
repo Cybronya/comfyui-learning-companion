@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_930
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.703
-common_nodes: [FantasyPortraitFaceDetector, FantasyPortraitModelLoader, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LandmarksToImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.696
+common_nodes: [AILab_MiniCPM_4_V, CLIPLoader, CLIPTextEncode, CreateScheduleFloatList, GetImageRangeFromBatch, GetLatentSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, PreviewAny, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddExtraLatent, WanVideoAddPusaNoise, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEmbedBridge, WanVideoTextEncodeCached, WanVideoTinyVAELoader, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/1958515950276526081.json, 视频生成/文生视频/Fantasy Portrait（文生视频）_2072999634521595904.json]
+members: [视频生成/文生视频/PUSA+VACE视频延长_1967482692935749633.json, 视频生成/文生视频/Pusa视频延长_1964993314611187714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_930
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1958515950276526081.json、视频生成/文生视频/Fantasy Portrait（文生视频）_2072999634521595904.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/PUSA+VACE视频延长_1967482692935749633.json、视频生成/文生视频/Pusa视频延长_1964993314611187714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,29 +23,44 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
+- `AILab_MiniCPM_4_V`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CreateScheduleFloatList`
+- `GetImageRangeFromBatch`
+- `GetLatentSizeAndCount`
 - `GetNode`
 - `INTConstant`
+- `ImageBatchMulti`
 - `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `LandmarksToImage`
+- `LayerUtility: PurgeVRAM V2`
+- `PreviewAny`
 - `SetNode`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddFantasyPortrait`
+- `WanVideoAddExtraLatent`
+- `WanVideoAddPusaNoise`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEmbedBridge`
 - `WanVideoTextEncodeCached`
+- `WanVideoTinyVAELoader`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 

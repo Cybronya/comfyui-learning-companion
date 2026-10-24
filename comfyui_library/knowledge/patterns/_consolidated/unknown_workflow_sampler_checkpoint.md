@@ -3,38 +3,39 @@ name: unknown_workflow_sampler_checkpoint
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CreateVideo, ImageOnlyCheckpointLoader, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, SaveVideo]
+coverage: 0.462
+common_nodes: [CR Text, CheckpointLoaderSimple, Fast Groups Muter (rgthree), Int, RH_Screenwriter, SaveImage, ShowText|pysssss, WujiCleaner, WujiCostumeDesigner, WujiDirector, WujiEditor, WujiSampler, WujiStoryboardArtist]
 problems: []
 missing: []
-members: [视频生成/图生视频/1945860449407561729.json, 视频生成/图生视频/1927597973604032513.json]
+members: [图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2043368521987526658.json, 图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2044268617847545857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1945860449407561729.json、视频生成/图生视频/1927597973604032513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2043368521987526658.json、图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2044268617847545857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateVideo`
-- `ImageOnlyCheckpointLoader`
-- `LoadAudio`
-- `LoadImage`
-- `SONICSampler`
-- `SONICTLoader`
-- `SONIC_PreData`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `Fast Groups Muter (rgthree)`
+- `Int`
+- `RH_Screenwriter`
+- `SaveImage`
+- `ShowText|pysssss`
+- `WujiCleaner`
+- `WujiCostumeDesigner`
+- `WujiDirector`
+- `WujiEditor`
+- `WujiSampler`
+- `WujiStoryboardArtist`
 
 ## 典型参数
 

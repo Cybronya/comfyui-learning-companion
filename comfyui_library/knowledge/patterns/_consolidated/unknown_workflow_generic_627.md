@@ -1,38 +1,32 @@
 ---
 name: unknown_workflow_generic_627
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.776333
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, LoadImage, SaveAudio]
+coverage: 0.857
+common_nodes: [65c22b29-59aa-496b-89c6-55a603658670, 7b34ab90-36f9-45ba-a665-71d418f0df18, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2音色_情绪克隆 ，单人_双人模式灵活切换+文本输入_2004200072495722498.json, 音频生成/音频生成/声音克隆_1998644155763056642.json, 音频生成/音频生成/🎙️ Indexation 最强语音克隆 带情绪控制🎙️_1972308186080407554.json]
+members: [comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_627
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2音色_情绪克隆 ，单人_双人模式灵活切换+文本输入_2004200072495722498.json、音频生成/音频生成/声音克隆_1998644155763056642.json、音频生成/音频生成/🎙️ Indexation 最强语音克隆 带情绪控制🎙️_1972308186080407554.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
+全部 4 个 workflow 都包含：
+- `65c22b29-59aa-496b-89c6-55a603658670`
+- `7b34ab90-36f9-45ba-a665-71d418f0df18`
 - `LoadImage`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `SaveImage`
 
 ## 典型参数
 

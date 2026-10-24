@@ -3,50 +3,51 @@ name: unknown_workflow_video_sampler_vae_182
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9275
-common_nodes: [CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEmbedBridge, HyVideoVAELoader, ImageConcatMulti, LoadImage, PreviewImage, TextEncodeHunyuanVideo_ImageToVideo, VHS_VideoCombine]
+coverage: 0.976
+common_nodes: [GetImageSize+, ImagePadKJ, ImageResizeKJ, LoadWanVideoT5TextEncoder, MaskToImage, String Literal, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946557222581362690.json, 视频生成/文生视频/1922219217268178946.json]
+members: [视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json, 视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_182
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1946557222581362690.json、视频生成/文生视频/1922219217268178946.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json、视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTextEmbedBridge`
-- `HyVideoVAELoader`
-- `ImageConcatMulti`
-- `LoadImage`
-- `PreviewImage`
-- `TextEncodeHunyuanVideo_ImageToVideo`
+- `GetImageSize+`
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
+- `String Literal`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `HyVideoBlockSwap` —— 1/2 个有
-- `HyVideoLoraSelect` —— 1/2 个有
-- `HyVideoTorchCompileSettings` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `RMBG` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoSetLoRAs` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 

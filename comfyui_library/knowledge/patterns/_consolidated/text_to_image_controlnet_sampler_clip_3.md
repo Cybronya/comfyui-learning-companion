@@ -1,88 +1,78 @@
 ---
 name: text_to_image_controlnet_sampler_clip_3
 type: Text To Image
-frequency: 3
+frequency: 9
 level: strong
-coverage: 0.847667
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoadImage, PreviewImage, SaveImage, SetUnionControlNetType, VAEDecode, VAELoader]
-problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, ttN concat]
-members: [图片生成/文生图/01_参考生图_2074230063763116033.json, 图片生成/文生图/1915206472983318529.json, 图片生成/文生图/1977917454909329410.json]
+coverage: 0.914222
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/Red-Z-Image去网红感美女姿势复刻打造+高清2K_1998286200039440386.json, 图片生成/图生图/Z-Image-CN控制2.0（姿态）_1996924955315081217.json, 图片生成/图生图/Z-Image-CN控制2.0（条线）_2000907171892260866.json, 图片生成/图生图/Z-Image-CN控制2.0（深度）_2000906048024309762.json, 图片生成/图生图/Z-Image-CN控制工作流_1996205475135889410.json, 图片生成/图生图/Z-Image-CN控制洗图_2002171998161780737.json, 图片生成/图生图/Z-Image-CN控制（2.1）_2001999689794875393.json, 图片生成/图生图/Z-Image姿势控制+高清2K_1997959165559603201.json, 图片生成/图生图/Z-Image姿势控制2.0+高清放大2K_2000726955454590978.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/01_参考生图_2074230063763116033.json、图片生成/文生图/1915206472983318529.json、图片生成/文生图/1977917454909329410.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Red-Z-Image去网红感美女姿势复刻打造+高清2K_1998286200039440386.json、图片生成/图生图/Z-Image-CN控制2.0（姿态）_1996924955315081217.json、图片生成/图生图/Z-Image-CN控制2.0（条线）_2000907171892260866.json、图片生成/图生图/Z-Image-CN控制2.0（深度）_2000906048024309762.json、图片生成/图生图/Z-Image-CN控制工作流_1996205475135889410.json…）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `AIO_Preprocessor`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `ModelPatchLoader`
 - `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
-- `SetUnionControlNetType`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Image_scale_to_side` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageGenResolutionFromImage` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `DifferentialDiffusion` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoraLoader` —— 1/3 个有
-- `NunchakuFluxDiTLoader` —— 1/3 个有
-- `NunchakuFluxLoraLoader` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `ttN concat` —— 1/3 个有
+- `UNETLoader` —— 8/9 个有
+- `ConditioningZeroOut` —— 3/9 个有
+- `LoraLoaderModelOnly` —— 3/9 个有
+- `SeedVR2` —— 3/9 个有
+- `SeedVR2BlockSwap` —— 3/9 个有
+- `SeedVR2ExtraArgs` —— 3/9 个有
+- `Text` —— 3/9 个有
+- `AILab_QwenVL` —— 1/9 个有
+- `CheckpointLoaderSimple` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
-| 采样步数 | 25 | 25 - 30 | 3 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 800 | 720 - 800 | 3 | 95% |
-| 高度 | 1024 | 1024 - 1280 | 3 | 89% |
-| ControlNet 权重 | 0.8 | 0.6 - 0.8 | 3 | 87% |
+| 宽度 | 720 | 720 - 1080 | 9 | 80% |
+| 高度 | 1280 | 1280 - 1920 | 9 | 80% |
+| 采样步数 | 10 | 7 - 10 | 9 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 78% |
+| 调度器 | simple | - | 9 | 89% |
+| 重绘幅度 | 1 | 0.7 - 1 | 9 | 84% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 30，3 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 800，观测区间 720 - 800，3 个样本，取值集中（一致性 95%）
-- 高度 中位数 1024，观测区间 1024 - 1280，3 个样本，取值集中（一致性 89%）
-- ControlNet 权重 中位数 0.8，观测区间 0.6 - 0.8，3 个样本，取值集中（一致性 87%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、ttN concat
+- 宽度 中位数 720，观测区间 720 - 1080，9 个样本
+- 高度 中位数 1280，观测区间 1280 - 1920，9 个样本
+- 采样步数 中位数 10，观测区间 7 - 10，9 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 78%
+- 调度器 最常用 simple，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 0.7 - 1，9 个样本，取值集中（一致性 84%）
+- 高发问题（7/9 个样本）：Steps较低可能导致细节不足

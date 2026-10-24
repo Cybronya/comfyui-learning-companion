@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_sampler_unet_vae_85
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.782444
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: moderate
+coverage: 0.826182
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen image 2.1文生图_2101860458935439362.json, 图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json, 图片生成/文生图/Qwen image 2.1文生图_2102591785762639873.json, 图片生成/文生图/Qwen+image+2.1文生图_2102634572138762242.json, 图片生成/文生图/Qwen-Image-2.1 ComfyUI 原生工作流示例_2101898468049645569.json, 图片生成/文生图/Qwen-Image-2.1 文生图_2102343034200477698.json, 图片生成/文生图/Qwen-Image-2.1 文生图_2102996517320740865.json, 图片生成/文生图/Qwen-Image-2.1-T2I_2102034536937902081.json, 图片生成/文生图/Qwen-image2.1文生图工作流_2101888147331305473.json]
+members: [视频生成/图生视频/MiniMax H3 双图15秒原生有声视频 12G低显存增强版_2085579097249505282.json, 视频生成/图生视频/MiniMax H3 咕嘎FC_2085282461919039490.json, 视频生成/图生视频/MiniMax H3 图生视频 升级版_2085717836827287553.json, 视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json, 视频生成/图生视频/MiniMax H3 多参考生视频（本地版）_2084663749595721729.json, 视频生成/图生视频/MiniMax H3 多图生视频+音频接入_2090182586948734978.json, 视频生成/图生视频/MiniMax H3全模态参考生视频工作流｜多图+多视频+多音频统一控制_2084111328754618369.json, 视频生成/图生视频/MiniMaxH3_参考生视频量化加速版_文本_图像_音频_视频_2100207410085457921.json, 视频生成/图生视频/MiniMaxH3_参考生视频量化加速版_文本_图像_音频_视频_2101876284900073474.json, 视频生成/图生视频/无参考视频-新加速高质开源MiniMax H3 RE2VA开源版_2087442373067501569.json, 视频生成/文生视频/多图参考H3广告_2085248140055236609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_85
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1文生图_2101860458935439362.json、图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json、图片生成/文生图/Qwen image 2.1文生图_2102591785762639873.json、图片生成/文生图/Qwen+image+2.1文生图_2102634572138762242.json、图片生成/文生图/Qwen-Image-2.1 ComfyUI 原生工作流示例_2101898468049645569.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 双图15秒原生有声视频 12G低显存增强版_2085579097249505282.json、视频生成/图生视频/MiniMax H3 咕嘎FC_2085282461919039490.json、视频生成/图生视频/MiniMax H3 图生视频 升级版_2085717836827287553.json、视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json、视频生成/图生视频/MiniMax H3 多参考生视频（本地版）_2084663749595721729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TextGenerateLTX2Prompt` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `Text` —— 3/9 个有
-- `孤海注释` —— 3/9 个有
-- `easy showAnything` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
-- `Seed (rgthree)` —— 1/9 个有
-- `TextGenerate` —— 1/9 个有
-- `easy promptList` —— 1/9 个有
+- `ComfyMathExpression` —— 10/11 个有
+- `PrimitiveFloat` —— 10/11 个有
+- `ResolutionSelector` —— 10/11 个有
+- `LoadAudio` —— 8/11 个有
+- `VHS_LoadVideo` —— 4/11 个有
+- `PreviewAny` —— 3/11 个有
+- `RHLLMChatNode` —— 3/11 个有
+- `EmptyImage` —— 2/11 个有
+- `MiniMaxH3BlockCacheT8` —— 2/11 个有
+- `PathchSageAttentionKJ` —— 2/11 个有
+- `PreviewImage` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `JjkText` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
+- `RTXVideoSuperResolution` —— 1/11 个有
+- `SeedVR2LoadDiTModel` —— 1/11 个有
+- `SeedVR2LoadVAEModel` —— 1/11 个有
+- `SeedVR2VideoUpscaler` —— 1/11 个有
+- `VHS_VideoInfo` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 40 | 25 - 50 | 9 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 9 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,10 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 25 - 50，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

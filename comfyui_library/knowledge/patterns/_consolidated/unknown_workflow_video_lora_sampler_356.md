@@ -3,74 +3,67 @@ name: unknown_workflow_video_lora_sampler_356
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.945667
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.632167
+common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1999023790376017922.json, 视频生成/图生视频/1986321706753150978.json, 视频生成/图生视频/1994362409961857025.json, 视频生成/图生视频/1986106739839946753.json, 视频生成/图生视频/1984917641024454657.json, 音频生成/音频生成/wan 2.2 数字人对口型_1986380429831925762.json]
+members: [视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json, 视频生成/图生视频/Wan2.2ControlNet生视频_1957996750323822593.json, 视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json, 视频生成/图生视频/wanvideo_Fun_2_2_control_深度图控制_1955648318090067969.json, 视频生成/图生视频/🐳wan2_2 FUN 控制模型姿态复刻【跳舞转绘等】🦋_1955903499915677697.json, 视频生成/文生视频/通义万相wan2.2视频转绘视频人物替换视频换脸V1.0_1957329600441413634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_356
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1999023790376017922.json、视频生成/图生视频/1986321706753150978.json、视频生成/图生视频/1994362409961857025.json、视频生成/图生视频/1986106739839946753.json、视频生成/图生视频/1984917641024454657.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json、视频生成/图生视频/Wan2.2ControlNet生视频_1957996750323822593.json、视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json、视频生成/图生视频/wanvideo_Fun_2_2_control_深度图控制_1955648318090067969.json、视频生成/图生视频/🐳wan2_2 FUN 控制模型姿态复刻【跳舞转绘等】🦋_1955903499915677697.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 5/6 个有
-- `RH_GetAudioDuration` —— 5/6 个有
-- `Apply Whisper` —— 4/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `LoadImage` —— 4/6 个有
-- `SoundFlow_TrimAudio` —— 4/6 个有
-- `String Literal` —— 4/6 个有
-- `VoxCPM_TTS` —— 4/6 个有
-- `Float to Int` —— 3/6 个有
+- `DepthAnything_V2` —— 5/6 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 5/6 个有
+- `GetNode` —— 5/6 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `AIO_Preprocessor` —— 4/6 个有
+- `WanVideoTorchCompileSettings` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `ImpactInt` —— 3/6 个有
 - `SimpleMath+` —— 3/6 个有
-- `VHS_LoadVideo` —— 3/6 个有
-- `AudioCrop` —— 2/6 个有
-- `CR String To Number` —— 2/6 个有
-- `INTConstant` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: PurgeVRAM` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
+- `GetImageRangeFromBatch` —— 2/6 个有
+- `ImageBlend` —— 2/6 个有
+- `RHHiddenNodes` —— 2/6 个有
 - `easy anythingIndexSwitch` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageBatchMulti` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `Primitive integer [Crystools]` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `ReverseImageBatch` —— 1/6 个有
+- `ImageBlur` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `VHS_VideoInfoLoaded` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
+- `workflow>文本处理` —— 1/6 个有
 
 ## 典型参数
 

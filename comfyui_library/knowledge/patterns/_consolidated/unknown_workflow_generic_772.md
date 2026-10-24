@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_generic_772
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.91675
+common_nodes: [RH_Grok_Video3, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/Image G 2.0 巨构文生图-低价渠道版_2094844368493568001.json, 图片生成/文生图/RPTimage2_2059197846456463362.json]
+members: [视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json, 视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json, 视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json, 视频生成/文生视频/全能视频X文生视频_1998220916691755010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_772
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Image G 2.0 巨构文生图-低价渠道版_2094844368493568001.json、图片生成/文生图/RPTimage2_2059197846456463362.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json、视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json、视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json、视频生成/文生视频/全能视频X文生视频_1998220916691755010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `RH_Grok_Video3`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RHLLMChatNode` —— 1/2 个有
-- `SaveImageNode` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

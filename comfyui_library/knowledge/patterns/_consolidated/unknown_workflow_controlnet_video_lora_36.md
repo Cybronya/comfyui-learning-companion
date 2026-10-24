@@ -3,81 +3,77 @@ name: unknown_workflow_controlnet_video_lora_36
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.605
-common_nodes: [ACE_ImageFaceCrop, ApplyPoseScalesToFrames, BlockifyMask, CLIPVisionLoader, CR Prompt Text, CalculatePoseScales, ConvertPoseToStandardFormat, DWPreprocessor, DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, EmptyImage, Fast Groups Bypasser (rgthree), GetImageSize, GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageConcatMulti, ImageResizeKJv2, JWImageExtractFromBatch, LayerUtility: PurgeVRAM V2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PreviewImage, QwenVLDetection, RenderKps, Sam2Segmentation, SetNode, Show any to JSON [Crystools], VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy ifElse, easy seed, huchenlei.LoadOpenposeJSON]
+coverage: 0.6165
+common_nodes: [Bjornulf_ShowInt, CLIPVisionLoader, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewImage, Primitive string [Crystools], RHBatchImages:, RHExtractImage, RHUploadZip, RenderNLFPoses, SaveImage, SetNode, SimpleCalculatorKJ, TT_img_enc, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
 problems: []
-missing: [LayerUtility: PurgeVRAM V2, Show any to JSON [Crystools], CR Prompt Text, easy seed, huchenlei.LoadOpenposeJSON]
-members: [视频生成/文生视频/1970420554413076481.json, 视频生成/文生视频/Wan-Animate通用节点组_2072999544880930816.json]
+missing: []
+members: [视频生成/图生视频/批量+Scail+增加晃动lora+跳舞_2011633491498246146.json, 视频生成/图生视频/批量姿势复刻_2027971895844413441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_36
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1970420554413076481.json、视频生成/文生视频/Wan-Animate通用节点组_2072999544880930816.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/批量+Scail+增加晃动lora+跳舞_2011633491498246146.json、视频生成/图生视频/批量姿势复刻_2027971895844413441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ACE_ImageFaceCrop`
-- `ApplyPoseScalesToFrames`
-- `BlockifyMask`
+- `Bjornulf_ShowInt`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `CalculatePoseScales`
-- `ConvertPoseToStandardFormat`
-- `DWPreprocessor`
-- `DownloadAndLoadQwenModel`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMask`
 - `INTConstant`
 - `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `JWImageExtractFromBatch`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `MaskToImage`
+- `NLFPredict`
 - `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
+- `PoseDetectionVitPoseToDWPose`
 - `PreviewImage`
-- `QwenVLDetection`
-- `RenderKps`
-- `Sam2Segmentation`
+- `Primitive string [Crystools]`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `RenderNLFPoses`
+- `SaveImage`
 - `SetNode`
-- `Show any to JSON [Crystools]`
+- `SimpleCalculatorKJ`
+- `TT_img_enc`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy ifElse`
-- `easy seed`
-- `huchenlei.LoadOpenposeJSON`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `DownloadAndLoadNLFModel` —— 1/2 个有
+- `LoadNLFModel` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 
@@ -89,5 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、Show any to JSON [Crystools]、CR Prompt Text、easy seed、huchenlei.LoadOpenposeJSON
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

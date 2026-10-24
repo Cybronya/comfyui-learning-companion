@@ -3,73 +3,72 @@ name: unknown_workflow_video_lora_sampler_780
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.892
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, DownloadAndLoadWav2VecModel, GIMMVFI_interpolate, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveFloat, SimpleMath+, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+coverage: 0.665
+common_nodes: [Anything Everywhere3, Bjornulf_AnythingToText, CLIPVisionLoader, CR Simple Text Watermark, Compare, FL_PromptSelector, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveInt, PrimitiveStringMultiline, RegexReplace, RepeatImageBatch, SetNode, ShowText|pysssss, TextSplitByDelimiterEnhanced, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy lengthAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1938175701055115265.json, 视频生成/图生视频/1937534979532591106.json]
+members: [视频生成/图生视频/SVI FILM长视频工作流_1986031148419743745.json, 视频生成/图生视频/SVI SHOT 长视频（适合变化小的）_1985646905449488386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_780
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1938175701055115265.json、视频生成/图生视频/1937534979532591106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SVI FILM长视频工作流_1986031148419743745.json、视频生成/图生视频/SVI SHOT 长视频（适合变化小的）_1985646905449488386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
+- `Anything Everywhere3`
+- `Bjornulf_AnythingToText`
 - `CLIPVisionLoader`
-- `DownloadAndLoadGIMMVFIModel`
-- `DownloadAndLoadWav2VecModel`
-- `GIMMVFI_interpolate`
-- `JWInteger`
-- `JWIntegerToString`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `CR Simple Text Watermark`
+- `Compare`
+- `FL_PromptSelector`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PrimitiveFloat`
-- `SimpleMath+`
-- `TextInput_`
+- `MathExpression|pysssss`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RegexReplace`
+- `RepeatImageBatch`
+- `SetNode`
+- `ShowText|pysssss`
+- `TextSplitByDelimiterEnhanced`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy lengthAnything`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetTextFromJson` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `LoadJsonFromText` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `ReplaceText` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `SongGeneration_Sampler` —— 1/2 个有
-- `SongGeneration_Stage1` —— 1/2 个有
-- `SongGeneration_Stage2` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `InvertMask` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

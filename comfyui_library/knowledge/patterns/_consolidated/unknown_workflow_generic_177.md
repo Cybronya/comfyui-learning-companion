@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_177
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.960571
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.835
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json, 音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json, 音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json, 音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json, 音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json, 音频生成/音频生成/文字控制 音色+情绪参考_2083374388392583169.json, 音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json]
+members: [图片生成/图生图/BiRefNet 去背景模型对主体进行高精度抠图+全节点注释_2091780306507493377.json, 图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2096886637639847937.json, 图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2097225818744381442.json, 图片生成/图生图/BiRefNet_去背景模型对主体进行高精度抠图_2092450560543903745.json, 图片生成/图生图/抠图924版本_2103088572483063809.json, 图片生成/图生图/抠图_2061716570174476290.json, 图片生成/图生图/抠图_2086065866902429698.json, 图片生成/图生图/抠图工作流_2106752421392379906.json, 图片生成/图生图/老孙AI 通用抠图_2085995059459223554.json, 图片生成/文生图/全网最低价 全能图片V1_1969685223988490242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_177
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json、音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json、音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json、音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json、音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/BiRefNet 去背景模型对主体进行高精度抠图+全节点注释_2091780306507493377.json、图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2096886637639847937.json、图片生成/图生图/BiRefNet_一键去背景主体高精度抠图_2097225818744381442.json、图片生成/图生图/BiRefNet_去背景模型对主体进行高精度抠图_2092450560543903745.json、图片生成/图生图/抠图924版本_2103088572483063809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+全部 10 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 4/7 个有
-- `LoadVideo` —— 3/7 个有
-- `GetVideoComponents` —— 1/7 个有
-- `PreviewAudio` —— 1/7 个有
+- `BiRefNetRMBG` —— 9/10 个有
+- `PreviewImage` —— 3/10 个有
+- `TutengGeminiAPI` —— 1/10 个有
 
 ## 典型参数
 

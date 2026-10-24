@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_1013
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.757
-common_nodes: [LoadAudio, LoadImage, SaveAudio, TextInput_, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.835333
+common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3ImageToVideo, RH_MinimaxHailuoH3MultimodalToVideo, RH_MinimaxHailuoH3TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆_1980114922279440386.json, 音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆双人_多人对话_1980263429552431105.json]
+members: [视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json, 视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1013
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆_1980114922279440386.json、音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆双人_多人对话_1980263429552431105.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json、视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadAudio`
 - `LoadImage`
-- `SaveAudio`
-- `TextInput_`
-- `easy showAnything`
+- `LoadVideo`
+- `RH_MinimaxHailuoH3ImageToVideo`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `RH_MinimaxHailuoH3TextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 1/2 个有
-- `IndexTTS2_MultiTalk` —— 1/2 个有
-- `IndexTTS2_SpeakerEmotionConfig` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `Text` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

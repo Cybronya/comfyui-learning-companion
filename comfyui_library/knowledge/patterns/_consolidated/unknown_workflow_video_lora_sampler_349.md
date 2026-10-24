@@ -3,89 +3,74 @@ name: unknown_workflow_video_lora_sampler_349
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.731
-common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadAudio, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.5815
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine]
 problems: []
-missing: [ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple, CR Prompt Text]
-members: [视频生成/图生视频/1975546329931845634.json, 视频生成/文生视频/(Pro Max版)完爆OVI文生视频带配音数字人无限时长工作流--48G版_1975469825285820418.json, 视频生成/文生视频/(Pro高质量)跨模态仿OVI无限时长文生视频含配音数字人工作流V1（支持中文）_1975180560664498177.json, 视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json, 视频生成/文生视频/1975450428768956418.json, 视频生成/文生视频/1975546329931845634.json]
+missing: []
+members: [视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json, 视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json, 视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json, 视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json, 视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json, 视频生成/文生视频/多参考图与高动态视频生成_ Ltx 2.3 Licon-MSR_2063854107001180161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_349
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1975546329931845634.json、视频生成/文生视频/(Pro Max版)完爆OVI文生视频带配音数字人无限时长工作流--48G版_1975469825285820418.json、视频生成/文生视频/(Pro高质量)跨模态仿OVI无限时长文生视频含配音数字人工作流V1（支持中文）_1975180560664498177.json、视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json、视频生成/文生视频/1975450428768956418.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json、视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json、视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json、视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json、视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `SetNode`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `ImageFromBatch+` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `LayerUtility: PurgeVRAM` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `SaveAudio` —— 5/6 个有
-- `WanVideoTextEncodeCached` —— 5/6 个有
-- `WanVideoTorchCompileSettings` —— 5/6 个有
-- `easy downloadIndexTTSAndLoadModel` —— 5/6 个有
-- `easy indexTTSGenerateSimple` —— 5/6 个有
-- `LoadLynxResampler` —— 4/6 个有
-- `LynxEncodeFaceIP` —— 4/6 个有
-- `LynxInsightFaceCrop` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `WanVideoAddLynxEmbeds` —— 4/6 个有
-- `WanVideoExtraModelSelect` —— 4/6 个有
-- `WanVideoLoraSelectMulti` —— 4/6 个有
-- `INTConstant` —— 3/6 个有
-- `LoadWanVideoT5TextEncoder` —— 3/6 个有
-- `WanVideoTextEncode` —— 3/6 个有
-- `CreateCFGScheduleFloatList` —— 2/6 个有
-- `Float` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `WanVideoScheduler` —— 2/6 个有
-- `WanVideoSigmaToStep` —— 2/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `Audio Duration (mtb)` —— 1/6 个有
-- `AudioCrop` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `JWIntegerToString` —— 1/6 个有
+- `ComfyMathExpression` —— 4/6 个有
+- `GetNode` —— 4/6 个有
+- `LTXVAddGuideMulti` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `KenChenLLMGeminiBananaImageCollageNode` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `ShowText|pysssss` —— 2/6 个有
+- `llama_cpp_instruct_adv` —— 2/6 个有
+- `llama_cpp_model_loader` —— 2/6 个有
+- `llama_cpp_parameters` —— 2/6 个有
+- `孤海注释` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 145 | 145 - 241 | 6 | 74% |
+| 高度 | 24 | 24 - 50 | 6 | 62% |
 
 ## 常见问题
 
@@ -93,4 +78,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: PurgeVRAM、LayerUtility: PurgeVRAM V2、MathExpression|pysssss
+- 宽度 中位数 145，观测区间 145 - 241，6 个样本
+- 高度 中位数 24，观测区间 24 - 50，6 个样本

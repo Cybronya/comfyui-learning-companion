@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_generic_912
 type: Unknown Workflow
-frequency: 2
-level: weak
+frequency: 3
+level: moderate
 coverage: 1
-common_nodes: [CR Prompt Text, RH_Sora2_T2V_PRO, SaveVideo]
+common_nodes: [LoadImage, RMBG, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S文生视频丨Pro版最新模型丨10秒高清直出丨无水印！！！！_1982697386898276354.json, 视频生成/文生视频/高清无水印25秒文生嗦罗2pro_2014333182442737666.json]
+members: [图片生成/图生图/产品快速抠图工作流_2112016536545357825.json, 图片生成/图生图/扣角色_1945729607377047553.json, 图片生成/图生图/抠出主体_2103388321719345153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_912
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频S文生视频丨Pro版最新模型丨10秒高清直出丨无水印！！！！_1982697386898276354.json、视频生成/文生视频/高清无水印25秒文生嗦罗2pro_2014333182442737666.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品快速抠图工作流_2112016536545357825.json、图片生成/图生图/扣角色_1945729607377047553.json、图片生成/图生图/抠出主体_2103388321719345153.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_Sora2_T2V_PRO`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RMBG`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText` —— 1/2 个有
+- `MaskToImage` —— 1/3 个有
+- `SaveImageAdvanced` —— 1/3 个有
 
 ## 典型参数
 
@@ -40,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

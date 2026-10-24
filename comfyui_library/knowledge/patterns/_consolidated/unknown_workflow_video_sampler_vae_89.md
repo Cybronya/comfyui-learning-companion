@@ -7,13 +7,13 @@ coverage: 0.667833
 common_nodes: [CLIPVisionLoader, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatch, ImageBatchMulti, ImageBatchRepeatInterleaving, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1910194560243564546.json, 视频生成/图生视频/1910218456598544385.json, 视频生成/图生视频/1948673217209741314.json, 视频生成/图生视频/1948677526125182978.json, 视频生成/图生视频/1909312671357743106.json, 视频生成/图生视频/1911449763139547137.json]
+members: [视频生成/图生视频/Wan SkyReels-A2多物体参考工作流_1910194560243564546.json, 视频生成/图生视频/Wan SkyReels-A2多物体视频_1910218456598544385.json, 视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json, 视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json, 视频生成/图生视频/双分支图像融合一致性Wan Skyreels视频工作流V1_1909312671357743106.json, 视频生成/图生视频/最新王炸Wan2.1+SkyReels  自定义角色+物体+背景  超高还原_1911449763139547137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_89
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1910194560243564546.json、视频生成/图生视频/1910218456598544385.json、视频生成/图生视频/1948673217209741314.json、视频生成/图生视频/1948677526125182978.json、视频生成/图生视频/1909312671357743106.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan SkyReels-A2多物体参考工作流_1910194560243564546.json、视频生成/图生视频/Wan SkyReels-A2多物体视频_1910218456598544385.json、视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json、视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json、视频生成/图生视频/双分支图像融合一致性Wan Skyreels视频工作流V1_1909312671357743106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6

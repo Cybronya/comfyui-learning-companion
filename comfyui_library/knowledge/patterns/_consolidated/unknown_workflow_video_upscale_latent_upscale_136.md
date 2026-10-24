@@ -3,89 +3,73 @@ name: unknown_workflow_video_upscale_latent_upscale_136
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5125
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JWFloat, JWLoadImageSequenceWithStopIndex, JWSaveImageSequence, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuide, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PreviewAny, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy float, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt]
+coverage: 0.878
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038825068578480130.json, 视频生成/图生视频/2038747014028075010.json]
+members: [视频生成/图生视频/LTX-2.5-I2V+双采样加速视频生成_2096206827863232514.json, 视频生成/图生视频/LTX2.5图生视频_2087770942218006530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_136
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2038825068578480130.json、视频生成/图生视频/2038747014028075010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5-I2V+双采样加速视频生成_2096206827863232514.json、视频生成/图生视频/LTX2.5图生视频_2087770942218006530.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
+- `ComfyMathExpression`
 - `EmptyLTXVLatentVideo`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `JWFloat`
-- `JWLoadImageSequenceWithStopIndex`
-- `JWSaveImageSequence`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAddGuide`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PrimitiveString`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy float`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
+- `CFGGuider` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVDualCFGGuider` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `ModelAttentionBackend` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `ResolutionSelector` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | - | 2 | 100% |
+| 高度 | 25 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -93,4 +77,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

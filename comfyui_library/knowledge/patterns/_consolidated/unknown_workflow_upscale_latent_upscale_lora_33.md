@@ -3,22 +3,22 @@ name: unknown_workflow_upscale_latent_upscale_lora_33
 type: Unknown Workflow
 frequency: 10
 level: strong
-coverage: 0.9528
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+coverage: 0.8405
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX 2.3 的 100% 实力释放图生视频三阶段采样工作流_2034922243968471041.json, 视频生成/文生视频/LTX-2.3_基础文生图生视频双采样_2080467787033694209.json, 视频生成/文生视频/LTX-2.3三阶渲染1+3数字人100%性能释放_2034922238251634690.json, 视频生成/文生视频/LTX-2三阶渲染1+3数字人100%性能释放_2034922123667447810.json, 视频生成/文生视频/VBVR数字人_2043983796604768258.json, 视频生成/文生视频/『最优实现』LTX 2.3 Distill 1.1  + VBVR 240K ：高概率数字人最优_2047657281310953473.json, 视频生成/文生视频/『最优实现』LTX 2.3 音频驱动双人对话生产力方案_2048727975096487938.json, 视频生成/文生视频/图片+音频数字人 2.0｜Dev-Dare + VBVR 最终版_2051722678544941058.json, 视频生成/文生视频/图片+音频驱动数字人 对比｜Distilled + Dev-Dare + VAVR 三模实测_2051704448384282626.json, 视频生成/文生视频/音频数字人 2.0｜三阶渲染打磨版，人物说话更自然_2050906015968837633.json]
+members: [视频生成/文生视频/NVFP4非蒸馏高质量LXT2镜头控制文生视频_2009643822036291585.json, 视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json, 视频生成/文生视频/ltx2.3文生视频工作流-官方版_2055854688318304257.json, 视频生成/文生视频/ltx2文生视频（运行非常稳定，时长可调，运行速度很快）_2008912681826263041.json, 视频生成/文生视频/video_ltx2_3_t2v文生视频_2032300523310813186.json, 视频生成/文生视频/video_ltx2_t2v_unpack_2008579148603723778.json, 视频生成/文生视频/video_ltx2_t2v文生视频fp8_2011810389457117185.json, 视频生成/文生视频/大凯辰光-LTX-2_T2V_Full-拆分子图版-文生视频工作流_2009155872034922497.json, 视频生成/文生视频/用LTX-2大模型轻松制作搞笑祝福视频，ComfyUI工作流教程来啦！_2010631084064641025.json, 视频生成/文生视频/非蒸馏高质量LXT2镜头控制文生视频_2009183975582994433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_33
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 的 100% 实力释放图生视频三阶段采样工作流_2034922243968471041.json、视频生成/文生视频/LTX-2.3_基础文生图生视频双采样_2080467787033694209.json、视频生成/文生视频/LTX-2.3三阶渲染1+3数字人100%性能释放_2034922238251634690.json、视频生成/文生视频/LTX-2三阶渲染1+3数字人100%性能释放_2034922123667447810.json、视频生成/文生视频/VBVR数字人_2043983796604768258.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/NVFP4非蒸馏高质量LXT2镜头控制文生视频_2009643822036291585.json、视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json、视频生成/文生视频/ltx2.3文生视频工作流-官方版_2055854688318304257.json、视频生成/文生视频/ltx2文生视频（运行非常稳定，时长可调，运行速度很快）_2008912681826263041.json、视频生成/文生视频/video_ltx2_3_t2v文生视频_2032300523310813186.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
@@ -26,7 +26,6 @@ source: knowledge_consolidation
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `CreateVideo`
 - `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
@@ -35,58 +34,48 @@ source: knowledge_consolidation
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
 - `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 9/10 个有
-- `CM_FloatToInt` —— 9/10 个有
-- `GetLatentSizeAndCount` —— 9/10 个有
-- `JWImageResizeByLongerSide` —— 9/10 个有
-- `LTXVAudioVAEEncode` —— 9/10 个有
-- `LoadAudio` —— 9/10 个有
-- `MelBandRoFormerModelLoader` —— 9/10 个有
-- `MelBandRoFormerSampler` —— 9/10 个有
-- `SetLatentNoiseMask` —— 9/10 个有
-- `SolidMask` —— 9/10 个有
-- `TrimAudioDuration` —— 9/10 个有
-- `VAEDecodeTiled` —— 9/10 个有
-- `image_scale_pixel_v2` —— 9/10 个有
-- `Float` —— 6/10 个有
-- `LTX2_NAG` —— 6/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/10 个有
-- `SimpleMath+` —— 6/10 个有
-- `easy showAnything` —— 6/10 个有
-- `VRAMReserver` —— 5/10 个有
-- `PromptRelayEncode` —— 4/10 个有
-- `Seed Everywhere` —— 3/10 个有
-- `SimpleCalculatorKJ` —— 3/10 个有
-- `Text` —— 2/10 个有
-- `INTConstant` —— 1/10 个有
-- `KepStringLiteral` —— 1/10 个有
-- `LTXFloatToInt` —— 1/10 个有
-- `LTXVTiledVAEDecode` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `PathchSageAttentionKJ` —— 1/10 个有
+- `EmptyImage` —— 9/10 个有
+- `GetImageSize` —— 9/10 个有
+- `ImageScaleBy` —— 9/10 个有
+- `LTXVScheduler` —— 9/10 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `LTXVCropGuides` —— 7/10 个有
+- `VAEDecodeTiled` —— 7/10 个有
+- `CM_FloatToInt` —— 3/10 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 3/10 个有
+- `VAEDecode` —— 3/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `ComfyMathExpression` —— 1/10 个有
+- `DeepTranslatorTextNode` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `PreviewAny` —— 1/10 个有
 - `SetNode` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
+- `TextGenerateLTX2Prompt` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
+- `easy clearCacheAll` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 10 | 100% |
+| 宽度 | 97 | 97 - 121 | 10 | 89% |
 | 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
@@ -95,5 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 121，10 个样本，取值集中（一致性 89%）
 - 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

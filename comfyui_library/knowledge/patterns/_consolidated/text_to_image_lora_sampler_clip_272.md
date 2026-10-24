@@ -1,88 +1,70 @@
 ---
 name: text_to_image_lora_sampler_clip_272
 type: Text To Image
-frequency: 4
+frequency: 7
 level: strong
-coverage: 0.821
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, EmptyMiniMaxH3LatentAV, Fast Groups Bypasser (rgthree), FluxGuidance, Image Comparer (rgthree), ImageFromBatch, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, PreviewImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, ScheduledCFGGuidance, UNETLoader, VAEDecode, VAELoader, easy MiniMaxH3ReferenceToVideoBridge, easy imageColorMatch, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.916714
+common_nodes: [CLIPLoaderGGUF, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, DF_Float, EmptyLatentImage, Int, KSampler, LoraLoaderModelOnly, SaveImage, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, easy seed]
+problems: []
 missing: []
-members: [数字人/数字人/MiniMaxH3图像编辑文生图｜高一致性真实感生成_2094851558113628161.json, 数字人/数字人/更真实一致性升级｜MiniMaxH3图像编辑文生图生成_2095047981555867650.json, 数字人/数字人/海螺H3图像编辑+文生图｜高还原度双模式生成_2094850066522664962.json, 数字人/数字人/高还原度文生图图像编辑｜海螺 H3数字人图生图_2095046448059609089.json]
+members: [图片生成/文生图/zimage dnd风格半写实奇幻数字插画工作流_2076506450293252098.json, 图片生成/文生图/zimage 最新光影lora+提示词_2074663614140731394.json, 图片生成/文生图/zimage 最新光影lora+提示词_2074689079039578114.json, 图片生成/文生图/zimage 最新光影lora+提示词_2075146341201825794.json, 图片生成/文生图/zimage 最新光影lora+提示词_2076916021839089665.json, 图片生成/文生图/zimage 最新光影lora+提示词_2078001416542711809.json, 图片生成/文生图/zimage 最新光影lora+提示词工程师，让强的更强！_2028076084645863425.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_272
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/MiniMaxH3图像编辑文生图｜高一致性真实感生成_2094851558113628161.json、数字人/数字人/更真实一致性升级｜MiniMaxH3图像编辑文生图生成_2095047981555867650.json、数字人/数字人/海螺H3图像编辑+文生图｜高还原度双模式生成_2094850066522664962.json、数字人/数字人/高还原度文生图图像编辑｜海螺 H3数字人图生图_2095046448059609089.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/zimage dnd风格半写实奇幻数字插画工作流_2076506450293252098.json、图片生成/文生图/zimage 最新光影lora+提示词_2074663614140731394.json、图片生成/文生图/zimage 最新光影lora+提示词_2074689079039578114.json、图片生成/文生图/zimage 最新光影lora+提示词_2075146341201825794.json、图片生成/文生图/zimage 最新光影lora+提示词_2076916021839089665.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `CLIPLoaderGGUF`
 - `CLIPTextEncode`
-- `CR Text`
+- `CR Prompt Text`
 - `ConditioningZeroOut`
+- `DF_Float`
 - `EmptyLatentImage`
-- `EmptyMiniMaxH3LatentAV`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `JjkText`
+- `Int`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3BlockCacheT8`
-- `MiniMaxH3ImageToVideo`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ScheduledCFGGuidance`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy MiniMaxH3ReferenceToVideoBridge`
-- `easy imageColorMatch`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `ImpactSwitch` —— 1/7 个有
+- `JjkText` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 4 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 80 | 80 - 80 | 4 | 100% |
-| 高度 | 80 | 80 - 80 | 4 | 100% |
+| 宽度 | 1920 | 1920 - 1920 | 7 | 100% |
+| 高度 | 1080 | 1080 - 1080 | 7 | 100% |
+| 采样步数 | 10 | 10 - 10 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1920，观测区间 1920 - 1920，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 1080，观测区间 1080 - 1080，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

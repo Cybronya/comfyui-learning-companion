@@ -1,38 +1,42 @@
 ---
 name: unknown_workflow_generic_172
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.753
-common_nodes: [DramaBoxLoader, DramaBoxTTS, JjkText, SaveAudio]
+coverage: 0.867091
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2056283924774612993.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（文生音频）V2_2057834156830322690.json]
+members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice语音克隆_2041421044300386306.json, 音频生成/音频生成/Alan测(600种语言-支持方言)OmniVoice语音克隆_2041777960390238209.json, 音频生成/音频生成/OmniVoice-双人语音克隆（支持方言）_2042241339672240130.json, 音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json, 音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json, 音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json, 音频生成/音频生成/OmniVoice语音克隆，omnivoice声音克隆，跨境声音，电商语音克隆_2042050604117266433.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041470375313281025.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041935163369721858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_172
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice语音克隆_2041421044300386306.json、音频生成/音频生成/Alan测(600种语言-支持方言)OmniVoice语音克隆_2041777960390238209.json、音频生成/音频生成/OmniVoice-双人语音克隆（支持方言）_2042241339672240130.json、音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `DramaBoxLoader`
-- `DramaBoxTTS`
-- `JjkText`
+全部 11 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `DramaBoxAudioPreview` —— 6/7 个有
-- `DramaBoxVoiceClone` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `PrimitiveFloat` —— 2/7 个有
+- `OmniVoiceVoiceCloneTTS` —— 8/11 个有
+- `PreviewAny` —— 7/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
+- `OmniVoiceMultiSpeakerTTS` —— 3/11 个有
+- `OmniVoiceVoiceDesignTTS` —— 3/11 个有
+- `SaveAudioMP3` —— 3/11 个有
+- `SaveAudioOpus` —— 2/11 个有
 
 ## 典型参数
 

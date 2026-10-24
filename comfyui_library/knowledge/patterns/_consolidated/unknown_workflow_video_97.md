@@ -3,33 +3,48 @@ name: unknown_workflow_video_97
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [LoadImage, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.508
+common_nodes: [GetNode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, PlaySound|pysssss, PreviewAny, PreviewImage, PrimitiveString, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, SetNode, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1890497294351900674.json, 视频生成/图生视频/1965065634449080322.json]
+members: [视频生成/图生视频/SeedVR2高清视频放大  最强视频放大神器_1999758543504932866.json, 视频生成/图生视频/当今最强视频放大神器 SeedVR2_1974856721065709570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_97
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1890497294351900674.json、视频生成/图生视频/1965065634449080322.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SeedVR2高清视频放大  最强视频放大神器_1999758543504932866.json、视频生成/图生视频/当今最强视频放大神器 SeedVR2_1974856721065709570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
+- `GetNode`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `PlaySound|pysssss`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveString`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SeedVR2GGUF`
+- `SetNode`
+- `StringConcatenate`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageBlendAdvance` —— 1/2 个有
-- `workflow/视频` —— 1/2 个有
+- `Bookmark (rgthree)` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

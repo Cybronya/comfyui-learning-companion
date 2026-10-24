@@ -1,71 +1,65 @@
 ---
 name: unknown_workflow_sampler_unet_vae_198
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.807667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), KSamplerSelect, Label (rgthree), LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.67
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 全模态视频生成 I 提示词强化 I 超分_2084660524603764738.json, 视频生成/文生视频/MiniMax H3 全能大合集工作流_2084920689999572993.json, 视频生成/文生视频/MiniMax H3 混合架构 I 极致一致性 I 最新官流加速1.0版 I 提示词强化_2088794658804686850.json]
+members: [图片生成/图生图/Qwen2.1图生图工作流_2101875984147509250.json, 图片生成/图生图/Qwen_image_2.1_图生_2101865996205248513.json, 图片生成/图生图/qwen image 2.1多图编辑_2101719348938362882.json, 图片生成/图生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json, 图片生成/文生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_198
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 全模态视频生成 I 提示词强化 I 超分_2084660524603764738.json、视频生成/文生视频/MiniMax H3 全能大合集工作流_2084920689999572993.json、视频生成/文生视频/MiniMax H3 混合架构 I 极致一致性 I 最新官流加速1.0版 I 提示词强化_2088794658804686850.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen2.1图生图工作流_2101875984147509250.json、图片生成/图生图/Qwen_image_2.1_图生_2101865996205248513.json、图片生成/图生图/qwen image 2.1多图编辑_2101719348938362882.json、图片生成/图生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json、图片生成/文生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect`
-- `Label (rgthree)`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `QwenImage21Cache`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KepStringLiteral` —— 2/3 个有
-- `MiniMaxH3GenerationTailLoader` —— 2/3 个有
-- `MiniMaxH3PromptEnhancer` —— 2/3 个有
-- `RTXVideoSuperResolution` —— 2/3 个有
-- `VHS_LoadAudioUpload` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `CreateVideo` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MiniMaxChunkFeedForward` —— 1/3 个有
-- `MiniMaxH3HybridLoader` —— 1/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
-- `MiniMaxLowVRAMAttention` —— 1/3 个有
-- `ModelAttentionBackend` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
-- `SeedVR2` —— 1/3 个有
-- `SeedVR2BlockSwap` —— 1/3 个有
-- `SeedVR2ExtraArgs` —— 1/3 个有
+- `孤海注释` —— 4/5 个有
+- `JjkText` —— 3/5 个有
+- `easy int` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `PlaySound|pysssss` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `SaveImageAdvanced` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `GH_ImageVideoComparer` —— 1/5 个有
+- `MmuuaiGroupBypass` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 采样步数 | 25 | 25 - 40 | 5 | 79% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -73,4 +67,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 40，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

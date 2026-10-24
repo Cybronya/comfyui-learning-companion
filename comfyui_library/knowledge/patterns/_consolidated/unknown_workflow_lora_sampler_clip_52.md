@@ -1,63 +1,65 @@
 ---
 name: unknown_workflow_lora_sampler_clip_52
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.908167
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.965
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR Text, ttN concat]
-members: [图片生成/文生图/1928999965027155970.json, 图片生成/文生图/1932966165364834305.json, 图片生成/文生图/1933850253839749122.json, 图片生成/文生图/1934978430360592385.json, 图片生成/文生图/1962372606101950465.json, 图片生成/文生图/沙雕动画场景专用工作流_2075008312994787329.json]
+missing: []
+members: [图片生成/图生图/Klein 光源方向控制（重新打光）_2077753659827507201.json, 图片生成/图生图/Klein 漫画线稿参考上色_2077376538961604609.json, 图片生成/图生图/Klein 真实细节_2051257646812020737.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2073950983855628289.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2074742796711448578.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2096041251173912578.json, 图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2096156283039735810.json, 图片生成/图生图/万物转动漫极速_2026648982881046530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_52
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1928999965027155970.json、图片生成/文生图/1932966165364834305.json、图片生成/文生图/1933850253839749122.json、图片生成/文生图/1934978430360592385.json、图片生成/文生图/1962372606101950465.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Klein 光源方向控制（重新打光）_2077753659827507201.json、图片生成/图生图/Klein 漫画线稿参考上色_2077376538961604609.json、图片生成/图生图/Klein 真实细节_2051257646812020737.json、图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2073950983855628289.json、图片生成/图生图/Klein+Sun_direction_LoRA可控打光_2074742796711448578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 5/6 个有
-- `UNETLoader` —— 5/6 个有
-- `UpscaleModelLoader` —— 5/6 个有
-- `ImageScaleBy` —— 4/6 个有
-- `DeepTranslatorTextNode` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `FluxSampler` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `VAEEncode` —— 2/6 个有
-- `ttN concat` —— 2/6 个有
-- `CFGZeroStar` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `TextInputBasic` —— 1/6 个有
-- `UnetLoaderGGUF` —— 1/6 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `SaveImage` —— 7/8 个有
+- `SphereLightNode` —— 5/8 个有
+- `easy imageColorMatch` —— 5/8 个有
+- `DF_Integer` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 4/8 个有
+- `ImageResize+` —— 4/8 个有
+- `RHHiddenNodes` —— 4/8 个有
+- `ImageConcatMulti` —— 2/8 个有
+- `CompressImages` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `VRAMReserver` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1248 | 1024 - 1344 | 6 | 90% |
-| 高度 | 768 | 768 - 1536 | 6 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,6 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1248，观测区间 1024 - 1344，6 个样本，取值集中（一致性 90%）
-- 高度 中位数 768，观测区间 768 - 1536，6 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、ttN concat
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

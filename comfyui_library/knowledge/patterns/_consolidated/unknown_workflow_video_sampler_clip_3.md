@@ -1,93 +1,82 @@
 ---
 name: unknown_workflow_video_sampler_clip_3
 type: Unknown Workflow
-frequency: 58
-level: strong
-coverage: 0.809448
-common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, SamplerCustom, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 87
+level: moderate
+coverage: 0.985517
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042418624685674498.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092571026797453313.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092584125730476033.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099066175509585921.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099072254075301890.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2111420172920778753.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2111422384841510913.json, 视频生成/图生视频/2071780309431046145.json, 视频生成/图生视频/2072121169825849346.json, 视频生成/图生视频/2036293680444739586.json, 视频生成/图生视频/LTX2.3图生视频 音画同步 KJ优化版工作流_2037846483961126913.json, 视频生成/图生视频/2038085401633624065.json, 视频生成/图生视频/2038526998162706434.json, 视频生成/图生视频/2043521314073350146.json, 视频生成/图生视频/2046752866936823810.json, 视频生成/图生视频/2055194208453046274.json, 视频生成/图生视频/2066692371580018690.json, 视频生成/图生视频/2064535572395413505.json, 视频生成/图生视频/2061114920523100161.json, 视频生成/图生视频/2066720677041893378.json, 视频生成/图生视频/2068388063612588033.json, 视频生成/图生视频/2056629889578659841.json, 视频生成/图生视频/2058197260298706945.json, 视频生成/图生视频/2058199619435319297.json, 视频生成/图生视频/2058206794803142657.json, 视频生成/图生视频/2058207702853185537.json, 视频生成/图生视频/2058378034536869890.json, 视频生成/图生视频/2060347546815516674.json, 视频生成/图生视频/2060922197971136513.json, 视频生成/图生视频/2060942160542916609.json, 视频生成/图生视频/2057342523965792257.json, 视频生成/图生视频/2057633520620761090.json, 视频生成/图生视频/2058713422858113026.json, 视频生成/图生视频/2069590649594269698.json, 视频生成/图生视频/2057818925982900225.json, 视频生成/图生视频/2031926967917879297.json, 视频生成/图生视频/2072648429993553922.json, 视频生成/图生视频/2072658380480663553.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步 提示词润色_2083913672484802561.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步 提示词润色_2090765022418006018.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步 提示词润色_2090775866828746754.json, 视频生成/图生视频/2039266037027311618.json, 视频生成/图生视频/2070033980707139585.json, 视频生成/图生视频/2070051882718023681.json, 视频生成/图生视频/2071400288996651010.json, 视频生成/图生视频/2071425665001414658.json, 视频生成/图生视频/2071760024606695425.json, 视频生成/图生视频/2072123158307627010.json, 视频生成/图生视频/2073926901219028994.json, 视频生成/图生视频/2073953751639085058.json, 视频生成/图生视频/2082393468198014977.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步+提示词润色_2085195442442293250.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步+提示词润色_2085256564277071874.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步+提示词润色_2086621318950244353.json, 视频生成/图生视频/LTX2.3图生视频KJ版 音画同步+提示词润色_2099790989216018433.json, 视频生成/图生视频/2071770392435449857.json, 视频生成/图生视频/2039267134697644033.json, 视频生成/图生视频/2037055393305726978.json]
+members: [图片生成/图生图/万相图生视频_1953415257853186050.json, 图片生成/图生图/首尾帧工作流_2076180255999619073.json, 视频生成/图生视频/1030图生视频_1985933619749367810.json, 视频生成/图生视频/1119图生视频_1991088603090759681.json, 视频生成/图生视频/53.tonnie-Smooth+FMLF 首尾多帧视频_2007957873501937666.json, 视频生成/图生视频/DaSiWaWan-V10-动漫首尾多帧视频生成_2043159910917087233.json, 视频生成/图生视频/DaSiWaWan2.2-动漫多帧视频生成_2007811222472761345.json, 视频生成/图生视频/Remix-V2.1-首尾多帧视频生成_2011657248396808193.json, 视频生成/图生视频/Remix-V3.0-图生视频_2033904022373015554.json, 视频生成/图生视频/Remix-V3.0-首尾多帧视频生成_2033890243190984706.json, 视频生成/图生视频/Smooth mix+painter图生视频_1988225177865641985.json, 视频生成/图生视频/SmoothMix-V2.0图生视频_2010681519400034305.json, 视频生成/图生视频/Wan2.2 Remix  图生视频_2062501192890146818.json, 视频生成/图生视频/Wan2.2 Remix  图生视频_2062505152636084225.json, 视频生成/图生视频/Wan2.2 Remix  图生视频超流畅最强版_2078792187969622017.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2046423423664005122.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2052639249635262466.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2055185537719390209.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2069681389548695554.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2083013835547561985.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2087055507843534849.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2094674376196186113.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2095686708934307842.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 人物一致性超流畅最强版_2076634956843016194.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频 人物一致性超流畅最强版_2088255665918791682.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2034450684560543745.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2041421102135644162.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2054097852212752385.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2054456057237385217.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2057260235248721921.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2058735259210051586.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2059088662616436737.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2064251853126324226.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2064999856158105602.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2067167549577584641.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2069657781807964161.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2070314566600445953.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2070411296209727489.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2072930754174214145.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2075481043087486977.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2077556255329181697.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2078046326260064257.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2078999865991983106.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2079460527977353218.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2079482868971163650.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2079889145756999681.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2080981730063896577.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频-最新版_2087809472625471490.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2059446250935775234.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2059541011688419329.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2062172152580890626.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2062179137246289921.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2062539757527322625.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2062714838857641986.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2064270207278993409.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2066377173816139777.json, 视频生成/图生视频/Wan2.2 Remix V3 图生视频_2069441657619177473.json, 视频生成/图生视频/Wan2.2 V3 丝滑图生视频_2085749492984401922.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频+akcope_2062721995304955905.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频-最新版_2065249355430449154.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频-最新版_2079815036926783490.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频_极度丝滑没有之一+akcope (1)_2069948669922725889.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频_极度丝滑没有之一_2067127953313583105.json, 视频生成/图生视频/Wan2.2+Remix+V3+图生视频超流畅最强版 (1)_2079386376218435585.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2101853750293000193.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2102664220360929281.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2102964268558798849.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2110571382307385346.json, 视频生成/图生视频/Wan2.2_Remix_V3_图生视频超流畅最强版_2111012816948912129.json, 视频生成/图生视频/万能模板-图生视频-Wan2.2 Remix V3_2066695652163284993.json, 视频生成/图生视频/优化版 Wan2.2 Remix V3 图生视频_2087918295860203522.json, 视频生成/图生视频/图生视频-Wan2.2 Remix V3_2062010063329521666.json, 视频生成/图生视频/图生视频-Wan2.2 Remix V3_2072567519474438146.json, 视频生成/图生视频/图生视频-Wan2.2 Remix V3_2075050765437198338.json, 视频生成/图生视频/图生视频-_极度丝滑Wan2.2 Remix V3_2066688919793655810.json, 视频生成/图生视频/图生视频-_极度丝滑Wan2.2 Remix V3_2072513717627088897.json, 视频生成/图生视频/图生视频Wan2.2 Remix V3_2072515754112667650.json, 视频生成/图生视频/图生视频Wan2.2 Remix V3_2073603689817919489.json, 视频生成/图生视频/图生视频_2062050188516220930.json, 视频生成/图生视频/图生视频_2068616634474000385.json, 视频生成/图生视频/图生视频_2108414096944222209.json, 视频生成/图生视频/图生视频超流畅最强版 Wan2.2+Remix+V3_2075461259432124418.json, 视频生成/图生视频/图生视频超流畅最强版Wan2.2+Remix+V3+_2083825723554492418.json, 视频生成/图生视频/图生视频，无缝流畅_2075490820677001218.json, 视频生成/图生视频/定制风景生视频_2076940992846065665.json, 视频生成/文生视频/定制风景文生视频风景视频快速生成_2077718229480468482.json, 视频生成/文生视频/定制风景文生视频风景视频快速生成_2077733281923162113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 58 个 workflow 归纳得出（视频生成/图生视频/2042418624685674498.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092571026797453313.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092584125730476033.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099066175509585921.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099072254075301890.json…）
+> 由 `engine/knowledge_consolidation` 从 87 个 workflow 归纳得出（图片生成/图生图/万相图生视频_1953415257853186050.json、图片生成/图生图/首尾帧工作流_2076180255999619073.json、视频生成/图生视频/1030图生视频_1985933619749367810.json、视频生成/图生视频/1119图生视频_1991088603090759681.json、视频生成/图生视频/53.tonnie-Smooth+FMLF 首尾多帧视频_2007957873501937666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：58
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：87
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 58 个 workflow 都包含：
-- `BasicScheduler`
+全部 87 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `Int`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `SamplerCustom`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL_Advanced` —— 57/58 个有
-- `ModelSamplingSD3` —— 57/58 个有
-- `ShowText|pysssss` —— 57/58 个有
-- `StringFunction|pysssss` —— 57/58 个有
-- `UNETLoader` —— 57/58 个有
-- `JjkText` —— 53/58 个有
-- `DF_Int_to_Float` —— 49/58 个有
-- `SimpleMath+` —— 49/58 个有
-- `PathchSageAttentionKJ` —— 48/58 个有
-- `PrimitiveInt` —— 48/58 个有
-- `ImageResizeKJv2` —— 44/58 个有
-- `LayerUtility: BooleanOperatorV2` —— 44/58 个有
-- `LayerUtility: If ` —— 44/58 个有
-- `LayerUtility: NumberCalculatorV2` —— 44/58 个有
-- `GetNode` —— 34/58 个有
-- `SetNode` —— 34/58 个有
-- `easy positive` —— 34/58 个有
-- `CR Text` —— 14/58 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/58 个有
-- `MathExpression|pysssss` —— 9/58 个有
-- `LoraLoader|pysssss` —— 3/58 个有
-- `PrimitiveBoolean` —— 3/58 个有
-- `SaveImage` —— 3/58 个有
-- `TT_img_enc_v2` —— 3/58 个有
-- `ZML_SwitchOutput` —— 3/58 个有
-- `easy cleanGpuUsed` —— 3/58 个有
-- `text-util-prompt-join` —— 2/58 个有
-- `PreviewAny` —— 1/58 个有
-- `RHHiddenNodes` —— 1/58 个有
-- `Text` —— 1/58 个有
-- `TextGenerateLTX2Prompt` —— 1/58 个有
+- `INTConstant` —— 86/87 个有
+- `SimpleMath+` —— 85/87 个有
+- `LoadImage` —— 84/87 个有
+- `ModelPatchTorchSettings` —— 84/87 个有
+- `LoraLoaderModelOnly` —— 83/87 个有
+- `WanImageToVideo` —— 80/87 个有
+- `CR Text` —— 79/87 个有
+- `CLIPVisionEncode` —— 78/87 个有
+- `CLIPVisionLoader` —— 78/87 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 77/87 个有
+- `easy cleanGpuUsed` —— 76/87 个有
+- `ImageScaleBy` —— 74/87 个有
+- `RIFE VFI` —— 74/87 个有
+- `Text Concatenate` —— 70/87 个有
+- `Wan22PromptSelector` —— 70/87 个有
+- `ImageResizeKJv2` —— 9/87 个有
+- `WanFirstMiddleLastFrameToVideo` —— 6/87 个有
+- `Int` —— 4/87 个有
+- `ConditioningKrea2Rebalance` —— 3/87 个有
+- `ConditioningZeroOut` —— 3/87 个有
+- `EmptyLatentImage` —— 3/87 个有
+- `TTResolutionSelector` —— 3/87 个有
+- `YC Color Match` —— 3/87 个有
+- `easy promptLine` —— 3/87 个有
+- `ComfyMathExpression` —— 1/87 个有
+- `DF_Int_to_Float` —— 1/87 个有
+- `EmptyImage` —— 1/87 个有
+- `ImpactInt` —— 1/87 个有
+- `ImpactSwitch` —— 1/87 个有
+- `PainterI2V` —— 1/87 个有
+- `PreviewImage` —— 1/87 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 305 | 97 - 305 | 58 | 72% |
-| 高度 | 24 | 24 - 25 | 58 | 99% |
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 87 | 99% |
+| Prompt 约束强度(CFG) | 6 | 4 - 35 | 87 | 50% |
+| 采样算法 | 1 | 1 - 7.5 | 87 | 36% |
+| 调度器 | euler | - | 87 | 100% |
+| 重绘幅度 | simple | - | 87 | 89% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 3 | 100% |
 
 ## 常见问题
 
@@ -95,7 +84,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 305，观测区间 97 - 305，58 个样本
-- 高度 中位数 24，观测区间 24 - 25，58 个样本，取值集中（一致性 99%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，87 个样本，一致性 99%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 35，87 个样本
+- 采样算法 中位数 1，观测区间 1 - 7.5，87 个样本，取值分散，一致性仅 36%
+- 调度器 最常用 euler，87 个样本，一致性 100%
+- 重绘幅度 最常用 simple，87 个样本，一致性 89%
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，3 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 35，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_817
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.875
-common_nodes: [AudioCrop, CR Prompt Text, LoadAudio, SaveAudioAdvanced, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, 孤海注释]
+frequency: 4
+level: moderate
+coverage: 0.85975
+common_nodes: [CR Text, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json, 音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json]
+members: [音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json, 音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json, 音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json, 音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_817
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json、音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json、音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json、音频生成/音频生成/音频-单人文本克隆配音-VoxCPM2 TTS_2043607185506181122.json、音频生成/音频生成/音频-声音设计配音-VoxCPM2 TTS_2043609536015110145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudioAdvanced`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_SamplingConfig`
-- `孤海注释`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 3/4 个有
+- `SaveAudioMP3` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
+- `easy seed` —— 2/4 个有
+- `easy boolean` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

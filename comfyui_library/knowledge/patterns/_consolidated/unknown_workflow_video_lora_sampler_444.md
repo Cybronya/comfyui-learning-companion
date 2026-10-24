@@ -3,66 +3,63 @@ name: unknown_workflow_video_lora_sampler_444
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.5796
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8802
+common_nodes: [CLIPVisionLoader, ImageResize+, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Captioner, RH_Translator, TextCombinerTwo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935629484227743745.json, 视频生成/图生视频/1935594856536264705.json, 视频生成/图生视频/1935606766069809154.json, 视频生成/图生视频/1945320019179839489.json, 视频生成/图生视频/1935270745905745921.json]
+members: [视频生成/图生视频/批次极速图生视频_1946537681393184769.json, 视频生成/图生视频/批次极速图生视频_2039519958744436737.json, 视频生成/图生视频/极速图生视频_1943565491653013505.json, 视频生成/图生视频/漫剧视频生成，图生视频，3-5分钟成片，文字控制动作剧情走向_2023381607255642114.json, 视频生成/文生视频/图生视频（极速版）_1952679298441408514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_444
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1935629484227743745.json、视频生成/图生视频/1935594856536264705.json、视频生成/图生视频/1935606766069809154.json、视频生成/图生视频/1945320019179839489.json、视频生成/图生视频/1935270745905745921.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/批次极速图生视频_1946537681393184769.json、视频生成/图生视频/批次极速图生视频_2039519958744436737.json、视频生成/图生视频/极速图生视频_1943565491653013505.json、视频生成/图生视频/漫剧视频生成，图生视频，3-5分钟成片，文字控制动作剧情走向_2023381607255642114.json、视频生成/文生视频/图生视频（极速版）_1952679298441408514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
+- `ImageResize+`
+- `JWInteger`
+- `JjkText`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `MathExpression|pysssss`
+- `RH_Captioner`
+- `RH_Translator`
+- `TextCombinerTwo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 4/5 个有
-- `ImageConcatFromBatch` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `RMBG` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `EmptyImage` —— 3/5 个有
-- `Label (rgthree)` —— 3/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `Primitive integer [Crystools]` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `Video_Upscale_With_Model` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoSLG` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `ImpactSwitch` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `Bjornulf_ShowInt` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `RHBatchImages:` —— 2/5 个有
+- `RHExtractImage` —— 2/5 个有
+- `RHUploadZip` —— 2/5 个有
+- `easy forLoopEnd` —— 2/5 个有
+- `easy forLoopStart` —— 2/5 个有
+- `easy imageCount` —— 2/5 个有
 
 ## 典型参数
 

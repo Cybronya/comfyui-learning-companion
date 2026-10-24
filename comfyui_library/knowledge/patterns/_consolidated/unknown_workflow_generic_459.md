@@ -1,43 +1,41 @@
 ---
 name: unknown_workflow_generic_459
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.8805
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.830833
+common_nodes: [CR Prompt Text, LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json, 音频生成/音频生成/Qwen3-TTS+音色设计+音色克隆+自定义情绪_2044002856012881922.json, 音频生成/音频生成/Qwen3-TTS全家桶_ 语音设计，克隆与生成！_2014485662963081217.json, 音频生成/音频生成/qwen3tts声音克隆语音克隆声音_2015611402869809154.json]
+members: [视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json, 视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json, 视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json, 视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0(已支持原生1080p！可真人，审核宽松！_2048398173965651969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_459
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json、音频生成/音频生成/Qwen3-TTS+音色设计+音色克隆+自定义情绪_2044002856012881922.json、音频生成/音频生成/Qwen3-TTS全家桶_ 语音设计，克隆与生成！_2014485662963081217.json、音频生成/音频生成/qwen3tts声音克隆语音克隆声音_2015611402869809154.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json、视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json、视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json、视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json、视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Apply Whisper`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3TTSVoiceDesign` —— 3/4 个有
-- `Text` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `Qwen3TTSCustomVoice` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `ShowAnything|Mie` —— 4/6 个有
+- `PreviewAny` —— 1/6 个有
+- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 1/6 个有
+- `忽略多组孤海` —— 1/6 个有
 
 ## 典型参数
 

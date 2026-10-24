@@ -1,44 +1,33 @@
 ---
 name: unknown_workflow_generic_100
 type: Unknown Workflow
-frequency: 9
+frequency: 15
 level: moderate
-coverage: 0.872444
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 1
+common_nodes: [RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037449795937243137.json, 视频生成/图生视频/2037446558546927617.json, 视频生成/图生视频/2037748338019278849.json, 视频生成/图生视频/2038532869190062082.json, 视频生成/图生视频/2038925657266196481.json, 视频生成/图生视频/2059211762397966338.json, 视频生成/图生视频/2038096687511638017.json, 视频生成/图生视频/2038078503165366274.json, 视频生成/图生视频/2037758920298602497.json]
+members: [图片生成/文生图/最强视频模型2.0-文生视频模式_2038095061874909185.json, 视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json, 视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json, 视频生成/文生视频/SK_txt2vid_2038875282374922242.json, 视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json, 视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json, 视频生成/文生视频/Seedance2.0_文生视频_2037138846156066817.json, 视频生成/文生视频/Seedance2.0文生视频_2037013695364079618.json, 视频生成/文生视频/Seedance2.0文生视频_2037442624088449026.json, 视频生成/文生视频/Seedance2.0文生视频_2047295644854915074.json, 视频生成/文生视频/Seedance2.0文生视频测试_2089267259809296385.json, 视频生成/文生视频/Seedance2.0文生视频（RH版）_2054421287983951873.json, 视频生成/文生视频/Seedance2.0文生视频｜一句话生成大片 描述越细效果越惊艳_2105496532777787394.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051209250336198657.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051248121287593985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_100
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2037449795937243137.json、视频生成/图生视频/2037446558546927617.json、视频生成/图生视频/2037748338019278849.json、视频生成/图生视频/2038532869190062082.json、视频生成/图生视频/2038925657266196481.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/最强视频模型2.0-文生视频模式_2038095061874909185.json、视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json、视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json、视频生成/文生视频/SK_txt2vid_2038875282374922242.json、视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LoadImage`
-- `PreviewAny`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
+全部 15 个 workflow 都包含：
+- `RH_RhartVideoSparkvideo20TextToVideo`
 - `SaveVideo`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/9 个有
-- `ImageResize+` —— 2/9 个有
-- `Int` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
+- `MuyeTextEditOutput` —— 1/15 个有
 
 ## 典型参数
 

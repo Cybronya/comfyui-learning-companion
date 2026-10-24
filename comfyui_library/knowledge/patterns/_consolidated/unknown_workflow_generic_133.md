@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_133
 type: Unknown Workflow
-frequency: 8
+frequency: 12
 level: moderate
-coverage: 0.97225
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.929
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/动作迁移·角色替换-AI视频换人_2093885220666822658.json, 数字人/数字人/最新wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换_2092069398860357634.json, 视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json, 视频生成/图生视频/Wan3.0 参考生视频_2091774461044412418.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-单图_首尾帧生视频_2093004641251454977.json, 视频生成/图生视频/Wan3多模态_全参工作流_2092187009434607617.json, 视频生成/图生视频/阿里最强视频模型wan3.0多模态生视频低至0.21元_秒_2092413729613893633.json]
+members: [图片生成/图生图/RH DLSS5 Enhance（降噪 _ 超分增强）_2100143040097771521.json, 图片生成/图生图/RH 全能图片PRO-图生图-官方稳定版_2098651625656242178.json, 图片生成/图生图/全能图片PRO-图生图-官方稳定版 API专用_2081649646010716161.json, 图片生成/图生图/全能图片PRO-图生图-官方稳定版_2085733250672189442.json, 图片生成/图生图/全能图生图 PRO v2.0｜高精准结构保持与风格重绘_2104397143166509058.json, 图片生成/图生图/全能图生图 PRO v2.0｜高精准结构保持与风格重绘_2104557930413649921.json, 图片生成/图生图/支持真人女装服装-图生图-官方稳定版_2089626787599962114.json, 图片生成/图生图/电商利器-万能服饰搭配PRO_2072693700085510146.json, 图片生成/文生图/NPro_OfficialEdit_v1.0_2033838595194232833.json, 图片生成/文生图/全能图片PRO-图生图-官方稳定版 八毛一张_2097878682235916290.json, 图片生成/文生图/全能图片PRO-图生图-官方稳定版_2070046030313381890.json, 视频生成/图生视频/全能图片PRO-图生图-懒人版_2066560880845873154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_133
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/动作迁移·角色替换-AI视频换人_2093885220666822658.json、数字人/数字人/最新wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换_2092069398860357634.json、视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json、视频生成/图生视频/Wan3.0 参考生视频_2091774461044412418.json、视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/RH DLSS5 Enhance（降噪 _ 超分增强）_2100143040097771521.json、图片生成/图生图/RH 全能图片PRO-图生图-官方稳定版_2098651625656242178.json、图片生成/图生图/全能图片PRO-图生图-官方稳定版 API专用_2081649646010716161.json、图片生成/图生图/全能图片PRO-图生图-官方稳定版_2085733250672189442.json、图片生成/图生图/全能图生图 PRO v2.0｜高精准结构保持与风格重绘_2104397143166509058.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 7/8 个有
-- `LoadAudio` —— 6/8 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 6/8 个有
-- `Text` —— 4/8 个有
-- `RHBerniniFullReferenceVideoToVideo` —— 1/8 个有
-- `RH_AlibabaWan30ImageToVideo` —— 1/8 个有
-- `easy saveText` —— 1/8 个有
+- `RH_RhartImageNProOfficialEdit` —— 11/12 个有
+- `孤海注释` —— 2/12 个有
+- `RH_DLSS5Enhance` —— 1/12 个有
 
 ## 典型参数
 

@@ -3,35 +3,41 @@ name: unknown_workflow_video_48
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.624
-common_nodes: [FlashVSRNode, JWInteger, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.716667
+common_nodes: [Fast Groups Bypasser (rgthree), Gemini_Flash_200_Exp, ImageConcanate, LoadAudio, LoadImage, PreviewImage, ShowText|pysssss, VHS_LoadVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981981262346887169.json, 视频生成/图生视频/2022218420804128770.json, 视频生成/文生视频/FlashVSR视频高清放大_2098223279231291394.json]
+members: [图片生成/图生图/🦖Gemini2.0 超级工具箱_1902969584490549250.json, 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json, 视频生成/图生视频/谷歌Gemini2.0用嘴改图音视频分析_1902853098602409986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_48
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1981981262346887169.json、视频生成/图生视频/2022218420804128770.json、视频生成/文生视频/FlashVSR视频高清放大_2098223279231291394.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/🦖Gemini2.0 超级工具箱_1902969584490549250.json、图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json、视频生成/图生视频/谷歌Gemini2.0用嘴改图音视频分析_1902853098602409986.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `FlashVSRNode`
-- `JWInteger`
+- `Fast Groups Bypasser (rgthree)`
+- `Gemini_Flash_200_Exp`
+- `ImageConcanate`
+- `LoadAudio`
+- `LoadImage`
+- `PreviewImage`
+- `ShowText|pysssss`
 - `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
+- `Primitive string [Crystools]` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `MultipleImagesInput` —— 1/3 个有
+- `Note _O` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
 
 ## 典型参数
 

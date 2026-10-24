@@ -1,73 +1,77 @@
 ---
 name: unknown_workflow_lora_sampler_clip_10
 type: Unknown Workflow
-frequency: 16
-level: weak
-coverage: 0.884625
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Prompt Text, Label (rgthree)]
-members: [图片生成/文生图/1957313561636827138.json, 图片生成/文生图/1962804112075173889.json, 图片生成/文生图/1963167950662512641.json, 图片生成/文生图/1965257014656028674.json, 图片生成/文生图/1966317820562878466.json, 图片生成/文生图/1966728561858162689.json, 图片生成/文生图/1968571302049140738.json, 图片生成/文生图/1971395682378661889.json, 图片生成/文生图/1977995730776379394.json, 图片生成/文生图/1980164055954526209.json, 图片生成/文生图/1981265802265616385.json, 图片生成/文生图/Flow-DPO LoRA工作流：AI人像终于不像塑料了！这个LoRA让光照秒变真实✨_2028104630768504833.json, 图片生成/文生图/Qwen-Image-2512文生图大模型：人物更真实、毛发更自然、文字排版更准确！_2006620335499644929.json, 图片生成/文生图/Qwen-rebalance文生图_1999689524483682305.json, 图片生成/文生图/Z 手持质感 文生图_2021145496873607169.json, 图片生成/文生图/Z-Image-Turbo LoRA 出图+放大_2018944118063370242.json]
+frequency: 30
+level: moderate
+coverage: 0.8261
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, DF_Text_Box, Flux2Scheduler, GH_CropRestore, GH_MaskCropV2, GetImageSize+, GuHaiMaskDetect, KSamplerSelect, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, Mask Invert, RandomNoise, ReferenceLatent, SAM3Segment, SamplerCustomAdvanced, SaveImage, SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, 图像缩放V2_孤海, 孤海-遮罩混合运算, 孤海遮罩分析, 布尔孤海, 数学运算_孤海]
+problems: []
+missing: []
+members: [图片生成/图生图/AI全家福合成工作流｜Klein 9B 双人照片一键影棚合影_2095707972948291586.json, 图片生成/图生图/AI换发型工作流｜Klein 9B 保留五官迁移发型_2095469329272893442.json, 图片生成/图生图/klein-换发型V2_2074386683885346818.json, 图片生成/图生图/klein-换发型V2_2084094645323255810.json, 图片生成/图生图/klein-换发型V2_2087438159603916802.json, 图片生成/图生图/klein-换发型V2_2098976410751823874.json, 图片生成/图生图/klein-换发型V2_2099651775971291138.json, 图片生成/图生图/klein-换发型V2_2099789565820231681.json, 图片生成/图生图/klein-换发型V2_2100045085453934593.json, 图片生成/图生图/klein-换发型_2085914332671602690.json, 图片生成/图生图/klein-换发型_2085929499916591105.json, 图片生成/图生图/klein-换发型换头工作流_2083516868182241281.json, 图片生成/图生图/klein-换发型换头快速出图工作流_2083519896297754626.json, 图片生成/图生图/klein-换发型换头快速出图工作流_2100537441814929409.json, 图片生成/图生图/klein-换发型换头快速出图工作流_2100925704874577922.json, 图片生成/图生图/人物一键换发型_2092299907544739842.json, 图片生成/图生图/头发替换，换发型V2-klein_2096556865206439938.json, 图片生成/图生图/头发替换，换发型V2-klein_2098975987039031298.json, 图片生成/图生图/换发型V2_2103086505047711746.json, 图片生成/图生图/换头发_2086334781276647426.json, 图片生成/图生图/模特人物换发型 换脸 超高相似度_2083710086735810561.json, 图片生成/图生图/模特人物换发型换脸_超高相似度AI写真编辑工作流_2084469036947169282.json, 图片生成/图生图/模特人物换发型换脸_超高相似度AI写真编辑工作流_2084480468417863681.json, 图片生成/图生图/美女换发型_2087002414242160641.json, 图片生成/图生图/美女换发型_2087013365725089794.json, 图片生成/图生图/老孙AI-换发型V2_2085539091504001026.json, 图片生成/图生图/超好用🔥一键换发型_2085262080084631553.json, 图片生成/文生图/换发型_2088083592109977601.json, 图片生成/文生图/换发型_2088155136811163649.json, 数字人/数字人/Klein-换发型V2-优化版_2094598027389530113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_10
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/1957313561636827138.json、图片生成/文生图/1962804112075173889.json、图片生成/文生图/1963167950662512641.json、图片生成/文生图/1965257014656028674.json、图片生成/文生图/1966317820562878466.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/图生图/AI全家福合成工作流｜Klein 9B 双人照片一键影棚合影_2095707972948291586.json、图片生成/图生图/AI换发型工作流｜Klein 9B 保留五官迁移发型_2095469329272893442.json、图片生成/图生图/klein-换发型V2_2074386683885346818.json、图片生成/图生图/klein-换发型V2_2084094645323255810.json、图片生成/图生图/klein-换发型V2_2087438159603916802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：30
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
+全部 30 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `DF_Text_Box`
+- `Flux2Scheduler`
+- `GH_CropRestore`
+- `GH_MaskCropV2`
+- `GetImageSize+`
+- `GuHaiMaskDetect`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `Mask Invert`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SAM3Segment`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy ifElse`
+- `图像缩放V2_孤海`
+- `孤海-遮罩混合运算`
+- `孤海遮罩分析`
+- `布尔孤海`
+- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 14/16 个有
-- `ConditioningZeroOut` —— 4/16 个有
-- `Label (rgthree)` —— 3/16 个有
-- `SeedVR2` —— 3/16 个有
-- `SeedVR2BlockSwap` —— 3/16 个有
-- `CR Prompt Text` —— 2/16 个有
-- `Image Comparer (rgthree)` —— 1/16 个有
-- `ImpactInt` —— 1/16 个有
-- `SeedVR2ExtraArgs` —— 1/16 个有
-- `TextConcatenator` —— 1/16 个有
-- `easy cleanGpuUsed` —— 1/16 个有
+- `Image Comparer (rgthree)` —— 29/30 个有
+- `孤海注释` —— 27/30 个有
+- `PreviewImage` —— 4/30 个有
+- `EmptyImage` —— 3/30 个有
+- `easy imageConcat` —— 1/30 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 50 | 16 | 10% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 16 | 40% |
-| 采样算法 | euler | - | 16 | 81% |
-| 调度器 | simple | - | 16 | 62% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 50，16 个样本，取值分散，一致性仅 10%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，16 个样本，取值分散，一致性仅 40%
-- 采样算法 最常用 euler，16 个样本，一致性 81%
-- 调度器 最常用 simple，16 个样本，一致性 62%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 高发问题（10/16 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Prompt Text、Label (rgthree)
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

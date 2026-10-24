@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_sampler_clip_unet_186
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.878333
-common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptySD3LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.883
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Anima-702-护士长_2072661208766959618.json, 图片生成/文生图/Hyperrealistic_ Z-image + Flux klein_2017132941884788737.json, 图片生成/文生图/Z-image双采+klein放大_2016526059369406465.json]
+members: [图片生成/图生图/电商万物迁移 Flux klein_2021109944589754370.json, 图片生成/图生图/电商产品场景图生成_2069077696059105281.json, 图片生成/图生图/电商产品换材质 flux2 klein_2026838584275247105.json, 图片生成/图生图/电商移除图片指定位置内容_2026115966425374721.json, 图片生成/图生图/🦖Flux2-klein单图编辑_2013897331980111873.json, 图片生成/文生图/AI一键生成12张绝美新年写真集_2024044240682098690.json, 图片生成/文生图/图片生成和编辑_Flux-2-Klein_2012115517577891842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_186
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Anima-702-护士长_2072661208766959618.json、图片生成/文生图/Hyperrealistic_ Z-image + Flux klein_2017132941884788737.json、图片生成/文生图/Z-image双采+klein放大_2016526059369406465.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/电商万物迁移 Flux klein_2021109944589754370.json、图片生成/图生图/电商产品场景图生成_2069077696059105281.json、图片生成/图生图/电商产品换材质 flux2 klein_2026838584275247105.json、图片生成/图生图/电商移除图片指定位置内容_2026115966425374721.json、图片生成/图生图/🦖Flux2-klein单图编辑_2013897331980111873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
+- **样本数**：7
+- **可信度**：中等可信
 - **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `EmptySD3LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -42,34 +41,25 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `ImageSharpen` —— 2/3 个有
-- `KSamplerAdvanced` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `FLS_SamplerV4` —— 1/3 个有
-- `FluxGuidance` —— 1/3 个有
-- `FluxKontextImageScale` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
+- `EmptyFlux2LatentImage` —— 6/7 个有
+- `GetImageSize` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 4/7 个有
+- `JjkText` —— 4/7 个有
+- `Colored Image (mtb)` —— 2/7 个有
+- `easy int` —— 2/7 个有
+- `AILab_QwenVL` —— 1/7 个有
+- `GetNode` —— 1/7 个有
+- `HAIGC_LoadImagesFromZip` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `LayerUtility: CropByMask V3` —— 1/7 个有
+- `LayerUtility: RestoreCropBox` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `Qwen2.5` —— 1/7 个有
+- `SetNode` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 13.5 | - | 2 | 89% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,9 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 13.5，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

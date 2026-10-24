@@ -2,57 +2,80 @@
 name: unknown_workflow_video_sampler_clip_153
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.6305
-common_nodes: [Anything Everywhere, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.763
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningCombine, DWPreprocessor, EmptyImage, ImageBatch, ImageBatchMultiple+, ImageConcanate, ImageConcatFromBatch, ImageResize+, ImageResizeKJv2, KSampler, LoadImage, ModelSamplingSD3, PreviewImage, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanPhantomSubjectToVideo, WanVaceToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1908039126187450370.json, 视频生成/图生视频/1907390680300154882.json, 视频生成/图生视频/1910864267745161217.json, 视频生成/文生视频/1907817176102019074.json]
+members: [视频生成/图生视频/Wan+VACE+Phantom_多人视频人物替换-视频提示词反推_1964540735016062978.json, 视频生成/图生视频/万相 VACE+Phantom融合模  多人运动迁移控制_1955104991481511937.json, 视频生成/图生视频/万相 多人运动迁移控制 VACE+Phantom融合模ComfyUI工作流_2051908128723218434.json, 视频生成/图生视频/完美人物一致性替换 VACE+Phantom_1986477403138650114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_153
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1908039126187450370.json、视频生成/图生视频/1907390680300154882.json、视频生成/图生视频/1910864267745161217.json、视频生成/文生视频/1907817176102019074.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan+VACE+Phantom_多人视频人物替换-视频提示词反推_1964540735016062978.json、视频生成/图生视频/万相 VACE+Phantom融合模  多人运动迁移控制_1955104991481511937.json、视频生成/图生视频/万相 多人运动迁移控制 VACE+Phantom融合模ComfyUI工作流_2051908128723218434.json、视频生成/图生视频/完美人物一致性替换 VACE+Phantom_1986477403138650114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicScheduler`
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningCombine`
+- `DWPreprocessor`
+- `EmptyImage`
+- `ImageBatch`
+- `ImageBatchMultiple+`
+- `ImageConcanate`
+- `ImageConcatFromBatch`
+- `ImageResize+`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanPhantomSubjectToVideo`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `workflow>3` —— 3/4 个有
-- `workflow>4` —— 3/4 个有
-- `workflow>5` —— 3/4 个有
-- `workflow>6` —— 3/4 个有
-- `CR Upscale Image` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `RIFE VFI` —— 2/4 个有
-- `EmptyHunyuanLatentVideo` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `workflow>1` —— 1/4 个有
-- `workflow>2` —— 1/4 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 2/4 个有
+- `CR Text Replace` —— 2/4 个有
+- `TextBox` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `ImpactSwitch` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `Text Concatenate` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 12 | 12 - 12 | 4 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -60,4 +83,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 12，观测区间 12 - 12，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

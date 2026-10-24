@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_generic_213
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.7825
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.816111
+common_nodes: [LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan3.0多参生视频_2097673792867880961.json, 视频生成/图生视频/wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2091911826543042561.json, 视频生成/图生视频/wan3.0-动作迁移_2096616222979878914.json, 视频生成/图生视频/wan3.0多参考图生视频_2091793954902732801.json, 视频生成/图生视频/参考生视频工作流｜万相 2.7 多图多视频参考_2099689996813955073.json, 视频生成/图生视频/参考生视频工作流｜万相 3.0 多图多视频参考_2100471493141549057.json]
+members: [图片生成/图生图/-全能图片V1私人网红手办定制_1961666668860784642.json, 图片生成/图生图/-全能图片V1：单图编辑巨匠！图像编辑_指令修改_图生图_姿势修改_1960490867863842818.json, 图片生成/图生图/-全能图片V1：网红手办制作器！图生图创意设计_新奇玩法_角色一致性_1960707943408832514.json, 图片生成/图生图/nano全能图片V12大香蕉：两图编辑，指令驱动，自动优化提示词_2007643666336190466.json, 图片生成/图生图/全能图像pro：图生图，疯狂的重塑你的视觉世界！_1990939034841194498.json, 图片生成/图生图/全能图片V12单图编辑_1991534959257198594.json, 图片生成/图生图/全能图片V1谷歌香蕉双图片编辑_1960619366960234497.json, 图片生成/文生图/google文字分镜+直连 全能图片V1分镜（12格15秒）_1981922967787585537.json, 图片生成/文生图/谷歌-全能图片V1香蕉模型单图多图编辑全能工作流_1961650062206156802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_213
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan3.0多参生视频_2097673792867880961.json、视频生成/图生视频/wan 3.0 动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2091911826543042561.json、视频生成/图生视频/wan3.0-动作迁移_2096616222979878914.json、视频生成/图生视频/wan3.0多参考图生视频_2091793954902732801.json、视频生成/图生视频/参考生视频工作流｜万相 2.7 多图多视频参考_2099689996813955073.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/-全能图片V1私人网红手办定制_1961666668860784642.json、图片生成/图生图/-全能图片V1：单图编辑巨匠！图像编辑_指令修改_图生图_姿势修改_1960490867863842818.json、图片生成/图生图/-全能图片V1：网红手办制作器！图生图创意设计_新奇玩法_角色一致性_1960707943408832514.json、图片生成/图生图/nano全能图片V12大香蕉：两图编辑，指令驱动，自动优化提示词_2007643666336190466.json、图片生成/图生图/全能图像pro：图生图，疯狂的重塑你的视觉世界！_1990939034841194498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30ReferenceToVideo` —— 5/6 个有
-- `LoadVideo` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 1/6 个有
+- `ImageScale` —— 7/9 个有
+- `RH_Nano_Banana_Image2Image` —— 6/9 个有
+- `PreviewImage` —— 3/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/9 个有
+- `ImageConcanate` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
 
 ## 典型参数
 

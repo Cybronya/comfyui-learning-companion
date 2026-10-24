@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_620
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.938
-common_nodes: [Fast Groups Bypasser (rgthree), IndexTTS2Run, IndexTTS2_Emotion, LoadAudio, SaveAudio, SeedVCRun, TextBox1]
+coverage: 0.80175
+common_nodes: [LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2006904223438479362.json, 音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2043878575400558594.json, 音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制_2004082424306909186.json]
+members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json, comfyui-workflow-templates-json/api_seedance2_5_video_editing.json, comfyui-workflow-templates-json/api_seedance2_5_video_extend.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_620
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2006904223438479362.json、音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2043878575400558594.json、音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制_2004082424306909186.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json、comfyui-workflow-templates-json/api_seedance2_5_video_editing.json、comfyui-workflow-templates-json/api_seedance2_5_video_extend.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `IndexTTS2_Emotion`
-- `LoadAudio`
-- `SaveAudio`
-- `SeedVCRun`
-- `TextBox1`
+全部 4 个 workflow 都包含：
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 1/3 个有
+- `Video Slice` —— 3/4 个有
+- `ByteDance2ReferenceNodeV2` —— 2/4 个有
+- `GeminiVideoOmniV2` —— 2/4 个有
+- `d9aa59a4-3784-4796-9f1b-5b467fb41fa1` —— 1/4 个有
 
 ## 典型参数
 

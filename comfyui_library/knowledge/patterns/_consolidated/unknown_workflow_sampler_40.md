@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_sampler_40
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.95
-common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+frequency: 4
+level: moderate
+coverage: 0.734
+common_nodes: [ImageCompositeMasked, ImageRemoveBackground+, ImageResizeKJv2, LBMSampler, LoadImage, LoadLBMModel, PreviewImage, SaveImage, TransparentBGSession+]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json, 音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json]
+members: [图片生成/图生图/lbm_relight电商或写真打光_1923791238191828994.json, 图片生成/图生图/【AI由北】融合打光 lbm_relight_1924464375623839745.json, 图片生成/图生图/🤖一键给人物换背景+LBM打光_1922512736742248449.json, 视频生成/图生视频/LBM-换背景的重打光优化_1922624982000746497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_40
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json、音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/lbm_relight电商或写真打光_1923791238191828994.json、图片生成/图生图/【AI由北】融合打光 lbm_relight_1924464375623839745.json、图片生成/图生图/🤖一键给人物换背景+LBM打光_1922512736742248449.json、视频生成/图生视频/LBM-换背景的重打光优化_1922624982000746497.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `LBMSampler`
+- `LoadImage`
+- `LoadLBMModel`
+- `PreviewImage`
+- `SaveImage`
+- `TransparentBGSession+`
 
 **可变部分**（部分 workflow 才有）：
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `ShowAnything|Mie` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 
@@ -46,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

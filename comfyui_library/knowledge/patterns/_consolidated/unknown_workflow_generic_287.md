@@ -1,41 +1,59 @@
 ---
 name: unknown_workflow_generic_287
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.7754
-common_nodes: [LoadImage, Qwen3_VQA, RH_Translator, SaveVideo, Text Multiline, easy anythingIndexSwitch]
+coverage: 0.4995
+common_nodes: [CM_IntUnaryOperation, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageLoader, ImageScaleToTotalPixels, MemoryCleaner, PreviewImage, Qwen3VL_Advanced, RH_LLMAPI_NODE, SaveImage, SetNode, SimpleMath+, StringFunction|pysssss, easy anythingIndexSwitch, easy anythingInversedSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1998768118094778370.json, 视频生成/图生视频/1998768343349911554.json, 视频生成/图生视频/1998761612855140353.json, 视频生成/图生视频/1999153411486609410.json, 视频生成/图生视频/1999312879121821697.json]
+members: [图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-全能图片G- Image 2.0_2085944675277557762.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片 pro_2006302920123355137.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2062216759503052802.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2066055875628167168.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 1.5_2008194109030277121.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 2.0_2062203582530801665.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 2.0_2066055876622217216.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片_2006195630225498113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_287
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1998768118094778370.json、视频生成/图生视频/1998768343349911554.json、视频生成/图生视频/1998761612855140353.json、视频生成/图生视频/1999153411486609410.json、视频生成/图生视频/1999312879121821697.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-全能图片G- Image 2.0_2085944675277557762.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片 pro_2006302920123355137.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2062216759503052802.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2066055875628167168.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 1.5_2008194109030277121.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `Qwen3_VQA`
-- `RH_Translator`
-- `SaveVideo`
-- `Text Multiline`
+全部 8 个 workflow 都包含：
+- `CM_IntUnaryOperation`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageBatchMulti`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `MemoryCleaner`
+- `PreviewImage`
+- `Qwen3VL_Advanced`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `SetNode`
+- `SimpleMath+`
+- `StringFunction|pysssss`
 - `easy anythingIndexSwitch`
+- `easy anythingInversedSwitch`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 4/5 个有
-- `RH_Grok_Video3` —— 2/5 个有
-- `RH_Veo3_Image2Video` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `RH_RhartVideoGImageToVideo` —— 1/5 个有
+- `PrimitiveString` —— 7/8 个有
+- `ImageConcanate` —— 5/8 个有
+- `RH_LLMAPI_Pro_Node` —— 3/8 个有
+- `RH_RhartImageG2ImageToImage` —— 3/8 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 2/8 个有
+- `RH_GPT_Image15` —— 1/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
+- `RH_Nano_Banana_Image2Image` —— 1/8 个有
 
 ## 典型参数
 

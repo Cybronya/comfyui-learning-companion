@@ -1,87 +1,108 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_2
 type: Unknown Workflow
-frequency: 36
-level: moderate
-coverage: 0.866111
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
+frequency: 43
+level: strong
+coverage: 0.659628
+common_nodes: [AILab_QwenVL_Advanced, CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, Image Stitch, ImageResizeKJv2, ImageScaleDownToSize, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: BooleanOperator, LayerUtility: If , LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy positive]
 problems: []
-missing: [RunningHub Deepcleaner, easy anythingIndexSwitch, easy cleanGpuUsed, 忽略多组孤海, CR Prompt Text]
-members: [数字人/数字人/（28秒）MiniMax H3双采参考生视频V1_2104395488899461122.json, 视频生成/图生视频/(10Eros Beta3)Minimax H3+加速+Lantent Upscaler参考生视频_2092293690407608321.json, 视频生成/图生视频/(10Eros Beta4)Minimax H3+加速+Lantent Upscaler参考生视频_2094320080652955649.json, 视频生成/图生视频/(10Eros Beta4混合)Minimax H3双采参考生视频_2094328552576610305.json, 视频生成/图生视频/(10Eros Hybird beta3高动态)MiniMax H3参考生视频V1_2093191846565601282.json, 视频生成/图生视频/(10Eros Hybird beta4)MiniMax H3参考生视频V1_2094319313758023682.json, 视频生成/图生视频/(10Eros Hybird beta4混合动态)MiniMax H3参考生视频V1_2094336180065230850.json, 视频生成/图生视频/(10eros v5版)MiniMax H3双采参考生视频_2098950255189512194.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2103209639994281986.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2104379461897637889.json, 视频生成/图生视频/(D+O)MiniMax H3高动态参考生视频V1_2093015390296305665.json, 视频生成/图生视频/(Dasiwa v2+singularity)MiniMax H3双采参考生视频_2099475508353392642.json, 视频生成/图生视频/(Dasiwa v2+singularity-实验版)MiniMax H3双采参考生视频_2098944538827120642.json, 视频生成/图生视频/(Dasiwa v2-极速板)MiniMax H3双采参考生视频_2098937347936182274.json, 视频生成/图生视频/(Dasiwa v3长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423400968318978.json, 视频生成/图生视频/(Hybird-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107064053121249282.json, 视频生成/图生视频/(Hybird全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107076455174856705.json, 视频生成/图生视频/(Hybird长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423021081812993.json, 视频生成/图生视频/(Remex0.8全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107078168841637889.json, 视频生成/图生视频/(Remix0.8-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107054072120565762.json, 视频生成/图生视频/(双桥)MiniMax H3双采生视频_2109246069212270593.json, 视频生成/图生视频/(四宫格图生视频-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104730210489946113.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104238128981700610.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104528106504675330.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104571196426768386.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2109822260604395522.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2110560337710895106.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104440079388340226.json, 视频生成/图生视频/(长视频优化版)H3_2106677452302016514.json, 视频生成/图生视频/MiniMax H3 长视频直出_双采 多参__2105338608524812290.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-视频复刻-高清直出_2109641176335863810.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-高清有直出_2106353568906301442.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-文生视频-长视频-高清有直出_2106198509325217793.json, 视频生成/图生视频/MiniMax H3多参双采参考长视频--Pov第一视角_2104777353225396225.json, 视频生成/图生视频/高清-HyperVae 2X-MiniMax H3 全能参考 ·（9图 + 3音频）_2110676618074218497.json, 视频生成/文生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-高清有直出_2106353568906301442.json]
+missing: []
+members: [视频生成/图生视频/08Z LTX2.3首尾帧变形_2038511549115011074.json, 视频生成/图生视频/LTX2.3 人物角色丝滑转场 首尾帧+转场优化版！Plus版！_2081282783539982338.json, 视频生成/图生视频/LTX2.3-首尾帧_2066426984464470018.json, 视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎_2069944025561522177.json, 视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎new_2072942377869860866.json, 视频生成/图生视频/LTX2.3首中尾三帧参考视频优化版_2045481334251986946.json, 视频生成/图生视频/LTX2.3首中尾三帧参考视频优化版_2045505520009744386.json, 视频生成/图生视频/LTX2.3首中尾三帧图生视频工作流_2042469093080571906.json, 视频生成/图生视频/LTX2.3首中尾三帧图生视频工作流_2045403711186407426.json, 视频生成/图生视频/LTX2.3首中尾三帧生成视频_2042892469901201410.json, 视频生成/图生视频/LTX2.3首中尾帧生成视频_2071232637397725185.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场! Plus版!_2041326474241773570.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场! Plus版!_2042051563090354178.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场Plus版工作流_2038467452480262145.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场Plus版工作流_2038577702764027906.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场Plus版工作流_2041376335397916674.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场_2086699476626006017.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场！优化版！B站艾橘溪_2038230398714519554.json, 视频生成/图生视频/LTX2.3首尾帧Plus版!_丝滑转场+反推提示词_2038474821650096129.json, 视频生成/图生视频/LTX2.3首尾帧_2039618764668407810.json, 视频生成/图生视频/LTX2.3首尾帧_2044662433935003650.json, 视频生成/图生视频/LTX2.3首尾帧_2059929448035733506.json, 视频生成/图生视频/LTX2.3首尾帧生成视频！_2068982005395714049.json, 视频生成/图生视频/LTX2.3首尾帧生成视频！_2069303960590176257.json, 视频生成/图生视频/LTX2.3首尾帧生成视频！_2069660228970442753.json, 视频生成/图生视频/LTX2.3首尾帧视频_丝滑转场! Plus版!_2044964717164236802.json, 视频生成/图生视频/LTX2.3首尾帧视频优化版_2045475305707540481.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频 (1)_2069977331783004161.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频 -纯真少女_2093228189911965697.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频 -美少女战士_2093174680067858433.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2017306880212738050.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2064883776349622273.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2065244596543770625.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2065358131965816834.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2066334174407122945.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2066861973899407362.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2067851835871948802.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2068834094393417729.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频！B站艾橘溪_2040629154688802817.json, 视频生成/图生视频/Ltx2.3首尾一致视频生成_2077628906508742658.json, 视频生成/图生视频/aidir-LTX2.3-首尾帧_2069589332670894081.json, 视频生成/图生视频/ltx2.3首中尾帧图生视频_2072296894507872257.json, 视频生成/图生视频/一键生成 --图生视频--LTX2.3首尾帧+丝滑转场! Plus版!_2049398756143009794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_2
 
-> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（数字人/数字人/（28秒）MiniMax H3双采参考生视频V1_2104395488899461122.json、视频生成/图生视频/(10Eros Beta3)Minimax H3+加速+Lantent Upscaler参考生视频_2092293690407608321.json、视频生成/图生视频/(10Eros Beta4)Minimax H3+加速+Lantent Upscaler参考生视频_2094320080652955649.json、视频生成/图生视频/(10Eros Beta4混合)Minimax H3双采参考生视频_2094328552576610305.json、视频生成/图生视频/(10Eros Hybird beta3高动态)MiniMax H3参考生视频V1_2093191846565601282.json…）
+> 由 `engine/knowledge_consolidation` 从 43 个 workflow 归纳得出（视频生成/图生视频/08Z LTX2.3首尾帧变形_2038511549115011074.json、视频生成/图生视频/LTX2.3 人物角色丝滑转场 首尾帧+转场优化版！Plus版！_2081282783539982338.json、视频生成/图生视频/LTX2.3-首尾帧_2066426984464470018.json、视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎_2069944025561522177.json、视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎new_2072942377869860866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：36
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：43
+- **可信度**：强结论
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 36 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
+全部 43 个 workflow 都包含：
+- `AILab_QwenVL_Advanced`
+- `CFGGuider`
+- `CLIPTextEncode`
 - `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `Image Stitch`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: BooleanOperator`
+- `LayerUtility: If `
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 29/36 个有
-- `Float` —— 27/36 个有
-- `easy anythingIndexSwitch` —— 27/36 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 25/36 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 25/36 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 24/36 个有
-- `RunningHub Deepcleaner` —— 24/36 个有
-- `easy cleanGpuUsed` —— 24/36 个有
-- `Astra` —— 19/36 个有
-- `CreateVideo` —— 19/36 个有
-- `SaveVideo` —— 19/36 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 7/36 个有
-- `VAEDecode` —— 7/36 个有
-- `ConcatTextOfUtils` —— 5/36 个有
-- `GetNode` —— 5/36 个有
-- `SetNode` —— 5/36 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/36 个有
-- `ImpactFloat` —— 4/36 个有
-- `Int` —— 4/36 个有
-- `SimpleMath+` —— 4/36 个有
-- `孤海注释` —— 4/36 个有
-- `MiniMaxH3ActivationChunkT8Advanced` —— 3/36 个有
-- `MiniMaxH3OutputTrimT8` —— 3/36 个有
-- `GetVideoComponents` —— 2/36 个有
-- `LoadVideo` —— 2/36 个有
-- `LoadAudio` —— 1/36 个有
-- `MiniMaxH3SemanticBridgeComposeT8` —— 1/36 个有
-- `SaveAudio` —— 1/36 个有
-- `Video Slice` —— 1/36 个有
-- `忽略多组孤海` —— 1/36 个有
+- `ResizeImageMaskNode` —— 20/43 个有
+- `SaveImage` —— 20/43 个有
+- `TT_img_enc` —— 19/43 个有
+- `ConcatTextOfUtils` —— 3/43 个有
+- `PreviewAny` —— 3/43 个有
+- `CR Prompt Text` —— 2/43 个有
+- `easy promptConcat` —— 2/43 个有
+- `easy saveText` —— 2/43 个有
+- `Any To Any` —— 1/43 个有
+- `CR Text` —— 1/43 个有
+- `CR Text Replace` —— 1/43 个有
+- `DuckHideNode` —— 1/43 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/43 个有
+- `ImageBatch` —— 1/43 个有
+- `ImpactSwitch` —— 1/43 个有
+- `IntToString` —— 1/43 个有
+- `PreviewImage` —— 1/43 个有
+- `PreviewTextNode` —— 1/43 个有
+- `Switch string [Crystools]` —— 1/43 个有
+- `TT_img_enc_v2` —— 1/43 个有
+- `Text Concatenate` —— 1/43 个有
+- `Text Multiline` —— 1/43 个有
+- `ZML_SwitchOutput` —— 1/43 个有
+- `easy showAnything` —— 1/43 个有
+- `llama_cpp_instruct_adv` —— 1/43 个有
+- `llama_cpp_model_loader` —— 1/43 个有
+- `llama_cpp_parameters` —— 1/43 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 43 | 100% |
+| 高度 | 25 | 25 - 25 | 43 | 100% |
 
 ## 常见问题
 
@@ -89,4 +110,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub Deepcleaner、easy anythingIndexSwitch、easy cleanGpuUsed、忽略多组孤海、CR Prompt Text
+- 宽度 中位数 97，观测区间 97 - 97，43 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，43 个样本，取值集中（一致性 100%）

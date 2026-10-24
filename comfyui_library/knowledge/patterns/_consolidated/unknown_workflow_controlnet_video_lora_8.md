@@ -7,13 +7,13 @@ coverage: 0.951667
 common_nodes: [CR Prompt Text, ImageConcanate, ImageResizeKJ, JWInteger, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1945410798665572353.json, 视频生成/图生视频/1928986648586129410.json, 视频生成/图生视频/1928871989627273218.json, 视频生成/图生视频/1929015446484238338.json, 视频生成/图生视频/2000739633522671617.json, 视频生成/图生视频/1929133519367475202.json, 视频生成/图生视频/1957795522704764930.json, 视频生成/图生视频/1931247339858493442.json, 视频生成/图生视频/1931944580948930561.json]
+members: [视频生成/图生视频/LightX2V Rank64+AniWan+Uni3C人物快速转圈图生视频V1_1945410798665572353.json, 视频生成/图生视频/Uni3C 视频转绘（对称_非对称）动作控制图生视频V1（4倍加速）_1928986648586129410.json, 视频生成/图生视频/Uni3C 运镜控制图生视频V1（4倍加速）_1928871989627273218.json, 视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_1929015446484238338.json, 视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_2000739633522671617.json, 视频生成/图生视频/Uni3C 首帧视频风格转绘加速版_1929133519367475202.json, 视频生成/图生视频/万相极速Uni3C 运镜控制图生视频_1957795522704764930.json, 视频生成/图生视频/🦖Uni3C 吉卜力风格转绘加速版_1931247339858493442.json, 视频生成/图生视频/🦖Uni3C 跳舞视频转吉卜力风格转绘加速版_1931944580948930561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_8
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1945410798665572353.json、视频生成/图生视频/1928986648586129410.json、视频生成/图生视频/1928871989627273218.json、视频生成/图生视频/1929015446484238338.json、视频生成/图生视频/2000739633522671617.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LightX2V Rank64+AniWan+Uni3C人物快速转圈图生视频V1_1945410798665572353.json、视频生成/图生视频/Uni3C 视频转绘（对称_非对称）动作控制图生视频V1（4倍加速）_1928986648586129410.json、视频生成/图生视频/Uni3C 运镜控制图生视频V1（4倍加速）_1928871989627273218.json、视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_1929015446484238338.json、视频生成/图生视频/Uni3C 首帧视频风格转绘加速版V1（自传图片版）_2000739633522671617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

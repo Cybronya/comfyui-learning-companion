@@ -3,81 +3,71 @@ name: unknown_workflow_video_lora_sampler_442
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.575
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
+coverage: 0.81
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview+, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, SeparateMasks, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058362232681091073.json, 视频生成/图生视频/2027340250565054465.json, 视频生成/图生视频/2008938707402891265.json, 视频生成/图生视频/2018160297319604226.json, 视频生成/图生视频/1985641855952068610.json]
+members: [视频生成/图生视频/加强版单人-双人[完美口型数字人]_1970560402209841153.json, 视频生成/图生视频/😙infinitetalk 迎接双人有灵魂的AI对话，音色、情绪无缝切换【支持长时间语音】🌙_1978989792249679873.json, 视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_1964871891532005378.json, 视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_2001550158074658818.json, 音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_442
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2058362232681091073.json、视频生成/图生视频/2027340250565054465.json、视频生成/图生视频/2008938707402891265.json、视频生成/图生视频/2018160297319604226.json、视频生成/图生视频/1985641855952068610.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/加强版单人-双人[完美口型数字人]_1970560402209841153.json、视频生成/图生视频/😙infinitetalk 迎接双人有灵魂的AI对话，音色、情绪无缝切换【支持长时间语音】🌙_1978989792249679873.json、视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_1964871891532005378.json、视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_2001550158074658818.json、音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BlockifyMask`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MaskPreview+`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `SeparateMasks`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 - `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 4/5 个有
-- `PointsEditor` —— 3/5 个有
-- `ColorMatch` —— 2/5 个有
-- `DWPreprocessor` —— 2/5 个有
-- `PixelPerfectResolution` —— 2/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `Sa2VANodeTpl` —— 2/5 个有
-- `SimpleMath+` —— 2/5 个有
-- `easy mathInt` —— 2/5 个有
-- `GroundingDinoModelLoader_SDPose` —— 1/5 个有
-- `ImageCompositeMasked` —— 1/5 个有
-- `InvertMask` —— 1/5 个有
-- `LayerUtility: TextBox` —— 1/5 个有
-- `PlaySound|pysssss` —— 1/5 个有
-- `SDPoseOODLoader` —— 1/5 个有
-- `SDPoseOODProcessor` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `SaveText` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
-- `YOLOModelLoader` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `AudioCrop` —— 2/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `GetImageSizeAndCount` —— 2/5 个有
+- `JWInteger` —— 2/5 个有
+- `MegaTTS3Run` —— 2/5 个有
+- `Note Plus (mtb)` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `SaveAudio` —— 2/5 个有
+- `SaveAudioMP3` —— 2/5 个有
+- `VoxCPM_TTS` —— 2/5 个有
+- `easy downloadIndexTTSAndLoadModel` —— 2/5 个有
+- `easy indexTTSAudioMerge` —— 2/5 个有
+- `easy indexTTSGenerateSimple` —— 2/5 个有
+- `IndexTTS2Run` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 

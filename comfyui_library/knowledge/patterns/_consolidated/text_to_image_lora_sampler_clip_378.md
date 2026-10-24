@@ -1,80 +1,81 @@
 ---
 name: text_to_image_lora_sampler_clip_378
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.789
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningKrea2Rebalance, ConditioningZeroOut, DepthAnythingV2Preprocessor, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 5
+level: strong
+coverage: 0.8734
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2-深度控制文生图_2077200610818088962.json, 图片生成/文生图/Krea2-深度控制文生图_2078085516737736705.json]
+members: [视频生成/图生视频/H3双采口播工作流照片加文案自动配音数字人，图生视频数字人生成工具_2106080341093076994.json, 视频生成/图生视频/H3双采口播数字人 照片加文案自动配音视频生成_2098821076301205505.json, 视频生成/图生视频/MiniMax H3上下文参考视频加图生视频融合运镜与角色工作流方案_2106081882151669762.json, 视频生成/图生视频/商品图一键变广告视频｜Seedance 1.5 Pro运镜带货短片_2106266731076476929.json, 视频生成/文生视频/H3 MAX智能运镜工作流AI看图自动运镜，文生视频图生视频静图动态化工具_2106083477107077121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_378
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2-深度控制文生图_2077200610818088962.json、图片生成/文生图/Krea2-深度控制文生图_2078085516737736705.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3双采口播工作流照片加文案自动配音数字人，图生视频数字人生成工具_2106080341093076994.json、视频生成/图生视频/H3双采口播数字人 照片加文案自动配音视频生成_2098821076301205505.json、视频生成/图生视频/MiniMax H3上下文参考视频加图生视频融合运镜与角色工作流方案_2106081882151669762.json、视频生成/图生视频/商品图一键变广告视频｜Seedance 1.5 Pro运镜带货短片_2106266731076476929.json、视频生成/文生视频/H3 MAX智能运镜工作流AI看图自动运镜，文生视频图生视频静图动态化工具_2106083477107077121.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningKrea2Rebalance`
-- `ConditioningZeroOut`
-- `DepthAnythingV2Preprocessor`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
+- `JjkText`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `SaveImage`
+- `LoraLoaderModelOnly`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `CreateVideo` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `RHMiniMaxH3ModelLoader` —— 4/5 个有
+- `RHMiniMaxH3TextEncoderLoader` —— 4/5 个有
+- `RHMiniMaxH3VAELoader` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `RHMiniMaxH3RefGen` —— 3/5 个有
+- `RHMiniMaxH3VideoGen` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `OmniVoiceVoiceDesignTTS` —— 1/5 个有
+- `RH_BytedanceDoubaoSeedAudio10` —— 1/5 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

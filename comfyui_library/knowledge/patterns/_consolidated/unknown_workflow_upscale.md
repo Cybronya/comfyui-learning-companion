@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_upscale
 type: Unknown Workflow
-frequency: 9
+frequency: 30
 level: moderate
-coverage: 0.911111
-common_nodes: [SaveImage]
+coverage: 0.9075
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_openai_fashion_billboard_generator.json, comfyui-workflow-templates-json/api_openai_gpt_image_25_flare_t2i.json, comfyui-workflow-templates-json/api_openai_gpt_image_25_sunburst_t2i.json, comfyui-workflow-templates-json/api_openai_gpt_image_2_image_edit.json, comfyui-workflow-templates-json/api_openai_gpt_image_2_t2i.json, comfyui-workflow-templates-json/api_openai_image_1_i2i.json, comfyui-workflow-templates-json/api_openai_image_1_inpaint.json, comfyui-workflow-templates-json/api_wavespeed_image_upscale.json, comfyui-workflow-templates-json/api_wavespeed_seedvr2_ai_image_fix.json]
+members: [图片生成/反推提示词/基础超分算法（模型放大）工作流（自用）_2105925478866575362.json, 图片生成/图生图/+全能图片V1单图生成手办（自带加高清放大）_1964933069692092417.json, 图片生成/图生图/+全能图片V1多图重组融合工作流_1964698219643027458.json, 图片生成/图生图/Ba个人黑白艺术风格写真照_1963863447303852034.json, 图片生成/图生图/全能  黑白艺术风格写真_2014500342817366018.json, 图片生成/图生图/全能1.0_个人黑白艺术风格写真_2013533451323973634.json, 图片生成/图生图/全能图片V1 一键改图｜一致性_1960874894290554882.json, 图片生成/图生图/全能图片V1 动漫手办生成_1960877311761551362.json, 图片生成/图生图/全能图片V1 展示不同年代的你_1966917922335625218.json, 图片生成/图生图/全能图片V1 电商设计产品爆炸图工作流 V1.0_1980165168611102722.json, 图片生成/图生图/全能图片V1 真人仿Cosplay_1966915193219452929.json, 图片生成/图生图/全能图片V1 线稿控制姿势_1966887127751516161.json, 图片生成/图生图/全能图片V1-  不会摆Pose？那就换姿势_1966109660065558530.json, 图片生成/图生图/全能图片V1-  改变拍照角度 (显高版）_1966106343620907010.json, 图片生成/图生图/全能图片V1- 人像美化_1966102509230223361.json, 图片生成/图生图/全能图片V1- 模仿妆容_1966084512407089153.json, 图片生成/图生图/全能图片V1-一键美颜-高清出图-超强图片编辑_1962422034632413186.json, 图片生成/图生图/全能图片V1-产品剖面图_1966151418245804034.json, 图片生成/图生图/全能图片V1-人像摄影打光-4K高清直出_1961641065260453889.json, 图片生成/图生图/全能图片V1-人物合影_1966804510339444738.json, 图片生成/图生图/全能图片V1-人物换装-高清出图-超强图片编辑_1961998813504409602.json, 图片生成/图生图/全能图片V1-动漫转真人Coser_1972313117864751106.json, 图片生成/图生图/全能图片V1-去除水印_1966873222295773186.json, 图片生成/图生图/全能图片V1-模型全息投影_1972318706451804162.json, 图片生成/图生图/全能图片V1-海盗通缉令_1972306113460891649.json, 图片生成/图生图/全能图片V1-现代美术展览空间_1972310905612595202.json, 图片生成/图生图/全能图片V1-玻璃瓶纪念品_1972316468346023938.json, 图片生成/图生图/全能图片V1-生成角色设定_1967088693435568129.json, 图片生成/图生图/全能图片V1-高清出图-超强图片编辑_1961088476970160130.json, 图片生成/图生图/全能图片V1生图工作流_1962887954941325314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（comfyui-workflow-templates-json/api_openai_fashion_billboard_generator.json、comfyui-workflow-templates-json/api_openai_gpt_image_25_flare_t2i.json、comfyui-workflow-templates-json/api_openai_gpt_image_25_sunburst_t2i.json、comfyui-workflow-templates-json/api_openai_gpt_image_2_image_edit.json、comfyui-workflow-templates-json/api_openai_gpt_image_2_t2i.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/反推提示词/基础超分算法（模型放大）工作流（自用）_2105925478866575362.json、图片生成/图生图/+全能图片V1单图生成手办（自带加高清放大）_1964933069692092417.json、图片生成/图生图/+全能图片V1多图重组融合工作流_1964698219643027458.json、图片生成/图生图/Ba个人黑白艺术风格写真照_1963863447303852034.json、图片生成/图生图/全能  黑白艺术风格写真_2014500342817366018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：30
 - **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 30 个 workflow 都包含：
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `OpenAIGPTImageNodeV2` —— 7/9 个有
-- `LoadImage` —— 6/9 个有
-- `ImageCompare` —— 4/9 个有
-- `WavespeedImageUpscaleNode` —— 2/9 个有
+- `RH_Nano_Banana_Image2Image` —— 29/30 个有
+- `ImageUpscaleWithModel` —— 28/30 个有
+- `UpscaleModelLoader` —— 28/30 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 25/30 个有
+- `LayerUtility: PurgeVRAM` —— 17/30 个有
+- `RH_Translator` —— 12/30 个有
+- `PreviewImage` —— 9/30 个有
+- `Image Comparer (rgthree)` —— 5/30 个有
+- `ChinesePrompt_Mix` —— 1/30 个有
 
 ## 典型参数
 

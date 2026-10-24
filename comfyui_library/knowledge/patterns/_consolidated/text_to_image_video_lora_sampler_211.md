@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_211
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.7985
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EasyCache, EmptyLatentImage, GetVideoComponents, ImageBatchExtendWithOverlap, ImageScaleToTotalPixelsX, JjkText, KSampler, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SolAttnMiniMax, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_SplitImages, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.92
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Float, JjkText, JoinStringMulti, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainManifestLoad, MiniMaxH3ChainPlan, MiniMaxH3ChainReview, MiniMaxH3ChainScenePromptEditor, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, RH_LLMAPI_Pro_Node, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SomethingToString, StringFunction|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimax-h3首尾无缝循环视频｜图生视频循环生成工作流_2097787837155467266.json, 视频生成/图生视频/首尾无缝循环视频 minimax-h3 图生视频循环动画_2094252146664497154.json]
+members: [视频生成/图生视频/MiniMax H3无限时长分镜版 长视频多段编排视频生成_2108627474866327554.json, 视频生成/图生视频/MiniMax-H3无限时长分镜版｜图生视频长片分镜出片_2108402992331444225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_211
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax-h3首尾无缝循环视频｜图生视频循环生成工作流_2097787837155467266.json、视频生成/图生视频/首尾无缝循环视频 minimax-h3 图生视频循环动画_2094252146664497154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3无限时长分镜版 长视频多段编排视频生成_2108627474866327554.json、视频生成/图生视频/MiniMax-H3无限时长分镜版｜图生视频长片分镜出片_2108402992331444225.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
@@ -27,43 +27,41 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EasyCache`
 - `EmptyLatentImage`
-- `GetVideoComponents`
-- `ImageBatchExtendWithOverlap`
-- `ImageScaleToTotalPixelsX`
+- `Float`
 - `JjkText`
+- `JoinStringMulti`
 - `KSampler`
 - `KSamplerSelect`
 - `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ChainAssemble`
+- `MiniMaxH3ChainContext`
+- `MiniMaxH3ChainCurrent`
+- `MiniMaxH3ChainLoopEnd`
+- `MiniMaxH3ChainLoopStart`
+- `MiniMaxH3ChainManifestLoad`
+- `MiniMaxH3ChainPlan`
+- `MiniMaxH3ChainReview`
+- `MiniMaxH3ChainScenePromptEditor`
+- `MiniMaxH3ChainSegmentSave`
+- `MiniMaxH3LoopTrim`
+- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxH3SigmaShift`
 - `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SolAttnMiniMax`
+- `SomethingToString`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_SplitImages`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VHS_VideoInfo`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 

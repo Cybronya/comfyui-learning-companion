@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_358
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.80925
-common_nodes: [ImageConcanate, LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.762
+common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1936979411319050242.json, 图片生成/文生图/1937014343026266114.json, 图片生成/文生图/1938480294855139329.json, 视频生成/图生视频/1928633296190652418.json]
+missing: []
+members: [图片生成/文生图/image two文生图_2060255026014150658.json, 图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json, 图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json, 图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json, 图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json, 图片生成/文生图/全能图像G2-文生图_2048754806386331650.json, 图片生成/文生图/角色资产创建（API）_2051982716761067521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_358
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1936979411319050242.json、图片生成/文生图/1937014343026266114.json、图片生成/文生图/1938480294855139329.json、视频生成/图生视频/1928633296190652418.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/image two文生图_2060255026014150658.json、图片生成/文生图/【南光AIGC】最新-全能图片2.0-文生图(全案设计)V8.0_2051215670976757761.json、图片生成/文生图/全能图像G image2.0文生图 自用_2053737977024659457.json、图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json、图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageConcanate`
-- `LoadImage`
-- `RH_ComfyFluxKontext`
+全部 7 个 workflow 都包含：
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `CR Text` —— 5/7 个有
+- `PreviewImage` —— 4/7 个有
+- `LoadImage` —— 2/7 个有
+- `RH_RhartImageNProEdit` —— 1/7 个有
 
 ## 典型参数
 
@@ -43,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

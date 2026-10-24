@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_generic_162
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.646429
-common_nodes: [GetRandomIntegerInRange, ImpactSwitch, JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text Load Line From File, easy mathInt]
+coverage: 0.889455
+common_nodes: [LayerUtility: TextJoin, LoadImage, PrimitiveInt, SaveImage, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2066092416477786114.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json, 音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2016037375239004162.json, 音频生成/音频生成/Qwen3+TTS+声音设计_2085781651526868994.json]
+members: [图片生成/图生图/女童运动背心批量附图_2062715383810977793.json, 图片生成/图生图/女装附图 -运动款_2057636245613932545.json, 图片生成/图生图/姿势裂变（女装附图）_2052921164950982657.json, 图片生成/图生图/男装附图_2064181021381316609.json, 图片生成/图生图/童装批量生图_2061286729377734657.json, 图片生成/图生图/童装附图_2064255951846338562.json, 图片生成/图生图/衣服换色_2053020912231960578.json, 图片生成/图生图/衣服换色_2064174361678008322.json, 图片生成/图生图/鞋子附图_2054442284216791042.json, 图片生成/图生图/饰品批量附图_2056998025419116545.json, 图片生成/图生图/饰品批量附图_2061653260913696769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_162
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2066092416477786114.json、音频生成/音频生成/Qwen3 TTS 声音设计_2014582939346018305.json、音频生成/音频生成/Qwen3 TTS 声音设计_2015036539411111937.json、音频生成/音频生成/Qwen3 TTS 声音设计_2030298861880745985.json、音频生成/音频生成/Qwen3 TTS 声音设计_2034213372333400065.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/女童运动背心批量附图_2062715383810977793.json、图片生成/图生图/女装附图 -运动款_2057636245613932545.json、图片生成/图生图/姿势裂变（女装附图）_2052921164950982657.json、图片生成/图生图/男装附图_2064181021381316609.json、图片生成/图生图/童装批量生图_2061286729377734657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `GetRandomIntegerInRange`
-- `ImpactSwitch`
-- `JjkText`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `Text Load Line From File`
-- `easy mathInt`
+全部 11 个 workflow 都包含：
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `PrimitiveInt`
+- `SaveImage`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 6/7 个有
-- `ShowText` —— 6/7 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 9/11 个有
+- `Text` —— 7/11 个有
+- `CR Text` —— 4/11 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/11 个有
 
 ## 典型参数
 

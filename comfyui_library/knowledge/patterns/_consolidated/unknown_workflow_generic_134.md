@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_134
 type: Unknown Workflow
-frequency: 8
+frequency: 12
 level: moderate
-coverage: 0.49575
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.882917
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2045803250208739330.json, 视频生成/图生视频/1995080238969368577.json, 视频生成/图生视频/1995090644366503938.json, 视频生成/图生视频/1994104892247785473.json, 视频生成/图生视频/1980566754525102082.json, 视频生成/图生视频/1980581515803447298.json, 视频生成/图生视频/2000505085736124418.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1 Pro文生视频特价版（基准1元_8S）_1980614790232064001.json]
+members: [图片生成/图生图/seedance2.5 (过人脸审核操作)_2086788953847459842.json, 视频生成/图生视频/HeyGem对口型，全节点注释，直接抄_2064694224074919938.json, 视频生成/图生视频/Mini Max H3多模态参考生视频_2083141810741923842.json, 视频生成/图生视频/Mini Max H3多模态参考生视频_2083152271352877058.json, 视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083400389453508610.json, 视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083404860132773889.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083416442275459073.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083422180163014658.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083425658755174402.json, 视频生成/图生视频/MiniMax H3多模态参考生视频_2083429061518512129.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083069534579286018.json, 视频生成/文生视频/seedance2.5(支持30秒长视频)_多模态生视频_2086018514942517249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_134
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2045803250208739330.json、视频生成/图生视频/1995080238969368577.json、视频生成/图生视频/1995090644366503938.json、视频生成/图生视频/1994104892247785473.json、视频生成/图生视频/1980566754525102082.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/seedance2.5 (过人脸审核操作)_2086788953847459842.json、视频生成/图生视频/HeyGem对口型，全节点注释，直接抄_2064694224074919938.json、视频生成/图生视频/Mini Max H3多模态参考生视频_2083141810741923842.json、视频生成/图生视频/Mini Max H3多模态参考生视频_2083152271352877058.json、视频生成/图生视频/Mini+Max+H3多模态参考生视频_2083400389453508610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
+全部 12 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `SaveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Googel_Veo3` —— 6/8 个有
-- `Comfly_vidu_img2video` —— 2/8 个有
-- `Comfly_Googel_Veo3_Lite` —— 1/8 个有
-- `HfSaveImage` —— 1/8 个有
+- `CR Text` —— 11/12 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 9/12 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 2/12 个有
+- `RH_HeyGemNode` —— 1/12 个有
 
 ## 典型参数
 

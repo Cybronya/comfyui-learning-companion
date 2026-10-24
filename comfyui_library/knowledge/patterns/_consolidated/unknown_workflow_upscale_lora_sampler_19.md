@@ -1,99 +1,123 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_19
 type: Unknown Workflow
-frequency: 4
+frequency: 9
 level: strong
-coverage: 0.845
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, ImageListToImageBatch, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoraLoader, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text Concatenate, LayerMask: LoadFlorence2Model, easy imageBatchToImageList, LayerUtility: Florence2Image2Prompt, Preview from image [Crystools]]
-members: [图片生成/文生图/1954519876507451393.json, 图片生成/文生图/1986047424126996481.json, 图片生成/文生图/AI动画文生图_2026095152678309890.json, 图片生成/文生图/千问+CG动漫角色_2005905611554521089.json]
+coverage: 0.438111
+common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, CR Simple Text Watermark, ColorMatch, ConditioningZeroOut, DrawMaskOnImage, EmptyFlux2LatentImage, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, Image Comparer (rgthree), ImageBlend, ImagePass, ImageResize+, ImageScaleBy, ImageUpscaleWithModel, KOOK_ImageCompression, KOOK_SaveJPGImage, KSamplerAdvanced, KSamplerSelect, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LayerColor: ColorAdapter, LayerMask: LoadSegformerModel, LayerMask: SegformerClothesSetting, LayerMask: SegformerUltraV3, LayerUtility: ImageBlendAdvance V3, LayerUtility: ImageScaleByAspectRatio V2, LazyCache, LensBlur, LoadImage, LoraLoaderModelOnly, ModelPassThrough, ModelSamplingAuraFlow, PhotoShakeNode, PlaySound|pysssss, PreviewImage, PrimitiveString, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SaveText|pysssss, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SomethingToString, StringConcatenate, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextInput_, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageSize, easy int, easy saveText, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: []
+missing: []
+members: [图片生成/图生图/❾「写真V3」Z双采  K质感+Edit TTP-HD「9.19」_2102319165112672257.json, 图片生成/图生图/写真 Z-image 双采  K质感+Edit TTP-HD_2067510888168509442.json, 图片生成/图生图/模特写真 Model+Photos Dual-Sampling High-Definition_2109808930288394242.json, "图片生成/图生图/模特写真 双Model Photos_ Dual-Sampling, High-Definition_2108376321742168065.json", "图片生成/图生图/模特写真+双Model+Photos_+Dual-Sampling,+High-Definition_2112712318684581889.json", 图片生成/图生图/鳌拜拜ZBT202605311327_2060956139176677378.json, 图片生成/文生图/❾「写真V3」Z双采  K质感+Edit TTP-HD「9.19」_2056754627374309378.json, 图片生成/文生图/「写真V3」Z双采  K质感+Edit TTP-HD_2103020992871358466.json, 图片生成/文生图/「写真V3」Z双采  K质感+Edit TTP-HD「9.19」_2108817727044546561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_19
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1954519876507451393.json、图片生成/文生图/1986047424126996481.json、图片生成/文生图/AI动画文生图_2026095152678309890.json、图片生成/文生图/千问+CG动漫角色_2005905611554521089.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/❾「写真V3」Z双采  K质感+Edit TTP-HD「9.19」_2102319165112672257.json、图片生成/图生图/写真 Z-image 双采  K质感+Edit TTP-HD_2067510888168509442.json、图片生成/图生图/模特写真 Model+Photos Dual-Sampling High-Definition_2109808930288394242.json、图片生成/图生图/模特写真 双Model Photos_ Dual-Sampling, High-Definition_2108376321742168065.json、图片生成/图生图/模特写真+双Model+Photos_+Dual-Sampling,+High-Definition_2112712318684581889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageListToImageBatch`
-- `ImageResizeKJ`
-- `ImageScaleToTotalPixels`
+- `CR Simple Text Watermark`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `DrawMaskOnImage`
+- `EmptyFlux2LatentImage`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageBlend`
+- `ImagePass`
+- `ImageResize+`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
+- `KOOK_ImageCompression`
+- `KOOK_SaveJPGImage`
+- `KSamplerAdvanced`
 - `KSamplerSelect`
-- `LoraLoader`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LCSSharpnessCalibrate`
+- `LCSSharpnessIntervene`
+- `LayerColor: ColorAdapter`
+- `LayerMask: LoadSegformerModel`
+- `LayerMask: SegformerClothesSetting`
+- `LayerMask: SegformerUltraV3`
+- `LayerUtility: ImageBlendAdvance V3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LazyCache`
+- `LensBlur`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelPassThrough`
+- `ModelSamplingAuraFlow`
+- `PhotoShakeNode`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `PrimitiveString`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SaveText|pysssss`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SetNode`
+- `SomethingToString`
+- `StringConcatenate`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
+- `TextInput_`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy int`
+- `easy saveText`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `EmptySD3LatentImage` —— 3/4 个有
-- `KSampler` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `CR Text Concatenate` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `LayerMask: LoadFlorence2Model` —— 2/4 个有
-- `LayerUtility: Florence2Image2Prompt` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `EmptyLatentImage` —— 1/4 个有
-- `Preview from image [Crystools]` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
+- `LoadImagesFromDir //Inspire` —— 2/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 16 - 20 | 3 | 90% |
-| Prompt 约束强度(CFG) | 2.5 | 2 - 3.5 | 3 | 77% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 0.8 | 0.8 - 1 | 4 | 90% |
-| LoRA 文本强度 | 0.9 | 0.8 - 1 | 4 | 89% |
-| 宽度 | 1360 | - | 1 | 100% |
-| 高度 | 768 | - | 1 | 100% |
+| 采样步数 | randomize | - | 9 | 78% |
+| Prompt 约束强度(CFG) | 15 | 12 - 15 | 9 | 91% |
+| 采样算法 | 2 | 1 - 2 | 9 | 83% |
+| 调度器 | sa_solver | - | 9 | 89% |
+| 重绘幅度 | bong_tangent | - | 9 | 89% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 16 - 20，3 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2 - 3.5，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，4 个样本，取值集中（一致性 90%）
-- LoRA 文本强度 中位数 0.9，观测区间 0.8 - 1，4 个样本，取值集中（一致性 89%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、LayerMask: LoadFlorence2Model、easy imageBatchToImageList、LayerUtility: Florence2Image2Prompt、Preview from image [Crystools]
+- 采样步数 最常用 randomize，9 个样本，一致性 78%
+- Prompt 约束强度(CFG) 中位数 15，观测区间 12 - 15，9 个样本，取值集中（一致性 91%）
+- 采样算法 中位数 2，观测区间 1 - 2，9 个样本，取值集中（一致性 83%）
+- 调度器 最常用 sa_solver，9 个样本，一致性 89%
+- 重绘幅度 最常用 bong_tangent，9 个样本，一致性 89%
+- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

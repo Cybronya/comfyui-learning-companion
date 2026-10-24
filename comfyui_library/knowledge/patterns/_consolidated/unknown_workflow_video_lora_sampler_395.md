@@ -1,71 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_395
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.946333
-common_nodes: [CLIPTextEncode, CM_FloatToInt, DualCLIPLoader, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+frequency: 5
+level: moderate
+coverage: 0.7286
+common_nodes: [Anything Everywhere, CreateCFGScheduleFloatList, GetNode, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Pipe from any [Crystools], Pipe to/edit any [Crystools], Seed Everywhere, SetNode, SimpleMath+, TextCombinerTwo, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json, 视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json, 视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json, 视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json, 视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json, 视频生成/文生视频/ltx-2.3文生视频蒸馏二阶段放大_2030336856772059137.json]
+members: [视频生成/图生视频/360旋转视角（物品展示）_1963229385660805122.json, 视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json, 视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json, 视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json, 视频生成/文生视频/360旋转视角 产品展示 极速生视频 动作真实自然_2058787946362396674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_395
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json、视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json、视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json、视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json、视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/360旋转视角（物品展示）_1963229385660805122.json、视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json、视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json、视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json、视频生成/文生视频/360旋转视角 产品展示 极速生视频 动作真实自然_2058787946362396674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+全部 5 个 workflow 都包含：
+- `Anything Everywhere`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `INTConstant`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `Pipe from any [Crystools]`
+- `Pipe to/edit any [Crystools]`
+- `Seed Everywhere`
+- `SetNode`
+- `SimpleMath+`
+- `TextCombinerTwo`
+- `Textbox`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 5/6 个有
-- `KSamplerSelect` —— 5/6 个有
-- `ManualSigmas` —— 5/6 个有
-- `ClownSampler_Beta` —— 4/6 个有
-- `GuiderParameters` —— 4/6 个有
-- `LTXVScheduler` —— 4/6 个有
-- `MultimodalGuider` —— 4/6 个有
-- `LTXVLatentUpsampler` —— 2/6 个有
-- `LatentUpscaleModelLoader` —— 2/6 个有
+- `CR Text Concatenate` —— 2/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `LoadLatent` —— 1/5 个有
+- `SaveLatent` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

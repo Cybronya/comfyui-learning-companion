@@ -1,43 +1,34 @@
 ---
 name: text_to_image_lora_sampler_clip_93
 type: Text To Image
-frequency: 11
+frequency: 14
 level: strong
-coverage: 0.900091
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.894143
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3 FL2VA开源版图生视频 脑洞创意电影感视频生成_2099229846823063553.json, 视频生成/图生视频/开源免费MiniMax H3 FL2VA｜脑洞剧本一键开拍，电影感拉满_2099403535325679617.json, 视频生成/文生视频/FL2VA开源版文生视频｜MiniMax H3一键生成_2093264814079569922.json, 视频生成/文生视频/MiniMax H3开源版文生视频｜视频运镜提示词直出_2089449365793501185.json, 视频生成/文生视频/MiniMax H3文生视频开源版处理生成工具_2102140647884021762.json, 视频生成/文生视频/MiniMax H3文生视频开源版｜一句话生成大片级画面_2107663052278681601.json, 视频生成/文生视频/MiniMax H3文生视频开源版｜运镜丝滑300+人在用_2097177388667990017.json, 视频生成/文生视频/res_multistep 2.46×零质量损加速｜MiniMax-H3文生视频RH版_2089008529712705537.json, 视频生成/文生视频/res_multistep 2.46倍加速零质量损｜MiniMax-H3文生视频RH版含音频_2088688872459952130.json, 视频生成/文生视频/开源版文生视频MiniMax视频运镜其它视频处理_2085851653433028610.json, 视频生成/文生视频/开源版文生视频｜MiniMax H3 视频运镜自由出片_2089266759978274818.json]
+members: [图片生成/文生图/Seedance2.0Mini文生视频，文字转视频高效直出_2111880856880111618.json, 图片生成/文生图/Z-Image Turbo文生图快速高质量处理工具_2101047351329771521.json, 图片生成/文生图/Z-Image-Turbo文生图｜高速出图质量在线新体验_2105251524116041729.json, 图片生成/文生图/Z-Image基本文生图处理生成工作流工具包_2101786053643431937.json, 图片生成/文生图/Z-image文生图 多风格高质量图片生成_2098860674293260290.json, 图片生成/文生图/Z-image真实文生图｜人像写真美少女高质量生成_2096726231373930498.json, 图片生成/文生图/ZIT基础文生图工作流，高质量文本到图像生成方案_2106810710041911298.json, 图片生成/文生图/krea2基础文生图工作流｜物品摄影人像写真生成_2097777800206970882.json, 图片生成/文生图/krea2基础文生图工作流｜物品摄影人像写真生成_2101478583771422722.json, 图片生成/文生图/z-image文生图工作流｜轻量出图响应快，日常配图随手就能出_2099545132960935937.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版｜一句话出好图，细节给足_2099479665718153217.json, 图片生成/文生图/小腰精体态曲线塑造 文生图一键生成完美身材比例_2104343399116664834.json, 图片生成/文生图/没有AI味文生图｜Z-image Turbo真实模型工作流_2093450819793408001.json, 图片生成/文生图/没有AI味的模型｜Z-image Tubro文生图一键生成_2093784427087360002.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_93
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/H3 FL2VA开源版图生视频 脑洞创意电影感视频生成_2099229846823063553.json、视频生成/图生视频/开源免费MiniMax H3 FL2VA｜脑洞剧本一键开拍，电影感拉满_2099403535325679617.json、视频生成/文生视频/FL2VA开源版文生视频｜MiniMax H3一键生成_2093264814079569922.json、视频生成/文生视频/MiniMax H3开源版文生视频｜视频运镜提示词直出_2089449365793501185.json、视频生成/文生视频/MiniMax H3文生视频开源版处理生成工具_2102140647884021762.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Seedance2.0Mini文生视频，文字转视频高效直出_2111880856880111618.json、图片生成/文生图/Z-Image Turbo文生图快速高质量处理工具_2101047351329771521.json、图片生成/文生图/Z-Image-Turbo文生图｜高速出图质量在线新体验_2105251524116041729.json、图片生成/文生图/Z-Image基本文生图处理生成工作流工具包_2101786053643431937.json、图片生成/文生图/Z-image文生图 多风格高质量图片生成_2098860674293260290.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DirectModelLoader`
-- `RHMiniMaxH3DirectTextEncoderLoader`
-- `RHMiniMaxH3DirectVAELoader`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3T2VATarget`
-- `RHMiniMaxH3T2VATextEncode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -45,36 +36,45 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 6/11 个有
-- `VHS_VideoCombine` —— 6/11 个有
-- `SaveVideo` —— 5/11 个有
-- `SaveImage` —— 2/11 个有
+- `SaveImage` —— 13/14 个有
+- `ConditioningZeroOut` —— 8/14 个有
+- `EmptySD3LatentImage` —— 8/14 个有
+- `ModelSamplingAuraFlow` —— 7/14 个有
+- `PreviewImage` —— 6/14 个有
+- `EmptyImage` —— 2/14 个有
+- `CompressImages` —— 1/14 个有
+- `LoraLoader` —— 1/14 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 1/14 个有
+- `RH_RhartVideoSparkvideo20MiniTextToVideo` —— 1/14 个有
+- `SaveVideo` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
-| 采样算法 | er_sde | - | 11 | 100% |
-| 调度器 | beta | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 80 | 80 - 80 | 11 | 100% |
-| 高度 | 80 | 80 - 80 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 14 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
+| 采样算法 | er_sde | - | 14 | 100% |
+| 调度器 | beta | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 80 | 80 - 80 | 14 | 100% |
+| 高度 | 80 | 80 - 80 | 14 | 100% |
+| LoRA 模型强度 | 0.8 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 23/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，11 个样本，一致性 100%
-- 调度器 最常用 beta，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，14 个样本，一致性 100%
+- 调度器 最常用 beta，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
+- 高发问题（23/14 个样本）：Steps较低可能导致细节不足

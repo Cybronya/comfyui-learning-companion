@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_499
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.818
-common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Text, easy promptConcat, easy promptLine, easy showAnything]
+coverage: 0.861
+common_nodes: [ArgosTranslateTextNode, Bjornulf_ShowStringText, LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
-missing: [easy promptConcat, easy promptLine]
-members: [图片生成/反推提示词/全自动电商出详情只提示_2106391913095061506.json, 图片生成/图生图/2102301912535232513.json, 数字人/数字人/电商详情页生成直出10张_2102684851412492289.json]
+missing: []
+members: [图片生成/图生图/FLUX.1 Kontext万物迁移，多图融合，一键换衣，虚拟试穿_1930978698235674625.json, 图片生成/图生图/Flux.1 Kontext 万物迁移+角色一致性+风格转绘+局部重绘+文字编辑_1929922021721849858.json, 图片生成/图生图/Flux.1 Kontext 多图融合_1932808848392474626.json, 图片生成/图生图/Flux.1 Kontext图片编辑，角色一致性_1930410475383635970.json, 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_499
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/全自动电商出详情只提示_2106391913095061506.json、图片生成/图生图/2102301912535232513.json、数字人/数字人/电商详情页生成直出10张_2102684851412492289.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext万物迁移，多图融合，一键换衣，虚拟试穿_1930978698235674625.json、图片生成/图生图/Flux.1 Kontext 万物迁移+角色一致性+风格转绘+局部重绘+文字编辑_1929922021721849858.json、图片生成/图生图/Flux.1 Kontext 多图融合_1932808848392474626.json、图片生成/图生图/Flux.1 Kontext图片编辑，角色一致性_1930410475383635970.json、图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `ArgosTranslateTextNode`
+- `Bjornulf_ShowStringText`
 - `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
-- `Text`
-- `easy promptConcat`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `ShowText` —— 2/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `SimplePromptBatcher` —— 1/3 个有
-- `easy saveText` —— 1/3 个有
+- `Image Stitch` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 
@@ -50,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：easy promptConcat、easy promptLine
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

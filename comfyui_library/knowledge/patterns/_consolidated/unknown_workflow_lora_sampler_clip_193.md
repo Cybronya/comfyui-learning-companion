@@ -1,81 +1,66 @@
 ---
 name: unknown_workflow_lora_sampler_clip_193
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8295
-common_nodes: [Audio Duration (mtb), AudioCrop, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, UNETLoader, VAELoaderKJ]
+frequency: 3
+level: strong
+coverage: 0.444
+common_nodes: [Anything Everywhere, BasicScheduler, CLIPLoader, CLIPTextEncode, ClownOptions_ExtraOptions_Beta, ClownsharKSampler_Beta, ClownsharkChainsampler_Beta, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageStitch, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, ResizeImageMaskNode, ResolutionSelector, SaveImage, Seed (rgthree), SetNode, SharkOptions_Beta, SigmasPreview, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2032276814873235457.json, 视频生成/图生视频/2051620785973936130.json]
+members: [图片生成/文生图/Krea 2 深度探索：从控制结果，到控制过程 _ Controlling the Generati_2078072383788896258.json, 图片生成/文生图/Krea_2_深度探索_从控制结果，到控制过程_Controlling_the_Generati_2080936885467312130.json, 视频生成/图生视频/Krea+2+深度探索：从控制结果，到控制过程+_+Controlling+the+Generati_2088072723561009153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_193
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2032276814873235457.json、视频生成/图生视频/2051620785973936130.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea 2 深度探索：从控制结果，到控制过程 _ Controlling the Generati_2078072383788896258.json、图片生成/文生图/Krea_2_深度探索_从控制结果，到控制过程_Controlling_the_Generati_2080936885467312130.json、视频生成/图生视频/Krea+2+深度探索：从控制结果，到控制过程+_+Controlling+the+Generati_2088072723561009153.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
+- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
+- `ClownOptions_ExtraOptions_Beta`
+- `ClownsharKSampler_Beta`
+- `ClownsharkChainsampler_Beta`
+- `EmptyLatentImage`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageStitch`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
+- `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
+- `SharkOptions_Beta`
+- `SigmasPreview`
 - `UNETLoader`
-- `VAELoaderKJ`
-
-**可变部分**（部分 workflow 才有）：
-- `Float` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWIntegerToString` —— 1/2 个有
-- `LTX2SamplingPreviewOverride` —— 1/2 个有
-- `LTXVChunkFeedForward` —— 1/2 个有
-- `LTXVImgToVideoConditionOnly` —— 1/2 个有
-- `LTXVLatentUpsampler` —— 1/2 个有
-- `LTXVPreprocess` —— 1/2 个有
-- `LTXVSpatioTemporalTiledVAEDecode` —— 1/2 个有
-- `LatentUpscaleModelLoader` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
-- `intToFloat _O` —— 1/2 个有
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `easy promptLine`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 采样步数 | bong_tangent | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 2 | 2 - 2 | 3 | 100% |
+| 采样算法 | -1 | -1 - -1 | 3 | 100% |
+| 调度器 | 1 | 1 - 1 | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -83,4 +68,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 bong_tangent，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 -1，观测区间 -1 - -1，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

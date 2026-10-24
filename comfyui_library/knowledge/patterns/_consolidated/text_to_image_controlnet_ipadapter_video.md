@@ -7,13 +7,13 @@ coverage: 0.813
 common_nodes: [ACN_AdvancedControlNetApply, ADE_ApplyAnimateDiffModelSimple, ADE_LoadAnimateDiffModel, ADE_LoopedUniformContextOptions, ADE_MultivalDynamic, ADE_UseEvolvedSampling, BatchCount+, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoaderAdvanced, CreateFadeMaskAdvanced, EmptyLatentImage, IPAdapterUnifiedLoader, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, MaskToImage, PreviewImage, RepeatImageBatch, SimpleMath+, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1915253502032154625.json, 视频生成/图生视频/1787313920449458177.json, 视频生成/图生视频/1787418483718369281.json]
+members: [视频生成/图生视频/丝滑视频转换_1915253502032154625.json, 视频生成/图生视频/人像视频制作工作流_1787313920449458177.json, 视频生成/图生视频/海浪视频制作_1787418483718369281.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_ipadapter_video
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1915253502032154625.json、视频生成/图生视频/1787313920449458177.json、视频生成/图生视频/1787418483718369281.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/丝滑视频转换_1915253502032154625.json、视频生成/图生视频/人像视频制作工作流_1787313920449458177.json、视频生成/图生视频/海浪视频制作_1787418483718369281.json）
 
 - **类型**：Text To Image
 - **样本数**：3

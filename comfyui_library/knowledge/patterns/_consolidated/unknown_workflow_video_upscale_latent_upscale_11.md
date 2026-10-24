@@ -1,101 +1,89 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_11
 type: Unknown Workflow
-frequency: 20
+frequency: 21
 level: strong
-coverage: 0.5684
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageScaleBy, KSamplerSelect, LTX2AudioLatentNormalizingSampling, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, VRAM_Debug, easy showAnything]
+coverage: 0.876381
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2021101495378251777.json, 视频生成/图生视频/2059439736070172674.json, 视频生成/图生视频/2015355446395146242.json, 视频生成/文生视频/一键生成双人卡通对话动画片_2017220821856555010.json, 视频生成/文生视频/一键生成多角色对话动画片（抖音热门视频）_2067981012499521537.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2_2020138354452471809.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2016013037911678977.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2017584036574666753.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2017592253887287298.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2017893549232103425.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2021972520756318209.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2043169271936716801.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2064917154838966274.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS+++LTX-2工作流！_2043550997179535361.json, 视频生成/文生视频/一键生成多角色对话，Qwen3-TTS + LTX-2工作流！_2036334772938612737.json, 视频生成/文生视频/一键生成宠物博客，一键生成多角色动画，Qwen3-TTS + LTX-2工作流！_2019605828466122754.json, 视频生成/文生视频/无脑流！一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流2.0版本，动漫拆解，长视频也可行！_2027664655996428289.json, 视频生成/文生视频/无脑流！一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2027660032065675265.json, 视频生成/文生视频/超好用🔥一键生成多动画角色对话-可按需调整_2054913994544164866.json, 视频生成/文生视频/😽多角色对话TTS克隆+LTX音画同步视频生成😽_2018253329977057281.json]
+members: [视频生成/图生视频/LTX2.3 图生视频_2085391376946122754.json, 视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030491852985606146.json, 视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030519163785060353.json, 视频生成/图生视频/LTX2.3-多帧视频_2030546098619682817.json, 视频生成/图生视频/LTX2.3-首尾帧视频_2030921554300768258.json, 视频生成/图生视频/LTX2.3-首尾帧视频（优化版）一致性增强_2030280752230830082.json, 视频生成/图生视频/LTX2.3_自动图_文生视频工作流优化版_2032374399482994689.json, 视频生成/图生视频/LTX2.3_自动图_文生视频工作流优化版_2032672959206264833.json, 视频生成/图生视频/LTX2.3全自动—图生_ 文生视频_2044340240424374273.json, 视频生成/图生视频/LTX2.3全自动—图生视频.全节点注释_2043549529819062274.json, 视频生成/图生视频/LTX2.3全自动图生视频_2055624170523906050.json, 视频生成/文生视频/LTX2.3 图生_ 文生视频【提示词自动优化】_2033527714837176322.json, 视频生成/文生视频/LTX2.3低显存文生图_图生图_首尾帧 视频生成ai漫剧短剧视频 保持人物一致性性价比超高LTX2_2031559977218875394.json, 视频生成/文生视频/LTX2.3全自动_手动提示词 图生视频  低消耗 人物一致 精准版_2057632019441602562.json, 视频生成/文生视频/LTX2.3全自动—图生_文生视频_2030257060473999361.json, 视频生成/文生视频/LTX2.3全自动图生+文生视频_2033000599163248642.json, 视频生成/文生视频/LTX2.3图生_ 文生视频_2033992306809905153.json, 视频生成/文生视频/LTX2.3图生_ 文生视频_2053005533375938562.json, 视频生成/文生视频/LTX2.3：图生、文生视频_2044341159635460098.json, 视频生成/文生视频/图生视频 -LTX2.3 全自动   图生视频_ 文生视频_2030510007468429313.json, 视频生成/文生视频/图生视频 文生视频 -LTX2.3 一键生成_2030565382297227266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_11
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/2021101495378251777.json、视频生成/图生视频/2059439736070172674.json、视频生成/图生视频/2015355446395146242.json、视频生成/文生视频/一键生成双人卡通对话动画片_2017220821856555010.json、视频生成/文生视频/一键生成多角色对话动画片（抖音热门视频）_2067981012499521537.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 图生视频_2085391376946122754.json、视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030491852985606146.json、视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030519163785060353.json、视频生成/图生视频/LTX2.3-多帧视频_2030546098619682817.json、视频生成/图生视频/LTX2.3-首尾帧视频_2030921554300768258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：21
 - **可信度**：强结论
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 21 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CR Text`
+- `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetNode`
-- `ImageScaleBy`
 - `KSamplerSelect`
-- `LTX2AudioLatentNormalizingSampling`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVScheduler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveFloat`
+- `PrimitiveBoolean`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
 - `VAEDecodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 19/20 个有
-- `DualCLIPLoaderGGUF` —— 19/20 个有
-- `INTConstant` —— 19/20 个有
-- `LoraLoaderModelOnly` —— 19/20 个有
-- `PreviewAudio` —— 19/20 个有
-- `EmptyImage` —— 18/20 个有
-- `FB_Qwen3TTSDialogueInference` —— 18/20 个有
-- `FB_Qwen3TTSRoleBank` —— 18/20 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 18/20 个有
-- `LTXVChunkFeedForward` —— 18/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 18/20 个有
-- `UnetLoaderGGUF` —— 18/20 个有
-- `FB_Qwen3TTSVoiceDesign` —— 17/20 个有
-- `Label (rgthree)` —— 4/20 个有
-- `LoadAudio` —— 3/20 个有
-- `ImageResizeKJv2` —— 2/20 个有
-- `LTXVImgToVideoInplace` —— 2/20 个有
-- `LTXVPreprocess` —— 2/20 个有
-- `LoadImage` —— 2/20 个有
-- `Qwen3TTSModelLoader` —— 2/20 个有
-- `Qwen3TTSVoiceClone` —— 2/20 个有
-- `ResizeImagesByLongerEdge` —— 2/20 个有
-- `SimpleMath+` —— 2/20 个有
-- `Apply Whisper` —— 1/20 个有
-- `AudioCrop` —— 1/20 个有
-- `CheckpointLoaderSimple` —— 1/20 个有
-- `DualCLIPLoader` —— 1/20 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/20 个有
-- `ImpactInt` —— 1/20 个有
-- `Note Plus (mtb)` —— 1/20 个有
-- `SaveAudio` —— 1/20 个有
-- `UNETLoader` —— 1/20 个有
+- `CM_FloatToInt` —— 20/21 个有
+- `LTXVAudioVAELoader` —— 20/21 个有
+- `LTXVChunkFeedForward` —— 20/21 个有
+- `LTXVImgToVideoConditionOnly` —— 20/21 个有
+- `ModelPatchTorchSettings` —— 20/21 个有
+- `PathchSageAttentionKJ` —— 20/21 个有
+- `PrimitiveFloat` —— 20/21 个有
+- `PrimitiveInt` —— 20/21 个有
+- `INTConstant` —— 19/21 个有
+- `RH_LLMAPI_Pro_Node` —— 15/21 个有
+- `PreviewAny` —— 12/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/21 个有
+- `LTXVFirstLastFrameControl_TTP` —— 5/21 个有
+- `SimpleMath+` —— 5/21 个有
+- `easy showAnything` —— 4/21 个有
+- `Int` —— 2/21 个有
+- `SetNode` —— 2/21 个有
+- `TextInputNode` —— 2/21 个有
+- `DualCLIPLoader` —— 1/21 个有
+- `GetImageSize+` —— 1/21 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/21 个有
+- `MathExpression|pysssss` —— 1/21 个有
+- `PromptRelayEncode` —— 1/21 个有
+- `UNETLoader` —— 1/21 个有
+- `VAELoaderKJ` —— 1/21 个有
+- `easy getNode` —— 1/21 个有
+- `easy setNode` —— 1/21 个有
+- `孤海注释` —— 1/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 20 | 100% |
-| 高度 | 25 | 25 - 25 | 20 | 100% |
+| 宽度 | 97 | 97 - 97 | 21 | 100% |
+| 高度 | 25 | 25 - 25 | 21 | 100% |
 
 ## 常见问题
 
@@ -103,5 +91,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，20 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，20 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，21 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，21 个样本，取值集中（一致性 100%）

@@ -1,70 +1,73 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_42
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.908
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageScaleBy, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, StringConstantMultiline, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, easy clearCacheAll]
+frequency: 5
+level: strong
+coverage: 0.7996
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, Image Remove Alpha JK, KSampler, Lora Loader Stack (rgthree), PlaySound|pysssss, PreviewImage, PrimitiveStringMultiline, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen2.1文生图工作流  带提示词增强+seedvr2放大_2102367808427487234.json, 图片生成/文生图/Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json]
+members: ["图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json", "图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102616610388406274.json", "图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102657150928642049.json", "图片生成/文生图/Qwen Image 2.1 加速1分35秒出2K,4K_2103662823787286529.json", "图片生成/文生图/Qwen Image 2.1-mxlz- skills文生图+放大2K,4K_2102952303706857474.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_42
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen2.1文生图工作流  带提示词增强+seedvr2放大_2102367808427487234.json、图片生成/文生图/Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json、图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102616610388406274.json、图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102657150928642049.json、图片生成/文生图/Qwen Image 2.1 加速1分35秒出2K,4K_2103662823787286529.json、图片生成/文生图/Qwen Image 2.1-mxlz- skills文生图+放大2K,4K_2102952303706857474.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageScaleBy`
+- `Image Remove Alpha JK`
 - `KSampler`
-- `LoraLoaderModelOnly`
+- `Lora Loader Stack (rgthree)`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenImage21Cache`
 - `ResolutionSelector`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `StringConstantMultiline`
 - `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy clearCacheAll`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `QwenImage21BlockCacheT8` —— 1/2 个有
-- `QwenImage21Cache` —— 1/2 个有
-- `QwenImage21SageAttentionT8` —— 1/2 个有
-- `QwenImage21SpectrumT8` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `ImageApplyLUT+` —— 4/5 个有
+- `easy imageChooser` —— 4/5 个有
+- `GetItemFromList` —— 1/5 个有
+- `QwenImage21BlockCacheT8` —— 1/5 个有
+- `QwenImage21SageAttentionT8` —— 1/5 个有
+- `QwenImage21SpectrumT8` —— 1/5 个有
+- `easy batchAnything` —— 1/5 个有
+- `easy forLoopEnd` —— 1/5 个有
+- `easy forLoopStart` —— 1/5 个有
+- `easy lengthAnything` —— 1/5 个有
+- `easy promptList` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 40 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 采样步数 | 40 | 40 - 40 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -72,11 +75,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 40 - 40，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

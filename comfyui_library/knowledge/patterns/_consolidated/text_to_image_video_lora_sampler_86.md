@@ -1,103 +1,140 @@
 ---
 name: text_to_image_video_lora_sampler_86
 type: Text To Image
-frequency: 8
-level: strong
-coverage: 0.648625
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+frequency: 9
+level: weak
+coverage: 0.630333
+common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, EmptyLatentImage, FillMaskWithColor, GetNode, ImageConcatenate_UTK, ImageResizeKJv2, Int, InvertMask, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, PointsEditor, PreviewImage, PrimitiveInt, RH_Captioner, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, Text, VAEDecode, VAELoader, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, easy cleanGpuUsed, easy clearCacheAll, easy indexAnything, easy mathInt, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Minimax H3 Best Fast 极速高质量视频生成_2104680372096294914.json, 图片生成/反推提示词/Minimax_H3_Best_Fast极速版｜文生图反推图生图三合一高效出图_2104522656451219457.json, 图片生成/文生图/Minimax H3 Best Fast 极速高质量视频生成_2104680372096294914.json, 图片生成/文生图/Minimax_H3_Best_Fast极速版｜文生图反推图生图三合一高效出图_2104522656451219457.json, 视频生成/图生视频/H3二采SelfLift急速工作流 图生视频高效生成_2100308360200540161.json, 视频生成/图生视频/H3全能参考短剧工作流 多模态输入视频生成_2109027495902277633.json, 视频生成/图生视频/H3长视频衔接尾帧22帧锚点 视频生成连贯性优化_2109025859695890434.json, 视频生成/文生视频/短剧助手加速双采 self-lift模式高效视频生成_2098298081249947650.json]
+members: [视频生成/图生视频/scail2关键帧分批次转换1_2082351084420558850.json, 视频生成/图生视频/多角色替换影视二创｜长时视频生图生视频生成_2093418632721293314.json, 视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2097823943913721857.json, 视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2101447299451936769.json, 视频生成/图生视频/影视二创神器_长视频多角色批量替换第2版_2109437055964110850.json, 视频生成/图生视频/影视二创第2弹｜长时长视频多角色替换保持原片质感_2101494880974495746.json, 视频生成/图生视频/影视二创长时多角色替换2｜换角色不换剧情_2097180512333942786.json, 视频生成/图生视频/影视二创长时多角色替换｜视频生视频图生视频工作流_2097031796901896194.json, 视频生成/图生视频/长时多角色替换2｜影视二创视频生视频一键处理_2093744499456561153.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_86
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/Minimax H3 Best Fast 极速高质量视频生成_2104680372096294914.json、图片生成/反推提示词/Minimax_H3_Best_Fast极速版｜文生图反推图生图三合一高效出图_2104522656451219457.json、图片生成/文生图/Minimax H3 Best Fast 极速高质量视频生成_2104680372096294914.json、图片生成/文生图/Minimax_H3_Best_Fast极速版｜文生图反推图生图三合一高效出图_2104522656451219457.json、视频生成/图生视频/H3二采SelfLift急速工作流 图生视频高效生成_2100308360200540161.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/scail2关键帧分批次转换1_2082351084420558850.json、视频生成/图生视频/多角色替换影视二创｜长时视频生图生视频生成_2093418632721293314.json、视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2097823943913721857.json、视频生成/图生视频/影视二创神器 长视频多角色批量替换第2版_2101447299451936769.json、视频生成/图生视频/影视二创神器_长视频多角色批量替换第2版_2109437055964110850.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `JjkText`
+- `FillMaskWithColor`
+- `GetNode`
+- `ImageConcatenate_UTK`
+- `ImageResizeKJv2`
+- `Int`
+- `InvertMask`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `UNETLoader`
+- `PlaySound|pysssss`
+- `PointsEditor`
+- `PreviewImage`
+- `PrimitiveInt`
+- `RH_Captioner`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMaskV2`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
+- `SimpleMath+`
+- `Text`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus VAELoader`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy indexAnything`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 7/8 个有
-- `ModelPreviewOverrideKJ` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `ConditioningZeroOut` —— 6/8 个有
-- `H3SigmaRefiner` —— 6/8 个有
-- `PrimitiveStringMultiline` —— 6/8 个有
-- `SaveImage` —— 6/8 个有
-- `SelfLiftH3Sampler` —— 6/8 个有
-- `Anything Everywhere3` —— 5/8 个有
-- `MiniMaxH3MediaLoaderFantastic` —— 5/8 个有
-- `MiniMaxH3ReferenceSplitter` —— 5/8 个有
-- `Prompts Everywhere` —— 5/8 个有
-- `ComfySwitchNode` —— 4/8 个有
-- `PathchSageAttentionKJ` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `LoadAudio` —— 3/8 个有
-- `LoadImage` —— 3/8 个有
-- `BasicGuider` —— 2/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `RandomNoise` —— 2/8 个有
-- `SamplerCustomAdvanced` —— 2/8 个有
-- `VHS_LoadVideo` —— 2/8 个有
-- `GetImageRangeFromBatch` —— 1/8 个有
-- `MiniMaxH3AddGuide` —— 1/8 个有
-- `TrimAudioDuration` —— 1/8 个有
+- `1hew_MaskMathOps` —— 8/9 个有
+- `JjkText` —— 8/9 个有
+- `PrimitiveBoolean` —— 8/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `VHS_LoadVideoFFmpeg` —— 8/9 个有
+- `solarL_SaveImagesToZip` —— 8/9 个有
+- `孤海注释` —— 7/9 个有
+- `SaveImage` —— 2/9 个有
+- `CFGNorm` —— 1/9 个有
+- `ConditioningZeroOut` —— 1/9 个有
+- `ControlNetApplySD3` —— 1/9 个有
+- `ControlNetLoader` —— 1/9 个有
+- `DepthAnything_V2` —— 1/9 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 1/9 个有
+- `ETN_ApplyMaskToImage` —— 1/9 个有
+- `EnhancedLoadDiffusionModel` —— 1/9 个有
+- `ExtractStoryboards_xuhuan1024` —— 1/9 个有
+- `Float` —— 1/9 个有
+- `Float to Int` —— 1/9 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/9 个有
+- `GetImageSize` —— 1/9 个有
+- `INPAINT_MaskedFill` —— 1/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/9 个有
+- `ModelSamplingAuraFlow` —— 1/9 个有
+- `RMBG` —— 1/9 个有
+- `SetUnionControlNetType` —— 1/9 个有
+- `TextConcatenate_UTK` —— 1/9 个有
+- `TextEncodeQwenImageEditPlus` —— 1/9 个有
+- `VHS_LoadVideo` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 宽度 | 80 | 80 - 512 | 9 | 0% |
+| 高度 | 80 | 80 - 512 | 9 | 0% |
+| 采样步数 | 4 | 4 - 8 | 9 | 72% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 9 | 73% |
+| 采样算法 | er_sde | - | 9 | 89% |
+| 调度器 | beta | - | 9 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| ControlNet 权重 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 512，9 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 512，9 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 8，9 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，9 个样本
+- 采样算法 最常用 er_sde，9 个样本，一致性 89%
+- 调度器 最常用 beta，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

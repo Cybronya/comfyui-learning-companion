@@ -1,44 +1,44 @@
 ---
 name: unknown_workflow_unet_vae_5
 type: Unknown Workflow
-frequency: 7
+frequency: 13
 level: moderate
-coverage: 0.716857
-common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3Director, SaveVideo, UNETLoader, VAELoader]
+coverage: 0.863
+common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax_h3_director_fl2v 参考生视频_2084823508688920578.json, 视频生成/图生视频/minimax_h3_director_fl2v_2094619431400988673.json, 视频生成/图生视频/minimax_h3_director_r2v 参考生视频_2084824118477811713.json, 视频生成/图生视频/minimax_h3_director_rv2v 参考改视频_2084824457453072386.json, 视频生成/文生视频/MiniMax H3 (LTX2.3类似的那种导演台全能版本）_2086267039899021313.json, 视频生成/文生视频/MiniMax H3 Director 全能导演台_2093465779391000578.json, 视频生成/文生视频/MiniMax H3 导演台-文生视频 图生视频 首尾帧生视频 视频转视频 参考素材转视频_2088428364578250753.json]
+members: [视频生成/图生视频/H3 导演台-R2V参考主体生视频_2089168093019987970.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流_2095764158875791361.json, 视频生成/图生视频/MiniMax H3开源版 导演台全能工作流加速优化_2086023470298779649.json, 视频生成/图生视频/MiniMax-导演台全能工作流_2086789063905988610.json, 视频生成/图生视频/Minimax-多参考长视频生成（导演台长视频）_2088245444265734145.json, 视频生成/图生视频/minimax导演台工作流_2090286084860235778.json, 视频生成/图生视频/minimax导演台工作流_2091395255663939586.json, 视频生成/图生视频/视频人物替换｜参考图换脸改衣_2089916752309350401.json, 视频生成/图生视频/（自用）MiniMax H3 导演台工作流（原作者：AI搅拌手）_2088301831494660097.json, 视频生成/文生视频/FZ-MinimaxH3-视频导演台（加速版）_2096847459136917505.json, 视频生成/文生视频/H3 全能导演台-T2V文生视频_2088249873417195521.json, 视频生成/文生视频/MINIMAX-H3导演台工作流_2092196369317580801.json, 视频生成/文生视频/minimax导演台工作流_2079449672288129026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/minimax_h3_director_fl2v 参考生视频_2084823508688920578.json、视频生成/图生视频/minimax_h3_director_fl2v_2094619431400988673.json、视频生成/图生视频/minimax_h3_director_r2v 参考生视频_2084824118477811713.json、视频生成/图生视频/minimax_h3_director_rv2v 参考改视频_2084824457453072386.json、视频生成/文生视频/MiniMax H3 (LTX2.3类似的那种导演台全能版本）_2086267039899021313.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/H3 导演台-R2V参考主体生视频_2089168093019987970.json、视频生成/图生视频/MiniMax H3 导演台全能工作流_2095764158875791361.json、视频生成/图生视频/MiniMax H3开源版 导演台全能工作流加速优化_2086023470298779649.json、视频生成/图生视频/MiniMax-导演台全能工作流_2086789063905988610.json、视频生成/图生视频/Minimax-多参考长视频生成（导演台长视频）_2088245444265734145.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CreateVideo`
-- `MiniMaxH3Director`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/7 个有
-- `PathchSageAttentionKJ` —— 2/7 个有
-- `CR Model Input Switch` —— 1/7 个有
-- `EasyCache` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
-- `SolAttnPatch` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 11/13 个有
+- `PathchSageAttentionKJ` —— 11/13 个有
+- `MiniMaxH3Director` —— 9/13 个有
+- `PreviewAny` —— 6/13 个有
+- `ComfyMiniMaxH3Director` —— 4/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
+- `BasicGuider` —— 1/13 个有
+- `ModelAttentionBackend` —— 1/13 个有
 
 ## 典型参数
 

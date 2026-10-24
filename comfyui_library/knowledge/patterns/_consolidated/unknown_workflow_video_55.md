@@ -3,38 +3,39 @@ name: unknown_workflow_video_55
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.984
-common_nodes: [CustomAddLabel, GetVideoComponents, LoadAudio, LoadImage, LoadVideo, SaveVideo, VHS_VideoCombine]
+coverage: 0.788333
+common_nodes: [CR Prompt Text, Float, JWInteger, LoadImage, PreviewImage, RunningHub_FramePack_F1, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2048450015756029954.json, 视频生成/图生视频/2048445714136567810.json, 视频生成/图生视频/2037865481549389825.json]
+members: [视频生成/图生视频/FramePack-F1_1919668964639571969.json, 视频生成/图生视频/FramePack-F1正向采样图生视频_1919371858402283522.json, 视频生成/图生视频/最新图生视频FramePack-F1（稳定、流畅）_1919967550505943042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_55
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2048450015756029954.json、视频生成/图生视频/2048445714136567810.json、视频生成/图生视频/2037865481549389825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack-F1_1919668964639571969.json、视频生成/图生视频/FramePack-F1正向采样图生视频_1919371858402283522.json、视频生成/图生视频/最新图生视频FramePack-F1（稳定、流畅）_1919967550505943042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CustomAddLabel`
-- `GetVideoComponents`
-- `LoadAudio`
+- `CR Prompt Text`
+- `Float`
+- `JWInteger`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `PreviewImage`
+- `RunningHub_FramePack_F1`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

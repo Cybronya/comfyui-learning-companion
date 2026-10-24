@@ -3,50 +3,59 @@ name: unknown_workflow_video_lora_sampler_839
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7235
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.6705
+common_nodes: [Bjornulf_AnythingToText, Bjornulf_ShowInt, Bjornulf_ShowStringText, CLIPTextEncode, CR String To Boolean, CR String To Number, CR Text Input Switch (4 way), GetNode, ImpactSwitch, Int, JjkText, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Note _O, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement]
 problems: []
 missing: []
-members: [视频生成/图生视频/1980897835057106945.json, 视频生成/图生视频/1984179008936050689.json]
+members: [视频生成/图生视频/wan2.1图生视频-加强版_1902736464273158146.json, 视频生成/图生视频/wan2.1图生视频-固定pose-大摆锤_1902985509671440385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_839
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1980897835057106945.json、视频生成/图生视频/1984179008936050689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1图生视频-加强版_1902736464273158146.json、视频生成/图生视频/wan2.1图生视频-固定pose-大摆锤_1902985509671440385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Bjornulf_AnythingToText`
+- `Bjornulf_ShowInt`
+- `Bjornulf_ShowStringText`
+- `CLIPTextEncode`
+- `CR String To Boolean`
+- `CR String To Number`
+- `CR Text Input Switch (4 way)`
+- `GetNode`
+- `ImpactSwitch`
+- `Int`
+- `JjkText`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
+- `Note _O`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `easy textSwitch` —— 1/2 个有
 
 ## 典型参数
 

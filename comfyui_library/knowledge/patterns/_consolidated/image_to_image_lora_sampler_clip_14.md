@@ -1,115 +1,88 @@
 ---
 name: image_to_image_lora_sampler_clip_14
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.5945
-common_nodes: [BasicGuider, BasicScheduler, Bounded Image Crop with Mask, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, DisableNoise, FlipSigmas, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, Image Comparer (rgthree), ImageResize+, ImageToMask, InFluxModelSamplingPred, Int, KSampler, KuwaharaBlur, LayerColor: Color of Shadow & Highlight, LayerColor: RGB, LoadImage, LoraLoaderModelOnly, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, OutFluxModelSamplingPred, PreviewImage, PrimitiveFloat, RHHiddenNodes, ReferenceLatent, ResizeAndPadImage, ResizeImageMixlab, SamplerCustomAdvanced, SaveImage, UNETLoader_Any, VAEDecode, VAEEncode, VAELoader, easy boolean, easy cleanGpuUsed, easy ifElse, easy imageColorMatch, easy int]
-problems: [Steps较低可能导致细节不足]
-missing: [Bounded Image Crop with Mask, CR Text, LayerColor: Color of Shadow & Highlight, LayerColor: RGB, easy boolean, easy cleanGpuUsed, easy imageColorMatch, easy int, ImageResize+, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: PurgeVRAM V2, Latent Noise Injection, Upscale Model Loader]
-members: [图片生成/图生图/2071416993240150018.json, 图片生成/图生图/2072942349625413633.json]
+frequency: 12
+level: strong
+coverage: 0.897167
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, RepeatLatentBatch, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1951582446481518594.json, 图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1970704107847774209.json, 图片生成/图生图/Flux kontext 老照片高清修复上色_1942218462028828674.json, 图片生成/图生图/Kontext Dev Fuse it｜多图溶图_1946409936961040386.json, 图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1945660410626285569.json, 图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1969909066803933185.json, 图片生成/图生图/Kontext-DEV模特换衣_1940636003080056834.json, 图片生成/图生图/Kontext-DEV模特换衣_1948210585455460353.json, 图片生成/图生图/Kontext-电商可用万物迁移（融图）_1946483138434621441.json, 图片生成/图生图/人物换头写真_无需PS深度溶图Kontext-LORA_1945817066031247361.json, 图片生成/图生图/人物换头换脸_深度溶图Kontext-LORA_1946849452919545857.json, 图片生成/图生图/换头_1950809310471331842.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_14
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2071416993240150018.json、图片生成/图生图/2072942349625413633.json）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1951582446481518594.json、图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1970704107847774209.json、图片生成/图生图/Flux kontext 老照片高清修复上色_1942218462028828674.json、图片生成/图生图/Kontext Dev Fuse it｜多图溶图_1946409936961040386.json、图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1945660410626285569.json…）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `Bounded Image Crop with Mask`
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
-- `DisableNoise`
-- `FlipSigmas`
-- `FluxDeGuidance`
-- `FluxForwardODESampler`
-- `FluxReverseODESampler`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageToMask`
-- `InFluxModelSamplingPred`
-- `Int`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
-- `KuwaharaBlur`
-- `LayerColor: Color of Shadow & Highlight`
-- `LayerColor: RGB`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `NunchakuFluxDiTLoader`
-- `NunchakuTextEncoderLoader`
-- `OutFluxModelSamplingPred`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RHHiddenNodes`
 - `ReferenceLatent`
-- `ResizeAndPadImage`
-- `ResizeImageMixlab`
-- `SamplerCustomAdvanced`
+- `RepeatLatentBatch`
 - `SaveImage`
-- `UNETLoader_Any`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageColorMatch`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `DisTorchPurgeVRAMV2` —— 1/2 个有
-- `GrowMask` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `JoinImageWithAlpha` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `Latent Noise Injection` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `Upscale Model Loader` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
+- `FluxKontextImageScale` —— 11/12 个有
+- `GoogleTranslateTextNode` —— 11/12 个有
+- `PreviewImage` —— 11/12 个有
+- `ShowText|pysssss` —— 11/12 个有
+- `Text Multiline` —— 10/12 个有
+- `ImageStitch` —— 9/12 个有
+- `RMBG` —— 9/12 个有
+- `FastCanvas` —— 7/12 个有
+- `FastCanvasTool` —— 7/12 个有
+- `ImageScaleDownToSize` —— 7/12 个有
+- `EmptySD3LatentImage` —— 4/12 个有
+- `GetImageSizeAndCount` —— 4/12 个有
+- `SaveLatent` —— 4/12 个有
+- `LayerMask: PersonMaskUltra V2` —— 3/12 个有
+- `LayerUtility: CropByMask V2` —— 3/12 个有
+- `Note Plus (mtb)` —— 3/12 个有
+- `Image Rembg (Remove Background)` —— 2/12 个有
+- `CR Text` —— 1/12 个有
+- `ConditioningCombine` —— 1/12 个有
+- `Image Comparer (rgthree)` —— 1/12 个有
+- `Images to RGB` —— 1/12 个有
+- `LoadImageFromUrl` —— 1/12 个有
+- `RH_Translator` —— 1/12 个有
+- `TeaCache` —— 1/12 个有
+- `Text _O` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 2 | 100% |
-| 重绘幅度 | 0.64 | - | 2 | 44% |
+| 采样步数 | 20 | 20 - 20 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.64，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
-- 高发问题（5/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Bounded Image Crop with Mask、CR Text、LayerColor: Color of Shadow & Highlight、LayerColor: RGB、easy boolean
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 20，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

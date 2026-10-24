@@ -1,55 +1,56 @@
 ---
 name: unknown_workflow_lora_sampler_clip_153
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.773
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImageMask, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, String Literal, Text, Text Load Line From File, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart]
+frequency: 4
+level: moderate
+coverage: 0.96
+common_nodes: [AdvancedLyingSigmaSampler, BasicScheduler, CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JoinStringMulti, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [String Literal, Text Load Line From File, easy forLoopEnd, easy forLoopStart]
-members: [图片生成/文生图/1947936412476801026.json, 图片生成/文生图/1948523697077387265.json]
+missing: []
+members: [图片生成/文生图/Z-image-邵氏武侠风格工作流_2029716281011736578.json, 图片生成/文生图/Z-image-邵氏武侠风格工作流_2082008160352690178.json, 图片生成/文生图/Z-image邵氏风格工作流_2023426462694510593.json, 图片生成/文生图/邵氏电影Z-image文生图工作流_2054391134608207873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_153
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1947936412476801026.json、图片生成/文生图/1948523697077387265.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image-邵氏武侠风格工作流_2029716281011736578.json、图片生成/文生图/Z-image-邵氏武侠风格工作流_2082008160352690178.json、图片生成/文生图/Z-image邵氏风格工作流_2023426462694510593.json、图片生成/文生图/邵氏电影Z-image文生图工作流_2054391134608207873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
+全部 4 个 workflow 都包含：
+- `AdvancedLyingSigmaSampler`
 - `BasicScheduler`
+- `CFGZeroStar`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DeepTranslatorTextNode`
-- `DualCLIPLoader`
+- `CR Text`
 - `EmptyLatentImage`
+- `JoinStringMulti`
 - `KSamplerSelect`
-- `LoadImageMask`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `SamplerCustom`
 - `SaveImage`
-- `String Literal`
-- `Text`
-- `Text Load Line From File`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `Switch any [Crystools]` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1552 | - | 2 | 100% |
+| 宽度 | 1004 | 928 - 1704 | 4 | 72% |
+| 高度 | 1664 | 1280 - 1920 | 4 | 86% |
 
 ## 常见问题
 
@@ -57,7 +58,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1552，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、Text Load Line From File、easy forLoopEnd、easy forLoopStart
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1004，观测区间 928 - 1704，4 个样本
+- 高度 中位数 1664，观测区间 1280 - 1920，4 个样本，取值集中（一致性 86%）

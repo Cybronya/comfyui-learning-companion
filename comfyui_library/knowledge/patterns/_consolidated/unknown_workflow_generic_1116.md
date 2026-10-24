@@ -1,0 +1,48 @@
+---
+name: unknown_workflow_generic_1116
+type: Unknown Workflow
+frequency: 3
+level: moderate
+coverage: 0.891667
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, Note _O, SaveAudio]
+problems: []
+missing: []
+members: [音频生成/音频生成/TTS2声音克隆_1981924852229652481.json, 音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json, 音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json]
+source: knowledge_consolidation
+---
+
+# unknown_workflow_generic_1116
+
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/TTS2声音克隆_1981924852229652481.json、音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json、音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json）
+
+- **类型**：Unknown Workflow
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
+
+## 共有节点
+
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `Note _O`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `GetVideoComponents` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `SaveAudioAdvanced` —— 1/3 个有
+
+## 典型参数
+
+无可统计的参数。
+
+## 常见问题
+
+参数体检未发现问题。
+
+## 建议与风险
+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

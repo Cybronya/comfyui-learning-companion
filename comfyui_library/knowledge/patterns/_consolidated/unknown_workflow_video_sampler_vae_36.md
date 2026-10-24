@@ -3,68 +3,76 @@ name: unknown_workflow_video_sampler_vae_36
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.831545
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.928
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1996999462549655554.json, 视频生成/图生视频/1988898686707044353.json, 视频生成/图生视频/2026900959795879938.json, 视频生成/图生视频/2028672160373415937.json, 视频生成/图生视频/1960048260402589698.json, 视频生成/图生视频/2037816256153264129.json, 视频生成/图生视频/1984094280551694338.json, 视频生成/图生视频/2025798781039546370.json, 视频生成/图生视频/2041353094105141250.json, 视频生成/图生视频/2026920632201515010.json, 音频生成/音频生成/(歌曲数字人)全流程精准口型高强动作V4_1989287142675369986.json]
+members: [视频生成/图生视频/VACE14B正式版【动作迁移&图片跳舞】-有参考图_1922660439551873025.json, 视频生成/图生视频/VACE14B正式版【动作迁移&图片跳舞】-有参考图_1934429538858266626.json, 视频生成/图生视频/VACE双图参考，教程请看b站八月饺子_1926978789408952322.json, 视频生成/图生视频/VACE视频转绘美女跳舞_1909879938038624257.json, 视频生成/图生视频/wan 2.1  视频编辑vace工作流_1907301627349622785.json, 视频生成/图生视频/【抖音爆款国风古画健身视频】VACE-CausVid加速版_1925071264359378946.json, 视频生成/图生视频/人物动作迁移_图生视频_wan2.2_1969653436927143937.json, 视频生成/图生视频/动作迁移_人物跳舞图生视频_加速版_支持15S_1968167021571616770.json, 视频生成/图生视频/动作迁移_人物跳舞图生视频_加速版_支持15S_2000276235513196545.json, 视频生成/图生视频/舞蹈迁移-FusionX-VACE大师级视频ott_1940038425300860930.json, 视频生成/图生视频/视频动作迁移_wan2.2_15秒版_1968700709732589569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_36
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1996999462549655554.json、视频生成/图生视频/1988898686707044353.json、视频生成/图生视频/2026900959795879938.json、视频生成/图生视频/2028672160373415937.json、视频生成/图生视频/1960048260402589698.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/VACE14B正式版【动作迁移&图片跳舞】-有参考图_1922660439551873025.json、视频生成/图生视频/VACE14B正式版【动作迁移&图片跳舞】-有参考图_1934429538858266626.json、视频生成/图生视频/VACE双图参考，教程请看b站八月饺子_1926978789408952322.json、视频生成/图生视频/VACE视频转绘美女跳舞_1909879938038624257.json、视频生成/图生视频/wan 2.1  视频编辑vace工作流_1907301627349622785.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 10/11 个有
-- `JWInteger` —— 10/11 个有
-- `MultiTalkModelLoader` —— 10/11 个有
-- `PreviewAny` —— 10/11 个有
-- `WanVideoLoraSelect` —— 10/11 个有
-- `WanVideoModelLoader` —— 10/11 个有
-- `GetImageSizeAndCount` —— 9/11 个有
-- `Int` —— 5/11 个有
-- `JWFloat` —— 4/11 个有
-- `RH_GetAudioDuration` —— 4/11 个有
-- `SimpleMath+` —— 4/11 个有
-- `ToInt` —— 4/11 个有
-- `easy showAnything` —— 3/11 个有
-- `Label (rgthree)` —— 2/11 个有
-- `RHHiddenNodes` —— 2/11 个有
-- `Comfly_api_set` —— 1/11 个有
-- `Comfly_suno_custom` —— 1/11 个有
+- `AIO_Preprocessor` —— 10/11 个有
+- `VHS_LoadVideo` —— 10/11 个有
+- `WanVideoBlockSwap` —— 10/11 个有
+- `WanVideoExperimentalArgs` —— 10/11 个有
+- `WanVideoTeaCache` —— 10/11 个有
+- `WanVideoTorchCompileSettings` —— 10/11 个有
+- `WanVideoEnhanceAVideo` —— 9/11 个有
+- `WanVideoSLG` —— 9/11 个有
+- `WanVideoVACEModelSelect` —— 9/11 个有
+- `DWPreprocessor` —— 6/11 个有
+- `GetImageSizeAndCount` —— 6/11 个有
+- `ImageBlend` —— 6/11 个有
+- `WanVideoLoraSelect` —— 6/11 个有
+- `ColorMatch` —— 5/11 个有
+- `EmptyImage` —— 5/11 个有
+- `ImageConcatMulti` —— 5/11 个有
+- `ImagePadKJ` —— 5/11 个有
+- `ShowText|pysssss` —— 5/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/11 个有
+- `Primitive integer [Crystools]` —— 4/11 个有
+- `Text Concatenate` —— 4/11 个有
+- `Text Multiline` —— 4/11 个有
+- `TextInput_` —— 4/11 个有
+- `ImpactSwitch` —— 3/11 个有
+- `Int` —— 3/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/11 个有
+- `SimpleMath+` —— 3/11 个有
+- `easy int` —— 3/11 个有
+- `AddLabel` —— 2/11 个有
+- `PreviewImage` —— 2/11 个有
+- `RH_Captioner` —— 2/11 个有
 - `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `MathExpression|pysssss` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
-- `PrimitiveFloat` —— 1/11 个有
-- `SaveAudio` —— 1/11 个有
-- `easy clearCacheAll` —— 1/11 个有
+- `GetNode` —— 1/11 个有
+- `ImageConcanate` —— 1/11 个有
+- `RHHiddenNodes` —— 1/11 个有
+- `SetNode` —— 1/11 个有
+- `VHS_VideoInfoSource` —— 1/11 个有
+- `easy imageRemBg` —— 1/11 个有
 
 ## 典型参数
 

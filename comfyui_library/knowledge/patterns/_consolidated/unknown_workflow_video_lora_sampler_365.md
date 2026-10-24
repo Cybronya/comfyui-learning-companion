@@ -2,78 +2,72 @@
 name: unknown_workflow_video_lora_sampler_365
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.976167
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SeparateMasks, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.966667
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSampler, LoadAudio, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1945360751139934210.json, 视频生成/图生视频/1941283119796535298.json, 视频生成/图生视频/1941338366120194050.json, 视频生成/图生视频/1941135610319106050.json, 视频生成/图生视频/1945014615811219457.json, 视频生成/图生视频/1944226088988053505.json]
+members: [视频生成/图生视频/wan s2v 无时间限制音频转视频模型_1977204521292189697.json, 视频生成/图生视频/wans2v_3xfaster_workflow_1960961884411367425.json, 视频生成/文生视频/Wan2.2-S2V对口型-文本+音频+动态参考+控制视频生视频_1961064988674822146.json, 视频生成/文生视频/Wan2.2-S2V对口型-文本+音频+图片+控制视频生视频_1961064966939983873.json, 视频生成/文生视频/Wan2.2-S2V对口型-文本+音频生视频_1961064915547131906.json, 视频生成/文生视频/万象2.2 S2V 声音转视频_1961417789682728962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_365
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1945360751139934210.json、视频生成/图生视频/1941283119796535298.json、视频生成/图生视频/1941338366120194050.json、视频生成/图生视频/1941135610319106050.json、视频生成/图生视频/1945014615811219457.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/wan s2v 无时间限制音频转视频模型_1977204521292189697.json、视频生成/图生视频/wans2v_3xfaster_workflow_1960961884411367425.json、视频生成/文生视频/Wan2.2-S2V对口型-文本+音频+动态参考+控制视频生视频_1961064988674822146.json、视频生成/文生视频/Wan2.2-S2V对口型-文本+音频+图片+控制视频生视频_1961064966939983873.json、视频生成/文生视频/Wan2.2-S2V对口型-文本+音频生视频_1961064915547131906.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSampler`
 - `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SeparateMasks`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanSoundImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 5/6 个有
-- `MathExpression|pysssss` —— 5/6 个有
-- `SaveAudio` —— 5/6 个有
-- `AudioCrop` —— 4/6 个有
-- `AudioSeparation` —— 4/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `JWStringToInteger` —— 4/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoExperimentalArgs` —— 3/6 个有
-- `WanVideoFreeInitArgs` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `ACE_AudioCrop` —— 1/6 个有
-- `Audio Duration (mtb)` —— 1/6 个有
-- `Compare` —— 1/6 个有
-- `ImageUpscaleWithModel` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
-- `easy ifElse` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `LoadImage` —— 4/6 个有
+- `AudioCrop` —— 3/6 个有
+- `AudioSeparation` —— 3/6 个有
+- `DWPreprocessor` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `VHS_LoadVideo` —— 2/6 个有
+- `RH_Translator` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 7 | 6 - 8 | 6 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | uni_pc | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 7，观测区间 6 - 8，6 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

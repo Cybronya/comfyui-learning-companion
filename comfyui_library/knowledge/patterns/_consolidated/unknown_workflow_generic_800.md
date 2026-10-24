@@ -1,46 +1,45 @@
 ---
 name: unknown_workflow_generic_800
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.906
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Image Batch, ImageConcanate, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, Text List, ToString]
+frequency: 4
+level: moderate
+coverage: 0.78475
+common_nodes: [LoadAudio, NormalizeAudioLoudness, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PrimitiveStringMultiline, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio, easy promptList]
 problems: []
 missing: []
-members: [图片生成/文生图/可乐-小说剧本生成分镜提示词_2008160689906520065.json, 视频生成/图生视频/2008539333560639489.json]
+members: [音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json, 音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json, 音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json, 音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_800
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/可乐-小说剧本生成分镜提示词_2008160689906520065.json、视频生成/图生视频/2008539333560639489.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json、音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json、音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json、音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Batch`
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PreviewImage`
-- `Text List`
-- `ToString`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceMultiSpeakerTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `PrimitiveStringMultiline`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudio`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `RH_Sora2_I2V` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `easy saveText` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `忽略多组孤海` —— 2/4 个有
+- `JWStringToFloat` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
 
 ## 典型参数
 
@@ -52,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

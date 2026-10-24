@@ -3,72 +3,86 @@ name: text_to_image_controlnet_video_lora_3
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9385
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DrawViTPose, EmptyLatentImage, GetImageSize, ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, SaveVideoRGBA, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy int, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.914
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, H3SigmaRefiner, ImageConcatMulti, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LayerUtility: ImageBlend V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadMoGeModel, LoraLoaderModelOnly, MiniMaxH3FunControlNetApply, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MoGeInference, MoGeRender, ModelAttentionBackend, ModelPatchLoader, ModelPreviewOverrideKJ, PrimitiveFloat, RMBG, ResolutionSelector, SaveImage, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SetLatentNoiseMask, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy positive, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/动作表情迁移工作流｜单路ViTPose姿态绘制生成_2094898738748809217.json, 视频生成/图生视频/单路ViTPose+Draw｜动作表情迁移服装展示工作流_2095091143997476866.json]
+members: [视频生成/图生视频/MiniMax H3动作迁移稳定版，文生视频视频生视频_2111245635704938498.json, 视频生成/图生视频/动作迁移升级版本法线参考固定提示词 动作复刻视频生成_2109693290554679297.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_video_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动作表情迁移工作流｜单路ViTPose姿态绘制生成_2094898738748809217.json、视频生成/图生视频/单路ViTPose+Draw｜动作表情迁移服装展示工作流_2095091143997476866.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3动作迁移稳定版，文生视频视频生视频_2111245635704938498.json、视频生成/图生视频/动作迁移升级版本法线参考固定提示词 动作复刻视频生成_2109693290554679297.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DrawViTPose`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImageSize`
+- `H3SigmaRefiner`
 - `ImageConcatMulti`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LayerUtility: ImageBlend V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadMoGeModel`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SaveVideoRGBA`
+- `MiniMaxH3FunControlNetApply`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MoGeInference`
+- `MoGeRender`
+- `ModelAttentionBackend`
+- `ModelPatchLoader`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `RMBG`
+- `ResolutionSelector`
+- `SaveImage`
+- `SelfLiftAvatarH3Sampler`
+- `SelfLiftAvatarH3TST`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoUni3C_ControlnetLoader`
-- `WanVideoUni3C_embeds`
-- `WanVideoVAELoader`
-- `easy int`
+- `easy positive`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `MMH3LatentUpscaleWithModelParams` —— 1/2 个有
+- `MMH3TemporalSplitParams` —— 1/2 个有
+- `MMH3UltimateUpscale` —— 1/2 个有
+- `RandomNoise` —— 1/2 个有
+- `VOSR2ModelLoader` —— 1/2 个有
+- `VOSR2Upscale` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| ControlNet 权重 | 0.45 | - | 2 | 100% |
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
 | 采样算法 | er_sde | - | 2 | 100% |
@@ -85,6 +99,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- ControlNet 权重 中位数 0.45，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%

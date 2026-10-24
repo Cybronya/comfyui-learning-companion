@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_546
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.682667
-common_nodes: [Fast Groups Bypasser (rgthree), RH_RhartImageG2OfficialTextToImage, RH_RhartImageNProOfficialTextToImage, SaveImage]
+coverage: 0.733
+common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, RH_Nano_Banana2_Image2Image, SaveImage, Text Find and Replace, Textbox]
 problems: []
 missing: []
-members: [图片生成/文生图/智能图片Image2-文生图（官方稳定版-RH-OpenAPI）_2081931934514634753.json, 图片生成/文生图/智能图片V2 文生图（官方稳定版）_2085359975530061825.json, 图片生成/文生图/智能图片V2-文生图（官方稳定版-RH-OpenAPI）_2081941871772913665.json]
+members: [图片生成/图生图/爆火日历拼贴_2018199541769572353.json, 图片生成/图生图/爆火日历拼贴_2033536167555112961.json, 图片生成/图生图/马年财神照一键生成器_2018959404229468161.json, 图片生成/文生图/2031240935438290946.json, 图片生成/文生图/灵感趋势_2032381412757741570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_546
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/智能图片Image2-文生图（官方稳定版-RH-OpenAPI）_2081931934514634753.json、图片生成/文生图/智能图片V2 文生图（官方稳定版）_2085359975530061825.json、图片生成/文生图/智能图片V2-文生图（官方稳定版-RH-OpenAPI）_2081941871772913665.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/爆火日历拼贴_2018199541769572353.json、图片生成/图生图/爆火日历拼贴_2033536167555112961.json、图片生成/图生图/马年财神照一键生成器_2018959404229468161.json、图片生成/文生图/2031240935438290946.json、图片生成/文生图/灵感趋势_2032381412757741570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `RH_RhartImageG2OfficialTextToImage`
-- `RH_RhartImageNProOfficialTextToImage`
+全部 5 个 workflow 都包含：
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+- `Text Find and Replace`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/3 个有
+- `JWDatetimeString` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
 
 ## 典型参数
 

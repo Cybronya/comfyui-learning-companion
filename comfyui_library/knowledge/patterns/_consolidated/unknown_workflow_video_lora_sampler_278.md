@@ -2,86 +2,57 @@
 name: unknown_workflow_video_lora_sampler_278
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.47525
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, DirectorAudioFrameCalc, DirectorAudioScriptLoader, DirectorCasting, DirectorFinalRender, DirectorOrderGate, DirectorSceneIterator, DirectorStreamSaver, DirectorVideoPromptLoader, DirectorVisualStoryboardLoader, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, INTConstant, JoinStringMulti, KSamplerAdvanced, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2VAdvanced, PathchSageAttentionKJ, PreviewAudio, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SetNode, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSDefineSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+level: weak
+coverage: 0.851125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2027602453616660482.json, 视频生成/图生视频/2026683306535817218.json, 视频生成/图生视频/2036343808945823745.json, 视频生成/图生视频/2021176958817673218.json, 视频生成/文生视频/半手动版 _ 动态漫自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2065336611218481154.json, 视频生成/文生视频/半手动版本 _ 动态AI漫剧自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频一键生成_2062869621941817346.json, 视频生成/文生视频/半手动版本动态AI漫剧自定义角色+音色+分镜+台词+视频一键生成_2065351903407591425.json, 视频生成/文生视频/空白工作流_2083489604925214722.json]
+members: [视频生成/文生视频/video_wan2_2_14B_rewards_lora_1966051284912607234.json, 视频生成/文生视频/video_wan2_2_14B_t2v_优化版_1972464256455208962.json, 视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952546698105163778.json, 视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952688713274953729.json, 视频生成/文生视频/video_wan2_2_14B_灯光工作流+提示词_1950503507558387713.json, 视频生成/文生视频/wan2.2+2.1文生视频_1950156709198217218.json, 视频生成/文生视频/wan2.2文生视频-官方极速版_1950456441427693570.json, 视频生成/文生视频/wan2_2_t2v-生万物+妙转换+广告创意动画-高质量_1973586939590873089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_278
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2027602453616660482.json、视频生成/图生视频/2026683306535817218.json、视频生成/图生视频/2036343808945823745.json、视频生成/图生视频/2021176958817673218.json、视频生成/文生视频/半手动版 _ 动态漫自定义角色 _ 音色 _ 分镜 _ 台词 _ 视频_2065336611218481154.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/video_wan2_2_14B_rewards_lora_1966051284912607234.json、视频生成/文生视频/video_wan2_2_14B_t2v_优化版_1972464256455208962.json、视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952546698105163778.json、视频生成/文生视频/video_wan2_2_14B_多模精度型混用加速_1952688713274953729.json、视频生成/文生视频/video_wan2_2_14B_灯光工作流+提示词_1950503507558387713.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：48%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `DirectorAudioFrameCalc`
-- `DirectorAudioScriptLoader`
-- `DirectorCasting`
-- `DirectorFinalRender`
-- `DirectorOrderGate`
-- `DirectorSceneIterator`
-- `DirectorStreamSaver`
-- `DirectorVideoPromptLoader`
-- `DirectorVisualStoryboardLoader`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetNode`
-- `INTConstant`
-- `JoinStringMulti`
+- `EmptyHunyuanLatentVideo`
 - `KSamplerAdvanced`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `PainterI2VAdvanced`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `TDQwen3TTSBatchGenerateSpeaker`
-- `TDQwen3TTSDefineSpeaker`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSMultiDialog`
-- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 2/8 个有
+- `UNETLoader` —— 7/8 个有
+- `PathchSageAttentionKJ` —— 6/8 个有
+- `WanVideoNAG` —— 6/8 个有
+- `CFGZeroStar` —— 4/8 个有
+- `UnetLoaderGGUF` —— 3/8 个有
+- `GetNode` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | normal | - | 8 | 100% |
+| 采样步数 | fixed | - | 8 | 50% |
+| Prompt 约束强度(CFG) | 8 | 8 - 20 | 8 | 59% |
+| 采样算法 | 1 | 1 - 3.5 | 8 | 37% |
+| 调度器 | lcm | - | 8 | 62% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -89,8 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 normal，8 个样本，一致性 100%
+- 采样步数 最常用 fixed，8 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 20，8 个样本
+- 采样算法 中位数 1，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 37%
+- 调度器 最常用 lcm，8 个样本，一致性 62%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

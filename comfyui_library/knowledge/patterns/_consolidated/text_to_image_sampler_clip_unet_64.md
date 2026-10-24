@@ -1,70 +1,76 @@
 ---
 name: text_to_image_sampler_clip_unet_64
 type: Text To Image
-frequency: 7
-level: moderate
-coverage: 0.825143
-common_nodes: [CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 10
+level: strong
+coverage: 0.9307
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/01动漫人物+场景FLUX文生图_1947078298218455041.json, 图片生成/文生图/1938437078218641410.json, 图片生成/文生图/1942946111835291650.json, 图片生成/文生图/1943306363688939521.json, 图片生成/文生图/1946442950954115073.json, 图片生成/文生图/1959457037811920898.json, 图片生成/文生图/动漫人物+场景制作_2000568730323218434.json]
+members: [图片生成/图生图/线稿上色_z-image-trubo_2095092335230144513.json, 图片生成/图生图/线稿上色_z-image-trubo_2097175505438076930.json, 图片生成/图生图/线稿上色_z-image-trubo_2097514082390863873.json, 图片生成/文生图/3D人物编辑器应用系列之一——Z image Turbo的openpose_2019553633838309377.json, 图片生成/文生图/Z Image_精准动作设计_ControlNet应用_1996391560990310401.json, 图片生成/文生图/Z Image_精准动作设计之二_双人搏斗_ControlNet应用_1998728780791304193.json, 图片生成/文生图/Z image的Controlnet的Canny_1996385835375280130.json, 图片生成/文生图/Z image的Controlnet的Depth_1996388981573042178.json, 图片生成/文生图/Z image的Controlnet的openpose_1995081250421583873.json, 图片生成/文生图/Z-image-trubo_深度控制_2090688273374081025.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_64
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/01动漫人物+场景FLUX文生图_1947078298218455041.json、图片生成/文生图/1938437078218641410.json、图片生成/文生图/1942946111835291650.json、图片生成/文生图/1943306363688939521.json、图片生成/文生图/1946442950954115073.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/线稿上色_z-image-trubo_2095092335230144513.json、图片生成/图生图/线稿上色_z-image-trubo_2097175505438076930.json、图片生成/图生图/线稿上色_z-image-trubo_2097514082390863873.json、图片生成/文生图/3D人物编辑器应用系列之一——Z image Turbo的openpose_2019553633838309377.json、图片生成/文生图/Z Image_精准动作设计_ControlNet应用_1996391560990310401.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DeepTranslatorTextNode`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
+- `LoadImage`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewTextNode` —— 4/7 个有
-- `Any Switch (rgthree)` —— 3/7 个有
-- `ConcatTextOfUtils` —— 3/7 个有
-- `ConditioningZeroOut` —— 3/7 个有
-- `JjkText` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `ReferenceLatent` —— 2/7 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `QwenImageDiffsynthControlnet` —— 6/10 个有
+- `PreviewImage` —— 4/10 个有
+- `ZImageFunControlnet` —— 4/10 个有
+- `CR SDXL Aspect Ratio` —— 3/10 个有
+- `ImageConcanate` —— 3/10 个有
+- `LineartStandardPreprocessor` —— 3/10 个有
+- `DWPreprocessor` —— 1/10 个有
+- `OpenposePreprocessor` —— 1/10 个有
+- `Zoe-DepthMapPreprocessor` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 512 - 1280 | 7 | 66% |
-| 高度 | 720 | 512 - 1920 | 7 | 48% |
-| 采样步数 | 20 | 20 - 30 | 7 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 10 | 8 - 10 | 10 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1024 | 768 - 1824 | 10 | 70% |
+| 高度 | 1024 | 720 - 1280 | 10 | 88% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 512 - 1280，7 个样本
-- 高度 中位数 720，观测区间 512 - 1920，7 个样本，取值分散，一致性仅 48%
-- 采样步数 中位数 20，观测区间 20 - 30，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 8 - 10，10 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 768 - 1824，10 个样本
+- 高度 中位数 1024，观测区间 720 - 1280，10 个样本，取值集中（一致性 88%）

@@ -1,73 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_clip_108
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.768667
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, UnetLoaderGGUF, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: PurgeVRAM V2, Text Concatenate, Text Multiline, CR SDXL Aspect Ratio]
-members: [图片生成/文生图/1954712420105252865.json, 图片生成/文生图/1954718876200267778.json, 图片生成/文生图/LOGO生成 - Qwen_1993252010327736321.json]
+coverage: 0.976
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ClothesSegment, ConditioningZeroOut, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+problems: []
+missing: []
+members: [图片生成/图生图/指定角色换头-图生图-FLUX.2-klein-换脸_2036347325433520129.json, 图片生成/图生图/指定角色换脸-FLUX.2-klein-_2036670076690112513.json, 图片生成/图生图/角色换头-单人版-图生图-FLUX.2-klein-换脸_2036297825587306498.json, 图片生成/图生图/角色换头-单人版-图生图-FLUX.2-klein-换脸_2037946174061154306.json, 图片生成/图生图/角色换脸-单人版-FLUX.2-klein-_2034978304230428674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_108
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1954712420105252865.json、图片生成/文生图/1954718876200267778.json、图片生成/文生图/LOGO生成 - Qwen_1993252010327736321.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/指定角色换头-图生图-FLUX.2-klein-换脸_2036347325433520129.json、图片生成/图生图/指定角色换脸-FLUX.2-klein-_2036670076690112513.json、图片生成/图生图/角色换头-单人版-图生图-FLUX.2-klein-换脸_2036297825587306498.json、图片生成/图生图/角色换头-单人版-图生图-FLUX.2-klein-换脸_2037946174061154306.json、图片生成/图生图/角色换脸-单人版-FLUX.2-klein-_2034978304230428674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `CR Text`
+- `ClothesSegment`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Text Multiline`
-- `UnetLoaderGGUF`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 2/3 个有
-- `SeedVR2` —— 2/3 个有
-- `SeedVR2BlockSwap` —— 2/3 个有
-- `Text Concatenate` —— 2/3 个有
-- `CFGZeroStar` —— 1/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
+- `SeedVR2LoadDiTModel` —— 4/5 个有
+- `SeedVR2LoadVAEModel` —— 4/5 个有
+- `SeedVR2VideoUpscaler` —— 4/5 个有
+- `BlockifyMask` —— 3/5 个有
+- `EmptyFlux2LatentImage` —— 3/5 个有
+- `GrowMaskWithBlur` —— 2/5 个有
+- `ImageCompositeMasked` —— 2/5 个有
+- `InpaintModelConditioning` —— 2/5 个有
+- `LayerMask: MaskPreview` —— 2/5 个有
+- `LayerUtility: ColorImage V2` —— 2/5 个有
+- `RH_Translator` —— 2/5 个有
+- `easy sam3ImageSegmentation` —— 2/5 个有
+- `easy sam3ModelLoader` —— 2/5 个有
+- `Int` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `SeedVR2BlockSwap` —— 1/5 个有
+- `TT_img_enc_v2` —— 1/5 个有
+- `TwoWaySwitch` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 10 | 3 | 53% |
-| Prompt 约束强度(CFG) | 5 | 4 - 5 | 3 | 90% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 10，3 个样本
-- Prompt 约束强度(CFG) 中位数 5，观测区间 4 - 5，3 个样本，取值集中（一致性 90%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、Text Concatenate、Text Multiline、CR SDXL Aspect Ratio
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

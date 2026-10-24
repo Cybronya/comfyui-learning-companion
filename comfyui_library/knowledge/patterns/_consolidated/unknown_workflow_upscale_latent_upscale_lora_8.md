@@ -1,33 +1,43 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_8
 type: Unknown Workflow
-frequency: 17
+frequency: 20
 level: strong
-coverage: 0.850412
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+coverage: 0.5732
+common_nodes: [Any To String (mtb), CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, CheckpointLoaderSimple, CreateVideo, Display Any (rgthree), EmptyImage, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageScaleBy, ImpactSwitch, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetNode, ShowText|pysssss, VAEDecodeTiled, VRAMReserver, easy cleanGpuUsed, easy convertAnything, easy int, llama_cpp_instruct_adv, llama_cpp_model_loader, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/2039704492752510977.json, 视频生成/图生视频/2039914050452201474.json, 视频生成/图生视频/2035320209401192449.json, 视频生成/图生视频/2030927886542180353.json, 视频生成/图生视频/2058356490804752385.json, 视频生成/图生视频/2037117341531643906.json, 视频生成/图生视频/2042604454435889153.json, 视频生成/图生视频/2030584551327670273.json, 视频生成/图生视频/2037112524918755329.json, 视频生成/图生视频/2034102193380401154.json, 视频生成/图生视频/2040291923272933378.json, 视频生成/图生视频/2049507628333670402.json, 视频生成/图生视频/2037239092089458690.json, 视频生成/文生视频/LTX-2.3+Qwen3.5生成宠物播客视频_2030535698637398018.json, 视频生成/文生视频/LTX-2.3+Qwen3.5生成武打电影视频_2030549062293921794.json, 视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json, 视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json]
+members: [视频生成/图生视频/LTX2.3图生视频+音视同步【双版本优化】_2030893436714360834.json, 视频生成/图生视频/LTX2.3图生视频24G显卡可用【gguf优化版】_2037346558236168193.json, 视频生成/图生视频/LTX2.3图生视频【优化版】切镜头_2073281072584212480.json, 视频生成/图生视频/LTX2.3图生视频【优化版】切镜头产品口播_2058353502581252098.json, 视频生成/图生视频/LTX2.3图生视频【优化版】蒸馏_dev可切换_2029897152301899777.json, 视频生成/图生视频/LTX2.3图生视频【优化版】蒸馏_dev可切换_2057424859017334786.json, 视频生成/图生视频/LTX2.3图生视频【优化版】蒸馏_dev可切换_2060693332866715649.json, 视频生成/图生视频/LTX2.3图生视频【最新优化版】_2057303983831740418.json, 视频生成/图生视频/LTX2.3图生视频双人对话【优化版】_2057124613188046849.json, 视频生成/图生视频/LTX2.3图生视频双人对话【优化版】_2078379780378030082.json, 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2059599562276433921.json, 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2080248247423168513.json, 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2102358924367323137.json, 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2102367070456467457.json, 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版双版切换提示词优化版优化提示词ai短视频短剧生成_2029989259121266690.json, 视频生成/图生视频/LTX2.3图生视频：蒸馏dev开发版双版切换提示词优化版优化提示词ai短视频短剧漫剧短视频生成_2030172075473772546.json, 视频生成/图生视频/LTX2.3首尾帧视频【优化版】_2029932864942383106.json, 视频生成/图生视频/LTX2.3高质量-8分镜图生视频-剧情漫剧_2039687730661167105.json, 视频生成/图生视频/wwm图生视频-自用_2063542658982830081.json, 视频生成/图生视频/wwm图生视频-自用_2070156653990866945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_8
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/2039704492752510977.json、视频生成/图生视频/2039914050452201474.json、视频生成/图生视频/2035320209401192449.json、视频生成/图生视频/2030927886542180353.json、视频生成/图生视频/2058356490804752385.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/LTX2.3图生视频+音视同步【双版本优化】_2030893436714360834.json、视频生成/图生视频/LTX2.3图生视频24G显卡可用【gguf优化版】_2037346558236168193.json、视频生成/图生视频/LTX2.3图生视频【优化版】切镜头_2073281072584212480.json、视频生成/图生视频/LTX2.3图生视频【优化版】切镜头产品口播_2058353502581252098.json、视频生成/图生视频/LTX2.3图生视频【优化版】蒸馏_dev可切换_2029897152301899777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：20
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 20 个 workflow 都包含：
+- `Any To String (mtb)`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CR Text`
+- `CR Text Concatenate`
 - `CheckpointLoaderSimple`
 - `CreateVideo`
+- `Display Any (rgthree)`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `GetNode`
+- `ImageScaleBy`
+- `ImpactSwitch`
+- `Int`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
@@ -40,54 +50,85 @@ source: knowledge_consolidation
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
 - `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
+- `SetNode`
+- `ShowText|pysssss`
 - `VAEDecodeTiled`
+- `VRAMReserver`
+- `easy cleanGpuUsed`
+- `easy convertAnything`
+- `easy int`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 16/17 个有
-- `LTXVImgToVideoInplace` —— 16/17 个有
-- `PrimitiveInt` —— 16/17 个有
-- `PrimitiveStringMultiline` —— 14/17 个有
-- `llama_cpp_instruct_adv` —— 12/17 个有
-- `llama_cpp_model_loader` —— 12/17 个有
-- `llama_cpp_parameters` —— 12/17 个有
-- `ImageResizeKJv2` —— 10/17 个有
-- `PrimitiveBoolean` —— 10/17 个有
-- `ResizeImageMaskNode` —— 10/17 个有
-- `PreviewAny` —— 9/17 个有
-- `LTX2_NAG` —— 7/17 个有
-- `Label (rgthree)` —— 5/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/17 个有
-- `StringReplace` —— 4/17 个有
-- `string_util_StrConcat` —— 4/17 个有
-- `CR Text` —— 3/17 个有
-- `CustomAddLabel` —— 3/17 个有
-- `Int` —— 3/17 个有
-- `RH_Utils` —— 3/17 个有
-- `TTResolutionSelector` —— 3/17 个有
-- `ttN concat` —— 3/17 个有
-- `ImageStitch` —— 2/17 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/17 个有
-- `MathExpression|pysssss` —— 2/17 个有
-- `MultiTextConcatenate` —— 2/17 个有
-- `RH_LLMAPI_Pro_Node` —— 2/17 个有
-- `SimpleMath+` —— 2/17 个有
-- `easy showAnything` —— 2/17 个有
-- `JWFloat` —— 1/17 个有
-- `LTXVFirstLastFrameControl_TTP` —— 1/17 个有
+- `CR Value` —— 19/20 个有
+- `DualCLIPLoader` —— 19/20 个有
+- `LTXVImgToVideoInplace` —— 19/20 个有
+- `LTXVScheduler` —— 19/20 个有
+- `MathExpression|pysssss` —— 19/20 个有
+- `VAELoaderKJ` —— 19/20 个有
+- `UNETLoader` —— 18/20 个有
+- `Fast Groups Muter (rgthree)` —— 17/20 个有
+- `LTXVChunkFeedForward` —— 17/20 个有
+- `CR String To Combo` —— 13/20 个有
+- `LTX2_NAG` —— 13/20 个有
+- `VHS_VideoCombine` —— 12/20 个有
+- `easy boolean` —— 12/20 个有
+- `RTXVideoSuperResolution` —— 11/20 个有
+- `BasicScheduler` —— 8/20 个有
+- `LTXICLoRALoaderModelOnly` —— 7/20 个有
+- `Switch any [Crystools]` —— 5/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/20 个有
+- `ImageResizeKJv2` —— 2/20 个有
+- `PreviewImage` —— 2/20 个有
+- `RH_LLMAPI_NODE` —— 2/20 个有
+- `AnySwitch` —— 1/20 个有
+- `AudioConcat` —— 1/20 个有
+- `CR Prompt Text` —— 1/20 个有
+- `EmptyAudio` —— 1/20 个有
+- `If ANY execute A else B` —— 1/20 个有
+- `LTX2AttentionTunerPatch` —— 1/20 个有
+- `LTXVFirstLastFrameControl_TTP` —— 1/20 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/20 个有
+- `ModelPatchTorchSettings` —— 1/20 个有
+- `MuyeTextEditOutput` —— 1/20 个有
+- `PIP_IntegerCalculator` —— 1/20 个有
+- `PathchSageAttentionKJ` —— 1/20 个有
+- `PlaySound|pysssss` —— 1/20 个有
+- `ProcessString` —— 1/20 个有
+- `RH_LLMAPI_Pro_Node` —— 1/20 个有
+- `SDVM Image List Repeat` —— 1/20 个有
+- `TTResolutionSelector` —— 1/20 个有
+- `Text` —— 1/20 个有
+- `UnetLoaderGGUF` —— 1/20 个有
+- `VAELoader` —— 1/20 个有
+- `VisualizeSigmasKJ` —— 1/20 个有
+- `easy anythingIndexSwitch` —— 1/20 个有
+- `easy batchAnything` —— 1/20 个有
+- `easy forLoopEnd` —— 1/20 个有
+- `easy forLoopStart` —— 1/20 个有
+- `easy imageConcat` —— 1/20 个有
+- `easy indexAnything` —— 1/20 个有
+- `easy isNone` —— 1/20 个有
+- `easy promptLine` —— 1/20 个有
+- `easy showAnything` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 17 | 100% |
-| 高度 | 25 | 25 - 25 | 17 | 100% |
+| 宽度 | 97 | 97 - 97 | 20 | 100% |
+| 高度 | 24 | 24 - 24 | 20 | 100% |
 
 ## 常见问题
 
@@ -95,5 +136,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，17 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，17 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，20 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，20 个样本，取值集中（一致性 100%）

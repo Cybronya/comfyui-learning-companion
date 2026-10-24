@@ -3,62 +3,88 @@ name: unknown_workflow_video_lora_sampler_74
 type: Unknown Workflow
 frequency: 18
 level: moderate
-coverage: 0.831389
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.546833
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1991013397888180225.json, 视频生成/图生视频/2036380526440878082.json, 视频生成/图生视频/1984149436848865282.json, 视频生成/图生视频/1973249582245220353.json, 视频生成/图生视频/1986727820116307970.json, 视频生成/图生视频/1978653622206664706.json, 视频生成/图生视频/1972165369475559425.json, 视频生成/图生视频/1983833483145584642.json, 视频生成/图生视频/1972615288426520578.json, 视频生成/文生视频/1964924575370854402.json, 视频生成/文生视频/1964929046893182977.json, 视频生成/文生视频/1964934510620102657.json, 视频生成/文生视频/1964929542555095041.json, 视频生成/文生视频/1964927799280680961.json, 视频生成/文生视频/1964919503211610114.json, 视频生成/文生视频/1964931561881747457.json, 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2055563749574103041.json, 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json]
+members: [视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json, 视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json, 视频生成/图生视频/Wan Animate2.2主体混合mix加速版V1_1969219198985662465.json, 视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json, 视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json, 视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json, 视频生成/图生视频/Wan Animate2.2动作迁移Move魔改加速版V2（无限时长）_1969116607094157313.json, 视频生成/图生视频/Wan Animate2.2动作迁移_2073212149740163073.json, 视频生成/图生视频/Wan2.2-Animate 视频换脸+动作迁移_1981706242731196418.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_1970283537297514497.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_2059310361421115394.json, 视频生成/图生视频/WanAnimate 场景九 多人视频精准替换_2044021235868241922.json, 视频生成/图生视频/WanAnimate 场景六 单独面部表情迁移_1970399426625892354.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX单独背景骚操作去油提高一致性加速版V1（无限时长）_1969355024180649986.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX骚操作去油提高一致性加速版V1（无限时长）_1969358943149563905.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix魔改加速版V3（无限时长）_1969373357202436097.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本动物姿态Mix主体混合特别版V1_1974432637244805122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_74
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/1991013397888180225.json、视频生成/图生视频/2036380526440878082.json、视频生成/图生视频/1984149436848865282.json、视频生成/图生视频/1973249582245220353.json、视频生成/图生视频/1986727820116307970.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json、视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json、视频生成/图生视频/Wan Animate2.2主体混合mix加速版V1_1969219198985662465.json、视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json、视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `Sam2Segmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 17/18 个有
-- `WanVideoScheduler` —— 17/18 个有
-- `WanVideoSigmaToStep` —— 17/18 个有
-- `WanVideoTorchCompileSettings` —— 17/18 个有
-- `JWInteger` —— 16/18 个有
-- `GetImageSizeAndCount` —— 15/18 个有
-- `CR Prompt Text` —— 14/18 个有
-- `INTConstant` —— 14/18 个有
-- `WanVideoSetBlockSwap` —— 12/18 个有
-- `WanVideoSetLoRAs` —— 12/18 个有
-- `LoadImage` —— 10/18 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/18 个有
-- `WanVideoEmptyEmbeds` —— 9/18 个有
-- `WanVideoImageToVideoEncode` —— 9/18 个有
-- `MathExpression|pysssss` —— 8/18 个有
-- `Int` —— 7/18 个有
-- `ImpactInt` —— 2/18 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/18 个有
-- `easy seed` —— 2/18 个有
-- `ConditioningSetArea` —— 1/18 个有
-- `GridAnnotation` —— 1/18 个有
-- `ImageResize+` —— 1/18 个有
-- `LoadImagesFromURL` —— 1/18 个有
-- `MuyeTextEditOutput` —— 1/18 个有
+- `DWPreprocessor` —— 17/18 个有
+- `FaceMaskFromPoseKeypoints` —— 17/18 个有
+- `ImageCropByMaskAndResize` —— 17/18 个有
+- `PixelPerfectResolution` —— 17/18 个有
+- `PointsEditor` —— 17/18 个有
+- `WanVideoContextOptions` —— 15/18 个有
+- `JWInteger` —— 13/18 个有
+- `CR Prompt Text` —— 12/18 个有
+- `WanVideoEncode` —— 10/18 个有
+- `WanVideoUni3C_ControlnetLoader` —— 10/18 个有
+- `WanVideoUni3C_embeds` —— 10/18 个有
+- `INTConstant` —— 5/18 个有
+- `EmptyImage` —— 3/18 个有
+- `LayerUtility: PurgeVRAM` —— 3/18 个有
+- `RH_Captioner` —— 2/18 个有
+- `ShowText` —— 2/18 个有
+- `easy promptConcat` —— 2/18 个有
+- `AnimalPosePreprocessor` —— 1/18 个有
+- `AudioCrop` —— 1/18 个有
+- `AudioSeparation` —— 1/18 个有
+- `DownloadAndLoadWav2VecModel` —— 1/18 个有
+- `ImageConcanate` —— 1/18 个有
+- `ImageListToImageBatch` —— 1/18 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/18 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/18 个有
+- `MultiTalkModelLoader` —— 1/18 个有
+- `MultiTalkWav2VecEmbeds` —— 1/18 个有
+- `PDIMAGE_LongerSize` —— 1/18 个有
+- `PreviewAny` —— 1/18 个有
+- `SDVN Image Repeat` —— 1/18 个有
+- `WanVideoCombineEmbeds` —— 1/18 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/18 个有
+- `easy cleanGpuUsed` —— 1/18 个有
+- `easy showAnything` —— 1/18 个有
 
 ## 典型参数
 

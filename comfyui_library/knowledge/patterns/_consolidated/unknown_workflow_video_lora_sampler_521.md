@@ -2,70 +2,64 @@
 name: unknown_workflow_video_lora_sampler_521
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.97175
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, ImageResizeKJ, ImageResizeKJv2, ImpactInt, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanVideoNAG]
+level: moderate
+coverage: 0.391
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), SamplerCustom, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimate2ContextOptions, WanAnimate2ToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1955930393901977601.json, 视频生成/图生视频/1952583825614409730.json, 视频生成/图生视频/1953122188666802177.json, 视频生成/图生视频/1952542983688261634.json]
+members: [视频生成/图生视频/WanAnimate2 动作迁移（效果最好的动作迁移）_2100492099857768449.json, 视频生成/图生视频/WanAnimate2-动作迁移双模式无限长视频【多人】_2098646467857698818.json, 视频生成/图生视频/WanAnimate2动作迁移_2096817694862565378.json, 视频生成/图生视频/王者归来！【WanAnimate2】最强动作迁移模型 丝滑长视频工作流_2095800669994311682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_521
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1955930393901977601.json、视频生成/图生视频/1952583825614409730.json、视频生成/图生视频/1953122188666802177.json、视频生成/图生视频/1952542983688261634.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/WanAnimate2 动作迁移（效果最好的动作迁移）_2100492099857768449.json、视频生成/图生视频/WanAnimate2-动作迁移双模式无限长视频【多人】_2098646467857698818.json、视频生成/图生视频/WanAnimate2动作迁移_2096817694862565378.json、视频生成/图生视频/王者归来！【WanAnimate2】最强动作迁移模型 丝滑长视频工作流_2095800669994311682.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **可信度**：中等可信
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Text`
-- `ImageResizeKJ`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `ImpactInt`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `SimpleMath+`
+- `Power Lora Loader (rgthree)`
+- `SamplerCustom`
+- `SetNode`
+- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanVideoNAG`
+- `VHS_VideoInfoLoaded`
+- `WanAnimate2ContextOptions`
+- `WanAnimate2ToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `JWStringConcat` —— 2/4 个有
-- `PIP_StringConcatenation` —— 2/4 个有
-- `RH_Captioner` —— 2/4 个有
-- `RH_LLMAPI_NODE` —— 2/4 个有
-- `TextConcat` —— 2/4 个有
-- `Wan22PromptSelector` —— 2/4 个有
-- `CreateVideo` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
-- `PreViewVideo` —— 1/4 个有
+- `FastGroupsBypassSwitch` —— 3/4 个有
+- `FeiHouWanAnimate2SeamColorMatch` —— 3/4 个有
+- `FeiHouWanAnimate2ToVideo` —— 3/4 个有
+- `Seed (rgthree)` —— 3/4 个有
+- `WanAnimate2Cache` —— 3/4 个有
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | lcm | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,8 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

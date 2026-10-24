@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_sampler_unet_vae_154
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8508
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy seed]
+coverage: 0.871286
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3-超自然服装细节展示-自动优化提示词-.json, 视频生成/图生视频/minimax_h3变装秀_2097724749970493442.json, 视频生成/图生视频/minimax_h3复刻短视频爆款_2096558185426546690.json, 视频生成/图生视频/超自然超细节-H3的服装展示(singularity)_2101287029765136386.json, 视频生成/图生视频/音画同出-多图参考生视频-minimax_h3版_2109948293609517058.json]
+members: [视频生成/图生视频/miniMax H3图生视频_2084688950412795906.json, 视频生成/图生视频/minimax_h3_i2v  加速多参考视频生成_2106315178865422338.json, 视频生成/图生视频/minimax_h3_i2v  加速首位帧_2106309679268843522.json, 视频生成/图生视频/minimax_h3_图生视频_2084112158757052417.json, 视频生成/图生视频/调用版minimax+H3+开源版 -首尾帧_2091060784687308801.json, 视频生成/图生视频/调用版minimax+H3+开源版+文生视频+T2VA文生_2086814099383607297.json, 视频生成/文生视频/Minimax H3文生视频_2084688902564179970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_154
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3-超自然服装细节展示-自动优化提示词-.json、视频生成/图生视频/minimax_h3变装秀_2097724749970493442.json、视频生成/图生视频/minimax_h3复刻短视频爆款_2096558185426546690.json、视频生成/图生视频/超自然超细节-H3的服装展示(singularity)_2101287029765136386.json、视频生成/图生视频/音画同出-多图参考生视频-minimax_h3版_2109948293609517058.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/miniMax H3图生视频_2084688950412795906.json、视频生成/图生视频/minimax_h3_i2v  加速多参考视频生成_2106315178865422338.json、视频生成/图生视频/minimax_h3_i2v  加速首位帧_2106309679268843522.json、视频生成/图生视频/minimax_h3_图生视频_2084112158757052417.json、视频生成/图生视频/调用版minimax+H3+开源版 -首尾帧_2091060784687308801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `CreateVideo`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
@@ -41,25 +40,23 @@ source: knowledge_consolidation
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `MiniMaxH3PromptEnhancerT8` —— 4/5 个有
-- `ModelAttentionBackend` —— 4/5 个有
-- `ModelPreviewOverrideKJ` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `MiniMaxChunkFeedForward` —— 3/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/5 个有
-- `BlockSparseAttention` —— 2/5 个有
-- `INTConstant` —— 2/5 个有
-- `LoraLoaderBypassModelOnly` —— 2/5 个有
-- `easy int` —— 2/5 个有
-- `ComfyNumberConvert` —— 1/5 个有
-- `EmptyMiniMaxH3LatentAV` —— 1/5 个有
-- `MiniMaxH3AddGuide` —— 1/5 个有
-- `MiniMaxLowVRAMAttention` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `LoadImage` —— 5/7 个有
+- `easy cleanGpuUsed` —— 4/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `DuckHideNode` —— 2/7 个有
+- `H3SigmaRefiner` —— 2/7 个有
+- `LoraLoaderBypassModelOnly` —— 2/7 个有
+- `ModelAttentionBackend` —— 2/7 个有
+- `SaveImage` —— 2/7 个有
+- `EasyCache` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `SeedVR2LoadDiTModel` —— 1/7 个有
+- `SeedVR2LoadVAEModel` —— 1/7 个有
+- `SeedVR2VideoUpscaler` —— 1/7 个有
+- `VHS_VideoCombine` —— 1/7 个有
 
 ## 典型参数
 

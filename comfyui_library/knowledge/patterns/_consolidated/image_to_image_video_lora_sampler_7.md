@@ -7,13 +7,13 @@ coverage: 0.58125
 common_nodes: [AILab_QwenVL, CFGNorm, CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, INTConstant, ImageConcanate, JWImageResize, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, PreviewImage, ProcessString, ReferenceLatent, SetNode, ShowText, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanVideoNAG]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2005424865148633090.json, 视频生成/图生视频/2009487773425737729.json, 视频生成/图生视频/2005457792624459778.json, 视频生成/图生视频/2071866500956377090.json]
+members: [视频生成/图生视频/10s视频生成：怼脸拍摄，多动作，多动态_2005424865148633090.json, 视频生成/图生视频/10s视频生成：怼脸拍摄，多动作，多动态_2009487773425737729.json, 视频生成/图生视频/2511出图，超级动态首尾帧_2005457792624459778.json, 视频生成/图生视频/怼脸拍摄，多动作，多动态_2071866500956377090.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2005424865148633090.json、视频生成/图生视频/2009487773425737729.json、视频生成/图生视频/2005457792624459778.json、视频生成/图生视频/2071866500956377090.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/10s视频生成：怼脸拍摄，多动作，多动态_2005424865148633090.json、视频生成/图生视频/10s视频生成：怼脸拍摄，多动作，多动态_2009487773425737729.json、视频生成/图生视频/2511出图，超级动态首尾帧_2005457792624459778.json、视频生成/图生视频/怼脸拍摄，多动作，多动态_2071866500956377090.json）
 
 - **类型**：Image To Image
 - **样本数**：4

@@ -3,74 +3,50 @@ name: unknown_workflow_video_lora_sampler_820
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5515
-common_nodes: [BBoxYOLO, BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SDPoseKeypointExtractor, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, YOLOModelLoader]
+coverage: 0.9145
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, FL_KsamplerPlus, FL_PathAnimator, GetImageSizeAndCount, ImageResizeKJ, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, TorchCompileModelWanVideo, UNETLoader, VAELoader, VHS_DuplicateImages, VHS_VideoCombine, WanTrackToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2061297116642893825.json, 视频生成/图生视频/2055488451797110785.json]
+members: [视频生成/图生视频/WanAti超级动态版V1（扭曲艺术）_1929052305113432066.json, 视频生成/图生视频/WanTrackToVideo_2039588649964150785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_820
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2061297116642893825.json、视频生成/图生视频/2055488451797110785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAti超级动态版V1（扭曲艺术）_1929052305113432066.json、视频生成/图生视频/WanTrackToVideo_2039588649964150785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BBoxYOLO`
-- `BodyRatioMapperProportionTransfer`
-- `BodyRatioMapperSDPoseRender`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
+- `FL_KsamplerPlus`
+- `FL_PathAnimator`
+- `GetImageSizeAndCount`
+- `ImageResizeKJ`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SDPoseKeypointExtractor`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `TorchCompileModelWanVideo`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_DuplicateImages`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `YOLOModelLoader`
+- `WanTrackToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `DrawViTPose` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `MuyeTextEditOutput` —— 1/2 个有
-- `Primitive integer [Crystools]` —— 1/2 个有
-- `SegmentQueueRunner` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoTeaCache` —— 1/2 个有
-- `ZML_AnyTypeSwitchFive` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
+- `AudioEncoderEncode` —— 1/2 个有
+- `AudioEncoderLoader` —— 1/2 个有
+- `WanSoundImageToVideo` —— 1/2 个有
 
 ## 典型参数
 

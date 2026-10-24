@@ -2,68 +2,63 @@
 name: unknown_workflow_video_lora_sampler_317
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.791714
-common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.965
+common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, SimpleMath+, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/1959896744446341122.json, 视频生成/图生视频/1995404196142833665.json, 视频生成/文生视频/1022对比测试_1981324716671664130.json, 视频生成/文生视频/Wan2.2 V5-MoE Fast I2V for Characters_2072999497279774720.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_2072999534260953088.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1022版_1981325230595629057.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json]
+members: [视频生成/图生视频/Work-Fisher-AI短片实战合集篇_1967569328524664834.json, 视频生成/图生视频/万相图生视频-极速版_2017158132522295297.json, 视频生成/图生视频/图生视频加速版-2026-效果好_2047219095740878849.json, 视频生成/图生视频/图生视频加速版_2021611971048640514.json, 视频生成/图生视频/图生视频加速版_2046770688064753666.json, 视频生成/图生视频/图生视频加速版_2052569740140392450.json, 视频生成/文生视频/WAN2.2GGUF终极加速_1982992575873331201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_317
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1959896744446341122.json、视频生成/图生视频/1995404196142833665.json、视频生成/文生视频/1022对比测试_1981324716671664130.json、视频生成/文生视频/Wan2.2 V5-MoE Fast I2V for Characters_2072999497279774720.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_2072999534260953088.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Work-Fisher-AI短片实战合集篇_1967569328524664834.json、视频生成/图生视频/万相图生视频-极速版_2017158132522295297.json、视频生成/图生视频/图生视频加速版-2026-效果好_2047219095740878849.json、视频生成/图生视频/图生视频加速版_2021611971048640514.json、视频生成/图生视频/图生视频加速版_2046770688064753666.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `ImageResizeKJv2`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DF_Integer`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `SimpleMath+`
+- `UnetLoaderGGUF`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
+- `WanMoeKSampler`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `String Literal` —— 6/7 个有
-- `WanVideoSetRadialAttention` —— 6/7 个有
-- `easy globalSeed` —— 6/7 个有
-- `easy seed` —— 6/7 个有
-- `Int` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `WanVideoScheduler` —— 5/7 个有
-- `WanVideoSigmaToStep` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `FloatToSigmas` —— 3/7 个有
-- `StringToFloatList` —— 3/7 个有
-- `INTConstant` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `CLIPVisionLoader` —— 1/7 个有
-- `ImageConcatMulti` —— 1/7 个有
-- `WanVideoClipVisionEncode` —— 1/7 个有
-- `WanVideoContextOptions` —— 1/7 个有
+- `FILM VFI` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `Float` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 1/7 个有
+- `WanFirstLastFrameToVideo` —— 1/7 个有
 - `easy cleanGpuUsed` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 7 | 71% |
+| Prompt 约束强度(CFG) | 4 | 4 - 5 | 7 | 92% |
+| 采样算法 | 1 | 1 - 1.5 | 7 | 84% |
+| 调度器 | 1 | 1 - 1 | 7 | 100% |
+| 重绘幅度 | euler | - | 7 | 86% |
 
 ## 常见问题
 
@@ -71,4 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，7 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 5，7 个样本，取值集中（一致性 92%）
+- 采样算法 中位数 1，观测区间 1 - 1.5，7 个样本，取值集中（一致性 84%）
+- 调度器 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，7 个样本，一致性 86%

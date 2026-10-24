@@ -3,38 +3,36 @@ name: unknown_workflow_video_46
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.661
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), GetVideoComponents, JjkText, LoadAudio, LoadImage, LoadVideo, RH_BytedanceSeedance25GlobalTokenTextToVideo, RH_BytedanceSeedance25TokenImageToVideo, RH_BytedanceSeedance25TokenMultimodalVideo, SaveVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [ImageScaleToTotalPixels, LoadImage, Note Plus (mtb), SaveImage, VHS_VideoCombine, workflow>参数设置, workflow>面部参考]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI视频丨Seedance 2.5丨文生·首尾帧·多模态_2099777822704365569.json, 视频生成/文生视频/30秒长视频！ Seedance2.5！ 全家桶！ 文生视频！图生视频！首尾帧 ！多参编辑！_2088469976847048705.json, 视频生成/文生视频/SD2.5 30秒长视频！ 全家桶！ 文生视频！图生视频！首尾帧 ！多参编辑！Seedance！_2088482964786208769.json]
+members: [图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json, 图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json, 图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_46
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AI视频丨Seedance 2.5丨文生·首尾帧·多模态_2099777822704365569.json、视频生成/文生视频/30秒长视频！ Seedance2.5！ 全家桶！ 文生视频！图生视频！首尾帧 ！多参编辑！_2088469976847048705.json、视频生成/文生视频/SD2.5 30秒长视频！ 全家桶！ 文生视频！图生视频！首尾帧 ！多参编辑！Seedance！_2088482964786208769.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json、图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json、图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
-- `JjkText`
-- `LoadAudio`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `LoadVideo`
-- `RH_BytedanceSeedance25GlobalTokenTextToVideo`
-- `RH_BytedanceSeedance25TokenImageToVideo`
-- `RH_BytedanceSeedance25TokenMultimodalVideo`
-- `SaveVideo`
+- `Note Plus (mtb)`
+- `SaveImage`
 - `VHS_VideoCombine`
+- `workflow>参数设置`
+- `workflow>面部参考`
+
+**可变部分**（部分 workflow 才有）：
+- `workflow>过度动画` —— 2/3 个有
 
 ## 典型参数
 

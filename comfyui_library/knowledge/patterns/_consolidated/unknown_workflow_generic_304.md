@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_304
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.7864
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.766625
+common_nodes: [CR Prompt Text, RH_Sora2_T2V_PRO, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059442542130843650.json, 视频生成/图生视频/2045699521010733057.json, 视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json, 视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json, 视频生成/文生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json]
+members: [视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json, 视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json, 视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json, 视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json, 视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json, 视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json, 视频生成/文生视频/全能视频SPRO文生视频25s（竖屏）_1984573281137278978.json, 视频生成/文生视频/梭罗2文生视频25s（竖屏）全能视频SPRO_1983038421939683330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_304
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2059442542130843650.json、视频生成/图生视频/2045699521010733057.json、视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json、视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json、视频生成/文生视频/MiniMax H3 多模态参考生视频（RH API 版）_2083836954898165761.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json、视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json、视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json、视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json、视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_Sora2_T2V_PRO`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 3/5 个有
-- `easy showAnything` —— 3/5 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 2/5 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
 
 ## 典型参数
 

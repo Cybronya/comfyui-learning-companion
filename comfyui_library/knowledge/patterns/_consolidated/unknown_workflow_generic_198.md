@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_198
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.6495
-common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3ForcedAlign, Qwen3ForcedAlignerLoader, ShowText|pysssss, easy saveText]
+coverage: 0.7417
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/SynVow_Qwen3ASR 多语言音频转文本_2018970445520838658.json, 数字人/数字人/Index-TTS1.5新版语音克隆，急速体验_2088229438382239745.json, 音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2019658132808536065.json, 音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2041507271208869889.json, 音频生成/音频生成/SynVow_Qwen3ASR 语音转文字_2022325449564622850.json, 音频生成/音频生成/SynVow_Qwen3ASR 语音转文字基础工作流_2020676844198039553.json]
+members: [图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json, 图片生成/文生图/02_城市微缩切片_2056334605820719105.json, 图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json, 图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json, 图片生成/文生图/05_雾感极简石版画_2056336981935869953.json, 图片生成/文生图/【阡陌】全能图片G-2-文生图-官方稳定版Image 2_2049053252511076353.json, 图片生成/文生图/全能图像G image2.0文生图_官方稳定版_2049383994692734977.json, 图片生成/文生图/全能图像G image2.0文生图官方稳定版_2049313423787302914.json, 图片生成/文生图/全能图像G2+官方版【文生图】_2057444514612207617.json, 图片生成/文生图/柏拉图全能图片G-image2_多图参考_图生图_2053818189842264066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_198
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/SynVow_Qwen3ASR 多语言音频转文本_2018970445520838658.json、数字人/数字人/Index-TTS1.5新版语音克隆，急速体验_2088229438382239745.json、音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2019658132808536065.json、音频生成/音频生成/SynVow_Qwen3ASR 基础工作流_2041507271208869889.json、音频生成/音频生成/SynVow_Qwen3ASR 语音转文字_2022325449564622850.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json、图片生成/文生图/02_城市微缩切片_2056334605820719105.json、图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json、图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json、图片生成/文生图/05_雾感极简石版画_2056336981935869953.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `Qwen3ForcedAlign`
-- `Qwen3ForcedAlignerLoader`
-- `ShowText|pysssss`
-- `easy saveText`
+全部 10 个 workflow 都包含：
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/6 个有
-- `IndexTTSRun` —— 1/6 个有
-- `SaveAudio` —— 1/6 个有
+- `CR Text` —— 9/10 个有
+- `LoadImage` —— 8/10 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 8/10 个有
+- `🙅GPT_image_2_综合@炮老师的小课堂` —— 2/10 个有
+- `PreviewImage` —— 1/10 个有
 
 ## 典型参数
 

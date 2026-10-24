@@ -1,79 +1,86 @@
 ---
 name: unknown_workflow_face_detailer_lora_sampler_2
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.863
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyLatentImage, FaceDetailer, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, PurgeVRAM_UTK, RMBG, RTXVideoSuperResolution, ResolutionSelector, SAMLoader, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: moderate
+coverage: 0.952
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, ConstrainImage|pysssss, DetailDaemonSamplerNode, DualCLIPLoader, EmptyLatentImage, FaceDetailer, FluxAttentionSeeker+, FluxGuidance, ImpactImageBatchToImageList, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SAMLoader, SamplerCustomAdvanced, SaveImage, StyleModelApply, StyleModelLoader, TeaCache, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAELoader, easy imageSize, ttN concat]
+problems: []
 missing: []
-members: [图片生成/反推提示词/krea2_参考图像洗图生成_2104464339951509506.json, 数字人/数字人/krea2_参考图像洗图生成_2104381255394611201.json]
+members: [图片生成/图生图/Flux人物多角度｜秒变多角度时尚大片_1935150534972383233.json, 图片生成/图生图/【网红大片】多角度时尚模特一致性风格_1914203359530942465.json, 图片生成/图生图/【网红大片】多角度时尚模特一致性风格v1.0_1908047771457495042.json, 图片生成/图生图/【网红洗图pulid_flux】多角度时尚模特人物一致性风格_1914985791666253826.json, 图片生成/图生图/【网红海报】多角度时尚模特一致性风格_1911136662779326466.json, 图片生成/图生图/模特一致性上传模特图，秒变多角度时尚大片！_1906378891399991297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_face_detailer_lora_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/krea2_参考图像洗图生成_2104464339951509506.json、数字人/数字人/krea2_参考图像洗图生成_2104381255394611201.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux人物多角度｜秒变多角度时尚大片_1935150534972383233.json、图片生成/图生图/【网红大片】多角度时尚模特一致性风格_1914203359530942465.json、图片生成/图生图/【网红大片】多角度时尚模特一致性风格v1.0_1908047771457495042.json、图片生成/图生图/【网红洗图pulid_flux】多角度时尚模特人物一致性风格_1914985791666253826.json、图片生成/图生图/【网红海报】多角度时尚模特一致性风格_1911136662779326466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `ConditioningZeroOut`
+- `ConstrainImage|pysssss`
+- `DetailDaemonSamplerNode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `FaceDetailer`
-- `FluxKontextImageScale`
-- `KSampler`
+- `FluxAttentionSeeker+`
+- `FluxGuidance`
+- `ImpactImageBatchToImageList`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `PurgeVRAM_UTK`
-- `RMBG`
-- `RTXVideoSuperResolution`
-- `ResolutionSelector`
+- `LoraLoader`
+- `ModelSamplingFlux`
+- `RandomNoise`
 - `SAMLoader`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `TeaCache`
 - `UNETLoader`
 - `UltralyticsDetectorProvider`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageSize`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 4/6 个有
+- `JjkShowText` —— 4/6 个有
+- `Joy_caption` —— 3/6 个有
+- `Joy_caption_load` —— 3/6 个有
+- `ArgosTranslateTextNode` —— 2/6 个有
+- `ETN_Translate` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 2048 | - | 2 | 100% |
-| 高度 | 2048 | - | 2 | 100% |
-| 采样步数 | 2 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | deis | - | 2 | 100% |
-| 调度器 | bong_tangent | - | 2 | 100% |
-| 重绘幅度 | 0.2 | - | 2 | 100% |
+| 宽度 | 512 | 512 - 512 | 6 | 100% |
+| 高度 | 512 | 512 - 512 | 6 | 100% |
+| LoRA 模型强度 | 0.1 | 0.1 - 0.8 | 6 | 0% |
+| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 2048，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 2048，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis，2 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.1，观测区间 0.1 - 0.8，6 个样本，取值分散，一致性仅 0%
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

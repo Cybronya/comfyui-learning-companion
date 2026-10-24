@@ -2,87 +2,65 @@
 name: unknown_workflow_video_lora_sampler_93
 type: Unknown Workflow
 frequency: 16
-level: strong
-coverage: 0.921687
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewImage, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: moderate
+coverage: 0.906062
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2064553319145754626.json, 视频生成/图生视频/2008441362764537857.json, 视频生成/图生视频/2048661829873831938.json, 视频生成/图生视频/2005453601126445058.json, 视频生成/图生视频/2009625455447515138.json, 视频生成/图生视频/2009854933348130817.json, 视频生成/图生视频/2071446981473562626.json, 视频生成/图生视频/2070753501143191553.json, 视频生成/图生视频/2071262215709220866.json, 视频生成/图生视频/本地开源免费，emergency_2054436990401171457.json, 视频生成/图生视频/2055881333670457346.json, 视频生成/图生视频/2055906585632878593.json, 视频生成/图生视频/本地开源免费，倒车请注意_2054373065324277762.json, 视频生成/图生视频/2055687460432171009.json, 视频生成/图生视频/2055881301147824129.json, 视频生成/图生视频/2056247693923672065.json]
+members: [视频生成/图生视频/wan2.2 图生视频工作量_1974850739472306178.json, 视频生成/图生视频/wan2.2 图生视频，kj版8步加速_1960977035327934465.json, 视频生成/图生视频/wan2.2-首尾帧_2014248439579676673.json, 视频生成/图生视频/wan2.2Pro首尾帧生成视频工作流_2013862124266721282.json, 视频生成/图生视频/wan2.2首尾帧视频工作流_2013162152139431937.json, 视频生成/图生视频/wan2.2首尾帧，kj加速版_1953644450683736065.json, 视频生成/图生视频/【Wan2.2首尾帧】最新万相14B FLF2V 首尾帧视频加速版 图生视频_1972187694434545666.json, 视频生成/图生视频/图生视频--首尾帧-wan2.2-kj版工作流_2048571694041800706.json, 视频生成/图生视频/图生视频--首尾帧-wan2.2-kj版工作流_2048653140999806977.json, 视频生成/图生视频/图生视频--首尾帧-wan2.2-kj版工作流_2048940040620875778.json, 视频生成/图生视频/图生视频--首尾帧-wan2.2-kj版工作流_2069594425340284930.json, 视频生成/图生视频/建筑-wan2.2单帧视频工作流_2022682129682931714.json, 视频生成/图生视频/首尾帧视频 wan2.2_2018548235928870914.json, 视频生成/文生视频/02 Wan2.2 Smooth Mix I2V首尾帧生视频+全节点注释_2055549969884565506.json, 视频生成/文生视频/首尾帧 wan2.2 kj加速版 万相4步加速视频 Rapid AllInOne 2图生视频_2028398849848516609.json, 视频生成/文生视频/首尾帧图生视频   wan2.2-kj版加速音画同步 全自动首尾帧视频_2016386248029511681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_93
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/2064553319145754626.json、视频生成/图生视频/2008441362764537857.json、视频生成/图生视频/2048661829873831938.json、视频生成/图生视频/2005453601126445058.json、视频生成/图生视频/2009625455447515138.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/wan2.2 图生视频工作量_1974850739472306178.json、视频生成/图生视频/wan2.2 图生视频，kj版8步加速_1960977035327934465.json、视频生成/图生视频/wan2.2-首尾帧_2014248439579676673.json、视频生成/图生视频/wan2.2Pro首尾帧生成视频工作流_2013862124266721282.json、视频生成/图生视频/wan2.2首尾帧视频工作流_2013162152139431937.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：16
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewImage`
-- `RenderNLFPoses`
-- `SimpleMath+`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 11/16 个有
-- `FlashVSR_SM_KSampler` —— 9/16 个有
-- `FlashVSR_SM_Model` —— 9/16 个有
-- `GetImageRangeFromBatch` —— 9/16 个有
-- `GetImageSize` —— 9/16 个有
-- `JWInteger` —— 9/16 个有
-- `easy indexAnything` —— 9/16 个有
-- `FloatConstant` —— 5/16 个有
-- `GetImageSizeAndCount` —— 5/16 个有
-- `ImageConcatMulti` —— 5/16 个有
-- `LoadAudio` —— 2/16 个有
-- `GetNode` —— 1/16 个有
-- `HypernetworkLoader` —— 1/16 个有
-- `SetNode` —— 1/16 个有
-- `VHS_VideoInfo` —— 1/16 个有
-- `WanAnimatePlus LoraSelect` —— 1/16 个有
-- `easy showAnything` —— 1/16 个有
+- `INTConstant` —— 15/16 个有
+- `JWInteger` —— 15/16 个有
+- `WanVideoClipVisionEncode` —— 15/16 个有
+- `WanVideoSetLoRAs` —— 15/16 个有
+- `ImageResize+` —— 14/16 个有
+- `LoadWanVideoClipTextEncoder` —— 14/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/16 个有
+- `LayerUtility: PurgeVRAM` —— 10/16 个有
+- `SetNode` —— 10/16 个有
+- `GetNode` —— 9/16 个有
+- `ImageLoader` —— 9/16 个有
+- `LoadImage` —— 7/16 个有
+- `CreateCFGScheduleFloatList` —— 6/16 个有
+- `CR Prompt Text` —— 4/16 个有
+- `GetImageSizeAndCount` —— 3/16 个有
+- `SimpleMath+` —— 2/16 个有
+- `CLIPVisionLoader` —— 1/16 个有
+- `Int` —— 1/16 个有
+- `MathExpression|pysssss` —— 1/16 个有
+- `TrimVideoLatent` —— 1/16 个有
+- `easy seed` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 1.12116e+09 | 2.80175e+08 - 1.91868e+09 | 9 | 56% |
-| Prompt 约束强度(CFG) | randomize | - | 9 | 100% |
-| 采样算法 | 2 | 2 - 2 | 9 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 9 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -90,10 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.12116e+09，观测区间 2.80175e+08 - 1.91868e+09，9 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，9 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，9 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，9 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，9 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.91868e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

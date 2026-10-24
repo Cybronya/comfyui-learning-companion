@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_650
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.802333
-common_nodes: [Apply Whisper, LoadAudio, PrimitiveStringMultiline, SaveAudio, VoxCPM_TTS]
+coverage: 1
+common_nodes: [LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM TTS1.5语音克隆_2042023472389431298.json, 音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json, 音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json]
+members: [图片生成/图生图/RMBG-2抠图+修边_2063215332772372482.json, 图片生成/图生图/万能急速抠图_2082289989509017601.json, 图片生成/图生图/万能急速抠图_2082295216089952258.json, 图片生成/图生图/抠图_1995412855149277186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_650
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/VoxCPM TTS1.5语音克隆_2042023472389431298.json、音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json、音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RMBG-2抠图+修边_2063215332772372482.json、图片生成/图生图/万能急速抠图_2082289989509017601.json、图片生成/图生图/万能急速抠图_2082295216089952258.json、图片生成/图生图/抠图_1995412855149277186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `VoxCPM_TTS`
+全部 4 个 workflow 都包含：
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 2/3 个有
-- `SoundFlow_TrimAudio` —— 2/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageCombineAlpha_UTK` —— 1/4 个有
 
 ## 典型参数
 

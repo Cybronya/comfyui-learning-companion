@@ -1,61 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_unet_102
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.909
-common_nodes: [CLIPLoader, EmptyLatentImage, GetImageSize, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.879429
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/AI角色姿态导演台｜Character Pose Director_2102626865503625217.json, 视频生成/文生视频/QwenImage2.1洗图_2102985000311418882.json]
+members: [视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json, 视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 2K_2098776214440865793.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 4K_2098689766622580737.json, 视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 768P_2098689834578698241.json, 视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 2K_2098776208187154433.json, 视频生成/文生视频/MiniMax H3｜Sigma强化双采｜通用生视频 4K_2098400619433381889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_102
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/AI角色姿态导演台｜Character Pose Director_2102626865503625217.json、视频生成/文生视频/QwenImage2.1洗图_2102985000311418882.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json、视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 2K_2098776214440865793.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 4K_2098689766622580737.json、视频生成/文生视频/MiniMax H3｜SelfLift｜通用生视频 768P_2098689834578698241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3AudioConditioningT8`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWString` —— 1/2 个有
-- `JWStringConcat` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `QwenImage21Cache` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `VNCCS_PoseStudio` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `H3SigmaRefiner` —— 5/7 个有
+- `ModelPreviewOverrideKJ` —— 5/7 个有
+- `RH_DLSS5FrameInterpolation` —— 5/7 个有
+- `SelfLiftH3Sampler` —— 5/7 个有
+- `ImageResizeKJv2` —— 4/7 个有
+- `Int` —— 4/7 个有
+- `LTXVSeparateAVLatent` —— 4/7 个有
+- `SeedVR2` —— 4/7 个有
+- `SeedVR2BlockSwap` —— 4/7 个有
+- `MiniMaxChunkFeedForward` —— 3/7 个有
+- `MiniMaxLowVRAMAttention` —— 3/7 个有
+- `BasicGuider` —— 2/7 个有
+- `LTXVConcatAVLatent` —— 2/7 个有
+- `LoadAudio` —— 2/7 个有
+- `LoraLoader` —— 2/7 个有
+- `MiniMaxH3SigmaShift` —— 2/7 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/7 个有
+- `RandomNoise` —— 2/7 个有
+- `SamplerCustomAdvanced` —— 2/7 个有
+- `SplitSigmas` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 25 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 0.75 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -63,11 +77,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- LoRA 模型强度 中位数 0.75，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

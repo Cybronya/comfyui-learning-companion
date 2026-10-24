@@ -1,55 +1,64 @@
 ---
 name: unknown_workflow_video_sampler_vae_172
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.686
-common_nodes: [DF_Integer, GetImageRangeFromBatch, ImageCompositeMasked, ImageResizeKJv2, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewImage, RepeatImageBatch, SimpleMath+, SolidMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.558
+common_nodes: [AddLabel, Bjornulf_CombineTexts, CR Text Input Switch, DWPreprocessor, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, Florence2ModelLoader, Florence2Run, GetNode, INTConstant, ImageConcanate, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive string multiline [Crystools], SetNode, VHS_LoadVideoFFmpeg, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy promptReplace, easy showAnything]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, WanVideoMiniMaxRemoverEmbeds, easy batchAnything, easy compare, easy forLoopEnd, easy forLoopStart]
-members: [视频生成/图生视频/1974664225505325058.json, 视频生成/文生视频/1974664225505325058.json]
+missing: []
+members: [视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json, 视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1974664225505325058.json、视频生成/文生视频/1974664225505325058.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自制-Wan Fusionx高质量视频16_9视频转视频_1934427683369480194.json、视频生成/图生视频/自制-Wan Fusionx高质量视频4_3视频转视频_1934820362867941377.json、视频生成/图生视频/自制-Wan Fusionx高质量视频9_16视频转视频_1934195250661388289.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DF_Integer`
-- `GetImageRangeFromBatch`
-- `ImageCompositeMasked`
+全部 3 个 workflow 都包含：
+- `AddLabel`
+- `Bjornulf_CombineTexts`
+- `CR Text Input Switch`
+- `DWPreprocessor`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetNode`
+- `INTConstant`
+- `ImageConcanate`
 - `ImageResizeKJv2`
-- `ImageToMask`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskToImage`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `RepeatImageBatch`
-- `SimpleMath+`
-- `SolidMask`
-- `VHS_LoadVideo`
+- `Primitive string multiline [Crystools]`
+- `SetNode`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `VHS_VideoInfoLoaded`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoMiniMaxRemoverEmbeds`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy promptReplace`
 - `easy showAnything`
 
 ## 典型参数
@@ -62,5 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、SimpleMath+、WanVideoMiniMaxRemoverEmbeds、easy batchAnything、easy compare
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

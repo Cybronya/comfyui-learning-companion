@@ -1,44 +1,44 @@
 ---
 name: unknown_workflow_sampler_49
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.793
-common_nodes: [1hew_AudioDuration, CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.924
+common_nodes: [ImageAndMaskPreview, ImageStitch, InvertMask, LoadImage, MaskPreview, PreviewImage, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--FlashTalk数字人+Qwen TTS声音预设-一张图生成数字主播_2029760205487087617.json, 音频生成/音频生成/AA--FlashTalk数字人+声音克隆（情感控制）_2029525701015117826.json]
+members: [图片生成/图生图/换背景 _ OneReward-Fill_1966173106291249153.json, 图片生成/图生图/换背景-字节OneReward-Fill_1966394196582150145.json, 图片生成/图生图/重绘换背景-字节OneReward-Fill重绘_1965807959672557570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_49
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--FlashTalk数字人+Qwen TTS声音预设-一张图生成数字主播_2029760205487087617.json、音频生成/音频生成/AA--FlashTalk数字人+声音克隆（情感控制）_2029525701015117826.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换背景 _ OneReward-Fill_1966173106291249153.json、图片生成/图生图/换背景-字节OneReward-Fill_1966394196582150145.json、图片生成/图生图/重绘换背景-字节OneReward-Fill重绘_1965807959672557570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `1hew_AudioDuration`
-- `CR Prompt Text`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+全部 3 个 workflow 都包含：
+- `ImageAndMaskPreview`
+- `ImageStitch`
+- `InvertMask`
 - `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
-- `SaveVideo`
-- `easy showAnything`
+- `MaskPreview`
+- `PreviewImage`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
+- `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `Qwen3TTSCustomVoice` —— 1/2 个有
-- `Qwen3TTSModelLoader` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
+- `Text Multiline` —— 2/3 个有
+- `InspyrenetRembgLoader` —— 1/3 个有
+- `InspyrenetRembgProcess` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 
@@ -50,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,85 +1,88 @@
 ---
 name: unknown_workflow_upscale_sampler_unet_7
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6105
-common_nodes: [AIO_Preprocessor, Anything Everywhere3, CLIPLoader, ComfySwitchNode, EmptyLatentImage, FloatConstant, GetImageSize, GetImageSize+, Image Comparer (rgthree), ImageConcatMulti, ImageResize+, ImageScaleBy, JsonExtractString, KOOK_SaveJPGImage, KSamplerAdvanced, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, QwenImage21Cache, QwenMultiangleCameraNode, ResolutionSelector, RunningHub Deepcleaner, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImage21, TextGenerate, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy positive, 忽略多组孤海]
+frequency: 6
+level: moderate
+coverage: 0.892167
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, CreateVideo, DF_Int_to_Float, EasyCache, Fast Groups Bypasser (rgthree), GetVideoComponents, ImpactSwitch, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadImage, LoadVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowAnything|Mie, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
-missing: [Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, RunningHub Deepcleaner, SimpleMath+, easy positive, 忽略多组孤海, GetImageSize+, ImageResize+, Seed (rgthree)]
-members: [图片生成/图生图/2105998336317804545.json, 图片生成/文生图/Q2.1-全能工作流_2105998336317804545.json]
+missing: []
+members: [视频生成/图生视频/b25-49混合模型提示词优化反推_2110794014583771137.json, 视频生成/图生视频/h3提示词优化反推加速双采_2097892087424438274.json, 视频生成/图生视频/h3提示词优化反推加速双采_2110570373136871425.json, 视频生成/图生视频/h3提示词优化反推加速双采_2111011900757729281.json, 视频生成/文生视频/h3提示词优化反推加速双采_2097892087424438274.json, 视频生成/文生视频/双采高低采singularity模型加速版vdn高步数-MiniMax H3｜多参图像音频极速生视频_2097862187531456514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2105998336317804545.json、图片生成/文生图/Q2.1-全能工作流_2105998336317804545.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/b25-49混合模型提示词优化反推_2110794014583771137.json、视频生成/图生视频/h3提示词优化反推加速双采_2097892087424438274.json、视频生成/图生视频/h3提示词优化反推加速双采_2110570373136871425.json、视频生成/图生视频/h3提示词优化反推加速双采_2111011900757729281.json、视频生成/文生视频/h3提示词优化反推加速双采_2097892087424438274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `Anything Everywhere3`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `FloatConstant`
-- `GetImageSize`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageConcatMulti`
-- `ImageResize+`
-- `ImageScaleBy`
-- `JsonExtractString`
-- `KOOK_SaveJPGImage`
-- `KSamplerAdvanced`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `DF_Int_to_Float`
+- `EasyCache`
+- `Fast Groups Bypasser (rgthree)`
+- `GetVideoComponents`
+- `ImpactSwitch`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveBoolean`
+- `LoadVideo`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
-- `QwenMultiangleCameraNode`
+- `RandomNoise`
 - `ResolutionSelector`
-- `RunningHub Deepcleaner`
-- `SaveImage`
-- `Seed (rgthree)`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `ShowAnything|Mie`
 - `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy positive`
-- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `BasicScheduler` —— 5/6 个有
+- `DapaoH3LocalPromptNode` —— 5/6 个有
+- `DapaoH3PromptBoxNode` —— 5/6 个有
+- `ImageResizeKJv2` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 5/6 个有
+- `PreviewAny` —— 5/6 个有
+- `SolAttnMiniMax` —— 5/6 个有
+- `VAEEncode` —— 5/6 个有
+- `VAEEncodeAudio` —— 5/6 个有
+- `RandomSeedNoise` —— 4/6 个有
+- `SaveAudio` —— 4/6 个有
+- `T8_IndexTTS25_EmotionControl` —— 4/6 个有
+- `T8_IndexTTS25_Generate` —— 4/6 个有
+- `T8_IndexTTS25_ModelLoader` —— 4/6 个有
+- `ManualSigmas` —— 2/6 个有
+- `GoohaiUniversalSlider` —— 1/6 个有
+- `LTXVSeparateAVLatent` —— 1/6 个有
+- `Lora Loader Stack (rgthree)` —— 1/6 个有
+- `MiniMaxH3SparkAttentionAuto` —— 1/6 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/6 个有
+- `SplitSigmas` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 25 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,13 +90,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 25，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)、LayerUtility: ImageScaleByAspectRatio V2、RunningHub Deepcleaner、SimpleMath+、easy positive
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

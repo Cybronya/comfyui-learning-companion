@@ -3,37 +3,40 @@ name: unknown_workflow_video_lora_sampler_657
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.675667
-common_nodes: [CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, RH_Captioner, RH_Prompter, SetNode, TextCombinerTwo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.871333
+common_nodes: [CreateCFGScheduleFloatList, DF_Integer, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, RH_Translator, ShowText|pysssss, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, string_util_StrReplace]
 problems: []
 missing: []
-members: [视频生成/图生视频/1950019769790545922.json, 视频生成/图生视频/1950922029769891841.json, 视频生成/图生视频/1956166218438901761.json]
+members: [视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json, 视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json, 视频生成/图生视频/图生视频_1965606390897233921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_657
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1950019769790545922.json、视频生成/图生视频/1950922029769891841.json、视频生成/图生视频/1956166218438901761.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json、视频生成/图生视频/【图生视频】WAN2.2-I2V-KJ加速优化版_1972179704662913025.json、视频生成/图生视频/图生视频_1965606390897233921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CreateCFGScheduleFloatList`
-- `GetNode`
+- `DF_Integer`
+- `GetImageSizeAndCount`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `Int`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RH_Captioner`
-- `RH_Prompter`
-- `SetNode`
-- `TextCombinerTwo`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
@@ -44,23 +47,25 @@ source: knowledge_consolidation
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
+- `easy int`
+- `string_util_StrReplace`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `GIMMVFI_interpolate` —— 1/3 个有
-- `LayerColor: Brightness & Contrast` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `Primitive integer [Crystools]` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `TextBox` —— 1/3 个有
-- `easy anythingIndexSwitch` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/3 个有
+- `GetVideoComponents` —— 1/3 个有
+- `HunyuanVideoFoley` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `LoadVideo` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
+- `easy clearCacheAll` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

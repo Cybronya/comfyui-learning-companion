@@ -3,92 +3,73 @@ name: text_to_image_video_lora_sampler_66
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.751545
-common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, EmptyImage, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, ImpactSwitch, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.876909
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json, 视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087470174856368129.json, 视频生成/图生视频/V2超高拟态舞蹈｜160帧直出1920高清动作迁移_2092184846041960450.json, 视频生成/图生视频/平行世界的我起号专用动作迁移图生视频_2087313287083020289.json, 视频生成/图生视频/平行世界的我风格转换｜动漫手办乐高多风格视频生成_2097806857049042945.json, 视频生成/图生视频/平行世界的我｜起号专用动作迁移图生视频一键生成_2092147311823638530.json, 视频生成/文生视频/V2视频换背景｜文生视频视频生视频替换生成_2092171934913097729.json]
+members: [视频生成/文生视频/MiniMax H3 Ref2VA多参考生视频｜9图3视频3音频混搭｜2K超清带立体声_2101845289526185986.json, 视频生成/文生视频/MiniMax H3多参考工作流｜全接口开放内部开发版_2095279663810695169.json, 视频生成/文生视频/MiniMax H3开源版加速｜多图参考生视频快出成片_2107658518009565185.json, 视频生成/文生视频/MiniMax H3开源版多图参考生视频加速版工作流，文生视频图生视频方案_2107898153839190017.json, 视频生成/文生视频/MiniMax H3开源版多图参考｜加速版出片效率翻倍_2097172705530433537.json, 视频生成/文生视频/Minimax开源版H3多宫格图生视频开源版加速版_2086200437891485697.json, 视频生成/文生视频/加速版MiniMax H3开源版多图参考生视频文生视频高效出片_2088382636501852162.json, 视频生成/文生视频/多图参考生视频加速版｜MiniMax H3 开源版 出片效率翻倍不等待_2105493183315660801.json, 视频生成/文生视频/开源版多图参考生视频加速版｜MiniMax H3文生视频处理图生视频_2088353942387388418.json, 视频生成/文生视频/新ref V1.0 Lora阿里8步版｜MiniMax H3多参考加速生成_2096684025057468417.json, 视频生成/视频生视频/MiniMax H3视频参考生视频加速版开源工作流_视频生视频方案_2106143392806821889.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_66
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json、视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json、视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Ref2VA多参考生视频｜9图3视频3音频混搭｜2K超清带立体声_2101845289526185986.json、视频生成/文生视频/MiniMax H3多参考工作流｜全接口开放内部开发版_2095279663810695169.json、视频生成/文生视频/MiniMax H3开源版加速｜多图参考生视频快出成片_2107658518009565185.json、视频生成/文生视频/MiniMax H3开源版多图参考生视频加速版工作流，文生视频图生视频方案_2107898153839190017.json、视频生成/文生视频/MiniMax H3开源版多图参考｜加速版出片效率翻倍_2097172705530433537.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `EmptyImage`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
-- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 10/11 个有
-- `AddLabel` —— 10/11 个有
-- `WanVideoTeaCache` —— 10/11 个有
-- `ShowText|pysssss` —— 7/11 个有
-- `WanVideoBlockSwap` —— 4/11 个有
-- `WanVideoLoraSelect` —— 4/11 个有
-- `WanVideoModelLoader` —— 4/11 个有
-- `WanVideoTorchCompileSettings` —— 4/11 个有
-- `WanVideoVACEModelSelect` —— 4/11 个有
-- `ConditioningZeroOut` —— 3/11 个有
-- `DualCLIPLoader` —— 3/11 个有
-- `FluxGuidance` —— 3/11 个有
-- `FluxKontextImageScale` —— 3/11 个有
-- `ImageBlend` —— 3/11 个有
-- `NunchakuFluxDiTLoader` —— 3/11 个有
-- `RH_Translator` —— 3/11 个有
-- `ReferenceLatent` —— 3/11 个有
-- `SaveImage` —— 3/11 个有
-- `Seed_` —— 3/11 个有
-- `Text` —— 3/11 个有
-- `VAEEncode` —— 3/11 个有
-- `easy imageConcat` —— 3/11 个有
-- `easy seed` —— 3/11 个有
-- `ImageFromBatch` —— 1/11 个有
-- `LayerUtility: ImageBlend` —— 1/11 个有
-- `WanVideoEnhanceAVideo` —— 1/11 个有
+- `PathchSageAttentionKJ` —— 10/11 个有
+- `PrimitiveStringMultiline` —— 10/11 个有
+- `孤海注释` —— 10/11 个有
+- `EasyCache` —— 7/11 个有
+- `DF_Int_to_Float` —— 6/11 个有
+- `ImageResizeKJv2` —— 6/11 个有
+- `PrimitiveInt` —— 6/11 个有
+- `ResolutionSelector` —— 5/11 个有
+- `VHS_LoadVideo` —— 4/11 个有
+- `LoadAudio` —— 3/11 个有
+- `GetNode` —— 2/11 个有
+- `MiniMaxH3SigmaShift` —— 2/11 个有
+- `SaveImage` —— 2/11 个有
+- `SetNode` —— 2/11 个有
+- `MiniMaxH3AVDecodeT8` —— 1/11 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/11 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 1/11 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 1/11 个有
+- `MuyeTextEditOutput` —— 1/11 个有
+- `NotifyPixaroma` —— 1/11 个有
+- `PainterVRAM` —— 1/11 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/11 个有
+- `SolAttnPatch` —— 1/11 个有
+- `Text` —— 1/11 个有
 
 ## 典型参数
 

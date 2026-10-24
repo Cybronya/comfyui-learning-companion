@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_540
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [ExecutionBlocker, ImpactNeg, MuyeTextEditOutput, PrimitiveBoolean, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.9324
+common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json]
+members: [图片生成/图生图/微调模块_2057855758682902529.json, 图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json, 图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json, 图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json, 图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_540
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/微调模块_2057855758682902529.json、图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json、图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json、图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json、图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ExecutionBlocker`
-- `ImpactNeg`
-- `MuyeTextEditOutput`
-- `PrimitiveBoolean`
-- `RH_RhartImageG25FlareTextToImage`
-- `RH_RhartImageG25SunburstTextToImage`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 

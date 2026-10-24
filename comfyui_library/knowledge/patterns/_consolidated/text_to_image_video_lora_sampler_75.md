@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_75
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.679889
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DWPreprocessor, EmptyLatentImage, FaceMaskFromPoseKeypoints, GetNode, INTConstant, ImageCropByMaskAndResize, ImageResizeKJ, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PixelPerfectResolution, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoTextEncodeCached, easy anythingIndexSwitch, easy cleanGpuUsed, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.775333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, GetImageRangeFromBatch, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/CHARM+WanAnimate 动作迁移同时保留面部表情细节_2094822876728872962.json, 视频生成/图生视频/CHARM角色替换工作流｜WanAnimate动作迁移表情生成_2097805493703102466.json, 视频生成/图生视频/WanAnimate CHARM角色替换动作迁移面部表情 图生视频人物类特效方案_2089712190046691329.json, 视频生成/图生视频/WanAnimate CHARM角色替换动作迁移面部表情 图生视频人物类特效方案_2090075393586974722.json, 视频生成/图生视频/WanAnimate+CHARM组合 面部表情细腻的角色替换与动作迁移方案_2094813264973754370.json, 视频生成/图生视频/WanAnimate动作迁移｜CHARM面部表情数字人图生视频_2092198124956766209.json, 视频生成/图生视频/WanAnimate面部表情动作迁移CHARM-角色替换_2087419478895316994.json, 视频生成/图生视频/角色替换加动作迁移加面部表情爆款复刻，图生视频一站式创作方案_2103926336380301314.json, 视频生成/图生视频/面部表情+角色替换+动作迁移｜CHARM-WanAnimate图生视频_2092141500183437314.json]
+members: [图片生成/图生图/人物动作完美迁移｜SteadyDancer创意形象生成_2091220370769666050.json, 图片生成/图生图/人物动作完美迁移｜SteadyDancer角色设计生成_2090905693795737601.json, 视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长版｜表情复刻单人跳舞，舞姿神还原_2107334075940958210.json, 视频生成/图生视频/SteadyDancer单人跳舞动作迁移｜不限时长版表情复刻，视频生视频_2104525759527350274.json, 视频生成/图生视频/SteadyDancer骨骼迁移不限时长｜单人跳舞动物跳舞动作生成_2096710822365057025.json, 视频生成/图生视频/SteadyDancer骨骼迁移跳舞视频｜小猫小狗多人不限时长_2105832688631508994.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_75
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/CHARM+WanAnimate 动作迁移同时保留面部表情细节_2094822876728872962.json、视频生成/图生视频/CHARM角色替换工作流｜WanAnimate动作迁移表情生成_2097805493703102466.json、视频生成/图生视频/WanAnimate CHARM角色替换动作迁移面部表情 图生视频人物类特效方案_2089712190046691329.json、视频生成/图生视频/WanAnimate CHARM角色替换动作迁移面部表情 图生视频人物类特效方案_2090075393586974722.json、视频生成/图生视频/WanAnimate+CHARM组合 面部表情细腻的角色替换与动作迁移方案_2094813264973754370.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/人物动作完美迁移｜SteadyDancer创意形象生成_2091220370769666050.json、图片生成/图生图/人物动作完美迁移｜SteadyDancer角色设计生成_2090905693795737601.json、视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json、视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json、视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
@@ -26,70 +26,58 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
 - `EmptyLatentImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `INTConstant`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJ`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `Int`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PixelPerfectResolution`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
+- `OnnxDetectionModelLoader`
+- `PreviewImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoSampler`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 8/9 个有
-- `ImageConcatMulti` —— 8/9 个有
-- `ImpactSwitch` —— 8/9 个有
-- `WanVideoContextOptions` —— 8/9 个有
-- `BlockifyMask` —— 7/9 个有
-- `DownloadAndLoadFlorence2Model` —— 7/9 个有
-- `DownloadAndLoadSAM2Model` —— 7/9 个有
-- `DrawMaskOnImage` —— 7/9 个有
-- `Florence2Run` —— 7/9 个有
-- `Florence2toCoordinates` —— 7/9 个有
-- `GrowMask` —— 7/9 个有
-- `ImageResizeKJv2` —— 7/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/9 个有
-- `PrimitiveString` —— 7/9 个有
-- `RH_Translator` —— 7/9 个有
-- `RMBG` —— 7/9 个有
-- `Sam2Segmentation` —— 7/9 个有
-- `WanVideoSetBlockSwap` —— 7/9 个有
-- `PointsEditor` —— 6/9 个有
-- `PreviewImage` —— 6/9 个有
-- `ImageFromBatch` —— 2/9 个有
+- `PoseDetectionOneToAllAnimation` —— 8/9 个有
+- `TextInput_` —— 8/9 个有
+- `孤海注释` —— 8/9 个有
+- `GetNode` —— 7/9 个有
+- `SetNode` —— 7/9 个有
 - `SaveImage` —— 2/9 个有
-- `OnnxDetectionModelLoader` —— 1/9 个有
+- `DF_Int_to_Float` —— 1/9 个有
+- `DrawViTPose` —— 1/9 个有
+- `EmptyImage` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
 - `PoseAndFaceDetection` —— 1/9 个有
-- `ShowAnything|Mie` —— 1/9 个有
-- `WanVideoSLG` —— 1/9 个有
-- `WanVideoTeaCache` —— 1/9 个有
+- `RH_Sora2_I2V` —— 1/9 个有
+- `Text` —— 1/9 个有
+- `WanVideoBlockSwap` —— 1/9 个有
+- `WanVideoSetBlockSwap` —— 1/9 个有
+- `WanVideoTorchCompileSettings` —— 1/9 个有
+- `easy setNode` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,60 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_95
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.989
-common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9437
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLux1.D（2.5d头像框）_2062090702082891778.json, 图片生成/文生图/Flux.1文生图工作流_2100500167958024193.json, 图片生成/文生图/Qwen Image 2512 平铺商品摄影｜LoRA 商品棚拍_2091542940056375297.json, 图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100057678470012930.json, 图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100137995608346626.json, 图片生成/文生图/Z-image-base蛋挞质感增强_2026161469645135874.json, 图片生成/文生图/flux1文生图-头像-2D（金属边框）_2059557977534849025.json]
+members: [图片生成/图生图/003.FLUX.2智能综合005.提示词优化单图编辑_2035249536402202626.json, 图片生成/图生图/003.FLUX.2智能综合010.三图融合_2035260057725706241.json, 图片生成/图生图/FLUX 2 DEV 多图编辑_1993665906230362113.json, 图片生成/图生图/FLUX.2-单图编辑_1993754112938409986.json, 图片生成/图生图/FLUX2单图编辑版_1993603323286798338.json, 图片生成/图生图/FLUX2多图编辑版_1993599745228734465.json, 图片生成/图生图/FLux2-换装改图_2082637929058488322.json, 图片生成/图生图/FLux2-换装改图_2082648770222841857.json, 图片生成/图生图/🍕最强开源 FLUX2系列之单图编辑版_1993557673455140865.json, 图片生成/图生图/🍕最强开源 FLUX2系列之多图编辑版_1993566728900771842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_95
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/FLux1.D（2.5d头像框）_2062090702082891778.json、图片生成/文生图/Flux.1文生图工作流_2100500167958024193.json、图片生成/文生图/Qwen Image 2512 平铺商品摄影｜LoRA 商品棚拍_2091542940056375297.json、图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100057678470012930.json、图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100137995608346626.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合005.提示词优化单图编辑_2035249536402202626.json、图片生成/图生图/003.FLUX.2智能综合010.三图融合_2035260057725706241.json、图片生成/图生图/FLUX 2 DEV 多图编辑_1993665906230362113.json、图片生成/图生图/FLUX.2-单图编辑_1993754112938409986.json、图片生成/图生图/FLUX2单图编辑版_1993603323286798338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 6/7 个有
-- `CLIPLoader` —— 4/7 个有
-- `DualCLIPLoader` —— 3/7 个有
-- `FluxGuidance` —— 3/7 个有
-- `DeepTranslatorTextNode` —— 2/7 个有
-- `StringFunction|pysssss` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `ImageScaleBy` —— 1/7 个有
-- `ImageUpscaleWithModel` —— 1/7 个有
-- `ModelSamplingAuraFlow` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 7/10 个有
+- `ImpactInt` —— 7/10 个有
+- `CR Text` —— 4/10 个有
+- `DeepTranslatorTextNode` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
+- `PreviewImage` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `TextInput_` —— 2/10 个有
+- `ImageConcanate` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
+- `Qwen3VL_Chat` —— 1/10 个有
+- `String` —— 1/10 个有
+- `VAEDecodeTiled` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.9 | 0.5 - 1 | 6 | 75% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
-| 采样步数 | 20 | 20 - 30 | 7 | 81% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 7 | 45% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,10 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.9，观测区间 0.5 - 1，6 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，观测区间 20 - 30，7 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，7 个样本，取值分散，一致性仅 45%
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,79 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_clip_88
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.537833
-common_nodes: [CLIPLoader, CLIPTextEncode, FloatConstant, GetNode, INTConstant, ImageFromBatch+, JjkShowText, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, Primitive string multiline [Crystools], SetNode, SimpleCondition+, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll, easy seed]
+frequency: 7
+level: moderate
+coverage: 0.953
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Primitive string [Crystools], VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [ImageFromBatch+, Primitive string multiline [Crystools], SimpleCondition+, SimpleMath+, easy cleanGpuUsed, easy clearCacheAll, easy seed]
-members: [图片生成/文生图/1980468292714455042.json, 视频生成/图生视频/1981975406876213250.json, 视频生成/图生视频/1981981430689472513.json, 视频生成/图生视频/1980163388754006018.json, 视频生成/图生视频/1981942632731557889.json, 视频生成/文生视频/Wan2.2 Smooth Mix文生视频_1980468292714455042.json]
+missing: []
+members: [视频生成/图生视频/360度旋转特效-wan图生视频KJ_1899625950118629378.json, 视频生成/图生视频/Wan2.1-阿里万相-图生视频(KJ版)_1894528926553911297.json, 视频生成/图生视频/杀手-视频特效_1901443764307509249.json, 视频生成/图生视频/肌肉男魅力特效-wan图生视频KJ_1899678523555008513.json, 视频生成/图生视频/膨胀特效-wan图生视频KJ_1899620141431439362.json, 视频生成/图生视频/跨屏幕牵手-Wan2.1图生视频_1896568283456528386.json, 视频生成/文生视频/Wan2.1-阿里万相开源文_图生视频(KJ版)_1894584540348743681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_88
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1980468292714455042.json、视频生成/图生视频/1981975406876213250.json、视频生成/图生视频/1981981430689472513.json、视频生成/图生视频/1980163388754006018.json、视频生成/图生视频/1981942632731557889.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/360度旋转特效-wan图生视频KJ_1899625950118629378.json、视频生成/图生视频/Wan2.1-阿里万相-图生视频(KJ版)_1894528926553911297.json、视频生成/图生视频/杀手-视频特效_1901443764307509249.json、视频生成/图生视频/肌肉男魅力特效-wan图生视频KJ_1899678523555008513.json、视频生成/图生视频/膨胀特效-wan图生视频KJ_1899620141431439362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：54%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `FloatConstant`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch+`
-- `JjkShowText`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Primitive string multiline [Crystools]`
-- `SetNode`
-- `SimpleCondition+`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 7 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `Primitive string [Crystools]`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy seed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 5/6 个有
-- `GIMMVFI_interpolate` —— 5/6 个有
-- `CLIPVisionEncode` —— 4/6 个有
-- `CLIPVisionLoader` —— 4/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `Int` —— 4/6 个有
-- `LoadImage` —— 4/6 个有
-- `RH_LLMAPI_NODE` —— 4/6 个有
-- `WanImageToVideo` —— 4/6 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 2/6 个有
-- `ImageBatchMultiple+` —— 2/6 个有
-- `ModelPatchTorchSettings` —— 2/6 个有
-- `Power Lora Loader (rgthree)` —— 2/6 个有
-- `WanFirstLastFrameToVideo` —— 2/6 个有
-- `wanBlockSwap` —— 2/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `easy int` —— 1/6 个有
+- `Note _O` —— 5/7 个有
+- `CR Text Concatenate` —— 4/7 个有
+- `RH_Captioner` —— 4/7 个有
+- `String Replace (mtb)` —— 4/7 个有
+- `WanVideoLoraSelect` —— 4/7 个有
+- `CM_IntToFloat` —— 3/7 个有
+- `ImageScaleDownToSize` —— 3/7 个有
+- `LayerUtility: PurgeVRAM` —— 3/7 个有
+- `WanVideoEmptyEmbeds` —— 2/7 个有
+- `WanVideoExperimentalArgs` —— 2/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler_ancestral | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,9 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、Primitive string multiline [Crystools]、SimpleCondition+、SimpleMath+、easy cleanGpuUsed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

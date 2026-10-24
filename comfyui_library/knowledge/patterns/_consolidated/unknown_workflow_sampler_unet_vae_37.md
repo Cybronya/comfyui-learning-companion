@@ -1,91 +1,76 @@
 ---
 name: unknown_workflow_sampler_unet_vae_37
 type: Unknown Workflow
-frequency: 13
+frequency: 16
 level: strong
-coverage: 0.645692
-common_nodes: [Anything Everywhere3, CLIPLoader, CR Prompt Text, EmptyLatentImage, KSampler, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.788438
+common_nodes: [BasicScheduler, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, PathchSageAttentionKJ, SamplerCustom, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, easy setNode, CR Prompt Text, Seed (rgthree)]
-members: [图片生成/图生图/2102355136613015554.json, 图片生成/图生图/2102363823524114434.json, 图片生成/图生图/2102369979093053442.json, 图片生成/图生图/2102470856244031490.json, 图片生成/图生图/2102573883814666241.json, 图片生成/图生图/2104466208149032961.json, 图片生成/图生图/【Qwen Image 2.1】万能输入工作流_2103013637228154881.json, 图片生成/文生图/Qwen Image 2.1 Character Reference Sheet (Four Views)_2102316050699345921.json, 图片生成/文生图/Qwen Image 2.1 Short Drama Asset Series – Environm_2102362481237782530.json, 图片生成/文生图/Qwen Image 2.1 全能工作流合集_2101841162679177218.json, 图片生成/文生图/Qwen Image 2.1文生编辑一锅端工作流详拆系列11集_2102948623549026306.json, 图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101781526932447234.json, 图片生成/文生图/【Qwen Image 2.1】全功能集合工作流_2101831592514772993.json]
+missing: []
+members: [视频生成/图生视频/prompt_relay_ltx23_2067967750336761858.json, 视频生成/图生视频/prompt_relay_ltx23_timeline_2055229065958830081.json, 视频生成/图生视频/【Supermate】LTX2.3精控提示词时间线prompt_relay_timeline_2049641151925370882.json, 视频生成/图生视频/单图多镜头prompt_relay_ltx23_提示词中继，分段提示词，视频符合物理逻辑_2052988468854312962.json, 视频生成/图生视频/测试图生视频_2059113705333415938.json, 视频生成/图生视频/空白工作流_2059459156813377538.json, 视频生成/图生视频/视频生成-音画同步_2059406752063512578.json, 视频生成/图生视频/超强的LTX2.3——图生视频_2057108864734154754.json, 视频生成/图生视频/超强的LTX2.3——图生视频_2057108922590388226.json, 视频生成/图生视频/超强的LTX2.3——图生视频_2057109059437948929.json, 视频生成/文生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2047557904437350401.json, 视频生成/文生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2068645053744115713.json, 视频生成/文生视频/Ltx2.3+细化多镜头长时间 KJ版 图生视频时间分段剪辑++逻辑控制PromptRelay+VB_2052194763788570626.json, 视频生成/文生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2055523539997995010.json, 视频生成/文生视频/一键图生长视频Ltx2.5+细化多镜头长时间+图生视频时间分段剪辑+逻辑控制_2089903343618584577.json, 视频生成/文生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2055128924383924225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/2102355136613015554.json、图片生成/图生图/2102363823524114434.json、图片生成/图生图/2102369979093053442.json、图片生成/图生图/2102470856244031490.json、图片生成/图生图/2102573883814666241.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/prompt_relay_ltx23_2067967750336761858.json、视频生成/图生视频/prompt_relay_ltx23_timeline_2055229065958830081.json、视频生成/图生视频/【Supermate】LTX2.3精控提示词时间线prompt_relay_timeline_2049641151925370882.json、视频生成/图生视频/单图多镜头prompt_relay_ltx23_提示词中继，分段提示词，视频符合物理逻辑_2052988468854312962.json、视频生成/图生视频/测试图生视频_2059113705333415938.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `EmptyLatentImage`
-- `KSampler`
-- `QwenImage21Cache`
-- `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+全部 16 个 workflow 都包含：
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 12/13 个有
-- `PreviewImage` —— 12/13 个有
-- `ComfySwitchNode` —— 11/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
-- `LoadImage` —— 11/13 个有
-- `easy setNode` —— 11/13 个有
-- `LayerUtility: ImageReel` —— 10/13 个有
-- `LayerUtility: ImageReelComposit` —— 10/13 个有
-- `Seed (rgthree)` —— 10/13 个有
-- `ShowText|pysssss` —— 9/13 个有
-- `TextGenerateLTX2Prompt` —— 9/13 个有
-- `GetNode` —— 8/13 个有
-- `SetNode` —— 8/13 个有
-- `PreviewAny` —— 6/13 个有
-- `SeedVR2LoadDiTModel` —— 6/13 个有
-- `SeedVR2LoadVAEModel` —— 6/13 个有
-- `SeedVR2VideoUpscaler` —— 6/13 个有
-- `easy showAnything` —— 6/13 个有
-- `BatchImagesNode` —— 5/13 个有
-- `Any Switch (rgthree)` —— 4/13 个有
-- `LoraLoaderModelOnly` —— 4/13 个有
-- `RHLLMChatNode` —— 4/13 个有
-- `ResizeLongestToNode` —— 4/13 个有
-- `easy getNode` —— 4/13 个有
-- `Label (rgthree)` —— 3/13 个有
-- `INTConstant` —— 2/13 个有
-- `ImageScaleToTotalPixels` —— 2/13 个有
-- `LayerUtility: TextJoin` —— 2/13 个有
-- `Fast Bypasser (rgthree)` —— 1/13 个有
-- `ImageScaleBy` —— 1/13 个有
-- `PrimitiveBoolean` —— 1/13 个有
-- `SplitImageWithAlpha` —— 1/13 个有
-- `VOSR2ModelLoader` —— 1/13 个有
-- `VOSR2Upscale` —— 1/13 个有
-- `easy float` —— 1/13 个有
-- `easy int` —— 1/13 个有
-- `孤海注释` —— 1/13 个有
+- `ConditioningZeroOut` —— 15/16 个有
+- `GetNode` —— 15/16 个有
+- `LTX2SamplingPreviewOverride` —— 15/16 个有
+- `PreviewImage` —— 15/16 个有
+- `SetNode` —— 15/16 个有
+- `VisualizeSigmasKJ` —— 15/16 个有
+- `LoraLoaderModelOnly` —— 14/16 个有
+- `VHS_VideoCombine` —— 14/16 个有
+- `CR Prompt Text` —— 12/16 个有
+- `JWInteger` —— 12/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/16 个有
+- `PromptRelayEncode` —— 12/16 个有
+- `PromptRelayEncodeTimeline` —— 4/16 个有
+- `CLIPTextEncode` —— 2/16 个有
+- `CreateVideo` —— 2/16 个有
+- `LTX2_NAG` —— 2/16 个有
+- `SaveVideo` —— 2/16 个有
+- `ComfyNumberConvert` —— 1/16 个有
+- `ConditioningCombine` —— 1/16 个有
+- `Label (rgthree)` —— 1/16 个有
+- `PrimitiveFloat` —— 1/16 个有
+- `VHS_LoadVideo` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 13 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 13 | 100% |
-| 采样步数 | 40 | 20 - 40 | 13 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 489 | 129 - 489 | 16 | 76% |
+| 高度 | 25 | 25 - 30 | 16 | 95% |
 
 ## 常见问题
 
@@ -93,11 +78,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 20 - 40，13 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageReel、LayerUtility: ImageReelComposit、easy setNode、CR Prompt Text、Seed (rgthree)
+- 宽度 中位数 489，观测区间 129 - 489，16 个样本
+- 高度 中位数 25，观测区间 25 - 30，16 个样本，取值集中（一致性 95%）

@@ -1,78 +1,94 @@
 ---
 name: unknown_workflow_lora_sampler_unet_50
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.667
-common_nodes: [CLIPLoader, EmptySD3LatentImage, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [Label (rgthree), GetImageSize+]
-members: [图片生成/文生图/1974486765111218177.json, 图片生成/文生图/Qwen Edit Plus 2image_2005489054781243393.json, 视频生成/图生视频/2029100909296361474.json]
+frequency: 10
+level: moderate
+coverage: 0.6151
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, H3SigmaRefiner, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo]
+problems: []
+missing: []
+members: [图片生成/图生图/MiniMax_H3_电影质感正式版_2100140264701648898.json, 视频生成/图生视频/MiniMax H3全能参考+Latent放大 ｜真实电影质感_2097236111977439233.json, 视频生成/图生视频/MiniMax_H3_电影质感正式版_2100061128037588994.json, 视频生成/图生视频/电影感大片-minimax h3-多参双采样图影音-v2.0_2093541554236510209.json, 视频生成/文生视频/MiniMax H3 真实电影质感【无水印正式版】｜全能参考｜Latent放大_2108365559254568962.json, 视频生成/文生视频/MiniMax H3 真实电影质感【正式版】｜全能参考+Latent放大_2099642261834391553.json, 视频生成/文生视频/MiniMax H3 真实电影质感｜全能参考+Latent放大_2094202685590429698.json, 视频生成/文生视频/MiniMax H3_电影质感正式版_2092438021516906497.json, 视频生成/文生视频/MiniMax_H3远景模糊人脸修复_2100874075915767810.json, 视频生成/视频生视频/MiniMax H3_电影质感正式版_2105690903259209729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_50
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1974486765111218177.json、图片生成/文生图/Qwen Edit Plus 2image_2005489054781243393.json、视频生成/图生视频/2029100909296361474.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/MiniMax_H3_电影质感正式版_2100140264701648898.json、视频生成/图生视频/MiniMax H3全能参考+Latent放大 ｜真实电影质感_2097236111977439233.json、视频生成/图生视频/MiniMax_H3_电影质感正式版_2100061128037588994.json、视频生成/图生视频/电影感大片-minimax h3-多参双采样图影音-v2.0_2093541554236510209.json、视频生成/文生视频/MiniMax H3 真实电影质感【无水印正式版】｜全能参考｜Latent放大_2108365559254568962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `GetNode`
-- `KSampler`
+- `ComfyMathExpression`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
+- `MiniMaxH3BlockCacheT8`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `GetImageSize+` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `TextEncodeQwenImageEdit` —— 1/3 个有
+- `CreateVideo` —— 9/10 个有
+- `DisableNoise` —— 9/10 个有
+- `H3LatentUpscaleByJingchen573` —— 9/10 个有
+- `LTXVConcatAVLatent` —— 9/10 个有
+- `LTXVSeparateAVLatent` —— 9/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/10 个有
+- `MinimaxH3LatentUpscaler3D` —— 9/10 个有
+- `SaveVideo` —— 9/10 个有
+- `SplitSigmas` —— 9/10 个有
+- `easy cleanGpuUsed` —— 9/10 个有
+- `easy anythingIndexSwitch` —— 8/10 个有
+- `GetNode` —— 5/10 个有
+- `MiniMaxH3ImageToVideo` —— 5/10 个有
+- `SetNode` —— 5/10 个有
+- `Any Switch (rgthree)` —— 4/10 个有
+- `Fast Groups Muter (rgthree)` —— 4/10 个有
+- `FastGroupsBypassSwitch` —— 4/10 个有
+- `MuyeTextEditOutput` —— 4/10 个有
+- `PrimitiveInt` —— 4/10 个有
+- `ShowText|pysssss` —— 4/10 个有
+- `孤海注释` —— 4/10 个有
+- `CR Text Concatenate` —— 3/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `H3FaceStitch` —— 1/10 个有
+- `H3FaceTrackCrop` —— 1/10 个有
+- `H3InjectVideoLatent` —— 1/10 个有
+- `H3PerFrameDenoise` —— 1/10 个有
+- `LoraLoaderBypassModelOnly` —— 1/10 个有
+- `MiniMaxH3NativeAudioLock` —— 1/10 个有
+- `MmuuaiGroupBypass` —— 1/10 个有
+- `VHS_VideoCombine` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
+- `忽略多组孤海` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 3 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)、GetImageSize+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

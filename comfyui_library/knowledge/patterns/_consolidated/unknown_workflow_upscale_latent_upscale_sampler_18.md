@@ -1,86 +1,83 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_18
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: strong
-coverage: 0.8858
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced]
+coverage: 0.817
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatchV2, ConditioningZeroOut, EmptyLatentImage, GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, KSamplerAdvanced, LatentUpscaleBy, LoadImage, PreviewImage, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2057838055628828673.json, 视频生成/图生视频/本地开源免费，真人短镜头3_2058240849422675970.json, 视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json, 视频生成/文生视频/LTX2.3 文生_图生视频 KJ版_2030578285100408833.json, 视频生成/文生视频/最新LTX 2.3  文生视频工作流 智能自动扩写提示词_2031229319539859458.json]
+members: [图片生成/文生图/Krea2 双采+高清生图优化流_2078259754073411585.json, 图片生成/文生图/Krea2 图片反推+提示词自动扩写+双采 V2_2070845487900610561.json, 图片生成/文生图/Krea2 文生图+图推图_2102928700852494337.json, 图片生成/文生图/Krea2_文生图+图推图_2104373697317523457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2057838055628828673.json、视频生成/图生视频/本地开源免费，真人短镜头3_2058240849422675970.json、视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json、视频生成/文生视频/LTX2.3 文生_图生视频 KJ版_2030578285100408833.json、视频生成/文生视频/最新LTX 2.3  文生视频工作流 智能自动扩写提示词_2031229319539859458.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2 双采+高清生图优化流_2078259754073411585.json、图片生成/文生图/Krea2 图片反推+提示词自动扩写+双采 V2_2070845487900610561.json、图片生成/文生图/Krea2 文生图+图推图_2102928700852494337.json、图片生成/文生图/Krea2_文生图+图推图_2104373697317523457.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
+- `CR Prompt Text`
+- `ColorMatchV2`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `GetImageSize+`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageScaleBy`
+- `KSamplerAdvanced`
+- `LatentUpscaleBy`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 4/5 个有
-- `DualCLIPLoader` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `ResizeImageMaskNode` —— 4/5 个有
-- `VAEDecodeTiled` —— 4/5 个有
-- `VAELoader` —— 4/5 个有
-- `VAELoaderKJ` —— 4/5 个有
-- `SaveVideo` —— 3/5 个有
-- `UNETLoader` —— 3/5 个有
-- `EnhancedLoadDiffusionModel` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `VHS_VideoCombine` —— 2/5 个有
-- `easy indexAnything` —— 2/5 个有
-- `Display Any (rgthree)` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `LTXAVTextEncoderLoader` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RH_LLMAPI_Pro_Node` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
-- `Switch` —— 1/5 个有
-- `VAEDecode` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `easy clearCacheAll` —— 1/5 个有
+- `GetImageSize` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `easy promptConcat` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `llama_cpp_parameters` —— 3/4 个有
+- `Any Switch (rgthree)` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `SimpleMathDual+` —— 1/4 个有
+- `UltimateSDUpscale` —— 1/4 个有
+- `UpscaleModelLoader` —— 1/4 个有
+- `easy promptList` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 7 | 7 - 7 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
+| 宽度 | 720 | 720 - 720 | 4 | 100% |
+| 高度 | 1280 | 1280 - 1280 | 4 | 100% |
 
 ## 常见问题
 
@@ -88,5 +85,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 宽度 中位数 720，观测区间 720 - 720，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1280，观测区间 1280 - 1280，4 个样本，取值集中（一致性 100%）

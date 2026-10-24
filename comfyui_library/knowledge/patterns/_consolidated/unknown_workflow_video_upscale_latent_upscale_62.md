@@ -2,53 +2,77 @@
 name: unknown_workflow_video_upscale_latent_upscale_62
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 1
-common_nodes: [GetVideoComponents, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadVideo, ManualSigmas, MiniMaxH3LatentUpscaleBy32T8, RH_HeyGemNode, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEEncode, VHS_VideoCombine]
+level: strong
+coverage: 0.868
+common_nodes: [CFGGuider, CLIPTextEncode, ComfySwitchNode, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, ImageScaleToTotalPixels, JoinStrings, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, ResolutionSelector, SamplerCustomAdvanced, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy int]
 problems: []
 missing: []
-members: [数字人/数字人/数字人工作流2.0_2100529234358915073.json, 数字人/数字人/数字人工作流3.0_2100543410036887554.json, 数字人/数字人/数字人工作流_2100519010789052417.json, 音频生成/音频生成/声音克隆_2100632305353187330.json, 音频生成/音频生成/数字人工作流3.0_2103301033215741954.json, 音频生成/音频生成/数字人工作流3.0_2104851029266358273.json]
+members: [视频生成/图生视频/LTX2.3 AI动漫 短剧文图生视频_2077715453979484162.json, 视频生成/图生视频/LTX2.3 AI动漫文图生视频_2068937173436551170.json, 视频生成/图生视频/LTX2.3 AI动漫文图生视频_2072223946312867841.json, 视频生成/图生视频/LTX2.3 AI动漫文图生视频_2077284348637835265.json, 视频生成/图生视频/LTX2.3_AI动漫文图生视频_2081980799116730369.json, 视频生成/文生视频/LTX2.3 AI动漫 短剧文图生视频_2077737653902077953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_62
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/数字人工作流2.0_2100529234358915073.json、数字人/数字人/数字人工作流3.0_2100543410036887554.json、数字人/数字人/数字人工作流_2100519010789052417.json、音频生成/音频生成/声音克隆_2100632305353187330.json、音频生成/音频生成/数字人工作流3.0_2103301033215741954.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 AI动漫 短剧文图生视频_2077715453979484162.json、视频生成/图生视频/LTX2.3 AI动漫文图生视频_2068937173436551170.json、视频生成/图生视频/LTX2.3 AI动漫文图生视频_2072223946312867841.json、视频生成/图生视频/LTX2.3 AI动漫文图生视频_2077284348637835265.json、视频生成/图生视频/LTX2.3_AI动漫文图生视频_2081980799116730369.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `GetVideoComponents`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `ComfySwitchNode`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `JoinStrings`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadVideo`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3LatentUpscaleBy32T8`
-- `RH_HeyGemNode`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResizeImagesByLongerEdge`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SimpleMath+`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `Qwen3ASRLoader` —— 5/6 个有
-- `Qwen3ASRTranscribe` —— 5/6 个有
-- `RunningHub_VoxCPM_Generate` —— 5/6 个有
-- `RunningHub_VoxCPM_LoadModel` —— 5/6 个有
-- `SaveAudio` —— 4/6 个有
+- `easy int`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -56,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

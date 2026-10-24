@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_186
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.609167
-common_nodes: [ComfySwitchNode, MinimaxHailuo03ContextIRNode, MinimaxHailuo03RegenerateNode, PrimitiveBoolean, PrimitiveStringMultiline, SaveText, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_minimax_h3_max_flf2v.json, comfyui-workflow-templates-json/api_minimax_h3_max_i2v.json, comfyui-workflow-templates-json/api_minimax_h3_max_r2v.json, comfyui-workflow-templates-json/api_minimax_h3_max_t2v.json, comfyui-workflow-templates-json/api_minimax_h3_max_turbo_i2v.json, comfyui-workflow-templates-json/api_minimax_h3_max_turbo_t2v.json]
+members: [图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json, 图片生成/图生图/Seedream V5 Pro I2I图生图_2077553660804026369.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json, 图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json, 图片生成/图生图/全能图片G-2.5图生图高品质版  电商图PAI工作流自动生图专用_2112834236523831298.json, 图片生成/图生图/全能图片G-2.5图生图高品质版_2097868541360955394.json, 图片生成/文生图/G- image-2.5图生图高品质版_2098043807114813441.json, 图片生成/文生图/image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5+全_2097936915642281985.json, 图片生成/文生图/全能图片G-2.5图生图高品质版  5毛_2100116129564942337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_186
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/api_minimax_h3_max_flf2v.json、comfyui-workflow-templates-json/api_minimax_h3_max_i2v.json、comfyui-workflow-templates-json/api_minimax_h3_max_r2v.json、comfyui-workflow-templates-json/api_minimax_h3_max_t2v.json、comfyui-workflow-templates-json/api_minimax_h3_max_turbo_i2v.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json、图片生成/图生图/Seedream V5 Pro I2I图生图_2077553660804026369.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json、图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ComfySwitchNode`
-- `MinimaxHailuo03ContextIRNode`
-- `MinimaxHailuo03RegenerateNode`
-- `PrimitiveBoolean`
-- `PrimitiveStringMultiline`
-- `SaveText`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/6 个有
-- `MinimaxHailuo03FirstLastFrameNode` —— 3/6 个有
-- `MinimaxHailuo03TextToVideoNode` —— 2/6 个有
-- `MinimaxHailuo03ReferenceNode` —— 1/6 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 6/10 个有
+- `RH_SeedreamV5ProImageToImage` —— 4/10 个有
+- `Text` —— 4/10 个有
 
 ## 典型参数
 

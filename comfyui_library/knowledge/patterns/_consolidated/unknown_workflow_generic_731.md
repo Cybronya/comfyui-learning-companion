@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_generic_731
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9375
-common_nodes: [CR Text, LoadImage, MultiTextConcatenate, RH_RhartImageG25FlareImageToImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
+frequency: 4
+level: moderate
+coverage: 0.571
+common_nodes: [CR Text, LayerUtility: RoundedRectangle, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
-missing: [CR Text]
-members: [图片生成/图生图/2054030361105059841.json, 图片生成/文生图/字体设计_全能图片G_2054030361105059841.json]
+missing: []
+members: [图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_731
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2054030361105059841.json、图片生成/文生图/字体设计_全能图片G_2054030361105059841.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json、图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CR Text`
-- `LoadImage`
-- `MultiTextConcatenate`
-- `RH_RhartImageG25FlareImageToImage`
-- `RH_RhartImageG2ImageToImage`
+- `LayerUtility: RoundedRectangle`
+- `PrimitiveInt`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `Text`
 
 ## 典型参数
 
@@ -41,5 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

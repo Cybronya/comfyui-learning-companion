@@ -1,60 +1,51 @@
 ---
 name: unknown_workflow_sampler_vae_25
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8346
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.927091
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAFirstFrameCondition, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax_H3_T2V_lora加速_2090640077063020545.json, 视频生成/文生视频/MiniMax_H3文生视频V1_2087411429900120065.json, 视频生成/文生视频/MiniMax_H3文生视频V2_2088958815235559426.json, 视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json, 视频生成/文生视频/Minimax H3 文生视频 8步加速Lora+sage双重加速工作流_2089325283299119105.json, 视频生成/文生视频/Minimax H3 文生视频_2084236059835195394.json, 视频生成/文生视频/Minimax H3 文生视频_2084263974157242369.json, 视频生成/文生视频/MinimaxH3LORA加速工作流ENG文生视频4步ENG_2087097542533279745.json, 视频生成/文生视频/MinimaxH3文生视频4步LORA加速工作流_2084217093255421954.json, 视频生成/文生视频/Minimax_h3_文生视频_2084506740581818369.json]
+members: [视频生成/图生视频/Minimax H3 首尾帧&自动提示词_2084468473316597761.json, 视频生成/图生视频/MinimaxH3首尾帧&自动提示词ENGENG_2087091217380237314.json, 视频生成/图生视频/首尾帧生视频 -开源海螺minimax-H3_2084249905740210177.json, 视频生成/图生视频/首尾帧视频-MiniMax H3开源版_2084194304708407298.json, 视频生成/文生视频/MiniMax H3 图生视频 开源版_2084243906950164482.json, 视频生成/文生视频/MiniMax H3 图生视频 开源版_2088063956425465858.json, 视频生成/文生视频/MiniMax H3 图生视频 开源版_2097846209267462146.json, 视频生成/文生视频/MiniMax H3 图生视频 首帧生视频 开源版_2084887895084720130.json, 视频生成/文生视频/MiniMax H3首尾帧视频RH开源版_2084229817393836033.json, 视频生成/文生视频/MiniMax H3首尾帧视频RH开源版_2084890657570770945.json, 视频生成/文生视频/MiniMaxH3RH开源版ENG首尾帧视频ENGENG_2087106846300663809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_25
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3_T2V_lora加速_2090640077063020545.json、视频生成/文生视频/MiniMax_H3文生视频V1_2087411429900120065.json、视频生成/文生视频/MiniMax_H3文生视频V2_2088958815235559426.json、视频生成/文生视频/Minimax H3 -  文生视频工作流_2095019707211542530.json、视频生成/文生视频/Minimax H3 文生视频 8步加速Lora+sage双重加速工作流_2089325283299119105.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 首尾帧&自动提示词_2084468473316597761.json、视频生成/图生视频/MinimaxH3首尾帧&自动提示词ENGENG_2087091217380237314.json、视频生成/图生视频/首尾帧生视频 -开源海螺minimax-H3_2084249905740210177.json、视频生成/图生视频/首尾帧视频-MiniMax H3开源版_2084194304708407298.json、视频生成/文生视频/MiniMax H3 图生视频 开源版_2084243906950164482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 11 个 workflow 都包含：
+- `CreateVideo`
+- `LoadImage`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3FL2VAEncode`
+- `RHMiniMaxH3FL2VAFirstFrameCondition`
+- `RHMiniMaxH3FL2VAModelLoader`
+- `RHMiniMaxH3FL2VATarget`
+- `RHMiniMaxH3FL2VATextEncoderLoader`
+- `RHMiniMaxH3FL2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 9/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `ResolutionSelector` —— 8/10 个有
-- `UNETLoader` —— 8/10 个有
-- `LoraLoaderModelOnly` —— 7/10 个有
-- `VHS_VideoCombine` —— 6/10 个有
-- `CreateVideo` —— 5/10 个有
-- `SaveVideo` —— 5/10 个有
-- `PrimitiveStringMultiline` —— 3/10 个有
-- `easy int` —— 3/10 个有
-- `easy showAnything` —— 3/10 个有
-- `DiffusionModelLoaderKJ` —— 2/10 个有
-- `MiniMaxChunkFeedForward` —— 2/10 个有
-- `MiniMaxLowVRAMAttention` —— 2/10 个有
-- `MuyeTextEditOutput` —— 2/10 个有
-- `CR Text` —— 1/10 个有
-- `INTConstant` —— 1/10 个有
-- `MiniMaxH3SigmaShift` —— 1/10 个有
-- `SolAttnPatch` —— 1/10 个有
+- `CR Text` —— 10/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/11 个有
+- `Int` —— 9/11 个有
+- `intToFloat _O` —— 9/11 个有
+- `PrimitiveInt` —— 8/11 个有
+- `ImageResizeKJv2` —— 2/11 个有
+- `RHHiddenNodes` —— 2/11 个有
+- `RH_LLMAPI_Pro_Node` —— 2/11 个有
+- `ShowAnything|Mie` —— 2/11 个有
 
 ## 典型参数
 

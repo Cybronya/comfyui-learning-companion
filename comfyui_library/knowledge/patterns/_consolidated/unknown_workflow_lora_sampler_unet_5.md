@@ -1,89 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_unet_5
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.600769
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAELoader]
-problems: []
+frequency: 82
+level: strong
+coverage: 0.862256
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/1.MinimaxH3双采样V2版本（自用修改布局）！_2089749289575731202.json, 视频生成/图生视频/MiniMax H3五分钟生成1080p高清（可视化全模态高清输出）_2093962334623584257.json, 视频生成/图生视频/MiniMax H3全能参考，二采放大_2092138431697735681.json, 视频生成/图生视频/MiniMax H3全能插件+双采1080p高清（8步加速）8-30_2093712107018743809.json, 视频生成/图生视频/MiniMax H3全能插件+双采1080p高清（8步加速）8-30_2093741169816723457.json, 视频生成/图生视频/MiniMax_H3_双采样潜空间放大直出1080p_2096948674386550786.json, 视频生成/图生视频/Minimax H3 人物电影级视频工作流（完美解决脸部崩坏问题）_2089732704005877761.json, 视频生成/图生视频/Minimax H3 图生视频 双采样+sigma强化 潜空间放大工作流 小脸不崩漫剧必备！_2089543355335274497.json, 视频生成/图生视频/Minimax H3 图生视频 双采样+sigma强化 潜空间放大工作流 小脸不崩漫剧必备！_2089917740520919041.json, 视频生成/图生视频/Minimax H3全能多模态--二采放大（加速+sigma强化）工作流_2092164749025964033.json, 视频生成/图生视频/h3潜空间放大工作流老八_2089878151064276994.json, 视频生成/图生视频/minimaxH3海螺智能提示词优化加速双采样高清放大工作流_2093339172751888385.json, 视频生成/文生视频/minimaxH3海螺智能提示词优化加速双采样高清放大工作流-StarAI_2087299228723933186.json]
+members: [图片生成/图生图/AI代码侠土豆 Qwen-Edit 2511 可视化导演镜头控制_2009862061148348417.json, 图片生成/图生图/AI换装丨FireRed-Image-Edit 1.1丨双图服装迁移_2099794627078483970.json, 图片生成/图生图/AI换装丨FireRed-Image-Edit 1.1丨双图服装迁移_2100135805372157954.json, 图片生成/图生图/AI换装丨FireRed-Image-Edit 1.1丨服装迁移·对比输出_2099798161740095489.json, 图片生成/图生图/AI换装丨FireRed-Image-Edit_1.1丨双图服装迁移_2100391034046992386.json, 图片生成/图生图/AI换装丨FireRed-Image-Edit_1.1丨双图服装迁移_2100415738598219778.json, 图片生成/图生图/FireRed-Image-Edit电商服装展示_2089953268666556418.json, 图片生成/图生图/FireRed-lmage-Edit1.1换装_换衣_一键换衣_电商服装展示_2068293485232480257.json, 图片生成/图生图/FireRedImageEdit1.1换衣换装模特服装展示_2060342153183850498.json, 图片生成/图生图/Image-Edit 超简单1_1换装_2092788196512976897.json, 图片生成/图生图/Image-Edit+超简单1：1换装_2092811719927226369.json, 图片生成/图生图/一键快速换装 换衣 电商服装展示 FireRed-Image-Edit 小红书_2090019466867462145.json, 图片生成/图生图/一键快速换装 换衣 电商服装展示 FireRed-Image-Edit 小红书_2090059115530899458.json, 图片生成/图生图/一键换衣 服装展示_2080315710777159682.json, 图片生成/图生图/一键换装  换衣  一键换衣 电商服装展示_2088152490834489346.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2079635494593449985.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2080929952987435009.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2082175037053947906.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2082539309051236353.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2085043026375827458.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2086684594333638658.json, 图片生成/图生图/图像编辑工作流_2037495431982227458.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2089387901598658561.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2089779359493214209.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2089788822061150210.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2089791906434867201.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2089798226978369538.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2090318901547720705.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2090327390072434690.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2090328546974715905.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2090678770729578497.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2091226762624720898.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2091570091375812609.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2091591467499352065.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2091592423985209345.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2092160038914842625.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2092171831271841793.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2092452036326551553.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2092551609803952130.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2092657968469864450.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2080726874241724418.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2085603382395494401.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097046369788846082.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097201546596540417.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097257271398064130.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097370013664632833.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097414767513260033.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097602484205342721.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2097946481188753409.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2098679422143520770.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099206905305587714.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099222779865419778.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099227687767339009.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099536089630470145.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099559863885062146.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099586093908844545.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099726707384209410.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099754902070321153.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099808546287341570.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2099912304740626434.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100088104412602369.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100129773933649922.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100262909652848642.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100280244040196098.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100330921609224194.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100645279337902081.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100657988930457601.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100863063716089857.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2100879859449950210.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2101911727200886785.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2101919789479452673.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2101920691334500353.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2101974321408339970.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2102092053311217665.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2102102116562198530.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2102105687684902913.json, 图片生成/图生图/换衣服  衣服展示 一键换装 换衣  电商服装展示_2102246195535110146.json, 图片生成/图生图/服饰  服装  换装 换衣  电商服装展示_2073283111575703554.json, 图片生成/图生图/服饰 服装  换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2074488902806753282.json, 图片生成/图生图/服饰 服装  换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2075487295997833217.json, 图片生成/图生图/超好用🔥小红书-服装展示一键换衣-保持人物一致性_2047183634578284545.json, 图片生成/图生图/阿清的自然光影换装FireRed-Image-Edit_2090697919631548417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_5
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/1.MinimaxH3双采样V2版本（自用修改布局）！_2089749289575731202.json、视频生成/图生视频/MiniMax H3五分钟生成1080p高清（可视化全模态高清输出）_2093962334623584257.json、视频生成/图生视频/MiniMax H3全能参考，二采放大_2092138431697735681.json、视频生成/图生视频/MiniMax H3全能插件+双采1080p高清（8步加速）8-30_2093712107018743809.json、视频生成/图生视频/MiniMax H3全能插件+双采1080p高清（8步加速）8-30_2093741169816723457.json…）
+> 由 `engine/knowledge_consolidation` 从 82 个 workflow 归纳得出（图片生成/图生图/AI代码侠土豆 Qwen-Edit 2511 可视化导演镜头控制_2009862061148348417.json、图片生成/图生图/AI换装丨FireRed-Image-Edit 1.1丨双图服装迁移_2099794627078483970.json、图片生成/图生图/AI换装丨FireRed-Image-Edit 1.1丨双图服装迁移_2100135805372157954.json、图片生成/图生图/AI换装丨FireRed-Image-Edit 1.1丨服装迁移·对比输出_2099798161740095489.json、图片生成/图生图/AI换装丨FireRed-Image-Edit_1.1丨双图服装迁移_2100391034046992386.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **样本数**：82
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 82 个 workflow 都包含：
 - `CLIPLoader`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `ConditioningZeroOut`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `H3SigmaRefiner` —— 12/13 个有
-- `PrimitiveFloat` —— 12/13 个有
-- `SolAttnMiniMax` —— 11/13 个有
-- `VAEDecode` —— 11/13 个有
-- `VAEDecodeAudio` —— 11/13 个有
-- `ComfyMathExpression` —— 9/13 个有
-- `GetNode` —— 9/13 个有
-- `LoadImage` —— 9/13 个有
-- `MiniMaxH3ReferenceToVideo` —— 9/13 个有
-- `MinimaxH3LatentUpscaler3D` —— 9/13 个有
-- `PrimitiveStringMultiline` —— 9/13 个有
-- `SetNode` —— 9/13 个有
-- `VHS_VideoCombine` —— 7/13 个有
-- `CreateVideo` —— 6/13 个有
-- `Label (rgthree)` —— 6/13 个有
-- `SaveVideo` —— 6/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/13 个有
-- `MiniMaxH3Unified` —— 4/13 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 4/13 个有
-- `CR Text` —— 3/13 个有
-- `ExtendIntermediateSigmas` —— 3/13 个有
-- `LoraLoaderBypassModelOnly` —— 2/13 个有
-- `MiniMaxH3AVDecodeT8` —— 2/13 个有
-- `PathchSageAttentionKJ` —— 2/13 个有
-- `ShowText|pysssss` —— 2/13 个有
-- `StariAI-MiniMaxH3-Skill` —— 2/13 个有
-- `孤海注释` —— 2/13 个有
-- `CR Prompt Text` —— 1/13 个有
-- `GetVideoComponents` —— 1/13 个有
-- `JWStringToFloat` —— 1/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
-- `LoadAudio` —— 1/13 个有
-- `LoadVideo` —— 1/13 个有
+- `LayerUtility: ImageReel` —— 81/82 个有
+- `LayerUtility: ImageReelComposit` —— 81/82 个有
+- `PreviewImage` —— 81/82 个有
+- `PIP_图像联结` —— 74/82 个有
+- `Image Comparer (rgthree)` —— 60/82 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/82 个有
+- `GetNode` —— 1/82 个有
+- `KepStringList` —— 1/82 个有
+- `LayerUtility: PurgeVRAM` —— 1/82 个有
+- `QwenMultiangleCameraNode` —— 1/82 个有
+- `SetNode` —— 1/82 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 10 | 82 | 55% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 82 | 100% |
+| 采样算法 | euler | - | 82 | 99% |
+| 调度器 | simple | - | 82 | 99% |
+| 重绘幅度 | 1 | 1 - 1 | 82 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 45/82 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 10，82 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，82 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，82 个样本，一致性 99%
+- 调度器 最常用 simple，82 个样本，一致性 99%
+- 重绘幅度 中位数 1，观测区间 1 - 1，82 个样本，取值集中（一致性 100%）
+- 高发问题（45/82 个样本）：Steps较低可能导致细节不足

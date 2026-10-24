@@ -1,65 +1,62 @@
 ---
 name: unknown_workflow_sampler_clip_vae_4
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.858154
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, KSamplerSelect, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 18
+level: moderate
+coverage: 0.992778
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [Note _O]
-members: [图片生成/文生图/1909949768628666370.json, 图片生成/文生图/1910140152096747522.json, 图片生成/文生图/1910229372215750657.json, 图片生成/文生图/1910272215428886529.json, 图片生成/文生图/1910318940827123714.json, 图片生成/文生图/1910558383181656066.json, 图片生成/文生图/1910647097245298690.json, 图片生成/文生图/1911400407372103681.json, 图片生成/文生图/1923752379836264449.json, 图片生成/文生图/1927931879364935681.json, 图片生成/文生图/1929809956793434113.json, 图片生成/文生图/1947113386972327938.json, 图片生成/文生图/1954524753786761217.json]
+missing: []
+members: [图片生成/图生图/JOJO 动漫风格生成海报_1942397491436523522.json, 图片生成/图生图/Kontext GGUF轻量级模型工作流_1940778080027963393.json, 图片生成/图生图/Kontext [dev] + LoRA + 图像编辑_1938517065856647169.json, 图片生成/图生图/Kontext [dev] + LoRA 模型｜吉卜力风格_1938993796610711554.json, 图片生成/图生图/Kontext [dev] + LoRA 模型｜风格控制_1938878555705298945.json, 图片生成/图生图/Kontext dev 8bit 像素艺术风格_1945444470357938178.json, 图片生成/图生图/Kontext dev 毛玻璃棱镜风格_1941720796366848001.json, 图片生成/图生图/Kontext dev 蓬松毛毡风格_1941688670523125762.json, 图片生成/图生图/Kontext dev｜JOJO 日系动漫风格_1942035838689820673.json, 图片生成/图生图/KontextNunchakuDev动漫风尺寸可调节_1943514272796188673.json, 图片生成/图生图/KontextNunchakuDev风格尺寸可调节_1943517928019161090.json, 图片生成/图生图/Kontext｜乐高积木风格_1942893098185662466.json, 图片生成/图生图/Kontext｜扁平邮票插画风格_1946923634122481665.json, 图片生成/图生图/Kontext｜美式漫画风格_1942237284731138049.json, 图片生成/图生图/动漫人物 cosplay｜Kontext_1962014034272915458.json, 图片生成/图生图/模特项链试戴展示 单图生成_1947197718127136769.json, 图片生成/图生图/泡泡玛特 molly 风格人物｜Kontext_1951568255880253442.json, 图片生成/图生图/苹果 Emoji 风格人物｜Kontext_1948330346327736321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/1909949768628666370.json、图片生成/文生图/1910140152096747522.json、图片生成/文生图/1910229372215750657.json、图片生成/文生图/1910272215428886529.json、图片生成/文生图/1910318940827123714.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/JOJO 动漫风格生成海报_1942397491436523522.json、图片生成/图生图/Kontext GGUF轻量级模型工作流_1940778080027963393.json、图片生成/图生图/Kontext [dev] + LoRA + 图像编辑_1938517065856647169.json、图片生成/图生图/Kontext [dev] + LoRA 模型｜吉卜力风格_1938993796610711554.json、图片生成/图生图/Kontext [dev] + LoRA 模型｜风格控制_1938878555705298945.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：18
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 18 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSamplerSelect`
-- `NunchakuFluxDiTLoader`
-- `NunchakuTextEncoderLoader`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 12/13 个有
-- `ModelSamplingFlux` —— 12/13 个有
-- `NunchakuFluxLoraLoader` —— 12/13 个有
-- `EmptySD3LatentImage` —— 10/13 个有
-- `PreviewImage` —— 6/13 个有
-- `EmptyLatentImage` —— 3/13 个有
-- `ShowText|pysssss` —— 2/13 个有
-- `ColorMatch` —— 1/13 个有
-- `ConditioningZeroOut` —— 1/13 个有
-- `DeepTranslatorTextNode` —— 1/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
-- `Image Comparer (rgthree)` —— 1/13 个有
-- `Note _O` —— 1/13 个有
-- `RH_LLMAPI_NODE` —— 1/13 个有
-- `RH_Translator` —— 1/13 个有
-- `UltimateSDUpscale` —— 1/13 个有
-- `UpscaleModelLoader` —— 1/13 个有
+- `CheckpointLoaderSimple` —— 15/18 个有
+- `LoraLoaderModelOnly` —— 14/18 个有
+- `ImageSizeInfo` —— 10/18 个有
+- `ModelSamplingFlux` —— 7/18 个有
+- `easy imageConcat` —— 6/18 个有
+- `NunchakuFluxDiTLoader` —— 2/18 个有
+- `RH_Translator` —— 2/18 个有
+- `DeepTranslatorCLIPTextEncodeNode` —— 1/18 个有
+- `GetImageSize` —— 1/18 个有
+- `ImageScaleBy` —— 1/18 个有
+- `SDXLPromptStyler` —— 1/18 个有
+- `UnetLoaderGGUF` —— 1/18 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1536 | 3 | 80% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,6 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1536，3 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：Note _O
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

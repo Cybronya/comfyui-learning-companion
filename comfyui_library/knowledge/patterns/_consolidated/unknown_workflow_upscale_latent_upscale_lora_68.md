@@ -3,22 +3,22 @@ name: unknown_workflow_upscale_latent_upscale_lora_68
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.895333
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.810667
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+problems: []
 missing: []
-members: [视频生成/图生视频/2056265109323993089.json, 视频生成/图生视频/2008778999371145217.json, 视频生成/图生视频/2025763431185387521.json]
+members: [视频生成/图生视频/Sulphur-2 ID-lora语音参考视频_2056584675753287682.json, 视频生成/图生视频/sulphur_i2v_distilled_2052201685388406786.json, 视频生成/文生视频/LTX-2.3-Text to Video-workflow_2034124938138882049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_68
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2056265109323993089.json、视频生成/图生视频/2008778999371145217.json、视频生成/图生视频/2025763431185387521.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Sulphur-2 ID-lora语音参考视频_2056584675753287682.json、视频生成/图生视频/sulphur_i2v_distilled_2052201685388406786.json、视频生成/文生视频/LTX-2.3-Text to Video-workflow_2034124938138882049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
@@ -26,9 +26,9 @@ source: knowledge_consolidation
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `CreateVideo`
 - `EmptyLTXVLatentVideo`
-- `Int`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
@@ -37,55 +37,56 @@ source: knowledge_consolidation
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `LTXVImgToVideoInplace` —— 2/3 个有
-- `ManualSigmas` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `SamplerCustom` —— 2/3 个有
-- `Textbox` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy promptLine` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `intToFloat _O` —— 2/3 个有
-- `DualCLIPLoader` —— 1/3 个有
-- `KSampler` —— 1/3 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/3 个有
+- `GetImageSize` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `ImageScaleDownBy` —— 2/3 个有
+- `LTXVScheduler` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
+- `ResizeImagesByLongerEdge` —— 2/3 个有
+- `VAEDecode` —— 2/3 个有
+- `VAEDecodeTiled` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `Context (rgthree)` —— 1/3 个有
+- `Context Switch (rgthree)` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `LTXVImgToVideoConditionOnly` —— 1/3 个有
+- `LTXVReferenceAudio` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `PromptRelayEncode` —— 1/3 个有
+- `SetNode` —— 1/3 个有
 - `TextGenerateLTX2Prompt` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
+- `easy ckptNames` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 0.3 | - | 1 | 100% |
 | 宽度 | 97 | 97 - 97 | 3 | 100% |
 | 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 

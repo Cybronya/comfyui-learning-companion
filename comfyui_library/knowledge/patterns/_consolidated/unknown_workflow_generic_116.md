@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_generic_116
 type: Unknown Workflow
-frequency: 9
+frequency: 13
 level: moderate
-coverage: 0.945444
-common_nodes: [IndexTTS2Run, LoadAudio, PreviewAudio, SaveAudio, Text Multiline]
+coverage: 0.811231
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json, 音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_1965585853093396482.json, 音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_2103011735132262401.json, 音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json, 音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json, 音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json, 音频生成/音频生成/IndexTTS2声音克隆_音色_情感模仿_2066476662186930178.json, 音频生成/音频生成/IndexTTS2最强配音带感情模型-V2_1983545218752552962.json, 音频生成/音频生成/IndexTTS2音频克隆_1980212143188512770.json]
+members: [图片生成/图生图/-全能图片V1-一键转手办_1961666820535160834.json, 图片生成/图生图/全能图片 全能大模型   全能图片编辑  局部重绘_2047499274916732930.json, 图片生成/图生图/全能图片 洗图 全能模型 最强开源 改年龄  年轻化  老年化_2046846480186613762.json, 图片生成/图生图/全能图片 洗图 图生图 局部重绘 全能模型 最强开源_2047173164588867585.json, 图片生成/图生图/全能图片V11谷歌大香蕉图片编辑_1977637687651913730.json, 图片生成/图生图/全能图片V1全网最强图像编辑_1960400616747167745.json, 图片生成/图生图/全能图片V1全网最强图像编辑_1961692729006821378.json, 图片生成/图生图/全能图片V1图像编辑三图优化版_1960687935127511041.json, 图片生成/图生图/全能图片V1图像编辑双图优化版_1960404396435714050.json, 图片生成/图生图/全能图片V1热门手办生成_1962392113331703809.json, 图片生成/图生图/全能模型 最强开源 改年龄  一键年轻化  一键老年化_2046833230090870785.json, 图片生成/文生图/全能图片V1文生图_1962387003432112130.json, 图片生成/文生图/大全能生图-每天免米使用5次_2055661754121768962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_116
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json、音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_1965585853093396482.json、音频生成/音频生成/IndexTTS2_语音_音色_克隆_情绪自定义_2103011735132262401.json、音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json、音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-一键转手办_1961666820535160834.json、图片生成/图生图/全能图片 全能大模型   全能图片编辑  局部重绘_2047499274916732930.json、图片生成/图生图/全能图片 洗图 全能模型 最强开源 改年龄  年轻化  老年化_2046846480186613762.json、图片生成/图生图/全能图片 洗图 图生图 局部重绘 全能模型 最强开源_2047173164588867585.json、图片生成/图生图/全能图片V11谷歌大香蕉图片编辑_1977637687651913730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `Text Multiline`
+全部 13 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `SaveAudioMP3` —— 1/9 个有
+- `CR Text` —— 11/13 个有
+- `GeminiInputFiles` —— 1/13 个有
+- `NineGridMosaicNode` —— 1/13 个有
 
 ## 典型参数
 

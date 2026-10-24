@@ -1,54 +1,66 @@
 ---
 name: unknown_workflow_video_sampler_unet_16
 type: Unknown Workflow
-frequency: 19
+frequency: 22
 level: moderate
-coverage: 0.614368
-common_nodes: [BasicGuider, GetNode, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy ifElse]
+coverage: 0.662636
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PreviewAudio, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2093237034637946882.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作工作台_2091808450006315009.json, 视频生成/图生视频/MiniMax - H3开源 短剧+漫剧+真人剧 多参视频输出 图生视频_2092936969365057538.json, 视频生成/图生视频/平面图生效果图 minimax h3_2095379110083252226.json, 视频生成/文生视频/30S 极简版 图生视频 文生视频 视频编辑多合一 海螺-H3 孤海大佬版_2088234804713185281.json, 视频生成/文生视频/30s 生成 加速版全能版！MinimaxH3！开源免费版！GH版_2088252312514031618.json, 视频生成/文生视频/FZ-MiniMaxH3-智能一体化视频创作（显存优化）_2100213011712667650.json, 视频生成/文生视频/FZ-MinimaxH3-智能一体化视频生成_2096847617182486529.json, 视频生成/文生视频/H3 极简视频工作台_2091386301621825537.json, 视频生成/文生视频/Lingke - H3 智能一体化视频创作_2094241756031315970.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2086579374731649025.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2093143247815266305.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2094320306113564674.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_2094322556294746113.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090444935400083457.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090445520996233218.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作_优化版_2090455986980089857.json, 视频生成/文生视频/MiniMax - H3 智能一体化视频创作工作流_2091420444334313474.json, 视频生成/文生视频/MiniMax - H3 视频智能创作台_2088681824125014018.json]
+members: ["数字人/数字人/H3+ Audio-Driven Digital Humans That Speak, Sing_2111625654700695553.json", 数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2092293218867179521.json, 数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2096583276864561153.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版_2084824920000909313.json, 视频生成/图生视频/Audio-Driven Digital Characters音频驱动数字人说话唱歌对口型_2098213691744407554.json, 视频生成/图生视频/Image-to-Video 音频驱动+数字人_2093871304574332930.json, 视频生成/图生视频/MiniMaxH3 视频提取音频驱动数字人说话唱歌对口型！加速版！_2094060663554531330.json, 视频生成/图生视频/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！_2093568717039955969.json, 视频生成/图生视频/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2084875071205761025.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2084968975238262785.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2084996614002921473.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2086788983148859393.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2090405103944683522.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2090421468608946177.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2093316488181673986.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2094746665759629313.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2094757190883176450.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2105254839331680258.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2105266413794578434.json, 视频生成/图生视频/MiniMaxH3音频驱动+数字人说话唱歌对口型！加速版+_2086656794096660481.json, 视频生成/图生视频/加速版MiniMaxH3—音频驱动数字人说话唱歌对口型！_2090343540776853506.json, 视频生成/图生视频/音频驱动 MiniMaxH3数字人说话唱歌对口型！加速版_2085186020986941441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_16
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2093237034637946882.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作工作台_2091808450006315009.json、视频生成/图生视频/MiniMax - H3开源 短剧+漫剧+真人剧 多参视频输出 图生视频_2092936969365057538.json、视频生成/图生视频/平面图生效果图 minimax h3_2095379110083252226.json、视频生成/文生视频/30S 极简版 图生视频 文生视频 视频编辑多合一 海螺-H3 孤海大佬版_2088234804713185281.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（数字人/数字人/H3+ Audio-Driven Digital Humans That Speak, Sing_2111625654700695553.json、数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2092293218867179521.json、数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2096583276864561153.json、数字人/数字人/MinimaxH3音频驱动数字人单人版_2084824920000909313.json、视频生成/图生视频/Audio-Driven Digital Characters音频驱动数字人说话唱歌对口型_2098213691744407554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 22 个 workflow 都包含：
+- `AudioCrop`
 - `BasicGuider`
-- `GetNode`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PreviewAudio`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetNode`
+- `SoundFlow_GetLength`
 - `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy ifElse`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 18/19 个有
-- `MiniMaxH3DualClockT8GH` —— 18/19 个有
-- `easy anythingIndexSwitch` —— 18/19 个有
-- `MiniMaxH3AVDecodeT8GH` —— 17/19 个有
-- `孤海注释` —— 17/19 个有
-- `ImpactSleep` —— 4/19 个有
-- `SaveVideo` —— 4/19 个有
-- `LoadVideoNode` —— 3/19 个有
-- `MiniMaxH3AVDecodeT8` —— 3/19 个有
-- `LoadImage` —— 2/19 个有
-- `Label (rgthree)` —— 1/19 个有
-- `LoraLoaderModelOnly` —— 1/19 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/19 个有
+- `Any To String (mtb)` —— 21/22 个有
+- `GetNode` —— 21/22 个有
+- `ImageResizeKJv2` —— 21/22 个有
+- `LoadAudio` —— 21/22 个有
+- `PreviewImage` —— 21/22 个有
+- `PrimitiveInt` —— 21/22 个有
+- `SetNode` —— 21/22 个有
+- `PathchSageAttentionKJ` —— 19/22 个有
+- `AILab_QwenVL` —— 11/22 个有
+- `JjkText` —— 11/22 个有
+- `JoinStrings` —— 11/22 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/22 个有
+- `AudioSeparation` —— 8/22 个有
+- `LoraLoaderModelOnly` —— 8/22 个有
+- `EasyCache` —— 3/22 个有
+- `ResolutionSelector` —— 1/22 个有
+- `VHS_LoadVideo` —— 1/22 个有
 
 ## 典型参数
 

@@ -1,52 +1,67 @@
 ---
 name: unknown_workflow_sampler_unet_vae_215
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.859
-common_nodes: [EmptyLatentImage, JjkText, KSampler, MZ_ChatGLM3Loader, MZ_ChatGLM3_V2, MZ_KolorsUNETLoaderV2, SaveImage, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.8388
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/1930423082354163713.json, 图片生成/文生图/Kolors文生图工作流_1817854434880958465.json]
+members: [视频生成/图生视频/h3_r2v_runninghub_tts_v2_2093887746086625282.json, 视频生成/图生视频/h3_r2v_runninghub_tts_v2_fuben1_api_2091063408224460801.json, 视频生成/图生视频/h3参考生视频_2110215490152001538.json, 视频生成/图生视频/minimax 1.0 8步加速1.0正式版_2088137884623785985.json, 视频生成/图生视频/minimax_h3_多图参考生视频_2097588393667551233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_215
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1930423082354163713.json、图片生成/文生图/Kolors文生图工作流_1817854434880958465.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/h3_r2v_runninghub_tts_v2_2093887746086625282.json、视频生成/图生视频/h3_r2v_runninghub_tts_v2_fuben1_api_2091063408224460801.json、视频生成/图生视频/h3参考生视频_2110215490152001538.json、视频生成/图生视频/minimax 1.0 8步加速1.0正式版_2088137884623785985.json、视频生成/图生视频/minimax_h3_多图参考生视频_2097588393667551233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `EmptyLatentImage`
-- `JjkText`
-- `KSampler`
-- `MZ_ChatGLM3Loader`
-- `MZ_ChatGLM3_V2`
-- `MZ_KolorsUNETLoaderV2`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
+- `CreateVideo` —— 4/5 个有
+- `LoadAudio` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `MiniMaxH3AudioLatentControlT8` —— 2/5 个有
+- `PrimitiveBoolean` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `easy downloadIndexTTSAndLoadModel` —— 2/5 个有
+- `easy indexTTSAudioMerge` —— 2/5 个有
+- `easy indexTTSGenerate` —— 2/5 个有
+- `EmptyAudio` —— 1/5 个有
+- `MiniMaxH3AddGuide` —— 1/5 个有
+- `SolAttnPatch` —— 1/5 个有
+- `VideoCombineV2` —— 1/5 个有
+- `easy indexTTSEmotionText` —— 1/5 个有
+- `孤海注释` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 5 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | normal | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 896 | - | 2 | 86% |
-| 高度 | 1024 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -54,11 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 normal，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

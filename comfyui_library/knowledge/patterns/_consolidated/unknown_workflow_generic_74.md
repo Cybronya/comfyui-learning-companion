@@ -1,42 +1,41 @@
 ---
 name: unknown_workflow_generic_74
 type: Unknown Workflow
-frequency: 11
+frequency: 17
 level: moderate
-coverage: 0.867091
-common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
+coverage: 0.640176
+common_nodes: [LoadImage, RH_Sora2_I2V, RH_Translator, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice语音克隆_2041421044300386306.json, 音频生成/音频生成/Alan测(600种语言-支持方言)OmniVoice语音克隆_2041777960390238209.json, 音频生成/音频生成/OmniVoice-双人语音克隆（支持方言）_2042241339672240130.json, 音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json, 音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json, 音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json, 音频生成/音频生成/OmniVoice语音克隆，omnivoice声音克隆，跨境声音，电商语音克隆_2042050604117266433.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041470375313281025.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041935163369721858.json]
+members: [图片生成/图生图/RH 全能视频S Image to Video_1976908809417494529.json, 视频生成/图生视频/RH 全能视频S 图生视频_1976111925840973826.json, 视频生成/图生视频/全能视频S 15s竖屏或者横屏高清图生视频_1975795249727541250.json, 视频生成/图生视频/全能视频S 图生视频_1974244784342700033.json, 视频生成/图生视频/全能视频S-Plus图生视频竖屏横屏- 10s_15s直接生成_1985726193741770753.json, 视频生成/图生视频/全能视频S-图生视频-RH直接使用版！！_1976486505747226626.json, "视频生成/图生视频/全能视频S-图生视频-提示词理解很好,速度快_1976563649210880001.json", 视频生成/图生视频/全能视频S丨图生视频1080P！！！！_1980452258129338369.json, 视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版10秒15秒可选_1979415302779867137.json, 视频生成/图生视频/全能视频S产品图+中文描述=短视频带货视频高清直出全能版_1979393173581631490.json, 视频生成/图生视频/全能视频S产品图+中英文描述=跨境tk短视频带货视tiktok频高清直出全能版10秒15秒高清可选_1982834651620356098.json, 视频生成/图生视频/全能视频S产品广告视频生成_1987484061469970434.json, 视频生成/图生视频/全能视频S图生带货视频（横屏）_1977991817520185346.json, 视频生成/图生视频/全能视频S图生带货视频（横屏）！！_1980184444998946818.json, 视频生成/图生视频/全能视频S图生带货视频（竖屏）_1977998627845066754.json, 视频生成/文生视频/全能视频S 15s高清横竖屏高清文生视频，图生视频大集合_1975790888603488258.json, 视频生成/文生视频/全能视频S文_图自动生成创意广告视频10-15秒（横屏、竖屏可选）_1989503517457084418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_74
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice语音克隆_2041421044300386306.json、音频生成/音频生成/Alan测(600种语言-支持方言)OmniVoice语音克隆_2041777960390238209.json、音频生成/音频生成/OmniVoice-双人语音克隆（支持方言）_2042241339672240130.json、音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/RH 全能视频S Image to Video_1976908809417494529.json、视频生成/图生视频/RH 全能视频S 图生视频_1976111925840973826.json、视频生成/图生视频/全能视频S 15s竖屏或者横屏高清图生视频_1975795249727541250.json、视频生成/图生视频/全能视频S 图生视频_1974244784342700033.json、视频生成/图生视频/全能视频S-Plus图生视频竖屏横屏- 10s_15s直接生成_1985726193741770753.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudio`
+全部 17 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `RH_Translator`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `OmniVoiceVoiceCloneTTS` —— 8/11 个有
-- `PreviewAny` —— 7/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `OmniVoiceMultiSpeakerTTS` —— 3/11 个有
-- `OmniVoiceVoiceDesignTTS` —— 3/11 个有
-- `SaveAudioMP3` —— 3/11 个有
-- `SaveAudioOpus` —— 2/11 个有
+- `Text` —— 6/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
+- `RH_Sora2_T2V` —— 2/17 个有
+- `CR Text` —— 1/17 个有
+- `Label (rgthree)` —— 1/17 个有
+- `PDImageResizeV3` —— 1/17 个有
 
 ## 典型参数
 

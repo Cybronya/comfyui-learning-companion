@@ -3,68 +3,87 @@ name: unknown_workflow_video_lora_sampler_49
 type: Unknown Workflow
 frequency: 21
 level: moderate
-coverage: 0.936333
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+coverage: 0.546
+common_nodes: [BatchImagesNode, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PlaySound|pysssss, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, SimpleMath+, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, easy cleanGpuUsed, easy clearCacheAll, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/1988149592183234562.json, 视频生成/图生视频/1990298374261927937.json, 视频生成/图生视频/2042473229025021954.json, 视频生成/图生视频/2038129720084140034.json, 视频生成/图生视频/2039686638024003585.json, 视频生成/图生视频/2038259769424744450.json, 视频生成/图生视频/2043221914818191361.json, 视频生成/图生视频/infinitetalk-workflow_2101559918137536513.json, 视频生成/图生视频/2054541988237717506.json, 视频生成/图生视频/1958721721454981121.json, 视频生成/图生视频/1993155666919571457.json, 视频生成/图生视频/infinitetalk单人_1957826962256658434.json, 视频生成/图生视频/2044669894783934465.json, 视频生成/图生视频/1983851965690056706.json, 视频生成/图生视频/1987800864440168449.json, 视频生成/图生视频/infinitetalk单人数字人 横版_2082717087134470145.json, 视频生成/图生视频/1961786018880012290.json, 视频生成/图生视频/2080575708149145601.json, 视频生成/图生视频/1999412008917364738.json, 视频生成/图生视频/2054517632375771138.json, 视频生成/图生视频/2044453798432739329.json]
+members: [视频生成/图生视频/scail2替换背景_2080680296361586689.json, 视频生成/图生视频/scaile2多参多角色指定角色替换_2081628200786026497.json, 视频生成/图生视频/v影视二创双人互动场景动作复刻_2080175372615901186.json, 视频生成/图生视频/人物动作舞蹈模仿1_2101560918726496257.json, 视频生成/图生视频/人物表情语言模仿_2084949344024883202.json, 视频生成/图生视频/卡通动作口型模仿_2083925802936258562.json, 视频生成/图生视频/卡通角色动作复刻_2079059148628647937.json, 视频生成/图生视频/双人舞蹈动作模仿_2080188537995096066.json, 视频生成/图生视频/可爱到没边_2084282684083367938.json, 视频生成/图生视频/复杂舞蹈动作迁移_2081202508730560513.json, 视频生成/图生视频/小狐狸摇一摇_2090266180044025858.json, 视频生成/图生视频/影视二创长时多角色替换1_2078661706204663809.json, 视频生成/图生视频/影视二创长时多角色替换2_2079098653486182402.json, 视频生成/图生视频/情圣影视二创1_2080311997698236417.json, 视频生成/图生视频/情圣影视漫剧二创_2080672482335477761.json, 视频生成/图生视频/抖音热门山顶放纵不羁摇便捷版_2083854387121844226.json, 视频生成/图生视频/琵琶行舞蹈模仿_2081050373711810562.json, 视频生成/图生视频/舞蹈动作模仿_2098751353958002689.json, 视频生成/图生视频/西西里小弟传说影视二创_2080220534155071490.json, 视频生成/图生视频/跳舞的女孩1_2098744156167430145.json, 视频生成/图生视频/长视频影视二创人物替换_2080312187255615489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_49
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/1988149592183234562.json、视频生成/图生视频/1990298374261927937.json、视频生成/图生视频/2042473229025021954.json、视频生成/图生视频/2038129720084140034.json、视频生成/图生视频/2039686638024003585.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/scail2替换背景_2080680296361586689.json、视频生成/图生视频/scaile2多参多角色指定角色替换_2081628200786026497.json、视频生成/图生视频/v影视二创双人互动场景动作复刻_2080175372615901186.json、视频生成/图生视频/人物动作舞蹈模仿1_2101560918726496257.json、视频生成/图生视频/人物表情语言模仿_2084949344024883202.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 21 个 workflow 都包含：
-- `AudioSeparation`
+- `BatchImagesNode`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+- `CheckpointLoaderSimple`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMaskV2`
+- `SetNode`
 - `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus VAELoader`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 20/21 个有
-- `RH_GetAudioDuration` —— 20/21 个有
-- `ToInt` —— 20/21 个有
-- `WanVideoTorchCompileSettings` —— 20/21 个有
-- `ImageResizeKJv2` —— 19/21 个有
-- `AudioCrop` —— 17/21 个有
-- `Audio Duration (mtb)` —— 1/21 个有
-- `AudioCombine` —— 1/21 个有
-- `CR Prompt Text` —— 1/21 个有
-- `CR SDXL Aspect Ratio` —— 1/21 个有
-- `DF_Image_scale_to_side` —— 1/21 个有
-- `GetNode` —— 1/21 个有
-- `JWInteger` —— 1/21 个有
-- `JjkText` —— 1/21 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/21 个有
-- `PreviewImage` —— 1/21 个有
-- `SetNode` —— 1/21 个有
-- `SoundFlow_TrimAudio` —— 1/21 个有
-- `Text` —— 1/21 个有
-- `kkGetImage` —— 1/21 个有
+- `PrimitiveBoolean` —— 12/21 个有
+- `VHS_LoadVideoFFmpeg` —— 11/21 个有
+- `VHS_LoadVideo` —— 10/21 个有
+- `ImageConcatenate_UTK` —— 9/21 个有
+- `easy indexAnything` —— 9/21 个有
+- `LayerUtility: PurgeVRAM V2` —— 8/21 个有
+- `FillMaskWithColor` —— 7/21 个有
+- `InvertMask` —— 7/21 个有
+- `PointsEditor` —— 7/21 个有
+- `PrimitiveInt` —— 7/21 个有
+- `SeCModelLoader` —— 7/21 个有
+- `SeCVideoSegmentation` —— 7/21 个有
+- `1hew_MaskMathOps` —— 6/21 个有
+- `RMBG` —— 6/21 个有
+- `Text` —— 6/21 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 5/21 个有
+- `RH_Captioner` —— 4/21 个有
+- `easy showAnything` —— 4/21 个有
+- `GrowMask` —— 3/21 个有
+- `Bjornulf_ShowInt` —— 1/21 个有
+- `CR Image Grid Panel` —— 1/21 个有
+- `ExtractNFrames` —— 1/21 个有
+- `ImageGridSplitter` —— 1/21 个有
+- `RHHiddenNodes` —— 1/21 个有
+- `RH_RhartImageG2ImageToImage` —— 1/21 个有
 
 ## 典型参数
 

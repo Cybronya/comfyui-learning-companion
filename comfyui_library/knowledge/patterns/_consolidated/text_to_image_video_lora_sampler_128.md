@@ -3,49 +3,82 @@ name: text_to_image_video_lora_sampler_128
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.669
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, RHHiddenNodes, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.699
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CM_IntToFloat, CR Text, CheckpointLoaderSimple, EmptyLatentImage, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, Int, InvertBoolean, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveBoolean, RH_Translator, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SaveImage, SetNode, Switch any [Crystools], Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy boolean, easy imageRemBg, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json, 视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json, 视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json, 视频生成/文生视频/MiniMax H3 LTX Wan去AI感增强真实感视频处理工具_2102153536049082369.json, 视频生成/文生视频/图生视频文生视频动作迁移去AI感增强真实感处理_2100637621520261121.json]
+members: [图片生成/图生图/Scail 2单人动作迁移替换视频人物新王，支持多参图生视频方案_2105715425505013762.json, 图片生成/图生图/单人动作迁移新王驾到｜Scail 2 替换视频人物 支持多参 20260930更新_2105485524852101122.json, 视频生成/图生视频/Scail 2替换视频人物和背景专用流，支持人物多参图生视频方案_2106111390447656961.json, 视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2106856823751004162.json, 视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2110161325371514882.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_128
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3电影级AI制片工作流 优化版长视频生成_2110350563379605506.json、视频生成/文生视频/AI电影工作流优化版 Minimax H3电影级视频生成方案_2108607106013294594.json、视频生成/文生视频/AI电影工作流优化版，文生视频视频生视频图生视频方案_2107515034581692417.json、视频生成/文生视频/MiniMax H3 LTX Wan去AI感增强真实感视频处理工具_2102153536049082369.json、视频生成/文生视频/图生视频文生视频动作迁移去AI感增强真实感处理_2100637621520261121.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Scail 2单人动作迁移替换视频人物新王，支持多参图生视频方案_2105715425505013762.json、图片生成/图生图/单人动作迁移新王驾到｜Scail 2 替换视频人物 支持多参 20260930更新_2105485524852101122.json、视频生成/图生视频/Scail 2替换视频人物和背景专用流，支持人物多参图生视频方案_2106111390447656961.json、视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2106856823751004162.json、视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2110161325371514882.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CM_IntToFloat`
+- `CR Text`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
+- `Int`
+- `InvertBoolean`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RHHiddenNodes`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `RH_Translator`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMaskV2`
 - `SaveImage`
+- `SetNode`
+- `Switch any [Crystools]`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus Sampler`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
+- `easy boolean`
+- `easy imageRemBg`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/5 个有
-- `MiniMaxH3Easy` —— 3/5 个有
-- `MiniMaxH3EasyMediaLoader` —— 3/5 个有
-- `ModelPreviewOverrideKJ` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `easy float` —— 3/5 个有
+- `孤海注释` —— 4/5 个有
+- `GetImageRangeFromBatch` —— 3/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `LoadVideoUI` —— 3/5 个有
+- `RH_RhartImageG2ImageToImage` —— 3/5 个有
+- `Fast Bypasser (rgthree)` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
 - `VHS_LoadVideo` —— 2/5 个有
+- `VHS_VideoInfo` —— 2/5 个有
+- `WanAnimatePlus LoraSelect` —— 2/5 个有
+- `EmptyImage` —— 1/5 个有
 
 ## 典型参数
 

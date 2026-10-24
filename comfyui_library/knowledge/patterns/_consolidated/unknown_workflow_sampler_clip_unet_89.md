@@ -1,75 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_unet_89
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.926857
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 11
+level: moderate
+coverage: 0.915091
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/2105994124833943553.json, 图片生成/图生图/2106023301272399873.json, 图片生成/文生图/Flux2_Klein 三图编辑_2012088869042262018.json, 图片生成/文生图/Flux2_Klein 多图编辑_2012086737983508482.json, 图片生成/文生图/Flux2_Klein 多图编辑精简版_2012069622740164610.json, 图片生成/文生图/danotebook-flux2-klein-9b_2062427994236481537.json, 图片生成/文生图/klein_文生图+图像编辑_2042538360702509058.json]
+members: [图片生成/文生图/Ideogram4-Instant KJ_2078288747602464770.json, 图片生成/文生图/KJ结构化提示_FAST单模型_2078065107753590786.json, 图片生成/文生图/KJ结构化提示_Instant单模型_2077705321124028417.json, 图片生成/文生图/Krea2双采+高分辨修复_2084950880146771969.json, 图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100057678470012930.json, 图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100137995608346626.json, 图片生成/文生图/Z-Image-Turbo文生图_1989200631200100353.json, 图片生成/文生图/日系街拍套图生成器-jpset工作流_2095424852239929346.json, 图片生成/文生图/暗调夜景街拍生成器-nightset工作流_2095497922401099778.json, 图片生成/文生图/穿戴甲详情页批量直出工作流_2094422991236059137.json, 图片生成/文生图/街拍套图稳定器-streetset工作流_2095309050455089154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_89
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/2105994124833943553.json、图片生成/图生图/2106023301272399873.json、图片生成/文生图/Flux2_Klein 三图编辑_2012088869042262018.json、图片生成/文生图/Flux2_Klein 多图编辑_2012086737983508482.json、图片生成/文生图/Flux2_Klein 多图编辑精简版_2012069622740164610.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Ideogram4-Instant KJ_2078288747602464770.json、图片生成/文生图/KJ结构化提示_FAST单模型_2078065107753590786.json、图片生成/文生图/KJ结构化提示_Instant单模型_2077705321124028417.json、图片生成/文生图/Krea2双采+高分辨修复_2084950880146771969.json、图片生成/文生图/Qwen_Image_2512_商业商品摄影_LoRA｜单品棚拍_2100057678470012930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 5/7 个有
-- `BasicScheduler` —— 5/7 个有
-- `ImageScaleToTotalPixels` —— 5/7 个有
-- `ReferenceLatent` —— 5/7 个有
-- `PrimitiveInt` —— 4/7 个有
-- `CFGGuider` —— 3/7 个有
-- `CR Text` —— 3/7 个有
-- `ConditioningZeroOut` —— 3/7 个有
-- `EmptyFlux2LatentImage` —— 3/7 个有
-- `EmptyLatentImage` —— 3/7 个有
-- `Flux2Scheduler` —— 3/7 个有
-- `AILab_QwenVL` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 2/7 个有
-- `GetImageSize` —— 2/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `ComfySwitchNode` —— 1/7 个有
-- `ModelPatchTorchSettings` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PrimitiveString` —— 1/7 个有
-- `StringCompare` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
+- `LoraLoader` —— 7/11 个有
+- `PrimitiveStringMultiline` —— 6/11 个有
+- `CFGOverride` —— 3/11 个有
+- `Ideogram4PromptBuilderKJ` —— 3/11 个有
+- `PreviewImage` —— 3/11 个有
+- `ImageScaleToTotalPixels` —— 1/11 个有
+- `LatentUpscaleBy` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 640 | 640 - 640 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 采样步数 | 20 | 8 - 26 | 10 | 62% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 4.5 | 10 | 37% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | sgm_uniform | - | 10 | 50% |
+| 重绘幅度 | 1 | 0.45 - 1 | 10 | 83% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 7 | 93% |
+| LoRA 文本强度 | 1 | 0.8 - 1 | 7 | 93% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 640，观测区间 640 - 640，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 26，10 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4.5，10 个样本，取值分散，一致性仅 37%
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，10 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 0.45 - 1，10 个样本，取值集中（一致性 83%）
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，7 个样本，取值集中（一致性 93%）
+- LoRA 文本强度 中位数 1，观测区间 0.8 - 1，7 个样本，取值集中（一致性 93%）

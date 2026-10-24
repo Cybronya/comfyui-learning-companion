@@ -3,104 +3,66 @@ name: unknown_workflow_video_lora_sampler_107
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.447929
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.609214
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2077357335839854594.json, 视频生成/图生视频/2077460288709947393.json, 视频生成/图生视频/2077288214603329538.json, 视频生成/图生视频/2077324573078548481.json, 视频生成/图生视频/2070484357101473794.json, 视频生成/图生视频/2079863299176484866.json, 视频生成/图生视频/2071782259115511810.json, 视频生成/图生视频/2071786306396573698.json, 视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json, 视频生成/图生视频/2067529633486168065.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换_2067503598057123841.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换自动版_2067564547317264386.json, 视频生成/图生视频/2067087693439397890.json, 视频生成/图生视频/2067282833252634625.json]
+members: [图片生成/图生图/MinimaxH3_极简版多合一工作流_2098944049897103361.json, 图片生成/图生图/MinimaxH3_极简版多合一工作流_2099056311664201729.json, 图片生成/图生图/MinimaxH3_极简版多合一工作流_2099681052972380161.json, 图片生成/文生图/自用YZ金鱼-MinimaxH3 极简版多合一工作流_2088536818726817793.json, 数字人/数字人/Minimax H3开源版 极简版多合一工作流_2089716980113821698.json, 视频生成/图生视频/FASHION walk（自用）_2103838105584365570.json, 视频生成/图生视频/Fenglairh-MinimaxH3 极简全功能工作流_2088627150772596737.json, 视频生成/图生视频/Minimax H3分镜工作流_2090952610852458497.json, 视频生成/图生视频/Minimax H3开源版 极简版多l图多声音参考工作流_2108771689168457729.json, 视频生成/图生视频/Minimax H3开源版 极简版多l图多声音参考工作流_2108819302899085314.json, 视频生成/图生视频/Minimax H3开源版 极简版多合一工作流_2087847481521565698.json, 视频生成/图生视频/Minimax H3开源版 极简版多合一工作流_2087885554347233281.json, 视频生成/图生视频/MinimaxH3 奇妙地图旅游 RH版本_2089430460429590530.json, 视频生成/图生视频/MinimaxH3 奇妙地图旅游_ 多参版 RH版本_2089430028995092482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_107
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2077357335839854594.json、视频生成/图生视频/2077460288709947393.json、视频生成/图生视频/2077288214603329538.json、视频生成/图生视频/2077324573078548481.json、视频生成/图生视频/2070484357101473794.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/MinimaxH3_极简版多合一工作流_2098944049897103361.json、图片生成/图生图/MinimaxH3_极简版多合一工作流_2099056311664201729.json、图片生成/图生图/MinimaxH3_极简版多合一工作流_2099681052972380161.json、图片生成/文生图/自用YZ金鱼-MinimaxH3 极简版多合一工作流_2088536818726817793.json、数字人/数字人/Minimax H3开源版 极简版多合一工作流_2089716980113821698.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `SetNode`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 13/14 个有
-- `DiffusionModelLoaderKJ` —— 13/14 个有
-- `PrimitiveInt` —— 13/14 个有
-- `EmptyImage` —— 10/14 个有
-- `GetImageSize` —— 10/14 个有
-- `ImageCompositeMasked` —— 10/14 个有
-- `PreviewAny` —— 10/14 个有
-- `SAM3_TrackToMask` —— 10/14 个有
-- `TensorLoopClose` —— 10/14 个有
-- `TensorLoopOpen` —— 10/14 个有
-- `DownloadAndLoadGIMMVFIModel` —— 9/14 个有
-- `GIMMVFI_interpolate` —— 9/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/14 个有
-- `Text` —— 7/14 个有
-- `VHS_VideoInfoSource` —— 7/14 个有
-- `easy imageCount` —— 7/14 个有
-- `easy showAnything` —— 7/14 个有
-- `JWInteger` —— 6/14 个有
-- `RH_Captioner` —— 6/14 个有
-- `easy indexAnything` —— 5/14 个有
-- `DrawMaskOnImage` —— 4/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/14 个有
-- `ImageConcatMulti` —— 4/14 个有
-- `Int` —— 4/14 个有
-- `InvertMask` —— 4/14 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 4/14 个有
-- `ResizeImageMaskNode` —— 4/14 个有
-- `TextConcatenate_UTK` —— 4/14 个有
-- `WanChunkFeedForward` —— 4/14 个有
-- `1hew_MaskMathOps` —— 2/14 个有
-- `ColorPickerMW` —— 2/14 个有
-- `FillMaskWithColor` —— 2/14 个有
-- `JjkText` —— 2/14 个有
-- `Switch` —— 2/14 个有
-- `Text Multiline` —— 2/14 个有
-- `easy mathInt` —— 2/14 个有
-- `Bjornulf_ShowInt` —— 1/14 个有
-- `CR Text` —— 1/14 个有
-- `FL_RIFE` —— 1/14 个有
-- `ImageFromBatch` —— 1/14 个有
-- `Label (rgthree)` —— 1/14 个有
-- `PointsEditor` —— 1/14 个有
-- `RH_LLMAPI_NODE` —— 1/14 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
-- `SeCModelLoader` —— 1/14 个有
-- `SeCVideoSegmentation` —— 1/14 个有
-- `ShowAnything|Mie` —— 1/14 个有
-- `SimpleMath+` —— 1/14 个有
-- `UNETLoader` —— 1/14 个有
-- `VHS_VideoInfo` —— 1/14 个有
+- `GetNode` —— 13/14 个有
+- `SetNode` —— 13/14 个有
+- `LoadVideo` —— 12/14 个有
+- `ImageResizeKJv2` —— 11/14 个有
+- `ResolutionSelector` —— 11/14 个有
+- `VAEEncode` —— 11/14 个有
+- `VAEEncodeAudio` —— 11/14 个有
+- `Text` —— 10/14 个有
+- `easy cleanGpuUsed` —— 10/14 个有
+- `LTXVConcatAVLatent` —— 9/14 个有
+- `PT_H3ConcatAVLatent` —— 5/14 个有
+- `EmptyImage` —— 3/14 个有
+- `LTXVSeparateAVLatent` —— 3/14 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/14 个有
+- `PreviewImage` —— 3/14 个有
+- `SplitSigmas` —— 3/14 个有
+- `Float` —— 2/14 个有
+- `PrimitiveStringMultiline` —— 2/14 个有
+- `LoadVideoNode` —— 1/14 个有
+- `MiniMaxChunkFeedForward` —— 1/14 个有
+- `MiniMaxH3BlockCacheT8` —— 1/14 个有
+- `MiniMaxLowVRAMAttention` —— 1/14 个有
+- `ModelAttentionBackend` —— 1/14 个有
 
 ## 典型参数
 

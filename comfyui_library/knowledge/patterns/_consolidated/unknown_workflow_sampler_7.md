@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_sampler_7
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.972167
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
+coverage: 0.922333
+common_nodes: [LoadImage, RH_Translator, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2016222816277893122.json, 视频生成/图生视频/2029234704314011649.json, 视频生成/图生视频/2029404488372592642.json, 视频生成/图生视频/2057455596126953474.json, 视频生成/图生视频/2018669346142294017.json, 视频生成/图生视频/2019693859390885889.json]
+members: [图片生成/图生图/USO-图片编辑+风格迁移_1963242699925204994.json, 图片生成/图生图/USO-风格迁移-角色一致性_1964173115188236289.json, 图片生成/图生图/USO——图片风格参考一致工作流_1967695252524077058.json, 图片生成/图生图/USO——字节开源画风参考角色一致性工作流_1962451091700977666.json, 图片生成/图生图/USO——字节开源画风参考角色一致性工作流_2014160837459582978.json, 图片生成/图生图/USO多种风格参考_1962720773230182401.json, 图片生成/图生图/目前最强风格迁移（USO）_1962810979518136322.json, 图片生成/文生图/USO换风格+换背景工作流_1965031029104889857.json, 图片生成/文生图/USO风格迁移图生图_2073390240361959425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2016222816277893122.json、视频生成/图生视频/2029234704314011649.json、视频生成/图生视频/2029404488372592642.json、视频生成/图生视频/2057455596126953474.json、视频生成/图生视频/2018669346142294017.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/USO-图片编辑+风格迁移_1963242699925204994.json、图片生成/图生图/USO-风格迁移-角色一致性_1964173115188236289.json、图片生成/图生图/USO——图片风格参考一致工作流_1967695252524077058.json、图片生成/图生图/USO——字节开源画风参考角色一致性工作流_1962451091700977666.json、图片生成/图生图/USO——字节开源画风参考角色一致性工作流_2014160837459582978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
-- `SaveVideo`
+- `RH_Translator`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 2/6 个有
-- `PreviewAudio` —— 1/6 个有
-- `TrimAudioDuration` —— 1/6 个有
-- `WujiCleaner` —— 1/6 个有
+- `ImageConcanate` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `Fast Groups Muter (rgthree)` —— 2/9 个有
+- `DF_Get_image_size` —— 1/9 个有
+- `ShowText|pysssss` —— 1/9 个有
 
 ## 典型参数
 

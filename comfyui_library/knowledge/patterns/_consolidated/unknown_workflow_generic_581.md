@@ -1,34 +1,34 @@
 ---
 name: unknown_workflow_generic_581
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.809667
-common_nodes: [LoadImage, RH_AlibabaWan27ImageToVideo, SaveVideo]
+coverage: 0.6478
+common_nodes: [JjkText, LoadImage, PreviewAny, RHHiddenNodes, RH_Wan26_I2V, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2041801468629491714.json, 视频生成/文生视频/WAN 2.7图生视频 万相2.7首尾帧生视频 数字人说话唱歌_2049646827594588162.json, 视频生成/文生视频/万相2.7-图生视频-首尾帧生视频_2040678606728339457.json]
+members: [视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json, 视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json, 视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json, 视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json, 视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_581
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2041801468629491714.json、视频生成/文生视频/WAN 2.7图生视频 万相2.7首尾帧生视频 数字人说话唱歌_2049646827594588162.json、视频生成/文生视频/万相2.7-图生视频-首尾帧生视频_2040678606728339457.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json、视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json、视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json、视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json、视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `RH_AlibabaWan27ImageToVideo`
+- `PreviewAny`
+- `RHHiddenNodes`
+- `RH_Wan26_I2V`
 - `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
 
 ## 典型参数
 

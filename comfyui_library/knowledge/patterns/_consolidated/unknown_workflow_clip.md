@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_clip
 type: Unknown Workflow
-frequency: 4
+frequency: 18
 level: moderate
-coverage: 1
-common_nodes: [SaveImage, workflow>参数调整组, workflow>工作组（勿动）]
+coverage: 0.962333
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/文生图-flux2_2089330922549235713.json, 图片生成/文生图/文生图-z_image_turbo_2089342247673360385.json, 图片生成/文生图/文生图-z_image_turbo_2098979784234721282.json, 数字人/数字人/文生图-z_image_turbo_2090930708234723330.json]
+members: [图片生成/图生图/标哥 人物剧照3 多参图生图_2007772473479143425.json, 图片生成/图生图/照片人物替换（人物服装、面容、动作保持不变）_2035251053616177153.json, 图片生成/图生图/白底加参考 9比16 详情图_2044950812027260930.json, 图片生成/图生图/白底加参考 9比16 详情图_2074699177187176450.json, 图片生成/图生图/白底图加参考图1比1 方图_2053020034942943234.json, 图片生成/图生图/白底图加参考图1比1 竖图_2048286201177710593.json, 图片生成/图生图/白底图精修_2038633353175371778.json, 图片生成/图生图/短剧视频分镜9图_2033986614325682177.json, 图片生成/图生图/竖图转方图 3比4车1比1_2048325227372875778.json, 图片生成/图生图/编辑模型使用JSON提示词+参考图_2010599114408468482.json, 图片生成/图生图/老照片修复 _全能图片V1 pro_1992609018545852418.json, 图片生成/图生图/老照片修复pro图像王者可以10图编辑_2101490187321827329.json, 图片生成/图生图/老照片修复pro图像王者可以10图编辑_2102303854577676289.json, 图片生成/图生图/蓝天ai数字人图图片生成_2080823294005170177.json, 图片生成/图生图/蓝底证件照_bole_1997002650388480002.json, 图片生成/图生图/角色图解大师_2026297317543907330.json, 图片生成/图生图/超全功能性 全能图片V1高效编辑性工作流_1992149623806513153.json, 图片生成/文生图/全能模型v1_2.0_pro三条工作流_2042578877469429762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/文生图-flux2_2089330922549235713.json、图片生成/文生图/文生图-z_image_turbo_2089342247673360385.json、图片生成/文生图/文生图-z_image_turbo_2098979784234721282.json、数字人/数字人/文生图-z_image_turbo_2090930708234723330.json）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/标哥 人物剧照3 多参图生图_2007772473479143425.json、图片生成/图生图/照片人物替换（人物服装、面容、动作保持不变）_2035251053616177153.json、图片生成/图生图/白底加参考 9比16 详情图_2044950812027260930.json、图片生成/图生图/白底加参考 9比16 详情图_2074699177187176450.json、图片生成/图生图/白底图加参考图1比1 方图_2053020034942943234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `workflow>参数调整组`
-- `workflow>工作组（勿动）`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/4 个有
+- `CLIPTextEncode` —— 2/18 个有
+- `Fast Groups Muter (rgthree)` —— 2/18 个有
+- `Image Comparer (rgthree)` —— 2/18 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/18 个有
+- `RH_Nano_Banana_Image2Image` —— 1/18 个有
 
 ## 典型参数
 

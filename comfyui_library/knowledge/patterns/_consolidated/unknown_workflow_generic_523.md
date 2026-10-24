@@ -1,34 +1,39 @@
 ---
 name: unknown_workflow_generic_523
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.916667
-common_nodes: [CR Text, RH_RhartImageG25FlareTextToImage, SaveImage]
+coverage: 0.8564
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/RH全能图片G2.5文生图低价版_2049294338563248129.json, 图片生成/文生图/全能图像image2.5文生图_2097966221957361666.json, 图片生成/文生图/全能图片image2.5文生图_2099723409528811521.json]
+members: [图片生成/图生图/一键生成电商产品多角度图_2033194396656607234.json, 图片生成/图生图/一键生成电影短剧漫剧分镜图_2033181472785440770.json, 图片生成/图生图/杨媛媛 相机直出图_2032008952333996033.json, 图片生成/图生图/韩文豪1_2031918176165961729.json, 视频生成/图生视频/9分镜图_2038856574608871426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_523
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/RH全能图片G2.5文生图低价版_2049294338563248129.json、图片生成/文生图/全能图像image2.5文生图_2097966221957361666.json、图片生成/文生图/全能图片image2.5文生图_2099723409528811521.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键生成电商产品多角度图_2033194396656607234.json、图片生成/图生图/一键生成电影短剧漫剧分镜图_2033181472785440770.json、图片生成/图生图/杨媛媛 相机直出图_2032008952333996033.json、图片生成/图生图/韩文豪1_2031918176165961729.json、视频生成/图生视频/9分镜图_2038856574608871426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `RH_RhartImageG25FlareTextToImage`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RHSettingsNode` —— 1/3 个有
+- `PromptBatchQueue` —— 4/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `easy showAnything` —— 3/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `CR Text` —— 1/5 个有
 
 ## 典型参数
 

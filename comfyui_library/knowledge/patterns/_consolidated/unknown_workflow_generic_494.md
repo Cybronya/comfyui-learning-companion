@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_generic_494
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.533333
-common_nodes: [CLIPLoader, PreviewAny, TextGenerate]
+coverage: 0.7082
+common_nodes: [JjkText, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json, comfyui-workflow-templates-json/llm_qwen3_text_gen.json, comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json]
+members: [图片生成/图生图/AI漫剧V2-第一步-角色卡制作_2067068756156833794.json, 图片生成/图生图/AI漫剧V2-第二步-分镜图制作_2051593724039311361.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json, 图片生成/文生图/AI漫剧V2-第二步-分镜图制作_2055505792694013953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_494
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json、comfyui-workflow-templates-json/llm_qwen3_text_gen.json、comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/AI漫剧V2-第一步-角色卡制作_2067068756156833794.json、图片生成/图生图/AI漫剧V2-第二步-分镜图制作_2051593724039311361.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json、图片生成/文生图/AI漫剧V2-第二步-分镜图制作_2055505792694013953.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `PreviewAny`
-- `TextGenerate`
+全部 5 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
+- `RH_RhartImageG2TextToImage` —— 3/5 个有
+- `JoinStrings` —— 2/5 个有
+- `RH_RhartImageG2ImageToImage` —— 2/5 个有
 
 ## 典型参数
 

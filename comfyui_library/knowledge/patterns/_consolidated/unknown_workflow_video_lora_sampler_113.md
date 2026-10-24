@@ -1,78 +1,99 @@
 ---
 name: unknown_workflow_video_lora_sampler_113
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.744929
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, ImageBatchExtendWithOverlap, ImageFromBatch+, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SetNode, Text, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+frequency: 13
+level: moderate
+coverage: 0.641
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2014865724992393217.json, 视频生成/图生视频/2027295499975397377.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027312644432076802.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027802000825524225.json, 视频生成/图生视频/2027917338749706242.json, 视频生成/图生视频/2027920287546740737.json, 视频生成/图生视频/2027921761626492930.json, 视频生成/图生视频/2028112885385269249.json, 视频生成/图生视频/2028125555844976641.json, 视频生成/图生视频/2028393492883443713.json, 视频生成/图生视频/2028664634638606338.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028827198974595073.json, 视频生成/图生视频/2028846638088851458.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028859143251038209.json]
+members: [图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json, 图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json, 视频生成/图生视频/(Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_1978363035192549378.json, 视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json, 视频生成/图生视频/Wan Animate KJ V2版+Sec稳定自动遮罩视频换装_1977311321710567425.json, 视频生成/图生视频/视频换装稳定版，可切镜头V3_1990353025669754881.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版+Sec稳定遮罩Mix视频V3（换装前置）_1977639019339239426.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版Move模式视频V2（换装前置）_1977660761738739714.json, 视频生成/文生视频/Wan Animate KJ V2版+Sec稳定遮罩视频换装V3_1976929662687420417.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Mix主体混合版V2_1974413564041670657.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移Uni3c运镜版V1_1974430400560893954.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移V1_1974423112462766082.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本非人类一致性优化Mix主体混合版V1_1974415771805855745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_113
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2014865724992393217.json、视频生成/图生视频/2027295499975397377.json、视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027312644432076802.json、视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027802000825524225.json、视频生成/图生视频/2027917338749706242.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json、图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json、视频生成/图生视频/(Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_1978363035192549378.json、视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json、视频生成/图生视频/Wan Animate KJ V2版+Sec稳定自动遮罩视频换装_1977311321710567425.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageFromBatch+`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+全部 13 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `Text`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JDCN_StringToList` —— 13/14 个有
-- `JWInteger` —— 13/14 个有
-- `easy indexAnything` —— 13/14 个有
-- `LoadVQVAE` —— 2/14 个有
-- `ImageConcatMulti` —— 1/14 个有
-- `ImageResizeKJv2` —— 1/14 个有
-- `Int` —— 1/14 个有
-- `Load Cache` —— 1/14 个有
-- `Load Lora` —— 1/14 个有
-- `LoadDust3r` —— 1/14 个有
-- `RH_Captioner` —— 1/14 个有
-- `RunningHub Deepcleaner` —— 1/14 个有
-- `Ruyi_LoadLora` —— 1/14 个有
-- `TextConcatenate_UTK` —— 1/14 个有
-- `[Comfy3D] Load 3DGS` —— 1/14 个有
-- `easy showAnything` —— 1/14 个有
-- `load_FLUX` —— 1/14 个有
-- `load_SD35` —— 1/14 个有
+- `ACE_ImageFaceCrop` —— 12/13 个有
+- `GetImageSizeAndCount` —— 12/13 个有
+- `GrowMask` —— 12/13 个有
+- `JWInteger` —— 12/13 个有
+- `PointsEditor` —— 12/13 个有
+- `CR Prompt Text` —— 11/13 个有
+- `DownloadAndLoadSAM2Model` —— 11/13 个有
+- `GetNode` —— 11/13 个有
+- `PoseRetargetPromptHelper` —— 11/13 个有
+- `Sam2Segmentation` —— 11/13 个有
+- `SetNode` —— 11/13 个有
+- `WanVideoEncode` —— 11/13 个有
+- `WanVideoUni3C_ControlnetLoader` —— 11/13 个有
+- `WanVideoUni3C_embeds` —— 11/13 个有
+- `easy showAnything` —— 11/13 个有
+- `WanVideoContextOptions` —— 10/13 个有
+- `WanVideoTorchCompileSettings` —— 10/13 个有
+- `EmptyImage` —— 7/13 个有
+- `ImageFromBatch` —— 7/13 个有
+- `PreviewImage` —— 7/13 个有
+- `PrimitiveInt` —— 7/13 个有
+- `SeCModelLoader` —— 7/13 个有
+- `SeCVideoSegmentation` —— 7/13 个有
+- `ClothesSegment` —— 6/13 个有
+- `PDIMAGE_LongerSize` —— 6/13 个有
+- `VHS_VideoInfo` —— 6/13 个有
+- `ImageConcanate` —— 5/13 个有
+- `SaveImage` —— 3/13 个有
+- `segformer_b2_clothes` —— 3/13 个有
+- `TT_img_enc_v2` —— 2/13 个有
+- `CoordinatePlotter` —— 1/13 个有
+- `GrowMaskWithBlur` —— 1/13 个有
+- `INTConstant` —— 1/13 个有
+- `ImageUpscaleWithModel` —— 1/13 个有
+- `LayerMask: MaskPreview` —— 1/13 个有
+- `PoseDetectionOneToAllAnimation` —— 1/13 个有
+- `RH_Captioner` —— 1/13 个有
+- `ShowText` —— 1/13 个有
+- `SimpleMath+` —— 1/13 个有
+- `UpscaleModelLoader` —— 1/13 个有
+- `easy anythingIndexSwitch` —— 1/13 个有
+- `easy cleanGpuUsed` —— 1/13 个有
+- `easy promptConcat` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 14 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 14 | 100% |
-| 采样算法 | 1 | 1 - 1 | 14 | 100% |
-| 调度器 | euler | - | 14 | 100% |
-| 重绘幅度 | simple | - | 14 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,8 +101,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，14 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，14 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，14 个样本，一致性 100%
-- 重绘幅度 最常用 simple，14 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

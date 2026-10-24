@@ -3,83 +3,65 @@ name: text_to_image_video_lora_sampler_160
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.808667
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, ExtendIntermediateSigmas, GH_ImageVideoComparer, GetImageSizeAndCount, GoohaiRatioAndResolution, ImageBatchMulti, ImageFromBatch, ImageFromBatch+, Int, JjkText, KSampler, KSamplerSelect, LazySwitchKJ, LoadImage, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, MultiplicationNode, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), SimpleMath+, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideoPath, VHS_SelectFilename, VHS_VideoCombine, YusuLoadVideoUI, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.929667
+common_nodes: [AutoCropFaces, CLIPLoader, CLIPTextEncode, ColorMatch, CreateVideo, EmptyLatentImage, FFmpeg_LoadVideoFromURL_JX, Float, GetImageSizeAndCount, GetVideoComponents, ImageBatch, ImageBatchRepeatInterleaving, ImageCASharpening+, ImageConcatMulti, ImageFromBatch+, ImageScale, ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoadVideo, LoraLoaderModelOnly, MathExpression|pysssss, Pick From Batch (mtb), PreviewImage, RepeatImageBatch, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SaveVideo, UNETLoader, VAEDecode, VAELoader, VHS_SelectEveryNthImage, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/海螺H3视频引导生成视频衔接工作流，数字人视频生视频处理工具_2106141790381363201.json, 数字人/数字人/海螺H3视频引导生视频｜数字人画面无缝衔接过渡_2105829793001459714.json, 数字人/数字人/视频引导生视频衔接过渡工作流，数字人视频生视频处理工具_2106158635910000641.json]
+members: [图片生成/图生图/DreamID一键面部替换直出｜视频换脸图生图_2089695572570759169.json, 图片生成/图生图/DreamID视频换脸处理生成工作流工具包_2101382827316170754.json, 图片生成/图生图/视频换脸｜DreamID 一键面部替换直出_2089341677751328769.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_160
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/海螺H3视频引导生成视频衔接工作流，数字人视频生视频处理工具_2106141790381363201.json、数字人/数字人/海螺H3视频引导生视频｜数字人画面无缝衔接过渡_2105829793001459714.json、数字人/数字人/视频引导生视频衔接过渡工作流，数字人视频生视频处理工具_2106158635910000641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamID一键面部替换直出｜视频换脸图生图_2089695572570759169.json、图片生成/图生图/DreamID视频换脸处理生成工作流工具包_2101382827316170754.json、图片生成/图生图/视频换脸｜DreamID 一键面部替换直出_2089341677751328769.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
-- `BasicScheduler`
+- `AutoCropFaces`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
+- `ColorMatch`
 - `CreateVideo`
 - `EmptyLatentImage`
-- `ExtendIntermediateSigmas`
-- `GH_ImageVideoComparer`
+- `FFmpeg_LoadVideoFromURL_JX`
+- `Float`
 - `GetImageSizeAndCount`
-- `GoohaiRatioAndResolution`
-- `ImageBatchMulti`
-- `ImageFromBatch`
+- `GetVideoComponents`
+- `ImageBatch`
+- `ImageBatchRepeatInterleaving`
+- `ImageCASharpening+`
+- `ImageConcatMulti`
 - `ImageFromBatch+`
-- `Int`
+- `ImageScale`
+- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LazySwitchKJ`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `MultiplicationNode`
-- `PreviewAudio`
+- `MathExpression|pysssss`
+- `Pick From Batch (mtb)`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `RepeatImageBatch`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler`
 - `SaveVideo`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `SolAttnMiniMax`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideoPath`
-- `VHS_SelectFilename`
+- `VHS_SelectEveryNthImage`
 - `VHS_VideoCombine`
-- `YusuLoadVideoUI`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -97,7 +79,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -108,4 +90,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足

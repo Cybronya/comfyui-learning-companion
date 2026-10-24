@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_741
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.907
-common_nodes: [Bjornulf_ShowStringText, GetImageSizeAndCount, INTConstant, ImageResizeKJ, ImageResizeKJv2, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, TTP_text_mix, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9115
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1954097242955235330.json, 视频生成/图生视频/1980666931474776066.json]
+members: [视频生成/图生视频/H3加速方式对比_2087392191630106625.json, 视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_741
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1954097242955235330.json、视频生成/图生视频/1980666931474776066.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3加速方式对比_2087392191630106625.json、视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,51 +23,45 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowStringText`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
-- `Int`
-- `JjkConcat`
-- `LTXVPromptEnhancer`
-- `LTXVPromptEnhancerLoader`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `KSamplerSelect`
+- `Label (rgthree)`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `TTP_text_mix`
-- `TextInput_`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `CreateCFGScheduleFloatList` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ForLoopClose` —— 1/2 个有
-- `ForLoopOpen` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GridStrings` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int2String` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
+- `LoraLoaderBypassModelOnly` —— 1/2 个有
+- `MiniMaxH3BlockCacheT8` —— 1/2 个有
+- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
+- `ModelAttentionBackend` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `SolAttnMiniMax` —— 1/2 个有
+- `StringConcatenate` —— 1/2 个有
+- `easy convertAnything` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `easy string` —— 1/2 个有
+- `string_util_StrConcat` —— 1/2 个有
 
 ## 典型参数
 

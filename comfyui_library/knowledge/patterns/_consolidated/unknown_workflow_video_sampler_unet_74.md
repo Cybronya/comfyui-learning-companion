@@ -1,64 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_unet_74
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.773333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Fast Groups Bypasser (rgthree), H3SigmaRefiner, Int, KSamplerSelect, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SolAttnPatch, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.6575
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax首尾帧视频-加速_2095432472426270722.json, 视频生成/图生视频/minimax首尾帧视频_2096856647980380161.json, 视频生成/图生视频/新手喂饭！Minimax首尾帧工作流拆解（selfLift）_2101930359096176642.json]
+members: [数字人/数字人/MiniMax h3音频驱动数字人对口型-自动写提示词+全节点注释_2089689798725423105.json, 数字人/数字人/MinimaxH3音频驱动+语音克隆_2086995655117070338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_74
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax首尾帧视频-加速_2095432472426270722.json、视频生成/图生视频/minimax首尾帧视频_2096856647980380161.json、视频生成/图生视频/新手喂饭！Minimax首尾帧工作流拆解（selfLift）_2101930359096176642.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MiniMax h3音频驱动数字人对口型-自动写提示词+全节点注释_2089689798725423105.json、数字人/数字人/MinimaxH3音频驱动+语音克隆_2086995655117070338.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `AudioCrop`
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CR Text`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
-- `Int`
 - `KSamplerSelect`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `ModelAttentionBackend`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnPatch`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `VRGDG_MiniMaxH3AudioDrive`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `DF_Int_to_Float` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Bookmark (rgthree)` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `ModelPreviewOverrideKJ` —— 1/3 个有
-- `SeargeFloatConstant` —— 1/3 个有
-- `SelfLiftH3Sampler` —— 1/3 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `AudioBeforeAfterSilence` —— 1/2 个有
+- `AudioConcat` —— 1/2 个有
+- `EmptyAudio` —— 1/2 个有
+- `HeartMuLa_Transcribe` —— 1/2 个有
+- `JoinStringMulti` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `Qwen3TTSModelLoader` —— 1/2 个有
+- `Qwen3TTSVoiceClone` —— 1/2 个有
+- `StringConcatenate` —— 1/2 个有
+- `ToString` —— 1/2 个有
+- `llama_cpp_instruct_adv` —— 1/2 个有
+- `llama_cpp_model_loader` —— 1/2 个有
+- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 
@@ -70,4 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

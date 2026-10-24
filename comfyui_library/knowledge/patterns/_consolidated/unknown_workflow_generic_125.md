@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_125
 type: Unknown Workflow
-frequency: 8
+frequency: 13
 level: moderate
-coverage: 0.785375
-common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
+coverage: 0.947769
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
-missing: [ImageResize+]
-members: [图片生成/文生图/1981300934502506497.json, 图片生成/文生图/1983357701608644610.json, 图片生成/文生图/1983453022506426369.json, 图片生成/文生图/1983723273634684929.json, 图片生成/文生图/1984997799391612929.json, 图片生成/文生图/全能图片 V1_2014603891056320513.json, 图片生成/文生图/可乐-单图扩展成四视图_2009154735978323969.json, 图片生成/文生图/经典电影探班，5分钱一张_1999813413306068993.json]
+missing: []
+members: [视频生成/图生视频/(电商流娱乐流)每天免费5次全能视频S.0-15秒图生视频全能视频S.0（支持横版竖版1080p）_1995670412317097986.json, 视频生成/图生视频/Soro2 商品图生成视频_1989660328457850882.json, 视频生成/图生视频/[众馨]全能视频S图生视频_1982391701874589698.json, 视频生成/图生视频/全能视频S 图生视频1080P_1986398507370246145.json, 视频生成/图生视频/全能视频S 图生视频_1988922937996611586.json, 视频生成/图生视频/全能视频S一键生成产品广告视频_1988885458224549890.json, 视频生成/图生视频/全能视频S图生视频_1987930980579217410.json, 视频生成/图生视频/全能视频S图生视频工作流_1987789160801046529.json, 视频生成/图生视频/全能视频S直用1080P版RH流，不可跑真人_1981288831175524353.json, 视频生成/图生视频/全能视频S视频生成_1996640188942143490.json, 视频生成/图生视频/全能视频梭罗2图生视频15s全能视频S+Image+to+Video0.08元每次_2036304920965554177.json, 视频生成/图生视频/全能视频梭罗2图生视频全能视频S.0(15秒图生视频支持横版竖版1080p）_1974309478432681985.json, 视频生成/图生视频/别再花钱了！全能视频S 图生视频高清无水印，10 - 15 秒免费做_1989960633712037889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_125
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1981300934502506497.json、图片生成/文生图/1983357701608644610.json、图片生成/文生图/1983453022506426369.json、图片生成/文生图/1983723273634684929.json、图片生成/文生图/1984997799391612929.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/(电商流娱乐流)每天免费5次全能视频S.0-15秒图生视频全能视频S.0（支持横版竖版1080p）_1995670412317097986.json、视频生成/图生视频/Soro2 商品图生成视频_1989660328457850882.json、视频生成/图生视频/[众馨]全能视频S图生视频_1982391701874589698.json、视频生成/图生视频/全能视频S 图生视频1080P_1986398507370246145.json、视频生成/图生视频/全能视频S 图生视频_1988922937996611586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ImageResize+`
+全部 13 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Translator`
-- `SaveImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskColorize` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
+- `RH_Translator` —— 6/13 个有
+- `CR Text` —— 4/13 个有
+- `Text Concatenate` —— 1/13 个有
 
 ## 典型参数
 
@@ -43,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageResize+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

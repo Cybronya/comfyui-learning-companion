@@ -3,70 +3,59 @@ name: unknown_workflow_video_lora_sampler_214
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.868
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.702889
+common_nodes: [AddLabel, DownloadAndLoadHyVideoTextEncoder, EmptyImage, GetImageSizeAndCount, GetNode, HyVideoBlockSwap, HyVideoDecode, HyVideoEncodeKeyframes, HyVideoLoraSelect, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEncode, HyVideoVAELoader, INTConstant, ImageConcatMulti, ImageScale, LoadImage, SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058444254300696577.json, 视频生成/图生视频/2070137230106124289.json, 视频生成/图生视频/2060633763377410049.json, 视频生成/图生视频/2055882037822795778.json, 视频生成/图生视频/2069942311760523265.json, 视频生成/图生视频/2057812163363950593.json, 视频生成/图生视频/2069309703959695362.json, 视频生成/图生视频/2073463668316323840.json, 视频生成/图生视频/2076823460927598594.json]
+members: [视频生成/图生视频/KJ版混元首尾帧强一致性图生视频追色工作流_1898786623557947394.json, 视频生成/图生视频/变形金刚工作流-首尾_1901229353970057217.json, 视频生成/图生视频/混元video首尾帧双重加持V1_1912693250090594306.json, 视频生成/图生视频/混元video首尾帧特调优化版首尾帧V1_1912569135262330881.json, 视频生成/图生视频/混元前后关键帧控制-图生视频工作流_2042055349607337985.json, 视频生成/图生视频/混元首尾帧图生视频+色彩修复(KJ)_1898632329806434306.json, 视频生成/图生视频/腾讯混元首尾帧强一致性图生视频工作流（kijai版）_1898873358178537473.json, 视频生成/图生视频/首尾帧、关键帧视频  混元视频工作流_1898536833251233794.json, 视频生成/文生视频/最新混元前后关键帧控制-图生视频工作流_1898757029459382273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_214
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2058444254300696577.json、视频生成/图生视频/2070137230106124289.json、视频生成/图生视频/2060633763377410049.json、视频生成/图生视频/2055882037822795778.json、视频生成/图生视频/2069942311760523265.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/KJ版混元首尾帧强一致性图生视频追色工作流_1898786623557947394.json、视频生成/图生视频/变形金刚工作流-首尾_1901229353970057217.json、视频生成/图生视频/混元video首尾帧双重加持V1_1912693250090594306.json、视频生成/图生视频/混元video首尾帧特调优化版首尾帧V1_1912569135262330881.json、视频生成/图生视频/混元前后关键帧控制-图生视频工作流_2042055349607337985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `SamplerCustom`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `AddLabel`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncodeKeyframes`
+- `HyVideoLoraSelect`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTextEncode`
+- `HyVideoVAELoader`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageScale`
+- `LoadImage`
+- `SetNode`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 8/9 个有
-- `PrimitiveBoolean` —— 8/9 个有
-- `LTXDirectorGuide` —— 7/9 个有
-- `LTXVAudioVAEEncode` —— 7/9 个有
-- `LoadImage` —— 7/9 个有
-- `MelBandRoFormerModelLoader` —— 7/9 个有
-- `MelBandRoFormerSampler` —— 7/9 个有
-- `PreviewAudio` —— 7/9 个有
-- `SetLatentNoiseMask` —— 7/9 个有
-- `SolidMask` —— 7/9 个有
-- `LTXDirector` —— 6/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
-- `GuHaiAutoImageSplit` —— 4/9 个有
-- `PreviewImage` —— 4/9 个有
-- `CR Text` —— 3/9 个有
-- `CS-LTXGridDirector` —— 3/9 个有
-- `Label (rgthree)` —— 3/9 个有
-- `PreviewAny` —— 3/9 个有
-- `RHHiddenNodes` —— 3/9 个有
-- `RH_LLMAPI_Pro_Node` —— 3/9 个有
-- `YusuLTXDirectorGuide` —— 2/9 个有
-- `孤海注释` —— 2/9 个有
-- `LTXVChunkFeedForward` —— 1/9 个有
-- `PathchSageAttentionKJ` —— 1/9 个有
+- `HyVideoEnhanceAVideo` —— 8/9 个有
+- `HyVideoTorchCompileSettings` —— 8/9 个有
+- `LayerUtility: PurgeVRAM` —— 7/9 个有
+- `ColorMatch` —— 6/9 个有
+- `Note Plus (mtb)` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
+- `Note _O` —— 4/9 个有
+- `easy cleanGpuUsed` —— 4/9 个有
+- `PMRF` —— 3/9 个有
+- `Primitive string [Crystools]` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
 
 ## 典型参数
 

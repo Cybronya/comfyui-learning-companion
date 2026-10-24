@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_120
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.495667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, Int, JjkShowText, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveString, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.728167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/10Eros Max BETA5视频生成 多模态概念融合工作流_2098302417078153218.json, 视频生成/文生视频/MiniMax H3多参全能整合V2｜文生图生视频多模式工作流_2097487985720782850.json, 视频生成/文生视频/MiniMax H3多参整合工作流｜全模态视频多种模式生成_2097489623764262913.json, 视频生成/文生视频/多参全能整合V2｜MiniMax H3文生图生视频直出_2091634818105827330.json, 视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090141978154590210.json, 视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090345152245223426.json]
+members: [视频生成/图生视频/minimax首尾帧视频加速生成｜图生视频快速出片工作流_2097079966373601282.json, 视频生成/图生视频/单图生视频 MiniMax H3 图片驱动角色表演_2094228080427622401.json, 视频生成/图生视频/单图生视频版本｜MiniMax+H3角色设计表演生成_2094589153349554177.json, 视频生成/文生视频/人物角色文生视频｜MiniMax+H3角色设计一键生成_2094312279473999874.json, 视频生成/文生视频/开源文生视频｜MiniMax-H3战斗特效角色设计生成_2094797659730169857.json, 视频生成/文生视频/文生视频 MiniMax H3 可设时长分辨率比例快速出片_2094174814998192130.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_120
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/10Eros Max BETA5视频生成 多模态概念融合工作流_2098302417078153218.json、视频生成/文生视频/MiniMax H3多参全能整合V2｜文生图生视频多模式工作流_2097487985720782850.json、视频生成/文生视频/MiniMax H3多参整合工作流｜全模态视频多种模式生成_2097489623764262913.json、视频生成/文生视频/多参全能整合V2｜MiniMax H3文生图生视频直出_2091634818105827330.json、视频生成/文生视频/多参全能整合｜MiniMax H3文生视频图生视频高速生成_2090141978154590210.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/minimax首尾帧视频加速生成｜图生视频快速出片工作流_2097079966373601282.json、视频生成/图生视频/单图生视频 MiniMax H3 图片驱动角色表演_2094228080427622401.json、视频生成/图生视频/单图生视频版本｜MiniMax+H3角色设计表演生成_2094589153349554177.json、视频生成/文生视频/人物角色文生视频｜MiniMax+H3角色设计一键生成_2094312279473999874.json、视频生成/文生视频/开源文生视频｜MiniMax-H3战斗特效角色设计生成_2094797659730169857.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
@@ -29,57 +29,44 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `Int`
-- `JjkShowText`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveString`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 4/6 个有
-- `DapaoH3LocalPromptNode` —— 4/6 个有
-- `Int2String` —— 4/6 个有
-- `AudioCrop` —— 3/6 个有
-- `H3SigmaRefiner` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `MiniMaxH3SigmaShift` —— 3/6 个有
-- `ModelPreviewOverrideKJ` —— 3/6 个有
-- `PT_H3ConcatAVLatent` —— 3/6 个有
-- `RunningHub Deepcleaner` —— 3/6 个有
-- `SaveImage` —— 3/6 个有
-- `SplitSigmas` —— 3/6 个有
-- `VAEEncode` —— 3/6 个有
-- `VAEEncodeAudio` —— 3/6 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 3/6 个有
-- `LTXVConcatAVLatent` —— 2/6 个有
-- `LTXVSeparateAVLatent` —— 2/6 个有
-- `MiniMaxLowVRAMAttention` —— 2/6 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/6 个有
-- `VAEDecodeAudio` —— 2/6 个有
-- `DapaoH3VideoPromptNode` —— 1/6 个有
-- `Dapao_LlamaH3Prompt` —— 1/6 个有
+- `GetNode` —— 5/6 个有
+- `ResolutionSelector` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `VHS_LoadVideoFFmpeg` —— 5/6 个有
+- `LoadImage` —— 4/6 个有
+- `ModelAttentionBackend` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `Text` —— 3/6 个有
+- `ImageCrop+` —— 2/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `Any Switch (rgthree)` —— 1/6 个有
+- `DF_Int_to_Float` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `H3SigmaRefiner` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `SolAttnPatch` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

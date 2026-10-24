@@ -1,81 +1,59 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_25
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.874
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, ManualSigmas, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
+frequency: 2
+level: weak
+coverage: 0.7675
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScaleBy, LatentUpscaleBy, PreviewImage, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SamplerEulerAncestral, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX单人自定义语音-工作流_2033410143752294402.json, 视频生成/文生视频/video_ltx2_custom_voice_kijai_multi_2031409117054640130.json, 视频生成/文生视频/video_ltx2_custom_voice_kijai_single_2031404838935859202.json]
+members: [图片生成/文生图/Krea2 RAW-Turbo 高低噪采样_2074460408995471362.json, 图片生成/文生图/Krea2+RAW-Turbo 高低噪采样_2096849477477945346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX单人自定义语音-工作流_2033410143752294402.json、视频生成/文生视频/video_ltx2_custom_voice_kijai_multi_2031409117054640130.json、视频生成/文生视频/video_ltx2_custom_voice_kijai_single_2031404838935859202.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2 RAW-Turbo 高低噪采样_2074460408995471362.json、图片生成/文生图/Krea2+RAW-Turbo 高低噪采样_2096849477477945346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `EmptyLatentImage`
+- `ImageScaleBy`
+- `LatentUpscaleBy`
+- `PreviewImage`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `SamplerEulerAncestral`
+- `SaveImage`
+- `SplitSigmas`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MelBandRoFormerModelLoader` —— 2/3 个有
-- `MelBandRoFormerSampler` —— 2/3 个有
-- `ResizeImageMaskNode` —— 2/3 个有
-- `ResizeImagesByLongerEdge` —— 2/3 个有
-- `SimpleCalculatorKJ` —— 2/3 个有
-- `TrimAudioDuration` —— 2/3 个有
-- `1hew_AudioDuration` —— 1/3 个有
-- `AudioConcat` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/3 个有
-- `Float to Int` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `SaveAudioMP3` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `GetNode` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | - | 2 | 100% |
+| 高度 | 1024 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -83,4 +61,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

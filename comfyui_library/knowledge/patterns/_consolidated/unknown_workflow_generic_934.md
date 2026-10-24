@@ -1,37 +1,34 @@
 ---
 name: unknown_workflow_generic_934
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9285
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudioMP3, TextBox, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.863
+common_nodes: [LoadImage, PrimitiveInt, RH_RhartImageG2ImageToImage, SaveImage, TextInput_, easy promptLine]
 problems: []
 missing: []
-members: [音频生成/音频生成/ComfyUI HeartMuLa 基础流_2013473041468104705.json, 音频生成/音频生成/ComfyUI HeartMuLa 复制流_2013486549110890497.json]
+members: [图片生成/图生图/参考背景风格种草图_2064594198262804482.json, 图片生成/图生图/种草图生成_2047193652753080321.json, 图片生成/图生图/种草图生成_2061636648290578433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_934
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ComfyUI HeartMuLa 基础流_2013473041468104705.json、音频生成/音频生成/ComfyUI HeartMuLa 复制流_2013486549110890497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/参考背景风格种草图_2064594198262804482.json、图片生成/图生图/种草图生成_2047193652753080321.json、图片生成/图生图/种草图生成_2061636648290578433.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudioMP3`
-- `TextBox`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `PrimitiveInt`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `TextInput_`
+- `easy promptLine`
 
 ## 典型参数
 
@@ -43,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

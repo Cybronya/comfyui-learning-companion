@@ -1,52 +1,31 @@
 ---
 name: unknown_workflow_generic_830
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.656
-common_nodes: [CustomAddLabel, Float, ImageLoader, JjkText, MultiTextConcatenate, RH_RhartImageG2OfficialImageToImage, RTXVideoSuperResolution, SaveImage, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ttN concat]
+frequency: 3
+level: moderate
+coverage: 0.833333
+common_nodes: [LoadImage, OpenAIGPTImageNodeV2, SaveImageAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058411561324208130.json, 视频生成/图生视频/2050601878207119361.json]
+members: [comfyui-workflow-templates-json/api_openai_gpt_image_25_flare_image_edit.json, comfyui-workflow-templates-json/api_openai_gpt_image_25_sunburst_image_edit.json, comfyui-workflow-templates-json/api_openai_image_1_multi_inputs.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_830
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2058411561324208130.json、视频生成/图生视频/2050601878207119361.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_openai_gpt_image_25_flare_image_edit.json、comfyui-workflow-templates-json/api_openai_gpt_image_25_sunburst_image_edit.json、comfyui-workflow-templates-json/api_openai_image_1_multi_inputs.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CustomAddLabel`
-- `Float`
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RTXVideoSuperResolution`
-- `SaveImage`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `ttN concat`
-
-**可变部分**（部分 workflow 才有）：
-- `GuHaiAutoImageSplit` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `SeedVR2` —— 1/2 个有
-- `SeedVR2BlockSwap` —— 1/2 个有
-- `SeedVR2ExtraArgs` —— 1/2 个有
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `OpenAIGPTImageNodeV2`
+- `SaveImageAdvanced`
 
 ## 典型参数
 
@@ -58,4 +37,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

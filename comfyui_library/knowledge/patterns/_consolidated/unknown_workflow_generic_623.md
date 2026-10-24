@@ -1,42 +1,40 @@
 ---
 name: unknown_workflow_generic_623
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.798667
-common_nodes: [Audio Cut (mtb), LoadAudio, MathExpression|pysssss, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, SaveAudioAdvanced, easy int]
+coverage: 0.889
+common_nodes: [LoadImage, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextureNode]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS-2.5-语音克隆-支持情感_2087384243587604481.json, 音频生成/音频生成/IndexTTS-2.5-配音-音色_情感克隆-语音合成-支持情感向量_文本_2087345925378363393.json, 音频生成/音频生成/🎙️IndexTTS-2.5-文本配音-音色克隆-支持情感_2087419278634082306.json]
+members: [comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json, comfyui-workflow-templates-json/api_meshy7_image_to_model.json, comfyui-workflow-templates-json/api_meshy_image_to_model.json, comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_623
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2.5-语音克隆-支持情感_2087384243587604481.json、音频生成/音频生成/IndexTTS-2.5-配音-音色_情感克隆-语音合成-支持情感向量_文本_2087345925378363393.json、音频生成/音频生成/🎙️IndexTTS-2.5-文本配音-音色克隆-支持情感_2087419278634082306.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json、comfyui-workflow-templates-json/api_meshy7_image_to_model.json、comfyui-workflow-templates-json/api_meshy_image_to_model.json、comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio Cut (mtb)`
-- `LoadAudio`
-- `MathExpression|pysssss`
-- `PrimitiveStringMultiline`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
-- `SaveAudioAdvanced`
-- `easy int`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `MeshyAnimateModelNode`
+- `MeshyRefineNode`
+- `MeshyRigModelNode`
+- `MeshyTextureNode`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
-- `easy string` —— 1/3 个有
+- `MeshyImageToModelNode` —— 3/4 个有
+- `SaveGLB` —— 3/4 个有
+- `MeshyMultiImageToModelNode` —— 1/4 个有
+- `Preview3D` —— 1/4 个有
+- `Save3DAdvanced` —— 1/4 个有
 
 ## 典型参数
 

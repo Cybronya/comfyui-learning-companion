@@ -1,34 +1,39 @@
 ---
 name: unknown_workflow_generic_1005
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [PreviewAudio, VHS_LoadVideo, WhisperSTT, WhisperTurboRun, easy saveText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.974333
+common_nodes: [CR Text, LoadImage, RHLLMChatNode, RH_RhartImageG2OfficialTextToImage, RH_RhartImageNG31FlashOfficialImageToImage, SaveImage, StringFunction|pysssss, 忽略多组孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/whisper视频音频提取字幕-hypit词级对齐_2103000779522142209.json, 音频生成/音频生成/whisper视频音频提取字幕_2015231272511082498.json]
+members: [图片生成/文生图/网红飒爽高张力场景图_支持换脸_2056643722447777794.json, 图片生成/文生图/美女飒爽高张力网红场景图_2056521212540571650.json, 图片生成/文生图/飒爽高张力-网红场景图_支持换脸_2056638909488123906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1005
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/whisper视频音频提取字幕-hypit词级对齐_2103000779522142209.json、音频生成/音频生成/whisper视频音频提取字幕_2015231272511082498.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/网红飒爽高张力场景图_支持换脸_2056643722447777794.json、图片生成/文生图/美女飒爽高张力网红场景图_2056521212540571650.json、图片生成/文生图/飒爽高张力-网红场景图_支持换脸_2056638909488123906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `PreviewAudio`
-- `VHS_LoadVideo`
-- `WhisperSTT`
-- `WhisperTurboRun`
-- `easy saveText`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `LoadImage`
+- `RHLLMChatNode`
+- `RH_RhartImageG2OfficialTextToImage`
+- `RH_RhartImageNG31FlashOfficialImageToImage`
+- `SaveImage`
+- `StringFunction|pysssss`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 
@@ -40,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

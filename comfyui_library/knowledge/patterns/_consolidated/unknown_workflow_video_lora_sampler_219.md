@@ -7,13 +7,13 @@ coverage: 0.619333
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy imageRemBg]
 problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/2071936392262934529.json, 视频生成/图生视频/2065407497409753090.json, 视频生成/图生视频/2072505774076686337.json, 视频生成/图生视频/2068277029560213505.json, 视频生成/图生视频/2067202782653935618.json, 视频生成/图生视频/2067918393696669697.json, 视频生成/图生视频/2082692772032761857.json, 视频生成/图生视频/2073534746168217601.json, 视频生成/图生视频/1995774153481392130.json]
+members: [视频生成/图生视频/SCAIL2-动作迁移+人物替换电商短视频带货工作流+全节点注释_2071936392262934529.json, 视频生成/图生视频/SCAIL2-视频动作迁移+换背景_2065407497409753090.json, 视频生成/图生视频/SCAIL2_动作迁移_官流_2072505774076686337.json, 视频生成/图生视频/SCAIL2_纯血官流_zip_2068277029560213505.json, 视频生成/图生视频/SCAIL2_纯血官流（单图）动作迁移＆人物替换_2067202782653935618.json, 视频生成/图生视频/SCAIL2官方工作流_2067918393696669697.json, 视频生成/图生视频/Scail2动作舞蹈模仿！长视频生成！_2082692772032761857.json, 视频生成/图生视频/scail2社区官流（多参）动作替换 动作迁移_2073534746168217601.json, 视频生成/图生视频/短剧转绘——多人对话转绘scail2动作迁移_1995774153481392130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_219
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2071936392262934529.json、视频生成/图生视频/2065407497409753090.json、视频生成/图生视频/2072505774076686337.json、视频生成/图生视频/2068277029560213505.json、视频生成/图生视频/2067202782653935618.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/SCAIL2-动作迁移+人物替换电商短视频带货工作流+全节点注释_2071936392262934529.json、视频生成/图生视频/SCAIL2-视频动作迁移+换背景_2065407497409753090.json、视频生成/图生视频/SCAIL2_动作迁移_官流_2072505774076686337.json、视频生成/图生视频/SCAIL2_纯血官流_zip_2068277029560213505.json、视频生成/图生视频/SCAIL2_纯血官流（单图）动作迁移＆人物替换_2067202782653935618.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

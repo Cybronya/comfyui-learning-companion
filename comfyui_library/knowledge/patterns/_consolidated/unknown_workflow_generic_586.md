@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_586
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.866667
-common_nodes: [LoadVideo, RH_RhartVideoGOfficialEditVideo, SaveVideo]
+coverage: 0.6408
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073600724776341505.json, 视频生成/文生视频/全能视频X-编辑视频-官方稳定版+全节点注释_2061807221469704193.json, 视频生成/文生视频/全能视频X-编辑视频-官方稳定版_2108436806181154817.json]
+members: [视频生成/图生视频/（Fal稳定版）全能视频V3.1Fast视频生成（贞贞AI工坊）_2055602464904237058.json, 视频生成/图生视频/（支持真人-图像参考）超能视频2.0平替R2V 新版全能G视频15S(贞贞的工坊API版)_2028108220862046209.json, 视频生成/图生视频/（新版-超强一致性）全能视频G 图生视频(贞贞的AI工坊API版) V2_2048633803287044098.json, 视频生成/图生视频/（直出30S）SD2.0平替全能视频G多参（贞贞工坊-备用分组1）_2045803295423336449.json, 视频生成/图生视频/（贞贞工坊）全能视频G最新版图生视频（支持分镜，切镜，一致性参考和中文）_2018205331360321538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_586
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2073600724776341505.json、视频生成/文生视频/全能视频X-编辑视频-官方稳定版+全节点注释_2061807221469704193.json、视频生成/文生视频/全能视频X-编辑视频-官方稳定版_2108436806181154817.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/（Fal稳定版）全能视频V3.1Fast视频生成（贞贞AI工坊）_2055602464904237058.json、视频生成/图生视频/（支持真人-图像参考）超能视频2.0平替R2V 新版全能G视频15S(贞贞的工坊API版)_2028108220862046209.json、视频生成/图生视频/（新版-超强一致性）全能视频G 图生视频(贞贞的AI工坊API版) V2_2048633803287044098.json、视频生成/图生视频/（直出30S）SD2.0平替全能视频G多参（贞贞工坊-备用分组1）_2045803295423336449.json、视频生成/图生视频/（贞贞工坊）全能视频G最新版图生视频（支持分镜，切镜，一致性参考和中文）_2018205331360321538.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadVideo`
-- `RH_RhartVideoGOfficialEditVideo`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `LoadImage`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
+- `ComflyGrok3VideoApi` —— 3/5 个有
+- `ComflyGrok3VideoApi30S` —— 1/5 个有
+- `Comfly_veo3_1_fal` —— 1/5 个有
 
 ## 典型参数
 

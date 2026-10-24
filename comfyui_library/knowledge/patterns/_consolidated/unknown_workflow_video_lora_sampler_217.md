@@ -3,71 +3,79 @@ name: unknown_workflow_video_lora_sampler_217
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.924
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.749889
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveFloat, PrimitiveInt, SimpleMath+, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1948391193374797826.json, 视频生成/图生视频/2072520035003879425.json, 视频生成/图生视频/2075913669199884290.json, 视频生成/图生视频/2073671180170645506.json, 视频生成/图生视频/2074322783164788738.json, 视频生成/图生视频/2054887667418050562.json, 视频生成/图生视频/2056187222017224706.json, 视频生成/图生视频/2056198886519263233.json, 视频生成/文生视频/AI演唱数字人对口型RCM+Infinite+Talk+VoxCPM+TTS1.5 (1)_2034196163921977346.json]
+members: [视频生成/图生视频/MultiTalk 单人脱口秀｜KJ加速版_1936701399797501953.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳定版）_1948784661829492737.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云_1998778583533412354.json, 视频生成/图生视频/MultiTalk+Aniwan单人KJ高质量加速稳定版V4（脸部一致性版）_1948782335715094529.json, 视频生成/图生视频/MultiTalk+UNI3C运镜_1986856996743876610.json, 视频生成/图生视频/MultiTalk+Wan2.2（高低噪）加速版数字人V1（人物不动版UNI3C运镜）_1955533790640836610.json, 视频生成/图生视频/MultiTalk_图生视频_1936815365949149186.json, 视频生成/图生视频/MultiTalk单人+Wan2.2(低)+Sigma调度KJ加速V4（全身动态版UNI3C运镜）_1955521619805421569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_217
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1948391193374797826.json、视频生成/图生视频/2072520035003879425.json、视频生成/图生视频/2075913669199884290.json、视频生成/图生视频/2073671180170645506.json、视频生成/图生视频/2074322783164788738.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MultiTalk 单人脱口秀｜KJ加速版_1936701399797501953.json、视频生成/图生视频/MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳定版）_1948784661829492737.json、视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json、视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云_1998778583533412354.json、视频生成/图生视频/MultiTalk+Aniwan单人KJ高质量加速稳定版V4（脸部一致性版）_1948782335715094529.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
+- `JWInteger`
+- `JWIntegerToString`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `SimpleMath+`
+- `TextInput_`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Float to Int` —— 8/9 个有
-- `RH_GetAudioDuration` —— 8/9 个有
-- `WanVideoImageToVideoMultiTalk` —— 8/9 个有
-- `WanVideoTextEncodeCached` —— 8/9 个有
-- `AudioSeparation` —— 5/9 个有
-- `Int` —— 5/9 个有
-- `easy anythingIndexSwitch` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `SoundFlow_TrimAudio` —— 4/9 个有
-- `Fast Groups Muter (rgthree)` —— 3/9 个有
-- `FlashVSRNode` —— 3/9 个有
-- `String Literal` —— 2/9 个有
-- `Apply Whisper` —— 1/9 个有
-- `GetNode` —— 1/9 个有
-- `IndexTTSRun` —— 1/9 个有
-- `LoadWanVideoT5TextEncoder` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `VoxCPM_TTS` —— 1/9 个有
-- `WanVideoFreeInitArgs` —— 1/9 个有
-- `WanVideoImageToVideoEncode` —— 1/9 个有
-- `WanVideoSetRadialAttention` —— 1/9 个有
-- `WanVideoTextEncode` —— 1/9 个有
+- `LayerUtility: PurgeVRAM` —— 8/9 个有
+- `ImageResizeKJ` —— 6/9 个有
+- `VHS_LoadVideo` —— 6/9 个有
+- `WanVideoEncode` —— 6/9 个有
+- `WanVideoUni3C_ControlnetLoader` —— 6/9 个有
+- `WanVideoUni3C_embeds` —— 6/9 个有
+- `AddLabel` —— 2/9 个有
+- `CreateCFGScheduleFloatList` —— 2/9 个有
+- `EmptyImage` —— 2/9 个有
+- `GetImageSizeAndCount` —— 2/9 个有
+- `ImageConcatMulti` —— 2/9 个有
+- `WanVideoSLG` —— 2/9 个有
+- `WanVideoSetBlockSwap` —— 2/9 个有
+- `WanVideoSetLoRAs` —— 2/9 个有
+- `ColorMatch` —— 1/9 个有
+- `FloatToSigmas` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `StringToFloatList` —— 1/9 个有
+- `WanVideoEnhanceAVideo` —— 1/9 个有
+- `WanVideoExperimentalArgs` —— 1/9 个有
 
 ## 典型参数
 

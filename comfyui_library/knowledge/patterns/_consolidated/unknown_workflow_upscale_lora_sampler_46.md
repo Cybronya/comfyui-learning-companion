@@ -1,77 +1,87 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_46
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.903
-common_nodes: [CLIPTextEncode, CR Prompt Text, ClipLoaderGGUF, ConditioningZeroOut, EmptySD3LatentImage, GetNode, Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSampler, Label (rgthree), LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageSize]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: strong
+coverage: 0.8875
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CheckpointLoaderSimple, DualCLIPLoader, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoader, LoraLoaderModelOnly, RandomNoise, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image-Engineer-V6版单采极致写真工作流_2066788662167298049.json, 图片生成/文生图/z-image单采极致写真工作流_2061749949603336194.json]
+members: [图片生成/图生图/seedvr2图片去ai感_1986382767250407425.json, 图片生成/图生图/去AI化人物皮肤质感工作流_1971855002417426434.json, 图片生成/图生图/去AI化工作流-一键去除AI感-更多纹理v1_1971757026890149890.json, 图片生成/图生图/去AI感-增加皮肤质感_1956564091567525890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_46
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-Image-Engineer-V6版单采极致写真工作流_2066788662167298049.json、图片生成/文生图/z-image单采极致写真工作流_2061749949603336194.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/seedvr2图片去ai感_1986382767250407425.json、图片生成/图生图/去AI化人物皮肤质感工作流_1971855002417426434.json、图片生成/图生图/去AI化工作流-一键去除AI感-更多纹理v1_1971757026890149890.json、图片生成/图生图/去AI感-增加皮肤质感_1956564091567525890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `ClipLoaderGGUF`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `GetNode`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `CheckpointLoaderSimple`
+- `DualCLIPLoader`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `KSampler`
-- `Label (rgthree)`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TTResolutionSelector`
 - `UNETLoader`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageSize`
+
+**可变部分**（部分 workflow 才有）：
+- `ConditioningZeroOut` —— 3/4 个有
+- `ColorMatch` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `CLIPTextEncode` —— 1/4 个有
+- `CR Upscale Image` —— 1/4 个有
+- `ImageListToImageBatch` —— 1/4 个有
+- `ImageResize+` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 1/4 个有
+- `ImpactImageBatchToImageList` —— 1/4 个有
+- `Joy_caption_two` —— 1/4 个有
+- `Joy_caption_two_load` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `TTP_Image_Assy` —— 1/4 个有
+- `TTP_Image_Tile_Batch` —— 1/4 个有
+- `TTP_Tile_image_size` —— 1/4 个有
+- `UltimateSDUpscaleNoUpscale` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_multistep | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 0.8 | 0.7 - 0.8 | 4 | 94% |
+| LoRA 文本强度 | 0.8 | 0.7 - 0.8 | 4 | 94% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- LoRA 模型强度 中位数 0.8，观测区间 0.7 - 0.8，4 个样本，取值集中（一致性 94%）
+- LoRA 文本强度 中位数 0.8，观测区间 0.7 - 0.8，4 个样本，取值集中（一致性 94%）

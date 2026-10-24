@@ -1,100 +1,74 @@
 ---
 name: text_to_image_lora_sampler_clip_91
 type: Text To Image
-frequency: 11
-level: strong
-coverage: 0.887818
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
+frequency: 14
+level: moderate
+coverage: 0.980786
+common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/开源版问生视频H3加速Lora6步直出1080PMinimax_2086207991736528898.json, 视频生成/图生视频/1080高画质动作迁移｜MinimaxH3 Easy人物服装替换全注释_2093428928621932546.json, 视频生成/图生视频/Easy动作迁移1080高画质｜MinimaxH3 角色服装替换全节点注释_2089271413906698242.json, 视频生成/图生视频/Easy稳定性优化1080｜MinimaxH3动作迁移人物服装替换_2093760414810206210.json, 视频生成/图生视频/MiniMax H3一站式工作流｜文生参考生视频全都要_2111319112474521601.json, 视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换｜1080高画质服装替换全注释_2089453564925136898.json, 视频生成/图生视频/MinimaxH3 Easy角色服装替换动作迁移｜1080高画质全节点注释视频生视频_2089719236200583170.json, 视频生成/图生视频/漫剧林辰图生视频｜短剧角色动起来 图生视频一键成片_2104102680842039298.json, 视频生成/图生视频/漫剧林辰角色动态演绎 图生视频一键生成流畅画面_2104279422512754690.json, 视频生成/图生视频/电影感多参迅捷｜minimax H3防拉丝图生视频工作流_2093110076662968321.json, 视频生成/图生视频/短剧漫剧参考图生视频工作流，图生视频短剧制作方案_2103604319982542850.json]
+members: [图片生成/文生图/Flux.室内效果图生成_2055177379538063361.json, 图片生成/文生图/Krea-2-Turbo 文生图_2071991072359796737.json, 图片生成/文生图/Krea2-turbo文生图赛璐璐平涂动漫场景_2085270687903731714.json, 图片生成/文生图/Krea2-turbo文生图赛璐璐平涂动漫风格_2084650330515660801.json, 图片生成/文生图/Krea2动漫人物写实复古风工作流_2073834007481110529.json, 图片生成/文生图/Krea2图图工作流_2072525906350006273.json, 图片生成/文生图/Krea2图图文生图工作流_2095107374737616898.json, 图片生成/文生图/Krea2文生图工作流_2089571875075747842.json, 图片生成/文生图/Z-Image Re-Turbo_2073289018476941314.json, 图片生成/文生图/Z-Image-Turbo 身材优化+丰满LoRA_2001971849082859521.json, 图片生成/文生图/Z-image文生图（昆昆）_2044213811187556353.json, 图片生成/文生图/krea2_最强多风格开源模型！效果堪比闭源模型！_2070422393184677890.json, 图片生成/文生图/最强风格化开源模型-krea2！效果堪比闭源模型！_2070143827293335554.json, 图片生成/文生图/风格化开源模型krea2_2073230611573207041.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_91
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/开源版问生视频H3加速Lora6步直出1080PMinimax_2086207991736528898.json、视频生成/图生视频/1080高画质动作迁移｜MinimaxH3 Easy人物服装替换全注释_2093428928621932546.json、视频生成/图生视频/Easy动作迁移1080高画质｜MinimaxH3 角色服装替换全节点注释_2089271413906698242.json、视频生成/图生视频/Easy稳定性优化1080｜MinimaxH3动作迁移人物服装替换_2093760414810206210.json、视频生成/图生视频/MiniMax H3一站式工作流｜文生参考生视频全都要_2111319112474521601.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Flux.室内效果图生成_2055177379538063361.json、图片生成/文生图/Krea-2-Turbo 文生图_2071991072359796737.json、图片生成/文生图/Krea2-turbo文生图赛璐璐平涂动漫场景_2085270687903731714.json、图片生成/文生图/Krea2-turbo文生图赛璐璐平涂动漫风格_2084650330515660801.json、图片生成/文生图/Krea2动漫人物写实复古风工作流_2073834007481110529.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 14 个 workflow 都包含：
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 10/11 个有
-- `孤海注释` —— 10/11 个有
-- `CR Text` —— 8/11 个有
-- `MiniMaxH3Easy` —— 8/11 个有
-- `MiniMaxH3EasyLoader` —— 8/11 个有
-- `MiniMaxH3EasyOutput` —— 8/11 个有
-- `LoadImage` —— 7/11 个有
-- `LoadVideo` —— 6/11 个有
-- `VHS_VideoCombine` —— 6/11 个有
-- `CreateVideo` —— 5/11 个有
-- `SaveVideo` —— 5/11 个有
-- `PathchSageAttentionKJ` —— 4/11 个有
-- `ComfyMathExpression` —— 3/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/11 个有
-- `PrimitiveFloat` —— 3/11 个有
-- `ResolutionSelector` —— 3/11 个有
-- `SaveImage` —— 3/11 个有
-- `BiRefNetRMBG` —— 2/11 个有
-- `LoadAudio` —— 2/11 个有
-- `MiniMaxH3SigmaShift` —— 2/11 个有
-- `DuckHideNode` —— 1/11 个有
-- `H3SigmaRefiner` —— 1/11 个有
-- `ImageResizeKJv2` —— 1/11 个有
-- `MiniMaxH3EasyModelAdapter` —— 1/11 个有
-- `MiniMaxH3TurboLoRA` —— 1/11 个有
-- `MiniMaxH3TurboSampler` —— 1/11 个有
-- `PlaySound|pysssss` —— 1/11 个有
-- `Text` —— 1/11 个有
+- `CLIPLoader` —— 13/14 个有
+- `ConditioningZeroOut` —— 12/14 个有
+- `Label (rgthree)` —— 3/14 个有
+- `TTResolutionSelector` —— 3/14 个有
+- `忽略多组孤海` —— 3/14 个有
+- `BaiduTranslateNode` —— 1/14 个有
+- `DualCLIPLoader` —— 1/14 个有
+- `LatentSwitch` —— 1/14 个有
+- `Text` —— 1/14 个有
+- `ttN concat` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
-| 采样算法 | er_sde | - | 11 | 100% |
-| 调度器 | beta | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 80 | 80 - 80 | 11 | 100% |
-| 高度 | 80 | 80 - 80 | 11 | 100% |
+| 采样步数 | 8 | 8 - 20 | 14 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 71% |
+| 调度器 | simple | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 1052 | 512 - 1920 | 14 | 62% |
+| 高度 | 1260 | 512 - 1920 | 14 | 54% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，11 个样本，一致性 100%
-- 调度器 最常用 beta，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（12/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 20，14 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 71%
+- 调度器 最常用 simple，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1052，观测区间 512 - 1920，14 个样本
+- 高度 中位数 1260，观测区间 512 - 1920，14 个样本
+- 高发问题（19/14 个样本）：Steps较低可能导致细节不足

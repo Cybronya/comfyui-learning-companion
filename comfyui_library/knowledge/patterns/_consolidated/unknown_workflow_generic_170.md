@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_170
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.790143
-common_nodes: [AFL:AudioMixStems, AudioSeparation, AudioTrim, LoadAudio, RunningHubRVCVoiceConversion, SaveAudio]
+coverage: 0.754545
+common_nodes: [PreviewAny, RH_Veo3_Text2Video, SaveVideo, ShellAgentPluginOutputText]
 problems: []
-missing: [AFL:AudioMixStems, RunningHubRVCModelLoader, RunningHubRVCVoiceConversion, RunningHubRVCZipModelLoader]
-members: [音频生成/音频生成/ComfyUI_RH_RVC 基础工作流_2060185145348550658.json, 音频生成/音频生成/ComfyUI_RH_RVC 自传模型工作流_2060752729634590721.json, 音频生成/音频生成/RVC 基础工作流（RH版）_2099657242881646593.json, 音频生成/音频生成/RVC 自传模型工作流_2099657254856388610.json, 音频生成/音频生成/RVC_自传模型工作流_2100406899551330306.json, 音频生成/音频生成/RVC_自传模型工作流_2100494860670291970.json, 音频生成/音频生成/【ComfyUI】RH-RVC基础工作流｜AI变声_声音克隆+全节点注释_2061331767608565762.json]
+missing: []
+members: [视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json, 视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json, 视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json, 视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json, 视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json, 视频生成/文生视频/全能视频V3.1 文生视频_1986725934520807426.json, 视频生成/文生视频/全能视频V3.1+文生视频_2064894587893796865.json, 视频生成/文生视频/全能视频V3.1文生视频_1979082743093039105.json, 视频生成/文生视频/全能视频V3.1文生视频工作流（爆炸纸箱）_1985212711497777153.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_1986963975978029057.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2047738309706784769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_170
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/ComfyUI_RH_RVC 基础工作流_2060185145348550658.json、音频生成/音频生成/ComfyUI_RH_RVC 自传模型工作流_2060752729634590721.json、音频生成/音频生成/RVC 基础工作流（RH版）_2099657242881646593.json、音频生成/音频生成/RVC 自传模型工作流_2099657254856388610.json、音频生成/音频生成/RVC_自传模型工作流_2100406899551330306.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json、视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json、视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json、视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json、视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AFL:AudioMixStems`
-- `AudioSeparation`
-- `AudioTrim`
-- `LoadAudio`
-- `RunningHubRVCVoiceConversion`
-- `SaveAudio`
+全部 11 个 workflow 都包含：
+- `PreviewAny`
+- `RH_Veo3_Text2Video`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHubRVCZipModelLoader` —— 4/7 个有
-- `RunningHubRVCModelLoader` —— 3/7 个有
-- `LoadImage` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
+- `Text _O` —— 1/11 个有
 
 ## 典型参数
 
@@ -46,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：AFL:AudioMixStems、RunningHubRVCModelLoader、RunningHubRVCVoiceConversion、RunningHubRVCZipModelLoader
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

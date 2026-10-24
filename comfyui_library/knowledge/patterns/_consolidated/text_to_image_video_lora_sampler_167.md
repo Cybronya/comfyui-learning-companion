@@ -3,72 +3,95 @@ name: text_to_image_video_lora_sampler_167
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.915
-common_nodes: [ACE_AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLatentImage, GrowMaskWithBlur, ImageAndMaskPreview, ImageFromBatch, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadSAM3Model, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PreviewImage, RH_LLMAPI_Pro_Node, RandomNoise, SAM3BBoxCollector, SAM3PointCollector, SAM3Segmentation, SAM3_TrackToMask, SAM3_VideoTrack, SamplerCustomAdvanced, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, easy convertAnything, easy int, solarL_SaveImagesToZip, ttN concat]
+coverage: 0.823333
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Concatenate, ComfyMathExpression, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelMemoryUsageFactorOverride, PT_H3ConcatAVLatent, PathchSageAttentionKJ, PixaromaResolution, PreviewImage, ProcessString, RHHiddenNodes, RandomNoise, ReferenceLatent, ResolutionSelector, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, Switch any [Crystools], Text, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3模型驱动视频换头视频生视频实现面部无缝替换，视频生视频方案_2107573037087420418.json, 视频生成/图生视频/MiniMax_H3模型驱动视频换头，视频生视频实现面部无缝替换_2106921543413620737.json, 视频生成/图生视频/minimax H3视频换头自动遮罩版｜换脸不露痕迹边缘自然_2103718058362757122.json]
+members: [视频生成/图生视频/Flux2 Klein 9B+MiniMax H3影像生成｜电影级分镜出图图生图_2089733601180082178.json, 视频生成/图生视频/Flux2 Klein 9B电影级分镜搭配MiniMax H3影像生成处理工具_2100993722208051201.json, 视频生成/图生视频/电影级分镜出图｜Flux2 Klein 9B + MiniMax H3 影像生成_2089299495866691585.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_167
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3模型驱动视频换头视频生视频实现面部无缝替换，视频生视频方案_2107573037087420418.json、视频生成/图生视频/MiniMax_H3模型驱动视频换头，视频生视频实现面部无缝替换_2106921543413620737.json、视频生成/图生视频/minimax H3视频换头自动遮罩版｜换脸不露痕迹边缘自然_2103718058362757122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Flux2 Klein 9B+MiniMax H3影像生成｜电影级分镜出图图生图_2089733601180082178.json、视频生成/图生视频/Flux2 Klein 9B电影级分镜搭配MiniMax H3影像生成处理工具_2100993722208051201.json、视频生成/图生视频/电影级分镜出图｜Flux2 Klein 9B + MiniMax H3 影像生成_2089299495866691585.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ACE_AudioCrop`
 - `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `GrowMaskWithBlur`
-- `ImageAndMaskPreview`
+- `Flux2Scheduler`
 - `ImageFromBatch`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadSAM3Model`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
+- `ModelAttentionBackend`
+- `ModelMemoryUsageFactorOverride`
+- `PT_H3ConcatAVLatent`
+- `PathchSageAttentionKJ`
+- `PixaromaResolution`
 - `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
+- `ProcessString`
+- `RHHiddenNodes`
 - `RandomNoise`
-- `SAM3BBoxCollector`
-- `SAM3PointCollector`
-- `SAM3Segmentation`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
+- `ReferenceLatent`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SimpleMath+`
+- `SaveImage`
+- `ShowText|pysssss`
+- `Switch any [Crystools]`
+- `Text`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `easy convertAnything`
-- `easy int`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `easy imageListToImageBatch`
+- `easy promptLine`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
-- `ttN concat`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `MiniMaxChunkFeedForward` —— 1/3 个有
+- `MiniMaxLowVRAMAttention` —— 1/3 个有
+- `ModelPreviewOverrideKJ` —— 1/3 个有
+- `PixaromaGetNode` —— 1/3 个有
+- `PixaromaLabel` —— 1/3 个有
+- `PixaromaSetNode` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 

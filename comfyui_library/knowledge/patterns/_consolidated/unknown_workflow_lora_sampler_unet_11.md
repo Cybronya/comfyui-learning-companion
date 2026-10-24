@@ -1,79 +1,85 @@
 ---
 name: unknown_workflow_lora_sampler_unet_11
 type: Unknown Workflow
-frequency: 11
-level: strong
-coverage: 0.978364
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 29
+level: moderate
+coverage: 0.749828
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/1963214327899721729.json, 图片生成/文生图/1988774900942909442.json, 图片生成/文生图/1988927261430648834.json, 图片生成/文生图/1989171870014517249.json, 图片生成/文生图/1989311154684129281.json, 图片生成/文生图/1989695013087047682.json, 图片生成/文生图/2511 多角度_2019257618123984898.json, 图片生成/文生图/71.tonnie-2512基础_2010330338651803650.json, 图片生成/文生图/Qwen Edit 2509新旅游飞机_1991073540537524226.json, 图片生成/文生图/Qwen Edit 2509未来科技_1990647676465274881.json, 图片生成/文生图/文生图对比Z-Image VS Qwen_2019752105942196226.json]
+members: [视频生成/图生视频/8步高质量极速Minimax H3开源版_2108184548386365441.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105262941045088257.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105264487803740162.json, 视频生成/图生视频/Dasiwa HybirdturboV1混合版_2094425018229944321.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2092127662033686529.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2100150349800755202.json, 视频生成/图生视频/H3 音频驱动｜双采短片版_2098724093511159810.json, 视频生成/图生视频/H3_高动态双采放大_2102818737027117058.json, 视频生成/图生视频/H3_高动态双采放大_2106167971315011585.json, 视频生成/图生视频/H3双采多参加速格斗工作流-_2097995370008764418.json, 视频生成/图生视频/MiniMax H3 Dasiwa HybirdV1turboV1+600EMA参考生视频V1_2094425009153466370.json, 视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json, 视频生成/图生视频/MiniMax H3-动态最强-参考生视频-V1_2094782408347447298.json, 视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-电商带货-参考生视频_2102717112467943425.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-参考生视频_2098795077903671298.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-电商带货-二采_2102718883990958081.json, 视频生成/图生视频/MiniMax+H3双采全能工作流V2-音频驱动数字人-参考生视频_2111113734084190209.json, 视频生成/图生视频/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100139084525166593.json, 视频生成/图生视频/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2101871299831357442.json, 视频生成/图生视频/全网最强！Miniimax文戏工作流！！！！_2094332513748611073.json, 视频生成/文生视频/(10eros v5版)MiniMax H3双采参考生视频_2099438471583719426.json, 视频生成/文生视频/MINIMAX H3 双采全能参考_2094111351902924801.json, 视频生成/文生视频/MiniMax H3 全能文武戏工作流全能工作流-文戏不油 武戏动态强_2104228828628475905.json, 视频生成/文生视频/MiniMax H3-动态最强-文生视频-V1_2094749351989043201.json, 视频生成/文生视频/【MINIMAX H3】武戏-高动态_极速高清_ 全自动输出_2104519856463900674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/1963214327899721729.json、图片生成/文生图/1988774900942909442.json、图片生成/文生图/1988927261430648834.json、图片生成/文生图/1989171870014517249.json、图片生成/文生图/1989311154684129281.json…）
+> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/8步高质量极速Minimax H3开源版_2108184548386365441.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105262941045088257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **样本数**：29
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CFGNorm`
+全部 29 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `ComfyMathExpression`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEditPlus` —— 10/11 个有
-- `EmptyLatentImage` —— 8/11 个有
-- `EmptySD3LatentImage` —— 3/11 个有
-- `LoadImage` —— 3/11 个有
-- `TextEncodeQwenImageEdit` —— 3/11 个有
-- `CLIPTextEncode` —— 2/11 个有
-- `AILab_QwenVL` —— 1/11 个有
-- `ImageScaleBy` —— 1/11 个有
-- `LoraLoader` —— 1/11 个有
-- `PreviewAny` —— 1/11 个有
-- `VAEEncode` —— 1/11 个有
-- `easy promptLine` —— 1/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 28/29 个有
+- `ResolutionSelector` —— 28/29 个有
+- `VHS_VideoCombine` —— 27/29 个有
+- `CR Prompt Text` —— 26/29 个有
+- `ModelAttentionBackend` —— 24/29 个有
+- `SolAttnMiniMax` —— 23/29 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 21/29 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 21/29 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 21/29 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 21/29 个有
+- `GetNode` —— 13/29 个有
+- `LoraLoaderModelOnly` —— 13/29 个有
+- `SetNode` —— 13/29 个有
+- `Float` —— 12/29 个有
+- `LoadAudio` —— 11/29 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/29 个有
+- `孤海注释` —— 6/29 个有
+- `PreviewImage` —— 5/29 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/29 个有
+- `PrimitiveStringMultiline` —— 3/29 个有
+- `ConcatTextOfUtils` —— 2/29 个有
+- `CreateVideo` —— 2/29 个有
+- `DuckHideNode` —— 2/29 个有
+- `EmptyImage` —— 2/29 个有
+- `SaveImage` —— 2/29 个有
+- `SaveVideo` —— 2/29 个有
+- `ImpactConditionalBranch` —— 1/29 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/29 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/29 个有
+- `PreviewAny` —— 1/29 个有
+- `RH_LLMAPI_Pro_Node` —— 1/29 个有
+- `easy int` —— 1/29 个有
+- `布尔孤海` —— 1/29 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 10 | 11 | 62% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 82% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 1152 | 1024 - 1280 | 8 | 89% |
-| 高度 | 1024 | 720 - 1280 | 8 | 76% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 10，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 82%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1152，观测区间 1024 - 1280，8 个样本，取值集中（一致性 89%）
-- 高度 中位数 1024，观测区间 720 - 1280，8 个样本
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,85 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_88
 type: Text To Image
-frequency: 11
+frequency: 15
 level: strong
-coverage: 0.851545
-common_nodes: [CLIPTextEncode, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LoraLoaderModelOnly, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.871867
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/人物风格摄影美少女 自动扩写 生图 1.0_1994976217612869633.json, 图片生成/文生图/美女模特 反推提示词 图片裂变 9宫格分镜图 洗图  Z-Image-Turbo D-OPSD_2056920485178462210.json, 图片生成/文生图/美少女量贩式生成_1994800940983181313.json, 图片生成/文生图/量贩版 ZIT-D-OPSD美少女文生图（自动化批量出图）_2066140658238316545.json, 图片生成/文生图/（小情绪量贩版）Z-Image Art自动扩写文生图V1_2017609951325196290.json, 图片生成/文生图/（贞贞-Coser量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2057773705002053634.json, 图片生成/文生图/（量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1994411563819864066.json, 图片生成/文生图/（量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2056786094817112066.json, 图片生成/文生图/（量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2065067678041198593.json, 图片生成/文生图/（量贩版）Z-image Art自动扩写文生图V1_2017609963115384833.json, 图片生成/文生图/（黑丝量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1994961305289285634.json]
+members: [视频生成/文生视频/Seedance2.0文生视频｜高质量视频生成工作流_2095607601827504130.json, 视频生成/文生视频/Seedance2.5图生视频工作流，高质量图像到视频生成方案_2103542632843669506.json, 视频生成/文生视频/Seedance2.5图生视频工作流｜高质量图像驱动视频生成_2097761537908887554.json, 视频生成/文生视频/Seedance2.5图生视频｜其它视频处理兼容｜首尾帧控制流畅自然_2102296652513103874.json, 视频生成/文生视频/Seedance2.5图生视频｜文生视频其它视频处理多面手_2097991912467816450.json, 视频生成/文生视频/Seedance2.5图生视频｜高清视频生成工作流制作_2096319929829126145.json, 视频生成/文生视频/Seedance2.5图生视频｜高质量AI视频生成新选择_2105123615518846977.json, 视频生成/文生视频/Seedance2.5多模态视频工作流，文生视频图生视频视频生视频全覆盖_2103545826760024066.json, 视频生成/文生视频/Seedance2.5多模态视频工作流｜文生图生视频多模式生成_2097763010654851074.json, 视频生成/文生视频/Seedance2.5多模态视频｜文生图生视频生视频全覆盖_2105126628564226050.json, 视频生成/文生视频/Seedance2.5多模态视频｜文生视频视频生视频图生视频_2097931258201460738.json, 视频生成/文生视频/minimax_ref_fl低显存工作流｜真实感图生视频生成_2097834306843537409.json, 视频生成/文生视频/万相3.0参考生视频图生视频处理生成工作流_2101042889143971841.json, 视频生成/文生视频/全能参考生视频2K版｜海螺MiniMaxH3官方多图音视频参考_2088745519744110594.json, 视频生成/文生视频/视频生成2KMiniMaxH3版ENG海螺_2087117391724634114.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_88
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/人物风格摄影美少女 自动扩写 生图 1.0_1994976217612869633.json、图片生成/文生图/美女模特 反推提示词 图片裂变 9宫格分镜图 洗图  Z-Image-Turbo D-OPSD_2056920485178462210.json、图片生成/文生图/美少女量贩式生成_1994800940983181313.json、图片生成/文生图/量贩版 ZIT-D-OPSD美少女文生图（自动化批量出图）_2066140658238316545.json、图片生成/文生图/（小情绪量贩版）Z-Image Art自动扩写文生图V1_2017609951325196290.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0文生视频｜高质量视频生成工作流_2095607601827504130.json、视频生成/文生视频/Seedance2.5图生视频工作流，高质量图像到视频生成方案_2103542632843669506.json、视频生成/文生视频/Seedance2.5图生视频工作流｜高质量图像驱动视频生成_2097761537908887554.json、视频生成/文生视频/Seedance2.5图生视频｜其它视频处理兼容｜首尾帧控制流畅自然_2102296652513103874.json、视频生成/文生视频/Seedance2.5图生视频｜文生视频其它视频处理多面手_2097991912467816450.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 15 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JDCN_StringToList`
+- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 10/11 个有
-- `LayerUtility: PurgeVRAM` —— 10/11 个有
-- `Text Concatenate` —— 10/11 个有
-- `CR Text` —— 9/11 个有
-- `Seed (rgthree)` —— 9/11 个有
-- `CLIPLoader` —— 7/11 个有
-- `PreviewAny` —— 5/11 个有
-- `ClipLoaderGGUF` —— 4/11 个有
-- `QwenImageEngineer` —— 4/11 个有
-- `easy cleanGpuUsed` —— 4/11 个有
-- `LoadImage` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `JjkText` —— 1/11 个有
-- `RHHiddenNodes` —— 1/11 个有
-- `RH_Captioner` —— 1/11 个有
-- `ShowText|pysssss` —— 1/11 个有
+- `LoadImage` —— 14/15 个有
+- `LoadAudio` —— 8/15 个有
+- `LoadVideo` —— 8/15 个有
+- `RH_BytedanceSeedance25TokenImageToVideo` —— 6/15 个有
+- `SaveImage` —— 6/15 个有
+- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 5/15 个有
+- `PlaySound|pysssss` —— 2/15 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 2/15 个有
+- `MuyeTextEditOutput` —— 1/15 个有
+- `RH_AlibabaWan30ReferenceToVideo` —— 1/15 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 11 | 11 | 93% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 91% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 1080 | 1080 - 1920 | 11 | 79% |
-| 高度 | 1920 | 1080 - 1920 | 11 | 87% |
+| 采样步数 | 4 | 4 - 4 | 15 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 15 | 100% |
+| 采样算法 | er_sde | - | 15 | 100% |
+| 调度器 | beta | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 宽度 | 80 | 80 - 80 | 15 | 100% |
+| 高度 | 80 | 80 - 80 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 11，11 个样本，取值集中（一致性 93%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 91%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 1080 - 1920，11 个样本
-- 高度 中位数 1920，观测区间 1080 - 1920，11 个样本，取值集中（一致性 87%）
+- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，15 个样本，一致性 100%
+- 调度器 最常用 beta，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

@@ -1,46 +1,37 @@
 ---
 name: unknown_workflow_generic_445
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.69325
-common_nodes: [CR Text, GetTextFromJson, HeartMuLa_Generate, ImpactSwitch, Int, LoadJsonFromText, RH_LLMAPI_NODE, SaveAudio, Text Concatenate, Text Find and Replace, Text Multiline, TextBox, Textbox, easy showAnything]
+coverage: 0.719167
+common_nodes: [LoadImage, PreviewAny, PreviewImage, RHLLMChatNode, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014218264380973058.json, 音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014237962199900161.json, 音频生成/音频生成/HeartMuLa音乐生成_2014687206341877762.json, 音频生成/音频生成/HeartMuLa音乐生成_2026198043434950657.json]
+members: [图片生成/文生图/QWen 3.8 MAX （可加视频） 广告30秒 产品类反推脚本_2101223772710854657.json, 图片生成/文生图/gemini3.6_2084955304915197954.json, 图片生成/文生图/gemini3.6（可加视频）_2088834108863631361.json, 图片生成/文生图/gemini3.6（可加视频）小空间_2088606380054896642.json, 图片生成/文生图/gemini3.6（视频 6图 双文本）_2096469518322327554.json, 图片生成/文生图/大峰 openai_全能图片G-6-astra- 多 图_2098263168698114049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_445
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014218264380973058.json、音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014237962199900161.json、音频生成/音频生成/HeartMuLa音乐生成_2014687206341877762.json、音频生成/音频生成/HeartMuLa音乐生成_2026198043434950657.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/QWen 3.8 MAX （可加视频） 广告30秒 产品类反推脚本_2101223772710854657.json、图片生成/文生图/gemini3.6_2084955304915197954.json、图片生成/文生图/gemini3.6（可加视频）_2088834108863631361.json、图片生成/文生图/gemini3.6（可加视频）小空间_2088606380054896642.json、图片生成/文生图/gemini3.6（视频 6图 双文本）_2096469518322327554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `GetTextFromJson`
-- `HeartMuLa_Generate`
-- `ImpactSwitch`
-- `Int`
-- `LoadJsonFromText`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `Text Concatenate`
-- `Text Find and Replace`
-- `Text Multiline`
-- `TextBox`
-- `Textbox`
-- `easy showAnything`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `RHLLMChatNode`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `LoadVideo` —— 5/6 个有
+- `MuyeTextEditOutput` —— 2/6 个有
 
 ## 典型参数
 

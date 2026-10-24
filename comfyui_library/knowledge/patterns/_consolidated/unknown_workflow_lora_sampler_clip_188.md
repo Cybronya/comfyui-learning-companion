@@ -1,68 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_188
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.929
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, KSamplerAdvanced, Lora Loader Stack (rgthree), ModelSamplingAuraFlow, SaveImage, UNETLoader, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 3
+level: moderate
+coverage: 0.335667
+common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, ColorMatchV2, ComfyMathExpression, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, FluxKVCache, GetImageSize, GetNode, Image Comparer (rgthree), ImageMergeTileList, ImageScale, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewAny, PreviewImage, PrimitiveFloat, PrimitiveInt, ReferenceLatent, SamplerCustom, SaveImage, SetNode, SplitImageToTileList, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/神里绫华  zimage_2014941793854427137.json, 图片生成/文生图/雷电将军zimage 生成_2009993579749449730.json]
+members: [图片生成/图生图/细节不清晰重塑、放大-Klein 9B_2066683823601049601.json, 图片生成/图生图/细节不清晰重塑、放大-Klein_9B_2095767647412645890.json, 图片生成/图生图/细节不清晰重塑、放大-Klein_9B_2096061805943672833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_188
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/神里绫华  zimage_2014941793854427137.json、图片生成/文生图/雷电将军zimage 生成_2009993579749449730.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/细节不清晰重塑、放大-Klein 9B_2066683823601049601.json、图片生成/图生图/细节不清晰重塑、放大-Klein_9B_2095767647412645890.json、图片生成/图生图/细节不清晰重塑、放大-Klein_9B_2096061805943672833.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：34%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGNorm`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `KSamplerAdvanced`
-- `Lora Loader Stack (rgthree)`
-- `ModelSamplingAuraFlow`
+- `ColorMatchV2`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxKVCache`
+- `GetImageSize`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageMergeTileList`
+- `ImageScale`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `ReferenceLatent`
+- `SamplerCustom`
 - `SaveImage`
+- `SetNode`
+- `SplitImageToTileList`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 9 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | sa_solver | - | 2 | 100% |
-| 重绘幅度 | ddim_uniform | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver，2 个样本，一致性 100%
-- 重绘幅度 最常用 ddim_uniform，2 个样本，一致性 100%
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 高发问题（1/2 个样本）：发现KSampler但没有VAEDecode
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

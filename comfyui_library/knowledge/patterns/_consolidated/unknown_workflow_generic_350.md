@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_350
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.75
-common_nodes: [LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage, 忽略多组孤海]
+coverage: 0.970714
+common_nodes: [CR Prompt Text, LoadImage, SaveImage]
 problems: []
-missing: [忽略多组孤海]
-members: [图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json, 图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json, 图片生成/图生图/2098218264106201090.json, 图片生成/图生图/2098237558626017281.json]
+missing: []
+members: [图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json, 图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json, 图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json, 图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json, 图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json, 图片生成/文生图/正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2101536463837024257.json, 图片生成/文生图/（RH版）即梦4.5电商商品拍摄场图工作流(白底图生成场景图4K) V1.0_1998105602192736257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_350
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json、图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json、图片生成/图生图/2098218264106201090.json、图片生成/图生图/2098237558626017281.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json、图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json、图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json、图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json、图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
 - `SaveImage`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenFlareEdit` —— 2/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 2/4 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 5/7 个有
+- `RH_Jimeng4_Image2Image` —— 2/7 个有
 
 ## 典型参数
 
@@ -43,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：忽略多组孤海
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

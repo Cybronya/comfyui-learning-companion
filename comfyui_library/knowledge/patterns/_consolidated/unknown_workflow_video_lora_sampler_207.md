@@ -3,76 +3,72 @@ name: unknown_workflow_video_lora_sampler_207
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.652
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.875556
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1992627593610588161.json, 视频生成/图生视频/1985341047272316930.json, 视频生成/图生视频/1985248262460481537.json, 视频生成/图生视频/2057618532237664258.json, 视频生成/图生视频/1998600702769422338.json, 视频生成/图生视频/1983506887171842049.json, 视频生成/图生视频/1982104863096086530.json, 视频生成/图生视频/1981341961615474690.json, 视频生成/文生视频/6窗口-svi-film长视频生产_1983866504603172866.json]
+members: [视频生成/图生视频/(循环)SVI 2 Pro长视频动态强化版V1_2005541494670983170.json, 视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json, 视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json, 视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix图生长视频V3(动态逻辑强化)_2035643056212414465.json, 视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频手动提示词动态强化版V1_2011772862205534209.json, 视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频自动提示词动态强化版V1_2011765719033188353.json, 视频生成/图生视频/(循环-（自用）-动漫版)SVI 2 Pro Dasiwa V9长视频自动提示词动态强化版V1_2011775856401715201.json, 视频生成/图生视频/(（自用）肢体增强)SVI 2 Pro Smooth V2长视频动态强化版V1_2010976996687351810.json, 视频生成/图生视频/动漫专用-循环-长视频自动提示词-SVI 2 Pro Dasiwa V9_2012053341018263553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_207
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1992627593610588161.json、视频生成/图生视频/1985341047272316930.json、视频生成/图生视频/1985248262460481537.json、视频生成/图生视频/2057618532237664258.json、视频生成/图生视频/1998600702769422338.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(循环)SVI 2 Pro长视频动态强化版V1_2005541494670983170.json、视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json、视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json、视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix图生长视频V3(动态逻辑强化)_2035643056212414465.json、视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频手动提示词动态强化版V1_2011772862205534209.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `DiffusionModelLoaderKJ`
+- `ImageBatchExtendWithOverlap`
+- `Int`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RepeatImageBatch`
-- `SetNode`
+- `LoraLoaderModelOnly`
 - `SimpleMath+`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanImageToVideoSVIPro`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 8/9 个有
-- `CLIPVisionLoader` —— 7/9 个有
-- `WanVideoClipVisionEncode` —— 7/9 个有
-- `InvertMask` —— 6/9 个有
-- `WanVideoVACEStartToEndFrame` —— 6/9 个有
-- `ColorMatch` —— 5/9 个有
-- `WanVideoSetLoRAs` —— 5/9 个有
-- `CLIPLoader` —— 2/9 个有
-- `CLIPTextEncode` —— 2/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `VRAM_Debug` —— 2/9 个有
-- `WanVideoTextEmbedBridge` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `String Literal` —— 1/9 个有
-- `Text Load Line From File` —— 1/9 个有
-- `easy forLoopEnd` —— 1/9 个有
-- `easy forLoopStart` —— 1/9 个有
-- `easy promptLine` —— 1/9 个有
+- `> Text Replace` —— 4/9 个有
+- `CR Prompt Text` —— 4/9 个有
+- `CR Text Concatenate` —— 4/9 个有
+- `ProcessString` —— 4/9 个有
+- `Qwen3_VQA` —— 4/9 个有
+- `TextPreview` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `SomethingToString` —— 3/9 个有
+- `Split String` —— 3/9 个有
+- `DuckHideNode` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `TT_img_enc` —— 2/9 个有
+- `TT_img_enc_v2` —— 2/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 9 | 56% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
+| 采样算法 | 3.5 | 1 - 3.5 | 9 | 48% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -80,4 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，9 个样本，一致性 56%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

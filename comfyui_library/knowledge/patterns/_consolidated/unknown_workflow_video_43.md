@@ -1,38 +1,43 @@
 ---
 name: unknown_workflow_video_43
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [SeedVR2, SeedVR2BlockSwap, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.85875
+common_nodes: [VHS_LoadVideo, VHS_VideoCombine, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode]
 problems: []
 missing: []
-members: [数字人/数字人/seedvr2超分_2104485159268605953.json, 视频生成/图生视频/1999045310397734913.json, 视频生成/图生视频/视频高清放大_2083505713627877378.json]
+members: [音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json, 音频生成/音频生成/Woosh音效生成_2049036424091013121.json, 音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json, 音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_43
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/seedvr2超分_2104485159268605953.json、视频生成/图生视频/1999045310397734913.json、视频生成/图生视频/视频高清放大_2083505713627877378.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json、音频生成/音频生成/Woosh音效生成_2049036424091013121.json、音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json、音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+全部 4 个 workflow 都包含：
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WooshLoadFlow`
+- `WooshLoadVideo`
+- `WooshSample`
+- `WooshTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `SeedVR2ExtraArgs` —— 2/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `YC_ShowText` —— 1/4 个有
 
 ## 典型参数
 

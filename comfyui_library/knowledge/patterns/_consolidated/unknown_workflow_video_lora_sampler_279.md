@@ -1,44 +1,45 @@
 ---
 name: unknown_workflow_video_lora_sampler_279
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.5925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.888571
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/动态壁纸生成-Minimax_h3_2095801933113155586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json, 视频生成/文生视频/MinimaxH3+音频驱动多参_2092941359513694209.json, 视频生成/文生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json]
+members: [图片生成/反推提示词/H3单采_2106693127930212353.json, 图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json, 图片生成/图生图/H3高清快速出视频_2110660601948233729.json, 视频生成/图生视频/H3工作流最优解_2104970789329133569.json, 视频生成/图生视频/Minimax H3视频 完美人物替换！_2109512582699769858.json, 视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json, 视频生成/文生视频/H3官流（终极版）_2105121771757334530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_279
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动态壁纸生成-Minimax_h3_2095801933113155586.json、视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json、视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/H3单采_2106693127930212353.json、图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json、图片生成/图生图/H3高清快速出视频_2110660601948233729.json、视频生成/图生视频/H3工作流最优解_2104970789329133569.json、视频生成/图生视频/Minimax H3视频 完美人物替换！_2109512582699769858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `CreateVideo`
-- `GetNode`
+- `ComfyMathExpression`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ManualSigmas`
 - `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
 - `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -47,30 +48,21 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 7/8 个有
-- `PlaySound|pysssss` —— 7/8 个有
-- `PrimitiveInt` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 7/8 个有
-- `SaveVideo` —— 7/8 个有
-- `VHS_VideoInfo` —— 7/8 个有
-- `easy anythingIndexSwitch` —— 7/8 个有
-- `easy int` —— 7/8 个有
-- `Bookmark (rgthree)` —— 6/8 个有
-- `GetImageSizeAndCount` —— 6/8 个有
-- `Label (rgthree)` —— 6/8 个有
-- `EmptyImage` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `ComfyMathExpression` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `LoadAudio` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `MiniMaxH3PromptEnhancerT8` —— 1/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `SoundFlow_GetLength` —— 1/8 个有
-- `T8LLMProviderConfig` —— 1/8 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `CR Prompt Text` —— 4/7 个有
+- `PreviewAny` —— 4/7 个有
+- `BatchImagesNode` —— 2/7 个有
+- `CreateVideo` —— 2/7 个有
+- `JjkText` —— 2/7 个有
+- `LTXVConcatAVLatent` —— 2/7 个有
+- `LTXVSeparateAVLatent` —— 2/7 个有
+- `LayerUtility: TextJoin` —— 2/7 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 2/7 个有
+- `RH_LLMAPI_Pro_Node` —— 2/7 个有
+- `SaveVideo` —— 2/7 个有
+- `llama_cpp_instruct_adv` —— 2/7 个有
+- `llama_cpp_model_loader` —— 2/7 个有
+- `llama_cpp_parameters` —— 2/7 个有
 
 ## 典型参数
 

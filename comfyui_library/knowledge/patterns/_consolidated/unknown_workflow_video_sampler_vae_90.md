@@ -7,13 +7,13 @@ coverage: 0.9385
 common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949673530895540225.json, 视频生成/图生视频/1947087609853685762.json, 视频生成/图生视频/1936289758157115393.json, 视频生成/图生视频/1934598793851510785.json, 视频生成/图生视频/1937875802723913730.json, 视频生成/图生视频/1935009209383886850.json]
+members: [视频生成/图生视频/Wan2.1 Fusion X 图生视频_1949673530895540225.json, 视频生成/图生视频/fusionx 动漫视频 图生视频_1947087609853685762.json, 视频生成/图生视频/wan2.1-FusionX+NAG超高清图生视频_1936289758157115393.json, 视频生成/图生视频/wan2.1FusionX超高清图生视频_1934598793851510785.json, 视频生成/图生视频/高清图生视频工作流-Wan fusionX_1937875802723913730.json, 视频生成/图生视频/龙明wan2.1 图生视频fusionX+NAG_1935009209383886850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_90
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1949673530895540225.json、视频生成/图生视频/1947087609853685762.json、视频生成/图生视频/1936289758157115393.json、视频生成/图生视频/1934598793851510785.json、视频生成/图生视频/1937875802723913730.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Fusion X 图生视频_1949673530895540225.json、视频生成/图生视频/fusionx 动漫视频 图生视频_1947087609853685762.json、视频生成/图生视频/wan2.1-FusionX+NAG超高清图生视频_1936289758157115393.json、视频生成/图生视频/wan2.1FusionX超高清图生视频_1934598793851510785.json、视频生成/图生视频/高清图生视频工作流-Wan fusionX_1937875802723913730.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6

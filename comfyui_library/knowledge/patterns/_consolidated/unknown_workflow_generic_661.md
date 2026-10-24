@@ -1,38 +1,46 @@
 ---
 name: unknown_workflow_generic_661
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, IndexTTS2EmotionVectorNode, LoadAudio, SaveAudio, SaveAudioMP3]
+coverage: 0.8295
+common_nodes: [CR Text, CR Text Concatenate, EG_ZZ_TMTX, GrowMaskWithBlur, ImageResize+, Int, JjkText, LoadImage, PreviewAny, PreviewImage, Qwen3_VQA_Plus, RH_Nano_Banana2_Image2Image, RMBG, Sa2VANodeTpl, SaveImage, SimpleMath+, easy imageCropFromMask, ttN concat]
 problems: []
 missing: []
-members: [音频生成/音频生成/单人声音克隆_2042997567839014913.json, 音频生成/音频生成/声音克隆-Index-TTS2_2013603529667121154.json, 音频生成/音频生成/声音克隆-Index-TTS2（含1和1.5版本）_1980577292449660930.json]
+members: [图片生成/图生图/Z一键IP文创衍生品_1992810214971822081.json, 图片生成/图生图/一键文创产品衍生_2034878693360803842.json, 图片生成/图生图/不纳纳2 一键IP文创衍生品_2028743374336954370.json, 图片生成/图生图/图生图 文创产品衍生_2034547988042878978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_661
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/单人声音克隆_2042997567839014913.json、音频生成/音频生成/声音克隆-Index-TTS2_2013603529667121154.json、音频生成/音频生成/声音克隆-Index-TTS2（含1和1.5版本）_1980577292449660930.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Z一键IP文创衍生品_1992810214971822081.json、图片生成/图生图/一键文创产品衍生_2034878693360803842.json、图片生成/图生图/不纳纳2 一键IP文创衍生品_2028743374336954370.json、图片生成/图生图/图生图 文创产品衍生_2034547988042878978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2EmotionVectorNode`
-- `LoadAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 2/3 个有
-- `IndexTTSNode` —— 2/3 个有
-- `IndexTTS2BaseNode` —— 1/3 个有
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `CR Text Concatenate`
+- `EG_ZZ_TMTX`
+- `GrowMaskWithBlur`
+- `ImageResize+`
+- `Int`
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `Qwen3_VQA_Plus`
+- `RH_Nano_Banana2_Image2Image`
+- `RMBG`
+- `Sa2VANodeTpl`
+- `SaveImage`
+- `SimpleMath+`
+- `easy imageCropFromMask`
+- `ttN concat`
 
 ## 典型参数
 

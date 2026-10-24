@@ -3,55 +3,57 @@ name: unknown_workflow_video_upscale_sampler_22
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.939
-common_nodes: [DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, INTConstant, ImagePadKJ, ImageResizeKJ, ImageSmartSharpen+, ImageUpscaleWithModel, Int, LoadImage, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9185
+common_nodes: [ColorMatch, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, ImageConcanate, ImageSmartSharpen+, ImageUpscaleWithModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934212623216898050.json, 视频生成/图生视频/1928322385223794689.json]
+members: [视频生成/图生视频/图生视频FX模型3分钟急速版_1934534192887701505.json, 视频生成/图生视频/超级图生视频人物一致1分钟生成_1933355475016818690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1934212623216898050.json、视频生成/图生视频/1928322385223794689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频FX模型3分钟急速版_1934534192887701505.json、视频生成/图生视频/超级图生视频人物一致1分钟生成_1933355475016818690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ColorMatch`
 - `DownloadAndLoadGIMMVFIModel`
 - `Fast Groups Bypasser (rgthree)`
 - `GIMMVFI_interpolate`
-- `INTConstant`
-- `ImagePadKJ`
-- `ImageResizeKJ`
+- `ImageConcanate`
 - `ImageSmartSharpen+`
 - `ImageUpscaleWithModel`
-- `Int`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `Text Multiline`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `WanVideoBlockSwap` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoMagCache` —— 1/2 个有
 
 ## 典型参数
 

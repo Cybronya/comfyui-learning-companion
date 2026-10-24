@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_767
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7445
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.72075
+common_nodes: [CR Text, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-官方稳定版G2_2070142049076211713.json, 图片生成/文生图/全能图片G-2.0官方版_2098380300295430145.json]
+members: [视频生成/图生视频/图生视频GVideo3（2毛钱一条支持1080p）支持真人_1999003099111022593.json, 视频生成/图生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099748783100878849.json, 视频生成/文生视频/+Video3+文生视频_2001282743042535426.json, 视频生成/文生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099368852604940290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_767
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-官方稳定版G2_2070142049076211713.json、图片生成/文生图/全能图片G-2.0官方版_2098380300295430145.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/图生视频GVideo3（2毛钱一条支持1080p）支持真人_1999003099111022593.json、视频生成/图生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099748783100878849.json、视频生成/文生视频/+Video3+文生视频_2001282743042535426.json、视频生成/文生视频/秒出视频fal MiniMax H3 Max Turbo 图生视频 首尾帧生视频+全节点注释_2099368852604940290.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+全部 4 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2OfficialTextToImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `RH_Grok_Video3` —— 2/4 个有
+- `RH_MinimaxH3MaxTurboImageToVideo` —— 2/4 个有
 
 ## 典型参数
 
@@ -43,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

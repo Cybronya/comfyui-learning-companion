@@ -3,58 +3,61 @@ name: unknown_workflow_video_lora_sampler_920
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.969
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanMoeKSampler]
+coverage: 0.976
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, GetVideoComponents, ImageScaleToMaxDimension, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadVideo, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SaveVideo, VAEEncodeTiled, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
 problems: []
 missing: []
-members: [视频生成/图生视频/2053411602111709186.json, 视频生成/文生视频/首尾帧_图生视频LightX2V快速流_2010388092464664578.json]
+members: [视频生成/文生视频/LTX 2.3 循环采样放大优化_2041055276513628161.json, 视频生成/文生视频/LTX-2视频放大_2010029707667968001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_920
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2053411602111709186.json、视频生成/文生视频/首尾帧_图生视频LightX2V快速流_2010388092464664578.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 循环采样放大优化_2041055276513628161.json、视频生成/文生视频/LTX-2视频放大_2010029707667968001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
-- `LoadImage`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
+- `GetVideoComponents`
+- `ImageScaleToMaxDimension`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVConditioning`
+- `LTXVLoopingSampler`
+- `LTXVSpatioTemporalTiledVAEDecode`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SaveVideo`
+- `VAEEncodeTiled`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanMoeKSampler`
+- `VHS_VideoInfoLoaded`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `wanBlockSwap` —— 1/2 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `DisTorchPurgeVRAMV2` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `DualCLIPLoaderGGUF` —— 1/2 个有
+- `LTX2_NAG` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `UnetLoaderGGUF` —— 1/2 个有
+- `VAELoaderKJ` —— 1/2 个有
+- `VRAMReserver` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 5 | - | 2 | 80% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | euler | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,9 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

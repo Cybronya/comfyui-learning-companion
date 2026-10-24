@@ -3,72 +3,59 @@ name: unknown_workflow_video_lora_sampler_191
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.688
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8591
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1970143422839463937.json, 视频生成/图生视频/1982723691039596546.json, 视频生成/图生视频/1988525080521129985.json, 视频生成/图生视频/1960547168962641921.json, 视频生成/图生视频/1977757445852463106.json, 视频生成/图生视频/2012499953494528001.json, 视频生成/图生视频/1965116783160082434.json, 视频生成/图生视频/1965715999553159169.json, 音频生成/音频生成/infiniteTalk（音色克隆+音频生成）_1970169527449382913.json, 音频生成/音频生成/数字人TTS2+infiniteTalk高清电影对嘴型_1965919852949082113.json]
+members: [视频生成/图生视频/SCAIL 2 长视频动作迁移最新顶级自适应无水印_2070317114317164545.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2072165934445457410.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2072211393461448705.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2072215800739614722.json, 视频生成/图生视频/Scail2视频角色替换TTP单图版_2083759017431756801.json, 视频生成/图生视频/Scail2视频角色替换TTP多图参考版_2072151352708517889.json, 视频生成/图生视频/scail2 动作迁移_测试_2069624919830384641.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2071482062011453441.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2072216679937036289.json, 视频生成/图生视频/scail2视频角色替换TTP多参版_2083763864499474433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_191
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1970143422839463937.json、视频生成/图生视频/1982723691039596546.json、视频生成/图生视频/1988525080521129985.json、视频生成/图生视频/1960547168962641921.json、视频生成/图生视频/1977757445852463106.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/SCAIL 2 长视频动作迁移最新顶级自适应无水印_2070317114317164545.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2072165934445457410.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2072211393461448705.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2072215800739614722.json、视频生成/图生视频/Scail2视频角色替换TTP单图版_2083759017431756801.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `CheckpointLoaderSimple`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `KSamplerSelect`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 9/10 个有
-- `AudioCrop` —— 8/10 个有
-- `AudioSeparation` —— 8/10 个有
-- `INTConstant` —— 8/10 个有
-- `PreviewAny` —— 8/10 个有
-- `PreviewAudio` —— 6/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/10 个有
-- `CR Text` —— 4/10 个有
-- `IndexTTS2Run` —— 4/10 个有
-- `MegaTTS3` —— 4/10 个有
-- `ImageUpscaleWithModel` —— 3/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/10 个有
-- `UpscaleModelLoader` —— 3/10 个有
-- `ImpactSwitch` —— 2/10 个有
-- `IndexTTS2_Emotion` —— 2/10 个有
-- `JWInteger` —— 2/10 个有
-- `PrimitiveFloat` —— 2/10 个有
-- `RH_Translator` —— 2/10 个有
-- `JjkText` —— 1/10 个有
-- `MultiLinePromptIndex` —— 1/10 个有
-- `SaveAudioMP3` —— 1/10 个有
-- `easy compare` —— 1/10 个有
-- `easy ifElse` —— 1/10 个有
-- `easy imageSize` —— 1/10 个有
+- `DiffusionModelLoaderKJ` —— 9/10 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `CR Text` —— 8/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `SetNode` —— 2/10 个有
+- `VHS_VideoInfo` —— 2/10 个有
+- `GetNode` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `ImageResize+` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PreviewAny` —— 1/10 个有
+- `Primitive integer [Crystools]` —— 1/10 个有
+- `SimpleMath+` —— 1/10 个有
+- `UNETLoader` —— 1/10 个有
+- `easy anythingIndexSwitch` —— 1/10 个有
 
 ## 典型参数
 

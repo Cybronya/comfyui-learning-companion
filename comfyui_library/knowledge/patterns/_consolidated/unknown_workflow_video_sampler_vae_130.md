@@ -3,58 +3,70 @@ name: unknown_workflow_video_sampler_vae_130
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.842
-common_nodes: [CLIPVisionLoader, CR Text, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.445
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoImageToVideoSkyreelsv3_audio, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1936026655389306882.json, 视频生成/图生视频/1985179323869052930.json, 视频生成/图生视频/2058042457992028161.json, 视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json]
+members: [视频生成/图生视频/SkyReels-V3 音频驱动数字人 对口型 skyreels_2027275262676705281.json, 视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2019435864274771969.json, 视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2058833651323990018.json, 视频生成/文生视频/02-SkyReelsV3_TalkingAvatar 数字人+唇形同步 RH工作流_2029563194267672578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_130
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1936026655389306882.json、视频生成/图生视频/1985179323869052930.json、视频生成/图生视频/2058042457992028161.json、视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/SkyReels-V3 音频驱动数字人 对口型 skyreels_2027275262676705281.json、视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2019435864274771969.json、视频生成/图生视频/wanvideo_2_1_14B_A2V_SkyReelsV31_2058833651323990018.json、视频生成/文生视频/02-SkyReelsV3_TalkingAvatar 数字人+唇形同步 RH工作流_2029563194267672578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Text`
-- `ImpactInt`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SimpleMath+`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoSkyreelsv3_audio`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoPassImagesFromSamples`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 3/4 个有
-- `Qwen3VL_Advanced` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `LayerColor: ColorAdapter` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `WanVideoLoraSelectMulti` —— 1/4 个有
-- `WanVideoMagCache` —— 1/4 个有
-- `WanVideoTextEncode` —— 1/4 个有
-- `WanVideoVRAMManagement` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ColorMatch` —— 2/4 个有
+- `DownloadAndLoadWav2VecModel` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `AudioCrop` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClone` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClonePrompt` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `Qwen3ASRLoader` —— 1/4 个有
+- `Qwen3ASRTranscribe` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `Textbox` —— 1/4 个有
+- `TrimAudioDuration` —— 1/4 个有
 
 ## 典型参数
 

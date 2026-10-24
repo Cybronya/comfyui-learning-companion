@@ -7,13 +7,13 @@ coverage: 0.924667
 common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageScaleToMegapixels, ImpactInt, LoadWanVideoT5TextEncoder, SimpleMath+, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1936402446031949825.json, 视频生成/文生视频/1934859086565711873.json, 视频生成/文生视频/1935263970838106114.json]
+members: [视频生成/文生视频/Wan2.1 14B FusionX 图生视频高清极速简化版-StarAI_1936402446031949825.json, 视频生成/文生视频/🥪FusionX 文生视频 自动扩写润色 超清臻享版🥪_1934859086565711873.json, 视频生成/文生视频/🥪【Wan2.1视频】lightx2v 文生视频  超清加速版🥪_1935263970838106114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_13
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1936402446031949825.json、视频生成/文生视频/1934859086565711873.json、视频生成/文生视频/1935263970838106114.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.1 14B FusionX 图生视频高清极速简化版-StarAI_1936402446031949825.json、视频生成/文生视频/🥪FusionX 文生视频 自动扩写润色 超清臻享版🥪_1934859086565711873.json、视频生成/文生视频/🥪【Wan2.1视频】lightx2v 文生视频  超清加速版🥪_1935263970838106114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

@@ -1,58 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_unet_200
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.91
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.815429
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PreviewAny, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json, 图片生成/文生图/z_image二采_2093223736949432322.json, 图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json]
+members: [图片生成/文生图/文生图 布局可控 Ideogram4！_2063268058420039682.json, 图片生成/文生图/文生图_ideogram4_t2i_2062724777403572226.json, 图片生成/文生图/文生图_ideogram4_t2i_2062789809533448193.json, 图片生成/文生图/文生图_ideogram4_t2i_2070037043585044481.json, 图片生成/文生图/自动版ideogram4生图_2064619048377344001.json, 图片生成/文生图/自动版ideogram4生图_2069077763297996801.json, 图片生成/文生图/设计师福音 文生图精准编辑  ideogram4_2063246111061663745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_200
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image文生图（多批次增加随机性）_2000461485551779841.json、图片生成/文生图/z_image二采_2093223736949432322.json、图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/文生图 布局可控 Ideogram4！_2063268058420039682.json、图片生成/文生图/文生图_ideogram4_t2i_2062724777403572226.json、图片生成/文生图/文生图_ideogram4_t2i_2062789809533448193.json、图片生成/文生图/文生图_ideogram4_t2i_2070037043585044481.json、图片生成/文生图/自动版ideogram4生图_2064619048377344001.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `PreviewAny`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LatentColorMatch` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `StringConcatenate` —— 5/7 个有
+- `TextGenerate` —— 5/7 个有
+- `CustomCombo` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `Ideogram4OptimizationsKJ` —— 2/7 个有
+- `Ideogram4PromptBuilderKJ` —— 2/7 个有
+- `ImpactSwitch` —— 2/7 个有
+- `KSampler` —— 2/7 个有
+- `LoadImage` —— 2/7 个有
+- `ModelSamplingAuraFlow` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `RH_LLMAPI_NODE` —— 2/7 个有
+- `Int` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 10 | 3 - 20 | 3 | 37% |
-| 采样算法 | 1 | 1 - 3 | 3 | 43% |
-| 调度器 | gradient_estimation | - | 3 | 33% |
-| 重绘幅度 | sgm_uniform | - | 3 | 67% |
-| 宽度 | 896 | 720 - 1024 | 3 | 86% |
-| 高度 | 1152 | 1024 - 1280 | 3 | 91% |
+| 采样步数 | 25 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 3 | - | 2 | 100% |
+| 采样算法 | res_multistep | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -60,11 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 3 - 20，3 个样本，取值分散，一致性仅 37%
-- 采样算法 中位数 1，观测区间 1 - 3，3 个样本，取值分散，一致性仅 43%
-- 调度器 最常用 gradient_estimation，3 个样本，一致性 33%
-- 重绘幅度 最常用 sgm_uniform，3 个样本，一致性 67%
-- 宽度 中位数 896，观测区间 720 - 1024，3 个样本，取值集中（一致性 86%）
-- 高度 中位数 1152，观测区间 1024 - 1280，3 个样本，取值集中（一致性 91%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

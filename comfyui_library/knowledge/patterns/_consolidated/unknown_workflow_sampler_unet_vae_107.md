@@ -1,65 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_107
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.745857
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.822667
+common_nodes: [CFGGuider, CLIPLoader, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR Text, Note Plus (mtb)]
-members: [图片生成/反推提示词/Qwen-Image-2.1 参考生图标准版_2104454950465138689.json, 图片生成/图生图/2101852516261646337.json, 图片生成/图生图/2101933499191222274.json, 图片生成/图生图/2102150751400316930.json, 图片生成/图生图/2102152565902368769.json, 图片生成/图生图/2102179241923272706.json, 图片生成/文生图/Qwen-Image-2.1 参考生图标准版_2104454950465138689.json]
+missing: []
+members: [图片生成/图生图/Flux.2 Klein 9B一键换装_2066148887555039234.json, 图片生成/图生图/Flux.2 Klein 身份一致性引导 单图参考工作流（图生图）简化版_2055121040795283457.json, 图片生成/图生图/Flux.2 Klein助力电商实现AI模特换装自由_ComfyUI工作流_2021893743644778498.json, 图片生成/图生图/Flux2 Klein 单图编辑 加速版 提示词P图_1993505563980087297.json, 图片生成/图生图/一键扩图！Flux2 klein 加速版！艾橘溪_2017423026056339458.json, 图片生成/图生图/全新Flux2 Klein 9B一键换装_2066832444266991617.json, 图片生成/图生图/全新换装 Flux2 Klein 加速版！B站艾橘溪_2015984915837362177.json, 图片生成/图生图/强行换装_2044612462158286849.json, 图片生成/图生图/超强换装加速版_2057401238215553026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_107
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/Qwen-Image-2.1 参考生图标准版_2104454950465138689.json、图片生成/图生图/2101852516261646337.json、图片生成/图生图/2101933499191222274.json、图片生成/图生图/2102150751400316930.json、图片生成/图生图/2102152565902368769.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux.2 Klein 9B一键换装_2066148887555039234.json、图片生成/图生图/Flux.2 Klein 身份一致性引导 单图参考工作流（图生图）简化版_2055121040795283457.json、图片生成/图生图/Flux.2 Klein助力电商实现AI模特换装自由_ComfyUI工作流_2021893743644778498.json、图片生成/图生图/Flux2 Klein 单图编辑 加速版 提示词P图_1993505563980087297.json、图片生成/图生图/一键扩图！Flux2 klein 加速版！艾橘溪_2017423026056339458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：75%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21Cache`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/7 个有
-- `ComfySwitchNode` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `Note Plus (mtb)` —— 3/7 个有
-- `孤海注释` —— 3/7 个有
-- `PreviewAny` —— 2/7 个有
-- `TextGenerate` —— 2/7 个有
-- `TextGenerateLTX2Prompt` —— 2/7 个有
-- `RHLLMChatNode` —— 1/7 个有
-- `StringConcatenate` —— 1/7 个有
-- `ZNGB_ImageBatchMulti` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `CLIPTextEncode` —— 7/9 个有
+- `GetNode` —— 7/9 个有
+- `SetNode` —— 7/9 个有
+- `Int` —— 6/9 个有
+- `ImageConcanate` —— 5/9 个有
+- `JjkText` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `easy imageRemBg` —— 3/9 个有
+- `CLIPTextEncodeBREAK` —— 2/9 个有
+- `Float` —— 1/9 个有
+- `GetImageSizeAndCount` —— 1/9 个有
+- `IdentityFeatureTransferV3` —— 1/9 个有
+- `Image Size to Number` —— 1/9 个有
+- `ImageResize+` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `PrimitiveString` —— 1/9 个有
+- `easy globalSeed` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 采样步数 | 25 | 25 - 50 | 7 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,11 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 50，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Note Plus (mtb)
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

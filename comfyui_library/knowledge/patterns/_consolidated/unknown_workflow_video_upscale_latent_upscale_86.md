@@ -2,78 +2,78 @@
 name: unknown_workflow_video_upscale_latent_upscale_86
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.944
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+level: moderate
+coverage: 0.413
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy float, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/2012162728634359809.json, 视频生成/图生视频/2013139812877864961.json, 视频生成/图生视频/2012200191926996993.json, 视频生成/文生视频/LTX-2.3+GGUF量化版生视频_2033507189314297858.json]
+members: [视频生成/图生视频/2采五段加速流_2104580181368336385.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json, 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_86
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2012162728634359809.json、视频生成/图生视频/2013139812877864961.json、视频生成/图生视频/2012200191926996993.json、视频生成/文生视频/LTX-2.3+GGUF量化版生视频_2033507189314297858.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2采五段加速流_2104580181368336385.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json、视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **可信度**：中等可信
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoaderGGUF`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `GetNode`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `UnetLoaderGGUF`
-- `VAEDecodeTiled`
+- `SetNode`
+- `SplitSigmas`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `easy float`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 3/4 个有
-- `LTXVAudioVAELoader` —— 3/4 个有
-- `LTXVCropGuides` —— 3/4 个有
-- `LTXVScheduler` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `LTXVImgToVideoInplace` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `CR Text` —— 1/4 个有
-- `ComfyMathExpression` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `LTXVFirstLastFrameControl_TTP` —— 1/4 个有
-- `LTXVImgToVideoConditionOnly` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `VAELoaderKJ` —— 1/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `AudioConcat` —— 2/4 个有
+- `GetImageRangeFromBatch` —— 2/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `MiniMaxH3AddGuide` —— 2/4 个有
+- `SaveAudio` —— 2/4 个有
+- `TrimAudioDuration` —— 2/4 个有
+- `BlockSparseAttention` —— 1/4 个有
+- `GH_AudioVideoMerger` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `LayerColor: ColorAdapter` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `ModelAttentionBackend` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `SeedVR2LoadDiTModel` —— 1/4 个有
+- `SeedVR2LoadVAEModel` —— 1/4 个有
+- `SeedVR2VideoUpscaler` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,5 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

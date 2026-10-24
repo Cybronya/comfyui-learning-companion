@@ -7,13 +7,13 @@ coverage: 0.548
 common_nodes: [AIO_Preprocessor, CR Upscale Image, DWPreprocessor, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJ, ImageSmartSharpen+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, MyOpenPoseNode, OpenposePreprocessor, PreviewImage, ReActorFaceSwap, ReActorRestoreFace, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEasyCache, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoRealisDanceLatents, WanVideoSLG, WanVideoSampler, WanVideoSetRadialAttention, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoUniAnimatePoseInput, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1947729409547583489.json, 视频生成/图生视频/1933449210870308865.json]
+members: [视频生成/图生视频/🈚️UniAnimate+u3c-Lightx2v-432帧伪HD版-转绘_跳舞_动作迁移-Wan_1947729409547583489.json, 视频生成/图生视频/🈚️UniAnimate-4步加速-姿势转绘_跳舞_动作迁移-Wan_1933449210870308865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1947729409547583489.json、视频生成/图生视频/1933449210870308865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🈚️UniAnimate+u3c-Lightx2v-432帧伪HD版-转绘_跳舞_动作迁移-Wan_1947729409547583489.json、视频生成/图生视频/🈚️UniAnimate-4步加速-姿势转绘_跳舞_动作迁移-Wan_1933449210870308865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

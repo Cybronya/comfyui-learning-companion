@@ -1,80 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_231
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.755
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, Fast Groups Bypasser (rgthree), KSampler, ModelSamplingAuraFlow, PrimitiveInt, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 4
+level: strong
+coverage: 0.76575
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, Label (rgthree), LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/ACE-Step-音乐生成_2096995718161584130.json, 音频生成/音频生成/ACE-Step1.5 XL-自动生成歌词歌曲_2046006292061364225.json]
+members: [图片生成/图生图/Qwen-2.1 五视图-透明背景_2103379501370658818.json, 图片生成/图生图/Qwen-2.1 图片编辑_2101893576153190401.json, 图片生成/图生图/Qwen-2.1cos角色生活自拍_2104713076036689921.json, 图片生成/图生图/Qwen-2.1多格漫画。_2104722627184128002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_231
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ACE-Step-音乐生成_2096995718161584130.json、音频生成/音频生成/ACE-Step1.5 XL-自动生成歌词歌曲_2046006292061364225.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-2.1 五视图-透明背景_2103379501370658818.json、图片生成/图生图/Qwen-2.1 图片编辑_2101893576153190401.json、图片生成/图生图/Qwen-2.1cos角色生活自拍_2104713076036689921.json、图片生成/图生图/Qwen-2.1多格漫画。_2104722627184128002.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
-- `Fast Groups Bypasser (rgthree)`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `EmptyLatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
-- `SaveAudioMP3`
-- `TextEncodeAceStepAudio1.5`
+- `Label (rgthree)`
+- `LoadImage`
+- `QwenImage21Cache`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioQualityEffects` —— 1/2 个有
-- `AudioQualityEnhancer` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy saveText` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `JjkText` —— 2/4 个有
+- `MultiTextConcatenate` —— 2/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `CR Prompt List` —— 1/4 个有
+- `HAIGC_SaveImagesToZip` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 25 | 25 - 40 | 4 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

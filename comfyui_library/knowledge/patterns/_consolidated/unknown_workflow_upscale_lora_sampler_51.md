@@ -1,66 +1,60 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_51
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.771
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, GetImageSizeAndCount, KSamplerSelect, LayerUtility: JoyCaption2, LayerUtility: JoyCaption2ExtraOptions, LoadImage, LoraLoader, Preview Chooser, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed Everywhere, ShowText|pysssss, Text Concatenate, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
+frequency: 4
+level: moderate
+coverage: 0.948
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, GetImageSize, ImageScaleBy, ImageScaleToTotalPixels, LoadImage, LoraLoaderModelOnly, RHHiddenNodes, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/flux现代都市女_1995513478788079618.json, 图片生成/文生图/flux现代都市男_1995533970475515906.json]
+members: [图片生成/图生图/老孙AI 一键OK 老照片修复_2088443376889847809.json, 图片生成/图生图/老孙AI多功能  老照片修复、去水印、偏色曝光_2088834155399442434.json, 图片生成/图生图/老照片修复 模糊变清晰_2052034476519243778.json, 图片生成/图生图/老郑一键老照片修复_2088421738475515906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_51
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux现代都市女_1995513478788079618.json、图片生成/文生图/flux现代都市男_1995533970475515906.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/老孙AI 一键OK 老照片修复_2088443376889847809.json、图片生成/图生图/老孙AI多功能  老照片修复、去水印、偏色曝光_2088834155399442434.json、图片生成/图生图/老照片修复 模糊变清晰_2052034476519243778.json、图片生成/图生图/老郑一键老照片修复_2088421738475515906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `GetImageSizeAndCount`
-- `KSamplerSelect`
-- `LayerUtility: JoyCaption2`
-- `LayerUtility: JoyCaption2ExtraOptions`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `GetImageSize`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `LoraLoader`
-- `Preview Chooser`
-- `PreviewImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `LoraLoaderModelOnly`
+- `RHHiddenNodes`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed Everywhere`
-- `ShowText|pysssss`
-- `Text Concatenate`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `Float` —— 2/4 个有
+- `easy getNode` —— 2/4 个有
+- `easy setNode` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

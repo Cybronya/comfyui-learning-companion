@@ -1,81 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_38
 type: Unknown Workflow
-frequency: 12
+frequency: 18
 level: moderate
-coverage: 0.548417
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, GetNode, KSamplerSelect, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter]
-problems: []
+coverage: 0.822278
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2_短剧场景＆角色-资产生成_2089612313283350530.json, 图片生成/文生图/Krea2版 短剧拍档支持场景和角色生成文生图_2088934511211012098.json, 图片生成/文生图/Krea2版 短剧拍档支持场景和角色生成文生图_2088960690924122114.json, 图片生成/文生图/Krea2版 短剧拍档支持场景和角色生成文生图_2093638279458545666.json, 图片生成/文生图/【傲雪AIGC】MiniMax+H3短剧角色+场景+道具多合一工作流_2093254371827077121.json, 图片生成/文生图/短剧场景V10(真实电影场景)_2090815269898899457.json, 图片生成/文生图/短剧拍档支持场景和角色V9.0(Krea2版) 加lora_2090724606184353793.json, 图片生成/文生图/短剧拍档支持场景和角色V9.0(Krea2版)_修复_2089636684685201409.json, 图片生成/文生图/短剧自动场景和角色V2.0_2087854471954128897.json, 数字人/数字人/短剧声音和场景_道具_角色V10(美国建模)_2090815289637298178.json, 音频生成/音频生成/短剧拍档支持场景和角色V12.2(V11继承版)_2087664915262824449.json, 音频生成/音频生成/资产生成-短剧拍档V13.1（预览编辑版）_2091445990522974210.json]
+members: [图片生成/文生图/QWen-Image中文渲染-ComfyUI_1952892525439873025.json, 图片生成/文生图/QWen-Image模型lora训练测试工作流_1963484613191749634.json, 图片生成/文生图/QWen2512基础文生图工作流+LoRA_2094427546531229697.json, 图片生成/文生图/Qwen 2512文生图_2007744253128089601.json, 图片生成/文生图/Qwen Image 中文文生图_1952919451249348609.json, 图片生成/文生图/Qwen Image 官方版超级加速-StarAI_1960034364899930114.json, 图片生成/文生图/Qwen image 2512文生图，恐怖悬疑动漫二次元，千问文生图推文，_2009994751235334145.json, 图片生成/文生图/Qwen-image文生图优化工作流_1953624443421687810.json, 图片生成/文生图/Qwen_千问-时尚穿搭_1995326727742218242.json, 图片生成/文生图/qianwen文生图_2055105575016509442.json, 图片生成/文生图/qwen-串珠艺术_1983771974319153153.json, 图片生成/文生图/千问提示词文生图_2033382870437339137.json, "图片生成/文生图/千问文生图(小即梦,内有提示词) 可能是目前市面上最强、最好用的中文文生图大模型，没有之一_2052654740084936705.json", "图片生成/文生图/千问文生图(小即梦,内有提示词)_1957736066219606018.json", "图片生成/文生图/千问文生图(比即梦厉害,内有提示词)_2065148780411973633.json", 图片生成/文生图/千问文生图_2052192004871860226.json, 图片生成/文生图/千问文生图_2053677771662086145.json, 图片生成/文生图/视频封面_2102206325894770690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_38
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Krea2_短剧场景＆角色-资产生成_2089612313283350530.json、图片生成/文生图/Krea2版 短剧拍档支持场景和角色生成文生图_2088934511211012098.json、图片生成/文生图/Krea2版 短剧拍档支持场景和角色生成文生图_2088960690924122114.json、图片生成/文生图/Krea2版 短剧拍档支持场景和角色生成文生图_2093638279458545666.json、图片生成/文生图/【傲雪AIGC】MiniMax+H3短剧角色+场景+道具多合一工作流_2093254371827077121.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/QWen-Image中文渲染-ComfyUI_1952892525439873025.json、图片生成/文生图/QWen-Image模型lora训练测试工作流_1963484613191749634.json、图片生成/文生图/QWen2512基础文生图工作流+LoRA_2094427546531229697.json、图片生成/文生图/Qwen 2512文生图_2007744253128089601.json、图片生成/文生图/Qwen Image 中文文生图_1952919451249348609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicScheduler`
+全部 18 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `GetNode`
-- `KSamplerSelect`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `RegexExtract`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 11/12 个有
-- `ShowText|pysssss` —— 11/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 9/12 个有
-- `easy positive` —— 7/12 个有
-- `ComfyMathExpression` —— 5/12 个有
-- `FB_Qwen3TTSVoiceDesign` —— 5/12 个有
-- `LoraLoaderModelOnly` —— 5/12 个有
-- `SaveAudio` —— 5/12 个有
-- `StringConcatenate` —— 5/12 个有
-- `StringReplace` —— 5/12 个有
-- `ModelAttentionBackend` —— 3/12 个有
-- `BasicGuider` —— 1/12 个有
-- `LoadImage` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `YUAN_TXTPreviewContent` —— 1/12 个有
-- `YUAN_TXTReplace` —— 1/12 个有
-- `孤海注释` —— 1/12 个有
+- `EmptySD3LatentImage` —— 16/18 个有
+- `CR Text` —— 13/18 个有
+- `Int` —— 12/18 个有
+- `ImpactInt` —— 10/18 个有
+- `Seed (rgthree)` —— 10/18 个有
+- `GetNode` —— 8/18 个有
+- `SetNode` —— 8/18 个有
+- `LoraLoaderModelOnly` —— 7/18 个有
+- `easy cleanGpuUsed` —— 4/18 个有
+- `CR SDXL Aspect Ratio` —— 2/18 个有
+- `LoadImage` —— 2/18 个有
+- `ModelPatchTorchSettings` —— 1/18 个有
+- `Note Plus (mtb)` —— 1/18 个有
+- `PathchSageAttentionKJ` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1080 - 1920 | 12 | 74% |
-| 高度 | 1920 | 1080 - 1920 | 12 | 83% |
+| 采样步数 | 20 | 8 - 20 | 18 | 72% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 18 | 57% |
+| 采样算法 | euler | - | 18 | 100% |
+| 调度器 | simple | - | 18 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1080 - 1920，12 个样本
-- 高度 中位数 1920，观测区间 1080 - 1920，12 个样本，取值集中（一致性 83%）
+- 采样步数 中位数 20，观测区间 8 - 20，18 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，18 个样本
+- 采样算法 最常用 euler，18 个样本，一致性 100%
+- 调度器 最常用 simple，18 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）

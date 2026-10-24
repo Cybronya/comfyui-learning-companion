@@ -1,87 +1,77 @@
 ---
 name: text_to_image_upscale_lora_sampler_12
 type: Text To Image
-frequency: 7
+frequency: 12
 level: moderate
-coverage: 0.920857
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), ImageResize+, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, VAEDecode, easy cleanGpuUsed]
+coverage: 0.89325
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image-AIO超真实极致放大8K画质_2072147469131149314.json, 图片生成/文生图/krea2基础文生图高清_2102596196979269634.json, 图片生成/文生图/krea2文生图高清_2081557717600260097.json, 图片生成/文生图/krea2文生图高清_2081698530154082306.json, 图片生成/文生图/文生图Zimage极致放大_2071861851847221250.json, 图片生成/文生图/文生图Zimage极致放大_2071880803600125954.json, 视频生成/文生视频/Z-image-AIO超真实极致放大8K画质_1999037874991456257.json]
+members: [图片生成/文生图/LEO-Qwen千问文生图+一键自动角色三视图工作流_2066384439432802305.json, 图片生成/文生图/QWEN2512文生图（4步）极速_2008801134533677058.json, 图片生成/文生图/QWEN文生图（4步）极速_1995449450854277122.json, 图片生成/文生图/QWEN文生图（4步）极速_1996499117574602754.json, 图片生成/文生图/QWEN文生图（4步）极速_2075420795974807553.json, 图片生成/文生图/Qwen 2512文生图（4步）极速_1991347501961949186.json, 图片生成/文生图/Qwen+2512文生图（4步）极速_2007656420396769281.json, 图片生成/文生图/Qwen-Image-基础版_2082365287453773826.json, 图片生成/文生图/Z-image超写实文生图工作流_2099335310260916225.json, 图片生成/文生图/qwen2512渲染电商工业级海报设计_2015058586715557889.json, 图片生成/文生图/冰箱贴-文生图_1996108372120387585.json, 图片生成/文生图/文生图  QWEN2512 高清放大图_2008816043917058050.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Z-image-AIO超真实极致放大8K画质_2072147469131149314.json、图片生成/文生图/krea2基础文生图高清_2102596196979269634.json、图片生成/文生图/krea2文生图高清_2081557717600260097.json、图片生成/文生图/krea2文生图高清_2081698530154082306.json、图片生成/文生图/文生图Zimage极致放大_2071861851847221250.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/LEO-Qwen千问文生图+一键自动角色三视图工作流_2066384439432802305.json、图片生成/文生图/QWEN2512文生图（4步）极速_2008801134533677058.json、图片生成/文生图/QWEN文生图（4步）极速_1995449450854277122.json、图片生成/文生图/QWEN文生图（4步）极速_1996499117574602754.json、图片生成/文生图/QWEN文生图（4步）极速_2075420795974807553.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
+- `ImageUpscaleWithModel`
 - `KSampler`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `easy cleanGpuUsed`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 5/7 个有
-- `CheckpointLoaderSimple` —— 4/7 个有
-- `GetImageSize+` —— 4/7 个有
-- `INTConstant` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `easy clearCacheAll` —— 4/7 个有
-- `easy imageScaleDownBy` —— 4/7 个有
-- `CLIPLoader` —— 3/7 个有
-- `GetNode` —— 3/7 个有
-- `UNETLoader` —— 3/7 个有
-- `VAELoader` —— 3/7 个有
-- `easy imageSize` —— 3/7 个有
-- `CLIPLoaderGGUF` —— 2/7 个有
-- `SetNode` —— 2/7 个有
-- `VAEEncode` —— 2/7 个有
+- `ImageScaleBy` —— 9/12 个有
+- `VAEEncodeTiled` —— 9/12 个有
+- `PreviewImage` —— 8/12 个有
+- `CFGNorm` —— 2/12 个有
+- `FluxKontextImageScale` —— 1/12 个有
+- `ImageFromBatch` —— 1/12 个有
+- `Node Collector (rgthree)` —— 1/12 个有
+- `SmartImageConcat` —— 1/12 个有
+- `TextEncodeQwenImageEditPlus` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 760 | 760 - 1024 | 7 | 85% |
-| 高度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 采样步数 | 10 | 6 - 10 | 7 | 79% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | dpmpp_2m_sde | - | 7 | 57% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 0.25 - 1 | 7 | 57% |
+| 宽度 | 1920 | 1080 - 1920 | 12 | 78% |
+| 高度 | 1080 | 1080 - 1920 | 12 | 72% |
+| 采样步数 | 6 | 4 - 10 | 12 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 83% |
+| 调度器 | simple | - | 12 | 83% |
+| 重绘幅度 | 1 | 0.3 - 1 | 12 | 79% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 24/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 760，观测区间 760 - 1024，7 个样本，取值集中（一致性 85%）
-- 高度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 10，观测区间 6 - 10，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m_sde，7 个样本，一致性 57%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.25 - 1，7 个样本
-- 高发问题（5/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1920，观测区间 1080 - 1920，12 个样本
+- 高度 中位数 1080，观测区间 1080 - 1920，12 个样本
+- 采样步数 中位数 6，观测区间 4 - 10，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 83%
+- 调度器 最常用 simple，12 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，12 个样本
+- 高发问题（24/12 个样本）：Steps较低可能导致细节不足

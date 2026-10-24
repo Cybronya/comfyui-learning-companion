@@ -7,13 +7,13 @@ coverage: 0.7374
 common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, ImageScaleBy, ImpactFloat, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PrimitiveFloat, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, SetNode, StringFunction|pysssss, VAEDecodeTiled, VHS_VideoCombine, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2009176912333119490.json, 视频生成/图生视频/2037088437668421634.json, 视频生成/图生视频/2037097528180609026.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.0_2009188273779904513.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.3_2037067149814013954.json]
+members: [视频生成/图生视频/视频-图生视频扩写-LTX2.0_2009176912333119490.json, 视频生成/图生视频/视频-图生视频扩写-LTX2.3_2037088437668421634.json, 视频生成/图生视频/视频-首尾帧视频扩写-LTX2.3_2037097528180609026.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.0_2009188273779904513.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.3_2037067149814013954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_80
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2009176912333119490.json、视频生成/图生视频/2037088437668421634.json、视频生成/图生视频/2037097528180609026.json、视频生成/文生视频/视频-文生视频扩写-LTX2.0_2009188273779904513.json、视频生成/文生视频/视频-文生视频扩写-LTX2.3_2037067149814013954.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/视频-图生视频扩写-LTX2.0_2009176912333119490.json、视频生成/图生视频/视频-图生视频扩写-LTX2.3_2037088437668421634.json、视频生成/图生视频/视频-首尾帧视频扩写-LTX2.3_2037097528180609026.json、视频生成/文生视频/视频-文生视频扩写-LTX2.0_2009188273779904513.json、视频生成/文生视频/视频-文生视频扩写-LTX2.3_2037067149814013954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

@@ -3,74 +3,80 @@ name: unknown_workflow_video_upscale_latent_upscale_117
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.721333
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, JoinStrings, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, Qwen3_VQA, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, TextInput_, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.852333
+common_nodes: [AudioConcat, CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, DF_Integer, DisTorchPurgeVRAMV2, EmptyLTXVLatentVideo, GetImageSize+, ImageResizeKJv2, ImageSizeInfo, JWImageSequenceExtractFromBatch, JWInteger, JWStringGetLine, JjkConcat, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, ResizeLongestToNode, SamplerCustomAdvanced, ShowText, TextBoxMira, VAEDecodeTiled, VHS_MergeImages, VHS_VideoCombine, easy mathInt, easy saveText, easy showAnything, image_scale_pixel_v2]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.0文生视频gguf版本_2012499867683262466.json, 视频生成/文生视频/LTX2文生视频低显存版2.0（智能提示词扩写）_2011000003422068738.json, 视频生成/文生视频/LTX2文生视频低显存版（智能提示词扩写）_2009277455604916226.json]
+members: [视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json, 视频生成/图生视频/高动态九分镜视频QWEN3VL+LTX 2_3+VBVR 六阶段采样_2049764225769283585.json, 视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_117
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX2.0文生视频gguf版本_2012499867683262466.json、视频生成/文生视频/LTX2文生视频低显存版2.0（智能提示词扩写）_2011000003422068738.json、视频生成/文生视频/LTX2文生视频低显存版（智能提示词扩写）_2009277455604916226.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json、视频生成/图生视频/高动态九分镜视频QWEN3VL+LTX 2_3+VBVR 六阶段采样_2049764225769283585.json、视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AudioConcat`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `EmptyImage`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
+- `DF_Integer`
+- `DisTorchPurgeVRAMV2`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
-- `JoinStrings`
+- `GetImageSize+`
+- `ImageResizeKJv2`
+- `ImageSizeInfo`
+- `JWImageSequenceExtractFromBatch`
+- `JWInteger`
+- `JWStringGetLine`
+- `JjkConcat`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVScheduler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
 - `PrimitiveFloat`
 - `PrimitiveInt`
-- `Qwen3_VQA`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
+- `ResizeLongestToNode`
 - `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `TextInput_`
+- `ShowText`
+- `TextBoxMira`
 - `VAEDecodeTiled`
+- `VHS_MergeImages`
 - `VHS_VideoCombine`
+- `easy mathInt`
+- `easy saveText`
+- `easy showAnything`
+- `image_scale_pixel_v2`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `LTXAVTextEncoderLoader` —— 2/3 个有
-- `LTXVAudioVAELoader` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `DualCLIPLoader` —— 1/3 个有
-- `DualCLIPLoaderGGUF` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `PurgeVRAM_UTK` —— 1/3 个有
-- `SomethingToString` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
-- `VAELoaderKJ` —— 1/3 个有
+- `1hew_ImageGridSplit` —— 2/3 个有
+- `If ANY execute A else B` —— 2/3 个有
+- `JWStringSplit` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
+- `string_util_StrFind` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 

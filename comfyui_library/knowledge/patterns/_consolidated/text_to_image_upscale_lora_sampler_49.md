@@ -1,94 +1,70 @@
 ---
 name: text_to_image_upscale_lora_sampler_49
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.7895
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, PreviewImage, ResolutionSelector, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, easy positive, easy showAnything, llama_cpp_clean_states, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model, 孤海注释, 忽略多组孤海]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: strong
+coverage: 0.7492
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, Image Comparer (rgthree), ImageUpscaleWithModel, KSampler, LoraLoader, SaveImage, Upscale Model Loader, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/1-Aiden-KREA2模型提示词优化lora加持工作流 (1)_2079925358706642945.json, 图片生成/文生图/1-Aiden-豹豹的K2墨玉AIO测试工作流（小白福音）_2078350888141414402.json]
+members: [图片生成/文生图/SDXL_SZ_文生图工作流_2043647733185126402.json, 图片生成/文生图/SDXL文生图工作流_1911978572158857217.json, 图片生成/文生图/SDXL文生图工作流_1989245330363387906.json, 图片生成/文生图/SDXL文生图工作流_2053466430389137410.json, 图片生成/文生图/SDXL文生图工作流高对比_2004022494623350786.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_49
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1-Aiden-KREA2模型提示词优化lora加持工作流 (1)_2079925358706642945.json、图片生成/文生图/1-Aiden-豹豹的K2墨玉AIO测试工作流（小白福音）_2078350888141414402.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/SDXL_SZ_文生图工作流_2043647733185126402.json、图片生成/文生图/SDXL文生图工作流_1911978572158857217.json、图片生成/文生图/SDXL文生图工作流_1989245330363387906.json、图片生成/文生图/SDXL文生图工作流_2053466430389137410.json、图片生成/文生图/SDXL文生图工作流高对比_2004022494623350786.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `ResolutionSelector`
+- `LoraLoader`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `UNETLoader`
+- `Upscale Model Loader`
 - `VAEDecode`
-- `VAELoader`
-- `easy positive`
-- `easy showAnything`
-- `llama_cpp_clean_states`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `llama_cpp_unload_model`
-- `孤海注释`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `KOOK_ImageCompression` —— 1/2 个有
-- `LayerColor: Brightness & Contrast` —— 1/2 个有
-- `LayerFilter: AddGrain` —— 1/2 个有
-- `LayerUtility: ImageReel` —— 1/2 个有
-- `LayerUtility: ImageReelComposit` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `String` —— 4/5 个有
+- `TextInputBasic` —— 4/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 616 | - | 2 | 83% |
-| 高度 | 896 | - | 2 | 57% |
+| LoRA 模型强度 | 0.8 | 0.6 - 0.8 | 5 | 89% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 30 | 20 - 30 | 5 | 85% |
+| Prompt 约束强度(CFG) | 5 | 4 - 5 | 5 | 92% |
+| 采样算法 | dpmpp_2m | - | 5 | 80% |
+| 调度器 | sgm_uniform | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 768 | 768 - 1344 | 5 | 76% |
+| 高度 | 1024 | 1024 - 1728 | 5 | 76% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 616，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高度 中位数 896，样本不足，未给区间，2 个样本
-- 高发问题（5/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- LoRA 模型强度 中位数 0.8，观测区间 0.6 - 0.8，5 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 20 - 30，5 个样本，取值集中（一致性 85%）
+- Prompt 约束强度(CFG) 中位数 5，观测区间 4 - 5，5 个样本，取值集中（一致性 92%）
+- 采样算法 最常用 dpmpp_2m，5 个样本，一致性 80%
+- 调度器 最常用 sgm_uniform，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 1344，5 个样本
+- 高度 中位数 1024，观测区间 1024 - 1728，5 个样本

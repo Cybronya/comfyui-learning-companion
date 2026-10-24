@@ -1,58 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_149
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.899667
-common_nodes: [CR Text, DF_Integer, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, ShowText|pysssss, SimpleMath+, StringToInt, Text Multiline, TextSwitchCase, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy textSwitch]
+coverage: 1
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934554674429108225.json, 视频生成/图生视频/1934947050259685377.json, 视频生成/文生视频/1934540545190764546.json]
+members: [视频生成/文生视频/万相VACE14B视频扩展工作流_1923688009151991809.json, 视频生成/文生视频/万相Wan2.1-VACE-14B视频扩展_1923941763244093441.json, 视频生成/文生视频/万相WanVACE-14B文生视频_1923955106968948737.json, 视频生成/文生视频/文生视频(Wan2.1-VACE-14B)_1922920161509261314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_149
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1934554674429108225.json、视频生成/图生视频/1934947050259685377.json、视频生成/文生视频/1934540545190764546.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/万相VACE14B视频扩展工作流_1923688009151991809.json、视频生成/文生视频/万相Wan2.1-VACE-14B视频扩展_1923941763244093441.json、视频生成/文生视频/万相WanVACE-14B文生视频_1923955106968948737.json、视频生成/文生视频/文生视频(Wan2.1-VACE-14B)_1922920161509261314.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `DF_Integer`
+全部 4 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
-- `RH_LLMAPI_NODE`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `StringToInt`
-- `Text Multiline`
-- `TextSwitchCase`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `AnimateDiffCombine` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `WanVideoExperimentalArgs` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `WanVideoSLG` —— 2/3 个有
-- `WanVideoEmptyEmbeds` —— 1/3 个有
-- `string_util_StrReplace` —— 1/3 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `ImagePadKJ` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `GetImageSize+` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 

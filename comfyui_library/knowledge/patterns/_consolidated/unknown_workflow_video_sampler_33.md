@@ -7,13 +7,13 @@ coverage: 0.6
 common_nodes: [Anything Everywhere, AudioCombine, GetNode, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, RHHiddenNodes, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935602236280209409.json, 音频生成/音频生成/【一键视频配音】MMaudio适配音效_1924369244471873537.json]
+members: [视频生成/图生视频/小说多角色配音结构化文本_1935602236280209409.json, 音频生成/音频生成/【一键视频配音】MMaudio适配音效_1924369244471873537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1935602236280209409.json、音频生成/音频生成/【一键视频配音】MMaudio适配音效_1924369244471873537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/小说多角色配音结构化文本_1935602236280209409.json、音频生成/音频生成/【一键视频配音】MMaudio适配音效_1924369244471873537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

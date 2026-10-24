@@ -1,37 +1,37 @@
 ---
 name: unknown_workflow_generic_85
 type: Unknown Workflow
-frequency: 10
+frequency: 16
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, ConcatTextOfUtils, LoadImage, SaveVideo]
+coverage: 0.7
+common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json, 视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json, 视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json, 视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json, 视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json, 视频生成/图生视频/牛来版Seedance2.5片头（RH版）_2089590549220253697.json, 视频生成/图生视频/（新片头2-自用）Seedance2.5片头（RH版）_2097963487086600194.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099453313115836417.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099460900435611649.json, 视频生成/图生视频/（新片头4-自用-12图）Seedance2.5片头（RH版）_2102017601940578305.json]
+members: [图片生成/图生图/爆火拼贴风格_2015781110902431745.json, 图片生成/图生图/生成属于自己的表情包_2035204437177798657.json, 图片生成/图生图/白底服装精修・原生质感还原_2038135664767668226.json, 图片生成/图生图/简约版拍立得一键生成器_2032039795228155906.json, 图片生成/图生图/经典动漫全员梦幻同框_2039315266831650817.json, 图片生成/图生图/职场人AI照相馆_2014988136681574401.json, 图片生成/图生图/花丛里闪个大片_2039565322868494337.json, 图片生成/图生图/蜡笔手绘风格_2033766037648318466.json, 图片生成/图生图/街潮玩偶镜像_2019636309530255362.json, 图片生成/图生图/角色分解图_2034977788750467074.json, 图片生成/图生图/软萌手账・甜系光影随笔_2037406784532516866.json, 图片生成/图生图/这波好运，直接拉满_2021160663120351234.json, 图片生成/图生图/这波好运，直接拉满~_2021165660310605826.json, 图片生成/图生图/霓虹像素同框_2016407188847206402.json, 图片生成/图生图/青春元气拼贴_2033521478829875201.json, 图片生成/图生图/💕与我的世界角色同框_2014616187652542466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_85
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json、视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json、视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json、视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json、视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/爆火拼贴风格_2015781110902431745.json、图片生成/图生图/生成属于自己的表情包_2035204437177798657.json、图片生成/图生图/白底服装精修・原生质感还原_2038135664767668226.json、图片生成/图生图/简约版拍立得一键生成器_2032039795228155906.json、图片生成/图生图/经典动漫全员梦幻同框_2039315266831650817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `ConcatTextOfUtils`
+全部 16 个 workflow 都包含：
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `SaveVideo`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 9/10 个有
-- `LoadAudio` —— 6/10 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/10 个有
+- `Textbox` —— 15/16 个有
+- `RH_Captioner` —— 1/16 个有
 
 ## 典型参数
 

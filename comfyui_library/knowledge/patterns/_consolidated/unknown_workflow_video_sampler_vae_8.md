@@ -1,81 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_vae_8
 type: Unknown Workflow
-frequency: 26
+frequency: 25
 level: moderate
-coverage: 0.760269
-common_nodes: [EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJ, ImpactSwitch, LayerUtility: ImageBlend, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.76644
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWFloat, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, PreviewAny, PreviewAudio, RHHiddenNodes, SaveAudio, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
-missing: [LayerUtility: ImageBlend, LayerUtility: PurgeVRAM V2, Primitive float [Crystools], Primitive integer [Crystools], SimpleMath+, Text Concatenate, Text Multiline, easy cleanGpuUsed, easy imageRemBg]
-members: [图片生成/文生图/1970731121958920193.json, 数字人/数字人/视频自动人物替换-V2版本-循环版_1964248185155801090.json, 数字人/数字人/视频自动人物替换-纵_2089698980228849665.json, 数字人/数字人/跨境换装展示 自动人物替换-V2版本-循环版_2089735308039516162.json, 视频生成/图生视频/1961326580301762562.json, 视频生成/图生视频/2009156507505532930.json, 视频生成/图生视频/2041570599998328833.json, 视频生成/图生视频/1964703426166800385.json, 视频生成/图生视频/1964342957782482945.json, 视频生成/图生视频/1972870732168515586.json, 视频生成/图生视频/1965213821134622721.json, 视频生成/图生视频/1964883443333087234.json, 视频生成/图生视频/1967843353356283906.json, 视频生成/图生视频/2054089279747444738.json, 视频生成/图生视频/1978308100690173954.json, 视频生成/图生视频/1989248787958870017.json, 视频生成/图生视频/2017131658423570434.json, 视频生成/图生视频/2038239610723115009.json, 视频生成/图生视频/视频自动人物替换-V2版本_1955086878557048833.json, 视频生成/图生视频/2040327330937180162.json, 视频生成/图生视频/2041353977224241153.json, 视频生成/图生视频/2041775285426720769.json, 视频生成/图生视频/1970398580701884418.json, 视频生成/图生视频/2037789752887353346.json, 视频生成/文生视频/1966149260637106178.json, 视频生成/文生视频/视频替换背景-V2版本_1959794144917008385.json]
+missing: []
+members: [数字人/数字人/Qwen3+TTS+声音克隆+Infinite数字人_2086035517946290178.json, 视频生成/图生视频/IndexTTS2声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2016728794467409921.json, 视频生成/图生视频/IndexTTS2声音克隆+Infinite数字人动态加强版_2037525296269762562.json, 视频生成/图生视频/Qwen3 TTS +Infinite强强联合动态加强版 效果炸裂_2058750777048518657.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2016384964308242434.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2049654832440549377.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2051913870779928577.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2054464629111304194.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2054742266618630145.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2085918982728671234.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2087075086338707458.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合效果炸裂图生视频_2054762610335207426.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合效果炸裂图生视频_2055146334742695938.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合效果炸裂图生视频_2074005598877872130.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合效果炸裂图生视频_2101271347145043969.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合效果炸裂图生视频_2101296078606921730.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版_2056191636929040385.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版_2064233003974483969.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版_2064974198967201794.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版_2066038186094190594.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版_2066046790352330753.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版_2077438188636950529.json, 视频生成/图生视频/Qwen3 TTS 声音克隆+数字人动态加强版-效果炸裂_2054860073318535169.json, 视频生成/图生视频/Qwen3+TTS+声音克隆+Infinite数字人_2056186887206907905.json, 音频生成/音频生成/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2044250543421399041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/文生图/1970731121958920193.json、数字人/数字人/视频自动人物替换-V2版本-循环版_1964248185155801090.json、数字人/数字人/视频自动人物替换-纵_2089698980228849665.json、数字人/数字人/跨境换装展示 自动人物替换-V2版本-循环版_2089735308039516162.json、视频生成/图生视频/1961326580301762562.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（数字人/数字人/Qwen3+TTS+声音克隆+Infinite数字人_2086035517946290178.json、视频生成/图生视频/IndexTTS2声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2016728794467409921.json、视频生成/图生视频/IndexTTS2声音克隆+Infinite数字人动态加强版_2037525296269762562.json、视频生成/图生视频/Qwen3 TTS +Infinite强强联合动态加强版 效果炸裂_2058750777048518657.json、视频生成/图生视频/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂_2016384964308242434.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：26
+- **样本数**：25
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `EmptyImage`
+全部 25 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJ`
-- `ImpactSwitch`
-- `LayerUtility: ImageBlend`
+- `JWFloat`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `PreviewAudio`
 - `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `SaveAudio`
 - `VHS_VideoCombine`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoSLG`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 24/26 个有
-- `ColorMatch` —— 21/26 个有
-- `AIO_Preprocessor` —— 19/26 个有
-- `AddLabel` —— 19/26 个有
-- `DownloadAndLoadFlorence2Model` —— 19/26 个有
-- `DownloadAndLoadSAM2Model` —— 19/26 个有
-- `Florence2Run` —— 19/26 个有
-- `Florence2toCoordinates` —— 19/26 个有
-- `GrowMaskWithBlur` —— 19/26 个有
-- `InpaintPreprocessor` —— 19/26 个有
-- `LayerUtility: PurgeVRAM V2` —— 19/26 个有
-- `PrimitiveString` —— 19/26 个有
-- `RH_Translator` —— 19/26 个有
-- `Sam2Segmentation` —— 19/26 个有
-- `DepthAnything_V2` —— 18/26 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 18/26 个有
-- `ImageBlend` —— 18/26 个有
-- `Primitive float [Crystools]` —— 17/26 个有
-- `RMBG` —— 11/26 个有
-- `easy imageRemBg` —— 8/26 个有
-- `UnloadModel` —— 5/26 个有
-- `LayerUtility: ColorImage V2` —— 2/26 个有
+- `Qwen3TTSModelLoader` —— 23/25 个有
+- `Qwen3TTSVoiceClone` —— 23/25 个有
+- `WhisperSTT` —— 23/25 个有
+- `IndexTTS2Run` —— 2/25 个有
+- `Text Multiline` —— 2/25 个有
+- `easy mathInt` —— 1/25 个有
 
 ## 典型参数
 
@@ -87,4 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageBlend、LayerUtility: PurgeVRAM V2、Primitive float [Crystools]、Primitive integer [Crystools]、SimpleMath+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

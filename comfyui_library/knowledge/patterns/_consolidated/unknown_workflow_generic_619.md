@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_619
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.593
-common_nodes: [HeartMuLa_Generate, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveAudioMP3]
+coverage: 0.78025
+common_nodes: [ByteDanceSeedreamNodeV3, SaveImageAdvanced]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa文生歌曲_2013513670474600449.json, 音频生成/音频生成/HeartMula歌曲创作（一句话生成音乐）_2016837047369080834.json, 音频生成/音频生成/HeartMula歌曲创作（一句话生成音乐）_2018668790115995650.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_619
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa文生歌曲_2013513670474600449.json、音频生成/音频生成/HeartMula歌曲创作（一句话生成音乐）_2016837047369080834.json、音频生成/音频生成/HeartMula歌曲创作（一句话生成音乐）_2018668790115995650.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudioMP3`
+全部 4 个 workflow 都包含：
+- `ByteDanceSeedreamNodeV3`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 2/3 个有
-- `Label (rgthree)` —— 1/3 个有
+- `LoadImage` —— 3/4 个有
+- `Painter` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

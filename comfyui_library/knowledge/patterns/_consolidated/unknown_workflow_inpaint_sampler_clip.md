@@ -1,72 +1,81 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip
 type: Unknown Workflow
-frequency: 4
+frequency: 18
 level: strong
-coverage: 0.76775
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, ImpactInt, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.882056
+common_nodes: [CLIPTextEncode, ColorCorrect, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImpactInt, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: RestoreCropBox, LoadImage, Mask Fill Holes, SaveImage, ToBinaryMask, UNETLoader, VAEDecode, VAELoader, easy ifElse]
 problems: []
-missing: [CR Text, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: RestoreCropBox, Mask Fill Holes, easy boolean]
-members: [图片生成/文生图/1985864428728066050.json, 图片生成/文生图/1989239057773367297.json, 图片生成/文生图/OneReward-Fill最强扩图【无损原图效果炸裂】_1990118350430851073.json, 视频生成/图生视频/1981616130160762881.json]
+missing: []
+members: [图片生成/图生图/Fill -OneReward 万物重绘增强版_1980477800337616897.json, 图片生成/图生图/Flux手动去水印_2006193627856379905.json, 图片生成/图生图/OneReward-Fill 最强局部重绘 - 框选模式 （直出4K大图）_1982037924495663105.json, 图片生成/图生图/OneReward-Fill 最强局部重绘 - 涂抹模式 （直出4K大图）_1980525783024357377.json, 图片生成/图生图/OneReward-Fill-最强局部重绘-框选遮罩_1981340609220870145.json, 图片生成/图生图/OneReward-Fill-最强局部重绘-遮罩涂抹模式_1981313979459035137.json, 图片生成/图生图/OneReward-Fill最强擦除【支持超大面积擦除】_1996020269028458497.json, 图片生成/图生图/OneReward-Fill最强重绘【4K直出不挑图】_1978644930367262722.json, 图片生成/图生图/OneReward-Fill最强重绘【4K直出不挑图】_1980971341039984641.json, 图片生成/图生图/OneReward-Fill最强重绘【4K直出不挑图】许老师版_1978949823430823937.json, 图片生成/图生图/OneReward-Fill重绘_1991413143960309762.json, 图片生成/图生图/局部重绘Flux-Fill最强局部重绘-OneReward-Fill1.0_1985568936228016129.json, 图片生成/图生图/局部重绘Flux-OneReward-Fill_2061649505245818881.json, 图片生成/图生图/局部重绘Flux-OneReward-Fill自用_1997666079226966018.json, 图片生成/图生图/局部重绘丨Flux-Fill最新最强局部重绘-OneReward-Fill最强重绘【高清直出】_1979068377333403649.json, 图片生成/图生图/手部修复-OneReward-Fill重绘修手_1981942247061110786.json, 图片生成/图生图/最强重绘4K直出不挑图_1980059607995420674.json, 图片生成/图生图/最强重绘OneReward-Fill 工作流 不限尺寸 想改啥改啥_1979444855506112514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1985864428728066050.json、图片生成/文生图/1989239057773367297.json、图片生成/文生图/OneReward-Fill最强扩图【无损原图效果炸裂】_1990118350430851073.json、视频生成/图生视频/1981616130160762881.json）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/Fill -OneReward 万物重绘增强版_1980477800337616897.json、图片生成/图生图/Flux手动去水印_2006193627856379905.json、图片生成/图生图/OneReward-Fill 最强局部重绘 - 框选模式 （直出4K大图）_1982037924495663105.json、图片生成/图生图/OneReward-Fill 最强局部重绘 - 涂抹模式 （直出4K大图）_1980525783024357377.json、图片生成/图生图/OneReward-Fill-最强局部重绘-框选遮罩_1981340609220870145.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 18 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ColorCorrect`
 - `ConditioningZeroOut`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
 - `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
 - `ImpactInt`
 - `InpaintModelConditioning`
 - `KSampler`
 - `LayerMask: MaskGrow`
+- `LayerUtility: CropByMask V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
+- `Mask Fill Holes`
 - `SaveImage`
+- `ToBinaryMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorCorrect` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `LayerUtility: CropByMask V2` —— 3/4 个有
-- `LayerUtility: RestoreCropBox` —— 3/4 个有
-- `Mask Fill Holes` —— 3/4 个有
-- `ToBinaryMask` —— 3/4 个有
-- `easy ifElse` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `easy boolean` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `ImageComposite+` —— 1/4 个有
-- `ImagePadForOutpaintMasked` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
+- `easy boolean` —— 14/18 个有
+- `CR Text` —— 12/18 个有
+- `DeepTranslatorTextNode` —— 11/18 个有
+- `LoraLoader` —— 4/18 个有
+- `PrimitiveBoolean` —— 4/18 个有
+- `RH_Translator` —— 4/18 个有
+- `LoraLoaderModelOnly` —— 2/18 个有
+- `easy showAnything` —— 2/18 个有
+- `ApplyFBCacheOnModel` —— 1/18 个有
+- `ImageConcatMulti` —— 1/18 个有
+- `LayerMask: LoadSAM2Model` —— 1/18 个有
+- `LayerMask: ObjectDetectorYOLO8` —— 1/18 个有
+- `LayerMask: SAM2UltraV2` —— 1/18 个有
+- `MaskPreview` —— 1/18 个有
+- `Note Plus (mtb)` —— 1/18 个有
+- `PreviewImage` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 30 | 20 - 30 | 18 | 92% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | er_sde | - | 18 | 100% |
+| 调度器 | simple | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -74,9 +83,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerMask: MaskGrow、LayerUtility: CropByMask V2、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: RestoreCropBox
+- 采样步数 中位数 30，观测区间 20 - 30，18 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，18 个样本，一致性 100%
+- 调度器 最常用 simple，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

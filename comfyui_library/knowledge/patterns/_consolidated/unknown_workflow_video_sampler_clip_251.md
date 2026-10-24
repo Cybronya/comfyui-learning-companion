@@ -3,48 +3,57 @@ name: unknown_workflow_video_sampler_clip_251
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9775
-common_nodes: [ImageResizeKJ, Int, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9515
+common_nodes: [FaceAnalysisModels, FaceBoundingBox, ImageConcanate, ImagePadForOutpaint, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: LaMa, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy imageConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/1896860763158650881.json, 视频生成/图生视频/1903428190818177025.json]
+members: [视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json, 视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_251
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1896860763158650881.json、视频生成/图生视频/1903428190818177025.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json、视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageResizeKJ`
-- `Int`
+- `FaceAnalysisModels`
+- `FaceBoundingBox`
+- `ImageConcanate`
+- `ImagePadForOutpaint`
+- `ImageToMask`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: LaMa`
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
+- `PreviewImage`
+- `TextInput_`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoImageClipEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `StringFunction|pysssss` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `WanVideoTeaCache` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

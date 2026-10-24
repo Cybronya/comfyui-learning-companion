@@ -3,93 +3,78 @@ name: text_to_image_video_lora_sampler_65
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.517091
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, GetImage, GetNode, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_MiniMaxH3Video, solarL_SaveImagesToZip]
+coverage: 0.888364
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3全栈式短剧生成V12_1宫格版_图生视频短剧制作工具_2106106643212750849.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作_2098294284297527297.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作工具_2098655909403783169.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版 图生视频CG幻想风格多场景产出_2105443312898498561.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2102902512931135489.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频短剧制作工具_2107181508682407938.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成短剧版，图生视频一站式短剧制作工作流_2102904045089411073.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1宫格版｜图生视频短剧利器_2106989222166097922.json, 视频生成/图生视频/MiniMax_H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2104734396803796994.json, 视频生成/图生视频/MiniMax_H3全栈式短剧生成宫格版，图生视频短剧制作工具_2109442367852994561.json, 视频生成/文生视频/MiniMax_H3全栈式短剧生成短剧版，图生视频一站式短剧制作工作流_2104732928919031809.json]
+members: [视频生成/图生视频/极速高清直出｜H3文生视频角色一致性视频超分_2089486697900888065.json, 视频生成/图生视频/海螺H3图生视频｜8步极速加速优化t8版，角色表演流畅_2099887065814093826.json, 视频生成/图生视频/海螺h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086452080943919106.json, 视频生成/图生视频/海螺h3开源版H3数字人单人数字人图生视频口播数字人加速版MiniMax_2086453850634014722.json, 视频生成/图生视频/清晰度天花板超级加强v3｜minimax h3数字人图生视频_2089034956130570241.json, 视频生成/图生视频/自用4步加速图生视频工作流｜极速出片效率翻倍_2100850409333149698.json, 视频生成/图生视频/音频驱动音乐MV｜MiniMax H3数字人加速版V1出片快_2100122889331765250.json, 视频生成/图生视频/首尾帧EMinimax_H3_NG海螺图生视频_2087147808825626625.json, 视频生成/图生视频/首尾帧生视频｜海螺Minimax_H3图生视频生成_2092176988864864257.json, 视频生成/文生视频/H3开源版短剧漫剧文生视频｜8步高质量极速出片_2098741860201226242.json, 视频生成/文生视频/MiniMax H3双时钟采样Turbo LORA双采集多模态文生视频_2088198784831545345.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_65
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3全栈式短剧生成V12_1宫格版_图生视频短剧制作工具_2106106643212750849.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作_2098294284297527297.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作工具_2098655909403783169.json、视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版 图生视频CG幻想风格多场景产出_2105443312898498561.json、视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2102902512931135489.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/极速高清直出｜H3文生视频角色一致性视频超分_2089486697900888065.json、视频生成/图生视频/海螺H3图生视频｜8步极速加速优化t8版，角色表演流畅_2099887065814093826.json、视频生成/图生视频/海螺h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086452080943919106.json、视频生成/图生视频/海螺h3开源版H3数字人单人数字人图生视频口播数字人加速版MiniMax_2086453850634014722.json、视频生成/图生视频/清晰度天花板超级加强v3｜minimax h3数字人图生视频_2089034956130570241.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicScheduler`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `GetImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveBoolean`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SetNode`
-- `StringConcatenate`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTJsonSwitch`
-- `YUAN_TXTPreviewContent`
-- `YUAN_TXTShotDurations`
-- `YuanAudioList`
-- `YuanAudioLoad`
-- `YuanAudioSplit`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_MiniMaxH3Video`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 10/11 个有
+- `MiniMaxH3AudioConditioningT8` —— 10/11 个有
+- `MiniMaxH3DualClockSamplerT8` —— 10/11 个有
+- `ResolutionSelector` —— 10/11 个有
+- `LoadImage` —— 9/11 个有
+- `LoraLoaderBypassModelOnly` —— 9/11 个有
 - `孤海注释` —— 9/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
-- `LoadImage` —— 7/11 个有
-- `ResizeImageMaskNode` —— 7/11 个有
-- `VOSR2ModelLoader` —— 7/11 个有
-- `VOSR2Upscale` —— 7/11 个有
-- `YuanImageGridComposite` —— 7/11 个有
-- `YuanLoadImageOutput` —— 7/11 个有
-- `YuanPrimitive` —— 7/11 个有
-- `Yuan_H3MotionContextTrim` —— 7/11 个有
-- `Yuan_H3ProgressiveSampler` —— 7/11 个有
-- `BasicGuider` —— 4/11 个有
-- `EmptyImage` —— 4/11 个有
-- `ImageFromBatch` —— 4/11 个有
-- `Lora Loader Stack (rgthree)` —— 4/11 个有
-- `ManualSigmas` —— 4/11 个有
-- `MiniMaxH3AddGuide` —— 4/11 个有
-- `RandomNoise` —— 4/11 个有
-- `SamplerCustomAdvanced` —— 4/11 个有
-- `SplitSigmas` —— 4/11 个有
-- `StringReplace` —— 4/11 个有
-- `VAEDecodeAudio` —— 4/11 个有
-- `Yuan_H3Upscale3D` —— 4/11 个有
-- `Yuan_VideoUI` —— 4/11 个有
-- `easy clearCacheAll` —— 3/11 个有
+- `ModelAttentionBackend` —— 5/11 个有
+- `CR Prompt Text` —— 4/11 个有
+- `LoadAudio` —— 4/11 个有
+- `BasicScheduler` —— 3/11 个有
+- `CR Text` —— 3/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `KSamplerSelect` —— 3/11 个有
+- `PT_H3ConcatAVLatent` —— 3/11 个有
+- `PrimitiveStringMultiline` —— 3/11 个有
+- `VAEEncode` —— 2/11 个有
+- `AudioConcat` —— 1/11 个有
+- `ExtendIntermediateSigmas` —— 1/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `H3SigmaRefiner` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
+- `LoadVideoUI` —— 1/11 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/11 个有
+- `PathchSageAttentionKJ` —— 1/11 个有
+- `PixaromaLabel` —— 1/11 个有
+- `SolAttnMiniMax` —— 1/11 个有
+- `TrimAudioDuration` —— 1/11 个有
+- `VAEEncodeAudio` —— 1/11 个有
+- `VAEEncodeTiled` —— 1/11 个有
 
 ## 典型参数
 
@@ -107,7 +92,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -118,4 +103,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（13/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足

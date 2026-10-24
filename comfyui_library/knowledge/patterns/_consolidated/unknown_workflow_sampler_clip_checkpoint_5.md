@@ -7,13 +7,13 @@ coverage: 1
 common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, WanImageToVideo]
 problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/1956025616472702978.json, 视频生成/图生视频/1955969682358632450.json, 视频生成/图生视频/1958143493149511681.json, 视频生成/图生视频/1958905954660200450.json, 视频生成/图生视频/1962517255911288834.json, 视频生成/图生视频/1960545575466917890.json, 视频生成/图生视频/1958145251049353218.json, 视频生成/图生视频/2013897396320739330.json, 视频生成/图生视频/1962792289108115457.json, 视频生成/图生视频/1963949307806273538.json, 视频生成/图生视频/1959492715388022786.json, 视频生成/图生视频/1961655579871789057.json]
+members: [视频生成/图生视频/Wan2.2 All-in-one V7图生视频极速版V1（自用）_1956025616472702978.json, 视频生成/图生视频/Wan2.2 All-in-one V7图生视频高动态极速版V2_1955969682358632450.json, 视频生成/图生视频/Wan2.2 All-in-one V8图生视频高动态极速版V2_1958143493149511681.json, 视频生成/图生视频/Wan2.2 All-in-one V9图生视频高动态极速版V1_1958905954660200450.json, 视频生成/图生视频/Wan2.2 All-in-one图生视频--超级快速_1962517255911288834.json, 视频生成/图生视频/Wan2.2 超级加速_1960545575466917890.json, 视频生成/图生视频/（人体解剖学CLIP）Wan2.2 All-in-one V8图生视频极速版V1（自用）_1958145251049353218.json, 视频生成/图生视频/（本地解码）Wan2.2 All-in-one V10+CineScale图生视频极速版V1 林耀_2013897396320739330.json, 视频生成/图生视频/（自用）Wan2.2 All-in-one V10+CineScale图生视频极速版V1_1962792289108115457.json, 视频生成/图生视频/（自用）Wan2.2 All-in-one V10图生视频极速版V2_1963949307806273538.json, 视频生成/图生视频/（自用）Wan2.2 All-in-one V9.1+CineScale图生视频极速版V1_1959492715388022786.json, 视频生成/图生视频/（自用）Wan2.2 All-in-one V9.2+CineScale图生视频极速版V1_1961655579871789057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_5
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1956025616472702978.json、视频生成/图生视频/1955969682358632450.json、视频生成/图生视频/1958143493149511681.json、视频生成/图生视频/1958905954660200450.json、视频生成/图生视频/1962517255911288834.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 All-in-one V7图生视频极速版V1（自用）_1956025616472702978.json、视频生成/图生视频/Wan2.2 All-in-one V7图生视频高动态极速版V2_1955969682358632450.json、视频生成/图生视频/Wan2.2 All-in-one V8图生视频高动态极速版V2_1958143493149511681.json、视频生成/图生视频/Wan2.2 All-in-one V9图生视频高动态极速版V1_1958905954660200450.json、视频生成/图生视频/Wan2.2 All-in-one图生视频--超级快速_1962517255911288834.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12

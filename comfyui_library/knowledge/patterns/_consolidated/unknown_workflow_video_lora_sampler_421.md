@@ -3,67 +3,56 @@ name: unknown_workflow_video_lora_sampler_421
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.3582
-common_nodes: [BOOLConstant, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyNumberConvert, GetNode, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, PrimitiveStringMultiline, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus TorchCompileSettings, WanAnimatePlus VAELoader]
+coverage: 0.89
+common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2081964333583654914.json, 视频生成/图生视频/2078736579782340610.json, 视频生成/图生视频/2079575491580878850.json, 视频生成/图生视频/2075772380282187777.json, 视频生成/图生视频/2074416012107272194.json]
+members: [视频生成/图生视频/Wan2.2-KJ-6步加速图生视频_1950400282711736322.json, 视频生成/图生视频/Wan2.2-lightx2v-6步加速图生视频-KJ版_1950132208273154049.json, 视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版_1950128875525332993.json, 视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版非常逼真目前最牛_1950206171439390721.json, 视频生成/文生视频/Wan2.2_-KJ-6步加速文生视频_1950379943495647234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_421
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2081964333583654914.json、视频生成/图生视频/2078736579782340610.json、视频生成/图生视频/2079575491580878850.json、视频生成/图生视频/2075772380282187777.json、视频生成/图生视频/2074416012107272194.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-KJ-6步加速图生视频_1950400282711736322.json、视频生成/图生视频/Wan2.2-lightx2v-6步加速图生视频-KJ版_1950132208273154049.json、视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版_1950128875525332993.json、视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版非常逼真目前最牛_1950206171439390721.json、视频生成/文生视频/Wan2.2_-KJ-6步加速文生视频_1950379943495647234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：36%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BOOLConstant`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ComfyNumberConvert`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SetNode`
-- `VHS_LoadVideo`
+- `CreateCFGScheduleFloatList`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus TorchCompileSettings`
-- `WanAnimatePlus VAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `easy imageRemBg` —— 2/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `BiRefNet_Hugo` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `ImageBatchMulti` —— 1/5 个有
-- `RH_RhartImageG2ImageToImage` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
-- `VideoFrameSelector` —— 1/5 个有
+- `CreateVideo` —— 3/5 个有
+- `PreViewVideo` —— 3/5 个有
+- `Primitive integer [Crystools]` —— 3/5 个有
+- `Text Multiline` —— 3/5 个有
+- `WanVideoEmptyEmbeds` —— 3/5 个有
+- `DF_Integer` —— 2/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `SaveVideo` —— 2/5 个有
+- `WanVideoImageToVideoEncode` —— 2/5 个有
+- `easy seed` —— 2/5 个有
+- `CLIPVisionLoader` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
 
 ## 典型参数
 

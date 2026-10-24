@@ -7,13 +7,13 @@ coverage: 0.713
 common_nodes: [GetNode, INTConstant, ImageResizeKJv2, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1922913039635419137.json, 视频生成/图生视频/1927920381506797569.json, 视频生成/图生视频/1922904256758648834.json, 视频生成/图生视频/1930513841942118401.json, 视频生成/图生视频/1924699214469918722.json, 视频生成/图生视频/1922890736801386498.json, 视频生成/图生视频/1931161804242923521.json, 视频生成/图生视频/1922918753066172418.json, 视频生成/图生视频/1929011681165262850.json]
+members: [视频生成/图生视频/VACE一致性角色_1922913039635419137.json, 视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json, 视频生成/图生视频/vace 图生视频_1922904256758648834.json, 视频生成/图生视频/vace+kontext创意视频-背景替换_1930513841942118401.json, 视频生成/图生视频/vace+moviigen+causvid一致性角色+动作控制_1924699214469918722.json, 视频生成/图生视频/vace一致性角色+动作控制_1922890736801386498.json, 视频生成/图生视频/vace一致性角色+双重动作控制_1931161804242923521.json, 视频生成/图生视频/vace角色替换_1922918753066172418.json, 视频生成/图生视频/用 VACE 一键视频抠图 + 背景重绘，让猫咪“躺”进玫瑰花海｜Wan2.1从入门到精通_1929011681165262850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_51
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1922913039635419137.json、视频生成/图生视频/1927920381506797569.json、视频生成/图生视频/1922904256758648834.json、视频生成/图生视频/1930513841942118401.json、视频生成/图生视频/1924699214469918722.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/VACE一致性角色_1922913039635419137.json、视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json、视频生成/图生视频/vace 图生视频_1922904256758648834.json、视频生成/图生视频/vace+kontext创意视频-背景替换_1930513841942118401.json、视频生成/图生视频/vace+moviigen+causvid一致性角色+动作控制_1924699214469918722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

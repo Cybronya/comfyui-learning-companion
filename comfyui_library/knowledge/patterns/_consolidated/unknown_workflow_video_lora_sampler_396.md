@@ -2,67 +2,95 @@
 name: unknown_workflow_video_lora_sampler_396
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.6384
-common_nodes: [CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageFromBatch+, Int, JWStringConcat, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy seed, easy showAnything]
-problems: []
-missing: [ImageFromBatch+, MathExpression|pysssss, easy anythingIndexSwitch, easy cleanGpuUsed, easy seed]
-members: [图片生成/文生图/Wan+2.2创意开箱视频广告_2058721201614319618.json, 视频生成/文生视频/1951940652722540546.json, 视频生成/文生视频/1951952632132874241.json, 视频生成/文生视频/1950092714999201793.json, 视频生成/文生视频/1960890103814139905.json]
+level: strong
+coverage: 0.5574
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DrawViTPose, GetNode, ImageConcatMulti, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, SetNode, SimpleMath+, TorchCompileModelWanVideoV2, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy showAnything, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [视频生成/图生视频/Animate Wan2.2换风格对口型_2005510283697291266.json, "视频生成/图生视频/完美动作迁移,(换！！)_2031965334302892033.json", 视频生成/图生视频/服装展示模特走秀视频图生视频3.5_2066142073039970306.json, 视频生成/图生视频/模特服装细节展示-傲雪AIGC_1987427784719011841.json, 视频生成/图生视频/电商服装模特图生视频展示细节视频动作迁移_2065766712460533761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_396
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Wan+2.2创意开箱视频广告_2058721201614319618.json、视频生成/文生视频/1951940652722540546.json、视频生成/文生视频/1951952632132874241.json、视频生成/文生视频/1950092714999201793.json、视频生成/文生视频/1960890103814139905.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Animate Wan2.2换风格对口型_2005510283697291266.json、视频生成/图生视频/完美动作迁移,(换！！)_2031965334302892033.json、视频生成/图生视频/服装展示模特走秀视频图生视频3.5_2066142073039970306.json、视频生成/图生视频/模特服装细节展示-傲雪AIGC_1987427784719011841.json、视频生成/图生视频/电商服装模特图生视频展示细节视频动作迁移_2065766712460533761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `ImageFromBatch+`
-- `Int`
-- `JWStringConcat`
-- `JjkText`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_LLMAPI_NODE`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `OnnxDetectionModelLoader`
+- `PathchSageAttentionKJ`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `SimpleMath+`
+- `TorchCompileModelWanVideoV2`
+- `TrimVideoLatent`
+- `UnetLoaderGGUF`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
-- `easy seed`
+- `WanAnimateToVideo`
 - `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `JsonToText` —— 4/5 个有
-- `LoadImage` —— 1/5 个有
+- `DF_Integer` —— 4/5 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `Int` —— 4/5 个有
+- `StringToInt` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `easy sleep` —— 4/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `GIMMVFI_interpolate` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `ModelPatchTorchSettings` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `Primitive integer [Crystools]` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `TT_img_enc` —— 1/5 个有
+- `VHS_VideoInfoSource` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 1 - 4 | 5 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | sa_solver | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、MathExpression|pysssss、easy anythingIndexSwitch、easy cleanGpuUsed、easy seed
+- 采样步数 中位数 4，观测区间 1 - 4，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_613
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.974333
-common_nodes: [DramaBoxLoader, DramaBoxTTS, DramaBoxVoiceClone, LoadAudio, Textbox]
+coverage: 0.9428
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/DramaBox TTS 文生语音 声音克隆 音色迁移 高表现力 导演级情绪化语音合成_2056607103107821570.json, 音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json, 音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json]
+members: [音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json, 音频生成/音频生成/VoxCPM2-声音设计-好用-速度快-支持方言_2049787512280846337.json, 音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json, 音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json, 音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_613
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/DramaBox TTS 文生语音 声音克隆 音色迁移 高表现力 导演级情绪化语音合成_2056607103107821570.json、音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json、音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 设计新的声音_2041869666791989249.json、音频生成/音频生成/VoxCPM2-声音设计-好用-速度快-支持方言_2049787512280846337.json、音频生成/音频生成/VoxCPM2人声声音设计-3.0_2046414147428032514.json、音频生成/音频生成/VoxCPM2声音设计V3_2041782616201895938.json、音频生成/音频生成/VoxCPM2声音设计_2047579813652729858.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DramaBoxLoader`
-- `DramaBoxTTS`
-- `DramaBoxVoiceClone`
-- `LoadAudio`
-- `Textbox`
+全部 5 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 2/3 个有
-- `SaveAudioMP3` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `CR Prompt Text` —— 4/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

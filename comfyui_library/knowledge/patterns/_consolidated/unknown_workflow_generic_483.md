@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_483
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.933333
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 1
+common_nodes: [SaveGLB, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNode]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_kling_motion_control.json, comfyui-workflow-templates-json/api_kling_motion_control3.json, comfyui-workflow-templates-json/api_wan2_7_video_edit.json]
+members: [comfyui-workflow-templates-json/api_tripo3_0_text_to_model.json, comfyui-workflow-templates-json/api_tripo3_1_multiview_to_model.json, comfyui-workflow-templates-json/api_tripo3_1_text_to_model.json, comfyui-workflow-templates-json/api_tripo_multiview_to_model.json, comfyui-workflow-templates-json/api_tripo_text_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_483
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_motion_control.json、comfyui-workflow-templates-json/api_kling_motion_control3.json、comfyui-workflow-templates-json/api_wan2_7_video_edit.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo3_0_text_to_model.json、comfyui-workflow-templates-json/api_tripo3_1_multiview_to_model.json、comfyui-workflow-templates-json/api_tripo3_1_text_to_model.json、comfyui-workflow-templates-json/api_tripo_multiview_to_model.json、comfyui-workflow-templates-json/api_tripo_text_to_model.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `SaveGLB`
+- `TripoConversionNode`
+- `TripoRetargetNode`
+- `TripoRigNode`
+- `TripoTextureNode`
 
 **可变部分**（部分 workflow 才有）：
-- `KlingMotionControl` —— 2/3 个有
-- `Wan2VideoEditApi` —— 1/3 个有
+- `TripoTextToModelNode` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `TripoMultiviewToModelNode` —— 2/5 个有
 
 ## 典型参数
 

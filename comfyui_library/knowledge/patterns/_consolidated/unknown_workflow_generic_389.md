@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_389
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.4425
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/1995091218533113857.json, 视频生成/图生视频/2011374870608748546.json, 视频生成/图生视频/2011368468091772929.json, 视频生成/图生视频/1961751814309875714.json]
+members: [图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json, 图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json, 图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json, 图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json, 图片生成/图生图/抠图_1961729963818991618.json, 图片生成/图生图/抠图（超牛）_2017208972964536322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_389
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1995091218533113857.json、视频生成/图生视频/2011374870608748546.json、视频生成/图生视频/2011368468091772929.json、视频生成/图生视频/1961751814309875714.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json、图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json、图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json、图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json、图片生成/图生图/抠图_1961729963818991618.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+- `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_MiniMax_video` —— 2/4 个有
-- `Comfly_vidu_ref2video` —— 1/4 个有
-- `Comfly_vidu_start-end2video` —— 1/4 个有
+- `MaskToImage` —— 3/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

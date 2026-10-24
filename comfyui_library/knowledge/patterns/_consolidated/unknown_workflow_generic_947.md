@@ -1,38 +1,33 @@
 ---
 name: unknown_workflow_generic_947
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.727
-common_nodes: [HeartMuLa_Generate, Int, MultiTextConcatenate, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, TextInput_]
+frequency: 3
+level: moderate
+coverage: 0.833333
+common_nodes: [RH_YouchuanTextToImageV6, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa 歌词变歌曲_2015603368001019905.json, 音频生成/音频生成/HeartMuLa 输入主题变歌曲_2016362622899195905.json]
+members: [图片生成/图生图/悠船图生图-v6_2080554845563613185.json, 图片生成/文生图/Youchuan_TextToImageV6_v6.0_2034593945862283265.json, 图片生成/文生图/悠船文生图-v6_2080610458544992257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_947
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 歌词变歌曲_2015603368001019905.json、音频生成/音频生成/HeartMuLa 输入主题变歌曲_2016362622899195905.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-v6_2080554845563613185.json、图片生成/文生图/Youchuan_TextToImageV6_v6.0_2034593945862283265.json、图片生成/文生图/悠船文生图-v6_2080610458544992257.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `Int`
-- `MultiTextConcatenate`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `TextInput_`
+全部 3 个 workflow 都包含：
+- `RH_YouchuanTextToImageV6`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveText` —— 1/2 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

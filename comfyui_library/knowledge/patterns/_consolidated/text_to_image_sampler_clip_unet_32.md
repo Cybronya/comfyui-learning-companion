@@ -1,86 +1,77 @@
 ---
 name: text_to_image_sampler_clip_unet_32
 type: Text To Image
-frequency: 11
+frequency: 13
 level: moderate
-coverage: 0.924909
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.818154
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/5.其他类型-6.NSF+-09.Z-image生图002.Z-image批量文生图.json_2021966315602317313.json, 图片生成/文生图/Anima Turbo 10-Step｜10步极速文生图_2075555632480079873.json, 图片生成/文生图/Anima强大的动漫文生图turbo高速版_2061065103197425666.json, 图片生成/文生图/Kook_Flux_klein_亚洲人像_2019704034847891458.json, 图片生成/文生图/Krea-2 高真实感与卓越美学文生图_2069624809176256513.json, 图片生成/文生图/LH-DMT版本-2.生图片类-029.Z-image智能改词文生图-NF_2016493278639693826.json, 图片生成/文生图/Z-IMAGE高清超强生图_1995183324647841794.json, 图片生成/文生图/Zimage-turbo保暖内衣_2051484069925531650.json, 图片生成/文生图/krea2+z_image+boogu模型测试对比_2069616764018843650.json, 图片生成/文生图/z-image手动+反推+高清超强生图_1995144168718655490.json, 图片生成/文生图/zimage+krea2+boogu三模型对比_2069599329727373314.json]
+members: [图片生成/图生图/Qwen-lmage+官方版文生图（支持中文字体）_2016410390061654017.json, 图片生成/图生图/Z-IMAGE文生图_图生图洗图小能手_1997999499509399553.json, 图片生成/文生图/Description to Image _ Z-IMAGE_1993955579181940738.json, 图片生成/文生图/Qwen-lmage 官方极速版（支持中文字体）_1954723873654763521.json, 图片生成/文生图/Qwen-lmage 官方版文生图  支持中文字体_1990708737994350594.json, 图片生成/文生图/Qwen-lmage 官方版文生图（支持中文字体）_1952902120161931266.json, 图片生成/文生图/Qwen-lmage 官方版文生图（支持中文字体）_1952909468277346306.json, 图片生成/文生图/Qwen-lmage 官方版文生图（支持中文字体）_1958426605657997313.json, 图片生成/文生图/Qwen-lmage 官方版文生图（支持中文字体）_1963795542739603457.json, 图片生成/文生图/Qwen-lmage 文生图 支持中文字体_2063400027611033601.json, 图片生成/文生图/Qwen-lmage 文生图_2073042188497416194.json, 图片生成/文生图/Z-IMAGE文生图_洗图小钢炮（开源王者）_1994224941826588674.json, 图片生成/文生图/文生图（支持中文字体）_1997683813411172354.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_32
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/5.其他类型-6.NSF+-09.Z-image生图002.Z-image批量文生图.json_2021966315602317313.json、图片生成/文生图/Anima Turbo 10-Step｜10步极速文生图_2075555632480079873.json、图片生成/文生图/Anima强大的动漫文生图turbo高速版_2061065103197425666.json、图片生成/文生图/Kook_Flux_klein_亚洲人像_2019704034847891458.json、图片生成/文生图/Krea-2 高真实感与卓越美学文生图_2069624809176256513.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Qwen-lmage+官方版文生图（支持中文字体）_2016410390061654017.json、图片生成/图生图/Z-IMAGE文生图_图生图洗图小能手_1997999499509399553.json、图片生成/文生图/Description to Image _ Z-IMAGE_1993955579181940738.json、图片生成/文生图/Qwen-lmage 官方极速版（支持中文字体）_1954723873654763521.json、图片生成/文生图/Qwen-lmage 官方版文生图  支持中文字体_1990708737994350594.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
+- `RH_Captioner`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 9/11 个有
-- `ImpactInt` —— 8/11 个有
-- `String Literal` —— 8/11 个有
-- `easy showAnything` —— 8/11 个有
-- `CR Prompt List` —— 7/11 个有
-- `LoadImage` —— 6/11 个有
-- `CR Text` —— 5/11 个有
-- `Dapao_LlamaCaption` —— 4/11 个有
-- `Dapao_LlamaCaptionOptions` —— 4/11 个有
-- `RegexReplace` —— 4/11 个有
-- `LoraLoaderModelOnly` —— 3/11 个有
-- `easy cleanGpuUsed` —— 3/11 个有
-- `GetImageSize` —— 2/11 个有
-- `LayerUtility: ImageReel` —— 2/11 个有
-- `LayerUtility: ImageReelComposit` —— 2/11 个有
-- `Qwen3VL_Advanced` —— 2/11 个有
-- `ShowText|pysssss` —— 2/11 个有
-- `UltimateSDUpscale` —— 2/11 个有
-- `UpscaleModelLoader` —— 2/11 个有
-- `easy anythingIndexSwitch` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `ProcessString` —— 1/11 个有
+- `ImpactSwitch` —— 12/13 个有
+- `CR SDXL Aspect Ratio` —— 10/13 个有
+- `ModelSamplingAuraFlow` —— 10/13 个有
+- `Textbox` —— 10/13 个有
+- `Int` —— 9/13 个有
+- `ConditioningZeroOut` —— 3/13 个有
+- `Text Multiline` —— 2/13 个有
+- `easy int` —— 2/13 个有
+- `AddLabel` —— 1/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/13 个有
+- `LoraLoaderModelOnly` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | 720 - 1280 | 11 | 78% |
-| 高度 | 1280 | 720 - 1920 | 11 | 78% |
-| 采样步数 | 9 | 4 - 15 | 11 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 11 | 97% |
-| 采样算法 | euler | - | 11 | 36% |
-| 调度器 | simple | - | 11 | 64% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 20 | 8 - 20 | 13 | 71% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 13 | 66% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 512 | 512 - 1024 | 13 | 69% |
+| 高度 | 512 | 512 - 1536 | 13 | 45% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 720 - 1280，11 个样本
-- 高度 中位数 1280，观测区间 720 - 1920，11 个样本
-- 采样步数 中位数 9，观测区间 4 - 15，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，11 个样本，取值集中（一致性 97%）
-- 采样算法 最常用 euler，11 个样本，一致性 36%
-- 调度器 最常用 simple，11 个样本，一致性 64%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（13/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 8 - 20，13 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，13 个样本
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 1024，13 个样本
+- 高度 中位数 512，观测区间 512 - 1536，13 个样本，取值分散，一致性仅 45%

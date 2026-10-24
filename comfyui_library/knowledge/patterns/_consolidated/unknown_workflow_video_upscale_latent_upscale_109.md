@@ -2,101 +2,77 @@
 name: unknown_workflow_video_upscale_latent_upscale_109
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.546
-common_nodes: [CFGGuider, CS-MultiImageLoader, ComfyMathExpression, ComfySwitchNode, DualCLIPLoader, GetICLoRAParameters, GetImage, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SetNode, ShowText|pysssss, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, YUAN_TXTConvertAny, YUAN_TXTListNumber, YUAN_TXTParagraphSplitter, YuanCLIPTimeline, YuanTool, easy positive]
+level: strong
+coverage: 0.492
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, GuHaiAutoImageSplit, INTConstant, ImageFromBatch+, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, Label (rgthree), LatentUpscaleModelLoader, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, ManualSigmas, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, RandomNoise, RecordAudio, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SimpleCalculatorKJ, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/2069230316849553409.json, 视频生成/图生视频/2079201412885602305.json, 视频生成/图生视频/2074058822251008001.json]
+members: [视频生成/图生视频/LTX2.3 四宫格短剧_2045413538109329409.json, 视频生成/图生视频/aidir-LTX2.3 四宫格生视频_2070309380381298690.json, 视频生成/图生视频/图生视频二号_2052328089341964289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_109
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2069230316849553409.json、视频生成/图生视频/2079201412885602305.json、视频生成/图生视频/2074058822251008001.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 四宫格短剧_2045413538109329409.json、视频生成/图生视频/aidir-LTX2.3 四宫格生视频_2070309380381298690.json、视频生成/图生视频/图生视频二号_2052328089341964289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **可信度**：强结论
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CFGGuider`
-- `CS-MultiImageLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
 - `DualCLIPLoader`
-- `GetICLoRAParameters`
-- `GetImage`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
+- `GuHaiAutoImageSplit`
 - `INTConstant`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
 - `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
+- `Label (rgthree)`
 - `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
+- `PreviewImage`
 - `PrimitiveFloat`
-- `PrimitiveInt`
 - `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
-- `RegexExtract`
+- `RecordAudio`
 - `SamplerCustomAdvanced`
 - `SetNode`
 - `ShowText|pysssss`
+- `SimpleCalculatorKJ`
 - `UNETLoader`
 - `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTListNumber`
-- `YUAN_TXTParagraphSplitter`
-- `YuanCLIPTimeline`
-- `YuanTool`
-- `easy positive`
-
-**可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 2/3 个有
-- `LTXVConditioning` —— 2/3 个有
-- `VAELoader` —— 2/3 个有
-- `YuanClipGuide` —— 2/3 个有
-- `BerniniConditioning` —— 1/3 个有
-- `CLIPLoader` —— 1/3 个有
-- `ComfyAndNode` —— 1/3 个有
-- `ComfyNotNode` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `KSamplerAdvanced` —— 1/3 个有
-- `LTXVAddGuide` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `ResizeImageMaskNode` —— 1/3 个有
-- `StringConcatenate` —— 1/3 个有
-- `StringLength` —— 1/3 个有
-- `StringReplace` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `YUAN_TXTAppearanceOrder` —— 1/3 个有
-- `YUAN_TXTReplace` —— 1/3 个有
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 1 | 100% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | euler_ancestral | - | 1 | 100% |
-| 重绘幅度 | simple | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -104,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

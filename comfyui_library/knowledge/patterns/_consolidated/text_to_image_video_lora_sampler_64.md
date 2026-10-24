@@ -3,68 +3,92 @@ name: text_to_image_video_lora_sampler_64
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.838818
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, INTConstant, JjkText, KSampler, LoraLoaderModelOnly, Seed, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, solarL_SaveImagesToZip]
+coverage: 0.751545
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, EmptyImage, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, ImpactSwitch, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Bernini视频去水印天花板｜无痕去字幕logo画质如初_2107670519372935170.json, 视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107328479384653825.json, 视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107441049831559170.json, 视频生成/图生视频/bernini局部衣服修改｜电商带货视频编辑图生视频处理_2094718463712518146.json, 视频生成/图生视频/带货主播手中产品替换｜电商视频生视频一键搞定_2095545842093617153.json, 视频生成/图生视频/电商带货bernini局部衣服修改｜视频生视频换装更自由_2106265187983646722.json, 视频生成/图生视频/电商带货产品替换｜视频图生视频主播手持商品更换_2091243839599239169.json, 视频生成/图生视频/电商带货替换主播手中产品工作流，视频生视频图生视频处理工具_2106844793283371009.json, 视频生成/图生视频/电商带货替换主播手中产品工作流，视频生视频图生视频处理工具_2110530638565699586.json, 视频生成/图生视频/电商带货替换主播手中产品视频生视频图生视频_2087331268609527809.json, 视频生成/图生视频/电商带货视频换产品神器｜主播手中商品随意替换，不用重新拍片_2099515530515402753.json]
+members: [视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json, 视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087470174856368129.json, 视频生成/图生视频/V2超高拟态舞蹈｜160帧直出1920高清动作迁移_2092184846041960450.json, 视频生成/图生视频/平行世界的我起号专用动作迁移图生视频_2087313287083020289.json, 视频生成/图生视频/平行世界的我风格转换｜动漫手办乐高多风格视频生成_2097806857049042945.json, 视频生成/图生视频/平行世界的我｜起号专用动作迁移图生视频一键生成_2092147311823638530.json, 视频生成/文生视频/V2视频换背景｜文生视频视频生视频替换生成_2092171934913097729.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_64
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Bernini视频去水印天花板｜无痕去字幕logo画质如初_2107670519372935170.json、视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107328479384653825.json、视频生成/图生视频/Bernini高清视频编辑去水印天花板｜无痕去字幕去logo，画质如初_2107441049831559170.json、视频生成/图生视频/bernini局部衣服修改｜电商带货视频编辑图生视频处理_2094718463712518146.json、视频生成/图生视频/带货主播手中产品替换｜电商视频生视频一键搞定_2095545842093617153.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json、视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json、视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ColorMatch`
+- `EmptyImage`
 - `EmptyLatentImage`
-- `INTConstant`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `Seed`
+- `PreviewImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SetNode`
 - `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus Bernini`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ContextOptions`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SamplerExtraArgs`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
-- `VHS_VideoInfoLoaded` —— 8/11 个有
-- `easy showAnything` —— 8/11 个有
-- `孤海注释` —— 8/11 个有
-- `EmptyImage` —— 4/11 个有
-- `PreviewImage` —— 4/11 个有
-- `GetNode` —— 3/11 个有
-- `ImageResizeKJv2` —— 3/11 个有
-- `SetNode` —— 3/11 个有
-- `TextCombinerSix` —— 3/11 个有
-- `VHS_VideoInfoSource` —— 3/11 个有
-- `SaveImage` —— 2/11 个有
+- `AIO_Preprocessor` —— 10/11 个有
+- `AddLabel` —— 10/11 个有
+- `WanVideoTeaCache` —— 10/11 个有
+- `ShowText|pysssss` —— 7/11 个有
+- `WanVideoBlockSwap` —— 4/11 个有
+- `WanVideoLoraSelect` —— 4/11 个有
+- `WanVideoModelLoader` —— 4/11 个有
+- `WanVideoTorchCompileSettings` —— 4/11 个有
+- `WanVideoVACEModelSelect` —— 4/11 个有
+- `ConditioningZeroOut` —— 3/11 个有
+- `DualCLIPLoader` —— 3/11 个有
+- `FluxGuidance` —— 3/11 个有
+- `FluxKontextImageScale` —— 3/11 个有
+- `ImageBlend` —— 3/11 个有
+- `NunchakuFluxDiTLoader` —— 3/11 个有
+- `RH_Translator` —— 3/11 个有
+- `ReferenceLatent` —— 3/11 个有
+- `SaveImage` —— 3/11 个有
+- `Seed_` —— 3/11 个有
+- `Text` —— 3/11 个有
+- `VAEEncode` —— 3/11 个有
+- `easy imageConcat` —— 3/11 个有
+- `easy seed` —— 3/11 个有
+- `ImageFromBatch` —— 1/11 个有
+- `LayerUtility: ImageBlend` —— 1/11 个有
+- `WanVideoEnhanceAVideo` —— 1/11 个有
 
 ## 典型参数
 
@@ -82,7 +106,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -93,4 +117,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，11 个样本，一致性 100%
 - 调度器 最常用 beta，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（12/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足

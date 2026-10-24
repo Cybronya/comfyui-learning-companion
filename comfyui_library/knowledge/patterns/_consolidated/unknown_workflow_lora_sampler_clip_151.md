@@ -1,60 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_clip_151
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.976
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.83575
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VHS_LoadVideo]
 problems: []
-missing: [LayerUtility: TextJoin]
-members: [图片生成/文生图/1946032541281251330.json, 图片生成/文生图/1948753188301221890.json]
+missing: []
+members: [图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json, 图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json, 视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json, 视频生成/图生视频/添加_替换_消除_风格转绘_2060274127046533121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_151
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1946032541281251330.json、图片生成/文生图/1948753188301221890.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json、图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json、视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json、视频生成/图生视频/添加_替换_消除_风格转绘_2060274127046533121.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LoraLoader`
+- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DisplayText` —— 1/2 个有
-- `Joy_caption_two_advanced` —— 1/2 个有
-- `Joy_caption_two_load` —— 1/2 个有
-- `Joy_extra_options` —— 1/2 个有
-- `LayerUtility: TextJoin` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
+- `LoadAudio` —— 3/4 个有
+- `ToggleAnyNode` —— 3/4 个有
+- `BlockifyMask` —— 2/4 个有
+- `CLIPLoader` —— 2/4 个有
+- `EmptyImage` —— 2/4 个有
+- `EmptyLTXVLatentVideo` —— 2/4 个有
+- `GetImageRangeFromBatch` —— 2/4 个有
+- `GrowMaskWithBlur` —— 2/4 个有
+- `ImageCompositeFromMaskBatch+` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `LTXVLatentUpsampler` —— 2/4 个有
+- `LatentUpscaleModelLoader` —— 2/4 个有
+- `PrimitiveBoolean` —— 2/4 个有
+- `ResizeImagesByLongerEdge` —— 2/4 个有
+- `SAM3Segment` —— 2/4 个有
+- `StringConcatenate` —— 2/4 个有
+- `TextGenerate` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `MaskToImage` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 896 | - | 2 | 86% |
-| 高度 | 1212 | - | 2 | 84% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,9 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 896，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 高度 中位数 1212，样本不足，未给区间，2 个样本，取值集中（一致性 84%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: TextJoin
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

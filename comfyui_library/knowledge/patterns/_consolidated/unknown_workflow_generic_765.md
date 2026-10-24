@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_765
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.714
-common_nodes: [CR Text, Dapao_LlamaChat, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage, easy showAnything, easy textSwitch]
+frequency: 4
+level: moderate
+coverage: 0.82425
+common_nodes: [LoadImage, RH_Translator, RH_Veo3_Image2Video, SaveVideo, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变_真香_的高清文生图海报设计多种风格_2066072969440485377.json, 图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变真香的高清文生图海报设计多种风格_2069038840697937921.json]
+members: [视频生成/图生视频/全能视频V3.1图生视频（全自动）_2003989297176977410.json, 视频生成/图生视频/全能视频V3.1首尾帧视频（全自动）_2003836300581060609.json, 视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json, 视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_765
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变_真香_的高清文生图海报设计多种风格_2066072969440485377.json、图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变真香的高清文生图海报设计多种风格_2069038840697937921.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频V3.1图生视频（全自动）_2003989297176977410.json、视频生成/图生视频/全能视频V3.1首尾帧视频（全自动）_2003836300581060609.json、视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json、视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `Dapao_LlamaChat`
-- `PrimitiveInt`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `easy showAnything`
-- `easy textSwitch`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_Translator`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
+- `ShowText|pysssss`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 3/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

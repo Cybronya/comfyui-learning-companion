@@ -1,0 +1,122 @@
+---
+key: 图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json
+name: Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json
+hash: 3981e97b76280d38
+coverage: 0.875
+learned_at: 2026-10-23 10:59:06
+nodes: [KSamplerSelect, KSamplerSelect, UNETLoader, CLIPLoader, VAELoader, CFGGuider, ConditioningZeroOut, CLIPTextEncode, ReferenceLatent, ReferenceLatent, CLIPLoader, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, UNETLoader, Note, ImpactSwitch, Flux2Scheduler, EmptyFlux2LatentImage, FluxKontextMultiReferenceLatentMethod, FluxKontextMultiReferenceLatentMethod, VAELoader, VAEDecode, easy showAnything, GetImageSize, SaveImage, Image Comparer (rgthree), EmptyLatentImage, ImpactInt, LoraLoaderModelOnly, ImpactSwitch, SaveImage, RH_LLMAPI_NODE, ModelSamplingAuraFlow, EmptyLatentImage, SaveImage, CFGNorm, FluxResolutionNode, SaveImage, VAEDecode, SamplerCustomAdvanced, VAEDecode, Image Comparer (rgthree), SamplerCustomAdvanced, KSampler, CLIPLoader, VAELoader, ReferenceLatent, Flux2Scheduler, ImpactSwitch, RandomNoise, LayerUtility: ImageReelComposit, LoadImage, UNETLoader, CLIPTextEncode, ReferenceLatent, CFGGuider, ConditioningZeroOut, VAEEncode, LayerUtility: ImageReel, ImageScaleToTotalPixels, EmptyFlux2LatentImage, Text Multiline, KOOK_ImageCompression, Image Comparer (rgthree)]
+patterns: [text_to_image, image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "sampler_name": "euler", "scheduler": "simple", "seed": 188112630318995, "steps": 8, "width": 720}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（64 个）：
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `CLIPTextEncode` ★核心
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `CLIPLoader`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus`
+- `UNETLoader` ★核心
+- `Note`
+- `ImpactSwitch`
+- `Flux2Scheduler`
+- `EmptyFlux2LatentImage`
+- `FluxKontextMultiReferenceLatentMethod`
+- `FluxKontextMultiReferenceLatentMethod`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `easy showAnything`
+- `GetImageSize`
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `EmptyLatentImage` ★核心
+- `ImpactInt`
+- `LoraLoaderModelOnly` ★核心
+- `ImpactSwitch`
+- `SaveImage`
+- `RH_LLMAPI_NODE`
+- `ModelSamplingAuraFlow`
+- `EmptyLatentImage` ★核心
+- `SaveImage`
+- `CFGNorm`
+- `FluxResolutionNode`
+- `SaveImage`
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `Image Comparer (rgthree)`
+- `SamplerCustomAdvanced` ★核心
+- `KSampler` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ReferenceLatent`
+- `Flux2Scheduler`
+- `ImpactSwitch`
+- `RandomNoise`
+- `LayerUtility: ImageReelComposit`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `ReferenceLatent`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `VAEEncode` ★核心
+- `LayerUtility: ImageReel`
+- `ImageScaleToTotalPixels`
+- `EmptyFlux2LatentImage`
+- `Text Multiline`
+- `KOOK_ImageCompression`
+- `Image Comparer (rgthree)`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `720`
+- `height` = `1280`
+- `batch_size` = `1`
+- `seed` = `188112630318995`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **88%**（56/64）
+
+**有卡**：`KSamplerSelect`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CFGGuider`、`ConditioningZeroOut`、`CLIPTextEncode`、`ReferenceLatent`、`TextEncodeQwenImageEditPlus`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`FluxKontextMultiReferenceLatentMethod`、`VAEDecode`、`GetImageSize`、`SaveImage`、`EmptyLatentImage`、`ImpactInt`、`LoraLoaderModelOnly`、`RH_LLMAPI_NODE`、`ModelSamplingAuraFlow`、`CFGNorm`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`KSampler`、`RandomNoise`、`LayerUtility: ImageReelComposit`、`LoadImage`、`VAEEncode`、`LayerUtility: ImageReel`、`ImageScaleToTotalPixels`、`Text Multiline`、`KOOK_ImageCompression`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

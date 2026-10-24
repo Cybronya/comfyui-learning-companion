@@ -1,79 +1,73 @@
 ---
 name: text_to_image_upscale_latent_upscale_sampler_3
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.686
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, LatentUpscaleBy, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.916
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, JoinStrings, KSampler, LatentUpscaleBy, Prompts Everywhere, SaveImage, VAEDecode, easy positive, easy promptLine]
+problems: []
 missing: []
-members: [图片生成/文生图/Krea2 文生图双采样4K版_2092280334065946625.json, 图片生成/文生图/krea2 文生图 工作流+全节点注释_2077385249922834434.json]
+members: [图片生成/文生图/二次元XL模型批量生图，2D日漫风格，内置大部分知名日漫IP人物_1997292709805244418.json, 图片生成/文生图/网红量产美女_1903338756966096897.json, 图片生成/文生图/风格化二次元模型批量文生图_1998691179854225409.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_sampler_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2 文生图双采样4K版_2092280334065946625.json、图片生成/文生图/krea2 文生图 工作流+全节点注释_2077385249922834434.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/二次元XL模型批量生图，2D日漫风格，内置大部分知名日漫IP人物_1997292709805244418.json、图片生成/文生图/网红量产美女_1903338756966096897.json、图片生成/文生图/风格化二次元模型批量文生图_1998691179854225409.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `JjkText`
+- `JoinStrings`
 - `KSampler`
 - `LatentUpscaleBy`
-- `LoadImage`
+- `Prompts Everywhere`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
+- `easy positive`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningKrea2Rebalance` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `Anything Everywhere` —— 2/3 个有
+- `KSamplerAdvanced` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `LoraLoader` —— 1/3 个有
+- `easy negative` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1472 | - | 2 | 87% |
-| 高度 | 1232 | - | 2 | 75% |
-| 采样步数 | 6 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 50% |
-| 调度器 | sgm_uniform | - | 2 | 50% |
-| 重绘幅度 | 0.8 | - | 2 | 75% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 16 | 1 - 16 | 3 | 36% |
+| 采样算法 | 2 | - | 2 | 100% |
+| 调度器 | euler_ancestral | - | 3 | 67% |
+| 重绘幅度 | normal | - | 3 | 67% |
+| 宽度 | 720 | 720 - 1280 | 3 | 71% |
+| 高度 | 1280 | 720 - 1280 | 3 | 76% |
+| LoRA 模型强度 | 0.8 | - | 1 | 100% |
+| LoRA 文本强度 | 0.8 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1472，样本不足，未给区间，2 个样本，取值集中（一致性 87%）
-- 高度 中位数 1232，样本不足，未给区间，2 个样本
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.8，样本不足，未给区间，2 个样本
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 16，观测区间 1 - 16，3 个样本，取值分散，一致性仅 36%
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，3 个样本，一致性 67%
+- 重绘幅度 最常用 normal，3 个样本，一致性 67%
+- 宽度 中位数 720，观测区间 720 - 1280，3 个样本
+- 高度 中位数 1280，观测区间 720 - 1280，3 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 16，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

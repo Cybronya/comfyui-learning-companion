@@ -1,51 +1,54 @@
 ---
 name: unknown_workflow_video_sampler_vae_174
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7625
-common_nodes: [CLIPVisionLoader, CreateVideo, ImageResizeKJv2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveVideo, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.631333
+common_nodes: [AIO_Preprocessor, AddLabel, GetNode, ImageResizeKJv2, Int, JjkText, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk数字人-照片语音口播工作流_2095011792023015426.json, 视频生成/文生视频/wan2_1_infinitetalk_music数字人+全节点注释_2055791893207887873.json]
+members: [视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_174
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk数字人-照片语音口播工作流_2095011792023015426.json、视频生成/文生视频/wan2_1_infinitetalk_music数字人+全节点注释_2055791893207887873.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CreateVideo`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `AddLabel`
+- `GetNode`
 - `ImageResizeKJv2`
-- `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SaveVideo`
-- `WanVideoClipVisionEncode`
+- `Int`
+- `JjkText`
+- `LayerUtility: PurgeVRAM`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RIFE VFI`
+- `SetNode`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 1/2 个有
-- `DownloadAndLoadWav2VecModel` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `VHS_LoadAudioUpload` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `Wav2VecModelLoader` —— 1/2 个有
+- `Bjornulf_ShowInt` —— 2/3 个有
 
 ## 典型参数
 
@@ -57,4 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,60 +3,67 @@ name: unknown_workflow_video_lora_sampler_910
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.8375
+common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1914138516001910786.json, 视频生成/图生视频/1935149925716172801.json]
+members: [视频生成/图生视频/🍣视频转绘DITTO_--转你所想-无限时长版🍣_1981043696474931201.json, 视频生成/文生视频/svi-film-转绘循环-8帧重叠_1983865424628613121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_910
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1914138516001910786.json、视频生成/图生视频/1935149925716172801.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🍣视频转绘DITTO_--转你所想-无限时长版🍣_1981043696474931201.json、视频生成/文生视频/svi-film-转绘循环-8帧重叠_1983865424628613121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM V2`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `SetNode`
 - `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
-- `WanVideoMagCache`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `RH_OneShot_Prompter` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageBatch` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `VHS_BatchManager` —— 1/2 个有
 - `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoApplyNAG` —— 1/2 个有
-- `WanVideoTextEncode` —— 1/2 个有
-- `WanVideoTextEncodeSingle` —— 1/2 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 1/2 个有
-- `WanVideoUniAnimatePoseInput` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

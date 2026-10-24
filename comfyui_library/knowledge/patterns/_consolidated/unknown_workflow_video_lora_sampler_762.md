@@ -3,101 +3,89 @@ name: unknown_workflow_video_lora_sampler_762
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.47
-common_nodes: [Any Switch (rgthree), BatchImagesNode, CFGGuider, CLIPTextEncode, CR Text Concatenate, CheckpointLoaderSimple, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, ExtractLinesByIndex, Fast Groups Bypasser (rgthree), GetNode, INTConstant, JjkText, KSamplerSelect, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LoraLoaderModelOnly, ManualSigmas, PreviewAny, PreviewImage, PrimitiveStringMultiline, ProcessString, PromptRelayEncode, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SetNode, SomethingToString, VAEDecode, VAELoaderKJ, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.446
+common_nodes: [AddLabel, BasicScheduler, CFGGuider, CLIPLoader, ComfyMathExpression, ComfyNumberConvert, ComfySwitchNode, CreateVideo, EmptyAudio, EmptyMiniMaxH3LatentAV, GetImageSize, GetNode, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SolAttnPatch, SomethingToString, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2080476788374986754.json, 视频生成/图生视频/2078270565433044994.json]
+members: [视频生成/图生视频/MiniMax H3 风格参考视频风格迁移_2099000699609767937.json, 视频生成/图生视频/MinimaxH3视频角色替换+lms放大_2110649907953627137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_762
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2080476788374986754.json、视频生成/图生视频/2078270565433044994.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 风格参考视频风格迁移_2099000699609767937.json、视频生成/图生视频/MinimaxH3视频角色替换+lms放大_2110649907953627137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BatchImagesNode`
+- `AddLabel`
+- `BasicScheduler`
 - `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text Concatenate`
-- `CheckpointLoaderSimple`
+- `CLIPLoader`
 - `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ExtractLinesByIndex`
-- `Fast Groups Bypasser (rgthree)`
+- `ComfyNumberConvert`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `EmptyAudio`
+- `EmptyMiniMaxH3LatentAV`
+- `GetImageSize`
 - `GetNode`
-- `INTConstant`
-- `JjkText`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LiconMSR`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PreviewAny`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `ProcessString`
-- `PromptRelayEncode`
-- `PurgeVRAM_UTK`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `SetNode`
+- `SolAttnPatch`
 - `SomethingToString`
+- `StringConcatenate`
+- `TextGenerate`
+- `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAELoader`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioBeforeAfterSilence` —— 1/2 个有
-- `CM_IntToFloat` —— 1/2 个有
-- `FB_Qwen3TTSDialogueInference` —— 1/2 个有
-- `FB_Qwen3TTSRoleBank` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 1/2 个有
-- `JoinStringMulti` —— 1/2 个有
-- `LTXVAudioVAEEncode` —— 1/2 个有
-- `LTXVAudioVideoMask` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `SoundFlow_GetLength` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `TextGenerateLTX2Prompt` —— 1/2 个有
-- `VRAMReserver` —— 1/2 个有
-- `WhisperSTT` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BasicGuider` —— 1/2 个有
+- `CLIPTextEncode` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `GetImageSize+` —— 1/2 个有
+- `GetVideoComponents` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `LTXVConcatAVLatent` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `ResizeImageMaskNode` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 145 | - | 2 | 100% |
-| 高度 | 24 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -105,6 +93,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 145，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

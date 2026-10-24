@@ -1,38 +1,43 @@
 ---
 name: unknown_workflow_sampler_38
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncode, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.9665
+common_nodes: [GetImageSizeAndCount, ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/BitDance-14B-64x_2026611465637072898.json, 图片生成/文生图/BitDance字节-文生图_2026930242924843010.json]
+members: [图片生成/图生图/UniWorld高分辨率图像视觉模型体验_1930949199872110594.json, 图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931570428488429570.json, 图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931579845157781506.json, 图片生成/文生图/UniWorld高分辨率图像视觉模型体验_1935641351222657025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_38
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/BitDance-14B-64x_2026611465637072898.json、图片生成/文生图/BitDance字节-文生图_2026930242924843010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/UniWorld高分辨率图像视觉模型体验_1930949199872110594.json、图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931570428488429570.json、图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931579845157781506.json、图片生成/文生图/UniWorld高分辨率图像视觉模型体验_1935641351222657025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BitDanceDecode`
-- `BitDanceLoader`
-- `BitDanceResolution`
-- `BitDanceSampler`
-- `BitDanceTextEncode`
+全部 4 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `CR SDXL Aspect Ratio` —— 2/4 个有
+- `DDColor_Colorize` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
 
 ## 典型参数
 
@@ -44,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

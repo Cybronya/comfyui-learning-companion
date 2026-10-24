@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_497
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.49025
-common_nodes: [FloatConstant, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.49275
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Divide [DVB], FlashVSRNode, Float, GetNode, ImageResizeKJv2, Int, JWInteger, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SigmasGraph, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1986678094163542018.json, 视频生成/图生视频/1985530198026297346.json, 视频生成/图生视频/1988142072014266369.json, 视频生成/文生视频/LongCat_T2V_full_automatic_1985535936635224065.json]
+members: [视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json, 视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json, 视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_497
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1986678094163542018.json、视频生成/图生视频/1985530198026297346.json、视频生成/图生视频/1988142072014266369.json、视频生成/文生视频/LongCat_T2V_full_automatic_1985535936635224065.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json、视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json、视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json、视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -23,44 +23,44 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageSizeAndCount`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Divide [DVB]`
+- `FlashVSRNode`
+- `Float`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `Int`
+- `JWInteger`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `SigmasGraph`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 3/4 个有
 - `LoadImage` —— 3/4 个有
-- `MathExpression|pysssss` —— 3/4 个有
-- `easy forLoopEnd` —— 3/4 个有
-- `easy forLoopStart` —— 3/4 个有
-- `easy promptLine` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `CR Text Replace` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
-- `ToString` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
+- `MiniMaxH3ImageToVideo` —— 2/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
+- `LoadAudio` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
+- `SDVN Fast Groups Bypasser` —— 1/4 个有
+- `SoundFlow_GetLength` —— 1/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/4 个有
+- `ZNGB_AudioCrop` —— 1/4 个有
 
 ## 典型参数
 

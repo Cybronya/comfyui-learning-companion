@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_94
 type: Unknown Workflow
-frequency: 9
+frequency: 15
 level: moderate
-coverage: 0.944444
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.774867
+common_nodes: [LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
+members: [图片生成/图生图/全能图片G2.0----官方稳定版_2089645550072320002.json, 图片生成/图生图/全能图片G2.0----官方稳定版_2100495991307853826.json, 图片生成/图生图/全能图片G2.0语言+图像驱动 • 视觉生成引擎：让想象成为可计算的现实_图生图_2047857827712077826.json, 图片生成/图生图/剧情九宫格分镜（G-2稳定版）_2086248150104367106.json, 图片生成/图生图/局部改图_2093164310137753602.json, 图片生成/图生图/效果图分析_2098683480191361026.json, 图片生成/图生图/方汤圆稳定版Open G2_图生图_2048656784813985793.json, 图片生成/图生图/早安图优化_2080573432600813570.json, 图片生成/图生图/早安图优化测试_2080929418750545922.json, 图片生成/图生图/最新G image2 官方满血版电商批量全套Lookbook裂变工作流 V1.0_2051311784241446914.json, 图片生成/图生图/洗图（可洗测量图）_2081999861079175170.json, 图片生成/图生图/空白工作流_2081639907474366465.json, 图片生成/图生图/鸟瞰图测试_2081566136495333378.json, 图片生成/图生图/鸟瞰图生成_2083069804184956929.json, 图片生成/文生图/GS-生成6宫格图片及提示词_2062855749398781953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_94
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0----官方稳定版_2089645550072320002.json、图片生成/图生图/全能图片G2.0----官方稳定版_2100495991307853826.json、图片生成/图生图/全能图片G2.0语言+图像驱动 • 视觉生成引擎：让想象成为可计算的现实_图生图_2047857827712077826.json、图片生成/图生图/剧情九宫格分镜（G-2稳定版）_2086248150104367106.json、图片生成/图生图/局部改图_2093164310137753602.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
-- `CR Text` —— 3/9 个有
-- `JjkText` —— 1/9 个有
-- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
+- `JjkText` —— 14/15 个有
+- `PreviewAny` —— 2/15 个有
+- `RH_LLMAPI_Pro_Node` —— 1/15 个有
 
 ## 典型参数
 

@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_63
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.745727
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.517091
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, GetImage, GetNode, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanMultiImage, YuanTool, Yuan_MiniMaxH3Video, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/AI音乐MV数字人二采方案，Separate AV Latent加Minimax H3 Selfli_2110790463421763585.json, 视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H_2105763503423442946.json, 视频生成/图生视频/MMH3 Selflift常规万能流，直出1080p最高质量版_2110447282897383425.json, 视频生成/图生视频/MMH3 Selflift短剧直出1080p 高质量视频制作_2110255149494132737.json, 视频生成/图生视频/MMH3 Selflift短剧直出1080p 高质量视频制作_2110369401181655042.json, 视频生成/图生视频/MiniMax H3 SelfLift数字人1080p图生视频处理工具_2101012772418052098.json, 视频生成/图生视频/MiniMax H3 Sigma强化SelfLift双采去油音频驱动数字人加速工具_2101745250376179713.json, 视频生成/图生视频/MiniMax H3 sigma强化+Selflift双采｜文不油武不糊小脸不崩_2108071344842821633.json, 视频生成/图生视频/Minimax H3 sigma强化加Selflift双采文不油武不糊 多图音频参考生视频_2109737500267859970.json, 视频生成/图生视频/Selflift双采加sigma强化Minimax H3 多图音频参考视频生成_2110355179118882817.json, 视频生成/图生视频/超强Minimax H3 sigma强化加Selflift双采文不油武不糊全能多图3音频参考生视频量_2108279560327487489.json]
+members: [视频生成/图生视频/MiniMax H3全栈式短剧生成V12.1宫格版，图生视频短剧制作工具_2106106643212750849.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作_2098294284297527297.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作工具_2098655909403783169.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版 图生视频CG幻想风格多场景产出_2105443312898498561.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2102902512931135489.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频短剧制作工具_2107181508682407938.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成短剧版，图生视频一站式短剧制作工作流_2102904045089411073.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1宫格版｜图生视频短剧利器_2106989222166097922.json, 视频生成/图生视频/MiniMax_H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2104734396803796994.json, 视频生成/图生视频/MiniMax_H3全栈式短剧生成宫格版，图生视频短剧制作工具_2109442367852994561.json, 视频生成/文生视频/MiniMax_H3全栈式短剧生成短剧版，图生视频一站式短剧制作工作流_2104732928919031809.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_63
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/AI音乐MV数字人二采方案，Separate AV Latent加Minimax H3 Selfli_2110790463421763585.json、视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H_2105763503423442946.json、视频生成/图生视频/MMH3 Selflift常规万能流，直出1080p最高质量版_2110447282897383425.json、视频生成/图生视频/MMH3 Selflift短剧直出1080p 高质量视频制作_2110255149494132737.json、视频生成/图生视频/MMH3 Selflift短剧直出1080p 高质量视频制作_2110369401181655042.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3全栈式短剧生成V12.1宫格版，图生视频短剧制作工具_2106106643212750849.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作_2098294284297527297.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V9.2 一站式短剧制作工具_2098655909403783169.json、视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版 图生视频CG幻想风格多场景产出_2105443312898498561.json、视频生成/图生视频/MiniMax H3全栈式短剧生成宫格版，图生视频CG幻想风格多场景产出_2102902512931135489.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
@@ -27,63 +27,69 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
+- `GetImage`
+- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
+- `SetNode`
+- `StringConcatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTJsonSwitch`
+- `YUAN_TXTPreviewContent`
+- `YUAN_TXTShotDurations`
+- `YuanAudioList`
+- `YuanAudioLoad`
+- `YuanAudioSplit`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_MiniMaxH3Video`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
 - `SaveImage` —— 10/11 个有
-- `ModelPreviewOverrideKJ` —— 9/11 个有
-- `VAEDecodeAudio` —— 7/11 个有
-- `PreviewAny` —— 6/11 个有
-- `PrimitiveFloat` —— 6/11 个有
-- `AudioCrop` —— 5/11 个有
-- `GetNode` —— 5/11 个有
-- `H3SigmaRefiner` —— 5/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/11 个有
-- `SetNode` —— 5/11 个有
-- `Text Concatenate` —— 5/11 个有
-- `easy cleanGpuUsed` —— 5/11 个有
-- `easy seed` —— 5/11 个有
-- `easy showAnything` —— 5/11 个有
-- `Any To String (mtb)` —— 4/11 个有
-- `ComfyNumberConvert` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `Float` —— 4/11 个有
-- `LTXVAudioVAEEncode` —— 4/11 个有
-- `LTXVConcatAVLatent` —— 4/11 个有
-- `LoraLoaderBypassModelOnly` —— 4/11 个有
-- `PreviewAudio` —— 4/11 个有
-- `PrimitiveInt` —— 4/11 个有
-- `SetLatentNoiseMask` —— 4/11 个有
-- `SolidMask` —— 4/11 个有
-- `SoundFlow_GetLength` —— 4/11 个有
-- `PrimitiveStringMultiline` —— 3/11 个有
-- `TrimAudioDuration` —— 3/11 个有
-- `Int` —— 2/11 个有
-- `Textbox` —— 2/11 个有
-- `GetImageRangeFromBatch` —— 1/11 个有
-- `JWStringToFloat` —— 1/11 个有
-- `QwenH3PromptLocal` —— 1/11 个有
+- `孤海注释` —— 9/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
+- `LoadImage` —— 7/11 个有
+- `ResizeImageMaskNode` —— 7/11 个有
+- `VOSR2ModelLoader` —— 7/11 个有
+- `VOSR2Upscale` —— 7/11 个有
+- `YuanImageGridComposite` —— 7/11 个有
+- `YuanLoadImageOutput` —— 7/11 个有
+- `YuanPrimitive` —— 7/11 个有
+- `Yuan_H3MotionContextTrim` —— 7/11 个有
+- `Yuan_H3ProgressiveSampler` —— 7/11 个有
+- `BasicGuider` —— 4/11 个有
+- `EmptyImage` —— 4/11 个有
+- `ImageFromBatch` —— 4/11 个有
+- `Lora Loader Stack (rgthree)` —— 4/11 个有
+- `ManualSigmas` —— 4/11 个有
+- `MiniMaxH3AddGuide` —— 4/11 个有
+- `RandomNoise` —— 4/11 个有
+- `SamplerCustomAdvanced` —— 4/11 个有
+- `SplitSigmas` —— 4/11 个有
+- `StringReplace` —— 4/11 个有
+- `VAEDecodeAudio` —— 4/11 个有
+- `Yuan_H3Upscale3D` —— 4/11 个有
+- `Yuan_VideoUI` —— 4/11 个有
+- `easy clearCacheAll` —— 3/11 个有
 
 ## 典型参数
 
@@ -101,7 +107,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -112,4 +118,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（16/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（13/11 个样本）：Steps较低可能导致细节不足

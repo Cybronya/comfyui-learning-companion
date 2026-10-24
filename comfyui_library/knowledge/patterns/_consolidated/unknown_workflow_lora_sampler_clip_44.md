@@ -1,92 +1,67 @@
 ---
 name: unknown_workflow_lora_sampler_clip_44
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.671857
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LazySwitchKJ, LoraLoaderModelOnly, MultiImageLoader, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeTiled, VAELoaderKJ]
+frequency: 9
+level: moderate
+coverage: 0.821667
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, MaskToSEGS, ModelSamplingFlux, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SDXL Empty Latent Image (rgthree), SEGSPreview, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, String Literal, Text Concatenate, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059948094514618369.json, 视频生成/图生视频/2059920310899662850.json, 视频生成/图生视频/2059193500587094017.json, 视频生成/图生视频/2063202881095954433.json, 视频生成/图生视频/2059401786028544001.json, 视频生成/图生视频/2075878057012977666.json, 视频生成/文生视频/LTX I2V 多图生视频_2059954460599865345.json]
+members: [图片生成/图生图/一键照片转3D盲盒，贴合人脸和场景_1941682167602954241.json, 图片生成/图生图/一键照片转毛线盲盒，可爱版_2026926362723885058.json, 图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_1941716546383462401.json, 图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052555748349104130.json, 图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052565783896702977.json, 图片生成/图生图/一键照片鱿鱼游戏手办，真人形象保持一致_1941770037835546625.json, 图片生成/图生图/快去3D打印自己的玩偶形象，只需要上传一张照片就可快速生成自己的玩偶形象，贴合人脸和场景。_2016392018859139073.json, 图片生成/图生图/照片一键转毛线盲盒，复刻人脸和场景_2052586316793167874.json, 图片生成/图生图/真人照片转毛线盲盒，贴合人脸和场景_2053010892828229633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_44
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2059948094514618369.json、视频生成/图生视频/2059920310899662850.json、视频生成/图生视频/2059193500587094017.json、视频生成/图生视频/2063202881095954433.json、视频生成/图生视频/2059401786028544001.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/一键照片转3D盲盒，贴合人脸和场景_1941682167602954241.json、图片生成/图生图/一键照片转毛线盲盒，可爱版_2026926362723885058.json、图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_1941716546383462401.json、图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052555748349104130.json、图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052565783896702977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
+- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXAVTextEncoderLoader`
-- `LTXSequencer`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LazySwitchKJ`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleRestore V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MultiImageLoader`
-- `PrimitiveBoolean`
+- `MaskToSEGS`
+- `ModelSamplingFlux`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
 - `RandomNoise`
+- `SDXL Empty Latent Image (rgthree)`
+- `SEGSPreview`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `ShowText|pysssss`
+- `String Literal`
+- `Text Concatenate`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `ImageScaleBy` —— 6/7 个有
-- `Int` —— 6/7 个有
-- `LTXVLatentUpsampler` —— 6/7 个有
-- `LatentUpscaleModelLoader` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `PrimitiveInt` —— 5/7 个有
-- `CM_IntToFloat` —— 4/7 个有
-- `ConditioningZeroOut` —— 4/7 个有
-- `LTXVAudioVAEEncode` —— 4/7 个有
-- `LoadAudioUI` —— 4/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `SetLatentNoiseMask` —— 4/7 个有
-- `SolidMask` —— 4/7 个有
-- `easy mathInt` —— 4/7 个有
-- `MathExpression|pysssss` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `Float to Int` —— 2/7 个有
-- `PrimitiveFloat` —— 2/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `LTXVChunkFeedForward` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
-- `ModelPatchTorchSettings` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `easy getNode` —— 1/7 个有
-- `easy imageInsetCrop` —— 1/7 个有
-- `easy setNode` —— 1/7 个有
+- `Molmo7BDbnb` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1 | 1 - 1 | 7 | 100% |
-| 高度 | 24 | 24 - 24 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -94,5 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

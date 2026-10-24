@@ -1,37 +1,42 @@
 ---
 name: unknown_workflow_video_8
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.896833
-common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
+coverage: 0.727143
+common_nodes: [LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Sora2_I2V, SaveImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092548570334457857.json, 数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092562570455642113.json, 视频生成/图生视频/1948969805475454977.json, 视频生成/图生视频/1945362805107380226.json, 音频生成/音频生成/视频生数字人_1988266076419088385.json, 音频生成/音频生成/音频推动视频生成数字人加强latentsync1.5_1929185483350511617.json]
+members: [视频生成/图生视频/全能视频S+ 全能图片v1 人物参考+自动分镜出片_1978674363534823426.json, 视频生成/图生视频/全能视频S做tvc广告_1989011351987163137.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987500333691809794.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987847194495619074.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987855331382505473.json, 视频生成/文生视频/全能视频S+ 全能图片v1图片参考，自动分镜出片_1986439647997947905.json, 视频生成/文生视频/全能视频S+ 全能图片v1谷歌人物参考自动分镜广告tvc广告视频高清无水印_1979876369238757378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092548570334457857.json、数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092562570455642113.json、视频生成/图生视频/1948969805475454977.json、视频生成/图生视频/1945362805107380226.json、音频生成/音频生成/视频生数字人_1988266076419088385.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/全能视频S+ 全能图片v1 人物参考+自动分镜出片_1978674363534823426.json、视频生成/图生视频/全能视频S做tvc广告_1989011351987163137.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987500333691809794.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987847194495619074.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987855331382505473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LatentSyncNode`
-- `LoadAudio`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VideoLengthAdjuster`
+全部 7 个 workflow 都包含：
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Sora2_I2V`
+- `SaveImage`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 4/6 个有
-- `孤海注释` —— 1/6 个有
+- `workflow>线稿` —— 5/7 个有
+- `Bookmark (rgthree)` —— 3/7 个有
+- `VHS_LoadVideoPath` —— 3/7 个有
+- `VHS_VideoCombine` —— 3/7 个有
+- `VHS_VideoInfo` —— 3/7 个有
 
 ## 典型参数
 

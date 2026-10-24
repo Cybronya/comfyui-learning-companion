@@ -7,13 +7,13 @@ coverage: 0.5894
 common_nodes: [CR Prompt Text, GetNode, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveInt, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1989933159632564226.json, 视频生成/图生视频/1990968895060254722.json, 视频生成/图生视频/1990968940883025922.json, 视频生成/图生视频/2000506448629166082.json, 视频生成/图生视频/2002900702877892610.json]
+members: [视频生成/图生视频/03-05-04-WAN2.1-运镜控制-Uni3C+Omniconsistency风格转绘_1989933159632564226.json, 视频生成/图生视频/04-04-01-WAN2.2-Uni3C+运镜控制图生视频_1990968895060254722.json, 视频生成/图生视频/04-04-02-WAN2.2-Uni3C+Omniconsistency转绘_1990968940883025922.json, 视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json, 视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_15
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1989933159632564226.json、视频生成/图生视频/1990968895060254722.json、视频生成/图生视频/1990968940883025922.json、视频生成/图生视频/2000506448629166082.json、视频生成/图生视频/2002900702877892610.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/03-05-04-WAN2.1-运镜控制-Uni3C+Omniconsistency风格转绘_1989933159632564226.json、视频生成/图生视频/04-04-01-WAN2.2-Uni3C+运镜控制图生视频_1990968895060254722.json、视频生成/图生视频/04-04-02-WAN2.2-Uni3C+Omniconsistency转绘_1990968940883025922.json、视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json、视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

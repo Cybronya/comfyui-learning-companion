@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_221
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.829333
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 0.816222
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全网最低0.2元每秒的MiniMax-H3-多模态生视频（RH版）_2083125628114661378.json, 视频生成/图生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json, 视频生成/图生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json, 视频生成/文生视频/全网最低0.2元每秒的MiniMax-H3-多模态生视频（RH版）_2083125628114661378.json, 视频生成/文生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json, 视频生成/文生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json]
+members: [图片生成/图生图/产品细节朋友圈九宫格电商详情高端产品分镜展示_2071826281850818561.json, 图片生成/图生图/人物模特姿势图 全身白底制作 人物头部3+套服装参考_2082630027019112449.json, 图片生成/图生图/全能图像编辑 2.0_2027287797542948865.json, 图片生成/图生图/全能图片2.0   单图编辑_2027563990435500034.json, 图片生成/图生图/全能图片2.0-三图生图_2027634400837505025.json, 图片生成/图生图/全能图片2.0-二图生图_2027911158522449922.json, 图片生成/图生图/全能图片2.0-单图编辑_2027911148363845633.json, 图片生成/图生图/全能图片2.0_2027243924556877826.json, 图片生成/图生图/全能图片2.0_2027319442090237954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_221
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全网最低0.2元每秒的MiniMax-H3-多模态生视频（RH版）_2083125628114661378.json、视频生成/图生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json、视频生成/图生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json、视频生成/文生视频/全网最低0.2元每秒的MiniMax-H3-多模态生视频（RH版）_2083125628114661378.json、视频生成/文生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/产品细节朋友圈九宫格电商详情高端产品分镜展示_2071826281850818561.json、图片生成/图生图/人物模特姿势图 全身白底制作 人物头部3+套服装参考_2082630027019112449.json、图片生成/图生图/全能图像编辑 2.0_2027287797542948865.json、图片生成/图生图/全能图片2.0   单图编辑_2027563990435500034.json、图片生成/图生图/全能图片2.0-三图生图_2027634400837505025.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
+全部 9 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `SaveVideo`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 4/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `PreviewAny` —— 2/6 个有
+- `GetRandomIntegerInRange` —— 1/9 个有
+- `TT_img_enc` —— 1/9 个有
 
 ## 典型参数
 

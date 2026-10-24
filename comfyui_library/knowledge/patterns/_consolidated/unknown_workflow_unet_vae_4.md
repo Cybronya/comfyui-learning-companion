@@ -1,44 +1,60 @@
 ---
 name: unknown_workflow_unet_vae_4
 type: Unknown Workflow
-frequency: 13
+frequency: 16
 level: moderate
-coverage: 0.863
-common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, SaveVideo, UNETLoader, VAELoader]
+coverage: 0.832625
+common_nodes: [CLIPLoader, MiniMaxH3ImageToVideo, ResolutionSelector, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3 导演台-R2V参考主体生视频_2089168093019987970.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流_2095764158875791361.json, 视频生成/图生视频/MiniMax H3开源版 导演台全能工作流加速优化_2086023470298779649.json, 视频生成/图生视频/MiniMax-导演台全能工作流_2086789063905988610.json, 视频生成/图生视频/Minimax-多参考长视频生成（导演台长视频）_2088245444265734145.json, 视频生成/图生视频/minimax导演台工作流_2090286084860235778.json, 视频生成/图生视频/minimax导演台工作流_2091395255663939586.json, 视频生成/图生视频/视频人物替换｜参考图换脸改衣_2089916752309350401.json, 视频生成/图生视频/（自用）MiniMax H3 导演台工作流（原作者：AI搅拌手）_2088301831494660097.json, 视频生成/文生视频/FZ-MinimaxH3-视频导演台（加速版）_2096847459136917505.json, 视频生成/文生视频/H3 全能导演台-T2V文生视频_2088249873417195521.json, 视频生成/文生视频/MINIMAX-H3导演台工作流_2092196369317580801.json, 视频生成/文生视频/minimax导演台工作流_2079449672288129026.json]
+members: [数字人/数字人/minimax H3-rapid_2084240131556470785.json, 视频生成/图生视频/万象+RH-Minimax_h3_4宫格图生视频_2084272132292435970.json, "视频生成/图生视频/图生视频,首尾帧,MiniMax H3,音画同步,AI视频_2106272459883368449.json", 视频生成/图生视频/海螺-Minimax_H3_图生视频-优化版_2085285557453807618.json, 视频生成/图生视频/海螺H3(minimax H3)首尾帧生视频加速开源版_2084885078169186305.json, 视频生成/图生视频/海螺H3)首尾帧生视频_2085148305012649985.json, 视频生成/图生视频/海螺Minimax_H3_图生视频——极速优化版_2084239451739484161.json, 视频生成/文生视频/MiniMax-H3 图生视频 5秒1080p视频只需8分钟+全节点注释_2084557666449444865.json, 视频生成/文生视频/MiniMax-H3 文生视频 5秒1080p视频只需8分钟+全节点注释_2084777365707776002.json, 视频生成/文生视频/MiniMax-H3 文生视频 5秒1080p视频只需8分钟+全节点注释_2094043847910318082.json, 视频生成/文生视频/Minimax H3 首尾帧丨首帧丨尾帧丨文生视频丨老许Gary🎉_2084172294758424577.json, 视频生成/文生视频/minimax_h3文生视频 图生视频 首尾帧+sage加速_2084126972392857602.json, 视频生成/文生视频/minimax_h3文生视频 图生视频 首尾帧+sage加速_2085982926470213634.json, 视频生成/文生视频/海螺H3(Minimax h3)文生视频加速开源版_2084173653360599042.json, 视频生成/文生视频/海螺Minimax_H3_文生视频——极速优化版_2084238982388477954.json, 视频生成/文生视频/首尾帧生视频+_2084526811551195138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/H3 导演台-R2V参考主体生视频_2089168093019987970.json、视频生成/图生视频/MiniMax H3 导演台全能工作流_2095764158875791361.json、视频生成/图生视频/MiniMax H3开源版 导演台全能工作流加速优化_2086023470298779649.json、视频生成/图生视频/MiniMax-导演台全能工作流_2086789063905988610.json、视频生成/图生视频/Minimax-多参考长视频生成（导演台长视频）_2088245444265734145.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/minimax H3-rapid_2084240131556470785.json、视频生成/图生视频/万象+RH-Minimax_h3_4宫格图生视频_2084272132292435970.json、视频生成/图生视频/图生视频,首尾帧,MiniMax H3,音画同步,AI视频_2106272459883368449.json、视频生成/图生视频/海螺-Minimax_H3_图生视频-优化版_2085285557453807618.json、视频生成/图生视频/海螺H3(minimax H3)首尾帧生视频加速开源版_2084885078169186305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
-- `CreateVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `SaveVideo`
+- `MiniMaxH3ImageToVideo`
+- `ResolutionSelector`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 11/13 个有
-- `PathchSageAttentionKJ` —— 11/13 个有
-- `MiniMaxH3Director` —— 9/13 个有
-- `PreviewAny` —— 6/13 个有
-- `ComfyMiniMaxH3Director` —— 4/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
-- `BasicGuider` —— 1/13 个有
-- `ModelAttentionBackend` —— 1/13 个有
+- `BasicGuider` —— 15/16 个有
+- `BasicScheduler` —— 15/16 个有
+- `KSamplerSelect` —— 15/16 个有
+- `PathchSageAttentionKJ` —— 15/16 个有
+- `RandomNoise` —— 15/16 个有
+- `SamplerCustomAdvanced` —— 15/16 个有
+- `VAEDecode` —— 15/16 个有
+- `VAEDecodeAudio` —— 15/16 个有
+- `CR Text` —— 14/16 个有
+- `LoadImage` —— 14/16 个有
+- `PainterVRAM` —— 10/16 个有
+- `VHS_VideoCombine` —— 10/16 个有
+- `GetImageSize` —— 9/16 个有
+- `ImageScaleToTotalPixels` —— 9/16 个有
+- `ComfyMathExpression` —— 8/16 个有
+- `INTConstant` —— 8/16 个有
+- `SimpleMath+` —— 8/16 个有
+- `CreateVideo` —— 7/16 个有
+- `SaveVideo` —— 7/16 个有
+- `EasyCache` —— 6/16 个有
+- `PrimitiveFloat` —— 5/16 个有
+- `Int` —— 3/16 个有
+- `Label (rgthree)` —— 3/16 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/16 个有
+- `workflow>采样解码` —— 1/16 个有
 
 ## 典型参数
 

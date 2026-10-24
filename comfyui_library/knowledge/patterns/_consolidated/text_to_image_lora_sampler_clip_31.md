@@ -1,85 +1,84 @@
 ---
 name: text_to_image_lora_sampler_clip_31
 type: Text To Image
-frequency: 19
-level: weak
-coverage: 0.912632
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
-problems: [Steps较低可能导致细节不足]
+frequency: 22
+level: strong
+coverage: 0.902
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, TTResolutionSelector, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy int]
+problems: []
 missing: []
-members: [图片生成/文生图/SDXL文生图工作流｜经典模型稳定出图｜入门练手必备模板_2101885301458292738.json, 图片生成/文生图/SDXL极速图生图 老树开新花零费用快速出图写实风格_2094170191398789122.json, 图片生成/文生图/SDXL极速图生图｜老树开新花写实风重绘生成_2094306606434578434.json, 图片生成/文生图/Z-Image Turbo极速文生图内置身材调节Lora处理工具_2101769735858905090.json, 图片生成/文生图/Z-image-turbo极速文生图｜内置身材调节Lora免折腾_2101556554981011457.json, 图片生成/文生图/Z-image文生图工作流 不油腻超写实人像生成_2099942321948282881.json, 图片生成/文生图/Z-image文生图工作流_不油腻超写实人像生成_2100177040510115842.json, 图片生成/文生图/Z-image文生图工作流_不油腻超写实人像生成_2100552637174341633.json, 图片生成/文生图/Z-image文生图工作流_不油腻超写实人像生成_2101481634838175746.json, 图片生成/文生图/Z-image文生图工作流_不油腻超写实人像生成_2101864171859173377.json, 图片生成/文生图/Z-image文生图工作流_不油腻超写实人像生成_2102210804346085377.json, 图片生成/文生图/Z-image文生图工作流｜不油腻超写实人像生成写实风_2100811509139066882.json, 图片生成/文生图/Z-image超写实文生图工作流 写实人像生成工具_2099942556120477697.json, 图片生成/文生图/Z-image超写实文生图工作流_写实人像生成工具_2100178170963128322.json, 图片生成/文生图/Z-image超写实文生图工作流_写实人像生成工具_2100551067837751298.json, 图片生成/文生图/Z-image超写实文生图工作流_写实人像生成工具_2101864963181731842.json, 图片生成/文生图/Z-image超写实文生图工作流｜写实人像生成利器_2100814802720481282.json, 图片生成/文生图/摄影质感文生图工作流｜Z-image turbo快速出图生成_2096729113515089922.json, 图片生成/文生图/火影人气角色雏田文生图｜一键生成动漫美少女立绘_2107648182992850946.json]
+members: [图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json, 图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫阙-第一套【syqiangk】_2078147529719504897.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-星幻王-第一套【syqiangk】_2041908781411471361.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-溟莲之主-第一套【syqiangk】_2080260967069478914.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-清衍静-第一套【syqiangk】_2074899453416394754.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-灵溪-第一套【syqiangk】_2079577200193523713.json, 图片生成/文生图/Krea2+Klein双采-国漫-师兄啊师兄-云霄-黑化版【syqiangk】_2085398499084038145.json, 图片生成/文生图/Krea2+Klein双采-国漫-择日飞升-青壁-第一套【syqiangk】_2086873516091203586.json, 图片生成/文生图/Krea2+Klein双采-国漫-斗破苍穹-药灵-第一套【syqiangk】_2082101399822888961.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏千荷-第一套【syqiangk】_2084295242433519617.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏梦瑶-第一套【syqiangk】_2081412397172084737.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第一套【syqiangk】_2076711849927729154.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第二套【syqiangk】_2080276212844421121.json, 图片生成/文生图/Krea2+Klein双采-国漫-深空彼岸-燕清妍-第一套【syqiangk】_2085035661463220225.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-楚月婵-年番第一套【syqiangk】_2083403282608910338.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-苍月公主-年番第二套【syqiangk】_2083178016846467074.json, 图片生成/文生图/Krea2+Klein双采-游戏-永劫无间-甘璇-第一套【syqiangk】_2075979084965957634.json, 图片生成/文生图/Krea2+Klein双采-韩漫-美丽新世界-金美庭-第一套【syqiangk】_2083572001037443074.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_31
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/文生图/SDXL文生图工作流｜经典模型稳定出图｜入门练手必备模板_2101885301458292738.json、图片生成/文生图/SDXL极速图生图 老树开新花零费用快速出图写实风格_2094170191398789122.json、图片生成/文生图/SDXL极速图生图｜老树开新花写实风重绘生成_2094306606434578434.json、图片生成/文生图/Z-Image Turbo极速文生图内置身材调节Lora处理工具_2101769735858905090.json、图片生成/文生图/Z-image-turbo极速文生图｜内置身材调节Lora免折腾_2101556554981011457.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json、图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json、图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json…）
 
 - **类型**：Text To Image
-- **样本数**：19
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 22 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `JjkText`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 16/19 个有
-- `UpscaleModelLoader` —— 16/19 个有
-- `ConditioningZeroOut` —— 15/19 个有
-- `PreviewImage` —— 14/19 个有
-- `ImageFromBatch` —— 13/19 个有
-- `孤海注释` —— 10/19 个有
-- `EmptyImage` —— 9/19 个有
-- `LayerColor: BrightnessContrastV2` —— 7/19 个有
-- `CheckpointLoaderSimple` —— 4/19 个有
-- `LoraLoader` —— 4/19 个有
-- `Int` —— 2/19 个有
-- `LoadImage` —— 2/19 个有
-- `VAEEncode` —— 2/19 个有
-- `LayerColor: Brightness & Contrast` —— 1/19 个有
+- `easy anythingIndexSwitch`
+- `easy int`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 19 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 19 | 100% |
-| 采样算法 | er_sde | - | 19 | 100% |
-| 调度器 | beta | - | 19 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
-| 宽度 | 80 | 80 - 1440 | 19 | 0% |
-| 高度 | 80 | 80 - 1920 | 19 | 0% |
-| LoRA 模型强度 | 0.45 | 0.3 - 1 | 4 | 48% |
-| LoRA 文本强度 | 0.45 | 0.3 - 1 | 4 | 48% |
+| 采样步数 | 16 | 16 - 16 | 22 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
+| 采样算法 | euler_ancestral | - | 22 | 100% |
+| 调度器 | simple | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 512 | 512 - 512 | 22 | 100% |
+| 高度 | 512 | 512 - 512 | 22 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 23/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，19 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，19 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，19 个样本，一致性 100%
-- 调度器 最常用 beta，19 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1440，19 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1920，19 个样本，取值分散，一致性仅 0%
-- LoRA 模型强度 中位数 0.45，观测区间 0.3 - 1，4 个样本，取值分散，一致性仅 48%
-- LoRA 文本强度 中位数 0.45，观测区间 0.3 - 1，4 个样本，取值分散，一致性仅 48%
-- 高发问题（23/19 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 16，观测区间 16 - 16，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，22 个样本，一致性 100%
+- 调度器 最常用 simple，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）

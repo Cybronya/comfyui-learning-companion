@@ -1,55 +1,73 @@
 ---
 name: unknown_workflow_video_sampler_clip_137
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: strong
-coverage: 0.962
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, LoadAudio, ModelSamplingSD3, PathchSageAttentionKJ, TorchCompileModelWanVideoV2, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, easy cleanGpuUsed]
+coverage: 0.933
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065232096980987906.json, 视频生成/文生视频/1960817006654238721.json, 视频生成/文生视频/S2V官流双采样文生视频_2039961005249273857.json, 视频生成/文生视频/1967886202416300034.json]
+members: [视频生成/文生视频/wan2.2-图生视频-20秒长视频_1985192415910838274.json, 视频生成/文生视频/图+文生视频 -WanImageToVideo_1986023978202529793.json, 视频生成/文生视频/图生视频  (分段生成一20S长视频)_1985046868029837313.json, 视频生成/文生视频/图生视频  (支持AI自动生成剧本)_1983914577035493377.json, 视频生成/文生视频/图生视频 (支持AI自动手动生成短视频剧本)_1985873348330696706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_137
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2065232096980987906.json、视频生成/文生视频/1960817006654238721.json、视频生成/文生视频/S2V官流双采样文生视频_2039961005249273857.json、视频生成/文生视频/1967886202416300034.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/wan2.2-图生视频-20秒长视频_1985192415910838274.json、视频生成/文生视频/图+文生视频 -WanImageToVideo_1986023978202529793.json、视频生成/文生视频/图生视频  (分段生成一20S长视频)_1985046868029837313.json、视频生成/文生视频/图生视频  (支持AI自动生成剧本)_1983914577035493377.json、视频生成/文生视频/图生视频 (支持AI自动手动生成短视频剧本)_1985873348330696706.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `INTConstant`
+- `ImageResizeKJv2`
+- `JWInteger`
 - `KSamplerAdvanced`
-- `LoadAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `TorchCompileModelWanVideoV2`
+- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPVisionEncode` —— 4/5 个有
+- `CLIPVisionLoader` —— 4/5 个有
+- `CR Text` —— 4/5 个有
+- `WanImageToVideo` —— 4/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `MathExpression|pysssss` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `easy batchAnything` —— 2/5 个有
+- `easy textSwitch` —— 2/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `CR Text Concatenate` —— 1/5 个有
+- `CR Upscale Image` —— 1/5 个有
+- `ConstrainImage|pysssss` —— 1/5 个有
+- `ImageFromBatch+` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `ttN concat` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 4 | 100% |
-| 采样算法 | 6 | 6 - 6 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | randomize | - | 5 | 60% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 5 | 100% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler_ancestral | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -57,9 +75,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 最常用 randomize，5 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

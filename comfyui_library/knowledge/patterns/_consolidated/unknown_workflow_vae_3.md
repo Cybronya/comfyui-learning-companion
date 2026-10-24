@@ -1,41 +1,46 @@
 ---
 name: unknown_workflow_vae_3
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.931667
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, SaveVideo]
+coverage: 0.695222
+common_nodes: [CR Prompt Text, Comfly_api_set, ImageConcanate, JWImageResizeByLongerSide, LoadImage, PreviewImage, SaveImage, SaveLatent, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 H3 Ref2VA 多图综合参考 2 - 87_2093509823949266946.json, 视频生成/图生视频/MiniMax H3 首尾帧02 - 87_2093630705233387521.json, 视频生成/图生视频/MiniMax H3多图混剪-多素材合成视频工作流_2094330259897405442.json, 视频生成/图生视频/Seedance2.0过场动画-多参考转场视频工作流_2094425486511398914.json, 视频生成/图生视频/Wan3.0多参考图生视频-角色一致性工作流_2094330373395271682.json, 视频生成/文生视频/H3 MAX智能运镜工作流｜AI看图自动运镜_2095448966111522817.json]
+members: [图片生成/图生图/(0.04基准) 全能图片V1 3D社交卡片API工作流V2(支持本地)_1962826116488642562.json, 图片生成/图生图/(0.04基准) 全能图片V1回到2008的下午来一局游戏API工作流V2(支持本地)_1962827886531096578.json, 图片生成/图生图/(0.04基准) 全能图片V1天空海市蜃楼API工作流V2(支持本地)_1962829905715179522.json, 图片生成/图生图/(0.04基准) 全能图片V1网红手办api工作流v1(支持本地)_1961735791129071617.json, 图片生成/图生图/(0.04基准) 全能图片V1让你心爱的她冲出手机相遇API工作流V2(支持本地)_1962819360295370754.json, 图片生成/图生图/(0.04基准)即梦4.0审核用小红书第一视角网红账号V1(支持本地)_1964249939247251458.json, 图片生成/图生图/(0.12基准) 全能图片V1 HD官方4K图像编辑V1(支持本地)_1963682492787281922.json, 图片生成/图生图/(0.12基准稳定版) 全能图片V1网红手办api工作流v1(支持本地)_1961749523850792961.json, 图片生成/图生图/全能图片G IMAGE 1 EDIT新版升级后图像编辑V1_1963683496315293698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 H3 Ref2VA 多图综合参考 2 - 87_2093509823949266946.json、视频生成/图生视频/MiniMax H3 首尾帧02 - 87_2093630705233387521.json、视频生成/图生视频/MiniMax H3多图混剪-多素材合成视频工作流_2094330259897405442.json、视频生成/图生视频/Seedance2.0过场动画-多参考转场视频工作流_2094425486511398914.json、视频生成/图生视频/Wan3.0多参考图生视频-角色一致性工作流_2094330373395271682.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/(0.04基准) 全能图片V1 3D社交卡片API工作流V2(支持本地)_1962826116488642562.json、图片生成/图生图/(0.04基准) 全能图片V1回到2008的下午来一局游戏API工作流V2(支持本地)_1962827886531096578.json、图片生成/图生图/(0.04基准) 全能图片V1天空海市蜃楼API工作流V2(支持本地)_1962829905715179522.json、图片生成/图生图/(0.04基准) 全能图片V1网红手办api工作流v1(支持本地)_1961735791129071617.json、图片生成/图生图/(0.04基准) 全能图片V1让你心爱的她冲出手机相遇API工作流V2(支持本地)_1962819360295370754.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CreateVideo`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `ImageConcanate`
+- `JWImageResizeByLongerSide`
 - `LoadImage`
-- `RHMiniMaxH3ModelLoader`
-- `RHMiniMaxH3TextEncoderLoader`
-- `RHMiniMaxH3VAELoader`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
+- `SaveLatent`
+- `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RHMiniMaxH3RefGen` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `MiniMaxH3EasyModelAdapter` —— 2/6 个有
-- `RHMiniMaxH3VideoGen` —— 2/6 个有
-- `Text` —— 2/6 个有
+- `Comfly_nano_banana` —— 7/9 个有
+- `RH_Translator` —— 5/9 个有
+- `RHHiddenNodes` —— 2/9 个有
+- `TextConcat` —— 2/9 个有
+- `Comfly_gpt_image_1_edit` —— 1/9 个有
+- `Comfly_nano_banana_fal` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,56 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_459
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7846
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.957
+common_nodes: [ComfyNumberConvert, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/FastH3 VSA文生视频优化版V1_2096244135350067201.json, 视频生成/文生视频/H3-文生视频（16：9）_2085696662042931202.json, 视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json, 视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json, 视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json]
+members: [图片生成/图生图/longcatAvatar1.5单段版_2061722462232080386.json, 视频生成/图生视频/LongCat1.5--数字人对口型_2059078929838854146.json, 视频生成/图生视频/LongCat1.5--数字人对口型_2059921141237641218.json, 视频生成/图生视频/longcatAvatar1.5 图片数字人v1_2106246745930944513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_459
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/FastH3 VSA文生视频优化版V1_2096244135350067201.json、视频生成/文生视频/H3-文生视频（16：9）_2085696662042931202.json、视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json、视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json、视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/longcatAvatar1.5单段版_2061722462232080386.json、视频生成/图生视频/LongCat1.5--数字人对口型_2059078929838854146.json、视频生成/图生视频/LongCat1.5--数字人对口型_2059921141237641218.json、视频生成/图生视频/longcatAvatar1.5 图片数字人v1_2106246745930944513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 4 个 workflow 都包含：
+- `ComfyNumberConvert`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `LongCatAvatarWhisperEmbeds`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `UniBlockSwap` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/5 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/5 个有
-- `RHLLMChatNode` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
-- `孤海注释` —— 1/5 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `ComfyMathExpression` —— 2/4 个有
+- `Float` —— 2/4 个有
+- `FloatConstant` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
 
 ## 典型参数
 

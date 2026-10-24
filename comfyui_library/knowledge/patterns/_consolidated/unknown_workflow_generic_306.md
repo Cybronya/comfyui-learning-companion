@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_306
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.5448
-common_nodes: [CR Prompt Text, ComflyGrok3VideoApi, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.901125
+common_nodes: [CR Text, LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, RunningHubAudio8ModelLoader, RunningHubAudio8Prompt, RunningHubAudio8Sampling, RunningHubAudio8TTS, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065349201432764418.json, 视频生成/图生视频/2028695510948777986.json, 视频生成/图生视频/2043572012957835266.json, 视频生成/图生视频/1998603211751743489.json, 视频生成/图生视频/2030941489164984321.json]
+members: [音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083863614699687937.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864179072659457.json, 音频生成/音频生成/Audio8 TTS语音克隆_2083864678345826305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_306
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2065349201432764418.json、视频生成/图生视频/2028695510948777986.json、视频生成/图生视频/2043572012957835266.json、视频生成/图生视频/1998603211751743489.json、视频生成/图生视频/2030941489164984321.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/Audio8 TTS语音克隆_2083858333815107586.json、音频生成/音频生成/Audio8 TTS语音克隆_2083860938100404226.json、音频生成/音频生成/Audio8 TTS语音克隆_2083861579493363713.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862128460652545.json、音频生成/音频生成/Audio8 TTS语音克隆_2083862932521316354.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `ComflyGrok3VideoApi`
-- `Comfly_api_set`
-- `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `Qwen3ASRLoader_DFT`
+- `Qwen3ASRTranscribe_DFT`
+- `RunningHubAudio8ModelLoader`
+- `RunningHubAudio8Prompt`
+- `RunningHubAudio8Sampling`
+- `RunningHubAudio8TTS`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/5 个有
-- `CR Text Concatenate` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `RH_LLMAPI_Pro_Node` —— 1/5 个有
+- `PreviewAudio` —— 1/8 个有
 
 ## 典型参数
 

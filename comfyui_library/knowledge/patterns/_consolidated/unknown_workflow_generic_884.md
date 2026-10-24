@@ -1,44 +1,39 @@
 ---
 name: unknown_workflow_generic_884
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.504
-common_nodes: [AppendImageBatch, CR Prompt Text, ImageConcatMulti, ImageFromBatch+, JWInteger, RH_LLMAPI_Pro_Node, SaveImage, SaveText, ShellAgentPluginOutputText, ShowAnything|Mie, VHS_LoadVideo, VHS_VideoInfo, easy forLoopEnd, easy forLoopStart, easy imageConcat, easy mathInt]
+frequency: 3
+level: moderate
+coverage: 0.741333
+common_nodes: [PreviewAny, VHS_LoadVideo, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/2046474090080378881.json, 视频生成/图生视频/2041794960168591361.json]
+members: [图片生成/图生图/Qwen3.5 反推图片+视频工作流_2040610012187332609.json, 图片生成/图生图/Qwen3.5 反推工作流_2035976986505519106.json, 音频生成/音频生成/视频提示词反推_2102688801117265922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_884
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2046474090080378881.json、视频生成/图生视频/2041794960168591361.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen3.5 反推图片+视频工作流_2040610012187332609.json、图片生成/图生图/Qwen3.5 反推工作流_2035976986505519106.json、音频生成/音频生成/视频提示词反推_2102688801117265922.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AppendImageBatch`
-- `CR Prompt Text`
-- `ImageConcatMulti`
-- `ImageFromBatch+`
-- `JWInteger`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `SaveText`
-- `ShellAgentPluginOutputText`
-- `ShowAnything|Mie`
+全部 3 个 workflow 都包含：
+- `PreviewAny`
 - `VHS_LoadVideo`
-- `VHS_VideoInfo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageConcat`
-- `easy mathInt`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -50,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,81 +1,84 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_51
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.874333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.5566
+common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FloatConstant, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerAdvanced, LatentUpscaleBy, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SimpleMath+, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/h3-二阶+sigma+latent_2096577454994448385.json, 视频生成/图生视频/minimaxh3-多参+latent二采_2098875416437157889.json, 视频生成/图生视频/【合理动态版】Hybrid_4+5步双采样_2096530913504088066.json, 视频生成/图生视频/【疯了的动态】Dasiwa_4+5步双采样_2096866880698015746.json, 视频生成/图生视频/黄色的大宝剑武打流放大二采_2109571702479998978.json, 视频生成/文生视频/h3-二阶采样（sigma插值+latent放大）_2090487702180417538.json]
+members: [图片生成/图生图/ZIBT 高清写真图生图20260407_2041177396161810433.json, 图片生成/文生图/Moody文生图_2034202713419948033.json, 图片生成/文生图/YZ金鱼-Moody ZIB+ZIT 文生图_2033524845866127361.json, 图片生成/文生图/ZIB+ZIT-双采文生图_2054942630194229249.json, 图片生成/文生图/双Z高清文生图_2035896757829242882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_51
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/h3-二阶+sigma+latent_2096577454994448385.json、视频生成/图生视频/minimaxh3-多参+latent二采_2098875416437157889.json、视频生成/图生视频/【合理动态版】Hybrid_4+5步双采样_2096530913504088066.json、视频生成/图生视频/【疯了的动态】Dasiwa_4+5步双采样_2096866880698015746.json、视频生成/图生视频/黄色的大宝剑武打流放大二采_2109571702479998978.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/ZIBT 高清写真图生图20260407_2041177396161810433.json、图片生成/文生图/Moody文生图_2034202713419948033.json、图片生成/文生图/YZ金鱼-Moody ZIB+ZIT 文生图_2033524845866127361.json、图片生成/文生图/ZIB+ZIT-双采文生图_2054942630194229249.json、图片生成/文生图/双Z高清文生图_2035896757829242882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
+- `CLIPTextEncode`
+- `CR SDXL Aspect Ratio`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `FloatConstant`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `KSamplerAdvanced`
+- `LatentUpscaleBy`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SetNode`
+- `SimpleMath+`
 - `UNETLoader`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
-- `MiniMaxH3SigmaShift` —— 5/6 个有
-- `SplitSigmas` —— 5/6 个有
-- `ExtendIntermediateSigmas` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `VHS_VideoCombine` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `CR Text` —— 2/6 个有
-- `GetImageSize` —— 2/6 个有
-- `ImageConcatMulti` —— 2/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `LoraLoaderBypassModelOnly` —— 2/6 个有
-- `ManualSigmas` —— 2/6 个有
-- `RH_LLMAPI_Pro_Node` —— 2/6 个有
-- `SolAttnMiniMax` —— 2/6 个有
-- `TextOverlay` —— 2/6 个有
-- `BlockSparseAttention` —— 1/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `MiniMaxH3HybridLoader` —— 1/6 个有
-- `Text Concatenate` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy int` —— 1/6 个有
+- `GetNode` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `llama_cpp_instruct_adv` —— 4/5 个有
+- `llama_cpp_model_loader` —— 4/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `DuckHideNode` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `Lora Loader Stack (rgthree)` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `ProcessString` —— 1/5 个有
+- `Qwen3_VQA` —— 1/5 个有
+- `SomethingToString` —— 1/5 个有
+- `TT_img_enc_v2` —— 1/5 个有
+- `TextConcatenate` —— 1/5 个有
+- `ZML_SwitchOutput` —— 1/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 12 | 12 - 15 | 5 | 89% |
+| 采样算法 | 1 | 1 - 4 | 5 | 33% |
+| 调度器 | sa_solver | - | 5 | 60% |
+| 重绘幅度 | beta | - | 5 | 60% |
 
 ## 常见问题
 
@@ -83,4 +86,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 15，5 个样本，取值集中（一致性 89%）
+- 采样算法 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 33%
+- 调度器 最常用 sa_solver，5 个样本，一致性 60%
+- 重绘幅度 最常用 beta，5 个样本，一致性 60%
+- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

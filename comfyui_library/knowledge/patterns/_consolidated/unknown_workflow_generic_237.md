@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_237
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.965833
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.754444
+common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/INDEXTTS2语音克隆合集+情感控制三合一工作流_1966090623176667137.json, 音频生成/音频生成/IndexTTS2单人语音克隆+情感控制_1965815226509733889.json, 音频生成/音频生成/IndexTTS2音频克隆+音频参考情感控制_1965813801541087234.json, 音频生成/音频生成/IndexTTS双音频参考+多种方法情感控制_1965614386977099777.json, 音频生成/音频生成/Indextts2声音克隆_1966077984237064193.json, 音频生成/音频生成/最强克隆语音IndexTTS2_1967931893113040897.json]
+members: [视频生成/图生视频/0元生成15s的全能视频S带货视频_2004804181263351810.json, 视频生成/图生视频/全能视频S图生视频 每日5次免费_2073213892439928834.json, 视频生成/图生视频/全能视频S图生视频0.05元_次_1973502975085817858.json, 视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976197006022574081.json, 视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1978398824693698561.json, 视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1998406614531080193.json, 视频生成/图生视频/全能视频S图生视频（前5次免费，后5分钱一次）_1973712515601403905.json, 视频生成/文生视频/全能视频S一键黑白线稿生成广告视频（api版本）0.05_10秒_1981939164268634113.json, 视频生成/文生视频/全能视频S图生视频-RH API版-国庆0.05元_10秒-测试运行十分钟耗费117rh币_1973736551656108033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_237
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/INDEXTTS2语音克隆合集+情感控制三合一工作流_1966090623176667137.json、音频生成/音频生成/IndexTTS2单人语音克隆+情感控制_1965815226509733889.json、音频生成/音频生成/IndexTTS2音频克隆+音频参考情感控制_1965813801541087234.json、音频生成/音频生成/IndexTTS双音频参考+多种方法情感控制_1965614386977099777.json、音频生成/音频生成/Indextts2声音克隆_1966077984237064193.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/0元生成15s的全能视频S带货视频_2004804181263351810.json、视频生成/图生视频/全能视频S图生视频 每日5次免费_2073213892439928834.json、视频生成/图生视频/全能视频S图生视频0.05元_次_1973502975085817858.json、视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976197006022574081.json、视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1978398824693698561.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiLinePromptIndex` —— 5/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `SoundFlow_PreviewAudio` —— 4/6 个有
-- `Text` —— 3/6 个有
-- `CR Prompt Text` —— 1/6 个有
+- `ImpactSwitch` —— 8/9 个有
+- `Text Concatenate` —— 8/9 个有
+- `ShowText` —— 5/9 个有
+- `SaveText|pysssss` —— 4/9 个有
+- `PrimitiveString` —— 1/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 

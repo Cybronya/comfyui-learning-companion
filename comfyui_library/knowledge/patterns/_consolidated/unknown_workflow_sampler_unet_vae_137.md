@@ -1,67 +1,74 @@
 ---
 name: unknown_workflow_sampler_unet_vae_137
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.703667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.741429
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, CreateVideo, KSamplerSelect, MiniMaxH3ReferenceToVideo, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json, 视频生成/图生视频/1953694457269026818.json, 视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json, 视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json, 视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json, 视频生成/文生视频/MiniMaxH3满血无损加速1.0高清工作流ENGENG_2087108575725441026.json]
+members: [comfyui-workflow-templates-json/video_minimax_h3_fun_controlnet_union.json, comfyui-workflow-templates-json/video_minimax_h3_multiframe_reference.json, comfyui-workflow-templates-json/video_minimax_h3_r2v.json, 视频生成/图生视频/4步MiniMax-H3参考图生视频-LynnReal-Omni_2099804283427446785.json, 视频生成/图生视频/LynnReal-FastH3 pose2v动作迁移_2101573571259752450.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-动作迁移-生成视频-工作流_2093578653677481986.json, 视频生成/图生视频/MinimaxH3人物替换character swap_2109965862622031874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_137
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json、视频生成/图生视频/1953694457269026818.json、视频生成/文生视频/MiniMax H3满血无损全家桶_文生、单图、多图生视频_2087520237779509249.json、视频生成/文生视频/MiniMax H3满血无损加速1.0高清工作流_2086726672409251842.json、视频生成/文生视频/MiniMax H3满血无损高清加速版_2087462526824046593.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/video_minimax_h3_fun_controlnet_union.json、comfyui-workflow-templates-json/video_minimax_h3_multiframe_reference.json、comfyui-workflow-templates-json/video_minimax_h3_r2v.json、视频生成/图生视频/4步MiniMax-H3参考图生视频-LynnReal-Omni_2099804283427446785.json、视频生成/图生视频/LynnReal-FastH3 pose2v动作迁移_2101573571259752450.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
 - `CreateVideo`
 - `KSamplerSelect`
-- `LoadImage`
 - `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 5/6 个有
-- `EasyCache` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `ResolutionSelector` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `ModelPatchTorchSettings` —— 4/6 个有
-- `PrimitiveStringMultiline` —— 4/6 个有
-- `UniBlockSwap` —— 4/6 个有
-- `GetNode` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy mathInt` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `LoadImage` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `ResolutionSelector` —— 6/7 个有
+- `VAEDecodeAudio` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PrimitiveInt` —— 5/7 个有
+- `LoadVideo` —— 4/7 个有
+- `GetVideoComponents` —— 3/7 个有
+- `AnySwitch` —— 2/7 个有
+- `Fast Bypasser (rgthree)` —— 2/7 个有
+- `GetImageSize` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `Video Slice` —— 2/7 个有
+- `622cceeb-7ba3-4dd9-b0e8-00066c5222a4` —— 1/7 个有
+- `ImageScale` —— 1/7 个有
+- `LynnRealAlignedReference` —— 1/7 个有
+- `MiniMaxH3AddGuide` —— 1/7 个有
+- `MiniMaxH3FunControlNetApply` —— 1/7 个有
+- `ModelPatchLoader` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `QwenH3PromptLocal` —— 1/7 个有
+- `VideoFrameSample` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| ControlNet 权重 | 1 | - | 1 | 100% |
 
 ## 常见问题
 

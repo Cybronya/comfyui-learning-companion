@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_sampler_18
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.664667
-common_nodes: [JWInteger, LayerUtility: PurgeVRAM V2, PMRF, RH_Translator, RunningHub PosterCraft Pipeline, RunningHub PosterCraft Sampler, SaveImage]
+coverage: 0.983333
+common_nodes: [ImageBatch, LoadImage, RunningHub_UNO_Loadmodel, RunningHub_UNO_Sampler, SaveImage]
 problems: []
-missing: [LayerUtility: PurgeVRAM V2, RunningHub PosterCraft Pipeline, RunningHub PosterCraft Sampler]
-members: [图片生成/文生图/1938813861078487041.json, 图片生成/文生图/1938963434559954945.json, 图片生成/文生图/1942817505565937665.json]
+missing: []
+members: [图片生成/图生图/UNO 多图像多主体可控性图像生成_1910316871583789058.json, 图片生成/图生图/UNO 多图多主体精准控制多图融合_1910522550877679617.json, 图片生成/图生图/UNO 虚拟试穿_1910336322924441601.json, 图片生成/图生图/UNO单图_1910828718959357954.json, 图片生成/图生图/UNO多图片融合工作流_1912904597319446529.json, 图片生成/文生图/字节多主体一致性框架UNO_1910646097818152962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1938813861078487041.json、图片生成/文生图/1938963434559954945.json、图片生成/文生图/1942817505565937665.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/UNO 多图像多主体可控性图像生成_1910316871583789058.json、图片生成/图生图/UNO 多图多主体精准控制多图融合_1910522550877679617.json、图片生成/图生图/UNO 虚拟试穿_1910336322924441601.json、图片生成/图生图/UNO单图_1910828718959357954.json、图片生成/图生图/UNO多图片融合工作流_1912904597319446529.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JWInteger`
-- `LayerUtility: PurgeVRAM V2`
-- `PMRF`
-- `RH_Translator`
-- `RunningHub PosterCraft Pipeline`
-- `RunningHub PosterCraft Sampler`
+全部 6 个 workflow 都包含：
+- `ImageBatch`
+- `LoadImage`
+- `RunningHub_UNO_Loadmodel`
+- `RunningHub_UNO_Sampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowStringText` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
+- `Primitive string [Crystools]` —— 1/6 个有
 
 ## 典型参数
 
@@ -45,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM V2、RunningHub PosterCraft Pipeline、RunningHub PosterCraft Sampler
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

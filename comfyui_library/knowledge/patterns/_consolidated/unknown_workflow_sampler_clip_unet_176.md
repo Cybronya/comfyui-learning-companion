@@ -1,61 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_unet_176
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.873667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: weak
+coverage: 0.858
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [Text Concatenate, Text Multiline]
-members: [图片生成/文生图/1902293777606975490.json, 图片生成/文生图/1904702749529845761.json, 图片生成/文生图/1906558127117111297.json]
+missing: []
+members: [图片生成/图生图/Deepseek-janus-Pro精准反推图生图FLUX (1)_1896094012430811138.json, 图片生成/图生图/FLUX_图生图_赛博朋克风格V1.0_1922702310974308353.json, 图片生成/图生图/Flux 一键洗图_1920407438544277505.json, 图片生成/图生图/flux_吉卜力风格_图生图_1922695650230812674.json, 图片生成/图生图/修图重绘-常用_2006036350398631937.json, 图片生成/图生图/修图重绘_1939903917381881857.json, 图片生成/文生图/flux图生图-在线生图_1995862598363099137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_176
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1902293777606975490.json、图片生成/文生图/1904702749529845761.json、图片生成/文生图/1906558127117111297.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Deepseek-janus-Pro精准反推图生图FLUX (1)_1896094012430811138.json、图片生成/图生图/FLUX_图生图_赛博朋克风格V1.0_1922702310974308353.json、图片生成/图生图/Flux 一键洗图_1920407438544277505.json、图片生成/图生图/flux_吉卜力风格_图生图_1922695650230812674.json、图片生成/图生图/修图重绘-常用_2006036350398631937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
 - `DualCLIPLoader`
-- `FluxGuidance`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `InfiniteYouApply` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `UltimateSDUpscale` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
+- `LoraLoader` —— 6/7 个有
+- `CR Latent Batch Size` —— 5/7 个有
+- `Florence2ModelLoader` —— 5/7 个有
+- `Florence2Run` —— 5/7 个有
+- `ImageResize+` —— 5/7 个有
+- `ShowText|pysssss` —— 4/7 个有
+- `CR Text Concatenate` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `TextInput_` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `JanusImageUnderstanding` —— 2/7 个有
+- `JanusModelLoader` —— 2/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `ttN advPlot images` —— 1/7 个有
+- `ttN advanced xyPlot` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1152 | - | 2 | 89% |
+| LoRA 模型强度 | 0.8 | 0.6 - 1 | 6 | 78% |
+| LoRA 文本强度 | 1 | 1 - 10.48 | 6 | 0% |
 
 ## 常见问题
 
@@ -63,6 +68,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1152，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Concatenate、Text Multiline
+- LoRA 模型强度 中位数 0.8，观测区间 0.6 - 1，6 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 10.48，6 个样本，取值分散，一致性仅 0%

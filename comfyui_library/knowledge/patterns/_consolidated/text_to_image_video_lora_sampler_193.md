@@ -1,86 +1,80 @@
 ---
 name: text_to_image_video_lora_sampler_193
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.989
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, DualCLIPLoader, EmptyHunyuanLatentVideo, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, KSampler, KSamplerSelect, KSamplerWithNAG, LoadImageOutput, LoraLoader, ModelSamplingSD3, NAGCFGGuider, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, T5TokenizerOptions, TripleCLIPLoader, UNETLoader, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.905667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/1948704905335844866.json, 视频生成/文生视频/NAG-扩散模型的通用负向引导_2072999668357046272.json]
+members: [视频生成/文生视频/视频深度提取器VDA加DepthCrafter双路线，视频生视频深度图处理工具_2103896302424772610.json, 音频生成/音频生成/视频人物音色替换工作流，音频生成人物声音处理工具_2106485060236038146.json, 音频生成/音频生成/视频人物音色替换｜音频生成给角色换声音毫无违和_2106279153908666370.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_193
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1948704905335844866.json、视频生成/文生视频/NAG-扩散模型的通用负向引导_2072999668357046272.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/视频深度提取器VDA加DepthCrafter双路线，视频生视频深度图处理工具_2103896302424772610.json、音频生成/音频生成/视频人物音色替换工作流，音频生成人物声音处理工具_2106485060236038146.json、音频生成/音频生成/视频人物音色替换｜音频生成给角色换声音毫无违和_2106279153908666370.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：99%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyHunyuanLatentVideo`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `KSamplerWithNAG`
-- `LoadImageOutput`
-- `LoraLoader`
-- `ModelSamplingSD3`
-- `NAGCFGGuider`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `T5TokenizerOptions`
-- `TripleCLIPLoader`
+- `LoraLoaderModelOnly`
 - `UNETLoader`
-- `UnetLoaderGGUF`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioSeparation` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `SaveAudioMP3` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `SeedVCRun` —— 2/3 个有
+- `DepthCrafter` —— 1/3 个有
+- `DownloadAndLoadDepthCrafterModel` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoadVideoDepthAnythingModel` —— 1/3 个有
+- `VideoDepthAnythingProcess` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | 6 | - | 2 | 100% |
-| 调度器 | 2.5 | - | 2 | 100% |
-| 重绘幅度 | 0.25 | - | 2 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 0.25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

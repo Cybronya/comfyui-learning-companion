@@ -3,44 +3,42 @@ name: text_to_image_video_lora_sampler_93
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.59625
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9155
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3多模态参考数字人对口型图生视频处理工具_2101006638630129665.json, 视频生成/图生视频/MiniMax H3官方工作流首尾帧生成视频｜图生视频_2090425354019229697.json, 视频生成/图生视频/MiniMax H3打斗单采｜高质量图生视频生成_2095594939815129089.json, 视频生成/图生视频/MiniMaxH38高动态加速流｜人物场景类特效图生视频_2092030919111692289.json, 视频生成/图生视频/心然寻源MiniMax H3多模态参考数字人对口型｜图生视频_2100764134798352386.json, 视频生成/图生视频/最强文戏低配版｜MINIMAX-H3开源角色一致性生成_2095074002149662722.json, 视频生成/图生视频/首尾帧生成视频｜MiniMax H3官方工作流图生视频_2090268705291849730.json, 视频生成/文生视频/多参考生成视频｜MiniMax H3官方工作流一键直出_2090147863308357634.json]
+members: [数字人/数字人/Minimax参考生视频V3｜角色一致性视频生成_2094920140604403713.json, 视频生成/图生视频/去油版数字人口播唱歌MV加速开源版｜MiniMax H3角色设计人物类特效图生视频_2088339977326383106.json, 视频生成/图生视频/去油版数字人口播唱歌MV加速开源｜MiniMax H3人物类特效角色设计图生视频_2088325534035042306.json, 视频生成/图生视频/去油版数字人口播唱歌MV加速版MiniMax H3开源版图生视频_2088371949490761729.json, 视频生成/图生视频/参考生视频V3｜Minimax图生视频直出_2091659742254026753.json, 视频生成/文生视频/H3官流终极版工作流，文生视频视频生视频图生视频全覆盖方案_2105809880144769025.json, 视频生成/文生视频/MiniMax H3数字人单人版｜文生视频口播生成_2094854429622231041.json, 视频生成/文生视频/单人版数字人生成｜MiniMax H3文生视频0901版_2095072554628239362.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_93
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3多模态参考数字人对口型图生视频处理工具_2101006638630129665.json、视频生成/图生视频/MiniMax H3官方工作流首尾帧生成视频｜图生视频_2090425354019229697.json、视频生成/图生视频/MiniMax H3打斗单采｜高质量图生视频生成_2095594939815129089.json、视频生成/图生视频/MiniMaxH38高动态加速流｜人物场景类特效图生视频_2092030919111692289.json、视频生成/图生视频/心然寻源MiniMax H3多模态参考数字人对口型｜图生视频_2100764134798352386.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Minimax参考生视频V3｜角色一致性视频生成_2094920140604403713.json、视频生成/图生视频/去油版数字人口播唱歌MV加速开源版｜MiniMax H3角色设计人物类特效图生视频_2088339977326383106.json、视频生成/图生视频/去油版数字人口播唱歌MV加速开源｜MiniMax H3人物类特效角色设计图生视频_2088325534035042306.json、视频生成/图生视频/去油版数字人口播唱歌MV加速版MiniMax H3开源版图生视频_2088371949490761729.json、视频生成/图生视频/参考生视频V3｜Minimax图生视频直出_2091659742254026753.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -49,29 +47,45 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
-- `LoadAudio` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `VAEDecodeAudio` —— 5/8 个有
-- `PrimitiveFloat` —— 4/8 个有
-- `Text` —— 4/8 个有
-- `CR Prompt Text` —— 3/8 个有
-- `Float` —— 3/8 个有
-- `MiniMaxH3AVDecodeT8` —— 3/8 个有
-- `ExtendIntermediateSigmas` —— 2/8 个有
-- `H3SigmaRefiner` —— 2/8 个有
-- `ModelAttentionBackend` —— 2/8 个有
-- `PreviewAudio` —— 2/8 个有
-- `RunningHub Deepcleaner` —— 2/8 个有
-- `SigmasGraph` —— 2/8 个有
-- `VHS_LoadVideo` —— 2/8 个有
-- `ZNGB_AudioCrop` —— 2/8 个有
-- `FloatConstant` —— 1/8 个有
-- `INTConstant` —— 1/8 个有
+- `MiniMaxH3AVDecodeT8` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `CreateVideo` —— 5/8 个有
+- `KSamplerSelect` —— 5/8 个有
+- `LTXVConcatAVLatent` —— 5/8 个有
+- `LTXVSeparateAVLatent` —— 5/8 个有
+- `LoraLoaderBypassModelOnly` —— 5/8 个有
+- `ManualSigmas` —— 5/8 个有
+- `MiniMaxH3AudioConditioningT8` —— 5/8 个有
+- `MiniMaxH3DualClockSamplerT8` —— 5/8 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 5/8 个有
+- `PreviewAny` —— 5/8 个有
+- `SaveVideo` —— 5/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `SolAttnMiniMax` —— 4/8 个有
+- `Any To String (mtb)` —— 3/8 个有
+- `BasicScheduler` —— 3/8 个有
+- `JoinStringMulti` —— 3/8 个有
+- `MiniMaxH3PromptEnhancerT8` —— 3/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
+- `StringConcatenate` —— 3/8 个有
+- `AudioCrop` —— 2/8 个有
+- `BatchImagesNode` —— 2/8 个有
+- `MiniMaxH3BlockCacheT8` —— 2/8 个有
+- `PathchSageAttentionKJ` —— 2/8 个有
+- `Qwen3ASRLoader` —— 2/8 个有
+- `Qwen3ASRTranscribe` —— 2/8 个有
+- `RunningHub_VoxCPM_Generate` —— 2/8 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/8 个有
+- `SoundFlow_GetLength` —— 2/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/8 个有
+- `llama_cpp_instruct_adv` —— 2/8 个有
+- `llama_cpp_model_loader` —— 2/8 个有
+- `llama_cpp_parameters` —— 2/8 个有
+- `BlockSparseAttention` —— 1/8 个有
+- `MiniMaxH3HybridLoader` —— 1/8 个有
 - `SaveImage` —— 1/8 个有
-- `Text Multiline` —— 1/8 个有
-- `easy clearCacheAll` —— 1/8 个有
+- `VAEDecodeAudio` —— 1/8 个有
+- `VHS_LoadVideo` —— 1/8 个有
 
 ## 典型参数
 

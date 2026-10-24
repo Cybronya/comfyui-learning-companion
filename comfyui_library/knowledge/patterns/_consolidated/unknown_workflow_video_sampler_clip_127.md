@@ -1,58 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_clip_127
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.78425
-common_nodes: [ImageConcanate, ImageSizeInfo, JWImageResizeByLongerSide, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MarwanFaceCropping, PreviewImage, TTP_Expand_And_Mask, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.8924
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/通义万相KISS图生视频WAN工作流V1_1895031951948972033.json, 视频生成/图生视频/1895031951948972033.json, 视频生成/图生视频/1895076353941307393.json, 视频生成/图生视频/1894963534298546178.json]
+members: [视频生成/图生视频/wan2.1万相1080P60帧图生视频KJ版（提示词优化+高清放大+插帧）_1900072045734932482.json, 视频生成/图生视频/万相SkyreelsV2图生视频突破5秒时长_1914997055247347713.json, 视频生成/图生视频/直播子弹时间特效_1927650029039960065.json, 视频生成/图生视频/直播定制赛亚人特效视频_1926260024211894274.json, 视频生成/图生视频/直播戏服变身_1926859927644704769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_127
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/通义万相KISS图生视频WAN工作流V1_1895031951948972033.json、视频生成/图生视频/1895031951948972033.json、视频生成/图生视频/1895076353941307393.json、视频生成/图生视频/1894963534298546178.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.1万相1080P60帧图生视频KJ版（提示词优化+高清放大+插帧）_1900072045734932482.json、视频生成/图生视频/万相SkyreelsV2图生视频突破5秒时长_1914997055247347713.json、视频生成/图生视频/直播子弹时间特效_1927650029039960065.json、视频生成/图生视频/直播定制赛亚人特效视频_1926260024211894274.json、视频生成/图生视频/直播戏服变身_1926859927644704769.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageSizeInfo`
-- `JWImageResizeByLongerSide`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: PurgeVRAM`
+全部 5 个 workflow 都包含：
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MarwanFaceCropping`
-- `PreviewImage`
-- `TTP_Expand_And_Mask`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoImageClipEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 2/4 个有
-- `WanVideoExperimentalArgs` —— 2/4 个有
-- `WanVideoSLG` —— 2/4 个有
-- `WanVideoTeaCache` —— 2/4 个有
-- `Note _O` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
+- `ImageResizeKJ` —— 4/5 个有
+- `JjkText` —— 4/5 个有
+- `WanVideoExperimentalArgs` —— 3/5 个有
+- `WanVideoLoraSelect` —— 3/5 个有
+- `Int` —— 2/5 个有
+- `WanVideoSLG` —— 2/5 个有
+- `CR Upscale Image` —— 1/5 个有
+- `ImageSizeAndBatchSize` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `RIFE VFI` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

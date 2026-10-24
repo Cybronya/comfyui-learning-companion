@@ -1,91 +1,74 @@
 ---
 name: text_to_image_sampler_clip_unet_35
 type: Text To Image
-frequency: 10
+frequency: 13
 level: weak
-coverage: 0.7637
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewAny, PreviewImage, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.844077
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, Mask Fill Holes]
-members: [图片生成/图生图/2102063835665494017.json, 图片生成/文生图/Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json, 图片生成/文生图/Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json, 图片生成/文生图/Qwen Image 2.1全功能合集｜像素幻想Lab出品｜角色一致性生图修图全包_2102656370532245505.json, 图片生成/文生图/Qwen Image 2.1多视图角色三视图生成，文生图图生图角色设计方案_2103626026252333057.json, 图片生成/文生图/Qwen-image2.1全功能合集 By 像素幻想Lab_2102063835665494017.json, 图片生成/文生图/Qwen-image2.1全功能合集_2102448185208823809.json, 图片生成/文生图/Qwen-image2.1全功能合集_2103043228093206529.json, 视频生成/图生视频/Qwen-image2.1全功能合集_2106179469034741762.json, 视频生成/图生视频/Qwen_Image_2.1全功能合集，覆盖角色一致性文生图图生图多场景_2105854013261565953.json]
+missing: []
+members: [图片生成/文生图/Anima-Base 动漫艺术_2057379324319326210.json, 图片生成/文生图/Anima-aesthetic-v1.1 高质量文生图_2092915857054855170.json, 图片生成/文生图/Anima-base-v1.0 文生图_2092909550499352577.json, 图片生成/文生图/Anima-turbo-v1.0 文生图_2092898755967279105.json, 图片生成/文生图/Anima动漫文生图_2057367708785790977.json, 图片生成/文生图/Krea 2 甜美人像_2082369312555356161.json, 图片生成/文生图/Krea-2 全官方 LoRA 风格集成_2069797124136595458.json, 图片生成/文生图/ZIMAGE-杰洛特文生图_2044311451736739841.json, 图片生成/文生图/anima 动漫王者文生图_2057038503191605250.json, 图片生成/文生图/krea2-trubo-青绿水彩风格+水墨风格+光影效果彩色极简素描风格_2069757903887753218.json, 图片生成/文生图/电商文生图 krea2_2079494663781834754.json, 图片生成/文生图/百度大模型 文生图ERNIE-image-turbo 人物一致性 自然真实_2044640662099857410.json, 图片生成/文生图/百度大模型ERNIE-image-turbo-文生图  人物一致性 自然真实_2044656791585296386.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_35
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/2102063835665494017.json、图片生成/文生图/Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json、图片生成/文生图/Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json、图片生成/文生图/Qwen Image 2.1全功能合集｜像素幻想Lab出品｜角色一致性生图修图全包_2102656370532245505.json、图片生成/文生图/Qwen Image 2.1多视图角色三视图生成，文生图图生图角色设计方案_2103626026252333057.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Anima-Base 动漫艺术_2057379324319326210.json、图片生成/文生图/Anima-aesthetic-v1.1 高质量文生图_2092915857054855170.json、图片生成/文生图/Anima-base-v1.0 文生图_2092909550499352577.json、图片生成/文生图/Anima-turbo-v1.0 文生图_2092898755967279105.json、图片生成/文生图/Anima动漫文生图_2057367708785790977.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：13
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `ResolutionSelector`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 9/10 个有
-- `ComfySwitchNode` —— 9/10 个有
-- `DrawMaskOnImage` —— 9/10 个有
-- `GetImageSize` —— 9/10 个有
-- `GrowMask` —— 9/10 个有
-- `Image Comparer (rgthree)` —— 9/10 个有
-- `Mask Fill Holes` —— 9/10 个有
-- `RHLLMChatNode` —— 9/10 个有
-- `SAM3_Detect` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 6/10 个有
-- `孤海注释` —— 6/10 个有
-- `JjkText` —— 5/10 个有
-- `solarL_SaveImagesToZip` —— 5/10 个有
-- `EmptyImage` —— 2/10 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `RH_Translator` —— 6/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
+- `JjkText` —— 4/13 个有
+- `PreviewImage` —— 4/13 个有
+- `CompressImages` —— 3/13 个有
+- `ConditioningZeroOut` —— 3/13 个有
+- `PrimitiveInt` —— 3/13 个有
+- `ShowText|pysssss` —— 2/13 个有
+- `Anything Everywhere` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 7 | 4 - 40 | 10 | 9% |
-| Prompt 约束强度(CFG) | 2.75 | 1 - 4.5 | 10 | 36% |
-| 采样算法 | euler | - | 10 | 50% |
-| 调度器 | simple | - | 10 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 552 | 80 - 1024 | 10 | 14% |
-| 高度 | 552 | 80 - 1024 | 10 | 14% |
+| 宽度 | 1152 | 720 - 1920 | 13 | 65% |
+| 高度 | 1280 | 1080 - 2160 | 13 | 78% |
+| 采样步数 | 8 | 2 - 40 | 13 | 23% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 13 | 26% |
+| 采样算法 | euler | - | 13 | 69% |
+| 调度器 | simple | - | 13 | 54% |
+| 重绘幅度 | 1 | 0.2 - 1 | 13 | 77% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 23/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 7，观测区间 4 - 40，10 个样本，取值分散，一致性仅 9%
-- Prompt 约束强度(CFG) 中位数 2.75，观测区间 1 - 4.5，10 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 euler，10 个样本，一致性 50%
-- 调度器 最常用 simple，10 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 552，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 14%
-- 高度 中位数 552，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 14%
-- 高发问题（5/10 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: ImageReel、LayerUtility: ImageReelComposit、Mask Fill Holes
+- 宽度 中位数 1152，观测区间 720 - 1920，13 个样本
+- 高度 中位数 1280，观测区间 1080 - 2160，13 个样本
+- 采样步数 中位数 8，观测区间 2 - 40，13 个样本，取值分散，一致性仅 23%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，13 个样本，取值分散，一致性仅 26%
+- 采样算法 最常用 euler，13 个样本，一致性 69%
+- 调度器 最常用 simple，13 个样本，一致性 54%
+- 重绘幅度 中位数 1，观测区间 0.2 - 1，13 个样本
+- 高发问题（23/13 个样本）：Steps较低可能导致细节不足

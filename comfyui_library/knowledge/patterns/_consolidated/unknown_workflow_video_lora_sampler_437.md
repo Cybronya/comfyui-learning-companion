@@ -3,59 +3,63 @@ name: unknown_workflow_video_lora_sampler_437
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8108
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], RH_LLMAPI_NODE, StringReplace, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy showAnything]
+coverage: 0.7224
+common_nodes: [GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
-missing: [MathExpression|pysssss, Primitive integer [Crystools], Text Multiline, easy anythingIndexSwitch]
-members: [视频生成/图生视频/1989534940729626625.json, 视频生成/图生视频/1989309256367304706.json, 视频生成/图生视频/1950590406721490945.json, 视频生成/文生视频/1971495513445089282.json, 视频生成/文生视频/1950544574634708994.json]
+missing: []
+members: [视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967373379772801025.json, 视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967775311335161858.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967233972919001089.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ版【自动提示词】_1968394134803361794.json, 视频生成/图生视频/图生视频---wan2.2-Fun-VACE图生视频-_2043853929309540354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_437
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1989534940729626625.json、视频生成/图生视频/1989309256367304706.json、视频生成/图生视频/1950590406721490945.json、视频生成/文生视频/1971495513445089282.json、视频生成/文生视频/1950544574634708994.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967373379772801025.json、视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967775311335161858.json、视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967233972919001089.json、视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ版【自动提示词】_1968394134803361794.json、视频生成/图生视频/图生视频---wan2.2-Fun-VACE图生视频-_2043853929309540354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `RH_LLMAPI_NODE`
-- `StringReplace`
-- `Text Multiline`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 3/5 个有
-- `WanVideoImageToVideoEncode` —— 3/5 个有
-- `GetNode` —— 2/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `WanVideoEmptyEmbeds` —— 2/5 个有
-- `CR Upscale Image` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
+- `Text Multiline` —— 4/5 个有
+- `WanVideoScheduler` —— 4/5 个有
+- `ColorMatch` —— 2/5 个有
+- `CreateCFGScheduleFloatList` —— 2/5 个有
+- `ImageStitch` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: TextJoinV2` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `Textbox` —— 1/5 个有
 - `easy cleanGpuUsed` —— 1/5 个有
+- `easy ifElse` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
@@ -67,4 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、Primitive integer [Crystools]、Text Multiline、easy anythingIndexSwitch
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

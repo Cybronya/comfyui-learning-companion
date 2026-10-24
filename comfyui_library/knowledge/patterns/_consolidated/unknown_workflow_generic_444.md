@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_generic_444
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.9445
+common_nodes: [RH_RhartVideoSparkvideo20MiniTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json, 音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json, 音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json, 音频生成/音频生成/生成双人对话声音_2035281634374717442.json]
+members: [图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json, 图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json, 图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json, 视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json, 视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json, 视频生成/文生视频/文生视频 Seedance2.0 Mini_2075568851261153282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_444
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json、音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json、音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json、音频生成/音频生成/生成双人对话声音_2035281634374717442.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Mini文生视频轻量出片｜Seedance2.0快速生成_2095873453231529985.json、图片生成/文生图/Seedance2.0Mini_文生视频_2071103562020638722.json、图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json、视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json、视频生成/文生视频/seedance2.0-Mini_文生视频_2069669281285099522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `RH_RhartVideoSparkvideo20MiniTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 3/4 个有
-- `FishS2MultiSpeakerTTS` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 

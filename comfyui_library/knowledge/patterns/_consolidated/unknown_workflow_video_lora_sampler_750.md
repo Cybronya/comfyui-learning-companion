@@ -3,63 +3,66 @@ name: unknown_workflow_video_lora_sampler_750
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9455
-common_nodes: [AIO_Preprocessor, CR Text Concatenate, ColorMatch, GetImageSizeAndCount, ImageResizeKJ, JWInteger, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Translator, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy textSwitch]
+coverage: 0.574
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, IndexTTS2Run, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1938243040110903297.json, 视频生成/图生视频/1937759191832662018.json]
+members: [视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json, 视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_750
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1938243040110903297.json、视频生成/图生视频/1937759191832662018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json、视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CR Text Concatenate`
-- `ColorMatch`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetImageSizeAndCount`
-- `ImageResizeKJ`
-- `JWInteger`
-- `LayerMask: LoadFlorence2Model`
-- `LayerUtility: Florence2Image2Prompt`
-- `LayerUtility: PurgeVRAM V2`
+- `GetNode`
+- `ImageResizeKJv2`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_Translator`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
-- `WanVideoMagCache`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy textSwitch`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageScaleToMegapixels` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `AudioToFPS` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImpactConditionalBranch` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `easy int` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

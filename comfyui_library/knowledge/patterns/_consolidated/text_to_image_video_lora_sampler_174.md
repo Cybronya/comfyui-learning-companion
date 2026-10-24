@@ -3,57 +3,80 @@ name: text_to_image_video_lora_sampler_174
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.887333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateCFGScheduleFloatList, EmptyLatentImage, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, RHHiddenNodes, RH_LLMAPI_Pro_Node, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.554333
+common_nodes: [AudioConcatenate, BasicScheduler, CLIPLoader, CLIPTextEncode, CM_FloatBinaryOperation, CM_IntBinaryOperation, CM_IntToFloat, ConditioningZeroOut, CreateVideo, EmptyLatentImage, FloatConstant, GetImageSize, H3SigmaRefiner, INTConstant, ImageBatch, ImageExpandBatch+, ImageFromBatch+, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftH3Sampler, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy mathInt, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json, 视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json]
+members: [视频生成/图生视频/MiniMax动作迁移官方接续版，人物参考图主场景参考关键帧视频生视频方案_2106437908533170178.json, 视频生成/图生视频/Minimax动作迁移 动作复刻视频生成方案_2105384636460388353.json, 视频生成/图生视频/Minimax动作迁移官方接续版｜视频生视频流畅复刻人物动作_2106198656264265729.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json、视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax动作迁移官方接续版，人物参考图主场景参考关键帧视频生视频方案_2106437908533170178.json、视频生成/图生视频/Minimax动作迁移 动作复刻视频生成方案_2105384636460388353.json、视频生成/图生视频/Minimax动作迁移官方接续版｜视频生视频流畅复刻人物动作_2106198656264265729.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AudioConcatenate`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
+- `CM_FloatBinaryOperation`
+- `CM_IntBinaryOperation`
+- `CM_IntToFloat`
+- `ConditioningZeroOut`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `GetImageSizeAndCount`
+- `FloatConstant`
+- `GetImageSize`
+- `H3SigmaRefiner`
 - `INTConstant`
-- `ImageFromBatch`
-- `JWInteger`
+- `ImageBatch`
+- `ImageExpandBatch+`
+- `ImageFromBatch+`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SelfLiftH3Sampler`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy boolean`
+- `easy compare`
 - `easy forLoopEnd`
 - `easy forLoopStart`
+- `easy ifElse`
+- `easy mathInt`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageFromBatch` —— 2/3 个有
+- `MiniMaxH3AddGuide` —— 2/3 个有
+- `ModelPreviewOverrideKJ` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `MiniMaxH3MotionContext` —— 1/3 个有
+- `MiniMaxH3MotionContextTrim` —— 1/3 个有
 
 ## 典型参数
 

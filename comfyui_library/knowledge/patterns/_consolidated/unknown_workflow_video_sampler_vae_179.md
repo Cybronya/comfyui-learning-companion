@@ -3,50 +3,52 @@ name: unknown_workflow_video_sampler_vae_179
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [ImageConcatMulti, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Primitive string [Crystools], VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.726
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, RMBG, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1899280548576055298.json, 视频生成/图生视频/1895658256604266497.json]
+members: [视频生成/图生视频/Skyreel V3 多图参考视频_2018210609103380482.json, 视频生成/图生视频/图生视频-多参考图-Skyreel-V3-R2V_2017750442649853954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_179
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1899280548576055298.json、视频生成/图生视频/1895658256604266497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Skyreel V3 多图参考视频_2018210609103380482.json、视频生成/图生视频/图生视频-多参考图-Skyreel-V3-R2V_2017750442649853954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `Primitive string [Crystools]`
-- `VHS_LoadVideo`
+- `RMBG`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBlur` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `ImageScaleDownToSize` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `WanVideoControlEmbeds` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `DF_Int_to_Float` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `intToFloat _O` —— 1/2 个有
 
 ## 典型参数
 

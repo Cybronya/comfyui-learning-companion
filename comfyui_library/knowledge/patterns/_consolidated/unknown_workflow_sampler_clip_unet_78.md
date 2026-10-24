@@ -1,69 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_78
 type: Unknown Workflow
-frequency: 8
+frequency: 11
 level: strong
-coverage: 0.820375
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.898455
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/FLUX2-klein 文生图4b_2012349235420729345.json, 图片生成/文生图/FLUX2-klein 文生图9b_2012344744420052994.json, 图片生成/文生图/Klein文生图+全节点注释_2072566661164658689.json, 图片生成/文生图/Klein文生图_2014600663744913409.json, 图片生成/文生图/Klein文生图_2072558936527560706.json, 图片生成/文生图/Klein文生图_2073934557337964546.json, 图片生成/文生图/【1月】高质量2K文生图 Flux2-Klein-9B_2012159064800763905.json, 视频生成/图生视频/2072926956559097858.json]
+members: [comfyui-workflow-templates-json/image_chroma_text_to_image.json, 图片生成/文生图/Chroma-V35前瞻文生图测试_1931586622008000513.json, 图片生成/文生图/Chroma1-HD 文生图_1962355322230915073.json, 图片生成/文生图/F.2-klein-9B+LoRA文生图工作流_2013075554722914305.json, 图片生成/文生图/FLUX klein 4B 文生图_2013180405410697218.json, 图片生成/文生图/FLUX klein 9B 文生图_2013484429548724225.json, 图片生成/文生图/FLUX2-KLEIN+lora+快速生图_2012490189339365377.json, 图片生成/文生图/Flux.2 [Klein]：文生图4B ComfyUI官方流_2012040141979783169.json, 图片生成/文生图/Flux.2 [Klein]：文生图4B ComfyUI官方流_2012049122789953538.json, 图片生成/文生图/Flux2-klein-base-9b-fp8 文生图_2013133653185929218.json, 图片生成/文生图/Flux2.Klein基础文生图工作流_2014585003874717698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_78
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/FLUX2-klein 文生图4b_2012349235420729345.json、图片生成/文生图/FLUX2-klein 文生图9b_2012344744420052994.json、图片生成/文生图/Klein文生图+全节点注释_2072566661164658689.json、图片生成/文生图/Klein文生图_2014600663744913409.json、图片生成/文生图/Klein文生图_2072558936527560706.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（comfyui-workflow-templates-json/image_chroma_text_to_image.json、图片生成/文生图/Chroma-V35前瞻文生图测试_1931586622008000513.json、图片生成/文生图/Chroma1-HD 文生图_1962355322230915073.json、图片生成/文生图/F.2-klein-9B+LoRA文生图工作流_2013075554722914305.json、图片生成/文生图/FLUX klein 4B 文生图_2013180405410697218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSampler`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 6/8 个有
-- `JWInteger` —— 6/8 个有
-- `LoadImage` —— 5/8 个有
-- `FluxResolutionNode` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
+- `EmptyFlux2LatentImage` —— 8/11 个有
+- `Flux2Scheduler` —— 8/11 个有
+- `PrimitiveInt` —— 7/11 个有
+- `LoraLoaderModelOnly` —— 4/11 个有
+- `BasicScheduler` —— 3/11 个有
+- `EmptySD3LatentImage` —— 3/11 个有
+- `T5TokenizerOptions` —— 3/11 个有
+- `LoraLoader` —— 2/11 个有
+- `ModelSamplingAuraFlow` —— 1/11 个有
+- `easy cleanGpuUsed` —— 1/11 个有
+- `easy promptList` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| LoRA 模型强度 | 1.5 | - | 2 | 100% |
+| LoRA 文本强度 | 1.41 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1.41，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

@@ -7,13 +7,13 @@ coverage: 0.918
 common_nodes: [CLIPLoader, CLIPTextEncode, ImageConcanate, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1998571771651588098.json, 视频生成/图生视频/1956384459622940674.json, 视频生成/图生视频/1996850315431485442.json, 视频生成/图生视频/1956358088464977921.json, 视频生成/图生视频/1956635710498246657.json, 视频生成/图生视频/1956389723734507522.json, 视频生成/图生视频/1956395513753030657.json]
+members: [视频生成/图生视频/(头发生长过程)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1998571771651588098.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Contorl 姿势控制加速稳定版V1_1956384459622940674.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1996850315431485442.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json, 视频生成/图生视频/【官版】Wan2.2 14B Fun Control 多模态控制_1956635710498246657.json, 视频生成/图生视频/（官方版）Wan Fun Control深度控制IP2V动作复刻V1_1956389723734507522.json, 视频生成/图生视频/（官方版）视频风格迁移Wan Fun Control线稿IP2V动作复刻V1_1956395513753030657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_293
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1998571771651588098.json、视频生成/图生视频/1956384459622940674.json、视频生成/图生视频/1996850315431485442.json、视频生成/图生视频/1956358088464977921.json、视频生成/图生视频/1956635710498246657.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(头发生长过程)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1998571771651588098.json、视频生成/图生视频/(官方)Wan 2.2 Fun Contorl 姿势控制加速稳定版V1_1956384459622940674.json、视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1996850315431485442.json、视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json、视频生成/图生视频/【官版】Wan2.2 14B Fun Control 多模态控制_1956635710498246657.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

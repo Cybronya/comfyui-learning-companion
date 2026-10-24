@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_976
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.626
-common_nodes: [PrimitiveStringMultiline, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.649667
+common_nodes: [Comfly_api_set, SaveImage, Text, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-VoiceDesign（声音设计）_2014524194331037697.json, 音频生成/音频生成/Qwen3TTS声音设计工作流_2105216069802749954.json]
+members: [图片生成/文生图/G-IMAGE2 图片编辑_2047577011262070785.json, 图片生成/文生图/G-IMAGE2文生图_2047345239874084865.json, 图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_976
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-VoiceDesign（声音设计）_2014524194331037697.json、音频生成/音频生成/Qwen3TTS声音设计工作流_2105216069802749954.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/G-IMAGE2 图片编辑_2047577011262070785.json、图片生成/文生图/G-IMAGE2文生图_2047345239874084865.json、图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `Comfly_api_set`
+- `SaveImage`
+- `Text`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `Comfly_gpt_image_2_official` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `Comfly_nano_banana2_edit` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

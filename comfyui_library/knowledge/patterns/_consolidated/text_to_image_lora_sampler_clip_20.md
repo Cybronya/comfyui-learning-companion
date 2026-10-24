@@ -1,76 +1,86 @@
 ---
 name: text_to_image_lora_sampler_clip_20
 type: Text To Image
-frequency: 23
+frequency: 24
 level: weak
-coverage: 0.948783
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, VAEDecode, VAELoader]
+coverage: 0.913958
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Anima Aesthetic 1.1｜1.5倍放大_2078374859184365569.json, 图片生成/文生图/Anima Aesthetic 1.1｜三阶高质量渲染_2078374835163582465.json, 图片生成/文生图/Anima+Aesthetic+1.1｜DMDX+四步极速版_2078701772113272834.json, 图片生成/文生图/Anima+Aesthetic+1.1｜文生图_2078701764664184833.json, 图片生成/文生图/Anima+Aesthetic+1.1｜文生图_2079573127385927682.json, 图片生成/文生图/Qwen Image 文生图，千问基础文生图_2005132413141479426.json, 图片生成/文生图/Qwen image 2512 我的50年_Qwen-Image-2512_2006650484186157057.json, 图片生成/文生图/Qwen image 2512文生图_2008433887889858562.json, 图片生成/文生图/Qwen-Image-2512 + LoRA 文生图_2091487545254301698.json, 图片生成/文生图/Qwen-Image-2512 文生图 8步加速_2014683752181538818.json, 图片生成/文生图/Qwen-Image-2512 最新文生图_2006383515574738946.json, 图片生成/文生图/Qwen-Image-2512不用LoRA实现人物一致性_2006694730360430594.json, 图片生成/文生图/Qwen-Image-2512卡通女孩LoRA_2007803177848020993.json, 图片生成/文生图/Qwen-Image-2512四步10秒出图Qwen image 2512_2006497445919854594.json, 图片生成/文生图/Qwen-Image-2512文生图_2006354179845005313.json, 图片生成/文生图/Qwen-Image-2512的Bill_LoRA_2007418345481576449.json, 图片生成/文生图/Qwen-Image2512中文渲染全系列工作流_2010150714567299074.json, 图片生成/文生图/Qwen2.1文生图（写实风格）_2104831851583066113.json, 图片生成/文生图/Qwen2512JK制服甜妹_2018334963661283330.json, 图片生成/文生图/Qwen2512油亮丝袜马油连裤袜美女_2018144682206826497.json, 图片生成/文生图/Z-image + LoRA 文生图工作流_2058875529981415425.json, 图片生成/文生图/Z-image 文生图工作流（含加速器）_2046950465908252673.json, 图片生成/文生图/潦草线条铅笔画_2017271179677016065.json]
+members: [图片生成/图生图/PS API插件图生图编辑 edit2511版本对接_2098281737645289474.json, 图片生成/图生图/Qwen Image Edit 2511图像编辑，图生图实测体验_2111251715113709570.json, 图片生成/图生图/Qwen Image Edit 2511图像编辑｜单图多图改图修图迁移换装_2097944852406300674.json, 图片生成/图生图/Qwen-Image-Edit一键转宫崎骏风｜风格迁移动漫感拉满_2111089910420688898.json, 图片生成/图生图/Qwen-Image-Edit图片编辑｜一键宫崎骏风格转换图生图_2093111534082936834.json, 图片生成/图生图/Qwen2511一键换脸｜图生图换脸自然不穿帮_2097225661818695682.json, 图片生成/图生图/Qwen_Image_Edit_2511图像编辑｜单图多图改图修图迁移换装_2098209289214193666.json, 图片生成/图生图/ins风手持特写LoRA｜穿戴甲图生图重绘不翻车_2097146065999974401.json, 图片生成/图生图/qwen2511去水印图像编辑｜最新写实图生图处理_2093462241126473730.json, 图片生成/图生图/一键换衣｜千问qwen2511最新图像编辑写实换装_2089821472830349313.json, 图片生成/图生图/一键转宫崎骏风格动漫｜Qwen-Image-Edit图生图_2095501283846352897.json, 图片生成/图生图/三视图真人动漫人物一致性 图生图处理工具_2100302408483164161.json, 图片生成/图生图/三视图真人动漫人物一致性 图生图处理生成工具_2100684736732680194.json, 图片生成/图生图/千问Qwen2511图像编辑模型 一键智能换装换衣_2098105005101375489.json, 图片生成/图生图/千问qwen2511一键换衣｜最新图像编辑换装图生图_2092380662576799745.json, 图片生成/图生图/千问qwen2511换装图像编辑｜服装替换图生图工作流_2097767445095337985.json, 图片生成/图生图/图像重打光工作流｜Qwen2511光影重塑图生图处理_2096332924449812482.json, 图片生成/图生图/换衣服背景_2108501932456374273.json, 图片生成/图生图/换装千问qwen2511最新图像编辑｜图生图换装一键完成_2097958405175599106.json, 图片生成/图生图/换装千问qwen2511最新图像编辑｜图生图换装一键完成_2098230078110003202.json, 图片生成/图生图/换装新体验｜千问qwen2511最新图像编辑图生图_2089820045437394945.json, 图片生成/图生图/真人动漫三视图｜人物一致性图生图写实出图_2092900266537480193.json, 图片生成/图生图/真人动漫人物一致性｜三视图图生图写实生成_2092710922988118017.json, 图片生成/文生图/宫崎骏风格一键转换｜Qwen-Image-Edit文生图动漫_2095509841522544642.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/文生图/Anima Aesthetic 1.1｜1.5倍放大_2078374859184365569.json、图片生成/文生图/Anima Aesthetic 1.1｜三阶高质量渲染_2078374835163582465.json、图片生成/文生图/Anima+Aesthetic+1.1｜DMDX+四步极速版_2078701772113272834.json、图片生成/文生图/Anima+Aesthetic+1.1｜文生图_2078701764664184833.json、图片生成/文生图/Anima+Aesthetic+1.1｜文生图_2079573127385927682.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/PS API插件图生图编辑 edit2511版本对接_2098281737645289474.json、图片生成/图生图/Qwen Image Edit 2511图像编辑，图生图实测体验_2111251715113709570.json、图片生成/图生图/Qwen Image Edit 2511图像编辑｜单图多图改图修图迁移换装_2097944852406300674.json、图片生成/图生图/Qwen-Image-Edit一键转宫崎骏风｜风格迁移动漫感拉满_2111089910420688898.json、图片生成/图生图/Qwen-Image-Edit图片编辑｜一键宫崎骏风格转换图生图_2093111534082936834.json…）
 
 - **类型**：Text To Image
-- **样本数**：23
+- **样本数**：24
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
+全部 24 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 21/23 个有
-- `ModelSamplingAuraFlow` —— 18/23 个有
-- `PreviewImage` —— 9/23 个有
-- `ClownsharKSampler_Beta` —— 5/23 个有
-- `FluxResolutionNode` —— 5/23 个有
-- `XB_UNetNameBroadcaster` —— 5/23 个有
-- `EnhancedLoadDiffusionModel` —— 2/23 个有
-- `LatentUpscaleBy` —— 2/23 个有
-- `JjkText` —— 1/23 个有
-- `Text Concatenate` —— 1/23 个有
+- `JjkText` —— 23/24 个有
+- `solarL_SaveImagesToZip` —— 23/24 个有
+- `孤海注释` —— 23/24 个有
+- `CFGNorm` —— 22/24 个有
+- `ModelSamplingAuraFlow` —— 22/24 个有
+- `ImageScaleToTotalPixels` —— 20/24 个有
+- `TextEncodeQwenImageEditPlus` —— 20/24 个有
+- `VAEEncode` —— 19/24 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 18/24 个有
+- `ImageConcanate` —— 15/24 个有
+- `CR Text` —— 12/24 个有
+- `Image Comparer (rgthree)` —— 7/24 个有
+- `EmptySD3LatentImage` —— 5/24 个有
+- `SDXL Empty Latent Image` —— 4/24 个有
+- `TextEncodeQwenImageEdit` —— 4/24 个有
+- `ImageConcatMulti` —— 3/24 个有
+- `PrimitiveStringMultiline` —— 2/24 个有
+- `QwenMultiangleLightningNode` —— 1/24 个有
+- `easy imageScaleDownToSize` —— 1/24 个有
+- `easy showAnything` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1664 | 23 | 78% |
-| 高度 | 1024 | 512 - 1920 | 23 | 72% |
-| 采样步数 | 7 | 4 - 30 | 18 | 26% |
-| Prompt 约束强度(CFG) | 1 | 1 - 30 | 23 | 0% |
-| 采样算法 | euler | - | 23 | 78% |
-| 调度器 | simple | - | 23 | 78% |
-| 重绘幅度 | 1 | 1 - 4.5 | 23 | 35% |
+| 采样步数 | 4 | 4 - 10 | 24 | 72% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 24 | 84% |
+| 采样算法 | er_sde | - | 24 | 96% |
+| 调度器 | beta | - | 24 | 96% |
+| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
+| 宽度 | 80 | 80 - 1024 | 24 | 0% |
+| 高度 | 80 | 80 - 1024 | 24 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 45/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1664，23 个样本
-- 高度 中位数 1024，观测区间 512 - 1920，23 个样本
-- 采样步数 中位数 7，观测区间 4 - 30，18 个样本，取值分散，一致性仅 26%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 30，23 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，23 个样本，一致性 78%
-- 调度器 最常用 simple，23 个样本，一致性 78%
-- 重绘幅度 中位数 1，观测区间 1 - 4.5，23 个样本，取值分散，一致性仅 35%
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 风险：重绘幅度 观测到 4.5，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 高发问题（15/23 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 10，24 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，24 个样本，取值集中（一致性 84%）
+- 采样算法 最常用 er_sde，24 个样本，一致性 96%
+- 调度器 最常用 beta，24 个样本，一致性 96%
+- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 1024，24 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1024，24 个样本，取值分散，一致性仅 0%
+- 高发问题（45/24 个样本）：Steps较低可能导致细节不足

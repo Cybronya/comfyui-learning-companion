@@ -7,13 +7,13 @@ coverage: 0.949
 common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, CreateCFGScheduleFloatList, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GetImageSizeAndCount, INTConstant, ImageFromBatch+, ImageListToImageBatch, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, JWInteger, JjkShowText, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, LoraLoader, LoraLoaderModelOnly, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [视频生成/图生视频/1952369235551031298.json, 视频生成/图生视频/1957832678953381890.json, 视频生成/图生视频/1957835967409352705.json]
+members: [视频生成/图生视频/WAN2.2顶配视频生成优化版（微缩景观）_1952369235551031298.json, 视频生成/图生视频/（微缩景观）WAN2.2图片到视频_1957832678953381890.json, 视频生成/图生视频/（微缩景观）WAN图片到视频_1957835967409352705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_19
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1952369235551031298.json、视频生成/图生视频/1957832678953381890.json、视频生成/图生视频/1957835967409352705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WAN2.2顶配视频生成优化版（微缩景观）_1952369235551031298.json、视频生成/图生视频/（微缩景观）WAN2.2图片到视频_1957832678953381890.json、视频生成/图生视频/（微缩景观）WAN图片到视频_1957835967409352705.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

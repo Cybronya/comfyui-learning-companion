@@ -1,62 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_unet_69
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.91925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.473667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json, 视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json, 视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json]
+members: [视频生成/图生视频/【官模】H3风格测试 _ 案例2：各国早餐（风格）_2093549585775026177.json, 视频生成/图生视频/【官模】首尾帧 _ H3案例：科普小视频（一颗土豆的故事🥔）_2091398589313544193.json, 视频生成/文生视频/minimax h3六宫生视频_2085919188304093186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_69
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 单人音频驱动数字人（最高15秒）_2085434809618358274.json、视频生成/图生视频/MiniMax-H3 双人音频驱动数字人（双人最高15秒）_2085462125711024129.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2099774570529120257.json、视频生成/图生视频/MiniMax-H3_单人音频驱动数字人最高15秒_2100034040945537025.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【官模】H3风格测试 _ 案例2：各国早餐（风格）_2093549585775026177.json、视频生成/图生视频/【官模】首尾帧 _ H3案例：科普小视频（一颗土豆的故事🥔）_2091398589313544193.json、视频生成/文生视频/minimax h3六宫生视频_2085919188304093186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CR Prompt Text`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
 - `LoadImage`
-- `MathExpression|pysssss`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 3/4 个有
-- `MiniMaxChunkFeedForward` —— 2/4 个有
-- `MiniMaxLowVRAMAttention` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `ModelPreviewOverrideKJ` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `PixaromaLabel` —— 2/4 个有
-- `AudioConcat` —— 1/4 个有
-- `EmptyAudio` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
+- `ComfySwitchNodeV2` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LoraLoaderBypassModelOnly` —— 2/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/3 个有
+- `SolAttnMiniMax` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
+- `MiniMaxH3SigmaShift` —— 1/3 个有
+- `ModelPreviewOverrideKJ` —— 1/3 个有
 
 ## 典型参数
 

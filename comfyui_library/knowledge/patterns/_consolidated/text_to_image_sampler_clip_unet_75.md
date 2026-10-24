@@ -1,76 +1,75 @@
 ---
 name: text_to_image_sampler_clip_unet_75
 type: Text To Image
-frequency: 7
-level: strong
-coverage: 0.895857
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.83825
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/出图最快Z-image_1993923664148185089.json, 图片生成/文生图/强到可怕_一次性多提示词 极速生成多张图_1994041155893608450.json, 图片生成/文生图/文生图-boogu_turbo-模板_2090689514200195074.json, 图片生成/文生图/文生图基础款_2010012252333678593.json, 图片生成/文生图/（1.2）WH-Z-IMAG最强生图（一次可生多图）_2005272973877673986.json, 图片生成/文生图/🚀 开源新王💯王炸💥Z-IMAGE系列 文生图+ 图生图_1993880222367940610.json, 图片生成/文生图/🤖强到可怕！Z-image小钢炮来袭！又快又好，爱不释手🤖_1993864367661924353.json]
+members: [图片生成/图生图/Anima+ToriiGate-0.5无审查反推+controlnet强控图生图(已修复)_2061398059543785474.json, 图片生成/图生图/Anima+ToriiGate-0.5无审查反推图生图(ToriiGate反推节点已修复)_2061105029859336193.json, 图片生成/图生图/Anima+V1.0 图生图 二次元手绘风 anima_base 卡通动漫角色Q版可爱动画风_2057338559039885313.json, 图片生成/图生图/（风格Lora版）Anima 自动提示词文生图V1_2060735043315785730.json, 图片生成/文生图/Anima V1.0正式版参考图生图_2056978691254734849.json, 图片生成/文生图/Anima base V1.0 正式版_2057422872104235009.json, 图片生成/文生图/AnimaBase-动漫抽卡神器-全自动提示词-文生图_2057408001748856833.json, 图片生成/文生图/反推提示词后anima文生图+全节点注释_2056999144727867393.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_75
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/出图最快Z-image_1993923664148185089.json、图片生成/文生图/强到可怕_一次性多提示词 极速生成多张图_1994041155893608450.json、图片生成/文生图/文生图-boogu_turbo-模板_2090689514200195074.json、图片生成/文生图/文生图基础款_2010012252333678593.json、图片生成/文生图/（1.2）WH-Z-IMAG最强生图（一次可生多图）_2005272973877673986.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Anima+ToriiGate-0.5无审查反推+controlnet强控图生图(已修复)_2061398059543785474.json、图片生成/图生图/Anima+ToriiGate-0.5无审查反推图生图(ToriiGate反推节点已修复)_2061105029859336193.json、图片生成/图生图/Anima+V1.0 图生图 二次元手绘风 anima_base 卡通动漫角色Q版可爱动画风_2057338559039885313.json、图片生成/图生图/（风格Lora版）Anima 自动提示词文生图V1_2060735043315785730.json、图片生成/文生图/Anima V1.0正式版参考图生图_2056978691254734849.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CR Prompt Text`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 6/7 个有
-- `ImpactInt` —— 5/7 个有
-- `String Literal` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `Text Multiline` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `RH_Captioner` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `ConcatTextOfUtils` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `Florence2ModelLoader` —— 4/8 个有
+- `Florence2Run` —— 4/8 个有
+- `RHLLMChatNode` —— 4/8 个有
+- `Random Line` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `ToriiGateT8_LlamaCppVisionGenerate` —— 2/8 个有
+- `AnimaLLLiteApply` —— 1/8 个有
+- `Latent Switch (JPS)` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | 720 - 1536 | 7 | 69% |
-| 高度 | 1280 | 1024 - 1920 | 7 | 81% |
-| 采样步数 | 9 | 4 - 10 | 7 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | res_2s | - | 7 | 57% |
-| 调度器 | bong_tangent | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 40 | 10 - 40 | 8 | 73% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 8 | 72% |
+| 采样算法 | er_sde | - | 8 | 75% |
+| 调度器 | beta | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 1920 | 1000 - 3056 | 8 | 64% |
+| 高度 | 1080 | 1080 - 1920 | 8 | 76% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 720 - 1536，7 个样本
-- 高度 中位数 1280，观测区间 1024 - 1920，7 个样本，取值集中（一致性 81%）
-- 采样步数 中位数 9，观测区间 4 - 10，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，7 个样本，一致性 57%
-- 调度器 最常用 bong_tangent，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 40，观测区间 10 - 40，8 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，8 个样本
+- 采样算法 最常用 er_sde，8 个样本，一致性 75%
+- 调度器 最常用 beta，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1920，观测区间 1000 - 3056，8 个样本
+- 高度 中位数 1080，观测区间 1080 - 1920，8 个样本

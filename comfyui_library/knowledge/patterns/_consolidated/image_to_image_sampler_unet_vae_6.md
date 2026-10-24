@@ -1,81 +1,75 @@
 ---
 name: image_to_image_sampler_unet_vae_6
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.521
-common_nodes: [CLIPLoader, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), GetNode, KSampler, LoadImage, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, ResolutionSelector, SaveAudio, SaveImage, SetNode, StringConcatenate, StringReplace, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTPreviewContent, YUAN_TXTReplace, YuanCustomCombo]
-problems: []
+frequency: 15
+level: moderate
+coverage: 0.905333
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/资产生成-短剧拍档V16.1(Qwen2.1可编辑版)_2105476566175277057.json, 音频生成/音频生成/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2110643506917240834.json]
+members: [图片生成/图生图/Qwen-Edit局部重绘_1964882500403253249.json, 图片生成/图生图/Qwen-Image-Edit 图生图编辑 _ 12 节点保持人物换装_加配饰_2086660579183386625.json, 图片生成/图生图/Qwen-Image-Edit 真人照片转3D卡通 _ 人物换装_2109096443209404418.json, 图片生成/图生图/Qwen-edit 打光工作流｜人物一致_1959175236979732482.json, 图片生成/图生图/人物打光换背景-Qwen-Image-Edit图像编辑_1958790192075268098.json, 图片生成/图生图/人物编辑-Qwen-Image-Edit图像编辑_1958681004053577729.json, 图片生成/图生图/千问Edit局部重绘_Qwen-Edit_1964284723205951490.json, 图片生成/图生图/千问Edit局部重绘_Qwen-Edit_1967961936698683393.json, 图片生成/图生图/千问Edit局部重绘【配合Qwen-Edit inpaint Lora】_1964666303120330754.json, 图片生成/图生图/千问_局部重绘_Qwen Image Edit Inpainting_1964904089928781826.json, 图片生成/图生图/转换视角-Qwen-Image-Edit图像编辑_1957970150108577793.json, 图片生成/图生图/转绘-Qwen-Image-Edit图像编辑_1957815011857068034.json, 图片生成/图生图/通义前文Qwen-Image-Edit图像编辑修复版（一致性大大增强）_1958671348539224065.json, 图片生成/图生图/通义千问图片编辑（qwen-edit）_1958158377425784833.json, 图片生成/图生图/🦖转绘-Qwen-Image_1958477176230277122.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/资产生成-短剧拍档V16.1(Qwen2.1可编辑版)_2105476566175277057.json、音频生成/音频生成/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2110643506917240834.json）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit局部重绘_1964882500403253249.json、图片生成/图生图/Qwen-Image-Edit 图生图编辑 _ 12 节点保持人物换装_加配饰_2086660579183386625.json、图片生成/图生图/Qwen-Image-Edit 真人照片转3D卡通 _ 人物换装_2109096443209404418.json、图片生成/图生图/Qwen-edit 打光工作流｜人物一致_1959175236979732482.json、图片生成/图生图/人物打光换背景-Qwen-Image-Edit图像编辑_1958790192075268098.json…）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **样本数**：15
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 15 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `FB_Qwen3TTSVoiceDesign`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
 - `KSampler`
 - `LoadImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RegexExtract`
-- `ResolutionSelector`
-- `SaveAudio`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SetNode`
-- `StringConcatenate`
-- `StringReplace`
-- `TextEncodeQwenImage21`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTPreviewContent`
-- `YUAN_TXTReplace`
-- `YuanCustomCombo`
+
+**可变部分**（部分 workflow 才有）：
+- `LoraLoaderModelOnly` —— 14/15 个有
+- `ImageStitch` —— 13/15 个有
+- `Text Multiline` —— 10/15 个有
+- `ImageAndMaskPreview` —— 8/15 个有
+- `ImageScaleDownToSize` —— 8/15 个有
+- `TextEncodeQwenImageEditEnhanced` —— 6/15 个有
+- `PreviewImage` —— 5/15 个有
+- `ImageScaleToTotalPixels` —— 4/15 个有
+- `RH_Translator` —— 3/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/15 个有
+- `Mask Fill Holes` —— 1/15 个有
+- `RepeatLatentBatch` —— 1/15 个有
+- `ShowText|pysssss` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1088 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
-| 采样步数 | 25 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 20 | 4 - 20 | 15 | 70% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 15 | 78% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 100% |
+| 重绘幅度 | 1 | 0.6 - 1 | 15 | 90% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1088，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 4 - 20，15 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，15 个样本
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.6 - 1，15 个样本，取值集中（一致性 90%）

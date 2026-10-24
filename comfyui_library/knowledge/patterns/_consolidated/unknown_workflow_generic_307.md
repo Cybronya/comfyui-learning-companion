@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_307
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.9142
-common_nodes: [LoadImage, RH_Hailuo_Image2Video, SaveVideo]
+coverage: 0.59125
+common_nodes: [IndexTTS2Run, LoadAudio, LoadImage, MultiLinePromptIndex]
 problems: []
 missing: []
-members: [视频生成/图生视频/1987125607056257026.json, 视频生成/图生视频/2054441608346644481.json, 视频生成/图生视频/2021400714517417986.json, 视频生成/图生视频/1987019541161119746.json, 视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json]
+members: [音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json, 音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json, 音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json, 音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json, 音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json, 音频生成/音频生成/双人说话带情绪用情绪音频控制+全节点注释_2052273666066526209.json, 音频生成/音频生成/双人说话带情绪用文本控制+全节点注释_2052273712635883522.json, 音频生成/音频生成/双人说话带情绪随机情绪+全节点注释_2052273819569664001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_307
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1987125607056257026.json、视频生成/图生视频/2054441608346644481.json、视频生成/图生视频/2021400714517417986.json、视频生成/图生视频/1987019541161119746.json、视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/HeGenAI-N8N-INDEXTTS2_1968602119202906113.json、音频生成/音频生成/单人说话带情绪用文本控制+全节点注释_2052274306469646338.json、音频生成/音频生成/单人说话带情随机情绪+全节点注释_2052273799407648769.json、音频生成/音频生成/双人说话不带情绪+全节点注释_2052266328064569346.json、音频生成/音频生成/双人说话带情绪用向量（数字）控制+全节点注释_2052278286750896130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `RH_Hailuo_Image2Video`
-- `SaveVideo`
+- `MultiLinePromptIndex`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
+- `SaveAudioMP3` —— 7/8 个有
+- `SaveAudio` —— 2/8 个有
+- `easy imageSave` —— 1/8 个有
 
 ## 典型参数
 

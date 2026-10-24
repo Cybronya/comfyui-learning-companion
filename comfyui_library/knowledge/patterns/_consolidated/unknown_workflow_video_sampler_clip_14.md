@@ -1,71 +1,96 @@
 ---
 name: unknown_workflow_video_sampler_clip_14
 type: Unknown Workflow
-frequency: 20
-level: moderate
-coverage: 0.994
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, UNETLoader, VAELoader, VHS_VideoCombine]
-problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+frequency: 24
+level: strong
+coverage: 0.364708
+common_nodes: [Any2ListNode, AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageBatch, ImageFromBatch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, ModelPatchLoader, PreviewAny, PrimitiveFloat, SetNode, TextInput_, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy indexAnything, easy int, easy promptLine, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1934184638036275202.json, 视频生成/图生视频/1933315042408312834.json, 视频生成/文生视频/1933102536746471425.json, 视频生成/文生视频/1977308765202587649.json, 视频生成/文生视频/Self Forcing原生文生视频_2072999743049211904.json, 视频生成/文生视频/1895182420566212609.json, 视频生成/文生视频/Wan2.1 文生视频工作流_1991075086629314562.json, 视频生成/文生视频/1904365052583907330.json, 视频生成/文生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_2053727976885366786.json, 视频生成/文生视频/Wan2.1文生视频_1985682376623828994.json, 视频生成/文生视频/Wan2.1文生视频_2008116883312087041.json, 视频生成/文生视频/文生视频 开源版_2046758506686058497.json, 视频生成/文生视频/文生视频+开源版 我的刀盾_2048961068537487362.json, 视频生成/文生视频/文生视频+开源版_2047284865078398977.json, 视频生成/文生视频/文生视频+开源版_2047564573158412289.json, 视频生成/文生视频/文生视频+开源版_2048571010336694273.json, 视频生成/文生视频/文生视频_1990234180640534529.json, 视频生成/文生视频/文生视频_2046503819072249858.json, 视频生成/文生视频/1958378106241368066.json, 视频生成/文生视频/1923170079112876033.json]
+members: [图片生成/文生图/最新增强版InfiniteTalk无限时长数字偶像Pro对口型工作流 V3.0_2033995490647351297.json, 数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json, 数字人/数字人/数字人对口型_2093326224767672322.json, 数字人/数字人/鼎子-InfiniteTalk数字人单人图像驱动-32秒版本_2049680487425290242.json, 视频生成/图生视频/1FINAL-SZR-SING-TALK - YZ金鱼-InfiniteTalk_2044648353442566146.json, 视频生成/图生视频/InfiniteTalk-comfui官方版工作流_2032340272989872130.json, 视频生成/图生视频/InfiniteTalk图片数字人对口型_2033825767792054274.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2016086037126189058.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2110324012046966785.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流 (1)_2058730777491369986.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流_2054726545402548226.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流_2056896899143262209.json, 视频生成/图生视频/单人InfiniteTalk官方版工作流_2059550534989864961.json, 视频生成/图生视频/单人InfiniteTalk官方版电商工作流_2071583964170641410.json, 视频生成/图生视频/单人数字人InfiniteTalk官方版工作流_2040337221068263426.json, 视频生成/图生视频/单人数字人InfiniteTalk官方版工作流_2074322051434901506.json, 视频生成/图生视频/单人数字人InfiniteTalk官方版工作流_2074419354204196865.json, 视频生成/图生视频/图生视频-单人InfiniteTalk官方版工作流_2066133635832565762.json, 视频生成/图生视频/数字人口播工作流最长25秒 生产力版_2096966156518248449.json, 视频生成/图生视频/无限时长视频-InfiniteTalk数字人_2019751062122536962.json, 视频生成/图生视频/无限时长音频+超自然数字人_2052234366641815554.json, 视频生成/图生视频/电商带货版 InfiniteTalk 单人数字人官方版_2050130108794580993.json, 视频生成/图生视频/震撼！效果太牛了！超真实感数字人口播 虚拟人口播 短视频运营利器_2039859675247677441.json, 视频生成/文生视频/直播搭建带货数字人，_2073822907255578625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_14
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/1934184638036275202.json、视频生成/图生视频/1933315042408312834.json、视频生成/文生视频/1933102536746471425.json、视频生成/文生视频/1977308765202587649.json、视频生成/文生视频/Self Forcing原生文生视频_2072999743049211904.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/文生图/最新增强版InfiniteTalk无限时长数字偶像Pro对口型工作流 V3.0_2033995490647351297.json、数字人/数字人/单人InfiniteTalk官方版工作流_2053384334404530178.json、数字人/数字人/数字人对口型_2093326224767672322.json、数字人/数字人/鼎子-InfiniteTalk数字人单人图像驱动-32秒版本_2049680487425290242.json、视频生成/图生视频/1FINAL-SZR-SING-TALK - YZ金鱼-InfiniteTalk_2044648353442566146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：24
+- **可信度**：强结论
+- **平均知识覆盖**：36%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 24 个 workflow 都包含：
+- `Any2ListNode`
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
+- `ImageBatch`
+- `ImageFromBatch`
 - `KSampler`
-- `UNETLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `ModelPatchLoader`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `SetNode`
+- `TextInput_`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanInfiniteTalkToVideo`
+- `easy indexAnything`
+- `easy int`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 15/20 个有
-- `VAEDecodeTiled` —— 15/20 个有
-- `CM_IntToFloat` —— 14/20 个有
-- `VAEDecode` —— 6/20 个有
-- `ModelSamplingSD3` —— 5/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/20 个有
-- `MagCache` —— 2/20 个有
-- `RHHiddenNodes` —— 1/20 个有
-- `ShowText` —— 1/20 个有
-- `Text Multiline` —— 1/20 个有
-- `easy cleanGpuUsed` —— 1/20 个有
+- `Audio Duration (mtb)` —— 21/24 个有
+- `MathExpression|pysssss` —— 21/24 个有
+- `PreviewAudio` —— 21/24 个有
+- `PreviewImage` —— 21/24 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/24 个有
+- `Any To String (mtb)` —— 1/24 个有
+- `Apply Whisper` —— 1/24 个有
+- `IndexTTS2Run` —— 1/24 个有
+- `Label (rgthree)` —— 1/24 个有
+- `MelBandRoFormerModelLoader` —— 1/24 个有
+- `MelBandRoFormerSampler` —— 1/24 个有
+- `PrimitiveStringMultiline` —— 1/24 个有
+- `SaveAudio` —— 1/24 个有
+- `ZML_ImageEncryption` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 8 - 30 | 20 | 76% |
-| Prompt 约束强度(CFG) | 6 | 1 - 6 | 20 | 73% |
-| 采样算法 | uni_pc | - | 20 | 90% |
-| 调度器 | simple | - | 20 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 采样步数 | 4 | 4 - 4 | 24 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 24 | 100% |
+| 采样算法 | euler | - | 24 | 100% |
+| 调度器 | normal | - | 24 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| 发现KSampler但没有VAEDecode | 14/20 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
-| Steps较低可能导致细节不足 | 2/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 157/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 8 - 30，20 个样本
-- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，20 个样本
-- 采样算法 最常用 uni_pc，20 个样本，一致性 90%
-- 调度器 最常用 simple，20 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 高发问题（14/20 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 中位数 4，观测区间 4 - 4，24 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，24 个样本，一致性 100%
+- 调度器 最常用 normal，24 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 高发问题（157/24 个样本）：Steps较低可能导致细节不足

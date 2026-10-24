@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_sampler_unet_vae_101
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.874875
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8444
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/miniMax H3图生视频_2084688950412795906.json, 视频生成/图生视频/minimax_h3_i2v  加速多参考视频生成_2106315178865422338.json, 视频生成/图生视频/minimax_h3_i2v  加速首位帧_2106309679268843522.json, 视频生成/图生视频/minimax_h3_图生视频_2084112158757052417.json, 视频生成/图生视频/minimax多参考出视频_2084278095783227394.json, 视频生成/图生视频/调用版minimax+H3+开源版 -首尾帧_2091060784687308801.json, 视频生成/图生视频/调用版minimax+H3+开源版+文生视频+T2VA文生_2086814099383607297.json, 视频生成/文生视频/Minimax H3文生视频_2084688902564179970.json]
+members: [视频生成/图生视频/开源 Minimax-H3 多参全模态音视频生成_2084313713590493186.json, 视频生成/图生视频/开源 Minimax-H3 数字人（多参视频生成）_2084210486131908609.json, 视频生成/图生视频/故事板九宫格分镜多参MinimaxH3考图视频工作流ENG_2087092363469611009.json, 视频生成/图生视频/海螺H3 数字人（多参视频生成）开源版_2085277180266893314.json, 视频生成/图生视频/自用版 Minimax H3 全能多参生视频_2085256791130202114.json, 视频生成/文生视频/MINIMAX-H3工作流合集_2084536680941441025.json, 视频生成/文生视频/MINIMAX-H3工作流合集_2084552719951556609.json, 视频生成/文生视频/Minimax-h3 多模态全能参考版_2093519190757044225.json, 视频生成/文生视频/信息流广告 Minimax-h3 多模态全能参考版_2085205896992477185.json, 视频生成/文生视频/地表最强开源视频！Minimax-h3 多模态全能参考版_2084188703311884289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_101
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/miniMax H3图生视频_2084688950412795906.json、视频生成/图生视频/minimax_h3_i2v  加速多参考视频生成_2106315178865422338.json、视频生成/图生视频/minimax_h3_i2v  加速首位帧_2106309679268843522.json、视频生成/图生视频/minimax_h3_图生视频_2084112158757052417.json、视频生成/图生视频/minimax多参考出视频_2084278095783227394.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/开源 Minimax-H3 多参全模态音视频生成_2084313713590493186.json、视频生成/图生视频/开源 Minimax-H3 数字人（多参视频生成）_2084210486131908609.json、视频生成/图生视频/故事板九宫格分镜多参MinimaxH3考图视频工作流ENG_2087092363469611009.json、视频生成/图生视频/海螺H3 数字人（多参视频生成）开源版_2085277180266893314.json、视频生成/图生视频/自用版 Minimax H3 全能多参生视频_2085256791130202114.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `CreateVideo`
 - `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
@@ -41,23 +41,24 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ImageToVideo` —— 7/8 个有
-- `LoadImage` —— 6/8 个有
-- `easy cleanGpuUsed` —— 4/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `DuckHideNode` —— 2/8 个有
-- `H3SigmaRefiner` —— 2/8 个有
-- `LoraLoaderBypassModelOnly` —— 2/8 个有
-- `ModelAttentionBackend` —— 2/8 个有
-- `SaveImage` —— 2/8 个有
-- `EasyCache` —— 1/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/8 个有
-- `PathchSageAttentionKJ` —— 1/8 个有
-- `PlaySound|pysssss` —— 1/8 个有
-- `SeedVR2LoadDiTModel` —— 1/8 个有
-- `SeedVR2LoadVAEModel` —— 1/8 个有
-- `SeedVR2VideoUpscaler` —— 1/8 个有
-- `VHS_VideoCombine` —— 1/8 个有
+- `LoadAudio` —— 8/10 个有
+- `ResolutionSelector` —— 8/10 个有
+- `CR Text` —— 6/10 个有
+- `PrimitiveStringMultiline` —— 6/10 个有
+- `VHS_LoadVideoFFmpeg` —— 6/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `Label (rgthree)` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `JjkText` —— 2/10 个有
+- `PathchSageAttentionKJ` —— 2/10 个有
+- `孤海注释` —— 2/10 个有
+- `EasyCache` —— 1/10 个有
+- `Load Lora` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `RH_LLMAPI_NODE` —— 1/10 个有
+- `SolAttnPatch` —— 1/10 个有
+- `Text` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

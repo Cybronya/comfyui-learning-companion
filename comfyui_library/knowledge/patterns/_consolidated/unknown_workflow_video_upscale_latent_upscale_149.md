@@ -3,72 +3,87 @@ name: unknown_workflow_video_upscale_latent_upscale_149
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.931
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.5905
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CM_IntToFloat, CR Prompt Text, ComfyMathExpression, EasyCache, FloatConstant, GetNode, INTConstant, KSamplerSelect, LTX2AttentionTunerPatch, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LiconMSR, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, ModelAttentionBackend, PathchSageAttentionKJ, PromptRelayEncode, PurgeVRAM_UTK, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringFunction|pysssss, StringLength, StringSubstring, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, string_util_StrFind]
 problems: []
 missing: []
-members: [视频生成/文生视频/【3月】LTX2.3文生视频（高质量一致性、音效、人声）_2031003213045960706.json, 视频生成/文生视频/最强优化—LTX2.3全自动文生视频_2044381949787115521.json]
+members: [视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json, 视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_149
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【3月】LTX2.3文生视频（高质量一致性、音效、人声）_2031003213045960706.json、视频生成/文生视频/最强优化—LTX2.3全自动文生视频_2044381949787115521.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/海螺h3图生视频1080_2088598229305872386.json、视频生成/图生视频/海螺h3首尾帧生视频1080_2088599883359014914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+- `CM_IntToFloat`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `FloatConstant`
+- `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
+- `LTX2AttentionTunerPatch`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
+- `LTXVAudioVAEEncode`
 - `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LiconMSR`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
+- `MiniMaxH3ImageToVideo`
+- `ModelAttentionBackend`
 - `PathchSageAttentionKJ`
+- `PromptRelayEncode`
+- `PurgeVRAM_UTK`
+- `RHLLMChatNode`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `StringFunction|pysssss`
+- `StringLength`
+- `StringSubstring`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy showAnything`
+- `string_util_StrFind`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Int_to_Float` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LTXVLatentUpsampler` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `easy getNode` —— 1/2 个有
-- `easy setNode` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,6 +91,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

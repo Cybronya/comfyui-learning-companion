@@ -1,82 +1,81 @@
 ---
 name: image_to_image_lora_sampler_unet_9
 type: Image To Image
-frequency: 6
+frequency: 26
 level: strong
-coverage: 0.884
-common_nodes: [CFGNorm, CLIPLoader, CM_FloatToInt, CM_FloatUnaryOperation, CM_IntToFloat, CR Prompt Text, FL_ImageBatchToGrid, FluxKontextMultiReferenceLatentMethod, GetImageSizeAndCount, ImageListToBatch+, Int, JWIntegerToString, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveStringMultiline, ProcessString, Qwen3_VQA_Plus, RH_LLMAPI_NODE, SaveImage, StringFunction|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy saveText, easy seed, easy showAnything]
+coverage: 0.922769
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107418412778610689.json, 图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107433169149579266.json, 图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2082660755245195266.json, 图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2088143998782369794.json, 图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2092053482613338114.json, 视频生成/文生视频/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2068856792473493506.json]
+members: [图片生成/图生图/QWEN-2511 ｜ 一致性｜多角度九宫格｜自定义角度_2021655546507567106.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版+全节点注释_2052231197274714113.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2009868534964297730.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2042118585144840193.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-预设版_2009865153323470849.json, 图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-预设版_2020733052619591682.json, 图片生成/图生图/Qwen Multiangle 多角度一致性分镜工作流_2011317131958296578.json, 图片生成/图生图/Qwen Multiangle 多角度一致性分镜工作流_2013097150955134978.json, 图片生成/图生图/Qwen Multiangle 多角度一致性分镜工作流_2085038097712111618.json, 图片生成/图生图/Qwen-Image-Edit-2511模型多角度摄像控制（96种机位选择）+直观便捷操作一键生成_2049404246746992642.json, 图片生成/图生图/Qwen2511多角度可视化控制_2010534612233097218.json, 图片生成/图生图/Qwen2511多角度可视化控制流_2009809050485133313.json, 图片生成/图生图/Qwen2511多角度可视化控制流_2011993469119631362.json, 图片生成/图生图/Qwen_Multiangle_多角度一致性分镜工作流_2085543629942255618.json, 图片生成/图生图/Qwen_Multiangle_多角度一致性分镜工作流_2085562380796383233.json, 图片生成/图生图/qwen2511多角度提示词控制_2059192086624296961.json, 图片生成/图生图/qwen多角度_2009920085019856897.json, 图片生成/图生图/多角度多机位拍摄模特人物+自由变更机位便捷操作_2066874522317447170.json, 图片生成/图生图/多角度工作流_2038655919210369025.json, 图片生成/图生图/多角度控制拍摄_2010308549825536001.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2009893150126514178.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2011827730614067202.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2036733513197690881.json, 图片生成/图生图/多角度摄像控制（96种机位选择）+直观便捷操作_2055634329270792194.json, 图片生成/图生图/🦖Qwen2511一键多角度_2010558215834046465.json, 图片生成/文生图/一键多角度摄像控制（96种机位选择）+直观便捷操作 V1.0_2011111925689618434.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107418412778610689.json、图片生成/图生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2107433169149579266.json、图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2082660755245195266.json、图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2088143998782369794.json、图片生成/文生图/图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步_2092053482613338114.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/QWEN-2511 ｜ 一致性｜多角度九宫格｜自定义角度_2021655546507567106.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版+全节点注释_2052231197274714113.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2009868534964297730.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-自由控制版_2042118585144840193.json、图片生成/图生图/Qwen Multiangle Camera 2511多角度可视化控制-预设版_2009865153323470849.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：26
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 26 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `CM_FloatToInt`
-- `CM_FloatUnaryOperation`
-- `CM_IntToFloat`
-- `CR Prompt Text`
-- `FL_ImageBatchToGrid`
 - `FluxKontextMultiReferenceLatentMethod`
-- `GetImageSizeAndCount`
-- `ImageListToBatch+`
-- `Int`
-- `JWIntegerToString`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `PrimitiveStringMultiline`
-- `ProcessString`
-- `Qwen3_VQA_Plus`
-- `RH_LLMAPI_NODE`
+- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `StringFunction|pysssss`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `KepStringList` —— 22/26 个有
+- `easy showAnything` —— 22/26 个有
+- `EmptySD3LatentImage` —— 16/26 个有
+- `Text Concatenate` —— 15/26 个有
+- `easy string` —— 15/26 个有
+- `Int` —— 13/26 个有
+- `PreviewAny` —— 3/26 个有
+- `CR Text` —— 1/26 个有
+- `Getter` —— 1/26 个有
+- `ImageGetter` —— 1/26 个有
+- `Kep_JoinListAny` —— 1/26 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/26 个有
+- `Setter` —— 1/26 个有
+- `TT_img_enc` —— 1/26 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 26 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 26 | 100% |
+| 采样算法 | euler | - | 26 | 100% |
+| 调度器 | simple | - | 26 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 26 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 26/26 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，26 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，26 个样本，一致性 100%
+- 调度器 最常用 simple，26 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
+- 高发问题（26/26 个样本）：Steps较低可能导致细节不足

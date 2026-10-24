@@ -1,58 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_41
 type: Unknown Workflow
-frequency: 12
-level: weak
-coverage: 0.941
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
+frequency: 17
+level: moderate
+coverage: 0.930824
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1950475750447173633.json, 视频生成/图生视频/1968955228710133762.json, 视频生成/图生视频/1989350434903085058.json, 视频生成/图生视频/1952176106529083393.json, 视频生成/图生视频/1998363625523937282.json, 视频生成/图生视频/1997975012088905729.json, 视频生成/图生视频/2037349147073843201.json, 视频生成/图生视频/1962156046351536130.json, 视频生成/图生视频/1967772488862150657.json, 视频生成/图生视频/1994764866990878721.json, 视频生成/图生视频/1950181163430273026.json, 视频生成/图生视频/1984131896915492865.json]
+members: [图片生成/图生图/Flux2 Klein 指定人物换服装（指定替换、单人换装、服装提取）_2040768619432382465.json, 图片生成/图生图/Flux2 Klein 替换人脸（蒙版指定替换）_2040732116815716354.json, 图片生成/图生图/Flux2 Klein 最强动漫转写实真人_2042405511412326401.json, 图片生成/图生图/Flux2 Klein 美甲迁移增强流_2025502923685367809.json, 图片生成/图生图/Flux2 Klein 美甲迁移增强流_2068736740612988929.json, 图片生成/图生图/Flux2 Klein-9B 多图编辑_2012089508413579266.json, 图片生成/图生图/Flux2 Klein-9B 多图编辑_2012133102637817858.json, 图片生成/图生图/Flux2 Klein-多图编辑-9B版本_2012129280318251010.json, 图片生成/图生图/Flux2 Klein-多图编辑-9B版本_2012144093203275777.json, 图片生成/图生图/Flux2 Klein_史上最强动漫转写实真人_2016180945006628865.json, 图片生成/图生图/Flux2 Klein_史上最强动漫转写实真人_2052278231113453570.json, 图片生成/图生图/Flux2-Klein-9B多图编辑 极速_2011999673732567042.json, 图片生成/图生图/Flux2-Klein-9B多图编辑 极速_2012006356626186241.json, 图片生成/图生图/Flux2-Klein-9B多图编辑+极速_2016797202454159362.json, 图片生成/图生图/Flux2-Klein-9B多图编辑_极速稳定版_2012803071105048578.json, 图片生成/图生图/Flux2-Klein-9B多图编辑基本工作流极速_2012433542348808194.json, 图片生成/图生图/Flux2-Klein-9B现实风格转换_2030135458734280705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_41
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1950475750447173633.json、视频生成/图生视频/1968955228710133762.json、视频生成/图生视频/1989350434903085058.json、视频生成/图生视频/1952176106529083393.json、视频生成/图生视频/1998363625523937282.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 指定人物换服装（指定替换、单人换装、服装提取）_2040768619432382465.json、图片生成/图生图/Flux2 Klein 替换人脸（蒙版指定替换）_2040732116815716354.json、图片生成/图生图/Flux2 Klein 最强动漫转写实真人_2042405511412326401.json、图片生成/图生图/Flux2 Klein 美甲迁移增强流_2025502923685367809.json、图片生成/图生图/Flux2 Klein 美甲迁移增强流_2068736740612988929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 17 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingSD3`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 9/12 个有
-- `LoraLoaderModelOnly` —— 9/12 个有
-- `SaveVideo` —— 9/12 个有
-- `WanImageToVideo` —— 8/12 个有
-- `WanFirstLastFrameToVideo` —— 4/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/12 个有
-- `VHS_VideoCombine` —— 3/12 个有
-- `RH_LLMAPI_NODE` —— 1/12 个有
-- `ShowText|pysssss` —— 1/12 个有
-- `easy imageConcat` —— 1/12 个有
+- `CR Text` —— 16/17 个有
+- `ConditioningZeroOut` —— 16/17 个有
+- `LayerUtility: PurgeVRAM` —— 9/17 个有
+- `PreviewImage` —— 8/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/17 个有
+- `LoraLoaderModelOnly` —— 6/17 个有
+- `InpaintCropImproved` —— 2/17 个有
+- `InpaintStitchImproved` —— 2/17 个有
+- `DrawMaskOnImage` —— 1/17 个有
+- `Fast Groups Muter (rgthree)` —— 1/17 个有
+- `INPAINT_ExpandMask` —— 1/17 个有
+- `Image Compare (mtb)` —— 1/17 个有
+- `ImageStitch` —— 1/17 个有
+- `Text Multiline` —— 1/17 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 12 | 67% |
-| Prompt 约束强度(CFG) | 8 | 4 - 20 | 12 | 35% |
-| 采样算法 | 1.5 | 1 - 4 | 12 | 41% |
-| 调度器 | euler | - | 12 | 100% |
-| 重绘幅度 | simple | - | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,9 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，12 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 20，12 个样本，取值分散，一致性仅 35%
-- 采样算法 中位数 1.5，观测区间 1 - 4，12 个样本，取值分散，一致性仅 41%
-- 调度器 最常用 euler，12 个样本，一致性 100%
-- 重绘幅度 最常用 simple，12 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

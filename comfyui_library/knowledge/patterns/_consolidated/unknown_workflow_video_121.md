@@ -3,33 +3,33 @@ name: unknown_workflow_video_121
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [GetVideoComponents, HunyuanVideoFoley, LoadVideo, VHS_VideoCombine]
+coverage: 0.8
+common_nodes: [GetVideoComponents, JjkText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json, 音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json]
+members: [视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json, 视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_121
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json、音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json、视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `LoadVideo`
+- `JjkText`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Textbox` —— 1/2 个有
+- `RH_RhartVideoGOfficialTextToVideo` —— 1/2 个有
+- `RH_RhartVideoGTextToVideo` —— 1/2 个有
 
 ## 典型参数
 

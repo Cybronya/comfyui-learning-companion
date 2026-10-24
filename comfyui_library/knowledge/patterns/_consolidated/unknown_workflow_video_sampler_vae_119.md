@@ -1,73 +1,60 @@
 ---
 name: unknown_workflow_video_sampler_vae_119
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.951
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7856
+common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1945004776141807618.json, 视频生成/图生视频/1937801479434735618.json, 视频生成/图生视频/1937838193955749889.json, 视频生成/图生视频/1936605606658625537.json]
+members: [视频生成/图生视频/抖音蜜蜂宝宝_1933541518860800001.json, 视频生成/图生视频/抖音骑上我心爱的小摩托_1933704774371954690.json, 视频生成/图生视频/通义Wan2.1  图生视频_KJ大神 效果强悍_1911397365478293506.json, 视频生成/文生视频/WAN_FusionX_LoRa_文图生视频_1943843153860497410.json, 视频生成/文生视频/【Wan2.1系列】CFG-Zero Star技术提升视频质量N个档次_1918878513657479170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_119
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1945004776141807618.json、视频生成/图生视频/1937801479434735618.json、视频生成/图生视频/1937838193955749889.json、视频生成/图生视频/1936605606658625537.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/抖音蜜蜂宝宝_1933541518860800001.json、视频生成/图生视频/抖音骑上我心爱的小摩托_1933704774371954690.json、视频生成/图生视频/通义Wan2.1  图生视频_KJ大神 效果强悍_1911397365478293506.json、视频生成/文生视频/WAN_FusionX_LoRa_文图生视频_1943843153860497410.json、视频生成/文生视频/【Wan2.1系列】CFG-Zero Star技术提升视频质量N个档次_1918878513657479170.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 3/4 个有
-- `WanVideoEncode` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `WanVideoUni3C_ControlnetLoader` —— 3/4 个有
-- `WanVideoUni3C_embeds` —— 3/4 个有
-- `CreateCFGScheduleFloatList` —— 2/4 个有
-- `DF_Integer` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `RH_Captioner` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `IndexTTSNode` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `RH_Prompter` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
-- `SaveAudio` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `ttN concat` —— 1/4 个有
+- `WanVideoEnhanceAVideo` —— 4/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `MathExpression|pysssss` —— 3/5 个有
+- `WanVideoLoraSelect` —— 3/5 个有
+- `WanVideoVRAMManagement` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `ImageResizeKJ` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `WanVideoEmptyEmbeds` —— 2/5 个有
+- `WanVideoExperimentalArgs` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `Any Switch (rgthree)` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `WanVideoSLG` —— 1/5 个有
 
 ## 典型参数
 

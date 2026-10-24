@@ -2,79 +2,96 @@
 name: unknown_workflow_video_lora_sampler_513
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.95475
-common_nodes: [CR Prompt Text, Float, INTConstant, ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, StringToFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.4455
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, GetNode, GrowMask, ImageBatch, ImageFromBatch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PreviewImage, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy forLoopEnd, easy forLoopStart]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1966542129269026818.json, 视频生成/图生视频/1966523015905357825.json, 视频生成/图生视频/1966560072405037057.json, 视频生成/图生视频/1968976369134755842.json]
+members: [视频生成/图生视频/Wan2.2 Animate V2 全自动角色替换工作流_1976471239042666497.json, 视频生成/图生视频/wan2.2 animate 全自动角色替换工作流-改良版_1973951383147819010.json, 视频生成/文生视频/Wan-Animate原生无限流（修正）_1971749907403108354.json, 视频生成/文生视频/角色参考-原生无限流-补帧_1975828769351012354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_513
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1966542129269026818.json、视频生成/图生视频/1966523015905357825.json、视频生成/图生视频/1966560072405037057.json、视频生成/图生视频/1968976369134755842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate V2 全自动角色替换工作流_1976471239042666497.json、视频生成/图生视频/wan2.2 animate 全自动角色替换工作流-改良版_1973951383147819010.json、视频生成/文生视频/Wan-Animate原生无限流（修正）_1971749907403108354.json、视频生成/文生视频/角色参考-原生无限流-补帧_1975828769351012354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `INTConstant`
-- `ImageConcatMulti`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadWanVideoT5TextEncoder`
-- `StringToFloatList`
+- `BlockifyMask`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `GetNode`
+- `GrowMask`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `PreviewImage`
+- `SetNode`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `WanVideoVACEModelSelect` —— 3/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `GrowMaskWithBlur` —— 1/4 个有
-- `ImageAndMaskPreview` —— 1/4 个有
-- `ImagePadKJ` —— 1/4 个有
-- `ImageResize` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `WanVideoExtraModelSelect` —— 1/4 个有
-- `WanVideoVACEStartToEndFrame` —— 1/4 个有
+- `Int` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `AILab_MaskPreview` —— 2/4 个有
+- `DownloadAndLoadSAM2Model` —— 2/4 个有
+- `Float` —— 2/4 个有
+- `GetImageSizeAndCount` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 2/4 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 2/4 个有
+- `MaskPreview` —— 2/4 个有
+- `PointsEditor` —— 2/4 个有
+- `Sam2Segmentation` —— 2/4 个有
+- `VHS_VideoInfo` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
+- `GIMMVFI_interpolate` —— 1/4 个有
+- `Setter` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

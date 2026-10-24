@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_639
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 0.75025
+common_nodes: [RH_Flux_2_Max_TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS多角色多轮对话生成工作流_2014703508829769729.json, 音频生成/音频生成/Qwen3-TTS多角色对话_2015354185604141057.json, 音频生成/音频生成/Qwen3-tts多人音频对话_2051855649033736193.json]
+members: [图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json, 图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_639
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS多角色多轮对话生成工作流_2014703508829769729.json、音频生成/音频生成/Qwen3-TTS多角色对话_2015354185604141057.json、音频生成/音频生成/Qwen3-tts多人音频对话_2051855649033736193.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json、图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `RH_Flux_2_Max_TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/3 个有
-- `String` —— 1/3 个有
-- `VRAMReserver` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
 
 ## 典型参数
 

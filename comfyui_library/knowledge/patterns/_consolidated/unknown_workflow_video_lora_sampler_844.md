@@ -3,54 +3,57 @@ name: unknown_workflow_video_lora_sampler_844
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.834
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.6415
+common_nodes: [Anything Everywhere, Divide [DVB], GetNode, LoadWanVideoT5TextEncoder, SetNode, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, mxSlider]
 problems: []
 missing: []
-members: [视频生成/图生视频/scail-2视频动作迁移【small-JJ小健健】_2077275327600095233.json, 视频生成/图生视频/2071865157709557762.json]
+members: [视频生成/图生视频/wan2.2图生视频_1957436481176530945.json, 视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_844
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/scail-2视频动作迁移【small-JJ小健健】_2077275327600095233.json、视频生成/图生视频/2071865157709557762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频_1957436481176530945.json、视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `Anything Everywhere`
+- `Divide [DVB]`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `Textbox`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `mxSlider`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `DiffusionModelLoaderKJ` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `WanVideoEmptyEmbeds` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
 
 ## 典型参数
 

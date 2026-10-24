@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_512
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.710667
-common_nodes: [DoubaoImageGenerator, LoadImage, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/1965676384628654081.json, 图片生成/文生图/1966444511088029698.json, 图片生成/文生图/真·豆包4.0图像生成（白嫖版）_1991321435899559937.json]
+members: [图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json, 图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json, 图片生成/图生图/xxx-image2_2053839405277827073.json, 图片生成/图生图/提取头部_2095356769915727873.json, 图片生成/图生图/道具图生成_2094712567414476802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_512
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1965676384628654081.json、图片生成/文生图/1966444511088029698.json、图片生成/文生图/真·豆包4.0图像生成（白嫖版）_1991321435899559937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json、图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json、图片生成/图生图/xxx-image2_2053839405277827073.json、图片生成/图生图/提取头部_2095356769915727873.json、图片生成/图生图/道具图生成_2094712567414476802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DoubaoImageGenerator`
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `DoubaoSizePreset` —— 2/3 个有
-- `PreviewImage` —— 1/3 个有
+- `TextConcatenator` —— 3/5 个有
+- `ratio_selector` —— 1/5 个有
 
 ## 典型参数
 

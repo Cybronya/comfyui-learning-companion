@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_397
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9468
-common_nodes: [VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9502
+common_nodes: [BerniniBlockSwap, BerniniContextOptions, BerniniDirector, BerniniLoraSelectMulti, BerniniModelLoader, BerniniSamplerExtraArgs, BerniniScheduler, BerniniSetBlockSwap, BerniniSetLoRAs, BerniniT5Config, BerniniVAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json, 视频生成/图生视频/2073698688299524097.json, 视频生成/图生视频/2067521044533039105.json, 视频生成/图生视频/2071441193522778114.json, 视频生成/图生视频/2062803456766861313.json]
+members: [视频生成/图生视频/Bernini 全能编辑导演台工作流_2081023174543761410.json, 视频生成/图生视频/Bernini 导演台 视频处理_2065460725128192002.json, 视频生成/图生视频/Bernini 视频生成与“多镜头导演台”_2065713086010585089.json, 视频生成/图生视频/Bernini全能编辑导演台工作流（可破甲）_2066334769738244098.json, 视频生成/图生视频/全功能视频处理 极简版 Bernini_Director 贝尔尼尼导演台 搅拌手大佬版_2065453516738617346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_397
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json、视频生成/图生视频/2073698688299524097.json、视频生成/图生视频/2067521044533039105.json、视频生成/图生视频/2071441193522778114.json、视频生成/图生视频/2062803456766861313.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Bernini 全能编辑导演台工作流_2081023174543761410.json、视频生成/图生视频/Bernini 导演台 视频处理_2065460725128192002.json、视频生成/图生视频/Bernini 视频生成与“多镜头导演台”_2065713086010585089.json、视频生成/图生视频/Bernini全能编辑导演台工作流（可破甲）_2066334769738244098.json、视频生成/图生视频/全功能视频处理 极简版 Bernini_Director 贝尔尼尼导演台 搅拌手大佬版_2065453516738617346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
@@ -23,39 +23,26 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `BerniniBlockSwap`
+- `BerniniContextOptions`
+- `BerniniDirector`
+- `BerniniLoraSelectMulti`
+- `BerniniModelLoader`
+- `BerniniSamplerExtraArgs`
+- `BerniniScheduler`
+- `BerniniSetBlockSwap`
+- `BerniniSetLoRAs`
+- `BerniniT5Config`
+- `BerniniVAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `WanVideoClipVisionEncode` —— 4/5 个有
-- `WanVideoImageToVideoEncode` —— 4/5 个有
-- `ImageResizeKJv2` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `WanVideoEmptyEmbeds` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 1/5 个有
-- `WanVideoUniAnimatePoseInput` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `PreviewAny` —— 4/5 个有
+- `CreateVideo` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `SaveVideo` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

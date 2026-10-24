@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_757
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6945
-common_nodes: [ImageScaleDownToSize, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline]
+frequency: 4
+level: moderate
+coverage: 0.95
+common_nodes: [LoadImage, SaveVideo]
 problems: []
-missing: [PIP_图像联结, Text Multiline, easy imageConcat]
-members: [图片生成/文生图/1962390591537549313.json, 图片生成/文生图/1962455723336667137.json]
+missing: []
+members: [视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json, 视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json, 视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json, 视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_757
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1962390591537549313.json、图片生成/文生图/1962455723336667137.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/seedance2.0首尾帧_2042481761665425410.json、视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json、视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json、视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageScaleDownToSize`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `Text Multiline`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PIP_图像联结` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `CR Text` —— 3/4 个有
+- `RH_Sora2_I2V_Realistic` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/4 个有
 
 ## 典型参数
 
@@ -44,5 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：PIP_图像联结、Text Multiline、easy imageConcat
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

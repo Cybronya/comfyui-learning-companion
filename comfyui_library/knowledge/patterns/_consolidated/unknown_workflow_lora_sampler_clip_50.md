@@ -1,66 +1,64 @@
 ---
 name: unknown_workflow_lora_sampler_clip_50
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: strong
-coverage: 0.953143
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, INTConstant, ImageFromBatch+, JWInteger, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.939875
+common_nodes: [ApplyDreamO, CLIPTextEncode, DreamOProcessorLoader, DreamORefEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Comfy挑战赛8（诡影映画）-1920S 黑白恐怖文生视频（主题扩写）_1983777752908242945.json, 视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json, 视频生成/文生视频/wan2.2官方文生视频+Smooth 2.2动态优化+Qwen3 VL提示词优化_1983330102350114818.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2同模型高动态文生视频V1（官方采样器）_1979857088648220673.json, 视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2差异模型高动态文生视频V1（官方采样器）_1979868052277858305.json, 视频生成/文生视频/（自用）Smooth 2.2+Animated 文生视频V3（双模式）_1986673673375514625.json, 视频生成/文生视频/（自用）Smooth 2.2+Qwen3 VL自动文生视频V2_1982706970622869505.json]
+members: [图片生成/图生图/Dream o 真人穿动漫角色衣服_1929070963315609601.json, 图片生成/图生图/DreamO 官方急速版_1929981652209143809.json, 图片生成/图生图/DreamO-1.1单图参考_风格迁移_1938231620748906498.json, 图片生成/图生图/DreamO-1.1多图参考_风格一致性迁移_1938241613502283778.json, 图片生成/图生图/dreamo_comfyui_v1.1_1938194559962628097.json, 图片生成/图生图/【极速版】DreamO图像编辑（1分钟出图）_1930877725429399554.json, 图片生成/图生图/和拉布布合影-DreamO_1928569169275658241.json, 图片生成/文生图/DreamO官方10秒加速_IP&ID&Try-On和Style轻松搞定_字节开源服装一致性_1931254643706540033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_50
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/Comfy挑战赛8（诡影映画）-1920S 黑白恐怖文生视频（主题扩写）_1983777752908242945.json、视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json、视频生成/文生视频/wan2.2官方文生视频+Smooth 2.2动态优化+Qwen3 VL提示词优化_1983330102350114818.json、视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2同模型高动态文生视频V1（官方采样器）_1979857088648220673.json、视频生成/文生视频/（6+4步）Wan2.2 Smooth Mix V2差异模型高动态文生视频V1（官方采样器）_1979868052277858305.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Dream o 真人穿动漫角色衣服_1929070963315609601.json、图片生成/图生图/DreamO 官方急速版_1929981652209143809.json、图片生成/图生图/DreamO-1.1单图参考_风格迁移_1938231620748906498.json、图片生成/图生图/DreamO-1.1多图参考_风格一致性迁移_1938241613502283778.json、图片生成/图生图/dreamo_comfyui_v1.1_1938194559962628097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `ApplyDreamO`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `INTConstant`
-- `ImageFromBatch+`
-- `JWInteger`
-- `KSamplerAdvanced`
+- `DreamOProcessorLoader`
+- `DreamORefEncode`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/7 个有
-- `Qwen3_VQA` —— 5/7 个有
-- `SDVN Any Show` —— 5/7 个有
-- `TextConcat` —— 5/7 个有
-- `VHS_VideoCombine` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `SaveImage` —— 4/7 个有
-- `TT_img_enc` —— 4/7 个有
-- `TT_img_enc_v2` —— 2/7 个有
-- `ApplySageAttention` —— 1/7 个有
-- `ConcatTextOfUtils` —— 1/7 个有
-- `easy anythingIndexSwitch` —— 1/7 个有
-- `wanBlockSwap` —— 1/7 个有
+- `PreviewImage` —— 6/8 个有
+- `EmptySD3LatentImage` —— 5/8 个有
+- `CR SDXL Aspect Ratio` —— 3/8 个有
+- `ImageConcanate` —— 3/8 个有
+- `ImageConcatMulti` —— 2/8 个有
+- `RH_Translator` —— 2/8 个有
+- `Anything Everywhere3` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `ImageScaleDownToSize` —— 1/8 个有
+- `LayerUtility: TextBox` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | uni_pc | - | 7 | 100% |
-| 重绘幅度 | beta | - | 7 | 100% |
+| 采样步数 | 12 | 12 - 30 | 8 | 60% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -68,8 +66,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 uni_pc，7 个样本，一致性 100%
-- 重绘幅度 最常用 beta，7 个样本，一致性 100%
+- 采样步数 中位数 12，观测区间 12 - 30，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

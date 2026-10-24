@@ -1,30 +1,40 @@
 ---
 name: unknown_workflow_generic_897
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [RH_MinimaxH3MaxTurboTextToVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [CR Image Border, ImageConcanate, ImageScale, LoadImage, SaveImage, ZML_ColorPicker]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax-H3-Max-Turbo-文生视频_2099312761049272321.json, 视频生成/文生视频/文生视频-MiniMax-H3-Max-Turbo 增强极速版_2102304418111778818.json]
+members: [图片生成/图生图/comfyui工作流封面制作_5_1890057677169471490.json, 图片生成/图生图/拼图_九宫格_1916440388461334530.json, 图片生成/图生图/拼图_四宫格_1916482426011320322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_897
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3-Max-Turbo-文生视频_2099312761049272321.json、视频生成/文生视频/文生视频-MiniMax-H3-Max-Turbo 增强极速版_2102304418111778818.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/comfyui工作流封面制作_5_1890057677169471490.json、图片生成/图生图/拼图_九宫格_1916440388461334530.json、图片生成/图生图/拼图_四宫格_1916482426011320322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_MinimaxH3MaxTurboTextToVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `CR Image Border`
+- `ImageConcanate`
+- `ImageScale`
+- `LoadImage`
+- `SaveImage`
+- `ZML_ColorPicker`
+
+**可变部分**（部分 workflow 才有）：
+- `ConstrainImage|pysssss` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `CR Overlay Text` —— 1/3 个有
+- `easy imageInsetCrop` —— 1/3 个有
 
 ## 典型参数
 
@@ -36,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

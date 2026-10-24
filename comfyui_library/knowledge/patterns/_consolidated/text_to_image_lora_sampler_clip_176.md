@@ -1,99 +1,110 @@
 ---
 name: text_to_image_lora_sampler_clip_176
 type: Text To Image
-frequency: 7
-level: weak
-coverage: 0.887
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 10
+level: strong
+coverage: 0.738
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, ResolutionSelector, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/【Supermate】z-image编辑工作流(Flux2 Klein版)_2013269468192968706.json, 图片生成/文生图/全新工作流！动漫生图+风格转绘二合一！_2058011143603576833.json, 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json, 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108886341202300929.json, 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108891627866640386.json, 数字人/数字人/QwenImage2.1加Klein去AI感洗图真实皮肤 照片级质感优化_2109018096492175361.json, 数字人/数字人/QwenImage2.1加Klein去AI感洗图真实皮肤 照片级质感优化_2109414860994994177.json]
+members: [视频生成/文生视频/BUNNY_SelfLift混合工作流｜7分钟直出1080P高动态不模糊_2108382144140759042.json, 视频生成/文生视频/H3 TaoMate 3步加速Lora 视频生成处理工具_2100654393346576385.json, 视频生成/文生视频/MiniMax H3 SelfLift低分辨率采样器加速视频生成工具_2101028313874649090.json, 视频生成/文生视频/MiniMax H3加速双采SelfLift图生视频处理工作流_2101739128789487617.json, 视频生成/文生视频/MiniMax H3极速多参视频制作处理生成工具_2101733080221437954.json, 视频生成/文生视频/MiniMax H3极速多参视频制作，文生视频图生视频多参考高效产出方案_2103244727301795842.json, 视频生成/文生视频/MiniMax H3极速多参视频制作，文生视频图生视频多参考高效产出方案_2103523327053750273.json, 视频生成/文生视频/MiniMaxH3极速多参视频制作｜文生视频视频生视频图生视频全能_2105547979712192514.json, 视频生成/文生视频/MiniMaxH3极速多参视频｜文生视频图生视频双模式制作_2101561342628028417.json, 视频生成/视频生视频/MiniMax H3极速多参视频制作，文生视频视频生视频图生视频高效方案_2105732529880920065.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_176
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/【Supermate】z-image编辑工作流(Flux2 Klein版)_2013269468192968706.json、图片生成/文生图/全新工作流！动漫生图+风格转绘二合一！_2058011143603576833.json、数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json、数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108886341202300929.json、数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108891627866640386.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/BUNNY_SelfLift混合工作流｜7分钟直出1080P高动态不模糊_2108382144140759042.json、视频生成/文生视频/H3 TaoMate 3步加速Lora 视频生成处理工具_2100654393346576385.json、视频生成/文生视频/MiniMax H3 SelfLift低分辨率采样器加速视频生成工具_2101028313874649090.json、视频生成/文生视频/MiniMax H3加速双采SelfLift图生视频处理工作流_2101739128789487617.json、视频生成/文生视频/MiniMax H3极速多参视频制作处理生成工具_2101733080221437954.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `EmptyFlux2LatentImage`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+- `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 6/7 个有
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `ImageSharpen` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `PreviewAny` —— 5/7 个有
-- `QwenImagePromptOptimizer` —— 5/7 个有
-- `QwenImagePromptStyler` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `JjkText` —— 2/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `solarL_SaveImagesToZip` —— 2/7 个有
-- `孤海注释` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `DrawMaskOnImage` —— 1/7 个有
-- `ImageConcanate` —— 1/7 个有
-- `ImagePadForOutpaint` —— 1/7 个有
-- `ImageUpscaleWithModel` —— 1/7 个有
-- `JoinStringMulti` —— 1/7 个有
-- `TTResolutionSelector` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy seed` —— 1/7 个有
+- `ModelAttentionBackend` —— 9/10 个有
+- `PrimitiveStringMultiline` —— 9/10 个有
+- `SelfLiftH3Sampler` —— 9/10 个有
+- `VAEDecodeAudio` —— 9/10 个有
+- `H3SigmaRefiner` —— 8/10 个有
+- `LoadAudio` —— 8/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/10 个有
+- `MiniMaxChunkFeedForward` —— 7/10 个有
+- `MiniMaxLowVRAMAttention` —— 7/10 个有
+- `ModelPreviewOverrideKJ` —— 7/10 个有
+- `SaveImage` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `GetNode` —— 6/10 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 6/10 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 6/10 个有
+- `SetNode` —— 6/10 个有
+- `VHS_LoadVideo` —— 4/10 个有
+- `VHS_VideoInfoLoaded` —— 4/10 个有
+- `easy showAnything` —— 4/10 个有
+- `LTXVSeparateAVLatent` —— 3/10 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/10 个有
+- `MiniMaxH3VAEDecodeFast` —— 2/10 个有
+- `RunningHub Deepcleaner` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `ExtendIntermediateSigmas` —— 1/10 个有
+- `LoraLoader` —— 1/10 个有
+- `LoraLoaderBypassModelOnly` —— 1/10 个有
+- `MiniMaxH3AVDecodeT8` —— 1/10 个有
+- `MiniMaxH3SigmaShift` —— 1/10 个有
+- `SelfLiftAvatarH3Sampler` —— 1/10 个有
+- `SelfLiftAvatarH3TST` —— 1/10 个有
+- `SolAttnMiniMax` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1344 | 80 - 2048 | 7 | 30% |
-| 高度 | 1280 | 80 - 2048 | 7 | 30% |
-| 采样步数 | 30 | 4 - 40 | 7 | 45% |
-| Prompt 约束强度(CFG) | 2 | 1 - 5 | 7 | 50% |
-| 采样算法 | er_sde | - | 7 | 43% |
-| 调度器 | simple | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| LoRA 模型强度 | 0.75 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1344，观测区间 80 - 2048，7 个样本，取值分散，一致性仅 30%
-- 高度 中位数 1280，观测区间 80 - 2048，7 个样本，取值分散，一致性仅 30%
-- 采样步数 中位数 30，观测区间 4 - 40，7 个样本，取值分散，一致性仅 45%
-- Prompt 约束强度(CFG) 中位数 2，观测区间 1 - 5，7 个样本
-- 采样算法 最常用 er_sde，7 个样本，一致性 43%
-- 调度器 最常用 simple，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（11/10 个样本）：Steps较低可能导致细节不足

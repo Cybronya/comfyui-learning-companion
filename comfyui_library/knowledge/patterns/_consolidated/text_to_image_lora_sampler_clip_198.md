@@ -1,84 +1,92 @@
 ---
 name: text_to_image_lora_sampler_clip_198
 type: Text To Image
-frequency: 6
-level: moderate
-coverage: 0.931333
-common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, EmptySD3LatentImage, ImageConcatMulti, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.900667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Flux2 Klein Vs Z-image Vs Qwen Image 2512 4模型贞贞对比_2013662502973874178.json, 图片生成/文生图/Flux2 Klein Vs Z-image Vs Qwen Image 2512 5模型贞贞对比_2016756560374013954.json, 图片生成/文生图/Qwen2512 Vs Qwen Old Vs Z-image Turbo智能扩写对比工作流_2006323246228054018.json, 图片生成/文生图/Qwen2512 Vs Z-image Turbo 智能扩写对比工作流 浮云 1.3_2007011244896690178.json, 图片生成/文生图/Qwen2512⚡️Qwen Old⚡️Z-image Turbo 图像质量对比工作流_2006405378501779458.json, 图片生成/文生图/Qwen_2512_Qwen_Old _Z-image Turbo对比工作流_2006543899233357826.json]
+members: [图片生成/图生图/Qwen-image2.1产品融图工作流｜图生图电商商品合成_2108396388856975362.json, 图片生成/图生图/Qwen-image2.1产品融图，图生图商品场景一键合成_2110481620418514946.json, 图片生成/图生图/Qwen-image2.1人像多角度生成｜图生图一套多机位素材_2104545126759620610.json, 图片生成/图生图/Qwen-image2.1角色多角度lora，图生图同一角色随心转面_2112301019328761857.json, 图片生成/图生图/万能电商商品溶图Qwen Image 2.1 产品图融合自然过渡_2108648107725643777.json, 图片生成/图生图/万能电商商品溶图Qwen Image 2.1手动版 产品图融合手动控制_2108704910568153090.json, 图片生成/图生图/万能电商商品溶图Qwen-Image-2.1｜手动版重新打光_2108453301376339970.json, 视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json, 视频生成/文生视频/Qwen Image2.1商品主体任意溶图｜40步质量+Viggle加速双路线_2108053287957262337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_198
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Flux2 Klein Vs Z-image Vs Qwen Image 2512 4模型贞贞对比_2013662502973874178.json、图片生成/文生图/Flux2 Klein Vs Z-image Vs Qwen Image 2512 5模型贞贞对比_2016756560374013954.json、图片生成/文生图/Qwen2512 Vs Qwen Old Vs Z-image Turbo智能扩写对比工作流_2006323246228054018.json、图片生成/文生图/Qwen2512 Vs Z-image Turbo 智能扩写对比工作流 浮云 1.3_2007011244896690178.json、图片生成/文生图/Qwen2512⚡️Qwen Old⚡️Z-image Turbo 图像质量对比工作流_2006405378501779458.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1产品融图工作流｜图生图电商商品合成_2108396388856975362.json、图片生成/图生图/Qwen-image2.1产品融图，图生图商品场景一键合成_2110481620418514946.json、图片生成/图生图/Qwen-image2.1人像多角度生成｜图生图一套多机位素材_2104545126759620610.json、图片生成/图生图/Qwen-image2.1角色多角度lora，图生图同一角色随心转面_2112301019328761857.json、图片生成/图生图/万能电商商品溶图Qwen Image 2.1 产品图融合自然过渡_2108648107725643777.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AddLabel`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
-- `ImageConcatMulti`
+- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `LayerUtility: PurgeVRAM` —— 5/6 个有
-- `UnetLoaderGGUF` —— 5/6 个有
-- `CFGNorm` —— 4/6 个有
-- `PreviewImage` —— 3/6 个有
-- `RH_LLMAPI_NODE` —— 3/6 个有
-- `easy promptLine` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `EmptyFlux2LatentImage` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `ModelPatchTorchSettings` —— 2/6 个有
-- `PDIMAGE_LongerSize` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `AspectRatio` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `FastCanvas` —— 5/9 个有
+- `ImageScaleToTotalPixels` —— 5/9 个有
+- `ImageUpscaleWithModel` —— 5/9 个有
+- `KSamplerAdvanced` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `UpscaleModelLoader` —— 5/9 个有
+- `FastCanvasTool` —— 4/9 个有
+- `CR Text Concatenate` —— 3/9 个有
+- `InspyrenetRembg` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `FluxGuidance` —— 2/9 个有
+- `Image Rembg (Remove Background)` —— 2/9 个有
+- `ImageCropper` —— 2/9 个有
+- `SaveImageAdvanced` —— 2/9 个有
+- `TTP_Expand_And_Mask` —— 2/9 个有
+- `Int` —— 1/9 个有
+- `QwenMultiangleCameraNode` —— 1/9 个有
+- `YYZPack_yyz_canvasnodeTool` —— 1/9 个有
+- `easy promptList` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 904 | 720 - 1080 | 6 | 84% |
-| 高度 | 1600 | 1280 - 1920 | 6 | 84% |
-| 采样步数 | 9 | 8 - 50 | 6 | 12% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 6 | 25% |
-| 采样算法 | res_2s | - | 6 | 50% |
-| 调度器 | beta57 | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 904，观测区间 720 - 1080，6 个样本，取值集中（一致性 84%）
-- 高度 中位数 1600，观测区间 1280 - 1920，6 个样本，取值集中（一致性 84%）
-- 采样步数 中位数 9，观测区间 8 - 50，6 个样本，取值分散，一致性仅 12%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，6 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 res_2s，6 个样本，一致性 50%
-- 调度器 最常用 beta57，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（12/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

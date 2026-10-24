@@ -7,13 +7,13 @@ coverage: 0.975286
 common_nodes: [CLIPLoader, CLIPTextEncode, CreateCFGScheduleFloatList, EmptySD3LatentImage, ImageResize+, Int, KSampler, LoadWanVideoT5TextEncoder, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2066868599926644737.json, 视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json, 视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json, 视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json, 视频生成/文生视频/竖屏1111_2063507047836119042.json, 视频生成/文生视频/竖屏1111_2064656978898669569.json, 视频生成/文生视频/竖屏高清_2063068057895002114.json]
+members: [视频生成/图生视频/API-Z_image+Wan2.2_2066868599926644737.json, 视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json, 视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json, 视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json, 视频生成/文生视频/竖屏1111_2063507047836119042.json, 视频生成/文生视频/竖屏1111_2064656978898669569.json, 视频生成/文生视频/竖屏高清_2063068057895002114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_298
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2066868599926644737.json、视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json、视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json、视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json、视频生成/文生视频/竖屏1111_2063507047836119042.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/API-Z_image+Wan2.2_2066868599926644737.json、视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json、视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json、视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json、视频生成/文生视频/竖屏1111_2063507047836119042.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

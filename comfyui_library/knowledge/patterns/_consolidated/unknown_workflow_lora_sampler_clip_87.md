@@ -1,84 +1,61 @@
 ---
 name: unknown_workflow_lora_sampler_clip_87
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.83575
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VHS_LoadVideo]
+frequency: 6
+level: weak
+coverage: 0.933167
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TT_img_enc_v2, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json, 图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json, 视频生成/图生视频/2036802494948450306.json, 视频生成/图生视频/2060274127046533121.json]
+members: [图片生成/文生图/Z-Image Turbo文生图_2016615447973601282.json, 图片生成/文生图/Z-Image 文生图（何君美女可灰度）_1998823040723079169.json, 图片生成/文生图/zimage base 文生图 工作流_2017488062816722946.json, 图片生成/文生图/夸张尺寸lora-Z-Image Turbo文生图_2017328560658194433.json, 图片生成/文生图/最新定制lora-Z-Image 文生图_2014062301778808834.json, 图片生成/文生图/重力下垂尺寸lora-Z-Image Turbo文生图_2018376234211741697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_87
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/LTX2.3 Edit anything 添加_替换_消除_风格转绘_2073320203206873090.json、图片生成/文生图/LTX2.3局部重绘_2073316928126545922.json、视频生成/图生视频/2036802494948450306.json、视频生成/图生视频/2060274127046533121.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-Image Turbo文生图_2016615447973601282.json、图片生成/文生图/Z-Image 文生图（何君美女可灰度）_1998823040723079169.json、图片生成/文生图/zimage base 文生图 工作流_2017488062816722946.json、图片生成/文生图/夸张尺寸lora-Z-Image Turbo文生图_2017328560658194433.json、图片生成/文生图/最新定制lora-Z-Image 文生图_2014062301778808834.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：6
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetImageSize`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `VAEDecodeTiled`
-- `VHS_LoadVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TT_img_enc_v2`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `ToggleAnyNode` —— 3/4 个有
-- `BlockifyMask` —— 2/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `EmptyImage` —— 2/4 个有
-- `EmptyLTXVLatentVideo` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 2/4 个有
-- `GrowMaskWithBlur` —— 2/4 个有
-- `ImageCompositeFromMaskBatch+` —— 2/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `ResizeImagesByLongerEdge` —— 2/4 个有
-- `SAM3Segment` —— 2/4 个有
-- `StringConcatenate` —— 2/4 个有
-- `TextGenerate` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `MaskToImage` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
+- `Int` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `Text` —— 5/6 个有
+- `TwoWaySwitch` —— 5/6 个有
+- `Float` —— 4/6 个有
+- `VHS_Unbatch` —— 4/6 个有
+- `CompressImages` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `EG_TSCDS_SRJK` —— 2/6 个有
+- `Seed (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | 10 - 36 | 6 | 32% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 6 | 25% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -86,4 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 10，观测区间 10 - 36，6 个样本，取值分散，一致性仅 32%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，6 个样本，取值分散，一致性仅 25%
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

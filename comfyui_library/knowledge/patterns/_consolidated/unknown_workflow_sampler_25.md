@@ -1,36 +1,44 @@
 ---
 name: unknown_workflow_sampler_25
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.833333
-common_nodes: [SaveAudio, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
+coverage: 0.6912
+common_nodes: [ACE_ImageFaceCrop, BiRefNetRMBG, CR Prompt Text, ImageConcanate, LoadImage, PDIMAGE_LongerSize, PMRF, RunningHub XVerse Pipeline Loader, RunningHub XVerse Sampler, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI歌曲生成_1950367419039662082.json, 音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json, 音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json]
+members: [图片生成/图生图/Xverse一句话双图融合_1944016705532100610.json, 图片生成/图生图/Xverse单人一致性250714_1944539618484080642.json, 图片生成/图生图/Xverse单人物品强一致性互动V1_1943889529516462082.json, 图片生成/图生图/Xverse双人一致性_1944286736124088321.json, 图片生成/图生图/最强双人一致性互动编辑Xverse（T8优化版）V1_1943887486902763522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI歌曲生成_1950367419039662082.json、音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json、音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Xverse一句话双图融合_1944016705532100610.json、图片生成/图生图/Xverse单人一致性250714_1944539618484080642.json、图片生成/图生图/Xverse单人物品强一致性互动V1_1943889529516462082.json、图片生成/图生图/Xverse双人一致性_1944286736124088321.json、图片生成/图生图/最强双人一致性互动编辑Xverse（T8优化版）V1_1943887486902763522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `SaveAudio`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
+全部 5 个 workflow 都包含：
+- `ACE_ImageFaceCrop`
+- `BiRefNetRMBG`
+- `CR Prompt Text`
+- `ImageConcanate`
+- `LoadImage`
+- `PDIMAGE_LongerSize`
+- `PMRF`
+- `RunningHub XVerse Pipeline Loader`
+- `RunningHub XVerse Sampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+- `PreviewImage` —— 4/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `SetNode` —— 2/5 个有
 
 ## 典型参数
 

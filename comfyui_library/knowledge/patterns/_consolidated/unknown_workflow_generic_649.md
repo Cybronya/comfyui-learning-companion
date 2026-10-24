@@ -1,44 +1,41 @@
 ---
 name: unknown_workflow_generic_649
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.788667
-common_nodes: [LoadAudio, LongCatMultiSpeakerTTS, LongCatTTS, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PrimitiveStringMultiline, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.966
+common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/VividMuse LongCat AudioDIT 工作流合集_2039688939547664386.json, 音频生成/音频生成/声音克隆合集 LongCat AudioDIT 简单极速 单人-多人-文生语音_2040358317037457409.json, 音频生成/音频生成/语音克隆 一键生成 LongCat-AudioDIT 单人+多人_2040364226820182018.json]
+members: [图片生成/图生图/QWEN-TTS多合一工作流_音色克隆_音色自定义_多轮对话_2073307423431024641.json, 音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_649
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/VividMuse LongCat AudioDIT 工作流合集_2039688939547664386.json、音频生成/音频生成/声音克隆合集 LongCat AudioDIT 简单极速 单人-多人-文生语音_2040358317037457409.json、音频生成/音频生成/语音克隆 一键生成 LongCat-AudioDIT 单人+多人_2040364226820182018.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/QWEN-TTS多合一工作流_音色克隆_音色自定义_多轮对话_2073307423431024641.json、音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json、音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `LongCatMultiSpeakerTTS`
-- `LongCatTTS`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `PrimitiveStringMultiline`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+全部 4 个 workflow 都包含：
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `FB_Qwen3TTSVoiceDesign`
+- `LayerUtility: PurgeVRAM V2`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `Text` —— 2/4 个有
+- `FB_Qwen3TTSCustomVoice` —— 1/4 个有
+- `HeartMuLa_Transcribe` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
 
 ## 典型参数
 

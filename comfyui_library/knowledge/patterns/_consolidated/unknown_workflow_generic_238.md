@@ -1,42 +1,44 @@
 ---
 name: unknown_workflow_generic_238
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.92
-common_nodes: [LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.872444
+common_nodes: [CR Prompt Text, JWInteger, LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json, 音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json, 音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json, 音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json, 音频生成/音频生成/语音克隆TTS _ LongCat-AudioDiT _ 单人_双人_2039708141885071362.json]
+members: [视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（1080P）_2037449795937243137.json, 视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037446558546927617.json, 视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频数字人双人对话版工作流_2037748338019278849.json, 视频生成/图生视频/Davinci magihuman 图生视频带声音_2038532869190062082.json, 视频生成/图生视频/MagiHuman 数字人 音画同步 图生视频_2038925657266196481.json, 视频生成/图生视频/MagiHuman 数字人 音画同步 图生视频_2059211762397966338.json, 视频生成/图生视频/MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json, 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman2.0_2038078503165366274.json, 视频生成/图生视频/最强开源视频模型daVinci-MagiHuman_2037758920298602497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_238
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/LongCat最高相似度语音克隆_2039286462088224769.json、音频生成/音频生成/Longcat Audio-单人语音克隆_2039344781976936449.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR单人声音克隆_2042597937607352321.json、音频生成/音频生成/【4月】商业级TTS LongCat-AudioDiT+Qwen3ASR双人声音克隆_2042617204272795649.json、音频生成/音频生成/双人语音克隆--LongCat-AudioDiT-对话-最高10人！_2039728409407918081.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（1080P）_2037449795937243137.json、视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037446558546927617.json、视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频数字人双人对话版工作流_2037748338019278849.json、视频生成/图生视频/Davinci magihuman 图生视频带声音_2038532869190062082.json、视频生成/图生视频/MagiHuman 数字人 音画同步 图生视频_2038925657266196481.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `JWInteger`
+- `LoadImage`
+- `PreviewAny`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `LongCatVoiceCloneTTS` —— 4/6 个有
-- `NormalizeAudioLoudness` —— 4/6 个有
-- `LongCatMultiSpeakerTTS` —— 3/6 个有
-- `PreviewAny` —— 2/6 个有
-- `SaveAudio` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `LoadAudio` —— 5/9 个有
+- `ImageResize+` —— 2/9 个有
+- `Int` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
 
 ## 典型参数
 

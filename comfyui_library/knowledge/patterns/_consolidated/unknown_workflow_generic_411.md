@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_411
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.8875
-common_nodes: [LoadImage, RH_Sora2_I2V_Realistic, SaveVideo]
+coverage: 0.826167
+common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/2002650348009451521.json, 视频生成/图生视频/1999471392632471554.json, 视频生成/图生视频/2016060142260850690.json, 视频生成/图生视频/2018182569270972417.json]
+members: [图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json, 图片生成/图生图/Seedvr高清放大_1993206227960266753.json, 图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json, 图片生成/图生图/seedvr2高清放大_1959466074016264193.json, 图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json, 图片生成/图生图/放大_2081305934164480002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_411
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2002650348009451521.json、视频生成/图生视频/1999471392632471554.json、视频生成/图生视频/2016060142260850690.json、视频生成/图生视频/2018182569270972417.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json、图片生成/图生图/Seedvr高清放大_1993206227960266753.json、图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json、图片生成/图生图/seedvr2高清放大_1959466074016264193.json、图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `RH_Sora2_I2V_Realistic`
-- `SaveVideo`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `SeedVR2ExtraArgs` —— 4/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `GetNode` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `SetNode` —— 1/6 个有
 
 ## 典型参数
 

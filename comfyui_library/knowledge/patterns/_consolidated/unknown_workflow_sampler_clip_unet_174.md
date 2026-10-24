@@ -1,62 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_174
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.952
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, ModelSamplingSD3, SkipLayerGuidanceDiT, UNETLoader, UNetTemporalAttentionMultiply, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.876286
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, FlipSigmas, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/wan2.1_fun_control.json, comfyui-workflow-templates-json/wan2.1_fun_inp.json, 视频生成/图生视频/1951294089633452033.json]
+members: [图片生成/图生图/64.tonnie-Zimage逆降噪精修（效果反而变得极差）_2009428798395125762.json, 图片生成/图生图/FLUX一键精修增强版本_1892213225352765442.json, 图片生成/图生图/Z-image-万物精修（速度狠快）_2001643362954407937.json, 图片生成/图生图/一键产品精修_1917438601485811714.json, 图片生成/图生图/一键产品精修_1930085411941466113.json, 图片生成/图生图/产品精修_1900359476417916930.json, 图片生成/图生图/精修3.0_1949401662776586242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/wan2.1_fun_control.json、comfyui-workflow-templates-json/wan2.1_fun_inp.json、视频生成/图生视频/1951294089633452033.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/64.tonnie-Zimage逆降噪精修（效果反而变得极差）_2009428798395125762.json、图片生成/图生图/FLUX一键精修增强版本_1892213225352765442.json、图片生成/图生图/Z-image-万物精修（速度狠快）_2001643362954407937.json、图片生成/图生图/一键产品精修_1917438601485811714.json、图片生成/图生图/一键产品精修_1930085411941466113.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
+- `DisableNoise`
+- `FlipSigmas`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `InFluxModelSamplingPred`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `SkipLayerGuidanceDiT`
+- `OutFluxModelSamplingPred`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `UNetTemporalAttentionMultiply`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `WanFunInpaintToVideo` —— 2/3 个有
-- `Canny` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `WanFunControlToVideo` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `DualCLIPLoader` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `FluxDeGuidance` —— 4/7 个有
+- `Image Lucy Sharpen` —— 4/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `LoraLoaderModelOnly` —— 4/7 个有
+- `ImageResize+` —— 3/7 个有
+- `CLIPLoader` —— 2/7 个有
+- `FluxGuidance` —— 2/7 个有
+- `Anything Everywhere` —— 1/7 个有
+- `CR Simple Image Compare` —— 1/7 个有
+- `ConditioningAddConDelta` —— 1/7 个有
+- `ConditioningScale` —— 1/7 个有
+- `ConditioningSubtract` —— 1/7 个有
+- `ConfigureModifiedFlux` —— 1/7 个有
+- `Display Int (rgthree)` —— 1/7 个有
+- `FlowEditGuider` —— 1/7 个有
+- `FlowEditSampler` —— 1/7 个有
+- `Get Image Size` —— 1/7 个有
+- `GetImageSize+` —— 1/7 个有
+- `INTConstant` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,39 +1,41 @@
 ---
 name: unknown_workflow_generic_118
 type: Unknown Workflow
-frequency: 9
+frequency: 13
 level: moderate
-coverage: 0.953111
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.571692
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [音频生成/音频生成/indexTTS2-带情绪克隆声音_2034217291604299777.json, 音频生成/音频生成/indexTTS2-带情绪的克隆声音_2056016979491860482.json, 音频生成/音频生成/indexTTS2-语音模仿_2051153376838201345.json, 音频生成/音频生成/indextts2-basic-2025-08_2006415462111907841.json, 音频生成/音频生成/indextts2-带情感调节_2004749199671525378.json, 音频生成/音频生成/声音克隆_2045108562933850114.json, 音频生成/音频生成/声音克隆（最强中文克隆音色，情感调节_2041803500815912961.json, 音频生成/音频生成/声音克隆（最强中文克隆音色，情感调节）_2038700929708462082.json, 音频生成/音频生成/语音生成工作流-indextts2-带情感调节_1979545115100352513.json]
+members: [图片生成/图生图/SeedVR2 Video Upscaler_1965075456494026754.json, 图片生成/图生图/SeedVR2 超清放大工作流，以前的都可以舍弃了_1940334436053291009.json, 图片生成/图生图/SeedVR2-图像无损高清放大_2025749390215876609.json, 图片生成/图生图/SeedVR2VideoUpscal-高清放大_1964004290580893698.json, 图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2058029259901464577.json, 图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2061389188360134657.json, 图片生成/图生图/不限图片类型 精修 局部重绘_2100825346823249922.json, 图片生成/图生图/图片放大 高清修复 精修 局部重绘 适合电商 自媒体 娱乐博主+全节点注释_2052257486786310145.json, 图片生成/图生图/图片放大 高清修复_2033929039899009026.json, 图片生成/图生图/图片放大+高清修复+精修+局部重绘+适合电商+自媒体+娱乐博主_2022335164046647297.json, 图片生成/图生图/最强图片高清修复-SeedVR2终极版_2006200038925541378.json, 图片生成/图生图/高清修复放大_1991057768348065794.json, 图片生成/图生图/高清修复放大_2095063717544292354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_118
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/indexTTS2-带情绪克隆声音_2034217291604299777.json、音频生成/音频生成/indexTTS2-带情绪的克隆声音_2056016979491860482.json、音频生成/音频生成/indexTTS2-语音模仿_2051153376838201345.json、音频生成/音频生成/indextts2-basic-2025-08_2006415462111907841.json、音频生成/音频生成/indextts2-带情感调节_2004749199671525378.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/SeedVR2 Video Upscaler_1965075456494026754.json、图片生成/图生图/SeedVR2 超清放大工作流，以前的都可以舍弃了_1940334436053291009.json、图片生成/图生图/SeedVR2-图像无损高清放大_2025749390215876609.json、图片生成/图生图/SeedVR2VideoUpscal-高清放大_1964004290580893698.json、图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2058029259901464577.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 13 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `SaveImage`
+- `SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionVector` —— 7/9 个有
-- `PreviewAudio` —— 6/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `LoadImage` —— 1/9 个有
-- `Text` —— 1/9 个有
+- `SeedVR2BlockSwap` —— 12/13 个有
+- `ImageScaleToTotalPixels` —— 9/13 个有
+- `PlaySound|pysssss` —— 8/13 个有
+- `PreviewImage` —— 8/13 个有
+- `easy int` —— 7/13 个有
+- `RHHiddenNodes` —— 6/13 个有
+- `SeedVR2ExtraArgs` —— 3/13 个有
 
 ## 典型参数
 

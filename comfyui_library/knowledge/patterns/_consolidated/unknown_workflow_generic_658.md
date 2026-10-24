@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_658
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.582667
-common_nodes: [Fast Groups Bypasser (rgthree), JjkText, LoadAudio, PreviewAny, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.933
+common_nodes: [LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/全能语音克隆 语音设计 VoxCPM2 多语种+各种方言_2041856166942216193.json, 音频生成/音频生成/全能语音克隆、语音设计--VoxCPM2（多语种+各种方言）_2057361981765668866.json, 音频生成/音频生成/极速方言设计，声音克隆 VoxCPM-2_2041862453578964993.json]
+members: [图片生成/图生图/YH_G官方_v001_20260709_2075058738821681153.json, 图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2048027176750026754.json, 图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V1.0_2059076871203151874.json, 图片生成/图生图/测试IMAGE2.0_2050163442417446914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_658
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/全能语音克隆 语音设计 VoxCPM2 多语种+各种方言_2041856166942216193.json、音频生成/音频生成/全能语音克隆、语音设计--VoxCPM2（多语种+各种方言）_2057361981765668866.json、音频生成/音频生成/极速方言设计，声音克隆 VoxCPM-2_2041862453578964993.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YH_G官方_v001_20260709_2075058738821681153.json、图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2048027176750026754.json、图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V1.0_2059076871203151874.json、图片生成/图生图/测试IMAGE2.0_2050163442417446914.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `JjkText`
-- `LoadAudio`
-- `PreviewAny`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ASRMW` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `Qwen3ASRLoader` —— 1/3 个有
-- `Qwen3ASRTranscribe` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
 
 ## 典型参数
 

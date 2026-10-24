@@ -1,82 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_clip_137
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.915333
-common_nodes: [1hew_AudioDuration, AudioConcat, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyAudio, INTConstant, ImageFromBatch, IndexTTS2Run, KSampler, LatentConcat, LatentCut, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, ModelSamplingSD3, MuyeTextEditOutput, PrimitiveFloat, PrimitiveInt, SaveAudio, SaveVideo, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, Video Slice, WanSoundImageToVideo, WanSoundImageToVideoExtend, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.9115
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/【口播数字人】一体化长音频_零漂移_全自动片长_10段_V3版_2110271661361680386.json, 视频生成/图生视频/【口播数字人】一体化长音频_零漂移_全自动片长_10段_V3版_2111044721744367618.json, 视频生成/图生视频/【口播数字人】一体化长音频_零漂移_全自动片长_10段_V3版_2111055125790937090.json]
+members: [图片生成/图生图/人物动作控制 最优两种方法_2055642276038234114.json, 图片生成/图生图/人物换脸，开源顶级一致性flux.2 klein_2016441047668236290.json, 图片生成/图生图/哦豁看见了-Flux2-Klein_2066548615769837570.json, 图片生成/图生图/最强！人物_万物增强细节_洗图_去AI_FLUX2KLEIN_自选出图 (1)_2063478532617101314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_137
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【口播数字人】一体化长音频_零漂移_全自动片长_10段_V3版_2110271661361680386.json、视频生成/图生视频/【口播数字人】一体化长音频_零漂移_全自动片长_10段_V3版_2111044721744367618.json、视频生成/图生视频/【口播数字人】一体化长音频_零漂移_全自动片长_10段_V3版_2111055125790937090.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物动作控制 最优两种方法_2055642276038234114.json、图片生成/图生图/人物换脸，开源顶级一致性flux.2 klein_2016441047668236290.json、图片生成/图生图/哦豁看见了-Flux2-Klein_2066548615769837570.json、图片生成/图生图/最强！人物_万物增强细节_洗图_去AI_FLUX2KLEIN_自选出图 (1)_2063478532617101314.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `1hew_AudioDuration`
-- `AudioConcat`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyAudio`
-- `INTConstant`
-- `ImageFromBatch`
-- `IndexTTS2Run`
-- `KSampler`
-- `LatentConcat`
-- `LatentCut`
-- `LoadAudio`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `MuyeTextEditOutput`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `SaveAudio`
-- `SaveVideo`
-- `TrimAudioDuration`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `Video Slice`
-- `WanSoundImageToVideo`
-- `WanSoundImageToVideoExtend`
-- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `PrimitiveBoolean` —— 2/4 个有
+- `TT_img_enc_v2` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `ZML_SwitchOutput` —— 2/4 个有
+- `Get Image Size` —— 1/4 个有
+- `OpenposePreprocessor` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
+- `ResolutionStdSelector` —— 1/4 个有
+- `TTResolutionSelector` —— 1/4 个有
+- `TwoWaySwitch` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 30/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（30/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

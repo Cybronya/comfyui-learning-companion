@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_sampler_14
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.6875
-common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, PDIMAGE_LongerSize, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.898286
+common_nodes: [AudioPad, Get Size JK, ImageResizeKJv2, IndexTTSRun, LoadAudio, LoadImage, PrimitiveStringMultiline, ResizeImagesByShorterEdge, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveAudio, SaveVideo]
 problems: []
-missing: [RunningHub USO Loader, RunningHub USO Sampler, CR Prompt Text]
-members: [图片生成/文生图/1962486590113202178.json, 图片生成/文生图/1962487178385338370.json, 图片生成/文生图/1962782611250757633.json, 图片生成/文生图/1962802231387009026.json]
+missing: []
+members: [视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就好_2062698269251301377.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就搞定_2027296503793983490.json, 视频生成/图生视频/图生视频---FlashHead极速数字人生成，只需图片+文字就好_2039584123534184449.json, 视频生成/图生视频/数字人生成  图生视频_2034440610702172162.json, 视频生成/图生视频/超自然FlashHead极速数字人 只需图片+文字_2032303580274761729.json, 视频生成/文生视频/FlashHead极速数字人生成，只需图片+文字就好_2033804221602074625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1962486590113202178.json、图片生成/文生图/1962487178385338370.json、图片生成/文生图/1962782611250757633.json、图片生成/文生图/1962802231387009026.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json、视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就好_2062698269251301377.json、视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就搞定_2027296503793983490.json、视频生成/图生视频/图生视频---FlashHead极速数字人生成，只需图片+文字就好_2039584123534184449.json、视频生成/图生视频/数字人生成  图生视频_2034440610702172162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `ImageConcanate`
+全部 7 个 workflow 都包含：
+- `AudioPad`
+- `Get Size JK`
+- `ImageResizeKJv2`
+- `IndexTTSRun`
+- `LoadAudio`
 - `LoadImage`
-- `PDIMAGE_LongerSize`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImageGetSize` —— 1/4 个有
-- `ResizeLongestToNode` —— 1/4 个有
+- `PrimitiveStringMultiline`
+- `ResizeImagesByShorterEdge`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveAudio`
+- `SaveVideo`
 
 ## 典型参数
 
@@ -47,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub USO Loader、RunningHub USO Sampler、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

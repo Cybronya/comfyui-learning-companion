@@ -3,72 +3,48 @@ name: unknown_workflow_video_sampler_unet_73
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.529
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CS-MultiImageLoader, ComfyMathExpression, ComfySwitchNode, GetImage, GetNode, INTConstant, KSamplerSelect, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SetNode, ShowText|pysssss, StringConcatenate, StringReplace, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTAppearanceOrder, YUAN_TXTConvertAny, YUAN_TXTListNumber, YUAN_TXTParagraphSplitter, YUAN_TXTReplace, YuanTool, easy positive]
+coverage: 0.844667
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json]
+members: [视频生成/文生视频/文生视频-MiniMaxH3-BV2-模板_2090726527729233921.json, 视频生成/文生视频/首帧&首尾帧&关键帧&文生视频_2089598221407580161.json, 视频生成/文生视频/（本地加速版）Minimax H3 文生视频_2086449507176378369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/文生视频-MiniMaxH3-BV2-模板_2090726527729233921.json、视频生成/文生视频/首帧&首尾帧&关键帧&文生视频_2089598221407580161.json、视频生成/文生视频/（本地加速版）Minimax H3 文生视频_2086449507176378369.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `CS-MultiImageLoader`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
-- `GetImage`
-- `GetNode`
-- `INTConstant`
-- `KSamplerSelect`
-- `PreviewImage`
-- `PrimitiveBoolean`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MultiRateSamplerEXPT8`
 - `PrimitiveFloat`
-- `PrimitiveInt`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
-- `RegexExtract`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `StringConcatenate`
-- `StringReplace`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `YUAN_TXTAppearanceOrder`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTListNumber`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTReplace`
-- `YuanTool`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
+- `LoraLoaderModelOnly` —— 2/3 个有
 - `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `YUAN_TXTLength` —— 2/3 个有
-- `Yuan_MiniMaxH3Video` —— 2/3 个有
-- `ComfyAndNode` —— 1/3 个有
-- `ComfyNotNode` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `StringLength` —— 1/3 个有
-- `easy imagesSplitImage` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `INTConstant` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `PainterVRAM` —— 1/3 个有
+- `UniBlockSwap` —— 1/3 个有
 
 ## 典型参数
 

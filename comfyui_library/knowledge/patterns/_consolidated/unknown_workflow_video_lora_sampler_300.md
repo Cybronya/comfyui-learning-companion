@@ -3,62 +3,68 @@ name: unknown_workflow_video_lora_sampler_300
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.713143
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.805857
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetNode, HuMoEmbeds, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3 视频图片参考vfx edit Lora 流 taomate加速_2111436148177457153.json, 视频生成/图生视频/H3 视频图片参考换脸Lora 流 taomate加速_2111425514496937985.json, 视频生成/图生视频/H3+视频角色替换+Lora+真实人物加速流_2111443719965732865.json, 视频生成/文生视频/MiniMax H3  ref-多参考工作流（全接口开放内部开发版）_2094998770005135362.json, 视频生成/文生视频/MiniMax+H3+refV1.2Lora-多参考工作流（全接口开放内部开发版）_2096531122523033602.json, 视频生成/文生视频/MiniMax+H3+新ref V1.0 Lora 阿里8步版本-多参考工作流_2096537181975310338.json, 视频生成/文生视频/MiniMaxH3+多合一稳定MAX｜4步8步加速（自用）_2092482860316971010.json]
+members: [视频生成/图生视频/HuMo+InfiniteTalk单人参考数字人口型稳定修正版V3_1968594582734811138.json, 视频生成/图生视频/HuMo单人参考数字人稳定修正版V3_1966929028462600194.json, 视频生成/图生视频/HuMo双图参考数字人V1_1966942457197891585.json, 视频生成/图生视频/HuMo双图参考数字人稳定修正版V3_1968587211782410241.json, 视频生成/图生视频/人物一致口型一致V3版HuMo+InfiniteTalk_1975795002448195586.json, 视频生成/图生视频/祝福视频测试 HUMO_2037863999005532162.json, 视频生成/图生视频/👽HuMo单人数字人参考+音频👽_1969237169846034433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_300
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/H3 视频图片参考vfx edit Lora 流 taomate加速_2111436148177457153.json、视频生成/图生视频/H3 视频图片参考换脸Lora 流 taomate加速_2111425514496937985.json、视频生成/图生视频/H3+视频角色替换+Lora+真实人物加速流_2111443719965732865.json、视频生成/文生视频/MiniMax H3  ref-多参考工作流（全接口开放内部开发版）_2094998770005135362.json、视频生成/文生视频/MiniMax+H3+refV1.2Lora-多参考工作流（全接口开放内部开发版）_2096531122523033602.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/HuMo+InfiniteTalk单人参考数字人口型稳定修正版V3_1968594582734811138.json、视频生成/图生视频/HuMo单人参考数字人稳定修正版V3_1966929028462600194.json、视频生成/图生视频/HuMo双图参考数字人V1_1966942457197891585.json、视频生成/图生视频/HuMo双图参考数字人稳定修正版V3_1968587211782410241.json、视频生成/图生视频/人物一致口型一致V3版HuMo+InfiniteTalk_1975795002448195586.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `HuMoEmbeds`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `VHS_LoadVideo` —— 6/7 个有
-- `BasicGuider` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `VAEDecodeAudio` —— 4/7 个有
-- `CFGGuider` —— 3/7 个有
-- `GetImageSize` —— 3/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `LTXVSeparateAVLatent` —— 3/7 个有
-- `MiniMaxH3AddGuide` —— 3/7 个有
-- `PathchSageAttentionKJ` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LazySwitchKJ` —— 1/7 个有
-- `MiniMaxH3ImageToVideo` —— 1/7 个有
-- `PrimitiveBoolean` —— 1/7 个有
-- `VHS_LoadVideoFFmpeg` —— 1/7 个有
+- `ImageBatchMulti` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `ImageConcatMulti` —— 5/7 个有
+- `RMBG` —— 5/7 个有
+- `JWInteger` —— 3/7 个有
+- `MultiTalkModelLoader` —— 3/7 个有
+- `MultiTalkWav2VecEmbeds` —— 3/7 个有
+- `WanVideoCombineEmbeds` —— 3/7 个有
+- `WanVideoImageToVideoMultiTalk` —— 3/7 个有
+- `Wav2VecModelLoader` —— 3/7 个有
+- `INTConstant` —— 2/7 个有
+- `PDIMAGE_LongerSize` —— 2/7 个有
+- `ImpactInt` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `easy imageRemBg` —— 1/7 个有
 
 ## 典型参数
 

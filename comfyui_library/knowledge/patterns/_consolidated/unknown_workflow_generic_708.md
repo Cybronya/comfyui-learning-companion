@@ -1,31 +1,38 @@
 ---
 name: unknown_workflow_generic_708
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.675
-common_nodes: [ResolutionSelector, SaveImage, ec44c008-5f23-4498-a682-eb96a8598475]
+frequency: 4
+level: moderate
+coverage: 0.7655
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_lens_t2i.json, comfyui-workflow-templates-json/image_lens_turbo_t2i.json]
+members: [图片生成/图生图/家具批量出图_2037152816489304065.json, 图片生成/图生图/家具批量出图_2037404390805475330.json, 图片生成/图生图/童装出图_2037511391975837698.json, 图片生成/图生图/童装出图_2038815068757954561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_708
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_lens_t2i.json、comfyui-workflow-templates-json/image_lens_turbo_t2i.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/家具批量出图_2037152816489304065.json、图片生成/图生图/家具批量出图_2037404390805475330.json、图片生成/图生图/童装出图_2037511391975837698.json、图片生成/图生图/童装出图_2038815068757954561.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ResolutionSelector`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `ec44c008-5f23-4498-a682-eb96a8598475`
+- `easy promptLine`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `GrsaiNanoBanana` —— 1/4 个有
 
 ## 典型参数
 
@@ -37,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

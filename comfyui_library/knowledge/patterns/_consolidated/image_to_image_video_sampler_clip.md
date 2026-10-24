@@ -1,86 +1,78 @@
 ---
 name: image_to_image_video_sampler_clip
 type: Image To Image
-frequency: 5
+frequency: 7
 level: strong
-coverage: 0.8688
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, GetImageSize+, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, ReferenceLatent, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, VideoCombine_Adv, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.942
+common_nodes: [AddLabel, CLIPTextEncode, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyImage, FluxGuidance, FluxKontextImageScale, GetImageSizeAndCount, Image Comparer (rgthree), ImageConcatMulti, ImageResizeKJv2, KSampler, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RH_Translator, ReferenceLatent, Seed (rgthree), SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1938811982646534145.json, 视频生成/图生视频/1939157311413739522.json, 视频生成/图生视频/1942852835459403777.json, 视频生成/图生视频/1942823594072150017.json, 视频生成/图生视频/1939561508932132865.json]
+members: [图片生成/图生图/Kontext + Wan FusionX 首尾帧视频_1947867576262111234.json, 图片生成/图生图/Kontext Dev + FusionX 强化首尾帧视频_1939919616950837249.json, 视频生成/图生视频/Kontext Dev x FusionX 首尾帧视频_1940755254868918273.json, 视频生成/图生视频/Kontext Dev 生成尾帧｜FusionX 首尾帧视频_1939639899119067138.json, 视频生成/图生视频/Kontext+FusionX 首尾帧视频之超稳中文加速版_1939608027450286082.json, 视频生成/图生视频/首尾帧视频之电商级可控尾帧变化（Kontext+FusionX ）_1946929290757988354.json, 视频生成/图生视频/首尾帧视频之超稳中文版可控尾帧变化（Kontext+FusionX ）_1939510110341480450.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_sampler_clip
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1938811982646534145.json、视频生成/图生视频/1939157311413739522.json、视频生成/图生视频/1942852835459403777.json、视频生成/图生视频/1942823594072150017.json、视频生成/图生视频/1939561508932132865.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Kontext + Wan FusionX 首尾帧视频_1947867576262111234.json、图片生成/图生图/Kontext Dev + FusionX 强化首尾帧视频_1939919616950837249.json、视频生成/图生视频/Kontext Dev x FusionX 首尾帧视频_1940755254868918273.json、视频生成/图生视频/Kontext Dev 生成尾帧｜FusionX 首尾帧视频_1939639899119067138.json、视频生成/图生视频/Kontext+FusionX 首尾帧视频之超稳中文加速版_1939608027450286082.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `AddLabel`
 - `CLIPTextEncode`
+- `CR Text`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
+- `EmptyImage`
 - `FluxGuidance`
-- `GetImageSize+`
+- `FluxKontextImageScale`
+- `GetImageSizeAndCount`
+- `Image Comparer (rgthree)`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
+- `RH_Translator`
 - `ReferenceLatent`
+- `Seed (rgthree)`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VideoCombine_Adv`
 - `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoMagCache`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `RH_Translator` —— 4/5 个有
-- `GetNode` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `Text` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `ImageScale` —— 2/5 个有
-- `LayerUtility: Integer` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
-- `WanVideoVACEStartToEndFrame` —— 2/5 个有
-- `FluxKontextImageScale` —— 1/5 个有
-- `ImageStitch` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `RH_ComfyFluxKontext` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `easy cleanGpuUsed`
+- `easy int`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -88,8 +80,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

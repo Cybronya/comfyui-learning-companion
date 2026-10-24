@@ -3,71 +3,63 @@ name: unknown_workflow_video_lora_sampler_88
 type: Unknown Workflow
 frequency: 16
 level: moderate
-coverage: 0.813375
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.959562
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MINIMAX H3 急速双采 + 无线时长_2099690271108845570.json, 视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100409429870075905.json, 视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100496703639089154.json, 视频生成/图生视频/Mini  max  H3视频小脸不崩坏_2098335113011613698.json, 视频生成/图生视频/MiniMax H3 导演skill+双采2k直出_2106288951286915073.json, 视频生成/图生视频/MiniMax-H3-导演skill-双采2k直出.json, 视频生成/图生视频/MiniMax_二采_selflift_急速工作流_2099671590920351746.json, 视频生成/图生视频/MiniMax_二采_selflift_急速工作流自用_2105654345877512193.json, 视频生成/图生视频/绘影-Minimax H3-参考生视频-self-lift双采-1080P-V1.2_2099315406128369665.json, 视频生成/图生视频/黑科技加速双采-self-lift-Heng_2100234461106499585.json, 视频生成/文生视频/H3视频生成self-lift加速双采工作流_2097856577159127042.json, 视频生成/文生视频/MiniMax H3 导演skill+双采2k直出_2103795804296273922.json, 视频生成/文生视频/啊癫 黑科技加速双采-self-lift工作流_2097728195679309825.json, 视频生成/文生视频/满血版minimax h3黑科技加速内置双采-self-lift工作流_2097892303456260098.json, 视频生成/文生视频/黑科技加速双采-self-lift工作流_加画风Lora版_2101959966662946817.json, 视频生成/文生视频/黑科技加速双采-self-lift工作流_改清晰版_2101892912144539649.json]
+members: [视频生成/图生视频/AIwood-Wan2.2 Multitalk 文生视频版_1952022803912577026.json, 视频生成/图生视频/AIwood-wan2.2 Multitalk 图生视频版_1952034725047250945.json, 视频生成/图生视频/CG迷-WAN2.2 multitalk对口型工作流_1952358621646655489.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054032452045295618.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054464076696301569.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054724195342405634.json, 视频生成/图生视频/wan2.2 Multitalk 图生视频版《落花》_2054371842873405441.json, 视频生成/图生视频/wan2.2+Multitalk 图生视频_1952158327776202754.json, 视频生成/图生视频/wan2.2+Multitalk+图生视频版_2059875517922369538.json, 视频生成/图生视频/wan2.2-Multitalk图生视频_1952274805175341058.json, 视频生成/图生视频/【图生视频】wan2.2 Multitalk_1952625032197541890.json, 视频生成/图生视频/【视频】Wan2.2首尾帧一键生成视频_1952674570933309442.json, 视频生成/图生视频/图生视频 -AIwood-wan2.2 Multitalk_2034089808573767681.json, 视频生成/图生视频/图生视频版_1952636876098342913.json, 视频生成/文生视频/Wan2.2 Multitalk-超好用图生视频_1953496222059384834.json, 视频生成/文生视频/Wan2.2+Multitalk 文生视频_1952158294372765697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_88
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3 急速双采 + 无线时长_2099690271108845570.json、视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100409429870075905.json、视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100496703639089154.json、视频生成/图生视频/Mini  max  H3视频小脸不崩坏_2098335113011613698.json、视频生成/图生视频/MiniMax H3 导演skill+双采2k直出_2106288951286915073.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/AIwood-Wan2.2 Multitalk 文生视频版_1952022803912577026.json、视频生成/图生视频/AIwood-wan2.2 Multitalk 图生视频版_1952034725047250945.json、视频生成/图生视频/CG迷-WAN2.2 multitalk对口型工作流_1952358621646655489.json、视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054032452045295618.json、视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054464076696301569.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `DownloadAndLoadWav2VecModel` —— 15/16 个有
+- `INTConstant` —— 15/16 个有
+- `LoadAudio` —— 15/16 个有
+- `MultiTalkModelLoader` —— 15/16 个有
+- `MultiTalkWav2VecEmbeds` —— 15/16 个有
+- `WanVideoTorchCompileSettings` —— 15/16 个有
+- `Float to Int` —— 14/16 个有
+- `Int` —— 14/16 个有
 - `LoadImage` —— 14/16 个有
-- `ModelPreviewOverrideKJ` —— 14/16 个有
-- `MiniMaxChunkFeedForward` —— 12/16 个有
-- `MiniMaxLowVRAMAttention` —— 12/16 个有
-- `CreateVideo` —— 9/16 个有
-- `MiniMaxH3SigmaShift` —— 6/16 个有
-- `VHS_LoadVideo` —— 6/16 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/16 个有
-- `LoadAudio` —— 5/16 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/16 个有
-- `MiniMaxH3MotionContext` —— 5/16 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 5/16 个有
-- `MiniMaxH3MotionContextTrim` —— 5/16 个有
-- `AudioConcat` —— 3/16 个有
-- `Label (rgthree)` —— 3/16 个有
-- `MiniMaxH3Unified` —— 3/16 个有
-- `VHS_MergeImages` —— 3/16 个有
-- `Fast Groups Muter (rgthree)` —— 2/16 个有
-- `IAMCCS_VRAMCleanup` —— 2/16 个有
-- `MiniMaxH3MotionContextLoadLatent` —— 2/16 个有
-- `SaveVideo` —— 2/16 个有
-- `YuanMultiImage` —— 2/16 个有
-- `AudioCrop` —— 1/16 个有
-- `LoraLoaderBypassModelOnly` —— 1/16 个有
-- `孤海注释` —— 1/16 个有
+- `RH_GetAudioDuration` —— 14/16 个有
+- `SimpleMath+` —— 14/16 个有
+- `WanVideoImageToVideoEncode` —— 14/16 个有
+- `ImageResizeKJv2` —— 13/16 个有
+- `easy showAnything` —— 3/16 个有
+- `CR Text Replace` —— 2/16 个有
+- `PrimitiveBoolean` —— 2/16 个有
+- `RH_Captioner` —— 2/16 个有
+- `TextBox` —— 2/16 个有
+- `WanVideoEmptyEmbeds` —— 2/16 个有
+- `easy ifElse` —— 2/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/16 个有
 
 ## 典型参数
 

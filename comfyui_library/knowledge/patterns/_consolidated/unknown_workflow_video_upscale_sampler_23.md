@@ -3,57 +3,59 @@ name: unknown_workflow_video_upscale_sampler_23
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9185
-common_nodes: [ColorMatch, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, ImageConcanate, ImageSmartSharpen+, ImageUpscaleWithModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.4445
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2TorchCompileSettings, SeedVR2VideoUpscaler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934534192887701505.json, 视频生成/图生视频/1933355475016818690.json]
+members: [视频生成/图生视频/视频生成-MiniMax_H3-参考生视频_2084163650293686273.json, 视频生成/文生视频/视频生成-MiniMax_H3-首尾帧生视频_2084190567281549314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_23
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1934534192887701505.json、视频生成/图生视频/1933355475016818690.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频生成-MiniMax_H3-参考生视频_2084163650293686273.json、视频生成/文生视频/视频生成-MiniMax_H3-首尾帧生视频_2084190567281549314.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ColorMatch`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Display Int (rgthree)`
 - `DownloadAndLoadGIMMVFIModel`
-- `Fast Groups Bypasser (rgthree)`
 - `GIMMVFI_interpolate`
-- `ImageConcanate`
-- `ImageSmartSharpen+`
-- `ImageUpscaleWithModel`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `Text Multiline`
-- `UpscaleModelLoader`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2TorchCompileSettings`
+- `SeedVR2VideoUpscaler`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoMagCache` —— 1/2 个有
+- `MiniMaxH3ImageToVideo` —— 1/2 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
 
 ## 典型参数
 

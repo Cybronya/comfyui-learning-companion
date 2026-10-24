@@ -2,66 +2,73 @@
 name: unknown_workflow_video_sampler_clip_72
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.47125
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Float, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression_UTK, ModelSamplingSD3, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
+level: moderate
+coverage: 0.941875
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSamplerSelect, LTXVBaseSampler, LTXVConditioning, LoadImage, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2021958481347088386.json, 视频生成/图生视频/2046470504948703234.json, 视频生成/图生视频/2054012165388021762.json, 视频生成/图生视频/2046953828343353345.json, 视频生成/图生视频/2022333235971235842.json, 视频生成/图生视频/2034099796876726273.json, 视频生成/图生视频/2043578904195108866.json, 视频生成/图生视频/2046075077883600898.json]
+members: [图片生成/图生图/LTXV 13B高动态首尾帧优化版V1_1921482288666722305.json, 视频生成/图生视频/LTXV 0.98 平衡版图生视频双模式V1_1947700858089783297.json, 视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json, 视频生成/图生视频/LTXV 13B 图生视频潜空间放大（不炸显存）V1测试版_1921503421558620162.json, 视频生成/图生视频/LTXV 13B稳定优化版图生视频双模式V1_1921491930432339969.json, 视频生成/图生视频/Ltxv 13B Extend视频扩展优化稳定版（不炸显存）V2_1921497557317402626.json, 视频生成/图生视频/【LTXV 13B】图生视频稳定优化版_1922465822680481794.json, 视频生成/图生视频/图生视频+空间or时间放大(LTXVideo 13B 0.9.7)_1920645310174138370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_72
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2021958481347088386.json、视频生成/图生视频/2046470504948703234.json、视频生成/图生视频/2054012165388021762.json、视频生成/图生视频/2046953828343353345.json、视频生成/图生视频/2022333235971235842.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/LTXV 13B高动态首尾帧优化版V1_1921482288666722305.json、视频生成/图生视频/LTXV 0.98 平衡版图生视频双模式V1_1947700858089783297.json、视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json、视频生成/图生视频/LTXV 13B 图生视频潜空间放大（不炸显存）V1测试版_1921503421558620162.json、视频生成/图生视频/LTXV 13B稳定优化版图生视频双模式V1_1921491930432339969.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：47%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `Float`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CheckpointLoaderSimple`
+- `JWInteger`
+- `KSamplerSelect`
+- `LTXVBaseSampler`
+- `LTXVConditioning`
 - `LoadImage`
-- `MathExpression_UTK`
-- `ModelSamplingSD3`
-- `Text`
-- `UNETLoader`
+- `RandomNoise`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
 - `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `llama_cpp_instruct_adv` —— 7/8 个有
-- `llama_cpp_model_loader` —— 7/8 个有
-- `llama_cpp_parameters` —— 7/8 个有
-- `PainterI2V` —— 5/8 个有
-- `ImageConcatMulti` —— 3/8 个有
-- `WanFirstLastFrameToVideo` —— 3/8 个有
-- `Qwen3_VQA_Plus` —— 1/8 个有
+- `GetImageSizeAndCount` —— 7/8 个有
+- `LayerUtility: ImageAutoCrop V3` —— 7/8 个有
+- `ImageConcanate` —— 6/8 个有
+- `JWImageResizeByLongerSide` —— 6/8 个有
+- `LTXQ8Patch` —— 6/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/8 个有
+- `Note Plus (mtb)` —— 6/8 个有
+- `RH_Captioner` —— 6/8 个有
+- `ImpactSwitch` —— 5/8 个有
+- `StringConstantMultiline` —— 5/8 个有
+- `Text Concatenate` —— 5/8 个有
+- `CR Prompt Text` —— 3/8 个有
+- `ImageBatch` —— 2/8 个有
+- `ImageResizeKJ` —— 2/8 个有
+- `LTXVAdainLatent` —— 2/8 个有
+- `LTXVFilmGrain` —— 2/8 个有
+- `LTXVLatentUpsampler` —— 2/8 个有
+- `LTXVLatentUpsamplerModelLoader` —— 2/8 个有
+- `LTXVTiledSampler` —— 2/8 个有
+- `SplitSigmas` —— 2/8 个有
+- `VAEDecodeTiled` —— 2/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `JWString` —— 1/8 个有
+- `LTXVExtendSampler` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,8 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

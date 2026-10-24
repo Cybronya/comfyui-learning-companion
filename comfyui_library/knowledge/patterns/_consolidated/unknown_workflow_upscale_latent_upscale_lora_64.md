@@ -3,78 +3,69 @@ name: unknown_workflow_upscale_latent_upscale_lora_64
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9715
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, CreateVideo, EmptyImage, FluxResolutionNode, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXDirector, LTXDirectorGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, image_scale_pixel_v2]
+coverage: 0.90025
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MinimaxH3LatentUpscaler3D, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3 3.5套件｜分镜别乱·六宫格故事板导演台_2068718977450340353.json, 视频生成/文生视频/LTX2.3 3.5套件｜角色别散·分镜导演角色动作场景控制_2068718478793728001.json, 视频生成/文生视频/LTX2.3 分镜导演视频｜角色、动作、场景一体化控制_2061524156398788609.json, 视频生成/文生视频/导演综合流3.0｜OmniNFT+Relay+蒸馏1.1｜短片双人首尾帧_2057744531994537985.json]
+members: [视频生成/文生视频/MiniMax_H3_打斗强化工作流（二采+打斗lora+动作修复）_2092573716482969601.json, 视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json, 视频生成/文生视频/Minimax-h3-文生、图生视频+双采+Lantent upscale放大_2091360806108745730.json, 视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_64
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LTX2.3 3.5套件｜分镜别乱·六宫格故事板导演台_2068718977450340353.json、视频生成/文生视频/LTX2.3 3.5套件｜角色别散·分镜导演角色动作场景控制_2068718478793728001.json、视频生成/文生视频/LTX2.3 分镜导演视频｜角色、动作、场景一体化控制_2061524156398788609.json、视频生成/文生视频/导演综合流3.0｜OmniNFT+Relay+蒸馏1.1｜短片双人首尾帧_2057744531994537985.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3_打斗强化工作流（二采+打斗lora+动作修复）_2092573716482969601.json、视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json、视频生成/文生视频/Minimax-h3-文生、图生视频+双采+Lantent upscale放大_2091360806108745730.json、视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `CreateVideo`
-- `EmptyImage`
-- `FluxResolutionNode`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `MinimaxH3LatentUpscaler3D`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `VAEDecodeTiled`
-- `image_scale_pixel_v2`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `STGGuiderAdvanced` —— 3/4 个有
-- `Sigmas Easing` —— 3/4 个有
-- `ImageFromBatch` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `CS-LTXGridDirector` —— 1/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `Image To Mask` —— 1/4 个有
-- `LTX2SamplingPreviewOverride` —— 1/4 个有
-- `LTXAddVideoICLoRAGuide` —— 1/4 个有
-- `LTXVImgToVideoConditionOnly` —— 1/4 个有
-- `LTXVPreprocess` —— 1/4 个有
-- `LayerUtility: ColorImage` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `RepeatImageBatch` —— 1/4 个有
-- `VAEEncodeForInpaint` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
-- `easy imageCount` —— 1/4 个有
-- `easy imageSize` —— 1/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `MiniMaxH3SigmaShift` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `ModelPreviewOverrideKJ` —— 2/4 个有
+- `SplitSigmas` —— 2/4 个有
+- `CLIPTextEncode` —— 1/4 个有
+- `DisableNoise` —— 1/4 个有
+- `ExtendIntermediateSigmas` —— 1/4 个有
+- `GetVideoComponents` —— 1/4 个有
+- `H3SigmaRefiner` —— 1/4 个有
+- `LoadVideo` —— 1/4 个有
+- `ManualSigmas` —— 1/4 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/4 个有
+- `MiniMaxH3ImageToVideo` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
+- `SolAttnMiniMax` —— 1/4 个有
+- `SplitSigmasDenoise` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

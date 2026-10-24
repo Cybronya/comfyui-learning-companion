@@ -1,80 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_387
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.82
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, PreviewAny, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy seed]
+frequency: 5
+level: moderate
+coverage: 0.7154
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, GetNode, INTConstant, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, MuyeTextEditOutput, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019801194713059330.json, 视频生成/图生视频/2019054926323781634.json, 视频生成/图生视频/2017275905328029697.json, 视频生成/图生视频/2017275219941003265.json, 视频生成/图生视频/2017267666708340738.json, 音频生成/音频生成/影视新闻数字人--真人感LongCat声音克隆--高动态Infinite Talk_2041718640755613698.json]
+members: [图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json, 数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json, 视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json, 视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json, 视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_387
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2019801194713059330.json、视频生成/图生视频/2019054926323781634.json、视频生成/图生视频/2017275905328029697.json、视频生成/图生视频/2017275219941003265.json、视频生成/图生视频/2017267666708340738.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/许老板专用：单图生完整电商产品广告_2090467475698835458.json、数字人/数字人/全行业广告制作+音频驱动+提示词生成器辅助扩写_2106745024078761985.json、视频生成/图生视频/【直出30秒】【电商带货视频】【自动提示词】_2105512184322281474.json、视频生成/图生视频/专业广告制作+提示词辅助扩写_2092204454958428161.json、视频生成/图生视频/全行业广告制作+提示词生成器辅助扩写_2089016441684189185.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `ColorMatch`
-- `JWInteger`
-- `KSamplerAdvanced`
+- `CR Text`
+- `GetNode`
+- `INTConstant`
+- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelSamplingSD3`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MultiTextConcatenate`
+- `MuyeTextEditOutput`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CastAnyToIntStringFloat` —— 4/6 个有
-- `LoadAudio` —— 4/6 个有
-- `MathExpression|pysssss` —— 4/6 个有
-- `RH_GetAudioDuration` —— 4/6 个有
-- `RIFE VFI` —— 4/6 个有
-- `SaveAudio` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `FB_Qwen3TTSCustomVoice` —— 2/6 个有
-- `PreviewAudio` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/6 个有
-- `LongCatVoiceCloneTTS` —— 1/6 个有
-- `NormalizeAudioLoudness` —— 1/6 个有
-- `Qwen3ASRLoader` —— 1/6 个有
-- `Qwen3ASRTranscribe` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `RHLLMChatNode` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `easy int` —— 4/5 个有
+- `忽略多组孤海` —— 4/5 个有
+- `ComfyMathExpression` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageBatchMultiV2` —— 1/5 个有
+- `LTXVAudioVAEEncode` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 1/5 个有
+- `LTXVSeparateAVLatent` —— 1/5 个有
+- `LayerUtility: TextJoin` —— 1/5 个有
+- `SetLatentNoiseMask` —— 1/5 个有
+- `SolidMask` —— 1/5 个有
+- `SoundFlow_GetLength` —— 1/5 个有
+- `llama_cpp_instruct_adv` —— 1/5 个有
+- `llama_cpp_model_loader` —— 1/5 个有
+- `llama_cpp_parameters` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | dpmpp_sde | - | 6 | 67% |
-| 重绘幅度 | normal | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,8 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_sde，6 个样本，一致性 67%
-- 重绘幅度 最常用 normal，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,73 +3,47 @@ name: unknown_workflow_video_lora_sampler_840
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9295
-common_nodes: [AudioConcat, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, FL_IntToFloat, GetImageRangeFromBatch, ImageSharpen, JWInteger, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVNormalizingSampler, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveInt, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.889
+common_nodes: [Fast Groups Bypasser (rgthree), ImageBlur, Int, LoadWanVideoT5TextEncoder, RHHiddenNodes, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019971390018953218.json, 视频生成/图生视频/2020703327746531330.json]
+members: [视频生成/图生视频/wan2.1视频高精度重绘（视频修复）_1908011903803600898.json, 视频生成/文生视频/视频高精度重绘_1932643616856625153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_840
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2019971390018953218.json、视频生成/图生视频/2020703327746531330.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1视频高精度重绘（视频修复）_1908011903803600898.json、视频生成/文生视频/视频高精度重绘_1932643616856625153.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `FL_IntToFloat`
-- `GetImageRangeFromBatch`
-- `ImageSharpen`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVNormalizingSampler`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageBlur`
+- `Int`
+- `LoadWanVideoT5TextEncoder`
+- `RHHiddenNodes`
+- `ShowText|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 93 | - | 2 | 100% |
-| 高度 | 20 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,6 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 93，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,61 +1,89 @@
 ---
 name: unknown_workflow_sampler_clip_unet_208
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.869
-common_nodes: [CLIPTextEncode, CreateVideo, DualCLIPLoader, ImageScale, KSampler, Kandinsky5ImageToVideo, LoadImage, ModelSamplingSD3, NormalizeVideoLatentStart, ReplaceVideoLatentFrames, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.865333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1999180009522819073.json, 视频生成/图生视频/1998819521249075201.json, 视频生成/图生视频/1999519750432714753.json]
+members: [图片生成/图生图/Flux--Klein--产品精修高清放大_2054921194004074498.json, 图片生成/图生图/Flux-Klein-产品精修-高清放大_2055848149163495425.json, 图片生成/图生图/Flux-Klein产品精修高清放大（爆显用plus模式）_2055471694915096578.json, 图片生成/图生图/Klein-9B电商产品精修_2027744018473426945.json, 图片生成/图生图/产品精修SeedVR2 .5放大一键金属电器化妆品精修 FLUX2-Klein-9B产品精修升级版_2101492202433236993.json, 图片生成/图生图/图像放大_2020915083957772290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_208
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1999180009522819073.json、视频生成/图生视频/1998819521249075201.json、视频生成/图生视频/1999519750432714753.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux--Klein--产品精修高清放大_2054921194004074498.json、图片生成/图生图/Flux-Klein-产品精修-高清放大_2055848149163495425.json、图片生成/图生图/Flux-Klein产品精修高清放大（爆显用plus模式）_2055471694915096578.json、图片生成/图生图/Klein-9B电商产品精修_2027744018473426945.json、图片生成/图生图/产品精修SeedVR2 .5放大一键金属电器化妆品精修 FLUX2-Klein-9B产品精修升级版_2101492202433236993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
+- **样本数**：6
+- **可信度**：中等可信
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `ImageScale`
-- `KSampler`
-- `Kandinsky5ImageToVideo`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `NormalizeVideoLatentStart`
-- `ReplaceVideoLatentFrames`
-- `SaveVideo`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 2/3 个有
-- `CR Prompt Text` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `PrimitiveInt` —— 1/3 个有
+- `JWInteger` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `easy imageScaleDownToSize` —— 5/6 个有
+- `SeedVR2BlockSwap` —— 4/6 个有
+- `SeedVR2ExtraArgs` —— 4/6 个有
+- `AILab_QwenVL` —— 3/6 个有
+- `DF_Integer` —— 3/6 个有
+- `ImageScale` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `SeedVR2` —— 3/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `TTP_Image_Assy` —— 3/6 个有
+- `TTP_Image_Tile_Batch` —— 3/6 个有
+- `TTP_Tile_image_size` —— 3/6 个有
+- `easy imageBatchToImageList` —— 3/6 个有
+- `easy imageListToImageBatch` —— 3/6 个有
+- `easy imageSize` —— 3/6 个有
+- `easy imageSizeBySide` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `SeedVR2LoadDiTModel` —— 2/6 个有
+- `SeedVR2LoadVAEModel` —— 2/6 个有
+- `SeedVR2VideoUpscaler` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `ColorMatch` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `FlashVSRNode` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 1/6 个有
+- `ImageSharpen` —— 1/6 个有
+- `LayerUtility: ImageReel` —— 1/6 个有
+- `LayerUtility: ImageReelComposit` —— 1/6 个有
+- `Load Image From Url (mtb)` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `SeedVR2GGUF` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 50 - 50 | 3 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 3 | 100% |
-| 采样算法 | euler_ancestral | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,8 +91,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 50 - 50，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

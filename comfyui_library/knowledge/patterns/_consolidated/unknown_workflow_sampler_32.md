@@ -1,43 +1,47 @@
 ---
 name: unknown_workflow_sampler_32
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [Bjornulf_FreeVRAM, CR Prompt Text, LoadAudio, LongCatVoiceCloneTTS, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.864
+common_nodes: [DF_Get_image_size, ImageRemoveBackground+, ImageResizeKJv2, LBMSampler, LoadImage, LoadLBMModel, PreviewImage, SaveImage, TransparentBGSession+]
 problems: []
 missing: []
-members: [音频生成/音频生成/真实语音克隆_2039357695987290113.json, 音频生成/音频生成/超级声音克隆 高品质克隆原声音质_2074092844897361921.json, 音频生成/音频生成/超逼真声音克隆_2039768853735022594.json]
+members: [图片生成/图生图/LBM-商品人物重打光换背景_1924654145469673473.json, 图片生成/图生图/LBM打光及背景融合工作流V1_1922669595415691266.json, 图片生成/图生图/[众馨]人物背景融合_1993246795654430722.json, 图片生成/图生图/人物换背景，调整位置，打光_1923965694881558530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_32
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/真实语音克隆_2039357695987290113.json、音频生成/音频生成/超级声音克隆 高品质克隆原声音质_2074092844897361921.json、音频生成/音频生成/超逼真声音克隆_2039768853735022594.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/LBM-商品人物重打光换背景_1924654145469673473.json、图片生成/图生图/LBM打光及背景融合工作流V1_1922669595415691266.json、图片生成/图生图/[众馨]人物背景融合_1993246795654430722.json、图片生成/图生图/人物换背景，调整位置，打光_1923965694881558530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bjornulf_FreeVRAM`
-- `CR Prompt Text`
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+全部 4 个 workflow 都包含：
+- `DF_Get_image_size`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `LBMSampler`
+- `LoadImage`
+- `LoadLBMModel`
+- `PreviewImage`
+- `SaveImage`
+- `TransparentBGSession+`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `SoundFlow_GainPitchControl` —— 2/3 个有
-- `Switch` —— 2/3 个有
+- `ImageCompositeMasked` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `LayerUtility: ImageAutoCrop V3` —— 3/4 个有
+- `PDIMAGE_LongerSize` —— 3/4 个有
+- `Compositor3` —— 1/4 个有
+- `CompositorConfig3` —— 1/4 个有
+- `ImageScaleDownToSize` —— 1/4 个有
+- `preview_mask` —— 1/4 个有
 
 ## 典型参数
 

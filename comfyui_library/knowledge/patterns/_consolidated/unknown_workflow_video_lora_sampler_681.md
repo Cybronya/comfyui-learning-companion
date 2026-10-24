@@ -7,13 +7,13 @@ coverage: 0.835
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DrawViTPose, GetImageSize, ImageFromBatch+, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, SimpleMath+, TorchCompileModelWanVideoV2, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimateToVideo, easy int, wanBlockSwap]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2027070947370471426.json, 视频生成/图生视频/2038584125384302594.json, 视频生成/图生视频/2070380445308645377.json]
+members: [视频生成/图生视频/爆款舞蹈视频复刻，高清超高一致性，涨粉利器_2027070947370471426.json, 视频生成/图生视频/爆款舞蹈视频复刻，高清超高一致性，涨粉利器_2038584125384302594.json, 视频生成/图生视频/跳舞动作模仿_2070380445308645377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_681
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2027070947370471426.json、视频生成/图生视频/2038584125384302594.json、视频生成/图生视频/2070380445308645377.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/爆款舞蹈视频复刻，高清超高一致性，涨粉利器_2027070947370471426.json、视频生成/图生视频/爆款舞蹈视频复刻，高清超高一致性，涨粉利器_2038584125384302594.json、视频生成/图生视频/跳舞动作模仿_2070380445308645377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_671
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [ImageCompare, LoadImage, Painter, SaveImageAdvanced]
+frequency: 4
+level: moderate
+coverage: 0.4005
+common_nodes: [GetNode, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, SetNode]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bria_eraser.json, comfyui-workflow-templates-json/api_bria_genfill.json]
+members: [图片生成/图生图/一键换装_2042786160912633857.json, 图片生成/图生图/一键提取服装_2042504590024773634.json, 图片生成/图生图/一键提取服装_2046059357334413314.json, 图片生成/文生图/全能图片V2_Neo_xlw_2028755810783858690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_671
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_eraser.json、comfyui-workflow-templates-json/api_bria_genfill.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键换装_2042786160912633857.json、图片生成/图生图/一键提取服装_2042504590024773634.json、图片生成/图生图/一键提取服装_2046059357334413314.json、图片生成/文生图/全能图片V2_Neo_xlw_2028755810783858690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageCompare`
+全部 4 个 workflow 都包含：
+- `GetNode`
 - `LoadImage`
-- `Painter`
-- `SaveImageAdvanced`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `SetNode`
 
 **可变部分**（部分 workflow 才有）：
-- `BriaEraser` —— 1/2 个有
-- `BriaGenFill` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `easy imageConcat` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

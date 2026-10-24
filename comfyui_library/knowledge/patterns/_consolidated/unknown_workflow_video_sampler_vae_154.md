@@ -3,68 +3,77 @@ name: unknown_workflow_video_sampler_vae_154
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.847333
-common_nodes: [DownloadAndLoadSAM2Model, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, Mix Color By Mask, PreviewImage, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.629
+common_nodes: [Anything Everywhere, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, GetImageSizeAndCount, GetNode, ImageCASharpening+, ImageResize+, Int, LayerColor: Brightness & Contrast, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, OpenposePreprocessor, SetNode, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956277495895130113.json, 视频生成/图生视频/1956282329440419841.json, 视频生成/图生视频/1926909240341073922.json]
+members: [视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json, 视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json, 视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_154
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1956277495895130113.json、视频生成/图生视频/1956282329440419841.json、视频生成/图生视频/1926909240341073922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json、视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json、视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DownloadAndLoadSAM2Model`
-- `GrowMaskWithBlur`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `Anything Everywhere`
+- `CR Text`
+- `CogVideoEnhanceAVideo`
+- `ColorCorrectOfUtils`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `Int`
+- `LayerColor: Brightness & Contrast`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `Mix Color By Mask`
-- `PreviewImage`
-- `Sam2Segmentation`
+- `MathExpression|pysssss`
+- `OpenposePreprocessor`
+- `SetNode`
+- `ShowText|pysssss`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoSource`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `PointsEditor` —— 2/3 个有
-- `WanVideoFreeInitArgs` —— 2/3 个有
-- `WanVideoLoraSelect` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Florence2ModelLoader` —— 1/3 个有
-- `Florence2Run` —— 1/3 个有
-- `Florence2toCoordinates` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/3 个有
-- `MaskPreview+` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `WanVideoSLG` —— 1/3 个有
-- `WanVideoTeaCache` —— 1/3 个有
-- `WanVideoVACEModelSelect` —— 1/3 个有
+- `CR Integer To String` —— 2/3 个有
+- `CR String To Number` —— 2/3 个有
+- `FluxResolutionNode` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `WanVideoSetBlockSwap` —— 2/3 个有
+- `easy anythingIndexSwitch` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `DownloadAndLoadWav2VecModel` —— 1/3 个有
+- `ImageBlend` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
 
 ## 典型参数
 

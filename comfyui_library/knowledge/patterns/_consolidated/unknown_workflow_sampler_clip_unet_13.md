@@ -1,68 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_unet_13
 type: Unknown Workflow
-frequency: 19
-level: weak
-coverage: 0.9
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 30
+level: moderate
+coverage: 0.7847
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen Image 3.0提示词增强生图工作流｜两段式闭环_2103056782804480002.json, 图片生成/文生图/Qwen Image 3.0文生图工作流｜阿里旗舰图像模型_2103055683909410817.json, 图片生成/文生图/Qwen黑丝长腿丝袜美腿_2019644098361171969.json, 图片生成/文生图/Z-ImageBase-MeanCache加速-文生图_2019218139791237121.json, 图片生成/文生图/Z-image Base Distilled蒸馏加速版_2019063606171668481.json, 图片生成/文生图/Z-image Base Meancache加速版V1_2019064610539704322.json, 图片生成/文生图/Z-image Base Meancache加速版（好用质量高）_2019220127853580289.json, 图片生成/文生图/image_qwen_Image_2512 BF16_2073295897374584833.json, 图片生成/文生图/qwen2512文生图工作流_2068284987354476546.json, 图片生成/文生图/qwen_image工作流_1991713723383640065.json, 图片生成/文生图/qwen高级风格场景_2106951966848016385.json, 图片生成/文生图/z-image base 水墨风 文生图 工作流_2019406284654645249.json, 图片生成/文生图/【老金驿站】Z-image高清细节DejpegV2_1997835100480016386.json, 图片生成/文生图/【老金驿站】z-image8步文生图工作流_1994293848790728706.json, 图片生成/文生图/全能图片G-Image-2.5文生图工作流_2098372445806878721.json, 图片生成/文生图/墨宝映画人物设定_2015364874955657217.json, 图片生成/文生图/文生图 硕阳_2016782171092029441.json, 图片生成/文生图/（贞贞版4图版）Qwen 2512 Kook千问美人+真实幻想+极致真实文生图V1_2008746844083462145.json, 图片生成/文生图/（贞贞版）Qwen Image 2512 Kook写实人像文生图V1_2007898049535807489.json]
+members: [图片生成/图生图/klein换头【可选  Bnanana pro】_2016044457656852482.json, 图片生成/图生图/pro_2026893876430118913.json, 图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json, 图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json, 图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json, 图片生成/图生图/万物迁移（产品替换）Flux2Klein9b版本_2070089591029321729.json, 图片生成/图生图/产品_人物 换背景 光源一致F2-klein-9B_2083078402935975937.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2084994836385583105.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2085888858398486529.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2088506065381052418.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2091712412654329858.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2091844027921555458.json, 图片生成/图生图/产品_人物_换背景_光源一致F2-klein-9B_2092618498466996226.json, 图片生成/图生图/产品人物换背景光源一致F2-Klein-9B工作流_2084119585300766722.json, 图片生成/图生图/全能万物迁移 换装换脸 服装全品类换装 真实自然服饰迁移展示多图融合_2061681345826480129.json, 图片生成/图生图/最强万物迁移 f2k_9b_anything change clothes_2026650952215826434.json, 图片生成/图生图/最强产品_人物_换背景_光源一致任务一致F2-klein-9B加高清输出1_2085198054378000385.json, 图片生成/图生图/最强产品_人物_换背景_光源一致任务一致F2-klein-9B加高清输出1_2085207763952689154.json, 图片生成/图生图/电商产品换背景_2078457535203471361.json, 图片生成/图生图/真人转动漫+极速版 卡通动画角色设定+flux2+klein+9B+漫画手绘卡通网剧_2055088378185560066.json, 图片生成/图生图/真人转动漫+极速版+flux2+klein+9B+漫画手绘卡通网剧 角色设定_2055090424590675969.json, 图片生成/图生图/真人转动漫+极速版+卡通动画角色设定+flux2+klein+9B+漫画手绘卡通网剧+_2066338826917867521.json, 图片生成/图生图/真人转动漫的 flux klein_2025977265284190209.json, 图片生成/图生图/美女模特身材优化 Flux-2-klein-9B+胸部放大_2062735798742634497.json, 图片生成/图生图/美女模特身材优化+丰胸效果+胸部增强+Flux-2-klein-9B+胸部放大_2052265166510804994.json, 图片生成/图生图/美女模特身材优化+丰胸效果+胸部增强+Flux-2-klein-9B+胸部放大_2052296310446936066.json, 图片生成/图生图/苗条身材优化 美女模特身材优化+Flux-2-klein-9B+胸部放大 身形美体_2063795605662687234.json, 图片生成/图生图/（极速）真人转动漫漫画漫剧flux2+klein_2056934489481371649.json, 图片生成/文生图/f2_klein_9b_胸部放大器2.0_2026093999936774146.json, 图片生成/文生图/产品人物换背景光源一致F2-Klein-9B工作流_2084105106571743234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/文生图/Qwen Image 3.0提示词增强生图工作流｜两段式闭环_2103056782804480002.json、图片生成/文生图/Qwen Image 3.0文生图工作流｜阿里旗舰图像模型_2103055683909410817.json、图片生成/文生图/Qwen黑丝长腿丝袜美腿_2019644098361171969.json、图片生成/文生图/Z-ImageBase-MeanCache加速-文生图_2019218139791237121.json、图片生成/文生图/Z-image Base Distilled蒸馏加速版_2019063606171668481.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/图生图/klein换头【可选  Bnanana pro】_2016044457656852482.json、图片生成/图生图/pro_2026893876430118913.json、图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json、图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json、图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：30
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
+全部 30 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 15/19 个有
-- `LoraLoaderModelOnly` —— 12/19 个有
-- `CR Prompt Text` —— 7/19 个有
-- `PrimitiveStringMultiline` —— 4/19 个有
-- `MeanCache_ZImage` —— 3/19 个有
-- `TextEncodeQwenImageEditPlus` —— 3/19 个有
-- `RH_QwenImagePromptEnhancer` —— 1/19 个有
-- `UnetLoaderGGUF` —— 1/19 个有
+- `CR Text` —— 29/30 个有
+- `EmptyFlux2LatentImage` —— 29/30 个有
+- `LoraLoaderModelOnly` —— 29/30 个有
+- `easy imageScaleDownToSize` —— 28/30 个有
+- `Image Comparer (rgthree)` —— 26/30 个有
+- `GetNode` —— 24/30 个有
+- `SetNode` —— 24/30 个有
+- `LayerUtility: ImageReel` —— 23/30 个有
+- `LayerUtility: ImageReelComposit` —— 23/30 个有
+- `Fast Groups Bypasser (rgthree)` —— 14/30 个有
+- `easy cleanGpuUsed` —— 10/30 个有
+- `Int` —— 6/30 个有
+- `JWInteger` —— 5/30 个有
+- `ImageConcanate` —— 3/30 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/30 个有
+- `1hew_AnySwitchInt` —— 1/30 个有
+- `Anything Everywhere3` —— 1/30 个有
+- `DuckHideNode` —— 1/30 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/30 个有
+- `Text Multiline` —— 1/30 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 4 - 50 | 19 | 29% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 6 | 19 | 40% |
-| 采样算法 | euler | - | 19 | 68% |
-| 调度器 | simple | - | 19 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 50，19 个样本，取值分散，一致性仅 29%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 6，19 个样本，取值分散，一致性仅 40%
-- 采样算法 最常用 euler，19 个样本，一致性 68%
-- 调度器 最常用 simple，19 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
-- 高发问题（10/19 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

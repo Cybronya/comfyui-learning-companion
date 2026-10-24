@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_250
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.7384
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.914778
+common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json, comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json, comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json]
+members: [音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json, 音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json, 音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json, 音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json, 音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json, 音频生成/音频生成/SeedVc V2 语音、歌曲克隆_1932590444712763393.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2047234923752329218.json, 音频生成/音频生成/音色迁移 SeedVC_2033125119471652866.json, 音频生成/音频生成/音色迁移 SeedVC_2079778782298329090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_250
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json、comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json、comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/AI翻唱-克隆音色_2003404901592043521.json、音频生成/音频生成/Seed VC TTS 音色克隆=艾橘溪_1937368934318555138.json、音频生成/音频生成/Seed VC 音色转换+歌曲翻唱_2101653894005870594.json、音频生成/音频生成/Seed Voice Conversion V2 克隆音色_2018606210093682689.json、音频生成/音频生成/SeedVc V2 TTS语音及唱歌克隆（替换音色）_2048038522359128066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageCompare`
-- `LoadImage`
-- `SaveImageAdvanced`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `790255fa-100b-4dda-9ab5-e5e1731951db` —— 3/5 个有
-- `bc1c967a-7f6a-4be9-a372-dad16e4f28e3` —— 2/5 个有
+- `LoadImage` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
 
 ## 典型参数
 

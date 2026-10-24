@@ -1,40 +1,50 @@
 ---
 name: unknown_workflow_generic_892
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9
-common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.895333
+common_nodes: [DF_Integer, Get Image Size, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch]
 problems: []
 missing: []
-members: [视频生成/文生视频/AI图生剧本_2039001758223044609.json, 视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json]
+members: [图片生成/图生图/SeedVR2+TTP 高清放大_1989281903083704321.json, 图片生成/图生图/SeedVR2.5图片快速高清放大_2011478686431715329.json, 图片生成/图生图/SeedVR2.5图片高清放大_2038075237920673794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_892
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/AI图生剧本_2039001758223044609.json、视频生成/文生视频/H3打斗提示词扩写模板--Minimax-H3-打斗之王v0.1-压缩模板_2095852853788241921.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SeedVR2+TTP 高清放大_1989281903083704321.json、图片生成/图生图/SeedVR2.5图片快速高清放大_2011478686431715329.json、图片生成/图生图/SeedVR2.5图片高清放大_2038075237920673794.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
+全部 3 个 workflow 都包含：
+- `DF_Integer`
+- `Get Image Size`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImpactMinMax`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `SeedVR2`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 
 **可变部分**（部分 workflow 才有）：
-- `ProcessString` —— 1/2 个有
-- `RHMiniMaxH3T2VATextEncode` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
+- `AutoImageResize` —— 2/3 个有
+- `CR Value` —— 2/3 个有
+- `Cut By Mask` —— 2/3 个有
+- `ImageScale` —— 2/3 个有
+- `InvertMask (segment anything)` —— 2/3 个有
+- `MaskToImage` —— 2/3 个有
+- `easy anythingIndexSwitch` —— 2/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -46,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

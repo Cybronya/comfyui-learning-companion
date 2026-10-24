@@ -7,13 +7,13 @@ coverage: 0.898833
 common_nodes: [Any Switch (rgthree), Anything Everywhere, BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SDPoseOODLoader, SDPoseOODProcessor, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader, easy float, easy framesEditor, easy getNode, easy int, easy sam3ModelLoader, easy sam3VideoModelExtraConfig, easy sam3VideoSegmentation, easy sam3Visualization, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2025560069735194626.json, 视频生成/图生视频/2042608499846287361.json, 视频生成/图生视频/2057464822907887617.json, 视频生成/图生视频/2044943790498123778.json, 视频生成/图生视频/2061275051634286593.json, 视频生成/图生视频/2044662499303231490.json]
+members: [视频生成/图生视频/2.22Animate进阶版 动作迁移+角色替换+换头+换身体，支持长视频、运镜_2025560069735194626.json, 视频生成/图生视频/4.13_动作迁移+角色替换+换头+换身体，支持长视频、运镜_2042608499846287361.json, 视频生成/图生视频/Animate动作迁移角色替换换头换身体长视频运镜_2057464822907887617.json, 视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2044943790498123778.json, 视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2061275051634286593.json, 视频生成/图生视频/动作迁移+角色替换+换头+换身体，支持长视频、运镜_2044662499303231490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_13
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2025560069735194626.json、视频生成/图生视频/2042608499846287361.json、视频生成/图生视频/2057464822907887617.json、视频生成/图生视频/2044943790498123778.json、视频生成/图生视频/2061275051634286593.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2.22Animate进阶版 动作迁移+角色替换+换头+换身体，支持长视频、运镜_2025560069735194626.json、视频生成/图生视频/4.13_动作迁移+角色替换+换头+换身体，支持长视频、运镜_2042608499846287361.json、视频生成/图生视频/Animate动作迁移角色替换换头换身体长视频运镜_2057464822907887617.json、视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2044943790498123778.json、视频生成/图生视频/修改模式动作迁移+角色替换+换头+换身体，支持长视频、运镜_2061275051634286593.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6

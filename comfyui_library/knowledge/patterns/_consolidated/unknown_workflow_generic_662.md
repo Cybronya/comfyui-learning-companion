@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_662
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.944333
-common_nodes: [LoadAudio, SaveAudio, Text Multiline]
+coverage: 0.913
+common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), InvertMask, InvertMask (segment anything), LayerUtility: CropByMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SAMLoader, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/双人语音克隆-MegaTTS3_1963880808523321346.json, 音频生成/音频生成/双人语音克隆-MegaTTS3_1964945150801793025.json, 音频生成/音频生成/多人语音克隆-FireRedTTS_1970352088003846145.json]
+members: [图片生成/图生图/co 批量裁剪新2_2071504923543556097.json, 图片生成/图生图/co 批量裁剪新3_2071519463295508482.json, 图片生成/图生图/co裁剪1_2075961816714407937.json, 图片生成/图生图/co裁剪_2075131937269829633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_662
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/双人语音克隆-MegaTTS3_1963880808523321346.json、音频生成/音频生成/双人语音克隆-MegaTTS3_1964945150801793025.json、音频生成/音频生成/多人语音克隆-FireRedTTS_1970352088003846145.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/co 批量裁剪新2_2071504923543556097.json、图片生成/图生图/co 批量裁剪新3_2071519463295508482.json、图片生成/图生图/co裁剪1_2075961816714407937.json、图片生成/图生图/co裁剪_2075131937269829633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `Text Multiline`
+全部 4 个 workflow 都包含：
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `InvertMask`
+- `InvertMask (segment anything)`
+- `LayerUtility: CropByMask`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `SAMLoader`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MegaTTS3Run` —— 2/3 个有
-- `FireRedTTS2_Dialogue` —— 1/3 个有
+- `GroupSwitcher` —— 2/4 个有
 
 ## 典型参数
 

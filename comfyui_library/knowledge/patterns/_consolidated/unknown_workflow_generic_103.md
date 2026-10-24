@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_103
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.826889
-common_nodes: [LoadImage, RH_AlibabaWan30ImageToVideo, SaveVideo]
+coverage: 0.837143
+common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub DreamOmni2 Gen Pipeline, RunningHub DreamOmni2 Generator, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json, 视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json, 视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json, 视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json, 视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json, 视频生成/图生视频/Wan3.0首帧_2100196132054986754.json, 视频生成/图生视频/wan3 单图_双图 视频生成 Wan3.0 首尾帧生视频_2092056558216765441.json, 视频生成/图生视频/图生视频工作流｜万相 3.0 首尾帧 最高 1080P_2100471486690713601.json, 视频生成/文生视频/Wan 3.0 文生视频 图生视频 首尾帧 女装带货模版+车内一周穿搭展示+全节点注释_2091861387894149122.json]
+members: [图片生成/图生图/DreamOmni2三张图_1977693881636716545.json, 图片生成/图生图/DreamOmni2产品换背景_1977643548461944834.json, 图片生成/图生图/DreamOmni2发型迁移_1977616689711980546.json, 图片生成/图生图/DreamOmni2合影_1977530658207748098.json, 图片生成/图生图/DreamOmni2图案迁移_1977637671453511682.json, 图片生成/图生图/DreamOmni2图片编辑大模型（）_1977609446580985858.json, 图片生成/图生图/DreamOmni2图生图洗图_1977206632318935042.json, 图片生成/图生图/DreamOmni2姿势迁移_1977509985427050497.json, 图片生成/图生图/DreamOmni2字体风格迁移_1977622397262143490.json, 图片生成/图生图/DreamOmni2打光融合_1977504086134280193.json, 图片生成/图生图/DreamOmni2电商模特商品_1977354620756467714.json, 图片生成/图生图/DreamOmni2电商模特换装_1977246427334234114.json, 图片生成/图生图/DreamOmni2表情迁移_1977596031246442498.json, 图片生成/图生图/DreamOmni2风格迁移_1977506050427506690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_103
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json、视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json、视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json、视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json、视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/DreamOmni2三张图_1977693881636716545.json、图片生成/图生图/DreamOmni2产品换背景_1977643548461944834.json、图片生成/图生图/DreamOmni2发型迁移_1977616689711980546.json、图片生成/图生图/DreamOmni2合影_1977530658207748098.json、图片生成/图生图/DreamOmni2图案迁移_1977637671453511682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `LoadImage`
-- `RH_AlibabaWan30ImageToVideo`
-- `SaveVideo`
+- `PrimitiveStringMultiline`
+- `RunningHub DreamOmni2 Gen Pipeline`
+- `RunningHub DreamOmni2 Generator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
+- `easy imageConcat` —— 1/14 个有
 
 ## 典型参数
 

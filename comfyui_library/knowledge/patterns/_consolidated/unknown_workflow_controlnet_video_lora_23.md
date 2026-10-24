@@ -7,13 +7,13 @@ coverage: 0.925667
 common_nodes: [CLIPVisionLoader, DWPreprocessor, DrawViTPose, GetImageSizeAndCount, ImageConcatMulti, JoinStrings, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PrimitiveStringMultiline, RH_Captioner, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1982728839811997698.json, 视频生成/图生视频/1982639964624175105.json, 视频生成/图生视频/1971179799987265537.json]
+members: [视频生成/图生视频/动作迁移+可多镜头+面部表情参考_1982728839811997698.json, 视频生成/图生视频/动作迁移+面部表情参考 (长视频版本）_1982639964624175105.json, 视频生成/图生视频/动作迁移+面部表情参考-WAN-AnimateV2_1971179799987265537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_23
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1982728839811997698.json、视频生成/图生视频/1982639964624175105.json、视频生成/图生视频/1971179799987265537.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动作迁移+可多镜头+面部表情参考_1982728839811997698.json、视频生成/图生视频/动作迁移+面部表情参考 (长视频版本）_1982639964624175105.json、视频生成/图生视频/动作迁移+面部表情参考-WAN-AnimateV2_1971179799987265537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

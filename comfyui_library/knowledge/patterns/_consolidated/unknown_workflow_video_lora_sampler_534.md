@@ -2,79 +2,90 @@
 name: unknown_workflow_video_lora_sampler_534
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.875
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR String To Combo, ImageResizeKJ, ImpactInt, ImpactStringSelector, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RH_LLMAPI_NODE, SimpleMath+, SplitStringByDelimiter, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.7305
+common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CM_IntToFloat, ComfyMathExpression, GetNode, INTConstant, ImageBatchMulti, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RH_GetAudioDuration, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMultiFrameRefToVideo, easy cleanGpuUsed, easy mathInt, easy seed, wanBlockSwap]
+problems: []
 missing: []
-members: [视频生成/图生视频/1964309918603988994.json, 视频生成/图生视频/2018166622560718849.json, 视频生成/图生视频/1940692152370311170.json, 视频生成/文生视频/1931150479697620994.json]
+members: [视频生成/图生视频/定制专用图生视频工作流，视频时长音频语音和内容完全自定义_2063279472157216769.json, 视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2061394564275073025.json, 视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2064991649918439426.json, 视频生成/图生视频/服饰电商定制专用工作流-图生视频带自定义配音转场加模特上身展示_2061728119920349185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_534
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1964309918603988994.json、视频生成/图生视频/2018166622560718849.json、视频生成/图生视频/1940692152370311170.json、视频生成/文生视频/1931150479697620994.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/定制专用图生视频工作流，视频时长音频语音和内容完全自定义_2063279472157216769.json、视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2061394564275073025.json、视频生成/图生视频/服饰电商商品展示定制专用工作流-图生视频带转场模特上身展示_2064991649918439426.json、视频生成/图生视频/服饰电商定制专用工作流-图生视频带自定义配音转场加模特上身展示_2061728119920349185.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR String To Combo`
-- `ImageResizeKJ`
-- `ImpactInt`
-- `ImpactStringSelector`
-- `KSampler`
-- `LoadImage`
+- `CM_IntToFloat`
+- `ComfyMathExpression`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageLoader`
+- `ImageResizeKJv2`
+- `Int`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `RH_Captioner`
-- `RH_LLMAPI_NODE`
-- `SimpleMath+`
-- `SplitStringByDelimiter`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveInt`
+- `RH_GetAudioDuration`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanMultiFrameRefToVideo`
+- `easy cleanGpuUsed`
+- `easy mathInt`
+- `easy seed`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `JoinStringMulti` —— 2/4 个有
-- `JoinStrings` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `MultiplePathsInput` —— 3/4 个有
+- `Qwen3_VQA` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `JjkText` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `LongCatTTS` —— 2/4 个有
+- `RunningHub SeedXPro Translator` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `TT_img_enc` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | 8 - 20 | 4 | 57% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 14，观测区间 8 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

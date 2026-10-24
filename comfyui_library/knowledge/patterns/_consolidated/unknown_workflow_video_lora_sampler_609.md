@@ -2,68 +2,70 @@
 name: unknown_workflow_video_lora_sampler_609
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.460667
-common_nodes: [Any Switch (rgthree), AssembleLoopFrames, BatchCount+, BatchResizeWithLanczos, ColorMatch, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrepareLoopFrames, PrimitiveStringMultiline, RH_Captioner, RIFE VFI, RIFE_FPS_Resample, RollFrames, SetNode, StringConcatenate, TrimBatchEnds, UnrollFrames, VHS_VideoCombine, WanVideoAddExtraLatent, WanVideoDecode, WanVideoEasyCache, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, mxSlider]
+level: strong
+coverage: 0.996333
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float, easy getNode, easy int, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/Live Wallpaper Loop 动态壁纸循环_2102556512743944193.json, 视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2008809599616421889.json, 视频生成/图生视频/2012455177055379458.json]
+members: [视频生成/图生视频/LTX2.3首尾帧生视频去字幕生视频优化版v2_2046138080263938050.json, 视频生成/图生视频/LTX2.3首尾帧生视频超强一致性生视频优化版v2_2048930807976300546.json, 视频生成/图生视频/LTX2.3首尾帧生视频（KJ流）_2044379140505214978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_609
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Live Wallpaper Loop 动态壁纸循环_2102556512743944193.json、视频生成/图生视频/动态壁纸循环 1280P高清输出_wan2.2_2008809599616421889.json、视频生成/图生视频/2012455177055379458.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3首尾帧生视频去字幕生视频优化版v2_2046138080263938050.json、视频生成/图生视频/LTX2.3首尾帧生视频超强一致性生视频优化版v2_2048930807976300546.json、视频生成/图生视频/LTX2.3首尾帧生视频（KJ流）_2044379140505214978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AssembleLoopFrames`
-- `BatchCount+`
-- `BatchResizeWithLanczos`
-- `ColorMatch`
-- `GetNode`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Float To Integer`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
 - `MathExpression|pysssss`
-- `PrepareLoopFrames`
-- `PrimitiveStringMultiline`
-- `RH_Captioner`
-- `RIFE VFI`
-- `RIFE_FPS_Resample`
-- `RollFrames`
-- `SetNode`
-- `StringConcatenate`
-- `TrimBatchEnds`
-- `UnrollFrames`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAddExtraLatent`
-- `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `mxSlider`
+- `easy float`
+- `easy getNode`
+- `easy int`
+- `easy setNode`
+
+**可变部分**（部分 workflow 才有）：
+- `JWFloat` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LTXVScheduler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -71,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

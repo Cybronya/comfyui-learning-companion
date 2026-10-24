@@ -7,13 +7,13 @@ coverage: 0.957
 common_nodes: [GetImageSizeAndCount, ImageResize+, ImageScaleToMegapixels, Int, LoadImage, LoadWanVideoT5TextEncoder, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949705489898184706.json, 视频生成/图生视频/1949686790592045057.json]
+members: [视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json, 视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949705489898184706.json、视频生成/图生视频/1949686790592045057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json、视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

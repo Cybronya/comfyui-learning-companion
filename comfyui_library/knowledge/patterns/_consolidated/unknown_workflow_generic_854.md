@@ -1,49 +1,52 @@
 ---
 name: unknown_workflow_generic_854
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9575
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, LoadImage, LoadVideo, RH_AlibabaWan27ImageEdit, RH_AlibabaWan27ImageEditPro, RH_AlibabaWan27ImageToVideo, RH_AlibabaWan27ReferenceToVideo, RH_AlibabaWan27TextToImage, RH_AlibabaWan27TextToImagePro, RH_AlibabaWan27TextToVideo, RH_AlibabaWan27VideoEdit, RH_AlibabaWan27VideoExtend, RH_Wan25_I2V, RH_Wan25_T2V, RH_Wan26_I2V, RH_Wan26_I2V_Flash, RH_Wan26_I2V_Flash_Custom, RH_Wan26_T2V, SaveImage, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.745
+common_nodes: [Bjornulf_ShowInt, CompressImages, ConstrainImage|pysssss, Fast Groups Bypasser (rgthree), ImageListToBatch_, Int, JjkText, PreviewImage, ProcessString, RHBatchImages:, RHExtractImage, RHUploadZip, RH_Nano_Banana2_Image2Image, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042082712198062082.json, 视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json]
+members: [图片生成/图生图/AIGC批量处理底图_2020703649630003201.json, 图片生成/图生图/AIGC批量处理底图（社媒）_2025567100470824962.json, 图片生成/图生图/AIGC批量洗图（场景）_2027213759646797825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_854
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2042082712198062082.json、视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AIGC批量处理底图_2020703649630003201.json、图片生成/图生图/AIGC批量处理底图（社媒）_2025567100470824962.json、图片生成/图生图/AIGC批量洗图（场景）_2027213759646797825.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Bjornulf_ShowInt`
+- `CompressImages`
+- `ConstrainImage|pysssss`
 - `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `RH_AlibabaWan27ImageEdit`
-- `RH_AlibabaWan27ImageEditPro`
-- `RH_AlibabaWan27ImageToVideo`
-- `RH_AlibabaWan27ReferenceToVideo`
-- `RH_AlibabaWan27TextToImage`
-- `RH_AlibabaWan27TextToImagePro`
-- `RH_AlibabaWan27TextToVideo`
-- `RH_AlibabaWan27VideoEdit`
-- `RH_AlibabaWan27VideoExtend`
-- `RH_Wan25_I2V`
-- `RH_Wan25_T2V`
-- `RH_Wan26_I2V`
-- `RH_Wan26_I2V_Flash`
-- `RH_Wan26_I2V_Flash_Custom`
-- `RH_Wan26_T2V`
+- `ImageListToBatch_`
+- `Int`
+- `JjkText`
+- `PreviewImage`
+- `ProcessString`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `SaveVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy promptLine`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 2/3 个有
+- `SDVN Menu Option` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
 
 ## 典型参数
 
@@ -55,4 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

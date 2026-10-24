@@ -1,35 +1,43 @@
 ---
 name: unknown_workflow_generic_561
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.7712
+common_nodes: [JWStringReplace, LoadAudio, LoadVideo, RH_HeyGemNode, RH_LLMAPI_NODE, SaveAudio, SaveVideo, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance v1 Lite Reference｜图生视频｜多图参考_2097593690041700353.json, 视频生成/图生视频/2060358825198309377.json, 视频生成/图生视频/2038487647500378114.json]
+members: [数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json, 视频生成/文生视频/直播间数字人 _ BRairt.F1_1933349167462789122.json, 音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json, 音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_561
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance v1 Lite Reference｜图生视频｜多图参考_2097593690041700353.json、视频生成/图生视频/2060358825198309377.json、视频生成/图生视频/2038487647500378114.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json、数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json、视频生成/文生视频/直播间数字人 _ BRairt.F1_1933349167462789122.json、音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json、音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
+全部 5 个 workflow 都包含：
+- `JWStringReplace`
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `RH_LLMAPI_NODE`
+- `SaveAudio`
 - `SaveVideo`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 2/3 个有
-- `RH_SeedanceV1LiteReferenceToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/3 个有
+- `IndexTTS2Run` —— 3/5 个有
+- `IndexTTSNode` —— 1/5 个有
+- `IndexTTSRun` —— 1/5 个有
+- `TextBox` —— 1/5 个有
 
 ## 典型参数
 

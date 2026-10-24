@@ -1,73 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_167
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.605
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
-missing: [Replace Text _O, Text _O, easy textSwitch]
-members: [图片生成/文生图/1981298519229235201.json, 图片生成/文生图/1981953788003139586.json]
+frequency: 3
+level: moderate
+coverage: 0.846
+common_nodes: [ApplyPuLIDFlux2, BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, ImageScale, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PuLIDEVACLIPLoader, PuLIDInsightFaceLoader, PuLIDModelLoader, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/图生图/Flux2 Pulid脸部参考文生图V3_2038131436229763073.json, 图片生成/图生图/flux2klein 文生图身份一致_2078463797093822466.json, 图片生成/文生图/Flux2 Pulid脸部参考文生图V3_2036724647751852034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_167
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1981298519229235201.json、图片生成/文生图/1981953788003139586.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux2 Pulid脸部参考文生图V3_2038131436229763073.json、图片生成/图生图/flux2klein 文生图身份一致_2078463797093822466.json、图片生成/文生图/Flux2 Pulid脸部参考文生图V3_2036724647751852034.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `ApplyPuLIDFlux2`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
+- `ImageScale`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `PuLIDEVACLIPLoader`
+- `PuLIDInsightFaceLoader`
+- `PuLIDModelLoader`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DisplayText` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `Replace Text _O` —— 1/2 个有
-- `String` —— 1/2 个有
-- `Text _O` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `ComfySwitchNode` —— 2/3 个有
+- `Float` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `FaceAnalysisModels` —— 1/3 个有
+- `FaceBoundingBox` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 17 | - | 2 | 47% |
-| Prompt 约束强度(CFG) | 2 | - | 2 | 50% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 17，样本不足，未给区间，2 个样本，取值分散，一致性仅 47%
-- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Replace Text _O、Text _O、easy textSwitch
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

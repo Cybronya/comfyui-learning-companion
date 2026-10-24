@@ -7,13 +7,13 @@ coverage: 0.579
 common_nodes: [Bjornulf_FreeVRAM, Bjornulf_ShowInt, CLIPLoader, CLIPVisionLoader, ConditioningZeroOut, DrawMaskOnImage, DrawViTPose, Fast Groups Muter (rgthree), GetNode, INTConstant, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageScale, ImageUpscaleWithModelBatched, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, RIFE VFI, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, TT_img_enc, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2064594523124232193.json, 视频生成/图生视频/2065167482889007106.json, 视频生成/图生视频/2063232908294451201.json, 视频生成/图生视频/2053105004701069313.json, 视频生成/图生视频/2066760634758426626.json, 视频生成/图生视频/2068050463907471361.json]
+members: [视频生成/图生视频/动作迁移人物换装模特一体化_2064594523124232193.json, 视频生成/图生视频/最强换装换模特迁移动作，换衣服换人一键跟跳（高阶版）_2065167482889007106.json, 视频生成/图生视频/最强换装换模特迁移动作，换衣服换人模仿跳舞_2063232908294451201.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出_2053105004701069313.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出_2066760634758426626.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出（超级懒人版）_2068050463907471361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_upscale
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2064594523124232193.json、视频生成/图生视频/2065167482889007106.json、视频生成/图生视频/2063232908294451201.json、视频生成/图生视频/2053105004701069313.json、视频生成/图生视频/2066760634758426626.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/动作迁移人物换装模特一体化_2064594523124232193.json、视频生成/图生视频/最强换装换模特迁移动作，换衣服换人一键跟跳（高阶版）_2065167482889007106.json、视频生成/图生视频/最强换装换模特迁移动作，换衣服换人模仿跳舞_2063232908294451201.json、视频生成/图生视频/超强换装换动作换模特一体化全局输出_2053105004701069313.json、视频生成/图生视频/超强换装换动作换模特一体化全局输出_2066760634758426626.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6

@@ -1,33 +1,31 @@
 ---
 name: unknown_workflow_video_sampler_vae_20
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.896231
-common_nodes: [ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.950357
+common_nodes: [ImagePadKJ, ImageResizeKJ, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1927564168260653058.json, 视频生成/图生视频/1934069009803300865.json, 视频生成/图生视频/1934659056122404865.json, 视频生成/图生视频/2074784823415238657.json, 视频生成/图生视频/2075377301298176002.json, 视频生成/图生视频/2077272902344470529.json, 视频生成/图生视频/2077571245901705218.json, 视频生成/图生视频/2077595441516081153.json, 视频生成/图生视频/2078326809900445698.json, 视频生成/图生视频/2080492754869772289.json, 视频生成/图生视频/LORA版本-电商带货FusionX-Phantom_2090234340373516290.json, 视频生成/图生视频/1927371436502192130.json, 视频生成/图生视频/1916775902779211777.json]
+members: [视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成_2020431913210617857.json, 视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成tvc广告短视频_2029224724693262338.json, 视频生成/图生视频/skyreelsv3+主体一致性 (1)_2019437337008148481.json, 视频生成/图生视频/万相Phantom14B图片编辑工作流_1927590039822438402.json, 视频生成/图生视频/多图参考视频媲美可灵1.6_1925799442136666113.json, 视频生成/图生视频/字节Phantom14B_最新多图参考一致性视频_1927541511028903938.json, 视频生成/图生视频/字节Phantom14B图生视频_1927944176032464897.json, 视频生成/图生视频/字节Phantom14B最新主体一致性(电商广告视频生成)_1915051981709242369.json, 视频生成/图生视频/数字人电商带货FusionX-Phantom加速版14B_2039636071985713154.json, 视频生成/图生视频/数字人电商带货FusionX-Phantom加速版14B_2064931253647929346.json, 视频生成/图生视频/电商带货FusionX-Phantom加速版14B_1934089550950260738.json, 视频生成/图生视频/电商带货FusionX-Phantom加速版14B_2108761890527735810.json, 视频生成/图生视频/电商带货服装包包直播视频生成FusionX-Phantom加速版_1934241189509951489.json, 视频生成/文生视频/电商带货替换_1935520036046176257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_20
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1927564168260653058.json、视频生成/图生视频/1934069009803300865.json、视频生成/图生视频/1934659056122404865.json、视频生成/图生视频/2074784823415238657.json、视频生成/图生视频/2075377301298176002.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成_2020431913210617857.json、视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成tvc广告短视频_2029224724693262338.json、视频生成/图生视频/skyreelsv3+主体一致性 (1)_2019437337008148481.json、视频生成/图生视频/万相Phantom14B图片编辑工作流_1927590039822438402.json、视频生成/图生视频/多图参考视频媲美可灵1.6_1925799442136666113.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `ImagePadKJ`
 - `ImageResizeKJ`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
@@ -35,26 +33,25 @@ source: knowledge_consolidation
 - `WanVideoModelLoader`
 - `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 12/13 个有
-- `WanVideoTextEncode` —— 12/13 个有
-- `CLIPLoader` —— 11/13 个有
-- `CLIPTextEncode` —— 11/13 个有
-- `WanVideoTextEmbedBridge` —— 11/13 个有
-- `ColorMatch` —— 9/13 个有
-- `Primitive integer [Crystools]` —— 9/13 个有
-- `Text Multiline` —— 9/13 个有
-- `WanVideoLoraSelect` —— 9/13 个有
-- `INTConstant` —— 4/13 个有
-- `WanVideoVRAMManagement` —— 2/13 个有
-- `easy imageRemBg` —— 2/13 个有
-- `WanVideoApplyNAG` —— 1/13 个有
-- `WanVideoExperimentalArgs` —— 1/13 个有
-- `WanVideoTextEncodeSingle` —— 1/13 个有
+- `LoadWanVideoT5TextEncoder` —— 12/14 个有
+- `WanVideoTextEncode` —— 12/14 个有
+- `WanVideoTorchCompileSettings` —— 11/14 个有
+- `Primitive integer [Crystools]` —— 10/14 个有
+- `Text Multiline` —— 8/14 个有
+- `ImageConcatMulti` —— 7/14 个有
+- `PreviewImage` —— 7/14 个有
+- `WanVideoTeaCache` —— 5/14 个有
+- `easy clearCacheAll` —— 5/14 个有
+- `INTConstant` —— 4/14 个有
+- `CR Prompt Text` —— 2/14 个有
+- `SimpleMath+` —— 2/14 个有
+- `WanVideoTextEncodeCached` —— 2/14 个有
+- `ImageResizeKJv2` —— 1/14 个有
+- `SetNode` —— 1/14 个有
+- `easy cleanGpuUsed` —— 1/14 个有
 
 ## 典型参数
 

@@ -3,75 +3,63 @@ name: unknown_workflow_video_lora_sampler_759
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5
-common_nodes: [Any Switch (rgthree), Anything Everywhere, AudioSeparation, CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LoadImage, LoadImageListFromDir //Inspire, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Mute / Bypass Repeater (rgthree), PreviewAudio, PreviewImage, PrimitiveFloat, SetNode, TextInput_, TrimAudioDuration, VHS_LoadAudioUpload, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy isNone, easy seed, easy showAnything]
+coverage: 0.5565
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, GetNode, JjkText, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2028492446719545346.json, 视频生成/图生视频/2000716682731679746.json]
+members: [视频生成/图生视频/MV_长视频生成_Minimax-H3（二采）_2101970637429493762.json, 视频生成/图生视频/短视频复刻-v3_2109928843170631681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_759
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2028492446719545346.json、视频生成/图生视频/2000716682731679746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MV_长视频生成_Minimax-H3（二采）_2101970637429493762.json、视频生成/图生视频/短视频复刻-v3_2109928843170631681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Anything Everywhere`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Batch Images From List`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ConditioningZeroOut`
 - `GetNode`
-- `INTConstant`
-- `ImageListToBatch+`
-- `ImageResizeKJv2`
-- `InfiniteTalkEmbedsSlice`
-- `InfiniteTalkMultiImage`
+- `JjkText`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadImageListFromDir //Inspire`
+- `LoraLoaderModelOnly`
 - `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `TextInput_`
-- `TrimAudioDuration`
-- `VHS_LoadAudioUpload`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy indexAnything`
-- `easy isNone`
-- `easy seed`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioCrop` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MiniMaxH3MotionContext` —— 1/2 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 1/2 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 1/2 个有
+- `MiniMaxH3MotionContextTrim` —— 1/2 个有
+- `SoundFlow_GetLength` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

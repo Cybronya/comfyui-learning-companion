@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_generic_235
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.875
-common_nodes: [FishS2TTS, SaveAudio]
+coverage: 0.717444
+common_nodes: [LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio S2 TTS--语音生成_2033210073123659777.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2033118271662198785.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2033497444893335553.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2040334032201850881.json, 音频生成/音频生成/FishAudio S2 语音生成_2033361939409145857.json, 音频生成/音频生成/情感标签-文本转语音-FishAudio S2 TTS_2033180769274830850.json]
+members: [数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json, 音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json, 音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json, 音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json, 音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json, 音频生成/音频生成/TwistCanvas · Qwen3-ASR 对白转写_2102731254377570305.json, 音频生成/音频生成/推理-音频提取字幕-Qwen3-ASR_2052619440117821442.json, 音频生成/音频生成/音频转文本Qwen3-ASR（支持多国语言）_2033520975840550914.json, 音频生成/音频生成/音频转文本字幕识别Qwen3-ASR（支持多国语言）_2018919931047317505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_235
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS--语音生成_2033210073123659777.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2033118271662198785.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2033497444893335553.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2040334032201850881.json、音频生成/音频生成/FishAudio S2 语音生成_2033361939409145857.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json、音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json、音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json、音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json、音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `FishS2TTS`
-- `SaveAudio`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3ASRLoader_DFT`
+- `Qwen3ASRTranscribe_DFT`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
+- `PreviewAny` —— 8/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 

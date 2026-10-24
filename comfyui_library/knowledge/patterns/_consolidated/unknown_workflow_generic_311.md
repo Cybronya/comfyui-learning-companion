@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_311
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.6954
-common_nodes: [CR Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudioMP3, ShowText|pysssss]
+coverage: 0.685
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json, 音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json, 音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json, 音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json, 音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json]
+members: [图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json, 图片生成/图生图/11_2038431448486649858.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2064558042129195010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_311
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json、音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json、音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json、音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json、音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudioMP3`
-- `ShowText|pysssss`
+全部 7 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3ASRLoader` —— 3/5 个有
-- `Qwen3ASRTranscribe` —— 3/5 个有
-- `Apply Whisper` —— 2/5 个有
-- `PreviewAny` —— 1/5 个有
-- `SaveAudio` —— 1/5 个有
+- `PreviewImage` —— 6/7 个有
+- `CR Text` —— 5/7 个有
+- `Image Compare (mtb)` —— 1/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
 
 ## 典型参数
 

@@ -2,87 +2,119 @@
 name: unknown_workflow_video_lora_sampler_592
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.513333
-common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, FloatConstant, GetImageSize, GetNode, INTConstant, ImageScaleToMaxDimension, InvertMask, JWStringMultiline, LoadImage, LoadWanVideoT5TextEncoder, PreviewAny, PreviewImage, SetNode, SomethingToString, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy seed]
-problems: []
+level: strong
+coverage: 0.514667
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageRangeFromBatch, GetNode, GrowMask, ImageConcanate, ImageCropByMaskAndResize, InvertMask (segment anything), KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PixelPerfectResolution, SeCModelLoader, SeCVideoSegmentation, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1990334603498057730.json, 视频生成/图生视频/2028822051032666113.json, 视频生成/图生视频/2005583710823088129.json]
+members: [视频生成/图生视频/Animate人物替换，无需标点，支持长视频，多人可指定其中一个_1993140564954726401.json, 视频生成/图生视频/SEC DWWan2.2 Animate 替换循环工作流成功_1993239739520270338.json, 视频生成/图生视频/mocha+animate移花接木工作流_1988507269316919298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_592
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1990334603498057730.json、视频生成/图生视频/2028822051032666113.json、视频生成/图生视频/2005583710823088129.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Animate人物替换，无需标点，支持长视频，多人可指定其中一个_1993140564954726401.json、视频生成/图生视频/SEC DWWan2.2 Animate 替换循环工作流成功_1993239739520270338.json、视频生成/图生视频/mocha+animate移花接木工作流_1988507269316919298.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
+- **可信度**：强结论
 - **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_Preview`
-- `BiRefNetRMBG`
+- `BlockifyMask`
 - `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `FloatConstant`
-- `GetImageSize`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GetImageRangeFromBatch`
 - `GetNode`
-- `INTConstant`
-- `ImageScaleToMaxDimension`
-- `InvertMask`
-- `JWStringMultiline`
+- `GrowMask`
+- `ImageConcanate`
+- `ImageCropByMaskAndResize`
+- `InvertMask (segment anything)`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewAny`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
 - `SetNode`
-- `SomethingToString`
-- `TextImageEncodeQwenVL`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageResizeToClosest`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `easy int`
-- `easy seed`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Create Grid Image from Batch` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `ImpactMinMax` —— 2/3 个有
-- `MaskToImage` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `string_util_StrConcat` —— 2/3 个有
-- `ImageFromBatch+` —— 1/3 个有
+- `CM_FloatToInt` —— 2/3 个有
+- `ImageScale` —— 2/3 个有
+- `PointsEditor` —— 2/3 个有
+- `SimpleComparison+` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
+- `easy float` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
+- `CM_IntToFloat` —— 1/3 个有
+- `DownloadAndLoadSAM2Model` —— 1/3 个有
+- `GrowMaskWithBlur` —— 1/3 个有
+- `ImageFromBatch` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `MaskPreview+` —— 1/3 个有
+- `MochaEmbeds` —— 1/3 个有
+- `OnnxDetectionModelLoader` —— 1/3 个有
+- `PoseAndFaceDetection` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `Sa2VANodeTpl` —— 1/3 个有
+- `Sam2Segmentation` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `WanVideoBlockSwap` —— 1/3 个有
+- `WanVideoDecode` —— 1/3 个有
+- `WanVideoLoraSelectMulti` —— 1/3 个有
+- `WanVideoModelLoader` —— 1/3 个有
+- `WanVideoSampler` —— 1/3 个有
+- `WanVideoSetBlockSwap` —— 1/3 个有
+- `WanVideoTextEncodeCached` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `WanVideoVAELoader` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（5/3 个样本）：Steps较低可能导致细节不足

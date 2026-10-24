@@ -2,93 +2,76 @@
 name: unknown_workflow_video_lora_sampler_538
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.895
-common_nodes: [BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, CropByBBoxes, ImageBatch, ImageFromBatch, ImageResizeKJv2, KSampler, LayerUtility: If , LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveBoolean, PrimitiveString, RTDETR_detect, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy forLoopEnd, easy forLoopStart, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.502
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/2063784977329909762.json, 视频生成/图生视频/2065044173270634498.json, 视频生成/图生视频/2062727464236965889.json, 视频生成/文生视频/动作迁移（卡通形象）_wan2.2_2061988171709239297.json]
+members: [视频生成/图生视频/角色迁移组线下版+全节点注释_2055512810020458497.json, 视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json, 视频生成/文生视频/Wan 2.2-动作迁移（Wan Animate版）_1969619629620555777.json, 视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_538
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2063784977329909762.json、视频生成/图生视频/2065044173270634498.json、视频生成/图生视频/2062727464236965889.json、视频生成/文生视频/动作迁移（卡通形象）_wan2.2_2061988171709239297.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/角色迁移组线下版+全节点注释_2055512810020458497.json、视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json、视频生成/文生视频/Wan 2.2-动作迁移（Wan Animate版）_1969619629620555777.json、视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BodyRatioMapperProportionTransfer`
-- `BodyRatioMapperSDPoseRender`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CropByBBoxes`
-- `ImageBatch`
-- `ImageFromBatch`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
-- `KSampler`
-- `LayerUtility: If `
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveBoolean`
-- `PrimitiveString`
-- `RTDETR_detect`
-- `SAM3_Detect`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
-- `TrimVideoLatent`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PixelPerfectResolution`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy showAnything`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoaderGGUF` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `UnetLoaderGGUF` —— 3/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `FrameInterpolate` —— 1/4 个有
-- `FrameInterpolationModelLoader` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `WanVideoLoraSelectMulti` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetImageSize` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `LayerMask: LoadFlorence2Model` —— 1/4 个有
+- `LayerUtility: Florence2Image2Prompt` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `WanVideoContextOptions` —— 1/4 个有
+- `WanVideoLoraSelect` —— 1/4 个有
+- `WanVideoTorchCompileSettings` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 5 | 4 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 5，4 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

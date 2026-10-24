@@ -1,78 +1,82 @@
 ---
 name: unknown_workflow_lora_sampler_clip_71
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8414
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerAdvanced, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.822429
+common_nodes: [Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ImageBatch, ImageFromBatch, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchLoader, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [图片生成/文生图/zimage+klein三阶采样极致真实优化版文生图_2060023035092094977.json, 图片生成/文生图/zimage+klein三阶采样极致真实优化版文生图_2068280017888563201.json, 图片生成/文生图/文生场景 Krea2_2100205414267834369.json, 视频生成/文生视频/Krea2 巨构场景_2087351374735560705.json, 视频生成/文生视频/zimage+klein三阶采样极致真实优化版文生图_2061987789113217025.json]
+members: [视频生成/图生视频/官方循环-infinitetalk_2019285651199369217.json, 视频生成/图生视频/新Infinite Talk无限时长极速版数字人 无重复动作_2019270368963338242.json, 视频生成/图生视频/（官方版-循环）Infinite Talk动作列表无限时长加速版单人数字人V1_2018734533960540162.json, 视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1 林耀2.6_2019704865835982849.json, 视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1_2018749675796434945.json, 视频生成/文生视频/单人InfiniteTalk无限时长原生循环_2018256491320451073.json, 视频生成/文生视频/双人InfiniteTalk无限时长原生循环_2018267797146570753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_71
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/zimage+klein三阶采样极致真实优化版文生图_2060023035092094977.json、图片生成/文生图/zimage+klein三阶采样极致真实优化版文生图_2068280017888563201.json、图片生成/文生图/文生场景 Krea2_2100205414267834369.json、视频生成/文生视频/Krea2 巨构场景_2087351374735560705.json、视频生成/文生视频/zimage+klein三阶采样极致真实优化版文生图_2061987789113217025.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/官方循环-infinitetalk_2019285651199369217.json、视频生成/图生视频/新Infinite Talk无限时长极速版数字人 无重复动作_2019270368963338242.json、视频生成/图生视频/（官方版-循环）Infinite Talk动作列表无限时长加速版单人数字人V1_2018734533960540162.json、视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1 林耀2.6_2019704865835982849.json、视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1_2018749675796434945.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `KSamplerAdvanced`
+- `ImageBatch`
+- `ImageFromBatch`
 - `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchLoader`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `WanInfiniteTalkToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/5 个有
-- `ImageColorMatch+` —— 3/5 个有
-- `LayerUtility: PurgeVRAM` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `RHLLMChatNode` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `ColorMatchV2` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `ImageSharpen` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `RH_LLMAPI_NODE` —— 2/5 个有
-- `Seed (rgthree)` —— 2/5 个有
+- `SimpleCalculatorKJ` —— 6/7 个有
+- `SimpleMath+` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `AudioConcat` —— 5/7 个有
+- `TrimAudioDuration` —— 5/7 个有
+- `CR Text` —— 4/7 个有
+- `GetImageSizeAndCount` —— 4/7 个有
+- `JWInteger` —— 4/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `ModelPatchTorchSettings` —— 4/7 个有
+- `PathchSageAttentionKJ` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `CreateVideo` —— 3/7 个有
+- `JWFloat` —— 3/7 个有
+- `MathExpression|pysssss` —— 3/7 个有
+- `PreviewAudio` —— 3/7 个有
+- `PrimitiveInt` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `AudioCrop` —— 2/7 个有
+- `easy promptLine` —— 2/7 个有
+- `AudioSeparation` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `ShowAnything|Mie` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1536 | 1280 - 1536 | 5 | 93% |
-| 高度 | 864 | 720 - 864 | 5 | 93% |
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 8 | 8 - 12 | 5 | 80% |
-| 采样算法 | 1 | 1 - 2 | 5 | 67% |
-| 调度器 | euler_ancestral | - | 5 | 100% |
-| 重绘幅度 | beta | - | 5 | 60% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,10 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1536，观测区间 1280 - 1536，5 个样本，取值集中（一致性 93%）
-- 高度 中位数 864，观测区间 720 - 864，5 个样本，取值集中（一致性 93%）
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 12，5 个样本
-- 采样算法 中位数 1，观测区间 1 - 2，5 个样本
-- 调度器 最常用 euler_ancestral，5 个样本，一致性 100%
-- 重绘幅度 最常用 beta，5 个样本，一致性 60%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

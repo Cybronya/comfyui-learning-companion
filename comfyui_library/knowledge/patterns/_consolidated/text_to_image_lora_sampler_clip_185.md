@@ -1,104 +1,83 @@
 ---
 name: text_to_image_lora_sampler_clip_185
 type: Text To Image
-frequency: 7
+frequency: 9
 level: strong
-coverage: 0.896714
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.876778
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax-H3动作迁移图生视频 二采放大高清视频输出工作流_2094358912484073473.json, 视频生成/图生视频/ref turbo加速图生视频动作模仿｜MiniMax-H3动作迁移视频生视频_2088380985703485441.json, 视频生成/图生视频/动作模仿ref turbo加速MiniMax H3图生视频动作迁移工作流_2088402060675997697.json, 视频生成/图生视频/单模型二采无编解码放大｜MiniMax-H3 ref2va超分_2093849774721167362.json, 视频生成/图生视频/多参图生视频双采Latent放大｜Minimax-H3一键直出_2091672749377941505.json, 视频生成/文生视频/两步生成768P视频｜Minimax H3 多参数加速LoRA_2096256232272257025.json, 视频生成/文生视频/多参数视频生成768p｜Minimax H3加速LoRA两步_2095964673219846146.json]
+members: [图片生成/图生图/Fish Audio S2 TTS｜单人语音克隆实操｜录一段声音就能让他替你说话_2102571193546133506.json, 图片生成/图生图/Index TTS2声音克隆史上最强音色克隆带语气，音频生成工具_2106132641341861889.json, 图片生成/图生图/配音声音克隆IndexTTS2工作流｜高质量语音复刻生成_2097059623751733250.json, 数字人/数字人/IndexTTS2史上最强声音克隆｜音色语气双还原｜数字人配音新选择_2102280819787255810.json, 数字人/数字人/情绪角色配音生成｜数字人语音音频克隆直出_2093828167814443010.json, 数字人/数字人/音色克隆带语气｜IndexTTS2 史上最强声音克隆_2089347718471831553.json, 音频生成/音频生成/Index TTS2加Qwen3 TTS声音克隆二合一，音色语气情感控制音频生成_2105746631021916162.json, 音频生成/音频生成/IndexTTS2史上最强音色克隆｜带语气情感生成_2095601584188252161.json, 音频生成/音频生成/声音克隆二合一｜Index TTS2+Qwen3 TTS音色参考情感控制_2095297314482118657.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_185
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3动作迁移图生视频 二采放大高清视频输出工作流_2094358912484073473.json、视频生成/图生视频/ref turbo加速图生视频动作模仿｜MiniMax-H3动作迁移视频生视频_2088380985703485441.json、视频生成/图生视频/动作模仿ref turbo加速MiniMax H3图生视频动作迁移工作流_2088402060675997697.json、视频生成/图生视频/单模型二采无编解码放大｜MiniMax-H3 ref2va超分_2093849774721167362.json、视频生成/图生视频/多参图生视频双采Latent放大｜Minimax-H3一键直出_2091672749377941505.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Fish Audio S2 TTS｜单人语音克隆实操｜录一段声音就能让他替你说话_2102571193546133506.json、图片生成/图生图/Index TTS2声音克隆史上最强音色克隆带语气，音频生成工具_2106132641341861889.json、图片生成/图生图/配音声音克隆IndexTTS2工作流｜高质量语音复刻生成_2097059623751733250.json、数字人/数字人/IndexTTS2史上最强声音克隆｜音色语气双还原｜数字人配音新选择_2102280819787255810.json、数字人/数字人/情绪角色配音生成｜数字人语音音频克隆直出_2093828167814443010.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 5/7 个有
-- `LTXVConcatAVLatent` —— 5/7 个有
-- `LTXVSeparateAVLatent` —— 5/7 个有
-- `LoadVideo` —— 5/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/7 个有
-- `ModelPreviewOverrideKJ` —— 5/7 个有
-- `PrimitiveFloat` —— 5/7 个有
-- `ComfyMathExpression` —— 4/7 个有
-- `MiniMaxH3SigmaShift` —— 4/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `PixaromaDuration` —— 4/7 个有
-- `PixaromaSizes` —— 4/7 个有
-- `ResolutionSelector` —— 4/7 个有
-- `ComfySwitchNode` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
-- `ImageConcatMulti` —— 3/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `LoadAudio` —— 3/7 个有
-- `ManualSigmas` —— 3/7 个有
-- `MiniMaxH3BlockCacheT8` —— 3/7 个有
-- `TrimAudioDuration` —— 3/7 个有
-- `VRAM_Debug` —— 3/7 个有
-- `Video Slice` —— 3/7 个有
-- `SplitSigmas` —— 2/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
+- `IndexTTS2Run` —— 8/9 个有
+- `PrimitiveStringMultiline` —— 7/9 个有
+- `SaveAudioMP3` —— 7/9 个有
+- `AudioCrop` —— 6/9 个有
+- `SaveAudio` —— 4/9 个有
+- `Text` —— 3/9 个有
+- `Apply Whisper` —— 2/9 个有
+- `FB_Qwen3TTSVoiceClone` —— 2/9 个有
+- `PreviewAudio` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `FishS2VoiceCloneTTS` —— 1/9 个有
+- `LoadWhisperModel_` —— 1/9 个有
+- `SaveAudioAdvanced` —— 1/9 个有
+- `WhisperTranscribe_` —— 1/9 个有
+- `忽略多组孤海` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

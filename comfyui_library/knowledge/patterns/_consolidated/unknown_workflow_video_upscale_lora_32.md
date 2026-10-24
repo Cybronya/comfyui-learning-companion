@@ -3,59 +3,62 @@ name: unknown_workflow_video_upscale_lora_32
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.606
-common_nodes: [ControlNextGetPoses, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResize+, ImageUpscaleWithModel, ImpactInt, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy positive, easy seed]
+coverage: 0.8905
+common_nodes: [AILab_ImageStitch, Anything Everywhere3, CLIPVisionLoader, FastUnsharpSharpen, GetImageRangeFromBatch, GetImageSizeAndCount, ImageResize+, ImageUpscaleWithModel, LoadImage, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1971091047734484993.json, 视频生成/图生视频/1975040693611663361.json]
+members: [视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json, 视频生成/图生视频/SteadyDancer-自适应骨骼迁移-版本二 12.11_1998823321796009986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1971091047734484993.json、视频生成/图生视频/1975040693611663361.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json、视频生成/图生视频/SteadyDancer-自适应骨骼迁移-版本二 12.11_1998823321796009986.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ControlNextGetPoses`
-- `CreateCFGScheduleFloatList`
+- `AILab_ImageStitch`
+- `Anything Everywhere3`
+- `CLIPVisionLoader`
+- `FastUnsharpSharpen`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
 - `ImageResize+`
 - `ImageUpscaleWithModel`
-- `ImpactInt`
-- `JWInteger`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
 - `RIFE VFI`
-- `SetNode`
 - `UpscaleModelLoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoControlEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy positive`
-- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerColor: ColorAdapter` —— 1/2 个有
+- `OnnxDetectionModelLoader` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `SDPoseOODLoader` —— 1/2 个有
+- `SDPoseOODProcessor` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

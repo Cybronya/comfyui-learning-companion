@@ -1,0 +1,42 @@
+---
+key: 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json
+name: Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json
+hash: 94ef49b0326449c9
+coverage: 0.7
+learned_at: 2026-10-23 11:17:13
+nodes: [SaveImage, SaveImage, PreviewImage, LoadLayeredControlV2Pipe, LoadImage, PreviewImage, Mask To Image (mtb), LayeredControlV2Sampler, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2]
+patterns: []
+missing: []
+---
+
+# 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json`
+
+## 结构
+
+**生成流程**：Sampling → Process → Output → Other
+
+**节点**（10 个）：
+- `SaveImage`
+- `SaveImage`
+- `PreviewImage`
+- `LoadLayeredControlV2Pipe`
+- `LoadImage`
+- `PreviewImage`
+- `Mask To Image (mtb)`
+- `LayeredControlV2Sampler` ★核心
+- `PreviewImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+
+## 知识
+
+覆盖率 **70%**（7/10）
+
+**有卡**：`SaveImage`、`LoadLayeredControlV2Pipe`、`LoadImage`、`Mask To Image (mtb)`、`LayeredControlV2Sampler`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：LoadImage、LayeredControlV2Sampler、SaveImage、LayerUtility: ImageScaleByAspectRatio V2、Mask To Image (mtb)、LoadLayeredControlV2Pipe、sd15-t2i-basic、sd15-t2i-lora

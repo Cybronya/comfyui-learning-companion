@@ -1,30 +1,35 @@
 ---
 name: unknown_workflow_generic_691
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [QuiverTextToSVGNode, SaveSVGNode]
+frequency: 4
+level: moderate
+coverage: 0.875
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_quiver_arrow2_text_to_svg.json, comfyui-workflow-templates-json/api_quiver_text_to_svg.json]
+members: [图片生成/图生图/全能图片G-image-2.5角色定妆照_2108410434473783298.json, 图片生成/图生图/全能图片G2.5（图片编辑-经济版）_2098003137855582210.json, 图片生成/图生图/图像编辑工作流｜Luma Uni-1 Max 九种画幅_2099690034629795842.json, 图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_691
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_quiver_arrow2_text_to_svg.json、comfyui-workflow-templates-json/api_quiver_text_to_svg.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-image-2.5角色定妆照_2108410434473783298.json、图片生成/图生图/全能图片G2.5（图片编辑-经济版）_2098003137855582210.json、图片生成/图生图/图像编辑工作流｜Luma Uni-1 Max 九种画幅_2099690034629795842.json、图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `QuiverTextToSVGNode`
-- `SaveSVGNode`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG25SunburstImageToImage` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `RH_LumaUni1MaxImageEdit` —— 1/4 个有
 
 ## 典型参数
 
@@ -36,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

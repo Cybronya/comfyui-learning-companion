@@ -7,13 +7,13 @@ coverage: 0.866778
 common_nodes: [INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1931534344593321986.json, 视频生成/图生视频/1928120240486662145.json, 视频生成/图生视频/1938291907363540993.json, 视频生成/图生视频/1939027395783675906.json, 视频生成/图生视频/1924712170221654017.json, 视频生成/图生视频/1924723933575376897.json, 视频生成/图生视频/1924709623990054913.json, 视频生成/图生视频/1923283669073448961.json, 视频生成/图生视频/1923030550234189825.json]
+members: [视频生成/图生视频/Wan图生视频_首尾帧_1931534344593321986.json, 视频生成/图生视频/accvid+vace首尾帧工作流_1928120240486662145.json, 视频生成/图生视频/selfforcing+vace14b lora 版_1938291907363540993.json, 视频生成/图生视频/selfforcing+vace首尾帧（5连拍生成视频）_1939027395783675906.json, 视频生成/图生视频/vace+movii-gen图生视频_1924712170221654017.json, 视频生成/图生视频/vace+movii-gen图生视频增强引导_1924723933575376897.json, 视频生成/图生视频/vace+moviigen+causvid图生视频_1924709623990054913.json, 视频生成/图生视频/vace_多主体引用_1923283669073448961.json, 视频生成/图生视频/vace_首帧尾帧_1923030550234189825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_53
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1931534344593321986.json、视频生成/图生视频/1928120240486662145.json、视频生成/图生视频/1938291907363540993.json、视频生成/图生视频/1939027395783675906.json、视频生成/图生视频/1924712170221654017.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan图生视频_首尾帧_1931534344593321986.json、视频生成/图生视频/accvid+vace首尾帧工作流_1928120240486662145.json、视频生成/图生视频/selfforcing+vace14b lora 版_1938291907363540993.json、视频生成/图生视频/selfforcing+vace首尾帧（5连拍生成视频）_1939027395783675906.json、视频生成/图生视频/vace+movii-gen图生视频_1924712170221654017.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

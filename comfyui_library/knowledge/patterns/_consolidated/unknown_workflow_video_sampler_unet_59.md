@@ -1,57 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_unet_59
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.812667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.89875
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 首尾帧视频生成 _ 提示词强化 _ 超分_2084660541540360193.json, 视频生成/文生视频/Minimax-H3 文生视频_2084501246035185665.json, 视频生成/文生视频/Minimax_文生视频_8步加速_2077975666892558338.json, 视频生成/文生视频/mini_max文生视频_2084531376707166209.json, 视频生成/文生视频/minimax_h3 4steps加速_2085757759953399809.json, 视频生成/文生视频/minimax_阿里8步加速_文生视频_图生视频_全能参考三合一_2095489469662187522.json]
+members: [视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json, 视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json, 视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json, 视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_59
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 首尾帧视频生成 _ 提示词强化 _ 超分_2084660541540360193.json、视频生成/文生视频/Minimax-H3 文生视频_2084501246035185665.json、视频生成/文生视频/Minimax_文生视频_8步加速_2077975666892558338.json、视频生成/文生视频/mini_max文生视频_2084531376707166209.json、视频生成/文生视频/minimax_h3 4steps加速_2085757759953399809.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json、视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json、视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json、视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
+- `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `LoadImage` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `KepStringLiteral` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `MiniMaxH3GenerationTailLoader` —— 1/6 个有
-- `MiniMaxH3PromptEnhancer` —— 1/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/6 个有
-- `MuyeTextEditOutput` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `RTXVideoSuperResolution` —— 1/6 个有
+- `CR Text` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `SolAttnMiniMax` —— 3/4 个有
+- `ExtendIntermediateSigmas` —— 2/4 个有
+- `IntToString` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `LoraLoaderBypassModelOnly` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `Seed_` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `text-util-join-text` —— 2/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

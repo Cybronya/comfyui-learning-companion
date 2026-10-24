@@ -3,41 +3,55 @@ name: unknown_workflow_video_sampler_vae_191
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.963
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1894608598201204738.json, 视频生成/文生视频/1897231501354815489.json]
+members: [视频生成/图生视频/🦖wan 2.1 MoviiGen 首尾帧_1932721199510081537.json, 视频生成/文生视频/Wan2.1首尾帧动画VACE+高清放大_1922107883666997249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_191
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1894608598201204738.json、视频生成/文生视频/1897231501354815489.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🦖wan 2.1 MoviiGen 首尾帧_1932721199510081537.json、视频生成/文生视频/Wan2.1首尾帧动画VACE+高清放大_1922107883666997249.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `CR Upscale Image` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `MaskPreview+` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ResizeLongestToNode` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoVACEModelSelect` —— 1/2 个有
 
 ## 典型参数
 

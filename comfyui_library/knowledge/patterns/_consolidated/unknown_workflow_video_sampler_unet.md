@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_video_sampler_unet
 type: Unknown Workflow
-frequency: 48
+frequency: 112
 level: moderate
-coverage: 0.909333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.874232
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 INT8 SolAttn 极速版_2093143560123150337.json, 视频生成/文生视频/MiniMax_H3_BF16_Turbo_Sage_加速版_2089253764594229249.json, 视频生成/文生视频/Minimax H3 声音乐器-采样器调度器-BF16剪枝版-无加速_2093639353842098177.json, 视频生成/文生视频/Minimax H3 高画质-采样器调度器-BF16剪枝版-无加速_2093639342676856833.json, 视频生成/文生视频/Minimax H3 高速运动-采样器调度器-BF16剪枝版-无加速_2093639364529184769.json, 视频生成/文生视频/Minimax H3-Dasiwa-动漫-多参考-超高质量_2093726033286623233.json, 视频生成/文生视频/Minimax H3-Dasiwa-直出1080P动漫多参考_2093979339154087938.json, 视频生成/文生视频/Minimax H3-极致满血1K-10秒模板--多参双bf16-+sage加速_2088287578414993410.json, 视频生成/文生视频/Minimax H3-满血+4步lora-768P-10秒模板--多参双bf16-+sage加速_2088285956901269506.json, 视频生成/文生视频/Minimax H3-满血+8步lora-768P-10秒模板--多参双bf16-+sage加速_2088285867222851586.json, 视频生成/文生视频/Minimax H3剪枝版BF16微表情10秒768P模板_2090341412847046658.json, 视频生成/文生视频/Minimax H3剪枝版BF16微表情15秒768P模板_2090340141847105537.json, 视频生成/文生视频/Minimax H3剪枝版BF16微表情5秒768P模板_2090341418379341825.json, 视频生成/文生视频/Minimax H3剪枝版BF16高动态10秒768P模板_2090341523455037442.json, 视频生成/文生视频/Minimax H3剪枝版BF16高动态15秒768P模板_2090318433895411714.json, 视频生成/文生视频/Minimax H3剪枝版BF16高动态5秒768P模板_2090341513657143298.json, 视频生成/文生视频/Minimax H3动作增强修复双采--b25-49-0.4-1.0_2096232367546523649.json, 视频生成/文生视频/Minimax H3动作增强修复双采--bf16-0.4-1.0_2096232383161917442.json, 视频生成/文生视频/Minimax H3原版BF16微表情10秒768P模板_2090352182716624897.json, 视频生成/文生视频/Minimax H3原版BF16微表情15秒768P模板_2090352189364596737.json, 视频生成/文生视频/Minimax H3原版BF16微表情5秒768P模板_2090351939925135361.json, 视频生成/文生视频/Minimax H3原版BF16高动态10秒768P模板_2090351907796774913.json, 视频生成/文生视频/Minimax H3原版BF16高动态15秒768P模板_2090354634069204994.json, 视频生成/文生视频/Minimax H3原版BF16高动态5秒768P模板_2090351927031848962.json, 视频生成/文生视频/Minimax+H3+多参考int8-4步加速lora-6步-match模式_2092079778638680066.json, 视频生成/文生视频/Minimax+H3+多参考int8-8步加速lora-10步-match模式_2092079794623172610.json, 视频生成/文生视频/Minimax+H3+多参考int8高质量原版sage加速-max模式_2092079805448675329.json, 视频生成/文生视频/Minimax+H3+首尾帧int8高质量原版sage加速-max模式_2092079816949452801.json, 视频生成/文生视频/Minimax+H3-Dasiwa-动漫-4步加速lora-6步_2093976759384498178.json, 视频生成/文生视频/Minimax+H3-Dasiwa-动漫多参考-8步加速lora-10步_2093976770788810754.json, 视频生成/文生视频/Minimax+H3混合模型b+20-49多参考更强、画质提升_2091486566232444930.json, 视频生成/文生视频/Minimax+H3混合模型b+25-49+4步加速lora-多参考更好的画质_2091486581453578241.json, 视频生成/文生视频/Minimax+H3混合模型b+25-49+8步加速lora-多参考更好的画质_2091486592572682241.json, 视频生成/文生视频/Minimax+H3混合模型b+25-49多参考更好的画质_2091486602953580545.json, 视频生成/文生视频/Minimax+H3首尾帧int8-4步加速lora-6步-match模式_2092079829788221441.json, 视频生成/文生视频/Minimax+H3首尾帧int8-8步加速lora-10步-match模式_2092081714205122562.json, 视频生成/文生视频/MinimaxH3-Dasiwa-15秒模板-三维CG动画：月球温室-高质量768P_2094076369448816641.json, 视频生成/文生视频/MinimaxH3-Dasiwa-15秒模板-二维手绘动画：云海邮局-高质量768P_2094076358363271169.json, 视频生成/文生视频/MinimaxH3-Dasiwa-15秒模板-水墨动画：笛声引鹤-高质量768P_2094076379938775042.json, 视频生成/文生视频/MinimaxH3-双bf16满血版-4步加速lora 1.0+sage_2088155343741345793.json, 视频生成/文生视频/MinimaxH3-双bf16满血版-8步加速lora 1.0+sage_2088154982188150785.json, 视频生成/文生视频/MinimaxH3-双bf16满血版-sage无损加速_2088106281772085250.json, 视频生成/文生视频/真实打斗！Minimax H3-B25-49-高质量768P打斗lora_2095797656957317122.json, 视频生成/文生视频/真实打斗！Minimax H3-BF16-高质量768P打斗lora_2095797668554559489.json, 视频生成/文生视频/真实打斗！Minimax H3-Dasiwa-高质量768P打斗lora_2095797686652989441.json, 视频生成/文生视频/真实打斗！多参考Minimax H3-B25-49-高质量768P打斗lora_2095797719204978690.json, 视频生成/文生视频/真实打斗！多参考Minimax H3-BF16-高质量768P打斗lora_2095797730273751042.json, 视频生成/文生视频/真实打斗！多参考Minimax H3-Dasiwa-高质量768P打斗lora_2095797701941223425.json]
+members: [视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3参考生视频加速版v1_2092793444803629057.json, 视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3图生视频加速版v1_2092875854232768514.json, 视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json, 视频生成/图生视频/（音频驱动-10Eros-Max Ref2v）MiniMax H3数字人加速版V1_2090767412844126209.json, 视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json, 视频生成/图生视频/（音频驱动-Remix V1）MiniMax H3数字人加速版V1_2092542937363214338.json, 视频生成/图生视频/（音频驱动-zs05）MiniMax H3数字人加速版V1_2092541557630136322.json, 视频生成/图生视频/（音频驱动-音乐MV-数字人）MiniMax H3加速_2105347148022894593.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人_2100778688936759297.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099766391334330369.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099827196100694018.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2099845520981323778.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版V1_2104909753217536002.json, 视频生成/图生视频/（音频驱动-音乐MV）MiniMax H3数字人加速版_2099850720488017921.json, 视频生成/图生视频/（音频驱动FL2VA-lightx2v1.1）MiniMax H3数字人加速版V1_2090641147021578241.json, 视频生成/图生视频/（音频驱动FL2VA）MiniMax H3去油版数字人_口播_唱歌_MV加速版V1_2087749521282523138.json, 视频生成/图生视频/（音频驱动Ref2VA）MiniMax H3去油版数字人_口播_唱歌_MV加速版V1_2087905646967611393.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2090051691495387138.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2090398375496740865.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2090415531143815169.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2090751397187899394.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2090786652452114433.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2091117783701606401.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2091122782678634498.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2091470314550153217.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2091502384995454978.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2096907056505778178.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2096939747016011778.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2097271288405516290.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2097282835903242241.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2097649190296969218.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2097657325287989249.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2097988267747663873.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2098023275136905217.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2098372297764728834.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2098389914521006082.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2098727938706460674.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2098739687937630210.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2099058353333948417.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2099071136809177089.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2099441616850345985.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2099466979831803906.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2099806683903127553.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2099836589621989377.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2100166635939254274.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2100192069653458946.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2100526850106806273.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2100566263155220482.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2100887969312894977.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2100923253601693698.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2101235324398690306.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2101293361037660161.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2101611435796291586.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2101622309235814402.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2101975885195857922.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2102022597549584385.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2102345694022557698.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2102380726728609794.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2102714689900859393.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2102726891101835266.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2103059963504578562.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2103100492082663425.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2103426865078824962.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2103457779703959553.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2103792976232275970.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2103841674911899649.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2104144161615204354.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 短剧漫剧 创意视频文生视频（600步新加速LORA）_2104192508875075586.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 跳舞视频 短剧漫剧 创意视频文生视频_2091859665985560578.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 跳舞视频 短剧漫剧 创意视频文生视频_2091866276913307649.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 跳舞视频 短剧漫剧 创意视频文生视频_2092566935165825025.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 跳舞视频 短剧漫剧 创意视频文生视频_2092572711972331521.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 跳舞视频 短剧漫剧 创意视频文生视频_2092954364502700034.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版 跳舞视频 短剧漫剧 创意视频文生视频_2092958977222074370.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2093280484485844993.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2093303720284082177.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2093634986271399937.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2093659168677916674.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2094027843847147522.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2094039735932112897.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2094738728802668545.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2094753251009847298.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2095118294343839746.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2095127853988925442.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2095476821532962817.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2095822727830663170.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2095833522949943297.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2096190416847724546.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2096207045056884738.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2096543338907398146.json, 视频生成/文生视频/(8步高质量极速)Minimax H3开源版文生视频 跳舞视频 短剧漫剧 创意视频_2096573436515676162.json, 视频生成/文生视频/(8步高质量极速)Minimax_H3开源版_短剧漫剧_创意视频文生视频（600步新加速LORA）_2100562439568969730.json, 视频生成/文生视频/(Lightx2v正式版-4步极速)Minimax双时钟-文生视频V2_2087782751431909378.json, 视频生成/文生视频/(Lightx2v正式版-8步去油)Minimax双时钟-文生视频V2_2087733229104226305.json, 视频生成/文生视频/(Lightx2v正式版-8步去油)Minimax双时钟-文生视频V2_2087733258703429633.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088215933931311105.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088238913705046018.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088952684803084290.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2088980791148765186.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax H3开源版 文生视频（600步新加速LORA）_2090042820953464834.json, 视频生成/文生视频/(双时钟-8步高质量极速)Minimax文生视频V2（600步新加速LORA）_2087936438015975426.json, 视频生成/文生视频/(最佳动态)MiniMax H3参考生视频（dasiwa的模型和加速lora）_2093873787371606017.json, 视频生成/文生视频/(最佳动态-新版战斗V2)MiniMax H3文生视频_2095552521501757442.json, 视频生成/文生视频/(服装换衣省钱预览版)MiniMax H3双采参考生视频_2097920668905074689.json, 视频生成/文生视频/0905动漫短剧文武双修均衡版（MiniMax H3双采参考生视频）_2096049183974318082.json, 视频生成/文生视频/10Eros Beta5 + FL2VA_Ref2VA小脸去油二采精修流_2101605881900261377.json, 视频生成/文生视频/MINIMAX-H3全能参考-高配文戏版_2095291262697033729.json, 视频生成/文生视频/MiniMax H3 全能参考生视频｜最佳动态V3极速高清版_2098184624500461569.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-高配版_2098584847945125889.json, 视频生成/文生视频/【二采-高配版】MinMaxh3日常短剧专用_2095187242611466242.json, 视频生成/文生视频/去油-文武全能图音参考(10eros beta5版)MiniMax H3双采生视频_2100432792248213505.json, 视频生成/文生视频/文武双全全能(10eros beta5版)MiniMax H3双采多参考生视频_2100271114697142273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet
 
-> 由 `engine/knowledge_consolidation` 从 48 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 INT8 SolAttn 极速版_2093143560123150337.json、视频生成/文生视频/MiniMax_H3_BF16_Turbo_Sage_加速版_2089253764594229249.json、视频生成/文生视频/Minimax H3 声音乐器-采样器调度器-BF16剪枝版-无加速_2093639353842098177.json、视频生成/文生视频/Minimax H3 高画质-采样器调度器-BF16剪枝版-无加速_2093639342676856833.json、视频生成/文生视频/Minimax H3 高速运动-采样器调度器-BF16剪枝版-无加速_2093639364529184769.json…）
+> 由 `engine/knowledge_consolidation` 从 112 个 workflow 归纳得出（视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3参考生视频加速版v1_2092793444803629057.json、视频生成/图生视频/（Pai-8步T8版开源版）MiniMax H3图生视频加速版v1_2092875854232768514.json、视频生成/图生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092497551713980417.json、视频生成/图生视频/（音频驱动-10Eros-Max Ref2v）MiniMax H3数字人加速版V1_2090767412844126209.json、视频生成/图生视频/（音频驱动-Dasiwa V1）MiniMax H3数字人加速版V1_2092541511882854402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：48
+- **样本数**：112
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 48 个 workflow 都包含：
+全部 112 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CR Prompt Text`
 - `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadImage`
 - `MiniMaxH3AVDecodeT8`
 - `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
@@ -41,16 +40,36 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 47/48 个有
-- `LayerUtility: PurgeVRAM V2` —— 41/48 个有
-- `LoraLoaderModelOnly` —— 27/48 个有
-- `LTXVConcatAVLatent` —— 2/48 个有
-- `LTXVSeparateAVLatent` —— 2/48 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/48 个有
-- `ImpactSwitch` —— 1/48 个有
-- `LoadAudio` —— 1/48 个有
-- `MiniMaxH3FusedModulation` —— 1/48 个有
-- `MiniMaxH3MemoryEfficientSolAttentionPatch` —— 1/48 个有
+- `LoraLoaderBypassModelOnly` —— 110/112 个有
+- `MiniMaxH3DualClockSamplerT8` —— 110/112 个有
+- `LoadImage` —— 28/112 个有
+- `SolAttnMiniMax` —— 24/112 个有
+- `LoadAudio` —— 21/112 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 11/112 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 11/112 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 11/112 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 11/112 个有
+- `GetNode` —— 7/112 个有
+- `LoraLoaderModelOnly` —— 7/112 个有
+- `SetNode` —— 7/112 个有
+- `孤海注释` —— 6/112 个有
+- `ConcatTextOfUtils` —— 4/112 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/112 个有
+- `PreviewImage` —— 3/112 个有
+- `忽略多组孤海` —— 3/112 个有
+- `AudioCrop` —— 2/112 个有
+- `Float` —— 2/112 个有
+- `Int` —— 2/112 个有
+- `MiniMaxH3PDD8StepSetupT8Advanced` —— 2/112 个有
+- `easy anythingIndexSwitch` —— 2/112 个有
+- `CreateVideo` —— 1/112 个有
+- `EmptyImage` —— 1/112 个有
+- `GetVideoComponents` —— 1/112 个有
+- `LoadVideo` —— 1/112 个有
+- `SaveVideo` —— 1/112 个有
+- `SaveVideoNode` —— 1/112 个有
+- `VHS_LoadVideo` —— 1/112 个有
+- `Video Slice` —— 1/112 个有
 
 ## 典型参数
 

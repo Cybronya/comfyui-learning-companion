@@ -1,38 +1,33 @@
 ---
 name: unknown_workflow_generic_972
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.727
-common_nodes: [LoadAudio, PrimitiveBoolean, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, TranscribeSrt, VHS_LoadVideo, easy boolean, easy ifElse, easy saveText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [RH_SeedreamV45TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2071425658730930178.json, 音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2075846413833035777.json]
+members: [图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json, 图片生成/文生图/2031456151346356226.json, 图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_972
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2071425658730930178.json、音频生成/音频生成/Qwen3-ASR-SRT字幕生成_2075846413833035777.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json、图片生成/文生图/2031456151346356226.json、图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveBoolean`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `TranscribeSrt`
-- `VHS_LoadVideo`
-- `easy boolean`
-- `easy ifElse`
-- `easy saveText`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `RH_SeedreamV45TextToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

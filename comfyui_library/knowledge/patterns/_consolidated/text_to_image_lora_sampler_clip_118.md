@@ -1,93 +1,83 @@
 ---
 name: text_to_image_lora_sampler_clip_118
 type: Text To Image
-frequency: 9
-level: moderate
-coverage: 0.869778
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoraLoaderModelOnly, ResizeImageMaskNode, ResolutionSelector, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足]
+frequency: 12
+level: strong
+coverage: 0.885083
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ProcessString, SaveImage, Seed (rgthree), Text Concatenate, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Krea2+SeedVR2_2100855495958548481.json, 图片生成/文生图/Krea2巨构+SeedVR2放大_2093260084464934914.json, 图片生成/文生图/Krea2巨构+SeedVR2放大_2100477000350781442.json, 图片生成/文生图/krea2随手拍写实风文生图+官方版SeedVR放大_2083394345272692737.json, 图片生成/文生图/krea2随手拍写实风文生图+官方版SeedVR放大_2095744406384103426.json, 图片生成/文生图/南音创作，大尺☠️-只有你想不到的_2092714226971406337.json, 图片生成/文生图/巨构图+SeedVR2放大｜Krea2文生图高清处理_2093743192297533442.json, 图片生成/文生图/巨物场景文生图｜Krea2生成+SeedVR2高清放大_2093417313402970114.json, 图片生成/文生图/文生图超写实krea2+SeedVR放大_2089957625613082626.json]
+members: [图片生成/图生图/Z-image主体一致性反推生分镜_2008852899228557314.json, 图片生成/图生图/快速洗图版v22_1999381371757920257.json, 图片生成/图生图/（大网渔网袜量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1995173381853130754.json, 图片生成/图生图/（小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999760613897367553.json, 图片生成/图生图/（贞贞-量贩版）Z-Image-Turbo D-OPSD美少女文生图V1_2056788439630176258.json, 图片生成/图生图/🏇超快速美女孵蛋器超然洗图版V1🏇_1995386236758110209.json, 图片生成/文生图/Red Z-Image Vs Z-image Turbo对比_1998113383687839745.json, 图片生成/文生图/Z-Image-Turbo  D-OPSD美少女文生图_2058718122760302593.json, 图片生成/文生图/Z-Image-Turbo D-OPSD美少女文生图V1_2058219333456842754.json, 图片生成/文生图/Z-image 超快速美女孵蛋器超然升级版V1_1995339133893718018.json, 图片生成/文生图/🏇超快速美女孵蛋器超然升级版V1🏇_1995296859344318466.json, 图片生成/文生图/🏇超快速美女孵蛋器超然升级版【本地版】🏇_1995302605654044674.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_118
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Krea2+SeedVR2_2100855495958548481.json、图片生成/文生图/Krea2巨构+SeedVR2放大_2093260084464934914.json、图片生成/文生图/Krea2巨构+SeedVR2放大_2100477000350781442.json、图片生成/文生图/krea2随手拍写实风文生图+官方版SeedVR放大_2083394345272692737.json、图片生成/文生图/krea2随手拍写实风文生图+官方版SeedVR放大_2095744406384103426.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Z-image主体一致性反推生分镜_2008852899228557314.json、图片生成/图生图/快速洗图版v22_1999381371757920257.json、图片生成/图生图/（大网渔网袜量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1995173381853130754.json、图片生成/图生图/（小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999760613897367553.json、图片生成/图生图/（贞贞-量贩版）Z-Image-Turbo D-OPSD美少女文生图V1_2056788439630176258.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `CR Text`
+- `CR Text Replace`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `JDCN_StringToList`
 - `KSampler`
+- `LayerUtility: PurgeVRAM`
 - `LoraLoaderModelOnly`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
+- `ProcessString`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
+- `Seed (rgthree)`
+- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 5/9 个有
-- `ConditioningKrea2Rebalance` —— 4/9 个有
-- `GetNode` —— 4/9 个有
-- `SetNode` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `Any Switch (rgthree)` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
-- `LoadImage` —— 3/9 个有
-- `JjkText` —— 2/9 个有
-- `solarL_SaveImagesToZip` —— 2/9 个有
-- `孤海注释` —— 2/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
-- `FlashVSRNode` —— 1/9 个有
-- `GIMMVFI_interpolate` —— 1/9 个有
-- `VHS_VideoCombine` —— 1/9 个有
+- `RH_LLMAPI_Pro_Node` —— 10/12 个有
+- `easy showAnything` —— 7/12 个有
+- `ImpactInt` —— 6/12 个有
+- `LoadImage` —— 4/12 个有
+- `Note Plus (mtb)` —— 4/12 个有
+- `easy anythingIndexSwitch` —— 3/12 个有
+- `Qwen3VL_Chat` —— 2/12 个有
+- `AddLabel` —— 1/12 个有
+- `CheckpointLoaderSimple` —— 1/12 个有
+- `ImageConcatMulti` —— 1/12 个有
+- `PreviewImage` —— 1/12 个有
+- `图像缩放V2_孤海` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 80 - 512 | 9 | 57% |
-| 高度 | 512 | 80 - 512 | 9 | 57% |
-| 采样步数 | 8 | 4 - 10 | 9 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 9 | 18% |
-| 采样算法 | euler | - | 9 | 78% |
-| 调度器 | beta | - | 9 | 56% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 1080 | 1080 - 1080 | 12 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 12 | 100% |
+| 采样步数 | 10 | 10 - 10 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler_ancestral | - | 12 | 50% |
+| 调度器 | sgm_uniform | - | 12 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 15/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 80 - 512，9 个样本
-- 高度 中位数 512，观测区间 80 - 512，9 个样本
-- 采样步数 中位数 8，观测区间 4 - 10，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，9 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 euler，9 个样本，一致性 78%
-- 调度器 最常用 beta，9 个样本，一致性 56%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（15/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，观测区间 1080 - 1080，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，12 个样本，一致性 50%
+- 调度器 最常用 sgm_uniform，12 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

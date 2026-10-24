@@ -1,72 +1,86 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_4
 type: Unknown Workflow
-frequency: 6
+frequency: 12
 level: strong
-coverage: 0.899667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageBlend, ImageScale, ImageScaleBy, ImageUpscaleWithModel, KSamplerAdvanced, PreviewImage, ResolutionSelector, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader]
+coverage: 0.893083
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [图片生成/文生图/Krea2_文生图直出4K高清工作流_2086439888332873729.json, 图片生成/文生图/Krea2_文生图直出4K高清工作流_2087386381529210881.json, 图片生成/文生图/krea2-UE5法相_2095537231166529537.json, 图片生成/文生图/krea2-中秋_2101322859917438977.json, 图片生成/文生图/敦煌Krea2_2098303929271545858.json, 数字人/数字人/krea2-UE5角色定妆照_2090840952448573441.json]
+members: [图片生成/图生图/FLUX.  高清.修复.放大v5_1897313990823858178.json, 图片生成/图生图/FLUX超级高清放大修复_1911254476370706434.json, 图片生成/图生图/Flux-tile产品放大_1907653000217653250.json, 图片生成/图生图/Flux-图片降噪_1985551366481498113.json, 图片生成/图生图/flux图片高清放大_1915659288834932737.json, 图片生成/图生图/flux高清放大+Lora_1952609311073742849.json, 图片生成/图生图/flux高清放大-在线生图4K-标准版 (1)_1929345768141000706.json, 图片生成/图生图/flux高清放大-在线生图_1974848985930272769.json, 图片生成/图生图/flux高清放大-在线生图_1982986890833997825.json, 图片生成/图生图/flux高清放大-细节加强_2016726353726414850.json, 图片生成/图生图/「全网最强升级版」flux无损放大放大+修复_1882767903618486274.json, 图片生成/图生图/【人物一致多角度】FLUX完美三视图不同视角IP角色创建_1916057498137333761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Krea2_文生图直出4K高清工作流_2086439888332873729.json、图片生成/文生图/Krea2_文生图直出4K高清工作流_2087386381529210881.json、图片生成/文生图/krea2-UE5法相_2095537231166529537.json、图片生成/文生图/krea2-中秋_2101322859917438977.json、图片生成/文生图/敦煌Krea2_2098303929271545858.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX.  高清.修复.放大v5_1897313990823858178.json、图片生成/图生图/FLUX超级高清放大修复_1911254476370706434.json、图片生成/图生图/Flux-tile产品放大_1907653000217653250.json、图片生成/图生图/Flux-图片降噪_1985551366481498113.json、图片生成/图生图/flux图片高清放大_1915659288834932737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `ImageBlend`
-- `ImageScale`
-- `ImageScaleBy`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `ImageListToImageBatch`
+- `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
-- `KSamplerAdvanced`
-- `PreviewImage`
-- `ResolutionSelector`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `UNETLoader`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UpscaleModelLoader`
-- `VAEDecode`
 - `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `ConditioningZeroOut` —— 4/6 个有
-- `easy mathInt` —— 4/6 个有
-- `Lora Loader Stack (rgthree)` —— 3/6 个有
-- `PrimitiveStringMultiline` —— 3/6 个有
-- `llama_cpp_instruct_adv` —— 3/6 个有
-- `llama_cpp_model_loader` —— 3/6 个有
-- `ConditioningKrea2Rebalance` —— 1/6 个有
-- `ModelSamplingAuraFlow` —— 1/6 个有
-- `PreviewAny` —— 1/6 个有
-- `Seed (rgthree)` —— 1/6 个有
-- `easy promptList` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `LoraLoader` —— 11/12 个有
+- `UNETLoader` —— 11/12 个有
+- `ImageResizeKJ` —— 9/12 个有
+- `Joy_caption_two` —— 5/12 个有
+- `Joy_caption_two_load` —— 5/12 个有
+- `PreviewImage` —— 4/12 个有
+- `StringFunction|pysssss` —— 3/12 个有
+- `CLIPTextEncodeFlux` —— 2/12 个有
+- `ConditioningCombine` —— 2/12 个有
+- `ImageResize+` —— 2/12 个有
+- `Joy_caption` —— 2/12 个有
+- `Joy_caption_load` —— 2/12 个有
+- `easy showAnything` —— 2/12 个有
+- `Anything Everywhere3` —— 1/12 个有
+- `ControlNetApplySD3` —— 1/12 个有
+- `ControlNetLoader` —— 1/12 个有
+- `DWPreprocessor` —— 1/12 个有
+- `EmptySD3LatentImage` —— 1/12 个有
+- `Fast Groups Muter (rgthree)` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `LoraLoaderModelOnly` —— 1/12 个有
+- `ModelSamplingFlux` —— 1/12 个有
+- `Simple String` —— 1/12 个有
+- `UltimateSDUpscale` —— 1/12 个有
+- `VAEDecode` —— 1/12 个有
+- `workflow/model` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 6 | 100% |
-| 采样步数 | fixed | - | 6 | 67% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 50% |
-| 重绘幅度 | simple | - | 6 | 100% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 11 | 94% |
+| LoRA 文本强度 | 1 | 1 - 1 | 11 | 100% |
+| ControlNet 权重 | 0.75 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -74,10 +88,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，6 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 fixed，6 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 50%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，11 个样本，取值集中（一致性 94%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）

@@ -1,81 +1,70 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_2
 type: Unknown Workflow
-frequency: 19
-level: strong
-coverage: 0.822895
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
+frequency: 16
+level: moderate
+coverage: 0.956375
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json, 视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json, 视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json, 视频生成/文生视频/LTX2.5_I2V_T2V_2087347078044405762.json, 视频生成/文生视频/LTX2.5图生视频（默认工作流）_2088281770851651585.json, 视频生成/文生视频/LTX2.5文生视频-自动扩写提示词-高质量直出1K_2087739530110660610.json, 视频生成/文生视频/LTX2.5文生视频-高质量直出1K_2087559289287303170.json, 视频生成/文生视频/LTX2.5文生视频2608_2095392989672722433.json, 视频生成/文生视频/LTX2.5文生视频_2087332158187859970.json, 视频生成/文生视频/LTX2.5文生视频_2087393833666568193.json, 视频生成/文生视频/LTX2.5文生视频_2087526329527922689.json, 视频生成/文生视频/LTX2.5文生视频_2087539582974906369.json, 视频生成/文生视频/LTX2.5文生视频减油版v1_2087405116231081985.json, 视频生成/文生视频/LTX2.5文生视频极速版_2087431365884207105.json, 视频生成/文生视频/LTX2.5文生视频极速版_2087443856160804866.json, 视频生成/文生视频/LTX2.5文生视频（原生支持4K高清）_2087436136628187138.json, 视频生成/文生视频/LTX2.5文生视频（速度快、像素高）_2087530677137928194.json, 视频生成/文生视频/Ltx2.5 图_文生视频-双采高清-蒸馏加速_2087683911039143937.json, 视频生成/文生视频/阿清的LTX2.5文-图生视频_2090758573637849089.json]
+members: [视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json, 视频生成/图生视频/LTX2.3--导演运镜--自定义分镜_2055900601728421889.json, 视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2056974345699942402.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2059911251098165250.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-大话西游版_2059273921228263425.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-歌曲《再见》_2060383965181202433.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-电商带货_2057720205580783618.json, 视频生成/图生视频/LTX2.3导演AI版的剪映版全能控制台-运镜分镜一网打进_2055283011867947010.json, 视频生成/图生视频/LTX2.3导演分镜工作流（支持多图+多个音频）自由编辑_2055157039688634370.json, 视频生成/图生视频/LTX2.3导演台工作流、短剧多分镜编辑合并、多人对口型 、数字人唱歌_2057726231881281537.json, 视频生成/图生视频/LTX2.3导演工作流【运镜&分镜编辑】_2059858506483847169.json, 视频生成/图生视频/LTX2.3导演工作流自定义分镜更随心_2057286566376202241.json, 视频生成/图生视频/LTX2.3导演工作流自定义分镜随心所欲_2058019383724830722.json, 视频生成/图生视频/LTX导演台工作流_2055076989958139906.json, 视频生成/图生视频/完美掌控LTX2.3-LTX Director-导演版分镜工作流-更强的控制性_2067766430577287169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/文生视频/LTX2.5-文生视频_2087529409245958145.json、视频生成/文生视频/LTX2.5-文生视频超快工作流_2087433108160344066.json、视频生成/文生视频/LTX2.5-经典文生视频_2087564635775004674.json、视频生成/文生视频/LTX2.5_I2V_T2V_2087347078044405762.json、视频生成/文生视频/LTX2.5图生视频（默认工作流）_2088281770851651585.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json、视频生成/图生视频/LTX2.3--导演运镜--自定义分镜_2055900601728421889.json、视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2056974345699942402.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-华强买瓜版_2059911251098165250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
+全部 16 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
+- `LTXDirector`
+- `LTXDirectorGuide`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVDualCFGGuider`
-- `LTXVEmptyLatentAudio`
+- `LTXVCropGuides`
 - `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `ManualSigmas`
-- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoader`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 17/19 个有
-- `CreateVideo` —— 15/19 个有
-- `SaveVideo` —— 15/19 个有
-- `PrimitiveBoolean` —— 14/19 个有
-- `PreviewAny` —— 13/19 个有
-- `TextGenerateLTX2Prompt` —— 13/19 个有
-- `ComfySwitchNode` —— 12/19 个有
-- `VHS_VideoCombine` —— 5/19 个有
-- `LTXVImgToVideoInplace` —— 4/19 个有
-- `LTXVPreprocess` —— 4/19 个有
-- `LoadImage` —— 4/19 个有
-- `ResizeImageMaskNode` —— 4/19 个有
-- `LoraLoaderModelOnly` —— 3/19 个有
-- `RH_LLMAPI_Pro_Node` —— 3/19 个有
-- `easy showAnything` —— 3/19 个有
-- `CR Text` —— 2/19 个有
-- `CR Prompt Text` —— 1/19 个有
-- `FlashVSRNode` —— 1/19 个有
-- `MuyeTextEditOutput` —— 1/19 个有
-- `Note Plus (mtb)` —— 1/19 个有
-- `PurgeVRAM_UTK` —— 1/19 个有
-- `ShellAgentPluginOutputText` —— 1/19 个有
-- `孤海注释` —— 1/19 个有
+- `CreateVideo` —— 15/16 个有
+- `LTX2SamplingPreviewOverride` —— 15/16 个有
+- `LoraLoaderModelOnly` —— 15/16 个有
+- `VAEDecodeTiled` —— 15/16 个有
+- `CheckpointLoaderSimple` —— 14/16 个有
+- `LTXVAudioVAEDecode` —— 13/16 个有
+- `SaveVideo` —— 9/16 个有
+- `VHS_VideoCombine` —— 8/16 个有
+- `GetVideoComponents` —— 6/16 个有
+- `PrimitiveFloat` —— 4/16 个有
+- `SimpleMath+` —— 4/16 个有
+- `ModelPreviewOverrideKJ` —— 2/16 个有
+- `孤海注释` —— 2/16 个有
+- `DiffusionModelLoaderKJ` —— 1/16 个有
+- `ImpactSwitch` —— 1/16 个有
+- `Int` —— 1/16 个有
+- `Label (rgthree)` —— 1/16 个有
+- `LoadImage` —— 1/16 个有
+- `UNETLoader` —— 1/16 个有
+- `VAEDecode` —— 1/16 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 19 | 100% |
-| 高度 | 25 | 25 - 25 | 19 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,5 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，19 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，19 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

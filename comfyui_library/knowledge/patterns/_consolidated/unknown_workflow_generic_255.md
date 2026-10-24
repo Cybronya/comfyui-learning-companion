@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_255
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.58
-common_nodes: [CR Prompt Text, SaveImage]
+coverage: 0.865556
+common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/文生图/0.1一张4K图全能图片G-image2文生图（RH版）_2054505652940230658.json, 图片生成/文生图/Lora数据准备-文生图-国风汉服远景壁纸-1K-16比9-全能图片G2_2062757014643761153.json, 图片生成/文生图/全能图片2.0-文生图_2027611465435320321.json, 图片生成/文生图/文生图-0.1元低价版-全能图片G2-10比例选择-1K、2K_2069140921802907649.json, 图片生成/文生图/（RH版）全能图片2极速版文生图V1_2027097516868636673.json]
+members: [音频生成/音频生成/IndexTTS2-AudioEmo_Multi_Clone_2068685833959469057.json, 音频生成/音频生成/IndexTTS2-AudioEmo_Single_Clone_2068687257116168194.json, 音频生成/音频生成/IndexTTS2-VectorEmo_Multi_Clone_2068687860949143553.json, 音频生成/音频生成/IndexTTS2-VectorEmo_Single_Clone_2068688742629601281.json, 音频生成/音频生成/indextts2基础+情感_2014670620402913282.json, 音频生成/音频生成/indextts2声音模仿+语气情感设置_1981744577625374722.json, 音频生成/音频生成/indextts多人参考+情感_2002383614916608001.json, 音频生成/音频生成/indextts多人参考+情感_2014670668457054209.json, 音频生成/音频生成/indextts多人声音参考+情感_1992213630209028098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_255
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/0.1一张4K图全能图片G-image2文生图（RH版）_2054505652940230658.json、图片生成/文生图/Lora数据准备-文生图-国风汉服远景壁纸-1K-16比9-全能图片G2_2062757014643761153.json、图片生成/文生图/全能图片2.0-文生图_2027611465435320321.json、图片生成/文生图/文生图-0.1元低价版-全能图片G2-10比例选择-1K、2K_2069140921802907649.json、图片生成/文生图/（RH版）全能图片2极速版文生图V1_2027097516868636673.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2-AudioEmo_Multi_Clone_2068685833959469057.json、音频生成/音频生成/IndexTTS2-AudioEmo_Single_Clone_2068687257116168194.json、音频生成/音频生成/IndexTTS2-VectorEmo_Multi_Clone_2068687860949143553.json、音频生成/音频生成/IndexTTS2-VectorEmo_Single_Clone_2068688742629601281.json、音频生成/音频生成/indextts2基础+情感_2014670620402913282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/5 个有
-- `RH_RhartImageG2TextToImage` —— 3/5 个有
-- `PreviewAny` —— 2/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `SaveAudioMP3` —— 7/9 个有
+- `easy indexTTSEmotionAudio` —— 7/9 个有
+- `easy indexTTSEmotionVector` —— 7/9 个有
+- `easy indexTTSEmotionMerge` —— 6/9 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `PreviewAudio` —— 3/9 个有
+- `SaveAudio` —— 3/9 个有
 
 ## 典型参数
 

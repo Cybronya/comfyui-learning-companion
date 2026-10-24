@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_107
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.648143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadVideo, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.858429
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/全能参考工作流｜H3文生图生视频多模态生成_2091594532889649153.json, 视频生成/文生视频/全能参考漫剧制作｜H3文生图生视频生视频_2091766009513467906.json, 视频生成/文生视频/全能参考漫剧工作流｜Minimax H3文生图生视频_2090879047906717697.json, 视频生成/文生视频/全能参考漫剧工作流｜Minimax H3文生图生视频_2092393696179343362.json, 视频生成/文生视频/完美优化版｜MinimaxH3三模视频一键生成工作流_2094801305775726593.json, 视频生成/文生视频/文生视频视频生视频全搞定｜MinimaxH3极简多合一优化版工作流_2089009963904622593.json, 视频生成/文生视频/极简多合一｜Minimax H3全能参考文生图生视频工作流_2089473253059416065.json]
+members: [视频生成/图生视频/加速放大Minimax参考生视频图生视频高清采样工作流_2088400575028355073.json, 视频生成/图生视频/参考生视频加速放大｜Minimax图生视频工作流_2088379811487113218.json, 视频生成/图生视频/双采加速图生视频｜MINIMAX-H3视频生成工作流_2088326770620715010.json, 视频生成/图生视频/双采加速工作流MINIMAX H3图生视频风扇变装模板_2088358447304761345.json, 视频生成/图生视频/反推提示词极速二次采样高质量图文生视频｜MiniMax_H3视频超分写实图生视频_2088172964058587138.json, 视频生成/图生视频/反推提示词极速二采高质量｜MiniMax H3文生视频写实_2097527914727305218.json, 视频生成/图生视频/反推提示词极速二采｜MiniMax_H3写实图文生视频超分_2091790249075761153.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_107
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/全能参考工作流｜H3文生图生视频多模态生成_2091594532889649153.json、视频生成/文生视频/全能参考漫剧制作｜H3文生图生视频生视频_2091766009513467906.json、视频生成/文生视频/全能参考漫剧工作流｜Minimax H3文生图生视频_2090879047906717697.json、视频生成/文生视频/全能参考漫剧工作流｜Minimax H3文生图生视频_2092393696179343362.json、视频生成/文生视频/完美优化版｜MinimaxH3三模视频一键生成工作流_2094801305775726593.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/加速放大Minimax参考生视频图生视频高清采样工作流_2088400575028355073.json、视频生成/图生视频/参考生视频加速放大｜Minimax图生视频工作流_2088379811487113218.json、视频生成/图生视频/双采加速图生视频｜MINIMAX-H3视频生成工作流_2088326770620715010.json、视频生成/图生视频/双采加速工作流MINIMAX H3图生视频风扇变装模板_2088358447304761345.json、视频生成/图生视频/反推提示词极速二次采样高质量图文生视频｜MiniMax_H3视频超分写实图生视频_2088172964058587138.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
@@ -27,50 +27,53 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoadAudio`
-- `LoadVideo`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PT_H3ConcatAVLatent`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
 - `Fast Groups Bypasser (rgthree)` —— 5/7 个有
 - `ImageResizeKJv2` —— 5/7 个有
-- `LoadImage` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `VAEEncode` —— 5/7 个有
-- `VAEEncodeAudio` —— 5/7 个有
-- `MiniMaxH3SigmaShift` —— 4/7 个有
-- `ExtendIntermediateSigmas` —— 2/7 个有
-- `Float` —— 2/7 个有
-- `H3LatentUpscaleByJingchen573` —— 2/7 个有
-- `LTXVSeparateAVLatent` —— 2/7 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/7 个有
-- `PrimitiveFloat` —— 2/7 个有
-- `ShowText|pysssss` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `ModelAttentionBackend` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
+- `CR Text` —— 3/7 个有
+- `Dapao_LlamaCaption` —— 3/7 个有
+- `Dapao_LlamaCaptionOptions` —— 3/7 个有
+- `RegexReplace` —— 3/7 个有
+- `easy promptConcat` —— 3/7 个有
+- `easy showAnything` —— 3/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `CreateVideo` —— 2/7 个有
+- `ImpactConditionalBranch` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `LoadAudio` —— 2/7 个有
+- `MathExpression_UTK` —— 2/7 个有
+- `PrimitiveStringMultiline` —— 2/7 个有
+- `RIFE VFI` —— 2/7 个有
+- `ResizeShortestToNode` —— 2/7 个有
+- `VAEEncodeAudio` —— 2/7 个有
+- `VHS_LoadVideo` —— 2/7 个有
+- `easy clearCacheAll` —— 2/7 个有
+- `获取视频信息` —— 2/7 个有
 
 ## 典型参数
 

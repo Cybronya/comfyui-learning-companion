@@ -1,34 +1,32 @@
 ---
 name: image_to_image_sampler_clip_unet_8
 type: Image To Image
-frequency: 4
+frequency: 21
 level: strong
-coverage: 0.918
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, GetImageSizeAndCount, ImageStitch, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.897762
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [Text Multiline]
-members: [图片生成/文生图/1944383441200664578.json, 图片生成/文生图/1962350864377823234.json, 图片生成/文生图/1962546980700467202.json, 视频生成/图生视频/1994289242960576513.json]
+missing: []
+members: [图片生成/图生图/Kontext-三视图_1938913966724669442.json, 图片生成/图生图/Kontext-动漫人物转绘_1940651426446209025.json, 图片生成/图生图/Kontext-最强老照片修复_1972212168999497729.json, 图片生成/图生图/Kontext-老破照片修复_1972137847203557378.json, 图片生成/图生图/Kontext【一键3D转2D】欧卡风_1979193772133224449.json, 图片生成/图生图/Kontext一键人像高清美颜（添加lora）_1944545954299039745.json, 图片生成/图生图/Kontext人台模特衣服展示_1938854583487619073.json, 图片生成/图生图/Kontext老照片修复_2005923453268099074.json, 图片生成/图生图/PS1游戏风格_Kontext-DEV-LORA_1945035820526133249.json, 图片生成/图生图/Sketch手绘风格_Kontext-DEV-LORA_1948604464042246145.json, 图片生成/图生图/chibi转真实动漫_Kontext-LORA_1940818567921299457.json, 图片生成/图生图/minimalist极简主义风格_Kontext-dev_1943852515488071682.json, 图片生成/图生图/mosaic马赛克艺术风格_Kontext-dev_1943857459070926850.json, 图片生成/图生图/拍立得手持风格_Kontext-DEV-LORA_1947997286562430978.json, 图片生成/图生图/真实皮肤质感-画质增强自然光照_Kontext-DEV-LORA_1970697389088645122.json, 图片生成/图生图/真实皮肤质感-画质增强自然光照_Kontext-DEV-LORA_1986368699110223874.json, 图片生成/图生图/赛博波普风格_Kontext-dev_1944528687922335745.json, 图片生成/图生图/镜头缩放主体可见_Kontext-DEV-LORA_1948295169715109889.json, 图片生成/图生图/青铜雕塑_Kontext-DEV-LORA_1946225600609546241.json, 图片生成/图生图/高清扩图_Kontext-DEV-LORA_1944993249007427586.json, 图片生成/图生图/高清扩图_Kontext-DEV-LORA_1945760609537290241.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_8
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1944383441200664578.json、图片生成/文生图/1962350864377823234.json、图片生成/文生图/1962546980700467202.json、视频生成/图生视频/1994289242960576513.json）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/Kontext-三视图_1938913966724669442.json、图片生成/图生图/Kontext-动漫人物转绘_1940651426446209025.json、图片生成/图生图/Kontext-最强老照片修复_1972212168999497729.json、图片生成/图生图/Kontext-老破照片修复_1972137847203557378.json、图片生成/图生图/Kontext【一键3D转2D】欧卡风_1979193772133224449.json…）
 
 - **类型**：Image To Image
-- **样本数**：4
+- **样本数**：21
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 21 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `GetImageSizeAndCount`
-- `ImageStitch`
 - `KSampler`
 - `LoadImage`
 - `ReferenceLatent`
@@ -39,29 +37,36 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 3/4 个有
-- `ImageScaleDownToSize` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `Text Multiline` —— 3/4 个有
-- `AIO_Preprocessor` —— 2/4 个有
-- `EmptySD3LatentImage` —— 2/4 个有
-- `FluxKontextImageScale` —— 2/4 个有
-- `ImageCrop` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `LoadKontextPresets` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `FluxKontextImageScale` —— 20/21 个有
+- `ShowText|pysssss` —— 20/21 个有
+- `LoraLoaderModelOnly` —— 19/21 个有
+- `ImageStitch` —— 18/21 个有
+- `Text Multiline` —— 18/21 个有
+- `PreviewImage` —— 14/21 个有
+- `ImageConcatMulti` —— 13/21 个有
+- `TeaCache` —— 10/21 个有
+- `Image Padding` —— 8/21 个有
+- `EmptySD3LatentImage` —— 6/21 个有
+- `CR Simple Image Compare` —— 5/21 个有
+- `GetImageSizeAndCount` —— 5/21 个有
+- `ImageScaleDownToSize` —— 4/21 个有
+- `RH_Translator` —— 4/21 个有
+- `ImagePadKJ` —— 3/21 个有
+- `Image Comparer (rgthree)` —— 2/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/21 个有
+- `ImageConcanate` —— 1/21 个有
+- `LayerUtility: PurgeVRAM` —— 1/21 个有
+- `PMRF` —— 1/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 4 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 12 - 25 | 21 | 88% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 21 | 70% |
+| 采样算法 | euler | - | 21 | 100% |
+| 调度器 | simple | - | 21 | 95% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
 
 ## 常见问题
 
@@ -69,9 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，4 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Multiline
+- 采样步数 中位数 20，观测区间 12 - 25，21 个样本，取值集中（一致性 88%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，21 个样本
+- 采样算法 最常用 euler，21 个样本，一致性 100%
+- 调度器 最常用 simple，21 个样本，一致性 95%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）

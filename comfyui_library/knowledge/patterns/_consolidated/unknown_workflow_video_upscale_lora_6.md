@@ -1,64 +1,73 @@
 ---
 name: unknown_workflow_video_upscale_lora_6
 type: Unknown Workflow
-frequency: 7
+frequency: 5
 level: moderate
-coverage: 0.932143
-common_nodes: [ImageUpscaleWithModel, Int, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7276
+common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ClownsharKSampler_Beta, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleBy, ImageUpscaleWithModel, LayerFilter: AddGrain, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), PreviewImage, SaveImage, String, StringConcatenate, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/1937513955088580610.json, 视频生成/图生视频/1899332733573746689.json, 视频生成/图生视频/1899672945285877762.json, 视频生成/图生视频/1899288956402356225.json, 视频生成/图生视频/1900773672473501697.json, 视频生成/文生视频/1915649803047604225.json, 视频生成/文生视频/1916330952719798273.json]
+members: [图片生成/文生图/Wan2.2+真实摄影+8K高清_1994707638271217666.json, 图片生成/文生图/Wan2.2真实摄影_1994369665260457985.json, 图片生成/文生图/Wan2.2超真实摄影-Instareal+Lenovo【LORA】_1960338805641441282.json, 图片生成/文生图/商K-真实摄影Wan2.2_1982596622628593665.json, 视频生成/图生视频/Wan2.2真实摄影-Instareal+Lenovo_1958396927266209793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_6
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1937513955088580610.json、视频生成/图生视频/1899332733573746689.json、视频生成/图生视频/1899672945285877762.json、视频生成/图生视频/1899288956402356225.json、视频生成/图生视频/1900773672473501697.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Wan2.2+真实摄影+8K高清_1994707638271217666.json、图片生成/文生图/Wan2.2真实摄影_1994369665260457985.json、图片生成/文生图/Wan2.2超真实摄影-Instareal+Lenovo【LORA】_1960338805641441282.json、图片生成/文生图/商K-真实摄影Wan2.2_1982596622628593665.json、视频生成/图生视频/Wan2.2真实摄影-Instareal+Lenovo_1958396927266209793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Anything Everywhere`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR SDXL Aspect Ratio`
+- `ClownsharKSampler_Beta`
+- `EmptyHunyuanLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
-- `Int`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `LayerFilter: AddGrain`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Power Lora Loader (rgthree)`
+- `PreviewImage`
+- `SaveImage`
+- `String`
+- `StringConcatenate`
+- `UNETLoader`
 - `UpscaleModelLoader`
-- `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 5/7 个有
-- `LayerUtility: PurgeVRAM` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `Note Plus (mtb)` —— 3/7 个有
-- `WanVideoTeaCache` —— 3/7 个有
-- `FILM VFI` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `StringConstantMultiline` —— 2/7 个有
-- `Fast Bypasser (rgthree)` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `ReActorFaceSwap` —— 1/7 个有
-- `Seed Everywhere` —— 1/7 个有
-- `Textbox` —— 1/7 个有
+- `Text Multiline` —— 4/5 个有
+- `Int` —— 1/5 个有
+- `Joy_caption_two` —— 1/5 个有
+- `Joy_caption_two_load` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
+- `easy textSwitch` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | beta57 | - | 5 | 80% |
+| Prompt 约束强度(CFG) | 12 | 3 - 12 | 5 | 65% |
+| 采样算法 | 4 | -1 - 4 | 5 | 33% |
+| 调度器 | 1 | 0.3 - 1 | 5 | 67% |
+| 重绘幅度 | 3.5 | 2 - 3.5 | 5 | 81% |
 
 ## 常见问题
 
@@ -66,4 +75,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 beta57，5 个样本，一致性 80%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 3 - 12，5 个样本
+- 采样算法 中位数 4，观测区间 -1 - 4，5 个样本，取值分散，一致性仅 33%
+- 调度器 中位数 1，观测区间 0.3 - 1，5 个样本
+- 重绘幅度 中位数 3.5，观测区间 2 - 3.5，5 个样本，取值集中（一致性 81%）
+- 风险：重绘幅度 观测到 3.5，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

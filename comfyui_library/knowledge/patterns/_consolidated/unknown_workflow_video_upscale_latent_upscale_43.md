@@ -2,86 +2,92 @@
 name: unknown_workflow_video_upscale_latent_upscale_43
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.514889
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: strong
+coverage: 0.755556
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax H3 单图单音频动画工作流_2094569760485892098.json, 视频生成/图生视频/minimax 影视剧 多参工作流 高清 运动不模糊_2088628741688877058.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-1参考图_2109836744655986690.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-5参考图_2095824845220171777.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采2_2109836609779757057.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版_2100179119110705153.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版_2101865695603683329.json, 视频生成/图生视频/【MINIMAX-H3】最强打斗武戏双采工作流（自动提示词）_2096434163439198209.json, 视频生成/图生视频/兼具质量和速度的数字人_2089306091665580034.json]
+members: [视频生成/文生视频/LTX2.0 文生视频_2008733695988994049.json, 视频生成/文生视频/LTX2.3 图生视频+全节点注释_2066555321589526529.json, 视频生成/文生视频/LTX2.3文生_图生视频-无字幕_2036254878376398850.json, 视频生成/文生视频/LTX2.3文生视频+图生视频_2034150036669472770.json, 视频生成/文生视频/LTX2.3文生视频与图生视频-单_双人对话-唱歌_2033038147285688321.json, 视频生成/文生视频/LTX2.3文生视频与图生视频_2032329781139738626.json, 视频生成/文生视频/LTX2.3最强优化版_全自动-图生_ 文生视频_2049699781685063682.json, 视频生成/文生视频/LTX2.3高质量文生视频_2036689895091081218.json, 视频生成/文生视频/优化字幕版LTX2.3全自动图生_ 文生视频_2033796750112202753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_43
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/minimax H3 单图单音频动画工作流_2094569760485892098.json、视频生成/图生视频/minimax 影视剧 多参工作流 高清 运动不模糊_2088628741688877058.json、视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-1参考图_2109836744655986690.json、视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-5参考图_2095824845220171777.json、视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采2_2109836609779757057.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/LTX2.0 文生视频_2008733695988994049.json、视频生成/文生视频/LTX2.3 图生视频+全节点注释_2066555321589526529.json、视频生成/文生视频/LTX2.3文生_图生视频-无字幕_2036254878376398850.json、视频生成/文生视频/LTX2.3文生视频+图生视频_2034150036669472770.json、视频生成/文生视频/LTX2.3文生视频与图生视频-单_双人对话-唱歌_2033038147285688321.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ExtendIntermediateSigmas`
-- `GetNode`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `PreviewImage`
-- `PrimitiveFloat`
+- `ManualSigmas`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecodeAudio` —— 8/9 个有
-- `CR Prompt Text` —— 6/9 个有
-- `H3SigmaRefiner` —— 6/9 个有
-- `INTConstant` —— 6/9 个有
-- `忽略多组孤海` —— 6/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
-- `ManualSigmas` —— 3/9 个有
-- `MiniMaxH3AVDecodeT8` —— 3/9 个有
-- `MiniMaxH3SigmaShift` —— 3/9 个有
-- `Text Multiline` —— 3/9 个有
-- `EmptyImage` —— 2/9 个有
-- `ImpactSwitch` —— 2/9 个有
-- `LoraLoaderBypassModelOnly` —— 2/9 个有
-- `PreviewAny` —— 2/9 个有
-- `PrimitiveBoolean` —— 2/9 个有
-- `easy ab` —— 2/9 个有
-- `HeartMuLa_Transcribe` —— 1/9 个有
-- `MelBandRoFormerModelLoader` —— 1/9 个有
-- `MelBandRoFormerSampler` —— 1/9 个有
-- `MiniMaxH3HybridLoader` —— 1/9 个有
-- `RH_LLMAPI_Pro_Node` —— 1/9 个有
-- `SoundFlow_GetLength` —— 1/9 个有
-- `TTP_text_mix` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
-- `VRGDG_AudioCrop` —— 1/9 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/9 个有
+- `LTXVImgToVideoConditionOnly` —— 8/9 个有
+- `LTXVPreprocess` —— 8/9 个有
+- `CR Text` —— 7/9 个有
+- `INTConstant` —— 7/9 个有
+- `LTXVChunkFeedForward` —— 7/9 个有
+- `LTXVConditioning` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `ModelPatchTorchSettings` —— 7/9 个有
+- `PathchSageAttentionKJ` —— 7/9 个有
+- `PrimitiveBoolean` —— 7/9 个有
+- `CM_FloatToInt` —— 6/9 个有
+- `PrimitiveFloat` —— 5/9 个有
+- `RH_LLMAPI_Pro_Node` —— 5/9 个有
+- `GetNode` —— 4/9 个有
+- `MathExpression|pysssss` —— 4/9 个有
+- `SetNode` —— 4/9 个有
+- `Int` —— 3/9 个有
+- `PreviewAny` —— 3/9 个有
+- `PrimitiveInt` —— 3/9 个有
+- `SimpleMath+` —— 3/9 个有
+- `ShowText|pysssss` —— 2/9 个有
+- `Text` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `AILab_QwenVL` —— 1/9 个有
+- `Bjornulf_IfElse` —— 1/9 个有
+- `Bool` —— 1/9 个有
+- `DF_Int_to_Float` —— 1/9 个有
+- `FancyTimerNode` —— 1/9 个有
+- `Float` —— 1/9 个有
+- `ImageResizeKJv2` —— 1/9 个有
+- `JWDatetimeString` —— 1/9 个有
+- `Qwen2.5VL` —— 1/9 个有
+- `TextCombinerTwo` —— 1/9 个有
+- `Textbox` —— 1/9 个有
+- `intToFloat _O` —— 1/9 个有
+- `math_calculate` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 121 | 9 | 92% |
+| 高度 | 25 | 25 - 25 | 9 | 100% |
 
 ## 常见问题
 
@@ -89,4 +95,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 121，9 个样本，取值集中（一致性 92%）
+- 高度 中位数 25，观测区间 25 - 25，9 个样本，取值集中（一致性 100%）

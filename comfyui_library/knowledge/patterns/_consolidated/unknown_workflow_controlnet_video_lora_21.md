@@ -7,13 +7,13 @@ coverage: 0.43
 common_nodes: [Any Switch (rgthree), Audio Cut (mtb), AudioSeparation, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetNode, ImageFromBatch+, ImageResizeKJ, Int, LoadImage, MultiTalkModelLoader, MultiTalkSilentEmbeds, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, SimpleMath+, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1977065847162314754.json, 视频生成/图生视频/1971491546132594689.json, 视频生成/图生视频/1937131515212107778.json]
+members: [视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json, 视频生成/图生视频/🈚️对口型+动作迁移+表情+运镜_翻唱 Multitalk_InfiniteTalk-wan2.1_1971491546132594689.json, 视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_21
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1977065847162314754.json、视频生成/图生视频/1971491546132594689.json、视频生成/图生视频/1937131515212107778.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json、视频生成/图生视频/🈚️对口型+动作迁移+表情+运镜_翻唱 Multitalk_InfiniteTalk-wan2.1_1971491546132594689.json、视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

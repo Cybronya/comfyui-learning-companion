@@ -1,79 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_11
 type: Unknown Workflow
-frequency: 25
-level: strong
-coverage: 0.81156
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PreviewAny, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+frequency: 31
+level: moderate
+coverage: 0.925871
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/文生图/VividMuse Ideogram4 workflow_2064337095640047618.json, 图片生成/文生图/ideogram4-prompt-builder-fixed_2063828351755833345.json, 图片生成/文生图/ideogram4_2063180809263206402.json, 图片生成/文生图/ideogram4_t2i文生图+Ideogram 4 Prompt Builder KJ_2064175389697724418.json, 图片生成/文生图/ideogram4工作流_2062533863087362049.json, 图片生成/文生图/ideogram4工作流_2062836963702562817.json, 图片生成/文生图/ideogram4工作流带提示词_2063538368042070017.json, 图片生成/文生图/ideogram4工作流带提示词_2063769707022479362.json, 图片生成/文生图/ideogram4工作流带提示词_2063772030377480194.json, 图片生成/文生图/ideogram4工作流带提示词_2063804440662073345.json, 图片生成/文生图/ideogram4工作流带提示词_2063810498231095297.json, 图片生成/文生图/ideogram4工作流带提示词_2063812502248583169.json, 图片生成/文生图/ideogram4工作流带提示词_2063813597683343362.json, 图片生成/文生图/ideogram4工作流带提示词_2063815460910616578.json, 图片生成/文生图/ideogram4工作流带提示词_2063816739921686529.json, 图片生成/文生图/ideogram4工作流带提示词_2063817989841047554.json, 图片生成/文生图/ideogram4工作流带提示词_2064174515973869569.json, 图片生成/文生图/ideogram4工作流带提示词_2064177318440034306.json, 图片生成/文生图/ideogram4工作流文生图工作流_2062820277763010562.json, 图片生成/文生图/ideogram4工作流文生图工作流_2062872647050022914.json, 图片生成/文生图/文生图_ideogram4_t2i_2062724777403572226.json, 图片生成/文生图/文生图_ideogram4_t2i_2062789809533448193.json, 图片生成/文生图/文生图_ideogram4_t2i_2070037043585044481.json, 图片生成/文生图/自动版ideogram4生图_2064619048377344001.json, 图片生成/文生图/自动版ideogram4生图_2069077763297996801.json]
+members: [图片生成/图生图/AI短剧 FLUX2-Klein一致性分镜生成_2016880158778597378.json, 图片生成/图生图/F.2Klein一致性分镜生成_2054559164600471553.json, 图片生成/图生图/F.2Klein一致性分镜生成_2057782704892112897.json, 图片生成/图生图/FLUX2-Klein--批量生成动漫、短剧、角色分镜_2016510806220873730.json, 图片生成/图生图/FLUX2-Klein-9b自动批量出图_2052346406085644290.json, 图片生成/图生图/FLUX2-Klein9B 九宫格 分镜一致性最强_2015216356542648321.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2013614452058361857.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2014954574523670529.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2021053646867275778.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2029746610879598594.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2033815837353709569.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2042456007313465346.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2043916659529883649.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2065044099266342914.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2067883468247355393.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2081733709329424385.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2082447566196793345.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2098380414594404353.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2098398020718120961.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2103810120902864898.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2103834278789472257.json, 图片生成/图生图/FLUX2-Klein多角度分镜生成_2026459848992366593.json, 图片生成/图生图/FLUX2-Klein多角度分镜生成_2064992938723209217.json, 图片生成/图生图/FLUX2Klein一致性分镜生成_2044742361766436865.json, 图片生成/图生图/FLUXKlein超强分镜流_2058520639069319169.json, 图片生成/图生图/Klein文生图图生图脚本分镜一键生成_2015961543439028226.json, 图片生成/图生图/Klein超强分镜流 _  一致性超强九宫格 _  超强连贯性+超快速生成_2044341468541755394.json, 图片生成/图生图/WH-AI-Studio-FLUX2-Klein(自动反推一致性分镜图完美版)_2026691705298231297.json, 图片生成/图生图/klein9b镜头调度_2017785189434400769.json, 图片生成/图生图/opsv-klein9b镜头调度2_2075497084035358722.json, 图片生成/文生图/opsv-klein9b镜头调度_2054774868142501890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/VividMuse Ideogram4 workflow_2064337095640047618.json、图片生成/文生图/ideogram4-prompt-builder-fixed_2063828351755833345.json、图片生成/文生图/ideogram4_2063180809263206402.json、图片生成/文生图/ideogram4_t2i文生图+Ideogram 4 Prompt Builder KJ_2064175389697724418.json、图片生成/文生图/ideogram4工作流_2062533863087362049.json…）
+> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（图片生成/图生图/AI短剧 FLUX2-Klein一致性分镜生成_2016880158778597378.json、图片生成/图生图/F.2Klein一致性分镜生成_2054559164600471553.json、图片生成/图生图/F.2Klein一致性分镜生成_2057782704892112897.json、图片生成/图生图/FLUX2-Klein--批量生成动漫、短剧、角色分镜_2016510806220873730.json、图片生成/图生图/FLUX2-Klein-9b自动批量出图_2052346406085644290.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **样本数**：31
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `CFGOverride`
+全部 31 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `DualModelGuider`
 - `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
+- `Flux2Scheduler`
 - `KSamplerSelect`
-- `PreviewAny`
+- `LoadImage`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 24/25 个有
-- `PrimitiveStringMultiline` —— 24/25 个有
-- `TextGenerate` —— 23/25 个有
-- `ConditioningZeroOut` —— 21/25 个有
-- `CustomCombo` —— 21/25 个有
-- `StringConcatenate` —— 21/25 个有
-- `Fast Groups Muter (rgthree)` —— 14/25 个有
-- `LoadImage` —— 5/25 个有
-- `Ideogram4PromptBuilderKJ` —— 3/25 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/25 个有
-- `KSampler` —— 2/25 个有
-- `ModelSamplingAuraFlow` —— 2/25 个有
-- `ShowText|pysssss` —— 2/25 个有
-- `AILab_QwenVL` —— 1/25 个有
-- `Ideogram4OptimizationsKJ` —— 1/25 个有
-- `ImpactSwitch` —— 1/25 个有
-- `Seed (rgthree)` —— 1/25 个有
-- `easy ifElse` —— 1/25 个有
-- `easy promptList` —— 1/25 个有
-- `easy showAnything` —— 1/25 个有
+- `CR Prompt Text` —— 30/31 个有
+- `Qwen3_VQA` —— 30/31 个有
+- `Text Multiline` —— 30/31 个有
+- `easy showAnything` —— 30/31 个有
+- `GetImageSize` —— 29/31 个有
+- `INTConstant` —— 28/31 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 28/31 个有
+- `JWStringConcat` —— 27/31 个有
+- `ConditioningZeroOut` —— 8/31 个有
+- `LoraLoaderModelOnly` —— 7/31 个有
+- `PreviewImage` —— 6/31 个有
+- `ResizeImagesByLongerEdge` —— 3/31 个有
+- `StringConcatenate` —— 3/31 个有
+- `DF_Get_image_size` —— 2/31 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/31 个有
+- `CR Latent Batch Size` —— 1/31 个有
+- `CR Latent Input Switch` —— 1/31 个有
+- `ImageScaleToTotalPixels` —— 1/31 个有
+- `Int` —— 1/31 个有
+- `PrimitiveInt` —— 1/31 个有
+- `RH_LLMAPI_Pro_Node` —— 1/31 个有
+- `ShowText|pysssss` —— 1/31 个有
+- `easy imageSize` —— 1/31 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 3 | - | 2 | 100% |
-| 采样算法 | res_multistep | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

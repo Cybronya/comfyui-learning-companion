@@ -7,13 +7,13 @@ coverage: 0.776286
 common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, SimpleMath+, VHS_DuplicateImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1989961958185160706.json, 视频生成/图生视频/1940583682262413314.json, 视频生成/图生视频/1949675886216925185.json, 视频生成/图生视频/1936961854306439170.json, 视频生成/图生视频/1953292063418814466.json, 视频生成/图生视频/1957680451332796417.json, 音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json]
+members: [视频生成/图生视频/1电商带货商品展示数字人口播商用运镜版3.0_1989961958185160706.json, 视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json, 视频生成/图生视频/MV制作——Multitalk 声音驱动视频生成_1949675886216925185.json, 视频生成/图生视频/Multitalk 数字人运镜参考版｜稳定运行_1936961854306439170.json, 视频生成/图生视频/Multitalk最强数字人-灵动版_1953292063418814466.json, 视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json, 音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_11
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1989961958185160706.json、视频生成/图生视频/1940583682262413314.json、视频生成/图生视频/1949675886216925185.json、视频生成/图生视频/1936961854306439170.json、视频生成/图生视频/1953292063418814466.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1电商带货商品展示数字人口播商用运镜版3.0_1989961958185160706.json、视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json、视频生成/图生视频/MV制作——Multitalk 声音驱动视频生成_1949675886216925185.json、视频生成/图生视频/Multitalk 数字人运镜参考版｜稳定运行_1936961854306439170.json、视频生成/图生视频/Multitalk最强数字人-灵动版_1953292063418814466.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

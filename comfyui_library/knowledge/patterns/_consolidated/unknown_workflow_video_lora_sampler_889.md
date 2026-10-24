@@ -3,57 +3,45 @@ name: unknown_workflow_video_lora_sampler_889
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6795
-common_nodes: [BasicScheduler, CFGGuider, CS-LTXDirectorGuide, CS-LTXGridDirector, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, TTResolutionSelector, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.818
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveFloat, RHHiddenNodes, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2068160315895934977.json, 视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json]
+members: [视频生成/图生视频/天使升空特效工作流_1974459723451904002.json, 视频生成/图生视频/特效定制动作：人物出大翅膀，天使一般优雅飞起来_1981285961747300354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_889
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2068160315895934977.json、视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/天使升空特效工作流_1974459723451904002.json、视频生成/图生视频/特效定制动作：人物出大翅膀，天使一般优雅飞起来_1981285961747300354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `CS-LTXDirectorGuide`
-- `CS-LTXGridDirector`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `TTResolutionSelector`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveFloat`
+- `RHHiddenNodes`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 ## 典型参数
 

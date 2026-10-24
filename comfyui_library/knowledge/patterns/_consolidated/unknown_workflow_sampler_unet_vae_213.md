@@ -1,73 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_213
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.694
-common_nodes: [CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoadImage, ModelAttentionBackend, PreviewAny, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, QwenImage21Cache, QwenImage21ConfigPreparer_EditUtils, QwenImage21ModelConfig_EditUtils, RepeatLatentBatch, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageSizeByLongerSide, easy indexAnything, easy lengthAnything, easy makeImageList, llama_cpp_instruct_adv, llama_cpp_model_loader]
+frequency: 5
+level: moderate
+coverage: 0.7678
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainPlan, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3SigmaShift, PixaromaSizes, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy mergeVideosFromPaths]
 problems: []
-missing: [easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy makeImageList, easy imageSizeByLongerSide]
-members: [图片生成/图生图/2106049358109167617.json, 图片生成/文生图/Qwen Image 2.1 图片编辑（一流通吃）_2101867655480307714.json]
+missing: []
+members: [视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速_2094642674493116417.json, 视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速v2_2094707715150012419.json, 视频生成/图生视频/MiniMax H3 多图参考无限长视频满血+加速_2096191515784732673.json, 视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2095862167072493569.json, 视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2096076568014704641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_213
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2106049358109167617.json、图片生成/文生图/Qwen Image 2.1 图片编辑（一流通吃）_2101867655480307714.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速_2094642674493116417.json、视频生成/图生视频/MiniMax H3 全能参考无限长视频满血+加速v2_2094707715150012419.json、视频生成/图生视频/MiniMax H3 多图参考无限长视频满血+加速_2096191515784732673.json、视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2095862167072493569.json、视频生成/图生视频/MiniMax H3 首尾帧无限长视频满血+加速_2096076568014704641.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `CropWithPadInfo_EditUtils`
-- `EditTextEncode_EditUtils`
-- `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
-- `ModelAttentionBackend`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
-- `QwenImage21ConfigPreparer_EditUtils`
-- `QwenImage21ModelConfig_EditUtils`
-- `RepeatLatentBatch`
-- `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3ChainAssemble`
+- `MiniMaxH3ChainContext`
+- `MiniMaxH3ChainCurrent`
+- `MiniMaxH3ChainLoopEnd`
+- `MiniMaxH3ChainLoopStart`
+- `MiniMaxH3ChainPlan`
+- `MiniMaxH3ChainSegmentSave`
+- `MiniMaxH3LoopTrim`
+- `MiniMaxH3SigmaShift`
+- `PixaromaSizes`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy imageSizeByLongerSide`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy makeImageList`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `easy mergeVideosFromPaths`
+
+**可变部分**（部分 workflow 才有）：
+- `MiniMaxH3ChainReview` —— 4/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
+- `MiniMaxH3ChainScenePromptEditor` —— 3/5 个有
+- `PathchSageAttentionKJ` —— 3/5 个有
+- `SolAttnPatch` —— 3/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 2/5 个有
+- `MiniMaxH3ImageToVideo` —— 2/5 个有
+- `MiniMaxH3ScheduledPictureReference` —— 2/5 个有
+- `MiniMaxH3ScheduledReferenceToVideo` —— 2/5 个有
+- `ModelAttentionBackend` —— 2/5 个有
+- `PrimitiveBoolean` —— 2/5 个有
+- `LoadVideo` —— 1/5 个有
+- `MiniMaxH3ChainPlanStudio` —— 1/5 个有
+- `MiniMaxH3ChainRichScenePromptEditor` —— 1/5 个有
+- `MiniMaxH3ChainRunManager` —— 1/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
+- `MiniMaxH3ReferenceVideoPrepare` —— 1/5 个有
+- `MiniMaxH3ScheduledAudioReference` —— 1/5 个有
+- `MiniMaxH3ScheduledVideoReference` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| 采样步数 | 25 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,12 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy forLoopEnd、easy forLoopStart、easy indexAnything、easy lengthAnything、easy makeImageList
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

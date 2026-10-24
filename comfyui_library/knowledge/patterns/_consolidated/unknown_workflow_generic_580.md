@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_580
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.85
-common_nodes: [LoadImage, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RH_AlibabaWan27ImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/商品视频工作流｜万相 2.6 Flash 商品图一键带货_2098786473423228929.json, 视频生成/图生视频/图生视频工作流｜Gemini Omni 1.1 Flash 稳定版 可上 4K_2100471517942468610.json, 视频生成/图生视频/图生视频工作流｜万相 2.6 Flash 极速生成 1080P 带音频_2098058762895577089.json]
+members: [视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json, 视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json, 视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json, 视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json, 视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_580
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/商品视频工作流｜万相 2.6 Flash 商品图一键带货_2098786473423228929.json、视频生成/图生视频/图生视频工作流｜Gemini Omni 1.1 Flash 稳定版 可上 4K_2100471517942468610.json、视频生成/图生视频/图生视频工作流｜万相 2.6 Flash 极速生成 1080P 带音频_2098058762895577089.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json、视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json、视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json、视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json、视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `RH_AlibabaWan27ImageToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RH_AlibabaWan26ImageToVideoFlash` —— 2/3 个有
-- `RH_GoogleGeminiOmni11FlashImageToVideo` —— 1/3 个有
+- `LoadAudio` —— 3/5 个有
+- `TextBox` —— 1/5 个有
 
 ## 典型参数
 

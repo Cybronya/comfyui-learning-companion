@@ -1,80 +1,74 @@
 ---
 name: text_to_image_sampler_clip_vae_9
 type: Text To Image
-frequency: 10
+frequency: 13
 level: weak
-coverage: 0.7412
-common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage, VAEDecode, VAELoader]
-problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1ExtraOptions]
-members: [图片生成/文生图/1940313410569682946.json, 图片生成/文生图/1942186080890204162.json, 图片生成/文生图/1944743997447524354.json, 图片生成/文生图/1951531387230826497.json, 图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json, 图片生成/文生图/Z-image 平替Flux2 图片反推+文生图  最强真实人物细节多场景生成 Z-image_1993908699964047361.json, 图片生成/文生图/Z-imageTurbo 快速高清 4K 工作流_1995495345377443841.json, 图片生成/文生图/图片反推+Z-image最强真实人物细节多场景生成_1993853085036511234.json, 图片生成/文生图/图片反推+Z-image最强真实人物细节多场景生成_1998679334598664193.json, 图片生成/文生图/图片反推+Z-image最强真实人物细节多场景生成_2002784165995114497.json]
+coverage: 0.914615
+common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/Nunchaku-Z-Image-全自动文生图_2005186111444054017.json, 图片生成/文生图/Nunchaku-Z-Image-美女图像生成_2005261946289090561.json, 图片生成/文生图/Ovis-Image-海报生成_1998366450572255234.json, 图片生成/文生图/Qwen-Image-2512-全自动文生图_2006362427654414338.json, 图片生成/文生图/Qwen-Image-2512-美女图像生成_2006598917072363521.json, 图片生成/文生图/Z-Image-Base-全自动美女生成_2016483416421703682.json, 图片生成/文生图/Z-Image-Turbo-_1994588125756264449.json, 图片生成/文生图/Z-Image-Turbo-全自动文生图_1993944444179251201.json, 图片生成/文生图/Z-Image-Turbo-网红美女图像生成_1994562866558668801.json, 图片生成/文生图/Z-Image-按要求美女图像生成_1998383341026050050.json, 图片生成/文生图/Z-Image-美女造相_2001491783865466882.json, 图片生成/文生图/Z-image-Art-自动文生图_2018672608220291073.json, 图片生成/文生图/Z-image-base-极速自动文生图（4步出图）_2021738815794188290.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/1940313410569682946.json、图片生成/文生图/1942186080890204162.json、图片生成/文生图/1944743997447524354.json、图片生成/文生图/1951531387230826497.json、图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Nunchaku-Z-Image-全自动文生图_2005186111444054017.json、图片生成/文生图/Nunchaku-Z-Image-美女图像生成_2005261946289090561.json、图片生成/文生图/Ovis-Image-海报生成_1998366450572255234.json、图片生成/文生图/Qwen-Image-2512-全自动文生图_2006362427654414338.json、图片生成/文生图/Qwen-Image-2512-美女图像生成_2006598917072363521.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：13
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 9/10 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 9/10 个有
-- `ShowText|pysssss` —— 9/10 个有
-- `UNETLoader` —— 9/10 个有
-- `DeepTranslatorTextNode` —— 7/10 个有
-- `Fast Groups Muter (rgthree)` —— 6/10 个有
-- `CLIPLoader` —— 5/10 个有
-- `FluxGuidance` —— 5/10 个有
-- `easy saveText` —— 5/10 个有
-- `AspectRatio` —— 4/10 个有
-- `DualCLIPLoader` —— 4/10 个有
-- `PreviewImage` —— 4/10 个有
-- `easy promptList` —— 4/10 个有
-- `LoraLoaderModelOnly` —— 2/10 个有
-- `Anything Everywhere3` —— 1/10 个有
-- `NunchakuFluxDiTLoader` —— 1/10 个有
-- `NunchakuTextEncoderLoaderV2` —— 1/10 个有
+- `JDCN_StringToList` —— 12/13 个有
+- `UNETLoader` —— 11/13 个有
+- `easy showAnything` —— 11/13 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `CR Text Replace` —— 5/13 个有
+- `MuyeTextEditOutput` —— 5/13 个有
+- `ModelSamplingAuraFlow` —— 3/13 个有
+- `ShowText|pysssss` —— 3/13 个有
+- `NunchakuZImageDiTLoader` —— 2/13 个有
+- `PreviewImage` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1052 | 512 - 1920 | 10 | 58% |
-| 高度 | 1080 | 512 - 1920 | 10 | 69% |
-| 采样步数 | 15 | 10 - 30 | 10 | 59% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 10 | 0% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 8 | 6 - 50 | 13 | 3% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 13 | 22% |
+| 采样算法 | euler | - | 13 | 77% |
+| 调度器 | simple | - | 13 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 720 | 656 - 1536 | 13 | 72% |
+| 高度 | 1280 | 1104 - 1648 | 13 | 91% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1052，观测区间 512 - 1920，10 个样本
-- 高度 中位数 1080，观测区间 512 - 1920，10 个样本
-- 采样步数 中位数 15，观测区间 10 - 30，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，10 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: LoadJoyCaptionBeta1Model、LayerUtility: JoyCaptionBeta1ExtraOptions
+- 采样步数 中位数 8，观测区间 6 - 50，13 个样本，取值分散，一致性仅 3%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，13 个样本，取值分散，一致性仅 22%
+- 采样算法 最常用 euler，13 个样本，一致性 77%
+- 调度器 最常用 simple，13 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 720，观测区间 656 - 1536，13 个样本
+- 高度 中位数 1280，观测区间 1104 - 1648，13 个样本，取值集中（一致性 91%）
+- 高发问题（10/13 个样本）：Steps较低可能导致细节不足

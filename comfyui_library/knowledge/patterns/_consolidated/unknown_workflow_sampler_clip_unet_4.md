@@ -1,93 +1,77 @@
 ---
 name: unknown_workflow_sampler_clip_unet_4
 type: Unknown Workflow
-frequency: 60
-level: moderate
-coverage: 0.83855
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 63
+level: strong
+coverage: 0.914651
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, ImpactInt, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2032325559673425922.json, 视频生成/图生视频/2033100146149433345.json, 视频生成/图生视频/2001276134820114434.json, 视频生成/图生视频/2000536885283913730.json, 视频生成/图生视频/2000228128893136898.json, 视频生成/图生视频/2001205334750396418.json, 视频生成/图生视频/2029370173815263234.json, 视频生成/图生视频/2027610394038116353.json, 视频生成/图生视频/2069701198076272642.json, 视频生成/图生视频/2010525636460290050.json, 视频生成/图生视频/2030701260868947970.json, 视频生成/图生视频/2037924097656623106.json, 视频生成/图生视频/1991681950526160898.json, 视频生成/图生视频/2015695642802266113.json, 视频生成/图生视频/2015990748520390658.json, 视频生成/图生视频/2070124600004009986.json, 视频生成/图生视频/2073282904012181505.json, 视频生成/图生视频/2073306491800604674.json, 视频生成/图生视频/2070862851690024961.json, 视频生成/图生视频/2075857728098103298.json, 视频生成/图生视频/2049743033066893314.json, 视频生成/图生视频/2071879378346270722.json, 视频生成/图生视频/2072589952713576450.json, 视频生成/图生视频/2069670333807947777.json, 视频生成/图生视频/2070305220235710465.json, 视频生成/图生视频/2070355059841519618.json, 视频生成/图生视频/2071779271084957697.json, 视频生成/图生视频/2071850163974533122.json, 视频生成/图生视频/2072128831045062658.json, 视频生成/图生视频/2072152317297782786.json, 视频生成/图生视频/2072494043287871490.json, 视频生成/图生视频/2072921920454086658.json, 视频生成/图生视频/2073934911119118338.json, 视频生成/图生视频/2073935473470435329.json, 视频生成/图生视频/2073947316276514818.json, 视频生成/图生视频/2073959208336322562.json, 视频生成/图生视频/2074417927780126721.json, 视频生成/图生视频/2074652468201476098.json, 视频生成/图生视频/2074661334712676354.json, 视频生成/图生视频/2075143494758391810.json, 视频生成/图生视频/2076476237844934658.json, 视频生成/图生视频/2077204205789597697.json, 视频生成/图生视频/2077559253283459074.json, 视频生成/图生视频/2078316173892083714.json, 视频生成/图生视频/2078354707428503553.json, 视频生成/图生视频/2079366481120415745.json, 视频生成/图生视频/2081907612689453057.json, 视频生成/图生视频/2082390645938937857.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2082734230068617217.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2083117546869444609.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2085266178695589889.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2100060664919318530.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强视频生成-提示词优化版 图生视频_2083865502589472770.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强视频生成-提示词优化版 图生视频_2087524431236259841.json, 视频生成/图生视频/2075087221677449218.json, 视频生成/图生视频/WAN2.2_DaSiWaV9_最强动漫视频生成提示词优化版_2100868109514137601.json, 视频生成/图生视频/WAN2.2_DaSiWaV9_最强动漫视频生成提示词优化版_2101135073994166273.json, 视频生成/图生视频/WAN2.2_DaSiWaV9_最强动漫视频生成提示词优化版_2101215385868656641.json, 视频生成/图生视频/WAN2.2_DaSiWaV9_最强动漫视频生成提示词优化版_2101453268898635778.json, 视频生成/图生视频/2079370650996789249.json]
+members: [图片生成/图生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067156255042527234.json, 图片生成/图生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2064547489570705410.json, 图片生成/文生图/Krea2 + SeedVR 放大 写实增强 直出4K_2077727494152740865.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2094706313803681793.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2096861977632137217.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2099766179282907138.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2100179369921695745.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2100196545147793410.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2100876697150246914.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2109550664492863489.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2110259628457160705.json, 图片生成/文生图/Krea2 写实增强｜SeedVR精修版_2098721284262817793.json, 图片生成/文生图/Krea2_+_SeedVR_放大+_4K写实增强_2098920437689446402.json, 图片生成/文生图/Krea2_+_SeedVR_放大+_4K写实增强_2098978991087636482.json, 图片生成/文生图/Krea2_+_SeedVR_放大+_4K写实增强_2099654567163162625.json, 图片生成/文生图/Krea2_turbo文生图 Seedvr 放大 直出 4K_2071527505537884162.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2054947907597553665.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2057060412415369217.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2065648471201378306.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2065687597992730625.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2066786549341179905.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2066790536954073090.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067159224349708289.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067633456959541249.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2068726348704731137.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2070778346149072898.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2071109512853020673.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2071151687594762242.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2073417416134193153.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2073722152225951746.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2086815831304007681.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2028637596619902977.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2041690424309452802.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2044296993815662593.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2047480172508614657.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2049369729567035394.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2054738492026048513.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2054824506321055746.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2063916266800369665.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2063923158561943553.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2067528669467336705.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+极致写实+Seedvr放大_2060351325401083906.json, 图片生成/文生图/Z-Image+seedvr2.5.1 极致写实文生图 直生4K_2031894322475442178.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_1996411256145846273.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2039625855659417602.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2042523979340062722.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2046398245986897922.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2046486116416626690.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2048650706206330882.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2063788565154324481.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2078834871178452994.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2084812679537061889.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2085279417445740545.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大电影级文生图+画质色彩增强版_1996033169059201026.json, 图片生成/文生图/Z-Image-turbo + seedvr放大 极致写实文生图 直出4K_2041436013444210690.json, 图片生成/文生图/krea2 turbo + SeedVR 放大+文生图=直出4K_2071467996278771714.json, 图片生成/文生图/krea2 turbo + SeedVR 放大+文生图=直出4K_2071509896452984834.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2069968514529718274.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2069978394510581762.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2070026560844951554.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2071588617667047426.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2076507182232858625.json, 图片生成/文生图/z-image_超级写实效果。_2047565472735956993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 60 个 workflow 归纳得出（视频生成/图生视频/2032325559673425922.json、视频生成/图生视频/2033100146149433345.json、视频生成/图生视频/2001276134820114434.json、视频生成/图生视频/2000536885283913730.json、视频生成/图生视频/2000228128893136898.json…）
+> 由 `engine/knowledge_consolidation` 从 63 个 workflow 归纳得出（图片生成/图生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067156255042527234.json、图片生成/图生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2064547489570705410.json、图片生成/文生图/Krea2 + SeedVR 放大 写实增强 直出4K_2077727494152740865.json、图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2094706313803681793.json、图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2096861977632137217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：60
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：63
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 60 个 workflow 都包含：
-- `CLIPLoader`
+全部 63 个 workflow 都包含：
 - `CLIPTextEncode`
-- `INTConstant`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `ConditioningZeroOut`
+- `ImpactInt`
+- `KSampler`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JoinStrings` —— 59/60 个有
-- `Qwen3_VQA` —— 59/60 个有
-- `TextInput_` —— 59/60 个有
-- `VHS_VideoCombine` —— 59/60 个有
-- `easy showAnything` —— 59/60 个有
-- `PreviewImage` —— 58/60 个有
-- `easy cleanGpuUsed` —— 58/60 个有
-- `ImageConcatMulti` —— 57/60 个有
-- `ModelSamplingSD3` —— 57/60 个有
-- `ShowText|pysssss` —— 57/60 个有
-- `PainterI2V` —— 55/60 个有
-- `RIFE VFI` —— 55/60 个有
-- `ImageBatchMulti` —— 54/60 个有
-- `ImageResizeKJv2` —— 54/60 个有
-- `PrimitiveInt` —— 54/60 个有
-- `WanFirstLastFrameToVideo` —— 54/60 个有
-- `WanMultiFrameRefToVideo` —— 54/60 个有
-- `SimpleMath+` —— 52/60 个有
-- `Fast Groups Muter (rgthree)` —— 42/60 个有
-- `Fast Groups Bypasser (rgthree)` —— 14/60 个有
-- `LoraLoaderModelOnly` —— 10/60 个有
-- `GetImagesFromBatchIndexed` —— 8/60 个有
-- `easy convertAnything` —— 4/60 个有
-- `CR Text Replace` —— 2/60 个有
-- `EmptyImage` —— 2/60 个有
-- `wanBlockSwap` —— 2/60 个有
-- `CRTFirstLastFrameSelector` —— 1/60 个有
-- `DuckHideNode` —— 1/60 个有
-- `ImageStitch` —— 1/60 个有
-- `SDVN Fast Groups Bypasser` —— 1/60 个有
-- `SaveImage` —— 1/60 个有
+- `CR Text Concatenate` —— 62/63 个有
+- `ModelSamplingAuraFlow` —— 62/63 个有
+- `PreviewImage` —— 62/63 个有
+- `SeedVR2LoadDiTModel` —— 62/63 个有
+- `SeedVR2LoadVAEModel` —— 62/63 个有
+- `SeedVR2VideoUpscaler` —— 62/63 个有
+- `Text` —— 62/63 个有
+- `LayerUtility: PurgeVRAM V2` —— 61/63 个有
+- `Lora Loader Stack (rgthree)` —— 54/63 个有
+- `CR SDXL Aspect Ratio` —— 41/63 个有
+- `CLIPLoader` —— 35/63 个有
+- `CLIPLoaderGGUF` —— 28/63 个有
+- `EmptySD3LatentImage` —— 22/63 个有
+- `孤海注释` —— 12/63 个有
+- `EmptyImage` —— 3/63 个有
+- `LoadImage` —— 3/63 个有
+- `LoraLoaderModelOnly` —— 1/63 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 60 | 80% |
-| Prompt 约束强度(CFG) | 4 | 4 - 20 | 60 | 53% |
-| 采样算法 | 1 | 1 - 1 | 60 | 100% |
-| 调度器 | euler | - | 60 | 100% |
-| 重绘幅度 | simple | - | 60 | 97% |
+| 采样步数 | 9 | 8 - 10 | 63 | 94% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 63 | 100% |
+| 采样算法 | res_multistep | - | 63 | 63% |
+| 调度器 | sgm_uniform | - | 63 | 62% |
+| 重绘幅度 | 1 | 1 - 1 | 63 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 62/63 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，60 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，60 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，60 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，60 个样本，一致性 100%
-- 重绘幅度 最常用 simple，60 个样本，一致性 97%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 9，观测区间 8 - 10，63 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，63 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，63 个样本，一致性 63%
+- 调度器 最常用 sgm_uniform，63 个样本，一致性 62%
+- 重绘幅度 中位数 1，观测区间 1 - 1，63 个样本，取值集中（一致性 100%）
+- 高发问题（62/63 个样本）：Steps较低可能导致细节不足

@@ -3,66 +3,76 @@ name: text_to_image_video_lora_sampler_215
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.925
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, JWInteger, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, SoundFlow_Fade, SoundFlow_GetLength, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.827
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Image Grid Panel, EmptyLatentImage, ExtractNFrames, Float, Float to Int, GetNode, ImageConcanate, ImageFromBatch, ImageResizeKJv2, Int, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewAny, PreviewImage, RH_Captioner, RH_Translator, RMBG, Seed, SetNode, SimpleMath+, StringReplace, Text, TextConcatenate_UTK, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy imageCount, easy indexAnything, easy mathInt, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/万相表情迁移短剧方案｜Aniwan2.1+FantasyPortrait+InfiniteTalk_2101182808269086721.json, 视频生成/图生视频/表情迁移短剧神器｜万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2101152627349348354.json]
+members: [视频生成/图生视频/bernini双角色替换工作流2｜视频生视频人物换装_2100794865486491649.json, 视频生成/图生视频/双角色同框演绎｜bernini图生视频角色替换方案_2096519832379420673.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_215
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相表情迁移短剧方案｜Aniwan2.1+FantasyPortrait+InfiniteTalk_2101182808269086721.json、视频生成/图生视频/表情迁移短剧神器｜万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2101152627349348354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/bernini双角色替换工作流2｜视频生视频人物换装_2100794865486491649.json、视频生成/图生视频/双角色同框演绎｜bernini图生视频角色替换方案_2096519832379420673.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `CR Image Grid Panel`
 - `EmptyLatentImage`
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
+- `ExtractNFrames`
+- `Float`
+- `Float to Int`
+- `GetNode`
+- `ImageConcanate`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `JWInteger`
+- `Int`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_Captioner`
+- `RH_Translator`
+- `RMBG`
+- `Seed`
+- `SetNode`
 - `SimpleMath+`
-- `SoundFlow_Fade`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `StringReplace`
+- `Text`
+- `TextConcatenate_UTK`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoAddFantasyPortrait`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
+- `easy imageCount`
+- `easy indexAnything`
+- `easy mathInt`
 - `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`

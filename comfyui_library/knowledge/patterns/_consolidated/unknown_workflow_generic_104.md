@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_104
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.991444
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.881786
+common_nodes: [LoadAudio, MegaTTS3Run, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance 2.5 动作迁移_2084925519010820097.json, 视频生成/图生视频/Seedance 2.5 真人娃娃换装_2085613519734661121.json, 视频生成/图生视频/Seedance2.0 全能视频_2085637559983628290.json, 视频生成/图生视频/Seedance2.5 WU电商视频专用多图参考_2109917521888505858.json, 视频生成/图生视频/Seedance2.5 多模态视频生成_2085920194110771201.json, 视频生成/图生视频/Seedance2.5全参工作流_2088937374653964290.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2100055319186595841.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2100136230091575297.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2101626273922641921.json]
+members: [图片生成/图生图/MegaTTS3语音迁移_2073345226973999106.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1962880712204587009.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1965450428429254657.json, 音频生成/音频生成/商用版-最强语音克隆 单人克隆版_1998255017779978241.json, 音频生成/音频生成/最强MegaTTS3单人语音克隆_1964218831621246977.json, 音频生成/音频生成/最强MegaTTS3双人语音克隆_1964218900688850946.json, 音频生成/音频生成/最强语音克隆_MegaTTS3_1963165246057852929.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1964879017734193153.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1972202277962444801.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1964879052882460674.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1972203985589497858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_104
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Seedance 2.5 动作迁移_2084925519010820097.json、视频生成/图生视频/Seedance 2.5 真人娃娃换装_2085613519734661121.json、视频生成/图生视频/Seedance2.0 全能视频_2085637559983628290.json、视频生成/图生视频/Seedance2.5 WU电商视频专用多图参考_2109917521888505858.json、视频生成/图生视频/Seedance2.5 多模态视频生成_2085920194110771201.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/MegaTTS3语音迁移_2073345226973999106.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json、音频生成/音频生成/MegaTTS3双人语音迁移V2_1962880712204587009.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 14 个 workflow 都包含：
+- `LoadAudio`
+- `MegaTTS3Run`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 8/9 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 8/9 个有
-- `LoadAudio` —— 5/9 个有
-- `MuyeTextEditOutput` —— 3/9 个有
-- `EmptyImage` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/9 个有
-- `ttN text` —— 1/9 个有
+- `CR Prompt Text` —— 13/14 个有
+- `PreviewAudio` —— 9/14 个有
+- `SaveAudioMP3` —— 9/14 个有
+- `MultiLinePromptMG` —— 7/14 个有
+- `MegaTTS3` —— 2/14 个有
 
 ## 典型参数
 

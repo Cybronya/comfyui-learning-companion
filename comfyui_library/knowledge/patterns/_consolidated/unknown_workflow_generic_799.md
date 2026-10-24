@@ -1,30 +1,32 @@
 ---
 name: unknown_workflow_generic_799
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage, Text]
+frequency: 4
+level: moderate
+coverage: 0.95825
+common_nodes: [LoadAudio, MossTTSGenerate, MossTTSModelLoader, SaveAudioMP3, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json, 图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json]
+members: [音频生成/音频生成/Moss TTS语音克隆1.5模型_2076263094506057730.json, 音频生成/音频生成/Moss TTS语音克隆_2071776437790658562.json, 音频生成/音频生成/Moss TTS语音克隆_2076486767691255809.json, 音频生成/音频生成/moss语音克隆_2076565397675003905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_799
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json、图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Moss TTS语音克隆1.5模型_2076263094506057730.json、音频生成/音频生成/Moss TTS语音克隆_2071776437790658562.json、音频生成/音频生成/Moss TTS语音克隆_2076486767691255809.json、音频生成/音频生成/moss语音克隆_2076565397675003905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `MossTTSGenerate`
+- `MossTTSModelLoader`
+- `SaveAudioMP3`
 - `Text`
 
 ## 典型参数
@@ -37,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

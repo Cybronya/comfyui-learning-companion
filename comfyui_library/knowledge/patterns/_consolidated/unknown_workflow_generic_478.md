@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_478
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.448
-common_nodes: [AudioCrop, CR Text, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.909
+common_nodes: [LoadAudio, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json, 音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json]
+members: [音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json, 音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json, 音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json, 音频生成/音频生成/「Supermate」VoxCPM2 粤语基础工作流_2041927640814194690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_478
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json、音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 多人-音色克隆-方言 TTS_2063560300636499970.json、音频生成/音频生成/VoxCPM2 多人工作流_2042448334329221122.json、音频生成/音频生成/VoxCPM2 多人工作流_2042467765981810690.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2042837335846428673.json、音频生成/音频生成/VoxCPM2 大模型开源实测！一键生成方言版苏超解说音频_2044072386747699202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `CR Text`
+全部 6 个 workflow 都包含：
 - `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `RunningHub_VoxCPM_LoadModel`
+- `RunningHub_VoxCPM_MultiSpeaker`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `RH_IndexTTS25_Loader` —— 2/4 个有
-- `RH_IndexTTS25_Synthesize` —— 2/4 个有
+- `CR Text` —— 3/6 个有
+- `Label (rgthree)` —— 2/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 

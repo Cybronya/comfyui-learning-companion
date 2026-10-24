@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_212
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.919667
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.776333
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042721470069088257.json, 视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json, 视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json, 视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json, 视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json, 视频生成/文生视频/Seedance2.5多模态视频_2095476090239275009.json]
+members: [图片生成/图生图/(0.08基准) 全能图片V1二次元年轻人的第一次NTR体验API工作流V2(支持本地)_1962809344620408834.json, 图片生成/图生图/(9宫格艺术版)Nano-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1985405828087881729.json, 图片生成/图生图/(基准0.04)多图编辑 全能图片V1图像编辑api工作流v3(支持本地)_1960787697747070977.json, 图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1980560528013742082.json, 图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑双图V1(贞贞工坊API)_1980560563623383041.json, 图片生成/图生图/(贞贞工坊API版) 全能图片V12图像编辑V1_1991641233128898562.json, 图片生成/图生图/两张图合并（图生图）全能图片V1_1976544641979949057.json, 图片生成/图生图/多图合并（根叔）_1977240810959839233.json, 图片生成/图生图/（基准0.04）单图编辑 全能图片V1图像编辑api工作流v2(支持本地)_1960785155709448194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_212
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2042721470069088257.json、视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2105582244168552449.json、视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json、视频生成/文生视频/Seedance 2.5 多模态全能参考视频｜图生视频｜视频生视频_2097506074302705665.json、视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/(0.08基准) 全能图片V1二次元年轻人的第一次NTR体验API工作流V2(支持本地)_1962809344620408834.json、图片生成/图生图/(9宫格艺术版)Nano-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1985405828087881729.json、图片生成/图生图/(基准0.04)多图编辑 全能图片V1图像编辑api工作流v3(支持本地)_1960787697747070977.json、图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑单图V1(贞贞工坊API)_1980560528013742082.json、图片生成/图生图/(自定义分辨率)-全能图片V1-Edit新版模型图像编辑双图V1(贞贞工坊API)_1980560563623383041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageConcanate`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/6 个有
-- `JjkText` —— 4/6 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 4/6 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/6 个有
-- `MuyeTextEditOutput` —— 1/6 个有
+- `JWImageResizeByLongerSide` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `Comfly_api_set` —— 7/9 个有
+- `Comfly_nano_banana` —— 6/9 个有
+- `PDIMAGE_LongerSize` —— 4/9 个有
+- `Comfly_nano_banana_edit` —— 3/9 个有
 
 ## 典型参数
 

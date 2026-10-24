@@ -1,63 +1,50 @@
 ---
 name: unknown_workflow_unet_vae_3
 type: Unknown Workflow
-frequency: 14
+frequency: 17
 level: moderate
-coverage: 0.83
-common_nodes: [CLIPLoader, CR Text, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, ResolutionSelector, UNETLoader, VAELoader]
+coverage: 0.848176
+common_nodes: [CLIPLoader, MiniMaxH3Director, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/minimax H3-rapid_2084240131556470785.json, 视频生成/图生视频/万象+RH-Minimax_h3_4宫格图生视频_2084272132292435970.json, "视频生成/图生视频/图生视频,首尾帧,MiniMax H3,音画同步,AI视频_2106272459883368449.json", 视频生成/图生视频/海螺-Minimax_H3_图生视频-优化版_2085285557453807618.json, 视频生成/图生视频/海螺H3(minimax H3)首尾帧生视频加速开源版_2084885078169186305.json, 视频生成/图生视频/海螺H3)首尾帧生视频_2085148305012649985.json, 视频生成/图生视频/海螺Minimax_H3_图生视频——极速优化版_2084239451739484161.json, 视频生成/文生视频/MiniMax-H3 图生视频 5秒1080p视频只需8分钟+全节点注释_2084557666449444865.json, 视频生成/文生视频/MiniMax-H3 文生视频 5秒1080p视频只需8分钟+全节点注释_2084777365707776002.json, 视频生成/文生视频/MiniMax-H3 文生视频 5秒1080p视频只需8分钟+全节点注释_2094043847910318082.json, 视频生成/文生视频/Minimax H3 首尾帧丨首帧丨尾帧丨文生视频丨老许Gary🎉_2084172294758424577.json, 视频生成/文生视频/Minimax_h3_文生视频_2088656070670643202.json, 视频生成/文生视频/minimax-h3 -标准官方工作流（文生_首尾帧生视频）_2094754298751180802.json, 视频生成/文生视频/minimaxH3文生视频工作流（超级加速版）_2084925338584436737.json]
+members: [视频生成/图生视频/MiniMax H3导演台长视频生成_段间引导_turbo_2088450232764944385.json, 视频生成/图生视频/MiniMax H3开源 导演台全能工作流无水印版_2092549957147521025.json, 视频生成/图生视频/Minimax-H3 导演台 首尾帧生视频（加速版）_2087216505112059905.json, 视频生成/图生视频/Minimax-H3导演台 参考改视频（加速版）_2087208935521607681.json, 视频生成/文生视频/H3图生视频-高清版_2099038143218536450.json, 视频生成/文生视频/MiniMax H3 AIMixer 导演台_2087791306260180994.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流无水印版_2091949246240092162.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流无水印版_2093187899088003073.json, 视频生成/文生视频/MiniMax H3 导演台工作流-fl2va_2091328355697250305.json, 视频生成/文生视频/MiniMax H3 导演台｜无限长视频玩法_2090426764001636354.json, 视频生成/文生视频/MiniMax H3 导演台｜无限长视频玩法_2092539959881322498.json, 视频生成/文生视频/MiniMax H3 电影级运镜全能导演台｜二采精修｜分镜合成｜加速版_2096009884130177025.json, 视频生成/文生视频/MiniMax H3 电影质感全能导演台｜二采放大｜分镜合成｜8步加速版_2100406933353226242.json, 视频生成/文生视频/MiniMax-H3_Director_导演台多参模式_2101083112175394817.json, 视频生成/文生视频/minimax_h3_director_二采+导演台_2089917916656525313.json, 视频生成/文生视频/minimax_h3_director_导演台全能工作流_2102965461339164674.json, 视频生成/文生视频/导演台全能工作流_2093548311629361154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/minimax H3-rapid_2084240131556470785.json、视频生成/图生视频/万象+RH-Minimax_h3_4宫格图生视频_2084272132292435970.json、视频生成/图生视频/图生视频,首尾帧,MiniMax H3,音画同步,AI视频_2106272459883368449.json、视频生成/图生视频/海螺-Minimax_H3_图生视频-优化版_2085285557453807618.json、视频生成/图生视频/海螺H3(minimax H3)首尾帧生视频加速开源版_2084885078169186305.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3导演台长视频生成_段间引导_turbo_2088450232764944385.json、视频生成/图生视频/MiniMax H3开源 导演台全能工作流无水印版_2092549957147521025.json、视频生成/图生视频/Minimax-H3 导演台 首尾帧生视频（加速版）_2087216505112059905.json、视频生成/图生视频/Minimax-H3导演台 参考改视频（加速版）_2087208935521607681.json、视频生成/文生视频/H3图生视频-高清版_2099038143218536450.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 17 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Text`
-- `MiniMaxH3ImageToVideo`
-- `PathchSageAttentionKJ`
-- `ResolutionSelector`
+- `MiniMaxH3Director`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 13/14 个有
-- `BasicScheduler` —— 13/14 个有
-- `KSamplerSelect` —— 13/14 个有
-- `RandomNoise` —— 13/14 个有
-- `SamplerCustomAdvanced` —— 13/14 个有
-- `VAEDecode` —— 13/14 个有
-- `VAEDecodeAudio` —— 13/14 个有
-- `LoadImage` —— 12/14 个有
-- `PainterVRAM` —— 9/14 个有
-- `VHS_VideoCombine` —— 9/14 个有
-- `INTConstant` —— 8/14 个有
-- `SimpleMath+` —— 8/14 个有
-- `GetImageSize` —— 7/14 个有
-- `ImageScaleToTotalPixels` —— 7/14 个有
-- `ComfyMathExpression` —— 6/14 个有
-- `CreateVideo` —— 6/14 个有
-- `EasyCache` —— 6/14 个有
-- `SaveVideo` —— 6/14 个有
-- `Int` —— 3/14 个有
-- `PrimitiveFloat` —— 3/14 个有
-- `Label (rgthree)` —— 2/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `ModelPatchTorchSettings` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
-- `SetReserveVRAM` —— 1/14 个有
-- `workflow>采样解码` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 14/17 个有
+- `PathchSageAttentionKJ` —— 12/17 个有
+- `VHS_VideoCombine` —— 12/17 个有
+- `MiniMaxH3DirectorRefine` —— 11/17 个有
+- `UpscaleModelLoader` —— 10/17 个有
+- `PreviewAny` —— 7/17 个有
+- `CreateVideo` —— 6/17 个有
+- `SaveVideo` —— 6/17 个有
+- `BasicScheduler` —— 2/17 个有
+- `EmptyImage` —— 2/17 个有
+- `PreviewImage` —— 2/17 个有
+- `Label (rgthree)` —— 1/17 个有
+- `MiniMaxH3DirectorFaceRefine` —— 1/17 个有
+- `MiniMaxH3DirectorSelfLift` —— 1/17 个有
+- `easy sleep` —— 1/17 个有
 
 ## 典型参数
 

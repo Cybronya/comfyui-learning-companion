@@ -1,31 +1,33 @@
 ---
 name: unknown_workflow_generic_805
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, RH_RhartImageG25SunburstTextToImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.875
+common_nodes: [FB_Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007888886325250.json, 图片生成/文生图/文生图 aigc -image-2.5 （9 图）太平_2106711934480506881.json]
+members: [音频生成/音频生成/Qwen3 TTS声音设计_2065319108614385666.json, 音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json, 音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json, 音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_805
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007888886325250.json、图片生成/文生图/文生图 aigc -image-2.5 （9 图）太平_2106711934480506881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS声音设计_2065319108614385666.json、音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json、音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json、音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_RhartImageG25SunburstTextToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `FB_Qwen3TTSVoiceDesign`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -37,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

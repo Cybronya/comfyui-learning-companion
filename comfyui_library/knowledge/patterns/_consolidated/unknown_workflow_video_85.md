@@ -3,34 +3,38 @@ name: unknown_workflow_video_85
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
+coverage: 0.7
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, Int, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062201896533839874.json, 视频生成/图生视频/2062197611167309826.json]
+members: [视频生成/图生视频/AI漫剧视频补帧（30帧补到60帧）_2012124857437265922.json, 视频生成/图生视频/视频优化板块：GIMM-VFI视频插帧补帧工作流_2050850045557264386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_85
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2062201896533839874.json、视频生成/图生视频/2062197611167309826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI漫剧视频补帧（30帧补到60帧）_2012124857437265922.json、视频生成/图生视频/视频优化板块：GIMM-VFI视频插帧补帧工作流_2050850045557264386.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetVideoComponents`
-- `LoadImage`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `Int`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoV31FastImageToVideo` —— 1/2 个有
-- `RH_RhartVideoV31FastStartEndToVideo` —— 1/2 个有
+- `CM_IntToFloat` —— 1/2 个有
+- `Float` —— 1/2 个有
 
 ## 典型参数
 

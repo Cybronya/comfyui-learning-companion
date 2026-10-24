@@ -1,34 +1,42 @@
 ---
 name: unknown_workflow_generic_553
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.615
-common_nodes: [ImageBatchMulti, JjkText, LoadImage, PrimitiveInt, RHBerniniFullReferenceToVideo, SaveVideo]
+coverage: 0.536
+common_nodes: [CR Prompt Text, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, SaveText, YuE2Loader, YuE2Plan, YuE2Render, YuE2SamplingConfig, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2066766775840239618.json, 视频生成/图生视频/2067114379052675073.json, 视频生成/图生视频/2066950055558467586.json]
+members: [图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2101454097667944449.json, 图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2102590358038335490.json, 音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100058554219720705.json, 音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100867189648748545.json, 音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2101134683223449602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_553
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2066766775840239618.json、视频生成/图生视频/2067114379052675073.json、视频生成/图生视频/2066950055558467586.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2101454097667944449.json、图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2102590358038335490.json、音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100058554219720705.json、音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100867189648748545.json、音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2101134683223449602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageBatchMulti`
-- `JjkText`
-- `LoadImage`
-- `PrimitiveInt`
-- `RHBerniniFullReferenceToVideo`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `SaveAudioAdvanced`
+- `SaveText`
+- `YuE2Loader`
+- `YuE2Plan`
+- `YuE2Render`
+- `YuE2SamplingConfig`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
 
 ## 典型参数
 

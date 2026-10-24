@@ -1,68 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_unet_35
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.832778
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.9543
+common_nodes: [BasicScheduler, DualCLIPLoader, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirector, YusuLTXDirectorGuide]
 problems: []
 missing: []
-members: [数字人/数字人/Minimax H3 数字人 支持单人&双人_2084819750131163138.json, 数字人/数字人/Minimax H3全能参考数字人双人_多人_2085721182447427585.json, 数字人/数字人/Minimax H3数字人三人_2093592345018195970.json, 数字人/数字人/Minimax H3数字人双人_多人（Lightx2v加速）_2084818471610839041.json, 数字人/数字人/MinimaxH3-数字人MV制作_2085594233104322561.json, 数字人/数字人/MinimaxH3音频驱动+语音克隆_2086995655117070338.json, 视频生成/图生视频/MinimaxH3音频+图片=口播数字人+全节点注释_2095797295269892098.json, 视频生成/图生视频/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2094236523871952898.json, 视频生成/图生视频/数字人MV视频生成工作流_2094716000133537794.json]
+members: [视频生成/图生视频/LTX-2.3 导演台2.0视频生成工作流_2081626285859753986.json, 视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流_2078286762836844545.json, 视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流（青竹悦可用）_2078750645842178049.json, 视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2076860674927579138.json, 视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2077473064631230466.json, 视频生成/图生视频/LTX2.3-导演台2.0，全新升级_2079871871297875970.json, 视频生成/图生视频/LTX2.3-导演台2.0，全新升级，多功能支持！_2070426873351467010.json, 视频生成/文生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2077330675799252994.json, 视频生成/文生视频/LTX2.3-导演台2.0视频合成图生视频编辑全能视频生成_2073674326481657857.json, 视频生成/文生视频/LTX2.3-（导演台）实现各种复杂运镜方式_2072576891915165697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_35
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Minimax H3 数字人 支持单人&双人_2084819750131163138.json、数字人/数字人/Minimax H3全能参考数字人双人_多人_2085721182447427585.json、数字人/数字人/Minimax H3数字人三人_2093592345018195970.json、数字人/数字人/Minimax H3数字人双人_多人（Lightx2v加速）_2084818471610839041.json、数字人/数字人/MinimaxH3-数字人MV制作_2085594233104322561.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 导演台2.0视频生成工作流_2081626285859753986.json、视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流_2078286762836844545.json、视频生成/图生视频/LTX2.3-MSR-V2全能参考视频生成工作流（青竹悦可用）_2078750645842178049.json、视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2076860674927579138.json、视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2077473064631230466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `SamplerCustom`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `VisualizeSigmasKJ`
+- `YusuLTXDirector`
+- `YusuLTXDirectorGuide`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 8/9 个有
-- `LoadImage` —— 8/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
-- `PreviewAudio` —— 8/9 个有
-- `PrimitiveFloat` —— 8/9 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 8/9 个有
-- `AudioCrop` —— 6/9 个有
-- `LoraLoaderModelOnly` —— 6/9 个有
-- `ModelAttentionBackend` —— 5/9 个有
-- `ModelPreviewOverrideKJ` —— 5/9 个有
-- `AudioConcat` —— 4/9 个有
-- `EmptyAudio` —— 4/9 个有
-- `TrimAudioDuration` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `PathchSageAttentionKJ` —— 2/9 个有
-- `AudioBeforeAfterSilence` —— 1/9 个有
-- `HeartMuLa_Transcribe` —— 1/9 个有
-- `MiniMaxH3SigmaShift` —— 1/9 个有
-- `Qwen3TTSModelLoader` —— 1/9 个有
-- `Qwen3TTSVoiceClone` —— 1/9 个有
-- `SDVN Load Image Url` —— 1/9 个有
-- `VHS_LoadAudio` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `CLIPTextEncode` —— 9/10 个有
+- `ModelPreviewOverrideKJ` —— 9/10 个有
+- `LTX2SamplingPreviewOverride` —— 8/10 个有
+- `LTXVCropGuides` —— 5/10 个有
+- `LiconMSR` —— 5/10 个有
+- `LoadImage` —— 5/10 个有
+- `LoraLoaderModelOnly` —— 5/10 个有
+- `YusuLTXDirectorCropGuides` —— 5/10 个有
+- `Label (rgthree)` —— 4/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `PrimitiveFloat` —— 3/10 个有
+- `easy int` —— 3/10 个有
+- `TTResolutionSelector` —— 2/10 个有
 
 ## 典型参数
 

@@ -1,60 +1,49 @@
 ---
 name: unknown_workflow_sampler_clip_vae_44
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.904
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DetailDaemonSamplerNode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSamplerSelect, NunchakuFluxDiTLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.915
+common_nodes: [CLIPTextEncode, DualCLIPLoader, LoadImage, PreviewImage, SaveImage, VAEDecode, VAELoader, WithAnyoneModelLoaderNode, WithAnyoneSamplerNode, WithAnyoneSinglePersonConditioningNode]
 problems: []
-missing: [easy cleanGpuUsed, Text Multiline]
-members: [图片生成/文生图/1922580731393097729.json, 图片生成/文生图/1982900132742070274.json]
+missing: []
+members: [图片生成/图生图/WithAnyone多人合影工作流_1986924641862266881.json, 图片生成/图生图/WithAnyone多人合影工作流_2049672518990041089.json, 图片生成/文生图/BBox 画布 快捷定位 WithAnyone多人合影_1987625825740763137.json, 图片生成/文生图/WithAnyone-2人合照_1988162313423339521.json, 图片生成/文生图/WithAnyone-4人合照_1988322980231036930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_44
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1922580731393097729.json、图片生成/文生图/1982900132742070274.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/WithAnyone多人合影工作流_1986924641862266881.json、图片生成/图生图/WithAnyone多人合影工作流_2049672518990041089.json、图片生成/文生图/BBox 画布 快捷定位 WithAnyone多人合影_1987625825740763137.json、图片生成/文生图/WithAnyone-2人合照_1988162313423339521.json、图片生成/文生图/WithAnyone-4人合照_1988322980231036930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `DetailDaemonSamplerNode`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `NunchakuFluxDiTLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
+- `WithAnyoneModelLoaderNode`
+- `WithAnyoneSamplerNode`
+- `WithAnyoneSinglePersonConditioningNode`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `JJC_JoyCaption` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `NunchakuFluxLoraLoader` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `ycBBoxBridge` —— 3/5 个有
+- `ycCanvasBBox` —— 3/5 个有
+- `WithAnyoneBBoxNode` —— 2/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 960 | - | 2 | 93% |
-| 高度 | 1344 | - | 2 | 86% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,7 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 960，样本不足，未给区间，2 个样本，取值集中（一致性 93%）
-- 高度 中位数 1344，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed、Text Multiline
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,75 +1,93 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_33
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5625
-common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DetailDaemonSamplerNode, DualCLIPLoader, FluxGuidance, GetNode, ImageSmartSharpen+, InjectLatentNoise+, KSamplerSelect, LatentPixelScale, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoaderV2, RandomNoise, RebatchLatents, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, UpscaleModelLoader, VAEDecode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.464833
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CameraWatermarkNode, ConditioningZeroOut, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), GetNode, Image Comparer (rgthree), ImageCASharpening+, ImageScale, KOOK_ImageCompression, KOOK_SaveJPGImage, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPassThrough, ModelSamplingAuraFlow, PlaySound|pysssss, PreviewImage, PrimitiveString, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SomethingToString, StringConcatenate, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextInput_, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageSize, easy imageSizeBySide, easy int, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
-missing: [CR Text, CR Text Concatenate, ImageSmartSharpen+, LayerUtility: ImageScaleByAspectRatio V2, InjectLatentNoise+, CR Aspect Ratio, LayerUtility: TextJoin]
-members: [图片生成/文生图/1914029963945934850.json, 图片生成/文生图/1928883725826953218.json]
+missing: []
+members: [图片生成/图生图/Z-image+双采+反推+TTP-HD_2067530663779192834.json, 图片生成/图生图/高清放大 — Zimage双采+SeedVR2高清+TTP分块_2040612027781091330.json, 图片生成/图生图/高清放大 — Zimage双采+SeedVR2高清+TTP分块_2070775940573130753.json, 图片生成/图生图/鳌拜拜人设V2_2061710823273353218.json, 图片生成/图生图/鳌拜拜人设V2自选lora_2061718505837383681.json, 图片生成/文生图/❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1914029963945934850.json、图片生成/文生图/1928883725826953218.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Z-image+双采+反推+TTP-HD_2067530663779192834.json、图片生成/图生图/高清放大 — Zimage双采+SeedVR2高清+TTP分块_2040612027781091330.json、图片生成/图生图/高清放大 — Zimage双采+SeedVR2高清+TTP分块_2070775940573130753.json、图片生成/图生图/鳌拜拜人设V2_2061710823273353218.json、图片生成/图生图/鳌拜拜人设V2自选lora_2061718505837383681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CameraWatermarkNode`
 - `ConditioningZeroOut`
-- `DetailDaemonSamplerNode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageSmartSharpen+`
-- `InjectLatentNoise+`
-- `KSamplerSelect`
-- `LatentPixelScale`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageScale`
+- `KOOK_ImageCompression`
+- `KOOK_SaveJPGImage`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoaderV2`
-- `RandomNoise`
-- `RebatchLatents`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelPassThrough`
+- `ModelSamplingAuraFlow`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `PrimitiveString`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `SetNode`
-- `ShowText|pysssss`
-- `UpscaleModelLoader`
+- `SomethingToString`
+- `StringConcatenate`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TextInput_`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy imageSizeBySide`
+- `easy int`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 1/2 个有
-- `CLIPVisionLoader` —— 1/2 个有
-- `CR Aspect Ratio` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `EnhanceDetail` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LayerUtility: TextJoin` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `RepeatLatentBatch` —— 1/2 个有
-- `StyleModelApply` —— 1/2 个有
-- `StyleModelLoader` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
+- `LoadImagesFromDir //Inspire` —— 5/6 个有
+- `CR Simple Text Watermark` —— 4/6 个有
+- `CheckpointLoaderSimple` —— 4/6 个有
+- `ColorMatch` —— 4/6 个有
+- `ImageSharpen` —— 4/6 个有
+- `LazyCache` —— 4/6 个有
+- `ImageRGBA2RGB` —— 2/6 个有
+- `LayerUtility: ImageBlendAdvance V3` —— 2/6 个有
+- `RHUploadZip` —— 2/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 12 | 12 - 15 | 6 | 89% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | dpmpp_sde | - | 6 | 67% |
+| 重绘幅度 | simple | - | 6 | 67% |
 
 ## 常见问题
 
@@ -77,5 +95,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、ImageSmartSharpen+、LayerUtility: ImageScaleByAspectRatio V2、InjectLatentNoise+
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 15，6 个样本，取值集中（一致性 89%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，6 个样本，一致性 67%
+- 重绘幅度 最常用 simple，6 个样本，一致性 67%
+- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

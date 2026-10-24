@@ -7,13 +7,13 @@ coverage: 0.900125
 common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, PreviewAny, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018664165719674881.json, 视频生成/图生视频/2017294835589324802.json, 视频生成/图生视频/2017509213773238274.json, 视频生成/图生视频/2016740203737653250.json, 视频生成/图生视频/2017231057254354945.json, 视频生成/图生视频/2017276416928260097.json, 音频生成/音频生成/自动生成数字人V2-OmniVoice声音设计（方言支持！）-Infinite Talk动态数字人_2041718633499467778.json, 音频生成/音频生成/自动生成数字人V3-VoxCPM2声音设计（方言文本翻译）-Infinite Talk数字人_2042769722399268866.json]
+members: [视频生成/图生视频/(无限时长分段动作)Wan2.2版Infinite Talk图生视频数字人V2_2018664165719674881.json, 视频生成/图生视频/AA--Infinite Talk动态数字人+Qwen TTS声音克隆_2017294835589324802.json, 视频生成/图生视频/AA--自动生成数字人-Infinite Talk动态数字人+Qwen TTS声音设计_2017509213773238274.json, 视频生成/图生视频/InfiniteTalk 2.1+2.2混用高动态图生视频数字人V1_2016740203737653250.json, 视频生成/图生视频/InfiniteTalk 2.1+2.2混用高动态图生视频数字人V2(动态加强)_2017231057254354945.json, 视频生成/图生视频/（声音克隆）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017276416928260097.json, 音频生成/音频生成/自动生成数字人V2-OmniVoice声音设计（方言支持！）-Infinite Talk动态数字人_2041718633499467778.json, 音频生成/音频生成/自动生成数字人V3-VoxCPM2声音设计（方言文本翻译）-Infinite Talk数字人_2042769722399268866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_239
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2018664165719674881.json、视频生成/图生视频/2017294835589324802.json、视频生成/图生视频/2017509213773238274.json、视频生成/图生视频/2016740203737653250.json、视频生成/图生视频/2017231057254354945.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/(无限时长分段动作)Wan2.2版Infinite Talk图生视频数字人V2_2018664165719674881.json、视频生成/图生视频/AA--Infinite Talk动态数字人+Qwen TTS声音克隆_2017294835589324802.json、视频生成/图生视频/AA--自动生成数字人-Infinite Talk动态数字人+Qwen TTS声音设计_2017509213773238274.json、视频生成/图生视频/InfiniteTalk 2.1+2.2混用高动态图生视频数字人V1_2016740203737653250.json、视频生成/图生视频/InfiniteTalk 2.1+2.2混用高动态图生视频数字人V2(动态加强)_2017231057254354945.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

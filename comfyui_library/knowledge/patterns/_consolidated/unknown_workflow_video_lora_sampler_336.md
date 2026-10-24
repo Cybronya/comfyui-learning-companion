@@ -1,61 +1,54 @@
 ---
 name: unknown_workflow_video_lora_sampler_336
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.747571
-common_nodes: [CR Text, GetNode, JWInteger, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.968833
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1954108894912114689.json, 视频生成/文生视频/1971154804091326465.json, 视频生成/文生视频/wan2.2文生视频超级加速（4步加速lora+kj版本）_2020056477867708417.json, 视频生成/文生视频/1954103661171503106.json, 视频生成/文生视频/1950844539659550722.json, 视频生成/文生视频/1953642911277744130.json, 视频生成/文生视频/1954106485791977474.json]
+members: [视频生成/图生视频/2025-5-20-图生视频+修复脸（带反推）_1924496227268743169.json, 视频生成/图生视频/WAN2.1 自定义场景运镜（大师版_1920649191725400066.json, 视频生成/图生视频/【张元英跳舞】WAN2.1 跳舞特效_1914559831519494146.json, 视频生成/图生视频/【视频特效】WAN2.1 人物变身天使_1914500420041961473.json, 视频生成/图生视频/图生视频_1924271202037059586.json, 视频生成/图生视频/让照片说话【万相图生视频】_1914130917185548290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_336
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/1954108894912114689.json、视频生成/文生视频/1971154804091326465.json、视频生成/文生视频/wan2.2文生视频超级加速（4步加速lora+kj版本）_2020056477867708417.json、视频生成/文生视频/1954103661171503106.json、视频生成/文生视频/1950844539659550722.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2025-5-20-图生视频+修复脸（带反推）_1924496227268743169.json、视频生成/图生视频/WAN2.1 自定义场景运镜（大师版_1920649191725400066.json、视频生成/图生视频/【张元英跳舞】WAN2.1 跳舞特效_1914559831519494146.json、视频生成/图生视频/【视频特效】WAN2.1 人物变身天使_1914500420041961473.json、视频生成/图生视频/图生视频_1924271202037059586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `JWInteger`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatToSigmas` —— 6/7 个有
-- `StringToFloatList` —— 6/7 个有
-- `RH_LLMAPI_NODE` —— 5/7 个有
-- `ImpactSwitch` —— 4/7 个有
-- `Text Concatenate` —— 4/7 个有
-- `Wan22PromptSelector` —— 4/7 个有
-- `easy showAnything` —— 4/7 个有
-- `WanVideoContextOptions` —— 2/7 个有
-- `CreateCFGScheduleFloatList` —— 1/7 个有
-- `CreateVideo` —— 1/7 个有
-- `PreViewVideo` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
+- `Int` —— 4/6 个有
+- `LayerUtility: PurgeVRAM` —— 3/6 个有
+- `WanVideoTeaCache` —— 3/6 个有
+- `Fast Bypasser (rgthree)` —— 2/6 个有
+- `Fast Groups Muter (rgthree)` —— 2/6 个有
+- `Seed Everywhere` —— 2/6 个有
+- `StringConstantMultiline` —— 2/6 个有
+- `LayerUtility: TextBox` —— 1/6 个有
+- `ReActorFaceSwapOpt` —— 1/6 个有
+- `TextBox` —— 1/6 个有
+- `Textbox` —— 1/6 个有
 
 ## 典型参数
 

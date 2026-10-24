@@ -1,82 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_385
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.500333
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 5
+level: moderate
+coverage: 0.9026
+common_nodes: [1hew_StringJoinMulti, AnyBooleanSwitch, CFGGuider, CLIPLoader, CLIPTextEncode, DownloadAndLoadGIMMVFIModel, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GIMMVFI_interpolate, GetImageSize, INTConstant, ImageConcatMulti, ImageScaleToTotalPixels, ImpactControlBridge, ImpactNeg, Int, KSamplerAdvanced, KSamplerSelect, Logic Comparison AND, LoraLoaderModelOnly, ModelSamplingSD3, PainterVRAM, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SimpleMath+, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideo, ZML_AnyTypeSwitchFive, easy ifElse, workflow>load image01, workflow>load image02, workflow>load image03]
 problems: []
 missing: []
-members: [视频生成/图生视频/2031370411778248706.json, 视频生成/图生视频/2020844422413422593.json, 视频生成/图生视频/2031577434885197826.json, 视频生成/图生视频/2029600384762781697.json, 视频生成/图生视频/2017232753040822273.json, 视频生成/文生视频/高动态音画同步图生视频_支持单图、首尾帧_2046419746307973122.json]
+members: [图片生成/图生图/人物换装+生视频_无限制_2039724246200487938.json, 视频生成/图生视频/一键换装视频工作流_2027331216810184706.json, 视频生成/图生视频/人物变大+生视频_无限制_2039915994931531777.json, 视频生成/图生视频/人物换衣_变大_大摆锤视频_三个流程一键生成_2040088399033405441.json, 视频生成/文生视频/AI换装丨Flux2-Klein＋Wan2.2丨换装试穿·转身视频_2099769122765758466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_385
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2031370411778248706.json、视频生成/图生视频/2020844422413422593.json、视频生成/图生视频/2031577434885197826.json、视频生成/图生视频/2029600384762781697.json、视频生成/图生视频/2017232753040822273.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人物换装+生视频_无限制_2039724246200487938.json、视频生成/图生视频/一键换装视频工作流_2027331216810184706.json、视频生成/图生视频/人物变大+生视频_无限制_2039915994931531777.json、视频生成/图生视频/人物换衣_变大_大摆锤视频_三个流程一键生成_2040088399033405441.json、视频生成/文生视频/AI换装丨Flux2-Klein＋Wan2.2丨换装试穿·转身视频_2099769122765758466.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：50%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+全部 5 个 workflow 都包含：
+- `1hew_StringJoinMulti`
+- `AnyBooleanSwitch`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ColorMatch`
+- `DownloadAndLoadGIMMVFIModel`
+- `EmptyFlux2LatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `Flux2Scheduler`
+- `GIMMVFI_interpolate`
+- `GetImageSize`
 - `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `JWInteger`
+- `ImageConcatMulti`
+- `ImageScaleToTotalPixels`
+- `ImpactControlBridge`
+- `ImpactNeg`
+- `Int`
 - `KSamplerAdvanced`
-- `LoadAudio`
-- `LoadImage`
+- `KSamplerSelect`
+- `Logic Comparison AND`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelPatchTorchSettings`
-- `PainterAI2V`
-- `PainterAudioCut`
+- `ModelSamplingSD3`
+- `PainterVRAM`
 - `PathchSageAttentionKJ`
-- `SetNode`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SimpleMath+`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
+- `ZML_AnyTypeSwitchFive`
+- `easy ifElse`
+- `workflow>load image01`
+- `workflow>load image02`
+- `workflow>load image03`
 
 **可变部分**（部分 workflow 才有）：
-- `JoinStrings` —— 5/6 个有
-- `PreviewAudio` —— 5/6 个有
-- `Qwen3_VQA` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `SomethingToString` —— 5/6 个有
-- `TextInput_` —— 5/6 个有
-- `AudioSeparation` —— 4/6 个有
-- `SaveAudio` —— 4/6 个有
-- `TDQwen3TTSDefineSpeaker` —— 4/6 个有
-- `TDQwen3TTSModelLoader` —— 4/6 个有
-- `TDQwen3TTSMultiDialog` —— 4/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
-- `RIFE VFI` —— 2/6 个有
-- `Float` —— 1/6 个有
-- `GetImagesFromBatchIndexed` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
+- `TextBox` —— 2/5 个有
+- `TT_img_enc_v2` —— 1/5 个有
+- `Textbox` —— 1/5 个有
+- `ZML_SwitchOutput` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 67% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 6 | 83% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 83% |
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 12 | 4 - 12 | 5 | 69% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -84,8 +90,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，6 个样本，取值集中（一致性 83%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 83%
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 4 - 12，5 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

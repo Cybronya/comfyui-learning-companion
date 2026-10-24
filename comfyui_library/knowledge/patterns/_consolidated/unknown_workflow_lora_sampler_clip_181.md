@@ -1,75 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_clip_181
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9495
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.377333
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CreateVideo, GetNode, ImageBatch, ImageFromBatch, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PrimitiveInt, SaveVideo, SetNode, UNETLoader, VAEDecode, VAELoader, WanInfiniteTalkToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/VividMuse Z-Image家族模型大对比_2021580062834827265.json, 图片生成/文生图/Z-Image文生图 双采破随机+极氪典藏版V6_2012164483946389506.json]
+members: [图片生成/图生图/凤希AI单数字人无限时长对口型（默认80秒）_2021523374865915905.json, 视频生成/图生视频/InfiniteTalk_图生视频_双人对话-对口型_2019310713029791745.json, 视频生成/图生视频/InfiniteTalk_数字人（单人）_2019342958109134850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_181
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/VividMuse Z-Image家族模型大对比_2021580062834827265.json、图片生成/文生图/Z-Image文生图 双采破随机+极氪典藏版V6_2012164483946389506.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/凤希AI单数字人无限时长对口型（默认80秒）_2021523374865915905.json、视频生成/图生视频/InfiniteTalk_图生视频_双人对话-对口型_2019310713029791745.json、视频生成/图生视频/InfiniteTalk_数字人（单人）_2019342958109134850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `CreateVideo`
+- `GetNode`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSampler`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `ModelPatchLoader`
+- `PrimitiveInt`
+- `SaveVideo`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Text_Box` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageSharpen` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `AudioConcat` —— 1/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `CLIPVisionEncode` —— 1/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `StringConcatenate` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
+- `easy imageScaleDown` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 19 | - | 2 | 42% |
-| 采样算法 | 1.75 | - | 2 | 57% |
-| 调度器 | euler | - | 2 | 50% |
-| 重绘幅度 | simple | - | 2 | 50% |
-| 宽度 | 1232 | - | 2 | 75% |
-| 高度 | 1856 | - | 2 | 90% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | normal | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 29/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 19，样本不足，未给区间，2 个样本，取值分散，一致性仅 42%
-- 采样算法 中位数 1.75，样本不足，未给区间，2 个样本
-- 调度器 最常用 euler，2 个样本，一致性 50%
-- 重绘幅度 最常用 simple，2 个样本，一致性 50%
-- 宽度 中位数 1232，样本不足，未给区间，2 个样本
-- 高度 中位数 1856，样本不足，未给区间，2 个样本，取值集中（一致性 90%）
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 normal，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（29/3 个样本）：Steps较低可能导致细节不足

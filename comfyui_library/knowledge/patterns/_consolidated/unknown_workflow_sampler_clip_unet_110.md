@@ -1,74 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_110
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: strong
-coverage: 0.785667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
-missing: [MathExpression|pysssss, ImageResize+, LayerMask: BenUltra, LayerMask: LoadBenModel, LayerUtility: ImageScaleRestore]
-members: [图片生成/文生图/1938559858222551041.json, 图片生成/文生图/1939140747582955521.json, 图片生成/文生图/1942411562571214849.json, 图片生成/文生图/1942739895523979266.json, 图片生成/文生图/1942746478307946498.json, 图片生成/文生图/1952011457573629953.json]
+coverage: 0.9566
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/003.FLUX.2智能综合002.文生图标准流_2035170236101562369.json, 图片生成/文生图/5.其他类型-06.NSF+-06.FLUX.2-010.flux-2-klein-文生图标准流_2026630137671852033.json, 图片生成/文生图/ERNIE+结构化提示词海报风格增强_2074133568149868546.json, 图片生成/文生图/ERNIE-Image-Turbo文生图_2063975108284346370.json, 图片生成/文生图/ERNIE-Image-Turbo文生图艺术字设计_2052935133627465729.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2045418640316567553.json, 图片生成/文生图/ERNIE-Image-Turbo（文生图）_2059103096625782786.json, 图片生成/文生图/ERNIE文生图_2048690063034294273.json, 图片生成/文生图/Erine Turbo文生图_2044755147204599809.json, 图片生成/文生图/F01.文生图标准流_2061325864108908545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_110
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1938559858222551041.json、图片生成/文生图/1939140747582955521.json、图片生成/文生图/1942411562571214849.json、图片生成/文生图/1942739895523979266.json、图片生成/文生图/1942746478307946498.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/003.FLUX.2智能综合002.文生图标准流_2035170236101562369.json、图片生成/文生图/5.其他类型-06.NSF+-06.FLUX.2-010.flux-2-klein-文生图标准流_2026630137671852033.json、图片生成/文生图/ERNIE+结构化提示词海报风格增强_2074133568149868546.json、图片生成/文生图/ERNIE-Image-Turbo文生图_2063975108284346370.json、图片生成/文生图/ERNIE-Image-Turbo文生图艺术字设计_2052935133627465729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LoadImage`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 5/6 个有
-- `FluxResolutionNode` —— 5/6 个有
-- `MathExpression|pysssss` —— 5/6 个有
-- `RH_Translator` —— 5/6 个有
-- `ImageResize+` —— 4/6 个有
-- `FluxKontextImageScale` —— 2/6 个有
-- `EmptySD3LatentImage` —— 1/6 个有
-- `ImageScaleBy` —— 1/6 个有
-- `ImageStitch` —— 1/6 个有
-- `LayerMask: BenUltra` —— 1/6 个有
-- `LayerMask: LoadBenModel` —— 1/6 个有
-- `LayerUtility: ImageScaleRestore` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RBGImageStitchPlus` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 7/10 个有
+- `easy cleanGpuUsed` —— 3/10 个有
+- `UnetLoaderGGUF` —— 2/10 个有
+- `CR Text` —— 1/10 个有
+- `EasySizeSimpleSetting` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `RAMCleanup` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1280 | 1280 - 1280 | 5 | 100% |
+| 采样步数 | 8 | 6 - 8 | 10 | 88% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，观测区间 1280 - 1280，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、ImageResize+、LayerMask: BenUltra、LayerMask: LoadBenModel、LayerUtility: ImageScaleRestore
+- 采样步数 中位数 8，观测区间 6 - 8，10 个样本，取值集中（一致性 88%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

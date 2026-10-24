@@ -7,13 +7,13 @@ coverage: 0.565
 common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, Flux2Scheduler, GetImageSize, GetNode, ImageScaleToTotalPixels, ImpactInt, KSampler, KSamplerSelect, LTX2_NAG, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerColor: ColorAdapter, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RTXVideoSuperResolution, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, String Replace (mtb), Switch any [Crystools], TextEncodeQwenImageEditPlus, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VRAM_Debug, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2043904012268871681.json, 视频生成/文生视频/LTX2.3图生30秒长视频_2048717659298078721.json]
+members: [视频生成/图生视频/LTX2.3图生30秒长视频_2043904012268871681.json, 视频生成/文生视频/LTX2.3图生30秒长视频_2048717659298078721.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_upscale_latent_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2043904012268871681.json、视频生成/文生视频/LTX2.3图生30秒长视频_2048717659298078721.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3图生30秒长视频_2043904012268871681.json、视频生成/文生视频/LTX2.3图生30秒长视频_2048717659298078721.json）
 
 - **类型**：Image To Image
 - **样本数**：2

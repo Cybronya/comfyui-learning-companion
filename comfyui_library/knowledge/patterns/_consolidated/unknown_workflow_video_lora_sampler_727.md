@@ -3,62 +3,66 @@ name: unknown_workflow_video_lora_sampler_727
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.625
-common_nodes: [Anything Everywhere, GetNode, GrowMask, ImageCompositeMasked, ImageFromBatch+, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM V2, LoadImage, MaskRepeatBatch, MaskToImage, MathExpression|pysssss, PreviewImage, RepeatImageBatch, Seed Everywhere, SetNode, SolidMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy compare, easy ifElse]
+coverage: 0.5595
+common_nodes: [Any2ListNode, CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, PreviewAny, QZ_ResolutionPreset, SetNode, SimpleMath+, TextInput_, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, WanMoeKSampler, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy promptLine, easy showAnything]
 problems: []
-missing: [ImageFromBatch+, LayerUtility: PurgeVRAM V2, MaskRepeatBatch, MathExpression|pysssss, WanVideoMiniMaxRemoverEmbeds, easy batchAnything, easy compare, Seed Everywhere]
-members: [视频生成/图生视频/1974649662290399233.json, 视频生成/文生视频/1974649662290399233.json]
+missing: []
+members: [视频生成/图生视频/AI代码侠土豆 分镜多图参考-全自动文本提示词驱动长视频生成_2005611030627713025.json, 视频生成/图生视频/AI代码侠土豆-SVIPro单图提示词全自动长视频生成_2005508289192493057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_727
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1974649662290399233.json、视频生成/文生视频/1974649662290399233.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆 分镜多图参考-全自动文本提示词驱动长视频生成_2005611030627713025.json、视频生成/图生视频/AI代码侠土豆-SVIPro单图提示词全自动长视频生成_2005508289192493057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
+- `Any2ListNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DiffusionModelLoaderKJ`
 - `GetNode`
-- `GrowMask`
-- `ImageCompositeMasked`
-- `ImageFromBatch+`
+- `ImageBatchExtendWithOverlap`
 - `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `MaskRepeatBatch`
-- `MaskToImage`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `RepeatImageBatch`
-- `Seed Everywhere`
+- `LoraLoaderModelOnly`
+- `PreviewAny`
+- `QZ_ResolutionPreset`
 - `SetNode`
-- `SolidMask`
-- `VHS_LoadVideo`
+- `SimpleMath+`
+- `TextInput_`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoMiniMaxRemoverEmbeds`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy compare`
-- `easy ifElse`
+- `WanImageToVideoSVIPro`
+- `WanMoeKSampler`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy indexAnything`
+- `easy lengthAnything`
+- `easy promptLine`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `FromListGet1Image` —— 1/2 个有
+- `SDVM Image List Repeat` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | 1 | - | 2 | 100% |
+| 重绘幅度 | euler | - | 2 | 100% |
 
 ## 常见问题
 
@@ -66,5 +70,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、LayerUtility: PurgeVRAM V2、MaskRepeatBatch、MathExpression|pysssss、WanVideoMiniMaxRemoverEmbeds
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

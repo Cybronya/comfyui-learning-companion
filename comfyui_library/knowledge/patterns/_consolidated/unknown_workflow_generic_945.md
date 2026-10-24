@@ -1,41 +1,34 @@
 ---
 name: unknown_workflow_generic_945
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.912
-common_nodes: [CR Text, FishS2MultiSpeakerTTS, LazySwitch1way, LoadAudio, PreviewAny, RH_LLMAPI_NODE, SaveAudio, WhisperSTT, easy boolean, ttN concat]
+frequency: 3
+level: moderate
+coverage: 0.866667
+common_nodes: [RH_YouchuanTextToImageNiji7, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudioS2-多人声音克隆【small-JJ小健健】_2040976378308337665.json, 音频生成/音频生成/声音克隆-FishAudioS2-单人_双人【small-JJ小健健】_2040287687734726658.json]
+members: [图片生成/图生图/悠船图生图-niji7_2080601433854013442.json, 图片生成/文生图/Youchuan_TextToImageNiji7_v7.0_2034593904493858817.json, 图片生成/文生图/动漫文生图工作流｜悠船 Niji 7 二次元专属模型_2100471577233149953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_945
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/FishAudioS2-多人声音克隆【small-JJ小健健】_2040976378308337665.json、音频生成/音频生成/声音克隆-FishAudioS2-单人_双人【small-JJ小健健】_2040287687734726658.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-niji7_2080601433854013442.json、图片生成/文生图/Youchuan_TextToImageNiji7_v7.0_2034593904493858817.json、图片生成/文生图/动漫文生图工作流｜悠船 Niji 7 二次元专属模型_2100471577233149953.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `FishS2MultiSpeakerTTS`
-- `LazySwitch1way`
-- `LoadAudio`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `WhisperSTT`
-- `easy boolean`
-- `ttN concat`
+全部 3 个 workflow 都包含：
+- `RH_YouchuanTextToImageNiji7`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FishS2VoiceCloneTTS` —— 1/2 个有
+- `LoadImage` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 
@@ -47,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

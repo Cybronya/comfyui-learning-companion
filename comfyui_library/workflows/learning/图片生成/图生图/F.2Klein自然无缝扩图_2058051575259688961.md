@@ -1,0 +1,124 @@
+---
+key: 图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json
+name: F.2Klein自然无缝扩图_2058051575259688961
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json
+hash: 2e4de0a526e9530b
+coverage: 0.717391
+learned_at: 2026-10-23 10:52:48
+nodes: [Flux2KleinModelConfig_EditUtils, CLIPLoader, VAELoader, ConditioningZeroOut, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerSelect, Flux2Scheduler, CFGGuider, SamplerCustomAdvanced, GetImageSize, PrimitiveInt, VAEDecode, Flux2KleinOutputExtractor_EditUtils, Reroute, UNETLoader, VAEDecode, SamplerCustomAdvanced, RandomNoise, PrimitiveInt, Flux2Scheduler, ConditioningZeroOut, CropWithPadInfo_EditUtils, CFGGuider, UNETLoader, LoraLoaderModelOnly, EditTextEncode_EditUtils, AdaptiveLongestEdge_EditUtils, Flux2KleinConfigPreparer_EditUtils, ImageScaleBy, CM_FloatToInt, TTP_Tile_image_size, TTP_Image_Tile_Batch, ImpactImageBatchToImageList, GetImageSize, CM_IntToNumber, CM_IntToNumber, CM_NumberBinaryOperation, CM_NumberToInt, Display Any (rgthree), Flux2KleinConfigPreparer_EditUtils, LoraLoaderModelOnly, LoraLoaderModelOnly, Flux2KleinModelConfig_EditUtils, PrimitiveStringMultiline, VAELoader, CLIPLoader, EditTextEncode_EditUtils, Flux2KleinOutputExtractor_EditUtils, CropWithPadInfo_EditUtils, GetImageSize, KSamplerSelect, ImageResize+, ImageListToImageBatch, TTP_Image_Assy, Note, easy imageColorMatch, Image Comparer (rgthree), SaveImage, easy cleanGpuUsed, Reroute, easy float, SetNode, SetNode, SetNode, SetNode, Int, Int, GetNode, GetNode, GetNode, LayerUtility: ExtendCanvasV2, GetNode, SetNode, SaveImage, CropWithPadInfo_EditUtils, GetNode, SetNode, SetNode, GetNode, GetNode, Image Comparer (rgthree), UNETLoader, CropWithPadInfo_EditUtils, Int, Int, Fast Groups Bypasser (rgthree), GetNode, SetNode, RandomNoise, GetNode, LoadImage]
+patterns: []
+missing: []
+---
+
+# 图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（92 个）：
+- `Flux2KleinModelConfig_EditUtils`
+- `CLIPLoader`
+- `VAELoader`
+- `ConditioningZeroOut`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerSelect` ★核心
+- `Flux2Scheduler`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `GetImageSize`
+- `PrimitiveInt`
+- `VAEDecode` ★核心
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Reroute`
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `PrimitiveInt`
+- `Flux2Scheduler`
+- `ConditioningZeroOut`
+- `CropWithPadInfo_EditUtils`
+- `CFGGuider`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `EditTextEncode_EditUtils`
+- `AdaptiveLongestEdge_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `ImageScaleBy`
+- `CM_FloatToInt`
+- `TTP_Tile_image_size`
+- `TTP_Image_Tile_Batch`
+- `ImpactImageBatchToImageList`
+- `GetImageSize`
+- `CM_IntToNumber`
+- `CM_IntToNumber`
+- `CM_NumberBinaryOperation`
+- `CM_NumberToInt`
+- `Display Any (rgthree)`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Flux2KleinModelConfig_EditUtils`
+- `PrimitiveStringMultiline`
+- `VAELoader`
+- `CLIPLoader`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `CropWithPadInfo_EditUtils`
+- `GetImageSize`
+- `KSamplerSelect` ★核心
+- `ImageResize+`
+- `ImageListToImageBatch`
+- `TTP_Image_Assy`
+- `Note`
+- `easy imageColorMatch`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `easy cleanGpuUsed`
+- `Reroute`
+- `easy float`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `Int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LayerUtility: ExtendCanvasV2`
+- `GetNode`
+- `SetNode`
+- `SaveImage`
+- `CropWithPadInfo_EditUtils`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `UNETLoader` ★核心
+- `CropWithPadInfo_EditUtils`
+- `Int`
+- `Int`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `SetNode`
+- `RandomNoise`
+- `GetNode`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **72%**（66/92）
+
+**有卡**：`Flux2KleinModelConfig_EditUtils`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`KSamplerSelect`、`Flux2Scheduler`、`CFGGuider`、`SamplerCustomAdvanced`、`GetImageSize`、`VAEDecode`、`Flux2KleinOutputExtractor_EditUtils`、`UNETLoader`、`RandomNoise`、`CropWithPadInfo_EditUtils`、`EditTextEncode_EditUtils`、`AdaptiveLongestEdge_EditUtils`、`Flux2KleinConfigPreparer_EditUtils`、`ImageScaleBy`、`CM_FloatToInt`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`ImpactImageBatchToImageList`、`CM_IntToNumber`、`CM_NumberBinaryOperation`、`CM_NumberToInt`、`Display Any (rgthree)`、`ImageResize+`、`ImageListToImageBatch`、`TTP_Image_Assy`、`easy imageColorMatch`、`SaveImage`、`easy cleanGpuUsed`、`easy float`、`Int`、`LayerUtility: ExtendCanvasV2`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPLoader、ConditioningZeroOut、SaveImage、LoadImage

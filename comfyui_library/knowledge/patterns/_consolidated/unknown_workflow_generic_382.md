@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_382
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.70225
-common_nodes: [BreezeTTS2LoadModel, BreezeTTS2VoiceDesign, CR Prompt Text, SaveAudio]
+coverage: 0.802857
+common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/声音设计_方言设计_2101869105568641025.json, 音频生成/音频生成/声音设计 方言设计_2100192848959332353.json, 音频生成/音频生成/声音设计_方言设计_2105120675768913921.json, 音频生成/音频生成/声音设计_方言设计_2105498022892363778.json]
+members: [音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json, 音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json, 音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json, 音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json, 音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1984116301922795522.json, 音频生成/音频生成/音频克隆 单双人SoulX_1984268792450662401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_382
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/声音设计_方言设计_2101869105568641025.json、音频生成/音频生成/声音设计 方言设计_2100192848959332353.json、音频生成/音频生成/声音设计_方言设计_2105120675768913921.json、音频生成/音频生成/声音设计_方言设计_2105498022892363778.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/SoulX 音频克隆_1984039890167988226.json、音频生成/音频生成/SoulX-Podcast_ 单人对话克隆工作流_1984255408770596865.json、音频生成/音频生成/SoulX-Podcast_ 双人对话工作流(simple格式-非方言)_1984276556379996161.json、音频生成/音频生成/SoulX-Podcast_ 多人对话工作流_1983788604407357442.json、音频生成/音频生成/SoulX-Podcast_ 对人对话工作流(方言版)_1983821148045680641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BreezeTTS2LoadModel`
-- `BreezeTTS2VoiceDesign`
-- `CR Prompt Text`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
 - `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `PreviewAudio` —— 5/7 个有
+- `JjkText` —— 2/7 个有
+- `TextConcatenator` —— 2/7 个有
+- `Note _O` —— 1/7 个有
 
 ## 典型参数
 

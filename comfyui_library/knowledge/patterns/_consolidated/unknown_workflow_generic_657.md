@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_657
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.74
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, SaveAudio]
+coverage: 0.736
+common_nodes: [AILab_ImageStitch, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/余温克隆音色多人对话配音工作流_2107641636846133249.json, 音频生成/音频生成/多人对话（声音克隆）Qwen3-TTS_2109166934381121537.json, 音频生成/音频生成/多人对话（声音设计）Qwen3-TTS_2109223062850859010.json]
+members: [图片生成/图生图/WAN2.7换发型_2090702421868769281.json, 图片生成/图生图/溶图_2080663796917555202.json, 图片生成/图生图/老许_WAN2.7双图编辑_2047911845645787138.json, 图片生成/文生图/人物服装工作流_2054195893984874498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_657
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/余温克隆音色多人对话配音工作流_2107641636846133249.json、音频生成/音频生成/多人对话（声音克隆）Qwen3-TTS_2109166934381121537.json、音频生成/音频生成/多人对话（声音设计）Qwen3-TTS_2109223062850859010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/WAN2.7换发型_2090702421868769281.json、图片生成/图生图/溶图_2080663796917555202.json、图片生成/图生图/老许_WAN2.7双图编辑_2047911845645787138.json、图片生成/文生图/人物服装工作流_2054195893984874498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
 - **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `AILab_ImageStitch`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `忽略多组孤海` —— 2/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
-- `HeartMuLa_Transcribe` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `AILab_ImageResize` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `RH_AlibabaWan27ImageEdit` —— 3/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `RH_Jimeng4_Image2Image` —— 1/4 个有
 
 ## 典型参数
 

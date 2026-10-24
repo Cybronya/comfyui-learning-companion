@@ -3,72 +3,66 @@ name: unknown_workflow_video_lora_sampler_813
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.767
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageScaleBy, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, RIFE VFI, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, easy clearCacheAll, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.627
+common_nodes: [Bjornulf_ShowStringText, CLIPLoader, CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int2Any_AS, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SetNode, ShowText, SimpleCondition+, SimpleMath+, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/2047589071815446530.json, 视频生成/图生视频/2065831471654457346.json]
+members: [视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json, 视频生成/图生视频/wan2.2-KJ版图生视频官方提示词_1950148993163640833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_813
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2047589071815446530.json、视频生成/图生视频/2065831471654457346.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json、视频生成/图生视频/wan2.2-KJ版图生视频官方提示词_1950148993163640833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Bjornulf_ShowStringText`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
 - `GetNode`
 - `INTConstant`
-- `ImageBatchMulti`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJv2`
+- `Int2Any_AS`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `RIFE VFI`
+- `LoadWanVideoT5TextEncoder`
+- `RH_LLMAPI_NODE`
 - `SetNode`
+- `ShowText`
+- `SimpleCondition+`
 - `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `String`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 - `easy cleanGpuUsed`
 - `easy clearCacheAll`
-- `easy saveText`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/2 个有
-- `TT_img_enc` —— 1/2 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `LoadWanVideoClipTextEncoder` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | beta | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,9 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 beta，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

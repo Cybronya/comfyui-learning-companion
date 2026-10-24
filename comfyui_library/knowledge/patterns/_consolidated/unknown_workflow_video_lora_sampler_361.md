@@ -2,75 +2,87 @@
 name: unknown_workflow_video_lora_sampler_361
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.5815
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine]
+level: strong
+coverage: 0.944667
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065971442394689538.json, 视频生成/图生视频/2067900124038254593.json, 视频生成/图生视频/2068177667341508609.json, 视频生成/图生视频/2067174173994213378.json, 视频生成/图生视频/2076230597940432898.json, 视频生成/文生视频/多参考图与高动态视频生成_ Ltx 2.3 Licon-MSR_2063854107001180161.json]
+members: [视频生成/图生视频/ltxv2.3音画同步视频_2034652282570153986.json, 视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json, 视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json, 视频生成/图生视频/图生视频 LTX2.3+ 提示词自动优化版_2075032295114895362.json, 视频生成/图生视频/图生视频-LTX2.3_2032494068420317186.json, 视频生成/图生视频/💃LTX2.3 图生视频 人物一致性优化版💃_2030439938361135105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_361
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2065971442394689538.json、视频生成/图生视频/2067900124038254593.json、视频生成/图生视频/2068177667341508609.json、视频生成/图生视频/2067174173994213378.json、视频生成/图生视频/2076230597940432898.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ltxv2.3音画同步视频_2034652282570153986.json、视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json、视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json、视频生成/图生视频/图生视频 LTX2.3+ 提示词自动优化版_2075032295114895362.json、视频生成/图生视频/图生视频-LTX2.3_2032494068420317186.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
-- `INTConstant`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LiconMSR`
 - `LoadImage`
-- `LowVRAMCheckpointLoader`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 4/6 个有
-- `GetNode` —— 4/6 个有
-- `LTXVAddGuideMulti` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `KenChenLLMGeminiBananaImageCollageNode` —— 2/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `Seed (rgthree)` —— 4/6 个有
+- `DapaoImageAspectRatioResizeNode` —— 3/6 个有
+- `RH_LLMAPI_Pro_Node` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `JWInteger` —— 2/6 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `llama_cpp_instruct_adv` —— 2/6 个有
-- `llama_cpp_model_loader` —— 2/6 个有
-- `llama_cpp_parameters` —— 2/6 个有
-- `孤海注释` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
+- `DF_Int_to_Float` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImpactInt` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LatentUpscaleModelLoader` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
+- `ResizeImageMaskNode` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `ShowText` —— 1/6 个有
+- `TextBox` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 145 | 145 - 241 | 6 | 74% |
-| 高度 | 24 | 24 - 50 | 6 | 62% |
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -78,5 +90,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 145，观测区间 145 - 241，6 个样本
-- 高度 中位数 24，观测区间 24 - 50，6 个样本
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

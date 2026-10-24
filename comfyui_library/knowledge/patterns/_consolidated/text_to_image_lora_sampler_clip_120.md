@@ -1,87 +1,110 @@
 ---
 name: text_to_image_lora_sampler_clip_120
 type: Text To Image
-frequency: 9
-level: strong
-coverage: 0.901778
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 12
+level: moderate
+coverage: 0.8665
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CR Seed, CR Text, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, Flux2KleinEditTextEncode_EditUtils, GetImageSize, INTConstant, ImageScaleBy, KSampler, KSamplerAdvanced, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, Lora Loader Stack (rgthree), MathExpression|pysssss, MemoryCleaner, PreviewImage, SaveImage, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json, 数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json, 数字人/数字人/IndexTTS2声线克隆 音色复刻音频生成方案_2108611918436069378.json, 数字人/数字人/IndexTTS2声线克隆神器｜一键复刻原声的数字人配音工作流_2108367981469323266.json, 数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110245936260796418.json, 数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110372280114176002.json, 音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json, 音频生成/音频生成/Index TTS 2.5语音合成合集｜高质量音频生成制作_2096747098271207425.json, 音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json]
+members: [图片生成/图生图/白玉CCD4K_2064892084888363009.json, 图片生成/图生图/白玉模特（图生）_2111735072553521153.json, 图片生成/图生图/高质量生图_2067499987247915009.json, 图片生成/文生图/白玉AIO三采超高清写真生成_2111353819555782658.json, 图片生成/文生图/白玉CCDV2_2067255929720102913.json, 图片生成/文生图/白玉CCD参考横屏四张_2065281329696174081.json, 图片生成/文生图/白玉CCD文生图-横屏四张_2065307512013934593.json, 图片生成/文生图/白玉CCD文生图-竖屏四张_2065314398050275330.json, 图片生成/文生图/白玉模特（文）_2111740846902169602.json, 图片生成/文生图/豹豹喵呜制作：白玉AIO三采超高清写真生成_2059551581825228802.json, 图片生成/文生图/豹豹喵呜制作：白玉AIO三采超高清写真生成_2067766984112173057.json, 视频生成/文生视频/Engineer V6+白玉AIO三采文生图_2065288263987974146.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_120
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json、数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json、数字人/数字人/IndexTTS2声线克隆 音色复刻音频生成方案_2108611918436069378.json、数字人/数字人/IndexTTS2声线克隆神器｜一键复刻原声的数字人配音工作流_2108367981469323266.json、数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110245936260796418.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/白玉CCD4K_2064892084888363009.json、图片生成/图生图/白玉模特（图生）_2111735072553521153.json、图片生成/图生图/高质量生图_2067499987247915009.json、图片生成/文生图/白玉AIO三采超高清写真生成_2111353819555782658.json、图片生成/文生图/白玉CCDV2_2067255929720102913.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Seed`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
+- `Flux2KleinEditTextEncode_EditUtils`
+- `GetImageSize`
+- `INTConstant`
+- `ImageScaleBy`
 - `KSampler`
-- `LoadAudio`
-- `LoraLoaderModelOnly`
+- `KSamplerAdvanced`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LCSSharpnessCalibrate`
+- `LCSSharpnessIntervene`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleRestore V2`
+- `Lora Loader Stack (rgthree)`
+- `MathExpression|pysssss`
+- `MemoryCleaner`
+- `PreviewImage`
+- `SaveImage`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy imageBatchToImageList`
+- `easy imageColorMatch`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 8/9 个有
-- `CR Prompt Text` —— 7/9 个有
-- `PreviewAudio` —— 6/9 个有
-- `T8_IndexTTS25_ModelLoader` —— 5/9 个有
-- `easy downloadIndexTTSAndLoadModel` —— 5/9 个有
-- `easy indexTTSGenerateSimple` —— 5/9 个有
-- `Float` —— 4/9 个有
-- `T8_IndexTTS25_EmotionControl` —— 4/9 个有
-- `T8_IndexTTS25_Generate` —— 4/9 个有
-- `T8_IndexTTS25_SamplingConfig` —— 4/9 个有
-- `easy indexTTSEmotionVector` —— 4/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `T8_IndexTTS25_DialogueGenerate` —— 2/9 个有
-- `T8_IndexTTS25_DialogueScript` —— 2/9 个有
-- `T8_IndexTTS25_RoleLibrary` —— 2/9 个有
-- `T8_IndexTTS25_VoiceProfile` —— 2/9 个有
-- `easy indexTTSEmotionMerge` —— 2/9 个有
-- `PixaromaGroupSwitch` —— 1/9 个有
-- `SaveAudioAdvanced` —— 1/9 个有
+- `FloatConstant` —— 11/12 个有
+- `LoadImage` —— 11/12 个有
+- `easy showAnything` —— 11/12 个有
+- `llama_cpp_instruct_adv` —— 11/12 个有
+- `llama_cpp_model_loader` —— 11/12 个有
+- `ComfySwitchNode` —— 10/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 10/12 个有
+- `easy boolean` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 8/12 个有
+- `RepeatLatentBatch` —— 4/12 个有
+- `easy saveText` —— 4/12 个有
+- `Int` —— 2/12 个有
+- `CLIPLoaderGGUF` —— 1/12 个有
+- `CR Prompt List` —— 1/12 个有
+- `ImpactSwitch` —— 1/12 个有
+- `String Literal` —— 1/12 个有
+- `Text Concatenate (JPS)` —— 1/12 个有
+- `easy positive` —— 1/12 个有
+- `忽略多组孤海` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 8 | 8 - 8 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 12 | 0% |
+| 采样算法 | res_2s | - | 12 | 92% |
+| 调度器 | linear_quadratic | - | 12 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 1888 | 1080 - 1888 | 12 | 88% |
+| 高度 | 1080 | 1080 - 1920 | 12 | 80% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 24/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，12 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 res_2s，12 个样本，一致性 92%
+- 调度器 最常用 linear_quadratic，12 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1888，观测区间 1080 - 1888，12 个样本，取值集中（一致性 88%）
+- 高度 中位数 1080，观测区间 1080 - 1920，12 个样本
+- 高发问题（24/12 个样本）：Steps较低可能导致细节不足

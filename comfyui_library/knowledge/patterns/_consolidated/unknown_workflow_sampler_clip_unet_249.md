@@ -1,62 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_249
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9165
-common_nodes: [CLIPLoader, CLIPTextEncode, ConstrainImage|pysssss, CreateVideo, GetImageSizeAndCount, KSamplerAdvanced, LoadImage, MathExpression|pysssss, ModelSamplingSD3, PrimitiveInt, SaveVideo, UNETLoader, VAEDecode, VAELoader, WanImageToVideo]
+frequency: 5
+level: strong
+coverage: 0.862
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956189385706360833.json, 视频生成/图生视频/1950766162718150658.json]
+members: [图片生成/图生图/【遇见AI】FLUX Tools Fill 扩图_2041024111018778626.json, 图片生成/图生图/【遇见AI】FLUX Tools Fill 重绘_2041021438299213825.json, 图片生成/图生图/【遇见AI】FLUX Tools canny&depth_2041013420962619394.json, 图片生成/文生图/Flux+ControlNet_UnionPro2_v2_1927179095069851650.json, 图片生成/文生图/Flux+ControlNet_Union文生图_1914137899061735426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_249
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1956189385706360833.json、视频生成/图生视频/1950766162718150658.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【遇见AI】FLUX Tools Fill 扩图_2041024111018778626.json、图片生成/图生图/【遇见AI】FLUX Tools Fill 重绘_2041021438299213825.json、图片生成/图生图/【遇见AI】FLUX Tools canny&depth_2041013420962619394.json、图片生成/文生图/Flux+ControlNet_UnionPro2_v2_1927179095069851650.json、图片生成/文生图/Flux+ControlNet_Union文生图_1914137899061735426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConstrainImage|pysssss`
-- `CreateVideo`
-- `GetImageSizeAndCount`
-- `KSamplerAdvanced`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSamplerSelect`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SaveVideo`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `JjkShowText` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `PreviewImage` —— 3/5 个有
+- `AIO_Preprocessor` —— 2/5 个有
+- `ControlNetApplyAdvanced` —— 2/5 个有
+- `ControlNetLoader` —— 2/5 个有
+- `EmptySD3LatentImage` —— 2/5 个有
+- `ImpactCombineConditionings` —— 2/5 个有
+- `InpaintModelConditioning` —— 2/5 个有
+- `AnyLinePreprocessor` —— 1/5 个有
+- `CannyEdgePreprocessor` —— 1/5 个有
+- `DWPreprocessor` —— 1/5 个有
+- `ImagePadForOutpaint` —— 1/5 个有
+- `InstructPixToPixConditioning` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `MiDaS-DepthMapPreprocessor` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 20 | - | 2 | 100% |
-| 采样算法 | 2.25 | - | 2 | 44% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+| ControlNet 权重 | 0.75 | - | 2 | 93% |
 
 ## 常见问题
 
@@ -64,10 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2.25，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- ControlNet 权重 中位数 0.75，样本不足，未给区间，2 个样本，取值集中（一致性 93%）

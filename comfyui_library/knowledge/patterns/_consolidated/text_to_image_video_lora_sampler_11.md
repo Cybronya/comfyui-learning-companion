@@ -1,116 +1,104 @@
 ---
 name: text_to_image_video_lora_sampler_11
 type: Text To Image
-frequency: 29
-level: weak
-coverage: 0.876931
-common_nodes: [BerniniConditioning, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, EnhancedLoadDiffusionModel, FluxKontextMultiReferenceLatentMethod, ImageResizeKJv2, ImageScaleToTotalPixels, Int, JWInteger, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, RandomInt, Split String by Commas, StringReplace, Text, TextConcatenate_UTK, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy mathInt, easy showAnything]
+frequency: 32
+level: strong
+coverage: 0.886437
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, Int, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Video Duration Calculator, easy MiniMaxH3ReferenceToVideoBridge, easy imageCount, easy mathInt, easy showAnything, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Bernini自动分镜视频发布版工作流，图生视频自动分镜创作工具_2105754352567808002.json, 视频生成/图生视频/Bernini自动多参Gemm4开源版图生视频工具_2099918410950991873.json, 视频生成/图生视频/bernini gemm4开源版自动多参图生视频工作流_2087336969197154305.json, 视频生成/图生视频/2076951801567465474.json, 视频生成/图生视频/2080213506917486594.json, 视频生成/图生视频/2080461814877474818.json, 视频生成/图生视频/2077014017478053890.json, 视频生成/图生视频/2077052662113202177.json, 视频生成/图生视频/bernini自动分镜视频发布版_2076843690617827330.json, 视频生成/图生视频/bernini自动分镜视频发布版｜图生视频自动化_2097924760024993794.json, 视频生成/图生视频/2077031752845058050.json, 视频生成/图生视频/bernini自动分镜｜视频发布版图生视频一键生成_2094472948609544194.json, 视频生成/图生视频/bernini自动多参gemm4开源发布版_2083445043389620226.json, 视频生成/图生视频/bernini自动多参gemm4开源版_2083434109308850177.json, 视频生成/图生视频/bernini自动多参gemm4开源版_2100052975162056705.json, 视频生成/图生视频/bernini自动多参gemm4开源版_2100133559137816577.json, 视频生成/图生视频/bernini自动多参gemm4开源版｜图生视频生成_2095206435062894594.json, 视频生成/图生视频/bernini自动多参｜gemm4开源版图生视频，参数自由配_2099910395120144386.json, 视频生成/图生视频/gemm4漫剧自动扩展提示词多参视频TEST1_2083810470955413506.json, 视频生成/图生视频/gemm4漫剧自动扩展提示词多参视频TEST2_2083813813098475521.json, 视频生成/图生视频/gemm4漫剧自动扩展提示词多参视频TEST3_2083815602338230273.json, 视频生成/图生视频/叮叮给你一个甜甜的笑容_2083454015727296513.json, 视频生成/图生视频/她给了你一个飞吻_2083822231435694081.json, 视频生成/图生视频/2077415348361588737.json, 视频生成/图生视频/2075772423257018370.json, 视频生成/图生视频/2075555368637394946.json, 视频生成/图生视频/2075874925533024258.json, 视频生成/图生视频/2076876646682021890.json, 视频生成/图生视频/自动多参图生视频｜bernini gemm4开源版_2095483112770859010.json]
+members: [图片生成/图生图/H3全参模式角色替换 视频处理工具_2100634529659711490.json, 图片生成/图生图/H3视频参考编辑人物换装处理生成工具包集_2100281577153585154.json, 图片生成/图生图/H3视频编辑去除人物 视频处理生成工具包_2100283161178624002.json, 图片生成/图生图/MiniMax H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2107176958315552769.json, 图片生成/图生图/MiniMaxH3视频参考编辑｜人物换装视频处理_2095566743472271362.json, 图片生成/图生图/MiniMaxH3视频编辑去人物｜擦除人物视频处理_2095565407036985345.json, 图片生成/图生图/Minimax3全参模式角色替换｜其它视频处理也能这么玩，换脸换人一气呵成_2100429176577806338.json, 图片生成/图生图/Minimax3全参模式角色替换｜参考图加原视频视频处理_2088763480580120578.json, 图片生成/图生图/Minimax3全参模式｜视频角色替换高质量处理_2095928159500857346.json, 图片生成/图生图/MinimaxH3视频参考编辑人物替换T1｜其它视频处理利器_2106972577502679041.json, 图片生成/图生图/MinimaxH3视频编辑V1｜一键去除视频背景里多余人物｜画面瞬间干净_2099118326118174721.json, 图片生成/图生图/MinimaxH3视频编辑去除人物2｜视频处理一键擦除_2100793280198955009.json, 图片生成/图生图/minimaxH3视频编辑复刻｜抖音热门特效V1直出_2092010345916354562.json, 图片生成/图生图/人物替换T1｜MinimaxH3视频参考编辑，换主角不影响背景_2099916510587351042.json, 图片生成/图生图/人物替换参考视频编辑｜MinimaxH3视频处理T1版_2095797239611478017.json, 图片生成/图生图/全参模式角色替换实操｜Minimax3 视频处理新玩法_2096202523513286657.json, 图片生成/图生图/全参模式角色替换｜Minimax3其它视频处理_2092565834769190913.json, 图片生成/图生图/抖音热门特效V1复刻｜minimaxH3视频编辑轻松上手_2096212199453847553.json, 图片生成/图生图/背景人物一键去除｜MinimaxH3视频编辑V1_2091162669549182978.json, 图片生成/图生图/背景人物去除编辑｜MinimaxH3视频V1处理工作流_2095133128032612354.json, 图片生成/图生图/视频参考编辑人物换装｜MinimaxH3其它视频处理工作流_2087192449147031554.json, 图片生成/图生图/视频参考编辑人物替换T1｜MinimaxH3其它视频处理工作流_2087196055795490818.json, 图片生成/图生图/视频参考编辑人物替换｜MinimaxH3视频处理T1直出_2091586865601277954.json, 图片生成/图生图/视频杂物清道夫｜MinimaxH3一键去除多余人物元素_2096518368504410114.json, 图片生成/图生图/视频编辑一键去除人物｜MinimaxH3其它视频处理_2095793371834048514.json, 图片生成/图生图/视频编辑去人物2｜MinimaxH3其它视频处理_2092909484829134850.json, 图片生成/图生图/视频编辑去除多余人物｜MinimaxH3画面擦除处理_2096293888435769346.json, 视频生成/图生视频/MiniMax_H3去水印字幕图标加人物替换工作流，去水印其它视频处理方案_2109444784137003010.json, 视频生成/图生视频/MiniMax_H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2109455488231497729.json, 视频生成/图生视频/MinimaxH3 参考编辑人物替换 角色一致性更强_2104987281709953025.json, 视频生成/图生视频/MinimaxH3视频参考编辑T1版｜动作迁移人物替换一键搞定｜视频风格随心换_2104744951228755970.json, 视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1｜视频图生视频换主角_2101905285496524802.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/Bernini自动分镜视频发布版工作流，图生视频自动分镜创作工具_2105754352567808002.json、视频生成/图生视频/Bernini自动多参Gemm4开源版图生视频工具_2099918410950991873.json、视频生成/图生视频/bernini gemm4开源版自动多参图生视频工作流_2087336969197154305.json、视频生成/图生视频/2076951801567465474.json、视频生成/图生视频/2080213506917486594.json…）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/图生图/H3全参模式角色替换 视频处理工具_2100634529659711490.json、图片生成/图生图/H3视频参考编辑人物换装处理生成工具包集_2100281577153585154.json、图片生成/图生图/H3视频编辑去除人物 视频处理生成工具包_2100283161178624002.json、图片生成/图生图/MiniMax H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2107176958315552769.json、图片生成/图生图/MiniMaxH3视频参考编辑｜人物换装视频处理_2095566743472271362.json…）
 
 - **类型**：Text To Image
-- **样本数**：29
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：32
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `BerniniConditioning`
+全部 32 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `EnhancedLoadDiffusionModel`
-- `FluxKontextMultiReferenceLatentMethod`
-- `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
+- `Float to Int`
+- `GetVideoComponents`
+- `ImageConcatenate_UTK`
+- `ImageFromBatch`
 - `Int`
-- `JWInteger`
+- `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RandomInt`
-- `Split String by Commas`
-- `StringReplace`
-- `Text`
-- `TextConcatenate_UTK`
-- `TextEncodeQwenImageEditPlus`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RHHiddenNodes`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
+- `Video Duration Calculator`
+- `easy MiniMaxH3ReferenceToVideoBridge`
+- `easy imageCount`
 - `easy mathInt`
 - `easy showAnything`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `HunyuanVideoFoley` —— 26/29 个有
-- `Any To Any` —— 25/29 个有
-- `CR Prompt Text` —— 25/29 个有
-- `Float` —— 25/29 个有
-- `Qwen3_VQA` —— 25/29 个有
-- `RHHiddenNodes` —— 25/29 个有
-- `VHS_SelectFilename` —— 25/29 个有
-- `easy cleanGpuUsed` —— 25/29 个有
-- `RH_Captioner` —— 15/29 个有
-- `JDCN_StringToList` —— 14/29 个有
-- `llama_cpp_instruct_adv` —— 14/29 个有
-- `llama_cpp_model_loader` —— 14/29 个有
-- `llama_cpp_parameters` —— 14/29 个有
-- `JjkText` —— 8/29 个有
-- `solarL_SaveImagesToZip` —— 8/29 个有
-- `孤海注释` —— 8/29 个有
-- `BatchImagesNode` —— 4/29 个有
-- `BerniniPromptEnhancer` —— 4/29 个有
-- `LoadAudio` —— 4/29 个有
-- `RHLLMChatNode` —— 4/29 个有
-- `SaveImage` —— 2/29 个有
-- `DF_Integer` —— 1/29 个有
-- `FL_RIFE` —— 1/29 个有
-- `PreviewAny` —— 1/29 个有
-- `easy imageConcat` —— 1/29 个有
+- `孤海注释` —— 31/32 个有
+- `PreviewImage` —— 24/32 个有
+- `Text` —— 24/32 个有
+- `ExtractStoryboards_xuhuan1024` —— 23/32 个有
+- `LoadImage` —— 22/32 个有
+- `easy indexAnything` —— 13/32 个有
+- `CR Image Grid Panel` —— 10/32 个有
+- `InspyrenetRembg` —— 10/32 个有
+- `FlashVSR_SM_KSampler` —— 9/32 个有
+- `FlashVSR_SM_Model` —— 9/32 个有
+- `JWInteger` —— 9/32 个有
+- `LayerUtility: PurgeVRAM V2` —— 9/32 个有
+- `SaveImage` —— 6/32 个有
+- `EmptyImage` —— 3/32 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 3/32 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 29 | 31% |
-| 重绘幅度 | 1 | 1 - 1 | 25 | 100% |
-| 高度 | 720 | 80 - 960 | 29 | 46% |
-| 采样算法 | euler | - | 29 | 59% |
-| 调度器 | simple | - | 29 | 59% |
-| 采样步数 | 8 | 4 - 8 | 25 | 72% |
-| 宽度 | 1280 | 80 - 1280 | 29 | 42% |
+| 采样步数 | 4 | 4 - 4 | 32 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 32 | 100% |
+| 采样算法 | er_sde | - | 32 | 100% |
+| 调度器 | beta | - | 32 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 32 | 100% |
+| 宽度 | 80 | 80 - 80 | 32 | 100% |
+| 高度 | 80 | 80 - 80 | 32 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 38/29 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 32/32 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，29 个样本，取值分散，一致性仅 31%
-- 重绘幅度 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
-- 高度 中位数 720，观测区间 80 - 960，29 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 euler，29 个样本，一致性 59%
-- 调度器 最常用 simple，29 个样本，一致性 59%
-- 采样步数 中位数 8，观测区间 4 - 8，25 个样本
-- 宽度 中位数 1280，观测区间 80 - 1280，29 个样本，取值分散，一致性仅 42%
-- 高发问题（38/29 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，32 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，32 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，32 个样本，一致性 100%
+- 调度器 最常用 beta，32 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，32 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，32 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，32 个样本，取值集中（一致性 100%）
+- 高发问题（32/32 个样本）：Steps较低可能导致细节不足

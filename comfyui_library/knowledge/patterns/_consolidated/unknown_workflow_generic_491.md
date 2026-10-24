@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_491
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.889
-common_nodes: [LoadImage, Save3DAdvanced, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNodeV2]
+coverage: 0.324
+common_nodes: [Any Switch (rgthree), DF_Text_Box, GetNode, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, SetNode, 孤海注释, 忽略多组孤海]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json]
+members: [图片生成/图生图/1.0.1RH2美女换装_2094021557206216705.json, 图片生成/图生图/1.0.1人物换脸RH1_2094283013499736065.json, 图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2087149316812132354.json, 图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2092944491039776770.json, 图片生成/文生图/全能图片 & G-Image-2.0 全能图片编辑王_2087195640966242305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_491
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/1.0.1RH2美女换装_2094021557206216705.json、图片生成/图生图/1.0.1人物换脸RH1_2094283013499736065.json、图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2087149316812132354.json、图片生成/图生图/低价版：G-Image-2.0 全能图片编辑王_2092944491039776770.json、图片生成/文生图/全能图片 & G-Image-2.0 全能图片编辑王_2087195640966242305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：32%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `DF_Text_Box`
+- `GetNode`
 - `LoadImage`
-- `Save3DAdvanced`
-- `TripoConversionNode`
-- `TripoRetargetNode`
-- `TripoRigNode`
-- `TripoTextureNodeV2`
-
-**可变部分**（部分 workflow 才有）：
-- `TripoImageToModelNodeV2` —— 1/3 个有
-- `TripoPSeriesImageToModelNode` —— 1/3 个有
-- `TripoPSeriesMultiviewToModelNode` —— 1/3 个有
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `SetNode`
+- `孤海注释`
+- `忽略多组孤海`
 
 ## 典型参数
 

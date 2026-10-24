@@ -3,22 +3,22 @@ name: unknown_workflow_controlnet_upscale_face_detailer
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.635167
+coverage: 0.700833
 common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, ControlNetApplySD3, ControlNetLoader, CoreMLDetailerHookProvider, DualCLIPLoader, EmptySD3LatentImage, ExpressionEditor, FaceDetailerPipe, FluxGuidance, FromBasicPipe_v2, ImageCrop, ImageScale, KSamplerSelect, LoadImage, ModelSamplingFlux, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ToBasicPipe, ToDetailerPipe, UNETLoader, UltimateSDUpscale, UltralyticsDetectorProvider, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: []
-missing: [CR Load LoRA, Anything Everywhere?, Image Blank, Image Paste Crop by Location, ImageCrop+, ImageRemoveBackground+, Images to RGB, RemBGSession+, Simple String, easy imageChooser, Seed Everywhere]
-members: [图片生成/文生图/1906958724634906625.json, 图片生成/文生图/1912845983032537089.json, 图片生成/文生图/1915383673414156289.json, 图片生成/文生图/1922307103535595521.json, 图片生成/文生图/动漫角色LORA_2012500101402464258.json, 图片生成/文生图/动漫角色LORA（一键19图）_2067168189636759553.json]
+missing: []
+members: [图片生成/文生图/FLUX人物多角度风格一致性+放大修复_1906958724634906625.json, 图片生成/文生图/Flux lora训练（AI视频保持人物一致性）_1922307103535595521.json, 图片生成/文生图/Flux版一键生成角色Lora训练集-Fast_1915383673414156289.json, 图片生成/文生图/Flux版一键生成角色Lora训练集_1912845983032537089.json, 图片生成/文生图/动漫角色LORA_2012500101402464258.json, 图片生成/文生图/动漫角色LORA（一键19图）_2067168189636759553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_face_detailer
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1906958724634906625.json、图片生成/文生图/1912845983032537089.json、图片生成/文生图/1915383673414156289.json、图片生成/文生图/1922307103535595521.json、图片生成/文生图/动漫角色LORA_2012500101402464258.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/FLUX人物多角度风格一致性+放大修复_1906958724634906625.json、图片生成/文生图/Flux lora训练（AI视频保持人物一致性）_1922307103535595521.json、图片生成/文生图/Flux版一键生成角色Lora训练集-Fast_1915383673414156289.json、图片生成/文生图/Flux版一键生成角色Lora训练集_1912845983032537089.json、图片生成/文生图/动漫角色LORA_2012500101402464258.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
@@ -89,4 +89,3 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - ControlNet 权重 中位数 0.66，观测区间 0.66 - 0.69，6 个样本，取值集中（一致性 98%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Load LoRA、Anything Everywhere?、Image Blank、Image Paste Crop by Location、ImageCrop+

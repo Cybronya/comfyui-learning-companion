@@ -1,56 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_unet_213
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.952333
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyHunyuanLatentVideo, KSamplerAdvanced, MathExpression|pysssss, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.9335
+common_nodes: [CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1950032228946501633.json, 视频生成/文生视频/1949846570944651266.json, 视频生成/文生视频/1949986877459881985.json]
+members: [图片生成/图生图/flux2.0图生图_1994969105419657218.json, 图片生成/图生图/flux2_klein双图编辑_2038872372450697217.json, 图片生成/图生图/千府AI-Flux.2_Klein高清洗图工作流_2032316645363949570.json, 图片生成/图生图/千府AI-FluxKlein室内风格迁移工作流_2031990406266753026.json, 图片生成/图生图/千府AI-FluxKlein效果图风格转换工作流_2013475853849595906.json, 图片生成/图生图/千府AI-FluxKlein立面风格迁移工作流_2031957779518332929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_213
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1950032228946501633.json、视频生成/文生视频/1949846570944651266.json、视频生成/文生视频/1949986877459881985.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/flux2.0图生图_1994969105419657218.json、图片生成/图生图/flux2_klein双图编辑_2038872372450697217.json、图片生成/图生图/千府AI-Flux.2_Klein高清洗图工作流_2032316645363949570.json、图片生成/图生图/千府AI-FluxKlein室内风格迁移工作流_2031990406266753026.json、图片生成/图生图/千府AI-FluxKlein效果图风格转换工作流_2013475853849595906.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `DF_Integer` —— 1/3 个有
-- `JjkText` —— 1/3 个有
+- `CFGGuider` —— 5/6 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `Anything Everywhere` —— 4/6 个有
+- `GetImageSize` —— 4/6 个有
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `ModelPatchTorchSettings` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `Text Multiline` —— 3/6 个有
+- `ImitationHueNode` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `AIO_Preprocessor` —— 1/6 个有
+- `BasicGuider` —— 1/6 个有
+- `FluxGuidance` —— 1/6 个有
+- `ImageBlend` —— 1/6 个有
+- `JsonPromptNode` —— 1/6 个有
+- `Width/Height Literal` —— 1/6 个有
+- `Width/Height Literal (Image Saver)` —— 1/6 个有
+- `easy imageScaleDown` —— 1/6 个有
+- `孤海图像缩放按像素` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 3 | 100% |
-| 采样算法 | 3.5 | 3.5 - 3.5 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -58,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

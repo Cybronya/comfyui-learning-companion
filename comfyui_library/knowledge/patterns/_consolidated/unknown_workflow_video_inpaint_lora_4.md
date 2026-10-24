@@ -2,76 +2,95 @@
 name: unknown_workflow_video_inpaint_lora_4
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.97925
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, GetImageRangeFromBatch, Image To Mask, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ColorImage, ManualSigmas, PathchSageAttentionKJ, RandomNoise, RepeatImageBatch, SamplerCustomAdvanced, Seed (rgthree), SimpleMath+, VAEDecodeTiled, VAEEncodeForInpaint, VHS_LoadVideo, VHS_VideoCombine, easy imageSize]
+level: moderate
+coverage: 0.64775
+common_nodes: [AddMask, Any Switch (rgthree), BboxDetectorCombined_v2, Bookmark (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, INPAINT_MaskedFill, ImageBatch, ImageCompositeMasked, ImageFromBatch, ImageResizeKJv2, ImageToMask, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PreviewAny, PreviewBridge, PrimitiveInt, PrimitiveString, RepeatImageBatch, ResizeMask, SaveImage, SetNode, SimpleMath+, StringConcatenate, UltralyticsDetectorProvider, VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy compare, easy ifElse, easy imageBatchToImageList, easy imageListToImageBatch, easy int, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/IC Edit去水印字幕_2054546081706463234.json, 视频生成/文生视频/IC Edit高清修复_2054546073984749570.json, 视频生成/文生视频/豆包视频去水印_2060846914807091201.json, 视频生成/文生视频/豆包视频去水印_全屏去水印_2091189802585649154.json]
+members: [图片生成/图生图/【CQ808】视频去字幕_水印_2020782485591822338.json, 图片生成/图生图/完美去水印、字幕、全能视频S水印-高质量_2033787300122992641.json, 图片生成/文生图/完美去水印、字幕、全能视频S水印-高质量_2045437255841488898.json, 视频生成/图生视频/完美去水印、字幕、全能视频S水印-高效率版_2033794775064776706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_4
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/IC Edit去水印字幕_2054546081706463234.json、视频生成/文生视频/IC Edit高清修复_2054546073984749570.json、视频生成/文生视频/豆包视频去水印_2060846914807091201.json、视频生成/文生视频/豆包视频去水印_全屏去水印_2091189802585649154.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【CQ808】视频去字幕_水印_2020782485591822338.json、图片生成/图生图/完美去水印、字幕、全能视频S水印-高质量_2033787300122992641.json、图片生成/文生图/完美去水印、字幕、全能视频S水印-高质量_2045437255841488898.json、视频生成/图生视频/完美去水印、字幕、全能视频S水印-高效率版_2033794775064776706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `AddMask`
+- `Any Switch (rgthree)`
+- `BboxDetectorCombined_v2`
+- `Bookmark (rgthree)`
+- `Fast Groups Muter (rgthree)`
 - `GetImageRangeFromBatch`
-- `Image To Mask`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ColorImage`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INPAINT_MaskedFill`
+- `ImageBatch`
+- `ImageCompositeMasked`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `Label (rgthree)`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PreviewAny`
+- `PreviewBridge`
+- `PrimitiveInt`
+- `PrimitiveString`
 - `RepeatImageBatch`
-- `SamplerCustomAdvanced`
-- `Seed (rgthree)`
+- `ResizeMask`
+- `SaveImage`
+- `SetNode`
 - `SimpleMath+`
-- `VAEDecodeTiled`
-- `VAEEncodeForInpaint`
+- `StringConcatenate`
+- `UltralyticsDetectorProvider`
+- `VHS_DuplicateMasks`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy imageSize`
+- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoMiniMaxRemoverEmbeds`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy compare`
+- `easy ifElse`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
+- `easy int`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 2/4 个有
-- `LTX2SamplingPreviewOverride` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PrimitiveFloat` —— 2/4 个有
-- `ResizeImageMaskNode` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `VHS_VideoInfoLoaded` —— 2/4 个有
-- `easy imageCount` —— 2/4 个有
-- `image_scale_pixel_v2` —— 1/4 个有
+- `GrowMask` —— 3/4 个有
+- `WanVideoEnhanceAVideo` —— 1/4 个有
+- `WanVideoExperimentalArgs` —— 1/4 个有
+- `WanVideoTeaCache` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -79,5 +98,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

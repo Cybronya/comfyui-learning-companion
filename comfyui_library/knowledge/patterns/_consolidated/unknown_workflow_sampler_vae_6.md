@@ -1,57 +1,85 @@
 ---
 name: unknown_workflow_sampler_vae_6
 type: Unknown Workflow
-frequency: 29
-level: moderate
-coverage: 0.859
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo]
+frequency: 36
+level: strong
+coverage: 0.781611
+common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadImage, SamplerCustom, VAEDecode, VAELoaderKJ, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084138964008660993.json, 视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084171989127880706.json, 视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084489209519362049.json, 视频生成/图生视频/MiniMax H3 尾帧参考生视频（适用于电商广告生成宣传视频）_2086010679311552514.json, 视频生成/图生视频/MiniMax H3 开源版 首帧图生视频_2084116833204002817.json, 视频生成/图生视频/MiniMax H3 开源版-首尾帧参考生视频_2084116862950006785.json, 视频生成/图生视频/MiniMax H3 首帧参考生视频_2084126354357968897.json, 视频生成/图生视频/MiniMax H3-图生视频_2084472539518164994.json, 视频生成/图生视频/MiniMax H3-首尾帧参考生视频（中文提示词）_2084256715142426625.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图生视频 (1)_2087709397454778370.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图生视频 (2)_2089957090088542210.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图生视频 (2)_2089992152918093825.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图生视频+全节点注释_2084928273825492993.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图生视频_2084955270895194114.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图生视频_2087700275237838849.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-尾帧参考生视频_2110971476173213697.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-首尾帧参考生视频_2110973759195799553.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-首帧参考生视频_2110966496859082754.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-尾帧参考生视频_2098933933139382274.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-尾帧参考生视频_2098991696456544257.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-尾帧参考生视频_2099667209504251906.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首尾帧参考生视频_2098935729991802881.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首尾帧参考生视频_2098993555862810625.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首尾帧参考生视频_2099668959648894977.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首帧参考生视频_2098936811023327233.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首帧参考生视频_2098994491230347266.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首帧参考生视频_2099669900225761282.json, 视频生成/图生视频/图生视频尾帧MiniMax+H3+FL2VA开源版-尾帧参考生视频_2084131204399452161.json, 视频生成/文生视频/MiniMax+H3+FL2VA开源版-尾帧参考生视频_2084183815051894786.json]
+members: [视频生成/图生视频/LTX2.3-PromptRelay-图生视频_2084829161968984065.json, 视频生成/图生视频/LTX2.3_PromptRelay图生视频模型和工作流_2111402430121472002.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2047152091981942785.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2070818205395931138.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2082777967612223489.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2082793220383264770.json, 视频生成/图生视频/LTX2.3音频图片视频工作流_2084178470162223105.json, 视频生成/图生视频/Ltx2.3 图生视频时间分段剪辑 细化多镜头时间+逻辑控制PromptRelay+VBVR（KJ版_2051822918727938049.json, 视频生成/图生视频/Ltx2.3-多镜头-PromptRelay控制时间（KJ版）_2046850819689029634.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2046813603185037314.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2046869684942802945.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2047251956011372546.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制V1（KJ版）--B站：wangyi AI_2047251992128528386.json, 视频生成/图生视频/Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046812792329609218.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2056233662454222849.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2056368359754780674.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2056620885733363713.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057015136241668097.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057105862644297729.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2058724424081305602.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2067168001845194753.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2098717431224168449.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2098745841820459009.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频人物一致性_2079524853648019458.json, 视频生成/图生视频/Sulphur-极致微表情图生视频 丰富表情控制_2056004828781916162.json, 视频生成/图生视频/ltx视频生成极速工作流_2052193823329144834.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2056555868510056450.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2056616678716436482.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2081629704880222209.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2082003174491250690.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2084109762710560769.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2088511791516184578.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2094974574181048322.json, 视频生成/图生视频/多镜头长时间+KJ版+时间分段剪辑+逻辑控制-图生视频_2056612468230807553.json, 视频生成/图生视频/大丝袜ltx2.3卡通人物绝佳一致性_2071039400221433858.json, 视频生成/图生视频/精准控制LTX2.3图文生视频工作流（强控一致性）_2052683608971849729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084138964008660993.json、视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084171989127880706.json、视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084489209519362049.json、视频生成/图生视频/MiniMax H3 尾帧参考生视频（适用于电商广告生成宣传视频）_2086010679311552514.json、视频生成/图生视频/MiniMax H3 开源版 首帧图生视频_2084116833204002817.json…）
+> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-PromptRelay-图生视频_2084829161968984065.json、视频生成/图生视频/LTX2.3_PromptRelay图生视频模型和工作流_2111402430121472002.json、视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2047152091981942785.json、视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2070818205395931138.json、视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2082777967612223489.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：29
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：36
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `CreateVideo`
+全部 36 个 workflow 都包含：
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3FL2VAEncode`
-- `RHMiniMaxH3FL2VAModelLoader`
-- `RHMiniMaxH3FL2VATarget`
-- `RHMiniMaxH3FL2VATextEncoderLoader`
-- `RHMiniMaxH3FL2VAVAELoader`
-- `SaveVideo`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 26/29 个有
-- `Int` —— 22/29 个有
-- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 20/29 个有
-- `ImpactSwitch` —— 19/29 个有
-- `PreviewImage` —— 18/29 个有
-- `EmptyImage` —— 9/29 个有
-- `RHMiniMaxH3FL2VALastFrameCondition` —— 9/29 个有
-- `MuyeTextEditOutput` —— 3/29 个有
-- `MultiTextConcatenate` —— 2/29 个有
-- `PrimitiveStringMultiline` —— 2/29 个有
-- `RH_Translator` —— 2/29 个有
-- `RH_OneShot_Prompter` —— 1/29 个有
+- `GetNode` —— 35/36 个有
+- `LTXVConditioning` —— 35/36 个有
+- `LTXVPreprocess` —— 35/36 个有
+- `LoraLoaderModelOnly` —— 35/36 个有
+- `PathchSageAttentionKJ` —— 35/36 个有
+- `PreviewImage` —— 35/36 个有
+- `SetNode` —— 35/36 个有
+- `UNETLoader` —— 35/36 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 34/36 个有
+- `VHS_VideoCombine` —— 34/36 个有
+- `JWInteger` —— 33/36 个有
+- `CR Prompt Text` —— 32/36 个有
+- `PromptRelayEncode` —— 30/36 个有
+- `PreviewAny` —— 6/36 个有
+- `RH_LLMAPI_Pro_Node` —— 5/36 个有
+- `RegexExtract` —— 5/36 个有
+- `ComfyNumberConvert` —— 3/36 个有
+- `PromptRelayEncodeTimeline` —— 3/36 个有
+- `PromptRelaySmartEncode` —— 3/36 个有
+- `INTConstant` —— 2/36 个有
+- `SaveImage` —— 2/36 个有
+- `TSVideoCombineNoMetadata` —— 2/36 个有
+- `easy mathInt` —— 2/36 个有
+- `easy showAnything` —— 2/36 个有
+- `CheckpointLoaderSimple` —— 1/36 个有
+- `DF_Integer` —— 1/36 个有
+- `LTXVAddGuide` —— 1/36 个有
+- `RH_Captioner` —— 1/36 个有
+- `StringReplace` —— 1/36 个有
+- `Text` —— 1/36 个有
+- `easy int` —— 1/36 个有
+- `ttN float` —— 1/36 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 97 - 489 | 36 | 81% |
+| 高度 | 25 | 25 - 25 | 36 | 100% |
 
 ## 常见问题
 
@@ -59,4 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 97 - 489，36 个样本，取值集中（一致性 81%）
+- 高度 中位数 25，观测区间 25 - 25，36 个样本，取值集中（一致性 100%）

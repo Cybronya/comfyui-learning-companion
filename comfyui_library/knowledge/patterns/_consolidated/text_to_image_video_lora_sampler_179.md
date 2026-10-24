@@ -3,71 +3,57 @@ name: text_to_image_video_lora_sampler_179
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.855667
-common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, BiRefNetRMBG, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, CreateVideo, EasyCache, EmptyLatentImage, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetVideoComponents, ImageFromBatch+, JjkText, JoinStrings, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PreviewImage, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, RunningHub Deepcleaner, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, VideoFrameSelector, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.887333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateCFGScheduleFloatList, EmptyLatentImage, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, RHHiddenNodes, RH_LLMAPI_Pro_Node, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/爆款复刻三合一｜角色替换+动作迁移+面部表情图生视频_2092869821431115778.json, 视频生成/图生视频/爆款复刻组合流｜角色替换动作迁移面部表情图生视频_2092683380424003586.json, 视频生成/图生视频/角色替换加动作迁移加面部表情 爆款复刻视频工具_2099210840540016642.json]
+members: [视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json, 视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_179
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/爆款复刻三合一｜角色替换+动作迁移+面部表情图生视频_2092869821431115778.json、视频生成/图生视频/爆款复刻组合流｜角色替换动作迁移面部表情图生视频_2092683380424003586.json、视频生成/图生视频/角色替换加动作迁移加面部表情 爆款复刻视频工具_2099210840540016642.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json、视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicGuider`
-- `BasicScheduler`
-- `BiRefNetRMBG`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EasyCache`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
 - `EmptyLatentImage`
-- `FlashVSR_SM_KSampler`
-- `FlashVSR_SM_Model`
-- `GetVideoComponents`
-- `ImageFromBatch+`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageFromBatch`
+- `JWInteger`
 - `JjkText`
-- `JoinStrings`
 - `KSampler`
-- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `RunningHub Deepcleaner`
-- `SamplerCustomAdvanced`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `VideoFrameSelector`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy boolean`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,44 +1,39 @@
 ---
 name: unknown_workflow_video_sampler_14
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.829667
-common_nodes: [CR Prompt Text, Float, Float to Int, GetVideoComponents, ImageConcatMulti, JWInteger, LoadAudio, LoadImage, MathExpression|pysssss, RunningHub DreamID-Omni Loader, RunningHub DreamID-Omni Sampler, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SaveVideo, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.76975
+common_nodes: [CR Prompt Text, FlashVSRNode, GetVideoComponents, JWInteger, LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034146059324231682.json, 视频生成/图生视频/2034440411502092290.json, 视频生成/图生视频/2035177080291332097.json]
+members: [视频生成/图生视频/MOVA音视频同步_2017541473100636162.json, 视频生成/图生视频/S__2本地版索啦2-音画同步MOVA图生视频-高清版_2018921515974139906.json, 视频生成/图生视频/本地版sxxx2音画同步MOVA图生视频V2（高清版）_2017228982122455041.json, 视频生成/图生视频/音画同步MOVA图生视频-高清版_2019624911567851522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2034146059324231682.json、视频生成/图生视频/2034440411502092290.json、视频生成/图生视频/2035177080291332097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MOVA音视频同步_2017541473100636162.json、视频生成/图生视频/S__2本地版索啦2-音画同步MOVA图生视频-高清版_2018921515974139906.json、视频生成/图生视频/本地版sxxx2音画同步MOVA图生视频V2（高清版）_2017228982122455041.json、视频生成/图生视频/音画同步MOVA图生视频-高清版_2019624911567851522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CR Prompt Text`
-- `Float`
-- `Float to Int`
+- `FlashVSRNode`
 - `GetVideoComponents`
-- `ImageConcatMulti`
 - `JWInteger`
-- `LoadAudio`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `RunningHub DreamID-Omni Loader`
-- `RunningHub DreamID-Omni Sampler`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
-- `SaveVideo`
+- `RunningHub_MOVA_Loader`
+- `RunningHub_MOVA_Sampler`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `SimpleMath+` —— 2/4 个有
 
 ## 典型参数
 

@@ -1,75 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_77
 type: Unknown Workflow
-frequency: 17
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, LoraLoader, TeaCache, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 18
+level: moderate
+coverage: 0.810444
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/1907272567051444225.json, 视频生成/图生视频/1914851220903686145.json, 视频生成/图生视频/1908884994994151426.json, 视频生成/图生视频/1906686265050247170.json, 视频生成/图生视频/1912469568701329410.json, 视频生成/图生视频/1913534894562078722.json, 视频生成/图生视频/1908140275909468162.json, 视频生成/图生视频/1910308143438491650.json, 视频生成/图生视频/1909579567680684034.json, 视频生成/图生视频/1908472121150812161.json, 视频生成/图生视频/1911952901085036546.json, 视频生成/图生视频/1911801404531638273.json, 视频生成/图生视频/1912077836331511810.json, 视频生成/图生视频/1911646094139555841.json, 视频生成/图生视频/1911792144137318401.json, 视频生成/图生视频/1910201244638740482.json, 视频生成/图生视频/1921368068402921474.json]
+members: [视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json, 视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json, 视频生成/文生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2086881972470767617.json, 视频生成/文生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091109259294629890.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json, 视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2086838165842780162.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2087878612149161985.json, 视频生成/文生视频/MiniMax H3多参生视频1(双时钟-8步高质量极速)_2085802445816553474.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2085917106452910082.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086006814721798145.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086021919471656961.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086316557814292482.json, 视频生成/文生视频/MiniMax H3音频驱动数字人-参考生视频-长视频直出【加速版】_2100939860373762049.json, 视频生成/文生视频/MiniMax H3音频驱动数字人-多人对话-加速版-支持长视频直出-单采_2100933650757017601.json, 视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json, 视频生成/文生视频/Minimax H3 参考生成_2088114013229113346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_77
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/1907272567051444225.json、视频生成/图生视频/1914851220903686145.json、视频生成/图生视频/1908884994994151426.json、视频生成/图生视频/1906686265050247170.json、视频生成/图生视频/1912469568701329410.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json、视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json、视频生成/文生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2086881972470767617.json、视频生成/文生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091109259294629890.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：18
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
-- `LoraLoader`
-- `TeaCache`
-- `VAEDecodeTiled`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 10/17 个有
-- `UnetLoaderGGUF` —— 10/17 个有
-- `ConcatTextOfUtils` —— 9/17 个有
-- `Joy_caption` —— 9/17 个有
-- `Joy_caption_load` —— 9/17 个有
-- `UNETLoader` —— 7/17 个有
-- `Int` —— 1/17 个有
+- `MiniMaxH3DualClockSamplerT8` —— 15/18 个有
+- `CR Prompt Text` —— 10/18 个有
+- `LoadImage` —— 9/18 个有
+- `LoadAudio` —— 5/18 个有
+- `CR Text` —— 4/18 个有
+- `PrimitiveStringMultiline` —— 4/18 个有
+- `easy showAnything` —— 4/18 个有
+- `孤海注释` —— 4/18 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 3/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/18 个有
+- `ModelAttentionBackend` —— 2/18 个有
+- `SolAttnMiniMax` —— 2/18 个有
+- `Audio Cut (mtb)` —— 1/18 个有
+- `GetVideoComponents` —— 1/18 个有
+- `LoadVideo` —— 1/18 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 17 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 17 | 100% |
-| 采样算法 | uni_pc | - | 17 | 100% |
-| 调度器 | simple | - | 17 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 17 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 17 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 17/17 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，17 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，17 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，17 个样本，一致性 100%
-- 调度器 最常用 simple，17 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 高发问题（17/17 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

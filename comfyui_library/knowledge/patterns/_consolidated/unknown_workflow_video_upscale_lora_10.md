@@ -1,72 +1,68 @@
 ---
 name: unknown_workflow_video_upscale_lora_10
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8356
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR Text, ColorMatch, DWPreprocessor, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, INTConstant, ImageResizeKJv2, ImageUpscaleWithModel, LoadImage, MathExpression|pysssss, PixelPerfectResolution, SetNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.6305
+common_nodes: [GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], RIFE VFI, SetNode, SimpleMath+, TextCombinerTwo, VHS_VideoCombine, Video_Upscale_With_Model, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1987934084561350657.json, 视频生成/图生视频/1984675303345766402.json, 视频生成/图生视频/1984537427039633410.json, 视频生成/图生视频/2070675644220002306.json, 视频生成/图生视频/2015730877476642818.json]
+members: [图片生成/图生图/首尾帧-FusionX_VACE_放大_补帧_1933343489382096898.json, 视频生成/图生视频/一键将图像转换为2K高清动态壁纸_1930433955672264705.json, 视频生成/图生视频/图像组合编辑-FusionX_VACE_1929787256947773441.json, 视频生成/图生视频/图生视频-FusionX_VACE_自动补帧放大_1935165726103937025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_10
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1987934084561350657.json、视频生成/图生视频/1984675303345766402.json、视频生成/图生视频/1984537427039633410.json、视频生成/图生视频/2070675644220002306.json、视频生成/图生视频/2015730877476642818.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/首尾帧-FusionX_VACE_放大_补帧_1933343489382096898.json、视频生成/图生视频/一键将图像转换为2K高清动态壁纸_1930433955672264705.json、视频生成/图生视频/图像组合编辑-FusionX_VACE_1929787256947773441.json、视频生成/图生视频/图生视频-FusionX_VACE_自动补帧放大_1935165726103937025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPVisionLoader`
-- `CR Text`
-- `ColorMatch`
-- `DWPreprocessor`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+全部 4 个 workflow 都包含：
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `ImageUpscaleWithModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PixelPerfectResolution`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `Primitive integer [Crystools]`
+- `RIFE VFI`
 - `SetNode`
-- `UpscaleModelLoader`
-- `VHS_LoadVideo`
+- `SimpleMath+`
+- `TextCombinerTwo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `Video_Upscale_With_Model`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
+- `WanVideoMagCache`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_ImageFaceCrop` —— 4/5 个有
-- `OnnxDetectionModelLoader` —— 4/5 个有
-- `PoseAndFaceDetection` —— 4/5 个有
-- `VHS_VideoInfo` —— 3/5 个有
-- `BlockifyMask` —— 2/5 个有
-- `DF_Int_to_Float` —— 2/5 个有
-- `DrawMaskOnImage` —— 2/5 个有
-- `GrowMask` —— 2/5 个有
-- `MaskToImage` —— 2/5 个有
-- `SeCModelLoader` —— 2/5 个有
-- `SeCVideoSegmentation` —— 2/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `Anything Everywhere3` —— 3/4 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `JjkText` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `RH_Prompter` —— 3/4 个有
+- `WanVideoVACEEncode` —— 3/4 个有
+- `WanVideoVACEStartToEndFrame` —— 3/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `ImageFromBatch+` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `WanVideoEncode` —— 1/4 个有
+- `WanVideoPhantomEmbeds` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

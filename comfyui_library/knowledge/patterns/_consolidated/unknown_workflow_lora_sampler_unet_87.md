@@ -1,49 +1,60 @@
 ---
 name: unknown_workflow_lora_sampler_unet_87
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.806
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SolAttnMiniMax, UNETLoader, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.867875
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2102283144824184833.json, 视频生成/文生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2102283144824184833.json]
+members: [视频生成/图生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json, 视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json, 视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json, 视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json, 视频生成/图生视频/速度逆天！Minimax多图全能参考T8双采样8步加速版_2085471982044401665.json, 视频生成/文生视频/8步加速Mini Max H3图生视频_2084136196300697601.json, 视频生成/文生视频/MinimaxH3参考8步生成视频工作流_2087040392687611906.json, 视频生成/文生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_87
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2102283144824184833.json、视频生成/文生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2102283144824184833.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/SBAPI_MinimaxH3三分镜参考生成视频工作流_2085316887281496066.json、视频生成/图生视频/miniMAXH3全能参考_2084803672076279809.json、视频生成/图生视频/minimax_h3_lightx2v正式版 参考模式_2085761824204607490.json、视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json、视频生成/图生视频/速度逆天！Minimax多图全能参考T8双采样8步加速版_2085471982044401665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
 - `CreateVideo`
-- `H3SigmaRefiner`
 - `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveVideo`
-- `SelfLiftAvatarH3Sampler`
-- `SelfLiftAvatarH3TST`
-- `SolAttnMiniMax`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `ResolutionSelector` —— 7/8 个有
+- `DF_String_Concatenate` —— 2/8 个有
+- `DF_Text_Box` —— 2/8 个有
+- `JWStringGetLine` —— 2/8 个有
+- `JjkConcat` —— 2/8 个有
+- `JjkShowText` —— 2/8 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/8 个有
+- `ReplaceString` —— 2/8 个有
+- `StringConstant` —— 2/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `SolAttnPatch` —— 1/8 个有
 
 ## 典型参数
 
@@ -55,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

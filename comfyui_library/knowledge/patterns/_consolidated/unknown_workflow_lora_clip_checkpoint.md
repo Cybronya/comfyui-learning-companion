@@ -7,13 +7,13 @@ coverage: 0.836875
 common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveInt, SaveVideo, VRAMReserver, image_scale_pixel_v2]
 problems: []
 missing: []
-members: [视频生成/图生视频/2039873152599203841.json, 视频生成/图生视频/2046866167066791938.json, 视频生成/图生视频/2058031374677925889.json, 视频生成/图生视频/2045091410172452865.json, 视频生成/文生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039686946766721026.json, 视频生成/文生视频/LTX 2.3-1.1 + VBVR 图生视频_2045068954359570434.json, 视频生成/文生视频/VBVR图生视频_2043983814732550145.json, 视频生成/文生视频/『最优实现』LTX 2.3 Distill 1.1  + VBVR 240K ：图生视视频_2047659084744232962.json]
+members: [视频生成/图生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039873152599203841.json, 视频生成/图生视频/LTX 2.3蒸馏1.1 + VBVR 逻辑优化-图生视频_2046866167066791938.json, 视频生成/图生视频/VBVR图生视频_2058031374677925889.json, 视频生成/图生视频/最新图生视频LTX 2.3-1.1 + VBVR_2045091410172452865.json, 视频生成/文生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039686946766721026.json, 视频生成/文生视频/LTX 2.3-1.1 + VBVR 图生视频_2045068954359570434.json, 视频生成/文生视频/VBVR图生视频_2043983814732550145.json, 视频生成/文生视频/『最优实现』LTX 2.3 Distill 1.1  + VBVR 240K ：图生视视频_2047659084744232962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_clip_checkpoint
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2039873152599203841.json、视频生成/图生视频/2046866167066791938.json、视频生成/图生视频/2058031374677925889.json、视频生成/图生视频/2045091410172452865.json、视频生成/文生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039686946766721026.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039873152599203841.json、视频生成/图生视频/LTX 2.3蒸馏1.1 + VBVR 逻辑优化-图生视频_2046866167066791938.json、视频生成/图生视频/VBVR图生视频_2058031374677925889.json、视频生成/图生视频/最新图生视频LTX 2.3-1.1 + VBVR_2045091410172452865.json、视频生成/文生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039686946766721026.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

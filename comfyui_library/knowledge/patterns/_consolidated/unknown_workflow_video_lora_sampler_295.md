@@ -7,13 +7,13 @@ coverage: 0.914
 common_nodes: [CLIPLoader, CLIPTextEncode, Int, KSamplerAdvanced, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), RIFE VFI, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1962165957621911554.json, 视频生成/图生视频/2046793067730051073.json, 视频生成/图生视频/2046526695909363713.json, 视频生成/图生视频/1956638598607900673.json, "视频生成/文生视频/WAN 2.2 -14B 首帧+尾帧, LIGHTX2V + 视频补帧_1952395294703071233.json", 视频生成/文生视频/Wan2.2-I2V + Lightx_2V 【新版2.2-4步加速Lora】图生视频结构清晰版_1954923648895389698.json, 视频生成/文生视频/首尾帧 Wan2.2-I2V + Lightx_2V 【新版2.2-4步加速Lora】图生视频流程_1956007540079427585.json]
+members: [视频生成/图生视频/0828首尾帧+Wan2.2-I2V+4步加速工作流8_1962165957621911554.json, 视频生成/图生视频/wan2.2首中尾帧人物一致自用流程_2046793067730051073.json, 视频生成/图生视频/自用首尾帧_Wan2.2_Lightx版_2046526695909363713.json, 视频生成/图生视频/首尾帧 Wan2.2-I2V 4步加速Lora首尾帧【Q8量化版】_1956638598607900673.json, "视频生成/文生视频/WAN 2.2 -14B 首帧+尾帧, LIGHTX2V + 视频补帧_1952395294703071233.json", 视频生成/文生视频/Wan2.2-I2V + Lightx_2V 【新版2.2-4步加速Lora】图生视频结构清晰版_1954923648895389698.json, 视频生成/文生视频/首尾帧 Wan2.2-I2V + Lightx_2V 【新版2.2-4步加速Lora】图生视频流程_1956007540079427585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_295
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1962165957621911554.json、视频生成/图生视频/2046793067730051073.json、视频生成/图生视频/2046526695909363713.json、视频生成/图生视频/1956638598607900673.json、视频生成/文生视频/WAN 2.2 -14B 首帧+尾帧, LIGHTX2V + 视频补帧_1952395294703071233.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/0828首尾帧+Wan2.2-I2V+4步加速工作流8_1962165957621911554.json、视频生成/图生视频/wan2.2首中尾帧人物一致自用流程_2046793067730051073.json、视频生成/图生视频/自用首尾帧_Wan2.2_Lightx版_2046526695909363713.json、视频生成/图生视频/首尾帧 Wan2.2-I2V 4步加速Lora首尾帧【Q8量化版】_1956638598607900673.json、视频生成/文生视频/WAN 2.2 -14B 首帧+尾帧, LIGHTX2V + 视频补帧_1952395294703071233.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

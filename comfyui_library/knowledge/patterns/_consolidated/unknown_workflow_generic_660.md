@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_generic_660
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.730333
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Qwen3TTSModelLoader, Qwen3TTSVoiceDescription, Qwen3TTSVoiceDesign, Qwen3TTSVoicePresets, SaveAudio, easy showAnything]
+coverage: 0.6305
+common_nodes: [Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/千问3TTS声音设计多种音色组合内置上千种音色选择_2016503858008166402.json, 音频生成/音频生成/千问3TTS多功能语音多角色对话_2016355277624320001.json, 音频生成/音频生成/千问3TTS语音设计上千种音色可选_2069317370858000386.json]
+members: [图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json, 图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_660
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/千问3TTS声音设计多种音色组合内置上千种音色选择_2016503858008166402.json、音频生成/音频生成/千问3TTS多功能语音多角色对话_2016355277624320001.json、音频生成/音频生成/千问3TTS语音设计上千种音色可选_2069317370858000386.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json、图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
+全部 4 个 workflow 都包含：
+- `Comfly_gpt_image_2`
 - `Fast Groups Bypasser (rgthree)`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDescription`
-- `Qwen3TTSVoiceDesign`
-- `Qwen3TTSVoicePresets`
-- `SaveAudio`
-- `easy showAnything`
+- `LoadImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/3 个有
-- `Qwen3TTSBatchVoiceCloneInput` —— 1/3 个有
-- `Qwen3TTSCustomVoice` —— 1/3 个有
-- `Qwen3TTSMaster` —— 1/3 个有
-- `Qwen3TTSVoiceClone` —— 1/3 个有
+- `String` —— 2/4 个有
 
 ## 典型参数
 

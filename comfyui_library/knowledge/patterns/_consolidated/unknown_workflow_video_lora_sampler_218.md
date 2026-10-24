@@ -7,13 +7,13 @@ coverage: 0.839778
 common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2066386680499761154.json, 视频生成/图生视频/2066423753369808897.json, 视频生成/图生视频/2066016584279347201.json, 视频生成/图生视频/2066001113731649537.json, 视频生成/图生视频/2066378010617540610.json, 视频生成/图生视频/2073343102223470594.json, 视频生成/图生视频/2065965062183018498.json, 视频生成/图生视频/2066889873231015938.json, 视频生成/图生视频/2065963015316525057.json]
+members: [视频生成/图生视频/SCAIL-2多参考图角色动作迁移与替换——支持长视频_2066386680499761154.json, 视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json, 视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json, 视频生成/图生视频/Wan-Scail2-多图姿势迁移_2066001113731649537.json, 视频生成/图生视频/scail2 多参人物图动作模仿工作流_2066378010617540610.json, 视频生成/图生视频/scail2 多参工作流-多图参考-动作迁移_2073343102223470594.json, 视频生成/图生视频/scail2 多参工作流动作迁移保持人物多角度不崩_2065965062183018498.json, 视频生成/图生视频/史上最强的scail2 多图参考工作流_2066889873231015938.json, 视频生成/图生视频/最强运镜最强迁移-SCAIL2 多图参考工作流_2065963015316525057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_218
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2066386680499761154.json、视频生成/图生视频/2066423753369808897.json、视频生成/图生视频/2066016584279347201.json、视频生成/图生视频/2066001113731649537.json、视频生成/图生视频/2066378010617540610.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/SCAIL-2多参考图角色动作迁移与替换——支持长视频_2066386680499761154.json、视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json、视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json、视频生成/图生视频/Wan-Scail2-多图姿势迁移_2066001113731649537.json、视频生成/图生视频/scail2 多参人物图动作模仿工作流_2066378010617540610.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

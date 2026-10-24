@@ -1,45 +1,35 @@
 ---
 name: unknown_workflow_generic_111
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.853556
-common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, SaveAudio, ShowText|pysssss]
+coverage: 0.967857
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/ComfyUI-FishAudioS2 基础工作流_2032733796189081601.json, 音频生成/音频生成/Fish Audio S2 最具表现力、可控情感的实时语音模型_2034565110559150081.json, 音频生成/音频生成/FishAudio S2 TTS--音频克隆_2033211276926656513.json, 音频生成/音频生成/FishAudio S2 TTS最新最强情绪拉满声音克隆 音色迁移 跨语言音频克隆_2034143431307567105.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V1_2033384818184036354.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V2_2033118250942337025.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V2_2033509490481434625.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆_2034064881514717186.json, 音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆【内置翻译】_2034851081049608194.json]
+members: [图片生成/文生图/全能G生成视频_2029105561215700993.json, 视频生成/图生视频/+Video3+8秒+图生视频_2001244265034416130.json, 视频生成/图生视频/GK Video3 图生视频_2004525161468620801.json, 视频生成/图生视频/Grok Video3 图生视频_2000471855083421697.json, 视频生成/图生视频/Grok 图生视频_1999287670520020993.json, 视频生成/图生视频/Seedance 1.5 Pro Fast 图生视频｜首尾帧视频｜支持1080P_2097537038789730305.json, 视频生成/图生视频/SeedanceV15ProImageToVideoFast_2038487770900992001.json, 视频生成/图生视频/全能GVideo3 (T2V_I2V)视频生成_2018214912014684161.json, 视频生成/图生视频/全能视频 G图生视频_2034836093006254081.json, 视频生成/图生视频/全能视频X-图生视频-低价渠道版_2049821213257674753.json, 视频生成/图生视频/全能视频X图生视频_1998230093191372801.json, 视频生成/图生视频/全能视频X图生视频_2034090844533297154.json, 视频生成/图生视频/图生视频 自定义动作高清视频_2014217858514952193.json, 视频生成/图生视频/老陈 Gork图生视频 2毛一次_2016146712053686273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_111
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/ComfyUI-FishAudioS2 基础工作流_2032733796189081601.json、音频生成/音频生成/Fish Audio S2 最具表现力、可控情感的实时语音模型_2034565110559150081.json、音频生成/音频生成/FishAudio S2 TTS--音频克隆_2033211276926656513.json、音频生成/音频生成/FishAudio S2 TTS最新最强情绪拉满声音克隆 音色迁移 跨语言音频克隆_2034143431307567105.json、音频生成/音频生成/FishAudio S2 TTS跨语言音频克隆V1_2033384818184036354.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/全能G生成视频_2029105561215700993.json、视频生成/图生视频/+Video3+8秒+图生视频_2001244265034416130.json、视频生成/图生视频/GK Video3 图生视频_2004525161468620801.json、视频生成/图生视频/Grok Video3 图生视频_2000471855083421697.json、视频生成/图生视频/Grok 图生视频_1999287670520020993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `FishS2VoiceCloneTTS`
-- `Load Whisper (mtb)`
-- `LoadAudio`
-- `SaveAudio`
-- `ShowText|pysssss`
+全部 14 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/9 个有
-- `easy cleanGpuUsed` —— 5/9 个有
-- `FishS2TTS` —— 3/9 个有
-- `FishS2MultiSpeakerTTS` —— 2/9 个有
-- `Display Any (rgthree)` —— 1/9 个有
-- `RH_LLMAPI_NODE` —— 1/9 个有
-- `easy convertAnything` —— 1/9 个有
-- `easy saveText` —— 1/9 个有
-- `ttN concat` —— 1/9 个有
+- `RH_Grok_Video3` —— 12/14 个有
+- `MuyeTextEditOutput` —— 3/14 个有
+- `RH_SeedanceV15ProImageToVideoFast` —— 2/14 个有
 
 ## 典型参数
 

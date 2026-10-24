@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_135
 type: Unknown Workflow
-frequency: 8
+frequency: 12
 level: moderate
-coverage: 0.76125
-common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V, SaveVideo, easy showAnything]
+coverage: 0.92225
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2004804181263351810.json, 视频生成/图生视频/1973736551656108033.json, 视频生成/图生视频/2073213892439928834.json, 视频生成/图生视频/1973502975085817858.json, 视频生成/图生视频/1976197006022574081.json, 视频生成/图生视频/1978398824693698561.json, 视频生成/图生视频/1998406614531080193.json, 视频生成/图生视频/1973712515601403905.json]
+members: [图片生成/图生图/一键自定义人物表情工作流-九格宫_2011389874867277825.json, 图片生成/图生图/一键自定义人物表情工作流_2000934707871313921.json, 图片生成/图生图/人像 _ 表情迁移_1923362846393233409.json, 图片生成/图生图/人像多表情生成器_1923619893495648257.json, 图片生成/图生图/人像表情修改｜专业时尚杂志｜人像摄影_1938059916886347777.json, 图片生成/图生图/人物表情控制（基础单帧图）_1925148793665167361.json, 图片生成/图生图/人物表情编辑器_1937429333294129154.json, 图片生成/图生图/图像合并_2043674839818444801.json, 图片生成/图生图/头像表情生成器-超写实表情编辑器-可自行调节任意表情_1933693192728698882.json, 图片生成/图生图/最新表情迁移，自定义换表情，人物换表情_1910517037163081730.json, 图片生成/图生图/直播定制表情包_1924390558213525505.json, 图片生成/图生图/表情管理，控制_1907744083366785025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_135
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2004804181263351810.json、视频生成/图生视频/1973736551656108033.json、视频生成/图生视频/2073213892439928834.json、视频生成/图生视频/1973502975085817858.json、视频生成/图生视频/1976197006022574081.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/一键自定义人物表情工作流-九格宫_2011389874867277825.json、图片生成/图生图/一键自定义人物表情工作流_2000934707871313921.json、图片生成/图生图/人像 _ 表情迁移_1923362846393233409.json、图片生成/图生图/人像多表情生成器_1923619893495648257.json、图片生成/图生图/人像表情修改｜专业时尚杂志｜人像摄影_1938059916886347777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
+全部 12 个 workflow 都包含：
 - `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
-- `easy showAnything`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 7/8 个有
-- `Text Concatenate` —— 7/8 个有
-- `ShowText` —— 5/8 个有
-- `SaveText|pysssss` —— 4/8 个有
-- `PrimitiveString` —— 1/8 个有
-- `easy int` —— 1/8 个有
+- `ExpressionEditor` —— 11/12 个有
+- `ImageConcatMulti` —— 3/12 个有
+- `Fast Groups Muter (rgthree)` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_416
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.88975
-common_nodes: [LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 1
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037525750772928513.json, 视频生成/图生视频/2037761306891128833.json, 视频生成/图生视频/2037733253083303937.json, 视频生成/图生视频/2037721979842732034.json]
+members: [图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json, 图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json, 图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json, 图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json, 图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json, 图片生成/图生图/建筑灯光改造（全能图像编辑）_2015618296388784130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_416
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2037525750772928513.json、视频生成/图生视频/2037761306891128833.json、视频生成/图生视频/2037733253083303937.json、视频生成/图生视频/2037721979842732034.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json、图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json、图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json、图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json、图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
-- `JWInteger` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
+- `CR Text` —— 4/6 个有
+- `ImageConcanate` —— 4/6 个有
+- `CR Text Concatenate` —— 1/6 个有
 
 ## 典型参数
 

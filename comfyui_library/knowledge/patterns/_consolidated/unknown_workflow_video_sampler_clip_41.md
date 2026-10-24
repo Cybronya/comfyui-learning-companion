@@ -1,85 +1,87 @@
 ---
 name: unknown_workflow_video_sampler_clip_41
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: strong
-coverage: 0.814182
-common_nodes: [CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, ImageResizeKJ, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
-problems: [Steps较低可能导致细节不足]
-missing: [Primitive integer [Crystools], Zoe-DepthMapPreprocessor]
-members: [图片生成/文生图/1968219641325715457.json, 视频生成/图生视频/1968267698775969793.json, 视频生成/图生视频/1968241987252047874.json, 视频生成/图生视频/1970889841762308097.json, 视频生成/图生视频/2044946900876529666.json, 视频生成/图生视频/2045881265131360258.json, 视频生成/图生视频/1969030335826718722.json, 视频生成/图生视频/2011257602096766978.json, 视频生成/图生视频/1971574546153336834.json, 视频生成/文生视频/1968982500666195970.json, 视频生成/文生视频/Wan2.2 多合一V2.0_2046237389487611905.json]
+coverage: 0.935083
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJv2, ImpactInt, KSamplerAdvanced, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveStringMultiline, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
+missing: []
+members: [视频生成/图生视频/图生视频 高动态 Smooth Mix  Wan 2.2_1979531861057769474.json, 视频生成/图生视频/最强电商女装丝滑带货文图生视频工作流_2050045558773035009.json, 视频生成/图生视频/电影时光机+爆款复刻+多图首尾帧_2007316422707388418.json, 视频生成/图生视频/视频生成-生成视频片段_2010181863981191170.json, 视频生成/图生视频/视频生成-生成视频片段_2012343495582818305.json, 视频生成/图生视频/飞行魔法少女+飞行滑板+多图首尾帧_2006937829007433729.json, 视频生成/图生视频/首尾帧图生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981312323858104321.json, 视频生成/图生视频/首尾帧视频_1986671035942662146.json, 视频生成/图生视频/高动态电影级首尾帧Wan2.2-Smooth Mix 超丝滑动态1.0_1986030132559314946.json, 视频生成/图生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 图生视频🚵_1979384591175815170.json, 视频生成/图生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 首尾帧视频🚵_1979384908328112130.json, 视频生成/文生视频/高动态电影探班短视频复刻首尾帧Wan2.2-Smooth Mix_1999803744537673729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_41
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/1968219641325715457.json、视频生成/图生视频/1968267698775969793.json、视频生成/图生视频/1968241987252047874.json、视频生成/图生视频/1970889841762308097.json、视频生成/图生视频/2044946900876529666.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/图生视频 高动态 Smooth Mix  Wan 2.2_1979531861057769474.json、视频生成/图生视频/最强电商女装丝滑带货文图生视频工作流_2050045558773035009.json、视频生成/图生视频/电影时光机+爆款复刻+多图首尾帧_2007316422707388418.json、视频生成/图生视频/视频生成-生成视频片段_2010181863981191170.json、视频生成/图生视频/视频生成-生成视频片段_2012343495582818305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `ImageResizeKJ`
-- `KSampler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `KSamplerAdvanced`
 - `LoadImage`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
+- `SimpleMath+`
+- `UNETLoader`
 - `VAEDecode`
-- `VHS_LoadVideo`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 10/11 个有
-- `ImageBlend` —— 10/11 个有
-- `Zoe-DepthMapPreprocessor` —— 10/11 个有
-- `CheckpointLoaderSimple` —— 9/11 个有
-- `Primitive integer [Crystools]` —— 9/11 个有
-- `SimpleMath+` —— 3/11 个有
-- `CLIPLoader` —— 2/11 个有
-- `CR Text` —— 2/11 个有
-- `GetNode` —— 2/11 个有
-- `PathchSageAttentionKJ` —— 2/11 个有
-- `SetNode` —— 2/11 个有
-- `UNETLoader` —— 2/11 个有
-- `VAELoader` —— 2/11 个有
-- `GroundingDinoModelLoader_SDPose` —— 1/11 个有
-- `RH_Nano_Banana_Image2Image` —— 1/11 个有
-- `SDPoseOODLoader` —— 1/11 个有
-- `SDPoseOODProcessor` —— 1/11 个有
-- `SaveImage` —— 1/11 个有
-- `TextBox` —— 1/11 个有
-- `YOLOModelLoader` —— 1/11 个有
+- `Seed (rgthree)` —— 11/12 个有
+- `easy cleanGpuUsed` —— 11/12 个有
+- `Fast Bypasser (rgthree)` —— 10/12 个有
+- `Mute / Bypass Repeater (rgthree)` —— 10/12 个有
+- `wanBlockSwap` —— 10/12 个有
+- `RIFE VFI` —— 9/12 个有
+- `ImageScaleBy` —— 8/12 个有
+- `WanFirstLastFrameToVideo` —— 5/12 个有
+- `WanImageToVideo` —— 5/12 个有
+- `RHHiddenNodes` —— 4/12 个有
+- `GetNode` —— 2/12 个有
+- `Note Plus (mtb)` —— 2/12 个有
+- `SetNode` —— 2/12 个有
+- `WanAdvancedI2V` —— 2/12 个有
+- `ImageResize+` —— 1/12 个有
+- `RH_LLMAPI_NODE` —— 1/12 个有
+- `RH_Nano_Banana_Image2Image` —— 1/12 个有
+- `RH_Translator` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
+- `ShowText` —— 1/12 个有
+- `easy textSwitch` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 6 | 11 | 82% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | ipndm | - | 11 | 100% |
-| 调度器 | sgm_uniform | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | fixed | - | 12 | 75% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 12 | 100% |
+| 采样算法 | 1 | 1 - 1 | 12 | 100% |
+| 调度器 | euler_ancestral | - | 12 | 100% |
+| 重绘幅度 | simple | - | 12 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 6，11 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，11 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Primitive integer [Crystools]、Zoe-DepthMapPreprocessor
+- 采样步数 最常用 fixed，12 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，12 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，12 个样本，一致性 100%
+- 重绘幅度 最常用 simple，12 个样本，一致性 100%

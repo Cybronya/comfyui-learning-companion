@@ -3,61 +3,64 @@ name: unknown_workflow_video_lora_sampler_343
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.677667
-common_nodes: [ADE_CameraPoseCombo, CameraPoseVisualizer, GetNode, ImageResizeKJv2, LoadImage, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.6445
+common_nodes: [CLIPVisionLoader, DrawViTPose, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956348088506089473.json, 视频生成/图生视频/2015621060615475201.json, 视频生成/图生视频/2004051872707166210.json, 视频生成/图生视频/2004354618245214209.json, 视频生成/图生视频/1956308864335532034.json, 视频生成/图生视频/1963766587461439490.json]
+members: [视频生成/图生视频/Animate视频人物替换工作流_2069422147151417345.json, 视频生成/图生视频/Wan2.2 Animate人物动作迁移工作流搭建-初级篇_2050899529087635457.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ手动版人物角色替换_1983039224398131201.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json, 视频生成/图生视频/人物动作偏移工作流进阶版_2070126355764830210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_343
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1956348088506089473.json、视频生成/图生视频/2015621060615475201.json、视频生成/图生视频/2004051872707166210.json、视频生成/图生视频/2004354618245214209.json、视频生成/图生视频/1956308864335532034.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Animate视频人物替换工作流_2069422147151417345.json、视频生成/图生视频/Wan2.2 Animate人物动作迁移工作流搭建-初级篇_2050899529087635457.json、视频生成/图生视频/【阡陌】Wan2.2 Animate KJ手动版人物角色替换_1983039224398131201.json、视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json、视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ADE_CameraPoseCombo`
-- `CameraPoseVisualizer`
-- `GetNode`
-- `ImageResizeKJv2`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `SetNode`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoFunCameraEmbeds`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 5/6 个有
-- `Primitive integer [Crystools]` —— 5/6 个有
-- `Text Multiline` —— 5/6 个有
-- `ImpactInt` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `CLIPLoader` —— 1/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `CreateVideo` —— 1/6 个有
-- `JWInteger` —— 1/6 个有
-- `PreViewVideo` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `WanVideoTextEmbedBridge` —— 1/6 个有
+- `PreviewImage` —— 5/6 个有
+- `GetNode` —— 4/6 个有
+- `ImageFromBatch` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `BlockifyMask` —— 3/6 个有
+- `DrawMaskOnImage` —— 3/6 个有
+- `ImageConcanate` —— 3/6 个有
+- `ImageResize+` —— 3/6 个有
+- `ImageResizeKJv2` —— 3/6 个有
+- `SeCModelLoader` —— 3/6 个有
+- `SeCVideoSegmentation` —— 3/6 个有
+- `WanVideoSetBlockSwap` —— 3/6 个有
+- `WanVideoSetLoRAs` —— 3/6 个有
+- `LayerMask: MaskGrow` —— 2/6 个有
+- `LayerMask: MaskPreview` —— 2/6 个有
+- `PointsEditor` —— 2/6 个有
+- `SaveImage` —— 1/6 个有
+- `WanVideoContextOptions` —— 1/6 个有
 
 ## 典型参数
 

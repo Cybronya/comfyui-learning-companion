@@ -1,52 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_181
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.914
-common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.855429
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSamplerSelect, LoadImage, RFInversion, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, UnofficialExtensions, UntwistingRoPE, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/1971371663310929922.json, 图片生成/文生图/Newbie Image 文生图_2025554845473705985.json, 图片生成/文生图/【琉梦】最强二次元_动漫 文生图 + 简易工作流 + Newbie Image模型 + 快速出图_2016462546584215553.json]
+members: [图片生成/图生图/klein-9b-最强风格迁移_2064327792870907906.json, 图片生成/图生图/z-image-turbo-参考风格生成_2062502317689233409.json, 图片生成/文生图/Untwisting-RoPE：免训练高级图像风格转绘（文生图）_2070058042036670466.json, 图片生成/文生图/flux2_klein_9b ROPE 风格变换 工作流_2062039782582210561.json, 图片生成/文生图/qwen_image_edit_2511 ROPE 风格变换 工作流_2062044303366647809.json, 图片生成/文生图/z_image_turbo-UntwistingROPE 风格变换 工作流_2062027500867383297.json, 图片生成/文生图/【万物皆可转绘】Untwisting RoPE 免训练任意风格迁移_2069064857554604034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_181
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1971371663310929922.json、图片生成/文生图/Newbie Image 文生图_2025554845473705985.json、图片生成/文生图/【琉梦】最强二次元_动漫 文生图 + 简易工作流 + Newbie Image模型 + 快速出图_2016462546584215553.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/klein-9b-最强风格迁移_2064327792870907906.json、图片生成/图生图/z-image-turbo-参考风格生成_2062502317689233409.json、图片生成/文生图/Untwisting-RoPE：免训练高级图像风格转绘（文生图）_2070058042036670466.json、图片生成/文生图/flux2_klein_9b ROPE 风格变换 工作流_2062039782582210561.json、图片生成/文生图/qwen_image_edit_2511 ROPE 风格变换 工作流_2062044303366647809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `KSampler`
+- `EmptySD3LatentImage`
+- `KSamplerSelect`
+- `LoadImage`
+- `RFInversion`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
+- `UnofficialExtensions`
+- `UntwistingRoPE`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 2/3 个有
-- `RescaleCFG` —— 2/3 个有
-- `EmptyHunyuanImageLatent` —— 1/3 个有
-- `ModelSamplingSD3` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `ImageResizeKJv2` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `ImageScaleToTotalPixels` —— 3/7 个有
+- `ReferenceLatent` —— 3/7 个有
+- `ConditioningAddImageReference` —— 2/7 个有
+- `ImageScaleBy` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `GetImageSize` —— 1/7 个有
+- `GetNode` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageScaleToTotalPixelsX` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `SetNode` —— 1/7 个有
+- `TextConcatenate` —— 1/7 个有
+- `TextEncodeQwenImageEditPlus` —— 1/7 个有
+- `llama_cpp_instruct_adv` —— 1/7 个有
+- `llama_cpp_model_loader` —— 1/7 个有
+- `llama_cpp_parameters` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 28 | 20 - 28 | 3 | 85% |
-| Prompt 约束强度(CFG) | 4.5 | 3 - 4.5 | 3 | 82% |
-| 采样算法 | res_multistep | - | 3 | 67% |
-| 调度器 | linear_quadratic | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -54,8 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 28，观测区间 20 - 28，3 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 3 - 4.5，3 个样本，取值集中（一致性 82%）
-- 采样算法 最常用 res_multistep，3 个样本，一致性 67%
-- 调度器 最常用 linear_quadratic，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

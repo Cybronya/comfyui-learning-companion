@@ -3,39 +3,31 @@ name: unknown_workflow_video_upscale_6
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.757
-common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiplyNode, PrimitiveInt, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, ttN text]
+coverage: 1
+common_nodes: [VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, VOSR2ModelLoader, VOSR2Upscale]
 problems: []
 missing: []
-members: [视频生成/图生视频/1919981556402950146.json, 视频生成/图生视频/1916132186154799106.json]
+members: [图片生成/文生图/VOSR2超分放大_2098210361257320450.json, 视频生成/图生视频/VOSR2超分放大_2102791853279113217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1919981556402950146.json、视频生成/图生视频/1916132186154799106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/VOSR2超分放大_2098210361257320450.json、视频生成/图生视频/VOSR2超分放大_2102791853279113217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageUpscaleWithModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `MultiplyNode`
-- `PrimitiveInt`
-- `RIFE VFI`
-- `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `ttN text`
-
-**可变部分**（部分 workflow 才有）：
-- `RunningHub_FramePack` —— 1/2 个有
-- `RunningHub_FramePack_F1` —— 1/2 个有
+- `VHS_VideoInfoLoaded`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
 
 ## 典型参数
 

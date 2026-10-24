@@ -2,82 +2,89 @@
 name: unknown_workflow_video_lora_sampler_98
 type: Unknown Workflow
 frequency: 15
-level: strong
-coverage: 0.789067
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+level: moderate
+coverage: 0.503467
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveStringMultiline, ResizeMask, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2046802828332634114.json, 视频生成/图生视频/2057262111021158401.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json, 视频生成/图生视频/2059827902316900354.json, 视频生成/图生视频/2063798363463704577.json, 视频生成/图生视频/2047485702841049089.json, 视频生成/图生视频/2050810161220071425.json, 视频生成/图生视频/2054823248579317761.json, 视频生成/图生视频/2050993375851106306.json, 视频生成/图生视频/2052745658586677250.json, 视频生成/图生视频/2050032331129405442.json, 视频生成/图生视频/2046957180640829441.json, 视频生成/图生视频/2050043137099350017.json, 视频生成/图生视频/2047122187932409857.json, 视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json]
+members: [视频生成/图生视频/12月Wan替换单人-_2004125013651431425.json, 视频生成/图生视频/Wan2.2 单人角色一键替换_2004191183524032514.json, 视频生成/图生视频/Wan2.2-Animate-视频换人-视频编辑_1967603530557263873.json, 视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083504711071784961.json, 视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083527439560560641.json, 视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2091491947067305986.json, 视频生成/图生视频/Wan视频编辑V5-简易-替换单人-最新V2版模型_1986747671119605761.json, 视频生成/图生视频/Wan视频编辑V5-简易-替换单人-最新V2版模型_1997959528341733378.json, 视频生成/图生视频/Wan视频编辑V5-简易-替换单人-最新V2版模型_2011440893659713538.json, 视频生成/图生视频/Wan视频编辑V5-简易-替换单人-最新V2版模型_2044050920656343042.json, 视频生成/图生视频/Wan视频编辑简易-替换单人-最极速版_2083053571100205058.json, 视频生成/图生视频/【简便版】Wan2.2 图生视频 人物动作迁移 复制姿态_1976803129901699073.json, 视频生成/图生视频/人替换（6g显存可用_2026602744257187841.json, 视频生成/图生视频/浮云 —视频换人（人物尽量选择全身照）_1993617615450996738.json, 视频生成/图生视频/🦖Wan视频替换单人v5_1979090579290230785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_98
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2046802828332634114.json、视频生成/图生视频/2057262111021158401.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json、视频生成/图生视频/2059827902316900354.json、视频生成/图生视频/2063798363463704577.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/12月Wan替换单人-_2004125013651431425.json、视频生成/图生视频/Wan2.2 单人角色一键替换_2004191183524032514.json、视频生成/图生视频/Wan2.2-Animate-视频换人-视频编辑_1967603530557263873.json、视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083504711071784961.json、视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083527439560560641.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `ResizeMask`
+- `Sam2Segmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 14/15 个有
-- `LTXVPreprocess` —— 14/15 个有
-- `LoadImage` —— 14/15 个有
-- `SetNode` —— 14/15 个有
-- `UNETLoader` —— 14/15 个有
-- `JWInteger` —— 13/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/15 个有
-- `PromptRelayEncode` —— 10/15 个有
-- `PreviewAny` —— 9/15 个有
-- `RH_LLMAPI_Pro_Node` —— 9/15 个有
-- `RegexExtract` —— 9/15 个有
-- `CM_IntToFloat` —— 8/15 个有
-- `SimpleMath+` —— 8/15 个有
-- `Text` —— 8/15 个有
-- `PreviewImage` —— 7/15 个有
-- `CR Prompt Text` —— 5/15 个有
-- `PromptRelayEncodeTimeline` —— 5/15 个有
-- `AudioCrop` —— 1/15 个有
-- `INTConstant` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `LTXVAudioVAEEncode` —— 1/15 个有
-- `LoadAudio` —— 1/15 个有
-- `SetLatentNoiseMask` —— 1/15 个有
-- `SolidMask` —— 1/15 个有
-- `UnetLoaderGGUF` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
-- `easy ifElse` —— 1/15 个有
+- `PreviewAny` —— 14/15 个有
+- `PrimitiveString` —— 14/15 个有
+- `StringConcatenate` —— 14/15 个有
+- `easy int` —— 13/15 个有
+- `Mute / Bypass Relay (rgthree)` —— 11/15 个有
+- `Mute / Bypass Repeater (rgthree)` —— 11/15 个有
+- `Bookmark (rgthree)` —— 10/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 10/15 个有
+- `Label (rgthree)` —— 10/15 个有
+- `GetImageRangeFromBatch` —— 4/15 个有
+- `ImageResizeKJ` —— 4/15 个有
+- `Note Plus (mtb)` —— 4/15 个有
+- `Int` —— 3/15 个有
+- `SimpleMath+` —— 3/15 个有
+- `Bjornulf_ShowFloat` —— 2/15 个有
+- `Bjornulf_ShowInt` —— 2/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 409 - 489 | 15 | 96% |
-| 高度 | 25 | 25 - 25 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -85,5 +92,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 409 - 489，15 个样本，取值集中（一致性 96%）
-- 高度 中位数 25，观测区间 25 - 25，15 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

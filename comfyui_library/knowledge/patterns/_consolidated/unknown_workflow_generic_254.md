@@ -1,38 +1,42 @@
 ---
 name: unknown_workflow_generic_254
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.7874
-common_nodes: [Comfly_api_set, SaveImage]
+coverage: 0.933222
+common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/文生图/(4K-基准0.15)Nano 全能图片V1 Pro文生图（贞贞AI工坊版）_1991886260597837825.json, 图片生成/文生图/1k-4K都是基准0.15- 全能图片V1 Pro文生图-调用贞贞工坊版_1992138380995612674.json, 图片生成/文生图/全能图片G V2图像编辑（贞贞API-需要改分组）_2048202822134538241.json, 图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json, 视频生成/文生视频/（Fal稳定版）全能图片G-image-2-fal图像编辑（贞贞AI工坊）_2055602439281225729.json]
+members: [音频生成/音频生成/IndexTTS2 多人对话_2042951687509385218.json, 音频生成/音频生成/TTS2声音克隆+情感参考-老祺_2028309428746850306.json, 音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json, 音频生成/音频生成/indexTTS2-单（多）人语音模仿+多情绪+情感音色_2009276978364424193.json, 音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json, 音频生成/音频生成/indextts2-单双人+音色情感 多种自由组合控制多合一工作流_1973292870658560001.json, 音频生成/音频生成/三笔成书——indexTTS2-多人语音模仿_2000009916209299458.json, 音频生成/音频生成/声音克隆+情感参考（转跳爷）_2046777867777875970.json, 音频生成/音频生成/声音克隆（单人_双人克隆音色，情感调节）_2051295398525972481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_254
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/(4K-基准0.15)Nano 全能图片V1 Pro文生图（贞贞AI工坊版）_1991886260597837825.json、图片生成/文生图/1k-4K都是基准0.15- 全能图片V1 Pro文生图-调用贞贞工坊版_1992138380995612674.json、图片生成/文生图/全能图片G V2图像编辑（贞贞API-需要改分组）_2048202822134538241.json、图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json、视频生成/文生视频/（Fal稳定版）全能图片G-image-2-fal图像编辑（贞贞AI工坊）_2055602439281225729.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2 多人对话_2042951687509385218.json、音频生成/音频生成/TTS2声音克隆+情感参考-老祺_2028309428746850306.json、音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json、音频生成/音频生成/indexTTS2-单（多）人语音模仿+多情绪+情感音色_2009276978364424193.json、音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Comfly_api_set`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSEmotionVector`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `Comfly_nano_banana2_edit` —— 3/5 个有
-- `Comfly_gpt_image_2_fal` —— 2/5 个有
-- `Text` —— 2/5 个有
+- `PreviewAudio` —— 8/9 个有
+- `easy indexTTSAudioMerge` —— 7/9 个有
+- `easy indexTTSEmotionMerge` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `easy indexTTSEmotionAudio` —— 5/9 个有
+- `LoadImage` —— 2/9 个有
+- `Textbox` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,74 +1,67 @@
 ---
 name: unknown_workflow_sampler_unet_vae_134
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.794667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.811875
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/H3数字人单人可做MV、口播等_2084869137700052993.json, 数字人/数字人/MiniMAX3参考音频对口型-8月8日版_2086535599267344386.json, 数字人/数字人/MiniMax H3  数字人_单人版_2085223953907404802.json, 数字人/数字人/MiniMax H3-数字人_2084880448492228609.json, 数字人/数字人/MiniMax H3-数字人_2111474246617751554.json, 数字人/数字人/MiniMax h3音频驱动数字人对口型-自动写提示词+全节点注释_2089689798725423105.json]
+members: [视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084634965546987521.json, 视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084974736878161922.json, 视频生成/图生视频/MiniMaxH3 首尾帧生视频！加速版！艾橘溪_2084497876612370434.json, 视频生成/图生视频/MiniMaxH3+首尾帧生视频！加速版_2085236338848260097.json, 视频生成/图生视频/MiniMax_H3_i2v_2088871530771083265.json, 视频生成/图生视频/i2va_minimax_h3_vaeint8_api_2103863320280391681.json, 视频生成/图生视频/minimax h3 竖屏版_2084459891346993153.json, 视频生成/图生视频/首尾帧生视频 MiniMaxH3+！加速版_2086649496523591681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_134
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/H3数字人单人可做MV、口播等_2084869137700052993.json、数字人/数字人/MiniMAX3参考音频对口型-8月8日版_2086535599267344386.json、数字人/数字人/MiniMax H3  数字人_单人版_2085223953907404802.json、数字人/数字人/MiniMax H3-数字人_2084880448492228609.json、数字人/数字人/MiniMax H3-数字人_2111474246617751554.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084634965546987521.json、视频生成/图生视频/MiniMax-H3开源版 首尾帧生视频 加速版 自动生成转场视频_2084974736878161922.json、视频生成/图生视频/MiniMaxH3 首尾帧生视频！加速版！艾橘溪_2084497876612370434.json、视频生成/图生视频/MiniMaxH3+首尾帧生视频！加速版_2085236338848260097.json、视频生成/图生视频/MiniMax_H3_i2v_2088871530771083265.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3ImageToVideo`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 5/6 个有
-- `PathchSageAttentionKJ` —— 5/6 个有
-- `SoundFlow_GetLength` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `PreviewAudio` —— 3/6 个有
-- `AudioConcat` —— 2/6 个有
-- `EmptyAudio` —— 2/6 个有
-- `Any Switch (rgthree)` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `CreateVideo` —— 1/6 个有
-- `JoinStringMulti` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `SaveAudio` —— 1/6 个有
-- `SaveVideo` —— 1/6 个有
-- `SpectrumApplyMiniMaxH3` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
-- `ToString` —— 1/6 个有
-- `TrimAudioDuration` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
-- `llama_cpp_instruct_adv` —— 1/6 个有
-- `llama_cpp_model_loader` —— 1/6 个有
-- `llama_cpp_parameters` —— 1/6 个有
+- `ImageResizeKJv2` —— 7/8 个有
+- `PathchSageAttentionKJ` —— 6/8 个有
+- `AILab_QwenVL_Advanced` —— 5/8 个有
+- `GetNode` —— 5/8 个有
+- `Image Stitch` —— 5/8 个有
+- `ImageScaleDownToSize` —— 5/8 个有
+- `LayerUtility: PurgeVRAM` —— 5/8 个有
+- `SetNode` —— 5/8 个有
+- `easy positive` —— 5/8 个有
+- `LoraLoader` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `Seed (rgthree)` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 0 | - | 1 | 100% |
 
 ## 常见问题
 

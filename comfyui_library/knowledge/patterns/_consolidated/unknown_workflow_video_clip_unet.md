@@ -1,79 +1,74 @@
 ---
 name: unknown_workflow_video_clip_unet
 type: Unknown Workflow
-frequency: 32
-level: weak
-coverage: 0.8755
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DF_Integer, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy int]
+frequency: 26
+level: moderate
+coverage: 0.626731
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, Int, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1962917195766534146.json, 视频生成/图生视频/1950878967190454273.json, 视频生成/图生视频/1951086042193571841.json, 视频生成/图生视频/1947906142839144449.json, 视频生成/图生视频/1951893131908337665.json, 视频生成/图生视频/1953037159256289282.json, 视频生成/图生视频/1955442912282775554.json, 视频生成/图生视频/1957271375608213506.json, 视频生成/图生视频/1956923481642426370.json, 视频生成/图生视频/1955447179764797442.json, 视频生成/图生视频/1952614718961848322.json, 视频生成/图生视频/1950000678817193986.json, 视频生成/图生视频/1952550373196279809.json, 视频生成/图生视频/1955912708610772993.json, 视频生成/图生视频/1950367167160213505.json, 视频生成/图生视频/1950070634309181442.json, 视频生成/图生视频/1955832796889714690.json, 视频生成/图生视频/1959200308658384898.json, 视频生成/图生视频/1955505407994183681.json, 视频生成/图生视频/1959201983930511361.json, 视频生成/图生视频/1959202864231034882.json, 视频生成/图生视频/1955506128698445825.json, 视频生成/图生视频/1955448466613813249.json, 视频生成/图生视频/1955834523080691713.json, 视频生成/图生视频/1955835322741526529.json, 视频生成/图生视频/1949713099642294274.json, 视频生成/图生视频/2004402165575806978.json, 视频生成/图生视频/1983463880548655106.json, 视频生成/图生视频/1950029873998905345.json, 视频生成/图生视频/1952552254299680769.json, 视频生成/图生视频/1952551449228185602.json, 视频生成/图生视频/1975460851899568129.json]
+members: [视频生成/图生视频/11FINAL-Qwen3VL 图生视频_2049387851611119618.json, 视频生成/图生视频/2026 SmoothPro图片生视频_2009138591993171970.json, 视频生成/图生视频/Qwen3VL+首尾帧视频生成_2049389424517058561.json, 视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_1996506562493554690.json, 视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_2009254393203396610.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V图生视频_2038989882521030658.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2009543545169907714.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2047592882332241922.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2051628991756419074.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2070382789744218114.json, 视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧视频_1987169484022681602.json, 视频生成/图生视频/WAN2.2-RemixV2__I2V首尾帧视频_2000107947743211522.json, 视频生成/图生视频/WAN2.2-RemixV2__I2V首尾帧视频_2014511689311461377.json, 视频生成/图生视频/WAN2.2高动态图生视频_2005870552181080066.json, 视频生成/图生视频/WANSmooth Mix  万相图生视频 首尾帧 新增加角色迁移 优化部署_2011360351337586690.json, 视频生成/图生视频/Wan2.2_Smooth Mix I2V图生视频_2014967936171118594.json, 视频生成/图生视频/Wan2.2_Smooth Mix I2V图生视频合集_2003656092246786049.json, 视频生成/图生视频/Wan2.2_Smooth+Mix+I2V图生视频_2008710367467278338.json, 视频生成/图生视频/Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json, 视频生成/图生视频/Wan2.2_Smooth_I2V_1978100410332372994.json, 视频生成/图生视频/Work-Fisher_Wan2.2_Smooth Mix I2V_1977733586520526849.json, 视频生成/图生视频/painterI2V_Smooth-Mix-I2V-动态强度可调版_1991393474855677954.json, 视频生成/图生视频/wan2.2 remix2.1动态增强版，图生视频，首尾帧_2016050718058221570.json, 视频生成/图生视频/升帧率版！视频更流畅！SmoothMix图生视频工作流_2041940547862011906.json, 视频生成/图生视频/图生视频三合一_1989202915321589761.json, 视频生成/图生视频/首尾帧_图生视频四合一_1992859603580899330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet
 
-> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（视频生成/图生视频/1962917195766534146.json、视频生成/图生视频/1950878967190454273.json、视频生成/图生视频/1951086042193571841.json、视频生成/图生视频/1947906142839144449.json、视频生成/图生视频/1951893131908337665.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/11FINAL-Qwen3VL 图生视频_2049387851611119618.json、视频生成/图生视频/2026 SmoothPro图片生视频_2009138591993171970.json、视频生成/图生视频/Qwen3VL+首尾帧视频生成_2049389424517058561.json、视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_1996506562493554690.json、视频生成/图生视频/WAN2.2 RemixV2  I2V 图生视频_2009254393203396610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：32
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：26
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 32 个 workflow 都包含：
+全部 26 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DF_Integer`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `ModelSamplingSD3`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `Int`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
-- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy int`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 31/32 个有
-- `easy ifElse` —— 31/32 个有
-- `KSamplerAdvanced` —— 28/32 个有
-- `RH_Captioner` —— 27/32 个有
-- `easy cleanGpuUsed` —— 23/32 个有
-- `easy showAnything` —— 23/32 个有
-- `CR Text Replace` —— 22/32 个有
-- `LoraLoaderModelOnly` —— 21/32 个有
-- `TextBox` —— 21/32 个有
-- `LayerUtility: PurgeVRAM V2` —— 16/32 个有
-- `LayerUtility: PurgeVRAM` —— 11/32 个有
-- `PatchModelPatcherOrder` —— 11/32 个有
-- `TorchCompileModelWanVideoV2` —— 11/32 个有
-- `ShowText|pysssss` —— 9/32 个有
-- `Text Multiline` —— 9/32 个有
-- `RH_LLMAPI_NODE` —— 8/32 个有
-- `RH_Translator` —— 8/32 个有
-- `string_util_StrReplace` —— 8/32 个有
-- `INTConstant` —— 4/32 个有
-- `KSampler` —— 4/32 个有
-- `JjkText` —— 1/32 个有
-- `MathExpression|pysssss` —— 1/32 个有
-- `Textbox` —— 1/32 个有
+- `ImageResizeKJv2` —— 25/26 个有
+- `RIFE VFI` —— 25/26 个有
+- `wanBlockSwap` —— 24/26 个有
+- `LoadImage` —— 19/26 个有
+- `WanFirstLastFrameToVideo` —— 17/26 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 16/26 个有
+- `CLIPVisionEncode` —— 14/26 个有
+- `CLIPVisionLoader` —— 14/26 个有
+- `KSamplerAdvanced` —— 14/26 个有
+- `ModelSamplingSD3` —— 14/26 个有
+- `PreviewImage` —— 14/26 个有
+- `WanImageToVideo` —— 14/26 个有
+- `WanMoeKSampler` —— 14/26 个有
+- `DF_Integer` —— 10/26 个有
+- `SimpleMath+` —— 10/26 个有
+- `ImageLoader` —— 9/26 个有
+- `FL_RIFE` —— 2/26 个有
+- `LoraLoaderModelOnly` —— 2/26 个有
+- `PainterI2V` —— 2/26 个有
+- `PlaySound|pysssss` —— 1/26 个有
+- `PrimitiveStringMultiline` —— 1/26 个有
+- `easy int` —— 1/26 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 32 | 72% |
-| Prompt 约束强度(CFG) | 8 | 1 - 20 | 32 | 42% |
-| 采样算法 | 1 | 1 - 4 | 28 | 39% |
-| 调度器 | euler | - | 32 | 88% |
-| 重绘幅度 | simple | - | 32 | 88% |
+| 采样步数 | randomize | - | 26 | 65% |
+| Prompt 约束强度(CFG) | 4 | 4 - 8 | 26 | 69% |
+| 采样算法 | 1 | 1 - 1 | 26 | 100% |
+| 调度器 | euler | - | 26 | 54% |
+| 重绘幅度 | normal | - | 26 | 54% |
 
 ## 常见问题
 
@@ -81,9 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，32 个样本，一致性 72%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 20，32 个样本，取值分散，一致性仅 42%
-- 采样算法 中位数 1，观测区间 1 - 4，28 个样本，取值分散，一致性仅 39%
-- 调度器 最常用 euler，32 个样本，一致性 88%
-- 重绘幅度 最常用 simple，32 个样本，一致性 88%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 最常用 randomize，26 个样本，一致性 65%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，26 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，26 个样本，一致性 54%
+- 重绘幅度 最常用 normal，26 个样本，一致性 54%

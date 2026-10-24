@@ -3,64 +3,79 @@ name: unknown_workflow_video_lora_sampler_573
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.53
-common_nodes: [FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, MathExpression|pysssss, PreviewAudio, ReplaceVideoLatentFrames, SetNode, SimpleMath+, Text Multiline, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, easy forLoopEnd, easy forLoopStart, easy promptLine, easy showAnything]
+coverage: 0.836667
+common_nodes: [DownloadAndLoadWav2VecModel, GetNode, ImageConcatMulti, ImageFromBatch+, Int, JWInteger, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Long.720_2084992456046768130.json, 数字人/数字人/LongCat-1.5数字人720_1280_2084861521263419394.json, 视频生成/图生视频/LongCat-1.5主播数字人精准口型全自动循环长视频_2100856928686657538.json]
+members: [图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json, 视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json, 视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_573
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Long.720_2084992456046768130.json、数字人/数字人/LongCat-1.5数字人720_1280_2084861521263419394.json、视频生成/图生视频/LongCat-1.5主播数字人精准口型全自动循环长视频_2100856928686657538.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json、视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json、视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `DownloadAndLoadWav2VecModel`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `Int`
+- `JWInteger`
 - `LoadAudio`
 - `LoadImage`
-- `LongCatAvatarWhisperEmbeds`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
 - `MathExpression|pysssss`
-- `PreviewAudio`
-- `ReplaceVideoLatentFrames`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
 - `SetNode`
-- `SimpleMath+`
-- `Text Multiline`
-- `TrimAudioDuration`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 1/3 个有
+- `AudioCrop` —— 2/3 个有
+- `AudioSeparation` —— 2/3 个有
+- `CR Integer To String` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `ImageResize+` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
+- `Text Concatenate` —— 2/3 个有
+- `ToInt` —— 2/3 个有
+- `Wan22PromptSelector` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `VideoCombine_Adv` —— 1/3 个有
 
 ## 典型参数
 

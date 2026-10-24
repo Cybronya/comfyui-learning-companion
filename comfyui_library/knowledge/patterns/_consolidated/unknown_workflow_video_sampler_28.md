@@ -3,56 +3,40 @@ name: unknown_workflow_video_sampler_28
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.704
-common_nodes: [ColorMatch, GetNode, ImageConcanate, ImageFromBatch, ImageResizeKJ, ImpactSwitch, LoadImage, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoUniAnimateDWPoseDetector, WanVideoUniAnimatePoseInput]
+coverage: 1
+common_nodes: [DownloadAndLoadMimicMotionModel, ImageResize+, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1947143904128446465.json, 视频生成/图生视频/1955563973305405442.json]
+members: [视频生成/图生视频/MimicMotion图生视频_1992133627490226178.json, 视频生成/图生视频/mimic motion图片跟着视频跳起来_1999041093834563585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_28
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1947143904128446465.json、视频生成/图生视频/1955563973305405442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MimicMotion图生视频_1992133627490226178.json、视频生成/图生视频/mimic motion图片跟着视频跳起来_1999041093834563585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ColorMatch`
-- `GetNode`
-- `ImageConcanate`
-- `ImageFromBatch`
-- `ImageResizeKJ`
-- `ImpactSwitch`
+- `DownloadAndLoadMimicMotionModel`
+- `ImageResize+`
 - `LoadImage`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `SetNode`
-- `SimpleMath+`
+- `MimicMotionDecode`
+- `MimicMotionGetPoses`
+- `MimicMotionSampler`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoUniAnimateDWPoseDetector`
-- `WanVideoUniAnimatePoseInput`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `LoadWanVideoT5TextEncoder` —— 1/2 个有
-- `WanVideoVAELoader` —— 1/2 个有
+- `HAIGC_VideoResize` —— 1/2 个有
+- `ImageCASharpening+` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
 
 ## 典型参数
 

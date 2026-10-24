@@ -2,58 +2,59 @@
 name: unknown_workflow_video_upscale_sampler_11
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.903
-common_nodes: [CR Text, CR Text Concatenate, ImageResizeKJ, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, RH_Captioner, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+level: strong
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageScaleBy, ImageUpscaleWithModel, KSampler, UpscaleModelLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1932001597558030338.json, 视频生成/图生视频/1932009420425723906.json, 视频生成/文生视频/1932577426033549314.json]
+members: [视频生成/图生视频/Wan2.1-图生视频+放大补帧_1908814270581059585.json, 视频生成/图生视频/原生-Wan2.1-GGUF-图生视频+放大补帧_1897558094359285761.json, 视频生成/文生视频/通义万相文生视频+放大补帧_1896034997206188033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1932001597558030338.json、视频生成/图生视频/1932009420425723906.json、视频生成/文生视频/1932577426033549314.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.1-图生视频+放大补帧_1908814270581059585.json、视频生成/图生视频/原生-Wan2.1-GGUF-图生视频+放大补帧_1897558094359285761.json、视频生成/文生视频/通义万相文生视频+放大补帧_1896034997206188033.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `ImageResizeKJ`
-- `ImageScale`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `RH_Captioner`
-- `RIFE VFI`
+- `KSampler`
 - `UpscaleModelLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PlaySound|pysssss` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `WanVideoSLG` —— 1/3 个有
+- `CLIPVisionEncode` —— 2/3 个有
+- `CLIPVisionLoader` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `UnetLoaderGGUF` —— 2/3 个有
+- `WanImageToVideo` —— 2/3 个有
+- `WanVideoTeaCacheKJ` —— 2/3 个有
+- `EmptyHunyuanLatentVideo` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 30 | 3 | 80% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -61,4 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 30，3 个样本
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

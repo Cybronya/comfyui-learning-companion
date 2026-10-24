@@ -1,39 +1,46 @@
 ---
 name: unknown_workflow_video_sampler_12
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.76975
-common_nodes: [CR Prompt Text, FlashVSRNode, GetVideoComponents, JWInteger, LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, VHS_VideoCombine]
+coverage: 0.938
+common_nodes: [CLIPLoader, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, ImageResizeKJ, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017541473100636162.json, 视频生成/图生视频/2018921515974139906.json, 视频生成/图生视频/2017228982122455041.json, 视频生成/图生视频/2019624911567851522.json]
+members: [视频生成/图生视频/CogVideoX-I2V 图生视频_1844070499650539521.json, 视频生成/图生视频/CogVideoX-I2V 竖屏模式-图生视频_1844805165072175106.json, 视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1836407132143992833.json, 视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1977986107558219777.json, 视频生成/图生视频/抖音网红视频图生视频_1888124057349718017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2017541473100636162.json、视频生成/图生视频/2018921515974139906.json、视频生成/图生视频/2017228982122455041.json、视频生成/图生视频/2019624911567851522.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/CogVideoX-I2V 图生视频_1844070499650539521.json、视频生成/图生视频/CogVideoX-I2V 竖屏模式-图生视频_1844805165072175106.json、视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1836407132143992833.json、视频生成/图生视频/图片转视频 CogVideoX-5b-I2V_1977986107558219777.json、视频生成/图生视频/抖音网红视频图生视频_1888124057349718017.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `FlashVSRNode`
-- `GetVideoComponents`
-- `JWInteger`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `DownloadAndLoadCogVideoModel`
+- `ImageResizeKJ`
 - `LoadImage`
-- `RunningHub_MOVA_Loader`
-- `RunningHub_MOVA_Sampler`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 2/4 个有
+- `RH_Captioner` —— 4/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `VideoCombine_Adv` —— 2/5 个有
+- `ImageResizeAdvanced` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

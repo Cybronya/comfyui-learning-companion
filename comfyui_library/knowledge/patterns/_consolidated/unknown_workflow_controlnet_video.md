@@ -7,13 +7,13 @@ coverage: 0.8645
 common_nodes: [CLIPVisionLoader, ConvertOpenPoseKeypointsToDWPose, DWPreprocessor, DownloadAndLoadNLFModel, GetImageSize, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PrimitiveInt, PrimitiveStringMultiline, RenderNLFPoses, SaveImage, SaveVideoRGBA, SimpleMathDual+, VHS_LoadVideo, VHS_VideoInfoLoaded, WanVideoContextOptions, WanVideoEncode, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, easy blocker, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy seed, workflow>Scail embeds, workflow>Wan2.1采样器]
 problems: []
 missing: []
-members: [视频生成/图生视频/2003449655788748801.json, 视频生成/图生视频/2009862240601645057.json]
+members: [视频生成/图生视频/WAN_Scail动作迁移_2003449655788748801.json, "视频生成/图生视频/【推荐，多人运镜支持】动作迁移Wan SCAIL,单_多人支持_2009862240601645057.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2003449655788748801.json、视频生成/图生视频/2009862240601645057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN_Scail动作迁移_2003449655788748801.json、视频生成/图生视频/【推荐，多人运镜支持】动作迁移Wan SCAIL,单_多人支持_2009862240601645057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

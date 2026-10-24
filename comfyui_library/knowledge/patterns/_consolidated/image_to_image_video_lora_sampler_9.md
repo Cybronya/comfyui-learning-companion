@@ -7,13 +7,13 @@ coverage: 0.918
 common_nodes: [CLIPTextEncode, ConditioningZeroOut, CreateCFGScheduleFloatList, DualCLIPLoader, FluxGuidance, GetImageSizeAndCount, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: CropBoxResolve, LayerUtility: CropByMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MergeLayers, NewLayer, PreviewImage, ReferenceLatent, SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956224801260142594.json, 视频生成/图生视频/1951454755916861442.json, 视频生成/图生视频/1953650605598363650.json]
+members: [视频生成/图生视频/Emoji_1956224801260142594.json, 视频生成/图生视频/Play with Emoji for 24G_1951454755916861442.json, 视频生成/图生视频/苹果emoji表情包（动态小人）_1953650605598363650.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1956224801260142594.json、视频生成/图生视频/1951454755916861442.json、视频生成/图生视频/1953650605598363650.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Emoji_1956224801260142594.json、视频生成/图生视频/Play with Emoji for 24G_1951454755916861442.json、视频生成/图生视频/苹果emoji表情包（动态小人）_1953650605598363650.json）
 
 - **类型**：Image To Image
 - **样本数**：3

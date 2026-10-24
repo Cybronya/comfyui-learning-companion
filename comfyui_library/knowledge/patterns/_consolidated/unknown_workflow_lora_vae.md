@@ -7,13 +7,13 @@ coverage: 0.8348
 common_nodes: [CLIPLoader, CreateVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, RHLLMChatNode, SaveVideo, VAEDecode, VAEDecodeAudio, VAELoader, easy ifElse, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy seed, easy splitImages]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax 1080P 短剧创作Ⅰ（音频参考）- 8步极速生成_2084932680696815617.json, 视频生成/图生视频/MiniMax 1080P 短剧创作Ⅱ- 更新双采 - 质量更佳_2085049706593472514.json, 视频生成/图生视频/MiniMax 1080P 短剧创作Ⅲ（分镜）- 8步极速生成_2085089066273558530.json, 视频生成/图生视频/2072179712750870529.json, 视频生成/文生视频/Minimax 最新简易单_双采全能 _ 3D潜空间放大 _ 自由切换_2087982435916148737.json]
+members: [视频生成/图生视频/MiniMax 1080P 短剧创作Ⅰ（音频参考）- 8步极速生成_2084932680696815617.json, 视频生成/图生视频/MiniMax 1080P 短剧创作Ⅱ- 更新双采 - 质量更佳_2085049706593472514.json, 视频生成/图生视频/MiniMax 1080P 短剧创作Ⅲ（分镜）- 8步极速生成_2085089066273558530.json, 视频生成/图生视频/MiniMax 文_图_首尾_参考多合一 - 全球最夯视频剪辑导演台_2072179712750870529.json, 视频生成/文生视频/Minimax 最新简易单_双采全能 _ 3D潜空间放大 _ 自由切换_2087982435916148737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_vae
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax 1080P 短剧创作Ⅰ（音频参考）- 8步极速生成_2084932680696815617.json、视频生成/图生视频/MiniMax 1080P 短剧创作Ⅱ- 更新双采 - 质量更佳_2085049706593472514.json、视频生成/图生视频/MiniMax 1080P 短剧创作Ⅲ（分镜）- 8步极速生成_2085089066273558530.json、视频生成/图生视频/2072179712750870529.json、视频生成/文生视频/Minimax 最新简易单_双采全能 _ 3D潜空间放大 _ 自由切换_2087982435916148737.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax 1080P 短剧创作Ⅰ（音频参考）- 8步极速生成_2084932680696815617.json、视频生成/图生视频/MiniMax 1080P 短剧创作Ⅱ- 更新双采 - 质量更佳_2085049706593472514.json、视频生成/图生视频/MiniMax 1080P 短剧创作Ⅲ（分镜）- 8步极速生成_2085089066273558530.json、视频生成/图生视频/MiniMax 文_图_首尾_参考多合一 - 全球最夯视频剪辑导演台_2072179712750870529.json、视频生成/文生视频/Minimax 最新简易单_双采全能 _ 3D潜空间放大 _ 自由切换_2087982435916148737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

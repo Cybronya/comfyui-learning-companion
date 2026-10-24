@@ -1,51 +1,54 @@
 ---
 name: unknown_workflow_upscale_vae_7
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8405
-common_nodes: [ImageFromBatch+, ImageScaleToTotalPixels, ImageTile+, JoinImageWithAlpha, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy imageSize, easy int]
+frequency: 17
+level: moderate
+coverage: 0.894588
+common_nodes: [ImageResize+, ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
 problems: []
 missing: []
-members: [图片生成/文生图/AI动画 IMAGE - Workflow V1.0_2027604910757388289.json, 视频生成/文生视频/5.1 工具：拆图+放大_2031785449819217921.json]
+members: [图片生成/图生图/SEEDVR2 分块4X-TPP分块放大。适合比较清晰的图片做放大处理_2073370189927895041.json, 图片生成/图生图/SEEDVR2+TTP放大_1994974287532580866.json, 图片生成/图生图/SEEDVR2+TTP极速一亿像素放大_2001223182126284802.json, 图片生成/图生图/SeedVR2+TTP放大_2002664789287550978.json, 图片生成/图生图/SeedVR2+TTP极速一亿像素放大+全节点注释_2054878724008488962.json, 图片生成/图生图/SeedVR2+TTP极速一亿像素放大_2055468793484324866.json, 图片生成/图生图/SeedVR2+TTP极速一亿像素放大_2055851472851611649.json, 图片生成/图生图/SeedVR2.5 + TTP 分块放大_2059230793272225793.json, 图片生成/图生图/SeedVR2.5 + TTP 高清放大_2012005632529928194.json, 图片生成/图生图/人物写真高清放大 SeedVR2.5 + TTP分块放大_2071498345759199233.json, 图片生成/图生图/全能图片 Pro+SeedVR2.5 + TTP 分块放大_2011400931266535426.json, 图片生成/图生图/商业级质感精修 +高清放大 人物写真高清放大+SeedVR2.5+++TTP分块放大_2071785527401082881.json, 图片生成/图生图/图生图-高清放大SeedVR2.5 + TTP 分块放大1.0_2068495390776844290.json, 图片生成/图生图/场景高清修复放大不改变场景_2064559925052923905.json, 图片生成/图生图/放大工作流-人像_2076330479489470465.json, 图片生成/图生图/高清放大8K-极速版（seedvr+ttp）_1995309935154094081.json, 图片生成/文生图/全能图片2 Pro+SeedVR2.5 + TTP 分块放大_2039614445382537218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI动画 IMAGE - Workflow V1.0_2027604910757388289.json、视频生成/文生视频/5.1 工具：拆图+放大_2031785449819217921.json）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/SEEDVR2 分块4X-TPP分块放大。适合比较清晰的图片做放大处理_2073370189927895041.json、图片生成/图生图/SEEDVR2+TTP放大_1994974287532580866.json、图片生成/图生图/SEEDVR2+TTP极速一亿像素放大_2001223182126284802.json、图片生成/图生图/SeedVR2+TTP放大_2002664789287550978.json、图片生成/图生图/SeedVR2+TTP极速一亿像素放大+全节点注释_2054878724008488962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageFromBatch+`
-- `ImageScaleToTotalPixels`
-- `ImageTile+`
-- `JoinImageWithAlpha`
+全部 17 个 workflow 都包含：
+- `ImageResize+`
+- `ImageScaleBy`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageSize`
-- `easy int`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `easy imageInsetCrop` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 11/17 个有
+- `Get Image Size` —— 10/17 个有
+- `ConstrainImage|pysssss` —— 9/17 个有
+- `GetImageSize+` —— 8/17 个有
+- `CR Text` —— 2/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
+- `ImageUpscaleWithModel` —— 2/17 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/17 个有
+- `UpscaleModelLoader` —— 2/17 个有
+- `GetImageSize` —— 1/17 个有
+- `LayerFilter: Sharp & Soft` —— 1/17 个有
+- `PreviewImage` —— 1/17 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/17 个有
+- `easy showAnything` —— 1/17 个有
 
 ## 典型参数
 
@@ -57,4 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

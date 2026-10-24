@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_883
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Text, JjkShowText, LoadImage, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.878667
+common_nodes: [LoadImage, QwenImageModelLoader, RH_Captioner, RH_QwenImageGenerator, SaveImage, Textbox]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062087295045562370.json, 视频生成/文生视频/Haloumining女童裤子多场景_2063813191204958210.json]
+members: [图片生成/图生图/Qwen-lmage 图生图+放大_1952709588815704065.json, 图片生成/图生图/Qwen-lmage 图生图洗图｜图中文字保持_1952683016248299522.json, 图片生成/文生图/Qwen-lmage 文生图-满血版RH专供版节点_1952559689714348033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_883
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2062087295045562370.json、视频生成/文生视频/Haloumining女童裤子多场景_2063813191204958210.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-lmage 图生图+放大_1952709588815704065.json、图片生成/图生图/Qwen-lmage 图生图洗图｜图中文字保持_1952683016248299522.json、图片生成/文生图/Qwen-lmage 文生图-满血版RH专供版节点_1952559689714348033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `JjkShowText`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `QwenImageModelLoader`
+- `RH_Captioner`
+- `RH_QwenImageGenerator`
+- `SaveImage`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMultiple+` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
+- `EmptyImage` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `easy imageSize` —— 2/3 个有
+- `PMRF` —— 1/3 个有
 
 ## 典型参数
 
@@ -45,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

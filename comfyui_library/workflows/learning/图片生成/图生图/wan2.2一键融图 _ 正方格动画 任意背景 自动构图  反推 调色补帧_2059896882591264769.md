@@ -1,0 +1,160 @@
+---
+key: 图片生成/图生图/wan2.2一键融图 _ 正方格动画 任意背景 自动构图  反推 调色补帧_2059896882591264769.json
+name: wan2.2一键融图 _ 正方格动画 任意背景 自动构图  反推 调色补帧_2059896882591264769
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/wan2.2一键融图 _ 正方格动画 任意背景 自动构图  反推 调色补帧_2059896882591264769.json
+hash: 9494de08e4ffb691
+coverage: 0.6
+learned_at: 2026-10-23 11:46:01
+nodes: [UNETLoader, LayerColor: AutoAdjustV2, PainterI2V, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, wanBlockSwap, PathchSageAttentionKJ, ModelSamplingSD3, wanBlockSwap, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, VAELoader, CLIPLoader, CLIPVisionEncode, GetNode, MaskBoundingBox+, ImageCrop+, CLIPVisionLoader, VAEEncode, CLIPTextEncode, CLIPTextEncode, ICLightConditioning, KSampler, VAEDecode, ImageCompositeFromMaskBatch+, LayerUtility: ImageScaleByAspectRatio V2, LayerColor: ColorTemperature, KSamplerAdvanced, KSamplerAdvanced, BiRefNetRMBG, LayerFilter: FilmV2, VAEDecode, SetNode, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, PreviewImage, PreviewImage, PreviewImage, GetNode, SaveImage, SetNode, GetNode, VHS_VideoCombine, LoadImage, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2, UNETLoader, SetNode, SetNode, SetNode, Text Concatenate, TextInput_, AILab_QwenVL, easy showAnything, CLIPTextEncode, CLIPTextEncode, MathExpression|pysssss, JWInteger, CR Text, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SeedVR2LoadDiTModel, SeedVR2VideoUpscaler, SetNode, VHS_LoadVideo, GetNode, VHS_VideoCombine, SetNode, RIFE VFI, GetNode, SeedVR2LoadVAEModel, ImageScaleToTotalPixels, SetNode, VHS_LoadVideo, GetNode, VHS_VideoCombine, GetNode, SetNode, LayerUtility: NanoBananaImageScale, Int, VHS_VideoCombine, ImageScale, GetNode, SetNode, CR Text, Fast Groups Bypasser (rgthree), ColorTransfer, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, ImpactGaussianBlurMask, ImageToMask, RHHiddenNodes, CheckpointLoaderSimple, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree)]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 6, "checkpoint": "anything-v5-PrtRE.safetensors", "denoise": "simple", "sampler_name": 0.8, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 图片生成/图生图/wan2.2一键融图 _ 正方格动画 任意背景 自动构图  反推 调色补帧_2059896882591264769.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/wan2.2一键融图 _ 正方格动画 任意背景 自动构图  反推 调色补帧_2059896882591264769.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（115 个）：
+- `UNETLoader` ★核心
+- `LayerColor: AutoAdjustV2`
+- `PainterI2V`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPVisionEncode`
+- `GetNode`
+- `MaskBoundingBox+`
+- `ImageCrop+`
+- `CLIPVisionLoader`
+- `VAEEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ICLightConditioning`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `ImageCompositeFromMaskBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerColor: ColorTemperature`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `BiRefNetRMBG`
+- `LayerFilter: FilmV2`
+- `VAEDecode` ★核心
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `GetNode`
+- `SaveImage`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `PreviewImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UNETLoader` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Text Concatenate`
+- `TextInput_`
+- `AILab_QwenVL`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `MathExpression|pysssss`
+- `JWInteger`
+- `CR Text`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2VideoUpscaler`
+- `SetNode`
+- `VHS_LoadVideo`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `RIFE VFI`
+- `GetNode`
+- `SeedVR2LoadVAEModel`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `VHS_LoadVideo`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `LayerUtility: NanoBananaImageScale`
+- `Int`
+- `VHS_VideoCombine`
+- `ImageScale`
+- `GetNode`
+- `SetNode`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `ColorTransfer`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `ImpactGaussianBlurMask`
+- `ImageToMask`
+- `RHHiddenNodes`
+- `CheckpointLoaderSimple` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `Fast Bypasser (rgthree)`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `0.8`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+- `checkpoint` = `anything-v5-PrtRE.safetensors`
+
+## 知识
+
+覆盖率 **60%**（69/115）
+
+**有卡**：`UNETLoader`、`LayerColor: AutoAdjustV2`、`PainterI2V`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`wanBlockSwap`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`VAELoader`、`CLIPLoader`、`CLIPVisionEncode`、`MaskBoundingBox+`、`ImageCrop+`、`CLIPVisionLoader`、`VAEEncode`、`CLIPTextEncode`、`ICLightConditioning`、`KSampler`、`VAEDecode`、`ImageCompositeFromMaskBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerColor: ColorTemperature`、`KSamplerAdvanced`、`BiRefNetRMBG`、`LayerFilter: FilmV2`、`LoadImage`、`SaveImage`、`VHS_VideoCombine`、`Text Concatenate`、`TextInput_`、`AILab_QwenVL`、`MathExpression|pysssss`、`JWInteger`、`CR Text`、`SeedVR2LoadDiTModel`、`SeedVR2VideoUpscaler`、`VHS_LoadVideo`、`RIFE VFI`、`SeedVR2LoadVAEModel`、`ImageScaleToTotalPixels`、`LayerUtility: NanoBananaImageScale`、`Int`、`ImageScale`、`ColorTransfer`、`ImpactGaussianBlurMask`、`ImageToMask`、`RHHiddenNodes`、`CheckpointLoaderSimple`、`Mute / Bypass Repeater (rgthree)`、`Fast Bypasser (rgthree)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader

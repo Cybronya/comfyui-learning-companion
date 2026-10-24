@@ -1,0 +1,62 @@
+---
+key: 图片生成/图生图/Z-Image-CN控制2.0（姿态）_1996924955315081217.json
+name: Z-Image-CN控制2.0（姿态）_1996924955315081217
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Z-Image-CN控制2.0（姿态）_1996924955315081217.json
+hash: 94980aa43998d56f
+coverage: 0.933333
+learned_at: 2026-10-23 11:29:33
+nodes: [CLIPLoader, UNETLoader, VAELoader, LayerUtility: ImageScaleByAspectRatio V2, ModelPatchLoader, CLIPTextEncode, KSampler, QwenImageDiffsynthControlnet, EmptyLatentImage, PreviewImage, VAEDecode, SaveImage, AIO_Preprocessor, CLIPTextEncode, LoadImage]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "sampler_name": "euler", "scheduler": "simple", "seed": 286113691079681, "steps": 10, "width": 720}
+---
+
+# 图片生成/图生图/Z-Image-CN控制2.0（姿态）_1996924955315081217.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Z-Image-CN控制2.0（姿态）_1996924955315081217.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
+
+**节点**（15 个）：
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ModelPatchLoader`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `QwenImageDiffsynthControlnet`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `AIO_Preprocessor`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `286113691079681`
+- `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `720`
+- `height` = `1280`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **93%**（14/15）
+
+**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`ModelPatchLoader`、`CLIPTextEncode`、`KSampler`、`QwenImageDiffsynthControlnet`、`EmptyLatentImage`、`VAEDecode`、`SaveImage`、`AIO_Preprocessor`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage、UNETLoader

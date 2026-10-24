@@ -3,81 +3,67 @@ name: text_to_image_video_upscale_latent_upscale_14
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.9266
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Seed, ComfyMathExpression, EmptyLatentImage, ImpactConditionalBranch, JjkText, KSampler, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextSaveLatent, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, Yuan_H3MotionContextLoadLatent, easy cleanGpuUsed, solarL_SaveImagesToZip]
+coverage: 0.8946
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, Fast Groups Bypasser (rgthree), JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: NumberCalculatorV2, LoraLoaderModelOnly, MiniMaxH3AudioLock, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultimodalChat, MiniMaxH3ReferenceSplitter, MiniMaxH3SigmaShift, MiniMaxH3TiledSampler, MiniMaxH3UnifiedToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, VRAM_Debug, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/t8大佬文武双全工作流｜文生视频加图生视频通吃_2106639380873048066.json, 视频生成/图生视频/文武双全双采工作流，图生视频文戏武戏全覆盖高质量创作方案_2106834046570553345.json, 视频生成/图生视频/文武双全双采工作流，图生视频文戏武戏全覆盖高质量创作方案_2110541659804098561.json, 视频生成/文生视频/t8大佬文武双全工作流｜文生视频加图生视频通吃_2106639380873048066.json, 视频生成/文生视频/动态视频生成｜文生图生视频生视频多模直出_2093410305727614978.json]
+members: [视频生成/文生视频/MiniMax H3 全能生视频 V4｜文生图生视频四代升级版_2097532242695385090.json, 视频生成/文生视频/MiniMax H3全能生视频V4 Latent分块二采处理工作流_2102113094515380226.json, 视频生成/文生视频/MiniMax H3全能生视频V4工作流，latent分块二采加速方案文图参考三合一_2103526635537522689.json, 视频生成/文生视频/MiniMax-H3全能生视频V4工作流｜文生图生参考生三合一加速_2097396393961943041.json, 视频生成/文生视频/MiniMax-H3全能生视频V4｜latent分块二采｜文生图生参考三合一_2101864233825824769.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_14
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/t8大佬文武双全工作流｜文生视频加图生视频通吃_2106639380873048066.json、视频生成/图生视频/文武双全双采工作流，图生视频文戏武戏全覆盖高质量创作方案_2106834046570553345.json、视频生成/图生视频/文武双全双采工作流，图生视频文戏武戏全覆盖高质量创作方案_2110541659804098561.json、视频生成/文生视频/t8大佬文武双全工作流｜文生视频加图生视频通吃_2106639380873048066.json、视频生成/文生视频/动态视频生成｜文生图生视频生视频多模直出_2093410305727614978.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 全能生视频 V4｜文生图生视频四代升级版_2097532242695385090.json、视频生成/文生视频/MiniMax H3全能生视频V4 Latent分块二采处理工作流_2102113094515380226.json、视频生成/文生视频/MiniMax H3全能生视频V4工作流，latent分块二采加速方案文图参考三合一_2103526635537522689.json、视频生成/文生视频/MiniMax-H3全能生视频V4工作流｜文生图生参考生三合一加速_2097396393961943041.json、视频生成/文生视频/MiniMax-H3全能生视频V4｜latent分块二采｜文生图生参考三合一_2101864233825824769.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Seed`
-- `ComfyMathExpression`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `ImpactConditionalBranch`
+- `Fast Groups Bypasser (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
-- `LoraLoaderBypassModelOnly`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: NumberCalculatorV2`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
+- `MiniMaxH3AudioLock`
+- `MiniMaxH3MediaLoaderFantastic`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextSaveLatent`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `MiniMaxH3MultimodalChat`
+- `MiniMaxH3ReferenceSplitter`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxH3TiledSampler`
+- `MiniMaxH3UnifiedToVideo`
+- `MinimaxH3LatentUpscaler3D`
 - `ModelAttentionBackend`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `ModelPreviewOverrideKJ`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `Yuan_H3MotionContextLoadLatent`
-- `easy cleanGpuUsed`
+- `VRAM_Debug`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 4/5 个有
-- `ImageBatchMulti` —— 4/5 个有
-- `ImageFromBatch` —— 4/5 个有
-- `Yuan_MiniMaxH3Video` —— 4/5 个有
-- `easy anythingIndexSwitch` —— 4/5 个有
-- `孤海注释` —— 4/5 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 2/5 个有
-- `SaveImage` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `MiniMaxChunkFeedForward` —— 1/5 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/5 个有
-- `MiniMaxLowVRAMAttention` —— 1/5 个有
-- `ModelPatchTorchSettings` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `SaveImage` —— 3/5 个有
+- `Any Switch (rgthree)` —— 2/5 个有
 
 ## 典型参数
 

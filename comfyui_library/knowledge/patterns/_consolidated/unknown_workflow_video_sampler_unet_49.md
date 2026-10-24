@@ -3,65 +3,61 @@ name: unknown_workflow_video_sampler_unet_49
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.771857
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MemoryCleaner, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RHHiddenNodes, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, 图像缩放V2_孤海, 孤海注释]
+coverage: 0.627
+common_nodes: [BasicGuider, CLIPLoader, Fast Groups Bypasser (rgthree), LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3音乐MV自动4参图提示词_2085602209005391874.json, 视频生成/图生视频/MiniMax H3音乐MV自动优化提示词_2084709296801148930.json, 视频生成/图生视频/MiniMax H3音乐MV自动优化提示词加速版_2085381440862248961.json, 视频生成/图生视频/MiniMax H3音乐MV自动优化提示词加速版_2085381668067692545.json, 视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!(加速版)_2085390867740844033.json, 视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!_2084829895192043521.json, 视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版加速版!RH普通会员可跑!_2085390604653125634.json]
+members: [视频生成/图生视频/12号特工：minimaxH3四步加速双时钟+T8节点+图生视频+多参_2086057128527224833.json, 视频生成/图生视频/MiniMax H3全能参考（t8加速LORA）_2086006748221108225.json, 视频生成/图生视频/MiniMax H3文生视频+首尾帧生视频（t8加速LORA）_2086007059350380546.json, 视频生成/图生视频/MiniMax+H3 图生视频+首尾帧+ 超级加速版_2087338012370890753.json, 视频生成/图生视频/MiniMax-H3 图生视频！ 加速版！_2085683743284621314.json, 视频生成/文生视频/MiniMax H3最新双涡轮增压4步Lora8步效果超极速工作流合集_2085545670534066177.json, 视频生成/文生视频/MiniMax-H3 文生视频！ 加速版！_2085652281692876802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_49
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3音乐MV自动4参图提示词_2085602209005391874.json、视频生成/图生视频/MiniMax H3音乐MV自动优化提示词_2084709296801148930.json、视频生成/图生视频/MiniMax H3音乐MV自动优化提示词加速版_2085381440862248961.json、视频生成/图生视频/MiniMax H3音乐MV自动优化提示词加速版_2085381668067692545.json、视频生成/图生视频/MiniMax_H3全能多参无API自动提示词版!RH普通会员可跑!(加速版)_2085390867740844033.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/12号特工：minimaxH3四步加速双时钟+T8节点+图生视频+多参_2086057128527224833.json、视频生成/图生视频/MiniMax H3全能参考（t8加速LORA）_2086006748221108225.json、视频生成/图生视频/MiniMax H3文生视频+首尾帧生视频（t8加速LORA）_2086007059350380546.json、视频生成/图生视频/MiniMax+H3 图生视频+首尾帧+ 超级加速版_2087338012370890753.json、视频生成/图生视频/MiniMax-H3 图生视频！ 加速版！_2085683743284621314.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `MemoryCleaner`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `图像缩放V2_孤海`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 6/7 个有
-- `GIMMVFI_interpolate` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `PathchSageAttentionKJ` —— 6/7 个有
-- `EasyCache` —— 4/7 个有
+- `ComfyMathExpression` —— 6/7 个有
+- `GetNode` —— 6/7 个有
+- `LoraLoaderBypassModelOnly` —— 6/7 个有
+- `PrimitiveFloat` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `CR Prompt Text` —— 4/7 个有
 - `LoadAudio` —— 4/7 个有
-- `MelBandRoFormerModelLoader` —— 4/7 个有
-- `MelBandRoFormerSampler` —— 4/7 个有
-- `PreviewAudio` —— 4/7 个有
-- `TrimAudioDuration` —— 4/7 个有
-- `FlashVSRNode` —— 3/7 个有
-- `ImageStitch` —— 3/7 个有
-- `SDVN Fast Groups Bypasser` —— 3/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `SmartImageConcat` —— 1/7 个有
+- `JjkText` —— 3/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `LoadVideo` —— 2/7 个有
+- `Text` —— 2/7 个有
+- `VHS_LoadVideo` —— 2/7 个有
+- `Float` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `TrimAudioDuration` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
+- `ttN int` —— 1/7 个有
 
 ## 典型参数
 

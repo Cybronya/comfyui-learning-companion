@@ -3,57 +3,62 @@ name: unknown_workflow_video_sampler_vae_81
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.925333
-common_nodes: [ImageConcatMulti, ImagePadKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.763
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934826257706065921.json, 视频生成/图生视频/1918902394158256130.json, 视频生成/图生视频/1922106634145841154.json, 视频生成/图生视频/1991787446910267394.json, 视频生成/图生视频/1934517435972419585.json, 视频生成/图生视频/1927557646478643202.json]
+members: [图片生成/图生图/Wan-VACE-图生视频_1933481916970487810.json, 视频生成/图生视频/CausVid-3步720P首尾帧(Wan2.1&MoviiGen&Skyreels)_1923394290066575361.json, 视频生成/图生视频/MoviiGen + VACE首尾帧-加速版_1923694325656711169.json, 视频生成/图生视频/VACE14B-1024-casvid-fast_1924010211143503873.json, 视频生成/图生视频/Wan VACE 14B首尾帧生成视频-加速版_1922976069052526594.json, 视频生成/图生视频/vace-1.3b-1280-causvid-pose-fast_1924012489724317698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_81
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1934826257706065921.json、视频生成/图生视频/1918902394158256130.json、视频生成/图生视频/1922106634145841154.json、视频生成/图生视频/1991787446910267394.json、视频生成/图生视频/1934517435972419585.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Wan-VACE-图生视频_1933481916970487810.json、视频生成/图生视频/CausVid-3步720P首尾帧(Wan2.1&MoviiGen&Skyreels)_1923394290066575361.json、视频生成/图生视频/MoviiGen + VACE首尾帧-加速版_1923694325656711169.json、视频生成/图生视频/VACE14B-1024-casvid-fast_1924010211143503873.json、视频生成/图生视频/Wan VACE 14B首尾帧生成视频-加速版_1922976069052526594.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ImageConcatMulti`
-- `ImagePadKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 5/6 个有
-- `Text Multiline` —— 5/6 个有
-- `Primitive integer [Crystools]` —— 4/6 个有
-- `WanVideoTeaCache` —— 4/6 个有
-- `EmptyImage` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `AddLabel` —— 1/6 个有
-- `DF_Integer` —— 1/6 个有
-- `GetImageSize` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `easy clearCacheAll` —— 1/6 个有
+- `GetImageSizeAndCount` —— 5/6 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `GetNode` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `WanVideoVACEStartToEndFrame` —— 4/6 个有
+- `ImageResizeKJ` —— 3/6 个有
+- `WanVideoEnhanceAVideo` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `String Literal` —— 2/6 个有
+- `VHS_LoadVideo` —— 2/6 个有
+- `GetImageSize+` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `ImageScale` —— 1/6 个有
+- `Primitive integer [Crystools]` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `WanVideoTorchCompileSettings` —— 1/6 个有
 - `easy int` —— 1/6 个有
+- `easy seed` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

@@ -7,13 +7,13 @@ coverage: 0.761667
 common_nodes: [AdvancedLivePortrait, AutoCropFaces, CLIPLoader, CLIPVisionLoader, CR Prompt Text, ConditioningZeroOut, ExpressionEditor, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, Float, FluxKontextImageScale, GetImageSizeAndCount, GetNode, Image Comparer (rgthree), ImageConcanate, ImageConcatMulti, ImageRemoveAlpha_UTK, ImageResizeKJv2, Int, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingAuraFlow, OnnxDetectionModelLoader, PainterFluxImageEdit, PixelSmileConditioning, PoseAndFaceDetection, PreviewAny, PreviewImage, RMBG, ReplaceText, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, SolidMask, Text, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddFantasyPortrait, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, YOLOModelLoader, easy ifElse, easy isMaskEmpty, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2065051559821668354.json, 视频生成/图生视频/2067049648237400065.json, 视频生成/图生视频/2068183647156527106.json]
+members: [视频生成/图生视频/全能面部表情编辑与驱动_2065051559821668354.json, 视频生成/图生视频/全能面部表情编辑与驱动_2067049648237400065.json, 视频生成/图生视频/全能面部表情编辑与驱动_2068183647156527106.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_13
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2065051559821668354.json、视频生成/图生视频/2067049648237400065.json、视频生成/图生视频/2068183647156527106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能面部表情编辑与驱动_2065051559821668354.json、视频生成/图生视频/全能面部表情编辑与驱动_2067049648237400065.json、视频生成/图生视频/全能面部表情编辑与驱动_2068183647156527106.json）
 
 - **类型**：Image To Image
 - **样本数**：3

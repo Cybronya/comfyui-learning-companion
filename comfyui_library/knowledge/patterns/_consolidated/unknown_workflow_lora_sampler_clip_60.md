@@ -1,73 +1,96 @@
 ---
 name: unknown_workflow_lora_sampler_clip_60
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.856833
-common_nodes: [BasicScheduler, BatchImagesNode, BerniniConditioning, CLIPLoader, CLIPTextEncode, CreateVideo, GetVideoComponents, KSamplerSelect, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SaveVideo, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.693571
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Fast Groups Bypasser (rgthree), Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, FluxKontextMultiReferenceLatentMethod, GetNode, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, QwenEditConfigPreparer, ReferenceLatent, SaveImage, Switch any [Crystools], TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, ZML_BooleanSwitch]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2062112812658417666.json, 视频生成/图生视频/2062167785479950338.json, 视频生成/图生视频/2066715725934448641.json, 视频生成/图生视频/2061852006909825025.json, 视频生成/图生视频/2062526408332763137.json, 视频生成/图生视频/2062779488521506817.json]
+members: [图片生成/图生图/【CQ808】局部重绘_擦除-2511+Klein去掉路人（加遮罩）_2058837262137389058.json, 图片生成/图生图/动漫转真人_2039329521362542594.json, 图片生成/图生图/局部重绘_擦除-2511+Klein去掉路人（加遮罩）_2054762420068986882.json, 图片生成/图生图/局部重绘_擦除-2511+Klein去掉路人（加遮罩）_2054837099660095490.json, 图片生成/图生图/局部重绘_擦除——2511+Klein裁剪贴回_2030234811285118978.json, 图片生成/图生图/局部重绘_擦除——2511+Klein裁剪贴回_2078684161610706946.json, 图片生成/图生图/局部重绘_擦除——2511+Klein裁剪贴回_2083555609470914561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_60
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2062112812658417666.json、视频生成/图生视频/2062167785479950338.json、视频生成/图生视频/2066715725934448641.json、视频生成/图生视频/2061852006909825025.json、视频生成/图生视频/2062526408332763137.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/【CQ808】局部重绘_擦除-2511+Klein去掉路人（加遮罩）_2058837262137389058.json、图片生成/图生图/动漫转真人_2039329521362542594.json、图片生成/图生图/局部重绘_擦除-2511+Klein去掉路人（加遮罩）_2054762420068986882.json、图片生成/图生图/局部重绘_擦除-2511+Klein去掉路人（加遮罩）_2054837099660095490.json、图片生成/图生图/局部重绘_擦除——2511+Klein裁剪贴回_2030234811285118978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `BerniniConditioning`
+全部 7 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `GetVideoComponents`
-- `KSamplerSelect`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SaveVideo`
-- `SplitSigmas`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `QwenEditConfigPreparer`
+- `ReferenceLatent`
+- `SaveImage`
+- `Switch any [Crystools]`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `ZML_BooleanSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 4/6 个有
-- `BerniniPromptEnhancer` —— 3/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `PreviewAny` —— 3/6 个有
-- `RHLLMChatNode` —— 3/6 个有
-- `CR Text` —— 2/6 个有
-- `ImageFromBatch` —— 2/6 个有
-- `ImageScaleBy` —— 2/6 个有
-- `Int` —— 2/6 个有
-- `RIFE VFI` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `ttN seed` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
+- `CropWithPadInfo` —— 6/7 个有
+- `HAIGC_SaveImagesToZip` —— 6/7 个有
+- `InpaintCrop` —— 6/7 个有
+- `InpaintStitch` —— 6/7 个有
+- `Int` —— 6/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
+- `QwenEditOutputExtractor` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `TextEncodeQwenImageEdit` —— 6/7 个有
+- `easy positive` —— 6/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `QwenEditOutputExtractor_EditUtils` —— 1/7 个有
+- `UpscaleModelLoader` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy imageSizeByLongerSide` —— 1/7 个有
+- `easy promptConcat` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 6 - 9 | 7 | 88% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler_ancestral | - | 7 | 86% |
+| 调度器 | simple | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 11/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 6 - 9，7 个样本，取值集中（一致性 88%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，7 个样本，一致性 86%
+- 调度器 最常用 simple，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（11/7 个样本）：Steps较低可能导致细节不足

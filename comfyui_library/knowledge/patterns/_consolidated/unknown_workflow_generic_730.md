@@ -1,47 +1,33 @@
 ---
 name: unknown_workflow_generic_730
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.293
-common_nodes: [JoinStringMulti, LoadImage, PreviewImage, PrimitiveStringMultiline, RHHiddenNodes, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, ShowText|pysssss, TextSplitByDelimiterEnhanced, easy int, easy promptConcat, easy showAnything]
+frequency: 4
+level: moderate
+coverage: 0.91675
+common_nodes: [RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
-missing: [easy int, easy promptConcat]
-members: [图片生成/图生图/2048573626043076609.json, 图片生成/图生图/2063137686013177857.json]
+missing: []
+members: [图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json, 图片生成/文生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098080212641738754.json, 图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json, 图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_730
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2048573626043076609.json、图片生成/图生图/2063137686013177857.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json、图片生成/文生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098080212641738754.json、图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json、图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：29%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JoinStringMulti`
-- `LoadImage`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_RhartImageG25FlareImageToImage`
-- `RH_RhartImageG25SunburstImageToImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
+全部 4 个 workflow 都包含：
+- `RH_RhartImageG25SunburstTextToImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextSplitByDelimiterEnhanced`
-- `easy int`
-- `easy promptConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHLLMChatNode` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -53,5 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：easy int、easy promptConcat
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

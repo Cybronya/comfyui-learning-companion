@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_383
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.79275
-common_nodes: [workflow>人物, workflow>场景, workflow>道具]
+coverage: 0.966286
+common_nodes: [CR Prompt Text, RunningHub Deepcleaner, SaveAudio, WooshLoadFlow, WooshSample, WooshTextEncode]
 problems: []
 missing: []
-members: [图片生成/文生图/快速漫剧资产生成_2053459705233723393.json, 图片生成/文生图/快速漫剧资产生成_2062008664554295297.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062074929415278594.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062349288679759873.json]
+members: [音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json, 音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json, 音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json, 音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json, 音频生成/音频生成/Woosh音效生成_2044055803182714882.json, 音频生成/音频生成/文生音频音效（自用）_2067232351951867905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_383
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/快速漫剧资产生成_2053459705233723393.json、图片生成/文生图/快速漫剧资产生成_2062008664554295297.json、图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062074929415278594.json、图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062349288679759873.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Woosh-文生-音效_2044324361989005313.json、音频生成/音频生成/Woosh文生音效（视频音效）_2046413395892637697.json、音频生成/音频生成/Woosh文生音频音效V1_2043501615625277441.json、音频生成/音频生成/Woosh文生音频音效生成器_2043609226693578753.json、音频生成/音频生成/Woosh文生音频音效生成器_2043914330646777858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `workflow>人物`
-- `workflow>场景`
-- `workflow>道具`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `RunningHub Deepcleaner`
+- `SaveAudio`
+- `WooshLoadFlow`
+- `WooshSample`
+- `WooshTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
+- `RH_Translator` —— 2/7 个有
+- `DeepTranslatorTextNode` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

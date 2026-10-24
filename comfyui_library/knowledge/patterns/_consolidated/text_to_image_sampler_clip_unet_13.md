@@ -1,31 +1,30 @@
 ---
 name: text_to_image_sampler_clip_unet_13
 type: Text To Image
-frequency: 18
+frequency: 21
 level: moderate
-coverage: 0.946056
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.852762
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2的可解释性(这个偏原理性，看我B站教程)_2073829223965487105.json, 图片生成/文生图/Krea2｜8步电影级人像基准_2072179087476609025.json, 图片生成/文生图/Krea2｜C站质感复刻版_2072175221502734338.json, 图片生成/文生图/Krea2｜KNP LoRA强风格版_2072199377187336194.json, 图片生成/文生图/Krea2｜三段式渲染文生图_2072217224156377090.json, 图片生成/文生图/Krea2｜强驱动人像增强版_2072175228620464130.json, 图片生成/文生图/Krea2｜文生图   生图快 风格多_2072714726299226113.json, "图片生成/文生图/Tutu's Aurora 8D HiSilk Z Image workflow_2070527638774566913.json", "图片生成/文生图/Tutu's HiSilk Fishnet Z Image workflow_2070527636975210497.json", 图片生成/文生图/Z-Image Re-Turbo_2073289018476941314.json, 图片生成/文生图/krea2+Lora文生图_2082750366432718849.json, 图片生成/文生图/krea2_ID13_v2_融合prompt_单分支_2086591602310602754.json, 图片生成/文生图/krea2_对比流_官方vsAnima配方_random_2086586562653024257.json, 图片生成/文生图/【GUGU】Z-image文生图工作流_1993849344558383105.json, 图片生成/文生图/千问qwen-image-2.1文生图工作流_2104553799485583362.json, 图片生成/文生图/千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json, 图片生成/文生图/（自用-zhenzhen）Z-image-turbo文生图2K版_2019482059055566849.json, 图片生成/文生图/（贞贞-小情绪版）Z-image文生图V1_1999750941198909441.json]
+members: [图片生成/文生图/ZImage 光速高清文生图_1988965178039480322.json, 图片生成/文生图/ZImage3.0-SUPER 文生图_2017812013216436226.json, 图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json, 图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json, 图片生成/文生图/Zimage图像模型（支持真人的国产加速模型）_2028268832682418177.json, 图片生成/文生图/Zimage文生图-基础_2003639567171395585.json, 图片生成/文生图/Zimage文生图_1993848041241329666.json, 图片生成/文生图/Zimage文生图_2013426591489069057.json, 图片生成/文生图/Zimage文生图工作流-国产、认识中文、认识明星_1954438175747928065.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_1993888771909369858.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_1995004425267818497.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_2038275878496505858.json, 图片生成/文生图/Zimage（支持真人的国产加速模型）_2027694676630835201.json, 图片生成/文生图/Zimage（支持真人的国产加速模型）_2027695408717238273.json, 图片生成/文生图/[众馨]最新王炸Z-Image超快速超细节生图_1994245198530150402.json, 图片生成/文生图/aidir-文生图-krea2_2078304053796364290.json, 图片生成/文生图/anima_preview2 二次元动漫角色自由~ & RTX Video 超分放大~_2036407166378184705.json, 图片生成/文生图/krea 2 文生图工作流_2079525843776393218.json, 图片生成/文生图/krea-2-turbo 文生图_1903742090277195777.json, 图片生成/文生图/realism_engine_krea2（自动扩写提示词）_2072599087316299777.json, 图片生成/文生图/极速美学版-Krea2 Turbo-文生图-美学不错_2070037389308944386.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/Krea2的可解释性(这个偏原理性，看我B站教程)_2073829223965487105.json、图片生成/文生图/Krea2｜8步电影级人像基准_2072179087476609025.json、图片生成/文生图/Krea2｜C站质感复刻版_2072175221502734338.json、图片生成/文生图/Krea2｜KNP LoRA强风格版_2072199377187336194.json、图片生成/文生图/Krea2｜三段式渲染文生图_2072217224156377090.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/ZImage 光速高清文生图_1988965178039480322.json、图片生成/文生图/ZImage3.0-SUPER 文生图_2017812013216436226.json、图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json、图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json、图片生成/文生图/Zimage图像模型（支持真人的国产加速模型）_2028268832682418177.json…）
 
 - **类型**：Text To Image
-- **样本数**：18
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 21 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
@@ -34,40 +33,47 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 13/18 个有
-- `ConditioningKrea2Rebalance` —— 9/18 个有
-- `PreviewImage` —— 9/18 个有
-- `FluxResolutionNode` —— 7/18 个有
-- `easy promptLine` —— 3/18 个有
-- `CR Prompt Text` —— 2/18 个有
-- `DuckHideNode` —— 2/18 个有
-- `LatentUpscaleBy` —— 1/18 个有
+- `ConditioningZeroOut` —— 20/21 个有
+- `PrimitiveInt` —— 10/21 个有
+- `PrimitiveStringMultiline` —— 10/21 个有
+- `RTXVideoSuperResolution` —— 4/21 个有
+- `ResolutionSelector` —— 4/21 个有
+- `PreviewAny` —— 3/21 个有
+- `StringConcatenate` —— 3/21 个有
+- `TextGenerate` —— 3/21 个有
+- `LoraLoader` —— 2/21 个有
+- `Image Comparer (rgthree)` —— 1/21 个有
+- `LoadImage` —— 1/21 个有
+- `LoraLoaderModelOnly` —— 1/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 720 - 1600 | 18 | 81% |
-| 高度 | 1760 | 1024 - 2048 | 18 | 84% |
-| 采样步数 | 8 | 6 - 30 | 16 | 44% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
-| 采样算法 | euler | - | 16 | 94% |
-| 调度器 | simple | - | 16 | 75% |
-| 重绘幅度 | 1 | 0.45 - 1 | 16 | 86% |
+| 宽度 | 1024 | 512 - 1920 | 21 | 62% |
+| 高度 | 1024 | 512 - 1920 | 21 | 55% |
+| 采样步数 | 10 | 8 - 35 | 21 | 38% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5.5 | 21 | 17% |
+| 采样算法 | euler | - | 21 | 90% |
+| 调度器 | simple | - | 21 | 95% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
+| LoRA 模型强度 | 0.6 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 24/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 720 - 1600，18 个样本，取值集中（一致性 81%）
-- 高度 中位数 1760，观测区间 1024 - 2048，18 个样本，取值集中（一致性 84%）
-- 采样步数 中位数 8，观测区间 6 - 30，16 个样本，取值分散，一致性仅 44%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，16 个样本，一致性 94%
-- 调度器 最常用 simple，16 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 0.45 - 1，16 个样本，取值集中（一致性 86%）
-- 高发问题（24/18 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 512 - 1920，21 个样本
+- 高度 中位数 1024，观测区间 512 - 1920，21 个样本
+- 采样步数 中位数 10，观测区间 8 - 35，21 个样本，取值分散，一致性仅 38%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5.5，21 个样本，取值分散，一致性仅 17%
+- 采样算法 最常用 euler，21 个样本，一致性 90%
+- 调度器 最常用 simple，21 个样本，一致性 95%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

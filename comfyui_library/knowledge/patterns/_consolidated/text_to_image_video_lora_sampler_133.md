@@ -3,88 +3,72 @@ name: text_to_image_video_lora_sampler_133
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.5332
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, Int, JjkText, KSampler, KSamplerSelect, KepStringLiteral, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RTXVideoSuperResolution, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy clearCacheAll, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8668
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, H3SigmaRefiner, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, PrimitiveFloat, RH_Screenwriter, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner, WujiH3PromptEnhancer, ZML_IntegerFloatConverter, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/全模态v2.0超频版 MiniMax H3舞蹈视频搭配新提示词增强_2106529812016881665.json, 视频生成/文生视频/全模态v2.0混合模型｜MiniMax H3极速二采官流加速强化_2091791683448041474.json, 视频生成/文生视频/全模态v2.0超频版 MiniMax H3舞蹈视频搭配新提示词增强_2095073732317507585.json, 视频生成/文生视频/首尾帧v2.0混合模型｜MiniMax H3 sigma增强官流加速_2091796776314560513.json, 视频生成/视频生视频/全模态v2.0超频版 MiniMax H3舞蹈视频搭配新提示词增强_2106529812016881665.json]
+members: [视频生成/图生视频/MV创作音频驱动对口型｜MiniMax-H3开源数字人生成_2094794949479981057.json, 视频生成/图生视频/MiniMax-H3音频驱动对口型数字人｜MV创作专用开源版_2094550723869626370.json, 视频生成/图生视频/MiniMax-H3音频驱动数字人｜MV创作专用生成_2095582163516350466.json, 视频生成/图生视频/音频驱动对口型数字人｜MiniMax-H3 MV创作专用_2092395157151895554.json, 视频生成/文生视频/多参首尾帧多合一分镜｜MiniMax-H3文生图生视频制作_2092895660407353345.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_133
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/全模态v2.0超频版 MiniMax H3舞蹈视频搭配新提示词增强_2106529812016881665.json、视频生成/文生视频/全模态v2.0混合模型｜MiniMax H3极速二采官流加速强化_2091791683448041474.json、视频生成/文生视频/全模态v2.0超频版 MiniMax H3舞蹈视频搭配新提示词增强_2095073732317507585.json、视频生成/文生视频/首尾帧v2.0混合模型｜MiniMax H3 sigma增强官流加速_2091796776314560513.json、视频生成/视频生视频/全模态v2.0超频版 MiniMax H3舞蹈视频搭配新提示词增强_2106529812016881665.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MV创作音频驱动对口型｜MiniMax-H3开源数字人生成_2094794949479981057.json、视频生成/图生视频/MiniMax-H3音频驱动对口型数字人｜MV创作专用开源版_2094550723869626370.json、视频生成/图生视频/MiniMax-H3音频驱动数字人｜MV创作专用生成_2095582163516350466.json、视频生成/图生视频/音频驱动对口型数字人｜MiniMax-H3 MV创作专用_2092395157151895554.json、视频生成/文生视频/多参首尾帧多合一分镜｜MiniMax-H3文生图生视频制作_2092895660407353345.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetNode`
-- `Int`
+- `H3SigmaRefiner`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `KepStringLiteral`
+- `LoadAudio`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `ModelAttentionBackend`
+- `PreviewAny`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RTXVideoSuperResolution`
+- `RH_Screenwriter`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
+- `SolAttnMiniMax`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
+- `WujiCleaner`
+- `WujiH3PromptEnhancer`
+- `ZML_IntegerFloatConverter`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 4/5 个有
-- `LTXVConcatAVLatent` —— 4/5 个有
-- `LTXVSeparateAVLatent` —— 4/5 个有
-- `MathExpression|pysssss` —— 4/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/5 个有
-- `SplitSigmas` —— 4/5 个有
-- `VHS_LoadAudioUpload` —— 4/5 个有
-- `VHS_LoadVideo` —— 4/5 个有
-- `LoadAudioUI` —— 3/5 个有
-- `MiniMaxChunkFeedForward` —— 3/5 个有
-- `MiniMaxLowVRAMAttention` —— 3/5 个有
-- `String Literal` —— 3/5 个有
+- `Any Switch (rgthree)` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `WujiAudioLoader` —— 3/5 个有
 - `easy showAnything` —— 3/5 个有
-- `llama_cpp_instruct_adv` —— 3/5 个有
-- `llama_cpp_model_loader` —— 3/5 个有
-- `llama_cpp_parameters` —— 3/5 个有
-- `MiniMaxH3GenerationTailLoader` —— 2/5 个有
-- `MiniMaxH3PromptEnhancer` —— 2/5 个有
-- `UniBlockSwap` —— 2/5 个有
-- `ExtendIntermediateSigmas` —— 1/5 个有
-- `MiniMaxH3ImageToVideo` —— 1/5 个有
-- `ResizeImageMaskNode` —— 1/5 个有
-- `UnloadAllModels` —— 1/5 个有
+- `AudioSeparation` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
 
 ## 典型参数
 

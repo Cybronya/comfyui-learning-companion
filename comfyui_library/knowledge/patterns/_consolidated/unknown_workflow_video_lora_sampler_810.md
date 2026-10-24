@@ -3,63 +3,52 @@ name: unknown_workflow_video_lora_sampler_810
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5635
-common_nodes: [GetImageSizeAndCount, GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy int]
+coverage: 0.9285
+common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1980164711092228097.json, 视频生成/图生视频/1924012489724317698.json]
+members: [视频生成/图生视频/Wan2.2图生视频-自动生成动态提示词_1951139393090334722.json, 视频生成/图生视频/smooth-kj_2056763668582461441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_810
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1980164711092228097.json、视频生成/图生视频/1924012489724317698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频-自动生成动态提示词_1951139393090334722.json、视频生成/图生视频/smooth-kj_2056763668582461441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `GetNode`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `SimpleMath+`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `String Literal` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `WanVideoEasyCache` —— 1/2 个有
-- `WanVideoSetRadialAttention` —— 1/2 个有
-- `easy float` —— 1/2 个有
-- `easy negative` —— 1/2 个有
-- `easy positive` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `Wan22PromptSelector` —— 1/2 个有
+- `WanVideoSetBlockSwap` —— 1/2 个有
+- `WanVideoSetLoRAs` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy int` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

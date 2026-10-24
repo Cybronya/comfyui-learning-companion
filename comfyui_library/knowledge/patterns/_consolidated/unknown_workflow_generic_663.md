@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_663
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.641333
-common_nodes: [Apply Whisper, CR Prompt Text, Fast Groups Bypasser (rgthree), FishS2MultiSpeakerTTS, FishS2TTS, FishS2VoiceCloneTTS, LoadAudio, SaveAudio, ShowText, easy cleanGpuUsed]
+coverage: 0.87475
+common_nodes: [LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/声音克隆 支持多人_单人 语气 情绪 FishAudio S2pro_2033522460468977665.json, 音频生成/音频生成/数字人语音克隆 语音生成 支持多人 单人 各种情感语气 超牛_2081400408932700161.json, 音频生成/音频生成/语音克隆 语音生成 支持多人 单人 各种语气 很厉害！ FishAudio S2pro_2033509565647560705.json]
+members: [图片生成/图生图/flux-kontext-pro-api白嫖工作流_1958726160270127105.json, 图片生成/图生图/一张图转ip三视图 ip一致性超强 细节准确 flux kontext编辑模型_1930090148233646082.json, 图片生成/图生图/产品换背景 自动融合光影产品细节准确 flux kontext编辑模型_1929902452722581506.json, 图片生成/图生图/老照片修复 自动融合光影人像细节准确 flux kontext编辑模型_1930087133745201154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_663
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/声音克隆 支持多人_单人 语气 情绪 FishAudio S2pro_2033522460468977665.json、音频生成/音频生成/数字人语音克隆 语音生成 支持多人 单人 各种情感语气 超牛_2081400408932700161.json、音频生成/音频生成/语音克隆 语音生成 支持多人 单人 各种语气 很厉害！ FishAudio S2pro_2033509565647560705.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/flux-kontext-pro-api白嫖工作流_1958726160270127105.json、图片生成/图生图/一张图转ip三视图 ip一致性超强 细节准确 flux kontext编辑模型_1930090148233646082.json、图片生成/图生图/产品换背景 自动融合光影产品细节准确 flux kontext编辑模型_1929902452722581506.json、图片生成/图生图/老照片修复 自动融合光影人像细节准确 flux kontext编辑模型_1930087133745201154.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `FishS2MultiSpeakerTTS`
-- `FishS2TTS`
-- `FishS2VoiceCloneTTS`
-- `LoadAudio`
-- `SaveAudio`
-- `ShowText`
-- `easy cleanGpuUsed`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `ConstrainImage|pysssss` —— 3/4 个有
+- `FluxKontextImageScale` —— 1/4 个有
 
 ## 典型参数
 

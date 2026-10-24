@@ -3,41 +3,33 @@ name: unknown_workflow_video_sampler_16
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.939333
-common_nodes: [DownloadAndLoadMimicMotionModel, ImageResizeKJ, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.793667
+common_nodes: [Echo_LoadModel, Echo_Sampler, ImageResizeAdvanced, LoadAudio, LoadImage, PreviewImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1900150494789103617.json, 视频生成/图生视频/1901488680866062338.json, 视频生成/图生视频/1883776618446602242.json]
+members: [图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json, 视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json, 视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_16
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1900150494789103617.json、视频生成/图生视频/1901488680866062338.json、视频生成/图生视频/1883776618446602242.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json、视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json、视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `DownloadAndLoadMimicMotionModel`
-- `ImageResizeKJ`
+- `Echo_LoadModel`
+- `Echo_Sampler`
+- `ImageResizeAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `MimicMotionDecode`
-- `MimicMotionGetPoses`
-- `MimicMotionSampler`
-- `VHS_LoadVideo`
+- `PreviewImage`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `ReActorFaceSwap` —— 2/3 个有
-- `Image Crop Face` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `RIFE VFI` —— 1/3 个有
 
 ## 典型参数
 

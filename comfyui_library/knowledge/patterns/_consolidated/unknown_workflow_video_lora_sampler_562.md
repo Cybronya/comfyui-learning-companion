@@ -1,58 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_562
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.90125
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.634667
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, FloatToSigmas, ImageResizeKJ, KSamplerSelect, LTXVConditioning, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVLoopingSampler, LTXVTiledVAEDecode, LoraLoaderModelOnly, MultiPromptProvider, PrimitiveInt, PrintSigmas, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, StringToFloatList, VAEEncode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/1956922387473076226.json, 视频生成/文生视频/1957002960897236994.json, 视频生成/文生视频/StandIn人物一致性_2072999632508329984.json, 视频生成/文生视频/1956683255350005762.json]
+members: [图片生成/图生图/ltx-0.9.8-长视频生成_1947543467977232385.json, 视频生成/图生视频/LTXV 0.98 提示词调度（多组）图生视频V1（支持60秒）_1947704155776397313.json, 视频生成/图生视频/LTXV 0.98 深度视频转绘长视频V1_1947715360633040897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_562
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1956922387473076226.json、视频生成/文生视频/1957002960897236994.json、视频生成/文生视频/StandIn人物一致性_2072999632508329984.json、视频生成/文生视频/1956683255350005762.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/ltx-0.9.8-长视频生成_1947543467977232385.json、视频生成/图生视频/LTXV 0.98 提示词调度（多组）图生视频V1（支持60秒）_1947704155776397313.json、视频生成/图生视频/LTXV 0.98 深度视频转绘长视频V1_1947715360633040897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `FloatToSigmas`
+- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LTXVConditioning`
+- `LTXVLatentUpsampler`
+- `LTXVLatentUpsamplerModelLoader`
+- `LTXVLoopingSampler`
+- `LTXVTiledVAEDecode`
+- `LoraLoaderModelOnly`
+- `MultiPromptProvider`
+- `PrimitiveInt`
+- `PrintSigmas`
+- `RandomNoise`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
+- `StringToFloatList`
+- `VAEEncode`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/4 个有
-- `CR Text Replace` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `RH_Prompter` —— 1/4 个有
-- `RIFE VFI` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `TextBox` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `VAEDecode` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `LTXVFilmGrain` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 

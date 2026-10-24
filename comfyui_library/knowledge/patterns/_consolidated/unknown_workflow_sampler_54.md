@@ -1,39 +1,52 @@
 ---
 name: unknown_workflow_sampler_54
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.733
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
+frequency: 3
+level: strong
+coverage: 0.641667
+common_nodes: [CreateVideo, JWInteger, JoyAI_Echo_SM_Clip, JoyAI_Echo_SM_Encoder, JoyAI_Echo_SM_KSampler, JoyAI_Echo_SM_Model, PreviewAny, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/SongGeneration v2 基础工作流_2030826485233229826.json, 音频生成/音频生成/SongGeneration v2 基础工作流_2064000475623677954.json]
+members: [视频生成/文生视频/JoyAI Echo无限数字人_2063842945094209537.json, 视频生成/文生视频/Joyai_Echo智能单镜头文生数字人视频_2063868141255618562.json, 视频生成/文生视频/Joyai_Echo智能多镜头文生数字人视频_2063873351684280322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_54
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SongGeneration v2 基础工作流_2030826485233229826.json、音频生成/音频生成/SongGeneration v2 基础工作流_2064000475623677954.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/JoyAI Echo无限数字人_2063842945094209537.json、视频生成/文生视频/Joyai_Echo智能单镜头文生数字人视频_2063868141255618562.json、视频生成/文生视频/Joyai_Echo智能多镜头文生数字人视频_2063873351684280322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `SaveAudio`
-- `SongGeneration_Loader`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
+全部 3 个 workflow 都包含：
+- `CreateVideo`
+- `JWInteger`
+- `JoyAI_Echo_SM_Clip`
+- `JoyAI_Echo_SM_Encoder`
+- `JoyAI_Echo_SM_KSampler`
+- `JoyAI_Echo_SM_Model`
+- `PreviewAny`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 12345 | 12345 - 12345 | 3 | 100% |
+| Prompt 约束强度(CFG) | fixed | - | 3 | 100% |
+| 采样算法 | 121 | 121 - 121 | 3 | 100% |
+| 调度器 | 24 | 24 - 24 | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -41,4 +54,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 12345，观测区间 12345 - 12345，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 最常用 fixed，3 个样本，一致性 100%
+- 采样算法 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 12345，超出安全上限 60（steps 偏高收益递减且显著增加耗时）

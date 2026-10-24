@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_137
 type: Unknown Workflow
-frequency: 8
+frequency: 12
 level: moderate
-coverage: 0.868375
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
+coverage: 0.515167
+common_nodes: [JjkText, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2080856590562979842.json, 视频生成/图生视频/2059046294068482049.json, 视频生成/图生视频/2069253062396571649.json, 视频生成/图生视频/2046370126743740417.json, 视频生成/图生视频/2037485213277757442.json, 视频生成/图生视频/2041695254943899649.json, 视频生成/图生视频/2037155597010870274.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频生视频】工作流_2037776632408186881.json]
+members: [图片生成/图生图/角色卡制作工作流_2052015917642596354.json, 图片生成/文生图/API 全能图像2.0 文生图 中文能力加强 G Image 2.0_2046758792863424514.json, 图片生成/文生图/API 全能图像2.0 文生图 中文能力加强_2067600600430370818.json, 图片生成/文生图/API_全能图像2.0_文生图_中文能力加强_G_Image_2.0_2098914650384584705.json, 图片生成/文生图/G - Image 2.0 文生图_2047474229376983041.json, 图片生成/文生图/G Image2.0 全能图像生成 API+ 文生图 中文能力加强_2080101534528004097.json, 图片生成/文生图/G-image2低价版文生图_2087387744153718785.json, 图片生成/文生图/RH封面制作 同时出中英文封面_2052576650784714753.json, 图片生成/文生图/全能图像G 2.0 文生图 全能图片G image 2.0_2046787294027325441.json, 图片生成/文生图/文生分镜镜头（九宫图）_2084972055329599490.json, 图片生成/文生图/文生图，G-2_2086633762254843905.json, 图片生成/文生图/最强文生图 全能图片G2.0_2047595153946316802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_137
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2080856590562979842.json、视频生成/图生视频/2059046294068482049.json、视频生成/图生视频/2069253062396571649.json、视频生成/图生视频/2046370126743740417.json、视频生成/图生视频/2037485213277757442.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/角色卡制作工作流_2052015917642596354.json、图片生成/文生图/API 全能图像2.0 文生图 中文能力加强 G Image 2.0_2046758792863424514.json、图片生成/文生图/API 全能图像2.0 文生图 中文能力加强_2067600600430370818.json、图片生成/文生图/API_全能图像2.0_文生图_中文能力加强_G_Image_2.0_2098914650384584705.json、图片生成/文生图/G - Image 2.0 文生图_2047474229376983041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `SaveVideo`
+全部 12 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/8 个有
-- `LoadVideo` —— 5/8 个有
-- `SetNode` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 1/12 个有
+- `StringConcatenate` —— 1/12 个有
 
 ## 典型参数
 

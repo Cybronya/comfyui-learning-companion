@@ -1,61 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_unet_6
 type: Unknown Workflow
-frequency: 31
-level: strong
-coverage: 0.842516
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 43
+level: moderate
+coverage: 0.769977
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/F.2-klein-9B+LoRA文生图工作流_2013075554722914305.json, 图片生成/文生图/FLUX klein 4B 文生图_2013180405410697218.json, 图片生成/文生图/FLUX klein 9B 文生图_2013484429548724225.json, 图片生成/文生图/FLUX-Klein-文生图-10秒急速出图_2012122075317669889.json, 图片生成/文生图/FLUX.2 klein base 版文生图_2012463751529762817.json, 图片生成/文生图/FLUX.2 klein 蒸馏版文生图_2012457929915502594.json, 图片生成/文生图/FLUX2 klein-9B 【文生图】_2013859086563024897.json, 图片生成/文生图/FLUX2 klein-9B 文生图_2013123316474716162.json, 图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json, 图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json, 图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json, 图片生成/文生图/Flux.2-Klein 文生图_2012020733546860545.json, 图片生成/文生图/Flux2 Klein 文生图_2012770598530846721.json, 图片生成/文生图/Flux2 Klein-文生图 加速版10秒出图_2012172099653214210.json, 图片生成/文生图/Flux2-Klein文生图_2012285704222543873.json, 图片生成/文生图/Flux2-klein-9b-fp8 基础文生图_2016379670488424449.json, 图片生成/文生图/Flux2-klein-9b-fp8 文生图_2013086202567598081.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2013502856430620674.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2084470823594848258.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2084518939031326721.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2084529249729474562.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2085253506654621698.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2085255233579601922.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2087429216940937218.json, 图片生成/文生图/Flux2-klein-9b-fp8 未来感卡通风格_2087708601073881089.json, 图片生成/文生图/Flux2-klein-base-9b-fp8 文生图_2013133653185929218.json, 图片生成/文生图/Flux2.Klein文生图基础款_2013133525679087617.json, 图片生成/文生图/Klein-t2i_2073767273445289985.json, 图片生成/文生图/flux klein4B和9B 对比工作流 浮云1.17_2012475320712040449.json, 图片生成/文生图/flux klein9B 工作流 浮云1.19_2013089641938817026.json, 图片生成/文生图/😶_🌫️FLUX新王炸 Klein 文生图急速10秒出图😶_🌫️_2012094524113297409.json]
+members: [图片生成/图生图/FLUX2-Klein一风格迁移 灵感复刻_2014662073736765441.json, 图片生成/图生图/FLUX2-Klein单图编辑_2039986533473718273.json, 图片生成/图生图/Flux-klein 风格迁移_2018920960144973825.json, 图片生成/图生图/Flux2-Klein-9B【双图编辑】_2013840348065308673.json, 图片生成/图生图/Klein——万能风格迁移_2019601401692823553.json, 图片生成/图生图/Klein——风格迁移+双_单图编辑_2018852424991121410.json, 图片生成/图生图/可指定画风风格化（超强一致性！）_2046767735614480385.json, 图片生成/图生图/可自定义画风风格化_2064967690242056193.json, 图片生成/图生图/可自定义画风风格化_2068565579887366145.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2042446491167498242.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2043203800374190081.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2076664239967784962.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107037189610762241.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107090731931361281.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2112486356432801793.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2112533124335890434.json, 图片生成/图生图/图生图----风格迁移转化  灵感造像师_2052926761675051009.json, 图片生成/图生图/图生图----风格迁移转化 • 灵感造像师_2049381376520097793.json, 图片生成/图生图/图生图----风格迁移转化 • 灵感造像师_2049391706843389954.json, 图片生成/图生图/图生图----风格迁移转化 • 灵感造像师_2052297466539720706.json, 图片生成/图生图/灵感融合术（指定风格化融图超好用）_2020691247077269506.json, 图片生成/图生图/绝了！引入视觉大模型，将参考图提取为高纯度的结构化 Prompt，打造极具艺术感染力的跨次元视觉大片_2019300070507683841.json, 图片生成/图生图/绝了！引入视觉大模型，将参考图提取为高纯度的结构化 Prompt，打造极具艺术感染力的跨次元视觉大片_2042483597461950466.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2061369234403454978.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062082688223367169.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062331669251715074.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062344944022544385.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062434507504046081.json, 图片生成/图生图/风格转换 灵感生成_2018208081129246722.json, 图片生成/图生图/风格迁移_灵感复刻_2030582400455020545.json, 图片生成/图生图/风格迁移转化 -完美复刻大师级的艺术灵魂与色彩空间_2015687392249782274.json, 图片生成/图生图/风格迁移转化 -完美复刻大师级的艺术灵魂与色彩空间_2043960294732468226.json, 图片生成/图生图/风格迁移转化 -完美复刻大师级的艺术灵魂与色彩空间_2046401457825521665.json, 图片生成/图生图/风格迁移转化 • 实现灵感与灵魂的碰撞_2026481944992681985.json, 图片生成/图生图/风格迁移转化 • 灵感造像师_2043643917916184577.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2014552598229032961.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2015050060953821186.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2016108350341124098.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2025764218640801793.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2030825387453849601.json, 图片生成/图生图/风格迁移转化_•_灵感造像师_实现像素级保留与灵魂级风格注入_2097886544148393986.json, 图片生成/图生图/风格迁移转化_•_灵感造像师_实现像素级保留与灵魂级风格注入_2099414767009099778.json, 图片生成/文生图/克莱因9B风格迁移 林耀2.24_2026184088469639169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_6
 
-> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（图片生成/文生图/F.2-klein-9B+LoRA文生图工作流_2013075554722914305.json、图片生成/文生图/FLUX klein 4B 文生图_2013180405410697218.json、图片生成/文生图/FLUX klein 9B 文生图_2013484429548724225.json、图片生成/文生图/FLUX-Klein-文生图-10秒急速出图_2012122075317669889.json、图片生成/文生图/FLUX.2 klein base 版文生图_2012463751529762817.json…）
+> 由 `engine/knowledge_consolidation` 从 43 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein一风格迁移 灵感复刻_2014662073736765441.json、图片生成/图生图/FLUX2-Klein单图编辑_2039986533473718273.json、图片生成/图生图/Flux-klein 风格迁移_2018920960144973825.json、图片生成/图生图/Flux2-Klein-9B【双图编辑】_2013840348065308673.json、图片生成/图生图/Klein——万能风格迁移_2019601401692823553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：31
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：43
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 31 个 workflow 都包含：
+全部 43 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 26/31 个有
-- `PrimitiveInt` —— 24/31 个有
-- `ConditioningZeroOut` —— 19/31 个有
-- `Seed (rgthree)` —— 5/31 个有
-- `easy int` —— 5/31 个有
-- `AddLabel` —— 4/31 个有
-- `LoraLoader` —— 2/31 个有
-- `LoraLoaderModelOnly` —— 2/31 个有
-- `ImageConcatMulti` —— 1/31 个有
-- `Int` —— 1/31 个有
-- `Note Plus (mtb)` —— 1/31 个有
-- `ResolutionSelector` —— 1/31 个有
+- `PreviewImage` —— 42/43 个有
+- `CR Text Concatenate` —— 41/43 个有
+- `ImageColorMatch+` —— 41/43 个有
+- `LayerUtility: ImageReel` —— 41/43 个有
+- `LayerUtility: ImageReelComposit` —— 41/43 个有
+- `PreviewAny` —— 41/43 个有
+- `JjkText` —— 40/43 个有
+- `Qwen3VL_Chat` —— 40/43 个有
+- `Image Comparer (rgthree)` —— 39/43 个有
+- `PlaySound|pysssss` —— 39/43 个有
+- `easy imageConcat` —— 38/43 个有
+- `Anything Everywhere3` —— 2/43 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/43 个有
+- `easy int` —— 2/43 个有
+- `AILab_QwenVL` —— 1/43 个有
+- `CR Text` —— 1/43 个有
+- `ImageScaleToTotalPixels` —— 1/43 个有
+- `Int` —— 1/43 个有
+- `Text` —— 1/43 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1.5 | - | 2 | 100% |
-| LoRA 文本强度 | 1.41 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,5 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1.41，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

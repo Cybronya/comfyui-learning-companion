@@ -3,70 +3,68 @@ name: unknown_workflow_video_lora_sampler_503
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.467
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.41325
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json, 视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json, 视频生成/图生视频/minimax_H3_文戏工作流急速版_2107639659634454529.json]
+members: [视频生成/图生视频/Scail2动作迁移_for循环（一键模仿）_2089320207121731586.json, 视频生成/图生视频/Scail2多参工作流_2090458654913941506.json, 视频生成/图生视频/Scail2多参工作流_2093511775273705474.json, 视频生成/图生视频/视频主角想换就换！SCAIL2人物替换工作流｜全节点注释直接抄_2065014891525795842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_503
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json、视频生成/图生视频/MiniMax多图参考生成视频R2V_768_8步_2099766777768136705.json、视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2093245007657521154.json、视频生成/图生视频/minimax_H3_文戏工作流急速版_2107639659634454529.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Scail2动作迁移_for循环（一键模仿）_2089320207121731586.json、视频生成/图生视频/Scail2多参工作流_2090458654913941506.json、视频生成/图生视频/Scail2多参工作流_2093511775273705474.json、视频生成/图生视频/视频主角想换就换！SCAIL2人物替换工作流｜全节点注释直接抄_2065014891525795842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `GetImageRangeFromBatch`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ExtendIntermediateSigmas` —— 3/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
 - `PreviewImage` —— 3/4 个有
-- `EmptyImage` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `PrimitiveFloat` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `BlockSparseAttention` —— 1/4 个有
-- `CM_IntToFloat` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `H3SigmaRefiner` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LoraLoaderBypassModelOnly` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `Seed (rgthree)` —— 1/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `SingleBooleanTrigger` —— 3/4 个有
+- `ComfySwitchNode` —— 2/4 个有
+- `Float` —— 2/4 个有
+- `ImageBatchMultiple+` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `VHS_VideoInfoLoaded` —— 1/4 个有
 
 ## 典型参数
 

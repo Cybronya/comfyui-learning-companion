@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_288
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.86
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.821375
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3极速版工作流｜MiniMax H3 Turbo 加速出片_2099348931812618242.json, 视频生成/图生视频/Kling 2.5 Turbo图生视频工作流｜极速快档出片_2099453279041318913.json, 视频生成/图生视频/2033806236075954177.json, 视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json, 视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json]
+members: [图片生成/图生图/电商产品详情页设计全能2.0图片生成_2064736982437294082.json, 图片生成/图生图/系统_提取印花_2069300103478865922.json, 图片生成/图生图/超现实主义流体幻视插画风格_2054710112312414209.json, 图片生成/图生图/🔥涂鸦手绘注解造像师：定格生活的治愈瞬间_全能图片G2.0图生图_2052600370756628482.json, 图片生成/图生图/🔥涂鸦手绘注解：定格生活的治愈瞬间_全能图片G2.0图生图_2059161563503874050.json, 图片生成/文生图/全能图2 全家桶  Image2 文生图 + 图生图_2046939440123224066.json, 图片生成/文生图/现最强图像处理 全能图片 GP-T-Image-2  文生图 + 图像编辑_2046966083659239425.json, 数字人/数字人/最强图像处理 全能图片 GP-T-Image2  文生图 + 图像编辑 低价版_2046936732054069250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_288
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3极速版工作流｜MiniMax H3 Turbo 加速出片_2099348931812618242.json、视频生成/图生视频/Kling 2.5 Turbo图生视频工作流｜极速快档出片_2099453279041318913.json、视频生成/图生视频/2033806236075954177.json、视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json、视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/电商产品详情页设计全能2.0图片生成_2064736982437294082.json、图片生成/图生图/系统_提取印花_2069300103478865922.json、图片生成/图生图/超现实主义流体幻视插画风格_2054710112312414209.json、图片生成/图生图/🔥涂鸦手绘注解造像师：定格生活的治愈瞬间_全能图片G2.0图生图_2052600370756628482.json、图片生成/图生图/🔥涂鸦手绘注解：定格生活的治愈瞬间_全能图片G2.0图生图_2059161563503874050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxH3MaxTurboImageToVideo` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `RH_KlingV25TurboStdImageToVideo` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 3/8 个有
+- `PreviewImage` —— 3/8 个有
+- `RH_RhartImageG2TextToImage` —— 3/8 个有
+- `ttN seed` —— 1/8 个有
 
 ## 典型参数
 

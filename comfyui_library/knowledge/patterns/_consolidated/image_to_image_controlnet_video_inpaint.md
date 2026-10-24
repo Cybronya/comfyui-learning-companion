@@ -7,13 +7,13 @@ coverage: 0.5985
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CR Text, ControlNetInpaintingAliMamaApply, ControlNetLoader, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, FaceRestoreCFWithModel, FaceRestoreModelLoader, Float, GetImageRangeFromBatch, GetImageSize, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch+, ImagePadForOutpaint, ImageResize+, ImageStitch, ImageUpscaleWithModel, Int, KSampler, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression_UTK, MaxNode, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingAuraFlow, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, Note _O, PreviewAudio, PreviewImage, PrimitiveBoolean, RH_Captioner, RH_GetAudioDuration, ReActorFaceSwap, SetNode, SimpleMath+, StringToFloatList, Text Concatenate, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1972826628952903681.json, 视频生成/图生视频/1973621716603768834.json]
+members: [视频生成/图生视频/子易奇谭V2.0【即梦4.0+wan2.2 insight】_1972826628952903681.json, 视频生成/图生视频/子易奇谭V2.0【谷歌香蕉+wan2.2 insight】_1973621716603768834.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_video_inpaint
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1972826628952903681.json、视频生成/图生视频/1973621716603768834.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/子易奇谭V2.0【即梦4.0+wan2.2 insight】_1972826628952903681.json、视频生成/图生视频/子易奇谭V2.0【谷歌香蕉+wan2.2 insight】_1973621716603768834.json）
 
 - **类型**：Image To Image
 - **样本数**：2

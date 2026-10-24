@@ -3,62 +3,67 @@ name: unknown_workflow_video_sampler_vae_84
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.8365
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.72
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json, 视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json, 视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json, 视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json, 视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json, 视频生成/图生视频/角色PV动画制作_2096613890909102081.json]
+members: [图片生成/文生图/AI一镜到底（FusionX_VACE_首尾帧）_2017158248306057218.json, 视频生成/图生视频/AI一镜到底（FusionX_VACE_首尾帧）_1936791366078746626.json, 视频生成/图生视频/VACE-14B首尾视频生成_1922637708198559745.json, 视频生成/图生视频/VACE-14B首尾视频生成_1922829567898304514.json, 视频生成/图生视频/Vace 14B非对称逆推理尾帧参考FLF2V图生视频V1_1924821785194524673.json, 视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_84
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json、视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json、视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json、视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json、视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/AI一镜到底（FusionX_VACE_首尾帧）_2017158248306057218.json、视频生成/图生视频/AI一镜到底（FusionX_VACE_首尾帧）_1936791366078746626.json、视频生成/图生视频/VACE-14B首尾视频生成_1922637708198559745.json、视频生成/图生视频/VACE-14B首尾视频生成_1922829567898304514.json、视频生成/图生视频/Vace 14B非对称逆推理尾帧参考FLF2V图生视频V1_1924821785194524673.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MiniMaxH3ImageToVideo` —— 5/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
-- `UNETLoader` —— 5/6 个有
-- `MiniMaxH3SigmaShift` —— 3/6 个有
-- `PrimitiveStringMultiline` —— 3/6 个有
-- `ResolutionSelector` —— 3/6 个有
-- `H3SigmaRefiner` —— 2/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `SolAttnPatch` —— 2/6 个有
-- `DiffusionModelLoaderKJ` —— 1/6 个有
-- `JsonExtractString` —— 1/6 个有
-- `MiniMaxChunkFeedForward` —— 1/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/6 个有
-- `MiniMaxLowVRAMAttention` —— 1/6 个有
-- `RegexReplace` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
-- `TextGenerate` —— 1/6 个有
-- `ZNGB_ResizeImage` —— 1/6 个有
-- `easy convertAnything` —— 1/6 个有
+- `MaskPreview+` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `WanVideoTeaCache` —— 4/6 个有
+- `WanVideoTorchCompileSettings` —— 4/6 个有
+- `ImageBatchMulti` —— 3/6 个有
+- `MathExpression|pysssss` —— 3/6 个有
+- `WanVideoVACEModelSelect` —— 3/6 个有
+- `easy batchAnything` —— 3/6 个有
+- `JWImageExtractFromBatch` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `Note Plus (mtb)` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `easy forLoopEnd` —— 2/6 个有
+- `easy forLoopStart` —— 2/6 个有
+- `Image Blank` —— 1/6 个有
+- `ImageFromBatch+` —— 1/6 个有
+- `LayerMask: MaskPreview` —— 1/6 个有
 - `easy showAnything` —— 1/6 个有
 
 ## 典型参数

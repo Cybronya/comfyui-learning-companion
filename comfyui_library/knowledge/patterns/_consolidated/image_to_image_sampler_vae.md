@@ -1,77 +1,79 @@
 ---
 name: image_to_image_sampler_vae
 type: Image To Image
-frequency: 5
+frequency: 38
 level: moderate
-coverage: 0.8656
-common_nodes: [CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.840868
+common_nodes: [Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode]
 problems: [Steps较低可能导致细节不足]
-missing: [Note _O]
-members: [图片生成/文生图/1965802115979456514.json, 图片生成/文生图/1970656696915927042.json, 图片生成/文生图/1971152467314515969.json, 图片生成/文生图/1972625362733711361.json, 图片生成/文生图/1975091649036595202.json]
+missing: []
+members: [图片生成/图生图/电商模特摆姿1图分裂12图（鞋子）千问2511_2098923123256152066.json, 图片生成/图生图/电商模特摆姿分裂图V3.0（鞋子，服装，包）_1980818100138459137.json, 图片生成/图生图/电商模特摆姿分裂图V3.0（鞋子，服装，包）_1984064390028787714.json, 图片生成/图生图/自用123_2011732170691317761.json, 图片生成/图生图/超好用🔥ai动漫短剧九分镜直出图-人物一致性_2057347496250269697.json, 图片生成/图生图/超级一致性分镜、短剧分镜神器V1.2_1991833384632774658.json, 图片生成/图生图/迄今超强一键首屏详情洗图详情页制作（无需写提示词）丨海报丨详情页丨主图丨产品换背景丨风格参考1_1987724409555365889.json, 图片生成/图生图/镜头风格一致性影视剧情分镜制作_1989609598908813314.json, 图片生成/图生图/镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1990230499505393666.json, 图片生成/图生图/镜头风格一致性电影Qwen+Next+Scene+分镜制作 林耀_2014225879148269569.json, 图片生成/图生图/镜头风格一致性电影视剧情分镜制作_1998035594167115777.json, 图片生成/图生图/风格一致性出12张分镜图以上 Qwen+Next-SceneV2+LightningV2_2001599932840722434.json, 图片生成/文生图/Qwen+Next+Scene+影视剧情分镜制作_1984056201858220034.json, 图片生成/文生图/QwenNextScene一致性分镜【入档】_2111192081694806018.json, 图片生成/文生图/QwenNextScene生成12张考城隍短剧分镜图片_1981150927354728450.json, 图片生成/文生图/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1990302085990240258.json, 图片生成/文生图/【微电影】镜头风格一致性电影3分镜影视剧情分镜制作-邻家AI大女孩_2042485741443358721.json, 图片生成/文生图/【电影效果】人物一致性12分镜 影视剧情分镜制作_2106364207892615170.json, 图片生成/文生图/一键分镜，快速出图_1981898675020546049.json, 图片生成/文生图/一键分镜，快速出图_2028298848090722306.json, 图片生成/文生图/一键生成影视剧情分镜制作_2003128546249908226.json, 图片生成/文生图/分镜制作_2026210422021427201.json, 图片生成/文生图/分镜生成出图一致性电影3分镜+Qwen+Next+Scene 影视剧情分镜制作_1996617736899936258.json, 图片生成/文生图/动漫分镜生成器_2089724684249165826.json, 图片生成/文生图/好六_悬疑片分镜生图_v1_2001462586799517698.json, 图片生成/文生图/电影短剧镜头风格一致性 电影3分镜+Qwen+Next+Scene+影视剧情分镜制作_1997310078501982209.json, 图片生成/文生图/维尼多角色分镜制作_1981208581552988161.json, 图片生成/文生图/风格一致性分镜镜头生成_1989169833675730945.json, 视频生成/图生视频/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2051871461111025665.json, 视频生成/图生视频/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2052721515422072834.json, 视频生成/图生视频/Qwen+Next+Scene+影视剧情分镜制作_1984134656448724993.json, 视频生成/图生视频/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1983730005693898754.json, 视频生成/图生视频/【微电影】镜头风格一致性电影多分镜 Qwen+Next+Scene+影视剧情分镜制作_1981923431421755394.json, 视频生成/图生视频/影视剧情电影分镜制作Qwen Next Scene 1.0_1981410642760482818.json, 视频生成/图生视频/镜头风格一致性电影分镜+Qwen+Next+Scene+影视剧情分镜生成_1989906208968593410.json, 视频生成/文生视频/Qwen+Next+Scene+影视剧情分镜制作_1983740086821036034.json, 视频生成/文生视频/ai动漫短剧分镜创作llm大模型自动优化ai模型编写提示词分镜九分镜9分镜直出_2011736811663532033.json, 视频生成/文生视频/ai动漫短剧分镜创作llm大模型自动优化ai模型编写提示词分镜九分镜9分镜直出_2012464089221570562.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_vae
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1965802115979456514.json、图片生成/文生图/1970656696915927042.json、图片生成/文生图/1971152467314515969.json、图片生成/文生图/1972625362733711361.json、图片生成/文生图/1975091649036595202.json）
+> 由 `engine/knowledge_consolidation` 从 38 个 workflow 归纳得出（图片生成/图生图/电商模特摆姿1图分裂12图（鞋子）千问2511_2098923123256152066.json、图片生成/图生图/电商模特摆姿分裂图V3.0（鞋子，服装，包）_1980818100138459137.json、图片生成/图生图/电商模特摆姿分裂图V3.0（鞋子，服装，包）_1984064390028787714.json、图片生成/图生图/自用123_2011732170691317761.json、图片生成/图生图/超好用🔥ai动漫短剧九分镜直出图-人物一致性_2057347496250269697.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：38
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 38 个 workflow 都包含：
+- `Int`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 3/5 个有
-- `NunchakuQwenImageDiTLoader` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `TextEncodeQwenImageEdit` —— 3/5 个有
-- `DWPreprocessor` —— 2/5 个有
-- `TextEncodeQwenImageEditPlus` —— 2/5 个有
-- `UNETLoader` —— 2/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `Note _O` —— 1/5 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/5 个有
+- `ProcessString` —— 37/38 个有
+- `ShellAgentPluginOutputText` —— 36/38 个有
+- `easy promptLine` —— 36/38 个有
+- `easy showAnything` —— 36/38 个有
+- `CLIPLoader` —— 35/38 个有
+- `LoraLoaderModelOnly` —— 35/38 个有
+- `RH_LLMAPI_NODE` —— 35/38 个有
+- `VAELoader` —— 35/38 个有
+- `Anything Everywhere3` —— 34/38 个有
+- `UNETLoader` —— 34/38 个有
+- `JjkText` —— 33/38 个有
+- `PreviewImage` —— 10/38 个有
+- `RHHiddenNodes` —— 4/38 个有
+- `AILab_QwenVL` —— 1/38 个有
+- `EmptySD3LatentImage` —— 1/38 个有
+- `ImageConcanate` —— 1/38 个有
+- `ShowText|pysssss` —— 1/38 个有
+- `TTP_text_mix` —— 1/38 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 5 | 47% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 5 | 54% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 4 | 4 - 6.5974e+14 | 38 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 38 | 100% |
+| 采样算法 | sa_solver | - | 38 | 100% |
+| 调度器 | simple | - | 38 | 97% |
+| 重绘幅度 | 1 | 1 - 1 | 38 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 37/38 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 47%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，5 个样本
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（6/5 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Note _O
+- 采样步数 中位数 4，观测区间 4 - 6.5974e+14，38 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，38 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，38 个样本，一致性 100%
+- 调度器 最常用 simple，38 个样本，一致性 97%
+- 重绘幅度 中位数 1，观测区间 1 - 1，38 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 6.5974e+14，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 高发问题（37/38 个样本）：Steps较低可能导致细节不足

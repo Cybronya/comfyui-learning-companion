@@ -1,34 +1,40 @@
 ---
 name: unknown_workflow_generic_742
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9
-common_nodes: [DF_Text_Box, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, 忽略多组孤海]
+frequency: 4
+level: moderate
+coverage: 0.97725
+common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, RH_FireRedAudioLoader, RH_FireRedAudioTTS, SaveAudio, ShowAnything|Mie]
 problems: []
 missing: []
-members: [图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json, 数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json]
+members: [数字人/数字人/Firered Audio TTS语音克隆_2095458588989935617.json, 音频生成/音频生成/Firered Audio TTS最新语音克隆 音色迁移_2093956704869380097.json, 音频生成/音频生成/Firered Audio TTS语音克隆2608_2094001329831243777.json, 音频生成/音频生成/Firered Audio TTS语音克隆_2093553357762949121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_742
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json、数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Firered Audio TTS语音克隆_2095458588989935617.json、音频生成/音频生成/Firered Audio TTS最新语音克隆 音色迁移_2093956704869380097.json、音频生成/音频生成/Firered Audio TTS语音克隆2608_2094001329831243777.json、音频生成/音频生成/Firered Audio TTS语音克隆_2093553357762949121.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DF_Text_Box`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `忽略多组孤海`
+全部 4 个 workflow 都包含：
+- `Apply Whisper`
+- `CR Prompt Text`
+- `LoadAudio`
+- `RH_FireRedAudioLoader`
+- `RH_FireRedAudioTTS`
+- `SaveAudio`
+- `ShowAnything|Mie`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioCrop` —— 1/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `SaveAudioMP3` —— 1/4 个有
 
 ## 典型参数
 
@@ -40,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

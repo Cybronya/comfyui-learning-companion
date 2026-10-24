@@ -3,40 +3,73 @@ name: unknown_workflow_video_inpaint_sampler_7
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.828
-common_nodes: [INPAINT_MaskedBlur, ImageOnlyCheckpointLoader, ImageResizeKJ, JjkText, LoadAudio, LoadImage, Note _O, PreviewImage, SONICSampler, SONICTLoader, SONIC_PreData, SparkTTSClone, SparkTTSRun, VHS_VideoCombine]
+coverage: 0.727
+common_nodes: [CR Text Concatenate, DWPreprocessor, DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, Fast Groups Bypasser (rgthree), Florence2Run, Florence2toCoordinates, GrowMaskWithBlur, ImageResize+, ImageResizeKJ, InpaintPreprocessor, Int, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, MathExpression|pysssss, PrimitiveString, RH_Translator, Sam2Segmentation, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageRemBg, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/1911672146375180290.json, 视频生成/文生视频/1933370341622198273.json]
+members: [视频生成/图生视频/动迁1+1_1939680452862976002.json, 视频生成/图生视频/动迁1+1_1941245784644075522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1911672146375180290.json、视频生成/文生视频/1933370341622198273.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动迁1+1_1939680452862976002.json、视频生成/图生视频/动迁1+1_1941245784644075522.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `INPAINT_MaskedBlur`
-- `ImageOnlyCheckpointLoader`
+- `CR Text Concatenate`
+- `DWPreprocessor`
+- `DownloadAndLoadFlorence2Model`
+- `DownloadAndLoadSAM2Model`
+- `Fast Groups Bypasser (rgthree)`
+- `Florence2Run`
+- `Florence2toCoordinates`
+- `GrowMaskWithBlur`
+- `ImageResize+`
 - `ImageResizeKJ`
-- `JjkText`
-- `LoadAudio`
+- `InpaintPreprocessor`
+- `Int`
+- `LayerMask: LoadFlorence2Model`
+- `LayerUtility: Florence2Image2Prompt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `Note _O`
-- `PreviewImage`
-- `SONICSampler`
-- `SONICTLoader`
-- `SONIC_PreData`
-- `SparkTTSClone`
-- `SparkTTSRun`
+- `LoadWanVideoT5TextEncoder`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `PrimitiveString`
+- `RH_Translator`
+- `Sam2Segmentation`
+- `ShowText|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy imageRemBg`
+- `easy textSwitch`
+
+**可变部分**（部分 workflow 才有）：
+- `DepthAnythingV2Preprocessor` —— 1/2 个有
+- `ImageScaleToMegapixels` —— 1/2 个有
+- `ImageSmartSharpen+` —— 1/2 个有
+- `KEEP_ModelLoader` —— 1/2 个有
+- `KEEP_ProcessImageSequence` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
+- `VHS_VideoInfo` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,78 +3,61 @@ name: unknown_workflow_video_lora_sampler_683
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.579
-common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DrawMaskOnImage, EmptyImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat, easy showAnything]
+coverage: 0.930333
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1975554150689845250.json, 视频生成/图生视频/1975078914978656258.json, 视频生成/图生视频/1969652122914594818.json]
+members: [视频生成/图生视频/电商产品展示 固定模特  视频版_1985965046280986626.json, 视频生成/图生视频/首尾帧Wan2.2 Fun VACE_1971104908562862081.json, 视频生成/文生视频/Wan 2.2-Fun-VACE-图生视频_1967620116848545793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_683
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1975554150689845250.json、视频生成/图生视频/1975078914978656258.json、视频生成/图生视频/1969652122914594818.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/电商产品展示 固定模特  视频版_1985965046280986626.json、视频生成/图生视频/首尾帧Wan2.2 Fun VACE_1971104908562862081.json、视频生成/文生视频/Wan 2.2-Fun-VACE-图生视频_1967620116848545793.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `CR Text`
-- `DrawMaskOnImage`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `ImageResizeKJv2`
-- `ImpactInt`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: SegmentAnythingUltra V3`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy promptConcat`
-- `easy showAnything`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `OnnxDetectionModelLoader` —— 2/3 个有
-- `PoseAndFaceDetection` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `FaceMaskFromPoseKeypoints` —— 1/3 个有
-- `ImageCropByMaskAndResize` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `PixelPerfectResolution` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `DiffusionModelLoaderKJ` —— 2/3 个有
+- `DiffusionModelSelector` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `WanVideoVACEStartToEndFrame` —— 2/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageRepeat` —— 1/3 个有
+- `ImpactFloat` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `ZML_DualInteger` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 16 | 3 | 57% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | lcm | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -82,4 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 16，3 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 16，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

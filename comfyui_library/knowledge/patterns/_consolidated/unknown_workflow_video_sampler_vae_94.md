@@ -1,62 +1,54 @@
 ---
 name: unknown_workflow_video_sampler_vae_94
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.701
-common_nodes: [CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, DualCLIPLoader, FramePackFindNearestBucket, FramePackSampler_F1, FramePackTimestampedTextEncode, GetImageSizeAndCount, GetNode, ImageResize+, LoadFramePackModel, SetNode, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.966667
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [SDXLEmptyLatentSizePicker+, CR Prompt Text, ImageResize+]
-members: [图片生成/文生图/1932758777428856834.json, 视频生成/图生视频/1932772703088906241.json, 视频生成/图生视频/1932516244178280449.json, 视频生成/图生视频/1932763782831902721.json, 视频生成/图生视频/1932997763401650178.json]
+missing: []
+members: [视频生成/文生视频/WAN2.1 万相文生视频_1894738475621482497.json, 视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json, 视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json, 视频生成/文生视频/Wan2.1最新FusionX LORA  2分钟生视频_1935600068689068033.json, 视频生成/文生视频/kijai_wanvideo_T2V_selfforcing5_14b 文生视频_1934871279478448130.json, 视频生成/文生视频/【阿辉聊AI】Self Forcing极速文生视频工作流_1935156530729951234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_94
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1932758777428856834.json、视频生成/图生视频/1932772703088906241.json、视频生成/图生视频/1932516244178280449.json、视频生成/图生视频/1932763782831902721.json、视频生成/图生视频/1932997763401650178.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/WAN2.1 万相文生视频_1894738475621482497.json、视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json、视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json、视频生成/文生视频/Wan2.1最新FusionX LORA  2分钟生视频_1935600068689068033.json、视频生成/文生视频/kijai_wanvideo_T2V_selfforcing5_14b 文生视频_1934871279478448130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DualCLIPLoader`
-- `FramePackFindNearestBucket`
-- `FramePackSampler_F1`
-- `FramePackTimestampedTextEncode`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResize+`
-- `LoadFramePackModel`
-- `SetNode`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAELoader`
+全部 6 个 workflow 都包含：
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `Float` —— 3/5 个有
-- `FramePackLoraSelect` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `Bjornulf_ShowStringText` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/5 个有
+- `RIFE VFI` —— 5/6 个有
+- `ImageUpscaleWithModel` —— 3/6 个有
+- `SeargePromptText` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
+- `WanVideoLoraSelect` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `Video_Upscale_With_Model` —— 2/6 个有
+- `WanVideoEnhanceAVideo` —— 2/6 个有
+- `WanVideoVRAMManagement` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 768x1280 (0.6) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：SDXLEmptyLatentSizePicker+、CR Prompt Text、ImageResize+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

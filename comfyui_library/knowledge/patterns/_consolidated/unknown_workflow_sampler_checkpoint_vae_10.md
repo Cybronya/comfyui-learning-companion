@@ -1,68 +1,72 @@
 ---
 name: unknown_workflow_sampler_checkpoint_vae_10
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.635
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, PrimitiveStringMultiline, SaveAudioMP3, TextEncodeAceStepAudio1.5, VAEDecodeAudio]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 9
+level: moderate
+coverage: 0.943333
+common_nodes: [CLIPVisionEncode, EmptyLatentHunyuan3Dv2, ImageOnlyCheckpointLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveGLB, SaveImage, VAEDecodeHunyuan3D]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/ACE Step 1.5 Music Gen 音乐创作_2075068237804556289.json, 音频生成/音频生成/ACE-Step1.5 文生音乐_2018856388780367874.json, 音频生成/音频生成/ACE-Step1.5 歌曲创作_2043931078825615362.json, 音频生成/音频生成/ACE-Step1.5歌曲创作 附带教程_2044232351034642433.json, 音频生成/音频生成/ACE-Step1.5歌曲创作（附·提示词模版）_2041468135462674434.json]
+members: [图片生成/图生图/006.Hunyuan模型创建002.多视图生成3D模型_2035389695059824642.json, 图片生成/图生图/Hunyuan3D-多视图生成glb模型_2074612521968955394.json, 图片生成/图生图/一键3D模型，图转3D，手办玩具设计，3D打印_2032143682186514433.json, 图片生成/图生图/上传一张图片即可得到它的3D模型，王炸混元3D+2.1_2016310657410408450.json, 图片生成/图生图/官方混元3D-v2.1 工作流 V1.0_1988070322928857090.json, 图片生成/图生图/混元3D-v2.1_1970105286205841410.json, 图片生成/图生图/混元3D-v2.1_2013566476392861698.json, 图片生成/图生图/自己用：建模_1966308326344658945.json, 图片生成/文生图/混元3D 2.1(Comfy官方版)V1_1966105526599847937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/ACE Step 1.5 Music Gen 音乐创作_2075068237804556289.json、音频生成/音频生成/ACE-Step1.5 文生音乐_2018856388780367874.json、音频生成/音频生成/ACE-Step1.5 歌曲创作_2043931078825615362.json、音频生成/音频生成/ACE-Step1.5歌曲创作 附带教程_2044232351034642433.json、音频生成/音频生成/ACE-Step1.5歌曲创作（附·提示词模版）_2041468135462674434.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/006.Hunyuan模型创建002.多视图生成3D模型_2035389695059824642.json、图片生成/图生图/Hunyuan3D-多视图生成glb模型_2074612521968955394.json、图片生成/图生图/一键3D模型，图转3D，手办玩具设计，3D打印_2032143682186514433.json、图片生成/图生图/上传一张图片即可得到它的3D模型，王炸混元3D+2.1_2016310657410408450.json、图片生成/图生图/官方混元3D-v2.1 工作流 V1.0_1988070322928857090.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：64%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `EmptyAceStep1.5LatentAudio`
+全部 9 个 workflow 都包含：
+- `CLIPVisionEncode`
+- `EmptyLatentHunyuan3Dv2`
+- `ImageOnlyCheckpointLoader`
 - `KSampler`
+- `LoadImage`
 - `ModelSamplingAuraFlow`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-- `TextEncodeAceStepAudio1.5`
-- `VAEDecodeAudio`
+- `SaveGLB`
+- `SaveImage`
+- `VAEDecodeHunyuan3D`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 4/5 个有
-- `Float` —— 2/5 个有
-- `LoadImage` —— 1/5 个有
-- `SaveAudio` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
+- `Hunyuan3Dv2Conditioning` —— 7/9 个有
+- `VoxelToMesh` —— 7/9 个有
+- `VoxelToMeshBasic` —— 5/9 个有
+- `Hunyuan3Dv2ConditioningMultiView` —— 3/9 个有
+- `easy imageRemBg` —— 3/9 个有
+- `Fast Bypasser (rgthree)` —— 1/9 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 4096 | 3072 - 8192 | 9 | 59% |
+| 高度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | 20 | 20 - 30 | 9 | 80% |
+| Prompt 约束强度(CFG) | 7.5 | 5 - 8 | 9 | 79% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | normal | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| 发现KSampler但没有VAEDecode | 9/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
-- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode
+- 宽度 中位数 4096，观测区间 3072 - 8192，9 个样本
+- 高度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 30，9 个样本
+- Prompt 约束强度(CFG) 中位数 7.5，观测区间 5 - 8，9 个样本
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 normal，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：发现KSampler但没有VAEDecode

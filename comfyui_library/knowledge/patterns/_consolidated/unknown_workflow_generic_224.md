@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_generic_224
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.830833
-common_nodes: [CR Prompt Text, LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.703556
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json, 视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json, 视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json, 视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json, 视频生成/文生视频/全能参考视频生成！Seedance 2.0(已支持原生1080p！可真人，审核宽松！_2048398173965651969.json]
+members: [图片生成/图生图/全能图像G image2.0详情页制作保存PSD格式_2058764569627160578.json, 图片生成/图生图/全能图像G2.0详情页制作_2070056303426367490.json, 图片生成/图生图/全能图像G2.0详情页制作_2070058172735385601.json, 图片生成/图生图/全能图像G2.0详情页制作_2070059530897158145.json, 图片生成/图生图/全能图片V1 Pro详情页生成PSD格式保存_2008032417004658690.json, 图片生成/图生图/分镜图（G-Image 2.0）_2049305377111547906.json, 图片生成/图生图/详情页生成器_2009996963613253634.json, 图片生成/文生图/TEMU跨境电商商品详情页生成(psd)_2009507733443190785.json, 图片生成/文生图/国内商品详情页生成(psd)_2008738737584345089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_224
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频Seedance 2(支持原生1080p！真人，审核宽松！_2102601349295857666.json、视频生成/文生视频/0.21元每秒的Seedance2.5多模态满血版_2085938215160213506.json、视频生成/文生视频/SD2多模态工作流（支持真人）_2037727358190362625.json、视频生成/文生视频/Seedance 2.0(地表最强！全能参考视频生成模型)_2000800706820964353.json、视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能图像G image2.0详情页制作保存PSD格式_2058764569627160578.json、图片生成/图生图/全能图像G2.0详情页制作_2070056303426367490.json、图片生成/图生图/全能图像G2.0详情页制作_2070058172735385601.json、图片生成/图生图/全能图像G2.0详情页制作_2070059530897158145.json、图片生成/图生图/全能图片V1 Pro详情页生成PSD格式保存_2008032417004658690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
+全部 9 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `ShowAnything|Mie` —— 4/6 个有
-- `PreviewAny` —— 1/6 个有
-- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 1/6 个有
-- `忽略多组孤海` —— 1/6 个有
+- `HAIGC_CombineUnits` —— 8/9 个有
+- `HAIGC_Layer` —— 8/9 个有
+- `HAIGC_SavePSD` —— 8/9 个有
+- `PromptBatchQueue` —— 8/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/9 个有
+- `RH_RhartImageG2ImageToImage` —— 5/9 个有
 
 ## 典型参数
 

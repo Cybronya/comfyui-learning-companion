@@ -1,83 +1,79 @@
 ---
 name: unknown_workflow_video_sampler_clip_162
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.946
-common_nodes: [Audio Duration, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, DiffusionModelLoaderKJ, GetImageSize, ImageBatch, ImageFromBatch, ImageResizeKJ, KSampler, LoadImage, ModelPatchLoader, PreviewAudio, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.93025
+common_nodes: [CLIPLoader, CLIPTextEncode, FindPerfectResolution, Int, JjkText, KSamplerAdvanced, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [数字人/数字人/数字人-文本驱动-无限时长-InfiniTetalk版_2108502688081207298.json, 视频生成/图生视频/数字人-声音克隆-无限时长-InfiniTetalk版_2109547310756745218.json, 视频生成/图生视频/数字人-音频驱动-无限时长-InfiniTetalk版_2109520566653898753.json]
+members: [视频生成/图生视频/一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json, 视频生成/图生视频/图生视频+Wan2.2_Enhanced 闪电V2_2014557623625981954.json, 视频生成/图生视频/图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json, 视频生成/图生视频/自动反推提示词+图生视频超丝滑动态Wan2.2Enhanced闪电_2001759944049324033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_162
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/数字人-文本驱动-无限时长-InfiniTetalk版_2108502688081207298.json、视频生成/图生视频/数字人-声音克隆-无限时长-InfiniTetalk版_2109547310756745218.json、视频生成/图生视频/数字人-音频驱动-无限时长-InfiniTetalk版_2109520566653898753.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json、视频生成/图生视频/图生视频+Wan2.2_Enhanced 闪电V2_2014557623625981954.json、视频生成/图生视频/图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json、视频生成/图生视频/自动反推提示词+图生视频超丝滑动态Wan2.2Enhanced闪电_2001759944049324033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio Duration`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ComfyMathExpression`
-- `DiffusionModelLoaderKJ`
-- `GetImageSize`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageResizeKJ`
-- `KSampler`
+- `FindPerfectResolution`
+- `Int`
+- `JjkText`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `ModelPatchLoader`
-- `PreviewAudio`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy mathInt`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `SaveAudio` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
+- `DuckHideNode` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `easy float` —— 2/4 个有
+- `Doubao_ImageToPrompt` —— 1/4 个有
+- `GLM_ImageToPrompt` —— 1/4 个有
+- `HAIGC_SaveImagesToZip` —— 1/4 个有
+- `HAIGC_VideoLastFrame` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `Qwen3VL_Advanced` —— 1/4 个有
+- `Qwen3VL_ExtraOptions` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（6/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

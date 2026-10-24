@@ -2,64 +2,70 @@
 name: unknown_workflow_video_lora_sampler_103
 type: Unknown Workflow
 frequency: 15
-level: moderate
-coverage: 0.961267
-common_nodes: [CreateCFGScheduleFloatList, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.996133
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, INTConstant, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, Text Concatenate, UNETLoader, VAELoader, VHS_VideoCombine, Wan22PromptSelector, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1979029148482048001.json, 视频生成/图生视频/1952197474423353346.json, 视频生成/图生视频/1952270588733804545.json, 视频生成/图生视频/2040755258175004674.json, 视频生成/图生视频/2044660138820247554.json, 视频生成/图生视频/1950913701371117569.json, 视频生成/图生视频/1904943116204576769.json, 视频生成/图生视频/2042949137406103554.json, 视频生成/图生视频/2043184542202208257.json, 视频生成/图生视频/2044662528826941441.json, 视频生成/图生视频/2075046170388422658.json, 视频生成/图生视频/2047121992129712129.json, 视频生成/图生视频/2048604067320045570.json, 视频生成/图生视频/2048924949674463234.json, 视频生成/图生视频/2072871692606726146.json]
+members: [视频生成/图生视频/实测好用！图生视频，小幅度巨好用_2080827285132898306.json, 视频生成/图生视频/数字人动作，服装，动态展示 Wan2.2 Remix V3 图生视频超流畅最强版_2079587652592037890.json, 视频生成/图生视频/最强 Wan2.2 Remix V3 图生视频｜丝滑流畅升级版_2087862856862748674.json, 视频生成/图生视频/最新图生视频 Wan Remix-V3+人物表情及运镜方式+光线类型 智能焦距_2035900370236481538.json, 视频生成/图生视频/极速生成-图生视频-Wan2.2 Remix V3_2064528658047520769.json, 视频生成/图生视频/超丝滑版图生视频+内置免费的全能图片+高清插帧_2072282561220530178.json, 视频生成/图生视频/返回 Wan2.2 Remix V3 图生视频_2066038287848001538.json, 视频生成/图生视频/返回 Wan2.2 Remix V3 图生视频_极度丝滑没有之一 akcope_2065021049787469825.json, 视频生成/文生视频/Remix-V3  图生视频+人物表情及运镜方式+光线类型 智能焦距_2035184722933977090.json, 视频生成/文生视频/Wan2.2 Remix V3 图生视频_2064528430519115778.json, 视频生成/文生视频/Wan2.2 Remix V3 图生视频_2064548764462964737.json, 视频生成/文生视频/Wan2.2 Remix V3 图生视频_2070034805030477826.json, 视频生成/文生视频/Wan2.2 Remix V3 图生视频超流畅最强版_2095030298126929921.json, 视频生成/文生视频/Wan2.2 Remix V3 图生视频超流畅最强版_2095807107621801985.json, 视频生成/文生视频/Wan2.2 Remix V3 图生视频超流畅最强版_2104826544370839553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_103
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/1979029148482048001.json、视频生成/图生视频/1952197474423353346.json、视频生成/图生视频/1952270588733804545.json、视频生成/图生视频/2040755258175004674.json、视频生成/图生视频/2044660138820247554.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/实测好用！图生视频，小幅度巨好用_2080827285132898306.json、视频生成/图生视频/数字人动作，服装，动态展示 Wan2.2 Remix V3 图生视频超流畅最强版_2079587652592037890.json、视频生成/图生视频/最强 Wan2.2 Remix V3 图生视频｜丝滑流畅升级版_2087862856862748674.json、视频生成/图生视频/最新图生视频 Wan Remix-V3+人物表情及运镜方式+光线类型 智能焦距_2035900370236481538.json、视频生成/图生视频/极速生成-图生视频-Wan2.2 Remix V3_2064528658047520769.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `INTConstant`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SimpleMath+`
+- `Text Concatenate`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `Wan22PromptSelector`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 14/15 个有
-- `WanVideoImageToVideoEncode` —— 14/15 个有
-- `ImageResizeKJv2` —— 13/15 个有
-- `easy cleanGpuUsed` —— 12/15 个有
-- `easy clearCacheAll` —— 11/15 个有
-- `CR Text` —— 10/15 个有
-- `Int` —— 10/15 个有
-- `MathExpression|pysssss` —— 10/15 个有
-- `PrimitiveFloat` —— 10/15 个有
-- `LayerUtility: PurgeVRAM` —— 9/15 个有
-- `GetImageSizeAndCount` —— 5/15 个有
+- `VAEDecode` —— 14/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/15 个有
+- `easy cleanGpuUsed` —— 13/15 个有
+- `ImageScaleBy` —— 12/15 个有
+- `RIFE VFI` —— 12/15 个有
+- `ImageResizeKJv2` —— 2/15 个有
 - `JjkText` —— 1/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/15 个有
-- `Primitive integer [Crystools]` —— 1/15 个有
-- `SimpleMath+` —— 1/15 个有
-- `WanVideoEmptyEmbeds` —— 1/15 个有
+- `LoadAudio` —— 1/15 个有
+- `PreviewImage` —— 1/15 个有
+- `RHHiddenNodes` —— 1/15 个有
+- `SaveImage` —— 1/15 个有
+- `VAEDecodeTiled` —— 1/15 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 15 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 15 | 100% |
+| 采样算法 | 1 | 1 - 1 | 15 | 100% |
+| 调度器 | euler | - | 15 | 100% |
+| 重绘幅度 | simple | - | 15 | 100% |
 
 ## 常见问题
 
@@ -67,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，15 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，15 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，15 个样本，一致性 100%
+- 重绘幅度 最常用 simple，15 个样本，一致性 100%

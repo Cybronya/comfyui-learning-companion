@@ -1,76 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_456
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.643
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.8835
+common_nodes: [BasicScheduler, CLIPTextEncode, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadAudioUI, LoadImage, PrimitiveBoolean, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频对口型数字人_InfiniteTalk_V2V_2083750945984442370.json, 音频生成/音频生成/Infinitetalk视频添加语音视频对口型_1979388744887341058.json, 音频生成/音频生成/Wan2.1-InfiniteTalk--视频对口型_2042411569077821442.json, 音频生成/音频生成/infinitetalk对口型工作流_1995386268756402178.json, 音频生成/音频生成/视频对口型 音频驱动生视频   数字人 视频重绘 二次编辑_2063855129274707970.json]
+members: [图片生成/图生图/LTX2.3 MSR全能参考慢剧+自定义音频_2069955656362315777.json, 视频生成/图生视频/LTX2.3 MSR全能参考慢剧+自定义音频_2071508676480950273.json, 视频生成/图生视频/LTX2.3-MSR  Multi-Image Reference（custom audio)_2087391136162865154.json, 视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频-自动提示词版-高帧率-高动态-去字幕_2069271166765854721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_456
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/视频对口型数字人_InfiniteTalk_V2V_2083750945984442370.json、音频生成/音频生成/Infinitetalk视频添加语音视频对口型_1979388744887341058.json、音频生成/音频生成/Wan2.1-InfiniteTalk--视频对口型_2042411569077821442.json、音频生成/音频生成/infinitetalk对口型工作流_1995386268756402178.json、音频生成/音频生成/视频对口型 音频驱动生视频   数字人 视频重绘 二次编辑_2063855129274707970.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/LTX2.3 MSR全能参考慢剧+自定义音频_2069955656362315777.json、视频生成/图生视频/LTX2.3 MSR全能参考慢剧+自定义音频_2071508676480950273.json、视频生成/图生视频/LTX2.3-MSR  Multi-Image Reference（custom audio)_2087391136162865154.json、视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频-自动提示词版-高帧率-高动态-去字幕_2069271166765854721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `SetNode`
-- `VHS_LoadVideo`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `ComfySwitchNode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadAudioUI`
+- `LoadImage`
+- `PrimitiveBoolean`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `AudioSeparation` —— 4/5 个有
-- `Display Int (rgthree)` —— 4/5 个有
-- `DownloadAndLoadWav2VecModel` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `ImageConcatMulti` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `SoundFlow_GetLength` —— 4/5 个有
-- `ToInt` —— 4/5 个有
-- `WanVideoTorchCompileSettings` —— 4/5 个有
-- `easy int` —— 3/5 个有
-- `CR Text` —— 2/5 个有
-- `ImageBatchMulti` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `ReverseImageBatch` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `ImpactInt` —— 1/5 个有
-- `JWIntegerToString` —— 1/5 个有
-- `Wav2VecModelLoader` —— 1/5 个有
+- `CR Prompt Text` —— 2/4 个有
+- `Dapao_LlamaCaption` —— 2/4 个有
+- `Dapao_LlamaCaptionOptions` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `RegexReplace` —— 2/4 个有
+- `SimpleMathBoolean+` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `MultiTextConcatenate` —— 1/4 个有
+- `RH_Utils` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `SizeSelector` —— 1/4 个有
+- `ttN concat` —— 1/4 个有
+- `孤海注释` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 241 | 241 - 241 | 4 | 100% |
+| 高度 | 37 | 24 - 50 | 4 | 65% |
 
 ## 常见问题
 
@@ -78,4 +90,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 241，观测区间 241 - 241，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 37，观测区间 24 - 50，4 个样本

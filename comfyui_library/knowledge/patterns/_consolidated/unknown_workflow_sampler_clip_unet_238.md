@@ -1,52 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_238
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.909
-common_nodes: [AILab_QwenVL, CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, Ideogram4OptimizationsKJ, Ideogram4Scheduler, ImageScaleToTotalPixelsX, JsonExtractString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SplitSigmas, StringReplace, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.946
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2064169225039728641.json, 图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2074309690607095810.json]
+members: [图片生成/图生图/KLEIN 深度控制_2030614146588352514.json, 图片生成/图生图/Klein -通道主图2_2041417376184410114.json, 图片生成/图生图/Klein -通道主图3_2041804986694242306.json, 图片生成/图生图/Klein单图编辑_2014887219860869122.json, 图片生成/图生图/一致性换脸工作流_2043924693551423490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_238
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2064169225039728641.json、图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2074309690607095810.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KLEIN 深度控制_2030614146588352514.json、图片生成/图生图/Klein -通道主图2_2041417376184410114.json、图片生成/图生图/Klein -通道主图3_2041804986694242306.json、图片生成/图生图/Klein单图编辑_2014887219860869122.json、图片生成/图生图/一致性换脸工作流_2043924693551423490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGOverride`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `DualModelGuider`
-- `Ideogram4OptimizationsKJ`
-- `Ideogram4Scheduler`
-- `ImageScaleToTotalPixelsX`
-- `JsonExtractString`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewAny`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SplitSigmas`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 4/5 个有
+- `ConditioningZeroOut` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `DuckHideNode` —— 2/5 个有
+- `ImageScaleToTotalPixels` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `Anything Everywhere3` —— 1/5 个有
+- `HAIGC_LoadImagesFromZip` —— 1/5 个有
+- `MultiTextConcatenate` —— 1/5 个有
+- `RH_BatchImages` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
 
 ## 典型参数
 
@@ -58,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

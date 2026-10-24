@@ -2,74 +2,73 @@
 name: unknown_workflow_video_lora_sampler_567
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.786667
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSizeAndCount, ImageFromBatch, Int, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, Text Load Line From File, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
+level: strong
+coverage: 0.903
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, MultiplePathsInput, PathchSageAttentionKJ, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, wanBlockSwap]
 problems: []
-missing: [CR Model Input Switch, CR Text, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, Text Load Line From File, Text Multiline, easy batchAnything, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart]
-members: [图片生成/文生图/1953042137630896130.json, 视频生成/图生视频/1950632434528374786.json, 视频生成/图生视频/1989316745833967618.json]
+missing: []
+members: [图片生成/图生图/影视短剧导演之四_图生视频_首尾帧生视频_1989856749970706433.json, 视频生成/图生视频/Qwen  首尾帧  图生视频_2042258477560631298.json, 视频生成/图生视频/影视短剧导演之五_多帧生视频_1989856817062793218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_567
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1953042137630896130.json、视频生成/图生视频/1950632434528374786.json、视频生成/图生视频/1989316745833967618.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/影视短剧导演之四_图生视频_首尾帧生视频_1989856749970706433.json、视频生成/图生视频/Qwen  首尾帧  图生视频_2042258477560631298.json、视频生成/图生视频/影视短剧导演之五_多帧生视频_1989856817062793218.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetImageSizeAndCount`
-- `ImageFromBatch`
+- `ImageLoader`
+- `ImageResizeKJv2`
 - `Int`
 - `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM V2`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
 - `ModelSamplingSD3`
+- `MultiplePathsInput`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `Text Load Line From File`
-- `Text Multiline`
+- `Qwen3_VQA`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
 - `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageSmartSharpen+` —— 2/3 个有
+- `JjkText` —— 2/3 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `CLIPVisionEncode` —— 1/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `CR Model Input Switch` —— 1/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `WanFirstLastFrameToVideo` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
 - `CR Text` —— 1/3 个有
-- `ConditionalTextOutput` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Qwen3_VQA_Plus` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy convertAnything` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `ColorMatch` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `WanFirstMiddleLastFrameToVideo` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
+- `workflow>getPath` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
+| 采样步数 | fixed | - | 3 | 100% |
 | Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 2.5 | 3 | 53% |
-| 调度器 | lcm | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | normal | - | 3 | 67% |
 
 ## 常见问题
 
@@ -77,9 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
 - Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 2.5，3 个样本
-- 调度器 最常用 lcm，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Model Input Switch、CR Text、LayerUtility: PurgeVRAM V2、MathExpression|pysssss、Text Load Line From File
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 normal，3 个样本，一致性 67%

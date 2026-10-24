@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_sampler_353
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.901
-common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.901333
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1945026256120504322.json, 视频生成/图生视频/1947494029451743234.json, 视频生成/图生视频/1945320881478410242.json, 视频生成/图生视频/1949619051676475394.json, 视频生成/图生视频/1947317723317555201.json, 视频生成/图生视频/Radial 提速20% 万相图生视频工作流_1946283928597458945.json]
+members: [视频生成/图生视频/RadialSage+Lightx2V-20%提速图生视频工作流_1948953733947371521.json, 视频生成/图生视频/Wan图生视频radial attention加速优化版_1949101004231979010.json, 视频生成/图生视频/ani全能视频S动画图生视频工作流_1946509129076891649.json, 视频生成/图生视频/万相图生视频工作流Radial 提速20%_1947243498794815490.json, 视频生成/文生视频/【加速版】 万相图生视频工作流_1947564947329982466.json, 视频生成/文生视频/🌟【大炮视频】Wan图生视频radial attention加速 急速优化版🌟_1948615375945641985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_353
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1945026256120504322.json、视频生成/图生视频/1947494029451743234.json、视频生成/图生视频/1945320881478410242.json、视频生成/图生视频/1949619051676475394.json、视频生成/图生视频/1947317723317555201.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RadialSage+Lightx2V-20%提速图生视频工作流_1948953733947371521.json、视频生成/图生视频/Wan图生视频radial attention加速优化版_1949101004231979010.json、视频生成/图生视频/ani全能视频S动画图生视频工作流_1946509129076891649.json、视频生成/图生视频/万相图生视频工作流Radial 提速20%_1947243498794815490.json、视频生成/文生视频/【加速版】 万相图生视频工作流_1947564947329982466.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
@@ -23,7 +23,6 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
@@ -37,20 +36,19 @@ source: knowledge_consolidation
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 3/6 个有
-- `WanVideoSetRadialAttention` —— 2/6 个有
-- `CR Upscale Image` —— 1/6 个有
-- `PrimitiveString` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `ShellAgentPluginInputImage` —— 1/6 个有
-- `ShellAgentPluginInputText` —— 1/6 个有
-- `ShellAgentPluginSaveVideoVHS` —— 1/6 个有
-- `WanVideoEasyCache` —— 1/6 个有
+- `WanVideoSetRadialAttention` —— 5/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `TextInput_` —— 3/6 个有
+- `WanVideoTorchCompileSettings` —— 3/6 个有
+- `ImageResizeKJ` —— 2/6 个有
+- `Seed (rgthree)` —— 2/6 个有
+- `easy int` —— 2/6 个有
+- `CR Text` —— 1/6 个有
+- `ttN int` —— 1/6 个有
 
 ## 典型参数
 

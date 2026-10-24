@@ -3,83 +3,67 @@ name: unknown_workflow_video_lora_sampler_763
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4815
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, FL_IntToFloat, GetImageRangeFromBatch, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy imageSize, easy int]
+coverage: 0.7745
+common_nodes: [BasicGuider, BasicScheduler, Bjornulf_ShowFloat, CLIPLoader, ComfyMathExpression, CreateVideo, JjkText, JoinStrings, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2055962684570521602.json, 视频生成/图生视频/2055942419597799425.json]
+members: [视频生成/图生视频/Minimax H3 深度引导动作迁移 单人版_2091353483743154177.json, 视频生成/图生视频/Minimax_H3_人物替换单人版_自动反推_2101085246136610818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_763
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2055962684570521602.json、视频生成/图生视频/2055942419597799425.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 深度引导动作迁移 单人版_2091353483743154177.json、视频生成/图生视频/Minimax_H3_人物替换单人版_自动反推_2101085246136610818.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `FL_IntToFloat`
-- `GetImageRangeFromBatch`
-- `GetNode`
+- `BasicGuider`
+- `BasicScheduler`
+- `Bjornulf_ShowFloat`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `JjkText`
+- `JoinStrings`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `PreviewImage`
-- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy imageSize`
-- `easy int`
+- `VHS_VideoInfoLoaded`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DapaoGeminiInstructionZhenzhenNode` —— 1/2 个有
-- `FlashVSRNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `LTXVAddGuideMulti` —— 1/2 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/2 个有
-- `PromptRelayEncodeTimeline` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `AIO_Preprocessor` —— 1/2 个有
+- `BiRefNet_Hugo` —— 1/2 个有
+- `EasyCache` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
+- `VideoFrameSelector` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 349 | - | 2 | 97% |
-| 高度 | 24.5 | - | 2 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,6 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 349，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 24.5，样本不足，未给区间，2 个样本，取值集中（一致性 98%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

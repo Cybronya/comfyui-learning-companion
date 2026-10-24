@@ -1,69 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_25
 type: Unknown Workflow
-frequency: 27
+frequency: 28
 level: moderate
-coverage: 0.867222
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.611107
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json, 视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json, 视频生成/图生视频/(8步极速)10Eros Test4双时钟图生视频_2086887876364685314.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087127116713390081.json, 视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087159355169918977.json, 视频生成/图生视频/(Dasiwa V1+SLA加速)Minimax参考生视频V1_2091348806297284610.json, 视频生成/图生视频/(Dasiwa V1+老版加速)Minimax参考生视频V1_2091360487035465729.json, 视频生成/图生视频/(Dasiwa+10Eros新版混合加速)MiniMax H3参考生视频_2095731331148894209.json, 视频生成/图生视频/(Dasiwa+Lightx2v 1.0 768P新)MiniMax H3参考生视频V1_2093206224304173058.json, 视频生成/图生视频/(Dasiwa-老加速)Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092167836453138433.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094319326210912258.json, 视频生成/图生视频/(Dasiwa原生8步turbo)MiniMax H3参考生视频V1_2094336188525146114.json, 视频生成/图生视频/(Dasiwa新版turbo)Minimax H3+双采参考生视频_2094320071555502081.json, 视频生成/图生视频/(Dasiwa新版turbo混合模式)Minimax H3+双采参考生视频_2094328299777515522.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速)MiniMax H3参考生视频_2095810700424859650.json, 视频生成/图生视频/(Lightx2v v1.2新版混合加速+Combat)MiniMax H3参考生视频_2095823591769202689.json, 视频生成/图生视频/(Lightx2v 新版768P 1.0 ref2va加速)MiniMax H3参考生视频_2095730955548971009.json, 视频生成/图生视频/(Ref-Face Swap换脸)MiniMax H3双采参考生视频_2100230235559120897.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2103008837287636994.json, 视频生成/图生视频/(Ref-Head Swap换脸)MiniMax H3双采参考生视频_2104212842185580546.json, 视频生成/图生视频/(Vfx-Edit)MiniMax H3双采参考生视频_2103012226415284225.json, 视频生成/图生视频/(WallPaper)MiniMax H3双采参考生视频_2103039132627980290.json, 视频生成/图生视频/(极速高清新版-文武双修均衡版)MiniMax H3双采参考生视频V3_2097927936006508545.json, 视频生成/图生视频/(风格参考)MiniMax H3双采参考生视频_2103022364463288322.json, 视频生成/图生视频/MiniMax_H3双采参考生视频V3_2098961081237594114.json, 视频生成/图生视频/MiniMax_H3双采参考生视频_2098902604083449857.json]
+members: [视频生成/图生视频/SteadDancer动作迁移_2017466618615439361.json, 视频生成/图生视频/SteadDancer动作迁移（支持动漫人物）长视频一致性加强版_2011405479620124674.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移_1995783729840787458.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2039879176072732673.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2046114909657763841.json, 视频生成/图生视频/SteadDancer视频姿势参考（KJ）_1996528847946399745.json, 视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2077823494326415362.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2078124326972383233.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2087040327587815426.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2021045146128748546.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2021050493052657665.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2037367887756795905.json, 视频生成/图生视频/SteadyDancer 动作迁移_2012744356666544130.json, 视频生成/图生视频/SteadyDancer_动作迁移-顶级人类版_1999132133182631937.json, 视频生成/图生视频/SteadyDancer动作迁移_2037135094128844802.json, 视频生成/图生视频/SteadyDancer动作迁移_2037136001059000321.json, 视频生成/图生视频/SteadyDancer动作迁移_2037136442165563394.json, 视频生成/图生视频/SteadyDancer动作迁移_2043176583862689794.json, 视频生成/图生视频/SteadyDancer动作迁移_2073284965781032961.json, 视频生成/图生视频/SteadyDancer动作迁移_2074671640511868929.json, 视频生成/图生视频/SteadyDancer动作迁移_2080329957112377345.json, 视频生成/图生视频/SteadyDancer动作迁移_2080680922562781186.json, 视频生成/图生视频/SteadyDancer动作迁移_2084530681153146881.json, 视频生成/图生视频/口播 跳舞 带货皆可用 SteadyDancer动作迁移-_1999419556877791233.json, 视频生成/图生视频/视频二创-单人动作模仿_2019289437926068225.json, 视频生成/图生视频/跳舞_2020035033687396353.json, 视频生成/图生视频/（KJ版）SteadDancer视频姿势参考（新增骨骼绑定）_1995843794539098113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（数字人/数字人/MiniMax H3文生视频批量T8加速版_2085264539582550017.json、视频生成/图生视频/(8步极速)10Eros Test3双时钟图生视频_2086749218852659201.json、视频生成/图生视频/(8步极速)10Eros Test4双时钟参考生视频_2086887842768314370.json、视频生成/图生视频/(8步极速)10Eros Test4双时钟图生视频_2086887876364685314.json、视频生成/图生视频/(8步极速)minimax H3开源版 双时钟加速优化图生视频_2087127116713390081.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/SteadDancer动作迁移_2017466618615439361.json、视频生成/图生视频/SteadDancer动作迁移（支持动漫人物）长视频一致性加强版_2011405479620124674.json、视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移_1995783729840787458.json、视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2039879176072732673.json、视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2046114909657763841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
+- **样本数**：28
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 28 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 26/27 个有
-- `LoadImage` —— 26/27 个有
-- `ModelAttentionBackend` —— 21/27 个有
-- `SolAttnMiniMax` —— 21/27 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 19/27 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 19/27 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 19/27 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 19/27 个有
-- `LoraLoaderModelOnly` —— 13/27 个有
-- `ConcatTextOfUtils` —— 9/27 个有
-- `Float` —— 9/27 个有
-- `easy anythingIndexSwitch` —— 9/27 个有
-- `easy showAnything` —— 7/27 个有
-- `MiniMaxH3ActivationChunkT8Advanced` —— 6/27 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 6/27 个有
-- `RHLLMChatNode` —— 5/27 个有
-- `VHS_LoadVideo` —— 5/27 个有
-- `VHS_VideoInfo` —— 5/27 个有
-- `MiniMaxH3ChunkedTwoPassPlanT8Advanced` —— 3/27 个有
-- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced` —— 3/27 个有
-- `CreateVideo` —— 2/27 个有
-- `BatchImagesNode` —— 1/27 个有
-- `CR Text` —— 1/27 个有
-- `PromptBatchQueue` —— 1/27 个有
+- `GetNode` —— 27/28 个有
+- `SetNode` —— 27/28 个有
+- `WanVideoLoraSelect` —— 27/28 个有
+- `WanVideoScheduler` —— 27/28 个有
+- `GetImageSizeAndCount` —— 26/28 个有
+- `WanVideoSetBlockSwap` —— 26/28 个有
+- `ImageConcatMulti` —— 22/28 个有
+- `PoseDetectionOneToAllAnimation` —— 22/28 个有
+- `PreviewImage` —— 20/28 个有
+- `WanVideoTorchCompileSettings` —— 20/28 个有
+- `Int` —— 17/28 个有
+- `CR Prompt Text` —— 16/28 个有
+- `SimpleMath+` —— 15/28 个有
+- `DrawViTPose` —— 12/28 个有
+- `PoseAndFaceDetection` —— 12/28 个有
+- `PrimitiveFloat` —— 10/28 个有
+- `easy convertAnything` —— 9/28 个有
+- `INTConstant` —— 4/28 个有
+- `PrimitiveInt` —— 3/28 个有
+- `CR Text` —— 2/28 个有
+- `Fast Groups Muter (rgthree)` —— 2/28 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/28 个有
+- `Anything Everywhere3` —— 1/28 个有
+- `ImageConcanate` —— 1/28 个有
+- `ImpactInt` —— 1/28 个有
+- `Label (rgthree)` —— 1/28 个有
+- `MathExpression|pysssss` —— 1/28 个有
+- `ToFloat` —— 1/28 个有
+- `WanVideoLoraSelectMulti` —— 1/28 个有
 
 ## 典型参数
 

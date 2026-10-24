@@ -1,0 +1,179 @@
+---
+key: 图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089.json
+name: Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089.json
+hash: af80ed0c941eeba3
+coverage: 0.712121
+learned_at: 2026-10-23 11:21:25
+nodes: [CLIPLoader, VAELoader, UNETLoader, RandomNoise, CFGGuider, KSamplerSelect, Flux2Scheduler, EmptyFlux2LatentImage, SamplerCustomAdvanced, CLIPTextEncode, ReferenceLatent, ConditioningZeroOut, ReferenceLatent, Image Compare (mtb), TextConcatenator, LoadImage, LoadImage, LoadImage, LoadImage, PreviewImage, LoadImage, LoadImage, VAEEncode, VAEDecode, GetImageSize, ImageSharpen, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ColorMatch, SaveImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ImageScaleToTotalPixels, SetNode, ImageScaleToTotalPixels, ImageScaleToTotalPixels, SetNode, SetNode, ImageScaleToTotalPixels, SetNode, ImageScaleToTotalPixels, SetNode, ImageScaleToTotalPixels, SetNode, SaveImage, SDPoseOODProcessor, SDPoseOODLoader, GetNode, YOLOModelLoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, 孤海注释, 忽略多组孤海, LoadImage, GetNode, SetNode, SetNode, 孤海注释, PrimitiveStringMultiline, ImageScaleToTotalPixels, SeedVR2BlockSwap, SaveImageAdvanced, SeedVR2, SeedVR2ExtraArgs, LoadImage, LoadImage, GH_ImageVideoComparer, PreviewImage, LoadImage, SetNode, GetNode, TextGenerate, ImageConcanate, DrawMaskOnImage, SimpleMath+, SetLatentNoiseMask, InpaintStitchImproved, PrimitiveStringMultiline, CLIPLoader, JsonExtractString, CR Text Concatenate, SaveImage, LoadImage, PreviewAny, INTConstant, PreviewImage, PreviewImage, UNETLoader, CLIPLoader, VAELoader, 忽略多组孤海, ImageScaleToTotalPixels, InpaintCropImproved, VAEEncode, 孤海注释, LoadImage, 孤海注释, LayerUtility: ImageScaleByAspectRatio V2, VAEEncode, 孤海注释, Any Switch (rgthree), EmptyLatentImage, ResolutionSelector, TextEncodeQwenImage21, VAEDecode, Seed (rgthree), 孤海注释, ComfySwitchNode, LoraLoaderModelOnly, Fast Groups Bypasser (rgthree), LoadImage, LoraLoaderModelOnly, Note, PrimitiveStringMultiline, KSampler, ComfySwitchNode]
+patterns: [text_to_image, image_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 790044794089738, "steps": 30, "width": 1024}
+---
+
+# 图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（132 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `RandomNoise`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `Flux2Scheduler`
+- `EmptyFlux2LatentImage`
+- `SamplerCustomAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `ReferenceLatent`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `Image Compare (mtb)`
+- `TextConcatenator`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `PreviewImage`
+- `LoadImage`
+- `LoadImage`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `GetImageSize`
+- `ImageSharpen`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ColorMatch`
+- `SaveImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `SetNode`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `ImageScaleToTotalPixels`
+- `SetNode`
+- `SaveImage`
+- `SDPoseOODProcessor`
+- `SDPoseOODLoader`
+- `GetNode`
+- `YOLOModelLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `孤海注释`
+- `忽略多组孤海`
+- `LoadImage`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `孤海注释`
+- `PrimitiveStringMultiline`
+- `ImageScaleToTotalPixels`
+- `SeedVR2BlockSwap`
+- `SaveImageAdvanced`
+- `SeedVR2`
+- `SeedVR2ExtraArgs`
+- `LoadImage`
+- `LoadImage`
+- `GH_ImageVideoComparer`
+- `PreviewImage`
+- `LoadImage`
+- `SetNode`
+- `GetNode`
+- `TextGenerate`
+- `ImageConcanate`
+- `DrawMaskOnImage`
+- `SimpleMath+`
+- `SetLatentNoiseMask`
+- `InpaintStitchImproved`
+- `PrimitiveStringMultiline`
+- `CLIPLoader`
+- `JsonExtractString`
+- `CR Text Concatenate`
+- `SaveImage`
+- `LoadImage`
+- `PreviewAny`
+- `INTConstant`
+- `PreviewImage`
+- `PreviewImage`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `忽略多组孤海`
+- `ImageScaleToTotalPixels`
+- `InpaintCropImproved`
+- `VAEEncode` ★核心
+- `孤海注释`
+- `LoadImage`
+- `孤海注释`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VAEEncode` ★核心
+- `孤海注释`
+- `Any Switch (rgthree)`
+- `EmptyLatentImage` ★核心
+- `ResolutionSelector`
+- `TextEncodeQwenImage21`
+- `VAEDecode` ★核心
+- `Seed (rgthree)`
+- `孤海注释`
+- `ComfySwitchNode`
+- `LoraLoaderModelOnly` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `PrimitiveStringMultiline`
+- `KSampler` ★核心
+- `ComfySwitchNode`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+- `seed` = `790044794089738`
+- `steps` = `30`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **71%**（94/132）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`SamplerCustomAdvanced`、`CLIPTextEncode`、`ReferenceLatent`、`ConditioningZeroOut`、`Image Compare (mtb)`、`TextConcatenator`、`LoadImage`、`VAEEncode`、`VAEDecode`、`GetImageSize`、`ImageSharpen`、`ColorMatch`、`SaveImage`、`ImageScaleToTotalPixels`、`SDPoseOODProcessor`、`SDPoseOODLoader`、`YOLOModelLoader`、`忽略多组孤海`、`SeedVR2BlockSwap`、`SaveImageAdvanced`、`SeedVR2`、`SeedVR2ExtraArgs`、`GH_ImageVideoComparer`、`TextGenerate`、`ImageConcanate`、`DrawMaskOnImage`、`SimpleMath+`、`SetLatentNoiseMask`、`InpaintStitchImproved`、`JsonExtractString`、`CR Text Concatenate`、`INTConstant`、`InpaintCropImproved`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLatentImage`、`ResolutionSelector`、`TextEncodeQwenImage21`、`Seed (rgthree)`、`LoraLoaderModelOnly`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader

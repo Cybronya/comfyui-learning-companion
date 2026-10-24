@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_778
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7555
-common_nodes: [Fast Groups Muter (rgthree), LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.7315
+common_nodes: [HeartMuLa_Generate, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/Nano 全能图片V1 Pro 电商设计万物迁移_一致性姿势 工作流V1.0_1995903616886194178.json, 图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json]
+members: [视频生成/文生视频/最新开源版SUNO-HeartMuLa全自动优化版_2013796767292203010.json, 音频生成/音频生成/HeartMuLa 自动化补全歌词版_2013851687345197058.json, 音频生成/音频生成/HeartMuLa 自动生成中英文中英文多语言歌曲！_2013867101840216066.json, 音频生成/音频生成/HeartMuLa：一句话生成一首歌（保存歌词）_2016581383551979522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_778
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Nano 全能图片V1 Pro 电商设计万物迁移_一致性姿势 工作流V1.0_1995903616886194178.json、图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/最新开源版SUNO-HeartMuLa全自动优化版_2013796767292203010.json、音频生成/音频生成/HeartMuLa 自动化补全歌词版_2013851687345197058.json、音频生成/音频生成/HeartMuLa 自动生成中英文中英文多语言歌曲！_2013867101840216066.json、音频生成/音频生成/HeartMuLa：一句话生成一首歌（保存歌词）_2016581383551979522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
+- `Label (rgthree)` —— 3/4 个有
+- `ShowText` —— 2/4 个有
+- `text_mul_Split` —— 2/4 个有
+- `Text` —— 1/4 个有
+- `TextBox` —— 1/4 个有
+- `easy saveText` —— 1/4 个有
 
 ## 典型参数
 
@@ -43,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

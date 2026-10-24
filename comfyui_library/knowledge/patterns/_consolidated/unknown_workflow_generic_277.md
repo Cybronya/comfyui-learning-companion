@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_277
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.9082
-common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage, Text]
+coverage: 0.797
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V1progenerate_1995684120686628865.json, 图片生成/文生图/全能图片模型_1999049685178384385.json, 图片生成/文生图/全能图片编辑_2020709163151663106.json, 图片生成/文生图/无限猴子-AI漫剧分镜工作流_2009260337815625729.json, 视频生成/图生视频/2029979002751950850.json]
+members: [图片生成/图生图/【  全能图片V1 】 创作，实物变充气球抱枕_1963089010866499586.json, 图片生成/图生图/全能图片V1 图片编辑_1963286551969107969.json, 图片生成/图生图/全能图片V1单图编辑一致性编辑_1962338202520633345.json, 图片生成/图生图/全能图片V1双图一致性图像编_1962311155819679745.json, 图片生成/图生图/全能图片V1多图融合_1962420011333718018.json, 图片生成/图生图/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1961127751719784449.json, 图片生成/图生图/🍌香蕉 _Banan最强一致性编辑工作流 V1.0_1960400731750674434.json, 图片生成/文生图/香蕉  全能图片V1最强一致性单图编辑【含多图编辑】_1962390591537549313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_277
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片V1progenerate_1995684120686628865.json、图片生成/文生图/全能图片模型_1999049685178384385.json、图片生成/文生图/全能图片编辑_2020709163151663106.json、图片生成/文生图/无限猴子-AI漫剧分镜工作流_2009260337815625729.json、视频生成/图生视频/2029979002751950850.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【  全能图片V1 】 创作，实物变充气球抱枕_1963089010866499586.json、图片生成/图生图/全能图片V1 图片编辑_1963286551969107969.json、图片生成/图生图/全能图片V1单图编辑一致性编辑_1962338202520633345.json、图片生成/图生图/全能图片V1双图一致性图像编_1962311155819679745.json、图片生成/图生图/全能图片V1多图融合_1962420011333718018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `RH_Nano_Banana2_Image2Image`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `ImageScaleDownToSize` —— 6/8 个有
+- `easy imageConcat` —— 5/8 个有
+- `PIP_图像联结` —— 3/8 个有
+- `Text` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
 
 ## 典型参数
 

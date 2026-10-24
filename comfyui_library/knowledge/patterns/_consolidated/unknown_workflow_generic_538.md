@@ -1,30 +1,40 @@
 ---
 name: unknown_workflow_generic_538
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage]
+coverage: 0.8534
+common_nodes: [AILab_QwenVL, LoadImage, RH_RhartImageG2TextToImage, SaveImage, ShowAnything|Mie, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-image-2.5文生图高品质版API专用_2098380524124467201.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2097863739885318145.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098300617105166337.json]
+members: [图片生成/图生图/千禧记忆2.0_2060285625940668418.json, 图片生成/图生图/千禧记忆3.0_2060291603901804545.json, 图片生成/图生图/千禧记忆4.0_2060336919338373122.json, 图片生成/图生图/千禧记忆_2057448789543309313.json, 图片生成/图生图/千禧记忆_2060185952689156097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_538
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G-image-2.5文生图高品质版API专用_2098380524124467201.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2097863739885318145.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098300617105166337.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/千禧记忆2.0_2060285625940668418.json、图片生成/图生图/千禧记忆3.0_2060291603901804545.json、图片生成/图生图/千禧记忆4.0_2060336919338373122.json、图片生成/图生图/千禧记忆_2057448789543309313.json、图片生成/图生图/千禧记忆_2060185952689156097.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
+全部 5 个 workflow 都包含：
+- `AILab_QwenVL`
+- `LoadImage`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
+- `ShowAnything|Mie`
+- `easy saveText`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG2OfficialTextToImage` —— 3/5 个有
+- `io-text-save` —— 2/5 个有
+- `preview_text` —— 2/5 个有
 
 ## 典型参数
 

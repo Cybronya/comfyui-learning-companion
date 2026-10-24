@@ -1,41 +1,53 @@
 ---
 name: unknown_workflow_generic_933
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7915
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, TDQwen3TTSCustomVoice, TDQwen3TTSModelLoader, TDQwen3TTSVoiceClone, TDQwen3TTSVoiceDesign]
+frequency: 3
+level: moderate
+coverage: 0.772
+common_nodes: [ConstrainImage|pysssss, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImageScaleBy, LoadImage, PreviewImage, RHHiddenNodes, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy forLoopEnd, easy forLoopStart, easy joinImageBatch]
 problems: []
 missing: []
-members: [音频生成/音频生成/CG迷-Qwen3 TTS音色克隆工作流_2016079119808729090.json, 音频生成/音频生成/Qwen3-TTS_2015449559899574274.json]
+members: [图片生成/图生图/分镜切割机-2k_2008082317960552450.json, 图片生成/图生图/新年表情包一键生成器_2065144681117343746.json, 图片生成/图生图/表情包变身相机-新春贺岁_2010150238945808385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_933
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/CG迷-Qwen3 TTS音色克隆工作流_2016079119808729090.json、音频生成/音频生成/Qwen3-TTS_2015449559899574274.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/分镜切割机-2k_2008082317960552450.json、图片生成/图生图/新年表情包一键生成器_2065144681117343746.json、图片生成/图生图/表情包变身相机-新春贺岁_2010150238945808385.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `SaveAudio`
-- `TDQwen3TTSCustomVoice`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceClone`
-- `TDQwen3TTSVoiceDesign`
+全部 3 个 workflow 都包含：
+- `ConstrainImage|pysssss`
+- `Get Image Size`
+- `Image Comparer (rgthree)`
+- `ImageFromBatch`
+- `ImageResize+`
+- `ImageScaleBy`
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy joinImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 1/2 个有
-- `AudioSpeedShift` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `easy anythingIndexSwitch` —— 2/3 个有
+- `CR Image Grid Panel` —— 1/3 个有
+- `ImageListToBatch+` —— 1/3 个有
+- `TT_img_enc` —— 1/3 个有
 
 ## 典型参数
 
@@ -47,4 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

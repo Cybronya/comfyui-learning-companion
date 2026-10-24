@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_368
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.96875
-common_nodes: [AFL:AudioMixStems, AudioSeparation, RunningHubRVCVoiceConversion, RunningHubRVCZipModelLoader, SaveAudio, VHS_LoadAudioUpload]
+coverage: 1
+common_nodes: [LoadAudio, OmniVoiceLongformTTS, OmniVoiceWhisperLoader, PreviewAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/RVC歌曲音色替换_2101876834106429441.json, 音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json, 音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json, 音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json]
+members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice长文本语音克隆_2041429765676077058.json, 音频生成/音频生成/OmniVoice TTS语音克隆长音频生成_2064778208435859457.json, 音频生成/音频生成/OmniVoice-tts 语音克隆_2041805989795602434.json, 音频生成/音频生成/OmniVoice-tts长文本语音克隆 小米开源非常强大 声音克隆 音色迁移_2041495026240327681.json, 音频生成/音频生成/OmniVoice-长文本语音克隆-支持600种语言-支持方言-速度快_2042259978056114177.json, 音频生成/音频生成/OmniVoice长文本语音克隆_2044609363121283074.json, 音频生成/音频生成/OmniVoice长文本语音克隆生成器：600种语言-支持方言_2041733700789997569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_368
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/RVC歌曲音色替换_2101876834106429441.json、音频生成/音频生成/RVC歌曲音色替换_2105114380919721986.json、音频生成/音频生成/RVC歌曲音色替换_2105491009491783682.json、音频生成/音频生成/心然·寻源-RVC歌曲音色替换_2099855237304639490.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice长文本语音克隆_2041429765676077058.json、音频生成/音频生成/OmniVoice TTS语音克隆长音频生成_2064778208435859457.json、音频生成/音频生成/OmniVoice-tts 语音克隆_2041805989795602434.json、音频生成/音频生成/OmniVoice-tts长文本语音克隆 小米开源非常强大 声音克隆 音色迁移_2041495026240327681.json、音频生成/音频生成/OmniVoice-长文本语音克隆-支持600种语言-支持方言-速度快_2042259978056114177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AFL:AudioMixStems`
-- `AudioSeparation`
-- `RunningHubRVCVoiceConversion`
-- `RunningHubRVCZipModelLoader`
+全部 7 个 workflow 都包含：
+- `LoadAudio`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceWhisperLoader`
+- `PreviewAudio`
 - `SaveAudio`
-- `VHS_LoadAudioUpload`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `CR Prompt Text` —— 6/7 个有
+- `AudioSeparation` —— 2/7 个有
+- `AudioCrop` —— 1/7 个有
+- `CR Text` —— 1/7 个有
 
 ## 典型参数
 

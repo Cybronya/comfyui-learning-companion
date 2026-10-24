@@ -2,109 +2,74 @@
 name: unknown_workflow_video_upscale_latent_upscale_107
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.389667
-common_nodes: [Any Switch (rgthree), AudioInfoNode, AudioMerge, CFGGuider, CLIPTextEncode, CR Text Concatenate, CheckpointLoaderSimple, ComfyMathExpression, ComfySwitchNode, ConvertAny2Int, Dapao_LlamaChat, Display Any (rgthree), DualCLIPLoader, EmptyLTXVLatentVideo, ExtractLinesByIndex, Fast Groups Bypasser (rgthree), Float, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleBy, Int, IntToString, IntegerComparison, JjkText, JoinStringMulti, JoinStrings, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAny, PreviewAudio, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ProcessString, PromptRelayAdvancedOptions, PromptRelayEncode, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SaveAudioMP3, SeedVCRun, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SomethingToString, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy mathFloat, easy showAnything]
+level: moderate
+coverage: 0.767333
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2061644573146968066.json, 视频生成/图生视频/2066854552296579074.json, 视频生成/图生视频/2069621183007510529.json]
+members: [视频生成/图生视频/LTX2+对口型_2021873842758619137.json, 视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json, 视频生成/图生视频/LTX2.3+参考图片+参考音频（对口型+多人对话）_2034521088973082625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_107
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2061644573146968066.json、视频生成/图生视频/2066854552296579074.json、视频生成/图生视频/2069621183007510529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2+对口型_2021873842758619137.json、视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json、视频生成/图生视频/LTX2.3+参考图片+参考音频（对口型+多人对话）_2034521088973082625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：39%
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AudioInfoNode`
-- `AudioMerge`
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `ConvertAny2Int`
-- `Dapao_LlamaChat`
-- `Display Any (rgthree)`
-- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `ExtractLinesByIndex`
-- `Fast Groups Bypasser (rgthree)`
-- `Float`
-- `GetImageSize`
+- `GetImageSizeAndCount`
 - `GetNode`
 - `ImageResizeKJv2`
 - `ImageScaleBy`
-- `Int`
-- `IntToString`
-- `IntegerComparison`
-- `JjkText`
-- `JoinStringMulti`
-- `JoinStrings`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
 - `LTXAVTextEncoderLoader`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
 - `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVScheduler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PreviewAudio`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `ProcessString`
-- `PromptRelayAdvancedOptions`
-- `PromptRelayEncode`
-- `PurgeVRAM_UTK`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveAudioMP3`
-- `SeedVCRun`
 - `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleMath+`
 - `SolidMask`
-- `SomethingToString`
-- `VAEDecode`
+- `TrimAudioDuration`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy mathFloat`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `INTConstant` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 3 | 100% |
-| 高度 | 24 | 24 - 24 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -112,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

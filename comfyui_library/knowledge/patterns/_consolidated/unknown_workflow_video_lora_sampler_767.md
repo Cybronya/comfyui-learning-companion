@@ -3,88 +3,67 @@ name: unknown_workflow_video_lora_sampler_767
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5975
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ColorTransfer, ComfyNumberConvert, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVConcatAVLatent, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideo, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAny, PrimitiveInt, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VRAM_Debug, Video_Fade]
+coverage: 0.85
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageResizeKJv2, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2070502148785393666.json, 视频生成/图生视频/2072296730909044737.json]
+members: [视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json, 视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_767
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2070502148785393666.json、视频生成/图生视频/2072296730909044737.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json、视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ColorTransfer`
-- `ComfyNumberConvert`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetNode`
-- `ImageFromBatch`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVConcatAVLatent`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideo`
-- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewAny`
-- `PrimitiveInt`
-- `RTXVideoSuperResolution`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PT_H3ConcatAVLatent`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `SimpleCalculatorKJ`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `Video_Fade`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `FrameInterpolate` —— 1/2 个有
-- `FrameInterpolationModelLoader` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `LTXVAudioVAEDecode` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `TextGenerate` —— 1/2 个有
-- `easy seed` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
-- `solarL_SaveImagesToZip` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `ImpactConditionalBranch` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `MathExpression_UTK` —— 1/2 个有
+- `ModelAttentionBackend` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `ResizeShortestToNode` —— 1/2 个有
+- `VAEEncodeAudio` —— 1/2 个有
+- `VAEEncodeTiled` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
+- `获取视频信息` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 137 | - | 2 | 59% |
-| 高度 | 50 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -92,6 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 137，样本不足，未给区间，2 个样本
-- 高度 中位数 50，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

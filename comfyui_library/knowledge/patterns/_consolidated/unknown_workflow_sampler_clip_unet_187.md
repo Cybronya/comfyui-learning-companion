@@ -1,68 +1,82 @@
 ---
 name: unknown_workflow_sampler_clip_unet_187
 type: Unknown Workflow
-frequency: 3
-level: weak
-coverage: 0.962
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: strong
+coverage: 0.904857
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SamplerEulerAncestral, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Boogu文生图工作流（Turbo+Base可选）_2069668261842743298.json, 图片生成/文生图/Qwen-千问多字体直出-字体设计 中文字体设计_1993312885105426433.json, 图片生成/文生图/Z-Image-Turbo文生图（OpenClaw远程控制版本）_2020379259021303809.json]
+members: [图片生成/文生图/2029507207917735938.json, 图片生成/文生图/2029507218332196866.json, 图片生成/文生图/2030979831659241473.json, 图片生成/文生图/2512两步出图_2017532037657272322.json, 图片生成/文生图/Base+Turbo分段渲染_2017271994244403202.json, 图片生成/文生图/Z-Image Base+ControlNet+Turbo高低噪_2022635998764601346.json, 图片生成/文生图/Z-Image-i2L (Image to LoRA)快速lora训练+联合CN测试_2023370355200495617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_187
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Boogu文生图工作流（Turbo+Base可选）_2069668261842743298.json、图片生成/文生图/Qwen-千问多字体直出-字体设计 中文字体设计_1993312885105426433.json、图片生成/文生图/Z-Image-Turbo文生图（OpenClaw远程控制版本）_2020379259021303809.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/2029507207917735938.json、图片生成/文生图/2029507218332196866.json、图片生成/文生图/2030979831659241473.json、图片生成/文生图/2512两步出图_2017532037657272322.json、图片生成/文生图/Base+Turbo分段渲染_2017271994244403202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `KSampler`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SamplerEulerAncestral`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `AddLabel` —— 1/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `Lora Loader Stack (rgthree)` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `忽略多组孤海` —— 1/3 个有
+- `DetailDaemonSamplerNode` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `easy int` —— 6/7 个有
+- `AIO_Preprocessor` —— 5/7 个有
+- `EmptyLatentImage` —— 5/7 个有
+- `LoadImage` —— 5/7 个有
+- `ModelPatchLoader` —— 5/7 个有
+- `SplitSigmas` —— 5/7 个有
+- `VAEEncode` —— 5/7 个有
+- `ZImageFunControlnet` —— 5/7 个有
+- `image_scale_pixel_v2` —— 5/7 个有
+- `ImageScaleBy` —— 4/7 个有
+- `ImageLoader` —— 2/7 个有
+- `ImageResizeKJv2` —— 2/7 个有
+- `ClipLoaderGGUF` —— 1/7 个有
+- `ImageBatchMulti` —— 1/7 个有
+- `LoraLoader` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `RunningHub_ZImageI2L_Loader` —— 1/7 个有
+- `RunningHub_ZImageI2L_LoraGenerator` —— 1/7 个有
+- `RunningHub_ZImageI2L_Saver` —— 1/7 个有
+- `Seed Everywhere` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 20 | 3 | 19% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 3 | 43% |
-| 采样算法 | lcm | - | 3 | 33% |
-| 调度器 | sgm_uniform | - | 3 | 33% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 512 | 512 - 512 | 5 | 100% |
+| 高度 | 472 | 472 - 472 | 5 | 100% |
+| LoRA 模型强度 | 1.1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 20，3 个样本，取值分散，一致性仅 19%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，3 个样本，取值分散，一致性仅 43%
-- 采样算法 最常用 lcm，3 个样本，一致性 33%
-- 调度器 最常用 sgm_uniform，3 个样本，一致性 33%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 472，观测区间 472 - 472，5 个样本，取值集中（一致性 100%）

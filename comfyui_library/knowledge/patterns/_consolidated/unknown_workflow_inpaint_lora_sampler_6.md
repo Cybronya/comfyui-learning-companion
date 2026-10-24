@@ -1,62 +1,67 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_6
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.3915
-common_nodes: [BiRefNet_Hugo, CLIPLoader, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FastCanvas, FastCanvasTool, GetImageSize+, GetNode, ImageCaptionNode, ImagePadForOutpaint, InpaintModelConditioning, KSampler (Efficient), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, PreviewImage, QwenMultiangleCameraNode, SaveImage, SetNode, UNETLoader, VAEEncode, VAELoader]
+frequency: 10
+level: strong
+coverage: 0.9477
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageCrop, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Fill Holes, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
 problems: []
 missing: []
-members: [图片生成/文生图/flux-2-klein-9b-fp8  全套 全家福 文生 编辑 溶图 扩图 洗图 修图 多角度_2020325725206745089.json, 图片生成/文生图/klein全套+全家福+文生+编辑+溶图+扩图+洗图+修图+多角度+_2084459615470841857.json]
+members: [图片生成/图生图/Flux Fill+Redux 万物迁移（电商场景图制作）_2032340529047937025.json, 图片生成/图生图/产品图自由搭配AI模特_2002714024217309186.json, 图片生成/图生图/产品换背景 电商必备场景图制作_2008829886869282817.json, 图片生成/图生图/电商场景图制作（产品换背景）_1985610476090535937.json, 图片生成/图生图/电商场景图制作（产品换背景）_1990675120790396929.json, 图片生成/图生图/给产品自由搭配模特工作流_1990696481466322945.json, 图片生成/图生图/给产品自由搭配模特工作流_2097866694432739329.json, 图片生成/图生图/给产品自由搭配模特工作流_2099406218531004418.json, 图片生成/图生图/课件14：电商实战：产品换背景（上）_2098602158307500034.json, 图片生成/图生图/课件16：电商实战：给产品自由搭配Ai模特_2098948233119756290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux-2-klein-9b-fp8  全套 全家福 文生 编辑 溶图 扩图 洗图 修图 多角度_2020325725206745089.json、图片生成/文生图/klein全套+全家福+文生+编辑+溶图+扩图+洗图+修图+多角度+_2084459615470841857.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Flux Fill+Redux 万物迁移（电商场景图制作）_2032340529047937025.json、图片生成/图生图/产品图自由搭配AI模特_2002714024217309186.json、图片生成/图生图/产品换背景 电商必备场景图制作_2008829886869282817.json、图片生成/图生图/电商场景图制作（产品换背景）_1985610476090535937.json、图片生成/图生图/电商场景图制作（产品换背景）_1990675120790396929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：39%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BiRefNet_Hugo`
-- `CLIPLoader`
-- `CR Text`
+全部 10 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
 - `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `FastCanvas`
-- `FastCanvasTool`
-- `GetImageSize+`
-- `GetNode`
-- `ImageCaptionNode`
-- `ImagePadForOutpaint`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `ImageCrop`
 - `InpaintModelConditioning`
-- `KSampler (Efficient)`
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PainterFluxImageEdit`
-- `PreviewImage`
-- `QwenMultiangleCameraNode`
+- `Mask Fill Holes`
+- `ReduxAdvanced`
 - `SaveImage`
-- `SetNode`
+- `StyleModelLoader`
 - `UNETLoader`
-- `VAEEncode`
+- `VAEDecode`
 - `VAELoader`
+- `easy makeImageForICLora`
+
+**可变部分**（部分 workflow 才有）：
+- `PMRF` —— 3/10 个有
+- `LayerMask: MaskGrow` —— 1/10 个有
+- `LayerMask: MaskPreview` —— 1/10 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/10 个有
+- `LoraLoader` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 0.8 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 25 | 25 - 25 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
@@ -64,9 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

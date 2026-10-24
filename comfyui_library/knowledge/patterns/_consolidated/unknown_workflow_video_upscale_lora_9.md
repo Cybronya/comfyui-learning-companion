@@ -1,73 +1,107 @@
 ---
 name: unknown_workflow_video_upscale_lora_9
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.6838
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ClownsharKSampler_Beta, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleBy, ImageUpscaleWithModel, LayerFilter: AddGrain, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), PreviewImage, SaveImage, String, StringConcatenate, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG]
+coverage: 0.642
+common_nodes: [Any Switch (rgthree), BBoxesToSAM2, BlockifyMask, CLIPVisionLoader, CM_IntToFloat, CR Float To String, CR Integer To String, CR String To Number, CR Text, ClothesSegment, CropFace, DWPreprocessor, Display Any (rgthree), DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, FaceSegment, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageFromBatch, ImageFromBatch+, ImageResizeKJ, ImageResizeKJv2, ImageToMask, ImageUpscaleWithModelBatched, InvertMask (segment anything), LayerMask: DrawBBoxMaskV2, LayerMask: ObjectDetectorMask, LayerMask: SAM2VideoUltra, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PointsEditor, PoseAndFaceDetection, PreviewImage, QwenVLDetection, RIFE VFI, RMBG, ResizeMask, Sam2Segmentation, SetNode, ShowText|pysssss, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy clearCacheAll, easy imageIndexSwitch, easy int, easy seed]
 problems: []
-missing: [LayerFilter: AddGrain, easy textSwitch, CR SDXL Aspect Ratio, Power Lora Loader (rgthree), Text Multiline]
-members: [图片生成/文生图/1960338805641441282.json, 图片生成/文生图/1982596622628593665.json, 图片生成/文生图/Wan2.2+真实摄影+8K高清_1994707638271217666.json, 图片生成/文生图/Wan2.2真实摄影_1994369665260457985.json, 视频生成/图生视频/1958396927266209793.json]
+missing: []
+members: [图片生成/图生图/【多角色替换+ 动作迁移 】影视恶搞+ 多遮罩模式控制Wan2.2 Animate_2001328127429275650.json, 视频生成/图生视频/【多角色替换++动作迁移+】影视恶搞++多遮罩模式控制Wan2.2+Animate_2005518844527603713.json, 视频生成/图生视频/多角色替换+动作迁移影视恶搞+多遮罩模式控制Wan2.2+Animate_2026582867685416961.json, 视频生成/图生视频/影视搞笑图生视频 多角色替换+动作迁移+多遮罩模式控制 Wan2.2 Animate  丝滑运镜_2003334378287726593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_9
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1960338805641441282.json、图片生成/文生图/1982596622628593665.json、图片生成/文生图/Wan2.2+真实摄影+8K高清_1994707638271217666.json、图片生成/文生图/Wan2.2真实摄影_1994369665260457985.json、视频生成/图生视频/1958396927266209793.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【多角色替换+ 动作迁移 】影视恶搞+ 多遮罩模式控制Wan2.2 Animate_2001328127429275650.json、视频生成/图生视频/【多角色替换++动作迁移+】影视恶搞++多遮罩模式控制Wan2.2+Animate_2005518844527603713.json、视频生成/图生视频/多角色替换+动作迁移影视恶搞+多遮罩模式控制Wan2.2+Animate_2026582867685416961.json、视频生成/图生视频/影视搞笑图生视频 多角色替换+动作迁移+多遮罩模式控制 Wan2.2 Animate  丝滑运镜_2003334378287726593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `ClownsharKSampler_Beta`
-- `EmptyHunyuanLatentVideo`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BBoxesToSAM2`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `CM_IntToFloat`
+- `CR Float To String`
+- `CR Integer To String`
+- `CR String To Number`
+- `CR Text`
+- `ClothesSegment`
+- `CropFace`
+- `DWPreprocessor`
+- `Display Any (rgthree)`
+- `DownloadAndLoadQwenModel`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `FaceSegment`
 - `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `LayerFilter: AddGrain`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Power Lora Loader (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetImageSize`
+- `GetImageSize+`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `ImageUpscaleWithModelBatched`
+- `InvertMask (segment anything)`
+- `LayerMask: DrawBBoxMaskV2`
+- `LayerMask: ObjectDetectorMask`
+- `LayerMask: SAM2VideoUltra`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `SaveImage`
-- `String`
-- `StringConcatenate`
-- `UNETLoader`
+- `QwenVLDetection`
+- `RIFE VFI`
+- `RMBG`
+- `ResizeMask`
+- `Sam2Segmentation`
+- `SetNode`
+- `ShowText|pysssss`
 - `UpscaleModelLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `WanVideoNAG`
-
-**可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 4/5 个有
-- `Int` —— 1/5 个有
-- `Joy_caption_two` —— 1/5 个有
-- `Joy_caption_two_load` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `easy textSwitch` —— 1/5 个有
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy imageIndexSwitch`
+- `easy int`
+- `easy seed`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | beta57 | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 12 | 3 - 12 | 5 | 65% |
-| 采样算法 | 4 | -1 - 4 | 5 | 33% |
-| 调度器 | 1 | 0.3 - 1 | 5 | 67% |
-| 重绘幅度 | 3.5 | 2 - 3.5 | 5 | 81% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,10 +109,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 beta57，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 3 - 12，5 个样本
-- 采样算法 中位数 4，观测区间 -1 - 4，5 个样本，取值分散，一致性仅 33%
-- 调度器 中位数 1，观测区间 0.3 - 1，5 个样本
-- 重绘幅度 中位数 3.5，观测区间 2 - 3.5，5 个样本，取值集中（一致性 81%）
-- 风险：重绘幅度 观测到 3.5，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerFilter: AddGrain、easy textSwitch、CR SDXL Aspect Ratio、Power Lora Loader (rgthree)、Text Multiline
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -7,13 +7,13 @@ coverage: 0.951
 common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLTXVLatentVideo, INTConstant, KSampler, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, TextEncodeQwenImageEditPlus, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2068557141773996034.json, 视频生成/文生视频/人物换衣服生成视频开源1.0自动生成视频不跟随迁移_2069788994547838978.json]
+members: [视频生成/图生视频/GS-人物换衣服生成视频_2068557141773996034.json, 视频生成/文生视频/人物换衣服生成视频开源1.0自动生成视频不跟随迁移_2069788994547838978.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_upscale_latent_upscale_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2068557141773996034.json、视频生成/文生视频/人物换衣服生成视频开源1.0自动生成视频不跟随迁移_2069788994547838978.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/GS-人物换衣服生成视频_2068557141773996034.json、视频生成/文生视频/人物换衣服生成视频开源1.0自动生成视频不跟随迁移_2069788994547838978.json）
 
 - **类型**：Image To Image
 - **样本数**：2

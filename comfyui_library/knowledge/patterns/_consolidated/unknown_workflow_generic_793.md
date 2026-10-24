@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_793
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5355
-common_nodes: [PrimitiveString, SaveImage, ShowAnything|Mie, Text Multiline]
+frequency: 4
+level: moderate
+coverage: 0.97725
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片GImage2文生图积分几毛即可生成任意你要的图片_2058488563033010177.json, 图片生成/文生图/谷歌2文生图图生图ai生图改图分镜图故事卡片2pro全能图片_2058489544579837953.json]
+members: [音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json, 音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json, 音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json, 音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_793
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片GImage2文生图积分几毛即可生成任意你要的图片_2058488563033010177.json、图片生成/文生图/谷歌2文生图图生图ai生图改图分镜图故事卡片2pro全能图片_2058489544579837953.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json、音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json、音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json、音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `PrimitiveString`
-- `SaveImage`
-- `ShowAnything|Mie`
-- `Text Multiline`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_DialogueGenerate`
+- `T8_IndexTTS25_DialogueScript`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_RoleLibrary`
+- `T8_IndexTTS25_VoiceProfile`
 
 **可变部分**（部分 workflow 才有）：
-- `GPTImage2Generate` —— 1/2 个有
-- `NanoBananaAIO` —— 1/2 个有
+- `CR Prompt Text` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/4 个有
+- `easy indexTTSGenerateSimple` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

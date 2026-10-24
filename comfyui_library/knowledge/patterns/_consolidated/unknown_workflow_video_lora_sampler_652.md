@@ -3,58 +3,55 @@ name: unknown_workflow_video_lora_sampler_652
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.62
-common_nodes: [CreateCFGScheduleFloatList, Display Any (rgthree), GetNode, INTConstant, LoadImage, PreviewImage, Seed (rgthree), SetNode, VHS_VideoCombine, VideoContinuationGenerator, WanVideoBlender, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.949667
+common_nodes: [CR Text Replace, CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, EmptyImage, LoadWanVideoT5TextEncoder, RH_Prompter, SimpleMath+, TextBox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy imageSize, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2039320713127006210.json, 视频生成/图生视频/2039344777270923265.json, 视频生成/图生视频/2039706653515321346.json]
+members: [视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json, 视频生成/文生视频/KJ版-wan2.2-14B 文生视频_1950090977786683393.json, 视频生成/文生视频/wan2.2+Seko新4步 文生视频_1953650823609942017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_652
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2039320713127006210.json、视频生成/图生视频/2039344777270923265.json、视频生成/图生视频/2039706653515321346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json、视频生成/文生视频/KJ版-wan2.2-14B 文生视频_1950090977786683393.json、视频生成/文生视频/wan2.2+Seko新4步 文生视频_1953650823609942017.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Text Replace`
+- `CogVideoEnhanceAVideo`
 - `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `LoadImage`
-- `PreviewImage`
-- `Seed (rgthree)`
-- `SetNode`
+- `DF_Integer`
+- `EmptyImage`
+- `LoadWanVideoT5TextEncoder`
+- `RH_Prompter`
+- `SimpleMath+`
+- `TextBox`
 - `VHS_VideoCombine`
-- `VideoContinuationGenerator`
-- `WanVideoBlender`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy seed`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
+- `FloatToSigmas` —— 1/3 个有
+- `StringToFloatList` —— 1/3 个有
 
 ## 典型参数
 

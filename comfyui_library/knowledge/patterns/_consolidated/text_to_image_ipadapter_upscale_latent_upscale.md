@@ -7,13 +7,13 @@ coverage: 0.944
 common_nodes: [ADE_AnimateDiffCombine, ADE_AnimateDiffLoaderWithContext, CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, IPAdapterFaceID, IPAdapterUnifiedLoaderFaceID, KSampler, LatentUpscaleBy, LoadImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1777963495002804226.json, 视频生成/文生视频/文生动图-animatediff_2008438148702937090.json]
+members: [视频生成/文生视频/文生动图-animatediff_1777963495002804226.json, 视频生成/文生视频/文生动图-animatediff_2008438148702937090.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_ipadapter_upscale_latent_upscale
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1777963495002804226.json、视频生成/文生视频/文生动图-animatediff_2008438148702937090.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/文生动图-animatediff_1777963495002804226.json、视频生成/文生视频/文生动图-animatediff_2008438148702937090.json）
 
 - **类型**：Text To Image
 - **样本数**：2

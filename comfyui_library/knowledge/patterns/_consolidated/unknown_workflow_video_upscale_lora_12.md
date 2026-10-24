@@ -7,13 +7,13 @@ coverage: 1
 common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleImageWithModelIfNeed, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoSEDecode, WanVideoSEImageClipEncode, WanVideoSEModelLoader, WanVideoSESampler, WanVideoSLG, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1918858509570473986.json, 视频生成/图生视频/1914665456270278658.json, 视频生成/图生视频/1914595453097209857.json, 视频生成/图生视频/1918851032598642689.json]
+members: [视频生成/图生视频/WAN2.1动态壁纸循环首尾帧_1918858509570473986.json, 视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json, 视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json, 视频生成/图生视频/【动态逼真】万相动态壁纸循环首尾帧_1918851032598642689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1918858509570473986.json、视频生成/图生视频/1914665456270278658.json、视频生成/图生视频/1914595453097209857.json、视频生成/图生视频/1918851032598642689.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/WAN2.1动态壁纸循环首尾帧_1918858509570473986.json、视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json、视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json、视频生成/图生视频/【动态逼真】万相动态壁纸循环首尾帧_1918851032598642689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4

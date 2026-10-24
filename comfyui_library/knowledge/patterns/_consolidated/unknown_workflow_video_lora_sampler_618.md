@@ -3,57 +3,62 @@ name: unknown_workflow_video_lora_sampler_618
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.733333
-common_nodes: [BasicScheduler, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, GetNode, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PreviewAny, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy anythingIndexSwitch]
+coverage: 0.551
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json, 视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json, 视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json]
+members: [视频生成/图生视频/Minimax 单采打戏_2095742874632675330.json, 视频生成/图生视频/Minimax-H3多参-人物自然_2092153269014589441.json, 视频生成/图生视频/MinimaxH3 长视频生成~_2095477683223355393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_618
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json、视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json、视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Minimax 单采打戏_2095742874632675330.json、视频生成/图生视频/Minimax-H3多参-人物自然_2092153269014589441.json、视频生成/图生视频/MinimaxH3 长视频生成~_2095477683223355393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `GetLatentSizeAndCount`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `GetNode`
-- `H3SigmaRefiner`
 - `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `SelfLiftH3Sampler`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `GH_AudioVideoMerger` —— 1/3 个有
-- `GH_ImageVideoComparer` —— 1/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
-- `RH_DLSS5Enhance` —— 1/3 个有
-- `VOSR2ModelLoader` —— 1/3 个有
-- `VOSR2Upscale` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `H3SigmaRefiner` —— 2/3 个有
+- `LayerColor: Brightness & Contrast` —— 2/3 个有
+- `MiniMaxH3SigmaShift` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `SolAttnPatch` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `FrameInterpolate` —— 1/3 个有
+- `FrameInterpolationModelLoader` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `ImageFromBatch` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `MiniMaxH3AddGuide` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `ResolutionSelector` —— 1/3 个有
 
 ## 典型参数
 

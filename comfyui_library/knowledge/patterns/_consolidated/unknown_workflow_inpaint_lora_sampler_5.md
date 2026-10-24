@@ -1,81 +1,101 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_5
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.825
-common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, Fast Groups Bypasser (rgthree), FluxKontextMultiReferenceLatentMethod, Image Comparer (rgthree), InpaintCrop, InpaintStitch, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: strong
+coverage: 0.968818
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, GetImageRangeFromBatch, Image To Mask, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced, VAEDecodeTiled, VAEEncodeForInpaint, VHS_LoadVideo, VHS_VideoInfoLoaded]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-Eidt-2511零偏移遮罩双图局部重绘_2009941483956215810.json, 视频生成/图生视频/2068053816934756353.json]
+members: [图片生成/图生图/K老师_专属_去水印，去字幕，去模糊_2069077577020559362.json, 图片生成/图生图/YJ-ltx2.3去水印_2059470618550161409.json, 图片生成/图生图/全自动一键去水印+字幕+修复模糊+高清放大_2054218745601642497.json, 图片生成/图生图/去水印，去字幕（豆包水印去除)_2072800070940053506.json, 图片生成/文生图/LTX2.3-ICEdit-Insight去水印+去字幕_2073320595470770178.json, 图片生成/文生图/LTX2.3-ICEdit-Insight去水印_去字幕_去模糊_高清化_2073320398938267649.json, 图片生成/文生图/去模糊，高清LTX2.3_iclora_insight工作流_2057411893463179265.json, 图片生成/文生图/四合一去水印_字幕_修复模糊_高清放大_2057406073866379265.json, 图片生成/文生图/视频全自动一键去水印_字幕_修复模糊_高清放大全自动一键去水印_字幕_修复模糊_高清放大_2068564459328729090.json, 视频生成/图生视频/LTX-2.3-ICLORA斗鸡眼+自动优化提示词版V1_2067532074952781825.json, 视频生成/图生视频/LTX-2.3-ICLORA视频高清化+修复组合版V1_2053727074506035201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen-Eidt-2511零偏移遮罩双图局部重绘_2009941483956215810.json、视频生成/图生视频/2068053816934756353.json）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/K老师_专属_去水印，去字幕，去模糊_2069077577020559362.json、图片生成/图生图/YJ-ltx2.3去水印_2059470618550161409.json、图片生成/图生图/全自动一键去水印+字幕+修复模糊+高清放大_2054218745601642497.json、图片生成/图生图/去水印，去字幕（豆包水印去除)_2072800070940053506.json、图片生成/文生图/LTX2.3-ICEdit-Insight去水印+去字幕_2073320595470770178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `CropWithPadInfo`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxKontextMultiReferenceLatentMethod`
-- `Image Comparer (rgthree)`
-- `InpaintCrop`
-- `InpaintStitch`
-- `KSampler`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+全部 11 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `GetImageRangeFromBatch`
+- `Image To Mask`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ManualSigmas`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
+- `VAEEncodeForInpaint`
+- `VHS_LoadVideo`
+- `VHS_VideoInfoLoaded`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `QwenEditAdaptiveLongestEdge` —— 1/2 个有
-- `SeedVR2LoadDiTModel` —— 1/2 个有
-- `SeedVR2LoadVAEModel` —— 1/2 个有
-- `SeedVR2VideoUpscaler` —— 1/2 个有
+- `Seed (rgthree)` —— 9/11 个有
+- `SimpleMath+` —— 9/11 个有
+- `VHS_VideoCombine` —— 9/11 个有
+- `easy imageSize` —— 9/11 个有
+- `Text Multiline` —— 6/11 个有
+- `ImageConcatMulti` —— 5/11 个有
+- `CreateVideo` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
+- `INTConstant` —— 3/11 个有
+- `CR Prompt Text` —— 2/11 个有
+- `ComfyMathExpression` —— 2/11 个有
+- `GetImageSize` —— 2/11 个有
+- `ImageConcanate` —— 2/11 个有
+- `LTXVAudioVAEDecode` —— 2/11 个有
+- `PrimitiveInt` —— 2/11 个有
+- `SaveVideo` —— 2/11 个有
+- `easy showAnything` —— 2/11 个有
+- `BatchImagesNode` —— 1/11 个有
+- `CR String To Combo` —— 1/11 个有
+- `ImpactStringSelector` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `PlaySound|pysssss` —— 1/11 个有
+- `RHLLMChatNode` —— 1/11 个有
+- `RIFE VFI` —— 1/11 个有
+- `SplitStringByDelimiter` —— 1/11 个有
+- `VAEDecode` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 97 | 97 - 97 | 11 | 100% |
+| 高度 | 25 | 25 - 25 | 11 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 97，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，11 个样本，取值集中（一致性 100%）

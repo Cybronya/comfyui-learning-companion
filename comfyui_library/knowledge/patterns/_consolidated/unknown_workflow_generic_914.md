@@ -1,41 +1,44 @@
 ---
 name: unknown_workflow_generic_914
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8535
-common_nodes: [Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, LoadVideo, RH_RhartVideoGOfficialEditVideo, RH_RhartVideoGOfficialTextToVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.874
+common_nodes: [HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, PromptBatchQueue, RHHiddenNodes, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频X-官方版_2065777235130413058.json, 视频生成/文生视频/全能视频X-视频编辑（官方版）_2075867234102235138.json]
+members: [图片生成/图生图/产品通用版一键多屏详情页（自动提示词skill）_2053681412007571457.json, 图片生成/图生图/详情---十屏长图PSD_2039704930759483393.json, 图片生成/图生图/鞋子视觉批量生成_2041795683006554113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_914
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频X-官方版_2065777235130413058.json、视频生成/文生视频/全能视频X-视频编辑（官方版）_2075867234102235138.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品通用版一键多屏详情页（自动提示词skill）_2053681412007571457.json、图片生成/图生图/详情---十屏长图PSD_2039704930759483393.json、图片生成/图生图/鞋子视觉批量生成_2041795683006554113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
+全部 3 个 workflow 都包含：
+- `HAIGC_CombineUnits`
+- `HAIGC_Layer`
+- `HAIGC_SavePSD`
 - `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoGOfficialEditVideo`
-- `RH_RhartVideoGOfficialTextToVideo`
-- `SaveVideo`
+- `PromptBatchQueue`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGOfficialImageToVideo` —— 1/2 个有
-- `RH_RhartVideoGOfficialImageToVideoV15` —— 1/2 个有
-- `RH_RhartVideoGOfficialReferenceToVideo` —— 1/2 个有
-- `RH_RhartVideoGOfficialVideoExtend` —— 1/2 个有
+- `CR Prompt Text` —— 2/3 个有
+- `CR Text Replace` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 
@@ -47,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,77 +3,73 @@ name: text_to_image_video_lora_sampler_76
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.808222
-common_nodes: [AILab_QwenVL_Advanced, BasicScheduler, CLIPLoader, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, ImageResizeKJv2, Int, JjkText, KSampler, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.66
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CR Text, DWPreprocessor, DrawMaskOnImage, EmptyLatentImage, FaceMaskFromPoseKeypoints, Fast Groups Bypasser (rgthree), GetNode, GrowMask, ImageCropByMaskAndResize, ImageCropper, ImageResizeKJv2, Int, JWInteger, JjkText, KSampler, LayerMask: SegformerB2ClothesUltra, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PixelPerfectResolution, PrimitiveInt, RHHiddenNodes, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoDecode, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, workflow>WanVideo, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/KJ版音画同步｜LTX2.3提示词润色图生视频_2091803663361728514.json, 视频生成/图生视频/LTX2.3 音画同步KJ优化版｜图片加文字直出带货视频_2096908247751028737.json, 视频生成/图生视频/LTX2.3一键图生视频流｜角色表演自动出片，动作表情都在线_2099489502615134210.json, 视频生成/图生视频/LTX2.3双人对话KJ优化版｜音画同步图生视频对话更自然_2103700832389783554.json, 视频生成/图生视频/LTX2.3图生视频KJ版｜音画同步提示词润色直出_2091641388155887618.json, 视频生成/图生视频/LTX2.3音画同步优化版｜图片文字直出短剧电商带货视频_2096712252907937793.json, 视频生成/图生视频/LTX2.3音画同步图生视频｜图片加文字直出带货视频_2098730879790178305.json, 视频生成/图生视频/LTX2.3音画同步图生视频｜图片加文字直出短剧电商带货制作_2096702295546359810.json, 视频生成/文生视频/LTX2.3图生视频音画同步KJ优化版｜图片加文字直出 短剧电商带货_2104073651317469186.json]
+members: [图片生成/图生图/人物动作迁移数字人 高清视频换脸换发型自定时长真实自然方案_2094030228560633857.json, 图片生成/图生图/人物动作迁移数字人 高清视频换脸换发型自定时长真实自然方案_2102545997426679809.json, 图片生成/图生图/人物动作迁移数字人 高清视频换脸换发型自定时长真实自然方案_2107981906280271873.json, 图片生成/图生图/换脸换发自定时长｜高清数字人动作迁移视频_2096565300929056770.json, 图片生成/图生图/自定时长高清换脸换发型 人物动作迁移自然真实的数字人视频_2095071159820840961.json, 图片生成/图生图/自定时长高清换脸换发型 人物动作迁移自然真实的数字人视频_2099279494757572609.json, 图片生成/图生图/高清视频换脸换发型自定时长人物动作迁移处理工具_2101529243921502210.json, 图片生成/图生图/高清视频换脸换发型｜自定时长动作迁移数字人生成_2096300769615106049.json, 图片生成/图生图/高清视频换脸换发型｜自定时长真实自然动作迁移数字人_2101139909175238658.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_76
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/KJ版音画同步｜LTX2.3提示词润色图生视频_2091803663361728514.json、视频生成/图生视频/LTX2.3 音画同步KJ优化版｜图片加文字直出带货视频_2096908247751028737.json、视频生成/图生视频/LTX2.3一键图生视频流｜角色表演自动出片，动作表情都在线_2099489502615134210.json、视频生成/图生视频/LTX2.3双人对话KJ优化版｜音画同步图生视频对话更自然_2103700832389783554.json、视频生成/图生视频/LTX2.3图生视频KJ版｜音画同步提示词润色直出_2091641388155887618.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/人物动作迁移数字人 高清视频换脸换发型自定时长真实自然方案_2094030228560633857.json、图片生成/图生图/人物动作迁移数字人 高清视频换脸换发型自定时长真实自然方案_2102545997426679809.json、图片生成/图生图/人物动作迁移数字人 高清视频换脸换发型自定时长真实自然方案_2107981906280271873.json、图片生成/图生图/换脸换发自定时长｜高清数字人动作迁移视频_2096565300929056770.json、图片生成/图生图/自定时长高清换脸换发型 人物动作迁移自然真实的数字人视频_2095071159820840961.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AILab_QwenVL_Advanced`
-- `BasicScheduler`
+- `BlockifyMask`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `CR Text`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
 - `EmptyLatentImage`
+- `FaceMaskFromPoseKeypoints`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `GrowMask`
+- `ImageCropByMaskAndResize`
+- `ImageCropper`
 - `ImageResizeKJv2`
 - `Int`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `LayerMask: SegformerB2ClothesUltra`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SamplerCustom`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
+- `PixelPerfectResolution`
+- `PrimitiveInt`
+- `RHHiddenNodes`
+- `SetNode`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoAnimateEmbeds`
+- `WanVideoDecode`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
+- `workflow>WanVideo`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 8/9 个有
-- `DF_Int_to_Float` —— 8/9 个有
-- `GetNode` —— 8/9 个有
-- `LayerUtility: BooleanOperatorV2` —— 8/9 个有
-- `LayerUtility: If ` —— 8/9 个有
-- `LayerUtility: NumberCalculatorV2` —— 8/9 个有
-- `PathchSageAttentionKJ` —— 8/9 个有
-- `PrimitiveInt` —— 8/9 个有
-- `SetNode` —— 8/9 个有
-- `SimpleMath+` —— 8/9 个有
-- `easy positive` —— 8/9 个有
-- `JoinStrings` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
+- `PreviewImage` —— 7/9 个有
+- `SaveImage` —— 1/9 个有
 
 ## 典型参数
 

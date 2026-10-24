@@ -2,72 +2,81 @@
 name: unknown_workflow_video_lora_sampler_661
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.781667
-common_nodes: [CLIPLoader, CLIPTextEncode, Compare, GetImageSize, GetNode, ImageResize+, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RHHiddenNodes, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_Unbatch, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, easy batchAnything, easy cleanGpuUsed, easy ifElse, easy imageListToImageBatch, wanBlockSwap]
+level: moderate
+coverage: 0.645333
+common_nodes: [BlockifyMask, CLIPVisionLoader, CR Text, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetNode, GrowMask, ImageCropByMaskAndResize, ImageResize+, LayerUtility: PurgeVRAM V2, LoadImage, PreviewImage, RH_Captioner, SetNode, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1989325404936826881.json, 视频生成/图生视频/1989305168229486593.json, 视频生成/图生视频/1988497511591665666.json]
+members: [视频生成/图生视频/【视频人物替换V2超强改进】WanAnimate720p-4步加速_1969759556219924482.json, 视频生成/图生视频/【视频人物替换V3终极改进】WanAnimate720p-4步加速_1970323110975184897.json, 视频生成/图生视频/【视频人物替换】WanAnimate720p-4步加速_1969234265999372290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_661
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1989325404936826881.json、视频生成/图生视频/1989305168229486593.json、视频生成/图生视频/1988497511591665666.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【视频人物替换V2超强改进】WanAnimate720p-4步加速_1969759556219924482.json、视频生成/图生视频/【视频人物替换V3终极改进】WanAnimate720p-4步加速_1970323110975184897.json、视频生成/图生视频/【视频人物替换】WanAnimate720p-4步加速_1969234265999372290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Compare`
-- `GetImageSize`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `CR Text`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
 - `GetNode`
+- `GrowMask`
+- `ImageCropByMaskAndResize`
 - `ImageResize+`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `RHHiddenNodes`
+- `RH_Captioner`
 - `SetNode`
 - `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_Unbatch`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
-- `easy batchAnything`
+- `VHS_VideoInfoSource`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageListToImageBatch`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 2/3 个有
-- `GetImageRangeFromBatch` —— 2/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `Int` —— 1/3 个有
-- `RH_Nano_Banana_Image2Image` —— 1/3 个有
+- `Anything Everywhere3` —— 2/3 个有
+- `BBoxesToSAM2` —— 2/3 个有
+- `DownloadAndLoadQwenModel` —— 2/3 个有
+- `ImageBatchGet` —— 2/3 个有
+- `ImageCASharpening+` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LayerMask: SAM2VideoUltra` —— 2/3 个有
+- `QwenVLDetection` —— 2/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `DownloadAndLoadSAM2Model` —— 1/3 个有
+- `ImitationHueNode` —— 1/3 个有
+- `LayerMask: MaskPreview` —— 1/3 个有
+- `LoadRembgByBiRefNetModel` —— 1/3 个有
+- `PointsEditor` —— 1/3 个有
+- `RembgByBiRefNet` —— 1/3 个有
+- `Sam2Segmentation` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,8 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

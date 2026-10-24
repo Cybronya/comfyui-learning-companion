@@ -1,55 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_unet_194
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.817
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyMiniMaxH3LatentAV, FluxGuidance, ImageFromBatch, KSamplerSelect, Label (rgthree), LayerUtility: SaveImagePlus, PreviewImage, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, UNETLoader, VAEDecode, VAELoader, easy imageColorMatch]
-problems: []
+frequency: 7
+level: weak
+coverage: 0.943571
+common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json, 图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json, 图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json]
+members: [图片生成/文生图/Qwen-小红书风格封面设计工作流_1979207949715410946.json, 图片生成/文生图/Qwen一键小红书封面_2034820476354170881.json, 图片生成/文生图/Z image生图_1997316490393227266.json, 图片生成/文生图/qwen-image 20步稳定生图_1954932098835496961.json, 图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json, 图片生成/文生图/qwen-image 8步快速生图_1954932461516963842.json, 图片生成/文生图/qwen-image 极速生图_1956936946464296962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_194
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json、图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json、图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen-小红书风格封面设计工作流_1979207949715410946.json、图片生成/文生图/Qwen一键小红书封面_2034820476354170881.json、图片生成/文生图/Z image生图_1997316490393227266.json、图片生成/文生图/qwen-image 20步稳定生图_1954932098835496961.json、图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxH3LatentAV`
-- `FluxGuidance`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `Label (rgthree)`
-- `LayerUtility: SaveImagePlus`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `ScheduledCFGGuidance`
+- `CR SDXL Aspect Ratio`
+- `KSampler`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageColorMatch`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 6/7 个有
+- `ModelSamplingAuraFlow` —— 6/7 个有
+- `EmptySD3LatentImage` —— 4/7 个有
+- `LoraLoaderModelOnly` —— 4/7 个有
+- `ConditioningZeroOut` —— 2/7 个有
+- `Float` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `LatentUpscaleBy` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `TextCombinerSix` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 4 - 30 | 7 | 29% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 38% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 4 - 30，7 个样本，取值分散，一致性仅 29%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 38%
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（4/7 个样本）：Steps较低可能导致细节不足

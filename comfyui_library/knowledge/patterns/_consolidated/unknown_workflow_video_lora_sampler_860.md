@@ -3,58 +3,73 @@ name: unknown_workflow_video_lora_sampler_860
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.765
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.376
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1986434223613636609.json, 视频生成/图生视频/2014737203347333121.json]
+members: [视频生成/图生视频/【前瞻预览】Wan 2.2 animate究极形态 暴力骨骼动捕SDPose+kj循环+Sec遮罩_1985641855952068610.json, 视频生成/图生视频/无线时长视频换人_2001302724798971906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_860
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1986434223613636609.json、视频生成/图生视频/2014737203347333121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【前瞻预览】Wan 2.2 animate究极形态 暴力骨骼动捕SDPose+kj循环+Sec遮罩_1985641855952068610.json、视频生成/图生视频/无线时长视频换人_2001302724798971906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
 - `GetImageSizeAndCount`
-- `GetNode`
+- `GrowMaskWithBlur`
 - `INTConstant`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `OnnxDetectionModelLoader`
+- `PointsEditor`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `PrimitiveInt`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWStringMultiline` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `Primitive integer [Crystools]` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
+- `DrawViTPose` —— 1/2 个有
+- `GroundingDinoModelLoader_SDPose` —— 1/2 个有
+- `ImageCompositeMasked` —— 1/2 个有
+- `InvertMask` —— 1/2 个有
+- `LayerUtility: TextBox` —— 1/2 个有
+- `PlaySound|pysssss` —— 1/2 个有
+- `SDPoseOODLoader` —— 1/2 个有
+- `SDPoseOODProcessor` —— 1/2 个有
 - `SaveImage` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `WanVideoTextEmbedBridge` —— 1/2 个有
+- `SaveText` —— 1/2 个有
+- `YOLOModelLoader` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 

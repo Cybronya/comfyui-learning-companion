@@ -1,73 +1,73 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_14
 type: Unknown Workflow
-frequency: 5
+frequency: 13
 level: strong
-coverage: 0.7996
-common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, Image Remove Alpha JK, KSampler, Lora Loader Stack (rgthree), PlaySound|pysssss, PreviewImage, PrimitiveStringMultiline, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
+coverage: 0.929077
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Model Input Switch, EmptyLatentImage, FluxGuidance, GetImageSize, ImageResizeKJ, ImageUpscaleWithModel, KSamplerSelect, LoadImage, ModelSamplingFlux, Number to Int, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RH_Captioner, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelApply, StyleModelLoader, Text to Number, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: ["图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json", "图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102616610388406274.json", "图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102657150928642049.json", "图片生成/文生图/Qwen Image 2.1 加速1分35秒出2K,4K_2103662823787286529.json", "图片生成/文生图/Qwen Image 2.1-mxlz- skills文生图+放大2K,4K_2102952303706857474.json"]
+members: [图片生成/图生图/reduxV2-反推洗图万能流_1932236006693437441.json, 图片生成/图生图/reduxV2-反推洗图万能流_1957731194199965697.json, 图片生成/图生图/reduxV2-反推洗图万能流_2039339997765050369.json, 图片生成/图生图/reduxV2-反推洗图万能流_2039350395746656257.json, 图片生成/图生图/reduxV2-反推洗图万能流_2082016128121004033.json, 图片生成/图生图/reduxV2-反推洗图万能流_2086653747555561474.json, 图片生成/图生图/reduxV2-反推洗图万能流_2090263579768483841.json, 图片生成/图生图/reduxV2-反推洗图万能流_2104757049266622466.json, 图片生成/图生图/反推洗图万能流---eduxV2_2068061825878548482.json, 图片生成/图生图/反推洗图万能流---eduxV2_2068179172471693314.json, 图片生成/图生图/洗图反推图片工作流_2046057407863857154.json, 图片生成/图生图/超好用🔥图片反推工作流，风格画作-看上什么画风直接截图_2046487806398173186.json, 视频生成/图生视频/3.0最新反推洗图万能流_2066082702180311041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json、图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102616610388406274.json、图片生成/文生图/Qwen Image 2.1 skills文生图+放大2K,4K_2102657150928642049.json、图片生成/文生图/Qwen Image 2.1 加速1分35秒出2K,4K_2103662823787286529.json、图片生成/文生图/Qwen Image 2.1-mxlz- skills文生图+放大2K,4K_2102952303706857474.json）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/reduxV2-反推洗图万能流_1932236006693437441.json、图片生成/图生图/reduxV2-反推洗图万能流_1957731194199965697.json、图片生成/图生图/reduxV2-反推洗图万能流_2039339997765050369.json、图片生成/图生图/reduxV2-反推洗图万能流_2039350395746656257.json、图片生成/图生图/reduxV2-反推洗图万能流_2082016128121004033.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `ComfySwitchNode`
+全部 13 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Model Input Switch`
 - `EmptyLatentImage`
-- `Image Remove Alpha JK`
-- `KSampler`
-- `Lora Loader Stack (rgthree)`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+- `FluxGuidance`
+- `GetImageSize`
+- `ImageResizeKJ`
+- `ImageUpscaleWithModel`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingFlux`
+- `Number to Int`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
+- `RH_Captioner`
+- `RH_Translator`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
-- `UNETLoader`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `Text to Number`
+- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
 - `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageApplyLUT+` —— 4/5 个有
-- `easy imageChooser` —— 4/5 个有
-- `GetItemFromList` —— 1/5 个有
-- `QwenImage21BlockCacheT8` —— 1/5 个有
-- `QwenImage21SageAttentionT8` —— 1/5 个有
-- `QwenImage21SpectrumT8` —— 1/5 个有
-- `easy batchAnything` —— 1/5 个有
-- `easy forLoopEnd` —— 1/5 个有
-- `easy forLoopStart` —— 1/5 个有
-- `easy lengthAnything` —— 1/5 个有
-- `easy promptList` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `PreviewImage` —— 12/13 个有
+- `Image Comparer (rgthree)` —— 2/13 个有
+- `Get Image Size` —— 1/13 个有
+- `ImageScale` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 采样步数 | 40 | 40 - 40 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 512 | 512 - 512 | 13 | 100% |
+| 高度 | 512 | 512 - 512 | 13 | 100% |
 
 ## 常见问题
 
@@ -75,10 +75,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 40 - 40，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，13 个样本，取值集中（一致性 100%）

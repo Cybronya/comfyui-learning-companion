@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_97
 type: Unknown Workflow
-frequency: 9
+frequency: 15
 level: moderate
-coverage: 0.717444
-common_nodes: [LoadAudio, Qwen3ASRLoader_DFT, Qwen3ASRTranscribe_DFT, easy saveText]
+coverage: 0.890333
+common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json, 音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json, 音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json, 音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json, 音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json, 音频生成/音频生成/TwistCanvas · Qwen3-ASR 对白转写_2102731254377570305.json, 音频生成/音频生成/推理-音频提取字幕-Qwen3-ASR_2052619440117821442.json, 音频生成/音频生成/音频转文本Qwen3-ASR（支持多国语言）_2033520975840550914.json, 音频生成/音频生成/音频转文本字幕识别Qwen3-ASR（支持多国语言）_2018919931047317505.json]
+members: [图片生成/文生图/2文生图_2088542035031715841.json, 图片生成/文生图/Gemini 3.1 API 调用-海报设计_2039596553190510594.json, 图片生成/文生图/一个简单的文生图1_2050194406732517378.json, 图片生成/文生图/东哥-大蕉2-4K单次0.08_2027369777357922306.json, 图片生成/文生图/全新大蕉2-4K单次0.08_2027333499585302529.json, 图片生成/文生图/全能Ai生图_2032307660531437570.json, 图片生成/文生图/全能图像王V2-单次0.08_2027118980514713601.json, 图片生成/文生图/全能图改工具n2   单次0.08_2033033391980945409.json, 图片生成/文生图/全能图片 2.0 API 调用-文生图+图生图_2028057754023239682.json, 图片生成/文生图/全能图片2.0-图生图-文生图_2027671813232271361.json, 图片生成/文生图/全能图片V2：生成超酷自媒体宣传图！_2027376259675725825.json, 图片生成/文生图/文生图，图生图_2041454936923316226.json, 图片生成/文生图/视频封面生成器-全新全能图片 2模型 【直接提示词每张图0.08元】_2033182146730397698.json, 图片生成/文生图/香.蕉2单图模式_2027222675835330561.json, 图片生成/文生图/香.蕉2双图模式_2027276502114508802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_97
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/Qwen3-ASR-API-24G_2108129187159691265.json、音频生成/音频生成/Qwen3-ASR 基础工作流_2018679517547601921.json、音频生成/音频生成/Qwen3-ASR 工作流（新版）_2018609443151290369.json、音频生成/音频生成/Qwen3-ASR-API-24G_2018867690881945601.json、音频生成/音频生成/Qwen3-ASR音频语音转文字工作流_2020127483131076610.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/2文生图_2088542035031715841.json、图片生成/文生图/Gemini 3.1 API 调用-海报设计_2039596553190510594.json、图片生成/文生图/一个简单的文生图1_2050194406732517378.json、图片生成/文生图/东哥-大蕉2-4K单次0.08_2027369777357922306.json、图片生成/文生图/全新大蕉2-4K单次0.08_2027333499585302529.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3ASRLoader_DFT`
-- `Qwen3ASRTranscribe_DFT`
-- `easy saveText`
+全部 15 个 workflow 都包含：
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 8/9 个有
-- `easy showAnything` —— 1/9 个有
+- `CR Text` —— 13/15 个有
+- `LoadImage` —— 11/15 个有
+- `Label (rgthree)` —— 3/15 个有
+- `PreviewImage` —— 2/15 个有
+- `easy seed` —— 2/15 个有
+- `easy showAnything` —— 2/15 个有
 
 ## 典型参数
 

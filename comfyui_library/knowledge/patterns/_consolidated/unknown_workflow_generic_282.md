@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_generic_282
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.7712
-common_nodes: [JWStringReplace, LoadAudio, LoadVideo, RH_HeyGemNode, RH_LLMAPI_NODE, SaveAudio, SaveVideo, Text Multiline, easy showAnything]
+coverage: 0.979125
+common_nodes: [CR Prompt Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json, 数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json, 视频生成/文生视频/1933349167462789122.json, 音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json, 音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json]
+members: [图片生成/图生图/全能图片V1 Pro(谷歌版-企鹅节点)_1994047725679427586.json, 图片生成/图生图/全能图片V1图像编辑V1_1960502132866691073.json, 图片生成/图生图/全能图片V1最强图像编辑V1_1960406026166202369.json, 图片生成/图生图/全能图片V1最强图像编辑_1960679649426702338.json, 图片生成/图生图/全能图片V1最强图像编辑_1961431631984836610.json, 图片生成/图生图/全能图片那NO不拿呢。图生图_2014529839075692545.json, 图片生成/图生图/最强图像编辑 全能图片V1_1960421694022234114.json, 图片生成/文生图/Banan谷歌香蕉图像编辑2_1991528296819204097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_282
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100551999912759298.json、数字人/数字人/heygem口播数字人电商带货主题词LLM大模型文案Index-TTS2.0声音快速克隆电商口播_2100573653984440321.json、视频生成/文生视频/1933349167462789122.json、音频生成/音频生成/HeyGem口播数字人_商品主题词+LLM+Index-TTS2.0组合电商直播_1925781264459337729.json、音频生成/音频生成/HeyGem数字人-视频生视频V2V-稳定版_1928710289825632257.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro(谷歌版-企鹅节点)_1994047725679427586.json、图片生成/图生图/全能图片V1图像编辑V1_1960502132866691073.json、图片生成/图生图/全能图片V1最强图像编辑V1_1960406026166202369.json、图片生成/图生图/全能图片V1最强图像编辑_1960679649426702338.json、图片生成/图生图/全能图片V1最强图像编辑_1961431631984836610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JWStringReplace`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `SaveVideo`
-- `Text Multiline`
-- `easy showAnything`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 3/5 个有
-- `IndexTTSNode` —— 1/5 个有
-- `IndexTTSRun` —— 1/5 个有
-- `TextBox` —— 1/5 个有
+- `RH_Nano_Banana_Image2Image` —— 7/8 个有
+- `ImageConcanate` —— 2/8 个有
+- `Gemini3ImageNode` —— 1/8 个有
 
 ## 典型参数
 

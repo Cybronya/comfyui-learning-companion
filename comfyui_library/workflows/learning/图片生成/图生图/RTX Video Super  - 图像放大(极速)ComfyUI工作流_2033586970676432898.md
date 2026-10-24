@@ -1,0 +1,35 @@
+---
+key: 图片生成/图生图/RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898.json
+name: RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898.json
+hash: fa4f4e682355d761
+coverage: 1
+learned_at: 2026-10-23 11:23:12
+nodes: [RTXVideoSuperResolution, SaveImage, LoadImage]
+patterns: []
+missing: []
+---
+
+# 图片生成/图生图/RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（3 个）：
+- `RTXVideoSuperResolution`
+- `SaveImage`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（3/3）
+
+**有卡**：`RTXVideoSuperResolution`、`SaveImage`、`LoadImage`
+
+**用到的条目**：LoadImage、RTXVideoSuperResolution、SaveImage、sd15-t2i-basic、sd15-t2i-lora、sd1_5_text2image_sampler_clip_checkpoint、sdxl_portrait_controlnet_lora_sampler、image_to_image_controlnet_lora_sampler

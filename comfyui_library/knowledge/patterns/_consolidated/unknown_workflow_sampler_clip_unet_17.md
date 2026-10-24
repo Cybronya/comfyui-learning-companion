@@ -1,90 +1,63 @@
 ---
 name: unknown_workflow_sampler_clip_unet_17
 type: Unknown Workflow
-frequency: 16
-level: strong
-coverage: 0.915625
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
+frequency: 28
+level: moderate
+coverage: 0.932321
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042489551154847745.json, 视频生成/图生视频/2030260940695932930.json, 视频生成/图生视频/LTX2.3-图生视频 人物一致性字幕去除增强版x3长视频生成短剧视频无限生成_2030069604189474818.json, 视频生成/图生视频/2059604648729858049.json, 视频生成/图生视频/2080253203614097410.json, 视频生成/图生视频/2031233763203620866.json, 视频生成/图生视频/2033437706583281665.json, 视频生成/图生视频/LTX2.3-图生视频-去台词文字去字幕中文提示词声音配音视频图生视频_2029912263112531970.json, 视频生成/图生视频/2029873778003550210.json, 视频生成/图生视频/2029827263906193410.json, 视频生成/图生视频/2029951911398477826.json, 视频生成/图生视频/2062874922061484033.json, 视频生成/图生视频/2065072561171550210.json, 视频生成/图生视频/2081278519476314114.json, 视频生成/图生视频/2060674924032905217.json, 视频生成/文生视频/声色俱全！LTX2.3-图生视频-匹配原图比例-高质量音视频！自定义Lora_2031651024238288898.json]
+members: [图片生成/图生图/Flux2 一键转毛线风格_1996554829826760706.json, 图片生成/图生图/Flux2 单图编辑_1993555111395917826.json, 图片生成/图生图/Flux2 单图编辑模式_1993596098176548866.json, 图片生成/图生图/Flux2 双图编辑_1993555181015154690.json, 图片生成/图生图/Flux2 图片编辑_1986702252859666433.json, 图片生成/图生图/Flux2 超强双图编辑_1993619885911638017.json, 图片生成/图生图/Flux2-klein-9b 多图编辑_2016048290185351169.json, 图片生成/图生图/Flux2.klein单图编辑（去水印_换背景_改色）_2013100887060779010.json, 图片生成/图生图/Flux2DEV单图编辑_1993536804617912321.json, 图片生成/图生图/Flux2DEV单图编辑_1994060590549319682.json, 图片生成/图生图/Flux2DEV多图编辑_1993572546985607169.json, 图片生成/图生图/Flux2_多图编辑工作流_1994701624062906369.json, 图片生成/图生图/Flux2一键3D毛线质感（超还原）_2028277318543740929.json, 图片生成/图生图/Flux2万物转毛线风格=B站艾橘溪_1986842346891456514.json, 图片生成/图生图/Flux2万物转毛线风格_2015686369653297154.json, 图片生成/图生图/Flux2万物转毛线风格_2036267536605515778.json, 图片生成/图生图/Flux2万物转毛线风格_2067131882885697537.json, 图片生成/图生图/Flux2万物转毛线风格_2067134254907224066.json, 图片生成/图生图/Flux2万物转毛线风格画风_2068870823557033986.json, 图片生成/图生图/Flux2三图编辑_1993501566938398721.json, 图片生成/图生图/Flux2单图编辑_1993496482062024706.json, 图片生成/图生图/Flux2双图编辑_1993496664094818306.json, 图片生成/图生图/Flux2变毛线_1996852914805252098.json, 图片生成/图生图/flux2 人物换装_电商产品换背景_2049895408285044737.json, 图片生成/图生图/flux2klein9b自动溶图重新打光_2046941528681095169.json, 图片生成/图生图/klein溶图打光_2110918582837272578.json, 图片生成/图生图/上传图片即可一键把角色变成毛线材质，Flux2万物转毛线风格_2026105296489291777.json, 图片生成/图生图/上传图片即可一键把角色变成毛线材质，Flux2万物转毛线风格_2052921408677785602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_17
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/2042489551154847745.json、视频生成/图生视频/2030260940695932930.json、视频生成/图生视频/LTX2.3-图生视频 人物一致性字幕去除增强版x3长视频生成短剧视频无限生成_2030069604189474818.json、视频生成/图生视频/2059604648729858049.json、视频生成/图生视频/2080253203614097410.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（图片生成/图生图/Flux2 一键转毛线风格_1996554829826760706.json、图片生成/图生图/Flux2 单图编辑_1993555111395917826.json、图片生成/图生图/Flux2 单图编辑模式_1993596098176548866.json、图片生成/图生图/Flux2 双图编辑_1993555181015154690.json、图片生成/图生图/Flux2 图片编辑_1986702252859666433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：28
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CFGGuider`
+全部 28 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
+- `Flux2Scheduler`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `ShowText|pysssss`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `llama_cpp_instruct_adv` —— 15/16 个有
-- `llama_cpp_model_loader` —— 15/16 个有
-- `VHS_VideoCombine` —— 14/16 个有
-- `PrimitiveInt` —— 13/16 个有
-- `ImageScale` —— 10/16 个有
-- `easy cleanGpuUsed` —— 10/16 个有
-- `GetNode` —— 7/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/16 个有
-- `SetNode` —— 7/16 个有
-- `LTXVCropGuides` —— 6/16 个有
-- `LTXVLatentUpsampler` —— 6/16 个有
-- `LTXVScheduler` —— 6/16 个有
-- `LatentUpscaleModelLoader` —— 6/16 个有
-- `LoraLoaderModelOnly` —— 6/16 个有
-- `ImageScaleBy` —— 4/16 个有
-- `ImpactInt` —— 4/16 个有
-- `RHHiddenNodes` —— 4/16 个有
-- `Anything Everywhere3` —— 3/16 个有
-- `CM_IntToFloat` —— 3/16 个有
-- `INTConstant` —— 3/16 个有
-- `SaveImage` —— 3/16 个有
-- `SimpleCalculatorKJ` —— 3/16 个有
-- `TT_img_enc_v2` —— 2/16 个有
-- `AILab_QwenVL` —— 1/16 个有
-- `TT_img_enc` —— 1/16 个有
-- `easy promptConcat` —— 1/16 个有
-- `孤海注释` —— 1/16 个有
+- `EmptyFlux2LatentImage` —— 26/28 个有
+- `FluxGuidance` —— 26/28 个有
+- `PrimitiveInt` —— 18/28 个有
+- `ImageScaleToTotalPixels` —— 14/28 个有
+- `GetImageSizeAndCount` —— 11/28 个有
+- `ImageScaleDownToSize` —— 11/28 个有
+- `LayerUtility: PurgeVRAM` —— 11/28 个有
+- `Image Stitch` —— 10/28 个有
+- `CR Prompt Text` —— 6/28 个有
+- `Int` —— 6/28 个有
+- `Image Comparer (rgthree)` —— 4/28 个有
+- `GetImageSize` —— 3/28 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/28 个有
+- `LoraLoaderModelOnly` —— 2/28 个有
+- `easy positive` —— 2/28 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 16 | 100% |
-| 高度 | 24 | 24 - 24 | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -92,5 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，16 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，16 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

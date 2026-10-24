@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_360
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.68025
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.959143
+common_nodes: [CreateVideo, LoadAudio, RH_HeyGemNode, SaveVideo, VHS_LoadVideo]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1961121059854553089.json, 图片生成/文生图/1962730235911356417.json, 图片生成/文生图/1985955538850721794.json, 图片生成/文生图/全能图片编辑 PRO 每天免费5次 + 文生图_2020683197733937153.json]
+missing: []
+members: [数字人/数字人/HeyGem口播_2089232511313465346.json, 数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json, 数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json, 视频生成/图生视频/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2090756294016856066.json, 视频生成/图生视频/Heygem真人对口型，数字人工作流_1927204893608804354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_360
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1961121059854553089.json、图片生成/文生图/1962730235911356417.json、图片生成/文生图/1985955538850721794.json、图片生成/文生图/全能图片编辑 PRO 每天免费5次 + 文生图_2020683197733937153.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/HeyGem口播_2089232511313465346.json、数字人/数字人/Heygem真人对口型数字人口播 长视频快速生成情感口播数字人视频生视频_2095828970263629825.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2084999987515183106.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2097233020574064642.json、数字人/数字人/Heygem真人对口型数字人口播长视频超长视频快速生成书评国学口播情感口播数字人_2110325397417185281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+全部 7 个 workflow 都包含：
+- `CreateVideo`
+- `LoadAudio`
+- `RH_HeyGemNode`
+- `SaveVideo`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `RH_Translator` —— 3/4 个有
-- `JjkText` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
+- `AudioCrop` —— 4/7 个有
+- `PreviewVideoNode` —— 1/7 个有
 
 ## 典型参数
 
@@ -45,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

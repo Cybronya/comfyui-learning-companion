@@ -1,43 +1,34 @@
 ---
 name: unknown_workflow_generic_636
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.883333
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, ShowText|pysssss]
+coverage: 0.9
+common_nodes: [DF_Text_Box, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, 忽略多组孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 声音设计_克隆_2014901954920583169.json, 音频生成/音频生成/Qwen3 TTS 最强声音开源工作流整合包_2015600681440256001.json, 音频生成/音频生成/Qwen3-TTS 音色设计+音色克隆+自定义情绪_2014604292602208258.json]
+members: [图片生成/图生图/Bnana全能图片编辑V2 香 蕉 Pro 4K直出_1983342124135555073.json, 图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json, 图片生成/图生图/老孙AI  Bnana全能图片编辑V2 香 蕉 Pro 4K_2087193170143703041.json, 数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_636
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音设计_克隆_2014901954920583169.json、音频生成/音频生成/Qwen3 TTS 最强声音开源工作流整合包_2015600681440256001.json、音频生成/音频生成/Qwen3-TTS 音色设计+音色克隆+自定义情绪_2014604292602208258.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Bnana全能图片编辑V2 香 蕉 Pro 4K直出_1983342124135555073.json、图片生成/图生图/Bnana全能图片编辑V2Pro4K直出_2107070172535287810.json、图片生成/图生图/老孙AI  Bnana全能图片编辑V2 香 蕉 Pro 4K_2087193170143703041.json、数字人/数字人/Bnana全能图片编辑V2 Pro 4K直出（保存-3）_2065778608710443010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `ImageLoader` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `TextInputNode` —— 1/3 个有
+全部 4 个 workflow 都包含：
+- `DF_Text_Box`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `忽略多组孤海`
 
 ## 典型参数
 

@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_76
 type: Unknown Workflow
-frequency: 11
+frequency: 17
 level: moderate
-coverage: 0.850545
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.871588
+common_nodes: [CR Prompt Text, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json, 音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2015044112218595329.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015241695201333249.json, 音频生成/音频生成/HeartMuLa音乐歌曲生成_2015242726865903618.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2056310053703086082.json, 音频生成/音频生成/（RL强化版）HeartMuLa音乐歌曲生成3B版V1_2014941704297648129.json, 音频生成/音频生成/🦖HeartMuLa音乐歌曲文生歌_2013889867830267905.json]
+members: [图片生成/图生图/文字控制 音色+情绪参考_2068348108735598593.json, 音频生成/音频生成/(情感向量)IndexTTS2单人音色迁移V1_1965499612981284866.json, 音频生成/音频生成/(情感文本控制)IndexTTS2单人音色迁移V1_1965506807991029761.json, 音频生成/音频生成/(情感文本控制)IndexTTS2单人音色迁移V1_1991218164910632961.json, 音频生成/音频生成/(情感文本控制)IndexTTS2单人音色迁移V1_1992867979406929921.json, 音频生成/音频生成/(情感音频参考)IndexTTS2单人音色迁移V1_1965506923858640898.json, 音频生成/音频生成/AA--index TTS声音克隆-8种情感控制-单人版_2029557120491851777.json, 音频生成/音频生成/IndexTTS2单人文本控制情感_1966124695156330497.json, 音频生成/音频生成/TTS2声音克隆_2047837996442980353.json, "音频生成/音频生成/indexTTS2语音克隆,复制语音，克隆音色，声音克隆，口播讲解_1981343015488970754.json", 音频生成/音频生成/indextts2.0双人音色克隆王炸项目_1967218711360888834.json, 音频生成/音频生成/tts2.0声音克隆_1983411718061793282.json, 音频生成/音频生成/tts2.0声音克隆_2013463524483276802.json, 音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json, 音频生成/音频生成/文字控制 音色+情绪参考_2083374388392583169.json, 音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json, 音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_76
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa+音乐歌曲生成_2013565297663414274.json、音频生成/音频生成/HeartMuLa免费歌曲生成器_2013540259652444162.json、音频生成/音频生成/HeartMuLa音乐歌曲生成-3B_2015618059335114753.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B-RL版_2015440827799048193.json、音频生成/音频生成/HeartMuLa音乐歌曲生成3B版V1_2013497255407390722.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/文字控制 音色+情绪参考_2068348108735598593.json、音频生成/音频生成/(情感向量)IndexTTS2单人音色迁移V1_1965499612981284866.json、音频生成/音频生成/(情感文本控制)IndexTTS2单人音色迁移V1_1965506807991029761.json、音频生成/音频生成/(情感文本控制)IndexTTS2单人音色迁移V1_1991218164910632961.json、音频生成/音频生成/(情感文本控制)IndexTTS2单人音色迁移V1_1992867979406929921.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `HeartMuLa_Generate`
+全部 17 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/11 个有
-- `LoadImage` —— 2/11 个有
-- `Text` —— 2/11 个有
+- `IndexTTS2Run` —— 16/17 个有
+- `Float` —— 5/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
+- `FL_Audio_Separation` —— 1/17 个有
+- `IndexTTS2_Advanced` —— 1/17 个有
 
 ## 典型参数
 

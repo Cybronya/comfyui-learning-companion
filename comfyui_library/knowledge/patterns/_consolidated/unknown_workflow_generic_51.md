@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_51
 type: Unknown Workflow
-frequency: 13
+frequency: 21
 level: moderate
-coverage: 0.872692
-common_nodes: [LoadAudio, MegaTTS3Run, SaveAudio]
+coverage: 0.819143
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1962880712204587009.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1965450428429254657.json, 音频生成/音频生成/商用版-最强语音克隆 单人克隆版_1998255017779978241.json, 音频生成/音频生成/最强MegaTTS3单人语音克隆_1964218831621246977.json, 音频生成/音频生成/最强MegaTTS3双人语音克隆_1964218900688850946.json, 音频生成/音频生成/最强语音克隆_MegaTTS3_1963165246057852929.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1964879017734193153.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1972202277962444801.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1964879052882460674.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1972203985589497858.json]
+members: [音频生成/音频生成/IndexTTS--双人语音克隆--8种情感控制_2036366094109249538.json, 音频生成/音频生成/IndexTTS2 单人音色克隆，三种情绪方案，简单易用_1965717630348886018.json, 音频生成/音频生成/IndexTTS2 双人对话，音色克隆，三种带情绪方案_1965718025867587585.json, 音频生成/音频生成/IndexTTS2单人音色克隆（三种带情绪方案）_1965583606653571073.json, 音频生成/音频生成/IndexTTS2双人对话_1966129270735147009.json, 音频生成/音频生成/IndexTTS2双人语音克隆（可调节情绪）_1966762830072623106.json, 音频生成/音频生成/IndexTTS2双人语音对话V1_1965493960078708737.json, 音频生成/音频生成/IndexTTS2双人音色克隆（带情绪）_1965583673481416706.json, 音频生成/音频生成/IndexTTS2双人音色克隆（带情绪）_1965679753703342082.json, 音频生成/音频生成/IndexTTS2双人音色克隆（带情绪）_2016823371333373954.json, 音频生成/音频生成/IndexTTS2史上最强音色克隆带语气情感_1991851411736514562.json, 音频生成/音频生成/IndexTTSV2 双人声音克隆_1965557718599782401.json, 音频生成/音频生成/tts-2情感参考_2077983399180066818.json, 音频生成/音频生成/tts_index2.json_2072938155275284482.json, 音频生成/音频生成/tts_index2.json_2076903926951137282.json, 音频生成/音频生成/【文字转音频】IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_2006233294836338690.json, 音频生成/音频生成/克隆声音 情感参考_2059452394957791234.json, 音频生成/音频生成/克隆声音+情感参考-电商_2002264448452685826.json, 音频生成/音频生成/克隆声音+情感参考-阿浩_2026920393554006018.json, 音频生成/音频生成/双人声音克隆_可以尝试双人声优本了_2005672702616760321.json, 音频生成/音频生成/带情绪的声音克隆IndexTTS V2=艾橘溪_1965595677839511554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_51
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json、音频生成/音频生成/MegaTTS3双人语音迁移V2_1962880712204587009.json、音频生成/音频生成/MegaTTS3双人语音迁移V2_1965450428429254657.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（音频生成/音频生成/IndexTTS--双人语音克隆--8种情感控制_2036366094109249538.json、音频生成/音频生成/IndexTTS2 单人音色克隆，三种情绪方案，简单易用_1965717630348886018.json、音频生成/音频生成/IndexTTS2 双人对话，音色克隆，三种带情绪方案_1965718025867587585.json、音频生成/音频生成/IndexTTS2单人音色克隆（三种带情绪方案）_1965583606653571073.json、音频生成/音频生成/IndexTTS2双人对话_1966129270735147009.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 21 个 workflow 都包含：
+- `IndexTTS2Run`
 - `LoadAudio`
-- `MegaTTS3Run`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 12/13 个有
-- `SaveAudioMP3` —— 9/13 个有
-- `PreviewAudio` —— 8/13 个有
-- `MultiLinePromptMG` —— 6/13 个有
-- `MegaTTS3` —— 2/13 个有
+- `PrimitiveStringMultiline` —— 13/21 个有
+- `CR Prompt Text` —— 11/21 个有
+- `AudioCrop` —— 7/21 个有
+- `LayerUtility: PurgeVRAM` —— 2/21 个有
+- `SaveAudioMP3` —— 1/21 个有
 
 ## 典型参数
 

@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_397
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.875
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.9
+common_nodes: [LoadImage, RH_DLSS5Enhance, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2043712125037715457.json, 视频生成/图生视频/2042956717356486657.json, 视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json, 视频生成/图生视频/2082445109639081985.json]
+members: [图片生成/图生图/DLSS5图像放大增强体验_2097227894618681345.json, 图片生成/图生图/Dlss5_2100083324332109826.json, 图片生成/图生图/Dlss5_2102590795344867329.json, 图片生成/图生图/【TUT】DLSS5-图片高清放大-2k_2100363059654127617.json, 图片生成/图生图/千府AI-DLSS5人脸洗图工作流_2109494182321672194.json, 图片生成/图生图/千府AI-DLSS5洗图工作流_2101508878457462786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_397
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2043712125037715457.json、视频生成/图生视频/2042956717356486657.json、视频生成/图生视频/Pixverse V6图生视频工作流｜爱诗 V6 图片转视频_2099677244473040897.json、视频生成/图生视频/2082445109639081985.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DLSS5图像放大增强体验_2097227894618681345.json、图片生成/图生图/Dlss5_2100083324332109826.json、图片生成/图生图/Dlss5_2102590795344867329.json、图片生成/图生图/【TUT】DLSS5-图片高清放大-2k_2100363059654127617.json、图片生成/图生图/千府AI-DLSS5人脸洗图工作流_2109494182321672194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_DLSS5Enhance`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_PixverseV6ImageToVideo` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 3/6 个有
+- `ShunjingAIShade` —— 3/6 个有
 
 ## 典型参数
 

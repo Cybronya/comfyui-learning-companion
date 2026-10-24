@@ -3,29 +3,28 @@ name: unknown_workflow_upscale_latent_upscale_lora_26
 type: Unknown Workflow
 frequency: 11
 level: strong
-coverage: 0.817727
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, image_scale_pixel_v2]
+coverage: 0.847182
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034501283566063617.json, 视频生成/图生视频/2059861850040389633.json, 视频生成/图生视频/2034800880725266433.json, 视频生成/图生视频/2034238637155557377.json, 视频生成/图生视频/2034906343454281730.json, 视频生成/文生视频/2.5套件｜LTX2.3 图生视频｜IC Edit 100%无字幕生成_2054434432525840386.json, 视频生成/文生视频/2.5套件｜LTX2.3 多图参考｜IC Edit 100%无字幕生成_2054535482951913473.json, 视频生成/文生视频/2.5套件｜LTX2.3 文生视频｜IC Edit 100%无字幕生成_2054455981848965122.json, 视频生成/文生视频/图生视频3.0｜OmniNFT+Relay+蒸馏1.1｜一图成片_2058326590685274113.json, 视频生成/文生视频/多图参考3.0｜OmniNFT+Relay+蒸馏1.1｜多图融合_2058327091539701762.json, 视频生成/文生视频/文生视频3.0｜OmniNFT+Relay+蒸馏1.1｜三阶无字幕_2057671098963161090.json]
+members: [视频生成/图生视频/LTX2.3 电商专用图文生视频-提示词响应优化_2061384649385009154.json, 视频生成/图生视频/LTX2.3 真人高清一键长视频工作流 V2.3_2038518064030945282.json, 视频生成/图生视频/LTX2.3-图生视频，智能提示词优化_2031273311556079618.json, 视频生成/图生视频/LTX2.3-首中尾帧视频+Qwen3.5自动提示词_2037900927323082754.json, 视频生成/图生视频/LTX2.3-首尾多帧视频生成_2031368415541202945.json, 视频生成/图生视频/LTX2.3真人短剧_2033403811573800961.json, 视频生成/图生视频/LTX2.3自动首尾帧流_2073405314405322753.json, 视频生成/图生视频/fast图生视频_2053653678917206018.json, 视频生成/图生视频/full图生视频_2053653864032813058.json, 视频生成/图生视频/【LTX2.3官方工作流优化】首尾帧控制 _含提示词扩写模板_2033785787984125953.json, 视频生成/文生视频/【LTX2.3官方工作流优化】文生视频+图生视频_含提示词扩写模板_2033142799469649922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_26
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2034501283566063617.json、视频生成/图生视频/2059861850040389633.json、视频生成/图生视频/2034800880725266433.json、视频生成/图生视频/2034238637155557377.json、视频生成/图生视频/2034906343454281730.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 电商专用图文生视频-提示词响应优化_2061384649385009154.json、视频生成/图生视频/LTX2.3 真人高清一键长视频工作流 V2.3_2038518064030945282.json、视频生成/图生视频/LTX2.3-图生视频，智能提示词优化_2031273311556079618.json、视频生成/图生视频/LTX2.3-首中尾帧视频+Qwen3.5自动提示词_2037900927323082754.json、视频生成/图生视频/LTX2.3-首尾多帧视频生成_2031368415541202945.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
 - `CheckpointLoaderSimple`
 - `CreateVideo`
 - `EmptyLTXVLatentVideo`
@@ -35,8 +34,9 @@ source: knowledge_consolidation
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
@@ -44,56 +44,40 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveFloat`
 - `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecodeTiled`
-- `image_scale_pixel_v2`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 10/11 个有
-- `SaveVideo` —— 10/11 个有
-- `SimpleMath+` —— 10/11 个有
-- `Text` —— 10/11 个有
-- `Image_Resize_longsize` —— 9/11 个有
-- `LTX2_NAG` —— 7/11 个有
-- `PathchSageAttentionKJ` —— 7/11 个有
-- `Seed Everywhere` —— 7/11 个有
-- `VRAMReserver` —— 7/11 个有
-- `GetImageRangeFromBatch` —— 6/11 个有
-- `Image To Mask` —— 6/11 个有
-- `LTX2SamplingPreviewOverride` —— 6/11 个有
-- `LTXAddVideoICLoRAGuide` —— 6/11 个有
-- `LTXICLoRALoaderModelOnly` —— 6/11 个有
-- `LTXVCropGuides` —— 6/11 个有
-- `LayerUtility: ColorImage` —— 6/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/11 个有
-- `RepeatImageBatch` —— 6/11 个有
-- `Seed (rgthree)` —— 6/11 个有
-- `VAEEncodeForInpaint` —— 6/11 个有
-- `easy imageCount` —— 6/11 个有
-- `easy imageSize` —— 6/11 个有
-- `DisTorchPurgeVRAMV2` —— 5/11 个有
-- `PromptRelayEncode` —— 5/11 个有
-- `GetNode` —— 3/11 个有
-- `SetNode` —— 3/11 个有
-- `VHS_VideoCombine` —— 3/11 个有
-- `WujiCleaner` —— 3/11 个有
-- `easy cleanGpuUsed` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `GetImageSize+` —— 2/11 个有
-- `ImageResizeKJv2` —— 2/11 个有
-- `Int` —— 2/11 个有
-- `JWImageSequenceExtractFromBatch` —— 2/11 个有
-- `LTXVAddGuideMulti` —— 2/11 个有
-- `PreviewImage` —— 2/11 个有
-- `PromptRelaySmartEncode` —— 2/11 个有
-- `PromptRelayAdvancedOptions` —— 1/11 个有
-- `RH_LLMAPI_Pro_Node` —— 1/11 个有
+- `ComfyMathExpression` —— 10/11 个有
+- `RH_LLMAPI_Pro_Node` —— 9/11 个有
+- `PrimitiveStringMultiline` —— 8/11 个有
+- `ResizeImageMaskNode` —— 8/11 个有
+- `PrimitiveBoolean` —— 7/11 个有
+- `easy showAnything` —— 7/11 个有
+- `LTXVImgToVideoInplaceKJ` —— 4/11 个有
+- `SimpleMath+` —— 4/11 个有
+- `Text` —— 4/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `PlaySound|pysssss` —— 2/11 个有
+- `ShowText|pysssss` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `BDXTestInt` —— 1/11 个有
+- `EmptyImage` —— 1/11 个有
+- `ImageConcatMulti` —— 1/11 个有
+- `JoinStrings` —— 1/11 个有
+- `MultiplicationNode` —— 1/11 个有
+- `Qwen3_VQA` —— 1/11 个有
 - `SaveImage` —— 1/11 个有
-- `ZML_SplitText` —— 1/11 个有
-- `easy int` —— 1/11 个有
+- `Text Multiline` —— 1/11 个有
+- `easy ifElse` —— 1/11 个有
+- `llama_cpp_instruct_adv` —— 1/11 个有
+- `llama_cpp_model_loader` —— 1/11 个有
 
 ## 典型参数
 

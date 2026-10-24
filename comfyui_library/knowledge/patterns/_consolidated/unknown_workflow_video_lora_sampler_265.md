@@ -3,75 +3,59 @@ name: unknown_workflow_video_lora_sampler_265
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.742
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.924
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1958065173116366849.json, 视频生成/图生视频/1959340354166272002.json, 视频生成/图生视频/1956763019890057217.json, 视频生成/图生视频/1957279872316010498.json, 视频生成/图生视频/1957324783199383553.json, 视频生成/图生视频/1958334806830551042.json, 视频生成/图生视频/1979202292152963074.json, 视频生成/图生视频/1958798691941445634.json]
+members: [视频生成/图生视频/Wan2.2 图生视频超级加速KJ版_1950100729937747969.json, 视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json, 视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json, 视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json, 视频生成/图生视频/ai动画_1988552709458542593.json, 视频生成/图生视频/wan2.2图生视频加速，kj版_1951106522648653826.json, 视频生成/图生视频/大明动画风格 图生视频_1962000212275478530.json, 视频生成/文生视频/(KJ版)Wan2.2图生视频超级加速版V3（大幅度提高速度）_1950046289267441666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_265
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1958065173116366849.json、视频生成/图生视频/1959340354166272002.json、视频生成/图生视频/1956763019890057217.json、视频生成/图生视频/1957279872316010498.json、视频生成/图生视频/1957324783199383553.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频超级加速KJ版_1950100729937747969.json、视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json、视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json、视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json、视频生成/图生视频/ai动画_1988552709458542593.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
-- `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `INTConstant` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `WanVideoTorchCompileSettings` —— 6/8 个有
-- `CR Text` —— 5/8 个有
-- `WanVideoVACEStartToEndFrame` —— 5/8 个有
-- `ImageFromBatch+` —— 4/8 个有
-- `ImpactInt` —— 4/8 个有
-- `SimpleMath+` —— 4/8 个有
-- `Anything Everywhere` —— 3/8 个有
-- `ImageConcanate` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `InspyrenetRembg` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `LayerUtility: ImageRemoveAlpha` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `OpenposePreprocessor` —— 2/8 个有
-- `VHS_VideoInfo` —— 2/8 个有
-- `easy imageRemBg` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `Evaluate Integers` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `PrimitiveFloat` —— 1/8 个有
-- `easy convertAnything` —— 1/8 个有
+- `CR Prompt Text` —— 7/8 个有
+- `CreateCFGScheduleFloatList` —— 7/8 个有
+- `GetImageSizeAndCount` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `ImageFromBatch+` —— 5/8 个有
+- `JWInteger` —— 5/8 个有
+- `LayerUtility: PurgeVRAM` —— 5/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `CLIPVisionLoader` —— 2/8 个有
+- `WanVideoClipVisionEncode` —— 2/8 个有
+- `ConcatTextOfUtils` —— 1/8 个有
+- `Display Int (rgthree)` —— 1/8 个有
+- `LayerUtility: ImageMaskScaleAsV2` —— 1/8 个有
+- `SplineEditor` —— 1/8 个有
+- `WanVideoAddWanMoveTracks` —— 1/8 个有
+- `YC Color Match` —— 1/8 个有
+- `easy mathInt` —— 1/8 个有
 
 ## 典型参数
 

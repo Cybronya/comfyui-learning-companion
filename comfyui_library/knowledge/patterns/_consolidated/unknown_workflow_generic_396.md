@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_396
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.875
-common_nodes: [JjkText, LoadImage, SaveVideo]
+coverage: 0.814
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2015789801991049217.json, 视频生成/图生视频/2049294005959135233.json, 视频生成/图生视频/2047621014405779457.json, 视频生成/图生视频/2011346619601522690.json]
+members: [图片生成/图生图/Banan谷歌香蕉图像编辑_1960415208109912065.json, 图片生成/图生图/产品更换_2057689275629654017.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2059514405301346305.json, 图片生成/图生图/全能图片Pro 版超级图像编辑_1960731715520139265.json, 图片生成/图生图/在线 -  全能图片V12-单图_1994327572462895106.json, 图片生成/图生图/自用全能图片_2040318979763347458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_396
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2015789801991049217.json、视频生成/图生视频/2049294005959135233.json、视频生成/图生视频/2047621014405779457.json、视频生成/图生视频/2011346619601522690.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Banan谷歌香蕉图像编辑_1960415208109912065.json、图片生成/图生图/产品更换_2057689275629654017.json、图片生成/图生图/全能图片2建筑万能空间节点分析_2059514405301346305.json、图片生成/图生图/全能图片Pro 版超级图像编辑_1960731715520139265.json、图片生成/图生图/在线 -  全能图片V12-单图_1994327572462895106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
+全部 6 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 2/4 个有
-- `RH_Higgsfield_I2V` —— 2/4 个有
+- `CR Prompt Text` —— 5/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
+- `RH_Nano_Banana_Image2Image` —— 2/6 个有
+- `LayerUtility: TextJoin` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `TextInputNode` —— 1/6 个有
 
 ## 典型参数
 

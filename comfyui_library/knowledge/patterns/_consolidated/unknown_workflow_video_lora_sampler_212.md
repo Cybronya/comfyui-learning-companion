@@ -7,13 +7,13 @@ coverage: 0.390889
 common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, GetNode, INTConstant, ImageBatch, ImageFromBatch, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PreviewAudio, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2019318204899794946.json, 视频生成/图生视频/2018199752789204993.json, 视频生成/图生视频/2018680802581684225.json, 视频生成/图生视频/2018684694845460482.json, 视频生成/图生视频/2027300224661721090.json, 视频生成/图生视频/2025036533815844865.json, 视频生成/图生视频/2020782430164094977.json, 视频生成/图生视频/2018872300161998849.json, 视频生成/图生视频/2018523773288321026.json]
+members: [视频生成/图生视频/InfiniteTalk 音频驱动 无衰减超长视频生成  一键数字人视频生成_2019318204899794946.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018199752789204993.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018680802581684225.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018684694845460482.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减版，需要更多长度直接复制采样即可！_2027300224661721090.json, 视频生成/图生视频/InfiniteTalk长视频-官流循环改进版_2025036533815844865.json, 视频生成/图生视频/【阿良绘】数字人长视频无衰减（分段生成）InfiniteTalk_2020782430164094977.json, 视频生成/图生视频/新InfiniteTalk-Comfyui官方流多段组合无限长视频数字人_2018872300161998849.json, 视频生成/图生视频/最新infinite模型长视频无色差 20s视频只要12分钟_2018523773288321026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_212
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2019318204899794946.json、视频生成/图生视频/2018199752789204993.json、视频生成/图生视频/2018680802581684225.json、视频生成/图生视频/2018684694845460482.json、视频生成/图生视频/2027300224661721090.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk 音频驱动 无衰减超长视频生成  一键数字人视频生成_2019318204899794946.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018199752789204993.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018680802581684225.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018684694845460482.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减版，需要更多长度直接复制采样即可！_2027300224661721090.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

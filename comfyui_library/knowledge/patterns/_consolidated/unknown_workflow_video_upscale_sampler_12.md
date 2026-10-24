@@ -7,13 +7,13 @@ coverage: 0.929
 common_nodes: [Add Subtitles To Frames, Apply Whisper, CM_IntToBool, CosyVoiceNode, Fast Groups Bypasser (rgthree), ImageOnlyCheckpointLoader, ImageUpscaleWithModel, IndexTTSNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MathExpression|pysssss, RH_GetAudioDuration, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SenseVoiceNode, Switch any [Crystools], TextBox, TextNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy ab, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1932718442179170306.json, 视频生成/图生视频/1930929354606620674.json, 视频生成/文生视频/1932740401180594177.json]
+members: [视频生成/图生视频/动态 数字人 _性价比更佳_1932718442179170306.json, 视频生成/图生视频/数字人 _ SONIC（相比Float_Avatar性价比更佳）_1930929354606620674.json, 视频生成/文生视频/动态 数字人 _性价比更佳_1932740401180594177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1932718442179170306.json、视频生成/图生视频/1930929354606620674.json、视频生成/文生视频/1932740401180594177.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态 数字人 _性价比更佳_1932718442179170306.json、视频生成/图生视频/数字人 _ SONIC（相比Float_Avatar性价比更佳）_1930929354606620674.json、视频生成/文生视频/动态 数字人 _性价比更佳_1932740401180594177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

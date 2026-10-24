@@ -7,13 +7,13 @@ coverage: 0.808429
 common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [视频生成/图生视频/1975430744082395137.json, 视频生成/图生视频/1975181120914460673.json, 视频生成/图生视频/1989714955807150082.json, 视频生成/图生视频/1989717889194315777.json, 视频生成/图生视频/1990279000503275522.json, 视频生成/图生视频/2029535256906309633.json, 视频生成/文生视频/多重参考生视频（WAN_BindWeave+TTS+MULTITALK）_1990350029464498177.json]
+members: [视频生成/图生视频/(Pro Max版)完爆OVI图生视频带配音数字人工作流--需要48G显存来运行_1975430744082395137.json, 视频生成/图生视频/(Pro高质量)跨模态仿OVI无限时长图生视频含配音数字人工作流V3（支持中文）_1975181120914460673.json, 视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave三图参考图生视频V1_1989714955807150082.json, 视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave双图参考图生视频V1_1989717889194315777.json, 视频生成/图生视频/图生视频 5.4 BindWeave 双图编辑 · 数字人音色克隆_1990279000503275522.json, 视频生成/图生视频/图生视频 BindWeave 双图编辑 · 数字人音色克隆_2029535256906309633.json, 视频生成/文生视频/多重参考生视频（WAN_BindWeave+TTS+MULTITALK）_1990350029464498177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_292
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1975430744082395137.json、视频生成/图生视频/1975181120914460673.json、视频生成/图生视频/1989714955807150082.json、视频生成/图生视频/1989717889194315777.json、视频生成/图生视频/1990279000503275522.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(Pro Max版)完爆OVI图生视频带配音数字人工作流--需要48G显存来运行_1975430744082395137.json、视频生成/图生视频/(Pro高质量)跨模态仿OVI无限时长图生视频含配音数字人工作流V3（支持中文）_1975181120914460673.json、视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave三图参考图生视频V1_1989714955807150082.json、视频生成/图生视频/(超越闭源！8秒版跨模态数字人)BindWeave双图参考图生视频V1_1989717889194315777.json、视频生成/图生视频/图生视频 5.4 BindWeave 双图编辑 · 数字人音色克隆_1990279000503275522.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

@@ -1,65 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_159
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8775
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.802
+common_nodes: [AudioCrop, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadAudio, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UnetLoaderGGUF, VAEDecodeTiled, VAELoaderKJ]
 problems: []
-missing: [easy cleanGpuUsed]
-members: [图片生成/文生图/1951667086886121474.json, 图片生成/文生图/1954712659226705921.json]
+missing: []
+members: [视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json, 视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json, 视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json, 视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_159
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1951667086886121474.json、图片生成/文生图/1954712659226705921.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json、视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json、视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json、视频生成/文生视频/LTX-2.3-文生视频 GGUF版_2032080178574266370.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `VAEDecode`
-- `VAELoader`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UnetLoaderGGUF`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ChinesePrompt_Mix` —— 1/2 个有
-- `ClownOptions_DetailBoost_Beta` —— 1/2 个有
-- `ClownOptions_SwapSampler_Beta` —— 1/2 个有
-- `ClownsharKSampler_Beta` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LatentUpscaleBy` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `SharkOptions_Beta` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `CreateVideo` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `SaveVideo` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `LTXVImgToVideoInplace` —— 2/4 个有
+- `LTXVLatentUpsampler` —— 2/4 个有
+- `LTXVPreprocess` —— 2/4 个有
+- `LatentUpscaleModelLoader` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `LTX2_NAG` —— 1/4 个有
+- `MaskPreview` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | bong_tangent | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 10 | - | 1 | 100% |
-| 采样算法 | -1 | - | 1 | 100% |
-| 调度器 | -0.67 | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,6 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 风险：重绘幅度 观测到 1，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

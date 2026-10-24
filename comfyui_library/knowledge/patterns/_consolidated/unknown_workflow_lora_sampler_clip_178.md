@@ -1,75 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_clip_178
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8615
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Aspect Ratio, ConditioningKrea2Rebalance, ConditioningZeroOut, Image Comparer (rgthree), KSampler, Label (rgthree), LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy positive]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.697333
+common_nodes: [AILab_ImageResize, Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, ImageStitch, Int, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewAny, Qwen3VL_Chat, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Krea2文生图+SeedVR2高清放大工作流_2079105417011093505.json, 图片生成/文生图/Krea2文生图双采样高清放大工作流_2079102504310235137.json]
+members: [图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json, 图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json, 图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_178
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2文生图+SeedVR2高清放大工作流_2079105417011093505.json、图片生成/文生图/Krea2文生图双采样高清放大工作流_2079102504310235137.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json、图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json、图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AILab_ImageResize`
+- `Anything Everywhere3`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Aspect Ratio`
-- `ConditioningKrea2Rebalance`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `KSampler`
-- `Label (rgthree)`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageStitch`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `PreviewAny`
+- `Qwen3VL_Chat`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `LatentUpscaleBy` —— 1/2 个有
-- `SeedVR2LoadDiTModel` —— 1/2 个有
-- `SeedVR2LoadVAEModel` —— 1/2 个有
-- `SeedVR2VideoUpscaler` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetImageSize+` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `QwenMultiangleCameraNode` —— 2/3 个有
+- `PrimitiveBoolean` —— 1/3 个有
+- `TT_img_enc` —— 1/3 个有
+- `TT_img_enc_v2` —— 1/3 个有
+- `TextInputNode` —— 1/3 个有
+- `Textbox` —— 1/3 个有
+- `ZML_SwitchOutput` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `text_mul_Join` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（5/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

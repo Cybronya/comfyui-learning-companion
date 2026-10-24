@@ -1,81 +1,73 @@
 ---
 name: text_to_image_sampler_clip_unet_104
 type: Text To Image
-frequency: 4
-level: weak
-coverage: 0.91975
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: strong
+coverage: 0.986
+common_nodes: [CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader, easy promptLine]
+problems: []
 missing: []
-members: [图片生成/文生图/Boogu 文生图+单图编辑四合一工作流！_2067920112757334018.json, 图片生成/文生图/boogu单采+多图编辑_2069715605447598082.json, 图片生成/文生图/boogu图像模型两件套Base & Edit_2069786400983183362.json, 图片生成/文生图/boogu图像编辑_文生图_2071497005939118082.json]
+members: [图片生成/文生图/（fg-Lora）Z-image Engineer V4-文生图V2（3000步）_2028626642955935746.json, 图片生成/文生图/（小情绪版）Z-image文生图V1_1999752612872417281.json, 图片生成/文生图/（自用-zhenzhen）Z-image-turbo文生图2K版_2019482059055566849.json, 图片生成/文生图/（自用）成人摄影Z-image文生图2K版_1993954086909313026.json, 图片生成/文生图/（贞贞-小情绪版）Z-image文生图V1_1999750941198909441.json, 图片生成/文生图/（贞贞Lora）Z-image Engineer V4& Flow Dop文生图V2（11000步）_2028503409036365825.json, 图片生成/文生图/（贞贞Lora）Z-image同丹不同配方Lora对比测试_1996261458461736961.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_104
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Boogu 文生图+单图编辑四合一工作流！_2067920112757334018.json、图片生成/文生图/boogu单采+多图编辑_2069715605447598082.json、图片生成/文生图/boogu图像模型两件套Base & Edit_2069786400983183362.json、图片生成/文生图/boogu图像编辑_文生图_2071497005939118082.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/（fg-Lora）Z-image Engineer V4-文生图V2（3000步）_2028626642955935746.json、图片生成/文生图/（小情绪版）Z-image文生图V1_1999752612872417281.json、图片生成/文生图/（自用-zhenzhen）Z-image-turbo文生图2K版_2019482059055566849.json、图片生成/文生图/（自用）成人摄影Z-image文生图2K版_1993954086909313026.json、图片生成/文生图/（贞贞-小情绪版）Z-image文生图V1_1999750941198909441.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
 - `SaveImage`
-- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `TTResolutionSelector` —— 3/4 个有
-- `FluxKontextImageScale` —— 2/4 个有
-- `GetImageSize+` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `DF_Get_image_size` —— 1/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `CLIPLoader` —— 5/7 个有
+- `ClipLoaderGGUF` —— 2/7 个有
+- `AddLabel` —— 1/7 个有
+- `DuckHideNode` —— 1/7 个有
+- `ImageConcanate` —— 1/7 个有
+- `PDIMAGE_LongerSize` —— 1/7 个有
+- `Seed (rgthree)` —— 1/7 个有
+- `TT_img_enc` —— 1/7 个有
+- `TT_img_enc_v2` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 728 - 1536 | 4 | 73% |
-| 高度 | 1152 | 1024 - 1536 | 4 | 83% |
-| 采样步数 | 4 | 4 - 40 | 4 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 4 | 26% |
-| 采样算法 | euler | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 1 | 0.35 - 1 | 4 | 66% |
+| 采样步数 | 10 | 10 - 10 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1920 | 1080 - 1920 | 7 | 73% |
+| 高度 | 1080 | 1080 - 1920 | 7 | 71% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 728 - 1536，4 个样本
-- 高度 中位数 1152，观测区间 1024 - 1536，4 个样本，取值集中（一致性 83%）
-- 采样步数 中位数 4，观测区间 4 - 40，4 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，4 个样本，取值分散，一致性仅 26%
-- 采样算法 最常用 euler，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 0.35 - 1，4 个样本
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 10 - 10，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1920，观测区间 1080 - 1920，7 个样本
+- 高度 中位数 1080，观测区间 1080 - 1920，7 个样本

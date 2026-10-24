@@ -1,84 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_381
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.7975
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewAudio, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.9444
+common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, ImageConcanate, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RepeatImageBatch, SaveImage, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1967501356460335105.json, 视频生成/图生视频/1996928089819136001.json, 视频生成/图生视频/2010602329619304450.json, 视频生成/图生视频/1996900266379300866.json, 视频生成/图生视频/2000473873579638786.json, 视频生成/图生视频/2010621857124323330.json]
+members: [图片生成/图生图/Wan2.1-姿势控制图生图_1949810093015654401.json, 图片生成/图生图/Wan2.1-深度控制图生图_1949810038555721730.json, 图片生成/图生图/Wan2.1一致性扩图图生图V1_1947268029098905601.json, 图片生成/图生图/Wan2.1姿势控制人物一致性图生图V1_1947250426543509506.json, 图片生成/图生图/Wan2.1深度控制人物一致性图生图V0.5_1947263708557905922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_381
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1967501356460335105.json、视频生成/图生视频/1996928089819136001.json、视频生成/图生视频/2010602329619304450.json、视频生成/图生视频/1996900266379300866.json、视频生成/图生视频/2000473873579638786.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan2.1-姿势控制图生图_1949810093015654401.json、图片生成/图生图/Wan2.1-深度控制图生图_1949810038555721730.json、图片生成/图生图/Wan2.1一致性扩图图生图V1_1947268029098905601.json、图片生成/图生图/Wan2.1姿势控制人物一致性图生图V1_1947250426543509506.json、图片生成/图生图/Wan2.1深度控制人物一致性图生图V0.5_1947263708557905922.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJv2`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `GetImageRangeFromBatch`
+- `ImageConcanate`
+- `JWInteger`
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `PreviewAudio`
-- `SetNode`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RepeatImageBatch`
+- `SaveImage`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `AudioCrop` —— 4/6 个有
-- `ImageUpscaleWithModel` —— 3/6 个有
-- `IndexTTS2Run` —— 3/6 个有
-- `JjkText` —— 3/6 个有
-- `UpscaleModelLoader` —— 3/6 个有
-- `AudioCropProcessUTK` —— 2/6 个有
-- `GetImageRangeFromBatch` —— 2/6 个有
-- `GetNode` —— 2/6 个有
-- `ImageConcatMulti` —— 2/6 个有
-- `LayerUtility: TextBox` —— 2/6 个有
-- `WanVideoEncode` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `Fast Bypasser (rgthree)` —— 1/6 个有
-- `ImageScaleByAspectRatio_UTK` —— 1/6 个有
-- `MelBandRoFormerModelLoader` —— 1/6 个有
-- `MelBandRoFormerSampler` —— 1/6 个有
-- `Switch any [Crystools]` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `Wav2VecModelLoader` —— 1/6 个有
+- `PDIMAGE_LongerSize` —— 4/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `DWPreprocessor` —— 2/5 个有
+- `DepthAnything_V2` —— 2/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/5 个有
+- `DF_Get_image_size` —— 1/5 个有
+- `ImagePadKJ` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | uni_pc | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

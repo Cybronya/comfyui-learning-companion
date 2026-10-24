@@ -1,0 +1,68 @@
+---
+key: 图片生成/图生图/LH-DMT版本-2.生图片类-050.Qwen三图融合-NF_2016525076501368833.json
+name: LH-DMT版本-2.生图片类-050.Qwen三图融合-NF_2016525076501368833
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/LH-DMT版本-2.生图片类-050.Qwen三图融合-NF_2016525076501368833.json
+hash: f1a5d4c9d767e53f
+coverage: 0.909091
+learned_at: 2026-10-23 11:08:42
+nodes: [TextEncodeQwenImageEditPlus, CheckpointLoaderSimple, LoadImage, LoadImage, TextEncodeQwenImageEditPlus, KSampler, PreviewImage, EmptyLatentImage, LoadImage, VAEDecode, SaveImage]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "Qwen-Rapid-AIO-NSFW-v10.4.safetensors", "denoise": 1, "height": 1280, "sampler_name": "euler_ancestral", "scheduler": "sgm_uniform", "seed": 545672285653634, "steps": 4, "width": 720}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/LH-DMT版本-2.生图片类-050.Qwen三图融合-NF_2016525076501368833.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/LH-DMT版本-2.生图片类-050.Qwen三图融合-NF_2016525076501368833.json`
+
+## 结构
+
+**生成流程**：Model → Latent → Sampling → Decode → Output → Other
+
+**节点**（11 个）：
+- `TextEncodeQwenImageEditPlus`
+- `CheckpointLoaderSimple` ★核心
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImageEditPlus`
+- `KSampler` ★核心
+- `PreviewImage`
+- `EmptyLatentImage` ★核心
+- `LoadImage`
+- `VAEDecode` ★核心
+- `SaveImage`
+
+## 关键参数
+
+- `checkpoint` = `Qwen-Rapid-AIO-NSFW-v10.4.safetensors`
+- `seed` = `545672285653634`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `1`
+- `width` = `720`
+- `height` = `1280`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **91%**（10/11）
+
+**有卡**：`TextEncodeQwenImageEditPlus`、`CheckpointLoaderSimple`、`LoadImage`、`KSampler`、`EmptyLatentImage`、`VAEDecode`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、EmptyLatentImage、LoadImage、TextEncodeQwenImageEditPlus、SaveImage、sd15-t2i-basic
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

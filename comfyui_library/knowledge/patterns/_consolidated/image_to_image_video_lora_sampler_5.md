@@ -7,13 +7,13 @@ coverage: 0.7455
 common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Bypasser (rgthree), GetNode, ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingAuraFlow, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, RIFE VFI, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy getNode, easy setNode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2032878972517752834.json, 视频生成/图生视频/2010985758877814785.json, 视频生成/图生视频/2011468518830641154.json, 视频生成/图生视频/2012799365131276289.json, 视频生成/图生视频/1992077382848933890.json, 视频生成/图生视频/2010650770588307457.json]
+members: [视频生成/图生视频/一图生成稳定首尾帧+视频_正面上方俯拍角度_2032878972517752834.json, 视频生成/图生视频/云端多角度自由切换+首尾帧出图完美切换_2010985758877814785.json, 视频生成/图生视频/全能Pro+多角度自由切换+首尾帧出图完美切换 一键出片 V1.0_2011468518830641154.json, 视频生成/图生视频/多角度自由切换+首尾帧出图完美切换_2012799365131276289.json, 视频生成/图生视频/👙樱花树下的唯美全自动锁定人物出视频👙_1992077382848933890.json, 视频生成/图生视频/🙆多角度自由切换+首尾帧出图完美切换🐳_2010650770588307457.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2032878972517752834.json、视频生成/图生视频/2010985758877814785.json、视频生成/图生视频/2011468518830641154.json、视频生成/图生视频/2012799365131276289.json、视频生成/图生视频/1992077382848933890.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/一图生成稳定首尾帧+视频_正面上方俯拍角度_2032878972517752834.json、视频生成/图生视频/云端多角度自由切换+首尾帧出图完美切换_2010985758877814785.json、视频生成/图生视频/全能Pro+多角度自由切换+首尾帧出图完美切换 一键出片 V1.0_2011468518830641154.json、视频生成/图生视频/多角度自由切换+首尾帧出图完美切换_2012799365131276289.json、视频生成/图生视频/👙樱花树下的唯美全自动锁定人物出视频👙_1992077382848933890.json…）
 
 - **类型**：Image To Image
 - **样本数**：6

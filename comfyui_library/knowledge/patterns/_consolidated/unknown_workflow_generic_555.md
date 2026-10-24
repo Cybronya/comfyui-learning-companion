@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_generic_555
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.833333
-common_nodes: [RH_RhartVideoGTextToVideo, SaveVideo]
+coverage: 0.441
+common_nodes: [JjkText, LayerUtility: TextJoin, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2054431332775800834.json, 视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json, 视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json]
+members: [图片生成/文生图/image_gemini.json_2068966122443067394.json, 图片生成/文生图/image_gemini.json_2097156637671911425.json, 图片生成/文生图/image_gemini.json_2097576911659687937.json, 图片生成/文生图/image_health.json_2069357857212026881.json, 图片生成/文生图/image_health_2069300295536037890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_555
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2054431332775800834.json、视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json、视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/image_gemini.json_2068966122443067394.json、图片生成/文生图/image_gemini.json_2097156637671911425.json、图片生成/文生图/image_gemini.json_2097576911659687937.json、图片生成/文生图/image_health.json_2069357857212026881.json、图片生成/文生图/image_health_2069300295536037890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_RhartVideoGTextToVideo`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 1/3 个有
+- `easy promptList` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
 
 ## 典型参数
 

@@ -2,106 +2,80 @@
 name: unknown_workflow_video_sampler_vae_28
 type: Unknown Workflow
 frequency: 12
-level: strong
-coverage: 0.736917
-common_nodes: [FluxResolutionNode, Int, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Captioner, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
-problems: [发现KSampler但没有VAEDecode]
+level: moderate
+coverage: 0.940917
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/1932694201777672193.json, 视频生成/图生视频/2052305268150677505.json, 视频生成/图生视频/1922977171818598402.json, 视频生成/图生视频/1924455095239364609.json, 视频生成/图生视频/1972857610967928833.json, 视频生成/图生视频/2057436928223571969.json, 视频生成/图生视频/2047301907374415874.json, 视频生成/图生视频/2068063600496959490.json, 视频生成/图生视频/1947183216568754178.json, 视频生成/图生视频/1981756791207927809.json, 视频生成/文生视频/1922918246369083394.json, 视频生成/文生视频/1930813054726897666.json]
+members: [图片生成/文生图/黑鲸千帆-1m左右高质量（1248幅度大）_1994344708442890242.json, 图片生成/文生图/黑鲸千帆-中质量2m内长视频（960幅度大）_1994320938558750721.json, 视频生成/图生视频/Infinite Talk单人版_1968672721771143169.json, 视频生成/图生视频/Infinite Talk数字人_2069716627356217345.json, 视频生成/图生视频/InfiniteTalk 数字人 图生视频 视频配音_1998698671518666753.json, 视频生成/图生视频/InfiniteTalk 数字人-对口型_1983542488248033281.json, 视频生成/图生视频/InfiniteTalk_单人 数字人_1978645327920173058.json, 视频生成/图生视频/InfiniteTalk单人对口型_1978307219957637121.json, 视频生成/图生视频/InfiniteTalk图生数字人单人-B站UP主@好奇漫步_1982650082937978882.json, 视频生成/图生视频/InfiniteTalk图生数字人双人-B站UP主@好奇漫步_1982712177004027905.json, 视频生成/图生视频/Wan2.1 InfiniteTalk 单人版_1990298374261927937.json, 视频生成/图生视频/Wan双人对口型不需要遮罩_2042473229025021954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_28
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1932694201777672193.json、视频生成/图生视频/2052305268150677505.json、视频生成/图生视频/1922977171818598402.json、视频生成/图生视频/1924455095239364609.json、视频生成/图生视频/1972857610967928833.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/黑鲸千帆-1m左右高质量（1248幅度大）_1994344708442890242.json、图片生成/文生图/黑鲸千帆-中质量2m内长视频（960幅度大）_1994320938558750721.json、视频生成/图生视频/Infinite Talk单人版_1968672721771143169.json、视频生成/图生视频/Infinite Talk数字人_2069716627356217345.json、视频生成/图生视频/InfiniteTalk 数字人 图生视频 视频配音_1998698671518666753.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `FluxResolutionNode`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `Int`
-- `JWInteger`
-- `JjkText`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RH_Captioner`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Evaluate Integers` —— 11/12 个有
-- `InversionDemoLazyIndexSwitch` —— 11/12 个有
-- `MMAudioFeatureUtilsLoader` —— 11/12 个有
-- `MMAudioModelLoader` —— 11/12 个有
-- `MMAudioSampler` —— 11/12 个有
-- `RH_Prompter` —— 11/12 个有
-- `SaveAudio` —— 11/12 个有
-- `TextCombinerTwo` —— 11/12 个有
-- `AudioCombine` —— 10/12 个有
-- `CLIPLoader` —— 10/12 个有
-- `CLIPTextEncode` —— 10/12 个有
-- `CheckpointLoaderSimple` —— 10/12 个有
-- `ColorMatch` —— 10/12 个有
-- `EmptyLatentAudio` —— 10/12 个有
-- `ImageConcatMulti` —— 10/12 个有
-- `ImageResize+` —— 10/12 个有
-- `KSampler` —— 10/12 个有
-- `LoadImage` —— 10/12 个有
-- `RH_Translator` —— 10/12 个有
-- `VAEDecodeAudio` —— 10/12 个有
-- `PreviewAudio` —— 9/12 个有
-- `PreviewImage` —— 9/12 个有
-- `ImpactSwitch` —— 8/12 个有
-- `Note _O` —— 8/12 个有
-- `ImageFromBatch+` —— 2/12 个有
-- `easy int` —— 2/12 个有
-- `easy textSwitch` —— 2/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `RH_LLMAPI_NODE` —— 1/12 个有
-- `easy anythingIndexSwitch` —— 1/12 个有
+- `AudioCrop` —— 11/12 个有
+- `MultiTalkModelLoader` —— 9/12 个有
+- `WanVideoBlockSwap` —— 9/12 个有
+- `WanVideoLoraSelect` —— 9/12 个有
+- `WanVideoModelLoader` —— 9/12 个有
+- `WanVideoTorchCompileSettings` —— 9/12 个有
+- `ImageResizeKJv2` —— 8/12 个有
+- `RH_GetAudioDuration` —— 8/12 个有
+- `Audio Duration (mtb)` —— 4/12 个有
+- `CreateVideo` —— 3/12 个有
+- `JWFloat` —— 3/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/12 个有
+- `PreViewVideo` —— 3/12 个有
+- `RHHiddenNodes` —— 3/12 个有
+- `AudioCombine` —— 2/12 个有
+- `JjkText` —— 2/12 个有
+- `DF_Image_scale_to_side` —— 1/12 个有
+- `GetImageRangeFromBatch` —— 1/12 个有
+- `Image Comparer (rgthree)` —— 1/12 个有
+- `PreviewImage` —— 1/12 个有
+- `SeedVR2` —— 1/12 个有
+- `SeedVR2BlockSwap` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
+- `kkGetImage` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 40 | 40 - 40 | 10 | 100% |
-| 高度 | 1 | 1 - 1 | 10 | 100% |
-| 采样步数 | 60 | 60 - 60 | 10 | 100% |
-| Prompt 约束强度(CFG) | 7 | 7 - 7 | 10 | 100% |
-| 采样算法 | dpmpp_3m_sde_gpu | - | 10 | 100% |
-| 调度器 | exponential | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 10/12 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 40，观测区间 40 - 40，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 60，观测区间 60 - 60，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_3m_sde_gpu，10 个样本，一致性 100%
-- 调度器 最常用 exponential，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/12 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,65 +1,77 @@
 ---
 name: unknown_workflow_sampler_clip_unet_144
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.85275
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.876375
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR Text Concatenate, WD14Tagger|pysssss]
-members: [图片生成/文生图/1913109816590696449.json, 图片生成/文生图/1917149291704418305.json, 图片生成/文生图/1922444657790484482.json, 图片生成/文生图/1930926287748313090.json]
+missing: []
+members: [图片生成/图生图/FLUX-Klein版 电商产品可控构图换背景+融图_2013853557090426881.json, 图片生成/图生图/FLUX2 KLEIN True-V2底模升级-单图编辑_2049082691332612097.json, 图片生成/图生图/FLUX2 Klein 多图编辑工作流_2091477521320734722.json, 图片生成/图生图/FLUX2+KLEIN+True-V2-单图编辑_2050236956377923586.json, 图片生成/图生图/Flux2 Klein Multi-Image Edit_2018198139378864129.json, 图片生成/图生图/Flux2 Klein 编辑多合一版  多图保持人物一致性丨产品光影融合_2022519193781936129.json, 图片生成/图生图/Klein 编辑多合一版  多图保持人物一致性丨产品光影融合 林耀_2014020601354133505.json, 图片生成/文生图/Klein 编辑多合一版_2073302428295983105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_144
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1913109816590696449.json、图片生成/文生图/1917149291704418305.json、图片生成/文生图/1922444657790484482.json、图片生成/文生图/1930926287748313090.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FLUX-Klein版 电商产品可控构图换背景+融图_2013853557090426881.json、图片生成/图生图/FLUX2 KLEIN True-V2底模升级-单图编辑_2049082691332612097.json、图片生成/图生图/FLUX2 Klein 多图编辑工作流_2091477521320734722.json、图片生成/图生图/FLUX2+KLEIN+True-V2-单图编辑_2050236956377923586.json、图片生成/图生图/Flux2 Klein Multi-Image Edit_2018198139378864129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `LoraLoader` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `CR Text Concatenate` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `ETN_Translate` —— 1/4 个有
-- `JJC_JoyCaption` —— 1/4 个有
-- `Joy_caption_two` —— 1/4 个有
-- `Joy_caption_two_load` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `StringConstantMultiline` —— 1/4 个有
-- `WD14Tagger|pysssss` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `GetImageSize` —— 5/8 个有
+- `ImageScaleToTotalPixels` —— 5/8 个有
+- `AIO_Preprocessor` —— 4/8 个有
+- `FastCanvas` —— 4/8 个有
+- `FastCanvasTool` —— 4/8 个有
+- `LayerMask: BiRefNetUltraV2` —— 4/8 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 4/8 个有
+- `LayerUtility: PurgeVRAM` —— 4/8 个有
+- `SeedVR2LoadDiTModel` —— 4/8 个有
+- `SeedVR2LoadVAEModel` —— 4/8 个有
+- `SeedVR2VideoUpscaler` —— 4/8 个有
+- `AILab_QwenVL` —— 3/8 个有
+- `CR Prompt List` —— 3/8 个有
+- `ColorMatch` —— 3/8 个有
+- `DrawMaskOnImage` —— 3/8 个有
+- `ImagePadForOutpaint` —— 3/8 个有
+- `PlaySound|pysssss` —— 3/8 个有
+- `PreviewImage` —— 2/8 个有
+- `PrimitiveStringMultiline` —— 2/8 个有
+- `Image Padding` —— 1/8 个有
+- `ImpactInt` —— 1/8 个有
+- `LoaderGGUF` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 896 | 600 - 1024 | 4 | 82% |
-| 高度 | 1088 | 800 - 1152 | 4 | 86% |
-| LoRA 模型强度 | 1 | 0.6 - 1 | 3 | 78% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,8 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 600 - 1024，4 个样本，取值集中（一致性 82%）
-- 高度 中位数 1088，观测区间 800 - 1152，4 个样本，取值集中（一致性 86%）
-- LoRA 模型强度 中位数 1，观测区间 0.6 - 1，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、WD14Tagger|pysssss
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

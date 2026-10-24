@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_335
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker_ListReference, SaveAudio]
+coverage: 0.923857
+common_nodes: [CR Text, Image Comparer (rgthree), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json, 音频生成/音频生成/VoxCPM2长剧情音频克隆和设计_2046400394552676354.json, 音频生成/音频生成/多人格切换・文案自选 + AI 配音音频_2046574324978556929.json, 音频生成/音频生成/宇宙最强VoxCPM2 SBTI 27人格 自适应多人工作流_2044351623970955266.json, 音频生成/音频生成/高质量音频生成  文生音频_2044226621527298049.json]
+members: [图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json, 图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json, 图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json, 图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json, 图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json, 图片生成/图生图/一键换装Seedream-v5-pro 服装迁移 局部重绘  人物模特服饰换装 换装换脸 高度一致风_2075423755916103682.json, 图片生成/图生图/换脸换装 全能图片 图生图 高质量版_2099308533576716290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_335
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json、音频生成/音频生成/VoxCPM2长剧情音频克隆和设计_2046400394552676354.json、音频生成/音频生成/多人格切换・文案自选 + AI 配音音频_2046574324978556929.json、音频生成/音频生成/宇宙最强VoxCPM2 SBTI 27人格 自适应多人工作流_2044351623970955266.json、音频生成/音频生成/高质量音频生成  文生音频_2044226621527298049.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json、图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json、图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json、图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json、图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference`
-- `SaveAudio`
+全部 7 个 workflow 都包含：
+- `CR Text`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/5 个有
-- `LoadAudio` —— 1/5 个有
+- `RH_SeedreamV5ProImageToImage` —— 5/7 个有
+- `图像缩放V2_孤海` —— 5/7 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/7 个有
 
 ## 典型参数
 

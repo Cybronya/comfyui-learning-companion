@@ -1,33 +1,42 @@
 ---
 name: unknown_workflow_generic_63
 type: Unknown Workflow
-frequency: 12
+frequency: 18
 level: moderate
-coverage: 0.880583
-common_nodes: [RH_RhartVideoSparkvideo20FastTextToVideo, SaveVideo]
+coverage: 0.9325
+common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json, 视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json, 视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json, 视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频｜打字就出片 速度快不等待_2097529188193488898.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037034972783058946.json, 视频生成/文生视频/Seedance2.0 Fast文生视频_2037444767545561089.json, 视频生成/文生视频/Seedance2.0 Fast文生视频（RH版）_2054421311123927041.json, 视频生成/文生视频/seeddance2.0 文生视频_2040952630356217857.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-纯文本生视频】工作流_2037776749177610242.json, 视频生成/文生视频/地表最强超能视频2.0-Fast_文生视频_2037432927675490306.json]
+members: [图片生成/图生图/IndexTTS 2.5语音克隆V3_2087747979565428737.json, 音频生成/音频生成/Index TS 2.5 多音字语音克隆 - 多音字精准克隆 - 自然语音合成_2090680568408272898.json, 音频生成/音频生成/IndexTTS 2.5 声音克隆_2088126566806151169.json, 音频生成/音频生成/IndexTTS 2.5-多音字语音克隆_2094747190412529666.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（单素材）_2088833537683312641.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089775704459276290.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(中文版)_2089967983820099585.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(日文版)_2089788413020037121.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆(英文版)_2089775716555640834.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆多发音支持(中文版)_2090016341951598594.json, 音频生成/音频生成/IndexTTS 2.5多音字语音克隆多发音支持(中文版)_2090064407945629698.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2087829142862651394.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2087829153625231362.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2089188391467438081.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2089196373471227906.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2094792884804476930.json, 音频生成/音频生成/IndexTTS2.5音频向量克隆语音克隆_2089230919512186882.json, 音频生成/音频生成/语音克隆IndexTTS 2.5情感文本控制_2106003808852729858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_63
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸（内有提示词）_2066578222275448834.json、视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json、视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json、视频生成/文生视频/Seedance 2.0 Fast文生视频_2097300015759839233.json、视频生成/文生视频/Seedance2.0 Fast 文生视频_2046106419031711746.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/IndexTTS 2.5语音克隆V3_2087747979565428737.json、音频生成/音频生成/Index TS 2.5 多音字语音克隆 - 多音字精准克隆 - 自然语音合成_2090680568408272898.json、音频生成/音频生成/IndexTTS 2.5 声音克隆_2088126566806151169.json、音频生成/音频生成/IndexTTS 2.5-多音字语音克隆_2094747190412529666.json、音频生成/音频生成/IndexTTS 2.5声音克隆（单素材）_2088833537683312641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20FastTextToVideo`
-- `SaveVideo`
+全部 18 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/12 个有
+- `T8_IndexTTS25_Pronunciation` —— 9/18 个有
+- `T8_IndexTTS25_EmotionControl` —— 8/18 个有
+- `孤海注释` —— 6/18 个有
+- `Float` —— 5/18 个有
+- `T8_IndexTTS25_SamplingConfig` —— 5/18 个有
+- `AppParams` —— 1/18 个有
+- `easy showAnything` —— 1/18 个有
 
 ## 典型参数
 

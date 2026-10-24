@@ -1,46 +1,40 @@
 ---
 name: unknown_workflow_sampler_5
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.750571
-common_nodes: [EligenArgsConcat, LoadImage, LoadQwenImageDiffSynthiPipe, MaskToImage, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, SaveImage, SetEligenArgs]
+coverage: 0.9306
+common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, PDIMAGE_LongerSize, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
-missing: [CR Text, easy cleanGpuUsed, CR Prompt Text]
-members: [图片生成/文生图/1953929861947805698.json, 图片生成/文生图/1954024086618066945.json, 图片生成/文生图/1954036823100313601.json, 图片生成/文生图/1954578900275884034.json, 图片生成/文生图/1955090857663893506.json, 图片生成/文生图/1955738055426674689.json, 图片生成/文生图/1958077760537317377.json]
+missing: []
+members: [图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json, 图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json, 图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json, 图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json, 图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json, 图片生成/图生图/USO双风格迁移一致性图生图V1_1962481064499363842.json, 图片生成/图生图/USO双风格迁移一致性图生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2038432905407504386.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962486590113202178.json, 图片生成/文生图/USO单风格迁移一致性文生图V1_1962802231387009026.json, 图片生成/文生图/USO双风格迁移一致性文生图V1_1962487178385338370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1953929861947805698.json、图片生成/文生图/1954024086618066945.json、图片生成/文生图/1954036823100313601.json、图片生成/文生图/1954578900275884034.json、图片生成/文生图/1955090857663893506.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/AI绘图_USO双风格迁移一致性图生图V1_1962798893023014913.json、图片生成/图生图/USO人物动作编辑实验版V1_1962490013277663233.json、图片生成/图生图/USO单风格迁移一致性图生图V1_1962484551262056450.json、图片生成/图生图/USO单风格迁移一致性文生图V1，强烈推荐工作流（商用娱乐，目前最强！）_2039871492418183170.json、图片生成/图生图/USO单风格迁移一致性文生图_1964190709265911809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `EligenArgsConcat`
+全部 10 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageConcanate`
+- `JWInteger`
 - `LoadImage`
-- `LoadQwenImageDiffSynthiPipe`
-- `MaskToImage`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImageDiffSynthSampler`
+- `PDIMAGE_LongerSize`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
 - `SaveImage`
-- `SetEligenArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImageRatio2Size` —— 6/7 个有
-- `LoadQwenImageDiffSynthLora` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `CR Text` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `SetMultiEligenArgs` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `PreviewImage` —— 7/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/10 个有
 
 ## 典型参数
 
@@ -52,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、easy cleanGpuUsed、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,66 +3,76 @@ name: unknown_workflow_video_lora_sampler_414
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.901
-common_nodes: [CFGGuider, CLIPTextEncode, LTX2_NAG, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEnhanceAVideoKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.5104
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2072446244018016257.json, 视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json, 视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json, 视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json, 视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json]
+members: [视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json, 视频生成/图生视频/Wan Animate2.2动作迁移_1969366584278085634.json, 视频生成/图生视频/Wan-Animate动作表情迁移不遮罩_1968169520768647170.json, 视频生成/图生视频/Wan2.2 Animate人物动作+表情迁移_1972599286972231682.json, 视频生成/图生视频/animate动作参考_1993657124511219713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_414
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2072446244018016257.json、视频生成/文生视频/LTX2.3 完全体全整合_2070098600666951681.json、视频生成/文生视频/LTX2.3 导演台全能+OMNI音视频增强工作流_2053837157135069185.json、视频生成/文生视频/LTX2.3导演节点全功能+动作优化工作流_2058768723879751682.json、视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json、视频生成/图生视频/Wan Animate2.2动作迁移_1969366584278085634.json、视频生成/图生视频/Wan-Animate动作表情迁移不遮罩_1968169520768647170.json、视频生成/图生视频/Wan2.2 Animate人物动作+表情迁移_1972599286972231682.json、视频生成/图生视频/animate动作参考_1993657124511219713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `LTX2_NAG`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEnhanceAVideoKJ`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAELoaderKJ`
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 4/5 个有
-- `DualCLIPLoaderGGUF` —— 4/5 个有
-- `KSamplerSelect` —— 4/5 个有
-- `LTXVLatentUpsampler` —— 4/5 个有
-- `LatentUpscaleModelLoader` —— 4/5 个有
-- `LTX2SamplingPreviewOverride` —— 3/5 个有
-- `LTXVCropGuides` —— 3/5 个有
-- `UnetLoaderGGUF` —— 3/5 个有
-- `VAEDecodeTiled` —— 3/5 个有
-- `Display Any (rgthree)` —— 2/5 个有
-- `LTXDirectorCropGuides` —— 2/5 个有
-- `LTXVTiledVAEDecode` —— 2/5 个有
-- `Label (rgthree)` —— 2/5 个有
-- `ModelPreviewOverrideKJ` —— 2/5 个有
-- `TextGenerateLTX2Prompt` —— 2/5 个有
-- `UNETLoader` —— 2/5 个有
-- `DualCLIPLoader` —— 1/5 个有
-- `ManualSigmas` —— 1/5 个有
-- `SamplerEulerAncestral` —— 1/5 个有
+- `DWPreprocessor` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `PixelPerfectResolution` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `FaceMaskFromPoseKeypoints` —— 3/5 个有
+- `ImageCropByMaskAndResize` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `EmptyImage` —— 2/5 个有
+- `INTConstant` —— 2/5 个有
+- `JWInteger` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `OnnxDetectionModelLoader` —— 2/5 个有
+- `PoseAndFaceDetection` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `easy cleanGpuUsed` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GIMMVFI_interpolate` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `PoseDetectionOneToAllAnimation` —— 1/5 个有
+- `Primitive integer [Crystools]` —— 1/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `Switch image [Crystools]` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
+- `VHS_VideoInfoLoaded` —— 1/5 个有
+- `easy anythingIndexSwitch` —— 1/5 个有
 
 ## 典型参数
 

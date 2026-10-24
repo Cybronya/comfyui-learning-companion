@@ -1,99 +1,85 @@
 ---
 name: unknown_workflow_lora_sampler_unet_95
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.418
-common_nodes: [Any To String (mtb), AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, JjkText, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAudio, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, easy clearCacheAll, easy int, easy seed, 孤海注释]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.812143
+common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, QwenEditOutputExtractor, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1960222169320075266.json, 视频生成/图生视频/1977300673618419713.json]
+members: [图片生成/图生图/Qwen-Eidt-2511-遮罩定位精准重绘工作流_2005991188308119553.json, 图片生成/图生图/Qwen-Eidt-2511-遮罩精细化改图零偏移工作流_2003746502742843393.json, 图片生成/图生图/Qwen-Eidt-2511遮罩精准重绘_2012062229088182274.json, 图片生成/图生图/Qwen2511 局部改图_2016674287960199170.json, 图片生成/图生图/QwenEdit2511单角色提升一致性Lora_2010970305585483777.json, 图片生成/图生图/WH-AI-Studio-Qwen-Eidt-2511局部重绘_2015620805454991362.json, 图片生成/文生图/Qwen-Eidt-2511零偏移遮罩双图局部重绘_2009941483956215810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_95
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1960222169320075266.json、视频生成/图生视频/1977300673618419713.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-Eidt-2511-遮罩定位精准重绘工作流_2005991188308119553.json、图片生成/图生图/Qwen-Eidt-2511-遮罩精细化改图零偏移工作流_2003746502742843393.json、图片生成/图生图/Qwen-Eidt-2511遮罩精准重绘_2012062229088182274.json、图片生成/图生图/Qwen2511 局部改图_2016674287960199170.json、图片生成/图生图/QwenEdit2511单角色提升一致性Lora_2010970305585483777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：42%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
-- `AudioCrop`
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `ImageResizeKJv2`
-- `JjkText`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `ConditioningZeroOut`
+- `CropWithPadInfo`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewAudio`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `easy clearCacheAll`
-- `easy int`
-- `easy seed`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `H3SigmaRefiner` —— 1/2 个有
-- `LTXVConcatAVLatent` —— 1/2 个有
-- `LTXVSeparateAVLatent` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
-- `PT_H3ConcatAVLatent` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SolAttnMiniMax` —— 1/2 个有
-- `SplitSigmas` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `VAEEncodeAudio` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
-- `ZNGB_ImageBatchMulti` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
-- `llama_cpp_unload_model` —— 1/2 个有
+- `InpaintCrop` —— 6/7 个有
+- `InpaintStitch` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `SaveImage` —— 6/7 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 5/7 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `ImageAndMaskPreview` —— 5/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
+- `LayerUtility: ImageReel` —— 3/7 个有
+- `LayerUtility: ImageReelComposit` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `Anything Everywhere3` —— 1/7 个有
+- `CR Text Concatenate` —— 1/7 个有
+- `GetImage` —— 1/7 个有
+- `LayerMask: MaskPreview` —— 1/7 个有
+- `LayerUtility: SaveImagePlus` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `QwenEditAdaptiveLongestEdge` —— 1/7 个有
+- `Text Multiline` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 8 | 7 | 74% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 4 - 8，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（9/7 个样本）：Steps较低可能导致细节不足

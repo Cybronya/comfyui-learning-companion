@@ -1,62 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_149
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.5938
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.955143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json, 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json, 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2108373842572959745.json, 图片生成/文生图/多图编辑工作流_2105329811446124546.json, 图片生成/文生图/心然·寻源-qwen-iamge2.1图像编辑_2101982996449554433.json]
+members: [图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json, 图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成最新工作流_2093552366741180417.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成（多人）工作流_2095674532345499649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_149
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json、图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json、图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2108373842572959745.json、图片生成/文生图/多图编辑工作流_2105329811446124546.json、图片生成/文生图/心然·寻源-qwen-iamge2.1图像编辑_2101982996449554433.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json、图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `QwenImage21Cache` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `ComfySwitchNode` —— 3/5 个有
-- `ResolutionSelector` —— 3/5 个有
-- `Text` —— 3/5 个有
-- `忽略多组孤海` —— 3/5 个有
-- `BatchImagesNode` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `ImpactInt` —— 1/5 个有
-- `TextGenerateLTX2Prompt` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
+- `CR Text` —— 5/7 个有
+- `ImageUpscaleWithModel` —— 5/7 个有
+- `LazySwitchKJ_UTK` —— 5/7 个有
+- `PrimitiveFloat` —— 5/7 个有
+- `TextConcatenate_UTK` —— 5/7 个有
+- `UpscaleModelLoader` —— 5/7 个有
+- `easy boolean` —— 5/7 个有
+- `Apply Whisper` —— 4/7 个有
+- `AudioCrop` —— 4/7 个有
+- `DF_Int_to_Float` —— 4/7 个有
+- `FB_Qwen3TTSDialogueInference` —— 4/7 个有
+- `FB_Qwen3TTSRoleBank` —— 4/7 个有
+- `FB_Qwen3TTSVoiceClonePrompt` —— 4/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `CreateVideo` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `VAEDecodeAudio` —— 3/7 个有
+- `ImageScaleBy` —— 2/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1152 | 5 | 95% |
-| 高度 | 1024 | 1024 - 1536 | 5 | 82% |
-| 采样步数 | 35 | 25 - 50 | 5 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 5 | 25% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,10 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1152，5 个样本，取值集中（一致性 95%）
-- 高度 中位数 1024，观测区间 1024 - 1536，5 个样本，取值集中（一致性 82%）
-- 采样步数 中位数 35，观测区间 25 - 50，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

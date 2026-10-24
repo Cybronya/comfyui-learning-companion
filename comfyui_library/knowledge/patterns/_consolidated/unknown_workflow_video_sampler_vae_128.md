@@ -3,68 +3,66 @@ name: unknown_workflow_video_sampler_vae_128
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.571
-common_nodes: [AIO_Preprocessor, DWPreprocessor, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.679
+common_nodes: [AddLabel, DownloadAndLoadFlorence2Model, Florence2Run, GetImageRangeFromBatch, LoadWanVideoT5TextEncoder, PreviewImage, ReCamMasterPoseVisualizer, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoReCamMasterCameraEmbed, WanVideoReCamMasterDefaultCamera, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WidgetToString]
 problems: []
 missing: []
-members: [视频生成/图生视频/2057994609967583234.json, 视频生成/图生视频/1930978728523051010.json, 视频生成/图生视频/1934120963867107329.json, 视频生成/文生视频/ComfyUI Wan 2.1 VACE 多条件 - 更好的 ControlNet 控图视频生成_1931329103214129154.json]
+members: [视频生成/图生视频/ReCamMaster  AI视频运镜特效_1915621811168677889.json, 视频生成/图生视频/ReCamMaster视频运镜工作流_1911342097738465281.json, 视频生成/图生视频/Wan2.1 运镜工作流 大师系列｜图生视频_1911957387463356417.json, 视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_128
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2057994609967583234.json、视频生成/图生视频/1930978728523051010.json、视频生成/图生视频/1934120963867107329.json、视频生成/文生视频/ComfyUI Wan 2.1 VACE 多条件 - 更好的 ControlNet 控图视频生成_1931329103214129154.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/ReCamMaster  AI视频运镜特效_1915621811168677889.json、视频生成/图生视频/ReCamMaster视频运镜工作流_1911342097738465281.json、视频生成/图生视频/Wan2.1 运镜工作流 大师系列｜图生视频_1911957387463356417.json、视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `DWPreprocessor`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
+- `AddLabel`
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
+- `GetImageRangeFromBatch`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `SetNode`
+- `ReCamMasterPoseVisualizer`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoReCamMasterCameraEmbed`
+- `WanVideoReCamMasterDefaultCamera`
 - `WanVideoSampler`
-- `WanVideoVACEEncode`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `WidgetToString`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `GrowMaskWithBlur` —— 3/4 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 3/4 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 3/4 个有
-- `MaskToImage` —— 3/4 个有
-- `Mix Color By Mask` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `WanVideoTextEncode` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `WanVideoVACEModelSelect` —— 3/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `StringConstantMultiline` —— 2/4 个有
-- `WanVideoExperimentalArgs` —— 2/4 个有
-- `WanVideoLoraSelect` —— 2/4 个有
-- `WanVideoSLG` —— 2/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `RMBG` —— 1/4 个有
-- `WanVideoApplyNAG` —— 1/4 个有
+- `GetNode` —— 3/4 个有
+- `ImageResizeKJ` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `WanVideoVRAMManagement` —— 3/4 个有
+- `GetImageSizeAndCount` —— 2/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `CLIPLoader` —— 1/4 个有
+- `CLIPTextEncode` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
 - `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoMagCache` —— 1/4 个有
-- `WanVideoTextEncodeSingle` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `WanVideoSLG` —— 1/4 个有
+- `WanVideoTextEmbedBridge` —— 1/4 个有
 
 ## 典型参数
 

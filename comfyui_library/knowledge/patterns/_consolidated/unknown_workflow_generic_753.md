@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_753
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
+frequency: 4
+level: moderate
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1930576685161435138.json, 图片生成/文生图/1961644288889307138.json]
+missing: []
+members: [视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json, 视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json, 视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json, 视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_753
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1930576685161435138.json、图片生成/文生图/1961644288889307138.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json、视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json、视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json、视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `Text Multiline` —— 3/4 个有
+- `RH_CinematicVideoGenerator` —— 2/4 个有
+- `RH_Sora2_I2V_Batch` —— 2/4 个有
+- `RH_Veo3_I2V_Batch` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,5 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,74 +3,64 @@ name: unknown_workflow_video_sampler_clip_223
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7745
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageScaleBy, JWInteger, KSamplerAdvanced, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Pick From Batch (mtb), PrimitiveStringMultiline, RIFE VFI, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, easy showAnything, wanBlockSwap]
+coverage: 0.928
+common_nodes: [ApplyFBCacheOnModel, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, JWImageResizeByLongerSide, KSamplerSelect, LTXVApplySTG, LTXVPreprocess, LTXVScheduler, LayerUtility: PurgeVRAM, LoadImage, Note Plus (mtb), PatchModelPatcherOrder, PathchSageAttentionKJ, RH_Captioner, RandomNoise, STGGuider, SamplerCustomAdvanced, String Replace (mtb), StringFunction|pysssss, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2036101580507844609.json, 视频生成/图生视频/1986816558620209154.json]
+members: [视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json, 视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_223
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2036101580507844609.json、视频生成/图生视频/1986816558620209154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json、视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ApplyFBCacheOnModel`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ImageScaleBy`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CheckpointLoaderSimple`
+- `JWImageResizeByLongerSide`
+- `KSamplerSelect`
+- `LTXVApplySTG`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
+- `Note Plus (mtb)`
+- `PatchModelPatcherOrder`
 - `PathchSageAttentionKJ`
-- `Pick From Batch (mtb)`
-- `PrimitiveStringMultiline`
-- `RIFE VFI`
-- `Seed (rgthree)`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `RH_Captioner`
+- `RandomNoise`
+- `STGGuider`
+- `SamplerCustomAdvanced`
+- `String Replace (mtb)`
+- `StringFunction|pysssss`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy cleanGpuUsed`
 - `easy showAnything`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `Bool` —— 1/2 个有
-- `ConvertAny2Float` —— 1/2 个有
-- `EmptyAudio` —— 1/2 个有
-- `HunyuanVideoFoley` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `EmptyLTXVLatentVideo` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `LTXVAddGuide` —— 1/2 个有
+- `LTXVConditioning` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVImgToVideo` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 10 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

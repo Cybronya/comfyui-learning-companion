@@ -1,70 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_43
 type: Unknown Workflow
-frequency: 22
+frequency: 23
 level: moderate
-coverage: 0.926818
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.834174
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/图生视频，可编辑提示词_2058044967960010754.json, 视频生成/图生视频/1985933619749367810.json, 视频生成/图生视频/1958522667143950337.json, 视频生成/图生视频/1958523149342162945.json, 视频生成/图生视频/2053339197372674049.json, 视频生成/图生视频/2052258401169752065.json, 视频生成/图生视频/2070131687614406658.json, 视频生成/图生视频/2075910446967779329.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2083148321954291714.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2093644198363881473.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2093676510929575938.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2101617649074659330.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2101629864922140674.json, 视频生成/图生视频/wan2.2电商服装展示_模特演示视频保持一致性工作流_2105246871684993026.json, 视频生成/图生视频/2052185338583498754.json, 视频生成/图生视频/2057694453565054977.json, 视频生成/图生视频/2045576012469112833.json, 视频生成/图生视频/2056262316534091777.json, 视频生成/图生视频/2056538120484638722.json, 视频生成/图生视频/电商服装展示_模特演示视频-wan2.2_2096031121212530690.json, 视频生成/图生视频/2052610922312679426.json, 视频生成/文生视频/电商服装展示_模特演示视频-wan2.2_2051570109155688449.json]
+members: [视频生成/文生视频/(6+6)Wan2.2 Smooth Mix高动态文生视频(KJ版)_1978740744045400065.json, 视频生成/文生视频/(KJ版)Wan2.2 MiniCpm 4.5视频洗稿工作流V1_1961658398267916290.json, 视频生成/文生视频/(KJ版)Wan2.2 Nova文生视频V1_1969281370944139266.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度+MPS高低噪奖励模型加速版V1_1964924575370854402.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度HPS低噪加速版V1_1964929046893182977.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度HPS高噪MPS低噪加速版V1_1964934510620102657.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度MPS低噪加速版V1_1964929542555095041.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度MPS高噪HPS低噪加速版V1_1964927799280680961.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度加速版V1_1964919503211610114.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度双HPS加速版V1_1964931561881747457.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（光源版）_1950141714336014337.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（光线类型）_1950148142277771266.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（情绪）_1950200316404916225.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（时间光）_1950154187399192578.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（构图法）_1950159020893061122.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（镜头类型）_1950180748268584962.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（镜头距离）_1950165203683033089.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（镜头运动）_1950205913674244097.json, 视频生成/文生视频/(KJ版)Wan2.2 文生视频精准调度加速版V4（加速及质量提高）_1950086334457274370.json, 视频生成/文生视频/(Palingenesis版)Wan2.2 文生视频高动态加速版V1_1972111273070620674.json, 视频生成/文生视频/Wan2.2 文生视频HPS高噪MPS低噪加速版V1_1969009834282655745.json, 视频生成/文生视频/Wan2.2 精准调度文生视频加速版_1966009360197521409.json, 视频生成/文生视频/（自用）Wan2.2 Palingenesis文生视频加速版V1_1972489940305113089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_43
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/图生视频，可编辑提示词_2058044967960010754.json、视频生成/图生视频/1985933619749367810.json、视频生成/图生视频/1958522667143950337.json、视频生成/图生视频/1958523149342162945.json、视频生成/图生视频/2053339197372674049.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/文生视频/(6+6)Wan2.2 Smooth Mix高动态文生视频(KJ版)_1978740744045400065.json、视频生成/文生视频/(KJ版)Wan2.2 MiniCpm 4.5视频洗稿工作流V1_1961658398267916290.json、视频生成/文生视频/(KJ版)Wan2.2 Nova文生视频V1_1969281370944139266.json、视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度+MPS高低噪奖励模型加速版V1_1964924575370854402.json、视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度HPS低噪加速版V1_1964929046893182977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_VideoCombine`
+全部 23 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `JWInteger`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 21/22 个有
-- `PrimitiveInt` —— 21/22 个有
-- `WanImageToVideo` —— 21/22 个有
-- `INTConstant` —— 20/22 个有
-- `DownloadAndLoadGIMMVFIModel` —— 19/22 个有
-- `GIMMVFI_interpolate` —— 19/22 个有
-- `ImageConcatMulti` —— 19/22 个有
-- `PainterVRAM` —— 19/22 个有
-- `SimpleMath+` —— 19/22 个有
-- `ModelPatchTorchSettings` —— 3/22 个有
-- `easy cleanGpuUsed` —— 3/22 个有
-- `JWFloat` —— 2/22 个有
-- `JWInteger` —— 2/22 个有
-- `RIFE VFI` —— 2/22 个有
-- `UnetLoaderGGUF` —— 2/22 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/22 个有
-- `MathExpression|pysssss` —— 1/22 个有
-- `WanFirstLastFrameToVideo` —— 1/22 个有
+- `CR Prompt Text` —— 22/23 个有
+- `VHS_VideoCombine` —— 22/23 个有
+- `WanVideoTorchCompileSettings` —— 22/23 个有
+- `Float` —— 13/23 个有
+- `WanVideoScheduler` —— 13/23 个有
+- `WanVideoSigmaToStep` —— 13/23 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/23 个有
+- `ImageFromBatch+` —— 2/23 个有
+- `AILab_MiniCPM_4_V` —— 1/23 个有
+- `LayerUtility: PurgeVRAM` —— 1/23 个有
+- `LoadImage` —— 1/23 个有
+- `LoadVideo` —— 1/23 个有
+- `RHHiddenNodes` —— 1/23 个有
+- `SaveImage` —— 1/23 个有
+- `StringToFloatList` —— 1/23 个有
+- `TT_img_enc` —— 1/23 个有
+- `VHS_LoadVideoFFmpeg` —— 1/23 个有
+- `easy showAnything` —— 1/23 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 22 | 82% |
-| Prompt 约束强度(CFG) | 12 | 4 - 20 | 22 | 70% |
-| 采样算法 | 1 | 0 - 1 | 22 | 78% |
-| 调度器 | euler | - | 22 | 100% |
-| 重绘幅度 | simple | - | 22 | 95% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,9 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，22 个样本，一致性 82%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 4 - 20，22 个样本
-- 采样算法 中位数 1，观测区间 0 - 1，22 个样本
-- 调度器 最常用 euler，22 个样本，一致性 100%
-- 重绘幅度 最常用 simple，22 个样本，一致性 95%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,76 +3,52 @@ name: unknown_workflow_video_lora_sampler_866
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5135
-common_nodes: [CLIPVisionLoader, DWPreprocessor, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int]
+coverage: 0.9425
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, SplineEditor, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1970700408228376577.json, 视频生成/图生视频/1970265248752148481.json]
+members: [视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json, 视频生成/文生视频/Wan-Move潜在轨迹引导视频生成_1998898965116542977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_866
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1970700408228376577.json、视频生成/图生视频/1970265248752148481.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json、视频生成/文生视频/Wan-Move潜在轨迹引导视频生成_1998898965116542977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PixelPerfectResolution`
-- `PreviewAny`
-- `SetNode`
-- `VHS_LoadVideo`
+- `SplineEditor`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 1/2 个有
-- `ConvertAny2Int` —— 1/2 个有
-- `Display Int (rgthree)` —— 1/2 个有
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `FaceMaskFromPoseKeypoints` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `Florence2toCoordinates` —— 1/2 个有
-- `GrowMask` —— 1/2 个有
-- `ImageCropByMaskAndResize` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `Switch any [Crystools]` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `LoadWanVideoT5TextEncoder` —— 1/2 个有
+- `RepeatImageBatch` —— 1/2 个有
+- `WanVideoATITracks` —— 1/2 个有
+- `WanVideoATITracksVisualize` —— 1/2 个有
+- `WanVideoAddWanMoveTracks` —— 1/2 个有
+- `WanVideoTextEncode` —— 1/2 个有
+- `WanVideoTextEncodeCached` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `WanVideoWanDrawWanMoveTracks` —— 1/2 个有
 
 ## 典型参数
 

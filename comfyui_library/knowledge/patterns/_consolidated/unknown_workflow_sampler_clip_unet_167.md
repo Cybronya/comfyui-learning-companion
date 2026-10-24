@@ -1,70 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_167
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.862
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: weak
+coverage: 0.913875
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/ideogram4_2083390180580483074.json, 图片生成/文生图/ideogram4_光学眼镜模特(+提示词优化+KJ)_2072942885963657217.json, 图片生成/文生图/ideogram4摇卡_光学眼镜模特(+提示词优化)_2072938272011153409.json, 图片生成/文生图/设计师专用模型Ideogram4美学大师文生图_2064893847733362689.json]
+members: [图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json, 图片生成/文生图/flux文生图(自用）_1891744030592774146.json, 图片生成/文生图/flux文生图_1896040375998414850.json, 图片生成/文生图/flux文生图_1896043053692092417.json, 图片生成/文生图/flux生图工作流_1946106579613609985.json, 图片生成/文生图/小红书生活FLUX一键生成极致逼真美女—comfyui工作流_1957765376640909314.json, 图片生成/文生图/文生四宫格图_1908149869620375554.json, 图片生成/文生图/文生四宫格图_2060284327476416514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_167
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/ideogram4_2083390180580483074.json、图片生成/文生图/ideogram4_光学眼镜模特(+提示词优化+KJ)_2072942885963657217.json、图片生成/文生图/ideogram4摇卡_光学眼镜模特(+提示词优化)_2072938272011153409.json、图片生成/文生图/设计师专用模型Ideogram4美学大师文生图_2064893847733362689.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/flux1-dev-fp8与flux1-dev-Q4模型对比_1836327501579841537.json、图片生成/文生图/flux文生图(自用）_1891744030592774146.json、图片生成/文生图/flux文生图_1896040375998414850.json、图片生成/文生图/flux文生图_1896043053692092417.json、图片生成/文生图/flux生图工作流_1946106579613609985.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGOverride`
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `ConditioningZeroOut`
-- `DualModelGuider`
-- `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
+- `DualCLIPLoader`
 - `KSamplerSelect`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomCombo` —— 3/4 个有
-- `AspectRatio` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `PreviewTextNode` —— 2/4 个有
-- `RHLLMChatNode` —— 2/4 个有
-- `ResolutionSelector` —— 2/4 个有
-- `ComfyMathExpression` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `Ideogram4PromptBuilderKJ` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `RH_LLMAPI_Pro_Node` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `easy anythingIndexSwitch` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `EmptyLatentImage` —— 5/8 个有
+- `FluxGuidance` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `UnetLoaderGGUF` —— 3/8 个有
+- `CheckpointLoaderSimple` —— 2/8 个有
+- `EmptySD3LatentImage` —— 2/8 个有
+- `ModelSamplingFlux` —— 2/8 个有
+- `DualCLIPLoaderGGUF` —— 1/8 个有
+- `ImageCrop+` —— 1/8 个有
+- `RandomPrompt` —— 1/8 个有
+- `SDXLEmptyLatentSizePicker+` —— 1/8 个有
+- `StringFunction|pysssss` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 512 - 1448 | 5 | 70% |
+| 高度 | 1024 | 1 - 1920 | 6 | 38% |
 
 ## 常见问题
 
@@ -72,4 +63,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 512 - 1448，5 个样本
+- 高度 中位数 1024，观测区间 1 - 1920，6 个样本，取值分散，一致性仅 38%

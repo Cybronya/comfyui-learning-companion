@@ -3,114 +3,54 @@ name: unknown_workflow_video_lora_sampler_398
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.5692
-common_nodes: [Any Switch (rgthree), BlockifyMask, Bookmark (rgthree), CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageBatch, ImageCompositeMasked, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageToMask, Label (rgthree), LayerMask: DrawBBoxMaskV2, LayerMask: MaskGrow, LayerMask: ObjectDetectorMask, LayerMask: SegformerB2ClothesUltra, LayerUtility: CropByMask V2, LoadImage, LoadWanVideoT5TextEncoder, Mask Fill Holes, MaskToImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PowerVisionObjectDetection, PowerVisionQwenModelLoader, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, RH_Translator, RMBG, RepeatImageBatch, ResizeMask, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, StringConcatenate, Switch any [Crystools], ToBinaryMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy isMaskEmpty, easy sam3ModelLoader, easy sam3VideoSegmentation, easy seed, easy showAnything]
+coverage: 0.7508
+common_nodes: [BasicScheduler, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, ImageConcanate, JjkText, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, PrimitiveInt, SamplerCustom, SplitSigmas, TextConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json, 视频生成/图生视频/2033533523109355521.json, 视频生成/图生视频/2031919124909137922.json, 视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json, 视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json]
+members: [视频生成/图生视频/Bernini 多模态视频生成与编辑 动作迁移_2062860702452375553.json, 视频生成/图生视频/Bernini 多模态视频生成与编辑_2062040034672467969.json, 视频生成/图生视频/Bernini多模态视频生成与编辑动作迁移动作模仿视频模仿动作复刻跳舞模仿_2062941002897387522.json, 视频生成/图生视频/Bernini多模态视频生成与编辑动作迁移动作模仿视频模仿动作复刻跳舞模仿_2063167262584041473.json, 视频生成/图生视频/WAN2.2 BERNINI动作迁移（视频）_2078377798263197698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_398
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json、视频生成/图生视频/2033533523109355521.json、视频生成/图生视频/2031919124909137922.json、视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json、视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Bernini 多模态视频生成与编辑 动作迁移_2062860702452375553.json、视频生成/图生视频/Bernini 多模态视频生成与编辑_2062040034672467969.json、视频生成/图生视频/Bernini多模态视频生成与编辑动作迁移动作模仿视频模仿动作复刻跳舞模仿_2062941002897387522.json、视频生成/图生视频/Bernini多模态视频生成与编辑动作迁移动作模仿视频模仿动作复刻跳舞模仿_2063167262584041473.json、视频生成/图生视频/WAN2.2 BERNINI动作迁移（视频）_2078377798263197698.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BlockifyMask`
-- `Bookmark (rgthree)`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `Label (rgthree)`
-- `LayerMask: DrawBBoxMaskV2`
-- `LayerMask: MaskGrow`
-- `LayerMask: ObjectDetectorMask`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: CropByMask V2`
+- `BasicScheduler`
+- `BerniniConditioning`
+- `BerniniPromptEnhancer`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageConcanate`
+- `JjkText`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Mask Fill Holes`
-- `MaskToImage`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
-- `PowerVisionObjectDetection`
-- `PowerVisionQwenModelLoader`
-- `PreviewImage`
-- `PrimitiveBoolean`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
 - `PrimitiveInt`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_Translator`
-- `RMBG`
-- `RepeatImageBatch`
-- `ResizeMask`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `SimpleMath+`
-- `StringConcatenate`
-- `Switch any [Crystools]`
-- `ToBinaryMask`
+- `SamplerCustom`
+- `SplitSigmas`
+- `TextConcatenate`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy ifElse`
-- `easy int`
-- `easy isMaskEmpty`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy seed`
-- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PointsEditor` —— 4/5 个有
-- `AddLabel` —— 3/5 个有
-- `ImpactIfNone` —— 3/5 个有
-- `Note Plus (mtb)` —— 3/5 个有
-- `easy framesEditor` —— 3/5 个有
-- `DownloadAndLoadSAM2Model` —— 2/5 个有
-- `Sam2Segmentation` —— 2/5 个有
+- `BatchImagesNode` —— 4/5 个有
 
 ## 典型参数
 

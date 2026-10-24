@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_47
 type: Text To Image
-frequency: 9
-level: weak
-coverage: 0.838556
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 12
+level: moderate
+coverage: 0.897167
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, Power Lora Loader (rgthree)]
-members: [图片生成/文生图/1955085568910790658.json, 图片生成/文生图/1955863541137985538.json, 图片生成/文生图/1985898941021659137.json, 图片生成/文生图/Anima-Base1.0 +Lora 芙莉莲（提示词指南）_2058148244718444546.json, 图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2077756477330247682.json, 图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2096069355342749697.json, 图片生成/文生图/Krea2 Turbo文生图（人像增强_低清晰快速版）_2077588064620343297.json, 图片生成/文生图/Krea2+Text-to-Image+(场景增强_低清晰快速版）_2079889659416637442.json, 图片生成/文生图/krea2+klein+zimage高质量生图_2083406223365468162.json]
+missing: []
+members: [图片生成/图生图/Zimage提示词海报逃离城市-拥抱自然_2057800201645154306.json, 图片生成/图生图/电商海报生成_2036017494078525441.json, 图片生成/图生图/百度ERNIE-image-turbo-自动提示词工作流_2044578766483103746.json, 图片生成/文生图/Z-image-Kook+Qwn3.5 反推提示词海报设计_2037007954775379969.json, 图片生成/文生图/Z-image头像生成器V2.0_2054103430381228033.json, 图片生成/文生图/Z-image头像生成器_1993848457626664961.json, 图片生成/文生图/Z-image头像生成器文生图_2052591390210707458.json, 图片生成/文生图/Zimage头像生成器_2057990922343899138.json, 图片生成/文生图/Zimage头像生成器_2061075705567473666.json, 图片生成/文生图/Zimage头像生成器_2072198363075923969.json, 图片生成/文生图/Zimage提示词海报设计制作_2054214009636835329.json, 图片生成/文生图/提示词+海报一键生成_2046250266453876738.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_47
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1955085568910790658.json、图片生成/文生图/1955863541137985538.json、图片生成/文生图/1985898941021659137.json、图片生成/文生图/Anima-Base1.0 +Lora 芙莉莲（提示词指南）_2058148244718444546.json、图片生成/文生图/Krea2 Turbo文生图 工作流+全节点注释_2077756477330247682.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Zimage提示词海报逃离城市-拥抱自然_2057800201645154306.json、图片生成/图生图/电商海报生成_2036017494078525441.json、图片生成/图生图/百度ERNIE-image-turbo-自动提示词工作流_2044578766483103746.json、图片生成/文生图/Z-image-Kook+Qwn3.5 反推提示词海报设计_2037007954775379969.json、图片生成/文生图/Z-image头像生成器V2.0_2054103430381228033.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -31,53 +31,48 @@ source: knowledge_consolidation
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 8/9 个有
-- `CFGNorm` —— 7/9 个有
-- `LoraLoaderModelOnly` —— 7/9 个有
-- `Int` —— 6/9 个有
-- `CR Text` —— 5/9 个有
-- `ConditioningZeroOut` —— 5/9 个有
-- `KSamplerAdvanced` —— 5/9 个有
-- `PrimitiveStringMultiline` —— 5/9 个有
-- `SeedNode` —— 5/9 个有
-- `VAEEncode` —— 5/9 个有
-- `QZ_ResolutionPreset` —— 4/9 个有
-- `LoadImage` —— 3/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
-- `PreviewAny` —— 2/9 个有
-- `RHLLMChatNode` —— 2/9 个有
-- `EmptySD3LatentImage` —— 1/9 个有
-- `FluxResolutionNode` —— 1/9 个有
-- `Power Lora Loader (rgthree)` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 11/12 个有
+- `PreviewImage` —— 11/12 个有
+- `ConditioningZeroOut` —— 7/12 个有
+- `CR Text` —— 6/12 个有
+- `Latent Noise Injection` —— 6/12 个有
+- `ShowText|pysssss` —— 6/12 个有
+- `FastFilmGrain` —— 5/12 个有
+- `LayerColor: BrightnessContrastV2` —— 5/12 个有
+- `LoadImage` —— 1/12 个有
+- `Text Concatenate (JPS)` —— 1/12 个有
+- `easy positive` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 720 - 1024 | 9 | 88% |
-| 高度 | 1024 | 1024 - 1368 | 9 | 88% |
-| 采样步数 | 10 | 4 - 30 | 6 | 25% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 10 | 9 | 14% |
-| 采样算法 | euler | - | 9 | 44% |
-| 调度器 | simple | - | 9 | 44% |
-| 重绘幅度 | 1 | 0.25 - 1 | 6 | 55% |
+| 采样步数 | 9 | 8 - 10 | 12 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 58% |
+| 调度器 | sgm_uniform | - | 12 | 50% |
+| 重绘幅度 | 0.65 | 0.3 - 1 | 12 | 46% |
+| 宽度 | 1024 | 720 - 1104 | 12 | 91% |
+| 高度 | 1536 | 1280 - 1920 | 12 | 87% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 720 - 1024，9 个样本，取值集中（一致性 88%）
-- 高度 中位数 1024，观测区间 1024 - 1368，9 个样本，取值集中（一致性 88%）
-- 采样步数 中位数 10，观测区间 4 - 30，6 个样本，取值分散，一致性仅 25%
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 10，9 个样本，取值分散，一致性仅 14%
-- 采样算法 最常用 euler，9 个样本，一致性 44%
-- 调度器 最常用 simple，9 个样本，一致性 44%
-- 重绘幅度 中位数 1，观测区间 0.25 - 1，6 个样本
-- 高发问题（8/9 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Power Lora Loader (rgthree)
+- 采样步数 中位数 9，观测区间 8 - 10，12 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 58%
+- 调度器 最常用 sgm_uniform，12 个样本，一致性 50%
+- 重绘幅度 中位数 0.65，观测区间 0.3 - 1，12 个样本，取值分散，一致性仅 46%
+- 宽度 中位数 1024，观测区间 720 - 1104，12 个样本，取值集中（一致性 91%）
+- 高度 中位数 1536，观测区间 1280 - 1920，12 个样本，取值集中（一致性 87%）
+- 高发问题（6/12 个样本）：Steps较低可能导致细节不足

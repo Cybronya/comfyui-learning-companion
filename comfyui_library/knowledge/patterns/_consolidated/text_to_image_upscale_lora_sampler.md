@@ -1,31 +1,31 @@
 ---
 name: text_to_image_upscale_lora_sampler
 type: Text To Image
-frequency: 20
-level: weak
-coverage: 0.80025
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VAEDecode]
+frequency: 22
+level: strong
+coverage: 0.842091
+common_nodes: [CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2⭐玉京仙宫玄幻风（注释内有模型、提示词下载链接）_2096061187103485953.json, 图片生成/文生图/Krea2文生图-天宫中式巨构_2097024511869804546.json, 图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099205852929548289.json, 图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099579173265301506.json, 图片生成/文生图/Krea2白玉AIO文生图自用工作流，文生图高质量文本到图像生成方案_2107955833001832449.json, 图片生成/文生图/krea2-白玉AIO-文生图(自用)_2107455409173913602.json, 图片生成/文生图/krea2墨玉PRO版文生图_2088252923926114306.json, 图片生成/文生图/krea2文生图｜美少女人像写真生成_2095239847958106114.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2082446128871727105.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2098927912908058625.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2098985661717114882.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2099661599010287617.json, 图片生成/文生图/krea2🌸白玉AIO🌸文生图_2101522285130768385.json, 图片生成/文生图/krea2🔺墨玉PRO版🔺文生图_2075228124945666049.json, 图片生成/文生图/krea2🔺墨玉焚诀🔺文生图_无角标导出_2079555165958533121.json, 图片生成/文生图/krea2🔺墨玉焚诀🔺文生图_高清放大 无角标导出_2080176285283872770.json, 图片生成/文生图/中国风玄幻大作｜Krea2玉京仙宫场景文生图_2096621224637063170.json, 图片生成/文生图/玉京仙宫玄幻风场景｜Krea2中国风文生图生成_2096302133913145346.json, 图片生成/文生图/白玉AIO人像写真｜krea2美少女文生图_2095512968669782018.json, 图片生成/文生图/高清放大｜Krea2 lora动漫角色文生图基础工作流_2089832493032763394.json]
+members: [图片生成/文生图/SD教程专用-图像+三视图_2035383250163605506.json, 图片生成/文生图/Z Image Base _ Kook__如梦似幻_2053800942981664769.json, 图片生成/文生图/Z-Image-Turbo瑶光-超真实增强版_2067510090214760449.json, 图片生成/文生图/Z-Image-出人设图_2051158160467087361.json, 图片生成/文生图/Z-Image-出人设图_超真实细节增强_2038461745076899841.json, 图片生成/文生图/Z-Image-文生图-超真实细节增强_2064964807132008450.json, 图片生成/文生图/Z-Image-文生图-超真实细节增强_2065333042721411074.json, 图片生成/文生图/Z-Image-瑶光+超现实3.0-人设图v2.0_2044973775908769794.json, 图片生成/文生图/Z-Image-瑶光版-超真实细节_2082340410323726337.json, 图片生成/文生图/Z-Image-瑶光版-超真实细节增强+4K放大_2056677168402489346.json, 图片生成/文生图/Z-Image-瑶光版-超真实细节增强-人物四视图_2094975538946461697.json, 图片生成/文生图/Z-Image-瑶光版-超真实细节增强-邻家AI大女孩_2043199429162831874.json, 图片生成/文生图/Z-Image-瑶光版-超真实细节增强_2034887394511556610.json, 图片生成/文生图/Z-Image-真实细节增强_2046912552923303937.json, 图片生成/文生图/Z-Image-空姐模特_2066181843638349824.json, 图片生成/文生图/Z-Image-超真实细节增强_2036059631230918657.json, 图片生成/文生图/Z-Image短剧拍档支持场景和角色_2055879009824722945.json, 图片生成/文生图/Z-image-base 自动提示词润色生成真实人像 - 4K_2039950346277097473.json, 图片生成/文生图/Z-image文生图批量工作流直出4K（动漫短剧资产生图抽卡专用）_2102674578551164929.json, 图片生成/文生图/ZImage+Kook大佬瑶光lora+Kook如梦似幻lora_2059586906224156674.json, 图片生成/文生图/ZImage+Kook瑶光lora真实人像工作流_2042132652228087809.json, 图片生成/文生图/z_image 角色资产制作+如梦似幻 超绝美感+SEEDVR2放大_2112395440854487041.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Krea2⭐玉京仙宫玄幻风（注释内有模型、提示词下载链接）_2096061187103485953.json、图片生成/文生图/Krea2文生图-天宫中式巨构_2097024511869804546.json、图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099205852929548289.json、图片生成/文生图/Krea2白玉AIO文生图 全功能一体化图片生成工作流_2099579173265301506.json、图片生成/文生图/Krea2白玉AIO文生图自用工作流，文生图高质量文本到图像生成方案_2107955833001832449.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/SD教程专用-图像+三视图_2035383250163605506.json、图片生成/文生图/Z Image Base _ Kook__如梦似幻_2053800942981664769.json、图片生成/文生图/Z-Image-Turbo瑶光-超真实增强版_2067510090214760449.json、图片生成/文生图/Z-Image-出人设图_2051158160467087361.json、图片生成/文生图/Z-Image-出人设图_超真实细节增强_2038461745076899841.json…）
 
 - **类型**：Text To Image
-- **样本数**：20
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 22 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
 - `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoraLoaderModelOnly`
@@ -33,52 +33,54 @@ source: knowledge_consolidation
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 19/20 个有
-- `Image Comparer (rgthree)` —— 19/20 个有
-- `PathchSageAttentionKJ` —— 19/20 个有
-- `PreviewImage` —— 19/20 个有
-- `Seed (rgthree)` —— 19/20 个有
-- `CheckpointLoaderSimple` —— 18/20 个有
-- `TTResolutionSelector` —— 16/20 个有
-- `LayerColor: Brightness & Contrast` —— 15/20 个有
-- `LayerFilter: AddGrain` —— 15/20 个有
-- `CLIPLoader` —— 9/20 个有
-- `UNETLoader` —— 9/20 个有
-- `VAELoader` —— 9/20 个有
-- `JjkText` —— 8/20 个有
-- `solarL_SaveImagesToZip` —— 8/20 个有
-- `孤海注释` —— 8/20 个有
-- `EmptyImage` —— 5/20 个有
-- `QZ_ResolutionPreset` —— 1/20 个有
+- `CLIPLoader` —— 21/22 个有
+- `CR Text` —— 20/22 个有
+- `Fast Groups Bypasser (rgthree)` —— 20/22 个有
+- `PreviewImage` —— 20/22 个有
+- `INTConstant` —— 19/22 个有
+- `FastFilmGrain` —— 17/22 个有
+- `LayerColor: BrightnessContrastV2` —— 17/22 个有
+- `LoadImage` —— 2/22 个有
+- `MuyeTextEditOutput` —— 2/22 个有
+- `CLIPLoaderGGUF` —— 1/22 个有
+- `CompressImages` —— 1/22 个有
+- `HAIGC_SaveImagesToZip` —— 1/22 个有
+- `LayerUtility: TextJoin` —— 1/22 个有
+- `RH_LLMAPI_Pro_Node` —— 1/22 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/22 个有
+- `easy showAnything` —— 1/22 个有
+- `孤海注释` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1088 | 80 - 2560 | 20 | 13% |
-| 高度 | 1500 | 80 - 1920 | 20 | 18% |
-| 采样步数 | 8 | 4 - 8 | 20 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 20 | 29% |
-| 采样算法 | euler | - | 20 | 55% |
-| 调度器 | simple | - | 20 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 采样步数 | 8 | 8 - 8 | 22 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
+| 采样算法 | res_2s | - | 22 | 77% |
+| 调度器 | bong_tangent | - | 22 | 77% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 1080 | 1080 - 1920 | 22 | 74% |
+| 高度 | 1920 | 1080 - 1920 | 22 | 82% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 30/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 22/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1088，观测区间 80 - 2560，20 个样本，取值分散，一致性仅 13%
-- 高度 中位数 1500，观测区间 80 - 1920，20 个样本，取值分散，一致性仅 18%
-- 采样步数 中位数 8，观测区间 4 - 8，20 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，20 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，20 个样本，一致性 55%
-- 调度器 最常用 simple，20 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 高发问题（30/20 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，22 个样本，一致性 77%
+- 调度器 最常用 bong_tangent，22 个样本，一致性 77%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 1080 - 1920，22 个样本
+- 高度 中位数 1920，观测区间 1080 - 1920，22 个样本，取值集中（一致性 82%）
+- 高发问题（22/22 个样本）：Steps较低可能导致细节不足

@@ -1,101 +1,97 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_17
 type: Text To Image
-frequency: 3
-level: weak
-coverage: 0.778333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize+, ImageSmartSharpen+, JoinImageWithAlpha, KSampler, KSamplerAdvanced, LatentUpscaleBy, LoraLoaderModelOnly, PrimitiveFloat, ResizeImageMaskNode, ResolutionSelector, Seed (rgthree), SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SimpleMathDual+, SplitImageWithAlpha, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.9235
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2新模型开源二采出图4种图片放大汇总工作流详拆_2100305559923806210.json, 图片生成/文生图/Krea2生图+SeedVR2-int8放大 (1)_2101836851886780417.json, 图片生成/文生图/💗Krea2新模型开源二采出图！4种图片放大汇总工作流详拆系列09集_2098393973126688769.json]
+members: [视频生成/文生视频/文戏不油武戏带感 MiniMax H3双采全能参考生视频V2_2104287266226139138.json, 视频生成/文生视频/文武双修均衡版｜MiniMax H3双采动漫短剧_2096624296683720706.json, 视频生成/文生视频/电影质感拉满｜MiniMax H3双采参考文武双修均衡_2096558764462792706.json, 视频生成/文生视频/高动态战斗专属｜BUNNY_H3双采放大FL2VA套件_2096632033136177153.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_17
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea2新模型开源二采出图4种图片放大汇总工作流详拆_2100305559923806210.json、图片生成/文生图/Krea2生图+SeedVR2-int8放大 (1)_2101836851886780417.json、图片生成/文生图/💗Krea2新模型开源二采出图！4种图片放大汇总工作流详拆系列09集_2098393973126688769.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/文戏不油武戏带感 MiniMax H3双采全能参考生视频V2_2104287266226139138.json、视频生成/文生视频/文武双修均衡版｜MiniMax H3双采动漫短剧_2096624296683720706.json、视频生成/文生视频/电影质感拉满｜MiniMax H3双采参考文武双修均衡_2096558764462792706.json、视频生成/文生视频/高动态战斗专属｜BUNNY_H3双采放大FL2VA套件_2096632033136177153.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize+`
-- `ImageSmartSharpen+`
-- `JoinImageWithAlpha`
+- `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LatentUpscaleBy`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
 - `PrimitiveFloat`
-- `ResizeImageMaskNode`
+- `RandomNoise`
 - `ResolutionSelector`
-- `Seed (rgthree)`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SimpleMathDual+`
-- `SplitImageWithAlpha`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_DLSS5Enhance` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `VOSR2ModelLoader` —— 2/3 个有
-- `VOSR2Upscale` —— 2/3 个有
-- `easy float` —— 2/3 个有
-- `easy getNode` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `easy setNode` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `HAIGC_SaveImagesToZip` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `solarL_SaveImagesToZip` —— 1/3 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `SolAttnMiniMax` —— 3/4 个有
+- `VHS_VideoCombine` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `CR Load LoRA` —— 1/4 个有
+- `CreateVideo` —— 1/4 个有
+- `FastGroupsBypassSwitch` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 1 - 4 | 3 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 3 | 24% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
-| 宽度 | 1024 | 80 - 1024 | 3 | 37% |
-| 高度 | 1024 | 80 - 1024 | 3 | 37% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 1 - 4，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，3 个样本，取值分散，一致性仅 24%
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
-- 宽度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高发问题（7/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

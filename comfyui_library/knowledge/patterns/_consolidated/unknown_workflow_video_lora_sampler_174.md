@@ -1,65 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_174
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8567
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, ImageResize+, JWInteger, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.799727
+common_nodes: [SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
-missing: [LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, CR Prompt Text, ImageResize+]
-members: [图片生成/文生图/1980937502708158465.json, 视频生成/图生视频/1952002049745563650.json, 视频生成/图生视频/1956601025757151233.json, 视频生成/图生视频/1956583088841261058.json, 视频生成/图生视频/1952012888850509826.json, 视频生成/图生视频/1996851492734869506.json, 视频生成/图生视频/1981935370910744577.json, 视频生成/图生视频/1952320153679794177.json, 视频生成/图生视频/1978297110992969730.json, 视频生成/图生视频/1963913944572248066.json]
+missing: []
+members: [视频生成/图生视频/快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json, 视频生成/图生视频/电商_视频  替换背景  只消耗RH币_2073836975819419649.json, 视频生成/图生视频/电商带货bernini 局部衣服修改_2068734338539286529.json, 视频生成/图生视频/电商带货替换主播手中产品_2068745697402380290.json, 视频生成/图生视频/电商带货替换主播手中产品_2099785685107568641.json, 视频生成/图生视频/视频_bernini去水印去字幕_2081685394093076482.json, 视频生成/图生视频/视频换人(角色替换)！懒人版_2067257061662089218.json, 视频生成/图生视频/视频角色替换Bernini_2062833614240436226.json, 视频生成/图生视频/角色替换 动作迁移  bernini 字节开源大模型_2065389966213079042.json, 视频生成/图生视频/贝尔尼尼Bernini视频编辑_2069297231349510145.json, 视频生成/图生视频/超级稳视频换背景！_2064948143715864577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_174
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/1980937502708158465.json、视频生成/图生视频/1952002049745563650.json、视频生成/图生视频/1956601025757151233.json、视频生成/图生视频/1956583088841261058.json、视频生成/图生视频/1952012888850509826.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json、视频生成/图生视频/电商_视频  替换背景  只消耗RH币_2073836975819419649.json、视频生成/图生视频/电商带货bernini 局部衣服修改_2068734338539286529.json、视频生成/图生视频/电商带货替换主播手中产品_2068745697402380290.json、视频生成/图生视频/电商带货替换主播手中产品_2099785685107568641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `ImageResize+`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+全部 11 个 workflow 都包含：
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 6/10 个有
-- `EmptyImage` —— 6/10 个有
-- `GetImageSizeAndCount` —— 6/10 个有
-- `ImageConcatMulti` —— 6/10 个有
-- `SimpleMath+` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `GetNode` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
-- `easy ifElse` —— 1/10 个有
-- `easy int` —— 1/10 个有
+- `INTConstant` —— 10/11 个有
+- `JjkText` —— 10/11 个有
+- `VHS_VideoInfoLoaded` —— 10/11 个有
+- `Seed` —— 9/11 个有
+- `ImageResizeKJv2` —— 8/11 个有
+- `GetNode` —— 7/11 个有
+- `SetNode` —— 7/11 个有
+- `TextCombinerSix` —— 7/11 个有
+- `LoadImage` —— 5/11 个有
+- `ImageConcanate` —— 4/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/11 个有
+- `easy showAnything` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `MuyeTextEditOutput` —— 1/11 个有
+- `PrimitiveFloat` —— 1/11 个有
 
 ## 典型参数
 
@@ -71,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM、SimpleMath+、easy cleanGpuUsed、CR Prompt Text、ImageResize+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

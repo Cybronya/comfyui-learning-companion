@@ -1,70 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_vae_10
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.889778
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, SaveImage, VAEDecode, VAELoader]
+frequency: 14
+level: weak
+coverage: 0.827429
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [SDXLEmptyLatentSizePicker+, LayerUtility: PurgeVRAM, easy seed]
-members: [图片生成/文生图/1960187196420599809.json, 图片生成/文生图/1960520624663949314.json, 图片生成/文生图/1961312747210346498.json, 图片生成/文生图/1963054435381522434.json, 图片生成/文生图/1963114884189884418.json, 图片生成/文生图/1964600749260947457.json, 图片生成/文生图/1965030044580069377.json, 图片生成/文生图/1965043199712612353.json, 图片生成/文生图/image_qwen_Image_2512_2018879224546856962.json]
+missing: []
+members: [图片生成/文生图/AA--缓存加速Zimage-base-MeanCache5种加速模式对比_2019746684867190785.json, 图片生成/文生图/LH-DMT版本-2.生图片类-022.Z_image_turbo文生图_2016484426032619521.json, 图片生成/文生图/LH-DMT版本-2.生图片类-044.Qwen-Image-10步蒸馏-Q版3D人物_2016524825891704833.json, 图片生成/文生图/Neta Lumina新版Sota级动漫模型文生图_1948069349862060033.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_1959689364051800066.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2038785728322215938.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2039505785788567554.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2039620069642211330.json, 图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_2042481267639328769.json, 图片生成/文生图/Nunchaku-Qwen-image-8步极速出图_1960003368511025153.json, 图片生成/文生图/Z-ImageBase-MeanCache加速-文生图_2019218139791237121.json, 图片生成/文生图/Z-image对比测试工作流_2068508638993534977.json, 图片生成/文生图/Z-image模型 与 Engineer v6 交叉对比-测试工作流_2065276186162458626.json, 图片生成/文生图/Z-turbo Engineer v6对比工作流_2064619941457907714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/1960187196420599809.json、图片生成/文生图/1960520624663949314.json、图片生成/文生图/1961312747210346498.json、图片生成/文生图/1963054435381522434.json、图片生成/文生图/1963114884189884418.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/AA--缓存加速Zimage-base-MeanCache5种加速模式对比_2019746684867190785.json、图片生成/文生图/LH-DMT版本-2.生图片类-022.Z_image_turbo文生图_2016484426032619521.json、图片生成/文生图/LH-DMT版本-2.生图片类-044.Qwen-Image-10步蒸馏-Q版3D人物_2016524825891704833.json、图片生成/文生图/Neta Lumina新版Sota级动漫模型文生图_1948069349862060033.json、图片生成/文生图/Nunchaku Rank128版本Qwen-Image极速版文生图V1_1959689364051800066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：14
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptySD3LatentImage`
 - `KSampler`
 - `ModelSamplingAuraFlow`
-- `NunchakuQwenImageDiTLoader`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 8/9 个有
-- `CFGNorm` —— 2/9 个有
-- `LayerUtility: PurgeVRAM` —— 1/9 个有
-- `NunchakuQwenImageLoraLoader1` —— 1/9 个有
-- `NunchakuQwenImageLoraStackV3` —— 1/9 个有
-- `ResizeAndPadImage` —— 1/9 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/9 个有
-- `easy seed` —— 1/9 个有
+- `UNETLoader` —— 8/14 个有
+- `LayerUtility: PurgeVRAM` —— 6/14 个有
+- `NunchakuQwenImageDiTLoader` —— 6/14 个有
+- `AddLabel` —— 4/14 个有
+- `CR Prompt Text` —— 4/14 个有
+- `ImageConcatMulti` —— 4/14 个有
+- `easy seed` —— 3/14 个有
+- `ClipLoaderGGUF` —— 2/14 个有
+- `ConditioningZeroOut` —— 2/14 个有
+- `GetNode` —— 2/14 个有
+- `LoraLoaderModelOnly` —— 2/14 个有
+- `MeanCache_ZImage` —— 2/14 个有
+- `SetNode` —— 2/14 个有
+- `PreviewImage` —— 1/14 个有
+- `TeaCache` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 4 - 20 | 9 | 53% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 9 | 71% |
-| 采样算法 | euler | - | 9 | 89% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 1344x768 (1.75) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
+| 采样步数 | 20 | 8 - 50 | 14 | 33% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 5.5 | 14 | 44% |
+| 采样算法 | euler | - | 14 | 50% |
+| 调度器 | simple | - | 14 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 4 - 20，9 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，9 个样本
-- 采样算法 最常用 euler，9 个样本，一致性 89%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：SDXLEmptyLatentSizePicker+、LayerUtility: PurgeVRAM、easy seed
+- 采样步数 中位数 20，观测区间 8 - 50，14 个样本，取值分散，一致性仅 33%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 5.5，14 个样本，取值分散，一致性仅 44%
+- 采样算法 最常用 euler，14 个样本，一致性 50%
+- 调度器 最常用 simple，14 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（10/14 个样本）：Steps较低可能导致细节不足

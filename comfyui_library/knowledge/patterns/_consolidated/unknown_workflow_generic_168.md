@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_168
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.747571
-common_nodes: [Apply Whisper, Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.977909
+common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveText|pysssss, SaveVideo, ShowText]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--Qwen3 TTS 声音克隆--多语言翻译translate-漫剧_推文_有声书_2015767132360937474.json, 音频生成/音频生成/Qwen3-TTS 语音克隆 语音设计 效果逆天qwen3-tts_2014594693308358657.json, 音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json, 音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2069787707148161026.json, 音频生成/音频生成/声音设计，声音克隆，Qwen3-TTS全家桶_2014550098763583489.json]
+members: [视频生成/图生视频/全能视频S文生视频(输入主题自动生成提示词)_1985877663703281666.json, 视频生成/文生视频/[众馨]全能视频S文生视频_1981644784269959169.json, 视频生成/文生视频/全能视频S 文生视频_1973992409312923649.json, 视频生成/文生视频/全能视频S文生视频 (支持横版竖版1080p、支持10s和15s）_1985957787626811393.json, 视频生成/文生视频/全能视频S文生视频 openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976181162492215297.json, 视频生成/文生视频/全能视频S文生视频 支持15s_1991163256226054145.json, 视频生成/文生视频/全能视频S文生视频 每日5次免费_2073213996060209153.json, 视频生成/文生视频/全能视频S文生视频（15s）_1986863698721574914.json, 视频生成/文生视频/全能视频S文生视频（支持横版竖版1080p）支持15s_1996581085431603202.json, 视频生成/文生视频/抖音巨火的漫剧—全能视频S文生视频（15s）_1986077275487686658.json, 视频生成/文生视频/🦖全能视频S文生视频 （自动优化提示词）_1976842092368609281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_168
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/AA--Qwen3 TTS 声音克隆--多语言翻译translate-漫剧_推文_有声书_2015767132360937474.json、音频生成/音频生成/Qwen3-TTS 语音克隆 语音设计 效果逆天qwen3-tts_2014594693308358657.json、音频生成/音频生成/Qwen3-TTS全家桶_2082521612796129281.json、音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2039950585419538433.json、音频生成/音频生成/Qwen3-TTS全家桶：声音设计，声音克隆，声音预设_2061447393824034818.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/全能视频S文生视频(输入主题自动生成提示词)_1985877663703281666.json、视频生成/文生视频/[众馨]全能视频S文生视频_1981644784269959169.json、视频生成/文生视频/全能视频S 文生视频_1973992409312923649.json、视频生成/文生视频/全能视频S文生视频 (支持横版竖版1080p、支持10s和15s）_1985957787626811393.json、视频生成/文生视频/全能视频S文生视频 openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976181162492215297.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Apply Whisper`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
+全部 11 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_Sora2_T2V`
+- `SaveText|pysssss`
+- `SaveVideo`
+- `ShowText`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3TTSVoiceDesign` —— 6/7 个有
-- `Qwen3TTSCustomVoice` —— 5/7 个有
-- `TextInputBasic` —— 3/7 个有
-- `easy seed` —— 3/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `RunningHub SeedXPro Translator` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `RH_LLMAPI_NODE` —— 2/11 个有
+- `LoadImage` —— 1/11 个有
+- `Text Concatenate` —— 1/11 个有
 
 ## 典型参数
 

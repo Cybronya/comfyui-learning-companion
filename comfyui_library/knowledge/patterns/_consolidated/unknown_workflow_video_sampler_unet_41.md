@@ -1,69 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_unet_41
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.64025
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.8528
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2056245217631756289.json, 视频生成/图生视频/2064037629812895745.json, 视频生成/图生视频/2064373452538208258.json, 视频生成/图生视频/2075025517912346625.json, 视频生成/图生视频/2070124907555545090.json, 视频生成/图生视频/2070402488083238913.json, 视频生成/图生视频/2062044647668666370.json, 视频生成/图生视频/2057271107857768450.json]
+members: [视频生成/文生视频/H3-对口型数字人_2086355727127498754.json, 视频生成/文生视频/MINIMAX-H3多参_2086757864504385537.json, 视频生成/文生视频/MiniMax H3-数字人_2086137653598179330.json, 视频生成/文生视频/MiniMax H3-数字人_2092346787918073857.json, 视频生成/文生视频/MiniMax_H3_数字人_双人版_2085223972794355714.json, 视频生成/文生视频/MinimaxH3数字人 音频驱动单人版_2095684640324538370.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2087735816637468673.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2090009910481342465.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-双图版_2090485095252709377.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-多图版_2090405026232619010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_41
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2056245217631756289.json、视频生成/图生视频/2064037629812895745.json、视频生成/图生视频/2064373452538208258.json、视频生成/图生视频/2075025517912346625.json、视频生成/图生视频/2070124907555545090.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/H3-对口型数字人_2086355727127498754.json、视频生成/文生视频/MINIMAX-H3多参_2086757864504385537.json、视频生成/文生视频/MiniMax H3-数字人_2086137653598179330.json、视频生成/文生视频/MiniMax H3-数字人_2092346787918073857.json、视频生成/文生视频/MiniMax_H3_数字人_双人版_2085223972794355714.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `GetNode`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `CS-LTXGridDirector` —— 5/8 个有
-- `LoadImage` —— 5/8 个有
-- `TTResolutionSelector` —— 5/8 个有
-- `PreviewAny` —— 4/8 个有
-- `RH_LLMAPI_Pro_Node` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `LTXDirector` —— 3/8 个有
-- `DiffusionModelLoaderKJ` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `JjkText` —— 2/8 个有
-- `RHSettingsNode` —— 2/8 个有
-- `RH_RhartImageG2TextToImage` —— 2/8 个有
-- `RH_Utils` —— 2/8 个有
-- `SaveImage` —— 2/8 个有
-- `Text` —— 2/8 个有
-- `ttN concat` —— 2/8 个有
-- `孤海注释` —— 2/8 个有
-- `AppParams` —— 1/8 个有
+- `PreviewAudio` —— 9/10 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 9/10 个有
+- `AudioCrop` —— 8/10 个有
+- `PathchSageAttentionKJ` —— 8/10 个有
+- `SoundFlow_GetLength` —— 8/10 个有
+- `AudioConcat` —— 3/10 个有
+- `EmptyAudio` —— 3/10 个有
+- `Label (rgthree)` —— 2/10 个有
+- `AudioToFPS` —— 1/10 个有
+- `LoraLoaderBypassModelOnly` —— 1/10 个有
+- `MiniMaxH3BlockCacheT8` —— 1/10 个有
+- `TrimAudioDuration` —— 1/10 个有
+- `VAEDecodeAudio` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
 
 ## 典型参数
 

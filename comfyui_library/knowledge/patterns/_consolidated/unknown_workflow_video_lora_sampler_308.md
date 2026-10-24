@@ -2,68 +2,67 @@
 name: unknown_workflow_video_lora_sampler_308
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.958429
-common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.563286
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, INTConstant, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SetNode, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
 problems: []
 missing: []
-members: [视频生成/图生视频/1936253127727173633.json, 视频生成/图生视频/1936010847577624578.json, 视频生成/图生视频/1927906787679158274.json, 视频生成/图生视频/1935232906484973570.json, 视频生成/图生视频/1935199966057136129.json, 视频生成/图生视频/1935527745462140929.json, 视频生成/图生视频/1936714907976912898.json]
+members: [视频生成/图生视频/SVI 2.0 Pro for Wan 2.2长视频一镜到底！_2005649937650118658.json, 视频生成/图生视频/SVI 2.0 Pro 一镜到底-长视频生成_2013437129388462081.json, 视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2007322836368625665.json, 视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2008463179042529282.json, 视频生成/图生视频/SVI 2.0 Pro大模型升级啦：无限时长AI视频制作+ComfyUI工作流讲解_2006246427911000065.json, 视频生成/图生视频/SVI全自动长视频生成工作流_2005886076633968641.json, 视频生成/图生视频/Wan 2.2 SVI 2.0 PRO 长视频最新版！_2005892831866744833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_308
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1936253127727173633.json、视频生成/图生视频/1936010847577624578.json、视频生成/图生视频/1927906787679158274.json、视频生成/图生视频/1935232906484973570.json、视频生成/图生视频/1935199966057136129.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/SVI 2.0 Pro for Wan 2.2长视频一镜到底！_2005649937650118658.json、视频生成/图生视频/SVI 2.0 Pro 一镜到底-长视频生成_2013437129388462081.json、视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2007322836368625665.json、视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2008463179042529282.json、视频生成/图生视频/SVI 2.0 Pro大模型升级啦：无限时长AI视频制作+ComfyUI工作流讲解_2006246427911000065.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJ`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `SetNode`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 6/7 个有
-- `ImageConcatMulti` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `Primitive integer [Crystools]` —— 6/7 个有
-- `WanVideoEnhanceAVideo` —— 6/7 个有
-- `ImageScaleDownToSize` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 5/7 个有
-- `DF_Get_image_size` —— 4/7 个有
-- `GetImageSizeAndCount` —— 4/7 个有
-- `Text Multiline` —— 4/7 个有
-- `easy imageRemBg` —— 4/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `ShowText|pysssss` —— 4/7 个有
+- `easy indexAnything` —— 4/7 个有
+- `easy promptLine` —— 4/7 个有
 - `ImageResizeKJv2` —— 3/7 个有
-- `WanVideoTeaCache` —— 3/7 个有
-- `WanVideoVACEModelSelect` —— 3/7 个有
-- `GetImageSize` —— 2/7 个有
-- `RMBG` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy clearCacheAll` —— 1/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `Text` —— 2/7 个有
+- `Anything Everywhere` —— 1/7 个有
+- `CM_IntToFloat` —— 1/7 个有
+- `CRT_StringSplitter` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `RH_LLMAPI_Pro_Node` —— 1/7 个有
+- `easy mathInt` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 7 | 86% |
+| Prompt 约束强度(CFG) | 8 | 8 - 14 | 7 | 76% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -71,4 +70,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，7 个样本，一致性 86%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 14，7 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

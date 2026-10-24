@@ -3,82 +3,64 @@ name: text_to_image_video_lora_sampler_171
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.696667
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CM_IntToFloat, CR Text, CheckpointLoaderSimple, EmptyLatentImage, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, Int, InvertBoolean, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveBoolean, RH_Translator, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SaveImage, SetNode, Switch any [Crystools], Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy boolean, easy imageRemBg, solarL_SaveImagesToZip]
+coverage: 0.919
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, H3SigmaRefiner, ImageResizeKJv2, Int, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, MiniMaxH3SigmaShift, PrimitiveStringMultiline, RH_Screenwriter, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, WujiCleaner, WujiH3PromptEnhancer, easy promptConcat, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Scail 2替换视频人物和背景专用流，支持人物多参图生视频方案_2106111390447656961.json, 视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2106856823751004162.json, 视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2110161325371514882.json]
+members: [视频生成/图生视频/MiniMax H3 Semantic Bridge LCM高清图生视频文戏专用工作流，图生视频方案_2107901152405835778.json, 视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏_2107683302575534082.json, 视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏专用工作流_2101857846328651777.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_171
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Scail 2替换视频人物和背景专用流，支持人物多参图生视频方案_2106111390447656961.json、视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2106856823751004162.json、视频生成/图生视频/单人动作迁移替换视频人物可多参高质量极简版，动作迁移图生视频_2110161325371514882.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Semantic Bridge LCM高清图生视频文戏专用工作流，图生视频方案_2107901152405835778.json、视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏_2107683302575534082.json、视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏专用工作流_2101857846328651777.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Text`
-- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
+- `H3SigmaRefiner`
 - `ImageResizeKJv2`
 - `Int`
-- `InvertBoolean`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `RH_Translator`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
-- `SaveImage`
-- `SetNode`
-- `Switch any [Crystools]`
-- `Text`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `MiniMaxH3SigmaShift`
+- `PrimitiveStringMultiline`
+- `RH_Screenwriter`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
-- `easy boolean`
-- `easy imageRemBg`
+- `WujiCleaner`
+- `WujiH3PromptEnhancer`
+- `easy promptConcat`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Bypasser (rgthree)` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `WanAnimatePlus LoraSelect` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `EmptyImage` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `LoadVideoUI` —— 1/3 个有
-- `RH_RhartImageG2ImageToImage` —— 1/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

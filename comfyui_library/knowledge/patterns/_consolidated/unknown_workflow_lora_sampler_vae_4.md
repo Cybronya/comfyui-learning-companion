@@ -1,80 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_vae_4
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.605
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetNode, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 15
+level: strong
+coverage: 0.937667
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/全能参考二次采样_MInimaxH3_2090972732266733570.json, 视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json, 视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json, 视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json, 视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json]
+members: [图片生成/图生图/Qwen 2511 multi angle可视化角度编辑V2_2009735363601895426.json, 图片生成/图生图/Qwen Image Edit 2511-支持多图编辑_2003669560404418561.json, 图片生成/图生图/Qwen2511-multi angle-精准控制图像镜头_2009798078206844929.json, 图片生成/图生图/Qwenedit-2511 多角度可视化角度编辑_2010887390902095874.json, 图片生成/图生图/三视图不同视角 +换装+换脸 角色一致 真人动漫人物模特角人物保持不变 批量生成Qwen edit_2046776274835738626.json, 图片生成/图生图/三视图真人动漫人物一致性_2044054645772918786.json, 图片生成/图生图/三视图真人动漫人物一致性_2096509010789879809.json, 图片生成/图生图/三视图真人动漫人物一致性_2096865661921357826.json, 图片生成/图生图/三视图真人动漫人物一致性千问2511_2027669340207714306.json, 图片生成/图生图/三视图真人动漫人物一致性千问2511_2064291118820446209.json, 图片生成/图生图/人物三视图+8K-4K还原高清放大 -极速修复细节还原 真人动漫人物一致性千问2511_2042414561231380481.json, 图片生成/图生图/免费_开源_2511_角色设计+数字人_三视图真人动漫人物一致性_2105113829679124482.json, 图片生成/图生图/免费_开源_2511_角色设计+数字人_三视图真人动漫人物一致性_2105489655511740417.json, 图片生成/图生图/可视化分镜角度编辑Qwen 2511 multi angle-V2_2011338342184525826.json, 图片生成/图生图/可视化角度编辑 （多机位）Qwen 2511 multi angle_2010360280441692162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/全能参考二次采样_MInimaxH3_2090972732266733570.json、视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json、视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json、视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json、视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Qwen 2511 multi angle可视化角度编辑V2_2009735363601895426.json、图片生成/图生图/Qwen Image Edit 2511-支持多图编辑_2003669560404418561.json、图片生成/图生图/Qwen2511-multi angle-精准控制图像镜头_2009798078206844929.json、图片生成/图生图/Qwenedit-2511 多角度可视化角度编辑_2010887390902095874.json、图片生成/图生图/三视图不同视角 +换装+换脸 角色一致 真人动漫人物模特角人物保持不变 批量生成Qwen edit_2046776274835738626.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：15
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 15 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `GetNode`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `FluxKontextMultiReferenceLatentMethod`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `MiniMaxH3SigmaShift` —— 4/5 个有
-- `ModelAttentionBackend` —— 4/5 个有
-- `ModelPreviewOverrideKJ` —— 4/5 个有
-- `SplitSigmas` —— 4/5 个有
-- `UNETLoader` —— 4/5 个有
-- `MinimaxH3LatentUpscaler3D` —— 3/5 个有
-- `LoadAudio` —— 2/5 个有
-- `RHLLMChatNode` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `H3LatentUpscaleByJingchen573` —— 1/5 个有
-- `MiniMaxH3HybridLoader` —— 1/5 个有
-- `MiniMaxLowVRAMAttention` —— 1/5 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/5 个有
-- `SolAttnMiniMax` —— 1/5 个有
-- `VHS_VideoCombine` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `ImageConcanate` —— 10/15 个有
+- `ImageScaleToTotalPixels` —— 10/15 个有
+- `UNETLoader` —— 10/15 个有
+- `CR Text` —— 9/15 个有
+- `SDXL Empty Latent Image` —— 9/15 个有
+- `EmptySD3LatentImage` —— 6/15 个有
+- `CheckpointLoaderSimple` —— 5/15 个有
+- `QwenMultiangleCameraNode` —— 5/15 个有
+- `easy promptList` —— 5/15 个有
+- `easy showAnything` —— 5/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/15 个有
+- `RH_Translator` —— 1/15 个有
+- `ShowText` —— 1/15 个有
+- `easy getNode` —— 1/15 个有
+- `easy setNode` —— 1/15 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 15 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，15 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

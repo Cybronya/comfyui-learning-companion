@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_776
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.771
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.89725
+common_nodes: [LoadImage, RH_BytedanceSeedance25TokenMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/NBP2_2019662681011130369.json, 图片生成/文生图/全能图片V12单图编辑_1992468217274716161.json]
+members: [视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json, 视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_776
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/NBP2_2019662681011130369.json、图片生成/文生图/全能图片V12单图编辑_1992468217274716161.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json、视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `RH_BytedanceSeedance25TokenMultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `LoadVideo` —— 3/4 个有
+- `Text` —— 2/4 个有
+- `孤海注释` —— 2/4 个有
 
 ## 典型参数
 
@@ -42,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_646
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.891667
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, Note _O, SaveAudio]
+coverage: 0.87475
+common_nodes: [HYPIRImageRestoration, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/TTS2声音克隆_1981924852229652481.json, 音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json, 音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json]
+members: [图片生成/图生图/Hypir高清方大_1958615133377425409.json, 图片生成/图生图/一键4K高清-HYPIR_1951702848679694337.json, 图片生成/图生图/超强一键4K高清-HYPIR_1953382286504939522.json, 图片生成/图生图/超强一键4K高清-HYPIR_1957740835741822978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_646
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/TTS2声音克隆_1981924852229652481.json、音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json、音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Hypir高清方大_1958615133377425409.json、图片生成/图生图/一键4K高清-HYPIR_1951702848679694337.json、图片生成/图生图/超强一键4K高清-HYPIR_1953382286504939522.json、图片生成/图生图/超强一键4K高清-HYPIR_1957740835741822978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `Note _O`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `HYPIRImageRestoration`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `SaveAudioAdvanced` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageConcatMulti` —— 3/4 个有
 
 ## 典型参数
 

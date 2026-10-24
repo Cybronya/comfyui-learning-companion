@@ -3,50 +3,60 @@ name: unknown_workflow_video_lora_sampler_948
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.732
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, GetNode, JjkText, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, PrimitiveFloat, RandomSeedNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnMiniMax, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 忽略多组孤海]
+coverage: 0.579
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096894819447697410.json, 视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096916840424497154.json]
+members: [视频生成/文生视频/图片唱歌_2007669635780448258.json, 音频生成/音频生成/InfiniteTalk数字人+index-TTS2同步音视频生成_1975033453995536385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_948
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096894819447697410.json、视频生成/文生视频/MinimaxH3全能参考：VDN一采_2096916840424497154.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/图片唱歌_2007669635780448258.json、音频生成/音频生成/InfiniteTalk数字人+index-TTS2同步音视频生成_1975033453995536385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetNode`
-- `JjkText`
+- `ImageResizeKJv2`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3VDNExecutionPlanT8Advanced`
-- `MiniMaxH3VDNModelComposerT8Advanced`
-- `PrimitiveFloat`
-- `RandomSeedNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `SetNode`
-- `SolAttnMiniMax`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `忽略多组孤海`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Audio Duration (mtb)` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `IndexTTS2_Emotion` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `QZ_ResolutionPreset` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

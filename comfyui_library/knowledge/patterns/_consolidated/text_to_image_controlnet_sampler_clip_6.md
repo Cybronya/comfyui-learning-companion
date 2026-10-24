@@ -1,60 +1,70 @@
 ---
 name: text_to_image_controlnet_sampler_clip_6
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8475
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplySD3, ControlNetLoader, EmptyLatentImage, KSampler, LoadImage, PreviewImage, SaveImage, VAEDecode]
+frequency: 6
+level: strong
+coverage: 0.915667
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetImageSize, ImageConcanate, ImageScaleToTotalPixels, KSampler, LoadImage, ModelPatchLoader, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [Image Compare (mtb), MiDaS-NormalMapPreprocessor]
-members: [图片生成/文生图/1965699024550559746.json, 图片生成/文生图/【遇见AI】SD1.5基础文生图工作流+controlnet_2011326038407651330.json]
+missing: []
+members: [图片生成/图生图/Z+Controlnet姿势控制_1996144706801352706.json, 图片生成/图生图/Z-image Controlnet Uion 2.1_2000500536866635778.json, 图片生成/图生图/Z-image Controlnet+lora起效工作流_1996843101358628866.json, 图片生成/图生图/文生图Zimage文生图动作迁移Controlnet+lora(支持cn和lora)加速版_1996857207276851202.json, 图片生成/图生图/🍧Z-image 爆图小钢炮 CN控制🍧_1996449727271018498.json, 图片生成/文生图/Z-Image文生图Controlnet+lora(支持cn和lora)加速版_2003393632608686082.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1965699024550559746.json、图片生成/文生图/【遇见AI】SD1.5基础文生图工作流+controlnet_2011326038407651330.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Z+Controlnet姿势控制_1996144706801352706.json、图片生成/图生图/Z-image Controlnet Uion 2.1_2000500536866635778.json、图片生成/图生图/Z-image Controlnet+lora起效工作流_1996843101358628866.json、图片生成/图生图/文生图Zimage文生图动作迁移Controlnet+lora(支持cn和lora)加速版_1996857207276851202.json、图片生成/图生图/🍧Z-image 爆图小钢炮 CN控制🍧_1996449727271018498.json…）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ControlNetApplySD3`
-- `ControlNetLoader`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
+- `ModelPatchLoader`
 - `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `Image Compare (mtb)` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `MiDaS-NormalMapPreprocessor` —— 1/2 个有
-- `OpenposePreprocessor` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 5/6 个有
+- `UpscaleModelLoader` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `AILab_QwenVL` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `ImageSharpen` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | - | 2 | 67% |
-| 高度 | 896 | - | 2 | 86% |
-| LoRA 模型强度 | 0.6 | - | 1 | 100% |
-| LoRA 文本强度 | 0.6 | - | 1 | 100% |
-| 采样步数 | 23.5 | - | 2 | 85% |
-| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
-| 采样算法 | dpmpp_2m | - | 2 | 50% |
-| 调度器 | karras | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | 1024 - 1080 | 6 | 97% |
+| 高度 | 1536 | 1536 - 1536 | 6 | 100% |
+| 采样步数 | 10 | 10 - 10 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 0.75 | 0.6 - 1 | 6 | 82% |
 
 ## 常见问题
 
@@ -62,13 +72,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，样本不足，未给区间，2 个样本
-- 高度 中位数 896，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 采样步数 中位数 23.5，样本不足，未给区间，2 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，2 个样本，一致性 50%
-- 调度器 最常用 karras，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Compare (mtb)、MiDaS-NormalMapPreprocessor
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1080，6 个样本，取值集中（一致性 97%）
+- 高度 中位数 1536，观测区间 1536 - 1536，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 0.75，观测区间 0.6 - 1，6 个样本，取值集中（一致性 82%）

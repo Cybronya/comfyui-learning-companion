@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_666
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.771333
-common_nodes: [Fast Groups Bypasser (rgthree), SaveAudioMP3, SaveImage, VHS_LoadVideoFFmpeg, VideoFrameSelector]
+coverage: 0.574
+common_nodes: [JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, easy promptList]
 problems: []
 missing: []
-members: [音频生成/音频生成/视频提取音频MP3 南音：nanyindd688_2046590072463564801.json, 音频生成/音频生成/视频提取音频MP3_1982637752204312577.json, 音频生成/音频生成/视频提取音频工作流_2063676152174174210.json]
+members: [图片生成/图生图/image_gemini.json_2082301956990791681.json, 图片生成/图生图/image_gemini.json_2098290683168780289.json, 图片生成/文生图/Share Widget_2086637164250619906.json, 图片生成/文生图/check-in share image_2095684493167390722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_666
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/视频提取音频MP3 南音：nanyindd688_2046590072463564801.json、音频生成/音频生成/视频提取音频MP3_1982637752204312577.json、音频生成/音频生成/视频提取音频工作流_2063676152174174210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/image_gemini.json_2082301956990791681.json、图片生成/图生图/image_gemini.json_2098290683168780289.json、图片生成/文生图/Share Widget_2086637164250619906.json、图片生成/文生图/check-in share image_2095684493167390722.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `SaveAudioMP3`
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `LoadImage`
 - `SaveImage`
-- `VHS_LoadVideoFFmpeg`
-- `VideoFrameSelector`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `SoundFlow_TrimAudio` —— 1/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `ShowAnything|Mie` —— 2/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
 
 ## 典型参数
 

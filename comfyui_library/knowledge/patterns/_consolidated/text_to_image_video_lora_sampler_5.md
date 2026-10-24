@@ -3,70 +3,66 @@ name: text_to_image_video_lora_sampler_5
 type: Text To Image
 frequency: 43
 level: strong
-coverage: 0.907953
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.790535
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, ImageBatchExtendWithOverlap, ImageFromBatch+, JDCN_StringToList, JWInteger, JjkText, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SetNode, Text, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy indexAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MINIMAX-H3文生视频T8加速版｜快速视频生成工作流_2097789348782628866.json, 视频生成/文生视频/MiniMax H3 BF16 Turbo Sage加速版｜文生图生视频_2092049982156271618.json, 视频生成/文生视频/MiniMax H3 Ref2VA多参考生视频｜9图3视频3音频混搭｜2K超清带立体声_2101845289526185986.json, 视频生成/文生视频/MiniMax H3首尾帧图生视频-4步加速文生视频生视频_2087340787251109890.json, 视频生成/文生视频/Minimax H3 开源版 8步高质量极速｜文生视频短剧漫剧_2096913179673718786.json, 视频生成/文生视频/Minimax H3 开源版8步极速｜600步新加速LORA 短剧漫剧创意视频_2097549665452519425.json, 视频生成/文生视频/Minimax H3多图参考加速文生视频图生视频工作流_2088178522983587841.json, 视频生成/文生视频/Minimax H3开源8步极速版｜短剧漫剧创意视频一键生成_2103705873322438657.json, 视频生成/文生视频/Minimax H3开源双时钟8步极速｜600步新加速LORA文生视频_2089414070805032962.json, 视频生成/文生视频/Minimax H3开源极速文生视频｜8步出新加速LORA短剧漫剧利器_2105117277518647297.json, 视频生成/文生视频/Minimax H3开源版600步加速LORA｜短剧漫剧战斗特效文生视频_2103059307200868353.json, 视频生成/文生视频/Minimax H3开源版600步新加速LORA｜8步极速高质量，短剧漫剧文生视频提效_2100520312558407682.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频 跳舞视频短剧漫剧创意生成_2094355041510576129.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频｜600步新加速LORA加持｜短剧漫剧场景特效角色设计全能_2102243040881627137.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频｜600步新加速LORA短剧漫剧创意出片_2104511245448736769.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频｜600步新加速LORA短剧漫剧创意成片_2099153048382828546.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频｜600步新加速LORA｜短剧漫剧快出片_2102594688237793282.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频｜短剧漫剧600步新加速LORA_2097939714065129474.json, 视频生成/文生视频/Minimax H3开源版8步极速文生视频｜短剧漫剧创意视频600步加速LORA_2100779189040410625.json, 视频生成/文生视频/Minimax H3开源版8步极速流｜600步新加速LORA加持，短剧漫剧创意文生视频_2099548436327653378.json, 视频生成/文生视频/Minimax H3开源版8步极速版｜短剧漫剧创意视频｜600步新加速LORA加持_2102635681259540482.json, 视频生成/文生视频/Minimax H3开源版8步极速生视频｜短剧漫剧600步加速LORA_2098720717314547713.json, 视频生成/文生视频/Minimax H3开源版8步极速｜短剧漫剧文生视频600步新LORA_2101527525678739457.json, 视频生成/文生视频/Minimax H3开源版8步高质量极速｜短剧漫剧创意视频文生视频 600步新加速LORA_2104033813180534785.json, 视频生成/文生视频/Minimax H3开源版短剧漫剧文生视频｜600步新加速LORA，8步高质量极速出片_2104535691307864066.json, 视频生成/文生视频/Minimax H3开源版短剧漫剧文生视频｜8步极速600步新加速LORA加持_2103051823681724417.json, 视频生成/文生视频/Minimax H3开源版短剧漫剧文生视频｜8步高质量极速 战斗特效_2104083312359854082.json, 视频生成/文生视频/Minimax H3开源版短剧漫剧流｜600步新加速LORA八步极速_2097195727029104641.json, 视频生成/文生视频/Minimax H3开源版高质量8步｜创意短剧文生视频新LORA_2101566223287934978.json, 视频生成/文生视频/Minimax H3开源短剧漫剧文生视频｜8步极速600步新加速LORA_2101184367086362625.json, 视频生成/文生视频/八步极速Minimax H3开源版 短剧漫剧创意视频新加速lora_2098305874950443010.json, 视频生成/文生视频/加速版直出｜MiniMax_H3_BF16_Turbo_Sage_ 文生图生视频高速生成_2089458798560894978.json, 视频生成/文生视频/双bf16满血版4步加速lora 1.0+sage｜MinimaxH3文生图生视频生视频_2088364861519650817.json, 视频生成/文生视频/双bf16满血版8步加速lora 1.0 sage MinimaxH3文生视频图生视频_2088389915884220418.json, 视频生成/文生视频/双bf16满血版8步加速lora 1.0+sage｜MinimaxH3文生图生视频生视频_2088362225546391554.json, 视频生成/文生视频/双bf16满血版sage无损加速｜MinimaxH3文生图生视频生视频_2088371118150340610.json, 视频生成/文生视频/双bf16满血版｜MinimaxH3 8步lora 1.0+sage加速视频生成_2089460273106210818.json, 视频生成/文生视频/双时钟8步lora极速4分钟出15秒480P｜Minimax-H3文生视频工作流_2087215608109821953.json, 视频生成/文生视频/多图参考一键提速｜Minimax_H3 加速工作流三模支持_2096218441563860994.json, 视频生成/文生视频/多图参考加速工作流｜Minimax H3文生图生视频_2092060324655620097.json, 视频生成/文生视频/多图参考加速流｜Minimax_H3文生图生视频生成_2093424367945478146.json, 视频生成/文生视频/多图参考加速生成｜Minimax H3高质量视频工作流_2095931904716533761.json, 视频生成/文生视频/多图参考加速｜Minimax_H3三模视频生成工作流_2093754246821928961.json]
+members: [视频生成/图生视频/Real AI videoリアルAIビデオ漫剧分镜视频角色一致性分镜出图_2088359897783169025.json, 视频生成/图生视频/Real AI video漫剧分镜视频｜角色一致性分镜出图图生视频_2088332636082233345.json, 视频生成/图生视频/Real AI video漫剧分镜｜リアルAIビデオ图生视频生成_2092569466822553602.json, 视频生成/图生视频/Real person AI video｜真人AI分镜视频角色一致性出图_2093996196108005377.json, 视频生成/图生视频/リアルAIビデオ漫剧分镜视频｜角色一致性分镜生成出图图生视频_2088327911018426369.json, 视频生成/图生视频/リアルAIビデオ漫剧分镜｜Real AI video角色一致性图生视频_2092145891867189250.json, 视频生成/图生视频/リアル人間AIビデオ｜Real person AI视频分镜角色一致性_2094002635903946753.json, 视频生成/图生视频/リアル人間AIビデオ｜真人AI分镜视频角色一致性出图_2095061029486157826.json, 视频生成/图生视频/リアル人間AIビデオ｜真人AI分镜视频角色一致性图生视频_2092564529933807618.json, 视频生成/图生视频/分镜生成出图一步到位｜角色一致性漫剧图生视频利器_2096514286658088961.json, 视频生成/图生视频/分镜生成出图不崩人设｜漫剧角色一致性图生视频流_2096206405136117762.json, 视频生成/图生视频/漫剧分镜Real AI video｜リアルAIビデオ角色一致性_2093233882987589633.json, 视频生成/图生视频/漫剧分镜图生视频｜Real AI video角色一致性出图_2093075703200829441.json, 视频生成/图生视频/漫剧分镜视频1｜角色一致性分镜出图图生视频_2092905850234036226.json, 视频生成/图生视频/漫剧分镜视频Real AI videoリアルAIビデオ角色一致性图生视频_2088361355354140674.json, 视频生成/图生视频/漫剧分镜视频Real AI video｜角色一致性分镜出图图生视频_2089748468339396609.json, 视频生成/图生视频/漫剧分镜视频Real AI video｜角色一致性稳如老狗，分镜生成出图直连图生视频_2100425083188768769.json, 视频生成/图生视频/漫剧分镜视频リアルAIビデオ｜分镜生成出图角色一致性图生视频_2088329060056387586.json, 视频生成/图生视频/漫剧分镜视频全自动｜角色一致性出图接图生视频_2096210782336937985.json, 视频生成/图生视频/漫剧分镜视频工作流｜角色一致性分镜生成图生视频_2100789034216943617.json, 视频生成/图生视频/漫剧分镜视频生成 角色一致性分镜创作处理工具_2100641530951331841.json, 视频生成/图生视频/漫剧分镜视频生成1｜角色一致性参考图图生视频分镜出图_2088739617372721153.json, 视频生成/图生视频/漫剧分镜视频生成｜Real AI video角色一致图生视频_2092009075591696385.json, 视频生成/图生视频/漫剧分镜视频生成｜角色一致分镜出图图生视频_2092715097193009154.json, 视频生成/图生视频/漫剧分镜视频生成｜角色一致性图生视频制作_2096291670076776449.json, 视频生成/图生视频/漫剧分镜视频｜角色一致分镜出图 图生视频搞定漫画短剧_2097517908988620802.json, 视频生成/图生视频/漫剧分镜视频｜角色一致性AI分镜出图图生视频全流程_2101493383087878146.json, 视频生成/图生视频/真人AI分镜视频Real person AI video｜真人分镜出图加图生视频，角色一致性在线_2100430774049787905.json, 视频生成/图生视频/真人AI分镜视频Real person AI video｜角色一致性分镜出图_2106975457223733250.json, 视频生成/图生视频/真人AI分镜视频工作流｜角色一致性稳，多语种分镜出片一条龙_2099429809595179010.json, 视频生成/图生视频/真人AI分镜视频流｜写实人物角色一致 分镜成片图生视频_2097514920886759425.json, 视频生成/图生视频/真人AI分镜视频生成 角色一致性多图分镜创作工具_2099183193097330689.json, 视频生成/图生视频/真人AI分镜视频生成｜角色一致性图生视频制作_2095926817638146050.json, 视频生成/图生视频/真人AI分镜视频角色一致性图生视频处理生成工具_2101734987887374338.json, 视频生成/图生视频/真人AI分镜视频｜Real person AI videoリアル人間図生视频_2092328975753375746.json, 视频生成/图生视频/真人AI分镜视频｜Real person AI video角色一致性出图_2089815958172037122.json, 视频生成/图生视频/真人AI分镜视频｜Real person AI video角色一致性图生视频_2088744090824429570.json, 视频生成/图生视频/真人AI分镜视频｜角色一致性分镜出图再接图生视频一条龙_2097509693030752258.json, 视频生成/图生视频/真人AI分镜视频｜角色一致性分镜生成出图图生视频神器_2101490153574453249.json, 视频生成/图生视频/真人分镜生成出图利器｜角色一致性图生视频创作流_2096200978847592449.json, 视频生成/图生视频/真人分镜视频生成｜Real person AI video图生视频_2093766087417618434.json, 视频生成/图生视频/真人角色一致性分镜出图｜AI图生视频批量创作工作流_2097390712642949121.json, 视频生成/图生视频/角色一致性分镜生成Real AI video漫剧分镜视频リアルAIビデオ图生视频_2088365731770626050.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 43 个 workflow 归纳得出（视频生成/文生视频/MINIMAX-H3文生视频T8加速版｜快速视频生成工作流_2097789348782628866.json、视频生成/文生视频/MiniMax H3 BF16 Turbo Sage加速版｜文生图生视频_2092049982156271618.json、视频生成/文生视频/MiniMax H3 Ref2VA多参考生视频｜9图3视频3音频混搭｜2K超清带立体声_2101845289526185986.json、视频生成/文生视频/MiniMax H3首尾帧图生视频-4步加速文生视频生视频_2087340787251109890.json、视频生成/文生视频/Minimax H3 开源版 8步高质量极速｜文生视频短剧漫剧_2096913179673718786.json…）
+> 由 `engine/knowledge_consolidation` 从 43 个 workflow 归纳得出（视频生成/图生视频/Real AI videoリアルAIビデオ漫剧分镜视频角色一致性分镜出图_2088359897783169025.json、视频生成/图生视频/Real AI video漫剧分镜视频｜角色一致性分镜出图图生视频_2088332636082233345.json、视频生成/图生视频/Real AI video漫剧分镜｜リアルAIビデオ图生视频生成_2092569466822553602.json、视频生成/图生视频/Real person AI video｜真人AI分镜视频角色一致性出图_2093996196108005377.json、视频生成/图生视频/リアルAIビデオ漫剧分镜视频｜角色一致性分镜生成出图图生视频_2088327911018426369.json…）
 
 - **类型**：Text To Image
 - **样本数**：43
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 43 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `ImageFromBatch+`
+- `JDCN_StringToList`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
 - `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideoSVIPro`
+- `easy indexAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 42/43 个有
-- `BasicGuider` —— 37/43 个有
-- `MiniMaxH3AVDecodeT8` —— 37/43 个有
-- `MiniMaxH3AudioConditioningT8` —— 37/43 个有
-- `CR Prompt Text` —— 35/43 个有
-- `LoraLoaderBypassModelOnly` —— 29/43 个有
-- `MiniMaxH3DualClockSamplerT8` —— 28/43 个有
-- `ModelAttentionBackend` —— 27/43 个有
-- `LoadImage` —— 15/43 个有
-- `BasicScheduler` —— 13/43 个有
-- `KSamplerSelect` —— 8/43 个有
-- `PrimitiveStringMultiline` —— 8/43 个有
-- `LoadAudio` —— 7/43 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/43 个有
-- `VAEDecodeAudio` —— 7/43 个有
-- `CFGGuider` —— 6/43 个有
-- `ConditioningZeroOut` —— 6/43 个有
-- `MiniMaxH3TurboLoRA` —— 5/43 个有
-- `MiniMaxH3TurboSampler` —— 5/43 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/43 个有
-- `SaveImage` —— 2/43 个有
-- `ImpactSwitch` —— 1/43 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 1/43 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 1/43 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/43 个有
+- `LoadEXR` —— 6/43 个有
+- `LoaderGGUF` —— 6/43 个有
+- `[Comfy3D] Load 3DGS` —— 5/43 个有
+- `load_GGUF` —— 5/43 个有
+- `Load Cache` —— 4/43 个有
+- `Loader` —— 4/43 个有
+- `SaveImage` —— 4/43 个有
+- `LoadVQVAE` —— 3/43 个有
+- `load_SD35` —— 2/43 个有
 
 ## 典型参数
 
@@ -84,7 +80,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 44/43 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 43/43 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -95,4 +91,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，43 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，43 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，43 个样本，取值集中（一致性 100%）
-- 高发问题（44/43 个样本）：Steps较低可能导致细节不足
+- 高发问题（43/43 个样本）：Steps较低可能导致细节不足

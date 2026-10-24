@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_706
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7335
-common_nodes: [ImageScaleToTotalPixels, LoadImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.695
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_AlibabaHappyhorse10ImageToVideo, RH_AlibabaHappyhorse10ReferenceToVideo, RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2.json, comfyui-workflow-templates-json/image_qwen_image_edit.json]
+members: [图片生成/图生图/多图参考视频生成_2064592013978324994.json, 视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json, 视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json, 视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_706
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2.json、comfyui-workflow-templates-json/image_qwen_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/多图参考视频生成_2064592013978324994.json、视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json、视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json、视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
 - `LoadImage`
-- `SaveImage`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `RH_AlibabaHappyhorse10ReferenceToVideo`
+- `RH_AlibabaHappyhorse10TextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `74a8e1e2-9cb8-4112-978e-06ce1b5793f1` —— 1/2 个有
-- `7651d2ae-5471-47b0-b064-b34ee62343c1` —— 1/2 个有
+- `PreviewAny` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,71 +1,54 @@
 ---
 name: unknown_workflow_sampler_unet_vae_193
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.916667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ChainAssemble, MiniMaxH3ChainContext, MiniMaxH3ChainCurrent, MiniMaxH3ChainLoopEnd, MiniMaxH3ChainLoopStart, MiniMaxH3ChainManifestLoad, MiniMaxH3ChainPlan, MiniMaxH3ChainReview, MiniMaxH3ChainScenePromptEditor, MiniMaxH3ChainSegmentSave, MiniMaxH3LoopTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.798
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, FluxGuidance, ImageFromBatch, KSamplerSelect, LayerUtility: SaveImagePlus, PreviewImage, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3-多参W版长视频-V2.0_2111463571648499714.json, 视频生成/图生视频/MiniMax-H3-无限时长分镜版_2105836805424762881.json, 视频生成/图生视频/MiniMax-H3-无限时长分镜版_2110656252312383490.json]
+members: [图片生成/图生图/MiniMax-H3单图编辑 （用来修图美化图片自动加发型）_2086366961092612097.json, 图片生成/图生图/邪修—MiniMax-H3图像编辑集合_2085961101694558209.json, 图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json, 图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json, 图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_193
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3-多参W版长视频-V2.0_2111463571648499714.json、视频生成/图生视频/MiniMax-H3-无限时长分镜版_2105836805424762881.json、视频生成/图生视频/MiniMax-H3-无限时长分镜版_2110656252312383490.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3单图编辑 （用来修图美化图片自动加发型）_2086366961092612097.json、图片生成/图生图/邪修—MiniMax-H3图像编辑集合_2085961101694558209.json、图片生成/文生图/Minimax H3文生图（生成多张图片供选择大概2分钟）_2086364726996594690.json、图片生成/文生图/Minimax+H3文生图 新优化版（生成多张图片供选择大概2分钟）_2086431591005511681.json、图片生成/文生图/邪修 Minimax H3文生图_2085961112083853314.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
+全部 5 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
+- `ConditioningZeroOut`
+- `FluxGuidance`
+- `ImageFromBatch`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ChainAssemble`
-- `MiniMaxH3ChainContext`
-- `MiniMaxH3ChainCurrent`
-- `MiniMaxH3ChainLoopEnd`
-- `MiniMaxH3ChainLoopStart`
-- `MiniMaxH3ChainManifestLoad`
-- `MiniMaxH3ChainPlan`
-- `MiniMaxH3ChainReview`
-- `MiniMaxH3ChainScenePromptEditor`
-- `MiniMaxH3ChainSegmentSave`
-- `MiniMaxH3LoopTrim`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
+- `LayerUtility: SaveImagePlus`
+- `PreviewImage`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `ScheduledCFGGuidance`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `JjkText` —— 2/3 个有
-- `JoinStringMulti` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `SomethingToString` —— 2/3 个有
-- `StringFunction|pysssss` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MiniMaxH3ChainPlanModern` —— 1/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `easy saveText` —— 1/3 个有
+- `Label (rgthree)` —— 4/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `EmptyMiniMaxH3LatentAV` —— 3/5 个有
+- `easy imageColorMatch` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `LayerUtility: ImageReel` —— 2/5 个有
+- `LayerUtility: ImageReelComposit` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/5 个有
 
 ## 典型参数
 

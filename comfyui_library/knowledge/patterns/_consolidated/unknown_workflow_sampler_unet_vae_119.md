@@ -1,62 +1,65 @@
 ---
 name: unknown_workflow_sampler_unet_vae_119
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.758714
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.809667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json, 视频生成/文生视频/A-5 MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2084649315783503873.json, 视频生成/文生视频/API专用--MiniMax H3 多参生视频--基础工作流_2084516866738974722.json, 视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json, 视频生成/文生视频/MINIMAX-H3-多参考生视频_2084144392893452289.json, 视频生成/文生视频/MiniMaxH3三合一简易稳定生产力Pro_2087108217645133826.json, 视频生成/文生视频/minimax_h3 多参考图+视频参考+sage加速_2089945454745313281.json]
+members: [视频生成/文生视频/minimaxH3文生+参考生视频_2084286286344581121.json, 视频生成/文生视频/minimaxH3满血版海螺H3_2085024933234692098.json, 视频生成/文生视频/minimax_h3_t2v文生视频_2084177287007784961.json, 视频生成/文生视频/minimax_h3_文生_图生视频_2084261498850988033.json, 视频生成/文生视频/minimax_h3_文生视频_2084110685591654402.json, 视频生成/文生视频/video_minimax_h3_r2v 多素材联合参考_2085213870431490049.json, 视频生成/文生视频/video_minimax_h3_r2v多参=加速_2095122591458615297.json, 视频生成/文生视频/多参生视频-MiniMax_h3_r2v-视频音频图片参考-智能提示词_2084694636374872065.json, 视频生成/文生视频/智能提示词-多参生视频-MiniMax_h3_r2v-视频音频图片参考_2084262166823268354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_119
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/A-3_MiniMax-H3_文生视频_开源版_2100205096012443649.json、视频生成/文生视频/A-5 MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2084649315783503873.json、视频生成/文生视频/API专用--MiniMax H3 多参生视频--基础工作流_2084516866738974722.json、视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json、视频生成/文生视频/MINIMAX-H3-多参考生视频_2084144392893452289.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/minimaxH3文生+参考生视频_2084286286344581121.json、视频生成/文生视频/minimaxH3满血版海螺H3_2085024933234692098.json、视频生成/文生视频/minimax_h3_t2v文生视频_2084177287007784961.json、视频生成/文生视频/minimax_h3_文生_图生视频_2084261498850988033.json、视频生成/文生视频/minimax_h3_文生视频_2084110685591654402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 6/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `VHS_LoadVideo` —— 6/7 个有
-- `CreateVideo` —— 5/7 个有
-- `SaveVideo` —— 5/7 个有
-- `MiniMaxH3ImageToVideo` —— 3/7 个有
-- `PathchSageAttentionKJ` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `LoadAudio` —— 2/7 个有
-- `VideoInfoLoaded` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `EmptyImage` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `Getter` —— 1/7 个有
-- `ImageConcatMulti` —— 1/7 个有
-- `MiniMaxH3AVDecodeT8` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `Setter` —— 1/7 个有
+- `LoadImage` —— 8/9 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/9 个有
+- `VHS_LoadVideo` —— 5/9 个有
+- `LoadAudio` —— 4/9 个有
+- `MiniMaxH3ImageToVideo` —— 4/9 个有
+- `LoadVideo` —— 3/9 个有
+- `AudioCrop` —— 2/9 个有
+- `RH_LLMAPI_Pro_Node` —— 2/9 个有
+- `easy anythingIndexSwitch` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `孤海注释` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `GetImageSize` —— 1/9 个有
+- `H3SigmaRefiner` —— 1/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 1/9 个有
+- `ModelAttentionBackend` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
+- `easy positive` —— 1/9 个有
 
 ## 典型参数
 

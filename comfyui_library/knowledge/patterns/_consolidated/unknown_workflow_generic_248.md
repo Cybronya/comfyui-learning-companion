@@ -1,31 +1,42 @@
 ---
 name: unknown_workflow_generic_248
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.86
-common_nodes: [ByteDance2ReferenceNodeV2, LoadImage, SaveVideo]
+coverage: 0.965556
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json, comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json, comfyui-workflow-templates-json/api_seedance2_5_r2v.json]
+members: [音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json, 音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json, 音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计_2056660403781984257.json, 音频生成/音频生成/VoxCPM2语音克隆_2090280073604718593.json, 音频生成/音频生成/VoxCPM2语音极限克隆V1  企财盈6.17_2067072588702113793.json, 音频生成/音频生成/vox cpm2语音克隆_2056202036819046401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_248
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json、comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json、comfyui-workflow-templates-json/api_seedance2_5_r2v.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json、音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json、音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ByteDance2ReferenceNodeV2`
-- `LoadImage`
-- `SaveVideo`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `AudioCrop` —— 1/9 个有
+- `AudioSeparation` —— 1/9 个有
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 1/9 个有
+- `ShowAnything|Mie` —— 1/9 个有
 
 ## 典型参数
 

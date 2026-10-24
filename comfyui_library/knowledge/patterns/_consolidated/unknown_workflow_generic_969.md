@@ -1,43 +1,39 @@
 ---
 name: unknown_workflow_generic_969
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, LoadAudio, SaveAudio, VRAMReserver, WhisperSTT]
+frequency: 3
+level: moderate
+coverage: 0.901
+common_nodes: [ColorMatch, ImageConcanate, ImageScaleBy, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PrimitiveFloat, SaveImage, SeedVR2, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS多角色配音-漫剧利器_2015358867147857922.json, 音频生成/音频生成/Qwen3 TTS多角色配音V2（声音克隆版）_2015094220624764929.json]
+members: [图片生成/图生图/高清修复+超清放大_1959455054111649793.json, 图片生成/图生图/高清修复+超清放大_1962145972216381442.json, 图片生成/文生图/高清修复（最新）_1943208890689609730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_969
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS多角色配音-漫剧利器_2015358867147857922.json、音频生成/音频生成/Qwen3 TTS多角色配音V2（声音克隆版）_2015094220624764929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/高清修复+超清放大_1959455054111649793.json、图片生成/图生图/高清修复+超清放大_1962145972216381442.json、图片生成/文生图/高清修复（最新）_1943208890689609730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `SaveAudio`
-- `VRAMReserver`
-- `WhisperSTT`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `Text` —— 1/2 个有
+全部 3 个 workflow 都包含：
+- `ColorMatch`
+- `ImageConcanate`
+- `ImageScaleBy`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
+- `SaveImage`
+- `SeedVR2`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
@@ -49,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,85 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_20
 type: Unknown Workflow
-frequency: 11
-level: strong
-coverage: 0.950909
-common_nodes: [BasicScheduler, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SaveVideo, SimpleMath+, VAEDecodeTiled, VAELoaderKJ]
-problems: []
+frequency: 14
+level: weak
+coverage: 0.896429
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SDXLEmptyLatentSizePicker+, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2058253695313342465.json, 视频生成/图生视频/2060545124828016642.json, 视频生成/图生视频/2058345686520909825.json, 视频生成/图生视频/2053077492440809473.json, 视频生成/图生视频/2053390831737950210.json, 视频生成/图生视频/2066483566602702849.json, 视频生成/图生视频/2057441452547993601.json, 视频生成/图生视频/2057121441094651906.json, 视频生成/图生视频/2060978714996994050.json, 视频生成/图生视频/2051306841547788290.json, 视频生成/图生视频/2051306846396399618.json]
+members: [图片生成/文生图/Qwen文生图极速版QwenQwen_1962119597363236866.json, 图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json, 图片生成/文生图/多风格绘本_2004518809287491586.json, 图片生成/文生图/文生图千问qwen美女帅哥超清qwen加速版_2008510508328030209.json, 图片生成/文生图/沙雕动漫人物生成—各类动漫和游戏—开高清放大_2024365361033908225.json, 图片生成/文生图/沙雕动漫修仙道具_1975850526229311490.json, 图片生成/文生图/沙雕动漫修仙道具_1977868579548844034.json, 图片生成/文生图/沙雕动漫游戏8090都市人物开高清放大_1960893369214013442.json, 图片生成/文生图/沙雕动漫表情包沙雕动漫超火表情包_1965258449992994817.json, 图片生成/文生图/沙雕动漫都市道具专用工作流_2075022458377293825.json, 图片生成/文生图/沙雕动漫都市道具超清qwen加速版_1960894339947933698.json, 图片生成/文生图/沙雕动画场景-简笔画超清_2024368744855773185.json, 图片生成/文生图/沙雕动画道具—超清加速_2024381279193538562.json, 图片生成/文生图/简笔画都市场景图超清_1965638195176198145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2058253695313342465.json、视频生成/图生视频/2060545124828016642.json、视频生成/图生视频/2058345686520909825.json、视频生成/图生视频/2053077492440809473.json、视频生成/图生视频/2053390831737950210.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Qwen文生图极速版QwenQwen_1962119597363236866.json、图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json、图片生成/文生图/多风格绘本_2004518809287491586.json、图片生成/文生图/文生图千问qwen美女帅哥超清qwen加速版_2008510508328030209.json、图片生成/文生图/沙雕动漫人物生成—各类动漫和游戏—开高清放大_2024365361033908225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：14
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicScheduler`
+全部 14 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SaveVideo`
-- `SimpleMath+`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `ModelSamplingAuraFlow`
+- `SDXLEmptyLatentSizePicker+`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVPreprocess` —— 10/11 个有
-- `LoadImage` —— 10/11 个有
-- `VisualizeSigmasKJ` —— 10/11 个有
-- `UNETLoader` —— 8/11 个有
-- `DualCLIPLoaderGGUF` —— 7/11 个有
-- `PreviewImage` —— 7/11 个有
-- `DualCLIPLoader` —— 6/11 个有
-- `UnetLoaderGGUF` —— 5/11 个有
-- `ImageResizeKJv2` —— 3/11 个有
-- `StringConstantMultiline` —— 3/11 个有
-- `Label (rgthree)` —— 2/11 个有
-- `Power Lora Loader (rgthree)` —— 2/11 个有
-- `VHS_VideoCombine` —— 2/11 个有
-- `DuckHideNode` —— 1/11 个有
-- `MuyeTextEditOutput` —— 1/11 个有
-- `SaveImage` —— 1/11 个有
-- `VHS_SelectImages` —— 1/11 个有
-- `VRAM_Debug` —— 1/11 个有
-- `easy cleanGpuUsed` —— 1/11 个有
+- `Text Multiline` —— 13/14 个有
+- `ConditioningZeroOut` —— 12/14 个有
+- `UpscaleModelLoader` —— 12/14 个有
+- `ImageUpscaleWithModel` —— 10/14 个有
+- `easy cleanGpuUsed` —— 10/14 个有
+- `easy promptConcat` —— 6/14 个有
+- `Anything Everywhere3` —— 5/14 个有
+- `CR Text Concatenate` —— 5/14 个有
+- `PreviewImage` —— 4/14 个有
+- `SaveLatent` —— 4/14 个有
+- `UltimateSDUpscale` —— 2/14 个有
+- `easy showAnything` —— 2/14 个有
+- `CR Text` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 361 | 97 - 361 | 11 | 77% |
-| 高度 | 25 | 25 - 25 | 11 | 100% |
+| 宽度 | 1024x1024 (1.0) | - | 14 | 57% |
+| 高度 | 1 | 1 - 4 | 14 | 36% |
+| 采样步数 | 8 | 4 - 15 | 14 | 66% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 14 | 36% |
+| 采样算法 | euler | - | 14 | 93% |
+| 调度器 | simple | - | 14 | 71% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 97 - 361，11 个样本
-- 高度 中位数 25，观测区间 25 - 25，11 个样本，取值集中（一致性 100%）
+- 宽度 最常用 1024x1024 (1.0)，14 个样本，一致性 57%
+- 高度 中位数 1，观测区间 1 - 4，14 个样本，取值分散，一致性仅 36%
+- 采样步数 中位数 8，观测区间 4 - 15，14 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，14 个样本，取值分散，一致性仅 36%
+- 采样算法 最常用 euler，14 个样本，一致性 93%
+- 调度器 最常用 simple，14 个样本，一致性 71%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（9/14 个样本）：Steps较低可能导致细节不足

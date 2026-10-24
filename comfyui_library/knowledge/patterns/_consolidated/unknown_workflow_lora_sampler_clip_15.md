@@ -1,75 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_15
 type: Unknown Workflow
-frequency: 13
-level: weak
-coverage: 0.923308
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text Concatenate, Text Multiline, SDXLEmptyLatentSizePicker+]
-members: [图片生成/文生图/1988478076659130370.json, 图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json, 图片生成/文生图/Qwen_Image_2512_文生图_bf16版本_2008392762101604354.json, 图片生成/文生图/Qwen_Image_2512文生图工作流_2063234247065948161.json, 图片生成/文生图/Qwen白丝长腿丝袜美腿_2019647690329559041.json, 图片生成/文生图/Z-I-B道具快乐美女_2040453074061369345.json, 图片生成/文生图/Z-I-B长腿肉腿刺客美女_2056916021260410881.json, 图片生成/文生图/Z-Image-Base文生图亮亮丝袜美女_2018164986979295233.json, 图片生成/文生图/Z-Image-Turbo 4K高清大图DyPE直出_2000758971898134529.json, 图片生成/文生图/千问Qwen_image文生图海报_fp8_官方版26125_2015389169786294274.json, 图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json, 图片生成/文生图/多风格绘本_2004518809287491586.json, 图片生成/文生图/沙雕动漫怪兽神兽多视图三视图（加速版）_2002568995201007617.json]
+frequency: 16
+level: strong
+coverage: 0.86125
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, PathchSageAttentionKJ, PreviewImage, ProcessString, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+problems: []
+missing: []
+members: [图片生成/图生图/极致美学文生图提升构图+真实性_1994236855046651906.json, 图片生成/文生图/Z Image：极致写实图像，抖音小红书洗图，一键就能拥有，反推出图，文生图，极致美学文生图（完美构_2036281015341158401.json, 图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流_2009588663545503746.json, 图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流自用_2014134484735627265.json, 图片生成/文生图/大凯辰光-极致美学文生图-（9宫格直出）提升构图及真实性工作流_2009552798479814658.json, 图片生成/文生图/批量生成极致真实人像 提升美学质感 提升氛围感 QWEN+Z image turbo 自动提示词创意_2053490147555061762.json, 图片生成/文生图/极致真实人像V2.0（提升美学）_2008839119325110273.json, 图片生成/文生图/极致真实人像摄影V1.0_2009073989850767361.json, 图片生成/文生图/极致美学 文生图（提升构图+真实性）_2008535816078888962.json, 图片生成/文生图/极致美学文生图-提升构图+真实性_2007814565563736066.json, 图片生成/文生图/极致美学文生图（完美构图+真实性）_2031969796539027457.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V4.0_1993873613419905026.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V5.0_1993948868719165441.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V5.0_2001899008475951105.json, 图片生成/文生图/极致美学文生图（提升构图+真实性）V6.0_1994216495739846658.json, 图片生成/文生图/电影质感真实人像V1.0_2009482138478977026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_15
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/1988478076659130370.json、图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json、图片生成/文生图/Qwen_Image_2512_文生图_bf16版本_2008392762101604354.json、图片生成/文生图/Qwen_Image_2512文生图工作流_2063234247065948161.json、图片生成/文生图/Qwen白丝长腿丝袜美腿_2019647690329559041.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/极致美学文生图提升构图+真实性_1994236855046651906.json、图片生成/文生图/Z Image：极致写实图像，抖音小红书洗图，一键就能拥有，反推出图，文生图，极致美学文生图（完美构_2036281015341158401.json、图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流_2009588663545503746.json、图片生成/文生图/大凯辰光-极致美学参考图反推+文生图-9宫格直出-工作流自用_2014134484735627265.json、图片生成/文生图/大凯辰光-极致美学文生图-（9宫格直出）提升构图及真实性工作流_2009552798479814658.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：16
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `CR Text`
+- `CR Text Replace`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `JDCN_StringToList`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `ProcessString`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 10/13 个有
-- `Text Multiline` —— 5/13 个有
-- `ConditioningZeroOut` —— 4/13 个有
-- `CompressImages` —— 3/13 个有
-- `SDXLEmptyLatentSizePicker+` —— 3/13 个有
-- `CR Text Concatenate` —— 2/13 个有
-- `DyPE_FLUX` —— 2/13 个有
-- `RMBG` —— 2/13 个有
-- `Anything Everywhere3` —— 1/13 个有
+- `GetNode` —— 3/16 个有
+- `SetNode` —— 3/16 个有
+- `AILab_QwenVL` —— 2/16 个有
+- `Display Any (rgthree)` —— 2/16 个有
+- `LoadImage` —— 2/16 个有
+- `PreviewAny` —— 2/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 13 | 54% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 13 | 20% |
-| 采样算法 | euler | - | 13 | 85% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
-| 宽度 | 1344x768 (1.75) | - | 3 | 67% |
-| 高度 | 1 | 1 - 4 | 3 | 29% |
+| 宽度 | 1080 | 1080 - 1080 | 16 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 16 | 100% |
+| 采样步数 | randomize | - | 16 | 100% |
+| Prompt 约束强度(CFG) | 10 | 4 - 10 | 16 | 74% |
+| 采样算法 | 1 | 1 - 1 | 16 | 100% |
+| 调度器 | dpmpp_2m | - | 16 | 75% |
+| 重绘幅度 | simple | - | 16 | 81% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，13 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，13 个样本，取值分散，一致性仅 20%
-- 采样算法 最常用 euler，13 个样本，一致性 85%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 宽度 最常用 1344x768 (1.75)，3 个样本，一致性 67%
-- 高度 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
-- 高发问题（9/13 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、Text Multiline、SDXLEmptyLatentSizePicker+
+- 宽度 中位数 1080，观测区间 1080 - 1080，16 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，16 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，16 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 10，16 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m，16 个样本，一致性 75%
+- 重绘幅度 最常用 simple，16 个样本，一致性 81%

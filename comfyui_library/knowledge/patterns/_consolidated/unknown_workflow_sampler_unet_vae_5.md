@@ -1,69 +1,68 @@
 ---
 name: unknown_workflow_sampler_unet_vae_5
 type: Unknown Workflow
-frequency: 23
+frequency: 26
 level: moderate
-coverage: 0.843696
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.936154
+common_nodes: [BasicScheduler, CFGGuider, DualCLIPLoader, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/文生图/Minimax H3-t2v 创意时装大片文生视频_2084847961032454145.json, 图片生成/文生图/Minimax H3-t2v 官方提示词文生视频_2084933973188366337.json, 图片生成/文生图/video_minimax_h3_t2v_2087382436262006785.json, 图片生成/文生图/【1】文生视频（无参考图模式）video_minimax_h3_i2v_2087195498171158529.json, 数字人/数字人/H3数字人_2092831814367924225.json, 数字人/数字人/MINIMAX-H3 8参考_2086224463867236354.json, 数字人/数字人/MINIMAX-H3 9参考_2086239769545232385.json, 数字人/数字人/MINIMAX-H3 9参考_2086338746995265538.json, 数字人/数字人/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089709883632476162.json, 视频生成/图生视频/H3+音频驱动&图片跳舞！加速版_2099306860540162050.json, 视频生成/图生视频/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089304839850381314.json, 视频生成/图生视频/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089316746447638530.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2087489674502828034.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2087515631137681409.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2094741369498722306.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2094766113983913985.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2099456748556996609.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2099471044871548930.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2110317481368838145.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2110323066374025217.json, 视频生成/图生视频/MiniMaxH3 音频驱动&图片跳舞！加速版！B站艾橘溪_2087001018646220802.json, 视频生成/图生视频/MiniMaxH3数字人_音频驱动&图片跳舞！效果炸裂！_2087444061333581825.json, 视频生成/图生视频/音频驱动图片跳舞加速版｜MiniMax H3_2090000101321302017.json]
+members: [视频生成/图生视频/LTX2.3-漫剧导演工作台工作流_2078873049419571202.json, 视频生成/图生视频/LTX2.3导演台2.0Director_2072850432728326145.json, 视频生成/图生视频/LTX2.3导演台_音频驱动_修复版_2073964076115513345.json, 视频生成/图生视频/LTX_2.3_Director_2.0_多功能导演台7.11优化版工作流_2088158819493961729.json, 视频生成/图生视频/LTX_Director_2-修复版_2073922895696453634.json, 视频生成/图生视频/LTX_Director_2_Workflow_FL_frame首尾帧_2072254537259372546.json, 视频生成/图生视频/LTX_Director_2_Workflow_extend_video视频延长_2072252924708872193.json, 视频生成/图生视频/LTX_Director_2_Workflow_iclora_edit_video视频编辑_2072255653216874498.json, 视频生成/图生视频/LTX_Director_2_多参_2074755278909820930.json, 视频生成/图生视频/LTX_Director_2_视频编辑_2072931950360350721.json, 视频生成/图生视频/LTX_Director_2_视频编辑_2073226755028119553.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068690343561879554.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068939406005854210.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流【加速版】_2068922121077747714.json, 视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074134750515777537.json, 视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074150490602033154.json, 视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074307854646996994.json, 视频生成/图生视频/LTX导演台2.0_2069677041460539394.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2069021020295618562.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2076638289418870785.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2082428035797708802.json, 视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074291321979891714.json, 视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074299424884477953.json, 视频生成/图生视频/人脸一致性-LTX导演台2.0+dasiwaV3_2075476336205983745.json, 视频生成/文生视频/LTX导演台2.0【Director】优化工作流已修复_2060326139540885505.json, 视频生成/文生视频/LTX导演台2.0【Director】视频延长+编辑_2069229270215516161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/文生图/Minimax H3-t2v 创意时装大片文生视频_2084847961032454145.json、图片生成/文生图/Minimax H3-t2v 官方提示词文生视频_2084933973188366337.json、图片生成/文生图/video_minimax_h3_t2v_2087382436262006785.json、图片生成/文生图/【1】文生视频（无参考图模式）video_minimax_h3_i2v_2087195498171158529.json、数字人/数字人/H3数字人_2092831814367924225.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-漫剧导演工作台工作流_2078873049419571202.json、视频生成/图生视频/LTX2.3导演台2.0Director_2072850432728326145.json、视频生成/图生视频/LTX2.3导演台_音频驱动_修复版_2073964076115513345.json、视频生成/图生视频/LTX_2.3_Director_2.0_多功能导演台7.11优化版工作流_2088158819493961729.json、视频生成/图生视频/LTX_Director_2-修复版_2073922895696453634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `BasicGuider`
+全部 26 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `CFGGuider`
+- `DualCLIPLoader`
 - `KSamplerSelect`
-- `PrimitiveFloat`
+- `LTXDirector`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 20/23 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 20/23 个有
-- `PrimitiveStringMultiline` —— 20/23 个有
-- `LoadAudio` —— 19/23 个有
-- `LoadImage` —— 19/23 个有
-- `MiniMaxH3ReferenceToVideo` —— 19/23 个有
-- `LayerUtility: PurgeVRAM V2` —— 17/23 个有
-- `PathchSageAttentionKJ` —— 16/23 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 16/23 个有
-- `GetNode` —— 15/23 个有
-- `PainterVRAM` —— 15/23 个有
-- `SetNode` —— 15/23 个有
-- `VRAM_Debug` —— 15/23 个有
-- `MiniMaxH3ImageToVideo` —— 4/23 个有
-- `EasyCache` —— 3/23 个有
-- `JWString` —— 3/23 个有
-- `JoinStrings` —— 3/23 个有
-- `LoraLoaderBypassModelOnly` —— 3/23 个有
-- `LoadVideo` —— 2/23 个有
-- `DF_Int_to_Float` —— 1/23 个有
-- `GetImageSize` —— 1/23 个有
-- `ImageScaleToTotalPixels` —— 1/23 个有
-- `Int` —— 1/23 个有
-- `Label (rgthree)` —— 1/23 个有
+- `ConditioningZeroOut` —— 25/26 个有
+- `LTXVConditioning` —— 25/26 个有
+- `VAEDecode` —— 25/26 个有
+- `LTXDirectorCropGuides` —— 24/26 个有
+- `LTXVLatentUpsampler` —— 24/26 个有
+- `LatentUpscaleModelLoader` —— 24/26 个有
+- `ModelPreviewOverrideKJ` —— 24/26 个有
+- `VAELoader` —— 24/26 个有
+- `CreateVideo` —— 22/26 个有
+- `SaveVideo` —— 19/26 个有
+- `VHS_VideoCombine` —— 10/26 个有
+- `LoraLoaderModelOnly` —— 9/26 个有
+- `CLIPTextEncode` —— 6/26 个有
+- `LoadImage` —— 6/26 个有
+- `GetVideoComponents` —— 5/26 个有
+- `LTX2_NAG` —— 5/26 个有
+- `TTResolutionSelector` —— 3/26 个有
+- `VRAM_Debug` —— 3/26 个有
+- `GetNode` —— 2/26 个有
+- `SetNode` —— 2/26 个有
+- `LTX2SamplingPreviewOverride` —— 1/26 个有
+- `LiconMSR` —— 1/26 个有
+- `PathchSageAttentionKJ` —— 1/26 个有
+- `VAEDecodeTiled` —— 1/26 个有
+- `easy cleanGpuUsed` —— 1/26 个有
 
 ## 典型参数
 

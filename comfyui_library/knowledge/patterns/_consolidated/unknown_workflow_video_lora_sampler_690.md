@@ -3,59 +3,81 @@ name: unknown_workflow_video_lora_sampler_690
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.760333
-common_nodes: [CR Text, GetImageSizeAndCount, ImageFromBatch+, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.914667
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, Compare, DF_Get_image_size, DiffuEraserLoader, DiffuEraserSampler, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Float, GetImageRangeFromBatch, GetImageSizeAndCount, If ANY execute A else B, ImageFromBatch+, ImageResizeKJv2, ImpactSwitch, Int, JWImageResizeByLongerSide, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch2way, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveBoolean, RH_Sora2_I2V, RH_Sora2_T2V, RepeatImageBatch, SaveVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy float, easy showAnything]
 problems: []
-missing: [CR Text, ImageFromBatch+, easy cleanGpuUsed]
-members: [视频生成/文生视频/1950074509607002113.json, 视频生成/文生视频/1974458847702200321.json, 视频生成/文生视频/MiniCPM4.5视频反推+图生视频+文生视频_2003004980099465217.json]
+missing: []
+members: [视频生成/文生视频/EPace-全能视频S一键无水印直出（带高清修复+对口型模块）_1973906564304211969.json, 视频生成/文生视频/最新全能视频S粤语输出提示词一键无水印直出高清修复对口型模块_1974092734858399746.json, 视频生成/文生视频/最新全能视频S高清输出提示词一键无水印直出高清修复对口型模块需要48gb显存_1974499706409717761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_690
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1950074509607002113.json、视频生成/文生视频/1974458847702200321.json、视频生成/文生视频/MiniCPM4.5视频反推+图生视频+文生视频_2003004980099465217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/EPace-全能视频S一键无水印直出（带高清修复+对口型模块）_1973906564304211969.json、视频生成/文生视频/最新全能视频S粤语输出提示词一键无水印直出高清修复对口型模块_1974092734858399746.json、视频生成/文生视频/最新全能视频S高清输出提示词一键无水印直出高清修复对口型模块需要48gb显存_1974499706409717761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `Compare`
+- `DF_Get_image_size`
+- `DiffuEraserLoader`
+- `DiffuEraserSampler`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
+- `If ANY execute A else B`
 - `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `Int`
+- `JWImageResizeByLongerSide`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LazySwitch2way`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PrimitiveBoolean`
+- `RH_Sora2_I2V`
+- `RH_Sora2_T2V`
+- `RepeatImageBatch`
+- `SaveVideo`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy batchAnything`
+- `easy float`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `Wan_video_prompt_generator` —— 2/3 个有
-- `AILab_MiniCPM_4_V_Advanced` —— 1/3 个有
-- `CLIPVisionLoader` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `ShellAgentPluginOutputText` —— 1/3 个有
-- `WanVideoClipVisionEncode` —— 1/3 个有
-- `WanVideoImageToVideoEncode` —— 1/3 个有
+- `Text Concatenate` —— 2/3 个有
+- `Bookmark (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -67,4 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、ImageFromBatch+、easy cleanGpuUsed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

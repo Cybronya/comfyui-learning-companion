@@ -3,51 +3,56 @@ name: unknown_workflow_video_sampler_vae_155
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.953667
-common_nodes: [GetImageSize+, ImagePadKJ, ImageResizeKJ, LoadWanVideoT5TextEncoder, MaskToImage, String Literal, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.899667
+common_nodes: [CR Text, DF_Integer, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, ShowText|pysssss, SimpleMath+, StringToInt, Text Multiline, TextSwitchCase, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy textSwitch]
 problems: []
-missing: [String Literal, GetImageSize+]
-members: [视频生成/图生视频/1982061265277337602.json, 视频生成/文生视频/1963909570361966594.json, 视频生成/文生视频/WAN2.2-AllInOne视频扩展_2072999602540027904.json]
+missing: []
+members: [视频生成/图生视频/FusionX图生视频_1934554674429108225.json, 视频生成/图生视频/通义万相视频LLM自动提示词+FusionX模型图生视频一统江湖_1934947050259685377.json, 视频生成/文生视频/FusionX文生视频_1934540545190764546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_155
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1982061265277337602.json、视频生成/文生视频/1963909570361966594.json、视频生成/文生视频/WAN2.2-AllInOne视频扩展_2072999602540027904.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FusionX图生视频_1934554674429108225.json、视频生成/图生视频/通义万相视频LLM自动提示词+FusionX模型图生视频一统江湖_1934947050259685377.json、视频生成/文生视频/FusionX文生视频_1934540545190764546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `GetImageSize+`
-- `ImagePadKJ`
-- `ImageResizeKJ`
+- `CR Text`
+- `DF_Integer`
 - `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `String Literal`
-- `VHS_LoadVideo`
+- `RH_LLMAPI_NODE`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `StringToInt`
+- `Text Multiline`
+- `TextSwitchCase`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `GrowMaskWithBlur` —— 2/3 个有
-- `WanVideoLoraSelect` —— 2/3 个有
-- `WanVideoSetLoRAs` —— 2/3 个有
-- `WanVideoVACEModelSelect` —— 2/3 个有
-- `GetNode` —— 1/3 个有
-- `WanVideoEnhanceAVideo` —— 1/3 个有
-- `WanVideoExperimentalArgs` —— 1/3 个有
+- `AnimateDiffCombine` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `WanVideoImageToVideoEncode` —— 2/3 个有
+- `WanVideoSLG` —— 2/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `string_util_StrReplace` —— 1/3 个有
 
 ## 典型参数
 
@@ -59,4 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、GetImageSize+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

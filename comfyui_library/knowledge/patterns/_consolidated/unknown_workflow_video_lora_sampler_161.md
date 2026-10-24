@@ -2,78 +2,83 @@
 name: unknown_workflow_video_lora_sampler_161
 type: Unknown Workflow
 frequency: 11
-level: strong
-coverage: 0.800182
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, GetNode, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, wanBlockSwap]
+level: moderate
+coverage: 0.606545
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019039231745728514.json, 视频生成/图生视频/1991284667739648001.json, 视频生成/图生视频/2004740865878884354.json, 视频生成/图生视频/1989222645507952641.json, 视频生成/图生视频/2049774509045104642.json, 视频生成/图生视频/2051900032323989506.json, 视频生成/图生视频/2059887838782648321.json, 视频生成/图生视频/2059921253905027073.json, 视频生成/图生视频/2062774735607525377.json, 视频生成/图生视频/2066800648426975233.json, 视频生成/图生视频/1988864272392400898.json]
+members: [视频生成/图生视频/03-18-01-WAN2.1-BindWeave单图参考图生视频_1996052544822657026.json, 视频生成/图生视频/03-18-02-WAN2.1-BindWeave-融合多图生成高一致性视频_1996106049994309634.json, 视频生成/图生视频/BindWeave_multi_image_1995416893911707650.json, 视频生成/图生视频/BindWeave_single_image_1993600135810711553.json, 视频生成/图生视频/BindWeave_多图生视频_2029026172620775426.json, 视频生成/图生视频/BindWeave三图参考图生视频V1(FPS24)_1989700619843891202.json, 视频生成/图生视频/图生视频 BindWeave 三图编辑【人+产品+背景组合】_2029575255773159425.json, 视频生成/图生视频/图生视频 BindWeave 三图编辑【人+人+背景组合】_2030497637895507970.json, 视频生成/图生视频/图生视频5.1 BindWeave 视频双图编辑_1990080887029157890.json, 视频生成/图生视频/图生视频5.2 BindWeave 三图编辑【人+产品+背景组合】_1990227277147459585.json, 视频生成/图生视频/图生视频5.3 BindWeave 三图编辑【人+人+背景组合】_1990257275820535809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_161
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2019039231745728514.json、视频生成/图生视频/1991284667739648001.json、视频生成/图生视频/2004740865878884354.json、视频生成/图生视频/1989222645507952641.json、视频生成/图生视频/2049774509045104642.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/03-18-01-WAN2.1-BindWeave单图参考图生视频_1996052544822657026.json、视频生成/图生视频/03-18-02-WAN2.1-BindWeave-融合多图生成高一致性视频_1996106049994309634.json、视频生成/图生视频/BindWeave_multi_image_1995416893911707650.json、视频生成/图生视频/BindWeave_single_image_1993600135810711553.json、视频生成/图生视频/BindWeave_多图生视频_2029026172620775426.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **可信度**：中等可信
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Text`
-- `GetNode`
-- `ImpactInt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ImageResizeKJv2`
+- `InvertMask`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `wanBlockSwap`
+- `WanVideoAddBindweaveEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncodeLatentBatch`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Muter (rgthree)` —— 10/11 个有
-- `LoadImage` —— 10/11 个有
-- `Mute / Bypass Repeater (rgthree)` —— 10/11 个有
-- `RIFE VFI` —— 10/11 个有
-- `easy getNode` —— 10/11 个有
-- `easy setNode` —— 10/11 个有
-- `Float` —— 7/11 个有
-- `easy seed` —— 7/11 个有
-- `CompressImages` —— 1/11 个有
-- `Note Plus (mtb)` —— 1/11 个有
-- `RHBatchImages:` —— 1/11 个有
-- `RHExtractImage` —— 1/11 个有
-- `RHUploadZip` —— 1/11 个有
-- `VHS_SelectFilename` —— 1/11 个有
-- `easy forLoopEnd` —— 1/11 个有
-- `easy forLoopStart` —— 1/11 个有
-- `easy imageCount` —— 1/11 个有
-- `easy showAnything` —— 1/11 个有
+- `CLIPLoader` —— 10/11 个有
+- `GetNode` —— 10/11 个有
+- `SetNode` —— 10/11 个有
+- `TextImageEncodeQwenVL` —— 10/11 个有
+- `ImageBatchMulti` —— 9/11 个有
+- `MaskBatchMulti` —— 9/11 个有
+- `WanVideoSetLoRAs` —— 9/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
+- `MaskPreview+` —— 7/11 个有
+- `SolidMask` —— 7/11 个有
+- `easy imageRemBg` —— 7/11 个有
+- `ImageConcatMulti` —— 6/11 个有
+- `JWInteger` —— 6/11 个有
+- `INTConstant` —— 5/11 个有
+- `JjkText` —— 5/11 个有
+- `Primitive integer [Crystools]` —— 5/11 个有
+- `SimpleMath+` —— 5/11 个有
+- `WanVideoTorchCompileSettings` —— 5/11 个有
+- `easy cleanGpuUsed` —— 5/11 个有
+- `MaskPreview` —— 4/11 个有
+- `RMBG` —— 4/11 个有
+- `CR Prompt Text` —— 3/11 个有
+- `ImageConcanate` —— 3/11 个有
+- `ImagePadForOutpaint` —— 2/11 个有
+- `DrawMaskOnImage` —— 1/11 个有
+- `EmptyImage` —— 1/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `FloatConstant` —— 1/11 个有
+- `GetImageSizeAndCount` —— 1/11 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 11 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 11 | 100% |
-| 采样算法 | 1 | 1 - 1 | 11 | 100% |
-| 调度器 | 1 | 1 - 1 | 11 | 100% |
-| 重绘幅度 | euler_ancestral | - | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,8 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，11 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，11 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，11 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

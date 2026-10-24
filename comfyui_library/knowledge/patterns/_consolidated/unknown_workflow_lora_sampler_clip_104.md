@@ -1,71 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_clip_104
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.716667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CR Aspect Ratio SDXL, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, LoraLoader, RandomNoise, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.7768
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, Flux2Scheduler, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, StringFunction|pysssss, CR Aspect Ratio SDXL]
-members: [图片生成/文生图/1934549977387442177.json, 图片生成/文生图/FLUX-随机提示词-基础文生图-提示词反推_1901113562578984962.json, 图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json]
+missing: []
+members: [图片生成/图生图/boogu_image_edit_turbo编辑_2080928439120515074.json, 图片生成/图生图/boogu_image单图编辑局部重绘换装_2096055509886529537.json, 图片生成/图生图/boogu_image单图编辑局部重绘换装_2096164208168751106.json, 图片生成/图生图/flux_2_klein_9b-图生图_2028319139701460993.json, 数字人/数字人/260920 身材优化_2101508683275522049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_104
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1934549977387442177.json、图片生成/文生图/FLUX-随机提示词-基础文生图-提示词反推_1901113562578984962.json、图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/boogu_image_edit_turbo编辑_2080928439120515074.json、图片生成/图生图/boogu_image单图编辑局部重绘换装_2096055509886529537.json、图片生成/图生图/boogu_image单图编辑局部重绘换装_2096164208168751106.json、图片生成/图生图/flux_2_klein_9b-图生图_2028319139701460993.json、数字人/数字人/260920 身材优化_2101508683275522049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：72%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `CR Aspect Ratio SDXL`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `Flux2Scheduler`
+- `GetNode`
 - `KSamplerSelect`
 - `LoadImage`
-- `LoraLoader`
+- `LoraLoaderModelOnly`
 - `RandomNoise`
-- `RepeatLatentBatch`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Florence2Run` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `DownloadAndLoadFlorence2Model` —— 1/3 个有
-- `Fast Bypasser (rgthree)` —— 1/3 个有
-- `Florence2ModelLoader` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/3 个有
-- `Primitive string multiline [Crystools]` —— 1/3 个有
-- `SDXLPromptStyler` —— 1/3 个有
-- `Text Random Line` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `EmptyLatentImage` —— 4/5 个有
+- `GetImageSize` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `ColorMatchV2` —— 3/5 个有
+- `FluxKontextImageScale` —— 3/5 个有
+- `ImageScaleBy` —— 3/5 个有
+- `TextEncodeBooguEdit` —— 3/5 个有
+- `VAEDecodeTiled` —— 3/5 个有
+- `easy float` —— 3/5 个有
+- `CompressImages` —— 1/5 个有
+- `EmptyFlux2LatentImage` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `LayerUtility: TextJoin` —— 1/5 个有
+- `SaveText` —— 1/5 个有
+- `easy imageScaleDownToSize` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 800 | 800 - 800 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| LoRA 模型强度 | 0.8 | 0.4 - 0.8 | 3 | 72% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 512 | 512 - 1360 | 4 | 49% |
+| 高度 | 512 | 512 - 768 | 4 | 81% |
 
 ## 常见问题
 
@@ -73,8 +74,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 800，观测区间 800 - 800，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.4 - 0.8，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions、LayerUtility: LoadJoyCaptionBeta1Model、StringFunction|pysssss、CR Aspect Ratio SDXL
+- 宽度 中位数 512，观测区间 512 - 1360，4 个样本，取值分散，一致性仅 49%
+- 高度 中位数 512，观测区间 512 - 768，4 个样本，取值集中（一致性 81%）

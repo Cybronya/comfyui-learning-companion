@@ -1,85 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_unet_13
 type: Unknown Workflow
-frequency: 10
+frequency: 26
 level: moderate
-coverage: 0.7552
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.881538
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json, 视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json, 视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json, 视频生成/图生视频/Minimax-动作迁移_2086299017864114177.json, 视频生成/图生视频/MinimaxH3 4步加速故事板九宫格分镜多参考图视频工作流_2084506449723617282.json, 视频生成/图生视频/【MINIMAX-H3】最强W版武戏-极速版_2111450852316770305.json, 视频生成/文生视频/15秒卡点混剪_2092720568926818306.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-低配版_2098599696725004290.json, 视频生成/文生视频/【二采-低配版】MinMaxh3日常短剧专用_2095180548556808193.json, 视频生成/文生视频/【二采】MinMaxh3动态打斗专用_2095187337885085698.json]
+members: [图片生成/图生图/一键精准人物替换 二创必备_2033184455149494273.json, 图片生成/图生图/产品图换装Clothes_swap_2055459015823511553.json, 图片生成/图生图/产品图的换装Clothes_swap_2055110104705454081.json, 图片生成/图生图/产品贴标_2049328622414073857.json, 图片生成/图生图/千问人物表情编辑_2026155357369798658.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2080744788332204033.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2081674109632729089.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2082729493181063170.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2083960130487545857.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2087104573520564226.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2087596248923721730.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2088141337731358722.json, 图片生成/图生图/换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2088154044366934017.json, 图片生成/图生图/换装 换衣  电商服装展示V2.0_2062750173624889346.json, 图片生成/图生图/换装 换衣 电商服装展示（上传照片即可）_2067164508631683073.json, 图片生成/图生图/换装+换衣++一键换衣+电商服装展示+_2070195377646694402.json, 图片生成/图生图/换装+换衣++电商服装展示+FireRed-Image-Edit+小红书++ (1)_2071497221908029441.json, 图片生成/图生图/换装+换衣++电商服装展示+FireRed-Image-Edit+小红书++_2064884842726248449.json, 图片生成/图生图/换装+电商服装展示+FireRed-Image-Edit_2078106380417978370.json, 图片生成/图生图/换装_2075461922253795330.json, 图片生成/图生图/换装换衣电商服装展示FireRedImageEdit小红书_2065944485196029953.json, 图片生成/图生图/最新qwen image 2511单图编辑工作流x_2013208112680931329.json, 图片生成/图生图/最新qwen image 2511单图编辑工作流x_2070752054544527361.json, 图片生成/图生图/规划用地图生成城市设计方案图v1.0_1985273198331764738.json, 图片生成/图生图/规划用地图生成城市设计方案图v1.0_1986632623231561730.json, 图片生成/图生图/规划用地图生成城市设计方案图v2.0_1986788983076286465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json、视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json、视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json、视频生成/图生视频/Minimax-动作迁移_2086299017864114177.json、视频生成/图生视频/MinimaxH3 4步加速故事板九宫格分镜多参考图视频工作流_2084506449723617282.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/一键精准人物替换 二创必备_2033184455149494273.json、图片生成/图生图/产品图换装Clothes_swap_2055459015823511553.json、图片生成/图生图/产品图的换装Clothes_swap_2055110104705454081.json、图片生成/图生图/产品贴标_2049328622414073857.json、图片生成/图生图/千问人物表情编辑_2026155357369798658.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 26 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `PrimitiveFloat` —— 8/10 个有
-- `VHS_VideoCombine` —— 8/10 个有
-- `H3SigmaRefiner` —— 6/10 个有
-- `ModelAttentionBackend` —— 6/10 个有
-- `CR Prompt Text` —— 4/10 个有
-- `CreateVideo` —— 4/10 个有
-- `ExtendIntermediateSigmas` —— 4/10 个有
-- `GetNode` —— 4/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
-- `LoadAudio` —— 4/10 个有
-- `MuyeTextEditOutput` —— 4/10 个有
-- `PreviewImage` —— 4/10 个有
-- `SetNode` —— 4/10 个有
-- `忽略多组孤海` —— 4/10 个有
-- `INTConstant` —— 3/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `llama_cpp_instruct_adv` —— 3/10 个有
-- `llama_cpp_model_loader` —— 3/10 个有
-- `llama_cpp_parameters` —— 3/10 个有
-- `LTXVConcatAVLatent` —— 2/10 个有
-- `LTXVSeparateAVLatent` —— 2/10 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/10 个有
-- `SaveVideo` —— 2/10 个有
-- `VHS_VideoInfoLoaded` —— 2/10 个有
-- `PreviewAny` —— 1/10 个有
-- `RH_LLMAPI_NODE` —— 1/10 个有
-- `RH_LLMAPI_Pro_Node` —— 1/10 个有
-- `XB_BatchImages` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `LayerUtility: ImageReel` —— 25/26 个有
+- `LayerUtility: ImageReelComposit` —— 25/26 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 25/26 个有
+- `Image Comparer (rgthree)` —— 19/26 个有
+- `PreviewImage` —— 19/26 个有
+- `FluxKontextImageScale` —— 6/26 个有
+- `Text Multiline` —— 5/26 个有
+- `EmptyLatentImage` —— 4/26 个有
+- `Any Switch (rgthree)` —— 2/26 个有
+- `Fast Groups Muter (rgthree)` —— 2/26 个有
+- `Int` —— 2/26 个有
+- `JjkText` —— 2/26 个有
+- `CR Prompt Text` —— 1/26 个有
+- `Fast Muter (rgthree)` —— 1/26 个有
+- `TextEncodeQwenImageEditPlusPro_lrzjason` —— 1/26 个有
+- `easy promptList` —— 1/26 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 30 | 26 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 26 | 29% |
+| 采样算法 | euler | - | 26 | 100% |
+| 调度器 | simple | - | 26 | 81% |
+| 重绘幅度 | 1 | 1 - 1 | 26 | 100% |
+| 宽度 | 1392 | 1200 - 1504 | 4 | 90% |
+| 高度 | 1240 | 1200 - 1504 | 4 | 90% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 22/26 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 30，26 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，26 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，26 个样本，一致性 100%
+- 调度器 最常用 simple，26 个样本，一致性 81%
+- 重绘幅度 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1392，观测区间 1200 - 1504，4 个样本，取值集中（一致性 90%）
+- 高度 中位数 1240，观测区间 1200 - 1504，4 个样本，取值集中（一致性 90%）
+- 高发问题（22/26 个样本）：Steps较低可能导致细节不足

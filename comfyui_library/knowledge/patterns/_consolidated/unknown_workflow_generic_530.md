@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_530
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.691333
-common_nodes: [CR Text, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
+coverage: 0.8934
+common_nodes: [CR Prompt Text, SaveImage, Seedance_Config, Zhenzhen_Image_G25_Lowprice]
 problems: []
 missing: []
-members: [图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json, 图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json, 图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json]
+members: [图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json, 图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json, 图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_530
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键四宫格（两张版本）_2016358971988250625.json、图片生成/文生图/火影忍者四宫格（三张）_2019255557986721794.json、图片生成/文生图/🚀Nano 全能图片V12最强文生图！题词优化版 支持4K直出【每次消耗2毛钱】_1993489593307774977.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json、图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json、图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json、图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json、图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `RH_Nano_Banana2_Image2Image`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
 - `SaveImage`
-- `easy showAnything`
+- `Seedance_Config`
+- `Zhenzhen_Image_G25_Lowprice`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `TextBox` —— 2/3 个有
+- `LoadImage` —— 3/5 个有
 
 ## 典型参数
 

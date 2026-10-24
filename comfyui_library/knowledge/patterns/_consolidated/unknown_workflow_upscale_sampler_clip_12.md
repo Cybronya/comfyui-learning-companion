@@ -1,73 +1,89 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_12
 type: Unknown Workflow
-frequency: 3
-level: weak
-coverage: 0.847667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: strong
+coverage: 0.832
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
+problems: []
 missing: []
-members: [图片生成/文生图/AA--加速版-Z-image Base Meancache加速+seedVR2超清放大_2019376193790808065.json, 图片生成/文生图/AA--文生图-Qwen-Image-2512-文生图+SeedVR2放大_2006397025637638146.json, 图片生成/文生图/Z-Image Turbo + LoRA 文生图高清放大2k直出工作流_2047129096592822273.json]
+members: [图片生成/图生图/分块高清放大工作流_1934782777130688514.json, 图片生成/图生图/图片-TTP高清修复放大_1978037084130791426.json, 图片生成/图生图/图片超级高清放大_1915403255067639810.json, 图片生成/图生图/场景图8K高清修复放大_2071474028497428482.json, 图片生成/图生图/放大-F.1_1942192673929498626.json, 图片生成/图生图/高清放大_1902741134769074178.json, 图片生成/图生图/高清放大工作流（TRANCE）_1925847949354422273.json, 图片生成/文生图/文生图或图放大（4k）_1901839602184036353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/AA--加速版-Z-image Base Meancache加速+seedVR2超清放大_2019376193790808065.json、图片生成/文生图/AA--文生图-Qwen-Image-2512-文生图+SeedVR2放大_2006397025637638146.json、图片生成/文生图/Z-Image Turbo + LoRA 文生图高清放大2k直出工作流_2047129096592822273.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/分块高清放大工作流_1934782777130688514.json、图片生成/图生图/图片-TTP高清修复放大_1978037084130791426.json、图片生成/图生图/图片超级高清放大_1915403255067639810.json、图片生成/图生图/场景图8K高清修复放大_2071474028497428482.json、图片生成/图生图/放大-F.1_1942192673929498626.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `DualCLIPLoader`
+- `ImageUpscaleWithModel`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `VAEDecode`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
+- `UpscaleModelLoader`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `DF_Integer` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `MeanCache_ZImage` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
+- `FluxGuidance` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `Image Comparer (rgthree)` —— 5/8 个有
+- `ImageResize+` —— 5/8 个有
+- `ImageScaleToTotalPixels` —— 5/8 个有
+- `LoraLoader` —— 5/8 个有
+- `Florence2ModelLoader` —— 4/8 个有
+- `Florence2Run` —— 4/8 个有
+- `ImageListToImageBatch` —— 3/8 个有
+- `easy imageListToImageBatch` —— 3/8 个有
+- `Constant Number` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `ImageListToBatch+` —— 2/8 个有
+- `ShowText|pysssss` —— 2/8 个有
+- `Text Find and Replace` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `easy imageInsetCrop` —— 2/8 个有
+- `CLIPTextEncodeFlux` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `ConditioningZeroOut` —— 1/8 个有
+- `EmptyLatentImage` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
+- `NunchakuFluxDiTLoader` —— 1/8 个有
+- `VAEDecode` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 3 | 10% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 3 | 29% |
-| 采样算法 | res_multistep | - | 3 | 33% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 5 | 92% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，3 个样本，取值分散，一致性仅 10%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 res_multistep，3 个样本，一致性 33%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，5 个样本，取值集中（一致性 92%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

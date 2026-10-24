@@ -1,32 +1,40 @@
 ---
 name: unknown_workflow_generic_689
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8
-common_nodes: [LoadImage, PixverseImageToVideoNode, PixverseTemplateNode, SaveVideo]
+frequency: 4
+level: moderate
+coverage: 0.83625
+common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_pixverse_i2v.json, comfyui-workflow-templates-json/api_pixverse_template_i2v.json]
+members: [图片生成/图生图/全能图片G-2.5图片编辑【低价版】_2100221839200051201.json, 图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json, 图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json, 图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_689
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_pixverse_i2v.json、comfyui-workflow-templates-json/api_pixverse_template_i2v.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-2.5图片编辑【低价版】_2100221839200051201.json、图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json、图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json、图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PixverseImageToVideoNode`
-- `PixverseTemplateNode`
-- `SaveVideo`
+- `RH_RhartImageG25FlareImageToImage`
+- `RH_RhartImageG25FlareTextToImage`
+- `RH_RhartImageG25SunburstImageToImage`
+- `RH_RhartImageG25SunburstTextToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Muter (rgthree)` —— 3/4 个有
+- `MuyeTextEditOutput` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
@@ -38,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,80 +1,86 @@
 ---
 name: unknown_workflow_lora_sampler_clip_51
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.842143
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+frequency: 8
+level: moderate
+coverage: 0.750375
+common_nodes: [Any Switch (rgthree), CLIPTextEncode, CR SDXL Aspect Ratio, CR Text, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, KSampler, LoadImage, LoraLoader, PreviewImage, RHHiddenNodes, SaveImage, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader, easy hiresFix, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.3文生视频工作流_2077424982275219458.json, 视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json, 视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json, 视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json, 视频生成/文生视频/video_ltx2_3_i2v_comfyUI_native_2030681922401214465.json, 视频生成/文生视频/【LTX2.3官方工作流优化】文生视频+图生视频_含提示词扩写模板_2033142799469649922.json, 视频生成/文生视频/咕咕嘎嘎？_2042845410145869826.json]
+members: [图片生成/图生图/FLUX 动漫场景设计图上色 色块识别工作流  二次放大_2048804472687697922.json, 图片生成/文生图/FLUX 动漫人物生成专属工作流  二次修复_2048748298902708226.json, 图片生成/文生图/FLUX 动漫场景文生图  二次修复  高清出图_2101998483673796610.json, 图片生成/文生图/FLUX 动漫场景文生图 - 二次修复 - 高清出图_2057801872647479298.json, 图片生成/文生图/FLUX 动漫场景文生图 _ 二次修复 _ 高清出图_2057295305439272962.json, 图片生成/文生图/FLUX 动漫场景文生图 _ 二次修复 _ 高清出图_2079911753055563778.json, 图片生成/文生图/FLUX 动漫场景文生图 _ 二次修复 _ 高清出图_2101996326224486401.json, 图片生成/文生图/FLUX 动漫场景文生图专属工作流  二次修复_2048766649515384834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_51
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/LTX2.3文生视频工作流_2077424982275219458.json、视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json、视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json、视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json、视频生成/文生视频/video_ltx2_3_i2v_comfyUI_native_2030681922401214465.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FLUX 动漫场景设计图上色 色块识别工作流  二次放大_2048804472687697922.json、图片生成/文生图/FLUX 动漫人物生成专属工作流  二次修复_2048748298902708226.json、图片生成/文生图/FLUX 动漫场景文生图  二次修复  高清出图_2101998483673796610.json、图片生成/文生图/FLUX 动漫场景文生图 - 二次修复 - 高清出图_2057801872647479298.json、图片生成/文生图/FLUX 动漫场景文生图 _ 二次修复 _ 高清出图_2057295305439272962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 8 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `VAEDecodeTiled`
+- `CR SDXL Aspect Ratio`
+- `CR Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
+- `KSampler`
+- `LoadImage`
+- `LoraLoader`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SaveImage`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `easy hiresFix`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 6/7 个有
-- `LTXAVTextEncoderLoader` —— 6/7 个有
-- `LTXVCropGuides` —— 6/7 个有
-- `LTXVLatentUpsampler` —— 6/7 个有
-- `LatentUpscaleModelLoader` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `LTXVImgToVideoInplace` —— 4/7 个有
-- `LTXVPreprocess` —— 4/7 个有
-- `PrimitiveBoolean` —— 4/7 个有
-- `ResizeImageMaskNode` —— 4/7 个有
-- `ResizeImagesByLongerEdge` —— 4/7 个有
-- `LoadImage` —— 3/7 个有
-- `DualCLIPLoader` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LTXVScheduler` —— 1/7 个有
-- `PathchSageAttentionKJ` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `RH_LLMAPI_Pro_Node` —— 1/7 个有
-- `SamplerEulerAncestral` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `VAEDecode` —— 1/7 个有
-- `easy getNode` —— 1/7 个有
-- `easy setNode` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `CR Prompt Text` —— 7/8 个有
+- `ImpactInt` —— 7/8 个有
+- `JanusImageUnderstanding` —— 7/8 个有
+- `JanusModelLoader` —— 7/8 个有
+- `LayerUtility: TextJoin` —— 7/8 个有
+- `MathExpression|pysssss` —— 7/8 个有
+- `SDXLEmptyLatentSizePicker+` —— 7/8 个有
+- `SomethingToString` —— 7/8 个有
+- `easy anythingIndexSwitch` —— 7/8 个有
+- `ControlNetApplyAdvanced` —— 2/8 个有
+- `ControlNetLoader` —— 2/8 个有
+- `AIO_Preprocessor` —— 1/8 个有
+- `CR Text Concatenate` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `OpenposePreprocessor` —— 1/8 个有
+- `RH_Translator` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 121 | 7 | 92% |
-| 高度 | 25 | 25 - 25 | 7 | 100% |
+| ControlNet 权重 | 0.95 | - | 2 | 95% |
+| LoRA 模型强度 | 0.45 | 0.2 - 0.65 | 8 | 74% |
+| LoRA 文本强度 | 0.45 | 0.2 - 0.65 | 8 | 74% |
+| 采样步数 | 30 | 30 - 30 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 8 | 71% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 0.3 | 0.3 - 1 | 8 | 40% |
+| 宽度 | 1024x1024 (1.0) | - | 7 | 100% |
+| 高度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -82,5 +88,13 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 121，7 个样本，取值集中（一致性 92%）
-- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.95，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
+- LoRA 模型强度 中位数 0.45，观测区间 0.2 - 0.65，8 个样本
+- LoRA 文本强度 中位数 0.45，观测区间 0.2 - 0.65，8 个样本
+- 采样步数 中位数 30，观测区间 30 - 30，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，8 个样本
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，8 个样本，取值分散，一致性仅 40%
+- 宽度 最常用 1024x1024 (1.0)，7 个样本，一致性 100%
+- 高度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

@@ -2,81 +2,70 @@
 name: unknown_workflow_video_lora_sampler_667
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.819333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, FluxGuidance, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, RH_Captioner, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy int, easy showAnything]
+level: moderate
+coverage: 0.957333
+common_nodes: [CR Text, DownloadAndLoadWav2VecModel, Float to Int, GetImageSizeAndCount, INTConstant, ImpactInt, IndexTTS2Run, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, RH_GetAudioDuration, SimpleMath+, Text, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1930863289075740674.json, 视频生成/图生视频/1932024366383738881.json, 视频生成/图生视频/1930256998841925634.json]
+members: [视频生成/图生视频/加速Wan2.2 图生视频+文字语音合成+Multitalk+ TTS2--数字人_1958161496469549058.json, 视频生成/图生视频/图生视频，对嘴型（Multitalk+ TTS2+Wan2.2数字人）_1966806156851154945.json, 视频生成/图生视频/户外口播_探店视频生成（MULITYTALK）_1989260751770710018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_667
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1930863289075740674.json、视频生成/图生视频/1932024366383738881.json、视频生成/图生视频/1930256998841925634.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/加速Wan2.2 图生视频+文字语音合成+Multitalk+ TTS2--数字人_1958161496469549058.json、视频生成/图生视频/图生视频，对嘴型（Multitalk+ TTS2+Wan2.2数字人）_1966806156851154945.json、视频生成/图生视频/户外口播_探店视频生成（MULITYTALK）_1989260751770710018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `FluxGuidance`
-- `Int`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `Float to Int`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImpactInt`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `RH_Captioner`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `RH_GetAudioDuration`
+- `SimpleMath+`
+- `Text`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoTeaCacheKJ`
-- `easy int`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Model Input Switch` —— 2/3 个有
-- `CR String To Combo` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `GetRandomIntegerInRange` —— 2/3 个有
-- `ImageUpscaleWithModel` —— 2/3 个有
-- `ImpactStringSelector` —— 2/3 个有
-- `LayerUtility: BooleanOperator` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `SplitStringByDelimiter` —— 2/3 个有
-- `Text Find and Replace` —— 2/3 个有
-- `TextBox` —— 2/3 个有
-- `UpscaleModelLoader` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy ifElse` —— 2/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `Model Input Switch` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `PrimitiveString` —— 1/3 个有
-- `RH_Prompter` —— 1/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `intToFloat _O` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 3 | 80% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,8 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，3 个样本
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

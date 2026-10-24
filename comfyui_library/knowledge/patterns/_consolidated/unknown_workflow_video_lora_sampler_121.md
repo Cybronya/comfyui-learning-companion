@@ -2,84 +2,90 @@
 name: unknown_workflow_video_lora_sampler_121
 type: Unknown Workflow
 frequency: 13
-level: moderate
-coverage: 0.773538
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ContextWindowsManual, GetImageRangeFromBatch, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SamplerCustom, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimate2Cache, WanAnimate2ToVideo]
+level: strong
+coverage: 0.679923
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SimpleMath+, UNETLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json, 视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json, 视频生成/图生视频/Animate2-数字人唱歌_跳舞-动作迁移-不限时长-循环流_2086985804689268738.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移15秒内_2087549782628847618.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097276416403533826.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097297241835921409.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长V1_2086760732246499329.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长加速版_2087045861942579202.json, 视频生成/图生视频/wan-animate2动作姿势模仿_2087054631615680514.json, 视频生成/文生视频/Animate2动作迁移_2104741113713217538.json, 视频生成/文生视频/Wan animate2 视频编辑 循环流V1_2086206809366421506.json]
+members: [视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control_2064300604129898497.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_2048943736339570690.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control（2采）_2064316689243791362.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control（3采）V2_2068963265690034177.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control（3采）_2064318009904287745.json, 视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_2047700964789981186.json, 视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_v2-镜头迁移_2074096652201320450.json, 视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_v2-镜头迁移_2074111504655405057.json, 视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_v2_2072497688859471874.json, 视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_v2_2075049953608687617.json, 视频生成/图生视频/LTX-2.3_动作参考并保持脸部一致性_2048694979278671873.json, 视频生成/文生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_2033749447833821185.json, 视频生成/文生视频/LTX-2.5_ICLoRA_Union_Control（3采）V1_2087874712008478722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_121
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json、视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json、视频生成/图生视频/Animate2-数字人唱歌_跳舞-动作迁移-不限时长-循环流_2086985804689268738.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control_2064300604129898497.json、视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_2048943736339570690.json、视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control（2采）_2064316689243791362.json、视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control（3采）V2_2068963265690034177.json、视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control（3采）_2064318009904287745.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ComfyMathExpression`
-- `ContextWindowsManual`
-- `GetImageRangeFromBatch`
-- `ImageFromBatch`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `KSamplerSelect`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `TrimVideoLatent`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimate2Cache`
-- `WanAnimate2ToVideo`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 12/13 个有
-- `ImageResizeKJv2` —— 12/13 个有
-- `ResizeImageMaskNode` —— 12/13 个有
-- `VHS_VideoInfo` —— 12/13 个有
-- `easy int` —— 12/13 个有
-- `GetImageSize` —— 11/13 个有
-- `PrimitiveStringMultiline` —— 11/13 个有
-- `TensorLoopClose` —— 11/13 个有
-- `TensorLoopOpen` —— 11/13 个有
-- `ComfySwitchNode` —— 10/13 个有
-- `GetNode` —— 10/13 个有
-- `JWInteger` —— 10/13 个有
-- `ImageConcatMulti` —— 9/13 个有
-- `PrimitiveBoolean` —— 9/13 个有
-- `easy showAnything` —— 8/13 个有
-- `SetNode` —— 3/13 个有
-- `easy forLoopEnd` —— 2/13 个有
-- `easy forLoopStart` —— 2/13 个有
-- `Bookmark (rgthree)` —— 1/13 个有
-- `DF_Int_to_Float` —— 1/13 个有
-- `Int` —— 1/13 个有
+- `DualCLIPLoader` —— 12/13 个有
+- `VAELoaderKJ` —— 12/13 个有
+- `GetNode` —— 11/13 个有
+- `INTConstant` —— 11/13 个有
+- `ImageResizeKJv2` —— 11/13 个有
+- `LatentUpscaleModelLoader` —— 11/13 个有
+- `SetNode` —— 11/13 个有
+- `CannyEdgePreprocessor` —— 8/13 个有
+- `DWPreprocessor` —— 8/13 个有
+- `DepthAnythingPreprocessor` —— 8/13 个有
+- `PrimitiveBoolean` —— 8/13 个有
+- `VAEDecodeTiled` —— 8/13 个有
+- `LTXVPreprocess` —— 7/13 个有
+- `LTXVImgToVideoInplace` —— 6/13 个有
+- `LTXVLatentUpsampler` —— 6/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/13 个有
+- `Text` —— 5/13 个有
+- `VAEDecode` —— 5/13 个有
+- `MathExpression|pysssss` —— 4/13 个有
+- `ComfyMathExpression` —— 2/13 个有
+- `LoraLoaderModelOnly` —— 2/13 个有
+- `PreviewAny` —— 2/13 个有
+- `RTXVideoSuperResolution` —— 2/13 个有
+- `ResizeImageMaskNode` —— 2/13 个有
+- `TextGenerateLTX2Prompt` —— 2/13 个有
+- `CLIPLoader` —— 1/13 个有
 - `Label (rgthree)` —— 1/13 个有
-- `MathExpression|pysssss` —— 1/13 个有
-- `Note Plus (mtb)` —— 1/13 个有
-- `PlaySound|pysssss` —— 1/13 个有
-- `ShowAnything|Mie` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
+- `LowVRAMCheckpointLoader` —— 1/13 个有
+- `MultiTextConcatenate` —— 1/13 个有
+- `PrimitiveStringMultiline` —— 1/13 个有
+- `VAELoader` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 13 | 100% |
+| 高度 | 25 | 25 - 25 | 13 | 100% |
 
 ## 常见问题
 
@@ -87,4 +93,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，13 个样本，取值集中（一致性 100%）

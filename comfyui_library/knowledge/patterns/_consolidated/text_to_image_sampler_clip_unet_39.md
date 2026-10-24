@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_39
 type: Text To Image
-frequency: 10
-level: moderate
-coverage: 0.8838
+frequency: 13
+level: weak
+coverage: 0.859
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [Label (rgthree)]
-members: [图片生成/文生图/1977407979249127426.json, 图片生成/文生图/1984067041122516994.json, 图片生成/文生图/47_anima文生图3lora工作流_2062720329054773250.json, 图片生成/文生图/48_anima文生图3lora工作流_2_2063974322926088193.json, 图片生成/文生图/87time 造相-Z-Image-Turbo_1992926870398238721.json, 图片生成/文生图/Anima Base 复古动漫文生图_2078659623917277185.json, 图片生成/文生图/Anima DMDX 四步极速版_2060754845304446978.json, 图片生成/文生图/Anima base v1 动漫生图_2059172782583410690.json, 图片生成/文生图/Anima base v1 动漫生图_2093989338236407810.json, 图片生成/文生图/Anima+2.9b+vs+Anima base+生图_2089681885474680834.json]
+missing: []
+members: [图片生成/文生图/MOSS image 最强开源文生图｜开源生图的黑马_2112029308096176130.json, 图片生成/文生图/MOSS image 最强开源文生图｜电商海报文字清晰_2112488209677635586.json, 图片生成/文生图/Moss-image SFT 文生图稳定版｜SFT调优出图更稳_2112416033981161473.json, 图片生成/文生图/Moss-image SFT文生图_2112104895800242178.json, 图片生成/文生图/Moss文生图+8步加速_2112030480005689345.json, 图片生成/文生图/Qwen Image 2.1 PE文生图提示词优化加速版 高质量画面直出_2109372180118200321.json, 图片生成/文生图/Qwen Image 2.1 V2文生图，文本到图像生成升级版本工作流_2103243206614937601.json, 图片生成/文生图/Qwen Image 2.1-PE 加速文生图｜提示词优化一键增强_2112477823029047298.json, 图片生成/文生图/Qwen Image 2.1-PE 提示词优化版｜文生图智能扩写_2112472087343489026.json, 图片生成/文生图/Qwen Image 2.1-PE 文生图加速版｜提示词优化出好图_2112468933998632962.json, 图片生成/文生图/Qwen Image 2.1全能文生图处理生成工具_2102476988983365633.json, 图片生成/文生图/Qwen Image 2.1文生图对比流｜不同提示词效果并排出图_2108037643018788866.json, 图片生成/文生图/Qwen Image 2.1文生图工作流，文生图高质量文本到图像生成方案_2108446649474437121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_39
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/1977407979249127426.json、图片生成/文生图/1984067041122516994.json、图片生成/文生图/47_anima文生图3lora工作流_2062720329054773250.json、图片生成/文生图/48_anima文生图3lora工作流_2_2063974322926088193.json、图片生成/文生图/87time 造相-Z-Image-Turbo_1992926870398238721.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/MOSS image 最强开源文生图｜开源生图的黑马_2112029308096176130.json、图片生成/文生图/MOSS image 最强开源文生图｜电商海报文字清晰_2112488209677635586.json、图片生成/文生图/Moss-image SFT 文生图稳定版｜SFT调优出图更稳_2112416033981161473.json、图片生成/文生图/Moss-image SFT文生图_2112104895800242178.json、图片生成/文生图/Moss文生图+8步加速_2112030480005689345.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：13
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -33,44 +33,56 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/10 个有
-- `ModelSamplingAuraFlow` —— 4/10 个有
-- `AddLabel` —— 3/10 个有
-- `PrimitiveInt` —— 3/10 个有
-- `PreviewAny` —— 2/10 个有
-- `AILab_QwenVL` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `ImageConcanate` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `LayerUtility: TextJoin` —— 1/10 个有
-- `Text` —— 1/10 个有
-- `TextEncodeQwenImageEditPlus` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 12/13 个有
+- `JjkText` —— 11/13 个有
+- `ResolutionSelector` —— 11/13 个有
+- `solarL_SaveImagesToZip` —— 10/13 个有
+- `孤海注释` —— 10/13 个有
+- `SaveImageAdvanced` —— 8/13 个有
+- `TextEncodeQwenImage21` —— 8/13 个有
+- `ComfySwitchNode` —— 7/13 个有
+- `PreviewImage` —— 7/13 个有
+- `PrimitiveStringMultiline` —— 7/13 个有
+- `TextGenerate` —— 7/13 个有
+- `PrimitiveBoolean` —— 5/13 个有
+- `QwenImage21_T2IPromptRewrite` —— 4/13 个有
+- `RH_QwenImagePromptEnhancer` —— 4/13 个有
+- `RegexExtract` —— 4/13 个有
+- `easy showAnything` —— 4/13 个有
+- `JsonExtractString` —— 3/13 个有
+- `PreviewAny` —— 3/13 个有
+- `SkipLayerGuidanceDiTSimple` —— 3/13 个有
+- `StringCompare` —— 3/13 个有
+- `MuyeTextEditOutput` —— 2/13 个有
+- `StringConcatenate` —— 2/13 个有
+- `Text` —— 2/13 个有
+- `RegexMatch` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 896 - 1920 | 10 | 74% |
-| 高度 | 1260 | 768 - 1920 | 10 | 76% |
-| 采样步数 | 25 | 4 - 30 | 10 | 45% |
-| Prompt 约束强度(CFG) | 4 | 1 - 5 | 10 | 46% |
-| 采样算法 | er_sde | - | 10 | 50% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 4 | 4 - 50 | 13 | 0% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 13 | 67% |
+| 采样算法 | er_sde | - | 13 | 92% |
+| 调度器 | beta | - | 13 | 77% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 80 | 80 - 1200 | 13 | 0% |
+| 高度 | 80 | 80 - 1600 | 13 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 896 - 1920，10 个样本
-- 高度 中位数 1260，观测区间 768 - 1920，10 个样本
-- 采样步数 中位数 25，观测区间 4 - 30，10 个样本，取值分散，一致性仅 45%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 5，10 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 er_sde，10 个样本，一致性 50%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)
+- 采样步数 中位数 4，观测区间 4 - 50，13 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，13 个样本
+- 采样算法 最常用 er_sde，13 个样本，一致性 92%
+- 调度器 最常用 beta，13 个样本，一致性 77%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 1200，13 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1600，13 个样本，取值分散，一致性仅 0%
+- 高发问题（17/13 个样本）：Steps较低可能导致细节不足

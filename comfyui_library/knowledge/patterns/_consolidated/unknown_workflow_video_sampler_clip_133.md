@@ -1,90 +1,64 @@
 ---
 name: unknown_workflow_video_sampler_clip_133
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.94125
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ImageConcanate, KSampler, LoadAudio, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSoundImageToVideo, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8538
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyHunyuanLatentVideo, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/1960718130144325634.json, 视频生成/图生视频/1960878443531579394.json, 视频生成/图生视频/1960877190416142337.json, 视频生成/图生视频/1961973337251627010.json]
+members: [视频生成/文生视频/Hunyuan T2V+Lora(纳税服务)极简工作流_1903492781292032002.json, 视频生成/文生视频/Hunyuan Video + Lora_1892462560061657089.json, 视频生成/文生视频/HunyuanVideo文生视频工作流_1935331799620833282.json, 视频生成/文生视频/hunyuan_video混元视频 8G显存可用_1879187801508929537.json, 视频生成/文生视频/混元视频移动增强器_1905450015412916226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_133
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1960718130144325634.json、视频生成/图生视频/1960878443531579394.json、视频生成/图生视频/1960877190416142337.json、视频生成/图生视频/1961973337251627010.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Hunyuan T2V+Lora(纳税服务)极简工作流_1903492781292032002.json、视频生成/文生视频/Hunyuan Video + Lora_1892462560061657089.json、视频生成/文生视频/HunyuanVideo文生视频工作流_1935331799620833282.json、视频生成/文生视频/hunyuan_video混元视频 8G显存可用_1879187801508929537.json、视频生成/文生视频/混元视频移动增强器_1905450015412916226.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ImageConcanate`
-- `KSampler`
-- `LoadAudio`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SimpleMath+`
+- `DualCLIPLoader`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `TorchCompileModel` —— 3/4 个有
-- `Audio Duration (mtb)` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `Float` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `ImpactInt` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `RH_GetAudioDuration` —— 2/4 个有
-- `ToInt` —— 2/4 个有
-- `easy convertAnything` —— 2/4 个有
-- `AIO_Preprocessor` —— 1/4 个有
-- `AudioCrop` —— 1/4 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
-- `GIMMVFI_interpolate` —— 1/4 个有
-- `ImageScaleToMegapixels` —— 1/4 个有
-- `JWIntegerToString` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `UpscaleModelLoader` —— 1/4 个有
+- `FluxGuidance` —— 4/5 个有
+- `ModelSamplingSD3` —— 4/5 个有
+- `ApplyFirstBlockCachePatchAdvanced` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `HunyuanVideoLoraLoader` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `SaveWEBM` —— 1/5 个有
+- `VAEDecode` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 4 | 69% |
-| Prompt 约束强度(CFG) | 6 | 1 - 6 | 4 | 54% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | double_blocks | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，4 个样本
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

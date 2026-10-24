@@ -1,40 +1,33 @@
 ---
 name: unknown_workflow_generic_295
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.84
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3ImageToVideo, RH_MinimaxHailuoH3MultimodalToVideo, RH_MinimaxHailuoH3TextToVideo, SaveVideo]
+coverage: 0.91675
+common_nodes: [RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json, 视频生成/图生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/图生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json, 视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json]
+members: [图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json, 图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json, 图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json, 图片生成/文生图/全能图片G-image2-文生图官方稳定版_2049781605606100993.json, 图片生成/文生图/全能图片G2文能图官方版 _ 2026最强生图_2056451598993416193.json, 图片生成/文生图/最新G image2  全量文生图官方稳定版 V1.0_2048017540726661121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_295
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json、视频生成/图生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/图生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json、视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/全能图片G- image-2.0-文生图-官方稳定版_2048312127072509954.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版 API专用_2081662701188767745.json、图片生成/文生图/全能图片G-2-文生图-官方稳定版_2051194638236696577.json、图片生成/文生图/全能图片G-2.0 文生图｜官方稳定版_2096187853410754561.json、图片生成/文生图/全能图片G-image2-文生图官方稳定版_2048934071010594818.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3ImageToVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
+全部 8 个 workflow 都包含：
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `Text` —— 2/5 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 

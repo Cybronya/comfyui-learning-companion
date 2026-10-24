@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_505
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.698667
-common_nodes: [LoadImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
+coverage: 0.84
+common_nodes: [LoadImage, LoadRembgByBiRefNetModel, RembgByBiRefNet, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/2102213958852767746.json, 图片生成/图生图/六种图像后期处理技能（G-2.5)_2107253830739128321.json, 图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json]
+members: [图片生成/图生图/RembgByBiRefNet-去背景_2060181319207968770.json, 图片生成/图生图/一键透明抠图（更透明）+全节点注释_2055997662750625793.json, 图片生成/图生图/移除背景工作流_2014701119468998657.json, 图片生成/图生图/绿幕抠图_2036987086074548226.json, 图片生成/图生图/自动抠图1透明背景+全节点注释_2055994639756341249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_505
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2102213958852767746.json、图片生成/图生图/六种图像后期处理技能（G-2.5)_2107253830739128321.json、图片生成/文生图/一致性很好，全能图片G IMAGE 2.5 Sunburst图像编辑_2099122270668156929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/RembgByBiRefNet-去背景_2060181319207968770.json、图片生成/图生图/一键透明抠图（更透明）+全节点注释_2055997662750625793.json、图片生成/图生图/移除背景工作流_2014701119468998657.json、图片生成/图生图/绿幕抠图_2036987086074548226.json、图片生成/图生图/自动抠图1透明背景+全节点注释_2055994639756341249.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG25SunburstImageToImage`
+- `LoadRembgByBiRefNetModel`
+- `RembgByBiRefNet`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
+- `ImageCompositeMasked` —— 1/5 个有
+- `MaskPreview` —— 1/5 个有
 
 ## 典型参数
 

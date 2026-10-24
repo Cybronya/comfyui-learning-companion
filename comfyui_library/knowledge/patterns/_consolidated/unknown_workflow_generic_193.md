@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_193
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.847
-common_nodes: [QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
+coverage: 0.811
+common_nodes: [LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/1952570971951706113.json, 图片生成/文生图/1952647008134840321.json, 图片生成/文生图/1952653222756462594.json, 图片生成/文生图/1952726604263976961.json, 图片生成/文生图/1952745267520073729.json, 图片生成/文生图/1953300897659031553.json]
+members: [图片生成/图生图/全能图像2_2027222749164347394.json, 视频生成/图生视频/AI短剧-Seedance2.0-图生视频_2048023728835006465.json, 视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json, 视频生成/图生视频/sd2_2037450416761344001.json, 视频生成/图生视频/图生视频_文生视频_真人角色参考_视频编辑 目前全能视频2.0视频模型功能合集全家桶_2038797547417903106.json, 视频生成/文生视频/Seedance2.0全系列 _ 视频生成+编辑_2045837253611622401.json, 视频生成/文生视频/地表最强超能视频2.0-全家桶-多图参考_首尾帧_文生视频_视频编辑-支持真人_2037702362420224001.json, 视频生成/文生视频/最强视频模型功能全家桶（图_文生视频_真人角色参考_视频编辑）_2037338680179822593.json, 视频生成/文生视频/目前地表最强视频模型功能全家桶（图生视频_文生视频_真人角色参考_视频编辑）_2037304818225651713.json, 视频生成/文生视频/超能视频模型全家桶（图生视频_文生视频_真人角色参考_视频编辑）_2037357732663140354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_193
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1952570971951706113.json、图片生成/文生图/1952647008134840321.json、图片生成/文生图/1952653222756462594.json、图片生成/文生图/1952726604263976961.json、图片生成/文生图/1952745267520073729.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图像2_2027222749164347394.json、视频生成/图生视频/AI短剧-Seedance2.0-图生视频_2048023728835006465.json、视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json、视频生成/图生视频/sd2_2037450416761344001.json、视频生成/图生视频/图生视频_文生视频_真人角色参考_视频编辑 目前全能视频2.0视频模型功能合集全家桶_2038797547417903106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `QwenImageModelLoader`
-- `RH_QwenImageGenerator`
-- `SaveImage`
+全部 10 个 workflow 都包含：
+- `LoadImage`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 9/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/10 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 8/10 个有
+- `LoadVideo` —— 7/10 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 7/10 个有
+- `PreviewAny` —— 3/10 个有
+- `PreviewImage` —— 1/10 个有
 
 ## 典型参数
 

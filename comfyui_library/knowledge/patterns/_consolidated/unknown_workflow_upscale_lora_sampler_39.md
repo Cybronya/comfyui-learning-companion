@@ -1,76 +1,84 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_39
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8925
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, ImageUpscaleWithModel, JjkText, KSamplerSelect, LoraLoader, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.9292
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage, UpscaleModelLoader, VAEDecodeTiled, VAEEncodeTiled, easy int]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/Flux模型 电商展台三维渲染效果_1826079381268639745.json, 图片生成/文生图/图生图加文本（FLUX GGUF+LoRA）_1832761199178993666.json]
+members: [图片生成/图生图/人像高清【supir+脸部模型+增加纹理】_1938506337967865858.json, 图片生成/图生图/皮肤细节优化_1978758438199119874.json, 图片生成/图生图/皮肤质感丨皮肤纹理丨皮肤细节丨高清还原！！！_1983089936633110530.json, 图片生成/图生图/皮肤质感还原-高清修复_1978639859789221889.json, 图片生成/图生图/真人皮肤质感生成工作流_1928828118797074433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_39
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux模型 电商展台三维渲染效果_1826079381268639745.json、图片生成/文生图/图生图加文本（FLUX GGUF+LoRA）_1832761199178993666.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人像高清【supir+脸部模型+增加纹理】_1938506337967865858.json、图片生成/图生图/皮肤细节优化_1978758438199119874.json、图片生成/图生图/皮肤质感丨皮肤纹理丨皮肤细节丨高清还原！！！_1983089936633110530.json、图片生成/图生图/皮肤质感还原-高清修复_1978639859789221889.json、图片生成/图生图/真人皮肤质感生成工作流_1928828118797074433.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `CheckpointLoaderSimple`
+- `ColorMatch`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
-- `JjkText`
-- `KSamplerSelect`
-- `LoraLoader`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
 - `SaveImage`
 - `UpscaleModelLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LayerColor: ColorBalance` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `DualCLIPLoader` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `VAELoader` —— 4/5 个有
+- `ModelSamplingFlux` —— 3/5 个有
+- `UNETLoader` —— 3/5 个有
+- `UltimateSDUpscale` —— 3/5 个有
+- `ColorAdjust(FaceParsing)` —— 2/5 个有
+- `ReActorRestoreFace` —— 2/5 个有
+- `UnetLoaderGGUF` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 832x1152 (0.72) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
-| LoRA 模型强度 | 0.875 | - | 2 | 86% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 20 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 1 | 100% |
-| 采样算法 | euler_ancestral | - | 1 | 100% |
-| 调度器 | normal | - | 1 | 100% |
-| 重绘幅度 | 0.45 | - | 1 | 100% |
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | kl_optimal | - | 5 | 100% |
+| 重绘幅度 | 0.4 | 0.3 - 0.4 | 5 | 86% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.875，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 kl_optimal，5 个样本，一致性 100%
+- 重绘幅度 中位数 0.4，观测区间 0.3 - 0.4，5 个样本，取值集中（一致性 86%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode

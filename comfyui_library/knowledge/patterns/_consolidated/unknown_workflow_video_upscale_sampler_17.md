@@ -7,13 +7,13 @@ coverage: 0.941
 common_nodes: [AIO_Preprocessor, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJ, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, ReActorFaceSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1905231004943192066.json, 视频生成/图生视频/1948402669382696962.json]
+members: [视频生成/图生视频/Wan Fun Control精准动作+自动重新构图_1905231004943192066.json, 视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1905231004943192066.json、视频生成/图生视频/1948402669382696962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan Fun Control精准动作+自动重新构图_1905231004943192066.json、视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

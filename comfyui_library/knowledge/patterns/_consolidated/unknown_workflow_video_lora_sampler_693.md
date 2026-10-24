@@ -3,63 +3,46 @@ name: unknown_workflow_video_lora_sampler_693
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.914333
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.919333
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput]
 problems: []
 missing: []
-members: [视频生成/文生视频/AI Video Studio PR插件专用 数字人口播(照片)工作流_2094330406354120705.json, 视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json, 视频生成/文生视频/数字人带货视频 数字人口播 美妆模特 主播 静态图一键生成带货_2074320987222528002.json]
+members: [视频生成/文生视频/MiniMax h3 工作台文圣_单图_多图生图视频（初代版本）_2090807550995419138.json, 视频生成/文生视频/MiniMax_H3_全能导演台（手动版）_V3.1_2100603957436571649.json, 视频生成/文生视频/MiniMax_H3_工作台_全能导演台_V2_2093605176174276609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_693
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/AI Video Studio PR插件专用 数字人口播(照片)工作流_2094330406354120705.json、视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json、视频生成/文生视频/数字人带货视频 数字人口播 美妆模特 主播 静态图一键生成带货_2074320987222528002.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax h3 工作台文圣_单图_多图生图视频（初代版本）_2090807550995419138.json、视频生成/文生视频/MiniMax_H3_全能导演台（手动版）_V3.1_2100603957436571649.json、视频生成/文生视频/MiniMax_H3_工作台_全能导演台_V2_2093605176174276609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MultiRateSamplerEXPT8`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy minimaxH3ToVideo`
+- `easy multiTrackEditor`
+- `easy multiTrackInfoOutput`
+- `easy multiTrackTaskOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `Float to Int` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `RH_GetAudioDuration` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `SoundFlow_TrimAudio` —— 1/3 个有
-- `intToFloat _O` —— 1/3 个有
+- `easy matchLine` —— 1/3 个有
+- `easy promptLine` —— 1/3 个有
 
 ## 典型参数
 

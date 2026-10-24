@@ -1,60 +1,84 @@
 ---
 name: unknown_workflow_sampler_unet_vae_207
 type: Unknown Workflow
-frequency: 2
+frequency: 5
 level: weak
-coverage: 0.847
-common_nodes: [BasicScheduler, CLIPLoader, CR Prompt Text, DF_Get_image_size, EmptyLatentImage, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.856
+common_nodes: [CFGGuider, ComfyMathExpression, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
 problems: []
-missing: [easy cleanGpuUsed, CR Prompt Text]
-members: [图片生成/图生图/2093310369640046593.json, 图片生成/图生图/2100503999580565506.json]
+missing: []
+members: [图片生成/文生图/LTX2.3 多图控制 提示词分段中继流_2073319635222618113.json, 视频生成/图生视频/LTX2.3 prompt relay 提示词分段控制流_2052341800647569410.json, 视频生成/图生视频/万象AI+LTX2.3 首中尾3帧转场特效+去字幕lora+自动提示词优化版_2040976928861069314.json, 视频生成/文生视频/LTX2.3-多宫格生视频-画质感人-v2_2038941376720674817.json, 视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_207
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2093310369640046593.json、图片生成/图生图/2100503999580565506.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/LTX2.3 多图控制 提示词分段中继流_2073319635222618113.json、视频生成/图生视频/LTX2.3 prompt relay 提示词分段控制流_2052341800647569410.json、视频生成/图生视频/万象AI+LTX2.3 首中尾3帧转场特效+去字幕lora+自动提示词优化版_2040976928861069314.json、视频生成/文生视频/LTX2.3-多宫格生视频-画质感人-v2_2038941376720674817.json、视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
+- **样本数**：5
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `DF_Get_image_size`
-- `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
-- `SaveImage`
-- `TextEncodeBooguEdit`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SeedVR2LoadDiTModel` —— 1/2 个有
-- `SeedVR2LoadVAEModel` —— 1/2 个有
-- `SeedVR2VideoUpscaler` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `LTXVAddGuideMulti` —— 4/5 个有
+- `LTXVImgToVideoInplace` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `LTXVLatentUpsampler` —— 3/5 个有
+- `LTXVPreprocess` —— 3/5 个有
+- `LatentUpscaleModelLoader` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `ManualSigmas` —— 3/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `ResizeImagesByLongerEdge` —— 3/5 个有
+- `SimpleMath+` —— 3/5 个有
+- `BasicScheduler` —— 2/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `GuHaiAutoImageSplit` —— 2/5 个有
+- `ImageFromBatch` —— 2/5 个有
+- `PrimitiveFloat` —— 2/5 个有
+- `PromptRelayEncodeTimeline` —— 2/5 个有
+- `QZ_ResolutionPreset` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `AspectRatio` —— 1/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `ConcatTextOfUtils` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+| 宽度 | 97 | 97 - 601 | 5 | 10% |
+| 高度 | 25 | 25 - 25 | 5 | 100% |
 
 ## 常见问题
 
@@ -62,7 +86,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed、CR Prompt Text
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 601，5 个样本，取值分散，一致性仅 10%
+- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）

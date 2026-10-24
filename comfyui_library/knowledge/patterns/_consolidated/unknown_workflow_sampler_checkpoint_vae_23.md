@@ -1,71 +1,68 @@
 ---
 name: unknown_workflow_sampler_checkpoint_vae_23
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5935
-common_nodes: [AudioEncoderLoader, CheckpointLoaderSimple, EmptyYuE2LatentAudio, KSampler, LoadAudio, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, SheetSage2AudioToABC, VAEDecodeAudio, YuE2GenerateABC, YuE2GenerateMusic]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 5
+level: strong
+coverage: 0.635
+common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, PrimitiveStringMultiline, SaveAudioMP3, TextEncodeAceStepAudio1.5, VAEDecodeAudio]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [音频生成/音频生成/YuE2歌曲生成_2106388409039286274.json, 音频生成/音频生成/yue2音乐生成_翻唱_编辑_2104119571052584962.json]
+members: [音频生成/音频生成/ACE Step 1.5 Music Gen 音乐创作_2075068237804556289.json, 音频生成/音频生成/ACE-Step1.5 文生音乐_2018856388780367874.json, 音频生成/音频生成/ACE-Step1.5 歌曲创作_2043931078825615362.json, 音频生成/音频生成/ACE-Step1.5歌曲创作 附带教程_2044232351034642433.json, 音频生成/音频生成/ACE-Step1.5歌曲创作（附·提示词模版）_2041468135462674434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_23
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/YuE2歌曲生成_2106388409039286274.json、音频生成/音频生成/yue2音乐生成_翻唱_编辑_2104119571052584962.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/ACE Step 1.5 Music Gen 音乐创作_2075068237804556289.json、音频生成/音频生成/ACE-Step1.5 文生音乐_2018856388780367874.json、音频生成/音频生成/ACE-Step1.5 歌曲创作_2043931078825615362.json、音频生成/音频生成/ACE-Step1.5歌曲创作 附带教程_2044232351034642433.json、音频生成/音频生成/ACE-Step1.5歌曲创作（附·提示词模版）_2041468135462674434.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioEncoderLoader`
+全部 5 个 workflow 都包含：
 - `CheckpointLoaderSimple`
-- `EmptyYuE2LatentAudio`
+- `ConditioningZeroOut`
+- `EmptyAceStep1.5LatentAudio`
 - `KSampler`
-- `LoadAudio`
-- `PreviewAny`
+- `ModelSamplingAuraFlow`
 - `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
-- `SheetSage2AudioToABC`
+- `SaveAudioMP3`
+- `TextEncodeAceStepAudio1.5`
 - `VAEDecodeAudio`
-- `YuE2GenerateABC`
-- `YuE2GenerateMusic`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `CLIPLoader` —— 1/2 个有
-- `JsonExtractString` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `TextGenerate` —— 1/2 个有
+- `PreviewAudio` —— 4/5 个有
+- `Float` —— 2/5 个有
+- `LoadImage` —— 1/5 个有
+- `SaveAudio` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 32 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1.05 | - | 2 | 95% |
-| 采样算法 | dpm_2 | - | 2 | 100% |
-| 调度器 | sgm_uniform | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 32，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.05，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
-- 采样算法 最常用 dpm_2，2 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode

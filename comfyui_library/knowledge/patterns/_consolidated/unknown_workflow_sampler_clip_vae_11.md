@@ -1,34 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_vae_11
 type: Unknown Workflow
-frequency: 8
+frequency: 13
 level: moderate
-coverage: 0.6075
-common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.892231
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: [CR Text, CR Text Concatenate, easy cleanGpuUsed, ImageCASharpening+, MathExpression|pysssss]
-members: [图片生成/文生图/1905565864324681729.json, 图片生成/文生图/1908181172109586433.json, 图片生成/文生图/1912944528943448065.json, 图片生成/文生图/1930841515361239042.json, 图片生成/文生图/1953735580985249793.json, 图片生成/文生图/1957731578933866497.json, 图片生成/文生图/1957999955816460290.json, 图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_2061101576210698241.json]
+missing: []
+members: [图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json, 图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json, 图片生成/文生图/FLUX.2 Turbo_2006076343817084929.json, 图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json, 图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json, 图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json, 图片生成/文生图/FLUX2 Dev FP8 8步加速 文生图_图片编辑_2073296125880262657.json, 图片生成/文生图/FLUX2 Dev FP8 文生图_图片编辑_2073281827388874753.json, 图片生成/文生图/FLUX2 混合模型_1993521841442586625.json, 图片生成/文生图/Flux.2+LoRA文生图_1995120190486667265.json, 图片生成/文生图/Flux2 文生图_图生图_图像修改_多图参考工作流_1993868752053796866.json, 图片生成/文生图/flux.2图像编辑测试（单图）_1995053515309506561.json, 图片生成/文生图/flux.2量化+SageAttention加速图像编辑（单图）_1994854140247465985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1905565864324681729.json、图片生成/文生图/1908181172109586433.json、图片生成/文生图/1912944528943448065.json、图片生成/文生图/1930841515361239042.json、图片生成/文生图/1953735580985249793.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json、图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json、图片生成/文生图/FLUX.2 Turbo_2006076343817084929.json、图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json、图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `Anything Everywhere`
+全部 13 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
 - `KSamplerSelect`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
@@ -37,31 +37,29 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/8 个有
-- `CR Text Concatenate` —— 7/8 个有
-- `RH_Prompter` —— 7/8 个有
-- `ShowText|pysssss` —— 7/8 个有
-- `EG_XZ_QH` —— 6/8 个有
-- `NunchakuFluxDiTLoader` —— 6/8 个有
-- `RH_Translator` —— 6/8 个有
-- `easy cleanGpuUsed` —— 6/8 个有
-- `NunchakuFluxLoraLoader` —— 5/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `UNETLoader` —— 2/8 个有
-- `FluxResolutionNode` —— 1/8 个有
-- `Image Comparer (rgthree)` —— 1/8 个有
-- `ImageCASharpening+` —— 1/8 个有
-- `LatentUpscaleBy` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `TextInput_` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 11/13 个有
+- `LoadImage` —— 11/13 个有
+- `ReferenceLatent` —— 11/13 个有
+- `UNETLoader` —— 11/13 个有
+- `VAEEncode` —— 11/13 个有
+- `LoraLoaderModelOnly` —— 4/13 个有
+- `ModelPatchTorchSettings` —— 4/13 个有
+- `PathchSageAttentionKJ` —— 4/13 个有
+- `PreviewImage` —— 3/13 个有
+- `UnetLoaderGGUF` —— 3/13 个有
+- `Int Literal` —— 2/13 个有
+- `Label (rgthree)` —— 2/13 个有
+- `CR Text` —— 1/13 个有
+- `ImageConcanate` —— 1/13 个有
+- `PreviewAny` —— 1/13 个有
+- `RH_Captioner` —— 1/13 个有
+- `RH_Translator` —— 1/13 个有
+- `easy int` —— 1/13 个有
+- `easy promptLine` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 600 | 512 - 840 | 8 | 85% |
-| 高度 | 800 | 768 - 1280 | 8 | 78% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,6 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 600，观测区间 512 - 840，8 个样本，取值集中（一致性 85%）
-- 高度 中位数 800，观测区间 768 - 1280，8 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、easy cleanGpuUsed、ImageCASharpening+、MathExpression|pysssss
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

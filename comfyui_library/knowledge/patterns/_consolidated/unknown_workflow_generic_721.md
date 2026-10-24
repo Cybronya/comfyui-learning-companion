@@ -1,34 +1,32 @@
 ---
 name: unknown_workflow_generic_721
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6335
-common_nodes: [4c314f31-ecda-4b08-ae98-faaba1bf613f, ResolutionSelector, SaveVideo]
+frequency: 4
+level: moderate
+coverage: 0.4
+common_nodes: [JjkText, PrimitiveInt, RHBerniniFullTextToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_fastvideo_fasth3_t2v.json, comfyui-workflow-templates-json/video_minimax_h3_i2v_continuation.json]
+members: [图片生成/文生图/Bernini-Full 文生图_2067217800464257026.json, 图片生成/文生图/Bernini-Full 文生图工作流_2066784369590759426.json, 图片生成/文生图/Bernini-Full 文生图工作流_2068852285685452801.json, 图片生成/文生图/（满血版）Bernini-Full 文生图工作流_2066950035262230530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_721
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/video_fastvideo_fasth3_t2v.json、comfyui-workflow-templates-json/video_minimax_h3_i2v_continuation.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Bernini-Full 文生图_2067217800464257026.json、图片生成/文生图/Bernini-Full 文生图工作流_2066784369590759426.json、图片生成/文生图/Bernini-Full 文生图工作流_2068852285685452801.json、图片生成/文生图/（满血版）Bernini-Full 文生图工作流_2066950035262230530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `4c314f31-ecda-4b08-ae98-faaba1bf613f`
-- `ResolutionSelector`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `PrimitiveInt`
+- `RHBerniniFullTextToImage`
+- `SaveImage`
 
 ## 典型参数
 
@@ -40,4 +38,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

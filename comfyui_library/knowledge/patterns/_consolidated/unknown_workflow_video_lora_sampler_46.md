@@ -3,82 +3,75 @@ name: unknown_workflow_video_lora_sampler_46
 type: Unknown Workflow
 frequency: 21
 level: moderate
-coverage: 0.616571
-common_nodes: [ControlNextGetPoses, GetImageSizeAndCount, GetNode, ImageResizeKJ, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], SetNode, SimpleMath+, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.46181
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [Primitive float [Crystools], Primitive integer [Crystools], SimpleMath+, Text Concatenate, Text Multiline]
-members: [图片生成/文生图/动作迁移_1991004865675599874.json, 视频生成/图生视频/1956657681140473857.json, 视频生成/图生视频/1955151856064499714.json, 视频生成/图生视频/1968333951213416449.json, 视频生成/图生视频/1958329470274977793.json, 视频生成/图生视频/1963046419189968898.json, 视频生成/图生视频/2053734676421988353.json, 视频生成/图生视频/2054742996398157826.json, 视频生成/图生视频/2052994688696762369.json, 视频生成/图生视频/单次复刻 30s 时长！Wan2.2 动作迁移：整条视频一键操作，真实度拉满_1957271440334712833.json, 视频生成/图生视频/2042038693006938114.json, 视频生成/图生视频/2042491077948612610.json, 视频生成/图生视频/2045027083465789442.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_1955251500776767489.json, 视频生成/图生视频/1955471370547335170.json, 视频生成/图生视频/2058912825199906818.json, 视频生成/图生视频/2060032983922470914.json, 视频生成/图生视频/2062871890934460417.json, 视频生成/图生视频/2080550651473514498.json, 视频生成/文生视频/1956657681140473857.json, 视频生成/文生视频/1956961863289245697.json]
+missing: []
+members: [图片生成/图生图/MiniMax H3超级多合一工作流-官方版james001###_2087408722380419073.json, 图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2087902401587138562.json, 图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099054787923890177.json, 图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099680157358444546.json, 图片生成/文生图/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2084514856253874178.json, 图片生成/文生图/手动+反推+高清超强生图_1995038070712020993.json, 数字人/数字人/minimax-h3-多参考口播-z_2102289509139439617.json, 数字人/数字人/video3 自用_2089588273210544130.json, 视频生成/图生视频/720P-MiniMax H3超级多合一工作流-官方版_2094765092280819714.json, 视频生成/图生视频/API用-多参考-MiniMax H3工作流_2087940945802252290.json, 视频生成/图生视频/H3全能参考+二采放大8898_2089605189635502082.json, 视频生成/图生视频/MINIMAX-H3 全能参考去油防脸崩工作流_2086816639672213505.json, 视频生成/图生视频/MiniMax H3 多参2采8步加速_2091503467927007234.json, 视频生成/图生视频/MiniMax H3-TVC成片（15秒视频5毛成本吊打官方版本）_2087056799617863682.json, 视频生成/图生视频/MiniMax H3多图参考视频生成工作流双采去水印版_2093297157603414018.json, 视频生成/图生视频/MiniMax H3超级多合一工作流-官方版_2086606573383806978.json, 视频生成/图生视频/MiniMax H3超级多合一工作流-官方版james003_4K###_2110535182506872833.json, 视频生成/图生视频/MiniMax_H3超级多合一工作流-官方版_2099787630182486018.json, 视频生成/图生视频/MiniMax_H3超级多合一工作流-官方版_2100043265570590722.json, 视频生成/文生视频/GS高尚-MiniMax H3多参二次采样放大工作流_2086726756911898625.json, 视频生成/文生视频/MiniMax H3 多图参考双采短剧视频生成工作流_2104589979459612673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_46
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/动作迁移_1991004865675599874.json、视频生成/图生视频/1956657681140473857.json、视频生成/图生视频/1955151856064499714.json、视频生成/图生视频/1968333951213416449.json、视频生成/图生视频/1958329470274977793.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/MiniMax H3超级多合一工作流-官方版james001###_2087408722380419073.json、图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2087902401587138562.json、图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099054787923890177.json、图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099680157358444546.json、图片生成/文生图/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2084514856253874178.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 21 个 workflow 都包含：
-- `ControlNextGetPoses`
-- `GetImageSizeAndCount`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageResizeKJ`
-- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `PreviewImage`
-- `Primitive integer [Crystools]`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleMath+`
-- `Text Multiline`
-- `VHS_LoadVideo`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoControlEmbeds`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 20/21 个有
-- `ImageConcatMulti` —— 20/21 个有
-- `ImageFromBatch` —— 20/21 个有
-- `Int` —— 20/21 个有
-- `Primitive float [Crystools]` —— 20/21 个有
-- `RHHiddenNodes` —— 20/21 个有
-- `ShowText|pysssss` —— 20/21 个有
-- `Text Concatenate` —— 20/21 个有
-- `WanVideoBlockSwap` —— 20/21 个有
-- `WanVideoSLG` —— 20/21 个有
-- `ImpactSwitch` —— 19/21 个有
-- `WanVideoSetBlockSwap` —— 19/21 个有
-- `RH_Captioner` —— 17/21 个有
-- `ImpactInt` —— 3/21 个有
-- `LayerUtility: JoyCaptionBeta1` —— 3/21 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 3/21 个有
-- `easy showAnything` —— 3/21 个有
-- `WanVideoLoraSelect` —— 2/21 个有
-- `WanVideoLoraSelectMulti` —— 2/21 个有
-- `WanVideoModelLoader` —— 2/21 个有
-- `GetImageRangeFromBatch` —— 1/21 个有
-- `ImageBatchMulti` —— 1/21 个有
-- `ImageUpscaleWithModel` —— 1/21 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/21 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/21 个有
-- `RepeatImageBatch` —— 1/21 个有
-- `UpscaleModelLoader` —— 1/21 个有
-- `WanVideoEmptyEmbeds` —— 1/21 个有
-- `easy forLoopEnd` —— 1/21 个有
-- `easy forLoopStart` —— 1/21 个有
+- `ImageResizeKJv2` —— 20/21 个有
+- `LoadAudio` —— 20/21 个有
+- `VAEEncode` —— 20/21 个有
+- `VAEEncodeAudio` —— 20/21 个有
+- `VHS_LoadVideo` —— 20/21 个有
+- `VAEDecodeAudio` —— 17/21 个有
+- `MiniMaxH3ImageToVideo` —— 14/21 个有
+- `ModelAttentionBackend` —— 12/21 个有
+- `LTXVConcatAVLatent` —— 11/21 个有
+- `easy cleanGpuUsed` —— 11/21 个有
+- `PT_H3ConcatAVLatent` —— 9/21 个有
+- `RunningHub Deepcleaner` —— 9/21 个有
+- `孤海注释` —— 7/21 个有
+- `EmptyImage` —— 5/21 个有
+- `MiniMaxH3AVDecodeT8` —— 4/21 个有
+- `SaveVideo` —— 2/21 个有
+- `Any Switch (rgthree)` —— 1/21 个有
+- `CRTFirstLastFrameSelector` —— 1/21 个有
+- `Fast Groups Muter (rgthree)` —— 1/21 个有
+- `FlashVSRNode` —— 1/21 个有
+- `MiniMaxH3AddGuide` —— 1/21 个有
+- `PathchSageAttentionKJ` —— 1/21 个有
+- `TrimAudioDuration` —— 1/21 个有
+- `XB_VideoLoader` —— 1/21 个有
 
 ## 典型参数
 
@@ -90,4 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Primitive float [Crystools]、Primitive integer [Crystools]、SimpleMath+、Text Concatenate、Text Multiline
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_391
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.7835
-common_nodes: [CreateVideo, GetVideoComponents, PrimitiveFloat, SaveVideo, VHS_LoadVideo, Video Slice]
+coverage: 0.653167
+common_nodes: [ImageFromBatch+, ImageTile+, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI丝滑慢动作-RIFE慢放工作流_2094993897243107330.json, 视频生成/图生视频/AI视频换脸-ReActor逐帧工作流_2095018885564157953.json, 视频生成/图生视频/FlashVSR视频超分工作流_2094999239066738689.json, 视频生成/图生视频/视频补帧到60帧-RIFE工作流_2094993862648492034.json]
+members: [图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json, 图片生成/图生图/图像清晰工具_2064882507623002113.json, 图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json, 图片生成/图生图/生图 拆图分享_2042426276874555393.json, 图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json, 图片生成/文生图/生图 拆图_2016143984715894786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_391
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI丝滑慢动作-RIFE慢放工作流_2094993897243107330.json、视频生成/图生视频/AI视频换脸-ReActor逐帧工作流_2095018885564157953.json、视频生成/图生视频/FlashVSR视频超分工作流_2094999239066738689.json、视频生成/图生视频/视频补帧到60帧-RIFE工作流_2094993862648492034.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json、图片生成/图生图/图像清晰工具_2064882507623002113.json、图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json、图片生成/图生图/生图 拆图分享_2042426276874555393.json、图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CreateVideo`
-- `GetVideoComponents`
-- `PrimitiveFloat`
-- `SaveVideo`
-- `VHS_LoadVideo`
-- `Video Slice`
+全部 6 个 workflow 都包含：
+- `ImageFromBatch+`
+- `ImageTile+`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FL_RIFE` —— 2/4 个有
-- `FlashVSRNode` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `ReActorFaceSwap` —— 1/4 个有
+- `CR Prompt Text` —— 2/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
 
 ## 典型参数
 

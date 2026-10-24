@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_465
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.94375
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_Pronunciation]
+coverage: 0.746833
+common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json, 音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json, 音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json, 音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json]
+members: [视频生成/文生视频/全能视频S文生视频15秒_2014504346054041601.json, 视频生成/文生视频/全能视频S文生视频15秒（0.2元_次）_1979231948419796994.json, 视频生成/文生视频/全能视频S文生视频V2（支持横版及HD-RH API版-国庆0.05元_10秒）_1973424611855568897.json, 视频生成/文生视频/全能视频S文生视频_1973998944743198722.json, 视频生成/文生视频/全能视频S文生视频openai最新模型0.5元_次（国庆前5次免费）_1973577884017233922.json, 视频生成/文生视频/最新全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973574689153003522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_465
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json、音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json、音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json、音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/全能视频S文生视频15秒_2014504346054041601.json、视频生成/文生视频/全能视频S文生视频15秒（0.2元_次）_1979231948419796994.json、视频生成/文生视频/全能视频S文生视频V2（支持横版及HD-RH API版-国庆0.05元_10秒）_1973424611855568897.json、视频生成/文生视频/全能视频S文生视频_1973998944743198722.json、视频生成/文生视频/全能视频S文生视频openai最新模型0.5元_次（国庆前5次免费）_1973577884017233922.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_Pronunciation`
+- `RH_Sora2_T2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_EmotionControl` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveAudioAdvanced` —— 1/4 个有
+- `easy showAnything` —— 4/6 个有
+- `Text Concatenate` —— 2/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

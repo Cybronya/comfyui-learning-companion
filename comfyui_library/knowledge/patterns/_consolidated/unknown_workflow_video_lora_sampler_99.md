@@ -3,84 +3,81 @@ name: unknown_workflow_video_lora_sampler_99
 type: Unknown Workflow
 frequency: 15
 level: moderate
-coverage: 0.503467
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveStringMultiline, ResizeMask, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy seed]
+coverage: 0.427
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, DiffusionModelLoaderKJ, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2004125013651431425.json, 视频生成/图生视频/2004191183524032514.json, 视频生成/图生视频/1967603530557263873.json, 视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083504711071784961.json, 视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083527439560560641.json, 视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2091491947067305986.json, 视频生成/图生视频/1986747671119605761.json, 视频生成/图生视频/1997959528341733378.json, 视频生成/图生视频/2011440893659713538.json, 视频生成/图生视频/2044050920656343042.json, 视频生成/图生视频/Wan视频编辑简易-替换单人-最极速版_2083053571100205058.json, 视频生成/图生视频/1976803129901699073.json, 视频生成/图生视频/2026602744257187841.json, 视频生成/图生视频/1993617615450996738.json, 视频生成/图生视频/1979090579290230785.json]
+members: [视频生成/图生视频/Scail2视频角色替换_2065006346432503810.json, 视频生成/图生视频/Wan-SCAIL2 动作迁移_人物替换_2064423977212272642.json, 视频生成/图生视频/Wan21_SCAIL2_5段扩展长视频_2065365595184521217.json, 视频生成/图生视频/Wan21_SCAIL2_FOR 循环长视频生成工作流_2065680641039093761.json, 视频生成/图生视频/Wan21_SCAIL2_expression_2064969130989670401.json, 视频生成/图生视频/Wan21_SCAIL2_kimoto_no_replace_2066352425379909633.json, 视频生成/图生视频/Wan21_SCAIL2_no_replace_2064637391054397441.json, 视频生成/图生视频/Wan21_SCAIL2_no_replace_two_person_2064981162845622273.json, 视频生成/图生视频/Wan21_SCAIL2_replace_2064994418565931010.json, 视频生成/图生视频/Wan21_SCAIL2_replace_two_person_2064998971084468225.json, 视频生成/图生视频/全新动作模仿 SCAIL2！单人or双人角色替换_2065258951524048898.json, 视频生成/图生视频/全新动作模仿 SCAIL2！单人or双人（懒人版）_2067171226954584065.json, 视频生成/图生视频/全新走路跳舞动作模仿迁移复制转移 SCAIL2！单人or双人（懒人版）_2069078995290906625.json, 视频生成/图生视频/动作迁移 双人_单人视频换人 角色替换SCAIL2_2066697586874085378.json, 视频生成/图生视频/双人多人全新动作迁移复制对打_2065406697937657858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_99
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2004125013651431425.json、视频生成/图生视频/2004191183524032514.json、视频生成/图生视频/1967603530557263873.json、视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083504711071784961.json、视频生成/图生视频/Wan视频编辑 替换人物 最极速版_2083527439560560641.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Scail2视频角色替换_2065006346432503810.json、视频生成/图生视频/Wan-SCAIL2 动作迁移_人物替换_2064423977212272642.json、视频生成/图生视频/Wan21_SCAIL2_5段扩展长视频_2065365595184521217.json、视频生成/图生视频/Wan21_SCAIL2_FOR 循环长视频生成工作流_2065680641039093761.json、视频生成/图生视频/Wan21_SCAIL2_expression_2064969130989670401.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `BlockifyMask`
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageFromBatch`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `DiffusionModelLoaderKJ`
+- `GetImageRangeFromBatch`
 - `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `ResizeMask`
-- `Sam2Segmentation`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy seed`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 14/15 个有
-- `PrimitiveString` —— 14/15 个有
-- `StringConcatenate` —— 14/15 个有
-- `easy int` —— 13/15 个有
-- `Mute / Bypass Relay (rgthree)` —— 11/15 个有
-- `Mute / Bypass Repeater (rgthree)` —— 11/15 个有
-- `Bookmark (rgthree)` —— 10/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/15 个有
-- `Label (rgthree)` —— 10/15 个有
-- `GetImageRangeFromBatch` —— 4/15 个有
-- `ImageResizeKJ` —— 4/15 个有
-- `Note Plus (mtb)` —— 4/15 个有
-- `Int` —— 3/15 个有
-- `SimpleMath+` —— 3/15 个有
-- `Bjornulf_ShowFloat` —— 2/15 个有
-- `Bjornulf_ShowInt` —— 2/15 个有
+- `GetNode` —— 14/15 个有
+- `ImageConcatMulti` —— 14/15 个有
+- `SetNode` —— 14/15 个有
+- `PreviewImage` —— 13/15 个有
+- `ImageFromBatch` —— 12/15 个有
+- `WanChunkFeedForward` —— 9/15 个有
+- `GetImageSize` —— 6/15 个有
+- `PreviewAny` —— 6/15 个有
+- `PrimitiveInt` —— 6/15 个有
+- `SimpleMath+` —— 6/15 个有
+- `ttN int` —— 6/15 个有
+- `PrimitiveBoolean` —— 5/15 个有
+- `easy cleanGpuUsed` —— 5/15 个有
+- `JjkText` —— 4/15 个有
+- `AILab_QwenVL` —— 3/15 个有
+- `Seed` —— 3/15 个有
+- `easy imageRemBg` —— 3/15 个有
+- `MathExpression|pysssss` —— 2/15 个有
+- `ShowText|pysssss` —— 2/15 个有
+- `VHS_VideoInfoLoaded` —— 2/15 个有
+- `CR Text` —— 1/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
+- `INTConstant` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `InversionDemoLazySwitch` —— 1/15 个有
+- `PrimitiveStringMultiline` —— 1/15 个有
+- `SaveImage` —— 1/15 个有
+- `TT_img_enc` —— 1/15 个有
+- `easy forLoopEnd` —— 1/15 个有
+- `easy forLoopStart` —— 1/15 个有
 
 ## 典型参数
 

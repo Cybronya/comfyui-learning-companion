@@ -3,52 +3,85 @@ name: unknown_workflow_video_upscale_latent_upscale_139
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.963
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, 忽略多组孤海]
+coverage: 0.5125
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JWFloat, JWLoadImageSequenceWithStopIndex, JWSaveImageSequence, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuide, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PreviewAny, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy float, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json]
+members: [视频生成/图生视频/LTX2.3数字人无限时长V2_2038825068578480130.json, 视频生成/图生视频/LTX2.3真无限时长生成工作流最终版，彻底解决人物一致性、闪烁跳帧、变色、爆显存等问题_2038747014028075010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_139
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json、视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3数字人无限时长V2_2038825068578480130.json、视频生成/图生视频/LTX2.3真无限时长生成工作流最终版，彻底解决人物一致性、闪烁跳帧、变色、爆显存等问题_2038747014028075010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `JWFloat`
+- `JWLoadImageSequenceWithStopIndex`
+- `JWSaveImageSequence`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAddGuide`
+- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyOutput`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PreviewAny`
+- `PrimitiveString`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleMath+`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `忽略多组孤海`
+- `easy cleanGpuUsed`
+- `easy float`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy int`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `ModelPreviewOverrideKJ` —— 1/2 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
-- `easy float` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,62 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_703
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.614667
-common_nodes: [AILab_QwenVL, CFGZeroStar, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+frequency: 2
+level: weak
+coverage: 0.6295
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ColorTransfer, ComfyNumberConvert, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageFromBatch, ImageResizeKJv2, JjkText, JoinStrings, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideo, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewAny, PreviewImage, PrimitiveInt, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleCalculatorKJ, Text, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VRAM_Debug, Video_Fade, easy seed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/文生视频/video_wan2_2_14B_QwenVL-自动提示词_1981726042085826562.json, 视频生成/文生视频/video_wan2_2_14B_holocine_1984147805432414210.json, 视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json]
+members: [图片生成/图生图/动态循环壁纸一键生成_2081926524151877634.json, 视频生成/图生视频/动态循环壁纸一键生成_2072296730909044737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_703
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/video_wan2_2_14B_QwenVL-自动提示词_1981726042085826562.json、视频生成/文生视频/video_wan2_2_14B_holocine_1984147805432414210.json、视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/动态循环壁纸一键生成_2081926524151877634.json、视频生成/图生视频/动态循环壁纸一键生成_2072296730909044737.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：61%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGZeroStar`
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `ColorTransfer`
+- `ComfyNumberConvert`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `GetNode`
-- `KSamplerAdvanced`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `JjkText`
+- `JoinStrings`
+- `KSamplerSelect`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideo`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
 - `PreviewAny`
+- `PreviewImage`
+- `PrimitiveInt`
+- `RTXVideoSuperResolution`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `SimpleCalculatorKJ`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
+- `VRAM_Debug`
+- `Video_Fade`
+- `easy seed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `TextBox` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
+- `DuckHideNode` —— 1/2 个有
+- `Float to Int` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | lcm | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 宽度 | 193 | - | 2 | 100% |
+| 高度 | 50 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,8 +87,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 宽度 中位数 193，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 50，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

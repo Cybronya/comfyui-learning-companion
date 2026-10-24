@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_65
 type: Unknown Workflow
-frequency: 12
+frequency: 18
 level: moderate
-coverage: 0.723417
-common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, ShowText|pysssss]
+coverage: 0.963889
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json, 音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2038824621578919937.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2043543938941853698.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2075456272979283970.json, 音频生成/音频生成/FishAudio_2060290526255083522.json, 音频生成/音频生成/【3月】FishAudio S2TTS单人音色克隆_2033527407566659586.json, 音频生成/音频生成/单人语音克隆-83种语言-FishAudio S2 TTS（含特殊音效）吊打闭源_2033180836341747713.json, 音频生成/音频生成/带强调语气音频生成 FishAudio S2 TTS语气标签自动插入_2036968089769746434.json]
+members: [图片生成/图生图/sku图生图无文字_2068886938618257409.json, 图片生成/图生图/sku图生图有文字_2068934071400624129.json, 图片生成/图生图/【阡陌】gemini-3.1-flash全能图片2.0单图_多图图像编辑工作流_2029820857077473281.json, 图片生成/图生图/产品营销图_2030927728215592961.json, 图片生成/图生图/全能图片 2.0_2058541134623891458.json, 图片生成/图生图/全能图片 2.0_2k_2104861335333990401.json, 图片生成/图生图/全能图片2.0 生成四宫格多视图 4宫格 _ 人像四视图_2043529289177501697.json, 图片生成/图生图/全能图片2.0_2028076293710942210.json, 图片生成/图生图/全能图片2.0_2052683057173413890.json, 图片生成/图生图/全能图片2.0双图_2089666756385263618.json, 图片生成/图生图/全能图片2.0服装衣服换装_2016770404051853314.json, 图片生成/图生图/全能图片2图生图_2044954064257028098.json, 图片生成/图生图/全能图片3.0_2037496983321059330.json, 图片生成/图生图/图像缩放_2056935767573880833.json, 图片生成/图生图/系统剪裁_2069605976042467329.json, 图片生成/文生图/2029782063720697858.json, 图片生成/文生图/全能图片 文生图_2111909882592059393.json, 图片生成/文生图/全能图片2_2027195734507917313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_65
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json、音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/sku图生图无文字_2068886938618257409.json、图片生成/图生图/sku图生图有文字_2068934071400624129.json、图片生成/图生图/【阡陌】gemini-3.1-flash全能图片2.0单图_多图图像编辑工作流_2029820857077473281.json、图片生成/图生图/产品营销图_2030927728215592961.json、图片生成/图生图/全能图片 2.0_2058541134623891458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `Audio To Text (mtb)`
-- `FishS2VoiceCloneTTS`
-- `Load Whisper (mtb)`
-- `LoadAudio`
-- `ShowText|pysssss`
+全部 18 个 workflow 都包含：
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 10/12 个有
-- `PrimitiveStringMultiline` —— 10/12 个有
-- `SaveAudioMP3` —— 10/12 个有
-- `RH_LLMAPI_Pro_Node` —— 8/12 个有
-- `SaveAudio` —— 2/12 个有
-- `easy clearCacheAll` —— 1/12 个有
+- `LoadImage` —— 17/18 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 16/18 个有
+- `TextInput_` —— 5/18 个有
+- `ImageScale` —— 4/18 个有
 
 ## 典型参数
 

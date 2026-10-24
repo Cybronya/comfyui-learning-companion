@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_592
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.904667
-common_nodes: [LoadAudio, LoadImage, LoadVideo, MuyeTextEditOutput, SaveVideo]
+coverage: 0.72
+common_nodes: [Apply Whisper, LoadAudio, PreviewAny, SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceClone]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json, 视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json, 视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json]
+members: [音频生成/音频生成/AI丨辰枫-Qwen3 TTS 音频克隆_2050863798147399682.json, 音频生成/音频生成/Qwen3 TTS 单人音频克隆_2053057753358323714.json, 音频生成/音频生成/Qwen3 TTS 单人音频克隆_操作简单 极速运行_2049328835820265473.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2016851283923177473.json, 音频生成/音频生成/声音克隆_2019297680425488386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_592
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json、视频生成/文生视频/Seedance 2.0 Global Fast 多模态全能参考视频｜支持4K｜文生视频｜图生视频｜视频参考_2097622720824565761.json、视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/AI丨辰枫-Qwen3 TTS 音频克隆_2050863798147399682.json、音频生成/音频生成/Qwen3 TTS 单人音频克隆_2053057753358323714.json、音频生成/音频生成/Qwen3 TTS 单人音频克隆_操作简单 极速运行_2049328835820265473.json、音频生成/音频生成/Qwen3 TTS 音频克隆_2016851283923177473.json、音频生成/音频生成/声音克隆_2019297680425488386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Apply Whisper`
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `MuyeTextEditOutput`
-- `SaveVideo`
+- `PreviewAny`
+- `SaveAudio`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSVoiceClone`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `RH_BytedanceSeedance20GlobalFastMultimodalVideo` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 1/3 个有
+- `Text` —— 4/5 个有
+- `AudioSpeedShift` —— 1/5 个有
 
 ## 典型参数
 

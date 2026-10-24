@@ -1,30 +1,41 @@
 ---
 name: unknown_workflow_generic_797
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [RH_RhartImageNG31FlashOfficialTextToImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.733
+common_nodes: [GetVideoComponents, ImageFromBatch+, ImpactSwitch, JjkShowText, LoadVideo, PreviewImage, RH_LLMAPI_NODE, RH_Translator, RunningHub ThinkSound, SaveVideo, Text Multiline, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V2-文生图-官方稳定版 API专用_2082360330495287298.json, 图片生成/文生图/全能图片V2-文生图-官方稳定版_2061684643153408002.json]
+members: [音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json, 音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json, 音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json, 音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_797
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片V2-文生图-官方稳定版 API专用_2082360330495287298.json、图片生成/文生图/全能图片V2-文生图-官方稳定版_2061684643153408002.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/MMAudio-AI视频配音-图像转音频工作流_1943255611897507841.json、音频生成/音频生成/视频配音-ThinkSound_1944458320000241665.json、音频生成/音频生成/视频配音_ ThinkSound_1972212425766400001.json、音频生成/音频生成/视频配音_ThinkSound_1943128689531895809.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_RhartImageNG31FlashOfficialTextToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageFromBatch+`
+- `ImpactSwitch`
+- `JjkShowText`
+- `LoadVideo`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RH_Translator`
+- `RunningHub ThinkSound`
+- `SaveVideo`
+- `Text Multiline`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 ## 典型参数
 
@@ -36,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

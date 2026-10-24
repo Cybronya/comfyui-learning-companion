@@ -1,60 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_vae_48
 type: Unknown Workflow
-frequency: 2
+frequency: 5
 level: weak
-coverage: 0.7945
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DeepTranslatorTextNode, EmptyLatentImage, KSamplerSelect, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, VAEDecode, VAELoader, easy promptConcat, easy stylesSelector, workflow>模型加载区]
-problems: []
-missing: [easy promptConcat, easy stylesSelector, workflow>模型加载区]
-members: [图片生成/文生图/1976120206277914626.json, 图片生成/文生图/flux1文生图-带270多种风格 （输入中文即可）_1992207757744951297.json]
+coverage: 0.8344
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/Worker Text2Image_1975809153623003138.json, 图片生成/文生图/Zimage-base_2016353825925373953.json, 图片生成/文生图/中国农村动画风格_1963594349245452289.json, 图片生成/文生图/千问image真实幻想V2文生图_1988091761648115713.json, 图片生成/文生图/自用测试工作流_2017266041059020802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_48
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1976120206277914626.json、图片生成/文生图/flux1文生图-带270多种风格 （输入中文即可）_1992207757744951297.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Worker Text2Image_1975809153623003138.json、图片生成/文生图/Zimage-base_2016353825925373953.json、图片生成/文生图/中国农村动画风格_1963594349245452289.json、图片生成/文生图/千问image真实幻想V2文生图_1988091761648115713.json、图片生成/文生图/自用测试工作流_2017266041059020802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
+- **样本数**：5
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DeepTranslatorTextNode`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `ShowText|pysssss`
 - `VAEDecode`
 - `VAELoader`
-- `easy promptConcat`
-- `easy stylesSelector`
-- `workflow>模型加载区`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 1/2 个有
+- `PrimitiveInt` —— 4/5 个有
+- `CR Text` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `UNETLoader` —— 3/5 个有
+- `UnetLoaderGGUF` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `QwenEditResolution` —— 2/5 个有
+- `ConcatTextOfUtils` —— 1/5 个有
+- `InversionDemoLazyIndexSwitch` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1052 | - | 2 | 97% |
-| 高度 | 1472 | - | 2 | 70% |
+| 采样步数 | 20 | 4 - 50 | 5 | 21% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 5 | 48% |
+| 采样算法 | euler | - | 5 | 60% |
+| 调度器 | simple | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1052，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 1472，样本不足，未给区间，2 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：easy promptConcat、easy stylesSelector、workflow>模型加载区
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 4 - 50，5 个样本，取值分散，一致性仅 21%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，5 个样本，取值分散，一致性仅 48%
+- 采样算法 最常用 euler，5 个样本，一致性 60%
+- 调度器 最常用 simple，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

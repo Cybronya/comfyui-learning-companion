@@ -1,69 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_unet_61
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.882
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 9
+level: strong
+coverage: 0.920667
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/无限长视频生成 1 开头 Minimax H3_2091358451745251329.json, 视频生成/图生视频/无限长视频生成 2 延长 Minimax H3_2091357546257932290.json, 视频生成/图生视频/老李多参生视频_2104266943242002434.json]
+members: [图片生成/图生图/QWEN Edit 2509 多图 人物一致性 工作流！超简单_1984218554033717250.json, 图片生成/图生图/双图 多图融合 图生图 图片编辑 商品展示_2045373556841779201.json, 图片生成/图生图/商品展示 多图融合 图生图 图片编辑_2044378332166361089.json, 图片生成/图生图/图生图 图片编辑 多图编辑_2044337548310355970.json, 图片生成/图生图/图生图 图片编辑 多图编辑_2044346249851179010.json, 图片生成/图生图/图生图 图片编辑 多图编辑_2044369934167314434.json, 图片生成/图生图/图生图 图片编辑 多图编辑_2108489817746137089.json, 图片生成/图生图/局部重绘  图生图  洗图_2046470428926943233.json, 图片生成/图生图/极速三宫格工作流！超简单_1983748538079354881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_61
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/无限长视频生成 1 开头 Minimax H3_2091358451745251329.json、视频生成/图生视频/无限长视频生成 2 延长 Minimax H3_2091357546257932290.json、视频生成/图生视频/老李多参生视频_2104266943242002434.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/QWEN Edit 2509 多图 人物一致性 工作流！超简单_1984218554033717250.json、图片生成/图生图/双图 多图融合 图生图 图片编辑 商品展示_2045373556841779201.json、图片生成/图生图/商品展示 多图融合 图生图 图片编辑_2044378332166361089.json、图片生成/图生图/图生图 图片编辑 多图编辑_2044337548310355970.json、图片生成/图生图/图生图 图片编辑 多图编辑_2044346249851179010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadAudio`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `TrimAudioDuration` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy saveVideo` —— 2/3 个有
-- `MiniMaxH3MotionContext` —— 1/3 个有
-- `MiniMaxH3MotionContextTrim` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `ImageResizeKJ` —— 2/9 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/9 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 2/9 个有
+- `LayerUtility: ColorImage V2` —— 2/9 个有
+- `LayerUtility: ImageBlend` —— 2/9 个有
+- `easy promptLine` —— 2/9 个有
+- `CR Overlay Text` —— 1/9 个有
+- `GetImageRangeFromBatch` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `ImageListToImageBatch` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1280 | 9 | 90% |
+| 高度 | 1536 | 760 - 1536 | 9 | 78% |
+| 采样步数 | 8 | 8 - 8 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1280，9 个样本，取值集中（一致性 90%）
+- 高度 中位数 1536，观测区间 760 - 1536，9 个样本
+- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

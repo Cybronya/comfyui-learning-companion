@@ -1,31 +1,33 @@
 ---
 name: unknown_workflow_sampler_clip_unet_57
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.831889
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.956929
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, Image Crop Face, LayerUtility: PurgeVRAM V2, ImageSmartSharpen+, easy int, Seed (rgthree)]
-members: [图片生成/图生图/2012770534232170497.json, 图片生成/图生图/2025838254557237250.json, 图片生成/图生图/2029595679181508609.json, 图片生成/图生图/2034605360421543938.json, 图片生成/图生图/2041822266979262465.json, 图片生成/图生图/2047233928045531137.json, 图片生成/文生图/Klein - 万物迁移自用_2064658422053818370.json, 图片生成/文生图/Klein-一致性_2096434383749210114.json, 图片生成/文生图/二次元老婆秒变真人！ComfyUI动漫转写实，脸不变质感拉满_2059589704609255426.json]
+missing: []
+members: [图片生成/图生图/FLUX克莱因指令编辑_2019953559508361217.json, 图片生成/图生图/Flux 2 klein 4b 强力换头_2038542238401171457.json, 图片生成/图生图/Flux 2 klein 4b 换头工作流_2012867203107917825.json, 图片生成/图生图/Flux 2 klein 9b 100% 只换脸工作流_2016484736058793986.json, 图片生成/图生图/Flux 2 klein 9b 换脸非换头工作流_2017157128376557570.json, 图片生成/图生图/Flux klein100%换脸工作流（不改发型）_2030855449922248705.json, 图片生成/图生图/Flux2 Klein 单图编辑9B版_2012107262248095745.json, 图片生成/图生图/Flux2 Klein 图像编辑4B版V1_2012059257029533698.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版V1_2012042587716194306.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版_2012348312397029378.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版（15s出图）_2012157839531315202.json, 图片生成/图生图/Flux2-Klein-9B双图效果图洗图_2018610383409389569.json, 图片生成/图生图/Flux2-Klein-9B双图编辑_2013423771364888578.json, 图片生成/图生图/亚秒级40秒100%换脸工作流 V1.00404_2040329795237584898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/2012770534232170497.json、图片生成/图生图/2025838254557237250.json、图片生成/图生图/2029595679181508609.json、图片生成/图生图/2034605360421543938.json、图片生成/图生图/2041822266979262465.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/FLUX克莱因指令编辑_2019953559508361217.json、图片生成/图生图/Flux 2 klein 4b 强力换头_2038542238401171457.json、图片生成/图生图/Flux 2 klein 4b 换头工作流_2012867203107917825.json、图片生成/图生图/Flux 2 klein 9b 100% 只换脸工作流_2016484736058793986.json、图片生成/图生图/Flux 2 klein 9b 换脸非换头工作流_2017157128376557570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
 - `LoadImage`
@@ -39,27 +41,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 7/9 个有
-- `EmptyFlux2LatentImage` —— 7/9 个有
-- `CR Text` —— 6/9 个有
-- `ImageScaleToTotalPixels` —— 6/9 个有
-- `GetImageSize` —— 5/9 个有
-- `LoraLoaderModelOnly` —— 5/9 个有
-- `Image Comparer (rgthree)` —— 4/9 个有
-- `LayerUtility: ImageReel` —— 4/9 个有
-- `LayerUtility: ImageReelComposit` —— 4/9 个有
-- `JWFloat` —— 3/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `ImageConcanate` —— 2/9 个有
-- `ImageSmartSharpen+` —— 2/9 个有
-- `Seed (rgthree)` —— 2/9 个有
-- `easy int` —— 2/9 个有
-- `Image Crop Face` —— 1/9 个有
-- `ImageStitch` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `PrimitiveFloat` —— 1/9 个有
+- `ImageScaleToTotalPixels` —— 13/14 个有
+- `GetImageSize` —— 12/14 个有
+- `Image Comparer (rgthree)` —— 9/14 个有
+- `CR Text` —— 8/14 个有
+- `ImageConcanate` —— 6/14 个有
+- `LayerColor: Brightness & Contrast` —— 4/14 个有
+- `LayerUtility: CropByMask V2` —— 4/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/14 个有
+- `MaskPreview` —— 3/14 个有
+- `PreviewImage` —— 3/14 个有
+- `ycFaceMaskCreator` —— 3/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/14 个有
+- `easy int` —— 2/14 个有
+- `easy seed` —— 2/14 个有
+- `FaceToMask` —— 1/14 个有
+- `ImageConcatMulti` —— 1/14 个有
+- `ImageResize+` —— 1/14 个有
+- `JjkText` —— 1/14 个有
+- `LayerMask: RemBgUltra` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 1/14 个有
 
 ## 典型参数
 
@@ -71,4 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: ImageReel、LayerUtility: ImageReelComposit、Image Crop Face
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,39 +1,43 @@
 ---
 name: unknown_workflow_sampler_2
 type: Unknown Workflow
-frequency: 10
+frequency: 14
 level: moderate
-coverage: 0.9857
-common_nodes: [LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler]
+coverage: 0.889071
+common_nodes: [GetImageSizeAndCount, ImageScaleDownToSize, ImageStitch, LoadImage, PreviewImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073312517513900034.json, 视频生成/图生视频/2027574914521239554.json, 视频生成/图生视频/2029805052180828161.json, 视频生成/图生视频/2027219359206219778.json, 视频生成/图生视频/2027301910834843650.json, 视频生成/图生视频/2027324926671200258.json, 视频生成/图生视频/2058750724892352513.json, 视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json, 视频生成/图生视频/2029198735569326082.json, 视频生成/图生视频/2027641211296681986.json]
+members: [图片生成/图生图/【单图转绘】字节USO风格转绘_1962868167645302786.json, 图片生成/图生图/【多图转绘】字节USO风格转绘_1962868004423970817.json, 图片生成/图生图/【角色一致性+风格参考】字节USO风格转绘_1962876242376757250.json, 图片生成/图生图/二维码转绘-字节USO风格转绘_1963025755846447105.json, 图片生成/图生图/单图转绘-字节USO风格转绘_1962505293244575746.json, 图片生成/图生图/多图转绘-字节USO风格转绘_1962500225921363970.json, 图片生成/图生图/字节 USO，超越 IPAdapter！风格主体双修_1963083057504948225.json, 图片生成/图生图/🐲字节USO，单图，仅风格图像 + 画面提示词_1963589914926600193.json, 图片生成/图生图/🐲字节USO🐲单图，仅主体图像，保持一致性 + 提示词（风格&动作）编辑_1963590097966026754.json, 图片生成/图生图/🐲字节USO🐲多图🐲保持图像一致性 + 双图像风格编辑_1963590230374846466.json, 图片生成/文生图/【单图主体参考】字节USO主体+风格统一框架_1962897927087828994.json, 图片生成/文生图/【单图风格参考】字节USO主体+风格统一框架_1962876203176800258.json, 图片生成/文生图/多图转绘-字节USO风格转绘_1986739065456422913.json, 图片生成/文生图/多图转绘-字节USO风格转绘_1986739671420104706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2073312517513900034.json、视频生成/图生视频/2027574914521239554.json、视频生成/图生视频/2029805052180828161.json、视频生成/图生视频/2027219359206219778.json、视频生成/图生视频/2027301910834843650.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/【单图转绘】字节USO风格转绘_1962868167645302786.json、图片生成/图生图/【多图转绘】字节USO风格转绘_1962868004423970817.json、图片生成/图生图/【角色一致性+风格参考】字节USO风格转绘_1962876242376757250.json、图片生成/图生图/二维码转绘-字节USO风格转绘_1963025755846447105.json、图片生成/图生图/单图转绘-字节USO风格转绘_1962505293244575746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadAudio`
+全部 14 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageScaleDownToSize`
+- `ImageStitch`
 - `LoadImage`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
+- `PreviewImage`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveVideo` —— 9/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
-- `GetVideoComponents` —— 1/10 个有
-- `Int` —— 1/10 个有
-- `VHS_VideoCombine` —— 1/10 个有
+- `RH_Translator` —— 7/14 个有
+- `Text Multiline` —— 6/14 个有
+- `ShowText|pysssss` —— 2/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
+- `RBGImageStitchPlus` —— 1/14 个有
 
 ## 典型参数
 

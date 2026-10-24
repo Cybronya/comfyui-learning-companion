@@ -1,72 +1,82 @@
 ---
 name: unknown_workflow_sampler_clip_unet_148
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.83725
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.718375
+common_nodes: [CFGOverride, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PreviewAny, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/1956259506659446786.json, 图片生成/文生图/ComfyUI Z-Image-Turbo工作流详解｜8步照片级出图+中英文文字渲染+全节点注释_2059594391173554177.json, 图片生成/文生图/FLSampler (BSS) 画质提升-ZImage_2062006258563108866.json, 图片生成/文生图/Z-Image-Turbo with Low VRAM(4-6 GB)_2075074765303410689.json]
+members: [图片生成/图生图/Ideogram+开源支持语言简洁文生图_2066708942339796993.json, 图片生成/图生图/ideogram4.0最新开源模型_2063994332616683521.json, 图片生成/文生图/Ideogram 4 KJ Prompt Builder 风格参考+自动文生图_2065368278498889730.json, 图片生成/文生图/Ideogram 4 出图官流_2062772528212439042.json, 图片生成/文生图/Ideogram 4 洗图结构化 JSON 重组_2064321335798620162.json, 图片生成/文生图/Ideogram 图生图参考潜空间重构_2064321322360074241.json, 图片生成/文生图/Ideogram_4+Prompt_Builder_中文提示词自动文生图_2069068754293710850.json, 视频生成/图生视频/Ideogram+4+Prompt+Builder+中文提示词自动文生图_2089969723621593090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_148
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1956259506659446786.json、图片生成/文生图/ComfyUI Z-Image-Turbo工作流详解｜8步照片级出图+中英文文字渲染+全节点注释_2059594391173554177.json、图片生成/文生图/FLSampler (BSS) 画质提升-ZImage_2062006258563108866.json、图片生成/文生图/Z-Image-Turbo with Low VRAM(4-6 GB)_2075074765303410689.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Ideogram+开源支持语言简洁文生图_2066708942339796993.json、图片生成/图生图/ideogram4.0最新开源模型_2063994332616683521.json、图片生成/文生图/Ideogram 4 KJ Prompt Builder 风格参考+自动文生图_2065368278498889730.json、图片生成/文生图/Ideogram 4 出图官流_2062772528212439042.json、图片生成/文生图/Ideogram 4 洗图结构化 JSON 重组_2064321335798620162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `KSampler`
-- `LoadImage`
+- `ComfyNumberConvert`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `PreviewAny`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `FLS_SamplerV4` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `InpaintModelConditioning` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
-- `VAEDecodeTiled` —— 1/4 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `CLIPLoader` —— 6/8 个有
+- `easy showAnything` —— 6/8 个有
+- `ResolutionSelector` —— 5/8 个有
+- `llama_cpp_instruct_adv` —— 5/8 个有
+- `llama_cpp_model_loader` —— 5/8 个有
+- `LoadImage` —— 4/8 个有
+- `Ideogram4PromptBuilderKJ` —— 3/8 个有
+- `RHLLMChatNode` —— 3/8 个有
+- `llama_cpp_parameters` —— 3/8 个有
+- `CLIPLoaderGGUF` —— 2/8 个有
+- `CustomCombo` —— 2/8 个有
+- `DisTorchPurgeVRAMV2` —— 2/8 个有
+- `Float` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `easy saveText` —— 2/8 个有
+- `image_scale_pixel_v2` —— 2/8 个有
+- `CR Text` —— 1/8 个有
+- `Ideogram4OptimizationsKJ` —— 1/8 个有
+- `ImageScale` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `SplitSigmasDenoise` —— 1/8 个有
+- `VAEEncode` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
-| 采样步数 | 8 | 8 - 9 | 4 | 95% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 9，4 个样本，取值集中（一致性 95%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

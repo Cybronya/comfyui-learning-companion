@@ -1,85 +1,83 @@
 ---
 name: unknown_workflow_controlnet_upscale_latent_upscale_3
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.603
-common_nodes: [Anything Everywhere3, ApplyInstantID, ApplyPulid, BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, BatchPromptSchedule, CLIPTextEncode, CR Apply LoRA Stack, CR Image Grid Panel, CR Simple Prompt List, CR Simple Prompt List Keyframes, CheckpointLoaderSimple, Concat Text _O, ControlNetLoader, DF_Image_scale_to_side, DF_Integer, EmptyLatentImage, FreeU_V2, ImageCompositeAbsolute, ImageCompositeAbsoluteByContainer, ImageGenResolutionFromImage, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler (Efficient), LLava Loader Simple, LLavaSamplerSimple, LatentUpscale, LayerUtility: ColorImage V2, LayerUtility: ColorPicker, LayerUtility: ExtendCanvas, LlavaClipLoader, LoadImage, PulidEvaClipLoader, PulidInsightFaceLoader, PulidModelLoader, SDXLPromptStyler, SaveImage, Seed Everywhere, ShowText|pysssss, SimpleMath+, SimpleText, StyleAlignedBatchAlign, Text _O, Text_Image_Multiline_Zho, easy loraStack]
+frequency: 3
+level: moderate
+coverage: 0.702333
+common_nodes: [AIO_Preprocessor, BasicGuider, CLIPLoader, ComfyMathExpression, ComfySwitchNode, GrowMask, ImageScale, MaskPreview, MiniMaxH3AVDecodeT8, MiniMaxH3FunControlNetApply, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3OutputTrimT8, MiniMaxH3SafeAVSaveT8Advanced, MiniMaxH3TwoPassAudioAuditT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, MiniMaxH3VDNRefinePlanT8Advanced, ModelPatchLoader, PointsEditor, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, SeCModelLoader, SeCVideoSegmentation, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoInfoLoaded]
 problems: []
-missing: [CR Image Grid Panel, Concat Text _O, LLava Loader Simple, LayerUtility: ColorImage V2, LayerUtility: ColorPicker, LayerUtility: ExtendCanvas, SimpleMath+, Text _O, KSampler (Efficient), CR Apply LoRA Stack, CR Simple Prompt List, CR Simple Prompt List Keyframes, Seed Everywhere, easy loraStack]
-members: [图片生成/文生图/1961439298954399746.json, 图片生成/文生图/1961447394091188226.json]
+missing: []
+members: [视频生成/文生视频/MiniMax H3｜ControlNet Union  局部重绘专用工作流_2108263577818849282.json, 视频生成/文生视频/MiniMax H3｜ControlNet Union 2.0 视频控制与局部重绘·音频驱动数字人｜VDN 12步高清版_2106627537043550210.json, 视频生成/文生视频/MiniMax H3｜ControlNet Union 2.0 视频控制与局部重绘｜VDN 12步高清版_2108578106922590210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_latent_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1961439298954399746.json、图片生成/文生图/1961447394091188226.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜ControlNet Union  局部重绘专用工作流_2108263577818849282.json、视频生成/文生视频/MiniMax H3｜ControlNet Union 2.0 视频控制与局部重绘·音频驱动数字人｜VDN 12步高清版_2106627537043550210.json、视频生成/文生视频/MiniMax H3｜ControlNet Union 2.0 视频控制与局部重绘｜VDN 12步高清版_2108578106922590210.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `ApplyInstantID`
-- `ApplyPulid`
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
-- `BatchPromptSchedule`
-- `CLIPTextEncode`
-- `CR Apply LoRA Stack`
-- `CR Image Grid Panel`
-- `CR Simple Prompt List`
-- `CR Simple Prompt List Keyframes`
-- `CheckpointLoaderSimple`
-- `Concat Text _O`
-- `ControlNetLoader`
-- `DF_Image_scale_to_side`
-- `DF_Integer`
-- `EmptyLatentImage`
-- `FreeU_V2`
-- `ImageCompositeAbsolute`
-- `ImageCompositeAbsoluteByContainer`
-- `ImageGenResolutionFromImage`
-- `InstantIDFaceAnalysis`
-- `InstantIDModelLoader`
-- `KSampler (Efficient)`
-- `LLava Loader Simple`
-- `LLavaSamplerSimple`
-- `LatentUpscale`
-- `LayerUtility: ColorImage V2`
-- `LayerUtility: ColorPicker`
-- `LayerUtility: ExtendCanvas`
-- `LlavaClipLoader`
-- `LoadImage`
-- `PulidEvaClipLoader`
-- `PulidInsightFaceLoader`
-- `PulidModelLoader`
-- `SDXLPromptStyler`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `GrowMask`
+- `ImageScale`
+- `MaskPreview`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3FunControlNetApply`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3OutputTrimT8`
+- `MiniMaxH3SafeAVSaveT8Advanced`
+- `MiniMaxH3TwoPassAudioAuditT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `MiniMaxH3VDNExecutionPlanT8Advanced`
+- `MiniMaxH3VDNModelComposerT8Advanced`
+- `MiniMaxH3VDNRefinePlanT8Advanced`
+- `ModelPatchLoader`
+- `PointsEditor`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed Everywhere`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `SimpleText`
-- `StyleAlignedBatchAlign`
-- `Text _O`
-- `Text_Image_Multiline_Zho`
-- `easy loraStack`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
+- `VHS_VideoInfoLoaded`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 2/3 个有
+- `MiniMaxH3DurationPlannerT8` —— 2/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/3 个有
+- `LTXVConcatAVLatent` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
+- `MiniMaxH3AudioWindowT8` —— 1/3 个有
+- `SetLatentNoiseMask` —— 1/3 个有
+- `SolidMask` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2 | - | 2 | 100% |
-| 采样算法 | dpmpp_2m | - | 2 | 100% |
-| 调度器 | karras | - | 2 | 100% |
-| 重绘幅度 | 0.6 | - | 2 | 100% |
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 768 | - | 2 | 100% |
+| ControlNet 权重 | 1 | 1 - 1.8 | 3 | 70% |
 
 ## 常见问题
 
@@ -87,12 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，2 个样本，一致性 100%
-- 调度器 最常用 karras，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Image Grid Panel、Concat Text _O、LLava Loader Simple、LayerUtility: ColorImage V2、LayerUtility: ColorPicker
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- ControlNet 权重 中位数 1，观测区间 1 - 1.8，3 个样本

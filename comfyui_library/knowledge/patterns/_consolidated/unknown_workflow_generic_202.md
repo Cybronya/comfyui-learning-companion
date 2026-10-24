@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_202
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.683667
-common_nodes: [CR Prompt Text, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
+coverage: 0.8624
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, PreviewAny, SaveAudio, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片 2（极速版）- 文生图V1_2027205163810824194.json, 图片生成/文生图/全能图片2  图像编辑V1_2097225644391358466.json, 图片生成/文生图/全能图片2 文生图_2027577479132618754.json, 图片生成/文生图/全能图片2--文生图_2027189055745695745.json, 图片生成/文生图/全能图片2多图编辑版_2027578044856143874.json, 图片生成/文生图/全能图片制作分镜_2027212222014951426.json]
+members: [视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json, 音频生成/音频生成/Qwen3 TTS 语音参考克隆+情感语气（单人）_2086710651883442178.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2061738767072980994.json, 音频生成/音频生成/Qwen3+TTS+音频克隆_2082332163504168962.json, 音频生成/音频生成/Qwen3音频克隆 Qwen3+TTS+音频克隆_2074007340663267330.json, 音频生成/音频生成/保存自己用-Qwen3 TTS 音频克隆_2067157702194851841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_202
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/全能图片 2（极速版）- 文生图V1_2027205163810824194.json、图片生成/文生图/全能图片2  图像编辑V1_2097225644391358466.json、图片生成/文生图/全能图片2 文生图_2027577479132618754.json、图片生成/文生图/全能图片2--文生图_2027189055745695745.json、图片生成/文生图/全能图片2多图编辑版_2027578044856143874.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `easy showAnything`
+全部 10 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
+- `LoadAudio`
+- `PreviewAny`
+- `SaveAudio`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `FB_Qwen3TTSVoiceClone` —— 7/10 个有
+- `FishS2VoiceCloneTTS` —— 3/10 个有
 
 ## 典型参数
 

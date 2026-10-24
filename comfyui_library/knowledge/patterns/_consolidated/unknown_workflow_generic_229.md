@@ -1,41 +1,34 @@
 ---
 name: unknown_workflow_generic_229
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.878
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, MultiLinePromptIndex, SaveAudioMP3, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/1954714957638201345.json, 音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json, 音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json, 音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json, 音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json, 音频生成/音频生成/🐲 IndexTTS 单_双 语音克隆 效果稳定 极速出效果🐲_1963526521779736578.json]
+members: [图片生成/文生图/2029799611912687617.json, 图片生成/文生图/2029845513067040769.json, 图片生成/文生图/三图缝合（2个参考图）一个分镜图_2005203215652188161.json, 图片生成/文生图/全能图片 Pro大模型2.0_2069401083256070145.json, 图片生成/文生图/全能图片2.0 默认无图版_2041449632311549954.json, 图片生成/文生图/全能图片2.0_2051570691555774466.json, 图片生成/文生图/全能图片2.0双图 2毛版_2091809107366989826.json, 图片生成/文生图/双图拼接缝合_2001537601662271489.json, 图片生成/文生图/最新全能图片2_2027206679972024322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_229
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1954714957638201345.json、音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json、音频生成/音频生成/TTS多人声音克隆_2030513222238867458.json、音频生成/音频生成/声音克隆 index TTS2，情绪语音克隆，适合AI漫剧 短剧 电商 自媒体 小说 推文等_2034464266501234689.json、音频生成/音频生成/龙王大人声音克隆 index TTS2不赖_2037136084152356866.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/2029799611912687617.json、图片生成/文生图/2029845513067040769.json、图片生成/文生图/三图缝合（2个参考图）一个分镜图_2005203215652188161.json、图片生成/文生图/全能图片 Pro大模型2.0_2069401083256070145.json、图片生成/文生图/全能图片2.0 默认无图版_2041449632311549954.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `MultiLinePromptIndex`
-- `SaveAudioMP3`
+全部 9 个 workflow 都包含：
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 4/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `IndexTTSRun` —— 3/6 个有
-- `JjkText` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `SaveAudio` —— 3/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 7/9 个有
+- `ImageStitch` —— 3/9 个有
 
 ## 典型参数
 

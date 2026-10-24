@@ -1,89 +1,74 @@
 ---
 name: image_to_image_sampler_vae_2
 type: Image To Image
-frequency: 5
-level: strong
-coverage: 0.4152
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, EmptyLatentImage, GetNode, ImageScaleToTotalPixels, KSampler, LoadImage, ModelPatchTorchSettings, ModelSamplingAuraFlow, PathchSageAttentionKJ, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode, VAELoader]
+frequency: 32
+level: moderate
+coverage: 0.960812
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [Label (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), easy bookmark]
-members: [图片生成/文生图/1978121708173451266.json, 图片生成/文生图/1980485872774762497.json, 图片生成/文生图/qwen多视角生成图片_2001986168365412353.json, 图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版一次性出15张人物一致性图片_2095333742851223554.json, 图片生成/文生图/一张图生成人物全角度_2011206036333535234.json]
+missing: []
+members: [图片生成/图生图/双节棍nunchaku Qwen Edit 8步极速图生图_1968520860183212034.json, 图片生成/图生图/双节棍千问图像编辑-qwen-image-edit_1968580136255803393.json, 图片生成/图生图/大斧真人转3D_1972879628723490818.json, 图片生成/图生图/手办_1970355550968049665.json, 图片生成/图生图/插画动漫转真实-Qwen_1968128886720573442.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画   Q版卡通  Q版风格化_2053849545037107202.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画   Q版卡通  Q版风格化_2053877857646071809.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画   Q版卡通  Q版风格化_2053880513613582337.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画  Q版卡通  Q版风格化_2053875214815113218.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画  Q版卡通  Q版风格化_2053897627506356225.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画  Q版卡通  Q版风格化_2053900093924888577.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2059878371705843713.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2059909148455817218.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2059974029460725761.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2059977060457734146.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2060179770062761986.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2060283898608832513.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2061056068268158978.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2072383567207944193.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2076638317302607873.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2089411487113764865.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095439305417248770.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095444428671512578.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095449494145028097.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095584894389936129.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095597858056658946.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095599025432125442.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2095605763430510594.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2096642654376386561.json, 图片生成/图生图/真人转动漫  真人转卡通  真人转漫画_2097953971787886594.json, 图片生成/文生图/Qwen Image Edit 千问模型-图像编辑 @橘子_SJRJT_1963120825828356098.json, 图片生成/文生图/Qwen-Image-Edit—飞翔荷兰人_1971152467314515969.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1978121708173451266.json、图片生成/文生图/1980485872774762497.json、图片生成/文生图/qwen多视角生成图片_2001986168365412353.json、图片生成/文生图/一张图出人物全角度V2-人物一致性-加速版一次性出15张人物一致性图片_2095333742851223554.json、图片生成/文生图/一张图生成人物全角度_2011206036333535234.json）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/图生图/双节棍nunchaku Qwen Edit 8步极速图生图_1968520860183212034.json、图片生成/图生图/双节棍千问图像编辑-qwen-image-edit_1968580136255803393.json、图片生成/图生图/大斧真人转3D_1972879628723490818.json、图片生成/图生图/手办_1970355550968049665.json、图片生成/图生图/插画动漫转真实-Qwen_1968128886720573442.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：42%
+- **样本数**：32
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 32 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `GetNode`
-- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
-- `ModelPatchTorchSettings`
 - `ModelSamplingAuraFlow`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SetNode`
-- `StringConcatenate`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEdit`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 4/5 个有
-- `Mute / Bypass Relay (rgthree)` —— 4/5 个有
-- `Mute / Bypass Repeater (rgthree)` —— 4/5 个有
-- `RHHiddenNodes` —— 4/5 个有
-- `easy bookmark` —— 4/5 个有
-- `ImageFlip` —— 3/5 个有
-- `Fast Groups Muter (rgthree)` —— 1/5 个有
-- `GeminiImageNode` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `UNETLoader` —— 1/5 个有
-- `孤海注释` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 31/32 个有
+- `UNETLoader` —— 30/32 个有
+- `PreviewImage` —— 11/32 个有
+- `PIP_图像联结` —— 10/32 个有
+- `ImageScaleToTotalPixels` —— 6/32 个有
+- `ImageConcatMulti` —— 2/32 个有
+- `ImageStitch` —— 2/32 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/32 个有
+- `NunchakuQwenImageDiTLoader` —— 2/32 个有
+- `Image Comparer (rgthree)` —— 1/32 个有
+- `Note _O` —— 1/32 个有
+- `RepeatLatentBatch` —— 1/32 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 960 | 480 - 960 | 5 | 76% |
-| 高度 | 1304 | 832 - 1304 | 5 | 83% |
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 4 - 20 | 32 | 63% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 32 | 67% |
+| 采样算法 | euler | - | 32 | 100% |
+| 调度器 | simple | - | 32 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 32 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 83/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 30/32 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 960，观测区间 480 - 960，5 个样本
-- 高度 中位数 1304，观测区间 832 - 1304，5 个样本，取值集中（一致性 83%）
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（83/5 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)、Mute / Bypass Relay (rgthree)、Mute / Bypass Repeater (rgthree)、easy bookmark
+- 采样步数 中位数 8，观测区间 4 - 20，32 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，32 个样本
+- 采样算法 最常用 euler，32 个样本，一致性 100%
+- 调度器 最常用 simple，32 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，32 个样本，取值集中（一致性 100%）
+- 高发问题（30/32 个样本）：Steps较低可能导致细节不足

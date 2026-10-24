@@ -3,67 +3,74 @@ name: unknown_workflow_video_lora_sampler_749
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.55
-common_nodes: [DWPreprocessor, DepthAnythingV2Preprocessor, GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResize+, ImageResizeKJ, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LayerMask: LoadFlorence2Model, LayerMask: LoadSegmentAnythingModels, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, Mix Color By Mask, RH_Captioner, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed, easy showAnything]
+coverage: 0.5
+common_nodes: [Any Switch (rgthree), Anything Everywhere, AudioSeparation, CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageListToBatch+, ImageResizeKJv2, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LoadImage, LoadImageListFromDir //Inspire, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Mute / Bypass Repeater (rgthree), PreviewAudio, PreviewImage, PrimitiveFloat, SetNode, TextInput_, TrimAudioDuration, VHS_LoadAudioUpload, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy isNone, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1938493424595042306.json, 视频生成/图生视频/1934648294230695938.json]
+members: [视频生成/图生视频/InfiniteTalk多图MV_2028492446719545346.json, 视频生成/图生视频/InfiniteTalk多图MV（简化版）_2000716682731679746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_749
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1938493424595042306.json、视频生成/图生视频/1934648294230695938.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk多图MV_2028492446719545346.json、视频生成/图生视频/InfiniteTalk多图MV（简化版）_2000716682731679746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DWPreprocessor`
-- `DepthAnythingV2Preprocessor`
+- `Any Switch (rgthree)`
+- `Anything Everywhere`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Batch Images From List`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
 - `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMaskWithBlur`
 - `INTConstant`
-- `ImageConcatMulti`
-- `ImageResize+`
-- `ImageResizeKJ`
-- `Int`
-- `JjkConcat`
-- `LTXVPromptEnhancer`
-- `LTXVPromptEnhancerLoader`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
-- `LayerMask: SegmentAnythingUltra V3`
+- `ImageListToBatch+`
+- `ImageResizeKJv2`
+- `InfiniteTalkEmbedsSlice`
+- `InfiniteTalkMultiImage`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `Mix Color By Mask`
-- `RH_Captioner`
+- `LoadImageListFromDir //Inspire`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Mute / Bypass Repeater (rgthree)`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `SetNode`
-- `VHS_LoadVideo`
+- `TextInput_`
+- `TrimAudioDuration`
+- `VHS_LoadAudioUpload`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoLoraSelect`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
-- `easy cleanGpuUsed`
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy indexAnything`
+- `easy isNone`
+- `easy seed`
 - `easy showAnything`
 
 ## 典型参数

@@ -3,84 +3,74 @@ name: unknown_workflow_video_lora_sampler_80
 type: Unknown Workflow
 frequency: 17
 level: strong
-coverage: 0.420824
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, ReplaceVideoLatentFrames, SetNode, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.874059
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, INTConstant, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RIFEInterpolation, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2004069109543411713.json, 视频生成/图生视频/2005920919849758721.json, 视频生成/图生视频/2004216271933767681.json, 视频生成/图生视频/2004028313129656322.json, 视频生成/图生视频/2003503610359103489.json, 视频生成/图生视频/2003272885085118465.json, 视频生成/图生视频/2003002229281964033.json, 视频生成/图生视频/2010972591602798593.json, 视频生成/图生视频/2002473515242647553.json, 视频生成/图生视频/2002963374075965441.json, 视频生成/图生视频/2002719274244423682.json, 视频生成/文生视频/LongCat Avatar 长视频工作流_2003655756962512897.json, 视频生成/文生视频/LongCat avatar龙猫数字人文生视频对口型版_2002695647604162562.json, 视频生成/文生视频/LongCat+文生视频数字人_2002936278276534273.json, 视频生成/文生视频/LongCat-Video-Avatar数字人图生视频长视频_2003091574424764418.json, 视频生成/文生视频/LongCat-Video-Avatar数字人文生视频长视频_2003091459949699074.json, 视频生成/文生视频/LongCatAvatar_长时数字人工作流_2004810996587921409.json]
+members: [图片生成/图生图/数字人视频+BerniniS2V+Index图生视频_2084101037882957826.json, 视频生成/图生视频/Bernini S2V高动态数字人V2_2075633285170032642.json, 视频生成/图生视频/Bernini V2_音视频_2075860093270323201.json, 视频生成/图生视频/BerniniS2v+IndexTTS_2075534910647005186.json, 视频生成/图生视频/BerniniS2v+IndexTTS数字人_2076643931248488450.json, 视频生成/图生视频/Bernini音频驱动+单双图角色参考_2077033010171568129.json, 视频生成/图生视频/Bernini音频驱动+角色参考数字人_2075515497583570946.json, 视频生成/图生视频/Bernini音频驱动+角色参考数字人（视频生成）_2076480633026727938.json, 视频生成/图生视频/Bernini音频驱动数字人_2078320387280162818.json, 视频生成/图生视频/参考声音和图片生成视频BerniniS2v_2075881409121701889.json, 视频生成/图生视频/声音生视频 数字人 Bernini S2V_2076477889901580289.json, 视频生成/图生视频/数字人视频 BerniniS2V+IndexTTS_2076518219430584321.json, 视频生成/图生视频/语音克隆生视频 S2v Bernini+IndexTTS_2076904015870390274.json, 视频生成/图生视频/音频生视频+角色参考数字人 Bernini_2076468920160186370.json, 视频生成/图生视频/高动态图生视频_2079545449362575361.json, 视频生成/文生视频/数字人声音克隆生视频 Bernini + TTS_2076918978248790017.json, 视频生成/文生视频/🎬 【开源版 Seedance 2.0】Bernini 原生音画同步直出_2075962978561781762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_80
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/2004069109543411713.json、视频生成/图生视频/2005920919849758721.json、视频生成/图生视频/2004216271933767681.json、视频生成/图生视频/2004028313129656322.json、视频生成/图生视频/2003503610359103489.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/数字人视频+BerniniS2V+Index图生视频_2084101037882957826.json、视频生成/图生视频/Bernini S2V高动态数字人V2_2075633285170032642.json、视频生成/图生视频/Bernini V2_音视频_2075860093270323201.json、视频生成/图生视频/BerniniS2v+IndexTTS_2075534910647005186.json、视频生成/图生视频/BerniniS2v+IndexTTS数字人_2076643931248488450.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：17
 - **可信度**：强结论
-- **平均知识覆盖**：42%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `INTConstant`
+- `KSamplerAdvanced`
 - `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `ReplaceVideoLatentFrames`
-- `SetNode`
-- `TrimAudioDuration`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PrimitiveStringMultiline`
+- `RIFEInterpolation`
+- `SoundFlow_GetLength`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 16/17 个有
-- `Wav2VecModelLoader` —— 16/17 个有
-- `INTConstant` —— 15/17 个有
-- `WanVideoTorchCompileSettings` —— 15/17 个有
-- `ImageResizeKJv2` —— 14/17 个有
-- `LoadImage` —— 14/17 个有
-- `DownloadAndLoadWav2VecModel` —— 9/17 个有
-- `EmptyLatentImage` —— 3/17 个有
-- `GetLatentRangeFromBatch` —— 3/17 个有
-- `Int` —— 3/17 个有
-- `PreviewAudio` —— 3/17 个有
-- `Text` —— 2/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/17 个有
-- `Float` —— 1/17 个有
-- `IndexTTS2Run` —— 1/17 个有
+- `BerniniS2VConditioning` —— 16/17 个有
+- `TrimAudioDuration` —— 16/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 13/17 个有
+- `AudioConcat` —— 11/17 个有
+- `easy cleanGpuUsed` —— 7/17 个有
+- `IndexTTS2Run` —— 6/17 个有
+- `PreviewAudio` —— 6/17 个有
+- `RunningHub Deepcleaner` —— 4/17 个有
+- `Text` —— 4/17 个有
+- `BerniniS2VConditioningV2` —— 2/17 个有
+- `Float` —— 2/17 个有
+- `PrimitiveFloat` —— 2/17 个有
+- `FlashVSRNode` —— 1/17 个有
 - `Label (rgthree)` —— 1/17 个有
-- `LoadImageFromPath` —— 1/17 个有
-- `MathExpression|pysssss` —— 1/17 个有
-- `MemoryCleaner` —— 1/17 个有
-- `MultiLinePromptIndex` —— 1/17 个有
-- `PrimitiveFloat` —— 1/17 个有
-- `RHHiddenNodes` —— 1/17 个有
-- `SaveAudioMP3` —— 1/17 个有
-- `easy forLoopEnd` —— 1/17 个有
-- `easy forLoopStart` —— 1/17 个有
+- `SaveImage` —— 1/17 个有
+- `Sleep` —— 1/17 个有
+- `easy clearCacheAll` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 采样步数 | fixed | - | 17 | 88% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 17 | 100% |
+| 采样算法 | 1 | 1 - 1 | 17 | 100% |
+| 调度器 | dpmpp_2m_sde | - | 17 | 100% |
+| 重绘幅度 | sgm_uniform | - | 17 | 100% |
 
 ## 常见问题
 
@@ -88,5 +78,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，17 个样本，一致性 88%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，17 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m_sde，17 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，17 个样本，一致性 100%

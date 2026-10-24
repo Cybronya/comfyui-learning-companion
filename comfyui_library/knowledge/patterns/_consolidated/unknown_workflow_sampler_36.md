@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_sampler_36
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6285
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Translator, RunningHub ICCustom Loader, RunningHub ICCustom Sampler, SaveImage, easy imageRemBg]
+frequency: 4
+level: moderate
+coverage: 0.78925
+common_nodes: [LoadImage, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, RunningHub ICCustom Loader, easy imageRemBg, RunningHub ICCustom Sampler]
-members: [图片生成/文生图/1963484973771870210.json, 图片生成/文生图/IC Custom万物迁移_2073390352022728706.json]
+missing: []
+members: [图片生成/图生图/SenseNova U1-图像编辑-商汤-日日新_2091321728873099266.json, 图片生成/图生图/SenseNova 单图编辑_2053113135225163778.json, 图片生成/文生图/商汤SenseNova-U1_2052931963757051905.json, 图片生成/文生图/商汤SenseNova-U1_2056611909402714114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_36
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1963484973771870210.json、图片生成/文生图/IC Custom万物迁移_2073390352022728706.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SenseNova U1-图像编辑-商汤-日日新_2091321728873099266.json、图片生成/图生图/SenseNova 单图编辑_2053113135225163778.json、图片生成/文生图/商汤SenseNova-U1_2052931963757051905.json、图片生成/文生图/商汤SenseNova-U1_2056611909402714114.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Translator`
-- `RunningHub ICCustom Loader`
-- `RunningHub ICCustom Sampler`
 - `SaveImage`
-- `easy imageRemBg`
+- `SenseNova_SM_Model`
+- `SenseNova_SM_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -45,5 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、RunningHub ICCustom Loader、easy imageRemBg、RunningHub ICCustom Sampler
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

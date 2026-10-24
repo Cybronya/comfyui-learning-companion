@@ -1,77 +1,51 @@
 ---
 name: unknown_workflow_video_sampler_clip_93
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.711833
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.940571
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2009554904033009666.json, 视频生成/图生视频/2009218877204471809.json, 视频生成/图生视频/2009236735267442690.json, 视频生成/图生视频/2012440624145899522.json, 视频生成/图生视频/2009128874055045121.json, 视频生成/图生视频/2009631227556405249.json]
+members: [视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json, 视频生成/图生视频/压扁万物=艾橘溪_1899415401065828354.json, 视频生成/图生视频/变胖飞走+通义万相=艾橘溪_1900846163619389442.json, 视频生成/图生视频/捏捏乐+通义万相=艾橘溪_1900825368478261250.json, 视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json, 视频生成/图生视频/通义万相之图片捏捏乐_1940715917842214913.json, 视频生成/图生视频/🦖wan2.1 变玩偶捏捏_1925461590995292161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_93
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2009554904033009666.json、视频生成/图生视频/2009218877204471809.json、视频生成/图生视频/2009236735267442690.json、视频生成/图生视频/2012440624145899522.json、视频生成/图生视频/2009128874055045121.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json、视频生成/图生视频/压扁万物=艾橘溪_1899415401065828354.json、视频生成/图生视频/变胖飞走+通义万相=艾橘溪_1900846163619389442.json、视频生成/图生视频/捏捏乐+通义万相=艾橘溪_1900825368478261250.json、视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `CR Prompt Text` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `JWInteger` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `Int` —— 2/6 个有
-- `RH_LLMAPI_Pro_Node` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `AudioCrop` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LayerMask: MaskPreview` —— 1/6 个有
-- `RH_GetAudioDuration` —— 1/6 个有
-- `Textbox` —— 1/6 个有
-- `VRAMReserver` —— 1/6 个有
-- `easy float` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 6/7 个有
+- `WanVideoLoraSelect` —— 6/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Image Batch` —— 1/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `Note _O` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `WanVideoTorchCompileSettings` —— 1/7 个有
 
 ## 典型参数
 

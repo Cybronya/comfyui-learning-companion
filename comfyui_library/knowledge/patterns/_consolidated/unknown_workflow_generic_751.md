@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_751
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.732
-common_nodes: [JanusImageGeneration, JanusImageUnderstanding, JanusModelLoader, LoadImage, PreviewImage, SaveImage, ShowText|pysssss]
+frequency: 4
+level: moderate
+coverage: 0.857
+common_nodes: [LoadImage, RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/1930262386970673154.json, 图片生成/文生图/DeepSeek  Janus-Pro生图与反推_1884522183304138753.json]
+members: [视频生成/图生视频/Happyhorse  文生视频+参考图生视频二合一_2050787317543124993.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048930844718407682.json, 视频生成/图生视频/Happyhorse1.0 图生视频_2048761610067517441.json, 视频生成/文生视频/Happyhorse1.0 文生视频_2048769437599277058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_751
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1930262386970673154.json、图片生成/文生图/DeepSeek  Janus-Pro生图与反推_1884522183304138753.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Happyhorse  文生视频+参考图生视频二合一_2050787317543124993.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048930844718407682.json、视频生成/图生视频/Happyhorse1.0 图生视频_2048761610067517441.json、视频生成/文生视频/Happyhorse1.0 文生视频_2048769437599277058.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JanusImageGeneration`
-- `JanusImageUnderstanding`
-- `JanusModelLoader`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `ShowText|pysssss`
+- `RH_AlibabaHappyhorse10TextToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_AlibabaHappyhorse10ImageToVideo` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_AlibabaHappyhorse10ReferenceToVideo` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

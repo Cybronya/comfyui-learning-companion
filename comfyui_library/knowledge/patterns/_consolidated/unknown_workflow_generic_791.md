@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_791
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [RH_RhartImageG25FlareTextToImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.839
+common_nodes: [HeartMuLa_Transcribe, LoadAudio, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-文生图_2101522725914365954.json, 图片生成/文生图/全能图片G2.5（经济版-文生图）_2097685773494603778.json]
+members: [音频生成/音频生成/HeartMuLa歌曲反推_2014171301337899010.json, 音频生成/音频生成/HeartMuLa音频歌词提取_2013499135474802689.json, 音频生成/音频生成/HeartMuLa音频歌词提取_2014714965810221057.json, 音频生成/音频生成/HeartMuLa音频歌词提取_2016593802831601666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_791
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5 Flare-经济版-文生图_2101522725914365954.json、图片生成/文生图/全能图片G2.5（经济版-文生图）_2097685773494603778.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa歌曲反推_2014171301337899010.json、音频生成/音频生成/HeartMuLa音频歌词提取_2013499135474802689.json、音频生成/音频生成/HeartMuLa音频歌词提取_2014714965810221057.json、音频生成/音频生成/HeartMuLa音频歌词提取_2016593802831601666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_RhartImageG25FlareTextToImage`
+全部 4 个 workflow 都包含：
+- `HeartMuLa_Transcribe`
+- `LoadAudio`
+- `LoadImage`
 - `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/2 个有
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
@@ -39,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

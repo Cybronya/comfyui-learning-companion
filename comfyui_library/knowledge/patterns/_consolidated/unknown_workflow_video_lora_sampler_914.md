@@ -3,77 +3,82 @@ name: unknown_workflow_video_lora_sampler_914
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8865
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImageBatchMulti, ImageResizeKJ, JjkText, KSampler, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, PreviewAny, ProcessString, RHHiddenNodes, SaveImage, ShellAgentPluginOutputText, Text Concatenate, Text Multiline, TextListSelelct, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy promptLine, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.88
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, Float, GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadAudio, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SaveAudio, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+problems: []
 missing: []
-members: [视频生成/图生视频/2019480742165749762.json, 视频生成/文生视频/真人视频短剧电影制作_2013977772892360705.json]
+members: [视频生成/文生视频/(Pro Max版)完爆OVI文生视频带配音数字人无限时长工作流--48G版_1975469825285820418.json, 视频生成/文生视频/(Pro高质量)跨模态仿OVI无限时长文生视频含配音数字人工作流V1（支持中文）_1975180560664498177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_914
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2019480742165749762.json、视频生成/文生视频/真人视频短剧电影制作_2013977772892360705.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/(Pro Max版)完爆OVI文生视频带配音数字人无限时长工作流--48G版_1975469825285820418.json、视频生成/文生视频/(Pro高质量)跨模态仿OVI无限时长文生视频含配音数字人工作流V1（支持中文）_1975180560664498177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `ImageBatchMulti`
-- `ImageResizeKJ`
-- `JjkText`
-- `KSampler`
-- `KSamplerAdvanced`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadWav2VecModel`
+- `Float`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LayerUtility: PurgeVRAM V2`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ModelSamplingSD3`
+- `LoadAudio`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `PreviewAny`
-- `ProcessString`
-- `RHHiddenNodes`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `Text Concatenate`
-- `Text Multiline`
-- `TextListSelelct`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SaveAudio`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy promptLine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageFromBatch+` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 40% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | euler | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
-- 调度器 最常用 euler，2 个样本，一致性 50%
-- 高发问题（10/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

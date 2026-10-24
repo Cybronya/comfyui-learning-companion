@@ -1,51 +1,59 @@
 ---
 name: unknown_workflow_sampler_clip_unet_128
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.9102
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.956111
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX2 Klein 文生图工作流_2091474310002200578.json, 图片生成/文生图/FLUX2-KLEIN 4B快速文生图_2012166692574601217.json, 图片生成/文生图/FLUX2-KLEIN+lora+快速生图_2012490189339365377.json, 图片生成/文生图/FLUX2-KLEIN-文生图_2086265051199135746.json, 图片生成/文生图/扎染-小帽子lora测l试_2062536155131895810.json]
+members: [图片生成/图生图/效果图增强细节，软装色彩分析_2071601421786636290.json, 图片生成/图生图/效果图洗图_增强细节_真实感_2102679806793043970.json, 图片生成/图生图/效果图洗图_增强细节_真实感_2103373723498795010.json, 图片生成/图生图/效果图洗图_增强细节_真实感_零偏移_2062401252247564290.json, 图片生成/图生图/文字清除工作流333333333_2071422706821713921.json, 图片生成/图生图/漫画转欧美美女（解禁模型）：Flux2 Klein 9B_2055197694913720322.json, 图片生成/图生图/电商产品精修快速版_2044583021092802562.json, 图片生成/图生图/电商产品精修美化细节高清放大_2069464540449959937.json, 图片生成/图生图/老孙AI 产品精修_2090283355492413441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_128
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/FLUX2 Klein 文生图工作流_2091474310002200578.json、图片生成/文生图/FLUX2-KLEIN 4B快速文生图_2012166692574601217.json、图片生成/文生图/FLUX2-KLEIN+lora+快速生图_2012490189339365377.json、图片生成/文生图/FLUX2-KLEIN-文生图_2086265051199135746.json、图片生成/文生图/扎染-小帽子lora测l试_2062536155131895810.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/效果图增强细节，软装色彩分析_2071601421786636290.json、图片生成/图生图/效果图洗图_增强细节_真实感_2102679806793043970.json、图片生成/图生图/效果图洗图_增强细节_真实感_2103373723498795010.json、图片生成/图生图/效果图洗图_增强细节_真实感_零偏移_2062401252247564290.json、图片生成/图生图/文字清除工作流333333333_2071422706821713921.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `PlaySound|pysssss` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `FluxResolutionNode` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
+- `GetImageSize` —— 5/9 个有
+- `LoraLoaderModelOnly` —— 5/9 个有
+- `ConstrainImage|pysssss` —— 4/9 个有
+- `LoraLoaderBypassModelOnly` —— 4/9 个有
+- `ImageUpscaleWithModel` —— 2/9 个有
+- `UpscaleModelLoader` —— 2/9 个有
+- `Load Image From Url (mtb)` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
+- `easy imageColorMatch` —— 1/9 个有
 
 ## 典型参数
 

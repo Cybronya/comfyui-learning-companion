@@ -1,33 +1,30 @@
 ---
 name: unknown_workflow_controlnet_video_lora_6
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.726364
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.8073
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2026286261522141186.json, 视频生成/图生视频/2002263013321261058.json, 视频生成/图生视频/2002262953242030082.json, 视频生成/图生视频/2000571970808934401.json, 视频生成/图生视频/2019605218685624321.json, 视频生成/图生视频/2019643173101903873.json, 视频生成/图生视频/2036758720331386881.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，单人 动物跳舞 竖屏模式_2048613644405055490.json, 视频生成/图生视频/SCAIL大模型：一键生成单人 动物跳舞 动作迁移 视频竖屏模式版_2082798681614544897.json, 视频生成/图生视频/2068653827720572930.json, 视频生成/图生视频/2016000836404514818.json]
+members: [图片生成/图生图/SCALL动作迁移 【最新最强】_2001279614733385729.json, 视频生成/图生视频/(卡通-脸部识别)Scail双人动作迁移(720P高质量版)V2_2001008301930315778.json, 视频生成/图生视频/(脸部识别版)Scail多人动作迁移(720P高质量版)V2_2001007812647976961.json, 视频生成/图生视频/(脸部识别版)Scail多人动作迁移(720P高质量版)V2_2001114999428968450.json, 视频生成/图生视频/(（自用）-脸部识别版)Scail双人动作迁移(720P高质量版)V3_2000985576838922241.json, 视频生成/图生视频/02.16gSCAIL多人_2002262972904947714.json, 视频生成/图生视频/044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_2000835179973406721.json, 视频生成/图生视频/ScaiL单_双人动作迁移-舞蹈、口播、带货-数字人_2003735062367641602.json, 视频生成/图生视频/ScaiL单_双人动作迁移-舞蹈、口播、带货-数字人_2004016053883682817.json, 视频生成/图生视频/Scail动作迁移_2001603322555559938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_6
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2026286261522141186.json、视频生成/图生视频/2002263013321261058.json、视频生成/图生视频/2002262953242030082.json、视频生成/图生视频/2000571970808934401.json、视频生成/图生视频/2019605218685624321.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/SCALL动作迁移 【最新最强】_2001279614733385729.json、视频生成/图生视频/(卡通-脸部识别)Scail双人动作迁移(720P高质量版)V2_2001008301930315778.json、视频生成/图生视频/(脸部识别版)Scail多人动作迁移(720P高质量版)V2_2001007812647976961.json、视频生成/图生视频/(脸部识别版)Scail多人动作迁移(720P高质量版)V2_2001114999428968450.json、视频生成/图生视频/(（自用）-脸部识别版)Scail双人动作迁移(720P高质量版)V3_2000985576838922241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `DownloadAndLoadNLFModel`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
@@ -35,8 +32,6 @@ source: knowledge_consolidation
 - `OnnxDetectionModelLoader`
 - `PoseDetectionVitPoseToDWPose`
 - `RenderNLFPoses`
-- `SetNode`
-- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAddSCAILPoseEmbeds`
@@ -60,35 +55,39 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float to Int` —— 9/11 个有
-- `PrimitiveFloat` —— 9/11 个有
-- `PrimitiveInt` —— 9/11 个有
-- `easy cleanGpuUsed` —— 9/11 个有
-- `JjkText` —— 4/11 个有
-- `FloatConstant` —— 2/11 个有
-- `ImageConcatMulti` —— 2/11 个有
-- `PreviewImage` —— 2/11 个有
-- `WanVideoTorchCompileSettings` —— 2/11 个有
-- `AudioToPath` —— 1/11 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 1/11 个有
-- `DWPreprocessor` —— 1/11 个有
-- `GetImageSizeRatio` —— 1/11 个有
-- `INPAINT_InpaintWithModel` —— 1/11 个有
-- `INPAINT_LoadInpaintModel` —— 1/11 个有
-- `ImageFromBatch+` —— 1/11 个有
-- `ImagePadForOutpaint` —— 1/11 个有
-- `ImageResize+` —— 1/11 个有
-- `ImageToMask` —— 1/11 个有
-- `Int` —— 1/11 个有
-- `Mask Invert` —— 1/11 个有
-- `MaskToImage` —— 1/11 个有
-- `OverlayVideos` —— 1/11 个有
-- `PrimitiveBoolean` —— 1/11 个有
-- `SaveVideo` —— 1/11 个有
-- `SolidMask` —— 1/11 个有
-- `Text` —— 1/11 个有
-- `TextInput_` —— 1/11 个有
-- `VideoToPath` —— 1/11 个有
+- `GetImageSizeAndCount` —— 9/10 个有
+- `ImageConcatMulti` —— 8/10 个有
+- `CR Prompt Text` —— 7/10 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 7/10 个有
+- `DWPreprocessor` —— 7/10 个有
+- `JWInteger` —— 7/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `MathExpression|pysssss` —— 7/10 个有
+- `RunningHub Deepcleaner` —— 7/10 个有
+- `PDIMAGE_LongerSize` —— 5/10 个有
+- `GetNode` —— 4/10 个有
+- `SetNode` —— 4/10 个有
+- `SimpleMath+` —— 4/10 个有
+- `FloatConstant` —— 2/10 个有
+- `Int` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `WanVideoTorchCompileSettings` —— 2/10 个有
+- `CM_IntToFloat` —— 1/10 个有
+- `CR Text` —— 1/10 个有
+- `DF_Int_to_Float` —— 1/10 个有
+- `DuckHideNode` —— 1/10 个有
+- `Fast Bypasser (rgthree)` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `ImageScaleDownBy` —— 1/10 个有
+- `ImpactSwitch` —— 1/10 个有
+- `Inversed Switch` —— 1/10 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/10 个有
+- `TT_img_enc` —— 1/10 个有
+- `TT_img_enc_v2` —— 1/10 个有
+- `VHS_VideoInfo` —— 1/10 个有
+- `easy imageSize` —— 1/10 个有
+- `easy int` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

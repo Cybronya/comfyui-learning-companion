@@ -1,69 +1,67 @@
 ---
 name: unknown_workflow_lora_sampler_clip_125
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, Simple String, String Literal, Text Concatenate, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.83525
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ConstrainImage|pysssss, EmptySD3LatentImage, FluxGuidance, GetImageSize+, ImageConcatFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StyleModelApply, StyleModelLoader, VAEDecode, easy imageSplitGrid, easy imagesSplitImage]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-image 胶片感_2071411620244447234.json, 图片生成/文生图/Zimage 基础流_2064620356811448321.json, 图片生成/文生图/Zimage 胶片工作流_2060357293669179394.json]
+members: [图片生成/图生图/FLUX电商多视角一致性_1911786902012526593.json, 图片生成/图生图/FLUX电商多视角一致性（自动拆分）_1916392178686562306.json, 图片生成/图生图/多视角一致性_1905447368635125761.json, 图片生成/图生图/小红书人物一致性9宫格文生图工作流_1916514021267144705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_125
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image 胶片感_2071411620244447234.json、图片生成/文生图/Zimage 基础流_2064620356811448321.json、图片生成/文生图/Zimage 胶片工作流_2060357293669179394.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX电商多视角一致性_1911786902012526593.json、图片生成/图生图/FLUX电商多视角一致性（自动拆分）_1916392178686562306.json、图片生成/图生图/多视角一致性_1905447368635125761.json、图片生成/图生图/小红书人物一致性9宫格文生图工作流_1916514021267144705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ConstrainImage|pysssss`
 - `EmptySD3LatentImage`
-- `KSampler`
+- `FluxGuidance`
+- `GetImageSize+`
+- `ImageConcatFromBatch`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Simple String`
-- `String Literal`
-- `Text Concatenate`
-- `UNETLoader`
+- `ShowText|pysssss`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `VAEDecode`
-- `VAELoader`
+- `easy imageSplitGrid`
+- `easy imagesSplitImage`
 
 **可变部分**（部分 workflow 才有）：
-- `BetterFilmGrain` —— 2/3 个有
-- `ImageSharpen` —— 2/3 个有
-- `LayerColor: ColorBalance` —— 2/3 个有
-- `LayerUtility: ImageBlendAdvance` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
+- `DownloadAndLoadFlorence2Model` —— 3/4 个有
+- `Florence2Run` —— 3/4 个有
+- `SDVN Joy Caption` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 9 | 9 - 9 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | sgm_uniform | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 9 - 9，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

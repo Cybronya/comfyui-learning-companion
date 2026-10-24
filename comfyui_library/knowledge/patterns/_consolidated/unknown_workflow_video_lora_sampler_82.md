@@ -3,80 +3,66 @@ name: unknown_workflow_video_lora_sampler_82
 type: Unknown Workflow
 frequency: 17
 level: moderate
-coverage: 0.67
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.918412
+common_nodes: [CLIPVisionLoader, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1983091241221038082.json, 视频生成/图生视频/2018250280189562881.json, 视频生成/图生视频/1970522090514358273.json, 视频生成/图生视频/1970493244759044098.json, 视频生成/图生视频/2038207099926224898.json, 视频生成/图生视频/2081656460194443265.json, 视频生成/图生视频/2082449087105953793.json, 视频生成/图生视频/2001911262554537986.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移支持10s以上_2101868247393062913.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_1988497741976395777.json, 视频生成/图生视频/2048642449622441986.json, 视频生成/图生视频/2059815304972292098.json, 视频生成/图生视频/2064155930153021442.json, 视频生成/图生视频/2064600210499784705.json, 视频生成/图生视频/2065330125998219265.json, 视频生成/图生视频/2068858062965927938.json, 视频生成/图生视频/2001967162547924993.json]
+members: [视频生成/图生视频/AniWan+Fastwan+LightX64+Radial+Free最强万相wan2.1图生视频_1945425557527961601.json, 视频生成/图生视频/AniWan专业动漫超高动态图生视频加速版V1_1944770056771260417.json, 视频生成/图生视频/EasyCache+LightX2v+AniWan超高动态图生视频加速版V1_1946230889756913665.json, 视频生成/图生视频/FastWan+Aniwan+LightX2V高质量图生视频V1_1949398182790365185.json, 视频生成/图生视频/Fusionx+lightx2v图生视频_1941647575110074369.json, 视频生成/图生视频/KJ版WAN2.1 GGUF Q8 LightX2V加速图生视频高质量版V1_1942759645448744961.json, 视频生成/图生视频/LightX2v Rank64极限质量+AniWan超高动态图生视频加速版V1_1945356910293917698.json, 视频生成/图生视频/MTV Crafter+FusionX 3D运动建模动态图生视频V1_1958913367148802050.json, 视频生成/图生视频/MTV Crafter+FusionX 3D运动建模动态图生视频V1_1960985740777852930.json, 视频生成/图生视频/MoviiGen+Free+LightX64+AniWan+最强万相wan2.1图生视频_1945462640925921281.json, 视频生成/图生视频/Moviigen & lightx2v 电影级图生视频｜高清4K_1936033018391990273.json, 视频生成/图生视频/RadialAttn加速模式图生视频范例工作流V2_1946266555401560066.json, 视频生成/图生视频/ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相wan2.1工作流_1944601426138157058.json, 视频生成/图生视频/【b站开源】ani全能视频S + fusionx 图生视频｜动漫友好_1946050505720164354.json, 视频生成/图生视频/动态表情包_原图控制增强版_2008939674751995905.json, 视频生成/图生视频/微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_1946428011036205057.json, 视频生成/图生视频/电影级图生视频moviigen+lightx2v+自动扩词+运镜万相win2.1_1935149925716172801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_82
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/1983091241221038082.json、视频生成/图生视频/2018250280189562881.json、视频生成/图生视频/1970522090514358273.json、视频生成/图生视频/1970493244759044098.json、视频生成/图生视频/2038207099926224898.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/AniWan+Fastwan+LightX64+Radial+Free最强万相wan2.1图生视频_1945425557527961601.json、视频生成/图生视频/AniWan专业动漫超高动态图生视频加速版V1_1944770056771260417.json、视频生成/图生视频/EasyCache+LightX2v+AniWan超高动态图生视频加速版V1_1946230889756913665.json、视频生成/图生视频/FastWan+Aniwan+LightX2V高质量图生视频V1_1949398182790365185.json、视频生成/图生视频/Fusionx+lightx2v图生视频_1941647575110074369.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 16/17 个有
-- `JWInteger` —— 16/17 个有
-- `SetNode` —— 16/17 个有
-- `easy cleanGpuUsed` —— 16/17 个有
-- `BlockifyMask` —— 14/17 个有
-- `DrawMaskOnImage` —— 14/17 个有
-- `GrowMask` —— 14/17 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 14/17 个有
-- `Int` —— 13/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/17 个有
-- `CR Text` —— 11/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 11/17 个有
-- `MathExpression|pysssss` —— 11/17 个有
-- `PreviewImage` —— 11/17 个有
-- `LoadSAM3Model` —— 2/17 个有
-- `MaskListToMaskBatch` —— 2/17 个有
-- `MaskToImage` —— 2/17 个有
-- `RH_Translator` —— 2/17 个有
-- `SAM3Segmentation` —— 2/17 个有
-- `SimpleMath+` —— 2/17 个有
-- `Text` —— 2/17 个有
-- `easy imageBatchToImageList` —— 2/17 个有
-- `easy imageListToImageBatch` —— 2/17 个有
-- `easy sam3ModelLoader` —— 2/17 个有
-- `easy sam3VideoSegmentation` —— 2/17 个有
-- `CR Prompt Text` —— 1/17 个有
-- `EmptyImage` —— 1/17 个有
-- `FirstFrameSelector` —— 1/17 个有
-- `SaveImage` —— 1/17 个有
+- `LayerUtility: PurgeVRAM V2` —— 16/17 个有
+- `WanVideoExperimentalArgs` —— 15/17 个有
+- `WanVideoSLG` —— 15/17 个有
+- `WanVideoFreeInitArgs` —— 12/17 个有
+- `WanVideoTextEncode` —— 9/17 个有
+- `WanVideoVRAMManagement` —— 9/17 个有
+- `RH_OneShot_Prompter` —— 8/17 个有
+- `SimpleMath+` —— 8/17 个有
+- `WanVideoApplyNAG` —— 8/17 个有
+- `WanVideoTextEncodeSingle` —— 8/17 个有
+- `WanVideoEasyCache` —— 6/17 个有
+- `WanVideoSetRadialAttention` —— 4/17 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/17 个有
+- `GIMMVFI_interpolate` —— 2/17 个有
+- `WanVideoTeaCache` —— 2/17 个有
+- `WanVideoTorchCompileSettings` —— 2/17 个有
+- `BackgroundEraseNetwork` —— 1/17 个有
+- `ImageConcanate` —— 1/17 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/17 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/17 个有
+- `PreviewImage` —— 1/17 个有
+- `WanVideoMagCache` —— 1/17 个有
 
 ## 典型参数
 

@@ -7,13 +7,13 @@ coverage: 0.861
 common_nodes: [CLIPLoader, CLIPTextEncode, GetImageSize, GrowMaskWithBlur, ImageCompositeMasked, ImageConcanate, ImageFromBatch+, InspyrenetRembg, KSamplerAdvanced, LayerMask: SAM2VideoUltra, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskToImage, ModelSamplingSD3, PDIMAGE_LongerSize, PathchSageAttentionKJ, PreviewImage, RH_Captioner, RebatchImages, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1957475437662367746.json, 视频生成/图生视频/1958077284689334273.json, 视频生成/图生视频/1960314251325992961.json]
+members: [视频生成/图生视频/Wan2.2 Vace主体替换视频生视频加速版V1_1957475437662367746.json, 视频生成/图生视频/wan2.2图片跳舞视频转绘视频主体替换（Vace+自动提示词）_1958077284689334273.json, 视频生成/图生视频/主体替换视频_1960314251325992961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_641
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1957475437662367746.json、视频生成/图生视频/1958077284689334273.json、视频生成/图生视频/1960314251325992961.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Vace主体替换视频生视频加速版V1_1957475437662367746.json、视频生成/图生视频/wan2.2图片跳舞视频转绘视频主体替换（Vace+自动提示词）_1958077284689334273.json、视频生成/图生视频/主体替换视频_1960314251325992961.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

@@ -3,47 +3,33 @@ name: unknown_workflow_video_32
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.825
-common_nodes: [CreateShapeMask, DownloadAndLoadLivePortraitModels, GetImageSizeAndCount, GrowMaskWithBlur, LivePortraitComposite, LivePortraitCropper, LivePortraitProcess, LoadImage, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1901488965541863425.json, 视频生成/图生视频/1901493735421812738.json, 视频生成/图生视频/1952985639379734530.json, 视频生成/图生视频/1906528268223172609.json]
+members: [视频生成/图生视频/FramePack 图生视频，时间可无限延长_1913032867973398529.json, 视频生成/图生视频/framepack 首尾帧视频生成_1915028070607089666.json, 视频生成/图生视频/【加强版】FramePack图生视频+插帧_1913880300890587137.json, 视频生成/图生视频/图生视频_1919307272097300482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_32
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1901488965541863425.json、视频生成/图生视频/1901493735421812738.json、视频生成/图生视频/1952985639379734530.json、视频生成/图生视频/1906528268223172609.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/FramePack 图生视频，时间可无限延长_1913032867973398529.json、视频生成/图生视频/framepack 首尾帧视频生成_1915028070607089666.json、视频生成/图生视频/【加强版】FramePack图生视频+插帧_1913880300890587137.json、视频生成/图生视频/图生视频_1919307272097300482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CreateShapeMask`
-- `DownloadAndLoadLivePortraitModels`
-- `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
-- `LivePortraitComposite`
-- `LivePortraitCropper`
-- `LivePortraitProcess`
 - `LoadImage`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 3/4 个有
-- `LivePortraitLoadMediaPipeCropper` —— 3/4 个有
-- `LivePortraitRetargeting` —— 3/4 个有
-- `MaskPreview+` —— 3/4 个有
-- `Display Int (rgthree)` —— 2/4 个有
-- `VHS_VideoInfo` —— 2/4 个有
-- `LivePortraitLoadCropper` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `Primitive string [Crystools]` —— 1/4 个有
 
 ## 典型参数
 

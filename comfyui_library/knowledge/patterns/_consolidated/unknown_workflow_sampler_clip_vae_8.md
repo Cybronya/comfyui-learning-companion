@@ -1,74 +1,81 @@
 ---
 name: unknown_workflow_sampler_clip_vae_8
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.822917
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, EmptyFlux2LatentImage, Flux2Scheduler, INTConstant, JWString, KSamplerSelect, LoadAudio, PreviewAny, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveAudio, SaveImage, ScriptJSONParser, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSDefineSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, VAEDecode, VAEEncode, parse_json_node]
+frequency: 14
+level: weak
+coverage: 0.817786
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxResolutionNode, ImageResize+, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2017634082175324161.json, 图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2018154162223058946.json, 图片生成/文生图/【100%全自动版】有声小说+分镜图一条龙直出 林耀_2017439134444429313.json, 图片生成/文生图/分镜头图片生成+AI漫剧+小说+短剧+自动配音_2018288054846361602.json, 图片生成/文生图/短剧自动配音+分镜_2018625997012213762.json, 视频生成/图生视频/2041960740780777474.json, 视频生成/文生视频/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2070634252647096321.json, 视频生成/文生视频/短剧+小说＋自动配音ai生成动画_2018483381134172161.json, 音频生成/音频生成/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2017966660707164161.json, 音频生成/音频生成/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2043573314668466178.json, 音频生成/音频生成/【真全自动版】全自动有声小说+分镜图一条龙_2016070253796659201.json, 音频生成/音频生成/原版解说类 -短剧自动配音+分镜_2049180878814846977.json]
+members: [图片生成/图生图/Kontext 开源模型+ Nunchaku FLUX 加速工作流_1939912219494621186.json, 图片生成/图生图/Kontext+双图-万能改图_z_2014654807981694978.json, 图片生成/图生图/Kontext-一键换姿势（人物保真）_1951246872604274689.json, 图片生成/图生图/kontext Dev 模特产品替换_1938883953208315906.json, 图片生成/图生图/【IP形象一致性】Nun-Kontext-Dev（人物篇）_1941401692749643778.json, 图片生成/图生图/【万物合影】Nun-Kontext-Dev_1942272809550942209.json, 图片生成/图生图/【产品一致性】Nun-Kontext-Dev（静物篇）_1942155136640905218.json, 图片生成/图生图/【单图编辑】Flux-Kontext-Dev（基础流）_1938510905971769345.json, 图片生成/图生图/【图像去水印】Flux-Kontext-Dev_1943231517701128194.json, 图片生成/图生图/【灵魂画手风格】Nun-Kontext-Dev（加速版）_1939972321711157249.json, 图片生成/图生图/【超全风格转绘】Nun-Kontext-Dev（加更）_1940331067989753857.json, 图片生成/图生图/一键去水印工作流_1948188735107137537.json, 图片生成/图生图/照相馆专用-老照片高清修复上色工作流_1948187584666185729.json, 图片生成/文生图/【灵魂画手风格】抖音火爆视频专用（加速版）_2024382098097836034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2017634082175324161.json、图片生成/文生图/AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音_2018154162223058946.json、图片生成/文生图/【100%全自动版】有声小说+分镜图一条龙直出 林耀_2017439134444429313.json、图片生成/文生图/分镜头图片生成+AI漫剧+小说+短剧+自动配音_2018288054846361602.json、图片生成/文生图/短剧自动配音+分镜_2018625997012213762.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Kontext 开源模型+ Nunchaku FLUX 加速工作流_1939912219494621186.json、图片生成/图生图/Kontext+双图-万能改图_z_2014654807981694978.json、图片生成/图生图/Kontext-一键换姿势（人物保真）_1951246872604274689.json、图片生成/图生图/kontext Dev 模特产品替换_1938883953208315906.json、图片生成/图生图/【IP形象一致性】Nun-Kontext-Dev（人物篇）_1941401692749643778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
+- **样本数**：14
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CFGGuider`
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `INTConstant`
-- `JWString`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `FluxResolutionNode`
+- `ImageResize+`
 - `KSamplerSelect`
-- `LoadAudio`
-- `PreviewAny`
-- `PreviewImage`
+- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveAudio`
 - `SaveImage`
-- `ScriptJSONParser`
-- `ShowText|pysssss`
-- `TDQwen3TTSBatchGenerateSpeaker`
-- `TDQwen3TTSDefineSpeaker`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSMultiDialog`
 - `VAEDecode`
 - `VAEEncode`
-- `parse_json_node`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 10/12 个有
-- `RHHiddenNodes` —— 10/12 个有
-- `WujiCleaner` —— 10/12 个有
-- `easy promptConcat` —— 10/12 个有
-- `CLIPLoader` —— 8/12 个有
-- `UNETLoader` —— 8/12 个有
-- `VAELoader` —— 8/12 个有
-- `BatchImageSelector` —— 6/12 个有
-- `CheckpointLoaderSimple` —— 4/12 个有
-- `WujiBatchImageSelector` —— 4/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `GetNode` —— 2/12 个有
-- `LayerUtility: BatchSelector` —— 2/12 个有
-- `RH_LLMAPI_Pro_Node` —— 2/12 个有
-- `SetNode` —— 2/12 个有
+- `ModelSamplingFlux` —— 13/14 个有
+- `MathExpression|pysssss` —— 12/14 个有
+- `PreviewImage` —— 12/14 个有
+- `Anything Everywhere` —— 11/14 个有
+- `CM_IntToBool` —— 11/14 个有
+- `CR Text` —— 11/14 个有
+- `ImpactConditionalBranch` —— 11/14 个有
+- `Int` —— 11/14 个有
+- `easy cleanGpuUsed` —— 11/14 个有
+- `Image Comparer (rgthree)` —— 10/14 个有
+- `NunchakuFluxDiTLoader` —— 10/14 个有
+- `RH_Translator` —— 10/14 个有
+- `easy showAnything` —— 10/14 个有
+- `RHHiddenNodes` —— 6/14 个有
+- `UNETLoader` —— 4/14 个有
+- `CR Text Concatenate` —— 2/14 个有
+- `ImageConcanate` —— 2/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/14 个有
+- `RMBG` —— 2/14 个有
+- `ShowText|pysssss` —— 2/14 个有
+- `ttN concat` —— 2/14 个有
+- `FluxKontextImageScale` —— 1/14 个有
+- `GetNode` —— 1/14 个有
+- `ImageStitch` —— 1/14 个有
+- `ImpactSwitch` —— 1/14 个有
+- `SetNode` —— 1/14 个有
+- `easy imageRemBg` —— 1/14 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 512 | 512 - 1024 | 14 | 66% |
+| 高度 | 512 | 512 - 1280 | 14 | 53% |
 
 ## 常见问题
 
@@ -76,4 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 512，观测区间 512 - 1024，14 个样本
+- 高度 中位数 512，观测区间 512 - 1280，14 个样本

@@ -3,43 +3,39 @@ name: unknown_workflow_video_upscale_7
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.464
-common_nodes: [DisplayText_Zho, GetNode, ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiplyNode, Primitive integer [Crystools], PrimitiveInt, RH_Captioner, RH_Translator, RIFE VFI, RunningHub_FramePack_F1, SetNode, Text, UpscaleModelLoader, VHS_VideoCombine, easy textSwitch]
+coverage: 0.769
+common_nodes: [Fast Groups Bypasser (rgthree), ImageUpscaleWithModel, ImpactInt, JjkText, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, RHBatchImages:, RIFE VFI, RunningHub_FramePack, UpscaleModelLoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1925752612090777601.json, 视频生成/文生视频/RunningHub专用节点 Framepack F1图生视频【高清放大+补帧】工作流V2优化版_1920492525130551297.json]
+members: [视频生成/图生视频/FramePack 图生长视频高效快速版｜放大高清版_1913810352075931649.json, 视频生成/图生视频/图生长视频高效快速版(FramePack+LTX提示词优化+放大插帧)_1913426661780484097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1925752612090777601.json、视频生成/文生视频/RunningHub专用节点 Framepack F1图生视频【高清放大+补帧】工作流V2优化版_1920492525130551297.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack 图生长视频高效快速版｜放大高清版_1913810352075931649.json、视频生成/图生视频/图生长视频高效快速版(FramePack+LTX提示词优化+放大插帧)_1913426661780484097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DisplayText_Zho`
-- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
 - `ImageUpscaleWithModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImpactInt`
+- `JjkText`
+- `LTXVPromptEnhancer`
+- `LTXVPromptEnhancerLoader`
 - `LoadImage`
-- `MultiplyNode`
-- `Primitive integer [Crystools]`
-- `PrimitiveInt`
-- `RH_Captioner`
-- `RH_Translator`
+- `RHBatchImages:`
 - `RIFE VFI`
-- `RunningHub_FramePack_F1`
-- `SetNode`
-- `Text`
+- `RunningHub_FramePack`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `easy textSwitch`
+- `easy showAnything`
 
 ## 典型参数
 

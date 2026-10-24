@@ -3,60 +3,72 @@ name: unknown_workflow_video_lora_sampler_771
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.977
-common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, CM_IntToFloat, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, Int, KSamplerSelect, List of strings [Crystools], LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3ChunkFeedForwardT8Advanced, MiniMaxH3HyperVAE2xLoaderEXPT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3OutputTrimT8, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, MiniMaxH3SigmaShift, MiniMaxH3VDNRuntimeAuditT8Advanced, ModelAttentionBackend, PrimitiveStringMultiline, RH_Screenwriter, ResolutionSelector, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner, WujiH3PromptEnhancer]
+coverage: 0.8745
+common_nodes: [AudioSeparation, Display Int (rgthree), HuMoEmbeds, ImageFromBatch, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, SimpleMath+, SoundFlow_GetLength, SoundFlow_TrimAudio, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader, WhisperModelLoader, easy imageRemBg, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成_2098794614286274562.json, 视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成_2098794614286274562.json]
+members: [视频生成/图生视频/RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分镜可无限延长_1968935101226704898.json, 音频生成/音频生成/Humo+Infinite talk音乐MV生成_1975845273735925761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_771
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成_2098794614286274562.json、视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成_2098794614286274562.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分镜可无限延长_1968935101226704898.json、音频生成/音频生成/Humo+Infinite talk音乐MV生成_1975845273735925761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `CM_IntToFloat`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `Int`
-- `KSamplerSelect`
-- `List of strings [Crystools]`
+- `AudioSeparation`
+- `Display Int (rgthree)`
+- `HuMoEmbeds`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3ChunkFeedForwardT8Advanced`
-- `MiniMaxH3HyperVAE2xLoaderEXPT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3OutputTrimT8`
-- `MiniMaxH3SemanticBridgeApplyT8`
-- `MiniMaxH3SemanticBridgeConfigT8`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxH3VDNRuntimeAuditT8Advanced`
-- `ModelAttentionBackend`
-- `PrimitiveStringMultiline`
-- `RH_Screenwriter`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WujiCleaner`
-- `WujiH3PromptEnhancer`
+- `WanVideoBlockSwap`
+- `WanVideoCombineEmbeds`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `Wav2VecModelLoader`
+- `WhisperModelLoader`
+- `easy imageRemBg`
+- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `Anything Everywhere` —— 1/2 个有
+- `Anything Everywhere3` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

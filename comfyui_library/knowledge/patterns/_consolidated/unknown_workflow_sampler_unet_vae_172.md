@@ -1,70 +1,57 @@
 ---
 name: unknown_workflow_sampler_unet_vae_172
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.69875
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 6
+level: strong
+coverage: 0.8305
+common_nodes: [DualCLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json, 视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json, 视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json, 视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json]
+members: [图片生成/图生图/【遇见AI】flex2-preview 控制pose，depth，canny_2053036057029033985.json, 图片生成/文生图/FLUX.1-Canny-dev 完整版工作流_1990952011577372674.json, 图片生成/文生图/Flux canny线条控制工作流_1965638484138577921.json, 图片生成/文生图/flux tool Canny、Depth工作流_1896762902793920513.json, 图片生成/文生图/flux_depth_lora工作流_1990967018591563778.json, 图片生成/文生图/flux模型canny细致线控制工作流_1988873413324312577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json、视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json、视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json、视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】flex2-preview 控制pose，depth，canny_2053036057029033985.json、图片生成/文生图/FLUX.1-Canny-dev 完整版工作流_1990952011577372674.json、图片生成/文生图/Flux canny线条控制工作流_1965638484138577921.json、图片生成/文生图/flux tool Canny、Depth工作流_1896762902793920513.json、图片生成/文生图/flux_depth_lora工作流_1990967018591563778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+全部 6 个 workflow 都包含：
+- `DualCLIPLoader`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `LoadAudio` —— 3/4 个有
-- `Any Switch (rgthree)` —— 2/4 个有
-- `CacheDiT_Model_Optimizer` —— 2/4 个有
-- `GetVideoComponents` —— 2/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `JjkText` —— 2/4 个有
-- `LoadVideo` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `MiniMaxH3SigmaShift` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `SolAttnPatch` —— 2/4 个有
+- `CLIPTextEncode` —— 5/6 个有
+- `InstructPixToPixConditioning` —— 5/6 个有
+- `FluxGuidance` —— 4/6 个有
+- `Canny` —— 3/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `AIO_Preprocessor` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `CLIPTextEncodeFlux` —— 1/6 个有
+- `Flex2Conditioner` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 28 | 6 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 83% |
+| 调度器 | normal | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -72,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 28，6 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 83%
+- 调度器 最常用 normal，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

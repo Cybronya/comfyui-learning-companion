@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_83
 type: Unknown Workflow
-frequency: 10
+frequency: 16
 level: moderate
-coverage: 0.9667
-common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.900563
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/音色克隆-v1_2094769389882142721.json, 数字人/数字人/音色设计_2094769410778165249.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json, 音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json, 音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json, 音频生成/音频生成/VoxCPM2 基础工作流_2042504143272681474.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054212924264206337.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054582646944092162.json, 音频生成/音频生成/VoxCPM2 语音克隆_2056949209022164994.json, 音频生成/音频生成/音色设计_2111054904671424513.json]
+members: [图片生成/图生图/ideogram4 九宫格分割_2069213501477965826.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2100863074872938498.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2101132059199754241.json, 图片生成/图生图/全能图片G image2图像编辑--单图模式_2070555523946213378.json, 图片生成/图生图/全能图片G image2图像编辑--双图模式_2076311809912565762.json, 图片生成/图生图/全能图片G-2.0-图像编辑-单图-低价版_2079275028687974401.json, 图片生成/图生图/全能图片全能图片G image2 三图模式_2083556731740835842.json, 图片生成/图生图/最全面-最真实-图像编辑-全能图片G2_2062369652814209026.json, 图片生成/图生图/最真实-最实用-单图编辑-全能图片G2-低价版_2064532714065317890.json, 图片生成/图生图/视频封面制作--全能图片G image2图像编辑基础流_2073605778501627905.json, 图片生成/图生图/贝家生图_2055282560334344193.json, 图片生成/图生图/软装搭配分析_2104741627804864514.json, 图片生成/文生图/x海报单图编辑全能图片G低耗_2054916840530423810.json, 图片生成/文生图/全能图片G image2人物道具融合_2071404338014150658.json, 图片生成/文生图/全能图片G2 Images 2.0模型图片编辑+文生图_2047870563862978562.json, 视频生成/图生视频/全能图片G image 2.0多宫格故事板_2098620081646424066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_83
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/音色克隆-v1_2094769389882142721.json、数字人/数字人/音色设计_2094769410778165249.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json、音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json、音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/ideogram4 九宫格分割_2069213501477965826.json、图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2100863074872938498.json、图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2101132059199754241.json、图片生成/图生图/全能图片G image2图像编辑--单图模式_2070555523946213378.json、图片生成/图生图/全能图片G image2图像编辑--双图模式_2076311809912565762.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+全部 16 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 8/10 个有
-- `StringInput` —— 3/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
+- `CR Prompt Text` —— 15/16 个有
+- `RH_RhartImageG2ImageToImage` —— 15/16 个有
+- `GuHaiAutoImageSplit` —— 3/16 个有
+- `Label (rgthree)` —— 3/16 个有
 
 ## 典型参数
 

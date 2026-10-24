@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_132
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.5662
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.6876
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json, 视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频生成_2093790080652627970.json, 视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频直出_2093456500986568705.json, 视频生成/文生视频/图MiniMax文生视频视频生视频图生视频_2085849570684260354.json, 视频生成/文生视频/官方全能参考版单采｜文生视频视频生视频图生视频｜三模式任选_2104778746879369218.json]
+members: [图片生成/文生图/MiniMax H3快速动作一镜到底多图参考，文生图图生视频高效创作工具_2103959005801574402.json, 视频生成/图生视频/9图参考一次出片｜MiniMax H3图生视频多图玩法_2089030736761409538.json, 视频生成/图生视频/H3 Mask替换人物 视频人物替换进阶工具_2099906937986048002.json, 视频生成/文生视频/Minimax-H3VDN-R2V三模式生成｜RH在线流直跑_2097156284557643777.json, 视频生成/文生视频/Minimax-H3VDN-R2V视频生成｜RH在线流工作流制作_2097073901951086594.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_132
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json、视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频生成_2093790080652627970.json、视频生成/文生视频/六宫格生视频｜minimax h3文生图生视频直出_2093456500986568705.json、视频生成/文生视频/图MiniMax文生视频视频生视频图生视频_2085849570684260354.json、视频生成/文生视频/官方全能参考版单采｜文生视频视频生视频图生视频｜三模式任选_2104778746879369218.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/MiniMax H3快速动作一镜到底多图参考，文生图图生视频高效创作工具_2103959005801574402.json、视频生成/图生视频/9图参考一次出片｜MiniMax H3图生视频多图玩法_2089030736761409538.json、视频生成/图生视频/H3 Mask替换人物 视频人物替换进阶工具_2099906937986048002.json、视频生成/文生视频/Minimax-H3VDN-R2V三模式生成｜RH在线流直跑_2097156284557643777.json、视频生成/文生视频/Minimax-H3VDN-R2V视频生成｜RH在线流工作流制作_2097073901951086594.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
@@ -35,38 +35,44 @@ source: knowledge_consolidation
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `VAEDecodeAudio` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `MiniMaxH3SigmaShift` —— 3/5 个有
-- `ModelAttentionBackend` —— 3/5 个有
-- `ModelPreviewOverrideKJ` —— 3/5 个有
-- `PrimitiveFloat` —— 3/5 个有
-- `CR Prompt Text` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `AudioSeparation` —— 1/5 个有
-- `CR Value` —— 1/5 个有
-- `Float` —— 1/5 个有
-- `JWImageResizeToMegapixels` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `SplitSigmas` —— 1/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `MiniMaxH3SigmaShift` —— 4/5 个有
+- `ModelAttentionBackend` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `MiniMaxChunkFeedForward` —— 3/5 个有
+- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 3/5 个有
+- `MiniMaxLowVRAMAttention` —— 3/5 个有
+- `ModelPatchTorchSettings` —— 3/5 个有
+- `PathchSageAttentionKJ` —— 3/5 个有
+- `SaveImage` —— 3/5 个有
+- `SolAttnPatch` —— 3/5 个有
+- `StringConcatenate` —— 3/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/5 个有
+- `CheckpointLoaderSimple` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageAndMaskPreview` —— 1/5 个有
+- `ModelPreviewOverrideKJ` —— 1/5 个有
+- `SAM3_TrackPreview` —— 1/5 个有
+- `SAM3_TrackToMask` —— 1/5 个有
+- `SAM3_VideoTrack` —— 1/5 个有
+- `Text` —— 1/5 个有
 - `VHS_LoadVideo` —— 1/5 个有
-- `ViggleAnimateConditioning` —— 1/5 个有
-- `ViggleTextCondLoader` —— 1/5 个有
+- `取色器_孤海` —— 1/5 个有
 
 ## 典型参数
 

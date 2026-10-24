@@ -2,71 +2,72 @@
 name: unknown_workflow_video_lora_sampler_584
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.924333
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.852667
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/2007938025782775810.json, 视频生成/图生视频/1971476193147076609.json, 视频生成/文生视频/1961417789682728962.json]
+members: [数字人/数字人/新4步lora三阶加速不降质音频驱动数字人-口播视频工作流 开源MiniMax H3 FL2VA_2090451028880748546.json, 视频生成/图生视频/新4步加速图生视频MiniMax H3_2090573463361773570.json, 视频生成/图生视频/超级提速不降质音频驱动数字人MV视频工作流开源MiniMax H3 Ref2VA_2086777029281796098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_584
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2007938025782775810.json、视频生成/图生视频/1971476193147076609.json、视频生成/文生视频/1961417789682728962.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/新4步lora三阶加速不降质音频驱动数字人-口播视频工作流 开源MiniMax H3 FL2VA_2090451028880748546.json、视频生成/图生视频/新4步加速图生视频MiniMax H3_2090573463361773570.json、视频生成/图生视频/超级提速不降质音频驱动数字人MV视频工作流开源MiniMax H3 Ref2VA_2086777029281796098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `KSampler`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `Label (rgthree)`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ContextWindowsManual` —— 2/3 个有
-- `VHS_LoadAudioUpload` —— 2/3 个有
-- `WanHuMoImageToVideo` —— 2/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `WanSoundImageToVideo` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `Float` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `MelBandRoFormerModelLoader` —— 2/3 个有
+- `MelBandRoFormerSampler` —— 2/3 个有
+- `MiniMaxH3AVDecodeT8` —— 2/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `SolAttnMiniMax` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
+- `BasicScheduler` —— 1/3 个有
+- `KSamplerSelect` —— 1/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `VAEDecodeAudio` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 3 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，3 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

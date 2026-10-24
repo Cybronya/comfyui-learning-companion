@@ -1,38 +1,47 @@
 ---
 name: unknown_workflow_generic_780
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.866
-common_nodes: [CR Prompt Text, HAIGC_LoadImagesFromZip, Int, RunningHubRVCOneClickTrain, ShellAgentPluginOutputText, easy saveText]
+frequency: 4
+level: moderate
+coverage: 0.80875
+common_nodes: [Bjornulf_IfElse, CR Text, ImpactSwitch, LazySwitch1way, LoadAudio, PreviewAny, RH_LLMAPI_NODE, RunningHub_VoxCPM_LoadModel, SaveAudio, easy boolean, easy int, ttN concat]
 problems: []
 missing: []
-members: [图片生成/文生图/RVC模型训练器_2101876081258229762.json, 音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json]
+members: [音频生成/音频生成/-声音克隆_语音设计-多人-VoxCPM2【small-JJ小健健】_2043960563025321986.json, 音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人_多人整合版【small-JJ小健健】_2043612797136801793.json, 音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【small-JJ小健健】_2042886943972794370.json, 音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【老崔】_2062234010562154497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_780
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RVC模型训练器_2101876081258229762.json、音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/-声音克隆_语音设计-多人-VoxCPM2【small-JJ小健健】_2043960563025321986.json、音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人_多人整合版【small-JJ小健健】_2043612797136801793.json、音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【small-JJ小健健】_2042886943972794370.json、音频生成/音频生成/VoxCPM2-声音克隆_语音设计-单人【老崔】_2062234010562154497.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `HAIGC_LoadImagesFromZip`
-- `Int`
-- `RunningHubRVCOneClickTrain`
-- `ShellAgentPluginOutputText`
-- `easy saveText`
+全部 4 个 workflow 都包含：
+- `Bjornulf_IfElse`
+- `CR Text`
+- `ImpactSwitch`
+- `LazySwitch1way`
+- `LoadAudio`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
+- `easy boolean`
+- `easy int`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `RunningHub_VoxCPM_Generate` —— 3/4 个有
+- `CharacterCount` —— 2/4 个有
+- `RunningHub_VoxCPM_MultiSpeaker` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `easy compare` —— 1/4 个有
 
 ## 典型参数
 
@@ -44,4 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,42 +1,37 @@
 ---
 name: unknown_workflow_generic_283
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.8712
-common_nodes: [Apply Whisper, LoadAudio, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 1
+common_nodes: [JWStringConcat, SaveImage, Text Input [Dream]]
 problems: []
 missing: []
-members: [数字人/数字人/声音克隆（上传参考音频生成任何语音）_2100911017046925313.json, 音频生成/音频生成/Breeze TTS 2 声音克隆工作流-免打标一键复刻_2095712501966135298.json, 音频生成/音频生成/Breeze TTS 2 声音导演工作流-音色不变控情绪_2095712606765015042.json, 音频生成/音频生成/Breeze-TTS2-Clone_2105912504613425153.json, 音频生成/音频生成/TTS Breeze 2 高质量声音克隆｜世界第一开源｜情感控制_2096105647677984769.json]
+members: [图片生成/图生图/卖点图_2067536259005902850.json, 图片生成/图生图/参数图_2068882841676636161.json, 图片生成/图生图/场景图_2068890954798551041.json, 图片生成/图生图/洗稿_2043895902728884225.json, 图片生成/图生图/首图_2066768634512494593.json, 图片生成/图生图/首图_2068876315247333377.json, 图片生成/图生图/首图产品替换_2066794981121159169.json, 图片生成/图生图/首图产品替换_2068876600434843649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_283
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/声音克隆（上传参考音频生成任何语音）_2100911017046925313.json、音频生成/音频生成/Breeze TTS 2 声音克隆工作流-免打标一键复刻_2095712501966135298.json、音频生成/音频生成/Breeze TTS 2 声音导演工作流-音色不变控情绪_2095712606765015042.json、音频生成/音频生成/Breeze-TTS2-Clone_2105912504613425153.json、音频生成/音频生成/TTS Breeze 2 高质量声音克隆｜世界第一开源｜情感控制_2096105647677984769.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/卖点图_2067536259005902850.json、图片生成/图生图/参数图_2068882841676636161.json、图片生成/图生图/场景图_2068890954798551041.json、图片生成/图生图/洗稿_2043895902728884225.json、图片生成/图生图/首图_2066768634512494593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+全部 8 个 workflow 都包含：
+- `JWStringConcat`
+- `SaveImage`
+- `Text Input [Dream]`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_BreezeTTS_CloneRequest` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `SaveAudioMP3` —— 3/5 个有
-- `MuyeTextEditOutput` —— 2/5 个有
-- `SaveAudio` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `T8_BreezeTTS_DirectionRequest` —— 1/5 个有
+- `ImageScale` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 7/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,67 +1,105 @@
 ---
 name: unknown_workflow_video_lora_sampler_565
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8495
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.802
+common_nodes: [BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ConditioningZeroOut, ExtendIntermediateSigmas, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaGetNode, PixaromaLabel, PixaromaResolution, PixaromaSetNode, PrimitiveFloat, ResolutionSelector, SaveImage, SelfLiftAvatarH3Sampler, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy imageListToImageBatch, easy imageSplitGrid]
 problems: []
 missing: []
-members: [视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json, 视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json, 视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json, 视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json]
+members: [图片生成/图生图/全能图片G-IMAGE-2.5 4宫格4图 + MiniMax H3 (一次4视频）SelfLift_2106077311387922433.json, 视频生成/图生视频/Qwen Image 2.1 一键4图+Minimax H3 SelfLift 超高清4条视频生成_2105768139874201602.json, 视频生成/图生视频/全能图片G-IMAGE-2.5  + MiniMax H3 SelfLift  1次9图 9超高清视频生_2104630370133168129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_565
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/银河系小王文生视频V1_2094272713035706370.json、视频生成/文生视频/高动态战斗王者(极速高清)MiniMax H3参考生视频_2098258737172664322.json、视频生成/文生视频/（音频驱动-10Eros-Max Beta3）MiniMax H3数字人加速版V1_2092512922332389378.json、视频生成/视频生视频/MiniMax H3 人物替换_lora版__2106317435786842113.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-IMAGE-2.5 4宫格4图 + MiniMax H3 (一次4视频）SelfLift_2106077311387922433.json、视频生成/图生视频/Qwen Image 2.1 一键4图+Minimax H3 SelfLift 超高清4条视频生成_2105768139874201602.json、视频生成/图生视频/全能图片G-IMAGE-2.5  + MiniMax H3 SelfLift  1次9图 9超高清视频生_2104630370133168129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CR Prompt Text`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `ExtendIntermediateSigmas`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `RandomNoise`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `PixaromaLabel`
+- `PixaromaResolution`
+- `PixaromaSetNode`
+- `PrimitiveFloat`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `SaveImage`
+- `SelfLiftAvatarH3Sampler`
+- `Text`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy imageListToImageBatch`
+- `easy imageSplitGrid`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 3/4 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 3/4 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 3/4 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `孤海注释` —— 2/4 个有
-- `AudioCrop` —— 1/4 个有
-- `ConcatTextOfUtils` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `JWStringToFloat` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
+- `CR Text` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `PixaromaGroupSwitch` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RHLLMChatNode` —— 2/3 个有
+- `RHSettingsNode` —— 2/3 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Any Switch (rgthree)` —— 1/3 个有
+- `EmptyLatentImage` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageRGBA2RGB` —— 1/3 个有
+- `Images to RGB` —— 1/3 个有
+- `KSampler` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `QwenImage21Cache` —— 1/3 个有
+- `QwenPERewriteT8` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `Switch any [Crystools]` —— 1/3 个有
+- `TextEncodeQwenImage21` —— 1/3 个有
+- `VRAM_Debug` —— 1/3 个有
+- `easy boolean` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
+- `llama_cpp_parameters` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
+| 采样步数 | 40 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 

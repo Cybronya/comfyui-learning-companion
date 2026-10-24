@@ -1,37 +1,44 @@
 ---
 name: unknown_workflow_generic_630
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [CR Text, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, SaveAudioMP3]
+coverage: 0.8865
+common_nodes: [CR Prompt Text, INTConstant, LoadImage, MultiTextConcatenate, RH_LLMAPI_Pro_Node, RH_Utils, SaveImage, ShowAnything|Mie, Text, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT-V3_2044072981504204802.json, 音频生成/音频生成/LongCat-AudioDiT-V4_2044081275895554049.json, 音频生成/音频生成/三款开源TTS大模型横评，LongCat-AudioDiT完胜🐱_2044068675002572802.json]
+members: [图片生成/反推提示词/一键自动生成 MiniMax -导演台-自动提示词_2104910050916651010.json, 图片生成/图生图/一键自动生成_MiniMax_-导演台-自动提示词_2098951598125961218.json, 图片生成/图生图/一键自动生成_MiniMax_-导演台-自动提示词_2099063288016498689.json, 视频生成/图生视频/一键自动生成 MiniMax 自动提示词_2085242911062577154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_630
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-V3_2044072981504204802.json、音频生成/音频生成/LongCat-AudioDiT-V4_2044081275895554049.json、音频生成/音频生成/三款开源TTS大模型横评，LongCat-AudioDiT完胜🐱_2044068675002572802.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/一键自动生成 MiniMax -导演台-自动提示词_2104910050916651010.json、图片生成/图生图/一键自动生成_MiniMax_-导演台-自动提示词_2098951598125961218.json、图片生成/图生图/一键自动生成_MiniMax_-导演台-自动提示词_2099063288016498689.json、视频生成/图生视频/一键自动生成 MiniMax 自动提示词_2085242911062577154.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `SaveAudioMP3`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `INTConstant`
+- `LoadImage`
+- `MultiTextConcatenate`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Utils`
+- `SaveImage`
+- `ShowAnything|Mie`
+- `Text`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 2/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `EmptyImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `孤海注释` —— 2/4 个有
 
 ## 典型参数
 

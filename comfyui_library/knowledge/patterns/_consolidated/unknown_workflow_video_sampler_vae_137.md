@@ -3,78 +3,58 @@ name: unknown_workflow_video_sampler_vae_137
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.6455
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageFromBatch+, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, PrimitiveFloat, Qwen3_VQA, SetNode, ShowText|pysssss, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.842
+common_nodes: [CLIPVisionLoader, CR Text, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1982743157039349761.json, 视频生成/图生视频/1972739991178792962.json, 视频生成/图生视频/1985620607834501122.json, 视频生成/图生视频/1985638903862439938.json]
+members: [视频生成/图生视频/加强逼真版图生视频lightx2加速_1936026655389306882.json, 视频生成/图生视频/图生视频-Wan-14B-i2v-FusioniX-自然动态_1985179323869052930.json, 视频生成/图生视频/电商女装男装童装带货动图_2058042457992028161.json, 视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_137
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1982743157039349761.json、视频生成/图生视频/1972739991178792962.json、视频生成/图生视频/1985620607834501122.json、视频生成/图生视频/1985638903862439938.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/加强逼真版图生视频lightx2加速_1936026655389306882.json、视频生成/图生视频/图生视频-Wan-14B-i2v-FusioniX-自然动态_1985179323869052930.json、视频生成/图生视频/电商女装男装童装带货动图_2058042457992028161.json、视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `ImpactFloat`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `Qwen3_VQA`
-- `SetNode`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
+- `CLIPVisionLoader`
+- `CR Text`
+- `ImpactInt`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy imageSize`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `WanVideoLoraSelect` —— 3/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `CM_FloatToInt` —— 2/4 个有
-- `CreateCFGScheduleFloatList` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 2/4 个有
-- `ImageBatchMulti` —— 2/4 个有
-- `LoadWanVideoT5TextEncoder` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `SimpleMath+` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `WanVideoClipVisionEncode` —— 2/4 个有
-- `WanVideoScheduler` —— 2/4 个有
-- `WanVideoSigmaToStep` —— 2/4 个有
-- `WanVideoTextEncode` —— 2/4 个有
-- `WanVideoTextEncodeCached` —— 2/4 个有
-- `easy mathFloat` —— 2/4 个有
-- `easy mathInt` —— 2/4 个有
-- `LoadLynxResampler` —— 1/4 个有
-- `LynxEncodeFaceIP` —— 1/4 个有
-- `LynxInsightFaceCrop` —— 1/4 个有
-- `WanVideoAddLynxEmbeds` —— 1/4 个有
-- `WanVideoExtraModelSelect` —— 1/4 个有
+- `ImageResizeKJ` —— 3/4 个有
+- `Qwen3VL_Advanced` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `LayerColor: ColorAdapter` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `WanVideoLoraSelect` —— 1/4 个有
+- `WanVideoLoraSelectMulti` —— 1/4 个有
+- `WanVideoMagCache` —— 1/4 个有
+- `WanVideoTextEncode` —— 1/4 个有
+- `WanVideoVRAMManagement` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

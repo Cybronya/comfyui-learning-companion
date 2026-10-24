@@ -1,50 +1,44 @@
 ---
 name: unknown_workflow_sampler_19
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.269667
-common_nodes: [Anything Everywhere3, Efficient Loader, KSampler (Efficient), PreviewImage, Prompts Everywhere, SaveImage]
+frequency: 6
+level: moderate
+coverage: 0.924
+common_nodes: [ImageConcanate, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
-missing: [Efficient Loader, KSampler (Efficient), Prompts Everywhere]
-members: [图片生成/文生图/1950456581726060545.json, 图片生成/文生图/1950463623363792897.json, 图片生成/文生图/1950475247025901569.json]
+missing: []
+members: [图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json, 图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json, 图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json, 图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json, 图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json, 图片生成/图生图/极速版-UniWorld吉卜力风格转绘工作流_1931046093231206402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_19
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1950456581726060545.json、图片生成/文生图/1950463623363792897.json、图片生成/文生图/1950475247025901569.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json、图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json、图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json、图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json、图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：27%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere3`
-- `Efficient Loader`
-- `KSampler (Efficient)`
-- `PreviewImage`
-- `Prompts Everywhere`
+全部 6 个 workflow 都包含：
+- `ImageConcanate`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
-- `UltimateSDUpscale` —— 1/3 个有
-- `UpscaleModelLoader` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
+- `CR Prompt Text` —— 5/6 个有
+- `PDIMAGE_LongerSize` —— 5/6 个有
+- `DeepTranslatorTextNode` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 7 | 7 - 7 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -52,9 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：Efficient Loader、KSampler (Efficient)、Prompts Everywhere
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

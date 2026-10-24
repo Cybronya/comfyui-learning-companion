@@ -3,68 +3,55 @@ name: unknown_workflow_video_lora_sampler_479
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.938
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.89775
+common_nodes: [CR Prompt Text, ImageResizeKJ, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1966481669362495490.json, 视频生成/图生视频/1967843382921953282.json, 视频生成/图生视频/1988214470772178945.json, 视频生成/图生视频/1967688435714711553.json]
+members: [视频生成/图生视频/AniWan图生视频_1945815960743800834.json, 视频生成/图生视频/AniWan图生视频加速版_1947158911092305922.json, 视频生成/图生视频/🤠【大炮视频】AniWan图生视频灵动加速版🤠_1945677633763909634.json, 视频生成/图生视频/🤠【大炮视频】AniWan运镜参考图生视频+灵动运镜版🤠_1945637624423882753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_479
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1966481669362495490.json、视频生成/图生视频/1967843382921953282.json、视频生成/图生视频/1988214470772178945.json、视频生成/图生视频/1967688435714711553.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AniWan图生视频_1945815960743800834.json、视频生成/图生视频/AniWan图生视频加速版_1947158911092305922.json、视频生成/图生视频/🤠【大炮视频】AniWan图生视频灵动加速版🤠_1945677633763909634.json、视频生成/图生视频/🤠【大炮视频】AniWan运镜参考图生视频+灵动运镜版🤠_1945637624423882753.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `CR Prompt Text`
+- `ImageResizeKJ`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoFreeInitArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 3/4 个有
-- `DownloadAndLoadSAM2Model` —— 3/4 个有
-- `GetImageSizeAndCount` —— 3/4 个有
-- `GrowMaskWithBlur` —— 3/4 个有
-- `ImageCompositeMasked` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `MaskToImage` —— 3/4 个有
-- `PointsEditor` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `Sam2Segmentation` —— 3/4 个有
-- `SolidMask` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `easy imageRemBg` —— 3/4 个有
-- `Anything Everywhere` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `SetNode` —— 1/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `WanVideoEncode` —— 1/4 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/4 个有
+- `WanVideoUni3C_embeds` —— 1/4 个有
 
 ## 典型参数
 

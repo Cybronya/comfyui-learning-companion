@@ -7,13 +7,13 @@ coverage: 0.8825
 common_nodes: [BatchCount+, CLIPTextEncode, ChangeImageBatchSize //Inspire, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, CreateShapeMask, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, ImageBatch, ImageCompositeBy_Zho, ImageListToImageBatch, ImageScaleToTotalPixels, ImageToMask, ImpactImageBatchToImageList, JoinImageWithAlpha, KSampler, LoadImage, LoraLoader, MaskToImage, MasksToMaskList, PreviewImage, SolidMask, VAEDecode, VAEEncode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1909785208340840449.json, 视频生成/图生视频/1907380226249396226.json]
+members: [视频生成/图生视频/Ghibli 吉卜力转场动画_1909785208340840449.json, 视频生成/图生视频/Ghibli 吉卜力转成动画 ｜一键生成视频系列_1907380226249396226.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_video_lora
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1909785208340840449.json、视频生成/图生视频/1907380226249396226.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Ghibli 吉卜力转场动画_1909785208340840449.json、视频生成/图生视频/Ghibli 吉卜力转成动画 ｜一键生成视频系列_1907380226249396226.json）
 
 - **类型**：Image To Image
 - **样本数**：2

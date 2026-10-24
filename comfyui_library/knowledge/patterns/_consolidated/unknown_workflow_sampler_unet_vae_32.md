@@ -1,75 +1,74 @@
 ---
 name: unknown_workflow_sampler_unet_vae_32
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.7965
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 17
+level: strong
+coverage: 0.690118
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [数字人/数字人/MiniMax-H3伟大的开源模型  图片声音驱动数字人_2084654275631865857.json, 数字人/数字人/benson  声音克隆数字人_2097164489119588353.json, 数字人/数字人/最新MiniMax-H3 数字人说唱跳流畅自然_2085274986457157634.json, 视频生成/图生视频/(0713)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088910957308370946.json, 视频生成/图生视频/(0715)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088947852180545538.json, 视频生成/图生视频/(10Eros-Max V3)Minimax参考生视频BF16高质量加速版V3_2086185973813174274.json, 视频生成/图生视频/2倍速！加速版Minimax H3多参生视频sag+backend+block cache_2087475848759832577.json, 视频生成/图生视频/MiniMax H3 双角色+背景+自定义音频输入 视频生成工作流_2084953803597635586.json, 视频生成/图生视频/MiniMax H3+lightx2v 4步加速全能参考工作流2图_2086437276707545089.json, 视频生成/图生视频/漫剧林辰_2103760332870217729.json, 视频生成/图生视频/短剧漫剧参考图生视频_2103117172716429314.json, 视频生成/图生视频/自我介绍_2110222353635561474.json, 视频生成/图生视频/走秀_2110212966074376193.json, 视频生成/文生视频/260818002. MiniMax-H3 全能参考速生视频_2089370236645634050.json]
+members: [音频生成/音频生成/MiniMax Music 3 文生音频官方流_2090455981170978818.json, 音频生成/音频生成/MiniMax Music 3 音乐生成_2091519854246457345.json, 音频生成/音频生成/MiniMax Music 3 音乐生成｜歌词结构标签+三段时间+120秒完整歌曲_2089294478686375938.json, 音频生成/音频生成/MiniMax Music 3歌曲创作_2096597355494731778.json, 音频生成/音频生成/MiniMax Music3 I 开源音乐新王_2088579603374895106.json, 音频生成/音频生成/MiniMax Music3音乐生成_2088175617937334274.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089204171424755713.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089205528881876993.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089206267771449346.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089207088126976002.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089207882897256450.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089208516367175682.json, 音频生成/音频生成/MiniMax Music3音乐生成_2089209296776159233.json, 音频生成/音频生成/MiniMax-Music3 官方skill自动提示词文生音乐流_2090618993068560385.json, 音频生成/音频生成/MiniMax_Music3-音乐生成_2090004883062747138.json, 音频生成/音频生成/Minimax Music 3音乐生成工作流_2088093007462617089.json, 音频生成/音频生成/MinimaxH3-music3_2094205332569550850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/MiniMax-H3伟大的开源模型  图片声音驱动数字人_2084654275631865857.json、数字人/数字人/benson  声音克隆数字人_2097164489119588353.json、数字人/数字人/最新MiniMax-H3 数字人说唱跳流畅自然_2085274986457157634.json、视频生成/图生视频/(0713)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088910957308370946.json、视频生成/图生视频/(0715)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088947852180545538.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music 3 文生音频官方流_2090455981170978818.json、音频生成/音频生成/MiniMax Music 3 音乐生成_2091519854246457345.json、音频生成/音频生成/MiniMax Music 3 音乐生成｜歌词结构标签+三段时间+120秒完整歌曲_2089294478686375938.json、音频生成/音频生成/MiniMax Music 3歌曲创作_2096597355494731778.json、音频生成/音频生成/MiniMax Music3 I 开源音乐新王_2088579603374895106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：17
+- **可信度**：强结论
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 17 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ConditioningZeroOut`
+- `EmptyMiniMaxMusic3LatentAudio`
+- `KSampler`
+- `MiniMaxMusic3TextEncode`
+- `SaveAudioAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 10/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/14 个有
-- `LoadAudio` —— 8/14 个有
-- `LoraLoaderModelOnly` —— 8/14 个有
-- `PrimitiveStringMultiline` —— 8/14 个有
-- `CR Text` —— 6/14 个有
-- `MiniMaxH3BlockCacheT8` —— 4/14 个有
-- `VHS_LoadVideo` —— 4/14 个有
-- `AudioCrop` —— 3/14 个有
-- `ModelAttentionBackend` —— 3/14 个有
-- `AILab_QwenVL` —— 2/14 个有
-- `ComfyMiniMaxH3Director` —— 2/14 个有
-- `JoinStrings` —— 2/14 个有
-- `SolAttnMiniMax` —— 2/14 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/14 个有
-- `SpectrumSDXL` —— 1/14 个有
-- `TrimAudioDuration` —— 1/14 个有
-- `VHS_LoadAudioUpload` —— 1/14 个有
-- `孤海注释` —— 1/14 个有
+- `ComfySwitchNode` —— 16/17 个有
+- `VAEDecodeAudioTiled` —— 16/17 个有
+- `PrimitiveFloat` —— 14/17 个有
+- `PrimitiveStringMultiline` —— 10/17 个有
+- `SeedNode` —— 9/17 个有
+- `Label (rgthree)` —— 2/17 个有
+- `LoadImage` —— 2/17 个有
+- `Text` —— 2/17 个有
+- `DapaoLocalMusic3CaptionPromptNode` —— 1/17 个有
+- `JjkText` —— 1/17 个有
+- `String` —— 1/17 个有
+- `easy showAnything` —— 1/17 个有
+- `孤海注释` —— 1/17 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 30 - 40 | 17 | 92% |
+| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 17 | 100% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 17/17 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，观测区间 30 - 40，17 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，17 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 高发问题（17/17 个样本）：发现KSampler但没有VAEDecode

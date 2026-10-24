@@ -7,13 +7,13 @@ coverage: 0.699
 common_nodes: [CFGGuider, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLTXVLatentVideo, JoinStrings, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MemoryCleaner, PrimitiveFloat, Qwen3_VQA, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SeedGenerator, ShowText|pysssss, SimpleCalculatorKJ, VAEDecodeTiled, easy cleanGpuUsed, easy showAnything, ttN concat]
 problems: []
 missing: []
-members: [视频生成/图生视频/2049390145010409474.json, 视频生成/图生视频/2052747841218596866.json, 视频生成/图生视频/2044451540315938817.json, 视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json, 视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json]
+members: [视频生成/图生视频/LTX 2.3 多图生视频 （V1版 增强人脸一致性，+转场 +VBVR 理解复杂运动，正确物理运动_2049390145010409474.json, 视频生成/图生视频/LTX 2.3 首尾帧视频 一致性+转场+VBVR复杂运动_2052747841218596866.json, 视频生成/图生视频/LTX 2.3 首尾帧视频｜ 丝滑转场｜+转场 LoRA （强化运动连贯性）+VBVR 理解复杂运_2044451540315938817.json, 视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json, 视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_54
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2049390145010409474.json、视频生成/图生视频/2052747841218596866.json、视频生成/图生视频/2044451540315938817.json、视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json、视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3 多图生视频 （V1版 增强人脸一致性，+转场 +VBVR 理解复杂运动，正确物理运动_2049390145010409474.json、视频生成/图生视频/LTX 2.3 首尾帧视频 一致性+转场+VBVR复杂运动_2052747841218596866.json、视频生成/图生视频/LTX 2.3 首尾帧视频｜ 丝滑转场｜+转场 LoRA （强化运动连贯性）+VBVR 理解复杂运_2044451540315938817.json、视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json、视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

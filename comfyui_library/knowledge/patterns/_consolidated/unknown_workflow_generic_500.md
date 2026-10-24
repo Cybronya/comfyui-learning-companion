@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_500
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.835667
-common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
+coverage: 0.8856
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
+members: [图片生成/图生图/Flux Kontext 图片去除水印｜水印消除_1932406579486715905.json, 图片生成/图生图/Flux Kontext 生成美式学位照_1933702058287783937.json, 图片生成/图生图/Kontext 证件照_1932629711136636930.json, 图片生成/图生图/fluxkontext_一键去满屏水印！_1928842780129312769.json, 图片生成/图生图/图像编辑_复杂上色彩_Flux Kontext_1929447674821427202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_500
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json、视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 图片去除水印｜水印消除_1932406579486715905.json、图片生成/图生图/Flux Kontext 生成美式学位照_1933702058287783937.json、图片生成/图生图/Kontext 证件照_1932629711136636930.json、图片生成/图生图/fluxkontext_一键去满屏水印！_1928842780129312769.json、图片生成/图生图/图像编辑_复杂上色彩_Flux Kontext_1929447674821427202.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `MiniMaxH3PromptEnhancerT8`
-- `PreviewAny`
-- `RH_Translator`
-- `easy saveText`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `easy imageSave` —— 1/3 个有
+- `ImageConcanate` —— 4/5 个有
+- `PDIMAGE_LongerSize` —— 3/5 个有
+- `ImageScaleDownToSize` —— 2/5 个有
 
 ## 典型参数
 

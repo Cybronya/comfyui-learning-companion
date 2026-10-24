@@ -1,71 +1,55 @@
 ---
 name: unknown_workflow_video_clip_vae_3
 type: Unknown Workflow
-frequency: 2
+frequency: 6
 level: weak
-coverage: 0.6585
-common_nodes: [AILab_MiniCPM_4_V, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CR Prompt Text, GetNode, ImageFromBatch+, ImageResizeKJv2, ImpactSwitch, JjkText, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_LLMAPI_NODE, SetNode, ShowText|pysssss, SimpleMath+, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.968333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981286128290529281.json, 视频生成/图生视频/1981040376029003777.json]
+members: [视频生成/文生视频/3分钟完成_文生视频6s(97帧)——wan2.2  GGUF_1958137179354574850.json, 视频生成/文生视频/wan2.2文生视频工作流_1992207253564444674.json, 视频生成/文生视频/【最接近官方】Lightx2v-T2V-4步快速文生视频_1972827331947614209.json, 视频生成/文生视频/【橘子AI】Wan 2.2 T2V 精简版_1989254188234321922.json, 视频生成/文生视频/工作流视频篇1-阿里万相Wan2.2Al视频创作实战_2016870256769245185.json, 视频生成/文生视频/文生视频工作流_2066457517043044354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981286128290529281.json、视频生成/图生视频/1981040376029003777.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/3分钟完成_文生视频6s(97帧)——wan2.2  GGUF_1958137179354574850.json、视频生成/文生视频/wan2.2文生视频工作流_1992207253564444674.json、视频生成/文生视频/【最接近官方】Lightx2v-T2V-4步快速文生视频_1972827331947614209.json、视频生成/文生视频/【橘子AI】Wan 2.2 T2V 精简版_1989254188234321922.json、视频生成/文生视频/工作流视频篇1-阿里万相Wan2.2Al视频创作实战_2016870256769245185.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
+- **样本数**：6
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_MiniCPM_4_V`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CR Prompt Text`
-- `GetNode`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `JjkText`
-- `LoadImage`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_LLMAPI_NODE`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `EmptyHunyuanLatentVideo`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `WanFirstLastFrameToVideo` —— 1/2 个有
-- `WanImageToVideo` —— 1/2 个有
-- `WanMoeKSampler` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
-- `wanBlockSwap` —— 1/2 个有
+- `KSamplerAdvanced` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `ModelSamplingSD3` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `UNETLoader` —— 4/6 个有
+- `UnetLoaderGGUF` —— 2/6 个有
+- `CFGZeroStar` —— 1/6 个有
+- `WanMoeKSampler` —— 1/6 个有
+- `wanBlockSwap` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 1 | - | 1 | 100% |
-| 重绘幅度 | beta57 | - | 2 | 50% |
+| 采样步数 | randomize | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 6 | 16% |
+| 采样算法 | 1 | 1 - 3.5 | 6 | 34% |
+| 调度器 | euler | - | 6 | 83% |
+| 重绘幅度 | simple | - | 6 | 83% |
 
 ## 常见问题
 
@@ -73,8 +57,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 beta57，2 个样本，一致性 50%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，6 个样本，取值分散，一致性仅 16%
+- 采样算法 中位数 1，观测区间 1 - 3.5，6 个样本，取值分散，一致性仅 34%
+- 调度器 最常用 euler，6 个样本，一致性 83%
+- 重绘幅度 最常用 simple，6 个样本，一致性 83%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

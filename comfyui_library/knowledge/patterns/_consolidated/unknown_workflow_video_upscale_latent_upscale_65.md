@@ -2,77 +2,60 @@
 name: unknown_workflow_video_upscale_latent_upscale_65
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.868
-common_nodes: [CFGGuider, CLIPTextEncode, ComfySwitchNode, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, ImageScaleToTotalPixels, JoinStrings, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, ResolutionSelector, SamplerCustomAdvanced, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy int]
+level: moderate
+coverage: 0.954167
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyHunyuanVideo15Latent, HunyuanVideo15LatentUpscaleWithModel, HunyuanVideo15SuperResolution, KSamplerSelect, LatentUpscaleModelLoader, ModelSamplingSD3, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2077715453979484162.json, 视频生成/图生视频/2068937173436551170.json, 视频生成/图生视频/2072223946312867841.json, 视频生成/图生视频/2077284348637835265.json, 视频生成/图生视频/2081980799116730369.json, 视频生成/文生视频/LTX2.3 AI动漫 短剧文图生视频_2077737653902077953.json]
+members: [视频生成/图生视频/混元1.5-文生视频720P_2006663001679597569.json, 视频生成/文生视频/HUNYUAN 1.5 T2V 4步极速版_2073281127351144450.json, 视频生成/文生视频/HUNYUAN 1.5 T2V SR_2073280317422661634.json, 视频生成/文生视频/混元1.5T2V+超分-Aiwood_1992023623716368385.json, 视频生成/文生视频/混元1.5文生视频加速版720P_2005971109587668993.json, 视频生成/文生视频/混元1.5文生视频加速版720P_2016675572935565313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_65
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2077715453979484162.json、视频生成/图生视频/2068937173436551170.json、视频生成/图生视频/2072223946312867841.json、视频生成/图生视频/2077284348637835265.json、视频生成/图生视频/2081980799116730369.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/混元1.5-文生视频720P_2006663001679597569.json、视频生成/文生视频/HUNYUAN 1.5 T2V 4步极速版_2073281127351144450.json、视频生成/文生视频/HUNYUAN 1.5 T2V SR_2073280317422661634.json、视频生成/文生视频/混元1.5T2V+超分-Aiwood_1992023623716368385.json、视频生成/文生视频/混元1.5文生视频加速版720P_2005971109587668993.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
 - `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImageScaleToTotalPixels`
-- `JoinStrings`
+- `EmptyHunyuanVideo15Latent`
+- `HunyuanVideo15LatentUpscaleWithModel`
+- `HunyuanVideo15SuperResolution`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `VAEDecodeTiled` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `DF_Int_to_Float` —— 3/6 个有
+- `JWInteger` —— 3/6 个有
+- `MathExpression|pysssss` —— 3/6 个有
+- `ImpactSwitch` —— 2/6 个有
+- `VAEDecode` —— 2/6 个有
+- `LoraLoader` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -80,5 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

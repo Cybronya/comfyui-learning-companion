@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_sampler_20
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.653333
-common_nodes: [LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.8365
+common_nodes: [ImageConcanate, LoadImage, RunningHub ICCustom Loader, RunningHub ICCustom Sampler, SaveImage, Text Multiline, easy imageRemBg]
 problems: []
-missing: [RunningHub USO Loader, RunningHub USO Sampler]
-members: [图片生成/文生图/1962533944346456065.json, 图片生成/文生图/1964595430032068610.json, 图片生成/文生图/1965031029104889857.json]
+missing: []
+members: [图片生成/图生图/单图迁移-IC-Custom产品万物迁移_1963609341290172418.json, 图片生成/图生图/手提包IC-Custom产品万物迁移_1963401965344632834.json, 图片生成/图生图/服装迁移IC-Custom产品万物迁移_1963636950195589121.json, 图片生成/图生图/腾讯IC-Custom产品万物迁移_1963393368845946881.json, 图片生成/图生图/首饰-腾讯IC-Custom产品万物迁移_1963399712751718401.json, 图片生成/图生图/首饰产品迁移-AI模特佩戴产品首饰_1991829889062072321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1962533944346456065.json、图片生成/文生图/1964595430032068610.json、图片生成/文生图/1965031029104889857.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/单图迁移-IC-Custom产品万物迁移_1963609341290172418.json、图片生成/图生图/手提包IC-Custom产品万物迁移_1963401965344632834.json、图片生成/图生图/服装迁移IC-Custom产品万物迁移_1963636950195589121.json、图片生成/图生图/腾讯IC-Custom产品万物迁移_1963393368845946881.json、图片生成/图生图/首饰-腾讯IC-Custom产品万物迁移_1963399712751718401.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `ImageConcanate`
 - `LoadImage`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
+- `RunningHub ICCustom Loader`
+- `RunningHub ICCustom Sampler`
 - `SaveImage`
+- `Text Multiline`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `DF_Get_image_size` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
+- `ImageAndMaskPreview` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
@@ -44,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：RunningHub USO Loader、RunningHub USO Sampler
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,60 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_clip_83
 type: Unknown Workflow
-frequency: 7
-level: weak
-coverage: 0.93
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 8
+level: moderate
+coverage: 0.98375
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1925841932033937410.json, 视频生成/图生视频/1935900536141246465.json, 视频生成/图生视频/1934825065211207682.json, 视频生成/图生视频/1930296674030141442.json, 视频生成/图生视频/1986047852856168450.json, 视频生成/图生视频/2025778542893604865.json, 视频生成/文生视频/1957967397764349953.json]
+members: [视频生成/图生视频/通义万相Teacache加速图生视频_1896425086226726914.json, 视频生成/图生视频/通义万相wan2.1万物生花特效_1908182289698664449.json, 视频生成/图生视频/通义万相wan2.1万物老化特效_1912458633853239298.json, 视频生成/图生视频/通义万相wan2.1图生视频万物婴儿化_1911273702397308929.json, 视频生成/图生视频/通义万相wan2.1图生视频万物放气特效_1910623040215154690.json, 视频生成/图生视频/通义万相wan2.1图生视频美女转身舞动_1910235144152674306.json, 视频生成/图生视频/通义万相wan2.1美女一字马_1909453938431504386.json, 视频生成/文生视频/火力 全开！冲锋枪射击特效--万相WAN2.1_1934071211976478722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_83
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1925841932033937410.json、视频生成/图生视频/1935900536141246465.json、视频生成/图生视频/1934825065211207682.json、视频生成/图生视频/1930296674030141442.json、视频生成/图生视频/1986047852856168450.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/通义万相Teacache加速图生视频_1896425086226726914.json、视频生成/图生视频/通义万相wan2.1万物生花特效_1908182289698664449.json、视频生成/图生视频/通义万相wan2.1万物老化特效_1912458633853239298.json、视频生成/图生视频/通义万相wan2.1图生视频万物婴儿化_1911273702397308929.json、视频生成/图生视频/通义万相wan2.1图生视频万物放气特效_1910623040215154690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanImageToVideo` —— 5/7 个有
-- `RIFE VFI` —— 3/7 个有
-- `ConstrainImage|pysssss` —— 2/7 个有
-- `ImageResize+` —— 2/7 个有
-- `WanFirstLastFrameToVideo` —— 2/7 个有
-- `easy imageSize` —— 2/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `SaveAnimatedWEBP` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `DownloadAndLoadGIMMVFIModel` —— 7/8 个有
+- `GIMMVFI_interpolate` —— 7/8 个有
+- `LayerUtility: PurgeVRAM` —— 7/8 个有
+- `WanVideoLoraSelect` —— 7/8 个有
+- `ImageResizeKJ` —— 6/8 个有
+- `UpscaleModelLoader` —— 5/8 个有
+- `CR Upscale Image` —— 3/8 个有
+- `UpscaleImageByUsingModel` —— 3/8 个有
+- `ImageUpscaleWithModel` —— 2/8 个有
+- `INTConstant` —— 1/8 个有
+- `ImageResize+` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | 10 - 30 | 7 | 54% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 7 | 19% |
-| 采样算法 | uni_pc | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 30，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，7 个样本，取值分散，一致性仅 19%
-- 采样算法 最常用 uni_pc，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

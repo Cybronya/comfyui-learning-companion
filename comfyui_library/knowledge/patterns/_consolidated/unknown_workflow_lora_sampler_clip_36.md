@@ -1,83 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_36
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: strong
-coverage: 0.702
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSampler, LoraLoader, ModelSamplingSD3, SaveVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanVaceToVideo]
+coverage: 0.7123
+common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ColorCorrect, Image Comparer (rgthree), ImageScaleBy, Int, KSampler, LoraLoaderModelOnly, MemoryCleaner, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [comfyui-workflow-templates-json/video_wan_vace_14B_ref2v.json, comfyui-workflow-templates-json/video_wan_vace_14B_t2v.json, comfyui-workflow-templates-json/video_wan_vace_outpainting.json, 视频生成/图生视频/1954529424794370049.json, 视频生成/图生视频/1959350943030652929.json, 视频生成/图生视频/1926991420400500737.json, 视频生成/文生视频/1959310423428378626.json]
+members: [图片生成/文生图/Qwen-image2512+文生图+高清放大_2006552281617014786.json, 图片生成/文生图/Qwen-image2512文生图+seedvr2放大（4K）_2006688942132830209.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2006358896344047617.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2008143714165723138.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2011686421953781762.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2013576617548845058.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2048380210885697538.json, 图片生成/文生图/Qwen-image2512文生图+高清放大_2061008676458156034.json, 图片生成/文生图/Qwen-image2512文生图_2007145074009837570.json, 图片生成/文生图/文生图-Qwen-image2512海报-字体-抽象-艺术摄影等_2007748442419896321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_36
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_vace_14B_ref2v.json、comfyui-workflow-templates-json/video_wan_vace_14B_t2v.json、comfyui-workflow-templates-json/video_wan_vace_outpainting.json、视频生成/图生视频/1954529424794370049.json、视频生成/图生视频/1959350943030652929.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Qwen-image2512+文生图+高清放大_2006552281617014786.json、图片生成/文生图/Qwen-image2512文生图+seedvr2放大（4K）_2006688942132830209.json、图片生成/文生图/Qwen-image2512文生图+高清放大_2006358896344047617.json、图片生成/文生图/Qwen-image2512文生图+高清放大_2008143714165723138.json、图片生成/文生图/Qwen-image2512文生图+高清放大_2011686421953781762.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
+- `CR SDXL Aspect Ratio`
+- `ColorCorrect`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `Int`
 - `KSampler`
-- `LoraLoader`
-- `ModelSamplingSD3`
-- `SaveVideo`
-- `TrimVideoLatent`
+- `LoraLoaderModelOnly`
+- `MemoryCleaner`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanVaceToVideo`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageToMask` —— 6/7 个有
-- `MaskToImage` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `RepeatImageBatch` —— 6/7 个有
-- `SaveAnimatedWEBP` —— 6/7 个有
-- `LoadImage` —— 5/7 个有
-- `SolidMask` —— 5/7 个有
-- `ImageBatch` —— 4/7 个有
-- `PrimitiveInt` —— 4/7 个有
-- `BatchImagesNode` —— 1/7 个有
-- `GetVideoComponents` —— 1/7 个有
-- `ImagePadForOutpaint` —— 1/7 个有
-- `LoadVideo` —— 1/7 个有
-- `RMBG` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `SeedVR2` —— 9/10 个有
+- `SeedVR2BlockSwap` —— 9/10 个有
+- `SeedVR2ExtraArgs` —— 9/10 个有
+- `PreviewImage` —— 8/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/10 个有
+- `CR Text` —— 3/10 个有
+- `LoadImage` —— 2/10 个有
+- `easy imageConcat` —— 2/10 个有
+- `easy promptLine` —— 2/10 个有
+- `easy seed` —— 2/10 个有
+- `SeedVR2LoadDiTModel` —— 1/10 个有
+- `SeedVR2LoadVAEModel` —— 1/10 个有
+- `SeedVR2VideoUpscaler` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.4 | 0.3 - 0.7 | 7 | 61% |
-| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
-| 采样步数 | 4 | 3 - 4 | 7 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | uni_pc | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 8 | 4 - 8 | 10 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | res_2s | - | 10 | 100% |
+| 调度器 | beta57 | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.4，观测区间 0.3 - 0.7，7 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 3 - 4，7 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，10 个样本，一致性 100%
+- 调度器 最常用 beta57，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（12/10 个样本）：Steps较低可能导致细节不足

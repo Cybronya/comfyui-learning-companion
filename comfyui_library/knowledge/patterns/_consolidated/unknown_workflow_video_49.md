@@ -3,39 +3,36 @@ name: unknown_workflow_video_49
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.788333
-common_nodes: [CR Prompt Text, Float, JWInteger, LoadImage, PreviewImage, RunningHub_FramePack_F1, VHS_VideoCombine]
+coverage: 1
+common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
 problems: []
 missing: []
-members: [视频生成/图生视频/1919668964639571969.json, 视频生成/图生视频/1919371858402283522.json, 视频生成/图生视频/1919967550505943042.json]
+members: [数字人/数字人/LatentSync 1.6_2091491962556866562.json, 视频生成/图生视频/latentsync1.5_comfyui 升级版_1920521847933173762.json, 视频生成/图生视频/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2068726028138278913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_49
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1919668964639571969.json、视频生成/图生视频/1919371858402283522.json、视频生成/图生视频/1919967550505943042.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6_2091491962556866562.json、视频生成/图生视频/latentsync1.5_comfyui 升级版_1920521847933173762.json、视频生成/图生视频/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2068726028138278913.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `JWInteger`
-- `LoadImage`
-- `PreviewImage`
-- `RunningHub_FramePack_F1`
+- `LatentSyncNode`
+- `LoadAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VideoLengthAdjuster`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `IndexTTSNode` —— 1/3 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

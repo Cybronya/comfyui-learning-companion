@@ -1,53 +1,47 @@
 ---
 name: unknown_workflow_sampler_vae_45
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9085
-common_nodes: [CreateVideo, ImageResize+, LoadImage, PDRatioSelector, PreviewImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, RH_Captioner, SaveVideo, StringConcatenate, StringConstantMultiline]
+frequency: 4
+level: moderate
+coverage: 0.8635
+common_nodes: [JoyAI_Image_ENCODER, JoyAI_Image_LATENTS, JoyAI_Image_SM_Clip, JoyAI_Image_SM_KSampler, JoyAI_Image_SM_Model, JoyAI_Image_SM_VAE, JoyAI_Vae_Decoder, LoadImage, PreviewAny, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 FL2VA开源版-尾参考生视频_2084223496103747586.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首帧参考生视频_2084209553008316417.json]
+members: [图片生成/图生图/JoyAI_Image图像编辑_2042043063824031746.json, 图片生成/图生图/京东编辑模型_2079972499621761026.json, 图片生成/文生图/JoyAI-Image单图编辑_2043308514138918913.json, 图片生成/文生图/JoyAI_Image 图像编辑_2043146539337519106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_45
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA开源版-尾参考生视频_2084223496103747586.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首帧参考生视频_2084209553008316417.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/JoyAI_Image图像编辑_2042043063824031746.json、图片生成/图生图/京东编辑模型_2079972499621761026.json、图片生成/文生图/JoyAI-Image单图编辑_2043308514138918913.json、图片生成/文生图/JoyAI_Image 图像编辑_2043146539337519106.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CreateVideo`
-- `ImageResize+`
+全部 4 个 workflow 都包含：
+- `JoyAI_Image_ENCODER`
+- `JoyAI_Image_LATENTS`
+- `JoyAI_Image_SM_Clip`
+- `JoyAI_Image_SM_KSampler`
+- `JoyAI_Image_SM_Model`
+- `JoyAI_Image_SM_VAE`
+- `JoyAI_Vae_Decoder`
 - `LoadImage`
-- `PDRatioSelector`
-- `PreviewImage`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3FL2VAEncode`
-- `RHMiniMaxH3FL2VAModelLoader`
-- `RHMiniMaxH3FL2VATarget`
-- `RHMiniMaxH3FL2VATextEncoderLoader`
-- `RHMiniMaxH3FL2VAVAELoader`
-- `RH_Captioner`
-- `SaveVideo`
-- `StringConcatenate`
-- `StringConstantMultiline`
+- `PreviewAny`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 1/2 个有
-- `RHMiniMaxH3FL2VALastFrameCondition` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
+- `AddLabel` —— 2/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `KepStringLiteral` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `image_scale_pixel_v2` —— 2/4 个有
+- `MuyeSizeSelector` —— 1/4 个有
 
 ## 典型参数
 
@@ -59,4 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

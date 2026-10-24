@@ -1,76 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_unet_71
 type: Unknown Workflow
-frequency: 9
+frequency: 12
 level: moderate
-coverage: 0.965111
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.909667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/image_z_image_turbo文生图_2085969344235917313.json, 图片生成/文生图/image_z_image_turbo造像 去除ai油腻味文生图_1996224077834633218.json, 图片生成/文生图/image_z_turbo_文生图_原版无Lora_2004484063744454657.json, 图片生成/文生图/ovis-image-文生图工作流_1997464079977627649.json, 图片生成/文生图/qwen Image2512-文生图片生成视觉海报平面设计-封装优化版_2092630964051734530.json, 图片生成/文生图/qwen-image-2512工作流_2067229524982587394.json, 图片生成/文生图/qwen-文生图_2090010243379060737.json, 图片生成/文生图/qwen2512文生图_2058014938349785090.json, 图片生成/文生图/zimage base_电影级风格LORA测试_2059298671640010754.json]
+members: [图片生成/图生图/WH-AI-Studio换脸（flux2-klein）_2022508733837877249.json, 图片生成/图生图/一键换脸换头！加强版！Flux Klein BFS_2041772041380044802.json, 图片生成/图生图/万能图像修改编辑超强版-FAN REN_2020960397976674306.json, 图片生成/图生图/人物替换3.0FluxKlein影视替换加速高质量_2012789311053242369.json, 图片生成/图生图/图像编辑9B版-Flux2 Klein-v1_2013615530917240833.json, 图片生成/图生图/换头Flux2Klein多图编辑4B加速版Flux2Klein_2034479385473978369.json, 图片生成/图生图/换头Flux2Klein多图编辑4B加速版_2034605360421543938.json, 图片生成/图生图/换脸 - Flux2Klein多图编辑4B加速版_2048765588482301953.json, 图片生成/图生图/换脸 - Flux2Klein多图编辑4B加速版_2049322969406640130.json, 图片生成/图生图/换脸 - Flux2Klein多图编辑4B加速版_2049400548134232066.json, 图片生成/图生图/换脸 - Flux2Klein多图编辑4B加速版_2057344216329711618.json, 图片生成/图生图/无痕换头换脸 Klein BFS_2041786489603887105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_71
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/image_z_image_turbo文生图_2085969344235917313.json、图片生成/文生图/image_z_image_turbo造像 去除ai油腻味文生图_1996224077834633218.json、图片生成/文生图/image_z_turbo_文生图_原版无Lora_2004484063744454657.json、图片生成/文生图/ovis-image-文生图工作流_1997464079977627649.json、图片生成/文生图/qwen Image2512-文生图片生成视觉海报平面设计-封装优化版_2092630964051734530.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/WH-AI-Studio换脸（flux2-klein）_2022508733837877249.json、图片生成/图生图/一键换脸换头！加强版！Flux Klein BFS_2041772041380044802.json、图片生成/图生图/万能图像修改编辑超强版-FAN REN_2020960397976674306.json、图片生成/图生图/人物替换3.0FluxKlein影视替换加速高质量_2012789311053242369.json、图片生成/图生图/图像编辑9B版-Flux2 Klein-v1_2013615530917240833.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 7/9 个有
-- `ConditioningZeroOut` —— 4/9 个有
-- `LoraLoaderModelOnly` —— 4/9 个有
-- `SDXLEmptyLatentSizePicker+` —— 2/9 个有
-- `easy promptLine` —— 2/9 个有
-- `AddLabel` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `CR Text Concatenate` —— 1/9 个有
-- `LoadImage` —— 1/9 个有
-- `Primitive string multiline [Crystools]` —— 1/9 个有
-- `easy imageConcat` —— 1/9 个有
-- `easy promptConcat` —— 1/9 个有
+- `CR Text` —— 10/12 个有
+- `ImageConcanate` —— 10/12 个有
+- `JWFloat` —— 8/12 个有
+- `PreviewImage` —— 5/12 个有
+- `EmptyFlux2LatentImage` —— 4/12 个有
+- `GetImageSize` —— 4/12 个有
+- `Image Comparer (rgthree)` —— 4/12 个有
+- `Crop Face` —— 3/12 个有
+- `Load RetinaFace` —— 3/12 个有
+- `GetNode` —— 2/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/12 个有
+- `SetNode` —— 2/12 个有
+- `ImageConcatMulti` —— 1/12 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/12 个有
+- `MaskColorize` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 4 - 50 | 9 | 30% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 9 | 33% |
-| 采样算法 | euler | - | 9 | 56% |
-| 调度器 | simple | - | 9 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 1024x1024 (1.0) | - | 2 | 50% |
-| 高度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 50，9 个样本，取值分散，一致性仅 30%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，9 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 euler，9 个样本，一致性 56%
-- 调度器 最常用 simple，9 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 最常用 1024x1024 (1.0)，2 个样本，一致性 50%
-- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（8/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

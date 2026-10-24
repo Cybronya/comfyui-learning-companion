@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_154
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.8695
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Int, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, RHLLMChatNode, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8855
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/双人完美数字人｜MiniMaxH3人物特效图生视频_2090208010038767617.json, 视频生成/图生视频/完美数字人模特产品展示｜MiniMaxH3图生视频数字人工作流_2087203587905638401.json, 视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3人物特效图生视频_2092874835826401281.json, 视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3图生视频生成_2092686110370648065.json]
+members: [视频生成/图生视频/电影感多参迅捷｜minimax H3防拉丝图生视频工作流_2093110076662968321.json, 视频生成/图生视频/老李多参生视频 多参考图输入视频生成方案_2104710161666498561.json, 视频生成/图生视频/视频模仿动作迁移数字人｜MiniMax H3图生视频工作流_2088372422662770689.json, 视频生成/文生视频/3视频)3音频全能参考(9图H3加速优化版MiniMax_2086537090464047105.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_154
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/双人完美数字人｜MiniMaxH3人物特效图生视频_2090208010038767617.json、视频生成/图生视频/完美数字人模特产品展示｜MiniMaxH3图生视频数字人工作流_2087203587905638401.json、视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3人物特效图生视频_2092874835826401281.json、视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3图生视频生成_2092686110370648065.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/电影感多参迅捷｜minimax H3防拉丝图生视频工作流_2093110076662968321.json、视频生成/图生视频/老李多参生视频 多参考图输入视频生成方案_2104710161666498561.json、视频生成/图生视频/视频模仿动作迁移数字人｜MiniMax H3图生视频工作流_2088372422662770689.json、视频生成/文生视频/3视频)3音频全能参考(9图H3加速优化版MiniMax_2086537090464047105.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -28,18 +28,12 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Int`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `RHLLMChatNode`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
@@ -51,20 +45,31 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `CR Text Concatenate` —— 2/4 个有
-- `CR Text Replace` —— 2/4 个有
-- `JWFloat` —— 2/4 个有
-- `LazySwitch1way` —— 2/4 个有
-- `LazySwitch2way` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `ResolutionSelector` —— 2/4 个有
-- `StringToInt` —— 2/4 个有
-- `ttN concat` —— 2/4 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `ResolutionSelector` —— 3/4 个有
+- `Text` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `LoadVideo` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `DuckHideNode` —— 1/4 个有
+- `EasyCache` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `H3SigmaRefiner` —— 1/4 个有
+- `MiniMaxH3Easy` —— 1/4 个有
+- `MiniMaxH3EasyLoader` —— 1/4 个有
+- `MiniMaxH3EasyModelAdapter` —— 1/4 个有
+- `MiniMaxH3EasyOutput` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `PlaySound|pysssss` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `RTXVideoSuperResolution` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy getNode` —— 1/4 个有
+- `easy setNode` —— 1/4 个有
 
 ## 典型参数
 

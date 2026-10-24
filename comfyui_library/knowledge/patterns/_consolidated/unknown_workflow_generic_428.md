@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_428
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.89575
-common_nodes: [CR Text, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.759833
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json, 视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json, 视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json, 视频生成/文生视频/seedance2.5(支持30秒长视频)_多模态生视频_2086018514942517249.json]
+members: [图片生成/图生图/全能图片G image2_2061070240217391106.json, 图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-低价渠道版G2_2070142031623704577.json, 图片生成/文生图/G PT-image 2 图生图+文生图二合一_2047114788400009218.json, 图片生成/文生图/Image2.0生图低价版_2047484518893887490.json, 图片生成/文生图/image2提示词选择节点+0.1元低价版-全能图片G2-文生_图生（T8）_2049784021718188034.json, 图片生成/文生图/全能图片G image2_2056550103275622401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_428
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json、视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json、视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json、视频生成/文生视频/seedance2.5(支持30秒长视频)_多模态生视频_2086018514942517249.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图片G image2_2061070240217391106.json、图片生成/文生图/AI影视资产创建-角色-场景-风格-多角度多维度一致性-低价渠道版G2_2070142031623704577.json、图片生成/文生图/G PT-image 2 图生图+文生图二合一_2047114788400009218.json、图片生成/文生图/Image2.0生图低价版_2047484518893887490.json、图片生成/文生图/image2提示词选择节点+0.1元低价版-全能图片G2-文生_图生（T8）_2049784021718188034.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
+全部 6 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo` —— 2/4 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/4 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 1/4 个有
+- `CR Prompt Text` —— 4/6 个有
+- `easy showAnything` —— 2/6 个有
+- `GPTImage2PromptSelector` —— 1/6 个有
+- `JjkText` —— 1/6 个有
 
 ## 典型参数
 

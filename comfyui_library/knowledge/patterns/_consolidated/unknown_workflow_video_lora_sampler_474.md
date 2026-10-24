@@ -2,59 +2,63 @@
 name: unknown_workflow_video_lora_sampler_474
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageConcatMulti, ImageScaleBy, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo]
+level: moderate
+coverage: 0.95975
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1990969601058086914.json, 视频生成/图生视频/1997905673037971457.json, 视频生成/图生视频/1986208144172994561.json, 视频生成/图生视频/1982334863921561601.json]
+members: [视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json, 视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json, 视频生成/图生视频/H3 极速导演台｜图生·首尾帧·多参一体化（8步双时钟）_2086807475478683649.json, 视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_474
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1990969601058086914.json、视频生成/图生视频/1997905673037971457.json、视频生成/图生视频/1986208144172994561.json、视频生成/图生视频/1982334863921561601.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json、视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json、视频生成/图生视频/H3 极速导演台｜图生·首尾帧·多参一体化（8步双时钟）_2086807475478683649.json、视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `CLIPVisionEncode` —— 2/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `WanFourFrameReferenceUltimate` —— 2/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `Int` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `ResolutionSelector` —— 2/4 个有
+- `WujiCleaner` —— 2/4 个有
+- `WujiImageLoader` —— 2/4 个有
+- `ExtendIntermediateSigmas` —— 1/4 个有
+- `H3SigmaRefiner` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `MiniMaxChunkFeedForward` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/4 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/4 个有
+- `MiniMaxLowVRAMAttention` —— 1/4 个有
+- `RHMiniMaxH3PromptOptimizer` —— 1/4 个有
+- `SolAttnMiniMax` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 5 | 5 - 5 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 5，观测区间 5 - 5，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,87 +1,84 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_26
 type: Unknown Workflow
-frequency: 3
+frequency: 7
 level: strong
-coverage: 0.844333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, Text Concatenate, Text Multiline, CR SDXL Aspect Ratio]
-members: [图片生成/文生图/1973197627275784193.json, 图片生成/文生图/1988050506423668737.json, 图片生成/文生图/1988095557270937601.json]
+coverage: 0.729714
+common_nodes: [Anything Everywhere3, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, DuckDecodeNode, DuckHideNode, Fast Groups Bypasser (rgthree), GetImageSize+, Image Comparer (rgthree), Image Tiled, ImageConcanate, ImageFromBatch, ImageResize+, ImageScaleBy, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenImageLatentAspectRatio, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TwoWaySwitch, UltimateSDUpscaleNoUpscale, UpscaleModelLoader, VAEDecode, easy cleanGpuUsed, easy showAnything]
+problems: []
+missing: []
+members: [图片生成/图生图/文生图  快速生成_2048948949922357250.json, 图片生成/文生图/文生图青花瓷小唐风_2047280664713633793.json, 图片生成/文生图/文生图，图生图。影楼级别皮肤细化 4K 8K_2007805496383774722.json, 图片生成/文生图/文生图，图生图。影楼级别皮肤细化 4K 8K_2058765912265805825.json, 图片生成/文生图/文生图，图生图。最强皮肤质感，8K影楼级别，感谢蓝神_2013623446646820865.json, 图片生成/文生图/文生图，大唐文成公主_2047144389541105665.json, 图片生成/文生图/自用_2046532042887794690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_26
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1973197627275784193.json、图片生成/文生图/1988050506423668737.json、图片生成/文生图/1988095557270937601.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/文生图  快速生成_2048948949922357250.json、图片生成/文生图/文生图青花瓷小唐风_2047280664713633793.json、图片生成/文生图/文生图，图生图。影楼级别皮肤细化 4K 8K_2007805496383774722.json、图片生成/文生图/文生图，图生图。影楼级别皮肤细化 4K 8K_2058765912265805825.json、图片生成/文生图/文生图，图生图。最强皮肤质感，8K影楼级别，感谢蓝神_2013623446646820865.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
+- `DuckDecodeNode`
+- `DuckHideNode`
 - `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
+- `Image Tiled`
+- `ImageConcanate`
+- `ImageFromBatch`
+- `ImageResize+`
 - `ImageScaleBy`
+- `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
-- `KSampler`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `QwenImageLatentAspectRatio`
 - `SaveImage`
-- `UNETLoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TwoWaySwitch`
+- `UltimateSDUpscaleNoUpscale`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `LayerUtility: ImageReel` —— 2/3 个有
-- `LayerUtility: ImageReelComposit` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `Text Concatenate` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `TextInputBasic` —— 1/3 个有
+- `CompressImages` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 3 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.35 - 1 | 3 | 61% |
-| LoRA 模型强度 | 0.7 | - | 2 | 100% |
-| LoRA 文本强度 | 0.7 | - | 2 | 100% |
+| 采样步数 | randomize | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 9 | 9 - 9 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 100% |
+| 重绘幅度 | ddim_uniform | - | 7 | 86% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，3 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.35 - 1，3 个样本
-- LoRA 模型强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（6/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageReel、LayerUtility: ImageReelComposit、Text Concatenate、Text Multiline、CR SDXL Aspect Ratio
+- 采样步数 最常用 randomize，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 9，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 100%
+- 重绘幅度 最常用 ddim_uniform，7 个样本，一致性 86%

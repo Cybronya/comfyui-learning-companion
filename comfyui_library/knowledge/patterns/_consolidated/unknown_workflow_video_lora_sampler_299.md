@@ -7,13 +7,13 @@ coverage: 0.791286
 common_nodes: [BatchImagesNode, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, CreateVideo, GetVideoComponents, ImageConcatMulti, ImageFromBatch, KSamplerAdvanced, LoadImage, LoadVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, RHLLMChatNode, SaveVideo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy imageScaleDownToSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/2061860532604465153.json, 视频生成/图生视频/2062715583887663106.json, 视频生成/图生视频/2020633781832519681.json, 视频生成/图生视频/2065039973153333250.json, 视频生成/图生视频/2062714987814146049.json, 视频生成/文生视频/Bernini-R 主体替换视频编辑流程_2062503702258348033.json, 视频生成/文生视频/Bernini-R 参考背景视频替换流程_2062503708742733826.json]
+members: [视频生成/图生视频/Bernini贝尔尼尼高噪无加速版_2061860532604465153.json, 视频生成/图生视频/Bernini贝尔尼尼高噪无加速版（超牛动作迁移）_2062715583887663106.json, 视频生成/图生视频/服装新玩法-Bernini人物替换_2020633781832519681.json, 视频生成/图生视频/服装模特视频背景替换_2065039973153333250.json, 视频生成/图生视频/高噪无加速版_2062714987814146049.json, 视频生成/文生视频/Bernini-R 主体替换视频编辑流程_2062503702258348033.json, 视频生成/文生视频/Bernini-R 参考背景视频替换流程_2062503708742733826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_299
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2061860532604465153.json、视频生成/图生视频/2062715583887663106.json、视频生成/图生视频/2020633781832519681.json、视频生成/图生视频/2065039973153333250.json、视频生成/图生视频/2062714987814146049.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Bernini贝尔尼尼高噪无加速版_2061860532604465153.json、视频生成/图生视频/Bernini贝尔尼尼高噪无加速版（超牛动作迁移）_2062715583887663106.json、视频生成/图生视频/服装新玩法-Bernini人物替换_2020633781832519681.json、视频生成/图生视频/服装模特视频背景替换_2065039973153333250.json、视频生成/图生视频/高噪无加速版_2062714987814146049.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7

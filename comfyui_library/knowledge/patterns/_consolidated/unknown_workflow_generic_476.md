@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_476
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [CM_IntToFloat, IndexTTSRun, LoadAudio, Primitive integer [Crystools], SaveAudio, Text Multiline]
+coverage: 0.942
+common_nodes: [Int, JjkText, LoadAudio, Note _O, SaveAudio, SparkTTSClone, SparkTTSRun, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json, 音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json, 音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json, 音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json]
+members: [音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json, 音频生成/音频生成/文本转语音-克隆_1944291353318555649.json, 音频生成/音频生成/语音克隆_文本转语音工作流-两个功能_2040153394723168257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_476
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json、音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json、音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json、音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json、音频生成/音频生成/文本转语音-克隆_1944291353318555649.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CM_IntToFloat`
-- `IndexTTSRun`
+全部 6 个 workflow 都包含：
+- `Int`
+- `JjkText`
 - `LoadAudio`
-- `Primitive integer [Crystools]`
+- `Note _O`
 - `SaveAudio`
-- `Text Multiline`
+- `SparkTTSClone`
+- `SparkTTSRun`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/4 个有
+- `Preview from image [Crystools]` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

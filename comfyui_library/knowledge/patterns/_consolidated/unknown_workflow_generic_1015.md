@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_1015
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.333
-common_nodes: [CR Text, GetNode, PrimitiveBoolean, RH_Suno_Custom, RH_Suno_Lyrics, SaveAudio, SetNode, ShowText|pysssss, Text Multiline, easy ifElse]
+frequency: 3
+level: moderate
+coverage: 0.876667
+common_nodes: [LoadImage, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/【音乐生成】SunoV5文生音乐（自动歌词）_2020660119901577218.json, 音频生成/音频生成/【音乐生成】SunoV5文音乐工作流 V1.0_2040530620706721793.json]
+members: [视频生成/图生视频/RH-目前最强视频生成模型（须冲值）_2037504187344363522.json, 视频生成/图生视频/超好用的最强视频模型（图片视频编辑真人版）_2038078670346133505.json, 视频生成/文生视频/seedance2.0超强多模态全能参考_2039735724001464321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1015
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【音乐生成】SunoV5文生音乐（自动歌词）_2020660119901577218.json、音频生成/音频生成/【音乐生成】SunoV5文音乐工作流 V1.0_2040530620706721793.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/RH-目前最强视频生成模型（须冲值）_2037504187344363522.json、视频生成/图生视频/超好用的最强视频模型（图片视频编辑真人版）_2038078670346133505.json、视频生成/文生视频/seedance2.0超强多模态全能参考_2039735724001464321.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：33%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `PrimitiveBoolean`
-- `RH_Suno_Custom`
-- `RH_Suno_Lyrics`
-- `SaveAudio`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Multiline`
-- `easy ifElse`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `LoadVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 2/3 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 2/3 个有
+- `RH_SparkVideoAssetCreate` —— 2/3 个有
+- `RH_SparkVideoAssetIdsMerge` —— 2/3 个有
 
 ## 典型参数
 
@@ -44,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,67 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_unet_55
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9147
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 14
+level: moderate
+coverage: 0.915214
+common_nodes: [CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-image单一模型多场景对比测试_2064696364189184002.json, 图片生成/文生图/Z_image文生图极速版_2064941900221734914.json, 图片生成/文生图/chris_export_image_z_image_turbo_02_2004521005383118850.json, 图片生成/文生图/chris_export_image_z_image_turbo_2002908032482852866.json, 图片生成/文生图/danotebook-z-image-turbo_2062428549738487809.json, 图片生成/文生图/image_z_image_turbo_2058123503169269762.json, 图片生成/文生图/z-image-turbo文生图_2081602813930594305.json, 图片生成/文生图/z-image-turbo文生图工作流_1997643407344513025.json, 图片生成/文生图/z_image_turbo文生图_2067946808487276545.json, 图片生成/文生图/z_image_turbo文生图透明_2067952553903611905.json]
+members: [图片生成/图生图/F.2 - klein9b - 自动溶图打光一致性_2057337249720782849.json, 图片生成/图生图/F.2Klein9bBFS最强换脸保持一致性_2063776218675245057.json, 图片生成/图生图/F.2Klein9b全能图像编辑超强一致性_2056202050345684993.json, 图片生成/图生图/F.2Klein9b全能图像编辑超强一致性_2057338153110953986.json, 图片生成/图生图/F.2Klein9b全能图像编辑超强证件照一致性_2053752493900873729.json, 图片生成/图生图/F.2klein9b自动溶图打光一致性_2053386790131773442.json, 图片生成/图生图/F.2klein9b自动溶图打光一致性_2056051923589058561.json, 图片生成/图生图/F.2klein9b自动溶图打光一致性_2056259309541089281.json, 图片生成/图生图/F.2klein9b自动溶图打光一致性_2057329599301902337.json, 图片生成/图生图/F2K图像编辑_2091763181373976577.json, 图片生成/图生图/Flux2图像编辑换装局部重绘_2092444261538160642.json, 图片生成/图生图/Klein-9b-高一致性图像编辑可娱乐_2053013506131279873.json, 图片生成/图生图/Klein-9b-高一致性图像编辑（可娱乐）_2032259159961374721.json, 图片生成/图生图/flux2 Klein图像编辑-改背景，改颜色_2059198574604414977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_55
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Z-image单一模型多场景对比测试_2064696364189184002.json、图片生成/文生图/Z_image文生图极速版_2064941900221734914.json、图片生成/文生图/chris_export_image_z_image_turbo_02_2004521005383118850.json、图片生成/文生图/chris_export_image_z_image_turbo_2002908032482852866.json、图片生成/文生图/danotebook-z-image-turbo_2062428549738487809.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/F.2 - klein9b - 自动溶图打光一致性_2057337249720782849.json、图片生成/图生图/F.2Klein9bBFS最强换脸保持一致性_2063776218675245057.json、图片生成/图生图/F.2Klein9b全能图像编辑超强一致性_2056202050345684993.json、图片生成/图生图/F.2Klein9b全能图像编辑超强一致性_2057338153110953986.json、图片生成/图生图/F.2Klein9b全能图像编辑超强证件照一致性_2053752493900873729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BiRefNetRMBG` —— 1/10 个有
-- `DF_Text` —— 1/10 个有
-- `GetNode` —— 1/10 个有
-- `SetNode` —— 1/10 个有
-- `忽略多组孤海` —— 1/10 个有
+- `CFGGuider` —— 9/14 个有
+- `ConditioningZeroOut` —— 9/14 个有
+- `EmptyFlux2LatentImage` —— 9/14 个有
+- `ImageScaleToTotalPixels` —— 9/14 个有
+- `Int` —— 9/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/14 个有
+- `LoraLoaderModelOnly` —— 8/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/14 个有
+- `Seed (rgthree)` —— 6/14 个有
+- `BasicGuider` —— 5/14 个有
+- `ColorMatch` —— 5/14 个有
+- `easy positive` —— 5/14 个有
+- `CR Text` —— 3/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/14 个有
+- `ImageResizeKJv2` —— 3/14 个有
+- `PreviewImage` —— 3/14 个有
+- `HAIGC_SaveImagesToZip` —— 2/14 个有
+- `LoadLatent` —— 2/14 个有
+- `SaveLatent` —— 2/14 个有
+- `easy imageConcat` —— 2/14 个有
+- `PreviewAny` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8.5 | 4 - 9 | 10 | 75% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | res_multistep | - | 10 | 90% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 17/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，观测区间 4 - 9，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，10 个样本，一致性 90%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（17/10 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,64 +3,54 @@ name: unknown_workflow_video_lora_sampler_544
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8005
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, UniBlockSwap, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.52025
+common_nodes: [FloatConstant, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json, 视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json, 视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json, 视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json]
+members: [视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json, 视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json, 视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json, 视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_544
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json、视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json、视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json、视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/LongCat-Video 无限时长视频生成_1999300125157715969.json、视频生成/文生视频/LongCat_TI2V_example_KJ_1984174028443320321.json、视频生成/文生视频/LongCat_TI2V_长视频生成-图生视频工作流_KJ 低显存版本_1985711002132127745.json、视频生成/文生视频/全新AI视频大模型，LongCat-Video，生成无限时长视频_1985749760042835969.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `EasyCache`
-- `Label (rgthree)`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SolAttnPatch`
-- `SpectrumApplyMiniMaxH3`
-- `UNETLoader`
-- `UniBlockSwap`
-- `VAELoader`
+- `FloatConstant`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchExtendWithOverlap`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `SetNode`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `SolAttnMiniMax` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `BasicScheduler` —— 1/4 个有
-- `CS-MultiImageLoader` —— 1/4 个有
-- `KSamplerSelect` —— 1/4 个有
-- `LoadAudio` —— 1/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `CR SDXL Aspect Ratio` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

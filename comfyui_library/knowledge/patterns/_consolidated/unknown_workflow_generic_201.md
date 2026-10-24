@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_201
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.736167
-common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.9667
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/image two文生图_2060255026014150658.json, 图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json, 图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json, 图片生成/文生图/全能图片G-2.0 文生图｜低价渠道版_2095861286939746306.json, 图片生成/文生图/全能图片G-2.0-文生图-低价渠道版_2077946160488210433.json, 图片生成/文生图/全能图片G-2.0文生图(低价渠道版)_2082295443026956290.json]
+members: [数字人/数字人/音色克隆-v1_2094769389882142721.json, 数字人/数字人/音色设计_2094769410778165249.json, 音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json, 音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json, 音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json, 音频生成/音频生成/VoxCPM2 基础工作流_2042504143272681474.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054212924264206337.json, 音频生成/音频生成/VoxCPM2 基础工作流_2054582646944092162.json, 音频生成/音频生成/VoxCPM2 语音克隆_2056949209022164994.json, 音频生成/音频生成/音色设计_2111054904671424513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_201
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/image two文生图_2060255026014150658.json、图片生成/文生图/全能图像G image2.0文生图_2046773363997151233.json、图片生成/文生图/全能图像G image2.0文生图低价渠道版_2059131909208363010.json、图片生成/文生图/全能图片G-2.0 文生图｜低价渠道版_2095861286939746306.json、图片生成/文生图/全能图片G-2.0-文生图-低价渠道版_2077946160488210433.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/音色克隆-v1_2094769389882142721.json、数字人/数字人/音色设计_2094769410778165249.json、音频生成/音频生成/VoxCPM 2 TTS声音克隆 支持多种方言_2043587000283963394.json、音频生成/音频生成/VoxCPM2 基础工作流-音频生成_2044393021835321345.json、音频生成/音频生成/VoxCPM2 基础工作流_2041760331764080641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 10 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/6 个有
-- `PreviewImage` —— 3/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `LoadAudio` —— 8/10 个有
+- `StringInput` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
 
 ## 典型参数
 

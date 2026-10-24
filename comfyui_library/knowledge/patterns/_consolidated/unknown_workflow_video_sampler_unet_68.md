@@ -1,59 +1,64 @@
 ---
 name: unknown_workflow_video_sampler_unet_68
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.89875
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.773333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Fast Groups Bypasser (rgthree), H3SigmaRefiner, Int, KSamplerSelect, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SolAttnPatch, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json, 视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json, 视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json, 视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json]
+members: [视频生成/图生视频/minimax首尾帧视频-加速_2095432472426270722.json, 视频生成/图生视频/minimax首尾帧视频_2096856647980380161.json, 视频生成/图生视频/新手喂饭！Minimax首尾帧工作流拆解（selfLift）_2101930359096176642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_68
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能参考生视频加速版_2098615905507958786.json、视频生成/图生视频/minimax h3 多参工作流_2094717859841794049.json、视频生成/文生视频/MiniMax-H3-FL2VA-T8-Turbo_2086083227437060098.json、视频生成/文生视频/海螺Minimax_H3文生视频_2084118934588055553.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax首尾帧视频-加速_2095432472426270722.json、视频生成/图生视频/minimax首尾帧视频_2096856647980380161.json、视频生成/图生视频/新手喂饭！Minimax首尾帧工作流拆解（selfLift）_2101930359096176642.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
+- `CR Text`
 - `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `H3SigmaRefiner`
+- `Int`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ImageToVideo`
+- `ModelAttentionBackend`
 - `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SolAttnPatch`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `SolAttnMiniMax` —— 3/4 个有
-- `ExtendIntermediateSigmas` —— 2/4 个有
-- `IntToString` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoraLoaderBypassModelOnly` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `Seed_` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `text-util-join-text` —— 2/4 个有
-- `Text` —— 1/4 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `DF_Int_to_Float` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Bookmark (rgthree)` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `ModelPreviewOverrideKJ` —— 1/3 个有
+- `SeargeFloatConstant` —— 1/3 个有
+- `SelfLiftH3Sampler` —— 1/3 个有
 
 ## 典型参数
 

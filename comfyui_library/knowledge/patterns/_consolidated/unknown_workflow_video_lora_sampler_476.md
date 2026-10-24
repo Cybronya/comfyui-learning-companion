@@ -2,83 +2,103 @@
 name: unknown_workflow_video_lora_sampler_476
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.5075
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CM_IntToFloat, CR Text, CheckpointLoaderSimple, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, PrimitiveBoolean, RH_Translator, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, Switch any [Crystools], Text, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy boolean, easy imageRemBg, 忽略多组孤海]
-problems: []
+level: strong
+coverage: 0.4705
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetNode, GrowMask, ImageFromBatch, ImageResizeKJv2, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, PrimitiveInt, Sam2Segmentation, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy forLoopEnd, easy forLoopStart, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2066443352299622401.json, 视频生成/图生视频/2026_10_02_替换视频的人物和背景专用流_支持人物多参 _Scail 2_2105681606760550401.json, 视频生成/图生视频/261003单人动作迁移、替换视频人物 可多参 高质量极简版_2106393442275385346.json, 视频生成/图生视频/2080301898942476289.json]
+members: [视频生成/图生视频/46. 官流 animate bf16 模型 循环长视频 没有白光和频闪_1977644957609664514.json, 视频生成/图生视频/Wan2_2_14B_Animate_自动循环-动作迁移_1973652058060533761.json, 视频生成/图生视频/官方 wan22_animate 长视频生成 遮罩编辑版_1971013854891282433.json, 视频生成/图生视频/官流 wan22_animate 循环长视频的生成_1972488378526724098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_476
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2066443352299622401.json、视频生成/图生视频/2026_10_02_替换视频的人物和背景专用流_支持人物多参 _Scail 2_2105681606760550401.json、视频生成/图生视频/261003单人动作迁移、替换视频人物 可多参 高质量极简版_2106393442275385346.json、视频生成/图生视频/2080301898942476289.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/46. 官流 animate bf16 模型 循环长视频 没有白光和频闪_1977644957609664514.json、视频生成/图生视频/Wan2_2_14B_Animate_自动循环-动作迁移_1973652058060533761.json、视频生成/图生视频/官方 wan22_animate 长视频生成 遮罩编辑版_1971013854891282433.json、视频生成/图生视频/官流 wan22_animate 循环长视频的生成_1972488378526724098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **可信度**：强结论
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Text`
-- `CheckpointLoaderSimple`
+- `DWPreprocessor`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
+- `GrowMask`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageScale`
+- `KSampler`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `RH_Translator`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `PrimitiveInt`
+- `Sam2Segmentation`
 - `SetNode`
-- `Switch any [Crystools]`
-- `Text`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
-- `easy boolean`
-- `easy imageRemBg`
-- `忽略多组孤海`
+- `WanAnimateToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
+- `EG_SS_RYZH` —— 3/4 个有
 - `GetImageRangeFromBatch` —— 3/4 个有
-- `ImageConcanate` —— 3/4 个有
-- `LoadVideoUI` —— 3/4 个有
-- `RH_RhartImageG2ImageToImage` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `孤海注释` —— 3/4 个有
-- `InvertBoolean` —— 2/4 个有
-- `Fast Bypasser (rgthree)` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `VHS_VideoInfoLoaded` —— 3/4 个有
+- `easy batchAnything` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `easy int` —— 3/4 个有
+- `FaceMaskFromPoseKeypoints` —— 2/4 个有
+- `ImageCropByMaskAndResize` —— 2/4 个有
+- `Bjornulf_ShowFloat` —— 1/4 个有
+- `Bjornulf_ShowInt` —— 1/4 个有
+- `Bool` —— 1/4 个有
+- `ImageBatch` —— 1/4 个有
+- `MaskToImage` —— 1/4 个有
+- `SoundFlow_TrimAudio` —— 1/4 个有
 - `VHS_VideoInfo` —— 1/4 个有
-- `WanAnimatePlus LoraSelect` —— 1/4 个有
+- `easy convertAnything` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 5 | 4 - 6 | 4 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 5，观测区间 4 - 6，4 个样本，取值集中（一致性 80%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

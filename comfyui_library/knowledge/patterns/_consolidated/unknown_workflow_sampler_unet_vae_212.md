@@ -1,64 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_212
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.823
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenPERewriteT8, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.736
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/2103050481391194113.json, 图片生成/文生图/Qwen Image 2.1 PE提示词优化 提取服装 3D展示 精修褶皱_2103745672011935746.json]
+members: [视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json, 视频生成/图生视频/MiniMax H3 多图生视频+音频+视频接入_2090198237796982786.json, 视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json, 视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json, 视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_212
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2103050481391194113.json、图片生成/文生图/Qwen Image 2.1 PE提示词优化 提取服装 3D展示 精修褶皱_2103745672011935746.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json、视频生成/图生视频/MiniMax H3 多图生视频+音频+视频接入_2090198237796982786.json、视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json、视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json、视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenPERewriteT8`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 1/2 个有
-- `Display Any (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageStitch` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `LoadAudio` —— 4/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
+- `PreviewAny` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `llama_cpp_instruct_adv` —— 4/5 个有
+- `llama_cpp_model_loader` —— 4/5 个有
+- `llama_cpp_parameters` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `GetVideoComponents` —— 3/5 个有
+- `LoadVideo` —— 3/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `Any Switch (rgthree)` —— 2/5 个有
+- `CacheDiT_Model_Optimizer` —— 2/5 个有
+- `ImpactSwitch` —— 2/5 个有
+- `JjkText` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 2/5 个有
+- `MiniMaxH3SigmaShift` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `SolAttnPatch` —— 2/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 40 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,11 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

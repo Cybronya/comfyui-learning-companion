@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_831
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6905
-common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, ShowText|pysssss, easy positive, easy saveText]
+frequency: 3
+level: moderate
+coverage: 0.847
+common_nodes: [RecraftColorRGB, RecraftControls, SaveSVGNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2033510744607694850.json, 视频生成/图生视频/2030844856406384641.json]
+members: [comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_vector_gen.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_831
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2033510744607694850.json、视频生成/图生视频/2030844856406384641.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_vector_gen.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `ShowText|pysssss`
-- `easy positive`
-- `easy saveText`
+全部 3 个 workflow 都包含：
+- `RecraftColorRGB`
+- `RecraftControls`
+- `SaveSVGNode`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeLoadImage` —— 1/2 个有
+- `RecraftV4TextToVectorNode` —— 2/3 个有
+- `RecraftTextToVectorNode` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

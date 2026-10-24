@@ -7,13 +7,13 @@ coverage: 0.922
 common_nodes: [ADE_LoopedUniformContextOptions, Apply ControlNet Stack, ColorModEdges, ColorModPivot, Control Net Stacker, ControlNetLoaderAdvanced, Efficient Loader, EmptyLatentImage, IPAdapterAdvanced, IPAdapterUnifiedLoader, ImageScale, ImageScaleBy, ImageToMask, ImageUpscaleWithModel, KSampler (Efficient), LoadImage, PreviewImage, RIFE VFI, UpscaleModelLoader, VAEEncode, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1812675194140942337.json, 视频生成/文生视频/1951651903946084353.json]
+members: [视频生成/图生视频/动物视频制作_1812675194140942337.json, 视频生成/文生视频/植物跳舞_1951651903946084353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_ipadapter_video
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1812675194140942337.json、视频生成/文生视频/1951651903946084353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/动物视频制作_1812675194140942337.json、视频生成/文生视频/植物跳舞_1951651903946084353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

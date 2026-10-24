@@ -2,74 +2,79 @@
 name: unknown_workflow_video_lora_sampler_372
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.680667
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, ColorMatch, DWPreprocessor, GetImageRangeFromBatch, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewAny, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+level: strong
+coverage: 0.82
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingSD3, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, PreviewAny, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073345449498603522.json, 视频生成/图生视频/1962399732356222977.json, 视频生成/图生视频/1962399741415919617.json, 视频生成/图生视频/1962391778080985089.json, 视频生成/文生视频/1962055822404685826.json, 视频生成/文生视频/KJ-Wan2.2-S2v_2072999620546174976.json]
+members: [视频生成/图生视频/图加音频生视频数字人-高动态InfiniteTalk 2.1+2.2画音同步_2019801194713059330.json, 视频生成/图生视频/画音直出-图加音频生视频数字人-高动态InfiniteTalk 2.1+2.2_2019054926323781634.json, 视频生成/图生视频/（声音设计）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017275905328029697.json, 视频生成/图生视频/（自定义声音）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017275219941003265.json, 视频生成/图生视频/（贞贞版）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017267666708340738.json, 音频生成/音频生成/影视新闻数字人--真人感LongCat声音克隆--高动态Infinite Talk_2041718640755613698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_372
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2073345449498603522.json、视频生成/图生视频/1962399732356222977.json、视频生成/图生视频/1962399741415919617.json、视频生成/图生视频/1962391778080985089.json、视频生成/文生视频/1962055822404685826.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/图加音频生视频数字人-高动态InfiniteTalk 2.1+2.2画音同步_2019801194713059330.json、视频生成/图生视频/画音直出-图加音频生视频数字人-高动态InfiniteTalk 2.1+2.2_2019054926323781634.json、视频生成/图生视频/（声音设计）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017275905328029697.json、视频生成/图生视频/（自定义声音）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017275219941003265.json、视频生成/图生视频/（贞贞版）Infinite Talk高动态+Qwen TTS音画同步数字人全自动版V1_2017267666708340738.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `AudioEncoderEncode`
 - `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
 - `ColorMatch`
-- `DWPreprocessor`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `ModelSamplingSD3`
+- `PainterAI2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
 - `PreviewAny`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 5/6 个有
-- `GetNode` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `JWInteger` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `easy anythingIndexSwitch` —— 4/6 个有
-- `AudioCrop` —— 3/6 个有
-- `ImageConcatMulti` —— 3/6 个有
-- `WanVideoContextOptions` —— 3/6 个有
-- `INTConstant` —— 2/6 个有
-- `MergeAudioMW` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `VHS_LoadAudio` —— 2/6 个有
-- `WanVideoTorchCompileSettings` —— 2/6 个有
-- `ACE_AudioCrop` —— 1/6 个有
+- `CastAnyToIntStringFloat` —— 4/6 个有
+- `LoadAudio` —— 4/6 个有
+- `MathExpression|pysssss` —— 4/6 个有
+- `RH_GetAudioDuration` —— 4/6 个有
+- `RIFE VFI` —— 4/6 个有
+- `SaveAudio` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `FB_Qwen3TTSCustomVoice` —— 2/6 个有
+- `PreviewAudio` —— 2/6 个有
+- `SimpleMath+` —— 2/6 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/6 个有
+- `LongCatVoiceCloneTTS` —— 1/6 个有
+- `NormalizeAudioLoudness` —— 1/6 个有
+- `Qwen3ASRLoader` —— 1/6 个有
+- `Qwen3ASRTranscribe` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | dpmpp_sde | - | 6 | 67% |
+| 重绘幅度 | normal | - | 6 | 100% |
 
 ## 常见问题
 
@@ -77,4 +82,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，6 个样本，一致性 67%
+- 重绘幅度 最常用 normal，6 个样本，一致性 100%

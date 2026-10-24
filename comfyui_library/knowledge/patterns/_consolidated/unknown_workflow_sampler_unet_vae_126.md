@@ -1,67 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_126
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: strong
-coverage: 0.782
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, SaveImageAdvanced, Text Multiline, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.83125
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [LayerMask: SegmentAnythingUltra V2, Text Multiline, RunningHub SeedXPro Translator]
-members: [图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json, 图片生成/图生图/2051831969377468417.json, 图片生成/文生图/千问image2.1文生图 （创意海报 微小字体不崩坏）_2103398353697595393.json, 图片生成/文生图/千问image2.1文生图-中文海报-自动扩写提示词-可以抠图_2103050117644378114.json, 图片生成/文生图/千问image2.1文生图_创意海报_微小字体不崩坏_2105577600121921537.json, 图片生成/文生图/千问image2.1文生图_创意海报_微小字体不崩坏_2108014065204424705.json]
+missing: []
+members: [图片生成/图生图/Krea2 多图参考图像编辑_2073314422151540738.json, 图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2073903914298208257.json, 图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074305885173800961.json, 图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074417216031911938.json, 图片生成/图生图/krea2图像编辑_2072941442527490050.json, 图片生成/图生图/图像编辑- KREA V2_2073342522730041345.json, 图片生成/图生图/多图编辑- Krea2_2073339264804409345.json, 图片生成/文生图/Krea2 Multi-Image Reference Editing_2073788017583673345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_126
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json、图片生成/图生图/2051831969377468417.json、图片生成/文生图/千问image2.1文生图 （创意海报 微小字体不崩坏）_2103398353697595393.json、图片生成/文生图/千问image2.1文生图-中文海报-自动扩写提示词-可以抠图_2103050117644378114.json、图片生成/文生图/千问image2.1文生图_创意海报_微小字体不崩坏_2105577600121921537.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2 多图参考图像编辑_2073314422151540738.json、图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2073903914298208257.json、图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074305885173800961.json、图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074417216031911938.json、图片生成/图生图/krea2图像编辑_2072941442527490050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `EmptyLatentImage`
-- `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
 - `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `Text Multiline`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenPERewriteT8` —— 5/6 个有
-- `Seed (rgthree)` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `忽略多组孤海` —— 5/6 个有
-- `ComfySwitchNode` —— 2/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `LoadImage` —— 2/6 个有
-- `QwenImage21Cache` —— 2/6 个有
-- `XinbaoImageStandardizer` —— 2/6 个有
-- `GetNode` —— 1/6 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `RunningHub SeedXPro Translator` —— 1/6 个有
-- `SetNode` —— 1/6 个有
+- `Krea2EditRebalance` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `CLIPTextEncode` —— 3/8 个有
+- `ComfyUI-Krea2T-Enhancer` —— 3/8 个有
+- `ConditioningConcat` —— 3/8 个有
+- `ConditioningKrea2Rebalance` —— 3/8 个有
+- `Krea2EncodeRebalance` —— 3/8 个有
+- `Seed (rgthree)` —— 3/8 个有
+- `RMBG` —— 2/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 采样步数 | 25 | 25 - 25 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 8 | 100% |
 
 ## 常见问题
 
@@ -69,11 +62,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: SegmentAnythingUltra V2、Text Multiline、RunningHub SeedXPro Translator
+- 宽度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）

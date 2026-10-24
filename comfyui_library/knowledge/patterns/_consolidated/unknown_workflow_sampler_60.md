@@ -1,43 +1,38 @@
 ---
 name: unknown_workflow_sampler_60
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.821
-common_nodes: [AudioCrop, Bjornulf_FreeVRAM, Demucs_Loader, Demucs_Sampler, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MergeAudioNode, Music_AudioMixer, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor, SaveAudio, Save_Audio]
+frequency: 3
+level: moderate
+coverage: 0.822333
+common_nodes: [CR Prompt Text, JWInteger, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
 problems: []
-missing: [Demucs_Loader, Music_AudioMixer, Demucs_Sampler]
-members: [音频生成/音频生成/一键翻唱爆款歌曲 声线迁移翻唱  音色替换翻唱_2054905399773548546.json, 音频生成/音频生成/一键翻唱爆款歌曲 声线迁移翻唱  音色替换翻唱_2059890167187591169.json]
+missing: []
+members: [音频生成/音频生成/SongGeneration v2模型歌曲生成V2-高风格化_2030927306843230209.json, 音频生成/音频生成/SongGeneration v2模型歌曲生成（歌曲参考）V2-高风格化_2030928326071689217.json, 音频生成/音频生成/SongGeneration 高风格化_2031293641930579970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_60
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/一键翻唱爆款歌曲 声线迁移翻唱  音色替换翻唱_2054905399773548546.json、音频生成/音频生成/一键翻唱爆款歌曲 声线迁移翻唱  音色替换翻唱_2059890167187591169.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/SongGeneration v2模型歌曲生成V2-高风格化_2030927306843230209.json、音频生成/音频生成/SongGeneration v2模型歌曲生成（歌曲参考）V2-高风格化_2030928326071689217.json、音频生成/音频生成/SongGeneration 高风格化_2031293641930579970.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_FreeVRAM`
-- `Demucs_Loader`
-- `Demucs_Sampler`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MergeAudioNode`
-- `Music_AudioMixer`
-- `RunningHub SoulX-Singer Preprocess Pipeline`
-- `RunningHub SoulX-Singer Preprocessor`
-- `RunningHub SoulX-Singer SVS Loader`
-- `RunningHub SoulX-Singer SVS Processor`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `JWInteger`
 - `SaveAudio`
-- `Save_Audio`
+- `SongGeneration_Loader`
+- `SongGeneration_Sampler`
+- `SongGeneration_Stage1`
+- `SongGeneration_Stage2`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 2/3 个有
 
 ## 典型参数
 
@@ -49,5 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Demucs_Loader、Music_AudioMixer、Demucs_Sampler
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

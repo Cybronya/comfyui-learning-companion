@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_generic_936
 type: Unknown Workflow
-frequency: 2
-level: weak
+frequency: 3
+level: moderate
 coverage: 1
-common_nodes: [CR Prompt Text, FL_CosyVoice3_CrossLingual, FL_CosyVoice3_ModelLoader, LoadAudio, PreviewAudio, SaveAudio]
+common_nodes: [LoadImage, SaveImage, ShellAgentPluginSaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice 3跨语种语音克隆TTS V1_2015859372018110465.json, 音频生成/音频生成/CosyVoice3 跨语种语音克隆TTS（支持方言）_2059860204505882626.json]
+members: [图片生成/图生图/商品展示-黑色-图生图_2054356858130968577.json, 图片生成/图生图/超广角镜头+ 低角度仰拍+服饰替换_2052953901036523522.json, 图片生成/图生图/超级爆气特效_2053715018868371458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_936
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/CosyVoice 3跨语种语音克隆TTS V1_2015859372018110465.json、音频生成/音频生成/CosyVoice3 跨语种语音克隆TTS（支持方言）_2059860204505882626.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/商品展示-黑色-图生图_2054356858130968577.json、图片生成/图生图/超广角镜头+ 低角度仰拍+服饰替换_2052953901036523522.json、图片生成/图生图/超级爆气特效_2053715018868371458.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `FL_CosyVoice3_CrossLingual`
-- `FL_CosyVoice3_ModelLoader`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
+- `ShellAgentPluginSaveImage`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 2/3 个有
 
 ## 典型参数
 
@@ -40,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,85 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_25
 type: Unknown Workflow
-frequency: 14
-level: weak
-coverage: 0.879071
-common_nodes: [AddLabel, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptySD3LatentImage, Flux2Scheduler, ImageConcatMulti, KSampler, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 24
+level: strong
+coverage: 0.904458
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Flux Klein 多版本 与 Z-image 对比_2012076351213281282.json, 图片生成/文生图/Flux2.Klein文生图基础款_2012069451797106689.json, 图片生成/文生图/Flux2.Klein文生图基础款_2012489427985108993.json, 图片生成/文生图/Z-image-base、klein与Turbo图像对比_2016490330656346114.json, 图片生成/文生图/flux klein多版本与zimage对比工作流_2012061598302605314.json, 图片生成/文生图/flux2+klein与zimage对比工作流_2012151072038592514.json, 图片生成/文生图/文生图Qwen+Flux2 Klein多版本+Zimage_2012141133685592065.json, 图片生成/文生图/文生图Qwen+Flux2 Klein多版本+Zimage_2084894059092598786.json, 图片生成/文生图/文生图Qwen+Flux2 Klein多版本+Zimage_2084901212222218242.json, 图片生成/文生图/文生图Qwen+Flux2 Klein多版本+Zimage_2084905221939089410.json, 图片生成/文生图/文生图Qwen+Flux2 Klein多版本+Zimage_2089609097233657858.json, 图片生成/文生图/文生图Qwen+Flux2 Klein多版本+Zimage_2108479912758833153.json, 图片生成/文生图/文生图大全，Flux2多版本 VS Zimage_2012128533153320961.json, 图片生成/文生图/文生图（大漠孤烟直，长河落日圆）_2061330236628885505.json]
+members: [图片生成/图生图/Klein 单图编辑【用于绘世comfyui批量管理系统】_2089195480411623426.json, 图片生成/图生图/Klein-i2i_2089727593099649025.json, 图片生成/图生图/Klein-is2i_2068689580571844609.json, 图片生成/图生图/Klein-一致性编辑_2086324766218215426.json, 图片生成/图生图/Klein9B一键生成姿态变换 改变姿势_2071187621459619841.json, 图片生成/图生图/Klein9B一键生成姿态变换 改变姿势图生图_2071957948699602945.json, 图片生成/图生图/Klein9B图片编辑_深度+线稿+法线+硬边缘控制_2070761465564459010.json, 图片生成/图生图/Klein9B姿态变换_2070588045203693570.json, 图片生成/图生图/Klein9B姿态变换_2070762335559577601.json, 图片生成/图生图/Klein9B姿态变换_2070886463251771394.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑_2070582560786313218.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑图生图工作流_2083137344915460098.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑工作流_2071184794939125761.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑工作流_2071950437573545986.json, 图片生成/图生图/Klein用方框进行图像增改删_2042840062538289154.json, 图片生成/图生图/klein 单图参考_2048402694292901891.json, 图片生成/图生图/klein 双图编辑_2048417433756639234.json, 图片生成/图生图/klein 扩图_2018209439236493313.json, 图片生成/图生图/klein 扩图_局部重绘_2012965333056888833.json, 图片生成/图生图/klein 扩图_局部重绘_2016153153808371714.json, 图片生成/图生图/klein单图编辑_2014331376341880834.json, 图片生成/图生图/klein单图编辑_2026469050368397313.json, 图片生成/图生图/klein单图编辑——修改版_2033387043891449857.json, 图片生成/图生图/klein扩图工作流_2013942199481798658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_25
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Flux Klein 多版本 与 Z-image 对比_2012076351213281282.json、图片生成/文生图/Flux2.Klein文生图基础款_2012069451797106689.json、图片生成/文生图/Flux2.Klein文生图基础款_2012489427985108993.json、图片生成/文生图/Z-image-base、klein与Turbo图像对比_2016490330656346114.json、图片生成/文生图/flux klein多版本与zimage对比工作流_2012061598302605314.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/Klein 单图编辑【用于绘世comfyui批量管理系统】_2089195480411623426.json、图片生成/图生图/Klein-i2i_2089727593099649025.json、图片生成/图生图/Klein-is2i_2068689580571844609.json、图片生成/图生图/Klein-一致性编辑_2086324766218215426.json、图片生成/图生图/Klein9B一键生成姿态变换 改变姿势_2071187621459619841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：24
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `AddLabel`
+全部 24 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `EmptySD3LatentImage`
 - `Flux2Scheduler`
-- `ImageConcatMulti`
-- `KSampler`
 - `KSamplerSelect`
-- `ModelSamplingAuraFlow`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 12/14 个有
-- `LayerUtility: PurgeVRAM` —— 10/14 个有
-- `DF_Get_latent_size` —— 8/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/14 个有
-- `LoraLoaderModelOnly` —— 8/14 个有
-- `PreviewImage` —— 8/14 个有
-- `QwenImageLatentAspectRatio` —— 8/14 个有
-- `ShowAnything|Mie` —— 8/14 个有
-- `easy cleanGpuUsed` —— 8/14 个有
-- `CFGNorm` —— 4/14 个有
-- `PrimitiveInt` —— 4/14 个有
-- `AILab_QwenVL` —— 2/14 个有
-- `JDCN_StringToList` —— 2/14 个有
-- `ShowText|pysssss` —— 2/14 个有
-- `easy int` —— 2/14 个有
+- `ImageScaleToTotalPixels` —— 23/24 个有
+- `EmptyFlux2LatentImage` —— 21/24 个有
+- `GetImageSize` —— 20/24 个有
+- `PreviewImage` —— 18/24 个有
+- `ConditioningZeroOut` —— 16/24 个有
+- `LoraLoaderModelOnly` —— 12/24 个有
+- `AIO_Preprocessor` —— 10/24 个有
+- `ImageConcatMulti` —— 10/24 个有
+- `easy seed` —— 8/24 个有
+- `ImagePadForOutpaint` —— 7/24 个有
+- `ImageConcanate` —— 6/24 个有
+- `ColorMatch` —— 4/24 个有
+- `Image Comparer (rgthree)` —— 4/24 个有
+- `DrawMaskOnImage` —— 3/24 个有
+- `EmptyLatentImage` —— 3/24 个有
+- `INTConstant` —— 3/24 个有
+- `PrimitiveStringMultiline` —— 2/24 个有
+- `CR Text` —— 1/24 个有
+- `ConstrainImage|pysssss` —— 1/24 个有
+- `EasySizeSimpleImage` —— 1/24 个有
+- `ImageUpscaleWithModel` —— 1/24 个有
+- `UpscaleModelLoader` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 30 | 14 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 14 | 65% |
-| 采样算法 | res_multistep | - | 14 | 93% |
-| 调度器 | simple | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 16/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 30，14 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，14 个样本
-- 采样算法 最常用 res_multistep，14 个样本，一致性 93%
-- 调度器 最常用 simple，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（16/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）

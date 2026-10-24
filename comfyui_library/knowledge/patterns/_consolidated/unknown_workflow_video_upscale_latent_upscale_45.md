@@ -7,13 +7,13 @@ coverage: 0.813375
 common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy int, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json, 视频生成/图生视频/2068875271280873474.json, 视频生成/图生视频/2069018499376312322.json, 视频生成/图生视频/2069213658181365761.json, 视频生成/图生视频/2068898654504706050.json, 视频生成/图生视频/2069966527956344833.json, 视频生成/图生视频/2075040945753640962.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2095739123867938818.json]
+members: [图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json, 视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json, 视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json, 视频生成/图生视频/LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_2069213658181365761.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2068898654504706050.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2069966527956344833.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2075040945753640962.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2095739123867938818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_45
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json、视频生成/图生视频/2068875271280873474.json、视频生成/图生视频/2069018499376312322.json、视频生成/图生视频/2069213658181365761.json、视频生成/图生视频/2068898654504706050.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json、视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json、视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json、视频生成/图生视频/LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_2069213658181365761.json、视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2068898654504706050.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_243
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.942
-common_nodes: [Int, JjkText, LoadAudio, Note _O, SaveAudio, SparkTTSClone, SparkTTSRun, easy anythingIndexSwitch]
+coverage: 0.688
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json, 音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json, 音频生成/音频生成/文本转语音-克隆_1944291353318555649.json, 音频生成/音频生成/语音克隆_文本转语音工作流-两个功能_2040153394723168257.json]
+members: [视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json, 视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json, 视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json, 视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json, 视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json, 视频生成/文生视频/全能视频S-卖护肤品+衣服+兵马俑_1977261430313492482.json, 视频生成/文生视频/全能视频S-图生视频-蛤蟆精_1994200651171299330.json, 视频生成/文生视频/全能视频S-文生视频-与小时候的自己一起玩耍_1978032008305717250.json, 视频生成/文生视频/全能视频S-文生视频-老鼠人_1990657346928074753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_243
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Spark TTS Run 克隆语音_1962099706874761218.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音 v260216_2023749764545777666.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1909431148496171009.json、音频生成/音频生成/Spark TTS Run文本转语音_克隆语音_1963325593788067841.json、音频生成/音频生成/文本转语音-克隆_1944291353318555649.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json、视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json、视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json、视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json、视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Int`
-- `JjkText`
-- `LoadAudio`
-- `Note _O`
-- `SaveAudio`
-- `SparkTTSClone`
-- `SparkTTSRun`
-- `easy anythingIndexSwitch`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Preview from image [Crystools]` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `RH_Sora2_T2V` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Fast Groups Muter (rgthree)` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
 
 ## 典型参数
 

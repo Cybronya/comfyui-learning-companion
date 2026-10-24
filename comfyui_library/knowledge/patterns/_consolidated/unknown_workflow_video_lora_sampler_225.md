@@ -3,72 +3,67 @@ name: unknown_workflow_video_lora_sampler_225
 type: Unknown Workflow
 frequency: 9
 level: moderate
-coverage: 0.600333
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.687889
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
-missing: [int _O]
-members: [视频生成/图生视频/2004522934133817346.json, 视频生成/图生视频/2029116870359519233.json, 视频生成/图生视频/2020345629322518529.json, 视频生成/图生视频/2046604886866927617.json, 视频生成/图生视频/2059509696591122433.json, 视频生成/图生视频/1980236223493136385.json, 视频生成/图生视频/1983085978363568129.json, 视频生成/图生视频/1974839339156901889.json, 视频生成/文生视频/1975351604679413761.json]
+missing: []
+members: [视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json, 视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062715570117758978.json, 视频生成/图生视频/六宫格横屏1280导演台自动化工作流（固定15秒）_2070323766567194626.json, 视频生成/图生视频/短剧漫剧wan+九宫格横屏1280导演台自动化工作流（固定20秒）_2080658867448541185.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定18秒）_2067903674852134913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_225
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2004522934133817346.json、视频生成/图生视频/2029116870359519233.json、视频生成/图生视频/2020345629322518529.json、视频生成/图生视频/2046604886866927617.json、视频生成/图生视频/2059509696591122433.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json、视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json、视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `GetNode`
-- `ImageResizeKJv2`
-- `Int`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoraLoaderModelOnly`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
-- `MathExpression|pysssss` —— 8/9 个有
-- `ImageConcatMulti` —— 7/9 个有
-- `PreviewImage` —— 7/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `ImageFromBatch` —— 6/9 个有
-- `ImpactInt` —— 6/9 个有
-- `BlockifyMask` —— 5/9 个有
-- `DownloadAndLoadSAM2Model` —— 5/9 个有
-- `DrawMaskOnImage` —— 5/9 个有
-- `GrowMask` —— 5/9 个有
-- `Sam2Segmentation` —— 5/9 个有
-- `Textbox` —— 5/9 个有
-- `GetImageSizeAndCount` —— 3/9 个有
-- `CM_IntToFloat` —— 2/9 个有
-- `CR Text` —— 2/9 个有
-- `ImageFromBatch+` —— 2/9 个有
-- `LayerUtility: PurgeVRAM` —— 2/9 个有
-- `SimpleMath+` —— 2/9 个有
-- `WanVideoLoraSelect` —— 2/9 个有
-- `easy int` —— 2/9 个有
-- `int _O` —— 1/9 个有
+- `TTResolutionSelector` —— 7/9 个有
+- `LoadVideo` —— 6/9 个有
+- `Text Multiline` —— 6/9 个有
+- `LTXDirectorGuide` —— 5/9 个有
+- `SF-LTXDirectorGuide` —— 4/9 个有
+- `SF-LTXGridDirector` —— 4/9 个有
+- `CS-LTXGridDirector` —— 3/9 个有
+- `CS-LTXSixGridDirector` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_RhartImageG2ImageToImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
 
 ## 典型参数
 
@@ -80,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：int _O
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

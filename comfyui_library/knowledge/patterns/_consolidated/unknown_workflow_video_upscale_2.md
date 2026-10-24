@@ -3,17 +3,17 @@ name: unknown_workflow_video_upscale_2
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.837
-common_nodes: [PDIMAGE_LongerSize, RTXVideoSuperResolution, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
+coverage: 0.837333
+common_nodes: [Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VOSR2ModelLoader, VOSR2Upscale]
 problems: []
 missing: []
-members: [数字人/数字人/视频超分 Vosr2 DLSS - 2K_2097129015567020033.json, 数字人/数字人/视频高清放大 Vosr 2 （1K-2K）_2097136348686807042.json, 视频生成/图生视频/minimax H3 Vosr 2.0超分修复专用2k流（无需plus）_2097566982299275265.json]
+members: [图片生成/图生图/VOSR 高清修复放大 图片 视频【文字强力修复】_2097327183193788417.json, 图片生成/图生图/VOSR高清修复放大【文字强力修复】_2097321067114229761.json, 视频生成/文生视频/VOSR图片视频高清修复放大【文字强力修复】_2097529211702566913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_2
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/视频超分 Vosr2 DLSS - 2K_2097129015567020033.json、数字人/数字人/视频高清放大 Vosr 2 （1K-2K）_2097136348686807042.json、视频生成/图生视频/minimax H3 Vosr 2.0超分修复专用2k流（无需plus）_2097566982299275265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/VOSR 高清修复放大 图片 视频【文字强力修复】_2097327183193788417.json、图片生成/图生图/VOSR高清修复放大【文字强力修复】_2097321067114229761.json、视频生成/文生视频/VOSR图片视频高清修复放大【文字强力修复】_2097529211702566913.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,20 +23,18 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `PDIMAGE_LongerSize`
-- `RTXVideoSuperResolution`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `SaveImage`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
 - `VOSR2ModelLoader`
 - `VOSR2Upscale`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 2/3 个有
-- `Int` —— 1/3 个有
-- `RH_DLSS5Enhance` —— 1/3 个有
-- `easy mathInt` —— 1/3 个有
+- `忽略多组孤海` —— 1/3 个有
 
 ## 典型参数
 

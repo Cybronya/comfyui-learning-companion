@@ -2,77 +2,74 @@
 name: unknown_workflow_video_lora_sampler_507
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.75725
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, Int, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Qwen3_VQA, RIFE VFI, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+level: moderate
+coverage: 0.95475
+common_nodes: [CR Prompt Text, Float, INTConstant, ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, StringToFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2008144239636520961.json, 视频生成/图生视频/2008202129441296385.json, 视频生成/图生视频/2033880906871611394.json, 视频生成/图生视频/2015119585170690050.json]
+members: [视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json, 视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版首尾帧V1_1966523015905357825.json, 视频生成/图生视频/Wan2.2 Fun Vace视频扩图稳定版V1_1966560072405037057.json, 视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_507
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2008144239636520961.json、视频生成/图生视频/2008202129441296385.json、视频生成/图生视频/2033880906871611394.json、视频生成/图生视频/2015119585170690050.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json、视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版首尾帧V1_1966523015905357825.json、视频生成/图生视频/Wan2.2 Fun Vace视频扩图稳定版V1_1966560072405037057.json、视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：76%
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
+- `CR Prompt Text`
+- `Float`
 - `INTConstant`
-- `Int`
-- `JoinStrings`
-- `KSamplerAdvanced`
+- `ImageConcatMulti`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `RIFE VFI`
-- `ShowText|pysssss`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `StringToFloatList`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageConcatMulti` —— 2/4 个有
-- `PainterI2V` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `WanFirstLastFrameToVideo` —— 2/4 个有
-- `CRTFirstLastFrameSelector` —— 1/4 个有
-- `DuckHideNode` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `MultiplyNode` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `ShellAgentPluginOutputText` —— 1/4 个有
-- `WanImageToVideo` —— 1/4 个有
-- `easy float` —— 1/4 个有
-- `easy int` —— 1/4 个有
+- `ColorMatch` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `VHS_VideoInfo` —— 3/4 个有
+- `WanVideoVACEModelSelect` —— 3/4 个有
+- `DWPreprocessor` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `GetImageRangeFromBatch` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageAndMaskPreview` —— 1/4 个有
+- `ImagePadKJ` —— 1/4 个有
+- `ImageResize` —— 1/4 个有
+- `MaskPreview+` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `WanVideoExtraModelSelect` —— 1/4 个有
+- `WanVideoVACEStartToEndFrame` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 4 | 81% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | normal | - | 4 | 75% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，4 个样本，取值集中（一致性 81%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 normal，4 个样本，一致性 75%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

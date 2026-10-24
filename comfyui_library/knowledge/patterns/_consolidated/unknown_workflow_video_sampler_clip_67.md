@@ -1,86 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_clip_67
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.553625
-common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.880111
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageLoader, ImageResize+, KSamplerAdvanced, ModelSamplingSD3, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/2068875713587007490.json, 视频生成/图生视频/2068905830182899714.json, 视频生成/图生视频/2069697861658435586.json, 视频生成/图生视频/2069688707870978050.json, 视频生成/图生视频/2067017376826216450.json, 视频生成/图生视频/2069616746276937729.json, 视频生成/图生视频/2043556476085604353.json, 视频生成/图生视频/2041885580006526978.json]
+members: [视频生成/图生视频/Wan2.2-Remix-I2V-Comfy-Qwen3 上传图像自动生成视频提示词_1988486488964947969.json, 视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json, 视频生成/图生视频/Wan2.2-Remix-V2-I2V 图生视频工作流_1988479150342193154.json, 视频生成/图生视频/Wan2.2RemixV2图生视频_2057468310819786754.json, 视频生成/图生视频/wan2.2图生视频_2100280347178135554.json, 视频生成/图生视频/wan2.2图生视频_2101483714801913858.json, 视频生成/图生视频/wan2.2图生视频_2102213428411715585.json, 视频生成/图生视频/图生视频-rh-Wan2.2-Remix-I2V-提示词优化-模板_1986819504288296962.json, 视频生成/图生视频/图生视频-rh-任意时长-Wan2.2-Remix-I2V-提示词优化-模板_2021849082557370369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_67
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2068875713587007490.json、视频生成/图生视频/2068905830182899714.json、视频生成/图生视频/2069697861658435586.json、视频生成/图生视频/2069688707870978050.json、视频生成/图生视频/2067017376826216450.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-Remix-I2V-Comfy-Qwen3 上传图像自动生成视频提示词_1988486488964947969.json、视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json、视频生成/图生视频/Wan2.2-Remix-V2-I2V 图生视频工作流_1988479150342193154.json、视频生成/图生视频/Wan2.2RemixV2图生视频_2057468310819786754.json、视频生成/图生视频/wan2.2图生视频_2100280347178135554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SimpleMath+`
+- `INTConstant`
+- `ImageLoader`
+- `ImageResize+`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `Seed (rgthree)`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanImageToVideo`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LatentUpscaleModelLoader` —— 7/8 个有
-- `TTResolutionSelector` —— 6/8 个有
-- `JWString` —— 5/8 个有
-- `ParseJsonNode` —— 5/8 个有
-- `ShowText|pysssss` —— 5/8 个有
-- `TD_LTXVAddGuideFromGrid` —— 5/8 个有
-- `INTConstant` —— 3/8 个有
-- `ImageFromBatch+` —— 3/8 个有
-- `LTXVAddGuideMulti` —— 3/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `Any To Any` —— 2/8 个有
-- `BatchCount+` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ImageResize+` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `LTXVImgToVideoInplace` —— 2/8 个有
-- `LTXVLatentUpsampler` —— 2/8 个有
-- `Make Image Batch` —— 2/8 个有
-- `MathExpression|pysssss` —— 2/8 个有
-- `easy imageSize` —— 2/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `JWStringToInteger` —— 1/8 个有
+- `RIFEInterpolation` —— 5/9 个有
+- `GetNode` —— 4/9 个有
+- `Int` —— 4/9 个有
+- `Qwen3_VQA` —— 4/9 个有
+- `SetNode` —— 4/9 个有
+- `easy cleanGpuUsed` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `CR Text Concatenate` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `MultiplePathsInput` —— 2/9 个有
+- `RIFE VFI` —— 2/9 个有
+- `Text Multiline (Code Compatible)` —— 2/9 个有
+- `IntToText` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `ttN concat` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 8 | 100% |
-| 高度 | 25 | 25 - 25 | 8 | 100% |
+| 采样步数 | randomize | - | 9 | 56% |
+| Prompt 约束强度(CFG) | 12 | 12 - 12 | 9 | 100% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -88,5 +72,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，9 个样本，一致性 56%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

@@ -1,68 +1,95 @@
 ---
 name: unknown_workflow_video_sampler_clip_57
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.786111
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8378
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelSamplingSD3, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: []
 missing: []
-members: [视频生成/图生视频/1969029965058633729.json, 视频生成/图生视频/1968298916649283585.json, 视频生成/图生视频/2013075887306055682.json, 视频生成/图生视频/1968180543949012994.json, 视频生成/图生视频/1968176738117255170.json, 视频生成/文生视频/01 Wan2.2 Smooth Mix I2V 图生视频+全节点注释_2055497064678739970.json, 视频生成/文生视频/1968182535878488065.json, 视频生成/文生视频/1970121529851867137.json, 视频生成/文生视频/1969033295201792002.json]
+members: [视频生成/图生视频/Remix_V3+Qwen3.5提示词反推_I2V_2039893692558876673.json, 视频生成/图生视频/Wan2.2 Remix V3-效果好_2036675075717472258.json, 视频生成/图生视频/Wan2.2 Remix V3.0--Qwen3.5自动化图生视频_2035931554823806977.json, 视频生成/图生视频/Wan2.2 Remix V3_2036102577590374402.json, 视频生成/图生视频/Wan2.2 Remix V3_2036614477726097410.json, 视频生成/图生视频/【阿良绘】Dasiwa V10+Qwen3.5图生视频自动提示词 （N版）_2041128581908140034.json, 视频生成/图生视频/（N SFW）Dasiwa V10+Qwen3.5图生视频自动提示词工作流V1_2041143697240231938.json, 视频生成/图生视频/（N SFW）Remix V3+Qwen3.5图生视频自动提示词工作流V1_2037015059473371137.json, 视频生成/图生视频/（自用）Dasiwa V10+Qwen3.5图生视频自动提示词工作流V1（N版）_2040996963277082626.json, 视频生成/图生视频/（自用）Remix V3+Qwen3.5图生视频自动提示词工作流V1（N版）_2035642903317454849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_57
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1969029965058633729.json、视频生成/图生视频/1968298916649283585.json、视频生成/图生视频/2013075887306055682.json、视频生成/图生视频/1968180543949012994.json、视频生成/图生视频/1968176738117255170.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Remix_V3+Qwen3.5提示词反推_I2V_2039893692558876673.json、视频生成/图生视频/Wan2.2 Remix V3-效果好_2036675075717472258.json、视频生成/图生视频/Wan2.2 Remix V3.0--Qwen3.5自动化图生视频_2035931554823806977.json、视频生成/图生视频/Wan2.2 Remix V3_2036102577590374402.json、视频生成/图生视频/Wan2.2 Remix V3_2036614477726097410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `KSampler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `MathExpression|pysssss`
 - `ModelSamplingSD3`
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 7/9 个有
-- `INTConstant` —— 5/9 个有
-- `wanBlockSwap` —— 2/9 个有
-- `CreateVideo` —— 1/9 个有
-- `DuckHideNode` —— 1/9 个有
-- `ImageScaleByAspectRatio_UTK` —— 1/9 个有
-- `PreViewVideo` —— 1/9 个有
+- `CR Prompt Text` —— 9/10 个有
+- `Float` —— 9/10 个有
+- `LayerUtility: PurgeVRAM` —— 9/10 个有
+- `ImageFromBatch+` —— 7/10 个有
+- `RunningHub Deepcleaner` —— 6/10 个有
+- `Seed (rgthree)` —— 6/10 个有
+- `ShellAgentPluginOutputText` —— 6/10 个有
+- `easy anythingIndexSwitch` —— 6/10 个有
+- `DuckHideNode` —— 5/10 个有
+- `ImageScaleBy` —— 5/10 个有
+- `SaveImage` —— 5/10 个有
+- `TT_img_enc` —— 5/10 个有
+- `TT_img_enc_v2` —— 5/10 个有
+- `ColorMatch` —— 4/10 个有
+- `LoraLoaderModelOnly` —— 4/10 个有
+- `Pick From Batch (mtb)` —— 4/10 个有
+- `PreviewImage` —— 4/10 个有
+- `FL_RIFE` —— 3/10 个有
+- `RTXVideoSuperResolution` —— 3/10 个有
+- `Anything Everywhere` —— 1/10 个有
+- `Load Image From Url (mtb)` —— 1/10 个有
+- `PrimitiveFloat` —— 1/10 个有
+- `String` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 7 | 9 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | ipndm | - | 9 | 56% |
-| 调度器 | beta | - | 9 | 56% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | fixed | - | 10 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 10 | 100% |
+| 采样算法 | 1 | 1 - 1 | 10 | 100% |
+| 调度器 | euler_ancestral | - | 10 | 100% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 7，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，9 个样本，一致性 56%
-- 调度器 最常用 beta，9 个样本，一致性 56%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，10 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，10 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，10 个样本，一致性 100%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%

@@ -1,92 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_clip_79
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.650429
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, Fast Groups Bypasser (rgthree), GetNode, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Qwen3_VQA, RIFE VFI, SetNode, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, wanBlockSwap]
+frequency: 8
+level: moderate
+coverage: 0.79275
+common_nodes: [ImageResize+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2055728891322486786.json, 视频生成/图生视频/2056085171165769729.json, 视频生成/图生视频/2010940564040060929.json, 视频生成/图生视频/2048449800865058818.json, 视频生成/图生视频/2008384521632227329.json, 视频生成/图生视频/2059769555181985793.json, 视频生成/图生视频/2064594591789174785.json]
+members: [视频生成/图生视频/Wan2.1首尾帧关键帧视频生成_1904223352662433793.json, 视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json, 视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json, 视频生成/图生视频/首尾帧—万相官方模型_FLF2V_720P_1914115892282650625.json, 视频生成/文生视频/2张照片文生视频，可以中文提示词_1923970677043286018.json, 视频生成/文生视频/CG迷-WAN fun首尾帧视频动画工作流_1927317975609806849.json, 视频生成/文生视频/CG迷-Wan视频升级版720P精度首尾帧FLF2V_1927010943581192194.json, 视频生成/文生视频/首尾帧图像稳定全自动稳定输出视频丨自动生成_1946379105648697346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_79
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2055728891322486786.json、视频生成/图生视频/2056085171165769729.json、视频生成/图生视频/2010940564040060929.json、视频生成/图生视频/2048449800865058818.json、视频生成/图生视频/2008384521632227329.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan2.1首尾帧关键帧视频生成_1904223352662433793.json、视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json、视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json、视频生成/图生视频/首尾帧—万相官方模型_FLF2V_720P_1914115892282650625.json、视频生成/文生视频/2张照片文生视频，可以中文提示词_1923970677043286018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 8 个 workflow 都包含：
+- `ImageResize+`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `RIFE VFI`
-- `SetNode`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `wanBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `PainterI2V` —— 5/7 个有
-- `Text Concatenate` —— 5/7 个有
-- `CheckpointLoaderSimple` —— 4/7 个有
-- `ImageScaleToTotalPixels` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `MathExpression_UTK` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `SeedVR2` —— 4/7 个有
-- `SeedVR2BlockSwap` —— 4/7 个有
-- `SeedVR2ExtraArgs` —— 4/7 个有
-- `Text` —— 4/7 个有
-- `VHS_LoadVideo` —— 4/7 个有
-- `VHS_VideoInfoSource` —— 4/7 个有
-- `FlashVSRNode` —— 3/7 个有
-- `ImpactSwitch` —— 3/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
-- `Wan22PromptSelector` —— 3/7 个有
-- `Fast Bypasser (rgthree)` —— 2/7 个有
-- `ImageConcanate` —— 2/7 个有
-- `ImageResizeKJ` —— 2/7 个有
-- `Images to RGB` —— 2/7 个有
-- `Mute / Bypass Repeater (rgthree)` —— 2/7 个有
-- `WanFirstLastFrameToVideo` —— 2/7 个有
-- `easy textSwitch` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `LoadVideo` —— 1/7 个有
+- `SetNode` —— 7/8 个有
+- `WanVideoSLG` —— 7/8 个有
+- `WanVideoBlockSwap` —— 6/8 个有
+- `AddLabel` —— 5/8 个有
+- `EmptyImage` —— 5/8 个有
+- `GetImageSizeAndCount` —— 5/8 个有
+- `GetNode` —— 5/8 个有
+- `ImageConcatMulti` —— 5/8 个有
+- `WanVideoExperimentalArgs` —— 5/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `Anything Everywhere` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `RIFE VFI` —— 2/8 个有
+- `WanVideoVRAMManagement` —— 2/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 71% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1.6 | 7 | 81% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -94,8 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 71%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1.6，7 个样本，取值集中（一致性 81%）
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

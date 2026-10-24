@@ -3,88 +3,56 @@ name: unknown_workflow_video_lora_sampler_68
 type: Unknown Workflow
 frequency: 18
 level: moderate
-coverage: 0.610333
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, GrowMask, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, PixelPerfectResolution, SetNode, SimpleMath+, VHS_LoadVideo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.619667
+common_nodes: [BasicGuider, GetNode, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/2005855972839092225.json, 视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2082828374803832834.json, 视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2101148000168005634.json, 视频生成/图生视频/2005836350404395009.json, 视频生成/图生视频/2005891179520688129.json, 视频生成/图生视频/2009640204046442497.json, 视频生成/图生视频/2010983716067217410.json, 视频生成/图生视频/2014336980489871362.json, 视频生成/图生视频/1970833810306801666.json, 视频生成/图生视频/2041577855473160193.json, 视频生成/图生视频/2071227855530455041.json, 视频生成/图生视频/2009317533723136001.json, 视频生成/图生视频/2021386632020103169.json, 视频生成/图生视频/2041848671586750465.json, 视频生成/图生视频/2067973490745106434.json, 视频生成/图生视频/2073689074594050049.json, 视频生成/图生视频/2041849392579219457.json, 视频生成/图生视频/2041098212999700482.json]
+members: [图片生成/文生图/MiniMax-H3_二采分块_4K直出_2098929591372050434.json, 图片生成/文生图/MiniMax-H3_二采分块_4K直出_2099663162428715009.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json, 视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2102927651173396481.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104381990047932417.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104842146724532225.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2099775303945121794.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2100034930007953410.json, 视频生成/图生视频/MiniMax-H3_孤海 V3_2104490856966348801.json, 视频生成/文生视频/MiniMax-H3   4K直出_2098005527233126402.json, 视频生成/文生视频/MiniMax-H3  二采分块 2K 4K直出_2100785082779918337.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出 改进_2098968521681235969.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2096756610927517697.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2097566364851597314.json, 视频生成/文生视频/MiniMax-H3 智能创作平台+二采+分块 4K直出_2097563335922376706.json, 视频生成/文生视频/啊癫 MiniMax-H3  二采分块 4K直出_2097351601014001665.json, 视频生成/文生视频/孤海 - MiniMax - H3 智能一体化视频创作 V3_2097904013336473601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_68
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/2005855972839092225.json、视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2082828374803832834.json、视频生成/图生视频/Animate Wan2.2 最强视频换头+换脸_2101148000168005634.json、视频生成/图生视频/2005836350404395009.json、视频生成/图生视频/2005891179520688129.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/MiniMax-H3_二采分块_4K直出_2098929591372050434.json、图片生成/文生图/MiniMax-H3_二采分块_4K直出_2099663162428715009.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json、视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json、视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2102927651173396481.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetImageSizeAndCount`
+- `BasicGuider`
 - `GetNode`
-- `GrowMask`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `PixelPerfectResolution`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8GH`
+- `MiniMaxH3DualClockT8GH`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `UNETLoader`
+- `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `easy ifElse`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch+` —— 17/18 个有
-- `VHS_VideoCombine` —— 17/18 个有
-- `WanVideoLoraSelectMulti` —— 17/18 个有
-- `Audio Duration (mtb)` —— 16/18 个有
-- `GetImageRangeFromBatch` —— 16/18 个有
-- `JWInteger` —— 16/18 个有
-- `PrimitiveInt` —— 16/18 个有
-- `easy cleanGpuUsed` —— 16/18 个有
-- `easy sam3ModelLoader` —— 16/18 个有
-- `easy sam3VideoSegmentation` —— 16/18 个有
-- `DownloadAndLoadGIMMVFIModel` —— 15/18 个有
-- `GIMMVFI_interpolate` —— 15/18 个有
-- `Int` —— 15/18 个有
-- `JjkText` —— 14/18 个有
-- `MaskToImage` —— 12/18 个有
-- `CM_IntToFloat` —— 6/18 个有
-- `VHS_VideoInfo` —— 4/18 个有
-- `WanVideoTorchCompileSettings` —— 4/18 个有
-- `easy showAnything` —— 4/18 个有
-- `ImageConcatMulti` —— 2/18 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 2/18 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 2/18 个有
-- `Text` —— 2/18 个有
-- `AutoCropFaces` —— 1/18 个有
-- `AutoNegativePrompt` —— 1/18 个有
-- `FlashVSRNode` —— 1/18 个有
-- `Label (rgthree)` —— 1/18 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/18 个有
-- `PreviewImage` —— 1/18 个有
-- `RHHiddenNodes` —— 1/18 个有
-- `RIFE VFI` —— 1/18 个有
-- `SaveImage` —— 1/18 个有
-- `TT_img_enc` —— 1/18 个有
-- `TextOverlay` —— 1/18 个有
+- `ColorCorrect` —— 17/18 个有
+- `GoohaiAnyExists` —— 17/18 个有
+- `GoohaiMinimaxH3LatentUpscalerGH` —— 17/18 个有
+- `GoohaiMinimaxH3TiledSampler` —— 17/18 个有
+- `GoohaiUniversalSlider` —— 17/18 个有
+- `SplitSigmas` —— 17/18 个有
+- `忽略多组孤海` —— 17/18 个有
+- `EmptyImage` —— 2/18 个有
+- `PreviewImage` —— 2/18 个有
+- `CM_FloatToInt` —— 1/18 个有
+- `PrimitiveFloat` —— 1/18 个有
+- `easy int` —— 1/18 个有
 
 ## 典型参数
 

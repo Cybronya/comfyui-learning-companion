@@ -1,68 +1,59 @@
 ---
 name: unknown_workflow_sampler_unet_vae_34
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.846286
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 16
+level: strong
+coverage: 0.894813
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【老金驿站】MinimaxH3超级加速40%i2v工作流_2087177800716476417.json, 视频生成/图生视频/【老金驿站】MinimaxH3首尾帧视频工作流_2084263524121014274.json, 视频生成/图生视频/全模态多图片生视频MiniMax H3_2084270450250702850.json, 视频生成/图生视频/加速版-MiniMax H3｜AI Video Studio PR插件VIP专用多图参考生成视频_2089356847248666626.json, 视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json, 视频生成/图生视频/自用版 Minimax H3 全能多参生视频_2085256791130202114.json, 视频生成/文生视频/(2倍速！量化加速版)Minimax文生视频V2_2084645452783382530.json, 视频生成/文生视频/(768P)Minimax文生视频BF16高质量加速版V2_2084908134719643649.json, 视频生成/文生视频/(768P)Minimax文生视频BF16高质量加速版V2_2084998635074445314.json, 视频生成/文生视频/(768P)Minimax文生视频BF16高质量加速版V2_2085402316232019969.json, 视频生成/文生视频/Fasth3图生视频_2100129417984036866.json, 视频生成/文生视频/MiniMax FastH3 v2首尾帧视频_2100074906296872962.json, 视频生成/文生视频/Minimax H3 全系列工作流【AI小王子】_2084162640192032770.json, 视频生成/文生视频/加速版-MiniMax H3｜AI Video Studio PR插件VIP专用图生视频、文生视频_2089147200021553154.json]
+members: [图片生成/文生图/Qwen image 2.1 文生图_2101866858684174338.json, 图片生成/文生图/Qwen image 2.1 文生图_2101882676365062146.json, 图片生成/文生图/Qwen image 2.1 文生图_2101914351019061250.json, 图片生成/文生图/Qwen image 2.1 文生图_2101979658001666049.json, 图片生成/文生图/Qwen image 2.1 文生图_2102020778916147202.json, 图片生成/文生图/Qwen image 2.1 文生图_2102034495846305793.json, 图片生成/文生图/Qwen image 2.1 文生图_2102211603243556865.json, 图片生成/文生图/Qwen image 2.1 文生图_2102236635739017218.json, 图片生成/文生图/Qwen image 2.1 文生图_2102576053557485569.json, 图片生成/文生图/Qwen image 2.1 文生图_2104471028356435969.json, 图片生成/文生图/Qwen image 2.1 文生图【自动提示词】_2101839874704891906.json, 图片生成/文生图/Qwen image 2.1 文生图提示词增强_2101911095622594562.json, 图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105104996953059329.json, 图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105485714585636866.json, 图片生成/文生图/qwen image 2.1文生图_2094967170106216450.json, 图片生成/文生图/文生图_qwenimage2.1_2101826399211446273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/【老金驿站】MinimaxH3超级加速40%i2v工作流_2087177800716476417.json、视频生成/图生视频/【老金驿站】MinimaxH3首尾帧视频工作流_2084263524121014274.json、视频生成/图生视频/全模态多图片生视频MiniMax H3_2084270450250702850.json、视频生成/图生视频/加速版-MiniMax H3｜AI Video Studio PR插件VIP专用多图参考生成视频_2089356847248666626.json、视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1 文生图_2101866858684174338.json、图片生成/文生图/Qwen image 2.1 文生图_2101882676365062146.json、图片生成/文生图/Qwen image 2.1 文生图_2101914351019061250.json、图片生成/文生图/Qwen image 2.1 文生图_2101979658001666049.json、图片生成/文生图/Qwen image 2.1 文生图_2102020778916147202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：16
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `EmptyLatentImage`
+- `KSampler`
+- `SaveImage`
+- `TextEncodeQwenImage21`
+- `TextGenerateLTX2Prompt`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/14 个有
-- `MiniMaxH3ImageToVideo` —— 9/14 个有
-- `PathchSageAttentionKJ` —— 8/14 个有
-- `CR Prompt Text` —— 6/14 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/14 个有
-- `GetImageSize` —— 4/14 个有
-- `ImageScaleToTotalPixels` —— 4/14 个有
-- `MiniMaxH3BlockCacheT8` —— 4/14 个有
-- `PrimitiveStringMultiline` —— 4/14 个有
-- `EasyCache` —— 3/14 个有
-- `ModelAttentionBackend` —— 3/14 个有
-- `BlockSparseAttention` —— 2/14 个有
-- `ImageUpscaleWithModel` —— 2/14 个有
-- `MiniMaxH3SigmaShift` —— 2/14 个有
-- `UpscaleModelLoader` —— 2/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `Load Lora` —— 1/14 个有
-- `MiniMaxH3TurboLoRA` —— 1/14 个有
-- `ttN int` —— 1/14 个有
+- `ResolutionSelector` —— 14/16 个有
+- `SaveImageAdvanced` —— 14/16 个有
+- `PrimitiveStringMultiline` —— 5/16 个有
+- `Int` —— 1/16 个有
+- `JjkText` —— 1/16 个有
+- `SeedGeneratorMira` —— 1/16 个有
+- `StringToInt` —— 1/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 16 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 16 | 100% |
+| 采样步数 | 50 | 25 - 50 | 16 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
+| 采样算法 | euler | - | 16 | 100% |
+| 调度器 | simple | - | 16 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
@@ -70,4 +61,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，16 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，16 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 50，观测区间 25 - 50，16 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，16 个样本，一致性 100%
+- 调度器 最常用 simple，16 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）

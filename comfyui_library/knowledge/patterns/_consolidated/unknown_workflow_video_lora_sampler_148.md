@@ -7,13 +7,13 @@ coverage: 0.56125
 common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SimpleMath+, TTResolutionSelector, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2032479656754028546.json, 视频生成/图生视频/图生视频High-Definition Zoom Convert Images to Video_2094247562952925185.json, 视频生成/图生视频/2051999667881295873.json, 视频生成/图生视频/2051983699100614658.json, 视频生成/文生视频/LTX-2.3 图生视频（四宫格剧情版）_2037078723727466498.json, 视频生成/文生视频/LTX-2.3 文&图生视频（高清放大版）_2029905437574828033.json, 视频生成/文生视频/LTX-2.3+图生视频（四宫格剧情版）_2039691601596911617.json, 视频生成/文生视频/LTX-2.3_文&图生视频（单采极速版）_2042119919898202114.json, 视频生成/文生视频/LTX-2.3_文&图生视频（精简版）_2029879882641055746.json, 视频生成/文生视频/LTX2.3+全节点注释_2052022977276989442.json, 视频生成/文生视频/LTX2.3分镜视频生成+节点注释（自学版）_2052036301666439170.json, 视频生成/文生视频/【超强】LTX-2.3首尾帧_2032085446586535937.json]
+members: [视频生成/图生视频/【优化版】LTX-2.3首尾帧_2032479656754028546.json, 视频生成/图生视频/图生视频High-Definition Zoom Convert Images to Video_2094247562952925185.json, 视频生成/图生视频/测试B_删MultiText_2051999667881295873.json, 视频生成/图生视频/测试版1_随风1秒_2051983699100614658.json, 视频生成/文生视频/LTX-2.3 图生视频（四宫格剧情版）_2037078723727466498.json, 视频生成/文生视频/LTX-2.3 文&图生视频（高清放大版）_2029905437574828033.json, 视频生成/文生视频/LTX-2.3+图生视频（四宫格剧情版）_2039691601596911617.json, 视频生成/文生视频/LTX-2.3_文&图生视频（单采极速版）_2042119919898202114.json, 视频生成/文生视频/LTX-2.3_文&图生视频（精简版）_2029879882641055746.json, 视频生成/文生视频/LTX2.3+全节点注释_2052022977276989442.json, 视频生成/文生视频/LTX2.3分镜视频生成+节点注释（自学版）_2052036301666439170.json, 视频生成/文生视频/【超强】LTX-2.3首尾帧_2032085446586535937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_148
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2032479656754028546.json、视频生成/图生视频/图生视频High-Definition Zoom Convert Images to Video_2094247562952925185.json、视频生成/图生视频/2051999667881295873.json、视频生成/图生视频/2051983699100614658.json、视频生成/文生视频/LTX-2.3 图生视频（四宫格剧情版）_2037078723727466498.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/【优化版】LTX-2.3首尾帧_2032479656754028546.json、视频生成/图生视频/图生视频High-Definition Zoom Convert Images to Video_2094247562952925185.json、视频生成/图生视频/测试B_删MultiText_2051999667881295873.json、视频生成/图生视频/测试版1_随风1秒_2051983699100614658.json、视频生成/文生视频/LTX-2.3 图生视频（四宫格剧情版）_2037078723727466498.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12

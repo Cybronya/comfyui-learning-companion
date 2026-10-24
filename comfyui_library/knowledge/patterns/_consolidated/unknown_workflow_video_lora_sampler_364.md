@@ -3,63 +3,77 @@ name: unknown_workflow_video_lora_sampler_364
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.513
-common_nodes: [BasicScheduler, CLIPLoader, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.749167
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json, 视频生成/图生视频/poster animation_2094321304538279938.json, 视频生成/图生视频/【傲雪AIGC】MiniMax+H3首尾帧生视频版_2093696527855341570.json, 视频生成/文生视频/MiniMax+H3文生视频_2089205361046810625.json, 视频生成/文生视频/MiniMax-H3开源 文生视频_2094359561212882945.json, 视频生成/文生视频/MiniMax-H3开源 文生视频_2094381288823287810.json]
+members: [视频生成/图生视频/steady dancer卡通动物动作漫剧电商服装分镜真人_2072526167571263489.json, 视频生成/图生视频/漫剧舞蹈动作迁移1_2077308268699021313.json, 视频生成/文生视频/SteadyDancer+SDpose一张人物照片 + 一段姿态（骨架）_1995841055381762050.json, 视频生成/文生视频/SteadyDancer视频风格化转绘_1998364456965038082.json, 视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json, 视频生成/文生视频/卡通人物跳舞_2010624770362052610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_364
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json、视频生成/图生视频/poster animation_2094321304538279938.json、视频生成/图生视频/【傲雪AIGC】MiniMax+H3首尾帧生视频版_2093696527855341570.json、视频生成/文生视频/MiniMax+H3文生视频_2089205361046810625.json、视频生成/文生视频/MiniMax-H3开源 文生视频_2094359561212882945.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/steady dancer卡通动物动作漫剧电商服装分镜真人_2072526167571263489.json、视频生成/图生视频/漫剧舞蹈动作迁移1_2077308268699021313.json、视频生成/文生视频/SteadyDancer+SDpose一张人物照片 + 一段姿态（骨架）_1995841055381762050.json、视频生成/文生视频/SteadyDancer视频风格化转绘_1998364456965038082.json、视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `GetNode`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `LoadImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 5/6 个有
-- `ComfyMathExpression` —— 5/6 个有
-- `ModelAttentionBackend` —— 5/6 个有
-- `Text` —— 5/6 个有
-- `LoadImage` —— 4/6 个有
-- `MiniMaxH3ImageToVideo` —— 4/6 个有
-- `VHS_LoadVideoFFmpeg` —— 4/6 个有
-- `孤海注释` —— 4/6 个有
-- `JjkText` —— 2/6 个有
+- `PreviewImage` —— 5/6 个有
+- `WanVideoScheduler` —— 5/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `SDPoseOODLoader` —— 4/6 个有
+- `SDPoseOODProcessor` —— 4/6 个有
+- `YOLOModelLoader` —— 4/6 个有
+- `GetNode` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `SetNode` —— 3/6 个有
+- `DF_Int_to_Float` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `Int` —— 2/6 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/6 个有
-- `CFGGuider` —— 1/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `H3SigmaRefiner` —— 1/6 个有
-- `LayerUtility: TextJoin` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `MiniMaxH3SigmaShift` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `QwenH3PromptLocal` —— 1/6 个有
+- `OnnxDetectionModelLoader` —— 2/6 个有
+- `PoseDetectionOneToAllAnimation` —— 2/6 个有
+- `WanVideoTorchCompileSettings` —— 2/6 个有
+- `easy indexAnything` —— 2/6 个有
+- `easy mathInt` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `DWPreprocessor` —— 1/6 个有
+- `DrawViTPose` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 1/6 个有
+- `PoseAndFaceDetection` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
+- `ZML_AnyTypeSwitchFive` —— 1/6 个有
+- `ttN float` —— 1/6 个有
 
 ## 典型参数
 

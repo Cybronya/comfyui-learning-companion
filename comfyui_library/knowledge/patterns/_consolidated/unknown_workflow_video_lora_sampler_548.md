@@ -3,64 +3,56 @@ name: unknown_workflow_video_lora_sampler_548
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.50425
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.90125
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
-missing: [LayerMask: LoadFlorence2Model, LayerUtility: PurgeVRAM, LayerUtility: Florence2Image2Prompt]
-members: [视频生成/图生视频/2055512810020458497.json, 视频生成/图生视频/1994241547038375938.json, 视频生成/文生视频/1969434671211814914.json, 视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_2072999562958381056.json]
+missing: []
+members: [视频生成/文生视频/Stand-In-面部参考-视频换脸-角色一致性-文生视频_1956922387473076226.json, 视频生成/文生视频/Stand-In视频一致性(文生视频)_1957002960897236994.json, 视频生成/文生视频/StandIn人物一致性_1959187908609650689.json, 视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_548
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2055512810020458497.json、视频生成/图生视频/1994241547038375938.json、视频生成/文生视频/1969434671211814914.json、视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_2072999562958381056.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Stand-In-面部参考-视频换脸-角色一致性-文生视频_1956922387473076226.json、视频生成/文生视频/Stand-In视频一致性(文生视频)_1957002960897236994.json、视频生成/文生视频/StandIn人物一致性_1959187908609650689.json、视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `WanVideoLoraSelectMulti` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `INTConstant` —— 2/4 个有
-- `JWInteger` —— 2/4 个有
-- `LayerMask: LoadFlorence2Model` —— 2/4 个有
-- `LayerUtility: Florence2Image2Prompt` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `WanVideoContextOptions` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `Int` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
+- `Int` —— 2/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `RH_Prompter` —— 1/4 个有
+- `RIFE VFI` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `TextBox` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
@@ -72,4 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: LoadFlorence2Model、LayerUtility: PurgeVRAM、LayerUtility: Florence2Image2Prompt
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

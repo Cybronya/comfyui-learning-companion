@@ -3,72 +3,57 @@ name: unknown_workflow_video_lora_sampler_482
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.49
-common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.70925
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2037017744700346369.json, 视频生成/图生视频/2037029152141877249.json, 视频生成/图生视频/2037063850230550530.json, 视频生成/图生视频/2043495684220915714.json]
+members: [视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json, 视频生成/图生视频/电商服饰产品展示 万物迁移 视频换脸换装换衣 模特人物换脸+电商服装展示 Bernini+电商换产品_2064890559977840642.json, 视频生成/图生视频/视频换装换衣+电商服饰产品展示+ 模特人物换脸 电商服装展示  Bernini+电商换产品视频编辑_2064510607130451970.json, 视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_482
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2037017744700346369.json、视频生成/图生视频/2037029152141877249.json、视频生成/图生视频/2037063850230550530.json、视频生成/图生视频/2043495684220915714.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini 视频人物替换_2063568114679369730.json、视频生成/图生视频/电商服饰产品展示 万物迁移 视频换脸换装换衣 模特人物换脸+电商服装展示 Bernini+电商换产品_2064890559977840642.json、视频生成/图生视频/视频换装换衣+电商服饰产品展示+ 模特人物换脸 电商服装展示  Bernini+电商换产品视频编辑_2064510607130451970.json、视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetNode`
-- `INTConstant`
+- `BasicScheduler`
+- `BerniniConditioning`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VHS_VideoInfoLoaded`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 3/4 个有
-- `PlaySound|pysssss` —— 3/4 个有
-- `easy cleanGpuUsed` —— 3/4 个有
-- `BlockifyMask` —— 2/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `DrawMaskOnImage` —— 2/4 个有
-- `ResizeImageMaskNode` —— 2/4 个有
-- `easy framesEditor` —— 2/4 个有
-- `easy imageSizeBySide` —— 2/4 个有
-- `easy sam3ModelLoader` —— 2/4 个有
-- `easy sam3VideoModelExtraConfig` —— 2/4 个有
-- `easy sam3VideoSegmentation` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `DrawViTPose` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GrowMask` —— 1/4 个有
-- `GrowMaskWithBlur` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `SDPoseOODLoader` —— 1/4 个有
-- `SDPoseOODProcessor` —— 1/4 个有
-- `VHS_VideoInfoLoaded` —— 1/4 个有
-- `YOLOModelLoader` —— 1/4 个有
+- `MathExpression|pysssss` —— 3/4 个有
+- `TTResolutionSelector` —— 3/4 个有
+- `Text` —— 3/4 个有
+- `VAEDecode` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `BatchImagesNode` —— 1/4 个有
+- `ComfyMathExpression` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `VAEDecodeTiled` —— 1/4 个有
 
 ## 典型参数
 

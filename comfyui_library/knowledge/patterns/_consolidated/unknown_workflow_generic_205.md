@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_generic_205
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.960667
-common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+coverage: 1
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [数字人/数字人/声音_2092902828380614658.json, 数字人/数字人/声音_2095745922595643394.json, 视频生成/图生视频/IndexTTS-2 音色克隆工作流合集  单人_多人_情感克隆_2085546895153385474.json, 音频生成/音频生成/AI语音配音：音色克隆 IndexTTS 2.0_2018681928492257281.json, 音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2059525905587982338.json, 音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2087223313654444034.json]
+members: [音频生成/音频生成/40.tonnie-Index TTS2音频克隆（刘禹锡有诗云）_2004254864559538177.json, 音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json, 音频生成/音频生成/indexTTS 2 语音克隆_1981291888504463361.json, 音频生成/音频生成/indexTTS2复刻语音生成_1981185714140381185.json, 音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json, 音频生成/音频生成/双人对话tts_2070409633616982018.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_1932106715766882305.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_2004380097404698625.json, 音频生成/音频生成/视频生成-生成配音-情绪_2014166227136028673.json, 音频生成/音频生成/视频生成-生成配音_2012397133353193473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_205
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/声音_2092902828380614658.json、数字人/数字人/声音_2095745922595643394.json、视频生成/图生视频/IndexTTS-2 音色克隆工作流合集  单人_多人_情感克隆_2085546895153385474.json、音频生成/音频生成/AI语音配音：音色克隆 IndexTTS 2.0_2018681928492257281.json、音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2059525905587982338.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/40.tonnie-Index TTS2音频克隆（刘禹锡有诗云）_2004254864559538177.json、音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json、音频生成/音频生成/indexTTS 2 语音克隆_1981291888504463361.json、音频生成/音频生成/indexTTS2复刻语音生成_1981185714140381185.json、音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `IndexTTS2Run`
 - `LoadAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionAudio`
-- `easy indexTTSEmotionMerge`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `PreviewAudio` —— 5/6 个有
-- `SaveImage` —— 5/6 个有
-- `SaveAudio` —— 4/6 个有
-- `easy indexTTSAudioMerge` —— 4/6 个有
-- `Fast Groups Muter (rgthree)` —— 3/6 个有
-- `AudioSeparation` —— 1/6 个有
+- `Text Multiline` —— 9/10 个有
+- `AudioSeparation` —— 1/10 个有
+- `MultiLinePrompt` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_346
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.9
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.976143
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json, comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json, comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json, comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json]
+members: [图片生成/图生图/全能图片2 动漫转真人，极致真实感（1毛6_张）_2044324809483489281.json, 图片生成/图生图/全能图片2.0 低价渠道 团子专用_2064171499463995394.json, 图片生成/图生图/全能图片2.0 低价渠道 团子专用_2071576909120626690.json, 图片生成/图生图/全能图片GImage1.5图生图图片编辑_2001554176415023105.json, 图片生成/图生图/全能图片PRO-图生图-低价渠道版_2073676506353725442.json, 图片生成/文生图/全能图片2_2063784932719284225.json, 视频生成/图生视频/3图换装-全能图片V2-图生图-低价渠道版  0.19元一张_2073656881859612673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_346
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json、comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json、comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json、comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图片2 动漫转真人，极致真实感（1毛6_张）_2044324809483489281.json、图片生成/图生图/全能图片2.0 低价渠道 团子专用_2064171499463995394.json、图片生成/图生图/全能图片2.0 低价渠道 团子专用_2071576909120626690.json、图片生成/图生图/全能图片GImage1.5图生图图片编辑_2001554176415023105.json、图片生成/图生图/全能图片PRO-图生图-低价渠道版_2073676506353725442.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageCompare`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `SaveImageAdvanced`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `GeminiNanoBanana2V2` —— 2/4 个有
-- `TopazImageEnhanceV2` —— 2/4 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 6/7 个有
+- `CR Text` —— 4/7 个有
+- `RH_GPT_Image15` —— 1/7 个有
 
 ## 典型参数
 

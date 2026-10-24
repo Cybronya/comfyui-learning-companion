@@ -1,74 +1,65 @@
 ---
 name: unknown_workflow_video_sampler_clip_200
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.459
-common_nodes: [AudioConcat, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyAudio, EmptyFlux2LatentImage, Flux2Scheduler, FluxKontextMultiReferenceLatentMethod, GetNode, GetTextFromJson, If ANY execute A else B, JSON取值节点, JoinStrings, KSamplerSelect, LayerUtility: PurgeVRAM, Light-Tool: DeserializeJsonString, ModelSamplingAuraFlow, PreviewAny, PreviewAudio, PreviewImage, RH_GetAudioDuration, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, TTResolutionSelector, Text, ToString, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideoPath, VHS_SelectFilename, VHS_VideoCombine, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy isNone, easy lengthAnything, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.965333
+common_nodes: [AIO_Preprocessor, ImageResizeKJ, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2019278674691891201.json, 视频生成/图生视频/2046008601621303297.json]
+members: [视频生成/图生视频/【跳舞视频 】最新wan2.1上传图片生成跳舞视频_1912765246451216385.json, 视频生成/图生视频/通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json, 视频生成/文生视频/WAN FAN首尾帧工作流_1906315512241131522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_200
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2019278674691891201.json、视频生成/图生视频/2046008601621303297.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【跳舞视频 】最新wan2.1上传图片生成跳舞视频_1912765246451216385.json、视频生成/图生视频/通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json、视频生成/文生视频/WAN FAN首尾帧工作流_1906315512241131522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyAudio`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxKontextMultiReferenceLatentMethod`
-- `GetNode`
-- `GetTextFromJson`
-- `If ANY execute A else B`
-- `JSON取值节点`
-- `JoinStrings`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
-- `Light-Tool: DeserializeJsonString`
-- `ModelSamplingAuraFlow`
-- `PreviewAny`
-- `PreviewAudio`
-- `PreviewImage`
-- `RH_GetAudioDuration`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SimpleMath+`
-- `TDQwen3TTSBatchGenerateSpeaker`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSMultiDialog`
-- `TTResolutionSelector`
-- `Text`
-- `ToString`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideoPath`
-- `VHS_SelectFilename`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
-- `easy isNone`
-- `easy lengthAnything`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `JanusImageUnderstanding` —— 2/3 个有
+- `JanusModelLoader` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `ImageBlend` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageUpscaleWithModel` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `KepStringLiteral` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
@@ -80,4 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,88 +2,72 @@
 name: unknown_workflow_video_lora_sampler_695
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.448
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, Int, KSamplerSelect, KepStringLiteral, Label (rgthree), LoadAudioUI, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RTXVideoSuperResolution, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, String Literal, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy clearCacheAll, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: []
+level: strong
+coverage: 0.969667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, SavePNGZIP_and_Preview_RGBA_AnimatedWEBP, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3 全模态 v2.1 I 动作增强 I sigma细节增强 I 官流加速 I 提示词强化_2097079739075883009.json, 视频生成/文生视频/MiniMax H3 顶级舞蹈视频直出 I 新提示词增强 I 全模态 v2.0 I 混合模型 I 极速二采放大 I 官流加速_2092699967201824769.json, 视频生成/文生视频/MiniMax H3 顶级舞蹈视频超频版 I 新提示词增强 I 全模态 v2.0 I 混合模型_2093521519069716482.json]
+members: [视频生成/文生视频/Wan Alpha Composite视频融合V2 （基础版）_1974722920842964994.json, 视频生成/文生视频/Wan Alpha文生透明通道视频V1_1974712309266427905.json, 视频生成/文生视频/wan_alpha_t2v_14B create transparent video_1973778662703108098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_695
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 全模态 v2.1 I 动作增强 I sigma细节增强 I 官流加速 I 提示词强化_2097079739075883009.json、视频生成/文生视频/MiniMax H3 顶级舞蹈视频直出 I 新提示词增强 I 全模态 v2.0 I 混合模型 I 极速二采放大 I 官流加速_2092699967201824769.json、视频生成/文生视频/MiniMax H3 顶级舞蹈视频超频版 I 新提示词增强 I 全模态 v2.0 I 混合模型_2093521519069716482.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan Alpha Composite视频融合V2 （基础版）_1974722920842964994.json、视频生成/文生视频/Wan Alpha文生透明通道视频V1_1974712309266427905.json、视频生成/文生视频/wan_alpha_t2v_14B create transparent video_1973778662703108098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetNode`
-- `Int`
-- `KSamplerSelect`
-- `KepStringLiteral`
-- `Label (rgthree)`
-- `LoadAudioUI`
-- `LoadImage`
+- `CLIPTextEncode`
+- `EmptyHunyuanLatentVideo`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RTXVideoSuperResolution`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
-- `String Literal`
+- `ModelSamplingSD3`
+- `SavePNGZIP_and_Preview_RGBA_AnimatedWEBP`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `LTXVConcatAVLatent` —— 2/3 个有
-- `LTXVSeparateAVLatent` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/3 个有
-- `SplitSigmas` —— 2/3 个有
-- `VHS_LoadAudioUpload` —— 2/3 个有
-- `ExtendIntermediateSigmas` —— 1/3 个有
-- `LoraLoaderBypassModelOnly` —— 1/3 个有
+- `ImageCompositeMasked` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `ImageToMask` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `PDIMAGE_LongerSize` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `INTConstant` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

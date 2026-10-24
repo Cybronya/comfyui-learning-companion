@@ -7,13 +7,13 @@ coverage: 0.933333
 common_nodes: [CLIPVisionLoader, FloatConstant, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewAnimation, PreviewImage, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [视频生成/图生视频/2050481432279175169.json, 视频生成/图生视频/2011070292294111234.json, 视频生成/图生视频/2031330145717456898.json]
+members: [视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json, 视频生成/图生视频/▶SCAIL-动作迁移_2011070292294111234.json, 视频生成/图生视频/一键复刻美女小姐姐跳舞SCAILGGUF 低功耗方案动作迁移_2031330145717456898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_651
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2050481432279175169.json、视频生成/图生视频/2011070292294111234.json、视频生成/图生视频/2031330145717456898.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json、视频生成/图生视频/▶SCAIL-动作迁移_2011070292294111234.json、视频生成/图生视频/一键复刻美女小姐姐跳舞SCAILGGUF 低功耗方案动作迁移_2031330145717456898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

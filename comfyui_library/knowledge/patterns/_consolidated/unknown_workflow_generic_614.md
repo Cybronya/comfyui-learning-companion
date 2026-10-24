@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_614
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.853333
-common_nodes: [CR Text, LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 1
+common_nodes: [RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker_ListReference, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy-IndexTTS单人语音克隆_1970719747069386754.json, 音频生成/音频生成/Easy-IndexTTS双人语音克隆_1970731598771613698.json, 音频生成/音频生成/TTS1与TTS2 声音克隆_2002005150199889922.json]
+members: [音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json, 音频生成/音频生成/VoxCPM2长剧情音频克隆和设计_2046400394552676354.json, 音频生成/音频生成/多人格切换・文案自选 + AI 配音音频_2046574324978556929.json, 音频生成/音频生成/宇宙最强VoxCPM2 SBTI 27人格 自适应多人工作流_2044351623970955266.json, 音频生成/音频生成/高质量音频生成  文生音频_2044226621527298049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_614
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Easy-IndexTTS单人语音克隆_1970719747069386754.json、音频生成/音频生成/Easy-IndexTTS双人语音克隆_1970731598771613698.json、音频生成/音频生成/TTS1与TTS2 声音克隆_2002005150199889922.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2多人语音工作流（人数无上限）_2046148545018863618.json、音频生成/音频生成/VoxCPM2长剧情音频克隆和设计_2046400394552676354.json、音频生成/音频生成/多人格切换・文案自选 + AI 配音音频_2046574324978556929.json、音频生成/音频生成/宇宙最强VoxCPM2 SBTI 27人格 自适应多人工作流_2044351623970955266.json、音频生成/音频生成/高质量音频生成  文生音频_2044226621527298049.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
+全部 5 个 workflow 都包含：
+- `RunningHub_VoxCPM_LoadModel`
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference`
 - `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `SaveAudioMP3` —— 2/3 个有
-- `easy indexTTSAudioMerge` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `IndexTTS2Run` —— 1/3 个有
+- `CR Prompt Text` —— 2/5 个有
+- `LoadAudio` —— 1/5 个有
 
 ## 典型参数
 

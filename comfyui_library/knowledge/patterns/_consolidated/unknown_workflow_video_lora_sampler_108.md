@@ -3,90 +3,70 @@ name: unknown_workflow_video_lora_sampler_108
 type: Unknown Workflow
 frequency: 14
 level: moderate
-coverage: 0.643571
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, GetNode, GrowMask, ImageResizeKJv2, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy promptConcat]
+coverage: 0.910357
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CM_FloatToInt, CM_IntToFloat, CR Prompt Text, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, NormalizeAudioLoudness, Note _O, SDVN Any Show, SoundFlow_GetLength, Switch any [Crystools], VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy compare, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1970083557895008257.json, 视频生成/图生视频/1978476869785899009.json, 视频生成/图生视频/1980483253431877633.json, 视频生成/图生视频/1979152858195070977.json, 视频生成/图生视频/1971412866429599745.json, 视频生成/图生视频/2032500996332593153.json, 视频生成/图生视频/1975168158174679041.json, 视频生成/图生视频/1975168163258175490.json, 视频生成/图生视频/1977316291763675138.json, 视频生成/图生视频/2037208657041035265.json, 视频生成/图生视频/2039247939687686145.json, 视频生成/图生视频/1977681903191056385.json, 视频生成/图生视频/1975168167381217282.json, 视频生成/图生视频/1973741910089142274.json]
+members: [图片生成/图生图/数字人-Wan2.2-S2V（音频驱动）_2023952492366663681.json, 视频生成/图生视频/Wan2.2-S2V数字人(低动态)_2003752068659724290.json, 视频生成/图生视频/Wan2.2-S2V数字人-对口型唱歌_1971380113747197954.json, 视频生成/图生视频/Wan2.2-S2V数字人-无限时长对口型唱歌数字人_1988644397879353346.json, 视频生成/图生视频/Wan2.2数字人-音频图片驱动_2016068921119477762.json, 视频生成/图生视频/✅换脸工程【HL01】Wan2.2-S2V数字人音频驱动_2016890272734515202.json, 视频生成/图生视频/数字人-Wan2.2-S2V（音频驱动）_2020045393261764609.json, 视频生成/图生视频/数字人-文本驱动-自定义克隆音_2094018779201228802.json, 视频生成/图生视频/数字人-文本驱动_1998289771141193729.json, 视频生成/图生视频/数字人-音频驱动_2092864098823397378.json, 视频生成/图生视频/数字人-音频驱动byDK_1998281834133880833.json, 视频生成/图生视频/数字人Wan2.2-S2V-音频驱动_1996395140036042753.json, 视频生成/文生视频/数字人-上传图片即可_2071492189078773761.json, 视频生成/文生视频/数字人-文本驱动_2059156347266097154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_108
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1970083557895008257.json、视频生成/图生视频/1978476869785899009.json、视频生成/图生视频/1980483253431877633.json、视频生成/图生视频/1979152858195070977.json、视频生成/图生视频/1971412866429599745.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/数字人-Wan2.2-S2V（音频驱动）_2023952492366663681.json、视频生成/图生视频/Wan2.2-S2V数字人(低动态)_2003752068659724290.json、视频生成/图生视频/Wan2.2-S2V数字人-对口型唱歌_1971380113747197954.json、视频生成/图生视频/Wan2.2-S2V数字人-无限时长对口型唱歌数字人_1988644397879353346.json、视频生成/图生视频/Wan2.2数字人-音频图片驱动_2016068921119477762.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `GetNode`
-- `GrowMask`
-- `ImageResizeKJv2`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CM_FloatToInt`
+- `CM_IntToFloat`
+- `CR Prompt Text`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `NormalizeAudioLoudness`
+- `Note _O`
+- `SDVN Any Show`
+- `SoundFlow_GetLength`
+- `Switch any [Crystools]`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
+- `WanVideoAddS2VEmbeds`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy promptConcat`
+- `easy compare`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 13/14 个有
-- `AudioSeparation` —— 11/14 个有
-- `DownloadAndLoadWav2VecModel` —— 11/14 个有
-- `MultiTalkModelLoader` —— 11/14 个有
-- `MultiTalkWav2VecEmbeds` —— 11/14 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 10/14 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 10/14 个有
-- `RH_Captioner` —— 10/14 个有
-- `easy cleanGpuUsed` —— 10/14 个有
-- `DWPreprocessor` —— 8/14 个有
-- `FaceMaskFromPoseKeypoints` —— 8/14 个有
-- `GetImageSizeAndCount` —— 8/14 个有
-- `ImageCropByMaskAndResize` —— 8/14 个有
-- `PixelPerfectResolution` —— 8/14 个有
-- `Anything Everywhere` —— 7/14 个有
-- `CR Text` —— 7/14 个有
-- `EmptyImage` —— 7/14 个有
-- `INTConstant` —— 7/14 个有
-- `ImageConcatMulti` —— 7/14 个有
-- `ImpactInt` —— 7/14 个有
-- `MaskToImage` —— 7/14 个有
-- `SaveAudio` —— 7/14 个有
-- `Text` —— 7/14 个有
-- `DrawViTPose` —— 6/14 个有
-- `OnnxDetectionModelLoader` —— 6/14 个有
-- `PoseAndFaceDetection` —— 6/14 个有
-- `DownloadAndLoadSAM2Model` —— 4/14 个有
-- `RH_LLMAPI_NODE` —— 4/14 个有
-- `Sam2Segmentation` —— 4/14 个有
-- `WanVideoEncode` —— 3/14 个有
-- `WanVideoUni3C_ControlnetLoader` —— 3/14 个有
-- `WanVideoUni3C_embeds` —— 3/14 个有
-- `ImageFromBatch` —— 2/14 个有
-- `PointsEditor` —— 2/14 个有
-- `SeCModelLoader` —— 2/14 个有
-- `SeCVideoSegmentation` —— 2/14 个有
-- `ClothesSegment` —— 1/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
-- `SaveAudioMP3` —— 1/14 个有
+- `AudioSeparation` —— 13/14 个有
+- `ImageResize+` —— 13/14 个有
+- `LoadAudio` —— 13/14 个有
+- `PreviewImage` —— 8/14 个有
+- `SaveAudio` —— 5/14 个有
+- `ImpactSwitch` —— 4/14 个有
+- `IndexTTS2Run` —— 4/14 个有
+- `RH_Translator` —— 4/14 个有
+- `Text Multiline` —— 4/14 个有
+- `easy cleanGpuUsed` —— 4/14 个有
+- `easy downloadIndexTTSAndLoadModel` —— 4/14 个有
+- `easy indexTTSEmotionText` —— 4/14 个有
+- `easy indexTTSGenerateSimple` —— 4/14 个有
+- `VHS_LoadAudioUpload` —— 1/14 个有
 
 ## 典型参数
 

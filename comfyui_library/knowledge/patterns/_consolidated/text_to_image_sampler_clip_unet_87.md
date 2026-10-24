@@ -1,70 +1,81 @@
 ---
 name: text_to_image_sampler_clip_unet_87
 type: Text To Image
-frequency: 5
-level: strong
-coverage: 0.8496
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
-missing: [LayerUtility: PurgeVRAM]
-members: [图片生成/文生图/1907792965371371522.json, 图片生成/文生图/1910971389912805378.json, 图片生成/文生图/1911939065036636162.json, 图片生成/文生图/nunchaku_flux1对比未加速_2005576570435764226.json, 视频生成/图生视频/1910971389912805378.json]
+frequency: 7
+level: moderate
+coverage: 0.858143
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/Krea2 Turbo风格迁移（双采反推版）_2070847946253496321.json, 图片生成/图生图/Krea2-trubo-洗图_2069945131855343618.json, 图片生成/图生图/Krea2-trubo-洗图工作流_2069770345149718529.json, 图片生成/图生图/boogu-trubo-洗图工作流_2069767095663030273.json, 图片生成/图生图/百度ERNIE-imag-turbo-洗图工作流（反推提示词）_2044786223306252289.json, 图片生成/文生图/Krea2 Turbo风格迁移（双采反推版）_2070490329257697282.json, 图片生成/文生图/百度ERNIE-image 人像文生图 【 提示词尺寸优化版 】_2044598172412022786.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_87
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1907792965371371522.json、图片生成/文生图/1910971389912805378.json、图片生成/文生图/1911939065036636162.json、图片生成/文生图/nunchaku_flux1对比未加速_2005576570435764226.json、视频生成/图生视频/1910971389912805378.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Krea2 Turbo风格迁移（双采反推版）_2070847946253496321.json、图片生成/图生图/Krea2-trubo-洗图_2069945131855343618.json、图片生成/图生图/Krea2-trubo-洗图工作流_2069770345149718529.json、图片生成/图生图/boogu-trubo-洗图工作流_2069767095663030273.json、图片生成/图生图/百度ERNIE-imag-turbo-洗图工作流（反推提示词）_2044786223306252289.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `NunchakuFluxDiTLoader` —— 4/5 个有
-- `CFGZeroStarAndInit` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `NunchakuFluxLoraLoader` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `Int` —— 5/7 个有
+- `ShowText|pysssss` —— 5/7 个有
+- `ConditioningZeroOut` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `ImageResizeKJv2` —— 3/7 个有
+- `llama_cpp_parameters` —— 3/7 个有
+- `PreviewAny` —— 2/7 个有
+- `PrimitiveStringMultiline` —— 2/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `ResolutionSelector` —— 1/7 个有
+- `Text` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1280 | 5 | 90% |
-| 高度 | 1024 | 720 - 1024 | 5 | 87% |
-| 采样步数 | 25 | 20 - 25 | 5 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 6 | 6 - 10 | 7 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 86% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 7 | 43% |
+| 重绘幅度 | 1 | 0.4 - 1 | 7 | 67% |
+| 宽度 | 1024 | 720 - 1024 | 7 | 85% |
+| 高度 | 1280 | 1024 - 1280 | 7 | 90% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1280，5 个样本，取值集中（一致性 90%）
-- 高度 中位数 1024，观测区间 720 - 1024，5 个样本，取值集中（一致性 87%）
-- 采样步数 中位数 25，观测区间 20 - 25，5 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: PurgeVRAM
+- 采样步数 中位数 6，观测区间 6 - 10，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 86%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，7 个样本，一致性 43%
+- 重绘幅度 中位数 1，观测区间 0.4 - 1，7 个样本
+- 宽度 中位数 1024，观测区间 720 - 1024，7 个样本，取值集中（一致性 85%）
+- 高度 中位数 1280，观测区间 1024 - 1280，7 个样本，取值集中（一致性 90%）
+- 高发问题（8/7 个样本）：Steps较低可能导致细节不足

@@ -1,74 +1,73 @@
 ---
 name: unknown_workflow_video_sampler_clip_66
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.54025
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, wanBlockSwap]
+frequency: 9
+level: moderate
+coverage: 0.890444
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006627267346173953.json, 视频生成/图生视频/1986365562794213377.json, 视频生成/图生视频/2032355101955858434.json, 视频生成/图生视频/1999623009306636290.json, 视频生成/图生视频/1988509206477234177.json, 视频生成/图生视频/2044709107302670338.json, 视频生成/图生视频/1982960242092834818.json, 视频生成/图生视频/2006524559020789762.json]
+members: [视频生成/图生视频/Wan-Fun视频首尾帧-KJ版_1905999669091307522.json, 视频生成/图生视频/Wan2.1 AI视频 首尾帧 丝滑动画过渡 工作流_1985915775540178945.json, 视频生成/图生视频/Wan2.1 AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1918543439799975938.json, 视频生成/图生视频/Wan2.1 图生视频首尾帧_1919623628906758146.json, 视频生成/图生视频/Wan2.1+AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1994010084806164482.json, 视频生成/图生视频/Wan2.1图生视频首尾帧_1905464146912006145.json, 视频生成/图生视频/通义万相Wan2.1Fun首尾帧图生视频TC加速_1907738859516342273.json, 视频生成/图生视频/首尾帧生视频 _ wan2.1（KJ）_1902281686166740993.json, 视频生成/文生视频/视频首尾帧过渡工作流_1937406270641225729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_66
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2006627267346173953.json、视频生成/图生视频/1986365562794213377.json、视频生成/图生视频/2032355101955858434.json、视频生成/图生视频/1999623009306636290.json、视频生成/图生视频/1988509206477234177.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan-Fun视频首尾帧-KJ版_1905999669091307522.json、视频生成/图生视频/Wan2.1 AI视频 首尾帧 丝滑动画过渡 工作流_1985915775540178945.json、视频生成/图生视频/Wan2.1 AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1918543439799975938.json、视频生成/图生视频/Wan2.1 图生视频首尾帧_1919623628906758146.json、视频生成/图生视频/Wan2.1+AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1994010084806164482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：54%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RIFE VFI`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `wanBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
-- `ImageLoader` —— 7/8 个有
-- `ImageResizeKJv2` —— 7/8 个有
-- `Int` —— 7/8 个有
-- `INTConstant` —— 6/8 个有
-- `WanFirstLastFrameToVideo` —— 6/8 个有
-- `WanImageToVideo` —— 4/8 个有
-- `LoadImage` —— 3/8 个有
-- `LoraLoaderModelOnly` —— 2/8 个有
-- `Qwen3_VQA` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `Fast Bypasser (rgthree)` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `MultiplePathsInput` —— 1/8 个有
-- `MultiplePathsInputPlus` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `easy int` —— 1/8 个有
-- `easy saveText` —— 1/8 个有
+- `Int` —— 8/9 个有
+- `WanVideoTorchCompileSettings` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `WanVideoEnhanceAVideo` —— 7/9 个有
+- `easy cleanGpuUsed` —— 7/9 个有
+- `easy imageSize` —— 7/9 个有
+- `CR Text` —— 6/9 个有
+- `EmptyImage` —— 6/9 个有
+- `LayerUtility: PurgeVRAM` —— 6/9 个有
+- `easy imageConcat` —— 6/9 个有
+- `CR Simple Image Compare` —— 5/9 个有
+- `ImageBatchRepeatInterleaving` —— 5/9 个有
+- `ImageConcanate` —— 5/9 个有
+- `WanVideoExperimentalArgs` —— 4/9 个有
+- `ImageResizeKJ` —— 3/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `RH_Captioner` —— 1/9 个有
+- `ShowText|pysssss` —— 1/9 个有
+- `TextBox` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
+- `Textbox` —— 1/9 个有
+- `WanVideoFlowEdit` —— 1/9 个有
+- `WanVideoLoopArgs` —— 1/9 个有
+- `WanVideoVRAMManagement` —— 1/9 个有
+- `easy textSwitch` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 50% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 8 | 81% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | normal | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,8 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，8 个样本，取值集中（一致性 81%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 normal，8 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

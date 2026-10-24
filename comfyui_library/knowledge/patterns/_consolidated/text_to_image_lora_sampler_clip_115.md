@@ -1,28 +1,28 @@
 ---
 name: text_to_image_lora_sampler_clip_115
 type: Text To Image
-frequency: 9
+frequency: 12
 level: strong
-coverage: 0.871667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.884417
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/服装模特姿势复刻全能PRO官方稳定版工作流，服装展示图生图工具_2107203791136321538.json, 图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json, 图片生成/文生图/6宫格图片生成｜全能图片G IMAGE2文生图一键出图_2093788695898968066.json, 图片生成/文生图/6宫格图片生成｜全能图片G IMAGE2文生图直出_2093455106091077633.json, 图片生成/文生图/低价渠道版｜全能图片G-2.0图生图商品替换_2094033849197096961.json, 图片生成/文生图/全能图片G2.5图生图 最强生图模型文生图创作_2099903841104916481.json, 图片生成/文生图/图生图官方稳定版｜全能图片G2.0超强一致性_2093819752287399937.json, 图片生成/文生图/多图文参考出图｜电影海报电商海报设计利器_2101133331265052674.json, 视频生成/图生视频/全能图片2.0多宫格故事板 角色分镜批量出图_2098854307813740546.json]
+members: [图片生成/图生图/DeepSeek最新单品工作流， 处理方案_2105805028530409473.json, 图片生成/图生图/G2.5全能图片编辑经济版 低成本图像处理方案_2098301672375283713.json, 图片生成/图生图/Image-2.5九图图生图版本 多图编辑处理_2098304496907669505.json, 图片生成/图生图/qk多场景图工作流 多场景批量生成方案一键搞定_2105133139034202113.json, 图片生成/图生图/qk适用步骤图工作流 分步骤出图方案高效稳定_2105027127480512514.json, 图片生成/图生图/全能图片2.5电商低成本生图 单张低至0.21元_2098862195231772674.json, 图片生成/图生图/全能图片G-2.5低价版图片编辑｜角色设计与分镜生成出图，图生图成本打下来_2100423600812679170.json, 图片生成/图生图/全能图片G2.5图片编辑低价版 图生图处理工具_2100688455109009410.json, 图片生成/图生图/最新单品deepseek 图像编辑方案高质量_2109433966536253442.json, 图片生成/文生图/全能图片G-2.5低价版｜文生图局部重绘图片编辑_2101197387636236289.json, 图片生成/文生图/全能图片G-image-2.5 文生图与图生图双模图像处理_2098633491339636738.json, 图片生成/文生图/全能图片G-image-2.5｜文生图图生图一应俱全_2098719464136204289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_115
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/服装模特姿势复刻全能PRO官方稳定版工作流，服装展示图生图工具_2107203791136321538.json、图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json、图片生成/文生图/6宫格图片生成｜全能图片G IMAGE2文生图一键出图_2093788695898968066.json、图片生成/文生图/6宫格图片生成｜全能图片G IMAGE2文生图直出_2093455106091077633.json、图片生成/文生图/低价渠道版｜全能图片G-2.0图生图商品替换_2094033849197096961.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/DeepSeek最新单品工作流， 处理方案_2105805028530409473.json、图片生成/图生图/G2.5全能图片编辑经济版 低成本图像处理方案_2098301672375283713.json、图片生成/图生图/Image-2.5九图图生图版本 多图编辑处理_2098304496907669505.json、图片生成/图生图/qk多场景图工作流 多场景批量生成方案一键搞定_2105133139034202113.json、图片生成/图生图/qk适用步骤图工作流 分步骤出图方案高效稳定_2105027127480512514.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -30,6 +30,7 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -37,43 +38,45 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 8/9 个有
-- `RH_RhartImageG2ImageToImage` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
-- `CR Prompt Text` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `RH_RhartImageNProOfficialEdit` —— 2/9 个有
-- `OpenposePreprocessor` —— 1/9 个有
-- `Preview from image [Crystools]` —— 1/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
-- `easy imageSave` —— 1/9 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 8/12 个有
+- `RH_RhartImageG25FlareImageToImage` —— 7/12 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 6/12 个有
+- `RH_RhartImageG25FlareTextToImage` —— 5/12 个有
+- `JWStringConcat` —— 4/12 个有
+- `Text` —— 4/12 个有
+- `Fast Groups Muter (rgthree)` —— 3/12 个有
+- `MuyeTextEditOutput` —— 3/12 个有
+- `JjkShowText` —— 2/12 个有
+- `RH_LLMAPI_NODE` —— 2/12 个有
+- `SaveText` —— 2/12 个有
+- `VRGDG_LocalLLM` —— 2/12 个有
+- `CR Prompt Text` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
+| 采样算法 | er_sde | - | 12 | 100% |
+| 调度器 | beta | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 80 | 80 - 80 | 12 | 100% |
+| 高度 | 80 | 80 - 80 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，12 个样本，一致性 100%
+- 调度器 最常用 beta，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

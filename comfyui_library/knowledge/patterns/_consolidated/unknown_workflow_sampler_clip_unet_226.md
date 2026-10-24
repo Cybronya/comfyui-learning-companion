@@ -1,69 +1,56 @@
 ---
 name: unknown_workflow_sampler_clip_unet_226
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8735
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.886333
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux2-Klein-9B-True-V2 文生图+图像编辑_2053278001936248833.json, 视频生成/图生视频/2014254176355753986.json]
+members: [图片生成/文生图/flux2+gemma4自动写提示词文生图工作流_2053683049765851138.json, 图片生成/文生图/flux2-klein基础文生图工作流_2033541606950834177.json, 图片生成/文生图/【遇见AI】FLUX2-klein-4b，文生图_2012008988237373441.json, 图片生成/文生图/【遇见AI】FLUX2-klein-9b，文生图_2012015997716271105.json, 图片生成/文生图/【遇见AI】FLUX2-klein-base-4b，文生图_2012011674202546178.json, 图片生成/文生图/【遇见AI】FLUX2-klein-base-9b，文生图_2012019877464248321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_226
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein-9B-True-V2 文生图+图像编辑_2053278001936248833.json、视频生成/图生视频/2014254176355753986.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/flux2+gemma4自动写提示词文生图工作流_2053683049765851138.json、图片生成/文生图/flux2-klein基础文生图工作流_2033541606950834177.json、图片生成/文生图/【遇见AI】FLUX2-klein-4b，文生图_2012008988237373441.json、图片生成/文生图/【遇见AI】FLUX2-klein-9b，文生图_2012015997716271105.json、图片生成/文生图/【遇见AI】FLUX2-klein-base-4b，文生图_2012011674202546178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Simple Text Watermark` —— 1/2 个有
-- `ClownsharKSampler_Beta` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `LCSColorAnchor` —— 1/2 个有
-- `LCSLoadData` —— 1/2 个有
-- `LCSSharpnessCalibrate` —— 1/2 个有
-- `LCSSharpnessIntervene` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `EmptyLatentImage` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `ShowAnything|Mie` —— 1/6 个有
+- `llama_cpp_instruct_adv` —— 1/6 个有
+- `llama_cpp_model_loader` —— 1/6 个有
+- `llama_cpp_parameters` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | sgm_uniform | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 30 | - | 1 | 100% |
-| 采样算法 | -1 | - | 1 | 100% |
-| 调度器 | 1 | - | 1 | 100% |
-| 重绘幅度 | 0.85 | - | 1 | 100% |
+| 宽度 | 1008 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -71,5 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

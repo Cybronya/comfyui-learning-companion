@@ -1,96 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_176
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.827
-common_nodes: [BasicGuider, BasicScheduler, BoolOperationNode, CLIPLoader, CM_BoolToInt, ComfyMathExpression, CreateVideo, ExecutionBlocker, FloatConditions, FloatToText, GetCurrentTimeNode, ImpactNeg, JjkText, KSamplerSelect, LoadImage, PrimitiveBoolean, PrimitiveFloat, RHLLMChatNode, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, SaveAudioAdvanced, SaveLatent, SaveVideo, StringReplace, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, easy anythingIndexSwitch, easy mathString, ttN concat, 孤海注释]
+frequency: 6
+level: strong
+coverage: 0.8795
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax图生视频20260806  (8)4步加速lora_2084192333918199809.json, 视频生成/图生视频/Minimax多参考生视频20260805_2084182454797160450.json, 视频生成/图生视频/Minimax首尾帧生视频20260806 (8)4步加速lora_2084953395093397506.json, 视频生成/图生视频/开源短剧+TVC广告Minimax多参考生视频_2084926833153372162.json]
+members: [图片生成/文生图/故事_1982707861027471361.json, 图片生成/文生图/文生图+LoRA_1932450301490425858.json, 图片生成/文生图/红线-文生图-LoRA_1937538449320906754.json, 图片生成/文生图/英文字体设计_1927964492725141505.json, 图片生成/文生图/英文字体设计_2084095503633043458.json, 图片生成/文生图/超好用室内文生图+放大集合_1963922300439547906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_176
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax图生视频20260806  (8)4步加速lora_2084192333918199809.json、视频生成/图生视频/Minimax多参考生视频20260805_2084182454797160450.json、视频生成/图生视频/Minimax首尾帧生视频20260806 (8)4步加速lora_2084953395093397506.json、视频生成/图生视频/开源短剧+TVC广告Minimax多参考生视频_2084926833153372162.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/故事_1982707861027471361.json、图片生成/文生图/文生图+LoRA_1932450301490425858.json、图片生成/文生图/红线-文生图-LoRA_1937538449320906754.json、图片生成/文生图/英文字体设计_1927964492725141505.json、图片生成/文生图/英文字体设计_2084095503633043458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `BoolOperationNode`
-- `CLIPLoader`
-- `CM_BoolToInt`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ExecutionBlocker`
-- `FloatConditions`
-- `FloatToText`
-- `GetCurrentTimeNode`
-- `ImpactNeg`
-- `JjkText`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `KSamplerSelect`
-- `LoadImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RHLLMChatNode`
-- `RTXVideoSuperResolution`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveAudioAdvanced`
-- `SaveLatent`
-- `SaveVideo`
-- `StringReplace`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy mathString`
-- `ttN concat`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `CM_IntToFloat` —— 2/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `GetVideoComponents` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `IntConditions` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoadVideo` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `MiniMaxH3ImageToVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `Qwen3_VQA` —— 2/4 个有
-- `ResolutionSelector` —— 2/4 个有
-- `StringConcatenate` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `EasyCache` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `MiniMaxH3BlockCacheT8` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
-- `easy imageInsetCrop` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `CLIPTextEncode` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `LoraLoader` —— 4/6 个有
+- `UltimateSDUpscale` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
+- `FluxGuidance` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `BatchPromptSchedule` —— 1/6 个有
+- `CheckpointLoaderSimple` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1112 | 1024 - 1280 | 6 | 90% |
+| 高度 | 872 | 720 - 1600 | 6 | 68% |
+| LoRA 模型强度 | 0.7 | 0.6 - 0.8 | 4 | 86% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -98,4 +62,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1112，观测区间 1024 - 1280，6 个样本，取值集中（一致性 90%）
+- 高度 中位数 872，观测区间 720 - 1600，6 个样本
+- LoRA 模型强度 中位数 0.7，观测区间 0.6 - 0.8，4 个样本，取值集中（一致性 86%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

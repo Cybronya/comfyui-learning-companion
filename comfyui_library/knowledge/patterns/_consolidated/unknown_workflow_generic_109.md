@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_109
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.965556
-common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.8425
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json, 音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json, 音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计_2056660403781984257.json, 音频生成/音频生成/VoxCPM2语音克隆_2090280073604718593.json, 音频生成/音频生成/VoxCPM2语音极限克隆V1  企财盈6.17_2067072588702113793.json, 音频生成/音频生成/vox cpm2语音克隆_2056202036819046401.json]
+members: [图片生成/图生图/全能图片2.0换脸换装换人人物一致性_2027678647116636162.json, 图片生成/图生图/全能图片2.0（RH版）_2054504391834644481.json, 图片生成/图生图/全能图片3.0_2056901771477479426.json, 图片生成/图生图/全能图片3.0_2058578600839966721.json, 图片生成/图生图/全能图片SSS_2055150764548476929.json, 图片生成/图生图/全身白底制作：人物头部 + 3 套服装参考_2075031506845786114.json, 图片生成/图生图/南音-模特换背景-全能图片2.0_2054883303676760065.json, 图片生成/图生图/双人版穿搭场景复刻工作流（荔枝云客））_2038626848879415298.json, 图片生成/图生图/哈哈哈 全能图片2.0_2040710630193238018.json, 图片生成/图生图/国风古装风格-美女生成_2053645023501144065.json, 图片生成/图生图/图片裂变 白底背景 人物多姿势  多角度+自定义姿势+批量生图  根据图片风格随机变换姿势_2085179465243648002.json, 图片生成/图生图/换脸换装换人人物一致性全能图片2.0_2027953621379321858.json, 图片生成/图生图/服装行业-模特换装（全能图片2）_2017250254978027522.json, 图片生成/图生图/模特换背景-全能图片2.0_2031176888189722626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_109
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json、音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json、音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/全能图片2.0换脸换装换人人物一致性_2027678647116636162.json、图片生成/图生图/全能图片2.0（RH版）_2054504391834644481.json、图片生成/图生图/全能图片3.0_2056901771477479426.json、图片生成/图生图/全能图片3.0_2058578600839966721.json、图片生成/图生图/全能图片SSS_2055150764548476929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
+全部 14 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `AudioCrop` —— 1/9 个有
-- `AudioSeparation` —— 1/9 个有
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 1/9 个有
-- `ShowAnything|Mie` —— 1/9 个有
+- `ImageConcatMulti` —— 5/14 个有
+- `Repeater|pysssss` —— 1/14 个有
 
 ## 典型参数
 

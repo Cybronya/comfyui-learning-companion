@@ -1,34 +1,40 @@
 ---
 name: unknown_workflow_generic_782
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.455
-common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4_5, Comfly_api_set, LoadImage, SaveImage, ShowText|pysssss]
+frequency: 4
+level: moderate
+coverage: 0.951
+common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, IndexTTS2Run, LoadAudio, PreviewAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json, 图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json]
+members: [音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json, 音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json, 音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json, 音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_782
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json、图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json、音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json、音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json、音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CR Prompt Text`
-- `Comfly_Doubao_Seedream_4_5`
-- `Comfly_api_set`
-- `LoadImage`
-- `SaveImage`
-- `ShowText|pysssss`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PreviewAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `SaveAudioMP3` —— 3/4 个有
+- `CR Text` —— 2/4 个有
 
 ## 典型参数
 
@@ -40,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

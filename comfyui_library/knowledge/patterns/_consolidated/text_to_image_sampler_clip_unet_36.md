@@ -1,30 +1,30 @@
 ---
 name: text_to_image_sampler_clip_unet_36
 type: Text To Image
-frequency: 10
-level: strong
-coverage: 0.9846
-common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 13
+level: moderate
+coverage: 0.965154
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [easy cleanGpuUsed]
-members: [图片生成/文生图/1901871929287188482.json, 图片生成/文生图/1904463583671980033.json, 图片生成/文生图/1910491843820253185.json, 图片生成/文生图/1910503564932804610.json, 图片生成/文生图/1912760478278348801.json, 图片生成/文生图/1915239700771045377.json, 图片生成/文生图/1976848182871314434.json, 图片生成/文生图/FLUX1文生图260814_2088196242147987458.json, 图片生成/文生图/FLUX工作流_2106376251710722050.json, 图片生成/文生图/Flux文生图工作流_2007992047759790082.json]
+missing: []
+members: [图片生成/文生图/Anima_base_原版基础工作流_2055104883111546881.json, 图片生成/文生图/Anima_base_原版基础工作流_2055127367860932609.json, 图片生成/文生图/Anima动漫生成大模型：一键生成“良子”漫画插图！_2018308287694905346.json, 图片生成/文生图/Anima基础工作流_2018148600248803330.json, 图片生成/文生图/Anima文生图_2021929707570208769.json, 图片生成/文生图/Anima最新动漫文生图模型_2018217761347997698.json, 图片生成/文生图/Beyond Reality Z-image文生图_1999838076270768130.json, 图片生成/文生图/Boogu 文生图_2068696295937765378.json, 图片生成/文生图/Boogu-Image Base+Turbe双采文生图2606_2068416769479499777.json, 图片生成/文生图/Krea2 快速生图_2082367532186554370.json, 图片生成/文生图/Krea2-trubo-文生图_2069750701965791233.json, 图片生成/文生图/Lens-文生图_2058748909492723713.json, 图片生成/文生图/PromptLine+Anima Preview2艺术家批量风格测试_2033542990416846849.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_36
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/1901871929287188482.json、图片生成/文生图/1904463583671980033.json、图片生成/文生图/1910491843820253185.json、图片生成/文生图/1910503564932804610.json、图片生成/文生图/1912760478278348801.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Anima_base_原版基础工作流_2055104883111546881.json、图片生成/文生图/Anima_base_原版基础工作流_2055127367860932609.json、图片生成/文生图/Anima动漫生成大模型：一键生成“良子”漫画插图！_2018308287694905346.json、图片生成/文生图/Anima基础工作流_2018148600248803330.json、图片生成/文生图/Anima文生图_2021929707570208769.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
@@ -33,41 +33,39 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 6/10 个有
-- `DF_Text_Box` —— 5/10 个有
-- `FluxLoraLoader` —— 5/10 个有
-- `LoraLoaderModelOnly` —— 5/10 个有
-- `FluxGuidance` —— 4/10 个有
-- `TeaCache` —— 3/10 个有
-- `CheckpointLoaderSimple` —— 1/10 个有
-- `PMRF` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
+- `PreviewImage` —— 5/13 个有
+- `LatentUpscaleBy` —— 3/13 个有
+- `DeepTranslatorCLIPTextEncodeNode` —— 1/13 个有
+- `GPTImage2PromptPreview` —— 1/13 个有
+- `JWStringConcat` —— 1/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `String Literal` —— 1/13 个有
+- `easy promptLine` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | 8 - 25 | 10 | 61% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 50% |
-| 调度器 | simple | - | 10 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 768 | 720 - 1024 | 10 | 87% |
-| 高度 | 1024 | 768 - 1536 | 10 | 82% |
+| 采样步数 | 30 | 4 - 40 | 13 | 47% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 5 | 13 | 44% |
+| 采样算法 | er_sde | - | 13 | 46% |
+| 调度器 | simple | - | 13 | 77% |
+| 重绘幅度 | 1 | 0.35 - 1 | 13 | 79% |
+| 宽度 | 960 | 720 - 1280 | 13 | 87% |
+| 高度 | 1152 | 1024 - 1600 | 13 | 85% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，观测区间 8 - 25，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 50%
-- 调度器 最常用 simple，10 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 720 - 1024，10 个样本，取值集中（一致性 87%）
-- 高度 中位数 1024，观测区间 768 - 1536，10 个样本，取值集中（一致性 82%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed
+- 采样步数 中位数 30，观测区间 4 - 40，13 个样本，取值分散，一致性仅 47%
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 5，13 个样本，取值分散，一致性仅 44%
+- 采样算法 最常用 er_sde，13 个样本，一致性 46%
+- 调度器 最常用 simple，13 个样本，一致性 77%
+- 重绘幅度 中位数 1，观测区间 0.35 - 1，13 个样本
+- 宽度 中位数 960，观测区间 720 - 1280，13 个样本，取值集中（一致性 87%）
+- 高度 中位数 1152，观测区间 1024 - 1600，13 个样本，取值集中（一致性 85%）

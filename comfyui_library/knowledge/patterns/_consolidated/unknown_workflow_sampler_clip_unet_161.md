@@ -1,67 +1,83 @@
 ---
 name: unknown_workflow_sampler_clip_unet_161
 type: Unknown Workflow
-frequency: 4
-level: weak
-coverage: 0.97925
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.730625
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Z-Image批量文生图_1993908239676932097.json, 图片生成/文生图/Z-image-base文生图_2019404038776823810.json, 图片生成/文生图/Z-image-base文生图_2020836862188851201.json, 图片生成/文生图/Z-image-turbo-t2i_2073765816608313345.json]
+members: [图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json, 图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json, 图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json, 图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json, 图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json, 图片生成/文生图/Ideogram4智能JSON格式文生图_2064134445258596354.json, 图片生成/文生图/VividMuse Ideogram4 workflow_2064337095640047618.json, 图片生成/文生图/ideogram4 自用版_2067414472725192705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_161
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-Image批量文生图_1993908239676932097.json、图片生成/文生图/Z-image-base文生图_2019404038776823810.json、图片生成/文生图/Z-image-base文生图_2020836862188851201.json、图片生成/文生图/Z-image-turbo-t2i_2073765816608313345.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json、图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json、图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json、图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json、图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/4 个有
-- `Bookmark (rgthree)` —— 1/4 个有
-- `CompressImages` —— 1/4 个有
-- `FromListGet1Image` —— 1/4 个有
-- `ResolutionSelector` —— 1/4 个有
-- `easy promptList` —— 1/4 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `PrimitiveInt` —— 7/8 个有
+- `CR Text` —— 5/8 个有
+- `TextGenerate` —— 5/8 个有
+- `easy showAnything` —— 5/8 个有
+- `GetNode` —— 4/8 个有
+- `Int` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `PreviewAny` —— 4/8 个有
+- `SetNode` —— 4/8 个有
+- `Ideogram4PromptBuilderKJ` —— 3/8 个有
+- `PrimitiveStringMultiline` —— 3/8 个有
+- `StringConcatenate` —— 2/8 个有
+- `CLIPLoaderGGUF` —— 1/8 个有
+- `CustomCombo` —— 1/8 个有
+- `DeepTranslatorTextNode` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RHLLMChatNode` —— 1/8 个有
+- `Seed (rgthree)` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy promptList` —— 1/8 个有
+- `取色器_孤海` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 38 | 4 | 16% |
-| Prompt 约束强度(CFG) | 2 | 1 - 8 | 4 | 12% |
-| 采样算法 | res_multistep | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 0.9 - 1 | 4 | 96% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 38，4 个样本，取值分散，一致性仅 16%
-- Prompt 约束强度(CFG) 中位数 2，观测区间 1 - 8，4 个样本，取值分散，一致性仅 12%
-- 采样算法 最常用 res_multistep，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.9 - 1，4 个样本，取值集中（一致性 96%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

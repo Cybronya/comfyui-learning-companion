@@ -1,68 +1,78 @@
 ---
 name: unknown_workflow_sampler_unet_vae_222
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.698
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.7645
+common_nodes: [CLIPLoader, ImageConcanate, KSampler, LoadImage, PainterFluxImageEdit, PreviewImage, SaveImage, SolidMask, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/千问2.1 文生图片（支持生成透明图片）_2103811218925510657.json, 数字人/数字人/【尺素】Qwen_image_2.1文生图_2101923741793079298.json]
+members: [图片生成/图生图/Flux 2 Klein换头换脸_2017519628590784513.json, 图片生成/图生图/Flux2-Klein+极速换脸_2012141005570580481.json, 图片生成/图生图/Klein换图工作流_2021372321809829890.json, 图片生成/图生图/一键换头（无需多余操作）_2050550897880645634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_222
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/千问2.1 文生图片（支持生成透明图片）_2103811218925510657.json、数字人/数字人/【尺素】Qwen_image_2.1文生图_2101923741793079298.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux 2 Klein换头换脸_2017519628590784513.json、图片生成/图生图/Flux2-Klein+极速换脸_2012141005570580481.json、图片生成/图生图/Klein换图工作流_2021372321809829890.json、图片生成/图生图/一键换头（无需多余操作）_2050550897880645634.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
+- `ImageConcanate`
 - `KSampler`
-- `ResolutionSelector`
+- `LoadImage`
+- `PainterFluxImageEdit`
+- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `easy imageRemBg` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `DapaoImageAspectRatioResizeNode` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `AutoCropFaces` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `JWStringMultiline` —— 1/4 个有
+- `MaskPreview+` —— 1/4 个有
+- `SDVN RGBA to RGB` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 32.5 | - | 2 | 77% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 32.5，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

@@ -1,66 +1,101 @@
 ---
 name: unknown_workflow_video_lora_sampler_460
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.7898
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
-problems: []
+frequency: 4
+level: weak
+coverage: 0.907
+common_nodes: [CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, ImageStitch, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PrimitiveBoolean, RH_Captioner, RH_Translator, SimpleMath+, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy ifElse, easy int, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/加速版 只需4步，300s，0.9倍百万像素 minimax h3 4步加速lightx2v_2086649957204979713.json, 视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json, 视频生成/文生视频/开源版Minimax H3 多合一T8版本+全节点注释_2086677614869172225.json, 视频生成/文生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086660578432610305.json, 视频生成/文生视频/打斗专用工作流MINIMAX-H3_2089439571347066881.json]
+members: [图片生成/图生图/wan2.2-14B 首尾帧最新_1952194962240819201.json, 图片生成/文生图/qwen_image+wan2.2——飞翔荷兰人_1971507524669259778.json, 视频生成/图生视频/4min-0.05-图生视频wan2.2视频循环首尾帧_1965238550650306562.json, 视频生成/图生视频/wan2.2图生视频，效果好，速度快_1964263324487700481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_460
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/加速版 只需4步，300s，0.9倍百万像素 minimax h3 4步加速lightx2v_2086649957204979713.json、视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json、视频生成/文生视频/开源版Minimax H3 多合一T8版本+全节点注释_2086677614869172225.json、视频生成/文生视频/开源版Minimax H3视频全功能加速图片参考turbo4步加速短视频生成_2086660578432610305.json、视频生成/文生视频/打斗专用工作流MINIMAX-H3_2089439571347066881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/wan2.2-14B 首尾帧最新_1952194962240819201.json、图片生成/文生图/qwen_image+wan2.2——飞翔荷兰人_1971507524669259778.json、视频生成/图生视频/4min-0.05-图生视频wan2.2视频循环首尾帧_1965238550650306562.json、视频生成/图生视频/wan2.2图生视频，效果好，速度快_1964263324487700481.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **样本数**：4
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 4 个 workflow 都包含：
+- `CogVideoEnhanceAVideo`
+- `CreateCFGScheduleFloatList`
+- `DF_Integer`
+- `ImageStitch`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveBoolean`
+- `RH_Captioner`
+- `RH_Translator`
+- `SimpleMath+`
+- `Textbox`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3AudioConditioningT8` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `BasicScheduler` —— 2/5 个有
-- `KSamplerSelect` —— 2/5 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/5 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
-- `PT_H3ConcatAVLatent` —— 1/5 个有
-- `PlaySound|pysssss` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `CLIPLoader` —— 2/4 个有
+- `CLIPTextEncode` —— 2/4 个有
+- `CLIPVisionEncode` —— 2/4 个有
+- `CLIPVisionLoader` —— 2/4 个有
+- `CR Text Replace` —— 2/4 个有
+- `KSamplerAdvanced` —— 2/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `ModelSamplingSD3` —— 2/4 个有
+- `PathchSageAttentionKJ` —— 2/4 个有
+- `TextBox` —— 2/4 个有
+- `UNETLoader` —— 2/4 个有
+- `VAEDecode` —— 2/4 个有
+- `VAELoader` —— 2/4 个有
+- `WanImageToVideo` —— 2/4 个有
+- `AILab_MiniCPM_4_V` —— 1/4 个有
+- `ColorMatchToReference` —— 1/4 个有
+- `EmptySD3LatentImage` —— 1/4 个有
+- `KSampler` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 22% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 22%
+- 调度器 最常用 simple，2 个样本，一致性 50%

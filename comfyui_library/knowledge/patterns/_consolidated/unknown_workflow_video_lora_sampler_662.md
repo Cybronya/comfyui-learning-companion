@@ -3,53 +3,70 @@ name: unknown_workflow_video_lora_sampler_662
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.447
-common_nodes: [FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageColorMatch+, ImageRepeat, ImageResizeKJv2, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.875667
+common_nodes: [CLIPVisionLoader, DrawViTPose, Evaluate Integers, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveStringMultiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946036968394289154.json, 视频生成/图生视频/1946043472392712193.json, 视频生成/图生视频/1943291621532463106.json]
+members: [视频生成/图生视频/【🛫书墨】人物换装-参考动作、表情(多图)_2011369143001423874.json, 视频生成/图生视频/人物换装-参考动作、表情(多图)_2050270742914322434.json, 音频生成/音频生成/wan2-2唱歌参考动态表情动作AnimateKJ_v2视频生成工作流_1982391407681912834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_662
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1946036968394289154.json、视频生成/图生视频/1946043472392712193.json、视频生成/图生视频/1943291621532463106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【🛫书墨】人物换装-参考动作、表情(多图)_2011369143001423874.json、视频生成/图生视频/人物换装-参考动作、表情(多图)_2050270742914322434.json、音频生成/音频生成/wan2-2唱歌参考动态表情动作AnimateKJ_v2视频生成工作流_1982391407681912834.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageColorMatch+`
-- `ImageRepeat`
-- `ImageResizeKJv2`
-- `Label (rgthree)`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `Evaluate Integers`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `SetNode`
+- `PrimitiveStringMultiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `BatchCount+` —— 2/3 个有
+- `Evaluate Floats` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Image Batch` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `SynVowImageBatchRangeIndex` —— 2/3 个有
+- `SynVowImageTotalGroups` —— 2/3 个有
+- `easy batchAnything` —— 2/3 个有
+- `easy convertAnything` —— 2/3 个有
+- `easy float` —— 2/3 个有
+- `easy forLoopEnd` —— 2/3 个有
+- `easy forLoopStart` —— 2/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
 
 ## 典型参数
 

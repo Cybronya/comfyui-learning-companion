@@ -3,55 +3,74 @@ name: text_to_image_face_detailer_sampler_clip
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8055
-common_nodes: [Anything Everywhere3, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, FaceDetailer, KSampler, Prompts Everywhere, SAMLoader, SaveImage, UltralyticsDetectorProvider, VAEDecode]
+coverage: 0.8315
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Text, DetailerForEach, DifferentialDiffusion, EditDetailerPipe, EmptyLatentImage, FaceDetailerPipe, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImpactSwitch, ImpactWildcardProcessor, KSampler, LoadImage, MaskToSEGS, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, SAMLoader, SaveImage, SeedNode, SolidMask, ToDetailerPipe, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAEEncode, VAELoader, easy hiresFix, easy int]
 problems: []
-missing: [Prompts Everywhere]
-members: [图片生成/文生图/1908735322887495681.json, 图片生成/文生图/面部细化基础款_1899743176406478849.json]
+missing: []
+members: [图片生成/文生图/AnimaBasic_2107472171026173954.json, 图片生成/文生图/AnimaBasic_2109180267482140673.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_face_detailer_sampler_clip
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1908735322887495681.json、图片生成/文生图/面部细化基础款_1899743176406478849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AnimaBasic_2107472171026173954.json、图片生成/文生图/AnimaBasic_2109180267482140673.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
+- `CFGZeroStar`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CR Text`
+- `DetailerForEach`
+- `DifferentialDiffusion`
+- `EditDetailerPipe`
 - `EmptyLatentImage`
-- `FaceDetailer`
+- `FaceDetailerPipe`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `ImpactWildcardProcessor`
 - `KSampler`
-- `Prompts Everywhere`
+- `LoadImage`
+- `MaskToSEGS`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `SAMLoader`
 - `SaveImage`
+- `SeedNode`
+- `SolidMask`
+- `ToDetailerPipe`
+- `UNETLoader`
 - `UltralyticsDetectorProvider`
 - `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `easy hiresFix`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `LatentUpscaleBy` —— 1/2 个有
-- `SDXLPromptStyler` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CR Upscale Image` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 17 | - | 2 | 82% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
-| 采样算法 | dpmpp_2m_sde_gpu | - | 2 | 50% |
-| 调度器 | normal | - | 2 | 50% |
+| 采样步数 | 30 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 744 | - | 2 | 97% |
-| 高度 | 1152 | - | 2 | 89% |
+| 宽度 | 1024 | - | 2 | 100% |
+| 高度 | 1024 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -59,12 +78,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 17，样本不足，未给区间，2 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 采样算法 最常用 dpmpp_2m_sde_gpu，2 个样本，一致性 50%
-- 调度器 最常用 normal，2 个样本，一致性 50%
+- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 744，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 1152，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Prompts Everywhere
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,70 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_99
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.584667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, CR SDXL Aspect Ratio, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadImage, LoraLoader, LyingSigmaSampler, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StringFunction|pysssss, Text Concatenate (JPS), UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8562
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [StringFunction|pysssss, Text Concatenate (JPS), easy imageScaleDownBy, CR SDXL Aspect Ratio, easy stylesSelector, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model]
-members: [图片生成/文生图/1902223229052985346.json, 图片生成/文生图/1922306279304286210.json, 图片生成/文生图/1928392034858745858.json]
+missing: []
+members: [图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json, 图片生成/图生图/Klein高清重绘放大_2032838566539169794.json, 图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json, 图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json, 图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_99
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1902223229052985346.json、图片生成/文生图/1922306279304286210.json、图片生成/文生图/1928392034858745858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json、图片生成/图生图/Klein高清重绘放大_2032838566539169794.json、图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json、图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json、图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `CR SDXL Aspect Ratio`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoader`
-- `LyingSigmaSampler`
+- `LoraLoaderModelOnly`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
 - `ShowText|pysssss`
-- `StringFunction|pysssss`
-- `Text Concatenate (JPS)`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFBCacheOnModel` —— 1/3 个有
-- `JJC_JoyCaption` —— 1/3 个有
-- `JJC_JoyCaption_Custom` —— 1/3 个有
-- `Joy_caption` —— 1/3 个有
-- `Joy_caption_load` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `easy imageScaleDownBy` —— 1/3 个有
-- `easy stylesSelector` —— 1/3 个有
+- `Florence2ModelLoader` —— 2/5 个有
+- `Florence2Run` —— 2/5 个有
+- `FluxKVCache` —— 2/5 个有
+- `WD14Tagger|pysssss` —— 2/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `ConstrainImage|pysssss` —— 1/5 个有
+- `Crop (mtb)` —— 1/5 个有
+- `DetailTransfer` —— 1/5 个有
+- `GetImageSize+` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SeedVR2LoadDiTModel` —— 1/5 个有
+- `SeedVR2LoadVAEModel` —— 1/5 个有
+- `SeedVR2VideoUpscaler` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 800 | 800 - 800 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| LoRA 模型强度 | 0.8 | 0.4 - 4 | 3 | 7% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,8 +81,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 800，观测区间 800 - 800，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，观测区间 0.4 - 4，3 个样本，取值分散，一致性仅 7%
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：StringFunction|pysssss、Text Concatenate (JPS)、easy imageScaleDownBy、CR SDXL Aspect Ratio、easy stylesSelector
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

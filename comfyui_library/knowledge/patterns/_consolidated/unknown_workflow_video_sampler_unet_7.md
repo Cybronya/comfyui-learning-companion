@@ -1,61 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_unet_7
 type: Unknown Workflow
-frequency: 28
+frequency: 30
 level: moderate
-coverage: 0.890929
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.9112
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json, 视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2084592731342594049.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2099779886431952898.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2100039671811235841.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T4_2084592720953303042.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T5_2084645120611278849.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084645112528859137.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084670389682270209.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T7_2084693256843128834.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T8_2084703777696866306.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085923821353263105.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085945362610741250.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085968737643098113.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2086378020520153090.json, 视频生成/图生视频/MInimaxH3首尾帧生成视频_2085616709708378113.json, 视频生成/图生视频/MInimaxH3首尾帧电商广告图_2086285454638411777.json, 视频生成/图生视频/MinimaxH3图生视频可指定音乐_2086761878126157826.json, 视频生成/图生视频/minimaxH3人物变化转场_2085374527827169281.json, 视频生成/图生视频/创意无限_2087087580423741441.json, 视频生成/图生视频/吉他和狗狗_2090264859219947522.json, 视频生成/图生视频/图生视频_2086720339278647297.json, 视频生成/图生视频/最新mimimaxH3漫剧镜头T1_2084662928074174466.json, 视频生成/图生视频/来一杯可乐_2097322293583241217.json, 视频生成/图生视频/首尾帧图生视频_2086841278280589314.json]
+members: [视频生成/文生视频/MiniMax H3 INT8 SolAttn 极速版_2093143560123150337.json, 视频生成/文生视频/MiniMax_H3_BF16_Turbo_Sage_加速版_2089253764594229249.json, 视频生成/文生视频/Minimax H3 声音乐器-采样器调度器-BF16剪枝版-无加速_2093639353842098177.json, 视频生成/文生视频/Minimax H3 高画质-采样器调度器-BF16剪枝版-无加速_2093639342676856833.json, 视频生成/文生视频/Minimax H3 高速运动-采样器调度器-BF16剪枝版-无加速_2093639364529184769.json, 视频生成/文生视频/Minimax H3-Dasiwa-动漫-多参考-超高质量_2093726033286623233.json, 视频生成/文生视频/Minimax H3-Dasiwa-直出1080P动漫多参考_2093979339154087938.json, 视频生成/文生视频/Minimax H3-极致满血1K-10秒模板--多参双bf16-+sage加速_2088287578414993410.json, 视频生成/文生视频/Minimax H3-满血+4步lora-768P-10秒模板--多参双bf16-+sage加速_2088285956901269506.json, 视频生成/文生视频/Minimax H3-满血+8步lora-768P-10秒模板--多参双bf16-+sage加速_2088285867222851586.json, 视频生成/文生视频/Minimax H3剪枝版BF16微表情10秒768P模板_2090341412847046658.json, 视频生成/文生视频/Minimax H3剪枝版BF16微表情15秒768P模板_2090340141847105537.json, 视频生成/文生视频/Minimax H3剪枝版BF16微表情5秒768P模板_2090341418379341825.json, 视频生成/文生视频/Minimax H3剪枝版BF16高动态10秒768P模板_2090341523455037442.json, 视频生成/文生视频/Minimax H3剪枝版BF16高动态15秒768P模板_2090318433895411714.json, 视频生成/文生视频/Minimax H3剪枝版BF16高动态5秒768P模板_2090341513657143298.json, 视频生成/文生视频/Minimax H3动作增强修复双采--b25-49-0.4-1.0_2096232367546523649.json, 视频生成/文生视频/Minimax H3动作增强修复双采--bf16-0.4-1.0_2096232383161917442.json, 视频生成/文生视频/MinimaxH3-Dasiwa-15秒模板-三维CG动画：月球温室-高质量768P_2094076369448816641.json, 视频生成/文生视频/MinimaxH3-Dasiwa-15秒模板-二维手绘动画：云海邮局-高质量768P_2094076358363271169.json, 视频生成/文生视频/MinimaxH3-Dasiwa-15秒模板-水墨动画：笛声引鹤-高质量768P_2094076379938775042.json, 视频生成/文生视频/MinimaxH3-双bf16满血版-4步加速lora 1.0+sage_2088155343741345793.json, 视频生成/文生视频/MinimaxH3-双bf16满血版-8步加速lora 1.0+sage_2088154982188150785.json, 视频生成/文生视频/MinimaxH3-双bf16满血版-sage无损加速_2088106281772085250.json, 视频生成/文生视频/真实打斗！Minimax H3-B25-49-高质量768P打斗lora_2095797656957317122.json, 视频生成/文生视频/真实打斗！Minimax H3-BF16-高质量768P打斗lora_2095797668554559489.json, 视频生成/文生视频/真实打斗！Minimax H3-Dasiwa-高质量768P打斗lora_2095797686652989441.json, 视频生成/文生视频/真实打斗！多参考Minimax H3-B25-49-高质量768P打斗lora_2095797719204978690.json, 视频生成/文生视频/真实打斗！多参考Minimax H3-BF16-高质量768P打斗lora_2095797730273751042.json, 视频生成/文生视频/真实打斗！多参考Minimax H3-Dasiwa-高质量768P打斗lora_2095797701941223425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json、视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 INT8 SolAttn 极速版_2093143560123150337.json、视频生成/文生视频/MiniMax_H3_BF16_Turbo_Sage_加速版_2089253764594229249.json、视频生成/文生视频/Minimax H3 声音乐器-采样器调度器-BF16剪枝版-无加速_2093639353842098177.json、视频生成/文生视频/Minimax H3 高画质-采样器调度器-BF16剪枝版-无加速_2093639342676856833.json、视频生成/文生视频/Minimax H3 高速运动-采样器调度器-BF16剪枝版-无加速_2093639364529184769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：28
+- **样本数**：30
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 28 个 workflow 都包含：
+全部 30 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 27/28 个有
-- `ImageResizeKJv2` —— 24/28 个有
-- `RHHiddenNodes` —— 23/28 个有
-- `easy showAnything` —— 18/28 个有
-- `RH_Captioner` —— 7/28 个有
-- `TextConcatenate_UTK` —— 5/28 个有
-- `MiniMaxH3BlockCacheT8` —— 4/28 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/28 个有
-- `1hew_AudioDuration` —— 3/28 个有
-- `AudioMerge` —— 3/28 个有
-- `Bjornulf_ShowFloat` —— 3/28 个有
-- `LoadVideoUI` —— 3/28 个有
-- `SaveVideoRGBA` —— 3/28 个有
-- `PreviewAudio` —— 2/28 个有
-- `RH_Translator` —— 1/28 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 29/30 个有
+- `LayerUtility: PurgeVRAM V2` —— 23/30 个有
+- `LoraLoaderModelOnly` —— 19/30 个有
+- `LTXVConcatAVLatent` —— 2/30 个有
+- `LTXVSeparateAVLatent` —— 2/30 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/30 个有
+- `ImpactSwitch` —— 1/30 个有
+- `LoadAudio` —— 1/30 个有
+- `MiniMaxH3FusedModulation` —— 1/30 个有
+- `MiniMaxH3MemoryEfficientSolAttentionPatch` —— 1/30 个有
 
 ## 典型参数
 

@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_1001
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.976
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, PreviewAudio, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.8
+common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/qwen_tts_生成对话音频_2027276632188264449.json, 音频生成/音频生成/音频生成_Qwen3-TTS_多人对话_有声读物_2016481758623047682.json]
+members: [图片生成/文生图/抄分镜_自己创意分镜_改图_全能图像2_1毛6_张_需要充值RH钱包使用。_2044431350509346818.json, 图片生成/文生图/文生图_2043222598250668034.json, 图片生成/文生图/漫剧、短剧资产：一次性生成场景三视图+四特写（4K 0.2元_次）_2045428913467297793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1001
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/qwen_tts_生成对话音频_2027276632188264449.json、音频生成/音频生成/音频生成_Qwen3-TTS_多人对话_有声读物_2016481758623047682.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/抄分镜_自己创意分镜_改图_全能图像2_1毛6_张_需要充值RH钱包使用。_2044431350509346818.json、图片生成/文生图/文生图_2043222598250668034.json、图片生成/文生图/漫剧、短剧资产：一次性生成场景三视图+四特写（4K 0.2元_次）_2045428913467297793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `PreviewAudio`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `FB_Qwen3TTSLoadSpeaker` —— 1/2 个有
-- `LayerUtility: TextBox` —— 1/2 个有
-- `SaveAudioMP3` —— 1/2 个有
+- `LoadImage` —— 2/3 个有
+- `easy showAnything` —— 1/3 个有
+- `ttN text3BOX_3WAYconcat` —— 1/3 个有
 
 ## 典型参数
 
@@ -48,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

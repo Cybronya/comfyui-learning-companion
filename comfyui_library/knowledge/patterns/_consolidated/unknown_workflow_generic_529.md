@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_529
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.531
-common_nodes: [LoadImage, MultiTextConcatenate, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text]
+coverage: 1
+common_nodes: [RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/一致性生图工作流（老程）_2019663643889111042.json, 图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json, 图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json]
+members: [图片生成/图生图/人物镜头多角度工作流_1995421577741316097.json, 图片生成/图生图/通用超清放大 图片质感增强细节_2064237641620606977.json, 图片生成/图生图/高精密产品精修放大文字细节保留_2012070168532357121.json, 图片生成/文生图/G2大模型一键生成=商业图-广告图-产品图_2047112135699861505.json, 视频生成/图生视频/商业图-广告图-产品图提示词一键生成-G2大模型_1965450548570935297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_529
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一致性生图工作流（老程）_2019663643889111042.json、图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json、图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人物镜头多角度工作流_1995421577741316097.json、图片生成/图生图/通用超清放大 图片质感增强细节_2064237641620606977.json、图片生成/图生图/高精密产品精修放大文字细节保留_2012070168532357121.json、图片生成/文生图/G2大模型一键生成=商业图-广告图-产品图_2047112135699861505.json、视频生成/图生视频/商业图-广告图-产品图提示词一键生成-G2大模型_1965450548570935297.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `MultiTextConcatenate`
-- `PreviewAny`
-- `RH_Nano_Banana2_Image2Image`
+全部 5 个 workflow 都包含：
+- `RHHiddenNodes`
 - `SaveImage`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetNode` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `LoadImage` —— 3/5 个有
+- `Text Multiline` —— 3/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 

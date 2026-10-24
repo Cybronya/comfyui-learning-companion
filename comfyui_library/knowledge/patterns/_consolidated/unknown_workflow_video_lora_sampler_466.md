@@ -3,104 +3,68 @@ name: unknown_workflow_video_lora_sampler_466
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8525
-common_nodes: [CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, ImageStitch, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, PrimitiveBoolean, RH_Captioner, RH_Translator, SimpleMath+, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy ifElse, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text Replace, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, SimpleMath+, easy cleanGpuUsed, easy int]
-members: [图片生成/文生图/1971507524669259778.json, 视频生成/图生视频/1971507524669259778.json, 视频生成/图生视频/1965238550650306562.json, 视频生成/图生视频/1964263324487700481.json]
+coverage: 0.91825
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+problems: []
+missing: []
+members: [图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json, 图片生成/文生图/全能图片V1 谷歌大图片编辑 单图 + 多图模式 + 姿势控制_1971322210470281217.json, 视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json, 视频生成/图生视频/Wan2_2 FFGO I2V 首帧自定义视频内容_1993311574968434690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_466
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1971507524669259778.json、视频生成/图生视频/1971507524669259778.json、视频生成/图生视频/1965238550650306562.json、视频生成/图生视频/1964263324487700481.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1995962307618488322.json、图片生成/文生图/全能图片V1 谷歌大图片编辑 单图 + 多图模式 + 姿势控制_1971322210470281217.json、视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json、视频生成/图生视频/Wan2_2 FFGO I2V 首帧自定义视频内容_1993311574968434690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CogVideoEnhanceAVideo`
 - `CreateCFGScheduleFloatList`
-- `DF_Integer`
-- `ImageStitch`
-- `LayerUtility: ImageMaskScaleAs`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `RH_Translator`
-- `SimpleMath+`
-- `Textbox`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 3/4 个有
-- `CLIPTextEncode` —— 3/4 个有
-- `CLIPVisionEncode` —— 3/4 个有
-- `CLIPVisionLoader` —— 3/4 个有
-- `CR Text Replace` —— 3/4 个有
-- `KSamplerAdvanced` —— 3/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `ModelSamplingSD3` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `TextBox` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
-- `VAEDecode` —— 3/4 个有
-- `VAELoader` —— 3/4 个有
-- `WanImageToVideo` —— 3/4 个有
-- `AILab_MiniCPM_4_V` —— 2/4 个有
-- `EmptySD3LatentImage` —— 2/4 个有
-- `KSampler` —— 2/4 个有
-- `ModelSamplingAuraFlow` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `ColorMatchToReference` —— 1/4 个有
+- `AILab_ImageStitch` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `ImageFromBatch+` —— 3/4 个有
+- `ImageStitch` —— 3/4 个有
+- `RMBG` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `RH_Nano_Banana_Image2Image` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 3 | 1% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，3 个样本，取值分散，一致性仅 1%
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Replace、LayerUtility: ImageMaskScaleAs、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: PurgeVRAM V2、SimpleMath+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

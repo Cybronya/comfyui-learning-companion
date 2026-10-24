@@ -3,86 +3,74 @@ name: text_to_image_video_lora_sampler_146
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.7935
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DWPreprocessor, EmptyLatentImage, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, JjkText, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PixelPerfectResolution, PrimitiveInt, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.748
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, ImageScaleToMaxDimension, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncodeTiled, VAELoader, VHS_VideoCombine, VisualizeSigmasKJ, easy cleanGpuUsed, easy clearCacheAll, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/AI动作模仿唱歌跳舞对口型｜AnimateWan2.2图生视频生成_2097085659403087873.json, 视频生成/图生视频/Animate Wan2.2视频换脸换头视频生视频处理工具_2101775798649835522.json, 视频生成/图生视频/AnimateWan2.2动作模仿｜唱歌跳舞对口型一键生成_2095105299878338562.json, 视频生成/图生视频/AnimateWan2.2动作模仿｜唱歌跳舞对口型生成_2094924434271461377.json]
+members: [视频生成/图生视频/4步加速多参考注入｜MiniMax H3视频生成+LTX放大_2093843847783739394.json, 视频生成/图生视频/LTX放大工作流视频生成4步加速ref-多参考注入MiniMax_2086205211500175361.json, 视频生成/图生视频/ref多参考注入4步加速｜MiniMax H3战斗特效+LTX放大_2094049739330375681.json, 视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_146
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI动作模仿唱歌跳舞对口型｜AnimateWan2.2图生视频生成_2097085659403087873.json、视频生成/图生视频/Animate Wan2.2视频换脸换头视频生视频处理工具_2101775798649835522.json、视频生成/图生视频/AnimateWan2.2动作模仿｜唱歌跳舞对口型一键生成_2095105299878338562.json、视频生成/图生视频/AnimateWan2.2动作模仿｜唱歌跳舞对口型生成_2094924434271461377.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/4步加速多参考注入｜MiniMax H3视频生成+LTX放大_2093843847783739394.json、视频生成/图生视频/LTX放大工作流视频生成4步加速ref-多参考注入MiniMax_2086205211500175361.json、视频生成/图生视频/ref多参考注入4步加速｜MiniMax H3战斗特效+LTX放大_2094049739330375681.json、视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `FaceMaskFromPoseKeypoints`
 - `GetNode`
-- `ImageCropByMaskAndResize`
-- `ImageResizeKJv2`
-- `JWInteger`
+- `ImageScaleToMaxDimension`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVConditioning`
+- `LTXVLoopingSampler`
+- `LTXVSpatioTemporalTiledVAEDecode`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PixelPerfectResolution`
-- `PrimitiveInt`
+- `MiniMaxH3SigmaShift`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleMath+`
+- `SolAttnPatch`
+- `SpectrumApplyMiniMaxH3`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 - `easy cleanGpuUsed`
+- `easy clearCacheAll`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 3/4 个有
-- `Text` —— 3/4 个有
-- `ttN float` —— 3/4 个有
-- `SaveImage` —— 2/4 个有
-- `Audio Duration (mtb)` —— 1/4 个有
-- `BlockifyMask` —— 1/4 个有
-- `CM_IntToFloat` —— 1/4 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
-- `DrawMaskOnImage` —— 1/4 个有
-- `GIMMVFI_interpolate` —— 1/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `GrowMask` —— 1/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `TextOverlay` —— 1/4 个有
-- `easy sam3ModelLoader` —— 1/4 个有
-- `easy sam3VideoSegmentation` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `LTXVAudioVAELoader` —— 3/4 个有
+- `ManualSigmas` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `VHS_LoadAudio` —— 3/4 个有
+- `MiniMaxH3ImageToVideo` —— 1/4 个有
+- `ResizeImageMaskNode` —— 1/4 个有
 
 ## 典型参数
 

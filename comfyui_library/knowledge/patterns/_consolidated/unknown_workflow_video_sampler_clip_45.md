@@ -3,55 +3,69 @@ name: unknown_workflow_video_sampler_clip_45
 type: Unknown Workflow
 frequency: 11
 level: strong
-coverage: 0.856818
-common_nodes: [ApplySageAttention, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SaveImage, TT_img_enc, VAEDecode, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+coverage: 0.825091
+common_nodes: [CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, ImageResizeKJ, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
 problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text]
-members: [视频生成/图生视频/1985334147310829570.json, 视频生成/图生视频/1973021430713593858.json, 视频生成/图生视频/1973020589118066690.json, 视频生成/图生视频/1974823195108880385.json, 视频生成/图生视频/1976907332506587138.json, 视频生成/图生视频/1975831152592334850.json, 视频生成/图生视频/1975830994022436866.json, 视频生成/图生视频/1977747995724840961.json, 视频生成/图生视频/1967932359611940866.json, 视频生成/图生视频/1968344636660035586.json, 视频生成/文生视频/1974823222036271106.json]
+missing: []
+members: [图片生成/图生图/Wan2.2+多合一极速模型+Rapid-AIO-Mega+【图生视频】 (1)_2066340970630836226.json, 图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json, 视频生成/图生视频/Rapid-AIO-Mega 【首尾帧】_1968267698775969793.json, 视频生成/图生视频/Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1968241987252047874.json, 视频生成/图生视频/Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1970889841762308097.json, 视频生成/图生视频/Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_2044946900876529666.json, 视频生成/图生视频/Wan2.2 多合一（快捷版）_2045881265131360258.json, 视频生成/图生视频/Wan2.2 极速版 生成视频_1969030335826718722.json, 视频生成/图生视频/Wan2.2+多合一极速模型+Rapid-AIO-Mega+【图生视频】_2011257602096766978.json, 视频生成/图生视频/陆老师_Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1971574546153336834.json, 视频生成/文生视频/Wan2.2 多合一V2.0_2046237389487611905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_45
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1985334147310829570.json、视频生成/图生视频/1973021430713593858.json、视频生成/图生视频/1973020589118066690.json、视频生成/图生视频/1974823195108880385.json、视频生成/图生视频/1976907332506587138.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Wan2.2+多合一极速模型+Rapid-AIO-Mega+【图生视频】 (1)_2066340970630836226.json、图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json、视频生成/图生视频/Rapid-AIO-Mega 【首尾帧】_1968267698775969793.json、视频生成/图生视频/Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1968241987252047874.json、视频生成/图生视频/Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1970889841762308097.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `ApplySageAttention`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `JWInteger`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `ImageResizeKJ`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `ModelSamplingSD3`
-- `SaveImage`
-- `TT_img_enc`
 - `VAEDecode`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
 - `WanVaceToVideo`
 - `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `HunyuanVideoFoley` —— 4/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/11 个有
+- `DWPreprocessor` —— 10/11 个有
+- `ImageBlend` —— 10/11 个有
+- `Zoe-DepthMapPreprocessor` —— 10/11 个有
+- `CheckpointLoaderSimple` —— 9/11 个有
+- `Primitive integer [Crystools]` —— 9/11 个有
+- `SimpleMath+` —— 3/11 个有
 - `CLIPLoader` —— 2/11 个有
-- `TT_img_enc_v2` —— 2/11 个有
+- `CR Text` —— 2/11 个有
+- `GetNode` —— 2/11 个有
+- `PathchSageAttentionKJ` —— 2/11 个有
+- `SetNode` —— 2/11 个有
+- `UNETLoader` —— 2/11 个有
+- `VAELoader` —— 2/11 个有
+- `GroundingDinoModelLoader_SDPose` —— 1/11 个有
+- `RH_Nano_Banana_Image2Image` —— 1/11 个有
+- `SDPoseOODLoader` —— 1/11 个有
+- `SDPoseOODProcessor` —— 1/11 个有
+- `SaveImage` —— 1/11 个有
+- `TextBox` —— 1/11 个有
+- `YOLOModelLoader` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
+| 采样步数 | 4 | 4 - 6 | 11 | 82% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | ipndm | - | 11 | 55% |
-| 调度器 | sgm_uniform | - | 11 | 55% |
+| 采样算法 | ipndm | - | 11 | 100% |
+| 调度器 | sgm_uniform | - | 11 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
@@ -62,10 +76,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 6，11 个样本，取值集中（一致性 82%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，11 个样本，一致性 55%
-- 调度器 最常用 sgm_uniform，11 个样本，一致性 55%
+- 采样算法 最常用 ipndm，11 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 高发问题（11/11 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、CR Prompt Text

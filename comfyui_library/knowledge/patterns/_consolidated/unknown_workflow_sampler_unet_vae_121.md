@@ -1,66 +1,73 @@
 ---
 name: unknown_workflow_sampler_unet_vae_121
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.821857
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VRGDG_MiniMaxH3AudioDrive]
+frequency: 8
+level: strong
+coverage: 0.756125
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, Seed (rgthree), Text Multiline, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, XinbaoImageStandardizer]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax_H3口型同步_2086253656294383617.json, 视频生成/文生视频/MinimaxH3数字人 音频驱动单人版_2095684640324538370.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2087735816637468673.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2090009910481342465.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-单图版_2090380497007501314.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-双图版_2090485095252709377.json, 视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-多图版_2090405026232619010.json]
+members: [图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json, 图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡_2104462379441549314.json, 图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2104044741108260865.json, 图片生成/图生图/Qwen Image2.1，精准抠图，移除遮挡_2104438752583184386.json, 图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2105585484234838018.json, 图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2108372055283560450.json, 图片生成/图生图/qwen image2.1 电商主图编辑，提示词自动优化版_2105708075872247810.json, 图片生成/图生图/千问image2.1图像编辑-不偏移版-自动优化提示词-可以抠图_2103044555493961729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_121
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3口型同步_2086253656294383617.json、视频生成/文生视频/MinimaxH3数字人 音频驱动单人版_2095684640324538370.json、视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2087735816637468673.json、视频生成/文生视频/MinimaxH3音频驱动数字人单人版_2090009910481342465.json、视频生成/文生视频/音频裁剪驱动MiniMax H3数字人-单图版_2090380497007501314.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json、图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡_2104462379441549314.json、图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2104044741108260865.json、图片生成/图生图/Qwen Image2.1，精准抠图，移除遮挡_2104438752583184386.json、图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2105585484234838018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadAudio`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `Image Comparer (rgthree)`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `QwenImage21Cache`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SaveImageAdvanced`
+- `Seed (rgthree)`
+- `Text Multiline`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `XinbaoImageStandardizer`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/7 个有
-- `SoundFlow_GetLength` —— 6/7 个有
-- `VHS_VideoCombine` —— 6/7 个有
-- `PreviewAudio` —— 5/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `AudioConcat` —— 2/7 个有
-- `EmptyAudio` —— 2/7 个有
-- `CreateVideo` —— 1/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `GetAudioDurationFromAudio` —— 1/7 个有
-- `SDVN Any Show` —— 1/7 个有
-- `SaveVideo` —— 1/7 个有
+- `ImageConcanate` —— 5/8 个有
+- `LoraLoaderModelOnly` —— 5/8 个有
+- `QwenPERewriteT8` —— 3/8 个有
+- `ShowText|pysssss` —— 3/8 个有
+- `忽略多组孤海` —— 3/8 个有
+- `GetNode` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `StringToAnyNode` —— 1/8 个有
+- `Text Concatenate` —— 1/8 个有
+- `easy boolean` —— 1/8 个有
+- `easy ifElse` —— 1/8 个有
+- `ttN concat` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 采样步数 | 25 | 25 - 25 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -68,4 +75,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

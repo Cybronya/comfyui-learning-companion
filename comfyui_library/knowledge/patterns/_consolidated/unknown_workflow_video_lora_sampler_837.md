@@ -3,49 +3,58 @@ name: unknown_workflow_video_lora_sampler_837
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.972
-common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.841
+common_nodes: [AIO_Preprocessor, ColorMatch, GetImageSizeAndCount, Int, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1946201158950248449.json, 视频生成/图生视频/1945006395668484098.json]
+members: [视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json, 视频生成/图生视频/仅需3-9步极速动作Pose迁移WanVACE+CausVid_1924401400531308546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_837
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1946201158950248449.json、视频生成/图生视频/1945006395668484098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json、视频生成/图生视频/仅需3-9步极速动作Pose迁移WanVACE+CausVid_1924401400531308546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
+- `AIO_Preprocessor`
+- `ColorMatch`
+- `GetImageSizeAndCount`
+- `Int`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
+- `Anything Everywhere` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImagePadKJ` —— 1/2 个有
 - `ImageResizeKJ` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `ImageSmartSharpen+` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 - `RH_Captioner` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy imageScaleDownToSize` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `TextInputBasic` —— 1/2 个有
 
 ## 典型参数
 

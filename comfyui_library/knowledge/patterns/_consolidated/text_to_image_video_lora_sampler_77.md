@@ -3,97 +3,82 @@ name: text_to_image_video_lora_sampler_77
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.645111
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextLoadLatent, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.505333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3全栈式短剧视频生成V4.2图生视频工作流_2088289186230128641.json, 视频生成/图生视频/MiniMax-H3全站式短剧｜图生视频分镜生成一站式_2089439572085264386.json, 视频生成/图生视频/Skill双阶段版V7.2｜MiniMax-H3全栈式短剧生成_2094024013784903681.json, 视频生成/图生视频/全栈式短剧生成V5.2｜MiniMax-H3图生视频直出_2089837999159857153.json, 视频生成/图生视频/全栈式短剧生成V7.1｜MiniMax-H3自用图生视频_2095119621128019969.json, 视频生成/图生视频/全栈式短剧生成V7.2｜MiniMax-H3 Skill双阶段版_2093802392323190785.json, 视频生成/文生视频/MiniMax-H3全栈式短剧V4.2.1｜循环直出一集全节点注释修复版_2089388164245975042.json, 视频生成/文生视频/全栈短剧生成｜MiniMax H3 V4.2.1 循环直出整集 全节点注释版_2089332705229107201.json, 视频生成/文生视频/全节点注释版｜MiniMax H3 V4.2.1全栈短剧生成循环直出整集_2089428387751354369.json]
+members: [图片生成/图生图/人物替换工作流 角色一致性更强精准替换方案_2108985171918811138.json, 数字人/数字人/一键复刻爆款视频图生视频处理生成工作流工具_2101396084621926402.json, 数字人/数字人/一键复刻爆款视频｜数字人视频生视频 动作迁移照搬_2097579730450075650.json, 视频生成/图生视频/Scail2动作迁移For循环一键模仿图生视频处理工具_2101394038732709889.json, 视频生成/图生视频/Scail2多参动作迁移 官方节点无劣化工作流_2098311637685067777.json, 视频生成/图生视频/Scail2多参工作流｜图生视频角色动作驱动_2090932731508256770.json, 视频生成/图生视频/Scail2多参无劣化动作迁移 默认DPO Lora关闭按需开启_2098657872681979905.json, 视频生成/图生视频/多参动作迁移 Scail2 人物特效视频运镜图生视频_2094184722862796802.json, 视频生成/图生视频/运镜多参两不误｜Scail2人物特效视频生成_2096594560544759809.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_77
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3全栈式短剧视频生成V4.2图生视频工作流_2088289186230128641.json、视频生成/图生视频/MiniMax-H3全站式短剧｜图生视频分镜生成一站式_2089439572085264386.json、视频生成/图生视频/Skill双阶段版V7.2｜MiniMax-H3全栈式短剧生成_2094024013784903681.json、视频生成/图生视频/全栈式短剧生成V5.2｜MiniMax-H3图生视频直出_2089837999159857153.json、视频生成/图生视频/全栈式短剧生成V7.1｜MiniMax-H3自用图生视频_2095119621128019969.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/人物替换工作流 角色一致性更强精准替换方案_2108985171918811138.json、数字人/数字人/一键复刻爆款视频图生视频处理生成工作流工具_2101396084621926402.json、数字人/数字人/一键复刻爆款视频｜数字人视频生视频 动作迁移照搬_2097579730450075650.json、视频生成/图生视频/Scail2动作迁移For循环一键模仿图生视频处理工具_2101394038732709889.json、视频生成/图生视频/Scail2多参动作迁移 官方节点无劣化工作流_2098311637685067777.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
 - `EmptyLatentImage`
-- `GetImage`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
+- `ModelSamplingSD3`
 - `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_H3MotionContext`
-- `Yuan_H3MotionContextLoadLatent`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_MiniMaxH3Video`
+- `WanSCAILToVideo`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `StringConcatenate` —— 7/9 个有
-- `GetNode` —— 6/9 个有
-- `PrimitiveInt` —— 6/9 个有
-- `SetNode` —— 6/9 个有
-- `Yuan_RTXVideoUpscaleH3` —— 6/9 个有
+- `BasicScheduler` —— 8/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/9 个有
+- `KSamplerSelect` —— 8/9 个有
+- `PrimitiveInt` —— 8/9 个有
+- `SamplerCustom` —— 8/9 个有
+- `SingleBooleanTrigger` —— 8/9 个有
+- `easy imageRemBg` —— 8/9 个有
+- `GetImageRangeFromBatch` —— 7/9 个有
+- `ComfyMathExpression` —— 6/9 个有
+- `Float` —— 6/9 个有
+- `easy batchAnything` —— 6/9 个有
+- `easy forLoopEnd` —— 6/9 个有
+- `easy forLoopStart` —— 6/9 个有
 - `ComfySwitchNode` —— 5/9 个有
-- `INTConstant` —— 5/9 个有
-- `PrimitiveBoolean` —— 5/9 个有
-- `RegexExtract` —— 5/9 个有
-- `StringReplace` —— 5/9 个有
-- `YUAN_TXTAppearanceOrder` —— 5/9 个有
-- `YUAN_TXTListNumber` —— 5/9 个有
-- `YUAN_TXTReplace` —— 5/9 个有
-- `ResolutionSelector` —— 4/9 个有
-- `YUAN_TXTShotReplace` —— 4/9 个有
-- `AudioConcat` —— 3/9 个有
-- `EmptyAudio` —— 3/9 个有
-- `If ANY execute A else B` —— 3/9 个有
-- `LoraLoaderBypassModelOnly` —— 3/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/9 个有
-- `SimpleMath+` —— 3/9 个有
-- `YuanAudioList` —— 3/9 个有
-- `YuanAudioSplit` —— 3/9 个有
-- `easy batchAnything` —— 3/9 个有
-- `easy forLoopEnd` —— 3/9 个有
-- `easy forLoopStart` —— 3/9 个有
-- `easy isNone` —— 3/9 个有
-- `LoadImage` —— 2/9 个有
-- `TextGenerate` —— 2/9 个有
-- `Yuan_H3Upscale3D` —— 2/9 个有
-- `ManualSigmas` —— 1/9 个有
-- `YuanPrimitive` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `easy clearCacheAll` —— 1/9 个有
+- `ImageBatchMultiple+` —— 5/9 个有
+- `ImageFromBatch` —— 5/9 个有
+- `SaveImage` —— 5/9 个有
+- `Int` —— 2/9 个有
+- `WanContextWindowsManual` —— 2/9 个有
+- `BatchImagesNode` —— 1/9 个有
+- `ColorTransfer` —— 1/9 个有
+- `GetNode` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `LayerMask: RemBgUltra` —— 1/9 个有
+- `SaveVideoNode` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `VAEDecodeTiled` —— 1/9 个有
+- `WanChunkFeedForward` —— 1/9 个有
 
 ## 典型参数
 

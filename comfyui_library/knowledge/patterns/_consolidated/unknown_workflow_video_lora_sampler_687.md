@@ -3,62 +3,80 @@ name: unknown_workflow_video_lora_sampler_687
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.964667
-common_nodes: [AudioCrop, AudioSeparation, CR Text, HuMoEmbeds, ImpactInt, JWIntegerToString, LoadAudio, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.726667
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969293960176934913.json, 视频生成/图生视频/1968957972288323586.json, 音频生成/音频生成/👽HuMo音频直接生成视频👽_1969277777063145473.json]
+members: [视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json, 视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_687
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1969293960176934913.json、视频生成/图生视频/1968957972288323586.json、音频生成/音频生成/👽HuMo音频直接生成视频👽_1969277777063145473.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/03-10-08-WAN2.1-数字人-Lynx-免训练一致性ID+InfiniteTalk_1989939301351911425.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（横版）_1975450428768956418.json、视频生成/文生视频/Lynx跨模态音频ID一致性数字人视频V1（竖版）_1975546329931845634.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
 - `AudioSeparation`
-- `CR Text`
-- `HuMoEmbeds`
-- `ImpactInt`
-- `JWIntegerToString`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadAudio`
-- `LoadWanVideoT5TextEncoder`
-- `SimpleMath+`
+- `LoadImage`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExtraModelSelect`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 2/3 个有
-- `ImageBatchMulti` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy imageRemBg` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `WanVideoCombineEmbeds` —— 1/3 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/3 个有
-- `Wav2VecModelLoader` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `WanVideoTextEncodeCached` —— 2/3 个有
+- `easy downloadIndexTTSAndLoadModel` —— 2/3 个有
+- `easy indexTTSGenerateSimple` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `Audio Duration (mtb)` —— 1/3 个有
+- `AudioCrop` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `JWIntegerToString` —— 1/3 个有
+- `LoadWanVideoT5TextEncoder` —— 1/3 个有
+- `WanVideoTextEncode` —— 1/3 个有
 
 ## 典型参数
 

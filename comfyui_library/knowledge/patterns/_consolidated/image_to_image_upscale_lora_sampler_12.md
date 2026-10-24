@@ -1,43 +1,40 @@
 ---
 name: image_to_image_upscale_lora_sampler_12
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.7005
-common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Float, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, Label (rgthree), LoadImage, PixaromaLoraLoader, PixaromaTextJoinTwo, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, YC Color Match]
+frequency: 13
+level: strong
+coverage: 0.774923
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), GetImageSize, Image Comparer (rgthree), ImageScaleBy, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, Label (rgthree), YC Color Match, LayerUtility: ImageScaleByAspectRatio V2, Text Multiline, Kontext Inpainting Conditioning]
-members: [图片生成/图生图/2097156300693135361.json, 图片生成/图生图/2101612616186687489.json]
+missing: []
+members: [图片生成/图生图/F2K 动漫转真人 AnimeToReal_2061100818362888194.json, 图片生成/图生图/Flux2 Klein 超强真实感细节增强_2020739592365809666.json, 图片生成/图生图/Klein去AI感-人像精修-去油腻-皮肤质感修复-4K-8K_2086087184993579010.json, 图片生成/图生图/去AI感-人像精修-去油腻修复皮肤质感 Flux-2-Klein-9B_2062714845002293250.json, 图片生成/图生图/去AI感-人像精修-去油腻修复皮肤质感_Flux-2-Klein-9B_2083568666586738689.json, 图片生成/图生图/去AI感-人像精修-去油腻修复皮肤质感_Flux-2-Klein-9B_2093143447527059458.json, 图片生成/图生图/去AI感-人像精修-去油腻修复皮肤质感_Flux-2-Klein-9B_2093503227454115842.json, 图片生成/图生图/去AI感-人像精修保留服装原图-去油腻修复皮肤质感 Flux-2-Klein-9B_2071600255497498625.json, 图片生成/图生图/去油腻（2K）_2112003873199185922.json, 图片生成/图生图/工业产品-五金工具-精修洗图-高清修复_2056619564888313857.json, 图片生成/图生图/高清放大-8K画质高清修复-Klein-9B_2060549676453154818.json, 图片生成/文生图/Klein去AI感-人像精修-去油腻-皮肤质感修复-4K-8K_2088947646840004610.json, 图片生成/文生图/高清放大-8K画质高清修复-Klein-9B_2080544604771934209.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2097156300693135361.json、图片生成/图生图/2101612616186687489.json）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/F2K 动漫转真人 AnimeToReal_2061100818362888194.json、图片生成/图生图/Flux2 Klein 超强真实感细节增强_2020739592365809666.json、图片生成/图生图/Klein去AI感-人像精修-去油腻-皮肤质感修复-4K-8K_2086087184993579010.json、图片生成/图生图/去AI感-人像精修-去油腻修复皮肤质感 Flux-2-Klein-9B_2062714845002293250.json、图片生成/图生图/去AI感-人像精修-去油腻修复皮肤质感_Flux-2-Klein-9B_2083568666586738689.json…）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
 - `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Fast Groups Bypasser (rgthree)`
-- `Float`
+- `GetImageSize`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `ImageScaleBy`
 - `KSampler`
-- `Label (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixaromaLoraLoader`
-- `PixaromaTextJoinTwo`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
 - `ReferenceLatent`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
@@ -47,40 +44,48 @@ source: knowledge_consolidation
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `YC Color Match`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `Kontext Inpainting Conditioning` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `ColorMatch` —— 12/13 个有
+- `ConstrainImage|pysssss` —— 12/13 个有
+- `Get Image Size` —— 12/13 个有
+- `ImageResize+` —— 12/13 个有
+- `TTP_Image_Assy` —— 12/13 个有
+- `TTP_Image_Tile_Batch` —— 12/13 个有
+- `TTP_Tile_image_size` —— 12/13 个有
+- `easy imageSize` —— 12/13 个有
+- `SeedVR2` —— 10/13 个有
+- `SeedVR2BlockSwap` —— 10/13 个有
+- `HYPIRAdvancedRestoration` —— 2/13 个有
+- `InspyrenetRembg` —— 1/13 个有
+- `KOOK_ImageCompression` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `MaskToImage` —— 1/13 个有
+- `easy cleanGpuUsed` —— 1/13 个有
+- `easy clearCacheAll` —— 1/13 个有
+- `easy int` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.52 | - | 2 | 8% |
+| 采样步数 | 8 | 5 - 8 | 13 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.52，样本不足，未给区间，2 个样本，取值分散，一致性仅 8%
-- 风险：重绘幅度 观测到 0.04，低于常用下限 0.1（）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、Label (rgthree)、YC Color Match、LayerUtility: ImageScaleByAspectRatio V2、Text Multiline
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 5 - 8，13 个样本，取值集中（一致性 80%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

@@ -3,93 +3,46 @@ name: unknown_workflow_video_upscale_lora_38
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.531
-common_nodes: [AILab_ImagePreview, BatchImagesNode, BiRefNetRMBG, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, ImageScaleToMaxDimension, ImageStitch, LoadImage, ModelAttentionBackend, PreviewAny, PreviewImage, RepeatImageBatch, SAM3_TrackPreview, SAM3_VideoTrack, SCAIL2ColoredMask, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2TorchCompileSettings, SeedVR2VideoUpscaler, SetNode, StringConcatenate, UNETLoader_Any, UniBlockSwap, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanChunkFeedForward, easy boolean, easy cleanGpuUsed, easy ifElse, easy int, easy loraStack, easy loraStackApply]
+coverage: 0.844
+common_nodes: [BlockSparseAttention, CLIPLoader, GH_AudioVideoMerger, GH_ImageVideoComparer, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorSelfLift, ModelAttentionBackend, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频编辑-Scail2-不限时长-动作迁移-主体替换-官流V2_2082550150622437378.json, 视频生成/图生视频/视频编辑-Scail2-不限时长-动作迁移-主体替换_2065300375179186177.json]
+members: [视频生成/图生视频/导演台合集最终完成版_2106268078148505602.json, 视频生成/图生视频/视频换人复刻丨MiniMax H3 Hybrid丨多段续接·可选超分_2110593335210631169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_38
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频编辑-Scail2-不限时长-动作迁移-主体替换-官流V2_2082550150622437378.json、视频生成/图生视频/视频编辑-Scail2-不限时长-动作迁移-主体替换_2065300375179186177.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/导演台合集最终完成版_2106268078148505602.json、视频生成/图生视频/视频换人复刻丨MiniMax H3 Hybrid丨多段续接·可选超分_2110593335210631169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_ImagePreview`
-- `BatchImagesNode`
-- `BiRefNetRMBG`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageScaleToMaxDimension`
-- `ImageStitch`
-- `LoadImage`
+- `GH_AudioVideoMerger`
+- `GH_ImageVideoComparer`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorSelfLift`
 - `ModelAttentionBackend`
-- `PreviewAny`
-- `PreviewImage`
-- `RepeatImageBatch`
-- `SAM3_TrackPreview`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `Seed (rgthree)`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2TorchCompileSettings`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `StringConcatenate`
-- `UNETLoader_Any`
-- `UniBlockSwap`
+- `UNETLoader`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanChunkFeedForward`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy int`
-- `easy loraStack`
-- `easy loraStackApply`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `CFGGuider` —— 1/2 个有
-- `Display Int (rgthree)` —— 1/2 个有
-- `Fast Muter (rgthree)` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `InsertImagesToBatchIndexed` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `ModelSamplingSD3` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `WanAnimatePlus SCAIL_2 Flow Embeds` —— 1/2 个有
-- `WanAnimatePlus SCAIL_2 Flow Sampler` —— 1/2 个有
-- `WanAnimatePlus VAE Decode` —— 1/2 个有
-- `WanSCAILToVideo` —— 1/2 个有
-- `easy compare` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `LayerFilter: GaussianBlur` —— 1/2 个有
+- `图像缩放V2_孤海` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

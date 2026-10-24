@@ -1,97 +1,81 @@
 ---
 name: text_to_image_lora_sampler_clip_405
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.9265
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, Getter, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextLoadLatent, MiniMaxH3MotionContextSaveLatent, MiniMaxH3MotionContextTrim, MiniMaxH3SigmaShift, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Setter, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip, 忽略多组孤海]
+frequency: 4
+level: strong
+coverage: 0.78575
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RTXVideoSuperResolution, ResolutionSelector, SaveImage, Seed (rgthree), ShowText|pysssss, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZML_TextInput, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2091313148459577345.json, 视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2092296478197899265.json]
+members: [图片生成/图生图/Krea2-古装人像角色多角度视图_2098919606814601217.json, 图片生成/图生图/Krea2-古装人像角色多角度视图_2098978171713581058.json, 图片生成/图生图/Krea2-古装人像角色多角度视图_2099653787257499650.json, 图片生成/文生图/Krea2-古装人像角色多角度视图_2069779325712420866.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_405
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2091313148459577345.json、视频生成/图生视频/高质量长镜头连续生视频｜MinimaxH3文生图图生视频直出_2092296478197899265.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Krea2-古装人像角色多角度视图_2098919606814601217.json、图片生成/图生图/Krea2-古装人像角色多角度视图_2098978171713581058.json、图片生成/图生图/Krea2-古装人像角色多角度视图_2099653787257499650.json、图片生成/文生图/Krea2-古装人像角色多角度视图_2069779325712420866.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Getter`
-- `H3SigmaRefiner`
-- `JjkText`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextLoadLatent`
-- `MiniMaxH3MotionContextSaveLatent`
-- `MiniMaxH3MotionContextTrim`
-- `MiniMaxH3SigmaShift`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `PrimitiveStringMultiline`
+- `RTXVideoSuperResolution`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Setter`
+- `SaveImage`
+- `Seed (rgthree)`
 - `ShowText|pysssss`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `solarL_SaveImagesToZip`
-- `忽略多组孤海`
+- `ZML_TextInput`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 1/2 个有
+- `EmptyImage` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler_ancestral | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

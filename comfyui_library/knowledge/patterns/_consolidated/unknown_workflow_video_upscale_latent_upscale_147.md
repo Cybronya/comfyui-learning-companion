@@ -3,101 +3,89 @@ name: unknown_workflow_video_upscale_latent_upscale_147
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.888
-common_nodes: [Anything Everywhere, BasicGuider, BasicScheduler, BetaSamplingScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, DWPreprocessor, DisableNoise, DownloadAndLoadWav2VecModel, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch, ImageInvert, ImageResizeKJv2, ImageScaleBy, ImageScaleToMaxDimension, Int, JoinStrings, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuide, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVFirstLastFrameControl_TTP, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, LotusConditioning, ManualSigmas, MemoryCleaner, Power Lora Loader (rgthree), PrimitiveFloat, PrimitiveInt, Qwen3_VQA, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetFirstSigma, SetNode, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, easy showAnything]
+coverage: 0.513
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, Float, GetNode, ImageScaleBy, Int, Int to String, InversionDemoLazySwitch, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SetNode, StringFunction|pysssss, Text, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX2.0全生态  文生视频｜图生视频｜首尾帧视频｜镜头+_CN控制_2021149152385699842.json, 视频生成/文生视频/LTX2.0文生视频｜图生视频｜首尾帧视频｜镜头+_CN控制_2017161610749550593.json]
+members: [视频生成/图生视频/图+音频生视频：音乐MV-对口型-图生视频 ltx2.3双采+VBVR+Qwen3.5_2054885295354589185.json, 视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_147
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LTX2.0全生态  文生视频｜图生视频｜首尾帧视频｜镜头+_CN控制_2021149152385699842.json、视频生成/文生视频/LTX2.0文生视频｜图生视频｜首尾帧视频｜镜头+_CN控制_2017161610749550593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图+音频生视频：音乐MV-对口型-图生视频 ltx2.3双采+VBVR+Qwen3.5_2054885295354589185.json、视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicGuider`
-- `BasicScheduler`
-- `BetaSamplingScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `CreateVideo`
-- `DWPreprocessor`
-- `DisableNoise`
-- `DownloadAndLoadWav2VecModel`
-- `DualCLIPLoader`
-- `EmptyImage`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetImageSizeAndCount`
+- `Float`
 - `GetNode`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageInvert`
-- `ImageResizeKJv2`
 - `ImageScaleBy`
-- `ImageScaleToMaxDimension`
 - `Int`
-- `JoinStrings`
+- `Int to String`
+- `InversionDemoLazySwitch`
 - `KSamplerSelect`
+- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
-- `LTXVAddGuide`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVFirstLastFrameControl_TTP`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
+- `LTXVSpatioTemporalTiledVAEDecode`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `LotusConditioning`
 - `ManualSigmas`
-- `MemoryCleaner`
-- `Power Lora Loader (rgthree)`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `Qwen3_VQA`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetFirstSigma`
+- `Seed (rgthree)`
 - `SetNode`
-- `ShowText|pysssss`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAELoader`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
+- `StringFunction|pysssss`
+- `Text`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 - `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioCrop` —— 1/2 个有
+- `AudioInfo` —— 1/2 个有
+- `CM_FloatToInt` —— 1/2 个有
+- `LTXFloatToInt` —— 1/2 个有
+- `LTXVAudioVAEDecode` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MathExpression_UTK` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 宽度 | 97 | - | 1 | 100% |
+| 高度 | 25 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -105,6 +93,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

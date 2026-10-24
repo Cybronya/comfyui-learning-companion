@@ -1,91 +1,88 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_5
 type: Unknown Workflow
-frequency: 11
+frequency: 18
 level: strong
-coverage: 0.799727
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, EmptyLatentImage, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, PathchSageAttentionKJ, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text Load Line From File, Text Multiline, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader, easy anythingIndexSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageBatchToImageList, easy imageListToImageBatch]
-problems: [Steps较低可能导致细节不足]
-missing: [MathExpression|pysssss, Text Load Line From File, Text Multiline, easy anythingIndexSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageBatchToImageList, easy imageListToImageBatch]
-members: [图片生成/图生图/2102071673460711426.json, 图片生成/图生图/2102078912699392002.json, 图片生成/图生图/2102080371482513410.json, 图片生成/图生图/2102100907671511041.json, 图片生成/图生图/2102247918542614530.json, 图片生成/图生图/2102286556152295426.json, 图片生成/图生图/2102438785630953473.json, 图片生成/图生图/2102442855301214209.json, 图片生成/图生图/三视图_多视图_角色三视图_角色多视角_Qwen_2107026065003728897.json, 图片生成/文生图/三视图_多视图_角色三视图_角色多视角_Qwen_2086649054892744706.json, 视频生成/文生视频/三视图_多视图_角色三视图_角色多视角_Qwen_2045155129598418945.json]
+coverage: 0.778333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, Image Comparer (rgthree), ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+missing: []
+members: [图片生成/图生图/【 Banan老照片修复】香蕉图像编辑-TTP高清放大_1965854119267340289.json, 图片生成/图生图/【Nano Banan单人写真定制】香蕉图像编辑-TTP高清放大_1968281148851933185.json, 图片生成/图生图/【Nano Banan手办定制】香蕉图像编辑-TTP高清放大_1968220824744374273.json, 图片生成/图生图/【老照片修复V2】全能图片pro-TTP高清放大_1993420879201763329.json, 图片生成/图生图/【表情包定制】 Banan-TTP高清放大_2040783870953529345.json, 图片生成/图生图/【表情包定制】全能图片V1+一键生成表情包+照片一键制作卡通动物表情包+生成+九宫格+表情包_2019319522431340546.json, 图片生成/图生图/【表情包定制】高清放大_2016317444448591873.json, 图片生成/图生图/全能图片V1 2 & Pro 万能图像编辑 完胜Qwen-Image TTP拆分+Seed_1994603666466349057.json, 图片生成/图生图/卡通头像  一键表情包_2067204909480632322.json, 图片生成/图生图/卡通头像一键生成表情包_2069954852985335810.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】Banan高清放大_2067054099513823233.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】Banan高清放大_2068202060545351682.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2069224450087804930.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2071766464339726338.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2072861657474359297.json, 图片生成/图生图/生成卡通头像一键表情包生成【表情包定制】_2076464180277899265.json, 图片生成/图生图/生成卡通头像一键表情包生成真人动漫都可用【表情包定制】_2067313367072727042.json, 图片生成/文生图/【自定义静态表情包定制】 Banan-TTP高清放大_2065150014434930689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/2102071673460711426.json、图片生成/图生图/2102078912699392002.json、图片生成/图生图/2102080371482513410.json、图片生成/图生图/2102100907671511041.json、图片生成/图生图/2102247918542614530.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/【 Banan老照片修复】香蕉图像编辑-TTP高清放大_1965854119267340289.json、图片生成/图生图/【Nano Banan单人写真定制】香蕉图像编辑-TTP高清放大_1968281148851933185.json、图片生成/图生图/【Nano Banan手办定制】香蕉图像编辑-TTP高清放大_1968220824744374273.json、图片生成/图生图/【老照片修复V2】全能图片pro-TTP高清放大_1993420879201763329.json、图片生成/图生图/【表情包定制】 Banan-TTP高清放大_2040783870953529345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGNorm`
-- `CLIPLoader`
-- `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
+全部 18 个 workflow 都包含：
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingAuraFlow`
-- `NunchakuQwenImageDiTLoader`
-- `PathchSageAttentionKJ`
 - `PreviewImage`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `Text Load Line From File`
-- `Text Multiline`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
-- `VAEDecode`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
+- `UpscaleModelLoader`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
 - `easy imageBatchToImageList`
 - `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Bypasser (rgthree)` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/11 个有
+- `Anything Everywhere3` —— 17/18 个有
+- `ImageResize+` —— 17/18 个有
+- `RH_Nano_Banana_Image2Image` —— 16/18 个有
+- `CR Text` —— 15/18 个有
+- `RHHiddenNodes` —— 15/18 个有
+- `RH_Translator` —— 3/18 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/18 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/18 个有
+- `CR Text Concatenate` —— 1/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
+- `ImpactSwitch` —— 1/18 个有
+- `Int` —— 1/18 个有
+- `TT_img_enc` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | 720 - 720 | 11 | 100% |
-| 高度 | 1440 | 1440 - 1440 | 11 | 100% |
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 2 | 2 - 2 | 18 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | euler | - | 18 | 100% |
+| 调度器 | karras | - | 18 | 100% |
+| 重绘幅度 | 0.3 | 0.3 - 0.45 | 18 | 89% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 18/18 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 720 - 720，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 1440，观测区间 1440 - 1440，11 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、Text Load Line From File、Text Multiline、easy anythingIndexSwitch、easy batchAnything
+- 采样步数 中位数 2，观测区间 2 - 2，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，18 个样本，一致性 100%
+- 调度器 最常用 karras，18 个样本，一致性 100%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 0.45，18 个样本，取值集中（一致性 89%）
+- 高发问题（18/18 个样本）：Steps较低可能导致细节不足
+- 高发问题（18/18 个样本）：发现KSampler但没有VAEDecode

@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1949839253868077058.json, 视频生成/文生视频/1968987843408379906.json]
+members: [视频生成/图生视频/🌟infiniteTalk单人数字人_1961732854524874753.json, 视频生成/文生视频/云 InfiniteTalk单人数字人工作流  效果炸裂 速度快_1958330393214783490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_909
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1949839253868077058.json、视频生成/文生视频/1968987843408379906.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🌟infiniteTalk单人数字人_1961732854524874753.json、视频生成/文生视频/云 InfiniteTalk单人数字人工作流  效果炸裂 速度快_1958330393214783490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,35 +23,38 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM V2`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 1/2 个有
 - `Int` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `PainterAudioLength` —— 1/2 个有
+- `RIFEInterpolation` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `ToFloat` —— 1/2 个有
+- `ToInt` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
-| 采样算法 | 2.25 | - | 2 | 44% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,9 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 采样算法 中位数 2.25，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,44 +3,47 @@ name: unknown_workflow_video_lora_sampler_646
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.506667
-common_nodes: [CLIPVisionLoader, DF_Int_to_Float, GetNode, ImageFromBatch, ImageResizeKJv2, LoadImage, MemoryCleaner, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, SimpleMath+, Text, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy boolean, easy float, easy int]
+coverage: 0.530333
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2044639396833529858.json, 视频生成/图生视频/2052769134831779841.json, 视频生成/图生视频/2044639687251337217.json]
+members: ["视频生成/图生视频/WanAnimate_全新骨骼绑定优化版(更稳,细节更好)_1999863444146974722.json", 视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json, 视频生成/文生视频/wan animate v2——优化版_1975351604679413761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_646
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2044639396833529858.json、视频生成/图生视频/2052769134831779841.json、视频生成/图生视频/2044639687251337217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WanAnimate_全新骨骼绑定优化版(更稳,细节更好)_1999863444146974722.json、视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json、视频生成/文生视频/wan animate v2——优化版_1975351604679413761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `DF_Int_to_Float`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageFromBatch`
+- `GrowMask`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
+- `Int`
 - `LoadImage`
-- `MemoryCleaner`
 - `OnnxDetectionModelLoader`
 - `PoseAndFaceDetection`
+- `Sam2Segmentation`
 - `SetNode`
-- `SimpleMath+`
-- `Text`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
@@ -48,28 +51,27 @@ source: knowledge_consolidation
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy boolean`
-- `easy float`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `BBoxYOLO` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `SDPoseDrawKeypoints` —— 2/3 个有
-- `SDPoseKeypointExtractor` —— 2/3 个有
-- `YOLOModelLoader` —— 2/3 个有
-- `BlockifyMask` —— 1/3 个有
-- `DownloadAndLoadNLFModel` —— 1/3 个有
-- `DrawMaskOnImage` —— 1/3 个有
-- `LayerMask: MaskGrow` —— 1/3 个有
-- `NLFPredict` —— 1/3 个有
-- `PoseDetectionVitPoseToDWPose` —— 1/3 个有
-- `RenderNLFPoses` —— 1/3 个有
-- `VHS_VideoInfoLoaded` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy sam3ModelLoader` —— 1/3 个有
-- `easy sam3VideoSegmentation` —— 1/3 个有
+- `ApplyFaceProcessor` —— 2/3 个有
+- `ConvertAny2Float` —— 2/3 个有
+- `FaceProcessorLoader` —— 2/3 个有
+- `FrameSelector` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `SoundFlow_SetLength` —— 2/3 个有
+- `Textbox` —— 2/3 个有
+- `VideoInputPreprocessor` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `ttN float` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PoseDetectionOneToAllAnimation` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `int _O` —— 1/3 个有
 
 ## 典型参数
 

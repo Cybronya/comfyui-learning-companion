@@ -3,65 +3,66 @@ name: unknown_workflow_video_lora_sampler_857
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.518
-common_nodes: [BlockifyMask, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJv2, JWInteger, LayerMask: MaskPreview, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SAM3_Detect, SDPoseDrawKeypoints, SDPoseKeypointExtractor, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.5605
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageSmartSharpen+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy promptConcat, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1969420590102814722.json, 视频生成/图生视频/1969490471846354945.json]
+members: [视频生成/图生视频/✅Wan 2.2+Lightx2v-图生视频-kj版本-720p_1950727376542044161.json, 视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_857
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1969420590102814722.json、视频生成/图生视频/1969490471846354945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/✅Wan 2.2+Lightx2v-图生视频-kj版本-720p_1950727376542044161.json、视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DrawMaskOnImage`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `Float`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
 - `ImageResizeKJv2`
+- `ImageSmartSharpen+`
 - `JWInteger`
-- `LayerMask: MaskPreview`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `SAM3_Detect`
-- `SDPoseDrawKeypoints`
-- `SDPoseKeypointExtractor`
+- `RH_LLMAPI_NODE`
 - `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
+- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoSigmaToStep`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
+- `easy promptConcat`
+- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `CLIPVisionLoader` —— 1/2 个有
+- `LayerFilter: FilmV2` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,95 +1,82 @@
 ---
 name: unknown_workflow_controlnet_inpaint_upscale_2
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4605
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetInpaintingAliMamaApply, ControlNetLoader, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, Image Comparer (rgthree), ImageAndMaskPreview, ImagePadForOutpaint, ImageScaleToTotalPixels, InpaintModelConditioning, InpaintPreprocessor, KSampler, LanPaint_MaskBlend, LayerColor: Brightness & Contrast, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MaskBlur+, ModelSamplingAuraFlow, PlaySound|pysssss, PreviewImage, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SetUnionControlNetType, ShowText|pysssss, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: strong
+coverage: 0.8574
+common_nodes: [ApplyInstantID, BboxDetectorSEGS, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, Crop Face, DF_Image_scale_to_side, GrowMask, ImageComposite+, ImageCrop+, ImageResize+, ImageUpscaleWithModel, InpaintModelConditioning, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, Load RetinaFace, LoadImage, Mask Crop Region, MaskBlur+, PreviewImage, SAMDetectorCombined, SAMLoader, SaveImage, UltralyticsDetectorProvider, UpscaleModelLoader, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-image-2512_反推图，文生图、洗图、扩图、局部重绘_2008791898793713666.json, 图片生成/文生图/YZ金鱼-Qwen-image-2512超强多合一_2006629546631630850.json]
+members: [图片生成/图生图/Quick Face Swap_2062537685566312449.json, 图片生成/图生图/【CQ808】换脸-_2020057375142580226.json, 图片生成/图生图/一键换脸超高相似度换脸-InstantID_1909560735851315202.json, 图片生成/图生图/一键换脸超高相似度换脸-人像替换丨容貌替换丨面部迁移_1993840757727576065.json, 图片生成/图生图/模特换脸_lnstantiD_优化版_1953080359522136066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_inpaint_upscale_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen-image-2512_反推图，文生图、洗图、扩图、局部重绘_2008791898793713666.json、图片生成/文生图/YZ金鱼-Qwen-image-2512超强多合一_2006629546631630850.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Quick Face Swap_2062537685566312449.json、图片生成/图生图/【CQ808】换脸-_2020057375142580226.json、图片生成/图生图/一键换脸超高相似度换脸-InstantID_1909560735851315202.json、图片生成/图生图/一键换脸超高相似度换脸-人像替换丨容貌替换丨面部迁移_1993840757727576065.json、图片生成/图生图/模特换脸_lnstantiD_优化版_1953080359522136066.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `ApplyInstantID`
+- `BboxDetectorSEGS`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `ConditioningZeroOut`
-- `ControlNetApplyAdvanced`
-- `ControlNetInpaintingAliMamaApply`
+- `CheckpointLoaderSimple`
 - `ControlNetLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImageAndMaskPreview`
-- `ImagePadForOutpaint`
-- `ImageScaleToTotalPixels`
+- `Crop Face`
+- `DF_Image_scale_to_side`
+- `GrowMask`
+- `ImageComposite+`
+- `ImageCrop+`
+- `ImageResize+`
+- `ImageUpscaleWithModel`
 - `InpaintModelConditioning`
-- `InpaintPreprocessor`
+- `InstantIDFaceAnalysis`
+- `InstantIDModelLoader`
 - `KSampler`
-- `LanPaint_MaskBlend`
-- `LayerColor: Brightness & Contrast`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `Load RetinaFace`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `Mask Crop Region`
 - `MaskBlur+`
-- `ModelSamplingAuraFlow`
-- `PlaySound|pysssss`
 - `PreviewImage`
-- `Qwen3_VQA`
+- `SAMDetectorCombined`
+- `SAMLoader`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `SetUnionControlNetType`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `UnetLoaderGGUF`
+- `UltralyticsDetectorProvider`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `MaskToImage` —— 4/5 个有
+- `ApplyPulid` —— 3/5 个有
+- `PulidEvaClipLoader` —— 3/5 个有
+- `PulidModelLoader` —— 3/5 个有
+- `DapaoImageAspectRatioResizeNode` —— 1/5 个有
+- `Image Overlay` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1 | - | 2 | 100% |
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 10 | 10 - 10 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler_ancestral | - | 5 | 100% |
+| 调度器 | sgm_uniform | - | 5 | 100% |
+| 重绘幅度 | 0.5 | 0.5 - 0.5 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（8/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 10，观测区间 10 - 10，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，5 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
+- 重绘幅度 中位数 0.5，观测区间 0.5 - 0.5，5 个样本，取值集中（一致性 100%）

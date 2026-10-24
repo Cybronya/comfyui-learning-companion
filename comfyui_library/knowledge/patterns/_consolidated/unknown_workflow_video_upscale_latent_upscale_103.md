@@ -2,89 +2,70 @@
 name: unknown_workflow_video_upscale_latent_upscale_103
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.637
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXFaceDetector, LTXLatentAnchorAware, LTXLikenessAnchor, LTXLikenessGuide, LTXTiledSampler, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, ResizeImageMaskNode, STGGuiderAdvanced, SamplerCustomAdvanced, Seed (rgthree), UNETLoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.891333
+common_nodes: [AnyBooleanSwitch, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MinimaxH3LatentUpscaler3D, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058875396149571585.json, 视频生成/图生视频/2060544603413106689.json, 视频生成/图生视频/9.LTX2.3 图生视频_2083566011248365570.json]
+members: [图片生成/图生图/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-文图首尾帧视频3合一工作流_2084510220184809474.json, 视频生成/文生视频/H3全能参考生视频-练习模式_2092890005231464450.json, 视频生成/文生视频/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-全能参考生视频_2084582921754730497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_103
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2058875396149571585.json、视频生成/图生视频/2060544603413106689.json、视频生成/图生视频/9.LTX2.3 图生视频_2083566011248365570.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-文图首尾帧视频3合一工作流_2084510220184809474.json、视频生成/文生视频/H3全能参考生视频-练习模式_2092890005231464450.json、视频生成/文生视频/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-全能参考生视频_2084582921754730497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：64%
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageResizeKJv2`
+- `AnyBooleanSwitch`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXFaceDetector`
-- `LTXLatentAnchorAware`
-- `LTXLikenessAnchor`
-- `LTXLikenessGuide`
-- `LTXTiledSampler`
-- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `MinimaxH3LatentUpscaler3D`
 - `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `STGGuiderAdvanced`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `Seed (rgthree)`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 2/3 个有
-- `ComfyMathExpression` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `LTXVLatentUpsamplerTiled` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `RTXVideoSuperResolution` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `Sigmas Easing` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `VAEDecode` —— 2/3 个有
-- `VAELoaderKJ` —— 2/3 个有
-- `BasicScheduler` —— 1/3 个有
-- `LTXVChunkFeedForward` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `ModelPatchTorchSettings` —— 1/3 个有
-- `ModelSamplingSD3` —— 1/3 个有
-- `PromptRelaySmartEncode` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
-- `XB_ROCmVAEDecodeTemporal` —— 1/3 个有
-- `XB_VideoParamsMaster` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `MiniMaxChunkFeedForward` —— 2/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
+- `MiniMaxLowVRAMAttention` —— 2/3 个有
+- `EmptyImage` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `MiniMaxH3ImageToVideo` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `ResizeImagesByShorterEdge` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `easy imageIndexSwitch` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1 | 1 - 1 | 3 | 100% |
-| 高度 | 24 | 24 - 24 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -92,5 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

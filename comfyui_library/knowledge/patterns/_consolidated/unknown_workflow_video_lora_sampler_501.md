@@ -3,63 +3,61 @@ name: unknown_workflow_video_lora_sampler_501
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8395
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.92125
+common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3极速二采高质量图_文生视频_2086658165340463105.json, 视频生成/图生视频/MiniMax+H3 图生视频+首尾帧+ 超级加速版_2087338012370890753.json, 视频生成/图生视频/MiniMax-H3 图生视频！ 加速版！_2085683743284621314.json, 视频生成/图生视频/MiniMax_H3反推提示词+极速二次采样高质量图_文生视频_2087448718474825729.json]
+members: [视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json, 视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json, 视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json, 视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_501
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3极速二采高质量图_文生视频_2086658165340463105.json、视频生成/图生视频/MiniMax+H3 图生视频+首尾帧+ 超级加速版_2087338012370890753.json、视频生成/图生视频/MiniMax-H3 图生视频！ 加速版！_2085683743284621314.json、视频生成/图生视频/MiniMax_H3反推提示词+极速二次采样高质量图_文生视频_2087448718474825729.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json、视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json、视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json、视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `BasicScheduler` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `KSamplerSelect` —— 2/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `PT_H3ConcatAVLatent` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
 - `CR Text` —— 1/4 个有
-- `Dapao_LlamaCaption` —— 1/4 个有
-- `Dapao_LlamaCaptionOptions` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `JjkText` —— 1/4 个有
-- `LoadAudio` —— 1/4 个有
-- `LoadVideo` —— 1/4 个有
-- `RegexReplace` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `easy promptConcat` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `Qwen3_VQA` —— 1/4 个有
+- `WanVideoContextOptions` —— 1/4 个有
 - `easy showAnything` —— 1/4 个有
 
 ## 典型参数

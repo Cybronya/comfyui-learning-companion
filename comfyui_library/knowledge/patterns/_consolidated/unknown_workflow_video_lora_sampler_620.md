@@ -2,76 +2,67 @@
 name: unknown_workflow_video_lora_sampler_620
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 1
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, Display Int (rgthree), ImageResizeKJv2, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SaveAudio, SimpleMath+, SoundFlow_GetLength, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, easy cleanGpuUsed, easy int]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.733333
+common_nodes: [BasicScheduler, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GetLatentSizeAndCount, GetNode, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PreviewAny, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy anythingIndexSwitch]
+problems: []
 missing: []
-members: [视频生成/图生视频/1967070568195481602.json, 视频生成/图生视频/1972914336614273026.json, 视频生成/图生视频/1983404597886787585.json]
+members: [视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json, 视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json, 视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_620
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1967070568195481602.json、视频生成/图生视频/1972914336614273026.json、视频生成/图生视频/1983404597886787585.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3！加速版全能版！开源免费版！_2111059113483526146.json、视频生成/文生视频/MinimaxH3！加速版全能版！开源免费版！SelfLift双采_2101131201514921985.json、视频生成/文生视频/海螺H3！加速版全能版！开源免费版！SelfLift双采！自动高清！ HD VOSR + DLSS!_2101136295811706881.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Display Int (rgthree)`
-- `ImageResizeKJv2`
-- `KSampler`
-- `LoadAudio`
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `GetLatentSizeAndCount`
+- `GetNode`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SaveAudio`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
+- `SelfLiftH3Sampler`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
-- `easy cleanGpuUsed`
-- `easy int`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 2/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
+- `GH_AudioVideoMerger` —— 1/3 个有
+- `GH_ImageVideoComparer` —— 1/3 个有
+- `PDIMAGE_LongerSize` —— 1/3 个有
+- `RH_DLSS5Enhance` —— 1/3 个有
+- `VOSR2ModelLoader` —— 1/3 个有
+- `VOSR2Upscale` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

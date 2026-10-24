@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_60
 type: Unknown Workflow
-frequency: 12
+frequency: 19
 level: moderate
-coverage: 0.766667
-common_nodes: [CR Text, SaveVideo]
+coverage: 0.820842
+common_nodes: [CR Text, LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json, 视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json, 视频生成/图生视频/2042481761665425410.json, 视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json, 视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json, 视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json, 视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json, 视频生成/文生视频/MiniMax H3文生视频_2083412798427717633.json, 视频生成/文生视频/MiniMax H3文生视频_2083417444428902401.json, 视频生成/文生视频/MiniMax H3文生视频_2083423068407549953.json, 视频生成/文生视频/MiniMax H3文生视频_2083426678491140097.json, 视频生成/文生视频/MiniMax+H3文生视频_2083396156163452930.json]
+members: [图片生成/图生图/即梦 Seedream 5.0 PRO 图生图_2075163135497039874.json, 图片生成/图生图/即梦5.0Pro三图编辑_2075422864706203650.json, 图片生成/图生图/即梦5.0Pro三图编辑_2075426800414576641.json, 图片生成/图生图/即梦5.0Pro三图编辑_2075432335553679362.json, 图片生成/图生图/即梦5.0Pro三图编辑_2075433707107864578.json, 图片生成/图生图/即梦5.0Pro三图编辑_2082373035599941633.json, 图片生成/图生图/即梦5.0Pro三图编辑_2083453548989345793.json, 图片生成/图生图/即梦5.0Pro单图编辑_2075414676728532994.json, 图片生成/图生图/即梦5.0Pro单图编辑_2075419782643544065.json, 图片生成/图生图/即梦5.0Pro单图编辑_2075430851713785857.json, 图片生成/图生图/即梦5.0Pro单图编辑_2075433321458388994.json, 图片生成/图生图/即梦5.0Pro单图编辑_2082377092431437826.json, 图片生成/图生图/即梦5.0Pro单图编辑_2083456230781177858.json, 图片生成/图生图/即梦5.0Pro双图编辑_2075420818787618818.json, 图片生成/图生图/即梦5.0Pro双图编辑_2075425727264153601.json, 图片生成/图生图/即梦5.0Pro双图编辑_2075431609247027202.json, 图片生成/图生图/即梦5.0Pro双图编辑_2075434467090583554.json, 图片生成/图生图/即梦5.0Pro双图编辑_2082375091081535490.json, 图片生成/图生图/即梦5.0Pro双图编辑_2083455593460887553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_60
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json、视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json、视频生成/图生视频/2042481761665425410.json、视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json、视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/即梦 Seedream 5.0 PRO 图生图_2075163135497039874.json、图片生成/图生图/即梦5.0Pro三图编辑_2075422864706203650.json、图片生成/图生图/即梦5.0Pro三图编辑_2075426800414576641.json、图片生成/图生图/即梦5.0Pro三图编辑_2075432335553679362.json、图片生成/图生图/即梦5.0Pro三图编辑_2075433707107864578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 19 个 workflow 都包含：
 - `CR Text`
-- `SaveVideo`
+- `LoadImage`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3TextToVideo` —— 11/12 个有
-- `LoadImage` —— 3/12 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 4/19 个有
+- `PrimitiveInt` —— 4/19 个有
 
 ## 典型参数
 

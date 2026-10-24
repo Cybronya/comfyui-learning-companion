@@ -1,87 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_vae_19
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.482385
-common_nodes: [BatchCount+, CLIPVisionLoader, DrawViTPose, GetNode, ImageBatch, ImageFromBatch, ImageResizeKJv2, LazySwitch1way, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy compare, easy mathInt]
+coverage: 0.931286
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2007621094634688513.json, 视频生成/图生视频/2061113125402927106.json, 视频生成/图生视频/2062092554732138498.json, 视频生成/图生视频/2062097231444013057.json, 视频生成/图生视频/2066792734605791233.json, 视频生成/图生视频/1987919174796292097.json, 视频生成/图生视频/1990599276940201985.json, 视频生成/图生视频/1996246888737284098.json, 视频生成/图生视频/2007836084251660289.json, 视频生成/图生视频/2054046238735118337.json, 视频生成/图生视频/2046063454615769090.json, 视频生成/图生视频/2041059568435863554.json, 视频生成/图生视频/2041230644306513921.json]
+members: [视频生成/图生视频/FusionX Vace图生视频MagCache加速版V1_1934317213807505410.json, 视频生成/图生视频/FusionX版VACE控制高质量图生视频双倍加速版V1_1933551686864781313.json, 视频生成/图生视频/FusionX高质量图生视频双倍加速版V1_1933552260817534978.json, 视频生成/图生视频/KJ版MagCache加速图生视频_1933824175960449025.json, 视频生成/图生视频/Wan2.1-FusionX图生视频_1933737212456390657.json, 视频生成/图生视频/Wan2.1-FusionX图生视频加速工作流_1934536025144238081.json, 视频生成/图生视频/wan2.1 法相魔法幻想 视觉特效_2062016628551933953.json, 视频生成/图生视频/wan2.1 法相魔法幻想 视觉特效_2062080584259817473.json, 视频生成/图生视频/wan2.1 法相魔法幻想 视觉特效_2072700454361976834.json, 视频生成/图生视频/wan2.1 法相魔法幻想 视觉特效_2072700639905406978.json, 视频生成/图生视频/【加速版】FusionX 最新图生视频工作流_1933852620643852289.json, 视频生成/图生视频/最强加速！Self Forcing图生视频1分钟81帧V1_1933192428583038978.json, 视频生成/图生视频/🦖FusionX版高质量图生视频_1934449439467794433.json, 视频生成/图生视频/🦖FusionX版高质量图生视频_1940976707774136321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2007621094634688513.json、视频生成/图生视频/2061113125402927106.json、视频生成/图生视频/2062092554732138498.json、视频生成/图生视频/2062097231444013057.json、视频生成/图生视频/2066792734605791233.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/FusionX Vace图生视频MagCache加速版V1_1934317213807505410.json、视频生成/图生视频/FusionX版VACE控制高质量图生视频双倍加速版V1_1933551686864781313.json、视频生成/图生视频/FusionX高质量图生视频双倍加速版V1_1933552260817534978.json、视频生成/图生视频/KJ版MagCache加速图生视频_1933824175960449025.json、视频生成/图生视频/Wan2.1-FusionX图生视频_1933737212456390657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BatchCount+`
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetNode`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LazySwitch1way`
+全部 14 个 workflow 都包含：
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RHHiddenNodes`
-- `RepeatImageBatch`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy compare`
-- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 12/13 个有
-- `WanVideoSetLoRAs` —— 11/13 个有
-- `easy int` —— 11/13 个有
-- `CM_FloatToInt` —— 9/13 个有
-- `ImageBatchMulti` —— 9/13 个有
-- `easy batchAnything` —— 9/13 个有
-- `easy forLoopEnd` —— 9/13 个有
-- `easy forLoopStart` —— 9/13 个有
-- `easy showAnything` —— 9/13 个有
-- `easy cleanGpuUsed` —— 8/13 个有
-- `CM_IntToFloat` —— 7/13 个有
-- `BlockifyMask` —— 6/13 个有
-- `DrawMaskOnImage` —— 6/13 个有
-- `GrowMask` —— 6/13 个有
-- `Image Blank` —— 6/13 个有
-- `LayerUtility: ImageBlend` —— 6/13 个有
-- `PointsEditor` —— 6/13 个有
-- `SeCModelLoader` —— 6/13 个有
-- `SeCVideoSegmentation` —— 6/13 个有
-- `VHS_VideoInfo` —— 6/13 个有
-- `Bookmark (rgthree)` —— 4/13 个有
-- `VHS_VideoInfoLoaded` —— 4/13 个有
-- `WanVideoLoraSelectMulti` —— 4/13 个有
-- `WanVideoModelLoader` —— 4/13 个有
-- `CoordinatePlotter` —— 2/13 个有
-- `ImpactInt` —— 2/13 个有
-- `LayerUtility: ImageBlendAdvance` —— 2/13 个有
-- `PrimitiveInt` —— 2/13 个有
-- `WanVideoLoraSelect` —— 2/13 个有
-- `Int` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
+- `WanVideoEnhanceAVideo` —— 13/14 个有
+- `WanVideoTeaCache` —— 12/14 个有
+- `CLIPVisionLoader` —— 9/14 个有
+- `WanVideoClipVisionEncode` —— 9/14 个有
+- `WanVideoExperimentalArgs` —— 9/14 个有
+- `WanVideoImageToVideoEncode` —— 9/14 个有
+- `WanVideoSLG` —— 9/14 个有
+- `JWInteger` —— 8/14 个有
+- `ColorMatch` —— 7/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/14 个有
+- `WanVideoLoraSelect` —— 6/14 个有
+- `ImageConcanate` —— 5/14 个有
+- `ImageResizeKJ` —— 5/14 个有
+- `WanVideoTorchCompileSettings` —— 5/14 个有
+- `WanVideoVACEEncode` —— 5/14 个有
+- `WanVideoVACEStartToEndFrame` —— 5/14 个有
+- `WanVideoVACEModelSelect` —— 4/14 个有
+- `ImageResizeKJv2` —— 2/14 个有
+- `WanVideoMagCache` —— 2/14 个有
+- `easy cleanGpuUsed` —— 2/14 个有
 
 ## 典型参数
 

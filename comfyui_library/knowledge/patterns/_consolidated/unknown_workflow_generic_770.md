@@ -1,39 +1,34 @@
 ---
 name: unknown_workflow_generic_770
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8055
-common_nodes: [LoadImage, PreviewAny, RH_RhartImageG2TextToImage, SaveImage, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 4
+level: moderate
+coverage: 0.87075
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/G2+ Gemma 4 替你写生图提示词！_2048327820568432642.json, 视频生成/文生视频/反推重绘_2047964125099204609.json]
+members: [视频生成/图生视频/电商模特展示多频显示细节工作流 V2.0_2069570506952630273.json, 视频生成/文生视频/Seedance2.0 Fast_全能视频工作流_2040013164200333313.json, 视频生成/文生视频/Seedance2.0 视频_2071873218658525185.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-九图混合生视频】工作流_2037776682970517505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_770
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/G2+ Gemma 4 替你写生图提示词！_2048327820568432642.json、视频生成/文生视频/反推重绘_2047964125099204609.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/电商模特展示多频显示细节工作流 V2.0_2069570506952630273.json、视频生成/文生视频/Seedance2.0 Fast_全能视频工作流_2040013164200333313.json、视频生成/文生视频/Seedance2.0 视频_2071873218658525185.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-九图混合生视频】工作流_2037776682970517505.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy saveText` —— 1/2 个有
+- `Text` —— 2/4 个有
 
 ## 典型参数
 
@@ -45,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

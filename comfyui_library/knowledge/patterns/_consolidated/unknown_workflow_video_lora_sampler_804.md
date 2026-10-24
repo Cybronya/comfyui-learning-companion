@@ -3,67 +3,70 @@ name: unknown_workflow_video_lora_sampler_804
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8475
-common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), INTConstant, ImageSmartSharpen+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, WanVideoNAG, easy cleanGpuUsed, wanBlockSwap]
+coverage: 0.9045
+common_nodes: [BerniniPromptEnhancer, CreateVideo, INTConstant, ImageResizeKJv2, LoadImage, PreviewAny, Seed (rgthree), SimpleMath+, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2052037082595504130.json, 视频生成/文生视频/Wan2.2最新图生视频-加速版_2071097964008927234.json]
+members: [视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json, 视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_804
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2052037082595504130.json、视频生成/文生视频/Wan2.2最新图生视频-加速版_2071097964008927234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json、视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Fast Groups Bypasser (rgthree)`
+- `BerniniPromptEnhancer`
+- `CreateVideo`
 - `INTConstant`
-- `ImageSmartSharpen+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `RIFE VFI`
+- `PreviewAny`
+- `Seed (rgthree)`
 - `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `StringFunction|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `WanVideoNAG`
-- `easy cleanGpuUsed`
-- `wanBlockSwap`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `BatchImagesNode` —— 1/2 个有
+- `CR Text` —— 1/2 个有
 - `GetNode` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `RTXVideoSuperResolution` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
 - `SetNode` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `WanFirstLastFrameToVideo` —— 1/2 个有
-- `WanImageToVideo` —— 1/2 个有
+- `llama_cpp_instruct_adv` —— 1/2 个有
+- `llama_cpp_model_loader` —— 1/2 个有
+- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | euler | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -71,9 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,56 +1,63 @@
 ---
 name: unknown_workflow_sampler_clip_unet_85
 type: Unknown Workflow
-frequency: 8
-level: weak
-coverage: 0.942
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: moderate
+coverage: 0.914455
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/1950503480169517058.json, 视频生成/文生视频/wan2.2工作流_2034980882162917377.json, 视频生成/文生视频/1950456441427693570.json, 视频生成/文生视频/wan2.2文生视频_2087718119883235330.json, 视频生成/文生视频/wan文生视频_2009970396799442946.json, 视频生成/文生视频/【橘子AI】Wan 2.2 T2V 精简版_1989254188234321922.json, 视频生成/文生视频/文生视频工作流_2066457517043044354.json, 视频生成/文生视频/新版 Wan2.2_Lightning_Palingenesis 精品免费课程对应工作流 ____1974007898521120769.json]
+members: [图片生成/图生图/换装-人物换装-flux2-dev-fp8_1993947236568678401.json, 图片生成/图生图/提取服装_2034842540221927426.json, 图片生成/图生图/最新Flux 2.0多图编辑工作流（支持直接输入中文提示词）_1993527135818235906.json, 图片生成/图生图/黑森林Flux2单图编辑_1993598436635246593.json, 图片生成/图生图/黑森林Flux2双图编辑_1993606631697088514.json, 图片生成/图生图/🦖Flux2DEV多图编辑_2007631030517239810.json, 图片生成/文生图/Flux.2 单图编辑 用嘴改图官方工作流_1998219021541629954.json, 图片生成/文生图/Flux.2-支持中文-文生图_1993529170808471553.json, 图片生成/文生图/Flux2DEV多图编辑_1993501443036479490.json, 图片生成/文生图/Flux2DEV文生图_1993507322504953858.json, 图片生成/文生图/最新Flux 2.0文生图工作流（支持直接输入中文提示词）_1993538099806404610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_85
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/1950503480169517058.json、视频生成/文生视频/wan2.2工作流_2034980882162917377.json、视频生成/文生视频/1950456441427693570.json、视频生成/文生视频/wan2.2文生视频_2087718119883235330.json、视频生成/文生视频/wan文生视频_2009970396799442946.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/换装-人物换装-flux2-dev-fp8_1993947236568678401.json、图片生成/图生图/提取服装_2034842540221927426.json、图片生成/图生图/最新Flux 2.0多图编辑工作流（支持直接输入中文提示词）_1993527135818235906.json、图片生成/图生图/黑森林Flux2单图编辑_1993598436635246593.json、图片生成/图生图/黑森林Flux2双图编辑_1993606631697088514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `PathchSageAttentionKJ` —— 4/8 个有
-- `RIFE VFI` —— 2/8 个有
-- `SaveAnimatedWEBP` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `SaveWEBM` —— 1/8 个有
-- `TorchCompileModel` —— 1/8 个有
+- `FluxGuidance` —— 10/11 个有
+- `ImageScaleToTotalPixels` —— 10/11 个有
+- `ImageConcanate` —— 5/11 个有
+- `Int` —— 4/11 个有
+- `easy promptList` —— 4/11 个有
+- `CR Text` —— 2/11 个有
+- `GetNode` —— 2/11 个有
+- `SetNode` —— 2/11 个有
+- `AddLabel` —— 1/11 个有
+- `JjkText` —— 1/11 个有
+- `ModelPatchTorchSettings` —— 1/11 个有
+- `PathchSageAttentionKJ` —— 1/11 个有
+- `WanVideoImageResizeToClosest` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 50% |
-| Prompt 约束强度(CFG) | 9 | 4 - 20 | 8 | 39% |
-| 采样算法 | 1.75 | 1 - 3.5 | 8 | 45% |
-| 调度器 | euler | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -58,9 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 4 - 20，8 个样本，取值分散，一致性仅 39%
-- 采样算法 中位数 1.75，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 45%
-- 调度器 最常用 euler，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

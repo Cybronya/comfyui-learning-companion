@@ -1,93 +1,78 @@
 ---
 name: image_to_image_video_lora_sampler_4
 type: Image To Image
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.485
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CRTFirstLastFrameSelector, Fast Groups Bypasser (rgthree), INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, ImageStitch, Int, JWStringConcat, JoinStrings, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, ProcessString, Qwen3_VQA, RIFE VFI, SaveImage, ShowText|pysssss, Text Multiline, TextEncodeQwenImageEditPlus, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanMultiFrameRefToVideo, easy cleanGpuUsed, easy promptLine, easy showAnything, wanBlockSwap]
+coverage: 0.930667
+common_nodes: [Any To Any, CLIPLoader, ConditioningZeroOut, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ProcessString, Qwen3_VQA, RunningHub Deepcleaner, SaveImage, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAEEncode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy imageListToImageBatch, easy promptLine, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/产品多分镜+多角度+多场景+单图_三图生视频_2002487518991925249.json, 视频生成/图生视频/1994300915066880001.json, 视频生成/图生视频/1996217524062666754.json, 视频生成/图生视频/1989240628179513346.json, 视频生成/图生视频/AI最强长视频流=多分镜+单图_首中尾帧出视频，清晰-慢-200RH_2082744677681418242.json, 视频生成/图生视频/2003367093624053762.json, 视频生成/图生视频/1996194043233255425.json]
+members: [图片生成/图生图/千问Qwen-Edit-2511_2065267923194830849.json, 图片生成/图生图/千问Qwen-Edit-2511【12个漫剧分镜生成工作流】_2064248572484345858.json, 图片生成/图生图/千问Qwen-Edit-2511【12个漫剧分镜生成工作流】_2066703299922972674.json, 图片生成/图生图/漫剧分镜生成（千问Edit2511场景角色一致性保持）_2013174580898172930.json, 图片生成/图生图/漫剧分镜生成（千问Edit2511场景角色一致性保持）_2016863442661019650.json, 图片生成/文生图/12个漫剧分镜生成工作流Qwen-Edit2511-nextscene_2021581375052193793.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/产品多分镜+多角度+多场景+单图_三图生视频_2002487518991925249.json、视频生成/图生视频/1994300915066880001.json、视频生成/图生视频/1996217524062666754.json、视频生成/图生视频/1989240628179513346.json、视频生成/图生视频/AI最强长视频流=多分镜+单图_首中尾帧出视频，清晰-慢-200RH_2082744677681418242.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/千问Qwen-Edit-2511_2065267923194830849.json、图片生成/图生图/千问Qwen-Edit-2511【12个漫剧分镜生成工作流】_2064248572484345858.json、图片生成/图生图/千问Qwen-Edit-2511【12个漫剧分镜生成工作流】_2066703299922972674.json、图片生成/图生图/漫剧分镜生成（千问Edit2511场景角色一致性保持）_2013174580898172930.json、图片生成/图生图/漫剧分镜生成（千问Edit2511场景角色一致性保持）_2016863442661019650.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `Any To Any`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `CRTFirstLastFrameSelector`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `ImageStitch`
-- `Int`
-- `JWStringConcat`
-- `JoinStrings`
+- `ConditioningZeroOut`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
 - `ProcessString`
 - `Qwen3_VQA`
-- `RIFE VFI`
+- `RunningHub Deepcleaner`
 - `SaveImage`
-- `ShowText|pysssss`
 - `Text Multiline`
-- `TextEncodeQwenImageEditPlus`
-- `TextInput_`
-- `UNETLoader`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanMultiFrameRefToVideo`
-- `easy cleanGpuUsed`
+- `easy imageListToImageBatch`
 - `easy promptLine`
 - `easy showAnything`
-- `wanBlockSwap`
+
+**可变部分**（部分 workflow 才有）：
+- `CFGNorm` —— 4/6 个有
+- `ModelSamplingAuraFlow` —— 4/6 个有
+- `UNETLoader` —— 4/6 个有
+- `easy cleanGpuUsed` —— 4/6 个有
+- `EnhancedLoadDiffusionModel` —— 2/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler_ancestral | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 8 | 8 - 8 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（14/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -1,47 +1,35 @@
 ---
 name: unknown_workflow_generic_827
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7445
-common_nodes: [CR Prompt Text, JjkText, LoadImage, PreviewAny, RH_Grok_Video3, RH_Sora2_I2V, RH_Sora2_I2V_PRO, RH_Veo3_Image2Video, SaveVideo, ShellAgentPluginOutputText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.933333
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2031763163913392130.json, 视频生成/文生视频/AI动画 VIDEO - Workflow V1.0_2028430413558976513.json]
+members: [comfyui-workflow-templates-json/api_kling_motion_control.json, comfyui-workflow-templates-json/api_kling_motion_control3.json, comfyui-workflow-templates-json/api_wan2_7_video_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_827
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2031763163913392130.json、视频生成/文生视频/AI动画 VIDEO - Workflow V1.0_2028430413558976513.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_motion_control.json、comfyui-workflow-templates-json/api_kling_motion_control3.json、comfyui-workflow-templates-json/api_wan2_7_video_edit.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JjkText`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_Grok_Video3`
-- `RH_Sora2_I2V`
-- `RH_Sora2_I2V_PRO`
-- `RH_Veo3_Image2Video`
+- `LoadVideo`
 - `SaveVideo`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `MuyeTextEditOutput` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Sora2_I2V_Realistic` —— 1/2 个有
+- `KlingMotionControl` —— 2/3 个有
+- `Wan2VideoEditApi` —— 1/3 个有
 
 ## 典型参数
 
@@ -53,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

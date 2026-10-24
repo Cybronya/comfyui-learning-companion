@@ -3,89 +3,87 @@ name: text_to_image_video_lora_sampler_187
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.840667
-common_nodes: [Bjornulf_ShowInt, CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, CR Integer To String, CreateCFGScheduleFloatList, EmptyLatentImage, GetImageSizeAndCount, ImageResizeKJv2, JWInteger, KSampler, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, LoraLoader, MathExpression|pysssss, PreviewImage, Primitive integer [Crystools], RHBatchImages:, RHHiddenNodes, RH_LLMAPI_NODE, SaveImage, ShowText|pysssss, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, Wan_video_prompt_generator, easy forLoopEnd, easy forLoopStart, easy imageCount]
+coverage: 0.720333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/1957653150733889537.json, 视频生成/文生视频/1958383556336762882.json, 视频生成/文生视频/1951108375138476034.json]
+members: [视频生成/文生视频/8步二次采样1088p多参视频｜MinimaxH3文生图生视频生视频工作流_2088128342645104641.json, 视频生成/文生视频/MINIMAX H3多参二采2K直出官方API文生视频图生视频_2088208139706519553.json, 视频生成/文生视频/MinimaxH3全能参考二采高清放大｜4步加速生成_2094517725417787393.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_187
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1957653150733889537.json、视频生成/文生视频/1958383556336762882.json、视频生成/文生视频/1951108375138476034.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/8步二次采样1088p多参视频｜MinimaxH3文生图生视频生视频工作流_2088128342645104641.json、视频生成/文生视频/MINIMAX H3多参二采2K直出官方API文生视频图生视频_2088208139706519553.json、视频生成/文生视频/MinimaxH3全能参考二采高清放大｜4步加速生成_2094517725417787393.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CFGZeroStarAndInit`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Integer To String`
-- `CreateCFGScheduleFloatList`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
-- `JWInteger`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadWanVideoT5TextEncoder`
-- `LoraLoader`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RHBatchImages:`
-- `RHHiddenNodes`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
+- `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `Wan_video_prompt_generator`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `easy mathInt` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `PT_H3ConcatAVLatent` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `HAIGC_VideoLoader` —— 1/3 个有
+- `LTXVConcatAVLatent` —— 1/3 个有
+- `LoraLoaderBypassModelOnly` —— 1/3 个有
+- `MiniMaxH3BlockCacheT8` —— 1/3 个有
+- `RH_MinimaxHailuoH3RegenerationMultimodalToVideo` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
+- `UniBlockSwap` —— 1/3 个有
+- `VAEEncodeAudio` —— 1/3 个有
+- `VRAM_Debug` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
+- `忽略多组孤海` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.4 | 0.4 - 0.4 | 3 | 100% |
-| LoRA 文本强度 | 0.4 | 0.4 - 0.4 | 3 | 100% |
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | res_2s | - | 3 | 100% |
-| 调度器 | bong_tangent | - | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
@@ -95,13 +93,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.4，观测区间 0.4 - 0.4，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.4，观测区间 0.4 - 0.4，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，3 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，3 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

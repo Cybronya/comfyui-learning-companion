@@ -1,38 +1,46 @@
 ---
 name: unknown_workflow_generic_502
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.714
-common_nodes: [CR Prompt Text, CR Text Concatenate, KOOK_SaveJPGImage, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, 忽略多组孤海]
+coverage: 0.513
+common_nodes: [Fast Groups Muter (rgthree), GetNode, JjkText, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage, SetNode, ShowText|pysssss, StringFunction|pysssss]
 problems: []
-missing: [CR Text Concatenate, 忽略多组孤海, CR Prompt Text]
-members: [图片生成/图生图/2087051938029457409.json, 图片生成/图生图/2092922360243511297.json, 图片生成/文生图/Minimax H3人物三视图和场景图生成，图像优化版_2085912198970433537.json]
+missing: []
+members: [图片生成/图生图/GTYH_V1.0_1981628649931710465.json, 图片生成/图生图/GTYH_V1.1_1982710057609641986.json, 图片生成/图生图/GTYH_V1.2_1982748297242779650.json, 图片生成/图生图/GTYH_V1.3_1983461357637017601.json, 图片生成/图生图/GTYH_V1.4_1983817490767781889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_502
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2087051938029457409.json、图片生成/图生图/2092922360243511297.json、图片生成/文生图/Minimax H3人物三视图和场景图生成，图像优化版_2085912198970433537.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/GTYH_V1.0_1981628649931710465.json、图片生成/图生图/GTYH_V1.1_1982710057609641986.json、图片生成/图生图/GTYH_V1.2_1982748297242779650.json、图片生成/图生图/GTYH_V1.3_1983461357637017601.json、图片生成/图生图/GTYH_V1.4_1983817490767781889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text Concatenate`
-- `KOOK_SaveJPGImage`
+全部 5 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
+- `JjkText`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
 - `SaveImage`
-- `忽略多组孤海`
+- `SetNode`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNG31FlashImageToImage` —— 1/3 个有
+- `Image Switch (JPS)` —— 4/5 个有
+- `Int` —— 3/5 个有
+- `ImpactSwitch` —— 1/5 个有
 
 ## 典型参数
 
@@ -44,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、忽略多组孤海、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

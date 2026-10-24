@@ -1,66 +1,71 @@
 ---
 name: unknown_workflow_video_sampler_vae_9
 type: Unknown Workflow
-frequency: 26
+frequency: 24
 level: moderate
-coverage: 0.890692
-common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.888
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/minimaxH3动态数字人1_2087111145051217921.json, 数字人/数字人/minimaxh3高动态数字人2_2087118803158257665.json, 数字人/数字人/一致性超强-H3数字人单人_2086308817486303234.json, 数字人/数字人/方格智联-MINI-H3数字人_2086681804894986242.json, 数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json, 视频生成/图生视频/H3_全能参考_2107892757984538626.json, 视频生成/图生视频/H3全能多参&音频驱动_2093425873709002754.json, 视频生成/图生视频/MiniMax H3-数字人 唱歌 口播_2089931741619380225.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2084906264412381186.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2100432995860697090.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2085324362105835522.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087570594790465537.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087800628679630849.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2089292719402348545.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090338216959373313.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090621488088047618.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2092061086244753409.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2097490216427810818.json, 视频生成/图生视频/Minimax H3开源 音频驱动数字人对口型 图生视频_2089311171798192129.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084955772458459137.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084990595327676418.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2084872893997076481.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2087072390349156353.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2089718644019388418.json, 视频生成/图生视频/Minimax H3数字人多人极速版_2085589743303225345.json, 视频生成/图生视频/加速版 ！海螺H3！ 数字人对口型 ！两人！_2085574360487784450.json]
+members: [视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json, 视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json, 视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json, 视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json, 视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T1_2085350214604513281.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T2_2085358927612563457.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T3_2085391641258582017.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T4_2085391626901475329.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T5_2085411686395236353.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T6_2085444171992748033.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T7_2102928115411542018.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T7_2104380315761471490.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T8_2085676923673464834.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T9_2085718493915336705.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词_2086276081564344321.json, 视频生成/图生视频/minimaxh3多参官方指南自动扩展提示词T1_2085348535347802114.json, 视频生成/图生视频/人物微表情变化_2097294907064012801.json, 视频生成/图生视频/人物表情变化动作_2097300292181258241.json, 视频生成/图生视频/人物表情语言变化_2098063808349696001.json, 视频生成/图生视频/双姝_2098043624184434690.json, 视频生成/图生视频/古装美女扮相_2098413882426609665.json, 视频生成/图生视频/快乐的小猫咪_2092480218379411457.json, 视频生成/图生视频/摘松果的松鼠_2091046140023234562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（数字人/数字人/minimaxH3动态数字人1_2087111145051217921.json、数字人/数字人/minimaxh3高动态数字人2_2087118803158257665.json、数字人/数字人/一致性超强-H3数字人单人_2086308817486303234.json、数字人/数字人/方格智联-MINI-H3数字人_2086681804894986242.json、数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json、视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json、视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json、视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json、视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：26
+- **样本数**：24
 - **可信度**：中等可信
 - **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `AudioCrop`
+全部 24 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
+- `Text`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 25/26 个有
-- `PreviewAudio` —— 25/26 个有
-- `UNETLoader` —— 24/26 个有
-- `PrimitiveStringMultiline` —— 23/26 个有
-- `PathchSageAttentionKJ` —— 22/26 个有
-- `AudioConcat` —— 17/26 个有
-- `EmptyAudio` —— 17/26 个有
-- `LoraLoaderModelOnly` —— 7/26 个有
-- `EasyCache` —— 2/26 个有
-- `EnhancedLoadDiffusionModel` —— 2/26 个有
-- `ModelAttentionBackend` —— 2/26 个有
-- `RHHiddenNodes` —— 2/26 个有
-- `Text` —— 2/26 个有
-- `ModelPreviewOverrideKJ` —— 1/26 个有
-- `PainterVRAM` —— 1/26 个有
-- `RHLLMChatNode` —— 1/26 个有
-- `VHS_LoadVideo` —— 1/26 个有
-- `easy showAnything` —— 1/26 个有
+- `UNETLoader` —— 19/24 个有
+- `ResolutionSelector` —— 17/24 个有
+- `easy showAnything` —— 17/24 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 16/24 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 14/24 个有
+- `ImageConcatenateMulti_UTK` —— 13/24 个有
+- `PreviewImage` —— 13/24 个有
+- `RHHiddenNodes` —— 12/24 个有
+- `RH_Captioner` —— 11/24 个有
+- `TextConcatenate_UTK` —— 11/24 个有
+- `MiniMaxH3ImageToVideo` —— 10/24 个有
+- `LoadAudio` —— 9/24 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/24 个有
+- `EnhancedLoadDiffusionModel` —— 5/24 个有
+- `LoraLoaderBypassModelOnly` —— 5/24 个有
+- `MiniMaxH3BlockCacheT8` —— 5/24 个有
+- `ExtractSubstring` —— 2/24 个有
+- `JWStringToFloat` —— 2/24 个有
+- `CreateVideo` —— 1/24 个有
+- `ImageFromBatch` —— 1/24 个有
+- `ImageResizeKJv2` —— 1/24 个有
+- `LoadVideoUI` —— 1/24 个有
+- `ModelAttentionBackend` —— 1/24 个有
+- `PD_Extract_Image` —— 1/24 个有
+- `RH_Translator` —— 1/24 个有
+- `SaveVideo` —— 1/24 个有
+- `easy indexAnything` —— 1/24 个有
 
 ## 典型参数
 

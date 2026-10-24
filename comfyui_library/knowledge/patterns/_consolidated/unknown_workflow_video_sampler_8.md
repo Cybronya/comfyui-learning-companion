@@ -3,41 +3,40 @@ name: unknown_workflow_video_sampler_8
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.873167
-common_nodes: [Float to Int, GetVideoComponents, LoadImage, LoadVideo, MathExpression|pysssss, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine]
+coverage: 0.989667
+common_nodes: [CM_FloatToInt, GetVideoComponents, LoadImage, LoadVideo, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine, easy imageCount]
 problems: []
 missing: []
-members: [视频生成/图生视频/2009253489515438082.json, 视频生成/图生视频/2009864984473374722.json, 视频生成/图生视频/2009621483731030017.json, 视频生成/图生视频/2008970047242375169.json, 视频生成/图生视频/2050705839849259009.json, 视频生成/图生视频/2009059203486322689.json]
+members: [视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json, 视频生成/图生视频/DreamID-V视频换脸_2009239491415908354.json, 视频生成/图生视频/DreamID-V视频换脸_2009449357975756802.json, 视频生成/图生视频/DreamID-V视频换脸_2010268068085239809.json, 视频生成/图生视频/DreamID-V视频换脸_2029470335698997249.json, 视频生成/图生视频/视频换脸_2013142770868822018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2009253489515438082.json、视频生成/图生视频/2009864984473374722.json、视频生成/图生视频/2009621483731030017.json、视频生成/图生视频/2008970047242375169.json、视频生成/图生视频/2050705839849259009.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json、视频生成/图生视频/DreamID-V视频换脸_2009239491415908354.json、视频生成/图生视频/DreamID-V视频换脸_2009449357975756802.json、视频生成/图生视频/DreamID-V视频换脸_2010268068085239809.json、视频生成/图生视频/DreamID-V视频换脸_2029470335698997249.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Float to Int`
+- `CM_FloatToInt`
 - `GetVideoComponents`
 - `LoadImage`
 - `LoadVideo`
-- `MathExpression|pysssss`
 - `RunningHub_DreamID-V_Loader`
 - `RunningHub_DreamID-V_Sampler`
 - `VHS_VideoCombine`
+- `easy imageCount`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 5/6 个有
-- `ImageConcatMulti` —— 3/6 个有
-- `Float` —— 2/6 个有
-- `INTConstant` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
+- `ImageConcanate` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `MathExpression|pysssss` —— 2/6 个有
+- `RepeatImageBatch` —— 2/6 个有
 
 ## 典型参数
 

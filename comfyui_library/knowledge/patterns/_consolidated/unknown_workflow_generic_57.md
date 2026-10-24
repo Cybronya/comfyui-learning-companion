@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_57
 type: Unknown Workflow
-frequency: 12
+frequency: 19
 level: moderate
-coverage: 0.927917
-common_nodes: [CR Prompt Text, SaveAudio, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.711789
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json, 数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json, 音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json, 音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json, 音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json, 音频生成/音频生成/Breeze TTS 2 声音再设计_2096223350476599297.json, 音频生成/音频生成/Breeze TTS 2 声音再设计（非常好高保真还原原声 读取文字）_2109829100578885633.json, 音频生成/音频生成/Breeze TTS 2 声音导演2608_2096515625681244161.json, 音频生成/音频生成/Breeze TTS 2 声音导演_2095397305070473217.json, 音频生成/音频生成/Breeze TTS 2 声音设计 （自用）_2108146608234909698.json, 音频生成/音频生成/Breeze TTS2_自动情绪_音频克隆_设计_2098331150149308417.json, 音频生成/音频生成/【aide】Breeze TTS2_自动情绪_音频克隆_设计_2099749651778985986.json]
+members: [图片生成/反推提示词/换光线_光影迁移_反向打光_图二基底_Image2.5_2102673366527336449.json, 图片生成/反推提示词/换光线_光影迁移_重打光_氛围光_Image2.5_2102673422240276482.json, 图片生成/反推提示词/老虎雪山_动物入景_奔跑场景_野生动物_Image2.5_2102973030447271937.json, 图片生成/图生图/G2.5 image editing flare_2097889476910608385.json, 图片生成/图生图/Image 2.5 Flare 图像编辑 RH官方渠道版_2099305065948475394.json, 图片生成/图生图/[全能图片G2.5] 视觉重构图生图：风格迁移与多维局部重绘 _ 图片处理 _ 风格化 _ 图生图_2098936311485915138.json, "图片生成/图生图/b-最新全能图片模型,超低价7分钱_张_2076282670400753665.json", "图片生成/图生图/b-最新全能图片模型,超低价7分钱_张_2081238629002866690.json", 图片生成/图生图/【阡陌】最强全能图片G-Image-2.5换装工作流_2098377289271697410.json, 图片生成/图生图/全能G2.5图生图_2109180320099684354.json, 图片生成/图生图/全能图片2.0lite-图生图(双图编辑)_2077573460989140993.json, 图片生成/图生图/全能图片G image 2.5最强生图模型（图生图）_2110366679929810946.json, 图片生成/图生图/全能图片G image 2.5最强生图模型（图生图）_2110699491753025537.json, 图片生成/图生图/全能图片G2.5-图片重新渲染，添加装饰物_2100051879085568002.json, 图片生成/图生图/全能图片G2.5-图片重新渲染，添加装饰物_2100185156396077058.json, 图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100189843883122689.json, 图片生成/图生图/换摄影风格_胶片风_日系风_港风_赛博朋克_Image2.5_2100556042458451970.json, 图片生成/图生图/换材质_材质替换_质感替换_纹理生成_Image2.5_2100560701482954753.json, 图片生成/图生图/换画风_风格转绘_画风转换_AI转绘_Image2.5_2100556790797783041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_57
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/Breeze TTS 2 声音导演_2095807011245092866.json、数字人/数字人/Breeze TTS 2 声音设计_2095804847302987778.json、音频生成/音频生成/Breeze TTS 2 声音克隆2608_2096515640055128065.json、音频生成/音频生成/Breeze TTS 2 声音克隆_2096219606628257794.json、音频生成/音频生成/Breeze TTS 2 声音克隆v2_2095397269569884162.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/反推提示词/换光线_光影迁移_反向打光_图二基底_Image2.5_2102673366527336449.json、图片生成/反推提示词/换光线_光影迁移_重打光_氛围光_Image2.5_2102673422240276482.json、图片生成/反推提示词/老虎雪山_动物入景_奔跑场景_野生动物_Image2.5_2102973030447271937.json、图片生成/图生图/G2.5 image editing flare_2097889476910608385.json、图片生成/图生图/Image 2.5 Flare 图像编辑 RH官方渠道版_2099305065948475394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveAudio`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+全部 19 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 10/12 个有
-- `LoadAudio` —— 10/12 个有
-- `PreviewAudio` —— 10/12 个有
-- `T8_BreezeTTS_DirectionRequest` —— 7/12 个有
-- `T8_BreezeTTS_DesignRequest` —— 4/12 个有
-- `T8_BreezeTTS_CloneRequest` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `RHLLMChatNode` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
+- `RH_RhartImageG25FlareImageToImage` —— 15/19 个有
+- `JjkText` —— 10/19 个有
+- `PreviewImage` —— 6/19 个有
+- `EmptyImage` —— 5/19 个有
+- `RH_RhartImageNG31FlashLiteImageToImage` —— 3/19 个有
+- `RH_SeedreamV45ImageToImage` —— 1/19 个有
 
 ## 典型参数
 

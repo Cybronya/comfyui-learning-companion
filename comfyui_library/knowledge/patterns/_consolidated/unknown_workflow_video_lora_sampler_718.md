@@ -3,57 +3,60 @@ name: unknown_workflow_video_lora_sampler_718
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9435
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.674
+common_nodes: [AppendStringsToList, CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, SplineEditor, VHS_VideoCombine, WanVideoATITracks, WanVideoATITracksVisualize, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/MinimaxH3 角色替换_2092994502658183169.json, 数字人/数字人/仅换头_自动时长宽高_H3_2110546203753672706.json]
+members: [视频生成/图生视频/03-05-05-WAN2.1-运镜控制-ATI多点轨迹引导图生视频_1989933219632082946.json, 视频生成/图生视频/ATI轨迹控制_1929724832999489537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_718
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MinimaxH3 角色替换_2092994502658183169.json、数字人/数字人/仅换头_自动时长宽高_H3_2110546203753672706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/03-05-05-WAN2.1-运镜控制-ATI多点轨迹引导图生视频_1989933219632082946.json、视频生成/图生视频/ATI轨迹控制_1929724832999489537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `AppendStringsToList`
+- `CLIPVisionLoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `SplineEditor`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoATITracks`
+- `WanVideoATITracksVisualize`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

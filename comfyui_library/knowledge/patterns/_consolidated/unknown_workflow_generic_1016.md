@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_1016
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.798
-common_nodes: [LoadAudio, LoadImage, MegaTTS3Run, SaveAudioMP3, Text Multiline]
+frequency: 3
+level: moderate
+coverage: 0.916667
+common_nodes: [LoadImage, RH_RhartVideoV31FastImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/一句话2人说声音模仿+跨语言+修复音频）王改革_2001644951907758082.json, 音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）王改革_2001682249609297922.json]
+members: [视频生成/图生视频/RhartVideoV31FastImageToVideo_2038486964764151810.json, 视频生成/图生视频/全能视频V3.1-fast-图生视频-低价渠道版_2046398413939412994.json, 视频生成/文生视频/全能视频V FAST 图生视频0.25元_8S_2037520371183783937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1016
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/一句话2人说声音模仿+跨语言+修复音频）王改革_2001644951907758082.json、音频生成/音频生成/双语对话（声音模仿+跨语言+修复音频）王改革_2001682249609297922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/RhartVideoV31FastImageToVideo_2038486964764151810.json、视频生成/图生视频/全能视频V3.1-fast-图生视频-低价渠道版_2046398413939412994.json、视频生成/文生视频/全能视频V FAST 图生视频0.25元_8S_2037520371183783937.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `MegaTTS3Run`
-- `SaveAudioMP3`
-- `Text Multiline`
+- `RH_RhartVideoV31FastImageToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkText` —— 1/3 个有
+- `easy seed` —— 1/3 个有
 
 ## 典型参数
 
@@ -39,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,50 +1,43 @@
 ---
 name: unknown_workflow_generic_449
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.9515
-common_nodes: [LoadAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.960667
+common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094620800392450049.json, 音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094639246123560961.json, 音频生成/音频生成/index tts 2.5 单人及多人对话_2096390568581619713.json, 音频生成/音频生成/🦊TTS2.5多人对话--焚诀版_2094341494462304257.json]
+members: [数字人/数字人/声音_2092902828380614658.json, 数字人/数字人/声音_2095745922595643394.json, 视频生成/图生视频/IndexTTS-2 音色克隆工作流合集  单人_多人_情感克隆_2085546895153385474.json, 音频生成/音频生成/AI语音配音：音色克隆 IndexTTS 2.0_2018681928492257281.json, 音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2059525905587982338.json, 音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2087223313654444034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_449
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094620800392450049.json、音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094639246123560961.json、音频生成/音频生成/index tts 2.5 单人及多人对话_2096390568581619713.json、音频生成/音频生成/🦊TTS2.5多人对话--焚诀版_2094341494462304257.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/声音_2092902828380614658.json、数字人/数字人/声音_2095745922595643394.json、视频生成/图生视频/IndexTTS-2 音色克隆工作流合集  单人_多人_情感克隆_2085546895153385474.json、音频生成/音频生成/AI语音配音：音色克隆 IndexTTS 2.0_2018681928492257281.json、音频生成/音频生成/IndexTTS-2音色克隆工作流合集  单人_多人_情感控制克隆_2059525905587982338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `LoadAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSEmotionAudio`
+- `easy indexTTSEmotionMerge`
+- `easy indexTTSEmotionVector`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `NormalizeAudioLoudness` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `T8_IndexTTS25_Pronunciation` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveAudioNode` —— 1/4 个有
-- `T8_IndexTTS25_SamplingConfig` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `LoadImage` —— 5/6 个有
+- `PreviewAudio` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `SaveAudio` —— 4/6 个有
+- `easy indexTTSAudioMerge` —— 4/6 个有
+- `Fast Groups Muter (rgthree)` —— 3/6 个有
+- `AudioSeparation` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,56 +3,67 @@ name: unknown_workflow_video_lora_sampler_643
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.932
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.699
+common_nodes: [CreateCFGScheduleFloatList, Florence2ModelLoader, Florence2Run, GetImageSizeAndCount, GetNode, INTConstant, ImageConcanate, ImageConcatMulti, ImageFromBatch, ImageFromBatch+, ImageResizeKJ, ImageToMask, ImpactFloat, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewImage, SetNode, ShowText|pysssss, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg, easy imageSize, easy positive, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1951139393090334722.json, 视频生成/图生视频/2056763668582461441.json, 视频生成/图生视频/1955612950611443714.json]
+members: [视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2018865681843888129.json, 视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2041438667583004673.json, 视频生成/图生视频/wan2.2视频局部替换_2016758036848709633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_643
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1951139393090334722.json、视频生成/图生视频/2056763668582461441.json、视频生成/图生视频/1955612950611443714.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2018865681843888129.json、视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2041438667583004673.json、视频生成/图生视频/wan2.2视频局部替换_2016758036848709633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
+- `ImageToMask`
+- `ImpactFloat`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Text Multiline`
+- `MaskToImage`
+- `PreviewImage`
+- `SetNode`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncodeCached`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `WanVideoSetBlockSwap` —— 2/3 个有
-- `WanVideoSetLoRAs` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `Primitive integer [Crystools]` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `Wan22PromptSelector` —— 1/3 个有
-- `easy int` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `easy imageRemBg`
+- `easy imageSize`
+- `easy positive`
+- `easy seed`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_400
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.88375
-common_nodes: [LoadAudio, RunningHub SoulX-Singer Preprocess Pipeline, RunningHub SoulX-Singer Preprocessor, RunningHub SoulX-Singer SVS Loader, RunningHub SoulX-Singer SVS Processor, SaveAudio]
+coverage: 0.813167
+common_nodes: [FlashVSRNode, Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2023023039541153794.json, 音频生成/音频生成/SoulX-Singer 歌曲音色语种转换_2024649973459062785.json, 音频生成/音频生成/SoulX-Singer歌曲音色语种转换-用你的音色唱歌_2023764122608865282.json, 音频生成/音频生成/SoulX-Singer音乐翻唱大模型：一键复刻“良子”声音去唱歌！_2026575087943553025.json]
+members: [图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json, 图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json, 图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json, 图片生成/图生图/flashVSR图片高清放大_2067075698631729154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_400
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2023023039541153794.json、音频生成/音频生成/SoulX-Singer 歌曲音色语种转换_2024649973459062785.json、音频生成/音频生成/SoulX-Singer歌曲音色语种转换-用你的音色唱歌_2023764122608865282.json、音频生成/音频生成/SoulX-Singer音乐翻唱大模型：一键复刻“良子”声音去唱歌！_2026575087943553025.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json、图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json、图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub SoulX-Singer Preprocess Pipeline`
-- `RunningHub SoulX-Singer Preprocessor`
-- `RunningHub SoulX-Singer SVS Loader`
-- `RunningHub SoulX-Singer SVS Processor`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `FlashVSRNode`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/4 个有
+- `INTConstant` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `easy imageScaleDownToSize` —— 3/6 个有
+- `Int` —— 2/6 个有
 
 ## 典型参数
 

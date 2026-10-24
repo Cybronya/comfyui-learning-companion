@@ -1,56 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_96
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 10
+level: strong
+coverage: 0.9202
+common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux.2_Klein_9B文生图_2069068665672265729.json, 图片生成/文生图/Flux2 klein 直出不崩手基础流（文生图）_2018252380457930754.json, 图片生成/文生图/Flux2-Klein 极速文生图_2021569732054355969.json, 图片生成/文生图/Flux2-Klein-9B基础工作流_2012498111796613121.json, 图片生成/文生图/Flux2-Klein-9B基础工作流_2012504605866860545.json, 图片生成/文生图/Flux2文生图_1995379549791825922.json, 视频生成/文生视频/Flux.2 Klein 9B文生图_2066059765985406977.json]
+members: [图片生成/图生图/FLUX Fill 手部修复工作流_2040689200806236162.json, 图片生成/图生图/FLUX Fill 扩图工作流_2091470617185964033.json, 图片生成/图生图/FLUX-Fill极致自动重绘修手_1920650639141961729.json, 图片生成/图生图/FLUX-无痕迹扩图无缝扩图强力版_1931324361393766402.json, 图片生成/图生图/FLUX_Fill_手部修复工作流_2096405989913350146.json, 图片生成/图生图/FLUX_Fill_手部修复工作流_2096417130290962433.json, 图片生成/图生图/FLUX无缝扩图_1900359454850953218.json, 图片生成/图生图/FULX无缝扩图（超好用）_1922928971468652546.json, 图片生成/图生图/最新Flux完美修手，支持各种风格图片手部修复v4_1938792048067858433.json, 图片生成/图生图/超高质量无缝扩图_1936427082933243906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_96
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux.2_Klein_9B文生图_2069068665672265729.json、图片生成/文生图/Flux2 klein 直出不崩手基础流（文生图）_2018252380457930754.json、图片生成/文生图/Flux2-Klein 极速文生图_2021569732054355969.json、图片生成/文生图/Flux2-Klein-9B基础工作流_2012498111796613121.json、图片生成/文生图/Flux2-Klein-9B基础工作流_2012504605866860545.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX Fill 手部修复工作流_2040689200806236162.json、图片生成/图生图/FLUX Fill 扩图工作流_2091470617185964033.json、图片生成/图生图/FLUX-Fill极致自动重绘修手_1920650639141961729.json、图片生成/图生图/FLUX-无痕迹扩图无缝扩图强力版_1931324361393766402.json、图片生成/图生图/FLUX_Fill_手部修复工作流_2096405989913350146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSampler`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 5/7 个有
-- `Int` —— 4/7 个有
-- `BasicGuider` —— 3/7 个有
-- `ConditioningZeroOut` —— 3/7 个有
-- `FluxGuidance` —— 3/7 个有
-- `CompressImages` —— 2/7 个有
-- `Int Literal` —— 2/7 个有
-- `String Literal` —— 2/7 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/7 个有
-- `LayerUtility: PurgeVRAM` —— 1/7 个有
-- `WidthHeightPicker` —— 1/7 个有
+- `InpaintModelConditioning` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `ImagePadForOutpaint` —— 5/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
+- `ImageResize+` —— 4/10 个有
+- `Int` —— 4/10 个有
+- `LoraLoader` —— 4/10 个有
+- `RepeatLatentBatch` —— 4/10 个有
+- `easy hiresFix` —— 2/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `UltimateSDUpscale` —— 1/10 个有
+- `UpscaleModelLoader` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 15 - 28 | 10 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | normal | - | 10 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| LoRA 模型强度 | 1 | 0.85 - 1 | 4 | 93% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -58,4 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 15 - 28，10 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 normal，10 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 0.85 - 1，4 个样本，取值集中（一致性 93%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

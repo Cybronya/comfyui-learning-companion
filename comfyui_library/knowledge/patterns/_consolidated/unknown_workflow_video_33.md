@@ -3,35 +3,34 @@ name: unknown_workflow_video_33
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [CustomAddLabel, GetVideoComponents, LoadImage, SaveVideo, VHS_VideoCombine]
+coverage: 0.67925
+common_nodes: [GetVideoComponents, JjkText, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2048444271530876929.json, 视频生成/图生视频/2048451919458340866.json, 视频生成/图生视频/2037876485209460738.json, 视频生成/图生视频/2037736130350682114.json]
+members: [视频生成/图生视频/Happyhorse 1.0快乐小马 图生视频_2050840122270208002.json, 视频生成/图生视频/Happyhorse 1.0快乐小马 图生视频_2063858954236686337.json, 视频生成/图生视频/Happyhorse 1.0快乐小马 多图生视频_2063870917956165633.json, 视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-1.89元_秒_2062216350952677377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_33
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2048444271530876929.json、视频生成/图生视频/2048451919458340866.json、视频生成/图生视频/2037876485209460738.json、视频生成/图生视频/2037736130350682114.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Happyhorse 1.0快乐小马 图生视频_2050840122270208002.json、视频生成/图生视频/Happyhorse 1.0快乐小马 图生视频_2063858954236686337.json、视频生成/图生视频/Happyhorse 1.0快乐小马 多图生视频_2063870917956165633.json、视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-1.89元_秒_2062216350952677377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CustomAddLabel`
 - `GetVideoComponents`
+- `JjkText`
 - `LoadImage`
-- `SaveVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 3/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/4 个有
+- `RH_AlibabaHappyhorse10ReferenceToVideo` —— 3/4 个有
+- `RH_RhartVideoGOfficialReferenceToVideo` —— 1/4 个有
 
 ## 典型参数
 

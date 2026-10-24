@@ -3,79 +3,91 @@ name: text_to_image_video_lora_sampler_105
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.675857
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.849143
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/加速放大Minimax参考生视频图生视频高清采样工作流_2088400575028355073.json, 视频生成/图生视频/参考生视频加速放大｜Minimax图生视频工作流_2088379811487113218.json, 视频生成/图生视频/四步加速出片｜H3全能参考二采高清放大带Lora_2096538998759059458.json, 视频生成/文生视频/4步加速二采放大｜MinimaxH3全能参考三模视频_2094739286921928705.json, 视频生成/文生视频/MINIMAX H3多参二采2K直出官方API文生视频图生视频_2088208139706519553.json, 视频生成/文生视频/MinimaxH3全能参考二采高清放大｜4步加速生成_2094517725417787393.json, 视频生成/文生视频/漫剧工作流15秒直出｜Mini Max H3文生图生视频生视频_2088366199813001217.json]
+members: [视频生成/图生视频/MiniMax H3单人音频驱动数字人加SelfLite超高分2K高清工作流_2105707477986791426.json, 视频生成/图生视频/MiniMax H3双人音频驱动数字人加SelfLite超分高清工作流_2105705768849854465.json, 视频生成/图生视频/MiniMax H3双人音频驱动数字人视频生成处理工具_2100993902961577985.json, 视频生成/图生视频/SelfLite超高分2K直出 MiniMax H3单人音频驱动数字人高清工作流_2104823013219848194.json, 视频生成/图生视频/低显存也能跑的MiniMax H3视频生成 Ref多模态SelfLift节点采样直出2K超分_2104255063316324353.json, 视频生成/文生视频/Fl2V首尾帧生图加SelfLift采样 MiniMax H3低显存直出2K_2104359186711801858.json, 视频生成/文生视频/Fl2V首尾帧生图加SelfLift采样 MiniMax H3低显存直出2K_2104699110237491202.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_105
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/加速放大Minimax参考生视频图生视频高清采样工作流_2088400575028355073.json、视频生成/图生视频/参考生视频加速放大｜Minimax图生视频工作流_2088379811487113218.json、视频生成/图生视频/四步加速出片｜H3全能参考二采高清放大带Lora_2096538998759059458.json、视频生成/文生视频/4步加速二采放大｜MinimaxH3全能参考三模视频_2094739286921928705.json、视频生成/文生视频/MINIMAX H3多参二采2K直出官方API文生视频图生视频_2088208139706519553.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3单人音频驱动数字人加SelfLite超高分2K高清工作流_2105707477986791426.json、视频生成/图生视频/MiniMax H3双人音频驱动数字人加SelfLite超分高清工作流_2105705768849854465.json、视频生成/图生视频/MiniMax H3双人音频驱动数字人视频生成处理工具_2100993902961577985.json、视频生成/图生视频/SelfLite超高分2K直出 MiniMax H3单人音频驱动数字人高清工作流_2104823013219848194.json、视频生成/图生视频/低显存也能跑的MiniMax H3视频生成 Ref多模态SelfLift节点采样直出2K超分_2104255063316324353.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CR Prompt Text`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3AVDecodeT8` —— 6/7 个有
-- `VHS_LoadVideo` —— 6/7 个有
-- `CR Prompt Text` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `LoraLoaderBypassModelOnly` —— 5/7 个有
+- `Any Switch (rgthree)` —— 6/7 个有
+- `CR Text` —— 6/7 个有
+- `CR Text Concatenate` —— 6/7 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `ExtendIntermediateSigmas` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
+- `PlaySound|pysssss` —— 6/7 个有
+- `ShowText|pysssss` —— 6/7 个有
+- `llama_cpp_instruct_adv` —— 6/7 个有
+- `llama_cpp_model_loader` —— 6/7 个有
+- `llama_cpp_parameters` —— 6/7 个有
+- `LoadAudio` —— 5/7 个有
 - `MiniMaxH3ReferenceToVideo` —— 5/7 个有
-- `GetNode` —— 4/7 个有
-- `SetNode` —— 4/7 个有
-- `CreateVideo` —— 3/7 个有
-- `VAEEncodeAudio` —— 3/7 个有
-- `easy clearCacheAll` —— 3/7 个有
-- `ImpactConditionalBranch` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `MathExpression_UTK` —— 2/7 个有
-- `MiniMaxH3AudioConditioningT8` —— 2/7 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `RIFE VFI` —— 2/7 个有
-- `ResizeShortestToNode` —— 2/7 个有
-- `获取视频信息` —— 2/7 个有
-- `ModelAttentionBackend` —— 1/7 个有
-- `RH_MinimaxHailuoH3RegenerationMultimodalToVideo` —— 1/7 个有
-- `SaveVideo` —— 1/7 个有
-- `SigmasGraph` —— 1/7 个有
-- `VAEDecodeAudio` —— 1/7 个有
+- `RHLLMChatNode` —— 5/7 个有
+- `RHSettingsNode` —— 5/7 个有
+- `SaveImage` —— 5/7 个有
+- `SelfLiftAvatarH3Sampler` —— 5/7 个有
+- `easy cleanGpuUsed` —— 5/7 个有
+- `Fast Groups Muter (rgthree)` —— 4/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
+- `MathExpression|pysssss` —— 4/7 个有
+- `SoundFlow_GetLength` —— 4/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 4/7 个有
+- `AudioCrop` —— 3/7 个有
+- `ComfyMathExpression` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `VAEDecodeAudio` —— 3/7 个有
+- `AudioConcat` —— 2/7 个有
+- `EmptyAudio` —— 2/7 个有
+- `MiniMaxH3ImageToVideo` —— 2/7 个有
+- `PreviewAudio` —— 2/7 个有
+- `easy imageConcat` —— 2/7 个有
+- `AudioSeparation` —— 1/7 个有
+- `BasicGuider` —— 1/7 个有
+- `ImageBatchMulti` —— 1/7 个有
+- `RandomNoise` —— 1/7 个有
+- `SamplerCustomAdvanced` —— 1/7 个有
+- `SelfLiftH3Sampler` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `VRGDG_AudioCrop` —— 1/7 个有
 
 ## 典型参数
 
@@ -93,7 +105,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -104,4 +116,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/7 个样本）：Steps较低可能导致细节不足

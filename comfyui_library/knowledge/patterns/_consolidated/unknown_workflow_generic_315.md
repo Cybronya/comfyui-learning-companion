@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_315
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.6556
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, VHS_LoadVideo]
+coverage: 0.715
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/B站开源indexTTS2双人对话语音克隆_1965649371641561089.json, 音频生成/音频生成/B站开源indexTTS2语音克隆_1965620350593716225.json, 音频生成/音频生成/VibeVoice双人对话语音克隆_1964910094381105153.json, 音频生成/音频生成/indexTTS2语音克隆-带情绪控制_1966071378376126465.json, 音频生成/音频生成/indexTTS2语音克隆双人情绪控制_1966077542711070721.json]
+members: [图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2100136578931843074.json, 图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2101484241837191169.json, 图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2102213958852767746.json, 图片生成/图生图/G2.5 图生图 图像编辑sunburst_2097894315577139202.json, 图片生成/图生图/image2.5 图生图_2099771097632825345.json, 图片生成/图生图/image2.5全能编辑_2098751203986464769.json, 图片生成/图生图/全能图像局部重绘fast-4k_2039464094973038593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_315
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/B站开源indexTTS2双人对话语音克隆_1965649371641561089.json、音频生成/音频生成/B站开源indexTTS2语音克隆_1965620350593716225.json、音频生成/音频生成/VibeVoice双人对话语音克隆_1964910094381105153.json、音频生成/音频生成/indexTTS2语音克隆-带情绪控制_1966071378376126465.json、音频生成/音频生成/indexTTS2语音克隆双人情绪控制_1966077542711070721.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2100136578931843074.json、图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2101484241837191169.json、图片生成/图生图/AI换装丨全能图片G2.5丨双图服装替换_2102213958852767746.json、图片生成/图生图/G2.5 图生图 图像编辑sunburst_2097894315577139202.json、图片生成/图生图/image2.5 图生图_2099771097632825345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `SaveAudio`
-- `VHS_LoadVideo`
+全部 7 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 4/5 个有
-- `VibeVoiceTTS` —— 1/5 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `JjkText` —— 5/7 个有
+- `PreviewImage` —— 2/7 个有
+- `FillMaskWithColor` —— 1/7 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/7 个有
 
 ## 典型参数
 

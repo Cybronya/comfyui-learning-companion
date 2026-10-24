@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_101
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.568643
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2048774252291170306.json, 视频生成/图生视频/2048976027916967937.json, 视频生成/图生视频/2050538420602195970.json, 视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json, 视频生成/图生视频/2048700129443581953.json, 视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json, 视频生成/文生视频/Happyhorse_I2V 快乐马_图生视频_2048669199937048577.json, 视频生成/文生视频/SDM-图+脚本生视频_2061983483773407233.json, 视频生成/文生视频/happyhores图片视频_2063141843059175426.json]
+members: [图片生成/图生图/(贞贞AI工坊)全能视频V3.1 双图参考图生视频Pro版（基准0.3元_8S）_1980579384295903234.json, 视频生成/图生视频/(90%稳定版-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选sxxx-vip)_2034670975614193666.json, 视频生成/图生视频/(Ai贞贞工坊版)全能视频S Pro 25S新图生视频V1（可选横竖屏频-基准价格1.7元）_1977807207951728641.json, 视频生成/图生视频/(Ai贞贞工坊版)全能视频S 普通版15S新图生视频V1（可选横竖屏频-基准价格0.1元）_1979417427316477953.json, 视频生成/图生视频/(宽松审核)全能视频V3.1 Lite多参生视频（贞贞工坊-备用分组1）_2045803250208739330.json, 视频生成/图生视频/(新版0.1积分-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选default)_2036008151446724610.json, 视频生成/图生视频/(稳定版-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选sxxx-vip)_2045808720227082242.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 双图参考图生视频特价版（基准0.3_8S）_1980575345395060738.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 首尾帧视频特价版（基准0.3_8S）_1980581502599741442.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1图生视频特价版（基准0.3_8S）_1980566479743664129.json, 视频生成/图生视频/世界最强图生视频全能视频V3 v3特价版（基准价格1.5元_次）_1946030532021153794.json, 视频生成/图生视频/世界最强图生视频全能视频V3 v3（基准价格1.5元_次）_1944929553569730561.json, 视频生成/文生视频/世界最强图生视频全能视频V3 v5 版（基准价格1.5元_次）_1942486518382661633.json, 视频生成/文生视频/世界最强文生视频全能视频V3 v3（基准价格1.5元_次）_1942436897685712898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_101
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/2048774252291170306.json、视频生成/图生视频/2048976027916967937.json、视频生成/图生视频/2050538420602195970.json、视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json、视频生成/图生视频/2048700129443581953.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/(贞贞AI工坊)全能视频V3.1 双图参考图生视频Pro版（基准0.3元_8S）_1980579384295903234.json、视频生成/图生视频/(90%稳定版-支持真人)全能视频S新图生视频V1(贞贞工坊-令牌分组选sxxx-vip)_2034670975614193666.json、视频生成/图生视频/(Ai贞贞工坊版)全能视频S Pro 25S新图生视频V1（可选横竖屏频-基准价格1.7元）_1977807207951728641.json、视频生成/图生视频/(Ai贞贞工坊版)全能视频S 普通版15S新图生视频V1（可选横竖屏频-基准价格0.1元）_1979417427316477953.json、视频生成/图生视频/(宽松审核)全能视频V3.1 Lite多参生视频（贞贞工坊-备用分组1）_2045803250208739330.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
 - `LoadImage`
 - `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaHappyhorse10ImageToVideo` —— 8/9 个有
-- `SaveImage` —— 2/9 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/9 个有
+- `Comfly_Googel_Veo3` —— 9/14 个有
+- `SaveImage` —— 9/14 个有
+- `Comfly_sora2` —— 5/14 个有
+- `ShellAgentPluginOutputText` —— 4/14 个有
+- `Comfly_Googel_Veo3_Lite` —— 1/14 个有
+- `ImageConcatMulti` —— 1/14 个有
 
 ## 典型参数
 

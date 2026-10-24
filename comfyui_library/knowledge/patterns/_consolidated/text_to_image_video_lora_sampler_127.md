@@ -3,17 +3,17 @@ name: text_to_image_video_lora_sampler_127
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8982
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8962
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, EmptyMiniMaxH3LatentAV, ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3多参分镜硬控流，空间人物一致性分镜制作短剧漫剧图生视频_2103531675861995521.json, 视频生成/图生视频/MiniMax H3多参短剧批量专用90角色场景道具视频处理工具_2101729336322781185.json, 视频生成/图生视频/Minimax H3冻结时间360环绕｜首尾画面循环闭环｜HyperFlow 8步LoRA加持_2104830891699822594.json, 视频生成/图生视频/Minimax H3多参单图版注意力再加速工作流，图生视频高效处理方案_2107945151611105282.json, 视频生成/图生视频/minimax_h3多参单图版注意力再加速｜批量出片提速实测有感_2111284144385908737.json]
+members: [图片生成/图生图/H3纹理增强 视频细节纹理清晰度提升 画质优化处理_2099563913955336194.json, 图片生成/图生图/H3纹理增强视频超分 视频细节纹理清晰度提升_2099214022326444033.json, 视频生成/图生视频/H3_LMS视频高清修复_视频超分处理工具_2100423960998535170.json, 视频生成/图生视频/H3高清质感修复 视频画质增强处理生成工具_2099935023137910785.json, 视频生成/图生视频/H3高清质感修复_视频画质增强处理生成工具_2100513015132151810.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_127
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3多参分镜硬控流，空间人物一致性分镜制作短剧漫剧图生视频_2103531675861995521.json、视频生成/图生视频/MiniMax H3多参短剧批量专用90角色场景道具视频处理工具_2101729336322781185.json、视频生成/图生视频/Minimax H3冻结时间360环绕｜首尾画面循环闭环｜HyperFlow 8步LoRA加持_2104830891699822594.json、视频生成/图生视频/Minimax H3多参单图版注意力再加速工作流，图生视频高效处理方案_2107945151611105282.json、视频生成/图生视频/minimax_h3多参单图版注意力再加速｜批量出片提速实测有感_2111284144385908737.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/H3纹理增强 视频细节纹理清晰度提升 画质优化处理_2099563913955336194.json、图片生成/图生图/H3纹理增强视频超分 视频细节纹理清晰度提升_2099214022326444033.json、视频生成/图生视频/H3_LMS视频高清修复_视频超分处理工具_2100423960998535170.json、视频生成/图生视频/H3高清质感修复 视频画质增强处理生成工具_2099935023137910785.json、视频生成/图生视频/H3高清质感修复_视频画质增强处理生成工具_2100513015132151810.json）
 
 - **类型**：Text To Image
 - **样本数**：5
@@ -23,50 +23,50 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
+- `EmptyMiniMaxH3LatentAV`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `MiniMaxLowVRAMAttention` —— 4/5 个有
+- `ComfyMathExpression` —— 4/5 个有
+- `ComfyNumberConvert` —— 4/5 个有
 - `ModelPreviewOverrideKJ` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `BasicScheduler` —— 3/5 个有
-- `ManualSigmas` —— 3/5 个有
-- `SaveImage` —— 3/5 个有
-- `MiniMaxChunkFeedForward` —— 2/5 个有
-- `MiniMaxH3AudioConditioningT8` —— 2/5 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 2/5 个有
-- `SolAttnPatch` —— 2/5 个有
-- `ki_MiniMaxH3ReferenceToVideo` —— 2/5 个有
-- `ExtendIntermediateSigmas` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `MiniMaxH3ImageToVideo` —— 1/5 个有
-- `MiniMaxH3TurboSampler` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `ki_宫格拼图高阶版` —— 1/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `PreviewAny` —— 3/5 个有
+- `孤海注释` —— 3/5 个有
+- `EmptyImage` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
+- `SolAttnMiniMax` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,63 +3,64 @@ name: unknown_workflow_video_lora_sampler_569
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.83
-common_nodes: [CR Text, DWPreprocessor, Fast Groups Muter (rgthree), GetImageSizeAndCount, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM V2, LoadImage, LoadLynxResampler, LoadWanVideoT5TextEncoder, LynxEncodeFaceIP, LynxInsightFaceCrop, PrimitiveString, RHHiddenNodes, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy clearCacheAll, easy showAnything]
+coverage: 0.901
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
 problems: []
-missing: [CR Text, LayerUtility: PurgeVRAM V2, SimpleMath+, easy anythingIndexSwitch, easy clearCacheAll]
-members: [图片生成/文生图/1985589432625639425.json, 视频生成/图生视频/1976558909701885953.json, 视频生成/图生视频/2053000425640611842.json]
+missing: []
+members: [图片生成/图生图/纯种WAN2.2以图洗图(文字版Redux)_1953709934967967746.json, 图片生成/图生图/纯种WAN2.2洗图(秒杀Krea)_1938145100054577154.json, 图片生成/文生图/Wan2.2反推文生图_1973082031938736129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_569
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1985589432625639425.json、视频生成/图生视频/1976558909701885953.json、视频生成/图生视频/2053000425640611842.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/纯种WAN2.2以图洗图(文字版Redux)_1953709934967967746.json、图片生成/图生图/纯种WAN2.2洗图(秒杀Krea)_1938145100054577154.json、图片生成/文生图/Wan2.2反推文生图_1973082031938736129.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `DWPreprocessor`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
+- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DisableNoise`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadLynxResampler`
-- `LoadWanVideoT5TextEncoder`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `PrimitiveString`
-- `RHHiddenNodes`
-- `SimpleMath+`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoAddLynxEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExtraModelSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy clearCacheAll`
-- `easy showAnything`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `RH_Captioner`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `WanVideoNAG`
+
+**可变部分**（部分 workflow 才有）：
+- `PreviewImage` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `VAEEncode` —— 2/3 个有
+- `EmptyLatentImage` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageMirror` —— 1/3 个有
+- `ImageResize` —— 1/3 个有
+- `SeedVR2` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768 | - | 1 | 100% |
+| 高度 | 1152 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -67,4 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: PurgeVRAM V2、SimpleMath+、easy anythingIndexSwitch、easy clearCacheAll
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,61 +1,60 @@
 ---
 name: unknown_workflow_lora_sampler_clip_79
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.841
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.846
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FramePackLoraSelect, FramePackSingleFrameSampler, LoadFramePackModel, LoadImage, PreviewImage, SaveImage, VAEDecodeTiled, VAEEncode, VAELoader]
 problems: []
-missing: [CR String To Combo, Primitive string [Crystools], Text Multiline]
-members: [图片生成/文生图/1952911676233478146.json, 图片生成/文生图/1955200823770976258.json, 图片生成/文生图/游戏道具工具箱工作流_1992976015037235201.json, 图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json]
+missing: []
+members: [图片生成/图生图/TG_art姿势迁移_1974973230664560642.json, 图片生成/图生图/framepack 姿势迁移_1953751001843073025.json, 图片生成/图生图/framepack 姿势迁移_1954710027120590850.json, 图片生成/图生图/创艺姿势工作流_1958018520103661570.json, 图片生成/图生图/动作迁移（卡通类）_1957148113146404866.json, 图片生成/图生图/姿势迁移终结者_1958447750033653762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_79
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/1952911676233478146.json、图片生成/文生图/1955200823770976258.json、图片生成/文生图/游戏道具工具箱工作流_1992976015037235201.json、图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/TG_art姿势迁移_1974973230664560642.json、图片生成/图生图/framepack 姿势迁移_1953751001843073025.json、图片生成/图生图/framepack 姿势迁移_1954710027120590850.json、图片生成/图生图/创艺姿势工作流_1958018520103661570.json、图片生成/图生图/动作迁移（卡通类）_1957148113146404866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `LoraLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `FramePackLoraSelect`
+- `FramePackSingleFrameSampler`
+- `LoadFramePackModel`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxResolutionNode` —— 3/4 个有
-- `JjkText` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `TextCombinerTwo` —— 3/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `CR String To Combo` —— 1/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `Primitive string [Crystools]` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
+- `ConditioningZeroOut` —— 4/6 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `Image Comparer (rgthree)` —— 3/6 个有
+- `FramePackFindNearestBucket` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `Seed (rgthree)` —— 2/6 个有
+- `Checkpoint Loader` —— 1/6 个有
+- `GetImageSize` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `UltimateSDUpscale` —— 1/6 个有
+- `UpscaleModelLoader` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1280 | 1280 - 1536 | 4 | 92% |
-| LoRA 模型强度 | 1 | 0.45 - 1 | 4 | 72% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，观测区间 1280 - 1536，4 个样本，取值集中（一致性 92%）
-- LoRA 模型强度 中位数 1，观测区间 0.45 - 1，4 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR String To Combo、Primitive string [Crystools]、Text Multiline
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

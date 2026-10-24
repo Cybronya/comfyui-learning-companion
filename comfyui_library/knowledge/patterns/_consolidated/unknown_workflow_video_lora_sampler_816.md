@@ -3,55 +3,61 @@ name: unknown_workflow_video_lora_sampler_816
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9275
-common_nodes: [CreateCFGScheduleFloatList, Display Any (rgthree), INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy globalSeed]
+coverage: 0.678
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1965423072939491330.json, 视频生成/图生视频/1950109940024262657.json]
+members: [视频生成/图生视频/WanAnimate 姿势参考（KJ版）_1969999696024510466.json, 视频生成/图生视频/wan2.2Animate美女跳舞工作流_2033057095406329858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_816
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1965423072939491330.json、视频生成/图生视频/1950109940024262657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate 姿势参考（KJ版）_1969999696024510466.json、视频生成/图生视频/wan2.2Animate美女跳舞工作流_2033057095406329858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `INTConstant`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy globalSeed`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `MathExpression_UTK` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Wan22PromptSelector` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoLoraSelectMulti` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
+- `Anything Everywhere3` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PixelPerfectResolution` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `WanVideoSetLoRAs` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
 
 ## 典型参数

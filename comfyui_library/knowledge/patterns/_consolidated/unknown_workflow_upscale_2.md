@@ -1,39 +1,41 @@
 ---
 name: unknown_workflow_upscale_2
 type: Unknown Workflow
-frequency: 5
+frequency: 10
 level: moderate
-coverage: 0.703
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, VOSR2ModelLoader, VOSR2Upscale]
+coverage: 0.9909
+common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, UpscaleModelLoader]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/图生图/2097239382121078785.json, 图片生成/图生图/2102213109866909697.json, 图片生成/图生图/2102323097541107714.json, 数字人/数字人/图像无损高清放大 - Vosr2_2097147455497400321.json, 数字人/数字人/图像高清放大  Vosr 2_2097144545875161090.json]
+missing: []
+members: [图片生成/图生图/全能图片V1-电商白底图换背景_1966775584833613825.json, 图片生成/图生图/全能图片V1-线稿上色_1966149405520949249.json, 图片生成/图生图/全能图片V1-老照片修复_1966124757429161986.json, 图片生成/图生图/全能图片V1-虚拟试衣_1966757934581624833.json, 图片生成/图生图/全能图片V1-角色周边设计_1968687391248666626.json, 图片生成/图生图/全能图片V1-设计稿样机效果_1966754869824696321.json, 图片生成/图生图/全能图片V1-针织玩偶_1966144631845154818.json, 图片生成/图生图/全能图片V1-风格化贴纸_1966140323560853505.json, 图片生成/图生图/全能图片V1-黑白图片上色_1966131468915437569.json, 图片生成/文生图/全能图片V1 深度图控制_1966877036839100418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_2
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2097239382121078785.json、图片生成/图生图/2102213109866909697.json、图片生成/图生图/2102323097541107714.json、数字人/数字人/图像无损高清放大 - Vosr2_2097147455497400321.json、数字人/数字人/图像高清放大  Vosr 2_2097144545875161090.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图片V1-电商白底图换背景_1966775584833613825.json、图片生成/图生图/全能图片V1-线稿上色_1966149405520949249.json、图片生成/图生图/全能图片V1-老照片修复_1966124757429161986.json、图片生成/图生图/全能图片V1-虚拟试衣_1966757934581624833.json、图片生成/图生图/全能图片V1-角色周边设计_1968687391248666626.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 10 个 workflow 都包含：
+- `ImageUpscaleWithModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
+- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
+- `CR Text` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `workflow>Depth` —— 1/10 个有
+- `workflow>提示词` —— 1/10 个有
 
 ## 典型参数
 
@@ -45,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

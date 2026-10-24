@@ -1,60 +1,58 @@
 ---
 name: unknown_workflow_lora_sampler_clip_64
 type: Unknown Workflow
-frequency: 6
-level: weak
-coverage: 0.954167
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.695429
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1963965754733416450.json, 视频生成/图生视频/1956634658516471809.json, 视频生成/图生视频/1967787388695097345.json, 视频生成/文生视频/wan2.2+GGUF+light4步加速lora图生视频工作流_1995845028314505218.json, 视频生成/文生视频/wan2.2视频工作流_2013120474653401089.json, 视频生成/文生视频/1950558909717204993.json]
+members: [图片生成/文生图/bernini_宝藏模型_T2I 文生图_2066848208415969281.json, 视频生成/图生视频/Bernini 三图参考生视频_2082419589669015553.json, 视频生成/图生视频/Bernini 双图参考生视频_2082414642227404801.json, 视频生成/图生视频/Bernini 图生视频_2080281287134367745.json, 视频生成/图生视频/Bernini_宝藏模型_参考生视频_2066854228743778305.json, 视频生成/图生视频/Bernini_宝藏模型_视频编辑+参考图_2066854283353612289.json, 视频生成/文生视频/Bernini 文生视频_2082360670233911297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_64
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1963965754733416450.json、视频生成/图生视频/1956634658516471809.json、视频生成/图生视频/1967787388695097345.json、视频生成/文生视频/wan2.2+GGUF+light4步加速lora图生视频工作流_1995845028314505218.json、视频生成/文生视频/wan2.2视频工作流_2013120474653401089.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/bernini_宝藏模型_T2I 文生图_2066848208415969281.json、视频生成/图生视频/Bernini 三图参考生视频_2082419589669015553.json、视频生成/图生视频/Bernini 双图参考生视频_2082414642227404801.json、视频生成/图生视频/Bernini 图生视频_2080281287134367745.json、视频生成/图生视频/Bernini_宝藏模型_参考生视频_2066854228743778305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `SamplerCustom`
+- `SplitSigmas`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 5/6 个有
-- `UNETLoader` —— 5/6 个有
-- `WanImageToVideo` —— 5/6 个有
-- `SaveVideo` —— 4/6 个有
-- `VHS_VideoCombine` —— 4/6 个有
-- `UnetLoaderGGUF` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `RIFE VFI` —— 2/6 个有
-- `FlashVSRNode` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `WanFunInpaintToVideo` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `SimpleComparison+` —— 6/7 个有
+- `VHS_VideoCombine` —— 6/7 个有
+- `easy ifElse` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `ComfySwitchNode` —— 3/7 个有
+- `PrimitiveBoolean` —— 3/7 个有
+- `PrimitiveFloat` —— 3/7 个有
+- `BatchImagesNode` —— 2/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 67% |
-| Prompt 约束强度(CFG) | 4 | 4 - 12 | 6 | 48% |
-| 采样算法 | 1 | 1 - 3.5 | 6 | 36% |
-| 调度器 | euler | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,8 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 12，6 个样本，取值分散，一致性仅 48%
-- 采样算法 中位数 1，观测区间 1 - 3.5，6 个样本，取值分散，一致性仅 36%
-- 调度器 最常用 euler，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

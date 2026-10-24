@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_sampler_41
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [Kimodo_ExportBVH, Kimodo_LoadModel, Kimodo_Preview, Kimodo_Preview3D, Kimodo_Sampler, Kimodo_SaveNPZ, Kimodo_TextEncode, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.92475
+common_nodes: [ImageConcatMulti, LoadImage, RunningHub XVerse Pipeline Loader, RunningHub XVerse Sampler, SaveImage, Text Multiline, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/文生图/kimodo-basic_2067452656217579521.json, 视频生成/文生视频/kimodo-basic_2065975919554162690.json]
+members: [图片生成/图生图/任意男女合影_字节XVerse多主题一致性_1944543533074141186.json, 图片生成/图生图/单物一致性_字节XVerse多主题一致性_1943974592962527233.json, 图片生成/图生图/多人物一致性_字节XVerse多主题一致性_1943729955022966786.json, 图片生成/图生图/服装一致性_字节XVerse多人物一致性_1943740467731369986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_41
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/kimodo-basic_2067452656217579521.json、视频生成/文生视频/kimodo-basic_2065975919554162690.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/任意男女合影_字节XVerse多主题一致性_1944543533074141186.json、图片生成/图生图/单物一致性_字节XVerse多主题一致性_1943974592962527233.json、图片生成/图生图/多人物一致性_字节XVerse多主题一致性_1943729955022966786.json、图片生成/图生图/服装一致性_字节XVerse多人物一致性_1943740467731369986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Kimodo_ExportBVH`
-- `Kimodo_LoadModel`
-- `Kimodo_Preview`
-- `Kimodo_Preview3D`
-- `Kimodo_Sampler`
-- `Kimodo_SaveNPZ`
-- `Kimodo_TextEncode`
+全部 4 个 workflow 都包含：
+- `ImageConcatMulti`
+- `LoadImage`
+- `RunningHub XVerse Pipeline Loader`
+- `RunningHub XVerse Sampler`
 - `SaveImage`
+- `Text Multiline`
+- `easy imageRemBg`
+
+**可变部分**（部分 workflow 才有）：
+- `CropFace` —— 3/4 个有
+- `LayerMask: PersonMaskUltra V2` —— 3/4 个有
+- `LayerUtility: CropByMask V2` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 
@@ -42,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

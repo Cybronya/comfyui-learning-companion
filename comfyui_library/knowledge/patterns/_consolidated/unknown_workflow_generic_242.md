@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_242
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.837333
-common_nodes: [LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.916667
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json, 音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json, 音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json, 音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json, 音频生成/音频生成/【遇见AI】SoulX-Podcast语音模型，支持方言_2052998915368210433.json]
+members: [视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s 声音镜头语言三者直出_2019656438204866562.json, 视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出 声音镜头语言三者齐发 精准对口型 图生视频_2031540056296529922.json, 视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出-多模态图生视频_2019461685509103617.json, 视频生成/图生视频/ViduQ3-Pro图生视频(RH版）_2054440031959429121.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2018248554401239042.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2020042971273498625.json, 视频生成/图生视频/ViduQ3-Pro图生视频_2054482014081961986.json, "视频生成/图生视频/ViduQ3-Pro图生视频（支持2k,1080p）_2018301447317757954.json", 视频生成/文生视频/Seedance2.5 文生视频工作流+全节点注释_2085924053302464514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_242
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast_ 支持方言，支持多人语音_1984518709706440706.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1984300119774347265.json、音频生成/音频生成/SoulX-Podcast情绪表达+方言（四川话_河南话_粤语）_1986355302746517505.json、音频生成/音频生成/SoulX-Podcast方言声音克隆（支持四川话，河南话，粤语）_1984865883585658881.json、音频生成/音频生成/SoulX-Podcast方言语音克隆生成_1985867114500239362.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s 声音镜头语言三者直出_2019656438204866562.json、视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出 声音镜头语言三者齐发 精准对口型 图生视频_2031540056296529922.json、视频生成/图生视频/Vidu Q3 Pro AI漫剧短剧影视16s音视频直出-多模态图生视频_2019461685509103617.json、视频生成/图生视频/ViduQ3-Pro图生视频(RH版）_2054440031959429121.json、视频生成/图生视频/ViduQ3-Pro图生视频_2018248554401239042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `Text Multiline` —— 4/6 个有
-- `LoadImage` —— 3/6 个有
-- `SaveAudio` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `RH_ViduQ3_Image2Video` —— 8/9 个有
+- `CR Text` —— 3/9 个有
+- `JjkText` —— 2/9 个有
+- `RH_BytedanceSeedance25TokenTextToVideo` —— 1/9 个有
 
 ## 典型参数
 

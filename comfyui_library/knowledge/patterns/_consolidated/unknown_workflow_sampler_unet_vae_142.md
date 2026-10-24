@@ -1,73 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_142
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.840667
-common_nodes: [CLIPLoader, CR Prompt Text, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, Float, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 7
+level: moderate
+coverage: 0.829143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ImageFromBatch, ImageStitch, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, StringConcatenate, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/MiniMax Music音乐生成-自动提示词_2088510242186416129.json, 音频生成/音频生成/MiniMax Music音乐生成_2088133517992620034.json, 音频生成/音频生成/MiniMax Music音乐生成_2088219988443357186.json, 音频生成/音频生成/MiniMax Music音乐生成_2088243433164075009.json, 音频生成/音频生成/MiniMax Music音乐生成_2088329185046654978.json, 音频生成/音频生成/MiniMax Music音乐生成_2088620802592825345.json]
+members: [图片生成/图生图/MinimaxH3 角色六视图（自动版）_2090089945036845057.json, 图片生成/图生图/MinimaxH3 角色四视图（自动版）_2090070169673621506.json, 图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2096867791893778433.json, 图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2097159652462125058.json, 视频生成/图生视频/Minimax H3 生成场景 8 视图（可以场景中某物为中心）_2092374389412155393.json, 视频生成/图生视频/Minimax H3 生成角色 6 视图 + 360°旋转+人脸特写 视频_2092354483618672642.json, 视频生成/图生视频/【老金驿站】MinimaxH3生成人物三视图工作流_2089550852343291906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_142
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music音乐生成-自动提示词_2088510242186416129.json、音频生成/音频生成/MiniMax Music音乐生成_2088133517992620034.json、音频生成/音频生成/MiniMax Music音乐生成_2088219988443357186.json、音频生成/音频生成/MiniMax Music音乐生成_2088243433164075009.json、音频生成/音频生成/MiniMax Music音乐生成_2088329185046654978.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/MinimaxH3 角色六视图（自动版）_2090089945036845057.json、图片生成/图生图/MinimaxH3 角色四视图（自动版）_2090070169673621506.json、图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2096867791893778433.json、图片生成/图生图/Minimax_H3_生成场景_8_视图可以场景中某物为中心_2097159652462125058.json、视频生成/图生视频/Minimax H3 生成场景 8 视图（可以场景中某物为中心）_2092374389412155393.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `Float`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `ImageFromBatch`
+- `ImageStitch`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `StringConcatenate`
 - `UNETLoader`
-- `VAEDecodeAudio`
-- `VAEDecodeAudioTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTextConcatenate` —— 1/6 个有
-- `RH_LLMAPI_NODE` —— 1/6 个有
-- `RH_Utils` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
-- `TextConcatenator` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `MiniMaxChunkFeedForward` —— 4/7 个有
+- `ModelAttentionBackend` —— 4/7 个有
+- `ModelPatchTorchSettings` —— 4/7 个有
+- `ResolutionSelector` —— 4/7 个有
+- `BatchImagesNode` —— 3/7 个有
+- `MiniMaxH3SigmaShift` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `CreateVideo` —— 2/7 个有
+- `LTX_lora_loader` —— 2/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `PreviewAny` —— 2/7 个有
+- `RHLLMChatNode` —— 2/7 个有
+- `SaveVideo` —— 2/7 个有
+- `AILab_QwenVL` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 32 | 6 | 98% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 32，6 个样本，取值集中（一致性 98%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

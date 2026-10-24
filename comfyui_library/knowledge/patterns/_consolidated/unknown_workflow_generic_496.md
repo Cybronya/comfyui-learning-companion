@@ -1,36 +1,34 @@
 ---
 name: unknown_workflow_generic_496
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.819333
-common_nodes: [LoadAudio, LoadImage, RecordAudio, SaveVideo]
+coverage: 0.8688
+common_nodes: [AIO_Preprocessor, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_ltx2_3_ia2v.json, comfyui-workflow-templates-json/video_ltx2_3_id_lora.json, 视频生成/图生视频/2009223802286247937.json]
+members: [图片生成/图生图/AUX-Preprocessor_2068683667567890433.json, 图片生成/图生图/【CQ808】深度图生成_2054508777520549890.json, 图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054415809010774018.json, 图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054428621338619905.json, 图片生成/图生图/生成线稿工作流_1973003798635483138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_496
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_ltx2_3_ia2v.json、comfyui-workflow-templates-json/video_ltx2_3_id_lora.json、视频生成/图生视频/2009223802286247937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/AUX-Preprocessor_2068683667567890433.json、图片生成/图生图/【CQ808】深度图生成_2054508777520549890.json、图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054415809010774018.json、图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054428621338619905.json、图片生成/图生图/生成线稿工作流_1973003798635483138.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
+全部 5 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `LoadImage`
-- `RecordAudio`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `98ee9e5b-467b-40aa-a534-36033f27d0b4` —— 2/3 个有
-- `RH_Wan26_I2V` —— 1/3 个有
+- `MakeListNode` —— 2/5 个有
 
 ## 典型参数
 

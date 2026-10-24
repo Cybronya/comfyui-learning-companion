@@ -1,67 +1,76 @@
 ---
 name: unknown_workflow_clip_unet_vae_7
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: weak
-coverage: 0.956167
-common_nodes: [CLIPLoader, CLIPTextEncode, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.746667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, PreviewAny, SaveImage, StringReplace, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图Flux2-Klein_2080293479414059009.json, 图片生成/文生图/文生图工作流购买的1 (1)_2045309169393209345.json, 图片生成/文生图/文生图工作流购买的1 (1)_2068998152438501378.json, 图片生成/文生图/文生图片工作流_2056608192112713729.json, 图片生成/文生图/文生图（新）_2007073715049205761.json, 图片生成/文生图/文生图（自定义lora版）Z-image-base_2018558734011736066.json]
+members: [图片生成/文生图/ERNIE-Image-turbo 文生图_2044607804283035649.json, 图片生成/文生图/Ernie Turbo文生图自动提示词优化极速版V1_2044590644466814977.json, 图片生成/文生图/Ernie Turbo文生图自动提示词优化极速版V1_2046109277659602945.json, 图片生成/文生图/Ernie-Image-8步快速出图_2046183724303261698.json, 图片生成/文生图/Ernie_image_base-目前最好的开源文生图模型_2045741550596005889.json, 图片生成/文生图/Ernie_image_turbo+base-目前最好的开源文生图模型_2045748751431634945.json, 图片生成/文生图/Ernie_image_turbo-目前最好的开源文生图模型_2045716280753262593.json, 图片生成/文生图/本地部署ERNIE-Image模型：24G 显存可跑，8 步快速出图！_2044965223928438786.json, 图片生成/文生图/百度官方工作流ernie_image_turbo_2044767600005095425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_unet_vae_7
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/文生图Flux2-Klein_2080293479414059009.json、图片生成/文生图/文生图工作流购买的1 (1)_2045309169393209345.json、图片生成/文生图/文生图工作流购买的1 (1)_2068998152438501378.json、图片生成/文生图/文生图片工作流_2056608192112713729.json、图片生成/文生图/文生图（新）_2007073715049205761.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/ERNIE-Image-turbo 文生图_2044607804283035649.json、图片生成/文生图/Ernie Turbo文生图自动提示词优化极速版V1_2044590644466814977.json、图片生成/文生图/Ernie Turbo文生图自动提示词优化极速版V1_2046109277659602945.json、图片生成/文生图/Ernie-Image-8步快速出图_2046183724303261698.json、图片生成/文生图/Ernie_image_base-目前最好的开源文生图模型_2045741550596005889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
+- `PreviewAny`
 - `SaveImage`
+- `StringReplace`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/6 个有
-- `EmptySD3LatentImage` —— 5/6 个有
-- `KSampler` —— 5/6 个有
-- `ModelSamplingAuraFlow` —— 5/6 个有
-- `CR Text Concatenate` —— 1/6 个有
-- `EmptyFlux2LatentImage` —— 1/6 个有
-- `KSamplerAdvanced` —— 1/6 个有
-- `LoraLoaderModelOnly` —— 1/6 个有
-- `TTResolutionSelector` —— 1/6 个有
+- `ComfySwitchNode` —— 8/9 个有
+- `KSampler` —— 8/9 个有
+- `PrimitiveBoolean` —— 8/9 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `ConditioningZeroOut` —— 6/9 个有
+- `CustomAddLabel` —— 3/9 个有
+- `Int` —— 3/9 个有
+- `TTResolutionSelector` —— 3/9 个有
+- `LoadImage` —— 2/9 个有
+- `KSamplerAdvanced` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `Text` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 6 - 50 | 5 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 10 | 6 | 0% |
-| 采样算法 | euler | - | 6 | 67% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 8 - 50 | 8 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 20 | 9 | 0% |
+| 采样算法 | euler | - | 9 | 78% |
+| 调度器 | simple | - | 9 | 78% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 50，5 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 10，6 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，6 个样本，一致性 67%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（4/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 50，8 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 20，9 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，9 个样本，一致性 78%
+- 调度器 最常用 simple，9 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 高发问题（7/9 个样本）：Steps较低可能导致细节不足

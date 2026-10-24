@@ -1,78 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_vae_5
 type: Unknown Workflow
-frequency: 35
+frequency: 27
 level: moderate
-coverage: 0.909343
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Float to Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_GetAudioDuration, SimpleMath+, SoundFlow_TrimAudio, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.874815
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [图片生成/文生图/AI数字人丨Wan2.1＋InfiniteTalk丨唱歌口播对口型_2106753593184448513.json, 数字人/数字人/AI唱歌数字人对口型RCM+Infinite Talk_2109985103735775234.json, 数字人/数字人/数字人对口型_2087384580251807745.json, 数字人/数字人/数字人对口型_2087385028354461697.json, 视频生成/图生视频/2066049349972484098.json, 视频生成/图生视频/2046497019107221506.json, 视频生成/图生视频/AI唱歌数字人对口型-人工智能张老师_2093717947696107521.json, 视频生成/图生视频/2041701789799555073.json, 视频生成/图生视频/2054467615631912961.json, 视频生成/图生视频/2060250149485629442.json, 视频生成/图生视频/2060356789228625921.json, 视频生成/图生视频/2076576794844680193.json, 视频生成/图生视频/2078042019120902145.json, 视频生成/图生视频/2060733218973900801.json, 视频生成/图生视频/2062723504071602177.json, 视频生成/图生视频/2064902612809502721.json, 视频生成/图生视频/2059919320528019457.json, 视频生成/图生视频/2059936787375677442.json, 视频生成/图生视频/2063675383731544066.json, 视频生成/图生视频/2000226735763451906.json, 视频生成/图生视频/2045049990501896193.json, 视频生成/图生视频/2045777490832003074.json, 视频生成/图生视频/2045808059871666177.json, 视频生成/图生视频/2045510022171463681.json, 视频生成/图生视频/2048068082077274113.json, 视频生成/图生视频/2058752786099171329.json, 视频生成/图生视频/2045511532481613825.json, 视频生成/图生视频/1958033370196357121.json, 视频生成/图生视频/2038448091229065217.json, 视频生成/图生视频/2045503009345507330.json, 视频生成/图生视频/2020512883326586881.json, 视频生成/图生视频/2027651848353615874.json, 视频生成/图生视频/1993682109309059073.json, 视频生成/图生视频/2005895609095782402.json, 视频生成/图生视频/2004571944911601665.json]
+members: [数字人/数字人/minimaxH3动态数字人1_2087111145051217921.json, 数字人/数字人/minimaxh3高动态数字人2_2087118803158257665.json, 数字人/数字人/一致性超强-H3数字人单人_2086308817486303234.json, 数字人/数字人/方格智联-MINI-H3数字人_2086681804894986242.json, 数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json, 视频生成/图生视频/H3_全能参考_2107892757984538626.json, 视频生成/图生视频/H3全能多参&音频驱动_2093425873709002754.json, 视频生成/图生视频/MiniMax H3-数字人 唱歌 口播_2089931741619380225.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2084906264412381186.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2100432995860697090.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2085324362105835522.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087570594790465537.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087800628679630849.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2089292719402348545.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090338216959373313.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090621488088047618.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2092061086244753409.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2097490216427810818.json, 视频生成/图生视频/Minimax H3开源 音频驱动数字人对口型 图生视频_2089311171798192129.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084955772458459137.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084990595327676418.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2084872893997076481.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2087072390349156353.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2089718644019388418.json, 视频生成/图生视频/Minimax H3数字人多人极速版_2085589743303225345.json, 视频生成/图生视频/MinimaxH3音频+图片=口播数字人+全节点注释_2095797295269892098.json, 视频生成/图生视频/加速版 ！海螺H3！ 数字人对口型 ！两人！_2085574360487784450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（图片生成/文生图/AI数字人丨Wan2.1＋InfiniteTalk丨唱歌口播对口型_2106753593184448513.json、数字人/数字人/AI唱歌数字人对口型RCM+Infinite Talk_2109985103735775234.json、数字人/数字人/数字人对口型_2087384580251807745.json、数字人/数字人/数字人对口型_2087385028354461697.json、视频生成/图生视频/2066049349972484098.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（数字人/数字人/minimaxH3动态数字人1_2087111145051217921.json、数字人/数字人/minimaxh3高动态数字人2_2087118803158257665.json、数字人/数字人/一致性超强-H3数字人单人_2086308817486303234.json、数字人/数字人/方格智联-MINI-H3数字人_2086681804894986242.json、数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：35
+- **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 35 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `Float to Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+全部 27 个 workflow 都包含：
+- `AudioCrop`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadAudio`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `RH_GetAudioDuration`
-- `SimpleMath+`
-- `SoundFlow_TrimAudio`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SoundFlow_GetLength`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 33/35 个有
-- `FlashVSRNode` —— 32/35 个有
-- `Int` —— 26/35 个有
-- `PrimitiveStringMultiline` —— 26/35 个有
-- `Fast Groups Muter (rgthree)` —— 24/35 个有
-- `Apply Whisper` —— 18/35 个有
-- `String Literal` —— 18/35 个有
-- `VoxCPM_TTS` —— 18/35 个有
-- `easy anythingIndexSwitch` —— 18/35 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/35 个有
-- `GetNode` —— 3/35 个有
-- `RHHiddenNodes` —— 3/35 个有
-- `SetNode` —— 3/35 个有
-- `AudioCrop` —— 2/35 个有
-- `PreviewAudio` —— 2/35 个有
-- `WanVideoTorchCompileSettings` —— 2/35 个有
-- `CR Prompt Text` —— 1/35 个有
-- `JWInteger` —— 1/35 个有
-- `SaveImage` —— 1/35 个有
-- `ShowText|pysssss` —— 1/35 个有
-- `TT_img_enc` —— 1/35 个有
-- `Wan22PromptSelector` —— 1/35 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 26/27 个有
+- `PreviewAudio` —— 25/27 个有
+- `UNETLoader` —— 25/27 个有
+- `PrimitiveStringMultiline` —— 24/27 个有
+- `PathchSageAttentionKJ` —— 22/27 个有
+- `AudioConcat` —— 17/27 个有
+- `EmptyAudio` —— 17/27 个有
+- `LoraLoaderModelOnly` —— 8/27 个有
+- `ModelAttentionBackend` —— 3/27 个有
+- `EasyCache` —— 2/27 个有
+- `EnhancedLoadDiffusionModel` —— 2/27 个有
+- `ModelPreviewOverrideKJ` —— 2/27 个有
+- `RHHiddenNodes` —— 2/27 个有
+- `Text` —— 2/27 个有
+- `CR Text` —— 1/27 个有
+- `PainterVRAM` —— 1/27 个有
+- `RHLLMChatNode` —— 1/27 个有
+- `VHS_LoadVideo` —— 1/27 个有
+- `easy showAnything` —— 1/27 个有
 
 ## 典型参数
 

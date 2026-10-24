@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_537
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.843333
-common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.7756
+common_nodes: [LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json, 图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json, 图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json]
+members: [图片生成/图生图/写实动画人物六视图_2056632610302029826.json, 图片生成/图生图/图片一键换脸_1901238594365702145.json, 图片生成/图生图/多图生图：一键换装_2074769219308310530.json, 图片生成/图生图/换脸单人应用版_1948247424126070785.json, 图片生成/文生图/换脸双人应用版_1948238063767027714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_537
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json、图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json、图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/写实动画人物六视图_2056632610302029826.json、图片生成/图生图/图片一键换脸_1901238594365702145.json、图片生成/图生图/多图生图：一键换装_2074769219308310530.json、图片生成/图生图/换脸单人应用版_1948247424126070785.json、图片生成/文生图/换脸双人应用版_1948238063767027714.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG25FlareImageToImage`
-- `RH_RhartImageG25FlareTextToImage`
-- `RH_RhartImageG25SunburstImageToImage`
-- `RH_RhartImageG25SunburstTextToImage`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `MuyeTextEditOutput` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `ReActorFaceSwap` —— 3/5 个有
+- `RH_RhartImageV1Edit` —— 2/5 个有
+- `ShowAnything|Mie` —— 1/5 个有
 
 ## 典型参数
 

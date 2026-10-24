@@ -1,45 +1,37 @@
 ---
 name: unknown_workflow_generic_331
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.3938
-common_nodes: [AudioCrop, CR Prompt Text, Comfly_api_set, Comfly_suno_upload, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.875714
+common_nodes: [LoadImage, RH_Doubao_Seedance_1_5_Pro, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno V5.5歌曲翻唱V1(贞贞的AI工坊版）_2054018535248146434.json, 音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_1988566168644534274.json, 音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_2054018548460204033.json, 音频生成/音频生成/Suno V5歌曲翻唱V1(贞贞的AI工坊版-基准0.5元2首)_1988549589743616001.json, 音频生成/音频生成/Suno音乐生成合集   贞贞工坊api调用  翻唱+续写、歌词提取 教学指引版_2011742414955876353.json]
+members: [图片生成/图生图/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2033377929924714497.json, 视频生成/图生视频/Seedance 1.5 Pro 图生视频（首尾帧）_2004475209992335361.json, 视频生成/图生视频/Seedance 1.5 Pro首尾帧视频（全自动）_2004142171819261953.json, 视频生成/图生视频/Seedance1.5Pro首尾帧图生视频_2021470278861197314.json, 视频生成/图生视频/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2005561836860833794.json, 视频生成/图生视频/Seedance1.5pro图生视频（全自动）_2004099272159207426.json, 视频生成/图生视频/高清视频 Seedance Pro 首尾帧图生视频_2022516850940186626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_331
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Suno V5.5歌曲翻唱V1(贞贞的AI工坊版）_2054018535248146434.json、音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_1988566168644534274.json、音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_2054018548460204033.json、音频生成/音频生成/Suno V5歌曲翻唱V1(贞贞的AI工坊版-基准0.5元2首)_1988549589743616001.json、音频生成/音频生成/Suno音乐生成合集   贞贞工坊api调用  翻唱+续写、歌词提取 教学指引版_2011742414955876353.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2033377929924714497.json、视频生成/图生视频/Seedance 1.5 Pro 图生视频（首尾帧）_2004475209992335361.json、视频生成/图生视频/Seedance 1.5 Pro首尾帧视频（全自动）_2004142171819261953.json、视频生成/图生视频/Seedance1.5Pro首尾帧图生视频_2021470278861197314.json、视频生成/图生视频/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2005561836860833794.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：39%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioCrop`
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_upload`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+全部 7 个 workflow 都包含：
+- `LoadImage`
+- `RH_Doubao_Seedance_1_5_Pro`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_suno_cover` —— 3/5 个有
-- `Comfly_suno_upload_extend` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `easy anythingIndexSwitch` —— 3/5 个有
-- `CR Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ShellAgentPluginOutputText` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `CR Text` —— 6/7 个有
+- `PreviewAny` —— 4/7 个有
+- `AILab_QwenVL` —— 2/7 个有
+- `RHHiddenNodes` —— 2/7 个有
 
 ## 典型参数
 

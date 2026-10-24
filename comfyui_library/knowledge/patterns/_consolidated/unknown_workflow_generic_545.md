@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_545
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.822333
-common_nodes: [CR Prompt Text, SaveImage, Seedance_Config, Zhenzhen_Image_G25_Lowprice]
+coverage: 0.9342
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json, 图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json]
+members: [图片生成/图生图/测试按钮_2072942393598500865.json, 图片生成/图生图/牛皮纸单盒_2049691312600961026.json, 图片生成/图生图/牛皮纸卷纸_2049675181253201921.json, 图片生成/图生图/牛皮纸多盒_2049695227673321474.json, 图片生成/文生图/（G-2.0+全能图片）地表最强组合图片工作流_2047340732758888450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_545
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json、图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json、图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/测试按钮_2072942393598500865.json、图片生成/图生图/牛皮纸单盒_2049691312600961026.json、图片生成/图生图/牛皮纸卷纸_2049675181253201921.json、图片生成/图生图/牛皮纸多盒_2049695227673321474.json、图片生成/文生图/（G-2.0+全能图片）地表最强组合图片工作流_2047340732758888450.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Seedance_Config`
-- `Zhenzhen_Image_G25_Lowprice`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
+- `JWStringConcat` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `RH_RhartImageG2TextToImage` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_269
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.441
-common_nodes: [JjkText, LayerUtility: TextJoin, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 1
+common_nodes: [LoadAudio, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/image_gemini.json_2068966122443067394.json, 图片生成/文生图/image_gemini.json_2097156637671911425.json, 图片生成/文生图/image_gemini.json_2097576911659687937.json, 图片生成/文生图/image_health.json_2069357857212026881.json, 图片生成/文生图/image_health_2069300295536037890.json]
+members: [图片生成/图生图/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2069715330297057281.json, 数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json, 数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json, 数字人/数字人/zh（9.14）工作流1视频对口型_2099327179606806530.json, 数字人/数字人/数字人【视频】V1.0_2094769332847988737.json, 数字人/数字人/超快HEYGEN数字人_2095826350211944450.json, 视频生成/图生视频/Wan2.7 视频延长_2041456018126807041.json, 音频生成/音频生成/HeyGem口播数字人_1940729868739047425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_269
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/image_gemini.json_2068966122443067394.json、图片生成/文生图/image_gemini.json_2097156637671911425.json、图片生成/文生图/image_gemini.json_2097576911659687937.json、图片生成/文生图/image_health.json_2069357857212026881.json、图片生成/文生图/image_health_2069300295536037890.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/HeyGen-v2v-视频对口型 语音翻译 声音驱动视频_2069715330297057281.json、数字人/数字人/HeyGem数字人口播数字人输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2088207290758426626.json、数字人/数字人/HeyGem语音迁移-视频换声工作流_2094592248569753601.json、数字人/数字人/zh（9.14）工作流1视频对口型_2099327179606806530.json、数字人/数字人/数字人【视频】V1.0_2094769332847988737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
-- `LayerUtility: TextJoin`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `LoadAudio`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy promptList` —— 3/5 个有
-- `LoadImage` —— 2/5 个有
+- `RH_HeyGemNode` —— 7/8 个有
+- `RH_AlibabaWan27VideoExtend` —— 1/8 个有
 
 ## 典型参数
 

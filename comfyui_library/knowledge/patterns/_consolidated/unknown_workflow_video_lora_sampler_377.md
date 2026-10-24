@@ -3,36 +3,31 @@ name: unknown_workflow_video_lora_sampler_377
 type: Unknown Workflow
 frequency: 6
 level: strong
-coverage: 0.944667
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.946333
+common_nodes: [CLIPTextEncode, CM_FloatToInt, DualCLIPLoader, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034652282570153986.json, 视频生成/图生视频/2031229701166993409.json, 视频生成/图生视频/2036741088412700673.json, 视频生成/图生视频/2075032295114895362.json, 视频生成/图生视频/2032494068420317186.json, 视频生成/图生视频/2030439938361135105.json]
+members: [视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json, 视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json, 视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json, 视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json, 视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json, 视频生成/文生视频/ltx-2.3文生视频蒸馏二阶段放大_2030336856772059137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_377
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2034652282570153986.json、视频生成/图生视频/2031229701166993409.json、视频生成/图生视频/2036741088412700673.json、视频生成/图生视频/2075032295114895362.json、视频生成/图生视频/2032494068420317186.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/ltx-2.3图生视频单阶段双轨_2030336847670415362.json、视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json、视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json、视频生成/文生视频/ltx-2.3文生视频一阶段非加速+二阶段放大_2030336819816046593.json、视频生成/文生视频/ltx-2.3文生视频单阶段双轨_2030335561520648193.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPTextEncode`
 - `CM_FloatToInt`
-- `CheckpointLoaderSimple`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
@@ -41,41 +36,29 @@ source: knowledge_consolidation
 - `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
 - `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
+- `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 5/6 个有
-- `SimpleMath+` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `CR Text` —— 4/6 个有
-- `Seed (rgthree)` —— 4/6 个有
-- `DapaoImageAspectRatioResizeNode` —— 3/6 个有
-- `RH_LLMAPI_Pro_Node` —— 3/6 个有
-- `easy int` —— 3/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImpactInt` —— 1/6 个有
-- `ImpactSwitch` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LatentUpscaleModelLoader` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `ResizeImageMaskNode` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `ShowText` —— 1/6 个有
-- `TextBox` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
+- `CFGGuider` —— 5/6 个有
+- `KSamplerSelect` —— 5/6 个有
+- `ManualSigmas` —— 5/6 个有
+- `ClownSampler_Beta` —— 4/6 个有
+- `GuiderParameters` —— 4/6 个有
+- `LTXVScheduler` —— 4/6 个有
+- `MultimodalGuider` —— 4/6 个有
+- `LTXVLatentUpsampler` —— 2/6 个有
+- `LatentUpscaleModelLoader` —— 2/6 个有
 
 ## 典型参数
 

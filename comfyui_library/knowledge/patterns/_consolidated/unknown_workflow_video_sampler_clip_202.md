@@ -1,68 +1,78 @@
 ---
 name: unknown_workflow_video_sampler_clip_202
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8075
-common_nodes: [AILab_QwenVL, BasicScheduler, CFGGuider, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EasyCache, HunyuanVideo15ImageToVideo, JWInteger, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.559667
+common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Primitive integer [Crystools], Qwen3_VQA, SetNode, ShowText|pysssss, SimpleMath+, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/1998555121518829569.json, 视频生成/图生视频/1997551023264829441.json]
+members: [视频生成/图生视频/抡语 JoJo风格 无限格斗  角色动态海报_2009841330003906561.json, 视频生成/图生视频/最强动漫 图生视频   支持绅士_2008869399997980674.json, 视频生成/图生视频/最强动漫 首尾帧图生视频   支持绅士_2009276761355325442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_202
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1998555121518829569.json、视频生成/图生视频/1997551023264829441.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/抡语 JoJo风格 无限格斗  角色动态海报_2009841330003906561.json、视频生成/图生视频/最强动漫 图生视频   支持绅士_2008869399997980674.json、视频生成/图生视频/最强动漫 首尾帧图生视频   支持绅士_2009276761355325442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicScheduler`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `EasyCache`
-- `HunyuanVideo15ImageToVideo`
-- `JWInteger`
-- `KSamplerSelect`
+- `GetNode`
+- `JoinStrings`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Seed (rgthree)`
+- `PathchSageAttentionKJ`
+- `Primitive integer [Crystools]`
+- `Qwen3_VQA`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `BatchTextReplace` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `CLIPVisionEncode` —— 2/3 个有
+- `CLIPVisionLoader` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `Float` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `PainterI2V` —— 2/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `CR Text Replace` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `WanFirstLastFrameToVideo` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -70,4 +80,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

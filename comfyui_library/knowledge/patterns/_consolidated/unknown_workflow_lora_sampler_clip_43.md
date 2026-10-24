@@ -1,104 +1,77 @@
 ---
 name: unknown_workflow_lora_sampler_clip_43
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: strong
-coverage: 0.862857
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled]
-problems: []
+coverage: 0.918556
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2038201954467323905.json, 视频生成/图生视频/2051636070026096642.json, 视频生成/图生视频/LTX2_3_image_and_audio_to_video_ia2v_2083484804493955073.json, 视频生成/图生视频/2081391586033889281.json, 视频生成/图生视频/2044558768721108993.json, 视频生成/图生视频/2049792632808853506.json, 视频生成/图生视频/2040420049630007297.json]
+members: [图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json, 图片生成/文生图/AI口播人物-文生图_2027299018845458433.json, 图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json, 图片生成/文生图/Z-image-Turbo（如梦似幻+瑶光lora）文生图+高清放大_2063598346006253569.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079025904818409473.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079877016463171586.json, 图片生成/文生图/Z-image-base（如梦似幻+瑶光lora）文生图+高清放大_2063588760020930562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_43
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2038201954467323905.json、视频生成/图生视频/2051636070026096642.json、视频生成/图生视频/LTX2_3_image_and_audio_to_video_ia2v_2083484804493955073.json、视频生成/图生视频/2081391586033889281.json、视频生成/图生视频/2044558768721108993.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json、图片生成/文生图/AI口播人物-文生图_2027299018845458433.json、图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
+- `CR Text`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 6/7 个有
-- `CreateVideo` —— 6/7 个有
-- `LTXAVTextEncoderLoader` —— 6/7 个有
-- `LTXVAudioVAEEncode` —— 6/7 个有
-- `LTXVLatentUpsampler` —— 6/7 个有
-- `LatentUpscaleModelLoader` —— 6/7 个有
-- `LoadAudio` —— 6/7 个有
-- `PrimitiveBoolean` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `SaveVideo` —— 6/7 个有
-- `SetLatentNoiseMask` —— 6/7 个有
-- `SolidMask` —— 6/7 个有
-- `TrimAudioDuration` —— 6/7 个有
-- `RecordAudio` —— 3/7 个有
-- `SoundFlow_GetLength` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `Apply Whisper` —— 2/7 个有
-- `ComfySwitchNode` —— 2/7 个有
-- `LongCatVoiceCloneTTS` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `MelBandRoFormerModelLoader` —— 2/7 个有
-- `MelBandRoFormerSampler` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `TextGenerateLTX2Prompt` —— 2/7 个有
-- `Anything Everywhere` —— 1/7 个有
-- `DiffusionModelLoaderKJ` —— 1/7 个有
-- `DualCLIPLoaderGGUF` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `IAMCCS_VRAMCleanup` —— 1/7 个有
-- `LTXVEmptyLatentAudio` —— 1/7 个有
-- `NormalizeAudioLoudness` —— 1/7 个有
-- `Text Concatenate` —— 1/7 个有
-- `UnetLoaderGGUF` —— 1/7 个有
-- `VAELoaderKJ` —— 1/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
+- `LayerUtility: PurgeVRAM` —— 7/9 个有
+- `easy getNode` —— 7/9 个有
+- `easy setNode` —— 7/9 个有
+- `llama_cpp_instruct_adv` —— 7/9 个有
+- `llama_cpp_model_loader` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `ModelSamplingAuraFlow` —— 6/9 个有
+- `SeedVR2LoadDiTModel` —— 6/9 个有
+- `SeedVR2LoadVAEModel` —— 6/9 个有
+- `SeedVR2VideoUpscaler` —— 6/9 个有
+- `ConditioningZeroOut` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `Qwen3_VQA_Plus` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 97 | - | 1 | 100% |
-| 高度 | 25 | - | 1 | 100% |
+| 采样步数 | 8 | 1 - 9 | 9 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | res_multistep | - | 9 | 78% |
+| 调度器 | simple | - | 9 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 1 - 9，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，9 个样本，一致性 78%
+- 调度器 最常用 simple，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（10/9 个样本）：Steps较低可能导致细节不足

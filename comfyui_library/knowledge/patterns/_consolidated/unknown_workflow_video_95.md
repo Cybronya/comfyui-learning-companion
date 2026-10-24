@@ -3,44 +3,34 @@ name: unknown_workflow_video_95
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.84
-common_nodes: [CR Integer To String, CR Text, CR Text Concatenate, Compare, FlashVSRNode, GetNode, ImageResize+, Int, Make Interpolation State List, MathExpression|pysssss, RHHiddenNodes, RIFE VFI, SetNode, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy ifElse]
+coverage: 1
+common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2056548182066290690.json, 视频生成/图生视频/2056903678707191809.json]
+members: [视频生成/图生视频/RH 全能视频V3.1-fast-图生视频-低价渠道版-1.5元_次_2062201896533839874.json, 视频生成/图生视频/RH 全能视频V3.1-fast-首尾帧生视频-低价渠道版-1.5元_次_2062197611167309826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_95
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2056548182066290690.json、视频生成/图生视频/2056903678707191809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频V3.1-fast-图生视频-低价渠道版-1.5元_次_2062201896533839874.json、视频生成/图生视频/RH 全能视频V3.1-fast-首尾帧生视频-低价渠道版-1.5元_次_2062197611167309826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Integer To String`
-- `CR Text`
-- `CR Text Concatenate`
-- `Compare`
-- `FlashVSRNode`
-- `GetNode`
-- `ImageResize+`
-- `Int`
-- `Make Interpolation State List`
-- `MathExpression|pysssss`
-- `RHHiddenNodes`
-- `RIFE VFI`
-- `SetNode`
-- `StringConcatenate`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `LoadImage`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `easy ifElse`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartVideoV31FastImageToVideo` —— 1/2 个有
+- `RH_RhartVideoV31FastStartEndToVideo` —— 1/2 个有
 
 ## 典型参数
 

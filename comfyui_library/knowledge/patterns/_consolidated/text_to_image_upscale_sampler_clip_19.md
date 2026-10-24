@@ -1,84 +1,86 @@
 ---
 name: text_to_image_upscale_sampler_clip_19
 type: Text To Image
-frequency: 4
-level: moderate
-coverage: 0.764
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxKVCache, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LatentColorMatchSimple, PreviewImage, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+frequency: 7
+level: weak
+coverage: 0.885
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2-大图专用 蓝神大佬优化 1600万像素_2071508472050577410.json, 图片生成/文生图/Krea2-文生图直出4K （效果惊人不输闭源）_2071588832386052097.json, 图片生成/文生图/krea2json格式图生图像百万像素_2071963341316255746.json, 图片生成/文生图/krea2json格式文生图像百万像素_2072007993671114754.json]
+members: [图片生成/文生图/Krea2文生图+SeedVR2高清放大_2079590934051901442.json, 图片生成/文生图/Krea2文生图-天宫中式巨构_2097024511869804546.json, 图片生成/文生图/MOSS Image 文生图（8步加速_50步复杂文字）(带模型和lora下载链接)_2112068613405499394.json, 图片生成/文生图/MOSS Image 文生图｜8步加速+50步复杂文字附模型lora_2112403092594585601.json, 图片生成/文生图/中国风玄幻大作｜Krea2玉京仙宫场景文生图_2096621224637063170.json, 图片生成/文生图/玉京仙宫玄幻风场景｜Krea2中国风文生图生成_2096302133913145346.json, 图片生成/文生图/高清放大｜Krea2 lora动漫角色文生图基础工作流_2089832493032763394.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_19
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2-大图专用 蓝神大佬优化 1600万像素_2071508472050577410.json、图片生成/文生图/Krea2-文生图直出4K （效果惊人不输闭源）_2071588832386052097.json、图片生成/文生图/krea2json格式图生图像百万像素_2071963341316255746.json、图片生成/文生图/krea2json格式文生图像百万像素_2072007993671114754.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Krea2文生图+SeedVR2高清放大_2079590934051901442.json、图片生成/文生图/Krea2文生图-天宫中式巨构_2097024511869804546.json、图片生成/文生图/MOSS Image 文生图（8步加速_50步复杂文字）(带模型和lora下载链接)_2112068613405499394.json、图片生成/文生图/MOSS Image 文生图｜8步加速+50步复杂文字附模型lora_2112403092594585601.json、图片生成/文生图/中国风玄幻大作｜Krea2玉京仙宫场景文生图_2096621224637063170.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxKVCache`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
 - `KSampler`
-- `LatentColorMatchSimple`
-- `PreviewImage`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Florence2ModelLoader` —— 2/4 个有
-- `Florence2Run` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
-- `TTResolutionSelector` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `Seed (rgthree)` —— 5/7 个有
+- `JjkText` —— 4/7 个有
+- `solarL_SaveImagesToZip` —— 4/7 个有
+- `孤海注释` —— 4/7 个有
+- `Image Comparer (rgthree)` —— 3/7 个有
+- `PathchSageAttentionKJ` —— 3/7 个有
+- `Any Switch (rgthree)` —— 2/7 个有
+- `CheckpointLoaderSimple` —— 2/7 个有
+- `ResolutionSelector` —— 2/7 个有
+- `VOSR2ModelLoader` —— 2/7 个有
+- `VOSR2Upscale` —— 2/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `QZ_ResolutionPreset` —— 1/7 个有
+- `TTResolutionSelector` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1360 | 1360 - 1360 | 4 | 100% |
-| 高度 | 2048 | 2048 - 2048 | 4 | 100% |
-| 采样步数 | 6 | 6 - 8 | 4 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler_ancestral | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 0.35 | 0.2 - 1 | 4 | 31% |
+| 采样步数 | 4 | 4 - 8 | 7 | 65% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 7 | 42% |
+| 采样算法 | er_sde | - | 7 | 86% |
+| 调度器 | beta | - | 7 | 57% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 1024 | 7 | 0% |
+| 高度 | 80 | 80 - 1536 | 7 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1360，观测区间 1360 - 1360，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 2048，观测区间 2048 - 2048，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 6，观测区间 6 - 8，4 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 0.35，观测区间 0.2 - 1，4 个样本，取值分散，一致性仅 31%
-- 高发问题（10/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，7 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，7 个样本，取值分散，一致性仅 42%
+- 采样算法 最常用 er_sde，7 个样本，一致性 86%
+- 调度器 最常用 beta，7 个样本，一致性 57%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 1024，7 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1536，7 个样本，取值分散，一致性仅 0%
+- 高发问题（12/7 个样本）：Steps较低可能导致细节不足

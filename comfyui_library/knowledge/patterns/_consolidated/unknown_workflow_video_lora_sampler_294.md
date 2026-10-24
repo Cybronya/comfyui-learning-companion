@@ -3,22 +3,22 @@ name: unknown_workflow_video_lora_sampler_294
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.809286
-common_nodes: [CLIPVisionLoader, CR Prompt Text, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.784143
+common_nodes: [CLIPVisionLoader, CR Prompt Text, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkSilentEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2006714011445895170.json, 视频生成/图生视频/1967041274844995586.json, 视频生成/图生视频/1968534429834588161.json, 视频生成/图生视频/1967057695654207489.json, 视频生成/图生视频/2065824497244135425.json, 视频生成/图生视频/1980902275004678145.json, 音频生成/音频生成/Infinite Talk-对口型说话+唱歌无限时长+高动态_2021031552670507010.json]
+members: [视频生成/图生视频/03-10-09-WAN2.1-无限时长分镜头控制-infinitetalk_2006714011445895170.json, 视频生成/图生视频/100秒长视频直出！Wan2.2超级魔改图生视频_1967041274844995586.json, 视频生成/图生视频/Wan+Inifinte Talk无限时长+动作分段控制视频生成（闭嘴版）_1968534429834588161.json, 视频生成/图生视频/大明动画风格 长视频 强制闭嘴_1970454402555408386.json, 视频生成/图生视频/（闭嘴版）Wan+Inifinte Talk无限时长+动作分段控制视频生成V1_1965504800706187266.json, 视频生成/图生视频/（非SVI）手搓Wan无限时长分镜头控制极速版图生视频V1_2005591443018317826.json, 音频生成/音频生成/数字人对口型Wan+Inifinte Talk无限时长_1967102112964468737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_294
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2006714011445895170.json、视频生成/图生视频/1967041274844995586.json、视频生成/图生视频/1968534429834588161.json、视频生成/图生视频/1967057695654207489.json、视频生成/图生视频/2065824497244135425.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/03-10-09-WAN2.1-无限时长分镜头控制-infinitetalk_2006714011445895170.json、视频生成/图生视频/100秒长视频直出！Wan2.2超级魔改图生视频_1967041274844995586.json、视频生成/图生视频/Wan+Inifinte Talk无限时长+动作分段控制视频生成（闭嘴版）_1968534429834588161.json、视频生成/图生视频/大明动画风格 长视频 强制闭嘴_1970454402555408386.json、视频生成/图生视频/（闭嘴版）Wan+Inifinte Talk无限时长+动作分段控制视频生成V1_1965504800706187266.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
@@ -29,6 +29,7 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
+- `MultiTalkSilentEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -41,32 +42,15 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `JWInteger` —— 6/7 个有
 - `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `JWInteger` —— 5/7 个有
-- `AudioSeparation` —— 4/7 个有
-- `DownloadAndLoadWav2VecModel` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `MultiTalkSilentEmbeds` —— 4/7 个有
-- `MultiTalkWav2VecEmbeds` —— 4/7 个有
-- `GetNode` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `SetNode` —— 3/7 个有
-- `SimpleMath+` —— 3/7 个有
-- `AudioCrop` —— 2/7 个有
-- `Display Int (rgthree)` —— 2/7 个有
-- `SoundFlow_GetLength` —— 2/7 个有
-- `ToInt` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `Any Switch (rgthree)` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `Float` —— 1/7 个有
+- `ConcatTextOfUtils` —— 1/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `GetNode` —— 1/7 个有
 - `INTConstant` —— 1/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `JWFloat` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
 - `Primitive integer [Crystools]` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `SetNode` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
 
 ## 典型参数
 

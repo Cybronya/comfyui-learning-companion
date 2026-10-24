@@ -7,13 +7,13 @@ coverage: 0.8935
 common_nodes: [Float, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, ImageResizeKJv2, JWInteger, LoadImage, LoadVideo, MathExpression|pysssss, PreviewImage, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine, easy indexAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2075028961758900226.json, 视频生成/图生视频/2075400573410697217.json]
+members: [视频生成/图生视频/高品质视频换脸漫剧电商服装分镜_2075028961758900226.json, 视频生成/图生视频/高质量视频换脸术_2075400573410697217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_34
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2075028961758900226.json、视频生成/图生视频/2075400573410697217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/高品质视频换脸漫剧电商服装分镜_2075028961758900226.json、视频生成/图生视频/高质量视频换脸术_2075400573410697217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

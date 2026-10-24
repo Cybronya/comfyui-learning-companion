@@ -7,13 +7,13 @@ coverage: 0.665417
 common_nodes: [CLIPLoader, CLIPVisionLoader, DWPreprocessor, EmptySD3LatentImage, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PixelPerfectResolution, PrimitiveInt, SetNode, SimpleMath+, Text, Text Concatenate, Text Multiline, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2070319838932848642.json, 视频生成/图生视频/1989649967868506113.json, 视频生成/图生视频/2039884885216727041.json, 视频生成/图生视频/1975542884365635585.json, 视频生成/图生视频/2058746076395565058.json, 视频生成/图生视频/2010268951330164737.json, 视频生成/图生视频/2059808792103178241.json, 视频生成/图生视频/2064897106015510530.json, 视频生成/图生视频/2062118089738776577.json, 视频生成/图生视频/2067052913171714049.json, 视频生成/图生视频/2072208106070822914.json, 视频生成/图生视频/2072484558993444865.json]
+members: [视频生成/图生视频/单人照片合成双人图高动态双人跳舞或者动作！Animate V2！_2070319838932848642.json, 视频生成/图生视频/双人_多人舞蹈_1989649967868506113.json, 视频生成/图生视频/双人舞蹈-AIGC大赏_2039884885216727041.json, 视频生成/图生视频/双人跳舞！Animate V2！B站艾橘溪_1975542884365635585.json, 视频生成/图生视频/双人跳舞！Animate V2！_2058746076395565058.json, 视频生成/图生视频/图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json, 视频生成/图生视频/图生视频+双人跳舞！Animate V2！_2059808792103178241.json, 视频生成/图生视频/图生视频+双人跳舞！Animate+V2！_2064897106015510530.json, 视频生成/图生视频/超好用🔥图生视频+双人动作迁移_2062118089738776577.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2067052913171714049.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2072208106070822914.json, 视频生成/图生视频/高动态双人跳舞或者动作！Animate V2！_2072484558993444865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_150
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2070319838932848642.json、视频生成/图生视频/1989649967868506113.json、视频生成/图生视频/2039884885216727041.json、视频生成/图生视频/1975542884365635585.json、视频生成/图生视频/2058746076395565058.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/单人照片合成双人图高动态双人跳舞或者动作！Animate V2！_2070319838932848642.json、视频生成/图生视频/双人_多人舞蹈_1989649967868506113.json、视频生成/图生视频/双人舞蹈-AIGC大赏_2039884885216727041.json、视频生成/图生视频/双人跳舞！Animate V2！B站艾橘溪_1975542884365635585.json、视频生成/图生视频/双人跳舞！Animate V2！_2058746076395565058.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12

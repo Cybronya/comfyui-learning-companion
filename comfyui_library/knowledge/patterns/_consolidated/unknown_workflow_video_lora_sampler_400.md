@@ -3,68 +3,66 @@ name: unknown_workflow_video_lora_sampler_400
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6726
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.5676
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CS-MultiImageLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, GetNode, ImageResizeKJv2, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveStringMultiline, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [数字人/数字人/音频趋动 infinite talk wan2.1_2015430092859645953.json, 视频生成/图生视频/1972120402749222914.json, 视频生成/图生视频/1958218756659036162.json, 视频生成/图生视频/1971064636227391489.json, 视频生成/图生视频/2004504763003793409.json]
+members: [视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json, 视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json, 视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_400
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/音频趋动 infinite talk wan2.1_2015430092859645953.json、视频生成/图生视频/1972120402749222914.json、视频生成/图生视频/1958218756659036162.json、视频生成/图生视频/1971064636227391489.json、视频生成/图生视频/2004504763003793409.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json、视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json、视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioSeparation`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
+- `CS-MultiImageLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `GIMMVFI_interpolate`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PrimitiveStringMultiline`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
+- `SetNode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `GetImageRangeFromBatch` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `VHS_LoadVideo` —— 4/5 个有
-- `WanVideoEncode` —— 4/5 个有
-- `JWIntegerToString` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `LoadImage` —— 2/5 个有
-- `easy int` —— 2/5 个有
-- `Audio Duration (mtb)` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `ColorMatch` —— 1/5 个有
-- `ImageFromBatch` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `TrimAudioDuration` —— 1/5 个有
-- `VHS_VideoInfo` —— 1/5 个有
+- `LoadImage` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `FilmGrain` —— 3/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `PrimitiveBoolean` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 2/5 个有
+- `SCAIL2FaceCompositeBack` —— 2/5 个有
+- `SCAIL2HeadTrackCrop` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `easy ifElse` —— 2/5 个有
 
 ## 典型参数
 

@@ -1,71 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_clip_101
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.7526
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, ModelSamplingSD3, PrimitiveInt, VAEDecode, VHS_VideoCombine, WanVaceToVideo]
-problems: [Steps较低可能导致细节不足]
-missing: [Label (rgthree)]
-members: [图片生成/文生图/1987118145712361473.json, 视频生成/图生视频/1970121529851867137.json, 视频生成/图生视频/1970032698750365698.json, 视频生成/图生视频/1970029254320812033.json, 视频生成/图生视频/1981747829813190657.json]
+coverage: 0.990667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+problems: []
+missing: []
+members: [视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json, 视频生成/图生视频/Wan2.1 I2V 图生视频 480p_1930507082674421762.json, 视频生成/图生视频/Wan2.1 I2V 图生视频 720p_1930543153353510913.json, 视频生成/图生视频/Wan2.1 图生视频工作流_1991482549792940034.json, 视频生成/图生视频/Wan2.1(阿里万相)-图生视频_1904428749629358081.json, 视频生成/图生视频/万相-Wan2.1-图生视频_1901974657921081346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_101
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1987118145712361473.json、视频生成/图生视频/1970121529851867137.json、视频生成/图生视频/1970032698750365698.json、视频生成/图生视频/1970029254320812033.json、视频生成/图生视频/1981747829813190657.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json、视频生成/图生视频/Wan2.1 I2V 图生视频 480p_1930507082674421762.json、视频生成/图生视频/Wan2.1 I2V 图生视频 720p_1930543153353510913.json、视频生成/图生视频/Wan2.1 图生视频工作流_1991482549792940034.json、视频生成/图生视频/Wan2.1(阿里万相)-图生视频_1904428749629358081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `KSampler`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
+- `LoadImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `WanVideoVACEStartToEndFrame` —— 4/5 个有
-- `MathExpression|pysssss` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `DF_Integer` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `SimpleMath+` —— 1/5 个有
+- `ImageResizeKJ` —— 3/6 个有
+- `JanusImageUnderstanding` —— 1/6 个有
+- `JanusModelLoader` —— 1/6 个有
+- `ModelSamplingSD3` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringFunction|pysssss` —— 1/6 个有
+- `TeaCache` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | ipndm | - | 5 | 80% |
-| 调度器 | beta | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 8 | 6 | 86% |
+| 采样算法 | uni_pc | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，5 个样本，一致性 80%
-- 调度器 最常用 beta，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 86%）
+- 采样算法 最常用 uni_pc，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

@@ -1,74 +1,108 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_4
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.823
-common_nodes: [CLIPLoader, CLIPTextEncode, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [LayerMask: MaskGrow, LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1954486666050334721.json, 图片生成/文生图/1956274474318528513.json]
+frequency: 12
+level: strong
+coverage: 0.893167
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, ConstrainImage|pysssss, DetailerForEach, DualCLIPLoader, EmptyImage, FaceAnalysisModels, FaceBoundingBox, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImageConcanate, ImageCrop, ImageResize+, ImageToMask, ImpactGaussianBlurMask, InpaintModelConditioning, KSampler, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, MaskToImage, MaskToSEGS, PreviewImage, ReduxAdvanced, ResizeMask, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, preview_mask]
+problems: []
+missing: []
+members: [图片生成/图生图/FLUX Redux+ACE++ 换脸_2001943816934420482.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_1895719152445751298.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2012087167392157697.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2020043139452510210.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2047506205597241345.json, 图片生成/图生图/FLUX Redux+ACE高清换脸_2066039713353523202.json, 图片生成/图生图/FLUX+Redux+ACE+++换脸工作流_2042518669216976898.json, 图片生成/图生图/FLUX_Redux+ACE++_换脸工作流_2098910351919243265.json, 图片生成/图生图/FLUX_Redux+ACE++_换脸工作流_2098972141172649985.json, 图片生成/图生图/全自动换头换脸  指定换脸真实自然 写实换脸换装_2091707597454925826.json, 图片生成/图生图/无痕换脸-FLUX+Redux+ACE_2089616148764643330.json, 图片生成/图生图/角色一致性换脸工作流_2044033278356754433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1954486666050334721.json、图片生成/文生图/1956274474318528513.json）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX Redux+ACE++ 换脸_2001943816934420482.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_1895719152445751298.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2012087167392157697.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2020043139452510210.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2047506205597241345.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `ConditioningZeroOut`
+- `ConstrainImage|pysssss`
+- `DetailerForEach`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `FaceAnalysisModels`
+- `FaceBoundingBox`
+- `FluxGuidance`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `ImageConcanate`
+- `ImageCrop`
+- `ImageResize+`
+- `ImageToMask`
+- `ImpactGaussianBlurMask`
 - `InpaintModelConditioning`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `MaskToImage`
+- `MaskToSEGS`
+- `PreviewImage`
+- `ReduxAdvanced`
+- `ResizeMask`
 - `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `preview_mask`
 
 **可变部分**（部分 workflow 才有）：
-- `DifferentialDiffusion` —— 1/2 个有
-- `EmptyHunyuanLatentVideo` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `INPAINT_ExpandMask` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `LayerMask: MaskGrow` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `TeaCache` —— 11/12 个有
+- `GetImageSize+` —— 1/12 个有
+- `GetNode` —— 1/12 个有
+- `If ANY execute A else B` —— 1/12 个有
+- `Image Tiled` —— 1/12 个有
+- `ImageConcanateOfUtils` —— 1/12 个有
+- `ImageFromBatch` —— 1/12 个有
+- `ImageListToBatch+` —— 1/12 个有
+- `ImagePass` —— 1/12 个有
+- `ImageUpscaleWithModel` —— 1/12 个有
+- `Images to RGB` —— 1/12 个有
+- `ImpactCompare` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `PrimitiveInt` —— 1/12 个有
+- `SeedVR2LoadDiTModel` —— 1/12 个有
+- `SeedVR2LoadVAEModel` —— 1/12 个有
+- `SeedVR2VideoUpscaler` —— 1/12 个有
+- `SetNode` —— 1/12 个有
+- `TTP_Image_Assy` —— 1/12 个有
+- `TTP_Image_Tile_Batch` —— 1/12 个有
+- `TTP_Tile_image_size` —— 1/12 个有
+- `UpscaleModelLoader` —— 1/12 个有
+- `easy imageBatchToImageList` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8.5 | - | 2 | 94% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | sgm_uniform | - | 2 | 50% |
-| 重绘幅度 | 0.725 | - | 2 | 62% |
+| 采样步数 | 15 | 15 - 15 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | normal | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.725，样本不足，未给区间，2 个样本
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: MaskGrow、LayerUtility: ImageScaleByAspectRatio V2
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 15，观测区间 15 - 15，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 normal，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

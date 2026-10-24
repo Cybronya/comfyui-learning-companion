@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_651
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.621
-common_nodes: [CLIPLoader, LoadAudio, PreviewAny, SaveImage, TextGenerate]
+coverage: 0.87475
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LoadImage, SaveImage, preview_mask]
 problems: []
 missing: []
-members: [音频生成/音频生成/llm_gemma4_text_gen666_2066543100402683905.json, 音频生成/音频生成/llm_gemma4_text_gen_2067373155886391297.json, 音频生成/音频生成/llm_gemma4_text_gen_2067600813530370049.json]
+members: [图片生成/图生图/RMBG一键抠图_2057714410445164545.json, 图片生成/图生图/RMBG一键抠图_2079022658536173569.json, 图片生成/图生图/RMBG一键抠图_2079402674667216898.json, 图片生成/图生图/RMBG抠图_2108788082693730305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_651
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/llm_gemma4_text_gen666_2066543100402683905.json、音频生成/音频生成/llm_gemma4_text_gen_2067373155886391297.json、音频生成/音频生成/llm_gemma4_text_gen_2067600813530370049.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RMBG一键抠图_2057714410445164545.json、图片生成/图生图/RMBG一键抠图_2079022658536173569.json、图片生成/图生图/RMBG一键抠图_2079402674667216898.json、图片生成/图生图/RMBG抠图_2108788082693730305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `LoadAudio`
-- `PreviewAny`
+全部 4 个 workflow 都包含：
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `LoadImage`
 - `SaveImage`
-- `TextGenerate`
+- `preview_mask`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_SaveImage` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 

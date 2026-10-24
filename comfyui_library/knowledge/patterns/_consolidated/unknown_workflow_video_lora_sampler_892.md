@@ -3,65 +3,74 @@ name: unknown_workflow_video_lora_sampler_892
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.883
-common_nodes: [AILab_QwenVL_Advanced, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, HunyuanVideoFoley, ImageBatch, ImageResizeKJv2, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAddGuideMulti, LTXVChunkFeedForward, LTXVConditioning, LTXVPreprocess, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VRAMReserver, easy cleanGpuUsed]
+coverage: 0.8745
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, Lora Loader Stack (rgthree), LoraLoaderModelOnly, MiniMaxH3ConcatAVLatent, MiniMaxH3ContextIR, MiniMaxH3HybridLoader, MiniMaxH3ImageToVideo, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ReferenceToVideo, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, Minimax_H3_Context_IR, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/2081421017964171266.json, 视频生成/文生视频/三关键帧图生视频_自动提示词_2059173762448314370.json]
+members: [视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2090239784139706369.json, 视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2102564364179042306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_892
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2081421017964171266.json、视频生成/文生视频/三关键帧图生视频_自动提示词_2059173762448314370.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2090239784139706369.json、视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2102564364179042306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL_Advanced`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageRangeFromBatch`
-- `HunyuanVideoFoley`
-- `ImageBatch`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Groups Bypasser (rgthree)`
 - `ImageResizeKJv2`
-- `JjkText`
+- `ImageScaleBy`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAddGuideMulti`
-- `LTXVChunkFeedForward`
-- `LTXVConditioning`
-- `LTXVPreprocess`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `Lora Loader Stack (rgthree)`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ConcatAVLatent`
+- `MiniMaxH3ContextIR`
+- `MiniMaxH3HybridLoader`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MediaLoaderFantastic`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceSplitter`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3ResolutionSelector`
+- `MiniMaxH3TurboLoRA`
+- `MiniMaxH3TurboSampler`
+- `MiniMaxH3UnifiedToVideo`
+- `Minimax_H3_Context_IR`
+- `PreviewAny`
 - `PrimitiveFloat`
-- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
+- `SaveVideo`
+- `Seed (rgthree)`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAEEncodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VRAMReserver`
 - `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `LTXVAddGuide` —— 1/2 个有
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

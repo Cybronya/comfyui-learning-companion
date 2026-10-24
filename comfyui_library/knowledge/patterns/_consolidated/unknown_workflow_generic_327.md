@@ -1,47 +1,43 @@
 ---
 name: unknown_workflow_generic_327
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8938
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LoadAudio, SaveAudio]
+coverage: 0.721429
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json, 音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json, 音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json, 音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json, 音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json]
+members: [图片生成/图生图/MJ-图生图_1983440403183640578.json, 图片生成/图生图/MJ-图生图_2010962665300037633.json, 图片生成/图生图/Midjourney V7-图生图（风格参考）_1988119355508563970.json, 图片生成/图生图/RH_Midjourney图生图（风格提示词）_1987536612517195777.json, 图片生成/图生图/悠船 图生图（RH版）_2054432087163318273.json, 图片生成/文生图/MJ生图与放大工作流_2019962588007763969.json, 图片生成/文生图/Midjourney （文生图+图生图）_1945813021539397633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_327
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json、音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json、音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json、音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json、音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/MJ-图生图_1983440403183640578.json、图片生成/图生图/MJ-图生图_2010962665300037633.json、图片生成/图生图/Midjourney V7-图生图（风格参考）_1988119355508563970.json、图片生成/图生图/RH_Midjourney图生图（风格提示词）_1987536612517195777.json、图片生成/图生图/悠船 图生图（RH版）_2054432087163318273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LoadAudio`
-- `SaveAudio`
+全部 7 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `RH_LLMAPI_Pro_Node` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `WhisperSTT` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
+- `JjkText` —— 6/7 个有
+- `RH_Midjourney` —— 6/7 个有
+- `RH_Prompter` —— 6/7 个有
+- `ImageResize+` —— 4/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `RH_Translator` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `PMRF` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `RH_YouchuanTextToImageV81` —— 1/7 个有
 
 ## 典型参数
 

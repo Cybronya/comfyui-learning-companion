@@ -3,81 +3,72 @@ name: text_to_image_video_lora_sampler_104
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.738714
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PreviewImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip]
+coverage: 0.899714
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLTXVLatentVideo, EmptyLatentImage, INTConstant, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LoraLoaderModelOnly, LowVRAMCheckpointLoader, ManualSigmas, RH_Captioner, RandomNoise, SamplerCustomAdvanced, StringReplace, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长版｜表情复刻单人跳舞，舞姿神还原_2107334075940958210.json, 视频生成/图生视频/SteadyDancer单人跳舞动作迁移｜不限时长版表情复刻，视频生视频_2104525759527350274.json, 视频生成/图生视频/SteadyDancer骨骼迁移不限时长｜单人跳舞动物跳舞动作生成_2096710822365057025.json, 视频生成/图生视频/SteadyDancer骨骼迁移跳舞视频｜小猫小狗多人不限时长_2105832688631508994.json]
+members: [视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3 视频运镜_2089290894364205058.json, 视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3图生视频生成_2093239106930307073.json, 视频生成/图生视频/Ltx2.3 Licon-MSR 长镜头版本｜图生视频电影级运镜_2096822173271945218.json, 视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版图生视频处理工作流_2101364005368582146.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜｜图生视频工作流_2095207789642731522.json, 视频生成/图生视频/image2+LTX-MSR多参三分镜｜图生视频连续衔接直出_2091245168753201153.json, 视频生成/图生视频/图生视频长镜头利器｜Ltx2.3 Licon-MSR长镜头版本_2101120778602373122.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_104
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json、视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json、视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json、视频生成/图生视频/SteadyDancer动作迁移不限时长版｜表情复刻单人跳舞，舞姿神还原_2107334075940958210.json、视频生成/图生视频/SteadyDancer单人跳舞动作迁移｜不限时长版表情复刻，视频生视频_2104525759527350274.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3 视频运镜_2089290894364205058.json、视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3图生视频生成_2093239106930307073.json、视频生成/图生视频/Ltx2.3 Licon-MSR 长镜头版本｜图生视频电影级运镜_2096822173271945218.json、视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版图生视频处理工作流_2101364005368582146.json、视频生成/图生视频/image2+LTX-MSR多参3分镜｜图生视频工作流_2095207789642731522.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `Int`
+- `INTConstant`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PreviewImage`
-- `SetNode`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RH_Captioner`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `StringReplace`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PoseDetectionOneToAllAnimation` —— 6/7 个有
-- `TextInput_` —— 6/7 个有
-- `孤海注释` —— 6/7 个有
-- `SaveImage` —— 2/7 个有
-- `DF_Int_to_Float` —— 1/7 个有
-- `DrawViTPose` —— 1/7 个有
-- `EmptyImage` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `PoseAndFaceDetection` —— 1/7 个有
-- `RH_Sora2_I2V` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `WanVideoBlockSwap` —— 1/7 个有
-- `WanVideoSetBlockSwap` —— 1/7 个有
-- `WanVideoTorchCompileSettings` —— 1/7 个有
-- `easy setNode` —— 1/7 个有
+- `GoogleTranslator` —— 5/7 个有
+- `ImageConcatMulti` —— 5/7 个有
+- `PreviewImage` —— 2/7 个有
+- `RH_RhartImageG2ImageToImage` —— 2/7 个有
+- `TextConcatenate_UTK` —— 2/7 个有
+- `easy imageSplitGrid` —— 2/7 个有
+- `easy indexAnything` —— 2/7 个有
+- `SaveImage` —— 1/7 个有
 
 ## 典型参数
 

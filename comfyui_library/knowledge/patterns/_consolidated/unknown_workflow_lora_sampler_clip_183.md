@@ -1,61 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_183
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.857
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Get Image Size, ImageCASharpening+, ImageResize+, ImpactMinMax, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, PreviewImage, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch, Text Multiline, UNETLoader, VAEDecode, VAELoader, VRAM_Debug]
+frequency: 3
+level: moderate
+coverage: 0.886667
+common_nodes: [Any Switch (rgthree), AspectRatio, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, ImageResize+, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly_Any, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TT_img_enc_v2, TwoWaySwitch, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-Image双采样4K极速放大_2008804942550667266.json, 图片生成/文生图/Z-Image双采样4K极速放大_2010341972136960001.json]
+members: [图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json, 图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json, 图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_183
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-Image双采样4K极速放大_2008804942550667266.json、图片生成/文生图/Z-Image双采样4K极速放大_2010341972136960001.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/反推+变大-Flux2 Klein高质量洗图_2047521585283731458.json、图片生成/图生图/天然重力-Flux2 Klein 图生图_2043887128060366849.json、图片生成/文生图/COS真人-F2K文生图 平替全能图片 9B 质量 _支持两种出图方式_2051148070401921025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AspectRatio`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `Get Image Size`
-- `ImageCASharpening+`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
 - `ImageResize+`
-- `ImpactMinMax`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly_Any`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `Text Multiline`
+- `TT_img_enc_v2`
+- `TwoWaySwitch`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `VRAM_Debug`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadLoraOnly` —— 2/3 个有
+- `MergeLoraToModel` —— 2/3 个有
+- `easy prompt` —— 2/3 个有
+- `easy promptConcat` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `Textbox` —— 1/3 个有
+- `easy saveText` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1536 | - | 2 | 100% |
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 10 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 100% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,11 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 100%
-- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

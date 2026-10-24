@@ -3,83 +3,84 @@ name: unknown_workflow_controlnet_video_lora_18
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.5195
-common_nodes: [Any Switch (rgthree), Audio Cut (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoVAELoader, easy int, easy positive, easy showAnything]
+coverage: 0.8565
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, ImageFromBatch+, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RHHiddenNodes, RH_LLMAPI_NODE, VHS_DuplicateImages, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy imageScaleDownToSize, easy imageSize, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1938467765139496961.json, 视频生成/图生视频/2020045552515289089.json, 视频生成/图生视频/1937584753665032193.json, 视频生成/文生视频/语音驱动图片说话数字人工作流_1988165359964438530.json]
+members: [视频生成/图生视频/Multitalk-图片+音频=MV_1936408506675154946.json, 视频生成/图生视频/Multitalk-音乐生成+图片=MV_1941728602893479937.json, 视频生成/图生视频/Multitalk（图片+音频）生成数字人视频_1937081431380119554.json, 视频生成/图生视频/最新数字人Multitalk-图片+音频=高质量数字人，支持唱歌唇形同步_1936210894722355202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_18
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1938467765139496961.json、视频生成/图生视频/2020045552515289089.json、视频生成/图生视频/1937584753665032193.json、视频生成/文生视频/语音驱动图片说话数字人工作流_1988165359964438530.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Multitalk-图片+音频=MV_1936408506675154946.json、视频生成/图生视频/Multitalk-音乐生成+图片=MV_1941728602893479937.json、视频生成/图生视频/Multitalk（图片+音频）生成数字人视频_1937081431380119554.json、视频生成/图生视频/最新数字人Multitalk-图片+音频=高质量数字人，支持唱歌唇形同步_1936210894722355202.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Cut (mtb)`
+- `Audio Duration (mtb)`
 - `AudioCrop`
 - `AudioSeparation`
 - `CLIPVisionLoader`
+- `CR Text`
 - `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
+- `ImageFromBatch+`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
-- `SetNode`
-- `SimpleMath+`
+- `RHHiddenNodes`
+- `RH_LLMAPI_NODE`
+- `VHS_DuplicateImages`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
 - `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
+- `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy positive`
+- `easy cleanGpuUsed`
+- `easy compare`
+- `easy ifElse`
+- `easy imageScaleDownToSize`
+- `easy imageSize`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `PrimitiveString` —— 3/4 个有
-- `StringConcatenate` —— 3/4 个有
-- `VHS_DuplicateImages` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `WanVideoEncode` —— 3/4 个有
-- `WanVideoUni3C_embeds` —— 3/4 个有
-- `WanVideoVRAMManagement` —— 3/4 个有
-- `easy seed` —— 3/4 个有
-- `Bookmark (rgthree)` —— 2/4 个有
-- `GoogleTranslateTextNode` —— 2/4 个有
-- `Mute / Bypass Relay (rgthree)` —— 2/4 个有
-- `Mute / Bypass Repeater (rgthree)` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageUpscaleWithModel` —— 2/4 个有
+- `RIFE VFI` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `UpscaleModelLoader` —— 2/4 个有
 - `WanVideoContextOptions` —— 2/4 个有
+- `WanVideoExperimentalArgs` —— 2/4 个有
+- `WanVideoSLG` —— 2/4 个有
+- `ACEStepGen` —— 1/4 个有
+- `CR Prompt Text` —— 1/4 个有
 - `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Int` —— 1/4 个有
+- `GenerationParameters` —— 1/4 个有
+- `MultiLineLyrics` —— 1/4 个有
+- `MultiLinePromptACES` —— 1/4 个有
+- `SaveAudio` —— 1/4 个有
 
 ## 典型参数
 

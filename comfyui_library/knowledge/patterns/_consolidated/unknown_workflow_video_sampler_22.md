@@ -1,53 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_22
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.622
-common_nodes: [DiffuEraserLoader, DiffuEraserSampler, Fast Groups Bypasser (rgthree), GetImageSize, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, RH_Sora2_I2V_PRO, RH_Sora2_I2V_Realistic, RH_Sora2_T2V_PRO, RH_Sora2_T2V_Realistic, RepeatImageBatch, SaveVideo, Text, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed, easy compare, easy ifElse, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.938333
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VHS_VideoCombine]
 problems: []
-missing: [ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, easy cleanGpuUsed, easy compare]
-members: [视频生成/图生视频/1972124351518666753.json, 视频生成/文生视频/1972124351518666753.json]
+missing: []
+members: [视频生成/文生视频/LTX 2.5 Director 2.0 导演台视频生成工作流_2092109248682618881.json, 视频生成/文生视频/LTX2.3 数字人 导演台分镜（新版）_2070676408346693633.json, 视频生成/文生视频/视频分段精准控制_ LTX Director_2062416320737669122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1972124351518666753.json、视频生成/文生视频/1972124351518666753.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX 2.5 Director 2.0 导演台视频生成工作流_2092109248682618881.json、视频生成/文生视频/LTX2.3 数字人 导演台分镜（新版）_2070676408346693633.json、视频生成/文生视频/视频分段精准控制_ LTX Director_2062416320737669122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `ImageConcanate`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `MaskToImage`
-- `RH_Sora2_I2V_PRO`
-- `RH_Sora2_I2V_Realistic`
-- `RH_Sora2_T2V_PRO`
-- `RH_Sora2_T2V_Realistic`
-- `RepeatImageBatch`
-- `SaveVideo`
-- `Text`
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LTXDirector`
+- `LTXDirectorGuide`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy ifElse`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `DiffusionModelLoaderKJ` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `LTXVAudioVAEDecode` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
+- `VAEDecodeTiled` —— 2/3 个有
+- `VAELoaderKJ` —— 2/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `LTXVChunkFeedForward` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `ManualSigmas` —— 1/3 个有
+- `Power Lora Loader (rgthree)` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `VAELoader` —— 1/3 个有
 
 ## 典型参数
 
@@ -59,5 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、LayerUtility: ImageScaleByAspectRatio V2、easy cleanGpuUsed、easy compare
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

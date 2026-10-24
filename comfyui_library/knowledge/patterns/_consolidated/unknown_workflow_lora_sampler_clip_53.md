@@ -1,70 +1,86 @@
 ---
 name: unknown_workflow_lora_sampler_clip_53
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.851
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [StringFunction|pysssss, CR Simple Prompt List, GlobalSeed //Inspire]
-members: [图片生成/文生图/1967455683580923905.json, 图片生成/文生图/1967848816110088193.json, 图片生成/文生图/1981285976733638658.json, 图片生成/文生图/1984457132592480258.json, 图片生成/文生图/1985931273690591234.json, 图片生成/文生图/1987591657719836673.json]
+frequency: 8
+level: strong
+coverage: 0.884625
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
+problems: []
+missing: []
+members: [视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版_2064866981614014466.json, 视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json, 视频生成/图生视频/Ltx2.3--Licon-MSR--全能参考生视频_2063821663644512257.json, 视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2068123966476210177.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100051839176765442.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100132977069084673.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2100931168920227841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_53
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1967455683580923905.json、图片生成/文生图/1967848816110088193.json、图片生成/文生图/1981285976733638658.json、图片生成/文生图/1984457132592480258.json、图片生成/文生图/1985931273690591234.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版_2064866981614014466.json、视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json、视频生成/图生视频/Ltx2.3--Licon-MSR--全能参考生视频_2063821663644512257.json、视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json、视频生成/图生视频/image2+LTX-MSR多参3分镜图生视频_2068123966476210177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `UNETLoader`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TextInput_` —— 2/6 个有
-- `CR Simple Prompt List` —— 1/6 个有
-- `GlobalSeed //Inspire` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `ShellAgentPluginInputText` —— 1/6 个有
-- `ShellAgentPluginSaveImage` —— 1/6 个有
-- `StringFunction|pysssss` —— 1/6 个有
+- `Text` —— 6/8 个有
+- `RH_Captioner` —— 5/8 个有
+- `StringReplace` —— 5/8 个有
+- `VHS_VideoCombine` —— 5/8 个有
+- `easy showAnything` —— 5/8 个有
+- `PreviewImage` —— 4/8 个有
+- `RH_RhartImageG2ImageToImage` —— 4/8 个有
+- `TextConcatenate_UTK` —— 4/8 个有
+- `easy imageSplitGrid` —— 4/8 个有
+- `easy indexAnything` —— 4/8 个有
+- `CreateVideo` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `RH_LLMAPI_Pro_Node` —— 2/8 个有
+- `ShowText|pysssss` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `GoogleTranslator` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `LoadVideo` —— 1/8 个有
+- `Qwen3VL_Chat` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 6 | 42% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 6 | 59% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 241 | 241 - 241 | 8 | 100% |
+| 高度 | 50 | 40 - 50 | 8 | 93% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，6 个样本，取值分散，一致性仅 42%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，6 个样本
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（5/6 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：StringFunction|pysssss、CR Simple Prompt List、GlobalSeed //Inspire
+- 宽度 中位数 241，观测区间 241 - 241，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 50，观测区间 40 - 50，8 个样本，取值集中（一致性 93%）

@@ -1,30 +1,42 @@
 ---
 name: unknown_workflow_generic_869
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [RH_RhartVideoV31ProOfficialTextToVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.846
+common_nodes: [CR Prompt Text, Comfly_api_set, GoogleTranslateTextNode, ImageConcanate, LoadImage, Note _O, PDIMAGE_LongerSize, PMRF, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2028673252347875330.json, 视频生成/文生视频/RhartVideoV31ProOfficialTextToVideo_2038487361960546305.json]
+members: [图片生成/图生图/Flux-Kontext图像编辑V4（API 3折版）_1928395662449065986.json, 图片生成/图生图/森系绿圆API_1942827456606703618.json, 图片生成/图生图/透明绿圆API_1942832550396276737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_869
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2028673252347875330.json、视频生成/文生视频/RhartVideoV31ProOfficialTextToVideo_2038487361960546305.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-Kontext图像编辑V4（API 3折版）_1928395662449065986.json、图片生成/图生图/森系绿圆API_1942827456606703618.json、图片生成/图生图/透明绿圆API_1942832550396276737.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_RhartVideoV31ProOfficialTextToVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `GoogleTranslateTextNode`
+- `ImageConcanate`
+- `LoadImage`
+- `Note _O`
+- `PDIMAGE_LongerSize`
+- `PMRF`
+- `SaveImage`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Comfly_Flux_Kontext_Edit` —— 2/3 个有
+- `Comfly_Flux_Kontext` —— 1/3 个有
 
 ## 典型参数
 
@@ -36,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

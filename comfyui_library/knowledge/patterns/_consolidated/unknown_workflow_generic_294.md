@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_generic_294
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.96
-common_nodes: [LoadImage, RH_MinimaxHailuoH3ImageToVideo, SaveVideo]
+coverage: 0.691875
+common_nodes: [JjkText, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax H3 首尾帧图生视频-2K高清_2083210322210545665.json, 视频生成/图生视频/Minimax+H3+2K高清图生视频 首尾帧_2083106036126408706.json, 视频生成/图生视频/最新Minimax+H3+2K高清图生视频_2083117394410696705.json, 视频生成/文生视频/MiniMax-H3+图生视频 首尾帧_2083881087964639233.json, 视频生成/文生视频/MiniMax-H3图生视频首尾帧控制AI生成工作流_2102172531703767041.json]
+members: [图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片Gimage2.0_2046905073803993089.json, 图片生成/文生图/全能图像G Image 2.0文生图-鸡皮T_2046755286349778945.json, 图片生成/文生图/全能图像G Image 2.0文生图_2046765513581268994.json, 图片生成/文生图/全能图像G Image 2.0文生图_2046783471690977282.json, 图片生成/文生图/全能图像G Image 2.0文生图_2047873621825167362.json, 图片生成/文生图/全能图像G-Image 2.0文生图_低价版_2049385172671406081.json, 图片生成/文生图/全能图片G2.0----低价渠道版-文生图_2068282627106361346.json, 图片生成/文生图/全能图片G2.0-低价渠道版 _ 文生图_1890357387222765569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_294
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 首尾帧图生视频-2K高清_2083210322210545665.json、视频生成/图生视频/Minimax+H3+2K高清图生视频 首尾帧_2083106036126408706.json、视频生成/图生视频/最新Minimax+H3+2K高清图生视频_2083117394410696705.json、视频生成/文生视频/MiniMax-H3+图生视频 首尾帧_2083881087964639233.json、视频生成/文生视频/MiniMax-H3图生视频首尾帧控制AI生成工作流_2102172531703767041.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片Gimage2.0_2046905073803993089.json、图片生成/文生图/全能图像G Image 2.0文生图-鸡皮T_2046755286349778945.json、图片生成/文生图/全能图像G Image 2.0文生图_2046765513581268994.json、图片生成/文生图/全能图像G Image 2.0文生图_2046783471690977282.json、图片生成/文生图/全能图像G Image 2.0文生图_2047873621825167362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_MinimaxHailuoH3ImageToVideo`
-- `SaveVideo`
+全部 8 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 1/5 个有
+- `AspectRatioSelect` —— 1/8 个有
+- `CompressImages` —— 1/8 个有
 
 ## 典型参数
 

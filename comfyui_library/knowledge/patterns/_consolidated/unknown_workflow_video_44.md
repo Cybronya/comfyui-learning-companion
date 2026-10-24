@@ -3,46 +3,38 @@ name: unknown_workflow_video_44
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.441
-common_nodes: [Fast Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageScaleToTotalPixels, Int, MathExpression_UTK, Mute / Bypass Repeater (rgthree), PreviewImage, RIFE VFI, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy showAnything]
+coverage: 0.846
+common_nodes: [CR Text, DrawMaskOnImage, ImageFromBatch, LayerMask: MaskGrow, MemoryCleaner, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy sam3GetObjectMask, easy sam3ModelLoader, easy sam3VideoSegmentation]
 problems: []
 missing: []
-members: [数字人/数字人/图片放大自用_2085968508910919682.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json]
+members: [图片生成/图生图/sam3 人物提取，支持 text prompt，支持 选定人物_2037063812876083202.json, 图片生成/文生图/sam3 纯正_2037185503736373249.json, 视频生成/图生视频/sam3 人物提取，支持 text prompt，支持 选定人物_2037061914320179202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_44
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/图片放大自用_2085968508910919682.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/sam3 人物提取，支持 text prompt，支持 选定人物_2037063812876083202.json、图片生成/文生图/sam3 纯正_2037185503736373249.json、视频生成/图生视频/sam3 人物提取，支持 text prompt，支持 选定人物_2037061914320179202.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Bypasser (rgthree)`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `MathExpression_UTK`
-- `Mute / Bypass Repeater (rgthree)`
+- `CR Text`
+- `DrawMaskOnImage`
+- `ImageFromBatch`
+- `LayerMask: MaskGrow`
+- `MemoryCleaner`
 - `PreviewImage`
-- `RIFE VFI`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/3 个有
+- `VHS_VideoInfo`
+- `easy sam3GetObjectMask`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
 
 ## 典型参数
 

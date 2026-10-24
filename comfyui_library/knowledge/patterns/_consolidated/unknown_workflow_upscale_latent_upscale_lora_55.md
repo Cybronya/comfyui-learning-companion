@@ -7,13 +7,13 @@ coverage: 0.927
 common_nodes: [BasicScheduler, CFGGuider, CS-LTXGridDirector, ComfyMathExpression, ConditioningZeroOut, CreateVideo, DualCLIPLoader, GetImageRangeFromBatch, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/2066915488357249026.json, 视频生成/图生视频/2066375964539572225.json, 视频生成/图生视频/2064568765139996673.json, 视频生成/图生视频/2067435786764644353.json, 视频生成/图生视频/2071153016027303937.json]
+members: [视频生成/图生视频/LTX2.3导演台-全自动宫格-双采版_2066915488357249026.json, 视频生成/图生视频/导演台-全自动4-6-9宫格-文本-音频-素材图都可单独编辑_2066375964539572225.json, 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2064568765139996673.json, 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json, 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2071153016027303937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_55
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2066915488357249026.json、视频生成/图生视频/2066375964539572225.json、视频生成/图生视频/2064568765139996673.json、视频生成/图生视频/2067435786764644353.json、视频生成/图生视频/2071153016027303937.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3导演台-全自动宫格-双采版_2066915488357249026.json、视频生成/图生视频/导演台-全自动4-6-9宫格-文本-音频-素材图都可单独编辑_2066375964539572225.json、视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2064568765139996673.json、视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json、视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2071153016027303937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

@@ -1,111 +1,94 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_18
 type: Unknown Workflow
-frequency: 15
+frequency: 14
 level: strong
-coverage: 0.482467
-common_nodes: [CFGGuider, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.740571
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, Compare, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleBy, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PreviewImage, RHHiddenNodes, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, Seed_, SetNode, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/图生视频/2062349602187210754.json, 视频生成/图生视频/2059029201776369665.json, 视频生成/图生视频/2059821367641600001.json, 视频生成/图生视频/2061007691652362242.json, 视频生成/图生视频/2054550329504608258.json, 视频生成/图生视频/2052700463136555010.json, 视频生成/图生视频/2062395094396919810.json, 视频生成/图生视频/2062346953803001857.json, 视频生成/图生视频/2053130511144497154.json, 视频生成/图生视频/2057471351287537666.json, 视频生成/图生视频/2057110543516921858.json, 视频生成/图生视频/2052419444986654721.json, 视频生成/图生视频/2052622530854301697.json, 视频生成/图生视频/2052685375168102401.json, 视频生成/文生视频/LTX23_5图生视频Gemini+VBVR+PromptRelay_2054601890872209409.json]
+members: [视频生成/图生视频/LTX2.0-首尾帧变身视频_2010965829352955906.json, 视频生成/图生视频/LTX2.3-图_文双模式视频_2034099708037173249.json, 视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2008570907488423937.json, 视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2011219169584353282.json, 视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2014635832568717313.json, 视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2043520285718093826.json, 视频生成/图生视频/【LTX2.3-图_文双模式视频】全自动台词探店电商带货首尾帧图生视频文生视频_2062391374607118337.json, 视频生成/图生视频/【LTX2.3-图_文双模式视频】全自动台词设计首尾帧单图可选择_2042089030552133633.json, 视频生成/图生视频/【LTX2.3-首尾帧频】全自动（1.0版本）_2030021580201402370.json, 视频生成/图生视频/【首尾帧视频LTX2.0】自动生成超流畅_2018853440939630593.json, 视频生成/图生视频/全自动首尾帧视频：LTX2.0_2020093034448293890.json, 视频生成/图生视频/双模式视频自动台词设计_2051947423819411458.json, 视频生成/图生视频/超优质LTX2.0-首尾帧视频，速度快，效果好_2011639184884244481.json, 视频生成/文生视频/【LTX2.3-图_文双模式视频】全自动台词设计_2030494259446554626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_18
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2062349602187210754.json、视频生成/图生视频/2059029201776369665.json、视频生成/图生视频/2059821367641600001.json、视频生成/图生视频/2061007691652362242.json、视频生成/图生视频/2054550329504608258.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/LTX2.0-首尾帧变身视频_2010965829352955906.json、视频生成/图生视频/LTX2.3-图_文双模式视频_2034099708037173249.json、视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2008570907488423937.json、视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2011219169584353282.json、视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2014635832568717313.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CFGGuider`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `Compare`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `GetNode`
-- `INTConstant`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `Int`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAddGuideMulti`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVLatentUpsampler`
+- `LTXVEmptyLatentAudio`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `ManualSigmas`
-- `PrimitiveFloat`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
+- `Seed_`
 - `SetNode`
-- `VAEDecodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
+- `VAEDecode`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptRelayEncodeTimeline` —— 13/15 个有
-- `ResizeImagesByLongerEdge` —— 13/15 个有
-- `CLIPTextEncode` —— 12/15 个有
-- `LTXVEmptyLatentAudio` —— 12/15 个有
-- `ResizeImageMaskNode` —— 12/15 个有
-- `ComfySwitchNode` —— 10/15 个有
-- `LTXVAudioVAEEncode` —— 10/15 个有
-- `MelBandRoFormerModelLoader` —— 10/15 个有
-- `MelBandRoFormerSampler` —— 10/15 个有
-- `PrimitiveInt` —— 10/15 个有
-- `SetLatentNoiseMask` —— 10/15 个有
-- `SimpleCalculatorKJ` —— 10/15 个有
-- `SolidMask` —— 10/15 个有
-- `TrimAudioDuration` —— 10/15 个有
-- `ConditioningZeroOut` —— 9/15 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 9/15 个有
-- `LoadAudio` —— 9/15 个有
-- `LoraLoaderModelOnly` —— 9/15 个有
-- `PathchSageAttentionKJ` —— 9/15 个有
-- `UNETLoader` —— 9/15 个有
-- `CheckpointLoaderSimple` —— 6/15 个有
-- `Int` —— 6/15 个有
-- `LTX2AttentionTunerPatch` —— 6/15 个有
-- `LTXVChunkFeedForward` —— 6/15 个有
-- `LTXVScheduler` —— 6/15 个有
-- `easy loraStack` —— 6/15 个有
-- `easy loraStackApply` —— 6/15 个有
-- `Fast Groups Muter (rgthree)` —— 5/15 个有
-- `easy showAnything` —— 5/15 个有
-- `ImageResizeKJv2` —— 2/15 个有
-- `Label (rgthree)` —— 2/15 个有
-- `PromptRelaySmartEncode` —— 2/15 个有
-- `SimpleMath+` —— 2/15 个有
-- `1hew_ImageGridSplit` —— 1/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
-- `JjkConcat` —— 1/15 个有
-- `PreviewAudio` —— 1/15 个有
-- `PreviewImage` —— 1/15 个有
-- `PrimitiveBoolean` —— 1/15 个有
-- `RH_LLMAPI_Pro_Node` —— 1/15 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/15 个有
-- `ResizeImagesByShorterEdge` —— 1/15 个有
-- `ResizeLongestToNode` —— 1/15 个有
-- `TextBoxMira` —— 1/15 个有
-- `VHS_LoadAudioUpload` —— 1/15 个有
-- `easy ifElse` —— 1/15 个有
-- `easy mathInt` —— 1/15 个有
+- `LTXVCropGuides` —— 13/14 个有
+- `LTXVFirstLastFrameControl_TTP` —— 13/14 个有
+- `LTXVLatentUpsampler` —— 13/14 个有
+- `LTXVScheduler` —— 13/14 个有
+- `ManualSigmas` —— 12/14 个有
+- `AudioSeparation` —— 11/14 个有
+- `HAIGC_TimestampTextReplace` —— 11/14 个有
+- `HAIGC_VideoSubtitleTimestampPro` —— 11/14 个有
+- `SubtitleOptimizer` —— 11/14 个有
+- `TranscribeConfig` —— 11/14 个有
+- `VideoTranscribe` —— 11/14 个有
+- `easy showAnything` —— 11/14 个有
+- `BasicScheduler` —— 6/14 个有
+- `VAEDecodeTiled` —— 6/14 个有
+- `Float` —— 5/14 个有
+- `LTXVChunkFeedForward` —— 5/14 个有
+- `LTXVImgToVideoInplace` —— 5/14 个有
+- `ModelPatchTorchSettings` —— 5/14 个有
+- `PathchSageAttentionKJ` —— 5/14 个有
+- `PrimitiveBoolean` —— 5/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 339.5 | 193 - 649 | 12 | 72% |
-| 高度 | 25 | 25 - 25 | 12 | 100% |
+| 宽度 | 97 | 97 - 97 | 14 | 100% |
+| 高度 | 24 | 24 - 24 | 14 | 100% |
 
 ## 常见问题
 
@@ -113,5 +96,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 339.5，观测区间 193 - 649，12 个样本
-- 高度 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，14 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，14 个样本，取值集中（一致性 100%）

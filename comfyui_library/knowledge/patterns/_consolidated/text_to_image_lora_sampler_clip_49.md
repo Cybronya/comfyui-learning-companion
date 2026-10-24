@@ -1,107 +1,95 @@
 ---
 name: text_to_image_lora_sampler_clip_49
 type: Text To Image
-frequency: 15
-level: weak
-coverage: 0.648667
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, GetNode, KSampler, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTParagraphSplitter]
+frequency: 18
+level: strong
+coverage: 0.715722
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PixaromaGroupSwitch, QwenImage21Cache, QwenPERewriteT8, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2短剧拍档｜场景角色文生图分镜出图_2089429856026189826.json, 图片生成/文生图/云信漫剧短剧资产生成系统_2086736400015253506.json, 图片生成/文生图/短剧场景角色资产｜Krea2文生图一键生成_2089808604294635522.json, 图片生成/文生图/短剧拍档V9.0｜Krea2场景角色文生图支持_2089835303707176961.json, 图片生成/文生图/短剧拍档场景角色生成｜Krea2版文生图工作流_2093811071009255426.json, 图片生成/文生图/短剧拍档支持场景和角色V7(Krea2版)_2079196390848286721.json, 图片生成/文生图/短剧拍档支持场景和角色V8.0(Krea2版)_2084946322783825922.json, 图片生成/文生图/短剧角色场景道具多合一｜傲雪AIGC MiniMax H3工作流_2093767569130999810.json, 图片生成/文生图/资产生成短剧拍档V16.1 Qwen2.1可编辑版，文生图图生图短剧资产工具_2106108165623468034.json, 音频生成/音频生成/Qwen2.1全栈短剧工作流｜人物道具场景加参考音频全包_2111099547228393474.json, 音频生成/音频生成/场景角色双支持｜短剧拍档V12.2继承版资产生成_2091795341573181442.json, 音频生成/音频生成/短剧拍档V12.1重置版｜资产生成文生图音频_2092888610189176834.json, 音频生成/音频生成/短剧拍档V13.1预览编辑版 资产生成与角色管理_2098292808837849090.json, 音频生成/音频生成/短剧拍档V13.1预览编辑版 资产生成与角色管理工具_2098705139308777473.json, 音频生成/音频生成/短剧拍档资产生成｜V12.1重置版文生图音频_2091793261215178753.json]
+members: [图片生成/反推提示词/Qwen Image 2.1图像编辑V1.0｜2026开源最强模型图生图工作流_2104509451624603649.json, 图片生成/反推提示词/Qwen Image 2.1图生图图像编辑2026开源最强模型工作流，文生图图生图方案_2107156037143982082.json, 图片生成/反推提示词/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json, 图片生成/反推提示词/Qwen Image 2.1文生图2026开源最强模型工作流，高质量文本到图像生成方案_2107157719223455746.json, 图片生成/反推提示词/Qwen Image 2.1文生图工作流V1.0｜2026开源最强模型高质量出图_2104514477067694082.json, 图片生成/反推提示词/开源最强模型Qwen Image 2.1文生图工作流V1.0｜文生图反推一应俱全_2106917950035947522.json, 图片生成/图生图/Qwen Image 2.1图像编辑2026开源最强模型V1.0工作流，反推提示词图生图方案_2108316718539034625.json, 图片生成/图生图/Qwen Image 2.1图像编辑V1.0增强｜十图编辑提示词优化_2108088006333784066.json, 图片生成/图生图/Qwen Image 2.1图像编辑V1.0｜2026开源最强带反推提示词_2108084985277272066.json, 图片生成/图生图/Qwen Image 2.1图像编辑全功能版｜反推提示词智能配文_2108092452891615233.json, 图片生成/图生图/Qwen Image 2.1多图编辑V1.0，角色一致性设计开源最强图生图_2112676635475533826.json, 图片生成/图生图/Qwen Image 2.1多图编辑V1.0｜角色一致性设计出图_2108091016531234818.json, 图片生成/图生图/开源最强模型Qwen_Image_2.1文生图工作流V1.0｜文生图反推一应俱全_2112364776969035777.json, 图片生成/文生图/Qwen Image 2.1图像编辑工作流｜文生图反推提示词图生图_2108397884294127617.json, 图片生成/文生图/Qwen Image 2.1图生图图像编辑2026开源最强模型工作流_2108630605763272706.json, 图片生成/文生图/Qwen Image 2.1图生图编辑神器｜2026开源最强图像处理_2108410842583752705.json, 图片生成/文生图/Qwen Image 2.1海报生成专属工作流，文生图海报制作字体文本到图像方案_2107585434829279233.json, 视频生成/图生视频/开源最强模型Qwen_Image_2.1文生图工作流V1.0｜文生图反推一应俱全_2108366475907133441.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_49
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/Krea2短剧拍档｜场景角色文生图分镜出图_2089429856026189826.json、图片生成/文生图/云信漫剧短剧资产生成系统_2086736400015253506.json、图片生成/文生图/短剧场景角色资产｜Krea2文生图一键生成_2089808604294635522.json、图片生成/文生图/短剧拍档V9.0｜Krea2场景角色文生图支持_2089835303707176961.json、图片生成/文生图/短剧拍档场景角色生成｜Krea2版文生图工作流_2093811071009255426.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1图像编辑V1.0｜2026开源最强模型图生图工作流_2104509451624603649.json、图片生成/反推提示词/Qwen Image 2.1图生图图像编辑2026开源最强模型工作流，文生图图生图方案_2107156037143982082.json、图片生成/反推提示词/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json、图片生成/反推提示词/Qwen Image 2.1文生图2026开源最强模型工作流，高质量文本到图像生成方案_2107157719223455746.json、图片生成/反推提示词/Qwen Image 2.1文生图工作流V1.0｜2026开源最强模型高质量出图_2104514477067694082.json…）
 
 - **类型**：Text To Image
-- **样本数**：15
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `CR Prompt Text`
 - `EmptyLatentImage`
-- `GetNode`
+- `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RegexExtract`
+- `PathchSageAttentionKJ`
+- `PixaromaGroupSwitch`
+- `QwenImage21Cache`
+- `QwenPERewriteT8`
 - `SaveImage`
-- `SetNode`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTParagraphSplitter`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 13/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 13/15 个有
-- `KSamplerSelect` —— 13/15 个有
-- `PrimitiveBoolean` —— 13/15 个有
-- `RandomNoise` —— 13/15 个有
-- `SamplerCustomAdvanced` —— 13/15 个有
-- `JjkText` —— 12/15 个有
-- `YUAN_TXTJsonExtractor` —— 12/15 个有
-- `solarL_SaveImagesToZip` —— 12/15 个有
-- `孤海注释` —— 12/15 个有
-- `CFGGuider` —— 11/15 个有
-- `ShowText|pysssss` —— 11/15 个有
-- `ComfyMathExpression` —— 8/15 个有
-- `FB_Qwen3TTSVoiceDesign` —— 8/15 个有
-- `SaveAudio` —— 8/15 个有
-- `StringConcatenate` —— 8/15 个有
-- `StringReplace` —— 8/15 个有
-- `easy positive` —— 7/15 个有
-- `LoadImage` —— 6/15 个有
-- `YUAN_TXTReplace` —— 6/15 个有
-- `VAEEncode` —— 5/15 个有
-- `BasicGuider` —— 4/15 个有
-- `YUAN_TXTPreviewContent` —— 4/15 个有
-- `ModelPatchLoader` —— 3/15 个有
-- `ZImageFunControlnet` —— 3/15 个有
-- `CLIPLoaderGGUF` —— 2/15 个有
-- `CustomCombo` —— 2/15 个有
-- `Image Comparer (rgthree)` —— 2/15 个有
-- `PreviewAny` —— 2/15 个有
-- `ResolutionSelector` —— 2/15 个有
-- `TextEncodeQwenImage21` —— 2/15 个有
-- `YuanCustomCombo` —— 2/15 个有
-- `ClipLoaderGGUF` —— 1/15 个有
-- `PreviewImage` —— 1/15 个有
+- `Fast Bypasser (rgthree)` —— 17/18 个有
+- `Mute / Bypass Repeater (rgthree)` —— 17/18 个有
+- `孤海注释` —— 16/18 个有
+- `CR Text Concatenate` —— 13/18 个有
+- `GetNode` —— 13/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/18 个有
+- `ResolutionSelector` —— 13/18 个有
+- `SetNode` —— 13/18 个有
+- `ShowText|pysssss` —— 13/18 个有
+- `Fast Groups Muter (rgthree)` —— 12/18 个有
+- `PixaromaResolution` —— 6/18 个有
+- `PreviewAny` —— 6/18 个有
+- `llama_cpp_instruct_adv` —— 4/18 个有
+- `llama_cpp_model_loader` —— 4/18 个有
+- `llama_cpp_parameters` —— 4/18 个有
+- `ModelAttentionBackend` —— 2/18 个有
+- `EmptyImage` —— 1/18 个有
+- `PreviewImage` —— 1/18 个有
+- `VRAM_Debug` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1080 | 15 | 0% |
-| 高度 | 80 | 80 - 1920 | 15 | 0% |
-| 采样步数 | 4 | 4 - 8 | 15 | 67% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 15 | 63% |
-| 采样算法 | er_sde | - | 15 | 80% |
-| 调度器 | beta | - | 15 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 采样步数 | 4 | 4 - 4 | 18 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 18 | 100% |
+| 采样算法 | er_sde | - | 18 | 100% |
+| 调度器 | beta | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 宽度 | 80 | 80 - 80 | 18 | 100% |
+| 高度 | 80 | 80 - 80 | 18 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 35/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1080，15 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1920，15 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 8，15 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，15 个样本
-- 采样算法 最常用 er_sde，15 个样本，一致性 80%
-- 调度器 最常用 beta，15 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（16/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，18 个样本，一致性 100%
+- 调度器 最常用 beta，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，18 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，18 个样本，取值集中（一致性 100%）
+- 高发问题（35/18 个样本）：Steps较低可能导致细节不足

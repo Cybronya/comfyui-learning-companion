@@ -2,67 +2,74 @@
 name: unknown_workflow_video_sampler_clip_160
 type: Unknown Workflow
 frequency: 4
-level: weak
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy int]
-problems: []
+level: strong
+coverage: 0.82875
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ColorMatch, DWPreprocessor, GetImageSizeAndCount, ImageBlend, ImageResizeKJv2, KSampler, LayerUtility: TextJoin, LoadImage, ModelSamplingSD3, PrimitiveInt, RH_Captioner, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, Zoe-DepthMapPreprocessor]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Wan2.2-14B-文生视频 (8步加速) + 提示词扩写_2064263911179898881.json, 视频生成/文生视频/1952277100332003330.json, 视频生成/文生视频/Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_2063800321012494337.json, 视频生成/文生视频/wan2.2万相文生视频_1987538580979519489.json]
+members: [视频生成/图生视频/wan2.2-动作迁移（WanVace版）_1969267205433159682.json, 视频生成/图生视频/真人动作迁移(深度+Pose双CN)-AIO-Mega【V3】_1970822875995377665.json, 视频生成/图生视频/真人舞蹈动作迁移(深度+Pose双CN)-AIO-MegaV7_1968309282762575874.json, 视频生成/图生视频/真人舞蹈动作迁移(深度+Pose双CN)-AIO-MegaV7_2074750685471657985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_160
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Wan2.2-14B-文生视频 (8步加速) + 提示词扩写_2064263911179898881.json、视频生成/文生视频/1952277100332003330.json、视频生成/文生视频/Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_2063800321012494337.json、视频生成/文生视频/wan2.2万相文生视频_1987538580979519489.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wan2.2-动作迁移（WanVace版）_1969267205433159682.json、视频生成/图生视频/真人动作迁移(深度+Pose双CN)-AIO-Mega【V3】_1970822875995377665.json、视频生成/图生视频/真人舞蹈动作迁移(深度+Pose双CN)-AIO-MegaV7_1968309282762575874.json、视频生成/图生视频/真人舞蹈动作迁移(深度+Pose双CN)-AIO-MegaV7_2074750685471657985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
+- `CheckpointLoaderSimple`
+- `ColorMatch`
+- `DWPreprocessor`
+- `GetImageSizeAndCount`
+- `ImageBlend`
+- `ImageResizeKJv2`
+- `KSampler`
+- `LayerUtility: TextJoin`
+- `LoadImage`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SimpleMath+`
-- `UNETLoader`
+- `PrimitiveInt`
+- `RH_Captioner`
 - `VAEDecode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy int`
+- `WanVaceToVideo`
+- `Zoe-DepthMapPreprocessor`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `QwenLoader` —— 3/4 个有
-- `TextBox` —— 3/4 个有
-- `WanVideoPromptExtender` —— 3/4 个有
-- `CM_IntToFloat` —— 1/4 个有
+- `ImageStitch` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 20 | 4 | 53% |
-| 采样算法 | 1 | 1 - 3.5 | 4 | 33% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | ipndm | - | 4 | 50% |
+| 调度器 | sgm_uniform | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 20，4 个样本
-- 采样算法 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 ipndm，4 个样本，一致性 50%
+- 调度器 最常用 sgm_uniform，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

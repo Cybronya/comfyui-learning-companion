@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_44
 type: Unknown Workflow
-frequency: 14
+frequency: 23
 level: moderate
-coverage: 0.920286
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+coverage: 0.916217
+common_nodes: [RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2040713981702180865.json, 视频生成/图生视频/2067073738482470914.json, 视频生成/图生视频/2048096626652225537.json, 视频生成/图生视频/Seedance2.0_API版-全能参考(创建ID)生视频_2111086775916646401.json, 视频生成/图生视频/2052710149265084417.json, 视频生成/图生视频/2058897517445734401.json, 视频生成/图生视频/2067543410566848514.json, 视频生成/图生视频/2054420948320825346.json, 视频生成/图生视频/2066951039068229633.json, 视频生成/图生视频/2067070454556348417.json, 视频生成/图生视频/2045869563652345857.json, 视频生成/图生视频/2042939919613562882.json, 视频生成/图生视频/2038355966122528769.json, 视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json]
+members: [图片生成/图生图/Flux Kontext 明星简易换装_1936035777396772866.json, 图片生成/图生图/Flux Kontext 皮克斯3D卡通风格_1935283896755867650.json, 图片生成/图生图/Flux Kontext 简易风格转换｜吉卜力_1934427945874190337.json, 图片生成/图生图/Flux Kontext ｜明星同款撕拉片_1936026935900164097.json, 图片生成/图生图/Flux Kontext单图模式_1935238341434462209.json, 图片生成/图生图/Flux Kontext单图模式_1938426985372909570.json, 图片生成/图生图/Flux Kontext单图模式_1970160294544764930.json, 图片生成/图生图/Flux Kontext单图模式_1970163509063524353.json, 图片生成/图生图/Flux Kontext单图模式test_1970168242738241538.json, 图片生成/图生图/Flux Kontext老照片修复_1929918133505789954.json, 图片生成/图生图/Flux Kontext老照片修复_2018170370687246338.json, 图片生成/图生图/Flux.1 kontext 老照片修复_1932800388817195010.json, 图片生成/图生图/Haiilon_修字工作流_1949739628821700609.json, 图片生成/图生图/Kontext  图像编辑 - 服装更换_1935282264177836033.json, 图片生成/图生图/Kontext  图生图基础工作流_1934657765438889985.json, 图片生成/图生图/Kontext  服装更换yy_1936035021419614210.json, 图片生成/图生图/Kontext版本老照片修复，超高清还原度_1941356502609510402.json, 图片生成/图生图/OminiGEn2 一键简易换装_1936643590724685825.json, 图片生成/图生图/老照片修复上色精准融合flux kontext_1929456299971395585.json, 图片生成/图生图/超强修图改字一键完成_1931522596028743682.json, 图片生成/图生图/超强宫崎骏风格一键转绘_1931519950912204801.json, 图片生成/文生图/Flux+Kontext单图模式_1961644288889307138.json, 图片生成/文生图/Kontext   文生图基础工作流_1938513374336450561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_44
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/2040713981702180865.json、视频生成/图生视频/2067073738482470914.json、视频生成/图生视频/2048096626652225537.json、视频生成/图生视频/Seedance2.0_API版-全能参考(创建ID)生视频_2111086775916646401.json、视频生成/图生视频/2052710149265084417.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 明星简易换装_1936035777396772866.json、图片生成/图生图/Flux Kontext 皮克斯3D卡通风格_1935283896755867650.json、图片生成/图生图/Flux Kontext 简易风格转换｜吉卜力_1934427945874190337.json、图片生成/图生图/Flux Kontext ｜明星同款撕拉片_1936026935900164097.json、图片生成/图生图/Flux Kontext单图模式_1935238341434462209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：23
 - **可信度**：中等可信
 - **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `SaveVideo`
+全部 23 个 workflow 都包含：
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 13/14 个有
-- `RH_SparkVideoAssetCreate` —— 13/14 个有
-- `RH_SparkVideoAssetIdsMerge` —— 13/14 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 11/14 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/14 个有
-- `PreviewAny` —— 1/14 个有
-- `RH_SparkVideoAssetQuery` —— 1/14 个有
-- `SoundFlow_TrimAudio` —— 1/14 个有
+- `LoadImage` —— 22/23 个有
+- `RH_Translator` —— 17/23 个有
+- `easy showAnything` —— 6/23 个有
+- `Preview from image [Crystools]` —— 2/23 个有
 
 ## 典型参数
 

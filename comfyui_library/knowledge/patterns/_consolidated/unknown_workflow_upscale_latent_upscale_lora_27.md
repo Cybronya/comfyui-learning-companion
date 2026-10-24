@@ -7,13 +7,13 @@ coverage: 0.901364
 common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
 problems: []
 missing: []
-members: [视频生成/图生视频/2009253788510593026.json, 视频生成/图生视频/2009559520669863938.json, 视频生成/图生视频/2019655709050281986.json, 视频生成/图生视频/2019956098375094274.json, 视频生成/图生视频/2010957418854879234.json, 视频生成/图生视频/2020659052396683265.json, 视频生成/图生视频/2008723483076861954.json, 视频生成/图生视频/2009326383134150658.json, 视频生成/图生视频/2057293549762334721.json, 视频生成/图生视频/2012047557043687425.json, 视频生成/图生视频/2009604954146742273.json]
+members: [视频生成/图生视频/LTX2魔改版自动首尾帧V1_2009253788510593026.json, 视频生成/图生视频/LTX_2_First_Last_I2V_ttp_v2_2009559520669863938.json, 视频生成/图生视频/LTX_2_首尾帧工作流_2019655709050281986.json, 视频生成/图生视频/LTX_2_首尾帧工作流_2019956098375094274.json, 视频生成/图生视频/LTX_2_首尾帧生视频_2010957418854879234.json, 视频生成/图生视频/LTX_2首尾帧工作流_2020659052396683265.json, 视频生成/图生视频/video_ltx2_i2v_unpack_2008723483076861954.json, 视频生成/图生视频/「Supermate」LTX_2_首尾帧工作流_2009326383134150658.json, 视频生成/图生视频/「Supermate」LTX_2_首尾帧工作流_2057293549762334721.json, 视频生成/图生视频/【Supermate 稳定版2】ltx2单图原音驱动工作流_2012047557043687425.json, 视频生成/图生视频/大凯辰光 LTX-2 首尾帧工作流PLus版在线工作流_2009604954146742273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_27
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/2009253788510593026.json、视频生成/图生视频/2009559520669863938.json、视频生成/图生视频/2019655709050281986.json、视频生成/图生视频/2019956098375094274.json、视频生成/图生视频/2010957418854879234.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/LTX2魔改版自动首尾帧V1_2009253788510593026.json、视频生成/图生视频/LTX_2_First_Last_I2V_ttp_v2_2009559520669863938.json、视频生成/图生视频/LTX_2_首尾帧工作流_2019655709050281986.json、视频生成/图生视频/LTX_2_首尾帧工作流_2019956098375094274.json、视频生成/图生视频/LTX_2_首尾帧生视频_2010957418854879234.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11

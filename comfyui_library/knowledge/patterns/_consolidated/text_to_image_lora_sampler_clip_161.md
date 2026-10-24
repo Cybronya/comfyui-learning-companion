@@ -1,93 +1,82 @@
 ---
 name: text_to_image_lora_sampler_clip_161
 type: Text To Image
-frequency: 7
+frequency: 10
 level: strong
-coverage: 0.678429
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, PrimitiveBoolean, PrimitiveInt, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.9001
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, easy seed]
-members: [图片生成/图生图/2102591631139622913.json, 图片生成/文生图/QWen2.1文生图工作流｜千问模型文字生图轻松创作_2106996835603800065.json, 图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json, 图片生成/文生图/Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json, 视频生成/图生视频/Qwen Image 2.1故事分镜参考图生成支持九宫格六宫格四宫格，图生视频方案_2107217385190158338.json, 视频生成/图生视频/Qwen_Image_2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2105107539770830850.json, 视频生成/图生视频/Qwen_Image_2.1故事分镜参考图生成，支持九宫格六宫格四宫格三种模式_2106549378277273601.json]
+missing: []
+members: [图片生成/图生图/Topaz Video星光放大工作流，视频超分高清增强方案_2103590475516174338.json, 图片生成/图生图/Topaz Video高清放大5分钟搞定｜30秒视频4k超分，视频超分性价比之选_2100468705477091329.json, 图片生成/图生图/Topaz Video高清放大工作流非星光版，视频超分分辨率提升方案_2103591945984634882.json, 图片生成/图生图/Topaz星光高清放大模型数毛党最爱地表最强放大模型，视频超分高清工具_2107545542661328897.json, 图片生成/图生图/Topaz星光高清放大模型视频超分处理工作流_2101390536962830338.json, 图片生成/图生图/Topaz星光高清放大模型｜数毛党最爱地表最强，视频超分拉满_2107366759350235137.json, 图片生成/图生图/VOSR 2.0视频高清放大 分辨率提升画质增强_2104993429301321729.json, 图片生成/图生图/VOSR 2.0视频高清放大｜视频超分画质翻倍｜老片修复清晰可见_2104769134167945217.json, 图片生成/图生图/VOSR 2.0视频高清放大｜超分修复一步到位_2097892476068646913.json, 图片生成/文生图/VOSR2超分放大 文生图高清增强处理工具_2098709966747160578.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_161
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/2102591631139622913.json、图片生成/文生图/QWen2.1文生图工作流｜千问模型文字生图轻松创作_2106996835603800065.json、图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json、图片生成/文生图/Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json、视频生成/图生视频/Qwen Image 2.1故事分镜参考图生成支持九宫格六宫格四宫格，图生视频方案_2107217385190158338.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Topaz Video星光放大工作流，视频超分高清增强方案_2103590475516174338.json、图片生成/图生图/Topaz Video高清放大5分钟搞定｜30秒视频4k超分，视频超分性价比之选_2100468705477091329.json、图片生成/图生图/Topaz Video高清放大工作流非星光版，视频超分分辨率提升方案_2103591945984634882.json、图片生成/图生图/Topaz星光高清放大模型数毛党最爱地表最强放大模型，视频超分高清工具_2107545542661328897.json、图片生成/图生图/Topaz星光高清放大模型视频超分处理工作流_2101390536962830338.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
-- `LoadImage` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `easy seed` —— 5/7 个有
-- `孤海注释` —— 5/7 个有
-- `ResolutionSelector` —— 4/7 个有
-- `EmptyImage` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `RHLLMChatNode` —— 3/7 个有
-- `StringConcatenate` —— 3/7 个有
-- `BatchImagesNode` —— 2/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `SaveImageAdvanced` —— 2/7 个有
-- `TextGenerate` —— 2/7 个有
-- `TextGenerateLTX2Prompt` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
+- `LoadVideo` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `RH_Astra` —— 6/10 个有
+- `RunningHub Deepcleaner` —— 5/10 个有
+- `CreateVideo` —— 4/10 个有
+- `GetVideoComponents` —— 4/10 个有
+- `VOSR2ModelLoader` —— 4/10 个有
+- `VOSR2Upscale` —— 4/10 个有
+- `DF_Integer` —— 3/10 个有
+- `JWInteger` —— 3/10 个有
+- `QZ_ResolutionPreset` —— 3/10 个有
+- `SaveImage` —— 3/10 个有
+- `VHS_LoadVideo` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
+- `VHS_VideoInfoLoaded` —— 2/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、easy seed
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

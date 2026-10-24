@@ -1,96 +1,75 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_8
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.6928
-common_nodes: [ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, UNETLoader, VAEDecodeTiled, VAELoader]
+coverage: 0.882091
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.5数字+Prompt+Relay提示词分段控制_2087942580880367617.json, 数字人/数字人/LTX2.5数字-agent调用版_2100471648406294530.json, 数字人/数字人/LTX2.5，音频驱动口播数字人_2089890373689757697.json, 视频生成/图生视频/2045851201853464578.json, 视频生成/图生视频/2042456955284889601.json, 视频生成/图生视频/2045890888169164802.json, 视频生成/图生视频/2050462775322923010.json, 视频生成/文生视频/LTX 2.3  数字人对口型优化加速版_2035972657669214210.json, 视频生成/文生视频/LTX 2.3  数字人对口型优化加速版_2050177856264785921.json, 视频生成/文生视频/图生视频，上传图像＋音频，即可做出你想要的短视频，短剧，_2043763255142785026.json]
+members: [视频生成/图生视频/Characters Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+H3+_2104367488405434370.json, 视频生成/图生视频/H3 People Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107279313535062017.json, 视频生成/图生视频/H3 多参考双采｜5秒一致性版_2098723223021113346.json, 视频生成/图生视频/H3 角色替换_2085882691152605185.json, 视频生成/图生视频/H3+6宫格故事板StoryBoard 生成10~15流畅视频_2093301213247922177.json, 视频生成/图生视频/H3_People_Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107331983230717954.json, 视频生成/图生视频/H3_People_Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107443341985148930.json, 视频生成/图生视频/People+Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+H3+_2110176278711193602.json, 视频生成/图生视频/Videos of People Dancing人物跳舞视频多种舞蹈风格 H3_2100759098823372802.json, 视频生成/图生视频/h3双采样高清流_2092571899955081218.json, 视频生成/视频生视频/Minimax+H3+多参角色替换Lora，二采放大_2106244704005345281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/LTX2.5数字+Prompt+Relay提示词分段控制_2087942580880367617.json、数字人/数字人/LTX2.5数字-agent调用版_2100471648406294530.json、数字人/数字人/LTX2.5，音频驱动口播数字人_2089890373689757697.json、视频生成/图生视频/2045851201853464578.json、视频生成/图生视频/2042456955284889601.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Characters Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+H3+_2104367488405434370.json、视频生成/图生视频/H3 People Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107279313535062017.json、视频生成/图生视频/H3 多参考双采｜5秒一致性版_2098723223021113346.json、视频生成/图生视频/H3 角色替换_2085882691152605185.json、视频生成/图生视频/H3+6宫格故事板StoryBoard 生成10~15流畅视频_2093301213247922177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImageMaskNode`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
+- `SplitSigmas`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioInfo` —— 9/10 个有
-- `CreateVideo` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 9/10 个有
-- `ResizeImagesByLongerEdge` —— 9/10 个有
-- `SaveVideo` —— 9/10 个有
-- `CLIPTextEncode` —— 8/10 个有
-- `AudioCrop` —— 7/10 个有
-- `CFGGuider` —— 7/10 个有
-- `Display Any (rgthree)` —— 7/10 个有
-- `DualCLIPLoader` —— 7/10 个有
-- `LTXVChunkFeedForward` —— 7/10 个有
-- `LTXVCropGuides` —— 7/10 个有
-- `LoraLoaderModelOnly` —— 7/10 个有
-- `PathchSageAttentionKJ` —— 7/10 个有
-- `PrimitiveFloat` —— 7/10 个有
-- `ShowText|pysssss` —— 7/10 个有
-- `SimpleMath+` —— 7/10 个有
-- `TextInput_` —— 7/10 个有
-- `VAELoaderKJ` —— 7/10 个有
-- `RH_LLMAPI_NODE` —— 5/10 个有
-- `CR Text` —— 4/10 个有
-- `CLIPLoader` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `JoinStrings` —— 3/10 个有
-- `LTXVDualCFGGuider` —— 3/10 个有
-- `Label (rgthree)` —— 3/10 个有
-- `MelBandRoFormerModelLoader` —— 3/10 个有
-- `MelBandRoFormerSampler` —— 3/10 个有
-- `PreviewAny` —— 3/10 个有
-- `PreviewAudio` —— 3/10 个有
-- `SimpleCalculatorKJ` —— 3/10 个有
-- `llama_cpp_instruct_adv` —— 3/10 个有
-- `llama_cpp_model_loader` —— 3/10 个有
-- `llama_cpp_parameters` —— 3/10 个有
-- `llama_cpp_unload_model` —— 3/10 个有
-- `ConditioningZeroOut` —— 2/10 个有
-- `PromptRelaySmartEncode` —— 2/10 个有
-- `RH_LLMAPI_Pro_Node` —— 2/10 个有
-- `ResolutionSelector` —— 1/10 个有
-- `VHS_VideoCombine` —— 1/10 个有
+- `MiniMaxH3SigmaShift` —— 10/11 个有
+- `VHS_VideoCombine` —— 10/11 个有
+- `LoraLoaderModelOnly` —— 9/11 个有
+- `ManualSigmas` —— 8/11 个有
+- `ModelPreviewOverrideKJ` —— 8/11 个有
+- `CR Prompt Text` —— 6/11 个有
+- `RHHiddenNodes` —— 6/11 个有
+- `easy showAnything` —— 6/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/11 个有
+- `PrimitiveStringMultiline` —— 3/11 个有
+- `VHS_LoadVideo` —— 3/11 个有
+- `CreateVideo` —— 2/11 个有
+- `EmptyImage` —— 2/11 个有
+- `FlashVSRNode` —— 2/11 个有
+- `H3SigmaRefiner` —— 2/11 个有
+- `MiniMaxLowVRAMAttention` —— 2/11 个有
+- `PreviewImage` —— 2/11 个有
+- `SaveImage` —— 2/11 个有
+- `SaveVideo` —— 2/11 个有
+- `Sleep` —— 2/11 个有
+- `Text` —— 2/11 个有
+- `ImageResizeKJv2` —— 1/11 个有
+- `Lora Loader Stack (rgthree)` —— 1/11 个有
+- `SolAttnMiniMax` —— 1/11 个有
+- `easy float` —— 1/11 个有
 
 ## 典型参数
 

@@ -3,61 +3,63 @@ name: unknown_workflow_video_sampler_clip_256
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.77
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVScheduler, LTXVSeparateAVLatent, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.946
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResize+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, WanVideoVRAMManagement]
 problems: []
 missing: []
-members: [视频生成/文生视频/LTX-2 GGUF量化版文生视频_2011733231783120897.json, 视频生成/文生视频/低显存LTX-2文生视频（无需PLUS会员即可运行）_2010519991778549762.json]
+members: [视频生成/图生视频/【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.json, 视频生成/图生视频/万相视频Wan2.1超级首尾帧控制_1905171860894437377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_256
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/LTX-2 GGUF量化版文生视频_2011733231783120897.json、视频生成/文生视频/低显存LTX-2文生视频（无需PLUS会员即可运行）_2010519991778549762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.json、视频生成/图生视频/万相视频Wan2.1超级首尾帧控制_1905171860894437377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoaderGGUF`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `VAEDecodeTiled`
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResize+`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `CLIPVisionLoader` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+- `Upscale Model Loader` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,6 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

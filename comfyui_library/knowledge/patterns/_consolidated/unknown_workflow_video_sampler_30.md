@@ -7,13 +7,13 @@ coverage: 0.7465
 common_nodes: [AILab_QwenVL, CR Text, CR Text Concatenate, Compare, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetImageSize, GetVideoComponents, ImageResize+, LayerUtility: PurgeVRAM V2, LoadImage, PrimitiveBoolean, RHHiddenNodes, ShowText|pysssss, Text Multiline, VHS_VideoCombine, easy ifElse, easy imageConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/1982163769721798658.json, 视频生成/文生视频/【规格化提示词】Sroa2文生视频-FlashVSR放大_1981838740345757698.json]
+members: [视频生成/图生视频/【规格化提示词】Sroa2图生视频-FlashVSR放大_1982163769721798658.json, 视频生成/文生视频/【规格化提示词】Sroa2文生视频-FlashVSR放大_1981838740345757698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_30
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1982163769721798658.json、视频生成/文生视频/【规格化提示词】Sroa2文生视频-FlashVSR放大_1981838740345757698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【规格化提示词】Sroa2图生视频-FlashVSR放大_1982163769721798658.json、视频生成/文生视频/【规格化提示词】Sroa2文生视频-FlashVSR放大_1981838740345757698.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

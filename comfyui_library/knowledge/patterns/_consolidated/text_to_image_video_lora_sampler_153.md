@@ -7,13 +7,13 @@ coverage: 0.7055
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntToFloat, Display Int (rgthree), DrawViTPose, EmptyLatentImage, GetImageRangeFromBatch, GetNode, ImageBatchMulti, ImageResizeKJv2, ImageScale, Int, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, SimpleMath+, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimateToVideo, easy float, easy seed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2102907067622313985.json, 视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2104385345507909634.json, 视频生成/图生视频/2062939588565487618.json, 视频生成/图生视频/2062465993141739521.json]
+members: [视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2102907067622313985.json, 视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2104385345507909634.json, 视频生成/图生视频/自动跟随完美复制跳舞动作（懒人版）_2062939588565487618.json, 视频生成/图生视频/风格转绘 动漫转绘_2062465993141739521.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_153
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2102907067622313985.json、视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2104385345507909634.json、视频生成/图生视频/2062939588565487618.json、视频生成/图生视频/2062465993141739521.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2102907067622313985.json、视频生成/图生视频/动作迁移一致性优化版，表情调节与手部胸部抖动修复的图生视频工作流_2104385345507909634.json、视频生成/图生视频/自动跟随完美复制跳舞动作（懒人版）_2062939588565487618.json、视频生成/图生视频/风格转绘 动漫转绘_2062465993141739521.json）
 
 - **类型**：Text To Image
 - **样本数**：4

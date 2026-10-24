@@ -1,73 +1,90 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_18
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.924
-common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, ConditioningZeroOut, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: moderate
+coverage: 0.848
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResize+, ImpactMinMax, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/文生图/Boogu_全能文生图_更擅长摄影_2067781308012646401.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大电影级文生图+画质色彩增强版_1996033169059201026.json]
+members: [图片生成/图生图/Flux2-klein+zimage单图产品人物打光_2001650697034711041.json, 图片生成/图生图/Flux2kleinzimage单图产品人物打光_2052717140012216322.json, 图片生成/图生图/Flux2kleinzimage单图产品人物打光_2059441442510172161.json, 图片生成/图生图/Flux2kleinzimage单图产品人物打光_2064542050950934529.json, 图片生成/图生图/产品精修_2064532810496565250.json, 图片生成/图生图/单图产品人物打光-Flux2-klein+z image_2037502724975108097.json, 图片生成/图生图/打光_2064264165769961473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Boogu_全能文生图_更擅长摄影_2067781308012646401.json、图片生成/文生图/Z-Image+seedvr2.5.1放大电影级文生图+画质色彩增强版_1996033169059201026.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2-klein+zimage单图产品人物打光_2001650697034711041.json、图片生成/图生图/Flux2kleinzimage单图产品人物打光_2052717140012216322.json、图片生成/图生图/Flux2kleinzimage单图产品人物打光_2059441442510172161.json、图片生成/图生图/Flux2kleinzimage单图产品人物打光_2064542050950934529.json、图片生成/图生图/产品精修_2064532810496565250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
 - `ConditioningZeroOut`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImpactMinMax`
+- `KSamplerSelect`
+- `LoadImage`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactInt` —— 1/2 个有
-- `LayerUtility: ImageReel` —— 1/2 个有
-- `LayerUtility: ImageReelComposit` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `CR Text` —— 6/7 个有
+- `DF_Integer` —— 6/7 个有
+- `Get Image Size` —— 6/7 个有
+- `ShowText|pysssss` —— 5/7 个有
+- `UltimateSDUpscaleCustomSample` —— 5/7 个有
+- `UpscaleModelLoader` —— 5/7 个有
+- `llama_cpp_instruct_adv` —— 5/7 个有
+- `llama_cpp_model_loader` —— 5/7 个有
+- `llama_cpp_parameters` —— 5/7 个有
+- `AdvancedLyingSigmaSampler` —— 4/7 个有
+- `Int` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `GetImageSize+` —— 1/7 个有
+- `GrowMask` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `InvertMask` —— 1/7 个有
+- `JoinImageWithAlpha` —— 1/7 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/7 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/7 个有
+- `Upscale Model Loader` —— 1/7 个有
+- `YUAN_TXTConvertAny` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 7 | - | 2 | 57% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 7，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,0 +1,64 @@
+---
+key: 图片生成/图生图/Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449.json
+name: Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449.json
+hash: 39e38e790aede4c4
+coverage: 0.95
+learned_at: 2026-10-23 11:17:16
+nodes: [CLIPLoader, VAELoader, KSampler, LatentCutToBatch, PreviewImage, VAEDecode, CLIPTextEncode, ModelSamplingAuraFlow, LoadImage, GetImageSize, EmptyQwenImageLayeredLatentImage, CLIPTextEncode, ImageScaleToTotalPixels, JWInteger, ReferenceLatent, ReferenceLatent, UNETLoader, VAEEncode, SaveImage, LoadImage]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 874980369439145, "steps": 20}
+---
+
+# 图片生成/图生图/Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（20 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `KSampler` ★核心
+- `LatentCutToBatch`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingAuraFlow`
+- `LoadImage`
+- `GetImageSize`
+- `EmptyQwenImageLayeredLatentImage`
+- `CLIPTextEncode` ★核心
+- `ImageScaleToTotalPixels`
+- `JWInteger`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `UNETLoader` ★核心
+- `VAEEncode` ★核心
+- `SaveImage`
+- `LoadImage`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `874980369439145`
+- `steps` = `20`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **95%**（19/20）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`KSampler`、`LatentCutToBatch`、`VAEDecode`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`LoadImage`、`GetImageSize`、`EmptyQwenImageLayeredLatentImage`、`ImageScaleToTotalPixels`、`JWInteger`、`ReferenceLatent`、`UNETLoader`、`VAEEncode`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、ReferenceLatent

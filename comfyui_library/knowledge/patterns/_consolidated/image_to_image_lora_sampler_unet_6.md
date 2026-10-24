@@ -1,36 +1,35 @@
 ---
 name: image_to_image_lora_sampler_unet_6
 type: Image To Image
-frequency: 8
+frequency: 42
 level: moderate
-coverage: 0.798875
-common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.814595
+common_nodes: [CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
-missing: [Bookmark (rgthree), easy imageSize]
-members: [图片生成/图生图/2011705037017325569.json, 图片生成/图生图/2011767661780275201.json, 图片生成/图生图/2046950886362062849.json, 图片生成/文生图/1985126465392037890.json, 图片生成/文生图/人物超新全方位视角转换（新版）_1999135446234001410.json, 图片生成/文生图/全新多角度视角转换（新版）_1999145049768198145.json, 视频生成/图生视频/2010896559696777218.json, 视频生成/图生视频/图像转角度｜单张一致性LoRA_+_多角度LoRAQwen_Edit_2511_2100191664584351746.json]
+missing: []
+members: [图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095059334844731393.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095059817814646785.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095069954918928385.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095193503121887233.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2102291710595387394.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2107768117282828289.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2107833844169789441.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2108264468500271106.json, 图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2110232885860065282.json, 图片生成/图生图/去AI感 超真实 漫画转真人  动漫转真人  线稿转真人_2088325186058809345.json, 图片生成/图生图/图像编辑  图片编辑 改图 洗图_2110813472928919554.json, 图片生成/图生图/图像编辑  图片编辑 洗图 改图 Z_image_2110802590136098818.json, 图片生成/图生图/图像编辑  图片编辑 洗图 改图 Z_image_2110823429690712066.json, 图片生成/图生图/图像编辑  图片编辑 洗图 改图 Z_image_2110961914967846913.json, 图片生成/图生图/无AI感  动漫转真人 2D转3D 多次优化 超写实_2047540712924782593.json, 图片生成/图生图/洗图+写实人物_2042946044908015618.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2078184717798694914.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2082914604686077953.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2086688123274223618.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2086824685748178946.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087597659141005314.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087779218162802690.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087779778685390850.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087784686755082241.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087786772498567170.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087794238888173569.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087841468194054145.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2087962798943989762.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2088165010789982209.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2088295764672995329.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2088326959494418434.json, 图片生成/图生图/漫画转真人  动漫转真人  线稿转真人   去AI感 超真实_2089287576397107201.json, 图片生成/图生图/漫画转真人_动漫转真人_线稿转真人_去AI感_超真实_2088517466644369409.json, 图片生成/图生图/线稿转实景   手稿转效果图    线稿上色  建筑 室内设计_2059897844139646978.json, 图片生成/图生图/超丝滑~Qwen+ZI二次元转真人！_2064229382738235394.json, 图片生成/图生图/超好用Qwen+ZI二次元转真人_2100059570327609346.json, 图片生成/图生图/超好用Qwen+ZI二次元转真人_2100752802795573250.json, 图片生成/图生图/超好用Qwen+ZI二次元转真人_2100754627636580354.json, 图片生成/图生图/风格转换新版本2.0 动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2078455174489788417.json, 图片生成/图生图/（质感超强）Qwen+ZI二次元转真人，真实感转绘_2033341653011931137.json, 图片生成/图生图/（超好用）Qwen+ZI风格迁移，动漫转真人_2039899405108645890.json, 视频生成/图生视频/圆梦（二次元来现实）_2066322228135940097.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_6
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/2011705037017325569.json、图片生成/图生图/2011767661780275201.json、图片生成/图生图/2046950886362062849.json、图片生成/文生图/1985126465392037890.json、图片生成/文生图/人物超新全方位视角转换（新版）_1999135446234001410.json…）
+> 由 `engine/knowledge_consolidation` 从 42 个 workflow 归纳得出（图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095059334844731393.json、图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095059817814646785.json、图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095069954918928385.json、图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2095193503121887233.json、图片生成/图生图/动漫转真人 漫画转真人  线稿转真人  线稿上色 去AI感 超真实_2102291710595387394.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
+- **样本数**：42
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGNorm`
+全部 42 个 workflow 都包含：
 - `CLIPLoader`
 - `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEdit`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
@@ -38,43 +37,53 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/8 个有
-- `EmptySD3LatentImage` —— 4/8 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `easy imageSize` —— 4/8 个有
-- `QwenMultiangleCameraNode` —— 3/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `Bookmark (rgthree)` —— 1/8 个有
-- `EmptyImage` —— 1/8 个有
-- `FluxKontextImageScale` —— 1/8 个有
-- `ImageConcanate` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `easy promptList` —— 1/8 个有
+- `easy showAnything` —— 41/42 个有
+- `PreviewImage` —— 35/42 个有
+- `CLIPTextEncode` —— 34/42 个有
+- `ConditioningZeroOut` —— 34/42 个有
+- `Qwen3_VQA` —— 34/42 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 33/42 个有
+- `LayerUtility: PurgeVRAM V2` —— 30/42 个有
+- `SeedVR2LoadDiTModel` —— 30/42 个有
+- `SeedVR2LoadVAEModel` —— 30/42 个有
+- `SeedVR2VideoUpscaler` —— 30/42 个有
+- `WD14Tagger|pysssss` —— 24/42 个有
+- `ImageConcanate` —— 18/42 个有
+- `LayerUtility: ImageReel` —— 18/42 个有
+- `LayerUtility: ImageReelComposit` —— 18/42 个有
+- `JoinStrings` —— 15/42 个有
+- `PIP_图像联结` —— 14/42 个有
+- `ShowText|pysssss` —— 11/42 个有
+- `ImageScaleBy` —— 10/42 个有
+- `easy cleanGpuUsed` —— 10/42 个有
+- `easy clearCacheAll` —— 10/42 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/42 个有
+- `GetNode` —— 8/42 个有
+- `SetNode` —— 8/42 个有
+- `CompressImages` —— 1/42 个有
+- `Image Comparer (rgthree)` —— 1/42 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 8 | 36% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 8 | 53% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 10 | 5 - 10 | 42 | 82% |
+| Prompt 约束强度(CFG) | 1.6 | 1 - 1.6 | 42 | 78% |
+| 采样算法 | euler | - | 42 | 60% |
+| 调度器 | simple | - | 42 | 60% |
+| 重绘幅度 | 0.35 | 0.35 - 1 | 42 | 49% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 78/42 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，8 个样本，取值分散，一致性仅 36%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（6/8 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Bookmark (rgthree)、easy imageSize
+- 采样步数 中位数 10，观测区间 5 - 10，42 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 1.6，观测区间 1 - 1.6，42 个样本
+- 采样算法 最常用 euler，42 个样本，一致性 60%
+- 调度器 最常用 simple，42 个样本，一致性 60%
+- 重绘幅度 中位数 0.35，观测区间 0.35 - 1，42 个样本，取值分散，一致性仅 49%
+- 高发问题（78/42 个样本）：Steps较低可能导致细节不足

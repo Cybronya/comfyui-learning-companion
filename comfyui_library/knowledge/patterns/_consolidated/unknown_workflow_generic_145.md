@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_145
 type: Unknown Workflow
-frequency: 7
+frequency: 12
 level: moderate
-coverage: 0.979571
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.889
+common_nodes: [RH_Sora2_T2V, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_from_photo_2_miniature.json, comfyui-workflow-templates-json/api_kling_o3_image.json, comfyui-workflow-templates-json/api_nano_banana_pro.json, comfyui-workflow-templates-json/template-multistyle-magazine-cover-nanobananapro.json, comfyui-workflow-templates-json/template_character_portrait_relighting.json, comfyui-workflow-templates-json/template_contact_sheet-step_1.app.json, comfyui-workflow-templates-json/template_sferro21_product_ad.app.json]
+members: [视频生成/文生视频/全能视频S Text to Video_1991786376163176449.json, 视频生成/文生视频/全能视频S-文生视频-RH直接使用版！！！_1978017467010351105.json, 视频生成/文生视频/全能视频S.0 Text 2 Video_1977633451811721218.json, 视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json, 视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json, 视频生成/文生视频/全能视频S文生视频-打太极+跳舞+对打_1974653948734869506.json, 视频生成/文生视频/全能视频S文生视频-直播卖货+日常vlog+遥遥领先_1974243774320783362.json, 视频生成/文生视频/全能视频S文生视频_1987477979272032258.json, 视频生成/文生视频/全能视频S文生视频_2001107406144892930.json, 视频生成/文生视频/全能视频S梭罗2文生视频_2002992476006805505.json, 视频生成/文生视频/全能视频S视频生成（新版）_1983079288096366594.json, 视频生成/文生视频/最简单的文生视频_1988203879588347906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_145
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/api_from_photo_2_miniature.json、comfyui-workflow-templates-json/api_kling_o3_image.json、comfyui-workflow-templates-json/api_nano_banana_pro.json、comfyui-workflow-templates-json/template-multistyle-magazine-cover-nanobananapro.json、comfyui-workflow-templates-json/template_character_portrait_relighting.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/全能视频S Text to Video_1991786376163176449.json、视频生成/文生视频/全能视频S-文生视频-RH直接使用版！！！_1978017467010351105.json、视频生成/文生视频/全能视频S.0 Text 2 Video_1977633451811721218.json、视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json、视频生成/文生视频/全能视频S2 文生视频_1986706115717230593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+全部 12 个 workflow 都包含：
+- `RH_Sora2_T2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GeminiImage2Node` —— 6/7 个有
-- `BatchImagesNode` —— 5/7 个有
-- `KlingOmniProImageNode` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
+- `DF_Text_Box` —— 1/12 个有
 
 ## 典型参数
 

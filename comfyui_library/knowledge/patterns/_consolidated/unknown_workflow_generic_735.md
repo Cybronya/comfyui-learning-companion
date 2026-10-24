@@ -1,50 +1,39 @@
 ---
 name: unknown_workflow_generic_735
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8
-common_nodes: [Any To String (mtb), Bjornulf_CombineTexts, Bjornulf_ShowInt, ComfyMathExpression, ImageScaleToTotalPixels, Int, IntToText, PreviewAny, PreviewImage, PrimitiveBoolean, RHBatchImages:, RHExtractImage, RHLLMChatNode, RHUploadZip, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageCount]
+frequency: 4
+level: moderate
+coverage: 0.84525
+common_nodes: [LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, SaveVideo, Text Multiline]
 problems: []
-missing: [Any To String (mtb), RHBatchImages:, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageCount]
-members: [图片生成/图生图/2085349994269331457.json, 数字人/数字人/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json]
+missing: []
+members: [图片生成/文生图/全能视频S25（老程)_2019700616704036866.json, 视频生成/图生视频/全能视频V3.1首尾帧工作流（老程）_2015721236034232322.json, 视频生成/图生视频/海螺2.3智能体首帧I2V（老程）_2017032362168688641.json, 视频生成/图生视频/（昆昆）_2046917681038761985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_735
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2085349994269331457.json、数字人/数字人/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能视频S25（老程)_2019700616704036866.json、视频生成/图生视频/全能视频V3.1首尾帧工作流（老程）_2015721236034232322.json、视频生成/图生视频/海螺2.3智能体首帧I2V（老程）_2017032362168688641.json、视频生成/图生视频/（昆昆）_2046917681038761985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
-- `Bjornulf_CombineTexts`
-- `Bjornulf_ShowInt`
-- `ComfyMathExpression`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `IntToText`
+全部 4 个 workflow 都包含：
+- `LoadImage`
 - `PreviewAny`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHLLMChatNode`
-- `RHUploadZip`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `Text`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy imageCount`
+- `RH_LLMAPI_Pro_Node`
+- `SaveVideo`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Veo3_Image2Video` —— 2/4 个有
+- `RH_Hailuo_Image2Video` —— 1/4 个有
+- `RH_Sora2_I2V_PRO` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
@@ -56,5 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Any To String (mtb)、RHBatchImages:、easy batchAnything、easy forLoopEnd、easy forLoopStart
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

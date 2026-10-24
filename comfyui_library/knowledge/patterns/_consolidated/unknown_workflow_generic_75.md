@@ -1,40 +1,44 @@
 ---
 name: unknown_workflow_generic_75
 type: Unknown Workflow
-frequency: 11
+frequency: 17
 level: moderate
-coverage: 0.956091
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.718118
+common_nodes: [CR Text, ImageStitch, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, RunningHub Deepcleaner, SaveImage, StringFunction|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json, 音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json, 音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json, 音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json, 音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json, 音频生成/音频生成/Index TTS2 声音克隆_2070816843719331841.json, 音频生成/音频生成/Index TTS2 声音克隆工作流_2051515883343888385.json, 音频生成/音频生成/indexTTS2-有声书制作 多角色声音_2064251607080071169.json, 音频生成/音频生成/乱神版-Easy IndexTTS2情感控制（单人）_2073213371335405569.json, 音频生成/音频生成/乱神版-超好用Easy IndexTTS2无限组合版(双人)_1970148854437998593.json, 音频生成/音频生成/声音克隆超好用Easy IndexTTS2无限组合版(双人)_1970161118201212929.json]
+members: [图片生成/图生图/一键复刻产品详情海报_2030921849965645826.json, 图片生成/图生图/仿图洗图 -电商海报洗图复刻-产品详情海报一键生成_2071030857091084289.json, 图片生成/图生图/换装换脸 海报洗图 电商海报洗图 -产品详情海报_2071415102464684033.json, 图片生成/图生图/洗图-电商海报洗图复刻-产品详情海报一键生成_2051179333011685377.json, 图片生成/图生图/电商海报复刻 产品详情海报一键生成_2027921690084253698.json, 图片生成/图生图/电商海报复刻 产品详情海报一键生成_2031732163774779393.json, 图片生成/图生图/电商海报复刻+产品详情海报一键生成_2066319867673923585.json, 图片生成/图生图/电商海报洗图复刻-产品详情海报一键生成+主图sku海报参考洗图_2067494506420858881.json, 图片生成/图生图/详情页制作 风格参考 平面广告设计 电商海报复刻 产品详情海报一键生成_2048988751682080769.json, 图片生成/图生图/详情页制作_风格参考_平面广告设计_电商海报复刻_产品详情海报一键生成_2098968742955933697.json, 图片生成/图生图/详情页制作_风格参考_平面广告设计_电商海报复刻_产品详情海报一键生成_2100164602142216194.json, 图片生成/图生图/详情页制作_风格参考_平面广告设计_电商海报复刻_产品详情海报一键生成_2101489366832082945.json, 图片生成/图生图/详情页制作_风格参考_平面广告设计_电商海报复刻_产品详情海报一键生成_2102302772631789569.json, 图片生成/图生图/详情页参考制作 克隆 平面广告设计 电商海报复刻 产品详情海报一键生成_2048990218623127553.json, 图片生成/图生图/详情页智能复刻_2028016650997473281.json, 图片生成/图生图/超好用🔥电商海报一键复刻+产品详情海报生成-自动识别logo_2068965727859728386.json, 图片生成/文生图/image2 电商海报洗图复刻-产品详情海报一键生成_2051185050351357954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_75
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json、音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json、音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json、音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json、音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/一键复刻产品详情海报_2030921849965645826.json、图片生成/图生图/仿图洗图 -电商海报洗图复刻-产品详情海报一键生成_2071030857091084289.json、图片生成/图生图/换装换脸 海报洗图 电商海报洗图 -产品详情海报_2071415102464684033.json、图片生成/图生图/洗图-电商海报洗图复刻-产品详情海报一键生成_2051179333011685377.json、图片生成/图生图/电商海报复刻 产品详情海报一键生成_2027921690084253698.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 17 个 workflow 都包含：
+- `CR Text`
+- `ImageStitch`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RunningHub Deepcleaner`
+- `SaveImage`
+- `StringFunction|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 9/11 个有
-- `PreviewAudio` —— 6/11 个有
-- `easy indexTTSAudioMerge` —— 5/11 个有
-- `easy indexTTSEmotionVector` —— 5/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 1/11 个有
+- `GetNode` —— 16/17 个有
+- `SetNode` —— 16/17 个有
+- `easy showAnything` —— 16/17 个有
+- `EmptyImage` —— 2/17 个有
+- `Note Plus (mtb)` —— 2/17 个有
+- `PreviewImage` —— 2/17 个有
 
 ## 典型参数
 

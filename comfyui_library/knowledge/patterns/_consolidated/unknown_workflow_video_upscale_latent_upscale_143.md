@@ -3,71 +3,56 @@ name: unknown_workflow_video_upscale_latent_upscale_143
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.974
-common_nodes: [CLIPTextEncode, CR SDXL Aspect Ratio, DifferentialDiffusion, DualCLIPLoader, ImageResizeAdvanced, ImageUpscaleWithModel, Int, KSampler, LatentUpscaleBy, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, LoraLoader, Note Plus (mtb), RIFE VFI, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.963
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/1901126207503482882.json, 视频生成/文生视频/1931309992215773185.json]
+members: [视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_143
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1901126207503482882.json、视频生成/文生视频/1931309992215773185.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json、视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CR SDXL Aspect Ratio`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `ImageResizeAdvanced`
-- `ImageUpscaleWithModel`
-- `Int`
-- `KSampler`
-- `LatentUpscaleBy`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `LoraLoader`
-- `Note Plus (mtb)`
-- `RIFE VFI`
-- `SaveImage`
-- `UNETLoader`
-- `UpscaleModelLoader`
+- `BasicGuider`
+- `BasicScheduler`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyMediaLoader`
+- `MiniMaxH3EasyOutput`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SplitSigmas`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadVideo` —— 1/2 个有
+- `ModelPreviewOverrideKJ` —— 1/2 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
+- `easy float` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.9 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 采样步数 | 25 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.6 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,11 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

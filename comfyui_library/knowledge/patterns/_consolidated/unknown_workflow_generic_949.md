@@ -1,37 +1,43 @@
 ---
 name: unknown_workflow_generic_949
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.619
-common_nodes: [CR Text, CR Text Concatenate, Fast Groups Bypasser (rgthree), HeartMuLa_Generate, LayerUtility: TextBox, RH_LLMAPI_Pro_Node, SaveAudio, ThinkRemover_UTK, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.893667
+common_nodes: [Compare, ImageConcanate, ImpactSwitch, Int, InversionDemoLazySwitch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Multi Text Merge, RHHiddenNodes, SaveImage, TextInput_, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMula最强开源歌曲生成。手动自动一键切换_2012878019400048641.json, 音频生成/音频生成/最强开源歌曲生成 HeartMula (手动_自动一键切)_2014218093291118593.json]
+members: [图片生成/图生图/换头，换装，换背景，电商穿搭工具，姿势控制_2015854025085816833.json, 图片生成/图生图/穿搭大师+Pro+v4+姿势控制_2021031295194763265.json, 图片生成/图生图/穿搭大师+姿势控制_2013433024649633793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_949
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeartMula最强开源歌曲生成。手动自动一键切换_2012878019400048641.json、音频生成/音频生成/最强开源歌曲生成 HeartMula (手动_自动一键切)_2014218093291118593.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换头，换装，换背景，电商穿搭工具，姿势控制_2015854025085816833.json、图片生成/图生图/穿搭大师+Pro+v4+姿势控制_2021031295194763265.json、图片生成/图生图/穿搭大师+姿势控制_2013433024649633793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `Fast Groups Bypasser (rgthree)`
-- `HeartMuLa_Generate`
-- `LayerUtility: TextBox`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `ThinkRemover_UTK`
+全部 3 个 workflow 都包含：
+- `Compare`
+- `ImageConcanate`
+- `ImpactSwitch`
+- `Int`
+- `InversionDemoLazySwitch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `Multi Text Merge`
+- `RHHiddenNodes`
+- `SaveImage`
+- `TextInput_`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Overlay Text` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

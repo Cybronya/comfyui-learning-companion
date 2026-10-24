@@ -1,68 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_153
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8242
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.789
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 长视频  音频驱动（数字人）唱歌30s_1分钟 切换_2099343389337673730.json, 视频生成/图生视频/MiniMax H3 音频驱动（数字人）唱歌视频_2084544809620041730.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2104901215766278145.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2106317299799121921.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2110247938256625666.json]
+members: [图片生成/文生图/Qwen image 2.1文生图_2101860458935439362.json, 图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json, 图片生成/文生图/Qwen image 2.1文生图_2102591785762639873.json, 图片生成/文生图/Qwen image 2.1文生图_2109473814643044353.json, 图片生成/文生图/Qwen+image+2.1文生图_2102634572138762242.json, 图片生成/文生图/Qwen-Image-2.1-T2I_2102034536937902081.json, 图片生成/文生图/qwen image 2.1 文生图提示词扩写_2102006301646745601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_153
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 长视频  音频驱动（数字人）唱歌30s_1分钟 切换_2099343389337673730.json、视频生成/图生视频/MiniMax H3 音频驱动（数字人）唱歌视频_2084544809620041730.json、视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2104901215766278145.json、视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2106317299799121921.json、视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2110247938256625666.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1文生图_2101860458935439362.json、图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json、图片生成/文生图/Qwen image 2.1文生图_2102591785762639873.json、图片生成/文生图/Qwen image 2.1文生图_2109473814643044353.json、图片生成/文生图/Qwen+image+2.1文生图_2102634572138762242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `EmptyLatentImage`
+- `KSampler`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `ExtendIntermediateSigmas` —— 3/5 个有
-- `TrimAudioDuration` —— 2/5 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/5 个有
-- `AudioConcat` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `ImageBatch` —— 1/5 个有
-- `MiniMaxH3AddGuide` —— 1/5 个有
-- `MiniMaxH3TurboLoRA` —— 1/5 个有
-- `SelectImages` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `SolAttnPatch` —— 1/5 个有
-- `忽略多组孤海` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `TextGenerateLTX2Prompt` —— 4/7 个有
+- `Text` —— 3/7 个有
+- `easy showAnything` —— 3/7 个有
+- `Seed (rgthree)` —— 2/7 个有
+- `TextGenerate` —— 2/7 个有
+- `孤海注释` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `easy promptList` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 50 | 30 - 50 | 7 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 7 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 7 | 100% |
 
 ## 常见问题
 
@@ -70,4 +62,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 50，观测区间 30 - 50，7 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）

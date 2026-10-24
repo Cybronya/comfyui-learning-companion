@@ -1,78 +1,87 @@
 ---
 name: text_to_image_lora_sampler_clip_109
 type: Text To Image
-frequency: 10
-level: strong
-coverage: 0.8884
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+frequency: 13
+level: moderate
+coverage: 0.855154
+common_nodes: [CLIPTextEncode, CR Prompt Text, CR Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LoraLoaderModelOnly, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Seed (rgthree), Text Concatenate, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/4步加速5秒3分钟｜MiniMax H3图生视频工作流_2087213237464031233.json, 视频生成/图生视频/FL2VA图生视频V2优化版｜MiniMax H3人物场景特效_2089026447229931522.json, 视频生成/图生视频/FL2VA首帧生视频荒星远征｜MiniMax H3战斗特效场景特效图生视频_2089698966752546818.json, 视频生成/图生视频/Fast图生视频加速生成｜Seedance2.0快速出片_2095868810497708034.json, 视频生成/图生视频/Seedance 2.0 Fast 图生视频｜快速把静态图变成动态大片_2097508127116718081.json, 视频生成/图生视频/Seedance 2.0 Global Mini图生视频｜首尾帧4K角色一致性_2097902111764860929.json, 视频生成/图生视频/Seedance2.0 Fast图生视频 快速动态视频生成_2110362092581769218.json, 视频生成/图生视频/Seedance2.0 Fast图生视频｜一张图快速动起来 速度效果两不误_2105498105788583937.json, 视频生成/图生视频/Seedance2.0 Fast图生视频｜快速高质量生成_2095608915806482433.json, 视频生成/图生视频/图生视频Seedance2.0 RunningHub企业版 高质量动态生成_2109033444645883906.json]
+members: [图片生成/文生图/量贩版 ZIT-D-OPSD美少女文生图（自动化批量出图）_2066140658238316545.json, 图片生成/文生图/（小情绪量贩版）Z-Image Art自动扩写文生图V1_2017609951325196290.json, 图片生成/文生图/（贞贞-Coser量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2057773705002053634.json, 图片生成/文生图/（贞贞-大网渔网袜量贩版）Z-Image Eyes Deatailed自动扩写文生图V3_1995332136343363586.json, 图片生成/文生图/（贞贞-小情绪量贩版）Z-Image Art自动扩写文生图V1_2017607207981944834.json, 图片生成/文生图/（贞贞-小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999764911616126977.json, 图片生成/文生图/（贞贞-量贩版）ZIT-Qwen 3B Engineer V4+ FLow Dop自动扩写文生图V5_2029102488133050370.json, 图片生成/文生图/（贞贞-黑丝量贩版）Z-Image Eyes Deatailed自动扩写文生图V5_1995332160846540801.json, 图片生成/文生图/（贞贞量贩版）Z-image Art自动扩写文生图V1_2017606389824233473.json, 图片生成/文生图/（贞贞量贩版）美少女自动扩写文生图V3_2003911286830317569.json, 图片生成/文生图/（量贩版）BEYOND REAL Z-Image加噪自动扩写文生图V1_2003060145137524737.json, 图片生成/文生图/（量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2056786094817112066.json, 图片生成/文生图/（量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2065067678041198593.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_109
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/4步加速5秒3分钟｜MiniMax H3图生视频工作流_2087213237464031233.json、视频生成/图生视频/FL2VA图生视频V2优化版｜MiniMax H3人物场景特效_2089026447229931522.json、视频生成/图生视频/FL2VA首帧生视频荒星远征｜MiniMax H3战斗特效场景特效图生视频_2089698966752546818.json、视频生成/图生视频/Fast图生视频加速生成｜Seedance2.0快速出片_2095868810497708034.json、视频生成/图生视频/Seedance 2.0 Fast 图生视频｜快速把静态图变成动态大片_2097508127116718081.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/量贩版 ZIT-D-OPSD美少女文生图（自动化批量出图）_2066140658238316545.json、图片生成/文生图/（小情绪量贩版）Z-Image Art自动扩写文生图V1_2017609951325196290.json、图片生成/文生图/（贞贞-Coser量贩版）Z-Image-Turbo D-OPSD美少女文生图V2_2057773705002053634.json、图片生成/文生图/（贞贞-大网渔网袜量贩版）Z-Image Eyes Deatailed自动扩写文生图V3_1995332136343363586.json、图片生成/文生图/（贞贞-小情绪量贩版）Z-Image Art自动扩写文生图V1_2017607207981944834.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Replace`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
+- `JDCN_StringToList`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `Seed (rgthree)`
+- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 6/10 个有
-- `ComfyMathExpression` —— 2/10 个有
-- `SaveImage` —— 2/10 个有
-- `workflow>参数调整组` —— 2/10 个有
-- `workflow>工作节点组` —— 2/10 个有
-- `DF_Text_Box` —— 1/10 个有
-- `Float` —— 1/10 个有
-- `RH_BytedanceSeedance20GlobalMiniImageToVideo` —— 1/10 个有
-- `workflow>H3-4S` —— 1/10 个有
+- `LayerUtility: PurgeVRAM` —— 12/13 个有
+- `CLIPLoader` —— 9/13 个有
+- `ClipLoaderGGUF` —— 4/13 个有
+- `PreviewAny` —— 4/13 个有
+- `QwenImageEngineer` —— 4/13 个有
+- `easy cleanGpuUsed` —— 4/13 个有
+- `RH_LLMAPI_NODE` —— 2/13 个有
+- `BasicScheduler` —— 1/13 个有
+- `CFGGuider` —— 1/13 个有
+- `CLIPLoaderGGUF` —— 1/13 个有
+- `DetailDaemonSamplerNode` —— 1/13 个有
+- `KSamplerSelect` —— 1/13 个有
+- `RandomNoise` —— 1/13 个有
+- `SamplerCustomAdvanced` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 10 | 100% |
-| 高度 | 80 | 80 - 80 | 10 | 100% |
-| 采样步数 | 4 | 4 - 4 | 10 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
-| 采样算法 | er_sde | - | 10 | 100% |
-| 调度器 | beta | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 10 | 8 - 15 | 13 | 86% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2 | 13 | 75% |
+| 采样算法 | euler | - | 13 | 92% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 1080 | 1080 - 1920 | 13 | 71% |
+| 高度 | 1920 | 1080 - 1920 | 13 | 73% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，10 个样本，一致性 100%
-- 调度器 最常用 beta，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 15，13 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，13 个样本
+- 采样算法 最常用 euler，13 个样本，一致性 92%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 1080 - 1920，13 个样本
+- 高度 中位数 1920，观测区间 1080 - 1920，13 个样本

@@ -3,38 +3,53 @@ name: unknown_workflow_video_lora_sampler_696
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.923
-common_nodes: [BasicGuider, CLIPLoader, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3HybridModelLoaderT8Advanced, MiniMaxH3LoRACompatibilityLoaderT8Advanced, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAELoader, VHS_VideoCombine]
+coverage: 0.961667
+common_nodes: [CR Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, QwenLoader, ShowText|pysssss, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPromptExtender, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json, 视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json]
+members: [视频生成/文生视频/Wan2.2文生视频_1994337581800292354.json, 视频生成/文生视频/wan2.2文生视频_自动润色提示词_1951121604451442689.json, 视频生成/文生视频/wan2.2文生视频_自动润色提示词_1955825453995999233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_696
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 动作自然度增强工作流-AI人物动作流畅不僵硬_2097931937448022018.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100061739890069505.json、视频生成/文生视频/MiniMax_H3_动作自然度增强工作流-AI人物动作流畅不僵硬_2100140680126492673.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生视频_1994337581800292354.json、视频生成/文生视频/wan2.2文生视频_自动润色提示词_1951121604451442689.json、视频生成/文生视频/wan2.2文生视频_自动润色提示词_1955825453995999233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3HybridModelLoaderT8Advanced`
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAELoader`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM`
+- `LoadWanVideoT5TextEncoder`
+- `QwenLoader`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoPromptExtender`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Float` —— 2/3 个有
+- `WanVideoScheduler` —— 2/3 个有
+- `WanVideoSigmaToStep` —— 2/3 个有
 
 ## 典型参数
 

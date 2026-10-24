@@ -1,69 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_117
 type: Unknown Workflow
-frequency: 6
-level: weak
-coverage: 0.9065
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.882333
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-text-360_2080631673103937538.json, 图片生成/文生图/Qwen_Image_2512版4步加速出图_2006606275999703041.json, 图片生成/文生图/Qwen_Image_2512版4步加速出图_2019651247913046018.json, 图片生成/文生图/Z-image Tubro文生图工作流，没有AI味的模型！_2061058146243801090.json, 图片生成/文生图/Z-image-淡妆浓抹V3.0文生图_2026649178574688257.json, 图片生成/文生图/Zimage-base+turbo双剑合璧，提升速度&增加多样性&兼顾turbo美学。_2017455925828788225.json]
+members: [comfyui-workflow-templates-json/hunyuan_video_text_to_video.json, 图片生成/文生图/文生视频加速版_1993105222903988226.json, 图片生成/文生图/混元T2V官方工作流_文生视频_1930244657111011329.json, 视频生成/图生视频/8步FAST快速混元图生视频hunyuan_video_1870170011888160769.json, 视频生成/文生视频/2025-04-05 hunyuan 5步生辰高质量视频_1908181637312749570.json, 视频生成/文生视频/ComfyOrg混元文生视频hunyuan_video_1870164228891123714.json, 视频生成/文生视频/HunyuanVideo 1.5 480P 8步LightX2V文生视频加速版V1_1992951299952099329.json, 视频生成/文生视频/HunyuanVideo 1.5 720P 20步优化版文生视频_1992813591025831937.json, 视频生成/文生视频/Image_capybara_v0_1_text_to_video_fast_2027049393966292993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_117
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen-text-360_2080631673103937538.json、图片生成/文生图/Qwen_Image_2512版4步加速出图_2006606275999703041.json、图片生成/文生图/Qwen_Image_2512版4步加速出图_2019651247913046018.json、图片生成/文生图/Z-image Tubro文生图工作流，没有AI味的模型！_2061058146243801090.json、图片生成/文生图/Z-image-淡妆浓抹V3.0文生图_2026649178574688257.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（comfyui-workflow-templates-json/hunyuan_video_text_to_video.json、图片生成/文生图/文生视频加速版_1993105222903988226.json、图片生成/文生图/混元T2V官方工作流_文生视频_1930244657111011329.json、视频生成/图生视频/8步FAST快速混元图生视频hunyuan_video_1870170011888160769.json、视频生成/文生视频/2025-04-05 hunyuan 5步生辰高质量视频_1908181637312749570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `StringConcatenate` —— 1/6 个有
-- `VAEEncode` —— 1/6 个有
-- `easy positive` —— 1/6 个有
+- `VAEDecode` —— 8/9 个有
+- `VAEDecodeTiled` —— 8/9 个有
+- `BasicGuider` —— 5/9 个有
+- `CreateVideo` —— 5/9 个有
+- `EmptyHunyuanLatentVideo` —— 5/9 个有
+- `FluxGuidance` —— 5/9 个有
+- `SaveVideo` —— 5/9 个有
+- `CFGGuider` —— 4/9 个有
+- `EmptyHunyuanVideo15Latent` —— 4/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `VHS_VideoCombine` —— 4/9 个有
+- `EasyCache` —— 3/9 个有
+- `JWInteger` —— 3/9 个有
+- `RH_Prompter` —— 2/9 个有
+- `SaveAnimatedWEBP` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 7.5 | 4 - 20 | 6 | 43% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 6 | 25% |
-| 采样算法 | euler | - | 6 | 67% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 7.5，观测区间 4 - 20，6 个样本，取值分散，一致性仅 43%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，6 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 euler，6 个样本，一致性 67%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

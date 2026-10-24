@@ -7,13 +7,13 @@ coverage: 0.853
 common_nodes: [Any Switch (rgthree), CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EmptyLTXVLatentVideo, ImageListToImageBatch, JsonExtractString, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXTiledSampler, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVMakeRefVideo, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, ModelPreviewOverrideKJ, PathchSageAttentionKJ, PreviewAny, PromptRelaySmartEncode, RHLLMChatNode, RandomNoise, RegexMatch, SamplerCustomAdvanced, SaveImage, SaveVideo, SetLatentNoiseMask, SimpleMath+, SimpleMathDual+, SolidMask, TextGenerate, UNETLoader, VAEDecodeTiled, VAELoader, easy audioMerge, easy blocker, easy compare, easy ifElse, easy int, easy lengthAnything, easy multiTrackAddSubtitleToVIdeo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptReplace, easy seed, easy splitImages, easy string]
 problems: []
 missing: []
-members: [视频生成/图生视频/2078136645257351169.json, 视频生成/图生视频/多轨导演台+LTX2.3+MSR+V2++多参简易单段 (1)_2083009294554980353.json]
+members: [视频生成/图生视频/多轨导演台 LTX2.3 MSR V2  多参简易单段_2078136645257351169.json, 视频生成/图生视频/多轨导演台+LTX2.3+MSR+V2++多参简易单段 (1)_2083009294554980353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_81
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2078136645257351169.json、视频生成/图生视频/多轨导演台+LTX2.3+MSR+V2++多参简易单段 (1)_2083009294554980353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/多轨导演台 LTX2.3 MSR V2  多参简易单段_2078136645257351169.json、视频生成/图生视频/多轨导演台+LTX2.3+MSR+V2++多参简易单段 (1)_2083009294554980353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

@@ -1,35 +1,33 @@
 ---
 name: unknown_workflow_generic_755
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [DeepTranslatorTextNode, LoadImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.857
+common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub Univideo Generator(MultiID), RunningHub Univideo Loader, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/1931162032916070402.json, 图片生成/文生图/1934184542896877570.json]
+members: [视频生成/图生视频/UniVideo多图视频生成_2013379219077734402.json, 视频生成/图生视频/UniVideo多图视频生成_2014244643860385794.json, 视频生成/图生视频/多图视频生成_2014230079726948354.json, 视频生成/图生视频/多图视频生成_2044236452975874050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_755
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1931162032916070402.json、图片生成/文生图/1934184542896877570.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/UniVideo多图视频生成_2013379219077734402.json、视频生成/图生视频/UniVideo多图视频生成_2014244643860385794.json、视频生成/图生视频/多图视频生成_2014230079726948354.json、视频生成/图生视频/多图视频生成_2044236452975874050.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DeepTranslatorTextNode`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Comfly_Flux_Kontext` —— 1/2 个有
-- `RH_ComfyFluxKontext` —— 1/2 个有
+- `PrimitiveStringMultiline`
+- `RunningHub Univideo Generator(MultiID)`
+- `RunningHub Univideo Loader`
+- `SaveVideo`
 
 ## 典型参数
 
@@ -41,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

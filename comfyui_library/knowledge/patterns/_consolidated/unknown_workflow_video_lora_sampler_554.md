@@ -3,48 +3,36 @@ name: unknown_workflow_video_lora_sampler_554
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.76125
-common_nodes: [GetImageSize, GetImageSizeAndCount, INTConstant, Image Blank, ImageCompositeMasked, ImageResizeKJ, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MaskToImage, PreviewImage, RH_Captioner, SolidMask, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.66125
+common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
-missing: [Image Blank, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM]
-members: [视频生成/文生视频/1975862492029169665.json, 视频生成/文生视频/1975863056892866561.json, 视频生成/文生视频/lynx-VACE-ID双一致性姿态视频引导视频生成_2072999520222617600.json, 视频生成/文生视频/lynx-VACE-ID双一致性文生视频_2072999520814014464.json]
+missing: []
+members: [视频生成/文生视频/lynx基础流程ID一致性文生视频_1975835025436487681.json, 视频生成/文生视频/lynx标准工作流_1975939269380452353.json, 视频生成/文生视频/人脸一致-文生视频-lynx_1976487534681300993.json, 视频生成/文生视频/文生图角色一致性——Lynx_1977745156428496897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_554
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1975862492029169665.json、视频生成/文生视频/1975863056892866561.json、视频生成/文生视频/lynx-VACE-ID双一致性姿态视频引导视频生成_2072999520222617600.json、视频生成/文生视频/lynx-VACE-ID双一致性文生视频_2072999520814014464.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/lynx基础流程ID一致性文生视频_1975835025436487681.json、视频生成/文生视频/lynx标准工作流_1975939269380452353.json、视频生成/文生视频/人脸一致-文生视频-lynx_1976487534681300993.json、视频生成/文生视频/文生图角色一致性——Lynx_1977745156428496897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GetImageSize`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `Image Blank`
-- `ImageCompositeMasked`
-- `ImageResizeKJ`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoadLynxResampler`
 - `LynxEncodeFaceIP`
 - `LynxInsightFaceCrop`
-- `MaskToImage`
 - `PreviewImage`
-- `RH_Captioner`
-- `SolidMask`
 - `VHS_VideoCombine`
 - `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoExtraModelSelect`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
@@ -52,16 +40,22 @@ source: knowledge_consolidation
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
+- `SetNode` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `RH_Captioner` —— 2/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RMBG` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
@@ -73,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Blank、LayerMask: LoadFlorence2Model、LayerMask: ObjectDetectorFL2、LayerMask: SAM2Ultra、LayerUtility: PurgeVRAM
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

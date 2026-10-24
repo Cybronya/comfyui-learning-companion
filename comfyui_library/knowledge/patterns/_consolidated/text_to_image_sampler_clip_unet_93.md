@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_93
 type: Text To Image
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.9628
+coverage: 0.744571
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image文生图art_2017930293285490690.json, 图片生成/文生图/Z-image文生图：超细腻写实质感+精准文字渲染_1994608742673096706.json, 图片生成/文生图/Z-image新王登基君临天下(文生图)_1993946984736292866.json, 图片生成/文生图/Z-image，文生图_1995081308172955649.json, 图片生成/文生图/Z-lmage-Turbo绘梦：我的AI圣诞海报_1994213789992157185.json]
+members: [图片生成/图生图/zimage生图_2002992438857875458.json, 图片生成/图生图/文生图 Qwen2512  领军模型 完美中文_2021581695731900418.json, 图片生成/图生图/文生图精简版+全节点注释_2067065224540282881.json, 图片生成/图生图/洗图重绘Qwen反推提示词i-zimage生图_2036694642334375938.json, 图片生成/图生图/电商洗图-主图_头图（一键生成）_1994289823892652033.json, 图片生成/文生图/Anima文生图精简版+全节点注释_2059139633056931841.json, 图片生成/文生图/文生图精简版+全节点注释_2067404118905409537.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_93
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-image文生图art_2017930293285490690.json、图片生成/文生图/Z-image文生图：超细腻写实质感+精准文字渲染_1994608742673096706.json、图片生成/文生图/Z-image新王登基君临天下(文生图)_1993946984736292866.json、图片生成/文生图/Z-image，文生图_1995081308172955649.json、图片生成/文生图/Z-lmage-Turbo绘梦：我的AI圣诞海报_1994213789992157185.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/zimage生图_2002992438857875458.json、图片生成/图生图/文生图 Qwen2512  领军模型 完美中文_2021581695731900418.json、图片生成/图生图/文生图精简版+全节点注释_2067065224540282881.json、图片生成/图生图/洗图重绘Qwen反推提示词i-zimage生图_2036694642334375938.json、图片生成/图生图/电商洗图-主图_头图（一键生成）_1994289823892652033.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -33,39 +33,41 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `Int` —— 4/5 个有
-- `ImpactSwitch` —— 2/5 个有
-- `easy promptLine` —— 2/5 个有
-- `LatentFrequencyEnhancer_lrzjason` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `LoadImage` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `TextInput_` —— 5/7 个有
+- `easy showAnything` —— 3/7 个有
+- `AILab_QwenVL` —— 2/7 个有
+- `LayerUtility: TextJoin` —— 2/7 个有
+- `ModelSamplingAuraFlow` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `AILab_QwenVL_Advanced` —— 1/7 个有
+- `ConditioningZeroOut` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 5 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 1080 | 512 - 1144 | 5 | 67% |
-| 高度 | 1472 | 512 - 1920 | 5 | 52% |
+| 采样步数 | 25 | 8 - 28 | 7 | 52% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 4 | 7 | 48% |
+| 采样算法 | euler | - | 7 | 57% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1024 | 752 - 1080 | 7 | 88% |
+| 高度 | 1536 | 1000 - 1920 | 7 | 81% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，5 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 512 - 1144，5 个样本
-- 高度 中位数 1472，观测区间 512 - 1920，5 个样本
+- 采样步数 中位数 25，观测区间 8 - 28，7 个样本
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 4，7 个样本，取值分散，一致性仅 48%
+- 采样算法 最常用 euler，7 个样本，一致性 57%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 752 - 1080，7 个样本，取值集中（一致性 88%）
+- 高度 中位数 1536，观测区间 1000 - 1920，7 个样本，取值集中（一致性 81%）

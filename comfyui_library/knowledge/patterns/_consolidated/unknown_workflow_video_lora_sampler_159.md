@@ -2,105 +2,91 @@
 name: unknown_workflow_video_lora_sampler_159
 type: Unknown Workflow
 frequency: 11
-level: strong
-coverage: 0.809273
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, EnhancedLoadDiffusionModel, FluxKontextMultiReferenceLatentMethod, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Split String by Commas, StringReplace, Text, TextConcatenate_UTK, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy MiniMaxH3ReferenceToVideoBridge, easy indexAnything, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.736273
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T1_2085991085813362690.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T2_2085995902447210498.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T3_2086341408956436482.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T4_2086352524814151681.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频_2086338325744541698.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频八步加速_2087754291292491778.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频八步加速_2100066036602200066.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频八步加速_2100143918137561090.json, 视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频八步加速_2101302827879583746.json, 视频生成/图生视频/MInimaxH3电商人物广告_2086335748348923905.json, 视频生成/图生视频/高清弹吉他·的小女孩_2090255545633693697.json]
+members: [数字人/数字人/AI Video Studio PR插件VIP专用数字人口播(视频)工作流_2094295481898856450.json, 数字人/数字人/Infinitetalk_2099404964316663810.json, 视频生成/图生视频/Infinite talk数字人_1986688355087937537.json, 视频生成/图生视频/Infinitetalk-视频对口型_2073213335511846913.json, 视频生成/图生视频/KJ-Infinitetalk+wan2.1优化提速视频生成口播数字人唱歌数字人_1958763017179721730.json, 视频生成/图生视频/TTS+Infinitetalk视频添加语音视频对口型_2013150744169422849.json, 视频生成/图生视频/🥳infinitetalk地表最强数字人 视频对口型 真王炸🐟_1958413596264972289.json, 视频生成/文生视频/Aiwood-改进版KJ-Infinitetalk视频对口型工作流_1963994200775737346.json, 音频生成/音频生成/InfiniteTalk视频转视频音频【AI小王子】_1962038038358593538.json, 音频生成/音频生成/Infinitetalk视频添加语音视频对口型_1979388744887341058.json, 音频生成/音频生成/Wan2.1-InfiniteTalk--视频对口型_2042411569077821442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_159
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T1_2085991085813362690.json、视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T2_2085995902447210498.json、视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T3_2086341408956436482.json、视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频T4_2086352524814151681.json、视频生成/图生视频/MInimaxH3+Qwen+Gemma4全开源多参视频_2086338325744541698.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/AI Video Studio PR插件VIP专用数字人口播(视频)工作流_2094295481898856450.json、数字人/数字人/Infinitetalk_2099404964316663810.json、视频生成/图生视频/Infinite talk数字人_1986688355087937537.json、视频生成/图生视频/Infinitetalk-视频对口型_2073213335511846913.json、视频生成/图生视频/KJ-Infinitetalk+wan2.1优化提速视频生成口播数字人唱歌数字人_1958763017179721730.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `EnhancedLoadDiffusionModel`
-- `FluxKontextMultiReferenceLatentMethod`
-- `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Split String by Commas`
-- `StringReplace`
-- `Text`
-- `TextConcatenate_UTK`
-- `TextEncodeQwenImageEditPlus`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy MiniMaxH3ReferenceToVideoBridge`
-- `easy indexAnything`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 10/11 个有
-- `RHHiddenNodes` —— 9/11 个有
-- `MiniMaxH3BlockCacheT8` —— 6/11 个有
-- `JDCN_StringToList` —— 3/11 个有
-- `ImageConcatMulti` —— 2/11 个有
-- `ImageConcatenate_UTK` —— 2/11 个有
-- `RH_Captioner` —— 2/11 个有
-- `EmptyImage` —— 1/11 个有
-- `ImageScaleToTotalPixels` —— 1/11 个有
-- `Int` —— 1/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
-- `RandomInt` —— 1/11 个有
-- `easy batchAnything` —— 1/11 个有
-- `easy forLoopEnd` —— 1/11 个有
-- `easy forLoopStart` —— 1/11 个有
+- `GetImageSizeAndCount` —— 10/11 个有
+- `LoadAudio` —— 10/11 个有
+- `PreviewAny` —— 10/11 个有
+- `WanVideoTorchCompileSettings` —— 10/11 个有
+- `easy int` —— 10/11 个有
+- `Display Int (rgthree)` —— 9/11 个有
+- `INTConstant` —— 9/11 个有
+- `ImageConcatMulti` —— 9/11 个有
+- `ImageResizeKJv2` —— 9/11 个有
+- `SetNode` —— 9/11 个有
+- `SimpleMath+` —— 9/11 个有
+- `SoundFlow_GetLength` —— 9/11 个有
+- `ToInt` —— 9/11 个有
+- `GetNode` —— 8/11 个有
+- `ImageBatchMulti` —— 6/11 个有
+- `ReverseImageBatch` —— 6/11 个有
+- `Anything Everywhere` —— 1/11 个有
+- `BatchThief` —— 1/11 个有
+- `CR Text` —— 1/11 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/11 个有
+- `FlashVSRNode` —— 1/11 个有
+- `GIMMVFI_interpolate` —— 1/11 个有
+- `GetImageSize` —— 1/11 个有
+- `ImpactInt` —— 1/11 个有
+- `IndexTTS2Run` —— 1/11 个有
+- `JWIntegerToString` —— 1/11 个有
+- `MegaTTS3` —— 1/11 个有
+- `MultiLinePromptIndex` —— 1/11 个有
+- `Note Plus (mtb)` —— 1/11 个有
+- `PreviewAudio` —— 1/11 个有
+- `SDVN Any Show` —— 1/11 个有
+- `SaveAudioMP3` —— 1/11 个有
+- `Text` —— 1/11 个有
+- `scale` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 11 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 1280 | 1280 - 1280 | 11 | 100% |
-| 高度 | 720 | 720 - 720 | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 21/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1280，观测区间 1280 - 1280，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 720，观测区间 720 - 720，11 个样本，取值集中（一致性 100%）
-- 高发问题（21/11 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

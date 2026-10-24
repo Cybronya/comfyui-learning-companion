@@ -3,35 +3,34 @@ name: unknown_workflow_video_28
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.481
-common_nodes: [Bookmark (rgthree), CR Prompt Text, RH_Sora2_T2V, SaveVideo, SeedVR2, VHS_LoadVideoPath, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
-missing: [Bookmark (rgthree), easy cleanGpuUsed, CR Prompt Text]
-members: [视频生成/图生视频/1975033052323778562.json, 视频生成/文生视频/1974980259189755905.json, 视频生成/文生视频/1974980703391756289.json, 视频生成/文生视频/1975033052323778562.json]
+missing: []
+members: [图片生成/图生图/FramePack图生视频_1913074969763377154.json, 视频生成/图生视频/60长视频-FramePack  RH吕神源码版_1913036712988110850.json, 视频生成/图生视频/87工具流 FramePack  图生视频_1913506656041299970.json, 视频生成/图生视频/FramePack_1913209812224569346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_28
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1975033052323778562.json、视频生成/文生视频/1974980259189755905.json、视频生成/文生视频/1974980703391756289.json、视频生成/文生视频/1975033052323778562.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FramePack图生视频_1913074969763377154.json、视频生成/图生视频/60长视频-FramePack  RH吕神源码版_1913036712988110850.json、视频生成/图生视频/87工具流 FramePack  图生视频_1913506656041299970.json、视频生成/图生视频/FramePack_1913209812224569346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `CR Prompt Text`
-- `RH_Sora2_T2V`
-- `SaveVideo`
-- `SeedVR2`
-- `VHS_LoadVideoPath`
+- `LoadImage`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageResizeKJ` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
 
 ## 典型参数
 
@@ -43,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Bookmark (rgthree)、easy cleanGpuUsed、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

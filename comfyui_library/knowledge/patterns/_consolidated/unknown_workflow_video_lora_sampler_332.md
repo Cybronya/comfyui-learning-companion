@@ -1,64 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_332
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.960286
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.911667
+common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/HoloCine模型+ComfyUI，轻松生成多镜头AI电影_1983436800045817857.json, 视频生成/文生视频/HoloCine电影分镜视频模型【Comfy版】_1984101340337078273.json, 视频生成/文生视频/Holocine——Wan2.2连续多分镜长视频生成_1982455092706197505.json, 视频生成/文生视频/Holocine电影分镜工作流_1982118673722818561.json, 视频生成/文生视频/Holocine电影分镜工作流（含提示词样例）_1987110613501587458.json, 视频生成/文生视频/万相多镜头长视频-Wan22-T2V-A14B-HoloCine工作流_2039933550228672513.json, 视频生成/文生视频/人物一致性多角度多镜头ai电影短剧真人动漫角色一致性基于HoloCine模型工作流_1985019433603272705.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 FLF2V首尾帧_2062460186090106881.json, 图片生成/图生图/【遇见AI】wan2.1 MAGREF 单图参考视频_2073698648294252546.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+参考图+提示词_2065246090865238018.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 双图参考_2065243958179094530.json, 图片生成/图生图/【遇见AI】wan2.1 VACE 视频重绘，换脸，修改任何东西_2065246575059886081.json, 视频生成/图生视频/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+提示词_2065244368470106114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_332
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/HoloCine模型+ComfyUI，轻松生成多镜头AI电影_1983436800045817857.json、视频生成/文生视频/HoloCine电影分镜视频模型【Comfy版】_1984101340337078273.json、视频生成/文生视频/Holocine——Wan2.2连续多分镜长视频生成_1982455092706197505.json、视频生成/文生视频/Holocine电影分镜工作流_1982118673722818561.json、视频生成/文生视频/Holocine电影分镜工作流（含提示词样例）_1987110613501587458.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 FLF2V首尾帧_2062460186090106881.json、图片生成/图生图/【遇见AI】wan2.1 MAGREF 单图参考视频_2073698648294252546.json、图片生成/图生图/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+参考图+提示词_2065246090865238018.json、图片生成/图生图/【遇见AI】wan2.1 VACE 双图参考_2065243958179094530.json、图片生成/图生图/【遇见AI】wan2.1 VACE 视频重绘，换脸，修改任何东西_2065246575059886081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 6 个 workflow 都包含：
+- `ImageResizeKJv2`
+- `LoadImage`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 6/7 个有
-- `ImageFromBatch+` —— 4/7 个有
-- `ImageSharpen` —— 4/7 个有
-- `TorchCompileModel` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `CR Seed` —— 1/7 个有
-- `CreateVideo` —— 1/7 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/7 个有
-- `GIMMVFI_interpolate` —— 1/7 个有
-- `PreViewVideo` —— 1/7 个有
-- `SeargePromptText` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `PreviewImage` —— 4/6 个有
+- `WanVideoVACEEncode` —— 4/6 个有
+- `WanVideoVACEModelSelect` —— 4/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `AIO_Preprocessor` —— 2/6 个有
+- `CLIPVisionLoader` —— 2/6 个有
+- `MaskPreview+` —— 2/6 个有
+- `VHS_VideoInfo` —— 2/6 个有
+- `WanVideoClipVisionEncode` —— 2/6 个有
+- `WanVideoImageToVideoEncode` —— 2/6 个有
+- `Image Overlay` —— 1/6 个有
+- `ImageScale` —— 1/6 个有
+- `InpaintPreprocessor` —— 1/6 个有
+- `InvertMask` —— 1/6 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/6 个有
+- `LayerMask: RmBgUltra V2` —— 1/6 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/6 个有
+- `easy makeImageForICLora` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 20 | 7 | 65% |
-| 采样算法 | 3.5 | 1 - 4 | 7 | 71% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,9 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 20，7 个样本
-- 采样算法 中位数 3.5，观测区间 1 - 4，7 个样本
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

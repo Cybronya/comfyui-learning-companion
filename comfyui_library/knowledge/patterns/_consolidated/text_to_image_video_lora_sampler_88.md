@@ -1,102 +1,100 @@
 ---
 name: text_to_image_video_lora_sampler_88
 type: Text To Image
-frequency: 8
+frequency: 9
 level: strong
-coverage: 0.492375
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, PrimitiveInt, SAM3_VideoTrack, SCAIL2ColoredMask, SingleBooleanTrigger, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy imageRemBg, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.853111
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/一键复刻爆款视频图生视频处理生成工作流工具_2101396084621926402.json, 数字人/数字人/一键复刻爆款视频｜数字人视频生视频 动作迁移照搬_2097579730450075650.json, 视频生成/图生视频/Scail2动作迁移For循环一键模仿图生视频处理工具_2101394038732709889.json, 视频生成/图生视频/Scail2多参动作迁移 官方节点无劣化工作流_2098311637685067777.json, 视频生成/图生视频/Scail2多参工作流｜图生视频角色动作驱动_2090932731508256770.json, 视频生成/图生视频/Scail2多参无劣化动作迁移 默认DPO Lora关闭按需开启_2098657872681979905.json, 视频生成/图生视频/多参动作迁移 Scail2 人物特效视频运镜图生视频_2094184722862796802.json, 视频生成/图生视频/运镜多参两不误｜Scail2人物特效视频生成_2096594560544759809.json]
+members: [视频生成/图生视频/加速版双时钟版官流原版合集｜MinimaxH3视频参考生成视频生视频_2088138270730444801.json, 视频生成/图生视频/换装加动作迁移视频编辑｜MiniMaxH3全节点注释视频生视频_2088735225936441345.json, 视频生成/图生视频/视频换背景提示词编辑｜MiniMaxH3视频生视频场景一键替换_2090468441949036546.json, 视频生成/图生视频/视频换背景支持参考图｜MiniMaxH3视频编辑实战_2101143111773802497.json, 视频生成/图生视频/视频换背景编辑｜MiniMaxH3人物特效动作迁移处理_2094593810511781890.json, 视频生成/图生视频/视频换背景随意换｜MiniMaxH3 视频编辑动作迁移_2096263348093542402.json, 视频生成/图生视频/视频编辑MiniMax H3视频换背景工作流，人物类特效视频运镜图生视频方案_2108448538760933377.json, 视频生成/图生视频/视频编辑换装动作迁移｜MiniMaxH3全节点注释版_2090911739268390914.json, 视频生成/视频生视频/MiniMax H3视频换背景视频编辑工作流_人物特效视频生视频处理工具_2106155529885282305.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_88
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/一键复刻爆款视频图生视频处理生成工作流工具_2101396084621926402.json、数字人/数字人/一键复刻爆款视频｜数字人视频生视频 动作迁移照搬_2097579730450075650.json、视频生成/图生视频/Scail2动作迁移For循环一键模仿图生视频处理工具_2101394038732709889.json、视频生成/图生视频/Scail2多参动作迁移 官方节点无劣化工作流_2098311637685067777.json、视频生成/图生视频/Scail2多参工作流｜图生视频角色动作驱动_2090932731508256770.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/加速版双时钟版官流原版合集｜MinimaxH3视频参考生成视频生视频_2088138270730444801.json、视频生成/图生视频/换装加动作迁移视频编辑｜MiniMaxH3全节点注释视频生视频_2088735225936441345.json、视频生成/图生视频/视频换背景提示词编辑｜MiniMaxH3视频生视频场景一键替换_2090468441949036546.json、视频生成/图生视频/视频换背景支持参考图｜MiniMaxH3视频编辑实战_2101143111773802497.json、视频生成/图生视频/视频换背景编辑｜MiniMaxH3人物特效动作迁移处理_2094593810511781890.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SingleBooleanTrigger`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy imageRemBg`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 7/8 个有
-- `KSamplerSelect` —— 7/8 个有
-- `SamplerCustom` —— 7/8 个有
-- `ComfyMathExpression` —— 6/8 个有
-- `Float` —— 6/8 个有
-- `GetImageRangeFromBatch` —— 6/8 个有
-- `easy batchAnything` —— 6/8 个有
-- `easy forLoopEnd` —— 6/8 个有
-- `easy forLoopStart` —— 6/8 个有
-- `ComfySwitchNode` —— 5/8 个有
-- `ImageBatchMultiple+` —— 5/8 个有
-- `ImageFromBatch` —— 5/8 个有
-- `SaveImage` —— 4/8 个有
-- `Int` —— 2/8 个有
-- `WanContextWindowsManual` —— 2/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `VAEDecodeTiled` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 8/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
+- `VRAM_Debug` —— 8/9 个有
+- `孤海注释` —— 8/9 个有
+- `VAEDecodeAudio` —— 7/9 个有
+- `GetNode` —— 6/9 个有
+- `ImageConcanate` —— 6/9 个有
+- `SetNode` —— 6/9 个有
+- `LoadImage` —— 4/9 个有
+- `CR Text` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `AddLabel` —— 1/9 个有
+- `EasyCache` —— 1/9 个有
+- `GetCurrentTimeNode` —— 1/9 个有
+- `GetImageSize` —— 1/9 个有
+- `LazySwitch1way` —— 1/9 个有
+- `ModelPreviewOverrideKJ` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
+- `PurgeVRAM_UTK` —— 1/9 个有
+- `SomethingToString` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（9/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

@@ -3,60 +3,77 @@ name: unknown_workflow_video_lora_sampler_818
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8305
-common_nodes: [CR Text Concatenate, CR Text Replace, CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageFromBatch+, ImageResizeKJ, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], PrimitiveBoolean, RHHiddenNodes, RH_Captioner, SetNode, SimpleMath+, TextBox, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy ifElse, easy showAnything]
+coverage: 0.546
+common_nodes: [Anything Everywhere, BlockifyMask, CLIPVisionLoader, CR Prompt Text, Display Any (rgthree), DrawMaskOnImage, DrawViTPose, Evaluate Integers, GetImageSize, GetNode, ImageBatch, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, Int, JWImageExtractFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, PrimitiveFloat, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation, easy sam3Visualization]
 problems: []
 missing: []
-members: [视频生成/图生视频/1952617990284087298.json, 视频生成/图生视频/1952604203145474049.json]
+members: [视频生成/图生视频/WanAnimate_Sam3 精准替换角色_1996398131812114433.json, 视频生成/图生视频/超精准sam3人物替换，视频主体替换 生成速度快 效果好_2011830823506419713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_818
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1952617990284087298.json、视频生成/图生视频/1952604203145474049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate_Sam3 精准替换角色_1996398131812114433.json、视频生成/图生视频/超精准sam3人物替换，视频主体替换 生成速度快 效果好_2011830823506419713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+- `Anything Everywhere`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `Display Any (rgthree)`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `Evaluate Integers`
+- `GetImageSize`
 - `GetNode`
-- `INTConstant`
+- `ImageBatch`
+- `ImageConcatMulti`
 - `ImageFromBatch+`
-- `ImageResizeKJ`
-- `ImpactSwitch`
+- `ImageResizeKJv2`
+- `Int`
+- `JWImageExtractFromBatch`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `RH_Captioner`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `RepeatImageBatch`
 - `SetNode`
-- `SimpleMath+`
-- `TextBox`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy ifElse`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `easy sam3Visualization`
+
+**可变部分**（部分 workflow 才有）：
+- `Manual XY Entry Info` —— 1/2 个有
+- `MathExpressionNode` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ZML_IntegerFloatConverter` —— 1/2 个有
 
 ## 典型参数
 

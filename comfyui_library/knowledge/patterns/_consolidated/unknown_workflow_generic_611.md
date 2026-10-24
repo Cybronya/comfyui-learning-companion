@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_611
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.726
-common_nodes: [PrimitiveStringMultiline, T8_BreezeTTS_DesignRequest, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
+coverage: 0.8944
+common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Breeze TTS 2 声音设计工作流-AI台词转语音_2095712396840095746.json, 音频生成/音频生成/Breeze TTS 2-声音设计-配音_2096859263791624193.json, 音频生成/音频生成/Breeze-TTS2-Design_2105912518110699521.json]
+members: [音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_1971861536375566337.json, 音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_2087798191793201154.json, 音频生成/音频生成/Voice sample for reference_2016407189463764994.json, 音频生成/音频生成/surprise语气_2016437833367560194.json, 音频生成/音频生成/音色克隆-基于IndexTTS_2005256954396241922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_611
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Breeze TTS 2 声音设计工作流-AI台词转语音_2095712396840095746.json、音频生成/音频生成/Breeze TTS 2-声音设计-配音_2096859263791624193.json、音频生成/音频生成/Breeze-TTS2-Design_2105912518110699521.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_1971861536375566337.json、音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_2087798191793201154.json、音频生成/音频生成/Voice sample for reference_2016407189463764994.json、音频生成/音频生成/surprise语气_2016437833367560194.json、音频生成/音频生成/音色克隆-基于IndexTTS_2005256954396241922.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `T8_BreezeTTS_DesignRequest`
-- `T8_BreezeTTS_Generate`
-- `T8_BreezeTTS_GenerationSettings`
-- `T8_BreezeTTS_ModelLoader`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `SaveAudioAdvanced` —— 1/3 个有
+- `SaveAudioMP3` —— 3/5 个有
+- `DF_Text_Box` —— 2/5 个有
+- `SaveAudio` —— 2/5 个有
 
 ## 典型参数
 

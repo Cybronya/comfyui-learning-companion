@@ -3,56 +3,63 @@ name: unknown_workflow_video_lora_sampler_405
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9082
-common_nodes: [CR Prompt Text, JWInteger, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int]
+coverage: 0.574
+common_nodes: [FloatConstant, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1945815960743800834.json, 视频生成/图生视频/1947158911092305922.json, 视频生成/图生视频/1945677633763909634.json, 视频生成/图生视频/1945637624423882753.json, 视频生成/文生视频/1945683257658888194.json]
+members: [视频生成/图生视频/LongcatAvatar1.5长视频专用，脱口秀、歌手、主播_2061799694145245185.json, 视频生成/图生视频/long cat1.5数字人对口型工作流_2060239521802969090.json, 视频生成/图生视频/longcat avartart 1.5-extend-auto_2061455238598586369.json, 视频生成/图生视频/longcat avartart 1.5-extend_2061623496706449410.json, 视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_405
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1945815960743800834.json、视频生成/图生视频/1947158911092305922.json、视频生成/图生视频/1945677633763909634.json、视频生成/图生视频/1945637624423882753.json、视频生成/文生视频/1945683257658888194.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LongcatAvatar1.5长视频专用，脱口秀、歌手、主播_2061799694145245185.json、视频生成/图生视频/long cat1.5数字人对口型工作流_2060239521802969090.json、视频生成/图生视频/longcat avartart 1.5-extend-auto_2061455238598586369.json、视频生成/图生视频/longcat avartart 1.5-extend_2061623496706449410.json、视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
+- `FloatConstant`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
+- `LongCatAvatarWhisperEmbeds`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoFreeInitArgs`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy int`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `WanVideoImageToVideoEncode` —— 4/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `WanVideoEmptyEmbeds` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
+- `ComfyMathExpression` —— 4/5 个有
+- `GetImageRangeFromBatch` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `ImageBatchExtendWithOverlap` —— 4/5 个有
+- `PreviewAny` —— 4/5 个有
+- `ReplaceVideoLatentFrames` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `WanAnimatePlus BlockSwap` —— 3/5 个有
+- `ComfyNumberConvert` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `GetImageSizeAndCount` —— 2/5 个有
+- `PreviewAudio` —— 2/5 个有
+- `WanVideoBlockSwap` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `easy forLoopEnd` —— 1/5 个有
+- `easy forLoopStart` —— 1/5 个有
 
 ## 典型参数
 

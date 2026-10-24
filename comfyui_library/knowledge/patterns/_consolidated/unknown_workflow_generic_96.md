@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_96
 type: Unknown Workflow
-frequency: 9
+frequency: 15
 level: moderate
-coverage: 0.852
-common_nodes: [RH_RhartImageG25OfficialTokenFlareTextToImage, SaveImage]
+coverage: 0.565
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/G-image-2.5文生图 极速版_2098008298242011138.json, 图片生成/文生图/G-image-2.5文生图_极速版_2098207758951731201.json, 图片生成/文生图/【极速版】全能图片G-image-2.5 文生图_2097953312124526594.json, 图片生成/文生图/【闭源】全能图片G2.5（稳定版-文生图）_2098363595838021634.json, 图片生成/文生图/全能图片G-image-2.5文生图 极速版_2097860560917450754.json, 图片生成/文生图/全能图片G-image-2.5文生图 极速版_2098300627863564289.json, 图片生成/文生图/全能图片G-image-2.5文生图极速版API专用_2098375100654505986.json, 图片生成/文生图/全能图片G2.5文生图稳定版_2098190743281164290.json, 图片生成/文生图/全能图片G2.5（文生图-稳定版）_2098003100916346881.json]
+members: [图片生成/图生图/室内户型图五种处理方案_2111221179829805058.json, 图片生成/图生图/室内软装设计排版_2107634806942158850.json, 图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2101486660235128833.json, 图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2102217490880352257.json, 图片生成/图生图/故事版生成低价版_2101490718018723842.json, 图片生成/图生图/故事版生成低价版_2102304819271790593.json, 图片生成/图生图/故事版生成（低价版）_2100051124219895810.json, 图片生成/图生图/效果图转2.5D轴侧图_2105560279689031681.json, 图片生成/图生图/效果图重新渲染八种的光源及布光控制出图_2101475279637147650.json, 图片生成/图生图/效果图重新渲染的光源及布光控制出图_2101280365599088642.json, 图片生成/图生图/暖阳手账：一人多趣迷你小世界_2070409564427735041.json, 图片生成/图生图/照片光影重构十种风格_2101298116241743873.json, 图片生成/图生图/照片改撕裂式风格_2092538259690835970.json, 图片生成/图生图/照片改水墨画风格_2092429569696550913.json, 图片生成/图生图/照片改油画风格_2092439938225762306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_96
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/G-image-2.5文生图 极速版_2098008298242011138.json、图片生成/文生图/G-image-2.5文生图_极速版_2098207758951731201.json、图片生成/文生图/【极速版】全能图片G-image-2.5 文生图_2097953312124526594.json、图片生成/文生图/【闭源】全能图片G2.5（稳定版-文生图）_2098363595838021634.json、图片生成/文生图/全能图片G-image-2.5文生图 极速版_2097860560917450754.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/室内户型图五种处理方案_2111221179829805058.json、图片生成/图生图/室内软装设计排版_2107634806942158850.json、图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2101486660235128833.json、图片生成/图生图/换上装_上衣替换_换衣服_服装替换_Image2_2102217490880352257.json、图片生成/图生图/故事版生成低价版_2101490718018723842.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `RH_RhartImageG25OfficialTokenFlareTextToImage`
+全部 15 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/9 个有
+- `Image Comparer (rgthree)` —— 3/15 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/15 个有
+- `LayerUtility: TextJoin` —— 1/15 个有
 
 ## 典型参数
 

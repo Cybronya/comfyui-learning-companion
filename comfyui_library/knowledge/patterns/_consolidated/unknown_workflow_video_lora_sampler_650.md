@@ -7,13 +7,13 @@ coverage: 0.773
 common_nodes: [BasicScheduler, CLIPTextEncode, CR Text Concatenate, CS-LTXGridDirector, ComfySwitchNode, DualCLIPLoader, ImageRGBChannel, Int, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LayerColor: Levels, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PreviewImage, PrimitiveBoolean, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_Utils, SamplerCustom, SaveImage, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, TextInput_, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorGuide, easy showAnything, ttN concat, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/2073463653397184512.json, 视频生成/图生视频/2071936473150087169.json, 视频生成/图生视频/2066428314536996866.json]
+members: [视频生成/图生视频/ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2073463653397184512.json, 视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json, 视频生成/图生视频/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2066428314536996866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_650
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2073463653397184512.json、视频生成/图生视频/2071936473150087169.json、视频生成/图生视频/2066428314536996866.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2073463653397184512.json、视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json、视频生成/图生视频/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2066428314536996866.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

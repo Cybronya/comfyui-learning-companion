@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_227
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.625833
-common_nodes: [LoadImage, RH_MinimaxHailuoH3ImageToVideo, SaveVideo, easy showAnything]
+coverage: 0.764778
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/海螺H3 minimax H3图生视频（图生视频&首尾帧）_2083367918850625537.json, 视频生成/图生视频/海螺H3 minimax H3首尾帧生视频_2084883356260593665.json, 视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2083017600380002305.json, 视频生成/图生视频/海螺Hailuo H3图生视频（图生视频&首尾帧）_2083158457552818178.json, 视频生成/图生视频/海螺Hailuo H3首尾帧视频（RH版）_2083013257543110657.json, 视频生成/图生视频/海螺Hailuo H3首尾帧视频（RH版）_2083071534855450625.json]
+members: [图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json, 图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099336747762151426.json, 图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099668821413031937.json, 图片生成/图生图/宠物拟人工作流｜宠物照片变拟人角色_2099453322351702018.json, 图片生成/图生图/建筑效果图工作流｜草图毛坯照生成建筑外观效果图_2099314501794484225.json, 图片生成/图生图/指定姿势出图工作流｜姿势参考图控制人物动作_2099402203030188034.json, 图片生成/图生图/真人转动漫工作流｜照片一键变日系动漫风格_2099402191676207105.json, 图片生成/图生图/艺术风格转换工作流｜油画水彩素描卡通一键换_2099453299673096193.json, 图片生成/图生图/黑白照片上色工作流｜老照片智能上色还原_2099453304219721729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_227
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/海螺H3 minimax H3图生视频（图生视频&首尾帧）_2083367918850625537.json、视频生成/图生视频/海螺H3 minimax H3首尾帧生视频_2084883356260593665.json、视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2083017600380002305.json、视频生成/图生视频/海螺Hailuo H3图生视频（图生视频&首尾帧）_2083158457552818178.json、视频生成/图生视频/海螺Hailuo H3首尾帧视频（RH版）_2083013257543110657.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json、图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099336747762151426.json、图片生成/图生图/商品精修工作流｜Seedream_5_Pro_电商主图一键精修_2099668821413031937.json、图片生成/图生图/宠物拟人工作流｜宠物照片变拟人角色_2099453322351702018.json、图片生成/图生图/建筑效果图工作流｜草图毛坯照生成建筑外观效果图_2099314501794484225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `RH_MinimaxHailuoH3ImageToVideo`
-- `SaveVideo`
-- `easy showAnything`
+- `PrimitiveStringMultiline`
+- `RH_SeedreamV5ProImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/6 个有
+- `RH_Captioner_Pro` —— 1/9 个有
+- `StringConcatenate` —— 1/9 个有
 
 ## 典型参数
 

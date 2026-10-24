@@ -1,38 +1,50 @@
 ---
 name: unknown_workflow_generic_190
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.9165
-common_nodes: [DeepTranslatorTextNode, ImageConcanate, LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.8485
+common_nodes: [HAIGC_CombineUnits, HAIGC_Layer, HAIGC_SavePSD, LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Text, easy promptConcat, easy promptLine]
 problems: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/文生图/1931273202180227074.json, 图片生成/文生图/1931550667134185473.json, 图片生成/文生图/1931553605239943170.json, 图片生成/文生图/1931555932394684418.json, 图片生成/文生图/1931560252347756545.json, 图片生成/文生图/1931563283378319361.json]
+missing: []
+members: [图片生成/图生图/一键生成详情页_2102050366396387330.json, 图片生成/图生图/个人形象设计图卡分析【6图】一键精准设计 全能G-image2.0低价版_2050963126404825090.json, 图片生成/图生图/全能图片G-image-2 电商详情页一键生成（RH平台廉价版api调用）_2050778767416668161.json, 图片生成/图生图/全能图片V1 Pro 电商详情页一键生成_2012746996444041218.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2098971573062553601.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2099073149110407169.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2100028090708746242.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2100860566008061953.json, 图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2101129753725071361.json, 图片生成/图生图/电商产品产品页+详情页【6图】一键精准设计 全能G-image2.0低价版_2050501658743980034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_190
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1931273202180227074.json、图片生成/文生图/1931550667134185473.json、图片生成/文生图/1931553605239943170.json、图片生成/文生图/1931555932394684418.json、图片生成/文生图/1931560252347756545.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/一键生成详情页_2102050366396387330.json、图片生成/图生图/个人形象设计图卡分析【6图】一键精准设计 全能G-image2.0低价版_2050963126404825090.json、图片生成/图生图/全能图片G-image-2 电商详情页一键生成（RH平台廉价版api调用）_2050778767416668161.json、图片生成/图生图/全能图片V1 Pro 电商详情页一键生成_2012746996444041218.json、图片生成/图生图/全能图片V1_Pro_电商详情页一键生成_2098971573062553601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `DeepTranslatorTextNode`
-- `ImageConcanate`
+全部 10 个 workflow 都包含：
+- `HAIGC_CombineUnits`
+- `HAIGC_Layer`
+- `HAIGC_SavePSD`
 - `LoadImage`
-- `RH_ComfyFluxKontext`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `Text`
+- `easy promptConcat`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `BFL_ComfyFluxKontext` —— 2/6 个有
-- `Comfly_Flux_Kontext` —— 2/6 个有
+- `easy showAnything` —— 9/10 个有
+- `ShowText|pysssss` —— 8/10 个有
+- `RH_Nano_Banana2_Image2Image` —— 6/10 个有
+- `RH_RhartImageG2ImageToImage` —— 3/10 个有
+- `EmptyImage` —— 2/10 个有
+- `MuyeTextEditOutput` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `ShowText` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/10 个有
 
 ## 典型参数
 
@@ -44,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

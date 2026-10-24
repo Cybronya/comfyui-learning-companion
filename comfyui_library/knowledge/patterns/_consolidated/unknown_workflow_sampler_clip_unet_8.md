@@ -1,104 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_unet_8
 type: Unknown Workflow
-frequency: 27
+frequency: 36
 level: moderate
-coverage: 0.849778
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, ImageSharpen, KSamplerAdvanced, KSamplerSelect, ModelSamplingAuraFlow, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
-missing: [CR Text, LayerUtility: PurgeVRAM V2]
-members: [图片生成/图生图/2091343877964910593.json, 图片生成/文生图/Dark Deco 暗黑装饰艺术 三采工作流（无反推模板）_2081052417982033921.json, 图片生成/文生图/Dark Deco 暗黑装饰艺术 全自动三采工作流_2081041992469012482.json, 图片生成/文生图/Krea2 双采样+Flux.2 Klein高清放大-自动提示词改写文生图_2071886759901884418.json, 图片生成/文生图/Krea2-文生图全模式_2074293554280751106.json, 图片生成/文生图/Krea2-文生图全自动风格迁移_2074293504108490754.json, 图片生成/文生图/Krea2三采-全自动文生图_2075218791964962818.json, 图片生成/文生图/Krea2三采-全自动文生图_2079754578903523329.json, 图片生成/文生图/Krea2三采-全自动文生图_2090250296709705730.json, 图片生成/文生图/Krea2三采-全自动文生图_2090254777090400258.json, 图片生成/文生图/Krea2三采-全自动文生图_2090303123905662977.json, 图片生成/文生图/Krea2三采-全自动文生图全模式_2071985841202880514.json, 图片生成/文生图/Krea2三采-文生图全模式_2089265262427205633.json, 图片生成/文生图/Krea2三采文生图_2076913794516869122.json, 图片生成/文生图/Krea2三采流-全自动文生图全模式_2070098937662496769.json, 图片生成/文生图/Z Image Air 空灵感 8K 直出_2075064355628081154.json, 图片生成/文生图/Z Image Air 空灵感 8K 直出_2076658759031681026.json, 图片生成/文生图/Z Image 极致人体文生图 Extreme Asthetics Text to Image_2075065299652669442.json, 图片生成/文生图/Z+Image+Air+空灵感+8K+直出_2080464179739324418.json, 图片生成/文生图/Z+Image+Air+空灵感_2081903340920852482.json, 图片生成/文生图/Z-image-base-邪修双采+高清放大_2016379330103873538.json, 图片生成/文生图/Z-image-base-邪修双采+高清放大_2018103457047126018.json, 图片生成/文生图/万能图像生成器-直出4K_2055990233665155073.json, 图片生成/文生图/万能图像生成器_2028113030734680066.json, 图片生成/文生图/文生图 角色生成 仙侠 古风 现代（超清）_2100600038656405506.json, 图片生成/文生图/超强自定义角色生成_2024732759662530561.json, 图片生成/文生图/超级双采8k 出图_2073110455563939841.json]
+coverage: 0.998528
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/Z-Image最新千问文生图_1993894546499108866.json, 图片生成/文生图/Z-image 来袭，这才是真正的降维打击！_1994248474698989570.json, 图片生成/文生图/Z-image 极简基础工作流_2017891493830205441.json, 图片生成/文生图/Z-image-Turbo真实文生图_2067573810974519298.json, 图片生成/文生图/Z-image-base  文生图工作流_2016356755948703746.json, 图片生成/文生图/Z-image-base  电影分镜、游戏美术、高端商业摄影_2017866317071650817.json, 图片生成/文生图/Z-image-base 文生图-高细节_2016335325617987585.json, 图片生成/文生图/Z-image-base 生图多样性_2016234401843122178.json, 图片生成/文生图/Z-image-base_2016195556967714818.json, 图片生成/文生图/Z-image-base_2018237442960138241.json, 图片生成/文生图/Z-image-base_2042138409904377858.json, 图片生成/文生图/Z-image-base_2057267276319121409.json, 图片生成/文生图/Z-image-base基础文生图工作流_2016406345590775810.json, 图片生成/文生图/Z-image-base文生图-质感爆炸！_2020689012381454337.json, 图片生成/文生图/Z-image-base文生图_2016310014306160641.json, 图片生成/文生图/Z-image-base文生图_2016773694768553985.json, 图片生成/文生图/Z-image-base文生图_2017044822808338433.json, 图片生成/文生图/Z-image-base文生图_2019404038776823810.json, 图片生成/文生图/Z-image-base文生图_2020836862188851201.json, 图片生成/文生图/Z-image_turbo生图急速版_2036675538508587010.json, 图片生成/文生图/Z-image_turbo生图急速版、全量版_2038263362722729985.json, 图片生成/文生图/Z-image_zimage_文生图_超真实感_2039246037906366465.json, 图片生成/文生图/Z-image_zimage_文生图_超真实感_2042149760525668353.json, 图片生成/文生图/Z-image_zimage_文生图_超真实感_2042524425781780481.json, 图片生成/文生图/Z-image_zimage_文生图_超真实感_2042822338177142786.json, 图片生成/文生图/Z-image_zimage_文生图_超真实感_2042900414516961281.json, 图片生成/文生图/Z-image_zimage_文生图工作流 Base版_2039923913303531522.json, 图片生成/文生图/Z-image_zimage_文生图工作流_2019697317217046529.json, 图片生成/文生图/Z-image_zimage_文生图工作流_2037725984199282690.json, 图片生成/文生图/Z-image文生图_2016334900588191745.json, 图片生成/文生图/Z-image文生图官方基础工作流 zimage_2041859367644962817.json, 图片生成/文生图/Z-image文生图官方基础工作流 zimage_2042620316907741185.json, 图片生成/文生图/Z-image文生图官方基础工作流 zimage_2042822446759284738.json, 图片生成/文生图/Z-image最新文生图，超细腻画面_2018208815497351170.json, 图片生成/文生图/Z-image模型 文生图_2068898439915728897.json, 图片生成/文生图/chm文生图片工作流_2111389341728731137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_8
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/2091343877964910593.json、图片生成/文生图/Dark Deco 暗黑装饰艺术 三采工作流（无反推模板）_2081052417982033921.json、图片生成/文生图/Dark Deco 暗黑装饰艺术 全自动三采工作流_2081041992469012482.json、图片生成/文生图/Krea2 双采样+Flux.2 Klein高清放大-自动提示词改写文生图_2071886759901884418.json、图片生成/文生图/Krea2-文生图全模式_2074293554280751106.json…）
+> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（图片生成/文生图/Z-Image最新千问文生图_1993894546499108866.json、图片生成/文生图/Z-image 来袭，这才是真正的降维打击！_1994248474698989570.json、图片生成/文生图/Z-image 极简基础工作流_2017891493830205441.json、图片生成/文生图/Z-image-Turbo真实文生图_2067573810974519298.json、图片生成/文生图/Z-image-base  文生图工作流_2016356755948703746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
+- **样本数**：36
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `CFGGuider`
+全部 36 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `ImageSharpen`
-- `KSamplerAdvanced`
-- `KSamplerSelect`
-- `ModelSamplingAuraFlow`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 23/27 个有
-- `PreviewImage` —— 22/27 个有
-- `INTConstant` —— 19/27 个有
-- `Int` —— 19/27 个有
-- `llama_cpp_instruct_adv` —— 17/27 个有
-- `llama_cpp_model_loader` —— 17/27 个有
-- `LoraLoaderModelOnly` —— 15/27 个有
-- `CR Prompt Text` —— 14/27 个有
-- `Image Comparer (rgthree)` —— 14/27 个有
-- `PreviewAny` —— 13/27 个有
-- `SeedVR2LoadDiTModel` —— 13/27 个有
-- `SeedVR2LoadVAEModel` —— 13/27 个有
-- `SeedVR2VideoUpscaler` —— 13/27 个有
-- `llama_cpp_parameters` —— 13/27 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/27 个有
-- `ShowText|pysssss` —— 8/27 个有
-- `LoadImage` —— 6/27 个有
-- `PrimitiveInt` —— 6/27 个有
-- `PrimitiveStringMultiline` —— 6/27 个有
-- `StringReplace` —— 6/27 个有
-- `CR Text` —— 5/27 个有
-- `Label (rgthree)` —— 5/27 个有
-- `GetNode` —— 3/27 个有
-- `SetNode` —— 3/27 个有
-- `AILab_QwenVL` —— 2/27 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/27 个有
-- `RH_LLMAPI_Pro_Node` —— 2/27 个有
-- `MemoryCleaner` —— 1/27 个有
+- `ModelSamplingAuraFlow` —— 35/36 个有
+- `Int` —— 2/36 个有
+- `CompressImages` —— 1/36 个有
+- `PrimitiveStringMultiline` —— 1/36 个有
+- `easy getNode` —— 1/36 个有
+- `easy promptList` —— 1/36 个有
+- `easy setNode` —— 1/36 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1536 | 27 | 85% |
-| 高度 | 1536 | 1024 - 2584 | 27 | 80% |
-| 采样步数 | randomize | - | 27 | 78% |
-| Prompt 约束强度(CFG) | 3 | 3 - 3 | 27 | 100% |
-| 采样算法 | 1 | 1 - 2 | 27 | 66% |
-| 调度器 | euler | - | 27 | 96% |
-| 重绘幅度 | simple | - | 27 | 96% |
+| 采样步数 | 50 | 8 - 50 | 36 | 56% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 8 | 36 | 53% |
+| 采样算法 | res_multistep | - | 36 | 83% |
+| 调度器 | simple | - | 36 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 36 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/36 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1536，27 个样本，取值集中（一致性 85%）
-- 高度 中位数 1536，观测区间 1024 - 2584，27 个样本
-- 采样步数 最常用 randomize，27 个样本，一致性 78%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，27 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 2，27 个样本
-- 调度器 最常用 euler，27 个样本，一致性 96%
-- 重绘幅度 最常用 simple，27 个样本，一致性 96%
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、LayerUtility: PurgeVRAM V2
+- 采样步数 中位数 50，观测区间 8 - 50，36 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 8，36 个样本
+- 采样算法 最常用 res_multistep，36 个样本，一致性 83%
+- 调度器 最常用 simple，36 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，36 个样本，取值集中（一致性 100%）

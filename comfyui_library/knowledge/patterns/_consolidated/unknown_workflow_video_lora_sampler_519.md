@@ -3,76 +3,78 @@ name: unknown_workflow_video_lora_sampler_519
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.8355
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, Fast Bypasser (rgthree), GetNode, ImpactInt, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, wanBlockSwap]
-problems: []
+coverage: 0.911
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频(MOE官方流)｜Light2v 加速版_2104706846383759362.json, 视频生成/图生视频/1988440123446616065.json, 视频生成/图生视频/1989332274598563842.json, 视频生成/图生视频/1978326367861366785.json]
+members: [视频生成/图生视频/Wan2.2-S2V 音频驱动图片数字人_2026256930167066626.json, 视频生成/图生视频/Wan2.2-S2V对口型-文本+音频+图片生视频_1961064930017525761.json, 视频生成/图生视频/wan2_2_S2V音频生成视频工作流，数字人口播，数字人唱歌_1961361515834183681.json, 音频生成/音频生成/Wan2.2-S2V 音频到视频数字人对口型_1961331106094235649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_519
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频(MOE官方流)｜Light2v 加速版_2104706846383759362.json、视频生成/图生视频/1988440123446616065.json、视频生成/图生视频/1989332274598563842.json、视频生成/图生视频/1978326367861366785.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-S2V 音频驱动图片数字人_2026256930167066626.json、视频生成/图生视频/Wan2.2-S2V对口型-文本+音频+图片生视频_1961064930017525761.json、视频生成/图生视频/wan2_2_S2V音频生成视频工作流，数字人口播，数字人唱歌_1961361515834183681.json、音频生成/音频生成/Wan2.2-S2V 音频到视频数字人对口型_1961331106094235649.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `Fast Bypasser (rgthree)`
-- `GetNode`
-- `ImpactInt`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
-- `PathchSageAttentionKJ`
-- `SetNode`
-- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `wanBlockSwap`
+- `WanSoundImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 3/4 个有
-- `WanImageToVideo` —— 3/4 个有
-- `PainterI2V` —— 2/4 个有
-- `Seed (rgthree)` —— 2/4 个有
-- `CR Upscale Image` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `AudioCombine` —— 2/4 个有
+- `AudioCrop` —— 2/4 个有
+- `CR SDXL Aspect Ratio` —— 2/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `PrimitiveString` —— 2/4 个有
+- `RH_GetAudioDuration` —— 2/4 个有
+- `TrimAudio` —— 2/4 个有
+- `INTConstant` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 - `easy cleanGpuUsed` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | dpmpp_2m_sde | - | 4 | 100% |
-| 重绘幅度 | beta | - | 4 | 100% |
+| 采样步数 | 8 | 6 - 8 | 4 | 88% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 4 | 81% |
+| 采样算法 | uni_pc | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m_sde，4 个样本，一致性 100%
-- 重绘幅度 最常用 beta，4 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，4 个样本，取值集中（一致性 81%）
+- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

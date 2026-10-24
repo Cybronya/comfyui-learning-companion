@@ -3,64 +3,72 @@ name: unknown_workflow_video_lora_sampler_500
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.49275
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Divide [DVB], FlashVSRNode, Float, GetNode, ImageResizeKJv2, Int, JWInteger, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SigmasGraph, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.8805
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json, 视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json, 视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json]
+members: [视频生成/图生视频/MultiTalk+Aniwan图生数字人+音色克隆_1948391193374797826.json, 视频生成/图生视频/Multitalk+aniwan数字人，可说话演讲可唱歌_1940356622893953026.json, 视频生成/图生视频/ani ③-Multitalk数字人_1945034637402099713.json, 音频生成/音频生成/Multitalk+aniwan数字人，可说话演讲可唱歌_1949746352932741121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_500
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 图生_首尾帧生视频_2094253699223875585.json、视频生成/图生视频/MiniMax H3 多图参考生视频_2089995096556130306.json、视频生成/图生视频/MiniMax H3 音频驱动数字人_2089949306781519874.json、视频生成/文生视频/MiniMax H3 文生视频+FlashVSR高清_2089958386669543425.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MultiTalk+Aniwan图生数字人+音色克隆_1948391193374797826.json、视频生成/图生视频/Multitalk+aniwan数字人，可说话演讲可唱歌_1940356622893953026.json、视频生成/图生视频/ani ③-Multitalk数字人_1945034637402099713.json、音频生成/音频生成/Multitalk+aniwan数字人，可说话演讲可唱歌_1949746352932741121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Divide [DVB]`
-- `FlashVSRNode`
-- `Float`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SigmasGraph`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `MiniMaxH3ImageToVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `RH_LLMAPI_Pro_Node` —— 1/4 个有
-- `SDVN Fast Groups Bypasser` —— 1/4 个有
-- `SoundFlow_GetLength` —— 1/4 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/4 个有
-- `ZNGB_AudioCrop` —— 1/4 个有
+- `Audio Duration (mtb)` —— 3/4 个有
+- `AudioCrop` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `LayerUtility: PurgeVRAM` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `TextInput_` —— 3/4 个有
+- `WanVideoEasyCache` —— 3/4 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoExperimentalArgs` —— 3/4 个有
+- `WanVideoFreeInitArgs` —— 3/4 个有
+- `WanVideoSLG` —— 3/4 个有
+- `WanVideoSetRadialAttention` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `JWIntegerToString` —— 2/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
+- `IndexTTSRun` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `String Literal` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `WanVideoEncode` —— 1/4 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/4 个有
+- `WanVideoUni3C_embeds` —— 1/4 个有
 
 ## 典型参数
 

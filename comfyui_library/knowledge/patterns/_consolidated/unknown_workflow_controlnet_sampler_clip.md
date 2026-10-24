@@ -1,80 +1,85 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip
 type: Unknown Workflow
-frequency: 6
+frequency: 11
 level: strong
-coverage: 0.8765
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.869182
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ControlNetApplySD3, ControlNetLoader, EmptySD3LatentImage, ImageConcanate, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, SeedVR2BlockSwap, SeedVR2GGUF, SetUnionControlNetType, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z Image Turbo Fun Controlnet Union_2063526631158935554.json, 图片生成/文生图/Z-Image ControlNet 2.1 （六种控制类型）_2015974649129082881.json, 图片生成/文生图/Z-Image_turbo控制ControlNet-2601_2020760393320243201.json, 图片生成/文生图/Z-lmage ControlNet V2.1 控制洗图工作流【官方版】_2082708775894609922.json, 图片生成/文生图/z-image controlnet2.0反推洗图_2073292094273318914.json, 图片生成/文生图/z-image controlnet反推洗图_2073286416464957442.json]
+members: [图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json, 图片生成/文生图/Qwen Image InstantX Controlnet姿势控制V1_1960762262350966785.json, 图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json, 图片生成/文生图/Qwen Image InstantX Controlnet线稿控制V1_1960762275642707970.json, 图片生成/文生图/（写实版）Qwen Image 4步V2新版本文生图_1965712466367967233.json, 图片生成/文生图/（贞贞写实版）Qwen Image文生图_1963885408525570050.json, 图片生成/文生图/（贞贞写实版）Qwen Image文生图（滑冰版）_1964919288882712578.json, 图片生成/文生图/（贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json, 图片生成/文生图/（贞贞版）Qwen Image InstantX Controlnet姿势控制V1_1960733829457752065.json, 图片生成/文生图/（贞贞版）Qwen Image InstantX Controlnet深度控制V1_1960733292200955906.json, 图片生成/文生图/（贞贞版）Qwen Image文生图_1961397908115537922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z Image Turbo Fun Controlnet Union_2063526631158935554.json、图片生成/文生图/Z-Image ControlNet 2.1 （六种控制类型）_2015974649129082881.json、图片生成/文生图/Z-Image_turbo控制ControlNet-2601_2020760393320243201.json、图片生成/文生图/Z-lmage ControlNet V2.1 控制洗图工作流【官方版】_2082708775894609922.json、图片生成/文生图/z-image controlnet2.0反推洗图_2073292094273318914.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json、图片生成/文生图/Qwen Image InstantX Controlnet姿势控制V1_1960762262350966785.json、图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json、图片生成/文生图/Qwen Image InstantX Controlnet线稿控制V1_1960762275642707970.json、图片生成/文生图/（写实版）Qwen Image 4步V2新版本文生图_1965712466367967233.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ControlNetApplySD3`
+- `ControlNetLoader`
 - `EmptySD3LatentImage`
+- `ImageConcanate`
 - `KSampler`
 - `LoadImage`
-- `ModelPatchLoader`
 - `ModelSamplingAuraFlow`
-- `QwenImageDiffsynthControlnet`
+- `PreviewImage`
 - `SaveImage`
+- `SeedVR2BlockSwap`
+- `SeedVR2GGUF`
+- `SetUnionControlNetType`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `ConditioningZeroOut` —— 4/6 个有
-- `GetImageSize` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `RH_Captioner` —— 2/6 个有
-- `CannyEdgePreprocessor` —— 1/6 个有
-- `DWPreprocessor` —— 1/6 个有
-- `DepthAnythingV2Preprocessor` —— 1/6 个有
-- `ImageScaleToMaxDimension` —— 1/6 个有
-- `ImageStitch` —— 1/6 个有
-- `SeedVR2` —— 1/6 个有
-- `SeedVR2ExtraArgs` —— 1/6 个有
-- `Text` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 10/11 个有
+- `SaveLatent` —— 10/11 个有
+- `DepthAnything_V2` —— 6/11 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 6/11 个有
+- `AIO_Preprocessor` —— 3/11 个有
+- `OpenposePreprocessor` —— 3/11 个有
+- `Image Compare (mtb)` —— 2/11 个有
+- `GetImageSize` —— 1/11 个有
+- `Image Comparer (rgthree)` —— 1/11 个有
+- `ImageConcatMulti` —— 1/11 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/11 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/11 个有
+- `ShowText|pysssss` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8.5 | 8 - 15 | 6 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | res_multistep | - | 6 | 67% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| ControlNet 权重 | 0.75 | 0.75 - 1 | 11 | 86% |
+| 采样步数 | 8 | 4 - 20 | 11 | 58% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | res_2s | - | 11 | 100% |
+| 调度器 | beta57 | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，观测区间 8 - 15，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，6 个样本，一致性 67%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（4/6 个样本）：Steps较低可能导致细节不足
+- ControlNet 权重 中位数 0.75，观测区间 0.75 - 1，11 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 8，观测区间 4 - 20，11 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，11 个样本，一致性 100%
+- 调度器 最常用 beta57，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足

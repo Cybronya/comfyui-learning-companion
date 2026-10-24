@@ -1,37 +1,37 @@
 ---
 name: unknown_workflow_generic_792
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8635
-common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage, 忽略多组孤海]
+frequency: 4
+level: moderate
+coverage: 0.73175
+common_nodes: [HeartMuLa_Generate, RH_LLMAPI_NODE, SaveAudio, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图极速高品质_2098299159580332033.json, 图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图，经济版_2098944959855554561.json]
+members: [音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json, 音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json, 音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json, 音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_792
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图极速高品质_2098299159580332033.json、图片生成/文生图/全能图片G2.5图生图、图像编辑、文生图，经济版_2098944959855554561.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json、音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json、音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json、音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG25FlareImageToImage`
-- `RH_RhartImageG25SunburstTextToImage`
-- `SaveImage`
-- `忽略多组孤海`
+全部 4 个 workflow 都包含：
+- `HeartMuLa_Generate`
+- `RH_LLMAPI_NODE`
+- `SaveAudio`
+- `Text Multiline`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -43,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,34 +1,30 @@
 ---
 name: unknown_workflow_generic_981
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.857
-common_nodes: [CR Prompt Text, CR Text, RH_Suno_Custom, SaveAudio, SaveAudioMP3, String]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [RH_RhartImageNProTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/SUNO AI音乐生成-v5.0-全球前沿超震撼_1986075505264918530.json, 音频生成/音频生成/SUNO音乐生成-v5.0_1989130280835354625.json]
+members: [图片生成/文生图/NPro_TextToImage_v1.0_2033838783015165953.json, 图片生成/文生图/全能图片PRO-文生图-低价渠道版 API专用_2081657458845642754.json, 图片生成/文生图/全能图片PRO-文生图-低价渠道版_2105332221723889666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_981
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SUNO AI音乐生成-v5.0-全球前沿超震撼_1986075505264918530.json、音频生成/音频生成/SUNO音乐生成-v5.0_1989130280835354625.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/NPro_TextToImage_v1.0_2033838783015165953.json、图片生成/文生图/全能图片PRO-文生图-低价渠道版 API专用_2081657458845642754.json、图片生成/文生图/全能图片PRO-文生图-低价渠道版_2105332221723889666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `RH_Suno_Custom`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `String`
+全部 3 个 workflow 都包含：
+- `RH_RhartImageNProTextToImage`
+- `SaveImage`
 
 ## 典型参数
 
@@ -40,4 +36,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

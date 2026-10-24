@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_211
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.952333
-common_nodes: [LoadImage, RH_Doubao_Seedance_1_5_Pro, SaveVideo]
+coverage: 0.8824
+common_nodes: [CR Text, LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2004475209992335361.json, 视频生成/图生视频/2004142171819261953.json, 视频生成/图生视频/2004099272159207426.json, 视频生成/图生视频/2004068802759434242.json, 视频生成/图生视频/2004407567327653890.json, 视频生成/图生视频/2005581003802505218.json]
+members: [音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json, 音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json, 音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json, 音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json, 音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json, 音频生成/音频生成/Soulx-podcast单人语音克隆_1984080844845449217.json, 音频生成/音频生成/Soulx-podcast双人对话语音克隆_1984822307040477186.json, 音频生成/音频生成/Soulx单人语音克隆_1984192624682811393.json, 音频生成/音频生成/Soulx双人语音克隆_1985525949963845634.json, 音频生成/音频生成/多人普通话、河南话、粤语、四川话音色克隆_2019250961474129921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_211
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2004475209992335361.json、视频生成/图生视频/2004142171819261953.json、视频生成/图生视频/2004099272159207426.json、视频生成/图生视频/2004068802759434242.json、视频生成/图生视频/2004407567327653890.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json、音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json、音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json、音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json、音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `RH_Doubao_Seedance_1_5_Pro`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/6 个有
-- `RHHiddenNodes` —— 2/6 个有
+- `SaveAudio` —— 6/10 个有
+- `SaveAudioMP3` —— 6/10 个有
+- `CR Text Concatenate` —— 3/10 个有
+- `SaveImage` —— 3/10 个有
+- `String` —— 1/10 个有
 
 ## 典型参数
 

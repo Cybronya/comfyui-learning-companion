@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_813
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.607
-common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage, easy showAnything]
+frequency: 4
+level: moderate
+coverage: 0.80525
+common_nodes: [Apply Whisper, AudioSeparation, LoadAudio, PreviewAudio, SaveAudio, ShowText|pysssss, SoundFlow_TrimAudio, VoxCPM_TTS]
 problems: []
 missing: []
-members: [图片生成/文生图/（贞贞工坊API）全能图片2极速版文生图V1（同步转异步）_2028102546115534849.json, 视频生成/文生视频/（16宫格Kpop）全能图片G V2文生图（贞贞的AI工坊）_2049386903681638402.json]
+members: [音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json, 音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json, 音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_813
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/（贞贞工坊API）全能图片2极速版文生图V1（同步转异步）_2028102546115534849.json、视频生成/文生视频/（16宫格Kpop）全能图片G V2文生图（贞贞的AI工坊）_2049386903681638402.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json、音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json、音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json、音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `SaveImage`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioSeparation`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `SoundFlow_TrimAudio`
+- `VoxCPM_TTS`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_gemini_3_1_flash_image_edit_S2A` —— 1/2 个有
-- `Comfly_gpt_image_2_official_ratio` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `LayerUtility: TextBox` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_generic_859
 type: Unknown Workflow
-frequency: 2
-level: weak
+frequency: 3
+level: moderate
 coverage: 1
-common_nodes: [LoadAudio, LoadImage, SaveVideo]
+common_nodes: [LoadImage, RunningHub_DreamFit_SD, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json, 视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json]
+members: [图片生成/图生图/DreamFit 服装模特_1920840169744695297.json, 图片生成/图生图/DreamFit 节点服装参考图生成服装模特_1921200576476954625.json, 图片生成/文生图/DreamFit换装_1921093033519955970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_859
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相3.0高速版-参考生视频_2094318787637104641.json、视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamFit 服装模特_1920840169744695297.json、图片生成/图生图/DreamFit 节点服装参考图生成服装模特_1921200576476954625.json、图片生成/文生图/DreamFit换装_1921093033519955970.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RunningHub_DreamFit_SD`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30PrimeReferenceToVideo` —— 1/2 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/2 个有
+- `Primitive string [Crystools]` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

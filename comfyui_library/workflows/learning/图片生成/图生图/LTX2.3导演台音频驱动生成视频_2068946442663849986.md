@@ -1,0 +1,54 @@
+---
+key: 图片生成/图生图/LTX2.3导演台音频驱动生成视频_2068946442663849986.json
+name: LTX2.3导演台音频驱动生成视频_2068946442663849986
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/LTX2.3导演台音频驱动生成视频_2068946442663849986.json
+hash: ebccaf8614e703a1
+coverage: 0.954545
+learned_at: 2026-10-23 11:08:54
+nodes: [LTXVCropGuides, LTXVAudioVAEDecode, Note, BasicScheduler, KSamplerSelect, UNETLoader, DualCLIPLoader, VAELoaderKJ, LTXVConcatAVLatent, CreateVideo, CLIPTextEncode, VAELoaderKJ, SamplerCustom, VisualizeSigmasKJ, VAEDecodeTiled, LTX2SamplingPreviewOverride, LTXVConditioning, LTX2_NAG, LTXVSeparateAVLatent, LTXDirectorGuide, SaveVideo, LTXDirector]
+patterns: []
+missing: []
+---
+
+# 图片生成/图生图/LTX2.3导演台音频驱动生成视频_2068946442663849986.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/LTX2.3导演台音频驱动生成视频_2068946442663849986.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（22 个）：
+- `LTXVCropGuides`
+- `LTXVAudioVAEDecode` ★核心
+- `Note`
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `LTXVConcatAVLatent`
+- `CreateVideo`
+- `CLIPTextEncode` ★核心
+- `VAELoaderKJ`
+- `SamplerCustom` ★核心
+- `VisualizeSigmasKJ`
+- `VAEDecodeTiled` ★核心
+- `LTX2SamplingPreviewOverride`
+- `LTXVConditioning`
+- `LTX2_NAG`
+- `LTXVSeparateAVLatent`
+- `LTXDirectorGuide`
+- `SaveVideo`
+- `LTXDirector`
+
+## 知识
+
+覆盖率 **95%**（21/22）
+
+**有卡**：`LTXVCropGuides`、`LTXVAudioVAEDecode`、`BasicScheduler`、`KSamplerSelect`、`UNETLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`LTXVConcatAVLatent`、`CreateVideo`、`CLIPTextEncode`、`SamplerCustom`、`VisualizeSigmasKJ`、`VAEDecodeTiled`、`LTX2SamplingPreviewOverride`、`LTXVConditioning`、`LTX2_NAG`、`LTXVSeparateAVLatent`、`LTXDirectorGuide`、`SaveVideo`、`LTXDirector`
+
+**用到的条目**：CLIPTextEncode、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent、LTXVSeparateAVLatent、VAEDecodeTiled、VAELoaderKJ

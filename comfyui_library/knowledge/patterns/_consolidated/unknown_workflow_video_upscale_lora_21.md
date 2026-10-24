@@ -3,101 +3,57 @@ name: unknown_workflow_video_upscale_lora_21
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.643333
-common_nodes: [Any Switch (rgthree), BBoxesToSAM2, BlockifyMask, CLIPVisionLoader, CM_IntToFloat, CR Float To String, CR Integer To String, CR String To Number, CR Text, ClothesSegment, CropFace, DWPreprocessor, Display Any (rgthree), DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, FaceSegment, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageFromBatch, ImageFromBatch+, ImageResizeKJ, ImageResizeKJv2, ImageToMask, ImageUpscaleWithModelBatched, InvertMask (segment anything), LayerMask: DrawBBoxMaskV2, LayerMask: ObjectDetectorMask, LayerMask: SAM2VideoUltra, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PointsEditor, PoseAndFaceDetection, PreviewImage, QwenVLDetection, RIFE VFI, RMBG, ResizeMask, Sam2Segmentation, SetNode, ShowText|pysssss, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy clearCacheAll, easy imageIndexSwitch, easy int, easy seed]
+coverage: 0.925667
+common_nodes: [CreateCFGScheduleFloatList, ImageResizeKJv2, ImageUpscaleWithModel, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], RIFE VFI, SimpleMath+, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2005518844527603713.json, 视频生成/图生视频/2026582867685416961.json, 视频生成/图生视频/2003334378287726593.json]
+members: [视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+30帧补帧_1955296499754307586.json, 视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+补帧+New_1955172399558770689.json, 视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版放大补帧生成2K高清视频_1950107460180860930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_21
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2005518844527603713.json、视频生成/图生视频/2026582867685416961.json、视频生成/图生视频/2003334378287726593.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+30帧补帧_1955296499754307586.json、视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+补帧+New_1955172399558770689.json、视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版放大补帧生成2K高清视频_1950107460180860930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BBoxesToSAM2`
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `CR Float To String`
-- `CR Integer To String`
-- `CR String To Number`
-- `CR Text`
-- `ClothesSegment`
-- `CropFace`
-- `DWPreprocessor`
-- `Display Any (rgthree)`
-- `DownloadAndLoadQwenModel`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `FaceSegment`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `ImageResizeKJ`
+- `CreateCFGScheduleFloatList`
 - `ImageResizeKJv2`
-- `ImageToMask`
-- `ImageUpscaleWithModelBatched`
-- `InvertMask (segment anything)`
-- `LayerMask: DrawBBoxMaskV2`
-- `LayerMask: ObjectDetectorMask`
-- `LayerMask: SAM2VideoUltra`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
+- `ImageUpscaleWithModel`
+- `JWInteger`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `QwenVLDetection`
+- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
 - `RIFE VFI`
-- `RMBG`
-- `ResizeMask`
-- `Sam2Segmentation`
-- `SetNode`
-- `ShowText|pysssss`
+- `SimpleMath+`
 - `UpscaleModelLoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
 - `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageIndexSwitch`
-- `easy int`
-- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageResize+` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `Text Multiline` —— 1/3 个有
 
 ## 典型参数
 

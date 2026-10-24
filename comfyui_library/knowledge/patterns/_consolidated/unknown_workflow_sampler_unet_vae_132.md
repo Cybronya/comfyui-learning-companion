@@ -1,31 +1,34 @@
 ---
 name: unknown_workflow_sampler_unet_vae_132
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: strong
-coverage: 0.9185
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.591125
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json, 图片生成/文生图/Qwen Image 文生图_2102936313539416066.json, 图片生成/文生图/Qwen image 2.1 文生图_2101857655588474882.json, 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json, 图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json, 图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json]
+members: [图片生成/图生图/千问2.1节日表情包_2104578062582108162.json, 图片生成/图生图/千问2.1！ 多图像编辑！ 提示词自动优化！_2103396759899828226.json, 图片生成/图生图/抠图，透明背景，Qwen2.1！_2102202740012306433.json, 图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json, 数字人/数字人/Qwen2.1   图像编辑_2101937485273194498.json, 数字人/数字人/千问2.1！ 多图像编辑！ 提示词自动优化！_2101851811295612929.json, 视频生成/图生视频/抠图，透明背景，Qwen2.1！_2104061025187356673.json, 视频生成/图生视频/透明背景抠图！Qwen2.1_2104454506997174273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_132
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json、图片生成/文生图/Qwen Image 文生图_2102936313539416066.json、图片生成/文生图/Qwen image 2.1 文生图_2101857655588474882.json、图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json、图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/千问2.1节日表情包_2104578062582108162.json、图片生成/图生图/千问2.1！ 多图像编辑！ 提示词自动优化！_2103396759899828226.json、图片生成/图生图/抠图，透明背景，Qwen2.1！_2102202740012306433.json、图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json、数字人/数字人/Qwen2.1   图像编辑_2101937485273194498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
+- `PreviewImage`
+- `QwenImage21Cache`
 - `ResolutionSelector`
 - `SaveImage`
 - `TextEncodeQwenImage21`
@@ -34,26 +37,31 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `CompressImages` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `SaveImageAdvanced` —— 1/6 个有
+- `FastGroupsBypassSwitch` —— 7/8 个有
+- `GetNode` —— 7/8 个有
+- `JjkText` —— 7/8 个有
+- `SetNode` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
+- `QwenPERewriteT8` —— 4/8 个有
+- `TextCombinerTwo` —— 4/8 个有
+- `GH_ImageVideoComparer` —— 3/8 个有
+- `BatchImagesNode` —— 2/8 个有
+- `EmptyImage` —— 2/8 个有
+- `ComfySwitchNode` —— 1/8 个有
+- `JjkShowText` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 25 - 50 | 6 | 73% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 1024 | 864 - 1024 | 6 | 94% |
-| 高度 | 1024 | 1024 - 1536 | 6 | 83% |
+| 宽度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 采样步数 | 45 | 40 - 50 | 8 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -61,10 +69,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 25 - 50，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 864 - 1024，6 个样本，取值集中（一致性 94%）
-- 高度 中位数 1024，观测区间 1024 - 1536，6 个样本，取值集中（一致性 83%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 45，观测区间 40 - 50，8 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

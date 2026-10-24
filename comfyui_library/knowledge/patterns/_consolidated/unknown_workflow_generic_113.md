@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_113
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.978778
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.787786
+common_nodes: [CR Text, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
+members: [视频生成/文生视频/全能视频S.0(10秒）文生视频全能视频S.0openai10s1080p高清视频_1977421203105304578.json, 视频生成/文生视频/全能视频S.0(15秒）0.08元每次梭罗文生视频全能视频S15s1080p高清视频_1974305393570656258.json, 视频生成/文生视频/全能视频S.0(15秒）文生视频全能视频S.0openai10s1080p高清视频_1978397986709458946.json, 视频生成/文生视频/全能视频S一键文生视频vlog视频高清无水印10秒15秒火爆vlog打卡拍摄视频一句话vlog短视频_1983009193756098561.json, 视频生成/文生视频/全能视频S一键文生视频vlog视频高清无水印10秒15秒火爆vlog打卡拍摄视频一句话vlog短视频_1992847364530524161.json, 视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1979418642477649921.json, 视频生成/文生视频/全能视频S文本到视频生成_1974008114766811138.json, 视频生成/文生视频/全能视频S文生视频1080p_1977414332113920001.json, 视频生成/文生视频/全能视频S文生视频_1976137032307224577.json, 视频生成/文生视频/全能视频S文生视频_1978738855186731010.json, 视频生成/文生视频/全能视频S文生视频_2003273154841706497.json, 视频生成/文生视频/全能视频S文生视频丨15秒1080p丨高清无水印！！！_1982688222142701570.json, 视频生成/文生视频/全能视频S文生视频高清_1975599765641629698.json, 视频生成/文生视频/即梦Seedance2.0文生视频_2046188355695677442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_113
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/全能视频S.0(10秒）文生视频全能视频S.0openai10s1080p高清视频_1977421203105304578.json、视频生成/文生视频/全能视频S.0(15秒）0.08元每次梭罗文生视频全能视频S15s1080p高清视频_1974305393570656258.json、视频生成/文生视频/全能视频S.0(15秒）文生视频全能视频S.0openai10s1080p高清视频_1978397986709458946.json、视频生成/文生视频/全能视频S一键文生视频vlog视频高清无水印10秒15秒火爆vlog打卡拍摄视频一句话vlog短视频_1983009193756098561.json、视频生成/文生视频/全能视频S一键文生视频vlog视频高清无水印10秒15秒火爆vlog打卡拍摄视频一句话vlog短视频_1992847364530524161.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+全部 14 个 workflow 都包含：
+- `CR Text`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
-- `Text` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `RH_Sora2_T2V` —— 13/14 个有
+- `easy showAnything` —— 6/14 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 1/14 个有
 
 ## 典型参数
 

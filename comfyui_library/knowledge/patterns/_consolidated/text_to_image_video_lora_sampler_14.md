@@ -1,122 +1,117 @@
 ---
 name: text_to_image_video_lora_sampler_14
 type: Text To Image
-frequency: 28
-level: strong
-coverage: 0.557143
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, EmptyLatentImage, GetNode, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, solarL_SaveImagesToZip]
+frequency: 30
+level: weak
+coverage: 0.876867
+common_nodes: [BerniniConditioning, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, EnhancedLoadDiffusionModel, FluxKontextMultiReferenceLatentMethod, ImageResizeKJv2, ImageScaleToTotalPixels, Int, JWInteger, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, RandomInt, Split String by Commas, StringReplace, Text, TextConcatenate_UTK, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy mathInt, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json, 视频生成/图生视频/AI舞蹈动作模仿神器｜上传视频一键复刻同款舞姿｜图生视频视频生视频_2099092870555848706.json, 视频生成/图生视频/Scail 2高阶工作流Plus V4版长视频加多图参考加动作迁移，图生视频方案_2107921047751315457.json, 视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2096740903728803841.json, 视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2098648284570144770.json, 视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2100363189539131393.json, 视频生成/图生视频/Scail-2人物替换高阶工作流Plus V4.1｜动作迁移背景替换_2100820014902366210.json, 视频生成/图生视频/Scail-2动作复刻神器｜长视频迁移与背景替换实测_2097204671491428354.json, 视频生成/图生视频/Scail-2动作迁移动作复刻｜长视频背景替换图生视频_2091729594511609858.json, 视频生成/图生视频/Scail-2动作迁移动作复刻｜长视频背景替换处理_2095571202466209793.json, 视频生成/图生视频/Scail-2动作迁移复刻工作流｜长视频背景替换视频生成_2097075469312159745.json, 视频生成/图生视频/Scail-2动作迁移复刻｜长视频背景替换一步搞定_2097200849033453569.json, 视频生成/图生视频/Scail-2动作迁移复刻｜长视频背景替换生成_2095572428113145857.json, 视频生成/图生视频/Scail-2经典动作迁移 视频动作复刻剪辑利器_2096739586310492162.json, 视频生成/图生视频/Scail-2经典动作迁移 视频动作复刻剪辑利器_2098647045899898882.json, 视频生成/图生视频/Scail-2经典动作迁移 视频动作复刻剪辑利器_2100373797672148994.json, 视频生成/图生视频/Scail-2高阶Plus_V4.1版_长视频动作迁移背景替换人物替换_2109092542255026177.json, 视频生成/图生视频/动作复刻长视频背景替换｜Scail-2视频动作迁移生成_2095821509133692929.json, 视频生成/图生视频/舞蹈动作模仿 图生视频人物动态跟随 动作迁移工具_2098867114407972865.json, 视频生成/图生视频/跳舞_2110885441183502337.json, 视频生成/图生视频/跳舞女孩动态视频 图生视频人物动作生成 舞蹈特效_2098865375722172418.json, 视频生成/图生视频/跳舞的女孩第1弹｜图生视频一键让静态人像舞动起来_2099113102162878465.json, 视频生成/图生视频/跳舞视频一键生成｜视频生视频舞姿跟着节奏走_2111336759203291138.json, 视频生成/图生视频/长视频动作复刻背景替换｜Scail-2动作迁移视频生视频_2095815237009240066.json, 视频生成/图生视频/长视频动作复刻｜Scail-2背景替换人物特效迁移_2091777063823953922.json, 视频生成/图生视频/长视频背景替换 Scail-2动作复刻迁移全都能做_2096745184041197569.json, 视频生成/图生视频/长视频背景替换 Scail-2动作复刻迁移全都能做_2098652089533681665.json, 视频生成/图生视频/长视频背景替换 Scail-2动作复刻迁移全都能做_2100367372585623553.json]
+members: [图片生成/图生图/bernini自动多参gemm4开源版_2101628841893654530.json, 视频生成/图生视频/Bernini自动分镜视频发布版工作流，图生视频自动分镜创作工具_2105754352567808002.json, 视频生成/图生视频/Bernini自动多参Gemm4开源版图生视频工具_2099918410950991873.json, 视频生成/图生视频/bernini gemm4开源版自动多参图生视频工作流_2087336969197154305.json, 视频生成/图生视频/bernini图生视频1_2076951801567465474.json, 视频生成/图生视频/bernini图生视频2_2080213506917486594.json, 视频生成/图生视频/bernini图生视频2_2080461814877474818.json, 视频生成/图生视频/bernini自动分镜视频1_2077014017478053890.json, 视频生成/图生视频/bernini自动分镜视频2_2077052662113202177.json, 视频生成/图生视频/bernini自动分镜视频发布版_2076843690617827330.json, 视频生成/图生视频/bernini自动分镜视频发布版｜图生视频自动化_2097924760024993794.json, 视频生成/图生视频/bernini自动分镜视频漫剧1_2077031752845058050.json, 视频生成/图生视频/bernini自动分镜｜视频发布版图生视频一键生成_2094472948609544194.json, 视频生成/图生视频/bernini自动多参gemm4开源发布版_2083445043389620226.json, 视频生成/图生视频/bernini自动多参gemm4开源版_2083434109308850177.json, 视频生成/图生视频/bernini自动多参gemm4开源版_2100052975162056705.json, 视频生成/图生视频/bernini自动多参gemm4开源版_2100133559137816577.json, 视频生成/图生视频/bernini自动多参gemm4开源版｜图生视频生成_2095206435062894594.json, 视频生成/图生视频/bernini自动多参｜gemm4开源版图生视频，参数自由配_2099910395120144386.json, 视频生成/图生视频/gemm4漫剧自动扩展提示词多参视频TEST1_2083810470955413506.json, 视频生成/图生视频/gemm4漫剧自动扩展提示词多参视频TEST2_2083813813098475521.json, 视频生成/图生视频/gemm4漫剧自动扩展提示词多参视频TEST3_2083815602338230273.json, 视频生成/图生视频/叮叮给你一个甜甜的笑容_2083454015727296513.json, 视频生成/图生视频/她给了你一个飞吻_2083822231435694081.json, 视频生成/图生视频/最新自动扩展提示词分镜到视频1_2077415348361588737.json, 视频生成/图生视频/极速版Bernini图生视频_2075772423257018370.json, 视频生成/图生视频/极速版bernini图生多参视频_2075555368637394946.json, 视频生成/图生视频/极速版bernini多参分镜图生视频_2075874925533024258.json, 视频生成/图生视频/极速版bernini多参分镜图生视频_2076876646682021890.json, 视频生成/图生视频/自动多参图生视频｜bernini gemm4开源版_2095483112770859010.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json、视频生成/图生视频/AI舞蹈动作模仿神器｜上传视频一键复刻同款舞姿｜图生视频视频生视频_2099092870555848706.json、视频生成/图生视频/Scail 2高阶工作流Plus V4版长视频加多图参考加动作迁移，图生视频方案_2107921047751315457.json、视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2096740903728803841.json、视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2098648284570144770.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/图生图/bernini自动多参gemm4开源版_2101628841893654530.json、视频生成/图生视频/Bernini自动分镜视频发布版工作流，图生视频自动分镜创作工具_2105754352567808002.json、视频生成/图生视频/Bernini自动多参Gemm4开源版图生视频工具_2099918410950991873.json、视频生成/图生视频/bernini gemm4开源版自动多参图生视频工作流_2087336969197154305.json、视频生成/图生视频/bernini图生视频1_2076951801567465474.json…）
 
 - **类型**：Text To Image
-- **样本数**：28
-- **可信度**：强结论
-- **平均知识覆盖**：56%
+- **样本数**：30
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 28 个 workflow 都包含：
+全部 30 个 workflow 都包含：
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetNode`
+- `EnhancedLoadDiffusionModel`
+- `FluxKontextMultiReferenceLatentMethod`
 - `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
 - `Int`
-- `JjkText`
+- `JWInteger`
 - `KSampler`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PlaySound|pysssss`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
-- `SetNode`
+- `RandomInt`
+- `Split String by Commas`
+- `StringReplace`
+- `Text`
+- `TextConcatenate_UTK`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode V2`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
-- `WanVideoTextEncodeCached`
-- `solarL_SaveImagesToZip`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy indexAnything`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 26/28 个有
-- `Fast Groups Bypasser (rgthree)` —— 24/28 个有
-- `FastGroupsBypassSwitch` —— 24/28 个有
-- `INTConstant` —— 24/28 个有
-- `Image Blank` —— 24/28 个有
-- `ImageCompositeMasked` —— 24/28 个有
-- `RepeatImageBatch` —— 24/28 个有
-- `SAM3_TrackToMask` —— 24/28 个有
-- `Seed (rgthree)` —— 24/28 个有
-- `VHS_LoadVideo` —— 24/28 个有
-- `WanAnimatePlus ContextOptions` —— 24/28 个有
-- `WanAnimatePlus LoraSelect` —— 24/28 个有
-- `PrimitiveStringMultiline` —— 6/28 个有
-- `SaveImage` —— 5/28 个有
-- `BatchImagesNode` —— 4/28 个有
-- `ImageBatchMulti` —— 4/28 个有
-- `ImageBatchMultiV2` —— 4/28 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/28 个有
-- `LayerUtility: PurgeVRAM` —— 4/28 个有
-- `PrimitiveBoolean` —— 4/28 个有
-- `SimpleMath+` —— 4/28 个有
-- `VHS_LoadVideoFFmpeg` —— 4/28 个有
-- `WanVideoEncode` —— 4/28 个有
-- `WanVideoTorchCompileSettings` —— 4/28 个有
-- `WanVideoUni3C_ControlnetLoader` —— 4/28 个有
-- `WanVideoUni3C_embeds` —— 4/28 个有
-- `easy cleanGpuUsed` —— 4/28 个有
-- `easy clearCacheAll` —— 4/28 个有
-- `easy mathInt` —— 4/28 个有
-- `EmptyImage` —— 1/28 个有
+- `HunyuanVideoFoley` —— 27/30 个有
+- `Any To Any` —— 26/30 个有
+- `CR Prompt Text` —— 26/30 个有
+- `Float` —— 26/30 个有
+- `Qwen3_VQA` —— 26/30 个有
+- `RHHiddenNodes` —— 26/30 个有
+- `VHS_SelectFilename` —— 26/30 个有
+- `easy cleanGpuUsed` —— 26/30 个有
+- `JDCN_StringToList` —— 15/30 个有
+- `RH_Captioner` —— 15/30 个有
+- `llama_cpp_instruct_adv` —— 15/30 个有
+- `llama_cpp_model_loader` —— 15/30 个有
+- `llama_cpp_parameters` —— 15/30 个有
+- `JjkText` —— 8/30 个有
+- `solarL_SaveImagesToZip` —— 8/30 个有
+- `孤海注释` —— 8/30 个有
+- `BatchImagesNode` —— 4/30 个有
+- `BerniniPromptEnhancer` —— 4/30 个有
+- `LoadAudio` —— 4/30 个有
+- `RHLLMChatNode` —— 4/30 个有
+- `SaveImage` —— 2/30 个有
+- `DF_Integer` —— 1/30 个有
+- `EmptyImage` —— 1/30 个有
+- `FL_RIFE` —— 1/30 个有
+- `PreviewAny` —— 1/30 个有
+- `easy imageConcat` —— 1/30 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 28 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 28 | 100% |
-| 采样算法 | er_sde | - | 28 | 100% |
-| 调度器 | beta | - | 28 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 28 | 100% |
-| 宽度 | 80 | 80 - 80 | 28 | 100% |
-| 高度 | 80 | 80 - 80 | 28 | 100% |
+| 采样步数 | 8 | 4 - 8 | 26 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 30 | 30% |
+| 采样算法 | euler | - | 30 | 60% |
+| 调度器 | simple | - | 30 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 26 | 100% |
+| 宽度 | 1280 | 80 - 1280 | 30 | 43% |
+| 高度 | 720 | 80 - 960 | 30 | 47% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 29/28 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 39/30 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，28 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，28 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，28 个样本，一致性 100%
-- 调度器 最常用 beta，28 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，28 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，28 个样本，取值集中（一致性 100%）
-- 高发问题（29/28 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，26 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，30 个样本，取值分散，一致性仅 30%
+- 采样算法 最常用 euler，30 个样本，一致性 60%
+- 调度器 最常用 simple，30 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1280，观测区间 80 - 1280，30 个样本，取值分散，一致性仅 43%
+- 高度 中位数 720，观测区间 80 - 960，30 个样本，取值分散，一致性仅 47%
+- 高发问题（39/30 个样本）：Steps较低可能导致细节不足

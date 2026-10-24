@@ -1,32 +1,47 @@
 ---
 name: unknown_workflow_generic_1004
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [CR Text, JjkText, OmniVoiceVoiceDesignTTS, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.447333
+common_nodes: [CR Text, JjkText, PrimitiveInt, PrimitiveStringMultiline, RH_RhartImageG2TextToImage, RegexExtract, SaveImage, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, easy batchAnything, easy forLoopEnd, easy forLoopStart, sch_split_text]
 problems: []
 missing: []
-members: [音频生成/音频生成/tts_edge.json_2072219550560641026.json, 音频生成/音频生成/ttts_edge.json_2071849435314876418.json]
+members: [图片生成/文生图/短剧拍档支持场景和角色V10.0(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2089746964190683137.json, 图片生成/文生图/短剧拍档支持场景和角色V11.1(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2094033413828337665.json, 图片生成/文生图/短剧拍档支持场景和角色V11.1一键生成全部资产（人物+道具+场景）+全节点注释_2097634936416202754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1004
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/tts_edge.json_2072219550560641026.json、音频生成/音频生成/ttts_edge.json_2071849435314876418.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/短剧拍档支持场景和角色V10.0(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2089746964190683137.json、图片生成/文生图/短剧拍档支持场景和角色V11.1(image 2版)一键生成全部资产（人物+道具+场景）+全节点注释_2094033413828337665.json、图片生成/文生图/短剧拍档支持场景和角色V11.1一键生成全部资产（人物+道具+场景）+全节点注释_2097634936416202754.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CR Text`
 - `JjkText`
-- `OmniVoiceVoiceDesignTTS`
-- `SaveAudio`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RH_RhartImageG2TextToImage`
+- `RegexExtract`
+- `SaveImage`
+- `YUAN_TXTConvertAny`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `sch_split_text`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 2/3 个有
+- `YuanMultiImage` —— 2/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
@@ -38,4 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

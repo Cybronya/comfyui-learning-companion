@@ -3,73 +3,67 @@ name: unknown_workflow_video_lora_sampler_942
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.794
-common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Prompt Text, CR Text, CR Text Concatenate, ConditioningZeroOut, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaLabel, PlaySound|pysssss, PrimitiveFloat, ResolutionSelector, SelfLiftAvatarH3Sampler, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.682
+common_nodes: [CLIPVisionLoader, CR Text, CreateCFGScheduleFloatList, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, QwenLoader, SetNode, ShowText|pysssss, SimpleMath+, Text, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoPromptExtender, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 Fl2V 首尾帧生图 + SelfLift节点采样 低显存超高2K分辨率_2103934254332862466.json, 音频生成/音频生成/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2110557852694827010.json]
+members: [视频生成/文生视频/Wan2.2文生图，图生图，首尾帧，多图参考大集合_1969973981489098753.json, 视频生成/文生视频/Wan2.2文生视频，图生视频，首尾帧，多图参考大集合_1971602288718573570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_942
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Fl2V 首尾帧生图 + SelfLift节点采样 低显存超高2K分辨率_2103934254332862466.json、音频生成/音频生成/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2110557852694827010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.2文生图，图生图，首尾帧，多图参考大集合_1969973981489098753.json、视频生成/文生视频/Wan2.2文生视频，图生视频，首尾帧，多图参考大集合_1971602288718573570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
+- `CLIPVisionLoader`
 - `CR Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `ExtendIntermediateSigmas`
-- `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect`
+- `CreateCFGScheduleFloatList`
+- `Fast Groups Muter (rgthree)`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `ImpactInt`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PixaromaLabel`
-- `PlaySound|pysssss`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `QwenLoader`
+- `SetNode`
 - `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SimpleMath+`
+- `Text`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
+- `WanVideoPromptExtender`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
 - `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `ComfyMathExpression` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `MiniMaxH3ImageToVideo` —— 1/2 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `RHSettingsNode` —— 1/2 个有
-- `SoundFlow_GetLength` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
 
 ## 典型参数
 

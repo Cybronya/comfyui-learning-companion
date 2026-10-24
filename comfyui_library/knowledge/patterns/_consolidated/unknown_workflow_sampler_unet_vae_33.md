@@ -1,64 +1,75 @@
 ---
 name: unknown_workflow_sampler_unet_vae_33
 type: Unknown Workflow
-frequency: 14
+frequency: 16
 level: moderate
-coverage: 0.854786
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.493625
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax-H3 360°环绕与卡片旋转视频_2109661372345831426.json, 视频生成/图生视频/minimax多图生视频_2102951424215834626.json, 视频生成/图生视频/video_minimax_h3_r2v-comfyui官方开源工作流_2084152065667981314.json, 视频生成/图生视频/video_minimax_h3_r2v_2084534320714313730.json, 视频生成/图生视频/video_minimax_h3_r2v_turbo 多参加速_2100758868111486978.json, 视频生成/图生视频/video_minimax_h3_r2v_turbo_4ref_2102954009563848706.json, 视频生成/图生视频/【老金驿站】MinimaxH3多参考视频工作流_2084270884050792449.json, 视频生成/图生视频/信息流广告+Minimax-h3+多模态全能参考版_2111113526185127938.json, 视频生成/图生视频/地表最强开源视频！Minimax-h3 多模态全能参考版_2084358175293263874.json, 视频生成/图生视频/开源 Minimax-H3 多参全模态音视频生成_2084313713590493186.json, 视频生成/图生视频/开源 Minimax-H3 数字人（多参视频生成）_2084210486131908609.json, 视频生成/文生视频/FS-video_minimax_h3_r2v_2105628001928044546.json, 视频生成/文生视频/信息流广告 Minimax-h3 多模态全能参考版_2085205896992477185.json, 视频生成/文生视频/地表最强开源视频！Minimax-h3 多模态全能参考版_2084188703311884289.json]
+members: [图片生成/图生图/minimax_h3全功能-多重加速V2-短剧神器_2101498889651179522.json, 图片生成/图生图/minimax_h3全功能-多重加速V2-短剧神器_2102662459592105985.json, 图片生成/文生图/MINIMax H3全功能加速短剧神器_2106376898656952322.json, 视频生成/图生视频/海螺H3-全功能-多重加速V2-短剧神器 minimax h3_2095158593485103106.json, 视频生成/图生视频/海螺H3-自用_2085238948372238338.json, 视频生成/文生视频/H3-多功能工作流_2084183787587596289.json, 视频生成/文生视频/Hailuo H3 4步加速全功能 TIR2V_2085703147829415938.json, 视频生成/文生视频/MiniMax H3 全能参考+文生_首尾帧合集_2085595735755681793.json, 视频生成/文生视频/MiniMax H3 全能参考_2084592147357061122.json, 视频生成/文生视频/海螺H3-全功能-多重加速V2-短剧神器 minimax h3_2085348438035755010.json, 视频生成/文生视频/海螺H3-全功能-多重加速V2-短剧神器 minimax h3_2086431634496253954.json, 视频生成/文生视频/海螺H3-全功能-多重加速V2-短剧神器 minimax h3_2100205135204016129.json, 视频生成/文生视频/海螺H3开源-全功能-多重加速-短剧神器 minimax h3加速优化版_2086045545130455041.json, 视频生成/文生视频/海螺H3开源-全功能文生图生多参视频-多重加速-短剧神器 minimax h3加速优化版_2086057615188127746.json, 视频生成/文生视频/海螺H3开源-全功能文生图生多参视频-多重加速-短剧神器 minimax h3加速优化版_2086798984517087233.json, 视频生成/视频生视频/海螺H3-全功能加速V3-短剧神器 minimax h3_2084196829952045057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_33
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3 360°环绕与卡片旋转视频_2109661372345831426.json、视频生成/图生视频/minimax多图生视频_2102951424215834626.json、视频生成/图生视频/video_minimax_h3_r2v-comfyui官方开源工作流_2084152065667981314.json、视频生成/图生视频/video_minimax_h3_r2v_2084534320714313730.json、视频生成/图生视频/video_minimax_h3_r2v_turbo 多参加速_2100758868111486978.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/minimax_h3全功能-多重加速V2-短剧神器_2101498889651179522.json、图片生成/图生图/minimax_h3全功能-多重加速V2-短剧神器_2102662459592105985.json、图片生成/文生图/MINIMax H3全功能加速短剧神器_2106376898656952322.json、视频生成/图生视频/海螺H3-全功能-多重加速V2-短剧神器 minimax h3_2095158593485103106.json、视频生成/图生视频/海螺H3-自用_2085238948372238338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
 - `CreateVideo`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 13/14 个有
-- `PrimitiveFloat` —— 13/14 个有
-- `KSamplerSelect` —— 12/14 个有
-- `ResolutionSelector` —— 11/14 个有
-- `PrimitiveStringMultiline` —— 10/14 个有
-- `CR Text` —— 7/14 个有
-- `LoadAudio` —— 7/14 个有
-- `VHS_LoadVideoFFmpeg` —— 6/14 个有
-- `孤海注释` —— 4/14 个有
-- `Label (rgthree)` —— 3/14 个有
-- `Int` —— 2/14 个有
-- `LoraLoaderModelOnly` —— 2/14 个有
-- `MiniMaxH3SigmaShift` —— 2/14 个有
-- `MiniMaxH3TurboLoRA` —— 2/14 个有
-- `MiniMaxH3TurboSampler` —— 2/14 个有
-- `BlockSparseAttention` —— 1/14 个有
-- `DF_Integer` —— 1/14 个有
-- `MiniMaxChunkFeedForward` —— 1/14 个有
-- `MiniMaxLowVRAMAttention` —— 1/14 个有
-- `ModelAttentionBackend` —— 1/14 个有
-- `Note Plus (mtb)` —— 1/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 15/16 个有
+- `GetNode` —— 15/16 个有
+- `MiniMaxH3ImageToVideo` —— 15/16 个有
+- `PlaySound|pysssss` —— 15/16 个有
+- `SetNode` —— 15/16 个有
+- `Any Switch (rgthree)` —— 14/16 个有
+- `Fast Groups Muter (rgthree)` —— 14/16 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 14/16 个有
+- `Bookmark (rgthree)` —— 13/16 个有
+- `Mute / Bypass Relay (rgthree)` —— 13/16 个有
+- `Mute / Bypass Repeater (rgthree)` —— 13/16 个有
+- `SetReserveVRAM` —— 13/16 个有
+- `easy int` —— 13/16 个有
+- `EasyCache` —— 10/16 个有
+- `Label (rgthree)` —— 10/16 个有
+- `LoraLoaderModelOnly` —— 6/16 个有
+- `BlockSparseAttention` —— 2/16 个有
+- `GetVideoComponents` —— 2/16 个有
+- `ImageFromBatch` —— 2/16 个有
+- `LoadVideo` —— 2/16 个有
+- `ManualSigmas` —— 2/16 个有
+- `ModelAttentionBackend` —— 2/16 个有
+- `PreviewImage` —— 2/16 个有
+- `Image Batch` —— 1/16 个有
+- `VHS_VideoCombine` —— 1/16 个有
 
 ## 典型参数
 

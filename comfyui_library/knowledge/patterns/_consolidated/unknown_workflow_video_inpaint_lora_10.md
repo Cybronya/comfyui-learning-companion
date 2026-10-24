@@ -1,91 +1,62 @@
 ---
 name: unknown_workflow_video_inpaint_lora_10
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6065
-common_nodes: [Any Switch (rgthree), ClothesSegment, FaceSegment, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, INPAINT_MaskedFill, ImageFromBatch, ImageResize+, ImageResizeKJ, InvertMask, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PreviewImage, PrimitiveStringMultiline, RMBG, ResizeMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy seed]
+frequency: 3
+level: moderate
+coverage: 0.441
+common_nodes: [Any Switch (rgthree), CFGGuider, CLIPTextEncode, CR Text, DiffusionModelLoaderKJ, DualCLIPLoader, Fast Groups Bypasser (rgthree), FlashVSRInitPipe, FlashVSRNodeAdv, GetImageRangeFromBatch, GetNode, Image To Mask, ImageConcatMulti, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXVConditioning, LTXVImgToVideoConditionOnly, LTXVPreprocess, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ManualSigmas, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced, SetNode, VAEDecodeTiled, VAEEncodeForInpaint, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981001980585840642.json, 视频生成/图生视频/2007176668045123586.json]
+members: [视频生成/文生视频/LTX2.3视频处理（字幕_水印移除）_2055738037841219585.json, 视频生成/文生视频/LTX2.3视频处理（视频高清修复）_2065411766766620674.json, 视频生成/文生视频/LTX2.3视频处理（视频高清修复）_2065418876283867137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_10
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981001980585840642.json、视频生成/图生视频/2007176668045123586.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX2.3视频处理（字幕_水印移除）_2055738037841219585.json、视频生成/文生视频/LTX2.3视频处理（视频高清修复）_2065411766766620674.json、视频生成/文生视频/LTX2.3视频处理（视频高清修复）_2065418876283867137.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `Any Switch (rgthree)`
-- `ClothesSegment`
-- `FaceSegment`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Text`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
 - `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
+- `FlashVSRInitPipe`
+- `FlashVSRNodeAdv`
+- `GetImageRangeFromBatch`
 - `GetNode`
-- `GrowMask`
-- `INPAINT_MaskedFill`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageResizeKJ`
-- `InvertMask`
-- `Label (rgthree)`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RMBG`
-- `ResizeMask`
+- `Image To Mask`
+- `ImageConcatMulti`
+- `KSamplerSelect`
+- `LTXAddVideoICLoRAGuide`
+- `LTXVConditioning`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `VAEDecodeTiled`
+- `VAEEncodeForInpaint`
+- `VAELoaderKJ`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `BBoxesToSAM2` —— 1/2 个有
-- `Bookmark (rgthree)` —— 1/2 个有
-- `DownloadAndLoadQwenModel` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: DrawBBoxMaskV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
-- `LayerMask: ObjectDetectorMask` —— 1/2 个有
-- `LayerMask: SAM2VideoUltra` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `QwenVLDetection` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
+- `VHS_VideoInfoLoaded`
+- `easy imageSize`
 
 ## 典型参数
 
@@ -97,4 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

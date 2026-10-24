@@ -7,13 +7,13 @@ coverage: 0.529
 common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PrimitiveBoolean, ResizeImagesByLongerEdge, SamplerCustom, Seed (rgthree), SetNode, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065192643361067009.json, 视频生成/图生视频/2045329040776634370.json, 视频生成/图生视频/2053738368332251137.json, 视频生成/图生视频/2031341493738283009.json, 视频生成/图生视频/2049497146432425985.json, 视频生成/图生视频/2057291924830248961.json, 视频生成/文生视频/LTX 2.3 文生视频 + 图生视频 （超清）_2031725601656152066.json, 视频生成/文生视频/LTX-2.3+数字人对口型多人对话唱歌+高清画质工作流_2069356013098196994.json]
+members: [视频生成/图生视频/LTX 2.3 图生视频工作流_2065192643361067009.json, 视频生成/图生视频/LTX 2.3_2045329040776634370.json, 视频生成/图生视频/LTX-2.3 数字人对口型 高清画质专业博主工作流 LAO-郑 5-12_2053738368332251137.json, 视频生成/图生视频/LTX2.3+文生视频+图生视频(二合一工作流)_2031341493738283009.json, 视频生成/图生视频/ltx2.3数字人_2049497146432425985.json, 视频生成/图生视频/【数字人唱歌】LTX2.3_2057291924830248961.json, 视频生成/文生视频/LTX 2.3 文生视频 + 图生视频 （超清）_2031725601656152066.json, 视频生成/文生视频/LTX-2.3+数字人对口型多人对话唱歌+高清画质工作流_2069356013098196994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_46
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2065192643361067009.json、视频生成/图生视频/2045329040776634370.json、视频生成/图生视频/2053738368332251137.json、视频生成/图生视频/2031341493738283009.json、视频生成/图生视频/2049497146432425985.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3 图生视频工作流_2065192643361067009.json、视频生成/图生视频/LTX 2.3_2045329040776634370.json、视频生成/图生视频/LTX-2.3 数字人对口型 高清画质专业博主工作流 LAO-郑 5-12_2053738368332251137.json、视频生成/图生视频/LTX2.3+文生视频+图生视频(二合一工作流)_2031341493738283009.json、视频生成/图生视频/ltx2.3数字人_2049497146432425985.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

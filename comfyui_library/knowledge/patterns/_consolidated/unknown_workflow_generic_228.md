@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_228
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.628833
-common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
+coverage: 0.923
+common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2055602464904237058.json, 视频生成/图生视频/2033804502687555585.json, 视频生成/图生视频/2033802990401888257.json, 视频生成/图生视频/2028108220862046209.json, 视频生成/图生视频/2048633803287044098.json, 视频生成/图生视频/2018205331360321538.json]
+members: [图片生成/图生图/最强编辑香蕉2PRO第三方+官方版_1999861913385398273.json, 图片生成/图生图/月禾-img_2016439225809375233.json, 图片生成/图生图/漫剧角色三视图+特写一键生成+漫剧专用（每天前5次免费）多角色同框管理系统_2008869029905174530.json, 图片生成/图生图/老陈 图生图_2016002994457812994.json, 图片生成/图生图/自定义表情包+人物表情+Q版动画，通用版（静态）_2012099111981420546.json, 图片生成/图生图/谷歌全能图片V12图像编辑（1次0.25元）_1991529682080374786.json, 图片生成/图生图/谷歌模型2 pro API_2002262719954862081.json, 图片生成/图生图/香蕉2（ 全能图片V12PRO）多图参考_1996253291677884417.json, 图片生成/文生图/NB2生图工作流_2026347013897457666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_228
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2055602464904237058.json、视频生成/图生视频/2033804502687555585.json、视频生成/图生视频/2033802990401888257.json、视频生成/图生视频/2028108220862046209.json、视频生成/图生视频/2048633803287044098.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/最强编辑香蕉2PRO第三方+官方版_1999861913385398273.json、图片生成/图生图/月禾-img_2016439225809375233.json、图片生成/图生图/漫剧角色三视图+特写一键生成+漫剧专用（每天前5次免费）多角色同框管理系统_2008869029905174530.json、图片生成/图生图/老陈 图生图_2016002994457812994.json、图片生成/图生图/自定义表情包+人物表情+Q版动画，通用版（静态）_2012099111981420546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CR Prompt Text`
-- `Comfly_api_set`
 - `LoadImage`
-- `SaveVideo`
-- `easy showAnything`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ComflyGrok3VideoApi` —— 5/6 个有
-- `Comfly_veo3_1_fal` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `JjkText` —— 1/9 个有
+- `Note Plus (mtb)` —— 1/9 个有
 
 ## 典型参数
 

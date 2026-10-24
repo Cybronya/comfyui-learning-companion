@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_642
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.933333
-common_nodes: [LoadAudio, SaveAudio, SparkTTSClone]
+coverage: 0.95825
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json, 音频生成/音频生成/Spark TTS_2081270765382619137.json, 音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json]
+members: [图片生成/图生图/Gemini2.0-商品迁移_1902908641928753153.json, 图片生成/图生图/Gemini2.0-图片编辑_1902332564999417858.json, 图片生成/图生图/一句话连续做图_1930893029039603713.json, 图片生成/图生图/双图连接_2045780608885985281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_642
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json、音频生成/音频生成/Spark TTS_2081270765382619137.json、音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Gemini2.0-商品迁移_1902908641928753153.json、图片生成/图生图/Gemini2.0-图片编辑_1902332564999417858.json、图片生成/图生图/一句话连续做图_1930893029039603713.json、图片生成/图生图/双图连接_2045780608885985281.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SparkTTSClone`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `easy imageConcat` —— 3/4 个有
+- `Gemini_Flash_200_Exp` —— 2/4 个有
+- `RH_ComfyFluxKontext` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,77 +1,71 @@
 ---
 name: unknown_workflow_lora_sampler_checkpoint_4
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.983
-common_nodes: [CFGGuider, CheckpointLoaderSimple, ConditioningZeroOut, CreateVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled, VAELoaderKJ, easy cleanGpuUsed]
-problems: []
+frequency: 6
+level: strong
+coverage: 0.870667
+common_nodes: [AutoCropFaces, CheckpointLoaderSimple, EmptyLatentImage, ImageLoader, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, PrimitiveStringMultiline, RHHiddenNodes, SaveImage, ShowText|pysssss, VAEDecode, VAEEncode, WujiCleaner, WujiStyleSelector]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2064954613949886465.json, 视频生成/图生视频/2056272610891227137.json, 视频生成/图生视频/2057746305258188801.json]
+members: [图片生成/图生图/IP写真九宫格变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_1990631741633302530.json, 图片生成/图生图/IP写真九宫格变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_2091114914478907393.json, 图片生成/图生图/IP写真九宫格影楼写真（人物、动漫、宠物、拟人全类型）_2098989949889634305.json, 图片生成/图生图/Krea2影楼写真_九宫格变现利器_2091797572871614465.json, 图片生成/图生图/旅游网红打卡写真九宫变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_2038299433443532801.json, 图片生成/图生图/旅游网红打卡写真九宫变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_2091121282367705090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_checkpoint_4
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2064954613949886465.json、视频生成/图生视频/2056272610891227137.json、视频生成/图生视频/2057746305258188801.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/IP写真九宫格变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_1990631741633302530.json、图片生成/图生图/IP写真九宫格变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_2091114914478907393.json、图片生成/图生图/IP写真九宫格影楼写真（人物、动漫、宠物、拟人全类型）_2098989949889634305.json、图片生成/图生图/Krea2影楼写真_九宫格变现利器_2091797572871614465.json、图片生成/图生图/旅游网红打卡写真九宫变现利器（人物、动漫、宠物、拟人全类型）Krea2影楼写真_2038299433443532801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 6 个 workflow 都包含：
+- `AutoCropFaces`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `EmptyLatentImage`
+- `ImageLoader`
+- `KSampler`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSCustomVoice` —— 2/3 个有
-- `FB_Qwen3TTSVoiceClone` —— 2/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 2/3 个有
-- `LTXAVTextEncoderLoader` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `Qwen3ASRLoader_DFT` —— 2/3 个有
-- `Qwen3ASRTranscribe_DFT` —— 2/3 个有
-- `SaveAudio` —— 2/3 个有
-- `TrimAudioDuration` —— 2/3 个有
-- `DualCLIPLoader` —— 1/3 个有
-- `ReservedVRAMSetter` —— 1/3 个有
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `SaveImage`
+- `ShowText|pysssss`
+- `VAEDecode`
+- `VAEEncode`
+- `WujiCleaner`
+- `WujiStyleSelector`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 512 | 512 - 512 | 6 | 100% |
+| 高度 | 512 | 512 - 512 | 6 | 100% |
+| 采样步数 | 8 | 8 - 8 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta57 | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta57，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

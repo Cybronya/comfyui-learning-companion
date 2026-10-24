@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_354
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.9445
-common_nodes: [LoadImage, RH_RhartImageG25OfficialTokenSunburstEdit, SaveImage]
+coverage: 0.881571
+common_nodes: [workflow>人物, workflow>场景, workflow>道具]
 problems: []
-missing: [easy saveText]
-members: [图片生成/图生图/2102216280077066242.json, 图片生成/文生图/G- image-2.5图生图高品质版_2098043807114813441.json, 图片生成/文生图/image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5+全_2097936915642281985.json, 图片生成/文生图/全能图片G-2.5图生图高品质版  5毛_2100116129564942337.json]
+missing: []
+members: [图片生成/图生图/简易漫剧资产生成_2054396380889796609.json, 图片生成/文生图/快速漫剧资产生成_2053459705233723393.json, 图片生成/文生图/快速漫剧资产生成_2062008664554295297.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2054762606929432578.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062074929415278594.json, 图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062349288679759873.json, 图片生成/文生图/超好用🔥简易小批量漫剧资产生成-效率高成本低_2054844492037017601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_354
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2102216280077066242.json、图片生成/文生图/G- image-2.5图生图高品质版_2098043807114813441.json、图片生成/文生图/image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5+全_2097936915642281985.json、图片生成/文生图/全能图片G-2.5图生图高品质版  5毛_2100116129564942337.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/简易漫剧资产生成_2054396380889796609.json、图片生成/文生图/快速漫剧资产生成_2053459705233723393.json、图片生成/文生图/快速漫剧资产生成_2062008664554295297.json、图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2054762606929432578.json、图片生成/文生图/简易漫剧资产生成 人物_场景_道具_2062074929415278594.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG25OfficialTokenSunburstEdit`
-- `SaveImage`
+全部 7 个 workflow 都包含：
+- `workflow>人物`
+- `workflow>场景`
+- `workflow>道具`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/4 个有
-- `easy saveText` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `LoadImage` —— 1/7 个有
 
 ## 典型参数
 
@@ -41,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：easy saveText
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

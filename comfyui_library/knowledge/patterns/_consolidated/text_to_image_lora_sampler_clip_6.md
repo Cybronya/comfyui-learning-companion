@@ -1,115 +1,91 @@
 ---
 name: text_to_image_lora_sampler_clip_6
 type: Text To Image
-frequency: 34
+frequency: 41
 level: strong
-coverage: 0.8565
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, EmptyLatentImage, JjkText, KSampler, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.892463
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JDCN_StringToList, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, RH_LLMAPI_NODE, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/I2V首帧图直出片｜LTX-2.5图生视频音画同步_2093777187555074049.json, 视频生成/图生视频/LTX 2.5图生视频｜高清视频一键直出_2091307834997825538.json, 视频生成/图生视频/LTX-2.5图生视频I2V｜首帧图直接出片音画同步_2089408509157924866.json, 视频生成/图生视频/LTX-2.5首尾帧FLF2V｜图生视频开源世界模型_2089407159401537537.json, 视频生成/图生视频/LTX2.5图生视频速度快像素高生成工作流_2088276656308969473.json, 视频生成/图生视频/LTX2.5图生视频｜首帧驱动出片开源模型_2089419538248060930.json, 视频生成/图生视频/LTX2.5极速图生视频音画同出数字人生成_2088256741459980289.json, 视频生成/图生视频/LTX2.5首尾帧极速音画同出图生视频数字人_2088222321759842306.json, 视频生成/图生视频/LTX2.5首尾帧生视频｜高质量图生视频生成_2095603376045248514.json, 视频生成/图生视频/ltx2.5图生视频转场特效视频运镜生成工作流_2088188857928994818.json, 视频生成/图生视频/一致性加强版V1图生视频｜LTX2.5视频生成工作流_2088127153224380418.json, 视频生成/图生视频/二次采样视频生成｜LTX2.5图生视频人物运镜直出_2089489478942547970.json, 视频生成/图生视频/图生视频 I2V｜LTX-2.5 首帧直接出片 音画同步_2089252485310541825.json, 视频生成/图生视频/图生视频2608版｜LTX2.5数字人视频处理生成_2095878295459028994.json, 视频生成/图生视频/图生视频｜LTX2.5图片转视频工作流_2088139545815642113.json, 视频生成/图生视频/图生视频｜LTX2.5图片转视频工作流_2088213692046471170.json, 视频生成/图生视频/极速图生视频音画同出｜LTX2.5数字人工作流_2088124635899580418.json, 视频生成/图生视频/极速首尾帧音画同出｜LTX2.5数字人图生视频工作流_2088120921931472898.json, 视频生成/图生视频/标准版图生视频工作流｜LTX2.5图片转视频工作流_2088108490068946945.json, 视频生成/图生视频/首尾帧FLF2V生视频｜LTX-2.5图生视频生成_2093775816420323330.json, 视频生成/图生视频/首尾帧图生视频提示词全自动｜LTX2.5视频生成工作流_2088146840704339970.json, 视频生成/图生视频/首尾帧生视频 FLF2V｜LTX-2.5 图生视频直出_2089250976606801921.json, 视频生成/图生视频/首尾帧生视频2608｜LTX2.5数字人视频处理_2095863271810224130.json, 视频生成/图生视频/首尾帧生视频FLF2V｜LTX-2.5图生视频直出_2093445121831424002.json, 视频生成/图生视频/首帧图直接出片音画同步｜LTX-2.5 I2V图生视频_2093446502072016898.json, 视频生成/文生视频/LTX-2.5文生视频音画同步生成处理工具_2101378961912721410.json, 视频生成/文生视频/LTX2.5全家桶图生视频文生视频首尾帧极速音画同出_2088214319694704642.json, 视频生成/文生视频/LTX2.5图生视频｜首帧驱动出片开源模型_2092080557885841410.json, 视频生成/文生视频/LTX2.5文生视频生成工作流极速版_2088212902586179585.json, 视频生成/文生视频/LTX2.5极速文生视频音画同出｜数字人工作流_2088125910498238465.json, 视频生成/文生视频/LTX2.5经典文生视频生成工作流_2088200476587286529.json, 视频生成/文生视频/双采文生图生视频｜ltx2.5视频生成工作流_2088134700161396737.json, 视频生成/文生视频/提示词强化视频生成｜LTX2.5文生图生视频工作流_2088158159612502018.json, 视频生成/文生视频/文生视频T2V｜LTX-2.5 音画同步生成_2089340324639498241.json]
+members: [图片生成/图生图/FireRed-Image-Edit 1.1分镜关键帧生成｜单图直出影视级分镜｜全流程提示词_2112052555575554049.json, 图片生成/图生图/FireRed-Image-Edit 1.1单图出影视分镜，关键帧全流程提示词一键搞定_2112326205172174849.json, 图片生成/图生图/FireRed-Image-Edit 1.1影视分镜神器｜单图一键生成专业关键帧｜全流程提示词_2112047781706817537.json, 图片生成/图生图/分镜自动生成工作流｜短剧漫剧分镜出图 角色一致性轻松拿捏_2105527824303083522.json, 图片生成/图生图/分镜自动生成神器｜短剧漫剧分镜出图角色一致性_2105228154469183490.json, 图片生成/图生图/单图一键影视分镜关键帧，FireRed 1.1全流程提示词分镜出图_2112329273393631233.json, 图片生成/图生图/漫剧分镜自动生成工具｜短剧分镜角色一致图生图流程_2110718638591401985.json, 图片生成/图生图/短剧漫剧分镜一键出图｜自动分镜保持角色不崩_2105231252637970433.json, 图片生成/图生图/短剧漫剧自动分镜一键出图，剧情分镜创作利器_2111265803579510786.json, 图片生成/图生图/短剧漫剧自动分镜出图，角色一致性剧情分镜利器_2110885336611119105.json, 图片生成/图生图/短剧漫剧自动分镜出图｜角色一致性分镜生成图生图_2110715418255122434.json, 图片生成/图生图/短剧漫剧自动分镜工作流｜角色一致性分镜出图省心_2103095401225216002.json, 图片生成/图生图/短剧漫剧自动分镜生成｜分镜生成出图角色一致性 图生图连环画_2104059670993391617.json, 图片生成/图生图/短剧漫剧自动分镜｜分镜生成出图角色一致性_2095858645438390273.json, 图片生成/图生图/短剧漫剧自动分镜｜分镜生成出图角色一致｜故事板批量搞定_2104816570924097538.json, 图片生成/图生图/短剧漫剧自动分镜｜角色一致性分镜生成出图工具_2101200478318186497.json, 图片生成/图生图/自动分镜一键出图，短剧漫剧角色一致性分镜神器_2110818406453829633.json, 图片生成/图生图/自动分镜一键出图｜短剧漫剧分镜脚本不用熬夜画_2111801358457331713.json, 图片生成/图生图/自动分镜一键生成｜短剧漫剧分镜出图角色一致性在线_2111108565955072001.json, 图片生成/图生图/自动分镜一键生成｜短剧漫剧分镜出图｜角色一致性图生图方案_2104757472404791298.json, 图片生成/图生图/自动分镜出图工作流｜短剧漫剧分镜保持角色一致性_2108374426550099970.json, 图片生成/图生图/自动分镜工作流 短剧分镜漫剧分镜批量生成_2109019755066781697.json, 图片生成/图生图/自动分镜工作流 短剧分镜漫剧分镜批量生成_2109426137477763073.json, 图片生成/图生图/自动分镜工作流 短剧漫剧分镜批量生成一键出片_2104702392120995841.json, 图片生成/图生图/自动分镜工作流 短剧漫剧分镜批量生成高效出图_2104707138835800065.json, 图片生成/图生图/自动分镜工作流｜短剧漫剧图文一键转分镜脚本_2108089548340293633.json, 图片生成/图生图/自动分镜工具 短剧漫剧角色一致性分镜生成_2098857521376219138.json, 图片生成/图生图/自动分镜工具 短剧漫剧角色一致性分镜生成_2099548046320291842.json, 图片生成/图生图/自动分镜工具 短剧漫剧角色一致性分镜生成_2099582286453891074.json, 图片生成/图生图/自动分镜生成出图｜短剧漫剧分镜角色一致性_2101194391397429249.json, 图片生成/图生图/自动分镜生成工具 短剧漫剧分镜一键拆分批量创作_2098273220087599105.json, 图片生成/图生图/自动分镜生成工具｜短剧漫剧分镜图生图一键出_2091022224093442050.json, 图片生成/图生图/自动分镜短剧分镜漫剧分镜一把梭｜角色一致性稳，图生图分镜生成出图不返工_2100518681498443777.json, 图片生成/图生图/自动分镜短剧漫剧分镜图生图处理生成工作流_2101381790379368449.json, 图片生成/图生图/自动分镜短剧漫剧分镜图生图处理生成工作流工具_2101034945631313921.json, 图片生成/图生图/自动分镜短剧漫剧分镜生成工作流，角色一致性图生图故事板工具_2106167931590762497.json, 图片生成/图生图/自动分镜短剧漫剧分镜生成，角色一致性图生图快速产出故事板_2103209035217592321.json, 图片生成/图生图/自动分镜短剧漫剧分镜生成｜角色一致性全程在线，剧本秒变画面_2107354551950073857.json, 图片生成/图生图/自动分镜短剧漫剧分镜｜批量分镜出图工作流_2095606908840402946.json, 图片生成/图生图/自动分镜短剧漫剧分镜｜角色一致性图生图分镜生成直出_2091297602317934594.json, 图片生成/图生图/自动分镜神器｜短剧分镜漫剧分镜一键生成 角色一致性有保障_2105505946159112194.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（视频生成/图生视频/I2V首帧图直出片｜LTX-2.5图生视频音画同步_2093777187555074049.json、视频生成/图生视频/LTX 2.5图生视频｜高清视频一键直出_2091307834997825538.json、视频生成/图生视频/LTX-2.5图生视频I2V｜首帧图直接出片音画同步_2089408509157924866.json、视频生成/图生视频/LTX-2.5首尾帧FLF2V｜图生视频开源世界模型_2089407159401537537.json、视频生成/图生视频/LTX2.5图生视频速度快像素高生成工作流_2088276656308969473.json…）
+> 由 `engine/knowledge_consolidation` 从 41 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-Edit 1.1分镜关键帧生成｜单图直出影视级分镜｜全流程提示词_2112052555575554049.json、图片生成/图生图/FireRed-Image-Edit 1.1单图出影视分镜，关键帧全流程提示词一键搞定_2112326205172174849.json、图片生成/图生图/FireRed-Image-Edit 1.1影视分镜神器｜单图一键生成专业关键帧｜全流程提示词_2112047781706817537.json、图片生成/图生图/分镜自动生成工作流｜短剧漫剧分镜出图 角色一致性轻松拿捏_2105527824303083522.json、图片生成/图生图/分镜自动生成神器｜短剧漫剧分镜出图角色一致性_2105228154469183490.json…）
 
 - **类型**：Text To Image
-- **样本数**：34
+- **样本数**：41
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 34 个 workflow 都包含：
+全部 41 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
+- `CR Text`
 - `EmptyLatentImage`
+- `JDCN_StringToList`
 - `JjkText`
 - `KSampler`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
+- `ProcessString`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVDualCFGGuider` —— 33/34 个有
-- `PrimitiveBoolean` —— 33/34 个有
-- `PreviewAny` —— 32/34 个有
-- `PrimitiveStringMultiline` —— 32/34 个有
-- `ComfySwitchNode` —— 31/34 个有
-- `TextGenerateLTX2Prompt` —— 31/34 个有
-- `LTXVPreprocess` —— 29/34 个有
-- `LoadImage` —— 29/34 个有
-- `KSamplerSelect` —— 25/34 个有
-- `LTXVLatentUpsampler` —— 25/34 个有
-- `LatentUpscaleModelLoader` —— 25/34 个有
-- `VHS_VideoCombine` —— 24/34 个有
-- `ResolutionSelector` —— 23/34 个有
-- `ResizeImageMaskNode` —— 21/34 个有
-- `CreateVideo` —— 20/34 个有
-- `LTXVImgToVideoInplace` —— 20/34 个有
-- `SaveVideo` —— 20/34 个有
-- `GetImageSize` —— 10/34 个有
-- `ImageFromBatch` —— 10/34 个有
-- `LTXVAddGuide` —— 10/34 个有
-- `LTXVCropGuides` —— 10/34 个有
-- `SamplerEulerAncestral` —— 10/34 个有
-- `SaveAudio` —— 10/34 个有
-- `SaveImage` —— 10/34 个有
-- `ImageScale` —— 4/34 个有
-- `CR Text` —— 3/34 个有
-- `FlashVSRNode` —— 3/34 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/34 个有
-- `RH_LLMAPI_Pro_Node` —— 3/34 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/34 个有
-- `CFGGuider` —— 1/34 个有
-- `ComfyNotNode` —— 1/34 个有
-- `LTXFloatToInt` —— 1/34 个有
-- `Label (rgthree)` —— 1/34 个有
-- `PrimitiveFloat` —— 1/34 个有
-- `PurgeVRAM_UTK` —— 1/34 个有
+- `PreviewImage` —— 37/41 个有
+- `Anything Everywhere3` —— 4/41 个有
+- `CustomAddLabel` —— 4/41 个有
+- `GetNode` —— 4/41 个有
+- `MultiTextConcatenate` —— 4/41 个有
+- `SetNode` —— 4/41 个有
+- `easy showAnything` —— 4/41 个有
+- `llama_cpp_instruct_adv` —— 4/41 个有
+- `llama_cpp_model_loader` —— 4/41 个有
+- `llama_cpp_parameters` —— 4/41 个有
+- `ttN concat` —— 4/41 个有
+- `SeedVR2LoadDiTModel` —— 2/41 个有
+- `SeedVR2LoadVAEModel` —— 2/41 个有
+- `SeedVR2VideoUpscaler` —— 2/41 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 34 | 100% |
-| 高度 | 80 | 80 - 80 | 34 | 100% |
-| 采样步数 | 4 | 4 - 4 | 34 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 34 | 100% |
-| 采样算法 | er_sde | - | 34 | 100% |
-| 调度器 | beta | - | 34 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 34 | 100% |
+| 采样步数 | 4 | 4 - 4 | 41 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 41 | 100% |
+| 采样算法 | er_sde | - | 41 | 100% |
+| 调度器 | beta | - | 41 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 41 | 100% |
+| 宽度 | 80 | 80 - 80 | 41 | 100% |
+| 高度 | 80 | 80 - 80 | 41 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 34/34 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 82/41 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，34 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，34 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，34 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，34 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，34 个样本，一致性 100%
-- 调度器 最常用 beta，34 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
-- 高发问题（34/34 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，41 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，41 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，41 个样本，一致性 100%
+- 调度器 最常用 beta，41 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，41 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，41 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，41 个样本，取值集中（一致性 100%）
+- 高发问题（82/41 个样本）：Steps较低可能导致细节不足

@@ -3,74 +3,61 @@ name: unknown_workflow_video_lora_sampler_631
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.527667
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, ImageFromBatch, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PreviewAny, PrimitiveFloat, PrimitiveInt, RIFE VFI, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoSegmentation]
+coverage: 0.889
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ImageScale, InstructPixToPixConditioning, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2013817436742619137.json, 视频生成/图生视频/2013818136428027906.json, 视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json]
+members: [视频生成/图生视频/Wan lora-depth控制 + 图片参考=civen_cn_1905283605348667393.json, 视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json, 视频生成/文生视频/Wan视频深度控制工作流-官方版_1904420884050776066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_631
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2013817436742619137.json、视频生成/图生视频/2013818136428027906.json、视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan lora-depth控制 + 图片参考=civen_cn_1905283605348667393.json、视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json、视频生成/文生视频/Wan视频深度控制工作流-官方版_1904420884050776066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageScale`
+- `InstructPixToPixConditioning`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RIFE VFI`
-- `SaveAudio`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SamplerCustom`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 2/3 个有
-- `DrawViTPose` —— 2/3 个有
-- `LayerMask: MaskInvert` —— 2/3 个有
-- `MuyeTextEditOutput` —— 2/3 个有
-- `OnnxDetectionModelLoader` —— 2/3 个有
-- `PoseAndFaceDetection` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `easy ifElse` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
-- `WanVideoContextOptions` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `DownloadAndLoadFlorence2Model` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `Primitive string [Crystools]` —— 1/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `TeaCache` —— 1/3 个有
+- `Text Concatenate (JPS)` —— 1/3 个有
 
 ## 典型参数
 

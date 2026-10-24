@@ -3,58 +3,63 @@ name: unknown_workflow_controlnet_video_lora_32
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9545
-common_nodes: [CLIPVisionLoader, DrawViTPose, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.815
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2036708435315658754.json, 视频生成/图生视频/1983890278471925762.json]
+members: [视频生成/图生视频/WAN2.1极速图生视频（数字人）整合_1945080711101730818.json, 视频生成/图生视频/运镜加数字人_1944918331935870977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2036708435315658754.json、视频生成/图生视频/1983890278471925762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1极速图生视频（数字人）整合_1945080711101730818.json、视频生成/图生视频/运镜加数字人_1944918331935870977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DrawViTPose`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
-- `JWInteger`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `CM_FloatToInt` —— 1/2 个有
 - `GetImageSizeAndCount` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `RH_GetAudioDuration` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `ShellAgentPluginInputAudio` —— 1/2 个有
 - `Switch any [Crystools]` —— 1/2 个有
-- `WanVideoBlockSwap` —— 1/2 个有
-- `WanVideoSetBlockSwap` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

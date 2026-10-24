@@ -3,65 +3,68 @@ name: unknown_workflow_video_sampler_unet_79
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7595
-common_nodes: [ApplyFaceProcessor, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, EasyCache, FaceProcessorLoader, Int, KSampler, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PreviewImage, SeedVR2, SeedVR2BlockSwap, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.8915
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Display Any (rgthree), EasyCache, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleToMaxDimension, KSamplerSelect, Label (rgthree), LoadImage, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全能视频优化版_2084325494786445314.json, 视频生成/图生视频/MiniMax H3 数字人口播唱歌_2085034270422294530.json]
+members: [视频生成/文生视频/MiniMax H3 Turbo加速优化-文生视频_九宫格_四视图生视频_视频全能编辑_2086440255061839873.json, 视频生成/文生视频/MiniMax H3全功能-文生视频_九宫格_四视图生视频_视频全能编辑_2084907936194842625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_79
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全能视频优化版_2084325494786445314.json、视频生成/图生视频/MiniMax H3 数字人口播唱歌_2085034270422294530.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Turbo加速优化-文生视频_九宫格_四视图生视频_视频全能编辑_2086440255061839873.json、视频生成/文生视频/MiniMax H3全功能-文生视频_九宫格_四视图生视频_视频全能编辑_2084907936194842625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
+- `CR Text`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
+- `Display Any (rgthree)`
 - `EasyCache`
-- `FaceProcessorLoader`
-- `Int`
-- `KSampler`
-- `LoadAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToMaxDimension`
+- `KSamplerSelect`
+- `Label (rgthree)`
 - `LoadImage`
+- `MiniMaxH3ImageToVideo`
 - `MiniMaxH3ReferenceToVideo`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadAudioUpload`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `SoundFlow_GetLength` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `ModelPreviewOverrideKJ` —— 1/2 个有
+- `VRAM_Debug` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy clearCacheAll` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_multistep | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,9 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

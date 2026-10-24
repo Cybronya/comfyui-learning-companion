@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_176
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.733429
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.6414
+common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json, 音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json, 音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json, 音频生成/音频生成/音乐生成--HeartMula让你写歌自由_2013804466218209282.json, 音频生成/音频生成/🎵HeartMuLa🎵最新最强开源音乐生成_2014297660701810690.json]
+members: [图片生成/图生图/0.04全能图片G+V2图像编辑（API申请看简介）+全节点注释_2047286656398532610.json, 图片生成/图生图/Gxx2模型-设计编辑工作流_2046754566573662210.json, 图片生成/图生图/Krea2 双风格融合图像生成V1(贞贞工坊版)_2069775095714893825.json, 图片生成/图生图/api实惠版-全能图片Pro双图编辑_2028100534971928578.json, 图片生成/图生图/动漫角色 2 真人工作流（附焚诀）_2003025095075479554.json, 图片生成/图生图/（0.04积分）全能图片G V2图像编辑（贞贞的AI工坊-异步任务）_2046776057306554369.json, 图片生成/文生图/(4K-基准0.15)Nano 全能图片V1 Pro文生图（贞贞AI工坊版）_1991886260597837825.json, 图片生成/文生图/1k-4K都是基准0.15- 全能图片V1 Pro文生图-调用贞贞工坊版_1992138380995612674.json, 图片生成/文生图/2029473922252541954.json, 图片生成/文生图/image2.0_2052278702922321921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_176
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json、音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json、音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/0.04全能图片G+V2图像编辑（API申请看简介）+全节点注释_2047286656398532610.json、图片生成/图生图/Gxx2模型-设计编辑工作流_2046754566573662210.json、图片生成/图生图/Krea2 双风格融合图像生成V1(贞贞工坊版)_2069775095714893825.json、图片生成/图生图/api实惠版-全能图片Pro双图编辑_2028100534971928578.json、图片生成/图生图/动漫角色 2 真人工作流（附焚诀）_2003025095075479554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+全部 10 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/7 个有
-- `INTConstant` —— 1/7 个有
-- `SaveAudioMP3` —— 1/7 个有
+- `LoadImage` —— 9/10 个有
+- `easy showAnything` —— 9/10 个有
+- `Comfly_nano_banana2_edit` —— 5/10 个有
+- `Comfly_gpt_image_2_S2A` —— 4/10 个有
+- `Comfly_krea_v2_fal` —— 1/10 个有
+- `CompressImages` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
 
 ## 典型参数
 

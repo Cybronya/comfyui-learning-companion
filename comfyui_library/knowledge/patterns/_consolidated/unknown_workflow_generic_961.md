@@ -1,37 +1,39 @@
 ---
 name: unknown_workflow_generic_961
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LoadAudio, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, PreviewAudio, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.977667
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice-TTS工作流 声音克隆_2043154975521509378.json, 音频生成/音频生成/OmniVoice-tts语音克隆_2064775902487207937.json]
+members: [图片生成/图生图/短剧分镜全能图片G2_2052630118471872514.json, 图片生成/文生图/Image 2图像模型_2048040470286180353.json, 图片生成/文生图/鸡屁替2_全能图像G2.0-全家桶_文_图生_2K_4k_官方_低价_2047113685168037889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_961
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/OmniVoice-TTS工作流 声音克隆_2043154975521509378.json、音频生成/音频生成/OmniVoice-tts语音克隆_2064775902487207937.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/短剧分镜全能图片G2_2052630118471872514.json、图片生成/文生图/Image 2图像模型_2048040470286180353.json、图片生成/文生图/鸡屁替2_全能图像G2.0-全家桶_文_图生_2K_4k_官方_低价_2047113685168037889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `PreviewAudio`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `RH_RhartImageV1TextToImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_208
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.7
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 0.9714
+common_nodes: [CR Text, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json, 视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json, 视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json, 视频生成/图生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json, 视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json, 视频生成/文生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json]
+members: [音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json, 音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json, 音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json, 音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json, 音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS（自研）_2042139833367269378.json, 音频生成/音频生成/VoxCPM2.0双人音色克隆对话_2045804851086499842.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2042135828993937409.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2043545957635198978.json, 音频生成/音频生成/Voxcpm2.0自研：多人自动识别情绪最好的TTS_2071261044680511489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_208
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3多模态参考生视频高质量创作工作流_2083342952918773761.json、视频生成/图生视频/Minimax H3多模态参考视频生成_2083056854200045570.json、视频生成/图生视频/b-Minimax H3 多模态视频(多参考生视频)_2083158830397083649.json、视频生成/图生视频/海螺MiniMaxH3官方2K版 全能参考生视频_2083912887004909569.json、视频生成/图生视频/短剧服装都可海螺MiniMaxH3视频生成2K版_2086800244913827842.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/LongCat龙猫语音单人_2075455873287278593.json、音频生成/音频生成/MegaTTS3语音克隆-2人_1963911183654899713.json、音频生成/音频生成/MegaTTS3语音克隆-单人_1963908054712553473.json、音频生成/音频生成/TTS 双人_多人角色音频生成 多人自动识别情绪音频生成   FishAudio S2 TTS_2042420947688366081.json、音频生成/音频生成/VOXCPM2.0多人音色克隆自动情绪TTS_2042397010115960833.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `SaveVideo`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 4/6 个有
-- `JjkText` —— 3/6 个有
-- `PlaySound|pysssss` —— 3/6 个有
-- `Text` —— 1/6 个有
-- `easy saveText` —— 1/6 个有
+- `WujiVoiceActorVoxCPM` —— 8/10 个有
+- `MegaTTS3Run` —— 2/10 个有
 
 ## 典型参数
 

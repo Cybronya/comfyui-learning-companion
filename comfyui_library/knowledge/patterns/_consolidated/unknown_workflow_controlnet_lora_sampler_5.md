@@ -1,88 +1,120 @@
 ---
 name: unknown_workflow_controlnet_lora_sampler_5
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7145
-common_nodes: [BNK_CLIPTextEncodeAdvanced, CLIPSetLastLayer, CR SDXL Aspect Ratio, CheckpointLoaderSimple, ControlNetLoader, GetNode, HyperLoRAApplyLoRA, HyperLoRAConfig, HyperLoRAFaceAttr, HyperLoRAGenerateIDLoRA, HyperLoRAIDCond, HyperLoRALoader, ImpactMakeImageBatch, KSampler, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LoadImage, PreviewImage, RH_Captioner, SaveImage, SetNode, Text Concatenate, Text Multiline, TextPreview, VAEDecode]
-problems: []
-missing: [LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, Text Concatenate, Text Multiline, CR SDXL Aspect Ratio, WD14Tagger|pysssss]
-members: [图片生成/文生图/1916087629534924802.json, 图片生成/文生图/1916097178987859970.json]
+frequency: 7
+level: strong
+coverage: 0.558571
+common_nodes: [Anything Everywhere3, BatchCount+, BlockifyMask, CLIPLoader, CM_BoolUnaryOperation, ConditioningZeroOut, ControlNetApplySD3, ControlNetLoader, DF_Float, DF_Integer, DWPreprocessor, DrawMaskOnImage, GH_CropRestore, GH_MaskCropV2, GetNode, GrowMaskWithBlur, GuHaiMaskDetect, GuHai_FaceAlignment, GuhaiBatchProgress_孤海批处理进度条, GulfSeaImageMergeMask, ImageColorMatch+, ImageMaskPreview_Guhai, ImageResize+, ImpactInt, ImpactSEGSToMaskBatch, ImpactSwitch, KSampler, LayerMask: MaskGrow, LayerUtility: BooleanOperator, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskFix+, MaskToSEGS, PlaySound|pysssss, PreviewImage, PrimitiveBoolean, QwenEditConfigPreparer, RMBG, RemoveBackgroundWithMask, SaveImage, SegsToCombinedMask, SetNode, SetUnionControlNetType, SimpleMath+, TextEncodeQwenImageEditPlusCustom_lrzjason, ToBinaryMask, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart, easy humanSegmentation, easy ifElse, 图像缩放范围孤海, 孤海-浮点滑条, 孤海-遮罩混合运算, 孤海Seg次序过滤, 孤海遮罩分析, 数学运算_孤海]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/Qwen 一键换脸、换头（超强一致性 支持多人）_2054891041886613505.json, 图片生成/图生图/Qwen2511一键换脸换头超强一致性支持多人_2066162919523573762.json, 图片生成/图生图/Qwen2511一键换脸换头超强一致性支持多人_2066714844191092738.json, 图片生成/图生图/【精选系列】Qwen 一键换脸、换头（超强一致性 支持多人）_2058417792709386241.json, 图片生成/图生图/一键换脸、换头（超强一致性+支持多人）_2057735831397421057.json, 图片生成/图生图/一键换脸、换头（超强一致性+支持多人）_2062002510138793985.json, 图片生成/图生图/松间月 一键换脸、换头（加速版）_2006822928846950401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1916087629534924802.json、图片生成/文生图/1916097178987859970.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen 一键换脸、换头（超强一致性 支持多人）_2054891041886613505.json、图片生成/图生图/Qwen2511一键换脸换头超强一致性支持多人_2066162919523573762.json、图片生成/图生图/Qwen2511一键换脸换头超强一致性支持多人_2066714844191092738.json、图片生成/图生图/【精选系列】Qwen 一键换脸、换头（超强一致性 支持多人）_2058417792709386241.json、图片生成/图生图/一键换脸、换头（超强一致性+支持多人）_2057735831397421057.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BNK_CLIPTextEncodeAdvanced`
-- `CLIPSetLastLayer`
-- `CR SDXL Aspect Ratio`
-- `CheckpointLoaderSimple`
+全部 7 个 workflow 都包含：
+- `Anything Everywhere3`
+- `BatchCount+`
+- `BlockifyMask`
+- `CLIPLoader`
+- `CM_BoolUnaryOperation`
+- `ConditioningZeroOut`
+- `ControlNetApplySD3`
 - `ControlNetLoader`
+- `DF_Float`
+- `DF_Integer`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `GH_CropRestore`
+- `GH_MaskCropV2`
 - `GetNode`
-- `HyperLoRAApplyLoRA`
-- `HyperLoRAConfig`
-- `HyperLoRAFaceAttr`
-- `HyperLoRAGenerateIDLoRA`
-- `HyperLoRAIDCond`
-- `HyperLoRALoader`
-- `ImpactMakeImageBatch`
+- `GrowMaskWithBlur`
+- `GuHaiMaskDetect`
+- `GuHai_FaceAlignment`
+- `GuhaiBatchProgress_孤海批处理进度条`
+- `GulfSeaImageMergeMask`
+- `ImageColorMatch+`
+- `ImageMaskPreview_Guhai`
+- `ImageResize+`
+- `ImpactInt`
+- `ImpactSEGSToMaskBatch`
+- `ImpactSwitch`
 - `KSampler`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: CropByMask V2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: BooleanOperator`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskFix+`
+- `MaskToSEGS`
+- `PlaySound|pysssss`
 - `PreviewImage`
-- `RH_Captioner`
+- `PrimitiveBoolean`
+- `QwenEditConfigPreparer`
+- `RMBG`
+- `RemoveBackgroundWithMask`
 - `SaveImage`
+- `SegsToCombinedMask`
 - `SetNode`
-- `Text Concatenate`
-- `Text Multiline`
-- `TextPreview`
+- `SetUnionControlNetType`
+- `SimpleMath+`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `ToBinaryMask`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy humanSegmentation`
+- `easy ifElse`
+- `图像缩放范围孤海`
+- `孤海-浮点滑条`
+- `孤海-遮罩混合运算`
+- `孤海Seg次序过滤`
+- `孤海遮罩分析`
+- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyInstantIDAdvanced` —— 1/2 个有
-- `ControlNetApplyAdvanced` —— 1/2 个有
-- `FaceDetailer` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `InstantIDFaceAnalysis` —— 1/2 个有
-- `InstantIDModelLoader` —— 1/2 个有
-- `SDXLPromptStyler` —— 1/2 个有
-- `UltralyticsDetectorProvider` —— 1/2 个有
-- `WD14Tagger|pysssss` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 6/7 个有
+- `SeedVR2LoadDiTModel` —— 6/7 个有
+- `SeedVR2LoadVAEModel` —— 6/7 个有
+- `SeedVR2VideoUpscaler` —— 6/7 个有
+- `easy cleanGpuUsed` —— 6/7 个有
+- `CachePreviewBridge` —— 5/7 个有
+- `PreviewBridge` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 75% |
-| 采样算法 | dpmpp_2m | - | 2 | 100% |
-| 调度器 | karras | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| ControlNet 权重 | 2 | 2 - 2 | 7 | 100% |
+| 采样步数 | 10 | 4 - 10 | 7 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本
-- 采样算法 最常用 dpmpp_2m，2 个样本，一致性 100%
-- 调度器 最常用 karras，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerMask: PersonMaskUltra V2、LayerUtility: CropByMask V2、Text Concatenate、Text Multiline、CR SDXL Aspect Ratio
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- ControlNet 权重 中位数 2，观测区间 2 - 2，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 4 - 10，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

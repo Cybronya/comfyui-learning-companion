@@ -1,67 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_73
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.928889
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 12
+level: moderate
+coverage: 0.968417
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/文生图(人像)_2006960061226164225.json, 图片生成/文生图/文生图+LoRA_2014558730028851201.json, 图片生成/文生图/文生图-Q版森林_2087797265531498498.json, 图片生成/文生图/文生图-qwen_image_2512-模板_2090689557934206978.json, 图片生成/文生图/文生图-微景观-迷你朋克工坊_2084933542248804354.json, 图片生成/文生图/文生图-微景观桃园_2088147505304395778.json, 图片生成/文生图/文生图-微景观草莓园_2085177631280029697.json, 图片生成/文生图/文生图-手机里的微景观_2084940722343600130.json, 图片生成/文生图/文生图，中英文都可以，我自己用，出图快 且准确 质量高_2026835950390747137.json]
+members: [图片生成/图生图/图案转刺绣风格加抠图_2043607679398060034.json, 图片生成/图生图/图片换背景换人物换衣服_2052614808108838913.json, 图片生成/图生图/图片编辑（对比）_2094024830000656386.json, 图片生成/图生图/图片自动转贴纸风格_2052206077697118210.json, 图片生成/图生图/图片自动转贴纸风格，超cute！_2056556461433638913.json, 图片生成/图生图/图片自动转贴纸风格，超cute！_2056907377747783682.json, 图片生成/图生图/常用_图片_flux2_单图_2037742922816299009.json, 图片生成/图生图/建筑、室内 flux2-klein3图 编辑_2039312458275364866.json, 图片生成/图生图/更用好的换脸工作流 DarkBeast（黑兽）风格-Klein9b-BFS_2039134741198282753.json, 图片生成/图生图/最强换面流-Klein9b-BFS_2029175273211564034.json, 图片生成/图生图/贼好用的换脸-Klein9b-BFS_2087457438445424641.json, 图片生成/文生图/人像换脸丨Flux2-Klein 9B丨面部发型替换_2105644038434152450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/文生图(人像)_2006960061226164225.json、图片生成/文生图/文生图+LoRA_2014558730028851201.json、图片生成/文生图/文生图-Q版森林_2087797265531498498.json、图片生成/文生图/文生图-qwen_image_2512-模板_2090689557934206978.json、图片生成/文生图/文生图-微景观-迷你朋克工坊_2084933542248804354.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/图案转刺绣风格加抠图_2043607679398060034.json、图片生成/图生图/图片换背景换人物换衣服_2052614808108838913.json、图片生成/图生图/图片编辑（对比）_2094024830000656386.json、图片生成/图生图/图片自动转贴纸风格_2052206077697118210.json、图片生成/图生图/图片自动转贴纸风格，超cute！_2056556461433638913.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 8/9 个有
-- `ConditioningCombine` —— 1/9 个有
-- `ConditioningSetTimestepRange` —— 1/9 个有
-- `INTConstant` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
+- `EmptyFlux2LatentImage` —— 11/12 个有
+- `GetImageSize` —— 11/12 个有
+- `SaveImage` —— 11/12 个有
+- `ConditioningZeroOut` —— 10/12 个有
+- `Image Comparer (rgthree)` —— 6/12 个有
+- `ImageScaleToTotalPixels` —— 6/12 个有
+- `ImageResize+` —— 4/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/12 个有
+- `Seed (rgthree)` —— 4/12 个有
+- `Preview from image [Crystools]` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `RMBG` —— 1/12 个有
+- `ResizeImageNode` —— 1/12 个有
+- `SaveImageAndMetadata_` —— 1/12 个有
+- `ttN text` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 10 | 9 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 78% |
-| 调度器 | simple | - | 9 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 10，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 78%
-- 调度器 最常用 simple，9 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（8/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

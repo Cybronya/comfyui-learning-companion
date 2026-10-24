@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_vae_60
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.910625
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResize+, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.912375
+common_nodes: [ImageConcatMulti, ImagePadKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1924712621050613761.json, 视频生成/图生视频/1912568927808094209.json, 视频生成/图生视频/1918282117372121090.json, 视频生成/图生视频/1914979935533105154.json, 视频生成/图生视频/1920112646744641537.json, 视频生成/图生视频/1920718476594315266.json, 视频生成/图生视频/1913886030926180353.json, 视频生成/图生视频/1905171860894437377.json]
+members: [视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json, 视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json, 视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json, 视频生成/图生视频/上传一张图生成电商产品展示视频（phantom主体一致性）_1917815570186567682.json, 视频生成/图生视频/字节Phantom14B_最新多图参考一致性视频(电商带货)_1916395426835005442.json, 视频生成/图生视频/字节Phantom14B单主体(电商广告视频生成)_1927557646478643202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_60
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1924712621050613761.json、视频生成/图生视频/1912568927808094209.json、视频生成/图生视频/1918282117372121090.json、视频生成/图生视频/1914979935533105154.json、视频生成/图生视频/1920112646744641537.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json、视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json、视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
@@ -23,45 +23,38 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
 - `ImageConcatMulti`
-- `ImageResize+`
+- `ImagePadKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoClipTextEncoder` —— 6/8 个有
-- `WanVideoExperimentalArgs` —— 6/8 个有
-- `GetNode` —— 5/8 个有
-- `SetNode` —— 5/8 个有
-- `WanVideoEnhanceAVideo` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `WanVideoVRAMManagement` —— 4/8 个有
-- `CLIPVisionLoader` —— 3/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
-- `Note Plus (mtb)` —— 3/8 个有
-- `VHS_LoadVideo` —— 2/8 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/8 个有
-- `GIMMVFI_interpolate` —— 1/8 个有
-- `ImageFromBatch+` —— 1/8 个有
-- `ImageUpscaleWithModel` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `Text Multiline` —— 1/8 个有
-- `Upscale Model Loader` —— 1/8 个有
-- `WanVideoVACEModelSelect` —— 1/8 个有
+- `ImageResizeKJ` —— 7/8 个有
+- `Text Multiline` —— 7/8 个有
+- `Primitive integer [Crystools]` —— 6/8 个有
+- `WanVideoTeaCache` —— 6/8 个有
+- `EmptyImage` —— 2/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `RH_Translator` —— 2/8 个有
+- `AddLabel` —— 1/8 个有
+- `DF_Integer` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `easy clearCacheAll` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

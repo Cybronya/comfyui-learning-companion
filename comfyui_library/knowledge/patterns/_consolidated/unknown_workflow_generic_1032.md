@@ -1,37 +1,39 @@
 ---
 name: unknown_workflow_generic_1032
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.739
-common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), IndexTTS2_Emotion, LoadAudio, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.966667
+common_nodes: [LoadAudio, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆三合一_2041501277141602305.json, 音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆四合一_1967073964910632962.json]
+members: [视频生成/图生视频/seedance2.0_2046509735351951362.json, 视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json, 视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1032
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆三合一_2041501277141602305.json、音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆四合一_1967073964910632962.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/seedance2.0_2046509735351951362.json、视频生成/文生视频/Seedance2.0 全能参考视频｜图生视频｜视频生视频_2095387928649359362.json、视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `IndexTTS2_Emotion`
+全部 3 个 workflow 都包含：
 - `LoadAudio`
-- `SaveAudio`
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `LoadVideo` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `PreviewAny` —— 1/3 个有
+- `RH_Veo3_Image2Video` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

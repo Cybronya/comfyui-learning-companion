@@ -1,63 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_227
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.865
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, EasyCache, KSamplerSelect, MiniMaxH3ImageToVideo, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.667
+common_nodes: [CLIPLoader, DrawMaskOnImage, EmptyLatentImage, GetNode, KSampler, LoadImage, PreviewImage, QwenImage21Cache, ResizeImageMaskNode, ResolutionSelector, SaveImage, SaveImageAdvanced, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_首尾视频（本地版）_2084658021799653378.json, 视频生成/文生视频/MiniMax H3 文生视频_2084489178611539970.json]
+members: [图片生成/图生图/Qwen Image 2.1 元素移除_2101986892471431170.json, 图片生成/图生图/Qwen Image 2.1 扩图_2101987076421021697.json, 图片生成/图生图/Qwen Image 2.1 扩图_2102016833665724417.json, 图片生成/图生图/Qwen Image 2.1 扩图工作流_2102621542323675137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_227
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_首尾视频（本地版）_2084658021799653378.json、视频生成/文生视频/MiniMax H3 文生视频_2084489178611539970.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 元素移除_2101986892471431170.json、图片生成/图生图/Qwen Image 2.1 扩图_2101987076421021697.json、图片生成/图生图/Qwen Image 2.1 扩图_2102016833665724417.json、图片生成/图生图/Qwen Image 2.1 扩图工作流_2102621542323675137.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EasyCache`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `DrawMaskOnImage`
+- `EmptyLatentImage`
+- `GetNode`
+- `KSampler`
+- `LoadImage`
+- `PreviewImage`
+- `QwenImage21Cache`
+- `ResizeImageMaskNode`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `SaveImageAdvanced`
+- `SetNode`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `RHMiniMaxH3DecodeAV` —— 1/2 个有
-- `RHMiniMaxH3DirectModelLoader` —— 1/2 个有
-- `RHMiniMaxH3DirectTextEncoderLoader` —— 1/2 个有
-- `RHMiniMaxH3DirectVAELoader` —— 1/2 个有
-- `RHMiniMaxH3DualSigmaSampler` —— 1/2 个有
-- `RHMiniMaxH3EmptyAVLatent` —— 1/2 个有
-- `RHMiniMaxH3T2VATarget` —— 1/2 个有
-- `RHMiniMaxH3T2VATextEncode` —— 1/2 个有
+- `GetImageSize` —— 3/4 个有
+- `ImagePadForOutpaint` —— 3/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ResizeMask` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 50 | 50 - 50 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -65,4 +65,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 50，观测区间 50 - 50，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

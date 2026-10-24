@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_878
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7595
-common_nodes: [CR Text, LoadImage, RH_RhartVideoGImageToVideo, SaveVideo, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2082292876633006081.json, 视频生成/文生视频/全能视频X—V1.5图生视频低价版_2061473253360754690.json]
+members: [图片生成/图生图/LongCat图片编辑ComfyUI工作流_1999394554459586561.json, 图片生成/图生图/Longcat-Edit图像编辑（须plus才能运行）_1997647030237507585.json, 图片生成/文生图/longcat-image-edit_1998293505271300098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_878
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2082292876633006081.json、视频生成/文生视频/全能视频X—V1.5图生视频低价版_2061473253360754690.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LongCat图片编辑ComfyUI工作流_1999394554459586561.json、图片生成/图生图/Longcat-Edit图像编辑（须plus才能运行）_1997647030237507585.json、图片生成/文生图/longcat-image-edit_1998293505271300098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartVideoGImageToVideo`
-- `SaveVideo`
-- `easy showAnything`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

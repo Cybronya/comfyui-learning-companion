@@ -3,100 +3,77 @@ name: unknown_workflow_video_lora_sampler_429
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.5004
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntToFloat, ComfyMathExpression, ConditioningZeroOut, DiffusionModelLoaderKJ, GetNode, ImageFromBatch, Int, KSamplerAdvanced, LatentCutToBatch, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RebatchImages, ResizeImageMaskNode, SetNode, SkipLayerGuidanceDiTSimple, String, StringConcatenate, TrimAudioDuration, VAEDecode, VAELoader, VHS_VideoCombine, WanDancerEncodeAudio, WanDancerPadKeyframesList, WanDancerVideo, easy seed, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9192
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/2080196477946785794.json, 视频生成/图生视频/2080198878946742274.json, 视频生成/图生视频/2080118867824824321.json, 视频生成/图生视频/2078942540585324546.json, 视频生成/图生视频/2080192846396739585.json]
+members: [视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json, 视频生成/图生视频/infinitetalk单人图片数字人_1960362345920983042.json, 视频生成/图生视频/infinitetalk双人对话唱歌【支持长时间语音】_1965302801381380098.json, 视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json, 视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_429
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2080196477946785794.json、视频生成/图生视频/2080198878946742274.json、视频生成/图生视频/2080118867824824321.json、视频生成/图生视频/2078942540585324546.json、视频生成/图生视频/2080192846396739585.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json、视频生成/图生视频/infinitetalk单人图片数字人_1960362345920983042.json、视频生成/图生视频/infinitetalk双人对话唱歌【支持长时间语音】_1965302801381380098.json、视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json、视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CM_IntToFloat`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageFromBatch`
-- `Int`
-- `KSamplerAdvanced`
-- `LatentCutToBatch`
+- `DownloadAndLoadWav2VecModel`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `RebatchImages`
-- `ResizeImageMaskNode`
-- `SetNode`
-- `SkipLayerGuidanceDiTSimple`
-- `String`
-- `StringConcatenate`
-- `TrimAudioDuration`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanDancerEncodeAudio`
-- `WanDancerPadKeyframesList`
-- `WanDancerVideo`
-- `easy seed`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `Label (rgthree)` —— 4/5 个有
-- `FlashVSRNode` —— 3/5 个有
-- `RTXVideoSuperResolution` —— 3/5 个有
-- `SeedVR2LoadDiTModel` —— 3/5 个有
-- `SeedVR2LoadVAEModel` —— 3/5 个有
-- `SeedVR2VideoUpscaler` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `CheckpointLoaderSimple` —— 2/5 个有
-- `KSampler` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `SAM3_VideoTrack` —— 2/5 个有
-- `SCAIL2ColoredMask` —— 2/5 个有
-- `VAEDecodeTiled` —— 2/5 个有
-- `WanContextWindowsManual` —— 2/5 个有
-- `WanSCAILToVideo` —— 2/5 个有
-- `easy imageRemBg` —— 2/5 个有
-- `easy lengthAnything` —— 2/5 个有
+- `AudioCrop` —— 4/5 个有
+- `CR Text` —— 4/5 个有
+- `Int` —— 4/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `WanVideoImageToVideoMultiTalk` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `JWInteger` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `PreviewAudio` —— 3/5 个有
+- `Audio Duration (mtb)` —— 2/5 个有
+- `GetNode` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `easy cleanGpuUsed` —— 2/5 个有
+- `ImageSmartSharpen+` —— 1/5 个有
+- `InversionDemoLazyIndexSwitch` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `MaskPreview+` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SeparateMasks` —— 1/5 个有
+- `WanVideoImageToVideoEncode` —— 1/5 个有
+- `easy anythingIndexSwitch` —— 1/5 个有
+- `easy clearCacheAll` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 60% |
-| Prompt 约束强度(CFG) | 6 | 1 - 6 | 5 | 39% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 5 | 60% |
-| 重绘幅度 | simple | - | 5 | 60% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，5 个样本，取值分散，一致性仅 39%
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 60%
-- 重绘幅度 最常用 simple，5 个样本，一致性 60%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

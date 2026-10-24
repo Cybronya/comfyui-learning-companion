@@ -1,94 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_136
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.437
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetNode, GrowMask, ImageBatch, ImageFromBatch, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, PrimitiveInt, Sam2Segmentation, SaveVideo, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanAnimateToVideo]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7455
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoader, LoraLoaderModelOnly, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/2058456295702876162.json, 视频生成/图生视频/1971010678985265154.json, 视频生成/图生视频/1970998862133530625.json]
+members: [图片生成/图生图/不分块仅修复车身结构_2072852231782748161.json, 图片生成/图生图/分块仅修复车身结构_2061261942400049153.json, 图片生成/图生图/平台用—汽车图片8K放大+lora修复车身加速版_2059489770337816578.json, 图片生成/图生图/汽车图片8K放大+lora修复车身加速版_2056945533108973570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_136
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2058456295702876162.json、视频生成/图生视频/1971010678985265154.json、视频生成/图生视频/1970998862133530625.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/不分块仅修复车身结构_2072852231782748161.json、图片生成/图生图/分块仅修复车身结构_2061261942400049153.json、图片生成/图生图/平台用—汽车图片8K放大+lora修复车身加速版_2059489770337816578.json、图片生成/图生图/汽车图片8K放大+lora修复车身加速版_2056945533108973570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CreateVideo`
-- `DWPreprocessor`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `GetNode`
-- `GrowMask`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageScale`
-- `KSampler`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `PrimitiveInt`
-- `Sam2Segmentation`
-- `SaveVideo`
-- `SetNode`
-- `TrimVideoLatent`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 2/3 个有
-- `LoadVideo` —— 2/3 个有
-- `MaskPreview` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `ForLoopClose` —— 1/3 个有
-- `ForLoopOpen` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageResizeAdvanced` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `VHS_LoadVideoFFmpeg` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `VHS_VideoInfoLoaded` —— 1/3 个有
+- `ImageListToImageBatch` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `TTP_Image_Assy` —— 3/4 个有
+- `TTP_Image_Tile_Batch` —— 3/4 个有
+- `TTP_Tile_image_size` —— 3/4 个有
+- `easy imageBatchToImageList` —— 3/4 个有
+- `CheckpointLoaderSimple` —— 2/4 个有
+- `ImageResize+` —— 2/4 个有
+- `ImageUpscaleWithModel` —— 2/4 个有
+- `InpaintCropImproved` —— 2/4 个有
+- `InpaintStitchImproved` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `SAM3_Detect` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `UpscaleModelLoader` —— 2/4 个有
+- `VAEDecode` —— 2/4 个有
+- `VAEDecodeTiled` —— 2/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `LayerMask: MaskPreview` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（6/3 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

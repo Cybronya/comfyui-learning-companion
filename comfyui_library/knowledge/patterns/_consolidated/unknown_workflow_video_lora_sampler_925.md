@@ -3,61 +3,45 @@ name: unknown_workflow_video_lora_sampler_925
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.643
-common_nodes: [GetImageRangeFromBatch, GetNode, GrowMask, ImageConcanate, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PointsEditor, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.8635
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveStringMultiline, RandomNoise, SFH3MultimodalDirector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1980895212593659906.json, 视频生成/文生视频/MoCha_像viggle一样进行角色替换_1981408974144708609.json]
+members: [视频生成/文生视频/MiniMax H3｜多模态参考导演台｜ 宫格分镜自动拆分+全能参考（图片｜视频｜音频）_2096977007417585666.json, 视频生成/文生视频/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2085626169877155842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_925
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1980895212593659906.json、视频生成/文生视频/MoCha_像viggle一样进行角色替换_1981408974144708609.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜多模态参考导演台｜ 宫格分镜自动拆分+全能参考（图片｜视频｜音频）_2096977007417585666.json、视频生成/文生视频/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2085626169877155842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GrowMask`
-- `ImageConcanate`
-- `ImageResizeKJv2`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
 - `LoadImage`
-- `MaskPreview`
-- `MochaEmbeds`
-- `PointsEditor`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SFH3MultimodalDirector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_ImageFaceCrop` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `FlashVSRNode` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LynxInsightFaceCrop` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `SeCModelLoader` —— 1/2 个有
-- `SeCVideoSegmentation` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
+- `ImpactFloat` —— 1/2 个有
 
 ## 典型参数
 

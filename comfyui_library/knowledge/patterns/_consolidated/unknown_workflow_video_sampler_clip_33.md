@@ -1,82 +1,85 @@
 ---
 name: unknown_workflow_video_sampler_clip_33
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.870462
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, easy showAnything, wanBlockSwap]
+frequency: 14
+level: moderate
+coverage: 0.598143
+common_nodes: [Audio Duration (mtb), AudioCrop, Bool, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TTResolutionSelector, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2080624345147334658.json, 视频生成/图生视频/2082282165500469249.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2083014224594427906.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2083105850020950017.json, 视频生成/图生视频/2009700904043286530.json, 视频生成/图生视频/2013871524415016962.json, 视频生成/图生视频/1987524619294978050.json, 视频生成/图生视频/1978796084820611074.json, 视频生成/图生视频/2008498194912649217.json, 视频生成/图生视频/2065475173511417857.json, 视频生成/文生视频/Wan2.2 Smooth Mix首尾帧视频（高动态+自动提示词）_1986071453768568834.json, 视频生成/文生视频/Wan2.2双模型首尾帧视频_2061638984954105858.json, 视频生成/文生视频/Wan2.2双模型首尾帧视频_2064706031250395137.json]
+members: [数字人/数字人/LTX2.3多场景数字人_2080282380560060417.json, 视频生成/图生视频/AI代码侠土豆-LTX2.3多场景数字人_2061288687094296578.json, 视频生成/图生视频/LTX2.3 真人表情数字人配音版_2068632962953998337.json, 视频生成/图生视频/LTX2.3MV长视频稳定版无字幕_2050749407863291905.json, 视频生成/图生视频/LTX2.3口播数字人长视频稳定版无字幕_2045113328795652098.json, 视频生成/图生视频/LTX2.3口播数字人长视频稳定版无字幕图生视频图生短视频加速版15秒3分钟_2060321086079852545.json, 视频生成/图生视频/LTX2.3数字人-极速版_2044577721174462465.json, 视频生成/图生视频/LTX2.3数字人口播长视频无字幕稳定版 图生视频加速版_2060608799806939138.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2080264185350541313.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2102355217873461250.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2102375069661097985.json, 视频生成/图生视频/LTX2.3音乐唱歌MV多场景数字人_2061791872632311809.json, 视频生成/图生视频/LTX2.3音乐唱歌MV多场景数字人图生视频_2081270735473045505.json, 视频生成/图生视频/官流，顶级丝滑 数字人-普通版_2045962670691590145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_33
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/2080624345147334658.json、视频生成/图生视频/2082282165500469249.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2083014224594427906.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2083105850020950017.json、视频生成/图生视频/2009700904043286530.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/LTX2.3多场景数字人_2080282380560060417.json、视频生成/图生视频/AI代码侠土豆-LTX2.3多场景数字人_2061288687094296578.json、视频生成/图生视频/LTX2.3 真人表情数字人配音版_2068632962953998337.json、视频生成/图生视频/LTX2.3MV长视频稳定版无字幕_2050749407863291905.json、视频生成/图生视频/LTX2.3口播数字人长视频稳定版无字幕_2045113328795652098.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CLIPLoader`
+全部 14 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `Bool`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
+- `ManualSigmas`
 - `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `TTResolutionSelector`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `easy showAnything`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 12/13 个有
-- `ImageResizeKJ` —— 12/13 个有
-- `easy textSwitch` —— 10/13 个有
-- `GetNode` —— 7/13 个有
-- `Images to RGB` —— 7/13 个有
-- `Qwen3_VQA` —— 7/13 个有
-- `RH_LLMAPI_NODE` —— 7/13 个有
-- `SetNode` —— 7/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/13 个有
-- `RIFE VFI` —— 6/13 个有
-- `SeedVR2BlockSwap` —— 6/13 个有
-- `SeedVR2ExtraArgs` —— 6/13 个有
-- `SeedVR2GGUF` —— 6/13 个有
-- `intToFloat _O` —— 6/13 个有
-- `ImpactSwitch` —— 3/13 个有
-- `Int` —— 2/13 个有
-- `ImageConcatMulti` —— 1/13 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
-- `LoraLoaderModelOnly` —— 1/13 个有
-- `Maoyu_ListToString` —— 1/13 个有
-- `PreviewImage` —— 1/13 个有
-- `YC_SingleTextNode` —— 1/13 个有
+- `DiffusionModelLoaderKJ` —— 13/14 个有
+- `LTXVLatentUpsampler` —— 9/14 个有
+- `LatentUpscaleModelLoader` —— 9/14 个有
+- `VAEDecodeTiled` —— 9/14 个有
+- `LoraLoaderModelOnly` —— 6/14 个有
+- `JWString` —— 5/14 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 5/14 个有
+- `RHHiddenNodes` —— 4/14 个有
+- `Text` —— 4/14 个有
+- `CR Prompt Text` —— 1/14 个有
+- `CR Text` —— 1/14 个有
+- `ConcatTextOfUtils` —— 1/14 个有
+- `LTX2AttentionTunerPatch` —— 1/14 个有
+- `LTXVChunkFeedForward` —— 1/14 个有
+- `ModelPatchTorchSettings` —— 1/14 个有
+- `PathchSageAttentionKJ` —— 1/14 个有
+- `RH_LLMAPI_Pro_Node` —— 1/14 个有
+- `UNETLoader` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 13 | 92% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 13 | 100% |
-| 采样算法 | 1 | 1 - 1 | 13 | 100% |
-| 调度器 | euler | - | 13 | 69% |
-| 重绘幅度 | simple | - | 13 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,8 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，13 个样本，一致性 92%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，13 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，13 个样本，一致性 69%
-- 重绘幅度 最常用 simple，13 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

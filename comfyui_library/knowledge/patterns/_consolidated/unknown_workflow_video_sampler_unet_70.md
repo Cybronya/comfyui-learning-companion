@@ -1,64 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_unet_70
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.431
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: strong
+coverage: 0.736667
+common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, PathchSageAttentionKJ, PreviewImage, SamplerCustom, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMaxH3-ref2va超级加速版-仅支持1.0分辨率_2089629306782834690.json, 视频生成/图生视频/子悟-MiniMaxH3-ref2va多参考生视频_2085657515655782402.json, 视频生成/文生视频/AITUDOU-MiniMax H3(全能参考)_2084222366611234818.json, 视频生成/文生视频/承象-MiniMax H3(全能单图多图参考)真人短剧极速版_2084992442926981122.json]
+members: [视频生成/图生视频/精准分镜 + 时间遥控器｜图生视频｜LTX2.3_2045841411437760514.json, 视频生成/文生视频/ltx2.3生视频工作流_2055117729442607106.json, 视频生成/文生视频/prompt_relay_ltx23_2046846063507677186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_70
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-ref2va超级加速版-仅支持1.0分辨率_2089629306782834690.json、视频生成/图生视频/子悟-MiniMaxH3-ref2va多参考生视频_2085657515655782402.json、视频生成/文生视频/AITUDOU-MiniMax H3(全能参考)_2084222366611234818.json、视频生成/文生视频/承象-MiniMax H3(全能单图多图参考)真人短剧极速版_2084992442926981122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/精准分镜 + 时间遥控器｜图生视频｜LTX2.3_2045841411437760514.json、视频生成/文生视频/ltx2.3生视频工作流_2055117729442607106.json、视频生成/文生视频/prompt_relay_ltx23_2046846063507677186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
+全部 3 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetNode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `SamplerCustom`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `EasyCache` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
-- `ModelPatchTorchSettings` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `ImageScale` —— 1/4 个有
-- `MiniMaxH3TurboLoRA` —— 1/4 个有
-- `MiniMaxH3TurboSampler` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `easy compare` —— 1/4 个有
+- `GetNode` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PromptRelayEncode` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `PromptRelayEncodeTimeline` —— 1/3 个有
+- `ResizeImagesByLongerEdge` —— 1/3 个有
+- `SimpleCalculatorKJ` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 241 - 489 | 3 | 72% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -66,4 +72,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 361，观测区间 241 - 489，3 个样本
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

@@ -1,95 +1,102 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_41
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: strong
-coverage: 0.864
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.905714
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3文生视频Tao 3步lora二采RES4LYF_2100959295356628994.json, 视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json, 视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json, 视频生成/文生视频/MiniMax-H3 fl2v单模型二采无编解码放大_2093393143118000129.json, 视频生成/文生视频/Minimax H3 多参生视频潜空间放大二采_2093173371193352193.json, 视频生成/文生视频/Minimax H3多参 Taomate 3 steplora 二采生视频_2100938444443832322.json, 视频生成/文生视频/Minimax-h3-文生、图生视频+双采+Lantent upscale放大_2091360806108745730.json, 视频生成/文生视频/海螺H3-高效4步-脸部护持_2091172705780461570.json]
+members: [数字人/数字人/（生产环境）LTX2.3图生视频_2045796352663228418.json, 视频生成/图生视频/20260113LTX2.0 图生视频工作流（48G）_2010979976224448513.json, 视频生成/图生视频/LTX+2.0+音画同步-数字人，唱歌_2014646400780345345.json, 视频生成/图生视频/LTX-2 数字人对口型720P_2073311336997675009.json, 视频生成/图生视频/LTX-2 数字人对口型蒸馏版1080P_2073311138300911617.json, 视频生成/图生视频/ltx-2极速图生视频数字人视频高清数字人视频照片生成ai数字人高清对口型数字人视频工（48G）_2011488577225494530.json, 视频生成/图生视频/【Supermate】优化LTX-2 图生视频 （Plus会员版）_2008554221829885954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_41
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/H3文生视频Tao 3步lora二采RES4LYF_2100959295356628994.json、视频生成/文生视频/MiniMax H3 FL2VA｜文生+首尾帧全能视频_2090027189914918914.json、视频生成/文生视频/MiniMax H3 Ref2VA｜多参考全能视频生成_2090060185078419458.json、视频生成/文生视频/MiniMax-H3 fl2v单模型二采无编解码放大_2093393143118000129.json、视频生成/文生视频/Minimax H3 多参生视频潜空间放大二采_2093173371193352193.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/（生产环境）LTX2.3图生视频_2045796352663228418.json、视频生成/图生视频/20260113LTX2.0 图生视频工作流（48G）_2010979976224448513.json、视频生成/图生视频/LTX+2.0+音画同步-数字人，唱歌_2014646400780345345.json、视频生成/图生视频/LTX-2 数字人对口型720P_2073311336997675009.json、视频生成/图生视频/LTX-2 数字人对口型蒸馏版1080P_2073311138300911617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+全部 7 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveVideo` —— 7/8 个有
-- `BasicScheduler` —— 6/8 个有
-- `SplitSigmas` —— 6/8 个有
-- `ManualSigmas` —— 5/8 个有
-- `ModelAttentionBackend` —— 5/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `MiniMaxH3ImageToVideo` —— 4/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
-- `H3SigmaRefiner` —— 3/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `AudioCrop` —— 2/8 个有
-- `ClownsharKSampler_Beta` —— 2/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `LoadAudio` —— 2/8 个有
-- `SeedGenerator` —— 2/8 个有
-- `StringFunction|pysssss` —— 2/8 个有
-- `VHS_LoadVideo` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `FloatConstant` —— 1/8 个有
-- `INTConstant` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `MiniMaxChunkFeedForward` —— 1/8 个有
-- `RHLLMChatNode` —— 1/8 个有
-- `忽略多组孤海` —— 1/8 个有
+- `LTXVScheduler` —— 6/7 个有
+- `ManualSigmas` —— 6/7 个有
+- `PrimitiveInt` —— 6/7 个有
+- `VAEDecode` —— 5/7 个有
+- `LTXVAudioVAEDecode` —— 4/7 个有
+- `LTXVEmptyLatentAudio` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `easy cleanGpuUsed` —— 4/7 个有
+- `CreateVideo` —— 3/7 个有
+- `LTXVAudioVAEEncode` —— 3/7 个有
+- `LoadAudio` —— 3/7 个有
+- `MelBandRoFormerModelLoader` —— 3/7 个有
+- `MelBandRoFormerSampler` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `SetLatentNoiseMask` —— 3/7 个有
+- `SolidMask` —— 3/7 个有
+- `TrimAudioDuration` —— 3/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
+- `VAEDecodeTiled` —— 2/7 个有
+- `GetNode` —— 1/7 个有
+- `KSampler` —— 1/7 个有
+- `PreviewAudio` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `SimpleCalculatorKJ` —— 1/7 个有
+- `ToInt` —— 1/7 个有
+- `easy int` —— 1/7 个有
+- `easy mathInt` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | simple | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
-| 采样算法 | 3 | - | 2 | 100% |
-| 调度器 | 1 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 0.35 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 simple，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

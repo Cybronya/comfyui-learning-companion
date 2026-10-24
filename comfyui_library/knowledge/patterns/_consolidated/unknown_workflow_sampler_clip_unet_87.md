@@ -1,66 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_87
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.838286
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.892818
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [YC Color Match, CR Text, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2]
-members: [comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json, 图片生成/图生图/2016848786680713218.json, 图片生成/图生图/2053519932205355010.json, 图片生成/图生图/2056398938592342018.json, 图片生成/图生图/2056400490073780225.json, 图片生成/图生图/2068673231879491585.json, 图片生成/文生图/产品抠图透明背景精修版+全节点注释_2090760561532424194.json]
+missing: []
+members: [图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json, 图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json, 图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json, 图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json, 图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json, 图片生成/文生图/VividMuse Krea2真实人像V1_2071177424569720833.json, 图片生成/文生图/VividMuse Z-Image-Turbo-全能图片G2-Style_2057436016042139650.json, 图片生成/文生图/VividMuse Z-Image-turbo-SDA 完美破解随机性_2037532958734688257.json, 图片生成/文生图/VividMuse Z-Image家族模型大对比(2)_2034289450481623041.json, 图片生成/文生图/VividMuse Z-Image家族模型大对比_2021580062834827265.json, 图片生成/文生图/Z-Image-turbo Qwen3 4B Engineer V4和Flow-DPO比对_2028451786385793026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_87
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json、图片生成/图生图/2016848786680713218.json、图片生成/图生图/2053519932205355010.json、图片生成/图生图/2056398938592342018.json、图片生成/图生图/2056400490073780225.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json、图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json、图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json、图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json、图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ReferenceLatent` —— 6/7 个有
-- `VAEEncode` —— 6/7 个有
-- `Image Comparer (rgthree)` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `FluxKontextImageScale` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `ImageScaleToTotalPixels` —— 2/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
-- `PrimitiveInt` —— 2/7 个有
-- `YC Color Match` —— 2/7 个有
-- `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` —— 1/7 个有
-- `93041a64-452a-477a-9447-40330b7c1136` —— 1/7 个有
-- `FluxKVCache` —— 1/7 个有
-- `ImpactInt` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `LayerMask: BiRefNetUltra` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 8/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
+- `easy promptList` —— 7/11 个有
+- `LayerUtility: ImageReel` —— 4/11 个有
+- `LayerUtility: ImageReelComposit` —— 4/11 个有
+- `PrimitiveStringMultiline` —— 4/11 个有
+- `Seed (rgthree)` —— 4/11 个有
+- `DF_Text_Box` —— 3/11 个有
+- `PrimitiveInt` —— 3/11 个有
+- `CR Prompt Text` —— 2/11 个有
+- `GetNode` —— 2/11 个有
+- `ResolutionSelector` —— 2/11 个有
+- `SetNode` —— 2/11 个有
+- `CLIPLoaderGGUF` —— 1/11 个有
+- `CheckpointLoaderSimple` —— 1/11 个有
+- `Saturation` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1280 | 512 - 1536 | 11 | 63% |
+| 高度 | 1920 | 512 - 2048 | 11 | 63% |
+| 采样步数 | fixed | - | 11 | 55% |
+| Prompt 约束强度(CFG) | 8 | 8 - 15 | 11 | 72% |
+| 采样算法 | 1 | 1 - 2 | 11 | 67% |
+| 调度器 | euler | - | 11 | 55% |
+| 重绘幅度 | simple | - | 11 | 45% |
 
 ## 常见问题
 
@@ -68,4 +69,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：YC Color Match、CR Text、Label (rgthree)、LayerUtility: ImageScaleByAspectRatio V2
+- 宽度 中位数 1280，观测区间 512 - 1536，11 个样本
+- 高度 中位数 1920，观测区间 512 - 2048，11 个样本
+- 采样步数 最常用 fixed，11 个样本，一致性 55%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 15，11 个样本
+- 采样算法 中位数 1，观测区间 1 - 2，11 个样本
+- 调度器 最常用 euler，11 个样本，一致性 55%
+- 重绘幅度 最常用 simple，11 个样本，一致性 45%
+- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

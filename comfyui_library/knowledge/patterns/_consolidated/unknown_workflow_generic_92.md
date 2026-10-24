@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_92
 type: Unknown Workflow
-frequency: 10
+frequency: 15
 level: moderate
-coverage: 0.8824
-common_nodes: [CR Text, LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.810133
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json, 音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json, 音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json, 音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json, 音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json, 音频生成/音频生成/Soulx-podcast单人语音克隆_1984080844845449217.json, 音频生成/音频生成/Soulx-podcast双人对话语音克隆_1984822307040477186.json, 音频生成/音频生成/Soulx单人语音克隆_1984192624682811393.json, 音频生成/音频生成/Soulx双人语音克隆_1985525949963845634.json, 音频生成/音频生成/多人普通话、河南话、粤语、四川话音色克隆_2019250961474129921.json]
+members: [图片生成/图生图/FLUX.1Kontext一致性-换背景-风格转换-图像编辑测试_1928698043158401026.json, 图片生成/图生图/Flux Kontext 2D人物角色转3D_1930499426656141314.json, 图片生成/图生图/Flux Kontext 人物发型设计参考_1930521289965080578.json, 图片生成/图生图/Flux Kontext 动漫转真人_1931315723468255234.json, 图片生成/图生图/Flux Kontext 换背景_1930441652001783810.json, 图片生成/图生图/Flux Kontext 明星撕拉片风格_1930442669259132929.json, 图片生成/图生图/Flux Kontext 玩偶换装+场景_1930205044313067521.json, 图片生成/图生图/Flux Kontext 简易一键3D皮克斯_1931318230567026690.json, 图片生成/图生图/Flux Kontext 简易动漫转真人_1931946293634248706.json, 图片生成/图生图/Flux Kontext 美甲设计灵感_1930517989458874370.json, 图片生成/图生图/Flux Kontext 胶片滤镜风格_1930219808170872834.json, 图片生成/图生图/Flux图像编辑模型Kontext API版_1928517504623128577.json, 图片生成/图生图/Kontext产品换背景_2005920838870331394.json, 图片生成/图生图/Kontext多图迁移融合工作流_1932849669003415554.json, 图片生成/图生图/kontext 产品与背景融合丨双图模式 全自动作图_1944656011766452225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_92
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json、音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json、音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json、音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json、音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/FLUX.1Kontext一致性-换背景-风格转换-图像编辑测试_1928698043158401026.json、图片生成/图生图/Flux Kontext 2D人物角色转3D_1930499426656141314.json、图片生成/图生图/Flux Kontext 人物发型设计参考_1930521289965080578.json、图片生成/图生图/Flux Kontext 动漫转真人_1931315723468255234.json、图片生成/图生图/Flux Kontext 换背景_1930441652001783810.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+全部 15 个 workflow 都包含：
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 6/10 个有
-- `SaveAudioMP3` —— 6/10 个有
-- `CR Text Concatenate` —— 3/10 个有
-- `SaveImage` —— 3/10 个有
-- `String` —— 1/10 个有
+- `RH_Translator` —— 14/15 个有
+- `ConstrainImage|pysssss` —— 12/15 个有
+- `PreviewImage` —— 6/15 个有
+- `ImageConcanate` —— 2/15 个有
+- `ACE_TextGoogleTranslate` —— 1/15 个有
 
 ## 典型参数
 

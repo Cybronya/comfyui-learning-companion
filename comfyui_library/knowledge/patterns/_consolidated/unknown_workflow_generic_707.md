@@ -1,33 +1,40 @@
 ---
 name: unknown_workflow_generic_707
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5
-common_nodes: [83e6e004-48ea-408e-9024-eb49c3d7dc14, PreviewAny, ResolutionSelector, SaveImage, f5f04613-ee09-4cd9-9ada-a880360891d4]
+frequency: 4
+level: moderate
+coverage: 0.7875
+common_nodes: [ImageConcanate, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_ideogram4_t2i.json, comfyui-workflow-templates-json/image_ideogram4_t2i_int8.json]
+members: [图片生成/图生图/大峰 多图 RH 全能视频S Image to Video（图生15秒 标清）_1981683880346435586.json, 视频生成/图生视频/两图 RH 全能视频S Image to Video_1991763972546457601.json, 视频生成/图生视频/全能视频S 多参宗 双图三图融合工作流（全网首发）_1975854697837932545.json, 视频生成/图生视频/多图 生成视频_1987532707100037122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_707
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_ideogram4_t2i.json、comfyui-workflow-templates-json/image_ideogram4_t2i_int8.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/大峰 多图 RH 全能视频S Image to Video（图生15秒 标清）_1981683880346435586.json、视频生成/图生视频/两图 RH 全能视频S Image to Video_1991763972546457601.json、视频生成/图生视频/全能视频S 多参宗 双图三图融合工作流（全网首发）_1975854697837932545.json、视频生成/图生视频/多图 生成视频_1987532707100037122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `83e6e004-48ea-408e-9024-eb49c3d7dc14`
-- `PreviewAny`
-- `ResolutionSelector`
-- `SaveImage`
-- `f5f04613-ee09-4cd9-9ada-a880360891d4`
+全部 4 个 workflow 都包含：
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `easy showAnything` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `RH_Translator` —— 1/4 个有
 
 ## 典型参数
 
@@ -39,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

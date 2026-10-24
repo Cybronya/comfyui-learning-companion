@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_395
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.75175
-common_nodes: [LoadImage, PrimitiveStringMultiline, SaveVideo]
+coverage: 0.816667
+common_nodes: [BagelImageEdit, BagelModelLoader, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json, 视频生成/图生视频/H3图生视频工作流｜MiniMax H3 首尾帧双参 2K_2099348926460682242.json, 视频生成/图生视频/H3长片30秒工作流｜MiniMax H3 双镜拼接_2099348954860314626.json, 视频生成/图生视频/H3长片60秒工作流｜MiniMax H3 四镜拼接_2099348960589737985.json]
+members: [图片生成/图生图/Bagel Image edit_1926942217695318017.json, 图片生成/图生图/Bagel7B图片编辑工作流_1928409415701905410.json, 图片生成/图生图/Bagel图像编辑工作流V2（10倍加速版）_1926955301952475138.json, 图片生成/图生图/Bagel图片编辑+提示词反推+姿态控制_1927210420652900354.json, 图片生成/图生图/Bagel图片编辑_1926994181229805569.json, 图片生成/图生图/字节 BaGEL 图像编辑模型｜一致性_1928680125632778241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_395
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json、视频生成/图生视频/H3图生视频工作流｜MiniMax H3 首尾帧双参 2K_2099348926460682242.json、视频生成/图生视频/H3长片30秒工作流｜MiniMax H3 双镜拼接_2099348954860314626.json、视频生成/图生视频/H3长片60秒工作流｜MiniMax H3 四镜拼接_2099348960589737985.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Bagel Image edit_1926942217695318017.json、图片生成/图生图/Bagel7B图片编辑工作流_1928409415701905410.json、图片生成/图生图/Bagel图像编辑工作流V2（10倍加速版）_1926955301952475138.json、图片生成/图生图/Bagel图片编辑+提示词反推+姿态控制_1927210420652900354.json、图片生成/图生图/Bagel图片编辑_1926994181229805569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 3/4 个有
-- `RH_VideoMergerUI` —— 2/4 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/4 个有
+- `ImageConcanate` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `Bjornulf_ShowStringText` —— 2/6 个有
 
 ## 典型参数
 

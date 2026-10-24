@@ -1,79 +1,138 @@
 ---
 name: unknown_workflow_video_sampler_unet_23
 type: Unknown Workflow
-frequency: 15
-level: moderate
-coverage: 0.827333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: []
+frequency: 16
+level: weak
+coverage: 0.766625
+common_nodes: [ComfyMathExpression, DualCLIPLoader, EmptyImage, GetImagesFromBatchIndexed, GetNode, INTConstant, ImageAddMulti, ImageBatchMulti, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, ResizeImageMaskNode, ResizeImagesByLongerEdge, SetNode, UNETLoader, VAELoaderKJ, VHS_VideoCombine, easy convertAnything, easy imageRemBg, easy indexAnything, easy positive, easy promptLine, easy promptList, easy promptReplace]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimaxh3 数字人_2089195997028249601.json, 视频生成/图生视频/video_minimax_h3_r2v_2084181079887536129.json, 视频生成/图生视频/video_minimax_h3_r2v_fast_2085276513448054785.json, 视频生成/图生视频/【低成本01号】海螺H3全能多参音视频生成（9图3视频3音频）开源版_2085685970485202946.json, 视频生成/图生视频/【开源】minimax_h3 参考生视频加速版_2085966231420628993.json, 视频生成/图生视频/【开源】minimax_h3 图生视频加速版_2085932065148719105.json, 视频生成/图生视频/加速版 ！海螺H3！ 数字人对口型 ！单人！_2085606167941832706.json, 视频生成/图生视频/多参考图双音轨视频工作流_2087092408126369794.json, "视频生成/图生视频/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json", 视频生成/图生视频/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json, 视频生成/图生视频/数字人对口型MinimaxH3音频驱动数字人单人版 (1)_2085206685513240577.json, 视频生成/图生视频/海螺H3(minimax H3)全能参考生视频加速开源版（9图3视频3音频）_2084186220753678337.json, 视频生成/图生视频/海螺H3(minimax H3)数字人单人加速开源版_2084869370685247490.json, 视频生成/图生视频/海螺H3(minimax H3)数字人单人语音克隆加速开源版_2084910413048795137.json, 视频生成/图生视频/海螺H3(minimax H3)数字人双人语音克隆（可多人）加速开源版_2084897123694366722.json]
+members: [视频生成/图生视频/LTX2.3 全栈式 短剧生成 最新版（参考生成版）_2039346074971807746.json, 视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2046808351366979586.json, 视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2055237155726864386.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V11_2046212690837774338.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V14(Prompt Relay版)_2050042685750300673.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V15.1_2052747730749009921.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V16.1(人物+场景)_2055880245324066818.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V6（参考图生成版）图生视频短剧版短剧分镜版_2037962228107845633.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V6（参考生成版）_2037870072148008962.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V7（参考生成版）_2038288723439263746.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V8（参考图生成版）图生视频短剧版短剧分镜版_2040445885619900417.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V8（参考图生成版）图生视频短剧版短剧分镜版_2064338058337673217.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V8（参考生成三采版）_2040059200792961026.json, 视频生成/图生视频/LTX2.3全栈式短剧生成（参考图生成版）图生视频短剧版短剧分镜版_2038110146437586946.json, 视频生成/图生视频/LTX2.3全栈式短剧生成（参考图生成版）图生视频短剧版短剧分镜版_2044736578437783554.json, 视频生成/图生视频/邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_23
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/minimaxh3 数字人_2089195997028249601.json、视频生成/图生视频/video_minimax_h3_r2v_2084181079887536129.json、视频生成/图生视频/video_minimax_h3_r2v_fast_2085276513448054785.json、视频生成/图生视频/【低成本01号】海螺H3全能多参音视频生成（9图3视频3音频）开源版_2085685970485202946.json、视频生成/图生视频/【开源】minimax_h3 参考生视频加速版_2085966231420628993.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 全栈式 短剧生成 最新版（参考生成版）_2039346074971807746.json、视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2046808351366979586.json、视频生成/图生视频/LTX2.3全栈式漫剧短剧生成（参考图生成版）图生视频漫剧短剧版短剧分镜版_2055237155726864386.json、视频生成/图生视频/LTX2.3全栈式短剧生成V11_2046212690837774338.json、视频生成/图生视频/LTX2.3全栈式短剧生成V14(Prompt Relay版)_2050042685750300673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：16
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 16 个 workflow 都包含：
 - `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `INTConstant`
+- `ImageAddMulti`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RegexExtract`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy convertAnything`
+- `easy imageRemBg`
+- `easy indexAnything`
+- `easy positive`
+- `easy promptLine`
+- `easy promptList`
+- `easy promptReplace`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 14/15 个有
-- `LoadAudio` —— 13/15 个有
-- `PrimitiveStringMultiline` —— 13/15 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/15 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 8/15 个有
-- `AudioCrop` —— 7/15 个有
-- `PreviewAudio` —— 7/15 个有
-- `SoundFlow_GetLength` —— 7/15 个有
-- `VAEDecodeAudio` —— 7/15 个有
-- `EasyCache` —— 4/15 个有
-- `Label (rgthree)` —— 4/15 个有
-- `PainterVRAM` —— 4/15 个有
-- `SaveAudio` —— 3/15 个有
-- `SolAttnPatch` —— 3/15 个有
-- `TrimAudioDuration` —— 3/15 个有
-- `VHS_LoadVideo` —— 3/15 个有
-- `CR Text` —— 2/15 个有
-- `Qwen3TTSModelLoader` —— 2/15 个有
-- `Qwen3TTSVoiceClone` —— 2/15 个有
-- `SaveImage` —— 2/15 个有
-- `Text` —— 2/15 个有
-- `WhisperSTT` —— 2/15 个有
-- `easy cleanGpuUsed` —— 2/15 个有
-- `AudioConcat` —— 1/15 个有
-- `EmptyAudio` —— 1/15 个有
+- `CFGGuider` —— 15/16 个有
+- `CLIPTextEncode` —— 15/16 个有
+- `EmptyLTXVLatentVideo` —— 15/16 个有
+- `LatentUpscaleModelLoader` —— 15/16 个有
+- `ManualSigmas` —— 15/16 个有
+- `RandomNoise` —— 15/16 个有
+- `SamplerCustomAdvanced` —— 15/16 个有
+- `VAEDecodeTiled` —— 15/16 个有
+- `PreviewImage` —— 14/16 个有
+- `ShowText|pysssss` —— 14/16 个有
+- `LTXVCropGuides` —— 13/16 个有
+- `LTXVLatentUpsampler` —— 13/16 个有
+- `LTXVImgToVideoInplace` —— 12/16 个有
+- `LoraLoaderModelOnly` —— 12/16 个有
+- `easy promptConcat` —— 12/16 个有
+- `TrimVideoLatent` —— 11/16 个有
+- `easy batchAnything` —— 11/16 个有
+- `easy forLoopEnd` —— 11/16 个有
+- `easy forLoopStart` —— 11/16 个有
+- `LTXAddVideoICLoRAGuideAdvanced` —— 8/16 个有
+- `LTXICLoRALoaderModelOnly` —— 8/16 个有
+- `LTXVAddGuideMulti` —— 8/16 个有
+- `LongTextToList` —— 7/16 个有
+- `ImageInvert` —— 4/16 个有
+- `LTXVEnhanceAVideoKJ` —— 4/16 个有
+- `CLIPLoader` —— 2/16 个有
+- `ModelSamplingSD3` —— 2/16 个有
+- `VAEDecode` —— 2/16 个有
+- `VAELoader` —— 2/16 个有
+- `AudioEncoderEncode` —— 1/16 个有
+- `AudioEncoderLoader` —— 1/16 个有
+- `BasicScheduler` —— 1/16 个有
+- `ColorMatch` —— 1/16 个有
+- `ConditioningZeroOut` —— 1/16 个有
+- `ContextWindowsManual` —— 1/16 个有
+- `GetImageRangeFromBatch` —— 1/16 个有
+- `KSampler` —— 1/16 个有
+- `KSamplerAdvanced` —— 1/16 个有
+- `LTXAddVideoICLoRAGuide` —— 1/16 个有
+- `PreviewAny` —— 1/16 个有
+- `PreviewAudio` —— 1/16 个有
+- `PromptRelayEncode` —— 1/16 个有
+- `RIFE VFI` —— 1/16 个有
+- `RTXVideoSuperResolution` —— 1/16 个有
+- `SamplerCustom` —— 1/16 个有
+- `Text Concatenate` —— 1/16 个有
+- `VAEEncode` —— 1/16 个有
+- `WanHuMoImageToVideo` —— 1/16 个有
+- `WanImageToVideo` —— 1/16 个有
+- `WanVideoNAG` —— 1/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 385 | 16 | 39% |
+| 高度 | 25 | 24 - 25 | 16 | 99% |
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | - | 2 | 40% |
+| 采样算法 | 1 | - | 1 | 100% |
+| 调度器 | simple | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 385，16 个样本，取值分散，一致性仅 39%
+- 高度 中位数 25，观测区间 24 - 25，16 个样本，取值集中（一致性 99%）
+- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 调度器 最常用 simple，2 个样本，一致性 50%

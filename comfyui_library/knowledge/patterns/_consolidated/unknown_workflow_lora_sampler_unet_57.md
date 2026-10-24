@@ -1,67 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_57
 type: Unknown Workflow
-frequency: 3
+frequency: 10
 level: moderate
-coverage: 0.870667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.7584
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3长视频MV_context_lightx2v_长视频_2089359079314644994.json, 视频生成/图生视频/minimax_h3_多人对话参考+lightx2v正式版_2086399612306415617.json, 视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json]
+members: [视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json, 视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json, 视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json, 视频生成/图生视频/Minimax-H3-图生视频（Lightx2v正式版）_2087553566264356865.json, 视频生成/图生视频/Minimax-动作迁移_2086299017864114177.json, 视频生成/图生视频/【MINIMAX-H3】最强W版武戏-极速版_2111450852316770305.json, 视频生成/文生视频/15秒卡点混剪_2092720568926818306.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-低配版_2098599696725004290.json, 视频生成/文生视频/【二采-低配版】MinMaxh3日常短剧专用_2095180548556808193.json, 视频生成/文生视频/【二采】MinMaxh3动态打斗专用_2095187337885085698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/H3长视频MV_context_lightx2v_长视频_2089359079314644994.json、视频生成/图生视频/minimax_h3_多人对话参考+lightx2v正式版_2086399612306415617.json、视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json、视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json、视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json、视频生成/图生视频/Minimax-H3-图生视频（Lightx2v正式版）_2087553566264356865.json、视频生成/图生视频/Minimax-动作迁移_2086299017864114177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `CreateVideo`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioInfoNode` —— 2/3 个有
-- `MiniMaxH3MotionContext` —— 2/3 个有
-- `MiniMaxH3MotionContextLoadLatent` —— 2/3 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 2/3 个有
-- `MiniMaxH3MotionContextTrim` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `VAEDecodeAudio` —— 2/3 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `GetImageRangeFromBatch` —— 1/3 个有
-- `H3SigmaRefiner` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `MiniMaxH3SigmaShift` —— 1/3 个有
-- `MmuuaiGroupBypass` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
+- `PrimitiveFloat` —— 8/10 个有
+- `VHS_VideoCombine` —— 8/10 个有
+- `ModelAttentionBackend` —— 7/10 个有
+- `H3SigmaRefiner` —— 6/10 个有
+- `CR Prompt Text` —— 4/10 个有
+- `CreateVideo` —— 4/10 个有
+- `ExtendIntermediateSigmas` —— 4/10 个有
+- `GetNode` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
+- `LoadAudio` —— 4/10 个有
+- `MuyeTextEditOutput` —— 4/10 个有
+- `PreviewImage` —— 4/10 个有
+- `SetNode` —— 4/10 个有
+- `忽略多组孤海` —— 4/10 个有
+- `INTConstant` —— 3/10 个有
+- `ShowText|pysssss` —— 3/10 个有
+- `VHS_LoadVideo` —— 3/10 个有
+- `llama_cpp_instruct_adv` —— 3/10 个有
+- `llama_cpp_model_loader` —— 3/10 个有
+- `llama_cpp_parameters` —— 3/10 个有
+- `LTXVConcatAVLatent` —— 2/10 个有
+- `LTXVSeparateAVLatent` —— 2/10 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/10 个有
+- `SaveVideo` —— 2/10 个有
+- `VHS_VideoInfoLoaded` —— 2/10 个有
+- `PreviewAny` —— 1/10 个有
+- `RH_LLMAPI_Pro_Node` —— 1/10 个有
+- `XB_BatchImages` —— 1/10 个有
 
 ## 典型参数
 

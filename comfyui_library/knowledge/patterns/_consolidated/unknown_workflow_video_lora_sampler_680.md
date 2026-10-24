@@ -7,13 +7,13 @@ coverage: 0.798667
 common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SaveLatent, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1944651399730745345.json, 视频生成/图生视频/1944662370163544065.json, 视频生成/图生视频/1937513401944051713.json]
+members: [视频生成/图生视频/正在测试lora  -_1944651399730745345.json, 视频生成/图生视频/正在测试lora  -_1944662370163544065.json, 视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_680
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1944651399730745345.json、视频生成/图生视频/1944662370163544065.json、视频生成/图生视频/1937513401944051713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/正在测试lora  -_1944651399730745345.json、视频生成/图生视频/正在测试lora  -_1944662370163544065.json、视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

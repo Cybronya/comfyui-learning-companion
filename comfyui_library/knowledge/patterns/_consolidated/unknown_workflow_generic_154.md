@@ -1,52 +1,38 @@
 ---
 name: unknown_workflow_generic_154
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.616429
-common_nodes: [Any Switch (rgthree), CR Text, Fast Groups Bypasser (rgthree), ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RHLLMChatNode, RHSettingsNode, SaveImage, ShowText|pysssss, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.980818
+common_nodes: [CR Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G-IMAGE-2.5 API调用 文生图_图生图_智能体工作流_2099456134716416001.json, 图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100051222001700865.json, 图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100131630257102849.json, 图片生成/文生图/全能模型 G（全能图片G-IMAGE-2）API调用 文生图_图生图_智能体工作流_2096595193108721666.json, 图片生成/文生图/全能模型 RPO（PRO）API调用 文生图_图生图_智能体工作流_2097304215629684738.json, 图片生成/文生图/全能模型_G全能图片G-IMAGE-2API调用_文生图_图生图_智能体工作流_2100050680848412673.json, 图片生成/文生图/全能模型_G全能图片G-IMAGE-2API调用_文生图_图生图_智能体工作流_2100130259051040769.json]
+members: [图片生成/图生图/IMAGE-2海报直出【官方优质版】支持网址参考_2048553796971798529.json, 图片生成/图生图/Image2-图生图官方版-支持网址参考_2048608628541759489.json, 图片生成/图生图/Image2-图生图官方版-海报封面设计_2049044268546789378.json, 图片生成/图生图/全能图片G-2图生图官方版_支持网址参考_2076925536579969026.json, 图片生成/图生图/无限全能图片G-2无限画布_2065381187631271937.json, 图片生成/图生图/最新Gimage2图生图 Image2-图生图官方版-支持网址参考_2059136745282818049.json, 图片生成/图生图/空白工作流_2064887415608795138.json, 图片生成/图生图/空白工作流_2088587498250399746.json, 图片生成/文生图/HPimage2_2080558711264862209.json, 图片生成/文生图/IMAGE-2海报直出 可以网址参考_2049010707542319105.json, 图片生成/文生图/全能图像G2 官方版【更稳 更高清】_2047879397851537409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_154
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/全能图片G-IMAGE-2.5 API调用 文生图_图生图_智能体工作流_2099456134716416001.json、图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100051222001700865.json、图片生成/文生图/全能图片G-IMAGE-2.5_API调用_文生图_图生图_智能体工作流_2100131630257102849.json、图片生成/文生图/全能模型 G（全能图片G-IMAGE-2）API调用 文生图_图生图_智能体工作流_2096595193108721666.json、图片生成/文生图/全能模型 RPO（PRO）API调用 文生图_图生图_智能体工作流_2097304215629684738.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/IMAGE-2海报直出【官方优质版】支持网址参考_2048553796971798529.json、图片生成/图生图/Image2-图生图官方版-支持网址参考_2048608628541759489.json、图片生成/图生图/Image2-图生图官方版-海报封面设计_2049044268546789378.json、图片生成/图生图/全能图片G-2图生图官方版_支持网址参考_2076925536579969026.json、图片生成/图生图/无限全能图片G-2无限画布_2065381187631271937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 11 个 workflow 都包含：
 - `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RHLLMChatNode`
-- `RHSettingsNode`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_YouchuanTextToImageV82Fast` —— 4/7 个有
-- `PixaromaLabel` —— 3/7 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 3/7 个有
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 3/7 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 3/7 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 3/7 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/7 个有
-- `RH_RhartImageNProOfficialTextToImage` —— 1/7 个有
+- `StringFunction|pysssss` —— 9/11 个有
+- `Label (rgthree)` —— 6/11 个有
+- `Note Plus (mtb)` —— 2/11 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/11 个有
 
 ## 典型参数
 

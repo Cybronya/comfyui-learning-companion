@@ -3,55 +3,102 @@ name: text_to_image_video_lora_sampler_136
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.9176
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8312
+common_nodes: [AnySwitch, AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, Fast Bypasser (rgthree), GetImageRangeFromBatch, GetVideoComponents, Int, JjkText, KSampler, KSamplerSelect, LoadImage, LongTextToList, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3BlockCacheT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, Multi Text Merge, PreviewAny, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SDVN Any Show, SamplerCustomAdvanced, SaveVideo, String Replace (mtb), TTP_text_mix, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip, string_util_StrLen, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3全能导演台手动版视频生成处理工具V3.1_2101004935784648706.json, 视频生成/文生视频/MiniMax_H3全能导演台手动版V3.1｜文生视频图生视频_2100762286452461569.json, 视频生成/文生视频/全能导演台V2工作台｜MiniMax_H3文生图生视频_2093839210410242049.json, 视频生成/文生视频/全能导演台V2｜MiniMax_H3工作台数字人视频生成_2094044953394638850.json, 视频生成/文生视频/文圣单图多图生视频｜MiniMax h3工作台三合一_2092572110836289537.json]
+members: [视频生成/图生视频/MiniMax H3语音驱动数字人 VSA加速无限时长生成_2098299600871444481.json, 视频生成/图生视频/MiniMax-H3 ref2v无限长视频｜音频生成图生视频_2090433511164567553.json, 视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频图生视频生成_2090157020346413058.json, 视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频生成图生视频_2090535641066065922.json, 视频生成/图生视频/二采放大无限长视频生成 MiniMax H3 视频生视频图生视频_2094164202637320193.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_136
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3全能导演台手动版视频生成处理工具V3.1_2101004935784648706.json、视频生成/文生视频/MiniMax_H3全能导演台手动版V3.1｜文生视频图生视频_2100762286452461569.json、视频生成/文生视频/全能导演台V2工作台｜MiniMax_H3文生图生视频_2093839210410242049.json、视频生成/文生视频/全能导演台V2｜MiniMax_H3工作台数字人视频生成_2094044953394638850.json、视频生成/文生视频/文圣单图多图生视频｜MiniMax h3工作台三合一_2092572110836289537.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3语音驱动数字人 VSA加速无限时长生成_2098299600871444481.json、视频生成/图生视频/MiniMax-H3 ref2v无限长视频｜音频生成图生视频_2090433511164567553.json、视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频图生视频生成_2090157020346413058.json、视频生成/图生视频/ref2v无限长视频｜MiniMax-H3音频生成图生视频_2090535641066065922.json、视频生成/图生视频/二采放大无限长视频生成 MiniMax H3 视频生视频图生视频_2094164202637320193.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `AnySwitch`
+- `AudioConcat`
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
+- `Fast Bypasser (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetVideoComponents`
+- `Int`
 - `JjkText`
 - `KSampler`
-- `LoraLoaderBypassModelOnly`
+- `KSamplerSelect`
+- `LoadImage`
+- `LongTextToList`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
+- `MathExpression|pysssss`
+- `MiniMaxH3BlockCacheT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextTrim`
+- `MiniMaxH3ReferenceToVideo`
+- `Multi Text Merge`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResolutionSelector`
+- `SDVN Any Show`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `String Replace (mtb)`
+- `TTP_text_mix`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy minimaxH3ToVideo`
-- `easy multiTrackEditor`
-- `easy multiTrackInfoOutput`
-- `easy multiTrackTaskOutput`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
+- `string_util_StrLen`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `easy matchLine` —— 2/5 个有
-- `easy promptLine` —— 2/5 个有
+- `AILab_QwenVL` —— 4/5 个有
+- `LoadAudio` —— 4/5 个有
+- `MiniMaxH3ImageToVideo` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `SpectrumApplyMiniMaxH3` —— 4/5 个有
+- `TrimAudioDuration` —— 4/5 个有
+- `Yuan_H3MotionContext` —— 4/5 个有
+- `LoadVideo` —— 3/5 个有
+- `MiniMaxH3ChainContext` —— 3/5 个有
+- `MiniMaxH3ChainExternalVideo` —— 3/5 个有
+- `Video Slice` —— 3/5 个有
+- `Yuan_H3MotionContextTrim` —— 3/5 个有
+- `EmptySD3LatentImage` —— 1/5 个有
+- `GetImageSize` —— 1/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `Krea2EditGroundedEncode` —— 1/5 个有
+- `Krea2EditModelPatch` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 1/5 个有
+- `LTXVSeparateAVLatent` —— 1/5 个有
+- `ManualSigmas` —— 1/5 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/5 个有
+- `Qwen3VL_Advanced` —— 1/5 个有
 - `SaveImage` —— 1/5 个有
+- `VAEEncode` —— 1/5 个有
+- `VRAM_Debug` —— 1/5 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/5 个有
 
 ## 典型参数
 
@@ -69,7 +116,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -80,4 +127,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

@@ -1,73 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_clip_59
 type: Unknown Workflow
-frequency: 9
-level: weak
-coverage: 0.888111
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+frequency: 10
+level: moderate
+coverage: 0.9656
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1988236119332536321.json, 视频生成/图生视频/1951292355926282242.json, 视频生成/图生视频/2038634972579373058.json, 视频生成/图生视频/2018657772811853825.json, 视频生成/图生视频/2018729929084510209.json, 视频生成/图生视频/2036515691074949121.json, 视频生成/图生视频/1979531861057769474.json, 视频生成/图生视频/2050045558773035009.json, 视频生成/图生视频/1979453083128336385.json]
+members: [视频生成/图生视频/【wan2.1通义万象】- 穿越屏幕赛博牵手_1895846905987596290.json, 视频生成/图生视频/【产品运镜展示】360度产品场景旋转展示视频动画wan2.1+放大补帧_1930215748042657793.json, 视频生成/图生视频/【人物服装运镜展示】360度产品场景旋转展示视频动画wan2.1_1919937999688372225.json, 视频生成/图生视频/【效果惊艳】WAN2.1 万相图生视频_1901173335622066177.json, 视频生成/图生视频/万相图生视频_1894632581118472194.json, 视频生成/图生视频/人物生气特效｜Wan2.1_1938851754044018689.json, 视频生成/图生视频/捏捏乐，WAN2.1万相LORA工作流_1899052254505385985.json, 视频生成/文生视频/【产品运镜展示】360度产品场景旋转展示视频动画wan2.1+放大补帧_1918935323899006978.json, 视频生成/文生视频/【大摆锤跳舞】最新图生视频动画wan2.1+放大补帧_1918185073190047746.json, 视频生成/文生视频/【放大+补帧】最新万相Wan2.1图生视频_1898157679490060290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_59
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1988236119332536321.json、视频生成/图生视频/1951292355926282242.json、视频生成/图生视频/2038634972579373058.json、视频生成/图生视频/2018657772811853825.json、视频生成/图生视频/2018729929084510209.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/【wan2.1通义万象】- 穿越屏幕赛博牵手_1895846905987596290.json、视频生成/图生视频/【产品运镜展示】360度产品场景旋转展示视频动画wan2.1+放大补帧_1930215748042657793.json、视频生成/图生视频/【人物服装运镜展示】360度产品场景旋转展示视频动画wan2.1_1919937999688372225.json、视频生成/图生视频/【效果惊艳】WAN2.1 万相图生视频_1901173335622066177.json、视频生成/图生视频/万相图生视频_1894632581118472194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 8/9 个有
-- `CLIPVisionLoader` —— 8/9 个有
-- `PathchSageAttentionKJ` —— 8/9 个有
-- `ImpactInt` —— 7/9 个有
-- `ModelPatchTorchSettings` —— 7/9 个有
-- `SimpleMath+` —— 7/9 个有
-- `easy cleanGpuUsed` —— 7/9 个有
-- `PrimitiveStringMultiline` —— 6/9 个有
-- `Seed (rgthree)` —— 6/9 个有
-- `GetNode` —— 3/9 个有
-- `RIFE VFI` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `ImageScaleBy` —— 1/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `PainterI2V` —— 1/9 个有
-- `RH_LLMAPI_NODE` —— 1/9 个有
-- `ShowText` —— 1/9 个有
-- `TextInput_` —— 1/9 个有
-- `WanFirstLastFrameToVideo` —— 1/9 个有
-- `easy textSwitch` —— 1/9 个有
-- `wanBlockSwap` —— 1/9 个有
+- `CR Upscale Image` —— 6/10 个有
+- `RIFE VFI` —— 6/10 个有
+- `WanVideoLoraSelect` —— 6/10 个有
+- `WanVideoTorchCompileSettings` —— 5/10 个有
+- `ImageResizeKJ` —— 2/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
+- `Primitive string [Crystools]` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `String` —— 1/10 个有
+- `String Literal` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 56% |
-| Prompt 约束强度(CFG) | 6 | 4 - 20 | 9 | 37% |
-| 采样算法 | 1 | 1 - 3.5 | 9 | 39% |
-| 调度器 | euler_ancestral | - | 9 | 89% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,9 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 56%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 20，9 个样本，取值分散，一致性仅 37%
-- 采样算法 中位数 1，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 39%
-- 调度器 最常用 euler_ancestral，9 个样本，一致性 89%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

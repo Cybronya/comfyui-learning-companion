@@ -3,61 +3,69 @@ name: unknown_workflow_video_sampler_unet_22
 type: Unknown Workflow
 frequency: 16
 level: moderate
-coverage: 0.834625
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, ManualSigmas, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.819312
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/室内空间装修生长动画_2111460963353448449.json, 视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json, 视频生成/图生视频/最强单采V2【10步加特林版】_2110594969235968002.json, 视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json, 视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json, 视频生成/图生视频/街舞表演视频制作_2106024930591731713.json, 视频生成/图生视频/（api）横屏640p坤坤H3官流无lora12步_2110413455923699713.json, 视频生成/图生视频/（api）竖屏608p坤坤H3官流无lora_2108200300300554241.json, 视频生成/图生视频/（api）竖屏768p坤坤H3官流_2108103067618070530.json, 视频生成/文生视频/H3-氛围感短视频_2096431562895220737.json, 视频生成/文生视频/H3-氛围感网红打卡点短视频制作_2096832540542857218.json, 视频生成/文生视频/H3官流全能参考9图1音频1视频_2105563203647393793.json, 视频生成/文生视频/H3官流（mpov版）-不用加速lora_2107126428574773249.json, 视频生成/文生视频/H3官流（最强武戏）_2108377903393239042.json, 视频生成/文生视频/H3官流（终极版）_2104734128657756162.json, 视频生成/文生视频/H3无损融合单采【官方满血API画布级本地流】_2108739345095155713.json]
+members: [图片生成/图生图/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085727011011649537.json, 图片生成/图生图/interactive video2_2092871532694556673.json, 数字人/数字人/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099294863396261889.json, 数字人/数字人/H3+Video+Costume+Changes!+H3+Video H3视频换装！H3视频编辑_2109550806524579841.json, 数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json, 数字人/数字人/人物场景替换工作流_2097197529950674946.json, 数字人/数字人/最新MiniMax-H3视频换人！视频编辑！_2086278232344719361.json, 视频生成/图生视频/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099801459780055042.json, 视频生成/图生视频/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099848381286928385.json, 视频生成/图生视频/H3+Video+Costume+Changes!+H3+Video_H3视频换装！H3视频编辑_2104434230909554690.json, 视频生成/图生视频/MiniMax H3 动作迁移解决方案｜视频动作迁移一键生成工作流_2101538902334074882.json, 视频生成/图生视频/MiniMaxH3 人物一致性动作模仿&动作迁移_2087460746010648577.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！B站艾橘溪_2085579704077217793.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2091762306387628033.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2095427085866192898.json, 视频生成/文生视频/MiniMaxH3_视频换背景_视频编辑_2100921498822332417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_22
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/室内空间装修生长动画_2111460963353448449.json、视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json、视频生成/图生视频/最强单采V2【10步加特林版】_2110594969235968002.json、视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json、视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085727011011649537.json、图片生成/图生图/interactive video2_2092871532694556673.json、数字人/数字人/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099294863396261889.json、数字人/数字人/H3+Video+Costume+Changes!+H3+Video H3视频换装！H3视频编辑_2109550806524579841.json、数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 16 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadImage`
-- `ManualSigmas`
 - `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 15/16 个有
-- `PrimitiveStringMultiline` —— 15/16 个有
-- `BlockSparseAttention` —— 14/16 个有
-- `LoraLoaderModelOnly` —— 13/16 个有
-- `LoadAudio` —— 12/16 个有
-- `VHS_LoadVideo` —— 10/16 个有
-- `GetNode` —— 2/16 个有
-- `SetNode` —— 2/16 个有
-- `忽略多组孤海` —— 2/16 个有
-- `GoohaiDisplayAny` —— 1/16 个有
-- `JjkText` —— 1/16 个有
-- `LayerUtility: TextJoin` —— 1/16 个有
-- `RHLLMChatNode` —— 1/16 个有
-- `RH_RhartImageG2ImageToImage` —— 1/16 个有
-- `SaveImage` —— 1/16 个有
+- `LoraLoaderModelOnly` —— 15/16 个有
+- `VAEDecodeAudio` —— 15/16 个有
+- `LoadImage` —— 14/16 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 14/16 个有
+- `AILab_QwenVL` —— 13/16 个有
+- `DF_Int_to_Float` —— 13/16 个有
+- `ImageResizeKJv2` —— 13/16 个有
+- `JoinStrings` —— 13/16 个有
+- `PrimitiveInt` —— 13/16 个有
+- `ImageConcanate` —— 9/16 个有
+- `GetNode` —— 3/16 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/16 个有
+- `ResolutionSelector` —— 3/16 个有
+- `SetNode` —— 3/16 个有
+- `EmptyImage` —— 2/16 个有
+- `Label (rgthree)` —— 2/16 个有
+- `PreviewImage` —— 2/16 个有
+- `VRAM_Debug` —— 2/16 个有
+- `easy imageRemBg` —— 2/16 个有
+- `EasyCache` —— 1/16 个有
+- `FlashVSRNode` —— 1/16 个有
+- `Int` —— 1/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
+- `LoadAudio` —— 1/16 个有
+- `LoadVideo` —— 1/16 个有
 
 ## 典型参数
 

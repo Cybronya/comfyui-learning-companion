@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_659
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.909
-common_nodes: [AudioCrop, AudioSeparation, LoadAudio, SaveAudioMP3]
+coverage: 1
+common_nodes: [LoadImage, RH_SeedreamV5LiteImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/分离人声与背景声音（分离歌声和音乐）_1981180042384408578.json, 音频生成/音频生成/分离背景和人声_2014668966366552066.json, 音频生成/音频生成/分离背景和人声工作流_2002746035225128961.json]
+members: [图片生成/图生图/YJ-APP-SeedreamV5Lite_i2i_v5.0_2041382078087962626.json, 图片生成/图生图/YJ-APP-三图编辑-SeedreamV5Lite_i2i_v5.0_2042125353514180610.json, 图片生成/图生图/YJ-APP-单图编辑-SeedreamV5Lite_i2i_v5.0_2044317697139286018.json, 图片生成/图生图/YJ-APP-双图编辑-SeedreamV5Lite_i2i_v5.0_2042119252441833474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_659
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/分离人声与背景声音（分离歌声和音乐）_1981180042384408578.json、音频生成/音频生成/分离背景和人声_2014668966366552066.json、音频生成/音频生成/分离背景和人声工作流_2002746035225128961.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-SeedreamV5Lite_i2i_v5.0_2041382078087962626.json、图片生成/图生图/YJ-APP-三图编辑-SeedreamV5Lite_i2i_v5.0_2042125353514180610.json、图片生成/图生图/YJ-APP-单图编辑-SeedreamV5Lite_i2i_v5.0_2044317697139286018.json、图片生成/图生图/YJ-APP-双图编辑-SeedreamV5Lite_i2i_v5.0_2042119252441833474.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `LoadAudio`
-- `SaveAudioMP3`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RH_SeedreamV5LiteImageToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `MergeAudioMW` —— 1/3 个有
-- `easy imageSave` —— 1/3 个有
+- `Int` —— 1/4 个有
+- `Switch` —— 1/4 个有
 
 ## 典型参数
 

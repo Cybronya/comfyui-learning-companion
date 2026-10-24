@@ -1,83 +1,81 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_101
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.898
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAddGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.78625
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/LTX-2 3合 1 控制_2073298485385973761.json, 图片生成/文生图/LTX-2 深度控制_2073298287444193281.json, 视频生成/图生视频/2008779435071246337.json]
+members: [视频生成/文生视频/YZ金鱼-LTX-2 文生视频_2009514987760394241.json, 视频生成/文生视频/[1月] 音画同步_ASMR LTX2文生视频_2009296819603382274.json, 视频生成/文生视频/很强的文生视频-LTXV2.0你就是导演_2008866865359097857.json, 视频生成/文生视频/音画同步 LTX2.0 文生视频【蒸馏  48G】_2008562261769592834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_101
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/LTX-2 3合 1 控制_2073298485385973761.json、图片生成/文生图/LTX-2 深度控制_2073298287444193281.json、视频生成/图生视频/2008779435071246337.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/YZ金鱼-LTX-2 文生视频_2009514987760394241.json、视频生成/文生视频/[1月] 音画同步_ASMR LTX2文生视频_2009296819603382274.json、视频生成/文生视频/很强的文生视频-LTXV2.0你就是导演_2008866865359097857.json、视频生成/文生视频/音画同步 LTX2.0 文生视频【蒸馏  48G】_2008562261769592834.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
 - `GetImageSize`
-- `ImageResizeKJv2`
 - `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
-- `LTXVAddGuide`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VHS_LoadVideo`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 2/3 个有
-- `BasicScheduler` —— 2/3 个有
-- `CreateVideo` —— 2/3 个有
-- `DisableNoise` —— 2/3 个有
-- `ImageInvert` —— 2/3 个有
-- `LotusConditioning` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `SetFirstSigma` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `VAEEncode` —— 2/3 个有
-- `VAELoader` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `CR String To Combo` —— 1/3 个有
-- `ImpactStringSelector` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `SplitStringByDelimiter` —— 1/3 个有
-- `VAEDecodeTiled` —— 1/3 个有
+- `LTXVCropGuides` —— 3/4 个有
+- `LTXVScheduler` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `INTConstant` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `JWInteger` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `MemoryCleaner` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `Qwen3_VQA_Plus` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `VAEDecode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+| 宽度 | 97 | 97 - 121 | 4 | 90% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
@@ -85,5 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 121，4 个样本，取值集中（一致性 90%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

@@ -3,61 +3,61 @@ name: unknown_workflow_video_sampler_vae_64
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.948875
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.98425
+common_nodes: [CLIPVisionLoader, Compare, DWPreprocessor, FaceMaskFromPoseKeypoints, INTConstant, If ANY execute A else B, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065613874346418178.json, 视频生成/文生视频/1963933041288728578.json, 视频生成/文生视频/InfiniteTalk对口型_2072999601646641152.json, 视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json, 音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100410279401181185.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100497922336055297.json, 音频生成/音频生成/超自然对口型 视频数字人_2000587001097224194.json]
+members: [视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json, 视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情胸部略微抖动_2039951088849260546.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）3月8号_2030568462560534529.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2034480754176036865.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2046249922785189889.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2046394046041563138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_64
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2065613874346418178.json、视频生成/文生视频/1963933041288728578.json、视频生成/文生视频/InfiniteTalk对口型_2072999601646641152.json、视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json、音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json、视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情胸部略微抖动_2039951088849260546.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）3月8号_2030568462560534529.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `Compare`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `INTConstant`
+- `If ANY execute A else B`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `LoadAudio`
-- `MultiTalkWav2VecEmbeds`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 7/8 个有
-- `AudioSeparation` —— 7/8 个有
-- `INTConstant` —— 7/8 个有
-- `MultiTalkModelLoader` —— 7/8 个有
-- `Anything Everywhere` —— 5/8 个有
-- `LoadImage` —— 5/8 个有
-- `WanVideoLoraSelect` —— 5/8 个有
-- `WanVideoTextEncodeCached` —— 5/8 个有
-- `GetImageRangeFromBatch` —— 4/8 个有
-- `WanVideoEncode` —— 4/8 个有
-- `easy int` —— 4/8 个有
-- `LoadWanVideoT5TextEncoder` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `WanVideoTextEncode` —— 3/8 个有
-- `AudioCropProcessUTK` —— 1/8 个有
-- `MelBandRoFormerModelLoader` —— 1/8 个有
-- `MelBandRoFormerSampler` —— 1/8 个有
-- `PreviewAudio` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 ## 典型参数
 

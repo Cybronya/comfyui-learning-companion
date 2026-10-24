@@ -3,67 +3,89 @@ name: unknown_workflow_video_lora_sampler_287
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.905571
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.525857
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetNode, ImageCompositeMasked, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, PrimitiveInt, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/H3单采_2106693127930212353.json, 图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json, 图片生成/文生图/H3官流（终极版）_2106339812679708674.json, 视频生成/图生视频/H3_单采极速文戏_2106860537857527810.json, 视频生成/图生视频/H3_单采极速文戏_2109821779844886530.json, 视频生成/图生视频/H3官流（单采极速文戏）_2106642679642812418.json, 视频生成/文生视频/H3官流（终极版）_2105121771757334530.json]
+members: [图片生成/图生图/动作迁移2_2092576578264977410.json, 视频生成/图生视频/CG迷-Scail2超强角色替换工作流_2070766031924191234.json, 视频生成/图生视频/SCAIL2_人物转绘替换_打光_2079863299176484866.json, 视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频_2086402055798870018.json, 视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频！—转载阿硕_2092973975054934018.json, 视频生成/图生视频/练习舞蹈工作流_2081699626717114369.json, 视频生成/文生视频/Wan 视频编辑-Scail2 V1-支持长视频_2095009418013405186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_287
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/H3单采_2106693127930212353.json、图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json、图片生成/文生图/H3官流（终极版）_2106339812679708674.json、视频生成/图生视频/H3_单采极速文戏_2106860537857527810.json、视频生成/图生视频/H3_单采极速文戏_2109821779844886530.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/动作迁移2_2092576578264977410.json、视频生成/图生视频/CG迷-Scail2超强角色替换工作流_2070766031924191234.json、视频生成/图生视频/SCAIL2_人物转绘替换_打光_2079863299176484866.json、视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频_2086402055798870018.json、视频生成/图生视频/Wan 视频编辑-Scail2 V1-支持长视频！—转载阿硕_2092973975054934018.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
-- `BlockSparseAttention`
+- `BatchImagesNode`
 - `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
 - `ComfyMathExpression`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `EmptyImage`
+- `GIMMVFI_interpolate`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveInt`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `SetNode`
+- `TensorLoopClose`
+- `TensorLoopOpen`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPreviewOverrideKJ` —— 5/7 个有
-- `PreviewAny` —— 5/7 个有
+- `VHS_VideoInfo` —— 6/7 个有
+- `Bookmark (rgthree)` —— 5/7 个有
+- `GetImageSizeAndCount` —— 5/7 个有
+- `LayerUtility: CropByMask V2` —— 5/7 个有
+- `Mask Fill Holes` —— 5/7 个有
+- `PlaySound|pysssss` —— 5/7 个有
+- `PrimitiveBoolean` —— 5/7 个有
 - `PrimitiveStringMultiline` —— 5/7 个有
-- `ManualSigmas` —— 4/7 个有
-- `ExtendIntermediateSigmas` —— 3/7 个有
-- `MiniMaxH3SigmaShift` —— 3/7 个有
-- `BatchImagesNode` —— 2/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `CreateVideo` —— 2/7 个有
-- `LTXVConcatAVLatent` —— 2/7 个有
-- `LTXVSeparateAVLatent` —— 2/7 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `llama_cpp_instruct_adv` —— 2/7 个有
-- `llama_cpp_model_loader` —— 2/7 个有
-- `llama_cpp_parameters` —— 2/7 个有
-- `EmptyImage` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `Switch any [Crystools]` —— 5/7 个有
+- `ToBinaryMask` —— 5/7 个有
+- `easy ifElse` —— 5/7 个有
+- `easy int` —— 5/7 个有
+- `easy isMaskEmpty` —— 5/7 个有
+- `Label (rgthree)` —— 3/7 个有
+- `GetImageSize` —— 2/7 个有
+- `ResizeImageMaskNode` —— 2/7 个有
+- `Int` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `RH_LLMAPI_NODE` —— 1/7 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/7 个有
+- `ShowAnything|Mie` —— 1/7 个有
+- `Text` —— 1/7 个有
 
 ## 典型参数
 

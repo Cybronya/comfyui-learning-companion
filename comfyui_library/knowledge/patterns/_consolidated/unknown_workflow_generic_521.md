@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_521
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
+coverage: 0.7114
+common_nodes: [Image Comparer (rgthree), LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/LongCat-Image文生图_1999000295881461762.json, 图片生成/文生图/LongCat文生图ComfyUI工作流_1999382819262656513.json, 图片生成/文生图/longcat-image-generate_1998221329243471874.json]
+members: [图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090098027892658178.json, 图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090617016930627585.json, 图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090632503592833025.json, 图片生成/图生图/提取主体生成透明背景-0602更新_2086632830762840066.json, 图片生成/图生图/提取主体生成透明背景png_2083238815178772482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_521
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图_1999000295881461762.json、图片生成/文生图/LongCat文生图ComfyUI工作流_1999382819262656513.json、图片生成/文生图/longcat-image-generate_1998221329243471874.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090098027892658178.json、图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090617016930627585.json、图片生成/图生图/一件抠图_BiRefNet_Ultra_V2工作专用_2090632503592833025.json、图片生成/图生图/提取主体生成透明背景-0602更新_2086632830762840066.json、图片生成/图生图/提取主体生成透明背景png_2083238815178772482.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LongCatImageModelLoader`
-- `LongCatImageTextToImage`
+全部 5 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `String Literal` —— 2/5 个有
 
 ## 典型参数
 

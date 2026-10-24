@@ -7,13 +7,13 @@ coverage: 0.9002
 common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed Everywhere, Text, VAEDecodeTiled, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2055146860268015617.json, 视频生成/图生视频/2055152472892690433.json, 视频生成/图生视频/2054821497482555394.json, 视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.3-VBVR_2054821471918272513.json]
+members: [视频生成/图生视频/视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json, 视频生成/图生视频/视频-图片对音频口型双人-LTX2.3-VBVR_2055152472892690433.json, 视频生成/图生视频/视频-图生视频扩写-LTX2.3-VBVR_2054821497482555394.json, 视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.3-VBVR_2054821471918272513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_57
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2055146860268015617.json、视频生成/图生视频/2055152472892690433.json、视频生成/图生视频/2054821497482555394.json、视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json、视频生成/文生视频/视频-文生视频扩写-LTX2.3-VBVR_2054821471918272513.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json、视频生成/图生视频/视频-图片对音频口型双人-LTX2.3-VBVR_2055152472892690433.json、视频生成/图生视频/视频-图生视频扩写-LTX2.3-VBVR_2054821497482555394.json、视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json、视频生成/文生视频/视频-文生视频扩写-LTX2.3-VBVR_2054821471918272513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

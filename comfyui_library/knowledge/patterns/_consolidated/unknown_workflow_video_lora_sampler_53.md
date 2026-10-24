@@ -7,13 +7,13 @@ coverage: 0.8392
 common_nodes: [BerniniStudio, CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json, 视频生成/图生视频/2078439441877790721.json, 视频生成/图生视频/2073592310989942786.json, 视频生成/图生视频/2073584193665331202.json, 视频生成/图生视频/2065400514141048833.json, 视频生成/图生视频/2081577097444810753.json, 视频生成/图生视频/2075050205141094402.json, 视频生成/图生视频/2074045202817437698.json, 视频生成/图生视频/2073577575993139202.json, 视频生成/图生视频/2063147705244930049.json, 视频生成/图生视频/2064931292038385665.json, 视频生成/图生视频/调试Bernini Studio工作流-4步lora_rv2v_2102665904747270146.json, 视频生成/图生视频/2073745061728313345.json, 视频生成/图生视频/2073682935554854913.json, 视频生成/图生视频/2082366639907102721.json, 视频生成/图生视频/2082437380983844866.json, 视频生成/图生视频/2082454463452893186.json, 视频生成/图生视频/2082456967376883713.json, 视频生成/图生视频/2074035799124955138.json, 视频生成/图生视频/2064238678511280130.json]
+members: [图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json, 视频生成/图生视频/Bernini Studio 参考图出视频_2078439441877790721.json, 视频生成/图生视频/Bernini Studio-图生视频（超级加速）_2073592310989942786.json, 视频生成/图生视频/Bernini Studio-视频编辑（超级加速）_2073584193665331202.json, 视频生成/图生视频/Bernini Studio图生视频工作流_2065400514141048833.json, 视频生成/图生视频/Bernini Studio多图参考工作流_2081577097444810753.json, 视频生成/图生视频/Bernini Studio贝尔尼尼_2075050205141094402.json, 视频生成/图生视频/Bernini-4步加速-图生视频_2074045202817437698.json, 视频生成/图生视频/Wan Bernini Studio 加速版工作流_2073577575993139202.json, 视频生成/图生视频/多功能视频处理，图生视频  视频编辑 Bernini Studio 加速版_2063147705244930049.json, 视频生成/图生视频/视频编辑，图生视频 Bernini Studio 贝尔尼尼 急速版_2064931292038385665.json, 视频生成/图生视频/调试Bernini Studio工作流-4步lora_rv2v_2102665904747270146.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-4步lora-双参考图_2073745061728313345.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-4步lora_2073682935554854913.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082366639907102721.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082437380983844866.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082454463452893186.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082456967376883713.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流_2074035799124955138.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流自动反推_2064238678511280130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_53
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json、视频生成/图生视频/2078439441877790721.json、视频生成/图生视频/2073592310989942786.json、视频生成/图生视频/2073584193665331202.json、视频生成/图生视频/2065400514141048833.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json、视频生成/图生视频/Bernini Studio 参考图出视频_2078439441877790721.json、视频生成/图生视频/Bernini Studio-图生视频（超级加速）_2073592310989942786.json、视频生成/图生视频/Bernini Studio-视频编辑（超级加速）_2073584193665331202.json、视频生成/图生视频/Bernini Studio图生视频工作流_2065400514141048833.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：20

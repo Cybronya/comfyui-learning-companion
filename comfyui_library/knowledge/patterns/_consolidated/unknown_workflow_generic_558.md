@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_558
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.96
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038487586699747330.json, 视频生成/图生视频/2050237655522258945.json, 视频生成/图生视频/2037495235391000577.json]
+members: [图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json, 音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_558
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2038487586699747330.json、视频生成/图生视频/2050237655522258945.json、视频生成/图生视频/2037495235391000577.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json、音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `RH_RhartVideoV31ProStartEndToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 1/3 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

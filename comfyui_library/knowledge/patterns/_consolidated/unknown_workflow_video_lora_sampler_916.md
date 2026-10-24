@@ -3,69 +3,70 @@ name: unknown_workflow_video_lora_sampler_916
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.652
-common_nodes: [Any Switch (rgthree), AudioSeparation, CLIPVisionLoader, CR String To Number, CR Text, DownloadAndLoadWav2VecModel, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SetNode, SparkTTSClone, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed]
+coverage: 0.41
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, DapaoH3LocalPromptNode, Fast Groups Bypasser (rgthree), GetNode, H3SigmaRefiner, Int, Int2String, JjkShowText, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, PrimitiveString, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, Text, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json, 音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json]
+members: [视频生成/文生视频/10Eros Max BETA5 workflow_2097951550932082690.json, 视频生成/文生视频/MiniMax H3多参全能整合工作流V2_2090358738145333250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_916
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音频文本驱动生成数字人对口型数字人视频生成支持动物说话视频生成声音克隆视频生成_2011517441985220610.json、音频生成/音频生成/数字人音频_文本驱动 带音色模仿 支持动物Q版 卡通角色 InfiniteTalk-Wan2.2_1999708121922760705.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/10Eros Max BETA5 workflow_2097951550932082690.json、视频生成/文生视频/MiniMax H3多参全能整合工作流V2_2090358738145333250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR String To Number`
-- `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSizeAndCount`
+- `AudioCrop`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `DapaoH3LocalPromptNode`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `H3SigmaRefiner`
 - `Int`
-- `LayerUtility: PurgeVRAM`
+- `Int2String`
+- `JjkShowText`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SaveAudio`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveString`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SparkTTSClone`
-- `Text Multiline`
+- `SplitSigmas`
+- `Text`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
+- `VRGDG_MiniMaxH3AudioDrive`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Integer To String` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `Random Number` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `LTXVConcatAVLatent` —— 1/2 个有
+- `LTXVSeparateAVLatent` —— 1/2 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
 
 ## 典型参数
 

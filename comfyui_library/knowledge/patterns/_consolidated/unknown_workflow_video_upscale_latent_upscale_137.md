@@ -3,81 +3,91 @@ name: unknown_workflow_video_upscale_latent_upscale_137
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.3925
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, ImageScale, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SplitSigmas, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTShotReplace, YuanAudioList, YuanAudioSplit, YuanMultiImage, YuanTool, easy float, 忽略多组孤海]
+coverage: 0.5805
+common_nodes: [AudioCrop, BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, ImageBatchMulti, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, SimpleMath+, Text Concatenate, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2108461705771708417.json, 视频生成/文生视频/MiniMax-H3 全栈式短剧 多图音频参考二采优化版V1.0_2096284114990223362.json]
+members: [视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json, 视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_137
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2108461705771708417.json、视频生成/文生视频/MiniMax-H3 全栈式短剧 多图音频参考二采优化版V1.0_2096284114990223362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json、视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：39%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
+- `AudioCrop`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetImage`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ComfySwitchNode`
+- `EmptyLTXVLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
 - `GetNode`
-- `ImageScale`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXSequencer`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewAudio`
 - `PreviewImage`
 - `PrimitiveFloat`
-- `PrimitiveInt`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `SetNode`
-- `ShowText|pysssss`
-- `SplitSigmas`
-- `StringConcatenate`
-- `TextGenerate`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SimpleMath+`
+- `Text Concatenate`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTShotReplace`
-- `YuanAudioList`
-- `YuanAudioSplit`
-- `YuanMultiImage`
-- `YuanTool`
-- `easy float`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `JoinStringMulti` —— 1/2 个有
-- `PurgeVRAM_UTK` —— 1/2 个有
-- `ToString` —— 1/2 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LTXVReferenceAudio` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `PainterAudioLength` —— 1/2 个有
+- `PrimitiveBoolean` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `easy ifElse` —— 1/2 个有
 - `easy showAnything` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1 | - | 1 | 100% |
+| 高度 | 24 | - | 1 | 100% |
 
 ## 常见问题
 

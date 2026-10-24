@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_clip_182
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.939
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, INTConstant, ImageResizeKJ, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, SimpleMath+, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanVideoNAG, wanBlockSwap]
+coverage: 0.944667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetImageSizeAndCount, ImageFromBatch, ImpactInt, KSampler, LoadImage, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, TorchCompileModelWanVideo, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/1998309830924361729.json, 视频生成/图生视频/1993159656203812866.json, 视频生成/图生视频/2039547359687872514.json]
+members: [视频生成/图生视频/For循环不限时长图生视频_1901121776833675266.json, 视频生成/图生视频/Wan2.1-15秒图生视频3段扩展_1899668266204221441.json, 视频生成/图生视频/图生视频—15秒视频生成_1899809388968685570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_182
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1998309830924361729.json、视频生成/图生视频/1993159656203812866.json、视频生成/图生视频/2039547359687872514.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/For循环不限时长图生视频_1901121776833675266.json、视频生成/图生视频/Wan2.1-15秒图生视频3段扩展_1899668266204221441.json、视频生成/图生视频/图生视频—15秒视频生成_1899809388968685570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -27,41 +27,42 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `INTConstant`
-- `ImageResizeKJ`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
+- `GetImageSizeAndCount`
+- `ImageFromBatch`
+- `ImpactInt`
+- `KSampler`
 - `LoadImage`
-- `ModelPatchTorchSettings`
+- `MathExpression|pysssss`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `SimpleMath+`
+- `TorchCompileModelWanVideo`
+- `UNETLoader`
 - `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanVideoNAG`
-- `wanBlockSwap`
+- `WanImageToVideo`
+- `WanVideoTeaCacheKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Integer` —— 2/3 个有
-- `FILM VFI` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `RH_Nano_Banana_Image2Image` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
+- `ImageBatch` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `String Literal` —— 1/3 个有
+- `Text Load Line From File` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
+- `easy forLoopEnd` —— 1/3 个有
+- `easy forLoopStart` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -69,8 +70,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

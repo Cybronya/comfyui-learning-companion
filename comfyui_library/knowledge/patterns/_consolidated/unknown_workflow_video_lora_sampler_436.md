@@ -2,78 +2,70 @@
 name: unknown_workflow_video_lora_sampler_436
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.9306
-common_nodes: [CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, INTConstant, ImageResizeKJ, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, String Literal, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo, WanVideoEnhanceAVideoKJ, easy int]
+level: moderate
+coverage: 0.711
+common_nodes: [CLIPVisionLoader, CR Text Concatenate, ImageCASharpening+, ImageResize+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
-missing: [String Literal, easy int, Image Blank, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM V2, GetImageSize+, easy seed]
-members: [视频生成/图生视频/1950455319556218882.json, 视频生成/图生视频/1950519561194033153.json, 视频生成/文生视频/1950435330224775169.json, 视频生成/文生视频/1950526542499729410.json, 视频生成/文生视频/Wan2.2-VACE-文生视频_2072999663609094144.json]
+missing: []
+members: [视频生成/图生视频/wan2.1 [360°环绕运镜] 一键式图生视频_2070674585263108098.json, 视频生成/图生视频/wan超酷运镜_1931730238252711938.json, 视频生成/图生视频/【360°环绕运镜】wan2.1图生视频（全自动）_1930416683494621185.json, 视频生成/图生视频/【720p超级加速】Wan2.1-Master图生视频（全自动）_1932144473588101122.json, 视频生成/图生视频/【720p超级加速】Wan2.1-Master图生视频｜自动补全_1932777687310372865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_436
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1950455319556218882.json、视频生成/图生视频/1950519561194033153.json、视频生成/文生视频/1950435330224775169.json、视频生成/文生视频/1950526542499729410.json、视频生成/文生视频/Wan2.2-VACE-文生视频_2072999663609094144.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.1 [360°环绕运镜] 一键式图生视频_2070674585263108098.json、视频生成/图生视频/wan超酷运镜_1931730238252711938.json、视频生成/图生视频/【360°环绕运镜】wan2.1图生视频（全自动）_1930416683494621185.json、视频生成/图生视频/【720p超级加速】Wan2.1-Master图生视频（全自动）_1932144473588101122.json、视频生成/图生视频/【720p超级加速】Wan2.1-Master图生视频｜自动补全_1932777687310372865.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGZeroStarAndInit`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `INTConstant`
-- `ImageResizeKJ`
-- `KSamplerAdvanced`
+- `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `JWInteger`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `String Literal`
-- `TrimVideoLatent`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
-- `WanVideoEnhanceAVideoKJ`
-- `easy int`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 4/5 个有
-- `WanVideoVACEStartToEndFrame` —— 4/5 个有
-- `easy seed` —— 4/5 个有
-- `GetImageSize` —— 3/5 个有
-- `Image Blank` —— 3/5 个有
-- `ImageCompositeMasked` —— 3/5 个有
-- `ImageConcanate` —— 3/5 个有
-- `LayerMask: LoadFlorence2Model` —— 3/5 个有
-- `LayerMask: ObjectDetectorFL2` —— 3/5 个有
-- `LayerMask: SAM2Ultra` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `GetImageSize+` —— 2/5 个有
-- `GrowMaskWithBlur` —— 2/5 个有
-- `ImagePadKJ` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `InpaintPreprocessor` —— 2/5 个有
-- `JWImageExtractFromBatch` —— 2/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `MaskToImage` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
+- `PreviewImage` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `WanVideoExperimentalArgs` —— 4/5 个有
+- `WanVideoSLG` —— 4/5 个有
+- `WanVideoTeaCache` —— 4/5 个有
+- `Anything Everywhere` —— 3/5 个有
+- `CogVideoEnhanceAVideo` —— 3/5 个有
+- `GetNode` —— 3/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `Text Multiline` —— 3/5 个有
+- `WanVideoClipVisionEncode` —— 3/5 个有
+- `WanVideoImageToVideoEncode` —— 3/5 个有
+- `RH_Translator` —— 2/5 个有
+- `WanVideoVACEEncode` —— 2/5 个有
+- `WanVideoVACEModelSelect` —— 2/5 个有
+- `Florence2ModelLoader` —— 1/5 个有
+- `Florence2Run` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `WanVideoEnhanceAVideo` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | lcm | - | 5 | 100% |
-| 重绘幅度 | beta | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,9 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，5 个样本，一致性 100%
-- 重绘幅度 最常用 beta，5 个样本，一致性 100%
-- 这些节点还没有知识卡，系统对它们的理解有限：String Literal、easy int、Image Blank、LayerMask: LoadFlorence2Model、LayerMask: ObjectDetectorFL2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

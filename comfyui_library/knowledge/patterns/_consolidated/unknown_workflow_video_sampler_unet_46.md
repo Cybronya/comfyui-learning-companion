@@ -1,82 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_unet_46
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.793
-common_nodes: [BasicGuider, BasicScheduler, Bjornulf_ShowInt, CLIPLoader, CR Text, KSamplerSelect, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxH3ReferenceToVideo, PreviewAny, PreviewAudio, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowAnything|Mie, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.730667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMax H3 图+音乐数字人自用_2087432772242722818.json, 数字人/数字人/MiniMax H3 数字歌手最高质量完美版_字节4步_2110578022284881921.json, 数字人/数字人/商用数字歌手最高质量完美版_larry4步_MinimaxH3_2110573590621020162.json, 视频生成/图生视频/MiniMax H3 图+音乐 生成数字歌手_2084627445201858561.json, 视频生成/图生视频/MiniMax H3 图音数字人MV_2092500852375375873.json, 视频生成/图生视频/Minimax_H3唱歌+跳舞+换装_2086303939221348354.json, 视频生成/图生视频/商用最完美数字歌手最高质量完美版_larry4步_MinimaxH3_2110573590621020162.json]
+members: [视频生成/文生视频/H3文生视频，首尾帧+放大_2086693311015907329.json, 视频生成/文生视频/H3极速二采高质量图_文生视频(胸部大小可控)_2090731045871251457.json, 视频生成/文生视频/H3极速二采高质量图_文生视频_2086494938853892097.json, 视频生成/文生视频/MINIMAX-H3全自动工作流_2089314933895942146.json, 视频生成/文生视频/MINIMAXH3多图参考打斗全自动工作流_2099696081260081154.json, 视频生成/文生视频/MiniMax H3｜参考图生视频+Pass2 二采精修_2087873476030984194.json, 视频生成/文生视频/MinimaxH3全能参考（二采高清放大）4步加速_2091790956046667778.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3打斗专用全自动工作流_2087897093984837634.json, 视频生成/文生视频/一采lora1.0 turbo8 8步 0.5清晰度，match，二采8步0.3，int8，lanczos，crf16_2092168952892977153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_46
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MiniMax H3 图+音乐数字人自用_2087432772242722818.json、数字人/数字人/MiniMax H3 数字歌手最高质量完美版_字节4步_2110578022284881921.json、数字人/数字人/商用数字歌手最高质量完美版_larry4步_MinimaxH3_2110573590621020162.json、视频生成/图生视频/MiniMax H3 图+音乐 生成数字歌手_2084627445201858561.json、视频生成/图生视频/MiniMax H3 图音数字人MV_2092500852375375873.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/H3文生视频，首尾帧+放大_2086693311015907329.json、视频生成/文生视频/H3极速二采高质量图_文生视频(胸部大小可控)_2090731045871251457.json、视频生成/文生视频/H3极速二采高质量图_文生视频_2086494938853892097.json、视频生成/文生视频/MINIMAX-H3全自动工作流_2089314933895942146.json、视频生成/文生视频/MINIMAXH3多图参考打斗全自动工作流_2099696081260081154.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `Bjornulf_ShowInt`
 - `CLIPLoader`
-- `CR Text`
+- `ComfyMathExpression`
 - `KSamplerSelect`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PreviewAudio`
-- `PrimitiveFloat`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PT_H3ConcatAVLatent`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `ShowAnything|Mie`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `ImageBatchMultiV2` —— 6/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `llama_cpp_instruct_adv` —— 6/7 个有
-- `llama_cpp_model_loader` —— 6/7 个有
-- `llama_cpp_parameters` —— 6/7 个有
-- `AudioCrop` —— 4/7 个有
-- `Bjornulf_ShowFloat` —— 4/7 个有
-- `CR Text Concatenate` —— 4/7 个有
-- `CR Text Replace` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `LoadAudio` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `PathchSageAttentionKJ` —— 4/7 个有
-- `RH_GetAudioDuration` —— 4/7 个有
-- `RH_Translator` —— 4/7 个有
-- `CR Float To String` —— 3/7 个有
-- `LoadAudioUI` —— 3/7 个有
-- `SaveAudioAdvanced` —— 3/7 个有
-- `BlockSparseAttention` —— 1/7 个有
-- `IntToString` —— 1/7 个有
-- `LazySwitch1way` —— 1/7 个有
-- `MiniMaxH3SigmaShift` —— 1/7 个有
-- `PrimitiveBoolean` —— 1/7 个有
-- `RHLLMChatNode` —— 1/7 个有
-- `floatToInt _O` —— 1/7 个有
+- `LoraLoaderBypassModelOnly` —— 8/9 个有
+- `PrimitiveFloat` —— 8/9 个有
+- `LoadAudio` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `ImageResizeKJv2` —— 6/9 个有
+- `MiniMaxH3AudioConditioningT8` —— 6/9 个有
+- `MiniMaxH3DualClockSamplerT8` —— 6/9 个有
+- `CR Prompt Text` —— 3/9 个有
+- `GetNode` —— 3/9 个有
+- `PreviewAny` —— 3/9 个有
+- `PrimitiveStringMultiline` —— 3/9 个有
+- `RH_LLMAPI_Pro_Node` —— 3/9 个有
+- `SetNode` —— 3/9 个有
+- `LoraLoaderModelOnly` —— 2/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/9 个有
+- `VHS_LoadVideo` —— 2/9 个有
+- `CLIPTextEncode` —— 1/9 个有
+- `H3SigmaRefiner` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `MiniMaxH3ImageToVideo` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
 
 ## 典型参数
 

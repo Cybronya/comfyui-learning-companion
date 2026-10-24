@@ -1,70 +1,78 @@
 ---
 name: unknown_workflow_sampler_clip_vae
 type: Unknown Workflow
-frequency: 15
+frequency: 24
 level: moderate
-coverage: 0.9328
-common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [easy hiresFix]
-members: [图片生成/文生图/06.Z-Image-T-Lora文生图-NF_1996576652488491010.json, 图片生成/文生图/1953057914565103617.json, 图片生成/文生图/1953059659532988418.json, 图片生成/文生图/1953087441538322434.json, 图片生成/文生图/1953143788371906562.json, 图片生成/文生图/1953252280764141569.json, 图片生成/文生图/1953287044091023361.json, 图片生成/文生图/1953691322731429889.json, 图片生成/文生图/1953699331356459009.json, 图片生成/文生图/1953710081516994562.json, 图片生成/文生图/1954172979645181954.json, 图片生成/文生图/56.tonnie-zimage文生图_1993951157917777921.json, 图片生成/文生图/Z Image 小强模型极速出图_1993947409080401922.json, 图片生成/文生图/Z-Image 文生图_2016054204908965889.json, 图片生成/文生图/Z-Image 最强文生图，30秒出图，超高性价比_2011687215461572609.json]
+coverage: 0.885708
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/图生图/1.人物换装_2050619333541412866.json, 图片生成/图生图/20260722一致性personal_2079764596788912130.json, 图片生成/图生图/9.批量精修白底图_2050773369066401794.json, 图片生成/图生图/F.2Klein9B万物迁移_2066737707379945473.json, 图片生成/图生图/FLUX-Klein-图像编辑-10秒急速出图_2012126304631529473.json, 图片生成/图生图/FLUX.Klein-9B一致性lora单图编辑_2033155455794548737.json, 图片生成/图生图/Flux-2-Klein-9b 万物迁移_2065056521217728513.json, 图片生成/图生图/Flux2 Klein 双重增强现实_2067152624360706049.json, 图片生成/图生图/Flux2 Klein 增强现实LoRA_2020393021082181633.json, 图片生成/图生图/Flux2 Klein 增强现实LoRA_2033162072971812866.json, 图片生成/图生图/Flux2 Klein 增强现实（超还原cosplay)_2026115898070798337.json, 图片生成/图生图/Flux2 Klein9B 图像编辑工作流 加强了一致性 林耀3.6_2029755418074947585.json, 图片生成/图生图/Klein - 万物迁移_2051859267984084993.json, 图片生成/图生图/Klein - 万物迁移_2065714934046089217.json, 图片生成/图生图/Klein - 万物迁移光影_2065342945917755393.json, 图片生成/图生图/Klein_-_万物迁移重新打光_2082641469969616898.json, 图片生成/图生图/Klein_-_万物迁移重新打光_2082650177730600962.json, 图片生成/图生图/万物迁移-Flux-2Klein-9b_2064567178598371329.json, 图片生成/图生图/光影迁移-打光色调复刻_kelin打光工作流_2068244841733115905.json, 图片生成/图生图/图片换背景工作流+全节点注释_2086268740781559809.json, 图片生成/图生图/真人感换装_2105190551246172161.json, 图片生成/图生图/素描手绘风格迁移-Flux2 Klien_2065681291726643202.json, 图片生成/图生图/风格迁移-精准画风还原_Flux2 Klien_2066710064941060097.json, 图片生成/文生图/Klein - 万物迁移自用_2064658422053818370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/06.Z-Image-T-Lora文生图-NF_1996576652488491010.json、图片生成/文生图/1953057914565103617.json、图片生成/文生图/1953059659532988418.json、图片生成/文生图/1953087441538322434.json、图片生成/文生图/1953143788371906562.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/1.人物换装_2050619333541412866.json、图片生成/图生图/20260722一致性personal_2079764596788912130.json、图片生成/图生图/9.批量精修白底图_2050773369066401794.json、图片生成/图生图/F.2Klein9B万物迁移_2066737707379945473.json、图片生成/图生图/FLUX-Klein-图像编辑-10秒急速出图_2012126304631529473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 24 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 14/15 个有
-- `UNETLoader` —— 13/15 个有
-- `PathchSageAttentionKJ` —— 7/15 个有
-- `Text` —— 4/15 个有
-- `ConditioningZeroOut` —— 3/15 个有
-- `PreviewImage` —— 3/15 个有
-- `UnetLoaderGGUF` —— 2/15 个有
-- `ClipLoaderGGUF` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `Lora Loader Stack (rgthree)` —— 1/15 个有
-- `easy hiresFix` —— 1/15 个有
+- `CLIPLoader` —— 23/24 个有
+- `ConditioningZeroOut` —— 23/24 个有
+- `GetImageSize` —— 23/24 个有
+- `ImageScaleToTotalPixels` —— 23/24 个有
+- `LoadImage` —— 23/24 个有
+- `LoraLoaderModelOnly` —— 23/24 个有
+- `UNETLoader` —— 23/24 个有
+- `CR Text` —— 22/24 个有
+- `LayerUtility: ImageReel` —— 22/24 个有
+- `LayerUtility: ImageReelComposit` —— 22/24 个有
+- `PreviewImage` —— 22/24 个有
+- `Image Comparer (rgthree)` —— 19/24 个有
+- `ImageStitch` —— 15/24 个有
+- `PrimitiveFloat` —— 14/24 个有
+- `ImageScaleToMaxDimension` —— 2/24 个有
+- `AILab_QwenVL` —— 1/24 个有
+- `CR Text Concatenate` —— 1/24 个有
+- `ClothesSegment` —— 1/24 个有
+- `ColorMatchToReference` —— 1/24 个有
+- `CustomAddLabel` —— 1/24 个有
+- `HAIGC_LoadImagesFromZip` —— 1/24 个有
+- `ImageCompositeMasked` —— 1/24 个有
+- `JWFloat` —— 1/24 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/24 个有
+- `LoadDiffusionModelShared //Inspire` —— 1/24 个有
+- `LoadTextEncoderShared //Inspire` —— 1/24 个有
+- `ShowText|pysssss` —— 1/24 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 9 - 20 | 15 | 69% |
-| Prompt 约束强度(CFG) | 2 | 1 - 4 | 15 | 46% |
-| 采样算法 | euler | - | 15 | 100% |
-| 调度器 | simple | - | 15 | 93% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 9 - 20，15 个样本
-- Prompt 约束强度(CFG) 中位数 2，观测区间 1 - 4，15 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 euler，15 个样本，一致性 100%
-- 调度器 最常用 simple，15 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy hiresFix
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

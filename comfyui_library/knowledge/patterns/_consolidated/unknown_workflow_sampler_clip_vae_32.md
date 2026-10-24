@@ -1,92 +1,83 @@
 ---
 name: unknown_workflow_sampler_clip_vae_32
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: strong
-coverage: 0.6885
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXFloatToInt, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SaveVideo]
+coverage: 0.834857
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/图生视频/2067412522302529537.json, 视频生成/图生视频/2069607607387639810.json, 视频生成/文生视频/LTX2.3 In​gredients IC LORA全能参考_2070747298736463873.json, 视频生成/文生视频/LTX2.3 多图参考图生成视频-Ingredients简雨版_2067926181353189378.json]
+members: [视频生成/图生视频/Dasiwa V2+Prompt Relay精准控制表情_2055852806652874753.json, 视频生成/图生视频/Sulphur 2+Prompt Relay精准控制表情_2054898098463354882.json, 视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json, 视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json, 视频生成/文生视频/video_ltx2_3_i2v_GGUF_2030688003991015426.json, 视频生成/文生视频/video_ltx2_3_i2v_comfyUI_native_2030681922401214465.json, 视频生成/文生视频/咕咕嘎嘎？_2042845410145869826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2067412522302529537.json、视频生成/图生视频/2069607607387639810.json、视频生成/文生视频/LTX2.3 In​gredients IC LORA全能参考_2070747298736463873.json、视频生成/文生视频/LTX2.3 多图参考图生成视频-Ingredients简雨版_2067926181353189378.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Dasiwa V2+Prompt Relay精准控制表情_2055852806652874753.json、视频生成/图生视频/Sulphur 2+Prompt Relay精准控制表情_2054898098463354882.json、视频生成/文生视频/Sulphur2  文生视频基础工作流_2055614181512097793.json、视频生成/文生视频/sulphur_t2v_distilled_2051940984962985985.json、视频生成/文生视频/video_ltx2_3_i2v_GGUF_2030688003991015426.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `CreateVideo`
 - `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXFloatToInt`
 - `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
-- `LoadImage`
 - `ManualSigmas`
-- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 3/4 个有
-- `GetVideoComponents` —— 3/4 个有
-- `LTXAddVideoICLoRAGuide` —— 3/4 个有
-- `LTXICLoRALoaderModelOnly` —— 3/4 个有
-- `LTXVAudioVAELoader` —— 3/4 个有
-- `LTXVCropGuides` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `RepeatImageBatch` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `CheckpointLoaderSimple` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `SimpleCalculatorKJ` —— 2/4 个有
-- `UNETLoader` —— 2/4 个有
-- `VAELoaderKJ` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ClownSampler_Beta` —— 1/4 个有
-- `DualCLIPLoaderGGUF` —— 1/4 个有
-- `GemmaAPITextEncode` —— 1/4 个有
-- `GuiderParameters` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageBatchMultiple+` —— 1/4 个有
-- `ImageConcatFromBatch` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LTXVScheduler` —— 1/4 个有
-- `MultimodalGuider` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `PrimitiveString` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `UnetLoaderGGUFAdvanced` —— 1/4 个有
-- `easy positive` —— 1/4 个有
+- `CheckpointLoaderSimple` —— 6/7 个有
+- `LTXVAudioVAELoader` —— 6/7 个有
+- `LTXVImgToVideoInplace` —— 6/7 个有
+- `LTXVPreprocess` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `LTXAVTextEncoderLoader` —— 5/7 个有
+- `LTXVCropGuides` —— 5/7 个有
+- `LTXVLatentUpsampler` —— 5/7 个有
+- `LatentUpscaleModelLoader` —— 5/7 个有
+- `LoadImage` —— 5/7 个有
+- `PrimitiveBoolean` —— 4/7 个有
+- `ResizeImageMaskNode` —— 4/7 个有
+- `ResizeImagesByLongerEdge` —— 4/7 个有
+- `PathchSageAttentionKJ` —— 3/7 个有
+- `VAELoaderKJ` —— 3/7 个有
+- `easy getNode` —— 3/7 个有
+- `easy setNode` —— 3/7 个有
+- `GetNode` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `PromptRelaySmartEncode` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `UNETLoader` —— 2/7 个有
+- `DualCLIPLoader` —— 1/7 个有
+- `DualCLIPLoaderGGUF` —— 1/7 个有
+- `LTXVScheduler` —— 1/7 个有
+- `UnetLoaderGGUF` —— 1/7 个有
+- `VAEDecode` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 24 | 24 - 25 | 4 | 98% |
+| 宽度 | 97 | 97 - 97 | 7 | 100% |
+| 高度 | 25 | 25 - 25 | 7 | 100% |
 
 ## 常见问题
 
@@ -94,5 +85,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 25，4 个样本，取值集中（一致性 98%）
+- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）

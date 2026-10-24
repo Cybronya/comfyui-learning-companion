@@ -1,39 +1,40 @@
 ---
 name: text_to_image_video_lora_sampler_12
 type: Text To Image
-frequency: 29
+frequency: 31
 level: strong
-coverage: 0.728724
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.897323
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3+Viggle动作迁移强化版｜免提示词 数字人动作跟随超自然_2105512132791066626.json, 视频生成/图生视频/H3加Viggle免提示词动作迁移 人物视频动态强化版_2110357557851287554.json, 视频生成/图生视频/H3加Viggle免提示词动作迁移强化版，数字人视频生视频图生视频工具_2105724742098571266.json, 视频生成/图生视频/H3加Viggle免提示词动作迁移画质强化版，视频生视频图生视频工具_2105771049332858882.json, 视频生成/图生视频/H3多图生视频数字人带货 MiniMax开源版电商口播方案_2104675527998136322.json, 视频生成/图生视频/H3多图生视频数字人带货 MiniMax开源版电商口播方案_2104762447012917250.json, 视频生成/图生视频/H3多图生视频数字人带货 MiniMax开源版电商口播方案_2105440243649441794.json, 视频生成/图生视频/H3官流最强武戏 视频生成官方最佳方案稳定出片_2109173230555713537.json, 视频生成/图生视频/H3官流终极版工作流，文生视频图生视频全覆盖方案_2109435565342019586.json, 视频生成/图生视频/H3工作流最优解 图生视频高质量稳定直出方案_2110367340926955522.json, 视频生成/图生视频/H3工作流最优解 视频生成最佳方案高效出片_2105350475045498881.json, 视频生成/图生视频/H3无损融合单采V2 官方满血API画布级本地流_2110225226482151425.json, 视频生成/图生视频/H3无损融合单采V2 官方满血API画布级本地流_2110353804985196545.json, 视频生成/图生视频/H3无损融合单采官方满血API画布级本地流 视频生成优化_2109397447813455873.json, 视频生成/图生视频/H3无损融合单采官方满血API画布级本地流 视频生成优化_2109781427771498497.json, 视频生成/图生视频/H3无损融合单采方案，速度俱佳图生视频出片_2111278197022224385.json, 视频生成/图生视频/H3无损融合单采满血API，画布级本地文生视频流_2111200196137934849.json, 视频生成/图生视频/H3最强单采V2雷霆祭祀版，33步战斗特效文生视频_2111228248330952705.json, 视频生成/图生视频/H3画布级本地流无损融合 官方满血API单采方案_2110351795410259970.json, 视频生成/图生视频/H3超级打戏无损工作流｜战斗特效分镜出图图生视频_2110709132494991362.json, 视频生成/图生视频/H3高清快速出视频工作流，图生视频高效创作工具_2106126711132876801.json, 视频生成/图生视频/MiniMax H3 Digital Avatars for Video E co数字人视频带货方案_2108634054257111041.json, 视频生成/图生视频/MiniMax H3全能插件加音频设计 视频加音效一站式方案_2105420482479742977.json, 视频生成/图生视频/MiniMax H3全能插件升级｜音频设计加持视频创作_2105253049693458433.json, 视频生成/图生视频/MiniMax H3图生视频2K快速版，支持15秒长视频场景特效方案_2103610501115768833.json, 视频生成/图生视频/MiniMax H3图生视频fastH3加速 trim latent放大增强_2110250634422341633.json, 视频生成/图生视频/MiniMax H3图生视频fastH3加速 trim latent放大增强_2110365841622659073.json, 视频生成/图生视频/显存终极优化｜MINIMAX-H3视频图生视频工作流_2090556860897259521.json, 视频生成/图生视频/武打戏特化制作｜MINIMAX-H3视频生视频图生视频_2092210437902393346.json]
+members: [视频生成/文生视频/h3开源版H3数字人单人数字人图生视频口播数字人T8加速版MiniMax_2086264262372188162.json, 视频生成/文生视频/minimaxH3文生视频light2v8步lora双时钟生成工作流_2088272475523211266.json, 视频生成/文生视频/minimax三图工作流｜文生图生视频一键生成_2091309114570919938.json, 视频生成/文生视频/sage无损加速双bf16满血版MinimaxH3文生视频图生视频极致清晰_2088396155074990082.json, 视频生成/文生视频/sage无损加速｜MinimaxH3双bf16满血版文生图生视频全能_2089463275493875714.json, 视频生成/文生视频/二采高清放大minimaxH3工作流ENG_2087133080908816386.json, 视频生成/文生视频/八步极速Minimax H3开源版 短剧漫剧创意视频新加速lora_2098305874950443010.json, 视频生成/文生视频/剪枝版BF16微表情｜Minimax H3 10秒768P模板_2090578253928034305.json, 视频生成/文生视频/剪枝版BF16高动态5秒｜Minimax H3 768P视频模板_2090576848353849345.json, 视频生成/文生视频/剪枝版BF16高动态｜Minimax H3 15秒768P模板_2090575450929188866.json, 视频生成/文生视频/剪枝版BF16高动态｜Minimax H3 15秒768P视频模板_2090889192581713922.json, 视频生成/文生视频/剪枝版高动态5秒模板｜Minimax H3 BF16 768P视频生成_2090892022604455938.json, 视频生成/文生视频/加速版直出｜MiniMax_H3_BF16_Turbo_Sage_ 文生图生视频高速生成_2089458798560894978.json, 视频生成/文生视频/动作增强修复双采｜Minimax H3 b25-49参数版生成_2096314410406072321.json, 视频生成/文生视频/动作增强修复｜MiniMax H3双采bf16精度稳定出片_2096530999692849154.json, 视频生成/文生视频/动作增强修复｜MiniMax H3双采参数b25精细调校版_2096529451092889602.json, 视频生成/文生视频/动漫多参考8步加速lora Minimax H3 Dasiwa 10步出片_2094220547021426689.json, 视频生成/文生视频/动漫多参考直出1080P Minimax H3 Dasiwa文生视频_2094217735050973186.json, 视频生成/文生视频/原版BF16高动态15秒｜Minimax H3 768P视频模板_2090880996274171906.json, 视频生成/文生视频/双bf16满血版4步加速lora 1.0+sage｜MinimaxH3文生图生视频生视频_2088364861519650817.json, 视频生成/文生视频/双bf16满血版8步加速lora 1.0 sage MinimaxH3文生视频图生视频_2088389915884220418.json, 视频生成/文生视频/双bf16满血版8步加速lora 1.0+sage｜MinimaxH3文生图生视频生视频_2088362225546391554.json, 视频生成/文生视频/双bf16满血版sage无损加速｜MinimaxH3文生图生视频生视频_2088371118150340610.json, 视频生成/文生视频/双bf16满血版｜MinimaxH3 8步lora 1.0+sage加速视频生成_2089460273106210818.json, 视频生成/文生视频/双时钟8步lora极速4分钟出15秒480P｜Minimax-H3文生视频工作流_2087215608109821953.json, 视频生成/文生视频/多参考打斗视频生成｜MiniMax H3 BF16 768P lora_2095944735889383425.json, 视频生成/文生视频/多参考真实打斗生成｜MiniMax H3 Dasiwa 768P lora_2095940373528014850.json, 视频生成/文生视频/开源版8步极速｜MiniMax H3文生视频跳舞创意_2093813895210299394.json, 视频生成/文生视频/开源版文生视频8步极速｜Minimax H3跳舞短剧漫剧创意生成_2095558045421101058.json, 视频生成/文生视频/微表情10秒768P模板｜Minimax H3剪枝版BF16视频_2090893466330030082.json, 视频生成/文生视频/极致满血1K 10秒模板｜Minimax H3多参双bf16加sage加速25步_2088754648592248834.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/H3+Viggle动作迁移强化版｜免提示词 数字人动作跟随超自然_2105512132791066626.json、视频生成/图生视频/H3加Viggle免提示词动作迁移 人物视频动态强化版_2110357557851287554.json、视频生成/图生视频/H3加Viggle免提示词动作迁移强化版，数字人视频生视频图生视频工具_2105724742098571266.json、视频生成/图生视频/H3加Viggle免提示词动作迁移画质强化版，视频生视频图生视频工具_2105771049332858882.json、视频生成/图生视频/H3多图生视频数字人带货 MiniMax开源版电商口播方案_2104675527998136322.json…）
+> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（视频生成/文生视频/h3开源版H3数字人单人数字人图生视频口播数字人T8加速版MiniMax_2086264262372188162.json、视频生成/文生视频/minimaxH3文生视频light2v8步lora双时钟生成工作流_2088272475523211266.json、视频生成/文生视频/minimax三图工作流｜文生图生视频一键生成_2091309114570919938.json、视频生成/文生视频/sage无损加速双bf16满血版MinimaxH3文生视频图生视频极致清晰_2088396155074990082.json、视频生成/文生视频/sage无损加速｜MinimaxH3双bf16满血版文生图生视频全能_2089463275493875714.json…）
 
 - **类型**：Text To Image
-- **样本数**：29
+- **样本数**：31
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
+全部 31 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
@@ -43,70 +44,53 @@ source: knowledge_consolidation
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 28/29 个有
-- `PrimitiveFloat` —— 27/29 个有
-- `ResolutionSelector` —— 25/29 个有
-- `SaveImage` —— 25/29 个有
-- `VAEDecodeAudio` —— 25/29 个有
-- `ModelAttentionBackend` —— 24/29 个有
-- `MiniMaxH3ReferenceToVideo` —— 23/29 个有
-- `ModelPreviewOverrideKJ` —— 22/29 个有
-- `PrimitiveStringMultiline` —— 21/29 个有
-- `GetNode` —— 20/29 个有
-- `ManualSigmas` —— 20/29 个有
-- `SetNode` —— 20/29 个有
-- `VHS_LoadVideo` —— 20/29 个有
-- `BlockSparseAttention` —— 16/29 个有
-- `LoadAudio` —— 16/29 个有
-- `LTXVConcatAVLatent` —— 11/29 个有
-- `LTXVSeparateAVLatent` —— 11/29 个有
-- `MiniMaxH3SigmaShift` —— 11/29 个有
-- `MinimaxH3LatentUpscaler3D` —— 10/29 个有
-- `SplitSigmas` —— 6/29 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/29 个有
-- `H3SigmaRefiner` —— 4/29 个有
-- `JWImageResizeToMegapixels` —— 4/29 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/29 个有
-- `ViggleAnimateConditioning` —— 4/29 个有
-- `ViggleTextCondLoader` —— 4/29 个有
-- `PreviewImage` —— 3/29 个有
-- `CR Prompt Text` —— 2/29 个有
-- `CR Value` —— 2/29 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/29 个有
-- `MiniMaxChunkFeedForward` —— 2/29 个有
-- `MiniMaxH3ImageToVideo` —— 2/29 个有
-- `MiniMaxH3Unified` —— 2/29 个有
-- `MiniMaxLowVRAMAttention` —— 2/29 个有
-- `PreviewAny` —— 2/29 个有
-- `RH_LLMAPI_Pro_Node` —— 2/29 个有
-- `Vignette` —— 2/29 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/29 个有
+- `ResolutionSelector` —— 30/31 个有
+- `孤海注释` —— 30/31 个有
+- `CR Prompt Text` —— 29/31 个有
+- `LoadImage` —— 26/31 个有
+- `BasicScheduler` —— 24/31 个有
+- `KSamplerSelect` —— 24/31 个有
+- `LayerUtility: PurgeVRAM V2` —— 12/31 个有
+- `LoraLoaderBypassModelOnly` —— 8/31 个有
+- `MiniMaxH3DualClockSamplerT8` —— 8/31 个有
+- `ModelAttentionBackend` —— 4/31 个有
+- `LTXVConcatAVLatent` —— 3/31 个有
+- `LTXVSeparateAVLatent` —— 3/31 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/31 个有
+- `CR Text` —— 1/31 个有
+- `ImageResizeKJv2` —— 1/31 个有
+- `Int` —— 1/31 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/31 个有
+- `PT_H3ConcatAVLatent` —— 1/31 个有
+- `SaveImage` —— 1/31 个有
+- `Text Multiline` —— 1/31 个有
+- `VAEEncode` —— 1/31 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 29 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 29 | 100% |
-| 高度 | 80 | 80 - 80 | 29 | 100% |
-| 采样算法 | er_sde | - | 29 | 100% |
-| 调度器 | beta | - | 29 | 100% |
-| 采样步数 | 4 | 4 - 4 | 29 | 100% |
-| 宽度 | 80 | 80 - 80 | 29 | 100% |
+| 采样步数 | 4 | 4 - 4 | 31 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 31 | 100% |
+| 采样算法 | er_sde | - | 31 | 100% |
+| 调度器 | beta | - | 31 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 31 | 100% |
+| 宽度 | 80 | 80 - 80 | 31 | 100% |
+| 高度 | 80 | 80 - 80 | 31 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 31/29 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 31/31 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，29 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，观测区间 1 - 1，29 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，29 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，29 个样本，一致性 100%
-- 调度器 最常用 beta，29 个样本，一致性 100%
-- 采样步数 中位数 4，观测区间 4 - 4，29 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，29 个样本，取值集中（一致性 100%）
-- 高发问题（31/29 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，31 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，31 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，31 个样本，一致性 100%
+- 调度器 最常用 beta，31 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，31 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，31 个样本，取值集中（一致性 100%）
+- 高发问题（31/31 个样本）：Steps较低可能导致细节不足

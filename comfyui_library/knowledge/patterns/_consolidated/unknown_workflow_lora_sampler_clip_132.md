@@ -1,88 +1,94 @@
 ---
 name: unknown_workflow_lora_sampler_clip_132
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.73
-common_nodes: [BasicScheduler, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, INTConstant, ImageFromBatch, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXSequencer, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, MultiImageLoader, PathchSageAttentionKJ, PromptRelayEncodeTimeline, SamplerCustom, SimpleMath+, VAEDecodeTiled, VAELoaderKJ, VisualizeSigmasKJ, easy showAnything]
-problems: []
+coverage: 0.5415
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CreateVideo, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GrowMask, ImageBatch, ImageFromBatch, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, PrimitiveInt, Sam2Segmentation, SaveVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, WanAnimateToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2055789826540097537.json, 视频生成/图生视频/2056272692512387073.json, 视频生成/图生视频/2058414222178086914.json]
+members: [图片生成/图生图/wan2.2动作迁移工作流_2077008248456171521.json, 视频生成/图生视频/Wan Animate角色动作迁移_2058456295702876162.json, 视频生成/图生视频/video_wan2_2_14B_animate-移动模式_1971010678985265154.json, 视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_132
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2055789826540097537.json、视频生成/图生视频/2056272692512387073.json、视频生成/图生视频/2058414222178086914.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/wan2.2动作迁移工作流_2077008248456171521.json、视频生成/图生视频/Wan Animate角色动作迁移_2058456295702876162.json、视频生成/图生视频/video_wan2_2_14B_animate-移动模式_1971010678985265154.json、视频生成/图生视频/video_wan2_2_14B_animate_1970998862133530625.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CreateVideo`
+- `DWPreprocessor`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GrowMask`
+- `ImageBatch`
 - `ImageFromBatch`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXSequencer`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `ImageScale`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MultiImageLoader`
-- `PathchSageAttentionKJ`
-- `PromptRelayEncodeTimeline`
-- `SamplerCustom`
-- `SimpleMath+`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VisualizeSigmasKJ`
-- `easy showAnything`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `PrimitiveInt`
+- `Sam2Segmentation`
+- `SaveVideo`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 2/3 个有
-- `CreateVideo` —— 2/3 个有
-- `DualCLIPLoader` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `LTXVAudioVAEEncode` —— 2/3 个有
-- `LoadAudioUI` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `MelBandRoFormerModelLoader` —— 2/3 个有
-- `MelBandRoFormerSampler` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `SetLatentNoiseMask` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `SolidMask` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `DualCLIPLoaderGGUF` —— 1/3 个有
-- `Power Lora Loader (rgthree)` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
+- `GetNode` —— 3/4 个有
+- `GetVideoComponents` —— 3/4 个有
+- `LoadVideo` —— 3/4 个有
+- `MaskPreview` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `ForLoopClose` —— 1/4 个有
+- `ForLoopOpen` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `ImageResizeAdvanced` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `VHS_LoadVideoFFmpeg` —— 1/4 个有
+- `VHS_VideoCombine` —— 1/4 个有
+- `VHS_VideoInfoLoaded` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 361 | 361 - 361 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+| 采样步数 | 6 | 6 - 6 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 361 - 361，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（9/4 个样本）：Steps较低可能导致细节不足

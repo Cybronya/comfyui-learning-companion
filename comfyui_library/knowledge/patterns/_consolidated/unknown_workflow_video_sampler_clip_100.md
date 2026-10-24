@@ -2,58 +2,80 @@
 name: unknown_workflow_video_sampler_clip_100
 type: Unknown Workflow
 frequency: 6
-level: weak
-coverage: 0.934333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAELoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.711833
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/QwenVL视频反推提示词_文生视频_Comfyui官方流_1983421247163932674.json, 视频生成/文生视频/1954184197437059073.json, 视频生成/文生视频/1950002171104419841.json, 视频生成/文生视频/1950043620181237761.json, 视频生成/文生视频/1949879786422362114.json, 视频生成/文生视频/1949911446906912770.json]
+members: [视频生成/图生视频/LTX-2音频+图片生成视频数字人工作流_2009554904033009666.json, 视频生成/图生视频/LTX2 AI2V音图生视频数字人V1_2009218877204471809.json, 视频生成/图生视频/LTX2 AI2V高动态音图生视频数字人V1_2009236735267442690.json, 视频生成/图生视频/LTX2 KJ 加速_2012440624145899522.json, 视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json, 视频生成/图生视频/高动态音图生视频数字人LTX2 Ai2V_2009631227556405249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/QwenVL视频反推提示词_文生视频_Comfyui官方流_1983421247163932674.json、视频生成/文生视频/1954184197437059073.json、视频生成/文生视频/1950002171104419841.json、视频生成/文生视频/1950043620181237761.json、视频生成/文生视频/1949879786422362114.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX-2音频+图片生成视频数字人工作流_2009554904033009666.json、视频生成/图生视频/LTX2 AI2V音图生视频数字人V1_2009218877204471809.json、视频生成/图生视频/LTX2 AI2V高动态音图生视频数字人V1_2009236735267442690.json、视频生成/图生视频/LTX2 KJ 加速_2012440624145899522.json、视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAELoader`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PathchSageAttentionKJ`
+- `PreviewAudio`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 5/6 个有
-- `VAEDecode` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
+- `PreviewImage` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `CR Prompt Text` —— 3/6 个有
+- `ImageResizeKJv2` —— 3/6 个有
 - `JWInteger` —— 3/6 个有
-- `TeaCache` —— 2/6 个有
-- `JjkText` —— 1/6 个有
-- `MultiplePathsInput` —— 1/6 个有
-- `Qwen3_VQA` —— 1/6 个有
-- `VAEDecodeTiled` —— 1/6 个有
-- `VideoLoader` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `Int` —— 2/6 个有
+- `RH_LLMAPI_Pro_Node` —— 2/6 个有
+- `SimpleMath+` —— 2/6 个有
+- `AudioCrop` —— 1/6 个有
+- `Float` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LayerMask: MaskPreview` —— 1/6 个有
+- `RH_GetAudioDuration` —— 1/6 个有
+- `Textbox` —— 1/6 个有
+- `VRAMReserver` —— 1/6 个有
+- `easy float` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 50% |
-| Prompt 约束强度(CFG) | 11 | 8 - 20 | 6 | 59% |
-| 采样算法 | 1 | 1 - 3.5 | 6 | 36% |
-| 调度器 | euler | - | 6 | 83% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,9 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 11，观测区间 8 - 20，6 个样本
-- 采样算法 中位数 1，观测区间 1 - 3.5，6 个样本，取值分散，一致性仅 36%
-- 调度器 最常用 euler，6 个样本，一致性 83%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

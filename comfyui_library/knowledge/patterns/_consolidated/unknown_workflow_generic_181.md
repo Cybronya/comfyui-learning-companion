@@ -1,42 +1,39 @@
 ---
 name: unknown_workflow_generic_181
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.939714
-common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 1
+common_nodes: [JWStringConcat, JjkShowText, LoadImage, RH_LLMAPI_NODE, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json, 音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json, 音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json, 音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json, 音频生成/音频生成/🦖多角色对话配音（自定义音色）_2018213546974253057.json]
+members: [图片生成/图生图/N等于2专用版-中转站-零件类型计数修正版_2097600951505997826.json, 图片生成/图生图/QK精修工作流_2110543022021758977.json, 图片生成/图生图/qk主图_2074675719229231105.json, 图片生成/图生图/runninghub_组合装提示词-N大于2专用版-中转站-零件类型计数修正版_2097559055115046913.json, 图片生成/图生图/runninghub_组合装提示词-N大于2专用版_2097230126437195778.json, 图片生成/图生图/runninghub_组合装提示词-RunningHub转换版_2097172018063036417.json, 图片生成/图生图/套图_prompt-v1.0-RunningHub转换版_2095343110200053762.json, 图片生成/图生图/最新单品_deepseek_2099745074035908609.json, 图片生成/图生图/最新单品_单品4图中转站视觉颜色修正版_2097583595878699009.json, 图片生成/图生图/错误修改_2095700041741717506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_181
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 多角色配音设计_2015669228627562497.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色设计版_2015615072806113282.json、音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色设计版-最多支持8人对话_2015598123204222977.json、音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json、音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/N等于2专用版-中转站-零件类型计数修正版_2097600951505997826.json、图片生成/图生图/QK精修工作流_2110543022021758977.json、图片生成/图生图/qk主图_2074675719229231105.json、图片生成/图生图/runninghub_组合装提示词-N大于2专用版-中转站-零件类型计数修正版_2097559055115046913.json、图片生成/图生图/runninghub_组合装提示词-N大于2专用版_2097230126437195778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
+全部 10 个 workflow 都包含：
+- `JWStringConcat`
+- `JjkShowText`
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `VRAMReserver` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `LoadAudio` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `WhisperSTT` —— 2/7 个有
+- `SaveImage` —— 8/10 个有
+- `SaveText` —— 8/10 个有
+- `RH_RhartImageG25FlareImageToImage` —— 3/10 个有
+- `VRGDG_LocalLLM` —— 1/10 个有
 
 ## 典型参数
 

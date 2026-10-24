@@ -3,95 +3,55 @@ name: unknown_workflow_video_lora_sampler_461
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7945
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PT_H3ConcatAVLatent, PixaromaGetNode, PixaromaLabel, PixaromaResolution, PixaromaSetNode, PreviewImage, RHHiddenNodes, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Switch any [Crystools], Text, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, easy seed, easy showAnything]
+coverage: 0.55975
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, DisableNoise, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, SetNode, SplitSigmas, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
 problems: []
-missing: [CR Text, CR Text Concatenate, LayerUtility: PurgeVRAM V2, Switch any [Crystools], Text Multiline, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, CR Prompt Text, easy promptLine, easy seed]
-members: [图片生成/图生图/2088827135791296513.json, 视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104386310512406530.json, 视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104752656664317954.json, 视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json]
+missing: []
+members: [图片生成/图生图/wan22_SVI_Pro长视频优化版_2030979131311132674.json, 视频生成/图生视频/wan22_SVI_Pro_2005599683508666370.json, 视频生成/文生视频/【晨晨的AI应用包004】一键图生长视频SVI-PRO-15s_2012003623286349826.json, 视频生成/文生视频/大凯辰光SVI-V2.0-Pro-长视频流（非子图）_2008153457944956930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_461
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2088827135791296513.json、视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104386310512406530.json、视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104752656664317954.json、视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/wan22_SVI_Pro长视频优化版_2030979131311132674.json、视频生成/图生视频/wan22_SVI_Pro_2005599683508666370.json、视频生成/文生视频/【晨晨的AI应用包004】一键图生长视频SVI-PRO-15s_2012003623286349826.json、视频生成/文生视频/大凯辰光SVI-V2.0-Pro-长视频流（非子图）_2008153457944956930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ImageFromBatch`
+- `CLIPTextEncode`
+- `DisableNoise`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
 - `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PT_H3ConcatAVLatent`
-- `PixaromaGetNode`
-- `PixaromaLabel`
-- `PixaromaResolution`
-- `PixaromaSetNode`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `ModelSamplingSD3`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `Switch any [Crystools]`
-- `Text`
-- `UNETLoader`
+- `ScheduledCFGGuidance`
+- `SetNode`
+- `SplitSigmas`
 - `VAEDecode`
 - `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy imageListToImageBatch`
-- `easy seed`
-- `easy showAnything`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 3/4 个有
-- `CLIPTextEncode` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `CR Text Concatenate` —— 3/4 个有
-- `ConditioningZeroOut` —— 3/4 个有
-- `EmptyFlux2LatentImage` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `Flux2Scheduler` —— 3/4 个有
-- `ModelMemoryUsageFactorOverride` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `ProcessString` —— 3/4 个有
-- `ReferenceLatent` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `Text Multiline` —— 3/4 个有
-- `easy promptLine` —— 3/4 个有
-- `llama_cpp_instruct_adv` —— 3/4 个有
-- `llama_cpp_model_loader` —— 3/4 个有
-- `llama_cpp_parameters` —— 3/4 个有
-- `Images to RGB` —— 1/4 个有
-- `PrimitiveFloat` —— 1/4 个有
-- `RHLLMChatNode` —— 1/4 个有
-- `RHSettingsNode` —— 1/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
-- `easy imageSplitGrid` —— 1/4 个有
+- `DiffusionModelLoaderKJ` —— 2/4 个有
+- `PreviewImage` —— 1/4 个有
+- `SaveLatent` —— 1/4 个有
+- `Text` —— 1/4 个有
+- `UNETLoader` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
 
 ## 典型参数
 
@@ -103,4 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、LayerUtility: PurgeVRAM V2、Switch any [Crystools]、Text Multiline
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

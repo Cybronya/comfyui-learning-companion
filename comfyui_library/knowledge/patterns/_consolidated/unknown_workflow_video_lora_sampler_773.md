@@ -3,82 +3,61 @@ name: unknown_workflow_video_lora_sampler_773
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6925
-common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Text Concatenate, ComfyMathExpression, ExtractAndCombineLines, Fast Groups Bypasser (rgthree), ImageBatchMulti, JWFloatToString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaGetNode, PixaromaLabel, PixaromaSetNode, PreviewAny, PreviewImage, PrimitiveFloat, ProcessString, RHHiddenNodes, RHLLMChatNode, RHSettingsNode, ResolutionSelector, ShowText|pysssss, Text, UNETLoader, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8335
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json, 视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json]
+members: [视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json, 视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_773
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 1键4连战斗镜头+SelfLite超高清工作流_2101876665247944706.json、视频生成/图生视频/MiniMax H3 20+步战斗镜头SKILL一键4镜版工作流_2104665711493861378.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/S2V动作驱动无限长数字人（kijai版全功能）最终版_1981025809483829250.json、视频生成/图生视频/最强数字人模型S2V抢先体验KJ版_1960662179517259778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text Concatenate`
-- `ComfyMathExpression`
-- `ExtractAndCombineLines`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageBatchMulti`
-- `JWFloatToString`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PixaromaGetNode`
-- `PixaromaLabel`
-- `PixaromaSetNode`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `ProcessString`
-- `RHHiddenNodes`
-- `RHLLMChatNode`
-- `RHSettingsNode`
-- `ResolutionSelector`
-- `ShowText|pysssss`
-- `Text`
-- `UNETLoader`
-- `VAELoader`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `WanVideoAddAudioEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `ExtendIntermediateSigmas` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SelfLiftAvatarH3Sampler` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `VHS_SplitImages` —— 1/2 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/2 个有
 
 ## 典型参数
 

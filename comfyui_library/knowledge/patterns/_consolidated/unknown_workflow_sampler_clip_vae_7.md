@@ -1,74 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_vae_7
 type: Unknown Workflow
-frequency: 12
-level: weak
-coverage: 0.815833
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [easy clearCacheAll, CR Text]
-members: [图片生成/文生图/1965259047710674945.json, 图片生成/文生图/1966409848168624130.json, 图片生成/文生图/1966414867236368386.json, 图片生成/文生图/1966426602882183170.json, 图片生成/文生图/1966447914094637058.json, 图片生成/文生图/1966547887809343490.json, 图片生成/文生图/1967367971867910145.json, 图片生成/文生图/1967372243183525890.json, 图片生成/文生图/1970739735536824321.json, 图片生成/文生图/1987923112853442561.json, 图片生成/文生图/1988091761648115713.json, 图片生成/文生图/FireRed-Image-Edit 1.1 参考人物生图工作流+全节点注释_2055176231376695297.json]
+frequency: 15
+level: strong
+coverage: 0.965733
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImageResize+, KSamplerSelect, LoadImage, ModelSamplingFlux, RH_Translator, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, VAEDecode, VAEEncode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/图生图/AI站-Kontext+单图-万能改图_1958728770838491137.json, 图片生成/图生图/FLUX-KONTEXT万能改图王_1942396729872297986.json, 图片生成/图生图/Flux Kontext - LoRA 加速改图_1952543043369021442.json, 图片生成/图生图/Flux Kontext Dev｜模特手持产品海报_1938591805661175809.json, 图片生成/图生图/KonText一句话改双图，技术有限，创意无限！_1948024769821192193.json, 图片生成/图生图/Kontext Dev ｜ 产品换背景_1939712994286673922.json, 图片生成/图生图/Kontext Dev ｜ 稳定背景替换_1939558862167130114.json, 图片生成/图生图/Kontext 万能改图_1967793005967081473.json, 图片生成/图生图/Kontext 三图-万能改图_1938438669726580738.json, 图片生成/图生图/Kontext 单图-万能改图_1938422713163649026.json, 图片生成/图生图/Kontext 单图-万能改图_1944937257440825346.json, 图片生成/图生图/Kontext 单图-万能改图_1957344213035839489.json, 图片生成/图生图/Kontext 单图-万能改图_1981601811096313857.json, 图片生成/图生图/Kontext 双图-nun版_1944378870537572354.json, 图片生成/图生图/Kontext 双图-万能改图_1938432790901755906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_7
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/1965259047710674945.json、图片生成/文生图/1966409848168624130.json、图片生成/文生图/1966414867236368386.json、图片生成/文生图/1966426602882183170.json、图片生成/文生图/1966447914094637058.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/AI站-Kontext+单图-万能改图_1958728770838491137.json、图片生成/图生图/FLUX-KONTEXT万能改图王_1942396729872297986.json、图片生成/图生图/Flux Kontext - LoRA 加速改图_1952543043369021442.json、图片生成/图生图/Flux Kontext Dev｜模特手持产品海报_1938591805661175809.json、图片生成/图生图/KonText一句话改双图，技术有限，创意无限！_1948024769821192193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：15
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
+全部 15 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `ImageResize+`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingFlux`
+- `RH_Translator`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 8/12 个有
-- `LoadImage` —— 8/12 个有
-- `LoraLoaderModelOnly` —— 6/12 个有
-- `NunchakuQwenImageDiTLoader` —— 6/12 个有
-- `UNETLoader` —— 6/12 个有
-- `JjkText` —— 5/12 个有
-- `CR Text` —— 3/12 个有
-- `PrimitiveInt` —— 2/12 个有
-- `GetImageSize` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `Text` —— 1/12 个有
-- `TextEncodeQwenImageEditPlus` —— 1/12 个有
-- `easy clearCacheAll` —— 1/12 个有
+- `FluxResolutionNode` —— 12/15 个有
+- `MathExpression|pysssss` —— 12/15 个有
+- `SaveImage` —— 12/15 个有
+- `UNETLoader` —— 12/15 个有
+- `PreviewImage` —— 8/15 个有
+- `ImageConcanate` —— 6/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/15 个有
+- `RMBG` —— 6/15 个有
+- `NunchakuFluxDiTLoader` —— 4/15 个有
+- `ImpactSwitch` —— 3/15 个有
+- `Int` —— 3/15 个有
+- `NunchakuFluxLoraLoader` —— 3/15 个有
+- `SaveImagePlus` —— 3/15 个有
+- `easy cleanGpuUsed` —— 2/15 个有
+- `ImageStitch` —— 1/15 个有
+- `LayerUtility: CropByMask V2` —— 1/15 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/15 个有
+- `NunchakuTextEncoderLoaderV2` —— 1/15 个有
+- `PIP_图像联结` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 30 | 12 | 30% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 12 | 42% |
-| 采样算法 | euler | - | 12 | 92% |
-| 调度器 | normal | - | 12 | 42% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 15 | 100% |
+| 高度 | 1280 | 1280 - 1280 | 15 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 30，12 个样本，取值分散，一致性仅 30%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，12 个样本，取值分散，一致性仅 42%
-- 采样算法 最常用 euler，12 个样本，一致性 92%
-- 调度器 最常用 normal，12 个样本，一致性 42%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（11/12 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：easy clearCacheAll、CR Text
+- 宽度 中位数 1024，观测区间 1024 - 1024，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 1280，观测区间 1280 - 1280，15 个样本，取值集中（一致性 100%）

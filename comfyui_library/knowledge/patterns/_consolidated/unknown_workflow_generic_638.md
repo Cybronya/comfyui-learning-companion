@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_generic_638
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.767667
-common_nodes: [FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, WhisperSTT]
+coverage: 0.87325
+common_nodes: [Apply Whisper, FishS2MultiSpeakerTTS, FishS2TTS, FishS2VoiceCloneTTS, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json, 音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json, 音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json]
+members: [图片生成/图生图/FishAudio S2多模式切换TTS工作流_2073316148124409858.json, 音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json, 音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json, 音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_638
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json、音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json、音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FishAudio S2多模式切换TTS工作流_2073316148124409858.json、音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json、音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json、音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceDesign`
+全部 4 个 workflow 都包含：
+- `Apply Whisper`
+- `FishS2MultiSpeakerTTS`
+- `FishS2TTS`
+- `FishS2VoiceCloneTTS`
 - `LoadAudio`
-- `RH_LLMAPI_Pro_Node`
 - `SaveAudio`
-- `WhisperSTT`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `LoadImage` —— 2/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

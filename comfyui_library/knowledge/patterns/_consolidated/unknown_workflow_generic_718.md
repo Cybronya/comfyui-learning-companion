@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_generic_718
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.843
-common_nodes: [ByteDance2ReferenceNodeV2, GeminiNodeV3, LoadImage, OpenAIGPTImageNodeV2, PreviewAny, SaveImage, SaveVideo, StringConcatenate]
+frequency: 4
+level: moderate
+coverage: 0.73325
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json, comfyui-workflow-templates-json/template_seedance2_storyboard_to_video.json]
+members: [图片生成/图生图/高清放大工作流_2086423456144519169.json, 图片生成/图生图/高清放大（SeedVR2）_2014775599767752705.json, 图片生成/图生图/黑鹤-SeedVR2高清放大_2095521993763418113.json, 图片生成/图生图/黑鹤-SeedVR2高清放大_2100474974531309570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_718
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json、comfyui-workflow-templates-json/template_seedance2_storyboard_to_video.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/高清放大工作流_2086423456144519169.json、图片生成/图生图/高清放大（SeedVR2）_2014775599767752705.json、图片生成/图生图/黑鹤-SeedVR2高清放大_2095521993763418113.json、图片生成/图生图/黑鹤-SeedVR2高清放大_2100474974531309570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ByteDance2ReferenceNodeV2`
-- `GeminiNodeV3`
+全部 4 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `OpenAIGPTImageNodeV2`
-- `PreviewAny`
 - `SaveImage`
-- `SaveVideo`
-- `StringConcatenate`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageStitch` —— 1/2 个有
-- `LoadVideo` —— 1/2 个有
-- `Video Slice` —— 1/2 个有
+- `SeedVR2ExtraArgs` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 
@@ -49,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

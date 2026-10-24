@@ -1,79 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_228
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8305
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, MiniMaxChunkFeedForward, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAELoader, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 4
+level: moderate
+coverage: 0.55175
+common_nodes: [BatchImagesNode, CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 开源版 文生视频 首尾帧视频 多模态视频生成 3合1集合工作流_2084939564103331841.json, 视频生成/文生视频/MiniMax H3 海螺模型 9种SKILL视频生成工作流_2087576840822157313.json]
+members: [图片生成/图生图/Qwen Image 2.1 多像编辑【提示词增强版】｜超强一致性｜模特换装_2101804560019972097.json, 图片生成/图生图/Qwen-Image-2.1 图像编辑，最多 10 张参考图，图生图_2103753279908966401.json, 图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json, 图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_228
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 开源版 文生视频 首尾帧视频 多模态视频生成 3合1集合工作流_2084939564103331841.json、视频生成/文生视频/MiniMax H3 海螺模型 9种SKILL视频生成工作流_2087576840822157313.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 多像编辑【提示词增强版】｜超强一致性｜模特换装_2101804560019972097.json、图片生成/图生图/Qwen-Image-2.1 图像编辑，最多 10 张参考图，图生图_2103753279908966401.json、图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json、图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `BatchImagesNode`
 - `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
+- `TextGenerateLTX2Prompt`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `ComfyMathExpression` —— 1/2 个有
-- `CreateVideo` —— 1/2 个有
-- `Fast Muter (rgthree)` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `PixaromaLabel` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `ResolutionSelector` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `孤海注释` —— 2/4 个有
+- `INTConstant` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `SaveImageAdvanced` —— 1/4 个有
+- `easy seed` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
+- `忽略多组孤海` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 32.5 | 25 - 50 | 4 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1600 | 4 | 79% |
+| 高度 | 1024 | 1024 - 2400 | 4 | 56% |
 
 ## 常见问题
 
@@ -81,4 +74,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 32.5，观测区间 25 - 50，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1600，4 个样本
+- 高度 中位数 1024，观测区间 1024 - 2400，4 个样本

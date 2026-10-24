@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_956
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7
-common_nodes: [LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [DeepTranslatorTextNode, LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094568109851111426.json, 音频生成/音频生成/IndexTTS2情感迁移-参考音色工作流_2094575121431355393.json]
+members: [图片生成/图生图/杨先生的动画课-人物一致性_1981705530303488001.json, 图片生成/图生图/阿星工作流多人结合_1995306452640313346.json, 图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_956
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094568109851111426.json、音频生成/音频生成/IndexTTS2情感迁移-参考音色工作流_2094575121431355393.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/杨先生的动画课-人物一致性_1981705530303488001.json、图片生成/图生图/阿星工作流多人结合_1995306452640313346.json、图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+全部 3 个 workflow 都包含：
+- `DeepTranslatorTextNode`
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2EmotionAudioNode` —— 1/2 个有
-- `IndexTTS2EmotionTextNode` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

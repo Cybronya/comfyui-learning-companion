@@ -3,54 +3,70 @@ name: unknown_workflow_video_lora_sampler_884
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8785
-common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.963
+common_nodes: [AudioSeparation, AudioToFPS, CLIPVisionLoader, CM_FloatToInt, CR Prompt Text, DownloadAndLoadWav2VecModel, ImageResizeKJv2, JWInteger, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981250536429314050.json, 视频生成/图生视频/1979812422854807553.json]
+members: [视频生成/图生视频/吴京梗 _ 单人讲话 _ 配音口型同步 _ 动作&表情迁移 _ 采访类视频 V2_1985521110055796737.json, 视频生成/图生视频/吴京梗（预设版） _ 单人讲话 _ 配音口型同步 _ 动作&表情迁移 _ 采访类视频_1984092423439712257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_884
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981250536429314050.json、视频生成/图生视频/1979812422854807553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/吴京梗 _ 单人讲话 _ 配音口型同步 _ 动作&表情迁移 _ 采访类视频 V2_1985521110055796737.json、视频生成/图生视频/吴京梗（预设版） _ 单人讲话 _ 配音口型同步 _ 动作&表情迁移 _ 采访类视频_1984092423439712257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
+- `AudioSeparation`
+- `AudioToFPS`
+- `CLIPVisionLoader`
+- `CM_FloatToInt`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
+- `JWInteger`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PrimitiveInt`
-- `SimpleMath+`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 1/2 个有
-- `ImageBatchMultiple+` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `TextBox` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `BlockifyMask` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `DrawMaskOnImage` —— 1/2 个有
+- `DrawViTPose` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `Florence2toCoordinates` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `OnnxDetectionModelLoader` —— 1/2 个有
+- `PoseAndFaceDetection` —— 1/2 个有
+- `RepeatImageBatch` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
 
 ## 典型参数
 

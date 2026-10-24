@@ -1,43 +1,46 @@
 ---
 name: unknown_workflow_generic_52
 type: Unknown Workflow
-frequency: 13
+frequency: 20
 level: moderate
-coverage: 0.866077
-common_nodes: [AudioCrop, CR Text, LoadAudio, PreviewAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.8259
+common_nodes: [LoadImage, SaveImage, SeeThrough_GenerateDepth, SeeThrough_GenerateLayers, SeeThrough_LoadDepthModel, SeeThrough_LoadLayerDiffModel, SeeThrough_PostProcess, SeeThrough_SavePSD]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json, 音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json, 音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2015458205643575298.json, 音频生成/音频生成/qwentts-声音设计 声音克隆_2033750797955112961.json, 音频生成/音频生成/千问3TSS声音克隆_2069320475846725633.json, 音频生成/音频生成/千问3TTS声音设计语音克隆_2069311488371814401.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2014536001888198657.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2069313800293142530.json, 音频生成/音频生成/千问3TTS语音克隆-老祺-单克隆版_2097158002439704578.json, 音频生成/音频生成/千问3TTS语音克隆-音色设计-老祺_2028309603213123586.json]
+members: [图片生成/图生图/See Through-图像超级分层_2040236988468563969.json, 图片生成/图生图/SeeThrough--卡通--PSD完整分层_2039999402210762754.json, 图片生成/图生图/SeeThrough--真人--PSD完整分层_2040001077692600322.json, 图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2040012380536578050.json, 图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2052228852306464770.json, 图片生成/图生图/SeeThrough二次元卡通PSD完整分层工作流V1_2039958431506898945.json, 图片生成/图生图/SeeThrough二次元卡通PSD完整分层工作流V1_2040046165248450562.json, 图片生成/图生图/SeeThrough分层工作流_2049314933434753026.json, 图片生成/图生图/SeeThrough图像PSD完整分层工作流V1_2044008357320728578.json, 图片生成/图生图/SeeThrough图像分层_2040064434797813762.json, 图片生成/图生图/SeeThrough图像拆分_2077199511004471297.json, 图片生成/图生图/SeeThrough真人PSD完整分层工作流V1_2039976374139625473.json, 图片生成/图生图/二次元拆分分层输出PSD-SeeThrough_2040420040951996417.json, 图片生成/图生图/图像分层  PSD  SeeThrough_2040216332402171906.json, 图片生成/图生图/图像分层 -—— PSD_2051294797817757697.json, 图片生成/图生图/图像分层 -—— PSD_2068728786014789633.json, 图片生成/图生图/图像分层 PSD SeeThrough  抠图_2069610389201047553.json, 图片生成/图生图/图像分层_PSD_SeeThrough_抠图_2052600759396651009.json, 图片生成/图生图/图像分层_PSD_SeeThrough_抠图_2057499012751781889.json, 图片生成/图生图/图层拆分 SeeThrough_2040211441290055681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_52
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json、音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json、音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/See Through-图像超级分层_2040236988468563969.json、图片生成/图生图/SeeThrough--卡通--PSD完整分层_2039999402210762754.json、图片生成/图生图/SeeThrough--真人--PSD完整分层_2040001077692600322.json、图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2040012380536578050.json、图片生成/图生图/SeeThrough_二次元PSD分层、拆图-live2D_动画_游戏_2052228852306464770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `AudioCrop`
-- `CR Text`
-- `LoadAudio`
-- `PreviewAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+全部 20 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
+- `SeeThrough_GenerateDepth`
+- `SeeThrough_GenerateLayers`
+- `SeeThrough_LoadDepthModel`
+- `SeeThrough_LoadLayerDiffModel`
+- `SeeThrough_PostProcess`
+- `SeeThrough_SavePSD`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
-- `Qwen3TTSVoiceDesign` —— 11/13 个有
-- `WhisperSTT` —— 8/13 个有
-- `Label (rgthree)` —— 4/13 个有
-- `Qwen3TTSCustomVoice` —— 4/13 个有
-- `PreviewTextNode` —— 1/13 个有
+- `PreviewImage` —— 16/20 个有
+- `easy cleanGpuUsed` —— 7/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/20 个有
+- `Image Comparer (rgthree)` —— 3/20 个有
+- `InspyrenetRembg` —— 3/20 个有
+- `MaskToImage` —— 3/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/20 个有
+- `LayerUtility: PurgeVRAM` —— 1/20 个有
 
 ## 典型参数
 

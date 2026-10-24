@@ -2,65 +2,72 @@
 name: unknown_workflow_video_lora_sampler_647
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.932333
-common_nodes: [BerniniStudio, CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
-problems: []
+level: moderate
+coverage: 0.954667
+common_nodes: [CLIPLoader, CLIPTextEncode, DWPreprocessor, DepthAnythingV2Preprocessor, ImageBlend, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2081973710835240961.json, 视频生成/图生视频/2074037576872316929.json, 视频生成/文生视频/全能视频编辑-贝尔尼尼Bernini 4步加速_2075480007203446785.json]
+members: [视频生成/图生视频/WanVace快速视频动作迁移_1934797316740325377.json, 视频生成/图生视频/wan2.1 vace 动作参考视频生成_1933802082413797378.json, 视频生成/图生视频/首帧视频转绘（AI匹夫）_1956996435298410498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_647
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2081973710835240961.json、视频生成/图生视频/2074037576872316929.json、视频生成/文生视频/全能视频编辑-贝尔尼尼Bernini 4步加速_2075480007203446785.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WanVace快速视频动作迁移_1934797316740325377.json、视频生成/图生视频/wan2.1 vace 动作参考视频生成_1933802082413797378.json、视频生成/图生视频/首帧视频转绘（AI匹夫）_1956996435298410498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BerniniStudio`
 - `CLIPLoader`
-- `KSamplerAdvanced`
+- `CLIPTextEncode`
+- `DWPreprocessor`
+- `DepthAnythingV2Preprocessor`
+- `ImageBlend`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `ChinesePrompt_Mix` —— 1/3 个有
+- `ImageCrop` —— 1/3 个有
+- `ImageScaleBy` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1.5 | 3 | 80% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | 7 | 7 - 8 | 3 | 94% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 3 | 1% |
+| 采样算法 | ddim | - | 3 | 100% |
+| 调度器 | ddim_uniform | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1.5，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 采样步数 中位数 7，观测区间 7 - 8，3 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，3 个样本，取值分散，一致性仅 1%
+- 采样算法 最常用 ddim，3 个样本，一致性 100%
+- 调度器 最常用 ddim_uniform，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

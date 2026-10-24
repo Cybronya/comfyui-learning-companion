@@ -7,13 +7,13 @@ coverage: 0.71725
 common_nodes: [ComfyMathExpression, GetImageRangeFromBatch, ImageBatchExtendWithOverlap, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, ReplaceVideoLatentFrames, TrimAudioDuration, VHS_VideoCombine, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2058873230517166082.json, 视频生成/图生视频/2058901183300980738.json, 视频生成/图生视频/2059800193100505090.json, 视频生成/图生视频/2073322311234711553.json, 视频生成/图生视频/2073710624823144449.json, 视频生成/图生视频/2065330795597877250.json, 视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json, 视频生成/图生视频/2060335881759838210.json]
+members: [视频生成/图生视频/LongCat 1.5数字人动态加强稳定版V1_2058873230517166082.json, 视频生成/图生视频/LongCat 1.5数字人多图高动态稳定版V3_2058901183300980738.json, 视频生成/图生视频/LongCat 1.5数字人循环工作流_2059800193100505090.json, 视频生成/图生视频/LongCat 1.5数字人循环工作流_2073322311234711553.json, 视频生成/图生视频/LongCat 1.5数字人长视频工作流生产力版_2073710624823144449.json, 视频生成/图生视频/LongCat Avatar 1.5：8步极速生成、音频驱动超长数字人_2065330795597877250.json, 视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json, 视频生成/图生视频/很棒的LongCat 1.5数字人动态加强稳定-单次10s音频版_2060335881759838210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2058873230517166082.json、视频生成/图生视频/2058901183300980738.json、视频生成/图生视频/2059800193100505090.json、视频生成/图生视频/2073322311234711553.json、视频生成/图生视频/2073710624823144449.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LongCat 1.5数字人动态加强稳定版V1_2058873230517166082.json、视频生成/图生视频/LongCat 1.5数字人多图高动态稳定版V3_2058901183300980738.json、视频生成/图生视频/LongCat 1.5数字人循环工作流_2059800193100505090.json、视频生成/图生视频/LongCat 1.5数字人循环工作流_2073322311234711553.json、视频生成/图生视频/LongCat 1.5数字人长视频工作流生产力版_2073710624823144449.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

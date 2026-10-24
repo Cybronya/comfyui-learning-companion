@@ -3,62 +3,72 @@ name: unknown_workflow_video_upscale_lora_16
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8135
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImageSizeAndCount, H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Yuan_RTXVideoUpscaleH3, easy int]
+coverage: 0.8175
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, ImageUpscaleWithModel, LayerUtility: PurgeVRAM V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveStringMultiline, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json, 视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json, 视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json, 视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json]
+members: [视频生成/图生视频/数字人-图片-infinite 【720P+高清+声音克隆】_1958081939452342273.json, 视频生成/图生视频/数字人-文本驱动-图片+视频+声音克隆】_1989952363156918273.json, 视频生成/图生视频/最新最好的数字人infinitetalk单人_1960712411261153281.json, 音频生成/音频生成/数字人_视频_infinite【720P+高清+声音克隆】_1984533428567687169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_16
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA 三阶极致放大｜2K生成式精修_2088625693134512130.json、视频生成/文生视频/MiniMax H3 Ref2VA 二阶超清重绘｜多参考精修_2088888730617729025.json、视频生成/文生视频/MiniMax+H3+FL2VA+二阶超清放大｜首尾帧精修_2089240886684250114.json、视频生成/文生视频/MiniMax+H3+Ref2VA+三阶极致重绘｜2K多参考精修_2089240711672713217.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/数字人-图片-infinite 【720P+高清+声音克隆】_1958081939452342273.json、视频生成/图生视频/数字人-文本驱动-图片+视频+声音克隆】_1989952363156918273.json、视频生成/图生视频/最新最好的数字人infinitetalk单人_1960712411261153281.json、音频生成/音频生成/数字人_视频_infinite【720P+高清+声音克隆】_1984533428567687169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `GetImageSizeAndCount`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `ImageUpscaleWithModel`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `Yuan_RTXVideoUpscaleH3`
-- `easy int`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3HybridLoader` —— 2/4 个有
-- `MiniMaxH3ImageToVideo` —— 2/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `ImagePadForOutpaint` —— 1/4 个有
+- `Apply Whisper` —— 3/4 个有
+- `Float to Int` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `IndexTTS2Run` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `LoadWanVideoT5TextEncoder` —— 3/4 个有
+- `RH_GetAudioDuration` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `WanVideoTextEncode` —— 3/4 个有
+- `easy anythingIndexSwitch` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GetImageRangeFromBatch` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `WanVideoEncode` —— 1/4 个有
+- `WanVideoTextEncodeCached` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,42 +1,37 @@
 ---
 name: unknown_workflow_img2img
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.883
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextBox, LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage, Text, easy showAnything]
+frequency: 22
+level: moderate
+coverage: 0.712727
+common_nodes: [JjkText, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2 -内搭超强提示词skill_2087103969670811650.json, 图片生成/文生图/全能图片G2提示词优化版——轻松复刻任意图像_2057341576967450626.json]
+members: [图片生成/图生图/G-image-2+提示词优化_2088098693403734017.json, 图片生成/图生图/全能图片G2.0----低价渠道版-图生图_2068285709773004802.json, 图片生成/图生图/全能图片G2.0----低价渠道版_2067247960869654529.json, 图片生成/图生图/全能图片G2.0----低价渠道版_2108762992946008065.json, 图片生成/图生图/全能图片G2.0----低价渠道版_2110555146626355202.json, 图片生成/图生图/全能图片G2.0----低价渠道版（1图参考）_2081924087470968833.json, 图片生成/图生图/全能图片G2.0----低价渠道版（2图参考）_2080221893545779202.json, 图片生成/图生图/全能图片G2.0----低价渠道版（3图参考）_2081924053102845954.json, 图片生成/图生图/全能图片G2.0----低价渠道版（4图参考）_2081924070622449666.json, 图片生成/图生图/图片生成 四张艺术处理_2101820140408098818.json, 图片生成/图生图/图片艺术处理_2104924555071545345.json, 图片生成/图生图/图片转四种风格艺术处理_2101647725698830337.json, 图片生成/图生图/图片转成八种艺术风格化_2101684307965337601.json, 图片生成/图生图/图生九宫格分镜（G-2低价）_2080597632359157761.json, 图片生成/图生图/复古学院风 Q 版插画模板_2065234086519721986.json, 图片生成/图生图/复古学院风_Q_版插画模板_2069077679546130434.json, 图片生成/图生图/照片渲染灯光控制_2101284671916175362.json, 图片生成/图生图/电商图片双图参考 保持一致性 G2_2079568746842247170.json, 图片生成/图生图/空白工作流_2062492552896536578.json, 图片生成/图生图/空白工作流_2062927300685033473.json, 图片生成/图生图/超级无极全能图像G Image 2.0图片编辑，低价渠道_2046821959270408193.json, 图片生成/图生图/长屏单张无拼接感详情页_2070053643356819457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_img2img
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2 -内搭超强提示词skill_2087103969670811650.json、图片生成/文生图/全能图片G2提示词优化版——轻松复刻任意图像_2057341576967450626.json）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/G-image-2+提示词优化_2088098693403734017.json、图片生成/图生图/全能图片G2.0----低价渠道版-图生图_2068285709773004802.json、图片生成/图生图/全能图片G2.0----低价渠道版_2067247960869654529.json、图片生成/图生图/全能图片G2.0----低价渠道版_2108762992946008065.json、图片生成/图生图/全能图片G2.0----低价渠道版_2110555146626355202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：22
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: TextBox`
+全部 22 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `Text`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `RHImg2ImgPromptOptimizer` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `RHTxt2ImgPromptOptimizer` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 21/22 个有
+- `RHImg2ImgPromptOptimizer` —— 2/22 个有
+- `ZhangyuAPITextListEditor` —— 2/22 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/22 个有
 
 ## 典型参数
 
@@ -48,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

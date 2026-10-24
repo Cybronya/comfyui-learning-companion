@@ -2,78 +2,83 @@
 name: unknown_workflow_video_lora_sampler_23
 type: Unknown Workflow
 frequency: 28
-level: strong
-coverage: 0.985857
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.480714
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [图片生成/文生图/live动图-图生视频_起号神器_wan2.2_2092082949134053377.json, 视频生成/图生视频/1992982649104957441.json, 视频生成/图生视频/Wan2.2 极速 All-in-one｜图生视频_2089372780319035394.json, 视频生成/图生视频/2071113609022885889.json, 视频生成/图生视频/2071129553375944706.json, 视频生成/图生视频/2071500994327965698.json, 视频生成/图生视频/2072199531965542401.json, 视频生成/图生视频/2073056519012306946.json, 视频生成/图生视频/2073072648741015553.json, 视频生成/图生视频/2075260707406442498.json, 视频生成/图生视频/2079226151834316802.json, 视频生成/图生视频/2079972635341058049.json, 视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2093357480247119873.json, 视频生成/图生视频/Wan2.2+All-in-one+极速版+图生视频_2089535977193820162.json, 视频生成/图生视频/2019656477216088065.json, 视频生成/图生视频/2038320886633209857.json, 视频生成/图生视频/2039989765587607554.json, 视频生成/图生视频/2069950709994442753.json, 视频生成/图生视频/2044586130233888770.json, 视频生成/图生视频/2042866151662821378.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_1983515933761314818.json, 视频生成/图生视频/2041324315588698113.json, 视频生成/图生视频/2069791627677356033.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_2099699527749038082.json, 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_2099791658589188097.json, 视频生成/图生视频/2046033851276857346.json, 视频生成/图生视频/2062575894211948546.json, 视频生成/图生视频/2044590119671304193.json]
+members: [数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json, 数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json, 数字人/数字人/MiniMaxH3  数字人视频带货  H3多图生视频_2099428215952596994.json, 数字人/数字人/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2098017732544524289.json, 数字人/数字人/视频带货+Images+into+Videos—Digital+Avatars+Drive_2111625660065206273.json, 视频生成/图生视频/AITUDOU-MiniMax H3 打斗-双采_2095430950619537409.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill短片自用-双采_2093313656774807553.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2093313597047918594.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2094575888913485825.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+I2V+图生视频+1280分辨率加速流_2085330041017298945.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+T2V（文生视频）加速流_2085589980080070658.json, 视频生成/图生视频/Fused-MiniMax H3-战斗增强-双采_2097606528458121218.json, 视频生成/图生视频/H3 多参2采 + Qwen3.8提示词优化版_2098217190175629314.json, 视频生成/图生视频/H3 多参2采 + Qwen3.8提示词优化版_2105565512574001153.json, 视频生成/图生视频/MiniMax+H3-二采优化版_2102312716324130817.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-二优化版_2104051225640660993.json, 视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102702993295630338.json, 视频生成/图生视频/Minimax-H3动作迁移2.0  史诗强化进阶版_2102731516450263042.json, 视频生成/图生视频/测试01剧本 YZ金鱼-MiniMax H3-多参考生视频-优化版_2107313229809672193.json, 视频生成/图生视频/电商带货版 + H3 多参2采 + Qwen3.8提示词优化版_2105732568514650113.json, 视频生成/图生视频/进阶版！MiniMax H3 Ref2VA 多参生视频工作流_2102256455968710658.json, 视频生成/图生视频/金鱼-多参考生视频-电影感_2094788063007432706.json, 视频生成/文生视频/MiniMax H3 全能视频V3_2095061357325545474.json, 视频生成/文生视频/MiniMax H3-多参考7P3A2V生视频-二采优化版_2100164228442316802.json, 视频生成/文生视频/MiniMax H3-多参考7P3A2V生视频-优化版_2100173828486950913.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2094671259807338497.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2095111201637359618.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2095422044593811457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_23
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（图片生成/文生图/live动图-图生视频_起号神器_wan2.2_2092082949134053377.json、视频生成/图生视频/1992982649104957441.json、视频生成/图生视频/Wan2.2 极速 All-in-one｜图生视频_2089372780319035394.json、视频生成/图生视频/2071113609022885889.json、视频生成/图生视频/2071129553375944706.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json、数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json、数字人/数字人/MiniMaxH3  数字人视频带货  H3多图生视频_2099428215952596994.json、数字人/数字人/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2098017732544524289.json、数字人/数字人/视频带货+Images+into+Videos—Digital+Avatars+Drive_2111625660065206273.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：28
-- **可信度**：强结论
-- **平均知识覆盖**：99%
+- **可信度**：中等可信
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 28 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `CheckpointLoaderSimple`
-- `JWInteger`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `ComfyMathExpression`
+- `GetNode`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JWFloat` —— 27/28 个有
-- `MathExpression|pysssss` —— 27/28 个有
-- `LoadLatent` —— 13/28 个有
-- `VAELoader` —— 13/28 个有
-- `SaveImage` —— 11/28 个有
-- `Int` —— 2/28 个有
-- `TT_img_enc_v2` —— 2/28 个有
-- `TwoWaySwitch` —— 2/28 个有
-- `DuckHideNode` —— 1/28 个有
-- `PrimitiveBoolean` —— 1/28 个有
-- `ZML_SwitchOutput` —— 1/28 个有
+- `LoadImage` —— 27/28 个有
+- `MiniMaxH3ReferenceToVideo` —— 26/28 个有
+- `LTXVConcatAVLatent` —— 24/28 个有
+- `LTXVSeparateAVLatent` —— 24/28 个有
+- `MinimaxH3LatentUpscaler3D` —— 24/28 个有
+- `PrimitiveFloat` —— 23/28 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 22/28 个有
+- `SplitSigmas` —— 21/28 个有
+- `Text` —— 20/28 个有
+- `LoadAudio` —— 16/28 个有
+- `VHS_LoadVideo` —— 16/28 个有
+- `easy float` —— 15/28 个有
+- `忽略多组孤海` —— 15/28 个有
+- `Label (rgthree)` —— 9/28 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/28 个有
+- `JjkText` —— 6/28 个有
+- `Float` —— 5/28 个有
+- `ManualSigmas` —— 5/28 个有
+- `ModelAttentionBackend` —— 4/28 个有
+- `PreviewAny` —— 4/28 个有
+- `CR Prompt Text` —— 3/28 个有
+- `MiniMaxH3PromptEnhancerT8` —— 3/28 个有
+- `RH_Translator` —— 3/28 个有
+- `easy saveText` —— 3/28 个有
+- `easy showAnything` —— 3/28 个有
+- `MiniMaxH3ImageToVideo` —— 2/28 个有
+- `easy indexTTSForceCleanup` —— 2/28 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 1/28 个有
+- `图像缩放范围孤海` —— 1/28 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 28 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 28 | 100% |
-| 采样算法 | sa_solver | - | 28 | 100% |
-| 调度器 | beta | - | 28 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 28 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 28/28 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，28 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，28 个样本，一致性 100%
-- 调度器 最常用 beta，28 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
-- 高发问题（28/28 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

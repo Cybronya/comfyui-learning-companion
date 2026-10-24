@@ -2,73 +2,77 @@
 name: unknown_workflow_video_sampler_vae_73
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.777143
-common_nodes: [ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+level: strong
+coverage: 0.770714
+common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, PathchSageAttentionKJ, PreviewImage, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935507618146484226.json, 视频生成/图生视频/1935607588300193793.json, 视频生成/图生视频/1935586332242530306.json, 视频生成/图生视频/2055192187125682177.json, 视频生成/图生视频/1935509475614707714.json, 视频生成/图生视频/1934523459177250818.json, 视频生成/文生视频/1938855885659627522.json]
+members: [视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json, 视频生成/图生视频/LTX2.3 Prompt时间戳控制视频生成_2050810161220071425.json, 视频生成/图生视频/LTX2.3-prompt_relay_simple(单图、多图)_2055227152429273089.json, 视频生成/图生视频/LTX2.3更高的遵从度-提示词对应连续动作_2046925023830614018.json, 视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json, 视频生成/图生视频/ltx2.3_prompt_relay_kj版_2059461166333775873.json, 视频生成/图生视频/本地开源免费，漫剧运镜长镜头1_2060459576042020865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_73
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1935507618146484226.json、视频生成/图生视频/1935607588300193793.json、视频生成/图生视频/1935586332242530306.json、视频生成/图生视频/2055192187125682177.json、视频生成/图生视频/1935509475614707714.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json、视频生成/图生视频/LTX2.3 Prompt时间戳控制视频生成_2050810161220071425.json、视频生成/图生视频/LTX2.3-prompt_relay_simple(单图、多图)_2055227152429273089.json、视频生成/图生视频/LTX2.3更高的遵从度-提示词对应连续动作_2046925023830614018.json、视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `ImageConcatMulti`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `BasicScheduler`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVSeparateAVLatent`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 6/7 个有
-- `CR Text` —— 6/7 个有
 - `GetNode` —— 6/7 个有
-- `ImageResizeKJv2` —— 6/7 个有
-- `JWInteger` —— 6/7 个有
-- `MathExpression|pysssss` —— 6/7 个有
+- `LTX2SamplingPreviewOverride` —— 6/7 个有
+- `LTXVPreprocess` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
 - `SetNode` —— 6/7 个有
-- `WanVideoClipVisionEncode` —— 6/7 个有
-- `WanVideoExperimentalArgs` —— 6/7 个有
-- `WanVideoImageToVideoEncode` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoSLG` —— 6/7 个有
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `easy imageRemBg` —— 6/7 个有
-- `GetImageSizeAndCount` —— 4/7 个有
-- `ImageConcanate` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `AddLabel` —— 2/7 个有
-- `EmptyImage` —— 2/7 个有
-- `ImageResizeKJ` —— 2/7 个有
-- `easy imageScaleDownToSize` —— 2/7 个有
-- `ImageBatchMulti` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `InspyrenetRembg` —— 1/7 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/7 个有
-- `PDIMAGE_LongerSize` —— 1/7 个有
-- `WanVideoEnhanceAVideo` —— 1/7 个有
-- `WanVideoVACEEncode` —— 1/7 个有
+- `UNETLoader` —— 6/7 个有
+- `PromptRelayEncode` —— 5/7 个有
+- `LoadAudio` —— 2/7 个有
+- `PromptRelayEncodeTimeline` —— 2/7 个有
+- `AudioCrop` —— 1/7 个有
+- `INTConstant` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `LTXVAudioVAEEncode` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `MultiImageLoader` —— 1/7 个有
+- `SetLatentNoiseMask` —— 1/7 个有
+- `SolidMask` —— 1/7 个有
+- `Text` —— 1/7 个有
+- `UnetLoaderGGUF` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy ifElse` —— 1/7 个有
+- `easy mathInt` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 441 | 313 - 489 | 7 | 85% |
+| 高度 | 25 | 24 - 25 | 7 | 99% |
 
 ## 常见问题
 
@@ -76,4 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 441，观测区间 313 - 489，7 个样本，取值集中（一致性 85%）
+- 高度 中位数 25，观测区间 24 - 25，7 个样本，取值集中（一致性 99%）

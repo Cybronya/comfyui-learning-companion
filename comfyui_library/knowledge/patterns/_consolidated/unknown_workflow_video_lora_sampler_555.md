@@ -2,64 +2,61 @@
 name: unknown_workflow_video_lora_sampler_555
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.6975
-common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.6125
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
 problems: []
-missing: [Image Crop Face, CR Text, CR Text Concatenate, MathExpression|pysssss, easy int]
-members: [视频生成/文生视频/1976007633784147970.json, 视频生成/文生视频/1976487534681300993.json, 视频生成/文生视频/2073283173435588608.json, 视频生成/文生视频/lynx基础流程ID一致性文生视频_2072999523280265216.json]
+missing: []
+members: [视频生成/文生视频/video_wan2_2_14B_QwenVL-自动提示词_1981726042085826562.json, 视频生成/文生视频/video_wan2_2_14B_Smooth Mix_1980199127709552641.json, 视频生成/文生视频/video_wan2_2_14B_holocine_1984147805432414210.json, 视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_555
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/1976007633784147970.json、视频生成/文生视频/1976487534681300993.json、视频生成/文生视频/2073283173435588608.json、视频生成/文生视频/lynx基础流程ID一致性文生视频_2072999523280265216.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/video_wan2_2_14B_QwenVL-自动提示词_1981726042085826562.json、视频生成/文生视频/video_wan2_2_14B_Smooth Mix_1980199127709552641.json、视频生成/文生视频/video_wan2_2_14B_holocine_1984147805432414210.json、视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **可信度**：强结论
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `PreviewImage`
+- `CFGZeroStar`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptyHunyuanLatentVideo`
+- `GetNode`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Crop Face` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `RH_Captioner` —— 2/4 个有
-- `CM_IntToFloat` —— 1/4 个有
-- `CR Text` —— 1/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `RMBG` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `easy int` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `AILab_QwenVL` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `TextBox` —— 1/4 个有
+- `easy ifElse` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 4 | 50% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 4 | 88% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 75% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -67,4 +64,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Crop Face、CR Text、CR Text Concatenate、MathExpression|pysssss、easy int
+- 采样步数 最常用 randomize，4 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 75%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

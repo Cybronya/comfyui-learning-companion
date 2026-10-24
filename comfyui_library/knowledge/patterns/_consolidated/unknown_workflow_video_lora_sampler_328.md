@@ -3,71 +3,60 @@ name: unknown_workflow_video_lora_sampler_328
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.874714
-common_nodes: [Bjornulf_ShowJson, DWPreprocessor, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy clearCacheAll]
+coverage: 0.919143
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, JWInteger, SaveImage, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1957679362386620417.json, 视频生成/图生视频/1953648697265586178.json, 视频生成/图生视频/1961001361997500417.json, 视频生成/图生视频/1963854925186961409.json, 视频生成/图生视频/1960782180505071617.json, 视频生成/文生视频/WAN_VACE_14B + CAUSVID + 视频姿态控制 【跳舞视频流程】- 视频课程配套_1931599157772136450.json, 视频生成/文生视频/1955515292903358465.json]
+members: [视频生成/文生视频/Wan2.2 Dyno+Remix 1.0新模型超强动态文生视频（KJ版）_1975847976218308609.json, 视频生成/文生视频/Wan2.2 Dyno+Remix文生视频（KJ版）_1974792625356148738.json, 视频生成/文生视频/（灰度本地N版）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979878092309172225.json, 视频生成/文生视频/（自用）Dyno+Remix 1.0新模型文生视频（KJ版）_1975846186269675522.json, 视频生成/文生视频/（自用）Dyno+Remix文生视频（KJ版）_1974785669753081858.json, 视频生成/文生视频/（自用）KJ版节点套件视频Latent 示范工作流V1_2007518843018678273.json, 视频生成/文生视频/（自用）Wan2.2 文生视频加速版V3（进一步提升速度）_1952589120671559682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_328
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1957679362386620417.json、视频生成/图生视频/1953648697265586178.json、视频生成/图生视频/1961001361997500417.json、视频生成/图生视频/1963854925186961409.json、视频生成/图生视频/1960782180505071617.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 Dyno+Remix 1.0新模型超强动态文生视频（KJ版）_1975847976218308609.json、视频生成/文生视频/Wan2.2 Dyno+Remix文生视频（KJ版）_1974792625356148738.json、视频生成/文生视频/（灰度本地N版）Wan2.2 Smooth Mix V2高低噪模型高动态文生视频V1（KJ版）_1979878092309172225.json、视频生成/文生视频/（自用）Dyno+Remix 1.0新模型文生视频（KJ版）_1975846186269675522.json、视频生成/文生视频/（自用）Dyno+Remix文生视频（KJ版）_1974785669753081858.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Bjornulf_ShowJson`
-- `DWPreprocessor`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `JWInteger`
+- `SaveImage`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoVAELoader`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 6/7 个有
-- `easy cleanGpuUsed` —— 6/7 个有
-- `Display Int (rgthree)` —— 5/7 个有
-- `EmptyImage` —— 5/7 个有
-- `GetNode` —— 5/7 个有
-- `ImageScaleToMegapixels` —— 5/7 个有
-- `MaskToImage` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `UpscaleModelLoader` —— 5/7 个有
-- `VHS_SplitImages` —— 5/7 个有
-- `WanVideoTeaCache` —— 5/7 个有
-- `Int` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `WanVideoEasyCache` —— 2/7 个有
-- `WanVideoEnhanceAVideo` —— 2/7 个有
-- `AILab_MiniCPM_4_V` —— 1/7 个有
-- `ImagePadKJ` —— 1/7 个有
-- `WanVideoSetRadialAttention` —— 1/7 个有
-- `WanVideoTorchCompileSettings` —— 1/7 个有
+- `CR Prompt Text` —— 6/7 个有
+- `TT_img_enc` —— 5/7 个有
+- `WanVideoLoraSelect` —— 5/7 个有
+- `WanVideoTorchCompileSettings` —— 5/7 个有
+- `FastUnsharpSharpen` —— 4/7 个有
+- `LoadImage` —— 4/7 个有
+- `PrimitiveFloat` —— 4/7 个有
+- `Seed (rgthree)` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `WanVideoTextEncodeCached` —— 4/7 个有
+- `LoadWanVideoT5TextEncoder` —— 3/7 个有
+- `WanVideoTextEncode` —— 3/7 个有
+- `GetImageSizeAndCount` —— 2/7 个有
+- `SaveLatent` —— 2/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `LoadLatent` —— 1/7 个有
+- `TT_img_enc_v2` —— 1/7 个有
+- `VAEDecode` —— 1/7 个有
+- `VAEEncode` —— 1/7 个有
+- `VAELoader` —— 1/7 个有
 
 ## 典型参数
 

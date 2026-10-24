@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_526
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.966667
-common_nodes: [LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/longcat-image-edit_1998293505271300098.json, 图片生成/文生图/水墨画l图像生成V2-longcat-image-edit_2000828999762931714.json, 图片生成/文生图/👹LongCat 美团龙猫模型强势插入 文生图+单图编辑模型👹_1998975689325993986.json]
+members: [图片生成/图生图/个人形象设计 G-image2.0低价版_2050955162994397186.json, 图片生成/图生图/元素洗稿_2059844726915944450.json, 图片生成/图生图/全能图片G-2.0多图融合_2048973043321544705.json, 图片生成/图生图/全能图片G2角色生成参考模板_2054490959785799681.json, 图片生成/图生图/洗稿_2057307768008306690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_526
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/longcat-image-edit_1998293505271300098.json、图片生成/文生图/水墨画l图像生成V2-longcat-image-edit_2000828999762931714.json、图片生成/文生图/👹LongCat 美团龙猫模型强势插入 文生图+单图编辑模型👹_1998975689325993986.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/个人形象设计 G-image2.0低价版_2050955162994397186.json、图片生成/图生图/元素洗稿_2059844726915944450.json、图片生成/图生图/全能图片G-2.0多图融合_2048973043321544705.json、图片生成/图生图/全能图片G2角色生成参考模板_2054490959785799681.json、图片生成/图生图/洗稿_2057307768008306690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `LongCatImageEdit`
-- `LongCatImageModelLoader`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `LongCatImageTextToImage` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `JWStringConcat` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,77 +1,91 @@
 ---
 name: text_to_image_lora_sampler_clip_131
 type: Text To Image
-frequency: 9
+frequency: 11
 level: strong
-coverage: 0.862222
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.808091
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3 MAX智能提示词工作流｜一句话自动增强出片_2095592106181091330.json, 视频生成/文生视频/H3 MAX智能运镜工作流｜AI看图自动运镜生成_2095586803368681473.json, 视频生成/文生视频/RuningHub企业版Seedance2.0｜图生视频视频生视频一键生成_2094303698901102593.json, 视频生成/文生视频/RuningHub企业版不降智｜Seedance2.0图生视频秒出大片_2090829853393244162.json, 视频生成/文生视频/Seedance 2.5文生视频处理生成工具_2102527398846754817.json, 视频生成/文生视频/Seedance2.0 企业版图生视频 不降智不排队可传真人照_2094167174255570946.json, 视频生成/文生视频/minmax生图工作流｜多人姿势迁移视频制作_2097811139928354818.json, 视频生成/文生视频/上下文文生视频扩写2K｜MiniMax H3一句话生成工作流_2096737308723728385.json, 视频生成/文生视频/上下文竖屏极速文生｜MiniMax H3一句话短视频生成_2096738714239197185.json]
+members: [图片生成/图生图/Krea2角色四视图一键出图｜漫剧真人资产4步加速SeedVR2放大_2103036736904450049.json, 图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版 角色设定批量产出_2109007283790376962.json, 图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版 角色设定批量产出_2109012115167203329.json, 图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版 角色设定批量产出_2109065387508846593.json, 图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版_2100678526088335362.json, 图片生成/图生图/Krea2角色资产四视图一键生成4步加速版｜漫剧真人通用，图生图设定图秒出_2100523405962465281.json, 图片生成/图生图/Krea2角色资产四视图一键生成，漫剧真人素材SeedVR2高清放大4步加速版_2103174258447962113.json, 图片生成/图生图/一键转Q版V1｜人物角色萌系图生图直出转绘_2090154456955580418.json, 图片生成/图生图/一键转Q版工作流V1｜人物角色萌系图生图_2090426732053614594.json, 图片生成/图生图/角色漫剧加真人资产四视图一键生成Krea2工作流，图生图角色设计工具_2106892222200377346.json, 图片生成/图生图/角色漫剧加真人资产四视图一键生成Krea2工作流，图生图角色设计工具_2108745674354413570.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_131
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/H3 MAX智能提示词工作流｜一句话自动增强出片_2095592106181091330.json、视频生成/文生视频/H3 MAX智能运镜工作流｜AI看图自动运镜生成_2095586803368681473.json、视频生成/文生视频/RuningHub企业版Seedance2.0｜图生视频视频生视频一键生成_2094303698901102593.json、视频生成/文生视频/RuningHub企业版不降智｜Seedance2.0图生视频秒出大片_2090829853393244162.json、视频生成/文生视频/Seedance 2.5文生视频处理生成工具_2102527398846754817.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Krea2角色四视图一键出图｜漫剧真人资产4步加速SeedVR2放大_2103036736904450049.json、图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版 角色设定批量产出_2109007283790376962.json、图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版 角色设定批量产出_2109012115167203329.json、图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版 角色设定批量产出_2109065387508846593.json、图片生成/图生图/Krea2角色漫剧真人资产四视图一键生成4步加速版_2100678526088335362.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `GetNode`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `RH_MinimaxHailuoH3ContextIrText` —— 3/9 个有
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 3/9 个有
-- `RH_BytedanceSeedance25TokenTextToVideo` —— 2/9 个有
-- `RH_MinimaxHailuoH3TextToVideo` —— 2/9 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/9 个有
-- `RH_MinimaxHailuoH3MaxImageToVideo` —— 1/9 个有
-- `RH_MinimaxHailuoH3MaxTextToVideo` —— 1/9 个有
+- `孤海注释` —— 10/11 个有
+- `EmptySD3LatentImage` —— 9/11 个有
+- `Krea2EditGroundedEncode` —— 9/11 个有
+- `Krea2EditModelPatch` —— 9/11 个有
+- `SeedVR2LoadDiTModel` —— 6/11 个有
+- `SeedVR2LoadVAEModel` —— 6/11 个有
+- `SeedVR2VideoUpscaler` —— 6/11 个有
+- `Any Switch (rgthree)` —— 4/11 个有
+- `ImpactInt` —— 4/11 个有
+- `KepStringLiteral` —— 3/11 个有
+- `ConditioningZeroOut` —— 2/11 个有
+- `Image Comparer (rgthree)` —— 2/11 个有
+- `ImageScaleToTotalPixels` —— 2/11 个有
+- `MuyeTextEditOutput` —— 2/11 个有
+- `TextEncodeQwenImageEditPlus` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `easy imageConcat` —— 2/11 个有
+- `EmptyImage` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 11 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
+| 采样算法 | er_sde | - | 11 | 100% |
+| 调度器 | beta | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 80 | 80 - 80 | 11 | 100% |
+| 高度 | 80 | 80 - 80 | 11 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，11 个样本，一致性 100%
+- 调度器 最常用 beta，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 高发问题（13/11 个样本）：Steps较低可能导致细节不足

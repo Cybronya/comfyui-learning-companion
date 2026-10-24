@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_454
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, MossTTSGenerate, MossTTSModelLoader, SaveAudioMP3, Text]
+coverage: 0.714
+common_nodes: [JjkText, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Moss TTS语音克隆1.5模型_2076263094506057730.json, 音频生成/音频生成/Moss TTS语音克隆_2071776437790658562.json, 音频生成/音频生成/Moss TTS语音克隆_2076486767691255809.json, 音频生成/音频生成/moss语音克隆_2076565397675003905.json]
+members: [视频生成/图生视频/daVinci-MagiHuman 图生音频视频工作流_2039901911993815042.json, 视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频_2040446891929899010.json, 视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频工作流_2040634061848322050.json, 视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2043167196280524802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_454
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Moss TTS语音克隆1.5模型_2076263094506057730.json、音频生成/音频生成/Moss TTS语音克隆_2071776437790658562.json、音频生成/音频生成/Moss TTS语音克隆_2076486767691255809.json、音频生成/音频生成/moss语音克隆_2076565397675003905.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/daVinci-MagiHuman 图生音频视频工作流_2039901911993815042.json、视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频_2040446891929899010.json、视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频工作流_2040634061848322050.json、视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json、视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `MossTTSGenerate`
-- `MossTTSModelLoader`
-- `SaveAudioMP3`
-- `Text`
+全部 6 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
 
 ## 典型参数
 

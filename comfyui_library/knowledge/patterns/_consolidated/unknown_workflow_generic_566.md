@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_566
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.914
-common_nodes: [CR Text, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, LoadImage, RegexReplace, SaveVideo, easy promptConcat, easy showAnything]
+coverage: 0.86
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Vidu Q4 Preview 参考生主图视频_2108792411643277314.json, 视频生成/图生视频/Vidu Q4 Preview 图生主图视频_2108786096690782210.json, 视频生成/图生视频/万相3.0视频首尾帧生视频_2091815742936276993.json]
+members: [视频生成/图生视频/H3极速版工作流｜MiniMax H3 Turbo 加速出片_2099348931812618242.json, 视频生成/图生视频/Kling 2.5 Turbo图生视频工作流｜极速快档出片_2099453279041318913.json, 视频生成/图生视频/Kling_V25TurboStdImageToVideo_v2.5_2033806236075954177.json, 视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json, 视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_566
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Vidu Q4 Preview 参考生主图视频_2108792411643277314.json、视频生成/图生视频/Vidu Q4 Preview 图生主图视频_2108786096690782210.json、视频生成/图生视频/万相3.0视频首尾帧生视频_2091815742936276993.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3极速版工作流｜MiniMax H3 Turbo 加速出片_2099348931812618242.json、视频生成/图生视频/Kling 2.5 Turbo图生视频工作流｜极速快档出片_2099453279041318913.json、视频生成/图生视频/Kling_V25TurboStdImageToVideo_v2.5_2033806236075954177.json、视频生成/图生视频/MiniMax-H3-Max-Turbo 图生视频_2099323042395680770.json、视频生成/图生视频/图生视频  首尾帧  RH MiniMax-H3-Max-Turbo  极速版_2099746250517213186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RegexReplace`
 - `SaveVideo`
-- `easy promptConcat`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30ImageToVideo` —— 1/3 个有
-- `RH_ViduQ4PreviewImageToVideo` —— 1/3 个有
-- `RH_ViduQ4PreviewReferenceToVideo` —— 1/3 个有
+- `RH_MinimaxH3MaxTurboImageToVideo` —— 3/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `RH_KlingV25TurboStdImageToVideo` —— 2/5 个有
 
 ## 典型参数
 

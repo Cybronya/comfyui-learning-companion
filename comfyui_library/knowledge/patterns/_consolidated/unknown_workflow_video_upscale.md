@@ -7,13 +7,13 @@ coverage: 0.981444
 common_nodes: [ImageUpscaleWithModel, LoadImage, RHBatchImages:, RunningHub_FramePack, SeargePromptText, UpscaleModelLoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1913267908083154945.json, 视频生成/图生视频/1913429514767036417.json, 视频生成/图生视频/1912930457355517954.json, 视频生成/图生视频/2042486846139142145.json, 视频生成/图生视频/2044579336837144578.json, 视频生成/图生视频/1934513539719786498.json, 视频生成/文生视频/1913945287872970754.json, 视频生成/文生视频/1934506893593440257.json, 视频生成/文生视频/1934534010339303425.json]
+members: [视频生成/图生视频/FramePack 图生视频 lllyasviel 版本_1913267908083154945.json, 视频生成/图生视频/FramePack 图生视频｜KJ加速版_1913429514767036417.json, 视频生成/图生视频/FramePack图生视频_1912930457355517954.json, 视频生成/图生视频/FramePack图生视频_2042486846139142145.json, 视频生成/图生视频/FramePack图生视频_2044579336837144578.json, 视频生成/图生视频/【图生视频】静态图片转视频｜丝滑自然_1934513539719786498.json, 视频生成/文生视频/Framepack 工作流（高清放大版本），可调时长_1913945287872970754.json, 视频生成/文生视频/图生视频_1934506893593440257.json, 视频生成/文生视频/图生视频_1934534010339303425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1913267908083154945.json、视频生成/图生视频/1913429514767036417.json、视频生成/图生视频/1912930457355517954.json、视频生成/图生视频/2042486846139142145.json、视频生成/图生视频/2044579336837144578.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/FramePack 图生视频 lllyasviel 版本_1913267908083154945.json、视频生成/图生视频/FramePack 图生视频｜KJ加速版_1913429514767036417.json、视频生成/图生视频/FramePack图生视频_1912930457355517954.json、视频生成/图生视频/FramePack图生视频_2042486846139142145.json、视频生成/图生视频/FramePack图生视频_2044579336837144578.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9

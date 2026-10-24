@@ -1,31 +1,40 @@
 ---
 name: unknown_workflow_generic_557
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoV31FastOfficialImageToVideo, SaveVideo]
+coverage: 0.8678
+common_nodes: [ShowText|pysssss, StringFunction|pysssss, easy positive, easy saveText, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2038486995583897602.json, 视频生成/图生视频/2028703097123512321.json, 视频生成/文生视频/全能视频V3.1-fast-图生视频-官方稳定版_2046140835774861313.json]
+members: [图片生成/文生图/推理-文生图提示词-RH_1972595214646968321.json, 图片生成/文生图/推理-文生图提示词-qwen3VL_1983729157060403201.json, 数字人/数字人/剧本与分镜脚本_2093149535890661378.json, 视频生成/图生视频/推理-图生视频提示词-R H_1972214627054645249.json, 视频生成/图生视频/推理-图生视频提示词-qwen3VL_1982736072637595650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_557
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2038486995583897602.json、视频生成/图生视频/2028703097123512321.json、视频生成/文生视频/全能视频V3.1-fast-图生视频-官方稳定版_2046140835774861313.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/推理-文生图提示词-RH_1972595214646968321.json、图片生成/文生图/推理-文生图提示词-qwen3VL_1983729157060403201.json、数字人/数字人/剧本与分镜脚本_2093149535890661378.json、视频生成/图生视频/推理-图生视频提示词-R H_1972214627054645249.json、视频生成/图生视频/推理-图生视频提示词-qwen3VL_1982736072637595650.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoV31FastOfficialImageToVideo`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_LLMAPI_NODE` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `AILab_QwenVL` —— 1/5 个有
+- `Qwen3_VQA` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,57 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_197
 type: Unknown Workflow
-frequency: 3
+frequency: 7
 level: moderate
-coverage: 0.977667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.798571
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image-turbo与base模型融合文生图_2018686787765407745.json, 图片生成/文生图/Z-image-造相增强随机性-蓝色多脑盒_1999680352287326209.json, 图片生成/文生图/Z-image文生图 -多批次人物一致性_2002833348940709889.json]
+members: [图片生成/文生图/ideogram4_2083390180580483074.json, 图片生成/文生图/ideogram4_光学眼镜模特(+提示词优化+KJ)_2072942885963657217.json, 图片生成/文生图/ideogram4摇卡_光学眼镜模特(+提示词优化)_2072938272011153409.json, 图片生成/文生图/设计师专用模型Ideogram4美学大师文生图_2064893847733362689.json, 图片生成/文生图/（贞贞-图图版）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2067794610629472257.json, 图片生成/文生图/（贞贞版-新训练23500）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2068037566401703938.json, 图片生成/文生图/（贞贞版）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2067263113581391873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_197
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image-turbo与base模型融合文生图_2018686787765407745.json、图片生成/文生图/Z-image-造相增强随机性-蓝色多脑盒_1999680352287326209.json、图片生成/文生图/Z-image文生图 -多批次人物一致性_2002833348940709889.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/ideogram4_2083390180580483074.json、图片生成/文生图/ideogram4_光学眼镜模特(+提示词优化+KJ)_2072942885963657217.json、图片生成/文生图/ideogram4摇卡_光学眼镜模特(+提示词优化)_2072938272011153409.json、图片生成/文生图/设计师专用模型Ideogram4美学大师文生图_2064893847733362689.json、图片生成/文生图/（贞贞-图图版）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2067794610629472257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `ComfyNumberConvert`
+- `ConditioningZeroOut`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `CR Prompt List` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `easy int` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PreviewAny` —— 5/7 个有
+- `ResolutionSelector` —— 5/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `Ideogram4PromptBuilderKJ` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `RH_LLMAPI_Pro_Node` —— 4/7 个有
+- `easy anythingIndexSwitch` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `CustomCombo` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `AspectRatio` —— 2/7 个有
+- `CR Text` —— 2/7 个有
+- `PreviewTextNode` —— 2/7 个有
+- `RHLLMChatNode` —— 2/7 个有
+- `GetNode` —— 1/7 个有
+- `MathExpression|pysssss` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `SetNode` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 904 | 720 - 1080 | 3 | 84% |
-| 高度 | 1280 | 1280 - 1920 | 3 | 80% |
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 20 | 3 | 65% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler | - | 3 | 33% |
-| 重绘幅度 | simple | - | 3 | 33% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,11 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 904，观测区间 720 - 1080，3 个样本，取值集中（一致性 84%）
-- 高度 中位数 1280，观测区间 1280 - 1920，3 个样本
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 20，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，3 个样本，一致性 33%
-- 重绘幅度 最常用 simple，3 个样本，一致性 33%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,0 +1,130 @@
+---
+key: 图片生成/图生图/LH-DMT版本-2.生图片类-037.Z-image超级细节极致放大图生图_2016519560576372738.json
+name: LH-DMT版本-2.生图片类-037.Z-image超级细节极致放大图生图_2016519560576372738
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/LH-DMT版本-2.生图片类-037.Z-image超级细节极致放大图生图_2016519560576372738.json
+hash: 735cc92aa9cfe73e
+coverage: 0.616438
+learned_at: 2026-10-23 11:08:40
+nodes: [UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, GetNode, SetNode, Seed (rgthree), SetNode, SetNode, SetNode, SetNode, easy imageScaleToNormPixels, SetNode, SetNode, GetNode, Florence2Run, UnetLoaderGGUF, ModelSamplingAuraFlow, LoraLoaderModelOnly, CLIPLoader, VAELoader, CFGNorm, GetNode, GetNode, ImageUpscaleWithModel, ImageScaleBy, VAEEncodeTiled, VAEDecodeTiled, GetNode, easy cleanGpuUsed, SetNode, Upscale Model Loader, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, KSampler, SaveImage, easy imageColorMatch, Image Comparer (rgthree), GetNode, TTP_Tile_image_size, TTP_Image_Tile_Batch, TTP_condtobatch, TTP_CoordinateSplitter, VAEEncodeTiled, GetNode, GetNode, easy imageBatchToImageList, Constant Number, GetNode, GetNode, easy cleanGpuUsed, CLIPTextEncode, GetNode, TTP_condsetarea_merge, ConditioningAverage, GetNode, CLIPTextEncode, DownloadAndLoadFlorence2Model, SetNode, SetNode, VAEDecodeTiled, easy imageInsetCrop, GetNode, Latent Noise Injection, easy imageColorMatch, Florence2Run, KSampler, GetNode, SaveImage, GetNode, GetNode, Image Comparer (rgthree), LoadImage]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 1, "denoise": 0.6, "sampler_name": "er_sde", "scheduler": "kl_optimal", "seed": 7, "steps": 5}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 图片生成/图生图/LH-DMT版本-2.生图片类-037.Z-image超级细节极致放大图生图_2016519560576372738.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/LH-DMT版本-2.生图片类-037.Z-image超级细节极致放大图生图_2016519560576372738.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（73 个）：
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `SetNode`
+- `Seed (rgthree)`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy imageScaleToNormPixels`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Florence2Run`
+- `UnetLoaderGGUF` ★核心
+- `ModelSamplingAuraFlow`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CFGNorm`
+- `GetNode`
+- `GetNode`
+- `ImageUpscaleWithModel`
+- `ImageScaleBy`
+- `VAEEncodeTiled` ★核心
+- `VAEDecodeTiled` ★核心
+- `GetNode`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `Upscale Model Loader`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus`
+- `KSampler` ★核心
+- `SaveImage`
+- `easy imageColorMatch`
+- `Image Comparer (rgthree)`
+- `GetNode`
+- `TTP_Tile_image_size`
+- `TTP_Image_Tile_Batch`
+- `TTP_condtobatch`
+- `TTP_CoordinateSplitter`
+- `VAEEncodeTiled` ★核心
+- `GetNode`
+- `GetNode`
+- `easy imageBatchToImageList`
+- `Constant Number`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `TTP_condsetarea_merge`
+- `ConditioningAverage`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `DownloadAndLoadFlorence2Model`
+- `SetNode`
+- `SetNode`
+- `VAEDecodeTiled` ★核心
+- `easy imageInsetCrop`
+- `GetNode`
+- `Latent Noise Injection`
+- `easy imageColorMatch`
+- `Florence2Run`
+- `KSampler` ★核心
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `7`
+- `steps` = `5`
+- `cfg` = `1`
+- `sampler_name` = `er_sde`
+- `scheduler` = `kl_optimal`
+- `denoise` = `0.6`
+
+## 知识
+
+覆盖率 **62%**（45/73）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`Seed (rgthree)`、`easy imageScaleToNormPixels`、`Florence2Run`、`UnetLoaderGGUF`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`CFGNorm`、`ImageUpscaleWithModel`、`ImageScaleBy`、`VAEEncodeTiled`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`Upscale Model Loader`、`TextEncodeQwenImageEditPlus`、`KSampler`、`SaveImage`、`easy imageColorMatch`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`TTP_condtobatch`、`TTP_CoordinateSplitter`、`easy imageBatchToImageList`、`Constant Number`、`TTP_condsetarea_merge`、`ConditioningAverage`、`DownloadAndLoadFlorence2Model`、`easy imageInsetCrop`、`Latent Noise Injection`、`LoadImage`
+
+**用到的条目**：KSampler、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGNorm
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

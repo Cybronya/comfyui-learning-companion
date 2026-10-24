@@ -1,77 +1,75 @@
 ---
 name: unknown_workflow_video_upscale_lora_8
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.833833
-common_nodes: [BasicScheduler, CLIPTextEncodeFlux, ConditioningZeroOut, DownloadAndLoadGIMMVFIModel, DualCLIPLoader, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, Image Comparer (rgthree), KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, LoraLoader, LyingSigmaSampler, ModelSamplingFlux, PreviewImage, UNETLoader, UltimateSDUpscaleCustomSample, UpscaleModelLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy imageSize]
+frequency: 4
+level: moderate
+coverage: 0.65825
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), FlashVSRInitPipe, FlashVSRNodeAdv, GetNode, H3SigmaRefiner, INTConstant, KSamplerSelect, LTXVSeparateAVLatent, Label (rgthree), LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3Unified, MiniMaxH3VAEDecodeFast, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, RH_DLSS5Enhance, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_SelectImages, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale]
 problems: []
 missing: []
-members: [视频生成/图生视频/1932326595036348417.json, 视频生成/图生视频/1932439871766077442.json, 视频生成/图生视频/1939001698457473026.json, 视频生成/图生视频/1941180183246487554.json, 视频生成/图生视频/1935690347278163970.json, 视频生成/图生视频/1939032369221263361.json]
+members: [图片生成/图生图/MinimaxH3超快数字人_2109460248967860226.json, 视频生成/图生视频/MinimaxH3超快数字人_2109085639286280194.json, 视频生成/文生视频/1002海螺H3三采极致高分辨率工作流（最长20秒放大到4K）_2105901782873493506.json, 视频生成/文生视频/文戏不油—三采极致高分辨率工作流_2104527536003833858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1932326595036348417.json、视频生成/图生视频/1932439871766077442.json、视频生成/图生视频/1939001698457473026.json、视频生成/图生视频/1941180183246487554.json、视频生成/图生视频/1935690347278163970.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/MinimaxH3超快数字人_2109460248967860226.json、视频生成/图生视频/MinimaxH3超快数字人_2109085639286280194.json、视频生成/文生视频/1002海螺H3三采极致高分辨率工作流（最长20秒放大到4K）_2105901782873493506.json、视频生成/文生视频/文戏不油—三采极致高分辨率工作流_2104527536003833858.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BasicGuider`
 - `BasicScheduler`
-- `CLIPTextEncodeFlux`
+- `CLIPLoader`
+- `CR Text`
 - `ConditioningZeroOut`
-- `DownloadAndLoadGIMMVFIModel`
-- `DualCLIPLoader`
 - `Fast Groups Bypasser (rgthree)`
-- `GIMMVFI_interpolate`
-- `Image Comparer (rgthree)`
+- `Fast Muter (rgthree)`
+- `FlashVSRInitPipe`
+- `FlashVSRNodeAdv`
+- `GetNode`
+- `H3SigmaRefiner`
+- `INTConstant`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `LoraLoader`
-- `LyingSigmaSampler`
-- `ModelSamplingFlux`
+- `LTXVSeparateAVLatent`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MemoryCleaner`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3Unified`
+- `MiniMaxH3VAEDecodeFast`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PreviewImage`
+- `RH_DLSS5Enhance`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `UltimateSDUpscaleCustomSample`
-- `UpscaleModelLoader`
+- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy imageSize`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToMegapixels` —— 4/6 个有
-- `ImageSmartSharpen+` —— 4/6 个有
-- `WanVideoExperimentalArgs` —— 4/6 个有
-- `WanVideoTorchCompileSettings` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `ImageResizeKJ` —— 2/6 个有
+- `SelfLiftAvatarH3Sampler` —— 2/4 个有
+- `SelfLiftH3Sampler` —— 2/4 个有
+- `VAEDecodeAudio` —— 2/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -79,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

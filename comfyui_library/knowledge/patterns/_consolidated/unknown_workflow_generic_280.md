@@ -1,46 +1,38 @@
 ---
 name: unknown_workflow_generic_280
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.857
-common_nodes: [Any Switch (rgthree), AudioSeparation, CR Prompt Text, Fast Groups Bypasser (rgthree), Float, GetVideoComponents, LoadAudio, LoadVideo, NormalizeAudioLoudness, RH_HeyGemNode, SaveAudioMP3, SaveVideo, SoundFlow_TrimAudio, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, WujiCleaner, easy cleanGpuUsed]
+coverage: 0.565125
+common_nodes: [JjkText, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json]
+members: [图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2088508959744421889.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2096618980592152578.json, 图片生成/图生图/全能图片G-双图模式-支持PS插件_2047200668506656770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_280
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AudioSeparation`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Float`
-- `GetVideoComponents`
-- `LoadAudio`
-- `LoadVideo`
-- `NormalizeAudioLoudness`
-- `RH_HeyGemNode`
-- `SaveAudioMP3`
-- `SaveVideo`
-- `SoundFlow_TrimAudio`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `WujiCleaner`
-- `easy cleanGpuUsed`
+全部 8 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `孤海注释` —— 4/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `YK_LoadImageFromURL` —— 1/8 个有
 
 ## 典型参数
 

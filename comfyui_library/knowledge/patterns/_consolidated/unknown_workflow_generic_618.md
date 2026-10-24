@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_618
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.5
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.712
+common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
 problems: []
-missing: [TextBox|fofo]
-members: [音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json, 音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json]
+missing: []
+members: [comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json, comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_618
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json、音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json、音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json、comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `ImageCompare`
+- `LoadImage`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `TextBox|fofo` —— 1/3 个有
+- `CreateBoundingBoxes` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `BuildJsonPromptIdeogram` —— 2/4 个有
+- `Flux3ImageNode` —— 2/4 个有
+- `IdeogramEditApi` —— 1/4 个有
+- `IdeogramPreciseEditApi` —— 1/4 个有
 
 ## 典型参数
 
@@ -45,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：TextBox|fofo
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

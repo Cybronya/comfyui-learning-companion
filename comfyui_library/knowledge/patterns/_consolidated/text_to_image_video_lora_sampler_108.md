@@ -3,78 +3,70 @@ name: text_to_image_video_lora_sampler_108
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.8335
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ContextWindowsManual, EmptyLatentImage, GetImageRangeFromBatch, ImageFromBatch, JWInteger, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveStringMultiline, ResizeImageMaskNode, SamplerCustom, TensorLoopClose, TensorLoopOpen, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimate2Cache, WanAnimate2ToVideo, solarL_SaveImagesToZip]
+coverage: 0.920667
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Animate2数字人跳舞视频编辑唱歌动作迁移复刻动作无限时长，图生视频_2106915189659619329.json, 视频生成/图生视频/Animate2 数字人一体机｜图生视频跳舞唱歌 复刻动作不限时_2097551273812914177.json, 视频生成/图生视频/Animate2 数字人全活｜跳舞唱歌动作迁移复刻 无限时长_2097537467590201346.json, 视频生成/图生视频/Animate2数字人跳舞视频编辑唱歌动作迁移图生视频_2088206618096918529.json, 视频生成/图生视频/Animate2数字人跳舞视频编辑唱歌动作迁移复刻动作无限时长，图生视频_2108369397894172673.json, 视频生成/文生视频/Animate2动作迁移 动作复刻视频生成方案_2105392312758132738.json]
+members: [图片生成/图生图/H3超级加速二阶段快速文戏视频工作流 高效生成_2099913692656787457.json, 图片生成/图生图/MiniMax H3超级加速工作流｜二阶段快速文戏视频生成_2097430777486204930.json, 图片生成/图生图/二阶段快速文戏｜MiniMax H3超级加速，热门IP视频快出_2099923443507617794.json, 视频生成/图生视频/8步去油双时钟参考生视频V2｜Lightx2v正式版Minimax图生视频_2088160534666502145.json, 视频生成/图生视频/动态最强单采生成｜Dasiwa-MiniMax H3参考生视频_2095562835513405441.json, 视频生成/图生视频/参考生视频开源版｜Minimax-H3短剧漫剧角色表演_2094781908717756417.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_108
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/Animate2数字人跳舞视频编辑唱歌动作迁移复刻动作无限时长，图生视频_2106915189659619329.json、视频生成/图生视频/Animate2 数字人一体机｜图生视频跳舞唱歌 复刻动作不限时_2097551273812914177.json、视频生成/图生视频/Animate2 数字人全活｜跳舞唱歌动作迁移复刻 无限时长_2097537467590201346.json、视频生成/图生视频/Animate2数字人跳舞视频编辑唱歌动作迁移图生视频_2088206618096918529.json、视频生成/图生视频/Animate2数字人跳舞视频编辑唱歌动作迁移复刻动作无限时长，图生视频_2108369397894172673.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/H3超级加速二阶段快速文戏视频工作流 高效生成_2099913692656787457.json、图片生成/图生图/MiniMax H3超级加速工作流｜二阶段快速文戏视频生成_2097430777486204930.json、图片生成/图生图/二阶段快速文戏｜MiniMax H3超级加速，热门IP视频快出_2099923443507617794.json、视频生成/图生视频/8步去油双时钟参考生视频V2｜Lightx2v正式版Minimax图生视频_2088160534666502145.json、视频生成/图生视频/动态最强单采生成｜Dasiwa-MiniMax H3参考生视频_2095562835513405441.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `ContextWindowsManual`
 - `EmptyLatentImage`
-- `GetImageRangeFromBatch`
-- `ImageFromBatch`
-- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
-- `ResizeImageMaskNode`
-- `SamplerCustom`
-- `TensorLoopClose`
-- `TensorLoopOpen`
-- `TrimVideoLatent`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanAnimate2Cache`
-- `WanAnimate2ToVideo`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 5/6 个有
-- `GetImageSize` —— 5/6 个有
-- `GetImageSizeAndCount` —— 5/6 个有
-- `ImageConcatMulti` —— 5/6 个有
-- `ImageResizeKJv2` —— 5/6 个有
-- `PrimitiveBoolean` —— 5/6 个有
-- `easy int` —— 5/6 个有
-- `easy showAnything` —— 5/6 个有
-- `孤海注释` —— 5/6 个有
-- `GetNode` —— 4/6 个有
-- `SaveImage` —— 3/6 个有
-- `EmptyImage` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `ShowAnything|Mie` —— 1/6 个有
+- `SolAttnMiniMax` —— 4/6 个有
+- `CFGGuider` —— 3/6 个有
+- `ConcatTextOfUtils` —— 3/6 个有
+- `CreateVideo` —— 3/6 个有
+- `GetVideoComponents` —— 3/6 个有
+- `LTXVConditioning` —— 3/6 个有
+- `LTXVLatentUpsampler` —— 3/6 个有
+- `LatentUpscaleModelLoader` —— 3/6 个有
+- `MiniMaxH3OutputTrimT8` —— 3/6 个有
+- `MiniMaxH3SolEngineDraftToLTXT8Advanced` —— 3/6 个有
+- `MiniMaxH3SolEngineLTXIdentityRefinerSetupT8Advanced` —— 3/6 个有
+- `MiniMaxH3SolEngineTAEHVDecodeT8Advanced` —— 3/6 个有
+- `MiniMaxH3SolEngineTAEHVLoaderT8Advanced` —— 3/6 个有
+- `SaveVideo` —— 3/6 个有
+- `VAEEncode` —— 3/6 个有
+- `SaveImage` —— 2/6 个有
 
 ## 典型参数
 

@@ -1,88 +1,70 @@
 ---
 name: unknown_workflow_sampler_unet_vae_106
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: strong
-coverage: 0.601714
-common_nodes: [Any Switch (rgthree), CLIPLoader, CR Prompt Text, CR Text Concatenate, EmptyLatentImage, KSampler, LoadImage, PathchSageAttentionKJ, PixaromaGroupSwitch, PixaromaLabel, QwenImage21Cache, QwenPERewriteT8, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text Concatenate, Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2]
-members: [图片生成/反推提示词/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2103948729811300354.json, 图片生成/反推提示词/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json, 图片生成/图生图/2103948614040113153.json, 图片生成/图生图/2103948729811300354.json, 图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108147300043419649.json, 图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108160778015698945.json, 图片生成/文生图/Qwen Image 2.1 海报生成专属工作流_2107142517820051458.json]
+coverage: 0.8072
+common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
+missing: []
+members: [音频生成/音频生成/Minimax_music_3 歌曲生成工作流_2089703825241366530.json, 音频生成/音频生成/Munimax+Music+_2095313021102026754.json, 音频生成/音频生成/MusicCreation(音乐创作)-MinimaxMusic_2109862183365599233.json, 音频生成/音频生成/audio_minimax_music_3_2088057881949196289.json, 音频生成/音频生成/audio_minimax_music_3_2088165410591035394.json, 音频生成/音频生成/audio_minimax_music_3_2089996070670655489.json, 音频生成/音频生成/minimax-music-3_2088169557298077698.json, 音频生成/音频生成/minimax音乐生成_2090253540622168065.json, 音频生成/音频生成/格式化音乐生成MiniMax-music3_2092316113559441410.json, 音频生成/音频生成/音乐生成器：minimax_music_3音乐生成_2092150851132542977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_106
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2103948729811300354.json、图片生成/反推提示词/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json、图片生成/图生图/2103948614040113153.json、图片生成/图生图/2103948729811300354.json、图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108147300043419649.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Minimax_music_3 歌曲生成工作流_2089703825241366530.json、音频生成/音频生成/Munimax+Music+_2095313021102026754.json、音频生成/音频生成/MusicCreation(音乐创作)-MinimaxMusic_2109862183365599233.json、音频生成/音频生成/audio_minimax_music_3_2088057881949196289.json、音频生成/音频生成/audio_minimax_music_3_2088165410591035394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Prompt Text`
-- `CR Text Concatenate`
-- `EmptyLatentImage`
+- `ConditioningZeroOut`
+- `EmptyMiniMaxMusic3LatentAudio`
 - `KSampler`
-- `LoadImage`
-- `PathchSageAttentionKJ`
-- `PixaromaGroupSwitch`
-- `PixaromaLabel`
-- `QwenImage21Cache`
-- `QwenPERewriteT8`
-- `SaveImage`
-- `SaveImageAdvanced`
-- `TextEncodeQwenImage21`
+- `MiniMaxMusic3TextEncode`
+- `SaveAudioAdvanced`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Bypasser (rgthree)` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `Mute / Bypass Repeater (rgthree)` —— 6/7 个有
-- `GetNode` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `ShowText|pysssss` —— 5/7 个有
-- `Fast Groups Muter (rgthree)` —— 4/7 个有
-- `ModelAttentionBackend` —— 3/7 个有
-- `PixaromaResolution` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `VRAM_Debug` —— 1/7 个有
+- `SeedNode` —— 9/10 个有
+- `ComfySwitchNode` —— 8/10 个有
+- `VAEDecodeAudioTiled` —— 8/10 个有
+- `PrimitiveFloat` —— 3/10 个有
+- `JjkText` —— 2/10 个有
+- `FloatConstant` —— 1/10 个有
+- `MuyeTextEditOutput` —— 1/10 个有
+- `Text Multiline` —— 1/10 个有
+- `Textbox` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 40 | 8 - 40 | 7 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 7 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 7 | 100% |
+| 采样步数 | 30 | 30 - 30 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 10/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 8 - 40，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，7 个样本，取值集中（一致性 100%）
-- 高发问题（6/7 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、Fast Bypasser (rgthree)、Mute / Bypass Repeater (rgthree)、CR Prompt Text、LayerUtility: ImageScaleByAspectRatio V2
+- 采样步数 中位数 30，观测区间 30 - 30，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：发现KSampler但没有VAEDecode

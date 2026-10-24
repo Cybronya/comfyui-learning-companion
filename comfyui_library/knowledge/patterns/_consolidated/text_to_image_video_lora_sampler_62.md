@@ -3,72 +3,91 @@ name: text_to_image_video_lora_sampler_62
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.881727
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLTXVLatentVideo, EmptyLatentImage, INTConstant, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LoraLoaderModelOnly, LowVRAMCheckpointLoader, ManualSigmas, RH_Captioner, RandomNoise, SamplerCustomAdvanced, StringReplace, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.790636
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/3分镜图生视频｜image2+LTX-MSR多参运镜，出片更有戏_2099909158635139074.json, 视频生成/图生视频/3分镜多参图生视频｜image2+LTX-MSR组合生成_2095484514092015618.json, 视频生成/图生视频/Image2加LTX多参数三分镜图生视频 多角色分镜创作_2099916907792130050.json, 视频生成/图生视频/LTX-MSR多参3分镜图生视频image2_2087478149268459522.json, 视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3 视频运镜_2089290894364205058.json, 视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3图生视频生成_2093239106930307073.json, 视频生成/图生视频/Ltx2.3 Licon-MSR 长镜头版本｜图生视频电影级运镜_2096822173271945218.json, 视频生成/图生视频/Ltx2.3 Licon-MSR长镜头版图生视频处理工作流_2101364005368582146.json, 视频生成/图生视频/image2+LTX-MSR多参3分镜｜图生视频工作流_2095207789642731522.json, 视频生成/图生视频/image2+LTX-MSR多参三分镜｜图生视频连续衔接直出_2091245168753201153.json, 视频生成/图生视频/图生视频长镜头利器｜Ltx2.3 Licon-MSR长镜头版本_2101120778602373122.json]
+members: [视频生成/图生视频/Lightx2v+8步加速官模｜双模型双采样单图自动反推提词_2089395917622439937.json, 视频生成/图生视频/MINIMAX-H3文戏利器｜多图参考生视频手动版API调用_2105106295446663170.json, 视频生成/图生视频/MinimaxH3双采样音频驱动数字人单人版V1.0｜图生视频数字人_2090068073612144642.json, 视频生成/图生视频/多图参考角色一致｜MINIMAX-H3图生视频视频生视频直出_2093757341844983809.json, 视频生成/图生视频/文戏多图参考生视频｜MINIMAX-H3开源手动版_2090555558922383362.json, 视频生成/图生视频/文戏多图参考生视频｜MINIMAX-H3开源手动版_2095937261144731649.json, 视频生成/文生视频/15秒直出高清分辨率Mini Max H3漫剧工作流文生视频图生视频_2088391498671935489.json, 视频生成/文生视频/Minimax H3双模二采｜文生视频图生视频视频生视频全能出片_2088728994442203137.json, 视频生成/文生视频/二采重绘V2｜H3海螺视频画质增强高清直出_2090143662247333890.json, 视频生成/文生视频/双模二采玩法｜Minimax H3文生图生视频再采样_2089071865905115138.json, 视频生成/文生视频/海螺H3二采重绘V2｜文生视频其它视频处理图生视频_2090420618834563073.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_62
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/3分镜图生视频｜image2+LTX-MSR多参运镜，出片更有戏_2099909158635139074.json、视频生成/图生视频/3分镜多参图生视频｜image2+LTX-MSR组合生成_2095484514092015618.json、视频生成/图生视频/Image2加LTX多参数三分镜图生视频 多角色分镜创作_2099916907792130050.json、视频生成/图生视频/LTX-MSR多参3分镜图生视频image2_2087478149268459522.json、视频生成/图生视频/Licon-MSR长镜头版｜Ltx2.3 视频运镜_2089290894364205058.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Lightx2v+8步加速官模｜双模型双采样单图自动反推提词_2089395917622439937.json、视频生成/图生视频/MINIMAX-H3文戏利器｜多图参考生视频手动版API调用_2105106295446663170.json、视频生成/图生视频/MinimaxH3双采样音频驱动数字人单人版V1.0｜图生视频数字人_2090068073612144642.json、视频生成/图生视频/多图参考角色一致｜MINIMAX-H3图生视频视频生视频直出_2093757341844983809.json、视频生成/图生视频/文戏多图参考生视频｜MINIMAX-H3开源手动版_2090555558922383362.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `CFGGuider`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `INTConstant`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
-- `RH_Captioner`
+- `MiniMaxH3ReferenceToVideo`
+- `PT_H3ConcatAVLatent`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `StringReplace`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 6/11 个有
-- `RH_RhartImageG2ImageToImage` —— 6/11 个有
-- `TextConcatenate_UTK` —— 6/11 个有
-- `easy imageSplitGrid` —— 6/11 个有
-- `easy indexAnything` —— 6/11 个有
-- `GoogleTranslator` —— 5/11 个有
-- `ImageConcatMulti` —— 5/11 个有
-- `SaveImage` —— 2/11 个有
+- `LoadAudio` —— 10/11 个有
+- `PrimitiveStringMultiline` —— 10/11 个有
+- `VAEDecodeAudio` —— 10/11 个有
+- `INTConstant` —— 9/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/11 个有
+- `ModelAttentionBackend` —— 7/11 个有
+- `easy clearCacheAll` —— 7/11 个有
+- `LoraLoaderBypassModelOnly` —— 6/11 个有
+- `AudioCrop` —— 5/11 个有
+- `ExtendIntermediateSigmas` —— 5/11 个有
+- `GetNode` —— 5/11 个有
+- `H3SigmaRefiner` —— 5/11 个有
+- `SetNode` —— 5/11 个有
+- `StringFunction|pysssss` —— 5/11 个有
+- `easy showAnything` —— 5/11 个有
+- `CreateVideo` —— 4/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
+- `MiniMaxH3AVDecodeT8` —— 4/11 个有
+- `RHLLMChatNode` —— 4/11 个有
+- `VHS_LoadVideo` —— 4/11 个有
+- `CR Text` —— 3/11 个有
+- `CR Text Concatenate` —— 2/11 个有
+- `EasyCache` —— 2/11 个有
+- `FloatConstant` —— 2/11 个有
+- `GetImageRangeFromBatch` —— 2/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `PurgeVRAM_UTK` —— 2/11 个有
+- `ResizeShortestToNode` —— 2/11 个有
+- `CR Prompt Text` —— 1/11 个有
+- `FastGroupsBypassSwitch` —— 1/11 个有
+- `PreviewAudio` —— 1/11 个有
+- `RH_LLMAPI_Pro_Node` —— 1/11 个有
+- `SigmasGraph` —— 1/11 个有
+- `SoundFlow_GetLength` —— 1/11 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/11 个有
+- `easy promptConcat` —— 1/11 个有
+- `忽略多组孤海` —— 1/11 个有
 
 ## 典型参数
 

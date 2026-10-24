@@ -1,46 +1,41 @@
 ---
 name: unknown_workflow_video_sampler_10
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.938
-common_nodes: [CLIPLoader, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, ImageResizeKJ, LoadImage, VHS_VideoCombine]
+coverage: 0.984833
+common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RunningHub_TurboDiffusion_TurboWan_Loader, RunningHub_TurboDiffusion_TurboWan_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1844070499650539521.json, 视频生成/图生视频/1844805165072175106.json, 视频生成/图生视频/1836407132143992833.json, 视频生成/图生视频/1977986107558219777.json, 视频生成/图生视频/1888124057349718017.json]
+members: [视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json, 视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json, 视频生成/图生视频/Wan 图生视频_2007995270973366274.json, 视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json, 视频生成/图生视频/图生视频-48G 运动视频效果较好 目前较好的动态视频生成_2025435133624459265.json, 视频生成/图生视频/🦖TurboWan图生视频_2005914063492313090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1844070499650539521.json、视频生成/图生视频/1844805165072175106.json、视频生成/图生视频/1836407132143992833.json、视频生成/图生视频/1977986107558219777.json、视频生成/图生视频/1888124057349718017.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json、视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json、视频生成/图生视频/Wan 图生视频_2007995270973366274.json、视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json、视频生成/图生视频/图生视频-48G 运动视频效果较好 目前较好的动态视频生成_2025435133624459265.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CogVideoDecode`
-- `CogVideoImageEncode`
-- `CogVideoSampler`
-- `CogVideoTextEncode`
-- `DownloadAndLoadCogVideoModel`
-- `ImageResizeKJ`
+全部 6 个 workflow 都包含：
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `MathExpression|pysssss`
+- `RunningHub_TurboDiffusion_TurboWan_Loader`
+- `RunningHub_TurboDiffusion_TurboWan_Sampler`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 4/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `RIFE VFI` —— 2/5 个有
-- `VideoCombine_Adv` —— 2/5 个有
-- `ImageResizeAdvanced` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `ShowAnything|Mie` —— 5/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `Int` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_sampler_44
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub OmniWeaving Loader, SaveVideo]
+frequency: 4
+level: moderate
+coverage: 0.946
+common_nodes: [LoadAudio, NTCosyVoiceCrossLingualSampler, NTCosyVoiceInstruct2Sampler, PreviewAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/2042127554609422338.json, 视频生成/图生视频/2042119826201649153.json]
+members: [音频生成/音频生成/CosyVoice2TTS文字转语音_1927622394104406017.json, 音频生成/音频生成/徐红_最强声音克隆 工作流【CosyVoice2】_1945699181946392578.json, 音频生成/音频生成/最强声音克隆 工作流【CosyVoice2】_1895784425160900609.json, 音频生成/音频生成/语音克隆_1911588798848008193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_44
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2042127554609422338.json、视频生成/图生视频/2042119826201649153.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2TTS文字转语音_1927622394104406017.json、音频生成/音频生成/徐红_最强声音克隆 工作流【CosyVoice2】_1945699181946392578.json、音频生成/音频生成/最强声音克隆 工作流【CosyVoice2】_1895784425160900609.json、音频生成/音频生成/语音克隆_1911588798848008193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LoadImage`
-- `RunningHub OmniWeaving Loader`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `NTCosyVoiceCrossLingualSampler`
+- `NTCosyVoiceInstruct2Sampler`
+- `PreviewAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(I2V)` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(TIV2V)` —— 1/2 个有
+- `NTCosyVoiceZeroShotSampler` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
 
 ## 典型参数
 
@@ -44,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

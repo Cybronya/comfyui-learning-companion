@@ -3,62 +3,79 @@ name: unknown_workflow_video_lora_sampler_807
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8665
-common_nodes: [CLIPVisionLoader, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SaveImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int]
+coverage: 0.655
+common_nodes: [AdaptiveWanVideoAnimateEmbeds, CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Muter (rgthree), Flux2Scheduler, GetImageSize, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, RandomNoise, ReferenceLatent, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, SaveImage, SetNode, Text, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1935274607635267585.json, 视频生成/图生视频/1935260517701177345.json]
+members: [视频生成/图生视频/Wan2.2AnimateV4优化版_2027375031759671298.json, 视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_807
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1935274607635267585.json、视频生成/图生视频/1935260517701177345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2AnimateV4优化版_2027375031759671298.json、视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AdaptiveWanVideoAnimateEmbeds`
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `Fast Bypasser (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Muter (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SDPoseOODLoader`
+- `SDPoseOODProcessor`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy int`
+- `YOLOModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FILM VFI` —— 1/2 个有
-- `Image Aspect Ratio` —— 1/2 个有
-- `ImageFromBatch+` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Logic Boolean` —— 1/2 个有
-- `Number to Float` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `DuckHideNode` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,94 +1,87 @@
 ---
 name: text_to_image_upscale_lora_sampler_50
 type: Text To Image
-frequency: 2
+frequency: 5
 level: weak
-coverage: 0.7475
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, KSamplerSelect, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
-problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, easy imageBatchToImageList]
-members: [图片生成/文生图/1959285997471215617.json, 图片生成/文生图/1960606308279943169.json]
+coverage: 0.8086
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FastFilmGrain, Image Comparer (rgthree), ImageCASharpening+, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, PhotoShakeNode, PreviewAny, PreviewImage, PrimitiveStringMultiline, ResolutionSelector, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowAnything|Mie, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/krea2 角色资产+胶片颗粒+SEEDVR2放大_2112375027357282305.json, 图片生成/文生图/krea2全能角色资产制作｜动漫写实文生图一站搞定_2107647533790089217.json, 图片生成/文生图/krea2全能角色资产制作｜动漫写实文生图一站搞定_2111862337148899330.json, 图片生成/文生图/全能角色资产制作Krea2工作流，动漫角色文生图写实风格处理工具_2107888627882745857.json, 图片生成/文生图/全能角色资产制作【krea2】_2107465584882569218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_50
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1959285997471215617.json、图片生成/文生图/1960606308279943169.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/krea2 角色资产+胶片颗粒+SEEDVR2放大_2112375027357282305.json、图片生成/文生图/krea2全能角色资产制作｜动漫写实文生图一站搞定_2107647533790089217.json、图片生成/文生图/krea2全能角色资产制作｜动漫写实文生图一站搞定_2111862337148899330.json、图片生成/文生图/全能角色资产制作Krea2工作流，动漫角色文生图写实风格处理工具_2107888627882745857.json、图片生成/文生图/全能角色资产制作【krea2】_2107465584882569218.json）
 
 - **类型**：Text To Image
-- **样本数**：2
+- **样本数**：5
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FluxGuidance`
+- `Fast Groups Bypasser (rgthree)`
+- `FastFilmGrain`
 - `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageResizeKJ`
+- `ImageCASharpening+`
 - `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
-- `LoraLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `PhotoShakeNode`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `ShowAnything|Mie`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LatentUpscaleBy` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `JjkText` —— 3/5 个有
+- `solarL_SaveImagesToZip` —— 3/5 个有
+- `孤海注释` —— 3/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.9 | - | 2 | 89% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 1280 | - | 2 | 100% |
-| 采样步数 | 25 | - | 2 | 80% |
-| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
-| 采样算法 | dpmpp_2m | - | 2 | 100% |
-| 调度器 | karras | - | 2 | 100% |
-| 重绘幅度 | 0.75 | - | 2 | 67% |
+| 采样步数 | 4 | 4 - 8 | 5 | 65% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 5 | 45% |
+| 采样算法 | er_sde | - | 5 | 60% |
+| 调度器 | beta | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 1080 | 5 | 0% |
+| 高度 | 80 | 80 - 1920 | 5 | 0% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，2 个样本，一致性 100%
-- 调度器 最常用 karras，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.75，样本不足，未给区间，2 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions、LayerUtility: LoadJoyCaptionBeta1Model、easy imageBatchToImageList
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，5 个样本，取值分散，一致性仅 45%
+- 采样算法 最常用 er_sde，5 个样本，一致性 60%
+- 调度器 最常用 beta，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 1080，5 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1920，5 个样本，取值分散，一致性仅 0%
+- 高发问题（8/5 个样本）：Steps较低可能导致细节不足

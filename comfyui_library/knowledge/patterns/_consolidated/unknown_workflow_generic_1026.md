@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_1026
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.667
-common_nodes: [LoadImage, NovelTextStructureNode, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.972333
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/小说多角色+旁白自动配音_1935603185300209665.json, 音频生成/音频生成/小说多角色配音结构化文本（搭配IndexTTS Pro使用）_1933137762927161346.json]
+members: [视频生成/图生视频/Seedance2.0全能参考视频_2049369386825293826.json, 视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json, 视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1026
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/小说多角色+旁白自动配音_1935603185300209665.json、音频生成/音频生成/小说多角色配音结构化文本（搭配IndexTTS Pro使用）_1933137762927161346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0全能参考视频_2049369386825293826.json、视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json、视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `NovelTextStructureNode`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkText` —— 1/3 个有
+- `TextBoxMira` —— 1/3 个有
 
 ## 典型参数
 
@@ -39,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

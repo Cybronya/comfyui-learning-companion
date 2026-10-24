@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_941
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.764
-common_nodes: [LoadAudio, LoadImage, PreviewAny, RH_FireRedAudioLoader, SaveImage, ShellAgentPluginOutputText]
+frequency: 3
+level: moderate
+coverage: 0.751333
+common_nodes: [Joy_caption_two, Joy_caption_two_load, LoadImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/FireRed Audio ASR语音转文字2608_2094001942090575874.json, 音频生成/音频生成/FireRed Audio语音理解2608_2094002011908956162.json]
+members: [图片生成/图生图/实用图像提示词打标器 - LoRA 训练_1922570625221627906.json, 图片生成/文生图/CG迷-joy caption2 提示词反推 工作流_2034929045535723522.json, 图片生成/文生图/CG迷-joy caption2提示词反推工作流_1926919908653961217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_941
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/FireRed Audio ASR语音转文字2608_2094001942090575874.json、音频生成/音频生成/FireRed Audio语音理解2608_2094002011908956162.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/实用图像提示词打标器 - LoRA 训练_1922570625221627906.json、图片生成/文生图/CG迷-joy caption2 提示词反推 工作流_2034929045535723522.json、图片生成/文生图/CG迷-joy caption2提示词反推工作流_1926919908653961217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
+全部 3 个 workflow 都包含：
+- `Joy_caption_two`
+- `Joy_caption_two_load`
 - `LoadImage`
-- `PreviewAny`
-- `RH_FireRedAudioLoader`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `RH_FireRedAudioASR` —— 1/2 个有
-- `RH_FireRedAudioUnderstand` —— 1/2 个有
+- `Joy_caption_two_advanced` —— 2/3 个有
+- `Joy_extra_options` —— 2/3 个有
 
 ## 典型参数
 
@@ -45,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

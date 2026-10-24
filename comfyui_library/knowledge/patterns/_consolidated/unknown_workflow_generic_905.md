@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_905
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [RH_ViduTextToVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [LoadImage, SaveImage, ttN text]
 problems: []
 missing: []
-members: [视频生成/文生视频/Vidu-q2-文生视频 8秒价格 540 0.53元_次 720p 1.09元_次  1080p 1.93元_次_2049306613512675330.json, 视频生成/文生视频/ViduTextToVideo_2038488990021591041.json]
+members: [图片生成/图生图/一键换脸2.0 简易应用_1909070664169304066.json, 图片生成/图生图/全能图片2.0_2027393529009414146.json, 图片生成/图生图/珠宝替换_精简版_2110422160215990274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_905
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Vidu-q2-文生视频 8秒价格 540 0.53元_次 720p 1.09元_次  1080p 1.93元_次_2049306613512675330.json、视频生成/文生视频/ViduTextToVideo_2038488990021591041.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键换脸2.0 简易应用_1909070664169304066.json、图片生成/图生图/全能图片2.0_2027393529009414146.json、图片生成/图生图/珠宝替换_精简版_2110422160215990274.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_ViduTextToVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
+- `ttN text`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
+- `ReActorFaceSwap` —— 1/3 个有
 
 ## 典型参数
 
@@ -39,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

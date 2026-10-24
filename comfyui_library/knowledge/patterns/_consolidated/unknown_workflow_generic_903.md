@@ -1,33 +1,43 @@
 ---
 name: unknown_workflow_generic_903
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [RH_BytedanceSeedance25GlobalTokenTextToVideo, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.871667
+common_nodes: [CR Text, EG_ZZ_TMTX, GrowMaskWithBlur, Int, LoadImage, RMBG, SaveImage, SimpleMath+]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance 2.5 Global 文生视频｜支持4K｜支持30S视频_2097684108490133505.json, 视频生成/文生视频/文生视频工作流｜Seedance 2.5 最长三十秒 可上 4K_2100471498980020225.json]
+members: [图片生成/图生图/一键抠图_1991274179580506113.json, 图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json, 图片生成/图生图/自动抠图透明背景_1992102190592618497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_903
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.5 Global 文生视频｜支持4K｜支持30S视频_2097684108490133505.json、视频生成/文生视频/文生视频工作流｜Seedance 2.5 最长三十秒 可上 4K_2100471498980020225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键抠图_1991274179580506113.json、图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json、图片生成/图生图/自动抠图透明背景_1992102190592618497.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_BytedanceSeedance25GlobalTokenTextToVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `EG_ZZ_TMTX`
+- `GrowMaskWithBlur`
+- `Int`
+- `LoadImage`
+- `RMBG`
+- `SaveImage`
+- `SimpleMath+`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `Sa2VANodeTpl` —— 2/3 个有
+- `easy imageCropFromMask` —— 2/3 个有
+- `FastCanvas` —— 1/3 个有
+- `FastCanvasTool` —— 1/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
 
 ## 典型参数
 
@@ -39,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

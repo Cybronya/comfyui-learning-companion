@@ -1,62 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_123
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8702
-common_nodes: [CLIPTextEncode, DualCLIPLoader, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.981444
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR SDXL Aspect Ratio, SDXLEmptyLatentSizePicker+]
-members: [图片生成/文生图/1916390487366762498.json, 图片生成/文生图/1917071528809136129.json, 图片生成/文生图/1935657646269595649.json, 图片生成/文生图/1948791649602871297.json, 图片生成/文生图/1974142043784130562.json]
+missing: []
+members: [图片生成/图生图/Klein9b超高清三视图_2034183674899472385.json, 图片生成/图生图/Klein一键快速扩图王4.0_2016076763520045057.json, 图片生成/图生图/flux 2 klein edit single image 单图编辑_2044446355933896705.json, 图片生成/图生图/flux klein单图编辑_2085594588139581442.json, 图片生成/图生图/flux klein双图编辑工作流_2085595709289623554.json, 图片生成/图生图/flux klein双图编辑工作流_2105577595982143490.json, 图片生成/图生图/flux klein双图编辑工作流_2105650140253089794.json, 图片生成/图生图/一键拍立得_2077678322762473473.json, 图片生成/图生图/电商一键扩图 flux2 klein_2013426255588237313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_123
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1916390487366762498.json、图片生成/文生图/1917071528809136129.json、图片生成/文生图/1935657646269595649.json、图片生成/文生图/1948791649602871297.json、图片生成/文生图/1974142043784130562.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Klein9b超高清三视图_2034183674899472385.json、图片生成/图生图/Klein一键快速扩图王4.0_2016076763520045057.json、图片生成/图生图/flux 2 klein edit single image 单图编辑_2044446355933896705.json、图片生成/图生图/flux klein单图编辑_2085594588139581442.json、图片生成/图生图/flux klein双图编辑工作流_2085595709289623554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `KSampler`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `FluxGuidance` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `Flex2Conditioner` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `TeaCache` —— 2/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `DifferentialDiffusion` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `SDXLEmptyLatentSizePicker+` —— 1/5 个有
-- `SUPIR_Upscale` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `EmptyFlux2LatentImage` —— 8/9 个有
+- `GetImageSize` —— 7/9 个有
+- `ImagePadForOutpaint` —— 3/9 个有
+- `AILab_ImageStitch` —— 1/9 个有
+- `CheckpointLoaderSimple` —— 1/9 个有
+- `ColorMatch` —— 1/9 个有
+- `DrawMaskOnImage` —— 1/9 个有
+- `INTConstant` —— 1/9 个有
+- `LayerStyle: ColorOverlay` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `ResolutionMaster` —— 1/9 个有
+- `StringConcatenate` —— 1/9 个有
+- `StringConstant` —— 1/9 个有
+- `VRAMReserver` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 20 - 25 | 5 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 768x1280 (0.6) | - | 1 | 100% |
-| 高度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,9 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 25，5 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR SDXL Aspect Ratio、SDXLEmptyLatentSizePicker+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

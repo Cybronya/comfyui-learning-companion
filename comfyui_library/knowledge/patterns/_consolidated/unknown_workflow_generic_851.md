@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_851
 type: Unknown Workflow
-frequency: 2
-level: weak
+frequency: 3
+level: moderate
 coverage: 1
-common_nodes: [LoadImage, SaveVideo, Text, easy saveText]
+common_nodes: [ImageCrop+, ImageTile+, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/b-Minimax H3图生视频(首尾帧生视频)_2083156918285197313.json, 视频生成/图生视频/阿里最强视频模型wan3.0 Prime图生视频低至0.43元_秒_2092426731033554946.json]
+members: [图片生成/图生图/6-宫格图拆分工作流_2038606289256845313.json, 图片生成/图生图/九宫格拆分成单图-标准版-（必收藏）_2052035279879450626.json, 图片生成/图生图/角色+场景+自动拆分单图_2054553084394778626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_851
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/b-Minimax H3图生视频(首尾帧生视频)_2083156918285197313.json、视频生成/图生视频/阿里最强视频模型wan3.0 Prime图生视频低至0.43元_秒_2092426731033554946.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/6-宫格图拆分工作流_2038606289256845313.json、图片生成/图生图/九宫格拆分成单图-标准版-（必收藏）_2052035279879450626.json、图片生成/图生图/角色+场景+自动拆分单图_2054553084394778626.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `ImageCrop+`
+- `ImageTile+`
 - `LoadImage`
-- `SaveVideo`
-- `Text`
-- `easy saveText`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30PrimeImageToVideo` —— 1/2 个有
-- `RH_MinimaxHailuoH3ImageToVideo` —— 1/2 个有
+- `GetImageSize` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

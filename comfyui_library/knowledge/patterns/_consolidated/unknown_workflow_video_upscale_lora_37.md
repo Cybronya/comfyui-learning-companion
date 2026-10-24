@@ -3,95 +3,93 @@ name: unknown_workflow_video_upscale_lora_37
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.502
-common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPVisionLoader, Create Grid Image from Batch, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, EmptyImage, FloatConstant, GIMMVFI_interpolate, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageBatchMulti, ImageConcanate, ImageFromBatch, ImageResizeKJv2, ImageScaleBy, ImageScaleToMaxDimension, ImpactMakeAnyList, ImpactMinMax, ImpactSelectNthItemOfAnyList, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, PreviewAny, PreviewImage, PrimitiveStringMultiline, RepeatImageBatch, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SomethingToString, StringConcatenate, StringConstantMultiline, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSVIProEmbeds, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy boolean, easy compare, easy ifElse, easy int, easy lengthAnything, easy mathInt, easy promptLine, easy seed, easy whileLoopEnd, easy whileLoopStart]
+coverage: 0.8425
+common_nodes: [AddLabel, BasicGuider, BasicScheduler, CLIPTextEncode, CLIPTextEncodeFlux, CR Image Grid Panel, ConditioningZeroOut, DownloadAndLoadGIMMVFIModel, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, GIMMVFI_interpolate, GetNode, Image Comparer (rgthree), ImageListToBatch+, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, LoraLoader, LoraLoaderModelOnly, LyingSigmaSampler, MathExpression|pysssss, ModelSamplingFlux, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, SomethingToString, UNETLoader, UltimateSDUpscaleCustomSample, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy float, easy forLoopEnd, easy forLoopStart, easy imageSize, easy outputToList]
 problems: []
 missing: []
-members: [视频生成/图生视频/2000126705077452802.json, 视频生成/图生视频/2033206135498481666.json]
+members: [视频生成/图生视频/变毒液wan2.1万相图生视40工作流_1933388878445195265.json, 视频生成/图生视频/变毒液wan2.1万相图生视50工作流_1933379047416049666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_37
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2000126705077452802.json、视频生成/图生视频/2033206135498481666.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/变毒液wan2.1万相图生视40工作流_1933388878445195265.json、视频生成/图生视频/变毒液wan2.1万相图生视50工作流_1933379047416049666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_Preview`
-- `BiRefNetRMBG`
-- `CLIPVisionLoader`
-- `Create Grid Image from Batch`
-- `Display Int (rgthree)`
+- `AddLabel`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CLIPTextEncodeFlux`
+- `CR Image Grid Panel`
+- `ConditioningZeroOut`
 - `DownloadAndLoadGIMMVFIModel`
-- `EmptyImage`
-- `FloatConstant`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
 - `GIMMVFI_interpolate`
-- `GetImageSizeAndCount`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageBatchMulti`
-- `ImageConcanate`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImageScaleToMaxDimension`
-- `ImpactMakeAnyList`
-- `ImpactMinMax`
-- `ImpactSelectNthItemOfAnyList`
-- `InvertMask`
+- `Image Comparer (rgthree)`
+- `ImageListToBatch+`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewAny`
+- `LoraLoader`
+- `LoraLoaderModelOnly`
+- `LyingSigmaSampler`
+- `MathExpression|pysssss`
+- `ModelSamplingFlux`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RepeatImageBatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
 - `SetNode`
 - `SomethingToString`
-- `StringConcatenate`
-- `StringConstantMultiline`
+- `UNETLoader`
+- `UltimateSDUpscaleCustomSample`
+- `UpscaleModelLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageResizeToClosest`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
-- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSVIProEmbeds`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy boolean`
-- `easy compare`
-- `easy ifElse`
-- `easy int`
-- `easy lengthAnything`
-- `easy mathInt`
-- `easy promptLine`
-- `easy seed`
-- `easy whileLoopEnd`
-- `easy whileLoopStart`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy float`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageSize`
+- `easy outputToList`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 768 | - | 2 | 100% |
+| 高度 | 1024 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -99,4 +97,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

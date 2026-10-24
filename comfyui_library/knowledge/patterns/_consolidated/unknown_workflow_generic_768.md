@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_768
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8125
-common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, easy saveText, easy showAnything]
+frequency: 4
+level: moderate
+coverage: 0.88975
+common_nodes: [LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/文生图/DG_爆款视频分析和提示词_2025807925129781249.json, 数字人/数字人/视频提示词反推 g 3.5 参考提示词提取_2088789079856074753.json]
+members: [视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json, 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json, 视频生成/图生视频/（双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P）_2037733253083303937.json, 视频生成/图生视频/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037721979842732034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_768
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/DG_爆款视频分析和提示词_2025807925129781249.json、数字人/数字人/视频提示词反推 g 3.5 参考提示词提取_2088789079856074753.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json、视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json、视频生成/图生视频/（双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P）_2037733253083303937.json、视频生成/图生视频/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037721979842732034.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `easy saveText`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `PreviewAny`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ShowText` —— 1/2 个有
+- `CR Prompt Text` —— 2/4 个有
+- `JWInteger` —— 2/4 个有
+- `LoadAudio` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

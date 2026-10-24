@@ -3,51 +3,55 @@ name: unknown_workflow_video_sampler_vae_106
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9614
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.9204
+common_nodes: [ImageResizeKJ, Int, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1936289706663399425.json, 视频生成/文生视频/1934582390809370626.json, 视频生成/文生视频/1934499736151871490.json, 视频生成/文生视频/1936061298029285377.json, 视频生成/文生视频/1942109815802118145.json]
+members: [视频生成/图生视频/FusionX图生视频+FusionX+lora_1939674359478788097.json, 视频生成/图生视频/Fusionx 图生视+Fusionx +lora_1939674066548920322.json, 视频生成/图生视频/Fusionx 图生视频+Fusionx +lora+视频放大_1942491226299904002.json, 视频生成/图生视频/Fusionx 图生视频+Fusionx +补帧加速版+视频放大_1942491188651831298.json, 视频生成/图生视频/自己用：FusionX图生视频+lora_1944595309169397761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_106
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1936289706663399425.json、视频生成/文生视频/1934582390809370626.json、视频生成/文生视频/1934499736151871490.json、视频生成/文生视频/1936061298029285377.json、视频生成/文生视频/1942109815802118145.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FusionX图生视频+FusionX+lora_1939674359478788097.json、视频生成/图生视频/Fusionx 图生视+Fusionx +lora_1939674066548920322.json、视频生成/图生视频/Fusionx 图生视频+Fusionx +lora+视频放大_1942491226299904002.json、视频生成/图生视频/Fusionx 图生视频+Fusionx +补帧加速版+视频放大_1942491188651831298.json、视频生成/图生视频/自己用：FusionX图生视频+lora_1944595309169397761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+- `ImageResizeKJ`
+- `Int`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `CR Text` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `WanVideoLoraSelect` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `RH_Translator` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
 - `ImageUpscaleWithModel` —— 2/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
 - `UpscaleModelLoader` —— 2/5 个有
-- `ImageResizeKJ` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `RIFE VFI` —— 1/5 个有
-- `WanVideoImageToVideoEncode` —— 1/5 个有
-- `WanVideoMagCache` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `easy clearCacheAll` —— 1/5 个有
 
 ## 典型参数
 

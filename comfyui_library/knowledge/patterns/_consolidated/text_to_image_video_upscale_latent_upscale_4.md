@@ -3,22 +3,22 @@ name: text_to_image_video_upscale_latent_upscale_4
 type: Text To Image
 frequency: 16
 level: strong
-coverage: 0.483375
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, GetVideoComponents, ImageAddNoise, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, PrimitiveBoolean, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Seed (rgthree), SetNode, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy anythingInversedSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy saveVideo, easy showAnything, solarL_SaveImagesToZip]
+coverage: 0.488187
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, ImageAddNoise, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Seed (rgthree), SetNode, SplitSigmas, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, easy anythingInversedSwitch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, Seed (rgthree), easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy saveVideo]
-members: [视频生成/图生视频/H3导演台长视频 视频生视频图生视频创作_2100270526487949313.json, 视频生成/图生视频/MiniMax H3导演台模式生成长视频，支持视频生视频与图生视频双模式_2102809851134042114.json, 视频生成/图生视频/MiniMax H3导演台长视频 多段编排视频生成方案_2105353411913932801.json, 视频生成/图生视频/MiniMax H3导演台长视频 长视频多段编排视频生成_2109384708021907458.json, 视频生成/图生视频/MiniMax H3导演台长视频 长视频多段编排视频生成_2109690032536772609.json, 视频生成/图生视频/MiniMax H3导演台长视频工作流，视频生视频图生视频高效创作方案_2106436294774706178.json, 视频生成/图生视频/MiniMax H3导演台长视频视频生成处理工具_2101725133303013378.json, 视频生成/图生视频/MiniMax-H3导演台模式｜视频生视频一键产出电影级长视频_2101482381654978561.json, 视频生成/图生视频/MiniMax-H3导演台模式｜长视频一站式生成神器_2105107847519490050.json, 视频生成/图生视频/MiniMax-H3导演台长视频方案，视频生视频连贯出片_2110484693325012993.json, 视频生成/图生视频/MiniMax-H3导演台长视频｜视频生视频图生视频 电影级长镜头创作_2104025435729383426.json, 视频生成/图生视频/MiniMax_H3导演台模式生成长视频，支持视频生视频与图生视频双模式_2106912694749188098.json, 视频生成/图生视频/导演台式长视频创作 MiniMax H3图生视频多段运镜编排_2104263147673706498.json, 视频生成/视频生视频/MiniMax H3导演台长视频工作流_视频生视频图生视频高效创作方案_2106436294774706178.json, 视频生成/视频生视频/MiniMax H3导演台长视频工作流_角色表演图生视频高效创作工具_2106089759742447618.json, 视频生成/视频生视频/MiniMax H3导演台长视频来了_图生视频视频生视频双支持一键出大片_2106193167304445953.json]
+missing: []
+members: [视频生成/图生视频/MiniMax H3全能参考长视频 多模态输入视频生成_2109383084931108866.json, 视频生成/图生视频/MiniMax H3全能参考长视频 多模态输入视频生成_2109691646983106561.json, 视频生成/图生视频/MiniMax-H3全能参考长视频，文生视频图生视频双模式_2110486274929946626.json, 视频生成/图生视频/MiniMax-H3全能参考长视频｜多素材一次喂饱长片直出_2111285734811455490.json, 视频生成/文生视频/H3全能参考长视频 文生视频图生视频创作_2100264124860162049.json, 视频生成/文生视频/MiniMax H3全能参考长视频工作流，文生视频图生视频处理方案_2108296343327436802.json, 视频生成/文生视频/MiniMax H3全能参考长视频工作流，文生视频图生视频高效创作方案_2106821630193389570.json, 视频生成/文生视频/MiniMax H3全能参考长视频生成，文生视频与图生视频双模式支持_2102844494524805121.json, 视频生成/文生视频/MiniMax H3全能参考长视频生成，文生视频与图生视频双模式支持_2103167835215319042.json, 视频生成/文生视频/MiniMax H3全能参考长视频｜单图单句直出长片｜出片效率翻倍_2102646336528150530.json, 视频生成/文生视频/MiniMax-H3全能参考长视频｜文生视频图生视频 长片创作好帮手_2105502797755146241.json, 视频生成/文生视频/全能参考长视频方案 MiniMax H3多段续接稳定生成_2104654658500382721.json, 视频生成/视频生视频/MiniMax H3全能参考长视频工作流，文生视频图生视频一站式创作方案_2105723145415122946.json, 视频生成/视频生视频/MiniMax H3全能参考长视频工作流，角色表演图生视频一站式创作方案_2106088201877286914.json, 视频生成/视频生视频/MiniMax-H3全能参考生视频｜长视频高质量直出_2106587912711270401.json, 视频生成/视频生视频/MiniMax_H3全能参考长视频生成，文生视频与图生视频双模式支持_2105858543348961282.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_4
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/H3导演台长视频 视频生视频图生视频创作_2100270526487949313.json、视频生成/图生视频/MiniMax H3导演台模式生成长视频，支持视频生视频与图生视频双模式_2102809851134042114.json、视频生成/图生视频/MiniMax H3导演台长视频 多段编排视频生成方案_2105353411913932801.json、视频生成/图生视频/MiniMax H3导演台长视频 长视频多段编排视频生成_2109384708021907458.json、视频生成/图生视频/MiniMax H3导演台长视频 长视频多段编排视频生成_2109690032536772609.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3全能参考长视频 多模态输入视频生成_2109383084931108866.json、视频生成/图生视频/MiniMax H3全能参考长视频 多模态输入视频生成_2109691646983106561.json、视频生成/图生视频/MiniMax-H3全能参考长视频，文生视频图生视频双模式_2110486274929946626.json、视频生成/图生视频/MiniMax-H3全能参考长视频｜多素材一次喂饱长片直出_2111285734811455490.json、视频生成/文生视频/H3全能参考长视频 文生视频图生视频创作_2100264124860162049.json…）
 
 - **类型**：Text To Image
 - **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
@@ -29,13 +29,11 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
 - `EmptyLatentImage`
 - `ExtendIntermediateSigmas`
 - `Fast Groups Bypasser (rgthree)`
 - `GetImageRangeFromBatch`
 - `GetNode`
-- `GetVideoComponents`
 - `ImageAddNoise`
 - `JjkText`
 - `KSampler`
@@ -43,21 +41,23 @@ source: knowledge_consolidation
 - `LTXVConcatAVLatent`
 - `LTXVSeparateAVLatent`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3AddGuide`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
 - `MiniMaxH3SigmaShift`
 - `MinimaxH3LatentUpscaler3D`
 - `ModelAttentionBackend`
 - `ModelPreviewOverrideKJ`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `Seed (rgthree)`
 - `SetNode`
+- `SplitSigmas`
 - `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
@@ -65,29 +65,35 @@ source: knowledge_consolidation
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy anythingInversedSwitch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy mergeVideosFromPaths`
-- `easy minimaxH3ToVideo`
-- `easy multiTrackEditor`
-- `easy multiTrackInfoOutput`
-- `easy multiTrackTaskOutput`
-- `easy saveVideo`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
+- `INTConstant` —— 15/16 个有
+- `ImageFromBatch` —— 15/16 个有
+- `LoadAudio` —— 15/16 个有
 - `孤海注释` —— 15/16 个有
+- `BatchImagesNode` —— 12/16 个有
 - `SaveImage` —— 12/16 个有
-- `INTConstant` —— 11/16 个有
 - `VHS_VideoInfoLoaded` —— 11/16 个有
-- `BlockSparseAttention` —— 8/16 个有
-- `SplitSigmas` —— 8/16 个有
-- `BatchImagesNode` —— 3/16 个有
-- `EmptyImage` —— 1/16 个有
+- `BlockSparseAttention` —— 9/16 个有
+- `GetImagesFromBatchIndexed` —— 8/16 个有
+- `PreviewAny` —— 8/16 个有
+- `easy forLoopEnd` —— 8/16 个有
+- `easy forLoopStart` —— 8/16 个有
+- `easy ifElse` —— 8/16 个有
+- `easy isNone` —— 8/16 个有
+- `easy lengthAnything` —— 8/16 个有
+- `easy promptConcat` —— 8/16 个有
+- `RepeatImageBatch` —— 7/16 个有
+- `easy showAnything` —— 6/16 个有
+- `BatchCount+` —— 4/16 个有
+- `SimpleMath+` —— 4/16 个有
+- `PrimitiveBoolean` —— 3/16 个有
+- `ConditioningZeroOut` —— 2/16 个有
+- `SelfLiftH3Sampler` —— 2/16 个有
+- `ColorTransfer` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
+- `VHS_LoadAudioUpload` —— 1/16 个有
 
 ## 典型参数
 
@@ -105,7 +111,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -116,5 +122,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
-- 高发问题（17/16 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: ImageScaleByAspectRatio V2、easy anythingInversedSwitch、easy batchAnything、easy cleanGpuUsed、easy forLoopEnd
+- 高发问题（18/16 个样本）：Steps较低可能导致细节不足

@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_756
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.639
-common_nodes: [LoadImage, RH_LLMAPI_NODE, SaveImage, ShowText|pysssss]
+frequency: 4
+level: moderate
+coverage: 0.617
+common_nodes: [LoadImage, LoadVideo, RH_AlibabaWan27VideoEdit, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/1960218348674035713.json, 视频生成/图生视频/1989332533642973186.json]
+members: [视频生成/图生视频/Wan2.7 视频编辑_2041454710699335681.json, 视频生成/图生视频/Wan2.7 视频编辑_2043658633333972994.json, 视频生成/图生视频/Wan2.7 视频编辑_2046662800356937729.json, 视频生成/图生视频/Wan2.7 视频编辑（改风格）_2046214657328816129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_756
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1960218348674035713.json、视频生成/图生视频/1989332533642973186.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.7 视频编辑_2041454710699335681.json、视频生成/图生视频/Wan2.7 视频编辑_2043658633333972994.json、视频生成/图生视频/Wan2.7 视频编辑_2046662800356937729.json、视频生成/图生视频/Wan2.7 视频编辑（改风格）_2046214657328816129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `ShowText|pysssss`
+- `LoadVideo`
+- `RH_AlibabaWan27VideoEdit`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImageNode` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,67 +3,73 @@ name: unknown_workflow_video_lora_sampler_923
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8375
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy seed]
+coverage: 0.794
+common_nodes: [Any Switch (rgthree), BasicScheduler, CLIPLoader, CR Prompt Text, CR Text, CR Text Concatenate, ConditioningZeroOut, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaLabel, PlaySound|pysssss, PrimitiveFloat, ResolutionSelector, SelfLiftAvatarH3Sampler, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/1981043696474931201.json, 视频生成/文生视频/svi-film-转绘循环-8帧重叠_1983865424628613121.json]
+members: [视频生成/文生视频/MiniMax H3 Fl2V 首尾帧生图 + SelfLift节点采样 低显存超高2K分辨率_2103934254332862466.json, 音频生成/音频生成/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2110557852694827010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_923
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1981043696474931201.json、视频生成/文生视频/svi-film-转绘循环-8帧重叠_1983865424628613121.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Fl2V 首尾帧生图 + SelfLift节点采样 低显存超高2K分辨率_2103934254332862466.json、音频生成/音频生成/MiniMax-H3_单人音频驱动数字人+SelfLite_超高分2K高清工作流_2110557852694827010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `ExtendIntermediateSigmas`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PixaromaLabel`
+- `PlaySound|pysssss`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `VHS_BatchManager` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `MiniMaxH3ImageToVideo` —— 1/2 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `RHSettingsNode` —— 1/2 个有
+- `SoundFlow_GetLength` —— 1/2 个有
+- `VAEDecodeAudio` —— 1/2 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
 
 ## 典型参数
 

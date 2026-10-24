@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_generic_129
 type: Unknown Workflow
-frequency: 8
+frequency: 13
 level: moderate
-coverage: 0.7685
-common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM, LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
+coverage: 0.804
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json, 图片生成/文生图/LongCat-Image文生图_1997957400038662145.json, 图片生成/文生图/LongCat-Image文生图_1998224203377704961.json, 图片生成/文生图/LongCat-Image文生图_2001783199229440002.json, 图片生成/文生图/LongCat-Image文生图_2052768050700660737.json, 图片生成/文生图/LongCat-Image文生图（Plus才能运行）_1997925907765583874.json, 图片生成/文生图/LongCat文生图_1998335604532346881.json, 图片生成/文生图/龙猫模型LongCat-Image文生图_1998212875355348993.json]
+members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036271751755210754.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2043547032144584705.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2045295642133667842.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2105586117281140738.json, 音频生成/音频生成/Qwen3_TTS_最强语音合成_2108372556238639105.json, 音频生成/音频生成/全新声音模仿&语音克隆Qwen3 TTS_2015006488967778306.json, 音频生成/音频生成/声音克隆 Qwen3 TTS_2109114164743598082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_129
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json、图片生成/文生图/LongCat-Image文生图_1997957400038662145.json、图片生成/文生图/LongCat-Image文生图_1998224203377704961.json、图片生成/文生图/LongCat-Image文生图_2001783199229440002.json、图片生成/文生图/LongCat-Image文生图_2052768050700660737.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `LayerUtility: PurgeVRAM`
-- `LongCatImageModelLoader`
-- `LongCatImageTextToImage`
-- `SaveImage`
+全部 13 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioCrop`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 7/8 个有
-- `LoadImage` —— 2/8 个有
+- `JjkText` —— 5/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `PrimitiveFloat` —— 1/13 个有
+- `Text Multiline` —— 1/13 个有
 
 ## 典型参数
 

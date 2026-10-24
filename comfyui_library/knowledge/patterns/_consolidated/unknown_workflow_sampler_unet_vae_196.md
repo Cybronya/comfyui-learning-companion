@@ -1,68 +1,97 @@
 ---
 name: unknown_workflow_sampler_unet_vae_196
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.888333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.8796
+common_nodes: [CLIPLoader, ComfyMathExpression, EmptyLatentImage, GetImageSize, Image Comparer (rgthree), ImageBlend, ImageMergeTileList, KSampler, LayerUtility: HLFrequencyDetailRestore, PrimitiveFloat, PrimitiveInt, RH_DLSS5Enhance, ResizeImageMaskNode, ResolutionSelector, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SplitImageToTileList, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/时尚穿搭视频Lookbook Minimax H3_2108419577200861186.json, 视频生成/文生视频/Minimax参考生视频 高质量 加速版_2086430508090744833.json, 视频生成/文生视频/Minimax图生视频高质量加速版_2087062490541813762.json]
+members: [图片生成/图生图/Qwen image2.1 人物换头换脸_2111706590893137922.json, 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json, 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2104918784128671745.json, 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2108736610203430913.json, 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2110183986537521153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_196
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/时尚穿搭视频Lookbook Minimax H3_2108419577200861186.json、视频生成/文生视频/Minimax参考生视频 高质量 加速版_2086430508090744833.json、视频生成/文生视频/Minimax图生视频高质量加速版_2087062490541813762.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1 人物换头换脸_2111706590893137922.json、图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json、图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2104918784128671745.json、图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2108736610203430913.json、图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2110183986537521153.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LoadImage`
+- `EmptyLatentImage`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageBlend`
+- `ImageMergeTileList`
+- `KSampler`
+- `LayerUtility: HLFrequencyDetailRestore`
+- `PrimitiveFloat`
 - `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `RH_DLSS5Enhance`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
+- `SaveImage`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
+- `SplitImageToTileList`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `MiniMaxH3BlockCacheT8` —— 2/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `ConcatenateVideo` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `MiniMaxH3AddGuide` —— 1/3 个有
-- `MiniMaxH3ImageToVideo` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `ResizeAndPadImage` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
+- `BasicScheduler` —— 4/5 个有
+- `CFGGuider` —— 4/5 个有
+- `ImageScale` —— 4/5 个有
+- `KSamplerSelect` —— 4/5 个有
+- `RandomNoise` —— 4/5 个有
+- `SamplerCustomAdvanced` —— 4/5 个有
+- `SaveImageAdvanced` —— 4/5 个有
+- `Seed (rgthree)` —— 4/5 个有
+- `SplitSigmas` —— 4/5 个有
+- `Anything Everywhere3` —— 1/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `LayerUtility: ImageReel` —— 1/5 个有
+- `LayerUtility: ImageReelComposit` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `孤海注释` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1 | 1 - 10 | 5 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1，观测区间 1 - 10，5 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

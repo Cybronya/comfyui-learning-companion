@@ -1,33 +1,38 @@
 ---
 name: unknown_workflow_generic_45
 type: Unknown Workflow
-frequency: 14
+frequency: 22
 level: moderate
-coverage: 1
-common_nodes: [RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
+coverage: 0.786364
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json, 视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json, 视频生成/文生视频/SK_txt2vid_2038875282374922242.json, 视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json, 视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json, 视频生成/文生视频/Seedance2.0_文生视频_2037138846156066817.json, 视频生成/文生视频/Seedance2.0文生视频_2037013695364079618.json, 视频生成/文生视频/Seedance2.0文生视频_2037442624088449026.json, 视频生成/文生视频/Seedance2.0文生视频_2047295644854915074.json, 视频生成/文生视频/Seedance2.0文生视频测试_2089267259809296385.json, 视频生成/文生视频/Seedance2.0文生视频（RH版）_2054421287983951873.json, 视频生成/文生视频/Seedance2.0文生视频｜一句话生成大片 描述越细效果越惊艳_2105496532777787394.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051209250336198657.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051248121287593985.json]
+members: [图片生成/图生图/2026全能模型（香_蕉）2.0图片编辑_2027209606774136834.json, 图片生成/图生图/4图参图像编辑V2_2044608046130794498.json, 图片生成/图生图/B2_2019405276666929153.json, 图片生成/图生图/GT-Image2-官方单图编辑_2054095316344942594.json, 图片生成/图生图/GT-Image2-官方模特换头_2054099256427991042.json, 图片生成/图生图/GT-Image2-官方模特换姿势_2054103151103496193.json, 图片生成/图生图/GT-Image2-官方模特换装_2054097779189927938.json, 图片生成/图生图/三图生图-全能图片G2--RH官方稳定版--10图参考-10比例选择-支持4K_2049707723033460737.json, 图片生成/图生图/全能图片--模特换装_2027190328536604673.json, 图片生成/图生图/全能图片2  图像编辑V1_2027225970805055489.json, 图片生成/图生图/全能图片2--模特换指定服装_2027286193318141954.json, 图片生成/图生图/全能图片2--模特换脸_2027191866843734018.json, 图片生成/图生图/全能图片2单图编辑V1_2027298749747302402.json, 图片生成/图生图/全能图片2图生图V1_2027215751844732929.json, 图片生成/图生图/全能图片2极速生成_3图编辑_2027207526751670274.json, 图片生成/图生图/全能图片G-image2 换装_2082362331257987074.json, 图片生成/图生图/全能图片V2-16种风格写实渲染表现_2027390650701848577.json, 图片生成/图生图/全能图片V2-室外建筑【多时段_多季节渲染表现】_2037056764956385282.json, 图片生成/图生图/图片生成加反推_2088525239574679554.json, 图片生成/图生图/图生图-全能图片G2--RH官方稳定版--10图参考-10比例选择-支持4K_2049693010325196801.json, 图片生成/图生图/图生图-全能图片G2-RH官方稳定版02_2055533743380680706.json, 视频生成/图生视频/小红书一键出笔记9_2063452594969858049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_45
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json、视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json、视频生成/文生视频/SK_txt2vid_2038875282374922242.json、视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json、视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/2026全能模型（香_蕉）2.0图片编辑_2027209606774136834.json、图片生成/图生图/4图参图像编辑V2_2044608046130794498.json、图片生成/图生图/B2_2019405276666929153.json、图片生成/图生图/GT-Image2-官方单图编辑_2054095316344942594.json、图片生成/图生图/GT-Image2-官方模特换头_2054099256427991042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20TextToVideo`
-- `SaveVideo`
+全部 22 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/14 个有
+- `CR Prompt Text` —— 19/22 个有
+- `easy showAnything` —— 17/22 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 13/22 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 9/22 个有
+- `RH_LLMAPI_Pro_Node` —— 4/22 个有
+- `CR Text Concatenate` —— 1/22 个有
 
 ## 典型参数
 

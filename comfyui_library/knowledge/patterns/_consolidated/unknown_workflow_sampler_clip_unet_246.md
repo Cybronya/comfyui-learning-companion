@@ -1,66 +1,83 @@
 ---
 name: unknown_workflow_sampler_clip_unet_246
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7835
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyImage, Flux2Scheduler, GetImageSizeAndCount, GetNode, KSamplerSelect, Qwen3VL_Chat, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, StringFunction|pysssss, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.8966
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/生图-文生图(角色白底图)-FLUX2-Klein_2013161608507301890.json, 图片生成/文生图/生图-文生图自动-FLUX2-Klein_2012451327334420481.json]
+members: [图片生成/图生图/Z openpose工作流_1996536118701072385.json, 图片生成/图生图/Z-Image ControlNet 2.1 （六种控制类型）_2020890700463742978.json, 图片生成/图生图/Z-Image+CN+Qwen3反推洗图工作流_1996919521036406786.json, 图片生成/图生图/Z-Image+CN2.0洗图神器_2000462790190133250.json, 图片生成/图生图/Z-Image+CN2.1All In One_2003517827271303169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_246
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/生图-文生图(角色白底图)-FLUX2-Klein_2013161608507301890.json、图片生成/文生图/生图-文生图自动-FLUX2-Klein_2012451327334420481.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Z openpose工作流_1996536118701072385.json、图片生成/图生图/Z-Image ControlNet 2.1 （六种控制类型）_2020890700463742978.json、图片生成/图生图/Z-Image+CN+Qwen3反推洗图工作流_1996919521036406786.json、图片生成/图生图/Z-Image+CN2.0洗图神器_2000462790190133250.json、图片生成/图生图/Z-Image+CN2.1All In One_2003517827271303169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `EmptyImage`
-- `Flux2Scheduler`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `KSamplerSelect`
-- `Qwen3VL_Chat`
-- `RH_LLMAPI_NODE`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoadImage`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `SetNode`
-- `StringFunction|pysssss`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageRemBg` —— 1/2 个有
+- `AIO_Preprocessor` —— 4/5 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `QwenImageDiffsynthControlnet` —— 4/5 个有
+- `AILab_QwenVL` —— 3/5 个有
+- `PixelPerfectResolution` —— 3/5 个有
+- `Canny` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `GetImageSize+` —— 1/5 个有
+- `ImageSharpen` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `OpenposePreprocessor` —— 1/5 个有
+- `PreviewAny` —— 1/5 个有
+- `ZImageFunControlnet` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 9 - 9 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | res_multistep | - | 5 | 40% |
+| 调度器 | simple | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 9，观测区间 9 - 9，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，5 个样本，一致性 40%
+- 调度器 最常用 simple，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（7/5 个样本）：Steps较低可能导致细节不足

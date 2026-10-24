@@ -1,80 +1,102 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_47
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.766
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MinimaxH3LatentUpscaler3D, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.7215
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3-turbo-I2V_2094678182095052802.json, 视频生成/图生视频/MinimaxH3-turbo-R2V_2096133628672696321.json, 视频生成/图生视频/iniMax H3 六图可选图生视频｜混合模型 潜空间高清直出_2095018141456879618.json, 视频生成/图生视频/双彩去油优化版_2094596803365793793.json, 视频生成/图生视频/双彩去油优化版_2105703775204896770.json, 视频生成/图生视频/双彩去油优化版_2106240702928736257.json, 视频生成/文生视频/MiniMax H3 latent放大模型双采加速 高动态不糊 去油腻 修音频 全能工作流_2090423453655588865.json]
+members: [视频生成/图生视频/LTX-2 I2V 完整版图像转视频工作流，拆分子图-调试可运行RH在线工作流_2008987818990772225.json, 视频生成/图生视频/LTX-2 图生视频 ComfyUI官方流_2008519432749981698.json, 视频生成/图生视频/LTX-2 图生视频-音画同步-支持中英文_2008792079337529345.json, 视频生成/图生视频/LTX-2 图生视频_2009447921246281729.json, 视频生成/图生视频/LTX-2.5-图生视频-数字人唱歌_对口型-可上传音频_2087430857970769922.json, 视频生成/图生视频/LTX-2.5-图生视频-数字人唱歌_对口型-可上传音频_2096779577384329217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_47
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-turbo-I2V_2094678182095052802.json、视频生成/图生视频/MinimaxH3-turbo-R2V_2096133628672696321.json、视频生成/图生视频/iniMax H3 六图可选图生视频｜混合模型 潜空间高清直出_2095018141456879618.json、视频生成/图生视频/双彩去油优化版_2094596803365793793.json、视频生成/图生视频/双彩去油优化版_2105703775204896770.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX-2 I2V 完整版图像转视频工作流，拆分子图-调试可运行RH在线工作流_2008987818990772225.json、视频生成/图生视频/LTX-2 图生视频 ComfyUI官方流_2008519432749981698.json、视频生成/图生视频/LTX-2 图生视频-音画同步-支持中英文_2008792079337529345.json、视频生成/图生视频/LTX-2 图生视频_2009447921246281729.json、视频生成/图生视频/LTX-2.5-图生视频-数字人唱歌_对口型-可上传音频_2087430857970769922.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MinimaxH3LatentUpscaler3D`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
-- `PrimitiveInt` —— 6/7 个有
-- `ResolutionSelector` —— 6/7 个有
-- `easy cleanGpuUsed` —— 6/7 个有
-- `LoadAudio` —— 5/7 个有
-- `MiniMaxLowVRAMAttention` —— 5/7 个有
-- `ExtendIntermediateSigmas` —— 4/7 个有
-- `H3LatentUpscaleByJingchen573` —— 4/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `PathchSageAttentionKJ` —— 4/7 个有
-- `ShowText|pysssss` —— 4/7 个有
-- `SolAttnMiniMax` —— 4/7 个有
-- `easy showAnything` —— 4/7 个有
-- `SolAttnPatch` —— 2/7 个有
-- `easy mathInt` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `GetImageSize` —— 1/7 个有
-- `H3SigmaRefiner` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `MiniMaxChunkFeedForward` —— 1/7 个有
-- `MiniMaxH3ImageToVideo` —— 1/7 个有
-- `MiniMaxH3SigmaShift` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
-- `WujiAudioLoader` —— 1/7 个有
+- `CreateVideo` —— 5/6 个有
+- `ImageResizeKJv2` —— 5/6 个有
+- `ImpactExecutionOrderController` —— 5/6 个有
+- `LTXVGemmaEnhancePrompt` —— 5/6 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 5/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `SaveVideo` —— 5/6 个有
+- `CheckpointLoaderSimple` —— 4/6 个有
+- `LTXAVTextEncoderLoader` —— 4/6 个有
+- `LTXVAudioVAELoader` —— 4/6 个有
+- `DF_Int_to_Float` —— 3/6 个有
+- `GetNode` —— 3/6 个有
+- `MathExpression|pysssss` —— 3/6 个有
+- `SetNode` —— 3/6 个有
+- `WanVideoImageResizeToClosest` —— 3/6 个有
+- `easy float` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `Audio Duration (mtb)` —— 2/6 个有
+- `CLIPLoader` —— 2/6 个有
+- `LTXVAudioVAEEncode` —— 2/6 个有
+- `LTXVDualCFGGuider` —— 2/6 个有
+- `LTXVGemmaCLIPModelLoader` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `MelBandRoFormerModelLoader` —— 2/6 个有
+- `MelBandRoFormerSampler` —— 2/6 个有
+- `SetLatentNoiseMask` —— 2/6 个有
+- `SolidMask` —— 2/6 个有
+- `TrimAudioDuration` —— 2/6 个有
+- `UNETLoader` —— 2/6 个有
+- `VAELoader` —— 2/6 个有
+- `easy boolean` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `easy ifElse` —— 2/6 个有
+- `CM_FloatToInt` —— 1/6 个有
+- `CR Float To Integer` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `LTXVCropGuides` —— 1/6 个有
+- `VAEDecode` —— 1/6 个有
+- `VHS_VideoCombine` —— 1/6 个有
+- `easy clearCacheAll` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 97 - 121 | 6 | 92% |
+| 高度 | 25 | 25 - 25 | 6 | 100% |
 
 ## 常见问题
 
@@ -82,4 +104,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 97 - 121，6 个样本，取值集中（一致性 92%）
+- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）

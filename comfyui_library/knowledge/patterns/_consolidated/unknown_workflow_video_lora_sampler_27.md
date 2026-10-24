@@ -3,72 +3,81 @@ name: unknown_workflow_video_lora_sampler_27
 type: Unknown Workflow
 frequency: 27
 level: moderate
-coverage: 0.753148
-common_nodes: [CreateCFGScheduleFloatList, Int, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.854556
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1955939150006550529.json, 视频生成/图生视频/1955946689876119554.json, 视频生成/图生视频/1959887723270189057.json, 视频生成/图生视频/1958725154522165249.json, 视频生成/图生视频/1959809531566043137.json, 视频生成/图生视频/1976918780821573633.json, 视频生成/图生视频/1950424438283091970.json, 视频生成/图生视频/1957628788819554305.json, 视频生成/图生视频/1950150331004010497.json, 视频生成/图生视频/1956368575927910401.json, 视频生成/图生视频/2004200391954886657.json, 视频生成/图生视频/2009154616046395394.json, 视频生成/图生视频/2014625691811192833.json, 视频生成/图生视频/2037457877417332737.json, 视频生成/图生视频/2044320478889775106.json, 视频生成/图生视频/2054086706290282498.json, 视频生成/图生视频/2054117320213180418.json, 视频生成/图生视频/Wan2.2-14B 图生视频_2110660986368774146.json, 视频生成/图生视频/1999781370018791426.json, 视频生成/图生视频/2021553233977679873.json, 视频生成/图生视频/2014248417769295873.json, 视频生成/图生视频/2080914609724284930.json, 视频生成/图生视频/2003625393506689026.json, 视频生成/文生视频/Wan2.2-14B 图生视频RH平台示例工作流_2049013071271694337.json, 视频生成/文生视频/1950150304220274689.json, 视频生成/文生视频/Wan2.2图生视频_2010913412934537218.json, 视频生成/文生视频/千问2.5图生视频，极速版_2016217069779427330.json]
+members: [图片生成/图生图/(Dasiwa+V1+SLA加速)Minimax参考生视频V1_2092548650743455745.json, 图片生成/图生图/(双时钟-8步高质量极速)Minimax图生视频V1_2085659323732156418.json, 图片生成/图生图/(最佳动态)MiniMax H3Dasiwa HybirdV1+600EMA参考生视频V1_2093686271318253570.json, 图片生成/图生图/(长视频-文武双修均衡版-高清)MiniMax H3多参双采参考生视频_2103931824199266305.json, 图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096774886025945089.json, 图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-文生视频_2104537651679420418.json, 数字人/数字人/（28秒）MiniMax H3双采参考生视频V1_2104395488899461122.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2103209639994281986.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2104379461897637889.json, 视频生成/图生视频/(Dasiwa v3长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423400968318978.json, 视频生成/图生视频/(Hybird-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107064053121249282.json, 视频生成/图生视频/(Hybird全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107076455174856705.json, 视频生成/图生视频/(Hybird长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423021081812993.json, 视频生成/图生视频/(Remex0.8全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107078168841637889.json, 视频生成/图生视频/(Remix0.8-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107054072120565762.json, 视频生成/图生视频/(双桥)MiniMax H3双采生视频_2109246069212270593.json, 视频生成/图生视频/(四宫格图生视频-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104730210489946113.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104238128981700610.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104528106504675330.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104571196426768386.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2109822260604395522.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2110560337710895106.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104440079388340226.json, 视频生成/图生视频/MiniMax H3 长视频直出（双采 多参）_2105338608524812290.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-视频复刻-高清直出_2109641176335863810.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-文生视频-长视频-高清有直出_2106198509325217793.json, 视频生成/文生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-高清有直出_2106353568906301442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_27
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（视频生成/图生视频/1955939150006550529.json、视频生成/图生视频/1955946689876119554.json、视频生成/图生视频/1959887723270189057.json、视频生成/图生视频/1958725154522165249.json、视频生成/图生视频/1959809531566043137.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/(Dasiwa+V1+SLA加速)Minimax参考生视频V1_2092548650743455745.json、图片生成/图生图/(双时钟-8步高质量极速)Minimax图生视频V1_2085659323732156418.json、图片生成/图生图/(最佳动态)MiniMax H3Dasiwa HybirdV1+600EMA参考生视频V1_2093686271318253570.json、图片生成/图生图/(长视频-文武双修均衡版-高清)MiniMax H3多参双采参考生视频_2103931824199266305.json、图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096774886025945089.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 27 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Int`
-- `JWInteger`
-- `JjkText`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 26/27 个有
-- `PreviewImage` —— 26/27 个有
-- `WanVideoImageToVideoEncode` —— 26/27 个有
-- `ImpactSwitch` —— 25/27 个有
-- `LoadImage` —— 25/27 个有
-- `RH_Prompter` —— 25/27 个有
-- `TextCombinerTwo` —— 25/27 个有
-- `easy showAnything` —— 25/27 个有
-- `RH_Captioner` —— 24/27 个有
-- `RH_Translator` —— 24/27 个有
-- `easy anythingIndexSwitch` —— 24/27 个有
+- `ModelAttentionBackend` —— 26/27 个有
+- `SolAttnMiniMax` —— 26/27 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 25/27 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 25/27 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 25/27 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 25/27 个有
+- `Float` —— 24/27 个有
+- `LoraLoaderModelOnly` —— 24/27 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 22/27 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 22/27 个有
+- `easy anythingIndexSwitch` —— 22/27 个有
+- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 21/27 个有
+- `RunningHub Deepcleaner` —— 21/27 个有
 - `easy cleanGpuUsed` —— 21/27 个有
-- `Bjornulf_ShowInt` —— 20/27 个有
-- `CR Text Concatenate` —— 20/27 个有
-- `CreateVideo` —— 20/27 个有
-- `ImageFromBatch+` —— 20/27 个有
-- `JjkShowText` —— 20/27 个有
-- `RH_LLMAPI_NODE` —— 20/27 个有
-- `RunningHub ThinkSound` —— 20/27 个有
-- `SaveVideo` —— 20/27 个有
-- `ShowText` —— 20/27 个有
-- `ImageResizeKJv2` —— 19/27 个有
-- `Fast Groups Muter (rgthree)` —— 17/27 个有
-- `WanVideoBlockSwap` —— 7/27 个有
-- `WanVideoSetBlockSwap` —— 6/27 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/27 个有
-- `String` —— 2/27 个有
-- `LayerColor: Brightness & Contrast` —— 1/27 个有
-- `Load Image From Url (mtb)` —— 1/27 个有
-- `WanVideoEmptyEmbeds` —— 1/27 个有
+- `Astra` —— 17/27 个有
+- `CreateVideo` —— 17/27 个有
+- `SaveVideo` —— 17/27 个有
+- `GetNode` —— 6/27 个有
+- `SetNode` —— 6/27 个有
+- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 5/27 个有
+- `VAEDecode` —— 5/27 个有
+- `孤海注释` —— 5/27 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/27 个有
+- `ImpactFloat` —— 3/27 个有
+- `Int` —— 3/27 个有
+- `SimpleMath+` —— 3/27 个有
+- `MiniMaxH3ActivationChunkT8Advanced` —— 2/27 个有
+- `MiniMaxH3OutputTrimT8` —— 2/27 个有
+- `ConcatTextOfUtils` —— 1/27 个有
+- `GetVideoComponents` —— 1/27 个有
+- `LoadAudio` —— 1/27 个有
+- `LoadVideo` —— 1/27 个有
+- `MiniMaxH3SemanticBridgeComposeT8` —— 1/27 个有
+- `SaveImage` —— 1/27 个有
+- `Vignette` —— 1/27 个有
+- `忽略多组孤海` —— 1/27 个有
 
 ## 典型参数
 

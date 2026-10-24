@@ -3,62 +3,52 @@ name: unknown_workflow_video_lora_sampler_825
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.627
-common_nodes: [Bjornulf_ShowStringText, CLIPLoader, CR Text, CreateCFGScheduleFloatList, GetNode, INTConstant, ImageResizeKJv2, Int2Any_AS, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, SetNode, ShowText, SimpleCondition+, SimpleMath+, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.6135
+common_nodes: [GetNode, ImageResizeKJv2, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1952150601243283457.json, 视频生成/图生视频/1950148993163640833.json]
+members: [视频生成/图生视频/ditto视频轻松转绘，一键转绘，超好用超清！_2075018380200996866.json, 视频生成/文生视频/03-14-01-WAN2.1-视频风格转换-ditto_1989939354082660353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_825
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1952150601243283457.json、视频生成/图生视频/1950148993163640833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ditto视频轻松转绘，一键转绘，超好用超清！_2075018380200996866.json、视频生成/文生视频/03-14-01-WAN2.1-视频风格转换-ditto_1989939354082660353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowStringText`
-- `CLIPLoader`
-- `CR Text`
-- `CreateCFGScheduleFloatList`
 - `GetNode`
-- `INTConstant`
 - `ImageResizeKJv2`
-- `Int2Any_AS`
-- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RH_LLMAPI_NODE`
 - `SetNode`
-- `ShowText`
-- `SimpleCondition+`
-- `SimpleMath+`
-- `String`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Get_image_size` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Fast Bypasser (rgthree)` —— 1/2 个有
 - `ImageConcanate` —— 1/2 个有
-- `LoadWanVideoClipTextEncoder` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
+- `RIFE VFI` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
 
 ## 典型参数
 

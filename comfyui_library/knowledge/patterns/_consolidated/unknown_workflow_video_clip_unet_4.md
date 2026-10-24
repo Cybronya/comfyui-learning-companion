@@ -1,30 +1,31 @@
 ---
 name: unknown_workflow_video_clip_unet_4
 type: Unknown Workflow
-frequency: 15
-level: weak
-coverage: 0.986533
-common_nodes: [CLIPLoader, CLIPTextEncode, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+frequency: 14
+level: strong
+coverage: 0.9045
+common_nodes: [CLIPLoader, CLIPTextEncode, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [图片生成/文生图/1902941440509382658.json, 图片生成/文生图/1930295791557185537.json, 图片生成/文生图/1951273402428502018.json, 图片生成/文生图/Wan2.2文生视频工作流_2011408541554315266.json, 视频生成/图生视频/1951274276659867650.json, 视频生成/图生视频/1951804301834440706.json, 视频生成/图生视频/1987307533339701250.json, 视频生成/图生视频/1951277844100009986.json, 视频生成/图生视频/1952539360614920193.json, 视频生成/图生视频/1991844034222288897.json, 视频生成/图生视频/2043858986851639297.json, 视频生成/图生视频/2043862678724157442.json, 视频生成/文生视频/1950378020252073986.json, 视频生成/文生视频/1949853875865042945.json, 视频生成/文生视频/Wan2.2官网14B图生视频&文生视频&5B文or图生视频_2072999658865336320.json]
+members: [视频生成/图生视频/Wan2.2 SmoothMix图生视频高动态（官方版）_1980507194548469761.json, 视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）_1980673656160436226.json, 视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）_2049663225859457025.json, 视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）_2050777904669306881.json, 视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）（双图）_1983902184238710786.json, 视频生成/图生视频/Wan2.2-SmoothMix高动态图生视频，动态加强_1979742422047559681.json, 视频生成/图生视频/Wan2.2RemixV2.0图生视频_1989285733921902593.json, 视频生成/图生视频/Wan2.2SmoothMix首尾帧高动态视频生成_1979871682087260162.json, 视频生成/图生视频/Wan2.2_14B_首尾帧工作流【ComfyUI版】_1955942871625027585.json, 视频生成/图生视频/video_wan2_2_14B_首尾帧工作流_1952189425302360065.json, 视频生成/图生视频/wan2.2 首尾帧 极速版_1952583825614409730.json, 视频生成/图生视频/wan2.2 首尾帧视频 lightx2v 加速_1995400759510544385.json, 视频生成/图生视频/万相首尾帧_1953403463789150209.json, 视频生成/图生视频/首尾帧生视频_自动提示词_1955867522656555010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/1902941440509382658.json、图片生成/文生图/1930295791557185537.json、图片生成/文生图/1951273402428502018.json、图片生成/文生图/Wan2.2文生视频工作流_2011408541554315266.json、视频生成/图生视频/1951274276659867650.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 SmoothMix图生视频高动态（官方版）_1980507194548469761.json、视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）_1980673656160436226.json、视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）_2049663225859457025.json、视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）_2050777904669306881.json、视频生成/图生视频/Wan2.2 SmoothMix首尾帧视频高动态（官方版）（双图）_1983902184238710786.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：99%
+- **样本数**：14
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `LoadImage`
 - `ModelSamplingSD3`
 - `UNETLoader`
 - `VAEDecode`
@@ -32,39 +33,48 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 14/15 个有
-- `LoadImage` —— 11/15 个有
-- `EmptyHunyuanLatentVideo` —— 8/15 个有
-- `Wan22ImageToVideoLatent` —— 7/15 个有
-- `WanImageToVideo` —— 6/15 个有
-- `KSamplerAdvanced` —— 3/15 个有
-- `SaveImage` —— 2/15 个有
-- `CR Text` —— 1/15 个有
-- `LoraLoaderModelOnly` —— 1/15 个有
-- `SaveAnimatedWEBP` —— 1/15 个有
-- `TeaCache` —— 1/15 个有
+- `KSamplerAdvanced` —— 13/14 个有
+- `CLIPVisionEncode` —— 12/14 个有
+- `CLIPVisionLoader` —— 12/14 个有
+- `CR Text` —— 12/14 个有
+- `WanFirstLastFrameToVideo` —— 11/14 个有
+- `SimpleMath+` —— 10/14 个有
+- `PrimitiveInt` —— 8/14 个有
+- `LoraLoaderModelOnly` —— 7/14 个有
+- `WanVideoNAG` —— 6/14 个有
+- `PathchSageAttentionKJ` —— 5/14 个有
+- `ImageResizeKJ` —— 4/14 个有
+- `ImageResizeKJv2` —— 4/14 个有
+- `ImpactInt` —— 4/14 个有
+- `WanImageToVideo` —— 2/14 个有
+- `ApplySageAttention` —— 1/14 个有
+- `DeepTranslatorTextNode` —— 1/14 个有
+- `Joy_caption_two` —— 1/14 个有
+- `Joy_caption_two_load` —— 1/14 个有
+- `LayerUtility: TextJoin` —— 1/14 个有
+- `PainterI2V` —— 1/14 个有
+- `PrimitiveStringMultiline` —— 1/14 个有
+- `RH_LLMAPI_NODE` —— 1/14 个有
+- `WanMoeKSampler` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 4 - 30 | 14 | 38% |
-| Prompt 约束强度(CFG) | 5 | 1 - 20 | 15 | 6% |
-| 采样算法 | uni_pc | - | 15 | 60% |
-| 调度器 | simple | - | 15 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | fixed | - | 14 | 71% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 14 | 100% |
+| 采样算法 | 1 | 1 - 1.5 | 14 | 84% |
+| 调度器 | uni_pc | - | 14 | 43% |
+| 重绘幅度 | simple | - | 14 | 93% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 4 - 30，14 个样本，取值分散，一致性仅 38%
-- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 20，15 个样本，取值分散，一致性仅 6%
-- 采样算法 最常用 uni_pc，15 个样本，一致性 60%
-- 调度器 最常用 simple，15 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 最常用 fixed，14 个样本，一致性 71%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，14 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.5，14 个样本，取值集中（一致性 84%）
+- 调度器 最常用 uni_pc，14 个样本，一致性 43%
+- 重绘幅度 最常用 simple，14 个样本，一致性 93%

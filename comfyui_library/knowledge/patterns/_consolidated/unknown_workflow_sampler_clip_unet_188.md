@@ -1,81 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_188
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.610667
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageRemBg, easy seed]
+frequency: 7
+level: strong
+coverage: 0.903714
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux.2 klein 单图_多图编辑 文生图 二合一 基础_2012476273980874753.json, 图片生成/文生图/Flux.2 基础 文生图 +多图编辑 _ 图像参考 二合一_1993632576155877378.json, 图片生成/文生图/加速优化！Flux.2 基础文生图+多图编辑_图像参考多合一工作流_2058209151062462465.json]
+members: [图片生成/文生图/2029744272278294529.json, 图片生成/文生图/87time #02 krea 默认生成_1955480075464577026.json, 图片生成/文生图/AI装饰画场景快速生成_1954389130199351298.json, 图片生成/文生图/FLUX.1 LoRA模型工作流搭建_2014635794983555074.json, 图片生成/文生图/FLUX.1+LoRA模型工作流_2055148110460006402.json, 图片生成/文生图/FLUX图生图LoRA工作流_2048670126542692354.json, 图片生成/文生图/latent大法工作流_1926584319706566658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_188
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux.2 klein 单图_多图编辑 文生图 二合一 基础_2012476273980874753.json、图片生成/文生图/Flux.2 基础 文生图 +多图编辑 _ 图像参考 二合一_1993632576155877378.json、图片生成/文生图/加速优化！Flux.2 基础文生图+多图编辑_图像参考多合一工作流_2058209151062462465.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/2029744272278294529.json、图片生成/文生图/87time #02 krea 默认生成_1955480075464577026.json、图片生成/文生图/AI装饰画场景快速生成_1954389130199351298.json、图片生成/文生图/FLUX.1 LoRA模型工作流搭建_2014635794983555074.json、图片生成/文生图/FLUX.1+LoRA模型工作流_2055148110460006402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetNode`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+全部 7 个 workflow 都包含：
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `KSampler`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageRemBg`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 2/3 个有
-- `BasicGuider` —— 2/3 个有
-- `DrawMaskOnImage` —— 2/3 个有
-- `EasyCache` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `FastCanvas` —— 2/3 个有
-- `FastCanvasTool` —— 2/3 个有
-- `FluxGuidance` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `JoinImageWithAlpha` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ModelPatchTorchSettings` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `Qwen3_VQA` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `孤海-图像与遮罩描边` —— 2/3 个有
-- `1hew_AnySwitchSelect` —— 1/3 个有
-- `CFGGuider` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `RebatchLatents` —— 1/3 个有
-- `RepeatLatentBatch` —— 1/3 个有
+- `EmptySD3LatentImage` —— 5/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `EmptyLatentImage` —— 3/7 个有
+- `RH_Translator` —— 2/7 个有
+- `DeepTranslatorTextNode` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `LoraLoader` —— 1/7 个有
+- `ModelMergeFlux1` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `SaveLatent` —— 1/7 个有
+- `UpscaleModelLoader` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 22 | 20 - 30 | 7 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 86% |
+| 调度器 | simple | - | 7 | 57% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 768 | 768 - 1024 | 3 | 86% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -83,4 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 22，观测区间 20 - 30，7 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 86%
+- 调度器 最常用 simple，7 个样本，一致性 57%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 1024，3 个样本，取值集中（一致性 86%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）

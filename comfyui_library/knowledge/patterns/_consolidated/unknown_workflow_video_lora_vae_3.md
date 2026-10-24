@@ -7,13 +7,13 @@ coverage: 0.790333
 common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1986044446821285890.json, 视频生成/图生视频/1958010362488565762.json, 视频生成/图生视频/1958019974432534529.json, 视频生成/图生视频/2011973447630462977.json, 视频生成/图生视频/1941000380694294529.json, 视频生成/图生视频/1941390808585236482.json]
+members: [视频生成/图生视频/最强数字人InfiniteTalk_1986044446821285890.json, 视频生成/图生视频/最新最秀infinitetalk单人数字人_1958010362488565762.json, 视频生成/图生视频/最新最稳infinitetalk双人数字人_1958019974432534529.json, 视频生成/图生视频/电商生成高动态数字人  wan21 rcm_2011973447630462977.json, 视频生成/图生视频/自制-MultiTalk  多人版_1941000380694294529.json, 视频生成/图生视频/自制-MultiTalk v2 不运镜版_1941390808585236482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1986044446821285890.json、视频生成/图生视频/1958010362488565762.json、视频生成/图生视频/1958019974432534529.json、视频生成/图生视频/2011973447630462977.json、视频生成/图生视频/1941000380694294529.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/最强数字人InfiniteTalk_1986044446821285890.json、视频生成/图生视频/最新最秀infinitetalk单人数字人_1958010362488565762.json、视频生成/图生视频/最新最稳infinitetalk双人数字人_1958019974432534529.json、视频生成/图生视频/电商生成高动态数字人  wan21 rcm_2011973447630462977.json、视频生成/图生视频/自制-MultiTalk  多人版_1941000380694294529.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6

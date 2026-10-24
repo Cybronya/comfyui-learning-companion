@@ -1,89 +1,103 @@
 ---
 name: text_to_image_lora_sampler_clip_264
 type: Text To Image
-frequency: 4
-level: weak
-coverage: 0.83375
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyImage, EmptyLatentImage, INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, PrimitiveStringMultiline, ResolutionSelector, SaveImage, ShowText|pysssss, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy seed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 7
+level: strong
+coverage: 0.841571
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, ImpactSwitch, JjkText, KSampler, LoraLoaderModelOnly, PreviewImage, RH_Captioner, RH_Translator, ReferenceLatent, SaveImage, ShowText|pysssss, TTP_text_mix, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen 2.1超细节洗图生图二合一，支持Qwen 3.5自由切换的反推提示词工作流_2102878744355627010.json, 图片生成/文生图/krea2 超细节增强 洗图生图2合1工作流（自由切换版）_qwen3.5😼_2077340261931380738.json, 图片生成/文生图/krea2 风格之王 全能模型 Qwen3.5自动提示词文生图工作流（自由版）_2070756328192172034.json, 视频生成/图生视频/Qwen_2.1超细节洗图生图二合一，支持Qwen_3.5自由切换的反推提示词工作流_2105120232384851969.json]
+members: [图片生成/图生图/kontext本地版溶图打光｜自动版图生图直出_2092006370110435329.json, 图片生成/图生图/kontext本地版溶图打光｜自动版图生图直出_2092440180966912002.json, 图片生成/图生图/参考图模式换背景｜Kontext重新打光商品替换_2092186316686581762.json, 图片生成/图生图/双图版稳定融图｜Kontext产品商品替换图生图_2092195287308791809.json, 图片生成/图生图/溶图打光自动版｜kontext本地版图生图光影处理_2089495298904248321.json, 图片生成/图生图/自动溶图打光｜kontext本地版图生图一键出图_2092136961707438082.json, 图片生成/图生图/自动版打光溶图kontext本地版图生图_2087406300689952769.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_264
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen 2.1超细节洗图生图二合一，支持Qwen 3.5自由切换的反推提示词工作流_2102878744355627010.json、图片生成/文生图/krea2 超细节增强 洗图生图2合1工作流（自由切换版）_qwen3.5😼_2077340261931380738.json、图片生成/文生图/krea2 风格之王 全能模型 Qwen3.5自动提示词文生图工作流（自由版）_2070756328192172034.json、视频生成/图生视频/Qwen_2.1超细节洗图生图二合一，支持Qwen_3.5自由切换的反推提示词工作流_2105120232384851969.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/kontext本地版溶图打光｜自动版图生图直出_2092006370110435329.json、图片生成/图生图/kontext本地版溶图打光｜自动版图生图直出_2092440180966912002.json、图片生成/图生图/参考图模式换背景｜Kontext重新打光商品替换_2092186316686581762.json、图片生成/图生图/双图版稳定融图｜Kontext产品商品替换图生图_2092195287308791809.json、图片生成/图生图/溶图打光自动版｜kontext本地版图生图光影处理_2089495298904248321.json…）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyImage`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `INTConstant`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `ImpactSwitch`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `PreviewImage`
+- `RH_Captioner`
+- `RH_Translator`
+- `ReferenceLatent`
 - `SaveImage`
 - `ShowText|pysssss`
-- `Text Multiline`
+- `TTP_text_mix`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy seed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `Switch any [Crystools]` —— 3/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `JjkText` —— 2/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `TextEncodeQwenImage21` —— 2/4 个有
-- `TextGenerateLTX2Prompt` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `solarL_SaveImagesToZip` —— 2/4 个有
-- `ConditioningKrea2Rebalance` —— 1/4 个有
-- `LatentUpscaleBy` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `ImageConcanate` —— 6/7 个有
+- `LoadAndResizeImage` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `LoraLoader` —— 6/7 个有
+- `Primitive integer [Crystools]` —— 6/7 个有
+- `RepeatLatentBatch` —— 6/7 个有
+- `孤海注释` —— 6/7 个有
+- `ColorMatch` —— 5/7 个有
+- `CR Text Concatenate` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageAndMaskPreview` —— 1/7 个有
+- `ImagePadForOutpaint` —— 1/7 个有
+- `ImageResizeKJ` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `Mask Fill Holes` —— 1/7 个有
+- `NunchakuFluxDiTLoader` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `Seed` —— 1/7 个有
+- `easy imageConcat` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 552 | 80 - 1024 | 4 | 14% |
-| 高度 | 808 | 80 - 1536 | 4 | 10% |
-| 采样步数 | 6 | 4 - 8 | 4 | 67% |
-| Prompt 约束强度(CFG) | 2.75 | 1 - 4.5 | 4 | 36% |
-| 采样算法 | er_sde | - | 4 | 50% |
-| 调度器 | beta | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 6 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 552，观测区间 80 - 1024，4 个样本，取值分散，一致性仅 14%
-- 高度 中位数 808，观测区间 80 - 1536，4 个样本，取值分散，一致性仅 10%
-- 采样步数 中位数 6，观测区间 4 - 8，4 个样本
-- Prompt 约束强度(CFG) 中位数 2.75，观测区间 1 - 4.5，4 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 er_sde，4 个样本，一致性 50%
-- 调度器 最常用 beta，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（5/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

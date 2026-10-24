@@ -3,45 +3,48 @@ name: unknown_workflow_video_sampler_clip_264
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9375
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyHunyuanLatentVideo, FluxGuidance, KSamplerSelect, ModelSamplingSD3, RandomNoise, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
+coverage: 0.921
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTXVConditioning, LTXVImgToVideo, LTXVScheduler, LoadImage, SamplerCustom, TextInput_, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/1901602052710244354.json, 视频生成/文生视频/1870307237162815489.json]
+members: [视频生成/图生视频/最快的视频生成模型+LTX-Video+图生视频-StarAI_1898011763626201090.json, 视频生成/图生视频/🦖 LTXV 0.9.5 极速生视频_1897826288936407042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_264
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1901602052710244354.json、视频生成/文生视频/1870307237162815489.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/最快的视频生成模型+LTX-Video+图生视频-StarAI_1898011763626201090.json、视频生成/图生视频/🦖 LTXV 0.9.5 极速生视频_1897826288936407042.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyHunyuanLatentVideo`
-- `FluxGuidance`
+- `CheckpointLoaderSimple`
 - `KSamplerSelect`
-- `ModelSamplingSD3`
-- `RandomNoise`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoader`
+- `LTXVConditioning`
+- `LTXVImgToVideo`
+- `LTXVScheduler`
+- `LoadImage`
+- `SamplerCustom`
+- `TextInput_`
+- `VAEDecode`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `StringConstantMultiline` —— 1/2 个有
-- `TeaCacheHunyuanVideoSampler` —— 1/2 个有
+- `ApplyFBCacheOnModel` —— 1/2 个有
+- `ArgosTranslateTextNode` —— 1/2 个有
+- `Bjornulf_ShowStringText` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PatchModelPatcherOrder` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
 
 ## 典型参数
 

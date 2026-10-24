@@ -1,72 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_45
 type: Unknown Workflow
-frequency: 22
-level: strong
-coverage: 0.734227
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text Concatenate, Florence2ModelLoader, Florence2Run, INTConstant, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy showAnything]
+frequency: 21
+level: moderate
+coverage: 0.979
+common_nodes: [AudioSeparation, Display Int (rgthree), HuMoEmbeds, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, PreviewAudio, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy imageRemBg, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/1930497096028426242.json, 视频生成/图生视频/1931553417045409794.json, 视频生成/图生视频/1927308974876692481.json, 视频生成/图生视频/1929861352612073473.json, 视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json, 视频生成/图生视频/2043240803773980674.json, 视频生成/图生视频/2043244111414697986.json, 视频生成/图生视频/1929565877887471617.json, 视频生成/图生视频/2007615510288011266.json, 视频生成/图生视频/2048597647006633986.json, 视频生成/图生视频/2048657356048834561.json, 视频生成/图生视频/1978647980314136577.json, 视频生成/图生视频/1929869489117237249.json, 视频生成/图生视频/1996871652937977858.json, 视频生成/图生视频/1929847163700854786.json, 视频生成/图生视频/1930122679813095426.json, 视频生成/图生视频/电影级别运镜图生视频合集_1930199609451384834.json, 视频生成/图生视频/1937550595018375170.json, 视频生成/图生视频/1980239592316186626.json, 视频生成/图生视频/1989638202606669825.json, 视频生成/图生视频/1934983961166684161.json, 视频生成/文生视频/1951765085700214786.json]
+members: [图片生成/图生图/Humo双人合影（可多人）_1966919384042180609.json, 视频生成/图生视频/Humo+Infinite talk 单人参考生视频_2030181913666785281.json, 视频生成/图生视频/Humo+Infinite talk双人--最接近超能视频2.0参考生视频的工作流_2031536388583202818.json, 视频生成/图生视频/Humo+Infinite talk多段MV直接生成_1973740275090763777.json, 视频生成/图生视频/Humo+Infinite talk多段剧情一键生成_1969802648167849986.json, 视频生成/图生视频/Humo+InfiniteTalk 人物MV制作_1968324192087232514.json, 视频生成/图生视频/Humo分段直接生成MV_1968112609591459841.json, 视频生成/图生视频/Humo单人对口型By-Aiwood_1966919494457233409.json, 视频生成/图生视频/Humo单人对口型_1970095013608779777.json, 视频生成/图生视频/Humo电商展示+语音_2015598941240299522.json, 视频生成/图生视频/Humo电商展示+语音by Aiwood_1966919364043739138.json, 视频生成/图生视频/Humo电商展示+语音by+Aiwood_2037340771631767553.json, 视频生成/图生视频/Humo电商展示+语音生成_2051558209323839489.json, 视频生成/图生视频/Humo电商展示+语音生成_2052711289109139457.json, 视频生成/图生视频/Humo电商展示+语音生成_2069759679651209218.json, 视频生成/图生视频/Humo电商带货视频制作_1994443189438324738.json, 视频生成/图生视频/MV五分镜直接生成（WAN2.2 Humo+Infinite talk）_1973059244465500161.json, 视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk 优化后_2034484341866237954.json, 视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk_2029082504245809153.json, 视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk_2032263750392225793.json, 视频生成/图生视频/电商专用：口播视频—Humo+Infinite talk+IndexTTS_2028749472515235842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_45
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/1930497096028426242.json、视频生成/图生视频/1931553417045409794.json、视频生成/图生视频/1927308974876692481.json、视频生成/图生视频/1929861352612073473.json、视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/Humo双人合影（可多人）_1966919384042180609.json、视频生成/图生视频/Humo+Infinite talk 单人参考生视频_2030181913666785281.json、视频生成/图生视频/Humo+Infinite talk双人--最接近超能视频2.0参考生视频的工作流_2031536388583202818.json、视频生成/图生视频/Humo+Infinite talk多段MV直接生成_1973740275090763777.json、视频生成/图生视频/Humo+Infinite talk多段剧情一键生成_1969802648167849986.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
-- **可信度**：强结论
-- **平均知识覆盖**：73%
+- **样本数**：21
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text Concatenate`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `INTConstant`
+全部 21 个 workflow 都包含：
+- `AudioSeparation`
+- `Display Int (rgthree)`
+- `HuMoEmbeds`
 - `ImageResizeKJv2`
-- `KSampler`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewAudio`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoTeaCacheKJ`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `easy imageRemBg`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 19/22 个有
-- `PrimitiveString` —— 19/22 个有
-- `VHS_LoadVideo` —— 19/22 个有
-- `CR Prompt Text` —— 13/22 个有
-- `ShowText|pysssss` —— 10/22 个有
-- `easy getNode` —— 9/22 个有
-- `easy setNode` —— 9/22 个有
-- `CR Text` —— 6/22 个有
-- `Primitive integer [Crystools]` —— 1/22 个有
-- `easy anythingIndexSwitch` —— 1/22 个有
+- `INTConstant` —— 20/21 个有
+- `SoundFlow_TrimAudio` —— 20/21 个有
+- `ImageBatchMulti` —— 19/21 个有
+- `RecordAudio` —— 13/21 个有
+- `CreateCFGScheduleFloatList` —— 11/21 个有
+- `ImageConcanate` —— 11/21 个有
+- `MultiTalkModelLoader` —— 11/21 个有
+- `PreviewImage` —— 11/21 个有
+- `ImageFromBatch` —— 10/21 个有
+- `MultiTalkWav2VecEmbeds` —— 10/21 个有
+- `WanVideoCombineEmbeds` —— 10/21 个有
+- `WanVideoImageToVideoMultiTalk` —— 10/21 个有
+- `Wav2VecModelLoader` —— 10/21 个有
+- `Display Any (rgthree)` —— 4/21 个有
+- `HAIGC_VideoLastFrame` —— 4/21 个有
+- `Seed_` —— 4/21 个有
+- `Text` —— 4/21 个有
+- `ToFloat` —— 4/21 个有
+- `WanVideoEncode` —— 4/21 个有
+- `CR Prompt Text` —— 2/21 个有
+- `AudioBeforeAfterSilence` —— 1/21 个有
+- `AudioConcat` —— 1/21 个有
+- `ImageAddMulti` —— 1/21 个有
+- `JWImageBatchCount` —— 1/21 个有
+- `JWInteger` —— 1/21 个有
+- `MaxNode` —— 1/21 个有
+- `PrimitiveFloat` —— 1/21 个有
+- `TextBoxNode_UTK` —— 1/21 个有
+- `ZML_ImageBatchToInt` —— 1/21 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/21 个有
+- `easy indexTTSGenerateSimple` —— 1/21 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 22 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 22 | 100% |
-| 采样算法 | uni_pc | - | 22 | 100% |
-| 调度器 | simple | - | 22 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,8 +90,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，22 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，22 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，22 个样本，一致性 100%
-- 调度器 最常用 simple，22 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

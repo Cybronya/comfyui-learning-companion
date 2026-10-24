@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_298
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.8068
-common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.46325
+common_nodes: [CR Prompt Text, Comfly_api_set, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1985868258882592770.json, 音频生成/音频生成/AI 语音克隆方言版 （四川 河南 粤语）_1985973742637592578.json, 音频生成/音频生成/SoulX-podcas声音克隆_1986779112427696130.json, 音频生成/音频生成/TTS克隆多人对话音频支持方言_2007750625056006146.json, 音频生成/音频生成/声音克隆TTS2_双人对话+背景音_可以模仿情人电话粥了_2005650839295455233.json]
+members: [视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json, 视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json, 视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo首尾帧视频（约1.125元_5S-具体根据官方积分计算）_1995091218533113857.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 Pro图生视频特价版（基准1元_8S）_1980566754525102082.json, 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 首尾帧components版（基准0.3_8S）_1980581515803447298.json, 视频生成/图生视频/调用T8的api 全能视频V3.1 首尾帧（4-5毛_8S）_2000505085736124418.json, 视频生成/文生视频/(贞贞AI工坊)全能视频V3.1 Pro文生视频特价版（基准1元_8S）_1980614790232064001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_298
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1985868258882592770.json、音频生成/音频生成/AI 语音克隆方言版 （四川 河南 粤语）_1985973742637592578.json、音频生成/音频生成/SoulX-podcas声音克隆_1986779112427696130.json、音频生成/音频生成/TTS克隆多人对话音频支持方言_2007750625056006146.json、音频生成/音频生成/声音克隆TTS2_双人对话+背景音_可以模仿情人电话粥了_2005650839295455233.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json、视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json、视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo首尾帧视频（约1.125元_5S-具体根据官方积分计算）_1995091218533113857.json、视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json、视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 Pro图生视频特价版（基准1元_8S）_1980566754525102082.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `LoadImage`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/5 个有
-- `JjkText` —— 1/5 个有
-- `SoundFlow_Mixer` —— 1/5 个有
-- `Text Concatenate` —— 1/5 个有
+- `Comfly_Googel_Veo3` —— 5/8 个有
+- `Comfly_vidu_img2video` —— 2/8 个有
+- `Comfly_vidu_start-end2video` —— 1/8 个有
+- `HfSaveImage` —— 1/8 个有
 
 ## 典型参数
 

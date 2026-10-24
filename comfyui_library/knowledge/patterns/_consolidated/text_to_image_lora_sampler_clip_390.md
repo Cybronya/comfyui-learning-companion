@@ -1,76 +1,76 @@
 ---
 name: text_to_image_lora_sampler_clip_390
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8165
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, DapaoRandomPromptLineExtractNode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, RH_LLMAPI_NODE, SaveImage, VAEDecode, VAELoader, easy showAnything]
+frequency: 5
+level: strong
+coverage: 0.8076
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveAudio, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图写实国漫3D风手动+API随机提示词.千问Qwen_2009092152491515906.json, 图片生成/文生图/网恋照片-全是美女-批量出_2024483802432675841.json]
+members: [音频生成/音频生成/Suno自定义模式音乐生成 歌曲风格定制方案_2110365492958552066.json, 音频生成/音频生成/VoxCPM2基础工作流｜语音合成音频生成_2095137648078839810.json, 音频生成/音频生成/VoxCPM2基础工作流｜音频生成语音合成处理_2095112468350717954.json, 音频生成/音频生成/indexTTS2高保真语音克隆｜文本转语音音色复刻_2089443854935220225.json, 音频生成/音频生成/多人音色克隆情绪TTS｜VOXCPM2.0音频自动生成_2092613191384780802.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_390
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/文生图写实国漫3D风手动+API随机提示词.千问Qwen_2009092152491515906.json、图片生成/文生图/网恋照片-全是美女-批量出_2024483802432675841.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Suno自定义模式音乐生成 歌曲风格定制方案_2110365492958552066.json、音频生成/音频生成/VoxCPM2基础工作流｜语音合成音频生成_2095137648078839810.json、音频生成/音频生成/VoxCPM2基础工作流｜音频生成语音合成处理_2095112468350717954.json、音频生成/音频生成/indexTTS2高保真语音克隆｜文本转语音音色复刻_2089443854935220225.json、音频生成/音频生成/多人音色克隆情绪TTS｜VOXCPM2.0音频自动生成_2092613191384780802.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `DapaoRandomPromptLineExtractNode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
+- `SaveAudio`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `LatentUpscaleBy` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
+- `LoadAudio` —— 4/5 个有
+- `RunningHub_VoxCPM_Generate` —— 2/5 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `IndexTTS2_Basic` —— 1/5 个有
+- `RH_RhartAudioSunoV55Custom` —— 1/5 个有
+- `WujiVoiceActorVoxCPM` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1444 | - | 2 | 63% |
-| 高度 | 1196 | - | 2 | 93% |
-| 采样步数 | 19.5 | - | 2 | 46% |
-| Prompt 约束强度(CFG) | 2.25 | - | 2 | 44% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1444，样本不足，未给区间，2 个样本
-- 高度 中位数 1196，样本不足，未给区间，2 个样本，取值集中（一致性 93%）
-- 采样步数 中位数 19.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 2.25，样本不足，未给区间，2 个样本，取值分散，一致性仅 44%
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

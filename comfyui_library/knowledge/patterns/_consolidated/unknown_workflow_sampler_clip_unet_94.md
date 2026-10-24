@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_94
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.900429
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8697
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EasyCache, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader]
 problems: []
-missing: [CR SDXL Aspect Ratio, easy cleanGpuUsed, Seed (rgthree)]
-members: [图片生成/文生图/1955199580277280770.json, 图片生成/文生图/1955933159051460609.json, 图片生成/文生图/1957737610612670465.json, 图片生成/文生图/1960223327673593857.json, 图片生成/文生图/1985963732088041473.json, 图片生成/文生图/FLUX + LORA 基础工作流_1830939420676771841.json, 图片生成/文生图/人物一致性6宫格小红书风格_1894278785376890882.json]
+missing: []
+members: [comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_i2v.json, comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_t2v.json, 视频生成/图生视频/(2倍加速)HunyuanVideo 1.5 720P 20步优化版图生视频_1992829653211738114.json, 视频生成/图生视频/HunyuanVideo 1.5 720P 20步优化版图生视频_1992813582438166529.json, 视频生成/图生视频/HunyuanVideo 1.5 720P 图生视频优化版_1992895352435003394.json, 视频生成/图生视频/HunyuanVideo 1.5 版图生视频_1992883581467029505.json, 视频生成/图生视频/video_hunyuan_video_1.5_720p_i2v-混元Video1.5大模型——图生视频工作流_1994018725741477890.json, 视频生成/图生视频/图生视频 _ 支持文字 HunyuanVideo1.5_1996147108740808705.json, 视频生成/图生视频/混元Video1.5大模型——图生视频工作流_1993514480827121665.json, 视频生成/文生视频/Hunyuan_Video_1.5_720p_i2v + Upscaler_1998064669535404034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_94
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1955199580277280770.json、图片生成/文生图/1955933159051460609.json、图片生成/文生图/1957737610612670465.json、图片生成/文生图/1960223327673593857.json、图片生成/文生图/1985963732088041473.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_i2v.json、comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_t2v.json、视频生成/图生视频/(2倍加速)HunyuanVideo 1.5 720P 20步优化版图生视频_1992829653211738114.json、视频生成/图生视频/HunyuanVideo 1.5 720P 20步优化版图生视频_1992813582438166529.json、视频生成/图生视频/HunyuanVideo 1.5 720P 图生视频优化版_1992895352435003394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
+- `CreateVideo`
 - `DualCLIPLoader`
-- `FluxGuidance`
+- `EasyCache`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
+- `ModelSamplingSD3`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `EmptySD3LatentImage` —— 4/7 个有
-- `CR SDXL Aspect Ratio` —— 3/7 个有
-- `easy cleanGpuUsed` —— 2/7 个有
-- `ApplyFBCacheOnModel` —— 1/7 个有
-- `ImageUpscaleWithModelBatched` —— 1/7 个有
-- `ImpactInt` —— 1/7 个有
-- `LoraLoader` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `Seed (rgthree)` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
+- `CLIPVisionEncode` —— 9/10 个有
+- `CLIPVisionLoader` —— 9/10 个有
+- `HunyuanVideo15ImageToVideo` —— 9/10 个有
+- `LoadImage` —— 9/10 个有
+- `JWInteger` —— 5/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
+- `DisableNoise` —— 4/10 个有
+- `HunyuanVideo15LatentUpscaleWithModel` —— 4/10 个有
+- `HunyuanVideo15SuperResolution` —— 4/10 个有
+- `LatentUpscaleModelLoader` —— 4/10 个有
+- `SplitSigmas` —— 4/10 个有
+- `Label (rgthree)` —— 2/10 个有
+- `AddLabel` —— 1/10 个有
+- `CR Text` —— 1/10 个有
+- `DF_Int_to_Float` —— 1/10 个有
+- `EmptyHunyuanVideo15Latent` —— 1/10 个有
+- `JjkText` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `RH_Translator` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR SDXL Aspect Ratio、easy cleanGpuUsed、Seed (rgthree)
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_569
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.623667
-common_nodes: [Comfly_sora2, LoadImage, SaveVideo]
+coverage: 0.885
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
-missing: [Comfly_sora2]
-members: [视频生成/图生视频/1976510159512051713.json, 视频生成/文生视频/1976488773498310657.json, 视频生成/文生视频/全能视频S文生视频+图生视频_1979842385687515137.json]
+missing: []
+members: [视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json, 视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json, 视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json, 视频生成/图生视频/可灵 v2.6 Motion Control_2018215664321830914.json, 视频生成/图生视频/可灵动作控制Kling v2.6 动作迁移模仿 表情口型神同步 高难度动作画面细节听指令_2054007288427499522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_569
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1976510159512051713.json、视频生成/文生视频/1976488773498310657.json、视频生成/文生视频/全能视频S文生视频+图生视频_1979842385687515137.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json、视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json、视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json、视频生成/图生视频/可灵 v2.6 Motion Control_2018215664321830914.json、视频生成/图生视频/可灵动作控制Kling v2.6 动作迁移模仿 表情口型神同步 高难度动作画面细节听指令_2054007288427499522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Comfly_sora2`
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `LoadVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `RH_Kling26_MotionControl` —— 3/5 个有
+- `RH_KlingO1_VideoEdit` —— 2/5 个有
+- `CR Text` —— 1/5 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Comfly_sora2
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

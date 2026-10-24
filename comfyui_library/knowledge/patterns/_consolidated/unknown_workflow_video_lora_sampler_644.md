@@ -7,13 +7,13 @@ coverage: 0.857
 common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, ImageFromBatch+, JWInteger, JWStringConcat, LayerColor: Brightness & Contrast, LoadWanVideoT5TextEncoder, MathExpression|pysssss, ShowText|pysssss, TextConcat, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1953073108568764418.json, 视频生成/文生视频/1955159900055900162.json, 视频生成/文生视频/1958344875328618498.json]
+members: [视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json, 视频生成/文生视频/Wan2.2-14B 文生视频 KJ高清1280版（自动提示词）_1955159900055900162.json, 视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_644
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1953073108568764418.json、视频生成/文生视频/1955159900055900162.json、视频生成/文生视频/1958344875328618498.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json、视频生成/文生视频/Wan2.2-14B 文生视频 KJ高清1280版（自动提示词）_1955159900055900162.json、视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

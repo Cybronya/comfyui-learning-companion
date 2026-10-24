@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_520
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.889
-common_nodes: [CR Prompt Text, LoadImage, SaveImage]
+coverage: 0.6362
+common_nodes: [ExpressionEditor, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Image2.0文生图_2046782365061615618.json, 图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json, 图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json]
+members: [图片生成/图生图/【超简单版】Emoji表情编辑_1923590104647200770.json, 图片生成/图生图/【超简单版】Emoji表情编辑：一图即可生产各种表情，九宫格放不下~_2014576225339052034.json, 图片生成/图生图/人物面部表情调整与迁移_2001586644711010306.json, 图片生成/图生图/原图参考新图表情_2001611167548227586.json, 图片生成/图生图/表情生成器（丝滑又简单）_2029109512539480065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_520
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Image2.0文生图_2046782365061615618.json、图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json、图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【超简单版】Emoji表情编辑_1923590104647200770.json、图片生成/图生图/【超简单版】Emoji表情编辑：一图即可生产各种表情，九宫格放不下~_2014576225339052034.json、图片生成/图生图/人物面部表情调整与迁移_2001586644711010306.json、图片生成/图生图/原图参考新图表情_2001611167548227586.json、图片生成/图生图/表情生成器（丝滑又简单）_2029109512539480065.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
+- `ExpressionEditor`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_GPT_Image15` —— 2/3 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/3 个有
+- `ImageScale` —— 3/5 个有
+- `ImageConcanate` —— 2/5 个有
 
 ## 典型参数
 

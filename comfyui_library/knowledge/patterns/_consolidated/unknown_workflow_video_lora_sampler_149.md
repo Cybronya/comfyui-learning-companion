@@ -7,13 +7,13 @@ coverage: 0.837417
 common_nodes: [GetNode, ImageConcanate, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, Seed, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2080697137448443906.json, 视频生成/图生视频/2078455563666677762.json, 视频生成/图生视频/2075884144709689346.json, 视频生成/图生视频/2076558631444770818.json, 视频生成/图生视频/2080945536378687490.json, 视频生成/图生视频/2074502633741705218.json, 视频生成/图生视频/2078408351960100866.json, 视频生成/图生视频/2078429040989528065.json, 视频生成/图生视频/2078697075843362818.json, 视频生成/图生视频/来财蛙呱呱呱_2085649794168610818.json, 视频生成/图生视频/真人换卡通人物_2085656573984198657.json, 视频生成/图生视频/2080234302566125570.json]
+members: [视频生成/图生视频/交互式背景替换2_2080697137448443906.json, 视频生成/图生视频/多人场景选取双角色替换_2078455563666677762.json, 视频生成/图生视频/多人物交互指定替换_2075884144709689346.json, 视频生成/图生视频/影视二创角色替换1_2076558631444770818.json, 视频生成/图生视频/替换视频中的指定角色_2080945536378687490.json, 视频生成/图生视频/最新Bernini加速版人物替换_2074502633741705218.json, 视频生成/图生视频/最新影视二创多人场景选取角色替换_2078408351960100866.json, 视频生成/图生视频/最新影视二创视频角色替换_2078429040989528065.json, 视频生成/图生视频/最新影视二创视频角色替换漫剧_2078697075843362818.json, 视频生成/图生视频/来财蛙呱呱呱_2085649794168610818.json, 视频生成/图生视频/真人换卡通人物_2085656573984198657.json, 视频生成/图生视频/舞蹈动作迁移_2080234302566125570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_149
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/2080697137448443906.json、视频生成/图生视频/2078455563666677762.json、视频生成/图生视频/2075884144709689346.json、视频生成/图生视频/2076558631444770818.json、视频生成/图生视频/2080945536378687490.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/交互式背景替换2_2080697137448443906.json、视频生成/图生视频/多人场景选取双角色替换_2078455563666677762.json、视频生成/图生视频/多人物交互指定替换_2075884144709689346.json、视频生成/图生视频/影视二创角色替换1_2076558631444770818.json、视频生成/图生视频/替换视频中的指定角色_2080945536378687490.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12

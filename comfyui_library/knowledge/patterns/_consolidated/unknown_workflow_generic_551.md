@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_551
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, SaveAudio, Textbox]
+coverage: 0.7034
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/Omnivoice-tts 声音克隆_2093697395476488194.json, 音频生成/音频生成/Omnivoice-tts 声音克隆 ComfyUI 工作流_2051302795759890433.json, 音频生成/音频生成/Omnivoice-tts 声音克隆_2092511461825404930.json]
+members: [图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json, 图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json, 图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json, 图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json, 图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_551
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Omnivoice-tts 声音克隆_2093697395476488194.json、音频生成/音频生成/Omnivoice-tts 声音克隆 ComfyUI 工作流_2051302795759890433.json、音频生成/音频生成/Omnivoice-tts 声音克隆_2092511461825404930.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json、图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json、图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json、图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json、图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `SaveAudio`
-- `Textbox`
+全部 5 个 workflow 都包含：
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 2/3 个有
+- `JjkText` —— 4/5 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/5 个有
+- `RHLLMChatNode` —— 3/5 个有
+- `RH_RhartImageG2TextToImage` —— 2/5 个有
 
 ## 典型参数
 

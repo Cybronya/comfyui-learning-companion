@@ -3,39 +3,37 @@ name: unknown_workflow_video_upscale_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [Fast Groups Bypasser (rgthree), ImageUpscaleWithModel, ImpactInt, JjkText, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, RHBatchImages:, RIFE VFI, RunningHub_FramePack, UpscaleModelLoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.793
+common_nodes: [FaceRestoreCFWithModel, FaceRestoreModelLoader, ImageResize+, ImageUpscaleWithModel, LayerColor: Brightness & Contrast, LoadImage, PreviewImage, ReActorFaceSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1913810352075931649.json, 视频生成/图生视频/1913426661780484097.json]
+members: [图片生成/图生图/快速换脸_1919744550246481921.json, 视频生成/图生视频/【视频流】Reactor视频换脸_1819030257314758658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913810352075931649.json、视频生成/图生视频/1913426661780484097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/快速换脸_1919744550246481921.json、视频生成/图生视频/【视频流】Reactor视频换脸_1819030257314758658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `FaceRestoreCFWithModel`
+- `FaceRestoreModelLoader`
+- `ImageResize+`
 - `ImageUpscaleWithModel`
-- `ImpactInt`
-- `JjkText`
-- `LTXVPromptEnhancer`
-- `LTXVPromptEnhancerLoader`
+- `LayerColor: Brightness & Contrast`
 - `LoadImage`
-- `RHBatchImages:`
-- `RIFE VFI`
-- `RunningHub_FramePack`
+- `PreviewImage`
+- `ReActorFaceSwap`
 - `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 ## 典型参数
 

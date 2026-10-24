@@ -3,34 +3,34 @@ name: unknown_workflow_video_96
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9375
-common_nodes: [FlashVSRNode, LayerUtility: ImageScaleByAspectRatio V2, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [CR Prompt Text, GetVideoComponents, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1983077919813726210.json, 视频生成/文生视频/FlashVSR V1.1放大_2018310765513547778.json]
+members: [视频生成/图生视频/RH 全能视频V3.1-pro-图生视频-低价渠道版-0.5元_次_2062203681218584577.json, 视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_96
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1983077919813726210.json、视频生成/文生视频/FlashVSR V1.1放大_2018310765513547778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频V3.1-pro-图生视频-低价渠道版-0.5元_次_2062203681218584577.json、视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FlashVSRNode`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `GetVideoComponents`
+- `LoadImage`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `RH_RhartVideoV31ProImageToVideo` —— 1/2 个有
+- `RH_RhartVideoV31ProStartEndToVideo` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_819
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.675
-common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioAdvanced]
+frequency: 4
+level: moderate
+coverage: 0.558
+common_nodes: [CR Text, JWString, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, ShowText|pysssss, TDQwen3TTSBatchGenerateSpeaker, TDQwen3TTSModelLoader, TDQwen3TTSMultiDialog, parse_json_node]
 problems: []
 missing: []
-members: [数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json, 音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json]
+members: [音频生成/音频生成/【只需上传小说】一键全自动有声小说生成-自动识别角色、声线、台词_2016046662497603586.json, 音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2015822417020592129.json, 音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2086833033843404801.json, 音频生成/音频生成/一键全自动有声小说生成_2033873863368511490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_819
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json、音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/【只需上传小说】一键全自动有声小说生成-自动识别角色、声线、台词_2016046662497603586.json、音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2015822417020592129.json、音频生成/音频生成/【洋洋】一键生成有声小说推文-自动识别角色、可手动添加多音色_2086833033843404801.json、音频生成/音频生成/一键全自动有声小说生成_2033873863368511490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `JWString`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `TDQwen3TTSBatchGenerateSpeaker`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSMultiDialog`
+- `parse_json_node`
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

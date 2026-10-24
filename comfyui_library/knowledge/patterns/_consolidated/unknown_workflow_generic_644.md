@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_644
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.301667
-common_nodes: [JjkText, RH_RhartAudioSunoV55Custom, SaveAudio, easy showAnything]
+coverage: 0.773
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_MinimaxHailuoH3ContextIrMultimodal, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno V5.5 音频生成_2080104006726275074.json, 音频生成/音频生成/Suno_Custom自定义音乐生成（RH版）_2054438474958295041.json, 音频生成/音频生成/suno音乐生成_2057015174275624962.json]
+members: [图片生成/图生图/H3_MAX智能运镜工作流｜AI看图自动运镜_2101301949768491010.json, 视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100069057369300993.json, 视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100145638406184962.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2101304865048846337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_644
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Suno V5.5 音频生成_2080104006726275074.json、音频生成/音频生成/Suno_Custom自定义音乐生成（RH版）_2054438474958295041.json、音频生成/音频生成/suno音乐生成_2057015174275624962.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/H3_MAX智能运镜工作流｜AI看图自动运镜_2101301949768491010.json、视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100069057369300993.json、视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100145638406184962.json、视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2101304865048846337.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：30%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JjkText`
-- `RH_RhartAudioSunoV55Custom`
-- `SaveAudio`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RH_MinimaxHailuoH3ContextIrMultimodal`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `RH_MinimaxHailuoH3MaxImageToVideo` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/4 个有
 
 ## 典型参数
 

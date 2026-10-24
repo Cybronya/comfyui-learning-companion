@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_789
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4425
-common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage, 孤海注释]
+frequency: 4
+level: moderate
+coverage: 0.95825
+common_nodes: [LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/全能专业设计N2+G2_文生图_图生图【阿夕AI】_2051588763540836353.json, 图片生成/文生图/全能图片G2通用流（低价版）_2051172217471422466.json]
+members: [音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json, 音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json, 音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json, 音频生成/音频生成/生成双人对话声音_2035281634374717442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_789
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能专业设计N2+G2_文生图_图生图【阿夕AI】_2051588763540836353.json、图片生成/文生图/全能图片G2通用流（低价版）_2051172217471422466.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json、音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json、音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json、音频生成/音频生成/生成双人对话声音_2035281634374717442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：44%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `孤海注释`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
+- `Text` —— 3/4 个有
+- `FishS2MultiSpeakerTTS` —— 2/4 个有
+- `IndexTTSRun` —— 2/4 个有
 
 ## 典型参数
 
@@ -47,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

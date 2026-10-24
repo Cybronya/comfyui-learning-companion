@@ -3,60 +3,67 @@ name: unknown_workflow_video_lora_sampler_411
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7616
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.3582
+common_nodes: [BOOLConstant, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyNumberConvert, GetNode, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, PrimitiveStringMultiline, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus TorchCompileSettings, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3-self-数字人_文字驱动_2104056713530925057.json, 视频生成/图生视频/H3图生视频！长视频加速版！H3 Image-to-Video! Long-Form Video_2107994007895896066.json, 视频生成/图生视频/H3图生视频！长视频加速版！H3_Image-to-Video!_Long-Form_Video_2110912412697325569.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2084203498043957249.json, 视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2110889409909452801.json]
+members: [视频生成/图生视频/SCAIL2+深度图动作参考（自然表情）降低原视频细节干扰方案_2081964333583654914.json, 视频生成/图生视频/SCAIL2人物替换+重打光lora 优化版工作流（清晰布局_小白适用_效果超夯）_2078736579782340610.json, 视频生成/图生视频/SCAIL2人物替换+首帧自动姿态对齐（一键自动工作流）_2079575491580878850.json, 视频生成/图生视频/SCAIL2系列优化版--动作迁移专用工作流（清晰布局_小白适用_效果超夯）_2075772380282187777.json, 视频生成/图生视频/多图参考 动作迁移 --SCAIL2系列优化版 （清晰布局_小白适用_效果超夯）_2074416012107272194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_411
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3-self-数字人_文字驱动_2104056713530925057.json、视频生成/图生视频/H3图生视频！长视频加速版！H3 Image-to-Video! Long-Form Video_2107994007895896066.json、视频生成/图生视频/H3图生视频！长视频加速版！H3_Image-to-Video!_Long-Form_Video_2110912412697325569.json、视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2084203498043957249.json、视频生成/图生视频/MiniMaxH3图生视频！长视频加速版！B站艾橘溪_2110889409909452801.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/SCAIL2+深度图动作参考（自然表情）降低原视频细节干扰方案_2081964333583654914.json、视频生成/图生视频/SCAIL2人物替换+重打光lora 优化版工作流（清晰布局_小白适用_效果超夯）_2078736579782340610.json、视频生成/图生视频/SCAIL2人物替换+首帧自动姿态对齐（一键自动工作流）_2079575491580878850.json、视频生成/图生视频/SCAIL2系列优化版--动作迁移专用工作流（清晰布局_小白适用_效果超夯）_2075772380282187777.json、视频生成/图生视频/多图参考 动作迁移 --SCAIL2系列优化版 （清晰布局_小白适用_效果超夯）_2074416012107272194.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：36%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
+- `BOOLConstant`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ComfyNumberConvert`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `SelfLiftAvatarH3Sampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus Sampler`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus TorchCompileSettings`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Int_to_Float` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `JjkText` —— 4/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
+- `PrimitiveBoolean` —— 4/5 个有
 - `PrimitiveInt` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `ResolutionSelector` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 1/5 个有
-- `RTXVideoFrameGeneration` —— 1/5 个有
-- `int _O` —— 1/5 个有
+- `easy imageRemBg` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `BiRefNet_Hugo` —— 1/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `ImageBatchMulti` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `Seed (rgthree)` —— 1/5 个有
+- `VideoFrameSelector` —— 1/5 个有
 
 ## 典型参数
 

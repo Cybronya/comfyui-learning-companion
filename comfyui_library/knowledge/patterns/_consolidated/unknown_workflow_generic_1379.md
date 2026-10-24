@@ -1,0 +1,50 @@
+---
+name: unknown_workflow_generic_1379
+type: Unknown Workflow
+frequency: 2
+level: weak
+coverage: 0.9475
+common_nodes: [DF_Get_image_size, Fast Groups Bypasser (rgthree), ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHub DreamO, SaveImage]
+problems: []
+missing: []
+members: [图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json, "图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json"]
+source: knowledge_consolidation
+---
+
+# unknown_workflow_generic_1379
+
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json、图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json）
+
+- **类型**：Unknown Workflow
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
+
+## 共有节点
+
+全部 2 个 workflow 都包含：
+- `DF_Get_image_size`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `RunningHub DreamO`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Translator` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
+
+## 典型参数
+
+无可统计的参数。
+
+## 常见问题
+
+参数体检未发现问题。
+
+## 建议与风险
+
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

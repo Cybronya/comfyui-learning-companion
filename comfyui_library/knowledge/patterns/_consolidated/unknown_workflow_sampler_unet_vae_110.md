@@ -1,60 +1,64 @@
 ---
 name: unknown_workflow_sampler_unet_vae_110
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.885143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.800556
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/MiniMax H3 高质感低显存文生视频｜16G_24G 可跑｜真人感优化_2105308028953255937.json, 视频生成/文生视频/1-Aiden-minimax-文生视频_2097381153186607106.json, 视频生成/文生视频/FastH3 文生视频_2100134500020867073.json, 视频生成/文生视频/FastVideo FastH3：文生视频_2100285646945472514.json, 视频生成/文生视频/FastVideo-FastH3-8-Step-V2 文生视频_2100836004453249025.json, 视频生成/文生视频/fastvideo_fasth3_文生视频-9：16口播5秒_2101846484743450626.json, 视频生成/文生视频/fastvideo_fasth3_文生视频_2101835354880962561.json]
+members: [图片生成/图生图/【开源】MiniMax_H3 单图编辑_2086008079639998465.json, 视频生成/图生视频/(2倍速！量化加速版)Minimax多参生视频V2_2084645428133457922.json, 视频生成/图生视频/(2倍速！量化加速版)Minimax多参生视频V2_2086292322022682625.json, 视频生成/图生视频/(2倍速！量化加速版)Minimax多参生视频V5_2084169961978814466.json, 视频生成/图生视频/(768P)Minimax多参生视频BF16高质量加速版V2_2085001617933422594.json, 视频生成/图生视频/(768P)Minimax多参生视频BF16高质量加速版V2_2085610026936397825.json, 视频生成/图生视频/(768P)Minimax多参生视频BF16高质量加速版V3_2084908126750461954.json, 视频生成/图生视频/(768P)Minimax多参生视频BF16高质量加速版V3_2102609315793293313.json, 视频生成/图生视频/(768P)Minimax视频参考V1_2106930546961108994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_110
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 高质感低显存文生视频｜16G_24G 可跑｜真人感优化_2105308028953255937.json、视频生成/文生视频/1-Aiden-minimax-文生视频_2097381153186607106.json、视频生成/文生视频/FastH3 文生视频_2100134500020867073.json、视频生成/文生视频/FastVideo FastH3：文生视频_2100285646945472514.json、视频生成/文生视频/FastVideo-FastH3-8-Step-V2 文生视频_2100836004453249025.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/【开源】MiniMax_H3 单图编辑_2086008079639998465.json、视频生成/图生视频/(2倍速！量化加速版)Minimax多参生视频V2_2084645428133457922.json、视频生成/图生视频/(2倍速！量化加速版)Minimax多参生视频V2_2086292322022682625.json、视频生成/图生视频/(2倍速！量化加速版)Minimax多参生视频V5_2084169961978814466.json、视频生成/图生视频/(768P)Minimax多参生视频BF16高质量加速版V2_2085001617933422594.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 6/7 个有
-- `SaveVideo` —— 6/7 个有
-- `BlockSparseAttention` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `GetVideoComponents` —— 1/7 个有
-- `ImageScale` —— 1/7 个有
-- `MiniMaxChunkFeedForward` —— 1/7 个有
-- `MiniMaxLowVRAMAttention` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `SeedVR2LoadDiTModel` —— 1/7 个有
-- `SeedVR2LoadVAEModel` —— 1/7 个有
-- `SeedVR2VideoUpscaler` —— 1/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `CreateVideo` —— 8/9 个有
+- `ResolutionSelector` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `VAEDecodeAudio` —— 8/9 个有
+- `PathchSageAttentionKJ` —— 7/9 个有
+- `MiniMaxH3BlockCacheT8` —— 5/9 个有
+- `EasyCache` —— 4/9 个有
+- `H3SigmaRefiner` —— 2/9 个有
+- `LoraLoaderModelOnly` —— 2/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/9 个有
+- `RHMiniMaxH3PromptOptimizerCompact` —— 2/9 个有
+- `StringFunction|pysssss` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `Image Comparer (rgthree)` —— 1/9 个有
+- `ModelAttentionBackend` —— 1/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `SolAttnMiniMax` —— 1/9 个有
+- `SolAttnPatch` —— 1/9 个有
+- `VHS_LoadVideo` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,75 +1,67 @@
 ---
 name: unknown_workflow_sampler_unet_vae_21
 type: Unknown Workflow
-frequency: 16
+frequency: 20
 level: moderate
-coverage: 0.829313
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.8487
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3图片参考生成带货视频加速版_2084302463045300225.json, 视频生成/图生视频/MiniMax H3图片参考生成带货视频加速版_2098314026001461250.json, 视频生成/图生视频/MiniMax H3图生视频6倍加速24GB通用版（优化版）_2086460901921742849.json, 视频生成/图生视频/MiniMax H3图生视频8步Lora_2085358951163588610.json, 视频生成/图生视频/MiniMax H3多宫格稳定出片（rtx放大二次采样版）_2095311897724809218.json, 视频生成/图生视频/MiniMax H3多宫格稳定出片（加速版）_2084469349154385921.json, 视频生成/图生视频/MiniMax H3多宫格稳定出片（加速版）_2085238814385205249.json, 视频生成/图生视频/MiniMax+H3参考生视频6倍加速80GB满配版_2087405259374292993.json, 视频生成/图生视频/Minimax H3 图生视频工作流｜AI海报动画生成｜最强免费开源视频模型_2089969033876692993.json, 视频生成/图生视频/Minimax H3 多参视频生成_2089987673200091137.json, 视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json, 视频生成/图生视频/minimaxH3多参考视频工作流_2084285648122499073.json, 视频生成/图生视频/minimaxH3首尾帧视频工作流（超级加速版）_2084965664602804226.json, 视频生成/图生视频/▶▷MiniMaxH3-加速图生视频流_2089600631442067458.json, 视频生成/文生视频/MiniMax H3 Turbo加速优化-文生视频_九宫格_四视图生视频_视频全能编辑_2086440255061839873.json, 视频生成/文生视频/MiniMax H3全功能-文生视频_九宫格_四视图生视频_视频全能编辑_2084907936194842625.json]
+members: [视频生成/图生视频/H3_24G_3refs_声音参考_2106668851638390785.json, 视频生成/图生视频/H3单采版-无LoRA-480P_2099175040867725314.json, 视频生成/图生视频/MINIMAX H3多图参考生视频-lc_2088551068568477698.json, 视频生成/图生视频/MINIMAX H3官方多参工作流_2098996477975687170.json, 视频生成/图生视频/MINIMAX-H3 多参工作流 4步加速 官方Skills提示词模板_2086360900784709633.json, 视频生成/图生视频/MINIMAX-H3 多参工作流包含加速流程和完美克隆音频最终版_2087190952204132354.json, 视频生成/图生视频/MINIMAX-H3 多图生成视频_2085523161088610305.json, 视频生成/图生视频/MINIMAX-H3_2084691718737317889.json, 视频生成/图生视频/MiniMax H3 8步加速 智能参考娃娃穿搭视频生成_2085536956800397314.json, 视频生成/图生视频/MiniMax H3 R2V-8步 comfyorg_2087532854384349186.json, 视频生成/图生视频/MiniMax H3 Ref2VA多图参考生视频_2053733634456207362.json, 视频生成/图生视频/MiniMax H3 【参考图+参考音频】4步生视频_2090646084061323265.json, 视频生成/图生视频/MiniMax H3 双角色+背景+自定义音频输入 视频生成工作流_2084953803597635586.json, 视频生成/图生视频/MiniMax H3 多参考生视频 8步加速版_2084190473446580225.json, 视频生成/图生视频/MiniMax H3全能参考工作流_2086738528175747074.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2104901215766278145.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2106317299799121921.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2109508856144551937.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema_2110247938256625666.json, 视频生成/文生视频/minmaxH3单采+1参考视频_2105350818894536705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_21
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3图片参考生成带货视频加速版_2084302463045300225.json、视频生成/图生视频/MiniMax H3图片参考生成带货视频加速版_2098314026001461250.json、视频生成/图生视频/MiniMax H3图生视频6倍加速24GB通用版（优化版）_2086460901921742849.json、视频生成/图生视频/MiniMax H3图生视频8步Lora_2085358951163588610.json、视频生成/图生视频/MiniMax H3多宫格稳定出片（rtx放大二次采样版）_2095311897724809218.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/H3_24G_3refs_声音参考_2106668851638390785.json、视频生成/图生视频/H3单采版-无LoRA-480P_2099175040867725314.json、视频生成/图生视频/MINIMAX H3多图参考生视频-lc_2088551068568477698.json、视频生成/图生视频/MINIMAX H3官方多参工作流_2098996477975687170.json、视频生成/图生视频/MINIMAX-H3 多参工作流 4步加速 官方Skills提示词模板_2086360900784709633.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `KSamplerSelect`
 - `LoadImage`
-- `PrimitiveFloat`
+- `MiniMaxH3ReferenceToVideo`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 15/16 个有
-- `MiniMaxH3ReferenceToVideo` —— 14/16 个有
-- `PathchSageAttentionKJ` —— 14/16 个有
-- `CreateVideo` —— 13/16 个有
-- `SaveVideo` —— 13/16 个有
-- `EasyCache` —— 10/16 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/16 个有
-- `LoraLoaderModelOnly` —— 9/16 个有
-- `Label (rgthree)` —— 8/16 个有
-- `MiniMaxH3ImageToVideo` —— 6/16 个有
-- `ModelPatchTorchSettings` —— 6/16 个有
-- `VHS_VideoCombine` —— 6/16 个有
-- `ImageResizeKJv2` —— 5/16 个有
-- `LoadAudio` —— 5/16 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/16 个有
-- `VHS_LoadVideo` —— 5/16 个有
-- `CR Prompt Text` —— 2/16 个有
-- `CR Text` —— 2/16 个有
-- `Display Any (rgthree)` —— 2/16 个有
-- `ImageScaleToMaxDimension` —— 2/16 个有
-- `ModelPreviewOverrideKJ` —— 2/16 个有
-- `VHS_LoadAudioUpload` —— 2/16 个有
-- `easy seed` —— 2/16 个有
-- `GetNode` —— 1/16 个有
-- `Seed (rgthree)` —— 1/16 个有
-- `SetNode` —— 1/16 个有
-- `TESpeedMiniMaxH3` —— 1/16 个有
-- `UniBlockSwap` —— 1/16 个有
-- `VRAM_Debug` —— 1/16 个有
-- `easy cleanGpuUsed` —— 1/16 个有
-- `easy clearCacheAll` —— 1/16 个有
+- `ResolutionSelector` —— 19/20 个有
+- `VAEDecode` —— 19/20 个有
+- `ComfyMathExpression` —— 18/20 个有
+- `CreateVideo` —— 18/20 个有
+- `PrimitiveFloat` —— 18/20 个有
+- `PrimitiveStringMultiline` —— 18/20 个有
+- `SaveVideo` —— 18/20 个有
+- `LoadAudio` —— 16/20 个有
+- `LoraLoaderModelOnly` —— 12/20 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/20 个有
+- `VHS_LoadVideo` —— 8/20 个有
+- `MiniMaxH3SigmaShift` —— 7/20 个有
+- `ExtendIntermediateSigmas` —— 5/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/20 个有
+- `PathchSageAttentionKJ` —— 3/20 个有
+- `VHS_VideoCombine` —— 3/20 个有
+- `JjkText` —— 2/20 个有
+- `ModelAttentionBackend` —— 2/20 个有
+- `LTXVSeparateAVLatent` —— 1/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/20 个有
+- `MiniMaxH3TurboLoRA` —— 1/20 个有
+- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/20 个有
+- `PreviewAny` —— 1/20 个有
+- `PrimitiveInt` —— 1/20 个有
+- `RHLLMChatNode` —— 1/20 个有
+- `VAEDecodeTiled` —— 1/20 个有
 
 ## 典型参数
 

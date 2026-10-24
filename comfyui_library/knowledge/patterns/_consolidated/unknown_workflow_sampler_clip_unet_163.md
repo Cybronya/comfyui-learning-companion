@@ -1,68 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_163
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, QwenImageLatentAspectRatio, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.840125
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, PrimitiveInt, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/ZImage多种风格文生图极速版_1994667329688641537.json, 图片生成/文生图/ZImage文生图极速版_1994390225893924866.json, 图片生成/文生图/ZImage文生图高清生图工作流_1995538393234857986.json, 图片生成/文生图/ZImage，文生图高清生图工作流_1994233153258799106.json]
+members: [图片生成/文生图/Krea2 巨构文生图_2091510907372396546.json, 图片生成/文生图/Krea2文生图-美感画质V2_2100973649820999682.json, 图片生成/文生图/Krea2美感画质双提升V2_2097626860837494785.json, 图片生成/文生图/Krea2美感画质双提升V2_2098923708609032194.json, 图片生成/文生图/Krea2美感画质双提升_2093345673189089282.json, 图片生成/文生图/krea2横_2091833320878469121.json, 图片生成/文生图/krea2竖_2092094811011641346.json, 图片生成/文生图/东方美学制作流_2100541472004198401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_163
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/ZImage多种风格文生图极速版_1994667329688641537.json、图片生成/文生图/ZImage文生图极速版_1994390225893924866.json、图片生成/文生图/ZImage文生图高清生图工作流_1995538393234857986.json、图片生成/文生图/ZImage，文生图高清生图工作流_1994233153258799106.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Krea2 巨构文生图_2091510907372396546.json、图片生成/文生图/Krea2文生图-美感画质V2_2100973649820999682.json、图片生成/文生图/Krea2美感画质双提升V2_2097626860837494785.json、图片生成/文生图/Krea2美感画质双提升V2_2098923708609032194.json、图片生成/文生图/Krea2美感画质双提升_2093345673189089282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `KSampler`
-- `QwenImageLatentAspectRatio`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `PrimitiveInt`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 3/4 个有
-- `Florence2ModelLoader` —— 2/4 个有
-- `Florence2Run` —— 2/4 个有
-- `LatentUpscaleBy` —— 2/4 个有
-- `Primitive string multiline [Crystools]` —— 1/4 个有
-- `ProcessString` —— 1/4 个有
-- `easy promptLine` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `ConditioningKrea2Rebalance` —— 6/8 个有
+- `Lora Loader Stack (rgthree)` —— 6/8 个有
+- `LatentUpscaleBy` —— 3/8 个有
+- `PrimitiveFloat` —— 3/8 个有
+- `EmptyImage` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `ResolutionSelector` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 9 - 9 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 0.75 | 0.5 - 1 | 4 | 67% |
+| 宽度 | 1088 | 1024 - 1920 | 8 | 73% |
+| 高度 | 1920 | 736 - 1920 | 8 | 69% |
+| 采样步数 | fixed | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 9 | 9 - 10 | 8 | 95% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 9 - 9，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.75，观测区间 0.5 - 1，4 个样本
-- 高发问题（6/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1088，观测区间 1024 - 1920，8 个样本
+- 高度 中位数 1920，观测区间 736 - 1920，8 个样本
+- 采样步数 最常用 fixed，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 10，8 个样本，取值集中（一致性 95%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

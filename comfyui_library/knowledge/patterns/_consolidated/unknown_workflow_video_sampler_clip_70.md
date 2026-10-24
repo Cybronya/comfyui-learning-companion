@@ -1,78 +1,69 @@
 ---
 name: unknown_workflow_video_sampler_clip_70
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.618125
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
-problems: []
+coverage: 0.974667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1999138314991042561.json, 视频生成/图生视频/2033413176150204417.json, 视频生成/图生视频/2006247037502758914.json, 视频生成/图生视频/1999107369680371713.json, 视频生成/图生视频/2000487723846729730.json, 视频生成/图生视频/2006292810990882817.json, 视频生成/图生视频/1988988553113776129.json, 视频生成/图生视频/2003771509095211009.json]
+members: [视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json, 视频生成/文生视频/WAN2.1文生视频_1977308765202587649.json, 视频生成/文生视频/WAN2.2 人物角色模特服装百变更换衣服_1954771341195960322.json, 视频生成/文生视频/Wan2.1+t2v Lora文生视频工作流_1951460131294883841.json, 视频生成/文生视频/Wan2.1文生视频工作流_1934444729025327105.json, 视频生成/文生视频/Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571860477259777.json, 视频生成/文生视频/wan2.1基础文生视频001_1909164954489135106.json, 视频生成/文生视频/wan2.2_t2v 文生视频_2058371729084469249.json, 视频生成/文生视频/【文生视频】Wan2.2 14B文生视频高质量加速版_1953331235240202241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_70
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1999138314991042561.json、视频生成/图生视频/2033413176150204417.json、视频生成/图生视频/2006247037502758914.json、视频生成/图生视频/1999107369680371713.json、视频生成/图生视频/2000487723846729730.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json、视频生成/文生视频/WAN2.1文生视频_1977308765202587649.json、视频生成/文生视频/WAN2.2 人物角色模特服装百变更换衣服_1954771341195960322.json、视频生成/文生视频/Wan2.1+t2v Lora文生视频工作流_1951460131294883841.json、视频生成/文生视频/Wan2.1文生视频工作流_1934444729025327105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `EmptyHunyuanLatentVideo`
+- `KSampler`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 7/8 个有
-- `WanImageToVideo` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `easy int` —— 6/8 个有
-- `wanBlockSwap` —— 6/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
-- `INTConstant` —— 5/8 个有
-- `Int` —— 5/8 个有
-- `CLIPVisionEncode` —— 3/8 个有
-- `CLIPVisionLoader` —— 3/8 个有
-- `JWInteger` —— 3/8 个有
-- `Seed (rgthree)` —— 3/8 个有
-- `WanFirstLastFrameToVideo` —— 3/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `UnetLoaderGGUF` —— 1/8 个有
+- `ModelSamplingSD3` —— 5/9 个有
+- `LoraLoader` —— 4/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
+- `LoadImage` —— 3/9 个有
+- `WanImageToVideo` —— 3/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 8 | 62% |
-| Prompt 约束强度(CFG) | 4 | 4 - 10 | 8 | 56% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 62% |
-| 重绘幅度 | normal | - | 8 | 62% |
+| 采样步数 | 30 | 4 - 30 | 9 | 30% |
+| Prompt 约束强度(CFG) | 6 | 1 - 6 | 9 | 34% |
+| 采样算法 | uni_pc | - | 9 | 56% |
+| 调度器 | simple | - | 9 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，8 个样本，一致性 62%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 10，8 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 62%
-- 重绘幅度 最常用 normal，8 个样本，一致性 62%
+- 采样步数 中位数 30，观测区间 4 - 30，9 个样本，取值分散，一致性仅 30%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，9 个样本，取值分散，一致性仅 34%
+- 采样算法 最常用 uni_pc，9 个样本，一致性 56%
+- 调度器 最常用 simple，9 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（7/9 个样本）：Steps较低可能导致细节不足

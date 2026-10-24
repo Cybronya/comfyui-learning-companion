@@ -1,38 +1,42 @@
 ---
 name: unknown_workflow_upscale_12
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.703
-common_nodes: [Image Stitch, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
+frequency: 6
+level: moderate
+coverage: 0.779
+common_nodes: [PDIMAGE_LongerSize, VOSR2ModelLoader, VOSR2Upscale]
 problems: []
-missing: [Image Stitch]
-members: [图片生成/文生图/1932278315460325378.json, 图片生成/文生图/1934106102831173633.json]
+missing: []
+members: [图片生成/图生图/Vosr+2图像高清化(10秒4K)_2097353474043367425.json, 图片生成/图生图/Vosr_2图像高清化(10秒4K)_2098947796668862465.json, 图片生成/图生图/Vosr_2图像高清化(10秒4K)_2099059910947463170.json, 视频生成/图生视频/全能图像+视频修复放大【VOSR2】_2098954861361590274.json, 视频生成/图生视频/全能图像+视频修复放大【VOSR2】_2099066562438324226.json, 视频生成/文生视频/VOSR2视频高清化·级联2K放大_2101627140033835009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_12
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1932278315460325378.json、图片生成/文生图/1934106102831173633.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Vosr+2图像高清化(10秒4K)_2097353474043367425.json、图片生成/图生图/Vosr_2图像高清化(10秒4K)_2098947796668862465.json、图片生成/图生图/Vosr_2图像高清化(10秒4K)_2099059910947463170.json、视频生成/图生视频/全能图像+视频修复放大【VOSR2】_2098954861361590274.json、视频生成/图生视频/全能图像+视频修复放大【VOSR2】_2099066562438324226.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Image Stitch`
-- `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `PDIMAGE_LongerSize`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
 
 **可变部分**（部分 workflow 才有）：
-- `UpscaleImageByUsingModel` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `EmptyImage` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `VHS_LoadVideo` —— 3/6 个有
+- `VHS_VideoCombine` —— 3/6 个有
+- `VHS_VideoInfo` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
 
 ## 典型参数
 
@@ -44,5 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Image Stitch
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

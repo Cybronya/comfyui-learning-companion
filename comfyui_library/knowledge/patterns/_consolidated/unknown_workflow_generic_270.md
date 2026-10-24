@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_270
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.7934
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.706875
+common_nodes: [IndexTTSNode, JjkText, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图2 pro 多图编辑 文生图_1996585561089515522.json, 图片生成/文生图/全能图片 V2 Pro_1994316695028383745.json, 图片生成/文生图/生图生图_2013606476442509314.json, 图片生成/文生图/竖屏分镜工作流_2019773828372631553.json, 图片生成/文生图/顽童工作流 （1-8分镜图）_2013982090320158721.json]
+members: [图片生成/图生图/Index TTS声音克隆_2073344736039100417.json, 图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json, 音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json, 音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json, 音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json, 音频生成/音频生成/TTS音频克隆_2056746978004000769.json, 音频生成/音频生成/克隆声音 _ Index-TTS 官方版📢_1961317560035819522.json, 音频生成/音频生成/克隆声音 _ Index-TTS_1965784781864767490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_270
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图2 pro 多图编辑 文生图_1996585561089515522.json、图片生成/文生图/全能图片 V2 Pro_1994316695028383745.json、图片生成/文生图/生图生图_2013606476442509314.json、图片生成/文生图/竖屏分镜工作流_2019773828372631553.json、图片生成/文生图/顽童工作流 （1-8分镜图）_2013982090320158721.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Index TTS声音克隆_2073344736039100417.json、图片生成/文生图/克隆声音 _ Index-TTS 官方版📢_2033376486593404929.json、音频生成/音频生成/Clone Voice _ Index-TTS📢_1961317565190574081.json、音频生成/音频生成/Index TTS声音克隆_1963125379429011457.json、音频生成/音频生成/TTS1.5_语音克隆_2058820183321567233.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `IndexTTSNode`
+- `JjkText`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `JjkText` —— 1/5 个有
-- `RH_Nano_Banana2_Image2Image_Batch` —— 1/5 个有
+- `AudioCrop` —— 6/8 个有
 
 ## 典型参数
 

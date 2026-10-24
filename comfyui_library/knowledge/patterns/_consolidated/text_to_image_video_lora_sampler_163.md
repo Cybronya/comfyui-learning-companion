@@ -3,76 +3,73 @@ name: text_to_image_video_lora_sampler_163
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.905333
-common_nodes: [AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.572667
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, ExtendIntermediateSigmas, GetNode, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, MuyeTextEditOutput, PrimitiveFloat, QwenH3PromptLocal, RIFE VFI, ResolutionSelector, SelfLiftH3Sampler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy textSwitch, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Infinite Talk对口型数字人｜说话唱歌单人版无限长V3_2093131573515350018.json, 视频生成/图生视频/Infinitetalk图片数字人｜最新优化版口型更自然_2097148990650413057.json, 视频生成/图生视频/图生语音视频｜InfiniteTalk数字人角色表演_2091230403377061890.json]
+members: [图片生成/文生图/Minimax H3创作终极方案，闭源生图加转深度视频光流补帧_2111508759662120962.json, 视频生成/图生视频/Minimax H3 selflift速度质量平衡｜自动提示词加光流补帧_2111138384726028289.json, 视频生成/文生视频/Minimax H3 selflift速度质量完美平衡内置自动提示词skill光流补帧_2108646431946006529.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_163
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk对口型数字人｜说话唱歌单人版无限长V3_2093131573515350018.json、视频生成/图生视频/Infinitetalk图片数字人｜最新优化版口型更自然_2097148990650413057.json、视频生成/图生视频/图生语音视频｜InfiniteTalk数字人角色表演_2091230403377061890.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Minimax H3创作终极方案，闭源生图加转深度视频光流补帧_2111508759662120962.json、视频生成/图生视频/Minimax H3 selflift速度质量平衡｜自动提示词加光流补帧_2111138384726028289.json、视频生成/文生视频/Minimax H3 selflift速度质量完美平衡内置自动提示词skill光流补帧_2108646431946006529.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `ExtendIntermediateSigmas`
+- `GetNode`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVSeparateAVLatent`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `MuyeTextEditOutput`
+- `PrimitiveFloat`
+- `QwenH3PromptLocal`
+- `RIFE VFI`
+- `ResolutionSelector`
+- `SelfLiftH3Sampler`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoModelLoader`
-- `WanVideoVAELoader`
+- `easy textSwitch`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `Int` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `WanVideoLoraSelect` —— 2/3 个有
-- `WanVideoSampler` —— 2/3 个有
-- `WanVideoTextEncodeCached` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoadWanVideoT5TextEncoder` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `ToInt` —— 1/3 个有
-- `WanVideoLoraSelectMulti` —— 1/3 个有
-- `WanVideoSamplerExtraArgs` —— 1/3 个有
-- `WanVideoSamplerv2` —— 1/3 个有
-- `WanVideoSchedulerv2` —— 1/3 个有
-- `WanVideoTextEncode` —— 1/3 个有
+- `SaveImage` —— 2/3 个有
+- `LoadVideoDepthAnythingModel` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/3 个有
+- `RH_RhartImageNNb21TextToImage` —— 1/3 个有
+- `RH_YouchuanTextToImageV82Fast` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `VideoDepthAnythingProcess` —— 1/3 个有
 
 ## 典型参数
 

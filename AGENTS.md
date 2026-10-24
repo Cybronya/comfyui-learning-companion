@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-21
+- 最后更新：2026-10-24
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -305,9 +305,9 @@ engine/                       可执行层（v0.5 起）
 
 | 内容 | 状态 |
 |---|---|
-| 节点知识卡 | ✅ 452 张（16 张人工核对：6 张 SD1.5 基础卡 + 10 张高频卡；436 张自动起草于 2026-10-06，来源 `node-analysis/tools/draft_cards_from_workflows.py`——输入/输出槽与取值分布为 404 个 workflow 实测，作用为名称推断标 TODO(待验证)）+ `node_index.json` v1.2（auto_drafted 标记区分两类卡） |
+| 节点知识卡 | ✅ **7248 张**（截至 2026-10-24，历经多轮预建：16 张早期人工核对卡 + 大批 `draft_cards_from_workflows.py` 自动起草卡，输入/输出槽与取值分布为实测 workflow，作用为名称推断标 TODO(待验证)）+ `node_index.json` v1.2（auto_drafted 标记区分两类卡）。10-24 图生图 backfill 净增 996 张 |
 | 布线节点忽略清单 | ✅ `engine/workflow_learning/ignore_nodes.py`（Note / Reroute / GetNode / SetNode / 注释、预览与 rgthree 分组控件等，不建卡、不计缺口；`node_frequency(exclude_ignored=True)` 排建卡优先级） |
-| Pattern 卡 | ✅ 手写 2 张（sd15-t2i-basic / sd15-t2i-lora）；`_consolidated/` 归纳模式 **4775 张**（2026-10-19 全量 36925 条真实归纳产出，自动生成勿手改，成员全部是库里真实 workflow） |
+| Pattern 卡 | ✅ 手写 2 张（sd15-t2i-basic / sd15-t2i-lora）；`_consolidated/` 归纳模式 **9437 张**（2026-10-24 全量 74208 条真实归纳产出，自动生成勿手改，成员全部是库里真实 workflow） |
 | 节点摘要 | ✅ 1 张（loraloader） |
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
 | 知识卡格式对齐 | 🔶 8 张 v0.2 遗产卡（`skills/comfyui-learning/knowledge/`）内容有效但**格式先于 v0.3.1 规范**，待迁移 |
@@ -453,6 +453,39 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-24 图生图 backfill 收官 + matches 匹配率 76%→100%（两层死键连修）**：
+- 背景：10-21~22 图生图清单补齐至 33,326（深页 runner 翻满 1111 页），待下载 23,808；
+  下载分 4 批跑完（落地 23,766，42 个 404/412 个例入
+  `图生图_backfill_all_2026-10-21_未落地.txt`），消化轮净入库 **23,118**
+  （归一化闸门拦重复 648）→ 预建卡 996 张 → 学习 23,118 / 0 失败；
+  全库 51,090 → **74,208**（文件=记录=库行三方零差异，status 全 learned）
+- 收官后图谱 matches 只 76%，顺藤摸出**同族 bug 的两个新变体**（10-16 裸 id 改名漏改的第 4、5 处）：
+  ① `experiences` 列键 4,466 条死键（3,797 改名孤儿 + 669 官方模板死行）与
+     `node_used_in` 3,805 个死 workflow_id（74,152 行）——逐条证明映射新键已存在、
+     需迁移 0 后单事务删除 + VACUUM（2181→2076MB）；重归纳+图谱 → 匹配率 81%
+     （不匹配成员 16,530→13,088）
+  ② **经验载荷 `data_json` 内嵌的 `key` 字段**才是归纳取键第一优先
+     （`experience_loader.py` 载荷 key 优先、列键只兜底），14,182 条仍是改名前旧形态——
+     逐条校验「列键尾部 id==载荷 id」后 UPDATE 覆盖 + 复扫残留 0
+- 终态：重归纳 9,437 个模式（未归类 6,536，与键修复前一致——改键不改聚类归属）；
+  图谱 **98,298 顶点 / 2,271,572 边**（640MB；总边较修复前净增 13,088 == 原不匹配成员数，
+  `⚠ 模式成员匹配不上` 警告行消失，matches 拉满）；知识卡 7,248 张；sqlite 2,076MB
+- **教训一（改名覆盖范围）**：改 workflow 标识必须同步**五处**——文件、记录 key、
+  记录 frontmatter file、库行键、**经验表列键 + 经验载荷内嵌 key、node_used_in 引用**；
+  本条即漏改清单的补齐。**教训二（观测口径）**：WMI 在本沙箱对一切进程返回 CPU=0 /
+  内存 0MB，判任务死活唯一可靠信号是**产物侧**（库内文件数 / sidecar mtime / 日志 mtime），
+  别看 CPU；本次两次「疑似卡死」实为沙箱读数假象 + 子进程日志块缓冲不实时
+- 备份两份在 `database/storage/`：`workflow_database.pre_expfix.sqlite`（列键清理前）与
+  `workflow_database.pre_payloadfix.sqlite`（载荷修复前），均可回滚；
+  `storage/*.sqlite` ignore 规则已覆盖，不会入库
+- 工具固化（本次新产物，download/）：`collect_deep_runner.py`（深页清单补收：单页退避
+  重试 + 每 50 页检查点 + 断点续跑，解 MAX_PAGES=900 顶不住 3 万条分类与 EdgeOne
+  550 限流秒崩丢进度两个坑）；`i2i_backfill_download.py`（backfill 分批下载，幂等断点）；
+  `finalize_runner.py` + `finalize_phase1_consolidate.py` / `finalize_phase2_graph.py`
+  （归纳→图谱**分进程串行**收尾，隔离内存峰值，规避 learn_pipeline 同进程叠加载
+  导致的 0xC0000005）；`fix_stale_keys.py` / `fix_payload_keys.py`（两轮死键清理，
+  带备份/门禁/复扫验证护栏）
 
 **2026-10-20 归纳吸收文生图批次 + 去重流式化（OOM 根治）**：
 - 背景：文生图 16 批后库 43929 条，重归纳首次在**加载阶段** MemoryError——

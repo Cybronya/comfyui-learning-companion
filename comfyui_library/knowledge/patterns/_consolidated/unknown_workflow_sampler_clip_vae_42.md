@@ -1,80 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_vae_42
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.789667
-common_nodes: [CR Prompt Text, CR Text, FluxResolutionNode, ImageConcanate, ImageResize+, ImageResizeKJv2, ImpactSwitch, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, PreviewImage, RH_Jimeng_Image2Image, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Prompter, RH_Sora2_I2V, RH_Translator, SaveImage, SaveVideo, TextCombinerTwo, easy showAnything]
-problems: []
+frequency: 6
+level: weak
+coverage: 0.9535
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/漫剧_2010968294735486978.json, 视频生成/图生视频/1987861383444369409.json, 视频生成/文生视频/向南漫剧场创作_1989943868923760641.json]
+members: [图片生成/文生图/双节棍加速千问 image工作流_1965043199712612353.json, 图片生成/文生图/在线-Z-T2I-1128_1994378488129986561.json, 图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json, 图片生成/文生图/墨宝映画人物设定_2015364874955657217.json, 图片生成/文生图/完美中文海报生成_2002018843826503681.json, 图片生成/文生图/战双帕米什_赛琳娜 动漫特化人物固定角色-ZImage_2042282589184073730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/漫剧_2010968294735486978.json、视频生成/图生视频/1987861383444369409.json、视频生成/文生视频/向南漫剧场创作_1989943868923760641.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/双节棍加速千问 image工作流_1965043199712612353.json、图片生成/文生图/在线-Z-T2I-1128_1994378488129986561.json、图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json、图片生成/文生图/墨宝映画人物设定_2015364874955657217.json、图片生成/文生图/完美中文海报生成_2002018843826503681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **样本数**：6
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `FluxResolutionNode`
-- `ImageConcanate`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `JjkText`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `RH_Jimeng_Image2Image`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Prompter`
-- `RH_Sora2_I2V`
-- `RH_Translator`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SaveVideo`
-- `TextCombinerTwo`
-- `easy showAnything`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `KSampler` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `NunchakuQwenImageDiTLoader` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
+- `UNETLoader` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `CR Text Concatenate` —— 1/6 个有
+- `ConditioningZeroOut` —— 1/6 个有
+- `DoubaoSizePreset` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
+- `NunchakuQwenImageDiTLoader` —— 1/6 个有
+- `easy seed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 采样步数 | 9 | 8 - 50 | 6 | 2% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 6 | 23% |
+| 采样算法 | euler | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 8 - 50，6 个样本，取值分散，一致性仅 2%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，6 个样本，取值分散，一致性仅 23%
+- 采样算法 最常用 euler，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（4/6 个样本）：Steps较低可能导致细节不足

@@ -3,74 +3,89 @@ name: unknown_workflow_video_upscale_sampler_7
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.904667
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, FloatConstant, INTConstant, KSampler, ModelSamplingSD3, PatchModelPatcherOrder, PathchSageAttentionKJ, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, Video_Upscale_With_Model]
-problems: [Steps较低可能导致细节不足]
-missing: [RIFE VFI, Text Load Line From File, Text Multiline, easy batchAnything, easy forLoopEnd, easy forLoopStart]
-members: [图片生成/文生图/wan2.1_1.3B_self_forcing 超高速高质量视频生成 8帧_2098315061034049537.json, 视频生成/图生视频/1933438103912624130.json, 视频生成/文生视频/1934951116805185538.json]
+coverage: 0.912
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Upscale Image, Fast Bypasser (rgthree), Int, JjkText, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveBoolean, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy ifElse, wanBlockSwap]
+problems: []
+missing: []
+members: [视频生成/图生视频/Smooth Mix wan2.2 电影质画质-加速版+自动提示词+视频放大+插帧-首尾帧视频_1980265954401824770.json, 视频生成/图生视频/Smooth Mix wan2.2 电影质画质-加速版+视频放大插帧-图生视频_1980235190960369666.json, 视频生成/文生视频/Smooth Mix wan2.2 电影质画质-加速版+自动提示词+视频放大+插帧-文生视频_1980255161958490113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/wan2.1_1.3B_self_forcing 超高速高质量视频生成 8帧_2098315061034049537.json、视频生成/图生视频/1933438103912624130.json、视频生成/文生视频/1934951116805185538.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Smooth Mix wan2.2 电影质画质-加速版+自动提示词+视频放大+插帧-首尾帧视频_1980265954401824770.json、视频生成/图生视频/Smooth Mix wan2.2 电影质画质-加速版+视频放大插帧-图生视频_1980235190960369666.json、视频生成/文生视频/Smooth Mix wan2.2 电影质画质-加速版+自动提示词+视频放大+插帧-文生视频_1980255161958490113.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGZeroStar`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `FloatConstant`
-- `INTConstant`
-- `KSampler`
+- `CR Upscale Image`
+- `Fast Bypasser (rgthree)`
+- `Int`
+- `JjkText`
+- `KSamplerAdvanced`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `PatchModelPatcherOrder`
+- `Mute / Bypass Repeater (rgthree)`
 - `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
 - `RIFE VFI`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `Video_Upscale_With_Model`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/3 个有
-- `Text Load Line From File` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `easy batchAnything` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
+- `CLIPVisionEncode` —— 2/3 个有
+- `CLIPVisionLoader` —— 2/3 个有
+- `CR Text Replace` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_Captioner` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `ShowText` —— 2/3 个有
+- `WanImageToVideo` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `CR Seed` —— 1/3 个有
+- `CustomAddLabel` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageStitch` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `RH_Prompter` —— 1/3 个有
+- `TextBox` —— 1/3 个有
+- `TextBox1` —— 1/3 个有
+- `WanFirstLastFrameToVideo` —— 1/3 个有
 - `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | lcm | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | fixed | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler_ancestral | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 lcm，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：RIFE VFI、Text Load Line From File、Text Multiline、easy batchAnything、easy forLoopEnd
+- 采样步数 最常用 fixed，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

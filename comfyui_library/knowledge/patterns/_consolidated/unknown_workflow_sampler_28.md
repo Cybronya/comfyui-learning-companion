@@ -1,52 +1,41 @@
 ---
 name: unknown_workflow_sampler_28
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.939
-common_nodes: [Apply Whisper, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, Fast Groups Bypasser (rgthree), LayerUtility: PurgeVRAM V2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.9118
+common_nodes: [AudioConcat, EmptyAudio, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json, 音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json, 音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json]
+members: [视频生成/图生视频/FlashHead--数字人对口型配音_2027554481096892418.json, 视频生成/图生视频/FlashTalk Head数字人V3_2027090582182567937.json, 视频生成/图生视频/FlashTalk Head数字人_2027563123820994562.json, 视频生成/图生视频/FlashTalk Head数字人说话ai视频数字人说话头部说话图片说话工作流_2029234850993016833.json, 视频生成/图生视频/FlashTalk Head数字人：说话ai视频数字人说话头部说话图片说话工作流_2029413413356572674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_28
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS克隆音色（单人克隆_多人对话）_2016078134889684993.json、音频生成/音频生成/Qwen3-TTS多人对话声音编辑_2017122770886336514.json、音频生成/音频生成/千问3tts音色克隆+音色设计+多人物对话_2020707913525891073.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FlashHead--数字人对口型配音_2027554481096892418.json、视频生成/图生视频/FlashTalk Head数字人V3_2027090582182567937.json、视频生成/图生视频/FlashTalk Head数字人_2027563123820994562.json、视频生成/图生视频/FlashTalk Head数字人说话ai视频数字人说话头部说话图片说话工作流_2029234850993016833.json、视频生成/图生视频/FlashTalk Head数字人：说话ai视频数字人说话头部说话图片说话工作流_2029413413356572674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `Fast Groups Bypasser (rgthree)`
-- `LayerUtility: PurgeVRAM V2`
+全部 5 个 workflow 都包含：
+- `AudioConcat`
+- `EmptyAudio`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+- `LoadImage`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `CR Text` —— 2/3 个有
-- `Qwen3TTSCustomVoice` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `VRAMReserver` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `AudioCrop` —— 3/5 个有
+- `SaveAudio` —— 2/5 个有
 
 ## 典型参数
 

@@ -3,55 +3,63 @@ name: unknown_workflow_video_sampler_vae_86
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.9625
-common_nodes: [ImageResizeKJ, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.8365
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2020431913210617857.json, 视频生成/图生视频/2029224724693262338.json, 视频生成/图生视频/1916457677722161154.json, 视频生成/图生视频/1928118108420980738.json, 视频生成/图生视频/2067524642499289090.json, 视频生成/图生视频/1934649298468708353.json]
+members: [视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json, 视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json, 视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json, 视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json, 视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json, 视频生成/图生视频/角色PV动画制作_2096613890909102081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_86
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2020431913210617857.json、视频生成/图生视频/2029224724693262338.json、视频生成/图生视频/1916457677722161154.json、视频生成/图生视频/1928118108420980738.json、视频生成/图生视频/2067524642499289090.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3_I2V_lora加速_2090796314308202498.json、视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json、视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json、视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json、视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `ImageResizeKJ`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 5/6 个有
-- `ImagePadKJ` —— 5/6 个有
-- `LoadWanVideoT5TextEncoder` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoExperimentalArgs` —— 3/6 个有
-- `WanVideoLoraSelect` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `WanVideoTeaCache` —— 3/6 个有
-- `WanVideoTextEncode` —— 3/6 个有
-- `WanVideoTextEncodeCached` —— 3/6 个有
-- `easy imageRemBg` —— 3/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `WanVideoTorchCompileSettings` —— 2/6 个有
-- `WanVideoMagCache` —— 1/6 个有
-- `WanVideoSetBlockSwap` —— 1/6 个有
-- `WanVideoSetLoRAs` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `MiniMaxH3ImageToVideo` —— 5/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/6 个有
+- `UNETLoader` —— 5/6 个有
+- `MiniMaxH3SigmaShift` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `ResolutionSelector` —— 3/6 个有
+- `H3SigmaRefiner` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `SolAttnPatch` —— 2/6 个有
+- `DiffusionModelLoaderKJ` —— 1/6 个有
+- `JsonExtractString` —— 1/6 个有
+- `MiniMaxChunkFeedForward` —— 1/6 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/6 个有
+- `MiniMaxLowVRAMAttention` —— 1/6 个有
+- `RegexReplace` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `TextGenerate` —— 1/6 个有
+- `ZNGB_ResizeImage` —— 1/6 个有
+- `easy convertAnything` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

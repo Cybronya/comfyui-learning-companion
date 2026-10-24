@@ -1,71 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_unet_54
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.688667
-common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, LoraLoader, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.7026
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/服装_床品_地毯花纹一键提取！QwenImageEdit2511工作流详解，小白友好+全节点注释_2059565759478718465.json, 图片生成/文生图/设计师必备ComfyUI工作流：实物照片→干净印花，全节点手把手注释_2059565790445260801.json, 图片生成/文生图/高质量双采样_RH版_v1_2019943536841461761.json]
+members: [图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json, 图片生成/图生图/海螺H3标准工作流-01-首尾帧生视频_2093944374529974273.json, 图片生成/图生图/海螺H3标准工作流-02-单图生视频_2093940538071412737.json, 图片生成/图生图/海螺H3标准工作流-03-人物参考跳舞_2093911326912503810.json, 视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2094669610908995586.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2098982875499687938.json, 视频生成/图生视频/海螺H3视频编辑-人物替换V1_2100156710735405057.json, 视频生成/文生视频/MinimaxH3+音频驱动多参_2092941359513694209.json, 视频生成/文生视频/海螺H3视频编辑-人物替换V3-强化替换效果_2092546456971464705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_54
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/服装_床品_地毯花纹一键提取！QwenImageEdit2511工作流详解，小白友好+全节点注释_2059565759478718465.json、图片生成/文生图/设计师必备ComfyUI工作流：实物照片→干净印花，全节点手把手注释_2059565790445260801.json、图片生成/文生图/高质量双采样_RH版_v1_2019943536841461761.json）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json、图片生成/图生图/海螺H3标准工作流-01-首尾帧生视频_2093944374529974273.json、图片生成/图生图/海螺H3标准工作流-02-单图生视频_2093940538071412737.json、图片生成/图生图/海螺H3标准工作流-03-人物参考跳舞_2093911326912503810.json、视频生成/图生视频/海螺H3视频编辑-人物替换(效果不稳定)_2095974697245691905.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：69%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `LoraLoader`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `TextEncodeQwenImageEditPlus` —— 2/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `ImageScaleBy` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `MiniMaxH3SigmaShift` —— 9/10 个有
+- `ModelAttentionBackend` —— 9/10 个有
+- `PrimitiveInt` —— 9/10 个有
+- `VAEDecodeAudio` —— 9/10 个有
+- `easy anythingIndexSwitch` —— 9/10 个有
+- `easy int` —— 9/10 个有
+- `GetImageSizeAndCount` —— 8/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/10 个有
+- `VHS_LoadVideo` —— 7/10 个有
+- `GetNode` —— 6/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/10 个有
+- `PlaySound|pysssss` —— 6/10 个有
+- `ResolutionSelector` —— 6/10 个有
+- `SetNode` —— 6/10 个有
+- `VHS_VideoCombine` —— 6/10 个有
+- `VHS_VideoInfo` —— 6/10 个有
+- `Bookmark (rgthree)` —— 5/10 个有
+- `ComfyMathExpression` —— 5/10 个有
+- `Label (rgthree)` —— 5/10 个有
+- `PrimitiveFloat` —— 5/10 个有
+- `EmptyImage` —— 2/10 个有
+- `MiniMaxH3ImageToVideo` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `Int` —— 1/10 个有
+- `LoadAudio` —— 1/10 个有
+- `SoundFlow_GetLength` —— 1/10 个有
+- `TrimAudioDuration` —— 1/10 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1.5 | 0.8 - 1.5 | 3 | 74% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.4 - 1 | 3 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1.5，观测区间 0.8 - 1.5，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.4 - 1，3 个样本
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

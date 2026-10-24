@@ -3,80 +3,76 @@ name: text_to_image_video_lora_sampler_168
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.554333
-common_nodes: [AudioConcatenate, BasicScheduler, CLIPLoader, CLIPTextEncode, CM_FloatBinaryOperation, CM_IntBinaryOperation, CM_IntToFloat, ConditioningZeroOut, CreateVideo, EmptyLatentImage, FloatConstant, GetImageSize, H3SigmaRefiner, INTConstant, ImageBatch, ImageExpandBatch+, ImageFromBatch+, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftH3Sampler, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy mathInt, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.905333
+common_nodes: [AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax动作迁移官方接续版，人物参考图主场景参考关键帧视频生视频方案_2106437908533170178.json, 视频生成/图生视频/Minimax动作迁移 动作复刻视频生成方案_2105384636460388353.json, 视频生成/图生视频/Minimax动作迁移官方接续版｜视频生视频流畅复刻人物动作_2106198656264265729.json]
+members: [视频生成/图生视频/Infinite Talk对口型数字人｜说话唱歌单人版无限长V3_2093131573515350018.json, 视频生成/图生视频/Infinitetalk图片数字人｜最新优化版口型更自然_2097148990650413057.json, 视频生成/图生视频/图生语音视频｜InfiniteTalk数字人角色表演_2091230403377061890.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_168
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax动作迁移官方接续版，人物参考图主场景参考关键帧视频生视频方案_2106437908533170178.json、视频生成/图生视频/Minimax动作迁移 动作复刻视频生成方案_2105384636460388353.json、视频生成/图生视频/Minimax动作迁移官方接续版｜视频生视频流畅复刻人物动作_2106198656264265729.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk对口型数字人｜说话唱歌单人版无限长V3_2093131573515350018.json、视频生成/图生视频/Infinitetalk图片数字人｜最新优化版口型更自然_2097148990650413057.json、视频生成/图生视频/图生语音视频｜InfiniteTalk数字人角色表演_2091230403377061890.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioConcatenate`
-- `BasicScheduler`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatBinaryOperation`
-- `CM_IntBinaryOperation`
-- `CM_IntToFloat`
-- `ConditioningZeroOut`
-- `CreateVideo`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `EmptyLatentImage`
-- `FloatConstant`
-- `GetImageSize`
-- `H3SigmaRefiner`
-- `INTConstant`
-- `ImageBatch`
-- `ImageExpandBatch+`
-- `ImageFromBatch+`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SelfLiftH3Sampler`
-- `TrimAudioDuration`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy mathInt`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageFromBatch` —— 2/3 个有
-- `MiniMaxH3AddGuide` —— 2/3 个有
-- `ModelPreviewOverrideKJ` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `MiniMaxH3MotionContext` —— 1/3 个有
-- `MiniMaxH3MotionContextTrim` —— 1/3 个有
+- `Audio Duration (mtb)` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `WanVideoSampler` —— 2/3 个有
+- `WanVideoTextEncodeCached` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoadWanVideoT5TextEncoder` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `ToInt` —— 1/3 个有
+- `WanVideoLoraSelectMulti` —— 1/3 个有
+- `WanVideoSamplerExtraArgs` —— 1/3 个有
+- `WanVideoSamplerv2` —— 1/3 个有
+- `WanVideoSchedulerv2` —— 1/3 个有
+- `WanVideoTextEncode` —— 1/3 个有
 
 ## 典型参数
 

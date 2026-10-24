@@ -7,13 +7,13 @@ coverage: 0.688
 common_nodes: [DiffuEraserLoader, DiffuEraserSampler, Fast Groups Muter (rgthree), FlashVSRNode, ImageConcanate, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VHS_VideoInfoLoaded, easy compare, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1993299080321368065.json, 视频生成/图生视频/1993311600947953666.json]
+members: [视频生成/图生视频/全能视频S高清修复加去水印（最新版）_1993299080321368065.json, 视频生成/图生视频/全能视频S高清修复去水印（最强优化）_1993311600947953666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1993299080321368065.json、视频生成/图生视频/1993311600947953666.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S高清修复加去水印（最新版）_1993299080321368065.json、视频生成/图生视频/全能视频S高清修复去水印（最强优化）_1993311600947953666.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

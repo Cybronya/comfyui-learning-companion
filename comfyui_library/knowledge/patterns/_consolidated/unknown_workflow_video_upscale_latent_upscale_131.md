@@ -3,95 +3,66 @@ name: unknown_workflow_video_upscale_latent_upscale_131
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5625
-common_nodes: [Any Switch (rgthree), Audio Duration (mtb), CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoaderGGUF, EmptyImage, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, HeartMuLa_Transcribe, ImageResizeKJv2, ImageScaleBy, ImpactExecutionOrderController, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoaderGGUF, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, ShowText|pysssss, SolidMask, StringReplace, TrimAudioDuration, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.496
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, Pipe from any [Crystools], Pipe to/edit any [Crystools], PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SimpleMath+, SolAttnMiniMax, SplitSigmas, UNETLoader, VAELoader, VHS_VideoCombine, easy blocker, easy boolean, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/图生视频/2016443355604983809.json, 视频生成/图生视频/2014681763813007362.json]
+members: [视频生成/图生视频/H3_多参生视频_2108931656911507457.json, 视频生成/图生视频/minimax_H3_多参_2108804190872096769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_131
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2016443355604983809.json、视频生成/图生视频/2014681763813007362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3_多参生视频_2108931656911507457.json、视频生成/图生视频/minimax_H3_多参_2108804190872096769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Duration (mtb)`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoaderGGUF`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text`
+- `ComfyMathExpression`
+- `ExtendIntermediateSigmas`
 - `GetNode`
-- `HeartMuLa_Transcribe`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImpactExecutionOrderController`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LatentUpscaleModelLoader`
 - `LoadAudio`
 - `LoadImage`
-- `LoaderGGUF`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `ModelAttentionBackend`
+- `Pipe from any [Crystools]`
+- `Pipe to/edit any [Crystools]`
+- `PrimitiveBoolean`
 - `PrimitiveFloat`
 - `PrimitiveInt`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `ShowText|pysssss`
-- `SolidMask`
-- `StringReplace`
-- `TrimAudioDuration`
+- `SimpleMath+`
+- `SolAttnMiniMax`
+- `SplitSigmas`
+- `UNETLoader`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `easy blocker`
+- `easy boolean`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 1/2 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
-- `LTXAVTextEncoderLoader` —— 1/2 个有
-- `LTXVAudioVAELoader` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReservedVRAMSetter` —— 1/2 个有
-- `ResizeImagesByLongerEdge` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy ckptNames` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

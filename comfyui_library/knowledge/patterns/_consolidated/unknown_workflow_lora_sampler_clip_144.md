@@ -1,64 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_144
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7025
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CR Model Input Switch, EmptyImage, EmptyLatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageBatch, KSamplerSelect, LayerUtility: BooleanOperator, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RH_Captioner, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, SaveImage, StringToInt, TextBox, VAEDecode, VAELoader, easy ifElse, easy imageSize, easy int, easy showAnything, easy textSwitch]
+frequency: 4
+level: moderate
+coverage: 0.82525
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, Lora Loader Stack (rgthree), PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
-missing: [CR Model Input Switch, LayerUtility: BooleanOperator, easy int, easy textSwitch, easy imageSize]
-members: [图片生成/文生图/1911226009696333826.json, 图片生成/文生图/1929402516499283970.json]
+missing: []
+members: [图片生成/图生图/真人转全能图片G-4o卡通3D玩偶_1913613624995446786.json, 图片生成/文生图/Chibify_1925114613338152962.json, 图片生成/文生图/Flux最强换脸_1894257044323500034.json, 图片生成/文生图/吉卜力风格换脸写真文生图工作流_1906942276495450113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_144
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1911226009696333826.json、图片生成/文生图/1929402516499283970.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/真人转全能图片G-4o卡通3D玩偶_1913613624995446786.json、图片生成/文生图/Chibify_1925114613338152962.json、图片生成/文生图/Flux最强换脸_1894257044323500034.json、图片生成/文生图/吉卜力风格换脸写真文生图工作流_1906942276495450113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Model Input Switch`
-- `EmptyImage`
-- `EmptyLatentImage`
-- `Fast Groups Muter (rgthree)`
+- `EmptySD3LatentImage`
 - `FluxGuidance`
-- `ImageBatch`
 - `KSamplerSelect`
-- `LayerUtility: BooleanOperator`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
-- `RH_Captioner`
-- `RH_LLMAPI_NODE`
+- `Lora Loader Stack (rgthree)`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringToInt`
-- `TextBox`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy ifElse`
-- `easy imageSize`
-- `easy int`
-- `easy showAnything`
-- `easy textSwitch`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+
+**可变部分**（部分 workflow 才有）：
+- `DualCLIPLoader` —— 3/4 个有
+- `Note Plus (mtb)` —— 3/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `Florence2ModelLoader` —— 2/4 个有
+- `Florence2Run` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `TextInput_` —— 2/4 个有
+- `DualCLIPLoaderGGUF` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,7 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Model Input Switch、LayerUtility: BooleanOperator、easy int、easy textSwitch、easy imageSize
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

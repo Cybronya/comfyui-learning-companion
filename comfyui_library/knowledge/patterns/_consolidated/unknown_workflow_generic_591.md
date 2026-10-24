@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_591
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [RH_Kling30_Std_Video, SaveVideo]
+coverage: 0.8284
+common_nodes: [RH_Sora2_T2V, RH_Translator, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/Kling_30_Std_Video_v3.0_2033750702492749826.json, 视频生成/文生视频/可灵v3.0 Std (文生_图生视频)_2019737253731377153.json, 视频生成/文生视频/可灵v3.0 Std (文生_图生视频)（RH版）_2054437078699659265.json]
+members: [视频生成/文生视频/全能视频S 文生视频_1974241273257267201.json, 视频生成/文生视频/全能视频S文生视频（根叔）_1977225512030478337.json, 视频生成/文生视频/全能视频S文生视频（横版_竖版），无水印，速度快_1986026989498892290.json, 视频生成/文生视频/全能视频S横版15s高清文生视频_1975767839640563713.json, 视频生成/文生视频/全能视频S竖版15s高清文生视频_1975464849478168578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_591
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Kling_30_Std_Video_v3.0_2033750702492749826.json、视频生成/文生视频/可灵v3.0 Std (文生_图生视频)_2019737253731377153.json、视频生成/文生视频/可灵v3.0 Std (文生_图生视频)（RH版）_2054437078699659265.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/全能视频S 文生视频_1974241273257267201.json、视频生成/文生视频/全能视频S文生视频（根叔）_1977225512030478337.json、视频生成/文生视频/全能视频S文生视频（横版_竖版），无水印，速度快_1986026989498892290.json、视频生成/文生视频/全能视频S横版15s高清文生视频_1975767839640563713.json、视频生成/文生视频/全能视频S竖版15s高清文生视频_1975464849478168578.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_Kling30_Std_Video`
+全部 5 个 workflow 都包含：
+- `RH_Sora2_T2V`
+- `RH_Translator`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
+- `Text` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
 
 ## 典型参数
 

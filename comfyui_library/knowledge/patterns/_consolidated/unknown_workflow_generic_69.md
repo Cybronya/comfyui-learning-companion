@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_69
 type: Unknown Workflow
-frequency: 11
+frequency: 17
 level: moderate
-coverage: 0.744545
-common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudio]
+coverage: 0.974765
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/配音声音克隆IndexTTS2最强音色克隆_2110933697322110978.json, 音频生成/音频生成/31. IndexTTS2双人对话+情绪工作流_1966462003676164098.json, 音频生成/音频生成/32号特工：最强声音克隆 IndexTTS-2+情感控制+简单易用_2045034990160842753.json, 音频生成/音频生成/AIDir-配音声音克隆IndexTTS2史上最强音色克隆_2075050449190871042.json, 音频生成/音频生成/IndexTTS2文生声音+情感控制_2003136156327903234.json, 音频生成/音频生成/IndexTTS2最强音色克隆_1965570620937392129.json, 音频生成/音频生成/空白工作流_2052346805639237634.json, 音频生成/音频生成/艾希音色克隆 IndexTTS2文生声音+情感控制工作流 V1.0_2016426570805682178.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_1965610012699709441.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_2105125124012859394.json, 音频生成/音频生成/配音声音克隆IndexTTS2史上最强音色克隆_2105504027202117633.json]
+members: [图片生成/图生图/-全能图片V1-【灵魂画手】自制动作_1973227535641219074.json, 图片生成/图生图/-全能图片V1-一键和cos老婆合照_1965050732128948225.json, 图片生成/图生图/-全能图片V1-多角色打起来自制动作_1983480562730082306.json, 图片生成/图生图/Nano-全能图片V1-多角色打起来自制动作_1961289424665513985.json, 图片生成/图生图/RH__全能图片V1_1972836793685069826.json, 图片生成/图生图/RH__全能图片V1丨一键生成手办图！！！！_1980154672298233857.json, 图片生成/图生图/tonnie-全能图片V1人物九宫格_1998365000030937089.json, 图片生成/图生图/全能图片V1-多角色打起来自制动作_2029804741395488770.json, 图片生成/图生图/全能图片V1-多角色打起来自制动作_2041676044406628353.json, 图片生成/图生图/全能图片V1-自动生成多角色格斗动作_2031917974575128577.json, 图片生成/图生图/全能图片V1-自动生成多角色格斗动作_2034483760883834881.json, 图片生成/图生图/全能图片V1编辑&多图融合_1966824640624594946.json, 图片生成/图生图/四视图 人物角色多角度 近景 全身 半身照图片生成-保持人物一致  写实_卡通动漫风格_2062006852136820737.json, 图片生成/图生图/四视图-保持人物一致性_2055918627131535362.json, 图片生成/文生图/-全能图片V1-多角色打起来自制动作_1963081650311761921.json, 视频生成/图生视频/-全能图片V1-多角色打起来自制动作_1977335560144605186.json, 视频生成/图生视频/全能图片-多角色 自定义姿态_2013796418384830465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_69
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/配音声音克隆IndexTTS2最强音色克隆_2110933697322110978.json、音频生成/音频生成/31. IndexTTS2双人对话+情绪工作流_1966462003676164098.json、音频生成/音频生成/32号特工：最强声音克隆 IndexTTS-2+情感控制+简单易用_2045034990160842753.json、音频生成/音频生成/AIDir-配音声音克隆IndexTTS2史上最强音色克隆_2075050449190871042.json、音频生成/音频生成/IndexTTS2文生声音+情感控制_2003136156327903234.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-【灵魂画手】自制动作_1973227535641219074.json、图片生成/图生图/-全能图片V1-一键和cos老婆合照_1965050732128948225.json、图片生成/图生图/-全能图片V1-多角色打起来自制动作_1983480562730082306.json、图片生成/图生图/Nano-全能图片V1-多角色打起来自制动作_1961289424665513985.json、图片生成/图生图/RH__全能图片V1_1972836793685069826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
+全部 17 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 9/11 个有
-- `PreviewAudio` —— 7/11 个有
-- `AudioSeparation` —— 6/11 个有
-- `PrimitiveString` —— 4/11 个有
+- `ImageResize+` —— 16/17 个有
+- `CR Text` —— 10/17 个有
+- `ttN concat` —— 10/17 个有
+- `RH_Translator` —— 7/17 个有
+- `MuyeTextEditOutput` —— 3/17 个有
+- `PreviewImage` —— 2/17 个有
 
 ## 典型参数
 

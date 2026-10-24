@@ -7,13 +7,13 @@ coverage: 0.9156
 common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1930285624970919938.json, 视频生成/图生视频/1913759215695949826.json, 视频生成/图生视频/1913122843595370497.json, 视频生成/图生视频/1914968107276824577.json, 视频生成/图生视频/1912926110097833985.json]
+members: [视频生成/图生视频/FramePack_官方工作流_FLF2V_1930285624970919938.json, 视频生成/图生视频/FramePack图生视频_1913759215695949826.json, 视频生成/图生视频/FramePack张吕敏开源图生视频模型RH平台独家_1913122843595370497.json, 视频生成/图生视频/FramePack首尾帧_1914968107276824577.json, 视频生成/图生视频/frame pack 一键生成60秒视频_1912926110097833985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_21
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1930285624970919938.json、视频生成/图生视频/1913759215695949826.json、视频生成/图生视频/1913122843595370497.json、视频生成/图生视频/1914968107276824577.json、视频生成/图生视频/1912926110097833985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FramePack_官方工作流_FLF2V_1930285624970919938.json、视频生成/图生视频/FramePack图生视频_1913759215695949826.json、视频生成/图生视频/FramePack张吕敏开源图生视频模型RH平台独家_1913122843595370497.json、视频生成/图生视频/FramePack首尾帧_1914968107276824577.json、视频生成/图生视频/frame pack 一键生成60秒视频_1912926110097833985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5

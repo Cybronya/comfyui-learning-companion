@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_466
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.8
-common_nodes: [LoadAudio, RunningHub SongPrep, SaveAudio, easy showAnything]
+coverage: 0.896
+common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceDesign, PreviewAny, PreviewAudio, RH_LLMAPI_Pro_Node, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/SongPrep自动读取歌曲歌词，结构，时间戳_1971634425463304194.json, 音频生成/音频生成/歌曲时间戳_1985895084761722882.json, 音频生成/音频生成/歌曲自动识别（歌词，结构，时间戳）SongPrep_1971843850652348418.json, 音频生成/音频生成/陆老师_歌词识别_1973720388846923777.json]
+members: [音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json, 音频生成/音频生成/Qwen3-TTS 音色设计_2034082246776332290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_466
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/SongPrep自动读取歌曲歌词，结构，时间戳_1971634425463304194.json、音频生成/音频生成/歌曲时间戳_1985895084761722882.json、音频生成/音频生成/歌曲自动识别（歌词，结构，时间戳）SongPrep_1971843850652348418.json、音频生成/音频生成/陆老师_歌词识别_1973720388846923777.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub SongPrep`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `FB_Qwen3TTSVoiceDesign`
+- `PreviewAny`
+- `PreviewAudio`
+- `RH_LLMAPI_Pro_Node`
 - `SaveAudio`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 3/4 个有
-- `SoundFlow_TrimAudio` —— 1/4 个有
+- `ConcatTextOfUtils` —— 2/6 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/6 个有
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
 
 ## 典型参数
 

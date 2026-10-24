@@ -1,100 +1,80 @@
 ---
 name: text_to_image_lora_sampler_clip_288
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.757667
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageListToImageBatch, ImpactInt, ImpactMinMax, ImpactSwitch, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RHHiddenNodes, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageSize, easy int, easy showAnything]
+frequency: 7
+level: strong
+coverage: 0.839571
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveAudioMP3, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
-missing: [CR Text, ImageCASharpening+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, easy cleanGpuUsed, easy imageBatchToImageList, easy int, easy imageSize]
-members: [图片生成/文生图/1921436231337705474.json, 图片生成/文生图/Qwen Image 2512文生图！图生图反推！+可选4K高清放大_1900359010674159618.json, 图片生成/文生图/z-image文生图！洗图！真实感有点吊打超强逼真！目前开源生图模型里ai味最少的一个模型，没有之一_1993881798801293314.json]
+missing: []
+members: [音频生成/音频生成/IndexTTS-2.5声音克隆A-16｜情感控制支持五国语言_2107684803452690433.json, 音频生成/音频生成/IndexTTS-2.5声音克隆｜上传参考音频即学即用｜音频生成自然流畅_2102247738854428674.json, 音频生成/音频生成/IndexTTS2.5声音克隆工作流｜语音合成高保真音频生成_2097038903340527618.json, 音频生成/音频生成/IndexTTS2.5语音合成工作流｜声音克隆更稳更拟真_2097218455132008449.json, 音频生成/音频生成/IndexTTS2参考音色克隆｜音频生成拿来做配音神器_2097213028491161601.json, 音频生成/音频生成/上传参考音频文案｜IndexTTS2声音克隆音频生成_2093779915991764994.json, 音频生成/音频生成/声音克隆IndexTTS 2.5情感控制五国语言工作流，音频生成语音克隆工具_2107971183093313538.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_288
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1921436231337705474.json、图片生成/文生图/Qwen Image 2512文生图！图生图反推！+可选4K高清放大_1900359010674159618.json、图片生成/文生图/z-image文生图！洗图！真实感有点吊打超强逼真！目前开源生图模型里ai味最少的一个模型，没有之一_1993881798801293314.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2.5声音克隆A-16｜情感控制支持五国语言_2107684803452690433.json、音频生成/音频生成/IndexTTS-2.5声音克隆｜上传参考音频即学即用｜音频生成自然流畅_2102247738854428674.json、音频生成/音频生成/IndexTTS2.5声音克隆工作流｜语音合成高保真音频生成_2097038903340527618.json、音频生成/音频生成/IndexTTS2.5语音合成工作流｜声音克隆更稳更拟真_2097218455132008449.json、音频生成/音频生成/IndexTTS2参考音色克隆｜音频生成拿来做配音神器_2097213028491161601.json…）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImpactInt`
-- `ImpactMinMax`
-- `ImpactSwitch`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageSize`
-- `easy int`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `ImageCASharpening+` —— 2/3 个有
-- `SeedVR2BlockSwap` —— 2/3 个有
-- `SeedVR2ExtraArgs` —— 2/3 个有
-- `SeedVR2GGUF` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `SeedVR2` —— 1/3 个有
+- `RH_IndexTTS25_Loader` —— 5/7 个有
+- `RH_IndexTTS25_Synthesize` —— 5/7 个有
+- `AudioCrop` —— 4/7 个有
+- `CR Text` —— 4/7 个有
+- `Float` —— 2/7 个有
+- `PrimitiveBoolean` —— 2/7 个有
+- `PrimitiveInt` —— 2/7 个有
+- `easy anythingIndexSwitch` —— 2/7 个有
+- `IndexTTS2BaseNode` —— 1/7 个有
+- `IndexTTS2Run` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 25 | 3 | 26% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 3 | 53% |
-| 采样算法 | res_multistep | - | 3 | 33% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.15 - 1 | 3 | 44% |
-| 宽度 | 1080 | 1080 - 1080 | 3 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 25，3 个样本，取值分散，一致性仅 26%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，3 个样本
-- 采样算法 最常用 res_multistep，3 个样本，一致性 33%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.15 - 1，3 个样本，取值分散，一致性仅 44%
-- 宽度 中位数 1080，观测区间 1080 - 1080，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、ImageCASharpening+、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: PurgeVRAM V2、easy cleanGpuUsed
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

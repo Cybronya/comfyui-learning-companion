@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_891
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8
-common_nodes: [MuyeTextEditOutput, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.690333
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json, 视频生成/文生视频/5.3.竖屏分镜图_2031793586961915906.json]
+members: [图片生成/图生图/SeedVR2 高清放大_1987722975048830977.json, 图片生成/图生图/SeedVR2图片高清修复工作流_2002210989393211394.json, 图片生成/图生图/SeedVR2细节增强高清放大_1980528292736487425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_891
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json、视频生成/文生视频/5.3.竖屏分镜图_2031793586961915906.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SeedVR2 高清放大_1987722975048830977.json、图片生成/图生图/SeedVR2图片高清修复工作流_2002210989393211394.json、图片生成/图生图/SeedVR2细节增强高清放大_1980528292736487425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
 - `SaveImage`
+- `SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `LayerFilter: GaussianBlur` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,39 +3,36 @@ name: unknown_workflow_video_93
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.526
-common_nodes: [Anything Everywhere, DownloadAndLoadFlorence2Model, Florence2Run, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, RunningHub_FramePack, Seed Everywhere, SetNode, StringFunction|pysssss, VHS_VideoCombine]
+coverage: 1
+common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1913943457507831810.json, 视频生成/图生视频/1913942332960403457.json]
+members: [视频生成/图生视频/FramePack图生视频_1913064575934132225.json, 视频生成/图生视频/FramePack超长图生视频工作流_1912931636185628674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_93
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1913943457507831810.json、视频生成/图生视频/1913942332960403457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频_1913064575934132225.json、视频生成/图生视频/FramePack超长图生视频工作流_1912931636185628674.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetNode`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `CR Prompt Text`
+- `JWInteger`
 - `LoadImage`
 - `RunningHub_FramePack`
-- `Seed Everywhere`
-- `SetNode`
-- `StringFunction|pysssss`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `Note _O` —— 1/2 个有
 
 ## 典型参数
 

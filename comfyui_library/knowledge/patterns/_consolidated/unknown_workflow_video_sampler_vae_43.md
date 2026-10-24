@@ -3,80 +3,56 @@ name: unknown_workflow_video_sampler_vae_43
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.7123
-common_nodes: [AddLabel, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
+coverage: 0.8465
+common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1927072484653223937.json, 视频生成/图生视频/1927172015592210434.json, 视频生成/图生视频/1922883836873510914.json, 视频生成/图生视频/1972511577779990529.json, 视频生成/图生视频/1922695812248387585.json, 视频生成/图生视频/1922711009637842946.json, 视频生成/图生视频/1988044304205680642.json, 视频生成/图生视频/1928697950808215553.json, 视频生成/图生视频/1934990691049086977.json, 视频生成/文生视频/1937481495915466754.json]
+members: [视频生成/图生视频/Uni3C运镜参考_1929726931179094017.json, 视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json, 视频生成/图生视频/Wan2.1 Kijai 图生视频_1947893136549904385.json, 视频生成/图生视频/Wan2.1 特效LoRa触发词合集_1948691890660081665.json, 视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json, 视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930311338440998914.json, 视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930415960338108418.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《360度旋转》_1917932584058425345.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《大摆锤舞蹈》_1917823045400985602.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《强风特效》_1917833994954539009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_43
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1927072484653223937.json、视频生成/图生视频/1927172015592210434.json、视频生成/图生视频/1922883836873510914.json、视频生成/图生视频/1972511577779990529.json、视频生成/图生视频/1922695812248387585.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Uni3C运镜参考_1929726931179094017.json、视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json、视频生成/图生视频/Wan2.1 Kijai 图生视频_1947893136549904385.json、视频生成/图生视频/Wan2.1 特效LoRa触发词合集_1948691890660081665.json、视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageConcatMulti`
+- `CLIPVisionLoader`
 - `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoVACEEncode`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 9/10 个有
-- `ImageConcanate` —— 9/10 个有
-- `ImagePadKJ` —— 9/10 个有
-- `InpaintPreprocessor` —— 9/10 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 9/10 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 9/10 个有
-- `MaskToImage` —— 9/10 个有
-- `WanVideoVACEModelSelect` —— 9/10 个有
-- `WanVideoVACEStartToEndFrame` —— 9/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/10 个有
-- `WanVideoTeaCache` —— 8/10 个有
-- `WanVideoTextEncode` —— 8/10 个有
-- `MaskPreview+` —— 7/10 个有
-- `ImageResizeKJv2` —— 6/10 个有
-- `ImageBlend` —— 5/10 个有
-- `DownloadAndLoadSAM2Model` —— 4/10 个有
-- `PointsEditor` —— 4/10 个有
-- `Sam2Segmentation` —— 4/10 个有
-- `WanVideoTorchCompileSettings` —— 4/10 个有
-- `ImageCompositeMasked` —— 3/10 个有
-- `PreviewAnimation` —— 3/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `MaskPreview` —— 2/10 个有
-- `VHS_VideoInfo` —— 2/10 个有
-- `WanVideoApplyNAG` —— 2/10 个有
-- `WanVideoTextEncodeSingle` —— 2/10 个有
-- `ImageResize+` —— 1/10 个有
-- `InvertMask` —— 1/10 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/10 个有
+- `WanVideoBlockSwap` —— 9/10 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `WanVideoLoraSelect` —— 6/10 个有
+- `WanVideoVRAMManagement` —— 5/10 个有
+- `PreviewImage` —— 4/10 个有
+- `LoadImageFromUrl` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `SaveAnimatedWEBP` —— 2/10 个有
+- `INTConstant` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
+- `WanVideoEncode` —— 1/10 个有
+- `WanVideoExperimentalArgs` —— 1/10 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/10 个有
+- `WanVideoUni3C_embeds` —— 1/10 个有
 
 ## 典型参数
 

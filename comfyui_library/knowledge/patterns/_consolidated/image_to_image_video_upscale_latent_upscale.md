@@ -7,13 +7,13 @@ coverage: 0.858667
 common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, CM_FloatToInt, CM_IntToFloat, CR Prompt Text, CheckpointLoaderSimple, ConditioningZeroOut, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetNode, GuiderParameters, INTConstant, ImageConcatMulti, ImagePadForOutpaint, ImageResizeKJv2, InsertImagesToBatchIndexed, KSampler, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultimodalGuider, PreviewImage, PrimitiveFloat, RandomNoise, RepeatImageBatch, SamplerCustomAdvanced, SaveImage, SetLatentNoiseMask, SetNode, SigmasPreview, SimpleCalculatorKJ, SolidMask, TextEncodeQwenImageEditPlus, TrimAudioDuration, UnetLoaderGGUF, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/2019460055539654657.json, 视频生成/图生视频/2037476698400231425.json, 视频生成/图生视频/2019457673309200386.json]
+members: [视频生成/图生视频/(自用-Aio V23 N+BFS Qwen 2511 )Ltx-2视频换脸V1_2019460055539654657.json, 视频生成/图生视频/Ltx-2视频换脸图生视频工作流_2037476698400231425.json, 视频生成/图生视频/（BFS Qwen2511版）Ltx-2视频换脸V1_2019457673309200386.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_upscale_latent_upscale
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2019460055539654657.json、视频生成/图生视频/2037476698400231425.json、视频生成/图生视频/2019457673309200386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/(自用-Aio V23 N+BFS Qwen 2511 )Ltx-2视频换脸V1_2019460055539654657.json、视频生成/图生视频/Ltx-2视频换脸图生视频工作流_2037476698400231425.json、视频生成/图生视频/（BFS Qwen2511版）Ltx-2视频换脸V1_2019457673309200386.json）
 
 - **类型**：Image To Image
 - **样本数**：3

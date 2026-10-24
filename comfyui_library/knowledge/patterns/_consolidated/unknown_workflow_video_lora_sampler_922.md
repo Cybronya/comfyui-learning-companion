@@ -3,54 +3,75 @@ name: unknown_workflow_video_lora_sampler_922
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8445
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PT_H3ConcatAVLatent, PixaromaLabel, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, ShowText|pysssss, Switch any [Crystools], UNETLoader, VAEEncode, VAELoader, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/1961732854524874753.json, 视频生成/文生视频/1958330393214783490.json]
+members: [视频生成/文生视频/MiniMax H3  Fl2va 双时钟采样 Turbo LORA 工作流_2089383100567605249.json, 视频生成/文生视频/MiniMax H3 双时钟采样 Turbo LORA 双采集多模态工作流_2087545682738630657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_922
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1961732854524874753.json、视频生成/文生视频/1958330393214783490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3  Fl2va 双时钟采样 Turbo LORA 工作流_2089383100567605249.json、视频生成/文生视频/MiniMax H3 双时钟采样 Turbo LORA 双采集多模态工作流_2087545682738630657.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PT_H3ConcatAVLatent`
+- `PixaromaLabel`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `ShowText|pysssss`
+- `Switch any [Crystools]`
+- `UNETLoader`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `PainterAudioLength` —— 1/2 个有
-- `RIFEInterpolation` —— 1/2 个有
-- `ShowAnything|Mie` —— 1/2 个有
-- `ToFloat` —— 1/2 个有
-- `ToInt` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
+- `AudioConcat` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `LoadVideoUI` —— 1/2 个有
+- `MiniMaxH3ImageToVideo` —— 1/2 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
+- `Primitive boolean [Crystools]` —— 1/2 个有
+- `TrimAudioDuration` —— 1/2 个有
+- `VAEDecode` —— 1/2 个有
+- `VAEEncodeAudio` —— 1/2 个有
+- `easy boolean` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

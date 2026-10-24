@@ -2,86 +2,64 @@
 name: unknown_workflow_video_lora_sampler_101
 type: Unknown Workflow
 frequency: 15
-level: strong
-coverage: 0.891933
-common_nodes: [Any To Any, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateVideo, GetVideoComponents, HunyuanVideoFoley, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed]
+level: moderate
+coverage: 0.738467
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065427279056031745.json, 视频生成/图生视频/2073849977520087042.json, 视频生成/图生视频/2073573407953874946.json, 视频生成/图生视频/2065620056792457217.json, 视频生成/图生视频/Bernini图生视频+YC Foley音效音视频生成_2065776899741278209.json, 视频生成/图生视频/2065425977529950209.json, 视频生成/图生视频/2064963434780905474.json, 视频生成/图生视频/2065053728595599362.json, 视频生成/图生视频/2064182035551440898.json, 视频生成/图生视频/2064632452102053889.json, 视频生成/图生视频/2064237198987321346.json, 视频生成/图生视频/2064364509602603010.json, 视频生成/图生视频/Images to Video Bernini图生视频+YC+Foley音效Sound Effect_2097160102343172098.json, 视频生成/图生视频/Images to Video+Bernini图生视频+YC+Foley音效Sound+Effect_2104029726410100737.json, 视频生成/图生视频/2073970025681219585.json]
+members: [视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2060992668020338689.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100475521611157506.json, 视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100747392579624962.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097216684217163777.json, 视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097636379042869250.json, 视频生成/图生视频/minimax h3_2089645770512359426.json, 视频生成/图生视频/minimax h3电商带货视频。自动提示词 无忧做带货视频_2087554123494416385.json, 视频生成/图生视频/一个普通的工作流_2094967354697535490.json, 视频生成/图生视频/全能参考 加速版_2086341513830817793.json, 视频生成/图生视频/双时钟采样6步极速参考生视频_2085777514399625218.json, 视频生成/图生视频/基础 H3工作流-参考图逻辑判断版_2101186866648276994.json, 视频生成/文生视频/MINIMAX-H3 开源加速版工作流4步lora加速合集h3文单图生多图参考_2087132475666550785.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085737590669529090.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085738060221861890.json, 视频生成/文生视频/测试使用_2094631681096507394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_101
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/2065427279056031745.json、视频生成/图生视频/2073849977520087042.json、视频生成/图生视频/2073573407953874946.json、视频生成/图生视频/2065620056792457217.json、视频生成/图生视频/Bernini图生视频+YC Foley音效音视频生成_2065776899741278209.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2060992668020338689.json、视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100475521611157506.json、视频生成/图生视频/[MiniMax-H3] 高保真图生视频：静止图像动态化与运镜重构 _ 视频生成 _ 图生视频 __2100747392579624962.json、视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097216684217163777.json、视频生成/图生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2097636379042869250.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `Any To Any`
-- `BerniniConditioning`
+- `BasicGuider`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Prompt Text`
-- `CreateVideo`
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniPromptEnhancer` —— 14/15 个有
-- `StringReplace` —— 14/15 个有
-- `easy showAnything` —— 14/15 个有
-- `PrimitiveInt` —— 13/15 个有
-- `SaveVideo` —— 13/15 个有
-- `Text` —— 13/15 个有
-- `RHLLMChatNode` —— 12/15 个有
-- `SimpleMath+` —— 3/15 个有
-- `BatchImagesNode` —— 2/15 个有
-- `ImageResizeKJv2` —— 2/15 个有
+- `PrimitiveFloat` —— 13/15 个有
+- `PrimitiveStringMultiline` —— 13/15 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 12/15 个有
+- `LoadAudio` —— 10/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/15 个有
+- `PreviewAny` —— 5/15 个有
+- `UniBlockSwap` —— 5/15 个有
+- `RHLLMChatNode` —— 4/15 个有
+- `MiniMaxH3DualClockSamplerT8` —— 3/15 个有
+- `RHHiddenNodes` —— 3/15 个有
 - `Int` —— 2/15 个有
-- `RH_LLMAPI_NODE` —— 2/15 个有
-- `ACE_AudioCrop` —— 1/15 个有
-- `AdjustAudio` —— 1/15 个有
-- `Audio Add Silence` —— 1/15 个有
-- `AudioCombine` —— 1/15 个有
+- `CR Text` —— 1/15 个有
+- `ComfySwitchNode` —— 1/15 个有
 - `GetNode` —— 1/15 个有
-- `JjkText` —— 1/15 个有
-- `Label (rgthree)` —— 1/15 个有
-- `LoadAudio` —— 1/15 个有
-- `Primitive integer [Crystools]` —— 1/15 个有
-- `RH_Translator` —— 1/15 个有
-- `RunningHub_VoxCPM_Generate` —— 1/15 个有
-- `RunningHub_VoxCPM_LoadModel` —— 1/15 个有
-- `SaveAudio` —— 1/15 个有
+- `ModelPreviewOverrideKJ` —— 1/15 个有
 - `SetNode` —— 1/15 个有
+- `VHS_LoadVideo` —— 1/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 15 | 100% |
-| Prompt 约束强度(CFG) | 10 | 4 - 10 | 15 | 73% |
-| 采样算法 | 1 | 1 - 1 | 15 | 100% |
-| 调度器 | euler | - | 15 | 100% |
-| 重绘幅度 | simple | - | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,8 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，15 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 10，15 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，15 个样本，一致性 100%
-- 重绘幅度 最常用 simple，15 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

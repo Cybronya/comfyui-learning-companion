@@ -1,0 +1,68 @@
+---
+key: 图片生成/图生图/Sketch手绘风格_Kontext-DEV-LORA_1948604464042246145.json
+name: Sketch手绘风格_Kontext-DEV-LORA_1948604464042246145
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Sketch手绘风格_Kontext-DEV-LORA_1948604464042246145.json
+hash: 1a893824e2636b1c
+coverage: 0.875
+learned_at: 2026-10-23 11:26:08
+nodes: [LoadImage, KSampler, VAELoader, DualCLIPLoader, FluxGuidance, ConditioningZeroOut, SaveImage, PreviewImage, UNETLoader, ReferenceLatent, Image Padding, ShowText|pysssss, CLIPTextEncode, TeaCache, VAEEncode, ImageStitch, VAEDecode, CR Simple Image Compare, SaveImage, FluxKontextImageScale, LoadImage, LoraLoaderModelOnly, Text Multiline, MarkdownNote]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 29876672637757, "steps": 20}
+---
+
+# 图片生成/图生图/Sketch手绘风格_Kontext-DEV-LORA_1948604464042246145.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Sketch手绘风格_Kontext-DEV-LORA_1948604464042246145.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（24 个）：
+- `LoadImage`
+- `KSampler` ★核心
+- `VAELoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `ConditioningZeroOut`
+- `SaveImage`
+- `PreviewImage`
+- `UNETLoader` ★核心
+- `ReferenceLatent`
+- `Image Padding`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+- `TeaCache`
+- `VAEEncode` ★核心
+- `ImageStitch`
+- `VAEDecode` ★核心
+- `CR Simple Image Compare`
+- `SaveImage`
+- `FluxKontextImageScale`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `Text Multiline`
+- `MarkdownNote`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `29876672637757`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **88%**（21/24）
+
+**有卡**：`LoadImage`、`KSampler`、`VAELoader`、`DualCLIPLoader`、`FluxGuidance`、`ConditioningZeroOut`、`SaveImage`、`UNETLoader`、`ReferenceLatent`、`Image Padding`、`CLIPTextEncode`、`TeaCache`、`VAEEncode`、`ImageStitch`、`VAEDecode`、`CR Simple Image Compare`、`FluxKontextImageScale`、`LoraLoaderModelOnly`、`Text Multiline`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage

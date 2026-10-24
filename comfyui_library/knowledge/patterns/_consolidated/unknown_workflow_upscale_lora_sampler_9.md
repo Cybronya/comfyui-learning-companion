@@ -1,80 +1,73 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_9
 type: Unknown Workflow
-frequency: 7
+frequency: 14
 level: strong
-coverage: 0.737571
-common_nodes: [CLIPSetLastLayer, CLIPTextEncode, ImageScaleBy, ImageUpscaleWithModel, ImpactStringSelector, Int, JjkConcat, JjkText, KSampler, PrimitiveFloat, SaveImage, StringConcatenate, TextRandomMultiline, UpscaleModelLoader, VAEDecode, easy loraStack, easy loraStackApply, easy showAnything, easy textSwitch, math_calculate, workflow>MainLoad]
-problems: []
-missing: [CR Split String, easy textSwitch, workflow>MainLoad, easy loraStack, easy loraStackApply]
-members: [图片生成/文生图/1950577025067175938.json, 图片生成/文生图/3D动漫Illustrious文生图_无限制_2026917188258500609.json, 图片生成/文生图/Illustrious文生图_无限制动漫_2026498379655684098.json, 图片生成/文生图/Illustrious科幻机甲_2050905003711311874.json, 图片生成/文生图/SDXL文生图_无限制_2026919557071376386.json, 图片生成/文生图/SDXL文生美图_2026534975964712961.json, 图片生成/文生图/WAI Illustrious文生瑟图_二次元_动漫_2023677640929972226.json]
+coverage: 0.801071
+common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/FireRed‑Image‑Edit衣服替换_2098222393721446402.json, 图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097171417648427010.json, 图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097510318359535618.json, 图片生成/图生图/一键换装   换装   一键换衣  换衣   电商服装展示_2059835700102651906.json, 图片生成/图生图/心然·寻源-FireRed‑Image‑Edit衣服替换_2091484811545370625.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2063873263129944066.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2063975044883238914.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064223586767958017.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064244296605323266.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064318549887377410.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064419023038799873.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064646568548069377.json, 图片生成/图生图/换装+换衣++服装展示+电商模特+_2066700930946527234.json, 图片生成/图生图/高清一键换装换衣服电商模特速度快_2064302988105175041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/1950577025067175938.json、图片生成/文生图/3D动漫Illustrious文生图_无限制_2026917188258500609.json、图片生成/文生图/Illustrious文生图_无限制动漫_2026498379655684098.json、图片生成/文生图/Illustrious科幻机甲_2050905003711311874.json、图片生成/文生图/SDXL文生图_无限制_2026919557071376386.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/FireRed‑Image‑Edit衣服替换_2098222393721446402.json、图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097171417648427010.json、图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097510318359535618.json、图片生成/图生图/一键换装   换装   一键换衣  换衣   电商服装展示_2059835700102651906.json、图片生成/图生图/心然·寻源-FireRed‑Image‑Edit衣服替换_2091484811545370625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPSetLastLayer`
-- `CLIPTextEncode`
-- `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `ImpactStringSelector`
-- `Int`
-- `JjkConcat`
-- `JjkText`
+全部 14 个 workflow 都包含：
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `PrimitiveFloat`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `SaveImage`
-- `StringConcatenate`
-- `TextRandomMultiline`
-- `UpscaleModelLoader`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `UNETLoader`
 - `VAEDecode`
-- `easy loraStack`
-- `easy loraStackApply`
-- `easy showAnything`
-- `easy textSwitch`
-- `math_calculate`
-- `workflow>MainLoad`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CompressImages` —— 6/7 个有
-- `DuckHideNode` —— 6/7 个有
-- `RandomInt` —— 6/7 个有
-- `easy batchAnything` —— 6/7 个有
-- `easy forLoopEnd` —— 6/7 个有
-- `easy forLoopStart` —— 6/7 个有
-- `easy mathInt` —— 6/7 个有
-- `CR Split String` —— 1/7 个有
-- `PrimitiveString` —— 1/7 个有
+- `PreviewImage` —— 10/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/14 个有
+- `GetNode` —— 4/14 个有
+- `SetNode` —— 4/14 个有
+- `Text` —— 4/14 个有
+- `easy imageSizeBySide` —— 4/14 个有
+- `TT_img_enc` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 7 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
-| 采样算法 | euler_ancestral | - | 7 | 100% |
-| 调度器 | normal | - | 7 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 14 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 100% |
+| 调度器 | simple | - | 14 | 71% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 14/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，7 个样本，一致性 100%
-- 调度器 最常用 normal，7 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Split String、easy textSwitch、workflow>MainLoad、easy loraStack、easy loraStackApply
+- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 100%
+- 调度器 最常用 simple，14 个样本，一致性 71%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（14/14 个样本）：Steps较低可能导致细节不足

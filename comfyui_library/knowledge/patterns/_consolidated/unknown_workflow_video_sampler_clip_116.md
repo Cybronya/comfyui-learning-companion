@@ -3,65 +3,79 @@ name: unknown_workflow_video_sampler_clip_116
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.4886
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetNode, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, Qwen3_VQA, RIFE VFI, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.749
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVScheduler, LTXVSeparateAVLatent, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, UnetLoaderGGUF, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017055688299651074.json, 视频生成/图生视频/2008405529701388289.json, 视频生成/图生视频/2050908544660197378.json, 视频生成/图生视频/2013245533510438913.json, 视频生成/图生视频/2013236610988515330.json]
+members: [视频生成/图生视频/LTX-2 GGUF量化版-图生视频-直接生成带音频的视频-低显存-速度贼快-自动提示词_2012026599562022913.json, 视频生成/图生视频/LTX-2 GGUF量化版图生视频_2011768781089017858.json, 视频生成/图生视频/LTX-2 GGUF量化版图生视频_2021585038990647298.json, 视频生成/图生视频/LTX-2 GGUF（rubby）_2012344262502912001.json, 视频生成/文生视频/LTX-2 GGUF量化版-文生视频-直接生成带音频的视频-低显存-速度贼快-自动提示词_2012014023218302977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_116
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2017055688299651074.json、视频生成/图生视频/2008405529701388289.json、视频生成/图生视频/2050908544660197378.json、视频生成/图生视频/2013245533510438913.json、视频生成/图生视频/2013236610988515330.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX-2 GGUF量化版-图生视频-直接生成带音频的视频-低显存-速度贼快-自动提示词_2012026599562022913.json、视频生成/图生视频/LTX-2 GGUF量化版图生视频_2011768781089017858.json、视频生成/图生视频/LTX-2 GGUF量化版图生视频_2021585038990647298.json、视频生成/图生视频/LTX-2 GGUF（rubby）_2012344262502912001.json、视频生成/文生视频/LTX-2 GGUF量化版-文生视频-直接生成带音频的视频-低显存-速度贼快-自动提示词_2012014023218302977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `DualCLIPLoaderGGUF`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `JoinStrings`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `Qwen3_VQA`
-- `RIFE VFI`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
+- `UnetLoaderGGUF`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `Text` —— 4/5 个有
-- `CLIPVisionEncode` —— 3/5 个有
-- `PainterI2V` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `INTConstant` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
-- `WanFirstLastFrameToVideo` —— 1/5 个有
-- `WanFirstMiddleLastFrameToVideo` —— 1/5 个有
+- `LTXVImgToVideoInplace` —— 4/5 个有
+- `LTXVPreprocess` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `INTConstant` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `JWInteger` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `AddLabel` —— 2/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `easy anythingIndexSwitch` —— 2/5 个有
+- `GetImageSize` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `Qwen3_VQA` —— 1/5 个有
+- `SomethingToString` —— 1/5 个有
+- `Split String` —— 1/5 个有
+- `TextPreview` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | simple | - | 5 | 100% |
+| 宽度 | 97 | 97 - 97 | 5 | 100% |
+| 高度 | 25 | 25 - 25 | 5 | 100% |
 
 ## 常见问题
 
@@ -69,8 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）

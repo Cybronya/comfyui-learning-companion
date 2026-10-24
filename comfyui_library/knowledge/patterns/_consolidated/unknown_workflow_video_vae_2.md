@@ -1,73 +1,39 @@
 ---
 name: unknown_workflow_video_vae_2
 type: Unknown Workflow
-frequency: 17
+frequency: 6
 level: moderate
-coverage: 0.904235
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.898167
+common_nodes: [HunyuanVideoFoley, RH_Translator, SaveLatent, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
 problems: []
 missing: []
-members: [数字人/数字人/infinitetalk数字人_2084490925362999297.json, 视频生成/图生视频/80.Infinitetalk图片数字人（最新优化版）_2096966651764895746.json, 视频生成/图生视频/2018667682865881089.json, 视频生成/图生视频/Infinitetalk单图数字人2_2089512344698314754.json, 视频生成/图生视频/Infinitetalk单图数字人_2089339073877073921.json, 视频生成/图生视频/Infinitetalk图片数字人1_2097958322732355585.json, 视频生成/图生视频/Infinitetalk图片数字人2_2098027802682548226.json, 视频生成/图生视频/Wan2.1+MultiTalk 极速音频驱动数字人（优化版）_2104770455717634049.json, 视频生成/图生视频/infinitetalk图片数字人优化版_2086755737535082498.json, 视频生成/图生视频/2044837678058835969.json, 视频生成/图生视频/2016326225295314946.json, 视频生成/图生视频/2018257190561255426.json, 视频生成/图生视频/2006243874485833729.json, 视频生成/图生视频/超强视频对口型（唱歌数字人））_2000589265400721409.json, 视频生成/图生视频/2000608709594185729.json, 视频生成/图生视频/2039237537125896193.json, 视频生成/图生视频/2026556385185505281.json]
+members: [音频生成/音频生成/hunyuan配音_1964226224115564546.json, 音频生成/音频生成/影片配音，音效_2008073310583660545.json, 音频生成/音频生成/影视短剧导演之六：视频音效 背景音_1989874275039498242.json, 音频生成/音频生成/视频配音 混元-Foley 背景音效_1972211822608707586.json, 音频生成/音频生成/视频配音 混元-Foley 视频音效 背景音_1983443250952478721.json, 音频生成/音频生成/视频配音 混元-Foley 视频音效 背景音_1986009915342954497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（数字人/数字人/infinitetalk数字人_2084490925362999297.json、视频生成/图生视频/80.Infinitetalk图片数字人（最新优化版）_2096966651764895746.json、视频生成/图生视频/2018667682865881089.json、视频生成/图生视频/Infinitetalk单图数字人2_2089512344698314754.json、视频生成/图生视频/Infinitetalk单图数字人_2089339073877073921.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/hunyuan配音_1964226224115564546.json、音频生成/音频生成/影片配音，音效_2008073310583660545.json、音频生成/音频生成/影视短剧导演之六：视频音效 背景音_1989874275039498242.json、音频生成/音频生成/视频配音 混元-Foley 背景音效_1972211822608707586.json、音频生成/音频生成/视频配音 混元-Foley 视频音效 背景音_1983443250952478721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：6
 - **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 6 个 workflow 都包含：
+- `HunyuanVideoFoley`
+- `RH_Translator`
+- `SaveLatent`
+- `VAEEncode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoModelLoader`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VHS_VideoInfoSource`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 16/17 个有
-- `Anything Everywhere` —— 14/17 个有
-- `LoadImage` —— 13/17 个有
-- `Audio Duration (mtb)` —— 10/17 个有
-- `MathExpression|pysssss` —— 10/17 个有
-- `WanVideoLoraSelectMulti` —— 10/17 个有
-- `WanVideoSamplerExtraArgs` —— 9/17 个有
-- `WanVideoSamplerv2` —— 9/17 个有
-- `WanVideoSchedulerv2` —— 9/17 个有
-- `WanVideoSampler` —— 8/17 个有
-- `WanVideoLoraSelect` —— 7/17 个有
-- `GetImageRangeFromBatch` —— 5/17 个有
-- `WanVideoEncode` —— 5/17 个有
-- `VHS_LoadVideo` —— 4/17 个有
-- `easy int` —— 4/17 个有
-- `ttN text` —— 4/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/17 个有
-- `SaveImage` —— 2/17 个有
-- `CR Prompt Text` —— 1/17 个有
-- `Label (rgthree)` —— 1/17 个有
-- `PlaySound|pysssss` —— 1/17 个有
-- `RH_Suno_Custom` —— 1/17 个有
-- `SaveAudio` —— 1/17 个有
-- `SaveAudioMP3` —— 1/17 个有
-- `VHS_VideoInfo` —— 1/17 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/6 个有
 
 ## 典型参数
 

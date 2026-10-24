@@ -3,43 +3,37 @@ name: unknown_workflow_video_38
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.789
-common_nodes: [GODMT_GetLength, GetImagesFromBatchIndexed, GetVideoComponents, Int2String, LayerUtility: PurgeVRAM V2, LoadVideo, MathExpression|pysssss, MiniCPM_VQA_Polished, PrimitiveString, ShowText|pysssss, Text Concatenate]
+coverage: 0.719
+common_nodes: [LoadImage, Qwen3_VQA, RHHiddenNodes, RH_Sora2_I2V, RH_Translator, SaveVideo, ShowText|pysssss, Text Multiline, VHS_VideoCombine, easy anythingIndexSwitch, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/ThinkSound_视频配音_1945061836188237825.json, 音频生成/音频生成/【gen全能视频Si】thinksound视频自动配音_1960925313461096449.json, 音频生成/音频生成/视频自动配音 HunyuanFoley_1943716345018191873.json, 音频生成/音频生成/视频自动配音 HunyuanFoley_1962811677538430977.json]
+members: [视频生成/图生视频/全能视频S产品图自动变高清视频-分镜提示词_1998643899310727169.json, 视频生成/图生视频/全能视频S产品视频-高清-提示词优化版_1985607215363117058.json, 视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容_1998575917553344513.json, 视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容，提示词自动化_1998633467942461442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_38
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/ThinkSound_视频配音_1945061836188237825.json、音频生成/音频生成/【gen全能视频Si】thinksound视频自动配音_1960925313461096449.json、音频生成/音频生成/视频自动配音 HunyuanFoley_1943716345018191873.json、音频生成/音频生成/视频自动配音 HunyuanFoley_1962811677538430977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S产品图自动变高清视频-分镜提示词_1998643899310727169.json、视频生成/图生视频/全能视频S产品视频-高清-提示词优化版_1985607215363117058.json、视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容_1998575917553344513.json、视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容，提示词自动化_1998633467942461442.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GODMT_GetLength`
-- `GetImagesFromBatchIndexed`
-- `GetVideoComponents`
-- `Int2String`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadVideo`
-- `MathExpression|pysssss`
-- `MiniCPM_VQA_Polished`
-- `PrimitiveString`
+- `LoadImage`
+- `Qwen3_VQA`
+- `RHHiddenNodes`
+- `RH_Sora2_I2V`
+- `RH_Translator`
+- `SaveVideo`
 - `ShowText|pysssss`
-- `Text Concatenate`
-
-**可变部分**（部分 workflow 才有）：
-- `RunningHub ThinkSound` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `HunyuanVideoFoley` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
+- `Text Multiline`
+- `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `easy showAnything`
 
 ## 典型参数
 

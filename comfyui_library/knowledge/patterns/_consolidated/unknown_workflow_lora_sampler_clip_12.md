@@ -1,85 +1,59 @@
 ---
 name: unknown_workflow_lora_sampler_clip_12
 type: Unknown Workflow
-frequency: 16
-level: moderate
-coverage: 0.745938
-common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode]
+frequency: 21
+level: strong
+coverage: 0.99719
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2064287550000422914.json, 视频生成/图生视频/2064563859888885761.json, 视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json, 视频生成/图生视频/2079038691699412993.json, 视频生成/图生视频/2066734260651913217.json, 视频生成/图生视频/2077298487875694594.json, 视频生成/图生视频/2079024443669696513.json, 视频生成/图生视频/2078737111863353346.json, 视频生成/图生视频/2081916685078061057.json, 视频生成/图生视频/LTX2.3 MSR V2 (多主体参考) 图生视频_2083493730379722754.json, 视频生成/图生视频/2066907383061901313.json, 视频生成/图生视频/2072516302538887169.json, 视频生成/图生视频/2063611075953778689.json, 视频生成/图生视频/2072510726874427393.json, 视频生成/图生视频/2073281065932046336.json, 视频生成/图生视频/2064168475052036098.json]
+members: [图片生成/图生图/80年底复古漫画_1966400010009128961.json, 图片生成/图生图/Kontext_超级屏幕联动（快速读取软件窗口图像）_1949855964494217217.json, 图片生成/图生图/一键手绘插画风格_1964963061075464194.json, 图片生成/图生图/厚涂漫画风格_1966390699019153410.json, 图片生成/图生图/变淡水彩_1964545521945858050.json, 图片生成/图生图/图片风格插画化_1966399479161270273.json, 图片生成/图生图/手绘美漫风格转绘_1964908268000788481.json, 图片生成/图生图/日常照片写真转绘卡通动画_1964909780139692034.json, 图片生成/图生图/昭和复古动漫风格_1964965180033650690.json, 图片生成/图生图/水下摄影_1964584753322147841.json, 图片生成/图生图/水彩风宠物转绘_1964900906997305346.json, 图片生成/图生图/治愈风漫画_1966401018340782082.json, 图片生成/图生图/瑞克·摩特里美式漫画_1964969597982134274.json, 图片生成/图生图/真人转蜡笔画风格_1964972661124288514.json, 图片生成/图生图/精美二次元风格_1964971064684068866.json, 图片生成/图生图/转创意油画_1964590628837408770.json, 图片生成/图生图/转吉卜力风格_1964556154326106113.json, 图片生成/图生图/转国风_1964588333903040514.json, 图片生成/图生图/转手绘卡通_1964580745543077890.json, 图片生成/图生图/转手绘时尚插画_1964587060856242177.json, 图片生成/图生图/转黑白手绘插画_1964904635557363714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/2064287550000422914.json、视频生成/图生视频/2064563859888885761.json、视频生成/图生视频/GS-ltx2.3_msr_v2多参图生视频_2087382666709659650.json、视频生成/图生视频/2079038691699412993.json、视频生成/图生视频/2066734260651913217.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/80年底复古漫画_1966400010009128961.json、图片生成/图生图/Kontext_超级屏幕联动（快速读取软件窗口图像）_1949855964494217217.json、图片生成/图生图/一键手绘插画风格_1964963061075464194.json、图片生成/图生图/厚涂漫画风格_1966390699019153410.json、图片生成/图生图/变淡水彩_1964545521945858050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：21
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CFGGuider`
+全部 21 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `LowVRAMCheckpointLoader`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `ReferenceLatent`
+- `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 12/16 个有
-- `SaveVideo` —— 12/16 个有
-- `GetNode` —— 8/16 个有
-- `LTX2_NAG` —— 8/16 个有
-- `PromptRelayEncode` —— 8/16 个有
-- `SetNode` —— 8/16 个有
-- `LoraLoaderModelOnly` —— 7/16 个有
-- `CR Text` —— 6/16 个有
-- `MathExpression|pysssss` —— 6/16 个有
-- `CR Float To Integer` —— 5/16 个有
-- `CR Text Concatenate` —— 5/16 个有
-- `CR Value` —— 5/16 个有
-- `FloatConstant` —— 5/16 个有
-- `PreviewAny` —— 5/16 个有
-- `RH_LLMAPI_NODE` —— 5/16 个有
-- `SimpleMath+` —— 5/16 个有
-- `VHS_VideoCombine` —— 5/16 个有
-- `easy boolean` —— 5/16 个有
-- `easy convertAnything` —— 5/16 个有
-- `LTXVSetAudioRefTokens` —— 4/16 个有
-- `CR Prompt Text` —— 3/16 个有
-- `ComfyMathExpression` —— 3/16 个有
-- `LTXVAddGuideMulti` —— 1/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
-- `LoadVideo` —— 1/16 个有
-- `PreviewImage` —— 1/16 个有
+- `LayerUtility: FluxKontextImageScale` —— 20/21 个有
+- `LoadImageFromURL` —— 20/21 个有
+- `DeepTranslatorTextNode` —— 1/21 个有
+- `FloatingVideo` —— 1/21 个有
+- `FluxKontextImageScale` —— 1/21 个有
+- `PreviewImage` —— 1/21 个有
+- `ScreenShare` —— 1/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 145 - 241 | 16 | 83% |
-| 高度 | 24 | 24 - 50 | 16 | 64% |
+| 采样步数 | 20 | 20 - 20 | 21 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 21 | 100% |
+| 采样算法 | euler | - | 21 | 100% |
+| 调度器 | simple | - | 21 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
 
 ## 常见问题
 
@@ -87,5 +61,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 145 - 241，16 个样本，取值集中（一致性 83%）
-- 高度 中位数 24，观测区间 24 - 50，16 个样本
+- 采样步数 中位数 20，观测区间 20 - 20，21 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，21 个样本，一致性 100%
+- 调度器 最常用 simple，21 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）

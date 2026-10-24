@@ -3,17 +3,17 @@ name: unknown_workflow_video_90
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [Audio Duration (mtb), JWIntegerToFloat, LoadAudio, LoadImage, MathExpression|pysssss, Primitive integer [Crystools], RepeatImageBatch, RunningHub SongPrep, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline, VHS_VideoCombine, easy showAnything]
+coverage: 0.8845
+common_nodes: [CR Prompt Text, Float, ImageConcanate, JWImageResizeByLongerSide, JWInteger, LoadImage, RunningHub_FramePack_F1, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1995818841752186881.json, 音频生成/音频生成/SongBloom自回归音乐模型_1938795870470987778.json]
+members: [视频生成/图生视频/FramePack-F1正向采样图生视频（手部优化）V1_1919298489241501697.json, 视频生成/图生视频/FramePack-V1图生视频_1932622744146092033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_90
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1995818841752186881.json、音频生成/音频生成/SongBloom自回归音乐模型_1938795870470987778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack-F1正向采样图生视频（手部优化）V1_1919298489241501697.json、视频生成/图生视频/FramePack-V1图生视频_1932622744146092033.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,21 +23,17 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `JWIntegerToFloat`
-- `LoadAudio`
+- `CR Prompt Text`
+- `Float`
+- `ImageConcanate`
+- `JWImageResizeByLongerSide`
+- `JWInteger`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `RepeatImageBatch`
-- `RunningHub SongPrep`
-- `SaveAudio`
-- `SongBloomDecoder`
-- `SongBloomGenerate`
-- `SongBloomModelLoader`
-- `Text Multiline`
+- `RunningHub_FramePack_F1`
 - `VHS_VideoCombine`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

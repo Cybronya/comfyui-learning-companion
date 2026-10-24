@@ -3,96 +3,70 @@ name: text_to_image_video_lora_sampler_119
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.8865
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DrawViTPose, EmptyLatentImage, ImageBatch, ImageFromBatch, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MemoryCleaner, OnnxDetectionModelLoader, PoseAndFaceDetection, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.523
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, EmptyLatentImage, GetNode, INTConstant, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), SamplerCustom, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimate2ContextOptions, WanAnimate2ToVideo, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/动作迁移实测演示｜图生视频人物动作复刻测试版_2105110911513096194.json, 视频生成/图生视频/口哨舞动作迁移工作流，视频换脸动作迁移图生视频处理工具_2107540897608069122.json, 视频生成/图生视频/口哨舞动作迁移｜跟着节奏吹口哨跳舞，视频换脸动作两合一_2107349970042056706.json, 视频生成/图生视频/口哨舞手势舞换衣加动作迁移加抖X加最长30秒工作流，动作迁移图生视频_2107542399965810689.json, 视频生成/图生视频/口哨舞手势舞换衣动作迁移抖X版｜最长30秒，换装跳舞一气呵成_2107356106170392577.json, 视频生成/图生视频/换衣动作迁移抖X特效｜图生视频换装方案直出_2091274631566151682.json]
+members: [视频生成/图生视频/WanAnimate2动作迁移工作流｜一张图让角色跳舞_2100890163294597121.json, 视频生成/图生视频/WanAnimate2动作迁移工作流｜丝滑长视频人物替换生成_2097768858282184705.json, 视频生成/图生视频/WanAnimate2动作迁移模型｜丝滑长视频生成工作流_2095948603918475266.json, 视频生成/图生视频/WanAnimate2动作迁移｜图生视频精准复刻人物动作姿态_2101507280977092610.json, 视频生成/图生视频/WanAnimate2最强动作迁移｜王者归来丝滑长视频_2097960146419937281.json, 视频生成/图生视频/王者级动作迁移长视频｜WanAnimate2 丝滑换脸出片_2096236030365097986.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_119
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/动作迁移实测演示｜图生视频人物动作复刻测试版_2105110911513096194.json、视频生成/图生视频/口哨舞动作迁移工作流，视频换脸动作迁移图生视频处理工具_2107540897608069122.json、视频生成/图生视频/口哨舞动作迁移｜跟着节奏吹口哨跳舞，视频换脸动作两合一_2107349970042056706.json、视频生成/图生视频/口哨舞手势舞换衣加动作迁移加抖X加最长30秒工作流，动作迁移图生视频_2107542399965810689.json、视频生成/图生视频/口哨舞手势舞换衣动作迁移抖X版｜最长30秒，换装跳舞一气呵成_2107356106170392577.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/WanAnimate2动作迁移工作流｜一张图让角色跳舞_2100890163294597121.json、视频生成/图生视频/WanAnimate2动作迁移工作流｜丝滑长视频人物替换生成_2097768858282184705.json、视频生成/图生视频/WanAnimate2动作迁移模型｜丝滑长视频生成工作流_2095948603918475266.json、视频生成/图生视频/WanAnimate2动作迁移｜图生视频精准复刻人物动作姿态_2101507280977092610.json、视频生成/图生视频/WanAnimate2最强动作迁移｜王者归来丝滑长视频_2097960146419937281.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DrawViTPose`
 - `EmptyLatentImage`
-- `ImageBatch`
+- `GetNode`
+- `INTConstant`
 - `ImageFromBatch`
 - `ImageResizeKJv2`
-- `Int`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MemoryCleaner`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Power Lora Loader (rgthree)`
+- `SamplerCustom`
+- `SetNode`
+- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VHS_VideoInfoLoaded`
+- `WanAnimate2ContextOptions`
+- `WanAnimate2ToVideo`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchCount+` —— 5/6 个有
-- `ComfyMathExpression` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `RepeatImageBatch` —— 5/6 个有
-- `VHS_VideoInfo` —— 5/6 个有
-- `WanVideoContextOptions` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `easy mathInt` —— 5/6 个有
-- `SaveImage` —— 4/6 个有
-- `easy float` —— 4/6 个有
-- `easy int` —— 4/6 个有
-- `Fast Groups Muter (rgthree)` —— 3/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `CropWithPadInfo` —— 2/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `QwenEditConfigPreparer` —— 2/6 个有
-- `QwenEditOutputExtractor` —— 2/6 个有
-- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 2/6 个有
-- `easy imageRemBg` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/6 个有
-- `GetImageSizeAndCount` —— 1/6 个有
-- `GoohaiUniversalSlider` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
+- `FastGroupsBypassSwitch` —— 5/6 个有
+- `FeiHouWanAnimate2SeamColorMatch` —— 5/6 个有
+- `FeiHouWanAnimate2ToVideo` —— 5/6 个有
+- `Seed (rgthree)` —— 5/6 个有
+- `WanAnimate2Cache` —— 4/6 个有
+- `Int` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 - `SimpleMath+` —— 1/6 个有
-- `TextEncodeQwenImageEditPlus` —— 1/6 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/6 个有
-- `WujiCleaner` —— 1/6 个有
-- `WujiUpscaler` —— 1/6 个有
 
 ## 典型参数
 
@@ -110,7 +84,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -121,4 +95,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，6 个样本，一致性 100%
 - 调度器 最常用 beta，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（13/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_667
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.767667
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 1
+common_nodes: [Bjornulf_ShowStringText, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/音色模拟，影视级音色强势来袭_2016509153212112897.json, 音频生成/音频生成/音色模拟，影视级音色强势来袭_2027349178526994433.json, 音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【多人版】🪂_1966011585905029122.json]
+members: [图片生成/图生图/joycaption2精准反推提示词_1911978098747998209.json, 图片生成/图生图/「详细到手上的戒指」极致精准反推提示词_1889627968720003073.json, 图片生成/文生图/图片反推提示词Qwen3 VQA_2051569934068662273.json, 图片生成/文生图/图片反推提示词Qwen3 VQA_2051722960624467969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_667
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/音色模拟，影视级音色强势来袭_2016509153212112897.json、音频生成/音频生成/音色模拟，影视级音色强势来袭_2027349178526994433.json、音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【多人版】🪂_1966011585905029122.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/joycaption2精准反推提示词_1911978098747998209.json、图片生成/图生图/「详细到手上的戒指」极致精准反推提示词_1889627968720003073.json、图片生成/文生图/图片反推提示词Qwen3 VQA_2051569934068662273.json、图片生成/文生图/图片反推提示词Qwen3 VQA_2051722960624467969.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `Bjornulf_ShowStringText`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedVCNode` —— 2/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
+- `Qwen3_VQA` —— 2/4 个有
+- `workflow>升级版反推提示词` —— 2/4 个有
+- `easy saveText` —— 1/4 个有
 
 ## 典型参数
 

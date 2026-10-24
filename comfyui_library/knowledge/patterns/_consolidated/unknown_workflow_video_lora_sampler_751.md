@@ -3,69 +3,80 @@ name: unknown_workflow_video_lora_sampler_751
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9115
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.945
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, RandomNoise, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, VAEDecodeTiled, VHS_LoadVideo, VHS_VideoCombine, YOLOModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3加速方式对比_2087392191630106625.json, 视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json]
+members: [视频生成/图生视频/LTX-2.3 视频动作迁移_2041045547859054594.json, 视频生成/图生视频/LTX2.3动作迁移（人物二创）_2036397493621104642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_751
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3加速方式对比_2087392191630106625.json、视频生成/图生视频/MiniMax H3 Reference to Video全能参考高质量加速版_2084174615190007809.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 视频动作迁移_2041045547859054594.json、视频生成/图生视频/LTX2.3动作迁移（人物二创）_2036397493621104642.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `EasyCache`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `Label (rgthree)`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `PrimitiveBoolean`
 - `RandomNoise`
-- `ResolutionSelector`
+- `SDPoseOODLoader`
+- `SDPoseOODProcessor`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `YOLOModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 1/2 个有
-- `MiniMaxH3BlockCacheT8` —— 1/2 个有
-- `MiniMaxH3PromptEnhancerT8` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `SolAttnMiniMax` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `easy convertAnything` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `easy string` —— 1/2 个有
-- `string_util_StrConcat` —— 1/2 个有
+- `CM_FloatToInt` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LTXVChunkFeedForward` —— 1/2 个有
+- `LatentUpscaleModelLoader` —— 1/2 个有
+- `ModelPatchTorchSettings` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `PixelPerfectResolution` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 109 | - | 2 | 89% |
+| 高度 | 24 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -73,4 +84,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 109，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- 高度 中位数 24，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

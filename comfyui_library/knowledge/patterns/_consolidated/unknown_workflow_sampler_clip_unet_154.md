@@ -1,54 +1,63 @@
 ---
 name: unknown_workflow_sampler_clip_unet_154
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.85875
-common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxSamplerParams+, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.936
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX-fp8出图-高清放大_2004950309392838658.json, 图片生成/文生图/文生图生成精美的手工设计图_1892852557050777602.json, 图片生成/文生图/高清放大4K_2015373674332823554.json, 图片生成/文生图/高清放大4K_2091148212773146625.json]
+members: [图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json, 图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json, 图片生成/图生图/【flux2-klein】动漫人物转真人_2018492884374261761.json, 图片生成/图生图/【flux2-klein】手绘漫画风格_2018497479477567489.json, 图片生成/图生图/【推荐动漫转真人】Flux2 Klein_史上最强动漫转写实真人_2017575897674551298.json, 图片生成/图生图/【阡陌】FLUX-2-Klein 9B base版单图编辑工作流_2016508238623154177.json, 图片生成/图生图/一次出图100张 海量图生图 多角度 保持人物一致 Flux2 Klein 9B Klein  一图_2027279328433676290.json, 图片生成/图生图/告别等待：FLUX.2 [klein] 开启“实时视觉合成”新时代_2012151475887149058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_154
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/FLUX-fp8出图-高清放大_2004950309392838658.json、图片生成/文生图/文生图生成精美的手工设计图_1892852557050777602.json、图片生成/文生图/高清放大4K_2015373674332823554.json、图片生成/文生图/高清放大4K_2091148212773146625.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json、图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json、图片生成/图生图/【flux2-klein】动漫人物转真人_2018492884374261761.json、图片生成/图生图/【flux2-klein】手绘漫画风格_2018497479477567489.json、图片生成/图生图/【推荐动漫转真人】Flux2 Klein_史上最强动漫转写实真人_2017575897674551298.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxSamplerParams+`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `UltimateSDUpscale` —— 3/4 个有
-- `UpscaleModelLoader` —— 3/4 个有
-- `LoadImage` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `LoraLoader` —— 1/4 个有
-- `Note _O` —— 1/4 个有
+- `ReferenceLatent` —— 7/8 个有
+- `VAEEncode` —— 7/8 个有
+- `ConditioningZeroOut` —— 5/8 个有
+- `CR Text` —— 3/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `easy imageConcat` —— 2/8 个有
+- `CR Prompt List` —— 1/8 个有
+- `ConditioningAddImageReference` —— 1/8 个有
+- `JWInteger` —— 1/8 个有
+- `Load Lora` —— 1/8 个有
+- `TextCombinerTwo` —— 1/8 个有
+- `easy promptLine` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -56,5 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

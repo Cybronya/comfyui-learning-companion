@@ -1,0 +1,85 @@
+---
+key: 图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905.json
+name: Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905.json
+hash: 4f8b9c67fb441e1d
+coverage: 0.846154
+learned_at: 2026-10-23 11:22:03
+nodes: [VAEDecode, SaveImage, LoadImage, ImageScaleToTotalPixels, EmptyLatentImage, UpscaleModelLoader, ImageUpscaleWithModel, AIO_Preprocessor, PreviewImage, PreviewImage, ConditioningZeroOut, Note, UnetLoaderGGUF, CLIPLoader, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, CLIPLoader, VAELoader, ControlNetLoader, CFGNorm, LoraLoaderModelOnly, MarkdownNote, KSampler, ControlNetApplyAdvanced]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 0.8, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 477091720554910, "steps": 8, "width": 1536}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
+
+**节点**（26 个）：
+- `VAEDecode` ★核心
+- `SaveImage`
+- `LoadImage`
+- `ImageScaleToTotalPixels`
+- `EmptyLatentImage` ★核心
+- `UpscaleModelLoader`
+- `ImageUpscaleWithModel`
+- `AIO_Preprocessor`
+- `PreviewImage`
+- `PreviewImage`
+- `ConditioningZeroOut`
+- `Note`
+- `UnetLoaderGGUF` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ControlNetLoader`
+- `CFGNorm`
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `KSampler` ★核心
+- `ControlNetApplyAdvanced` ★核心
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `1536`
+- `height` = `1024`
+- `batch_size` = `1`
+- `seed` = `477091720554910`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `controlnet_strength` = `0.8`
+
+## 知识
+
+覆盖率 **85%**（22/26）
+
+**有卡**：`VAEDecode`、`SaveImage`、`LoadImage`、`ImageScaleToTotalPixels`、`EmptyLatentImage`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`AIO_Preprocessor`、`ConditioningZeroOut`、`UnetLoaderGGUF`、`CLIPLoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`ControlNetLoader`、`CFGNorm`、`KSampler`、`ControlNetApplyAdvanced`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

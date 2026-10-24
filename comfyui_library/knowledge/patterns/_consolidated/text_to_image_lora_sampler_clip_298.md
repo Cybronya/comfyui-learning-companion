@@ -1,80 +1,89 @@
 ---
 name: text_to_image_lora_sampler_clip_298
 type: Text To Image
-frequency: 3
+frequency: 6
 level: strong
-coverage: 0.903667
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageResizeKJv2, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.886
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea 2 ControlNet+VLM 自动提示词文生图_2074712993492987905.json, 图片生成/文生图/Krea2 深度图空间控制_2074545419065053185.json, 图片生成/文生图/Krea2_Control Depth 控制网-深度图-文生图工作流_2074461735284723713.json]
+members: [图片生成/图生图/Kontext人像修图调色 清新色调图生图精修处理_2099220069216776194.json, 图片生成/图生图/kontext一键去水印带前后对比｜图生图无痕修复，老照片旧图拯救_2107311794724364289.json, 图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093877817636376577.json, 图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093901151463890945.json, 图片生成/图生图/光影融合4.0工作流｜皮肤质感不变图生图画质优化_2097507489922240514.json, 图片生成/图生图/开源玩法大全｜FLUX_Kontext商品换背景角色一致性_2091226009478717441.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_298
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea 2 ControlNet+VLM 自动提示词文生图_2074712993492987905.json、图片生成/文生图/Krea2 深度图空间控制_2074545419065053185.json、图片生成/文生图/Krea2_Control Depth 控制网-深度图-文生图工作流_2074461735284723713.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Kontext人像修图调色 清新色调图生图精修处理_2099220069216776194.json、图片生成/图生图/kontext一键去水印带前后对比｜图生图无痕修复，老照片旧图拯救_2107311794724364289.json、图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093877817636376577.json、图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093901151463890945.json、图片生成/图生图/光影融合4.0工作流｜皮肤质感不变图生图画质优化_2097507489922240514.json…）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `JjkText`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
 - `LoadImage`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 2/3 个有
-- `1hew_TextListToString` —— 1/3 个有
-- `DepthAnythingV2Preprocessor` —— 1/3 个有
-- `LayerUtility: ImageReel` —— 1/3 个有
-- `LayerUtility: ImageReelComposit` —— 1/3 个有
-- `Load Image From Url (mtb)` —— 1/3 个有
-- `LoadImageFromPath` —— 1/3 个有
-- `Qwen3_VQA` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `孤海注释` —— 4/6 个有
+- `PreviewImage` —— 3/6 个有
+- `FluxKontextImageScale` —— 2/6 个有
+- `easy positive` —— 2/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `ConstrainImage|pysssss` —— 1/6 个有
+- `EmptySD3LatentImage` —— 1/6 个有
+- `Image Levels Adjustment` —— 1/6 个有
+- `ImageStitch` —— 1/6 个有
+- `ImpactInt` —— 1/6 个有
+- `InspyrenetRembg` —— 1/6 个有
+- `LayerMask: MaskGrow` —— 1/6 个有
+- `LayerUtility: HLFrequencyDetailRestore` —— 1/6 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1080 | 1080 - 1280 | 3 | 92% |
-| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 1080 - 1280，3 个样本，取值集中（一致性 92%）
-- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

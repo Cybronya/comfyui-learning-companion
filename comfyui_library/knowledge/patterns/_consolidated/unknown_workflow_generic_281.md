@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_281
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.6364
-common_nodes: [LoadAudio, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize]
+coverage: 0.813375
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json, 数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json, 音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json, 音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json, 音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json]
+members: [图片生成/图生图/全能图片G2.0-图生图-image2_2046763561539604481.json, 图片生成/图生图/图生图-image2收费1毛钱  10图_2098186362116722689.json, 图片生成/图生图/图生图-image2收费1毛钱_2097340388897017857.json, 图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json, 图片生成/文生图/全能图片G-2.0低价版_2098371967287128065.json, 图片生成/文生图/全能图片G-image-2_2047136798891057153.json, 图片生成/文生图/鸡皮提 Image 2.0图生图_单图编辑_双图编辑强势上线 超强排版和文字能力全能图像G_2046794740380733442.json, 图片生成/文生图/鸡皮提 Image 2.0文生图_图生图_单图编辑_双图编辑强势上线 超强排版和文字能力全能图像G_2046786207207657473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_281
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json、数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json、音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json、音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json、音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0-图生图-image2_2046763561539604481.json、图片生成/图生图/图生图-image2收费1毛钱  10图_2098186362116722689.json、图片生成/图生图/图生图-image2收费1毛钱_2097340388897017857.json、图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json、图片生成/文生图/全能图片G-2.0低价版_2098371967287128065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 3/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `孤海注释` —— 5/8 个有
+- `CR Text` —— 4/8 个有
+- `RH_RhartImageG2TextToImage` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `忽略多组孤海` —— 1/8 个有
 
 ## 典型参数
 

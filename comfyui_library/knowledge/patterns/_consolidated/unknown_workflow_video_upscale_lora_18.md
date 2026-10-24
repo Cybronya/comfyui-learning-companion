@@ -7,13 +7,13 @@ coverage: 0.492667
 common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageScaleToMegapixels, ImpactControlBridge, ImpactInt, ImpactSwitch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadJsonFromText, LoadWanVideoT5TextEncoder, RHHiddenNodes, RH_Captioner, RH_LLMAPI_NODE, Seed (rgthree), SetNode, StringFunction|pysssss, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoVAELoader, easy ifElse, easy mathInt, easy negative, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1971101417341652994.json, 视频生成/图生视频/1981765455167791105.json, 视频生成/图生视频/1973100539745538049.json]
+members: [视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1971101417341652994.json, 视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json, 视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_18
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1971101417341652994.json、视频生成/图生视频/1981765455167791105.json、视频生成/图生视频/1973100539745538049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1971101417341652994.json、视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json、视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

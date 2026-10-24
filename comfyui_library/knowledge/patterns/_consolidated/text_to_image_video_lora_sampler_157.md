@@ -7,13 +7,13 @@ coverage: 0.79825
 common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, PrimitiveFloat, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MinimaxH3全能参考VDN一采｜文生视频多模式生成_2097108523267219458.json, 视频生成/文生视频/minimax8步工作流｜视频二创换角色换场景｜动作运镜全保留_2101853028855930882.json, 视频生成/文生视频/双时钟8步高质量极速多参V1｜Minimax文生图生视频生视频工作流_2087188424548769794.json, 视频生成/视频生视频/MiniMax_H3视频复刻加速版_数字人参考生视频与长视频直出工作流_2106181004804317185.json]
+members: [视频生成/文生视频/MinimaxH3全能参考VDN一采｜文生视频多模式生成_2097108523267219458.json, 视频生成/文生视频/minimax8步工作流｜视频二创换角色换场景｜动作运镜全保留_2101853028855930882.json, 视频生成/文生视频/双时钟8步高质量极速多参V1｜Minimax文生图生视频生视频工作流_2087188424548769794.json, 视频生成/视频生视频/MiniMax_H3视频复刻加速版，数字人参考生视频与长视频直出工作流_2106181004804317185.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_157
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考VDN一采｜文生视频多模式生成_2097108523267219458.json、视频生成/文生视频/minimax8步工作流｜视频二创换角色换场景｜动作运镜全保留_2101853028855930882.json、视频生成/文生视频/双时钟8步高质量极速多参V1｜Minimax文生图生视频生视频工作流_2087188424548769794.json、视频生成/视频生视频/MiniMax_H3视频复刻加速版_数字人参考生视频与长视频直出工作流_2106181004804317185.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考VDN一采｜文生视频多模式生成_2097108523267219458.json、视频生成/文生视频/minimax8步工作流｜视频二创换角色换场景｜动作运镜全保留_2101853028855930882.json、视频生成/文生视频/双时钟8步高质量极速多参V1｜Minimax文生图生视频生视频工作流_2087188424548769794.json、视频生成/视频生视频/MiniMax_H3视频复刻加速版，数字人参考生视频与长视频直出工作流_2106181004804317185.json）
 
 - **类型**：Text To Image
 - **样本数**：4

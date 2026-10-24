@@ -3,66 +3,62 @@ name: unknown_workflow_video_lora_sampler_817
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9045
-common_nodes: [BerniniPromptEnhancer, CreateVideo, INTConstant, ImageResizeKJv2, LoadImage, PreviewAny, Seed (rgthree), SimpleMath+, StringFunction|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+coverage: 0.5585
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2064109526978224129.json, 视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json]
+members: [视频生成/图生视频/WanAnimate+OneToAll+姿势复刻_1998769286015504386.json, 视频生成/图生视频/美女跳舞动作迁移-高质量无偏色无劣化长视频-优化显存不足问题_2018217919682973698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_817
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2064109526978224129.json、视频生成/文生视频/提示词自动反推！！Wan2.2 Bernini Plus版节点 视频编辑工作流v2版_2071946665900208129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate+OneToAll+姿势复刻_1998769286015504386.json、视频生成/图生视频/美女跳舞动作迁移-高质量无偏色无劣化长视频-优化显存不足问题_2018217919682973698.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BerniniPromptEnhancer`
-- `CreateVideo`
-- `INTConstant`
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `PreviewAny`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `StringFunction|pysssss`
+- `OnnxDetectionModelLoader`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus Bernini`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ContextOptions`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SamplerExtraArgs`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `RHLLMChatNode` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `DrawViTPose` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `PoseAndFaceDetection` —— 1/2 个有
+- `PoseDetectionOneToAllAnimation` —— 1/2 个有
+- `RepeatImageBatch` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/2 个有
+- `WanVideoUni3C_embeds` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,41 +3,32 @@ name: unknown_workflow_video_56
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.875333
-common_nodes: [CR Prompt Text, GetVideoComponents, JWInteger, LoadVideo, RunningHub Univideo Editor, RunningHub Univideo Loader, SaveVideo]
+coverage: 1
+common_nodes: [JWImageResizeByLongerSide, JWInteger, LoadImage, RH_Translator, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2012118316487286785.json, 视频生成/图生视频/2012169222125785089.json, 视频生成/图生视频/2012431207476240386.json]
+members: [视频生成/图生视频/FramePack图生视频工作流_1913216262325923842.json, 视频生成/图生视频/FramePack图生视频工作流｜最长一分钟_1913095566052552706.json, 视频生成/图生视频/FramePack超长 图生视频工作流_1913145456501714945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_56
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2012118316487286785.json、视频生成/图生视频/2012169222125785089.json、视频生成/图生视频/2012431207476240386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频工作流_1913216262325923842.json、视频生成/图生视频/FramePack图生视频工作流｜最长一分钟_1913095566052552706.json、视频生成/图生视频/FramePack超长 图生视频工作流_1913145456501714945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetVideoComponents`
+- `JWImageResizeByLongerSide`
 - `JWInteger`
-- `LoadVideo`
-- `RunningHub Univideo Editor`
-- `RunningHub Univideo Loader`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `DapaoImageAspectRatioResizeNode` —— 1/3 个有
-- `PDIMAGE_LongerSize` —— 1/3 个有
-- `RMBG` —— 1/3 个有
+- `LoadImage`
+- `RH_Translator`
+- `RunningHub_FramePack`
+- `VHS_VideoCombine`
 
 ## 典型参数
 

@@ -2,65 +2,53 @@
 name: unknown_workflow_video_sampler_clip_138
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.74825
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy int]
+level: moderate
+coverage: 0.92875
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAddGuide, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVScheduler, LoadImage, SamplerCustom, TextInput_, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1984115522054848513.json, 视频生成/图生视频/2029855115275935745.json, 视频生成/图生视频/2039163093128843266.json, 视频生成/图生视频/1984520851058016257.json]
+members: [图片生成/图生图/最快的视频生成模型 LTX-Video+首尾帧合成视频-StarAI_1898028219306856450.json, 视频生成/图生视频/LTX  首尾帧视频 关键帧视频 _测试_2032350611932450818.json, 视频生成/图生视频/LTX  首尾帧视频 关键帧视频_1897656899377287170.json, 视频生成/图生视频/图生视频LTX  首尾帧视频 关键帧视频_2045019668942950401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_138
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/1984115522054848513.json、视频生成/图生视频/2029855115275935745.json、视频生成/图生视频/2039163093128843266.json、视频生成/图生视频/1984520851058016257.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/最快的视频生成模型 LTX-Video+首尾帧合成视频-StarAI_1898028219306856450.json、视频生成/图生视频/LTX  首尾帧视频 关键帧视频 _测试_2032350611932450818.json、视频生成/图生视频/LTX  首尾帧视频 关键帧视频_1897656899377287170.json、视频生成/图生视频/图生视频LTX  首尾帧视频 关键帧视频_2045019668942950401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：75%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetNode`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAddGuide`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SamplerCustom`
+- `TextInput_`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 3/4 个有
-- `easy cleanGpuUsed` —— 3/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `RIFE VFI` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
+- `ApplyFBCacheOnModel` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PatchModelPatcherOrder` —— 1/4 个有
 - `PathchSageAttentionKJ` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RH_Nano_Banana_Image2Image` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 9 | 6 - 10 | 4 | 80% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler_ancestral | - | 4 | 75% |
-| 重绘幅度 | simple | - | 4 | 75% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 6 - 10，4 个样本，取值集中（一致性 80%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，4 个样本，一致性 75%
-- 重绘幅度 最常用 simple，4 个样本，一致性 75%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

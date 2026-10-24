@@ -1,93 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_57
 type: Unknown Workflow
-frequency: 19
+frequency: 20
 level: moderate
-coverage: 0.491368
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, PlaySound|pysssss, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached]
+coverage: 0.6794
+common_nodes: [Anything Everywhere, CLIPVisionLoader, CR Text, ColorCorrectOfUtils, GetNode, ImageCASharpening+, ImageResize+, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [数字人/数字人/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2073792349171441665.json, 视频生成/图生视频/2077358900407529474.json, 视频生成/图生视频/2066604420628041729.json, 视频生成/图生视频/2066603013753630721.json, 视频生成/图生视频/2066543884603314177.json, 视频生成/图生视频/2066782151881875457.json, 视频生成/图生视频/2066741675816476673.json, 视频生成/图生视频/2068262147108458498.json, 视频生成/图生视频/2078042149253378050.json, 视频生成/图生视频/2076912417958883329.json, 视频生成/图生视频/Scail2 重打光 动作迁移 多角色参考_2084830615622471682.json, 视频生成/图生视频/2077432876697743361.json, 视频生成/图生视频/2077419412851875842.json, 视频生成/图生视频/2068262165575983106.json, 视频生成/图生视频/2068262138006827009.json, 视频生成/图生视频/2068335753142292482.json, 视频生成/图生视频/2068262155610312705.json, 视频生成/图生视频/2068344555199614977.json, 视频生成/图生视频/2068262129140060162.json]
+members: [视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_1950329201004077057.json, 视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_2039984689393442817.json, 视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_2043879387652694017.json, 视频生成/图生视频/【大师运镜】Wan2.2+FusionX图生视频｜高清版_1955450074836996098.json, 视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_1955598143335403521.json, 视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_2007976462116200450.json, 视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_2037787300108705793.json, 视频生成/图生视频/【曲线运镜FusionX版】Wan2.1图生视频（全自动）_1934553565845200897.json, 视频生成/图生视频/【曲线运镜】Wan2.2+FusionX图生视频（基础流）_1951191570521464834.json, 视频生成/图生视频/【表情包定制V2】 全能图片Pro-wan2.2动态_1991161112701829121.json, 视频生成/图生视频/【超级加速运镜】Wan2.2+FusionX图生视频_1951090702346297346.json, 视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2 自动提示词+润色_1952905614798295042.json, 视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2全自动一键生成_1952534346064441346.json, 视频生成/图生视频/【高速运镜】Wan2.2+FusionX图生视频（基础流）_1951088586961694722.json, 视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2029075141904306178.json, 视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2030461301822070785.json, 视频生成/图生视频/图生视频  分镜头  Wan2.2_2041390268406046721.json, 视频生成/图生视频/自定义表情包+人物表情+Q版动画，全能通用版（静态+动态）_2012093297564585986.json, 视频生成/文生视频/【细节加强版】Wan2.2+FusionX图生视频_1958341618350899202.json, 视频生成/文生视频/【舞台镜头分镜】超长视频生成Wan2.2-SkyreelsV2图生长视频_1978980050555015169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_57
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（数字人/数字人/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2073792349171441665.json、视频生成/图生视频/2077358900407529474.json、视频生成/图生视频/2066604420628041729.json、视频生成/图生视频/2066603013753630721.json、视频生成/图生视频/2066543884603314177.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_1950329201004077057.json、视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_2039984689393442817.json、视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_2043879387652694017.json、视频生成/图生视频/【大师运镜】Wan2.2+FusionX图生视频｜高清版_1955450074836996098.json、视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_1955598143335403521.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CLIPTextEncode`
+全部 20 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `Fast Groups Bypasser (rgthree)`
+- `CR Text`
+- `ColorCorrectOfUtils`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `ImageCASharpening+`
+- `ImageResize+`
 - `Int`
+- `JWInteger`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `SetNode`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
-- `WanVideoTextEncodeCached`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 18/19 个有
-- `PrimitiveBoolean` —— 18/19 个有
-- `SimpleMath+` —— 18/19 个有
-- `WanAnimatePlus ClipVisionEncode` —— 18/19 个有
-- `WanVideoTorchCompileSettings` —— 18/19 个有
-- `ComfyMathExpression` —— 17/19 个有
-- `AutoRefCollage` —— 13/19 个有
-- `Seed (rgthree)` —— 13/19 个有
-- `VHS_LoadVideo` —— 13/19 个有
-- `GIMMVFI_interpolate` —— 12/19 个有
-- `ImageBatchMulti` —— 12/19 个有
-- `DownloadAndLoadGIMMVFIModel` —— 11/19 个有
-- `WanAnimatePlus ClipVisionEncode V2` —— 8/19 个有
-- `BatchImagesNode` —— 7/19 个有
-- `WanAnimatePlus ContextOptions` —— 7/19 个有
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings` —— 7/19 个有
-- `easy cleanGpuUsed` —— 7/19 个有
-- `ComfySwitchNode` —— 6/19 个有
-- `VHS_LoadVideoFFmpeg` —— 6/19 个有
-- `easy clearCacheAll` —— 6/19 个有
-- `WanVideoContextOptions` —— 5/19 个有
-- `EmptyImage` —— 4/19 个有
-- `FastCanvas` —— 4/19 个有
-- `FastCanvasTool` —— 4/19 个有
-- `RMBG` —— 4/19 个有
-- `TTP_Expand_And_Mask` —— 2/19 个有
-- `FastGroupsBypassSwitch` —— 1/19 个有
-- `Image Blank` —— 1/19 个有
-- `ImageCompositeMasked` —— 1/19 个有
-- `JjkText` —— 1/19 个有
-- `Label (rgthree)` —— 1/19 个有
-- `RepeatImageBatch` —— 1/19 个有
-- `RunningHub Deepcleaner` —— 1/19 个有
-- `SAM3_TrackToMask` —— 1/19 个有
-- `ToBoolNode` —— 1/19 个有
-- `WanAnimatePlus LoraSelect` —— 1/19 个有
+- `CreateCFGScheduleFloatList` —— 19/20 个有
+- `LayerUtility: PurgeVRAM V2` —— 19/20 个有
+- `RHHiddenNodes` —— 19/20 个有
+- `CR String To Number` —— 18/20 个有
+- `FluxResolutionNode` —— 18/20 个有
+- `InversionDemoLazyIndexSwitch` —— 18/20 个有
+- `easy int` —— 18/20 个有
+- `easy showAnything` —— 18/20 个有
+- `CogVideoEnhanceAVideo` —— 17/20 个有
+- `WanVideoExperimentalArgs` —— 17/20 个有
+- `WanVideoSLG` —— 17/20 个有
+- `WanVideoTextEncode` —— 17/20 个有
+- `WanVideoTorchCompileSettings` —— 11/20 个有
+- `CR Text Concatenate` —— 9/20 个有
+- `easy textSwitch` —— 6/20 个有
+- `ShowText|pysssss` —— 5/20 个有
+- `PreviewImage` —— 4/20 个有
+- `WanVideoApplyNAG` —— 4/20 个有
+- `WanVideoTextEncodeSingle` —— 3/20 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/20 个有
+- `SaveImage` —— 2/20 个有
+- `WanVideoSetLoRAs` —— 2/20 个有
+- `easy imageConcat` —— 2/20 个有
+- `AudioCrop` —— 1/20 个有
+- `LayerColor: Brightness & Contrast` —— 1/20 个有
+- `LoadAudio` —— 1/20 个有
+- `PreviewAudio` —— 1/20 个有
+- `PreviewBridge` —— 1/20 个有
+- `RH_Captioner` —— 1/20 个有
+- `Text Multiline` —— 1/20 个有
+- `VHS_LoadVideo` —— 1/20 个有
+- `easy anythingIndexSwitch` —— 1/20 个有
 
 ## 典型参数
 

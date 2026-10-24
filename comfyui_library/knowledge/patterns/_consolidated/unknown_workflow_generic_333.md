@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_333
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8564
-common_nodes: [LoadAudio, SaveAudio, VibeVoiceTTS]
+coverage: 0.581429
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4_5, Comfly_api_set, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/VibeVoice 微软 能合成长达 90 分钟的语音，支持多达 4 位不同说话者_1967215782138613762.json, 音频生成/音频生成/VibeVoice单人长文本克隆_1964083564432211969.json, 音频生成/音频生成/VibeVoice多人声音克隆_1964085772519358466.json, 音频生成/音频生成/VibeVoice语音克隆_1949635786288320514.json, 音频生成/音频生成/vibevoice-声音克隆-多人对话_1963817321922007041.json]
+members: [图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json, 图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json, 图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json, 图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json, 图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json, 图片生成/文生图/Seedream 4.5-文生图-API版-0.15积分-30秒出图_1997613442628521986.json, 图片生成/文生图/Seedream+4.5-文生图-API版-0.15积分-30秒出图_1997620182178836481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_333
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/VibeVoice 微软 能合成长达 90 分钟的语音，支持多达 4 位不同说话者_1967215782138613762.json、音频生成/音频生成/VibeVoice单人长文本克隆_1964083564432211969.json、音频生成/音频生成/VibeVoice多人声音克隆_1964085772519358466.json、音频生成/音频生成/VibeVoice语音克隆_1949635786288320514.json、音频生成/音频生成/vibevoice-声音克隆-多人对话_1963817321922007041.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.5-双图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997211210846244866.json、图片生成/图生图/Seedream 4.5单图编辑API版-0.15积分-30秒出图，人物一致性＞香蕉2_1997206538618081282.json、图片生成/图生图/Seedream 4.5单图编辑API版-人物一致性好于大香蕉2）_2005938711567237121.json、图片生成/图生图/Seedream 4.5单图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996769515729997826.json、图片生成/图生图/Seedream 4.5双图编辑API版（0.15基准，30秒出图，人物一致性好于大香蕉2）_1996772191935111169.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `VibeVoiceTTS`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedream_4_5`
+- `Comfly_api_set`
+- `LoadImage`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `Text` —— 2/5 个有
-- `AudioSeparation` —— 1/5 个有
+- `ImageConcanate` —— 5/7 个有
+- `JWImageResizeByLongerSide` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
 
 ## 典型参数
 

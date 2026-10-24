@@ -1,75 +1,77 @@
 ---
 name: unknown_workflow_lora_sampler_unet_73
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.928
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, EmptyLatentImage, ImageMirror, KSampler, LayerUtility: TextBox, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAELoader, YCFaceAlignToCanvas, YCFaceAnalysisModels]
-problems: []
-missing: [LayerUtility: TextBox, Text Concatenate]
-members: [图片生成/文生图/1983057404365549569.json, 图片生成/文生图/1983827405842358274.json]
+frequency: 8
+level: strong
+coverage: 0.801125
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/Cherish the bond 矢量宠物定制_2002935381395927041.json, 图片生成/图生图/QWen-Edit-2509-一致性增强版-换衣_1970021369595502593.json, 图片生成/图生图/Qwen Image Edit2509-单图融合编辑工作流_1987877193000882178.json, 图片生成/图生图/Qwen Image Edit2509-多图融合编辑工作流_1987853484341006338.json, 图片生成/图生图/Qwen-Edit-2509 Consistance Edit（图像一致性） workflow v4.0_1989864091101614081.json, 图片生成/图生图/Qwen-Edit一键生成字体海报_2003726936436318209.json, 图片生成/图生图/Qwen-创意涂鸦海报_2041395180921692161.json, 图片生成/图生图/图生图-产品创意海报_2040662642892742657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1983057404365549569.json、图片生成/文生图/1983827405842358274.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Cherish the bond 矢量宠物定制_2002935381395927041.json、图片生成/图生图/QWen-Edit-2509-一致性增强版-换衣_1970021369595502593.json、图片生成/图生图/Qwen Image Edit2509-单图融合编辑工作流_1987877193000882178.json、图片生成/图生图/Qwen Image Edit2509-多图融合编辑工作流_1987853484341006338.json、图片生成/图生图/Qwen-Edit-2509 Consistance Edit（图像一致性） workflow v4.0_1989864091101614081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `ImageMirror`
 - `KSampler`
-- `LayerUtility: TextBox`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus_lrzjason`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `YCFaceAlignToCanvas`
-- `YCFaceAnalysisModels`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 7/8 个有
+- `seed _O` —— 5/8 个有
+- `Text _O` —— 4/8 个有
+- `easy showAnything` —— 3/8 个有
+- `Fast Groups Muter (rgthree)` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `Seed (rgthree)` —— 2/8 个有
+- `TextCombinerTwo` —— 2/8 个有
+- `TextInput_` —— 2/8 个有
+- `EmptyLatentImage` —— 1/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `PDIMAGE_LongerSize` —— 1/8 个有
+- `easy imageConcat` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2.5 | - | 2 | 100% |
-| 采样算法 | euler_cfg_pp | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 896 | - | 2 | 86% |
-| 高度 | 1280 | - | 2 | 80% |
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 50% |
+| 调度器 | simple | - | 8 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 768 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_cfg_pp，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: TextBox、Text Concatenate
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 50%
+- 调度器 最常用 simple，8 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

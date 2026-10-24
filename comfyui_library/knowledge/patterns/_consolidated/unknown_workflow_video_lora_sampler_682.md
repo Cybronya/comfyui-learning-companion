@@ -7,13 +7,13 @@ coverage: 0.889667
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CreateCFGScheduleFloatList, Fast Bypasser (rgthree), GetNode, ImageResizeKJv2, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, Primitive integer [Crystools], RHHiddenNodes, RIFE VFI, SetNode, SimpleMath+, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy getNode, easy setNode, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/2028753060067020801.json, 视频生成/图生视频/1997167105533480961.json, 视频生成/图生视频/1990714282465779714.json]
+members: [视频生成/图生视频/球球抖动弹跳~TIPTOK引流专用_2028753060067020801.json, 视频生成/图生视频/球球抖动弹跳引流专用_1997167105533480961.json, 视频生成/图生视频/🦺【大炮擦边】球球抖动弹跳~TIPTOK引流专用_1990714282465779714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_682
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2028753060067020801.json、视频生成/图生视频/1997167105533480961.json、视频生成/图生视频/1990714282465779714.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/球球抖动弹跳~TIPTOK引流专用_2028753060067020801.json、视频生成/图生视频/球球抖动弹跳引流专用_1997167105533480961.json、视频生成/图生视频/🦺【大炮擦边】球球抖动弹跳~TIPTOK引流专用_1990714282465779714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

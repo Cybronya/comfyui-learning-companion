@@ -1,69 +1,85 @@
 ---
 name: unknown_workflow_sampler_clip_vae_26
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, VAELoader, WanImageToVideo]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 7
+level: moderate
+coverage: 0.842857
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Integer To String, CR Split String, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, INTConstant, Int, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, StringToInt, Text Concatenate, VAEDecode, VAEEncode, VAELoader, easy compare, easy ifElse]
+problems: []
 missing: []
-members: [视频生成/图生视频/1920615619392110593.json, 视频生成/图生视频/1937276822209896450.json, 视频生成/图生视频/1895293426588385281.json, 视频生成/图生视频/1934136795636355074.json, 视频生成/图生视频/1901974657921081346.json]
+members: [图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json, 图片生成/图生图/Kontext单图编辑_1938411645796548610.json, 图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json, 图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json, 图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json, 图片生成/图生图/超强模型Kontext双图编辑Nunchaku+Lora双加速版_1950227095365533698.json, 图片生成/文生图/[Kontext]flux1-dev-kontext开源版本_1938374526730178562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_26
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1920615619392110593.json、视频生成/图生视频/1937276822209896450.json、视频生成/图生视频/1895293426588385281.json、视频生成/图生视频/1934136795636355074.json、视频生成/图生视频/1901974657921081346.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json、图片生成/图生图/Kontext单图编辑_1938411645796548610.json、图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json、图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json、图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
+- `CR Integer To String`
+- `CR Split String`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
+- `INTConstant`
+- `Int`
+- `KSamplerSelect`
 - `LoadImage`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `StringToInt`
+- `Text Concatenate`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `WanImageToVideo`
+- `easy compare`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 4/5 个有
-- `VHS_VideoCombine` —— 4/5 个有
-- `UNETLoader` —— 3/5 个有
-- `ModelSamplingSD3` —— 2/5 个有
-- `UnetLoaderGGUF` —— 2/5 个有
-- `ImageResizeKJ` —— 1/5 个有
-- `MagCache` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `SaveLatent` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `UNETLoader` —— 5/7 个有
+- `ETN_ReferenceImage` —— 4/7 个有
+- `FluxResolutionNode` —— 4/7 个有
+- `GetImageSize` —— 4/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `RH_Translator` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `DeepTranslatorTextNode` —— 3/7 个有
+- `FluxKontextImageScale` —— 3/7 个有
+- `GetImageSize+` —— 3/7 个有
+- `JWStringGetLine` —— 3/7 个有
+- `RH_LLMAPI_NODE` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `NunchakuFluxDiTLoader` —— 2/7 个有
+- `NunchakuFluxLoraLoader` —— 2/7 个有
+- `CLIPVisionLoader` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `StyleModelLoader` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 5 | 89% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | uni_pc | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 1/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，5 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

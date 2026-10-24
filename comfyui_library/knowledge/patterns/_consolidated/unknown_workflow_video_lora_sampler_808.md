@@ -3,42 +3,44 @@ name: unknown_workflow_video_lora_sampler_808
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7725
-common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, ImpactSwitch, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RH_LLMAPI_NODE, Text Concatenate, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy imageScaleDownToSize]
+coverage: 0.905
+common_nodes: [Bjornulf_ShowStringText, GetImageSizeAndCount, INTConstant, ImageResizeKJ, ImageResizeKJv2, Int, JjkConcat, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, LoadWanVideoT5TextEncoder, Note Plus (mtb), TTP_text_mix, TextInput_, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1956534345093840897.json, 视频生成/文生视频/1956197962999320577.json]
+members: [视频生成/图生视频/Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225.json, 视频生成/图生视频/Wan2.2_I2V_KJ图生视频_Lightx2v加速开关+提示词智能优化开关 Borges_1951996290366427137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_808
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1956534345093840897.json、视频生成/文生视频/1956197962999320577.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225.json、视频生成/图生视频/Wan2.2_I2V_KJ图生视频_Lightx2v加速开关+提示词智能优化开关 Borges_1951996290366427137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `FaceProcessorLoader`
-- `ImpactSwitch`
+- `Bjornulf_ShowStringText`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `Int`
+- `JjkConcat`
+- `LTXVPromptEnhancer`
+- `LTXVPromptEnhancerLoader`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `Text Concatenate`
+- `Note Plus (mtb)`
+- `TTP_text_mix`
+- `TextInput_`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
@@ -47,19 +49,13 @@ source: knowledge_consolidation
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy imageScaleDownToSize`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Any Switch (rgthree)` —— 1/2 个有
+- `CreateCFGScheduleFloatList` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,84 +1,65 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_sampler_10
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9545
-common_nodes: [CFGGuider, CLIPTextEncode, CM_IntToFloat, CR Text, ComfySwitchNode, CreateVideo, EmptyLTXVLatentVideo, Int, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, SimpleMath+, StringToAnyNode, VAEDecodeTiled, easy boolean, easy showAnything]
+frequency: 8
+level: moderate
+coverage: 0.941125
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, HunyuanVideo15LatentUpscaleWithModel, HunyuanVideo15SuperResolution, KSamplerSelect, LatentUpscaleModelLoader, ModelSamplingSD3, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2045560076383035394.json, 视频生成/图生视频/2038979711182839810.json, 视频生成/图生视频/2038953188350500865.json, 视频生成/图生视频/2034896033376899073.json, 视频生成/图生视频/2034985387369697281.json, 视频生成/图生视频/2045761939795611649.json, 视频生成/图生视频/2071735603636563970.json, 视频生成/图生视频/2045411758013161473.json, 视频生成/文生视频/ltx2.3_Q4_gguf_文生视频（字幕压制版）_2038972879353679874.json, 视频生成/文生视频/ltx2.3文生视频_2033751992933294081.json]
+members: [视频生成/图生视频/HUNYUAN 1.5 I2V SR_2073280696038289410.json, 视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json, 视频生成/图生视频/workflow_2073289414930944001.json, 视频生成/图生视频/混元1.5I2V+超分-Aiwood_1992198526646153217.json, 视频生成/图生视频/混元1.5_图生视频_场景推进画面首选_1997913784465391617.json, 视频生成/文生视频/HunyuanVideo_1.5加速图生视频1080p_1993246112486195202.json, 视频生成/文生视频/HunyuanVideo_1.5加速图生视频1080p（熊叔版）_1993572660164706305.json, 视频生成/文生视频/HunyuanVideo_1.5加速文生视频1080p_1993277000070660097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2045560076383035394.json、视频生成/图生视频/2038979711182839810.json、视频生成/图生视频/2038953188350500865.json、视频生成/图生视频/2034896033376899073.json、视频生成/图生视频/2034985387369697281.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/HUNYUAN 1.5 I2V SR_2073280696038289410.json、视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json、视频生成/图生视频/workflow_2073289414930944001.json、视频生成/图生视频/混元1.5I2V+超分-Aiwood_1992198526646153217.json、视频生成/图生视频/混元1.5_图生视频_场景推进画面首选_1997913784465391617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CR Text`
-- `ComfySwitchNode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `Int`
+- `DualCLIPLoader`
+- `HunyuanVideo15LatentUpscaleWithModel`
+- `HunyuanVideo15SuperResolution`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
-- `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: PurgeVRAM V2`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SimpleMath+`
-- `StringToAnyNode`
-- `VAEDecodeTiled`
-- `easy boolean`
-- `easy showAnything`
+- `UNETLoader`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVPreprocess` —— 8/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/10 个有
-- `LoadImage` —— 8/10 个有
-- `LoraLoaderModelOnly` —— 8/10 个有
-- `DualCLIPLoader` —— 7/10 个有
-- `LTX2SamplingPreviewOverride` —— 7/10 个有
-- `LTX2_NAG` —— 7/10 个有
-- `UnetLoaderGGUF` —— 7/10 个有
-- `VAELoaderKJ` —— 7/10 个有
-- `DualCLIPLoaderGGUF` —— 5/10 个有
-- `LTXVCropGuides` —— 5/10 个有
-- `LTXVImgToVideoConditionOnly` —— 5/10 个有
-- `CheckpointLoaderSimple` —— 3/10 个有
-- `LTXAVTextEncoderLoader` —— 3/10 个有
-- `LTXVAudioVAELoader` —— 3/10 个有
-- `LTXVImgToVideoInplaceKJ` —— 3/10 个有
-- `LTXVScheduler` —— 1/10 个有
+- `CLIPVisionEncode` —— 7/8 个有
+- `CLIPVisionLoader` —— 7/8 个有
+- `HunyuanVideo15ImageToVideo` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `VAEDecode` —— 6/8 个有
+- `VAEDecodeTiled` —— 5/8 个有
+- `VHS_VideoCombine` —— 5/8 个有
+- `CreateVideo` —— 3/8 个有
+- `DisableNoise` —— 3/8 个有
+- `GetImageSize` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `SplitSigmas` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `ResizeLongestToNode` —— 2/8 个有
+- `EmptyHunyuanVideo15Latent` —— 1/8 个有
+- `ResizeImagesByLongerEdge` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 241 | 241 - 241 | 10 | 100% |
-| 高度 | 24 | 24 - 24 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -86,5 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 241 - 241，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，10 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

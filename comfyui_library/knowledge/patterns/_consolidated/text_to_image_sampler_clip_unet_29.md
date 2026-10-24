@@ -1,73 +1,83 @@
 ---
 name: text_to_image_sampler_clip_unet_29
 type: Text To Image
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.95675
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.987
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, scale]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image 反推提示词出图_2001135324149448705.json, 图片生成/文生图/Z-image 文生图_2006288280186265601.json, 图片生成/文生图/Z-image 最新模型 文生图工作流V1.0_1993835227038629890.json, 图片生成/文生图/Z-image 超清快速文生图_2010897242143592450.json, 图片生成/文生图/Z-image+Qwen3 图像反推_1993867190606692353.json, 图片生成/文生图/Z-image-turbo-文生图（开源之王）_1997492012880433154.json, 图片生成/文生图/Z-image-turbo基础文生图【用于绘世comfyui批量管理系统】_2089190207693344769.json, 图片生成/文生图/Z-image_1996868918985773057.json, 图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json, 图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json, 图片生成/文生图/boogu_image_turbo+文生图+提示词反推_2069229283981217794.json, 图片生成/文生图/boogu_image_turbo+文生图+提示词反推_2069585759648174082.json]
+members: [图片生成/图生图/cheems大狗拆分-klein_2032421634149191681.json, 图片生成/图生图/cheems小狗拆分-klein_2032696662476460034.json, 图片生成/图生图/dnf立绘-klein_2094651972447199233.json, 图片生成/图生图/沙雕古风角色-klein_2083342088791486465.json, 图片生成/图生图/沙雕角色-klein_2032423622459006977.json, 图片生成/图生图/角色转cheems大狗-klein_2032694011659558914.json, 图片生成/图生图/角色转cheems小-klein_2033068803185184770.json, 图片生成/图生图/角色转dro-klein_2037310245491449857.json, 图片生成/图生图/金色法相-klein_2086299055189221378.json, 图片生成/文生图/传奇风格场景-klein_2083539437392318465.json, 图片生成/文生图/传奇风格场景制作｜klein文生图图生图_2091780106510491649.json, 图片生成/文生图/传奇风格场景生成｜klein文生图图生图直出_2091608413749993473.json, 图片生成/文生图/沙雕场景-klein_2083534277521793026.json, 图片生成/文生图/沙雕角色6-klein_2091476898760187905.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_29
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Z-image 反推提示词出图_2001135324149448705.json、图片生成/文生图/Z-image 文生图_2006288280186265601.json、图片生成/文生图/Z-image 最新模型 文生图工作流V1.0_1993835227038629890.json、图片生成/文生图/Z-image 超清快速文生图_2010897242143592450.json、图片生成/文生图/Z-image+Qwen3 图像反推_1993867190606692353.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/cheems大狗拆分-klein_2032421634149191681.json、图片生成/图生图/cheems小狗拆分-klein_2032696662476460034.json、图片生成/图生图/dnf立绘-klein_2094651972447199233.json、图片生成/图生图/沙雕古风角色-klein_2083342088791486465.json、图片生成/图生图/沙雕角色-klein_2032423622459006977.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `scale`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 11/12 个有
-- `LoadImage` —— 5/12 个有
-- `RH_Captioner` —— 3/12 个有
-- `RTXVideoSuperResolution` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `PreviewAny` —— 2/12 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/12 个有
-- `Qwen3_VQA` —— 1/12 个有
-- `Text _O` —— 1/12 个有
+- `LoraLoader` —— 8/14 个有
+- `LoraLoaderModelOnly` —— 6/14 个有
+- `easy anythingIndexSwitch` —— 6/14 个有
+- `HAIGC_SaveImagesToZip` —— 4/14 个有
+- `RMBG` —— 4/14 个有
+- `JjkText` —— 2/14 个有
+- `solarL_SaveImagesToZip` —— 2/14 个有
+- `孤海注释` —— 2/14 个有
+- `ImageScaleBy` —— 1/14 个有
+- `PIP_图像联结` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1052 | 720 - 1920 | 12 | 68% |
-| 高度 | 1536 | 1024 - 1920 | 12 | 74% |
-| 采样步数 | 9.5 | 4 - 20 | 12 | 59% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 83% |
-| 调度器 | simple | - | 12 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 8 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 4 | 2 - 5 | 14 | 85% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 14 | 18% |
+| 采样算法 | euler | - | 14 | 86% |
+| 调度器 | simple | - | 14 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 1024 | 80 - 1920 | 14 | 38% |
+| 高度 | 896 | 80 - 1200 | 14 | 53% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1052，观测区间 720 - 1920，12 个样本
-- 高度 中位数 1536，观测区间 1024 - 1920，12 个样本
-- 采样步数 中位数 9.5，观测区间 4 - 20，12 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 83%
-- 调度器 最常用 simple，12 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（6/12 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 2 - 5，14 个样本，取值集中（一致性 85%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，14 个样本，取值分散，一致性仅 18%
+- 采样算法 最常用 euler，14 个样本，一致性 86%
+- 调度器 最常用 simple，14 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 80 - 1920，14 个样本，取值分散，一致性仅 38%
+- 高度 中位数 896，观测区间 80 - 1200，14 个样本
+- 高发问题（17/14 个样本）：Steps较低可能导致细节不足

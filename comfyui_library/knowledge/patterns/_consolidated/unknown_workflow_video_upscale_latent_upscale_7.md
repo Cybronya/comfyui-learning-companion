@@ -1,79 +1,93 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_7
 type: Unknown Workflow
-frequency: 23
-level: moderate
-coverage: 0.447391
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 30
+level: strong
+coverage: 0.9251
+common_nodes: [AnyBooleanSwitch, CFGGuider, CLIPTextEncode, CR Text, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, ImageScaleBy, ImageScaleToTotalPixels, ImpactConditionalBranch, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, SimpleMath+, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy anythingIndexSwitch, easy boolean, easy getNode, easy int, easy seed, easy setNode, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3｜单人高质量数字人｜音频驱动多图参考 MV_2096969226736193537.json, 视频生成/文生视频/0905万象+动漫短剧文戏（12秒横屏）_2096159965277933569.json, 视频生成/文生视频/0905万象+动漫短剧文戏（12秒竖屏）_2096418321116786689.json, 视频生成/文生视频/H3 数字人口播工作流｜人物场景图 + 音频生成自然 Vlog 口播视频_2103802643083780098.json, 视频生成/文生视频/H3动作迁移2.0！单图参考版、附精简提示词模板_2100655224817012738.json, 视频生成/文生视频/H3最强二采！吊打SelfLift【欢迎实测！效果没self强你砍我】虚空折叠流系列第4篇_2104256632178954241.json, 视频生成/文生视频/H3最强全能工作流之言出法随_2100045687760187393.json, 视频生成/文生视频/H3最强音频驱动对口型二采，吊打SelfLift_2107840856492429314.json, 视频生成/文生视频/H3至尊工作流之言出法随【金鱼佬框架+吃猪侠定制版】_2097127397882683394.json, 视频生成/文生视频/H3虚幻引擎 赛璐璐风格漫画流-双采FL2-736P高清PRO_2100200797417074689.json, 视频生成/文生视频/Jason_二采_H3-多参考生视频-优化版V2_2108131102580895745.json, 视频生成/文生视频/Jason_二采_H3-多参考生视频-优化版_2095126489397288961.json, 视频生成/文生视频/MiniMax H3 全能视频V3_2095061357325545474.json, 视频生成/文生视频/MiniMax H3 多合一全能生视频极速+二采优化版_2097343290071928833.json, 视频生成/文生视频/MiniMax H3 武戏全能视频V3_2095388978387185666.json, 视频生成/文生视频/MiniMax H3-多参生视频二采15秒，24g可跑_2098839012025917442.json, 视频生成/文生视频/MiniMax H3-多参考7P3A2V生视频-二采优化版_2100164228442316802.json, 视频生成/文生视频/MiniMax H3-多参考7P3A2V生视频-优化版_2100173828486950913.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2094671259807338497.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2095111201637359618.json, 视频生成/文生视频/MiniMax H3-多参考生视频-优化版_2095422044593811457.json, 视频生成/文生视频/Minimax H3 双采万能流_2094836628819894274.json, 视频生成/文生视频/Our_H3_AudioTalking_2Image_1Audio_2103836296480378882.json]
+members: [视频生成/图生视频/+LTX2.3+-+图生视频+-+1080P_2071400203843887105.json, 视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2063510124647501826.json, 视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2067966236385955842.json, 视频生成/图生视频/LTX2.3  图生视频 - 1080P_2063514992204402689.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2063657847392653313.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2068269572532301826.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2069446019338825729.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2069450456006479874.json, 视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2070162122436341762.json, 视频生成/图生视频/LTX2.3 1080P - 图生视频_2063508578169868290.json, 视频生成/图生视频/LTX2.3 1080P - 图生视频_2066799541390757889.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2057441075236786177.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2057453427411734529.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2057457317876158465.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2059892222568517633.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2062564997997350914.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2078533389237444610.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2D动漫循环动态壁纸_2049604629536710658.json, 视频生成/图生视频/LTX2.3 1080P 50帧率图生视频_2D动漫循环动态壁纸_2073419735643021314.json, 视频生成/图生视频/LTX2.3 动态循环动态壁纸_2075248716268793858.json, 视频生成/图生视频/LTX2.3+1080P+50帧率图生视频 (1)_2058740968471490562.json, 视频生成/图生视频/LTX2.3+1080P+50帧率图生视频 (2)_2066695460735246338.json, 视频生成/图生视频/LTX2.3+1080P+50帧率图生视频_2057276189835878401.json, 视频生成/图生视频/LTX2.3-1080P -50帧率图生视频_2064146119717900289.json, 视频生成/图生视频/LTX2.3图生视频 (2)_2068941546032029697.json, 视频生成/图生视频/LTX2.6  1080P 50帧率图生视频_2D动漫循环动态壁纸_2068056046203133953.json, 视频生成/图生视频/LTX2.6  1080P 50帧率图生视频_2D动漫循环动态壁纸_2089894207166173185.json, 视频生成/图生视频/图生视频-LTX2.3 1080P 50帧率_2063185673980563457.json, 视频生成/图生视频/极速生成---图生视频LTX2.3 1080P 50帧率图生视频_2057730859171663873.json, 视频生成/图生视频/极速生成---图生视频LTX2.3 1080P 50帧率图生视频_2058710235518427137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_7
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3｜单人高质量数字人｜音频驱动多图参考 MV_2096969226736193537.json、视频生成/文生视频/0905万象+动漫短剧文戏（12秒横屏）_2096159965277933569.json、视频生成/文生视频/0905万象+动漫短剧文戏（12秒竖屏）_2096418321116786689.json、视频生成/文生视频/H3 数字人口播工作流｜人物场景图 + 音频生成自然 Vlog 口播视频_2103802643083780098.json、视频生成/文生视频/H3动作迁移2.0！单图参考版、附精简提示词模板_2100655224817012738.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（视频生成/图生视频/+LTX2.3+-+图生视频+-+1080P_2071400203843887105.json、视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2063510124647501826.json、视频生成/图生视频/LTX2.3  - 图生视频 - 1080P_2067966236385955842.json、视频生成/图生视频/LTX2.3  图生视频 - 1080P_2063514992204402689.json、视频生成/图生视频/LTX2.3 - 图生视频 - 1080P_2063657847392653313.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
-- **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **样本数**：30
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 30 个 workflow 都包含：
+- `AnyBooleanSwitch`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Text`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `ImpactConditionalBranch`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVLatentUpsampler`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
+- `ManualSigmas`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `easy boolean`
+- `easy getNode`
+- `easy int`
+- `easy seed`
+- `easy setNode`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 22/23 个有
-- `GetNode` —— 22/23 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 22/23 个有
-- `SetNode` —— 22/23 个有
-- `SplitSigmas` —— 22/23 个有
-- `easy float` —— 22/23 个有
-- `LoadAudio` —— 21/23 个有
-- `PrimitiveFloat` —— 21/23 个有
-- `Text` —— 19/23 个有
-- `VAEDecodeAudio` —— 19/23 个有
-- `VHS_LoadVideo` —— 18/23 个有
-- `忽略多组孤海` —— 18/23 个有
-- `ModelAttentionBackend` —— 4/23 个有
-- `Text Multiline` —— 3/23 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 3/23 个有
-- `ModelPreviewOverrideKJ` —— 2/23 个有
-- `easy cleanGpuUsed` —— 2/23 个有
-- `ExtendIntermediateSigmas` —— 1/23 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/23 个有
-- `H3SigmaRefiner` —— 1/23 个有
-- `Label (rgthree)` —— 1/23 个有
-- `SaveAudioAdvanced` —— 1/23 个有
-- `SoundFlow_GetLength` —— 1/23 个有
-- `TrimAudioDuration` —— 1/23 个有
-- `VRAM_Debug` —— 1/23 个有
-- `easy sleep` —— 1/23 个有
-- `图像缩放范围孤海` —— 1/23 个有
-- `孤海注释` —— 1/23 个有
+- `LTXVTiledVAEDecode` —— 25/30 个有
+- `PrimitiveFloat` —— 25/30 个有
+- `SetReserveVRAM` —— 25/30 个有
+- `CM_BoolToInt` —— 5/30 个有
+- `CM_IntToFloat` —— 5/30 个有
+- `VAEDecode` —— 5/30 个有
+- `DuckHideNode` —— 1/30 个有
+- `SaveImage` —— 1/30 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 30 | 100% |
+| 高度 | 25 | 25 - 25 | 30 | 100% |
 
 ## 常见问题
 
@@ -81,4 +95,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，30 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，30 个样本，取值集中（一致性 100%）

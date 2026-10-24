@@ -1,62 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_11
 type: Unknown Workflow
-frequency: 20
-level: strong
-coverage: 0.8789
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 22
+level: moderate
+coverage: 0.834455
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen image 2.1 文生图_2101866858684174338.json, 图片生成/文生图/Qwen image 2.1 文生图_2101882676365062146.json, 图片生成/文生图/Qwen image 2.1 文生图_2101914351019061250.json, 图片生成/文生图/Qwen image 2.1 文生图_2101979658001666049.json, 图片生成/文生图/Qwen image 2.1 文生图_2102020778916147202.json, 图片生成/文生图/Qwen image 2.1 文生图_2102034495846305793.json, 图片生成/文生图/Qwen image 2.1 文生图_2102211603243556865.json, 图片生成/文生图/Qwen image 2.1 文生图_2102236635739017218.json, 图片生成/文生图/Qwen image 2.1 文生图_2102576053557485569.json, 图片生成/文生图/Qwen image 2.1 文生图_2104471028356435969.json, 图片生成/文生图/Qwen image 2.1 文生图【自动提示词】_2101839874704891906.json, 图片生成/文生图/Qwen image 2.1 文生图提示词增强_2101911095622594562.json, 图片生成/文生图/Qwen image 2.1 文生图（提示词增强）_2101808005967867905.json, 图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105104996953059329.json, 图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105485714585636866.json, 图片生成/文生图/qwen image 2.1文生图_2094967170106216450.json, 图片生成/文生图/千问2.1！ 文生图！ 提示词自动优化！_2103393990568660994.json, 数字人/数字人/Qwen2.1- 文生图_2101941309354364929.json, 数字人/数字人/千问2.1！ 文生图！ 提示词自动优化！_2101851079326658561.json, 视频生成/文生视频/Qwen_image_2.1_文生图_2104447797318733826.json]
+members: [图片生成/文生图/MiniMax H3 加速版-文生视频_2084834194160701441.json, 图片生成/文生图/MiniMax H3 尾帧图生视频_2084544642758037506.json, 图片生成/文生图/Minimax H3-t2v 创意时装大片文生视频_2084847961032454145.json, 图片生成/文生图/Minimax H3-t2v 官方提示词文生视频_2084933973188366337.json, 图片生成/文生图/video_minimax_h3_t2v_2087382436262006785.json, 图片生成/文生图/【1】文生视频（无参考图模式）video_minimax_h3_i2v_2087195498171158529.json, 数字人/数字人/H3数字人_2092831814367924225.json, 数字人/数字人/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089709883632476162.json, 视频生成/图生视频/H3+音频驱动&图片跳舞！加速版_2099306860540162050.json, 视频生成/图生视频/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089304839850381314.json, 视频生成/图生视频/MiniMax H3开源 数字人音频驱动&图片跳舞 加速版_2089316746447638530.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2087489674502828034.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2087515631137681409.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2094741369498722306.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2094766113983913985.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2099456748556996609.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2099471044871548930.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2110317481368838145.json, 视频生成/图生视频/MiniMax H3开源 音频驱动&图片跳舞 加速版_2110323066374025217.json, 视频生成/图生视频/MiniMaxH3 音频驱动&图片跳舞！加速版！B站艾橘溪_2087001018646220802.json, 视频生成/图生视频/MiniMaxH3数字人_音频驱动&图片跳舞！效果炸裂！_2087444061333581825.json, 视频生成/图生视频/音频驱动图片跳舞加速版｜MiniMax H3_2090000101321302017.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1 文生图_2101866858684174338.json、图片生成/文生图/Qwen image 2.1 文生图_2101882676365062146.json、图片生成/文生图/Qwen image 2.1 文生图_2101914351019061250.json、图片生成/文生图/Qwen image 2.1 文生图_2101979658001666049.json、图片生成/文生图/Qwen image 2.1 文生图_2102020778916147202.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 加速版-文生视频_2084834194160701441.json、图片生成/文生图/MiniMax H3 尾帧图生视频_2084544642758037506.json、图片生成/文生图/Minimax H3-t2v 创意时装大片文生视频_2084847961032454145.json、图片生成/文生图/Minimax H3-t2v 官方提示词文生视频_2084933973188366337.json、图片生成/文生图/video_minimax_h3_t2v_2087382436262006785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：22
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 22 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `SaveImage`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 18/20 个有
-- `SaveImageAdvanced` —— 14/20 个有
-- `PrimitiveStringMultiline` —— 5/20 个有
-- `JjkText` —— 4/20 个有
-- `PreviewImage` —— 4/20 个有
-- `FastGroupsBypassSwitch` —— 3/20 个有
-- `EmptyImage` —— 1/20 个有
-- `Int` —— 1/20 个有
-- `SeedGeneratorMira` —— 1/20 个有
-- `StringToInt` —— 1/20 个有
+- `PrimitiveStringMultiline` —— 19/22 个有
+- `LayerUtility: PurgeVRAM V2` —— 17/22 个有
+- `LoadImage` —— 17/22 个有
+- `LoraLoaderModelOnly` —— 17/22 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 17/22 个有
+- `MiniMaxH3ReferenceToVideo` —— 17/22 个有
+- `PathchSageAttentionKJ` —— 17/22 个有
+- `LoadAudio` —— 16/22 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 16/22 个有
+- `GetNode` —— 15/22 个有
+- `PainterVRAM` —— 15/22 个有
+- `SetNode` —— 15/22 个有
+- `VRAM_Debug` —— 15/22 个有
+- `MiniMaxH3ImageToVideo` —— 5/22 个有
+- `EasyCache` —— 2/22 个有
+- `DF_Int_to_Float` —— 1/22 个有
+- `GetImageSize` —— 1/22 个有
+- `ImageResizeKJv2` —— 1/22 个有
+- `ImageScaleToTotalPixels` —— 1/22 个有
+- `Int` —— 1/22 个有
+- `JjkText` —— 1/22 个有
+- `Label (rgthree)` —— 1/22 个有
+- `SolAttnPatch` —— 1/22 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 20 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 20 | 100% |
-| 采样步数 | 50 | 25 - 50 | 20 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
-| 采样算法 | euler | - | 20 | 100% |
-| 调度器 | simple | - | 20 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -64,10 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，20 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，20 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 50，观测区间 25 - 50，20 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，20 个样本，一致性 100%
-- 调度器 最常用 simple，20 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

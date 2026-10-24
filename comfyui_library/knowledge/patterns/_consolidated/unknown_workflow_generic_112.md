@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_112
 type: Unknown Workflow
-frequency: 9
+frequency: 14
 level: moderate
-coverage: 0.707444
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.851214
+common_nodes: [LoadImage, RH_AlibabaHappyhorse10ImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json, 音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json, 音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json, 音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013466293235621890.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2013643901214658562.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015014154909786114.json, 音频生成/音频生成/开源版SUNO-HeartMuLa全自动优化版_2015587368438341634.json]
+members: [视频生成/图生视频/Happy horse图生视频_2048729768073367554.json, 视频生成/图生视频/Happy horse图生视频_2048930713545744385.json, 视频生成/图生视频/HappyHorse-快乐马-图生视频_2048795322029187073.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048642132843433986.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json, 视频生成/图生视频/Happyhorse 视频新王图生视频_2048674844094504962.json, 视频生成/图生视频/happy horse图生视频_2048976027916967937.json, 视频生成/图生视频/happyhores图生视频_2050538420602195970.json, 视频生成/图生视频/happyhorse-1.0 快乐马+图生视频_2048746487852572674.json, 视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json, 视频生成/图生视频/happyhorse图生视频_时间定格➕一巴掌_2050467288574377986.json, 视频生成/图生视频/happyhorse图生视频（快乐马）_2048769410881556481.json, 视频生成/图生视频/快乐马_图生视频 Happyhorse_I2V_2048700129443581953.json, 视频生成/图生视频/视频丨阿里happyhorse快乐小马图生视频_2054193821549907970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_112
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2015615594334261250.json、音频生成/音频生成/HeartMuLa与Suno相当的开源音乐强势来袭_2028313836868083714.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013521399071121410.json、音频生成/音频生成/HeartMuLa歌曲自动生成_2013604575504240641.json、音频生成/音频生成/SUNO-HeartMuLa开源全自动优化版_2014590874558140418.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Happy horse图生视频_2048729768073367554.json、视频生成/图生视频/Happy horse图生视频_2048930713545744385.json、视频生成/图生视频/HappyHorse-快乐马-图生视频_2048795322029187073.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048642132843433986.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+全部 14 个 workflow 都包含：
+- `LoadImage`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 7/9 个有
-- `RH_LLMAPI_Pro_Node` —— 7/9 个有
-- `Label (rgthree)` —— 5/9 个有
-- `CR Text` —— 4/9 个有
+- `JjkText` —— 7/14 个有
+- `PreviewAny` —— 1/14 个有
+- `SaveImage` —— 1/14 个有
 
 ## 典型参数
 

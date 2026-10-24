@@ -1,34 +1,31 @@
 ---
 name: unknown_workflow_generic_482
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.85
-common_nodes: [Load3D, SaveGLB]
+coverage: 0.86
+common_nodes: [ByteDance2ReferenceNodeV2, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_hunyuan3d_model2uv.json, comfyui-workflow-templates-json/api_hunyuan3d_retopo_uv.json, comfyui-workflow-templates-json/api_hunyuan3d_smart_topology.json]
+members: [comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json, comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json, comfyui-workflow-templates-json/api_seedance2_5_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_482
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_hunyuan3d_model2uv.json、comfyui-workflow-templates-json/api_hunyuan3d_retopo_uv.json、comfyui-workflow-templates-json/api_hunyuan3d_smart_topology.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json、comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json、comfyui-workflow-templates-json/api_seedance2_5_r2v.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Load3D`
-- `SaveGLB`
-
-**可变部分**（部分 workflow 才有）：
-- `TencentModelTo3DUVNode` —— 2/3 个有
-- `TencentSmartTopologyNode` —— 2/3 个有
+全部 5 个 workflow 都包含：
+- `ByteDance2ReferenceNodeV2`
+- `LoadImage`
+- `SaveVideo`
 
 ## 典型参数
 

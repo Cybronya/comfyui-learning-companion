@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_generic_894
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.732
-common_nodes: [JjkText, RH_Veo3_Text2Video, SaveVideo]
+frequency: 3
+level: moderate
+coverage: 0.872333
+common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json, 视频生成/文生视频/全能视频+V3.1文生视频_2036423809758142465.json]
+members: [图片生成/图生图/SeedVR2放大_1990990820545372161.json, 图片生成/图生图/图片放大Image Upscaling_2038075311220330497.json, 图片生成/图生图/图片放大Image Upscaling_2052211583018913793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_894
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json、视频生成/文生视频/全能视频+V3.1文生视频_2036423809758142465.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SeedVR2放大_1990990820545372161.json、图片生成/图生图/图片放大Image Upscaling_2038075311220330497.json、图片生成/图生图/图片放大Image Upscaling_2052211583018913793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JjkText`
-- `RH_Veo3_Text2Video`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `LoadImage`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `TextCombinerTwo` —— 1/2 个有
+- `SimpleMath+` —— 1/3 个有
+- `Switch any [Crystools]` —— 1/3 个有
+- `easy compare` —— 1/3 个有
+- `easy imageSize` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

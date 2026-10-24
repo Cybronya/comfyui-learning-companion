@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_740
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5385
-common_nodes: [ImageLoader, JjkText, MultiTextConcatenate, RH_LLMAPI_Pro_Node, RH_RhartImageG25SunburstImageToImage, SaveImage, Text, easy cleanGpuUsed, easy saveText, easy showAnything, ttN concat]
+frequency: 4
+level: moderate
+coverage: 0.81375
+common_nodes: [AuKGenerateEdit_Doc, AuKLlamaCppSettings_Doc, AuKModelsLoader_Doc, LoadAudio, PreviewAudio, SaveAudioAdvanced, llama_cpp_model_loader]
 problems: []
-missing: [easy cleanGpuUsed, ttN concat, easy saveText]
-members: [图片生成/图生图/2102576863053963265.json, 视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json]
+missing: []
+members: [图片生成/文生图/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2101869850456051714.json, 音频生成/音频生成/腾讯Auk秒级音色复刻 16项功能合一 支持提示词增强_2100129216896528386.json, 音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105110847554146305.json, 音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105488646286700545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_740
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/2102576863053963265.json、视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2101869850456051714.json、音频生成/音频生成/腾讯Auk秒级音色复刻 16项功能合一 支持提示词增强_2100129216896528386.json、音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105110847554146305.json、音频生成/音频生成/腾讯Auk秒级音色复刻_16项功能合一_支持提示词增强_2105488646286700545.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG25SunburstImageToImage`
-- `SaveImage`
-- `Text`
-- `easy cleanGpuUsed`
-- `easy saveText`
-- `easy showAnything`
-- `ttN concat`
+全部 4 个 workflow 都包含：
+- `AuKGenerateEdit_Doc`
+- `AuKLlamaCppSettings_Doc`
+- `AuKModelsLoader_Doc`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudioAdvanced`
+- `llama_cpp_model_loader`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -45,5 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed、ttN concat、easy saveText
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

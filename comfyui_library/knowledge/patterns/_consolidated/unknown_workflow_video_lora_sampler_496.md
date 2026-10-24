@@ -3,84 +3,68 @@ name: unknown_workflow_video_lora_sampler_496
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8215
-common_nodes: [AudioCrop, BasicScheduler, CLIPTextEncode, CM_IntToFloat, CR Text, DapaoSmartMemoryOptimizerNode, Display Int (rgthree), DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, Get resolution [Crystools], KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveString, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, SoundFlow_GetLength, Switch any [Crystools], ToInt, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, ZML_ArithmeticComparison, easy cleanGpuUsed, easy int, easy seed, easy showAnything]
+coverage: 0.94775
+common_nodes: [CLIPVisionLoader, GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, InspyrenetRembg, KepStringLiteral, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2061422103609569282.json, 视频生成/图生视频/2061422054284554242.json, 视频生成/图生视频/2056299096574619650.json, 视频生成/图生视频/2051941097793966081.json]
+members: [视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json, 视频生成/图生视频/MAGREF三图参考_1936376393980874754.json, 视频生成/图生视频/MAGREF双图参考（对比）_1936333084193361922.json, 视频生成/图生视频/字节MAGREF+IndexTTS+HeyGem超级带货数字人_1937839794074619905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_496
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2061422103609569282.json、视频生成/图生视频/2061422054284554242.json、视频生成/图生视频/2056299096574619650.json、视频生成/图生视频/2051941097793966081.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json、视频生成/图生视频/MAGREF三图参考_1936376393980874754.json、视频生成/图生视频/MAGREF双图参考（对比）_1936333084193361922.json、视频生成/图生视频/字节MAGREF+IndexTTS+HeyGem超级带货数字人_1937839794074619905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCrop`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CR Text`
-- `DapaoSmartMemoryOptimizerNode`
-- `Display Int (rgthree)`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `Get resolution [Crystools]`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CLIPVisionLoader`
+- `GetImageSize`
+- `INTConstant`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `KepStringLiteral`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveString`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `Switch any [Crystools]`
-- `ToInt`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
-- `ZML_ArithmeticComparison`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy seed`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `Display Any (rgthree)` —— 3/4 个有
-- `LTXVImgToVideoInplaceKJ` —— 3/4 个有
-- `RH_Captioner` —— 3/4 个有
-- `CrossFadeImages` —— 2/4 个有
-- `FrameSelector` —— 2/4 个有
-- `GetImageSizeAndCount` —— 2/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageBatchMulti` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `LTXVAddGuideMultiDynamic` —— 2/4 个有
-- `LTXVCropGuides` —— 2/4 个有
-- `Make Image Batch` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `MelBandRoFormerModelLoader` —— 2/4 个有
-- `MelBandRoFormerSampler` —— 2/4 个有
-- `NormalizeAudioLoudness` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `Seed Everywhere` —— 3/4 个有
+- `CreateVideo` —— 2/4 个有
+- `D_VideoLengthAdjuster` —— 2/4 个有
+- `IndexTTSRun` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `RH_HeyGemNode` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `ImageConcanate` —— 1/4 个有
 
 ## 典型参数
 

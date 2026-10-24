@@ -3,35 +3,33 @@ name: unknown_workflow_video_64
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.738
-common_nodes: [GetVideoComponents, LoadImage, SaveVideo, VHS_VideoCombine, easy showAnything]
+coverage: 0.933333
+common_nodes: [LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2084004108700311553.json, 视频生成/图生视频/海螺Hailuo H3多参考生视频（可9图3视频3音频）_2084009862207463426.json, 视频生成/图生视频/海螺Hailuo H3首尾帧视频_2083997798533521409.json]
+members: [视频生成/图生视频/一分钟视频_1913101835836583938.json, 视频生成/图生视频/最新FramePack首尾帧视频生成_1914139534286647297.json, 视频生成/图生视频/🦖FramePack 首尾帧_1914129631170232321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_64
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2084004108700311553.json、视频生成/图生视频/海螺Hailuo H3多参考生视频（可9图3视频3音频）_2084009862207463426.json、视频生成/图生视频/海螺Hailuo H3首尾帧视频_2083997798533521409.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/一分钟视频_1913101835836583938.json、视频生成/图生视频/最新FramePack首尾帧视频生成_1914139534286647297.json、视频生成/图生视频/🦖FramePack 首尾帧_1914129631170232321.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `GetVideoComponents`
 - `LoadImage`
-- `SaveVideo`
+- `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3ImageToVideo` —— 2/3 个有
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/3 个有
+- `JjkText` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,65 +3,64 @@ name: unknown_workflow_video_lora_sampler_599
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.598667
-common_nodes: [CR Prompt Text, GetNode, HuMoEmbeds, ImageBatchMulti, ImageResizeKJv2, Int, JWFloat, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, SoundFlow_GetLength, SoundFlow_TrimAudio, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
+coverage: 0.829
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, DownloadAndLoadCogVideoModel, DualCLIPLoader, EmptySD3LatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageResizeKJ, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RIFE VFI, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VideoCombine_Adv, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/1990237934462881793.json, 视频生成/图生视频/1985880552534355969.json, 视频生成/图生视频/1985702595668975618.json]
+members: [视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json, 视频生成/图生视频/抖音网红AI视频_1867168400106569730.json, 视频生成/图生视频/抖音网红视频_1862018692308729857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_599
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1990237934462881793.json、视频生成/图生视频/1985880552534355969.json、视频生成/图生视频/1985702595668975618.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json、视频生成/图生视频/抖音网红AI视频_1867168400106569730.json、视频生成/图生视频/抖音网红视频_1862018692308729857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetNode`
-- `HuMoEmbeds`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `Int`
-- `JWFloat`
-- `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `SetNode`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `DownloadAndLoadCogVideoModel`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `Fast Groups Muter (rgthree)`
+- `FluxGuidance`
+- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `ModelSamplingFlux`
+- `RIFE VFI`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
+- `VideoCombine_Adv`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTalkModelLoader` —— 2/3 个有
-- `MultiTalkWav2VecEmbeds` —— 2/3 个有
-- `WanVideoCombineEmbeds` —— 2/3 个有
-- `WanVideoImageToVideoMultiTalk` —— 2/3 个有
-- `Wav2VecModelLoader` —— 2/3 个有
-- `LoadLynxResampler` —— 1/3 个有
-- `LynxEncodeFaceIP` —— 1/3 个有
-- `LynxInsightFaceCrop` —— 1/3 个有
-- `WanVideoAddLynxEmbeds` —— 1/3 个有
-- `WanVideoExtraModelSelect` —— 1/3 个有
-- `WanVideoSetBlockSwap` —— 1/3 个有
-- `WanVideoSetLoRAs` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `DeepTranslatorTextNode` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `easy imageChooser` —— 2/3 个有
+- `Joy_caption` —— 1/3 个有
+- `Joy_caption_load` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
 
 ## 典型参数
 

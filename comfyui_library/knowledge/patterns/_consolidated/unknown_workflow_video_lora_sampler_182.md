@@ -3,106 +3,67 @@ name: unknown_workflow_video_lora_sampler_182
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8434
-common_nodes: [AudioCrop, AudioCropProcessUTK, CLIPVisionLoader, CM_FloatUnaryOperation, CM_IntToFloat, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, HuMoEmbeds, INTConstant, ImageFromBatch+, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PrimitiveString, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy int, easy showAnything]
+coverage: 0.8458
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2031633089117560834.json, 视频生成/图生视频/1999689343231029250.json, 视频生成/图生视频/2048943364548071425.json, 视频生成/图生视频/2049741218380300290.json, 视频生成/图生视频/2053646758080720898.json, 视频生成/图生视频/1980829225919926273.json, 视频生成/图生视频/1973235123128807426.json, 视频生成/图生视频/1991795582006145025.json, 视频生成/图生视频/1995394218111774721.json, 视频生成/图生视频/1956547537161388033.json]
+members: [图片生成/文生图/720_1280+InfiniteTalk数字人+全节点注释_2056685770030796801.json, 视频生成/图生视频/80.Infinitetalk图片数字人（最新优化版）_2096966651764895746.json, 视频生成/图生视频/Infinitetalk单图数字人2_2089512344698314754.json, 视频生成/图生视频/Infinitetalk单图数字人_2089339073877073921.json, 视频生成/图生视频/Infinitetalk图片数字人1_2097958322732355585.json, 视频生成/图生视频/Infinitetalk图片数字人2_2098027802682548226.json, 视频生成/图生视频/Wan2.1+MultiTalk 极速音频驱动数字人（优化版）_2104770455717634049.json, 视频生成/图生视频/infinitetalk图片数字人优化版_2086755737535082498.json, 视频生成/图生视频/音乐MV制作(照片制作MV)_2039237537125896193.json, 视频生成/图生视频/音乐唱歌数字人（歌曲+数字人+infinite talk唱歌）_2026556385185505281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_182
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2031633089117560834.json、视频生成/图生视频/1999689343231029250.json、视频生成/图生视频/2048943364548071425.json、视频生成/图生视频/2049741218380300290.json、视频生成/图生视频/2053646758080720898.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/720_1280+InfiniteTalk数字人+全节点注释_2056685770030796801.json、视频生成/图生视频/80.Infinitetalk图片数字人（最新优化版）_2096966651764895746.json、视频生成/图生视频/Infinitetalk单图数字人2_2089512344698314754.json、视频生成/图生视频/Infinitetalk单图数字人_2089339073877073921.json、视频生成/图生视频/Infinitetalk图片数字人1_2097958322732355585.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `Audio Duration (mtb)`
 - `AudioCrop`
-- `AudioCropProcessUTK`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CM_FloatUnaryOperation`
-- `CM_IntToFloat`
-- `CR Text`
 - `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `HuMoEmbeds`
 - `INTConstant`
-- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `NormalizeAudioLoudness`
-- `PrimitiveString`
-- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
 - `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 9/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 9/10 个有
-- `ImageBatch` —— 7/10 个有
-- `LazySwitch1way` —— 7/10 个有
-- `SoundFlow_Concatenator` —— 7/10 个有
-- `easy boolean` —— 7/10 个有
-- `ImpactSwitch` —— 6/10 个有
-- `easy compare` —— 6/10 个有
-- `ControlNextGetPoses` —— 3/10 个有
-- `LayerUtility: Seed` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `Primitive integer [Crystools]` —— 3/10 个有
-- `RHHiddenNodes` —— 3/10 个有
-- `RH_Captioner` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `WanVideoApplyNAG` —— 3/10 个有
-- `WanVideoControlEmbeds` —— 3/10 个有
-- `WanVideoEncode` —— 3/10 个有
-- `WanVideoImageToVideoEncode` —— 3/10 个有
-- `WanVideoSLG` —— 3/10 个有
-- `WanVideoTextEncodeSingle` —— 3/10 个有
-- `WanVideoVACEModelSelect` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `easy clearCacheAll` —— 3/10 个有
-- `ttN concat` —— 3/10 个有
-- `Anything Everywhere` —— 2/10 个有
+- `VHS_VideoCombine` —— 9/10 个有
+- `Anything Everywhere` —— 7/10 个有
+- `ttN text` —— 4/10 个有
 - `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `Fast Groups Muter (rgthree)` —— 2/10 个有
-- `FlashVSRNode` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `SeedVR2BlockSwap` —— 2/10 个有
-- `SeedVR2ExtraArgs` —— 2/10 个有
-- `SeedVR2GGUF` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `VideoTransitionNode` —— 2/10 个有
-- `MuterSwitcher` —— 1/10 个有
-- `🎈GroupDetector` —— 1/10 个有
-- `🎈StateTransfer` —— 1/10 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `CreateVideo` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `PlaySound|pysssss` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `RH_Suno_Custom` —— 1/10 个有
+- `SaveAudio` —— 1/10 个有
+- `SaveAudioMP3` —— 1/10 个有
+- `SaveVideo` —— 1/10 个有
 
 ## 典型参数
 

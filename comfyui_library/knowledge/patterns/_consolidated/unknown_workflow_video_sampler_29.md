@@ -7,13 +7,13 @@ coverage: 0.7445
 common_nodes: [ImageResizeKJv2, LoadImage, RunningHub VideoAsPrompt Loader, RunningHub VideoAsPrompt Sampler(CogVideoX), VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1986433188270665729.json, 视频生成/图生视频/1978743309952765954.json]
+members: [视频生成/图生视频/Video-As-Prompt视频特效迁移大模型_1986433188270665729.json, 视频生成/图生视频/Video-As-Prompt，视频lora终结者？？？_1978743309952765954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1986433188270665729.json、视频生成/图生视频/1978743309952765954.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Video-As-Prompt视频特效迁移大模型_1986433188270665729.json、视频生成/图生视频/Video-As-Prompt，视频lora终结者？？？_1978743309952765954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2

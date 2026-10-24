@@ -3,54 +3,55 @@ name: unknown_workflow_video_lora_sampler_911
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.981
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.953
+common_nodes: [AudioCrop, AudioSeparation, CR Text, CreateCFGScheduleFloatList, HuMoEmbeds, ImpactInt, JWIntegerToString, LoadAudio, LoadWanVideoT5TextEncoder, Note Plus (mtb), SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/漫剧自用，低消耗版_2096831553887358978.json, 视频生成/文生视频/图音视参考工作流_2101747777444343810.json]
+members: [视频生成/图生视频/👽HuMo电商展示产品+口播👽_1969293960176934913.json, 音频生成/音频生成/👽HuMo音频直接生成视频👽_1969277777063145473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_911
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/漫剧自用，低消耗版_2096831553887358978.json、视频生成/文生视频/图音视参考工作流_2101747777444343810.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/👽HuMo电商展示产品+口播👽_1969293960176934913.json、音频生成/音频生成/👽HuMo音频直接生成视频👽_1969277777063145473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `AudioCrop`
+- `AudioSeparation`
+- `CR Text`
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `ImpactInt`
+- `JWIntegerToString`
+- `LoadAudio`
+- `LoadWanVideoT5TextEncoder`
+- `Note Plus (mtb)`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetLatentSizeAndCount` —— 1/2 个有
-- `H3SigmaRefiner` —— 1/2 个有
-- `MiniMaxH3ChunkFeedForward` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `MiniMaxLowVRAMAttention` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SolAttnPatch` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `XB_VAEDecode` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 

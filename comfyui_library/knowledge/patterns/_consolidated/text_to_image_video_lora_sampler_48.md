@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_48
 type: Text To Image
 frequency: 13
 level: strong
-coverage: 0.665538
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderModelOnly, ModelAttentionBackend, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.718538
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3无限画布式生成｜极致简化图生视频工作流_2096340210660495361.json, 视频生成/图生视频/H3极简画布模式多参工作流 轻量化多模态创作_2100276875628208129.json, 视频生成/图生视频/Remix双采样多参｜MiniMax H3图生视频生成_2092618564485337090.json, 视频生成/图生视频/Remix双采样多参｜MiniMax H3图生视频直出_2092361288776241153.json, 视频生成/图生视频/极简自动提示词流｜MiniMax H3全功能图生视频修复版_2090219462069932033.json, 视频生成/文生视频/H3全能参考漫剧工作流 文生视频图生视频创作_2099947593500549121.json, 视频生成/文生视频/H3全能参考漫剧工作流_文生视频图生视频创作_2100426387504066562.json, 视频生成/文生视频/H3极简画布模式多参工作流 轻量化多模态创作_2099954372460503041.json, 视频生成/文生视频/H3极简画布模式多参工作流_轻量化多模态创作_2100508539260325889.json, 视频生成/文生视频/MiniMax H3 Remix无限画布极简版｜提示词反推双采样_2094914309708140546.json, 视频生成/文生视频/MiniMax H3画布满血多参工作流｜极简文生视频视频生视频_2094846962746085377.json, 视频生成/文生视频/Remix无限画布极简操作｜MiniMax H3双采样反推提示词_2093118371503099906.json, 视频生成/文生视频/无限画布式操作｜MiniMax H3 Remix极致简化双采样_2095121034084175873.json]
+members: [图片生成/图生图/多合一极简工作流 MiniMax H3 短剧创作人物替换视频风格转换 Dasiwa可选_2094162754230898689.json, 数字人/数字人/MinimaxH3多合一极简版｜配套优化提示词直接用｜数字人角色表演一步到位_2104765994072891393.json, 视频生成/图生视频/FASHION walk动作迁移自用版｜视频生视频图生视频 时装走秀利器_2104028785950679042.json, 视频生成/图生视频/FASHION走秀动作迁移 时装步态视频生成质感在线_2104304709061402625.json, 视频生成/图生视频/H3极简版多合一工作流 轻量化图生视频处理_2100280029207949314.json, 视频生成/图生视频/Minimax H3开源版极简版多图多声音参考工作流 多模态输入_2109361043150565377.json, 视频生成/图生视频/MinimaxH3奇妙地图旅游多参版｜RH版本图生视频_2090452977030090754.json, 视频生成/图生视频/MinimaxH3极简多合一短剧｜图生视频超好用工作流_2089446695401771010.json, 视频生成/图生视频/MinimaxH3极简版多合一图生视频工作流_2088187341377728514.json, 视频生成/图生视频/MinimaxH3极简版多合一工作流 视频生成一站式方案_2109386311500128258.json, 视频生成/图生视频/MinimaxH3极简版多合一工作流 视频生成一站式方案_2109753123161075714.json, 视频生成/图生视频/MinimaxH3极简版工作流｜一键图生视频生成_2094547962402795522.json, 视频生成/图生视频/极简版MinimaxH3｜YZ金鱼图生视频一键生成_2094793540407742466.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_48
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/H3无限画布式生成｜极致简化图生视频工作流_2096340210660495361.json、视频生成/图生视频/H3极简画布模式多参工作流 轻量化多模态创作_2100276875628208129.json、视频生成/图生视频/Remix双采样多参｜MiniMax H3图生视频生成_2092618564485337090.json、视频生成/图生视频/Remix双采样多参｜MiniMax H3图生视频直出_2092361288776241153.json、视频生成/图生视频/极简自动提示词流｜MiniMax H3全功能图生视频修复版_2090219462069932033.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/多合一极简工作流 MiniMax H3 短剧创作人物替换视频风格转换 Dasiwa可选_2094162754230898689.json、数字人/数字人/MinimaxH3多合一极简版｜配套优化提示词直接用｜数字人角色表演一步到位_2104765994072891393.json、视频生成/图生视频/FASHION walk动作迁移自用版｜视频生视频图生视频 时装走秀利器_2104028785950679042.json、视频生成/图生视频/FASHION走秀动作迁移 时装步态视频生成质感在线_2104304709061402625.json、视频生成/图生视频/H3极简版多合一工作流 轻量化图生视频处理_2100280029207949314.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
@@ -28,55 +28,57 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `GetNode`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
 - `LoraLoaderModelOnly`
-- `ModelAttentionBackend`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `FeiHouEasyH3RHLoraStack` —— 12/13 个有
-- `RandomSeedNoise` —— 12/13 个有
-- `孤海注释` —— 11/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/13 个有
-- `ImageResizeKJv2` —— 8/13 个有
-- `ResolutionSelector` —— 8/13 个有
-- `VAEEncode` —— 8/13 个有
-- `VAEEncodeAudio` —— 8/13 个有
-- `FeiHouEasyH3RHPromptPreview` —— 7/13 个有
-- `LoraLoaderBypassModelOnly` —— 7/13 个有
-- `SaveImage` —— 7/13 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/13 个有
-- `ModelPreviewOverrideKJ` —— 6/13 个有
-- `easy cleanGpuUsed` —— 6/13 个有
-- `H3SigmaRefiner` —— 5/13 个有
-- `LTXVSeparateAVLatent` —— 5/13 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/13 个有
-- `easy float` —— 5/13 个有
-- `CM_FloatToInt` —— 2/13 个有
-- `ComfySwitchNodeV2` —— 2/13 个有
-- `DuckHideNode` —— 2/13 个有
-- `EmptyImage` —— 2/13 个有
-- `FeiHouEasyH3RHDurationCrop` —— 2/13 个有
-- `MiniMaxH3SigmaShift` —— 2/13 个有
-- `PreviewImage` —— 2/13 个有
-- `RandomNoise` —— 2/13 个有
-- `Int` —— 1/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `easy clearCacheAll` —— 1/13 个有
+- `LoadAudio` —— 12/13 个有
+- `GetNode` —— 11/13 个有
+- `ImageResizeKJv2` —— 11/13 个有
+- `LTXVConcatAVLatent` —— 11/13 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/13 个有
+- `SetNode` —— 11/13 个有
+- `VAEEncode` —— 11/13 个有
+- `VAEEncodeAudio` —— 11/13 个有
+- `easy cleanGpuUsed` —— 11/13 个有
+- `LoadVideo` —— 10/13 个有
+- `ResolutionSelector` —— 10/13 个有
+- `LoadImage` —— 8/13 个有
+- `Text` —— 6/13 个有
+- `SaveImage` —— 5/13 个有
+- `LTXVSeparateAVLatent` —— 2/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/13 个有
+- `MiniMaxChunkFeedForward` —— 2/13 个有
+- `MiniMaxLowVRAMAttention` —— 2/13 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/13 个有
+- `ModelAttentionBackend` —— 2/13 个有
+- `ModelPreviewOverrideKJ` —— 2/13 个有
+- `Notif-PlaySound` —— 2/13 个有
+- `PT_H3ConcatAVLatent` —— 2/13 个有
+- `RIFE VFI` —— 2/13 个有
+- `ShellAgentPluginSaveAudios` —— 2/13 个有
+- `SplitSigmas` —— 2/13 个有
+- `EmptyImage` —— 1/13 个有
+- `Float` —— 1/13 个有
+- `GetImageSize` —— 1/13 个有
+- `MiniMaxH3EasyMediaLoader` —— 1/13 个有
+- `PreviewImage` —— 1/13 个有
+- `PrimitiveStringMultiline` —— 1/13 个有
+- `TTResolutionSelector` —— 1/13 个有
 
 ## 典型参数
 
@@ -94,7 +96,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 14/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -105,4 +107,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
-- 高发问题（13/13 个样本）：Steps较低可能导致细节不足
+- 高发问题（14/13 个样本）：Steps较低可能导致细节不足

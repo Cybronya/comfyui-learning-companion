@@ -1,42 +1,35 @@
 ---
 name: unknown_workflow_generic_164
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.492714
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_custom, Fast Groups Bypasser (rgthree), JjkText, Label (rgthree), RH_RhartAudioSunoV55Custom, RH_RhartAudioSunoV55Single, SaveAudio, ShowText, easy showAnything]
+coverage: 0.987
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/歌曲创作 音频生成+AI歌曲音乐+SunoV5.5+歌词生成+数字人唱歌_2062398119878418434.json, 音频生成/音频生成/AI歌曲音乐 歌曲创作+音频生成 +SunoV5.5+歌词生成+数字人唱歌_2077576546365304833.json, 音频生成/音频生成/SunoV5.5歌曲音乐_2050510886334418945.json, 音频生成/音频生成/SunoV5.5歌曲音乐_2078369220232044546.json, 音频生成/音频生成/歌曲创作+数字人唱歌音频生成+AI歌曲音乐+SunoV5.5+歌词生成_2066340472414629889.json, 音频生成/音频生成/歌曲音乐创作 SunoV5.5_2085296882905083906.json, 音频生成/音频生成/音频生成 AI歌曲音乐 SunoV5.5 歌词生成 数字人唱歌_2059079388481806337.json]
+members: [图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json, 图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json, 图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json, 图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json, 图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json, 图片生成/文生图/-全能图片V1-pro_1991891403967975426.json, 图片生成/文生图/0201发布版：全能图片Pro_2020093603560820737.json, 图片生成/文生图/10合一超级全能图片香焦 bnana Pro_2019427181721554946.json, 图片生成/文生图/2029813681218916353.json, 图片生成/文生图/2029824177317875713.json, 图片生成/文生图/4k直出标注式服装款式图_2020845106500210689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_164
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/歌曲创作 音频生成+AI歌曲音乐+SunoV5.5+歌词生成+数字人唱歌_2062398119878418434.json、音频生成/音频生成/AI歌曲音乐 歌曲创作+音频生成 +SunoV5.5+歌词生成+数字人唱歌_2077576546365304833.json、音频生成/音频生成/SunoV5.5歌曲音乐_2050510886334418945.json、音频生成/音频生成/SunoV5.5歌曲音乐_2078369220232044546.json、音频生成/音频生成/歌曲创作+数字人唱歌音频生成+AI歌曲音乐+SunoV5.5+歌词生成_2066340472414629889.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/🍌V2全能图片处理_2011254344976437250.json、图片生成/图生图/🍌渲染（固定风格渲染）_2098334571904462850.json、图片生成/图生图/🍌渲染（固定风格渲染）（有人物）_2059894115122372609.json、图片生成/图生图/🍌香蕉  2 & Pro_2001458335708835841.json、图片生成/图生图/🍌香蕉  2 & Pro图像编辑_2001940113011666945.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_custom`
-- `Fast Groups Bypasser (rgthree)`
-- `JjkText`
-- `Label (rgthree)`
-- `RH_RhartAudioSunoV55Custom`
-- `RH_RhartAudioSunoV55Single`
-- `SaveAudio`
-- `ShowText`
-- `easy showAnything`
+全部 11 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/7 个有
+- `ImageStitch` —— 1/11 个有
+- `RMBG` —— 1/11 个有
 
 ## 典型参数
 

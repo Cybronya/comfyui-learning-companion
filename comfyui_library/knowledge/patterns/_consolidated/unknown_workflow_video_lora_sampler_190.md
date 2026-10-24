@@ -3,74 +3,83 @@ name: unknown_workflow_video_lora_sampler_190
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.3893
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, GetNode, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.8266
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2065365595184521217.json, 视频生成/图生视频/2065680641039093761.json, 视频生成/图生视频/2064969130989670401.json, 视频生成/图生视频/2066352425379909633.json, 视频生成/图生视频/2064637391054397441.json, 视频生成/图生视频/2064981162845622273.json, 视频生成/图生视频/2064994418565931010.json, 视频生成/图生视频/2064998971084468225.json, 视频生成/图生视频/2066063514803986434.json, 视频生成/图生视频/2065765401602125825.json]
+members: [视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版(无clipvision版)_1936345879362310145.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版V2（大幅度增加时长）_1936304565509607426.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版（UNI3C运镜版）_1936341490123837441.json, 视频生成/图生视频/MultiTalk对口型（万相实现）+uni3C运镜控制_1937801479434735618.json, 视频生成/图生视频/MultiTalk数字人口播单人版_1940606353897402370.json, 视频生成/图生视频/MultiTalk最强数字人插件16G可玩，音频+图片=王炸数字人_1937864518498455553.json, 视频生成/图生视频/MultiTalk：超6倍加速，超逼真顶流K歌数字人_1936605606658625537.json, 视频生成/图生视频/Multitalk--唱歌数字人_1936361924722593793.json, 视频生成/图生视频/Multitalk数字人（极速版）_1937674986381295618.json, 视频生成/图生视频/💂‍【大炮数字人】音乐自动生成+数字人对口型💂‍_1937733481621557249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_190
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/2065365595184521217.json、视频生成/图生视频/2065680641039093761.json、视频生成/图生视频/2064969130989670401.json、视频生成/图生视频/2066352425379909633.json、视频生成/图生视频/2064637391054397441.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版(无clipvision版)_1936345879362310145.json、视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版V2（大幅度增加时长）_1936304565509607426.json、视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版（UNI3C运镜版）_1936341490123837441.json、视频生成/图生视频/MultiTalk对口型（万相实现）+uni3C运镜控制_1937801479434735618.json、视频生成/图生视频/MultiTalk数字人口播单人版_1940606353897402370.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：39%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `SetNode`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 9/10 个有
-- `GetImageSize` —— 6/10 个有
-- `ImageFromBatch` —— 6/10 个有
-- `PrimitiveBoolean` —— 4/10 个有
-- `WanChunkFeedForward` —— 3/10 个有
+- `SimpleMath+` —— 9/10 个有
+- `WanVideoBlockSwap` —— 9/10 个有
+- `WanVideoClipVisionEncode` —— 9/10 个有
+- `JWIntegerToString` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/10 个有
+- `PrimitiveInt` —— 7/10 个有
+- `easy cleanGpuUsed` —— 7/10 个有
+- `Audio Duration (mtb)` —— 6/10 个有
+- `PrimitiveFloat` —— 6/10 个有
+- `TextInput_` —— 6/10 个有
+- `easy showAnything` —— 6/10 个有
+- `JWInteger` —— 5/10 个有
+- `LayerUtility: PurgeVRAM` —— 5/10 个有
+- `VHS_LoadVideo` —— 5/10 个有
+- `WanVideoEncode` —— 5/10 个有
+- `WanVideoUni3C_ControlnetLoader` —— 5/10 个有
+- `WanVideoUni3C_embeds` —— 5/10 个有
+- `ImageResizeKJ` —— 4/10 个有
+- `WanVideoContextOptions` —— 4/10 个有
+- `WanVideoTorchCompileSettings` —— 4/10 个有
+- `ImageResizeKJv2` —— 3/10 个有
+- `CR Text` —— 2/10 个有
+- `CreateCFGScheduleFloatList` —— 2/10 个有
 - `Fast Groups Bypasser (rgthree)` —— 2/10 个有
 - `INTConstant` —— 2/10 个有
-- `MathExpression|pysssss` —— 2/10 个有
-- `VHS_VideoInfoLoaded` —— 2/10 个有
-- `ApplySageAttention` —— 1/10 个有
-- `JWInteger` —— 1/10 个有
-- `Pick From Batch (mtb)` —— 1/10 个有
-- `PrimitiveInt` —— 1/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `RH_RhartImageG2ImageToImage` —— 1/10 个有
-- `SaveImage` —— 1/10 个有
-- `UNETLoader` —— 1/10 个有
-- `easy forLoopEnd` —— 1/10 个有
-- `easy forLoopStart` —— 1/10 个有
-- `easy imageRemBg` —— 1/10 个有
+- `CR Text Concatenate` —— 1/10 个有
+- `DF_Integer` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `RH_Captioner` —— 1/10 个有
+- `RH_LLMAPI_NODE` —— 1/10 个有
+- `SaveAudio` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `SongGeneration_Sampler` —— 1/10 个有
+- `SongGeneration_Stage1` —— 1/10 个有
+- `SongGeneration_Stage2` —— 1/10 个有
+- `Text` —— 1/10 个有
+- `VHS_DuplicateImages` —— 1/10 个有
+- `easy anythingIndexSwitch` —— 1/10 个有
 
 ## 典型参数
 

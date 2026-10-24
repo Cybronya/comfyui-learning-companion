@@ -1,38 +1,44 @@
 ---
 name: unknown_workflow_generic_119
 type: Unknown Workflow
-frequency: 9
+frequency: 13
 level: moderate
-coverage: 0.921667
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.664462
+common_nodes: [Fast Groups Muter (rgthree), LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Image2Image, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/tts_edge.json_2072854733987078145.json, 音频生成/音频生成/ttts_edge.json_2072873542991044609.json, 音频生成/音频生成/单人语音克隆-简单超好用Easy IndexTTS2_2044635974092722178.json, 音频生成/音频生成/口播音频生成-自定义上传参考音色-Index TTS_2028738552854482946.json, 音频生成/音频生成/小赛数字人语音生成_2041358520972484609.json, 音频生成/音频生成/文字转语言 + 人声克隆 Index TTS 2_1971248872825798658.json, 音频生成/音频生成/电商数字人-TTS2 情感滑块_1971488007771635713.json, 音频生成/音频生成/超好用Easy IndexTTS2无限组合版_2043548119710830593.json, 音频生成/音频生成/风水师-多人声音克隆+情感参考_2080563132703010818.json]
+members: [图片生成/图生图/gemini-3.1电商主图详情页制作自推提示词_2055515256901906434.json, 图片生成/图生图/gemini-3.1电商主图详情页制作自推提示词_2059586486986694657.json, 图片生成/图生图/gemini-3.1电商主图详情页制作自推提示词_2061283795961208834.json, 图片生成/图生图/【牛叉批量电商主图】全自动电商主图制作(AI自动写提示词)超高质量超省心_2027369702053384194.json, 图片生成/图生图/【牛叉批量电商详情图】全自动电商详情页制作(AI自动写提示词)超高质量超省心_2027369898330034177.json, 图片生成/图生图/全自动电商主图制作_自推提示词+商业级品质_2047122304911544322.json, 图片生成/图生图/全自动电商详情页制作_自推提示词+商业级品质_2047125990509383681.json, 图片生成/图生图/全自动跨境电商主图制作_2034568525305618433.json, 图片生成/图生图/全自动跨境电商详情页制作_2034568552329515010.json, 图片生成/文生图/二流合一电商主图和详情页制作Ai自推提示词_2067475830372134914.json, 图片生成/文生图/推文角色卡_2027842122904248322.json, 图片生成/文生图/漫画书立体手办-支持各种画风_2027903473844494338.json, 图片生成/文生图/美食插画师-超有食欲_2027937437435043841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_119
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/tts_edge.json_2072854733987078145.json、音频生成/音频生成/ttts_edge.json_2072873542991044609.json、音频生成/音频生成/单人语音克隆-简单超好用Easy IndexTTS2_2044635974092722178.json、音频生成/音频生成/口播音频生成-自定义上传参考音色-Index TTS_2028738552854482946.json、音频生成/音频生成/小赛数字人语音生成_2041358520972484609.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/gemini-3.1电商主图详情页制作自推提示词_2055515256901906434.json、图片生成/图生图/gemini-3.1电商主图详情页制作自推提示词_2059586486986694657.json、图片生成/图生图/gemini-3.1电商主图详情页制作自推提示词_2061283795961208834.json、图片生成/图生图/【牛叉批量电商主图】全自动电商主图制作(AI自动写提示词)超高质量超省心_2027369702053384194.json、图片生成/图生图/【牛叉批量电商详情图】全自动电商详情页制作(AI自动写提示词)超高质量超省心_2027369898330034177.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 13 个 workflow 都包含：
+- `Fast Groups Muter (rgthree)`
+- `LoadImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/9 个有
-- `PreviewAudio` —— 4/9 个有
-- `JjkText` —— 3/9 个有
-- `easy indexTTSEmotionVector` —— 2/9 个有
+- `easy promptLine` —— 12/13 个有
+- `CR Text` —— 11/13 个有
+- `Text` —— 2/13 个有
+- `HAIGC_SaveImagesToZip` —— 1/13 个有
+- `PromptBatchQueue` —— 1/13 个有
+- `ShowAnything|Mie` —— 1/13 个有
 
 ## 典型参数
 

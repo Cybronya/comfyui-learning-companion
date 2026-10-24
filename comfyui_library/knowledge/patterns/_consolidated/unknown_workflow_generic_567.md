@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_567
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo, Text]
+coverage: 0.98
+common_nodes: [CR Prompt Text, LoadAudio, LoadVideo, RH_HeyGemNode, SaveAudio, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan3.0高速版-直出30秒-单图_首尾帧生视频_2093005951082262529.json, 视频生成/图生视频/阿里最强视频模型wan3.0 Prime多模态生视频低至0.43元_秒_2092420381729714178.json, 视频生成/文生视频/Wan3.0高速版-直出30秒-全能参考生视频_2093003268086652930.json]
+members: [视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json, 视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json, 视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json, "视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json", 音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_567
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan3.0高速版-直出30秒-单图_首尾帧生视频_2093005951082262529.json、视频生成/图生视频/阿里最强视频模型wan3.0 Prime多模态生视频低至0.43元_秒_2092420381729714178.json、视频生成/文生视频/Wan3.0高速版-直出30秒-全能参考生视频_2093003268086652930.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json、视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json、视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json、视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json、音频生成/音频生成/HeyGem数字人+index TTS 1.5音频克隆_1925710428746240001.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadAudio`
-- `LoadImage`
 - `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveAudio`
 - `SaveVideo`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30PrimeImageToVideo` —— 2/3 个有
-- `RH_AlibabaWan30PrimeReferenceToVideo` —— 2/3 个有
-- `easy saveText` —— 1/3 个有
+- `IndexTTSRun` —— 3/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `IndexTTSNode` —— 2/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `JWStringReplace` —— 1/5 个有
 
 ## 典型参数
 

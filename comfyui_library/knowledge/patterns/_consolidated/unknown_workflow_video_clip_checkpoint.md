@@ -1,98 +1,85 @@
 ---
 name: unknown_workflow_video_clip_checkpoint
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4045
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CheckpointLoaderSimple, GetNode, ImageConcatMulti, ImpactConditionalBranch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, RHHiddenNodes, SAM3_VideoTrack, SetNode, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy convertAnything, easy imageRemBg, easy int, easy seed, easy showAnything]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 6
+level: moderate
+coverage: 0.886667
+common_nodes: [BiRefNet_Hugo, BiRefNet_ModelLoader_Zho, BiRefNet_Zho, CR Text, ChinesePrompt_Mix, EG_ZZ_TMTX, GrowMaskWithBlur, Image Comparer (rgthree), InspyrenetRembg, JoinImageWithAlpha, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerMask: LoadSegmentAnythingModels, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V2, LayerMask: SegmentAnythingUltra V3, LayerMask: TransparentBackgroundUltra, LayerUtility: ColorPicker, LayerUtility: ImageCombineAlpha, LayerUtility: ImageRemoveAlpha, LoadImage, LoadRembgByBiRefNetModel, Mask Invert, MaskPreview+, RH_Translator, RembgByBiRefNet, SDMatteApply, SaveImage, easy sam3ImageSegmentation, easy sam3ModelLoader, easy sam3Visualization]
+problems: []
 missing: []
-members: [视频生成/图生视频/2001525761691533313.json, 视频生成/图生视频/2065012111629176833.json]
+members: [图片生成/图生图/万物皆可抠_八种方案抠图合集--附指引及模型介绍_2057711935738695682.json, 图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2026.5.10更新_2083565368009912321.json, 图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2086633510139424770.json, 图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2090280388886351874.json, 图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2095718642699821057.json, 图片生成/图生图/超级抠图多方案工作流合集_2053039140375146497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_checkpoint
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2001525761691533313.json、视频生成/图生视频/2065012111629176833.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/万物皆可抠_八种方案抠图合集--附指引及模型介绍_2057711935738695682.json、图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2026.5.10更新_2083565368009912321.json、图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2086633510139424770.json、图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2090280388886351874.json、图片生成/图生图/抠图多方案工作流多方案合集_附指引及模型介绍_2095718642699821057.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：40%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+全部 6 个 workflow 都包含：
+- `BiRefNet_Hugo`
+- `BiRefNet_ModelLoader_Zho`
+- `BiRefNet_Zho`
 - `CR Text`
-- `CheckpointLoaderSimple`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImpactConditionalBranch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ChinesePrompt_Mix`
+- `EG_ZZ_TMTX`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `InspyrenetRembg`
+- `JoinImageWithAlpha`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: MaskPreview`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LayerMask: TransparentBackgroundUltra`
+- `LayerUtility: ColorPicker`
+- `LayerUtility: ImageCombineAlpha`
+- `LayerUtility: ImageRemoveAlpha`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `SAM3_VideoTrack`
-- `SetNode`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy convertAnything`
-- `easy imageRemBg`
-- `easy int`
-- `easy seed`
-- `easy showAnything`
+- `LoadRembgByBiRefNetModel`
+- `Mask Invert`
+- `MaskPreview+`
+- `RH_Translator`
+- `RembgByBiRefNet`
+- `SDMatteApply`
+- `SaveImage`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
+- `easy sam3Visualization`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `ColorTransfer` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SCAIL2ColoredMask` —— 1/2 个有
-- `SamplerCustom` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
-- `WanContextWindowsManual` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `CLIPTextEncode` —— 5/6 个有
+- `CheckpointLoaderSimple` —— 5/6 个有
+- `Fast Groups Muter (rgthree)` —— 5/6 个有
+- `SAM3_Detect` —— 5/6 个有
+- `DrawMaskOnImage` —— 4/6 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `SAM3PointCollector` —— 4/6 个有
+- `SAM3Propagate` —— 4/6 个有
+- `SAM3VideoModelLoader` —— 4/6 个有
+- `SAM3VideoOutput` —— 4/6 个有
+- `SAM3VideoSegmentation` —— 4/6 个有
+- `VHS_LoadVideo` —— 4/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `easy cleanGpuUsed` —— 4/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | simple | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 高发问题（1/2 个样本）：发现KSampler但没有VAEDecode
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

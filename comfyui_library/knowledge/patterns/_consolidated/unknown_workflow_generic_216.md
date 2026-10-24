@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_216
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.870833
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.865556
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2070052724938469377.json, 视频生成/图生视频/2036386645976551425.json, 视频生成/图生视频/2037081158575464449.json, 视频生成/图生视频/2049186337705697281.json, 视频生成/文生视频/全能视频X-图生视频-价渠道版最长30秒+全节点注释_2061795862694678529.json, 视频生成/文生视频/全能视频X-文生视频-低价渠道版最长30秒+全节点注释_2061796954186797057.json]
+members: [图片生成/图生图/Banan图片编辑新王_1960530321286623233.json, 图片生成/图生图/万物巨大化_全能图片V1_1968660887684960258.json, 图片生成/图生图/全能图像编辑V1（双图）_1962428403884363778.json, 图片生成/图生图/全能图片V1-双人合影_1971602639098146817.json, 图片生成/图生图/全能图片V1在线OOTD工作流_1960459054986555394.json, 图片生成/图生图/全能图片V1自拍照_1991483937440669698.json, 图片生成/图生图/文玩2.0付费版（自用）_1965327877933776897.json, 图片生成/文生图/nano 全能图片V1史诗级 改图神器_1960889176243802113.json, 图片生成/文生图/图片生成_2018542793328697346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_216
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2070052724938469377.json、视频生成/图生视频/2036386645976551425.json、视频生成/图生视频/2037081158575464449.json、视频生成/图生视频/2049186337705697281.json、视频生成/文生视频/全能视频X-图生视频-价渠道版最长30秒+全节点注释_2061795862694678529.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Banan图片编辑新王_1960530321286623233.json、图片生成/图生图/万物巨大化_全能图片V1_1968660887684960258.json、图片生成/图生图/全能图像编辑V1（双图）_1962428403884363778.json、图片生成/图生图/全能图片V1-双人合影_1971602639098146817.json、图片生成/图生图/全能图片V1在线OOTD工作流_1960459054986555394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/6 个有
-- `RH_RhartVideoGImageToVideo` —— 5/6 个有
-- `RH_RhartVideoGTextToVideo` —— 2/6 个有
+- `PrimitiveStringMultiline` —— 6/9 个有
+- `ImageConcanate` —— 4/9 个有
+- `ImageStitch` —— 1/9 个有
 
 ## 典型参数
 

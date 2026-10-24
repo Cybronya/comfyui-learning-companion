@@ -1,79 +1,83 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_55
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.707
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, ImpactSwitch, Int, KOOK_ImageCompression, KOOK_SaveJPGImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RepeatLatentBatch, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text, UNETLoader, VAEDecode, VAELoader, easy saveText]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.860667
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageResizeKJv2, ImageScaleBy, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/墨幽-CCD-V2_2066866934032986114.json, 图片生成/文生图/墨幽-CCD氛围感_2066076741847834625.json]
+members: [图片生成/图生图/Flux.2-Klein-9b老照片修复照片去AI质感提升工作流 V1.0_2040773448196169729.json, 图片生成/图生图/flux.2-klein-9b老照片修复，照片去AI，质感提升_2028040297262882817.json, 图片生成/图生图/高清修复图像版升级优化_2062083713374187521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_55
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/墨幽-CCD-V2_2066866934032986114.json、图片生成/文生图/墨幽-CCD氛围感_2066076741847834625.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux.2-Klein-9b老照片修复照片去AI质感提升工作流 V1.0_2040773448196169729.json、图片生成/图生图/flux.2-klein-9b老照片修复，照片去AI，质感提升_2028040297262882817.json、图片生成/图生图/高清修复图像版升级优化_2062083713374187521.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `ImpactSwitch`
-- `Int`
-- `KOOK_ImageCompression`
-- `KOOK_SaveJPGImage`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ConditioningZeroOut`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RepeatLatentBatch`
+- `ReferenceLatent`
+- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `Text`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 1/2 个有
-- `String Literal` —— 1/2 个有
-- `Text Concatenate (JPS)` —— 1/2 个有
-- `easy positive` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy clearCacheAll` —— 1/3 个有
+- `easy imageColorMatch` —— 1/3 个有
+- `easy imageScaleDownBy` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 2 | - | 2 | 100% |
-| 采样算法 | res_2s | - | 2 | 100% |
-| 调度器 | bong_tangent | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 4 - 6 | 3 | 82% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 67% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，2 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 6，3 个样本，取值集中（一致性 82%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 67%

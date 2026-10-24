@@ -2,79 +2,74 @@
 name: unknown_workflow_video_lora_sampler_524
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.911
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.9305
+common_nodes: [CR Prompt Text, Float, INTConstant, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveFloat, PrimitiveInt, RHHiddenNodes, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/2026256930167066626.json, 视频生成/图生视频/1961064930017525761.json, 视频生成/图生视频/1961361515834183681.json, 音频生成/音频生成/Wan2.2-S2V 音频到视频数字人对口型_1961331106094235649.json]
+members: [视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json, 视频生成/图生视频/首尾帧动态可控wan2.2超高动态模型+SIMGA精准调度+LLM扩写提示词_1972900147308990465.json, 视频生成/图生视频/首尾帧高动态wan2.2FunVACE+MPS+HPS +SIMGA精准调度_1968343084901781506.json, 视频生成/文生视频/【首尾帧动态可控】wan2.2 顺滑动态特效视频 自动扩写提示词_1977975025720512514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_524
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2026256930167066626.json、视频生成/图生视频/1961064930017525761.json、视频生成/图生视频/1961361515834183681.json、音频生成/音频生成/Wan2.2-S2V 音频到视频数字人对口型_1961331106094235649.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json、视频生成/图生视频/首尾帧动态可控wan2.2超高动态模型+SIMGA精准调度+LLM扩写提示词_1972900147308990465.json、视频生成/图生视频/首尾帧高动态wan2.2FunVACE+MPS+HPS +SIMGA精准调度_1968343084901781506.json、视频生成/文生视频/【首尾帧动态可控】wan2.2 顺滑动态特效视频 自动扩写提示词_1977975025720512514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSampler`
-- `LoadAudio`
+- `CR Prompt Text`
+- `Float`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RHHiddenNodes`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `AudioCombine` —— 2/4 个有
-- `AudioCrop` —— 2/4 个有
-- `CR SDXL Aspect Ratio` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
+- `CreateCFGScheduleFloatList` —— 2/4 个有
 - `PrimitiveString` —— 2/4 个有
-- `RH_GetAudioDuration` —— 2/4 个有
-- `TrimAudio` —— 2/4 个有
-- `INTConstant` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `StringToFloatList` —— 2/4 个有
+- `WanVideoEasyCache` —— 2/4 个有
+- `easy anythingIndexSwitch` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 8 | 4 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 4 | 81% |
-| 采样算法 | uni_pc | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 8，4 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，4 个样本，取值集中（一致性 81%）
-- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

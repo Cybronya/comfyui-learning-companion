@@ -1,31 +1,37 @@
 ---
 name: unknown_workflow_generic_519
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG25OfficialTokenFlareEdit, SaveImage]
+coverage: 0.76
+common_nodes: [LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/G- image-2.5图生图 极速版_2097964559540772865.json, 图片生成/文生图/全能图片-G-2.5图生图 极速版_2098465077404983297.json, 图片生成/文生图/极速版 image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5_2097958707484250114.json]
+members: [图片生成/图生图/【空镜_动作细节分镜】第二阶段-精品漫剧分镜_1999304290260971521.json, 图片生成/图生图/分镜三人_2029364786164666370.json, 图片生成/图生图/剧本分镜2_动作细节_2014579062034931713.json, 图片生成/图生图/四宫格美女欲望写真图（上传一张图自动生成四格欲望写真）_2045726940191002625.json, 图片生成/图生图/着装生成器_ 全能图片V1 2 & Pro_2016183557005254657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_519
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/G- image-2.5图生图 极速版_2097964559540772865.json、图片生成/文生图/全能图片-G-2.5图生图 极速版_2098465077404983297.json、图片生成/文生图/极速版 image-2.5图片编辑 image2.5_全能图片G2.5_全能图片G image2.5_2097958707484250114.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【空镜_动作细节分镜】第二阶段-精品漫剧分镜_1999304290260971521.json、图片生成/图生图/分镜三人_2029364786164666370.json、图片生成/图生图/剧本分镜2_动作细节_2014579062034931713.json、图片生成/图生图/四宫格美女欲望写真图（上传一张图自动生成四格欲望写真）_2045726940191002625.json、图片生成/图生图/着装生成器_ 全能图片V1 2 & Pro_2016183557005254657.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG25OfficialTokenFlareEdit`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 4/5 个有
+- `ShowText|pysssss` —— 3/5 个有
+- `JWImageFlip` —— 1/5 个有
 
 ## 典型参数
 

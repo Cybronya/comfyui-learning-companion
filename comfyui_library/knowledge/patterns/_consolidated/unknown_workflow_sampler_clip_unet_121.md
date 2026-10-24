@@ -1,57 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_121
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.958
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.856889
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
-missing: [CR Upscale Image]
-members: [comfyui-workflow-templates-json/image_chroma_text_to_image.json, 图片生成/文生图/1931586622008000513.json, 图片生成/文生图/1932051517409570818.json, 图片生成/文生图/1962355322230915073.json, 图片生成/文生图/1984856656842473473.json]
+missing: []
+members: [图片生成/图生图/Flux2_Klein_9B模特换脸工作流_2019648494549602305.json, 图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2091354005774622721.json, 图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2091821134911201281.json, 图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2092610607378944002.json, 图片生成/图生图/Flux2‑Klein(黑兽)极速换头换脸完美方案｜极速生成｜完美还原_2090937605646012417.json, 图片生成/图生图/Flux2‑Klein极速换头换脸完美方案｜极速生成｜完美还原_2092081597083381762.json, 图片生成/图生图/Flux2‑Klein极速换头换脸完美方案｜极速生成｜完美还原_2092527185998467073.json, 图片生成/图生图/Flux2‑Klein极速换头换脸完美方案｜极速生成｜完美还原_2092612491082821634.json, 图片生成/图生图/flux2 klein一键无损放大+细节增强_2082363830050578433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_121
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/image_chroma_text_to_image.json、图片生成/文生图/1931586622008000513.json、图片生成/文生图/1932051517409570818.json、图片生成/文生图/1962355322230915073.json、图片生成/文生图/1984856656842473473.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2_Klein_9B模特换脸工作流_2019648494549602305.json、图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2091354005774622721.json、图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2091821134911201281.json、图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2092610607378944002.json、图片生成/图生图/Flux2‑Klein(黑兽)极速换头换脸完美方案｜极速生成｜完美还原_2090937605646012417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 4/5 个有
-- `EmptySD3LatentImage` —— 4/5 个有
-- `T5TokenizerOptions` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `AILab_QwenVL` —— 1/5 个有
-- `CR Upscale Image` —— 1/5 个有
-- `DualCLIPLoader` —— 1/5 个有
-- `EmptyLatentImage` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `ModelSamplingAuraFlow` —— 1/5 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `ImageScaleToTotalPixels` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `GetNode` —— 5/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/9 个有
+- `SetNode` —— 5/9 个有
+- `Image Crop Face` —— 4/9 个有
+- `ImpactInt` —— 4/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `MuyeTextEditOutput` —— 4/9 个有
+- `SphereLightNode` —— 3/9 个有
+- `ImageStitch` —— 2/9 个有
+- `DifferentialDiffusion` —— 1/9 个有
+- `ImageLoader` —— 1/9 个有
+- `JWImageResizeByLongerSide` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `TTP_text_mix` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Upscale Image
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

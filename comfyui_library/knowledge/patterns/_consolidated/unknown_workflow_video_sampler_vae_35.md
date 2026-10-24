@@ -3,60 +3,61 @@ name: unknown_workflow_video_sampler_vae_35
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.916455
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.973636
+common_nodes: [CLIPVisionLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934317213807505410.json, 视频生成/图生视频/1933551686864781313.json, 视频生成/图生视频/1933552260817534978.json, 视频生成/图生视频/1933824175960449025.json, 视频生成/图生视频/1934857703757914114.json, 视频生成/图生视频/1933852620643852289.json, 视频生成/图生视频/2034885482387083266.json, 视频生成/图生视频/1933192428583038978.json, 视频生成/图生视频/1941330850711814145.json, 视频生成/图生视频/1934449439467794433.json, 视频生成/图生视频/1940976707774136321.json]
+members: [视频生成/图生视频/AI数字人-动物_2084929827878031362.json, 视频生成/图生视频/Infinite talk 唱歌数字人_1997484530254680066.json, 视频生成/图生视频/Infinite talk数字人_1987166609188040706.json, 视频生成/图生视频/Unipus-AI数字人_2071856835908427777.json, 视频生成/图生视频/Unipus-AI数字人_2072507975016738818.json, 视频生成/图生视频/Unipus-AI数字人_2072619753109278721.json, 视频生成/图生视频/Unipus-AI数字人_2074016139532918786.json, 视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】（单人版）Infinite Talk超自然无限长度图生视频数字人V3_2008048511492825090.json, 视频生成/图生视频/写实数字人_2073956730425401346.json, 视频生成/图生视频/（单人版）Infinite Talk超自然无限长度图生视频数字人V3_1957839924697427969.json, 视频生成/图生视频/（单人版）Infinite Talk超自然无限长度视频生视频数字人V3_1957830385059164161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_35
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/1934317213807505410.json、视频生成/图生视频/1933551686864781313.json、视频生成/图生视频/1933552260817534978.json、视频生成/图生视频/1933824175960449025.json、视频生成/图生视频/1934857703757914114.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/AI数字人-动物_2084929827878031362.json、视频生成/图生视频/Infinite talk 唱歌数字人_1997484530254680066.json、视频生成/图生视频/Infinite talk数字人_1987166609188040706.json、视频生成/图生视频/Unipus-AI数字人_2071856835908427777.json、视频生成/图生视频/Unipus-AI数字人_2072507975016738818.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPVisionLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 10/11 个有
-- `Text Multiline` —— 10/11 个有
-- `WanVideoEnhanceAVideo` —— 10/11 个有
-- `WanVideoTeaCache` —— 9/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
-- `WanVideoExperimentalArgs` —— 8/11 个有
-- `WanVideoSLG` —— 8/11 个有
-- `ColorMatch` —— 7/11 个有
-- `JWInteger` —— 7/11 个有
-- `CLIPVisionLoader` —— 6/11 个有
-- `WanVideoClipVisionEncode` —— 6/11 个有
-- `WanVideoImageToVideoEncode` —— 6/11 个有
-- `ImageConcanate` —— 5/11 个有
-- `WanVideoLoraSelect` —— 5/11 个有
-- `WanVideoVACEEncode` —— 5/11 个有
-- `WanVideoVACEStartToEndFrame` —— 5/11 个有
-- `WanVideoTorchCompileSettings` —— 4/11 个有
-- `ImageResizeKJ` —— 3/11 个有
-- `WanVideoMagCache` —— 2/11 个有
-- `easy cleanGpuUsed` —— 2/11 个有
-- `DF_Integer` —— 1/11 个有
-- `GetImageSize` —— 1/11 个有
-- `SimpleMath+` —— 1/11 个有
+- `LoadImage` —— 10/11 个有
+- `WanVideoLoraSelect` —— 10/11 个有
+- `Audio Duration` —— 6/11 个有
+- `ComfyMathExpression` —— 6/11 个有
+- `Wav2VecModelLoader` —— 6/11 个有
+- `AudioCrop` —— 5/11 个有
+- `AudioSeparation` —— 5/11 个有
+- `DownloadAndLoadWav2VecModel` —— 5/11 个有
+- `LogicUtil_CeilNode` —— 4/11 个有
+- `CR Prompt Text` —— 3/11 个有
+- `JWInteger` —— 3/11 个有
+- `SimpleMath+` —— 2/11 个有
+- `INTConstant` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
+- `VHS_LoadVideo` —— 1/11 个有
+- `WanVideoLoraSelectMulti` —— 1/11 个有
+- `WanVideoTorchCompileSettings` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
 
 ## 典型参数
 

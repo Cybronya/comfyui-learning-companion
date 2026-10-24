@@ -1,33 +1,39 @@
 ---
 name: unknown_workflow_generic_266
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.9
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage]
+coverage: 0.635
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/文生图/API：即梦5.0 文生图 Seedream 5.0 PRO!_2075206158096359425.json, 图片生成/文生图/RH seedream-v5-pro-文生图_2075070938386886657.json, 图片生成/文生图/RH seedream-v5-pro-文生图_2075154182012751873.json, 图片生成/文生图/Seedream V5 Pro T2I 文生图_2077556986736111618.json, 图片生成/文生图/文生图  Seedream 5.0 Pro_2075504105182810113.json]
+members: [图片生成/图生图/Flux Kontext一键戴墨镜_1930432792331718657.json, 图片生成/图生图/一键变光头-黑森林FLUX.1 Kontext_1930941902059667458.json, 图片生成/图生图/多图融合人物合影-黑森林FLUX.1 Kontext一句话完成图像编辑转绘_1928658830333480962.json, 图片生成/图生图/老照片上色-黑森林FLUX.1 Kontext_1928828068817965057.json, 图片生成/图生图/自动擦除水印和文字-Kontext神器_1929707054347272194.json, 图片生成/图生图/薄荷色拉布布_1932552025219473410.json, 图片生成/图生图/黑森林FLUX.1 Kontext一句话完成图像编辑转绘_1928235200189480962.json, 图片生成/文生图/Kontext终结IP-Adapter风格完美迁移_1931705234769248258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_266
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/API：即梦5.0 文生图 Seedream 5.0 PRO!_2075206158096359425.json、图片生成/文生图/RH seedream-v5-pro-文生图_2075070938386886657.json、图片生成/文生图/RH seedream-v5-pro-文生图_2075154182012751873.json、图片生成/文生图/Seedream V5 Pro T2I 文生图_2077556986736111618.json、图片生成/文生图/文生图  Seedream 5.0 Pro_2075504105182810113.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux Kontext一键戴墨镜_1930432792331718657.json、图片生成/图生图/一键变光头-黑森林FLUX.1 Kontext_1930941902059667458.json、图片生成/图生图/多图融合人物合影-黑森林FLUX.1 Kontext一句话完成图像编辑转绘_1928658830333480962.json、图片生成/图生图/老照片上色-黑森林FLUX.1 Kontext_1928828068817965057.json、图片生成/图生图/自动擦除水印和文字-Kontext神器_1929707054347272194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/5 个有
+- `easy imageScaleDownToSize` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `ImageConcanate` —— 5/8 个有
+- `ImageConcatMulti` —— 3/8 个有
+- `RH_Translator` —— 2/8 个有
 
 ## 典型参数
 

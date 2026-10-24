@@ -1,74 +1,54 @@
 ---
 name: unknown_workflow_video_sampler_clip_54
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.551889
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+coverage: 0.8353
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, ManualSigmas, PainterLTXVtoVideo, PainterSamplerLTXV, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/81.SCAIL2优化版+多图参考_2096980051706339330.json, 视频生成/图生视频/2070706889247252481.json, 视频生成/图生视频/2079086131693572098.json, 视频生成/图生视频/SCAIL2 多人替换（动作迁移）_2083425183460843521.json, 视频生成/图生视频/2076542724727201794.json, 视频生成/图生视频/2066527706170351617.json, 视频生成/图生视频/2066377947686199298.json, 视频生成/图生视频/2068169097623465985.json, 视频生成/图生视频/2073480668717346817.json]
+members: [视频生成/图生视频/(贞贞lora 11000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011647638386515970.json, 视频生成/图生视频/(贞贞lora 17000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011652891991351298.json, 视频生成/图生视频/(贞贞lora 20000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011690335805644802.json, 视频生成/图生视频/ComfyUI-PainterLTXV2 基础流_2009113089257508866.json, 视频生成/图生视频/LTX2.0+图生音视频_2009463767909801985.json, 视频生成/图生视频/Ltx2高动态图生视频V1(工作流精简版)_2009226239936040962.json, 视频生成/文生视频/(贞贞lora 4000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011451482868027393.json, 视频生成/文生视频/15-01-03-LTX2.0-文生视频+人物Lora_2012023530224885761.json, 视频生成/文生视频/LTX2.0-文生音视频_2009460170920824833.json, 视频生成/文生视频/Ltx2高动态智能扩写文生视频V1(Painter精简版)_2009218927821332481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_54
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/81.SCAIL2优化版+多图参考_2096980051706339330.json、视频生成/图生视频/2070706889247252481.json、视频生成/图生视频/2079086131693572098.json、视频生成/图生视频/SCAIL2 多人替换（动作迁移）_2083425183460843521.json、视频生成/图生视频/2076542724727201794.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/(贞贞lora 11000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011647638386515970.json、视频生成/图生视频/(贞贞lora 17000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011652891991351298.json、视频生成/图生视频/(贞贞lora 20000步)Ltx2高动态智能扩写文生视频V1(Painter精简版)_2011690335805644802.json、视频生成/图生视频/ComfyUI-PainterLTXV2 基础流_2009113089257508866.json、视频生成/图生视频/LTX2.0+图生音视频_2009463767909801985.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
-- `GetNode`
-- `LoadImage`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `ManualSigmas`
+- `PainterLTXVtoVideo`
+- `PainterSamplerLTXV`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 8/9 个有
-- `ImageConcanate` —— 8/9 个有
-- `Switch any [Crystools]` —— 8/9 个有
-- `easy imageRemBg` —— 8/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/9 个有
-- `Label (rgthree)` —— 5/9 个有
-- `WanAnimatePlus LoraSelect` —— 5/9 个有
-- `easy boolean` —— 5/9 个有
-- `BOOLConstant` —— 4/9 个有
-- `ImageBatchMulti` —— 4/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `WanAnimatePlus LoraSelectMulti` —— 4/9 个有
-- `WanAnimatePlus SetLoRAs` —— 4/9 个有
-- `WanAnimatePlus TorchCompileSettings` —— 4/9 个有
-- `ImageConcatMulti` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `GetImageRangeFromBatch` —— 2/9 个有
-- `WanAnimatePlus ContextOptions` —— 2/9 个有
-- `GetImageSize` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `LoadAudio` —— 1/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
+- `CR Prompt Text` —— 9/10 个有
+- `RH_LLMAPI_Pro_Node` —— 9/10 个有
+- `JWInteger` —— 8/10 个有
+- `LoadImage` —— 8/10 个有
+- `ShowAnything|Mie` —— 8/10 个有
+- `easy anythingIndexSwitch` —— 7/10 个有
+- `LoraLoaderModelOnly` —— 5/10 个有
+- `ConcatTextOfUtils` —— 4/10 个有
+- `GetNode` —— 1/10 个有
+- `INTConstant` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

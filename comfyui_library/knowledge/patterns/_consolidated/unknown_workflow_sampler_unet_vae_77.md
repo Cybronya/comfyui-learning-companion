@@ -1,72 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_77
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.6497
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 12
+level: moderate
+coverage: 0.8295
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088096630896680961.json, 音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088150421855625218.json, 音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2089146123012362242.json, 音频生成/音频生成/minimax music3 文生音乐_2088438567403085826.json, 音频生成/音频生成/minimax_music3_音乐生成_2088129071363477506.json, 音频生成/音频生成/minimax_music_3_Peanut_2095822548951977985.json, 音频生成/音频生成/minimax_music_3_音乐生成_2103479152505610241.json, 音频生成/音频生成/方格智联-MINI音乐生成_2089370163186593793.json, 音频生成/音频生成/歌曲生成 MiniMax Music 3_2088109341151944705.json, 音频生成/音频生成/海螺MiniMaxMusic3 文生音乐歌曲音频_2088563341122949122.json]
+members: [视频生成/文生视频/mini_max文生视频_2084531376707166209.json, 视频生成/文生视频/minimaxH3开源版文生视频(20step)_2092291766404870146.json, 视频生成/文生视频/minimaxH3开源版文生视频(8step加速)_2090102856362840065.json, 视频生成/文生视频/minimaxH3文生视频工作流（超级加速版V2）_2093311593462456321.json, 视频生成/文生视频/minimaxH3文生视频工作流（超级加速版）_2084925338584436737.json, 视频生成/文生视频/minimax_h3 4steps加速_2085757759953399809.json, 视频生成/文生视频/minimax_h3_lightx2v正式版 文生、图生、首尾帧加速_2085755880041181185.json, 视频生成/文生视频/minimax_h3_文生视频4步加速_2084135777386192898.json, 视频生成/文生视频/minimax_h3_文生视频_8步加速_2084159928788410370.json, 视频生成/文生视频/【遇见AI】Minimax H3 的lightx2v正式版1.0加速lora，4步8步_2087808921359699970.json, 视频生成/文生视频/【遇见AI】Minimax H3官方提示词skill效果测试_2088103932554993666.json, 视频生成/文生视频/一键工作流_2088139639545749506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_77
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088096630896680961.json、音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088150421855625218.json、音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2089146123012362242.json、音频生成/音频生成/minimax music3 文生音乐_2088438567403085826.json、音频生成/音频生成/minimax_music3_音乐生成_2088129071363477506.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/mini_max文生视频_2084531376707166209.json、视频生成/文生视频/minimaxH3开源版文生视频(20step)_2092291766404870146.json、视频生成/文生视频/minimaxH3开源版文生视频(8step加速)_2090102856362840065.json、视频生成/文生视频/minimaxH3文生视频工作流（超级加速版V2）_2093311593462456321.json、视频生成/文生视频/minimaxH3文生视频工作流（超级加速版）_2084925338584436737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 6/10 个有
-- `SeedNode` —— 6/10 个有
-- `VAEDecodeAudioTiled` —— 6/10 个有
-- `JjkText` —— 4/10 个有
-- `PreviewAudio` —— 4/10 个有
-- `CR Text` —— 3/10 个有
-- `LoadImage` —— 2/10 个有
-- `PrimitiveFloat` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `easy seed` —— 1/10 个有
-- `孤海注释` —— 1/10 个有
+- `CreateVideo` —— 10/12 个有
+- `SaveVideo` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 9/12 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/12 个有
+- `PathchSageAttentionKJ` —— 6/12 个有
+- `LoadImage` —— 4/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/12 个有
+- `CR Text` —— 2/12 个有
+- `Label (rgthree)` —— 2/12 个有
+- `ModelAttentionBackend` —— 2/12 个有
+- `VHS_VideoCombine` —— 2/12 个有
+- `CLIPTextEncode` —— 1/12 个有
+- `EasyCache` —— 1/12 个有
+- `ModelPatchTorchSettings` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `SetReserveVRAM` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 10 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 10/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

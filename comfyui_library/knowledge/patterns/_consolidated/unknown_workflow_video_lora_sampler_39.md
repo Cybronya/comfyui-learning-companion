@@ -1,79 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_39
 type: Unknown Workflow
-frequency: 23
-level: strong
-coverage: 0.892565
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BerniniS2VConditioning, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RIFEInterpolation, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 24
+level: moderate
+coverage: 0.7215
+common_nodes: [AudioSeparation, BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/2078320387280162818.json, 视频生成/图生视频/2081275038845726722.json, 视频生成/图生视频/2079327737751359489.json, 视频生成/图生视频/2077628506321805314.json, 视频生成/图生视频/2077569166571294722.json, 视频生成/图生视频/2079048469997772802.json, 视频生成/图生视频/2079366355974975489.json, 视频生成/图生视频/bernini人物自然动态 开口说话_2082333319848615938.json, 视频生成/图生视频/2081361413834108929.json, 视频生成/图生视频/2077701219740639233.json, 视频生成/图生视频/2077741026973937666.json, 视频生成/图生视频/bernini数字人开口说话视频图生视频_2088247090945286146.json, 视频生成/图生视频/2082400679599108097.json, 视频生成/图生视频/2082406303087022082.json, 视频生成/图生视频/2077570082494050305.json, 视频生成/图生视频/2081346958836461570.json, 视频生成/图生视频/2081307306670776321.json, 视频生成/图生视频/2080089032889036801.json, 视频生成/图生视频/2078383851998629890.json, 视频生成/图生视频/2079478844951715841.json, 视频生成/图生视频/2079504635626352642.json, 视频生成/图生视频/2079510043048890369.json, 视频生成/图生视频/（1图 1音频）WAN2.2  Bernini人物开口说话视频_2111395780270575618.json]
+members: [数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json, 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json, 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json, 视频生成/图生视频/MiniMax-H3-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解【自动版】_2088898725786767362.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089655790310346753.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089682284474626049.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093283049906728962.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093299021564694530.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095122234930192386.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095124960045002754.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099449159597256706.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099479925886636033.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107413361423114242.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107435386602606594.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111407548954931202.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111432463317815297.json, 视频生成/图生视频/MiniMax-H3，多图参考数字人唱歌，精准对话_2093892809693679617.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版 v3_2101695889109770242.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2091716104501682178.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2099140567518236674.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2101684520792707074.json, 视频生成/图生视频/MiniMax‑H3 数字人【自动】｜口播・说唱・唱歌・电商讲解_2090784930476421122.json, 视频生成/图生视频/【开源】MiniMax_H3 自动数字人加速版_2088997708009918465.json, 视频生成/文生视频/MiniMaxH3多图数字人_2094416704804839425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_39
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/2078320387280162818.json、视频生成/图生视频/2081275038845726722.json、视频生成/图生视频/2079327737751359489.json、视频生成/图生视频/2077628506321805314.json、视频生成/图生视频/2077569166571294722.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json、视频生成/图生视频/MiniMax-H3-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解【自动版】_2088898725786767362.json、视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089655790310346753.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：24
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+全部 24 个 workflow 都包含：
 - `AudioSeparation`
-- `BerniniS2VConditioning`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `RIFEInterpolation`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `VRGDG_MiniMaxH3AudioDrive`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 22/23 个有
-- `Int` —— 22/23 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 22/23 个有
-- `Text` —— 22/23 个有
-- `RHHiddenNodes` —— 15/23 个有
-- `PreviewAny` —— 12/23 个有
-- `PreviewImage` —— 9/23 个有
-- `RH_Captioner` —— 7/23 个有
-- `TextConcatenate_UTK` —— 7/23 个有
-- `easy showAnything` —— 7/23 个有
-- `GoogleTranslateTextNode` —— 4/23 个有
-- `Float to Int` —— 3/23 个有
-- `ImageFromBatch` —— 3/23 个有
-- `RH_Translator` —— 3/23 个有
-- `easy mathFloat` —— 3/23 个有
-- `easy mathInt` —— 3/23 个有
-- `INTConstant` —— 1/23 个有
-- `PreviewAudio` —— 1/23 个有
-- `SaveImage` —— 1/23 个有
+- `Audio Duration (mtb)` —— 23/24 个有
+- `AudioCrop` —— 23/24 个有
+- `MathExpression|pysssss` —— 23/24 个有
+- `ShowText|pysssss` —— 23/24 个有
+- `ComfyMathExpression` —— 16/24 个有
+- `PrimitiveFloat` —— 16/24 个有
+- `GetNode` —— 15/24 个有
+- `SaveText` —— 15/24 个有
+- `SetNode` —— 15/24 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/24 个有
+- `easy float` —— 8/24 个有
+- `Text` —— 1/24 个有
+- `easy cleanGpuUsed` —— 1/24 个有
+- `easy showAnything` —— 1/24 个有
+- `孤海注释` —— 1/24 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 23 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 23 | 100% |
-| 采样算法 | 1 | 1 - 1 | 23 | 100% |
-| 调度器 | dpmpp_2m_sde | - | 23 | 100% |
-| 重绘幅度 | sgm_uniform | - | 23 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,8 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，23 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，23 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m_sde，23 个样本，一致性 100%
-- 重绘幅度 最常用 sgm_uniform，23 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

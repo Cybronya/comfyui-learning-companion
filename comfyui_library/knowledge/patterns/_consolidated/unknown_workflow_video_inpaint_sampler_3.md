@@ -7,13 +7,13 @@ coverage: 0.865667
 common_nodes: [GrowMaskWithBlur, ImageResizeKJ, InpaintPreprocessor, JjkText, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1927919884900909058.json, 视频生成/图生视频/1927712380627599361.json, 视频生成/图生视频/1943604409752580098.json]
+members: [视频生成/图生视频/电商视频扩图（遮罩重绘）_1927919884900909058.json, 视频生成/图生视频/电商视频换产品（视频遮罩重绘）_1927712380627599361.json, 视频生成/图生视频/视频万物局部迁移（电商版）_1943604409752580098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_3
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1927919884900909058.json、视频生成/图生视频/1927712380627599361.json、视频生成/图生视频/1943604409752580098.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/电商视频扩图（遮罩重绘）_1927919884900909058.json、视频生成/图生视频/电商视频换产品（视频遮罩重绘）_1927712380627599361.json、视频生成/图生视频/视频万物局部迁移（电商版）_1943604409752580098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

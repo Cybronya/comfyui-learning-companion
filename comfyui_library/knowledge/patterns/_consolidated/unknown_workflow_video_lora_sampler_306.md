@@ -3,74 +3,60 @@ name: unknown_workflow_video_lora_sampler_306
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.81
-common_nodes: [AudioCrop, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.846714
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2007459382434471938.json, 视频生成/图生视频/Lip-syncing + Emotional Voice-over对口型+情感口播++数字人_2097495815702007810.json, 视频生成/图生视频/2062430418598711297.json, 视频生成/图生视频/2062556213728071682.json, 视频生成/图生视频/1955928297832153090.json, 视频生成/图生视频/1958474058688053249.json, 视频生成/图生视频/2052234323893465089.json]
+members: [视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json, 视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json, 视频生成/图生视频/常规万能流直出1080p 最高质量版 -MMH3 Selflift_2103534009916674049.json, 视频生成/图生视频/短剧制作 直出1080p 最高质量版 -MMH3 Selflift_2106389437042221057.json, 视频生成/文生视频/H3视频生成self-lift加速双采工作流_2097856577159127042.json, 视频生成/文生视频/啊癫 黑科技加速双采-self-lift工作流_2097728195679309825.json, 视频生成/文生视频/海螺H3最新融合模型+黑科技加速双采-self-lift工作流_2097523746214080514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_306
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/2007459382434471938.json、视频生成/图生视频/Lip-syncing + Emotional Voice-over对口型+情感口播++数字人_2097495815702007810.json、视频生成/图生视频/2062430418598711297.json、视频生成/图生视频/2062556213728071682.json、视频生成/图生视频/1955928297832153090.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json、视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json、视频生成/图生视频/常规万能流直出1080p 最高质量版 -MMH3 Selflift_2103534009916674049.json、视频生成/图生视频/短剧制作 直出1080p 最高质量版 -MMH3 Selflift_2106389437042221057.json、视频生成/文生视频/H3视频生成self-lift加速双采工作流_2097856577159127042.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `AudioCrop`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `ResolutionSelector`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 6/7 个有
-- `CLIPVisionLoader` —— 6/7 个有
-- `WanVideoClipVisionEncode` —— 6/7 个有
-- `Audio Duration (mtb)` —— 5/7 个有
-- `GetImageRangeFromBatch` —— 5/7 个有
-- `GetNode` —— 5/7 个有
-- `MathExpression|pysssss` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 4/7 个有
-- `PlaySound|pysssss` —— 3/7 个有
-- `Anything Everywhere` —— 2/7 个有
-- `CR Text` —— 2/7 个有
-- `ImpactInt` —— 2/7 个有
-- `JWIntegerToString` —— 2/7 个有
-- `RHHiddenNodes` —— 2/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `Apply Whisper` —— 1/7 个有
-- `CogVideoEnhanceAVideo` —— 1/7 个有
-- `HyVideoBlockSwap` —— 1/7 个有
-- `ImageCASharpening+` —— 1/7 个有
-- `ImageSizeInfo` —— 1/7 个有
-- `IndexTTS2Run` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `MelBandRoFormerModelLoader` —— 1/7 个有
-- `MelBandRoFormerSampler` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `WanVideoExperimentalArgs` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `ComfyMathExpression` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
+- `H3SigmaRefiner` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `VAEDecodeAudio` —— 5/7 个有
+- `LoadAudio` —— 4/7 个有
+- `PrimitiveFloat` —— 4/7 个有
+- `SelfLiftAvatarH3Sampler` —— 4/7 个有
+- `SelfLiftH3Sampler` —— 3/7 个有
+- `CreateVideo` —— 2/7 个有
+- `JWStringToFloat` —— 2/7 个有
+- `LTXVSeparateAVLatent` —— 2/7 个有
+- `PreviewAny` —— 2/7 个有
+- `VHS_LoadVideo` —— 2/7 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/7 个有
+- `MiniMaxH3Unified` —— 1/7 个有
+- `TrimAudioDuration` —— 1/7 个有
 
 ## 典型参数
 

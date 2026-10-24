@@ -7,13 +7,13 @@ coverage: 0.949
 common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageResizeKJ, ImageScaleToMegapixels, ImageSmartSharpen+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1944587037297266689.json, 视频生成/图生视频/1934580843572862978.json, 视频生成/图生视频/1945723173868359681.json, 视频生成/图生视频/1933771102806003714.json, 视频生成/图生视频/2040762237102592001.json, 视频生成/图生视频/2046787167770382338.json, 视频生成/图生视频/1913991140356620289.json, 视频生成/图生视频/2056181586005110785.json, 视频生成/图生视频/2055177930787041282.json, 视频生成/图生视频/2056263992364060673.json, 视频生成/图生视频/2056548681435926530.json, 视频生成/图生视频/2056904231692627969.json, 视频生成/图生视频/2059187455856832514.json, 视频生成/图生视频/2056273124878016513.json]
+members: [视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json, 视频生成/图生视频/fusionx 图生视频提速补版又爱了+lora_1934580843572862978.json, 视频生成/图生视频/wan2.1 + ani全能视频S 动漫版图生视频工作流_1945723173868359681.json, 视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG_1933771102806003714.json, 视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG，上传图片点击运行工作流即可！_2040762237102592001.json, 视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG，上传图片点击运行工作流即可！_2046787167770382338.json, 视频生成/图生视频/万相Skyreels V2突破81帧魔咒工作流_1913991140356620289.json, 视频生成/图生视频/像素风格2.0模型版图生视频_2056181586005110785.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2055177930787041282.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2056263992364060673.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2056548681435926530.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2056904231692627969.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2059187455856832514.json, 视频生成/图生视频/全能视频专业动漫2.0-图生视频-最新_2056273124878016513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/1944587037297266689.json、视频生成/图生视频/1934580843572862978.json、视频生成/图生视频/1945723173868359681.json、视频生成/图生视频/1933771102806003714.json、视频生成/图生视频/2040762237102592001.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json、视频生成/图生视频/fusionx 图生视频提速补版又爱了+lora_1934580843572862978.json、视频生成/图生视频/wan2.1 + ani全能视频S 动漫版图生视频工作流_1945723173868359681.json、视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG_1933771102806003714.json、视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG，上传图片点击运行工作流即可！_2040762237102592001.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14

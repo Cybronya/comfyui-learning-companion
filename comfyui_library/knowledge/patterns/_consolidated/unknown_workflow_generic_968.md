@@ -1,37 +1,39 @@
 ---
 name: unknown_workflow_generic_968
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8335
-common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceClone, LoadAudio, SaveAudio, WhisperSTT]
+frequency: 3
+level: moderate
+coverage: 0.723667
+common_nodes: [CR Text, Int, LoadImage, PrimitiveFloat, RH_Jimeng4_Image2Image, Repeater|pysssss, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS声音克隆-smile版_2017123397238530050.json, 音频生成/音频生成/（smile版）Qwen3 TTS语音克隆V2_2015076620398239746.json]
+members: [图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json, 图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json, 图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_968
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS声音克隆-smile版_2017123397238530050.json、音频生成/音频生成/（smile版）Qwen3 TTS语音克隆V2_2015076620398239746.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json、图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json、图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `FB_Qwen3TTSVoiceClone`
-- `LoadAudio`
-- `SaveAudio`
-- `WhisperSTT`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `Int`
+- `LoadImage`
+- `PrimitiveFloat`
+- `RH_Jimeng4_Image2Image`
+- `Repeater|pysssss`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `TrimAudioDuration` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `SmartImageConcat` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

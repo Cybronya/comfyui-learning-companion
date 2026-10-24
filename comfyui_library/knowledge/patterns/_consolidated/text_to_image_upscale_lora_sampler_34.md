@@ -1,96 +1,76 @@
 ---
 name: text_to_image_upscale_lora_sampler_34
 type: Text To Image
-frequency: 3
-level: strong
-coverage: 0.961
-common_nodes: [CLIPLoader, CLIPLoaderGGUF, CLIPTextEncode, ConditioningKrea2Rebalance, ConditioningZeroOut, DF_Integer, EmptyLatentImage, GetImageSize, Image Comparer (rgthree), ImageResize+, ImpactMinMax, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 7
+level: moderate
+coverage: 0.933571
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/(风格迁移)Krea2+zimage+高清放大_2075102520262881282.json, 图片生成/文生图/Krea2+zimage+高清放大_2075107321138737153.json, 图片生成/文生图/（深度控制）Krea2+zimage+高清放大_2075104137934622721.json]
+members: [图片生成/文生图/二次元人物生成_2088191460100362241.json, 图片生成/文生图/二次元真人(男生）_2088399659025911810.json, 图片生成/文生图/二次元真人_2088197741246767105.json, 图片生成/文生图/摄影-文生图-Z-image-turbo_2096447342345015297.json, 图片生成/文生图/摄影质感文生图工作流｜Z-image turbo快速出图生成_2096729113515089922.json, 图片生成/文生图/文生图-人像生成写实风格_2087860545537011714.json, 图片生成/文生图/文生图-人像生成写实风格_2088186685191450626.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_34
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/(风格迁移)Krea2+zimage+高清放大_2075102520262881282.json、图片生成/文生图/Krea2+zimage+高清放大_2075107321138737153.json、图片生成/文生图/（深度控制）Krea2+zimage+高清放大_2075104137934622721.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/二次元人物生成_2088191460100362241.json、图片生成/文生图/二次元真人(男生）_2088399659025911810.json、图片生成/文生图/二次元真人_2088197741246767105.json、图片生成/文生图/摄影-文生图-Z-image-turbo_2096447342345015297.json、图片生成/文生图/摄影质感文生图工作流｜Z-image turbo快速出图生成_2096729113515089922.json…）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPLoaderGGUF`
+全部 7 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningKrea2Rebalance`
 - `ConditioningZeroOut`
-- `DF_Integer`
 - `EmptyLatentImage`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImpactMinMax`
+- `ImageUpscaleWithModel`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Krea2ControlApply` —— 1/3 个有
-- `Krea2ControlImageEncode` —— 1/3 个有
-- `Krea2ControlLoRALoader` —— 1/3 个有
-- `Krea2StyleReference` —— 1/3 个有
-- `Krea2StyleTransfer` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
-- `llama_cpp_parameters` —— 1/3 个有
+- `CLIPLoaderGGUF` —— 5/7 个有
+- `KOOK_ImageCompression` —— 5/7 个有
+- `TextInputBasic` —— 5/7 个有
+- `CLIPLoader` —— 2/7 个有
+- `ImageFromBatch` —— 2/7 个有
+- `LayerColor: Brightness & Contrast` —— 2/7 个有
+- `JjkText` —— 1/7 个有
+- `solarL_SaveImagesToZip` —— 1/7 个有
+- `孤海注释` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 0.25 | 0.25 - 0.25 | 3 | 100% |
-| 宽度 | 1280 | 1280 - 1280 | 3 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
+| 宽度 | 768 | 80 - 1080 | 7 | 61% |
+| 高度 | 1024 | 80 - 1920 | 7 | 52% |
+| 采样步数 | 12 | 4 - 12 | 7 | 74% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 7 | 18% |
+| 采样算法 | euler | - | 7 | 86% |
+| 调度器 | simple | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 0.25，观测区间 0.25 - 0.25，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1280，观测区间 1280 - 1280，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
-- 高发问题（6/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 768，观测区间 80 - 1080，7 个样本
+- 高度 中位数 1024，观测区间 80 - 1920，7 个样本
+- 采样步数 中位数 12，观测区间 4 - 12，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，7 个样本，取值分散，一致性仅 18%
+- 采样算法 最常用 euler，7 个样本，一致性 86%
+- 调度器 最常用 simple，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

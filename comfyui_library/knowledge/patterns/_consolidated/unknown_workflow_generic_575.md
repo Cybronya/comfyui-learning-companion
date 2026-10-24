@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_575
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.716667
-common_nodes: [CR Text, LoadImage, PreviewAny, RH_LLMAPI_NODE, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/1984621354714611714.json, 视频生成/图生视频/2009919049580417026.json, 视频生成/文生视频/全能视频S文生视频每天免费5个视频后面0.05每条（高清无水印+支持横屏竖屏+自动提示词优化）_1984613944016977921.json]
+members: [视频生成/图生视频/Seedance2体验版（带视频参考）_2034493211380551681.json, 视频生成/图生视频/SeedanceVideoRefToVideo_2038487886651199489.json, 视频生成/图生视频/sd2.0 工作流  分镜图生视频_2034473261228101634.json, 视频生成/图生视频/seedance2.0_2034471481182261250.json, 视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_575
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1984621354714611714.json、视频生成/图生视频/2009919049580417026.json、视频生成/文生视频/全能视频S文生视频每天免费5个视频后面0.05每条（高清无水印+支持横屏竖屏+自动提示词优化）_1984613944016977921.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Seedance2体验版（带视频参考）_2034493211380551681.json、视频生成/图生视频/SeedanceVideoRefToVideo_2038487886651199489.json、视频生成/图生视频/sd2.0 工作流  分镜图生视频_2034473261228101634.json、视频生成/图生视频/seedance2.0_2034471481182261250.json、视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `RH_Sora2_I2V` —— 2/3 个有
-- `RH_Sora2_T2V` —— 1/3 个有
+- `RH_CinematicVideoGenerator` —— 4/5 个有
+- `LoadVideo` —— 3/5 个有
+- `MuyeTextEditOutput` —— 3/5 个有
+- `RH_SeedanceVideoRefToVideo` —— 3/5 个有
+- `Make Image Batch` —— 1/5 个有
 
 ## 典型参数
 

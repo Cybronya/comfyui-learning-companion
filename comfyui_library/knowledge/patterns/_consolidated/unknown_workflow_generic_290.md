@@ -1,34 +1,37 @@
 ---
 name: unknown_workflow_generic_290
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_Kling25_Image2Video, SaveVideo]
+coverage: 0.7685
+common_nodes: [CR Prompt Text, LayerUtility: PurgeVRAM, LongCatImageModelLoader, LongCatImageTextToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2033747494940712961.json, 视频生成/图生视频/2015989000204460034.json, 视频生成/图生视频/2041082785955319810.json, 视频生成/图生视频/1988180318677024770.json, 视频生成/图生视频/2039889505292914690.json]
+members: [图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json, 图片生成/文生图/LongCat-Image文生图_1997957400038662145.json, 图片生成/文生图/LongCat-Image文生图_1998224203377704961.json, 图片生成/文生图/LongCat-Image文生图_2001783199229440002.json, 图片生成/文生图/LongCat-Image文生图_2052768050700660737.json, 图片生成/文生图/LongCat-Image文生图（Plus才能运行）_1997925907765583874.json, 图片生成/文生图/LongCat文生图_1998335604532346881.json, 图片生成/文生图/龙猫模型LongCat-Image文生图_1998212875355348993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_290
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/2033747494940712961.json、视频生成/图生视频/2015989000204460034.json、视频生成/图生视频/2041082785955319810.json、视频生成/图生视频/1988180318677024770.json、视频生成/图生视频/2039889505292914690.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/LongCat-Image文生图V1_1997718416914059266.json、图片生成/文生图/LongCat-Image文生图_1997957400038662145.json、图片生成/文生图/LongCat-Image文生图_1998224203377704961.json、图片生成/文生图/LongCat-Image文生图_2001783199229440002.json、图片生成/文生图/LongCat-Image文生图_2052768050700660737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_Kling25_Image2Video`
-- `SaveVideo`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `LayerUtility: PurgeVRAM`
+- `LongCatImageModelLoader`
+- `LongCatImageTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `GetRandomIntegerInRange` —— 1/5 个有
+- `JWInteger` —— 7/8 个有
+- `LoadImage` —— 2/8 个有
 
 ## 典型参数
 

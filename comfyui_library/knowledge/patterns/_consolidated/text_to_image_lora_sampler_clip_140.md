@@ -1,101 +1,89 @@
 ---
 name: text_to_image_lora_sampler_clip_140
 type: Text To Image
-frequency: 8
+frequency: 11
 level: strong
-coverage: 0.861875
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, TTResolutionSelector, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy showAnything, solarL_SaveImagesToZip]
+coverage: 0.821
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1好玩的LoRA工作流，风格迁移换脸其他创意处理工具_2107235837036556290.json, 图片生成/图生图/Qwen Image 2.1角色资产生成工作流，角色一致性角色设计场景道具工具_2107206693816983553.json, 图片生成/文生图/Qwen Image 2.1官方流程混合流｜文生图编辑二合一_2106946249093107713.json, 视频生成/图生视频/Qwen Image 2.1角色资产生成角色一致性设计场景道具工作流，图生视频处理方案_2108325914386980866.json, 视频生成/图生视频/Qwen_Image_2.1人物姿势编辑迁移｜图片处理姿势随心改_2107277724539768834.json, 视频生成/图生视频/Qwen_Image_2.1官方流程混合流｜文生图编辑二合一_2107271722138431489.json, 视频生成/图生视频/Qwen_Image_2.1角色资产生成｜角色一致性设计场景道具_2107642152498057218.json, 视频生成/图生视频/Qwen_Image_2.1趣味Lora合集｜风格迁移换脸创意玩法_2107643764289392642.json]
+members: [图片生成/文生图/QwenImage2.1 T2I官方提示词助手｜文生图有外挂｜灵感一句话变大片_2102643207380234241.json, 图片生成/文生图/QwenImage2.1文生图加官方提示词助手｜新手也能写好词_2103086483702902786.json, 图片生成/文生图/QwenImage2.1文生图搭配官方提示词助手，T2I自动扩写出图效率提升_2103196536837595138.json, 图片生成/文生图/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2102841325551972354.json, 图片生成/文生图/qwen image 2.1 turbo大模型基础文生图 高质量画面直出_2109726501351542786.json, 图片生成/文生图/qwen image 2.1官方turbo加速lora文生图基础流 高质量画面直出_2109727981399797762.json, 图片生成/文生图/qwen image 2.1提示词扩写｜一句话自动扩成专业描述｜文生图更省心_2102239968981770242.json, 图片生成/文生图/通用QwenImage2.1文生图图生图二合一｜日常出图万能底座_2111282466421035009.json, 图片生成/文生图/通用QwenImage2.1方案，文生图图生图一站搞定_2111525886070706178.json, 视频生成/图生视频/QwenImage2.1图生图搭配官方提示词助手，I2I编辑效率大幅提升_2105866245517168642.json, 视频生成/文生视频/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2105861679325208578.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_140
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1好玩的LoRA工作流，风格迁移换脸其他创意处理工具_2107235837036556290.json、图片生成/图生图/Qwen Image 2.1角色资产生成工作流，角色一致性角色设计场景道具工具_2107206693816983553.json、图片生成/文生图/Qwen Image 2.1官方流程混合流｜文生图编辑二合一_2106946249093107713.json、视频生成/图生视频/Qwen Image 2.1角色资产生成角色一致性设计场景道具工作流，图生视频处理方案_2108325914386980866.json、视频生成/图生视频/Qwen_Image_2.1人物姿势编辑迁移｜图片处理姿势随心改_2107277724539768834.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/QwenImage2.1 T2I官方提示词助手｜文生图有外挂｜灵感一句话变大片_2102643207380234241.json、图片生成/文生图/QwenImage2.1文生图加官方提示词助手｜新手也能写好词_2103086483702902786.json、图片生成/文生图/QwenImage2.1文生图搭配官方提示词助手，T2I自动扩写出图效率提升_2103196536837595138.json、图片生成/文生图/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2102841325551972354.json、图片生成/文生图/qwen image 2.1 turbo大模型基础文生图 高质量画面直出_2109726501351542786.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BatchImagesNode`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MuyeTextEditOutput`
-- `QwenImage21Cache`
-- `ResolutionSelector`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `TTResolutionSelector`
 - `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 7/8 个有
-- `ComfySwitchNode` —— 6/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
-- `EmptyImage` —— 4/8 个有
-- `孤海注释` —— 4/8 个有
-- `ImageStitch` —— 3/8 个有
-- `PrimitiveStringMultiline` —— 3/8 个有
-- `AddLabel` —— 2/8 个有
-- `GetNode` —— 2/8 个有
-- `Image Comparer (rgthree)` —— 2/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `JWStringConcat` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `StringMergeNode` —— 2/8 个有
-- `ZML_AnyTypeSwitch` —— 2/8 个有
-- `AnyLineArtPreprocessor_aux` —— 1/8 个有
-- `DWPreprocessor` —— 1/8 个有
-- `DepthPro` —— 1/8 个有
-- `Hina.PoseEditor3D` —— 1/8 个有
-- `LoadDepthPro` —— 1/8 个有
-- `MetricDepthToRelative` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 9/11 个有
+- `ResolutionSelector` —— 9/11 个有
+- `TextGenerate` —— 9/11 个有
+- `孤海注释` —— 9/11 个有
+- `Any Switch (rgthree)` —— 8/11 个有
+- `JsonExtractString` —— 8/11 个有
+- `TextConcatenator` —— 8/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/11 个有
+- `SaveImageAdvanced` —— 6/11 个有
+- `ShowAnything|Mie` —— 5/11 个有
+- `easy showAnything` —— 4/11 个有
+- `ComfySwitchNode` —— 3/11 个有
+- `LoadImage` —— 3/11 个有
+- `QwenImage21Cache` —— 3/11 个有
+- `PreviewImage` —— 2/11 个有
+- `easy isNone` —— 2/11 个有
+- `EmptyImage` —— 1/11 个有
+- `GetNode` —— 1/11 个有
+- `ImageBatchMulti` —— 1/11 个有
+- `ImageScaleToTotalPixels` —— 1/11 个有
+- `SetNode` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 11 | 100% |
+| 高度 | 80 | 80 - 80 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 11 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
+| 采样算法 | er_sde | - | 11 | 100% |
+| 调度器 | beta | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（9/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，11 个样本，一致性 100%
+- 调度器 最常用 beta，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（13/11 个样本）：Steps较低可能导致细节不足

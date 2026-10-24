@@ -1,31 +1,44 @@
 ---
 name: unknown_workflow_generic_783
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, RH_SeedreamV5ProTextToImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.86575
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/Seedream 5.0 PRO 文生图_2075240057946071041.json, 图片生成/文生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075473593953247234.json]
+members: [音频生成/音频生成/AI口播-配音_2027202958403833858.json, 音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json, 音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json, 音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_783
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream 5.0 PRO 文生图_2075240057946071041.json、图片生成/文生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075473593953247234.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/AI口播-配音_2027202958403833858.json、音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json、音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json、音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_SeedreamV5ProTextToImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `Qwen3TTSCustomVoice`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `Apply Whisper` —— 3/4 个有
+- `AudioCrop` —— 3/4 个有
+- `CR Text` —— 3/4 个有
+- `PreviewAny` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `HeartMuLa_Transcribe` —— 1/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
 
 ## 典型参数
 
@@ -37,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

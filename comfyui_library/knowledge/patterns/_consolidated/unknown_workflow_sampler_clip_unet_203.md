@@ -1,72 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_203
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.964667
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, SaveImage, Seed (rgthree), SizeNode, UNETLoader, VAEDecode, VAELoader, easy promptLine]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.930833
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/z-image 去杂乱的噪点，保留细节_2005172510469615617.json, 图片生成/文生图/【LG】细节增强优化版_2004297248144064513.json, 图片生成/文生图/【LG】细节增强优化版_2015060948377149441.json]
+members: [图片生成/图生图/11.高清放大，质感提升_2050782119433129985.json, 图片生成/图生图/13.老照片修复_2051995992244932609.json, 图片生成/图生图/Flux.2 [Klein]图像扩图+4K放大_2012429239328444417.json, 图片生成/图生图/Flux2 Klein9B 图像编辑工作流 浮云2.2_2016809192056688641.json, 图片生成/图生图/模型渲染Flux2_1.0_2088092960683548674.json, 图片生成/图生图/模型渲染Flux2_1.1_2088837920449974273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_203
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/z-image 去杂乱的噪点，保留细节_2005172510469615617.json、图片生成/文生图/【LG】细节增强优化版_2004297248144064513.json、图片生成/文生图/【LG】细节增强优化版_2015060948377149441.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/11.高清放大，质感提升_2050782119433129985.json、图片生成/图生图/13.老照片修复_2051995992244932609.json、图片生成/图生图/Flux.2 [Klein]图像扩图+4K放大_2012429239328444417.json、图片生成/图生图/Flux2 Klein9B 图像编辑工作流 浮云2.2_2016809192056688641.json、图片生成/图生图/模型渲染Flux2_1.0_2088092960683548674.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SizeNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 2/3 个有
-- `GenerateNoise` —— 2/3 个有
-- `LGNoiseInjectionLatent` —— 2/3 个有
-- `BNK_InjectNoise` —— 1/3 个有
-- `BNK_NoisyLatentImage` —— 1/3 个有
-- `ModelSamplingAuraFlow` —— 1/3 个有
-- `RescaleCFG` —— 1/3 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `SeedVR2LoadDiTModel` —— 5/6 个有
+- `SeedVR2LoadVAEModel` —— 5/6 个有
+- `SeedVR2VideoUpscaler` —— 5/6 个有
+- `ImageScaleToTotalPixels` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `FeatherMask` —— 2/6 个有
+- `ImageStitch` —— 2/6 个有
+- `ImageUpscaleWithModel` —— 2/6 个有
+- `InpaintModelConditioning` —— 2/6 个有
+- `MaskPreview` —— 2/6 个有
+- `ResizeImagesByLongerEdge` —— 2/6 个有
+- `UpscaleModelLoader` —— 2/6 个有
+- `ColorMatch` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `ImageAddNoise` —— 1/6 个有
+- `ImageCASharpening+` —— 1/6 个有
+- `ImageColorMatch+` —— 1/6 个有
+- `ImagePadForOutpaint` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `RTXVideoSuperResolution` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 3 - 4 | 3 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 0.3 - 1 | 3 | 57% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 3 - 4，3 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 0.3 - 1，3 个样本
-- 高发问题（8/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

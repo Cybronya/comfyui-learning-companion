@@ -1,31 +1,38 @@
 ---
 name: unknown_workflow_generic_480
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.904
-common_nodes: [GrokImageEditNodeV2, LoadImage, SaveImage]
+coverage: 0.7862
+common_nodes: [ElevenLabsInstantVoiceClone, ElevenLabsVoiceSelector, LoadAudio, RecordAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_grok_image_edit.json, comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json, comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json]
+members: [comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_480
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_grok_image_edit.json、comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json、comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GrokImageEditNodeV2`
-- `LoadImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `ElevenLabsInstantVoiceClone`
+- `ElevenLabsVoiceSelector`
+- `LoadAudio`
+- `RecordAudio`
+- `SaveAudioAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `ElevenLabsTextToDialogue` —— 2/5 个有
+- `ElevenLabsTextToSpeech` —— 2/5 个有
+- `ElevenLabsSpeechToSpeech` —— 1/5 个有
 
 ## 典型参数
 

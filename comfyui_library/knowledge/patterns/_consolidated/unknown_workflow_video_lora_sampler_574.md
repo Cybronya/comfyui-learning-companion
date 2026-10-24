@@ -3,78 +3,51 @@ name: unknown_workflow_video_lora_sampler_574
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.829667
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), INTConstant, KSamplerSelect, LoadAudio, LoadImage, LongCatVoiceCloneTTS, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, MultiTextConcatenate, NormalizeAudioLoudness, PreviewAudio, PrimitiveFloat, Qwen3ASRLoader, Qwen3ASRTranscribe, RH_LLMAPI_Pro_Node, RH_Utils, RandomNoise, SamplerCustomAdvanced, SaveAudio, SaveAudioMP3, ShowAnything|Mie, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, easy saveText, easy showAnything]
+coverage: 0.929333
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, EmptyHunyuanLatentVideo, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [数字人/数字人/explanation_2091092008151638018.json, 视频生成/图生视频/MiniMax-H3 心灵鸡汤口播数字人全流程方案落地分享分享-V2  【专属音色版】_2089084464377982978.json, 视频生成/图生视频/meinvjianghuodong_2096516861621002241.json]
+members: [图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json, 图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json, 图片生成/文生图/文生图-wan2.2图像反推文生图_1954793772753182722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_574
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/explanation_2091092008151638018.json、视频生成/图生视频/MiniMax-H3 心灵鸡汤口播数字人全流程方案落地分享分享-V2  【专属音色版】_2089084464377982978.json、视频生成/图生视频/meinvjianghuodong_2096516861621002241.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json、图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json、图片生成/文生图/文生图-wan2.2图像反推文生图_1954793772753182722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
-- `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
+- `CLIPTextEncode`
+- `DisableNoise`
+- `EmptyHunyuanLatentVideo`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
-- `LongCatVoiceCloneTTS`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `MultiTextConcatenate`
-- `NormalizeAudioLoudness`
-- `PreviewAudio`
-- `PrimitiveFloat`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Utils`
+- `ModelSamplingSD3`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `ShowAnything|Mie`
-- `Text`
+- `SaveImage`
+- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `easy saveText`
-- `easy showAnything`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `HAIGC_TimestampTextReplace` —— 2/3 个有
-- `HAIGC_VideoSubtitleTimestampPro` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `SubtitleOptimizer` —— 2/3 个有
-- `TranscribeConfig` —— 2/3 个有
-- `VideoTranscribe` —— 2/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/3 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
 
 ## 典型参数
 

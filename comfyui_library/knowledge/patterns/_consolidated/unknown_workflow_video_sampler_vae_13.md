@@ -3,75 +3,65 @@ name: unknown_workflow_video_sampler_vae_13
 type: Unknown Workflow
 frequency: 18
 level: moderate
-coverage: 0.698778
-common_nodes: [AIO_Preprocessor, AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], SetNode, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.578278
+common_nodes: [CogVideoEnhanceAVideo, GetNode, ImageResize+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1933077979956215810.json, 视频生成/图生视频/1986080138964205570.json, 视频生成/图生视频/1989255304942596097.json, 视频生成/图生视频/160帧-舞蹈-超高拟态-直出1920高清-V2版本_1942202708122341377.json, 视频生成/图生视频/1932617969560383490.json, 视频生成/图生视频/1927527393152634881.json, 视频生成/图生视频/1947326478251872258.json, 视频生成/图生视频/1943365680282693633.json, 视频生成/图生视频/1950083383838818305.json, 视频生成/图生视频/1922696527037480962.json, 视频生成/图生视频/1932273644485902337.json, 视频生成/图生视频/1992633923415109634.json, 视频生成/图生视频/1992639334528643074.json, 视频生成/图生视频/1966126625408675842.json, 视频生成/图生视频/1945365424944947201.json, 视频生成/图生视频/1946130631811055617.json, 视频生成/图生视频/1964248565730131970.json, 视频生成/文生视频/1949732964007059457.json]
+members: [图片生成/图生图/【动态追踪运镜】wan2.1图生视频（全自动）_2044340242756407298.json, 图片生成/图生图/【希区柯克运镜】wan2.1图生视频（全自动）_2044340400877473794.json, 图片生成/图生图/【高速跟随运镜】wan2.1图生视频（全自动）_2044359735259959297.json, 视频生成/图生视频/360°运镜无缝转场_1989163247343382530.json, 视频生成/图生视频/Fusionx首尾帧视频生成_1941491329644052481.json, 视频生成/图生视频/Wan2.1 VACE14B 图生视频 电商产品服装展示_1926239959831769089.json, 视频生成/图生视频/wan2.1电影级运镜·图生视频自动版_1943217386050764801.json, 视频生成/图生视频/【Fusion X】VACE-14B首尾帧动画（基础流）_1935089059322896386.json, 视频生成/图生视频/【Fusion X首尾帧】360°运镜无缝转场_1935147311754321921.json, 视频生成/图生视频/【Fusion+X首尾帧】无缝转场_2039609556543741954.json, 视频生成/图生视频/【产品360旋转】wan2.1图生视频（全自动）_1931512352187809794.json, 视频生成/图生视频/【动态追踪运镜】wan2.1图生视频（全自动）_1931191683562536961.json, 视频生成/图生视频/【希区柯克运镜】wan2.1图生视频（全自动）_1931298489089896450.json, 视频生成/图生视频/【弧线围绕运镜】wan2.1图生视频（全自动）_1931133040167157762.json, 视频生成/图生视频/【红毯运镜】高级运镜 wan2.1图生视频_1934219687129735170.json, 视频生成/图生视频/【高速跟随运镜】wan2.1图生视频（全自动）_1930913690252718081.json, 视频生成/图生视频/运镜效果wan2.1图生视频_2050075485417295874.json, 视频生成/图生视频/运镜无缝转场_1935937299358081025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/150帧-跳舞-动作迁移-直出1920P高清-V1版本_1933077979956215810.json、视频生成/图生视频/1986080138964205570.json、视频生成/图生视频/1989255304942596097.json、视频生成/图生视频/160帧-舞蹈-超高拟态-直出1920高清-V2版本_1942202708122341377.json、视频生成/图生视频/1932617969560383490.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/【动态追踪运镜】wan2.1图生视频（全自动）_2044340242756407298.json、图片生成/图生图/【希区柯克运镜】wan2.1图生视频（全自动）_2044340400877473794.json、图片生成/图生图/【高速跟随运镜】wan2.1图生视频（全自动）_2044359735259959297.json、视频生成/图生视频/360°运镜无缝转场_1989163247343382530.json、视频生成/图生视频/Fusionx首尾帧视频生成_1941491329644052481.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
+- `CogVideoEnhanceAVideo`
 - `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+- `ImageResize+`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
+- `PreviewImage`
 - `SetNode`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
+- `WanVideoSetBlockSwap`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 17/18 个有
-- `WanVideoSLG` —— 17/18 个有
-- `ColorMatch` —— 15/18 个有
-- `WanVideoTeaCache` —— 15/18 个有
-- `ShowText|pysssss` —— 14/18 个有
-- `WanVideoExperimentalArgs` —— 14/18 个有
-- `easy cleanGpuUsed` —— 14/18 个有
-- `ImpactSwitch` —— 13/18 个有
-- `PreviewImage` —— 13/18 个有
-- `SimpleMath+` —— 13/18 个有
-- `RHHiddenNodes` —— 11/18 个有
-- `WanVideoBlockSwap` —— 10/18 个有
-- `WanVideoModelLoader` —— 10/18 个有
-- `WanVideoTorchCompileSettings` —— 10/18 个有
-- `WanVideoLoraSelect` —— 8/18 个有
-- `WanVideoVACEModelSelect` —— 8/18 个有
-- `ImageBlend` —— 5/18 个有
-- `easy seed` —— 5/18 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/18 个有
-- `ImagePadKJ` —— 4/18 个有
-- `DepthAnything_V2` —— 3/18 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/18 个有
-- `GetImageRangeFromBatch` —— 3/18 个有
-- `WanVideoEasyCache` —— 2/18 个有
-- `WanVideoSetRadialAttention` —— 2/18 个有
-- `Joy_caption_two` —— 1/18 个有
-- `Joy_caption_two_load` —— 1/18 个有
+- `Anything Everywhere` —— 17/18 个有
+- `WanVideoLoraSelect` —— 16/18 个有
+- `CLIPVisionLoader` —— 15/18 个有
+- `RHHiddenNodes` —— 15/18 个有
+- `ShowText|pysssss` —— 15/18 个有
+- `WanVideoClipVisionEncode` —— 15/18 个有
+- `WanVideoImageToVideoEncode` —— 15/18 个有
+- `ImageCASharpening+` —— 12/18 个有
+- `JWInteger` —— 12/18 个有
+- `WanVideoTeaCache` —— 12/18 个有
+- `WanVideoTextEncode` —— 12/18 个有
+- `Int` —— 6/18 个有
+- `MathExpression|pysssss` —— 6/18 个有
+- `WanVideoApplyNAG` —— 6/18 个有
+- `WanVideoTextEncodeSingle` —— 6/18 个有
+- `ImageConcanate` —— 4/18 个有
+- `WanVideoVACEEncode` —— 3/18 个有
+- `WanVideoVACEStartToEndFrame` —— 3/18 个有
+- `GetImageSizeAndCount` —— 2/18 个有
+- `Note _O` —— 1/18 个有
+- `WanVideoVACEModelSelect` —— 1/18 个有
 
 ## 典型参数
 

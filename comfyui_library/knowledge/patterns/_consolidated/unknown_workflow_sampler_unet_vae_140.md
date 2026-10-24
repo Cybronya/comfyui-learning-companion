@@ -1,78 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_140
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.913667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.868286
+common_nodes: [Anything Everywhere3, CLIPLoader, Int Literal, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax_H3_打斗强化工作流（二采+打斗lora+动作修复）_2092573716482969601.json, 视频生成/文生视频/Minimax H3 - 多参视频生成_2084608321469898754.json, 视频生成/文生视频/Minimax H3 - 多参视频生成_2092164049516711938.json, 视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json, 视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json, 视频生成/文生视频/人物真实低动态H3+sigma强化+潜空间放大工作流 双采_2096114490512330753.json]
+members: [图片生成/图生图/Flux2 Klein 产品精修_2018574420947771394.json, 图片生成/图生图/Flux2 Klein 产品精修_2018605632630296578.json, 图片生成/图生图/一键精修+超清放大One-click+retouching+++ultra-high+definit_2043887145068273666.json, 图片生成/图生图/产品精修_2018514606955700225.json, 图片生成/图生图/人物多角度_2018509506082250754.json, 图片生成/图生图/多角度视角转换 人物一致性 （单图）_2043566764419715074.json, 图片生成/图生图/多角度视角转换 人物一致性_2043568856052015105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_140
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3_打斗强化工作流（二采+打斗lora+动作修复）_2092573716482969601.json、视频生成/文生视频/Minimax H3 - 多参视频生成_2084608321469898754.json、视频生成/文生视频/Minimax H3 - 多参视频生成_2092164049516711938.json、视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json、视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 产品精修_2018574420947771394.json、图片生成/图生图/Flux2 Klein 产品精修_2018605632630296578.json、图片生成/图生图/一键精修+超清放大One-click+retouching+++ultra-high+definit_2043887145068273666.json、图片生成/图生图/产品精修_2018514606955700225.json、图片生成/图生图/人物多角度_2018509506082250754.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `Int Literal`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `PainterFluxImageEdit`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVConcatAVLatent` —— 4/6 个有
-- `LTXVSeparateAVLatent` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/6 个有
-- `MiniMaxH3SigmaShift` —— 3/6 个有
-- `ModelAttentionBackend` —— 3/6 个有
-- `H3SigmaRefiner` —— 2/6 个有
-- `SplitSigmas` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `DisableNoise` —— 1/6 个有
-- `ExtendIntermediateSigmas` —— 1/6 个有
-- `GetVideoComponents` —— 1/6 个有
-- `LoadVideo` —— 1/6 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/6 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/6 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/6 个有
-- `ModelPreviewOverrideKJ` —— 1/6 个有
-- `SolAttnMiniMax` —— 1/6 个有
-- `SplitSigmasDenoise` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 4/7 个有
+- `MemoryCleaner` —— 4/7 个有
+- `SeedVR2` —— 4/7 个有
+- `SeedVR2ExtraArgs` —— 4/7 个有
+- `QwenMultiangleCameraNode` —— 3/7 个有
+- `Text` —— 2/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 19/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（19/7 个样本）：Steps较低可能导致细节不足

@@ -1,81 +1,80 @@
 ---
 name: unknown_workflow_video_sampler_clip_204
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.963
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Display Int (rgthree), EmptyFlux2LatentImage, GetImageSize, ImageFromBatch, KSampler, PreviewImage, ReferenceLatent, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.625
+common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, INTConstant, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RIFE VFI, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll, wanBlockSwap]
+problems: []
 missing: []
-members: [视频生成/图生视频/2073311935147364354.json, 视频生成/图生视频/2024791523623178242.json]
+members: [视频生成/图生视频/超高动态感增强  指定主题自动提示词图生视频  激版可加速_1998328006265438210.json, 视频生成/图生视频/超高动态感增强 艺术激版 图生视频 拒绝慢动作 可加速_1997659149460770818.json, 视频生成/文生视频/Remix V2自动提示词 指定主题文生视频 激版可加速_1996172042313646082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_204
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2073311935147364354.json、视频生成/图生视频/2024791523623178242.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/超高动态感增强  指定主题自动提示词图生视频  激版可加速_1998328006265438210.json、视频生成/图生视频/超高动态感增强 艺术激版 图生视频 拒绝慢动作 可加速_1997659149460770818.json、视频生成/文生视频/Remix V2自动提示词 指定主题文生视频 激版可加速_1996172042313646082.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Display Int (rgthree)`
-- `EmptyFlux2LatentImage`
-- `GetImageSize`
-- `ImageFromBatch`
-- `KSampler`
+- `GetNode`
+- `INTConstant`
+- `KSamplerAdvanced`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `ReferenceLatent`
+- `RIFE VFI`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy batchAnything`
 - `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `easy clearCacheAll`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `DapaoRandomPromptLineExtractNode` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `QwenMultiangleCameraNode` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `ResizeLongestToNode` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `CLIPVisionEncode` —— 2/3 个有
+- `CLIPVisionLoader` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `MultiTextConcatenate` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `PainterI2V` —— 2/3 个有
+- `Qwen3_VQA` —— 2/3 个有
+- `TextInput_` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `EmptyHunyuanLatentVideo` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.925 | - | 2 | 92% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler_ancestral | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.925，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

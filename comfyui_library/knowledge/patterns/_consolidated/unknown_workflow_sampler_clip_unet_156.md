@@ -1,34 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_unet_156
 type: Unknown Workflow
-frequency: 4
+frequency: 8
 level: moderate
-coverage: 0.82
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.99125
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json, 图片生成/文生图/人像换脸丨Flux2-Klein 9B丨面部发型替换_2105644038434152450.json, 图片生成/文生图/图片生成和编辑_Flux-2-Klein_2012115517577891842.json, 图片生成/文生图/😼FLUX2-KLEIN 文生图、单图、多图编辑合集@言灵ru_2014708517436919810.json]
+members: [图片生成/图生图/服装替换_2083162795322994690.json, 图片生成/图生图/泳装专用对镜自拍跨境带货涨粉买家秀_2039984637874806786.json, 图片生成/图生图/真实换脸 - Flux2Klein4B加速版_2078661674969681922.json, 图片生成/图生图/赫本公主风换脸换装 _ 写实保留服饰细节 Flux2_2109120696780673025.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093340946711793665.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093623432524156930.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093892857491976194.json, 图片生成/文生图/换装Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2035315458378833922.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_156
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein 光速文生图&图生图&多图编辑大合集_2012036300836179970.json、图片生成/文生图/人像换脸丨Flux2-Klein 9B丨面部发型替换_2105644038434152450.json、图片生成/文生图/图片生成和编辑_Flux-2-Klein_2012115517577891842.json、图片生成/文生图/😼FLUX2-KLEIN 文生图、单图、多图编辑合集@言灵ru_2014708517436919810.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/服装替换_2083162795322994690.json、图片生成/图生图/泳装专用对镜自拍跨境带货涨粉买家秀_2039984637874806786.json、图片生成/图生图/真实换脸 - Flux2Klein4B加速版_2078661674969681922.json、图片生成/图生图/赫本公主风换脸换装 _ 写实保留服饰细节 Flux2_2109120696780673025.json、图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093340946711793665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `ConditioningZeroOut`
 - `Flux2Scheduler`
-- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
@@ -41,23 +41,15 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/4 个有
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `Seed (rgthree)` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `easy int` —— 2/4 个有
-- `AILab_QwenVL` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `TTResolutionSelector` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `CR Text` —— 7/8 个有
+- `JWFloat` —— 7/8 个有
+- `ImageConcanate` —— 6/8 个有
+- `easy imageSize` —— 3/8 个有
+- `EmptyFlux2LatentImage` —— 1/8 个有
+- `EmptySD3LatentImage` —— 1/8 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `TextConcat` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,37 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_vae_46
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.833
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, EmptyLatentImage, KSamplerSelect, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.9776
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model]
-members: [图片生成/文生图/1927591797424283649.json, 图片生成/文生图/1952670790871396354.json]
+missing: []
+members: [图片生成/文生图/CFGzero简单工作流带lora_1928999965027155970.json, 图片生成/文生图/FLUX文生图 繁花lora工作流_1942505597264924674.json, 图片生成/文生图/Flux 1 文生图基础工作流_1937783580867084290.json, 图片生成/文生图/Flux+Lora标准文生图_1932966165364834305.json, 图片生成/文生图/Flux文生图工作流_1941002485245100033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_46
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1927591797424283649.json、图片生成/文生图/1952670790871396354.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/CFGzero简单工作流带lora_1928999965027155970.json、图片生成/文生图/FLUX文生图 繁花lora工作流_1942505597264924674.json、图片生成/文生图/Flux 1 文生图基础工作流_1937783580867084290.json、图片生成/文生图/Flux+Lora标准文生图_1932966165364834305.json、图片生成/文生图/Flux文生图工作流_1941002485245100033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `KSamplerSelect`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -39,20 +36,27 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowStringText` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `DualCLIPLoaderGGUF` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `UNETLoader` —— 4/5 个有
+- `DeepTranslatorTextNode` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `CFGZeroStar` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `FluxGuidance` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `ImageSmartSharpen+` —— 1/5 个有
+- `ImageUpscaleWithModel` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `UnetLoaderGGUF` —— 1/5 个有
+- `UpscaleModelLoader` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | - | 2 | 57% |
-| 高度 | 768 | - | 2 | 67% |
+| 宽度 | 1080 | 1024 - 1440 | 5 | 86% |
+| 高度 | 1080 | 768 - 1536 | 5 | 75% |
 
 ## 常见问题
 
@@ -60,7 +64,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 896，样本不足，未给区间，2 个样本
-- 高度 中位数 768，样本不足，未给区间，2 个样本
-- 这些节点还没有知识卡，系统对它们的理解有限：LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions、LayerUtility: LoadJoyCaptionBeta1Model
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1080，观测区间 1024 - 1440，5 个样本，取值集中（一致性 86%）
+- 高度 中位数 1080，观测区间 768 - 1536，5 个样本

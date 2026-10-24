@@ -1,68 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_unet_29
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.419818
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.920583
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/AIDir-MinimaxH3全能参考多人物短剧工作流(开源量化加速版)速度提升质量不减_2087041425555939329.json, 视频生成/图生视频/AITUDOU-MiniMax H3(全能参考)_2084210400207396866.json, 视频生成/图生视频/AITUDOU-MiniMax H3(全能参考)真人短剧加速版_2084291490649567233.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+I2V+图生视频+1280分辨率加速流_2085330041017298945.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+I2V+（首帧）_2084283095339065346.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+T2V（文生视频）加速流_2085589980080070658.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+lightx2v+8step+高动态加速流_2087230947061223426.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+全能参考+数字人+人物音频一致性_2086164860592807937.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+全能参考（1280分辨率）加速流_2085330061422579714.json, 视频生成/图生视频/MinimaxH3全能参考多人物短剧工作流(开源量化加速版)速度提升质量不减_2086639379048652802.json, 视频生成/图生视频/心然·寻源-MiniMax H3 多模态参考数字人对口型_2090830886253195265.json]
+members: [视频生成/图生视频/MINIMAX-H3动漫画风加速低显存全功能工作流_2099295189230772226.json, 视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速 图生视频 -zip_2086179408511062017.json, 视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速+图生视频_2095722417233682433.json, 视频生成/图生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091730279948963841.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 4步极速版_2090795830067417090.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 8步加速版_2090756411985850369.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088208371999657986.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088234673238536194.json, 视频生成/图生视频/Minimax H3剪枝版BF16首帧生视频_2094406920504434690.json, 视频生成/图生视频/Minimax H3动作增强修复双采（包含脸部修复和高动态修复）_2098315228005093378.json, 视频生成/图生视频/Minimax H3超真实最强数字人_2102034695067365378.json, 视频生成/图生视频/高质量-Minimax H3音频驱动数字人BF16-max-手动提示词_2099743464232669186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_29
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/AIDir-MinimaxH3全能参考多人物短剧工作流(开源量化加速版)速度提升质量不减_2087041425555939329.json、视频生成/图生视频/AITUDOU-MiniMax H3(全能参考)_2084210400207396866.json、视频生成/图生视频/AITUDOU-MiniMax H3(全能参考)真人短剧加速版_2084291490649567233.json、视频生成/图生视频/AITUDOU-MiniMax+H3+I2V+图生视频+1280分辨率加速流_2085330041017298945.json、视频生成/图生视频/AITUDOU-MiniMax+H3+I2V+（首帧）_2084283095339065346.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/MINIMAX-H3动漫画风加速低显存全功能工作流_2099295189230772226.json、视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速 图生视频 -zip_2086179408511062017.json、视频生成/图生视频/MiniMAX-H3-T8双时钟采样4步无损加速+图生视频_2095722417233682433.json、视频生成/图生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091730279948963841.json、视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 4步极速版_2090795830067417090.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：42%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
+- `CR Prompt Text`
 - `ComfyMathExpression`
-- `GetNode`
-- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 9/11 个有
-- `Label (rgthree)` —— 8/11 个有
-- `PrimitiveFloat` —— 8/11 个有
-- `Text` —— 8/11 个有
-- `LoraLoaderModelOnly` —— 6/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/11 个有
-- `LoadAudio` —— 4/11 个有
-- `SigmasGraph` —— 4/11 个有
-- `EasyCache` —— 3/11 个有
-- `Float` —— 3/11 个有
-- `CreateVideo` —— 2/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
-- `GetVideoComponents` —— 2/11 个有
-- `LoadVideo` —— 2/11 个有
-- `MiniMaxH3ImageToVideo` —— 2/11 个有
-- `PathchSageAttentionKJ` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 2/11 个有
-- `ZNGB_AudioCrop` —— 2/11 个有
-- `CR Prompt Text` —— 1/11 个有
-- `PreviewAny` —— 1/11 个有
-- `PreviewAudio` —— 1/11 个有
-- `RH_LLMAPI_Pro_Node` —— 1/11 个有
+- `ResolutionSelector` —— 10/12 个有
+- `LoraLoaderBypassModelOnly` —— 7/12 个有
+- `MiniMaxH3DualClockSamplerT8` —— 7/12 个有
+- `LoadAudio` —— 6/12 个有
+- `BasicScheduler` —— 5/12 个有
+- `KSamplerSelect` —— 5/12 个有
+- `LoraLoaderModelOnly` —— 4/12 个有
+- `GetImageSize` —— 2/12 个有
+- `ImageScaleToTotalPixels` —— 2/12 个有
+- `Int` —— 2/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/12 个有
+- `ModelAttentionBackend` —— 2/12 个有
+- `TrimAudioDuration` —— 2/12 个有
+- `LTXVConcatAVLatent` —— 1/12 个有
+- `LTXVSeparateAVLatent` —— 1/12 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/12 个有
+- `solarL_SaveImagesToZip` —— 1/12 个有
 
 ## 典型参数
 

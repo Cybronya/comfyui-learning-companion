@@ -3,75 +3,67 @@ name: unknown_workflow_video_sampler_vae_42
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8268
-common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.9629
+common_nodes: [AudioCrop, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934577756585795586.json, 视频生成/图生视频/1934068571276533761.json, 视频生成/图生视频/1934656036613595137.json, 视频生成/图生视频/1943184080722944001.json, 视频生成/图生视频/1943311960978956289.json, 视频生成/图生视频/1934272711260856322.json, 视频生成/图生视频/1981344492861169666.json, 视频生成/图生视频/1943209482220691457.json, 视频生成/图生视频/1943184983563657218.json, 视频生成/图生视频/1934978229164023809.json]
+members: [视频生成/图生视频/InfiniteTalk-wan-双人-index tts_1958085210749415426.json, 视频生成/图生视频/InfiniteTalk-图片唱歌 单人数字人工作流_2086309319305424897.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957827307850530818.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json, 视频生成/图生视频/InfiniteTalk图片多人对口型工作流_2070503715320193025.json, 视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json, 视频生成/图生视频/InfiniteTalk数字人双人对口型_1998964761461186561.json, 视频生成/图生视频/Multitalk多人对话(爱屋复制版)_1940924821561884673.json, 视频生成/图生视频/infinite+wan2.1多人对口型_1960541577531842561.json, 视频生成/图生视频/multitalk-wan-双人-index tts_1941378778566389761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/1934577756585795586.json、视频生成/图生视频/1934068571276533761.json、视频生成/图生视频/1934656036613595137.json、视频生成/图生视频/1943184080722944001.json、视频生成/图生视频/1943311960978956289.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk-wan-双人-index tts_1958085210749415426.json、视频生成/图生视频/InfiniteTalk-图片唱歌 单人数字人工作流_2086309319305424897.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957827307850530818.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json、视频生成/图生视频/InfiniteTalk图片多人对口型工作流_2070503715320193025.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `ImageResizeKJ`
+- `AudioCrop`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 7/10 个有
-- `GIMMVFI_interpolate` —— 7/10 个有
-- `GetImageSizeAndCount` —— 7/10 个有
-- `PreviewImage` —— 7/10 个有
-- `WanVideoVACEEncode` —— 7/10 个有
-- `WanVideoVACEStartToEndFrame` —— 7/10 个有
-- `GetImageRangeFromBatch` —— 6/10 个有
-- `Int` —— 6/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/10 个有
-- `PrimitiveStringMultiline` —— 6/10 个有
-- `WanVideoExperimentalArgs` —— 6/10 个有
-- `WanVideoMagCache` —— 6/10 个有
-- `WanVideoLoraSelect` —— 5/10 个有
-- `WanVideoVACEModelSelect` —— 5/10 个有
-- `GetNode` —— 3/10 个有
-- `ImageBatchMulti` —— 3/10 个有
-- `ImageSmartSharpen+` —— 3/10 个有
-- `MaskBatchMulti` —— 3/10 个有
-- `SetNode` —— 3/10 个有
-- `WanVideoImageToVideoEncode` —— 3/10 个有
-- `CR Upscale Image` —— 2/10 个有
-- `WanVideoEasyCache` —— 2/10 个有
-- `WanVideoFreeInitArgs` —— 2/10 个有
-- `WanVideoSetRadialAttention` —— 2/10 个有
-- `FlashVSRNode` —— 1/10 个有
-- `Manual XY Entry Info` —— 1/10 个有
-- `PMRF` —— 1/10 个有
-- `RHHiddenNodes` —— 1/10 个有
-- `SeedVR2` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `Video_Upscale_With_Model` —— 1/10 个有
-- `WanVideoExtraModelSelect` —— 1/10 个有
-- `WanVideoTeaCache` —— 1/10 个有
-- `easy imageSize` —— 1/10 个有
+- `AudioSeparation` —— 9/10 个有
+- `CLIPVisionLoader` —— 9/10 个有
+- `WanVideoClipVisionEncode` —— 9/10 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `WanVideoLoraSelect` —— 8/10 个有
+- `ImageResizeKJv2` —— 6/10 个有
+- `SeparateMasks` —— 6/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
+- `PreviewAudio` —— 5/10 个有
+- `INTConstant` —— 3/10 个有
+- `MathExpression|pysssss` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `LayerMask: MaskPreview` —— 2/10 个有
+- `MaskPreview` —— 2/10 个有
+- `StringToInt` —— 2/10 个有
+- `WanVideoLoraSelectMulti` —— 2/10 个有
+- `ImageScaleToMegapixels` —— 1/10 个有
+- `IndexTTSRun` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `String Literal` —— 1/10 个有
+- `UpscaleModelLoader` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
+- `easy int` —— 1/10 个有
 
 ## 典型参数
 

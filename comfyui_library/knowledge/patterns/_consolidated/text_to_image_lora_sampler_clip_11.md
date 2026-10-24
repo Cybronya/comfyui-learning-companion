@@ -1,112 +1,78 @@
 ---
 name: text_to_image_lora_sampler_clip_11
 type: Text To Image
-frequency: 30
-level: strong
-coverage: 0.908467
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+frequency: 33
+level: weak
+coverage: 0.908515
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3低显存时间分块前馈分块双采参考生视频工具_2101417333859381250.json, 视频生成/图生视频/MiniMax H3双采参考 八步turbo分镜叙事视频生成_2098120649641381889.json, 视频生成/图生视频/MiniMax H3双采参考生视频Dasiwa v2版｜图生视频二次采样画质更扎实_2100438094607634434.json, 视频生成/图生视频/MiniMax H3双采参考生视频V2｜文戏武戏低显存适配流畅跑_2099134658318524417.json, 视频生成/图生视频/MiniMax H3双采参考生视频低显存版｜图生视频小显卡也能跑_2104566495551516674.json, 视频生成/图生视频/MiniMax H3双采参考生视频｜8步turbo分镜叙事_2095276866591608833.json, 视频生成/图生视频/MiniMax H3双采数字人口播 双Pass高清精修工作流_2098824235585200129.json, 视频生成/图生视频/MiniMax H3双采数字人口播｜双Pass高清精修视频生成_2097495644985446401.json, 视频生成/图生视频/MiniMax H3双采模式｜多图参考生视频画质更稳_2105138633752793090.json, 视频生成/图生视频/MiniMax H3多参双采参考长视频Pov第一视角 沉浸式视频生成_2105369174095785985.json, 视频生成/图生视频/MiniMax H3多参双采长视频｜POV第一视角沉浸感｜参考生视频出新招_2104794146677551106.json, 视频生成/图生视频/MiniMax H3多参双采长视频｜Pov第一视角沉浸体验_2105259470069784577.json, 视频生成/图生视频/MiniMax H3多图参考双采生视频｜HyperVae 2X高清图生视频_2111058302082830338.json, 视频生成/图生视频/MiniMax H3多图参考双采，HyperVae 2X高清图生视频_2111259409954459649.json, 视频生成/图生视频/MiniMax H3长视频POV第一视角｜多参考双采样图生视频｜人物特效角色设计_2104751091027103746.json, 视频生成/图生视频/MiniMax H3长视频直出双采多参工作流，角色一致性图生视频方案_2107184502861819906.json, 视频生成/图生视频/MiniMax H3长视频直出双采多参｜角色一致性运镜图生视频_2106998238581714946.json, 视频生成/图生视频/MiniMax_H3长视频直出双采多参工作流，角色一致性图生视频方案_2109461992850419714.json, 视频生成/图生视频/低显存也能跑 MiniMax H3双采参考生视频方案_2104650144351346689.json, 视频生成/图生视频/低显存友好方案｜时间分块前馈分块MiniMax H3双采参考生视频_2101157041715900417.json, 视频生成/图生视频/时间分块前馈分块降显存｜MiniMax H3双采参考生视频_2101187630208737281.json, 视频生成/图生视频/长视频Pov第一视角 MiniMax H3多参双采参考生视频_2105001173613899778.json, 视频生成/图生视频/长视频Pov第一视角 MiniMax H3多参双采参考生视频_2105078692375519233.json, 视频生成/图生视频/长视频Pov第一视角 MiniMax H3多参双采参考生视频_2105444809631686658.json, 视频生成/文生视频/30秒长视频文武双修均衡版高清 视频生成方案_2105053597879848962.json, 视频生成/文生视频/H3长视频优化版｜文生视频视频生视频图生视频全支持_2106981562544902146.json, 视频生成/文生视频/MiniMax H3文武双修均衡版 20秒长视频双采多参考图生视频HyperVae 2X高清_2105117710463098882.json, 视频生成/文生视频/MiniMax H3文武双修均衡版｜20秒长视频双采多参考｜HyperVae 2X高清_2104829141102190593.json, 视频生成/文生视频/多参双采30秒直出 MiniMax H3参考生视频最强均衡版_2104298425591353346.json, 视频生成/文生视频/长视频优化版H3工作流，文生视频视频生视频图生视频方案_2107243300871827458.json]
+members: [图片生成/文生图/Krea2-turbo超写实真人摄影｜文生图人像写真写实风格_2089715224533360641.json, 图片生成/文生图/Krea2_T2I_noLora_2089078237040308226.json, 图片生成/文生图/Krea2人像写真｜古装汉服肚兜美少女文生图_2101186021638627329.json, 图片生成/文生图/Krea2人像艺术写真_2097527135668891650.json, 图片生成/文生图/Krea2人物四视图工作流，人物角色角色设计文生图工具_2107516751167713281.json, 图片生成/文生图/Krea2写实文生图Raw+Turbo 纹身风格高写实输出_2098846918221848578.json, 图片生成/文生图/Krea2古装汉服肚兜美女文生图处理生成工作流_2101415318026539010.json, 图片生成/文生图/Krea2古装汉服肚兜美女文生图处理生成工作流_2101767889689858049.json, 图片生成/文生图/Krea2图图工作流｜人像写真高质量质感生成_2095245729957761026.json, 图片生成/文生图/Krea2图图文生图｜高质量图像生成工作流_2095973742240423938.json, 图片生成/文生图/Krea2基础文生图高清出图｜美少女写实风格_2090073140905988098.json, 图片生成/文生图/Krea2小昔涟角色cos｜游戏美少女文生图生成_2095931663795712001.json, 图片生成/文生图/Krea2影视柔光效果｜文生图MJ风格质感_2094546613636255746.json, 图片生成/文生图/Krea2性感长腿美女生成｜人像写真文生图_2095125889968336898.json, 图片生成/文生图/Krea2极品美女生成器，极致身材流量美图文生图_2110872696534949890.json, 图片生成/文生图/Krea2洛茜cos写真生成｜二次元角色cos人像文生图_2095089762595074050.json, 图片生成/文生图/Krea2甜妹人像写真｜长腿白丝美少女文生图_2097208174314090497.json, 图片生成/文生图/Krea2美女高清写真｜文生图人像美少女_2092063279031083010.json, 图片生成/文生图/Krea2长腿白丝甜妹文生图｜人像写真美少女生成_2097076921250177026.json, 图片生成/文生图/Krea2长腿白丝甜妹生成｜美少女人像写真文生图_2094559276558807041.json, 图片生成/文生图/Pornmaster krea2 t2i Raw加Turbo｜人像写真写实文生图_2099150332872978434.json, 图片生成/文生图/Z-Image Turbo特定风格人像大作文生图处理工具_2101751504242831361.json, 图片生成/文生图/Z-Image-Turbo写真｜一键蜂腰身材曲线自定义调整_2101548693785759746.json, 图片生成/文生图/krea2-turbo极简极速文生图｜小说配图专用 文生图秒出插画_2104056464099864578.json, 图片生成/文生图/丰盈美女人像写真生成｜文生图高质量出图工作流_2094542170748448770.json, 图片生成/文生图/云璃动漫角色cos｜Krea2美少女文生图生成_2095942825870446593.json, 图片生成/文生图/动漫角色cos制作｜Krea2星美少女文生图生成_2095934426793463809.json, 图片生成/文生图/小说配图极速直出 krea2 turbo极简文生图工作流_2104314139870060545.json, 图片生成/文生图/性感长腿美女写真｜Krea2文生图人像一键生成_2095088388851458050.json, 图片生成/文生图/游戏角色cos生成｜Krea2遐蝶皮肤美少女文生图_2095989394669924353.json, 图片生成/文生图/知更鸟cos一键出图｜Krea2 文生图美少女动漫角色_2096224926444384258.json, 图片生成/文生图/知更鸟动漫角色cos｜Krea2美少女文生图_2095937603731279873.json, 图片生成/文生图/美少女人像写真｜Krea2更多姿势动作文生图_2094001067771121666.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_11
 
-> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3低显存时间分块前馈分块双采参考生视频工具_2101417333859381250.json、视频生成/图生视频/MiniMax H3双采参考 八步turbo分镜叙事视频生成_2098120649641381889.json、视频生成/图生视频/MiniMax H3双采参考生视频Dasiwa v2版｜图生视频二次采样画质更扎实_2100438094607634434.json、视频生成/图生视频/MiniMax H3双采参考生视频V2｜文戏武戏低显存适配流畅跑_2099134658318524417.json、视频生成/图生视频/MiniMax H3双采参考生视频低显存版｜图生视频小显卡也能跑_2104566495551516674.json…）
+> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/文生图/Krea2-turbo超写实真人摄影｜文生图人像写真写实风格_2089715224533360641.json、图片生成/文生图/Krea2_T2I_noLora_2089078237040308226.json、图片生成/文生图/Krea2人像写真｜古装汉服肚兜美少女文生图_2101186021638627329.json、图片生成/文生图/Krea2人像艺术写真_2097527135668891650.json、图片生成/文生图/Krea2人物四视图工作流，人物角色角色设计文生图工具_2107516751167713281.json…）
 
 - **类型**：Text To Image
-- **样本数**：30
-- **可信度**：强结论
+- **样本数**：33
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 30 个 workflow 都包含：
-- `BasicGuider`
+全部 33 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 29/30 个有
-- `LoraLoaderBypassModelOnly` —— 28/30 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 25/30 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 25/30 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 25/30 个有
-- `PrimitiveFloat` —— 25/30 个有
-- `VHS_VideoCombine` —— 25/30 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 23/30 个有
-- `easy cleanGpuUsed` —— 23/30 个有
-- `Float` —— 21/30 个有
-- `easy anythingIndexSwitch` —— 21/30 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 19/30 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 19/30 个有
-- `CreateVideo` —— 18/30 个有
-- `RunningHub Deepcleaner` —— 18/30 个有
-- `SaveVideo` —— 18/30 个有
-- `SaveImage` —— 16/30 个有
-- `Astra` —— 13/30 个有
-- `JWFloat` —— 5/30 个有
-- `MiniMaxH3ChunkedTwoPassPlanT8Advanced` —— 5/30 个有
-- `MiniMaxH3ChunkedTwoPassUpscaleT8Advanced` —— 5/30 个有
-- `PreviewAny` —— 5/30 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 4/30 个有
-- `MiniMaxH3OutputTrimT8` —— 4/30 个有
-- `ConcatTextOfUtils` —— 3/30 个有
-- `GetNode` —— 3/30 个有
-- `SetNode` —— 3/30 个有
-- `LoadAudio` —— 2/30 个有
-- `VHS_LoadAudioUpload` —— 2/30 个有
-- `VHS_LoadVideo` —— 2/30 个有
-- `EmptyImage` —— 1/30 个有
-- `PreviewImage` —— 1/30 个有
+- `JjkText` —— 31/33 个有
+- `solarL_SaveImagesToZip` —— 31/33 个有
+- `孤海注释` —— 31/33 个有
+- `ResolutionSelector` —— 22/33 个有
+- `CompressImages` —— 21/33 个有
+- `ModelSamplingAuraFlow` —— 21/33 个有
+- `ConditioningZeroOut` —— 10/33 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/33 个有
+- `Int` —— 3/33 个有
+- `KSamplerAdvanced` —— 2/33 个有
+- `Seed (rgthree)` —— 2/33 个有
+- `ConditioningKrea2Rebalance` —— 1/33 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/33 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 30 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 30 | 100% |
-| 采样算法 | er_sde | - | 30 | 100% |
-| 调度器 | beta | - | 30 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 30 | 100% |
-| 宽度 | 80 | 80 - 80 | 30 | 100% |
-| 高度 | 80 | 80 - 80 | 30 | 100% |
+| 采样步数 | 4 | 4 - 8 | 33 | 78% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 33 | 81% |
+| 采样算法 | er_sde | - | 33 | 100% |
+| 调度器 | beta | - | 33 | 94% |
+| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
+| 宽度 | 80 | 80 - 1088 | 33 | 0% |
+| 高度 | 80 | 80 - 1920 | 33 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 31/30 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 59/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，30 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，30 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，30 个样本，一致性 100%
-- 调度器 最常用 beta，30 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，30 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，30 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，30 个样本，取值集中（一致性 100%）
-- 高发问题（31/30 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，33 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，33 个样本，取值集中（一致性 81%）
+- 采样算法 最常用 er_sde，33 个样本，一致性 100%
+- 调度器 最常用 beta，33 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 1088，33 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1920，33 个样本，取值分散，一致性仅 0%
+- 高发问题（59/33 个样本）：Steps较低可能导致细节不足

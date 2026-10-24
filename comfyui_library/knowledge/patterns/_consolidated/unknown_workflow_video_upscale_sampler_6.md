@@ -7,13 +7,13 @@ coverage: 0.979
 common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text Concatenate, CR Text Replace, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, Get resolution [Crystools], ImageResizeKJ, ImageUpscaleWithModel, Int, LayerUtility: BooleanOperatorV2, LayerUtility: If , LayerUtility: PurgeVRAM, Load Image Batch, LoadImage, Pick From Batch (mtb), RHHiddenNodes, RH_Captioner, RH_Translator, SaveImage, StringConstantMultiline, UNETLoader, UnetLoaderGGUF, UpscaleModelLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoKsampler, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2054086996280266753.json, 视频生成/图生视频/2058728819015643137.json, 视频生成/图生视频/1905275199976034306.json, 视频生成/图生视频/1922526577484075009.json]
+members: [视频生成/图生视频/丝滑快速-图生视频--视频生成神器WAN2.1480P_2054086996280266753.json, 视频生成/图生视频/丝滑快速-图生视频--视频生成神器WAN2.1480P_2058728819015643137.json, 视频生成/图生视频/视频生成神器WAN2.1480P满配版大概10-15分钟出视频，出视频质量高丝滑稳定可空性比较不错_1905275199976034306.json, 视频生成/图生视频/视频生成神器WAN2.1480P满配版大概10-15分钟出视频，出视频质量高丝滑稳定可空性比较不错_1922526577484075009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2054086996280266753.json、视频生成/图生视频/2058728819015643137.json、视频生成/图生视频/1905275199976034306.json、视频生成/图生视频/1922526577484075009.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/丝滑快速-图生视频--视频生成神器WAN2.1480P_2054086996280266753.json、视频生成/图生视频/丝滑快速-图生视频--视频生成神器WAN2.1480P_2058728819015643137.json、视频生成/图生视频/视频生成神器WAN2.1480P满配版大概10-15分钟出视频，出视频质量高丝滑稳定可空性比较不错_1905275199976034306.json、视频生成/图生视频/视频生成神器WAN2.1480P满配版大概10-15分钟出视频，出视频质量高丝滑稳定可空性比较不错_1922526577484075009.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4

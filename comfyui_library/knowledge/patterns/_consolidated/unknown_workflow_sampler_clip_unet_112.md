@@ -1,54 +1,56 @@
 ---
 name: unknown_workflow_sampler_clip_unet_112
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.933333
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 10
+level: moderate
+coverage: 0.9938
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
-missing: [CR Multiline Text, easy seed, CR Prompt List]
-members: [图片生成/文生图/1950943932404400129.json, 图片生成/文生图/1950966820087988225.json, 图片生成/文生图/1951056396223754242.json, 图片生成/文生图/1951072076297908225.json, 图片生成/文生图/1951100464836321282.json, 图片生成/文生图/1951122744584904705.json]
+missing: []
+members: [图片生成/文生图/Flux Klein 9b FP8 文生图 极简工作流_2015298868837093378.json, 图片生成/文生图/Flux.2 Klein 9B_fp16文生图_2066061172897574913.json, 图片生成/文生图/Flux.2 Klein 9B二次元CG动漫_2025780362521088001.json, 图片生成/文生图/Flux.2 Klein 9B无限制文生图_2022518673075871745.json, 图片生成/文生图/Flux.2 Klein 9B满血版文生图_2066862519515435010.json, 图片生成/文生图/Flux.2+Klein+9B无限制文生图_2028848965118070785.json, 图片生成/文生图/Flux.2_Klein_9B文生图_2069068665672265729.json, 图片生成/文生图/Flux2文生图_1995379549791825922.json, 图片生成/文生图/Flux2文生图呀_2068421815818612737.json, 视频生成/文生视频/Flux.2 Klein 9B文生图_2066059765985406977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_112
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1950943932404400129.json、图片生成/文生图/1950966820087988225.json、图片生成/文生图/1951056396223754242.json、图片生成/文生图/1951072076297908225.json、图片生成/文生图/1951100464836321282.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Flux Klein 9b FP8 文生图 极简工作流_2015298868837093378.json、图片生成/文生图/Flux.2 Klein 9B_fp16文生图_2066061172897574913.json、图片生成/文生图/Flux.2 Klein 9B二次元CG动漫_2025780362521088001.json、图片生成/文生图/Flux.2 Klein 9B无限制文生图_2022518673075871745.json、图片生成/文生图/Flux.2 Klein 9B满血版文生图_2066862519515435010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 2/6 个有
-- `CFGZeroStarAndInit` —— 1/6 个有
-- `CR Multiline Text` —— 1/6 个有
-- `DifferentialDiffusion` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `FluxGuidance` —— 9/10 个有
+- `CompressImages` —— 7/10 个有
+- `Int Literal` —— 7/10 个有
+- `CFGGuider` —— 1/10 个有
+- `DuckQREncodeNode` —— 1/10 个有
+- `EasyCache` —— 1/10 个有
+- `LoraLoaderModelOnly` —— 1/10 个有
+- `ModelPatchTorchSettings` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
+- `WidthHeightPicker` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -56,9 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Multiline Text、easy seed、CR Prompt List
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

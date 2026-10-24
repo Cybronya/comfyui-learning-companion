@@ -2,66 +2,71 @@
 name: unknown_workflow_video_sampler_clip_37
 type: Unknown Workflow
 frequency: 12
-level: moderate
-coverage: 0.939
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.843167
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/1899625950118629378.json, 视频生成/图生视频/1894528926553911297.json, 视频生成/图生视频/1941226969910689794.json, 视频生成/图生视频/1941218870319595522.json, 视频生成/图生视频/1901443764307509249.json, 视频生成/图生视频/1941220218918301698.json, 视频生成/图生视频/1941765347643125762.json, 视频生成/图生视频/1899678523555008513.json, 视频生成/图生视频/1899620141431439362.json, 视频生成/图生视频/1896568283456528386.json, 视频生成/图生视频/1941194683714584578.json, 视频生成/文生视频/1894584540348743681.json]
+members: [图片生成/图生图/首尾帧：wan2.2-rapid-mega-aio-V3 工作流_1970185315388452866.json, 图片生成/文生图/文生视频-AIO-MegaV7 (2)_2051834619032555521.json, 图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json, 视频生成/图生视频/wan2.2图生视频：wan2.2-rapid-mega-aio V10最新工作流_1970170134423871490.json, 视频生成/图生视频/图生视频-AIO-MegaV7_1968180543949012994.json, 视频生成/图生视频/图生视频-AIO-Mega【V3】_1970828010674888705.json, 视频生成/文生视频/【极速生成】wan2.2 rapid首尾帧视频动画生成【AIO Mega版】_1969276766730809345.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046504485811396609.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046752274625597441.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流_2046762436140736513.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2044790035236528130.json, 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2048651987276800002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_37
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/1899625950118629378.json、视频生成/图生视频/1894528926553911297.json、视频生成/图生视频/1941226969910689794.json、视频生成/图生视频/1941218870319595522.json、视频生成/图生视频/1901443764307509249.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/首尾帧：wan2.2-rapid-mega-aio-V3 工作流_1970185315388452866.json、图片生成/文生图/文生视频-AIO-MegaV7 (2)_2051834619032555521.json、图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json、视频生成/图生视频/wan2.2图生视频：wan2.2-rapid-mega-aio V10最新工作流_1970170134423871490.json、视频生成/图生视频/图生视频-AIO-MegaV7_1968180543949012994.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `ModelSamplingSD3`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 9/12 个有
-- `LayerUtility: PurgeVRAM` —— 8/12 个有
-- `Primitive integer [Crystools]` —— 7/12 个有
-- `Primitive string [Crystools]` —— 7/12 个有
-- `WanVideoExperimentalArgs` —— 7/12 个有
-- `easy cleanGpuUsed` —— 7/12 个有
-- `Note _O` —— 5/12 个有
-- `CR Text Concatenate` —— 4/12 个有
-- `RH_Captioner` —— 4/12 个有
-- `String Replace (mtb)` —— 4/12 个有
-- `CM_IntToFloat` —— 3/12 个有
-- `ImageScaleDownToSize` —— 3/12 个有
-- `WanVideoEmptyEmbeds` —— 2/12 个有
+- `INTConstant` —— 10/12 个有
+- `PrimitiveInt` —— 9/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
+- `CM_IntToFloat` —— 5/12 个有
+- `SimpleMath+` —— 5/12 个有
+- `easy cleanGpuUsed` —— 3/12 个有
+- `easy clearCacheAll` —— 3/12 个有
+- `Int` —— 2/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `LoadAudio` —— 1/12 个有
+- `MathExpression|pysssss` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | ipndm | - | 12 | 75% |
+| 调度器 | beta | - | 12 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 14/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 ipndm，12 个样本，一致性 75%
+- 调度器 最常用 beta，12 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（14/12 个样本）：Steps较低可能导致细节不足

@@ -1,38 +1,33 @@
 ---
 name: unknown_workflow_generic_353
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.557
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.928571
+common_nodes: [RH_YouchuanTextToImageV7, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/2093609074754674690.json, 图片生成/图生图/2093635908238139394.json, 图片生成/文生图/Image2  最强图像处理 全能图片 文生图 + 图像编辑 官方稳定版，多种参数可选_2047892224679092226.json, 图片生成/文生图/Image2 全能图2 全家桶 文生图 + 图生图 官方稳定版，多种参数可选_2047887102410493954.json]
+members: [图片生成/图生图/悠船图生图V7_2080582721025433602.json, 图片生成/文生图/Youchuan_TextToImageV7_v7.0_2034593971820826626.json, 图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2038873329037221890.json, 图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2043197697796083713.json, 图片生成/文生图/mj_min_03_cosmic_clock_wallpaper_v7_2038876805108604929.json, 图片生成/文生图/mj_min_04_neon_shake_ad_v7_2038878034027089921.json, 图片生成/文生图/悠船文生图-v7_2080614372568817665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_353
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/2093609074754674690.json、图片生成/图生图/2093635908238139394.json、图片生成/文生图/Image2  最强图像处理 全能图片 文生图 + 图像编辑 官方稳定版，多种参数可选_2047892224679092226.json、图片生成/文生图/Image2 全能图2 全家桶 文生图 + 图生图 官方稳定版，多种参数可选_2047887102410493954.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/悠船图生图V7_2080582721025433602.json、图片生成/文生图/Youchuan_TextToImageV7_v7.0_2034593971820826626.json、图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2038873329037221890.json、图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2043197697796083713.json、图片生成/文生图/mj_min_03_cosmic_clock_wallpaper_v7_2038876805108604929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `PreviewImage`
+全部 7 个 workflow 都包含：
+- `RH_YouchuanTextToImageV7`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 3/4 个有
-- `JjkText` —— 2/4 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 2/4 个有
-- `RH_RhartImageG2ImageToImage` —— 1/4 个有
+- `LoadImage` —— 1/7 个有
 
 ## 典型参数
 

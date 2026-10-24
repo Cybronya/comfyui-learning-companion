@@ -1,80 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_375
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.924
-common_nodes: [AILab_QwenVL, AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LayerUtility: ImageScaleByAspectRatio, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveInt, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.9018
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2 CN控制图生图工作流，文生图图生图控制处理工具_2107990625491709953.json, 图片生成/文生图/krea2-cn控制图生图_2105949894426058753.json]
+members: [图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json, 图片生成/文生图/全能图片V2_2087481707606929409.json, 图片生成/文生图/全自动电商出图工作流，文生图电商产品图像处理工具_2107249551341080578.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_375
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea2 CN控制图生图工作流，文生图图生图控制处理工具_2107990625491709953.json、图片生成/文生图/krea2-cn控制图生图_2105949894426058753.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json、图片生成/文生图/全能图片V2_2087481707606929409.json、图片生成/文生图/全自动电商出图工作流，文生图电商产品图像处理工具_2107249551341080578.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `AIO_Preprocessor`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
-- `LayerUtility: ImageScaleByAspectRatio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/2 个有
-- `solarL_SaveImagesToZip` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `Text` —— 4/5 个有
+- `孤海注释` —— 4/5 个有
+- `Float` —— 3/5 个有
+- `RH_RhartImageG2TextToImage` —— 3/5 个有
+- `RTXVideoSuperResolution` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `AspectRatioSelect` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 808 | - | 2 | 10% |
-| 高度 | 472 | - | 2 | 17% |
-| 采样步数 | 7 | - | 2 | 57% |
-| Prompt 约束强度(CFG) | 2.75 | - | 2 | 36% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 808，样本不足，未给区间，2 个样本，取值分散，一致性仅 10%
-- 高度 中位数 472，样本不足，未给区间，2 个样本，取值分散，一致性仅 17%
-- 采样步数 中位数 7，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 2.75，样本不足，未给区间，2 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

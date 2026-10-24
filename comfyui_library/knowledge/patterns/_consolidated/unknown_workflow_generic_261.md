@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_261
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.4994
-common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveVideo, Text Concatenate]
+coverage: 0.97225
+common_nodes: [GeminiImage2Node, LoadImage, SaveImage]
 problems: []
-missing: [Text Concatenate, CR Prompt Text]
-members: [图片生成/文生图/1973716843041042434.json, 图片生成/文生图/最新全能视频S文生视频（史上最便宜）_2067317730839187458.json, 视频生成/图生视频/1973577884017233922.json, 视频生成/文生视频/1973500244770033666.json, 视频生成/文生视频/1973574689153003522.json]
+missing: []
+members: [comfyui-workflow-templates-json/templates-assemble_dieline.json, comfyui-workflow-templates-json/templates-character_sheet.json, comfyui-workflow-templates-json/templates-color_illustration.json, comfyui-workflow-templates-json/templates-subject_holding_product.app.json, comfyui-workflow-templates-json/templates-subject_product_swap.app.json, comfyui-workflow-templates-json/utility_nanobanana_pro_ai_image_fix.json, comfyui-workflow-templates-json/utility_nanobanana_pro_illustration_upscale.json, comfyui-workflow-templates-json/utility_nanobanana_pro_product_upscale.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_261
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1973716843041042434.json、图片生成/文生图/最新全能视频S文生视频（史上最便宜）_2067317730839187458.json、视频生成/图生视频/1973577884017233922.json、视频生成/文生视频/1973500244770033666.json、视频生成/文生视频/1973574689153003522.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/templates-assemble_dieline.json、comfyui-workflow-templates-json/templates-character_sheet.json、comfyui-workflow-templates-json/templates-color_illustration.json、comfyui-workflow-templates-json/templates-subject_holding_product.app.json、comfyui-workflow-templates-json/templates-subject_product_swap.app.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_Sora2_T2V`
-- `SaveVideo`
-- `Text Concatenate`
+全部 8 个 workflow 都包含：
+- `GeminiImage2Node`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/5 个有
-- `ImpactSwitch` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `ShowText` —— 1/5 个有
+- `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` —— 2/8 个有
+- `ImageStitch` —— 1/8 个有
 
 ## 典型参数
 
@@ -44,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Text Concatenate、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

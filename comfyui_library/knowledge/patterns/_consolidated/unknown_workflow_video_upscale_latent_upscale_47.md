@@ -7,13 +7,13 @@ coverage: 0.492625
 common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2059165088854138882.json, 视频生成/图生视频/2055514596210946049.json, 视频生成/图生视频/2055556105299873793.json, 视频生成/图生视频/2050871854566518786.json, 视频生成/图生视频/2036654957595725826.json, 视频生成/图生视频/LTX-2一键稳定生成数字人制作表情口型同步视频对口型对嘴型音频图片生成数字人视频_2014350317235736578.json, 视频生成/图生视频/2013887364019527681.json, 视频生成/文生视频/Ltx-2蒸馏对口型_2018224320958439425.json]
+members: [视频生成/图生视频/LTX 2.3双人分镜视频生成_2059165088854138882.json, 视频生成/图生视频/LTX-2.3-图生视频_2055514596210946049.json, 视频生成/图生视频/LTX-2.3-首尾帧_2055556105299873793.json, 视频生成/图生视频/LTX-2.3_-_I2V_Short-Story_PromptRelay四图视频制作_2050871854566518786.json, 视频生成/图生视频/LTX-2.3首尾帧+语音数字人_2036654957595725826.json, 视频生成/图生视频/LTX-2一键稳定生成数字人制作表情口型同步视频对口型对嘴型音频图片生成数字人视频_2014350317235736578.json, 视频生成/图生视频/LTX-2图生视频：上传歌曲MP3，一键生成MV音乐视频！_2013887364019527681.json, 视频生成/文生视频/Ltx-2蒸馏对口型_2018224320958439425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_47
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/2059165088854138882.json、视频生成/图生视频/2055514596210946049.json、视频生成/图生视频/2055556105299873793.json、视频生成/图生视频/2050871854566518786.json、视频生成/图生视频/2036654957595725826.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3双人分镜视频生成_2059165088854138882.json、视频生成/图生视频/LTX-2.3-图生视频_2055514596210946049.json、视频生成/图生视频/LTX-2.3-首尾帧_2055556105299873793.json、视频生成/图生视频/LTX-2.3_-_I2V_Short-Story_PromptRelay四图视频制作_2050871854566518786.json、视频生成/图生视频/LTX-2.3首尾帧+语音数字人_2036654957595725826.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

@@ -1,36 +1,43 @@
 ---
 name: unknown_workflow_generic_932
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6335
-common_nodes: [AudioOmni_LoadModel, AudioOmni_TextToAudio, CR Prompt Text, Float, SaveAudioMP3]
+frequency: 3
+level: moderate
+coverage: 0.557
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, easy showAnything]
 problems: []
-missing: [AudioOmni_LoadModel, AudioOmni_TextToAudio]
-members: [音频生成/音频生成/Audio-Omni文生音效_2044266207385231361.json, 音频生成/音频生成/Audio-Omni文生音效_2044352972989140994.json]
+missing: []
+members: [图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json, 图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json, 图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_932
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Audio-Omni文生音效_2044266207385231361.json、音频生成/音频生成/Audio-Omni文生音效_2044352972989140994.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json、图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json、图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioOmni_LoadModel`
-- `AudioOmni_TextToAudio`
-- `CR Prompt Text`
-- `Float`
-- `SaveAudioMP3`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `Text Concatenate` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,5 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：AudioOmni_LoadModel、AudioOmni_TextToAudio
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

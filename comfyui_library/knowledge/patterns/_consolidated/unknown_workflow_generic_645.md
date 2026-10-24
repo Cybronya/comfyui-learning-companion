@@ -1,35 +1,44 @@
 ---
 name: unknown_workflow_generic_645
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.889
-common_nodes: [Fast Groups Muter (rgthree), IndexTTSNode, IndexTTSRun, LoadAudio, PreviewAudio, SaveAudio, Text]
+coverage: 0.9915
+common_nodes: [GetExpression2, GetFaceLandmarks, GetHeadPose, HMFaceToolkitsLoader, HMImagePipelineLoader, HMPipelineImage, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/TTS-声音模仿，音色模仿，语音生成。（快速版+稳定版）_1958135163765084162.json, 音频生成/音频生成/情感语音克隆tts_2037712113489158146.json, 音频生成/音频生成/朱老师-情感语音克隆tts_2058102409112674306.json]
+members: [图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json, 图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json, 图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json, 图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_645
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/TTS-声音模仿，音色模仿，语音生成。（快速版+稳定版）_1958135163765084162.json、音频生成/音频生成/情感语音克隆tts_2037712113489158146.json、音频生成/音频生成/朱老师-情感语音克隆tts_2058102409112674306.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json、图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json、图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json、图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `IndexTTSNode`
-- `IndexTTSRun`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `Text`
+全部 4 个 workflow 都包含：
+- `GetExpression2`
+- `GetFaceLandmarks`
+- `GetHeadPose`
+- `HMFaceToolkitsLoader`
+- `HMImagePipelineLoader`
+- `HMPipelineImage`
+- `LoadImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageConcanate` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `ExpressionEditor` —— 1/4 个有
+- `Get Image Size` —— 1/4 个有
+- `JWImageResize` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

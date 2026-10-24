@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_generic_898
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7225
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.966
+common_nodes: [LayerFilter: GaussianBlur, LayerUtility: ImageAutoCrop, LoadImage, PreviewImage, RHLLMChatNode, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Image2Image, RH_RhartImageG2ImageToImage, RelayLLMText, SaveImage, ShowText|pysssss, StringMergeNode, Text, 图像缩放V2_孤海]
 problems: []
 missing: []
-members: [视频生成/文生视频/Relay 剧情 + 双人 LoRA 格式提示词导演_2048717560673214466.json, 音频生成/音频生成/山东职业学生作业1_2073979029476171777.json]
+members: [图片生成/图生图/co和秋水换脸新1_2099870244985720833.json, 图片生成/图生图/co和秋水换脸新_2099668031206154242.json, 图片生成/图生图/换脸_2093619731990405121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_898
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Relay 剧情 + 双人 LoRA 格式提示词导演_2048717560673214466.json、音频生成/音频生成/山东职业学生作业1_2073979029476171777.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/co和秋水换脸新1_2099870244985720833.json、图片生成/图生图/co和秋水换脸新_2099668031206154242.json、图片生成/图生图/换脸_2093619731990405121.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `LayerFilter: GaussianBlur`
+- `LayerUtility: ImageAutoCrop`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `RHLLMChatNode`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageG2ImageToImage`
+- `RelayLLMText`
 - `SaveImage`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `easy string` —— 1/2 个有
+- `ShowText|pysssss`
+- `StringMergeNode`
+- `Text`
+- `图像缩放V2_孤海`
 
 ## 典型参数
 
@@ -42,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

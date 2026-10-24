@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_279
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.8106
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+coverage: 1
+common_nodes: [CR Text, CR Text Replace, GODMT_ListGetByIndex, LoadImage, ProcessString, RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/文生图/视频封面生成器-全新全能图片 2模型 【每张图0.08元】_2027724807621582850.json, 图片生成/文生图/视频封面生成器（大模型全能3pro+全能图片pro）_1997654148789284866.json, 数字人/数字人/文生_参考图生封面图详情页_2102205736095936513.json, 数字人/数字人/短剧人物场景设定 9宫格分镜图  G-Image_2096757619837984770.json, 视频生成/图生视频/2038856574608871426.json]
+members: [图片生成/图生图/一键生成10张写真图_姿势分组_194_2042799843432730625.json, 图片生成/图生图/一键生成10张写真图_姿势分组_195_2042799872641863681.json, 图片生成/图生图/一键生成10张写真图_姿势分组_196_2042799936030380033.json, 图片生成/图生图/一键生成10张写真图_姿势分组_197_2043208791503671298.json, 图片生成/图生图/一键生成10张写真图_姿势分组_198_2043208911557234690.json, 图片生成/图生图/一键生成10张写真图_姿势分组_199_2043209073956495361.json, 图片生成/图生图/一键生成10张写真图_姿势分组_200_2043645921396789249.json, 图片生成/图生图/一键生成10张🍠写真图_2029365361933553665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_279
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/视频封面生成器-全新全能图片 2模型 【每张图0.08元】_2027724807621582850.json、图片生成/文生图/视频封面生成器（大模型全能3pro+全能图片pro）_1997654148789284866.json、数字人/数字人/文生_参考图生封面图详情页_2102205736095936513.json、数字人/数字人/短剧人物场景设定 9宫格分镜图  G-Image_2096757619837984770.json、视频生成/图生视频/2038856574608871426.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一键生成10张写真图_姿势分组_194_2042799843432730625.json、图片生成/图生图/一键生成10张写真图_姿势分组_195_2042799872641863681.json、图片生成/图生图/一键生成10张写真图_姿势分组_196_2042799936030380033.json、图片生成/图生图/一键生成10张写真图_姿势分组_197_2043208791503671298.json、图片生成/图生图/一键生成10张写真图_姿势分组_198_2043208911557234690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CR Text`
+- `CR Text Replace`
+- `GODMT_ListGetByIndex`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `ProcessString`
+- `RH_Nano_Banana2_Gemini31Flash_Batch`
 - `SaveImage`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `JoinStringMulti` —— 3/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
-- `easy anythingIndexSwitch` —— 2/5 个有
-- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `easy promptLine`
 
 ## 典型参数
 

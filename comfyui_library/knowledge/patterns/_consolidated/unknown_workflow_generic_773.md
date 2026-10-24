@@ -1,34 +1,34 @@
 ---
 name: unknown_workflow_generic_773
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8635
-common_nodes: [RH_Midjourney, RH_Prompter, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.8125
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/文生图/MJ基础文生图工作流_2070334579231248385.json, 图片生成/文生图/生图+二次元神器，每日免费5次_2097998202694881282.json]
+members: [视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json, 音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json, 音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json, 音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_773
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/MJ基础文生图工作流_2070334579231248385.json、图片生成/文生图/生图+二次元神器，每日免费5次_2097998202694881282.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json、音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json、音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json、音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `RH_Midjourney`
-- `RH_Prompter`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
+- `CR Text` —— 2/4 个有
 
 ## 典型参数
 
@@ -40,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

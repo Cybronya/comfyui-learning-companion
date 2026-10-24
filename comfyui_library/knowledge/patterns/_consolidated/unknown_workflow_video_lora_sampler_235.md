@@ -2,67 +2,79 @@
 name: unknown_workflow_video_lora_sampler_235
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.903
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, EmptyConditioning, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJ, KSampler, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed]
+level: moderate
+coverage: 0.869
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
-missing: [easy cleanGpuUsed]
-members: [图片生成/文生图/1929089171099435010.json, 图片生成/文生图/1929150896092123137.json, 图片生成/文生图/1929433520668839938.json, 图片生成/文生图/1929452145547055105.json, 视频生成/图生视频/1929089171099435010.json, 视频生成/图生视频/1929150896092123137.json, 视频生成/图生视频/1929433520668839938.json, 视频生成/图生视频/1929452145547055105.json]
+missing: []
+members: [数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json, 数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json, 数字人/数字人/Minimax H3 Selflift数字人_2104042672871796737.json, 数字人/数字人/Minimax H3 数字人_2109243580714938369.json, 数字人/数字人/Minimax H3 数字人唱歌MV_2104387863344410625.json, 数字人/数字人/Selflift数字人_2111026652217176065.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2101970168657309697.json, 视频生成/图生视频/AI音乐MV数字人工作流API_2102304757191888898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_235
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1929089171099435010.json、图片生成/文生图/1929150896092123137.json、图片生成/文生图/1929433520668839938.json、图片生成/文生图/1929452145547055105.json、视频生成/图生视频/1929089171099435010.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Minimax H3 Selflift 数字人_2101246144524406786.json、数字人/数字人/Minimax H3 Selflift数字人_2099969302521802753.json、数字人/数字人/Minimax H3 Selflift数字人_2104042672871796737.json、数字人/数字人/Minimax H3 数字人_2109243580714938369.json、数字人/数字人/Minimax H3 数字人唱歌MV_2104387863344410625.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `EmptyConditioning`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageResizeKJ`
-- `KSampler`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SaveImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `ComfyNumberConvert` —— 7/8 个有
+- `PreviewAny` —— 7/8 个有
+- `SoundFlow_GetLength` —— 7/8 个有
+- `TrimAudioDuration` —— 6/8 个有
+- `ModelPreviewOverrideKJ` —— 5/8 个有
+- `QwenH3PromptLocal` —— 2/8 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Float` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/8 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/8 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `PreviewAudio` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy positive` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | deis | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,9 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 deis，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：easy cleanGpuUsed
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

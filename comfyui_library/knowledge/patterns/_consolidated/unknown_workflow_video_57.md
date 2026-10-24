@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [NanFengH3MultiReferenceGeneratorV10, VHS_VideoCombine]
+common_nodes: [JWInteger, LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095178452163973121.json, 视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095381447136858113.json, 视频生成/文生视频/minimaxH3 电影&MV一键工作流_2099689768643809282.json]
+members: [视频生成/图生视频/FramePack首尾帧V1_1914146936495243265.json, 视频生成/图生视频/FramePack首尾帧效果目前最好的开源视频模型_1914282850546581505.json, 视频生成/图生视频/新版 FramePack首尾帧_1919358127622258690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_57
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095178452163973121.json、视频生成/图生视频/minimaxH3 电影&MV一键工作流_2095381447136858113.json、视频生成/文生视频/minimaxH3 电影&MV一键工作流_2099689768643809282.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack首尾帧V1_1914146936495243265.json、视频生成/图生视频/FramePack首尾帧效果目前最好的开源视频模型_1914282850546581505.json、视频生成/图生视频/新版 FramePack首尾帧_1919358127622258690.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,8 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `NanFengH3MultiReferenceGeneratorV10`
+- `JWInteger`
+- `LoadImage`
+- `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 

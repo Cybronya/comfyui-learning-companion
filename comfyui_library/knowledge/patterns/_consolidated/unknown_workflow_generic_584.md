@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_584
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.986
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
+coverage: 0.9142
+common_nodes: [LoadImage, RH_Hailuo_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/2007674265272852482.json, 视频生成/图生视频/1999014872937549825.json, 视频生成/图生视频/2008185843260858369.json]
+members: [视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json, 视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json, 视频生成/图生视频/海螺2.3+Hailuo2.3+MiniMax图生视频+动态表现力+风格化呈现和复杂动作更加流畅_2021400714517417986.json, 视频生成/图生视频/海螺2.3图生视频hailuo2.3_1987019541161119746.json, 视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_584
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/2007674265272852482.json、视频生成/图生视频/1999014872937549825.json、视频生成/图生视频/2008185843260858369.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json、视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json、视频生成/图生视频/海螺2.3+Hailuo2.3+MiniMax图生视频+动态表现力+风格化呈现和复杂动作更加流畅_2021400714517417986.json、视频生成/图生视频/海螺2.3图生视频hailuo2.3_1987019541161119746.json、视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_Sora2_I2V_Batch`
+- `RH_Hailuo_Image2Video`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

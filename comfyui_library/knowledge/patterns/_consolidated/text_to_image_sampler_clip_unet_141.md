@@ -1,88 +1,76 @@
 ---
 name: text_to_image_sampler_clip_unet_141
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.490333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Input Switch (4 way), ConditioningZeroOut, EmptyLatentImage, GetNode, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: PurgeVRAM V2, RH_LLMAPI_NODE, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, easy seed, easy showAnything]
+frequency: 4
+level: strong
+coverage: 0.87225
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImpactSwitch, Int, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/【112】Qwen image 2512文生图_2007067400860078082.json, 图片生成/文生图/【115】Flux2 Klein文生图，和Z-Image对比_2012439100267175938.json, 图片生成/文生图/【117】Z-image base加速 Mean（自定义）、Distill（自动提示词）_2022674191740313601.json]
+members: [图片生成/图生图/QWEN3反推提示词+Z-image生图_仿图_洗图_2002384500183166978.json, 图片生成/文生图/AI知识分享宝库丨Z-image文生图（优化出图比例）_1993874811084619777.json, 图片生成/文生图/Z-IMAGE 文生图_2020752365468520449.json, 图片生成/文生图/Z-image 基础文生图 V1（优化出图比例）_2003120005589999618.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_141
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/【112】Qwen image 2512文生图_2007067400860078082.json、图片生成/文生图/【115】Flux2 Klein文生图，和Z-Image对比_2012439100267175938.json、图片生成/文生图/【117】Z-image base加速 Mean（自定义）、Distill（自动提示词）_2022674191740313601.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/QWEN3反推提示词+Z-image生图_仿图_洗图_2002384500183166978.json、图片生成/文生图/AI知识分享宝库丨Z-image文生图（优化出图比例）_1993874811084619777.json、图片生成/文生图/Z-IMAGE 文生图_2020752365468520449.json、图片生成/文生图/Z-image 基础文生图 V1（优化出图比例）_2003120005589999618.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Input Switch (4 way)`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetNode`
+- `ImpactSwitch`
+- `Int`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: PurgeVRAM V2`
-- `RH_LLMAPI_NODE`
+- `LoadImage`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `Qwen3VL_Chat` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `CFGNorm` —— 1/3 个有
-- `EmptyFlux2LatentImage` —— 1/3 个有
-- `EmptySD3LatentImage` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: ColorImage` —— 1/3 个有
-- `MeanCache_ZImage` —— 1/3 个有
-- `QWEN3_Text` —— 1/3 个有
+- `ImpactInt` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `easy positive` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `Display Any (rgthree)` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | 512 - 896 | 3 | 76% |
-| 高度 | 1200 | 512 - 1200 | 3 | 67% |
-| 采样步数 | 12 | 8 - 25 | 3 | 52% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 3 | 53% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 10 | 8 - 10 | 4 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1920 | 1152 - 1920 | 4 | 81% |
+| 高度 | 1080 | 1080 - 1536 | 4 | 83% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 512 - 896，3 个样本
-- 高度 中位数 1200，观测区间 512 - 1200，3 个样本
-- 采样步数 中位数 12，观测区间 8 - 25，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 10，4 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1920，观测区间 1152 - 1920，4 个样本，取值集中（一致性 81%）
+- 高度 中位数 1080，观测区间 1080 - 1536，4 个样本，取值集中（一致性 83%）

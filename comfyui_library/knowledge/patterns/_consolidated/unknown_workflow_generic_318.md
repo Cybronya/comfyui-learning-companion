@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_318
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.94
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.810143
+common_nodes: [ChordLoadModel, ChordMaterialEstimation, ChordNormalToHeight, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json, 音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json, 音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json, 音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json, 音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json]
+members: [图片生成/图生图/Chord Ubisoft PBR materials by 😎 iiMate24_2064893481834868737.json, 图片生成/图生图/Chord_2078351825794854914.json, 图片生成/图生图/PBR材质生成 模型贴图生成 育碧开源CHORD模型 图生图_1998986890256732161.json, 图片生成/图生图/Ubisoft-PBR Material Generation_2018280854061064194.json, 图片生成/图生图/一键PBR贴图生成器_2046488451918340097.json, 图片生成/图生图/贴图_2018126072302276610.json, 图片生成/图生图/贴图_2102323852033478658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_318
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json、音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json、音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json、音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json、音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Chord Ubisoft PBR materials by 😎 iiMate24_2064893481834868737.json、图片生成/图生图/Chord_2078351825794854914.json、图片生成/图生图/PBR材质生成 模型贴图生成 育碧开源CHORD模型 图生图_1998986890256732161.json、图片生成/图生图/Ubisoft-PBR Material Generation_2018280854061064194.json、图片生成/图生图/一键PBR贴图生成器_2046488451918340097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+全部 7 个 workflow 都包含：
+- `ChordLoadModel`
+- `ChordMaterialEstimation`
+- `ChordNormalToHeight`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/7 个有
+- `EmptyImage` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_401
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.857
-common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub Univideo Generator(MultiID), RunningHub Univideo Loader, SaveVideo]
+coverage: 0.906
+common_nodes: [LayerUtility: TextBox, LoadImage, RH_RhartImageNProEdit, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/2013379219077734402.json, 视频生成/图生视频/2014244643860385794.json, 视频生成/图生视频/2014230079726948354.json, 视频生成/图生视频/2044236452975874050.json]
+members: [图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json, 图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json, 图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json, 图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json, 图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json, 图片生成/图生图/全能图片g-image2去脏去噪修复_2098791212693155841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_401
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2013379219077734402.json、视频生成/图生视频/2014244643860385794.json、视频生成/图生视频/2014230079726948354.json、视频生成/图生视频/2044236452975874050.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/G-image2 去脏去噪_2068227233256402946.json、图片生成/图生图/全能图片G-image2去脏去噪_2063873517468348418.json、图片生成/图生图/全能图片G-image2去脏去噪_2068170954781577218.json、图片生成/图生图/全能图片G-image2去脏去噪_2083228494317842434.json、图片生成/图生图/全能图片G-image2图像-去脏去噪工作流_2066846685774569474.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `LayerUtility: TextBox`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RunningHub Univideo Generator(MultiID)`
-- `RunningHub Univideo Loader`
-- `SaveVideo`
+- `RH_RhartImageNProEdit`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 4/6 个有
+- `ImageCompare` —— 3/6 个有
+- `孤海注释` —— 1/6 个有
 
 ## 典型参数
 

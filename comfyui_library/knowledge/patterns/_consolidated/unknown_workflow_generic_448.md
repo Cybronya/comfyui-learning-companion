@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_generic_448
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.97725
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.5
+common_nodes: [PrimitiveStringMultiline, SaveAudioAdvanced, YuE2Generate, YuE2Loader, YuE2SamplingConfig, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json, 音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json, 音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json, 音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json]
+members: [图片生成/文生图/YuE2-文生音乐-音乐生成_2100745018242850817.json, 图片生成/文生图/YuE2-文生音乐-音乐生成_2101454877619744770.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2100745326792634369.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2101455654618746882.json, 图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json, 音频生成/音频生成/YuE2-翻唱-音乐生成_2100065012445437953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_448
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json、音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json、音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json、音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/YuE2-文生音乐-音乐生成_2100745018242850817.json、图片生成/文生图/YuE2-文生音乐-音乐生成_2101454877619744770.json、图片生成/文生图/YuE2-翻唱-音乐生成_2100745326792634369.json、图片生成/文生图/YuE2-翻唱-音乐生成_2101455654618746882.json、图片生成/文生图/YuE2-翻唱-音乐生成_2102588803872550914.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+全部 6 个 workflow 都包含：
+- `PrimitiveStringMultiline`
+- `SaveAudioAdvanced`
+- `YuE2Generate`
+- `YuE2Loader`
+- `YuE2SamplingConfig`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/4 个有
-- `PreviewAudio` —— 1/4 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/4 个有
-- `easy indexTTSGenerateSimple` —— 1/4 个有
+- `EmptyImage` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `LoadAudio` —— 4/6 个有
+- `PreviewAny` —— 4/6 个有
+- `YuE2CoverTranscribe` —— 4/6 个有
 
 ## 典型参数
 

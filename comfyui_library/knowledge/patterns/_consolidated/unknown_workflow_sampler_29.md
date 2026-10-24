@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_sampler_29
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.822333
-common_nodes: [CR Prompt Text, JWInteger, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
+coverage: 0.9714
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler]
 problems: []
 missing: []
-members: [音频生成/音频生成/SongGeneration v2模型歌曲生成V2-高风格化_2030927306843230209.json, 音频生成/音频生成/SongGeneration v2模型歌曲生成（歌曲参考）V2-高风格化_2030928326071689217.json, 音频生成/音频生成/SongGeneration 高风格化_2031293641930579970.json]
+members: [视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json, 视频生成/图生视频/FlashTalk_Head数字人生成_2027574914521239554.json, 视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json, 视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json, 视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/SongGeneration v2模型歌曲生成V2-高风格化_2030927306843230209.json、音频生成/音频生成/SongGeneration v2模型歌曲生成（歌曲参考）V2-高风格化_2030928326071689217.json、音频生成/音频生成/SongGeneration 高风格化_2031293641930579970.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FlashTalk Head数字人_2073312517513900034.json、视频生成/图生视频/FlashTalk_Head数字人生成_2027574914521239554.json、视频生成/图生视频/Soul-FlashHead数字人_2027219359206219778.json、视频生成/图生视频/SoulX-FlashHead 图片数字人v1_2104804710682284033.json、视频生成/图生视频/数字人-高速-人物一致性-Soul-FlashHead高速数字人_2027641211296681986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `SaveAudio`
-- `SongGeneration_Loader`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
+全部 5 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 2/3 个有
+- `SaveVideo` —— 4/5 个有
+- `GetVideoComponents` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
 
 ## 典型参数
 

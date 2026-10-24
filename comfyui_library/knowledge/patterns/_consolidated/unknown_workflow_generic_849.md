@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_849
 type: Unknown Workflow
-frequency: 2
-level: weak
+frequency: 3
+level: moderate
 coverage: 1
-common_nodes: [LoadAudio, LoadVideo, SaveVideo]
+common_nodes: [CR Overlay Text, ImageConcanate, LoadImage, SaveImage, TY360Roundtrip]
 problems: []
 missing: []
-members: [视频生成/图生视频/2041456018126807041.json, 音频生成/音频生成/HeyGem口播数字人_1940729868739047425.json]
+members: [图片生成/图生图/360-全景照片四视图查看_2043940803164246018.json, 图片生成/图生图/360-全景照片四视图查看_2044253691791806465.json, 图片生成/图生图/360-全景照片四视图查看_2044706751290810369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_849
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2041456018126807041.json、音频生成/音频生成/HeyGem口播数字人_1940729868739047425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/360-全景照片四视图查看_2043940803164246018.json、图片生成/图生图/360-全景照片四视图查看_2044253691791806465.json、图片生成/图生图/360-全景照片四视图查看_2044706751290810369.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `LoadVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `CR Overlay Text`
+- `ImageConcanate`
+- `LoadImage`
+- `SaveImage`
+- `TY360Roundtrip`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan27VideoExtend` —— 1/2 个有
-- `RH_HeyGemNode` —— 1/2 个有
+- `CR Image Border` —— 2/3 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,74 +1,78 @@
 ---
 name: unknown_workflow_sampler_unet_vae_28
 type: Unknown Workflow
-frequency: 14
-level: weak
-coverage: 0.812714
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
+frequency: 17
+level: moderate
+coverage: 0.835471
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [comfyui-workflow-templates-json/audio_ace_step1_5_xl_base.json, comfyui-workflow-templates-json/audio_ace_step1_5_xl_sft.json, comfyui-workflow-templates-json/audio_ace_step1_5_xl_turbo.json, comfyui-workflow-templates-json/audio_ace_step_1_5_split.json, comfyui-workflow-templates-json/audio_ace_step_1_5_split_4b.json, 音频生成/音频生成/5-ACE-Step 1.5 XL（音乐生成）_2053473138737991682.json, 音频生成/音频生成/ACE STEP1.5 音乐生成_2019436598701596673.json, 音频生成/音频生成/ACE STEP1.5 音乐生成_2019710020950167553.json, 音频生成/音频生成/ACE Step v1.5 歌曲创作_2048677518881853442.json, 音频生成/音频生成/ACE-STEP 1.5XL turbo-文生音乐_2077369725973254146.json, 音频生成/音频生成/ACE-STEP1.5XL  Ai音乐歌曲创作工作流_2044312736724684802.json, 音频生成/音频生成/ACE-STEP1.5XL_2044231615613767681.json, 音频生成/音频生成/ACE-Step 1.5 XL Turbo音乐生成工作流_2044247312343502850.json, 音频生成/音频生成/ACE-Step 1.5 XL base音乐生成_2045373190855200769.json]
+members: [图片生成/图生图/Qwen image2.1 单图编辑_2102026609086787586.json, 图片生成/图生图/Qwen image2.1 多图编辑_2102039500712140802.json, 图片生成/图生图/Qwen+image+2.1图片编辑.九宫格_2101870838822817793.json, 图片生成/图生图/Qwen-Image-2.1 图像编辑_2102343043620888578.json, 图片生成/图生图/Qwen-Image-2.1 图像编辑_2105656720168148993.json, 图片生成/图生图/Qwen-image-2.1-单图编辑_2104464258397462529.json, 图片生成/图生图/Qwen2.1四视图生成器_2101145681154101249.json, 图片生成/图生图/Qwen_Image_2.1_图像编辑_2105116270961192961.json, 图片生成/图生图/Qwen_Image_2.1_图像编辑_2105493174088192002.json, 图片生成/图生图/Qwen_人物四视图生成_2111240527051051009.json, 图片生成/图生图/qwen image 2.1 图编辑_2102212148364668930.json, 图片生成/图生图/qwen-image 2.1图像编辑_2101777177351122945.json, 图片生成/图生图/qwen-image-2.1图像编辑_2101918037409615874.json, 图片生成/图生图/qwen-image2.1 一键图片自动透明分层_2109549307715211265.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2109541250159435778.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2112360202447187970.json, 图片生成/文生图/Qwen-Image-2.1-Turbo 7步 亚洲人像文生图_2112365438872154113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_28
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（comfyui-workflow-templates-json/audio_ace_step1_5_xl_base.json、comfyui-workflow-templates-json/audio_ace_step1_5_xl_sft.json、comfyui-workflow-templates-json/audio_ace_step1_5_xl_turbo.json、comfyui-workflow-templates-json/audio_ace_step_1_5_split.json、comfyui-workflow-templates-json/audio_ace_step_1_5_split_4b.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1 单图编辑_2102026609086787586.json、图片生成/图生图/Qwen image2.1 多图编辑_2102039500712140802.json、图片生成/图生图/Qwen+image+2.1图片编辑.九宫格_2101870838822817793.json、图片生成/图生图/Qwen-Image-2.1 图像编辑_2102343043620888578.json、图片生成/图生图/Qwen-Image-2.1 图像编辑_2105656720168148993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyAceStep1.5LatentAudio`
+全部 17 个 workflow 都包含：
+- `CLIPLoader`
+- `EmptyLatentImage`
 - `KSampler`
-- `ModelSamplingAuraFlow`
-- `TextEncodeAceStepAudio1.5`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeAudio`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 11/14 个有
-- `PrimitiveInt` —— 9/14 个有
-- `CR Text` —— 4/14 个有
-- `Float` —— 3/14 个有
-- `SaveAudioAdvanced` —— 3/14 个有
-- `Int` —— 2/14 个有
-- `LoadImage` —— 2/14 个有
-- `CR Prompt Text` —— 1/14 个有
-- `Label (rgthree)` —— 1/14 个有
-- `PrimitiveFloat` —— 1/14 个有
-- `easy seed` —— 1/14 个有
+- `ComfySwitchNode` —— 16/17 个有
+- `ResolutionSelector` —— 16/17 个有
+- `QwenImage21Cache` —— 15/17 个有
+- `LoadImage` —— 14/17 个有
+- `CR Prompt Text` —— 7/17 个有
+- `SaveImageAdvanced` —— 6/17 个有
+- `LoraLoaderModelOnly` —— 4/17 个有
+- `PrimitiveStringMultiline` —— 4/17 个有
+- `QwenPERewriteT8` —— 4/17 个有
+- `Color Grading JK` —— 3/17 个有
+- `RHLLMChatNode` —— 3/17 个有
+- `easy showAnything` —— 3/17 个有
+- `ShowText|pysssss` —— 2/17 个有
+- `ResizeLongestToNode` —— 1/17 个有
+- `easy promptLine` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 50 | 14 | 5% |
-| Prompt 约束强度(CFG) | 1 | 1 - 7 | 14 | 5% |
-| 采样算法 | euler | - | 14 | 100% |
-| 调度器 | simple | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 1024 | 1024 - 2048 | 17 | 78% |
+| 高度 | 1024 | 1024 - 2048 | 17 | 78% |
+| 采样步数 | 25 | 7 - 50 | 17 | 56% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 17 | 100% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 94% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| 发现KSampler但没有VAEDecode | 14/14 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
-| Steps较低可能导致细节不足 | 10/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 50，14 个样本，取值分散，一致性仅 5%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 7，14 个样本，取值分散，一致性仅 5%
-- 采样算法 最常用 euler，14 个样本，一致性 100%
-- 调度器 最常用 simple，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（14/14 个样本）：发现KSampler但没有VAEDecode
-- 高发问题（10/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 2048，17 个样本
+- 高度 中位数 1024，观测区间 1024 - 2048，17 个样本
+- 采样步数 中位数 25，观测区间 7 - 50，17 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）

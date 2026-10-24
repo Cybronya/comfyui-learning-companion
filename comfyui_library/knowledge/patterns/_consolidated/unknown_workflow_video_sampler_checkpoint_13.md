@@ -3,46 +3,43 @@ name: unknown_workflow_video_sampler_checkpoint_13
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.757
-common_nodes: [ImageOnlyCheckpointLoader, ImageResize+, LoadAudio, LoadImage, SONICSampler, SONICTLoader, SONIC_PreData, SimpleMath+, VHS_VideoCombine, easy float, easy seed]
+coverage: 0.9275
+common_nodes: [Audio Duration (mtb), AudioCombine, AudioCrop, AudioSeparation, ImageOnlyCheckpointLoader, ImageScaleDownToSize, LoadAudio, LoadImage, MathExpression|pysssss, Primitive string [Crystools], SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SeedVCRun, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1922851551227035649.json, 视频生成/文生视频/1933419602271449089.json]
+members: [视频生成/图生视频/数字人歌曲翻唱_2080560951681708034.json, 音频生成/音频生成/数字人歌曲翻唱_1932404847331438594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_checkpoint_13
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1922851551227035649.json、视频生成/文生视频/1933419602271449089.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/数字人歌曲翻唱_2080560951681708034.json、音频生成/音频生成/数字人歌曲翻唱_1932404847331438594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCombine`
+- `AudioCrop`
+- `AudioSeparation`
 - `ImageOnlyCheckpointLoader`
-- `ImageResize+`
+- `ImageScaleDownToSize`
 - `LoadAudio`
 - `LoadImage`
+- `MathExpression|pysssss`
+- `Primitive string [Crystools]`
 - `SONICSampler`
 - `SONICTLoader`
 - `SONIC_PreData`
-- `SimpleMath+`
+- `SaveAudio`
+- `SeedVCRun`
 - `VHS_VideoCombine`
-- `easy float`
-- `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `String Literal` —— 1/2 个有
+- `easy showAnything`
 
 ## 典型参数
 

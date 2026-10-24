@@ -1,31 +1,38 @@
 ---
 name: unknown_workflow_generic_896
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.75
-common_nodes: [SaveVideo, workflow>参数设置组, workflow>工作组]
+frequency: 3
+level: moderate
+coverage: 0.818
+common_nodes: [ConstrainImage|pysssss, GoohaiUniversalSlider, LoadImage, PreviewImage, RH_Captioner_Pro, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, easy showAnything, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 -文生视频-封装版-专业打斗_2089390108935020546.json, 视频生成/文生视频/MiniMax H3 -文生视频-封装版-驯龙骑士_2089375960251592706.json]
+members: [图片生成/图生图/Wash Image 洗图 指定模特姿势 动作迁移_2095332077041446913.json, 图片生成/图生图/洗图  2.0_2094804532176965634.json, 图片生成/图生图/洗图 2.0_2095326743526727681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_896
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 -文生视频-封装版-专业打斗_2089390108935020546.json、视频生成/文生视频/MiniMax H3 -文生视频-封装版-驯龙骑士_2089375960251592706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wash Image 洗图 指定模特姿势 动作迁移_2095332077041446913.json、图片生成/图生图/洗图  2.0_2094804532176965634.json、图片生成/图生图/洗图 2.0_2095326743526727681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `SaveVideo`
-- `workflow>参数设置组`
-- `workflow>工作组`
+全部 3 个 workflow 都包含：
+- `ConstrainImage|pysssss`
+- `GoohaiUniversalSlider`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Captioner_Pro`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `easy showAnything`
+- `忽略多组孤海`
 
 ## 典型参数
 
@@ -37,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

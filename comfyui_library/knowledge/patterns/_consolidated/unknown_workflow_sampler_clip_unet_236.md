@@ -1,68 +1,63 @@
 ---
 name: unknown_workflow_sampler_clip_unet_236
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8665
-common_nodes: [CLIPLoader, CLIPTextEncode, ClipLoaderGGUF, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 5
+level: strong
+coverage: 0.8734
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSamplerAdvanced, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageColorMatch]
 problems: []
 missing: []
-members: [图片生成/文生图/flux2 8步加速Lora出图_1993716048765583362.json, 图片生成/文生图/flux2_Klein_v2 文生图至四图参考图生图_2013238859747827714.json]
+members: [图片生成/图生图/F2Klein手部细节修复 局部重绘_高清放大_2064525984380051457.json, 图片生成/图生图/修手 细节修复 局部重绘 高清放大_2064141358033629185.json, 图片生成/图生图/修手_细节修复_局部重绘_高清放大_2064181510172925954.json, 图片生成/图生图/真人质感 模糊变清晰 蓝神版 Klein_2061023863017918465.json, 图片生成/图生图/高清修复  高清放大  模糊图片变清晰  图像清晰修复_2062450732946771969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_236
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux2 8步加速Lora出图_1993716048765583362.json、图片生成/文生图/flux2_Klein_v2 文生图至四图参考图生图_2013238859747827714.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/F2Klein手部细节修复 局部重绘_高清放大_2064525984380051457.json、图片生成/图生图/修手 细节修复 局部重绘 高清放大_2064141358033629185.json、图片生成/图生图/修手_细节修复_局部重绘_高清放大_2064181510172925954.json、图片生成/图生图/真人质感 模糊变清晰 蓝神版 Klein_2061023863017918465.json、图片生成/图生图/高清修复  高清放大  模糊图片变清晰  图像清晰修复_2062450732946771969.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：5
+- **可信度**：强结论
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ClipLoaderGGUF`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxGuidance`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `Image Comparer (rgthree)`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
 - `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `UnetLoaderGGUF`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 1/2 个有
-- `CFGGuider` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `LoaderGGUF` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VaeGGUF` —— 1/2 个有
+- `PreviewImage` —— 4/5 个有
+- `GrowMaskWithBlur` —— 3/5 个有
+- `ImpactInt` —— 3/5 个有
+- `LayerUtility: CropByMask V2` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `LayerUtility: ImageScaleRestore V2` —— 3/5 个有
+- `LayerUtility: RestoreCropBox` —— 3/5 个有
+- `Mask Fill Holes` —— 3/5 个有
+- `MaskPreview+` —— 3/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | randomize | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 5 | 100% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | sa_solver | - | 5 | 100% |
+| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 5 | 100% |
 
 ## 常见问题
 
@@ -70,4 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 sa_solver，5 个样本，一致性 100%
+- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，5 个样本，一致性 100%

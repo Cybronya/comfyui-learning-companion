@@ -3,66 +3,89 @@ name: unknown_workflow_video_sampler_clip_261
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.832
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, ModelSamplingSD3, PrimitiveStringMultiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.6975
+common_nodes: [Audio Duration (mtb), AudioCrop, CLIPTextEncode, CR Text, CR Text Concatenate, CR Text Replace, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, Float, ImageResizeKJv2, Int to String, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadAudio, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewAudio, PreviewImage, PromptRelayEncode, Qwen3ASRLoader, Qwen3ASRTranscribe, RHHiddenNodes, RH_Translator, SamplerCustom, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, SomethingToString, Split String, TTResolutionSelector, Text, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/文生视频/1949761106275426305.json, 视频生成/文生视频/1950680019137941506.json]
+members: [视频生成/图生视频/双人对唱，不变脸，高清晰，全自动_LTX2.3_2051860484126715906.json, 视频生成/图生视频/数字人虚拟歌手MV 全自动_半自动分段精准运镜+动作控制LTX2.3_2050900841577623553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_261
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/1949761106275426305.json、视频生成/文生视频/1950680019137941506.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/双人对唱，不变脸，高清晰，全自动_LTX2.3_2051860484126715906.json、视频生成/图生视频/数字人虚拟歌手MV 全自动_半自动分段精准运镜+动作控制LTX2.3_2050900841577623553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
+- `Audio Duration (mtb)`
+- `AudioCrop`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSampler`
-- `ModelSamplingSD3`
-- `PrimitiveStringMultiline`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `ImageResizeKJv2`
+- `Int to String`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
+- `PreviewAudio`
+- `PreviewImage`
+- `PromptRelayEncode`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `RHHiddenNodes`
+- `RH_Translator`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `ShowAnything|Mie`
+- `SolidMask`
+- `SomethingToString`
+- `Split String`
+- `TTResolutionSelector`
+- `Text`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Integer` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
+- `GuHaiAutoImageSplit` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `ManualSigmas` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `llama_cpp_instruct_adv` —— 1/2 个有
+- `llama_cpp_model_loader` —— 1/2 个有
+- `llama_cpp_parameters` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | sa_solver | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

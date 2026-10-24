@@ -7,13 +7,13 @@ coverage: 0.888
 common_nodes: [AddLabel, BasicGuider, BasicScheduler, CLIPTextEncode, CLIPTextEncodeFlux, CLIPVisionEncode, CLIPVisionLoader, CR Image Grid Panel, ConditioningZeroOut, DF_Image_scale_to_side, DifferentialDiffusion, DownloadAndLoadGIMMVFIModel, DualCLIPLoader, EmptyLatentImage, ExpressionEditor, Fast Groups Bypasser (rgthree), FluxGuidance, GIMMVFI_interpolate, Image Blank, Image Comparer (rgthree), ImageConcanate, ImageCrop+, ImageListToBatch+, ImagePadForOutpaint, ImageResize+, ImageResizeKJ, ImageScale, ImageToMask, ImpactInt, InpaintModelConditioning, InspyrenetRembg, Int, JoinStrings, Joy_caption_two, Joy_caption_two_load, KSampler, KSamplerSelect, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: RestoreCropBox, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, LoraLoader, LoraLoaderModelOnly, LyingSigmaSampler, MaskPreview+, MaskToImage, MathExpression|pysssss, ModelSamplingFlux, PreviewImage, RandomNoise, ReroutePrimitive|pysssss, ResizeMask, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, SomethingToString, StyleModelApply, StyleModelLoader, UNETLoader, UltimateSDUpscaleCustomSample, UpscaleModelLoader, VAEDecode, VAEEncodeForInpaint, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy float, easy forLoopEnd, easy forLoopStart, easy imageSize, easy outputToList]
 problems: []
 missing: []
-members: [视频生成/图生视频/1931524997242925057.json, 视频生成/图生视频/1931527933436080129.json]
+members: [视频生成/图生视频/击倒_1931524997242925057.json, 视频生成/图生视频/攻击倒下_1931527933436080129.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_inpaint_upscale
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1931524997242925057.json、视频生成/图生视频/1931527933436080129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/击倒_1931524997242925057.json、视频生成/图生视频/攻击倒下_1931527933436080129.json）
 
 - **类型**：Text To Image
 - **样本数**：2

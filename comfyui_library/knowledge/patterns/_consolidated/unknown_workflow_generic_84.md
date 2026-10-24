@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_84
 type: Unknown Workflow
-frequency: 10
+frequency: 16
 level: moderate
-coverage: 0.8624
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, PreviewAny, SaveAudio, Text]
+coverage: 0.78475
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json, 音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json, 音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json, 音频生成/音频生成/Qwen3 TTS 语音参考克隆+情感语气（单人）_2086710651883442178.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2061738767072980994.json, 音频生成/音频生成/Qwen3+TTS+音频克隆_2082332163504168962.json, 音频生成/音频生成/Qwen3音频克隆 Qwen3+TTS+音频克隆_2074007340663267330.json, 音频生成/音频生成/保存自己用-Qwen3 TTS 音频克隆_2067157702194851841.json]
+members: [图片生成/图生图/一件生成电商主图_2039875368676495362.json, 图片生成/图生图/一键帮你搭配妆容和口红色号（全能图像编辑）_2015319832534720514.json, 图片生成/图生图/一键打造专属于你的发型设计&九宫格+单图（全能图像编辑）_2015443394918617089.json, 图片生成/图生图/一键打造九宫格3D拼贴时尚海报（全能图像编辑）_2014984481819598849.json, 图片生成/图生图/一键打造极简穿搭的职场形象照（全能图像编辑）_2014956448563859458.json, 图片生成/图生图/一键换妆造，直接省下好几千！（全能图像编辑）_2015280020230512642.json, 图片生成/图生图/一键搭配妆容、发型设计，服装搭配（全能图像编辑）_2015338130550820866.json, 图片生成/图生图/两张图转成效果图-全能图片V1_1995321302137417729.json, 图片生成/图生图/产品生主体_2000196703703662593.json, 图片生成/图生图/全能图片V1 pro：具备“深度推理”与“视觉常识”的超级创作引擎_2002897870015590401.json, 图片生成/图生图/全能图片V1 pro：绘画创作过程，一键逆向，学习大师级的创作流程！_1993513529026297857.json, 图片生成/图生图/全能图片V1Pro+产品精修+高清放大_1998564631998291969.json, 图片生成/图生图/全能图片V1Pro+人物九宫格_1998957118101315586.json, 图片生成/图生图/全能图片V1Pro香蕉pro最佳全能高清修复放大2K4K_1992127460982542338.json, 图片生成/图生图/单图生成效果图 全能图片V1_1998723293328891905.json, 图片生成/图生图/🍌V2全能图片处理(自用2)_2049301598630846465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_84
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2092169355445489666.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2014648290389790722.json、音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音频克隆_2072579596461101058.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆-ComfyUI工作流_2034636335570489345.json、音频生成/音频生成/FishAudio TTS多国语言声音克隆_2033453499186417665.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/一件生成电商主图_2039875368676495362.json、图片生成/图生图/一键帮你搭配妆容和口红色号（全能图像编辑）_2015319832534720514.json、图片生成/图生图/一键打造专属于你的发型设计&九宫格+单图（全能图像编辑）_2015443394918617089.json、图片生成/图生图/一键打造九宫格3D拼贴时尚海报（全能图像编辑）_2014984481819598849.json、图片生成/图生图/一键打造极简穿搭的职场形象照（全能图像编辑）_2014956448563859458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `LoadAudio`
-- `PreviewAny`
-- `SaveAudio`
-- `Text`
+全部 16 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 7/10 个有
-- `FishS2VoiceCloneTTS` —— 3/10 个有
+- `Text` —— 15/16 个有
+- `Image Comparer (rgthree)` —— 11/16 个有
+- `PreviewImage` —— 6/16 个有
+- `TextConcat` —— 1/16 个有
 
 ## 典型参数
 

@@ -7,13 +7,13 @@ coverage: 0.945
 common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, ImageOnlyCheckpointLoader, KSampler, SVD_img2vid_Conditioning, SaveImage, VAEDecode, VHS_VideoCombine, VideoLinearCFGGuidance]
 problems: []
 missing: []
-members: [图片生成/文生图/高清产品摄影水果水下特写视频制作文生图_2069597159812591618.json, 视频生成/文生视频/1845741279811661826.json, 视频生成/文生视频/1792516752509292545.json, 视频生成/文生视频/1801584137573183489.json, 视频生成/文生视频/高清产品摄影水果视频制作_1782313135814782978.json, 视频生成/文生视频/1782653285233111041.json]
+members: [图片生成/文生图/高清产品摄影水果水下特写视频制作文生图_2069597159812591618.json, 视频生成/文生视频/中国风游戏场景动态壁纸生成_1845741279811661826.json, 视频生成/文生视频/天坛影迹_1792516752509292545.json, 视频生成/文生视频/烈焰_1801584137573183489.json, 视频生成/文生视频/高清产品摄影水果视频制作_1782313135814782978.json, 视频生成/文生视频/高清护肤产品视频制作_1782653285233111041.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_sampler_clip
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/高清产品摄影水果水下特写视频制作文生图_2069597159812591618.json、视频生成/文生视频/1845741279811661826.json、视频生成/文生视频/1792516752509292545.json、视频生成/文生视频/1801584137573183489.json、视频生成/文生视频/高清产品摄影水果视频制作_1782313135814782978.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/高清产品摄影水果水下特写视频制作文生图_2069597159812591618.json、视频生成/文生视频/中国风游戏场景动态壁纸生成_1845741279811661826.json、视频生成/文生视频/天坛影迹_1792516752509292545.json、视频生成/文生视频/烈焰_1801584137573183489.json、视频生成/文生视频/高清产品摄影水果视频制作_1782313135814782978.json…）
 
 - **类型**：Text To Image
 - **样本数**：6

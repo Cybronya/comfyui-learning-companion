@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_332
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8944
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio]
+coverage: 0.913143
+common_nodes: [CR Prompt Text, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_1971861536375566337.json, 音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_2087798191793201154.json, 音频生成/音频生成/Voice sample for reference_2016407189463764994.json, 音频生成/音频生成/surprise语气_2016437833367560194.json, 音频生成/音频生成/音色克隆-基于IndexTTS_2005256954396241922.json]
+members: [图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json, 图片生成/图生图/（RH版）即梦4.0图像编辑单图V1_1965514036240633858.json, 图片生成/图生图/（RH版）即梦4.0图像编辑双图V1_1965516818934808577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_332
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_1971861536375566337.json、音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_2087798191793201154.json、音频生成/音频生成/Voice sample for reference_2016407189463764994.json、音频生成/音频生成/surprise语气_2016437833367560194.json、音频生成/音频生成/音色克隆-基于IndexTTS_2005256954396241922.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json、图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json、图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json、图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json、图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
+- `LoadImage`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 3/5 个有
-- `DF_Text_Box` —— 2/5 个有
-- `SaveAudio` —— 2/5 个有
+- `easy showAnything` —— 3/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `PDIMAGE_LongerSize` —— 1/7 个有
 
 ## 典型参数
 

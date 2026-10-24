@@ -1,71 +1,74 @@
 ---
 name: unknown_workflow_video_sampler_vae_12
 type: Unknown Workflow
-frequency: 20
+frequency: 19
 level: moderate
-coverage: 0.76295
-common_nodes: [CR Text, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, Text Concatenate, VHS_VideoCombine, Wan22PromptSelector, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader]
+coverage: 0.898684
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1982787419013558274.json, 视频生成/图生视频/1980177122574635010.json, 视频生成/图生视频/1984097038935752706.json, 视频生成/图生视频/1984151178600742913.json, 视频生成/图生视频/1972860649577598978.json, 视频生成/图生视频/1981513970995609601.json, 视频生成/图生视频/2031711000294068225.json, 视频生成/图生视频/1954097767838838785.json, 视频生成/图生视频/1953607536056389634.json, 视频生成/图生视频/1951650390871887873.json, 视频生成/图生视频/1971957035292160001.json, 视频生成/图生视频/1972913233726230530.json, 视频生成/图生视频/1982270135106977794.json, 视频生成/图生视频/1993575888398860290.json, 视频生成/图生视频/1988496401766203394.json, 视频生成/图生视频/1980267588691386370.json, 视频生成/图生视频/1997289089927954433.json, 视频生成/图生视频/2039624462835916801.json, 视频生成/图生视频/2041677614804373505.json, 视频生成/图生视频/2032756294041477121.json]
+members: [视频生成/图生视频/InfiniteTalk & LatentSync 对口型工作流 V1.0_2028880263652052993.json, 视频生成/图生视频/InfiniteTalk单人数字人对口型_1998953194820620290.json, 视频生成/图生视频/InfiniteTalk图片对口型工作流_2070420975967100929.json, 视频生成/图生视频/infinitetalk 单人音频驱动 对口型 数字人_2038129720084140034.json, 视频生成/图生视频/infinitetalk 对口型 数字人 单人音频驱动_2039686638024003585.json, 视频生成/图生视频/infinitetalk 音频驱动 对口型 数字人_2038259769424744450.json, 视频生成/图生视频/infinitetalk 音频驱动 对口型 数字人_2043221914818191361.json, 视频生成/图生视频/infinitetalk-workflow_2101559918137536513.json, 视频生成/图生视频/infinitetalk-数字人口播对口型V1_2054541988237717506.json, 视频生成/图生视频/infinitetalk单人-I2V-720p-竖屏_1958721721454981121.json, 视频生成/图生视频/infinitetalk单人-表达式科技AIGC_1993155666919571457.json, 视频生成/图生视频/infinitetalk单人_1957826962256658434.json, 视频生成/图生视频/infinitetalk单人_2044669894783934465.json, 视频生成/图生视频/infinitetalk改进版单人数字人对口型_1999412008917364738.json, 视频生成/图生视频/【CQ808】infinitetalk单人对口型_2054517632375771138.json, 视频生成/图生视频/单人数字人对口型说话工作流（infinitetalk）_2044453798432739329.json, 视频生成/图生视频/图片对口型音乐人_1995653735567261698.json, 视频生成/图生视频/图片对口型音乐人（去除背景音乐）_1983895730928713729.json, 视频生成/图生视频/数字人对口型，照片说话 （Infinitetalk+Wan2.1加速版）_1966856780053614593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_12
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/1982787419013558274.json、视频生成/图生视频/1980177122574635010.json、视频生成/图生视频/1984097038935752706.json、视频生成/图生视频/1984151178600742913.json、视频生成/图生视频/1972860649577598978.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk & LatentSync 对口型工作流 V1.0_2028880263652052993.json、视频生成/图生视频/InfiniteTalk单人数字人对口型_1998953194820620290.json、视频生成/图生视频/InfiniteTalk图片对口型工作流_2070420975967100929.json、视频生成/图生视频/infinitetalk 单人音频驱动 对口型 数字人_2038129720084140034.json、视频生成/图生视频/infinitetalk 对口型 数字人 单人音频驱动_2039686638024003585.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `CR Text`
-- `ImpactSwitch`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 19 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `SetNode`
-- `Text Concatenate`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 19/20 个有
-- `WanVideoTextEncode` —— 19/20 个有
-- `CreateCFGScheduleFloatList` —— 18/20 个有
-- `INTConstant` —— 17/20 个有
-- `GetImageSizeAndCount` —— 16/20 个有
-- `RIFE VFI` —— 16/20 个有
-- `RH_LLMAPI_NODE` —— 13/20 个有
-- `ShowText|pysssss` —— 13/20 个有
-- `WanVideoBlockSwap` —— 13/20 个有
-- `WanVideoModelLoader` —— 13/20 个有
-- `WanVideoTorchCompileSettings` —— 13/20 个有
-- `easy showAnything` —— 13/20 个有
-- `WanVideoSetLoRAs` —— 12/20 个有
-- `WanVideoLoraSelectMulti` —— 10/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/20 个有
-- `PreviewImage` —— 7/20 个有
-- `PrimitiveFloat` —— 7/20 个有
-- `RHHiddenNodes` —— 7/20 个有
-- `RH_Nano_Banana_Image2Image` —— 7/20 个有
-- `WanVideoLoraSelect` —— 4/20 个有
-- `Primitive integer [Crystools]` —— 3/20 个有
-- `FloatToSigmas` —— 2/20 个有
-- `StringToFloatList` —— 2/20 个有
-- `easy cleanGpuUsed` —— 1/20 个有
+- `AudioCrop` —— 18/19 个有
+- `RH_GetAudioDuration` —— 17/19 个有
+- `SimpleMath+` —— 17/19 个有
+- `ToInt` —— 17/19 个有
+- `easy showAnything` —— 17/19 个有
+- `Int` —— 16/19 个有
+- `WanVideoLoraSelect` —— 16/19 个有
+- `WanVideoTorchCompileSettings` —— 16/19 个有
+- `ImageResizeKJv2` —— 15/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/19 个有
+- `PreviewImage` —— 5/19 个有
+- `GetNode` —— 4/19 个有
+- `SetNode` —— 4/19 个有
+- `easy cleanGpuUsed` —— 4/19 个有
+- `Anything Everywhere` —— 3/19 个有
+- `INTConstant` —— 3/19 个有
+- `SaveAudio` —— 3/19 个有
+- `WanVideoLoraSelectMulti` —— 3/19 个有
+- `PreviewAudio` —— 2/19 个有
+- `CM_IntToFloat` —— 1/19 个有
+- `CR Prompt Text` —— 1/19 个有
+- `JWInteger` —— 1/19 个有
+- `LatentSyncNode` —— 1/19 个有
+- `PrimitiveFloat` —— 1/19 个有
+- `Text` —— 1/19 个有
+- `VHS_LoadVideo` —— 1/19 个有
+- `VideoLengthAdjuster` —— 1/19 个有
 
 ## 典型参数
 

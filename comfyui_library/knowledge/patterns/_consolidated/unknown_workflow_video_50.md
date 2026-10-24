@@ -3,32 +3,38 @@ name: unknown_workflow_video_50
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [JWImageResizeByLongerSide, JWInteger, LoadImage, RH_Translator, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.712
+common_nodes: [GetVideoComponents, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, PreviewAny, RH_Astra, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1913216262325923842.json, 视频生成/图生视频/1913095566052552706.json, 视频生成/图生视频/1913145456501714945.json]
+members: [数字人/数字人/Topaz 极速高清放大 Iris版（人像）_2099629914403205121.json, 数字人/数字人/视频高清放大！极速！Topaz - Iris版_2099660465621258241.json, 视频生成/图生视频/视频超分_TopazIris_2099775194104684546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_50
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1913216262325923842.json、视频生成/图生视频/1913095566052552706.json、视频生成/图生视频/1913145456501714945.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Topaz 极速高清放大 Iris版（人像）_2099629914403205121.json、数字人/数字人/视频高清放大！极速！Topaz - Iris版_2099660465621258241.json、视频生成/图生视频/视频超分_TopazIris_2099775194104684546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `JWImageResizeByLongerSide`
-- `JWInteger`
-- `LoadImage`
-- `RH_Translator`
-- `RunningHub_FramePack`
+- `GetVideoComponents`
+- `ImageFromBatch`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadVideo`
+- `PreviewAny`
+- `RH_Astra`
+- `SaveVideo`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageConcatMulti` —— 1/3 个有
 
 ## 典型参数
 

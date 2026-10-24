@@ -1,60 +1,99 @@
 ---
 name: unknown_workflow_lora_sampler_clip_158
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.562
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, Label (rgthree), LoraLoaderModelOnly, Note Plus (mtb), PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.7165
+common_nodes: [BasicScheduler, BerniniPromptEnhancer, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, CreateVideo, Display Any (rgthree), DualCLIPLoader, GetNode, GetVideoComponents, ImageScaleToMaxDimension, ImpactSwitch, JWInteger, KSamplerAdvanced, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchMemoryCleaner, PathchSageAttentionKJ, PrimitiveInt, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, StringReplace, Text, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VAELoaderKJ, easy cleanGpuUsed]
 problems: []
-missing: [Label (rgthree), Note Plus (mtb)]
-members: [图片生成/文生图/1951536173342773249.json, 图片生成/文生图/1952624573403607042.json]
+missing: []
+members: [视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2064635596194271233.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2065001018898870274.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2073281054196383744.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2076389088697085954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_158
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1951536173342773249.json、图片生成/文生图/1952624573403607042.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2064635596194271233.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2065001018898870274.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2073281054196383744.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2076389088697085954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniPromptEnhancer`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `Display Any (rgthree)`
+- `DualCLIPLoader`
+- `GetNode`
+- `GetVideoComponents`
+- `ImageScaleToMaxDimension`
+- `ImpactSwitch`
+- `JWInteger`
 - `KSamplerAdvanced`
-- `Label (rgthree)`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVideoMask`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `Note Plus (mtb)`
-- `PreviewImage`
-- `SaveImage`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `ModelPatchMemoryCleaner`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
+- `StringReplace`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `EmptyHunyuanLatentVideo` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ModelPassThrough` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `BerniniConditioningReferenceSlots` —— 3/4 个有
+- `FrameInterpolate` —— 3/4 个有
+- `FrameInterpolationModelLoader` —— 3/4 个有
+- `HAIGC_VideoLastFrame` —— 3/4 个有
+- `RTXVideoSuperResolution` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `BatchImagesNode` —— 1/4 个有
+- `BerniniConditioning` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 30 | - | 2 | 100% |
-| 采样算法 | 2 | - | 2 | 50% |
-| 调度器 | res_2s | - | 2 | 100% |
-| 重绘幅度 | bong_tangent | - | 2 | 100% |
-| 宽度 | 1920 | - | 1 | 100% |
-| 高度 | 1088 | - | 1 | 100% |
+| 宽度 | 258 | 129 - 258 | 4 | 75% |
+| 高度 | 30 | 24 - 30 | 4 | 91% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 7 | 4 - 10 | 4 | 57% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -62,11 +101,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2，样本不足，未给区间，2 个样本
-- 调度器 最常用 res_2s，2 个样本，一致性 100%
-- 重绘幅度 最常用 bong_tangent，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：Label (rgthree)、Note Plus (mtb)
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 258，观测区间 129 - 258，4 个样本
+- 高度 中位数 30，观测区间 24 - 30，4 个样本，取值集中（一致性 91%）
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 4 - 10，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

@@ -1,96 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_383
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: strong
-coverage: 0.523833
-common_nodes: [Bjornulf_ShowInt, CLIPLoader, CLIPTextEncode, DWPreprocessor, GetImageRangeFromBatch, GetNode, INTConstant, ImageResizeKJv2, KSampler, Label (rgthree), ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), PreviewImage, RMBG, SetNode, TorchCompileModelWanVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+coverage: 0.543
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, GetNode, JWInteger, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1951333020332666881.json, 视频生成/图生视频/1952994072745152513.json, 视频生成/图生视频/1952340963568095234.json, 视频生成/图生视频/1949032732500926465.json, 视频生成/图生视频/1953347970265698305.json, 视频生成/图生视频/1950622987424845825.json]
+members: [图片生成/图生图/YJ-FAST-wan2.2-分镜视频-grand-tmp2-step2_2038262525682257922.json, 图片生成/图生图/YJ-FAST-wan2.2-分镜视频-jianan2-tmp2-step2_2039371091650547714.json, 视频生成/图生视频/Wan2.2 Remix  V3.0  图生视频 自动提示词_2034288165581758466.json, 视频生成/图生视频/Wan2.2+VBVR+奖励lora 自动提示词-I2V_2045775730209984513.json, 视频生成/图生视频/Wan2.2_I2V_Remix V2.1+PainterI2V+VBVR奖励lora 图生视频_2025905016736845825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_383
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/1951333020332666881.json、视频生成/图生视频/1952994072745152513.json、视频生成/图生视频/1952340963568095234.json、视频生成/图生视频/1949032732500926465.json、视频生成/图生视频/1953347970265698305.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/YJ-FAST-wan2.2-分镜视频-grand-tmp2-step2_2038262525682257922.json、图片生成/图生图/YJ-FAST-wan2.2-分镜视频-jianan2-tmp2-step2_2039371091650547714.json、视频生成/图生视频/Wan2.2 Remix  V3.0  图生视频 自动提示词_2034288165581758466.json、视频生成/图生视频/Wan2.2+VBVR+奖励lora 自动提示词-I2V_2045775730209984513.json、视频生成/图生视频/Wan2.2_I2V_Remix V2.1+PainterI2V+VBVR奖励lora 图生视频_2025905016736845825.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Bjornulf_ShowInt`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DWPreprocessor`
-- `GetImageRangeFromBatch`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `KSampler`
-- `Label (rgthree)`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Power Lora Loader (rgthree)`
-- `PreviewImage`
-- `RMBG`
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
 - `SetNode`
-- `TorchCompileModelWanVideo`
-- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `GroundingDinoModelLoader (segment anything)` —— 5/6 个有
-- `GroundingDinoSAMSegment (segment anything)` —— 5/6 个有
-- `GrowMaskWithBlur` —— 5/6 个有
-- `ImageBatchMulti` —— 5/6 个有
-- `LoadImage` —— 5/6 个有
-- `MaskToImage` —— 5/6 个有
-- `MathExpression|pysssss` —— 5/6 个有
-- `Mix Color By Mask` —— 5/6 个有
-- `RepeatImageBatch` —— 5/6 个有
-- `SAMModelLoader (segment anything)` —— 5/6 个有
-- `VHS_DuplicateMasks` —— 4/6 个有
-- `easy forLoopEnd` —— 4/6 个有
-- `easy forLoopStart` —— 4/6 个有
-- `DepthAnything_V2` —— 3/6 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `DualCLIPLoader` —— 2/6 个有
-- `EmptySD3LatentImage` —— 2/6 个有
-- `HfImageToRGB` —— 2/6 个有
-- `ImagePadKJ` —— 2/6 个有
-- `Int` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `VHS_GetImageCount` —— 2/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `ImagePadForOutpaint` —— 1/6 个有
-- `ImageScale` —— 1/6 个有
-- `InvertMask` —— 1/6 个有
-- `ModelSamplingAuraFlow` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `LayerUtility: PurgeVRAM` —— 4/5 个有
+- `PathchSageAttentionKJ` —— 4/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `AILab_QwenVL` —— 2/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `Switch` —— 2/5 个有
+- `easy anythingIndexSwitch` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
+- `ShellAgentPluginOutputText` —— 1/5 个有
+- `TT_img_enc_v2` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 20 | 6 | 68% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | uni_pc | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | randomize | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 8 | 4 - 8 | 5 | 78% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | euler_ancestral | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -98,8 +78,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 8，5 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

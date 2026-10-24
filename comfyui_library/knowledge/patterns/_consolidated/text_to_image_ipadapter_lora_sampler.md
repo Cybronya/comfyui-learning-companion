@@ -3,59 +3,57 @@ name: text_to_image_ipadapter_lora_sampler
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.6815
-common_nodes: [CLIPTextEncode, CR Text, CR Text Concatenate, CR Text Input Switch, CheckpointLoaderSimple, EmptyLatentImage, FluxResolutionNode, IPAdapterAdvanced, IPAdapterUnifiedLoader, Image Comparer (rgthree), Int, KSampler, LatentPixelScale, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SaveImage, ShowText|pysssss, VAEDecode, WD14Tagger|pysssss, ttN concat]
+coverage: 0.963
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, EmptyLatentImage, IPAdapterFaceID, IPAdapterInsightFaceLoader, IPAdapterModelLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, VAEDecode]
 problems: []
-missing: [CR Text, CR Text Concatenate, CR Text Input Switch, WD14Tagger|pysssss, ttN concat]
-members: [图片生成/文生图/1939667309999132674.json, 图片生成/文生图/动漫壁纸 卡通风格屏保 高质量动漫壁纸一键生成_2079406854928687105.json]
+missing: []
+members: [图片生成/图生图/【遇见AI】ipadapter风格迁移功能全讲解_2018229864947523585.json, 图片生成/文生图/WH-AI-Studio-IPAdapter文生图-换脸-根据人脸文生图_2020112202174308353.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_ipadapter_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1939667309999132674.json、图片生成/文生图/动漫壁纸 卡通风格屏保 高质量动漫壁纸一键生成_2079406854928687105.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【遇见AI】ipadapter风格迁移功能全讲解_2018229864947523585.json、图片生成/文生图/WH-AI-Studio-IPAdapter文生图-换脸-根据人脸文生图_2020112202174308353.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Input Switch`
+- `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `FluxResolutionNode`
-- `IPAdapterAdvanced`
-- `IPAdapterUnifiedLoader`
-- `Image Comparer (rgthree)`
-- `Int`
+- `IPAdapterFaceID`
+- `IPAdapterInsightFaceLoader`
+- `IPAdapterModelLoader`
 - `KSampler`
-- `LatentPixelScale`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
 - `SaveImage`
-- `ShowText|pysssss`
 - `VAEDecode`
-- `WD14Tagger|pysssss`
-- `ttN concat`
+
+**可变部分**（部分 workflow 才有）：
+- `IPAdapterAdvanced` —— 1/2 个有
+- `IPAdapterCombineEmbeds` —— 1/2 个有
+- `IPAdapterEmbeds` —— 1/2 个有
+- `IPAdapterEncoder` —— 1/2 个有
+- `IPAdapterUnifiedLoader` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | - | 2 | 100% |
-| 高度 | 1280 | - | 2 | 100% |
-| 采样步数 | 30 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | sgm_uniform | - | 2 | 100% |
+| 宽度 | 616 | - | 2 | 83% |
+| 高度 | 896 | - | 2 | 57% |
+| 采样步数 | 25 | - | 2 | 80% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | euler | - | 2 | 50% |
+| 调度器 | normal | - | 2 | 50% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
@@ -64,12 +62,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 720，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
+- 宽度 中位数 616，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
+- 高度 中位数 896，样本不足，未给区间，2 个样本
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 最常用 euler，2 个样本，一致性 50%
+- 调度器 最常用 normal，2 个样本，一致性 50%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text、CR Text Concatenate、CR Text Input Switch、WD14Tagger|pysssss、ttN concat
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

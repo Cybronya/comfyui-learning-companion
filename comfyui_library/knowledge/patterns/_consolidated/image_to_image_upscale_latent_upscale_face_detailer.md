@@ -3,22 +3,22 @@ name: image_to_image_upscale_latent_upscale_face_detailer
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.6235
+coverage: 0.823
 common_nodes: [Anything Everywhere?, CLIPLoader, CLIPTextEncode, CR Latent Input Switch, DetailerForEach, DivideNode, DualCLIPLoader, EmptySD3LatentImage, FaceDetailer, Fast Groups Bypasser (rgthree), GetNode, Image Perlin Noise, Image Power Noise, ImageBlend, ImageScale, ImageUpscaleWithModel, ImpactDilateMask, ImpactGaussianBlurMask, JDC_Plasma, JWFloatToInteger, KSampler, KSamplerAdvanced, LatentApplyOperation, LatentOperationSharpen, LatentUpscale, LoadImage, MaskToSEGS, Power Lora Loader (rgthree), SaveImage, SetNode, T5TokenizerOptions, UNETLoader, UltralyticsDetectorProvider, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy int, mxSlider2D]
 problems: [Steps较低可能导致细节不足]
-missing: [Anything Everywhere?, Image Perlin Noise, Image Power Noise, easy cleanGpuUsed, easy int, CR Latent Input Switch, Power Lora Loader (rgthree), Preview from image [Crystools], Bookmark (rgthree), Label (rgthree)]
-members: [图片生成/文生图/1931366022471987202.json, 图片生成/文生图/1931673497590759426.json]
+missing: []
+members: [图片生成/文生图/Flux Chroma V35模型 绝对惊艳的无审查写实模型_1931673497590759426.json, 图片生成/文生图/绝对超凡的Flux Chroma V35模型 绝对惊艳的无审查写实模型 工作流_1931366022471987202.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_latent_upscale_face_detailer
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1931366022471987202.json、图片生成/文生图/1931673497590759426.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux Chroma V35模型 绝对惊艳的无审查写实模型_1931673497590759426.json、图片生成/文生图/绝对超凡的Flux Chroma V35模型 绝对惊艳的无审查写实模型 工作流_1931366022471987202.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
@@ -98,5 +98,4 @@ source: knowledge_consolidation
 - 调度器 最常用 euler，2 个样本，一致性 100%
 - 重绘幅度 最常用 beta，2 个样本，一致性 100%
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：Anything Everywhere?、Image Perlin Noise、Image Power Noise、easy cleanGpuUsed、easy int
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

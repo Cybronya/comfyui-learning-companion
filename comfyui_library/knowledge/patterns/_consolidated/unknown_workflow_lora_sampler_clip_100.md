@@ -1,67 +1,82 @@
 ---
 name: unknown_workflow_lora_sampler_clip_100
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.717333
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, Lora Loader Stack (rgthree), PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
-problems: []
-missing: [Note Plus (mtb), easy cleanGpuUsed, easy clearCacheAll, Lora Loader Stack (rgthree), CR Text Concatenate]
-members: [图片生成/文生图/1906942276495450113.json, 图片生成/文生图/1925114613338152962.json, 图片生成/文生图/Flux最强换脸_1894257044323500034.json]
+frequency: 5
+level: strong
+coverage: 0.6432
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ComfyUI-Krea2T-Enhancer, ConditioningZeroOut, EmptySD3LatentImage, ImageGrid, ImpactStringSelector, KSampler, PixaromaLoraLoader, PixaromaRunTimer, PixaromaSeed, PixaromaTextJoinTwo, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RBG_Smart_Seed_Variance, SaveImage, StrToCombo, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/图生图/Krea2节点抽卡_2095691750642900994.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2092598493159448578.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094238103719473154.json, 图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094262936775778305.json, 图片生成/文生图/Krea2极速抽卡1次24张图_[2秒1张]_[可控变化]_[MJ美学]_2094721703443263490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1906942276495450113.json、图片生成/文生图/1925114613338152962.json、图片生成/文生图/Flux最强换脸_1894257044323500034.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Krea2节点抽卡_2095691750642900994.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2092598493159448578.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094238103719473154.json、图片生成/文生图/Krea2极速抽卡1次24张图 [2秒1张] [可控变化] [MJ美学]_2094262936775778305.json、图片生成/文生图/Krea2极速抽卡1次24张图_[2秒1张]_[可控变化]_[MJ美学]_2094721703443263490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfySwitchNode`
+- `ComfyUI-Krea2T-Enhancer`
+- `ConditioningZeroOut`
 - `EmptySD3LatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `LoadImage`
-- `Lora Loader Stack (rgthree)`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ImageGrid`
+- `ImpactStringSelector`
+- `KSampler`
+- `PixaromaLoraLoader`
+- `PixaromaRunTimer`
+- `PixaromaSeed`
+- `PixaromaTextJoinTwo`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `RBG_Smart_Seed_Variance`
 - `SaveImage`
+- `StrToCombo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `DualCLIPLoaderGGUF` —— 1/3 个有
-- `Florence2ModelLoader` —— 1/3 个有
-- `Florence2Run` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
+- `PreviewAny` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `AILab_QwenVL` —— 1/5 个有
+- `JjkShowText` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `TTResolutionSelector` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：Note Plus (mtb)、easy cleanGpuUsed、easy clearCacheAll、Lora Loader Stack (rgthree)、CR Text Concatenate
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

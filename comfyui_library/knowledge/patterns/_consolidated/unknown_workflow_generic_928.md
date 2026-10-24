@@ -1,43 +1,46 @@
 ---
 name: unknown_workflow_generic_928
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.946
-common_nodes: [ACEStepEdit, ACEStepExtend, ACEStepGen, ACEStepRepainting, GenerationParameters, LoadAudio, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
+frequency: 3
+level: moderate
+coverage: 0.81
+common_nodes: [CR Text, JjkText, LoadImage, RH_LLMAPI_NODE, SaveImage, ShowText, Text Concatenate, easy promptLine]
 problems: []
 missing: []
-members: [音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json, 音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json]
+members: [图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜_2003449397524504578.json, 图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜优化版_2004050804808007682.json, 图片生成/图生图/角色一致性、场景一致性、动作一致性_1999841783662211073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_928
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json、音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜_2003449397524504578.json、图片生成/图生图/全能图片V1 2 Pro 九宫格电影分镜优化版_2004050804808007682.json、图片生成/图生图/角色一致性、场景一致性、动作一致性_1999841783662211073.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ACEStepEdit`
-- `ACEStepExtend`
-- `ACEStepGen`
-- `ACEStepRepainting`
-- `GenerationParameters`
-- `LoadAudio`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `JjkText`
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `ShowText`
+- `Text Concatenate`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `Comfly_api_set` —— 2/3 个有
+- `Comfly_nano_banana2_edit_S2A` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `RH_Nano_Banana_Image2Image` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -49,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

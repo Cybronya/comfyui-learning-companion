@@ -1,85 +1,71 @@
 ---
 name: unknown_workflow_lora_sampler_clip_146
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.841
-common_nodes: [ArgosTranslateTextNode, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EG_TC_Node, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, Int, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
-missing: [Fast Bypasser (rgthree), LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerUtility: ImageBlendAdvance, LayerUtility: PurgeVRAM, ImageResize+]
-members: [图片生成/文生图/1924977832982999041.json, 图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json]
+frequency: 4
+level: strong
+coverage: 0.8495
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PIP_StringConcatenation, PanoramaViewerNode, PrimitiveStringMultiline, RH_LLMAPI_NODE, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
+missing: []
+members: [图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089246702053191682.json, 图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089266154190753794.json, 图片生成/文生图/360图片生成_2069983275870937089.json, 图片生成/文生图/文生360°全景图_qwen-Image2512_2063599512366702593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_146
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1924977832982999041.json、图片生成/文生图/小红书高质量美女图，轻松涨粉_1828492510539993089.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089246702053191682.json、图片生成/文生图/360VR全景Qwen-image2512+自动扩写专用提示词_2089266154190753794.json、图片生成/文生图/360图片生成_2069983275870937089.json、图片生成/文生图/文生360°全景图_qwen-Image2512_2063599512366702593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ArgosTranslateTextNode`
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EG_TC_Node`
-- `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `Int`
-- `KSamplerSelect`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `KSampler`
 - `LoadImage`
-- `LoraLoader`
-- `ModelSamplingFlux`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `PIP_StringConcatenation`
+- `PanoramaViewerNode`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 1/2 个有
-- `DisableNoise` —— 1/2 个有
-- `Fast Bypasser (rgthree)` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `Joy_caption_two` —— 1/2 个有
-- `Joy_caption_two_load` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModel` —— 1/2 个有
-- `LayerUtility: ImageBlendAdvance` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `SplitSigmasDenoise` —— 1/2 个有
-- `TeaCache` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
+- `Wuji360Panorama` —— 2/4 个有
+- `WujiUpscaler` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| LoRA 模型强度 | 0.35 | - | 2 | 57% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 9 | 9 - 9 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.35，样本不足，未给区间，2 个样本
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：Fast Bypasser (rgthree)、LayerMask: BiRefNetUltraV2、LayerMask: LoadBiRefNetModel、LayerUtility: ImageBlendAdvance、LayerUtility: PurgeVRAM
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 9，观测区间 9 - 9，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

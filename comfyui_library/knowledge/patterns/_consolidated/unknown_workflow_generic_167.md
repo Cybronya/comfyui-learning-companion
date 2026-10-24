@@ -1,45 +1,35 @@
 ---
 name: unknown_workflow_generic_167
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.904714
-common_nodes: [LoadAudio, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, SaveAudio]
+coverage: 0.747727
+common_nodes: [CR Text, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json, 音频生成/音频生成/OmniVoice 600+种语言_声音克隆_声音设计_多说话人对白_2041778769148518402.json, 音频生成/音频生成/OmniVoice 单人声音克隆_多人声音克隆_长文本克隆_2041716483511816193.json, 音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json, 音频生成/音频生成/OmniVoice全家桶 - 语音克隆 - 声音设计 - 多人对话_2041718125397286913.json, 音频生成/音频生成/omnivoice-tts  单人对话 双人对话 声音设计 全聚合版_2041524559928627202.json, 音频生成/音频生成/超强 600+语言支持 omnivoice-tts ComfyUI工作流_2042551349283393537.json]
+members: [视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json, 视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json, 视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json, 视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json, 视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json, 视频生成/文生视频/MiniMax H3文生视频_2083412798427717633.json, 视频生成/文生视频/MiniMax H3文生视频_2083417444428902401.json, 视频生成/文生视频/MiniMax H3文生视频_2083423068407549953.json, 视频生成/文生视频/MiniMax H3文生视频_2083426678491140097.json, 视频生成/文生视频/MiniMax+H3文生视频_2083396156163452930.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频 +全节点注释_2061058565992968194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_167
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json、音频生成/音频生成/OmniVoice 600+种语言_声音克隆_声音设计_多说话人对白_2041778769148518402.json、音频生成/音频生成/OmniVoice 单人声音克隆_多人声音克隆_长文本克隆_2041716483511816193.json、音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json、音频生成/音频生成/OmniVoice全家桶 - 语音克隆 - 声音设计 - 多人对话_2041718125397286913.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json、视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json、视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json、视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json、视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceMultiSpeakerTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `SaveAudio`
+全部 11 个 workflow 都包含：
+- `CR Text`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `OmniVoiceLongformTTS` —— 6/7 个有
-- `OmniVoiceVoiceDesignTTS` —— 6/7 个有
-- `OmniVoiceWhisperLoader` —— 6/7 个有
-- `PreviewAudio` —— 5/7 个有
-- `Qwen3ASRLoader` —— 4/7 个有
-- `Qwen3ASRTranscribe` —— 4/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `CR Text` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `RH_MinimaxHailuoH3TextToVideo` —— 10/11 个有
+- `LoadImage` —— 2/11 个有
+- `RH_GeminiOmniFlashTextToVideo` —— 1/11 个有
 
 ## 典型参数
 

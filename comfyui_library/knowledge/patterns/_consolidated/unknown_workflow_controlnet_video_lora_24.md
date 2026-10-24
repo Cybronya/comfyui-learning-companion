@@ -7,13 +7,13 @@ coverage: 0.912333
 common_nodes: [ImageResizeKJv2, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1948265018342158337.json, 视频生成/图生视频/1951201282436571137.json, 视频生成/图生视频/1951224914336526338.json]
+members: [视频生成/图生视频/单人图像说话（WanMultitalk）（魔方）_1948265018342158337.json, 视频生成/图生视频/图生视频加运镜_1951201282436571137.json, 视频生成/图生视频/数字人加运镜_1951224914336526338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_24
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/1948265018342158337.json、视频生成/图生视频/1951201282436571137.json、视频生成/图生视频/1951224914336526338.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/单人图像说话（WanMultitalk）（魔方）_1948265018342158337.json、视频生成/图生视频/图生视频加运镜_1951201282436571137.json、视频生成/图生视频/数字人加运镜_1951224914336526338.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3

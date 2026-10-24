@@ -3,55 +3,54 @@ name: unknown_workflow_video_sampler_vae_184
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5655
-common_nodes: [GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextBox, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.971
+common_nodes: [BasicMath, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, StringConcatenate, ToFloat, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1934287864869908481.json, 视频生成/图生视频/1934982902193004545.json]
+members: [视频生成/图生视频/【AI播草机】WAN2.2首帧+Multitalk口型视频生成_2033528799509352449.json, 视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧+Multitalk口型视频生成_2033775049777352706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_184
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1934287864869908481.json、视频生成/图生视频/1934982902193004545.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【AI播草机】WAN2.2首帧+Multitalk口型视频生成_2033528799509352449.json、视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧+Multitalk口型视频生成_2033775049777352706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetNode`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: TextBox`
+- `BasicMath`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
+- `INTConstant`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `StringConcatenate`
+- `ToFloat`
+- `ToInt`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `DepthAnythingV2Preprocessor` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `LayerUtility: Integer` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

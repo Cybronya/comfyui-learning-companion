@@ -2,71 +2,61 @@
 name: unknown_workflow_sampler_clip_checkpoint_9
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.796
-common_nodes: [ApplySageAttention, CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSampler, ModelSamplingSD3, VAEDecode, WanVaceToVideo]
-problems: [Steps较低可能导致细节不足]
-missing: [ImageFromBatch+, CR Prompt Text]
-members: [视频生成/文生视频/1973020564535250945.json, 视频生成/文生视频/1974823534423879681.json, 视频生成/文生视频/1975808111913119746.json, 视频生成/文生视频/1975830963999649793.json, 视频生成/文生视频/1977017622829125634.json, 视频生成/文生视频/1977742174395793409.json, 视频生成/文生视频/1967877695067533314.json, 视频生成/文生视频/wan2.2-aio-v7-文生视频_1982741566634762241.json]
+level: moderate
+coverage: 0.99225
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, LTXVConditioning, LTXVImgToVideo, LTXVPreprocess, LTXVScheduler, LoadImage, SamplerCustom, VAEDecode]
+problems: []
+missing: []
+members: [视频生成/图生视频/LTX 图片工作流_2061352248059453441.json, 视频生成/图生视频/LTXvideo0.9.6图生视频秒出_1922115762343854081.json, 视频生成/图生视频/LTXvideo0.9.6图生视频秒出提示词反推_1922122988903399425.json, 视频生成/图生视频/Ltxvideo0.9.6图生视频_1920704880137142273.json, 视频生成/图生视频/Ltxvideo0.9.6图生视频提示词反推_1920714358920249345.json, 视频生成/图生视频/Ltxvideo0.9.7图生视频_1922236648937996290.json, 视频生成/图生视频/Ltxvideo0.9.8 13B-图生视频+视频放大_1948228738078126081.json, 视频生成/图生视频/Ltxvideo0.9.8图生视频_1947951942166294530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_9
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/1973020564535250945.json、视频生成/文生视频/1974823534423879681.json、视频生成/文生视频/1975808111913119746.json、视频生成/文生视频/1975830963999649793.json、视频生成/文生视频/1977017622829125634.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LTX 图片工作流_2061352248059453441.json、视频生成/图生视频/LTXvideo0.9.6图生视频秒出_1922115762343854081.json、视频生成/图生视频/LTXvideo0.9.6图生视频秒出提示词反推_1922122988903399425.json、视频生成/图生视频/Ltxvideo0.9.6图生视频_1920704880137142273.json、视频生成/图生视频/Ltxvideo0.9.6图生视频提示词反推_1920714358920249345.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `ApplySageAttention`
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `JWInteger`
-- `KSampler`
-- `ModelSamplingSD3`
+- `KSamplerSelect`
+- `LTXVConditioning`
+- `LTXVImgToVideo`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LoadImage`
+- `SamplerCustom`
 - `VAEDecode`
-- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 6/8 个有
-- `ImageFromBatch+` —— 3/8 个有
-- `SaveImage` —— 3/8 个有
-- `LoadImage` —— 2/8 个有
-- `TT_img_enc` —— 2/8 个有
-- `TT_img_enc_v2` —— 2/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `DeepTranslatorTextNode` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `ImageResizeKJ` —— 7/8 个有
+- `Int` —— 7/8 个有
+- `VHS_VideoCombine` —— 7/8 个有
+- `Florence2` —— 2/8 个有
+- `LayerMask: LoadFlorence2Model` —— 2/8 个有
+- `ImageUpscaleWithModel` —— 1/8 个有
+- `Primitive integer [Crystools]` —— 1/8 个有
+- `RIFE VFI` —— 1/8 个有
+- `SaveAnimatedWEBP` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `SaveWEBM` —— 1/8 个有
+- `UpscaleModelLoader` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | ipndm | - | 8 | 50% |
-| 调度器 | sgm_uniform | - | 8 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ipndm，8 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，8 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：ImageFromBatch+、CR Prompt Text
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

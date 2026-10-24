@@ -3,62 +3,63 @@ name: unknown_workflow_video_lora_sampler_339
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.890167
-common_nodes: [INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.521833
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, JjkText, LoadImage, Primitive integer [Crystools], RHHiddenNodes, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/1956565680000782337.json, 视频生成/图生视频/2035336872209162242.json, 视频生成/图生视频/1964201625864818690.json, 视频生成/图生视频/1964640487892242434.json, 视频生成/图生视频/1963945783164850177.json, 视频生成/图生视频/1992952460717342721.json]
+members: [视频生成/图生视频/AI知识分享宝库 _ 原生 视频人物替换 Animate 2.2_1977983075667824642.json, 视频生成/图生视频/原生系列 视频动作迁移 Animate 2.3 【动态运镜】_1979387280857141250.json, 视频生成/图生视频/视频人物替换 Animate 2.2_1978090235722608641.json, 视频生成/图生视频/视频人物替换_2066836510007185409.json, 视频生成/图生视频/视频动作迁移 Animate 2.0（原生版）_1977322476579508225.json, 视频生成/图生视频/非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_1977667406921367553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_339
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/1956565680000782337.json、视频生成/图生视频/2035336872209162242.json、视频生成/图生视频/1964201625864818690.json、视频生成/图生视频/1964640487892242434.json、视频生成/图生视频/1963945783164850177.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/AI知识分享宝库 _ 原生 视频人物替换 Animate 2.2_1977983075667824642.json、视频生成/图生视频/原生系列 视频动作迁移 Animate 2.3 【动态运镜】_1979387280857141250.json、视频生成/图生视频/视频人物替换 Animate 2.2_1978090235722608641.json、视频生成/图生视频/视频人物替换_2066836510007185409.json、视频生成/图生视频/视频动作迁移 Animate 2.0（原生版）_1977322476579508225.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `INTConstant`
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
+- `ImpactSwitch`
+- `JjkText`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `WanVideoBlockSwap`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `VHS_VideoInfoSource`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `WanVideoSLG` —— 4/6 个有
-- `PrimitiveFloat` —— 3/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `easy positive` —— 3/6 个有
-- `GetNode` —— 2/6 个有
-- `ImageStitch` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `GetImageRangeFromBatch` —— 1/6 个有
-- `ImageBatchMulti` —— 1/6 个有
-- `ImageConcatMulti` —— 1/6 个有
-- `RMBG` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `WanVideoEmptyEmbeds` —— 1/6 个有
-- `WanVideoLoraSelectMulti` —— 1/6 个有
-- `easy humanSegmentation` —— 1/6 个有
+- `PoseAndFaceDetection` —— 5/6 个有
+- `BlockifyMask` —— 3/6 个有
+- `DWPreprocessor` —— 3/6 个有
+- `DrawMaskOnImage` —— 3/6 个有
+- `DrawViTPose` —— 3/6 个有
+- `PrimitiveString` —— 3/6 个有
+- `Sam2Segmentation` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `FaceMaskFromPoseKeypoints` —— 2/6 个有
+- `WanVideoBlockSwap` —— 1/6 个有
+- `WanVideoEncode` —— 1/6 个有
 
 ## 典型参数
 

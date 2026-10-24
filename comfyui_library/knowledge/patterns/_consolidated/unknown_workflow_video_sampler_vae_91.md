@@ -3,61 +3,64 @@ name: unknown_workflow_video_sampler_vae_91
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.870667
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.7535
+common_nodes: [CR Text, GetNode, ImageConcatMulti, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_minimax_h3_i2v_fast_2085261516613443585.json, 视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2086152939638452226.json, 视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2sampling_2086306419887923201.json, 视频生成/文生视频/Minimax_H3文生视频图生视频_2095439213532639234.json, 视频生成/文生视频/minimax_h3_turbo_lora_4步工作流_2085539352125464578.json, 视频生成/文生视频/【MinimaxH3】首尾帧视频-5倍急速版（25→5分钟）_2087187021684101121.json]
+members: [视频生成/图生视频/三图参考-MAGREF图生视频_1935607588300193793.json, 视频生成/图生视频/单图参考-MAGREF图生视频_1935586332242530306.json, 视频生成/图生视频/单图参考-MAGREF图生视频_2055192187125682177.json, 视频生成/图生视频/双图参考-MAGREF图生视频_1935509475614707714.json, 视频生成/图生视频/视频-破次元融合版-多主体融合 FusionX-VACE_1934523459177250818.json, 视频生成/文生视频/wan2.1 MAGREF_FusionX 3倍加速图生视频_1938855885659627522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_91
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/video_minimax_h3_i2v_fast_2085261516613443585.json、视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2086152939638452226.json、视频生成/图生视频/video_minimax_h3_i2v_turbo_lora_2sampling_2086306419887923201.json、视频生成/文生视频/Minimax_H3文生视频图生视频_2095439213532639234.json、视频生成/文生视频/minimax_h3_turbo_lora_4步工作流_2085539352125464578.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/三图参考-MAGREF图生视频_1935607588300193793.json、视频生成/图生视频/单图参考-MAGREF图生视频_1935586332242530306.json、视频生成/图生视频/单图参考-MAGREF图生视频_2055192187125682177.json、视频生成/图生视频/双图参考-MAGREF图生视频_1935509475614707714.json、视频生成/图生视频/视频-破次元融合版-多主体融合 FusionX-VACE_1934523459177250818.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `CR Text`
+- `GetNode`
+- `ImageConcatMulti`
+- `JWInteger`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `PathchSageAttentionKJ` —— 5/6 个有
-- `BasicGuider` —— 4/6 个有
-- `ImageScaleToTotalPixels` —— 4/6 个有
-- `SolAttnPatch` —— 4/6 个有
-- `UNETLoader` —— 4/6 个有
-- `GetImageSize` —— 3/6 个有
-- `ResolutionSelector` —— 3/6 个有
-- `CFGGuider` —— 2/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `DiffusionModelLoaderKJ` —— 2/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
-- `MiniMaxH3SigmaShift` —— 2/6 个有
-- `ModelPreviewOverrideKJ` —— 2/6 个有
-- `DisableNoise` —— 1/6 个有
-- `EasyCache` —— 1/6 个有
-- `MiniMaxLowVRAMAttention` —— 1/6 个有
-- `SpectrumApplyMiniMaxH3` —— 1/6 个有
-- `SplitSigmas` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
+- `CLIPVisionLoader` —— 5/6 个有
+- `ImageResizeKJv2` —— 5/6 个有
+- `WanVideoClipVisionEncode` —— 5/6 个有
+- `WanVideoImageToVideoEncode` —— 5/6 个有
+- `WanVideoLoraSelect` —— 5/6 个有
+- `easy imageRemBg` —— 5/6 个有
+- `GetImageSizeAndCount` —— 3/6 个有
+- `ImageConcanate` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `AddLabel` —— 2/6 个有
+- `EmptyImage` —— 2/6 个有
+- `easy imageScaleDownToSize` —— 2/6 个有
+- `ImageResizeKJ` —— 1/6 个有
+- `InspyrenetRembg` —— 1/6 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/6 个有
+- `WanVideoVACEEncode` —— 1/6 个有
 
 ## 典型参数
 

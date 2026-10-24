@@ -3,68 +3,54 @@ name: unknown_workflow_video_sampler_vae_70
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.690429
-common_nodes: [GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.946
+common_nodes: [Fast Groups Bypasser (rgthree), ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/1923394290066575361.json, 视频生成/图生视频/1923694325656711169.json, 视频生成/图生视频/1934473934488162306.json, 视频生成/图生视频/1925467982229590018.json, 视频生成/图生视频/1932748571013697538.json, 视频生成/图生视频/1923563550629875714.json, 视频生成/图生视频/1936291028129206274.json]
+members: [视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1923954890496724994.json, 视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1924435018246967297.json, 视频生成/图生视频/CausVid仅需3-9步极速VACE多图参考视频加速版_1923980705343131649.json, 视频生成/图生视频/CausVid极速VACE图生视频加速版_1925147806623801346.json, 视频生成/图生视频/VACE14B  多图参考生成视频_1922926453934145538.json, 视频生成/图生视频/VACE14B之多图参考(电商带货_图像融合)_1922811355408076801.json, 视频生成/图生视频/VACE14B｜多图参考生成视频_1923648311860129794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_70
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1923394290066575361.json、视频生成/图生视频/1923694325656711169.json、视频生成/图生视频/1934473934488162306.json、视频生成/图生视频/1925467982229590018.json、视频生成/图生视频/1932748571013697538.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1923954890496724994.json、视频生成/图生视频/CausVid仅需3-9步极速VACE图生视频加速版_1924435018246967297.json、视频生成/图生视频/CausVid仅需3-9步极速VACE多图参考视频加速版_1923980705343131649.json、视频生成/图生视频/CausVid极速VACE图生视频加速版_1925147806623801346.json、视频生成/图生视频/VACE14B  多图参考生成视频_1922926453934145538.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `GetImageSizeAndCount`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `WanVideoVACEStartToEndFrame` —— 6/7 个有
-- `AddLabel` —— 5/7 个有
-- `EmptyImage` —— 5/7 个有
-- `ImageConcatMulti` —— 5/7 个有
-- `VHS_LoadVideo` —— 5/7 个有
-- `ImageResizeKJv2` —— 4/7 个有
-- `Bookmark (rgthree)` —— 3/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `ImageResizeKJ` —— 2/7 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 2/7 个有
-- `INTConstant` —— 1/7 个有
-- `ImagePadKJ` —— 1/7 个有
-- `ImageResize+` —— 1/7 个有
-- `MimicMotionGetPoses` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `String Literal` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `VHS_VideoInfo` —— 1/7 个有
-- `WanVideoEnhanceAVideo` —— 1/7 个有
-- `WanVideoVRAMManagement` —— 1/7 个有
+- `ImageConcanate` —— 5/7 个有
+- `ColorMatch` —— 4/7 个有
+- `WanVideoLoraSelect` —— 4/7 个有
+- `PreviewImage` —— 3/7 个有
+- `WanVideoTeaCache` —— 3/7 个有
+- `WanVideoVACEStartToEndFrame` —— 3/7 个有
+- `RH_Captioner` —— 1/7 个有
+- `ShowText` —— 1/7 个有
+- `Text Concatenate` —— 1/7 个有
 
 ## 典型参数
 

@@ -2,92 +2,79 @@
 name: unknown_workflow_video_lora_sampler_345
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.8405
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+level: moderate
+coverage: 0.748667
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2035345217242537985.json, 视频生成/图生视频/2035366235172507650.json, 视频生成/图生视频/2042424344898445313.json, 视频生成/图生视频/2043902028618932226.json, 视频生成/图生视频/2039873028493938689.json, 视频生成/图生视频/2069596918434590721.json]
+members: [视频生成/图生视频/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2007804749827022850.json, 视频生成/图生视频/Infinite Talk数字人唱歌（无限时长+高动态）_1969431253688721410.json, 视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm多重注意力机制）_1984675339228102657.json, 视频生成/图生视频/Infinite+talk数字人动态加强版_2001621659876507649.json, 视频生成/图生视频/数字人对口型唱歌-Infinite Talk_2050200100416311298.json, 音频生成/音频生成/Infinite Talk-对口型说话+唱歌无限时长+高动态_2021031552670507010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_345
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2035345217242537985.json、视频生成/图生视频/2035366235172507650.json、视频生成/图生视频/2042424344898445313.json、视频生成/图生视频/2043902028618932226.json、视频生成/图生视频/2039873028493938689.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2007804749827022850.json、视频生成/图生视频/Infinite Talk数字人唱歌（无限时长+高动态）_1969431253688721410.json、视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm多重注意力机制）_1984675339228102657.json、视频生成/图生视频/Infinite+talk数字人动态加强版_2001621659876507649.json、视频生成/图生视频/数字人对口型唱歌-Infinite Talk_2050200100416311298.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SimpleMath+`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 5/6 个有
-- `INTConstant` —— 4/6 个有
-- `LTXVLatentUpsampler` —— 4/6 个有
-- `LatentUpscaleModelLoader` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `PrimitiveInt` —— 4/6 个有
-- `RH_LLMAPI_Pro_Node` —— 4/6 个有
-- `Text` —— 3/6 个有
-- `DapaoImageAspectRatioResizeNode` —— 2/6 个有
-- `GetNode` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `RH_LLMAPI_NODE` —— 2/6 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 2/6 个有
-- `RH_RhartVideoGImageToVideo` —— 2/6 个有
-- `SaveImage` —— 2/6 个有
-- `SaveVideo` —— 2/6 个有
-- `Seed (rgthree)` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `TextCombinerTwo` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `easy int` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `Qwen3VL_Chat` —— 1/6 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/6 个有
-- `RH_RhartVideoV31FastImageToVideo` —— 1/6 个有
+- `GetNode` —— 5/6 个有
+- `LoadAudio` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `ToInt` —— 5/6 个有
+- `Display Int (rgthree)` —— 4/6 个有
+- `SoundFlow_GetLength` —— 4/6 个有
+- `Float` —— 3/6 个有
+- `ImageResizeKJv2` —— 3/6 个有
+- `Int` —— 3/6 个有
+- `JWInteger` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `AddLabel` —— 2/6 个有
+- `JWFloat` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `CM_FloatToInt` —— 1/6 个有
+- `ImageConcatMulti` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_GetAudioDuration` —— 1/6 个有
+- `TTResolutionSelector` —— 1/6 个有
+- `VHS_LoadAudioUpload` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `easy int` —— 1/6 个有
+- `easy mathInt` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -95,5 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

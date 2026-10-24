@@ -1,74 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_87
 type: Unknown Workflow
-frequency: 16
+frequency: 17
 level: moderate
-coverage: 0.757188
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.67
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LayerUtility: PurgeVRAM, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json, 视频生成/图生视频/Lightx2v_8步_V1.0_768P-去油-Minimax双时钟-参考生视频_2093354886875406337.json, 视频生成/图生视频/Lightx2v_8步_V1.0_768P-去油-Minimax双时钟-图生视频_2093353862173384705.json, 视频生成/图生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091730279948963841.json, 视频生成/图生视频/MiniMax H3 Dasiwa HybirdV1turboV1+600EMA参考生视频V1_2094425009153466370.json, 视频生成/图生视频/MiniMax H3 电商带货-双采全能工作流_2107862335695183874.json, 视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json, 视频生成/图生视频/MiniMax H3-动态最强-参考生视频-V1_2094782408347447298.json, 视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json, 视频生成/图生视频/MiniMax H3参考生视频-武戏战斗版_2098232096543297537.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-电商带货-参考生视频_2102717112467943425.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-参考生视频_2098795077903671298.json, 视频生成/图生视频/MiniMax H3双采全能工作流V2-音频驱动数字人-电商带货-二采_2102718883990958081.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频_2105138065181339649.json, 视频生成/图生视频/MiniMax H3双采参考生视频支持参考音频和视频_2102401654355218433.json, 视频生成/图生视频/MiniMax H3双采参考生视频格莱美慢镜头_2103902789440196610.json]
+members: [视频生成/图生视频/优化加速升级Wan Animate动作迁移v2版_1983091241221038082.json, 视频生成/图生视频/全新图片跳舞 保留原图背景 Animate Wan2.2_2018250280189562881.json, 视频生成/图生视频/啊癫 Wan2.2 Animate 视频换人 视频人物替换_1970522090514358273.json, 视频生成/图生视频/啊癫 全新图片跳舞 保留原图背景 Animate Wan2.2_1970493244759044098.json, 视频生成/图生视频/多人换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_2038207099926224898.json, 视频生成/图生视频/快速踩健身自行车_2081656460194443265.json, 视频生成/图生视频/扭pp_2082449087105953793.json, 视频生成/图生视频/换脸+换装+换人多合一（换脸换装换人）图生视频动作迁移视频换装Wan2.2人物替换动作迁移_2001911262554537986.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移支持10s以上_2101868247393062913.json, 视频生成/图生视频/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_1988497741976395777.json, 视频生成/图生视频/换装换脸+动作迁移 支持生成10s以上 超长时间 视频动作迁移  Wan2.2人物替换动作迁移_2048642449622441986.json, 视频生成/图生视频/视频换脸 高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2059815304972292098.json, 视频生成/图生视频/视频换脸 高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2064155930153021442.json, 视频生成/图生视频/视频换脸 高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2064600210499784705.json, 视频生成/图生视频/视频换脸+高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2065330125998219265.json, 视频生成/图生视频/视频换脸+高清换头换发型+自定时长+真实自然+视频换脸+人物角色替换_2068858062965927938.json, 视频生成/图生视频/视频换脸换装换人多合一（48g换脸换装换人）图生视频动作迁移视频换装_2001967162547924993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_87
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/H3打戏自用（T8流大改）_2101622728154505217.json、视频生成/图生视频/Lightx2v_8步_V1.0_768P-去油-Minimax双时钟-参考生视频_2093354886875406337.json、视频生成/图生视频/Lightx2v_8步_V1.0_768P-去油-Minimax双时钟-图生视频_2093353862173384705.json、视频生成/图生视频/MiniMax H3 4步加速 图生视频 首尾帧生视频_2091730279948963841.json、视频生成/图生视频/MiniMax H3 Dasiwa HybirdV1turboV1+600EMA参考生视频V1_2094425009153466370.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/优化加速升级Wan Animate动作迁移v2版_1983091241221038082.json、视频生成/图生视频/全新图片跳舞 保留原图背景 Animate Wan2.2_2018250280189562881.json、视频生成/图生视频/啊癫 Wan2.2 Animate 视频换人 视频人物替换_1970522090514358273.json、视频生成/图生视频/啊癫 全新图片跳舞 保留原图背景 Animate Wan2.2_1970493244759044098.json、视频生成/图生视频/多人换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上_2038207099926224898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+全部 17 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `PixelPerfectResolution`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 15/16 个有
-- `ModelAttentionBackend` —— 15/16 个有
-- `SolAttnMiniMax` —— 13/16 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 12/16 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 12/16 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 12/16 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 12/16 个有
-- `LoraLoaderModelOnly` —— 11/16 个有
-- `Float` —— 8/16 个有
-- `孤海注释` —— 7/16 个有
-- `GetNode` —— 6/16 个有
-- `SetNode` —— 6/16 个有
-- `ConcatTextOfUtils` —— 4/16 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/16 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 4/16 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 4/16 个有
-- `LoadAudio` —— 3/16 个有
-- `easy anythingIndexSwitch` —— 3/16 个有
-- `VHS_LoadVideo` —— 2/16 个有
-- `ExtendIntermediateSigmas` —— 1/16 个有
-- `Fast Muter (rgthree)` —— 1/16 个有
-- `H3SigmaRefiner` —— 1/16 个有
-- `ImageCrop` —— 1/16 个有
-- `ImageFromBatch` —— 1/16 个有
-- `MiniMaxChunkFeedForward` —— 1/16 个有
-- `MiniMaxLowVRAMAttention` —— 1/16 个有
-- `PrimitiveInt` —— 1/16 个有
-- `TrimAudioDuration` —— 1/16 个有
+- `GetNode` —— 16/17 个有
+- `JWInteger` —— 16/17 个有
+- `SetNode` —— 16/17 个有
+- `easy cleanGpuUsed` —— 16/17 个有
+- `BlockifyMask` —— 14/17 个有
+- `DrawMaskOnImage` —— 14/17 个有
+- `GrowMask` —— 14/17 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 14/17 个有
+- `Int` —— 13/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/17 个有
+- `CR Text` —— 11/17 个有
+- `LayerUtility: PurgeVRAM V2` —— 11/17 个有
+- `MathExpression|pysssss` —— 11/17 个有
+- `PreviewImage` —— 11/17 个有
+- `LoadSAM3Model` —— 2/17 个有
+- `MaskListToMaskBatch` —— 2/17 个有
+- `MaskToImage` —— 2/17 个有
+- `RH_Translator` —— 2/17 个有
+- `SAM3Segmentation` —— 2/17 个有
+- `SimpleMath+` —— 2/17 个有
+- `Text` —— 2/17 个有
+- `easy imageBatchToImageList` —— 2/17 个有
+- `easy imageListToImageBatch` —— 2/17 个有
+- `easy sam3ModelLoader` —— 2/17 个有
+- `easy sam3VideoSegmentation` —— 2/17 个有
+- `CR Prompt Text` —— 1/17 个有
+- `EmptyImage` —— 1/17 个有
+- `FirstFrameSelector` —— 1/17 个有
+- `SaveImage` —— 1/17 个有
 
 ## 典型参数
 

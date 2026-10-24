@@ -1,0 +1,75 @@
+---
+key: 图片生成/图生图/（自用）Qwen-Edit Aio V5.1模型双图编辑(姿势迁移)_1980187956537364481.json
+name: （自用）Qwen-Edit Aio V5.1模型双图编辑(姿势迁移)_1980187956537364481
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/（自用）Qwen-Edit Aio V5.1模型双图编辑(姿势迁移)_1980187956537364481.json
+hash: 8969d0f03493a31f
+coverage: 1
+learned_at: 2026-10-23 13:38:19
+nodes: [EmptyLatentImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, GetImageSizeAndCount, DWPreprocessor, KSampler, ImageScaleToTotalPixels, ImageScaleToTotalPixels, LoadImage, LoadImage, TT_img_enc, SaveImage, VAEDecode, TT_img_enc_v2, CR Prompt Text, SaveImage, Text Multiline, CheckpointLoaderSimple]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "Qwen-Rapid-AIO-NSFW-v5.1.safetensors", "denoise": 1, "height": 768, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 884359406114870, "steps": 8, "width": 768}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/（自用）Qwen-Edit Aio V5.1模型双图编辑(姿势迁移)_1980187956537364481.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/（自用）Qwen-Edit Aio V5.1模型双图编辑(姿势迁移)_1980187956537364481.json`
+
+## 结构
+
+**生成流程**：Model → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（18 个）：
+- `EmptyLatentImage` ★核心
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus`
+- `GetImageSizeAndCount`
+- `DWPreprocessor`
+- `KSampler` ★核心
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `LoadImage`
+- `LoadImage`
+- `TT_img_enc`
+- `SaveImage`
+- `VAEDecode` ★核心
+- `TT_img_enc_v2`
+- `CR Prompt Text`
+- `SaveImage`
+- `Text Multiline`
+- `CheckpointLoaderSimple` ★核心
+
+## 关键参数
+
+- `width` = `768`
+- `height` = `768`
+- `batch_size` = `1`
+- `seed` = `884359406114870`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `Qwen-Rapid-AIO-NSFW-v5.1.safetensors`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`EmptyLatentImage`、`TextEncodeQwenImageEditPlus`、`GetImageSizeAndCount`、`DWPreprocessor`、`KSampler`、`ImageScaleToTotalPixels`、`LoadImage`、`TT_img_enc`、`SaveImage`、`VAEDecode`、`TT_img_enc_v2`、`CR Prompt Text`、`Text Multiline`、`CheckpointLoaderSimple`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、EmptyLatentImage、LoadImage、TextEncodeQwenImageEditPlus、CR Prompt Text、GetImageSizeAndCount
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

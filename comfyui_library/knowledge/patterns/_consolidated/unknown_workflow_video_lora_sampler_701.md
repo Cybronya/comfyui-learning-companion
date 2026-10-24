@@ -3,51 +3,57 @@ name: unknown_workflow_video_lora_sampler_701
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.865667
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.743
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/文生视频/1950128875525332993.json, 视频生成/文生视频/1950206171439390721.json, 视频生成/文生视频/1950379943495647234.json]
+members: [视频生成/视频生视频/MiniMax H3 视频复刻 角色替换-二创翻拍_2106096378328993794.json, 视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）.json, 视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_701
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1950128875525332993.json、视频生成/文生视频/1950206171439390721.json、视频生成/文生视频/1950379943495647234.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/视频生视频/MiniMax H3 视频复刻 角色替换-二创翻拍_2106096378328993794.json、视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）.json、视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SolAttnMiniMax`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 2/3 个有
-- `PreViewVideo` —— 2/3 个有
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `DF_Integer` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `DA3Inference` —— 1/3 个有
+- `DA3Render` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LoadDA3Model` —— 1/3 个有
+- `LoadVideo` —— 1/3 个有
+- `ShowAnything|Mie` —— 1/3 个有
+- `VHS_LoadVideoFFmpeg` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 

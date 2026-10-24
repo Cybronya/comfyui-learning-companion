@@ -3,101 +3,79 @@ name: unknown_workflow_video_lora_sampler_512
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.95425
-common_nodes: [AudioCropProcessUTK, CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, JWInteger, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float]
+coverage: 0.78525
+common_nodes: [CR Text, GetImageSizeAndCount, ImageFromBatch+, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, RH_LLMAPI_NODE, Text Concatenate, VHS_LoadVideo, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2049324232944914434.json, 视频生成/图生视频/2029926925103276034.json, 视频生成/图生视频/2069715609595760642.json, 视频生成/文生视频/ltx2.3-文_图生视频-数字人-整合版_2031260976904933377.json]
+members: [视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json, 视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json, 视频生成/图生视频/完美参考人脸lynx加VACE精准姿势迁移_1977047772987838465.json, 视频生成/图生视频/顶配视频换脸lynx+VACE完美一致性_1977047808907857921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_512
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2049324232944914434.json、视频生成/图生视频/2029926925103276034.json、视频生成/图生视频/2069715609595760642.json、视频生成/文生视频/ltx2.3-文_图生视频-数字人-整合版_2031260976904933377.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json、视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json、视频生成/图生视频/完美参考人脸lynx加VACE精准姿势迁移_1977047772987838465.json、视频生成/图生视频/顶配视频换脸lynx+VACE完美一致性_1977047808907857921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `CFGGuider`
-- `CLIPTextEncode`
 - `CR Text`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `GetImageSizeAndCount`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
+- `ImpactSwitch`
 - `JWInteger`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `Text Concatenate`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy float`
+- `Wan22PromptSelector`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `LTXVImgToVideoInplace` —— 3/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
-- `NormalizeAudioLoudness` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `RH_LLMAPI_NODE` —— 3/4 个有
-- `RTXVideoSuperResolution` —— 3/4 个有
-- `AudioSeparation` —— 2/4 个有
-- `LTXVLatentUpsampler` —— 2/4 个有
-- `LatentUpscaleModelLoader` —— 2/4 个有
-- `LazySwitch1way` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `VAELoader` —— 2/4 个有
-- `WhisperSTT` —— 2/4 个有
-- `easy compare` —— 2/4 个有
-- `AudioInfoNode` —— 1/4 个有
-- `Bjornulf_IfElse` —— 1/4 个有
-- `CM_FloatToInt` —— 1/4 个有
-- `ComfySwitchNode` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `JWStringToFloat` —— 1/4 个有
-- `LTX2_NAG` —— 1/4 个有
-- `LTXVAudioVAEDecode` —— 1/4 个有
-- `LTXVEmptyLatentAudio` —— 1/4 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `RH_RhartTextG3ProPreviewImageToText` —— 1/4 个有
-- `ShowAnything|Mie` —— 1/4 个有
-- `easy convertAnything` —— 1/4 个有
-- `easy int` —— 1/4 个有
-- `ttN concat` —— 1/4 个有
+- `GetNode` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `AIO_Preprocessor` —— 2/4 个有
+- `BlockifyMask` —— 2/4 个有
+- `DepthAnything_V2` —— 2/4 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/4 个有
+- `DrawMaskOnImage` —— 2/4 个有
+- `GrowMask` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 2/4 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `SeCModelLoader` —— 2/4 个有
+- `SeCVideoSegmentation` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 93 | - | 1 | 100% |
-| 高度 | 20 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

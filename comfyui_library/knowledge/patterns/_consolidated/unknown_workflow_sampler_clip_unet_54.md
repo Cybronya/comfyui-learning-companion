@@ -1,65 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_54
 type: Unknown Workflow
-frequency: 10
+frequency: 14
 level: moderate
-coverage: 0.8782
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.783714
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json, 图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json, 图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json, 图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json, 图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json, 图片生成/文生图/VividMuse CyberRealistic VS GonzaLomo ZPop VS Z-Image-Turbo_2062871268139028481.json, 图片生成/文生图/VividMuse GonzaLomo ZPop VS Z-Image-Turbo_2061802154381369345.json, 图片生成/文生图/VividMuse Krea2真实人像V1_2071177424569720833.json, 图片生成/文生图/VividMuse Z-Image MJ风格_2096074367687024642.json, 图片生成/文生图/VividMuse Z-Image-Turbo-全能图片G2-Style_2057436016042139650.json]
+members: [图片生成/图生图/003.FLUX.2智能综合008.局部重绘-手动遮罩_2035253833063993346.json, 图片生成/图生图/AI扩图_2046771337133297665.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2074792058958729218.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727296331669505.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727975360126978.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2089629118886404097.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2091716631025250306.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2092058726743240706.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2092609760863543297.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图带扣图开关_2097139554640814081.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图带扣图开关_2097236497970851841.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图（带扣图开关）_2091113137687846913.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图（带扣图开关）_2091132661388632065.json, 图片生成/图生图/flux2-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2085639645777453057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_54
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json、图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json、图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json、图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json、图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合008.局部重绘-手动遮罩_2035253833063993346.json、图片生成/图生图/AI扩图_2046771337133297665.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2074792058958729218.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727296331669505.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727975360126978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Seed (rgthree)` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
-- `PrimitiveStringMultiline` —— 6/10 个有
-- `easy promptList` —— 6/10 个有
-- `LoraLoaderModelOnly` —— 5/10 个有
-- `LayerUtility: ImageReel` —— 4/10 个有
-- `LayerUtility: ImageReelComposit` —— 4/10 个有
-- `CR Prompt Text` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `ResolutionSelector` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `BasicScheduler` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `SigmasPreview` —— 1/10 个有
+- `GetImageSize` —— 13/14 个有
+- `LoraLoaderModelOnly` —— 13/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/14 个有
+- `GetNode` —— 12/14 个有
+- `ImpactInt` —— 8/14 个有
+- `孤海注释` —— 8/14 个有
+- `LayerMask: BiRefNetUltra` —— 7/14 个有
+- `PreviewImage` —— 5/14 个有
+- `CR Prompt Text` —— 4/14 个有
+- `CR Text Input Switch (4 way)` —— 4/14 个有
+- `LayerMask: BiRefNetUltraV2` —— 4/14 个有
+- `LayerMask: LoadBiRefNetModel` —— 4/14 个有
+- `easy int` —— 4/14 个有
+- `DifferentialDiffusion` —— 2/14 个有
+- `InpaintModelConditioning` —— 2/14 个有
+- `PlaySound|pysssss` —— 2/14 个有
+- `GrowMaskWithBlur` —— 1/14 个有
+- `ImagePadForOutpaint` —— 1/14 个有
+- `LanPaint_MaskBlend` —— 1/14 个有
+- `easy imageRemBg` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1116 | 512 - 1536 | 10 | 63% |
-| 高度 | 1800 | 512 - 2048 | 10 | 61% |
-| 采样步数 | fixed | - | 10 | 60% |
-| Prompt 约束强度(CFG) | 8 | 8 - 15 | 10 | 71% |
-| 采样算法 | 1 | 1 - 2 | 10 | 67% |
-| 调度器 | euler | - | 10 | 60% |
-| 重绘幅度 | simple | - | 10 | 30% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,11 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1116，观测区间 512 - 1536，10 个样本
-- 高度 中位数 1800，观测区间 512 - 2048，10 个样本
-- 采样步数 最常用 fixed，10 个样本，一致性 60%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 15，10 个样本
-- 采样算法 中位数 1，观测区间 1 - 2，10 个样本
-- 调度器 最常用 euler，10 个样本，一致性 60%
-- 重绘幅度 最常用 simple，10 个样本，一致性 30%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

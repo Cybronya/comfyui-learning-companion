@@ -1,80 +1,64 @@
 ---
 name: unknown_workflow_lora_clip_unet_2
 type: Unknown Workflow
-frequency: 16
-level: moderate
-coverage: 0.881125
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Replace, EmptySD3LatentImage, JDCN_StringToList, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 27
+level: strong
+coverage: 0.807852
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, Lora Loader, PrimitiveFloat, RHHiddenNodes, RH_Translator, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/唯美抽卡文生图_2050836322817982466.json, 图片生成/文生图/墨幽Z-image欧亚纯欲私房人像_2065517075992498177.json, 图片生成/文生图/女频短剧古风角色设计工作流_2071324708490014722.json, 图片生成/文生图/最受欢迎美学文生图_2037071836214730753.json, 图片生成/文生图/最好看超梦幻终极高清美学文生图 2_2097488176058290177.json, 图片生成/文生图/绅士美学文生图V1.1_2065364992593063938.json, 图片生成/文生图/绅士美学文生图工作流_2067207382131892226.json, 图片生成/文生图/绅士美学文生图快速出图_2082099425329115138.json, 图片生成/文生图/绅士美学文生图快速出图_2100549454419025922.json, 图片生成/文生图/绅士美学文生图快速出图_2100570247014215682.json, 图片生成/文生图/绅士美学文生图快速出图_2103299027126276098.json, 图片生成/文生图/绅士美学文生图快速出图_2104853569731125249.json, 图片生成/文生图/绅士美学文生图，输入提示词和生成图片数量即可，绝美推荐！_2074692182715494401.json, 图片生成/文生图/美学文生图v1.2_2071115010402766849.json, 图片生成/文生图/自动提示词文生图V1.1_2065419266714849281.json, 图片生成/文生图/自动提示词文生图V1.1_2075057029013655554.json]
+members: [图片生成/图生图/AI生成韩系氛围感写真_高级感大片_2059511570060890113.json, 图片生成/图生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2074746850103619586.json, 图片生成/图生图/抖音快手小红书美女生成，含增大器+人脸固定+兄部调节+囤部调节+配合跳舞生成舞蹈爆款短视频美女图_2022327217883193346.json, 图片生成/图生图/美图生成-抖音快手小红书专属_2067492551824863234.json, 图片生成/文生图/AI生成韩系氛围感写真_高级感大片_2059080719774871553.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2068534967176622081.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2072158202266996738.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2072954583877509121.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2073598216662245377.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2074754185714819074.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2077820349277892609.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片图片生成_2073287149864181762.json, 图片生成/文生图/FLUX.1AI生成韩系氛围感写真_高级感大片图片生成_2073304134752751618.json, 图片生成/文生图/一键美图生成_2060281505628377090.json, 图片生成/文生图/洗图 文生图 人像写真 +SeedVR2高清放大 美图生成-抖音快手小红书_2059461117663076353.json, 图片生成/文生图/洗图 文生图 人像写真 +SeedVR2高清放大 美图生成_2060302391127404546.json, 图片生成/文生图/洗图 文生图 人像写真 +SeedVR2高清放大 美图生成_2064685682345472002.json, 图片生成/文生图/洗图 文生图 人像写真 +SeedVR2高清放大 美图生成_2072194512797134849.json, 图片生成/文生图/美图生成-抖音快手小红书V2.0_2061273916148117505.json, 图片生成/文生图/美图生成-抖音快手小红书_2029537281849171969.json, 图片生成/文生图/美图生成-抖音快手小红书_2061270943720370177.json, 图片生成/文生图/美图生成-抖音快手小红书_2061613051719282690.json, 图片生成/文生图/美图生成-抖音快手小红书专属_2064637395596832770.json, 图片生成/文生图/美图生成-文生视频_2060280767871283201.json, 图片生成/文生图/美图生成器_2060179705269145601.json, 图片生成/文生图/高清放大-美图生成-抖音快手小红书_2059478502654697473.json, 视频生成/图生视频/FLUX.1AI生成韩系氛围感写真_高级感大片 (1)_2075039928815284225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_clip_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/唯美抽卡文生图_2050836322817982466.json、图片生成/文生图/墨幽Z-image欧亚纯欲私房人像_2065517075992498177.json、图片生成/文生图/女频短剧古风角色设计工作流_2071324708490014722.json、图片生成/文生图/最受欢迎美学文生图_2037071836214730753.json、图片生成/文生图/最好看超梦幻终极高清美学文生图 2_2097488176058290177.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/AI生成韩系氛围感写真_高级感大片_2059511570060890113.json、图片生成/图生图/FLUX.1AI生成韩系氛围感写真_高级感大片_2074746850103619586.json、图片生成/图生图/抖音快手小红书美女生成，含增大器+人脸固定+兄部调节+囤部调节+配合跳舞生成舞蹈爆款短视频美女图_2022327217883193346.json、图片生成/图生图/美图生成-抖音快手小红书专属_2067492551824863234.json、图片生成/文生图/AI生成韩系氛围感写真_高级感大片_2059080719774871553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：27
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `CR Text Replace`
-- `EmptySD3LatentImage`
-- `JDCN_StringToList`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ProcessString`
+全部 27 个 workflow 都包含：
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `Lora Loader`
+- `PrimitiveFloat`
+- `RHHiddenNodes`
+- `RH_Translator`
 - `SaveImage`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `llama_cpp_clean_states` —— 14/16 个有
-- `KSampler` —— 11/16 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/16 个有
-- `llama_cpp_instruct_adv` —— 10/16 个有
-- `llama_cpp_model_loader` —— 10/16 个有
-- `llama_cpp_parameters` —— 10/16 个有
-- `RH_LLMAPI_NODE` —— 6/16 个有
-- `CFGNorm` —— 5/16 个有
-- `KSamplerAdvanced` —— 5/16 个有
-- `HAIGC_SaveImagesToZip` —— 1/16 个有
-- `LoadImage` —— 1/16 个有
-- `Text Concatenate` —— 1/16 个有
-- `easy cleanGpuUsed` —— 1/16 个有
-- `easy saveText` —— 1/16 个有
+- `Image Comparer (rgthree)` —— 26/27 个有
+- `ImageScaleBy` —— 26/27 个有
+- `SeedVR2LoadDiTModel` —— 26/27 个有
+- `SeedVR2LoadVAEModel` —— 26/27 个有
+- `SeedVR2VideoUpscaler` —— 26/27 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/27 个有
+- `LoadImage` —— 4/27 个有
+- `PreviewAny` —— 4/27 个有
+- `RH_Captioner` —— 4/27 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 8 - 9 | 11 | 96% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 16 | 10% |
-| 采样算法 | euler_ancestral | - | 16 | 62% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 16 | 62% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 1080 | 1024 - 1080 | 27 | 99% |
+| 高度 | 1920 | 1920 - 1920 | 27 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 21/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 8 - 9，11 个样本，取值集中（一致性 96%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，16 个样本，取值分散，一致性仅 10%
-- 采样算法 最常用 euler_ancestral，16 个样本，一致性 62%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，16 个样本，一致性 62%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（21/16 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，观测区间 1024 - 1080，27 个样本，取值集中（一致性 99%）
+- 高度 中位数 1920，观测区间 1920 - 1920，27 个样本，取值集中（一致性 100%）

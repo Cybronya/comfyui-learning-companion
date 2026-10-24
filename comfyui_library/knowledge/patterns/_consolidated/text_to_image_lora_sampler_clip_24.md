@@ -1,87 +1,101 @@
 ---
 name: text_to_image_lora_sampler_clip_24
 type: Text To Image
-frequency: 21
-level: strong
-coverage: 0.890952
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3Director, PreviewAny, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+frequency: 23
+level: weak
+coverage: 0.881261
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, Image Comparer (rgthree), KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3导演台满血版Ref2va全能视频生成 多模态创作_2099188524363898882.json, 视频生成/文生视频/H3导演台满血版Ref2va全能视频生成 多模态创作_2099573426963963905.json, 视频生成/文生视频/H3导演台视频编辑模式_视频处理编辑工具_2100505084298883073.json, 视频生成/文生视频/H3导演台视频编辑模式视频后期处理工具包_2101020573185953794.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流｜人物去油效果稳_2096887110086254594.json, 视频生成/文生视频/MiniMax H3 导演台满血版｜Ref2va全能工作流文生图生视频_2097524361732386817.json, 视频生成/文生视频/MiniMax H3导演台全能工作流视频处理生成工具_2101765600380014594.json, 视频生成/文生视频/MiniMax H3导演台全能工作流视频处理生成工具_2102185481298595842.json, 视频生成/文生视频/MiniMax H3导演台全能工作流，文生视频一站式创作方案_2103630754046631937.json, 视频生成/文生视频/MiniMax H3导演台全能工作流，文生视频视频生视频图生视频方案_2107525467845779457.json, 视频生成/文生视频/MiniMax H3导演台全能机｜灵感来了直接开拍，反推提示词免手写_2099411307467468802.json, 视频生成/文生视频/MiniMax H3导演台满血版工作流｜Ref2va全能视频生成_2097498585955917826.json, 视频生成/文生视频/MiniMax H3｜导演台全能工作流，文生视频图生视频视频生视频三合一_2107283103852089346.json, 视频生成/文生视频/MiniMax_H3导演台满血版工作流｜Ref2va全能视频生成_2098941942678773761.json, 视频生成/文生视频/MiniMax_H3导演台满血版工作流｜Ref2va全能视频生成_2099053865718075393.json, 视频生成/文生视频/MiniMax_H3导演台满血版工作流｜Ref2va全能视频生成_2099679213619073025.json, 视频生成/文生视频/一次60秒全能生成｜海螺H3搅拌手大佬版导演台_2092749641665306626.json, 视频生成/文生视频/一次60秒出片｜海螺 H3 导演台搅拌手大佬版_2090893932635967490.json, 视频生成/文生视频/导演台一次60秒｜海螺H3搅拌手大佬版全能s_2091190910787874818.json, 视频生成/文生视频/搅拌手大佬版导演台｜海螺H3全能60秒生成_2091195180161519618.json, 视频生成/文生视频/海螺H3全能导演台V2 SelfLife视频生成处理工具_2101747376624070658.json]
+members: [图片生成/图生图/Klein搭配QwenImage2.1洗图，去AI感出真实皮肤细节_2110806135577079809.json, 图片生成/图生图/PS级扩图无需参数，角色一致性图生图扩图方案_2110823025108148226.json, 图片生成/图生图/Qwen 2.1+Klein去AI感洗图真实皮肤Removing the “AI-like” Nat_2111978227160932353.json, 图片生成/图生图/QwenImage2.1+Klein去AI感洗图真实皮肤_2110266747344482305.json, 图片生成/图生图/QwenImage2.1+Klein去AI感洗图真实皮肤_2110290173765443586.json, 图片生成/图生图/QwenImage2.1+Klein去AI感洗图真实皮肤_2110294391612076033.json, 图片生成/图生图/QwenImage2.1+Klein洗图｜去AI感真实皮肤质感还原_2110756724784324610.json, 图片生成/图生图/QwenImage2.1+Klein真实皮肤洗图｜高清去AI感实战_2110765479462793218.json, 图片生成/图生图/QwenImage2.1加Klein去AI感洗图，真实皮肤质感还原_2110804601464250369.json, 图片生成/图生图/QwenImage2.1去AI感洗图方案，Klein加持真实皮肤出片_2110809057987743746.json, 图片生成/图生图/QwenImage2.1携手Klein洗图｜真实皮肤去AI感必收_2110759590169239553.json, 图片生成/图生图/real-Flux2+Klein换脸｜局部重绘图生图工作流_2090574124233084930.json, 图片生成/图生图/real-Flux2+Klein换脸｜局部重绘图生图工作流_2090887818322206722.json, 图片生成/图生图/real-Flux2与Klein换脸｜局部重绘图生图工作流_2092078678518882305.json, 图片生成/图生图/real-Flux2与Klein换脸｜局部重绘图生图工作流_2092617560872284161.json, 图片生成/图生图/图片风格迁移转化灵感造像师像素级保留与灵魂级风格注入生成器，图生图方案_2107600836317761538.json, 图片生成/图生图/灵感造像师图片风格迁移｜像素级保留画面灵魂级注入风格，图生图_2107316373348241410.json, 图片生成/图生图/灵感造像师风格迁移｜像素级保留加灵魂级风格注入二合一_2112857706112577537.json, 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json, 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108886341202300929.json, 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108891627866640386.json, 数字人/数字人/QwenImage2.1加Klein去AI感洗图真实皮肤 照片级质感优化_2109018096492175361.json, 数字人/数字人/QwenImage2.1加Klein去AI感洗图真实皮肤 照片级质感优化_2109414860994994177.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_24
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/文生视频/H3导演台满血版Ref2va全能视频生成 多模态创作_2099188524363898882.json、视频生成/文生视频/H3导演台满血版Ref2va全能视频生成 多模态创作_2099573426963963905.json、视频生成/文生视频/H3导演台视频编辑模式_视频处理编辑工具_2100505084298883073.json、视频生成/文生视频/H3导演台视频编辑模式视频后期处理工具包_2101020573185953794.json、视频生成/文生视频/MiniMax H3 导演台全能工作流｜人物去油效果稳_2096887110086254594.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/Klein搭配QwenImage2.1洗图，去AI感出真实皮肤细节_2110806135577079809.json、图片生成/图生图/PS级扩图无需参数，角色一致性图生图扩图方案_2110823025108148226.json、图片生成/图生图/Qwen 2.1+Klein去AI感洗图真实皮肤Removing the “AI-like” Nat_2111978227160932353.json、图片生成/图生图/QwenImage2.1+Klein去AI感洗图真实皮肤_2110266747344482305.json、图片生成/图生图/QwenImage2.1+Klein去AI感洗图真实皮肤_2110290173765443586.json…）
 
 - **类型**：Text To Image
-- **样本数**：21
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：23
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 23 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `JjkText`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `PreviewAny`
-- `SaveVideo`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3DirectorRefine` —— 19/21 个有
-- `孤海注释` —— 19/21 个有
-- `BasicScheduler` —— 18/21 个有
-- `UpscaleModelLoader` —— 17/21 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 14/21 个有
-- `PathchSageAttentionKJ` —— 13/21 个有
-- `SaveImage` —— 13/21 个有
-- `PreviewImage` —— 9/21 个有
-- `EmptyImage` —— 8/21 个有
-- `LoraLoaderBypassModelOnly` —— 6/21 个有
-- `MiniMaxH3DirectorFaceRefine` —— 6/21 个有
-- `MiniMaxH3DirectorSelfLift` —— 6/21 个有
-- `VHS_VideoCombine` —— 6/21 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/21 个有
-- `FastGroupsBypassSwitch` —— 5/21 个有
-- `LoadImage` —— 1/21 个有
-- `ModelAttentionBackend` —— 1/21 个有
+- `GetImageSize` —— 20/23 个有
+- `PreviewAny` —— 18/23 个有
+- `PreviewImage` —— 18/23 个有
+- `JjkText` —— 16/23 个有
+- `solarL_SaveImagesToZip` —— 16/23 个有
+- `ColorMatch` —— 15/23 个有
+- `ImageScaleToTotalPixels` —— 15/23 个有
+- `ImageSharpen` —— 15/23 个有
+- `QwenImagePromptOptimizer` —— 15/23 个有
+- `ResolutionSelector` —— 15/23 个有
+- `孤海注释` —— 15/23 个有
+- `QwenImagePromptStyler` —— 14/23 个有
+- `LayerUtility: ImageReel` —— 7/23 个有
+- `LayerUtility: ImageReelComposit` —— 7/23 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/23 个有
+- `SegmentV2` —— 4/23 个有
+- `easy imageColorMatch` —— 4/23 个有
+- `CR Text Concatenate` —— 3/23 个有
+- `ImageColorMatch+` —— 3/23 个有
+- `PlaySound|pysssss` —— 3/23 个有
+- `Qwen3VL_Chat` —— 3/23 个有
+- `easy imageConcat` —— 3/23 个有
+- `ImageResize+` —— 1/23 个有
+- `InspyrenetRembg` —— 1/23 个有
+- `RHHiddenNodes` —— 1/23 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 21 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 21 | 100% |
-| 采样算法 | er_sde | - | 21 | 100% |
-| 调度器 | beta | - | 21 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
-| 宽度 | 80 | 80 - 80 | 21 | 100% |
-| 高度 | 80 | 80 - 80 | 21 | 100% |
+| 宽度 | 80 | 80 - 2048 | 23 | 0% |
+| 高度 | 80 | 80 - 2048 | 23 | 0% |
+| 采样步数 | 4 | 4 - 30 | 23 | 0% |
+| Prompt 约束强度(CFG) | 4.5 | 2 - 4.5 | 23 | 69% |
+| 采样算法 | er_sde | - | 23 | 70% |
+| 调度器 | beta | - | 23 | 70% |
+| 重绘幅度 | 1 | 1 - 1 | 23 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 25/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，21 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，21 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，21 个样本，一致性 100%
-- 调度器 最常用 beta，21 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
-- 高发问题（25/21 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 2048，23 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 2048，23 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 30，23 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 2 - 4.5，23 个样本
+- 采样算法 最常用 er_sde，23 个样本，一致性 70%
+- 调度器 最常用 beta，23 个样本，一致性 70%
+- 重绘幅度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
+- 高发问题（16/23 个样本）：Steps较低可能导致细节不足

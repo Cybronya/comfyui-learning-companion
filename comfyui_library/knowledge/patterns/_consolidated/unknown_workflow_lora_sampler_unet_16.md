@@ -1,95 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_unet_16
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.820625
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy promptConcat, easy saveVideo, easy showAnything]
-problems: []
+frequency: 21
+level: strong
+coverage: 0.871143
+common_nodes: [CLIPLoader, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json, 数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json, 视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json, 视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json, 视频生成/图生视频/ONE SHOT STORY｜MiniMax H3 一图生成15秒品牌短片_2087898553539710978.json, 视频生成/图生视频/一键MV_2095144928673357825.json, 视频生成/文生视频/Minimax H3 全自动短片（要配合提示词skill使用）林耀_2091930702962057218.json]
+members: [图片生成/图生图/FireRed模特写真套图一致性工作流_2032310944155570178.json, 图片生成/图生图/IP打造多场景生成V2.0_2031530143709143042.json, 图片生成/图生图/Qwen-Edit-2509人物固定多场景生成_1991136693919264769.json, 图片生成/图生图/Qwen-美女一键写真大片_2042090297726869505.json, 图片生成/图生图/Qwen2509人物固定多场景生成_1995445677461266433.json, 图片生成/图生图/qwen-image_qwen_模特套图_分镜头_九宫格套图_2032013275688345602.json, 图片生成/图生图/人物一致性-生成多场景_2012765654553731073.json, 图片生成/图生图/人物一致性-生成多场景（Qwen-人物IP打造）_1990331943755673602.json, 图片生成/图生图/人物一致性-生成多场景（Qwen-人物IP打造）_1995512081849966594.json, 图片生成/图生图/人物一键极致写真两种方案_1996923193854201857.json, 图片生成/图生图/人物不变 多张生成 不同背景姿势服饰V3.0_2032109068378185729.json, 图片生成/图生图/固定人物IP 多张多场景生成V3.0（IP打造）_2031743464865533954.json, 图片生成/图生图/女模特多场景摆拍（Qwen-人物IP打造）_1991886389321027585.json, 图片生成/图生图/模特套图 出图质量高 简单上手_2031725899757916162.json, 图片生成/图生图/模特套图工作流V2(升级可本地部署）_1982986515359891457.json, 图片生成/图生图/模特套图工作流V2(升级可本地部署）_2039503858971451394.json, 图片生成/图生图/模特套图工作流V2(升级可本地部署）_2046107754628128770.json, 图片生成/图生图/模特套图工作流V3(大幅度提升人物一致性和指令遵循）_1983376779484274690.json, 图片生成/图生图/模特套图工作流V4(提升姿态幅度及差异化）_1985516927198109698.json, 图片生成/图生图/自动换背景-姿势服饰-人物不变_2032280897092849666.json, 视频生成/图生视频/图生视频IP一致性 真实自然_2004525590436868097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_16
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Minimax H3 全自动小短片_2089557392110473217.json、数字人/数字人/一键生成一分钟长视频 Minimax H3_2088144166755856385.json、视频生成/图生视频/Minimax H3 全自动小短片_2087477277696282625.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清4+2_2096828253884473345.json、视频生成/图生视频/Minimax+H3+全自动小短片+二采高清8+4_2096863166981566465.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/FireRed模特写真套图一致性工作流_2032310944155570178.json、图片生成/图生图/IP打造多场景生成V2.0_2031530143709143042.json、图片生成/图生图/Qwen-Edit-2509人物固定多场景生成_1991136693919264769.json、图片生成/图生图/Qwen-美女一键写真大片_2042090297726869505.json、图片生成/图生图/Qwen2509人物固定多场景生成_1995445677461266433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：21
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 21 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `JDCN_StringToList`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MotionContext`
-- `MiniMaxH3MotionContextTrim`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `Text Multiline`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy promptConcat`
-- `easy saveVideo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ExtractLinesByIndex` —— 7/8 个有
-- `Int Literal` —— 7/8 个有
-- `LoadAudio` —— 7/8 个有
-- `PreviewAny` —— 7/8 个有
-- `ShowText|pysssss` —— 7/8 个有
-- `Text To Image (mtb)` —— 7/8 个有
-- `easy batchAnything` —— 7/8 个有
-- `Text String Truncate` —— 5/8 个有
-- `DF_Float` —— 3/8 个有
-- `LTXVConcatAVLatent` —— 2/8 个有
-- `LTXVSeparateAVLatent` —— 2/8 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/8 个有
-- `SplitSigmas` —— 2/8 个有
-- `ACE_AudioCrop` —— 1/8 个有
-- `ASRMW` —— 1/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `CreateVideo` —— 1/8 个有
-- `GetAudioDurationFromAudio` —— 1/8 个有
-- `ImageFromBatch` —— 1/8 个有
-- `PreviewAudio` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `RH_LLMAPI_Pro_Node` —— 1/8 个有
-- `SaveVideo` —— 1/8 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/8 个有
-- `easy MiniMaxH3MotionContextHard` —— 1/8 个有
-- `easy clearCacheAll` —— 1/8 个有
-- `ttN concat` —— 1/8 个有
+- `RH_LLMAPI_NODE` —— 19/21 个有
+- `AILab_QwenVL` —— 17/21 个有
+- `CR Text` —— 17/21 个有
+- `EmptySD3LatentImage` —— 16/21 个有
+- `ProcessString` —— 16/21 个有
+- `CR Text Replace` —— 15/21 个有
+- `TextEncodeQwenImageEdit` —— 15/21 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 15/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/21 个有
+- `GetImageSize` —— 6/21 个有
+- `TextEncodeQwenImageEditPlus` —— 6/21 个有
+- `Anything Everywhere` —— 4/21 个有
+- `MuyeTextEditOutput` —— 1/21 个有
+- `Qwen3VL_Chat` —— 1/21 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/21 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 4 - 8 | 21 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 21 | 100% |
+| 采样算法 | er_sde | - | 21 | 90% |
+| 调度器 | kl_optimal | - | 21 | 38% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 26/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 4 - 8，21 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，21 个样本，一致性 90%
+- 调度器 最常用 kl_optimal，21 个样本，一致性 38%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 高发问题（26/21 个样本）：Steps较低可能导致细节不足

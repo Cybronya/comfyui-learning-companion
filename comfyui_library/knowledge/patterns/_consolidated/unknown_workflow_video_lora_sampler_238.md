@@ -7,13 +7,13 @@ coverage: 0.883
 common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, ImageToMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddTTMLatents, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1990441820280807425.json, 视频生成/图生视频/1991157733022085121.json, 视频生成/图生视频/1990244516261228546.json, 视频生成/图生视频/1990327033626587137.json, 视频生成/图生视频/1990969622830718977.json, 视频生成/图生视频/1991333399692685313.json, 视频生成/图生视频/1990459550644002818.json, 视频生成/图生视频/1999381454922579970.json]
+members: [视频生成/图生视频/(手动工具版)TTM路径编辑图生视频V1_1990441820280807425.json, 视频生成/图生视频/TTM-视频主体轨迹移动控制_1991157733022085121.json, 视频生成/图生视频/TTM任意编辑视频生成-Aiwood_1990244516261228546.json, 视频生成/图生视频/TTM编辑轨迹动作引导生成视频_1990327033626587137.json, 视频生成/图生视频/Time-to-Move框架：关键帧引导生成AI视频，精确控制视频元素移动！_1990969622830718977.json, 视频生成/图生视频/Wan2_2_I2V_TimeToMove 运动控制图生视频_1991333399692685313.json, 视频生成/图生视频/wanvideo2_2_I2V_A14B_TimeToMove_example_1990459550644002818.json, 视频生成/图生视频/精确版 TTM-视频主体轨迹移动控制_1999381454922579970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_238
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/1990441820280807425.json、视频生成/图生视频/1991157733022085121.json、视频生成/图生视频/1990244516261228546.json、视频生成/图生视频/1990327033626587137.json、视频生成/图生视频/1990969622830718977.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/(手动工具版)TTM路径编辑图生视频V1_1990441820280807425.json、视频生成/图生视频/TTM-视频主体轨迹移动控制_1991157733022085121.json、视频生成/图生视频/TTM任意编辑视频生成-Aiwood_1990244516261228546.json、视频生成/图生视频/TTM编辑轨迹动作引导生成视频_1990327033626587137.json、视频生成/图生视频/Time-to-Move框架：关键帧引导生成AI视频，精确控制视频元素移动！_1990969622830718977.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8

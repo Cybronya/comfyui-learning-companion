@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_generic_175
 type: Unknown Workflow
-frequency: 7
+frequency: 11
 level: moderate
-coverage: 0.679143
-common_nodes: [FishS2MultiSpeakerTTS, FishS2VoiceCloneTTS, PrimitiveStringMultiline, RHHiddenNodes, SaveAudioMP3, ShowText|pysssss, WujiAudioLoader, WujiCleaner]
+coverage: 0.856909
+common_nodes: [Audio To Text (mtb), CR Prompt Text, Load Whisper (mtb), LoadAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2060210406785896449.json, 音频生成/音频生成/FishAudio+S2+TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2062000916588486658.json, 音频生成/音频生成/单人_双人语音 复制情绪生成音频 FishAudio S2 TTS自适应情绪跨语言音频克隆_2041317897536016386.json, 音频生成/音频生成/自适应情绪跨语言音频克隆（单人or双人）_2045491676369657858.json, 音频生成/音频生成/（单人or双人）FishAudio S2 TTS自适应情绪跨语言音频克隆工作流_2040380303071514627.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json, 音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039309185434783746.json, 音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039694725573255170.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039215676392480769.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS_2039696306108633089.json, 音频生成/音频生成/单人语音克隆TTS_2044697057641897985.json, 音频生成/音频生成/双人语音克隆对话_2044482244785475586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_175
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2060210406785896449.json、音频生成/音频生成/FishAudio+S2+TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2062000916588486658.json、音频生成/音频生成/单人_双人语音 复制情绪生成音频 FishAudio S2 TTS自适应情绪跨语言音频克隆_2041317897536016386.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039303040481632258.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2+全节点注释_2042480932396994561.json、音频生成/音频生成/LongCat-AudioDiT-音频生成-v2_2042473151765942274.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039208806344826881.json、音频生成/音频生成/LongCat-AudioDiT单人语音克隆TTS_2039293692409815042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `FishS2MultiSpeakerTTS`
-- `FishS2VoiceCloneTTS`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
+全部 11 个 workflow 都包含：
+- `Audio To Text (mtb)`
+- `CR Prompt Text`
+- `Load Whisper (mtb)`
+- `LoadAudio`
 - `SaveAudioMP3`
-- `ShowText|pysssss`
-- `WujiAudioLoader`
-- `WujiCleaner`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
+- `SaveAudio` —— 10/11 个有
+- `NormalizeAudioLoudness` —— 9/11 个有
+- `LongCatVoiceCloneTTS` —— 8/11 个有
+- `LongCatMultiSpeakerTTS` —— 3/11 个有
+- `TrimAudioDuration` —— 2/11 个有
+- `TDQwen3TTSDefineSpeaker` —— 1/11 个有
 
 ## 典型参数
 

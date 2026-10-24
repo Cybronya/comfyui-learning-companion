@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_590
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.861
-common_nodes: [LoadAudio, RH_Wan25_T2V, SaveVideo]
+coverage: 0.8054
+common_nodes: [LoadAudio, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/1978792977684434945.json, 视频生成/文生视频/1971189254913200130.json, 视频生成/文生视频/Wan2.5 文生视频_1984991216800600065.json]
+members: [视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json, 视频生成/文生视频/Wan 3.0多参视频生成+全节点注释_2091887688264802306.json, 视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_590
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1978792977684434945.json、视频生成/文生视频/1971189254913200130.json、视频生成/文生视频/Wan2.5 文生视频_1984991216800600065.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json、视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json、视频生成/文生视频/Wan 3.0多参视频生成+全节点注释_2091887688264802306.json、视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadAudio`
-- `RH_Wan25_T2V`
+- `LoadImage`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
+- `LoadVideo` —— 4/5 个有
+- `RH_AlibabaWan30ReferenceToVideo` —— 3/5 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

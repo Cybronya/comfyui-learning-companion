@@ -1,77 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_clip_117
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.723
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, EmptyImage, EmptySD3LatentImage, GetImageSizeAndCount, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, RH_LLMAPI_NODE, SaveImage, StringFunction|pysssss, Text Multiline, VAEDecode, VAELoader, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy showAnything]
-problems: [Steps较低可能导致细节不足]
-missing: [StringFunction|pysssss, Text Multiline, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy saveText]
-members: [图片生成/文生图/1972956269776646145.json, 图片生成/文生图/1983723915740651522.json, 图片生成/文生图/生图-文生图(角色白底图)-qwen-image-2512-8步_2007728914164092929.json]
+frequency: 5
+level: weak
+coverage: 0.9572
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+problems: []
+missing: []
+members: [视频生成/图生视频/wan2.2高低频首尾帧生视频低配电脑可下载本地部署_2076552090461229058.json, 视频生成/图生视频/wan首尾帧加速版_2000831805769084930.json, 视频生成/图生视频/【官版】Wan2.2 14B Fun Inp首尾帧_1956634658516471809.json, 视频生成/图生视频/【老金驿站】Wan2.2Fun-Inp首尾帧原生Comfyui工作流_1956152665396969474.json, 视频生成/图生视频/【阡陌】SageAttention+wan2.2首尾帧生视频加速版_1968555612659437570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_117
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/1972956269776646145.json、图片生成/文生图/1983723915740651522.json、图片生成/文生图/生图-文生图(角色白底图)-qwen-image-2512-8步_2007728914164092929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.2高低频首尾帧生视频低配电脑可下载本地部署_2076552090461229058.json、视频生成/图生视频/wan首尾帧加速版_2000831805769084930.json、视频生成/图生视频/【官版】Wan2.2 14B Fun Inp首尾帧_1956634658516471809.json、视频生成/图生视频/【老金驿站】Wan2.2Fun-Inp首尾帧原生Comfyui工作流_1956152665396969474.json、视频生成/图生视频/【阡陌】SageAttention+wan2.2首尾帧生视频加速版_1968555612659437570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：72%
+- **样本数**：5
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGNorm`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyImage`
-- `EmptySD3LatentImage`
-- `GetImageSizeAndCount`
-- `KSampler`
+- `CreateVideo`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `StringFunction|pysssss`
-- `Text Multiline`
+- `ModelSamplingSD3`
+- `SaveVideo`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 2/3 个有
-- `easy saveText` —— 2/3 个有
-- `NunchakuQwenImageDiTLoader` —— 1/3 个有
-- `easy imageRemBg` —— 1/3 个有
+- `WanFirstLastFrameToVideo` —— 3/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `WanFunInpaintToVideo` —— 2/5 个有
+- `ModelPatchTorchSettings` —— 1/5 个有
+- `UnetLoaderGGUF` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `孤海注释` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 3 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 5 | 60% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 5 | 11% |
+| 采样算法 | 1 | 1 - 3.5 | 5 | 33% |
+| 调度器 | euler | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，3 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
-- 这些节点还没有知识卡，系统对它们的理解有限：StringFunction|pysssss、Text Multiline、easy anythingIndexSwitch、easy int、easy positive
+- 采样步数 最常用 randomize，5 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，5 个样本，取值分散，一致性仅 11%
+- 采样算法 中位数 1，观测区间 1 - 3.5，5 个样本，取值分散，一致性仅 33%
+- 调度器 最常用 euler，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

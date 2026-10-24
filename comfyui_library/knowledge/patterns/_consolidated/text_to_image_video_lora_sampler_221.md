@@ -3,22 +3,22 @@ name: text_to_image_video_lora_sampler_221
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.4895
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, INTConstant, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, ImpactConditionalBranch, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, TTResolutionSelector, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy boolean, easy imageRemBg, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.854
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, ConditioningZeroOut, DF_Integer, DifferentialDiffusion, EmptyLatentImage, Fast Groups Bypasser (rgthree), INTConstant, ImageResizeKJv2, Int, JWStringConcat, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, ProcessString, Qwen3_VQA, RIFE VFI, SaveImage, SimpleMath+, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanImageToVideo, WanMoeKSampler, easy cleanGpuUsed, easy clearCacheAll, easy promptLine, easy showAnything, solarL_SaveImagesToZip, wanBlockSwap]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/超强快速动作迁移｜Scail2视频生图生视频_2093433820107329538.json, 视频生成/图生视频/超强快速动作迁移｜Scail2视频生视频一键处理_2093763311870496770.json]
+members: [视频生成/图生视频/图生图自动分镜电影级视频生成 多场景创作工具_2099937489904553985.json, 视频生成/图生视频/图生图自动分镜电影级视频生成_多场景创作工具_2100566335037198337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_221
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/超强快速动作迁移｜Scail2视频生图生视频_2093433820107329538.json、视频生成/图生视频/超强快速动作迁移｜Scail2视频生视频一键处理_2093763311870496770.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生图自动分镜电影级视频生成 多场景创作工具_2099937489904553985.json、视频生成/图生视频/图生图自动分镜电影级视频生成_多场景创作工具_2100566335037198337.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -29,37 +29,47 @@ source: knowledge_consolidation
 - `CLIPVisionLoader`
 - `CR Prompt Text`
 - `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
+- `ConditioningZeroOut`
+- `DF_Integer`
+- `DifferentialDiffusion`
 - `EmptyLatentImage`
-- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
 - `INTConstant`
-- `ImageConcanate`
-- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `ImpactConditionalBranch`
+- `Int`
+- `JWStringConcat`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SetNode`
-- `TTResolutionSelector`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `ProcessString`
+- `Qwen3_VQA`
+- `RIFE VFI`
+- `SaveImage`
+- `SimpleMath+`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanContextWindowsManual`
-- `WanSCAILToVideo`
-- `easy boolean`
-- `easy imageRemBg`
+- `WanFirstLastFrameToVideo`
+- `WanImageToVideo`
+- `WanMoeKSampler`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy promptLine`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
+- `wanBlockSwap`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

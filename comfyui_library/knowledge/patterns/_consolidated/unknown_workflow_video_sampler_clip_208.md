@@ -1,85 +1,60 @@
 ---
 name: unknown_workflow_video_sampler_clip_208
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.517
-common_nodes: [AudioConcat, CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoaderGGUF, EmptyImage, EmptyLTXVLatentVideo, GetImageRangeFromBatch, GetImageSize, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, ImpactExecutionOrderController, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LoadImage, PreviewImage, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: strong
+coverage: 0.852333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyHunyuanLatentVideo, ImageFromBatch+, KSamplerAdvanced, ModelSamplingSD3, PrimitiveInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2012502570719252481.json, 视频生成/图生视频/2012791378404712449.json]
+members: [视频生成/文生视频/Qwen3 VL视频反推+Wan2.2 SmoothMix文生视频 无需输入提示词_1981207594238992386.json, 视频生成/文生视频/Wan2.2 SmoothMixV2文生视频高动态（官方版）_1980635563638345729.json, 视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_208
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2012502570719252481.json、视频生成/图生视频/2012791378404712449.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Qwen3 VL视频反推+Wan2.2 SmoothMix文生视频 无需输入提示词_1981207594238992386.json、视频生成/文生视频/Wan2.2 SmoothMixV2文生视频高动态（官方版）_1980635563638345729.json、视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoaderGGUF`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `ImpactExecutionOrderController`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVScheduler`
-- `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LoadImage`
-- `PreviewImage`
-- `PrimitiveFloat`
+- `CR Text`
+- `EmptyHunyuanLatentVideo`
+- `ImageFromBatch+`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
 - `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `LTXAVTextEncoderLoader` —— 1/2 个有
-- `LTXVGemmaCLIPModelLoader` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LoaderGGUF` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
-- `VAELoaderKJ` —— 1/2 个有
-- `easy ckptNames` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `AILab_QwenVL` —— 1/3 个有
+- `CR Text Concatenate` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `String` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1.1 | 3 | 95% |
+| 调度器 | uni_pc | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -87,6 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.1，3 个样本，取值集中（一致性 95%）
+- 调度器 最常用 uni_pc，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

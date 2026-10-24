@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_sampler_9
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, SaveAudio, Text Multiline]
+coverage: 0.9065
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Captioner, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json, 音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json, 音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json, 音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS极速版_1969791131460530178.json]
+members: [图片生成/图生图/RunningHub USO_1962755502922969089.json, 图片生成/图生图/USO-最强风格迁移-角色一致性_1965045967898689537.json, 图片生成/图生图/USO-风格迁移-角色一致性_1964332118732062722.json, 图片生成/图生图/USO最强风格迁移_1965061278253371394.json, 图片生成/图生图/【gen全能视频Si】uso-ipadaptor参考风格一致性图生图_1963523932367441922.json, 图片生成/图生图/字节USO-FLUX-双图参考-木刻版画风格女孩手捧郁金香_1964483417255628801.json, 图片生成/图生图/字节USO-FLUX-双图参考-机甲战士_1964479146338435073.json, 图片生成/图生图/画风迁移_1976916500256886786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json、音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json、音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json、音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/RunningHub USO_1962755502922969089.json、图片生成/图生图/USO-最强风格迁移-角色一致性_1965045967898689537.json、图片生成/图生图/USO-风格迁移-角色一致性_1964332118732062722.json、图片生成/图生图/USO最强风格迁移_1965061278253371394.json、图片生成/图生图/【gen全能视频Si】uso-ipadaptor参考风格一致性图生图_1963523932367441922.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `Text Multiline`
+全部 8 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `RH_Captioner`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 3/6 个有
-- `NTCosyVoiceInstruct2Sampler` —— 3/6 个有
-- `PreviewAudio` —— 1/6 个有
+- `CR Text Concatenate` —— 7/8 个有
+- `RH_Translator` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `ImageConcanate` —— 3/8 个有
+- `Int` —— 3/8 个有
+- `PreviewImage` —— 2/8 个有
 
 ## 典型参数
 

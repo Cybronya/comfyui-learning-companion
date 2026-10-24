@@ -1,72 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_79
 type: Unknown Workflow
-frequency: 8
+frequency: 11
 level: moderate
-coverage: 0.80625
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, KSamplerSelect, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.887
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Ideogram4 文生图-写实摄影专用工作流_2066088865739399169.json, 图片生成/文生图/Ideogram4 精准定位文生图（平面设计_海报设计_角色场景设计）_2063567041306652673.json, 图片生成/文生图/Ideogram4_int8文生图_2080489687994687490.json, 图片生成/文生图/Ideogram4全新玩法-指哪改哪_2064533560844967938.json, 图片生成/文生图/Ideogram4动漫文生图_2071282232492388353.json, 图片生成/文生图/Ideogram4文生图_2064974101588045825.json, 图片生成/文生图/Ideogram4文生图工作流_2085587398561456129.json, 图片生成/文生图/Ideogram4文生图自然语言LLM生成官方提示词版_2073724732792459266.json]
+members: [图片生成/图生图/Bernini图片编辑+完美换装_2062428428065923073.json, 图片生成/图生图/F-2klein 9b无塑料感高清修复_2064209222493102082.json, 图片生成/图生图/F.2klein 9b无塑料感高清修复强烈推荐版_2062160878765694977.json, 图片生成/图生图/Klein 高清放大修复V2_2061130933612404737.json, 图片生成/图生图/Klein无塑料感高清修复_2061243781923557377.json, 图片生成/图生图/Klein调色_2055545779061829634.json, 图片生成/图生图/图像调色板-0偏移_2055573571447074818.json, 图片生成/图生图/模糊图片变清晰  图像清晰修复 高清放大_2061621095765204994.json, 图片生成/图生图/照片调色Color Master_ Multiple Photo Editing_2092443486053294081.json, 图片生成/图生图/调色大师 照片调色多风格-多种预设可选择_flux2+kelin_2084143743241900034.json, 图片生成/图生图/调色大师-多种预设选择_flux2 kelin_2064907302485975041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_79
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Ideogram4 文生图-写实摄影专用工作流_2066088865739399169.json、图片生成/文生图/Ideogram4 精准定位文生图（平面设计_海报设计_角色场景设计）_2063567041306652673.json、图片生成/文生图/Ideogram4_int8文生图_2080489687994687490.json、图片生成/文生图/Ideogram4全新玩法-指哪改哪_2064533560844967938.json、图片生成/文生图/Ideogram4动漫文生图_2071282232492388353.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Bernini图片编辑+完美换装_2062428428065923073.json、图片生成/图生图/F-2klein 9b无塑料感高清修复_2064209222493102082.json、图片生成/图生图/F.2klein 9b无塑料感高清修复强烈推荐版_2062160878765694977.json、图片生成/图生图/Klein 高清放大修复V2_2061130933612404737.json、图片生成/图生图/Klein无塑料感高清修复_2061243781923557377.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGOverride`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `DualModelGuider`
-- `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `KSamplerSelect`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSamplerAdvanced`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyNumberConvert` —— 7/8 个有
-- `CustomCombo` —— 7/8 个有
-- `JsonExtractString` —— 7/8 个有
-- `ResolutionSelector` —— 7/8 个有
-- `StringReplace` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `Ideogram4PromptBuilderKJ` —— 4/8 个有
-- `PreviewAny` —— 4/8 个有
-- `LoraLoaderModelOnly` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `CR Text` —— 1/8 个有
-- `ComfySwitchNode` —— 1/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `LayerColor: BrightnessContrastV2` —— 1/8 个有
-- `LoadImage` —— 1/8 个有
-- `ModelSamplingAuraFlow` —— 1/8 个有
-- `PrimitiveBoolean` —— 1/8 个有
-- `RH_Translator` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `TextGenerate` —— 1/8 个有
-- `easy imageChooser` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `Image Comparer (rgthree)` —— 10/11 个有
+- `ReferenceLatent` —— 10/11 个有
+- `VAEEncode` —— 10/11 个有
+- `ImageResizeKJv2` —— 9/11 个有
+- `LoraLoaderModelOnly` —— 9/11 个有
+- `LatentBlend` —— 5/11 个有
+- `PreviewImage` —— 5/11 个有
+- `easy imageColorMatch` —— 5/11 个有
+- `CR Text` —— 4/11 个有
+- `Int` —— 4/11 个有
+- `Anything Everywhere3` —— 3/11 个有
+- `Float` —— 3/11 个有
+- `ImpactSwitch` —— 3/11 个有
+- `easy imageConcat` —— 3/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `BerniniConditioning` —— 1/11 个有
+- `ModelSamplingSD3` —— 1/11 个有
+- `PrimitiveFloat` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 11 | 73% |
+| Prompt 约束强度(CFG) | 4 | 4 - 12 | 11 | 51% |
+| 采样算法 | 1 | 1 - 1 | 11 | 100% |
+| 调度器 | sa_solver | - | 11 | 45% |
+| 重绘幅度 | simple | - | 11 | 55% |
 
 ## 常见问题
 
@@ -74,4 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，11 个样本，一致性 73%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 12，11 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 调度器 最常用 sa_solver，11 个样本，一致性 45%
+- 重绘幅度 最常用 simple，11 个样本，一致性 55%

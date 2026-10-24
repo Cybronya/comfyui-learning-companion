@@ -1,65 +1,70 @@
 ---
 name: unknown_workflow_sampler_clip_vae_22
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: strong
-coverage: 0.7582
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSamplerSelect, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, VAEDecode, VAELoader]
+coverage: 0.7755
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelLoader, VAEDecode]
 problems: []
-missing: [CR Simple Image Compare, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, easy cleanGpuUsed]
-members: [图片生成/文生图/1924342937822687234.json, 图片生成/文生图/1924756669698330625.json, 图片生成/文生图/1943500030101626881.json, 图片生成/文生图/反推提示词 - 实用流 - joy3+joy2 + 生图对比_2017595939619344385.json, 图片生成/文生图/图片反推提示词实用工作流图生文字对比提示词图片_2069460878025650177.json]
+missing: []
+members: [comfyui-workflow-templates-json/flux_redux_model_example.json, 图片生成/图生图/5s出图  仿写小红书美女  FluxRedux+Nunchaku_1916865920277614594.json, 图片生成/图生图/FLUX_Redux_纯净(图生图)_1920006003302006785.json, 图片生成/图生图/Flex.1 alpha Redux 基础工作流_1908349003488964610.json, 图片生成/图生图/FluxRedux学习必看  attn类型降低redux影响力_1916475712205950977.json, 图片生成/图生图/学习必看  Redux高阶应用  蒙版区域起作用_1916884651116265473.json, 图片生成/图生图/文生图风格迁移   FluxRedux+条件合并  使得提示词发挥作用_1917400738257895425.json, 图片生成/图生图/最新Redux多图融合  可调节强度_1917413870846017538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_22
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1924342937822687234.json、图片生成/文生图/1924756669698330625.json、图片生成/文生图/1943500030101626881.json、图片生成/文生图/反推提示词 - 实用流 - joy3+joy2 + 生图对比_2017595939619344385.json、图片生成/文生图/图片反推提示词实用工作流图生文字对比提示词图片_2069460878025650177.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/flux_redux_model_example.json、图片生成/图生图/5s出图  仿写小红书美女  FluxRedux+Nunchaku_1916865920277614594.json、图片生成/图生图/FLUX_Redux_纯净(图生图)_1920006003302006785.json、图片生成/图生图/Flex.1 alpha Redux 基础工作流_1908349003488964610.json、图片生成/图生图/FluxRedux学习必看  attn类型降低redux影响力_1916475712205950977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `CLIPVisionLoader`
 - `FluxGuidance`
 - `KSamplerSelect`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
+- `StyleModelLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Joy_caption_two` —— 4/5 个有
-- `Joy_caption_two_load` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 4/5 个有
-- `NunchakuFluxDiTLoader` —— 3/5 个有
-- `RH_Translator` —— 3/5 个有
-- `CR Simple Image Compare` —— 1/5 个有
-- `CheckpointLoaderSimple` —— 1/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `UNETLoader` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `CLIPVisionEncode` —— 7/8 个有
+- `EmptySD3LatentImage` —— 7/8 个有
+- `ModelSamplingFlux` —— 7/8 个有
+- `StyleModelApply` —— 7/8 个有
+- `VAELoader` —— 7/8 个有
+- `GetNode` —— 5/8 个有
+- `INTConstant` —— 5/8 个有
+- `SetNode` —— 5/8 个有
+- `DualCLIPLoader` —— 4/8 个有
+- `UNETLoader` —— 4/8 个有
+- `NunchakuFluxDiTLoader` —— 3/8 个有
+- `NunchakuFluxLoraLoader` —— 3/8 个有
+- `NunchakuTextEncoderLoader` —— 3/8 个有
+- `LoraLoader` —— 2/8 个有
+- `CheckpointLoaderSimple` —— 1/8 个有
+- `ConditioningCombine` —— 1/8 个有
+- `LayerMask: MaskPreview` —— 1/8 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `ReduxAdvanced` —— 1/8 个有
+- `VAEEncode` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 768 - 768 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -67,6 +72,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 768 - 768，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Simple Image Compare、LayerUtility: ImageScaleByAspectRatio V2、LayerUtility: JoyCaptionBeta1、LayerUtility: JoyCaptionBeta1ExtraOptions、LayerUtility: LoadJoyCaptionBeta1Model
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

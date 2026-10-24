@@ -1,70 +1,80 @@
 ---
 name: unknown_workflow_video_sampler_clip_58
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.880111
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, ImageLoader, ImageResize+, KSamplerAdvanced, ModelSamplingSD3, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, wanBlockSwap]
+frequency: 10
+level: weak
+coverage: 0.975
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1988486488964947969.json, 视频生成/图生视频/1986094815710511106.json, 视频生成/图生视频/1988479150342193154.json, 视频生成/图生视频/2057468310819786754.json, 视频生成/图生视频/wan2.2图生视频_2100280347178135554.json, 视频生成/图生视频/wan2.2图生视频_2101483714801913858.json, 视频生成/图生视频/wan2.2图生视频_2102213428411715585.json, 视频生成/图生视频/1986819504288296962.json, 视频生成/图生视频/2021849082557370369.json]
+members: [视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json, "视频生成/图生视频/Wan2.2官方ComfyUI图生视频,高质量生成细节把控_1951292355926282242.json", 视频生成/图生视频/YJ-APP-Wan2.2-Smooth-I2V_2038634972579373058.json, 视频生成/图生视频/wan2.2 Smooth Mix 高级电影质感和短剧—— 图生视频_1980633692215361538.json, 视频生成/图生视频/wan2.2 图生视频_2006925723407228930.json, 视频生成/图生视频/wan2.2 首帧图生视频字字1080_2018657772811853825.json, 视频生成/图生视频/wan2.2 首帧图生视频字字720_2018729929084510209.json, 视频生成/图生视频/一键生成花材展示电商短视频_2009598515076407298.json, 视频生成/图生视频/电影探班-爆款复刻-简单易用-优化版效果最好-独家原创工作流_2009284920207745026.json, 视频生成/图生视频/视频-您与建筑大师的动态合影工作流_2017792462663716865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_58
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/1988486488964947969.json、视频生成/图生视频/1986094815710511106.json、视频生成/图生视频/1988479150342193154.json、视频生成/图生视频/2057468310819786754.json、视频生成/图生视频/wan2.2图生视频_2100280347178135554.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json、视频生成/图生视频/Wan2.2官方ComfyUI图生视频,高质量生成细节把控_1951292355926282242.json、视频生成/图生视频/YJ-APP-Wan2.2-Smooth-I2V_2038634972579373058.json、视频生成/图生视频/wan2.2 Smooth Mix 高级电影质感和短剧—— 图生视频_1980633692215361538.json、视频生成/图生视频/wan2.2 图生视频_2006925723407228930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：10
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `INTConstant`
-- `ImageLoader`
-- `ImageResize+`
+- `ImageResizeKJv2`
 - `KSamplerAdvanced`
+- `LoadImage`
 - `ModelSamplingSD3`
-- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFEInterpolation` —— 5/9 个有
-- `GetNode` —— 4/9 个有
-- `Int` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `SetNode` —— 4/9 个有
-- `easy cleanGpuUsed` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `CR Text Concatenate` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `MultiplePathsInput` —— 2/9 个有
-- `RIFE VFI` —— 2/9 个有
-- `Text Multiline (Code Compatible)` —— 2/9 个有
-- `IntToText` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
-- `ttN concat` —— 1/9 个有
+- `CLIPVisionEncode` —— 9/10 个有
+- `CLIPVisionLoader` —— 9/10 个有
+- `PathchSageAttentionKJ` —— 9/10 个有
+- `easy cleanGpuUsed` —— 9/10 个有
+- `ImpactInt` —— 8/10 个有
+- `ModelPatchTorchSettings` —— 8/10 个有
+- `Seed (rgthree)` —— 8/10 个有
+- `SimpleMath+` —— 8/10 个有
+- `WanImageToVideo` —— 7/10 个有
+- `Fast Bypasser (rgthree)` —— 5/10 个有
+- `Mute / Bypass Repeater (rgthree)` —— 5/10 个有
+- `PrimitiveStringMultiline` —— 5/10 个有
+- `wanBlockSwap` —— 5/10 个有
+- `ImageScaleBy` —— 4/10 个有
+- `RIFE VFI` —— 4/10 个有
+- `LoadAudio` —— 3/10 个有
+- `RHHiddenNodes` —— 3/10 个有
+- `WanFirstLastFrameToVideo` —— 3/10 个有
+- `JWInteger` —— 2/10 个有
+- `easy anythingIndexSwitch` —— 2/10 个有
+- `easy batchAnything` —— 2/10 个有
+- `easy forLoopEnd` —— 2/10 个有
+- `easy forLoopStart` —— 2/10 个有
+- `CR Text Concatenate` —— 1/10 个有
+- `ImageBatchGet` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `PainterI2V` —— 1/10 个有
+- `TextInput_` —— 1/10 个有
+- `easy imageSplitGrid` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 56% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+| 采样步数 | randomize | - | 10 | 60% |
+| Prompt 约束强度(CFG) | 7 | 4 - 20 | 10 | 42% |
+| 采样算法 | 1 | 1 - 3.5 | 10 | 40% |
+| 调度器 | euler_ancestral | - | 10 | 60% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
@@ -72,8 +82,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 56%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 采样步数 最常用 randomize，10 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 4 - 20，10 个样本，取值分散，一致性仅 42%
+- 采样算法 中位数 1，观测区间 1 - 3.5，10 个样本，取值分散，一致性仅 40%
+- 调度器 最常用 euler_ancestral，10 个样本，一致性 60%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

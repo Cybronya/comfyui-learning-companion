@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_246
 type: Unknown Workflow
-frequency: 5
+frequency: 9
 level: moderate
-coverage: 0.7862
-common_nodes: [ElevenLabsInstantVoiceClone, ElevenLabsVoiceSelector, LoadAudio, RecordAudio, SaveAudioAdvanced]
+coverage: 0.845
+common_nodes: [LoadImage, RH_Sora2_I2V, RH_Translator, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json]
+members: [视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0-傲雪aigc_1980560171560779777.json, 视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0_1983409112073576449.json, 视频生成/图生视频/图生视频全能视频S.0（根叔）_1977231674360635394.json, 视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_1976172660042416130.json, 视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_2027277300596744193.json, 视频生成/文生视频/全能视频S文生视频+图生视频-嘻哈男孩_1974250934685577218.json, 视频生成/文生视频/全能视频S文生视频+图生视频-小象吃香蕉_1974258869088161793.json, 视频生成/文生视频/全能视频S文生视频+图生视频-走红毯_1974255092520103937.json, 视频生成/文生视频/全能视频S文生视频+图生视频_1974247296890179585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_246
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0-傲雪aigc_1980560171560779777.json、视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0_1983409112073576449.json、视频生成/图生视频/图生视频全能视频S.0（根叔）_1977231674360635394.json、视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_1976172660042416130.json、视频生成/文生视频/全能视频S 工作流大全（文生视频和图生视频支持比例调整）一个工作流搞定_2027277300596744193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ElevenLabsInstantVoiceClone`
-- `ElevenLabsVoiceSelector`
-- `LoadAudio`
-- `RecordAudio`
-- `SaveAudioAdvanced`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `RH_Translator`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ElevenLabsTextToDialogue` —— 2/5 个有
-- `ElevenLabsTextToSpeech` —— 2/5 个有
-- `ElevenLabsSpeechToSpeech` —— 1/5 个有
+- `RH_Sora2_T2V` —— 6/9 个有
+- `easy showAnything` —— 4/9 个有
+- `VHS_LoadVideo` —— 1/9 个有
 
 ## 典型参数
 

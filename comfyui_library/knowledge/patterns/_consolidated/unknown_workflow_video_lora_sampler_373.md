@@ -2,66 +2,61 @@
 name: unknown_workflow_video_lora_sampler_373
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.996
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, Float to Int, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, RHHiddenNodes, RH_GetAudioDuration, SimpleMath+, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner]
+level: moderate
+coverage: 0.774833
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, HyVideoBlockSwap, HyVideoDecode, HyVideoEncodeKeyframes, HyVideoEnhanceAVideo, HyVideoLoraSelect, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEncode, HyVideoVAELoader, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2017919302799724546.json, 视频生成/图生视频/2017944917347147778.json, 视频生成/图生视频/2018324382791245826.json, 视频生成/图生视频/2026965800891981825.json, 视频生成/图生视频/2027307352143171585.json, 视频生成/图生视频/2019421530488315905.json]
+members: [视频生成/图生视频/混元首尾帧图生视频加速版_1905259795853529090.json, 视频生成/图生视频/🦖hunyuan首尾帧（0310更新）_1898964861882454017.json, 视频生成/文生视频/【升级进化】混元首尾帧工作流_1902236284432359426.json, 视频生成/文生视频/混元前后关键帧控制-图生视频工作流_2041411541697830913.json, 视频生成/文生视频/混元首尾帧工作流_1899158148928720898.json, 视频生成/文生视频/视频工作流_1937073069645271041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_373
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2017919302799724546.json、视频生成/图生视频/2017944917347147778.json、视频生成/图生视频/2018324382791245826.json、视频生成/图生视频/2026965800891981825.json、视频生成/图生视频/2027307352143171585.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/混元首尾帧图生视频加速版_1905259795853529090.json、视频生成/图生视频/🦖hunyuan首尾帧（0310更新）_1898964861882454017.json、视频生成/文生视频/【升级进化】混元首尾帧工作流_1902236284432359426.json、视频生成/文生视频/混元前后关键帧控制-图生视频工作流_2041411541697830913.json、视频生成/文生视频/混元首尾帧工作流_1899158148928720898.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `ColorMatch`
-- `Float to Int`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadAudio`
+- `DownloadAndLoadHyVideoTextEncoder`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncodeKeyframes`
+- `HyVideoEnhanceAVideo`
+- `HyVideoLoraSelect`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTextEncode`
+- `HyVideoVAELoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelPatchTorchSettings`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `RHHiddenNodes`
-- `RH_GetAudioDuration`
-- `SimpleMath+`
-- `SomethingToString`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `WujiCleaner`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageSizeAndCount` —— 5/6 个有
+- `HyVideoTorchCompileSettings` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `ImageScale` —— 5/6 个有
+- `GetNode` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `AddLabel` —— 2/6 个有
+- `EmptyImage` —— 2/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `ColorMatch` —— 1/6 个有
+- `ImageResizeKJ` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | euler | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,8 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

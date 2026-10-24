@@ -1,72 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_192
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.887
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.9086
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptySD3LatentImage, FluxKontextImageScale, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 合集 多参视频加速版本  文生视频  首位帧视频_2085757259535175682.json, 视频生成/图生视频/MiniMax H3 图生视频_2084120970457079810.json, 视频生成/图生视频/MiniMax H3开源版  多参 图生视频  文生视频 首尾帧 视频合集_2084290396510838785.json]
+members: [图片生成/图生图/Flux Kontext双图编辑开源版本_1938334902939222018.json, 图片生成/图生图/Flux Kontext图像编辑开源版本_1938325848867143681.json, 图片生成/图生图/Flux_Context_图片编辑_1938538258194169857.json, 图片生成/图生图/KONTEXT多图融合工作流_1945122220479848449.json, 图片生成/图生图/Kontext中文版提示词多图模式（开源版）_1938411083663343618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_192
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 合集 多参视频加速版本  文生视频  首位帧视频_2085757259535175682.json、视频生成/图生视频/MiniMax H3 图生视频_2084120970457079810.json、视频生成/图生视频/MiniMax H3开源版  多参 图生视频  文生视频 首尾帧 视频合集_2084290396510838785.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux Kontext双图编辑开源版本_1938334902939222018.json、图片生成/图生图/Flux Kontext图像编辑开源版本_1938325848867143681.json、图片生成/图生图/Flux_Context_图片编辑_1938538258194169857.json、图片生成/图生图/KONTEXT多图融合工作流_1945122220479848449.json、图片生成/图生图/Kontext中文版提示词多图模式（开源版）_1938411083663343618.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxKontextImageScale`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DirectModelLoader`
-- `RHMiniMaxH3DirectTextEncoderLoader`
-- `RHMiniMaxH3DirectVAELoader`
-- `RHMiniMaxH3DualSigmaSampler`
-- `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3T2VATarget`
-- `RHMiniMaxH3T2VATextEncode`
+- `ModelSamplingFlux`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `ImageResize+` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `RHMiniMaxH3FL2VAEncode` —— 2/3 个有
-- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 2/3 个有
-- `RHMiniMaxH3FL2VAModelLoader` —— 2/3 个有
-- `RHMiniMaxH3FL2VATarget` —— 2/3 个有
-- `RHMiniMaxH3FL2VATextEncoderLoader` —— 2/3 个有
-- `RHMiniMaxH3FL2VAVAELoader` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `MiniMaxH3BlockCacheT8` —— 1/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `CLIPTextEncode` —— 4/5 个有
+- `FluxGuidance` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `RH_Translator` —— 3/5 个有
+- `easy cleanGpuUsed` —— 2/5 个有
+- `CLIPTextEncodeFlux` —— 1/5 个有
+- `Compositor3` —— 1/5 个有
+- `CompositorConfig3` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `SeedVR2` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
 
 ## 典型参数
 

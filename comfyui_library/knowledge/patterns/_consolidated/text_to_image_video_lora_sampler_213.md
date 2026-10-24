@@ -3,52 +3,57 @@ name: text_to_image_video_lora_sampler_213
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.93
-common_nodes: [CLIPLoader, CLIPTextEncode, DownloadAndLoadGIMMVFIModel, EmptyLatentImage, GIMMVFI_interpolate, INTConstant, ImageConcatMulti, Int, JjkText, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterVRAM, PathchSageAttentionKJ, PrimitiveInt, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8965
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, Lora Loader Stack (rgthree), LoraLoaderModelOnly, MiniMaxH3HybridLoader, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/wan2.2电商服装展示工作流｜模特演示视频一致性｜图生视频带货_2101888249638776833.json, 视频生成/图生视频/wan2.2电商服装展示模特演示视频｜保持一致性图生视频带货版_2101909832138846210.json]
+members: [视频生成/图生视频/MinimaxH3参考视频bf16模型 视频生成参考输入方案_2104678853527564289.json, 视频生成/图生视频/MinimaxH3参考视频驱动｜bf16模型图生视频，动作表情高保真_2104519554876661762.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_213
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2电商服装展示工作流｜模特演示视频一致性｜图生视频带货_2101888249638776833.json、视频生成/图生视频/wan2.2电商服装展示模特演示视频｜保持一致性图生视频带货版_2101909832138846210.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3参考视频bf16模型 视频生成参考输入方案_2104678853527564289.json、视频生成/图生视频/MinimaxH3参考视频驱动｜bf16模型图生视频，动作表情高保真_2104519554876661762.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DownloadAndLoadGIMMVFIModel`
 - `EmptyLatentImage`
-- `GIMMVFI_interpolate`
-- `INTConstant`
-- `ImageConcatMulti`
-- `Int`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `Lora Loader Stack (rgthree)`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PainterVRAM`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `SimpleMath+`
+- `MiniMaxH3HybridLoader`
+- `MiniMaxH3MediaLoaderFantastic`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceSplitter`
+- `MiniMaxH3ResolutionSelector`
+- `MiniMaxH3TurboLoRA`
+- `MiniMaxH3TurboSampler`
+- `MiniMaxH3UnifiedToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

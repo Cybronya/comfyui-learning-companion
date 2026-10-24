@@ -1,82 +1,77 @@
 ---
 name: text_to_image_sampler_clip_unet_88
 type: Text To Image
-frequency: 5
+frequency: 7
 level: strong
-coverage: 0.8846
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
-missing: [CR Text Concatenate, Text Multiline]
-members: [图片生成/文生图/1950528087563948034.json, 图片生成/文生图/1950700991370973185.json, 图片生成/文生图/1950719208512491521.json, 图片生成/文生图/1950771546711351297.json, 图片生成/文生图/1955481041341485058.json]
+coverage: 0.865143
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: []
+missing: []
+members: [图片生成/图生图/Qwen-image-edit-plus-2509-lora-文生图工作流-触发词：maozhan_1979394793413447682.json, 图片生成/图生图/Qwen-image-edit-plus-2509-lora-毛毡效果V2.0-图生图-触发词：maozhan_1995315430677995522.json, 图片生成/图生图/Qwen-image-edit-plus-2509-单图编辑_1991506158217338882.json, 图片生成/图生图/Qwen-image-edit-plus-2509-更改色调_1973677046226358273.json, 图片生成/图生图/Qwen-image-edit-plus-2509_1971563492245499905.json, 图片生成/图生图/qwen_image_多图合一-图片编辑_1970819754611118082.json, 图片生成/文生图/Qwen-image-edit-2059图像编辑_1973209775687208961.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_88
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/1950528087563948034.json、图片生成/文生图/1950700991370973185.json、图片生成/文生图/1950719208512491521.json、图片生成/文生图/1950771546711351297.json、图片生成/文生图/1955481041341485058.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen-image-edit-plus-2509-lora-文生图工作流-触发词：maozhan_1979394793413447682.json、图片生成/图生图/Qwen-image-edit-plus-2509-lora-毛毡效果V2.0-图生图-触发词：maozhan_1995315430677995522.json、图片生成/图生图/Qwen-image-edit-plus-2509-单图编辑_1991506158217338882.json、图片生成/图生图/Qwen-image-edit-plus-2509-更改色调_1973677046226358273.json、图片生成/图生图/Qwen-image-edit-plus-2509_1971563492245499905.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 4/5 个有
-- `Bjornulf_TextToStringAndSeed` —— 3/5 个有
-- `CR Text Concatenate` —— 3/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `ModelSamplingSD3` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `RH_LLMAPI_NODE` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `Text Multiline` —— 3/5 个有
-- `Wan_video_prompt_generator` —— 3/5 个有
-- `CFGZeroStarAndInit` —— 2/5 个有
-- `LoraLoader` —— 2/5 个有
-- `PMRF` —— 2/5 个有
-- `RHHiddenNodes` —— 2/5 个有
+- `JjkText` —— 5/7 个有
+- `AIO_Preprocessor` —— 3/7 个有
+- `ImageStitch` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
+- `Int` —— 2/7 个有
+- `LoraLoader` —— 2/7 个有
+- `AddLabel` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 5 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 512 | 512 - 720 | 5 | 85% |
-| 高度 | 512 | 512 - 1280 | 5 | 54% |
-| LoRA 模型强度 | 0.4 | - | 2 | 100% |
-| LoRA 文本强度 | 0.4 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 20 | 20 - 20 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1.5 | 1.5 - 1.5 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 1864 | 768 - 1920 | 7 | 69% |
+| 高度 | 1280 | 1024 - 1920 | 7 | 74% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，5 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 720，5 个样本，取值集中（一致性 85%）
-- 高度 中位数 512，观测区间 512 - 1280，5 个样本
-- LoRA 模型强度 中位数 0.4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 这些节点还没有知识卡，系统对它们的理解有限：CR Text Concatenate、Text Multiline
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1.5 - 1.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1864，观测区间 768 - 1920，7 个样本
+- 高度 中位数 1280，观测区间 1024 - 1920，7 个样本

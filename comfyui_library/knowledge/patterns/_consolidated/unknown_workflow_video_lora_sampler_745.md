@@ -3,46 +3,43 @@ name: unknown_workflow_video_lora_sampler_745
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.412
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy showAnything]
+coverage: 0.824
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, INTConstant, ImageBatchMulti, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PreviewAudio, PreviewImage, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Anim换脸_2046577984135503874.json, 视频生成/图生视频/2001302724798971906.json]
+members: [视频生成/图生视频/IndexTTS2音频生成+Humo数字人_1957726679996399618.json, 视频生成/文生视频/humo单图参考+配音_1968279752563937282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_745
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Anim换脸_2046577984135503874.json、视频生成/图生视频/2001302724798971906.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/IndexTTS2音频生成+Humo数字人_1957726679996399618.json、视频生成/文生视频/humo单图参考+配音_1968279752563937282.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `GrowMaskWithBlur`
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
 - `INTConstant`
-- `ImageFromBatch`
+- `ImageBatchMulti`
 - `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `PreviewAudio`
 - `PreviewImage`
-- `VHS_LoadVideo`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
@@ -50,26 +47,21 @@ source: knowledge_consolidation
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy showAnything`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FlashVSRNode` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `LayerMask: MaskGrow` —— 1/2 个有
-- `Mask Invert` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SAM3_TrackToMask` —— 1/2 个有
-- `SAM3_VideoTrack` —— 1/2 个有
-- `SeCModelLoader` —— 1/2 个有
-- `SeCVideoSegmentation` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
+- `AudioToFPS` —— 1/2 个有
+- `IndexTTS2Run` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `PrimitiveString` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `SoundFlow_GetLength` —— 1/2 个有
+- `SoundFlow_TrimAudio` —— 1/2 个有
+- `ToInt` —— 1/2 个有
+- `easy int` —— 1/2 个有
+- `ttN text` —— 1/2 个有
 
 ## 典型参数
 

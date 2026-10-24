@@ -3,61 +3,56 @@ name: unknown_workflow_video_lora_sampler_924
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.912
-common_nodes: [ACE_ImageGetSize, CreateCFGScheduleFloatList, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], ResizeLongestToNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.936
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/1950095043170361345.json, 视频生成/图生视频/1950059888082903042.json]
+members: [视频生成/文生视频/MiniMax H3｜24GB稳定多参考生视频 + SeedVR2 1080高清修复_2092408661934170114.json, 视频生成/文生视频/MinimaxH3参考生成视频 (原生音频)_2087097303978037250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_924
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1950095043170361345.json、视频生成/图生视频/1950059888082903042.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜24GB稳定多参考生视频 + SeedVR2 1080高清修复_2092408661934170114.json、视频生成/文生视频/MinimaxH3参考生成视频 (原生音频)_2087097303978037250.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ACE_ImageGetSize`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Primitive integer [Crystools]`
-- `ResizeLongestToNode`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `JWStringConcat` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `TextConcat` —— 1/2 个有
-- `Wan22PromptSelector` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `RHMiniMaxH3PromptOptimizerCompact` —— 1/2 个有
+- `RunningHub Deepcleaner` —— 1/2 个有
+- `SeedVR2LoadDiTModel` —— 1/2 个有
+- `SeedVR2LoadVAEModel` —— 1/2 个有
+- `SeedVR2VideoUpscaler` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `floatToInt _O` —— 1/2 个有
 
 ## 典型参数
 

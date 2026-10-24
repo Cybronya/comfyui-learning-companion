@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_86
 type: Unknown Workflow
-frequency: 10
+frequency: 16
 level: moderate
-coverage: 1
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.611187
+common_nodes: [CR Text, PrimitiveFloat, RH_Screenwriter, SaveAudio, ShowText|pysssss, WujiLyricistNode, WujiMusicianACEStep15XL]
 problems: []
 missing: []
-members: [音频生成/音频生成/40.tonnie-Index TTS2音频克隆（刘禹锡有诗云）_2004254864559538177.json, 音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json, 音频生成/音频生成/indexTTS 2 语音克隆_1981291888504463361.json, 音频生成/音频生成/indexTTS2复刻语音生成_1981185714140381185.json, 音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json, 音频生成/音频生成/双人对话tts_2070409633616982018.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_1932106715766882305.json, 音频生成/音频生成/双人语音对话克隆-Index-TTS-2.0_2004380097404698625.json, 音频生成/音频生成/视频生成-生成配音-情绪_2014166227136028673.json, 音频生成/音频生成/视频生成-生成配音_2012397133353193473.json]
+members: [图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json, 视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json, 音频生成/音频生成/ACE-Step1.5XL一句话写一首歌工作流_2046499811930677249.json, 音频生成/音频生成/ACE-Step1.5XL一键AI音乐_2044544358233415681.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2044346549555175426.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2046218158251450370.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2044244684310056962.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓最强AI音乐创作_2044246957450858497.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2044642777891344385.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2045401793181519874.json, 音频生成/音频生成/ACE-Step1.5XL生成AI音乐工作流_2061315627834503169.json, 音频生成/音频生成/ACE-Step1.5XL音乐创作_2058748276169601026.json, 音频生成/音频生成/AI 原创音乐生成_2047620955584860161.json, 音频生成/音频生成/超好用🔥一键手搓AI音乐 ACE-Step1.5XL及Suno V5可自行选择_2046796175285686274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_86
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/40.tonnie-Index TTS2音频克隆（刘禹锡有诗云）_2004254864559538177.json、音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json、音频生成/音频生成/indexTTS 2 语音克隆_1981291888504463361.json、音频生成/音频生成/indexTTS2复刻语音生成_1981185714140381185.json、音频生成/音频生成/单人语音对话克隆-Index-TTS-2.0_1965565833185476609.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json、视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json、音频生成/音频生成/ACE-Step1.5XL一句话写一首歌工作流_2046499811930677249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
+全部 16 个 workflow 都包含：
+- `CR Text`
+- `PrimitiveFloat`
+- `RH_Screenwriter`
 - `SaveAudio`
+- `ShowText|pysssss`
+- `WujiLyricistNode`
+- `WujiMusicianACEStep15XL`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 9/10 个有
-- `AudioSeparation` —— 1/10 个有
-- `MultiLinePrompt` —— 1/10 个有
+- `Fast Groups Muter (rgthree)` —— 13/16 个有
+- `RH_Suno_Custom` —— 8/16 个有
+- `RH_RhartAudioSunoV55Single` —— 5/16 个有
+- `LoadImage` —— 1/16 个有
 
 ## 典型参数
 

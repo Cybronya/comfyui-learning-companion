@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_55
 type: Unknown Workflow
-frequency: 12
+frequency: 20
 level: moderate
-coverage: 0.805583
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.994
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/2041841814168145921.json, 视频生成/图生视频/2048729768073367554.json, 视频生成/图生视频/2048930713545744385.json, 视频生成/图生视频/2048795322029187073.json, 视频生成/图生视频/2048642132843433986.json, 视频生成/图生视频/2048674844094504962.json, 视频生成/图生视频/2048746487852572674.json, 视频生成/图生视频/2050467288574377986.json, 视频生成/图生视频/2048769410881556481.json, 视频生成/图生视频/2049847091299667969.json, 视频生成/图生视频/2061770036007759873.json, 视频生成/图生视频/2054193821549907970.json]
+members: [数字人/数字人/IndexTTS2_语音_音色_克隆_情绪自定义-老王_2097582552168099842.json, 视频生成/文生视频/tts2双人对话，单人对话带音色_2019382320083509250.json, 音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1965465752209866754.json, 音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1994617289439842306.json, 音频生成/音频生成/IndexTTS2 Run 单人音频+音频情绪控制_2109809705345445890.json, 音频生成/音频生成/IndexTTS2 亚迪AI涂经理工作流_2036633584773107713.json, 音频生成/音频生成/IndexTTS2 声音克隆-单人音频(情绪控制)-双人音频_1988073614257926145.json, 音频生成/音频生成/IndexTTS2-单人-情感-声音克隆_2058593812238389250.json, 音频生成/音频生成/IndexTTS2-声音克隆_1968934120409686018.json, 音频生成/音频生成/IndexTTS2-声音克隆_1979001378074955778.json, 音频生成/音频生成/IndexTTS2-声音克隆_1980084459066265601.json, 音频生成/音频生成/IndexTTS2-声音克隆_2003281991577559041.json, 音频生成/音频生成/IndexTTS2-有温度的声音克隆-单人音频_1982442452768440321.json, 音频生成/音频生成/IndexTTS2-有温度的声音克隆-双人音频_1982448686699552770.json, 音频生成/音频生成/IndexTTS2_1998361145272623105.json, 音频生成/音频生成/IndexTTS2_2015293179448266754.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2039948812336242690.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2043572634868256769.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2064259148337995778.json, 音频生成/音频生成/IndexTTS2_更专业的情感向量控制_语音_音色克隆_2012710824451772417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_55
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/2041841814168145921.json、视频生成/图生视频/2048729768073367554.json、视频生成/图生视频/2048930713545744385.json、视频生成/图生视频/2048795322029187073.json、视频生成/图生视频/2048642132843433986.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（数字人/数字人/IndexTTS2_语音_音色_克隆_情绪自定义-老王_2097582552168099842.json、视频生成/文生视频/tts2双人对话，单人对话带音色_2019382320083509250.json、音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1965465752209866754.json、音频生成/音频生成/Comfyui版IndexTTS2双人对话+单人+情绪迁移工作流_1994617289439842306.json、音频生成/音频生成/IndexTTS2 Run 单人音频+音频情绪控制_2109809705345445890.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 20 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaHappyhorse10ImageToVideo` —— 9/12 个有
-- `JjkText` —— 8/12 个有
-- `RH_RhartVideoGOfficialImageToVideo` —— 3/12 个有
-- `PreviewAny` —— 1/12 个有
+- `PreviewAudio` —— 19/20 个有
+- `CR Text` —— 17/20 个有
+- `CR Prompt Text` —— 4/20 个有
+- `AudioSeparation` —— 3/20 个有
+- `LoadImage` —— 1/20 个有
 
 ## 典型参数
 

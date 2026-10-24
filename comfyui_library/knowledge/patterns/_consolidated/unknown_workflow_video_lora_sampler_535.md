@@ -3,73 +3,64 @@ name: unknown_workflow_video_lora_sampler_535
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.976
-common_nodes: [AudioSeparation, Display Any (rgthree), Display Int (rgthree), HAIGC_VideoLastFrame, HuMoEmbeds, INTConstant, ImageBatchMulti, ImageFromBatch, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, Seed_, SimpleMath+, SoundFlow_GetLength, SoundFlow_TrimAudio, Text, ToFloat, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoCombineEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader, WhisperModelLoader, easy imageRemBg, easy int]
+coverage: 0.8005
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, UniBlockSwap, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/2034484341866237954.json, 视频生成/图生视频/2029082504245809153.json, 视频生成/图生视频/2032263750392225793.json, 视频生成/图生视频/2028749472515235842.json]
+members: [视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json, 视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json, 视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json, 视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_535
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2034484341866237954.json、视频生成/图生视频/2029082504245809153.json、视频生成/图生视频/2032263750392225793.json、视频生成/图生视频/2028749472515235842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json、视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json、视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json、视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioSeparation`
-- `Display Any (rgthree)`
-- `Display Int (rgthree)`
-- `HAIGC_VideoLastFrame`
-- `HuMoEmbeds`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
-- `Seed_`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
-- `Text`
-- `ToFloat`
-- `ToInt`
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SolAttnPatch`
+- `SpectrumApplyMiniMaxH3`
+- `UNETLoader`
+- `UniBlockSwap`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoCombineEmbeds`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
-- `WhisperModelLoader`
-- `easy imageRemBg`
-- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioBeforeAfterSilence` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `JWImageBatchCount` —— 1/4 个有
-- `MaxNode` —— 1/4 个有
-- `ZML_ImageBatchToInt` —— 1/4 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/4 个有
-- `easy indexTTSGenerateSimple` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SolAttnMiniMax` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `BasicScheduler` —— 1/4 个有
+- `CS-MultiImageLoader` —— 1/4 个有
+- `KSamplerSelect` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `VHS_LoadAudioUpload` —— 1/4 个有
 
 ## 典型参数
 

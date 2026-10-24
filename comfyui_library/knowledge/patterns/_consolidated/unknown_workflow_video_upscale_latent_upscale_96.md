@@ -2,110 +2,87 @@
 name: unknown_workflow_video_upscale_latent_upscale_96
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.5205
-common_nodes: [Any To Any, Any To String (mtb), Audio Duration (mtb), CFGGuider, CLIPTextEncode, CM_FloatToInt, CM_IntToFloat, CR Prompt Text, CR Text, CR Text Concatenate, DF_Int_to_Float, Display Any (rgthree), EmptyLTXVLatentVideo, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, GODMT_SplitString, GetNode, INTConstant, ImageConcatMulti, ImageListToBatch+, ImageResizeKJv2, JWIntegerDiv, JjkText, JoinStrings, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVFirstLastFrameControl_TTP, LTXVLatentUpsampler, LTXVMiddleFrame_TTP, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PreviewImage, RandomNoise, SDVM Image List Repeat, SamplerCustomAdvanced, SaveAudio, SetLatentNoiseMask, SetNode, ShellAgentPluginOutputText, ShowText|pysssss, SimpleCalculatorKJ, SimpleMath+, SolidMask, Text List, TextInput_, TextListSelelct, VAEDecode, VAELoaderKJ, VHS_SelectImages, VHS_VideoCombine, WujiCleaner, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy showAnything]
+level: strong
+coverage: 0.91175
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/2018146962532470786.json, 视频生成/图生视频/2029794744922017793.json, 视频生成/图生视频/2031283967088922626.json, 视频生成/图生视频/2033464459947151361.json]
+members: [视频生成/图生视频/ltx2.3最接近即梦SD2的版本_2044674035950297090.json, 视频生成/图生视频/图生视频_2046040872004886529.json, 视频生成/图生视频/图生视频ltx_2045162483312234497.json, 视频生成/文生视频/LTX2.3 - 多功能可独立音频数字人_2047017723305140225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_96
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2018146962532470786.json、视频生成/图生视频/2029794744922017793.json、视频生成/图生视频/2031283967088922626.json、视频生成/图生视频/2033464459947151361.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/ltx2.3最接近即梦SD2的版本_2044674035950297090.json、视频生成/图生视频/图生视频_2046040872004886529.json、视频生成/图生视频/图生视频ltx_2045162483312234497.json、视频生成/文生视频/LTX2.3 - 多功能可独立音频数字人_2047017723305140225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any To Any`
-- `Any To String (mtb)`
-- `Audio Duration (mtb)`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CM_IntToFloat`
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
-- `DF_Int_to_Float`
-- `Display Any (rgthree)`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
 - `EmptyLTXVLatentVideo`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `GODMT_SplitString`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageListToBatch+`
-- `ImageResizeKJv2`
-- `JWIntegerDiv`
-- `JjkText`
-- `JoinStrings`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVFirstLastFrameControl_TTP`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVMiddleFrame_TTP`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
 - `RandomNoise`
-- `SDVM Image List Repeat`
 - `SamplerCustomAdvanced`
-- `SaveAudio`
 - `SetLatentNoiseMask`
-- `SetNode`
-- `ShellAgentPluginOutputText`
-- `ShowText|pysssss`
-- `SimpleCalculatorKJ`
-- `SimpleMath+`
 - `SolidMask`
-- `Text List`
-- `TextInput_`
-- `TextListSelelct`
-- `VAEDecode`
-- `VAELoaderKJ`
-- `VHS_SelectImages`
+- `TrimAudioDuration`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WujiCleaner`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy lengthAnything`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 3/4 个有
-- `LTXAVTextEncoderLoader` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `DualCLIPLoader` —— 2/4 个有
-- `Qwen3_VQA` —— 2/4 个有
-- `UNETLoader` —— 2/4 个有
-- `llama_cpp_instruct_adv` —— 2/4 个有
-- `llama_cpp_model_loader` —— 2/4 个有
-- `LTXVAudioVAELoader` —— 1/4 个有
-- `ModelPatchTorchSettings` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
+- `LTX2_NAG` —— 3/4 个有
+- `LTXVChunkFeedForward` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `Switch any [Crystools]` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `AudioCrop` —— 1/4 个有
+- `CM_IntToFloat` —— 1/4 个有
+- `CreateVideo` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `LTXVPreprocess` —— 1/4 个有
+- `PreviewAudio` —— 1/4 个有
+- `QWEN_TextDisplay` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `ResizeImagesByLongerEdge` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `Text Find and Replace` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
@@ -113,4 +90,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

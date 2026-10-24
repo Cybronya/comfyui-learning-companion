@@ -1,70 +1,106 @@
 ---
 name: text_to_image_lora_sampler_clip_382
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.85
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyLatentImage, ImpactSwitch, JC, KSampler, LoraLoaderModelOnly, RHUploadZip, SaveImage, ShowText|pysssss, Text Load Line From File, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy promptConcat]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.7942
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, CreateVideo, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, solarL_SaveImagesToZip]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image 批量洗图，自动反推，文生图，批量生图三合一_2075736828098994178.json, 图片生成/文生图/福利鉴 · Z-Image 同风格生成_2082002632369070082.json]
+members: [视频生成/图生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2104054731424485378.json, 视频生成/图生视频/MiniMax_H3动作迁移图生视频_自定义背景人物全能参考_2101088561767473154.json, 视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考全接口视频生成处理工具_2102503531793182722.json, 视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考视频生成处理工具_2101373500354289666.json, 视频生成/文生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2102255598640394242.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_382
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Z-image 批量洗图，自动反推，文生图，批量生图三合一_2075736828098994178.json、图片生成/文生图/福利鉴 · Z-Image 同风格生成_2082002632369070082.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2104054731424485378.json、视频生成/图生视频/MiniMax_H3动作迁移图生视频_自定义背景人物全能参考_2101088561767473154.json、视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考全接口视频生成处理工具_2102503531793182722.json、视频生成/文生视频/MiniMax H3阿里3步加速Lora全能参考视频生成处理工具_2101373500354289666.json、视频生成/文生视频/MiniMaxH3阿里3步加速Lora｜全能参考全接口视频生成｜三种模式通吃_2102255598640394242.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CR Prompt Text`
-- `ConditioningZeroOut`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `ImpactSwitch`
-- `JC`
+- `GetNode`
+- `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RHUploadZip`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Load Line From File`
-- `Text Multiline`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy promptConcat`
+- `VHS_LoadVideo`
+- `solarL_SaveImagesToZip`
+
+**可变部分**（部分 workflow 才有）：
+- `EasyCache` —— 4/5 个有
+- `FrameInterpolate` —— 4/5 个有
+- `FrameInterpolationModelLoader` —— 4/5 个有
+- `GroupSwitcher` —— 4/5 个有
+- `LTXVConcatAVLatent` —— 4/5 个有
+- `LTXVSeparateAVLatent` —— 4/5 个有
+- `MinimaxH3LatentUpscaler3D` —— 4/5 个有
+- `PathchSageAttentionKJ` —— 4/5 个有
+- `PrimitiveInt` —— 4/5 个有
+- `RH_DLSS5FrameInterpolation` —— 4/5 个有
+- `SeedNode` —— 4/5 个有
+- `SpectrumApplyMiniMaxH3` —— 4/5 个有
+- `TrimAudioDuration` —— 4/5 个有
+- `VHS_VideoCombine` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `easy clearCacheAll` —— 4/5 个有
+- `孤海注释` —— 3/5 个有
+- `EmptyImage` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
-| 采样步数 | 10 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | ddim | - | 2 | 100% |
-| 调度器 | sgm_uniform | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 ddim，2 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,78 +1,76 @@
 ---
 name: image_to_image_video_sampler_clip_2
 type: Image To Image
-frequency: 5
+frequency: 7
 level: strong
-coverage: 0.942
-common_nodes: [AddLabel, CLIPTextEncode, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyImage, FluxGuidance, FluxKontextImageScale, GetImageSizeAndCount, Image Comparer (rgthree), ImageConcatMulti, ImageResizeKJv2, KSampler, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RH_Translator, ReferenceLatent, Seed (rgthree), SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy int]
+coverage: 0.924571
+common_nodes: [Any To Any, CLIPLoader, CLIPTextEncode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, Qwen3_VQA, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1940755254868918273.json, 视频生成/图生视频/1939639899119067138.json, 视频生成/图生视频/1939608027450286082.json, 视频生成/图生视频/1946929290757988354.json, 视频生成/图生视频/1939510110341480450.json]
+members: [图片生成/图生图/Z-IMAGE千问3反推洗图_1994799895469076481.json, 图片生成/图生图/Z-image + Qwen3图生图（洗图流）_1994001900706217986.json, 图片生成/图生图/Z-image + Qwen3自动洗图2K版_1994770380470542338.json, 图片生成/图生图/Z-image + Qwen3自动洗图图生图2K版_1995331809493889025.json, 图片生成/图生图/Z-image + Qwen3自动洗图图生图2K版版_1993903147122966530.json, 图片生成/图生图/Z-image 图生图 高清版_1994572823937028097.json, 图片生成/图生图/真8K超清Z-image + Qwen3自动洗图V2（6分30秒）_1994811206600941569.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_sampler_clip_2
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1940755254868918273.json、视频生成/图生视频/1939639899119067138.json、视频生成/图生视频/1939608027450286082.json、视频生成/图生视频/1946929290757988354.json、视频生成/图生视频/1939510110341480450.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Z-IMAGE千问3反推洗图_1994799895469076481.json、图片生成/图生图/Z-image + Qwen3图生图（洗图流）_1994001900706217986.json、图片生成/图生图/Z-image + Qwen3自动洗图2K版_1994770380470542338.json、图片生成/图生图/Z-image + Qwen3自动洗图图生图2K版_1995331809493889025.json、图片生成/图生图/Z-image + Qwen3自动洗图图生图2K版版_1993903147122966530.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AddLabel`
+全部 7 个 workflow 都包含：
+- `Any To Any`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `GetImageSizeAndCount`
-- `Image Comparer (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `RH_Translator`
-- `ReferenceLatent`
-- `Seed (rgthree)`
-- `SimpleMath+`
+- `Qwen3_VQA`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoMagCache`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `ConditioningZeroOut` —— 6/7 个有
+- `Float` —— 6/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PDIMAGE_LongerSize` —— 4/7 个有
+- `PreviewImage` —— 3/7 个有
+- `JWInteger` —— 2/7 个有
+- `SeedVR2` —— 2/7 个有
+- `FlashVSR_SM_KSampler` —— 1/7 个有
+- `FlashVSR_SM_Model` —— 1/7 个有
+- `Get Image Size` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageCASharpening+` —— 1/7 个有
+- `ImageResize+` —— 1/7 个有
+- `ImpactMinMax` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `TTP_Image_Assy` —— 1/7 个有
+- `TTP_Image_Tile_Batch` —— 1/7 个有
+- `TT_img_enc` —— 1/7 个有
+- `TT_img_enc_v2` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 10 | 10 - 10 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 7 | 81% |
 
 ## 常见问题
 
@@ -80,8 +78,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 10 - 10，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，7 个样本，取值集中（一致性 81%）

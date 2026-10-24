@@ -1,0 +1,82 @@
+---
+key: 图片生成/图生图/AA--超强一致性！小红书FireRed-Image-edit1.1图像编辑+超清放大修复_2029824095113711618.json
+name: AA--超强一致性！小红书FireRed-Image-edit1.1图像编辑+超清放大修复_2029824095113711618
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/AA--超强一致性！小红书FireRed-Image-edit1.1图像编辑+超清放大修复_2029824095113711618.json
+hash: 717715efec3f70e8
+coverage: 0.925926
+learned_at: 2026-10-23 10:50:13
+nodes: [CLIPLoader, VAELoader, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, FluxKontextImageScale, VAEDecode, LayerUtility: PurgeVRAM, FluxKontextImageScale, SeedVR2LoadDiTModel, Image Comparer (rgthree), SaveImage, FluxKontextImageScale, Fast Groups Bypasser (rgthree), INTConstant, LoadImage, LoadImage, LoadImage, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, CFGNorm, ModelSamplingAuraFlow, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, KSampler]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 102448429510184, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/AA--超强一致性！小红书FireRed-Image-edit1.1图像编辑+超清放大修复_2029824095113711618.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/AA--超强一致性！小红书FireRed-Image-edit1.1图像编辑+超清放大修复_2029824095113711618.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Sampling → Decode → Process → Output → Other
+
+**节点**（27 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `FluxKontextImageScale`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `FluxKontextImageScale`
+- `SeedVR2LoadDiTModel`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `FluxKontextImageScale`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CR Prompt Text`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CFGNorm`
+- `ModelSamplingAuraFlow`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler` ★核心
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `102448429510184`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **93%**（25/27）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`FluxKontextImageScale`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`SeedVR2LoadDiTModel`、`SaveImage`、`INTConstant`、`LoadImage`、`CR Prompt Text`、`UNETLoader`、`LoraLoaderModelOnly`、`CFGNorm`、`ModelSamplingAuraFlow`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPLoader、LoadImage、CFGNorm
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

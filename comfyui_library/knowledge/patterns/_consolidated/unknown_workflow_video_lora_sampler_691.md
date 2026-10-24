@@ -2,66 +2,74 @@
 name: unknown_workflow_video_lora_sampler_691
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.599
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, EmptyImage, GetImageSizeAndCount, GetNode, INTConstant, ImpactFloat, JWFloatToString, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, RH_LLMAPI_NODE, SetNode, StringFunction|pysssss, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanMoeKSampler, WanVideoVACEStartToEndFrame, easy anythingIndexSwitch, easy imageSize, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+level: moderate
+coverage: 0.513667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
-missing: [MathExpression|pysssss, StringFunction|pysssss, easy anythingIndexSwitch, easy int, easy positive, easy imageSize, easy saveText, easy seed]
-members: [视频生成/文生视频/1972671707976802306.json, 视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-官方_1982718924657704961.json, 视频生成/文生视频/2066055894355734528.json]
+missing: []
+members: [视频生成/文生视频/H3高质量全能参考图片音频视频api版本_2089609638827347969.json, 视频生成/文生视频/MiniMax H3 双采样_2089982231854018561.json, 视频生成/文生视频/心然·寻源-Minimax H3 多模态参考生视频（双采加速版）_2087734113288679426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_691
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/1972671707976802306.json、视频生成/文生视频/视频-文生视频扩写-wan2.2-smoothMix-官方_1982718924657704961.json、视频生成/文生视频/2066055894355734528.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/H3高质量全能参考图片音频视频api版本_2089609638827347969.json、视频生成/文生视频/MiniMax H3 双采样_2089982231854018561.json、视频生成/文生视频/心然·寻源-Minimax H3 多模态参考生视频（双采加速版）_2087734113288679426.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：60%
+- **可信度**：中等可信
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `EmptyImage`
-- `GetImageSizeAndCount`
+- `ComfyMathExpression`
 - `GetNode`
-- `INTConstant`
-- `ImpactFloat`
-- `JWFloatToString`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
+- `MiniMaxH3ReferenceToVideo`
+- `PT_H3ConcatAVLatent`
 - `PrimitiveFloat`
-- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `StringFunction|pysssss`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `WanVideoVACEStartToEndFrame`
-- `easy anythingIndexSwitch`
-- `easy imageSize`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `Float` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `JWStringConcat` —— 1/3 个有
+- `JjkShowText` —— 1/3 个有
+- `JjkText` —— 1/3 个有
+- `MinNode` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
+- `ModelPatchTorchSettings` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RHLLMChatNode` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `图像缩放V2_孤海` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 3 | 100% |
-| 采样算法 | 1.5 | 1.5 - 1.5 | 3 | 100% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | sa_solver | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,10 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1.5，观测区间 1.5 - 1.5，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 sa_solver，3 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 这些节点还没有知识卡，系统对它们的理解有限：MathExpression|pysssss、StringFunction|pysssss、easy anythingIndexSwitch、easy int、easy positive
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

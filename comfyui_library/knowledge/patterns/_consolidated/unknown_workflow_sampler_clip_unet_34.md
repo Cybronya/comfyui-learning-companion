@@ -1,58 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_34
 type: Unknown Workflow
-frequency: 13
+frequency: 19
 level: moderate
-coverage: 0.902846
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.854579
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image，文生图_2009572089073766402.json, 图片生成/文生图/Zimage生图-随机增强-两步法_2004931976354299905.json, 图片生成/文生图/krea2-感性质感文生图_2077573493826347010.json, 图片生成/文生图/krea2-成熟之美文生图_2077737335516651521.json, 图片生成/文生图/krea2-混血女模文生图，_2085359376507957250.json, 图片生成/文生图/krea2-纤姿文生图_2091439477406396417.json, 图片生成/文生图/krea2-肌肉男身段文生图_2099416655523827714.json, 图片生成/文生图/krea2文生图二采放大_2078759847776051201.json, 图片生成/文生图/【krea2-Anima】文生图_2077588539222618113.json, 图片生成/文生图/【krea2-turbo-bf16】Bkz人像摄影应用_2082316590745477122.json, 图片生成/文生图/【krea2-turbo-bf16】Bkz人像摄影应用_2098212483956822017.json, 视频生成/文生视频/krea2-感性质感文生图_api_2077744663007682562.json, 视频生成/文生视频/krea2-黑珍珠文生图_2078481829623062530.json]
+members: [图片生成/图生图/FLUX2 Klein 局部重绘工作流_2091475570843541506.json, 图片生成/图生图/FLUX2-KLEIN-局部重绘_2086451671395291138.json, 图片生成/图生图/FLUX2-Klein局部重绘_2042440525696995329.json, 图片生成/图生图/Flux2 Klein 单图编辑 超i真实_2012736153442590722.json, 图片生成/图生图/Flux2 Klein 图像编辑_2012796994577764354.json, 图片生成/图生图/Flux2+Klein+单图像编辑（单图）_2013840360472059905.json, 图片生成/图生图/Flux2+Klein+图像编辑（单图）_2013803586651693057.json, 图片生成/图生图/flux2-klein-转绘各种效果，效果好，速度快，百分百场景一致性，全能型_2018953900497313793.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2014522302368587778.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2081670375993335809.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2094715505419579394.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2111682766764077058.json, 图片生成/图生图/【超实用工作流合集】-建筑&室内&景观-可按需调整_2056623443910684673.json, 图片生成/图生图/局部修改重绘_2062470852343590914.json, 图片生成/图生图/局部重绘工作流_2095404630556631041.json, 图片生成/图生图/建筑&室内&景观FLUX2-KLEIN_指定位置替换指定物品_2081674408481083394.json, 图片生成/图生图/建筑&室内&景观FLUX2-KLEIN_指定位置替换指定物品_2097163934771015681.json, 图片生成/图生图/建筑&室内&景观FLUX2-KLEIN_指定位置替换指定物品_2097504190967926786.json, 图片生成/文生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2060292542750613506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_34
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Z-image，文生图_2009572089073766402.json、图片生成/文生图/Zimage生图-随机增强-两步法_2004931976354299905.json、图片生成/文生图/krea2-感性质感文生图_2077573493826347010.json、图片生成/文生图/krea2-成熟之美文生图_2077737335516651521.json、图片生成/文生图/krea2-混血女模文生图，_2085359376507957250.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/FLUX2 Klein 局部重绘工作流_2091475570843541506.json、图片生成/图生图/FLUX2-KLEIN-局部重绘_2086451671395291138.json、图片生成/图生图/FLUX2-Klein局部重绘_2042440525696995329.json、图片生成/图生图/Flux2 Klein 单图编辑 超i真实_2012736153442590722.json、图片生成/图生图/Flux2 Klein 图像编辑_2012796994577764354.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 19 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 12/13 个有
-- `LoraLoaderModelOnly` —— 12/13 个有
-- `JjkText` —— 10/13 个有
-- `ModelSamplingAuraFlow` —— 10/13 个有
-- `ResolutionSelector` —— 10/13 个有
-- `solarL_SaveImagesToZip` —— 10/13 个有
-- `LatentUpscaleBy` —— 3/13 个有
-- `ttN text` —— 1/13 个有
+- `Image Comparer (rgthree)` —— 18/19 个有
+- `ImageResizeKJv2` —— 16/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 16/19 个有
+- `PrimitiveStringMultiline` —— 16/19 个有
+- `PlaySound|pysssss` —— 15/19 个有
+- `PreviewImage` —— 15/19 个有
+- `EmptyFlux2LatentImage` —— 14/19 个有
+- `InpaintModelConditioning` —— 14/19 个有
+- `ColorMatch` —— 13/19 个有
+- `INPAINT_ExpandMask` —— 13/19 个有
+- `ImageAndMaskPreview` —— 13/19 个有
+- `ImageCompositeMasked` —— 13/19 个有
+- `GetImageSize` —— 12/19 个有
+- `DrawMaskOnImage` —— 9/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/19 个有
+- `ImagePadForOutpaint` —— 9/19 个有
+- `PrimitiveInt` —— 6/19 个有
+- `FluxKontextImageScale` —— 3/19 个有
+- `LayerUtility: ImageReel` —— 3/19 个有
+- `LayerUtility: ImageReelComposit` —— 3/19 个有
+- `RH_Translator` —— 2/19 个有
+- `DifferentialDiffusion` —— 1/19 个有
+- `SetNode` —— 1/19 个有
+- `easy imageConcat` —— 1/19 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 13 | 92% |
-| Prompt 约束强度(CFG) | 8 | 8 - 15 | 13 | 77% |
-| 采样算法 | 1 | 1 - 1 | 13 | 100% |
-| 调度器 | euler_ancestral | - | 13 | 54% |
-| 重绘幅度 | simple | - | 13 | 85% |
-| 宽度 | 1080 | 512 - 1440 | 13 | 59% |
-| 高度 | 1920 | 512 - 2560 | 13 | 39% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,11 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，13 个样本，一致性 92%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 15，13 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，13 个样本，一致性 54%
-- 重绘幅度 最常用 simple，13 个样本，一致性 85%
-- 宽度 中位数 1080，观测区间 512 - 1440，13 个样本
-- 高度 中位数 1920，观测区间 512 - 2560，13 个样本，取值分散，一致性仅 39%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_276
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.9332
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.9355
+common_nodes: [CR Prompt Text, LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V12 pro 单图_1992859392576122881.json, 图片生成/文生图/全能图片V12 支持文生图_图生图_多图编辑_2020863303014162434.json, 图片生成/文生图/全能图片编辑NB pro v1 1k 图片编辑 图生图 文生图_2016125142845366273.json, 图片生成/文生图/全能图片编辑NB pro v2  2k  图片编辑 图生图 文生图_2016061548996861953.json, 图片生成/文生图/分镜图提取工作流_1993493125419253762.json]
+members: [图片生成/图生图/Seedream 5.0 Pro图像编辑_2075193267347607553.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑_2075243215078383617.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑_2075383136535531522.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075085139981459457.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075089086171410433.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075391736549044226.json, 图片生成/图生图/即梦5-换装-公司用_2081671570501754881.json, 图片生成/图生图/即梦5pro-换装，细节多图参考还原版-公司用_2081984727237615617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_276
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片V12 pro 单图_1992859392576122881.json、图片生成/文生图/全能图片V12 支持文生图_图生图_多图编辑_2020863303014162434.json、图片生成/文生图/全能图片编辑NB pro v1 1k 图片编辑 图生图 文生图_2016125142845366273.json、图片生成/文生图/全能图片编辑NB pro v2  2k  图片编辑 图生图 文生图_2016061548996861953.json、图片生成/文生图/分镜图提取工作流_1993493125419253762.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro图像编辑_2075193267347607553.json、图片生成/图生图/Seedream 5.0 Pro图像编辑_2075243215078383617.json、图片生成/图生图/Seedream 5.0 Pro图像编辑_2075383136535531522.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075085139981459457.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075089086171410433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_SeedreamV5ProImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `TextBox` —— 1/5 个有
-- `easy seed` —— 1/5 个有
+- `ImageConcatMulti` —— 5/8 个有
+- `Int` —— 3/8 个有
+- `孤海注释` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `ColorMatch` —— 1/8 个有
+- `Image Comparer (rgthree)` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
 
 ## 典型参数
 

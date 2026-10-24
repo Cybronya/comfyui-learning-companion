@@ -1,61 +1,73 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_3
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.806
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageCompositeMasked, InpaintModelConditioning, KSampler, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 14
+level: moderate
+coverage: 0.677571
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImagePadForOutpaint, InpaintModelConditioning, KSamplerSelect, LanPaint_MaskBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/1989974232891355137.json, 图片生成/文生图/OneReward扩图_1989998999480487937.json]
+members: [图片生成/图生图/Flux2 Klein 多图万能编辑工作流（局部重绘、扩图、单图、双图、三图编辑）_2012017503123283970.json, 图片生成/图生图/Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图_2058397027016466433.json, 图片生成/图生图/Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图_2100023809893031937.json, 图片生成/图生图/Flux2_Klein_超级多合一_文生图、单图多图编辑、重绘、完美扩图_2101484677134635010.json, 图片生成/图生图/Flux2_Klein_超级多合一_文生图、单图多图编辑、重绘、完美扩图_2102214802272776194.json, 图片生成/图生图/krea 2 and flux klein__文生图_2100026938537627650.json, 图片生成/图生图/krea 2 and flux klein__文生图_2100263128801038337.json, 图片生成/图生图/星绘-Flux2+Klein整合_2013197385870090242.json, 图片生成/文生图/Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图_2014259943414697985.json, 图片生成/文生图/Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图自用_2012776375110868994.json, 图片生成/文生图/Flux2_Klein_超级多合一_文生图、单图多图编辑、重绘、完美扩图_2098909534654914562.json, 图片生成/文生图/Flux2_Klein_超级多合一_文生图、单图多图编辑、重绘、完美扩图_2098971198804807681.json, 图片生成/文生图/YZ金鱼-Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图_2012136788260823041.json, 图片生成/文生图/krea_2_and_flux_klein_文生图_2_2101081616683716610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1989974232891355137.json、图片生成/文生图/OneReward扩图_1989998999480487937.json）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 多图万能编辑工作流（局部重绘、扩图、单图、双图、三图编辑）_2012017503123283970.json、图片生成/图生图/Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图_2058397027016466433.json、图片生成/图生图/Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图_2100023809893031937.json、图片生成/图生图/Flux2_Klein_超级多合一_文生图、单图多图编辑、重绘、完美扩图_2101484677134635010.json、图片生成/图生图/Flux2_Klein_超级多合一_文生图、单图多图编辑、重绘、完美扩图_2102214802272776194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageCompositeMasked`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `ImagePadForOutpaint`
 - `InpaintModelConditioning`
-- `KSampler`
+- `KSamplerSelect`
+- `LanPaint_MaskBlend`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GrowMaskWithBlur` —— 1/2 个有
-- `ImagePadForOutpaint` —— 1/2 个有
-- `ImageStitch` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `MaskPreview` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
+- `CR SDXL Aspect Ratio` —— 13/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 13/14 个有
+- `ImageScaleToTotalPixels` —— 13/14 个有
+- `SeedVR2LoadDiTModel` —— 13/14 个有
+- `SeedVR2LoadVAEModel` —— 13/14 个有
+- `SeedVR2VideoUpscaler` —— 13/14 个有
+- `easy cleanGpuUsed` —— 13/14 个有
+- `GetNode` —— 12/14 个有
+- `PlaySound|pysssss` —— 12/14 个有
+- `SetNode` —— 12/14 个有
+- `EmptyImage` —— 2/14 个有
+- `CR Text Input Switch (4 way)` —— 1/14 个有
+- `MuyeSizeSelector` —— 1/14 个有
+- `TextInput_` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | normal | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,9 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 normal，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,70 +1,59 @@
 ---
 name: unknown_workflow_sampler_clip_unet_35
 type: Unknown Workflow
-frequency: 13
+frequency: 19
 level: moderate
-coverage: 0.798923
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.962684
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/ideogram4文生图_2062829306715402242.json, 图片生成/文生图/ideogram4文生图_2074082025207844866.json, 图片生成/文生图/ideogram4文生图带提示词反推_2064481432193560577.json, 图片生成/文生图/ideogram4精准定位文生图_2063313314121338882.json, 图片生成/文生图/ideogram4精准定位文生图_2063606590858678273.json, 图片生成/文生图/ideogram4精准定位文生图_2066720301649768448.json, 图片生成/文生图/ideogram_光学眼镜模特_2073959342348521473.json, 图片生成/文生图/image_ideogram4_t2i_2062711247589691394.json, 图片生成/文生图/image_ideogram4_t2i_2062872301623926785.json, 图片生成/文生图/new_image_ideogram4_t2i  文生图工作流_2062929225497268226.json, 图片生成/文生图/【开源MJ】Ideogram4美学大师_2063949376107663361.json, 图片生成/文生图/图文排版新模型-IdeoGram4_2062809092619591682.json, 图片生成/文生图/指哪打哪文生图_ideogram4_t2i_2062732159298920450.json]
+members: [图片生成/图生图/Flux Klein 9b FP8 细节重绘超分辨率 极简工作流_2018990184506855426.json, 图片生成/图生图/Flux Klein 人物融入场景_2013179162063802369.json, 图片生成/图生图/Flux-2-Klein-4B（单图_多图编辑）_2012147672551006210.json, 图片生成/图生图/Flux-2-Klein-9B（单图编辑）_2012096588763635713.json, 图片生成/图生图/Flux-2-Klein-9B（多图编辑）_2012129810344054785.json, 图片生成/图生图/Flux-Klein｜换头+换脸二合一_2099320463754354690.json, 图片生成/图生图/Flux-Klein｜换头+换脸二合一_2099664438902222850.json, 图片生成/图生图/Flux2 Klein 单图编辑9B版_2012048543007121409.json, 图片生成/图生图/Flux2 Klein 双图编辑9B版_2012162140509052929.json, 图片生成/图生图/Flux2 Klein 双图编辑_2012443837314113537.json, 图片生成/图生图/Flux2 Klein 双图编辑_2070334381268488193.json, 图片生成/图生图/Flux2 Klein 图像编辑9B_单图编辑_2012093251225915394.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版_2012021681962881026.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版_2070062677459820545.json, 图片生成/图生图/Flux2 Klein 图像编辑_2013088463502974978.json, 图片生成/图生图/Flux2 Klein 图像编辑_2070063458003021826.json, 图片生成/图生图/Flux2-klein 双图编辑 指定画面比例_2013890699959209986.json, 图片生成/图生图/Flux2Klein 单图编辑 指定画面比例_2013884566422949890.json, 图片生成/图生图/Flux2_Klein 图像编辑9B版-官方版_2012026824955531265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_35
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/ideogram4文生图_2062829306715402242.json、图片生成/文生图/ideogram4文生图_2074082025207844866.json、图片生成/文生图/ideogram4文生图带提示词反推_2064481432193560577.json、图片生成/文生图/ideogram4精准定位文生图_2063313314121338882.json、图片生成/文生图/ideogram4精准定位文生图_2063606590858678273.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/Flux Klein 9b FP8 细节重绘超分辨率 极简工作流_2018990184506855426.json、图片生成/图生图/Flux Klein 人物融入场景_2013179162063802369.json、图片生成/图生图/Flux-2-Klein-4B（单图_多图编辑）_2012147672551006210.json、图片生成/图生图/Flux-2-Klein-9B（单图编辑）_2012096588763635713.json、图片生成/图生图/Flux-2-Klein-9B（多图编辑）_2012129810344054785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CFGOverride`
+全部 19 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `DualModelGuider`
 - `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
-- `PrimitiveInt`
+- `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 10/13 个有
-- `KSamplerSelect` —— 10/13 个有
-- `ResolutionSelector` —— 10/13 个有
-- `CustomCombo` —— 9/13 个有
-- `PreviewAny` —— 9/13 个有
-- `PrimitiveStringMultiline` —— 8/13 个有
-- `Ideogram4PromptBuilderKJ` —— 5/13 个有
-- `PreviewImage` —— 5/13 个有
-- `ImageConcatMulti` —— 4/13 个有
-- `ShowText|pysssss` —— 4/13 个有
-- `StringConcatenate` —— 4/13 个有
-- `TextGenerate` —— 4/13 个有
-- `SamplerEulerAncestral` —— 3/13 个有
-- `CR Text` —— 2/13 个有
-- `AILab_ImagePreview` —— 1/13 个有
-- `DeepTranslatorTextNode` —— 1/13 个有
-- `Display Int (rgthree)` —— 1/13 个有
-- `ImageBlend` —— 1/13 个有
-- `LoraLoaderModelOnly` —— 1/13 个有
-- `RHLLMChatNode` —— 1/13 个有
-- `SeedVR2` —— 1/13 个有
-- `SeedVR2BlockSwap` —— 1/13 个有
-- `SeedVR2ExtraArgs` —— 1/13 个有
+- `ConditioningZeroOut` —— 18/19 个有
+- `GetImageSize` —— 18/19 个有
+- `Flux2Scheduler` —— 17/19 个有
+- `ImageScaleToTotalPixels` —— 17/19 个有
+- `CR Text` —— 10/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/19 个有
+- `BasicScheduler` —— 2/19 个有
+- `EmptyUnitGenerator_UTK` —— 2/19 个有
+- `ImageScale` —— 2/19 个有
+- `ImageResize+` —— 1/19 个有
+- `ImageScaleBy` —— 1/19 个有
+- `ImageSharpen` —— 1/19 个有
+- `LayerColor: AutoAdjustV2` —— 1/19 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/19 个有
+- `Text Multiline` —— 1/19 个有
 
 ## 典型参数
 

@@ -3,78 +3,62 @@ name: unknown_workflow_video_sampler_vae_109
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7908
-common_nodes: [EmptyImage, ImageConcanate, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, ShowText|pysssss, TextBox, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFlowEdit, WanVideoLoopArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed, easy imageSize, easy textSwitch]
+coverage: 0.696
+common_nodes: [CR Text, GetImageSizeAndCount, GetNode, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/1924420521310474241.json, 视频生成/图生视频/1922900275059900417.json, 视频生成/图生视频/1924340185381654529.json, 视频生成/图生视频/1922900237688475650.json, 视频生成/文生视频/1924412501411155969.json]
+members: [视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json, 视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json, 视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_109
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/1924420521310474241.json、视频生成/图生视频/1922900275059900417.json、视频生成/图生视频/1924340185381654529.json、视频生成/图生视频/1922900237688475650.json、视频生成/文生视频/1924412501411155969.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json、视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json、视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `EmptyImage`
-- `ImageConcanate`
-- `Int`
+- `CR Text`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImpactSwitch`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `ShowText|pysssss`
-- `TextBox`
-- `Textbox`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
-- `WanVideoFlowEdit`
-- `WanVideoLoopArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
-- `easy cleanGpuUsed`
-- `easy imageSize`
-- `easy textSwitch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `RH_Captioner` —— 4/5 个有
-- `WanVideoLoraSelect` —— 4/5 个有
-- `LayerUtility: ColorImage V2` —— 3/5 个有
-- `WanVideoVACEStartToEndFrame` —— 3/5 个有
-- `easy int` —— 3/5 个有
-- `AddLabel` —— 2/5 个有
-- `GetImageSizeAndCount` —— 2/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `WanVideoVACEModelSelect` —— 4/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `WanVideoLoraSelect` —— 3/5 个有
+- `ColorMatch` —— 2/5 个有
+- `RH_LLMAPI_NODE` —— 2/5 个有
 - `ImageRepeat` —— 1/5 个有
-- `ImageToMask` —— 1/5 个有
-- `LayerUtility: BooleanOperator` —— 1/5 个有
-- `LayerUtility: CropByMask` —— 1/5 个有
-- `LayerUtility: ImageBlendAdvance` —— 1/5 个有
-- `LayerUtility: SimpleTextImage` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 - `PreviewImage` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `Text Find and Replace` —— 1/5 个有
-- `easy ifElse` —— 1/5 个有
-- `easy imageSizeBySide` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,68 +3,58 @@ name: unknown_workflow_video_lora_sampler_756
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.816
-common_nodes: [AudioConcat, AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetAudioDurationFromAudio, HeartMuLa_Transcribe, ImageBatch, ImageResizeKJv2, JWStringGetLine, JWStringSplit, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MaskToImage, MathExpression|pysssss, ModelPatchLoader, PreviewImage, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, RandomNoise, SAM3Segment, SamplerCustomAdvanced, TextBox, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRAM_Debug, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart, easy showAnything]
+coverage: 0.788
+common_nodes: [BasicScheduler, CLIPTextEncode, CS-LTXGridDirector, DualCLIPLoader, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelPreviewOverrideKJ, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorCropGuides, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/2039012816979496962.json, 音频生成/音频生成/Infinite Talk双人数字人+Qwen3 TTS语音设计_2035955658540978178.json]
+members: [视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-角色一致性_2080617902188879873.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-角色一致性-自动剧情_2080573147191005186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_756
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/2039012816979496962.json、音频生成/音频生成/Infinite Talk双人数字人+Qwen3 TTS语音设计_2035955658540978178.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-角色一致性_2080617902188879873.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-角色一致性-自动剧情_2080573147191005186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `GetAudioDurationFromAudio`
-- `HeartMuLa_Transcribe`
-- `ImageBatch`
-- `ImageResizeKJv2`
-- `JWStringGetLine`
-- `JWStringSplit`
+- `CS-LTXGridDirector`
+- `DualCLIPLoader`
+- `JjkText`
 - `KSamplerSelect`
-- `LoadAudio`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MathExpression|pysssss`
-- `ModelPatchLoader`
-- `PreviewImage`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `RandomNoise`
-- `SAM3Segment`
-- `SamplerCustomAdvanced`
-- `TextBox`
-- `TextInput_`
+- `ModelPreviewOverrideKJ`
+- `SamplerCustom`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `WanInfiniteTalkToVideo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
+- `VisualizeSigmasKJ`
+- `YusuLTXDirectorCropGuides`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 1/2 个有
-- `TDQwen3TTSVoiceDesign` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `RH_Utils` —— 1/2 个有
+- `Text` —— 1/2 个有
+- `ttN concat` —— 1/2 个有
 
 ## 典型参数
 

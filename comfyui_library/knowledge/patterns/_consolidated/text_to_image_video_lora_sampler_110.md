@@ -2,77 +2,141 @@
 name: text_to_image_video_lora_sampler_110
 type: Text To Image
 frequency: 6
-level: strong
-coverage: 0.905833
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CreateVideo, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.672
+common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, GetNode, INTConstant, KSampler, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, ModelSamplingAuraFlow, PathchSageAttentionKJ, PreviewImage, PrimitiveStringMultiline, RandomNoise, RegexExtract, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy indexAnything, easy positive, easy promptConcat, easy promptLine, easy promptReplace]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Animate动作迁移自动尺寸工作流，姿态表情双驱动图生视频工具_2106442849813356545.json, 视频生成/图生视频/Animate动作迁移自动尺寸工作流｜图生视频自适应比例免裁剪_2106214971834200065.json, 视频生成/图生视频/Animate动作迁移自动尺寸｜图生视频姿态跟拍_2097227077287235585.json, 视频生成/图生视频/SCAIL2动作迁移免骨架工作流，免骨架提取动作同步更快更稳图生视频_2106444301172568065.json, 视频生成/图生视频/SCAIL2动作迁移免骨架工作流｜图生视频无需绑骨一键迁移动作_2106216466176626690.json, 视频生成/图生视频/SCAIL2动作迁移免骨架版 视频帧直接驱动人物动画_2098119288283553794.json]
+members: [图片生成/图生图/全栈式 短视频生成 简单上手效果好_2036074082332053505.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V3（残血版）_2034616876847861762.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V4（残血版）_2035986971947962370.json, 视频生成/图生视频/LTX2.3全栈式短剧生成V5（残血版）_2037414383898337282.json, 视频生成/图生视频/LTX2.3全栈式短视频生成V2.0_2033039341546639361.json, 视频生成/图生视频/LTX2.3全栈式短视频生成_2032623759688998914.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_110
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Animate动作迁移自动尺寸工作流，姿态表情双驱动图生视频工具_2106442849813356545.json、视频生成/图生视频/Animate动作迁移自动尺寸工作流｜图生视频自适应比例免裁剪_2106214971834200065.json、视频生成/图生视频/Animate动作迁移自动尺寸｜图生视频姿态跟拍_2097227077287235585.json、视频生成/图生视频/SCAIL2动作迁移免骨架工作流，免骨架提取动作同步更快更稳图生视频_2106444301172568065.json、视频生成/图生视频/SCAIL2动作迁移免骨架工作流｜图生视频无需绑骨一键迁移动作_2106216466176626690.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全栈式 短视频生成 简单上手效果好_2036074082332053505.json、视频生成/图生视频/LTX2.3全栈式短剧生成V3（残血版）_2034616876847861762.json、视频生成/图生视频/LTX2.3全栈式短剧生成V4（残血版）_2035986971947962370.json、视频生成/图生视频/LTX2.3全栈式短剧生成V5（残血版）_2037414383898337282.json、视频生成/图生视频/LTX2.3全栈式短视频生成V2.0_2033039341546639361.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CreateVideo`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
-- `JjkText`
+- `GetNode`
+- `INTConstant`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `ModelSamplingAuraFlow`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `RegexExtract`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SetNode`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageResizeToClosest`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `VAELoaderKJ`
+- `VHS_VideoCombine`
+- `easy indexAnything`
+- `easy positive`
+- `easy promptConcat`
+- `easy promptLine`
+- `easy promptReplace`
 
 **可变部分**（部分 workflow 才有）：
-- `GetVideoComponents` —— 4/6 个有
-- `PrimitiveFloat` —— 4/6 个有
-- `VHS_GetImageCount` —— 4/6 个有
-- `Video Slice` —— 4/6 个有
-- `DrawViTPose` —— 3/6 个有
-- `OnnxDetectionModelLoader` —— 3/6 个有
-- `PoseAndFaceDetection` —— 3/6 个有
-- `SaveImage` —— 3/6 个有
-- `WanVideoAddSCAILPoseEmbeds` —— 3/6 个有
-- `WanVideoAddSCAILReferenceEmbeds` —— 3/6 个有
-- `WanVideoAnimateEmbeds` —— 3/6 个有
-- `WanVideoEmptyEmbeds` —— 3/6 个有
+- `EmptyImage` —— 5/6 个有
+- `LTXVCropGuides` —— 5/6 个有
+- `LTXVLatentUpsampler` —— 5/6 个有
+- `LatentUpscaleModelLoader` —— 5/6 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `PrimitiveBoolean` —— 4/6 个有
+- `RTXVideoSuperResolution` —— 4/6 个有
+- `easy convertAnything` —— 4/6 个有
+- `easy ifElse` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `DirectorAudioScriptLoader` —— 3/6 个有
+- `DirectorCasting` —— 3/6 个有
+- `DirectorSceneIterator` —— 3/6 个有
+- `DirectorVideoPromptLoader` —— 3/6 个有
+- `DirectorVisualStoryboardLoader` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `GetImagesFromBatchIndexed` —— 3/6 个有
+- `ImageBatchMulti` —— 3/6 个有
+- `JoinStringMulti` —— 3/6 个有
+- `LTX2_NAG` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `PrimitiveInt` —— 3/6 个有
+- `Text Concatenate` —— 3/6 个有
+- `easy batchAnything` —— 3/6 个有
+- `easy boolean` —— 3/6 个有
+- `easy forLoopEnd` —— 3/6 个有
+- `easy forLoopStart` —— 3/6 个有
+- `easy mathString` —— 3/6 个有
+- `easy promptList` —— 3/6 个有
+- `llama_cpp_instruct_adv` —— 3/6 个有
+- `llama_cpp_model_loader` —— 3/6 个有
+- `DirectorOrderGate` —— 2/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `Audio Duration (mtb)` —— 1/6 个有
+- `DualCLIPLoaderGGUF` —— 1/6 个有
+- `FB_Qwen3TTSDialogueInference` —— 1/6 个有
+- `FB_Qwen3TTSRoleBank` —— 1/6 个有
+- `FB_Qwen3TTSVoiceClonePrompt` —— 1/6 个有
+- `LTXAddVideoICLoRAGuideAdvanced` —— 1/6 个有
+- `LTXICLoRALoaderModelOnly` —— 1/6 个有
+- `LTXVAudioVAEEncode` —— 1/6 个有
+- `LoadAudio` —— 1/6 个有
+- `MathExpression|pysssss` —— 1/6 个有
+- `PreviewAudio` —— 1/6 个有
+- `Qwen3ASRLoader` —— 1/6 个有
+- `Qwen3ASRTranscribe` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `SetLatentNoiseMask` —— 1/6 个有
+- `SolidMask` —— 1/6 个有
+- `UnetLoaderGGUF` —— 1/6 个有
+- `VRAM_Debug` —— 1/6 个有
+- `easy lengthAnything` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 896 | 97 - 1280 | 6 | 29% |
+| 高度 | 616 | 25 - 720 | 6 | 31% |
 | 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
-| 采样算法 | er_sde | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 1.2 | 1.2 - 1.2 | 6 | 100% |
+| 采样算法 | lcm | - | 6 | 67% |
+| 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
@@ -82,11 +146,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 896，观测区间 97 - 1280，6 个样本，取值分散，一致性仅 29%
+- 高度 中位数 616，观测区间 25 - 720，6 个样本，取值分散，一致性仅 31%
 - 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 1.2，观测区间 1.2 - 1.2，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 lcm，6 个样本，一致性 67%
+- 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高发问题（6/6 个样本）：Steps较低可能导致细节不足
