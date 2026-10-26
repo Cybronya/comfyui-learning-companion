@@ -31,6 +31,22 @@ try:
     print(f"[1] 归纳完成 {time.time()-t1:.1f}s："
           f"{len(result.patterns)} 个模式 / 未归类 {result.ungrouped} / "
           f"来源 {result.source_count} 条", flush=True)
+
+    # 核验模式卡确实落盘了。
+    # 2026-10-26 教训：写卡被沙箱批量删除保护拦下时，归纳本身是成功的
+    # （rc=0、库已写回），但卡目录是空的 —— 后续图谱会缺 matches 边。
+    # 所以这里显式核对「磁盘卡数 == 模式数」，不等就报错让编排器中止。
+    from pathlib import Path as _Path
+    card_dir = _Path("comfyui_library/knowledge/patterns/_consolidated")
+    cards = [p for p in card_dir.glob("*.md")
+             if p.name not in ("index.md", "README.md")]
+    print(f"[1b] 模式卡落盘 {len(cards)} 张（期望 {len(result.patterns)}）",
+          flush=True)
+    if len(cards) != len(result.patterns):
+        raise RuntimeError(
+            f"模式卡数量与归纳结果不符：磁盘 {len(cards)} vs "
+            f"归纳 {len(result.patterns)}，写卡环节未完成"
+        )
 finally:
     t2 = time.time()
     db.save()
