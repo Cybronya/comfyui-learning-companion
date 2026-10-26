@@ -75,6 +75,22 @@ class KnowledgeStore:
         归纳是全量重算的，覆盖比追加准确 ——
         否则同一个模式在多次归纳后会堆出多条重复记录。
 
+        写入顺序（2026-10-26 修正）：
+            1. 先把本次全部模式卡写出去（同名覆盖 + 新增）
+            2. 再清理「磁盘上有、本次没有」的孤儿卡
+
+        为什么不是先删后写：
+            旧实现是「清空整个目录 → 重写全部」。全库有近万张卡，
+            一次性 unlink 上万个文件会撞上 WorkBuddy 沙箱的批量删除保护
+            （SAFE_DELETE_BULK_CONFIRM_REQUIRED，单轮 50 个文件即被拦），
+            结果是**卡删了一半、新的又没写进去** —— 归纳成果全丢。
+            而且先删后写存在一个危险窗口：中途进程被杀，目录就空了。
+
+        孤儿清理的删除失败**不中断**主流程：
+            卡片写完才是这次归纳的成果，清理只是收尾。
+            真删不掉就留着（旧卡会被检索层当作有效模式，但不影响
+            本次新卡的正确性），下次归纳再清。
+
         Args:
             knowledge: 归纳结果
 
@@ -84,11 +100,14 @@ class KnowledgeStore:
         try:
             self.folder.mkdir(parents=True, exist_ok=True)
 
-            self._clear_records()
-
+            # ① 先写全部新卡（覆盖写，不触发批量删除）
             for pattern in knowledge.patterns:
                 self._write_pattern(pattern)
 
+            # ② 再清孤儿卡（旧卡里本次没被复现的那些）
+            self._remove_orphans({p.name for p in knowledge.patterns})
+
+            # ③ 索引最后写，保证它反映最终落盘的结果
             atomic_write_text(
                 self.index_path, self._render_index(knowledge)
             )
@@ -98,17 +117,31 @@ class KnowledgeStore:
             print(f"保存归纳知识失败: {e}")
             return ""
 
-    def _clear_records(self) -> None:
+    def _remove_orphans(self, keep_names: set) -> None:
         """
-        清掉旧记录（保留 README）
+        清理孤儿卡：磁盘上有、本次归纳没有的模式卡。
+
+        与旧 `_clear_records()` 的区别：
+            - 只删真正多余的，不碰同名卡（同名卡已被覆盖写）
+            - 单个删除失败只记日志，不中断（批量删除保护可能拦）
         """
+        removed = 0
+        failed = 0
         for path in self.folder.glob("*.md"):
             if path.name in ("index.md", "README.md"):
                 continue
+            if path.stem in keep_names:
+                continue
             try:
                 path.unlink()
-            except OSError:
-                pass
+                removed += 1
+            except OSError as e:
+                failed += 1
+                if failed <= 3:
+                    print(f"  孤儿卡删除失败（保留）：{path.name} —— {e}")
+
+        if removed or failed:
+            print(f"孤儿卡清理：删除 {removed} 张，保留 {failed} 张")
 
     def _write_pattern(self, pattern: WorkflowPattern) -> Path:
         """

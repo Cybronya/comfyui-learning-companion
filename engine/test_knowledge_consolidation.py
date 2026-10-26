@@ -18,12 +18,14 @@ if str(project_root) not in sys.path:
 
 from engine.knowledge_consolidation import (
     ConsolidationEngine,
+    ConsolidatedKnowledge,
     ExperienceLoader,
     ExperienceRow,
     PatternMiner,
     ParameterStatistics,
     KnowledgeBuilder,
     KnowledgeStore,
+    WorkflowPattern,
     jaccard,
     LEVEL_STRONG,
     LEVEL_WEAK,
@@ -724,6 +726,66 @@ def test_store_markdown_output():
         assert all(p.frequency > 0 for p in loaded)
 
     print("Markdown 落盘正确 [OK]\n")
+
+
+def test_store_overwrite_semantics():
+    """测试重复落盘：先写后清，孤儿卡被清理，同名卡被覆盖
+
+    2026-10-26 回归用例。
+    旧实现是「先删空整个目录 → 重写全部」，全库近万张卡时一次性 unlink
+    会撞上 WorkBuddy 沙箱的批量删除保护（SAFE_DELETE_BULK_CONFIRM_REQUIRED，
+    单轮 50 个文件即被拦），结果是卡删了一半、新的又没写进去。
+    现在改成「先写全部新卡 → 再清理孤儿卡」，删除失败也不中断主流程。
+    """
+    print("=" * 60)
+    print("测试 D2b：重复落盘语义（先写后清）")
+    print("=" * 60)
+
+    def mk(name, freq=3):
+        return WorkflowPattern(
+            name=name,
+            workflow_type="test",
+            frequency=freq,
+            common_nodes=["KSampler"],
+            all_nodes=["KSampler"],
+            members=["a.json", "b.json", "c.json"],
+            level=LEVEL_STRONG,
+            coverage=0.9,
+        )
+
+    with TemporaryDirectory() as tmp:
+        out = Path(tmp) / "patterns"
+        store = KnowledgeStore(str(out))
+
+        # 第一轮：p1 / p2 / p3
+        k1 = ConsolidatedKnowledge(source_count=3, generated_at="t1")
+        k1.patterns = [mk("p1"), mk("p2"), mk("p3")]
+        store.save(k1)
+        names1 = sorted(p.name for p in out.glob("*.md"))
+        print(f"  第一轮落盘: {names1}")
+        assert names1 == ["index.md", "p1.md", "p2.md", "p3.md"]
+
+        # 第二轮：p2 改名为 p2b —— p2 成孤儿应被清，p2b 新增，p1/p3 保留
+        k2 = ConsolidatedKnowledge(source_count=3, generated_at="t2")
+        k2.patterns = [mk("p1"), mk("p2b"), mk("p3")]
+        store.save(k2)
+        names2 = sorted(p.name for p in out.glob("*.md"))
+        print(f"  第二轮落盘: {names2}")
+        assert names2 == ["index.md", "p1.md", "p2b.md", "p3.md"], \
+            "孤儿卡应被清理，新卡应写入，同名卡应保留"
+
+        assert (out / "p1.md").exists(), "同名卡应保留"
+        assert (out / "p3.md").exists(), "同名卡应保留"
+        assert (out / "p2b.md").exists(), "新卡应写入"
+        assert not (out / "p2.md").exists(), "孤儿卡应被清理"
+
+        # 第三轮：同一批再落一次，文件数不应增长（幂等）
+        store.save(k2)
+        names3 = sorted(p.name for p in out.glob("*.md"))
+        print(f"  第三轮落盘: {names3}")
+        assert names3 == names2, "重复落盘应幂等"
+
+    print("重复落盘语义正确 [OK]\n")
 
 
 def test_grep_friendliness():
