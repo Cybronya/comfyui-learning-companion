@@ -31,6 +31,12 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "enable_graph": True,
     "graph_json_path": "engine/knowledge_graph/knowledge_graph.json",
 
+    # 库事实（只读消费 database/storage 的派生索引：
+    # 谁用了这个节点 / 这个工作流命中哪些模式）
+    # 与图谱是两条独立通道——图谱读 Markdown 图谱，库事实读运行期索引。
+    "enable_db_facts": True,
+    "db_facts_limit": 4,         # 库事实条数上限（与图谱事实分开限流）
+
     # 上下文
     "context_store_path": "engine/context/context_store.json",
     "update_context": True,

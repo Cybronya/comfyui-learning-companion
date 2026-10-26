@@ -36,6 +36,11 @@ class AgentState:
     # 8. 图谱：跨条目事实（问题里提到的节点/流程在知识图谱里的关联）
     #    每条是一句人读的中文，respond 阶段追加到 answer 末尾
     graph_facts: List[str] = field(default_factory=list)
+    # 9. 库事实：来自派生索引的结构层事实（谁用了这个节点 /
+    #    这个工作流命中了哪些模式）。与 graph_facts 分开存放——
+    #    两者来源不同（Markdown 图谱 vs 只读索引）、限流独立，
+    #    混在一起会分不清哪条来自哪边。
+    db_facts: List[str] = field(default_factory=list)
 
     # ---- 过程信息 ----
     # 本次是否复用了 set_workflow() 登记的工作流

@@ -93,6 +93,8 @@ class ComfyUIAgent:
         # 最近一次解析结果，供不带 workflow 的提问复用
         self._last_workflow = None
         self._last_workflow_data = None
+        # 库事实适配层（v0.6 只读层），首次用到时懒加载
+        self._db_facts_obj = None
 
     def _fill_default_modules(self) -> None:
         """
@@ -436,8 +438,113 @@ class ComfyUIAgent:
         )
 
         self._collect_graph_facts(state)
+        self._collect_db_facts(state)
 
         return state
+
+    # ---------- 库事实：只读消费派生索引 ----------
+
+    def _collect_db_facts(self, state: AgentState) -> None:
+        """
+        从结构层派生索引收集事实（v0.6 第 2 步）
+
+        图谱读的是 Markdown 图谱，答「谁用了它 / 它常和谁共现」；
+        但派生索引（node_index / pattern_index）能答两类图谱答不了的问题：
+            「这个节点在整个库里被多少工作流使用」
+            「当前这个工作流命中了哪些已归纳的模式」
+
+        三条硬约束：
+            1. **全程只读**——只读 database/storage 下的派生索引，不碰 sqlite
+               主库，管线运行时也能安全调用。
+            2. **独立限流**——与 graph_facts 分开存放、分开限流，
+               回答里两类事实分节呈现，读者能分清来源。
+            3. **可降级**——索引是运行期产物，可能不存在或为空；
+               此时静默跳过，绝不因为「查不到」就让整条链路报错。
+        """
+        if not self.config.get("enable_db_facts"):
+            state.skip_stage("db_facts", "未启用")
+            return
+
+        facts_obj = self._db_facts()
+        if facts_obj is None:
+            state.skip_stage("db_facts", "派生索引不可用")
+            return
+
+        limit = int(self.config.get("db_facts_limit") or 0)
+        facts: List[str] = []
+        seen = set()
+
+        def facts_full() -> bool:
+            return limit > 0 and len(facts) >= limit
+
+        lowered = state.question.lower()
+
+        # ① 节点维度：问题点名了某个节点 → 它在全库被多少工作流使用
+        candidates = state.workflow_nodes()
+        if candidates:
+            candidates = sorted(candidates, key=lambda n: n.lower() not in lowered)
+        else:
+            candidates = [
+                n for n in facts_obj.all_node_names()
+                if n and n.lower() in lowered
+            ]
+
+        for name in candidates[:20]:  # 候选过多时只查靠前的，避免无谓扫描
+            if facts_full():
+                break
+            if not name or name in seen:
+                continue
+            seen.add(name)
+            ids = facts_obj.workflows_using_node(name)
+            if not ids:
+                continue  # 只有官方模板引用，没有真实工作流，不值得报
+            total = facts_obj.node_usage_count(name)
+            # 用真实工作流数（已剔除官方模板引用）作为主数字；
+            # total 含模板引用，仅在两者不同时补充说明。
+            real = len(ids)
+            preview = "、".join(ids[:3])
+            more = f" 等 {real} 个" if real > 3 else ""
+            tail = ""
+            if total > real:
+                tail = f"（另有 {total - real} 处官方模板引用）"
+            facts.append(
+                f"库事实：节点 `{name}` 在全库被 {real} 个真实工作流使用"
+                f"（如 {preview}{more}）{tail}"
+            )
+
+        # ② 工作流维度：当前工作流命中了哪些已归纳模式
+        if not facts_full():
+            wf_id = str(getattr(state.workflow, "workflow_id", "") or "")
+            if wf_id:
+                patterns = facts_obj.patterns_for_workflow(wf_id)
+                if patterns:
+                    preview = "、".join(patterns[:3])
+                    more = f" 等 {len(patterns)} 个" if len(patterns) > 3 else ""
+                    facts.append(
+                        f"库事实：当前工作流命中 {len(patterns)} 个已归纳模式"
+                        f"（{preview}{more}）"
+                    )
+
+        state.db_facts = facts
+        # 注意：不调用 state.add_stage("db_facts")。库事实采集是
+        # retrieve 阶段内部的一步，不是独立阶段——单独记进 stages_run
+        # 会打乱阶段顺序（'db_facts' 排到 'retrieve' 之前），
+        # test_agent_core 的阶段顺序断言会失败。
+
+    def _db_facts(self):
+        """懒加载只读适配层；导入失败或索引缺失时返回 None（可降级）。"""
+        if self._db_facts_obj is not None:
+            return self._db_facts_obj
+        try:
+            from ..retrieval.db_facts import DatabaseFacts
+            obj = DatabaseFacts()
+        except Exception:
+            return None
+        # 两个索引都没有内容时视为不可用，避免每次提问都白扫一遍盘
+        if not obj.all_node_names() and not obj.all_pattern_names():
+            return None
+        self._db_facts_obj = obj
+        return obj
 
     # ---------- 图谱：跨条目事实 ----------
 
@@ -585,6 +692,14 @@ class ComfyUIAgent:
                         + "\n\n## 跨条目知识图谱\n\n"
                         + "\n".join(f"- {f}" for f in state.graph_facts)
                     )
+                # 库事实单独成节——它来自只读索引，与图谱事实来源不同，
+                # 混排会让读者分不清哪条依据哪种数据
+                if state.db_facts:
+                    state.answer = (
+                        state.answer.rstrip()
+                        + "\n\n## 结构层库事实\n\n"
+                        + "\n".join(f"- {f}" for f in state.db_facts)
+                    )
             except Exception as e:
                 state.add_error("answer", e)
         else:
@@ -670,6 +785,11 @@ class ComfyUIAgent:
         issues = state.diagnostic_issues()
         if issues:
             context["diagnostics"] = issues
+
+        # 库事实进 LLM 上下文：结构层的事实（如某节点在全库的用量）
+        # 与检索卡片是不同信息源，LLM 应当知道两者可用
+        if state.db_facts:
+            context["db_facts"] = list(state.db_facts)
 
         return context
 
